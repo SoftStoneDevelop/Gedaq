@@ -4,7 +4,7 @@
 		<TargetFramework>net6.0</TargetFramework>
 	</PropertyGroup>
 	<ItemGroup>
-	  <PackageReference Include="Gedaq.Npgsql" Version="0.0.6" />
+	  <PackageReference Include="Gedaq.Npgsql" Version="0.0.7" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Gedaq\Gedaq.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="False" />

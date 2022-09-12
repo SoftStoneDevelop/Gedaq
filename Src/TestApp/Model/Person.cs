@@ -1,10 +1,10 @@
-﻿using Gedaq.Provider.Attributes;
+﻿using Gedaq.Npgsql.Attributes;
 using Gedaq.Provider.Attributes.Constraints;
 using ColumnAttribute = Gedaq.Npgsql.Attributes.ColumnAttribute;
 
 namespace TestApp.Model
 {
-    [Table("person")]
+    [NpgsqlTable("person")]
     public class Person
     {
         [PK("id_pk_constrain")]
