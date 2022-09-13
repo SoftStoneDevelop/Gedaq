@@ -12,20 +12,20 @@ namespace Gedaq
     {
         public void Execute(GeneratorExecutionContext context)
         {
-            //System.Diagnostics.Debugger.Launch();
+            System.Diagnostics.Debugger.Launch();
 
             var c = (CSharpCompilation)context.Compilation;
             var useProviderTypes = new List<INamedTypeSymbol>();
-            var models = new HashSet<ModelWrapper>();
-            var providers = new HashSet<ProviderWrapper>();
+            var models = new Dictionary<INamedTypeSymbol, ModelWrapper>(SymbolEqualityComparer.Default);
+            var providers = new Dictionary<INamedTypeSymbol, ProviderWrapper>(SymbolEqualityComparer.Default);
 
             FillTypes(
-            in useProviderTypes,
+                in useProviderTypes,
                 in models,
                 in providers,
                 c.Assembly.GlobalNamespace
                 );
-            FillModels(in models, in providers);
+            FillModels(in models);
             GenerateQueries(in providers, in useProviderTypes);
         }
 
@@ -36,8 +36,8 @@ namespace Gedaq
 
         private void FillTypes(
             in List<INamedTypeSymbol> useProviderTypes,
-            in HashSet<ModelWrapper> models,
-            in HashSet<ProviderWrapper> providers,
+            in Dictionary<INamedTypeSymbol, ModelWrapper> models,
+            in Dictionary<INamedTypeSymbol, ProviderWrapper> providers,
             INamespaceOrTypeSymbol symbol
             )
         {
@@ -63,16 +63,12 @@ namespace Gedaq
 
                     foreach (var attribute in attributes)
                     {
-                        if (attribute.AttributeClass.Name == "UseProviderAttribute" &&
-                            attribute.AttributeClass.ContainingNamespace.GetFullNamespace() == "Gedaq.Provider.Attributes"
-                            )
+                        if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Provider.Attributes", "UseProviderAttribute"))
                         {
                             useProvider = true;
                         }
 
-                        if (attribute.AttributeClass.Name == "TableAttribute" &&
-                            attribute.AttributeClass.ContainingNamespace.GetFullNamespace() == "Gedaq.Provider.Attributes"
-                            )
+                        if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Provider.Attributes", "TableAttribute"))
                         {
                             isModel = true;
                         }
@@ -107,7 +103,10 @@ namespace Gedaq
 
                     if(isModel)
                     {
-                        models.Add(new ModelWrapper(type));
+                        if(!models.ContainsKey(type))
+                        {
+                            models.Add(type, new ModelWrapper(type));
+                        }
                     }
 
                     if(isProvider)
@@ -117,7 +116,10 @@ namespace Gedaq
                             throw new System.Exception("The provider must have a database type attribute");
                         }
 
-                        providers.Add(new ProviderWrapper(type, providerDialect));
+                        if (!providers.ContainsKey(type))
+                        {
+                            providers.Add(type, new ProviderWrapper(type, providerDialect));
+                        }
                     }
                 }
 

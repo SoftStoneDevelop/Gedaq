@@ -1,4 +1,6 @@
-﻿using Gedaq.TypeWrappers;
+﻿using Gedaq.Helpers;
+using Gedaq.TypeWrappers;
+using Microsoft.CodeAnalysis;
 using System.Collections.Generic;
 
 namespace Gedaq
@@ -6,12 +8,13 @@ namespace Gedaq
     public partial class Gedaq
     {
         private void FillModels(
-            in HashSet<ModelWrapper> models,
-            in HashSet<ProviderWrapper> providers
+            in Dictionary<INamedTypeSymbol, ModelWrapper> models
             )
         {
-            //TODO Fill info about model
-            // also add default provideres for used database types
+            foreach (var model in models.Values)
+            {
+                ModelHelper.FillModel(in model);
+            }
         }
     }
 }
