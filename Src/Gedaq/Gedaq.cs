@@ -12,13 +12,14 @@ namespace Gedaq
     {
         public void Execute(GeneratorExecutionContext context)
         {
-            System.Diagnostics.Debugger.Launch();
+            //System.Diagnostics.Debugger.Launch();
 
             var c = (CSharpCompilation)context.Compilation;
+            
             var useProviderTypes = new List<INamedTypeSymbol>();
             var models = new Dictionary<INamedTypeSymbol, ModelWrapper>(SymbolEqualityComparer.Default);
             var providers = new Dictionary<INamedTypeSymbol, ProviderWrapper>(SymbolEqualityComparer.Default);
-
+            
             FillTypes(
                 in useProviderTypes,
                 in models,
@@ -26,7 +27,7 @@ namespace Gedaq
                 c.Assembly.GlobalNamespace
                 );
             FillModels(in models);
-            GenerateQueries(in providers, in useProviderTypes);
+            GenerateQueries(in providers, in useProviderTypes, in c);
         }
 
         public void Initialize(GeneratorInitializationContext context)
@@ -51,15 +52,9 @@ namespace Gedaq
                 {
                     var attributes = type.GetAttributes();
                     bool useProvider = false;
-                    bool isProvider = false;
                     bool isModel = false;
                     bool isProviderAttr = false;
                     ProviderDialect providerDialect = ProviderDialect.Unknown;
-
-                    if (type.IsAssignableFrom("Gedaq.Provider", "GedaqRequest"))
-                    {
-                        isProvider = true;
-                    }
 
                     foreach (var attribute in attributes)
                     {
@@ -71,28 +66,6 @@ namespace Gedaq
                         if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Provider.Attributes", "TableAttribute"))
                         {
                             isModel = true;
-                        }
-
-                        if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Provider.Attributes", "ProviderAttribute"))
-                        {
-                            isProviderAttr = true;
-                            providerDialect = DialectHelper.ToDialect(attribute.AttributeClass);
-
-                            if (providerDialect == ProviderDialect.Unknown)
-                            {
-                                throw new System.Exception($"Unknown provider dialect: {attribute.AttributeClass.Name}");
-                            }
-                        }
-
-                        if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Provider.Attributes", "ProviderAttribute"))
-                        {
-                            isProviderAttr = true;
-                            providerDialect = DialectHelper.ToDialect(attribute.AttributeClass);
-
-                            if (providerDialect == ProviderDialect.Unknown)
-                            {
-                                throw new System.Exception($"Unknown provider dialect: {attribute.AttributeClass.Name}");
-                            }
                         }
                     }
 
@@ -106,19 +79,6 @@ namespace Gedaq
                         if(!models.ContainsKey(type))
                         {
                             models.Add(type, new ModelWrapper(type));
-                        }
-                    }
-
-                    if(isProvider)
-                    {
-                        if(!isProviderAttr)
-                        {
-                            throw new System.Exception("The provider must have a database type attribute");
-                        }
-
-                        if (!providers.ContainsKey(type))
-                        {
-                            providers.Add(type, new ProviderWrapper(type, providerDialect));
                         }
                     }
                 }

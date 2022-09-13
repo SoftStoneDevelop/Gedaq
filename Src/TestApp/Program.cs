@@ -40,7 +40,57 @@ namespace TestApp
         [UseProvider]
         public List<Person> Method1()
         {
-            return request?.Query<Person>("M1").ToList();
+            request
+                
+                
+                
+                ?
+
+
+
+
+
+                .Query
+                
+                
+                <
+                    
+                    
+                                              Person
+                    
+                    
+                    
+                    >
+                
+                
+                (
+                    
+                    
+                    "M1"
+                    
+                    
+                    )
+                .
+                
+                
+                
+                Where(wh => wh.Id == 15)
+
+
+
+                .ToList
+                
+                
+                (
+                    
+                    
+                    
+                    )
+                
+                
+                ;
+
+            return this.request?.Query<Person>("M1").ToList();
             //return GedaqSomeClass.M1();
         }
 
