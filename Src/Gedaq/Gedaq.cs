@@ -53,8 +53,6 @@ namespace Gedaq
                     var attributes = type.GetAttributes();
                     bool useProvider = false;
                     bool isModel = false;
-                    bool isProviderAttr = false;
-                    ProviderDialect providerDialect = ProviderDialect.Unknown;
 
                     foreach (var attribute in attributes)
                     {
