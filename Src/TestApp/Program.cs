@@ -1,4 +1,5 @@
 ﻿using Gedaq.Npgsql;
+using Gedaq.Npgsql.Attributes;
 using Gedaq.Provider.Attributes;
 using Npgsql;
 using System;
@@ -16,10 +17,7 @@ namespace TestApp
             using (var connection = new NpgsqlConnection(""))
             {
                 connection.Open();
-                //var command = sc.Method1CommandManual(in connection);
-                //var persons = sc.Method1Manual(in command, true);
-
-                var persons = sc.Method1Manual(in connection);
+                var persons = sc.Method1Manual(connection).ToList();
                 for (int i = 0; i < persons.Count; i++)
                 {
                     Console.WriteLine(@$"
@@ -32,71 +30,32 @@ namespace TestApp
         }
     }
 
-    [UseProvider]
     public class SomeClass
     {
-        private readonly PostgresRequest request;
-
-        [UseProvider]
-        public List<Person> Method1()
+        [Gedaq.Npgsql.Attributes.QueryRead(
+            new string[]
+            {
+                @"
+SELECT 
+    p1.id,
+    p1.firstname,
+    p1.middlename,
+    p1.lastname
+FROM person p1
+", 
+                nameof(Person)
+            },
+            Gedaq.Provider.Enums.MethodType.Sync,
+            Gedaq.Npgsql.Enums.SourceType.Connection
+            )]
+        public void Config()
         {
-            request
-                
-                
-                
-                ?
-
-
-
-
-
-                .Query
-                
-                
-                <
-                    
-                    
-                                              Person
-                    
-                    
-                    
-                    >
-                
-                
-                (
-                    
-                    
-                    "M1"
-                    
-                    
-                    )
-                .
-                
-                
-                
-                Where(wh => wh.Id == 15)
-
-
-
-                .ToList
-                
-                
-                (
-                    
-                    
-                    
-                    )
-                
-                
-                ;
-
-            return this.request?.Query<Person>("M1").ToList();
-            //return GedaqSomeClass.M1();
+            
         }
 
-        public NpgsqlCommand Method1CommandManual(in NpgsqlConnection connection)
+        public IEnumerable<Person> Method1Manual(NpgsqlConnection connection)
         {
-            var command = connection.CreateCommand();
+            using var command = connection.CreateCommand();
             command.CommandText = @$"
 SELECT 
     p1.id,
@@ -105,14 +64,9 @@ SELECT
     p1.lastname
 FROM person p1
 ";
-            return command;
-        }
 
-        public List<Person> Method1ExecuteManual(in NpgsqlCommand command)
-        {
             using (var reader = command.ExecuteReader())
             {
-                var persons = new List<Person>();
                 while (reader.Read())
                 {
                     var item = new Person
@@ -122,45 +76,38 @@ FROM person p1
                         MiddleName = reader.GetString(2),
                         LastName = reader.GetString(3)
                     };
-                    persons.Add(item);
+                    
+                    yield return item;
                 }
-
-                return persons;
             }
         }
 
-        public List<Person> Method1Manual(in NpgsqlConnection connection)
+        public async IAsyncEnumerable<Person> Method1ManualAsync(NpgsqlConnection connection)
         {
-            using (var command = Method1CommandManual(in connection))
+            await using var command = connection.CreateCommand();
+            command.CommandText = @$"
+SELECT 
+    p1.id,
+    p1.firstname,
+    p1.middlename,
+    p1.lastname
+FROM person p1
+";
+            await using(var reader = await command.ExecuteReaderAsync())
             {
-                return Method1ExecuteManual(in command);
+                while (await reader.ReadAsync())
+                {
+                    var item = new Person
+                    {
+                        Id = reader.GetInt32(0),
+                        FirstName = reader.GetString(1),
+                        MiddleName = reader.GetString(2),
+                        LastName = reader.GetString(3)
+                    };
+                    
+                    yield return item;
+                }
             }
-        }
-
-        public List<Person> Method1Manual(
-            in NpgsqlCommand command,
-            in bool prepareCommand
-            )
-        {
-            if(prepareCommand && !command.IsPrepared)
-            {
-                command.Prepare();
-            }
-
-            return Method1ExecuteManual(in command);
         }
     }
-
-    //[UseProvider]
-    //public partial class SomeClass2
-    //{
-    //    private readonly PostgresRequest request;
-
-    //    [UseProvider]
-    //    public List<Person> Method1()
-    //    {
-    //        return request?.Query<Person>("M1").ToList();
-    //        //return M1();
-    //    }
-    //}
 }
