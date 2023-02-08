@@ -30,6 +30,25 @@ namespace TestApp
         }
     }
 
+    [Gedaq.Npgsql.Attributes.QueryRead(
+            new string[]
+            {
+                @"
+SELECT 
+    p1.id,
+    p1.firstname,
+    p1.middlename,
+    p1.lastname
+FROM person p1
+"
+            },
+        new Type[]
+        {
+            typeof(Person)
+        },
+            Gedaq.Provider.Enums.MethodType.Sync,
+            Gedaq.Npgsql.Enums.SourceType.Connection
+            )]
     public class SomeClass
     {
         [Gedaq.Npgsql.Attributes.QueryRead(
@@ -42,9 +61,12 @@ SELECT
     p1.middlename,
     p1.lastname
 FROM person p1
-", 
-                nameof(Person)
+"
             },
+        new Type[]
+        {
+            typeof(Person)
+        },
             Gedaq.Provider.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection
             )]

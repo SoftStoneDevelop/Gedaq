@@ -5,16 +5,6 @@ namespace Gedaq.Helpers
 {
     internal static class DialectHelper
     {
-        internal static ProviderDialect ToDialect(this INamedTypeSymbol namedTypeSymbol)
-        {
-            if(namedTypeSymbol.Name == "NpgsqlProvider" && namedTypeSymbol.ContainingNamespace.GetFullNamespace() == "Gedaq.Npgsql.Attributes")
-            {
-                return ProviderDialect.PostgresSQL;
-            }
-
-            return ProviderDialect.Unknown;
-        }
-
         internal static NpgsqlDbType ToNpgsqlDbType(this ITypeSymbol typeSymbol)
         {
             switch (typeSymbol.Name)

@@ -1,6 +1,5 @@
 ﻿using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.TypeWrappers;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using System.Collections.Generic;
@@ -12,22 +11,14 @@ namespace Gedaq
     {
         public void Execute(GeneratorExecutionContext context)
         {
-            //System.Diagnostics.Debugger.Launch();
+            System.Diagnostics.Debugger.Launch();
 
             var c = (CSharpCompilation)context.Compilation;
             
-            var useProviderTypes = new List<INamedTypeSymbol>();
-            var models = new Dictionary<INamedTypeSymbol, ModelWrapper>(SymbolEqualityComparer.Default);
-            var providers = new Dictionary<INamedTypeSymbol, ProviderWrapper>(SymbolEqualityComparer.Default);
-            
-            FillTypes(
-                in useProviderTypes,
-                in models,
-                in providers,
-                c.Assembly.GlobalNamespace
-                );
-            FillModels(in models);
-            GenerateQueries(in providers, in useProviderTypes, in c);
+            var processor = new AttributeProcessor();
+            FillTypes(c.Assembly.GlobalNamespace, processor);
+
+            int s = 15;
         }
 
         public void Initialize(GeneratorInitializationContext context)
@@ -35,12 +26,7 @@ namespace Gedaq
             // No initialization required for this one
         }
 
-        private void FillTypes(
-            in List<INamedTypeSymbol> useProviderTypes,
-            in Dictionary<INamedTypeSymbol, ModelWrapper> models,
-            in Dictionary<INamedTypeSymbol, ProviderWrapper> providers,
-            INamespaceOrTypeSymbol symbol
-            )
+        private void FillTypes(INamespaceOrTypeSymbol symbol, AttributeProcessor processor)
         {
             var queue = new Queue<INamespaceOrTypeSymbol>();
             queue.Enqueue(symbol);
@@ -50,35 +36,7 @@ namespace Gedaq
                 var current = queue.Dequeue();
                 if (current is INamedTypeSymbol type)
                 {
-                    var attributes = type.GetAttributes();
-                    bool useProvider = false;
-                    bool isModel = false;
-
-                    foreach (var attribute in attributes)
-                    {
-                        if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Provider.Attributes", "UseProviderAttribute"))
-                        {
-                            useProvider = true;
-                        }
-
-                        if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Provider.Attributes", "TableAttribute"))
-                        {
-                            isModel = true;
-                        }
-                    }
-
-                    if(useProvider)
-                    {
-                        useProviderTypes.Add(type);
-                    }
-
-                    if(isModel)
-                    {
-                        if(!models.ContainsKey(type))
-                        {
-                            models.Add(type, new ModelWrapper(type));
-                        }
-                    }
+                    processor.TryFillFrom(type);
                 }
 
                 foreach (var child in current.GetMembers())
