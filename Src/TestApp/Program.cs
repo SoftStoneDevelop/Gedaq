@@ -1,6 +1,5 @@
 ﻿using Gedaq.Npgsql;
 using Gedaq.Npgsql.Attributes;
-using Gedaq.Provider.Attributes;
 using Npgsql;
 using System;
 using System.Collections.Generic;

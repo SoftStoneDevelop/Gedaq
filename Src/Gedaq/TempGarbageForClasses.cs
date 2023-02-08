@@ -1,16 +1,11 @@
-﻿using Microsoft.CodeAnalysis;
+﻿using Gedaq.Provider.Enums;
+using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Gedaq
 {
-    internal enum MethodType
-    {
-        Sync = 0,
-        Async = 1
-    }
-
     internal enum NpgsqlSourceType
     {
         NpgsqlConnection = 0,
