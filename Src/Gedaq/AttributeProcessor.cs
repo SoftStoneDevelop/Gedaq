@@ -58,8 +58,6 @@ namespace Gedaq
             {
                 return;
             }
-
-            _readToTypeSources.Add(methodSource);
         }
 
         private bool IsFirstConstructor(ImmutableArray<TypedConstant> namedArguments)
@@ -121,6 +119,7 @@ namespace Gedaq
             var thirtArgument = namedArguments[2];//MethodType
             var fourthArgument = namedArguments[3];//SourceType
 
+            _readToTypeSources.Add(methodSource);
             return true;
         }
     }
