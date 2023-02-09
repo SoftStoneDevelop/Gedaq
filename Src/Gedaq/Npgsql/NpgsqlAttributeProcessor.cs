@@ -1,4 +1,5 @@
 ﻿using Gedaq.Helpers;
+using Gedaq.Npgsql.Generators;
 using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
@@ -11,6 +12,8 @@ namespace Gedaq.Npgsql
     internal class NpgsqlAttributeProcessor
     {
         private List<QueryReadNpgsql> _readToTypeSources = new List<QueryReadNpgsql>();
+        private List<QueryReadBatchNpgsql> _readBatchToTypeSources = new List<QueryReadBatchNpgsql>();
+
         private QueryParser _queryParser = new QueryParser();
 
         public bool Process(AttributeData attribute, INamedTypeSymbol containsType)
@@ -36,29 +39,50 @@ namespace Gedaq.Npgsql
 
         private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
         {
-            if (QueryReadNpgsql.IsFirstConstructor(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
+            if (QueryReadNpgsql.IsHisConstructor(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
                 _readToTypeSources.Add(queryReadMethod);
+                return;
+            }
+
+            if (QueryReadBatchNpgsql.IsHisConstructor(queryReadAttribute.ConstructorArguments, containsType, out var queryReadBatchMethod))
+            {
+                _readBatchToTypeSources.Add(queryReadBatchMethod);
                 return;
             }
         }
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)
         {
-            var queryReadGenerator = new QueryReadGenerator();
-            foreach (var queryRead in _readToTypeSources)
+            var queryReadBatchGenerator = new QueryReadBatchGenerator();
+            foreach (var queryRead in _readBatchToTypeSources)
             {
+                if(queryRead.Queries.Length == 1)
+                {
+                    var readSource = new QueryReadNpgsql(queryRead);
+                    _readToTypeSources.Add(readSource);
+                    continue;
+                }
+
                 for (int i = 0; i < queryRead.Queries.Length; i++)
                 {
                     QueryMap query = queryRead.Queries[i];
                     query.Aliases = _queryParser.Parse(query.Query);
                 }
-                queryReadGenerator.GenerateMethod(queryRead);
-
-                //TODO DO TODO
-                //context.AddSource(queryReadGenerator.FileName, queryReadGenerator.GetCode());
-                //context.AddSource($"AAA.g.cs", builder.ToString());
+                
+                queryReadBatchGenerator.GenerateMethod(queryRead);
+                context.AddSource($"{queryRead.MethodName}.g.cs", queryReadBatchGenerator.GetCode());
             }
+            _readBatchToTypeSources.Clear();
+
+            var queryReadGenerator = new QueryReadGenerator();
+            foreach (var queryRead in _readToTypeSources)
+            {
+                queryRead.Aliases = _queryParser.Parse(queryRead.Query);
+                queryReadGenerator.GenerateMethod(queryRead);
+                context.AddSource($"{queryRead.MethodName}.g.cs", queryReadGenerator.GetCode());
+            }
+            _readToTypeSources.Clear();
         }
     }
 }

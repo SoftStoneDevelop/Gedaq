@@ -63,19 +63,16 @@ namespace Gedaq.Npgsql
 
                     case ActionAfterStep.EndSearch:
                     {
-                        goto endSearch;
+                        return;
                     }
 
                     case ActionAfterStep.EndSearchAndAddField:
                     {
                         result.FieldNames.Add(stateMachine.GetAlias());
-                        goto endSearch;
+                        return;
                     }
                 }
             }
-
-        endSearch:
-            return;
         }
 
         private bool FindInstruction(string command, out int indexAfterInstruction, out InstructionType instruction)

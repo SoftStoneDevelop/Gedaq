@@ -5,7 +5,7 @@
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 	</PropertyGroup>
 	<ItemGroup>
-	  <PackageReference Include="Gedaq.Npgsql" Version="0.1.0.8" />
+	  <PackageReference Include="Gedaq.Npgsql" Version="0.1.0.10" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Gedaq\Gedaq.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="False" />

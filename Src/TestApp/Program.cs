@@ -4,7 +4,9 @@ using Npgsql;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Reflection.PortableExecutable;
 using System.Text;
 using TestApp.Model;
 
@@ -18,7 +20,8 @@ namespace TestApp
             using (var connection = new NpgsqlConnection(""))
             {
                 connection.Open();
-                var persons = sc.Method1Manual(connection).ToList();
+                Console.WriteLine("Manual start:");
+                var persons = SomeClass.Method1Manual(connection).ToList();
                 for (int i = 0; i < persons.Count; i++)
                 {
                     Console.WriteLine(@$"
@@ -27,29 +30,25 @@ namespace TestApp
 {nameof(Person.LastName)}: {persons[i].LastName}
 ");
                 }
+                Console.WriteLine("Manual end.");
+
+                Console.WriteLine("Genarated start:");
+                var personsG = connection.MethodGenerated1().ToList();
+                for (int i = 0; i < personsG.Count; i++)
+                {
+                    Console.WriteLine(@$"
+{nameof(Person.FirstName)}: {personsG[i][0]}
+{nameof(Person.MiddleName)}: {personsG[i][1]}
+{nameof(Person.LastName)}: {personsG[i][2]}
+");
+                }
+                Console.WriteLine("Genarated end.");
             }
+
+            Console.ReadLine();
         }
     }
 
-    [Gedaq.Npgsql.Attributes.QueryRead(
-            new string[]
-            {
-                @"
-SELECT 
-    p1.id,
-    p1.firstname,
-    p1.middlename,
-    p1.lastname
-FROM person p1
-"
-            },
-        new Type[]
-        {
-            typeof(Person)
-        },
-            Gedaq.Provider.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.Connection
-            )]
     public class SomeClass
     {
         [Gedaq.Npgsql.Attributes.QueryRead(
@@ -64,22 +63,34 @@ SELECT
 FROM person p1
 "
             },
-        new Type[]
-        {
-            typeof(Person)
-        },
+            new Type[]
+            {
+                typeof(object[])
+            },
             Gedaq.Provider.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.Connection
+            Gedaq.Npgsql.Enums.SourceType.Connection,
+            "MethodGenerated1"
             )]
         public void Config()
         {
             
         }
 
-        public IEnumerable<Person> Method1Manual(NpgsqlConnection connection)
+        public static IEnumerable<Person> Method1Manual(
+            NpgsqlConnection connection)
         {
-            using var command = connection.CreateCommand();
-            command.CommandText = @$"
+            bool needClose = connection.State == ConnectionState.Closed;
+            if(needClose)
+            {
+                connection.Open();
+            }
+
+            NpgsqlCommand command = null;
+            NpgsqlDataReader reader = null;
+            try
+            {
+                command = connection.CreateCommand();
+                command.CommandText = @$"
 SELECT 
     p1.id,
     p1.firstname,
@@ -88,8 +99,7 @@ SELECT
 FROM person p1
 ";
 
-            using (var reader = command.ExecuteReader())
-            {
+                reader = command.ExecuteReader();
                 while (reader.Read())
                 {
                     var item = new Person
@@ -97,11 +107,43 @@ FROM person p1
                         Id = reader.GetInt32(0),
                         FirstName = reader.GetString(1),
                         MiddleName = reader.GetString(2),
-                        LastName = reader.GetString(3)
+                        LastName = reader.GetString(3),
                     };
-                    
+
                     yield return item;
                 }
+                
+                while (reader.NextResult()) 
+                {
+                    //ignore
+                }
+
+                ((IDataReader)reader).Dispose();
+                reader = null;
+            }
+            finally
+            {
+                if (reader != null)
+                {
+                    if (!reader.IsClosed)
+                    {
+                        try 
+                        {
+                            command.Cancel();
+                        }
+                        catch { /* ignore */ }
+                    }
+
+                    reader.Dispose();
+                }
+
+                if (needClose)
+                {
+                    connection.Close();
+                }
+
+                command?.Parameters.Clear();
+                command?.Dispose();
             }
         }
 
