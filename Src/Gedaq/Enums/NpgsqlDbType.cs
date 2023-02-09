@@ -29,7 +29,7 @@ namespace Gedaq.Enums
     /// how to encode or decode values.
     /// </summary>
     /// <remarks>See https://www.postgresql.org/docs/current/static/datatype.html</remarks>
-    public enum NpgsqlDbType
+    internal enum NpgsqlDbType
     {
         // Note that it's important to never change the numeric values of this enum, since user applications
         // compile them in.

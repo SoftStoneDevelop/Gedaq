@@ -2,8 +2,10 @@
 using Gedaq.Npgsql.Attributes;
 using Npgsql;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using TestApp.Model;
 
 namespace TestApp
@@ -131,4 +133,4 @@ FROM person p1
             }
         }
     }
-}
+};

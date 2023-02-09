@@ -14,11 +14,10 @@ namespace Gedaq
             //System.Diagnostics.Debugger.Launch();
 
             var c = (CSharpCompilation)context.Compilation;
-            
+
             var processor = new AttributeProcessor();
             FillTypes(c.Assembly.GlobalNamespace, processor);
-
-            int s = 15;
+            processor.GenerateAndSaveMethods(context);
         }
 
         public void Initialize(GeneratorInitializationContext context)
