@@ -14,6 +14,20 @@ FROM person p1
             Gedaq.Npgsql.Enums.SourceType.Connection,
             "GetAllPerson"
             )]
+    [Gedaq.Npgsql.Attributes.QueryRead(
+            @"
+SELECT 
+    p1.id,
+    p1.firstname,
+    p1.middlename,
+    p1.lastname
+FROM person p1
+",
+            typeof(Person),
+            Gedaq.Provider.Enums.MethodType.Async,
+            Gedaq.Npgsql.Enums.SourceType.Connection,
+            "GetAllPerson"
+            )]
     public class Person
     {
         public int Id { get; set; }

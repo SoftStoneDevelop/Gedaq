@@ -8,6 +8,7 @@ namespace NpgsqlBenchmark
         static void Main(string[] args)
         {
             BenchmarkRunner.Run<Read>();
+            BenchmarkRunner.Run<ReadAsync>();
         }
     }
 }
