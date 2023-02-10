@@ -26,8 +26,12 @@ namespace TestApp
                 .Build();
                 ;
 
-            Connection(builder.GetConnectionString("SqlConnection"));
-            Source(builder.GetConnectionString("SqlConnection"));
+            //Connection(builder.GetConnectionString("SqlConnection"));
+            //Source(builder.GetConnectionString("SqlConnection"));
+
+            await ConnectionAsync(builder.GetConnectionString("SqlConnection"));
+            //await SourceAsync(builder.GetConnectionString("SqlConnection"));
+
             Console.ReadLine();
         }
 
@@ -37,27 +41,43 @@ namespace TestApp
             using (var connection = new NpgsqlConnection(connectionString))
             {
                 connection.Open();
-                Console.WriteLine("Genarated start:");
                 var personsG = connection.MethodGenerated1().ToList();
                 for (int i = 0; i < personsG.Count; i++)
                 {
                     Console.WriteLine(@$"
-{nameof(Person.FirstName)}: {personsG[i][0]}
-{nameof(Person.MiddleName)}: {personsG[i][1]}
-{nameof(Person.LastName)}: {personsG[i][2]}
+{nameof(Person.FirstName)}: {personsG[i].FirstName}
+{nameof(Person.MiddleName)}: {personsG[i].MiddleName}
+{nameof(Person.LastName)}: {personsG[i].LastName}
 ");
                 }
-                Console.WriteLine("Genarated end.");
-
-
-                Console.WriteLine("Manual async start:");
 
                 //foreach (var item in await SomeClass.Method12ManualAsync(connection).ToListAsync())
                 //{
                 //    var sd = 45;
                 //}
+            }
+        }
 
-                Console.WriteLine("Manual async end.");
+        public static async Task ConnectionAsync(string connectionString)
+        {
+            var sc = new SomeClass();
+            using (var connection = new NpgsqlConnection(connectionString))
+            {
+                connection.Open();
+                var personsG = await connection.MethodGenerated1Async().ToListAsync();
+                for (int i = 0; i < personsG.Count; i++)
+                {
+                    Console.WriteLine(@$"
+{nameof(Person.FirstName)}: {personsG[i].FirstName}
+{nameof(Person.MiddleName)}: {personsG[i].MiddleName}
+{nameof(Person.LastName)}: {personsG[i].LastName}
+");
+                }
+
+                //foreach (var item in await SomeClass.Method12ManualAsync(connection).ToListAsync())
+                //{
+                //    var sd = 45;
+                //}
             }
         }
 
@@ -67,7 +87,6 @@ namespace TestApp
             var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectionString);
             using var dataSource = dataSourceBuilder.Build();
 
-            Console.WriteLine("Genarated start:");
             var personsG = dataSource.MethodGenerated1().ToList();
             for (int i = 0; i < personsG.Count; i++)
             {
@@ -77,49 +96,82 @@ namespace TestApp
 {nameof(Person.LastName)}: {personsG[i].LastName}
 ");
             }
-            Console.WriteLine("Genarated end.");
+        }
+
+        public static async Task SourceAsync(string connectionString)
+        {
+            var sc = new SomeClass();
+            var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectionString);
+            using var dataSource = dataSourceBuilder.Build();
+
+            Console.WriteLine("Genarated start:");
+            var personsG = await dataSource.MethodGenerated1Async().ToListAsync();
+            for (int i = 0; i < personsG.Count; i++)
+            {
+                Console.WriteLine(@$"
+{nameof(Person.FirstName)}: {personsG[i].FirstName}
+{nameof(Person.MiddleName)}: {personsG[i].MiddleName}
+{nameof(Person.LastName)}: {personsG[i].LastName}
+");
+            }
         }
     }
 
     public class SomeClass
     {
         [Gedaq.Npgsql.Attributes.QueryRead(
-            new string[]
-            {
-                @"
+            @"
 SELECT 
     p1.id,
     p1.firstname,
     p1.middlename,
     p1.lastname
 FROM person p1
-"
-            },
-            new Type[]
-            {
-                typeof(Person)
-            },
+",
+            typeof(Person),
             Gedaq.Provider.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.NpgsqlDataSource,
             "MethodGenerated1"
             )]
         [Gedaq.Npgsql.Attributes.QueryRead(
-            new string[]
-            {
-                @"
+            @"
 SELECT 
     p1.id,
     p1.firstname,
     p1.middlename,
     p1.lastname
 FROM person p1
-"
-            },
-            new Type[]
-            {
-                typeof(object[])
-            },
+",
+            typeof(Person),
+            Gedaq.Provider.Enums.MethodType.Async,
+            Gedaq.Npgsql.Enums.SourceType.NpgsqlDataSource,
+            "MethodGenerated1"
+            )]
+        [Gedaq.Npgsql.Attributes.QueryRead(
+            @"
+SELECT 
+    p1.id,
+    p1.firstname,
+    p1.middlename,
+    p1.lastname
+FROM person p1
+",
+            typeof(Person),
             Gedaq.Provider.Enums.MethodType.Sync,
+            Gedaq.Npgsql.Enums.SourceType.Connection,
+            "MethodGenerated1"
+            )]
+        [Gedaq.Npgsql.Attributes.QueryRead(
+            @"
+SELECT 
+    p1.id,
+    p1.firstname,
+    p1.middlename,
+    p1.lastname
+FROM person p1
+",
+            typeof(Person),
+            Gedaq.Provider.Enums.MethodType.Async,
             Gedaq.Npgsql.Enums.SourceType.Connection,
             "MethodGenerated1"
             )]

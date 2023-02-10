@@ -15,7 +15,7 @@ namespace Gedaq.Npgsql.Model
 
         public string GetFileName()
         {
-            return $"{MethodName}{SourceType.ToString()}.g.cs";
+            return $"{MethodName}{SourceType.ToString()}{MethodType.ToString()}.g.cs";
         }
     }
 }

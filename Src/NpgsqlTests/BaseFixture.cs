@@ -1,5 +1,4 @@
 using Microsoft.Extensions.Configuration;
-using Npgsql;
 using System.IO;
 
 namespace NpgsqlTests
@@ -23,17 +22,5 @@ namespace NpgsqlTests
             }
         }
         private IConfigurationRoot _root;
-
-        public NpgsqlConnection GetOpenConnection() 
-        {
-            var connection = new NpgsqlConnection(Settings.GetConnectionString("SqlConnection"));
-            connection.Open();
-            if(connection.State != System.Data.ConnectionState.Open)
-            {
-                throw new System.Exception("Connection must be open");
-            }
-
-            return connection;
-        }
     }
 }
