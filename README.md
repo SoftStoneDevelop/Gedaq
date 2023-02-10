@@ -45,7 +45,7 @@ SELECT
 FROM person p1
 ",
             typeof(Person),
-            Gedaq.Provider.Enums.MethodType.Sync,
+            Gedaq.Provider.Enums.MethodType.Sync,//of Async
             Gedaq.Npgsql.Enums.SourceType.Connection,
             "GetAllPerson"
             )]
@@ -59,7 +59,7 @@ Now in the code we can call the ready method:
 
 var persons = 
         connection
-        .GetAllPerson()//IEnumerable<Person>
+        .GetAllPerson()//IEnumerable<Person> or IAsyncEnumerable<Person>
         .ToList();
 
 ```
