@@ -8,13 +8,9 @@ using System.Text;
 
 namespace Gedaq.Npgsql.Model
 {
-    internal class QueryReadBatchNpgsql
+    internal class QueryReadBatchNpgsql : BaseNpgsql
     {
         public QueryMap[] Queries;
-        public MethodType MethodType;
-        public NpgsqlSourceType SourceType;
-        public INamedTypeSymbol ContainTypeName;
-        public string MethodName;
 
         public static bool IsHisConstructor(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out QueryReadBatchNpgsql method)
         {
@@ -93,7 +89,7 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            methodSource.SourceType = (NpgsqlSourceType)thirtArgument.Value;
+            methodSource.SourceType = (NpgsqlSourceType)fourthArgument.Value;
 
             var fifthArgument = namedArguments[4];//string
             if (!(fifthArgument.Type is INamedTypeSymbol namedTypeSymbol5) ||

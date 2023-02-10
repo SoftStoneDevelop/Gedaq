@@ -8,15 +8,11 @@ using System.Text;
 
 namespace Gedaq.Npgsql.Model
 {
-    internal class QueryReadNpgsql
+    internal class QueryReadNpgsql : BaseNpgsql
     {
         public string Query;
         public ITypeSymbol MapTypeName;
         public Aliases Aliases;
-        public MethodType MethodType;
-        public NpgsqlSourceType SourceType;
-        public INamedTypeSymbol ContainTypeName;
-        public string MethodName;
 
         public QueryReadNpgsql()
         {
@@ -80,7 +76,7 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            methodSource.SourceType = (NpgsqlSourceType)thirtArgument.Value;
+            methodSource.SourceType = (NpgsqlSourceType)fourthArgument.Value;
 
             var fifthArgument = namedArguments[4];//string
             if (!(fifthArgument.Type is INamedTypeSymbol namedTypeSymbol5) ||

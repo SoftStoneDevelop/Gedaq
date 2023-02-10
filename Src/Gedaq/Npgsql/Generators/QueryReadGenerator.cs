@@ -45,7 +45,7 @@ using System.Collections.Generic;
 
 namespace {source.ContainTypeName.ContainingNamespace}
 {{
-    public static class {source.MethodName}Class
+    public static class {source.MethodName}ClassFrom{source.SourceType.ToString()}
     {{
         
         public static I{(source.MethodType == Enums.MethodType.Sync ? "" : "Async")}Enumerable<{source.MapTypeName.GetFullTypeName()}> {source.MethodName}(
@@ -96,8 +96,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
             QueryReadNpgsql source
             )
         {
-            //command?.Parameters.Clear(); TODO clear only if have parametrs
-
             if (source.SourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
             {
                 _methodCode.Append($@"
@@ -106,7 +104,10 @@ namespace {source.ContainTypeName.ContainingNamespace}
             {{
                 {source.SourceType.ToParametrName()}.Open();
             }}
+");
+            }
 
+            _methodCode.Append($@"
             NpgsqlCommand command = null;
             NpgsqlDataReader reader = null;
             try
@@ -119,8 +120,8 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 while (reader.Read())
                 {{
 ");
-                SyncYieldItem(source);
-                _methodCode.Append($@"
+            SyncYieldItem(source);
+            _methodCode.Append($@"
                 }}
 
                 while (reader.NextResult()) 
@@ -146,20 +147,21 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 
                     reader.Dispose();
                 }}
-
+");
+            if(source.SourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
+            {
+                _methodCode.Append($@"
                 if (needClose)
                 {{
                     connection.Close();
                 }}
-
+");
+            }
+            _methodCode.Append($@"
                 command?.Parameters.Clear();
                 command?.Dispose();
             }}
 ");
-                return;
-            }
-
-            throw new NotImplementedException();
         }
 
         private void SyncYieldItem(

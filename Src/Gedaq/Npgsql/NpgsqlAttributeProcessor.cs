@@ -71,7 +71,7 @@ namespace Gedaq.Npgsql
                 }
                 
                 queryReadBatchGenerator.GenerateMethod(queryRead);
-                context.AddSource($"{queryRead.MethodName}.g.cs", queryReadBatchGenerator.GetCode());
+                context.AddSource(queryRead.GetFileName(), queryReadBatchGenerator.GetCode());
             }
             _readBatchToTypeSources.Clear();
 
@@ -80,7 +80,7 @@ namespace Gedaq.Npgsql
             {
                 queryRead.Aliases = _queryParser.Parse(queryRead.Query);
                 queryReadGenerator.GenerateMethod(queryRead);
-                context.AddSource($"{queryRead.MethodName}.g.cs", queryReadGenerator.GetCode());
+                context.AddSource(queryRead.GetFileName(), queryReadGenerator.GetCode());
             }
             _readToTypeSources.Clear();
         }
