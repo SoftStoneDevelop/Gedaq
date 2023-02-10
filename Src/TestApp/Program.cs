@@ -26,7 +26,7 @@ namespace TestApp
                 .Build();
                 ;
 
-            //Connection(builder.GetConnectionString("SqlConnection"));
+            Connection(builder.GetConnectionString("SqlConnection"));
             Source(builder.GetConnectionString("SqlConnection"));
             Console.ReadLine();
         }
