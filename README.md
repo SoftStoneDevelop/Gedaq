@@ -45,7 +45,7 @@ SELECT
 FROM person p1
 ",
             typeof(Person),
-            Gedaq.Provider.Enums.MethodType.Sync,//of Async
+            Gedaq.Provider.Enums.MethodType.Sync,//or Async
             Gedaq.Npgsql.Enums.SourceType.Connection,
             "GetAllPerson"
             )]
