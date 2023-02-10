@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gedaq", "Src\Gedaq\Gedaq.csproj", "{51ABAB41-3315-4D27-B104-C3B0BCA01344}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gedaq", "Src\Gedaq\Gedaq.csproj", "{51ABAB41-3315-4D27-B104-C3B0BCA01344}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "Src\TestApp\TestApp.csproj", "{B2C1EE3B-67AE-47FA-BCCB-CB4B985F82D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp", "Src\TestApp\TestApp.csproj", "{B2C1EE3B-67AE-47FA-BCCB-CB4B985F82D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NpgsqlTests", "Src\NpgsqlTests\NpgsqlTests.csproj", "{9B9266E6-47AC-48F6-8E52-6891793A13FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B2C1EE3B-67AE-47FA-BCCB-CB4B985F82D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2C1EE3B-67AE-47FA-BCCB-CB4B985F82D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2C1EE3B-67AE-47FA-BCCB-CB4B985F82D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B9266E6-47AC-48F6-8E52-6891793A13FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B9266E6-47AC-48F6-8E52-6891793A13FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B9266E6-47AC-48F6-8E52-6891793A13FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B9266E6-47AC-48F6-8E52-6891793A13FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
