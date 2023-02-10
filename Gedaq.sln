@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp", "Src\TestApp\Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NpgsqlTests", "Src\NpgsqlTests\NpgsqlTests.csproj", "{9B9266E6-47AC-48F6-8E52-6891793A13FC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmarks", "Benchmarks", "{FFC4E09E-7166-4ADE-8AE6-82126D8CF56D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9A6C4595-9C75-4142-9DFB-BEA95F24F2E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpgsqlBenchmark", "Src\NpgsqlBenchmark\NpgsqlBenchmark.csproj", "{73C2AC8A-8036-48D8-82AA-0600BD84ABFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +33,17 @@ Global
 		{9B9266E6-47AC-48F6-8E52-6891793A13FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B9266E6-47AC-48F6-8E52-6891793A13FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B9266E6-47AC-48F6-8E52-6891793A13FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C2AC8A-8036-48D8-82AA-0600BD84ABFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C2AC8A-8036-48D8-82AA-0600BD84ABFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C2AC8A-8036-48D8-82AA-0600BD84ABFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C2AC8A-8036-48D8-82AA-0600BD84ABFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B9266E6-47AC-48F6-8E52-6891793A13FC} = {9A6C4595-9C75-4142-9DFB-BEA95F24F2E1}
+		{73C2AC8A-8036-48D8-82AA-0600BD84ABFA} = {FFC4E09E-7166-4ADE-8AE6-82126D8CF56D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FB70F321-E9FD-4AD5-BD34-09B2945AEE15}
