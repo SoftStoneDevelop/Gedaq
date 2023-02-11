@@ -67,7 +67,7 @@ namespace Gedaq.Npgsql
                 for (int i = 0; i < queryRead.Queries.Length; i++)
                 {
                     QueryMap query = queryRead.Queries[i];
-                    query.Aliases = _queryParser.Parse(query.Query);
+                    query.Aliases = _queryParser.Parse(ref query.Query);
                 }
                 
                 queryReadBatchGenerator.GenerateMethod(queryRead);
@@ -78,7 +78,7 @@ namespace Gedaq.Npgsql
             var queryReadGenerator = new QueryReadGenerator();
             foreach (var queryRead in _readToTypeSources)
             {
-                queryRead.Aliases = _queryParser.Parse(queryRead.Query);
+                queryRead.Aliases = _queryParser.Parse(ref queryRead.Query);
                 queryReadGenerator.GenerateMethod(queryRead);
                 context.AddSource(queryRead.GetFileName(), queryReadGenerator.GetCode());
             }

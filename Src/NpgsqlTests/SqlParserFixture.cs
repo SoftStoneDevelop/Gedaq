@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 
 namespace NpgsqlTests
 {
@@ -9,16 +10,15 @@ namespace NpgsqlTests
         public void TestSqlParser()
         {
             var parser = new Gedaq.Npgsql.QueryParser();
-            var aliases = parser.Parse(@"
+            var sql = @"
 SELECT 
     p1.id,
     p1.firstname,
     p1.middlename,
     p1.lastname
 FROM person p1
-"
-                );
-
+";
+            var aliases = parser.Parse(ref sql);
             Assert.Multiple(() =>
             {
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
@@ -26,46 +26,82 @@ FROM person p1
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(0));
 
                 Assert.That(aliases.Fields[0].Name, Is.EqualTo("id"));
+                Assert.That(aliases.Fields[0].Position, Is.EqualTo(0));
+
                 Assert.That(aliases.Fields[1].Name, Is.EqualTo("firstname"));
+                Assert.That(aliases.Fields[1].Position, Is.EqualTo(1));
+
                 Assert.That(aliases.Fields[2].Name, Is.EqualTo("middlename"));
+                Assert.That(aliases.Fields[2].Position, Is.EqualTo(2));
+
                 Assert.That(aliases.Fields[3].Name, Is.EqualTo("lastname"));
+                Assert.That(aliases.Fields[3].Position, Is.EqualTo(3));
             });
         }
 
         [Test]
-        public void FindInstructionRegex()
+        public void GetLastSplitedItem()
         {
-            var matches1 = Gedaq.Npgsql.QueryParser.FindInstructionRegex.Matches(@"
+            var parser = new Gedaq.Npgsql.QueryParser();
+            var sql = @"
 SELECT 
     p1.id,
     p1.firstname,
     p1.middlename,
     p1.lastname
-FROM person p1
-");
-            Assert.That(matches1, Has.Count.EqualTo(1));
+FROM person p1;
+SELECT 
+    p1.id,
+    p1.firstname,
+    p1.middlename,
+    p1.lastname
+FROM person p1;
+SELECT 
+    p1.id,
+    p1.firstname,
+    p1.middlename,
+    p1.lastname
+FROM person p1;
+".AsSpan();
+            var lastItem = parser.GetLastSplitedItem(sql, ';');
+            Assert.IsTrue(188 == lastItem);
 
-            var matches2 = Gedaq.Npgsql.QueryParser.FindInstructionRegex.Matches(@"
+            sql = @"
 SELECT 
     p1.id,
     p1.firstname,
     p1.middlename,
     p1.lastname
 FROM person p1;
-SELECT 
-    p1.id,
-    p1.firstname,
-    p1.middlename,
-    p1.lastname
-FROM person p1;
+".AsSpan();
+            lastItem = parser.GetLastSplitedItem(sql, ';');
+            Assert.IsTrue(0 == lastItem);
+
+            sql = @"
 SELECT 
     p1.id,
     p1.firstname,
     p1.middlename,
     p1.lastname
 FROM person p1
-");
-            Assert.That(matches2, Has.Count.EqualTo(3));
+".AsSpan();
+            lastItem = parser.GetLastSplitedItem(sql, ';');
+            Assert.IsTrue(0 == lastItem);
+
+            sql = @"
+SELECT 
+    p1.id,
+    p1.firstname,
+    p1.middlename,
+    p1.lastname
+FROM person p1     
+ 
+;
+ 
+ 
+".AsSpan();
+            lastItem = parser.GetLastSplitedItem(sql, ';');
+            Assert.IsTrue(0 == lastItem);
         }
     }
 }

@@ -14,15 +14,11 @@ namespace Gedaq.Npgsql
     {
         static readonly string[] _knownCommands = new string[] { "select", "insert", "delete" };
 
-        public Aliases Parse(string query)
+        public Aliases Parse(ref string query)
         {
-            var commands = query.Split(new char[] { ';' }, StringSplitOptions.RemoveEmptyEntries);
-            if (commands.Length == 0)
-            {
-                throw new Exception("The query does not contain commands.");
-            }
-
-            var lastCommand = commands[commands.Length - 1];
+            var querySpan = query.AsSpan();
+            var lastCommandIndex = GetLastSplitedItem(querySpan, ';');
+            var lastCommand = querySpan.Slice(lastCommandIndex);
             if (!FindInstruction(lastCommand, out var index, out var instructionType))
             {
                 throw new Exception("Instruction in query not found");
@@ -38,11 +34,45 @@ namespace Gedaq.Npgsql
                 return new Aliases(true);
             }
 
-            return FillAliases(lastCommand.Substring(index));
+            var aliases = FillAliases(lastCommand.Slice(index), out var newQuery);
+            if(newQuery != null)
+            {
+                query = querySpan.Slice(0, lastCommandIndex + index + 1).ToString() + newQuery;
+            }
+
+            return aliases;
         }
 
-        private Aliases FillAliases(string query)
+        internal int GetLastSplitedItem(ReadOnlySpan<char> query, char splitter)
         {
+            int i = query.Length - 1;
+            for (; i >= 0; i--)
+            {
+                if (query[i] != '\r' && query[i] != '\n' && query[i] != ' ')
+                {
+                    break;
+                }
+            }
+
+            if(query[i] == splitter)
+            {
+                i--;
+            }
+
+            for (; i >= 0; i--)
+            {
+                if (query[i] == splitter)
+                {
+                    return i + 1;
+                }
+            }
+
+            return 0;
+        }
+
+        private Aliases FillAliases(ReadOnlySpan<char> query, out string newQuery)
+        {
+            newQuery = null;
             var root = new Aliases();
             var stateMachine = new FindAliasStateMachine(query);
             while(stateMachine.CanMoveNext())
@@ -57,7 +87,7 @@ namespace Gedaq.Npgsql
 
                     case ActionAfterStep.AddField:
                     {
-                        root.Fields.Add(new Field() { Name = stateMachine.GetAlias() });
+                        root.Fields.Add(new Field() { Name = stateMachine.GetAlias(), Position = stateMachine.GetPosition() });
                         break;
                     }
 
@@ -68,7 +98,7 @@ namespace Gedaq.Npgsql
 
                     case ActionAfterStep.EndSearchAndAddField:
                     {
-                        root.Fields.Add(new Field() { Name = stateMachine.GetAlias() });
+                        root.Fields.Add(new Field() { Name = stateMachine.GetAlias(), Position = stateMachine.GetPosition() });
                         return root;
                     }
                 }
@@ -77,14 +107,7 @@ namespace Gedaq.Npgsql
             return root;
         }
 
-        //wrong expression
-        public static Regex FindInstructionRegex = 
-            new Regex(
-                @"(?<=(^|\s))(select|delete|insert)(?=(.*|\s*)*;)",
-                RegexOptions.IgnoreCase | RegexOptions.Compiled
-                );
-
-        private bool FindInstruction(string command, out int indexAfterInstruction, out InstructionType instruction)
+        private bool FindInstruction(ReadOnlySpan<char> command, out int indexAfterInstruction, out InstructionType instruction)
         {
             indexAfterInstruction = -1;
             instruction = InstructionType.None;
@@ -104,8 +127,6 @@ namespace Gedaq.Npgsql
 
                     emptySequence = false;
                 }
-
-                var cChar = command[indexInCommand];
 
                 if (command[indexInCommand] == '\r' || command[indexInCommand] == '\n' || command[indexInCommand] == ' ')
                 {
@@ -176,15 +197,14 @@ namespace Gedaq.Npgsql
             EndSearchAndAddField = 3
         }
 
-        private struct FindAliasStateMachine
+        private ref struct FindAliasStateMachine
         {
             private static readonly char[] _emptyOrCarret = new char[] { ' ', '\r', '\n' };
             private static readonly string _from = "from";
 
             private StringBuilder _field;
-            private bool _getField;
-
-            private string _query;
+            private int _fieldPosition;
+            private ReadOnlySpan<char> _query;
             private int currentIndex;
 
             private int _leftBrackets;
@@ -201,13 +221,13 @@ namespace Gedaq.Npgsql
             private int _state;
 
             public FindAliasStateMachine(
-                string query
+                ReadOnlySpan<char> query
                 )
             {
                 _field = new StringBuilder();
-                _getField = false;
                 currentIndex = -1;
                 _leftBrackets = 0;
+                _fieldPosition = -1;
                 _state = -1;
                 _query = query;
             }
@@ -215,10 +235,14 @@ namespace Gedaq.Npgsql
             public string GetAlias()
             {
                 var result = _field.ToString();
-                _getField = false;
                 _field.Clear();
 
                 return result;
+            }
+
+            public int GetPosition()
+            {
+                return _fieldPosition;
             }
 
             public bool CanMoveNext()
@@ -234,11 +258,6 @@ namespace Gedaq.Npgsql
 
             public ActionAfterStep MoveNext()
             {
-                if (_getField)
-                {
-                    throw new Exception("Alias alias not added");
-                }
-
                 if (_state == -2)
                 {
                     throw new Exception("State machine expired");
@@ -349,6 +368,7 @@ namespace Gedaq.Npgsql
                 if (currentIndex == _query.Length - 1)
                 {
                     _state = -2;
+                    _fieldPosition++;
                     return ActionAfterStep.EndSearchAndAddField;
                 }
 
@@ -380,16 +400,14 @@ namespace Gedaq.Npgsql
                         throw new Exception("'FROM' can't be alias");
                     }
 
-                    _getField = true;
-
+                    _fieldPosition++;
                     return ActionAfterStep.AddField;
                 }
 
                 if (_query[currentIndex] == ',')
                 {
                     _state = 0;
-                    _getField = true;
-
+                    _fieldPosition++;
                     return ActionAfterStep.AddField;
                 }
 
