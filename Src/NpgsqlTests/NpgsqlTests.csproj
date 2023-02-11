@@ -25,6 +25,6 @@
 		</None>
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\Gedaq\Gedaq.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="False" />
+		<ProjectReference Include="..\Gedaq\Gedaq.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="True" />
 	</ItemGroup>
 </Project>

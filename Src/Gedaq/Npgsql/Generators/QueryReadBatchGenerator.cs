@@ -147,10 +147,10 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     var item = new {query.MapTypeName.GetFullTypeName()}
                     {{
 ");
-                for (int i = 0; i < query.Aliases.FieldNames.Count; i++)
+                for (int i = 0; i < query.Aliases.Fields.Count; i++)
                 {
-                    string alias = query.Aliases.FieldNames[i];
-                    query.MapTypeName.GetPropertyOrFieldName(alias, out var propertyName, out var propertyType);
+                    var field = query.Aliases.Fields[i];
+                    query.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
                     _methodCode.Append($@"
                         {propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({i}),
 ");

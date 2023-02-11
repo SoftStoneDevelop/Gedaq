@@ -3,13 +3,16 @@ using Gedaq.Npgsql.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
+using System.Text.RegularExpressions;
 
+[assembly:InternalsVisibleTo("NpgsqlTests")]
 namespace Gedaq.Npgsql
 {
     internal class QueryParser
     {
-        static readonly string[] _knownCommands = new string[] { "SELECT", "INSERT", "DELETE" };
+        static readonly string[] _knownCommands = new string[] { "select", "insert", "delete" };
 
         public Aliases Parse(string query)
         {
@@ -35,19 +38,16 @@ namespace Gedaq.Npgsql
                 return new Aliases(true);
             }
 
-            var result = new Aliases();
-            FillAliases(result, lastCommand.Substring(index));
-            result.FieldNames.TrimExcess();
-
-            return result;
+            return FillAliases(lastCommand.Substring(index));
         }
 
-        private void FillAliases(Aliases result, string query)
+        private Aliases FillAliases(string query)
         {
-            var stateMachine = new FindAliasStateMachine(query.Length);
-            foreach (var character in query)
+            var root = new Aliases();
+            var stateMachine = new FindAliasStateMachine(query);
+            while(stateMachine.CanMoveNext())
             {
-                var action = stateMachine.MoveNext(in character);
+                var action = stateMachine.MoveNext();
                 switch (action)
                 {
                     case ActionAfterStep.None:
@@ -57,23 +57,32 @@ namespace Gedaq.Npgsql
 
                     case ActionAfterStep.AddField:
                     {
-                        result.FieldNames.Add(stateMachine.GetAlias());
+                        root.Fields.Add(new Field() { Name = stateMachine.GetAlias() });
                         break;
                     }
 
                     case ActionAfterStep.EndSearch:
                     {
-                        return;
+                        return root;
                     }
 
                     case ActionAfterStep.EndSearchAndAddField:
                     {
-                        result.FieldNames.Add(stateMachine.GetAlias());
-                        return;
+                        root.Fields.Add(new Field() { Name = stateMachine.GetAlias() });
+                        return root;
                     }
                 }
             }
+
+            return root;
         }
+
+        //wrong expression
+        public static Regex FindInstructionRegex = 
+            new Regex(
+                @"(?<=(^|\s))(select|delete|insert)(?=(.*|\s*)*;)",
+                RegexOptions.IgnoreCase | RegexOptions.Compiled
+                );
 
         private bool FindInstruction(string command, out int indexAfterInstruction, out InstructionType instruction)
         {
@@ -115,7 +124,7 @@ namespace Gedaq.Npgsql
                         continue;
                     }
 
-                    if (char.ToLowerInvariant(_knownCommands[currentPossibleCommand][indexInstruction]) == char.ToLowerInvariant(command[indexInCommand]))
+                    if (_knownCommands[currentPossibleCommand][indexInstruction] == char.ToLowerInvariant(command[indexInCommand]))
                     {
                         indexInstruction++;
                         break;
@@ -167,15 +176,18 @@ namespace Gedaq.Npgsql
             EndSearchAndAddField = 3
         }
 
-        private class FindAliasStateMachine
+        private struct FindAliasStateMachine
         {
             private static readonly char[] _emptyOrCarret = new char[] { ' ', '\r', '\n' };
-            private StringBuilder _field = new StringBuilder();
-            private bool _getField = false;
+            private static readonly string _from = "from";
 
-            private int lastIndex;
-            private int currentIndex = -1;
-            private int _leftBrackets = 0;
+            private StringBuilder _field;
+            private bool _getField;
+
+            private string _query;
+            private int currentIndex;
+
+            private int _leftBrackets;
 
             /// <summary>
             /// -1 - start state
@@ -186,13 +198,18 @@ namespace Gedaq.Npgsql
             /// 3 - expect end of alias
             /// 4 - expect: comma or FROM or END or Start of Alias
             /// </summary>
-            private int _state = -1;
+            private int _state;
 
             public FindAliasStateMachine(
-                int queryLength
+                string query
                 )
             {
-                lastIndex = queryLength - 1;
+                _field = new StringBuilder();
+                _getField = false;
+                currentIndex = -1;
+                _leftBrackets = 0;
+                _state = -1;
+                _query = query;
             }
 
             public string GetAlias()
@@ -204,8 +221,18 @@ namespace Gedaq.Npgsql
                 return result;
             }
 
+            public bool CanMoveNext()
+            {
+                if (_state == -2)
+                {
+                    return false;
+                }
 
-            public ActionAfterStep MoveNext(in char character)
+                return true;
+            }
+
+
+            public ActionAfterStep MoveNext()
             {
                 if (_getField)
                 {
@@ -224,7 +251,7 @@ namespace Gedaq.Npgsql
                     _state = 0;
                 }
 
-                if (currentIndex == lastIndex && _state != 3)
+                if (currentIndex == _query.Length - 1 && _state != 3)
                 {
                     throw new Exception("Unexpected end of state machine");
                 }
@@ -233,27 +260,27 @@ namespace Gedaq.Npgsql
                 {
                     case 0:
                     {
-                        return SkipUntilNotLetter(in character);
+                        return SkipUntilNotLetter();
                     }
 
                     case 1:
                     {
-                        return SkipUntilNotRightBrackets(in character);
+                        return SkipUntilNotRightBrackets();
                     }
 
                     case 2:
                     {
-                        return ExpectStartAlias(in character);
+                        return ExpectStartAlias();
                     }
 
                     case 3:
                     {
-                        return ExpectEndAlias(in character);
+                        return ExpectEndAlias();
                     }
 
                     case 4:
                     {
-                        return ExpectCommaOrFromOrEnd(in character);
+                        return ExpectCommaOrFromOrEnd();
                     }
 
                     default:
@@ -263,15 +290,15 @@ namespace Gedaq.Npgsql
                 }
             }
 
-            private ActionAfterStep SkipUntilNotLetter(in char character)//0
+            private ActionAfterStep SkipUntilNotLetter()//0
             {
-                if (char.IsLetter(character))
+                if (char.IsLetter(_query[currentIndex]))
                 {
                     _state = 3;
-                    _field.Append(character);
+                    _field.Append(_query[currentIndex]);
                     return ActionAfterStep.None;
                 }
-                else if (character == '(')
+                else if (_query[currentIndex] == '(')
                 {
                     _leftBrackets++;
                     _state = 1;
@@ -284,9 +311,9 @@ namespace Gedaq.Npgsql
                 }
             }
 
-            private ActionAfterStep SkipUntilNotRightBrackets(in char character)//1
+            private ActionAfterStep SkipUntilNotRightBrackets()//1
             {
-                if (character == ')')
+                if (_query[currentIndex] == ')')
                 {
                     if (--_leftBrackets == 0)
                     {
@@ -299,17 +326,17 @@ namespace Gedaq.Npgsql
                 return ActionAfterStep.None;
             }
 
-            private ActionAfterStep ExpectStartAlias(in char character)//2
+            private ActionAfterStep ExpectStartAlias()//2
             {
-                if (char.IsLetter(character))
+                if (char.IsLetter(_query[currentIndex]))
                 {
                     _state = 3;
-                    _field.Append(character);
+                    _field.Append(_query[currentIndex]);
 
                     return ActionAfterStep.None;
                 }
 
-                if (_emptyOrCarret.Contains(character))
+                if (_emptyOrCarret.Contains(_query[currentIndex]))
                 {
                     return ActionAfterStep.None;
                 }
@@ -317,27 +344,27 @@ namespace Gedaq.Npgsql
                 throw new Exception("Expect start of alias");
             }
 
-            private ActionAfterStep ExpectEndAlias(in char character)//3
+            private ActionAfterStep ExpectEndAlias()//3
             {
-                if (currentIndex == lastIndex)
+                if (currentIndex == _query.Length - 1)
                 {
                     _state = -2;
                     return ActionAfterStep.EndSearchAndAddField;
                 }
 
-                if (character == '.')
+                if (_query[currentIndex] == '.')
                 {
                     _field.Clear();
                     return ActionAfterStep.None;
                 }
 
-                if (char.IsLetter(character) || (_field.Length > 0 && char.IsDigit(character)))
+                if (char.IsLetter(_query[currentIndex]) || (_field.Length > 0 && char.IsDigit(_query[currentIndex])))
                 {
-                    _field.Append(character);
+                    _field.Append(_query[currentIndex]);
                     return ActionAfterStep.None;
                 }
 
-                if (_field.Length == 2 && character == char.ToLowerInvariant(' ') && _field.ToString().ToLowerInvariant() == "as".ToLowerInvariant())
+                if (_field.Length == 2 && _query[currentIndex] == char.ToLowerInvariant(' ') && _field.ToString().ToLowerInvariant() == "as".ToLowerInvariant())
                 {
                     _state = 2;
                     _field.Clear();
@@ -345,7 +372,7 @@ namespace Gedaq.Npgsql
                     return ActionAfterStep.None;
                 }
 
-                if (_emptyOrCarret.Contains(character))
+                if (_emptyOrCarret.Contains(_query[currentIndex]))
                 {
                     _state = 4;
                     if (_field.Length == 4 && _field.ToString().ToLowerInvariant() == "FROM".ToLowerInvariant())
@@ -358,7 +385,7 @@ namespace Gedaq.Npgsql
                     return ActionAfterStep.AddField;
                 }
 
-                if (character == ',')
+                if (_query[currentIndex] == ',')
                 {
                     _state = 0;
                     _getField = true;
@@ -369,9 +396,9 @@ namespace Gedaq.Npgsql
                 throw new Exception("Expect start of alias: unknown behavior");
             }
 
-            private ActionAfterStep ExpectCommaOrFromOrEnd(in char character)//4
+            private ActionAfterStep ExpectCommaOrFromOrEnd()//4
             {
-                if (currentIndex == lastIndex)
+                if (currentIndex == _query.Length - 1)
                 {
                     _state = -2;
                     return ActionAfterStep.EndSearch;
@@ -379,30 +406,30 @@ namespace Gedaq.Npgsql
 
                 if (_field.Length == 0)
                 {
-                    if (_emptyOrCarret.Contains(character))
+                    if (_emptyOrCarret.Contains(_query[currentIndex]))
                     {
                         return ActionAfterStep.None;
                     }
                     else
-                    if (character == ',')
+                    if (_query[currentIndex] == ',')
                     {
                         _state = 0;
                         return ActionAfterStep.None;
                     }
                 }
 
-                if (_field.Length < 4 && _emptyOrCarret.Contains(character))
+                if (_field.Length < 4 && _emptyOrCarret.Contains(_query[currentIndex]))
                 {
                     throw new Exception($"Expect {nameof(ExpectCommaOrFromOrEnd)} but field equal '{_field.ToString()}'");
                 }
 
                 if (_field.Length < 4)
                 {
-                    _field.Append(character);
+                    _field.Append(_query[currentIndex]);
                     return ActionAfterStep.None;
                 }
 
-                if (_field.Length == 4 && _emptyOrCarret.Contains(character) && _field.ToString().ToLowerInvariant() == "FROM".ToLowerInvariant())
+                if (_field.Length == 4 && _emptyOrCarret.Contains(_query[currentIndex]) && _field.ToString().ToLowerInvariant() == "FROM".ToLowerInvariant())
                 {
                     _state = -2;
                     return ActionAfterStep.EndSearch;

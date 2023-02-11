@@ -9,5 +9,7 @@
         public string MiddleName { get; set; }
 
         public string LastName { get; set; }
+
+        public Identification Identification { get; set; }
     }
 }

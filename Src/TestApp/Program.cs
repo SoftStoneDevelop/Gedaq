@@ -26,13 +26,166 @@ namespace TestApp
                 .Build();
                 ;
 
+            //DropTablesTestDatabase(builder.GetConnectionString("SqlConnection"));
+            //FillTestDatabase(builder.GetConnectionString("SqlConnection"));
             //Connection(builder.GetConnectionString("SqlConnection"));
-            //Source(builder.GetConnectionString("SqlConnection"));
-
             await ConnectionAsync(builder.GetConnectionString("SqlConnection"));
-            //await SourceAsync(builder.GetConnectionString("SqlConnection"));
 
             Console.ReadLine();
+        }
+
+        private static void DropTablesTestDatabase(string connStr)
+        {
+            using (var connection = new NpgsqlConnection(connStr))
+            {
+                connection.Open();
+                using var cmd = connection.CreateCommand();
+                {
+                    cmd.CommandText = @"
+DROP TABLE person;
+DROP TABLE identification;
+";
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        private static void FillTestDatabase(string connStr)
+        {
+            using (var connection = new NpgsqlConnection(connStr))
+            {
+                connection.Open();
+                using var cmd = connection.CreateCommand();
+                {
+                    cmd.CommandText = @"
+CREATE TABLE IF NOT EXISTS public.identification
+(
+    id integer NOT NULL,
+    typename text COLLATE pg_catalog.""default"" NOT NULL,
+    CONSTRAINT identification_pkey PRIMARY KEY (id)
+)
+";
+                    cmd.ExecuteNonQuery();
+
+                    cmd.CommandText = @"
+INSERT INTO public.identification(
+	id, typename)
+	VALUES (
+    @id, @typename
+);
+";
+                    var id = cmd.CreateParameter();
+                    id.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Integer;
+                    id.ParameterName = "id";
+                    cmd.Parameters.Add(id);
+
+                    var typename = cmd.CreateParameter();
+                    typename.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
+                    typename.ParameterName = "typename";
+                    cmd.Parameters.Add(typename);
+                    cmd.Prepare();
+
+                    id.Value = 1;
+                    typename.Value = "sailor's passport";
+                    cmd.ExecuteNonQuery();
+
+                    id.Value = 2;
+                    typename.Value = "officer's certificate";
+                    cmd.ExecuteNonQuery();
+
+                    id.Value = 3;
+                    typename.Value = "driver license";
+                    cmd.ExecuteNonQuery();
+
+                    id.Value = 4;
+                    typename.Value = "citizen's passport";
+                    cmd.ExecuteNonQuery();
+
+                    id.Value = 5;
+                    typename.Value = "party card";
+                    cmd.ExecuteNonQuery();
+                }
+
+                //fill person
+                {
+                    cmd.CommandText = @"
+CREATE TABLE IF NOT EXISTS public.person
+(
+    id integer NOT NULL,
+    firstname text COLLATE pg_catalog.""default"" NOT NULL,
+    middlename text COLLATE pg_catalog.""default"",
+    lastname text COLLATE pg_catalog.""default"",
+    identification_id integer,
+    CONSTRAINT person_pkey PRIMARY KEY (id),
+    CONSTRAINT identification_fk FOREIGN KEY (identification_id)
+        REFERENCES public.identification (id)
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+)
+";
+                    cmd.ExecuteNonQuery();
+
+                    cmd.CommandText = @"
+INSERT INTO public.person(
+	id, firstname, middlename, lastname, identification_id)
+	VALUES (
+    @id, @firstname, @middlename, @lastname, @identification_id
+);
+";
+                    cmd.Parameters.Clear();
+                    var id = cmd.CreateParameter();
+                    id.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Integer;
+                    id.ParameterName = "id";
+                    cmd.Parameters.Add(id);
+
+                    var firstname = cmd.CreateParameter();
+                    firstname.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
+                    firstname.ParameterName = "firstname";
+                    cmd.Parameters.Add(firstname);
+
+                    var middlename = cmd.CreateParameter();
+                    middlename.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
+                    middlename.ParameterName = "middlename";
+                    cmd.Parameters.Add(middlename);
+
+                    var lastname = cmd.CreateParameter();
+                    lastname.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
+                    lastname.ParameterName = "lastname";
+                    cmd.Parameters.Add(lastname);
+
+                    var identificationId = cmd.CreateParameter();
+                    identificationId.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Integer;
+                    identificationId.ParameterName = "identification_id";
+                    identificationId.IsNullable = true;
+                    cmd.Parameters.Add(identificationId);
+                    cmd.Prepare();
+
+                    var refId = 0;
+                    for (int i = 0; i < 100000; i++)
+                    {
+                        id.Value = i;
+                        firstname.Value = $"John{i}";
+                        middlename.Value = $"Сurly{i}";
+                        lastname.Value = $"Doe{i}";
+
+                        if (++refId > 5)
+                        {
+                            refId = 1;
+                        }
+
+                        if (i % 2 == 0)
+                        {
+                            identificationId.Value = refId;
+                        }
+                        else
+                        {
+                            identificationId.Value = DBNull.Value;
+                        }
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
         }
 
         public static void Connection(string connectionString)
@@ -80,73 +233,10 @@ namespace TestApp
                 //}
             }
         }
-
-        public static void Source(string connectionString)
-        {
-            var sc = new SomeClass();
-            var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectionString);
-            using var dataSource = dataSourceBuilder.Build();
-
-            var personsG = dataSource.MethodGenerated1().ToList();
-            for (int i = 0; i < personsG.Count; i++)
-            {
-                Console.WriteLine(@$"
-{nameof(Person.FirstName)}: {personsG[i].FirstName}
-{nameof(Person.MiddleName)}: {personsG[i].MiddleName}
-{nameof(Person.LastName)}: {personsG[i].LastName}
-");
-            }
-        }
-
-        public static async Task SourceAsync(string connectionString)
-        {
-            var sc = new SomeClass();
-            var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectionString);
-            using var dataSource = dataSourceBuilder.Build();
-
-            Console.WriteLine("Genarated start:");
-            var personsG = await dataSource.MethodGenerated1Async().ToListAsync();
-            for (int i = 0; i < personsG.Count; i++)
-            {
-                Console.WriteLine(@$"
-{nameof(Person.FirstName)}: {personsG[i].FirstName}
-{nameof(Person.MiddleName)}: {personsG[i].MiddleName}
-{nameof(Person.LastName)}: {personsG[i].LastName}
-");
-            }
-        }
     }
 
     public class SomeClass
     {
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    p1.id,
-    p1.firstname,
-    p1.middlename,
-    p1.lastname
-FROM person p1
-",
-            typeof(Person),
-            Gedaq.Provider.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.NpgsqlDataSource,
-            "MethodGenerated1"
-            )]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    p1.id,
-    p1.firstname,
-    p1.middlename,
-    p1.lastname
-FROM person p1
-",
-            typeof(Person),
-            Gedaq.Provider.Enums.MethodType.Async,
-            Gedaq.Npgsql.Enums.SourceType.NpgsqlDataSource,
-            "MethodGenerated1"
-            )]
         [Gedaq.Npgsql.Attributes.QueryRead(
             @"
 SELECT 

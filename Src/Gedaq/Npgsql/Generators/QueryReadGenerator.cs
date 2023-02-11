@@ -196,10 +196,10 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     var item = new {source.MapTypeName.GetFullTypeName()}
                     {{
 ");
-                for (int i = 0; i < source.Aliases.FieldNames.Count; i++)
+                for (int i = 0; i < source.Aliases.Fields.Count; i++)
                 {
-                    string alias = source.Aliases.FieldNames[i];
-                    source.MapTypeName.GetPropertyOrFieldName(alias, out var propertyName, out var propertyType);
+                    var field = source.Aliases.Fields[i];
+                    source.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
                     _methodCode.Append($@"
                         {propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({i}),
 ");
