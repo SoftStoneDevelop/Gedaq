@@ -1,10 +1,12 @@
-﻿using Gedaq.Helpers;
+﻿using Gedaq.Enums;
+using Gedaq.Helpers;
 using Gedaq.Npgsql.Generators;
 using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Reflection;
 using System.Text;
 
 namespace Gedaq.Npgsql
@@ -69,9 +71,18 @@ namespace Gedaq.Npgsql
                     QueryMap query = queryRead.Queries[i];
                     query.Aliases = _queryParser.Parse(ref query.Query);
                 }
-                
-                queryReadBatchGenerator.GenerateMethod(queryRead);
-                context.AddSource(queryRead.GetFileName(), queryReadBatchGenerator.GetCode());
+
+                if (queryRead.MethodType.HasFlag(Enums.MethodType.Sync))
+                {
+                    queryReadBatchGenerator.GenerateMethod(queryRead);
+                    context.AddSource($"{queryRead.MethodName}{queryRead.SourceType.ToString()}.g.cs", queryReadBatchGenerator.GetCode());
+                }
+
+                if (queryRead.MethodType.HasFlag(Enums.MethodType.Async))
+                {
+                    queryReadBatchGenerator.GenerateMethod(queryRead);
+                    context.AddSource($"{queryRead.MethodName}{queryRead.SourceType.ToString()}Async.g.cs", queryReadBatchGenerator.GetCode());
+                }
             }
             _readBatchToTypeSources.Clear();
 
@@ -79,8 +90,18 @@ namespace Gedaq.Npgsql
             foreach (var queryRead in _readToTypeSources)
             {
                 queryRead.Aliases = _queryParser.Parse(ref queryRead.Query);
-                queryReadGenerator.GenerateMethod(queryRead);
-                context.AddSource(queryRead.GetFileName(), queryReadGenerator.GetCode());
+
+                if(queryRead.MethodType.HasFlag(Enums.MethodType.Sync))
+                {
+                    queryReadGenerator.GenerateMethod(queryRead);
+                    context.AddSource($"{queryRead.MethodName}{queryRead.SourceType.ToString()}.g.cs", queryReadGenerator.GetCode());
+                }
+
+                if (queryRead.MethodType.HasFlag(Enums.MethodType.Async))
+                {
+                    queryReadGenerator.GenerateAsyncMethod(queryRead);
+                    context.AddSource($"{queryRead.MethodName}{queryRead.SourceType.ToString()}Async.g.cs", queryReadGenerator.GetCode());
+                }
             }
             _readToTypeSources.Clear();
         }

@@ -12,10 +12,5 @@ namespace Gedaq.Npgsql.Model
         public NpgsqlSourceType SourceType;
         public MethodType MethodType;
         public INamedTypeSymbol ContainTypeName;
-
-        public string GetFileName()
-        {
-            return $"{MethodName}{SourceType.ToString()}{MethodType.ToString()}.g.cs";
-        }
     }
 }

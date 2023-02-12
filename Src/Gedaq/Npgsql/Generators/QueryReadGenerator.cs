@@ -32,7 +32,16 @@ namespace Gedaq.Npgsql.Generators
             Reset();
             Start(source);
             MethodParametrs(source);
-            GenerateBody(source);
+            SyncBody(source);
+            End();
+        }
+
+        public void GenerateAsyncMethod(QueryReadNpgsql source)
+        {
+            Reset();
+            AsyncStart(source);
+            MethodParametrs(source);
+            AsyncBody(source);
             End();
         }
 
@@ -40,8 +49,6 @@ namespace Gedaq.Npgsql.Generators
             QueryReadNpgsql source
             )
         {
-            var async = source.MethodType == Enums.MethodType.Sync ? "" : "Async";
-            var awaitOperator = source.MethodType == Enums.MethodType.Sync ? "" : "await";
             _methodCode.Append($@"
 using Npgsql;
 using System.Data;
@@ -50,10 +57,29 @@ using System.Collections.Generic;
 
 namespace {source.ContainTypeName.ContainingNamespace}
 {{
-    public static class {source.MethodName}ClassFrom{source.SourceType.ToString()}{async}
+    public static class {source.MethodName}ClassFrom{source.SourceType.ToString()}
     {{
         
-        public static {async.ToLowerInvariant()} I{async}Enumerable<{source.MapTypeName.GetFullTypeName()}> {source.MethodName}{async}(
+        public static IEnumerable<{source.MapTypeName.GetFullTypeName()}> {source.MethodName}(
+");
+        }
+
+        private void AsyncStart(
+            QueryReadNpgsql source
+            )
+        {
+            _methodCode.Append($@"
+using Npgsql;
+using System.Data;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace {source.ContainTypeName.ContainingNamespace}
+{{
+    public static class {source.MethodName}ClassFrom{source.SourceType.ToString()}Async
+    {{
+        
+        public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName()}> {source.MethodName}Async(
 ");
         }
 
@@ -79,20 +105,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
         )
         {{
 ");
-        }
-
-        private void GenerateBody(
-            QueryReadNpgsql source
-            )
-        {
-            if (source.MethodType == Enums.MethodType.Sync)
-            {
-                SyncBody(source);
-            }
-            else
-            {
-                AsyncBody(source);
-            }
         }
 
         #region Sync
