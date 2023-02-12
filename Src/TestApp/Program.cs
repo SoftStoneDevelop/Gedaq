@@ -28,7 +28,7 @@ namespace TestApp
 
             //DropTablesTestDatabase(builder.GetConnectionString("SqlConnection"));
             //FillTestDatabase(builder.GetConnectionString("SqlConnection"));
-            //Connection(builder.GetConnectionString("SqlConnection"));
+            Connection(builder.GetConnectionString("SqlConnection"));
             await ConnectionAsync(builder.GetConnectionString("SqlConnection"));
 
             Console.ReadLine();
@@ -194,7 +194,7 @@ INSERT INTO public.person(
             using (var connection = new NpgsqlConnection(connectionString))
             {
                 connection.Open();
-                var personsG = connection.MethodGenerated1().ToList();
+                var personsG = connection.GetAllPerson().ToList();
                 for (int i = 0; i < personsG.Count; i++)
                 {
                     Console.WriteLine(@$"
@@ -203,11 +203,6 @@ INSERT INTO public.person(
 {nameof(Person.LastName)}: {personsG[i].LastName}
 ");
                 }
-
-                //foreach (var item in await SomeClass.Method12ManualAsync(connection).ToListAsync())
-                //{
-                //    var sd = 45;
-                //}
             }
         }
 
@@ -217,7 +212,7 @@ INSERT INTO public.person(
             using (var connection = new NpgsqlConnection(connectionString))
             {
                 connection.Open();
-                var personsG = await connection.MethodGenerated1Async().ToListAsync();
+                var personsG = await connection.GetAllPersonAsync().ToListAsync();
                 for (int i = 0; i < personsG.Count; i++)
                 {
                     Console.WriteLine(@$"
@@ -242,28 +237,40 @@ INSERT INTO public.person(
 SELECT 
     p1.id,
     p1.firstname,
+~StartInner::Identification:id~
+    i.id,
+    i.typename,
+~EndInner::Identification~
     p1.middlename,
     p1.lastname
 FROM person p1
+LEFT JOIN identification i ON i.id = p1.identification_id
+ORDER BY p1.id
 ",
             typeof(Person),
             Gedaq.Provider.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
-            "MethodGenerated1"
+            "GetAllPerson"
             )]
         [Gedaq.Npgsql.Attributes.QueryRead(
             @"
 SELECT 
     p1.id,
     p1.firstname,
+~StartInner::Identification:id~
+    i.id,
+    i.typename,
+~EndInner::Identification~
     p1.middlename,
     p1.lastname
 FROM person p1
+LEFT JOIN identification i ON i.id = p1.identification_id
+ORDER BY p1.id
 ",
             typeof(Person),
             Gedaq.Provider.Enums.MethodType.Async,
             Gedaq.Npgsql.Enums.SourceType.Connection,
-            "MethodGenerated1"
+            "GetAllPerson"
             )]
         public void Config()
         {

@@ -250,9 +250,9 @@ SELECT
     p1.id,
     p1.firstname,
     p1.middlename,
-~StartInner::Identification~
+~StartInner::Identification:id~
     i.id,
-~StartInner::country~
+~StartInner::country:id~
     c.id,
     c.name,
 ~EndInner::country~
@@ -310,6 +310,7 @@ LEFT JOIN country c ON c.id = i.country_id
                 Assert.That(identification.IsRoot, Is.EqualTo(false));
                 Assert.That(identification.IsRowsAffected, Is.EqualTo(false));
                 Assert.That(identification.Fields, Has.Count.EqualTo(2));
+                Assert.That(identification.LinkKey, Is.EqualTo("id"));
                 Assert.That(identification.InnerEntities, Has.Count.EqualTo(1));
             });
             Assert.Multiple(() =>
@@ -326,6 +327,7 @@ LEFT JOIN country c ON c.id = i.country_id
                 Assert.That(country.IsRoot, Is.EqualTo(false));
                 Assert.That(country.IsRowsAffected, Is.EqualTo(false));
                 Assert.That(country.Fields, Has.Count.EqualTo(2));
+                Assert.That(country.LinkKey, Is.EqualTo("id"));
                 Assert.That(country.InnerEntities, Has.Count.EqualTo(0));
             });
             Assert.Multiple(() =>

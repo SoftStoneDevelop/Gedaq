@@ -272,16 +272,16 @@ namespace Gedaq.Npgsql
                         AppendPartQuery(_lastPartIndex, _currentIndex - _lastPartIndex);
                         if (IsStartInner())
                         {
-                            var innerName = GetInnerName();
+                            GetStartInnerName(out var innerName, out var linkName);
                             _lastPartIndex = _currentIndex;
-                            var innerAlias = new Aliases(innerName);
+                            var innerAlias = new Aliases(innerName, linkName);
                             innerStack.Push(innerAlias);
                             continue;
                         }
 
                         if (IsEndInner())
                         {
-                            var innerName = GetInnerName();
+                            var innerName = GetEndInnerName();
                             _lastPartIndex = _currentIndex;
                             if (innerStack.Count < 1 || innerStack.Peek() == _root)
                             {
@@ -364,15 +364,29 @@ namespace Gedaq.Npgsql
                 return builder.ToString();
             }
 
-            private string GetInnerName()
+            private void GetStartInnerName(out string name, out string linkKey)
             {
+                linkKey = null;
                 var nameClosed = false;
+                var notAllowedcolon = false;
+                name = null;
                 for (; _currentIndex < _query.Length; _currentIndex++)
                 {
                     if (char.IsLetterOrDigit(_query[_currentIndex]))
                     {
                         _field.Append(_query[_currentIndex]);
                         continue;
+                    }
+                    else if(_query[_currentIndex] == ':')
+                    {
+                        if(notAllowedcolon)
+                        {
+                            throw new Exception("LinkKey separator repeated");
+                        }
+
+                        name = _field.ToString();
+                        _field.Clear();
+                        notAllowedcolon = true;
                     }
                     else
                     {
@@ -387,7 +401,48 @@ namespace Gedaq.Npgsql
                     }
                 }
 
+                if(name == null)
+                {
+                    throw new Exception("LinkKey not found");
+                }
+
                 if(!nameClosed)
+                {
+                    throw new Exception("Inner name must end on '~'");
+                }
+
+                if (_field.Length == 0)
+                {
+                    throw new Exception("The inner name cannot be empty.");
+                }
+
+                linkKey = _field.ToString();
+                _field.Clear();
+            }
+
+            private string GetEndInnerName()
+            {
+                var nameClosed = false;
+                for (; _currentIndex < _query.Length; _currentIndex++)
+                {
+                    if (char.IsLetterOrDigit(_query[_currentIndex]))
+                    {
+                        _field.Append(_query[_currentIndex]);
+                        continue;
+                    }else
+                    {
+                        if (_query[_currentIndex] != '~')
+                        {
+                            throw new Exception("Inner name must end on '~'");
+                        }
+
+                        _currentIndex++;
+                        nameClosed = true;
+                        break;
+                    }
+                }
+
+                if (!nameClosed)
                 {
                     throw new Exception("Inner name must end on '~'");
                 }
@@ -399,7 +454,6 @@ namespace Gedaq.Npgsql
 
                 var name = _field.ToString();
                 _field.Clear();
-
                 return name;
             }
 
