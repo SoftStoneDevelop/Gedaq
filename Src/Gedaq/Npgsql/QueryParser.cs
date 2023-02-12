@@ -252,7 +252,7 @@ namespace Gedaq.Npgsql
                 var notAllowedAs = false;
                 var dotPass = false;
 
-                if (IsAs())
+                if (IsAsOrAlias())
                 {
                     Skip(in _emptyOrCarret);
                     notAllowedAs = true;
@@ -296,7 +296,7 @@ namespace Gedaq.Npgsql
                             break;
                         }
 
-                        if(IsAs())
+                        if(IsAsOrAlias())
                         {
                             if(notAllowedAs)
                             {
@@ -305,6 +305,7 @@ namespace Gedaq.Npgsql
 
                             _field.Clear();
                             Skip(in _emptyOrCarret);
+                            _field.Append(_query[currentIndex]);
                             notAllowedAs = true;
                             continue;
                         }
@@ -328,14 +329,14 @@ namespace Gedaq.Npgsql
                 return null;
             }
 
-            private bool IsAs()
+            private bool IsAsOrAlias()
             {
                 var index = 0;
                 for (int i = currentIndex; i < _query.Length; i++)
                 {
                     if(index > 2)
                     {
-                        return false;
+                        break;
                     }
 
                     if (index < 2)
@@ -356,6 +357,11 @@ namespace Gedaq.Npgsql
                     }
 
                     index++;
+                }
+
+                if(!IsFrom() && _query[currentIndex] != ',')
+                {
+                    return true;
                 }
 
                 return false;

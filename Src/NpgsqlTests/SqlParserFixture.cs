@@ -16,7 +16,7 @@ SELECT
  
  
  
-        p1.id,
+        p1.id ASid,
           p1.firstname
  
   
@@ -26,7 +26,8 @@ SELECT
 ,     
 
 
-    p1.middlename  
+    p1.middlename  as  
+middlenameN
  
  ,
     p1.lastname
@@ -44,13 +45,13 @@ FROM person p1
                 Assert.That(aliases.Fields, Has.Count.EqualTo(4));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(0));
 
-                Assert.That(aliases.Fields[0].Name, Is.EqualTo("id"));
+                Assert.That(aliases.Fields[0].Name, Is.EqualTo("ASid"));
                 Assert.That(aliases.Fields[0].Position, Is.EqualTo(0));
 
                 Assert.That(aliases.Fields[1].Name, Is.EqualTo("firstname"));
                 Assert.That(aliases.Fields[1].Position, Is.EqualTo(1));
 
-                Assert.That(aliases.Fields[2].Name, Is.EqualTo("middlename"));
+                Assert.That(aliases.Fields[2].Name, Is.EqualTo("middlenameN"));
                 Assert.That(aliases.Fields[2].Position, Is.EqualTo(2));
 
                 Assert.That(aliases.Fields[3].Name, Is.EqualTo("lastname"));
@@ -68,7 +69,7 @@ SELECT
  
  
  
-        p1.id,
+        p1.id as ASid,
           p1.firstname
  
   
@@ -83,7 +84,7 @@ SELECT
  ,
     p1.lastname
 
- ) as
+ ) aS
 
 person,
  (
@@ -106,7 +107,7 @@ person,
     p1.lastname
 
  )
-
+   
 person2
 
  
