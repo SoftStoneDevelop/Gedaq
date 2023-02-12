@@ -31,7 +31,7 @@ FROM person p1
     [HideColumns("Error", "StdDev", "Median", "RatioSD")]
     public class ReadAsync
     {
-        [Params(10, 20, 30, 40)]
+        [Params(10, 20, 30)]
         public int Size;
 
         private NpgsqlConnection _connection;

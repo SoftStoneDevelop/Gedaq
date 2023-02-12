@@ -36,7 +36,7 @@ LEFT JOIN identification i ON i.id = p.identification_id
     [HideColumns("Error", "StdDev", "Median", "RatioSD")]
     public class ReadInnerMapAsync
     {
-        [Params(10, 20, 30, 40)]
+        [Params(10, 20, 30)]
         public int Size;
 
         private NpgsqlConnection _connection;
@@ -90,7 +90,7 @@ LEFT JOIN identification i ON i.id = p.identification_id
 {
     person.Identification = identification;
     return person;
-}, buffered: false);
+});
                 var list = persons.ToList();
             }
         }

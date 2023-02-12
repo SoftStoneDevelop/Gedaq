@@ -30,7 +30,7 @@ FROM person p1
     [HideColumns("Error", "StdDev", "Median", "RatioSD")]
     public class Read
     {
-        [Params(10, 20, 30, 40)]
+        [Params(10, 20, 30)]
         public int Size;
 
         private NpgsqlConnection _connection;
@@ -63,7 +63,7 @@ FROM person p1
             }
         }
 
-        [Benchmark(Baseline = true, Description = "Dapper.Query<T>")]
+        [Benchmark(Baseline = true, Description = "Dapper.Query<Person>")]
         public void Dapper()
         {
             for (int i = 0; i < Size; i++)
