@@ -60,6 +60,51 @@ FROM person p1
         }
 
         [Test]
+        public void ParseWithoutAlias()
+        {
+            var parser = new Gedaq.Npgsql.QueryParser();
+            var sql = @"
+SELECT id  , firstname  
+  
+ 
+
+
+,     
+
+
+    middlename
+ 
+ ,
+    lastname
+
+ 
+ 
+ 
+FROM person
+";
+            var aliases = parser.Parse(ref sql);
+            Assert.Multiple(() =>
+            {
+                Assert.That(aliases.IsRoot, Is.EqualTo(true));
+                Assert.That(aliases.IsRowsAffected, Is.EqualTo(false));
+                Assert.That(aliases.Fields, Has.Count.EqualTo(4));
+                Assert.That(aliases.InnerEntities, Has.Count.EqualTo(0));
+
+                Assert.That(aliases.Fields[0].Name, Is.EqualTo("id"));
+                Assert.That(aliases.Fields[0].Position, Is.EqualTo(0));
+
+                Assert.That(aliases.Fields[1].Name, Is.EqualTo("firstname"));
+                Assert.That(aliases.Fields[1].Position, Is.EqualTo(1));
+
+                Assert.That(aliases.Fields[2].Name, Is.EqualTo("middlename"));
+                Assert.That(aliases.Fields[2].Position, Is.EqualTo(2));
+
+                Assert.That(aliases.Fields[3].Name, Is.EqualTo("lastname"));
+                Assert.That(aliases.Fields[3].Position, Is.EqualTo(3));
+            });
+        }
+
+        [Test]
         public void ParseBrackets()
         {
             var parser = new Gedaq.Npgsql.QueryParser();
