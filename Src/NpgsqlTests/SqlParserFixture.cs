@@ -200,7 +200,7 @@ SELECT
 FROM person p1;
 ".AsSpan();
             var lastItem = parser.GetLastSplitedItem(sql, ';');
-            Assert.IsTrue(188 == lastItem);
+            Assert.That(lastItem, Is.EqualTo(188));
 
             sql = @"
 SELECT 
@@ -211,7 +211,7 @@ SELECT
 FROM person p1;
 ".AsSpan();
             lastItem = parser.GetLastSplitedItem(sql, ';');
-            Assert.IsTrue(0 == lastItem);
+            Assert.That(lastItem, Is.EqualTo(0));
 
             sql = @"
 SELECT 
@@ -222,7 +222,7 @@ SELECT
 FROM person p1
 ".AsSpan();
             lastItem = parser.GetLastSplitedItem(sql, ';');
-            Assert.IsTrue(0 == lastItem);
+            Assert.That(lastItem, Is.EqualTo(0));
 
             sql = @"
 SELECT 
@@ -237,7 +237,7 @@ FROM person p1
  
 ".AsSpan();
             lastItem = parser.GetLastSplitedItem(sql, ';');
-            Assert.IsTrue(0 == lastItem);
+            Assert.That(lastItem, Is.EqualTo(0));
         }
     }
 }
