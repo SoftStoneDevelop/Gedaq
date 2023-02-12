@@ -6,30 +6,35 @@ using System.IO;
 using NpgsqlBenchmark.Model;
 using Dapper;
 using System.Linq;
-using System.Threading.Tasks;
-using Gedaq.Provider.Enums;
 using Gedaq.Npgsql.Enums;
+using Gedaq.Provider.Enums;
+using System.Threading.Tasks;
 
 namespace NpgsqlBenchmark.Benchmarks
 {
     [Gedaq.Npgsql.Attributes.QueryRead(
             @"
 SELECT 
-    p1.id,
-    p1.firstname,
-    p1.middlename,
-    p1.lastname
-FROM person p1
+    p.id,
+    p.firstname,
+~StartInner::Identification:id~
+    i.id,
+    i.typename,
+~EndInner::Identification~
+    p.middlename,
+    p.lastname
+FROM person p
+LEFT JOIN identification i ON i.id = p.identification_id
 ",
             typeof(Person),
             MethodType.Async,
             SourceType.Connection,
-            "GetAllPerson"
+            "GetAllPersonInner"
             )]
     [MemoryDiagnoser]
     [SimpleJob(RuntimeMoniker.Net70)]
     [HideColumns("Error", "StdDev", "Median", "RatioSD")]
-    public class ReadAsync
+    public class ReadInnerMapAsync
     {
         [Params(10, 20, 30, 40)]
         public int Size;
@@ -60,24 +65,33 @@ FROM person p1
         {
             for (int i = 0; i < Size; i++)
             {
-                var persons = await _connection.GetAllPersonAsync().ToListAsync();
+                var persons = await _connection.GetAllPersonInnerAsync().ToListAsync();
             }
         }
 
-        [Benchmark(Baseline = true, Description = "Dapper.QueryAsync<Person>")]
+        [Benchmark(Baseline = true, Description = "Dapper.QueryAsync<Person, Identification, Person>")]
         public async Task Dapper()
         {
             for (int i = 0; i < Size; i++)
             {
                 //async in QueryAsync always buffered
-                var persons = await _connection.QueryAsync<Person>(@"
+                var persons = await _connection.QueryAsync<Person, Identification, Person>(@"
 SELECT 
-    p1.id,
-    p1.firstname,
-    p1.middlename,
-    p1.lastname
-FROM person p1
-");
+    p.id,
+    p.firstname,
+    p.middlename,
+    p.lastname,
+    i.id,
+    i.typename
+FROM person p
+LEFT JOIN identification i ON i.id = p.identification_id
+",
+(person, identification) => 
+{
+    person.Identification = identification;
+    return person;
+}, buffered: false);
+                var list = persons.ToList();
             }
         }
     }

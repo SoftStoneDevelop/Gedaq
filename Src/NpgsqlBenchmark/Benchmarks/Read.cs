@@ -6,9 +6,25 @@ using System.IO;
 using NpgsqlBenchmark.Model;
 using Dapper;
 using System.Linq;
+using Gedaq.Provider.Enums;
+using Gedaq.Npgsql.Enums;
 
 namespace NpgsqlBenchmark.Benchmarks
 {
+    [Gedaq.Npgsql.Attributes.QueryRead(
+            @"
+SELECT 
+    p1.id,
+    p1.firstname,
+    p1.middlename,
+    p1.lastname
+FROM person p1
+",
+            typeof(Person),
+            MethodType.Sync,
+            SourceType.Connection,
+            "GetAllPerson"
+            )]
     [MemoryDiagnoser]
     [SimpleJob(RuntimeMoniker.Net70)]
     [HideColumns("Error", "StdDev", "Median", "RatioSD")]
@@ -59,7 +75,7 @@ SELECT
     p1.middlename,
     p1.lastname
 FROM person p1
-")
+", buffered: false)
                     .ToList();
             }
         }
