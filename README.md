@@ -27,6 +27,14 @@ public class Person
     public string MiddleName { get; set; }
 
     public string LastName { get; set; }
+    
+    public Identification Identification { get; set; }
+}
+
+public class Identification
+{
+    public int Id { get; set; }
+    public string TypeName { get; set; }
 }
 
 ```
@@ -76,16 +84,6 @@ var personsAsync =
 
 Comparison of getting 100000 Person in a loop(Size is number of loop iterations) from the database:
 
-|               Method | Size |       Mean | Ratio |        Gen0 |        Gen1 |       Gen2 | Allocated | Alloc Ratio |
-|--------------------- |----- |-----------:|------:|------------:|------------:|-----------:|----------:|------------:|
-|                **Gedaq** |   **10** |   **603.4 ms** |  **0.59** |  **29000.0000** |  **28000.0000** | **11000.0000** | **194.73 MB** |        **0.89** |
-| Dapper.Query&lt;Person&gt; |   10 | 1,026.4 ms |  1.00 |  33000.0000 |  32000.0000 | 10000.0000 | 217.64 MB |        1.00 |
-|                      |      |            |       |             |             |            |           |             |
-|                **Gedaq** |   **20** | **1,180.1 ms** |  **0.57** |  **59000.0000** |  **58000.0000** | **23000.0000** | **389.46 MB** |        **0.89** |
-| Dapper.Query&lt;Person&gt; |   20 | 2,052.6 ms |  1.00 |  68000.0000 |  67000.0000 | 25000.0000 | 435.28 MB |        1.00 |
-|                      |      |            |       |             |             |            |           |             |
-|                **Gedaq** |   **30** | **1,756.1 ms** |  **0.56** |  **88000.0000** |  **86000.0000** | **34000.0000** | **584.19 MB** |        **0.89** |
-| Dapper.Query&lt;Person&gt; |   30 | 3,108.7 ms |  1.00 | 103000.0000 | 102000.0000 | 40000.0000 | 652.93 MB |        1.00 |
 
 |                                         Method | Size |       Mean | Ratio |        Gen0 |        Gen1 |       Gen2 | Allocated | Alloc Ratio |
 |----------------------------------------------- |----- |-----------:|------:|------------:|------------:|-----------:|----------:|------------:|
