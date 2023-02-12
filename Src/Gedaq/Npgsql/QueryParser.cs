@@ -40,7 +40,7 @@ namespace Gedaq.Npgsql
             var aliases = FillAliases(lastCommand.Slice(index), out var newQuery);
             if(newQuery != null)
             {
-                query = querySpan.Slice(0, lastCommandIndex + index + 1).ToString() + newQuery;
+                query = querySpan.Slice(0, lastCommandIndex + index).ToString() + newQuery;
             }
 
             return aliases;
@@ -78,6 +78,10 @@ namespace Gedaq.Npgsql
             newQuery = null;
             var parser = new AliasParser(query);
             parser.Parse();
+            if(parser.QueryIsNew())
+            {
+                newQuery = parser.GetNewQuery();
+            }
 
             return
                 parser.GetAliases();
@@ -178,12 +182,21 @@ namespace Gedaq.Npgsql
             private static readonly char[] _emptyOrCarret = new char[] { ' ', '\r', '\n' };
             private static readonly string _from = "from";
             private static readonly string _as = "as";
+            private static readonly string _startInner = "~startinner::";
+            private static readonly string _endInner = "~endinner::";
+
+            private Aliases _root;
 
             private StringBuilder _field;
             private int _fieldPosition;
+
             private ReadOnlySpan<char> _query;
-            private int currentIndex;
-            private Aliases _root;
+            private int _currentIndex;
+            private int _lastPartIndex;
+
+            private bool _containInner;
+            private StringBuilder _resultQuery;
+
             private int _leftBrackets;
 
             public AliasParser(
@@ -191,16 +204,29 @@ namespace Gedaq.Npgsql
                 )
             {
                 _field = new StringBuilder();
-                currentIndex = 0;
+                _currentIndex = 0;
+                _lastPartIndex = 0;
                 _leftBrackets = 0;
                 _fieldPosition = -1;
                 _query = query;
                 _root = null;
+                _containInner = false;
+                _resultQuery = new StringBuilder();
             }
 
             public Aliases GetAliases()
             {
                 return _root;
+            }
+
+            public bool QueryIsNew()
+            {
+                return _resultQuery.Length != 0;
+            }
+
+            public string GetNewQuery() 
+            {
+                return _resultQuery.ToString();
             }
 
             public void Parse()
@@ -211,19 +237,21 @@ namespace Gedaq.Npgsql
                 }
 
                 _root = new Aliases();
-                while (currentIndex < _query.Length)
+                var innerStack = new Stack<Aliases>();
+                innerStack.Push( _root );
+                while (_currentIndex < _query.Length)
                 {
                     if (Skip(in _emptyOrCarret))
                     {
-                        return;
+                        break;
                     }
 
-                    if(IsFrom() || _query[currentIndex] == ';')
+                    if(IsFrom() || _query[_currentIndex] == ';')
                     {
-                        return;
+                        break;
                     }
 
-                    if (_query[currentIndex] == '(')
+                    if (_query[_currentIndex] == '(')
                     {
                         SkipBracketGroup();
                         Skip(in _emptyOrCarret);
@@ -233,8 +261,47 @@ namespace Gedaq.Npgsql
                             throw new Exception("After group must be AliasName");
                         }
 
-                        _root.Fields.Add(new Field { Name = name, Position = _fieldPosition });
+                        var lastAlias = innerStack.Peek();
+                        lastAlias.Fields.Add(new Field { Name = name, Position = _fieldPosition });
                         continue;
+                    }
+
+                    if(_query[_currentIndex] == '~')
+                    {
+                        _containInner |= true;
+                        AppendPartQuery(_lastPartIndex, _currentIndex - _lastPartIndex);
+                        if (IsStartInner())
+                        {
+                            var innerName = GetInnerName();
+                            _lastPartIndex = _currentIndex;
+                            var innerAlias = new Aliases(innerName);
+                            innerStack.Push(innerAlias);
+                            continue;
+                        }
+
+                        if (IsEndInner())
+                        {
+                            var innerName = GetInnerName();
+                            _lastPartIndex = _currentIndex;
+                            if (innerStack.Count < 1 || innerStack.Peek() == _root)
+                            {
+                                throw new Exception("'EndInner' closing statement without opening statement.");
+                            }
+
+                            var endedAlias = innerStack.Pop();
+                            if(endedAlias.EntityName != innerName)
+                            {
+                                throw new Exception("The names of the open and close operators do not match.");
+                            }
+
+                            var lastAlias = innerStack.Peek();
+                            lastAlias.InnerEntities.Add(endedAlias);
+
+                            continue;
+                        }
+
+
+                        throw new Exception("Unknown Inner operator");
                     }
 
                     var fieldName = GetNameAlias();
@@ -243,8 +310,157 @@ namespace Gedaq.Npgsql
                         throw new Exception("Not found Alias");
                     }
 
-                    _root.Fields.Add(new Field { Name = fieldName, Position = _fieldPosition });
+                    var alias = innerStack.Peek();
+                    alias.Fields.Add(new Field { Name = fieldName, Position = _fieldPosition });
                 }
+
+                if(innerStack.Count != 1 || innerStack.Peek() != _root)
+                {
+                    throw new Exception($"There are non-closed operators in the query: {StackToList(innerStack)}");
+                }
+
+                AppendPartQuery(_lastPartIndex, _query.Length - _lastPartIndex);
+            }
+
+            private void AppendPartQuery(int start, int length)
+            {
+                if(!_containInner)
+                {
+                    return;
+                }
+
+                if (_lastPartIndex >= _query.Length)
+                {
+                    return;
+                }
+
+                _resultQuery.Append(_query.Slice(start, length).ToString());
+                var s = _resultQuery.ToString();
+                _lastPartIndex = start + length;
+            }
+
+            private string StackToList(Stack<Aliases> stack)
+            {
+                var builder = new StringBuilder();
+                while (stack.Count != 0)
+                {
+                    builder.Append("'");
+                    var alias = stack.Pop();
+                    if(alias.IsRoot)
+                    {
+                        builder.Append("Root");
+                    }
+                    else
+                    {
+                        builder.Append(alias.EntityName);
+                    }
+                    builder.Append("'");
+                    if (stack.Count != 0)
+                    {
+                        builder.Append(',');
+                    }
+                }
+
+                return builder.ToString();
+            }
+
+            private string GetInnerName()
+            {
+                var nameClosed = false;
+                for (; _currentIndex < _query.Length; _currentIndex++)
+                {
+                    if (char.IsLetterOrDigit(_query[_currentIndex]))
+                    {
+                        _field.Append(_query[_currentIndex]);
+                        continue;
+                    }
+                    else
+                    {
+                        if (_query[_currentIndex] != '~')
+                        {
+                            throw new Exception("Inner name must end on '~'");
+                        }
+
+                        _currentIndex++;
+                        nameClosed = true;
+                        break;
+                    }
+                }
+
+                if(!nameClosed)
+                {
+                    throw new Exception("Inner name must end on '~'");
+                }
+
+                if (_field.Length == 0)
+                {
+                    throw new Exception("The inner name cannot be empty.");
+                }
+
+                var name = _field.ToString();
+                _field.Clear();
+
+                return name;
+            }
+
+            private bool IsStartInner()
+            {
+                var index = 0;
+                for (int i = _currentIndex; i < _query.Length; i++)
+                {
+                    if (index < _startInner.Length)
+                    {
+                        if (char.ToLowerInvariant(_query[i]) != _startInner[index])
+                        {
+                            return false;
+                        }
+
+                        index++;
+                        continue;
+                    }
+
+                    if (!char.IsLetter(_query[i]))
+                    {
+                        throw new Exception(@"After '~StartInner::' must be letter");
+                    }
+                    else
+                    {
+                        _currentIndex += index;
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+
+            private bool IsEndInner()
+            {
+                var index = 0;
+                for (int i = _currentIndex; i < _query.Length; i++)
+                {
+                    if (index < _endInner.Length)
+                    {
+                        if (char.ToLowerInvariant(_query[i]) != _endInner[index])
+                        {
+                            return false;
+                        }
+
+                        index++;
+                        continue;
+                    }
+
+                    if (!char.IsLetter(_query[i]))
+                    {
+                        throw new Exception(@"After '~EndInner::' must be letter");
+                    }
+                    else
+                    {
+                        _currentIndex += index;
+                        return true;
+                    }
+                }
+
+                return false;
             }
 
             private string GetNameAlias(bool allowedDot = true)
@@ -258,11 +474,11 @@ namespace Gedaq.Npgsql
                     notAllowedAs = true;
                 }
 
-                for (; currentIndex < _query.Length; currentIndex++)
+                for (; _currentIndex < _query.Length; _currentIndex++)
                 {
-                    if (char.IsLetterOrDigit(_query[currentIndex]))
+                    if (char.IsLetterOrDigit(_query[_currentIndex]))
                     {
-                        _field.Append(_query[currentIndex]);
+                        _field.Append(_query[_currentIndex]);
                         continue;
                     }
                     else
@@ -272,7 +488,7 @@ namespace Gedaq.Npgsql
                             break;
                         }
 
-                        if(_query[currentIndex] == '.')
+                        if(_query[_currentIndex] == '.')
                         {
                             if(dotPass)
                             {
@@ -290,9 +506,9 @@ namespace Gedaq.Npgsql
                             continue;
                         }
 
-                        if(_query[currentIndex] == ',')
+                        if(_query[_currentIndex] == ',')
                         {
-                            currentIndex++;
+                            _currentIndex++;
                             break;
                         }
 
@@ -305,7 +521,7 @@ namespace Gedaq.Npgsql
 
                             _field.Clear();
                             Skip(in _emptyOrCarret);
-                            _field.Append(_query[currentIndex]);
+                            _field.Append(_query[_currentIndex]);
                             notAllowedAs = true;
                             continue;
                         }
@@ -332,7 +548,7 @@ namespace Gedaq.Npgsql
             private bool IsAsOrAlias()
             {
                 var index = 0;
-                for (int i = currentIndex; i < _query.Length; i++)
+                for (int i = _currentIndex; i < _query.Length; i++)
                 {
                     if(index > 2)
                     {
@@ -352,14 +568,14 @@ namespace Gedaq.Npgsql
 
                     if (_emptyOrCarret.Contains(_query[i]))
                     {
-                        currentIndex += 3;
+                        _currentIndex += 3;
                         return true;
                     }
 
                     index++;
                 }
 
-                if(!IsFrom() && _query[currentIndex] != ',')
+                if(!IsFrom() && _query[_currentIndex] != ',')
                 {
                     return true;
                 }
@@ -370,7 +586,7 @@ namespace Gedaq.Npgsql
             private bool IsFrom()
             {
                 var index = 0;
-                for (int i = currentIndex; i < _query.Length; i++)
+                for (int i = _currentIndex; i < _query.Length; i++)
                 {
                     if (index > 4)
                     {
@@ -401,9 +617,9 @@ namespace Gedaq.Npgsql
 
             private bool Skip(in char[] chars)
             {
-                for (; currentIndex < _query.Length; currentIndex++)
+                for (; _currentIndex < _query.Length; _currentIndex++)
                 {
-                    if(!chars.Contains(_query[currentIndex]))
+                    if(!chars.Contains(_query[_currentIndex]))
                     {
                         return false;
                     }
@@ -414,22 +630,22 @@ namespace Gedaq.Npgsql
 
             private void SkipBracketGroup()
             {
-                for (; currentIndex < _query.Length; currentIndex++)
+                for (; _currentIndex < _query.Length; _currentIndex++)
                 {
-                    if (_query[currentIndex] == '(')
+                    if (_query[_currentIndex] == '(')
                     {
                         _leftBrackets++;
                         continue;
                     }
 
-                    if(_query[currentIndex] == ')')
+                    if(_query[_currentIndex] == ')')
                     {
                         _leftBrackets--;
                     }
 
                     if(_leftBrackets == 0)
                     {
-                        currentIndex++;
+                        _currentIndex++;
                         break;
                     }
                 }
