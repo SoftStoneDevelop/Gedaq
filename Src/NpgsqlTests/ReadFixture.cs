@@ -2,6 +2,7 @@
 using Npgsql;
 using NpgsqlTests.Helpers;
 using NUnit.Framework;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -16,17 +17,14 @@ namespace NpgsqlTests
         public string MiddleName { get; set; }
 
         public string LastName { get; set; }
+
+        public ReadFixtureIdentificationModel Identification { get; set; }
     }
 
-    public struct ReadFixtureModelStruct
+    public class ReadFixtureIdentificationModel
     {
         public int Id { get; set; }
-
-        public string FirstName { get; set; }
-
-        public string MiddleName { get; set; }
-
-        public string LastName { get; set; }
+        public string TypeName { get; set; }
     }
 
     [TestFixture]
@@ -42,30 +40,45 @@ namespace NpgsqlTests
             var dataSourceBuilder = new NpgsqlDataSourceBuilder(Settings.GetConnectionString("SqlConnection"));
             _dataSource = dataSourceBuilder.Build();
             var conn = _dataSource.OpenConnection();
-
-            if (conn.ExistTable(nameof(ReadFixture).ToLowerInvariant()))
-            {
-                conn.DropTable("readfixture");
-            }
+            conn.DropTable("readfixtureperson");
+            conn.DropTable("readfixtureidentification");
 
             using var cmd = conn.CreateCommand();
             cmd.CommandText = @"
-CREATE TABLE IF NOT EXISTS public.readfixture
+CREATE TABLE IF NOT EXISTS public.readfixtureidentification
+(
+    id integer NOT NULL,
+    typename text COLLATE pg_catalog.""default"" NOT NULL,
+    CONSTRAINT readfixtureidentification_pkey PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS public.readfixtureperson
 (
     id integer NOT NULL,
     firstname text COLLATE pg_catalog.""default"" NOT NULL,
     middlename text COLLATE pg_catalog.""default"",
     lastname text COLLATE pg_catalog.""default"",
-    CONSTRAINT readfixture_pkey PRIMARY KEY (id)
-)
+    readfixtureidentification_id integer,
+    CONSTRAINT readfixtureperson_pkey PRIMARY KEY (id),
+    CONSTRAINT readfixtureidentification_fk FOREIGN KEY (readfixtureidentification_id)
+        REFERENCES public.readfixtureidentification (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+);
 ";
             cmd.ExecuteNonQuery();
+            FillIdentification(cmd);
+            FillPerson(cmd);
+        }
 
+        private void FillPerson(NpgsqlCommand cmd)
+        {
+            cmd.Parameters.Clear();
             cmd.CommandText = @"
-INSERT INTO public.readfixture(
-	id, firstname, middlename, lastname)
+INSERT INTO public.readfixtureperson(
+	id, firstname, middlename, lastname, readfixtureidentification_id)
 	VALUES (
-    @id, @firstname, @middlename, @lastname
+    @id, @firstname, @middlename, @lastname, @readfixtureidentification_id
 );
 ";
             var id = cmd.CreateParameter();
@@ -87,6 +100,12 @@ INSERT INTO public.readfixture(
             lastname.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
             lastname.ParameterName = "lastname";
             cmd.Parameters.Add(lastname);
+
+            var identificationId = cmd.CreateParameter();
+            identificationId.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Integer;
+            identificationId.ParameterName = "readfixtureidentification_id";
+            identificationId.IsNullable = true;
+            cmd.Parameters.Add(identificationId);
             cmd.Prepare();
 
             for (int i = 0; i < 10; i++)
@@ -95,15 +114,66 @@ INSERT INTO public.readfixture(
                 firstname.Value = $"John{i}";
                 middlename.Value = $"Сurly{i}";
                 lastname.Value = $"Doe{i}";
+                if (i > 0 && i < 6)
+                {
+                    identificationId.Value = i;
+                }
+                else
+                {
+                    identificationId.Value = DBNull.Value;
+                }
 
                 cmd.ExecuteNonQuery();
             }
         }
 
+        private void FillIdentification(NpgsqlCommand cmd)
+        {
+            cmd.Parameters.Clear();
+            cmd.CommandText = @"
+INSERT INTO public.readfixtureidentification(
+	id, typename)
+	VALUES (
+    @id, @typename
+);
+";
+            var id = cmd.CreateParameter();
+            id.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Integer;
+            id.ParameterName = "id";
+            cmd.Parameters.Add(id);
+
+            var typename = cmd.CreateParameter();
+            typename.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
+            typename.ParameterName = "typename";
+            cmd.Parameters.Add(typename);
+            cmd.Prepare();
+
+            id.Value = 1;
+            typename.Value = "sailor's passport";
+            cmd.ExecuteNonQuery();
+
+            id.Value = 2;
+            typename.Value = "officer's certificate";
+            cmd.ExecuteNonQuery();
+
+            id.Value = 3;
+            typename.Value = "driver license";
+            cmd.ExecuteNonQuery();
+
+            id.Value = 4;
+            typename.Value = "citizen's passport";
+            cmd.ExecuteNonQuery();
+
+            id.Value = 5;
+            typename.Value = "party card";
+            cmd.ExecuteNonQuery();
+        }
+
         [TearDown]
         public void Cleanup()
         {
-            _dataSource.OpenConnection().DropTable("readfixture");
+            _dataSource.OpenConnection().DropTable("readfixtureperson");
+            _dataSource.OpenConnection().DropTable("readfixtureidentification");
             _dataSource?.Dispose();
         }
 
@@ -117,9 +187,14 @@ INSERT INTO public.readfixture(
 SELECT 
     r.id,
     r.firstname,
+~StartInner::Identification:id~
+    i.id,
+    i.typename,
+~EndInner::Identification~
     r.middlename,
     r.lastname
-FROM readfixture r
+FROM readfixtureperson r
+LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
 ",
             typeof(ReadFixtureModel),
             Gedaq.Provider.Enums.MethodType.Sync,
@@ -138,14 +213,19 @@ FROM readfixture r
                 Assert.That(list[0].FirstName, Is.EqualTo("John0"));
                 Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
                 Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
+
+                Assert.That(list[0].Identification, Is.EqualTo(null));
             });
 
             Assert.Multiple(() =>
             {
-                Assert.That(list[6].Id, Is.EqualTo(6));
-                Assert.That(list[6].FirstName, Is.EqualTo("John6"));
-                Assert.That(list[6].MiddleName, Is.EqualTo("Сurly6"));
-                Assert.That(list[6].LastName, Is.EqualTo("Doe6"));
+                Assert.That(list[5].Id, Is.EqualTo(5));
+                Assert.That(list[5].FirstName, Is.EqualTo("John5"));
+                Assert.That(list[5].MiddleName, Is.EqualTo("Сurly5"));
+                Assert.That(list[5].LastName, Is.EqualTo("Doe5"));
+
+                Assert.That(list[5].Identification.Id, Is.EqualTo(5));
+                Assert.That(list[5].Identification.TypeName, Is.EqualTo("party card"));
             });
         }
 
@@ -155,123 +235,14 @@ FROM readfixture r
 SELECT 
     r.id,
     r.firstname,
+~StartInner::Identification:id~
+    i.id,
+    i.typename,
+~EndInner::Identification~
     r.middlename,
     r.lastname
-FROM readfixture r
-",
-            typeof(ReadFixtureModel),
-            Gedaq.Provider.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.NpgsqlDataSource,
-            "ToClass"
-            )]
-        public void ReadToClassDataSource()
-        {
-            var list = _dataSource.ToClass().ToList();
-
-            Assert.That(list, Has.Count.EqualTo(10));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[0].Id, Is.EqualTo(0));
-                Assert.That(list[0].FirstName, Is.EqualTo("John0"));
-                Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
-                Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[6].Id, Is.EqualTo(6));
-                Assert.That(list[6].FirstName, Is.EqualTo("John6"));
-                Assert.That(list[6].MiddleName, Is.EqualTo("Сurly6"));
-                Assert.That(list[6].LastName, Is.EqualTo("Doe6"));
-            });
-        }
-
-        [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    r.id,
-    r.firstname,
-    r.middlename,
-    r.lastname
-FROM readfixture r
-",
-            typeof(ReadFixtureModelStruct),
-            Gedaq.Provider.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToStruct"
-            )]
-        public void ReadToStructConnection()
-        {
-            var list = _dataSource.OpenConnection().ToStruct().ToList();
-
-            Assert.That(list, Has.Count.EqualTo(10));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[0].Id, Is.EqualTo(0));
-                Assert.That(list[0].FirstName, Is.EqualTo("John0"));
-                Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
-                Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[6].Id, Is.EqualTo(6));
-                Assert.That(list[6].FirstName, Is.EqualTo("John6"));
-                Assert.That(list[6].MiddleName, Is.EqualTo("Сurly6"));
-                Assert.That(list[6].LastName, Is.EqualTo("Doe6"));
-            });
-        }
-
-        [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    r.id,
-    r.firstname,
-    r.middlename,
-    r.lastname
-FROM readfixture r
-",
-            typeof(ReadFixtureModelStruct),
-            Gedaq.Provider.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.NpgsqlDataSource,
-            "ToStruct"
-            )]
-        public void ReadToStructDataSource()
-        {
-            var list = _dataSource.ToStruct().ToList();
-
-            Assert.That(list, Has.Count.EqualTo(10));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[0].Id, Is.EqualTo(0));
-                Assert.That(list[0].FirstName, Is.EqualTo("John0"));
-                Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
-                Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[6].Id, Is.EqualTo(6));
-                Assert.That(list[6].FirstName, Is.EqualTo("John6"));
-                Assert.That(list[6].MiddleName, Is.EqualTo("Сurly6"));
-                Assert.That(list[6].LastName, Is.EqualTo("Doe6"));
-            });
-        }
-
-        [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    r.id,
-    r.firstname,
-    r.middlename,
-    r.lastname
-FROM readfixture r
+FROM readfixtureperson r
+LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
 ",
             typeof(object[]),
             Gedaq.Provider.Enums.MethodType.Sync,
@@ -288,54 +259,20 @@ FROM readfixture r
             {
                 Assert.That((int)list[0][0], Is.EqualTo(0));
                 Assert.That((string)list[0][1], Is.EqualTo("John0"));
-                Assert.That((string)list[0][2], Is.EqualTo("Сurly0"));
-                Assert.That((string)list[0][3], Is.EqualTo("Doe0"));
+                Assert.That((DBNull)list[0][2], Is.EqualTo(DBNull.Value));
+                Assert.That((DBNull)list[0][3], Is.EqualTo(DBNull.Value));
+                Assert.That((string)list[0][4], Is.EqualTo("Сurly0"));
+                Assert.That((string)list[0][5], Is.EqualTo("Doe0"));
             });
 
             Assert.Multiple(() =>
             {
-                Assert.That((int)list[6][0], Is.EqualTo(6));
-                Assert.That((string)list[6][1], Is.EqualTo("John6"));
-                Assert.That((string)list[6][2], Is.EqualTo("Сurly6"));
-                Assert.That((string)list[6][3], Is.EqualTo("Doe6"));
-            });
-        }
-
-        [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    r.id,
-    r.firstname,
-    r.middlename,
-    r.lastname
-FROM readfixture r
-",
-            typeof(object[]),
-            Gedaq.Provider.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.NpgsqlDataSource,
-            "ToObjArr"
-            )]
-        public void ReadToObjArrDataSource()
-        {
-            var list = _dataSource.ToObjArr().ToList();
-
-            Assert.That(list, Has.Count.EqualTo(10));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)list[0][0], Is.EqualTo(0));
-                Assert.That((string)list[0][1], Is.EqualTo("John0"));
-                Assert.That((string)list[0][2], Is.EqualTo("Сurly0"));
-                Assert.That((string)list[0][3], Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)list[6][0], Is.EqualTo(6));
-                Assert.That((string)list[6][1], Is.EqualTo("John6"));
-                Assert.That((string)list[6][2], Is.EqualTo("Сurly6"));
-                Assert.That((string)list[6][3], Is.EqualTo("Doe6"));
+                Assert.That((int)list[5][0], Is.EqualTo(5));
+                Assert.That((string)list[5][1], Is.EqualTo("John5"));
+                Assert.That((int)list[5][2], Is.EqualTo(5));
+                Assert.That((string)list[5][3], Is.EqualTo("party card"));
+                Assert.That((string)list[5][4], Is.EqualTo("Сurly5"));
+                Assert.That((string)list[5][5], Is.EqualTo("Doe5"));
             });
         }
 
@@ -345,9 +282,12 @@ FROM readfixture r
 SELECT 
     (r.id,
     r.firstname,
+    i.id,
+    i.typename,
     r.middlename,
     r.lastname) row
-FROM readfixture r
+FROM readfixtureperson r
+LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
 ",
             typeof(object),
             Gedaq.Provider.Enums.MethodType.Sync,
@@ -364,54 +304,20 @@ FROM readfixture r
             {
                 Assert.That((int)((object[])list[0])[0], Is.EqualTo(0));
                 Assert.That((string)((object[])list[0])[1], Is.EqualTo("John0"));
-                Assert.That((string)((object[])list[0])[2], Is.EqualTo("Сurly0"));
-                Assert.That((string)((object[])list[0])[3], Is.EqualTo("Doe0"));
+                Assert.That((int?)((object[])list[0])[2], Is.EqualTo(null));
+                Assert.That((string)((object[])list[0])[3], Is.EqualTo(null));
+                Assert.That((string)((object[])list[0])[4], Is.EqualTo("Сurly0"));
+                Assert.That((string)((object[])list[0])[5], Is.EqualTo("Doe0"));
             });
 
             Assert.Multiple(() =>
             {
-                Assert.That((int)((object[])list[6])[0], Is.EqualTo(6));
-                Assert.That((string)((object[])list[6])[1], Is.EqualTo("John6"));
-                Assert.That((string)((object[])list[6])[2], Is.EqualTo("Сurly6"));
-                Assert.That((string)((object[])list[6])[3], Is.EqualTo("Doe6"));
-            });
-        }
-
-        [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    (r.id,
-    r.firstname,
-    r.middlename,
-    r.lastname) row
-FROM readfixture r
-",
-            typeof(object),
-            Gedaq.Provider.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.NpgsqlDataSource,
-            "ToObj"
-            )]
-        public void ReadToObjDataSource()
-        {
-            var list = _dataSource.ToObj().ToList();
-
-            Assert.That(list, Has.Count.EqualTo(10));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)((object[])list[0])[0], Is.EqualTo(0));
-                Assert.That((string)((object[])list[0])[1], Is.EqualTo("John0"));
-                Assert.That((string)((object[])list[0])[2], Is.EqualTo("Сurly0"));
-                Assert.That((string)((object[])list[0])[3], Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)((object[])list[6])[0], Is.EqualTo(6));
-                Assert.That((string)((object[])list[6])[1], Is.EqualTo("John6"));
-                Assert.That((string)((object[])list[6])[2], Is.EqualTo("Сurly6"));
-                Assert.That((string)((object[])list[6])[3], Is.EqualTo("Doe6"));
+                Assert.That((int)((object[])list[5])[0], Is.EqualTo(5));
+                Assert.That((string)((object[])list[5])[1], Is.EqualTo("John5"));
+                Assert.That((int?)((object[])list[5])[2], Is.EqualTo(5));
+                Assert.That((string)((object[])list[5])[3], Is.EqualTo("party card"));
+                Assert.That((string)((object[])list[5])[4], Is.EqualTo("Сurly5"));
+                Assert.That((string)((object[])list[5])[5], Is.EqualTo("Doe5"));
             });
         }
 
@@ -425,9 +331,14 @@ FROM readfixture r
 SELECT 
     r.id,
     r.firstname,
+~StartInner::Identification:id~
+    i.id,
+    i.typename,
+~EndInner::Identification~
     r.middlename,
     r.lastname
-FROM readfixture r
+FROM readfixtureperson r
+LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
 ",
             typeof(ReadFixtureModel),
             Gedaq.Provider.Enums.MethodType.Async,
@@ -463,123 +374,14 @@ FROM readfixture r
 SELECT 
     r.id,
     r.firstname,
+~StartInner::Identification:id~
+    i.id,
+    i.typename,
+~EndInner::Identification~
     r.middlename,
     r.lastname
-FROM readfixture r
-",
-            typeof(ReadFixtureModel),
-            Gedaq.Provider.Enums.MethodType.Async,
-            Gedaq.Npgsql.Enums.SourceType.NpgsqlDataSource,
-            "ToClass"
-            )]
-        public async Task ReadToClassDataSourceAsync()
-        {
-            var list = await _dataSource.ToClassAsync().ToListAsync();
-
-            Assert.That(list, Has.Count.EqualTo(10));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[0].Id, Is.EqualTo(0));
-                Assert.That(list[0].FirstName, Is.EqualTo("John0"));
-                Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
-                Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[6].Id, Is.EqualTo(6));
-                Assert.That(list[6].FirstName, Is.EqualTo("John6"));
-                Assert.That(list[6].MiddleName, Is.EqualTo("Сurly6"));
-                Assert.That(list[6].LastName, Is.EqualTo("Doe6"));
-            });
-        }
-
-        [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    r.id,
-    r.firstname,
-    r.middlename,
-    r.lastname
-FROM readfixture r
-",
-            typeof(ReadFixtureModelStruct),
-            Gedaq.Provider.Enums.MethodType.Async,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToStruct"
-            )]
-        public async Task ReadToStructConnectionAsync()
-        {
-            var list = await _dataSource.OpenConnection().ToStructAsync().ToListAsync();
-
-            Assert.That(list, Has.Count.EqualTo(10));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[0].Id, Is.EqualTo(0));
-                Assert.That(list[0].FirstName, Is.EqualTo("John0"));
-                Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
-                Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[6].Id, Is.EqualTo(6));
-                Assert.That(list[6].FirstName, Is.EqualTo("John6"));
-                Assert.That(list[6].MiddleName, Is.EqualTo("Сurly6"));
-                Assert.That(list[6].LastName, Is.EqualTo("Doe6"));
-            });
-        }
-
-        [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    r.id,
-    r.firstname,
-    r.middlename,
-    r.lastname
-FROM readfixture r
-",
-            typeof(ReadFixtureModelStruct),
-            Gedaq.Provider.Enums.MethodType.Async,
-            Gedaq.Npgsql.Enums.SourceType.NpgsqlDataSource,
-            "ToStruct"
-            )]
-        public async Task ReadToStructDataSourceAsync()
-        {
-            var list = await _dataSource.ToStructAsync().ToListAsync();
-
-            Assert.That(list, Has.Count.EqualTo(10));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[0].Id, Is.EqualTo(0));
-                Assert.That(list[0].FirstName, Is.EqualTo("John0"));
-                Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
-                Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[6].Id, Is.EqualTo(6));
-                Assert.That(list[6].FirstName, Is.EqualTo("John6"));
-                Assert.That(list[6].MiddleName, Is.EqualTo("Сurly6"));
-                Assert.That(list[6].LastName, Is.EqualTo("Doe6"));
-            });
-        }
-
-        [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    r.id,
-    r.firstname,
-    r.middlename,
-    r.lastname
-FROM readfixture r
+FROM readfixtureperson r
+LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
 ",
             typeof(object[]),
             Gedaq.Provider.Enums.MethodType.Async,
@@ -596,54 +398,20 @@ FROM readfixture r
             {
                 Assert.That((int)list[0][0], Is.EqualTo(0));
                 Assert.That((string)list[0][1], Is.EqualTo("John0"));
-                Assert.That((string)list[0][2], Is.EqualTo("Сurly0"));
-                Assert.That((string)list[0][3], Is.EqualTo("Doe0"));
+                Assert.That((DBNull)list[0][2], Is.EqualTo(DBNull.Value));
+                Assert.That((DBNull)list[0][3], Is.EqualTo(DBNull.Value));
+                Assert.That((string)list[0][4], Is.EqualTo("Сurly0"));
+                Assert.That((string)list[0][5], Is.EqualTo("Doe0"));
             });
 
             Assert.Multiple(() =>
             {
-                Assert.That((int)list[6][0], Is.EqualTo(6));
-                Assert.That((string)list[6][1], Is.EqualTo("John6"));
-                Assert.That((string)list[6][2], Is.EqualTo("Сurly6"));
-                Assert.That((string)list[6][3], Is.EqualTo("Doe6"));
-            });
-        }
-
-        [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    r.id,
-    r.firstname,
-    r.middlename,
-    r.lastname
-FROM readfixture r
-",
-            typeof(object[]),
-            Gedaq.Provider.Enums.MethodType.Async,
-            Gedaq.Npgsql.Enums.SourceType.NpgsqlDataSource,
-            "ToObjArr"
-            )]
-        public async Task ReadToObjArrDataSourceAsync()
-        {
-            var list = await _dataSource.ToObjArrAsync().ToListAsync();
-
-            Assert.That(list, Has.Count.EqualTo(10));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)list[0][0], Is.EqualTo(0));
-                Assert.That((string)list[0][1], Is.EqualTo("John0"));
-                Assert.That((string)list[0][2], Is.EqualTo("Сurly0"));
-                Assert.That((string)list[0][3], Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)list[6][0], Is.EqualTo(6));
-                Assert.That((string)list[6][1], Is.EqualTo("John6"));
-                Assert.That((string)list[6][2], Is.EqualTo("Сurly6"));
-                Assert.That((string)list[6][3], Is.EqualTo("Doe6"));
+                Assert.That((int)list[5][0], Is.EqualTo(5));
+                Assert.That((string)list[5][1], Is.EqualTo("John5"));
+                Assert.That((int)list[5][2], Is.EqualTo(5));
+                Assert.That((string)list[5][3], Is.EqualTo("party card"));
+                Assert.That((string)list[5][4], Is.EqualTo("Сurly5"));
+                Assert.That((string)list[5][5], Is.EqualTo("Doe5"));
             });
         }
 
@@ -653,9 +421,12 @@ FROM readfixture r
 SELECT 
     (r.id,
     r.firstname,
+    i.id,
+    i.typename,
     r.middlename,
     r.lastname) row
-FROM readfixture r
+FROM readfixtureperson r
+LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
 ",
             typeof(object),
             Gedaq.Provider.Enums.MethodType.Async,
@@ -672,54 +443,20 @@ FROM readfixture r
             {
                 Assert.That((int)((object[])list[0])[0], Is.EqualTo(0));
                 Assert.That((string)((object[])list[0])[1], Is.EqualTo("John0"));
-                Assert.That((string)((object[])list[0])[2], Is.EqualTo("Сurly0"));
-                Assert.That((string)((object[])list[0])[3], Is.EqualTo("Doe0"));
+                Assert.That((int?)((object[])list[0])[2], Is.EqualTo(null));
+                Assert.That((string)((object[])list[0])[3], Is.EqualTo(null));
+                Assert.That((string)((object[])list[0])[4], Is.EqualTo("Сurly0"));
+                Assert.That((string)((object[])list[0])[5], Is.EqualTo("Doe0"));
             });
 
             Assert.Multiple(() =>
             {
-                Assert.That((int)((object[])list[6])[0], Is.EqualTo(6));
-                Assert.That((string)((object[])list[6])[1], Is.EqualTo("John6"));
-                Assert.That((string)((object[])list[6])[2], Is.EqualTo("Сurly6"));
-                Assert.That((string)((object[])list[6])[3], Is.EqualTo("Doe6"));
-            });
-        }
-
-        [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    (r.id,
-    r.firstname,
-    r.middlename,
-    r.lastname) row
-FROM readfixture r
-",
-            typeof(object),
-            Gedaq.Provider.Enums.MethodType.Async,
-            Gedaq.Npgsql.Enums.SourceType.NpgsqlDataSource,
-            "ToObj"
-            )]
-        public async Task ReadToObjDataSourceAsync()
-        {
-            var list = await _dataSource.ToObjAsync().ToListAsync();
-
-            Assert.That(list, Has.Count.EqualTo(10));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)((object[])list[0])[0], Is.EqualTo(0));
-                Assert.That((string)((object[])list[0])[1], Is.EqualTo("John0"));
-                Assert.That((string)((object[])list[0])[2], Is.EqualTo("Сurly0"));
-                Assert.That((string)((object[])list[0])[3], Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)((object[])list[6])[0], Is.EqualTo(6));
-                Assert.That((string)((object[])list[6])[1], Is.EqualTo("John6"));
-                Assert.That((string)((object[])list[6])[2], Is.EqualTo("Сurly6"));
-                Assert.That((string)((object[])list[6])[3], Is.EqualTo("Doe6"));
+                Assert.That((int)((object[])list[5])[0], Is.EqualTo(5));
+                Assert.That((string)((object[])list[5])[1], Is.EqualTo("John5"));
+                Assert.That((int?)((object[])list[5])[2], Is.EqualTo(5));
+                Assert.That((string)((object[])list[5])[3], Is.EqualTo("party card"));
+                Assert.That((string)((object[])list[5])[4], Is.EqualTo("Сurly5"));
+                Assert.That((string)((object[])list[5])[5], Is.EqualTo("Doe5"));
             });
         }
 

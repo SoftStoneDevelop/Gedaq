@@ -27,12 +27,15 @@ WHERE
             string tableName
         )
         {
-            using var command = connection.CreateCommand();
-            command.CommandText = $@"
+            if(ExistTable(connection, tableName))
+            {
+                using var command = connection.CreateCommand();
+                command.CommandText = $@"
 DROP TABLE {tableName};
 ;
 ";
-            command.ExecuteNonQuery();
+                command.ExecuteNonQuery();
+            }
         }
     }
 }
