@@ -7,21 +7,40 @@ namespace NpgsqlTests
     internal partial class SqlParserFixture
     {
         [Test]
-        public void TestSqlParser()
+        public void Parse()
         {
             var parser = new Gedaq.Npgsql.QueryParser();
             var sql = @"
 SELECT 
-    p1.id,
-    p1.firstname,
-    p1.middlename,
+ 
+ 
+ 
+ 
+        p1.id,
+          p1.firstname
+ 
+  
+ 
+
+
+,     
+
+
+    p1.middlename  
+ 
+ ,
     p1.lastname
+
+ 
+ 
+ 
 FROM person p1
 ";
             var aliases = parser.Parse(ref sql);
             Assert.Multiple(() =>
             {
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
+                Assert.That(aliases.IsRowsAffected, Is.EqualTo(false));
                 Assert.That(aliases.Fields, Has.Count.EqualTo(4));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(0));
 
@@ -36,6 +55,77 @@ FROM person p1
 
                 Assert.That(aliases.Fields[3].Name, Is.EqualTo("lastname"));
                 Assert.That(aliases.Fields[3].Position, Is.EqualTo(3));
+            });
+        }
+
+        [Test]
+        public void ParseBrackets()
+        {
+            var parser = new Gedaq.Npgsql.QueryParser();
+            var sql = @"
+SELECT 
+ (
+ 
+ 
+ 
+        p1.id,
+          p1.firstname
+ 
+  
+ 
+
+
+,     
+
+
+    p1.middlename  
+ 
+ ,
+    p1.lastname
+
+ ) as
+
+person,
+ (
+ 
+ 
+ 
+        p1.id,
+          p1.firstname
+ 
+  
+ 
+
+
+,     
+
+
+    p1.middlename  
+ 
+ ,
+    p1.lastname
+
+ )
+
+person2
+
+ 
+ 
+FROM person p1
+";
+            var aliases = parser.Parse(ref sql);
+            Assert.Multiple(() =>
+            {
+                Assert.That(aliases.IsRoot, Is.EqualTo(true));
+                Assert.That(aliases.IsRowsAffected, Is.EqualTo(false));
+                Assert.That(aliases.Fields, Has.Count.EqualTo(2));
+                Assert.That(aliases.InnerEntities, Has.Count.EqualTo(0));
+
+                Assert.That(aliases.Fields[0].Name, Is.EqualTo("person"));
+                Assert.That(aliases.Fields[0].Position, Is.EqualTo(0));
+
+                Assert.That(aliases.Fields[1].Name, Is.EqualTo("person2"));
+                Assert.That(aliases.Fields[1].Position, Is.EqualTo(1));
             });
         }
 

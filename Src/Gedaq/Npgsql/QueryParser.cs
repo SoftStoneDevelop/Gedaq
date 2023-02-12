@@ -1,11 +1,14 @@
 ﻿using Gedaq.Enums;
 using Gedaq.Npgsql.Model;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Xml.Linq;
 
 [assembly:InternalsVisibleTo("NpgsqlTests")]
 namespace Gedaq.Npgsql
@@ -73,38 +76,11 @@ namespace Gedaq.Npgsql
         private Aliases FillAliases(ReadOnlySpan<char> query, out string newQuery)
         {
             newQuery = null;
-            var root = new Aliases();
-            var stateMachine = new FindAliasStateMachine(query);
-            while(stateMachine.CanMoveNext())
-            {
-                var action = stateMachine.MoveNext();
-                switch (action)
-                {
-                    case ActionAfterStep.None:
-                    {
-                        break;
-                    }
+            var parser = new AliasParser(query);
+            parser.Parse();
 
-                    case ActionAfterStep.AddField:
-                    {
-                        root.Fields.Add(new Field() { Name = stateMachine.GetAlias(), Position = stateMachine.GetPosition() });
-                        break;
-                    }
-
-                    case ActionAfterStep.EndSearch:
-                    {
-                        return root;
-                    }
-
-                    case ActionAfterStep.EndSearchAndAddField:
-                    {
-                        root.Fields.Add(new Field() { Name = stateMachine.GetAlias(), Position = stateMachine.GetPosition() });
-                        return root;
-                    }
-                }
-            }
-
-            return root;
+            return
+                parser.GetAliases();
         }
 
         private bool FindInstruction(ReadOnlySpan<char> command, out int indexAfterInstruction, out InstructionType instruction)
@@ -197,263 +173,260 @@ namespace Gedaq.Npgsql
             EndSearchAndAddField = 3
         }
 
-        private ref struct FindAliasStateMachine
+        private ref struct AliasParser
         {
             private static readonly char[] _emptyOrCarret = new char[] { ' ', '\r', '\n' };
             private static readonly string _from = "from";
+            private static readonly string _as = "as";
 
             private StringBuilder _field;
             private int _fieldPosition;
             private ReadOnlySpan<char> _query;
             private int currentIndex;
-
+            private Aliases _root;
             private int _leftBrackets;
 
-            /// <summary>
-            /// -1 - start state
-            /// -2 - end state
-            /// 0 - skip until not letter
-            /// 1 - skip until not right brackets
-            /// 2 - expect start of alias
-            /// 3 - expect end of alias
-            /// 4 - expect: comma or FROM or END or Start of Alias
-            /// </summary>
-            private int _state;
-
-            public FindAliasStateMachine(
+            public AliasParser(
                 ReadOnlySpan<char> query
                 )
             {
                 _field = new StringBuilder();
-                currentIndex = -1;
+                currentIndex = 0;
                 _leftBrackets = 0;
                 _fieldPosition = -1;
-                _state = -1;
                 _query = query;
+                _root = null;
             }
 
-            public string GetAlias()
+            public Aliases GetAliases()
             {
-                var result = _field.ToString();
-                _field.Clear();
-
-                return result;
+                return _root;
             }
 
-            public int GetPosition()
+            public void Parse()
             {
-                return _fieldPosition;
-            }
-
-            public bool CanMoveNext()
-            {
-                if (_state == -2)
+                if(_root != null)
                 {
-                    return false;
+                    return;
+                }
+
+                _root = new Aliases();
+                while (currentIndex < _query.Length)
+                {
+                    if (Skip(in _emptyOrCarret))
+                    {
+                        return;
+                    }
+
+                    if(IsFrom() || _query[currentIndex] == ';')
+                    {
+                        return;
+                    }
+
+                    if (_query[currentIndex] == '(')
+                    {
+                        SkipBracketGroup();
+                        Skip(in _emptyOrCarret);
+                        var name = GetNameAlias(false);
+                        if(string.IsNullOrWhiteSpace(name))
+                        {
+                            throw new Exception("After group must be AliasName");
+                        }
+
+                        _root.Fields.Add(new Field { Name = name, Position = _fieldPosition });
+                        continue;
+                    }
+
+                    var fieldName = GetNameAlias();
+                    if (string.IsNullOrWhiteSpace(fieldName))
+                    {
+                        throw new Exception("Not found Alias");
+                    }
+
+                    _root.Fields.Add(new Field { Name = fieldName, Position = _fieldPosition });
+                }
+            }
+
+            private string GetNameAlias(bool allowedDot = true)
+            {
+                var notAllowedAs = false;
+                var dotPass = false;
+
+                if (IsAs())
+                {
+                    Skip(in _emptyOrCarret);
+                    notAllowedAs = true;
+                }
+
+                for (; currentIndex < _query.Length; currentIndex++)
+                {
+                    if (char.IsLetterOrDigit(_query[currentIndex]))
+                    {
+                        _field.Append(_query[currentIndex]);
+                        continue;
+                    }
+                    else
+                    {
+                        if(Skip(in _emptyOrCarret))
+                        {
+                            break;
+                        }
+
+                        if(_query[currentIndex] == '.')
+                        {
+                            if(dotPass)
+                            {
+                                throw new Exception("Double dot in Alias");
+                            }
+
+                            if(!allowedDot)
+                            {
+                                throw new Exception("Dot in name is not allowed");
+                            }
+
+                            dotPass = true;
+                            _field.Clear();
+                            Skip(in _emptyOrCarret);
+                            continue;
+                        }
+
+                        if(_query[currentIndex] == ',')
+                        {
+                            currentIndex++;
+                            break;
+                        }
+
+                        if(IsAs())
+                        {
+                            if(notAllowedAs)
+                            {
+                                throw new Exception("Double 'AS' key");
+                            }
+
+                            _field.Clear();
+                            Skip(in _emptyOrCarret);
+                            notAllowedAs = true;
+                            continue;
+                        }
+
+                        if(IsFrom())
+                        {
+                            break;
+                        }
+                    }
+                }
+
+                if(_field.Length > 0)
+                {
+                    _fieldPosition++;
+                    var name = _field.ToString();
+                    _field.Clear();
+
+                    return name;
+                }
+
+                return null;
+            }
+
+            private bool IsAs()
+            {
+                var index = 0;
+                for (int i = currentIndex; i < _query.Length; i++)
+                {
+                    if(index > 2)
+                    {
+                        return false;
+                    }
+
+                    if (index < 2)
+                    {
+                        if(char.ToLowerInvariant(_query[i]) != _as[index])
+                        {
+                            return false;
+                        }
+
+                        index++;
+                        continue;
+                    }
+
+                    if (_emptyOrCarret.Contains(_query[i]))
+                    {
+                        currentIndex += 3;
+                        return true;
+                    }
+
+                    index++;
+                }
+
+                return false;
+            }
+
+            private bool IsFrom()
+            {
+                var index = 0;
+                for (int i = currentIndex; i < _query.Length; i++)
+                {
+                    if (index > 4)
+                    {
+                        return false;
+                    }
+
+                    if (index < 4)
+                    {
+                        if(char.ToLowerInvariant(_query[i]) != _from[index])
+                        {
+                            return false;
+                        }
+
+                        index++;
+                        continue;
+                    }
+
+                    if (_emptyOrCarret.Contains(_query[i]))
+                    {
+                        return true;
+                    }
+
+                    index++;
+                }
+
+                return false;
+            }
+
+            private bool Skip(in char[] chars)
+            {
+                for (; currentIndex < _query.Length; currentIndex++)
+                {
+                    if(!chars.Contains(_query[currentIndex]))
+                    {
+                        return false;
+                    }
                 }
 
                 return true;
             }
 
-
-            public ActionAfterStep MoveNext()
+            private void SkipBracketGroup()
             {
-                if (_state == -2)
+                for (; currentIndex < _query.Length; currentIndex++)
                 {
-                    throw new Exception("State machine expired");
-                }
-
-                currentIndex++;
-
-                if (_state == -1)
-                {
-                    _state = 0;
-                }
-
-                if (currentIndex == _query.Length - 1 && _state != 3)
-                {
-                    throw new Exception("Unexpected end of state machine");
-                }
-
-                switch (_state)
-                {
-                    case 0:
+                    if (_query[currentIndex] == '(')
                     {
-                        return SkipUntilNotLetter();
+                        _leftBrackets++;
+                        continue;
                     }
 
-                    case 1:
+                    if(_query[currentIndex] == ')')
                     {
-                        return SkipUntilNotRightBrackets();
+                        _leftBrackets--;
                     }
 
-                    case 2:
+                    if(_leftBrackets == 0)
                     {
-                        return ExpectStartAlias();
-                    }
-
-                    case 3:
-                    {
-                        return ExpectEndAlias();
-                    }
-
-                    case 4:
-                    {
-                        return ExpectCommaOrFromOrEnd();
-                    }
-
-                    default:
-                    {
-                        throw new Exception("Unexpected state of state machine");
+                        currentIndex++;
+                        break;
                     }
                 }
-            }
-
-            private ActionAfterStep SkipUntilNotLetter()//0
-            {
-                if (char.IsLetter(_query[currentIndex]))
-                {
-                    _state = 3;
-                    _field.Append(_query[currentIndex]);
-                    return ActionAfterStep.None;
-                }
-                else if (_query[currentIndex] == '(')
-                {
-                    _leftBrackets++;
-                    _state = 1;
-                    _field.Clear();
-                    return ActionAfterStep.None;
-                }
-                else
-                {
-                    return ActionAfterStep.None;
-                }
-            }
-
-            private ActionAfterStep SkipUntilNotRightBrackets()//1
-            {
-                if (_query[currentIndex] == ')')
-                {
-                    if (--_leftBrackets == 0)
-                    {
-                        _state = 2;
-                    }
-
-                    return ActionAfterStep.None;
-                }
-
-                return ActionAfterStep.None;
-            }
-
-            private ActionAfterStep ExpectStartAlias()//2
-            {
-                if (char.IsLetter(_query[currentIndex]))
-                {
-                    _state = 3;
-                    _field.Append(_query[currentIndex]);
-
-                    return ActionAfterStep.None;
-                }
-
-                if (_emptyOrCarret.Contains(_query[currentIndex]))
-                {
-                    return ActionAfterStep.None;
-                }
-
-                throw new Exception("Expect start of alias");
-            }
-
-            private ActionAfterStep ExpectEndAlias()//3
-            {
-                if (currentIndex == _query.Length - 1)
-                {
-                    _state = -2;
-                    _fieldPosition++;
-                    return ActionAfterStep.EndSearchAndAddField;
-                }
-
-                if (_query[currentIndex] == '.')
-                {
-                    _field.Clear();
-                    return ActionAfterStep.None;
-                }
-
-                if (char.IsLetter(_query[currentIndex]) || (_field.Length > 0 && char.IsDigit(_query[currentIndex])))
-                {
-                    _field.Append(_query[currentIndex]);
-                    return ActionAfterStep.None;
-                }
-
-                if (_field.Length == 2 && _query[currentIndex] == char.ToLowerInvariant(' ') && _field.ToString().ToLowerInvariant() == "as".ToLowerInvariant())
-                {
-                    _state = 2;
-                    _field.Clear();
-
-                    return ActionAfterStep.None;
-                }
-
-                if (_emptyOrCarret.Contains(_query[currentIndex]))
-                {
-                    _state = 4;
-                    if (_field.Length == 4 && _field.ToString().ToLowerInvariant() == "FROM".ToLowerInvariant())
-                    {
-                        throw new Exception("'FROM' can't be alias");
-                    }
-
-                    _fieldPosition++;
-                    return ActionAfterStep.AddField;
-                }
-
-                if (_query[currentIndex] == ',')
-                {
-                    _state = 0;
-                    _fieldPosition++;
-                    return ActionAfterStep.AddField;
-                }
-
-                throw new Exception("Expect start of alias: unknown behavior");
-            }
-
-            private ActionAfterStep ExpectCommaOrFromOrEnd()//4
-            {
-                if (currentIndex == _query.Length - 1)
-                {
-                    _state = -2;
-                    return ActionAfterStep.EndSearch;
-                }
-
-                if (_field.Length == 0)
-                {
-                    if (_emptyOrCarret.Contains(_query[currentIndex]))
-                    {
-                        return ActionAfterStep.None;
-                    }
-                    else
-                    if (_query[currentIndex] == ',')
-                    {
-                        _state = 0;
-                        return ActionAfterStep.None;
-                    }
-                }
-
-                if (_field.Length < 4 && _emptyOrCarret.Contains(_query[currentIndex]))
-                {
-                    throw new Exception($"Expect {nameof(ExpectCommaOrFromOrEnd)} but field equal '{_field.ToString()}'");
-                }
-
-                if (_field.Length < 4)
-                {
-                    _field.Append(_query[currentIndex]);
-                    return ActionAfterStep.None;
-                }
-
-                if (_field.Length == 4 && _emptyOrCarret.Contains(_query[currentIndex]) && _field.ToString().ToLowerInvariant() == "FROM".ToLowerInvariant())
-                {
-                    _state = -2;
-                    return ActionAfterStep.EndSearch;
-                }
-
-                throw new Exception($"Expect {nameof(ExpectCommaOrFromOrEnd)}");
             }
         }
     }
