@@ -1,4 +1,5 @@
 ﻿using Gedaq.Enums;
+using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;

@@ -1,5 +1,6 @@
 ﻿using Gedaq.Enums;
 using Gedaq.Helpers;
+using Gedaq.Npgsql.Enums;
 using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
@@ -100,14 +101,24 @@ namespace {source.ContainTypeName.ContainingNamespace}
             _methodCode.Append($@"
             this {source.SourceType.ToTypeName()} {source.SourceType.ToParametrName()}
 ");
-            //foreach parametrs - add parametrs
+            if(source.HaveParametrs())
+            {
+                for (int i = 0; i < source.ParametrTypes.Length; i++)
+                {
+                    ITypeSymbol type = source.ParametrTypes[i];
+                    string name = source.ParametrNames[i];
+
+                    _methodCode.Append($@"
+            ,
+            {type.GetFullTypeName()} {name}
+");
+                }
+            }
             _methodCode.Append($@"
         )
         {{
 ");
         }
-
-        #region Sync
 
         private void SyncBody(
             QueryReadNpgsql source
@@ -133,6 +144,9 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 command.CommandText = @""
 {source.Query}
 "";
+");
+            SetCommandParametrs(source);
+            _methodCode.Append($@"
                 reader = command.ExecuteReader();
                 while (reader.Read())
                 {{
@@ -179,6 +193,31 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 command?.Dispose();
             }}
 ");
+        }
+
+        private void SetCommandParametrs(QueryReadNpgsql source)
+        {
+            if(!source.HaveParametrs())
+            {
+                return;
+            }
+
+            for (int i = 0; i< source.ParametrNames.Length; i++)
+            {
+                _methodCode.Append($@"
+                var parametr{i} = new NpgsqlParameter();
+");
+                if(source.HaveParametrTypes())
+                {
+                    _methodCode.Append($@"
+                parametr{i}.NpgsqlDbType = ({TypeHelper.NpgsqlDbTypeName}){source.ParametrDbTypes[i]};
+");
+                }
+                _methodCode.Append($@"
+                parametr{i}.Value = {source.ParametrNames[i]};
+                command.Parameters.Add(parametr{i});
+");
+            }
         }
 
         private void YieldItem(
@@ -232,7 +271,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 ITypeSymbol mapTypeName,
                 string itemName,
                 string propertyName
-                ) 
+                )
                 : this(aliases, mapTypeName, itemName)
             {
                 PropertyName = propertyName;
@@ -261,11 +300,11 @@ namespace {source.ContainTypeName.ContainingNamespace}
             while (aliases.Count != 0)
             {
                 var pair = aliases.Pop();
-                if(pair.Parent != null)
+                if (pair.Parent != null)
                 {
                     var linkField = pair.Aliases.GetLinkField();
                     _methodCode.Append($@"
-                    {Tabs(tabs)}if(!{(methodType == MethodType.Async? "await " : "")}reader.IsDBNull{(methodType == MethodType.Async ? "Async" : "")}({linkField.Position}))
+                    {Tabs(tabs)}if(!{(methodType == MethodType.Async ? "await " : "")}reader.IsDBNull{(methodType == MethodType.Async ? "Async" : "")}({linkField.Position}))
                     {Tabs(tabs)}{{
                         var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}
                         {Tabs(tabs)}{{
@@ -313,7 +352,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
                 }
 
-                if(pair.Aliases.InnerEntities.Count != 0)
+                if (pair.Aliases.InnerEntities.Count != 0)
                 {
                     ++tabs;
                     for (var i = 0; i < pair.Aliases.InnerEntities.Count; i++)
@@ -322,7 +361,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                         pair.MapTypeName.GetPropertyOrFieldName(alias.EntityName, out var propertyName, out var pairType);
                         var newPair = new ItemPair(alias, pairType, $"item{++itemId}", propertyName);
                         newPair.Parent = pair;
-                        newPair.Tabs= tabs;
+                        newPair.Tabs = tabs;
                         aliases.Push(newPair);
                     }
                 }
@@ -334,10 +373,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
         {
             return new string(' ', tabs * 4);
         }
-
-        #endregion
-
-        #region Async
 
         private void AsyncBody(
             QueryReadNpgsql source
@@ -363,6 +398,9 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 command.CommandText = @""
 {source.Query}
 "";
+");
+            SetCommandParametrs(source);
+            _methodCode.Append($@"
                 reader = await command.ExecuteReaderAsync().ConfigureAwait(false);
                 while (await reader.ReadAsync().ConfigureAwait(false))
                 {{
@@ -413,7 +451,5 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }}
 ");
         }
-
-        #endregion
     }
 }

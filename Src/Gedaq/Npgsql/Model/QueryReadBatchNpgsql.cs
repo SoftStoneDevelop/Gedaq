@@ -1,5 +1,6 @@
 ﻿using Gedaq.Enums;
 using Gedaq.Helpers;
+using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            var firstArgument = namedArguments[0];//Type[]
+            var firstArgument = namedArguments[0];//string[]
             if (!(firstArgument.Type is IArrayTypeSymbol strArray) ||
                 strArray.ElementType.Name != nameof(String) ||
                 strArray.Rank != 1

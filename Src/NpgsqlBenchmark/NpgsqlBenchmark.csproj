@@ -6,7 +6,7 @@
 	<ItemGroup>
 		<PackageReference Include="BenchmarkDotNet" Version="0.13.4" />
 		<PackageReference Include="Dapper" Version="2.0.123" />
-		<PackageReference Include="Gedaq.Npgsql" Version="0.1.0.12-beta" />
+		<PackageReference Include="Gedaq.Npgsql" Version="0.1.0.30-beta" />
 		<PackageReference Include="System.Linq.Async" Version="6.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
 	</ItemGroup>

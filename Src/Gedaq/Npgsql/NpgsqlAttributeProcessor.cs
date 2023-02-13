@@ -72,13 +72,13 @@ namespace Gedaq.Npgsql
                     query.Aliases = _queryParser.Parse(ref query.Query);
                 }
 
-                if (queryRead.MethodType.HasFlag(Enums.MethodType.Sync))
+                if (queryRead.MethodType.HasFlag(MethodType.Sync))
                 {
                     queryReadBatchGenerator.GenerateMethod(queryRead);
                     context.AddSource($"{queryRead.MethodName}{queryRead.SourceType.ToString()}.g.cs", queryReadBatchGenerator.GetCode());
                 }
 
-                if (queryRead.MethodType.HasFlag(Enums.MethodType.Async))
+                if (queryRead.MethodType.HasFlag(MethodType.Async))
                 {
                     queryReadBatchGenerator.GenerateMethod(queryRead);
                     context.AddSource($"{queryRead.MethodName}{queryRead.SourceType.ToString()}Async.g.cs", queryReadBatchGenerator.GetCode());
@@ -91,13 +91,13 @@ namespace Gedaq.Npgsql
             {
                 queryRead.Aliases = _queryParser.Parse(ref queryRead.Query);
 
-                if(queryRead.MethodType.HasFlag(Enums.MethodType.Sync))
+                if(queryRead.MethodType.HasFlag(MethodType.Sync))
                 {
                     queryReadGenerator.GenerateMethod(queryRead);
                     context.AddSource($"{queryRead.MethodName}{queryRead.SourceType.ToString()}.g.cs", queryReadGenerator.GetCode());
                 }
 
-                if (queryRead.MethodType.HasFlag(Enums.MethodType.Async))
+                if (queryRead.MethodType.HasFlag(MethodType.Async))
                 {
                     queryReadGenerator.GenerateAsyncMethod(queryRead);
                     context.AddSource($"{queryRead.MethodName}{queryRead.SourceType.ToString()}Async.g.cs", queryReadGenerator.GetCode());
