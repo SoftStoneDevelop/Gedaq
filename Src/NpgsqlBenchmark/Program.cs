@@ -1,9 +1,15 @@
 ﻿using BenchmarkDotNet.Running;
+using Gedaq.Npgsql.Enums;
+using Gedaq.Provider.Enums;
+using Microsoft.Diagnostics.Tracing.Parsers.AspNet;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
 using NpgsqlBenchmark.Benchmarks;
+using NpgsqlBenchmark.Model;
 using System;
+using System.Data.Common;
 using System.IO;
+using System.Linq;
 
 namespace NpgsqlBenchmark
 {
@@ -11,11 +17,76 @@ namespace NpgsqlBenchmark
     {
         static void Main(string[] args)
         {
+            TestQuery();
             BenchmarkRunner.Run<Read>();
             BenchmarkRunner.Run<ReadAsync>();
 
             BenchmarkRunner.Run<ReadInnerMap>();
             BenchmarkRunner.Run<ReadInnerMapAsync>();
+        }
+
+        private static void TestQuery()
+        {
+            var root = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("settings.json", optional: false)
+                .Build()
+            ;
+
+            using var connection = new NpgsqlConnection(root.GetConnectionString("SqlConnection"));
+            connection.Open();
+
+            var cmd = connection.CreateCommand();
+            cmd.CommandText = @"
+SELECT 
+    p.id,
+    p.firstname,
+    p.middlename,
+    p.lastname
+FROM person p
+WHERE p.id > $1
+ORDER BY p.id ASC
+";
+            var parametr = new NpgsqlParameter<int>();
+            parametr.TypedValue= 13;
+            cmd.Parameters.Add(parametr);
+            var reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                var id = reader.GetFieldValue<int>(0);
+                var firstname = reader.GetFieldValue<string>(1);
+                var middlename = reader.GetFieldValue<string>(2);
+                var lastname = reader.GetFieldValue<string>(3);
+            }
+        }
+
+        [Gedaq.Npgsql.Attributes.QueryRead(
+            @"
+SELECT 
+    p.id,
+    p.firstname,
+    p.middlename,
+    p.lastname
+FROM person p1
+WHERE p.id > $1
+ORDER BY p.id ASC
+",
+            typeof(Person),
+            MethodType.Sync,
+            SourceType.Connection,
+            "GetData",
+            parametrTypes: new Type[] { typeof(int) }
+            )]
+        private static void GetData()
+        {
+            var root = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("settings.json", optional: false)
+                .Build()
+            ;
+
+            using var connection = new NpgsqlConnection(root.GetConnectionString("SqlConnection"));
+            var data = connection.GetData(13).ToList();
         }
 
         private static void FillTestDatabase()
@@ -52,7 +123,7 @@ INSERT INTO public.identification(
                     id.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Integer;
                     id.ParameterName = "id";
                     cmd.Parameters.Add(id);
-
+                    
                     var typename = cmd.CreateParameter();
                     typename.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
                     typename.ParameterName = "typename";

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Xml.Linq;
 
 namespace Gedaq.Npgsql.Generators
 {
@@ -101,17 +102,26 @@ namespace {source.ContainTypeName.ContainingNamespace}
             _methodCode.Append($@"
             this {source.SourceType.ToTypeName()} {source.SourceType.ToParametrName()}
 ");
-            if(source.HaveParametrs())
+            if(source.HaveParametrTypes())
             {
                 for (int i = 0; i < source.ParametrTypes.Length; i++)
                 {
                     ITypeSymbol type = source.ParametrTypes[i];
-                    string name = source.ParametrNames[i];
-
-                    _methodCode.Append($@"
+                    if(source.HaveParametrNames())
+                    {
+                        string name = source.ParametrNames[i].ToLowerInvariant();
+                        _methodCode.Append($@"
             ,
             {type.GetFullTypeName()} {name}
 ");
+                    }
+                    else
+                    {
+                        _methodCode.Append($@"
+            ,
+            {type.GetFullTypeName()} mParametr{i}
+");
+                    }
                 }
             }
             _methodCode.Append($@"
@@ -155,11 +165,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
             _methodCode.Append($@"
                 }}
 
-                while (reader.NextResult()) 
-                {{
-                    //ignore
-                }}
-
                 reader.Dispose();
                 reader = null;
             }}
@@ -197,24 +202,36 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
         private void SetCommandParametrs(QueryReadNpgsql source)
         {
-            if(!source.HaveParametrs())
+            if(!source.HaveParametrTypes())
             {
                 return;
             }
 
-            for (int i = 0; i< source.ParametrNames.Length; i++)
+            for (int i = 0; i< source.ParametrTypes.Length; i++)
             {
                 _methodCode.Append($@"
-                var parametr{i} = new NpgsqlParameter();
+                var parametr{i} = new NpgsqlParameter<{source.ParametrTypes[i].GetFullTypeName()}>();
 ");
-                if(source.HaveParametrTypes())
+                if(source.HaveParametrDbTypes())
                 {
                     _methodCode.Append($@"
                 parametr{i}.NpgsqlDbType = ({TypeHelper.NpgsqlDbTypeName}){source.ParametrDbTypes[i]};
 ");
                 }
+                if(source.HaveParametrNames())
+                {
+                    _methodCode.Append($@"
+                parametr{i}.ParameterName = ""{source.ParametrNames[i]}"";
+                parametr{i}.TypedValue = {source.ParametrNames[i].ToLowerInvariant()};
+");
+                }
+                else
+                {
+                    _methodCode.Append($@"
+                parametr{i}.TypedValue = mParametr{i};
+");
+                }
                 _methodCode.Append($@"
-                parametr{i}.Value = {source.ParametrNames[i]};
                 command.Parameters.Add(parametr{i});
 ");
             }
