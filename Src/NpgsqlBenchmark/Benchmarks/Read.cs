@@ -14,11 +14,11 @@ namespace NpgsqlBenchmark.Benchmarks
     [Gedaq.Npgsql.Attributes.QueryRead(
             @"
 SELECT 
-    p1.id,
-    p1.firstname,
-    p1.middlename,
-    p1.lastname
-FROM person p1
+    p.id,
+    p.firstname,
+    p.middlename,
+    p.lastname
+FROM person p
 ",
             typeof(Person),
             MethodType.Sync,
@@ -70,11 +70,11 @@ FROM person p1
             {
                 var persons = _connection.Query<Person>(@"
 SELECT 
-    p1.id,
-    p1.firstname,
-    p1.middlename,
-    p1.lastname
-FROM person p1
+    p.id,
+    p.firstname,
+    p.middlename,
+    p.lastname
+FROM person p
 ", buffered: false)
                     .ToList();
             }

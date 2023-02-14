@@ -15,11 +15,11 @@ namespace NpgsqlBenchmark.Benchmarks
     [Gedaq.Npgsql.Attributes.QueryRead(
             @"
 SELECT 
-    p1.id,
-    p1.firstname,
-    p1.middlename,
-    p1.lastname
-FROM person p1
+    p.id,
+    p.firstname,
+    p.middlename,
+    p.lastname
+FROM person p
 ",
             typeof(Person),
             MethodType.Async,
@@ -72,11 +72,11 @@ FROM person p1
                 //async in QueryAsync always buffered
                 var persons = await _connection.QueryAsync<Person>(@"
 SELECT 
-    p1.id,
-    p1.firstname,
-    p1.middlename,
-    p1.lastname
-FROM person p1
+    p.id,
+    p.firstname,
+    p.middlename,
+    p.lastname
+FROM person p
 ");
             }
         }

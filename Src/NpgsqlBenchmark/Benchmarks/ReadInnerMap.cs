@@ -8,6 +8,7 @@ using Dapper;
 using System.Linq;
 using Gedaq.Npgsql.Enums;
 using Gedaq.Provider.Enums;
+using System;
 
 namespace NpgsqlBenchmark.Benchmarks
 {
@@ -24,12 +25,14 @@ SELECT
     p.lastname
 FROM person p
 LEFT JOIN identification i ON i.id = p.identification_id
+WHERE p.id > $1
 ",
-            typeof(Person),
-            MethodType.Sync,
-            SourceType.Connection,
-            "ReadInnerMap"
-            )]
+        typeof(Person),
+        MethodType.Sync,
+        SourceType.Connection,
+        "ReadInnerMap",
+        parametrTypes: new Type[] { typeof(int) }
+        )]
     [MemoryDiagnoser]
     [SimpleJob(RuntimeMoniker.Net70)]
     [HideColumns("Error", "StdDev", "Median", "RatioSD")]
@@ -64,7 +67,7 @@ LEFT JOIN identification i ON i.id = p.identification_id
         {
             for (int i = 0; i < Size; i++)
             {
-                var persons = _connection.ReadInnerMap().ToList();
+                var persons = _connection.ReadInnerMap(49999).ToList();
             }
         }
 
@@ -73,6 +76,7 @@ LEFT JOIN identification i ON i.id = p.identification_id
         {
             for (int i = 0; i < Size; i++)
             {
+                var parametrs = new { id = 49999 };
                 var persons = _connection.Query<Person, Identification, Person>(@"
 SELECT 
     p.id,
@@ -83,12 +87,13 @@ SELECT
     i.typename
 FROM person p
 LEFT JOIN identification i ON i.id = p.identification_id
+WHERE p.id > @id
 ",
 (person, identification) => 
 {
     person.Identification = identification;
     return person;
-}, buffered: false)
+}, parametrs, buffered: false)
                     .ToList();
             }
         }

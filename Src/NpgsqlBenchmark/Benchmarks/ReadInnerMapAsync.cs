@@ -9,6 +9,7 @@ using System.Linq;
 using Gedaq.Npgsql.Enums;
 using Gedaq.Provider.Enums;
 using System.Threading.Tasks;
+using System;
 
 namespace NpgsqlBenchmark.Benchmarks
 {
@@ -25,12 +26,14 @@ SELECT
     p.lastname
 FROM person p
 LEFT JOIN identification i ON i.id = p.identification_id
+WHERE p.id > $1
 ",
-            typeof(Person),
-            MethodType.Async,
-            SourceType.Connection,
-            "ReadInnerMapAsync"
-            )]
+        typeof(Person),
+        MethodType.Async,
+        SourceType.Connection,
+        "ReadInnerMapAsync",
+        parametrTypes: new Type[] { typeof(int) }
+        )]
     [MemoryDiagnoser]
     [SimpleJob(RuntimeMoniker.Net70)]
     [HideColumns("Error", "StdDev", "Median", "RatioSD")]
@@ -65,7 +68,7 @@ LEFT JOIN identification i ON i.id = p.identification_id
         {
             for (int i = 0; i < Size; i++)
             {
-                var persons = await _connection.ReadInnerMapAsyncAsync().ToListAsync();
+                var persons = await _connection.ReadInnerMapAsyncAsync(49999).ToListAsync();
             }
         }
 
@@ -75,6 +78,7 @@ LEFT JOIN identification i ON i.id = p.identification_id
             for (int i = 0; i < Size; i++)
             {
                 //async in QueryAsync always buffered
+                var parametrs = new { id = 49999 };
                 var persons = await _connection.QueryAsync<Person, Identification, Person>(@"
 SELECT 
     p.id,
@@ -85,12 +89,13 @@ SELECT
     i.typename
 FROM person p
 LEFT JOIN identification i ON i.id = p.identification_id
+WHERE p.id > @id
 ",
 (person, identification) => 
 {
     person.Identification = identification;
     return person;
-});
+}, parametrs);
                 var list = persons.ToList();
             }
         }
