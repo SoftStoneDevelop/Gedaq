@@ -381,68 +381,90 @@ namespace {source.ContainTypeName.ContainingNamespace}
             )
         {
             _methodCode.Append($@"
-    public static  {(methodType == MethodType.Async ? "async Task<NpgsqlCommand>" : "NpgsqlCommand")} Create{source.MethodName}Command{(methodType == MethodType.Async ? "Async" : "")}(
-        this {sourceType.ToTypeName()} {sourceType.ToParametrName()},
-        bool prepare = false
+        public static  {(methodType == MethodType.Async ? "async Task<NpgsqlCommand>" : "NpgsqlCommand")} Create{source.MethodName}Command{(methodType == MethodType.Async ? "Async" : "")}(
+            this {sourceType.ToTypeName()} {sourceType.ToParametrName()},
+            bool prepare = false
 ");
             if(methodType == MethodType.Async)
             {
                 _methodCode.Append($@",
-        CancellationToken cancellationToken = default
+            CancellationToken cancellationToken = default
 ");
             }
 
             _methodCode.Append($@",
-        int? timeout = null
+            int? timeout = null
         )
-    {{
-        var command = {source.SourceType.ToParametrName()}.CreateCommand();
-        if(timeout != null)
         {{
-            command.CommandTimeout = (int)timeout;
-        }}
+            var command = {source.SourceType.ToParametrName()}.CreateCommand();
+            if(timeout != null)
+            {{
+                command.CommandTimeout = (int)timeout;
+            }}
 ");
             if (source.HaveParametrTypes())
             {
                 for (int i = 0; i < source.ParametrTypes.Length; i++)
                 {
                     _methodCode.Append($@"
-        var parametr{i} = new NpgsqlParameter<{source.ParametrTypes[i].GetFullTypeName()}>();
+            var parametr{i} = new NpgsqlParameter<{source.ParametrTypes[i].GetFullTypeName()}>();
 ");
                     if (source.HaveParametrDbTypes())
                     {
                         _methodCode.Append($@"
-        parametr{i}.NpgsqlDbType = ({TypeHelper.NpgsqlDbTypeName}){source.ParametrDbTypes[i]};
+            parametr{i}.NpgsqlDbType = ({TypeHelper.NpgsqlDbTypeName}){source.ParametrDbTypes[i]};
 ");
                     }
                     if (source.HaveParametrNames())
                     {
                         _methodCode.Append($@"
-        parametr{i}.ParameterName = ""{source.ParametrNames[i]}"";
+            parametr{i}.ParameterName = ""{source.ParametrNames[i]}"";
 ");
                     }
                     _methodCode.Append($@"
-        command.Parameters.Add(parametr{i});
+            command.Parameters.Add(parametr{i});
 ");
                 }
             }
 
-            if(methodType == MethodType.Async)
+            if (methodType == MethodType.Async)
             {
                 _methodCode.Append($@"
-        await command.PrepareAsync(cancellationToken).ConfigureAwait(false);
+                if(prepare)
+                {{
+                    try
+                    {{
+                        await command.PrepareAsync(cancellationToken).ConfigureAwait(false);
+                    }}
+                    catch
+                    {{  
+                        await command.DisposeAsync().ConfigureAwait(false);
+                        throw;
+                    }}
+                }}
 ");
             }
             else
             {
                 _methodCode.Append($@"
-        command.Prepare();
+                if(prepare)
+                {{
+                    try
+                    {{
+                        command.Prepare();
+                    }}
+                    catch
+                    {{
+                        command.Dispose();
+                        throw;
+                    }}
+                }}
 ");
             }
 
             _methodCode.Append($@"
-        return command;
-    }}
+            return command;
+        }}
 ");
 
         }
