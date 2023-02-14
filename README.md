@@ -62,7 +62,7 @@ LEFT JOIN identification i ON i.id = p.identification_id
 ",
             typeof(Person),
             MethodType.Sync | MethodType.Async,
-            Connection,
+            SourceType.Connection,
             "GetAllPerson"
             )]
 public class Person
