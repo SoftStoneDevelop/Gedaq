@@ -59,12 +59,14 @@ SELECT
     p.lastname
 FROM person p
 LEFT JOIN identification i ON i.id = p.identification_id
+WHERE p.id > $1
 ",
-            typeof(Person),
-            MethodType.Sync | MethodType.Async,
-            SourceType.Connection,
-            "GetAllPerson"
-            )]
+        typeof(Person),
+        MethodType.Sync | MethodType.Async,
+        SourceType.Connection,
+        "GetAllPerson",
+        parametrTypes: new Type[] { typeof(int) }
+        )]
 public class Person
 //...
 
@@ -75,26 +77,26 @@ Now in the code we can call the ready method:
 
 var persons = 
         connection
-        .GetAllPerson()
+        .GetAllPerson(49999)
         .ToList();
         
 var personsAsync = 
         await connection
-        .GetAllPersonAsync()
+        .GetAllPersonAsync(49999)
         .ToListAsync();
 
 ```
 
-Comparison of getting 100000 Person in a loop(Size is number of loop iterations) from the database:
+Comparison of getting 50000 Person in a loop(Size is number of loop iterations) from the database:
 
 
-|                                         Method | Size |       Mean | Ratio |        Gen0 |        Gen1 |       Gen2 | Allocated | Alloc Ratio |
-|----------------------------------------------- |----- |-----------:|------:|------------:|------------:|-----------:|----------:|------------:|
-|                                          **Gedaq** |   **10** |   **806.3 ms** |  **0.54** |  **36000.0000** |  **35000.0000** | **13000.0000** | **237.46 MB** |        **0.83** |
-| &#39;Dapper.Query&lt;Person, Identification, Person&gt;&#39; |   10 | 1,504.6 ms |  1.00 |  46000.0000 |  45000.0000 | 14000.0000 | 287.05 MB |        1.00 |
-|                                                |      |            |       |             |             |            |           |             |
-|                                          **Gedaq** |   **20** | **1,566.4 ms** |  **0.52** |  **73000.0000** |  **72000.0000** | **27000.0000** | **474.93 MB** |        **0.83** |
-| &#39;Dapper.Query&lt;Person, Identification, Person&gt;&#39; |   20 | 2,993.6 ms |  1.00 |  94000.0000 |  93000.0000 | 30000.0000 | 574.12 MB |        1.00 |
-|                                                |      |            |       |             |             |            |           |             |
-|                                          **Gedaq** |   **30** | **2,325.3 ms** |  **0.51** | **111000.0000** | **110000.0000** | **43000.0000** |  **712.4 MB** |        **0.83** |
-| &#39;Dapper.Query&lt;Person, Identification, Person&gt;&#39; |   30 | 4,557.2 ms |  1.00 | 140000.0000 | 139000.0000 | 44000.0000 | 861.15 MB |        1.00 |
+|                                         Method | Size |       Mean | Ratio |       Gen0 |       Gen1 |       Gen2 | Allocated | Alloc Ratio |
+|----------------------------------------------- |----- |-----------:|------:|-----------:|-----------:|-----------:|----------:|------------:|
+|                                          **Gedaq** |   **10** |   **404.1 ms** |  **0.62** | **17000.0000** | **16000.0000** |  **6000.0000** | **119.12 MB** |        **0.83** |
+| &#39;Dapper.Query&lt;Person, Identification, Person&gt;&#39; |   10 |   703.3 ms |  1.00 | 21000.0000 | 20000.0000 |  7000.0000 | 143.93 MB |        1.00 |
+|                                                |      |            |       |            |            |            |           |             |
+|                                          **Gedaq** |   **20** |   **792.5 ms** |  **0.58** | **35000.0000** | **34000.0000** | **13000.0000** | **238.25 MB** |        **0.83** |
+| &#39;Dapper.Query&lt;Person, Identification, Person&gt;&#39; |   20 | 1,372.9 ms |  1.00 | 43000.0000 | 42000.0000 | 16000.0000 | 287.85 MB |        1.00 |
+|                                                |      |            |       |            |            |            |           |             |
+|                                          **Gedaq** |   **30** | **1,221.7 ms** |  **0.58** | **54000.0000** | **53000.0000** | **20000.0000** | **357.36 MB** |        **0.83** |
+| &#39;Dapper.Query&lt;Person, Identification, Person&gt;&#39; |   30 | 2,097.7 ms |  1.00 | 66000.0000 | 65000.0000 | 24000.0000 | 431.78 MB |        1.00 |
