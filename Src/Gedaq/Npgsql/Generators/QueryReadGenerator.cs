@@ -37,14 +37,14 @@ namespace Gedaq.Npgsql.Generators
             if(source.MethodType.HasFlag(MethodType.Sync))
             {
                 ReadMethod(source);
-                CommandMethods(source);
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
                 ReadAsyncMethod(source);
-                CommandAsyncMethods(source);
             }
+
+            CommandMethods(source);
 
             End();
         }
@@ -121,28 +121,33 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
         private void CommandMethods(QueryReadNpgsql source)
         {
-            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync);
+                if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+                {
+                    CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync);
+                }
+
+                if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+                {
+                    CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
+                }
             }
 
-            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            if (source.MethodType.HasFlag(MethodType.Async))
             {
-                CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
-            }
-        }
+                if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+                {
+                    CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async);
+                }
 
-        private void CommandAsyncMethods(QueryReadNpgsql source)
-        {
-            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
-            {
-                CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async);
+                if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+                {
+                    CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
+                }
             }
 
-            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
-            {
-                CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
-            }
+            SetParametrsMethod(source);
         }
 
         private void StartReadMethod(
@@ -464,6 +469,65 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
             _methodCode.Append($@"
             return command;
+        }}
+");
+
+        }
+
+        private void SetParametrsMethod(
+            QueryReadNpgsql source
+            )
+        {
+            if(!source.HaveParametrTypes())
+            {
+                return;
+            }
+
+            _methodCode.Append($@"
+        public static  void Set{source.MethodName}Parametrs(
+            this NpgsqlCommand command
+");
+            for (int i = 0; i < source.ParametrTypes.Length; i++)
+            {
+                ITypeSymbol type = source.ParametrTypes[i];
+                if (source.HaveParametrNames())
+                {
+                    string name = source.ParametrNames[i].ToLowerInvariant();
+                    _methodCode.Append($@",
+            in {type.GetFullTypeName()} {name}
+");
+                }
+                else
+                {
+                    _methodCode.Append($@",
+            in {type.GetFullTypeName()} mParametr{i}
+");
+                }
+            }
+
+            _methodCode.Append($@"
+        )
+        {{
+");
+            for (int i = 0; i < source.ParametrTypes.Length; i++)
+            {
+                if (source.HaveParametrNames())
+                {
+                    string name = source.ParametrNames[i].ToLowerInvariant();
+                    _methodCode.Append($@"
+            ((NpgsqlParameter<{source.ParametrTypes[i].GetFullTypeName()}>)command.Parameters[{i}]).TypedValue = {name};
+");
+                }
+                else
+                {
+                    _methodCode.Append($@"
+            ((NpgsqlParameter<{source.ParametrTypes[i].GetFullTypeName()}>)command.Parameters[{i}]).TypedValue = mParametr{i};
+");
+                }
+
+            }
+
+            _methodCode.Append($@"
         }}
 ");
 
