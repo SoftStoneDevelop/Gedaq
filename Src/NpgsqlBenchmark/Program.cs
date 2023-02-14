@@ -1,18 +1,14 @@
 ﻿using BenchmarkDotNet.Running;
 using Gedaq.Npgsql.Enums;
 using Gedaq.Provider.Enums;
-using Microsoft.Diagnostics.Tracing.Parsers.AspNet;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
 using NpgsqlBenchmark.Benchmarks;
 using NpgsqlBenchmark.Model;
+using NpgsqlTypes;
 using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Common;
 using System.IO;
 using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace NpgsqlBenchmark
@@ -21,6 +17,7 @@ namespace NpgsqlBenchmark
     {
         static void Main(string[] args)
         {
+            GetData();
             TestQuery();
             BenchmarkRunner.Run<Read>();
             BenchmarkRunner.Run<ReadAsync>();
@@ -71,15 +68,17 @@ SELECT
     p.firstname,
     p.middlename,
     p.lastname
-FROM person p1
-WHERE p.id > $1
+FROM person p
+WHERE p.id > @id
 ORDER BY p.id ASC
 ",
             typeof(Person),
             MethodType.Sync | MethodType.Async,
             SourceType.Connection,
             "GetData",
-            parametrTypes: new Type[] { typeof(int) }
+            parametrNames: new string[] {"id"},
+            parametrTypes: new Type[] { typeof(int) },
+            parametrDbTypes: new NpgsqlDbType[] { NpgsqlDbType.Integer}
             )]
         private static async Task GetData()
         {
@@ -90,7 +89,8 @@ ORDER BY p.id ASC
             ;
 
             using var connection = new NpgsqlConnection(root.GetConnectionString("SqlConnection"));
-            var data = await connection.GetDataAsync(13).ToListAsync();
+            var data = connection.GetData(13).ToList();
+            var dataAsync = await connection.GetDataAsync(13).ToListAsync();
         }
 
         private static void FillTestDatabase()
