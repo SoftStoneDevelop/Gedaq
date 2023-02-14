@@ -14,7 +14,7 @@
 Generator of methods for obtaining data from databases.
 Supported databases:<br>
 - [Npgsql](https://github.com/SoftStoneDevelop/Gedaq.Npgsql)<br>
-- [DbProvider In plans](). Only the methods available in DbProvider do not use database-specific features and methods and optimizations.
+- [DbConnection](). In plans. Only the methods available in DbConnection do not use database-specific features and methods and optimizations.
 
 Usage:
 
