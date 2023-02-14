@@ -17,8 +17,8 @@ namespace NpgsqlBenchmark
     {
         static void Main(string[] args)
         {
-            GetData();
-            TestQuery();
+            //GetData();
+            //TestQuery();
             BenchmarkRunner.Run<Read>();
             BenchmarkRunner.Run<ReadAsync>();
 
