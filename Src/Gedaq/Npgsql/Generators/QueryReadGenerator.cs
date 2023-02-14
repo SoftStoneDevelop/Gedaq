@@ -225,10 +225,10 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
             {
                 _methodCode.Append($@"
-            bool needClose = {source.SourceType.ToParametrName()}.State == ConnectionState.Closed;
+            bool needClose = {sourceType.ToParametrName()}.State == ConnectionState.Closed;
             if(needClose)
             {{
-                {source.SourceType.ToParametrName()}.Open();
+                {sourceType.ToParametrName()}.Open();
             }}
 ");
             }
@@ -238,7 +238,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             NpgsqlDataReader reader = null;
             try
             {{
-                command = {source.SourceType.ToParametrName()}.CreateCommand();
+                command = {sourceType.ToParametrName()}.CreateCommand();
                 if(timeout != null)
                 {{
                     command.CommandTimeout = (int)timeout;
@@ -300,10 +300,10 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
             {
                 _methodCode.Append($@"
-            bool needClose = {source.SourceType.ToParametrName()}.State == ConnectionState.Closed;
+            bool needClose = {sourceType.ToParametrName()}.State == ConnectionState.Closed;
             if(needClose)
             {{
-                await {source.SourceType.ToParametrName()}.OpenAsync(cancellationToken).ConfigureAwait(false);
+                await {sourceType.ToParametrName()}.OpenAsync(cancellationToken).ConfigureAwait(false);
             }}
 ");
             }
@@ -313,7 +313,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             NpgsqlDataReader reader = null;
             try
             {{
-                command = {source.SourceType.ToParametrName()}.CreateCommand();
+                command = {sourceType.ToParametrName()}.CreateCommand();
                 if(timeout != null)
                 {{
                     command.CommandTimeout = (int)timeout;
@@ -401,7 +401,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             int? timeout = null
         )
         {{
-            var command = {source.SourceType.ToParametrName()}.CreateCommand();
+            var command = {sourceType.ToParametrName()}.CreateCommand();
             if(timeout != null)
             {{
                 command.CommandTimeout = (int)timeout;
