@@ -4,9 +4,10 @@ using System.Text;
 
 namespace Gedaq.Npgsql.Enums
 {
+    [Flags]
     internal enum NpgsqlSourceType
     {
-        NpgsqlConnection = 0,
-        NpgsqlDataSource = 1
+        NpgsqlConnection = 1,
+        NpgsqlDataSource = 2
     }
 }

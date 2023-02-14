@@ -28,7 +28,7 @@ LEFT JOIN identification i ON i.id = p.identification_id
             typeof(Person),
             MethodType.Sync,
             SourceType.Connection,
-            "GetAllPersonInner"
+            "ReadInnerMap"
             )]
     [MemoryDiagnoser]
     [SimpleJob(RuntimeMoniker.Net70)]
@@ -64,7 +64,7 @@ LEFT JOIN identification i ON i.id = p.identification_id
         {
             for (int i = 0; i < Size; i++)
             {
-                var persons = _connection.GetAllPersonInner().ToList();
+                var persons = _connection.ReadInnerMap().ToList();
             }
         }
 

@@ -24,7 +24,7 @@ FROM person p1
             typeof(Person),
             MethodType.Async,
             SourceType.Connection,
-            "GetAllPerson"
+            "ReadAsync"
             )]
     [MemoryDiagnoser]
     [SimpleJob(RuntimeMoniker.Net70)]
@@ -60,7 +60,7 @@ FROM person p1
         {
             for (int i = 0; i < Size; i++)
             {
-                var persons = await _connection.GetAllPersonAsync().ToListAsync();
+                var persons = await _connection.ReadAsyncAsync().ToListAsync();
             }
         }
 

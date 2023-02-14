@@ -72,17 +72,8 @@ namespace Gedaq.Npgsql
                     query.Aliases = _queryParser.Parse(ref query.Query);
                 }
 
-                if (queryRead.MethodType.HasFlag(MethodType.Sync))
-                {
-                    queryReadBatchGenerator.GenerateMethod(queryRead);
-                    context.AddSource($"{queryRead.MethodName}{queryRead.SourceType.ToString()}.g.cs", queryReadBatchGenerator.GetCode());
-                }
-
-                if (queryRead.MethodType.HasFlag(MethodType.Async))
-                {
-                    queryReadBatchGenerator.GenerateMethod(queryRead);
-                    context.AddSource($"{queryRead.MethodName}{queryRead.SourceType.ToString()}Async.g.cs", queryReadBatchGenerator.GetCode());
-                }
+                queryReadBatchGenerator.GenerateMethod(queryRead);
+                context.AddSource($"{queryRead.MethodName}Class.g.cs", queryReadBatchGenerator.GetCode());
             }
             _readBatchToTypeSources.Clear();
 
@@ -90,18 +81,8 @@ namespace Gedaq.Npgsql
             foreach (var queryRead in _readToTypeSources)
             {
                 queryRead.Aliases = _queryParser.Parse(ref queryRead.Query);
-
-                if(queryRead.MethodType.HasFlag(MethodType.Sync))
-                {
-                    queryReadGenerator.GenerateMethod(queryRead);
-                    context.AddSource($"{queryRead.MethodName}{queryRead.SourceType.ToString()}.g.cs", queryReadGenerator.GetCode());
-                }
-
-                if (queryRead.MethodType.HasFlag(MethodType.Async))
-                {
-                    queryReadGenerator.GenerateAsyncMethod(queryRead);
-                    context.AddSource($"{queryRead.MethodName}{queryRead.SourceType.ToString()}Async.g.cs", queryReadGenerator.GetCode());
-                }
+                queryReadGenerator.GenerateMethod(queryRead);
+                context.AddSource($"{queryRead.MethodName}Class.g.cs", queryReadGenerator.GetCode());
             }
             _readToTypeSources.Clear();
         }

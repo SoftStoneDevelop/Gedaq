@@ -23,7 +23,7 @@ FROM person p1
             typeof(Person),
             MethodType.Sync,
             SourceType.Connection,
-            "GetAllPerson"
+            "Read"
             )]
     [MemoryDiagnoser]
     [SimpleJob(RuntimeMoniker.Net70)]
@@ -59,7 +59,7 @@ FROM person p1
         {
             for (int i = 0; i < Size; i++)
             {
-                var persons = _connection.GetAllPerson().ToList();
+                var persons = _connection.Read().ToList();
             }
         }
 

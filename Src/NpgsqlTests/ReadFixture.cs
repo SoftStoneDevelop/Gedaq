@@ -197,7 +197,7 @@ FROM readfixtureperson r
 LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
 ",
             typeof(ReadFixtureModel),
-            Gedaq.Provider.Enums.MethodType.Sync,
+            Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
             "ToClass"
             )]
@@ -245,7 +245,7 @@ FROM readfixtureperson r
 LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
 ",
             typeof(object[]),
-            Gedaq.Provider.Enums.MethodType.Sync,
+            Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
             "ToObjArr"
             )]
@@ -290,7 +290,7 @@ FROM readfixtureperson r
 LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
 ",
             typeof(object),
-            Gedaq.Provider.Enums.MethodType.Sync,
+            Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
             "ToObj"
             )]
@@ -326,25 +326,6 @@ LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
         #region Async
 
         [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    r.id,
-    r.firstname,
-~StartInner::Identification:id~
-    i.id,
-    i.typename,
-~EndInner::Identification~
-    r.middlename,
-    r.lastname
-FROM readfixtureperson r
-LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
-",
-            typeof(ReadFixtureModel),
-            Gedaq.Provider.Enums.MethodType.Async,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToClass"
-            )]
         public async Task ReadToClassConnectionAsync()
         {
             var list = await _dataSource.OpenConnection().ToClassAsync().ToListAsync();
@@ -369,25 +350,6 @@ LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
         }
 
         [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    r.id,
-    r.firstname,
-~StartInner::Identification:id~
-    i.id,
-    i.typename,
-~EndInner::Identification~
-    r.middlename,
-    r.lastname
-FROM readfixtureperson r
-LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
-",
-            typeof(object[]),
-            Gedaq.Provider.Enums.MethodType.Async,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToObjArr"
-            )]
         public async Task ReadToObjArrConnectionAsync()
         {
             var list = await _dataSource.OpenConnection().ToObjArrAsync().ToListAsync();
@@ -416,23 +378,6 @@ LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
         }
 
         [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
-            @"
-SELECT 
-    (r.id,
-    r.firstname,
-    i.id,
-    i.typename,
-    r.middlename,
-    r.lastname) row
-FROM readfixtureperson r
-LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
-",
-            typeof(object),
-            Gedaq.Provider.Enums.MethodType.Async,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToObj"
-            )]
         public async Task ReadToObjConnectionAsync()
         {
             var list = await _dataSource.OpenConnection().ToObjAsync().ToListAsync();

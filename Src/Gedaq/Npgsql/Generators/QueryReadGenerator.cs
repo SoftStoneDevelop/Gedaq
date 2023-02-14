@@ -33,19 +33,17 @@ namespace Gedaq.Npgsql.Generators
         {
             Reset();
             Start(source);
-            StartMethodParametrs(source);
-            EndMethodParametrs(source);
-            SyncBody(source);
-            End();
-        }
 
-        public void GenerateAsyncMethod(QueryReadNpgsql source)
-        {
-            Reset();
-            AsyncStart(source);
-            StartMethodParametrs(source);
-            AsyncEndMethodParametrs(source);
-            AsyncBody(source);
+            if(source.MethodType.HasFlag(MethodType.Sync))
+            {
+                ReadMethod(source);
+            }
+
+            if (source.MethodType.HasFlag(MethodType.Async))
+            {
+                ReadAsyncMethod(source);
+            }
+
             End();
         }
 
@@ -58,52 +56,90 @@ using Npgsql;
 using System.Data;
 using System.Collections;
 using System.Collections.Generic;
-
-namespace {source.ContainTypeName.ContainingNamespace}
-{{
-    public static class {source.MethodName}ClassFrom{source.SourceType.ToString()}
-    {{
-        
-        public static IEnumerable<{source.MapTypeName.GetFullTypeName()}> {source.MethodName}(
-");
-        }
-
-        private void AsyncStart(
-            QueryReadNpgsql source
-            )
-        {
-            _methodCode.Append($@"
-using Npgsql;
-using System.Data;
-using System.Collections;
-using System.Collections.Generic;
 using System.Threading;
 
 namespace {source.ContainTypeName.ContainingNamespace}
 {{
-    public static class {source.MethodName}ClassFrom{source.SourceType.ToString()}Async
+    public static class {source.MethodName}Class
     {{
-        
-        public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName()}> {source.MethodName}Async(
 ");
         }
 
-        private void End(
-            )
+        private void End()
         {
             _methodCode.Append($@"
-        }}
     }}
 }}
 ");
         }
 
-        private void StartMethodParametrs(
+        private void ReadMethod(QueryReadNpgsql source)
+        {
+            if(source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            {
+                StartReadMethod(source);
+                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
+                EndMethodParametrs();
+                SyncBody(source, Enums.NpgsqlSourceType.NpgsqlConnection);
+                EndMethod();
+            }
+
+            if(source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            {
+                StartReadMethod(source);
+                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
+                EndMethodParametrs();
+                SyncBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
+                EndMethod();
+            }
+        }
+
+        private void ReadAsyncMethod(QueryReadNpgsql source)
+        {
+            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            {
+                StartReadAsyncMethod(source);
+                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
+                AsyncEndMethodParametrs();
+                AsyncBody(source, Enums.NpgsqlSourceType.NpgsqlConnection);
+                EndMethod();
+            }
+
+            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            {
+                StartReadAsyncMethod(source);
+                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
+                AsyncEndMethodParametrs();
+                AsyncBody(source, Enums.NpgsqlSourceType.NpgsqlConnection);
+                EndMethod();
+            }
+        }
+
+        private void StartReadMethod(
             QueryReadNpgsql source
             )
         {
+            _methodCode.Append($@"        
+        public static IEnumerable<{source.MapTypeName.GetFullTypeName()}> {source.MethodName}(
+");
+        }
+
+        private void StartReadAsyncMethod(
+            QueryReadNpgsql source
+            )
+        {
+            _methodCode.Append($@"        
+        public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName()}> {source.MethodName}Async(
+");
+        }
+
+        private void StartMethodParametrs(
+            QueryReadNpgsql source,
+            NpgsqlSourceType sourceType
+            )
+        {
             _methodCode.Append($@"
-            this {source.SourceType.ToTypeName()} {source.SourceType.ToParametrName()},
+            this {sourceType.ToTypeName()} {sourceType.ToParametrName()},
 ");
             if(source.HaveParametrTypes())
             {
@@ -131,9 +167,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
         }
 
-        private void EndMethodParametrs(
-            QueryReadNpgsql source
-            )
+        private void EndMethodParametrs()
         {
             _methodCode.Append($@"
         )
@@ -141,9 +175,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
         }
 
-        private void AsyncEndMethodParametrs(
-            QueryReadNpgsql source
-            )
+        private void AsyncEndMethodParametrs()
         {
             _methodCode.Append($@",
             CancellationToken cancellationToken = default
@@ -152,11 +184,25 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
         }
 
+
+        #region CreateCommand
+
+        private void CreateCommandMethod(QueryReadNpgsql source)
+        {
+            _methodCode.Append($@",
+    public NpgsqlCommand Create{source.MethodName}Command({source.SourceType.ToTypeName()} {source.SourceType.ToParametrName()})
+    {{
+");
+        }
+
+        #endregion
+
         private void SyncBody(
-            QueryReadNpgsql source
+            QueryReadNpgsql source,
+            Enums.NpgsqlSourceType sourceType
             )
         {
-            if (source.SourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
+            if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
             {
                 _methodCode.Append($@"
             bool needClose = {source.SourceType.ToParametrName()}.State == ConnectionState.Closed;
@@ -210,7 +256,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     reader.Dispose();
                 }}
 ");
-            if (source.SourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
+            if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
             {
                 _methodCode.Append($@"
                 if (needClose)
@@ -223,6 +269,91 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 command?.Parameters.Clear();
                 command?.Dispose();
             }}
+");
+        }
+
+        private void AsyncBody(
+            QueryReadNpgsql source,
+            Enums.NpgsqlSourceType sourceType
+            )
+        {
+            if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
+            {
+                _methodCode.Append($@"
+            bool needClose = {source.SourceType.ToParametrName()}.State == ConnectionState.Closed;
+            if(needClose)
+            {{
+                await {source.SourceType.ToParametrName()}.OpenAsync(cancellationToken).ConfigureAwait(false);
+            }}
+");
+            }
+
+            _methodCode.Append($@"
+            NpgsqlCommand command = null;
+            NpgsqlDataReader reader = null;
+            try
+            {{
+                command = {source.SourceType.ToParametrName()}.CreateCommand();
+                if(timeout != null)
+                {{
+                    command.CommandTimeout = (int)timeout;
+                }}
+                command.CommandText = @""
+{source.Query}
+"";
+");
+            SetCommandParametrs(source);
+            _methodCode.Append($@"
+                reader = await command.ExecuteReaderAsync(cancellationToken).ConfigureAwait(false);
+                while (await reader.ReadAsync(cancellationToken).ConfigureAwait(false))
+                {{
+");
+            YieldItem(source);
+            _methodCode.Append($@"
+                }}
+
+                await reader.DisposeAsync().ConfigureAwait(false);
+                reader = null;
+            }}
+            finally
+            {{
+                if (reader != null)
+                {{
+                    if (!reader.IsClosed)
+                    {{
+                        try 
+                        {{
+                            command.Cancel();
+                        }}
+                        catch {{ /* ignore */ }}
+                    }}
+                
+                    await reader.DisposeAsync().ConfigureAwait(false);
+                }}
+");
+            if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
+            {
+                _methodCode.Append($@"
+                if (needClose)
+                {{
+                    await connection.CloseAsync().ConfigureAwait(false);
+                }}
+");
+            }
+            _methodCode.Append($@"
+                if(command != null)
+                {{
+                    command.Parameters.Clear();
+                    await command.DisposeAsync().ConfigureAwait(false);
+                }}
+            }}
+");
+        }
+
+        private void EndMethod()
+        {
+            _methodCode.Append($@"
+        }}
 ");
         }
 
@@ -415,83 +546,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
         private string Tabs(int tabs)
         {
             return new string(' ', tabs * 4);
-        }
-
-        private void AsyncBody(
-            QueryReadNpgsql source
-            )
-        {
-            if (source.SourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
-            {
-                _methodCode.Append($@"
-            bool needClose = {source.SourceType.ToParametrName()}.State == ConnectionState.Closed;
-            if(needClose)
-            {{
-                await {source.SourceType.ToParametrName()}.OpenAsync(cancellationToken).ConfigureAwait(false);
-            }}
-");
-            }
-
-            _methodCode.Append($@"
-            NpgsqlCommand command = null;
-            NpgsqlDataReader reader = null;
-            try
-            {{
-                command = {source.SourceType.ToParametrName()}.CreateCommand();
-                if(timeout != null)
-                {{
-                    command.CommandTimeout = (int)timeout;
-                }}
-                command.CommandText = @""
-{source.Query}
-"";
-");
-            SetCommandParametrs(source);
-            _methodCode.Append($@"
-                reader = await command.ExecuteReaderAsync(cancellationToken).ConfigureAwait(false);
-                while (await reader.ReadAsync(cancellationToken).ConfigureAwait(false))
-                {{
-");
-            YieldItem(source);
-            _methodCode.Append($@"
-                }}
-
-                await reader.DisposeAsync().ConfigureAwait(false);
-                reader = null;
-            }}
-            finally
-            {{
-                if (reader != null)
-                {{
-                    if (!reader.IsClosed)
-                    {{
-                        try 
-                        {{
-                            command.Cancel();
-                        }}
-                        catch {{ /* ignore */ }}
-                    }}
-                
-                    await reader.DisposeAsync().ConfigureAwait(false);
-                }}
-");
-            if (source.SourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
-            {
-                _methodCode.Append($@"
-                if (needClose)
-                {{
-                    await connection.CloseAsync().ConfigureAwait(false);
-                }}
-");
-            }
-            _methodCode.Append($@"
-                if(command != null)
-                {{
-                    command.Parameters.Clear();
-                    await command.DisposeAsync();
-                }}
-            }}
-");
         }
     }
 }
