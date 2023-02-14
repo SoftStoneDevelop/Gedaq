@@ -7,9 +7,13 @@ using Npgsql;
 using NpgsqlBenchmark.Benchmarks;
 using NpgsqlBenchmark.Model;
 using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Data.Common;
 using System.IO;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace NpgsqlBenchmark
 {
@@ -72,12 +76,12 @@ WHERE p.id > $1
 ORDER BY p.id ASC
 ",
             typeof(Person),
-            MethodType.Sync,
+            MethodType.Sync | MethodType.Async,
             SourceType.Connection,
             "GetData",
             parametrTypes: new Type[] { typeof(int) }
             )]
-        private static void GetData()
+        private static async Task GetData()
         {
             var root = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
@@ -86,7 +90,7 @@ ORDER BY p.id ASC
             ;
 
             using var connection = new NpgsqlConnection(root.GetConnectionString("SqlConnection"));
-            var data = connection.GetData(13).ToList();
+            var data = await connection.GetDataAsync(13).ToListAsync();
         }
 
         private static void FillTestDatabase()

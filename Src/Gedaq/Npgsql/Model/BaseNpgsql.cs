@@ -13,5 +13,6 @@ namespace Gedaq.Npgsql.Model
         public NpgsqlSourceType SourceType;
         public MethodType MethodType;
         public INamedTypeSymbol ContainTypeName;
+        public int? Timeout;
     }
 }

@@ -33,7 +33,8 @@ namespace Gedaq.Npgsql.Generators
         {
             Reset();
             Start(source);
-            MethodParametrs(source);
+            StartMethodParametrs(source);
+            EndMethodParametrs(source);
             SyncBody(source);
             End();
         }
@@ -42,7 +43,8 @@ namespace Gedaq.Npgsql.Generators
         {
             Reset();
             AsyncStart(source);
-            MethodParametrs(source);
+            StartMethodParametrs(source);
+            AsyncEndMethodParametrs(source);
             AsyncBody(source);
             End();
         }
@@ -75,6 +77,7 @@ using Npgsql;
 using System.Data;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace {source.ContainTypeName.ContainingNamespace}
 {{
@@ -95,12 +98,12 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
         }
 
-        private void MethodParametrs(
+        private void StartMethodParametrs(
             QueryReadNpgsql source
             )
         {
             _methodCode.Append($@"
-            this {source.SourceType.ToTypeName()} {source.SourceType.ToParametrName()}
+            this {source.SourceType.ToTypeName()} {source.SourceType.ToParametrName()},
 ");
             if(source.HaveParametrTypes())
             {
@@ -111,20 +114,39 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     {
                         string name = source.ParametrNames[i].ToLowerInvariant();
                         _methodCode.Append($@"
-            ,
-            {type.GetFullTypeName()} {name}
+            {type.GetFullTypeName()} {name},
 ");
                     }
                     else
                     {
                         _methodCode.Append($@"
-            ,
-            {type.GetFullTypeName()} mParametr{i}
+            {type.GetFullTypeName()} mParametr{i},
 ");
                     }
                 }
             }
+
             _methodCode.Append($@"
+            int? timeout = null
+");
+        }
+
+        private void EndMethodParametrs(
+            QueryReadNpgsql source
+            )
+        {
+            _methodCode.Append($@"
+        )
+        {{
+");
+        }
+
+        private void AsyncEndMethodParametrs(
+            QueryReadNpgsql source
+            )
+        {
+            _methodCode.Append($@",
+            CancellationToken cancellationToken = default
         )
         {{
 ");
@@ -151,6 +173,10 @@ namespace {source.ContainTypeName.ContainingNamespace}
             try
             {{
                 command = {source.SourceType.ToParametrName()}.CreateCommand();
+                if(timeout != null)
+                {{
+                    command.CommandTimeout = (int)timeout;
+                }}
                 command.CommandText = @""
 {source.Query}
 "";
@@ -401,7 +427,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             bool needClose = {source.SourceType.ToParametrName()}.State == ConnectionState.Closed;
             if(needClose)
             {{
-                await {source.SourceType.ToParametrName()}.OpenAsync().ConfigureAwait(false);
+                await {source.SourceType.ToParametrName()}.OpenAsync(cancellationToken).ConfigureAwait(false);
             }}
 ");
             }
@@ -412,23 +438,22 @@ namespace {source.ContainTypeName.ContainingNamespace}
             try
             {{
                 command = {source.SourceType.ToParametrName()}.CreateCommand();
+                if(timeout != null)
+                {{
+                    command.CommandTimeout = (int)timeout;
+                }}
                 command.CommandText = @""
 {source.Query}
 "";
 ");
             SetCommandParametrs(source);
             _methodCode.Append($@"
-                reader = await command.ExecuteReaderAsync().ConfigureAwait(false);
-                while (await reader.ReadAsync().ConfigureAwait(false))
+                reader = await command.ExecuteReaderAsync(cancellationToken).ConfigureAwait(false);
+                while (await reader.ReadAsync(cancellationToken).ConfigureAwait(false))
                 {{
 ");
             YieldItem(source);
             _methodCode.Append($@"
-                }}
-
-                while (await reader.NextResultAsync().ConfigureAwait(false)) 
-                {{
-                    //ignore
                 }}
 
                 await reader.DisposeAsync().ConfigureAwait(false);
