@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.CodeAnalysis;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Gedaq.Npgsql.Model
@@ -16,7 +17,7 @@ namespace Gedaq.Npgsql.Model
                 .OrderBy(or => or.BatchNumber)
                 .Select(sel =>
                 {
-                    AllSameTypes &= sel.MapTypeName == first.MapTypeName;
+                    AllSameTypes &= SymbolEqualityComparer.Default.Equals(sel.MapTypeName, first.MapTypeName);
                     HaveParametrs |= sel.HaveParametrs();
                     SourceType |= sel.SourceType;
                     MethodType |= sel.MethodType;

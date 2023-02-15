@@ -3,7 +3,6 @@ using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
-using Gedaq.Provider.Enums;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
