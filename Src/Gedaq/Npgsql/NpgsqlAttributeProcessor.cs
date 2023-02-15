@@ -11,7 +11,8 @@ namespace Gedaq.Npgsql
 {
     internal class NpgsqlAttributeProcessor
     {
-        private List<QueryReadNpgsql> _readToTypeSources = new List<QueryReadNpgsql>();
+        private List<QueryReadNpgsql> _read = new List<QueryReadNpgsql>();
+        private List<QueryBatchReadNpgsql> _readBatch = new List<QueryBatchReadNpgsql>();
         Dictionary<string, List<QueryReadNpgsql>> _readTemp = new Dictionary<string,List<QueryReadNpgsql>>();
         Dictionary<string, List<Parametr>> _parametrsTemp = new Dictionary<string, List<Parametr>>();
 
@@ -54,6 +55,7 @@ namespace Gedaq.Npgsql
 
         private void FillReadMethods()
         {
+            var batchReads = new Dictionary<string, List<QueryReadNpgsql>>();
             var set = new HashSet<int>();
             foreach (var read in _readTemp.Values)
             {
@@ -100,11 +102,22 @@ namespace Gedaq.Npgsql
                     }
                 }
 
-                _readToTypeSources.Add(readSingle);
+                _read.Add(readSingle);
+                if(readSingle.HaveBatch)
+                {
+                    if(!batchReads.TryGetValue(readSingle.BatchMethodName, out var batchList))
+                    {
+                        batchList = new List<QueryReadNpgsql>();
+                    }
+
+                    batchList.Add(readSingle);
+                }
             }
 
-            _readTemp.Clear();
-            _parametrsTemp.Clear();
+            foreach (var item in batchReads)
+            {
+                _readBatch.Add(new QueryBatchReadNpgsql(item.Value));
+            }
         }
 
         private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
@@ -141,14 +154,22 @@ namespace Gedaq.Npgsql
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)
         {
-            var queryReadGenerator = new QueryReadGenerator();
-            foreach (var queryRead in _readToTypeSources)
+            var readGenerator = new QueryReadGenerator();
+            foreach (var queryRead in _read)
             {
                 queryRead.Aliases = _queryParser.Parse(ref queryRead.Query);
-                queryReadGenerator.GenerateMethod(queryRead);
-                context.AddSource($"{queryRead.MethodName}Class.g.cs", queryReadGenerator.GetCode());
+                readGenerator.GenerateMethod(queryRead);
+                context.AddSource($"{queryRead.MethodName}Class.g.cs", readGenerator.GetCode());
             }
-            _readToTypeSources.Clear();
+            _read.Clear();
+
+            var batchReadGenerator = new QueryBatchReadGenerator();
+            foreach (var batchRead in _readBatch)
+            {
+                batchReadGenerator.GenerateMethod(batchRead);
+                context.AddSource($"{batchRead.MethodName}Class.g.cs", batchReadGenerator.GetCode());
+            }
+            _readBatch.Clear();
         }
     }
 }

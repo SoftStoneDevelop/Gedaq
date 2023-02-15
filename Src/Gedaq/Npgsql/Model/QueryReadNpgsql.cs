@@ -1,4 +1,5 @@
-﻿using Gedaq.Enums;
+﻿using Gedaq.Common.Enums;
+using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Gedaq.Provider.Enums;
@@ -12,38 +13,19 @@ using System.Text;
 
 namespace Gedaq.Npgsql.Model
 {
-    internal class QueryBatchReadNpgsql : BaseNpgsql
-    {
-        public QueryBatchReadNpgsql(List<QueryReadNpgsql> queries)
-        {
-            var first = Queries.First();
-            AllSameTypes = true;
-            HaveParametrs = false;
-
-            Queries = queries
-                .OrderBy(or => or.NumberInBatch)
-                .Select(sel => 
-                {
-                    AllSameTypes &= sel.MapTypeName == first.MapTypeName;
-                    HaveParametrs |= sel.HaveParametrs();
-
-                    return sel;
-                })
-                .ToList();
-        }
-
-        public List<QueryReadNpgsql> Queries { get; private set; }
-        public bool AllSameTypes { get; private set; }
-        public bool HaveParametrs { get; private set; }
-    }
-
     internal class QueryReadNpgsql : BaseNpgsql
     {
         public ITypeSymbol MapTypeName;
         public Aliases Aliases;
         public Parametr[] Parametrs;
-        public int NumberInBatch;
         public string Query;
+
+        public string BatchMethodName;
+        public int BatchNumber;
+        public bool HaveBatch => BatchMethodName != null;
+        public bool HaveBatchNumber => BatchNumber != -1;
+
+        public GenerateType GenerateType;
 
         public QueryReadNpgsql()
         {
@@ -88,8 +70,59 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
+            if (!FillGenerateType(namedArguments[5], methodSource))
+            {
+                return false;
+            }
+
+            if (!FillBatchMethodName(namedArguments[6], methodSource))
+            {
+                return false;
+            }
+
+            if (!FillBatchNumber(namedArguments[7], methodSource))
+            {
+                return false;
+            }
+
+            if(methodSource.HaveBatch && !methodSource.HaveBatchNumber || !methodSource.HaveBatch && methodSource.HaveBatchNumber)
+            {
+                throw new Exception("Batch number and name are filled in pairs");
+            }
+
+            if(methodSource.GenerateType.HasFlag(GenerateType.Batch) && !methodSource.HaveBatch)
+            {
+                throw new Exception("Can't generate a batch without a batch name");
+            }
+
             methodSource.ContainTypeName = containsType;
             method = methodSource;
+            return true;
+        }
+
+        private static bool FillBatchNumber(TypedConstant argument, QueryReadNpgsql methodSource)
+        {
+            if (!(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
+                namedTypeSymbol.Name != nameof(Int32)
+                )
+            {
+                return false;
+            }
+
+            methodSource.BatchNumber = (int)argument.Value;
+            return true;
+        }
+
+        private static bool FillBatchMethodName(TypedConstant argument, QueryReadNpgsql methodSource)
+        {
+            if (!(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
+                namedTypeSymbol.Name != nameof(String)
+                )
+            {
+                return false;
+            }
+
+            methodSource.BatchMethodName = (string)argument.Value;
             return true;
         }
 
@@ -97,13 +130,13 @@ namespace Gedaq.Npgsql.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
-                !namedTypeSymbol.IsAssignableFrom("Gedaq.Npgsql.Enums", "GenerateType")
+                !namedTypeSymbol.IsAssignableFrom("Gedaq.Common.Enums", "GenerateType")
                 )
             {
                 return false;
             }
 
-            //methodSource.SourceType = (GenerateType)argument.Value;
+            methodSource.GenerateType = (GenerateType)argument.Value;
             return true;
         }
 
