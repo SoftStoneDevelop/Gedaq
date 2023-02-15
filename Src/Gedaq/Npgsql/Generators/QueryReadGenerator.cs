@@ -735,16 +735,13 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     if (pair.Aliases.InnerEntities.Count == 0)
                     {
                         var current = pair;
-                        var c = _methodCode.ToString();
                         while (current.Parent != null)
                         {
-                            c = _methodCode.ToString();
                             _methodCode.Append($@"
                         {Tabs(current.Tabs)}{current.Parent.ItemName}.{current.PropertyName} = {current.ItemName};
                     {Tabs(current.Tabs)}}}
 ");
                             current = current.Parent;
-                            c = _methodCode.ToString();
                         }
 
                         continue;
