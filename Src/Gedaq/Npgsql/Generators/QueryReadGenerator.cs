@@ -491,35 +491,35 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if (methodType == MethodType.Async)
             {
                 _methodCode.Append($@"
-                if(prepare)
+            if(prepare)
+            {{
+                try
                 {{
-                    try
-                    {{
-                        await command.PrepareAsync(cancellationToken).ConfigureAwait(false);
-                    }}
-                    catch
-                    {{  
-                        await command.DisposeAsync().ConfigureAwait(false);
-                        throw;
-                    }}
+                    await command.PrepareAsync(cancellationToken).ConfigureAwait(false);
                 }}
+                catch
+                {{  
+                    await command.DisposeAsync().ConfigureAwait(false);
+                    throw;
+                }}
+            }}
 ");
             }
             else
             {
                 _methodCode.Append($@"
-                if(prepare)
+            if(prepare)
+            {{
+                try
                 {{
-                    try
-                    {{
-                        command.Prepare();
-                    }}
-                    catch
-                    {{
-                        command.Dispose();
-                        throw;
-                    }}
+                    command.Prepare();
                 }}
+                catch
+                {{
+                    command.Dispose();
+                    throw;
+                }}
+            }}
 ");
             }
 

@@ -19,7 +19,7 @@ namespace Gedaq.Npgsql.Model
 
         public bool HaveName => Name != null;
         public bool HaveDbType => DbType != 40;
-        public bool HaveSize => DbType != -1;
+        public bool HaveSize => Size != -1;
 
         public bool HavePosition => Position != -1;
 
