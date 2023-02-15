@@ -64,9 +64,9 @@ WHERE p.id > $1
         typeof(Person),
         MethodType.Sync | MethodType.Async,
         SourceType.Connection,
-        "GetAllPerson",
-        parametrTypes: new Type[] { typeof(int) }
+        "GetAllPerson"
         )]
+[Parametr("GetAllPerson", parametrType: typeof(int), position: 1)]
 public class Person
 //...
 
