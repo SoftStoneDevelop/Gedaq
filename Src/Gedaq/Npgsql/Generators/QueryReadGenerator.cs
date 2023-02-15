@@ -430,6 +430,16 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 command.CommandTimeout = timeout.Value;
             }}
 ");
+            if(source.Timeout.HasValue)
+            {
+                _methodCode.Append($@"
+            else
+            {{
+                command.CommandTimeout = {source.Timeout};
+            }}
+");
+            }
+
             if (source.HaveParametrs())
             {
                 for (int i = 0; i < source.Parametrs.Length; i++)

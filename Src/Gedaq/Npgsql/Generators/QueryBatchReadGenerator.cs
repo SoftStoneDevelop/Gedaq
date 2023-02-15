@@ -207,7 +207,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     {
                         var parametr = item.Parametrs[i];
                         _methodCode.Append($@",
-            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{j}
+            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{item.BatchNumber}
 ");
                     }
                 }
@@ -275,7 +275,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             for (int j = 0; j < source.Queries.Count; j++)
             {
                 _methodCode.Append($@"
-                yield return reader.BatchItem{j}{(source.MethodType == MethodType.Async ? "Async(cancellationToken)" : "()")};
+                yield return reader.BatchItem{j}{(methodType == MethodType.Async ? "Async(cancellationToken)" : "()")};
                 {await}reader.NextResult{async};
 ");
             }
@@ -357,7 +357,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     {
                         var parametr = item.Parametrs[i];
                         _methodCode.Append($@"
-                    in {parametr.VariableName()}
+                    in {parametr.VariableName()}Batch{item.BatchNumber}
 ");
                         if (i != item.Parametrs.Length - 1)
                         {
@@ -376,7 +376,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             for (int j = 0; j < source.Queries.Count; j++)
             {
                 _methodCode.Append($@"
-                yield return reader.BatchItem{j}{(source.MethodType == MethodType.Async ? "Async(cancellationToken)" : "()")};
+                yield return reader.BatchItem{j}{(methodType == MethodType.Async ? "Async(cancellationToken)" : "()")};
                 {await}reader.NextResult{async};
 ");
             }
@@ -456,23 +456,32 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 batch.Timeout = timeout.Value;
             }}
 ");
+            if (source.Timeout.HasValue)
+            {
+                _methodCode.Append($@"
+            else
+            {{
+                batch.Timeout = {source.Timeout};
+            }}
+");
+            }
             for (int i = 0; i < source.Queries.Count; i++)
             {
                 var item = source.Queries[i];
                 if(i == 0)
                 {
-                    _methodCode.Append($@",
+                    _methodCode.Append($@"
             var command = batch.CreateBatchCommand();
 ");
                 }
                 else
                 {
-                    _methodCode.Append($@",
+                    _methodCode.Append($@"
             command = batch.CreateBatchCommand();
 ");
                 }
 
-                _methodCode.Append($@",
+                _methodCode.Append($@"
             command.CommandText = @""
 {item.Query}
 "";
@@ -541,6 +550,10 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }}
 ");
                 }
+
+                _methodCode.Append($@"
+            batch.BatchCommands.Add(command);
+");
             }
 
             if (methodType == MethodType.Async)
@@ -611,7 +624,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 {
                     var parametr = batchCommand.Parametrs[i];
                     _methodCode.Append($@",
-            in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{j}
+            in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{batchCommand.BatchNumber}
 ");
                 }
             }
@@ -646,9 +659,9 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     if (parametr.Type.IsNullableType())
                     {
                         _methodCode.Append($@"
-            if({parametr.VariableName()}Batch{j}.HasValue)
+            if({parametr.VariableName()}Batch{batchCommand.BatchNumber}.HasValue)
             {{
-                ((NpgsqlParameter)batchCommand.Parameters[{i}]).Value = {parametr.VariableName()}Batch{j}.Value;
+                ((NpgsqlParameter)batchCommand.Parameters[{i}]).Value = {parametr.VariableName()}Batch{batchCommand.BatchNumber}.Value;
             }}
             else
             {{
@@ -659,7 +672,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     else
                     {
                         _methodCode.Append($@"
-            ((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>)batchCommand.Parameters[{i}]).TypedValue = {parametr.VariableName()}Batch{j};
+            ((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>)batchCommand.Parameters[{i}]).TypedValue = {parametr.VariableName()}Batch{batchCommand.BatchNumber};
 ");
                     }
 

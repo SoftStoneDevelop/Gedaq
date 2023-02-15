@@ -13,12 +13,14 @@ namespace Gedaq.Npgsql
     {
         private List<QueryReadNpgsql> _read = new List<QueryReadNpgsql>();
         private List<QueryBatchReadNpgsql> _readBatch = new List<QueryBatchReadNpgsql>();
+
         Dictionary<string, List<QueryReadNpgsql>> _readTemp = new Dictionary<string,List<QueryReadNpgsql>>();
         Dictionary<string, List<Parametr>> _parametrsTemp = new Dictionary<string, List<Parametr>>();
+        Dictionary<string, List<QueryReadNpgsql>> _batchTemp = new Dictionary<string, List<QueryReadNpgsql>>();
 
         private QueryParser _queryParser = new QueryParser();
 
-        public bool Process(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
+        public bool ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
         {
             _readTemp.Clear();
             _parametrsTemp.Clear();
@@ -53,9 +55,17 @@ namespace Gedaq.Npgsql
             return false;
         }
 
+        public void CompleteProcessContainTypes()
+        {
+            foreach (var item in _batchTemp)
+            {
+                _readBatch.Add(new QueryBatchReadNpgsql(item.Value));
+            }
+            _batchTemp.Clear();
+        }
+
         private void FillReadMethods()
         {
-            var batchReads = new Dictionary<string, List<QueryReadNpgsql>>();
             var set = new HashSet<int>();
             foreach (var read in _readTemp.Values)
             {
@@ -105,18 +115,14 @@ namespace Gedaq.Npgsql
                 _read.Add(readSingle);
                 if(readSingle.HaveBatch)
                 {
-                    if(!batchReads.TryGetValue(readSingle.BatchMethodName, out var batchList))
+                    if(!_batchTemp.TryGetValue(readSingle.BatchMethodName, out var batchList))
                     {
                         batchList = new List<QueryReadNpgsql>();
+                        _batchTemp.Add(readSingle.BatchMethodName, batchList);
                     }
 
                     batchList.Add(readSingle);
                 }
-            }
-
-            foreach (var item in batchReads)
-            {
-                _readBatch.Add(new QueryBatchReadNpgsql(item.Value));
             }
         }
 

@@ -4,7 +4,6 @@ using Npgsql;
 using NpgsqlTests.Helpers;
 using NUnit.Framework;
 using System;
-using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -271,12 +270,15 @@ ORDER BY p.id ASC
             typeof(ReadFixtureModel),
             Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToClass"
+            "ToClass1",
+            Gedaq.Common.Enums.GenerateType.Single | Gedaq.Common.Enums.GenerateType.Batch,
+            "BatchReadToClass",
+            2
             )]
-        [Parametr("ToClass", parametrType: typeof(int), position: 1)]
+        [Parametr("ToClass1", parametrType: typeof(int), position: 1)]
         public void ReadToClass()
         {
-            var list = _dataSource.OpenConnection().ToClass(3).ToList();
+            var list = _dataSource.OpenConnection().ToClass1(3).ToList();
 
             Assert.That(list, Has.Count.EqualTo(9));
 
@@ -337,11 +339,42 @@ ORDER BY p.id ASC
         }
 
         [Test]
+        [QueryRead(
+            @"
+SELECT 
+    p.id,
+    p.firstname,
+~StartInner::Identification:id~
+    i.id,
+~StartInner::Country:id~
+    c.id,
+    c.name,
+~EndInner::Country~
+    i.typename,
+~EndInner::Identification~
+    p.middlename,
+    p.lastname
+FROM readfixtureperson p
+LEFT JOIN readfixtureidentification i ON i.id = p.readfixtureidentification_id
+LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
+WHERE p.id != $1 AND p.id != $2
+ORDER BY p.id ASC
+",
+            typeof(ReadFixtureModel),
+            Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
+            Gedaq.Npgsql.Enums.SourceType.Connection,
+            "ToClass2",
+            Gedaq.Common.Enums.GenerateType.Single | Gedaq.Common.Enums.GenerateType.Batch,
+            "BatchReadToClass",
+            1
+            )]
+        [Parametr("ToClass2", parametrType: typeof(int), position: 1)]
+        [Parametr("ToClass2", parametrType: typeof(int), position: 2)]
         public async Task ReadToClassAsync()
         {
-            var list = await _dataSource.OpenConnection().ToClassAsync(3).ToListAsync();
+            var list = await _dataSource.OpenConnection().ToClass2Async(3, 6).ToListAsync();
 
-            Assert.That(list, Has.Count.EqualTo(9));
+            Assert.That(list, Has.Count.EqualTo(8));
 
             Assert.Multiple(() =>
             {
@@ -397,16 +430,142 @@ ORDER BY p.id ASC
                 Assert.That(country.Id, Is.EqualTo(5));
                 Assert.That(country.Name, Is.EqualTo("Martian colony"));
             });
+        }
+
+        [Test]
+        public void BatchReadToClass()
+        {
+            var batchList = _dataSource.OpenConnection().BatchReadToClass(3, 6, 3).Select(sel => sel.ToList()).ToList();
+
+            var list = batchList[0];
+            {
+                Assert.That(list, Has.Count.EqualTo(8));
+
+                Assert.Multiple(() =>
+                {
+                    Assert.That(list[0].Id, Is.EqualTo(0));
+                    Assert.That(list[0].FirstName, Is.EqualTo("John0"));
+                    Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
+                    Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
+
+                    Assert.That(list[0].Identification, Is.EqualTo(null));
+                });
+
+                Assert.Multiple(() =>
+                {
+                    Assert.That(list[3].Id, Is.EqualTo(4));
+                    Assert.That(list[3].FirstName, Is.EqualTo("John4"));
+                    Assert.That(list[3].MiddleName, Is.EqualTo("Сurly4"));
+                    Assert.That(list[3].LastName, Is.EqualTo("Doe4"));
+
+                    Assert.That(list[3].Identification, Is.Not.EqualTo(null));
+                });
+
+                var identification = list[3].Identification;
+                Assert.Multiple(() =>
+                {
+                    Assert.That(identification.Id, Is.EqualTo(4));
+                    Assert.That(identification.TypeName, Is.EqualTo("citizen's passport"));
+
+                    Assert.That(identification.Country, Is.EqualTo(null));
+                });
+
+                Assert.Multiple(() =>
+                {
+                    Assert.That(list[4].Id, Is.EqualTo(5));
+                    Assert.That(list[4].FirstName, Is.EqualTo("John5"));
+                    Assert.That(list[4].MiddleName, Is.EqualTo("Сurly5"));
+                    Assert.That(list[4].LastName, Is.EqualTo("Doe5"));
+
+                    Assert.That(list[4].Identification, Is.Not.EqualTo(null));
+                });
+
+                identification = list[4].Identification;
+                Assert.Multiple(() =>
+                {
+                    Assert.That(identification.Id, Is.EqualTo(5));
+                    Assert.That(identification.TypeName, Is.EqualTo("party card"));
+
+                    Assert.That(identification.Country, Is.Not.EqualTo(null));
+                });
+
+                var country = list[4].Identification.Country;
+                Assert.Multiple(() =>
+                {
+                    Assert.That(country.Id, Is.EqualTo(5));
+                    Assert.That(country.Name, Is.EqualTo("Martian colony"));
+                });
+            }
+
+            list = batchList[1];
+            {
+                Assert.That(list, Has.Count.EqualTo(9));
+
+                Assert.Multiple(() =>
+                {
+                    Assert.That(list[0].Id, Is.EqualTo(0));
+                    Assert.That(list[0].FirstName, Is.EqualTo("John0"));
+                    Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
+                    Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
+
+                    Assert.That(list[0].Identification, Is.EqualTo(null));
+                });
+
+                Assert.Multiple(() =>
+                {
+                    Assert.That(list[3].Id, Is.EqualTo(4));
+                    Assert.That(list[3].FirstName, Is.EqualTo("John4"));
+                    Assert.That(list[3].MiddleName, Is.EqualTo("Сurly4"));
+                    Assert.That(list[3].LastName, Is.EqualTo("Doe4"));
+
+                    Assert.That(list[3].Identification, Is.Not.EqualTo(null));
+                });
+
+                var identification = list[3].Identification;
+                Assert.Multiple(() =>
+                {
+                    Assert.That(identification.Id, Is.EqualTo(4));
+                    Assert.That(identification.TypeName, Is.EqualTo("citizen's passport"));
+
+                    Assert.That(identification.Country, Is.EqualTo(null));
+                });
+
+                Assert.Multiple(() =>
+                {
+                    Assert.That(list[4].Id, Is.EqualTo(5));
+                    Assert.That(list[4].FirstName, Is.EqualTo("John5"));
+                    Assert.That(list[4].MiddleName, Is.EqualTo("Сurly5"));
+                    Assert.That(list[4].LastName, Is.EqualTo("Doe5"));
+
+                    Assert.That(list[4].Identification, Is.Not.EqualTo(null));
+                });
+
+                identification = list[4].Identification;
+                Assert.Multiple(() =>
+                {
+                    Assert.That(identification.Id, Is.EqualTo(5));
+                    Assert.That(identification.TypeName, Is.EqualTo("party card"));
+
+                    Assert.That(identification.Country, Is.Not.EqualTo(null));
+                });
+
+                var country = list[4].Identification.Country;
+                Assert.Multiple(() =>
+                {
+                    Assert.That(country.Id, Is.EqualTo(5));
+                    Assert.That(country.Name, Is.EqualTo("Martian colony"));
+                });
+            }
         }
 
         [Test]
         public void CreateCommand()
         {
-            using var command = _dataSource.OpenConnection().CreateToClassCommand(false, 10);
+            using var command = _dataSource.OpenConnection().CreateToClass1Command(false, 10);
             Assert.That(command.IsPrepared, Is.EqualTo(false));
             Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
-            using var command2 = _dataSource.OpenConnection().CreateToClassCommand(true);
+            using var command2 = _dataSource.OpenConnection().CreateToClass1Command(true);
             Assert.That(command2.IsPrepared, Is.EqualTo(true));
             Assert.That(command2.CommandTimeout, Is.EqualTo(30));
         }
@@ -414,11 +573,11 @@ ORDER BY p.id ASC
         [Test]
         public async Task CreateCommandAsync()
         {
-            using var command = await _dataSource.OpenConnection().CreateToClassCommandAsync(false, timeout: 10);
+            using var command = await _dataSource.OpenConnection().CreateToClass1CommandAsync(false, timeout: 10);
             Assert.That(command.IsPrepared, Is.EqualTo(false));
             Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
-            using var command2 = await _dataSource.OpenConnection().CreateToClassCommandAsync(true);
+            using var command2 = await _dataSource.OpenConnection().CreateToClass1CommandAsync(true);
             Assert.That(command2.IsPrepared, Is.EqualTo(true));
             Assert.That(command2.CommandTimeout, Is.EqualTo(30));
         }

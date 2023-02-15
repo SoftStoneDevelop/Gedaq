@@ -16,7 +16,7 @@ namespace Gedaq
 
         public void TryFillFrom(INamedTypeSymbol type)
         {
-            CheckAttributes(type.GetAttributes(), type);
+            ProcessAttributes(type.GetAttributes(), type);
             foreach (var member in type.GetMembers())
             {
                 if(!(member is IMethodSymbol methodSymbol))
@@ -24,13 +24,20 @@ namespace Gedaq
                     continue;
                 }
 
-                CheckAttributes(methodSymbol.GetAttributes(), type);
+                ProcessAttributes(methodSymbol.GetAttributes(), type);
             }
+
+            CompleteProcessContainTypes();
         }
 
-        private void CheckAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
+        private void ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
         {
-            _npgsqlProcessor.Process(attributes, containsType);
+            _npgsqlProcessor.ProcessAttributes(attributes, containsType);
+        }
+
+        private void CompleteProcessContainTypes()
+        {
+            _npgsqlProcessor.CompleteProcessContainTypes();
         }
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)

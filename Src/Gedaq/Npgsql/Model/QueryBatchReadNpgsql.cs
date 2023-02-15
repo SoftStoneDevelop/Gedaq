@@ -1,4 +1,5 @@
 ﻿using Microsoft.CodeAnalysis;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -8,10 +9,12 @@ namespace Gedaq.Npgsql.Model
     {
         public QueryBatchReadNpgsql(List<QueryReadNpgsql> queries)
         {
-            var first = Queries.First();
+            var first = queries.First();
             AllSameTypes = true;
             HaveParametrs = false;
             MethodName = first.BatchMethodName;
+            ContainTypeName= first.ContainTypeName;
+            var set = new HashSet<int>();
 
             Queries = queries
                 .OrderBy(or => or.BatchNumber)
@@ -21,6 +24,11 @@ namespace Gedaq.Npgsql.Model
                     HaveParametrs |= sel.HaveParametrs();
                     SourceType |= sel.SourceType;
                     MethodType |= sel.MethodType;
+                    Timeout += sel.Timeout;
+                    if(!set.Add(sel.BatchNumber))
+                    {
+                        throw new Exception($"Batch number must be unique in batch:'{MethodName}'");
+                    }
 
                     return sel;
                 })
