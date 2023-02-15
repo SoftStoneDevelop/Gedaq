@@ -10,25 +10,6 @@ using System.Text;
 
 namespace Gedaq.Npgsql.Model
 {
-    internal class Parametr
-    {
-        public int Position;
-        public string Name;
-        public ITypeSymbol Type;
-        public int DbType = -1;
-
-        public bool HaveName => Name != null;
-        public bool HaveDbType => DbType >= 0;
-
-        public string VariableName()
-        {
-            return HaveName ?
-                    Name.ToLowerInvariant() :
-                    $"mParametr{Position}"
-                ;
-        }
-    }
-
     internal class QueryReadNpgsql : BaseNpgsql
     {
         public string Query;
@@ -45,52 +26,10 @@ namespace Gedaq.Npgsql.Model
             return Parametrs != null;
         }
 
-        private static void FillParametrs(QueryReadNpgsql source, string[] parametrNames, ITypeSymbol[] parametrTypes, int[] parametrDbTypes)
-        {
-            if(parametrTypes == null)
-            {
-                return;
-            }
-
-            if (parametrNames != null &&
-                parametrNames.Length != parametrTypes.Length
-                )
-            {
-                throw new Exception("The number of parameter names and their types do not match");
-            }
-
-            if (parametrDbTypes != null &&
-                parametrTypes.Length != parametrDbTypes.Length
-               )
-            {
-                throw new Exception("The number of parameter DbTypes and their types do not match");
-            }
-
-            source.Parametrs = new Parametr[parametrTypes.Length];
-            for (int i = 0; i < parametrTypes.Length; i++)
-            {
-                var parametr = new Parametr();
-                parametr.Type= parametrTypes[i];
-                parametr.Position = i + 1;
-
-                if (parametrNames != null)
-                {
-                    parametr.Name = parametrNames[i];
-                }
-
-                if(parametrDbTypes != null)
-                {
-                    parametr.DbType = parametrDbTypes[i];
-                }
-
-                source.Parametrs[i] = parametr;
-            }
-        }
-
-        public static bool IsHisConstructor(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out QueryReadNpgsql method)
+        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out QueryReadNpgsql method)
         {
             method = null;
-            if (namedArguments.Length != 8)
+            if (namedArguments.Length != 6)
             {
                 return false;
             }
@@ -121,23 +60,7 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!FillParametrNames(namedArguments[5], methodSource, out var parametrNames))
-            {
-                return false;
-            }
-
-            if(!FillParametrTypes(namedArguments[6], methodSource, out var parametrTypes))
-            {
-                return false;
-            }
-
-            if (!FillParapetrDbTypes(namedArguments[7], methodSource, out var parametrDbTypes))
-            {
-                return false;
-            }
-
             methodSource.ContainTypeName = containsType;
-            FillParametrs(methodSource, parametrNames, parametrTypes, parametrDbTypes);
             method = methodSource;
             return true;
         }

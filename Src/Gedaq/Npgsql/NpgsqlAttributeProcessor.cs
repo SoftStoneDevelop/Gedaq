@@ -2,44 +2,135 @@
 using Gedaq.Npgsql.Generators;
 using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
+using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
+using System.Linq;
 
 namespace Gedaq.Npgsql
 {
     internal class NpgsqlAttributeProcessor
     {
         private List<QueryReadNpgsql> _readToTypeSources = new List<QueryReadNpgsql>();
+        Dictionary<string, List<QueryReadNpgsql>> _readTemp = new Dictionary<string,List<QueryReadNpgsql>>();
+        Dictionary<string, List<Parametr>> _parametrsTemp = new Dictionary<string, List<Parametr>>();
 
         private QueryParser _queryParser = new QueryParser();
 
-        public bool Process(AttributeData attribute, INamedTypeSymbol containsType)
+        public bool Process(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
         {
-            if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "QueryReadAttribute"))
+            _readTemp.Clear();
+            _parametrsTemp.Clear();
+
+            foreach (var attribute in attributes)
             {
-                ProcessQueryRead(attribute, containsType);
-                return true;
+                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "QueryReadAttribute"))
+                {
+                    ProcessQueryRead(attribute, containsType);
+                    continue;
+                }
+
+                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "ParametrAttribute"))
+                {
+                    ProcessParametr(attribute, containsType);
+                    continue;
+                }
+
+                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "ScalarAttribute"))
+                {
+                    continue;
+                }
+
+                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "NonQueryAttribute"))
+                {
+                    continue;
+                }
             }
 
-            if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "ScalarAttribute"))
+            var set = new HashSet<int>();
+            foreach (var read in _readTemp.Values)
             {
-                return true;
+                if(read.Count != 1)
+                {
+                    //batch case
+                    throw new NotImplementedException();
+                }
+
+                var readSingle = read[0];
+                if(_parametrsTemp.TryGetValue(readSingle.MethodName, out var parametrs))
+                {
+                    readSingle.Parametrs = new Parametr[parametrs.Count];
+
+                    set.Clear();
+                    var containNamedParametr = false;
+                    var containPositionParametr = false;
+                    for (int i = 0;i < parametrs.Count; i++)
+                    {
+                        var parametr = parametrs[i];
+                        if(parametr.HavePosition)
+                        {
+                            if(!set.Add(parametr.Position))
+                            {
+                                throw new Exception("Parametr position must be unique");
+                            }
+
+                            containPositionParametr |= true;
+                        }
+                        else
+                        {
+                            parametr.Position = i + 1;
+                        }
+
+                        containNamedParametr |= parametr.HaveName;
+
+                        readSingle.Parametrs[i] = parametr;
+                    }
+
+                    if(containNamedParametr && containPositionParametr)
+                    {
+                        throw new Exception("Parameters in query can be positional or named, but not combined");
+                    }
+                }
+
+                _readToTypeSources.Add(readSingle);
             }
 
-            if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "NonQueryAttribute"))
-            {
-                return true;
-            }
+            _readTemp.Clear();
+            _parametrsTemp.Clear();
 
             return false;
         }
 
         private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
         {
-            if (QueryReadNpgsql.IsHisConstructor(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
+            if (!QueryReadNpgsql.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
-                _readToTypeSources.Add(queryReadMethod);
-                return;
+                throw new Exception($"Unknown {nameof(QueryReadNpgsql)} constructor");
             }
+
+            if(!_readTemp.ContainsKey(queryReadMethod.MethodName))
+            {
+                var methods = new List<QueryReadNpgsql>();
+                _readTemp.Add(queryReadMethod.MethodName, methods);
+            }
+
+            _readTemp[queryReadMethod.MethodName].Add(queryReadMethod);
+        }
+
+        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType)
+        {
+            if (!Parametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
+            {
+                throw new Exception($"Unknown {nameof(Parametr)} constructor");
+            }
+
+            if (!_parametrsTemp.ContainsKey(methodName))
+            {
+                var methods = new List<Parametr>();
+                _parametrsTemp.Add(methodName, methods);
+            }
+
+            _parametrsTemp[methodName].Add(parametr);
         }
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)

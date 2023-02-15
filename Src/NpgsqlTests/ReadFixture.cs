@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Gedaq.Npgsql.Attributes;
+using Microsoft.Extensions.Configuration;
 using Npgsql;
 using NpgsqlTests.Helpers;
 using NUnit.Framework;
@@ -246,7 +247,7 @@ INSERT INTO public.readfixtureidentification(
         #endregion
 
         [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
+        [QueryRead(
             @"
 SELECT 
     p.id,
@@ -270,9 +271,9 @@ ORDER BY p.id ASC
             typeof(ReadFixtureModel),
             Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToClass",
-            parametrTypes: new Type[] { typeof(int) }
+            "ToClass"
             )]
+        [Parametr("ToClass", parametrType: typeof(int), position: 1)]
         public void ReadToClass()
         {
             var list = _dataSource.OpenConnection().ToClass(3).ToList();
@@ -447,9 +448,9 @@ ORDER BY p.id ASC
             typeof(object[]),
             Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToObjArr",
-            parametrTypes: new Type[] { typeof(int) }
+            "ToObjArr"
             )]
+        [Parametr("ToObjArr", parametrType: typeof(int), position: 1)]
         public void ReadToObjArr()
         {
             var list = _dataSource.OpenConnection().ToObjArr(3).ToList();
@@ -534,9 +535,9 @@ ORDER BY p.id ASC
             typeof(object),
             Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToObj",
-            parametrTypes: new Type[] { typeof(int) }
+            "ToObj"
             )]
+        [Parametr("ToObj", parametrType: typeof(int), position: 1)]
         public void ReadToObj()
         {
             var list = _dataSource.OpenConnection().ToObj(3).ToList();

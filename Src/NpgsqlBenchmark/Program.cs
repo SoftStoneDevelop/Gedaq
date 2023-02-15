@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Running;
+using Gedaq.Npgsql.Attributes;
 using Gedaq.Npgsql.Enums;
 using Gedaq.Provider.Enums;
 using Microsoft.Extensions.Configuration;
@@ -19,8 +20,6 @@ namespace NpgsqlBenchmark
         {
             //GetData();
             //TestQuery();
-            BenchmarkRunner.Run<Read>();
-            BenchmarkRunner.Run<ReadAsync>();
 
             BenchmarkRunner.Run<ReadInnerMap>();
             BenchmarkRunner.Run<ReadInnerMapAsync>();
@@ -61,7 +60,7 @@ ORDER BY p.id ASC
             }
         }
 
-        [Gedaq.Npgsql.Attributes.QueryRead(
+        [QueryRead(
             @"
 SELECT 
     p.id,
@@ -75,11 +74,9 @@ ORDER BY p.id ASC
             typeof(Person),
             MethodType.Sync | MethodType.Async,
             SourceType.Connection,
-            "GetData",
-            parametrNames: new string[] {"id"},
-            parametrTypes: new Type[] { typeof(int) },
-            parametrDbTypes: new NpgsqlDbType[] { NpgsqlDbType.Integer}
+            "GetData"
             )]
+        [Parametr("GetData", parametrName: "id", parametrType: typeof(int), dbType: NpgsqlDbType.Integer)]
         private static async Task GetData()
         {
             var root = new ConfigurationBuilder()

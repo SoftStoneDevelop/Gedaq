@@ -1,18 +1,18 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
-using Microsoft.Extensions.Configuration;
-using Npgsql;
-using System.IO;
-using NpgsqlBenchmark.Model;
 using Dapper;
-using System.Linq;
+using Gedaq.Npgsql.Attributes;
 using Gedaq.Npgsql.Enums;
 using Gedaq.Provider.Enums;
-using System;
+using Microsoft.Extensions.Configuration;
+using Npgsql;
+using NpgsqlBenchmark.Model;
+using System.IO;
+using System.Linq;
 
 namespace NpgsqlBenchmark.Benchmarks
 {
-    [Gedaq.Npgsql.Attributes.QueryRead(
+    [QueryRead(
             @"
 SELECT 
     p.id,
@@ -30,9 +30,9 @@ WHERE p.id > $1
         typeof(Person),
         MethodType.Sync,
         SourceType.Connection,
-        "ReadInnerMap",
-        parametrTypes: new Type[] { typeof(int) }
+        "ReadInnerMap"
         )]
+    [Parametr("ReadInnerMap", parametrType: typeof(int), position: 1)]
     [MemoryDiagnoser]
     [SimpleJob(RuntimeMoniker.Net70)]
     [HideColumns("Error", "StdDev", "Median", "RatioSD")]

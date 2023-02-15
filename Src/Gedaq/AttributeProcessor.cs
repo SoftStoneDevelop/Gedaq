@@ -4,6 +4,7 @@ using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Xml.Linq;
 
@@ -29,15 +30,7 @@ namespace Gedaq
 
         private void CheckAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
         {
-            foreach (var attribute in attributes)
-            {
-                if (_npgsqlProcessor.Process(attribute, containsType))
-                {
-                    continue;
-                }
-
-                //another databases(include processor for common database IConnection source)
-            }
+            _npgsqlProcessor.Process(attributes, containsType);
         }
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)
