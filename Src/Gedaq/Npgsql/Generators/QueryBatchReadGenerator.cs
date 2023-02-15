@@ -15,7 +15,7 @@ using System.Xml.Linq;
 
 namespace Gedaq.Npgsql.Generators
 {
-    internal class QueryReadGenerator
+    internal class QueryBatchReadGenerator
     {
         private StringBuilder _methodCode = new StringBuilder();
 
@@ -30,19 +30,20 @@ namespace Gedaq.Npgsql.Generators
             _methodCode.Clear();
         }
 
-        public void GenerateMethod(QueryReadNpgsql source)
+        public void GenerateMethod(QueryBatchReadNpgsql source)
         {
             Reset();
             Start(source);
 
+            CreateBatchItems(source);
             ReadMethods(source);
-            CommandMethods(source);
+            BatchMethods(source);
 
             End();
         }
 
         private void Start(
-            QueryReadNpgsql source
+            QueryBatchReadNpgsql source
             )
         {
             _methodCode.Append($@"
@@ -70,7 +71,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
         }
 
-        private void ReadMethods(QueryReadNpgsql source)
+        private void ReadMethods(QueryBatchReadNpgsql source)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -83,7 +84,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
-        private void ReadMethod(QueryReadNpgsql source)
+        private void ReadMethod(QueryBatchReadNpgsql source)
         {
             if(source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
@@ -104,7 +105,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
-        private void ReadAsyncMethod(QueryReadNpgsql source)
+        private void ReadAsyncMethod(QueryBatchReadNpgsql source)
         {
             if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
@@ -125,22 +126,22 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
-        private void CommandMethods(QueryReadNpgsql source)
+        private void BatchMethods(QueryBatchReadNpgsql source)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
                 if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
                 {
-                    CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync);
+                    CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync);
                 }
 
                 if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
                 {
-                    CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
+                    CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
                 }
 
-                StartExecuteCommand(source, MethodType.Sync);
-                ExecuteCommand(source, MethodType.Sync);
+                StartExecuteBatch(source, MethodType.Sync);
+                ExecuteBatch(source, MethodType.Sync);
                 EndMethod();
             }
 
@@ -148,16 +149,16 @@ namespace {source.ContainTypeName.ContainingNamespace}
             {
                 if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
                 {
-                    CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async);
+                    CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async);
                 }
 
                 if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
                 {
-                    CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
+                    CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
                 }
 
-                StartExecuteCommand(source, MethodType.Async);
-                ExecuteCommand(source, MethodType.Async);
+                StartExecuteBatch(source, MethodType.Async);
+                ExecuteBatch(source, MethodType.Async);
                 EndMethod();
             }
 
@@ -165,40 +166,50 @@ namespace {source.ContainTypeName.ContainingNamespace}
         }
 
         private void StartReadMethod(
-            QueryReadNpgsql source,
+            QueryBatchReadNpgsql source,
             MethodType methodType
             )
         {
-            if(methodType == MethodType.Sync)
+            var type = source.AllSameTypes ? source.Queries[0].MapTypeName.GetFullTypeName(true) : "object";
+            if (methodType == MethodType.Sync)
             {
                 _methodCode.Append($@"        
-        public static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> {source.MethodName}(
+        public static IEnumerable<IEnumerable<{type}>> {source.MethodName}(
 ");
             }
             else
             {
                 _methodCode.Append($@"        
-        public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> {source.MethodName}Async(
+        public static async IAsyncEnumerable<IAsyncEnumerable<{type}>> {source.MethodName}Async(
 ");
             }
         }
 
         private void StartMethodParametrs(
-            QueryReadNpgsql source,
+            QueryBatchReadNpgsql source,
             NpgsqlSourceType sourceType
             )
         {
             _methodCode.Append($@"
             this {sourceType.ToTypeName()} {sourceType.ToParametrName()}
 ");
-            if(source.HaveParametrs())
+            if(source.HaveParametrs)
             {
-                for (int i = 0; i < source.Parametrs.Length; i++)
+                for (int j = 0; j < source.Queries.Count; j++)
                 {
-                    var parametr = source.Parametrs[i];
-                    _methodCode.Append($@",
-            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}
+                    var item = source.Queries[j];
+                    if(!item.HaveParametrs())
+                    {
+                        continue;
+                    }
+
+                    for (int i = 0; i < item.Parametrs.Length; i++)
+                    {
+                        var parametr = item.Parametrs[i];
+                        _methodCode.Append($@",
+            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{j}
 ");
+                    }
                 }
             }
         }
@@ -222,23 +233,24 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
         }
 
-        private void StartExecuteCommand(
-            QueryReadNpgsql source,
+        private void StartExecuteBatch(
+            QueryBatchReadNpgsql source,
             MethodType methodType
             )
         {
+            var type = source.AllSameTypes ?  source.Queries[0].MapTypeName.GetFullTypeName(true) : "object";
             if (methodType == MethodType.Sync)
             {
                 _methodCode.Append($@"
-        public static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}Command(this NpgsqlCommand command)
+        public static IEnumerable<IEnumerable<{type}>> Execute{source.MethodName}Batch(this NpgsqlBatch batch)
         {{
 ");
             }
             else
             {
                 _methodCode.Append($@"
-        public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}CommandAsync(
-            this NpgsqlCommand command,
+        public static async IAsyncEnumerable<IAsyncEnumerable<{type}>> Execute{source.MethodName}BatchAsync(
+            this NpgsqlBatch batch,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
         {{
@@ -246,7 +258,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
-        private void ExecuteCommand(QueryReadNpgsql source, MethodType methodType)
+        private void ExecuteBatch(QueryBatchReadNpgsql source, MethodType methodType)
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
@@ -258,14 +270,16 @@ namespace {source.ContainTypeName.ContainingNamespace}
             {{
 ");
             _methodCode.Append($@"
-                reader = {await}command.ExecuteReader{async};
-                while ({await}reader.Read{async})
-                {{
+                reader = {await}batch.ExecuteReader{async};
 ");
-            YieldItem(source);
+            for (int j = 0; j < source.Queries.Count; j++)
+            {
+                _methodCode.Append($@"
+                yield return reader.BatchItem{j}{(source.MethodType == MethodType.Async ? "Async(cancellationToken)" : "()")};
+                {await}reader.NextResult{async};
+");
+            }
             _methodCode.Append($@"
-                }}
-
                 {await}reader.Dispose{disposeAsync};
                 reader = null;
             }}
@@ -277,7 +291,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     {{
                         try 
                         {{
-                            command.Cancel();
+                            batch.Cancel();
                         }}
                         catch {{ /* ignore */ }}
                     }}
@@ -289,7 +303,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
         }
 
         private void ReadMethodBody(
-            QueryReadNpgsql source,
+            QueryBatchReadNpgsql source,
             Enums.NpgsqlSourceType sourceType,
             MethodType methodType
             )
@@ -308,51 +322,66 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }}
 ");
             }
-            var createCommand =
+            var createBatch =
                 methodType == MethodType.Async ?
-                $"await Create{source.MethodName}CommandAsync({sourceType.ToParametrName()}, false, cancellationToken, timeout)" :
-                $"Create{source.MethodName}Command({sourceType.ToParametrName()}, false, timeout)"
+                $"await Create{source.MethodName}BatchAsync({sourceType.ToParametrName()}, false, cancellationToken, timeout)" :
+                $"Create{source.MethodName}Batch({sourceType.ToParametrName()}, false, timeout)"
                 ;
             _methodCode.Append($@"
-            NpgsqlCommand command = null;
+            NpgsqlBatch batch = null;
             NpgsqlDataReader reader = null;
             try
             {{
-                command = {createCommand};
+                batch = {createBatch};
 ");
-            if(source.HaveParametrs())
+            if(source.HaveParametrs)
             {
                 _methodCode.Append($@"
-                command.Set{source.MethodName}Parametrs(
+                batch.Set{source.MethodName}Parametrs(
 ");
-                for (int i = 0; i < source.Parametrs.Length; i++)
+                var haveSuccessIteration = false;
+                for (int j = 0; j < source.Queries.Count; j++)
                 {
-                    var parametr = source.Parametrs[i];
-                    _methodCode.Append($@"
-                    in {parametr.VariableName()}
-");
-
-                    if (i == source.Parametrs.Length - 1)
+                    var item = source.Queries[j];
+                    if (!item.HaveParametrs())
                     {
-                        _methodCode.Append($@"
-                    );
-");
+                        continue;
                     }
-                    else
+
+                    if (haveSuccessIteration)
                     {
                         _methodCode.Append($@",");
                     }
+
+                    for (int i = 0; i < item.Parametrs.Length; i++)
+                    {
+                        var parametr = item.Parametrs[i];
+                        _methodCode.Append($@"
+                    in {parametr.VariableName()}
+");
+                        if (i != item.Parametrs.Length - 1)
+                        {
+                            _methodCode.Append($@",");
+                        }
+                    }
+
+                    haveSuccessIteration |= true;
                 }
+                _methodCode.Append($@"
+                    );");
             }
             _methodCode.Append($@"
-                reader = {await}command.ExecuteReader{async};
-                while ({await}reader.Read{async})
-                {{
+                reader = {await}batch.ExecuteReader{async};
 ");
-            YieldItem(source);
-            _methodCode.Append($@"
-                }}
+            for (int j = 0; j < source.Queries.Count; j++)
+            {
+                _methodCode.Append($@"
+                yield return reader.BatchItem{j}{(source.MethodType == MethodType.Async ? "Async(cancellationToken)" : "()")};
+                {await}reader.NextResult{async};
+");
+            }
 
+            _methodCode.Append($@"
                 {await}reader.Dispose{disposeOrCloseAsync};
                 reader = null;
             }}
@@ -364,7 +393,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     {{
                         try 
                         {{
-                            command.Cancel();
+                            batch.Cancel();
                         }}
                         catch {{ /* ignore */ }}
                     }}
@@ -382,10 +411,10 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
             }
             _methodCode.Append($@"
-                if(command != null)
+                if(batch != null)
                 {{
-                    command.Parameters.Clear();
-                    {await}command.Dispose{disposeOrCloseAsync};
+                    batch.BatchCommands.Clear();
+                    {await}batch.Dispose{disposeOrCloseAsync};
                 }}
             }}
 ");
@@ -398,15 +427,15 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
         }
 
-        private void CreateCommandMethod(
-            QueryReadNpgsql source,
+        private void CreateBatchMethod(
+            QueryBatchReadNpgsql source,
             Enums.NpgsqlSourceType sourceType,
             MethodType methodType
             )
         {
             _methodCode.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static  {(methodType == MethodType.Async ? "async Task<NpgsqlCommand>" : "NpgsqlCommand")} Create{source.MethodName}Command{(methodType == MethodType.Async ? "Async" : "")}(
+        public static  {(methodType == MethodType.Async ? "async Task<NpgsqlBatch>" : "NpgsqlBatch")} Create{source.MethodName}Batch{(methodType == MethodType.Async ? "Async" : "")}(
             this {sourceType.ToTypeName()} {sourceType.ToParametrName()},
             bool prepare = false
 ");
@@ -421,71 +450,95 @@ namespace {source.ContainTypeName.ContainingNamespace}
             int? timeout = null
         )
         {{
-            var command = {sourceType.ToParametrName()}.CreateCommand();
-            command.CommandText = @""
-{source.Query}
-"";
+            var batch = {sourceType.ToParametrName()}.CreateBatch();
             if(timeout.HasValue)
             {{
-                command.CommandTimeout = timeout.Value;
+                batch.Timeout = timeout.Value;
             }}
 ");
-            if (source.HaveParametrs())
+            for (int i = 0; i < source.Queries.Count; i++)
             {
-                for (int i = 0; i < source.Parametrs.Length; i++)
+                var item = source.Queries[i];
+                if(i == 0)
                 {
-                    var parametr = source.Parametrs[i];
-
-                    if(parametr.Type.IsNullableType())
-                    {
-                        _methodCode.Append($@"
-            var parametr{parametr.Position} = new NpgsqlParameter();
+                    _methodCode.Append($@",
+            var command = batch.CreateBatchCommand();
 ");
-                    }
-                    else
-                    {
-                        _methodCode.Append($@"
-            var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>();
+                }
+                else
+                {
+                    _methodCode.Append($@",
+            command = batch.CreateBatchCommand();
 ");
-                    }
+                }
 
-                    if (parametr.HaveDbType)
-                    {
-                        _methodCode.Append($@"
-            parametr{parametr.Position}.NpgsqlDbType = ({TypeHelper.NpgsqlDbTypeName}){parametr.DbType};
+                _methodCode.Append($@",
+            command.CommandText = @""
+{item.Query}
+"";
 ");
-                    }
-
-                    if (parametr.HaveName)
-                    {
-                        _methodCode.Append($@"
-            parametr{parametr.Position}.ParameterName = ""{parametr.Name}"";
-");
-                    }
-
-                    if (parametr.HaveSize)
-                    {
-                        _methodCode.Append($@"
-            parametr{parametr.Position}.Size = {parametr.Size};
-");
-                    }
-
-                    if (parametr.Nullable)
-                    {
-                        _methodCode.Append($@"
-            parametr{parametr.Position}.IsNullable = true;
-");
-                    }
-
-                    if (parametr.Direction != System.Data.ParameterDirection.Input)
-                    {
-                        _methodCode.Append($@"
-            parametr{parametr.Position}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
-");
-                    }
-
+                if (item.HaveParametrs())
+                {
                     _methodCode.Append($@"
-            command.Parameters.Add(parametr{parametr.Position});
+            {{
+");
+                    for (int j = 0; j < item.Parametrs.Length; j++)
+                    {
+                        var parametr = item.Parametrs[j];
+                        if (parametr.Type.IsNullableType())
+                        {
+                            _methodCode.Append($@"
+                var parametr{parametr.Position} = new NpgsqlParameter();
+");
+                        }
+                        else
+                        {
+                            _methodCode.Append($@"
+                var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>();
+");
+                        }
+
+                        if (parametr.HaveDbType)
+                        {
+                            _methodCode.Append($@"
+                parametr{parametr.Position}.NpgsqlDbType = ({TypeHelper.NpgsqlDbTypeName}){parametr.DbType};
+");
+                        }
+
+                        if (parametr.HaveName)
+                        {
+                            _methodCode.Append($@"
+                parametr{parametr.Position}.ParameterName = ""{parametr.Name}"";
+");
+                        }
+
+                        if (parametr.HaveSize)
+                        {
+                            _methodCode.Append($@"
+                parametr{parametr.Position}.Size = {parametr.Size};
+");
+                        }
+
+                        if (parametr.Nullable)
+                        {
+                            _methodCode.Append($@"
+                parametr{parametr.Position}.IsNullable = true;
+");
+                        }
+
+                        if (parametr.Direction != System.Data.ParameterDirection.Input)
+                        {
+                            _methodCode.Append($@"
+                parametr{parametr.Position}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
+");
+                        }
+
+                        _methodCode.Append($@"
+                command.Parameters.Add(parametr{parametr.Position});
+");
+                    }
+                    _methodCode.Append($@"
+            }}
 ");
                 }
             }
@@ -497,11 +550,11 @@ namespace {source.ContainTypeName.ContainingNamespace}
             {{
                 try
                 {{
-                    await command.PrepareAsync(cancellationToken).ConfigureAwait(false);
+                    await batch.PrepareAsync(cancellationToken).ConfigureAwait(false);
                 }}
                 catch
                 {{  
-                    await command.DisposeAsync().ConfigureAwait(false);
+                    await batch.DisposeAsync().ConfigureAwait(false);
                     throw;
                 }}
             }}
@@ -514,11 +567,11 @@ namespace {source.ContainTypeName.ContainingNamespace}
             {{
                 try
                 {{
-                    command.Prepare();
+                    batch.Prepare();
                 }}
                 catch
                 {{
-                    command.Dispose();
+                    batch.Dispose();
                     throw;
                 }}
             }}
@@ -526,17 +579,17 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
 
             _methodCode.Append($@"
-            return command;
+            return batch;
         }}
 ");
 
         }
 
         private void SetParametrsMethod(
-            QueryReadNpgsql source
+            QueryBatchReadNpgsql source
             )
         {
-            if(!source.HaveParametrs())
+            if(!source.HaveParametrs)
             {
                 return;
             }
@@ -544,43 +597,73 @@ namespace {source.ContainTypeName.ContainingNamespace}
             _methodCode.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static  void Set{source.MethodName}Parametrs(
-            this NpgsqlCommand command
+            this NpgsqlBatch batch
 ");
-            for (int i = 0; i < source.Parametrs.Length; i++)
+            for (int j = 0; j < source.Queries.Count; j++)
             {
-                var parametr = source.Parametrs[i];
-                _methodCode.Append($@",
-            in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}
-");
-            }
+                var batchCommand = source.Queries[j];
+                if(!batchCommand.HaveParametrs())
+                {
+                    continue;
+                }
 
+                for (int i = 0; i < batchCommand.Parametrs.Length; i++)
+                {
+                    var parametr = batchCommand.Parametrs[i];
+                    _methodCode.Append($@",
+            in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{j}
+");
+                }
+            }
             _methodCode.Append($@"
         )
         {{
 ");
-            for (int i = 0; i < source.Parametrs.Length; i++)
+            for (int j = 0; j < source.Queries.Count; j++)
             {
-                var parametr = source.Parametrs[i];
-                if(parametr.Type.IsNullableType())
+                var batchCommand = source.Queries[j];
+                if (!batchCommand.HaveParametrs())
+                {
+                    continue;
+                }
+
+                if(j == 0)
                 {
                     _methodCode.Append($@"
-            if({parametr.VariableName()}.HasValue)
-            {{
-                ((NpgsqlParameter)command.Parameters[{i}]).Value = {parametr.VariableName()}.Value;
-            }}
-            else
-            {{
-                ((NpgsqlParameter)command.Parameters[{i}]).Value = DBNull.Value;
-            }}
+            var batchCommand = batch.BatchCommands[{j}];
 ");
                 }
                 else
                 {
                     _methodCode.Append($@"
-            ((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>)command.Parameters[{i}]).TypedValue = {parametr.VariableName()};
+            batchCommand = batch.BatchCommands[{j}];
 ");
                 }
 
+                for (int i = 0; i < batchCommand.Parametrs.Length; i++)
+                {
+                    var parametr = batchCommand.Parametrs[i];
+                    if (parametr.Type.IsNullableType())
+                    {
+                        _methodCode.Append($@"
+            if({parametr.VariableName()}Batch{j}.HasValue)
+            {{
+                ((NpgsqlParameter)batchCommand.Parameters[{i}]).Value = {parametr.VariableName()}Batch{j}.Value;
+            }}
+            else
+            {{
+                ((NpgsqlParameter)batchCommand.Parameters[{i}]).Value = DBNull.Value;
+            }}
+");
+                    }
+                    else
+                    {
+                        _methodCode.Append($@"
+            ((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>)batchCommand.Parameters[{i}]).TypedValue = {parametr.VariableName()}Batch{j};
+");
+                    }
+
+                }
             }
 
             _methodCode.Append($@"
@@ -589,14 +672,72 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
         }
 
+        private void CreateBatchItems(QueryBatchReadNpgsql source)
+        {
+            if (source.MethodType.HasFlag(MethodType.Async))
+            {
+                CreateBatchItem(source, MethodType.Async);
+            }
+
+            if (source.MethodType.HasFlag(MethodType.Sync))
+            {
+                CreateBatchItem(source, MethodType.Sync);
+            }
+        }
+
+        private void CreateBatchItem(
+            QueryBatchReadNpgsql source,
+            MethodType methodType
+            )
+        {
+            var type = source.AllSameTypes ? source.Queries[0].MapTypeName.GetFullTypeName(true) : "object";
+            var async = methodType == MethodType.Sync ? "()" : "Async(cancellationToken).ConfigureAwait(false)";
+            var await = methodType == MethodType.Sync ? "" : "await ";
+
+            for (int j = 0; j < source.Queries.Count; j++)
+            {
+                var item = source.Queries[j];
+                if(methodType == MethodType.Sync)
+                {
+                    _methodCode.Append($@"
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        private static IEnumerable<{type}> BatchItem{j}(this NpgsqlDataReader reader)
+        {{
+");
+                }
+                else
+                {
+                    _methodCode.Append($@"
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        private static async IAsyncEnumerable<{type}> BatchItem{j}Async(
+            this NpgsqlDataReader reader,
+            [EnumeratorCancellation] CancellationToken cancellationToken = default
+            )
+        {{
+");
+                }
+
+                _methodCode.Append($@"
+            while({await}reader.Read{async})
+            {{
+");
+                YieldItem(item, source.AllSameTypes ? "" : "(object)");
+                _methodCode.Append($@"
+            }}
+        }}
+");
+            }
+        }
+
         private void YieldItem(
-            QueryReadNpgsql source
+            QueryReadNpgsql source,
+            string castTypeExpr
             )
         {
             if (source.MapTypeName.IsPrimitive())
             {
                 _methodCode.Append($@"
-                    yield return reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);
+                    yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);
 ");
             }
             else if(source.MapTypeName.IsNullableType())
@@ -604,18 +745,18 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 _methodCode.Append($@"
                     if(reader.IsDBNull(0))
                     {{
-                        yield return ({source.MapTypeName.GetFullTypeName(true)})null;
+                        yield return {castTypeExpr}({source.MapTypeName.GetFullTypeName(true)})null;
                     }}
                     else
                     {{
-                        yield return reader.GetFieldValue<{source.MapTypeName.GetFullTypeName(true, addQuestionNoatble: false)}>(0);
+                        yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName(true, addQuestionNoatble: false)}>(0);
                     }}
 ");
             }
             else if (source.MapTypeName.Name == nameof(Object))
             {
                 _methodCode.Append($@"
-                    yield return reader.GetValue(0);
+                    yield return {castTypeExpr}reader.GetValue(0);
 ");
             }
             else if (source.MapTypeName is IArrayTypeSymbol typeArray && typeArray.ElementType.Name == nameof(Object))
@@ -623,14 +764,14 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 _methodCode.Append($@"
                     var item = new object[reader.FieldCount];
                     reader.GetValues(item);
-                    yield return item;
+                    yield return {castTypeExpr}item;
 ");
             }
             else
             {
                 ComplicateItem(source.Aliases, source.MapTypeName, source.MethodType);
                 _methodCode.Append($@" 
-                    yield return item;
+                    yield return {castTypeExpr}item;
 ");
             }
         }

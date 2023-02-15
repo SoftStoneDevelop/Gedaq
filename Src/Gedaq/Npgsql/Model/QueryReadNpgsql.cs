@@ -5,17 +5,44 @@ using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
 
 namespace Gedaq.Npgsql.Model
 {
+    internal class QueryBatchReadNpgsql : BaseNpgsql
+    {
+        public QueryBatchReadNpgsql(List<QueryReadNpgsql> queries)
+        {
+            var first = Queries.First();
+            AllSameTypes = true;
+            HaveParametrs = false;
+
+            Queries = queries
+                .OrderBy(or => or.NumberInBatch)
+                .Select(sel => 
+                {
+                    AllSameTypes &= sel.MapTypeName == first.MapTypeName;
+                    HaveParametrs |= sel.HaveParametrs();
+
+                    return sel;
+                })
+                .ToList();
+        }
+
+        public List<QueryReadNpgsql> Queries { get; private set; }
+        public bool AllSameTypes { get; private set; }
+        public bool HaveParametrs { get; private set; }
+    }
+
     internal class QueryReadNpgsql : BaseNpgsql
     {
-        public string Query;
         public ITypeSymbol MapTypeName;
         public Aliases Aliases;
         public Parametr[] Parametrs;
+        public int NumberInBatch;
+        public string Query;
 
         public QueryReadNpgsql()
         {
