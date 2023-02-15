@@ -25,6 +25,13 @@ namespace NpgsqlTests
     {
         public int Id { get; set; }
         public string TypeName { get; set; }
+        public ReadFixtureCountryModel Country { get; set; }
+    }
+
+    public class ReadFixtureCountryModel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 
     [TestFixture]
@@ -42,14 +49,27 @@ namespace NpgsqlTests
             var conn = _dataSource.OpenConnection();
             conn.DropTable("readfixtureperson");
             conn.DropTable("readfixtureidentification");
+            conn.DropTable("readfixturecountry");
 
             using var cmd = conn.CreateCommand();
             cmd.CommandText = @"
+CREATE TABLE IF NOT EXISTS public.readfixturecountry
+(
+    id integer NOT NULL,
+    name text COLLATE pg_catalog.""default"" NOT NULL,
+    CONSTRAINT readfixturecountry_pkey PRIMARY KEY (id)
+);
+
 CREATE TABLE IF NOT EXISTS public.readfixtureidentification
 (
     id integer NOT NULL,
     typename text COLLATE pg_catalog.""default"" NOT NULL,
-    CONSTRAINT readfixtureidentification_pkey PRIMARY KEY (id)
+    readfixturecountry_id integer,
+    CONSTRAINT readfixtureidentification_pkey PRIMARY KEY (id),
+    CONSTRAINT readfixturecountry_fk FOREIGN KEY (readfixturecountry_id)
+        REFERENCES public.readfixturecountry (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
 );
 
 CREATE TABLE IF NOT EXISTS public.readfixtureperson
@@ -67,6 +87,7 @@ CREATE TABLE IF NOT EXISTS public.readfixtureperson
 );
 ";
             cmd.ExecuteNonQuery();
+            FillСountries(cmd);
             FillIdentification(cmd);
             FillPerson(cmd);
         }
@@ -78,32 +99,27 @@ CREATE TABLE IF NOT EXISTS public.readfixtureperson
 INSERT INTO public.readfixtureperson(
 	id, firstname, middlename, lastname, readfixtureidentification_id)
 	VALUES (
-    @id, @firstname, @middlename, @lastname, @readfixtureidentification_id
+    $1, $2, $3, $4, $5
 );
 ";
-            var id = cmd.CreateParameter();
+            var id = new NpgsqlParameter<int>();
             id.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Integer;
-            id.ParameterName = "id";
             cmd.Parameters.Add(id);
 
-            var firstname = cmd.CreateParameter();
+            var firstname = new NpgsqlParameter<string>();
             firstname.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
-            firstname.ParameterName = "firstname";
             cmd.Parameters.Add(firstname);
 
-            var middlename = cmd.CreateParameter();
+            var middlename = new NpgsqlParameter<string>();
             middlename.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
-            middlename.ParameterName = "middlename";
             cmd.Parameters.Add(middlename);
 
-            var lastname = cmd.CreateParameter();
+            var lastname = new NpgsqlParameter<string>();
             lastname.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
-            lastname.ParameterName = "lastname";
             cmd.Parameters.Add(lastname);
 
-            var identificationId = cmd.CreateParameter();
+            var identificationId = new NpgsqlParameter();
             identificationId.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Integer;
-            identificationId.ParameterName = "readfixtureidentification_id";
             identificationId.IsNullable = true;
             cmd.Parameters.Add(identificationId);
             cmd.Prepare();
@@ -127,45 +143,93 @@ INSERT INTO public.readfixtureperson(
             }
         }
 
+        private void FillСountries(NpgsqlCommand cmd)
+        {
+            cmd.Parameters.Clear();
+            cmd.CommandText = @"
+INSERT INTO public.readfixturecountry(
+	id, name)
+	VALUES (
+    $1, $2
+);
+";
+            var id = new NpgsqlParameter<int>();
+            id.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Integer;
+            cmd.Parameters.Add(id);
+
+            var typename = new NpgsqlParameter<string>();
+            typename.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
+            cmd.Parameters.Add(typename);
+            cmd.Prepare();
+
+            id.TypedValue = 1;
+            typename.TypedValue = "Russia";
+            cmd.ExecuteNonQuery();
+
+            id.TypedValue = 2;
+            typename.TypedValue = "China";
+            cmd.ExecuteNonQuery();
+
+            id.TypedValue = 3;
+            typename.TypedValue = "Serbia";
+            cmd.ExecuteNonQuery();
+
+            id.TypedValue = 4;
+            typename.TypedValue = "Belarus";
+            cmd.ExecuteNonQuery();
+
+            id.TypedValue = 5;
+            typename.TypedValue = "Martian colony";
+            cmd.ExecuteNonQuery();
+        }
+
         private void FillIdentification(NpgsqlCommand cmd)
         {
             cmd.Parameters.Clear();
             cmd.CommandText = @"
 INSERT INTO public.readfixtureidentification(
-	id, typename)
+	id, typename, readfixturecountry_id)
 	VALUES (
-    @id, @typename
+    $1, $2, $3
 );
 ";
-            var id = cmd.CreateParameter();
+            var id = new NpgsqlParameter<int>();
             id.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Integer;
-            id.ParameterName = "id";
             cmd.Parameters.Add(id);
 
-            var typename = cmd.CreateParameter();
+            var typename = new NpgsqlParameter<string>();
             typename.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
-            typename.ParameterName = "typename";
             cmd.Parameters.Add(typename);
+
+            var countryId = new NpgsqlParameter();
+            countryId.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Integer;
+            countryId.IsNullable = true;
+            cmd.Parameters.Add(countryId);
             cmd.Prepare();
 
-            id.Value = 1;
-            typename.Value = "sailor's passport";
+            id.TypedValue = 1;
+            typename.TypedValue = "sailor's passport";
+            countryId.Value = 1;
             cmd.ExecuteNonQuery();
 
-            id.Value = 2;
-            typename.Value = "officer's certificate";
+            id.TypedValue = 2;
+            typename.TypedValue = "officer's certificate";
+            countryId.Value = 2;
             cmd.ExecuteNonQuery();
 
-            id.Value = 3;
-            typename.Value = "driver license";
+            id.TypedValue = 3;
+            typename.TypedValue = "driver license";
+            countryId.Value = 3;
             cmd.ExecuteNonQuery();
 
-            id.Value = 4;
-            typename.Value = "citizen's passport";
+            id.TypedValue = 4;
+            typename.TypedValue = "citizen's passport";
+            countryId.Value = DBNull.Value;
             cmd.ExecuteNonQuery();
 
-            id.Value = 5;
-            typename.Value = "party card";
+            id.TypedValue = 5;
+            typename.TypedValue = "party card";
+            countryId.Value = 5;
             cmd.ExecuteNonQuery();
         }
 
@@ -174,6 +238,7 @@ INSERT INTO public.readfixtureidentification(
         {
             _dataSource.OpenConnection().DropTable("readfixtureperson");
             _dataSource.OpenConnection().DropTable("readfixtureidentification");
+            _dataSource.OpenConnection().DropTable("readfixturecountry");
             _dataSource?.Dispose();
         }
 
@@ -189,12 +254,17 @@ SELECT
     r.firstname,
 ~StartInner::Identification:id~
     i.id,
+~StartInner::Country:id~
+    c.id,
+    c.name,
+~EndInner::Country~
     i.typename,
 ~EndInner::Identification~
     r.middlename,
     r.lastname
 FROM readfixtureperson r
 LEFT JOIN readfixtureidentification i ON i.id = r.readfixtureidentification_id
+LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
 ",
             typeof(ReadFixtureModel),
             Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,

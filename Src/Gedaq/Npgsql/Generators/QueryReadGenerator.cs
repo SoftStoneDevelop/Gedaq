@@ -414,8 +414,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
         }
 
-        #region CreateCommand
-
         private void CreateCommandMethod(
             QueryReadNpgsql source,
             Enums.NpgsqlSourceType sourceType,
@@ -575,8 +573,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
         }
 
-        #endregion
-
         private void SetCommandParametrs(QueryReadNpgsql source)
         {
             if(!source.HaveParametrTypes())
@@ -698,30 +694,35 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 {
                     var linkField = pair.Aliases.GetLinkField();
                     _methodCode.Append($@"
-                    {Tabs(tabs)}if(!{(methodType == MethodType.Async ? "await " : "")}reader.IsDBNull{(methodType == MethodType.Async ? "Async" : "")}({linkField.Position}))
-                    {Tabs(tabs)}{{
-                        var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}
-                        {Tabs(tabs)}{{
+                    {Tabs(pair.Tabs)}if(!{(methodType == MethodType.Async ? "await " : "")}reader.IsDBNull{(methodType == MethodType.Async ? "Async" : "")}({linkField.Position}))
+                    {Tabs(pair.Tabs)}{{
+                        {Tabs(pair.Tabs)}var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}
+                        {Tabs(pair.Tabs)}{{
 ");
                     for (int i = 0; i < pair.Aliases.Fields.Count; i++)
                     {
                         var field = pair.Aliases.Fields[i];
                         pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
                         _methodCode.Append($@"
-                            {Tabs(tabs)}{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({field.Position}),
+                            {Tabs(pair.Tabs)}{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({field.Position}),
 ");
                     }
                     _methodCode.Append($@" 
-                        {Tabs(tabs)}}};
+                        {Tabs(pair.Tabs)}}};
 ");
                     if (pair.Aliases.InnerEntities.Count == 0)
                     {
-                        if (pair.Parent != null)
+                        var current = pair;
+                        var c = _methodCode.ToString();
+                        while (current.Parent != null)
                         {
+                            c = _methodCode.ToString();
                             _methodCode.Append($@"
-                        {Tabs(tabs)}{pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
-                    {Tabs(tabs)}}}
+                        {Tabs(current.Tabs)}{current.Parent.ItemName}.{current.PropertyName} = {current.ItemName};
+                    {Tabs(current.Tabs)}}}
 ");
+                            current = current.Parent;
+                            c = _methodCode.ToString();
                         }
 
                         continue;
