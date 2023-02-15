@@ -1,20 +1,14 @@
-﻿using Gedaq.Enums;
-using Gedaq.Helpers;
+﻿using Gedaq.Helpers;
 using Gedaq.Npgsql.Generators;
 using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
-using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Reflection;
-using System.Text;
 
 namespace Gedaq.Npgsql
 {
     internal class NpgsqlAttributeProcessor
     {
         private List<QueryReadNpgsql> _readToTypeSources = new List<QueryReadNpgsql>();
-        private List<QueryReadBatchNpgsql> _readBatchToTypeSources = new List<QueryReadBatchNpgsql>();
 
         private QueryParser _queryParser = new QueryParser();
 
@@ -46,37 +40,10 @@ namespace Gedaq.Npgsql
                 _readToTypeSources.Add(queryReadMethod);
                 return;
             }
-
-            if (QueryReadBatchNpgsql.IsHisConstructor(queryReadAttribute.ConstructorArguments, containsType, out var queryReadBatchMethod))
-            {
-                _readBatchToTypeSources.Add(queryReadBatchMethod);
-                return;
-            }
         }
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)
         {
-            var queryReadBatchGenerator = new QueryReadBatchGenerator();
-            foreach (var queryRead in _readBatchToTypeSources)
-            {
-                if(queryRead.Queries.Length == 1)
-                {
-                    var readSource = new QueryReadNpgsql(queryRead);
-                    _readToTypeSources.Add(readSource);
-                    continue;
-                }
-
-                for (int i = 0; i < queryRead.Queries.Length; i++)
-                {
-                    QueryMap query = queryRead.Queries[i];
-                    query.Aliases = _queryParser.Parse(ref query.Query);
-                }
-
-                queryReadBatchGenerator.GenerateMethod(queryRead);
-                context.AddSource($"{queryRead.MethodName}Class.g.cs", queryReadBatchGenerator.GetCode());
-            }
-            _readBatchToTypeSources.Clear();
-
             var queryReadGenerator = new QueryReadGenerator();
             foreach (var queryRead in _readToTypeSources)
             {

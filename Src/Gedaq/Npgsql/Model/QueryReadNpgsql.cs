@@ -5,48 +5,86 @@ using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Reflection.Metadata;
 using System.Text;
 
 namespace Gedaq.Npgsql.Model
 {
+    internal class Parametr
+    {
+        public int Position;
+        public string Name;
+        public ITypeSymbol Type;
+        public int DbType = -1;
+
+        public bool HaveName => Name != null;
+        public bool HaveDbType => DbType >= 0;
+
+        public string VariableName()
+        {
+            return HaveName ?
+                    Name.ToLowerInvariant() :
+                    $"mParametr{Position}"
+                ;
+        }
+    }
+
     internal class QueryReadNpgsql : BaseNpgsql
     {
         public string Query;
         public ITypeSymbol MapTypeName;
         public Aliases Aliases;
-
-        public string[] ParametrNames;
-        public ITypeSymbol[] ParametrTypes;
-        public int[] ParametrDbTypes;
+        public Parametr[] Parametrs;
 
         public QueryReadNpgsql()
         {
         }
 
-        public QueryReadNpgsql(QueryReadBatchNpgsql queryReadBatchNpgsql)
+        public bool HaveParametrs()
         {
-            Query = queryReadBatchNpgsql.Queries[0].Query;
-            MapTypeName = queryReadBatchNpgsql.Queries[0].MapTypeName;
-            Aliases = queryReadBatchNpgsql.Queries[0].Aliases;
-            MethodType = queryReadBatchNpgsql.MethodType;
-            SourceType= queryReadBatchNpgsql.SourceType;
-            ContainTypeName= queryReadBatchNpgsql.ContainTypeName;
-            MethodName= queryReadBatchNpgsql.MethodName;
+            return Parametrs != null;
         }
 
-        public bool HaveParametrTypes()
+        private static void FillParametrs(QueryReadNpgsql source, string[] parametrNames, ITypeSymbol[] parametrTypes, int[] parametrDbTypes)
         {
-            return ParametrTypes != null;
-        }
+            if(parametrTypes == null)
+            {
+                return;
+            }
 
-        public bool HaveParametrNames()
-        {
-            return ParametrNames != null;
-        }
+            if (parametrNames != null &&
+                parametrNames.Length != parametrTypes.Length
+                )
+            {
+                throw new Exception("The number of parameter names and their types do not match");
+            }
 
-        public bool HaveParametrDbTypes()
-        {
-            return ParametrDbTypes != null;
+            if (parametrDbTypes != null &&
+                parametrTypes.Length != parametrDbTypes.Length
+               )
+            {
+                throw new Exception("The number of parameter DbTypes and their types do not match");
+            }
+
+            source.Parametrs = new Parametr[parametrTypes.Length];
+            for (int i = 0; i < parametrTypes.Length; i++)
+            {
+                var parametr = new Parametr();
+                parametr.Type= parametrTypes[i];
+                parametr.Position = i + 1;
+
+                if (parametrNames != null)
+                {
+                    parametr.Name = parametrNames[i];
+                }
+
+                if(parametrDbTypes != null)
+                {
+                    parametr.DbType = parametrDbTypes[i];
+                }
+
+                source.Parametrs[i] = parametr;
+            }
         }
 
         public static bool IsHisConstructor(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out QueryReadNpgsql method)
@@ -83,39 +121,23 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!FillParametrNames(namedArguments[5], methodSource))
+            if (!FillParametrNames(namedArguments[5], methodSource, out var parametrNames))
             {
                 return false;
             }
 
-            if(!FillParametrTypes(namedArguments[6], methodSource))
+            if(!FillParametrTypes(namedArguments[6], methodSource, out var parametrTypes))
             {
                 return false;
             }
 
-            if (methodSource.HaveParametrNames() &&
-                methodSource.HaveParametrTypes() &&
-                methodSource.ParametrNames.Length != methodSource.ParametrTypes.Length
-                )
-            {
-                throw new Exception("The number of parameter names and their types do not match");
-            }
-
-            if (!FillParapetrDbTypes(namedArguments[7], methodSource))
+            if (!FillParapetrDbTypes(namedArguments[7], methodSource, out var parametrDbTypes))
             {
                 return false;
-            }
-
-            if(methodSource.HaveParametrTypes() &&
-               methodSource.HaveParametrDbTypes() &&
-               methodSource.ParametrDbTypes.Length != methodSource.ParametrTypes.Length
-               )
-            {
-                throw new Exception("The number of parameter DbTypes and their types do not match");
             }
 
             methodSource.ContainTypeName = containsType;
-
+            FillParametrs(methodSource, parametrNames, parametrTypes, parametrDbTypes);
             method = methodSource;
             return true;
         }
@@ -185,8 +207,9 @@ namespace Gedaq.Npgsql.Model
             return true;
         }
 
-        private static bool FillParametrNames(TypedConstant argument, QueryReadNpgsql methodSource)
+        private static bool FillParametrNames(TypedConstant argument, QueryReadNpgsql methodSource, out string[]parametrNames)
         {
+            parametrNames = null;
             if (!(argument.Type is IArrayTypeSymbol strArray) ||
                 strArray.ElementType.Name != nameof(String) ||
                 strArray.Rank != 1
@@ -200,19 +223,20 @@ namespace Gedaq.Npgsql.Model
                 return true;
             }
 
-            methodSource.ParametrNames = new string[argument.Values.Length];
-            for (int i = 0; i < methodSource.ParametrNames.Length; i++)
+            parametrNames = new string[argument.Values.Length];
+            for (int i = 0; i < parametrNames.Length; i++)
             {
                 var item = argument.Values[i];
                 var parametrName = (string)item.Value;
-                methodSource.ParametrNames[i] = parametrName;
+                parametrNames[i] = parametrName;
             }
 
             return true;
         }
 
-        private static bool FillParametrTypes(TypedConstant argument, QueryReadNpgsql methodSource)
+        private static bool FillParametrTypes(TypedConstant argument, QueryReadNpgsql methodSource, out ITypeSymbol[] parametrTypes)
         {
+            parametrTypes = null;
             if (!(argument.Type is IArrayTypeSymbol typeArray) ||
                 typeArray.ElementType.Name != nameof(Type) ||
                 typeArray.Rank != 1
@@ -226,13 +250,13 @@ namespace Gedaq.Npgsql.Model
                 return true;
             }
 
-            methodSource.ParametrTypes = new ITypeSymbol[argument.Values.Length];
-            for (int i = 0; i < methodSource.ParametrTypes.Length; i++)
+            parametrTypes = new ITypeSymbol[argument.Values.Length];
+            for (int i = 0; i < parametrTypes.Length; i++)
             {
                 var item = argument.Values[i].Value;
                 if (item is ITypeSymbol typeSymbol)
                 {
-                    methodSource.ParametrTypes[i] = typeSymbol;
+                    parametrTypes[i] = typeSymbol;
                 }
                 else
                 {
@@ -243,8 +267,9 @@ namespace Gedaq.Npgsql.Model
             return true;
         }
 
-        private static bool FillParapetrDbTypes(TypedConstant argument, QueryReadNpgsql methodSource)
+        private static bool FillParapetrDbTypes(TypedConstant argument, QueryReadNpgsql methodSource, out int[] parametrDbTypes)
         {
+            parametrDbTypes = null;
             if (!(argument.Type is IArrayTypeSymbol dbTypeArray) ||
                 dbTypeArray.ElementType.TypeKind != TypeKind.Enum ||
                 dbTypeArray.Rank != 1 ||
@@ -260,10 +285,10 @@ namespace Gedaq.Npgsql.Model
                 return true;
             }
 
-            methodSource.ParametrDbTypes = new int[argument.Values.Length];
-            for (int i = 0; i < methodSource.ParametrDbTypes.Length; i++)
+            parametrDbTypes = new int[argument.Values.Length];
+            for (int i = 0; i < parametrDbTypes.Length; i++)
             {
-                methodSource.ParametrDbTypes[i] = (int)argument.Values[i].Value;
+                parametrDbTypes[i] = (int)argument.Values[i].Value;
             }
 
             return true;

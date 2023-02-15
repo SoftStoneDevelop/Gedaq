@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Xml.Linq;
@@ -185,24 +186,14 @@ namespace {source.ContainTypeName.ContainingNamespace}
             _methodCode.Append($@"
             this {sourceType.ToTypeName()} {sourceType.ToParametrName()}
 ");
-            if(source.HaveParametrTypes())
+            if(source.HaveParametrs())
             {
-                for (int i = 0; i < source.ParametrTypes.Length; i++)
+                for (int i = 0; i < source.Parametrs.Length; i++)
                 {
-                    ITypeSymbol type = source.ParametrTypes[i];
-                    if(source.HaveParametrNames())
-                    {
-                        string name = source.ParametrNames[i].ToLowerInvariant();
-                        _methodCode.Append($@",
-            {type.GetFullTypeName()} {name}
+                    var parametr = source.Parametrs[i];
+                    _methodCode.Append($@",
+            {parametr.Type.GetFullTypeName()} {parametr.VariableName()}
 ");
-                    }
-                    else
-                    {
-                        _methodCode.Append($@",
-            {type.GetFullTypeName()} mParametr{i}
-");
-                    }
                 }
             }
         }
@@ -326,29 +317,19 @@ namespace {source.ContainTypeName.ContainingNamespace}
             {{
                 command = {createCommand};
 ");
-            if(source.HaveParametrTypes())
+            if(source.HaveParametrs())
             {
                 _methodCode.Append($@"
                 command.Set{source.MethodName}Parametrs(
 ");
-                for (int i = 0; i < source.ParametrTypes.Length; i++)
+                for (int i = 0; i < source.Parametrs.Length; i++)
                 {
-                    ITypeSymbol type = source.ParametrTypes[i];
-                    if (source.HaveParametrNames())
-                    {
-                        string name = source.ParametrNames[i].ToLowerInvariant();
-                        _methodCode.Append($@"
-                    in {name}
+                    var parametr = source.Parametrs[i];
+                    _methodCode.Append($@"
+                    in {parametr.VariableName()}
 ");
-                    }
-                    else
-                    {
-                        _methodCode.Append($@"
-                    in mParametr{i}
-");
-                    }
 
-                    if(i == source.ParametrTypes.Length - 1)
+                    if (i == source.Parametrs.Length - 1)
                     {
                         _methodCode.Append($@"
                     );
@@ -446,27 +427,28 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 command.CommandTimeout = timeout.Value;
             }}
 ");
-            if (source.HaveParametrTypes())
+            if (source.HaveParametrs())
             {
-                for (int i = 0; i < source.ParametrTypes.Length; i++)
+                for (int i = 0; i < source.Parametrs.Length; i++)
                 {
+                    var parametr = source.Parametrs[i];
                     _methodCode.Append($@"
-            var parametr{i} = new NpgsqlParameter<{source.ParametrTypes[i].GetFullTypeName()}>();
+            var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>();
 ");
-                    if (source.HaveParametrDbTypes())
+                    if (parametr.HaveDbType)
                     {
                         _methodCode.Append($@"
-            parametr{i}.NpgsqlDbType = ({TypeHelper.NpgsqlDbTypeName}){source.ParametrDbTypes[i]};
+            parametr{parametr.Position}.NpgsqlDbType = ({TypeHelper.NpgsqlDbTypeName}){parametr.DbType};
 ");
                     }
-                    if (source.HaveParametrNames())
+                    if (parametr.HaveName)
                     {
                         _methodCode.Append($@"
-            parametr{i}.ParameterName = ""{source.ParametrNames[i]}"";
+            parametr{parametr.Position}.ParameterName = ""{parametr.Name}"";
 ");
                     }
                     _methodCode.Append($@"
-            command.Parameters.Add(parametr{i});
+            command.Parameters.Add(parametr{parametr.Position});
 ");
                 }
             }
@@ -517,7 +499,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             QueryReadNpgsql source
             )
         {
-            if(!source.HaveParametrTypes())
+            if(!source.HaveParametrs())
             {
                 return;
             }
@@ -527,43 +509,24 @@ namespace {source.ContainTypeName.ContainingNamespace}
         public static  void Set{source.MethodName}Parametrs(
             this NpgsqlCommand command
 ");
-            for (int i = 0; i < source.ParametrTypes.Length; i++)
+            for (int i = 0; i < source.Parametrs.Length; i++)
             {
-                ITypeSymbol type = source.ParametrTypes[i];
-                if (source.HaveParametrNames())
-                {
-                    string name = source.ParametrNames[i].ToLowerInvariant();
-                    _methodCode.Append($@",
-            in {type.GetFullTypeName()} {name}
+                var parametr = source.Parametrs[i];
+                _methodCode.Append($@",
+            in {parametr.Type.GetFullTypeName()} {parametr.VariableName()}
 ");
-                }
-                else
-                {
-                    _methodCode.Append($@",
-            in {type.GetFullTypeName()} mParametr{i}
-");
-                }
             }
 
             _methodCode.Append($@"
         )
         {{
 ");
-            for (int i = 0; i < source.ParametrTypes.Length; i++)
+            for (int i = 0; i < source.Parametrs.Length; i++)
             {
-                if (source.HaveParametrNames())
-                {
-                    string name = source.ParametrNames[i].ToLowerInvariant();
-                    _methodCode.Append($@"
-            ((NpgsqlParameter<{source.ParametrTypes[i].GetFullTypeName()}>)command.Parameters[{i}]).TypedValue = {name};
+                var parametr = source.Parametrs[i];
+                _methodCode.Append($@"
+            ((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>)command.Parameters[{i}]).TypedValue = {parametr.VariableName()};
 ");
-                }
-                else
-                {
-                    _methodCode.Append($@"
-            ((NpgsqlParameter<{source.ParametrTypes[i].GetFullTypeName()}>)command.Parameters[{i}]).TypedValue = mParametr{i};
-");
-                }
 
             }
 
@@ -575,37 +538,32 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
         private void SetCommandParametrs(QueryReadNpgsql source)
         {
-            if(!source.HaveParametrTypes())
+            if(!source.HaveParametrs())
             {
                 return;
             }
 
-            for (int i = 0; i< source.ParametrTypes.Length; i++)
+            for (int i = 0; i< source.Parametrs.Length; i++)
             {
+                var parametr = source.Parametrs[i];
                 _methodCode.Append($@"
-                var parametr{i} = new NpgsqlParameter<{source.ParametrTypes[i].GetFullTypeName()}>();
+                var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>();
 ");
-                if(source.HaveParametrDbTypes())
+                if(parametr.HaveDbType)
                 {
                     _methodCode.Append($@"
-                parametr{i}.NpgsqlDbType = ({TypeHelper.NpgsqlDbTypeName}){source.ParametrDbTypes[i]};
-");
-                }
-                if(source.HaveParametrNames())
-                {
-                    _methodCode.Append($@"
-                parametr{i}.ParameterName = ""{source.ParametrNames[i]}"";
-                parametr{i}.TypedValue = {source.ParametrNames[i].ToLowerInvariant()};
+                parametr{parametr.Position}.NpgsqlDbType = ({TypeHelper.NpgsqlDbTypeName}){parametr.DbType};
 ");
                 }
-                else
+                if(parametr.HaveName)
                 {
                     _methodCode.Append($@"
-                parametr{i}.TypedValue = mParametr{i};
+                parametr{parametr.Position}.ParameterName = ""{parametr.Name}"";
 ");
                 }
                 _methodCode.Append($@"
-                command.Parameters.Add(parametr{i});
+                parametr{parametr.Position}.TypedValue = {parametr.VariableName()};
+                command.Parameters.Add(parametr{parametr.Position});
 ");
             }
         }
