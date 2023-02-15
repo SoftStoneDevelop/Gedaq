@@ -3,6 +3,7 @@ using Npgsql;
 using NpgsqlTests.Helpers;
 using NUnit.Framework;
 using System;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -272,7 +273,7 @@ ORDER BY p.id ASC
             "ToClass",
             parametrTypes: new Type[] { typeof(int) }
             )]
-        public void ReadToClassConnection()
+        public void ReadToClass()
         {
             var list = _dataSource.OpenConnection().ToClass(3).ToList();
 
@@ -335,7 +336,7 @@ ORDER BY p.id ASC
         }
 
         [Test]
-        public async Task ReadToClassConnectionAsync()
+        public async Task ReadToClassAsync()
         {
             var list = await _dataSource.OpenConnection().ToClassAsync(3).ToListAsync();
 
@@ -398,6 +399,30 @@ ORDER BY p.id ASC
         }
 
         [Test]
+        public void CreateCommand()
+        {
+            using var command = _dataSource.OpenConnection().CreateToClassCommand(false, 10);
+            Assert.That(command.IsPrepared, Is.EqualTo(false));
+            Assert.That(command.CommandTimeout, Is.EqualTo(10));
+
+            using var command2 = _dataSource.OpenConnection().CreateToClassCommand(true);
+            Assert.That(command2.IsPrepared, Is.EqualTo(true));
+            Assert.That(command2.CommandTimeout, Is.EqualTo(30));
+        }
+
+        [Test]
+        public async Task CreateCommandAsync()
+        {
+            using var command = await _dataSource.OpenConnection().CreateToClassCommandAsync(false, timeout: 10);
+            Assert.That(command.IsPrepared, Is.EqualTo(false));
+            Assert.That(command.CommandTimeout, Is.EqualTo(10));
+
+            using var command2 = await _dataSource.OpenConnection().CreateToClassCommandAsync(true);
+            Assert.That(command2.IsPrepared, Is.EqualTo(true));
+            Assert.That(command2.CommandTimeout, Is.EqualTo(30));
+        }
+
+        [Test]
         [Gedaq.Npgsql.Attributes.QueryRead(
             @"
 SELECT 
@@ -425,7 +450,7 @@ ORDER BY p.id ASC
             "ToObjArr",
             parametrTypes: new Type[] { typeof(int) }
             )]
-        public void ReadToObjArrConnection()
+        public void ReadToObjArr()
         {
             var list = _dataSource.OpenConnection().ToObjArr(3).ToList();
 
@@ -457,7 +482,7 @@ ORDER BY p.id ASC
         }
 
         [Test]
-        public async Task ReadToObjArrConnectionAsync()
+        public async Task ReadToObjArrAsync()
         {
             var list = await _dataSource.OpenConnection().ToObjArrAsync(3).ToListAsync();
 
@@ -512,7 +537,7 @@ ORDER BY p.id ASC
             "ToObj",
             parametrTypes: new Type[] { typeof(int) }
             )]
-        public void ReadToObjConnection()
+        public void ReadToObj()
         {
             var list = _dataSource.OpenConnection().ToObj(3).ToList();
 
@@ -544,7 +569,7 @@ ORDER BY p.id ASC
         }
 
         [Test]
-        public async Task ReadToObjConnectionAsync()
+        public async Task ReadToObjAsync()
         {
             var list = await _dataSource.OpenConnection().ToObjAsync(3).ToListAsync();
 
