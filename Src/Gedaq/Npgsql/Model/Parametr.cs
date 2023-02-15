@@ -41,7 +41,7 @@ namespace Gedaq.Npgsql.Model
             parametr = null;
             methodName = null;
 
-            if (namedArguments.Length != 9)
+            if (namedArguments.Length != 8)
             {
                 return false;
             }
@@ -110,23 +110,14 @@ namespace Gedaq.Npgsql.Model
 
             result.Direction = (ParameterDirection)namedArguments[6].Value;
 
-            if (!(namedArguments[7].Type is INamedTypeSymbol numberBatchParam) ||
-                numberBatchParam.Name != nameof(Int32)
-                )
-            {
-                return false;
-            }
-
-            result.NumberInBatch = (int)namedArguments[7].Value;
-
-            if (!(namedArguments[8].Type is INamedTypeSymbol positionParam) ||
+            if (!(namedArguments[7].Type is INamedTypeSymbol positionParam) ||
                 positionParam.Name != nameof(Int32)
                 )
             {
                 return false;
             }
 
-            result.Position = (int)namedArguments[8].Value;
+            result.Position = (int)namedArguments[7].Value;
 
             if(result.HaveName && result.HavePosition)
             {

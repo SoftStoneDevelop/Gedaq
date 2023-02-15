@@ -1,6 +1,7 @@
 ﻿using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
+using Gedaq.Provider.Enums;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
@@ -56,7 +57,7 @@ namespace Gedaq.Npgsql.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out QueryReadNpgsql method)
         {
             method = null;
-            if (namedArguments.Length != 6)
+            if (namedArguments.Length != 8)
             {
                 return false;
             }
@@ -89,6 +90,20 @@ namespace Gedaq.Npgsql.Model
 
             methodSource.ContainTypeName = containsType;
             method = methodSource;
+            return true;
+        }
+
+        private static bool FillGenerateType(TypedConstant argument, QueryReadNpgsql methodSource)
+        {
+            if (argument.Kind != TypedConstantKind.Enum ||
+                !(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
+                !namedTypeSymbol.IsAssignableFrom("Gedaq.Npgsql.Enums", "GenerateType")
+                )
+            {
+                return false;
+            }
+
+            //methodSource.SourceType = (GenerateType)argument.Value;
             return true;
         }
 
