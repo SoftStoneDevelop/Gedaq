@@ -56,6 +56,7 @@ namespace Gedaq.Npgsql.Generators
         {
             _methodCode.Append($@"
 using Npgsql;
+using System;
 using System.Data;
 using System.Collections;
 using System.Collections.Generic;
@@ -167,13 +168,13 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if(methodType == MethodType.Sync)
             {
                 _methodCode.Append($@"        
-        public static IEnumerable<{source.MapTypeName.GetFullTypeName()}> {source.MethodName}(
+        public static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> {source.MethodName}(
 ");
             }
             else
             {
                 _methodCode.Append($@"        
-        public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName()}> {source.MethodName}Async(
+        public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> {source.MethodName}Async(
 ");
             }
         }
@@ -192,7 +193,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 {
                     var parametr = source.Parametrs[i];
                     _methodCode.Append($@",
-            {parametr.Type.GetFullTypeName()} {parametr.VariableName()}
+            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}
 ");
                 }
             }
@@ -225,14 +226,14 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if (methodType == MethodType.Sync)
             {
                 _methodCode.Append($@"
-        public static IEnumerable<{source.MapTypeName.GetFullTypeName()}> Execute{source.MethodName}Command(this NpgsqlCommand command)
+        public static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}Command(this NpgsqlCommand command)
         {{
 ");
             }
             else
             {
                 _methodCode.Append($@"
-        public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName()}> Execute{source.MethodName}CommandAsync(
+        public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}CommandAsync(
             this NpgsqlCommand command,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
@@ -432,21 +433,55 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 for (int i = 0; i < source.Parametrs.Length; i++)
                 {
                     var parametr = source.Parametrs[i];
-                    _methodCode.Append($@"
+
+                    if(parametr.Type.IsNullableType())
+                    {
+                        _methodCode.Append($@"
+            var parametr{parametr.Position} = new NpgsqlParameter();
+");
+                    }
+                    else
+                    {
+                        _methodCode.Append($@"
             var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>();
 ");
+                    }
+
                     if (parametr.HaveDbType)
                     {
                         _methodCode.Append($@"
             parametr{parametr.Position}.NpgsqlDbType = ({TypeHelper.NpgsqlDbTypeName}){parametr.DbType};
 ");
                     }
+
                     if (parametr.HaveName)
                     {
                         _methodCode.Append($@"
             parametr{parametr.Position}.ParameterName = ""{parametr.Name}"";
 ");
                     }
+
+                    if (parametr.HaveSize)
+                    {
+                        _methodCode.Append($@"
+            parametr{parametr.Position}.Size = {parametr.Size};
+");
+                    }
+
+                    if (parametr.Nullable)
+                    {
+                        _methodCode.Append($@"
+            parametr{parametr.Position}.IsNullable = true;
+");
+                    }
+
+                    if (parametr.Direction != System.Data.ParameterDirection.Input)
+                    {
+                        _methodCode.Append($@"
+            parametr{parametr.Position}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
+");
+                    }
+
                     _methodCode.Append($@"
             command.Parameters.Add(parametr{parametr.Position});
 ");
@@ -513,7 +548,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             {
                 var parametr = source.Parametrs[i];
                 _methodCode.Append($@",
-            in {parametr.Type.GetFullTypeName()} {parametr.VariableName()}
+            in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}
 ");
             }
 
@@ -524,9 +559,25 @@ namespace {source.ContainTypeName.ContainingNamespace}
             for (int i = 0; i < source.Parametrs.Length; i++)
             {
                 var parametr = source.Parametrs[i];
-                _methodCode.Append($@"
+                if(parametr.Type.IsNullableType())
+                {
+                    _methodCode.Append($@"
+            if({parametr.VariableName()}.HasValue)
+            {{
+                ((NpgsqlParameter)command.Parameters[{i}]).Value = {parametr.VariableName()}.Value;
+            }}
+            else
+            {{
+                ((NpgsqlParameter)command.Parameters[{i}]).Value = DBNull.Value;
+            }}
+");
+                }
+                else
+                {
+                    _methodCode.Append($@"
             ((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>)command.Parameters[{i}]).TypedValue = {parametr.VariableName()};
 ");
+                }
 
             }
 
@@ -576,6 +627,19 @@ namespace {source.ContainTypeName.ContainingNamespace}
             {
                 _methodCode.Append($@"
                     yield return reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);
+");
+            }
+            else if(source.MapTypeName.IsNullableType())
+            {
+                _methodCode.Append($@"
+                    if(reader.IsDBNull(0))
+                    {{
+                        yield return ({source.MapTypeName.GetFullTypeName(true)})null;
+                    }}
+                    else
+                    {{
+                        yield return reader.GetFieldValue<{source.MapTypeName.GetFullTypeName(true, addQuestionNoatble: false)}>(0);
+                    }}
 ");
             }
             else if (source.MapTypeName.Name == nameof(Object))

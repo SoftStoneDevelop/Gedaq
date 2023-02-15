@@ -68,9 +68,19 @@ namespace Gedaq.Helpers
         }
 
         internal static string GetFullTypeName(
-            this ITypeSymbol typeSymbol
+            this ITypeSymbol typeSymbol,
+            bool replaceNullable = false,
+            bool addQuestionNoatble = true
             )
         {
+            if(replaceNullable && typeSymbol.IsNullableType())
+            {
+                var named = (INamedTypeSymbol)typeSymbol;
+                var firstArg = named.TypeArguments[0];
+
+                return $"{firstArg.GetFullTypeName()}{(addQuestionNoatble ? "?" : "")}";
+            }
+
             if(typeSymbol is INamedTypeSymbol namedTypeSymbol)
             {
                 return $"{namedTypeSymbol.ContainingNamespace.GetFullNamespace()}.{typeSymbol.Name}";
@@ -82,6 +92,20 @@ namespace Gedaq.Helpers
             }
 
             throw new NotImplementedException();
+        }
+
+        internal static bool IsNullableType(this ITypeSymbol typeSymbol)
+        {
+            if(!(typeSymbol is INamedTypeSymbol namedTypeSymbol) ||
+                !namedTypeSymbol.IsGenericType ||
+                namedTypeSymbol.ConstructedFrom == null ||
+                namedTypeSymbol.ConstructedFrom.GetFullTypeName() != "System.Nullable"
+                )
+            {
+                return false;
+            }
+
+            return true;
         }
 
         internal static void GetPropertyOrFieldName(
