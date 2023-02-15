@@ -47,29 +47,37 @@ namespace Gedaq.Npgsql
                 }
             }
 
+            FillReadMethods();
+
+            return false;
+        }
+
+        private void FillReadMethods()
+        {
             var set = new HashSet<int>();
             foreach (var read in _readTemp.Values)
             {
-                if(read.Count != 1)
+                if (read.Count != 1)
                 {
                     //batch case
                     throw new NotImplementedException();
                 }
 
                 var readSingle = read[0];
-                if(_parametrsTemp.TryGetValue(readSingle.MethodName, out var parametrs))
+                if (_parametrsTemp.TryGetValue(readSingle.MethodName, out var parametrs))
                 {
+                    parametrs = parametrs.OrderBy(or => or.Position).ToList();
                     readSingle.Parametrs = new Parametr[parametrs.Count];
 
                     set.Clear();
                     var containNamedParametr = false;
                     var containPositionParametr = false;
-                    for (int i = 0;i < parametrs.Count; i++)
+                    for (int i = 0; i < parametrs.Count; i++)
                     {
                         var parametr = parametrs[i];
-                        if(parametr.HavePosition)
+                        if (parametr.HavePosition)
                         {
-                            if(!set.Add(parametr.Position))
+                            if (!set.Add(parametr.Position))
                             {
                                 throw new Exception("Parametr position must be unique");
                             }
@@ -86,7 +94,7 @@ namespace Gedaq.Npgsql
                         readSingle.Parametrs[i] = parametr;
                     }
 
-                    if(containNamedParametr && containPositionParametr)
+                    if (containNamedParametr && containPositionParametr)
                     {
                         throw new Exception("Parameters in query can be positional or named, but not combined");
                     }
@@ -97,8 +105,6 @@ namespace Gedaq.Npgsql
 
             _readTemp.Clear();
             _parametrsTemp.Clear();
-
-            return false;
         }
 
         private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
