@@ -35,9 +35,9 @@ namespace Gedaq.Npgsql.Generators
             Reset();
             Start(source);
 
-            ReadMethods(source);
+            ExecuteMethods(source);
 
-            CommandMethods(source);
+            CreateCommandMethods(source);
             ExecuteCommandMethods(source);
             SetParametrsMethod(source);
 
@@ -73,7 +73,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
         }
 
-        private void ReadMethods(QueryReadNpgsql source)
+        private void ExecuteMethods(QueryReadNpgsql source)
         {
             if (source.QueryType.HasFlag(QueryType.Read))
             {
@@ -90,7 +90,15 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
             if (source.QueryType.HasFlag(QueryType.Scalar))
             {
-                throw new NotImplementedException();
+                if (source.MethodType.HasFlag(MethodType.Sync))
+                {
+                    ScalarMethod(source);
+                }
+
+                if (source.MethodType.HasFlag(MethodType.Async))
+                {
+                    ScalarMethodAsync(source);
+                }
             }
 
             if (source.QueryType.HasFlag(QueryType.NonQuery))
@@ -99,12 +107,54 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
+        private void ScalarMethod(QueryReadNpgsql source)
+        {
+            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            {
+                StartScalarMethod(source, MethodType.Sync);
+                QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
+                EndMethodParametrs();
+                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync);
+                EndMethod();
+            }
+
+            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            {
+                StartScalarMethod(source, MethodType.Sync);
+                QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
+                EndMethodParametrs();
+                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
+                EndMethod();
+            }
+        }
+
+        private void ScalarMethodAsync(QueryReadNpgsql source)
+        {
+            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            {
+                StartScalarMethod(source, MethodType.Async);
+                QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
+                AsyncEndMethodParametrs(false);
+                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async);
+                EndMethod();
+            }
+
+            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            {
+                StartScalarMethod(source, MethodType.Async);
+                QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
+                AsyncEndMethodParametrs(false);
+                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
+                EndMethod();
+            }
+        }
+
         private void ReadMethod(QueryReadNpgsql source)
         {
             if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartReadMethod(source, MethodType.Sync);
-                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
+                QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
                 EndMethodParametrs();
                 ReadMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync);
                 EndMethod();
@@ -113,7 +163,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartReadMethod(source, MethodType.Sync);
-                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
+                QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
                 EndMethodParametrs();
                 ReadMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
                 EndMethod();
@@ -125,8 +175,8 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartReadMethod(source, MethodType.Async);
-                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
-                AsyncEndMethodParametrs();
+                QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
+                AsyncEndMethodParametrs(true);
                 ReadMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async);
                 EndMethod();
             }
@@ -134,8 +184,8 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartReadMethod(source, MethodType.Async);
-                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
-                AsyncEndMethodParametrs();
+                QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
+                AsyncEndMethodParametrs(true);
                 ReadMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
                 EndMethod();
             }
@@ -143,22 +193,47 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
         private void ExecuteCommandMethods(QueryReadNpgsql source)
         {
-            if (source.MethodType.HasFlag(MethodType.Sync))
+            if(source.QueryType.HasFlag(QueryType.Read))
             {
-                StartExecuteCommand(source, MethodType.Sync);
-                ExecuteCommand(source, MethodType.Sync);
-                EndMethod();
+                if (source.MethodType.HasFlag(MethodType.Sync))
+                {
+                    StartExecuteCommand(source, MethodType.Sync);
+                    ExecuteCommand(source, MethodType.Sync);
+                    EndMethod();
+                }
+
+                if (source.MethodType.HasFlag(MethodType.Async))
+                {
+                    StartExecuteCommand(source, MethodType.Async);
+                    ExecuteCommand(source, MethodType.Async);
+                    EndMethod();
+                }
             }
 
-            if (source.MethodType.HasFlag(MethodType.Async))
+            if (source.QueryType.HasFlag(QueryType.Scalar))
             {
-                StartExecuteCommand(source, MethodType.Async);
-                ExecuteCommand(source, MethodType.Async);
-                EndMethod();
+                if (source.MethodType.HasFlag(MethodType.Sync))
+                {
+                    StartExecuteScalarCommand(source, MethodType.Sync);
+                    ExecuteScalarCommand(source, MethodType.Sync);
+                    EndMethod();
+                }
+
+                if (source.MethodType.HasFlag(MethodType.Async))
+                {
+                    StartExecuteScalarCommand(source, MethodType.Async);
+                    ExecuteScalarCommand(source, MethodType.Async);
+                    EndMethod();
+                }
+            }
+
+            if (source.QueryType.HasFlag(QueryType.NonQuery))
+            {
+                throw new NotImplementedException();
             }
         }
 
-        private void CommandMethods(QueryReadNpgsql source)
+        private void CreateCommandMethods(QueryReadNpgsql source)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -206,7 +281,43 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
-        private void StartMethodParametrs(
+        private string GetScalarTypeName(QueryReadNpgsql source)
+        {
+            if(source.Aliases.IsRowsAffected)
+            {
+                return "System.Int32";
+            }
+
+            if (source.MapTypeName.IsKnownProviderType())
+            {
+                return source.MapTypeName.GetFullTypeName();
+            }
+
+            var firstField = source.Aliases.GetFirstFieldInQuery();
+            source.MapTypeName.GetPropertyOrFieldName(firstField.Name, out _, out var type);
+            return type.GetFullTypeName(true);
+        }
+
+        private void StartScalarMethod(
+            QueryReadNpgsql source,
+            MethodType methodType
+            )
+        {
+            if (methodType == MethodType.Sync)
+            {
+                _methodCode.Append($@"        
+        public static {GetScalarTypeName(source)} Scalar{source.MethodName}(
+");
+            }
+            else
+            {
+                _methodCode.Append($@"        
+        public static async Task<{GetScalarTypeName(source)}> Scalar{source.MethodName}Async(
+");
+            }
+        }
+
+        private void QueryMethodParametrs(
             QueryReadNpgsql source,
             NpgsqlSourceType sourceType
             )
@@ -235,11 +346,11 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
         }
 
-        private void AsyncEndMethodParametrs()
+        private void AsyncEndMethodParametrs(bool enumerator)
         {
             _methodCode.Append($@",
             int? timeout = null,
-            [EnumeratorCancellation] CancellationToken cancellationToken = default
+            {(enumerator ? "[EnumeratorCancellation] " : "")}CancellationToken cancellationToken = default
         )
         {{
 ");
@@ -267,6 +378,39 @@ namespace {source.ContainTypeName.ContainingNamespace}
         {{
 ");
             }
+        }
+
+        private void StartExecuteScalarCommand(
+            QueryReadNpgsql source,
+            MethodType methodType
+            )
+        {
+            if (methodType == MethodType.Sync)
+            {
+                _methodCode.Append($@"        
+        public static {GetScalarTypeName(source)} Scalar{source.MethodName}Command(this NpgsqlCommand command)
+        {{
+");
+            }
+            else
+            {
+                _methodCode.Append($@"        
+        public static async Task<{GetScalarTypeName(source)}> Scalar{source.MethodName}CommandAsync(
+            this NpgsqlCommand command,
+            CancellationToken cancellationToken = default
+            )
+        {{
+");
+            }
+        }
+
+        private void ExecuteScalarCommand(QueryReadNpgsql source, MethodType methodType)
+        {
+            var await = methodType == MethodType.Async ? "await " : "";
+            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
+            _methodCode.Append($@"
+            return ({GetScalarTypeName(source)}){await}command.ExecuteScalar{async};
+");
         }
 
         private void ExecuteCommand(QueryReadNpgsql source, MethodType methodType)
@@ -306,6 +450,87 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     }}
                 
                     {await}reader.Dispose{disposeAsync};
+                }}
+            }}
+");
+        }
+
+        private void ScalarMethodBody(
+            QueryReadNpgsql source,
+            Enums.NpgsqlSourceType sourceType,
+            MethodType methodType
+            )
+        {
+            var await = methodType == MethodType.Async ? "await " : "";
+            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
+            var disposeOrCloseAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
+
+            if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
+            {
+                _methodCode.Append($@"
+            bool needClose = {sourceType.ToParametrName()}.State == ConnectionState.Closed;
+            if(needClose)
+            {{
+                {await}{sourceType.ToParametrName()}.Open{async};
+            }}
+");
+            }
+            var createCommand =
+                methodType == MethodType.Async ?
+                $"await Create{source.MethodName}CommandAsync({sourceType.ToParametrName()}, false, cancellationToken, timeout)" :
+                $"Create{source.MethodName}Command({sourceType.ToParametrName()}, false, timeout)"
+                ;
+            _methodCode.Append($@"
+            NpgsqlCommand command = null;
+            try
+            {{
+                command = {createCommand};
+");
+            if (source.HaveParametrs())
+            {
+                _methodCode.Append($@"
+                command.Set{source.MethodName}Parametrs(
+");
+                for (int i = 0; i < source.Parametrs.Length; i++)
+                {
+                    var parametr = source.Parametrs[i];
+                    _methodCode.Append($@"
+                    in {parametr.VariableName()}
+");
+
+                    if (i == source.Parametrs.Length - 1)
+                    {
+                        _methodCode.Append($@"
+                    );
+");
+                    }
+                    else
+                    {
+                        _methodCode.Append($@",");
+                    }
+                }
+            }
+
+            _methodCode.Append($@"
+                return ({GetScalarTypeName(source)}){await}command.ExecuteScalar{async};
+            }}
+            finally
+            {{
+");
+            if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
+            {
+                _methodCode.Append($@"
+                if (needClose)
+                {{
+                    {await}connection.Close{disposeOrCloseAsync};
+                }}
+");
+            }
+            _methodCode.Append($@"
+                if(command != null)
+                {{
+                    command.Parameters.Clear();
+                    {await}command.Dispose{disposeOrCloseAsync};
                 }}
             }}
 ");
@@ -626,7 +851,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             QueryReadNpgsql source
             )
         {
-            if (source.MapTypeName.IsPrimitive())
+            if (source.MapTypeName.IsKnownProviderType())
             {
                 _methodCode.Append($@"
                     yield return reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);

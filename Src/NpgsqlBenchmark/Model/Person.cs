@@ -4,11 +4,11 @@
     {
         public int Id { get; set; }
 
-        public string FirstName { get; set; }
+        public char[] FirstName { get; set; }
 
-        public string MiddleName { get; set; }
+        public char[] MiddleName { get; set; }
 
-        public string LastName { get; set; }
+        public char[] LastName { get; set; }
 
         public Identification Identification { get; set; }
     }

@@ -770,7 +770,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             string castTypeExpr
             )
         {
-            if (source.MapTypeName.IsPrimitive())
+            if (source.MapTypeName.IsKnownProviderType())
             {
                 _methodCode.Append($@"
                     yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);

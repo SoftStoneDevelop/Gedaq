@@ -1,6 +1,9 @@
 ﻿using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
+using System.Net;
+using System.Net.NetworkInformation;
+using System.Numerics;
 using System.Text;
 
 namespace Gedaq.Helpers
@@ -94,6 +97,21 @@ namespace Gedaq.Helpers
             throw new NotImplementedException();
         }
 
+        internal static bool IsArrayType(
+            this ITypeSymbol typeSymbol,
+            out ITypeSymbol elementType
+            )
+        {
+            if (typeSymbol is IArrayTypeSymbol arrayTypeSymbol)
+            {
+                elementType = arrayTypeSymbol.ElementType;
+                return true;
+            }
+
+            elementType = null;
+            return false;
+        }
+
         internal static bool IsNullableType(this ITypeSymbol typeSymbol)
         {
             if(!(typeSymbol is INamedTypeSymbol namedTypeSymbol) ||
@@ -134,84 +152,6 @@ namespace Gedaq.Helpers
             }
 
             throw new Exception($"Type '{typeSymbol.GetFullTypeName()}' does not contain a member named '{propertyName}'");
-        }
-
-        internal static bool IsPrimitive(
-            this ITypeSymbol namedTypeSymbol
-            )
-        {
-            switch (namedTypeSymbol.Name)
-            {
-                case "Int32":
-                {
-                    return true;
-                }
-
-                case "UInt32":
-                {
-                    return true;
-                }
-
-                case "Int64":
-                {
-                    return true;
-                }
-
-                case "UInt64":
-                {
-                    return true;
-                }
-
-                case "SByte":
-                {
-                    return true;
-                }
-
-                case "Byte":
-                {
-                    return true;
-                }
-
-                case "Int16":
-                {
-                    return true;
-                }
-
-                case "UInt16":
-                {
-                    return true;
-                }
-
-                case "Char":
-                {
-                    return true;
-                }
-
-                case "Decimal":
-                {
-                    return true;
-                }
-
-                case "Double":
-                {
-                    return true;
-                }
-
-                case "Boolean":
-                {
-                    return true;
-                }
-
-                case "Single":
-                {
-                    return true;
-                }
-
-                default:
-                {
-                    return false;
-                }
-            }
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Running;
+using Gedaq.Common.Enums;
 using Gedaq.Npgsql.Attributes;
 using Gedaq.Npgsql.Enums;
-using Gedaq.Common.Enums;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
 using NpgsqlBenchmark.Benchmarks;
@@ -16,9 +16,10 @@ namespace NpgsqlBenchmark
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
+        //static void Main(string[] args)
         {
-            //GetData();
+            await GetData();
             //TestQuery();
 
             BenchmarkRunner.Run<ReadInnerMap>();
@@ -53,7 +54,7 @@ ORDER BY p.id ASC
             var reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                var id = reader.GetFieldValue<int>(0);
+                var id = reader.GetFieldValue<object>(0);
                 var firstname = reader.GetFieldValue<string>(1);
                 var middlename = reader.GetFieldValue<string>(2);
                 var lastname = reader.GetFieldValue<string>(3);
@@ -63,8 +64,8 @@ ORDER BY p.id ASC
         [Query(
             @"
 SELECT 
+    p.firstname,    
     p.id,
-    p.firstname,
     p.middlename,
     p.lastname
 FROM person p
@@ -74,7 +75,7 @@ ORDER BY p.id ASC
             typeof(Person),
             MethodType.Sync | MethodType.Async,
             SourceType.Connection,
-            "GetData"
+            "GetData", QueryType.Read | QueryType.Scalar
             )]
         [Parametr("GetData", parametrName: "id", parametrType: typeof(int), dbType: NpgsqlDbType.Integer)]
         private static async Task GetData()
@@ -84,8 +85,10 @@ ORDER BY p.id ASC
                 .AddJsonFile("settings.json", optional: false)
                 .Build()
             ;
-
+            
             using var connection = new NpgsqlConnection(root.GetConnectionString("SqlConnection"));
+            var scalar = connection.ScalarGetData(13);
+            var scalarAsync = await connection.ScalarGetDataAsync(13);
             var data = connection.GetData(13).ToList();
             var dataAsync = await connection.GetDataAsync(13).ToListAsync();
         }
