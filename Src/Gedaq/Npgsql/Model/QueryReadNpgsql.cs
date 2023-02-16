@@ -7,6 +7,53 @@ using System.Collections.Immutable;
 
 namespace Gedaq.Npgsql.Model
 {
+    internal class BatchPart
+    {
+        public string BatchName;
+        public string MethodName;
+        public int BatchNumber;
+
+        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, out BatchPart batchPart)
+        {
+            batchPart = null;
+            if (namedArguments.Length != 3)
+            {
+                return false;
+            }
+
+            var result = new BatchPart();
+            if (!(namedArguments[0].Type is INamedTypeSymbol methodName) ||
+                methodName.Name != nameof(String)
+                )
+            {
+                return false;
+            }
+
+            result.MethodName = (string)namedArguments[0].Value;
+
+            if (!(namedArguments[1].Type is INamedTypeSymbol batchName) ||
+                batchName.Name != nameof(String)
+                )
+            {
+                return false;
+            }
+
+            result.BatchName = (string)namedArguments[1].Value;
+
+            if (!(namedArguments[2].Type is INamedTypeSymbol number) ||
+                number.Name != nameof(Int32)
+                )
+            {
+                return false;
+            }
+
+            result.BatchNumber = (int)namedArguments[2].Value;
+
+            batchPart = result;
+            return true;
+        }
+    }
+
     internal class QueryReadNpgsql : BaseNpgsql
     {
         public ITypeSymbol MapTypeName;
@@ -14,12 +61,7 @@ namespace Gedaq.Npgsql.Model
         public Parametr[] Parametrs;
         public string Query;
 
-        public string BatchMethodName;
-        public int BatchNumber;
-        public bool HaveBatch => BatchMethodName != null;
-        public bool HaveBatchNumber => BatchNumber != -1;
-
-        public GenerateType GenerateType;
+        public bool NeedGenerate;
 
         public QueryReadNpgsql()
         {
@@ -33,7 +75,7 @@ namespace Gedaq.Npgsql.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out QueryReadNpgsql method)
         {
             method = null;
-            if (namedArguments.Length != 8)
+            if (namedArguments.Length != 6)
             {
                 return false;
             }
@@ -64,29 +106,9 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!FillGenerateType(namedArguments[5], methodSource))
+            if (!FillGenerate(namedArguments[5], methodSource))
             {
                 return false;
-            }
-
-            if (!FillBatchMethodName(namedArguments[6], methodSource))
-            {
-                return false;
-            }
-
-            if (!FillBatchNumber(namedArguments[7], methodSource))
-            {
-                return false;
-            }
-
-            if(methodSource.HaveBatch && !methodSource.HaveBatchNumber || !methodSource.HaveBatch && methodSource.HaveBatchNumber)
-            {
-                throw new Exception("Batch number and name are filled in pairs");
-            }
-
-            if(methodSource.GenerateType.HasFlag(GenerateType.Batch) && !methodSource.HaveBatch)
-            {
-                throw new Exception("Can't generate a batch without a batch name");
             }
 
             methodSource.ContainTypeName = containsType;
@@ -94,43 +116,16 @@ namespace Gedaq.Npgsql.Model
             return true;
         }
 
-        private static bool FillBatchNumber(TypedConstant argument, QueryReadNpgsql methodSource)
+        private static bool FillGenerate(TypedConstant argument, QueryReadNpgsql methodSource)
         {
             if (!(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
-                namedTypeSymbol.Name != nameof(Int32)
+                namedTypeSymbol.Name != nameof(Boolean)
                 )
             {
                 return false;
             }
 
-            methodSource.BatchNumber = (int)argument.Value;
-            return true;
-        }
-
-        private static bool FillBatchMethodName(TypedConstant argument, QueryReadNpgsql methodSource)
-        {
-            if (!(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
-                namedTypeSymbol.Name != nameof(String)
-                )
-            {
-                return false;
-            }
-
-            methodSource.BatchMethodName = (string)argument.Value;
-            return true;
-        }
-
-        private static bool FillGenerateType(TypedConstant argument, QueryReadNpgsql methodSource)
-        {
-            if (argument.Kind != TypedConstantKind.Enum ||
-                !(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
-                !namedTypeSymbol.IsAssignableFrom("Gedaq.Common.Enums", "GenerateType")
-                )
-            {
-                return false;
-            }
-
-            methodSource.GenerateType = (GenerateType)argument.Value;
+            methodSource.NeedGenerate = (bool)argument.Value;
             return true;
         }
 

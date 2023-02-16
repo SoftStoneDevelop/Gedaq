@@ -170,7 +170,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             MethodType methodType
             )
         {
-            var type = source.AllSameTypes ? source.Queries[0].MapTypeName.GetFullTypeName(true) : "object";
+            var type = source.AllSameTypes ? source.Queries[0].query.MapTypeName.GetFullTypeName(true) : "object";
             if (methodType == MethodType.Sync)
             {
                 _methodCode.Append($@"        
@@ -198,16 +198,16 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 for (int j = 0; j < source.Queries.Count; j++)
                 {
                     var item = source.Queries[j];
-                    if(!item.HaveParametrs())
+                    if(!item.query.HaveParametrs())
                     {
                         continue;
                     }
 
-                    for (int i = 0; i < item.Parametrs.Length; i++)
+                    for (int i = 0; i < item.query.Parametrs.Length; i++)
                     {
-                        var parametr = item.Parametrs[i];
+                        var parametr = item.query.Parametrs[i];
                         _methodCode.Append($@",
-            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{item.BatchNumber}
+            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{item.number}
 ");
                     }
                 }
@@ -238,7 +238,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             MethodType methodType
             )
         {
-            var type = source.AllSameTypes ?  source.Queries[0].MapTypeName.GetFullTypeName(true) : "object";
+            var type = source.AllSameTypes ?  source.Queries[0].query.MapTypeName.GetFullTypeName(true) : "object";
             if (methodType == MethodType.Sync)
             {
                 _methodCode.Append($@"
@@ -343,7 +343,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 for (int j = 0; j < source.Queries.Count; j++)
                 {
                     var item = source.Queries[j];
-                    if (!item.HaveParametrs())
+                    if (!item.query.HaveParametrs())
                     {
                         continue;
                     }
@@ -353,13 +353,13 @@ namespace {source.ContainTypeName.ContainingNamespace}
                         _methodCode.Append($@",");
                     }
 
-                    for (int i = 0; i < item.Parametrs.Length; i++)
+                    for (int i = 0; i < item.query.Parametrs.Length; i++)
                     {
-                        var parametr = item.Parametrs[i];
+                        var parametr = item.query.Parametrs[i];
                         _methodCode.Append($@"
-                    in {parametr.VariableName()}Batch{item.BatchNumber}
+                    in {parametr.VariableName()}Batch{item.number}
 ");
-                        if (i != item.Parametrs.Length - 1)
+                        if (i != item.query.Parametrs.Length - 1)
                         {
                             _methodCode.Append($@",");
                         }
@@ -483,17 +483,17 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
                 _methodCode.Append($@"
             command.CommandText = @""
-{item.Query}
+{item.query.Query}
 "";
 ");
-                if (item.HaveParametrs())
+                if (item.query.HaveParametrs())
                 {
                     _methodCode.Append($@"
             {{
 ");
-                    for (int j = 0; j < item.Parametrs.Length; j++)
+                    for (int j = 0; j < item.query.Parametrs.Length; j++)
                     {
-                        var parametr = item.Parametrs[j];
+                        var parametr = item.query.Parametrs[j];
                         if (parametr.Type.IsNullableType())
                         {
                             _methodCode.Append($@"
@@ -615,16 +615,16 @@ namespace {source.ContainTypeName.ContainingNamespace}
             for (int j = 0; j < source.Queries.Count; j++)
             {
                 var batchCommand = source.Queries[j];
-                if(!batchCommand.HaveParametrs())
+                if(!batchCommand.query.HaveParametrs())
                 {
                     continue;
                 }
 
-                for (int i = 0; i < batchCommand.Parametrs.Length; i++)
+                for (int i = 0; i < batchCommand.query.Parametrs.Length; i++)
                 {
-                    var parametr = batchCommand.Parametrs[i];
+                    var parametr = batchCommand.query.Parametrs[i];
                     _methodCode.Append($@",
-            in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{batchCommand.BatchNumber}
+            in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{batchCommand.number}
 ");
                 }
             }
@@ -635,7 +635,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             for (int j = 0; j < source.Queries.Count; j++)
             {
                 var batchCommand = source.Queries[j];
-                if (!batchCommand.HaveParametrs())
+                if (!batchCommand.query.HaveParametrs())
                 {
                     continue;
                 }
@@ -653,15 +653,15 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
                 }
 
-                for (int i = 0; i < batchCommand.Parametrs.Length; i++)
+                for (int i = 0; i < batchCommand.query.Parametrs.Length; i++)
                 {
-                    var parametr = batchCommand.Parametrs[i];
+                    var parametr = batchCommand.query.Parametrs[i];
                     if (parametr.Type.IsNullableType())
                     {
                         _methodCode.Append($@"
-            if({parametr.VariableName()}Batch{batchCommand.BatchNumber}.HasValue)
+            if({parametr.VariableName()}Batch{batchCommand.number}.HasValue)
             {{
-                ((NpgsqlParameter)batchCommand.Parameters[{i}]).Value = {parametr.VariableName()}Batch{batchCommand.BatchNumber}.Value;
+                ((NpgsqlParameter)batchCommand.Parameters[{i}]).Value = {parametr.VariableName()}Batch{batchCommand.number}.Value;
             }}
             else
             {{
@@ -672,7 +672,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     else
                     {
                         _methodCode.Append($@"
-            ((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>)batchCommand.Parameters[{i}]).TypedValue = {parametr.VariableName()}Batch{batchCommand.BatchNumber};
+            ((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>)batchCommand.Parameters[{i}]).TypedValue = {parametr.VariableName()}Batch{batchCommand.number};
 ");
                     }
 
@@ -703,7 +703,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             MethodType methodType
             )
         {
-            var type = source.AllSameTypes ? source.Queries[0].MapTypeName.GetFullTypeName(true) : "object";
+            var type = source.AllSameTypes ? source.Queries[0].query.MapTypeName.GetFullTypeName(true) : "object";
             var async = methodType == MethodType.Sync ? "()" : "Async(cancellationToken).ConfigureAwait(false)";
             var await = methodType == MethodType.Sync ? "" : "await ";
 
@@ -734,7 +734,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             while({await}reader.Read{async})
             {{
 ");
-                YieldItem(item, source.AllSameTypes ? "" : "(object)");
+                YieldItem(item.query, source.AllSameTypes ? "" : "(object)");
                 _methodCode.Append($@"
             }}
         }}

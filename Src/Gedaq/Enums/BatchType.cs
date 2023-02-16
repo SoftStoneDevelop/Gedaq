@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Gedaq.Enums
 {
-    [Flags]
-    internal enum GenerateType
+    internal enum BatchType
     {
-        Single = 1,
-        Batch = 2
+        Read = 0,
+        NonQuery = 1,
+        Scalar = 2
     }
 }

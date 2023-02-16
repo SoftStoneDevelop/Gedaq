@@ -270,10 +270,7 @@ ORDER BY p.id ASC
             typeof(ReadFixtureModel),
             Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToClass1",
-            Gedaq.Common.Enums.GenerateType.Single | Gedaq.Common.Enums.GenerateType.Batch,
-            "BatchReadToClass",
-            2
+            "ToClass1"
             )]
         [Parametr("ToClass1", parametrType: typeof(int), position: 1)]
         public void ReadToClass()
@@ -363,10 +360,7 @@ ORDER BY p.id ASC
             typeof(ReadFixtureModel),
             Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToClass2",
-            Gedaq.Common.Enums.GenerateType.Single | Gedaq.Common.Enums.GenerateType.Batch,
-            "BatchReadToClass",
-            1
+            "ToClass2"
             )]
         [Parametr("ToClass2", parametrType: typeof(int), position: 1)]
         [Parametr("ToClass2", parametrType: typeof(int), position: 2)]
@@ -433,6 +427,9 @@ ORDER BY p.id ASC
         }
 
         [Test]
+        [QueryBatch("BatchReadToClass", Gedaq.Common.Enums.BatchType.Read, Gedaq.Provider.Enums.MethodType.Sync)]
+        [BatchPart("ToClass2", "BatchReadToClass", 1)]
+        [BatchPart("ToClass1", "BatchReadToClass", 2)]
         public void BatchReadToClass()
         {
             var batchList = _dataSource.OpenConnection().BatchReadToClass(3, 6, 3).Select(sel => sel.ToList()).ToList();
