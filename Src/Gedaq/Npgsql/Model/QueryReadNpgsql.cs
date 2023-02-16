@@ -7,53 +7,6 @@ using System.Collections.Immutable;
 
 namespace Gedaq.Npgsql.Model
 {
-    internal class BatchPart
-    {
-        public string BatchName;
-        public string MethodName;
-        public int BatchNumber;
-
-        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, out BatchPart batchPart)
-        {
-            batchPart = null;
-            if (namedArguments.Length != 3)
-            {
-                return false;
-            }
-
-            var result = new BatchPart();
-            if (!(namedArguments[0].Type is INamedTypeSymbol methodName) ||
-                methodName.Name != nameof(String)
-                )
-            {
-                return false;
-            }
-
-            result.MethodName = (string)namedArguments[0].Value;
-
-            if (!(namedArguments[1].Type is INamedTypeSymbol batchName) ||
-                batchName.Name != nameof(String)
-                )
-            {
-                return false;
-            }
-
-            result.BatchName = (string)namedArguments[1].Value;
-
-            if (!(namedArguments[2].Type is INamedTypeSymbol number) ||
-                number.Name != nameof(Int32)
-                )
-            {
-                return false;
-            }
-
-            result.BatchNumber = (int)namedArguments[2].Value;
-
-            batchPart = result;
-            return true;
-        }
-    }
-
     internal class QueryReadNpgsql : BaseNpgsql
     {
         public ITypeSymbol MapTypeName;
@@ -75,7 +28,7 @@ namespace Gedaq.Npgsql.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out QueryReadNpgsql method)
         {
             method = null;
-            if (namedArguments.Length != 6)
+            if (namedArguments.Length != 7)
             {
                 return false;
             }
@@ -106,7 +59,12 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!FillGenerate(namedArguments[5], methodSource))
+            if (!FillQueryType(namedArguments[5], methodSource))
+            {
+                return false;
+            }
+
+            if (!FillGenerate(namedArguments[6], methodSource))
             {
                 return false;
             }
@@ -157,13 +115,27 @@ namespace Gedaq.Npgsql.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol namedTypeSymbol3) ||
-                !namedTypeSymbol3.IsAssignableFrom("Gedaq.Provider.Enums", "MethodType")
+                !namedTypeSymbol3.IsAssignableFrom("Gedaq.Common.Enums", "MethodType")
                 )
             {
                 return false;
             }
 
             methodSource.MethodType = (MethodType)argument.Value;
+            return true;
+        }
+
+        private static bool FillQueryType(TypedConstant argument, QueryReadNpgsql methodSource)
+        {
+            if (argument.Kind != TypedConstantKind.Enum ||
+                !(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
+                !namedTypeSymbol.IsAssignableFrom("Gedaq.Common.Enums", "QueryType")
+                )
+            {
+                return false;
+            }
+
+            methodSource.QueryType = (QueryType)argument.Value;
             return true;
         }
 

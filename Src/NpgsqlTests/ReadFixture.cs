@@ -246,7 +246,7 @@ INSERT INTO public.readfixtureidentification(
         #endregion
 
         [Test]
-        [QueryRead(
+        [Query(
             @"
 SELECT 
     p.id,
@@ -268,7 +268,7 @@ WHERE p.id != $1
 ORDER BY p.id ASC
 ",
             typeof(ReadFixtureModel),
-            Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
+            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
             "ToClass1"
             )]
@@ -336,7 +336,7 @@ ORDER BY p.id ASC
         }
 
         [Test]
-        [QueryRead(
+        [Query(
             @"
 SELECT 
     p.id,
@@ -358,7 +358,7 @@ WHERE p.id != $1 AND p.id != $2
 ORDER BY p.id ASC
 ",
             typeof(ReadFixtureModel),
-            Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
+            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
             "ToClass2"
             )]
@@ -427,7 +427,7 @@ ORDER BY p.id ASC
         }
 
         [Test]
-        [QueryBatch("BatchReadToClass", Gedaq.Common.Enums.BatchType.Read, Gedaq.Provider.Enums.MethodType.Sync)]
+        [QueryBatch("BatchReadToClass", Gedaq.Common.Enums.QueryType.Read, Gedaq.Common.Enums.MethodType.Sync)]
         [BatchPart("ToClass2", "BatchReadToClass", 1)]
         [BatchPart("ToClass1", "BatchReadToClass", 2)]
         public void BatchReadToClass()
@@ -580,7 +580,7 @@ ORDER BY p.id ASC
         }
 
         [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
+        [Query(
             @"
 SELECT 
     P.id,
@@ -602,7 +602,7 @@ WHERE p.id != $1
 ORDER BY p.id ASC
 ",
             typeof(object[]),
-            Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
+            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
             "ToObjArr"
             )]
@@ -671,7 +671,7 @@ ORDER BY p.id ASC
         }
 
         [Test]
-        [Gedaq.Npgsql.Attributes.QueryRead(
+        [Query(
             @"
 SELECT 
     (p.id,
@@ -689,7 +689,7 @@ WHERE p.id != $1
 ORDER BY p.id ASC
 ",
             typeof(object),
-            Gedaq.Provider.Enums.MethodType.Async | Gedaq.Provider.Enums.MethodType.Sync,
+            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
             Gedaq.Npgsql.Enums.SourceType.Connection,
             "ToObj"
             )]

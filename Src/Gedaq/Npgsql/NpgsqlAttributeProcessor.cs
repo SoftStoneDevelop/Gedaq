@@ -29,7 +29,7 @@ namespace Gedaq.Npgsql
         {
             foreach (var attribute in attributes)
             {
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "QueryReadAttribute"))
+                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "QueryAttribute"))
                 {
                     ProcessQueryRead(attribute, containsType);
                     continue;
@@ -50,16 +50,6 @@ namespace Gedaq.Npgsql
                 if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BatchPartAttribute"))
                 {
                     ProcessBatchPart(attribute, containsType);
-                    continue;
-                }
-
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "ScalarAttribute"))
-                {
-                    continue;
-                }
-
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "NonQueryAttribute"))
-                {
                     continue;
                 }
             }

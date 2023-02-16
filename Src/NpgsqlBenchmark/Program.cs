@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Running;
 using Gedaq.Npgsql.Attributes;
 using Gedaq.Npgsql.Enums;
-using Gedaq.Provider.Enums;
+using Gedaq.Common.Enums;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
 using NpgsqlBenchmark.Benchmarks;
@@ -60,7 +60,7 @@ ORDER BY p.id ASC
             }
         }
 
-        [QueryRead(
+        [Query(
             @"
 SELECT 
     p.id,

@@ -3,7 +3,7 @@ using BenchmarkDotNet.Jobs;
 using Dapper;
 using Gedaq.Npgsql.Attributes;
 using Gedaq.Npgsql.Enums;
-using Gedaq.Provider.Enums;
+using Gedaq.Common.Enums;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
 using NpgsqlBenchmark.Model;
@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace NpgsqlBenchmark.Benchmarks
 {
-    [QueryRead(
+    [Query(
             @"
 SELECT 
     p.id,

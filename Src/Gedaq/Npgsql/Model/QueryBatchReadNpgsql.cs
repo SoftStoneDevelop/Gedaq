@@ -10,7 +10,6 @@ namespace Gedaq.Npgsql.Model
 {
     internal class QueryBatchReadNpgsql : BaseNpgsql
     {
-        public BatchType BatchType;
         public List<(int number, QueryReadNpgsql query)> Queries = new List<(int number, QueryReadNpgsql query)>();
         public bool AllSameTypes = true;
         public bool HaveParametrs;
@@ -34,18 +33,18 @@ namespace Gedaq.Npgsql.Model
             result.MethodName = (string)namedArguments[0].Value;
 
             if (namedArguments[1].Kind != TypedConstantKind.Enum ||
-                !(namedArguments[1].Type is INamedTypeSymbol batchType) ||
-                !batchType.IsAssignableFrom("Gedaq.Common.Enums", "BatchType")
+                !(namedArguments[1].Type is INamedTypeSymbol queryType) ||
+                !queryType.IsAssignableFrom("Gedaq.Common.Enums", "QueryType")
                 )
             {
                 return false;
             }
 
-            result.BatchType = (BatchType)namedArguments[1].Value;
+            result.QueryType = (QueryType)namedArguments[1].Value;
 
             if (namedArguments[2].Kind != TypedConstantKind.Enum ||
                 !(namedArguments[2].Type is INamedTypeSymbol methodType) ||
-                !methodType.IsAssignableFrom("Gedaq.Provider.Enums", "MethodType")
+                !methodType.IsAssignableFrom("Gedaq.Common.Enums", "MethodType")
                 )
             {
                 return false;
