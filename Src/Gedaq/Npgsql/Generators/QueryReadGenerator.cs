@@ -36,7 +36,10 @@ namespace Gedaq.Npgsql.Generators
             Start(source);
 
             ReadMethods(source);
+
             CommandMethods(source);
+            ExecuteCommandMethods(source);
+            SetParametrsMethod(source);
 
             End();
         }
@@ -72,20 +75,33 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
         private void ReadMethods(QueryReadNpgsql source)
         {
-            if (source.MethodType.HasFlag(MethodType.Sync))
+            if (source.QueryType.HasFlag(QueryType.Read))
             {
-                ReadMethod(source);
+                if (source.MethodType.HasFlag(MethodType.Sync))
+                {
+                    ReadMethod(source);
+                }
+
+                if (source.MethodType.HasFlag(MethodType.Async))
+                {
+                    ReadAsyncMethod(source);
+                }
             }
 
-            if (source.MethodType.HasFlag(MethodType.Async))
+            if (source.QueryType.HasFlag(QueryType.Scalar))
             {
-                ReadAsyncMethod(source);
+                throw new NotImplementedException();
+            }
+
+            if (source.QueryType.HasFlag(QueryType.NonQuery))
+            {
+                throw new NotImplementedException();
             }
         }
 
         private void ReadMethod(QueryReadNpgsql source)
         {
-            if(source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartReadMethod(source, MethodType.Sync);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
@@ -94,7 +110,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 EndMethod();
             }
 
-            if(source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartReadMethod(source, MethodType.Sync);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
@@ -125,6 +141,23 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
+        private void ExecuteCommandMethods(QueryReadNpgsql source)
+        {
+            if (source.MethodType.HasFlag(MethodType.Sync))
+            {
+                StartExecuteCommand(source, MethodType.Sync);
+                ExecuteCommand(source, MethodType.Sync);
+                EndMethod();
+            }
+
+            if (source.MethodType.HasFlag(MethodType.Async))
+            {
+                StartExecuteCommand(source, MethodType.Async);
+                ExecuteCommand(source, MethodType.Async);
+                EndMethod();
+            }
+        }
+
         private void CommandMethods(QueryReadNpgsql source)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
@@ -138,10 +171,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 {
                     CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
                 }
-
-                StartExecuteCommand(source, MethodType.Sync);
-                ExecuteCommand(source, MethodType.Sync);
-                EndMethod();
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
@@ -155,13 +184,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 {
                     CreateCommandMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
                 }
-
-                StartExecuteCommand(source, MethodType.Async);
-                ExecuteCommand(source, MethodType.Async);
-                EndMethod();
             }
-
-            SetParametrsMethod(source);
         }
 
         private void StartReadMethod(

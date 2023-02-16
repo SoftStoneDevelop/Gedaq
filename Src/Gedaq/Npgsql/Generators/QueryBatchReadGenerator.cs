@@ -35,9 +35,10 @@ namespace Gedaq.Npgsql.Generators
             Reset();
             Start(source);
 
-            CreateBatchItems(source);
             ReadMethods(source);
-            BatchMethods(source);
+            CreateBatchItems(source);
+            CreateBatchMethods(source);
+            ExecuteBatchMethods(source);
 
             End();
         }
@@ -73,14 +74,27 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
         private void ReadMethods(QueryBatchReadNpgsql source)
         {
-            if (source.MethodType.HasFlag(MethodType.Sync))
+            if (source.QueryType.HasFlag(QueryType.Read))
             {
-                ReadMethod(source);
+                if (source.MethodType.HasFlag(MethodType.Sync))
+                {
+                    ReadMethod(source);
+                }
+
+                if (source.MethodType.HasFlag(MethodType.Async))
+                {
+                    ReadAsyncMethod(source);
+                }
             }
 
-            if (source.MethodType.HasFlag(MethodType.Async))
+            if (source.QueryType.HasFlag(QueryType.Scalar))
             {
-                ReadAsyncMethod(source);
+                throw new NotImplementedException();
+            }
+
+            if (source.QueryType.HasFlag(QueryType.NonQuery))
+            {
+                throw new NotImplementedException();
             }
         }
 
@@ -126,7 +140,24 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
-        private void BatchMethods(QueryBatchReadNpgsql source)
+        private void ExecuteBatchMethods(QueryBatchReadNpgsql source)
+        {
+            if (source.MethodType.HasFlag(MethodType.Sync))
+            {
+                StartExecuteBatch(source, MethodType.Sync);
+                ExecuteBatch(source, MethodType.Sync);
+                EndMethod();
+            }
+
+            if (source.MethodType.HasFlag(MethodType.Async))
+            {
+                StartExecuteBatch(source, MethodType.Async);
+                ExecuteBatch(source, MethodType.Async);
+                EndMethod();
+            }
+        }
+
+        private void CreateBatchMethods(QueryBatchReadNpgsql source)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -139,10 +170,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 {
                     CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
                 }
-
-                StartExecuteBatch(source, MethodType.Sync);
-                ExecuteBatch(source, MethodType.Sync);
-                EndMethod();
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
@@ -156,10 +183,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 {
                     CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
                 }
-
-                StartExecuteBatch(source, MethodType.Async);
-                ExecuteBatch(source, MethodType.Async);
-                EndMethod();
             }
 
             SetParametrsMethod(source);
