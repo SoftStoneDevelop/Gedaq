@@ -10,8 +10,6 @@ namespace Gedaq.Helpers
 {
     internal static class TypeHelper
     {
-        public static readonly string NpgsqlDbTypeName = "NpgsqlTypes.NpgsqlDbType";
-
         internal static bool IsAssignableFrom(
             this INamedTypeSymbol type,
             string fullNamespace,

@@ -19,7 +19,7 @@ namespace Gedaq.Npgsql
         private List<QueryBatchReadNpgsql> _readBatch = new List<QueryBatchReadNpgsql>();
 
         Dictionary<string, QueryReadNpgsql> _readTemp = new Dictionary<string,QueryReadNpgsql>();
-        Dictionary<string, List<Parametr>> _parametrsTemp = new Dictionary<string, List<Parametr>>();
+        Dictionary<string, List<NpgsqlParametr>> _parametrsTemp = new Dictionary<string, List<NpgsqlParametr>>();
         private List<QueryBatchReadNpgsql> _batchTemp = new List<QueryBatchReadNpgsql>();
         private Dictionary<string, List<BatchPart>> _batchParts = new Dictionary<string, List<BatchPart>>();
 
@@ -119,7 +119,7 @@ namespace Gedaq.Npgsql
                 if (_parametrsTemp.TryGetValue(read.MethodName, out var parametrs))
                 {
                     parametrs = parametrs.OrderBy(or => or.Position).ToList();
-                    read.Parametrs = new Parametr[parametrs.Count];
+                    read.Parametrs = new NpgsqlParametr[parametrs.Count];
 
                     set.Clear();
                     var containNamedParametr = false;
@@ -164,7 +164,7 @@ namespace Gedaq.Npgsql
         {
             if (!QueryBatchReadNpgsql.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var queryBatch))
             {
-                throw new Exception($"Unknown {nameof(Parametr)} constructor");
+                throw new Exception($"Unknown {nameof(NpgsqlParametr)} constructor");
             }
 
             _batchTemp.Add(queryBatch);
@@ -174,7 +174,7 @@ namespace Gedaq.Npgsql
         {
             if (!BatchPart.CreateNew(parametrAttribute.ConstructorArguments, out var batchPart))
             {
-                throw new Exception($"Unknown {nameof(Parametr)} constructor");
+                throw new Exception($"Unknown {nameof(NpgsqlParametr)} constructor");
             }
 
             if (!_batchParts.TryGetValue(batchPart.BatchName, out var parts))
@@ -203,14 +203,14 @@ namespace Gedaq.Npgsql
 
         private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType)
         {
-            if (!Parametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
+            if (!NpgsqlParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
             {
-                throw new Exception($"Unknown {nameof(Parametr)} constructor");
+                throw new Exception($"Unknown {nameof(NpgsqlParametr)} constructor");
             }
 
             if (!_parametrsTemp.ContainsKey(methodName))
             {
-                var methods = new List<Parametr>();
+                var methods = new List<NpgsqlParametr>();
                 _parametrsTemp.Add(methodName, methods);
             }
 

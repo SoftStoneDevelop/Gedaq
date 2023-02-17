@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Npgsql;
 using NpgsqlBenchmark.Benchmarks;
 using NpgsqlBenchmark.Model;
+using NpgsqlBenchmark.NpgsqlGenerator;
 using NpgsqlTypes;
 using System;
 using System.IO;
@@ -85,7 +86,7 @@ ORDER BY p.id ASC
                 .AddJsonFile("settings.json", optional: false)
                 .Build()
             ;
-            
+
             using var connection = new NpgsqlConnection(root.GetConnectionString("SqlConnection"));
             var scalar = connection.ScalarGetData(13);
             var scalarAsync = await connection.ScalarGetDataAsync(13);

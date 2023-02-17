@@ -57,7 +57,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 
-namespace {source.ContainTypeName.ContainingNamespace}
+namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
 {{
     public static class {source.MethodName}Class
     {{
@@ -533,7 +533,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                         if (parametr.HaveDbType)
                         {
                             _methodCode.Append($@"
-                parametr{parametr.Position}.NpgsqlDbType = ({TypeHelper.NpgsqlDbTypeName}){parametr.DbType};
+                parametr{parametr.Position}.NpgsqlDbType = ({MapTypeHelper.NpgsqlDbTypeName}){parametr.DbType};
 ");
                         }
 
@@ -770,7 +770,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             string castTypeExpr
             )
         {
-            if (source.MapTypeName.IsKnownProviderType())
+            if (MapTypeHelper.IsKnownProviderType(source.MapTypeName))
             {
                 _methodCode.Append($@"
                     yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);

@@ -2,12 +2,11 @@
 using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
 
-namespace Gedaq.Npgsql.Model
+namespace Gedaq.DbConnection.Model
 {
-    internal class BaseNpgsql
+    internal class BaseGenerateItem
     {
         public string MethodName;
-        public NpgsqlSourceType SourceType;
         public MethodType MethodType;
         public QueryType QueryType;
         public INamedTypeSymbol ContainTypeName;

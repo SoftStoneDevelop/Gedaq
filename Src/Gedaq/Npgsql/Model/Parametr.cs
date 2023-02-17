@@ -1,4 +1,5 @@
-﻿using Gedaq.Helpers;
+﻿using Gedaq.DbConnection.Model;
+using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Immutable;
@@ -6,35 +7,16 @@ using System.Data;
 
 namespace Gedaq.Npgsql.Model
 {
-    internal class Parametr
+    internal class NpgsqlParametr : DbParametr
     {
-        public int Position;
-        public string Name;
-        public ITypeSymbol Type;
-        public int DbType;
-        public int Size;
-        public int NumberInBatch;
-        public bool Nullable;
-        public ParameterDirection Direction;
+        public int NpgSqlDbType;
 
-        public bool HaveName => Name != null;
-        public bool HaveDbType => DbType != 40;
-        public bool HaveSize => Size != -1;
-
-        public bool HavePosition => Position != -1;
-
-        public string VariableName()
-        {
-            return HaveName ?
-                    Name.ToLowerInvariant() :
-                    $"mParametr{Position}"
-                ;
-        }
+        public bool HaveNpgSqlDbType => NpgSqlDbType != 40;
 
         internal static bool CreateNew(
             ImmutableArray<TypedConstant> namedArguments,
             INamedTypeSymbol containsType,
-            out Parametr parametr,
+            out NpgsqlParametr parametr,
             out string methodName
             )
         {
@@ -55,7 +37,7 @@ namespace Gedaq.Npgsql.Model
 
             methodName = (string)namedArguments[0].Value;
 
-            var result = new Parametr();
+            var result = new NpgsqlParametr();
             if (!(namedArguments[1].Type is INamedTypeSymbol paramName) ||
                 paramName.Name != nameof(String)
                 )
@@ -80,7 +62,7 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            result.DbType = (int)namedArguments[3].Value;
+            result.NpgSqlDbType = (int)namedArguments[3].Value;
 
             if (!(namedArguments[4].Type is INamedTypeSymbol sizeParam) ||
                 sizeParam.Name != nameof(Int32)

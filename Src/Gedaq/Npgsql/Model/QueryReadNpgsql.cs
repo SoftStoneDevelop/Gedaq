@@ -1,4 +1,5 @@
-﻿using Gedaq.Enums;
+﻿using Gedaq.DbConnection.Model;
+using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
@@ -7,14 +8,10 @@ using System.Collections.Immutable;
 
 namespace Gedaq.Npgsql.Model
 {
-    internal class QueryReadNpgsql : BaseNpgsql
+    internal class QueryReadNpgsql : QueryBase
     {
-        public ITypeSymbol MapTypeName;
-        public Aliases Aliases;
-        public Parametr[] Parametrs;
-        public string Query;
-
-        public bool NeedGenerate;
+        public NpgsqlSourceType SourceType;
+        public NpgsqlParametr[] Parametrs;
 
         public QueryReadNpgsql()
         {

@@ -10,6 +10,7 @@ using NpgsqlBenchmark.Model;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using NpgsqlBenchmark.Benchmarks.NpgsqlGenerator;
 
 namespace NpgsqlBenchmark.Benchmarks
 {

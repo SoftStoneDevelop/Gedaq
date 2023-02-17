@@ -1,5 +1,7 @@
-﻿using Gedaq.Enums;
+﻿using Gedaq.DbConnection.Model;
+using Gedaq.Enums;
 using Gedaq.Helpers;
+using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
@@ -8,8 +10,9 @@ using System.Linq;
 
 namespace Gedaq.Npgsql.Model
 {
-    internal class QueryBatchReadNpgsql : BaseNpgsql
+    internal class QueryBatchReadNpgsql : BaseGenerateItem
     {
+        public NpgsqlSourceType SourceType;
         public List<(int number, QueryReadNpgsql query)> Queries = new List<(int number, QueryReadNpgsql query)>();
         public bool AllSameTypes = true;
         public bool HaveParametrs;

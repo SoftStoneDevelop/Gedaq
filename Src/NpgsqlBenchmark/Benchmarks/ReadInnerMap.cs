@@ -1,11 +1,12 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Jobs;
 using Dapper;
+using Gedaq.Common.Enums;
 using Gedaq.Npgsql.Attributes;
 using Gedaq.Npgsql.Enums;
-using Gedaq.Common.Enums;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
+using NpgsqlBenchmark.Benchmarks.NpgsqlGenerator;
 using NpgsqlBenchmark.Model;
 using System.IO;
 using System.Linq;

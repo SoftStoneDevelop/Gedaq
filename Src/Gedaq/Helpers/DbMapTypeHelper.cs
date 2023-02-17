@@ -1,20 +1,18 @@
-﻿using Gedaq.Helpers;
+﻿using Gedaq.Npgsql.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Gedaq.Npgsql.Helpers
+namespace Gedaq.Helpers
 {
-    internal static class MapTypeHelper
+    internal static class DbMapTypeHelper
     {
-        public static readonly string NpgsqlDbTypeName = "NpgsqlTypes.NpgsqlDbType";
-
         internal static bool IsKnownProviderType(
             this ITypeSymbol typeSymbol
             )
         {
-            if(typeSymbol.IsKnownArrayType())
+            if (typeSymbol.IsKnownArrayType())
             {
                 return true;
             }
@@ -112,76 +110,6 @@ namespace Gedaq.Npgsql.Helpers
                 {
                     return true;
                 }
-
-                case "System.Net.IPAddress":
-                {
-                    return true;
-                }
-
-                case "System.Net.NetworkInformation.PhysicalAddress":
-                {
-                    return true;
-                }
-
-                case "System.Guid":
-                {
-                    return true;
-                }
-
-                case "System.Numerics.BigInteger":
-                {
-                    return true;
-                }
-
-                case "System.Collections.BitArray":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlTsQuery":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlTsVector":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlPoint":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlLSeg":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlPath":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlPolygon":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlLine":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlCircle":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlBox":
-                {
-                    return true;
-                }
             }
 
             return false;
@@ -189,7 +117,7 @@ namespace Gedaq.Npgsql.Helpers
 
         private static bool IsKnownArrayType(this ITypeSymbol type)
         {
-            if(type.IsArrayType(out var elementType))
+            if (type.IsArrayType(out var elementType))
             {
                 return elementType.IsKnownProviderBaseType();
             }
