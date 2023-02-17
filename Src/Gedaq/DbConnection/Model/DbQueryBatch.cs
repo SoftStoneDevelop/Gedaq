@@ -1,5 +1,4 @@
-﻿using Gedaq.DbConnection.Model;
-using Gedaq.Enums;
+﻿using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
@@ -7,7 +6,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Text;
 
-namespace Gedaq.DbConnection
+namespace Gedaq.DbConnection.Model
 {
     internal class DbQueryBatch : QueryBatch
     {

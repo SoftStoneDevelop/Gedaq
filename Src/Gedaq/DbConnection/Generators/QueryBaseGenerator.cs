@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Gedaq.DbConnection
+namespace Gedaq.DbConnection.Generators
 {
     internal abstract class QueryBaseGenerator
     {
@@ -165,7 +165,7 @@ namespace Gedaq.DbConnection
             }
         }
 
-        [MethodImplAttribute(MethodImplOptions.AggressiveInlining)]
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private string Tabs(int tabs)
         {
             return new string(' ', tabs * 4);

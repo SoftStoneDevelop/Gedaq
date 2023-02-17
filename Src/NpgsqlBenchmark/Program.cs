@@ -1,14 +1,12 @@
 ﻿using BenchmarkDotNet.Running;
 using Gedaq.Common.Enums;
-using Gedaq.Npgsql.Attributes;
-using Gedaq.Npgsql.Enums;
+using Gedaq.DbConnection.Attributes;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
 using NpgsqlBenchmark.Benchmarks;
 using NpgsqlBenchmark.Model;
-using NpgsqlBenchmark.NpgsqlGenerator;
-using NpgsqlTypes;
 using System;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,49 +15,17 @@ namespace NpgsqlBenchmark
 {
     internal class Program
     {
-        static async Task Main(string[] args)
-        //static void Main(string[] args)
+        //static async Task Main(string[] args)
+        static void Main(string[] args)
         {
-            await GetData();
-            //TestQuery();
+            //await GetData();
+
+            var i = new ReadInnerMap();
+            i.Size = 1;
+            i.Gedaq();
 
             BenchmarkRunner.Run<ReadInnerMap>();
             BenchmarkRunner.Run<ReadInnerMapAsync>();
-        }
-
-        private static void TestQuery()
-        {
-            var root = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("settings.json", optional: false)
-                .Build()
-            ;
-
-            using var connection = new NpgsqlConnection(root.GetConnectionString("SqlConnection"));
-            connection.Open();
-
-            var cmd = connection.CreateCommand();
-            cmd.CommandText = @"
-SELECT 
-    p.id,
-    p.firstname,
-    p.middlename,
-    p.lastname
-FROM person p
-WHERE p.id > $1
-ORDER BY p.id ASC
-";
-            var parametr = new NpgsqlParameter<int>();
-            parametr.TypedValue= 13;
-            cmd.Parameters.Add(parametr);
-            var reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-                var id = reader.GetFieldValue<object>(0);
-                var firstname = reader.GetFieldValue<string>(1);
-                var middlename = reader.GetFieldValue<string>(2);
-                var lastname = reader.GetFieldValue<string>(3);
-            }
         }
 
         [Query(
@@ -75,10 +41,10 @@ ORDER BY p.id ASC
 ",
             typeof(Person),
             MethodType.Sync | MethodType.Async,
-            SourceType.Connection,
-            "GetData", QueryType.Read | QueryType.Scalar | QueryType.NonQuery
+            "GetData",
+            QueryType.Read | QueryType.Scalar | QueryType.NonQuery
             )]
-        [Parametr("GetData", parametrName: "id", parametrType: typeof(int), dbType: NpgsqlDbType.Integer)]
+        [Parametr("GetData", parametrName: "id", parametrType: typeof(int), dbType: DbType.Int32)]
         private static async Task GetData()
         {
             var root = new ConfigurationBuilder()

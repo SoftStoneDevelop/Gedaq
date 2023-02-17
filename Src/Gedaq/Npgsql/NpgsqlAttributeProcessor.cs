@@ -10,7 +10,7 @@ using System.Reflection.Metadata;
 using System.Reflection;
 using Gedaq.Enums;
 using System.Threading;
-using Gedaq.DbConnection;
+using Gedaq.DbConnection.Model;
 
 namespace Gedaq.Npgsql
 {
@@ -224,7 +224,7 @@ namespace Gedaq.Npgsql
             foreach (var queryRead in _read)
             {
                 readGenerator.GenerateMethod(queryRead);
-                context.AddSource($"{queryRead.MethodName}Class.g.cs", readGenerator.GetCode());
+                context.AddSource($"{queryRead.MethodName}NpgsqlExtension.g.cs", readGenerator.GetCode());
             }
             _read.Clear();
 
@@ -232,7 +232,7 @@ namespace Gedaq.Npgsql
             foreach (var batchRead in _readBatch)
             {
                 batchReadGenerator.GenerateMethod(batchRead);
-                context.AddSource($"{batchRead.MethodName}Class.g.cs", batchReadGenerator.GetCode());
+                context.AddSource($"{batchRead.MethodName}NpgsqlExtension.g.cs", batchReadGenerator.GetCode());
             }
             _readBatch.Clear();
         }

@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Gedaq.DbConnection
+namespace Gedaq.DbConnection.Generators
 {
     internal class DbConnectionQueryGenerator : QueryBaseGenerator
     {
@@ -40,9 +40,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 
-namespace {source.ContainTypeName.ContainingNamespace}.DbConnectionGenerator
+namespace {source.ContainTypeName.ContainingNamespace}
 {{
-    public static class {source.MethodName}Extension
+    public static class {source.MethodName}DbConnectionExtension
     {{
 ");
         }
@@ -821,7 +821,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.DbConnectionGenerator
                 else
                 {
                     _methodCode.Append($@"
-            (command.Parameters[{i}]).TypedValue = {parametr.VariableName()};
+            (command.Parameters[{i}]).Value = {parametr.VariableName()};
 ");
                 }
 

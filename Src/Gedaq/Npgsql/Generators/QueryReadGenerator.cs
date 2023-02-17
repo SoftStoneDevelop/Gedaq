@@ -1,4 +1,4 @@
-﻿using Gedaq.DbConnection;
+﻿using Gedaq.DbConnection.Generators;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
@@ -39,9 +39,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 
-namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
+namespace {source.ContainTypeName.ContainingNamespace}
 {{
-    public static class {source.MethodName}Class
+    public static class {source.MethodName}NpgsqlExtension
     {{
 ");
         }

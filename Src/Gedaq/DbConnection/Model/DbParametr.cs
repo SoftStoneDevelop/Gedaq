@@ -11,8 +11,8 @@ namespace Gedaq.DbConnection.Model
 {
     internal class DbParametr : BaseParametr
     {
-        public System.Data.DbType DbType;
-        public bool HaveDbType => DbType != DbType.Object;
+        public int DbType;
+        public bool HaveDbType => DbType != 13;
 
         public override string VariableName()
         {
@@ -29,7 +29,7 @@ namespace Gedaq.DbConnection.Model
             parametr = null;
             methodName = null;
 
-            if (namedArguments.Length != 8)
+            if (namedArguments.Length != 7)
             {
                 return false;
             }
@@ -68,7 +68,7 @@ namespace Gedaq.DbConnection.Model
                 return false;
             }
 
-            result.DbType = (System.Data.DbType)namedArguments[3].Value;
+            result.DbType = (int)namedArguments[3].Value;
 
             if (!(namedArguments[4].Type is INamedTypeSymbol sizeParam) ||
                 sizeParam.Name != nameof(Int32)

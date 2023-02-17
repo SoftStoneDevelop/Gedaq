@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Configuration;
 using Npgsql;
 using NpgsqlTests.Helpers;
-using NpgsqlTests.NpgsqlGenerator;
 using NUnit.Framework;
 using System;
 using System.Linq;

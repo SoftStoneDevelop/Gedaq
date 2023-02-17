@@ -9,7 +9,7 @@ using System.Reflection;
 using Gedaq.Enums;
 using System.Threading;
 using Gedaq.DbConnection.Model;
-using Gedaq.DbConnection;
+using Gedaq.DbConnection.Generators;
 
 namespace Gedaq.Npgsql
 {
@@ -190,7 +190,7 @@ namespace Gedaq.Npgsql
             foreach (var queryRead in _read)
             {
                 readGenerator.Generate(queryRead);
-                context.AddSource($"{queryRead.MethodName}Class.g.cs", readGenerator.GetCode());
+                context.AddSource($"{queryRead.MethodName}DbConnectionExtension.g.cs", readGenerator.GetCode());
             }
             _read.Clear();
 
