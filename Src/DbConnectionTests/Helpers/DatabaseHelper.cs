@@ -1,6 +1,6 @@
 ﻿using Npgsql;
 
-namespace NpgsqlTests.Helpers
+namespace DbConnectionTests.Helpers
 {
     internal static class DatabaseHelper
     {

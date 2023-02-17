@@ -10,8 +10,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
-[assembly:InternalsVisibleTo("NpgsqlTests")]
-namespace Gedaq.Npgsql
+[assembly: InternalsVisibleTo("DbConnectionTests")]
+namespace Gedaq.DbConnection
 {
     internal class QueryParser
     {
@@ -38,7 +38,7 @@ namespace Gedaq.Npgsql
             }
 
             var aliases = FillAliases(lastCommand.Slice(index), out var newQuery);
-            if(newQuery != null)
+            if (newQuery != null)
             {
                 query = querySpan.Slice(0, lastCommandIndex + index).ToString() + newQuery;
             }
@@ -57,7 +57,7 @@ namespace Gedaq.Npgsql
                 }
             }
 
-            if(query[i] == splitter)
+            if (query[i] == splitter)
             {
                 i--;
             }
@@ -78,7 +78,7 @@ namespace Gedaq.Npgsql
             newQuery = null;
             var parser = new AliasParser(query);
             parser.Parse();
-            if(parser.QueryIsNew())
+            if (parser.QueryIsNew())
             {
                 newQuery = parser.GetNewQuery();
             }
@@ -148,24 +148,24 @@ namespace Gedaq.Npgsql
             switch (index)
             {
                 case 0:
-                {
-                    return InstructionType.Select;
-                }
+                    {
+                        return InstructionType.Select;
+                    }
 
                 case 1:
-                {
-                    return InstructionType.Insert;
-                }
+                    {
+                        return InstructionType.Insert;
+                    }
 
                 case 2:
-                {
-                    return InstructionType.Delete;
-                }
+                    {
+                        return InstructionType.Delete;
+                    }
 
                 default:
-                {
-                    return InstructionType.None;
-                }
+                    {
+                        return InstructionType.None;
+                    }
             }
         }
 
@@ -224,21 +224,21 @@ namespace Gedaq.Npgsql
                 return _resultQuery.Length != 0;
             }
 
-            public string GetNewQuery() 
+            public string GetNewQuery()
             {
                 return _resultQuery.ToString();
             }
 
             public void Parse()
             {
-                if(_root != null)
+                if (_root != null)
                 {
                     return;
                 }
 
                 _root = new Aliases();
                 var innerStack = new Stack<Aliases>();
-                innerStack.Push( _root );
+                innerStack.Push(_root);
                 while (_currentIndex < _query.Length)
                 {
                     if (Skip(in _emptyOrCarret))
@@ -246,7 +246,7 @@ namespace Gedaq.Npgsql
                         break;
                     }
 
-                    if(IsFrom() || _query[_currentIndex] == ';')
+                    if (IsFrom() || _query[_currentIndex] == ';')
                     {
                         break;
                     }
@@ -256,7 +256,7 @@ namespace Gedaq.Npgsql
                         SkipBracketGroup();
                         Skip(in _emptyOrCarret);
                         var name = GetNameAlias(false);
-                        if(string.IsNullOrWhiteSpace(name))
+                        if (string.IsNullOrWhiteSpace(name))
                         {
                             throw new Exception("After group must be AliasName");
                         }
@@ -266,7 +266,7 @@ namespace Gedaq.Npgsql
                         continue;
                     }
 
-                    if(_query[_currentIndex] == '~')
+                    if (_query[_currentIndex] == '~')
                     {
                         _containInner |= true;
                         AppendPartQuery(_lastPartIndex, _currentIndex - _lastPartIndex);
@@ -289,7 +289,7 @@ namespace Gedaq.Npgsql
                             }
 
                             var endedAlias = innerStack.Pop();
-                            if(endedAlias.EntityName != innerName)
+                            if (endedAlias.EntityName != innerName)
                             {
                                 throw new Exception("The names of the open and close operators do not match.");
                             }
@@ -314,7 +314,7 @@ namespace Gedaq.Npgsql
                     alias.Fields.Add(new Field { Name = fieldName, Position = _fieldPosition });
                 }
 
-                if(innerStack.Count != 1 || innerStack.Peek() != _root)
+                if (innerStack.Count != 1 || innerStack.Peek() != _root)
                 {
                     throw new Exception($"There are non-closed operators in the query: {StackToList(innerStack)}");
                 }
@@ -324,7 +324,7 @@ namespace Gedaq.Npgsql
 
             private void AppendPartQuery(int start, int length)
             {
-                if(!_containInner)
+                if (!_containInner)
                 {
                     return;
                 }
@@ -346,7 +346,7 @@ namespace Gedaq.Npgsql
                 {
                     builder.Append("'");
                     var alias = stack.Pop();
-                    if(alias.IsRoot)
+                    if (alias.IsRoot)
                     {
                         builder.Append("Root");
                     }
@@ -377,9 +377,9 @@ namespace Gedaq.Npgsql
                         _field.Append(_query[_currentIndex]);
                         continue;
                     }
-                    else if(_query[_currentIndex] == ':')
+                    else if (_query[_currentIndex] == ':')
                     {
-                        if(notAllowedcolon)
+                        if (notAllowedcolon)
                         {
                             throw new Exception("LinkKey separator repeated");
                         }
@@ -401,12 +401,12 @@ namespace Gedaq.Npgsql
                     }
                 }
 
-                if(name == null)
+                if (name == null)
                 {
                     throw new Exception("LinkKey not found");
                 }
 
-                if(!nameClosed)
+                if (!nameClosed)
                 {
                     throw new Exception("Inner name must end on '~'");
                 }
@@ -429,7 +429,8 @@ namespace Gedaq.Npgsql
                     {
                         _field.Append(_query[_currentIndex]);
                         continue;
-                    }else
+                    }
+                    else
                     {
                         if (_query[_currentIndex] != '~')
                         {
@@ -537,19 +538,19 @@ namespace Gedaq.Npgsql
                     }
                     else
                     {
-                        if(Skip(in _emptyOrCarret))
+                        if (Skip(in _emptyOrCarret))
                         {
                             break;
                         }
 
-                        if(_query[_currentIndex] == '.')
+                        if (_query[_currentIndex] == '.')
                         {
-                            if(dotPass)
+                            if (dotPass)
                             {
                                 throw new Exception("Double dot in Alias");
                             }
 
-                            if(!allowedDot)
+                            if (!allowedDot)
                             {
                                 throw new Exception("Dot in name is not allowed");
                             }
@@ -560,15 +561,15 @@ namespace Gedaq.Npgsql
                             continue;
                         }
 
-                        if(_query[_currentIndex] == ',')
+                        if (_query[_currentIndex] == ',')
                         {
                             _currentIndex++;
                             break;
                         }
 
-                        if(IsAsOrAlias())
+                        if (IsAsOrAlias())
                         {
-                            if(notAllowedAs)
+                            if (notAllowedAs)
                             {
                                 throw new Exception("Double 'AS' key");
                             }
@@ -580,14 +581,14 @@ namespace Gedaq.Npgsql
                             continue;
                         }
 
-                        if(IsFrom())
+                        if (IsFrom())
                         {
                             break;
                         }
                     }
                 }
 
-                if(_field.Length > 0)
+                if (_field.Length > 0)
                 {
                     _fieldPosition++;
                     var name = _field.ToString();
@@ -604,14 +605,14 @@ namespace Gedaq.Npgsql
                 var index = 0;
                 for (int i = _currentIndex; i < _query.Length; i++)
                 {
-                    if(index > 2)
+                    if (index > 2)
                     {
                         break;
                     }
 
                     if (index < 2)
                     {
-                        if(char.ToLowerInvariant(_query[i]) != _as[index])
+                        if (char.ToLowerInvariant(_query[i]) != _as[index])
                         {
                             return false;
                         }
@@ -629,7 +630,7 @@ namespace Gedaq.Npgsql
                     index++;
                 }
 
-                if(!IsFrom() && _query[_currentIndex] != ',')
+                if (!IsFrom() && _query[_currentIndex] != ',')
                 {
                     return true;
                 }
@@ -649,7 +650,7 @@ namespace Gedaq.Npgsql
 
                     if (index < 4)
                     {
-                        if(char.ToLowerInvariant(_query[i]) != _from[index])
+                        if (char.ToLowerInvariant(_query[i]) != _from[index])
                         {
                             return false;
                         }
@@ -673,7 +674,7 @@ namespace Gedaq.Npgsql
             {
                 for (; _currentIndex < _query.Length; _currentIndex++)
                 {
-                    if(!chars.Contains(_query[_currentIndex]))
+                    if (!chars.Contains(_query[_currentIndex]))
                     {
                         return false;
                     }
@@ -692,12 +693,12 @@ namespace Gedaq.Npgsql
                         continue;
                     }
 
-                    if(_query[_currentIndex] == ')')
+                    if (_query[_currentIndex] == ')')
                     {
                         _leftBrackets--;
                     }
 
-                    if(_leftBrackets == 0)
+                    if (_leftBrackets == 0)
                     {
                         _currentIndex++;
                         break;

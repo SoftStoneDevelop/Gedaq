@@ -11,6 +11,7 @@ using System.Reflection;
 using Gedaq.Enums;
 using System.Threading;
 using Gedaq.DbConnection.Model;
+using Gedaq.DbConnection;
 
 namespace Gedaq.Npgsql
 {

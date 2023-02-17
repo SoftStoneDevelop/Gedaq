@@ -1,8 +1,7 @@
-﻿using Gedaq.Npgsql.Model;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System;
 
-namespace NpgsqlTests
+namespace DbConnectionTests
 {
     [TestFixture]
     internal partial class SqlParserFixture
@@ -10,7 +9,7 @@ namespace NpgsqlTests
         [Test]
         public void Parse()
         {
-            var parser = new Gedaq.Npgsql.QueryParser();
+            var parser = new Gedaq.DbConnection.QueryParser();
             var sql = @"
 SELECT 
  
@@ -63,7 +62,7 @@ FROM person p1
         [Test]
         public void ParseWithoutAlias()
         {
-            var parser = new Gedaq.Npgsql.QueryParser();
+            var parser = new Gedaq.DbConnection.QueryParser();
             var sql = @"
 SELECT id  , firstname  
   
@@ -108,7 +107,7 @@ FROM person
         [Test]
         public void ParseBrackets()
         {
-            var parser = new Gedaq.Npgsql.QueryParser();
+            var parser = new Gedaq.DbConnection.QueryParser();
             var sql = @"
 SELECT 
  (
@@ -179,7 +178,7 @@ FROM person p1
         [Test]
         public void GetLastSplitedItem()
         {
-            var parser = new Gedaq.Npgsql.QueryParser();
+            var parser = new Gedaq.DbConnection.QueryParser();
             var sql = @"
 SELECT 
     p1.id,
@@ -244,7 +243,7 @@ FROM person p1
         [Test]
         public void InnerTest()
         {
-            var parser = new Gedaq.Npgsql.QueryParser();
+            var parser = new Gedaq.DbConnection.QueryParser();
             var inSql = @"
 SELECT 
     p1.id,

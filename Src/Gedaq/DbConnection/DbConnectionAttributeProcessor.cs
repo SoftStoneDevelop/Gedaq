@@ -10,6 +10,7 @@ using Gedaq.Enums;
 using System.Threading;
 using Gedaq.DbConnection.Model;
 using Gedaq.DbConnection.Generators;
+using Gedaq.DbConnection;
 
 namespace Gedaq.Npgsql
 {

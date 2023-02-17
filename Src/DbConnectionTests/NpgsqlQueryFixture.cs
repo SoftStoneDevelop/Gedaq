@@ -1,13 +1,13 @@
-﻿using DbConnectionTests.Model;
+﻿using DbConnectionTests.Helpers;
+using DbConnectionTests.Model;
 using Gedaq.DbConnection.Attributes;
 using Npgsql;
-using NpgsqlTests.Helpers;
 using NUnit.Framework;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NpgsqlTests
+namespace DbConnectionTests
 {
     [TestFixture]
     internal class NpgsqlQueryFixture : BaseFixture
@@ -245,7 +245,7 @@ ORDER BY p.id ASC
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
             "ToClass1"
             )]
-        [Parametr("ToClass1", parametrType: typeof(int), parametrName: "id")]
+        [Parametr("ToClass1", parametrType: typeof(int), parametrName: "id", dbType: System.Data.DbType.Int32)]
         public void ReadToClass()
         {
             var list = _dataSource.OpenConnection().ToClass1(3).ToList();
@@ -537,7 +537,7 @@ ORDER BY p.id ASC
                 Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
                 using var command2 = connection.CreateToClass1Command(true);
-                Assert.That(((NpgsqlCommand)command).IsPrepared, Is.EqualTo(true));
+                Assert.That(((NpgsqlCommand)command2).IsPrepared, Is.EqualTo(true));
                 Assert.That(command2.CommandTimeout, Is.EqualTo(30));
             }
         }
@@ -552,7 +552,7 @@ ORDER BY p.id ASC
                 Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
                 await using var command2 = await connection.CreateToClass1CommandAsync(true);
-                Assert.That(((NpgsqlCommand)command).IsPrepared, Is.EqualTo(true));
+                Assert.That(((NpgsqlCommand)command2).IsPrepared, Is.EqualTo(true));
                 Assert.That(command2.CommandTimeout, Is.EqualTo(30));
             }
         }

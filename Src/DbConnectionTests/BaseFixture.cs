@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace NpgsqlTests
+namespace DbConnectionTests
 {
     public abstract class BaseFixture
     {
