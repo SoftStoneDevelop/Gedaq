@@ -17,7 +17,7 @@ namespace NpgsqlBenchmark.Benchmarks
     [HideColumns("Error", "StdDev", "Median", "RatioSD")]
     public class ReadInnerMapAsync
     {
-        [Params(10, 20, 30, 50, 100)]
+        [Params(50, 100, 200)]
         public int Size;
 
         private NpgsqlConnection _connection;
@@ -63,11 +63,11 @@ WHERE p.id = $1
         )]
         [Gedaq.Npgsql.Attributes.Parametr("ReadInnerMap", parametrType: typeof(int), position: 1)]
         [Benchmark(Description = $"GedaqNpgsqlAsync")]
-        public async Task Gedaq()
+        public async Task NpgsqlAsync()
         {
             for (int i = 0; i < Size; i++)
             {
-                var persons = await ((NpgsqlConnection)_connection).ReadInnerMapAsyncAsync(49999).ToListAsync();
+                var persons = await ((NpgsqlConnection)_connection).ReadInnerMapAsyncAsync(50000).ToListAsync();
             }
         }
 
@@ -92,11 +92,11 @@ WHERE p.id = @id
         )]
         [Gedaq.DbConnection.Attributes.Parametr("ReadInnerMap", parametrType: typeof(int), parametrName: "id")]
         [Benchmark(Baseline = true, Description = "GedaqDbConnectionAsync")]
-        public async Task Dapper()
+        public async Task DbConnectionAsync()
         {
             for (int i = 0; i < Size; i++)
             {
-                var persons = await ((DbConnection)_connection).ReadInnerMapAsyncAsync(49999).ToListAsync();
+                var persons = await ((DbConnection)_connection).ReadInnerMapAsyncAsync(50000).ToListAsync();
             }
         }
     }

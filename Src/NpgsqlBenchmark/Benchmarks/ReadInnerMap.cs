@@ -16,7 +16,7 @@ namespace NpgsqlBenchmark.Benchmarks
     [HideColumns("Error", "StdDev", "Median", "RatioSD")]
     public class ReadInnerMap
     {
-        [Params(10, 20, 30, 50, 100)]
+        [Params(50, 100, 200)]
         public int Size;
 
         private NpgsqlConnection _connection;
@@ -62,11 +62,11 @@ WHERE p.id = $1
         )]
         [Gedaq.Npgsql.Attributes.Parametr("ReadInnerMap", parametrType: typeof(int), position: 1)]
         [Benchmark(Description = $"GedaqNpgsql")]
-        public void Gedaq()
+        public void Npgsql()
         {
             for (int i = 0; i < Size; i++)
             {
-                var persons = ((NpgsqlConnection)_connection).ReadInnerMap(49999).ToList();
+                var persons = ((NpgsqlConnection)_connection).ReadInnerMap(50000).ToList();
             }
         }
 
@@ -91,11 +91,11 @@ WHERE p.id = @id
         )]
         [Gedaq.DbConnection.Attributes.Parametr("ReadInnerMap", parametrType: typeof(int), parametrName:"id")]
         [Benchmark(Baseline = true, Description = "Gedaq.DbConnection")]
-        public void Dapper()
+        public void DbConnection()
         {
             for (int i = 0; i < Size; i++)
             {
-                var persons = ((DbConnection)_connection).ReadInnerMap(49999).ToList();
+                var persons = ((DbConnection)_connection).ReadInnerMap(50000).ToList();
             }
         }
     }

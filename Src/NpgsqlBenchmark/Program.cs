@@ -20,10 +20,6 @@ namespace NpgsqlBenchmark
         {
             //await GetData();
 
-            var i = new ReadInnerMap();
-            i.Size = 1;
-            i.Gedaq();
-
             BenchmarkRunner.Run<ReadInnerMap>();
             BenchmarkRunner.Run<ReadInnerMapAsync>();
         }
