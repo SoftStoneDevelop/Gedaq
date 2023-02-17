@@ -75,7 +75,7 @@ ORDER BY p.id ASC
             typeof(Person),
             MethodType.Sync | MethodType.Async,
             SourceType.Connection,
-            "GetData", QueryType.Read | QueryType.Scalar
+            "GetData", QueryType.Read | QueryType.Scalar | QueryType.NonQuery
             )]
         [Parametr("GetData", parametrName: "id", parametrType: typeof(int), dbType: NpgsqlDbType.Integer)]
         private static async Task GetData()
