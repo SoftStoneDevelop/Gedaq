@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Text;
 
-namespace Gedaq.Npgsql.Model
+namespace Gedaq.DbConnection
 {
     internal class BatchPart
     {

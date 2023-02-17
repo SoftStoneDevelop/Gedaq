@@ -7,9 +7,19 @@ using System.Data;
 
 namespace Gedaq.Npgsql.Model
 {
-    internal class NpgsqlParametr : DbParametr
+    internal class NpgsqlParametr : BaseParametr
     {
+        public int Position;
+        public bool HavePosition => Position != -1;
         public int NpgSqlDbType;
+
+        public override string VariableName()
+        {
+            return HaveName ?
+                    Name.ToLowerInvariant() :
+                    $"mParametr{Position}"
+                ;
+        }
 
         public bool HaveNpgSqlDbType => NpgSqlDbType != 40;
 

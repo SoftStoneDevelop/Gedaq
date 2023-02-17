@@ -682,15 +682,6 @@ namespace {source.ContainTypeName.ContainingNamespace}.DbConnectionGenerator
                 command.CommandTimeout = timeout.Value;
             }}
 ");
-            if (source.Timeout.HasValue)
-            {
-                _methodCode.Append($@"
-            else
-            {{
-                command.CommandTimeout = {source.Timeout};
-            }}
-");
-            }
 
             if (source.HaveParametrs())
             {
@@ -699,46 +690,46 @@ namespace {source.ContainTypeName.ContainingNamespace}.DbConnectionGenerator
                     var parametr = source.Parametrs[i];
 
                     _methodCode.Append($@"
-            var parametr{parametr.Position} = command.CreateParameter();
+            var parametr{i} = command.CreateParameter();
 ");
 
                     if (parametr.HaveDbType)
                     {
                         _methodCode.Append($@"
-            parametr{parametr.Position}.DbType = (System.Data.DbType){parametr.DbType};
+            parametr{i}.DbType = (System.Data.DbType){parametr.DbType};
 ");
                     }
 
                     if (parametr.HaveName)
                     {
                         _methodCode.Append($@"
-            parametr{parametr.Position}.ParameterName = ""{parametr.Name}"";
+            parametr{i}.ParameterName = ""{parametr.Name}"";
 ");
                     }
 
                     if (parametr.HaveSize)
                     {
                         _methodCode.Append($@"
-            parametr{parametr.Position}.Size = {parametr.Size};
+            parametr{i}.Size = {parametr.Size};
 ");
                     }
 
                     if (parametr.Nullable)
                     {
                         _methodCode.Append($@"
-            parametr{parametr.Position}.IsNullable = true;
+            parametr{i}.IsNullable = true;
 ");
                     }
 
                     if (parametr.Direction != System.Data.ParameterDirection.Input)
                     {
                         _methodCode.Append($@"
-            parametr{parametr.Position}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
+            parametr{i}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
 ");
                     }
 
                     _methodCode.Append($@"
-            command.Parameters.Add(parametr{parametr.Position});
+            command.Parameters.Add(parametr{i});
 ");
                 }
             }

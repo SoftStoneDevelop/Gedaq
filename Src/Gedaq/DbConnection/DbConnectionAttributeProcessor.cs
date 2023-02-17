@@ -1,6 +1,4 @@
 ﻿using Gedaq.Helpers;
-using Gedaq.Npgsql.Generators;
-using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
@@ -10,18 +8,19 @@ using System.Reflection.Metadata;
 using System.Reflection;
 using Gedaq.Enums;
 using System.Threading;
+using Gedaq.DbConnection.Model;
 using Gedaq.DbConnection;
 
 namespace Gedaq.Npgsql
 {
-    internal class NpgsqlAttributeProcessor
+    internal class DbConnectionAttributeProcessor
     {
-        private List<QueryReadNpgsql> _read = new List<QueryReadNpgsql>();
-        private List<QueryBatchNpgsql> _readBatch = new List<QueryBatchNpgsql>();
+        private List<DbQuery> _read = new List<DbQuery>();
+        private List<DbQueryBatch> _readBatch = new List<DbQueryBatch>();
 
-        Dictionary<string, QueryReadNpgsql> _readTemp = new Dictionary<string,QueryReadNpgsql>();
-        Dictionary<string, List<NpgsqlParametr>> _parametrsTemp = new Dictionary<string, List<NpgsqlParametr>>();
-        private List<QueryBatchNpgsql> _batchTemp = new List<QueryBatchNpgsql>();
+        Dictionary<string, DbQuery> _readTemp = new Dictionary<string, DbQuery>();
+        Dictionary<string, List<DbParametr>> _parametrsTemp = new Dictionary<string, List<DbParametr>>();
+        private List<DbQueryBatch> _batchTemp = new List<DbQueryBatch>();
         private Dictionary<string, List<BatchPart>> _batchParts = new Dictionary<string, List<BatchPart>>();
 
         private QueryParser _queryParser = new QueryParser();
@@ -30,25 +29,25 @@ namespace Gedaq.Npgsql
         {
             foreach (var attribute in attributes)
             {
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "QueryAttribute"))
+                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "QueryAttribute"))
                 {
                     ProcessQueryRead(attribute, containsType);
                     continue;
                 }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "ParametrAttribute"))
+                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "ParametrAttribute"))
                 {
                     ProcessParametr(attribute, containsType);
                     continue;
                 }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "QueryBatchAttribute"))
+                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "QueryBatchAttribute"))
                 {
                     ProcessBatch(attribute, containsType);
                     continue;
                 }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BatchPartAttribute"))
+                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "BatchPartAttribute"))
                 {
                     ProcessBatchPart(attribute, containsType);
                     continue;
@@ -78,7 +77,7 @@ namespace Gedaq.Npgsql
                 _batchParts.Remove(batch.MethodName);
 
                 var set = new HashSet<int>();
-                QueryReadNpgsql firstRead = null;
+                DbQuery firstRead = null;
                 foreach (var part in batchParts.OrderBy(or => or.BatchNumber))
                 {
                     if (!set.Add(part.BatchNumber))
@@ -98,7 +97,6 @@ namespace Gedaq.Npgsql
 
                     batch.AllSameTypes &= SymbolEqualityComparer.Default.Equals(firstRead.MapTypeName, queryRead.MapTypeName);
                     batch.HaveParametrs |= queryRead.HaveParametrs();
-                    batch.SourceType |= queryRead.SourceType;
                     batch.Queries.Add((part.BatchNumber, queryRead));
                 }
 
@@ -114,43 +112,11 @@ namespace Gedaq.Npgsql
 
         private void FillReadMethods()
         {
-            var set = new HashSet<int>();
             foreach (var read in _readTemp.Values)
             {
                 if (_parametrsTemp.TryGetValue(read.MethodName, out var parametrs))
                 {
-                    parametrs = parametrs.OrderBy(or => or.Position).ToList();
-                    read.Parametrs = new NpgsqlParametr[parametrs.Count];
-
-                    set.Clear();
-                    var containNamedParametr = false;
-                    var containPositionParametr = false;
-                    for (int i = 0; i < parametrs.Count; i++)
-                    {
-                        var parametr = parametrs[i];
-                        if (parametr.HavePosition)
-                        {
-                            if (!set.Add(parametr.Position))
-                            {
-                                throw new Exception("Parametr position must be unique");
-                            }
-
-                            containPositionParametr |= true;
-                        }
-                        else
-                        {
-                            parametr.Position = i + 1;
-                        }
-
-                        containNamedParametr |= parametr.HaveName;
-
-                        read.Parametrs[i] = parametr;
-                    }
-
-                    if (containNamedParametr && containPositionParametr)
-                    {
-                        throw new Exception("Parameters in query can be positional or named, but not combined");
-                    }
+                    read.Parametrs = parametrs.ToArray();
                 }
 
                 read.Aliases = _queryParser.Parse(ref read.Query);
@@ -163,9 +129,9 @@ namespace Gedaq.Npgsql
 
         private void ProcessBatch(AttributeData parametrAttribute, INamedTypeSymbol containsType)
         {
-            if (!QueryBatchNpgsql.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var queryBatch))
+            if (!DbQueryBatch.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var queryBatch))
             {
-                throw new Exception($"Unknown {nameof(NpgsqlParametr)} constructor");
+                throw new Exception($"Unknown {nameof(DbQueryBatch)} constructor");
             }
 
             _batchTemp.Add(queryBatch);
@@ -175,7 +141,7 @@ namespace Gedaq.Npgsql
         {
             if (!BatchPart.CreateNew(parametrAttribute.ConstructorArguments, out var batchPart))
             {
-                throw new Exception($"Unknown {nameof(NpgsqlParametr)} constructor");
+                throw new Exception($"Unknown {nameof(BatchPart)} constructor");
             }
 
             if (!_batchParts.TryGetValue(batchPart.BatchName, out var parts))
@@ -189,9 +155,9 @@ namespace Gedaq.Npgsql
 
         private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
         {
-            if (!QueryReadNpgsql.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
+            if (!DbQuery.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
-                throw new Exception($"Unknown {nameof(QueryReadNpgsql)} constructor");
+                throw new Exception($"Unknown {nameof(DbQuery)} constructor");
             }
 
             if(_readTemp.ContainsKey(queryReadMethod.MethodName))
@@ -204,14 +170,14 @@ namespace Gedaq.Npgsql
 
         private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType)
         {
-            if (!NpgsqlParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
+            if (!DbParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
             {
-                throw new Exception($"Unknown {nameof(NpgsqlParametr)} constructor");
+                throw new Exception($"Unknown {nameof(DbParametr)} constructor");
             }
 
             if (!_parametrsTemp.ContainsKey(methodName))
             {
-                var methods = new List<NpgsqlParametr>();
+                var methods = new List<DbParametr>();
                 _parametrsTemp.Add(methodName, methods);
             }
 
@@ -220,20 +186,20 @@ namespace Gedaq.Npgsql
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)
         {
-            var readGenerator = new QueryReadGenerator();
+            var readGenerator = new DbConnectionQueryGenerator();
             foreach (var queryRead in _read)
             {
-                readGenerator.GenerateMethod(queryRead);
+                readGenerator.Generate(queryRead);
                 context.AddSource($"{queryRead.MethodName}Class.g.cs", readGenerator.GetCode());
             }
             _read.Clear();
 
-            var batchReadGenerator = new QueryBatchReadGenerator();
-            foreach (var batchRead in _readBatch)
-            {
-                batchReadGenerator.GenerateMethod(batchRead);
-                context.AddSource($"{batchRead.MethodName}Class.g.cs", batchReadGenerator.GetCode());
-            }
+            //var batchReadGenerator = new QueryBatchReadGenerator();
+            //foreach (var batchRead in _readBatch)
+            //{
+            //    batchReadGenerator.GenerateMethod(batchRead);
+            //    context.AddSource($"{batchRead.MethodName}Class.g.cs", batchReadGenerator.GetCode());
+            //}
             _readBatch.Clear();
         }
     }

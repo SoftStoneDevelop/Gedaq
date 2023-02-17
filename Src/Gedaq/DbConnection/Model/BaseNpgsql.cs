@@ -6,10 +6,9 @@ namespace Gedaq.DbConnection.Model
 {
     internal class BaseGenerateItem
     {
-        public string MethodName;
-        public MethodType MethodType;
-        public QueryType QueryType;
+        public string MethodName { get; protected set; }
+        public MethodType MethodType { get; protected set; }
+        public QueryType QueryType { get; protected set; }
         public INamedTypeSymbol ContainTypeName;
-        public int? Timeout;
     }
 }

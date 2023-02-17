@@ -1,22 +1,19 @@
-﻿using Gedaq.DbConnection;
-using Gedaq.DbConnection.Model;
+﻿using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Linq;
+using System.Text;
 
-namespace Gedaq.Npgsql.Model
+namespace Gedaq.DbConnection
 {
-    internal class QueryBatchNpgsql : QueryBatch
+    internal class DbQueryBatch : QueryBatch
     {
-        public NpgsqlSourceType SourceType;
-        public List<(int number, QueryReadNpgsql query)> Queries = new List<(int number, QueryReadNpgsql query)>();
+        public List<(int number, DbQuery query)> Queries = new List<(int number, DbQuery query)>();
 
-        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out QueryBatchNpgsql queryBatch)
+        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out DbQueryBatch queryBatch)
         {
             queryBatch = null;
             if (namedArguments.Length != 3)
@@ -24,7 +21,7 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            var result = new QueryBatchNpgsql();
+            var result = new DbQueryBatch();
             if (!(namedArguments[0].Type is INamedTypeSymbol methodName) ||
                 methodName.Name != nameof(String)
                 )

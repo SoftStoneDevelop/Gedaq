@@ -1,4 +1,5 @@
-﻿using Gedaq.Enums;
+﻿using Gedaq.DbConnection;
+using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Gedaq.Npgsql.Helpers;
@@ -15,22 +16,9 @@ using System.Xml.Linq;
 
 namespace Gedaq.Npgsql.Generators
 {
-    internal class QueryBatchReadGenerator
+    internal class QueryBatchReadGenerator : QueryBaseGenerator
     {
-        private StringBuilder _methodCode = new StringBuilder();
-
-        public string GetCode()
-        {
-            var code = _methodCode.ToString();
-            return code;
-        }
-
-        public void Reset()
-        {
-            _methodCode.Clear();
-        }
-
-        public void GenerateMethod(QueryBatchReadNpgsql source)
+        public void GenerateMethod(QueryBatchNpgsql source)
         {
             Reset();
             Start(source);
@@ -44,7 +32,7 @@ namespace Gedaq.Npgsql.Generators
         }
 
         private void Start(
-            QueryBatchReadNpgsql source
+            QueryBatchNpgsql source
             )
         {
             _methodCode.Append($@"
@@ -72,7 +60,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
 ");
         }
 
-        private void ReadMethods(QueryBatchReadNpgsql source)
+        private void ReadMethods(QueryBatchNpgsql source)
         {
             if (source.QueryType.HasFlag(QueryType.Read))
             {
@@ -98,7 +86,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
             }
         }
 
-        private void ReadMethod(QueryBatchReadNpgsql source)
+        private void ReadMethod(QueryBatchNpgsql source)
         {
             if(source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
@@ -119,7 +107,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
             }
         }
 
-        private void ReadAsyncMethod(QueryBatchReadNpgsql source)
+        private void ReadAsyncMethod(QueryBatchNpgsql source)
         {
             if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
@@ -140,7 +128,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
             }
         }
 
-        private void ExecuteBatchMethods(QueryBatchReadNpgsql source)
+        private void ExecuteBatchMethods(QueryBatchNpgsql source)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -157,7 +145,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
             }
         }
 
-        private void CreateBatchMethods(QueryBatchReadNpgsql source)
+        private void CreateBatchMethods(QueryBatchNpgsql source)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -189,7 +177,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
         }
 
         private void StartReadMethod(
-            QueryBatchReadNpgsql source,
+            QueryBatchNpgsql source,
             MethodType methodType
             )
         {
@@ -209,7 +197,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
         }
 
         private void StartMethodParametrs(
-            QueryBatchReadNpgsql source,
+            QueryBatchNpgsql source,
             NpgsqlSourceType sourceType
             )
         {
@@ -257,7 +245,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
         }
 
         private void StartExecuteBatch(
-            QueryBatchReadNpgsql source,
+            QueryBatchNpgsql source,
             MethodType methodType
             )
         {
@@ -281,7 +269,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
             }
         }
 
-        private void ExecuteBatch(QueryBatchReadNpgsql source, MethodType methodType)
+        private void ExecuteBatch(QueryBatchNpgsql source, MethodType methodType)
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
@@ -326,7 +314,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
         }
 
         private void ReadMethodBody(
-            QueryBatchReadNpgsql source,
+            QueryBatchNpgsql source,
             Enums.NpgsqlSourceType sourceType,
             MethodType methodType
             )
@@ -451,7 +439,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
         }
 
         private void CreateBatchMethod(
-            QueryBatchReadNpgsql source,
+            QueryBatchNpgsql source,
             Enums.NpgsqlSourceType sourceType,
             MethodType methodType
             )
@@ -479,15 +467,6 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
                 batch.Timeout = timeout.Value;
             }}
 ");
-            if (source.Timeout.HasValue)
-            {
-                _methodCode.Append($@"
-            else
-            {{
-                batch.Timeout = {source.Timeout};
-            }}
-");
-            }
             for (int i = 0; i < source.Queries.Count; i++)
             {
                 var item = source.Queries[i];
@@ -530,10 +509,10 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
 ");
                         }
 
-                        if (parametr.HaveDbType)
+                        if (parametr.HaveNpgSqlDbType)
                         {
                             _methodCode.Append($@"
-                parametr{parametr.Position}.NpgsqlDbType = ({MapTypeHelper.NpgsqlDbTypeName}){parametr.DbType};
+                parametr{parametr.Position}.NpgsqlDbType = ({MapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType};
 ");
                         }
 
@@ -622,7 +601,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
         }
 
         private void SetParametrsMethod(
-            QueryBatchReadNpgsql source
+            QueryBatchNpgsql source
             )
         {
             if(!source.HaveParametrs)
@@ -708,7 +687,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
 
         }
 
-        private void CreateBatchItems(QueryBatchReadNpgsql source)
+        private void CreateBatchItems(QueryBatchNpgsql source)
         {
             if (source.MethodType.HasFlag(MethodType.Async))
             {
@@ -722,7 +701,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
         }
 
         private void CreateBatchItem(
-            QueryBatchReadNpgsql source,
+            QueryBatchNpgsql source,
             MethodType methodType
             )
         {
@@ -810,129 +789,6 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
                     yield return {castTypeExpr}item;
 ");
             }
-        }
-
-        private class ItemPair
-        {
-            public ItemPair(
-                Aliases aliases,
-                ITypeSymbol mapTypeName,
-                string itemName
-                )
-            {
-                Aliases = aliases;
-                MapTypeName = mapTypeName;
-                ItemName = itemName;
-            }
-
-            public ItemPair(
-                Aliases aliases,
-                ITypeSymbol mapTypeName,
-                string itemName,
-                string propertyName
-                )
-                : this(aliases, mapTypeName, itemName)
-            {
-                PropertyName = propertyName;
-            }
-
-            public Aliases Aliases { get; private set; }
-            public ITypeSymbol MapTypeName { get; private set; }
-            public string PropertyName { get; private set; }
-            public string ItemName { get; private set; }
-
-            public ItemPair Parent { get; set; }
-            public int Tabs { get; set; }
-        }
-
-        private void ComplicateItem(
-            Aliases rootAliase,
-            ITypeSymbol rootMapTypeName,
-            MethodType methodType
-            )
-        {
-            var aliases = new Stack<ItemPair>();
-            aliases.Push(new ItemPair(rootAliase, rootMapTypeName, "item"));
-
-            var itemId = 0;
-            int tabs = -1;
-            while (aliases.Count != 0)
-            {
-                var pair = aliases.Pop();
-                if (pair.Parent != null)
-                {
-                    var linkField = pair.Aliases.GetLinkField();
-                    _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}if(!{(methodType == MethodType.Async ? "await " : "")}reader.IsDBNull{(methodType == MethodType.Async ? "Async" : "")}({linkField.Position}))
-                    {Tabs(pair.Tabs)}{{
-                        {Tabs(pair.Tabs)}var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}
-                        {Tabs(pair.Tabs)}{{
-");
-                    for (int i = 0; i < pair.Aliases.Fields.Count; i++)
-                    {
-                        var field = pair.Aliases.Fields[i];
-                        pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
-                        _methodCode.Append($@"
-                            {Tabs(pair.Tabs)}{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({field.Position}),
-");
-                    }
-                    _methodCode.Append($@" 
-                        {Tabs(pair.Tabs)}}};
-");
-                    if (pair.Aliases.InnerEntities.Count == 0)
-                    {
-                        var current = pair;
-                        while (current.Parent != null)
-                        {
-                            _methodCode.Append($@"
-                        {Tabs(current.Tabs)}{current.Parent.ItemName}.{current.PropertyName} = {current.ItemName};
-                    {Tabs(current.Tabs)}}}
-");
-                            current = current.Parent;
-                        }
-
-                        continue;
-                    }
-                }
-                else//is root
-                {
-                    _methodCode.Append($@"
-                    var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}
-                    {{
-");
-                    for (int i = 0; i < pair.Aliases.Fields.Count; i++)
-                    {
-                        var field = pair.Aliases.Fields[i];
-                        pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
-                        _methodCode.Append($@"
-                        {propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({field.Position}),
-");
-                    }
-                    _methodCode.Append($@" 
-                    }};
-");
-                }
-
-                if (pair.Aliases.InnerEntities.Count != 0)
-                {
-                    ++tabs;
-                    for (var i = 0; i < pair.Aliases.InnerEntities.Count; i++)
-                    {
-                        var alias = pair.Aliases.InnerEntities[i];
-                        pair.MapTypeName.GetPropertyOrFieldName(alias.EntityName, out var propertyName, out var pairType);
-                        var newPair = new ItemPair(alias, pairType, $"item{++itemId}", propertyName);
-                        newPair.Parent = pair;
-                        newPair.Tabs = tabs;
-                        aliases.Push(newPair);
-                    }
-                }
-            }
-        }
-
-        [MethodImplAttribute(MethodImplOptions.AggressiveInlining)]
-        private string Tabs(int tabs)
-        {
-            return new string(' ', tabs * 4);
         }
     }
 }

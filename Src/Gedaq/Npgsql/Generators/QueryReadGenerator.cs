@@ -796,15 +796,6 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
                 command.CommandTimeout = timeout.Value;
             }}
 ");
-            if(source.Timeout.HasValue)
-            {
-                _methodCode.Append($@"
-            else
-            {{
-                command.CommandTimeout = {source.Timeout};
-            }}
-");
-            }
 
             if (source.HaveParametrs())
             {
@@ -828,7 +819,7 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
                     if (parametr.HaveNpgSqlDbType)
                     {
                         _methodCode.Append($@"
-            parametr{parametr.Position}.NpgsqlDbType = ({MapTypeHelper.NpgsqlDbTypeName}){parametr.DbType};
+            parametr{parametr.Position}.NpgsqlDbType = ({MapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType};
 ");
                     }
 
