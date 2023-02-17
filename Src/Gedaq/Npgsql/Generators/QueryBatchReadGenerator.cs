@@ -52,14 +52,6 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
 ");
         }
 
-        private void End()
-        {
-            _methodCode.Append($@"
-    }}
-}}
-");
-        }
-
         private void ReadMethods(QueryBatchNpgsql source)
         {
             if (source.QueryType.HasFlag(QueryType.Read))
@@ -428,13 +420,6 @@ namespace {source.ContainTypeName.ContainingNamespace}.NpgsqlGenerator
                     {await}batch.Dispose{disposeOrCloseAsync};
                 }}
             }}
-");
-        }
-
-        private void EndMethod()
-        {
-            _methodCode.Append($@"
-        }}
 ");
         }
 
