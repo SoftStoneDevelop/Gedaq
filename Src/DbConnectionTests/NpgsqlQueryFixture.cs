@@ -19,7 +19,7 @@ namespace NpgsqlTests
         [SetUp]
         public void Init()
         {
-            var dataSourceBuilder = new NpgsqlDataSourceBuilder(GetConnectionString());
+            var dataSourceBuilder = new NpgsqlDataSourceBuilder(GetNpgsqlSqlConnectionString());
             _dataSource = dataSourceBuilder.Build();
             var conn = _dataSource.OpenConnection();
             conn.DropTable("readfixtureperson");

@@ -23,9 +23,9 @@ namespace NpgsqlTests
         }
         private IConfigurationRoot _root;
 
-        public string GetConnectionString()
+        public string GetNpgsqlSqlConnectionString()
         {
-            return Settings.GetConnectionString("SqlConnection");
+            return Settings.GetConnectionString("NpgsqlSqlConnection");
         }
     }
 }
