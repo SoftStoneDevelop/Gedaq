@@ -11,8 +11,8 @@ namespace Gedaq.DbConnection.Model
 {
     internal class DbParametr : BaseParametr
     {
-        public System.Data.DbType? DbType;
-        public bool HaveDbType => DbType.HasValue;
+        public System.Data.DbType DbType;
+        public bool HaveDbType => DbType != DbType.Object;
 
         public override string VariableName()
         {

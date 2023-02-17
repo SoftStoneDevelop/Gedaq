@@ -48,21 +48,21 @@ namespace Gedaq.Npgsql.Model
             methodName = (string)namedArguments[0].Value;
 
             var result = new NpgsqlParametr();
-            if (!(namedArguments[1].Type is INamedTypeSymbol paramName) ||
+            if (!(namedArguments[1].Value is ITypeSymbol typeParam))
+            {
+                return false;
+            }
+
+            result.Type = typeParam;
+
+            if (!(namedArguments[2].Type is INamedTypeSymbol paramName) ||
                 paramName.Name != nameof(String)
                 )
             {
                 return false;
             }
 
-            result.Name = (string)namedArguments[1].Value;
-
-            if (!(namedArguments[2].Value is ITypeSymbol typeParam))
-            {
-                return false;
-            }
-
-            result.Type = typeParam;
+            result.Name = (string)namedArguments[2].Value;
 
             if (namedArguments[3].Kind != TypedConstantKind.Enum ||
                 !(namedArguments[3].Type is INamedTypeSymbol dbType) ||
