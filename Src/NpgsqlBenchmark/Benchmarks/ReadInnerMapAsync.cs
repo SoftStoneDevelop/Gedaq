@@ -61,8 +61,8 @@ WHERE p.id = $1
         SourceType.Connection,
         "ReadInnerMapAsync"
         )]
-        [Gedaq.Npgsql.Attributes.Parametr("ReadInnerMap", parametrType: typeof(int), position: 1)]
-        [Benchmark(Description = $"GedaqNpgsqlAsync")]
+        [Gedaq.Npgsql.Attributes.Parametr("ReadInnerMapAsync", parametrType: typeof(int), position: 1)]
+        [Benchmark(Description = $"Gedaq.Npgsql Async")]
         public async Task NpgsqlAsync()
         {
             for (int i = 0; i < Size; i++)
@@ -90,8 +90,8 @@ WHERE p.id = @id
         MethodType.Async,
         "ReadInnerMapAsync"
         )]
-        [Gedaq.DbConnection.Attributes.Parametr("ReadInnerMap", parametrType: typeof(int), parametrName: "id")]
-        [Benchmark(Baseline = true, Description = "GedaqDbConnectionAsync")]
+        [Gedaq.DbConnection.Attributes.Parametr("ReadInnerMapAsync", parametrType: typeof(int), parametrName: "id")]
+        [Benchmark(Baseline = true, Description = "Gedaq.DbConnection Async")]
         public async Task DbConnectionAsync()
         {
             for (int i = 0; i < Size; i++)

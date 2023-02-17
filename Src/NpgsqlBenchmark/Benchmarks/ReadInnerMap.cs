@@ -61,7 +61,7 @@ WHERE p.id = $1
         "ReadInnerMap"
         )]
         [Gedaq.Npgsql.Attributes.Parametr("ReadInnerMap", parametrType: typeof(int), position: 1)]
-        [Benchmark(Description = $"GedaqNpgsql")]
+        [Benchmark(Description = $"Gedaq.Npgsql")]
         public void Npgsql()
         {
             for (int i = 0; i < Size; i++)
