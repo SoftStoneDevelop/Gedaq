@@ -427,7 +427,7 @@ ORDER BY p.id ASC
         }
 
         [Test]
-        [QueryBatch("BatchReadToClass", Gedaq.Common.Enums.QueryType.Read, Gedaq.Common.Enums.MethodType.Sync)]
+        [QueryBatch("BatchReadToClass", Gedaq.Common.Enums.QueryType.Read | Gedaq.Common.Enums.QueryType.Scalar, Gedaq.Common.Enums.MethodType.Sync)]
         [BatchPart("ToClass2", "BatchReadToClass", 1)]
         [BatchPart("ToClass1", "BatchReadToClass", 2)]
         public void BatchReadToClass()
@@ -553,6 +553,13 @@ ORDER BY p.id ASC
                     Assert.That(country.Name, Is.EqualTo("Martian colony"));
                 });
             }
+        }
+
+        [Test]
+        public void BatchScalarToClass()
+        {
+            var id = _dataSource.OpenConnection().ScalarBatchReadToClass(0, 1, 3);
+            Assert.That((int)id, Is.EqualTo(2));
         }
 
         [Test]

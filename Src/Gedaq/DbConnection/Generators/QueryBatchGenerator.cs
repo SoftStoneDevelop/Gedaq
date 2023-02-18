@@ -2,6 +2,8 @@
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
+using Gedaq.Npgsql.Helpers;
+using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
@@ -67,7 +69,15 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
             if (source.QueryType.HasFlag(QueryType.Scalar))
             {
-                throw new NotImplementedException();
+                if (source.MethodType.HasFlag(MethodType.Sync))
+                {
+                    ScalarMethod(source);
+                }
+
+                if (source.MethodType.HasFlag(MethodType.Async))
+                {
+                    ScalarMethodAsync(source);
+                }
             }
 
             if (source.QueryType.HasFlag(QueryType.NonQuery))
@@ -89,8 +99,26 @@ namespace {source.ContainTypeName.ContainingNamespace}
         {
             StartReadMethod(source, MethodType.Async);
             StartMethodParametrs(source);
-            AsyncEndMethodParametrs();
+            AsyncEndMethodParametrs(true);
             ReadMethodBody(source, MethodType.Async);
+            EndMethod();
+        }
+
+        private void ScalarMethod(DbQueryBatch source)
+        {
+            StartScalarMethod(source, MethodType.Sync);
+            StartMethodParametrs(source);
+            EndMethodParametrs();
+            ScalarMethodBody(source, MethodType.Sync);
+            EndMethod();
+        }
+
+        private void ScalarMethodAsync(DbQueryBatch source)
+        {
+            StartScalarMethod(source, MethodType.Async);
+            StartMethodParametrs(source);
+            AsyncEndMethodParametrs(false);
+            ScalarMethodBody(source, MethodType.Async);
             EndMethod();
         }
 
@@ -146,6 +174,25 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
+        private void StartScalarMethod(
+            DbQueryBatch source,
+            MethodType methodType
+            )
+        {
+            if (methodType == MethodType.Sync)
+            {
+                _methodCode.Append($@"
+        public static object Scalar{source.MethodName}(
+");
+            }
+            else
+            {
+                _methodCode.Append($@"
+        public static async Task<object> Scalar{source.MethodName}Async(
+");
+            }
+        }
+
         private void StartMethodParametrs(
             DbQueryBatch source
             )
@@ -183,11 +230,11 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
         }
 
-        private void AsyncEndMethodParametrs()
+        private void AsyncEndMethodParametrs(bool enumerator)
         {
             _methodCode.Append($@",
             int? timeout = null,
-            [EnumeratorCancellation] CancellationToken cancellationToken = default
+            {(enumerator ? "[EnumeratorCancellation] " : "")}CancellationToken cancellationToken = default
         )
         {{
 ");
@@ -357,6 +404,91 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     {await}reader.Dispose{disposeOrCloseAsync};
                 }}
 
+                if (needClose)
+                {{
+                    {await}connection.Close{disposeOrCloseAsync};
+                }}
+
+                if(batch != null)
+                {{
+                    batch.BatchCommands.Clear();
+                    {await}batch.Dispose{disposeOrCloseAsync};
+                }}
+            }}
+");
+        }
+
+        private void ScalarMethodBody(
+            DbQueryBatch source,
+            MethodType methodType
+            )
+        {
+            var await = methodType == MethodType.Async ? "await " : "";
+            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
+            var disposeOrCloseAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
+
+            _methodCode.Append($@"
+            bool needClose = connection.State == ConnectionState.Closed;
+            if(needClose)
+            {{
+                {await}connection.Open{async};
+            }}
+");
+            var createBatch =
+                methodType == MethodType.Async ?
+                $"await Create{source.MethodName}BatchAsync(connection, false, cancellationToken, timeout)" :
+                $"Create{source.MethodName}Batch(connection, false, timeout)"
+                ;
+            _methodCode.Append($@"
+            DbBatch batch = null;
+            try
+            {{
+                batch = {createBatch};
+");
+            if (source.HaveParametrs)
+            {
+                _methodCode.Append($@"
+                batch.Set{source.MethodName}Parametrs(
+");
+                var haveSuccessIteration = false;
+                for (int j = 0; j < source.Queries.Count; j++)
+                {
+                    var item = source.Queries[j];
+                    if (!item.query.HaveParametrs())
+                    {
+                        continue;
+                    }
+
+                    if (haveSuccessIteration)
+                    {
+                        _methodCode.Append($@",");
+                    }
+
+                    for (int i = 0; i < item.query.Parametrs.Length; i++)
+                    {
+                        var parametr = item.query.Parametrs[i];
+                        _methodCode.Append($@"
+                    in {parametr.VariableName()}Batch{item.number}
+");
+                        if (i != item.query.Parametrs.Length - 1)
+                        {
+                            _methodCode.Append($@",");
+                        }
+                    }
+
+                    haveSuccessIteration |= true;
+                }
+                _methodCode.Append($@"
+                    );");
+            }
+            _methodCode.Append($@"
+                return {await}batch.ExecuteScalar{async};
+");
+
+            _methodCode.Append($@"
+            }}
+            finally
+            {{
                 if (needClose)
                 {{
                     {await}connection.Close{disposeOrCloseAsync};
