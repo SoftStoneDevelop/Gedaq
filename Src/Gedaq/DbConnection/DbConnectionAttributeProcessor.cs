@@ -187,7 +187,7 @@ namespace Gedaq.Npgsql
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)
         {
-            var readGenerator = new DbConnectionQueryGenerator();
+            var readGenerator = new QueryGenerator();
             foreach (var queryRead in _read)
             {
                 readGenerator.Generate(queryRead);
@@ -195,12 +195,12 @@ namespace Gedaq.Npgsql
             }
             _read.Clear();
 
-            //var batchReadGenerator = new QueryBatchReadGenerator();
-            //foreach (var batchRead in _readBatch)
-            //{
-            //    batchReadGenerator.GenerateMethod(batchRead);
-            //    context.AddSource($"{batchRead.MethodName}Class.g.cs", batchReadGenerator.GetCode());
-            //}
+            var batchReadGenerator = new QueryBatchGenerator();
+            foreach (var batchRead in _readBatch)
+            {
+                batchReadGenerator.GenerateMethod(batchRead);
+                context.AddSource($"{batchRead.MethodName}DbConnectionExtension.g.cs", batchReadGenerator.GetCode());
+            }
             _readBatch.Clear();
         }
     }

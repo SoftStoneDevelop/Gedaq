@@ -9,7 +9,7 @@ using System;
 
 namespace Gedaq.Npgsql.Generators
 {
-    internal class QueryReadGenerator : QueryBaseGenerator
+    internal class QueryGenerator : QueryBaseGenerator
     {
         public void GenerateMethod(QueryReadNpgsql source)
         {

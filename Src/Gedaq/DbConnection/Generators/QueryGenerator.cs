@@ -10,7 +10,7 @@ using System.Text;
 
 namespace Gedaq.DbConnection.Generators
 {
-    internal class DbConnectionQueryGenerator : QueryBaseGenerator
+    internal class QueryGenerator : QueryBaseGenerator
     {
         public void Generate(DbQuery source)
         {

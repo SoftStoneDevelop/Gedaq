@@ -1,9 +1,7 @@
 ﻿using Gedaq.DbConnection.Generators;
+using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Enums;
-using Gedaq.Npgsql.Helpers;
-using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
@@ -14,11 +12,11 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Xml.Linq;
 
-namespace Gedaq.Npgsql.Generators
+namespace Gedaq.DbConnection.Generators
 {
-    internal class QueryBatchReadGenerator : QueryBaseGenerator
+    internal class QueryBatchGenerator : QueryBaseGenerator
     {
-        public void GenerateMethod(QueryBatchNpgsql source)
+        public void GenerateMethod(DbQueryBatch source)
         {
             Reset();
             Start(source);
@@ -32,13 +30,13 @@ namespace Gedaq.Npgsql.Generators
         }
 
         private void Start(
-            QueryBatchNpgsql source
+            DbQueryBatch source
             )
         {
             _methodCode.Append($@"
-using Npgsql;
 using System;
 using System.Data;
+using System.Data.Common;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -47,12 +45,12 @@ using System.Runtime.CompilerServices;
 
 namespace {source.ContainTypeName.ContainingNamespace}
 {{
-    public static class {source.MethodName}NpgsqlExtension
+    public static class {source.MethodName}DbConnectionExtension
     {{
 ");
         }
 
-        private void ReadMethods(QueryBatchNpgsql source)
+        private void ReadMethods(DbQueryBatch source)
         {
             if (source.QueryType.HasFlag(QueryType.Read))
             {
@@ -78,49 +76,25 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
-        private void ReadMethod(QueryBatchNpgsql source)
+        private void ReadMethod(DbQueryBatch source)
         {
-            if(source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
-            {
-                StartReadMethod(source, MethodType.Sync);
-                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
-                EndMethodParametrs();
-                ReadMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync);
-                EndMethod();
-            }
-
-            if(source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
-            {
-                StartReadMethod(source, MethodType.Sync);
-                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
-                EndMethodParametrs();
-                ReadMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
-                EndMethod();
-            }
+            StartReadMethod(source, MethodType.Sync);
+            StartMethodParametrs(source);
+            EndMethodParametrs();
+            ReadMethodBody(source, MethodType.Sync);
+            EndMethod();
         }
 
-        private void ReadAsyncMethod(QueryBatchNpgsql source)
+        private void ReadAsyncMethod(DbQueryBatch source)
         {
-            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
-            {
-                StartReadMethod(source, MethodType.Async);
-                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
-                AsyncEndMethodParametrs();
-                ReadMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async);
-                EndMethod();
-            }
-
-            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
-            {
-                StartReadMethod(source, MethodType.Async);
-                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
-                AsyncEndMethodParametrs();
-                ReadMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
-                EndMethod();
-            }
+            StartReadMethod(source, MethodType.Async);
+            StartMethodParametrs(source);
+            AsyncEndMethodParametrs();
+            ReadMethodBody(source, MethodType.Async);
+            EndMethod();
         }
 
-        private void ExecuteBatchMethods(QueryBatchNpgsql source)
+        private void ExecuteBatchMethods(DbQueryBatch source)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -137,39 +111,23 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
-        private void CreateBatchMethods(QueryBatchNpgsql source)
+        private void CreateBatchMethods(DbQueryBatch source)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
-                {
-                    CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync);
-                }
-
-                if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
-                {
-                    CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
-                }
+                CreateBatchMethod(source, MethodType.Sync);
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
-                {
-                    CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async);
-                }
-
-                if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
-                {
-                    CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
-                }
+                CreateBatchMethod(source, MethodType.Async);
             }
 
             SetParametrsMethod(source);
         }
 
         private void StartReadMethod(
-            QueryBatchNpgsql source,
+            DbQueryBatch source,
             MethodType methodType
             )
         {
@@ -189,12 +147,11 @@ namespace {source.ContainTypeName.ContainingNamespace}
         }
 
         private void StartMethodParametrs(
-            QueryBatchNpgsql source,
-            NpgsqlSourceType sourceType
+            DbQueryBatch source
             )
         {
             _methodCode.Append($@"
-            this {sourceType.ToTypeName()} {sourceType.ToParametrName()}
+            this DbConnection connection
 ");
             if(source.HaveParametrs)
             {
@@ -237,7 +194,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
         }
 
         private void StartExecuteBatch(
-            QueryBatchNpgsql source,
+            DbQueryBatch source,
             MethodType methodType
             )
         {
@@ -245,7 +202,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if (methodType == MethodType.Sync)
             {
                 _methodCode.Append($@"
-        public static IEnumerable<IEnumerable<{type}>> Execute{source.MethodName}Batch(this NpgsqlBatch batch)
+        public static IEnumerable<IEnumerable<{type}>> Execute{source.MethodName}Batch(this DbBatch batch)
         {{
 ");
             }
@@ -253,7 +210,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             {
                 _methodCode.Append($@"
         public static async IAsyncEnumerable<IAsyncEnumerable<{type}>> Execute{source.MethodName}BatchAsync(
-            this NpgsqlBatch batch,
+            this DbBatch batch,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
         {{
@@ -261,14 +218,14 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
-        private void ExecuteBatch(QueryBatchNpgsql source, MethodType methodType)
+        private void ExecuteBatch(DbQueryBatch source, MethodType methodType)
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
 
             _methodCode.Append($@"
-            NpgsqlDataReader reader = null;
+            DbDataReader reader = null;
             try
             {{
 ");
@@ -306,8 +263,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
         }
 
         private void ReadMethodBody(
-            QueryBatchNpgsql source,
-            Enums.NpgsqlSourceType sourceType,
+            DbQueryBatch source,
             MethodType methodType
             )
         {
@@ -315,24 +271,21 @@ namespace {source.ContainTypeName.ContainingNamespace}
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             var disposeOrCloseAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
 
-            if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
-            {
-                _methodCode.Append($@"
-            bool needClose = {sourceType.ToParametrName()}.State == ConnectionState.Closed;
+            _methodCode.Append($@"
+            bool needClose = connection.State == ConnectionState.Closed;
             if(needClose)
             {{
-                {await}{sourceType.ToParametrName()}.Open{async};
+                {await}connection.Open{async};
             }}
 ");
-            }
             var createBatch =
                 methodType == MethodType.Async ?
-                $"await Create{source.MethodName}BatchAsync({sourceType.ToParametrName()}, false, cancellationToken, timeout)" :
-                $"Create{source.MethodName}Batch({sourceType.ToParametrName()}, false, timeout)"
+                $"await Create{source.MethodName}BatchAsync(connection, false, cancellationToken, timeout)" :
+                $"Create{source.MethodName}Batch(connection, false, timeout)"
                 ;
             _methodCode.Append($@"
-            NpgsqlBatch batch = null;
-            NpgsqlDataReader reader = null;
+            DbBatch batch = null;
+            DbDataReader reader = null;
             try
             {{
                 batch = {createBatch};
@@ -403,17 +356,12 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 
                     {await}reader.Dispose{disposeOrCloseAsync};
                 }}
-");
-            if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
-            {
-                _methodCode.Append($@"
+
                 if (needClose)
                 {{
                     {await}connection.Close{disposeOrCloseAsync};
                 }}
-");
-            }
-            _methodCode.Append($@"
+
                 if(batch != null)
                 {{
                     batch.BatchCommands.Clear();
@@ -424,15 +372,14 @@ namespace {source.ContainTypeName.ContainingNamespace}
         }
 
         private void CreateBatchMethod(
-            QueryBatchNpgsql source,
-            Enums.NpgsqlSourceType sourceType,
+            DbQueryBatch source,
             MethodType methodType
             )
         {
             _methodCode.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static  {(methodType == MethodType.Async ? "async Task<NpgsqlBatch>" : "NpgsqlBatch")} Create{source.MethodName}Batch{(methodType == MethodType.Async ? "Async" : "")}(
-            this {sourceType.ToTypeName()} {sourceType.ToParametrName()},
+        public static  {(methodType == MethodType.Async ? "async Task<DbBatch>" : "DbBatch")} Create{source.MethodName}Batch{(methodType == MethodType.Async ? "Async" : "")}(
+            this DbConnection connection,
             bool prepare = false
 ");
             if(methodType == MethodType.Async)
@@ -446,7 +393,8 @@ namespace {source.ContainTypeName.ContainingNamespace}
             int? timeout = null
         )
         {{
-            var batch = {sourceType.ToParametrName()}.CreateBatch();
+            var batch = connection.CreateBatch();
+            var fakeCommand = connection.CreateCommand();
             if(timeout.HasValue)
             {{
                 batch.Timeout = timeout.Value;
@@ -481,56 +429,47 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     for (int j = 0; j < item.query.Parametrs.Length; j++)
                     {
                         var parametr = item.query.Parametrs[j];
-                        if (parametr.Type.IsNullableType())
-                        {
-                            _methodCode.Append($@"
-                var parametr{parametr.Position} = new NpgsqlParameter();
+                        _methodCode.Append($@"
+                var parametr{j} = fakeCommand.CreateParameter();
 ");
-                        }
-                        else
-                        {
-                            _methodCode.Append($@"
-                var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>();
-");
-                        }
 
-                        if (parametr.HaveNpgSqlDbType)
+                        if (parametr.HaveDbType)
                         {
                             _methodCode.Append($@"
-                parametr{parametr.Position}.NpgsqlDbType = ({MapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType};
+                parametr{j}.DbType = (System.Data.DbType){parametr.DbType};
 ");
                         }
 
                         if (parametr.HaveName)
                         {
                             _methodCode.Append($@"
-                parametr{parametr.Position}.ParameterName = ""{parametr.Name}"";
+                parametr{j}.ParameterName = ""{parametr.Name}"";
 ");
                         }
 
                         if (parametr.HaveSize)
                         {
                             _methodCode.Append($@"
-                parametr{parametr.Position}.Size = {parametr.Size};
+                parametr{j}.Size = {parametr.Size};
 ");
                         }
 
                         if (parametr.Nullable)
                         {
                             _methodCode.Append($@"
-                parametr{parametr.Position}.IsNullable = true;
+                parametr{j}.IsNullable = true;
 ");
                         }
 
                         if (parametr.Direction != System.Data.ParameterDirection.Input)
                         {
                             _methodCode.Append($@"
-                parametr{parametr.Position}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
+                parametr{j}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
 ");
                         }
 
                         _methodCode.Append($@"
-                command.Parameters.Add(parametr{parametr.Position});
+                command.Parameters.Add(parametr{j});
 ");
                     }
                     _methodCode.Append($@"
@@ -546,6 +485,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if (methodType == MethodType.Async)
             {
                 _methodCode.Append($@"
+            await fakeCommand.DisposeAsync(cancellationToken).ConfigureAwait(false);
             if(prepare)
             {{
                 try
@@ -563,6 +503,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             else
             {
                 _methodCode.Append($@"
+            fakeCommand.Dispose();
             if(prepare)
             {{
                 try
@@ -586,7 +527,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
         }
 
         private void SetParametrsMethod(
-            QueryBatchNpgsql source
+            DbQueryBatch source
             )
         {
             if(!source.HaveParametrs)
@@ -597,7 +538,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             _methodCode.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static  void Set{source.MethodName}Parametrs(
-            this NpgsqlBatch batch
+            this DbBatch batch
 ");
             for (int j = 0; j < source.Queries.Count; j++)
             {
@@ -648,18 +589,18 @@ namespace {source.ContainTypeName.ContainingNamespace}
                         _methodCode.Append($@"
             if({parametr.VariableName()}Batch{batchCommand.number}.HasValue)
             {{
-                ((NpgsqlParameter)batchCommand.Parameters[{i}]).Value = {parametr.VariableName()}Batch{batchCommand.number}.Value;
+                batchCommand.Parameters[{i}].Value = {parametr.VariableName()}Batch{batchCommand.number}.Value;
             }}
             else
             {{
-                ((NpgsqlParameter)batchCommand.Parameters[{i}]).Value = DBNull.Value;
+                batchCommand.Parameters[{i}].Value = DBNull.Value;
             }}
 ");
                     }
                     else
                     {
                         _methodCode.Append($@"
-            ((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>)batchCommand.Parameters[{i}]).TypedValue = {parametr.VariableName()}Batch{batchCommand.number};
+            batchCommand.Parameters[{i}].Value = {parametr.VariableName()}Batch{batchCommand.number};
 ");
                     }
 
@@ -672,7 +613,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
         }
 
-        private void CreateBatchItems(QueryBatchNpgsql source)
+        private void CreateBatchItems(DbQueryBatch source)
         {
             if (source.MethodType.HasFlag(MethodType.Async))
             {
@@ -686,7 +627,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
         }
 
         private void CreateBatchItem(
-            QueryBatchNpgsql source,
+            DbQueryBatch source,
             MethodType methodType
             )
         {
@@ -701,7 +642,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 {
                     _methodCode.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static IEnumerable<{type}> BatchItem{j}(this NpgsqlDataReader reader)
+        private static IEnumerable<{type}> BatchItem{j}(this DbDataReader reader)
         {{
 ");
                 }
@@ -710,7 +651,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     _methodCode.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static async IAsyncEnumerable<{type}> BatchItem{j}Async(
-            this NpgsqlDataReader reader,
+            this DbDataReader reader,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
         {{
@@ -730,11 +671,11 @@ namespace {source.ContainTypeName.ContainingNamespace}
         }
 
         private void YieldItem(
-            QueryReadNpgsql source,
+            DbQuery source,
             string castTypeExpr
             )
         {
-            if (MapTypeHelper.IsKnownProviderType(source.MapTypeName))
+            if (DbMapTypeHelper.IsKnownProviderType(source.MapTypeName))
             {
                 _methodCode.Append($@"
                     yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);

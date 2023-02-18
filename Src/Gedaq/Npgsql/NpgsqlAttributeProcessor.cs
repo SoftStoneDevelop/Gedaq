@@ -221,7 +221,7 @@ namespace Gedaq.Npgsql
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)
         {
-            var readGenerator = new QueryReadGenerator();
+            var readGenerator = new QueryGenerator();
             foreach (var queryRead in _read)
             {
                 readGenerator.GenerateMethod(queryRead);
@@ -229,7 +229,7 @@ namespace Gedaq.Npgsql
             }
             _read.Clear();
 
-            var batchReadGenerator = new QueryBatchReadGenerator();
+            var batchReadGenerator = new QueryBatchGenerator();
             foreach (var batchRead in _readBatch)
             {
                 batchReadGenerator.GenerateMethod(batchRead);
