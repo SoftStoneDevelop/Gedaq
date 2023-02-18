@@ -14,9 +14,9 @@ namespace Gedaq.DbConnection.Model
         public int DbType;
         public bool HaveDbType => DbType != 13;
 
-        public override string VariableName()
+        public override string VariableName(string postfix = default)
         {
-            return Name.ToLowerInvariant();
+            return $"{Name.ToLowerInvariant()}{postfix}";
         }
 
         internal static bool CreateNew(

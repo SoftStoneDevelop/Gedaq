@@ -13,11 +13,11 @@ namespace Gedaq.Npgsql.Model
         public bool HavePosition => Position != -1;
         public int NpgSqlDbType;
 
-        public override string VariableName()
+        public override string VariableName(string postfix = default)
         {
             return HaveName ?
-                    Name.ToLowerInvariant() :
-                    $"mParametr{Position}"
+                    $"{Name.ToLowerInvariant()}{postfix}" :
+                    $"mParametr{Position}{postfix}"
                 ;
         }
 

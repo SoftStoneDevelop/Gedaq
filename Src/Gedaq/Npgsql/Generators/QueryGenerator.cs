@@ -1,4 +1,5 @@
 ﻿using Gedaq.DbConnection.Generators;
+using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
@@ -6,6 +7,8 @@ using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
+using System.Linq;
+using System.Reflection.Metadata;
 
 namespace Gedaq.Npgsql.Generators
 {
@@ -50,6 +53,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
         {
             if (source.QueryType.HasFlag(QueryType.Read))
             {
+                ThrowExceptionIfOutCannotExist(source);
                 if (source.MethodType.HasFlag(MethodType.Sync))
                 {
                     ReadMethod(source);
@@ -70,6 +74,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
                 if (source.MethodType.HasFlag(MethodType.Async))
                 {
+                    ThrowExceptionIfOutCannotExist(source);
                     ScalarMethodAsync(source);
                 }
             }
@@ -83,6 +88,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
                 if (source.MethodType.HasFlag(MethodType.Async))
                 {
+                    ThrowExceptionIfOutCannotExist(source);
                     NonQueryMethodAsync(source);
                 }
             }
@@ -249,6 +255,11 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     EndMethod();
                 }
             }
+
+            if (source.QueryType.HasFlag(QueryType.NonQuery) && source.Parametrs.Any(a => a.Direction != System.Data.ParameterDirection.Input))
+            {
+                //TODO
+            }
         }
 
         private void CreateCommandMethods(QueryReadNpgsql source)
@@ -367,10 +378,42 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 for (int i = 0; i < source.Parametrs.Length; i++)
                 {
                     var parametr = source.Parametrs[i];
-                    _methodCode.Append($@",
-            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}
+                    if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                    {
+                        _methodCode.Append($@",
+            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
 ");
+                    }
+
+                    WriteOutParametrs(parametr);
                 }
+            }
+        }
+
+        private void WriteOutParametrs(NpgsqlParametr parametr)
+        {
+            if (parametr.Direction == System.Data.ParameterDirection.InputOutput || parametr.Direction == System.Data.ParameterDirection.Output)
+            {
+                _methodCode.Append($@",
+            out {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Output))}
+");
+                return;
+            }
+
+            if (parametr.Direction == System.Data.ParameterDirection.ReturnValue)
+            {
+                _methodCode.Append($@",
+            out {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.ReturnValue))}
+");
+                return;
+            }
+        }
+
+        private void ThrowExceptionIfOutCannotExist(QueryReadNpgsql source)
+        {
+            if (source.Parametrs.Any(an => an.Direction != System.Data.ParameterDirection.Input))
+            {
+                throw new Exception("Iterator and Async methods cannot have out parameter");
             }
         }
 
@@ -415,6 +458,8 @@ namespace {source.ContainTypeName.ContainingNamespace}
         {{
 ");
             }
+
+
         }
 
         private void StartExecuteScalarCommand(
@@ -425,7 +470,19 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if (methodType == MethodType.Sync)
             {
                 _methodCode.Append($@"        
-        public static {GetScalarTypeName(source)} Scalar{source.MethodName}Command(this NpgsqlCommand command)
+        public static {GetScalarTypeName(source)} Scalar{source.MethodName}Command(
+            this NpgsqlCommand command
+");
+                if(source.HaveParametrs())
+                {
+                    for (int i = 0; i < source.Parametrs.Length; i++)
+                    {
+                        var parametr = source.Parametrs[i];
+                        WriteOutParametrs(parametr);
+                    }
+                }
+                _methodCode.Append($@"
+        )
         {{
 ");
             }
@@ -446,7 +503,15 @@ namespace {source.ContainTypeName.ContainingNamespace}
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             _methodCode.Append($@"
-            return ({GetScalarTypeName(source)}){await}command.ExecuteScalar{async};
+            var result = ({GetScalarTypeName(source)}){await}command.ExecuteScalar{async};
+");
+            if (source.HaveParametrs())
+            {
+                SetOutAndReturnParametrs(source);
+            }
+
+            _methodCode.Append($@"
+            return result;
 ");
         }
 
@@ -529,47 +594,34 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
             if (source.HaveParametrs())
             {
-                _methodCode.Append($@"
-                command.Set{source.MethodName}Parametrs(
-");
-                for (int i = 0; i < source.Parametrs.Length; i++)
-                {
-                    var parametr = source.Parametrs[i];
-                    _methodCode.Append($@"
-                    in {parametr.VariableName()}
-");
-
-                    if (i == source.Parametrs.Length - 1)
-                    {
-                        _methodCode.Append($@"
-                    );
-");
-                    }
-                    else
-                    {
-                        _methodCode.Append($@",");
-                    }
-                }
+                WriteSetParametrs(source);
             }
 
             if(queryType == QueryType.Scalar)
             {
                 _methodCode.Append($@"
-                return ({GetScalarTypeName(source)}){await}command.ExecuteScalar{async};
-            }}
-            finally
-            {{
+                var result = ({GetScalarTypeName(source)}){await}command.ExecuteScalar{async};
 ");
             }
             else
             {
                 _methodCode.Append($@"
-                return {await}command.ExecuteNonQuery{async};
+                var result = {await}command.ExecuteNonQuery{async};
+");
+            }
+
+            if (source.HaveParametrs())
+            {
+                SetOutAndReturnParametrs(source);
+            }
+
+            _methodCode.Append($@"
+                return result;
             }}
             finally
             {{
 ");
-            }
+
             if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
             {
                 _methodCode.Append($@"
@@ -587,6 +639,25 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 }}
             }}
 ");
+        }
+
+        private void SetOutAndReturnParametrs(QueryReadNpgsql source)
+        {
+            for (int i = 0; i < source.Parametrs.Length; i++)
+            {
+                var parametr = source.Parametrs[i];
+                if (parametr.Direction == System.Data.ParameterDirection.ReturnValue ||
+                    parametr.Direction == System.Data.ParameterDirection.Output ||
+                    parametr.Direction == System.Data.ParameterDirection.InputOutput
+                    )
+                {
+                    _methodCode.Append($@"
+                    {parametr.VariableName(BaseParametr.VariablePostfix(parametr.Direction))} = {GetParametrValue(parametr, i, "command")};
+");
+                }
+
+
+            }
         }
 
         private void ReadMethodBody(
@@ -623,30 +694,17 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
             if(source.HaveParametrs())
             {
-                _methodCode.Append($@"
-                command.Set{source.MethodName}Parametrs(
-");
-                for (int i = 0; i < source.Parametrs.Length; i++)
-                {
-                    var parametr = source.Parametrs[i];
-                    _methodCode.Append($@"
-                    in {parametr.VariableName()}
-");
-
-                    if (i == source.Parametrs.Length - 1)
-                    {
-                        _methodCode.Append($@"
-                    );
-");
-                    }
-                    else
-                    {
-                        _methodCode.Append($@",");
-                    }
-                }
+                WriteSetParametrs(source);
             }
             _methodCode.Append($@"
                 reader = {await}command.ExecuteReader{async};
+");
+            if(source.HaveParametrs())
+            {
+                SetOutAndReturnParametrs(source);
+            }
+
+            _methodCode.Append($@"
                 while ({await}reader.Read{async})
                 {{
 ");
@@ -694,6 +752,36 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 }}
             }}
 ");
+        }
+
+        private void WriteSetParametrs(QueryReadNpgsql source)
+        {
+            _methodCode.Append($@"
+                command.Set{source.MethodName}Parametrs(
+");
+            for (int i = 0; i < source.Parametrs.Length; i++)
+            {
+                var parametr = source.Parametrs[i];
+                if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                {
+                    continue;
+                }
+
+                _methodCode.Append($@"
+                    in {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
+");
+
+                if (i == source.Parametrs.Length - 1)
+                {
+                    _methodCode.Append($@"
+                    );
+");
+                }
+                else
+                {
+                    _methodCode.Append($@",");
+                }
+            }
         }
 
         private void CreateCommandMethod(
@@ -865,18 +953,18 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     _methodCode.Append($@"
             if({parametr.VariableName()}.HasValue)
             {{
-                ((NpgsqlParameter)command.Parameters[{i}]).Value = {parametr.VariableName()}.Value;
+                {GetParametrValue(parametr,i, "command")} = {parametr.VariableName()}.Value;
             }}
             else
             {{
-                ((NpgsqlParameter)command.Parameters[{i}]).Value = DBNull.Value;
+                {GetParametrValue(parametr, i, "command")} = DBNull.Value;
             }}
 ");
                 }
                 else
                 {
                     _methodCode.Append($@"
-            ((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>)command.Parameters[{i}]).TypedValue = {parametr.VariableName()};
+                {GetParametrValue(parametr, i, "command")} = {parametr.VariableName()};
 ");
                 }
 
@@ -886,6 +974,18 @@ namespace {source.ContainTypeName.ContainingNamespace}
         }}
 ");
 
+        }
+
+        protected string GetParametrValue(NpgsqlParametr parametr, int index, string source)
+        {
+            if (parametr.Type.IsNullableType())
+            {
+                return $"((NpgsqlParameter){source}.Parameters[{index}]).Value";
+            }
+            else
+            {
+                return $"((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>){source}.Parameters[{index}]).TypedValue";
+            }
         }
 
         private void YieldItem(
