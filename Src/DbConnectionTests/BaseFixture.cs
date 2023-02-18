@@ -27,5 +27,10 @@ namespace DbConnectionTests
         {
             return Settings.GetConnectionString("NpgsqlSqlConnection");
         }
+
+        public string GetMsSqlConnectionString()
+        {
+            return Settings.GetConnectionString("MsSqlConnection");
+        }
     }
 }

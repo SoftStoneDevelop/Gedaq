@@ -22,9 +22,9 @@ namespace DbConnectionTests
             var dataSourceBuilder = new NpgsqlDataSourceBuilder(GetNpgsqlSqlConnectionString());
             _dataSource = dataSourceBuilder.Build();
             var conn = _dataSource.OpenConnection();
-            conn.DropTable("readfixtureperson");
-            conn.DropTable("readfixtureidentification");
-            conn.DropTable("readfixturecountry");
+            NpgsqlDatabaseHelper.DropTable(conn, "readfixtureperson");
+            NpgsqlDatabaseHelper.DropTable(conn, "readfixtureidentification");
+            NpgsqlDatabaseHelper.DropTable(conn, "readfixturecountry");
 
             using var cmd = conn.CreateCommand();
             cmd.CommandText = @"
@@ -132,29 +132,29 @@ INSERT INTO public.readfixturecountry(
             id.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Integer;
             cmd.Parameters.Add(id);
 
-            var typename = new NpgsqlParameter<string>();
-            typename.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
-            cmd.Parameters.Add(typename);
+            var name = new NpgsqlParameter<string>();
+            name.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
+            cmd.Parameters.Add(name);
             cmd.Prepare();
 
             id.TypedValue = 1;
-            typename.TypedValue = "Russia";
+            name.TypedValue = "Russia";
             cmd.ExecuteNonQuery();
 
             id.TypedValue = 2;
-            typename.TypedValue = "China";
+            name.TypedValue = "China";
             cmd.ExecuteNonQuery();
 
             id.TypedValue = 3;
-            typename.TypedValue = "Serbia";
+            name.TypedValue = "Serbia";
             cmd.ExecuteNonQuery();
 
             id.TypedValue = 4;
-            typename.TypedValue = "Belarus";
+            name.TypedValue = "Belarus";
             cmd.ExecuteNonQuery();
 
             id.TypedValue = 5;
-            typename.TypedValue = "Martian colony";
+            name.TypedValue = "Martian colony";
             cmd.ExecuteNonQuery();
         }
 
@@ -211,9 +211,10 @@ INSERT INTO public.readfixtureidentification(
         [TearDown]
         public void Cleanup()
         {
-            _dataSource.OpenConnection().DropTable("readfixtureperson");
-            _dataSource.OpenConnection().DropTable("readfixtureidentification");
-            _dataSource.OpenConnection().DropTable("readfixturecountry");
+            using var connection = _dataSource.OpenConnection();
+            NpgsqlDatabaseHelper.DropTable(connection, "readfixtureperson");
+            NpgsqlDatabaseHelper.DropTable(connection, "readfixtureidentification");
+            NpgsqlDatabaseHelper.DropTable(connection, "readfixturecountry");
             _dataSource?.Dispose();
         }
 
@@ -243,12 +244,12 @@ ORDER BY p.id ASC
 ",
             typeof(ReadFixtureModel),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
-            "ToClass1"
+            "NpgsqlToClass1"
             )]
-        [Parametr("ToClass1", parametrType: typeof(int), parametrName: "id", dbType: System.Data.DbType.Int32)]
+        [Parametr("NpgsqlToClass1", parametrType: typeof(int), parametrName: "id", dbType: System.Data.DbType.Int32)]
         public void ReadToClass()
         {
-            var list = _dataSource.OpenConnection().ToClass1(3).ToList();
+            var list = _dataSource.OpenConnection().NpgsqlToClass1(3).ToList();
 
             Assert.That(list, Has.Count.EqualTo(9));
 
@@ -332,13 +333,13 @@ ORDER BY p.id ASC
 ",
             typeof(ReadFixtureModel),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
-            "ToClass2"
+            "NpgsqlToClass2"
             )]
-        [Parametr("ToClass2", parametrType: typeof(int), parametrName: "id")]
-        [Parametr("ToClass2", parametrType: typeof(int), parametrName: "id2")]
+        [Parametr("NpgsqlToClass2", parametrType: typeof(int), parametrName: "id")]
+        [Parametr("NpgsqlToClass2", parametrType: typeof(int), parametrName: "id2")]
         public async Task ReadToClassAsync()
         {
-            var list = await _dataSource.OpenConnection().ToClass2Async(3, 6).ToListAsync();
+            var list = await _dataSource.OpenConnection().NpgsqlToClass2Async(3, 6).ToListAsync();
 
             Assert.That(list, Has.Count.EqualTo(8));
 
@@ -399,12 +400,12 @@ ORDER BY p.id ASC
         }
 
         [Test]
-        [QueryBatch("BatchReadToClass", Gedaq.Common.Enums.QueryType.Read, Gedaq.Common.Enums.MethodType.Sync)]
-        [BatchPart("ToClass2", "BatchReadToClass", 1)]
-        [BatchPart("ToClass1", "BatchReadToClass", 2)]
+        [QueryBatch("NpgsqlBatchReadToClass", Gedaq.Common.Enums.QueryType.Read, Gedaq.Common.Enums.MethodType.Sync)]
+        [BatchPart("NpgsqlToClass2", "NpgsqlBatchReadToClass", 1)]
+        [BatchPart("NpgsqlToClass1", "NpgsqlBatchReadToClass", 2)]
         public void BatchReadToClass()
         {
-            var batchList = _dataSource.OpenConnection().BatchReadToClass(3, 6, 3).Select(sel => sel.ToList()).ToList();
+            var batchList = _dataSource.OpenConnection().NpgsqlBatchReadToClass(3, 6, 3).Select(sel => sel.ToList()).ToList();
 
             var list = batchList[0];
             {
@@ -532,11 +533,11 @@ ORDER BY p.id ASC
         {
             using (var connection = _dataSource.OpenConnection())
             {
-                using var command = connection.CreateToClass1Command(false, 10);
+                using var command = connection.CreateNpgsqlToClass1Command(false, 10);
                 Assert.That(((NpgsqlCommand)command).IsPrepared, Is.EqualTo(false));
                 Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
-                using var command2 = connection.CreateToClass1Command(true);
+                using var command2 = connection.CreateNpgsqlToClass1Command(true);
                 Assert.That(((NpgsqlCommand)command2).IsPrepared, Is.EqualTo(true));
                 Assert.That(command2.CommandTimeout, Is.EqualTo(30));
             }
@@ -547,11 +548,11 @@ ORDER BY p.id ASC
         {
             await using (var connection = await _dataSource.OpenConnectionAsync())
             {
-                await using var command = await connection.CreateToClass1CommandAsync(false, timeout: 10);
+                await using var command = await connection.CreateNpgsqlToClass1CommandAsync(false, timeout: 10);
                 Assert.That(((NpgsqlCommand)command).IsPrepared, Is.EqualTo(false));
                 Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
-                await using var command2 = await connection.CreateToClass1CommandAsync(true);
+                await using var command2 = await connection.CreateNpgsqlToClass1CommandAsync(true);
                 Assert.That(((NpgsqlCommand)command2).IsPrepared, Is.EqualTo(true));
                 Assert.That(command2.CommandTimeout, Is.EqualTo(30));
             }
@@ -581,12 +582,12 @@ ORDER BY p.id ASC
 ",
             typeof(object[]),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
-            "ToObjArr"
+            "NpgsqlToObjArr"
             )]
-        [Parametr("ToObjArr", parametrType: typeof(int), parametrName: "id")]
+        [Parametr("NpgsqlToObjArr", parametrType: typeof(int), parametrName: "id")]
         public void ReadToObjArr()
         {
-            var list = _dataSource.OpenConnection().ToObjArr(3).ToList();
+            var list = _dataSource.OpenConnection().NpgsqlToObjArr(3).ToList();
 
             Assert.That(list, Has.Count.EqualTo(9));
 
@@ -618,7 +619,7 @@ ORDER BY p.id ASC
         [Test]
         public async Task ReadToObjArrAsync()
         {
-            var list = await _dataSource.OpenConnection().ToObjArrAsync(3).ToListAsync();
+            var list = await _dataSource.OpenConnection().NpgsqlToObjArrAsync(3).ToListAsync();
 
             Assert.That(list, Has.Count.EqualTo(9));
 
@@ -667,12 +668,12 @@ ORDER BY p.id ASC
 ",
             typeof(object),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
-            "ToObj"
+            "NpgsqlToObj"
             )]
-        [Parametr("ToObj", parametrType: typeof(int), parametrName: "id")]
+        [Parametr("NpgsqlToObj", parametrType: typeof(int), parametrName: "id")]
         public void ReadToObj()
         {
-            var list = _dataSource.OpenConnection().ToObj(3).ToList();
+            var list = _dataSource.OpenConnection().NpgsqlToObj(3).ToList();
 
             Assert.That(list, Has.Count.EqualTo(9));
 
@@ -704,7 +705,7 @@ ORDER BY p.id ASC
         [Test]
         public async Task ReadToObjAsync()
         {
-            var list = await _dataSource.OpenConnection().ToObjAsync(3).ToListAsync();
+            var list = await _dataSource.OpenConnection().NpgsqlToObjAsync(3).ToListAsync();
 
             Assert.That(list, Has.Count.EqualTo(9));
 

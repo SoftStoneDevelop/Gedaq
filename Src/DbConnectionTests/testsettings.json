@@ -1,5 +1,6 @@
 {
   "ConnectionStrings": {
-    "NpgsqlSqlConnection": "Server=127.0.0.1;Port=5432;Database=gedaq;Persist Security Info=true;User Id=postgres;Password=password;"
+    "NpgsqlSqlConnection": "Server=127.0.0.1;Port=5432;Database=gedaq;Persist Security Info=true;User Id=postgres;Password=password;",
+    "MsSqlConnection": "Data Source=.\\SQLEXPRESS;Initial Catalog=gedaq;Integrated Security=True;trusted_connection=true;encrypt=false;"
   }
 }

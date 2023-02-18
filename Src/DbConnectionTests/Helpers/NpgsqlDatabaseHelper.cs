@@ -2,7 +2,7 @@
 
 namespace DbConnectionTests.Helpers
 {
-    internal static class DatabaseHelper
+    internal static class NpgsqlDatabaseHelper
     {
         public static bool ExistTable(
             this NpgsqlConnection connection,
