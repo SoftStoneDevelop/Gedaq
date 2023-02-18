@@ -559,7 +559,7 @@ ORDER BY p.id ASC
         public void BatchScalarToClass()
         {
             var id = _dataSource.OpenConnection().ScalarBatchReadToClass(0, 1, 3);
-            Assert.That((int)id, Is.EqualTo(2));
+            Assert.That(id, Is.EqualTo(2));
         }
 
         [Test]

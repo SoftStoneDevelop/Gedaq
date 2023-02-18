@@ -135,7 +135,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 StartScalarMethod(source, MethodType.Sync);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
                 EndMethodParametrs();
-                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync);
+                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync, QueryType.Scalar);
                 EndMethod();
             }
 
@@ -144,7 +144,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 StartScalarMethod(source, MethodType.Sync);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
                 EndMethodParametrs();
-                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
+                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync, QueryType.Scalar);
                 EndMethod();
             }
         }
@@ -156,7 +156,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 StartScalarMethod(source, MethodType.Async);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
                 AsyncEndMethodParametrs(false);
-                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async);
+                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async, QueryType.Scalar);
                 EndMethod();
             }
 
@@ -165,7 +165,49 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 StartScalarMethod(source, MethodType.Async);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
                 AsyncEndMethodParametrs(false);
-                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
+                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async, QueryType.Scalar);
+                EndMethod();
+            }
+        }
+
+        private void NonQueryMethod(QueryBatchNpgsql source)
+        {
+            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            {
+                StartNonQueryMethod(source, MethodType.Sync);
+                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
+                EndMethodParametrs();
+                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync, QueryType.NonQuery);
+                EndMethod();
+            }
+
+            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            {
+                StartNonQueryMethod(source, MethodType.Sync);
+                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
+                EndMethodParametrs();
+                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync, QueryType.NonQuery);
+                EndMethod();
+            }
+        }
+
+        private void NonQueryMethodAsync(QueryBatchNpgsql source)
+        {
+            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            {
+                StartNonQueryMethod(source, MethodType.Async);
+                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
+                AsyncEndMethodParametrs(false);
+                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async, QueryType.NonQuery);
+                EndMethod();
+            }
+
+            if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            {
+                StartNonQueryMethod(source, MethodType.Async);
+                StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
+                AsyncEndMethodParametrs(false);
+                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async, QueryType.NonQuery);
                 EndMethod();
             }
         }
@@ -238,6 +280,25 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
         }
 
+        private void StartNonQueryMethod(
+            QueryBatchNpgsql source,
+            MethodType methodType
+            )
+        {
+            if (methodType == MethodType.Sync)
+            {
+                _methodCode.Append($@"        
+        public static System.Int32 NonQuery{source.MethodName}(
+");
+            }
+            else
+            {
+                _methodCode.Append($@"        
+        public static async Task<System.Int32> NonQuery{source.MethodName}Async(
+");
+            }
+        }
+
         private void StartScalarMethod(
             QueryBatchNpgsql source,
             MethodType methodType
@@ -246,15 +307,13 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if (methodType == MethodType.Sync)
             {
                 _methodCode.Append($@"
-        //public static {GetScalarTypeName(source)} Scalar{source.MethodName}(
-        public static object Scalar{source.MethodName}(
+        public static {GetScalarTypeName(source)} Scalar{source.MethodName}(
 ");
             }
             else
             {
                 _methodCode.Append($@"
-        //public static async Task<{GetScalarTypeName(source)}> Scalar{source.MethodName}Async(
-        public static async Task<object> Scalar{source.MethodName}Async(
+        public static async Task<{GetScalarTypeName(source)}> Scalar{source.MethodName}Async(
 ");
             }
         }
@@ -515,7 +574,8 @@ namespace {source.ContainTypeName.ContainingNamespace}
         private void ScalarMethodBody(
             QueryBatchNpgsql source,
             Enums.NpgsqlSourceType sourceType,
-            MethodType methodType
+            MethodType methodType,
+            QueryType queryType
             )
         {
             var await = methodType == MethodType.Async ? "await " : "";
@@ -579,10 +639,20 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 _methodCode.Append($@"
                     );");
             }
-            _methodCode.Append($@"
+
+            if(queryType == QueryType.Scalar)
+            {
+                _methodCode.Append($@"
                 //return {await}batch.ExecuteScalar<{GetScalarTypeName(source)}>{async};
-                return {await}batch.ExecuteScalar{async};
+                return ({GetScalarTypeName(source)}){await}batch.ExecuteScalar{async};
 ");
+            }
+            else
+            {
+                _methodCode.Append($@"
+                return ({GetScalarTypeName(source)}){await}batch.ExecuteNonQuery{async};
+");
+            }
 
             _methodCode.Append($@"
             }}

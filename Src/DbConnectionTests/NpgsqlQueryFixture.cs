@@ -532,7 +532,7 @@ ORDER BY p.id ASC
         public void BatchScalarToClass()
         {
             var id = _dataSource.OpenConnection().ScalarNpgsqlBatchReadToClass(0, 1, 3);
-            Assert.That((int)id, Is.EqualTo(2));
+            Assert.That(id, Is.EqualTo(2));
         }
 
         [Test]

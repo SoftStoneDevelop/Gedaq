@@ -82,7 +82,15 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
             if (source.QueryType.HasFlag(QueryType.NonQuery))
             {
-                throw new NotImplementedException();
+                if (source.MethodType.HasFlag(MethodType.Sync))
+                {
+                    NonQueryMethod(source);
+                }
+
+                if (source.MethodType.HasFlag(MethodType.Async))
+                {
+                    NonQueryMethodAsync(source);
+                }
             }
         }
 
@@ -109,7 +117,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
             StartScalarMethod(source, MethodType.Sync);
             StartMethodParametrs(source);
             EndMethodParametrs();
-            ScalarMethodBody(source, MethodType.Sync);
+            ScalarMethodBody(source, MethodType.Sync, QueryType.Scalar);
             EndMethod();
         }
 
@@ -118,7 +126,25 @@ namespace {source.ContainTypeName.ContainingNamespace}
             StartScalarMethod(source, MethodType.Async);
             StartMethodParametrs(source);
             AsyncEndMethodParametrs(false);
-            ScalarMethodBody(source, MethodType.Async);
+            ScalarMethodBody(source, MethodType.Async, QueryType.Scalar);
+            EndMethod();
+        }
+
+        private void NonQueryMethod(DbQueryBatch source)
+        {
+            StartScalarMethod(source, MethodType.Sync);
+            StartMethodParametrs(source);
+            EndMethodParametrs();
+            ScalarMethodBody(source, MethodType.Sync, QueryType.NonQuery);
+            EndMethod();
+        }
+
+        private void NonQueryMethodAsync(DbQueryBatch source)
+        {
+            StartScalarMethod(source, MethodType.Async);
+            StartMethodParametrs(source);
+            AsyncEndMethodParametrs(false);
+            ScalarMethodBody(source, MethodType.Async, QueryType.NonQuery);
             EndMethod();
         }
 
@@ -182,15 +208,33 @@ namespace {source.ContainTypeName.ContainingNamespace}
             if (methodType == MethodType.Sync)
             {
                 _methodCode.Append($@"
-        public static object Scalar{source.MethodName}(
+        public static {GetScalarTypeName(source)} Scalar{source.MethodName}(
 ");
             }
             else
             {
                 _methodCode.Append($@"
-        public static async Task<object> Scalar{source.MethodName}Async(
+        public static async Task<{GetScalarTypeName(source)}> Scalar{source.MethodName}Async(
 ");
             }
+        }
+
+        private string GetScalarTypeName(DbQueryBatch source)
+        {
+            var first = source.Queries[0].query;
+            if (first.Aliases.IsRowsAffected)
+            {
+                return "System.Int32";
+            }
+
+            if (MapTypeHelper.IsKnownProviderType(first.MapTypeName))
+            {
+                return first.MapTypeName.GetFullTypeName();
+            }
+
+            var firstField = first.Aliases.GetFirstFieldInQuery();
+            first.MapTypeName.GetPropertyOrFieldName(firstField.Name, out _, out var type);
+            return type.GetFullTypeName(true);
         }
 
         private void StartMethodParametrs(
@@ -420,7 +464,8 @@ namespace {source.ContainTypeName.ContainingNamespace}
 
         private void ScalarMethodBody(
             DbQueryBatch source,
-            MethodType methodType
+            MethodType methodType,
+            QueryType queryType
             )
         {
             var await = methodType == MethodType.Async ? "await " : "";
@@ -481,9 +526,19 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 _methodCode.Append($@"
                     );");
             }
-            _methodCode.Append($@"
-                return {await}batch.ExecuteScalar{async};
+
+            if(queryType == QueryType.Scalar)
+            {
+                _methodCode.Append($@"
+                return ({GetScalarTypeName(source)}){await}batch.ExecuteScalar{async};
 ");
+            }
+            else
+            {
+                _methodCode.Append($@"
+                return ({GetScalarTypeName(source)}){await}batch.ExecuteNonQuery{async};
+");
+            }
 
             _methodCode.Append($@"
             }}

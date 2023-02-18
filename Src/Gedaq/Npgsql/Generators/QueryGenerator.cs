@@ -95,7 +95,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 StartScalarMethod(source, MethodType.Sync);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
                 EndMethodParametrs();
-                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync);
+                NonQueryMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync, QueryType.Scalar);
                 EndMethod();
             }
 
@@ -104,7 +104,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 StartScalarMethod(source, MethodType.Sync);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
                 EndMethodParametrs();
-                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
+                NonQueryMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync, QueryType.Scalar);
                 EndMethod();
             }
         }
@@ -116,7 +116,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 StartScalarMethod(source, MethodType.Async);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
                 AsyncEndMethodParametrs(false);
-                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async);
+                NonQueryMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async, QueryType.Scalar);
                 EndMethod();
             }
 
@@ -125,7 +125,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 StartScalarMethod(source, MethodType.Async);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
                 AsyncEndMethodParametrs(false);
-                ScalarMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
+                NonQueryMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async, QueryType.Scalar);
                 EndMethod();
             }
         }
@@ -137,7 +137,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 StartNonQueryMethod(source, MethodType.Sync);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
                 EndMethodParametrs();
-                NonQueryMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync);
+                NonQueryMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Sync, QueryType.NonQuery);
                 EndMethod();
             }
 
@@ -146,7 +146,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 StartNonQueryMethod(source, MethodType.Sync);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
                 EndMethodParametrs();
-                NonQueryMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
+                NonQueryMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync, QueryType.NonQuery);
                 EndMethod();
             }
         }
@@ -158,7 +158,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 StartNonQueryMethod(source, MethodType.Async);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection);
                 AsyncEndMethodParametrs(false);
-                NonQueryMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async);
+                NonQueryMethodBody(source, Enums.NpgsqlSourceType.NpgsqlConnection, MethodType.Async, QueryType.NonQuery);
                 EndMethod();
             }
 
@@ -167,7 +167,7 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 StartNonQueryMethod(source, MethodType.Async);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource);
                 AsyncEndMethodParametrs(false);
-                NonQueryMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
+                NonQueryMethodBody(source, Enums.NpgsqlSourceType.NpgsqlDataSource, MethodType.Async, QueryType.NonQuery);
                 EndMethod();
             }
         }
@@ -495,10 +495,11 @@ namespace {source.ContainTypeName.ContainingNamespace}
 ");
         }
 
-        private void ScalarMethodBody(
+        private void NonQueryMethodBody(
             QueryReadNpgsql source,
             Enums.NpgsqlSourceType sourceType,
-            MethodType methodType
+            MethodType methodType,
+            QueryType queryType
             )
         {
             var await = methodType == MethodType.Async ? "await " : "";
@@ -551,93 +552,24 @@ namespace {source.ContainTypeName.ContainingNamespace}
                 }
             }
 
-            _methodCode.Append($@"
+            if(queryType == QueryType.Scalar)
+            {
+                _methodCode.Append($@"
                 return ({GetScalarTypeName(source)}){await}command.ExecuteScalar{async};
             }}
             finally
             {{
 ");
-            if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
+            }
+            else
             {
                 _methodCode.Append($@"
-                if (needClose)
-                {{
-                    {await}connection.Close{disposeOrCloseAsync};
-                }}
-");
-            }
-            _methodCode.Append($@"
-                if(command != null)
-                {{
-                    command.Parameters.Clear();
-                    {await}command.Dispose{disposeOrCloseAsync};
-                }}
-            }}
-");
-        }
-
-        private void NonQueryMethodBody(
-            QueryReadNpgsql source,
-            Enums.NpgsqlSourceType sourceType,
-            MethodType methodType
-            )
-        {
-            var await = methodType == MethodType.Async ? "await " : "";
-            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
-            var disposeOrCloseAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
-
-            if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
-            {
-                _methodCode.Append($@"
-            bool needClose = {sourceType.ToParametrName()}.State == ConnectionState.Closed;
-            if(needClose)
-            {{
-                {await}{sourceType.ToParametrName()}.Open{async};
-            }}
-");
-            }
-            var createCommand =
-                methodType == MethodType.Async ?
-                $"await Create{source.MethodName}CommandAsync({sourceType.ToParametrName()}, false, cancellationToken, timeout)" :
-                $"Create{source.MethodName}Command({sourceType.ToParametrName()}, false, timeout)"
-                ;
-            _methodCode.Append($@"
-            NpgsqlCommand command = null;
-            try
-            {{
-                command = {createCommand};
-");
-            if (source.HaveParametrs())
-            {
-                _methodCode.Append($@"
-                command.Set{source.MethodName}Parametrs(
-");
-                for (int i = 0; i < source.Parametrs.Length; i++)
-                {
-                    var parametr = source.Parametrs[i];
-                    _methodCode.Append($@"
-                    in {parametr.VariableName()}
-");
-
-                    if (i == source.Parametrs.Length - 1)
-                    {
-                        _methodCode.Append($@"
-                    );
-");
-                    }
-                    else
-                    {
-                        _methodCode.Append($@",");
-                    }
-                }
-            }
-
-            _methodCode.Append($@"
                 return {await}command.ExecuteNonQuery{async};
             }}
             finally
             {{
 ");
+            }
             if (sourceType == Enums.NpgsqlSourceType.NpgsqlConnection)
             {
                 _methodCode.Append($@"
