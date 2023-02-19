@@ -93,11 +93,17 @@ namespace Gedaq.Base
                     yield return {castTypeExpr}item;
 ");
             }
-            else
+            else if(source.MapTypeName.TypeKind == TypeKind.Class || source.MapTypeName.TypeKind == TypeKind.Struct)
             {
                 ComplicateItem(source.Aliases, source.MapTypeName, source.MethodType, builder);
                 builder.Append($@" 
                     yield return {castTypeExpr}item;
+");
+            }
+            else
+            {
+                builder.Append($@"
+                    yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);
 ");
             }
         }
