@@ -12,7 +12,6 @@ namespace Gedaq.Base
 {
     internal abstract class QueryCommonBase : DbCommonBase
     {
-        public abstract string GetParametrValue(BaseParametr parametr, int index, string source);
 
         public virtual void SetOutAndReturnParametrs(QueryBase source, StringBuilder builder)
         {

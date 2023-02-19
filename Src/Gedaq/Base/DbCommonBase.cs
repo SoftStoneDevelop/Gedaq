@@ -11,6 +11,8 @@ namespace Gedaq.Base
 {
     internal abstract class DbCommonBase
     {
+        public abstract string GetParametrValue(BaseParametr parametr, int index, string source);
+
         public abstract string CommandType();
 
         public abstract string ReaderType();
@@ -54,13 +56,14 @@ namespace Gedaq.Base
 
         public void YieldItem(
             QueryBase source,
-            StringBuilder builder
+            StringBuilder builder,
+            string castTypeExpr = ""
             )
         {
             if (IsKnownProviderType(source.MapTypeName))
             {
                 builder.Append($@"
-                    yield return reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);
+                    yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);
 ");
             }
             else if (source.MapTypeName.IsNullableType())
@@ -68,18 +71,18 @@ namespace Gedaq.Base
                 builder.Append($@"
                     if(reader.IsDBNull(0))
                     {{
-                        yield return ({source.MapTypeName.GetFullTypeName(true)})null;
+                        yield return {castTypeExpr}({source.MapTypeName.GetFullTypeName(true)})null;
                     }}
                     else
                     {{
-                        yield return reader.GetFieldValue<{source.MapTypeName.GetFullTypeName(true, addQuestionNoatble: false)}>(0);
+                        yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName(true, addQuestionNoatble: false)}>(0);
                     }}
 ");
             }
             else if (source.MapTypeName.Name == nameof(Object))
             {
                 builder.Append($@"
-                    yield return reader.GetValue(0);
+                    yield return {castTypeExpr}reader.GetValue(0);
 ");
             }
             else if (source.MapTypeName is IArrayTypeSymbol typeArray && typeArray.ElementType.Name == nameof(Object))
@@ -87,14 +90,14 @@ namespace Gedaq.Base
                 builder.Append($@"
                     var item = new object[reader.FieldCount];
                     reader.GetValues(item);
-                    yield return item;
+                    yield return {castTypeExpr}item;
 ");
             }
             else
             {
                 ComplicateItem(source.Aliases, source.MapTypeName, source.MethodType, builder);
                 builder.Append($@" 
-                    yield return item;
+                    yield return {castTypeExpr}item;
 ");
             }
         }
