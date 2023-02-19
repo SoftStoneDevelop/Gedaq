@@ -4,7 +4,9 @@ using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
 using System;
+using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Linq;
 
 namespace Gedaq.Npgsql.Model
 {
@@ -17,7 +19,7 @@ namespace Gedaq.Npgsql.Model
         {
         }
 
-        public bool HaveParametrs()
+        public override bool HaveParametrs()
         {
             return Parametrs != null;
         }
@@ -83,6 +85,11 @@ namespace Gedaq.Npgsql.Model
 
             SourceType = (NpgsqlSourceType)argument.Value;
             return true;
+        }
+
+        public override IEnumerable<BaseParametr> BaseParametrs()
+        {
+            return Parametrs.Cast<BaseParametr>();
         }
     }
 }

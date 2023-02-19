@@ -4,17 +4,22 @@ using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 using System.Text;
 
 namespace Gedaq.DbConnection.Model
 {
-    internal class QueryBase : BaseGenerateItem
+    internal abstract class QueryBase : BaseGenerateItem
     {
         public string Query;
         public ITypeSymbol MapTypeName { get; private set; }
         public Aliases Aliases;
 
         public bool NeedGenerate;
+
+        public abstract bool HaveParametrs();
+
+        public abstract IEnumerable<BaseParametr> BaseParametrs();
 
         protected bool FillMethodName(TypedConstant argument)
         {
