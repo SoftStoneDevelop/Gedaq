@@ -564,37 +564,8 @@ ORDER BY p.id ASC
         }
 
         [Test]
-        [Query(
-            @"
-SELECT 
-    p.id,
-    p.firstname,
-~StartInner::Identification:id~
-    i.id,
-~StartInner::Country:id~
-    c.id,
-    c.name,
-~EndInner::Country~
-    i.typename,
-~EndInner::Identification~
-    p.middlename,
-    p.lastname
-FROM readfixtureperson p
-LEFT JOIN readfixtureidentification i ON i.id = p.readfixtureidentification_id
-LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
-WHERE p.id != $1 AND p.id != $2
-ORDER BY p.id ASC
-",
-            typeof(ReadFixtureModel),
-            Gedaq.Common.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
-            "Wat",
-            Gedaq.Common.Enums.QueryType.Scalar
-            )]
-        [Parametr("Wat", parametrType: typeof(int), position: 1, direction: ParameterDirection.InputOutput)]
         public void CreateCommand()
         {
-            _dataSource.OpenConnection().ScalarWat(1, out var o);
             using var command = _dataSource.OpenConnection().CreateToClass1Command(false, 10);
             Assert.That(command.IsPrepared, Is.EqualTo(false));
             Assert.That(command.CommandTimeout, Is.EqualTo(10));
