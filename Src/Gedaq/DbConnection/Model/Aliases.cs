@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace Gedaq.Npgsql.Model
+namespace Gedaq.DbConnection.Model
 {
     internal class Field
     {
@@ -44,7 +44,7 @@ namespace Gedaq.Npgsql.Model
 
         public Field GetFirstFieldInQuery()
         {
-            if(_allFields == null)
+            if (_allFields == null)
             {
                 _allFields = new List<Field>();
             }
@@ -55,7 +55,7 @@ namespace Gedaq.Npgsql.Model
 
             var entities = new Stack<Aliases>();
             entities.Push(this);
-            while(entities.Count != 0)
+            while (entities.Count != 0)
             {
                 var current = entities.Pop();
                 _allFields.AddRange(current.Fields);

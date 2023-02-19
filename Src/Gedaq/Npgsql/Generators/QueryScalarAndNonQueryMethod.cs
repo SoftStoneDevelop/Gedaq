@@ -1,4 +1,5 @@
-﻿using Gedaq.DbConnection.Model;
+﻿using Gedaq.DbConnection.Generators;
+using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;

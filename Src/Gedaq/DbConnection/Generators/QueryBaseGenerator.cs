@@ -1,6 +1,6 @@
-﻿using Gedaq.Enums;
+﻿using Gedaq.DbConnection.Model;
+using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;

@@ -1,11 +1,9 @@
 ﻿using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using System;
-using System.Collections.Generic;
 using System.Text;
 
-namespace Gedaq.Npgsql.Generators
+namespace Gedaq.DbConnection.Generators
 {
     internal abstract class QueryReadMethodBase : QueryCommonGenerator
     {

@@ -1,4 +1,5 @@
-﻿using Gedaq.DbConnection.Model;
+﻿using Gedaq.DbConnection.Generators;
+using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
@@ -22,6 +23,18 @@ namespace Gedaq.Npgsql.Generators
         protected override string ReaderType()
         {
             return "NpgsqlDataReader";
+        }
+
+        public override string GetParametrValue(BaseParametr parametr, int index, string source)
+        {
+            if (parametr.Type.IsNullableType())
+            {
+                return $"((NpgsqlParameter){source}.Parameters[{index}]).Value";
+            }
+            else
+            {
+                return $"((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>){source}.Parameters[{index}]).TypedValue";
+            }
         }
 
         protected override void ReadMethod(QueryBase source, StringBuilder builder)

@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Gedaq.Npgsql.Generators
+namespace Gedaq.DbConnection.Generators
 {
     internal abstract class QueryScalarAndNonQueryBase : QueryCommonGenerator
     {
@@ -23,7 +23,7 @@ namespace Gedaq.Npgsql.Generators
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                NpgsqlQueryCommon.ThrowExceptionIfOutCannotExist(source);
+                ThrowExceptionIfOutCannotExist(source);
                 ScalarMethodAsync(source, builder);
             }
         }
@@ -37,7 +37,7 @@ namespace Gedaq.Npgsql.Generators
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                NpgsqlQueryCommon.ThrowExceptionIfOutCannotExist(source);
+                ThrowExceptionIfOutCannotExist(source);
                 NonQueryMethodAsync(source, builder);
             }
         }
@@ -107,13 +107,13 @@ namespace Gedaq.Npgsql.Generators
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"        
-        public static {NpgsqlQueryCommon.GetScalarTypeName(source)} Scalar{source.MethodName}(
+        public static {GetScalarTypeName(source)} Scalar{source.MethodName}(
 ");
             }
             else
             {
                 builder.Append($@"        
-        public static async Task<{NpgsqlQueryCommon.GetScalarTypeName(source)}> Scalar{source.MethodName}Async(
+        public static async Task<{GetScalarTypeName(source)}> Scalar{source.MethodName}Async(
 ");
             }
         }
@@ -141,7 +141,7 @@ namespace Gedaq.Npgsql.Generators
 ");
                     }
 
-                    NpgsqlQueryCommon.WriteOutParametrs(parametr, builder);
+                    WriteOutParametrs(parametr, builder);
                 }
             }
         }
@@ -208,13 +208,13 @@ namespace Gedaq.Npgsql.Generators
 ");
             if (source.HaveParametrs())
             {
-                NpgsqlQueryCommon.WriteSetParametrs(source, builder);
+                WriteSetParametrs(source, builder);
             }
 
             if (queryType == QueryType.Scalar)
             {
                 builder.Append($@"
-                var result = ({NpgsqlQueryCommon.GetScalarTypeName(source)}){await}command.ExecuteScalar{async};
+                var result = ({GetScalarTypeName(source)}){await}command.ExecuteScalar{async};
 ");
             }
             else
@@ -226,7 +226,7 @@ namespace Gedaq.Npgsql.Generators
 
             if (source.HaveParametrs())
             {
-                NpgsqlQueryCommon.SetOutAndReturnParametrs(source, builder, this);
+                SetOutAndReturnParametrs(source, builder, this);
             }
 
             builder.Append($@"

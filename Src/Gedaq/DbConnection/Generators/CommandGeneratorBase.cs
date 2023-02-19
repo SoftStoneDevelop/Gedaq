@@ -1,13 +1,11 @@
 ﻿using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Helpers;
 using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
-namespace Gedaq.Npgsql.Generators
+namespace Gedaq.DbConnection.Generators
 {
     internal abstract class CommandGeneratorBase : QueryCommonGenerator
     {
@@ -303,7 +301,7 @@ namespace Gedaq.Npgsql.Generators
             {
                 builder.Append($@"        
         public static {GetScalarTypeName(source)} Scalar{source.MethodName}Command(
-            this NpgsqlCommand command
+            this {CommandType()} command
 ");
                 if (source.HaveParametrs())
                 {
@@ -321,7 +319,7 @@ namespace Gedaq.Npgsql.Generators
             {
                 builder.Append($@"        
         public static async Task<{GetScalarTypeName(source)}> Scalar{source.MethodName}CommandAsync(
-            this NpgsqlCommand command,
+            this {CommandType()} command,
             CancellationToken cancellationToken = default
             )
         {{
@@ -359,7 +357,7 @@ namespace Gedaq.Npgsql.Generators
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static  void Set{source.MethodName}Parametrs(
-            this NpgsqlCommand command
+            this {CommandType()} command
 ");
             foreach (var parametr in source.BaseParametrs())
             {

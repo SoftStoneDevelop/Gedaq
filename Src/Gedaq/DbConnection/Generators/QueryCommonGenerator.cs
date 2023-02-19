@@ -1,16 +1,14 @@
 ﻿using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Helpers;
-using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
-using System;
 
-namespace Gedaq.Npgsql.Generators
+namespace Gedaq.DbConnection.Generators
 {
     internal abstract class QueryCommonGenerator
     {
@@ -19,7 +17,7 @@ namespace Gedaq.Npgsql.Generators
             return $"{source}.Parameters[{index}].Value";
         }
 
-        public void SetOutAndReturnParametrs(QueryBase source, StringBuilder builder, QueryCommonGenerator generator)
+        public virtual void SetOutAndReturnParametrs(QueryBase source, StringBuilder builder, QueryCommonGenerator generator)
         {
             var index = -1;
             foreach (var parametr in source.BaseParametrs())
@@ -31,7 +29,7 @@ namespace Gedaq.Npgsql.Generators
                     )
                 {
                     builder.Append($@"
-                    {parametr.VariableName(BaseParametr.VariablePostfix(parametr.Direction))} = {generator.GetParametrValue(parametr, index, "command")};
+                    {parametr.VariableName(BaseParametr.VariablePostfix(parametr.Direction))} = ({parametr.Type.GetFullTypeName(true)}){generator.GetParametrValue(parametr, index, "command")};
 ");
                 }
             }
@@ -74,7 +72,7 @@ namespace Gedaq.Npgsql.Generators
                 return "System.Int32";
             }
 
-            if (MapTypeHelper.IsKnownProviderType(source.MapTypeName))
+            if (IsKnownProviderType(source.MapTypeName))
             {
                 return source.MapTypeName.GetFullTypeName();
             }
@@ -111,7 +109,10 @@ namespace Gedaq.Npgsql.Generators
             }
         }
 
-        public abstract bool IsKnownProviderType(ITypeSymbol type);
+        public virtual bool IsKnownProviderType(ITypeSymbol type)
+        {
+            return DbMapTypeHelper.IsKnownProviderType(type);
+        }
 
         public void YieldItem(
             QueryBase source,

@@ -1,5 +1,5 @@
-﻿using Gedaq.Enums;
-using Gedaq.Npgsql.Model;
+﻿using Gedaq.DbConnection.Model;
+using Gedaq.Enums;
 using System;
 using System.Collections;
 using System.Collections.Generic;
