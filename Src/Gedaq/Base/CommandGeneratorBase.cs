@@ -5,19 +5,11 @@ using Microsoft.CodeAnalysis;
 using System.Linq;
 using System.Text;
 
-namespace Gedaq.DbConnection.Generators
+namespace Gedaq.Base
 {
-    internal abstract class CommandGeneratorBase : QueryCommonGenerator
+    internal abstract class CommandGeneratorBase
     {
-        protected virtual string CommandType()
-        {
-            return "DbCommand";
-        }
-
-        protected virtual string ReaderType()
-        {
-            return "DbDataReader";
-        }
+        protected abstract QueryCommonBase QueryCommon { get; }
 
         public void Generate(QueryBase source, StringBuilder builder)
         {
@@ -96,7 +88,7 @@ namespace Gedaq.DbConnection.Generators
         {
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static  {(methodType == MethodType.Async ? $"async Task<{CommandType()}>" : CommandType())} Create{source.MethodName}Command{(methodType == MethodType.Async ? "Async" : "")}(
+        public static  {(methodType == MethodType.Async ? $"async Task<{QueryCommon.CommandType()}>" : QueryCommon.CommandType())} Create{source.MethodName}Command{(methodType == MethodType.Async ? "Async" : "")}(
             this {sourceTypeName} {sourceParametrName},
             bool prepare = false
 ");
@@ -224,7 +216,7 @@ namespace Gedaq.DbConnection.Generators
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        public static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}Command(this {CommandType()} command)
+        public static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}Command(this {QueryCommon.CommandType()} command)
         {{
 ");
             }
@@ -232,7 +224,7 @@ namespace Gedaq.DbConnection.Generators
             {
                 builder.Append($@"
         public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}CommandAsync(
-            this {CommandType()} command,
+            this {QueryCommon.CommandType()} command,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
         {{
@@ -253,7 +245,7 @@ namespace Gedaq.DbConnection.Generators
             var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
 
             builder.Append($@"
-            {ReaderType()} reader = null;
+            {QueryCommon.ReaderType()} reader = null;
             try
             {{
 ");
@@ -262,7 +254,7 @@ namespace Gedaq.DbConnection.Generators
                 while ({await}reader.Read{async})
                 {{
 ");
-            YieldItem(source, builder);
+            QueryCommon.YieldItem(source, builder);
             builder.Append($@"
                 }}
 
@@ -300,14 +292,14 @@ namespace Gedaq.DbConnection.Generators
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"        
-        public static {GetScalarTypeName(source)} Scalar{source.MethodName}Command(
-            this {CommandType()} command
+        public static {QueryCommon.GetScalarTypeName(source)} Scalar{source.MethodName}Command(
+            this {QueryCommon.CommandType()} command
 ");
                 if (source.HaveParametrs())
                 {
                     foreach (var parametr in source.BaseParametrs())
                     {
-                        WriteOutParametrs(parametr, builder);
+                        QueryCommon.WriteOutParametrs(parametr, builder);
                     }
                 }
                 builder.Append($@"
@@ -318,8 +310,8 @@ namespace Gedaq.DbConnection.Generators
             else
             {
                 builder.Append($@"        
-        public static async Task<{GetScalarTypeName(source)}> Scalar{source.MethodName}CommandAsync(
-            this {CommandType()} command,
+        public static async Task<{QueryCommon.GetScalarTypeName(source)}> Scalar{source.MethodName}CommandAsync(
+            this {QueryCommon.CommandType()} command,
             CancellationToken cancellationToken = default
             )
         {{
@@ -332,11 +324,11 @@ namespace Gedaq.DbConnection.Generators
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             builder.Append($@"
-            var result = ({GetScalarTypeName(source)}){await}command.ExecuteScalar{async};
+            var result = ({QueryCommon.GetScalarTypeName(source)}){await}command.ExecuteScalar{async};
 ");
             if (source.HaveParametrs())
             {
-                SetOutAndReturnParametrs(source, builder, this);
+                QueryCommon.SetOutAndReturnParametrs(source, builder);
             }
 
             builder.Append($@"
@@ -357,7 +349,7 @@ namespace Gedaq.DbConnection.Generators
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static  void Set{source.MethodName}Parametrs(
-            this {CommandType()} command
+            this {QueryCommon.CommandType()} command
 ");
             foreach (var parametr in source.BaseParametrs())
             {
@@ -379,18 +371,18 @@ namespace Gedaq.DbConnection.Generators
                     builder.Append($@"
             if({parametr.VariableName()}.HasValue)
             {{
-                {GetParametrValue(parametr, index, "command")} = {parametr.VariableName()}.Value;
+                {QueryCommon.GetParametrValue(parametr, index, "command")} = {parametr.VariableName()}.Value;
             }}
             else
             {{
-                {GetParametrValue(parametr, index, "command")} = DBNull.Value;
+                {QueryCommon.GetParametrValue(parametr, index, "command")} = DBNull.Value;
             }}
 ");
                 }
                 else
                 {
                     builder.Append($@"
-                {GetParametrValue(parametr, index, "command")} = {parametr.VariableName()};
+                {QueryCommon.GetParametrValue(parametr, index, "command")} = {parametr.VariableName()};
 ");
                 }
             }

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Gedaq.DbConnection.Generators
+namespace Gedaq.Base
 {
     internal abstract class QueryBaseGenerator
     {

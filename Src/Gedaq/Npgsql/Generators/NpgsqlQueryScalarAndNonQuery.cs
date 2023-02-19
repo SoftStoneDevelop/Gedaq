@@ -1,4 +1,4 @@
-﻿using Gedaq.DbConnection.Generators;
+﻿using Gedaq.Base;
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
@@ -12,24 +12,10 @@ using System.Text;
 
 namespace Gedaq.Npgsql.Generators
 {
-    internal class NpgsqlQueryScalarAndNonQuery : QueryScalarAndNonQueryBase
+    internal class NpgsqlQueryScalarAndNonQuery : QueryScalarNonQueryBase
     {
-        protected override string CommandType()
-        {
-            return "NpgsqlCommand";
-        }
-
-        public override string GetParametrValue(BaseParametr parametr, int index, string source)
-        {
-            if (parametr.Type.IsNullableType())
-            {
-                return $"((NpgsqlParameter){source}.Parameters[{index}]).Value";
-            }
-            else
-            {
-                return $"((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>){source}.Parameters[{index}]).TypedValue";
-            }
-        }
+        private readonly NpgsqlQueryCommon _queryCommon = new NpgsqlQueryCommon();
+        protected override QueryCommonBase QueryCommon => _queryCommon;
 
         protected override void NonQueryMethod(QueryBase source, StringBuilder builder)
         {
@@ -117,11 +103,6 @@ namespace Gedaq.Npgsql.Generators
                 MethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Async, QueryType.Scalar, builder);
                 EndMethod(builder);
             }
-        }
-
-        public override bool IsKnownProviderType(ITypeSymbol type)
-        {
-            return MapTypeHelper.IsKnownProviderType(type);
         }
     }
 }

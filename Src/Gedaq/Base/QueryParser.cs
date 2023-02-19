@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
 [assembly: InternalsVisibleTo("DbConnectionTests")]
-namespace Gedaq.DbConnection
+namespace Gedaq.Base
 {
     internal class QueryParser
     {

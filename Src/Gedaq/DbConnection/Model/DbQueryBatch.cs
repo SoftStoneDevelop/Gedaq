@@ -4,6 +4,7 @@ using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Linq;
 using System.Text;
 
 namespace Gedaq.DbConnection.Model
@@ -53,6 +54,11 @@ namespace Gedaq.DbConnection.Model
 
             queryBatch = result;
             return true;
+        }
+
+        public override IEnumerable<(int, QueryBase)> QueryBases()
+        {
+            return Queries.Select(sel => (sel.number, (QueryBase)sel.query));
         }
     }
 }

@@ -1,39 +1,17 @@
-﻿using Gedaq.DbConnection.Generators;
+﻿using Gedaq.Base;
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
-using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace Gedaq.Npgsql.Generators
 {
-    internal class NpgsqlCommandGenerator : CommandGeneratorBase
+    internal class NpgsqlCommand : CommandGeneratorBase
     {
-        protected override string CommandType()
-        {
-            return "NpgsqlCommand";
-        }
-
-        protected override string ReaderType()
-        {
-            return "NpgsqlDataReader";
-        }
-
-        public override string GetParametrValue(BaseParametr parametr, int index, string source)
-        {
-            if (parametr.Type.IsNullableType())
-            {
-                return $"((NpgsqlParameter){source}.Parameters[{index}]).Value";
-            }
-            else
-            {
-                return $"((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>){source}.Parameters[{index}]).TypedValue";
-            }
-        }
+        private readonly NpgsqlQueryCommon _queryCommon = new NpgsqlQueryCommon();
+        protected override QueryCommonBase QueryCommon => _queryCommon;
 
         protected override void GenrateCommand(QueryBase baseSource, StringBuilder builder)
         {
@@ -139,11 +117,6 @@ namespace Gedaq.Npgsql.Generators
             builder.Append($@"
             command.Parameters.Add(parametr{parametr.Position});
 ");
-        }
-
-        public override bool IsKnownProviderType(ITypeSymbol type)
-        {
-            return MapTypeHelper.IsKnownProviderType(type);
         }
     }
 }

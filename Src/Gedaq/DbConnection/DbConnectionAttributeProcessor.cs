@@ -10,7 +10,7 @@ using Gedaq.Enums;
 using System.Threading;
 using Gedaq.DbConnection.Model;
 using Gedaq.DbConnection.Generators;
-using Gedaq.DbConnection;
+using Gedaq.Base;
 
 namespace Gedaq.Npgsql
 {
@@ -187,7 +187,7 @@ namespace Gedaq.Npgsql
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)
         {
-            var readGenerator = new QueryGenerator();
+            var readGenerator = new DbQueryGenerator();
             foreach (var queryRead in _read)
             {
                 readGenerator.Generate(queryRead);
@@ -195,10 +195,10 @@ namespace Gedaq.Npgsql
             }
             _read.Clear();
 
-            var batchReadGenerator = new QueryBatchGenerator();
+            var batchReadGenerator = new DbQueryBatchGenerator();
             foreach (var batchRead in _readBatch)
             {
-                batchReadGenerator.GenerateMethod(batchRead);
+                batchReadGenerator.Generate(batchRead);
                 context.AddSource($"{batchRead.MethodName}DbConnectionExtension.g.cs", batchReadGenerator.GetCode());
             }
             _readBatch.Clear();

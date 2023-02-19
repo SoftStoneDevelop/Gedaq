@@ -11,7 +11,7 @@ using System.Reflection;
 using Gedaq.Enums;
 using System.Threading;
 using Gedaq.DbConnection.Model;
-using Gedaq.DbConnection;
+using Gedaq.Base;
 
 namespace Gedaq.Npgsql
 {
@@ -221,7 +221,7 @@ namespace Gedaq.Npgsql
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)
         {
-            var readGenerator = new QueryGenerator();
+            var readGenerator = new NpgsqlQueryGenerator();
             foreach (var queryRead in _read)
             {
                 readGenerator.GenerateMethod(queryRead);
@@ -229,7 +229,7 @@ namespace Gedaq.Npgsql
             }
             _read.Clear();
 
-            var batchReadGenerator = new QueryBatchGenerator();
+            var batchReadGenerator = new NpgsqlQueryBatchGenerator();
             foreach (var batchRead in _readBatch)
             {
                 batchReadGenerator.GenerateMethod(batchRead);

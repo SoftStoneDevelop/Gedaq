@@ -4,9 +4,11 @@ using System.Text;
 
 namespace Gedaq.DbConnection.Model
 {
-    internal class QueryBatch : BaseGenerateItem
+    internal abstract class QueryBatch : BaseGenerateItem
     {
         public bool AllSameTypes = true;
         public bool HaveParametrs;
+
+        public abstract IEnumerable<(int number, QueryBase query)> QueryBases();
     }
 }

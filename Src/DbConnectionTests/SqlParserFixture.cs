@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Gedaq.Base;
+using NUnit.Framework;
 using System;
 
 namespace DbConnectionTests
@@ -9,7 +10,7 @@ namespace DbConnectionTests
         [Test]
         public void Parse()
         {
-            var parser = new Gedaq.DbConnection.QueryParser();
+            var parser = new QueryParser();
             var sql = @"
 SELECT 
  
@@ -62,7 +63,7 @@ FROM person p1
         [Test]
         public void ParseWithoutAlias()
         {
-            var parser = new Gedaq.DbConnection.QueryParser();
+            var parser = new QueryParser();
             var sql = @"
 SELECT id  , firstname  
   
@@ -107,7 +108,7 @@ FROM person
         [Test]
         public void ParseBrackets()
         {
-            var parser = new Gedaq.DbConnection.QueryParser();
+            var parser = new QueryParser();
             var sql = @"
 SELECT 
  (
@@ -178,7 +179,7 @@ FROM person p1
         [Test]
         public void GetLastSplitedItem()
         {
-            var parser = new Gedaq.DbConnection.QueryParser();
+            var parser = new QueryParser();
             var sql = @"
 SELECT 
     p1.id,
@@ -243,7 +244,7 @@ FROM person p1
         [Test]
         public void InnerTest()
         {
-            var parser = new Gedaq.DbConnection.QueryParser();
+            var parser = new QueryParser();
             var inSql = @"
 SELECT 
     p1.id,

@@ -3,23 +3,15 @@ using Gedaq.Enums;
 using Gedaq.Helpers;
 using System.Text;
 
-namespace Gedaq.DbConnection.Generators
+namespace Gedaq.Base
 {
-    internal abstract class QueryReadMethodBase : QueryCommonGenerator
+    internal abstract class QueryReadBase
     {
-        protected virtual string CommandType()
-        {
-            return "DbCommand";
-        }
-
-        protected virtual string ReaderType()
-        {
-            return "DbDataReader";
-        }
+        protected abstract QueryCommonBase QueryCommon { get; }
 
         public void Generate(QueryBase source, StringBuilder builder)
         {
-            ThrowExceptionIfOutCannotExist(source);
+            QueryCommon.ThrowExceptionIfOutCannotExist(source);
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
                 ReadMethod(source, builder);
@@ -159,15 +151,15 @@ namespace Gedaq.DbConnection.Generators
                 $"Create{source.MethodName}Command({sourceParametrName}, false, timeout)"
                 ;
             builder.Append($@"
-            {CommandType()} command = null;
-            {ReaderType()} reader = null;
+            {QueryCommon.CommandType()} command = null;
+            {QueryCommon.ReaderType()} reader = null;
             try
             {{
                 command = {createCommand};
 ");
             if (source.HaveParametrs())
             {
-                WriteSetParametrs(source, builder);
+                QueryCommon.WriteSetParametrs(source, builder);
             }
             builder.Append($@"
                 reader = {await}command.ExecuteReader{async};
@@ -177,7 +169,7 @@ namespace Gedaq.DbConnection.Generators
                 while ({await}reader.Read{async})
                 {{
 ");
-            YieldItem(source, builder);
+            QueryCommon.YieldItem(source, builder);
             builder.Append($@"
                 }}
 

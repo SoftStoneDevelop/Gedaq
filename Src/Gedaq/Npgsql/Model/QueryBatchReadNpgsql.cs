@@ -57,5 +57,10 @@ namespace Gedaq.Npgsql.Model
             queryBatch = result;
             return true;
         }
+
+        public override IEnumerable<(int, QueryBase)> QueryBases()
+        {
+            return Queries.Select(sel => (sel.number, (QueryBase)sel.query));
+        }
     }
 }

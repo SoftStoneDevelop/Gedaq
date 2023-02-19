@@ -1,29 +1,37 @@
-﻿using Gedaq.DbConnection.Generators;
+﻿using Gedaq.Base;
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Helpers;
-using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Reflection.Metadata;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Xml.Linq;
 
 namespace Gedaq.DbConnection.Generators
 {
-    internal class QueryBatchGenerator : QueryBaseGenerator
+    internal class DbQueryBatchGenerator : QueryBaseGenerator
     {
-        public void GenerateMethod(DbQueryBatch source)
+        DbQueryBatchRead _batchRead = new DbQueryBatchRead();
+        DbQueryBatchScalarNoQuery _batchScalarNoQuery = new DbQueryBatchScalarNoQuery();
+
+        public void Generate(DbQueryBatch source)
         {
             Reset();
             Start(source);
 
-            ReadMethods(source);
+            if (source.QueryType.HasFlag(QueryType.Read))
+            {
+                _batchRead.Generate(source, _methodCode);
+            }
+
+            if (source.QueryType.HasFlag(QueryType.Scalar))
+            {
+                _batchScalarNoQuery.GenerateScalar(source, _methodCode);
+            }
+
+            if (source.QueryType.HasFlag(QueryType.NonQuery))
+            {
+                _batchScalarNoQuery.GenerateNonQuery(source, _methodCode);
+            }
+
             CreateBatchItems(source);
             CreateBatchMethods(source);
             ExecuteBatchMethods(source);
@@ -50,102 +58,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
     public static class {source.MethodName}DbConnectionExtension
     {{
 ");
-        }
-
-        private void ReadMethods(DbQueryBatch source)
-        {
-            if (source.QueryType.HasFlag(QueryType.Read))
-            {
-                if (source.MethodType.HasFlag(MethodType.Sync))
-                {
-                    ReadMethod(source);
-                }
-
-                if (source.MethodType.HasFlag(MethodType.Async))
-                {
-                    ReadAsyncMethod(source);
-                }
-            }
-
-            if (source.QueryType.HasFlag(QueryType.Scalar))
-            {
-                if (source.MethodType.HasFlag(MethodType.Sync))
-                {
-                    ScalarMethod(source);
-                }
-
-                if (source.MethodType.HasFlag(MethodType.Async))
-                {
-                    ScalarMethodAsync(source);
-                }
-            }
-
-            if (source.QueryType.HasFlag(QueryType.NonQuery))
-            {
-                if (source.MethodType.HasFlag(MethodType.Sync))
-                {
-                    NonQueryMethod(source);
-                }
-
-                if (source.MethodType.HasFlag(MethodType.Async))
-                {
-                    NonQueryMethodAsync(source);
-                }
-            }
-        }
-
-        private void ReadMethod(DbQueryBatch source)
-        {
-            StartReadMethod(source, MethodType.Sync);
-            StartMethodParametrs(source);
-            EndMethodParametrs();
-            ReadMethodBody(source, MethodType.Sync);
-            EndMethod();
-        }
-
-        private void ReadAsyncMethod(DbQueryBatch source)
-        {
-            StartReadMethod(source, MethodType.Async);
-            StartMethodParametrs(source);
-            AsyncEndMethodParametrs(true);
-            ReadMethodBody(source, MethodType.Async);
-            EndMethod();
-        }
-
-        private void ScalarMethod(DbQueryBatch source)
-        {
-            StartScalarMethod(source, MethodType.Sync);
-            StartMethodParametrs(source);
-            EndMethodParametrs();
-            ScalarMethodBody(source, MethodType.Sync, QueryType.Scalar);
-            EndMethod();
-        }
-
-        private void ScalarMethodAsync(DbQueryBatch source)
-        {
-            StartScalarMethod(source, MethodType.Async);
-            StartMethodParametrs(source);
-            AsyncEndMethodParametrs(false);
-            ScalarMethodBody(source, MethodType.Async, QueryType.Scalar);
-            EndMethod();
-        }
-
-        private void NonQueryMethod(DbQueryBatch source)
-        {
-            StartScalarMethod(source, MethodType.Sync);
-            StartMethodParametrs(source);
-            EndMethodParametrs();
-            ScalarMethodBody(source, MethodType.Sync, QueryType.NonQuery);
-            EndMethod();
-        }
-
-        private void NonQueryMethodAsync(DbQueryBatch source)
-        {
-            StartScalarMethod(source, MethodType.Async);
-            StartMethodParametrs(source);
-            AsyncEndMethodParametrs(false);
-            ScalarMethodBody(source, MethodType.Async, QueryType.NonQuery);
-            EndMethod();
         }
 
         private void ExecuteBatchMethods(DbQueryBatch source)
@@ -178,110 +90,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
             }
 
             SetParametrsMethod(source);
-        }
-
-        private void StartReadMethod(
-            DbQueryBatch source,
-            MethodType methodType
-            )
-        {
-            var type = source.AllSameTypes ? source.Queries[0].query.MapTypeName.GetFullTypeName(true) : "object";
-            if (methodType == MethodType.Sync)
-            {
-                _methodCode.Append($@"        
-        public static IEnumerable<IEnumerable<{type}>> {source.MethodName}(
-");
-            }
-            else
-            {
-                _methodCode.Append($@"        
-        public static async IAsyncEnumerable<IAsyncEnumerable<{type}>> {source.MethodName}Async(
-");
-            }
-        }
-
-        private void StartScalarMethod(
-            DbQueryBatch source,
-            MethodType methodType
-            )
-        {
-            if (methodType == MethodType.Sync)
-            {
-                _methodCode.Append($@"
-        public static {GetScalarTypeName(source)} Scalar{source.MethodName}(
-");
-            }
-            else
-            {
-                _methodCode.Append($@"
-        public static async Task<{GetScalarTypeName(source)}> Scalar{source.MethodName}Async(
-");
-            }
-        }
-
-        private string GetScalarTypeName(DbQueryBatch source)
-        {
-            var first = source.Queries[0].query;
-            if (first.Aliases.IsRowsAffected)
-            {
-                return "System.Int32";
-            }
-
-            if (MapTypeHelper.IsKnownProviderType(first.MapTypeName))
-            {
-                return first.MapTypeName.GetFullTypeName();
-            }
-
-            var firstField = first.Aliases.GetFirstFieldInQuery();
-            first.MapTypeName.GetPropertyOrFieldName(firstField.Name, out _, out var type);
-            return type.GetFullTypeName(true);
-        }
-
-        private void StartMethodParametrs(
-            DbQueryBatch source
-            )
-        {
-            _methodCode.Append($@"
-            this DbConnection connection
-");
-            if(source.HaveParametrs)
-            {
-                for (int j = 0; j < source.Queries.Count; j++)
-                {
-                    var item = source.Queries[j];
-                    if(!item.query.HaveParametrs())
-                    {
-                        continue;
-                    }
-
-                    for (int i = 0; i < item.query.Parametrs.Length; i++)
-                    {
-                        var parametr = item.query.Parametrs[i];
-                        _methodCode.Append($@",
-            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{item.number}
-");
-                    }
-                }
-            }
-        }
-
-        private void EndMethodParametrs()
-        {
-            _methodCode.Append($@",
-            int? timeout = null
-        )
-        {{
-");
-        }
-
-        private void AsyncEndMethodParametrs(bool enumerator)
-        {
-            _methodCode.Append($@",
-            int? timeout = null,
-            {(enumerator ? "[EnumeratorCancellation] " : "")}CancellationToken cancellationToken = default
-        )
-        {{
-");
         }
 
         private void StartExecuteBatch(
@@ -348,211 +156,6 @@ namespace {source.ContainTypeName.ContainingNamespace}
                     }}
                 
                     {await}reader.Dispose{disposeAsync};
-                }}
-            }}
-");
-        }
-
-        private void ReadMethodBody(
-            DbQueryBatch source,
-            MethodType methodType
-            )
-        {
-            var await = methodType == MethodType.Async ? "await " : "";
-            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
-            var disposeOrCloseAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
-
-            _methodCode.Append($@"
-            bool needClose = connection.State == ConnectionState.Closed;
-            if(needClose)
-            {{
-                {await}connection.Open{async};
-            }}
-");
-            var createBatch =
-                methodType == MethodType.Async ?
-                $"await Create{source.MethodName}BatchAsync(connection, false, cancellationToken, timeout)" :
-                $"Create{source.MethodName}Batch(connection, false, timeout)"
-                ;
-            _methodCode.Append($@"
-            DbBatch batch = null;
-            DbDataReader reader = null;
-            try
-            {{
-                batch = {createBatch};
-");
-            if(source.HaveParametrs)
-            {
-                _methodCode.Append($@"
-                batch.Set{source.MethodName}Parametrs(
-");
-                var haveSuccessIteration = false;
-                for (int j = 0; j < source.Queries.Count; j++)
-                {
-                    var item = source.Queries[j];
-                    if (!item.query.HaveParametrs())
-                    {
-                        continue;
-                    }
-
-                    if (haveSuccessIteration)
-                    {
-                        _methodCode.Append($@",");
-                    }
-
-                    for (int i = 0; i < item.query.Parametrs.Length; i++)
-                    {
-                        var parametr = item.query.Parametrs[i];
-                        _methodCode.Append($@"
-                    in {parametr.VariableName()}Batch{item.number}
-");
-                        if (i != item.query.Parametrs.Length - 1)
-                        {
-                            _methodCode.Append($@",");
-                        }
-                    }
-
-                    haveSuccessIteration |= true;
-                }
-                _methodCode.Append($@"
-                    );");
-            }
-            _methodCode.Append($@"
-                reader = {await}batch.ExecuteReader{async};
-");
-            for (int j = 0; j < source.Queries.Count; j++)
-            {
-                _methodCode.Append($@"
-                yield return reader.BatchItem{j}{(methodType == MethodType.Async ? "Async(cancellationToken)" : "()")};
-                {await}reader.NextResult{async};
-");
-            }
-
-            _methodCode.Append($@"
-                {await}reader.Dispose{disposeOrCloseAsync};
-                reader = null;
-            }}
-            finally
-            {{
-                if (reader != null)
-                {{
-                    if (!reader.IsClosed)
-                    {{
-                        try 
-                        {{
-                            batch.Cancel();
-                        }}
-                        catch {{ /* ignore */ }}
-                    }}
-                
-                    {await}reader.Dispose{disposeOrCloseAsync};
-                }}
-
-                if (needClose)
-                {{
-                    {await}connection.Close{disposeOrCloseAsync};
-                }}
-
-                if(batch != null)
-                {{
-                    batch.BatchCommands.Clear();
-                    {await}batch.Dispose{disposeOrCloseAsync};
-                }}
-            }}
-");
-        }
-
-        private void ScalarMethodBody(
-            DbQueryBatch source,
-            MethodType methodType,
-            QueryType queryType
-            )
-        {
-            var await = methodType == MethodType.Async ? "await " : "";
-            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
-            var disposeOrCloseAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
-
-            _methodCode.Append($@"
-            bool needClose = connection.State == ConnectionState.Closed;
-            if(needClose)
-            {{
-                {await}connection.Open{async};
-            }}
-");
-            var createBatch =
-                methodType == MethodType.Async ?
-                $"await Create{source.MethodName}BatchAsync(connection, false, cancellationToken, timeout)" :
-                $"Create{source.MethodName}Batch(connection, false, timeout)"
-                ;
-            _methodCode.Append($@"
-            DbBatch batch = null;
-            try
-            {{
-                batch = {createBatch};
-");
-            if (source.HaveParametrs)
-            {
-                _methodCode.Append($@"
-                batch.Set{source.MethodName}Parametrs(
-");
-                var haveSuccessIteration = false;
-                for (int j = 0; j < source.Queries.Count; j++)
-                {
-                    var item = source.Queries[j];
-                    if (!item.query.HaveParametrs())
-                    {
-                        continue;
-                    }
-
-                    if (haveSuccessIteration)
-                    {
-                        _methodCode.Append($@",");
-                    }
-
-                    for (int i = 0; i < item.query.Parametrs.Length; i++)
-                    {
-                        var parametr = item.query.Parametrs[i];
-                        _methodCode.Append($@"
-                    in {parametr.VariableName()}Batch{item.number}
-");
-                        if (i != item.query.Parametrs.Length - 1)
-                        {
-                            _methodCode.Append($@",");
-                        }
-                    }
-
-                    haveSuccessIteration |= true;
-                }
-                _methodCode.Append($@"
-                    );");
-            }
-
-            if(queryType == QueryType.Scalar)
-            {
-                _methodCode.Append($@"
-                return ({GetScalarTypeName(source)}){await}batch.ExecuteScalar{async};
-");
-            }
-            else
-            {
-                _methodCode.Append($@"
-                return ({GetScalarTypeName(source)}){await}batch.ExecuteNonQuery{async};
-");
-            }
-
-            _methodCode.Append($@"
-            }}
-            finally
-            {{
-                if (needClose)
-                {{
-                    {await}connection.Close{disposeOrCloseAsync};
-                }}
-
-                if(batch != null)
-                {{
-                    batch.BatchCommands.Clear();
-                    {await}batch.Dispose{disposeOrCloseAsync};
                 }}
             }}
 ");

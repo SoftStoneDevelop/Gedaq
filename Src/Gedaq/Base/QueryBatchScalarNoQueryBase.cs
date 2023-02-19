@@ -1,20 +1,18 @@
 ﻿using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
+using Gedaq.Npgsql.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Gedaq.DbConnection.Generators
+namespace Gedaq.Base
 {
-    internal abstract class QueryScalarAndNonQueryBase : QueryCommonGenerator
+    internal abstract class QueryBatchScalarNoQueryBase
     {
-        protected virtual string CommandType()
-        {
-            return "DbCommand";
-        }
+        protected abstract BatchCommonGenerator BatchCommon { get; }
 
-        public void ScalarGenerate(QueryBase source, StringBuilder builder)
+        public void GenerateScalar(QueryBatch source, StringBuilder builder)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -23,12 +21,11 @@ namespace Gedaq.DbConnection.Generators
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                ThrowExceptionIfOutCannotExist(source);
                 ScalarMethodAsync(source, builder);
             }
         }
 
-        public void NonQueryGenerate(QueryBase source, StringBuilder builder)
+        public void GenerateNonQuery(QueryBatch source, StringBuilder builder)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -37,49 +34,68 @@ namespace Gedaq.DbConnection.Generators
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                ThrowExceptionIfOutCannotExist(source);
                 NonQueryMethodAsync(source, builder);
             }
         }
 
-        protected virtual void NonQueryMethod(QueryBase source, StringBuilder builder)
-        {
-            StartNonQueryMethod(source, MethodType.Sync, builder);
-            QueryMethodParametrs(source, "DbConnection", "connection", builder);
-            EndMethodParametrs(builder);
-            MethodBody(source, true, "connection", MethodType.Sync, QueryType.NonQuery, builder);
-            EndMethod(builder);
-        }
-
-        protected virtual void NonQueryMethodAsync(QueryBase source, StringBuilder builder)
-        {
-            StartNonQueryMethod(source, MethodType.Async, builder);
-            QueryMethodParametrs(source, "DbConnection", "connection", builder);
-            AsyncEndMethodParametrs(builder);
-            MethodBody(source, true, "connection", MethodType.Async, QueryType.NonQuery, builder);
-            EndMethod(builder);
-        }
-
-        protected virtual void ScalarMethod(QueryBase source, StringBuilder builder)
+        protected virtual void ScalarMethod(QueryBatch source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Sync, builder);
-            QueryMethodParametrs(source, "DbConnection", "connection", builder);
+            StartMethodParametrs(source, "DbConnection", "connection", builder);
             EndMethodParametrs(builder);
-            MethodBody(source, true, "connection", MethodType.Sync, QueryType.Scalar, builder);
+            ScalarMethodBody(source, true, "connection", MethodType.Sync, QueryType.Scalar, builder);
             EndMethod(builder);
         }
 
-        protected virtual void ScalarMethodAsync(QueryBase source, StringBuilder builder)
+        protected virtual void ScalarMethodAsync(QueryBatch source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Async, builder);
-            QueryMethodParametrs(source, "DbConnection", "connection", builder);
+            StartMethodParametrs(source, "DbConnection", "connection", builder);
             AsyncEndMethodParametrs(builder);
-            MethodBody(source, true, "connection", MethodType.Async, QueryType.Scalar, builder);
+            ScalarMethodBody(source, true, "connection", MethodType.Async, QueryType.Scalar, builder);
             EndMethod(builder);
+        }
+
+        protected virtual void NonQueryMethod(QueryBatch source, StringBuilder builder)
+        {
+            StartNonQueryMethod(source, MethodType.Sync, builder);
+            StartMethodParametrs(source, "DbConnection", "connection", builder);
+            EndMethodParametrs(builder);
+            ScalarMethodBody(source, true, "connection", MethodType.Sync, QueryType.NonQuery, builder);
+            EndMethod(builder);
+        }
+
+        protected virtual void NonQueryMethodAsync(QueryBatch source, StringBuilder builder)
+        {
+            StartNonQueryMethod(source, MethodType.Async, builder);
+            StartMethodParametrs(source, "DbConnection", "connection", builder);
+            AsyncEndMethodParametrs(builder);
+            ScalarMethodBody(source, true, "connection", MethodType.Async, QueryType.NonQuery, builder);
+            EndMethod(builder);
+        }
+
+        protected void StartScalarMethod(
+            QueryBatch source,
+            MethodType methodType,
+            StringBuilder builder
+            )
+        {
+            if (methodType == MethodType.Sync)
+            {
+                builder.Append($@"
+        public static {BatchCommon.GetScalarTypeName(source)} Scalar{source.MethodName}(
+");
+            }
+            else
+            {
+                builder.Append($@"
+        public static async Task<{BatchCommon.GetScalarTypeName(source)}> Scalar{source.MethodName}Async(
+");
+            }
         }
 
         protected void StartNonQueryMethod(
-            QueryBase source,
+            QueryBatch source,
             MethodType methodType,
             StringBuilder builder
             )
@@ -98,28 +114,8 @@ namespace Gedaq.DbConnection.Generators
             }
         }
 
-        protected void StartScalarMethod(
-            QueryBase source,
-            MethodType methodType,
-            StringBuilder builder
-            )
-        {
-            if (methodType == MethodType.Sync)
-            {
-                builder.Append($@"        
-        public static {GetScalarTypeName(source)} Scalar{source.MethodName}(
-");
-            }
-            else
-            {
-                builder.Append($@"        
-        public static async Task<{GetScalarTypeName(source)}> Scalar{source.MethodName}Async(
-");
-            }
-        }
-
-        protected void QueryMethodParametrs(
-            QueryBase source,
+        protected void StartMethodParametrs(
+            QueryBatch source,
             string sourceTypeName,
             string sourceParametrName,
             StringBuilder builder
@@ -128,22 +124,31 @@ namespace Gedaq.DbConnection.Generators
             builder.Append($@"
             this {sourceTypeName} {sourceParametrName}
 ");
-            if (source.HaveParametrs())
+            if (source.HaveParametrs)
             {
-                var index = -1;
-                foreach (var parametr in source.BaseParametrs())
+                foreach (var item in source.QueryBases())
                 {
-                    ++index;
-                    if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                    if (!item.query.HaveParametrs())
                     {
-                        builder.Append($@",
-            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
-");
+                        continue;
                     }
 
-                    WriteOutParametrs(parametr, builder);
+                    foreach (var parametr in item.query.BaseParametrs())
+                    {
+                        builder.Append($@",
+            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{item.number}
+");
+                        //todo OUT parametrs
+                    }
                 }
             }
+        }
+
+        protected void EndMethod(StringBuilder builder)
+        {
+            builder.Append($@"
+        }}
+");
         }
 
         protected void EndMethodParametrs(StringBuilder builder)
@@ -165,15 +170,8 @@ namespace Gedaq.DbConnection.Generators
 ");
         }
 
-        protected void EndMethod(StringBuilder builder)
-        {
-            builder.Append($@"
-        }}
-");
-        }
-
-        protected void MethodBody(
-            QueryBase source,
+        protected void ScalarMethodBody(
+            QueryBatch source,
             bool needCheckOpen,
             string sourceParametrName,
             MethodType methodType,
@@ -195,47 +193,41 @@ namespace Gedaq.DbConnection.Generators
             }}
 ");
             }
-            var createCommand =
+            var createBatch =
                 methodType == MethodType.Async ?
-                $"await Create{source.MethodName}CommandAsync({sourceParametrName}, false, cancellationToken, timeout)" :
-                $"Create{source.MethodName}Command({sourceParametrName}, false, timeout)"
+                $"await Create{source.MethodName}BatchAsync({sourceParametrName}, false, cancellationToken, timeout)" :
+                $"Create{source.MethodName}Batch({sourceParametrName}, false, timeout)"
                 ;
             builder.Append($@"
-            {CommandType()} command = null;
+            {BatchCommon.BatchType()} batch = null;
             try
             {{
-                command = {createCommand};
+                batch = {createBatch};
 ");
-            if (source.HaveParametrs())
+            if (source.HaveParametrs)
             {
-                WriteSetParametrs(source, builder);
+                BatchCommon.WriteSetParametrs(source, builder);
             }
 
             if (queryType == QueryType.Scalar)
             {
                 builder.Append($@"
-                var result = ({GetScalarTypeName(source)}){await}command.ExecuteScalar{async};
+                //return {await}batch.ExecuteScalar<{BatchCommon.GetScalarTypeName(source)}>{async};
+                return ({BatchCommon.GetScalarTypeName(source)}){await}batch.ExecuteScalar{async};
 ");
             }
             else
             {
                 builder.Append($@"
-                var result = {await}command.ExecuteNonQuery{async};
+                return ({BatchCommon.GetScalarTypeName(source)}){await}batch.ExecuteNonQuery{async};
 ");
             }
 
-            if (source.HaveParametrs())
-            {
-                SetOutAndReturnParametrs(source, builder, this);
-            }
-
             builder.Append($@"
-                return result;
             }}
             finally
             {{
 ");
-
             if (needCheckOpen)
             {
                 builder.Append($@"
@@ -245,11 +237,12 @@ namespace Gedaq.DbConnection.Generators
                 }}
 ");
             }
+
             builder.Append($@"
-                if(command != null)
+                if(batch != null)
                 {{
-                    command.Parameters.Clear();
-                    {await}command.Dispose{disposeOrCloseAsync};
+                    batch.BatchCommands.Clear();
+                    {await}batch.Dispose{disposeOrCloseAsync};
                 }}
             }}
 ");
