@@ -78,25 +78,6 @@ namespace Gedaq.Base.Query
             return type.GetFullTypeName(true);
         }
 
-        public void WriteOutParametrs(BaseParametr parametr, StringBuilder builder)
-        {
-            if (parametr.Direction == System.Data.ParameterDirection.InputOutput || parametr.Direction == System.Data.ParameterDirection.Output)
-            {
-                builder.Append($@",
-            out {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Output))}
-");
-                return;
-            }
-
-            if (parametr.Direction == System.Data.ParameterDirection.ReturnValue)
-            {
-                builder.Append($@",
-            out {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.ReturnValue))}
-");
-                return;
-            }
-        }
-
         public void ThrowExceptionIfOutCannotExist(QueryBase source)
         {
             if (source.BaseParametrs().Any(an => an.Direction != System.Data.ParameterDirection.Input))

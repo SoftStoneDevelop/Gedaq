@@ -10,6 +10,44 @@ namespace Gedaq.Base.Batch
 {
     internal abstract class BatchCommonGenerator : DbCommonBase
     {
+        public void ThrowExceptionIfOutCannotExist(QueryBatch batch)
+        {
+            if (batch.HaveParametrs &&
+                batch.QueryBases().Any(any => any.query.HaveParametrs() && any.query.BaseParametrs().Any(anyIn => anyIn.HaveDirection))
+                )
+            {
+                throw new Exception("Iterator and Async methods cannot have out parameter");
+            }
+        }
+
+        public virtual void SetOutAndReturnParametrs(QueryBatch batch, StringBuilder builder)
+        {
+            var indexBatch = -1;
+            foreach (var item in batch.QueryBases())
+            {
+                ++indexBatch;
+                if (!item.query.HaveParametrs())
+                {
+                    continue;
+                }
+
+                int index = -1;
+                foreach (var parametr in item.query.BaseParametrs())
+                {
+                    ++index;
+                    if (parametr.Direction == System.Data.ParameterDirection.ReturnValue ||
+                    parametr.Direction == System.Data.ParameterDirection.Output ||
+                    parametr.Direction == System.Data.ParameterDirection.InputOutput
+                    )
+                    {
+                        builder.Append($@"
+                    {parametr.VariableName(BaseParametr.VariablePostfix(parametr.Direction))}Batch{item.number} = ({parametr.Type.GetFullTypeName(true)}){GetParametrValue(parametr, index, $"batch.BatchCommands[{indexBatch}]")};
+");
+                    }
+                }
+            }
+        }
+
         public void WriteSetParametrs(QueryBatch batch, StringBuilder builder)
         {
             builder.Append($@"
@@ -33,6 +71,11 @@ namespace Gedaq.Base.Batch
                 foreach (var parametr in item.query.BaseParametrs())
                 {
                     ++index;
+                    if(parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                    {
+                        continue;
+                    }
+
                     if (afterFirst)
                     {
                         builder.Append($@",");

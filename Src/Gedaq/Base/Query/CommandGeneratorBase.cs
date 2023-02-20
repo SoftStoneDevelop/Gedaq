@@ -125,6 +125,7 @@ namespace Gedaq.Base.Query
         {
             if (source.QueryType.HasFlag(QueryType.Read))
             {
+                QueryCommon.ThrowExceptionIfOutCannotExist(source);
                 if (source.MethodType.HasFlag(MethodType.Sync))
                 {
                     StartExecuteCommand(source, MethodType.Sync, builder);
@@ -151,6 +152,7 @@ namespace Gedaq.Base.Query
 
                 if (source.MethodType.HasFlag(MethodType.Async))
                 {
+                    QueryCommon.ThrowExceptionIfOutCannotExist(source);
                     StartExecuteScalarCommand(source, MethodType.Async, builder);
                     ExecuteScalarCommand(source, MethodType.Async, builder);
                     EndMethod(builder);

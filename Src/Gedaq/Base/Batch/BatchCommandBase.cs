@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using System.Linq;
@@ -19,6 +20,11 @@ namespace Gedaq.Base.Batch
 
         private void CreateBatchItems(QueryBatch source, StringBuilder builder)
         {
+            if(!source.QueryType.HasFlag(QueryType.Read))
+            {
+                return;
+            }
+
             if (source.MethodType.HasFlag(MethodType.Async))
             {
                 CreateBatchItem(source, MethodType.Async, builder);
@@ -47,18 +53,48 @@ namespace Gedaq.Base.Batch
 
         protected void ExecuteBatchMethods(QueryBatch source, StringBuilder builder)
         {
-            if (source.MethodType.HasFlag(MethodType.Sync))
+            if (source.QueryType.HasFlag(QueryType.Read))
             {
-                StartExecuteBatch(source, MethodType.Sync, builder);
-                ExecuteBatch(source, MethodType.Sync, builder);
-                EndMethod(builder);
+                BatchCommon.ThrowExceptionIfOutCannotExist(source);
+                if (source.MethodType.HasFlag(MethodType.Sync))
+                {
+                    StartExecuteBatch(source, MethodType.Sync, builder);
+                    ExecuteBatch(source, MethodType.Sync, builder);
+                    EndMethod(builder);
+                }
+
+                if (source.MethodType.HasFlag(MethodType.Async))
+                {
+                    StartExecuteBatch(source, MethodType.Async, builder);
+                    ExecuteBatch(source, MethodType.Async, builder);
+                    EndMethod(builder);
+                }
             }
 
-            if (source.MethodType.HasFlag(MethodType.Async))
+            if (source.QueryType.HasFlag(QueryType.Scalar))
             {
-                StartExecuteBatch(source, MethodType.Async, builder);
-                ExecuteBatch(source, MethodType.Async, builder);
-                EndMethod(builder);
+                if (source.MethodType.HasFlag(MethodType.Sync))
+                {
+                    StartExecuteScalarBatch(source, MethodType.Sync, builder);
+                    ExecuteScalarBatch(source, MethodType.Sync, builder);
+                    EndMethod(builder);
+                }
+
+                if (source.MethodType.HasFlag(MethodType.Async))
+                {
+                    BatchCommon.ThrowExceptionIfOutCannotExist(source);
+                    StartExecuteScalarBatch(source, MethodType.Async, builder);
+                    ExecuteScalarBatch(source, MethodType.Async, builder);
+                    EndMethod(builder);
+                }
+            }
+
+            if (source.QueryType.HasFlag(QueryType.NonQuery) && 
+                source.HaveParametrs && 
+                source.QueryBases().Any(a => a.query.HaveParametrs() && a.query.BaseParametrs().Any(an => an .HaveDirection))
+                )
+            {
+                //TODO
             }
         }
 
@@ -273,9 +309,12 @@ namespace Gedaq.Base.Batch
 
                 foreach (var parametr in batchCommand.query.BaseParametrs())
                 {
-                    builder.Append($@",
+                    if(parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                    {
+                        builder.Append($@",
             in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{batchCommand.number}
 ");
+                    }
                 }
             }
 
@@ -284,6 +323,7 @@ namespace Gedaq.Base.Batch
         {{
 ");
             int indexBatch = -1;
+            var commandBatchDefine = false;
             foreach (var batchCommand in source.QueryBases())
             {
                 ++indexBatch;
@@ -292,23 +332,34 @@ namespace Gedaq.Base.Batch
                     continue;
                 }
 
-                if (indexBatch == 0)
-                {
-                    builder.Append($@"
-            var batchCommand = batch.BatchCommands[{indexBatch}];
-");
-                }
-                else
-                {
-                    builder.Append($@"
-            batchCommand = batch.BatchCommands[{indexBatch}];
-");
-                }
-
                 var indexP = -1;
+                var commandSet = false;
+
                 foreach (var parametr in batchCommand.query.BaseParametrs())
                 {
                     ++indexP;
+                    if(parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                    {
+                        continue;
+                    }
+
+                    if (commandBatchDefine && !commandSet)
+                    {
+                        builder.Append($@"
+            batchCommand = batch.BatchCommands[{indexBatch}];
+");
+                        commandSet = true;
+                    }
+
+                    if (!commandBatchDefine)
+                    {
+                        builder.Append($@"
+            var batchCommand = batch.BatchCommands[{indexBatch}];
+");
+                        commandBatchDefine = true;
+                        commandSet = true;
+                    }
+
                     if (parametr.Type.IsNullableType())
                     {
                         builder.Append($@"
@@ -413,5 +464,83 @@ namespace Gedaq.Base.Batch
             }}
 ");
         }
+
+        private void StartExecuteScalarBatch(
+            QueryBatch source,
+            MethodType methodType,
+            StringBuilder builder
+            )
+        {
+            var type = source.AllSameTypes ? source.QueryBases().First().query.MapTypeName.GetFullTypeName(true) : "object";
+            if (methodType == MethodType.Sync)
+            {
+                builder.Append($@"
+        public static {BatchCommon.GetScalarTypeName(source)} Scalar{source.MethodName}Batch(
+            this {BatchCommon.BatchType()} batch
+");
+                if (source.HaveParametrs)
+                {
+                    foreach (var query in source.QueryBases())
+                    {
+                        if(!query.query.HaveParametrs())
+                        {
+                            continue;
+                        }
+
+                        foreach (var parametr in query.query.BaseParametrs())
+                        {
+                            BatchCommon.WriteOutParametrs(parametr, builder, $"Batch{query.number}");
+                        }
+                    }
+                }
+                builder.Append($@"
+        )
+        {{
+");
+            }
+            else
+            {
+                builder.Append($@"
+        public static async Task<{BatchCommon.GetScalarTypeName(source)}> Scalar{source.MethodName}BatchAsync(
+            this {BatchCommon.BatchType()} batch,
+            CancellationToken cancellationToken = default
+            )
+        {{
+");
+            }
+        }
+
+        protected void ExecuteScalarBatch(
+            QueryBatch source,
+            MethodType methodType,
+            StringBuilder builder
+            )
+        {
+            var await = methodType == MethodType.Async ? "await " : "";
+            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
+            var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
+
+            builder.Append($@"
+            var result = ({BatchCommon.GetScalarTypeName(source)}){await}batch.ExecuteScalar{async};
+");
+            if(source.HaveParametrs)
+            {
+                int index = -1;
+                foreach (var item in source.QueryBases())
+                {
+                    ++index;
+                    if (!item.query.HaveParametrs())
+                    {
+                        continue;
+                    }
+
+                    BatchCommon.SetOutAndReturnParametrs(source, builder);
+                }
+            }
+
+            builder.Append($@"
+            return result;
+");
+        }
     }
-}
+};

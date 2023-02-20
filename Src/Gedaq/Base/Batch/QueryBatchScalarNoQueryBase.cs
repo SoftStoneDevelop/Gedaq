@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Model;
@@ -135,10 +136,15 @@ namespace Gedaq.Base.Batch
 
                     foreach (var parametr in item.query.BaseParametrs())
                     {
-                        builder.Append($@",
+                        if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                        {
+                            builder.Append($@",
             {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{item.number}
-");
-                        //todo OUT parametrs
+
+                            ");
+                        }
+
+                        BatchCommon.WriteOutParametrs(parametr, builder, $"Batch{item.number}");
                     }
                 }
             }
@@ -212,18 +218,24 @@ namespace Gedaq.Base.Batch
             if (queryType == QueryType.Scalar)
             {
                 builder.Append($@"
-                //return {await}batch.ExecuteScalar<{BatchCommon.GetScalarTypeName(source)}>{async};
-                return ({BatchCommon.GetScalarTypeName(source)}){await}batch.ExecuteScalar{async};
+                //var result = {await}batch.ExecuteScalar<{BatchCommon.GetScalarTypeName(source)}>{async};
+                var result = ({BatchCommon.GetScalarTypeName(source)}){await}batch.ExecuteScalar{async};
 ");
             }
             else
             {
                 builder.Append($@"
-                return ({BatchCommon.GetScalarTypeName(source)}){await}batch.ExecuteNonQuery{async};
+                var result = ({BatchCommon.GetScalarTypeName(source)}){await}batch.ExecuteNonQuery{async};
 ");
             }
 
+            if (source.HaveParametrs)
+            {
+                BatchCommon.SetOutAndReturnParametrs(source, builder);
+            }
+
             builder.Append($@"
+                return result;
             }}
             finally
             {{

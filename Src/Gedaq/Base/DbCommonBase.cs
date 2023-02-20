@@ -21,6 +21,25 @@ namespace Gedaq.Base
 
         public abstract bool IsKnownProviderType(ITypeSymbol type);
 
+        public void WriteOutParametrs(BaseParametr parametr, StringBuilder builder, string batchPostfix = "")
+        {
+            if (parametr.Direction == System.Data.ParameterDirection.InputOutput || parametr.Direction == System.Data.ParameterDirection.Output)
+            {
+                builder.Append($@",
+            out {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Output))}{batchPostfix}
+");
+                return;
+            }
+
+            if (parametr.Direction == System.Data.ParameterDirection.ReturnValue)
+            {
+                builder.Append($@",
+            out {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.ReturnValue))}{batchPostfix}
+");
+                return;
+            }
+        }
+
         private class ItemPair
         {
             public ItemPair(
