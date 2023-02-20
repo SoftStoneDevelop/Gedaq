@@ -6,7 +6,7 @@ using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
 using System.Text;
 
-namespace Gedaq.Npgsql.Generators
+namespace Gedaq.Npgsql.GeneratorsQuery
 {
     internal class NpgsqlCommand : CommandGeneratorBase
     {

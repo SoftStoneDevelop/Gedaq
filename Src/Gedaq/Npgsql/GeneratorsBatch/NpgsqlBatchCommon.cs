@@ -5,7 +5,7 @@ using Gedaq.Npgsql.Helpers;
 using Microsoft.CodeAnalysis;
 using System.Collections.Generic;
 
-namespace Gedaq.Npgsql.BatchGenerators
+namespace Gedaq.Npgsql.GeneratorsBatch
 {
     internal class NpgsqlBatchCommon : BatchCommonGenerator
     {

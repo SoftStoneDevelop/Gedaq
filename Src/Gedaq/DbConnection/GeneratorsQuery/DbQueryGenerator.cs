@@ -1,16 +1,8 @@
 ﻿using Gedaq.Base;
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
-using Gedaq.Helpers;
-using Gedaq.Npgsql.Generators;
-using Gedaq.Npgsql.Model;
-using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Text;
 
-namespace Gedaq.DbConnection.Generators
+namespace Gedaq.DbConnection.GeneratorsQuery
 {
     internal class DbQueryGenerator : QueryBaseGenerator
     {

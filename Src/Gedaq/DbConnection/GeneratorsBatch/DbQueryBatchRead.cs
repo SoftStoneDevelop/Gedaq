@@ -1,6 +1,6 @@
 ﻿using Gedaq.Base.Batch;
 
-namespace Gedaq.DbConnection.BatchGenerators
+namespace Gedaq.DbConnection.GeneratorsBatch
 {
     internal class DbQueryBatchRead : QueryBatchReadBase
     {

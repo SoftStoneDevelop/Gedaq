@@ -3,7 +3,7 @@ using Gedaq.Base.Query;
 using Gedaq.DbConnection.Helpers;
 using System.Text;
 
-namespace Gedaq.DbConnection.Generators
+namespace Gedaq.DbConnection.GeneratorsQuery
 {
     internal class DbCommandGenerator : CommandGeneratorBase
     {

@@ -5,7 +5,7 @@ using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
 using System.Text;
 
-namespace Gedaq.Npgsql.BatchGenerators
+namespace Gedaq.Npgsql.GeneratorsBatch
 {
     internal class NpgsqlQueryBatchRead : QueryBatchReadBase
     {

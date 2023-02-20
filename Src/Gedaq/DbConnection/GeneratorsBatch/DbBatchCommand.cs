@@ -5,7 +5,7 @@ using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using System.Text;
 
-namespace Gedaq.DbConnection.BatchGenerators
+namespace Gedaq.DbConnection.GeneratorsBatch
 {
     internal class DbBatchCommand : BatchCommandBase
     {

@@ -1,6 +1,6 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.DbConnection.BatchGenerators;
-using Gedaq.DbConnection.Generators;
+using Gedaq.DbConnection.GeneratorsBatch;
+using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;

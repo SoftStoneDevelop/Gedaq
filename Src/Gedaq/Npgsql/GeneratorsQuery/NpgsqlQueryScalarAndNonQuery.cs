@@ -10,7 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Gedaq.Npgsql.Generators
+namespace Gedaq.Npgsql.GeneratorsQuery
 {
     internal class NpgsqlQueryScalarAndNonQuery : QueryScalarNonQueryBase
     {

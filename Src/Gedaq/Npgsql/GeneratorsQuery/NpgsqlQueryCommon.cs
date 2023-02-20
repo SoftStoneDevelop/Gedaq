@@ -3,7 +3,7 @@ using Gedaq.Base.Query;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 
-namespace Gedaq.Npgsql.Generators
+namespace Gedaq.Npgsql.GeneratorsQuery
 {
     internal class NpgsqlQueryCommon : QueryCommonBase
     {

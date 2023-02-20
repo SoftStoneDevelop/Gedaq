@@ -1,14 +1,12 @@
-﻿using Gedaq.Base.Model;
-using Gedaq.Base.Query;
+﻿using Gedaq.Base.Batch;
+using Gedaq.Base.Model;
 using Gedaq.Helpers;
+using Gedaq.Npgsql.Helpers;
 using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Gedaq.DbConnection.Generators
+namespace Gedaq.DbConnection.GeneratorsBatch
 {
-    internal class DbQueryCommon : QueryCommonBase
+    internal class DbBatchCommon : BatchCommonGenerator
     {
         public override string BatchType()
         {
@@ -20,6 +18,11 @@ namespace Gedaq.DbConnection.Generators
             return "DbCommand";
         }
 
+        public override bool IsKnownProviderType(ITypeSymbol type)
+        {
+            return DbMapTypeHelper.IsKnownProviderType(type);
+        }
+
         public override string ReaderType()
         {
             return "DbDataReader";
@@ -28,11 +31,6 @@ namespace Gedaq.DbConnection.Generators
         public override string GetParametrValue(BaseParametr parametr, int index, string source)
         {
             return $"{source}.Parameters[{index}].Value";
-        }
-
-        public override bool IsKnownProviderType(ITypeSymbol type)
-        {
-            return DbMapTypeHelper.IsKnownProviderType(type);
         }
     }
 }

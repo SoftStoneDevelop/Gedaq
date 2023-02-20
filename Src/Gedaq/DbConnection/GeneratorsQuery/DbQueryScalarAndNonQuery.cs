@@ -1,6 +1,6 @@
 ﻿using Gedaq.Base.Query;
 
-namespace Gedaq.DbConnection.Generators
+namespace Gedaq.DbConnection.GeneratorsQuery
 {
     internal class DbQueryScalarAndNonQuery : QueryScalarNonQueryBase
     {

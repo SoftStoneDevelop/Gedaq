@@ -1,8 +1,8 @@
 ﻿using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.BatchGenerators;
-using Gedaq.Npgsql.Generators;
+using Gedaq.Npgsql.GeneratorsBatch;
+using Gedaq.Npgsql.GeneratorsQuery;
 using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;

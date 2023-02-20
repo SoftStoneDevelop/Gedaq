@@ -12,7 +12,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Gedaq.Npgsql.Generators
+namespace Gedaq.Npgsql.GeneratorsQuery
 {
     internal class NpgsqlQueryGenerator : QueryBaseGenerator
     {
