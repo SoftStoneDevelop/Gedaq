@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Gedaq.Base
+namespace Gedaq.Base.Batch
 {
     internal abstract class BatchCommonGenerator : DbCommonBase
     {

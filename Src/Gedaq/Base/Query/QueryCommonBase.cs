@@ -8,7 +8,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Gedaq.Base
+namespace Gedaq.Base.Query
 {
     internal abstract class QueryCommonBase : DbCommonBase
     {

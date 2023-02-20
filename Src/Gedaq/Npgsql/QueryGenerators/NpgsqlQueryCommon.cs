@@ -1,13 +1,11 @@
-﻿using Gedaq.Base;
-using Gedaq.Base.Model;
+﻿using Gedaq.Base.Model;
+using Gedaq.Base.Query;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Helpers;
 using Microsoft.CodeAnalysis;
-using System.Collections.Generic;
 
 namespace Gedaq.Npgsql.Generators
 {
-    internal class NpgsqlBatchCommon : BatchCommonGenerator
+    internal class NpgsqlQueryCommon : QueryCommonBase
     {
         public override string BatchType()
         {
@@ -17,6 +15,11 @@ namespace Gedaq.Npgsql.Generators
         public override string CommandType()
         {
             return "NpgsqlCommand";
+        }
+
+        public override string ReaderType()
+        {
+            return "NpgsqlDataReader";
         }
 
         public override string GetParametrValue(BaseParametr parametr, int index, string source)
@@ -33,12 +36,7 @@ namespace Gedaq.Npgsql.Generators
 
         public override bool IsKnownProviderType(ITypeSymbol type)
         {
-            return NpgsqlMapTypeHelper.IsKnownProviderType(type);
-        }
-
-        public override string ReaderType()
-        {
-            return "NpgsqlDataReader";
+            return Npgsql.Helpers.NpgsqlMapTypeHelper.IsKnownProviderType(type);
         }
     }
 }

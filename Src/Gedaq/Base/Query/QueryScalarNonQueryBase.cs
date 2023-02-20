@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Gedaq.Base
+namespace Gedaq.Base.Query
 {
     internal abstract class QueryScalarNonQueryBase
     {

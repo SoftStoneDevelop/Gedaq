@@ -1,17 +1,20 @@
 ﻿using Gedaq.Base;
+using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Model;
+using Gedaq.Npgsql.Generators;
+using Microsoft.CodeAnalysis;
+using System;
 
-namespace Gedaq.Npgsql.Generators
+namespace Gedaq.DbConnection.BatchGenerators
 {
-    internal class NpgsqlQueryBatchGenerator : QueryBaseGenerator
+    internal class DbQueryBatchGenerator : QueryBaseGenerator
     {
-        NpgsqlQueryBatchRead _batchRead = new NpgsqlQueryBatchRead();
-        NpgsqlQueryBatchScalarNoQuery _batchScalarNoQuery = new NpgsqlQueryBatchScalarNoQuery();
-        NpgsqlBatchCommand _batchCommand = new NpgsqlBatchCommand();
+        DbQueryBatchRead _batchRead = new DbQueryBatchRead();
+        DbQueryBatchScalarNoQuery _batchScalarNoQuery = new DbQueryBatchScalarNoQuery();
+        DbBatchCommand _batchCommand = new DbBatchCommand();
 
-        public void GenerateMethod(QueryBatchNpgsql source)
+        public void Generate(DbQueryBatch source)
         {
             Reset();
             Start(source);
@@ -37,13 +40,13 @@ namespace Gedaq.Npgsql.Generators
         }
 
         private void Start(
-            QueryBatchNpgsql source
+            DbQueryBatch source
             )
         {
             _methodCode.Append($@"
-using Npgsql;
 using System;
 using System.Data;
+using System.Data.Common;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -52,7 +55,7 @@ using System.Runtime.CompilerServices;
 
 namespace {source.ContainTypeName.ContainingNamespace}
 {{
-    public static class {source.MethodName}NpgsqlExtension
+    public static class {source.MethodName}DbConnectionExtension
     {{
 ");
         }

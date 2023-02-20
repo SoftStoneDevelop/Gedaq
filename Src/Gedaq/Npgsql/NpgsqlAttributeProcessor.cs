@@ -1,4 +1,7 @@
-﻿using Gedaq.Helpers;
+﻿using Gedaq.Base.Model;
+using Gedaq.Enums;
+using Gedaq.Helpers;
+using Gedaq.Npgsql.BatchGenerators;
 using Gedaq.Npgsql.Generators;
 using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
@@ -6,12 +9,6 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using System.Reflection.Metadata;
-using System.Reflection;
-using Gedaq.Enums;
-using System.Threading;
-using Gedaq.Base;
-using Gedaq.Base.Model;
 
 namespace Gedaq.Npgsql
 {

@@ -1,4 +1,4 @@
-﻿using Gedaq.Base;
+﻿using Gedaq;
 using NUnit.Framework;
 using System;
 

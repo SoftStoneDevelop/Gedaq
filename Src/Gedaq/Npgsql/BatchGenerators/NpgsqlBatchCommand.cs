@@ -1,4 +1,4 @@
-﻿using Gedaq.Base;
+﻿using Gedaq.Base.Batch;
 using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
@@ -6,7 +6,7 @@ using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
 using System.Text;
 
-namespace Gedaq.Npgsql.Generators
+namespace Gedaq.Npgsql.BatchGenerators
 {
     internal class NpgsqlBatchCommand : BatchCommandBase
     {

@@ -1,8 +1,8 @@
-﻿using Gedaq.Base;
+﻿using Gedaq.Base.Batch;
 
-namespace Gedaq.DbConnection.Generators
+namespace Gedaq.DbConnection.BatchGenerators
 {
-    internal class DbQueryBatchRead : QueryBatchReadBase
+    internal class DbQueryBatchScalarNoQuery : QueryBatchScalarNoQueryBase
     {
         DbBatchCommon _batchCommon = new DbBatchCommon();
         protected override BatchCommonGenerator BatchCommon => _batchCommon;

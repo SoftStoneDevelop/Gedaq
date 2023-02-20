@@ -1,5 +1,5 @@
-﻿using Gedaq.Base;
-using Gedaq.Base.Model;
+﻿using Gedaq.Base.Model;
+using Gedaq.Base.Query;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;

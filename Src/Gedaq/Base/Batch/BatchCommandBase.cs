@@ -4,7 +4,7 @@ using Gedaq.Helpers;
 using System.Linq;
 using System.Text;
 
-namespace Gedaq.Base
+namespace Gedaq.Base.Batch
 {
     internal abstract class BatchCommandBase
     {
@@ -390,7 +390,7 @@ namespace Gedaq.Base
                 {await}reader.NextResult{async};
 ");
             }
-            
+
             builder.Append($@"
                 {await}reader.Dispose{disposeAsync};
                 reader = null;

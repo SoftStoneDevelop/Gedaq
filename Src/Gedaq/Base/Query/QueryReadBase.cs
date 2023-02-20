@@ -3,7 +3,7 @@ using Gedaq.Enums;
 using Gedaq.Helpers;
 using System.Text;
 
-namespace Gedaq.Base
+namespace Gedaq.Base.Query
 {
     internal abstract class QueryReadBase
     {

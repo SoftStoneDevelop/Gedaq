@@ -6,7 +6,7 @@ using Microsoft.CodeAnalysis;
 using System.Linq;
 using System.Text;
 
-namespace Gedaq.Base
+namespace Gedaq.Base.Query
 {
     internal abstract class CommandGeneratorBase
     {
@@ -309,7 +309,7 @@ namespace Gedaq.Base
 ");
             foreach (var parametr in source.BaseParametrs())
             {
-                if(parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
                 {
                     builder.Append($@",
             in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}
