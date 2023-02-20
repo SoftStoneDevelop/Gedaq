@@ -62,10 +62,9 @@ FROM person p
 LEFT JOIN identification i ON i.id = p.identification_id
 WHERE p.id > $1
 ",
+        "GetAllPerson",
         typeof(Person),
-        MethodType.Sync | MethodType.Async,
-        SourceType.Connection,
-        "GetAllPerson"
+        MethodType.Sync | MethodType.Async
         )]
 [Parametr("GetAllPerson", parametrType: typeof(int), position: 1)]
 public class Person
