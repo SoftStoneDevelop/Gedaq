@@ -46,6 +46,11 @@ namespace Gedaq.Base
             return aliases;
         }
 
+        public Aliases GetIntResultAlias()
+        {
+            return new Aliases(true);
+        }
+
         internal int GetLastSplitedItem(ReadOnlySpan<char> query, char splitter)
         {
             int i = query.Length - 1;

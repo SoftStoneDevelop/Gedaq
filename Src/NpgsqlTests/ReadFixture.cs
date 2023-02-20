@@ -10,6 +10,14 @@ using System.Threading.Tasks;
 
 namespace NpgsqlTests
 {
+    public class ReadFunc
+    {
+        public int Out1 { get; set; }
+        public string Out2 { get; set; }
+
+        public ReadFixtureModel Person { get; set; }
+    }
+
     public class ReadFixtureModel
     {
         public int Id { get; set; }
@@ -54,6 +62,22 @@ namespace NpgsqlTests
             conn.DropTable("readfixturecountry");
 
             using var cmd = conn.CreateCommand();
+            DropFunction(cmd);
+
+            CreateCountryTable(cmd);
+            FillСountries(cmd);
+
+            CreateIdentificationTable(cmd);
+            FillIdentification(cmd);
+
+            CreatePersonTable(cmd);
+            FillPerson(cmd);
+
+            CreateFunction(cmd);
+        }
+
+        private void CreateCountryTable(NpgsqlCommand cmd)
+        {
             cmd.CommandText = @"
 CREATE TABLE IF NOT EXISTS public.readfixturecountry
 (
@@ -61,7 +85,13 @@ CREATE TABLE IF NOT EXISTS public.readfixturecountry
     name text COLLATE pg_catalog.""default"" NOT NULL,
     CONSTRAINT readfixturecountry_pkey PRIMARY KEY (id)
 );
+";
+            cmd.ExecuteNonQuery();
+        }
 
+        private void CreateIdentificationTable(NpgsqlCommand cmd)
+        {
+            cmd.CommandText = @"
 CREATE TABLE IF NOT EXISTS public.readfixtureidentification
 (
     id integer NOT NULL,
@@ -73,7 +103,13 @@ CREATE TABLE IF NOT EXISTS public.readfixtureidentification
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
+";
+            cmd.ExecuteNonQuery();
+        }
 
+        private void CreatePersonTable(NpgsqlCommand cmd)
+        {
+            cmd.CommandText = @"
 CREATE TABLE IF NOT EXISTS public.readfixtureperson
 (
     id integer NOT NULL,
@@ -89,9 +125,6 @@ CREATE TABLE IF NOT EXISTS public.readfixtureperson
 );
 ";
             cmd.ExecuteNonQuery();
-            FillСountries(cmd);
-            FillIdentification(cmd);
-            FillPerson(cmd);
         }
 
         private void FillPerson(NpgsqlCommand cmd)
@@ -235,12 +268,36 @@ INSERT INTO public.readfixtureidentification(
             cmd.ExecuteNonQuery();
         }
 
+        private void CreateFunction(NpgsqlCommand cmd)
+        {
+            cmd.CommandText = @"
+CREATE FUNCTION readfixturefunc(in int, out out1 int, out out2 text)
+    AS $$ SELECT $1, CAST($1 AS text) || ' is text' $$
+    LANGUAGE SQL;
+";
+            cmd.ExecuteNonQuery();
+        }
+
+        private void DropFunction(NpgsqlCommand cmd)
+        {
+            cmd.CommandText = @"
+DROP FUNCTION IF EXISTS readfixturefunc(in INT, out int, out text);
+";
+            cmd.ExecuteNonQuery();
+        }
+
         [TearDown]
         public void Cleanup()
         {
-            _dataSource.OpenConnection().DropTable("readfixtureperson");
-            _dataSource.OpenConnection().DropTable("readfixtureidentification");
-            _dataSource.OpenConnection().DropTable("readfixturecountry");
+            using (var connection = _dataSource.OpenConnection())
+            {
+                using var cmd = connection.CreateCommand();
+                DropFunction(cmd);
+
+                connection.DropTable("readfixtureperson");
+                connection.DropTable("readfixtureidentification");
+                connection.DropTable("readfixturecountry");
+            }
             _dataSource?.Dispose();
         }
 
@@ -762,6 +819,100 @@ ORDER BY p.id ASC
                 Assert.That((string)((object[])list[4])[5], Is.EqualTo("party card"));
                 Assert.That((string)((object[])list[4])[6], Is.EqualTo("Сurly5"));
                 Assert.That((string)((object[])list[4])[7], Is.EqualTo("Doe5"));
+            });
+        }
+
+        [Test]
+        [Query(
+            @"
+select * from readfixturefunc(@inParam);
+",
+            typeof(Int32),
+            Gedaq.Common.Enums.MethodType.Sync,
+            Gedaq.Npgsql.Enums.SourceType.Connection,
+            "FuncOut",
+            Gedaq.Common.Enums.QueryType.NonQuery
+            )]
+        [Parametr("FuncOut", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
+        [Parametr("FuncOut", parametrType: typeof(int), parametrName: "out1", direction: ParameterDirection.Output)]
+        [Parametr("FuncOut", parametrType: typeof(string), parametrName: "out2", direction: ParameterDirection.Output)]
+        public void TestFuncOut()
+        {
+            var result = _dataSource.OpenConnection().NonQueryFuncOut(46, out var out1, out var out2);
+            Assert.Multiple(() =>
+            {
+                Assert.That(out1, Is.EqualTo(46));
+                Assert.That(out2, Is.EqualTo("46 is text"));
+            });
+        }
+
+        [Test]
+        [Query(
+            @"
+select out1, out2 from readfixturefunc(@inParam);
+",
+            typeof(ReadFunc),
+            Gedaq.Common.Enums.MethodType.Sync,
+            Gedaq.Npgsql.Enums.SourceType.Connection,
+            "ReadFunc",
+            Gedaq.Common.Enums.QueryType.Read
+            )]
+        [Parametr("ReadFunc", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
+        public void TestReadFunc()
+        {
+            var result = _dataSource.OpenConnection().ReadFunc(24).First();
+            Assert.Multiple(() =>
+            {
+                Assert.That(result.Out1, Is.EqualTo(24));
+                Assert.That(result.Out2, Is.EqualTo("24 is text"));
+            });
+        }
+
+        [Test]
+        [Query(
+            @"
+SELECT 
+~StartInner::Person:id~
+    P.id,
+    p.firstname,
+~StartInner::Identification:id~
+    i.id,
+~StartInner::Country:id~
+    c.id,
+    c.name,
+~EndInner::Country~
+    i.typename,
+~EndInner::Identification~
+    p.middlename,
+    p.lastname,
+~EndInner::Person~
+	readfixturefunc.out1,
+	readfixturefunc.out2
+FROM readfixtureperson p
+LEFT JOIN readfixtureidentification i ON i.id = p.readfixtureidentification_id
+LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
+LEFT JOIN LATERAL readfixturefunc(@inParam) AS readfixturefunc ON true
+WHERE p.id = @personId
+ORDER BY p.id ASC
+",
+            typeof(ReadFunc),
+            Gedaq.Common.Enums.MethodType.Sync,
+            Gedaq.Npgsql.Enums.SourceType.Connection,
+            "ReadFuncPerson",
+            Gedaq.Common.Enums.QueryType.Read
+            )]
+        [Parametr("ReadFuncPerson", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
+        [Parametr("ReadFuncPerson", parametrType: typeof(int), parametrName: "personId", direction: ParameterDirection.Input)]
+        public void TestReadFuncAndPerson()
+        {
+            var result = _dataSource.OpenConnection().ReadFuncPerson(13, 1).First();
+            Assert.Multiple(() =>
+            {
+                Assert.That(result.Out1, Is.EqualTo(13));
+                Assert.That(result.Out2, Is.EqualTo("13 is text"));
+                Assert.That(result.Person.Id, Is.EqualTo(1));
+                Assert.That(result.Person.Identification.Id, Is.EqualTo(1));
+                Assert.That(result.Person.Identification.Country.Id, Is.EqualTo(1));
             });
         }
     }

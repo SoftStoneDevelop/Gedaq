@@ -154,7 +154,15 @@ namespace Gedaq.Npgsql
                     }
                 }
 
-                read.Aliases = _queryParser.Parse(ref read.Query);
+                if(read.QueryType == QueryType.Read)
+                {
+                    read.Aliases = _queryParser.Parse(ref read.Query);
+                }
+                else
+                {
+                    read.Aliases = _queryParser.GetIntResultAlias();
+                }
+
                 if (read.NeedGenerate)
                 {
                     _read.Add(read);

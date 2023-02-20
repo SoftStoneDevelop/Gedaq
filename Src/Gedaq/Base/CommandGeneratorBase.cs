@@ -353,9 +353,12 @@ namespace Gedaq.Base
 ");
             foreach (var parametr in source.BaseParametrs())
             {
-                builder.Append($@",
+                if(parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                {
+                    builder.Append($@",
             in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}
 ");
+                }
             }
 
             builder.Append($@"
@@ -366,6 +369,11 @@ namespace Gedaq.Base
             foreach (var parametr in source.BaseParametrs())
             {
                 ++index;
+                if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                {
+                    continue;
+                }
+
                 if (parametr.Type.IsNullableType())
                 {
                     builder.Append($@"

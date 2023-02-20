@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Gedaq.Npgsql.Helpers
 {
-    internal static class MapTypeHelper
+    internal static class NpgsqlMapTypeHelper
     {
         public static readonly string NpgsqlDbTypeName = "NpgsqlTypes.NpgsqlDbType";
 

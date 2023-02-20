@@ -82,7 +82,7 @@ namespace Gedaq.Npgsql.Generators
             if (parametr.HaveNpgSqlDbType)
             {
                 builder.Append($@"
-            parametr{parametr.Position}.NpgsqlDbType = ({MapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType};
+            parametr{parametr.Position}.NpgsqlDbType = ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType};
 ");
             }
 

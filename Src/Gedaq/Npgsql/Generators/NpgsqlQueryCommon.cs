@@ -36,7 +36,7 @@ namespace Gedaq.Npgsql.Generators
 
         public override bool IsKnownProviderType(ITypeSymbol type)
         {
-            return Npgsql.Helpers.MapTypeHelper.IsKnownProviderType(type);
+            return Npgsql.Helpers.NpgsqlMapTypeHelper.IsKnownProviderType(type);
         }
     }
 }
