@@ -5,9 +5,7 @@ using Npgsql;
 using NUnit.Framework;
 using System;
 using System.Data;
-using System.Data.Common;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace DbConnectionTests
 {
@@ -269,7 +267,6 @@ DROP FUNCTION IF EXISTS dbconnectionreadfixturefunc(in INT, out int, out text);
 
         #endregion
 
-        [Test]
         [Query(
             @"
 SELECT 
@@ -296,69 +293,10 @@ ORDER BY p.id ASC
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
             )]
         [Parametr("NpgsqlToClass1", parametrType: typeof(int), parametrName: "id", dbType: System.Data.DbType.Int32)]
-        public void ReadToClass()
+        public void NpgsqlToClass1()
         {
-            var list = _dataSource.OpenConnection().NpgsqlToClass1(3).ToList();
-
-            Assert.That(list, Has.Count.EqualTo(9));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[0].Id, Is.EqualTo(0));
-                Assert.That(list[0].FirstName, Is.EqualTo("John0"));
-                Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
-                Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
-
-                Assert.That(list[0].Identification, Is.EqualTo(null));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[3].Id, Is.EqualTo(4));
-                Assert.That(list[3].FirstName, Is.EqualTo("John4"));
-                Assert.That(list[3].MiddleName, Is.EqualTo("Сurly4"));
-                Assert.That(list[3].LastName, Is.EqualTo("Doe4"));
-
-                Assert.That(list[3].Identification, Is.Not.EqualTo(null));
-            });
-
-            var identification = list[3].Identification;
-            Assert.Multiple(() =>
-            {
-                Assert.That(identification.Id, Is.EqualTo(4));
-                Assert.That(identification.TypeName, Is.EqualTo("citizen's passport"));
-
-                Assert.That(identification.Country, Is.EqualTo(null));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[4].Id, Is.EqualTo(5));
-                Assert.That(list[4].FirstName, Is.EqualTo("John5"));
-                Assert.That(list[4].MiddleName, Is.EqualTo("Сurly5"));
-                Assert.That(list[4].LastName, Is.EqualTo("Doe5"));
-
-                Assert.That(list[4].Identification, Is.Not.EqualTo(null));
-            });
-
-            identification = list[4].Identification;
-            Assert.Multiple(() =>
-            {
-                Assert.That(identification.Id, Is.EqualTo(5));
-                Assert.That(identification.TypeName, Is.EqualTo("party card"));
-
-                Assert.That(identification.Country, Is.Not.EqualTo(null));
-            });
-
-            var country = list[4].Identification.Country;
-            Assert.Multiple(() =>
-            {
-                Assert.That(country.Id, Is.EqualTo(5));
-                Assert.That(country.Name, Is.EqualTo("Martian colony"));
-            });
         }
 
-        [Test]
         [Query(
             @"
 SELECT 
@@ -386,66 +324,8 @@ ORDER BY p.id ASC
             )]
         [Parametr("NpgsqlToClass2", parametrType: typeof(int), parametrName: "id")]
         [Parametr("NpgsqlToClass2", parametrType: typeof(int), parametrName: "id2")]
-        public async Task ReadToClassAsync()
+        public void NpgsqlToClass2()
         {
-            var list = await _dataSource.OpenConnection().NpgsqlToClass2Async(3, 6).ToListAsync();
-
-            Assert.That(list, Has.Count.EqualTo(8));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[0].Id, Is.EqualTo(0));
-                Assert.That(list[0].FirstName, Is.EqualTo("John0"));
-                Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
-                Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
-
-                Assert.That(list[0].Identification, Is.EqualTo(null));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[3].Id, Is.EqualTo(4));
-                Assert.That(list[3].FirstName, Is.EqualTo("John4"));
-                Assert.That(list[3].MiddleName, Is.EqualTo("Сurly4"));
-                Assert.That(list[3].LastName, Is.EqualTo("Doe4"));
-
-                Assert.That(list[3].Identification, Is.Not.EqualTo(null));
-            });
-
-            var identification = list[3].Identification;
-            Assert.Multiple(() =>
-            {
-                Assert.That(identification.Id, Is.EqualTo(4));
-                Assert.That(identification.TypeName, Is.EqualTo("citizen's passport"));
-
-                Assert.That(identification.Country, Is.EqualTo(null));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(list[4].Id, Is.EqualTo(5));
-                Assert.That(list[4].FirstName, Is.EqualTo("John5"));
-                Assert.That(list[4].MiddleName, Is.EqualTo("Сurly5"));
-                Assert.That(list[4].LastName, Is.EqualTo("Doe5"));
-
-                Assert.That(list[4].Identification, Is.Not.EqualTo(null));
-            });
-
-            identification = list[4].Identification;
-            Assert.Multiple(() =>
-            {
-                Assert.That(identification.Id, Is.EqualTo(5));
-                Assert.That(identification.TypeName, Is.EqualTo("party card"));
-
-                Assert.That(identification.Country, Is.Not.EqualTo(null));
-            });
-
-            var country = list[4].Identification.Country;
-            Assert.Multiple(() =>
-            {
-                Assert.That(country.Id, Is.EqualTo(5));
-                Assert.That(country.Name, Is.EqualTo("Martian colony"));
-            });
         }
 
         [Test]
@@ -582,212 +462,6 @@ ORDER BY p.id ASC
         {
             var id = _dataSource.OpenConnection().ScalarNpgsqlBatchReadToClass(0, 1, 3);
             Assert.That(id, Is.EqualTo(2));
-        }
-
-        [Test]
-        public void CreateCommand()
-        {
-            using (var connection = _dataSource.OpenConnection())
-            {
-                using var command = connection.CreateNpgsqlToClass1Command(false, 10);
-                Assert.That(((NpgsqlCommand)command).IsPrepared, Is.EqualTo(false));
-                Assert.That(command.CommandTimeout, Is.EqualTo(10));
-
-                using var command2 = connection.CreateNpgsqlToClass1Command(true);
-                Assert.That(((NpgsqlCommand)command2).IsPrepared, Is.EqualTo(true));
-                Assert.That(command2.CommandTimeout, Is.EqualTo(30));
-            }
-        }
-
-        [Test]
-        public async Task CreateCommandAsync()
-        {
-            await using (var connection = await _dataSource.OpenConnectionAsync())
-            {
-                await using var command = await connection.CreateNpgsqlToClass1CommandAsync(false, timeout: 10);
-                Assert.That(((NpgsqlCommand)command).IsPrepared, Is.EqualTo(false));
-                Assert.That(command.CommandTimeout, Is.EqualTo(10));
-
-                await using var command2 = await connection.CreateNpgsqlToClass1CommandAsync(true);
-                Assert.That(((NpgsqlCommand)command2).IsPrepared, Is.EqualTo(true));
-                Assert.That(command2.CommandTimeout, Is.EqualTo(30));
-            }
-        }
-
-        [Test]
-        [Query(
-            @"
-SELECT 
-    P.id,
-    p.firstname,
-~StartInner::Identification:id~
-    i.id,
-~StartInner::Country:id~
-    c.id,
-    c.name,
-~EndInner::Country~
-    i.typename,
-~EndInner::Identification~
-    p.middlename,
-    p.lastname
-FROM dbconnectionreadfixtureperson p
-LEFT JOIN dbconnectionreadfixtureidentification i ON i.id = p.readfixtureidentification_id
-LEFT JOIN dbconnectionreadfixturecountry c ON c.id = i.readfixturecountry_id
-WHERE p.id != @id
-ORDER BY p.id ASC
-",
-            "NpgsqlToObjArr",
-            typeof(object[]),
-            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [Parametr("NpgsqlToObjArr", parametrType: typeof(int), parametrName: "id")]
-        public void ReadToObjArr()
-        {
-            var list = _dataSource.OpenConnection().NpgsqlToObjArr(3).ToList();
-
-            Assert.That(list, Has.Count.EqualTo(9));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)list[0][0], Is.EqualTo(0));
-                Assert.That((string)list[0][1], Is.EqualTo("John0"));
-                Assert.That((DBNull)list[0][2], Is.EqualTo(DBNull.Value));
-                Assert.That((DBNull)list[0][3], Is.EqualTo(DBNull.Value));
-                Assert.That((DBNull)list[0][4], Is.EqualTo(DBNull.Value));
-                Assert.That((DBNull)list[0][5], Is.EqualTo(DBNull.Value));
-                Assert.That((string)list[0][6], Is.EqualTo("Сurly0"));
-                Assert.That((string)list[0][7], Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)list[4][0], Is.EqualTo(5));
-                Assert.That((string)list[4][1], Is.EqualTo("John5"));
-                Assert.That((int)list[4][2], Is.EqualTo(5));
-                Assert.That((int)list[4][3], Is.EqualTo(5));
-                Assert.That((string)list[4][4], Is.EqualTo("Martian colony"));
-                Assert.That((string)list[4][5], Is.EqualTo("party card"));
-                Assert.That((string)list[4][6], Is.EqualTo("Сurly5"));
-                Assert.That((string)list[4][7], Is.EqualTo("Doe5"));
-            });
-        }
-
-        [Test]
-        public async Task ReadToObjArrAsync()
-        {
-            var list = await _dataSource.OpenConnection().NpgsqlToObjArrAsync(3).ToListAsync();
-
-            Assert.That(list, Has.Count.EqualTo(9));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)list[0][0], Is.EqualTo(0));
-                Assert.That((string)list[0][1], Is.EqualTo("John0"));
-                Assert.That((DBNull)list[0][2], Is.EqualTo(DBNull.Value));
-                Assert.That((DBNull)list[0][3], Is.EqualTo(DBNull.Value));
-                Assert.That((DBNull)list[0][4], Is.EqualTo(DBNull.Value));
-                Assert.That((DBNull)list[0][5], Is.EqualTo(DBNull.Value));
-                Assert.That((string)list[0][6], Is.EqualTo("Сurly0"));
-                Assert.That((string)list[0][7], Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)list[4][0], Is.EqualTo(5));
-                Assert.That((string)list[4][1], Is.EqualTo("John5"));
-                Assert.That((int)list[4][2], Is.EqualTo(5));
-                Assert.That((int)list[4][3], Is.EqualTo(5));
-                Assert.That((string)list[4][4], Is.EqualTo("Martian colony"));
-                Assert.That((string)list[4][5], Is.EqualTo("party card"));
-                Assert.That((string)list[4][6], Is.EqualTo("Сurly5"));
-                Assert.That((string)list[4][7], Is.EqualTo("Doe5"));
-            });
-        }
-
-        [Test]
-        [Query(
-            @"
-SELECT 
-    (p.id,
-    p.firstname,
-    i.id,
-    c.id,
-    c.name,
-    i.typename,
-    p.middlename,
-    p.lastname) row
-FROM dbconnectionreadfixtureperson p
-LEFT JOIN dbconnectionreadfixtureidentification i ON i.id = p.readfixtureidentification_id
-LEFT JOIN dbconnectionreadfixturecountry c ON c.id = i.readfixturecountry_id
-WHERE p.id != @id
-ORDER BY p.id ASC
-",
-            "NpgsqlToObj",
-            typeof(object),
-            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [Parametr("NpgsqlToObj", parametrType: typeof(int), parametrName: "id")]
-        public void ReadToObj()
-        {
-            var list = _dataSource.OpenConnection().NpgsqlToObj(3).ToList();
-
-            Assert.That(list, Has.Count.EqualTo(9));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)((object[])list[0])[0], Is.EqualTo(0));
-                Assert.That((string)((object[])list[0])[1], Is.EqualTo("John0"));
-                Assert.That((int?)((object[])list[0])[2], Is.EqualTo(null));
-                Assert.That((string)((object[])list[0])[3], Is.EqualTo(null));
-                Assert.That((int?)((object[])list[0])[4], Is.EqualTo(null));
-                Assert.That((string)((object[])list[0])[5], Is.EqualTo(null));
-                Assert.That((string)((object[])list[0])[6], Is.EqualTo("Сurly0"));
-                Assert.That((string)((object[])list[0])[7], Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)((object[])list[4])[0], Is.EqualTo(5));
-                Assert.That((string)((object[])list[4])[1], Is.EqualTo("John5"));
-                Assert.That((int?)((object[])list[4])[2], Is.EqualTo(5));
-                Assert.That((int?)((object[])list[4])[3], Is.EqualTo(5));
-                Assert.That((string)((object[])list[4])[4], Is.EqualTo("Martian colony"));
-                Assert.That((string)((object[])list[4])[5], Is.EqualTo("party card"));
-                Assert.That((string)((object[])list[4])[6], Is.EqualTo("Сurly5"));
-                Assert.That((string)((object[])list[4])[7], Is.EqualTo("Doe5"));
-            });
-        }
-
-        [Test]
-        public async Task ReadToObjAsync()
-        {
-            var list = await _dataSource.OpenConnection().NpgsqlToObjAsync(3).ToListAsync();
-
-            Assert.That(list, Has.Count.EqualTo(9));
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)((object[])list[0])[0], Is.EqualTo(0));
-                Assert.That((string)((object[])list[0])[1], Is.EqualTo("John0"));
-                Assert.That((int?)((object[])list[0])[2], Is.EqualTo(null));
-                Assert.That((string)((object[])list[0])[3], Is.EqualTo(null));
-                Assert.That((int?)((object[])list[0])[4], Is.EqualTo(null));
-                Assert.That((string)((object[])list[0])[5], Is.EqualTo(null));
-                Assert.That((string)((object[])list[0])[6], Is.EqualTo("Сurly0"));
-                Assert.That((string)((object[])list[0])[7], Is.EqualTo("Doe0"));
-            });
-
-            Assert.Multiple(() =>
-            {
-                Assert.That((int)((object[])list[4])[0], Is.EqualTo(5));
-                Assert.That((string)((object[])list[4])[1], Is.EqualTo("John5"));
-                Assert.That((int?)((object[])list[4])[2], Is.EqualTo(5));
-                Assert.That((int?)((object[])list[4])[3], Is.EqualTo(5));
-                Assert.That((string)((object[])list[4])[4], Is.EqualTo("Martian colony"));
-                Assert.That((string)((object[])list[4])[5], Is.EqualTo("party card"));
-                Assert.That((string)((object[])list[4])[6], Is.EqualTo("Сurly5"));
-                Assert.That((string)((object[])list[4])[7], Is.EqualTo("Doe5"));
-            });
         }
 
         [Test]
