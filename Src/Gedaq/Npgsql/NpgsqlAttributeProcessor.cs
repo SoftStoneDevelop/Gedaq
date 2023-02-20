@@ -10,8 +10,8 @@ using System.Reflection.Metadata;
 using System.Reflection;
 using Gedaq.Enums;
 using System.Threading;
-using Gedaq.DbConnection.Model;
 using Gedaq.Base;
+using Gedaq.Base.Model;
 
 namespace Gedaq.Npgsql
 {

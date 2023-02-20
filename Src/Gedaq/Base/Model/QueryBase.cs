@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Reflection.Metadata;
 using System.Text;
 
-namespace Gedaq.DbConnection.Model
+namespace Gedaq.Base.Model
 {
     internal abstract class QueryBase : BaseGenerateItem
     {
@@ -61,6 +61,11 @@ namespace Gedaq.DbConnection.Model
 
         protected bool FillMapType(TypedConstant argument)
         {
+            if (argument.IsNull)
+            {
+                return true;
+            }
+
             if (!(argument.Value is ITypeSymbol typeParam))
             {
                 return false;

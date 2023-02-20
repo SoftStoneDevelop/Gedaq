@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using System.Text;

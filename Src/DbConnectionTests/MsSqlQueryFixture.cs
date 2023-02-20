@@ -275,9 +275,9 @@ LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
 WHERE p.id != @id
 ORDER BY p.id ASC
 ",
+            "MsSqlToClass1",
             typeof(ReadFixtureModel),
-            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
-            "MsSqlToClass1"
+            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
             )]
         [Parametr("MsSqlToClass1", parametrType: typeof(int), parametrName: "id", dbType: System.Data.DbType.Int32)]
         public void ReadToClass()
@@ -365,9 +365,9 @@ LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
 WHERE p.id != @id AND p.id != @id2
 ORDER BY p.id ASC
 ",
+            "MsSqlToClass2",
             typeof(ReadFixtureModel),
-            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
-            "MsSqlToClass2"
+            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
             )]
         [Parametr("MsSqlToClass2", parametrType: typeof(int), parametrName: "id")]
         [Parametr("MsSqlToClass2", parametrType: typeof(int), parametrName: "id2")]
@@ -478,9 +478,9 @@ LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
 WHERE p.id != @id
 ORDER BY p.id ASC
 ",
+            "MsSqlToObjArr",
             typeof(object[]),
-            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
-            "MsSqlToObjArr"
+            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
             )]
         [Parametr("MsSqlToObjArr", parametrType: typeof(int), parametrName: "id")]
         public void ReadToObjArr()

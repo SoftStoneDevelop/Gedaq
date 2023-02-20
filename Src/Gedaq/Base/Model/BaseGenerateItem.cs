@@ -2,7 +2,7 @@
 using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
 
-namespace Gedaq.DbConnection.Model
+namespace Gedaq.Base.Model
 {
     internal class BaseGenerateItem
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Gedaq.DbConnection.Model
+namespace Gedaq.Base.Model
 {
     internal abstract class QueryBatch : BaseGenerateItem
     {

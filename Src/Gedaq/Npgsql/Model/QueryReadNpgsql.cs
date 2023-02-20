@@ -1,4 +1,4 @@
-﻿using Gedaq.DbConnection.Model;
+﻿using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
@@ -37,23 +37,23 @@ namespace Gedaq.Npgsql.Model
             {
                 return false;
             }
-            
-            if(!methodSource.FillMapType(namedArguments[1]))
+
+            if (!methodSource.FillMethodName(namedArguments[1]))
             {
                 return false;
             }
 
-            if (!methodSource.FillMethodType(namedArguments[2]))
+            if (!methodSource.FillMapType(namedArguments[2]))
             {
                 return false;
             }
 
-            if (!methodSource.FillSourceType(namedArguments[3]))
+            if (!methodSource.FillMethodType(namedArguments[3]))
             {
                 return false;
             }
 
-            if (!methodSource.FillMethodName(namedArguments[4]))
+            if (!methodSource.FillSourceType(namedArguments[4]))
             {
                 return false;
             }
@@ -66,6 +66,11 @@ namespace Gedaq.Npgsql.Model
             if (!methodSource.FillGenerate(namedArguments[6]))
             {
                 return false;
+            }
+
+            if(methodSource.MapTypeName == null && methodSource.QueryType.HasFlag(QueryType.Read))
+            {
+                throw new Exception("For the 'Read' type, the mapping type must be specified");
             }
 
             methodSource.ContainTypeName = containsType;

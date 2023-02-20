@@ -1,4 +1,5 @@
-﻿using Gedaq.Npgsql.Model;
+﻿using Gedaq.Base.Model;
+using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
@@ -30,17 +31,17 @@ namespace Gedaq.DbConnection.Model
                 return false;
             }
 
-            if (!methodSource.FillMapType(namedArguments[1]))
+            if (!methodSource.FillMethodName(namedArguments[1]))
             {
                 return false;
             }
 
-            if (!methodSource.FillMethodType(namedArguments[2]))
+            if (!methodSource.FillMapType(namedArguments[2]))
             {
                 return false;
             }
 
-            if (!methodSource.FillMethodName(namedArguments[3]))
+            if (!methodSource.FillMethodType(namedArguments[3]))
             {
                 return false;
             }

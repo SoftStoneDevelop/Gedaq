@@ -325,10 +325,9 @@ LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
 WHERE p.id != $1
 ORDER BY p.id ASC
 ",
+            "ToClass1",
             typeof(ReadFixtureModel),
-            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToClass1"
+            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
             )]
         [Parametr("ToClass1", parametrType: typeof(int), position: 1)]
         public void ReadToClass()
@@ -415,10 +414,9 @@ LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
 WHERE p.id != $1 AND p.id != $2
 ORDER BY p.id ASC
 ",
+            "ToClass2",
             typeof(ReadFixtureModel),
-            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToClass2"
+            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
             )]
         [Parametr("ToClass2", parametrType: typeof(int), position: 1)]
         [Parametr("ToClass2", parametrType: typeof(int), position: 2)]
@@ -666,10 +664,9 @@ LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
 WHERE p.id != $1
 ORDER BY p.id ASC
 ",
+            "ToObjArr",
             typeof(object[]),
-            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToObjArr"
+            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
             )]
         [Parametr("ToObjArr", parametrType: typeof(int), position: 1)]
         public void ReadToObjArr()
@@ -753,10 +750,9 @@ LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
 WHERE p.id != $1
 ORDER BY p.id ASC
 ",
+            "ToObj",
             typeof(object),
-            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
-            "ToObj"
+            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
             )]
         [Parametr("ToObj", parametrType: typeof(int), position: 1)]
         public void ReadToObj()
@@ -827,11 +823,8 @@ ORDER BY p.id ASC
             @"
 select * from readfixturefunc(@inParam);
 ",
-            typeof(Int32),
-            Gedaq.Common.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
             "FuncOut",
-            Gedaq.Common.Enums.QueryType.NonQuery
+            queryType: Gedaq.Common.Enums.QueryType.NonQuery
             )]
         [Parametr("FuncOut", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
         [Parametr("FuncOut", parametrType: typeof(int), parametrName: "out1", direction: ParameterDirection.Output)]
@@ -851,11 +844,9 @@ select * from readfixturefunc(@inParam);
             @"
 select out1, out2 from readfixturefunc(@inParam);
 ",
-            typeof(ReadFunc),
-            Gedaq.Common.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
             "ReadFunc",
-            Gedaq.Common.Enums.QueryType.Read
+            typeof(ReadFunc),
+            queryType: Gedaq.Common.Enums.QueryType.Read
             )]
         [Parametr("ReadFunc", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
         public void TestReadFunc()
@@ -895,11 +886,9 @@ LEFT JOIN LATERAL readfixturefunc(@inParam) AS readfixturefunc ON true
 WHERE p.id = @personId
 ORDER BY p.id ASC
 ",
-            typeof(ReadFunc),
-            Gedaq.Common.Enums.MethodType.Sync,
-            Gedaq.Npgsql.Enums.SourceType.Connection,
             "ReadFuncPerson",
-            Gedaq.Common.Enums.QueryType.Read
+            typeof(ReadFunc),
+             queryType: Gedaq.Common.Enums.QueryType.Read
             )]
         [Parametr("ReadFuncPerson", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
         [Parametr("ReadFuncPerson", parametrType: typeof(int), parametrName: "personId", direction: ParameterDirection.Input)]

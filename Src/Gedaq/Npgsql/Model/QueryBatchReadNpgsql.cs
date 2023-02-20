@@ -1,4 +1,4 @@
-﻿using Gedaq.DbConnection.Model;
+﻿using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;

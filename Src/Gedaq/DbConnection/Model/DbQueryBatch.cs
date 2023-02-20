@@ -1,4 +1,5 @@
-﻿using Gedaq.Enums;
+﻿using Gedaq.Base.Model;
+using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;

@@ -11,6 +11,7 @@ using System.Threading;
 using Gedaq.DbConnection.Model;
 using Gedaq.DbConnection.Generators;
 using Gedaq.Base;
+using Gedaq.Base.Model;
 
 namespace Gedaq.Npgsql
 {
@@ -120,7 +121,14 @@ namespace Gedaq.Npgsql
                     read.Parametrs = parametrs.ToArray();
                 }
 
-                read.Aliases = _queryParser.Parse(ref read.Query);
+                if (read.QueryType == QueryType.Read)
+                {
+                    read.Aliases = _queryParser.Parse(ref read.Query);
+                }
+                else
+                {
+                    read.Aliases = _queryParser.GetIntResultAlias();
+                }
                 if (read.NeedGenerate)
                 {
                     _read.Add(read);

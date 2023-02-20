@@ -2,7 +2,7 @@
 using System;
 using System.Data;
 
-namespace Gedaq.DbConnection.Model
+namespace Gedaq.Base.Model
 {
     internal abstract class BaseParametr
     {
@@ -23,25 +23,25 @@ namespace Gedaq.DbConnection.Model
             switch (direction)
             {
                 case ParameterDirection.Input:
-                {
-                    return string.Empty;
-                }
+                    {
+                        return string.Empty;
+                    }
 
                 case ParameterDirection.InputOutput:
                 case ParameterDirection.Output:
-                {
-                    return "Out";
-                }
+                    {
+                        return "Out";
+                    }
 
                 case ParameterDirection.ReturnValue:
-                {
-                    return "Return";
-                }
+                    {
+                        return "Return";
+                    }
 
                 default:
-                {
-                    throw new NotImplementedException();
-                }
+                    {
+                        throw new NotImplementedException();
+                    }
             }
         }
     }

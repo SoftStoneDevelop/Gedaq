@@ -1,4 +1,5 @@
-﻿using Gedaq.Helpers;
+﻿using Gedaq.Base.Model;
+using Gedaq.Helpers;
 using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
