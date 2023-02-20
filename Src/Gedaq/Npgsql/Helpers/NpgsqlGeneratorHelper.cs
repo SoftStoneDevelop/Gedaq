@@ -7,55 +7,120 @@ namespace Gedaq.Npgsql.Helpers
 {
     internal static class NpgsqlGeneratorHelper
     {
-        public static void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder)
+        private static void CreateNullableParametr(NpgsqlParametr parametr, StringBuilder builder)
         {
-            var parametr = (NpgsqlParametr)baseParametr;
-            if (parametr.Type.IsNullableType())
+            if(parametr.HaveName && parametr.HaveNpgSqlDbType)
             {
                 builder.Append($@"
-                var parametr{parametr.Position} = new NpgsqlParameter();
+                var parametr{parametr.Position} = new NpgsqlParameter(""{parametr.Name}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType});
 ");
-            }
-            else
-            {
-                builder.Append($@"
-                var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>();
-");
+                SetParametrs(parametr, builder, false, false, parametr.HaveSize, parametr.Nullable, parametr.Direction != System.Data.ParameterDirection.Input);
+                return;
             }
 
-            if (parametr.HaveNpgSqlDbType)
+            builder.Append($@"
+                var parametr{parametr.Position} = new NpgsqlParameter();
+");
+            SetParametrs(
+                parametr,
+                builder,
+                parametr.HaveName,
+                parametr.HaveNpgSqlDbType,
+                parametr.HaveSize,
+                parametr.Nullable,
+                parametr.Direction != System.Data.ParameterDirection.Input
+                );
+        }
+
+        private static void CreateValueParametr(NpgsqlParametr parametr, StringBuilder builder)
+        {
+            if (parametr.HaveName && parametr.HaveNpgSqlDbType)
+            {
+                builder.Append($@"
+                var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>(""{parametr.Name}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType});
+");
+                SetParametrs(
+                    parametr,
+                    builder, 
+                    false,
+                    false,
+                    parametr.HaveSize,
+                    parametr.Nullable,
+                    parametr.Direction != System.Data.ParameterDirection.Input
+                    );
+                return;
+            }
+
+            builder.Append($@"
+                var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>();
+");
+            SetParametrs(
+                parametr,
+                builder,
+                parametr.HaveName,
+                parametr.HaveNpgSqlDbType,
+                parametr.HaveSize,
+                parametr.Nullable,
+                parametr.Direction != System.Data.ParameterDirection.Input
+                );
+        }
+
+        private static void SetParametrs(
+            NpgsqlParametr parametr,
+            StringBuilder builder,
+            bool setNpgSqlDbType,
+            bool setHaveName,
+            bool setHaveSize,
+            bool setNullable,
+            bool setDirection
+            )
+        {
+            if (setNpgSqlDbType)
             {
                 builder.Append($@"
                 parametr{parametr.Position}.NpgsqlDbType = ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType};
 ");
             }
 
-            if (parametr.HaveName)
+            if (setHaveName)
             {
                 builder.Append($@"
                 parametr{parametr.Position}.ParameterName = ""{parametr.Name}"";
 ");
             }
 
-            if (parametr.HaveSize)
+            if (setHaveSize)
             {
                 builder.Append($@"
                 parametr{parametr.Position}.Size = {parametr.Size};
 ");
             }
 
-            if (parametr.Nullable)
+            if (setNullable)
             {
                 builder.Append($@"
                 parametr{parametr.Position}.IsNullable = true;
 ");
             }
 
-            if (parametr.Direction != System.Data.ParameterDirection.Input)
+            if (setDirection)
             {
                 builder.Append($@"
                 parametr{parametr.Position}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
 ");
+            }
+        }
+
+        public static void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder)
+        {
+            var parametr = (NpgsqlParametr)baseParametr;
+            if (parametr.Type.IsNullableType())
+            {
+                CreateNullableParametr(parametr, builder);
+            }
+            else
+            {
+                CreateValueParametr(parametr, builder);
             }
 
             builder.Append($@"
