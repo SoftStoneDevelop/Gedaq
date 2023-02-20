@@ -1,6 +1,7 @@
 ﻿using Gedaq.Base.Model;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Model;
+using System.Reflection;
 using System.Text;
 
 namespace Gedaq.Npgsql.Helpers
@@ -14,7 +15,20 @@ namespace Gedaq.Npgsql.Helpers
                 builder.Append($@"
                 var parametr{parametr.Position} = new NpgsqlParameter(""{parametr.Name}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType});
 ");
-                SetParametrs(parametr, builder, false, false, parametr.HaveSize, parametr.Nullable, parametr.Direction != System.Data.ParameterDirection.Input);
+                SetParametrs(
+                    parametr,
+                    builder,
+                    false,
+                    false,
+                    parametr.HaveSize,
+                    parametr.Nullable,
+                    parametr.HaveDirection,
+                    parametr.HaveSourceColumn,
+                    parametr.HaveSourceColumnNullMapping,
+                    parametr.HaveSourceVersion,
+                    parametr.HaveScale,
+                    parametr.HavePrecision
+                    );
                 return;
             }
 
@@ -28,7 +42,12 @@ namespace Gedaq.Npgsql.Helpers
                 parametr.HaveNpgSqlDbType,
                 parametr.HaveSize,
                 parametr.Nullable,
-                parametr.Direction != System.Data.ParameterDirection.Input
+                parametr.HaveDirection,
+                parametr.HaveSourceColumn,
+                parametr.HaveSourceColumnNullMapping,
+                parametr.HaveSourceVersion,
+                parametr.HaveScale,
+                parametr.HavePrecision
                 );
         }
 
@@ -46,7 +65,12 @@ namespace Gedaq.Npgsql.Helpers
                     false,
                     parametr.HaveSize,
                     parametr.Nullable,
-                    parametr.Direction != System.Data.ParameterDirection.Input
+                    parametr.HaveDirection,
+                    parametr.HaveSourceColumn,
+                    parametr.HaveSourceColumnNullMapping,
+                    parametr.HaveSourceVersion,
+                    parametr.HaveScale,
+                    parametr.HavePrecision
                     );
                 return;
             }
@@ -61,7 +85,12 @@ namespace Gedaq.Npgsql.Helpers
                 parametr.HaveNpgSqlDbType,
                 parametr.HaveSize,
                 parametr.Nullable,
-                parametr.Direction != System.Data.ParameterDirection.Input
+                parametr.HaveDirection,
+                parametr.HaveSourceColumn,
+                parametr.HaveSourceColumnNullMapping,
+                parametr.HaveSourceVersion,
+                parametr.HaveScale,
+                parametr.HavePrecision
                 );
         }
 
@@ -72,7 +101,12 @@ namespace Gedaq.Npgsql.Helpers
             bool setHaveName,
             bool setHaveSize,
             bool setNullable,
-            bool setDirection
+            bool setDirection,
+            bool haveSourceColumn,
+            bool haveSourceColumnNullMapping,
+            bool haveSourceVersion,
+            bool haveScale,
+            bool havePrecision
             )
         {
             if (setNpgSqlDbType)
@@ -107,6 +141,41 @@ namespace Gedaq.Npgsql.Helpers
             {
                 builder.Append($@"
                 parametr{parametr.Position}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
+");
+            }
+
+            if (haveSourceColumn)
+            {
+                builder.Append($@"
+                parametr{parametr.Position}.SourceColumn = ""{parametr.SourceColumn}"";
+");
+            }
+
+            if (haveSourceColumnNullMapping)
+            {
+                builder.Append($@"
+                parametr{parametr.Position}.SourceColumnNullMapping = true;
+");
+            }
+
+            if (haveSourceVersion)
+            {
+                builder.Append($@"
+                parametr{parametr.Position}.SourceVersion = System.Data.DataRowVersion.{parametr.SourceVersion.ToString()};
+");
+            }
+
+            if (haveScale)
+            {
+                builder.Append($@"
+                parametr{parametr.Position}.Scale = {parametr.Scale};
+");
+            }
+
+            if (havePrecision)
+            {
+                builder.Append($@"
+                parametr{parametr.Position}.Precision = {parametr.Precision};
 ");
             }
         }

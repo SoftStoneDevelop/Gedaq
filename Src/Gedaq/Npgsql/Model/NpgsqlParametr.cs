@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.DbConnection.Model;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
@@ -11,7 +12,9 @@ namespace Gedaq.Npgsql.Model
     {
         public int Position;
         public bool HavePosition => Position != -1;
+
         public int NpgSqlDbType;
+        public bool HaveNpgSqlDbType => NpgSqlDbType != 40;
 
         public override string VariableName(string postfix = default)
         {
@@ -20,8 +23,6 @@ namespace Gedaq.Npgsql.Model
                     $"mParametr{Position}{postfix}"
                 ;
         }
-
-        public bool HaveNpgSqlDbType => NpgSqlDbType != 40;
 
         internal static bool CreateNew(
             ImmutableArray<TypedConstant> namedArguments,
@@ -33,85 +34,78 @@ namespace Gedaq.Npgsql.Model
             parametr = null;
             methodName = null;
 
-            if (namedArguments.Length != 8)
+            if (namedArguments.Length != 13)
             {
                 return false;
             }
 
-            if (!(namedArguments[0].Type is INamedTypeSymbol strParam) ||
-                strParam.Name != nameof(String)
-                )
+            if (!SetMethodName(namedArguments[0], ref methodName))
             {
                 return false;
             }
-
-            methodName = (string)namedArguments[0].Value;
 
             var result = new NpgsqlParametr();
-            if (!(namedArguments[1].Value is ITypeSymbol typeParam))
+            if (!SetType(namedArguments[1], result))
             {
                 return false;
             }
 
-            result.Type = typeParam;
-
-            if (!(namedArguments[2].Type is INamedTypeSymbol paramName) ||
-                paramName.Name != nameof(String)
-                )
+            if (!SetName(namedArguments[2], result))
             {
                 return false;
             }
 
-            result.Name = (string)namedArguments[2].Value;
+            if(!SetNpgSqlDbType(namedArguments[3], result))
+            {
 
-            if (namedArguments[3].Kind != TypedConstantKind.Enum ||
-                !(namedArguments[3].Type is INamedTypeSymbol dbType) ||
-                !dbType.IsAssignableFrom("NpgsqlTypes", "NpgsqlDbType")
-                )
+            }
+
+            if (!SetSize(namedArguments[4], result))
             {
                 return false;
             }
 
-            result.NpgSqlDbType = (int)namedArguments[3].Value;
-
-            if (!(namedArguments[4].Type is INamedTypeSymbol sizeParam) ||
-                sizeParam.Name != nameof(Int32)
-                )
+            if (!SetNullable(namedArguments[5], result))
             {
                 return false;
             }
 
-            result.Size = (int)namedArguments[4].Value;
-
-            if (!(namedArguments[5].Type is INamedTypeSymbol nullableParam) ||
-                nullableParam.Name != nameof(Boolean)
-                )
+            if (!SetDirection(namedArguments[6], result))
             {
                 return false;
             }
 
-            result.Nullable = (bool)namedArguments[5].Value;
-
-            if (namedArguments[6].Kind != TypedConstantKind.Enum ||
-                !(namedArguments[6].Type is INamedTypeSymbol directionParam) ||
-                !directionParam.IsAssignableFrom("System.Data", "ParameterDirection")
-                )
+            if (!SetPosition(namedArguments[7], result))
             {
                 return false;
             }
 
-            result.Direction = (ParameterDirection)namedArguments[6].Value;
-
-            if (!(namedArguments[7].Type is INamedTypeSymbol positionParam) ||
-                positionParam.Name != nameof(Int32)
-                )
+            if (!SetSourceColumn(namedArguments[8], result))
             {
                 return false;
             }
 
-            result.Position = (int)namedArguments[7].Value;
+            if (!SetSourceColumnNullMapping(namedArguments[9], result))
+            {
+                return false;
+            }
 
-            if(result.HaveName && result.HavePosition)
+            if (!SetSourceVersion(namedArguments[10], result))
+            {
+                return false;
+            }
+
+            if (!SetScale(namedArguments[11], result))
+            {
+                return false;
+            }
+
+            if (!SetPrecision(namedArguments[12], result))
+            {
+                return false;
+            }
+
+            if (result.HaveName && result.HavePosition)
             {
                 throw new Exception("Parameter can have position or name, but not both");
             }
@@ -122,6 +116,33 @@ namespace Gedaq.Npgsql.Model
             }
 
             parametr = result;
+            return true;
+        }
+
+        private static bool SetNpgSqlDbType(TypedConstant argument, NpgsqlParametr parametr)
+        {
+            if (argument.Kind != TypedConstantKind.Enum ||
+                !(argument.Type is INamedTypeSymbol dbType) ||
+                !dbType.IsAssignableFrom("NpgsqlTypes", "NpgsqlDbType")
+                )
+            {
+                return false;
+            }
+
+            parametr.NpgSqlDbType = (int)argument.Value;
+            return true;
+        }
+
+        protected static bool SetPosition(TypedConstant argument, NpgsqlParametr parametr)
+        {
+            if (!(argument.Type is INamedTypeSymbol sizeParam) ||
+                sizeParam.Name != nameof(Int32)
+                )
+            {
+                return false;
+            }
+
+            parametr.Position = (int)argument.Value;
             return true;
         }
     }

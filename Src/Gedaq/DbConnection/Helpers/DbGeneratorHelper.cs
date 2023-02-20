@@ -46,7 +46,7 @@ namespace Gedaq.DbConnection.Helpers
 ");
             }
 
-            if (parametr.Nullable)
+            if (parametr.HaveNullable)
             {
                 builder.Append($@"
                 parametr
@@ -55,10 +55,45 @@ namespace Gedaq.DbConnection.Helpers
                 ");
             }
 
-            if (parametr.Direction != System.Data.ParameterDirection.Input)
+            if (parametr.HaveDirection)
             {
                 builder.Append($@"
                 parametr{index}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
+");
+            }
+
+            if (parametr.HaveSourceColumn)
+            {
+                builder.Append($@"
+                parametr{index}.SourceColumn = ""{parametr.SourceColumn}"";
+");
+            }
+
+            if (parametr.HaveSourceColumnNullMapping)
+            {
+                builder.Append($@"
+                parametr{index}.SourceColumnNullMapping = true;
+");
+            }
+
+            if (parametr.HaveSourceVersion)
+            {
+                builder.Append($@"
+                parametr{index}.SourceVersion = System.Data.DataRowVersion.{parametr.SourceVersion.ToString()};
+");
+            }
+
+            if (parametr.HaveScale)
+            {
+                builder.Append($@"
+                parametr{index}.Scale = {parametr.Scale};
+");
+            }
+
+            if (parametr.HavePrecision)
+            {
+                builder.Append($@"
+                parametr{index}.Precision = {parametr.Precision};
 ");
             }
 

@@ -157,7 +157,7 @@ namespace Gedaq.Base
                 }
             }
 
-            if (source.QueryType.HasFlag(QueryType.NonQuery) && source.BaseParametrs().Any(a => a.Direction != System.Data.ParameterDirection.Input))
+            if (source.QueryType.HasFlag(QueryType.NonQuery) && source.BaseParametrs().Any(a => a.HaveDirection))
             {
                 //TODO
             }

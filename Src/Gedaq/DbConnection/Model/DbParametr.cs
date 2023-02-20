@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Data;
+using System.Reflection;
 using System.Text;
 
 namespace Gedaq.DbConnection.Model
@@ -30,74 +31,71 @@ namespace Gedaq.DbConnection.Model
             parametr = null;
             methodName = null;
 
-            if (namedArguments.Length != 7)
+            if (namedArguments.Length != 12)
             {
                 return false;
             }
 
-            if (!(namedArguments[0].Type is INamedTypeSymbol strParam) ||
-                strParam.Name != nameof(String)
-                )
+            if(!SetMethodName(namedArguments[0], ref methodName))
             {
                 return false;
             }
-
-            methodName = (string)namedArguments[0].Value;
 
             var result = new DbParametr();
-            if (!(namedArguments[1].Type is INamedTypeSymbol paramName) ||
-                paramName.Name != nameof(String)
-                )
+            if (!SetName(namedArguments[1], result))
             {
                 return false;
             }
 
-            result.Name = (string)namedArguments[1].Value;
-
-            if (!(namedArguments[2].Value is ITypeSymbol typeParam))
+            if (!SetType(namedArguments[2], result))
             {
                 return false;
             }
 
-            result.Type = typeParam;
-
-            if (namedArguments[3].Kind != TypedConstantKind.Enum ||
-                !(namedArguments[3].Type is INamedTypeSymbol dbType) ||
-                !dbType.IsAssignableFrom("System.Data", "DbType")
-                )
+            if (!SetDbType(namedArguments[3], result))
             {
                 return false;
             }
 
-            result.DbType = (int)namedArguments[3].Value;
-
-            if (!(namedArguments[4].Type is INamedTypeSymbol sizeParam) ||
-                sizeParam.Name != nameof(Int32)
-                )
+            if(!SetSize(namedArguments[4], result))
             {
                 return false;
             }
 
-            result.Size = (int)namedArguments[4].Value;
-
-            if (!(namedArguments[5].Type is INamedTypeSymbol nullableParam) ||
-                nullableParam.Name != nameof(Boolean)
-                )
+            if (!SetNullable(namedArguments[5], result))
             {
                 return false;
             }
 
-            result.Nullable = (bool)namedArguments[5].Value;
-
-            if (namedArguments[6].Kind != TypedConstantKind.Enum ||
-                !(namedArguments[6].Type is INamedTypeSymbol directionParam) ||
-                !directionParam.IsAssignableFrom("System.Data", "ParameterDirection")
-                )
+            if (!SetDirection(namedArguments[6], result))
             {
                 return false;
             }
 
-            result.Direction = (ParameterDirection)namedArguments[6].Value;
+            if (!SetSourceColumn(namedArguments[7], result))
+            {
+                return false;
+            }
+
+            if (!SetSourceColumnNullMapping(namedArguments[8], result))
+            {
+                return false;
+            }
+
+            if (!SetSourceVersion(namedArguments[9], result))
+            {
+                return false;
+            }
+
+            if (!SetScale(namedArguments[10], result))
+            {
+                return false;
+            }
+
+            if (!SetPrecision(namedArguments[11], result))
+            {
+                return false;
+            }
 
             if (!result.HaveName)
             {
@@ -105,6 +103,20 @@ namespace Gedaq.DbConnection.Model
             }
 
             parametr = result;
+            return true;
+        }
+
+        private static bool SetDbType(TypedConstant argument, DbParametr parametr)
+        {
+            if (argument.Kind != TypedConstantKind.Enum ||
+                !(argument.Type is INamedTypeSymbol dbType) ||
+                !dbType.IsAssignableFrom("System.Data", "DbType")
+                )
+            {
+                return false;
+            }
+
+            parametr.DbType = (int)argument.Value;
             return true;
         }
     }
