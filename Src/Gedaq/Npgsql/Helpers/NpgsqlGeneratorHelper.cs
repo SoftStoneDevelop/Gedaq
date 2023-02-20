@@ -38,8 +38,8 @@ namespace Gedaq.Npgsql.Helpers
             SetParametrs(
                 parametr,
                 builder,
-                parametr.HaveName,
                 parametr.HaveNpgSqlDbType,
+                parametr.HaveName,
                 parametr.HaveSize,
                 parametr.Nullable,
                 parametr.HaveDirection,
@@ -81,8 +81,8 @@ namespace Gedaq.Npgsql.Helpers
             SetParametrs(
                 parametr,
                 builder,
-                parametr.HaveName,
                 parametr.HaveNpgSqlDbType,
+                parametr.HaveName,
                 parametr.HaveSize,
                 parametr.Nullable,
                 parametr.HaveDirection,
@@ -102,11 +102,11 @@ namespace Gedaq.Npgsql.Helpers
             bool setHaveSize,
             bool setNullable,
             bool setDirection,
-            bool haveSourceColumn,
-            bool haveSourceColumnNullMapping,
-            bool haveSourceVersion,
-            bool haveScale,
-            bool havePrecision
+            bool setSourceColumn,
+            bool setSourceColumnNullMapping,
+            bool setSourceVersion,
+            bool setScale,
+            bool setPrecision
             )
         {
             if (setNpgSqlDbType)
@@ -144,35 +144,35 @@ namespace Gedaq.Npgsql.Helpers
 ");
             }
 
-            if (haveSourceColumn)
+            if (setSourceColumn)
             {
                 builder.Append($@"
                 parametr{parametr.Position}.SourceColumn = ""{parametr.SourceColumn}"";
 ");
             }
 
-            if (haveSourceColumnNullMapping)
+            if (setSourceColumnNullMapping)
             {
                 builder.Append($@"
                 parametr{parametr.Position}.SourceColumnNullMapping = true;
 ");
             }
 
-            if (haveSourceVersion)
+            if (setSourceVersion)
             {
                 builder.Append($@"
                 parametr{parametr.Position}.SourceVersion = System.Data.DataRowVersion.{parametr.SourceVersion.ToString()};
 ");
             }
 
-            if (haveScale)
+            if (setScale)
             {
                 builder.Append($@"
                 parametr{parametr.Position}.Scale = {parametr.Scale};
 ");
             }
 
-            if (havePrecision)
+            if (setPrecision)
             {
                 builder.Append($@"
                 parametr{parametr.Position}.Precision = {parametr.Precision};
