@@ -32,52 +32,7 @@ namespace Gedaq.Base
             }
         }
 
-        protected virtual void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder)
-        {
-            var parametr = (DbParametr)baseParametr;
-            builder.Append($@"
-            var parametr{index} = command.CreateParameter();
-");
-
-            if (parametr.HaveDbType)
-            {
-                builder.Append($@"
-            parametr{index}.DbType = (System.Data.DbType){parametr.DbType};
-");
-            }
-
-            if (parametr.HaveName)
-            {
-                builder.Append($@"
-            parametr{index}.ParameterName = ""{parametr.Name}"";
-");
-            }
-
-            if (parametr.HaveSize)
-            {
-                builder.Append($@"
-            parametr{index}.Size = {parametr.Size};
-");
-            }
-
-            if (parametr.Nullable)
-            {
-                builder.Append($@"
-            parametr{index}.IsNullable = true;
-");
-            }
-
-            if (parametr.Direction != System.Data.ParameterDirection.Input)
-            {
-                builder.Append($@"
-            parametr{index}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
-");
-            }
-
-            builder.Append($@"
-            command.Parameters.Add(parametr{index});
-");
-        }
+        protected abstract void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder);
 
         protected void CreateCommandMethod(
             QueryBase source,
