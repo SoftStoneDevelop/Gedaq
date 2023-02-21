@@ -1,26 +1,18 @@
 ﻿using Gedaq.Base;
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
-using Gedaq.Helpers;
-using Gedaq.Npgsql.Enums;
-using Gedaq.Npgsql.Helpers;
-using Gedaq.Npgsql.Model;
-using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
+using Gedaq.SqlClient.GeneratorsQuery;
+using Gedaq.SqlClient.Model;
 
-namespace Gedaq.Npgsql.GeneratorsQuery
+namespace Gedaq.SqlClient.GeneratorsQuery
 {
-    internal class NpgsqlQueryGenerator : QueryBaseGenerator
+    internal class SqlClientQueryGenerator : QueryBaseGenerator
     {
-        NpgsqlQueryRead _queryReadGenerator = new NpgsqlQueryRead();
-        NpgsqlQueryScalarAndNonQuery _queryScalarAndNonQuery = new NpgsqlQueryScalarAndNonQuery();
-        NpgsqlCommand _commandGenerator = new NpgsqlCommand();
+        SqlClientQueryRead _queryReadGenerator = new SqlClientQueryRead();
+        SqlClientQueryScalarAndNonQuery _queryScalarAndNonQuery = new SqlClientQueryScalarAndNonQuery();
+        SqlClientCommandGenerator _commandGenerator = new SqlClientCommandGenerator();
 
-        public void GenerateMethod(NpgsqlQuery source)
+        public void Generate(SqlClientQuery source)
         {
             Reset();
             Start(source);
@@ -41,18 +33,18 @@ namespace Gedaq.Npgsql.GeneratorsQuery
             }
 
             _commandGenerator.Generate(source, _methodCode);
-
             End();
         }
 
         private void Start(
-            NpgsqlQuery source
+            SqlClientQuery source
             )
         {
             _methodCode.Append($@"
-using Npgsql;
 using System;
 using System.Data;
+using System.Data.Common;
+using Microsoft.Data.SqlClient;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -61,7 +53,7 @@ using System.Runtime.CompilerServices;
 
 namespace {source.ContainTypeName.ContainingNamespace}
 {{
-    public static class {source.MethodName}NpgsqlExtension
+    public static class {source.MethodName}SqlClientExtension
     {{
 ");
         }

@@ -184,7 +184,6 @@ ORDER BY p.id ASC
         public async Task ReadToObjAsync()
         {
             var list = await _dataSource.OpenConnection().ToObjAsync(3).ToListAsync();
-
             Assert.That(list, Has.Count.EqualTo(9));
 
             Assert.Multiple(() =>

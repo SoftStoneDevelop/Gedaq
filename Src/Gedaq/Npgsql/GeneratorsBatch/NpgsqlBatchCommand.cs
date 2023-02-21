@@ -15,7 +15,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 
         protected override void CreateBatchMethods(QueryBatch source, StringBuilder builder)
         {
-            var npgsqlBatch = (QueryBatchNpgsql)source;
+            var npgsqlBatch = (NpgsqlQueryBatch)source;
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
                 if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))

@@ -103,7 +103,7 @@ namespace Gedaq.Base.Batch
                 return "System.Int32";
             }
 
-            if (IsKnownProviderType(first.MapTypeName))
+            if (IsKnownProviderType(first.MapTypeName) || IsSpecialHandlerType(first.MapTypeName))
             {
                 return first.MapTypeName.GetFullTypeName();
             }

@@ -11,7 +11,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
         NpgsqlQueryBatchScalarNoQuery _batchScalarNoQuery = new NpgsqlQueryBatchScalarNoQuery();
         NpgsqlBatchCommand _batchCommand = new NpgsqlBatchCommand();
 
-        public void GenerateMethod(QueryBatchNpgsql source)
+        public void GenerateMethod(NpgsqlQueryBatch source)
         {
             Reset();
             Start(source);
@@ -37,7 +37,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
         }
 
         private void Start(
-            QueryBatchNpgsql source
+            NpgsqlQueryBatch source
             )
         {
             _methodCode.Append($@"

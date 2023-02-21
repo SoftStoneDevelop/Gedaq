@@ -68,7 +68,7 @@ namespace Gedaq.Base.Query
                 return "System.Int32";
             }
 
-            if (IsKnownProviderType(source.MapTypeName))
+            if (IsKnownProviderType(source.MapTypeName) || IsSpecialHandlerType(source.MapTypeName))
             {
                 return source.MapTypeName.GetFullTypeName();
             }

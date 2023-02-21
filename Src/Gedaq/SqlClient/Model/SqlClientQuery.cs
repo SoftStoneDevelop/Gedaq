@@ -1,21 +1,18 @@
 ﻿using Gedaq.Base.Model;
 using Gedaq.Enums;
-using Gedaq.Helpers;
-using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 
-namespace Gedaq.Npgsql.Model
+namespace Gedaq.SqlClient.Model
 {
-    internal class QueryReadNpgsql : QueryBase
+    internal class SqlClientQuery : QueryBase
     {
-        public NpgsqlSourceType SourceType { get; private set; }
-        public NpgsqlParametr[] Parametrs;
+        public SqlClientParametr[] Parametrs;
 
-        public QueryReadNpgsql()
+        public SqlClientQuery()
         {
         }
 
@@ -24,15 +21,15 @@ namespace Gedaq.Npgsql.Model
             return Parametrs != null;
         }
 
-        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out QueryReadNpgsql method)
+        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out SqlClientQuery method)
         {
             method = null;
-            if (namedArguments.Length != 7)
+            if (namedArguments.Length != 6)
             {
                 return false;
             }
 
-            var methodSource = new QueryReadNpgsql();
+            var methodSource = new SqlClientQuery();
             if (!methodSource.FillQuery(namedArguments[0]))
             {
                 return false;
@@ -53,17 +50,12 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!methodSource.FillSourceType(namedArguments[4]))
+            if (!methodSource.FillQueryType(namedArguments[4]))
             {
                 return false;
             }
 
-            if (!methodSource.FillQueryType(namedArguments[5]))
-            {
-                return false;
-            }
-
-            if (!methodSource.FillGenerate(namedArguments[6]))
+            if (!methodSource.FillGenerate(namedArguments[5]))
             {
                 return false;
             }
@@ -75,20 +67,6 @@ namespace Gedaq.Npgsql.Model
 
             methodSource.ContainTypeName = containsType;
             method = methodSource;
-            return true;
-        }
-
-        private bool FillSourceType(TypedConstant argument)
-        {
-            if (argument.Kind != TypedConstantKind.Enum ||
-                !(argument.Type is INamedTypeSymbol namedTypeSymbol4) ||
-                !namedTypeSymbol4.IsAssignableFrom("Gedaq.Npgsql.Enums", "SourceType")
-                )
-            {
-                return false;
-            }
-
-            SourceType = (NpgsqlSourceType)argument.Value;
             return true;
         }
 

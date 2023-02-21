@@ -19,6 +19,11 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             return "NpgsqlCommand";
         }
 
+        public override string ReaderType()
+        {
+            return "NpgsqlDataReader";
+        }
+
         public override string GetParametrValue(BaseParametr parametr, int index, string source)
         {
             if (parametr.Type.IsNullableType())
@@ -36,9 +41,14 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             return NpgsqlMapTypeHelper.IsKnownProviderType(type);
         }
 
-        public override string ReaderType()
+        public override bool IsSpecialHandlerType(ITypeSymbol type)
         {
-            return "NpgsqlDataReader";
+            return false;
+        }
+
+        public override string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader")
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

@@ -1,22 +1,19 @@
-﻿using Gedaq.Base.Model;
-using Gedaq.Helpers;
-using Gedaq.Npgsql.Model;
+﻿using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Xml;
 
-namespace Gedaq.Npgsql.Helpers
+namespace Gedaq.SqlClient.Helpers
 {
-    internal static class NpgsqlMapTypeHelper
+    internal static class SqlClientMapTypeHelper
     {
-        public static readonly string NpgsqlDbTypeName = "NpgsqlTypes.NpgsqlDbType";
-
         internal static bool IsKnownProviderType(
             this ITypeSymbol typeSymbol
             )
         {
-            if(typeSymbol.IsKnownArrayType())
+            if (typeSymbol.IsKnownArrayType())
             {
                 return true;
             }
@@ -95,37 +92,12 @@ namespace Gedaq.Npgsql.Helpers
                     return true;
                 }
 
-                case "System.TimeSpan":
-                {
-                    return true;
-                }
-
                 case "System.DateTime":
                 {
                     return true;
                 }
 
-                case "System.DateOnly":
-                {
-                    return true;
-                }
-
-                case "System.TimeOnly":
-                {
-                    return true;
-                }
-
-                case "System.String":
-                {
-                    return true;
-                }
-
-                case "System.Net.IPAddress":
-                {
-                    return true;
-                }
-
-                case "System.Net.NetworkInformation.PhysicalAddress":
+                case "System.TimeSpan":
                 {
                     return true;
                 }
@@ -135,57 +107,12 @@ namespace Gedaq.Npgsql.Helpers
                     return true;
                 }
 
-                case "System.Numerics.BigInteger":
+                case "System.DateTimeOffset":
                 {
                     return true;
                 }
 
-                case "System.Collections.BitArray":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlTsQuery":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlTsVector":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlPoint":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlLSeg":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlPath":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlPolygon":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlLine":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlCircle":
-                {
-                    return true;
-                }
-
-                case "NpgsqlTypes.NpgsqlBox":
+                case "System.String":
                 {
                     return true;
                 }
@@ -196,12 +123,28 @@ namespace Gedaq.Npgsql.Helpers
 
         private static bool IsKnownArrayType(this ITypeSymbol type)
         {
-            if(type.IsArrayType(out var elementType))
+            if (type.IsArrayType(out var elementType))
             {
                 return elementType.IsKnownProviderBaseType();
             }
 
             return false;
+        }
+
+        public static bool IsSpecialHandlerType(this ITypeSymbol type)
+        {
+            switch (type.GetFullTypeName())
+            {
+                case "System.Data.SqlTypes.SqlXml":
+                {
+                    return true;
+                }
+
+                default:
+                {
+                    return false;
+                }
+            }
         }
     }
 }

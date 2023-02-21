@@ -1,28 +1,29 @@
 ﻿using Gedaq.Base.Model;
 using Gedaq.Base.Query;
-using Gedaq.DbConnection.Helpers;
+using Gedaq.Helpers;
+using Gedaq.SqlClient.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Gedaq.DbConnection.GeneratorsQuery
+namespace Gedaq.SqlClient.GeneratorsQuery
 {
-    internal class DbQueryCommon : QueryCommonBase
+    internal class SqlClientQueryCommon : QueryCommonBase
     {
         public override string BatchType()
         {
-            return "DbBatch";
+            return "SqlBatch";
         }
 
         public override string CommandType()
         {
-            return "DbCommand";
+            return "SqlCommand";
         }
 
         public override string ReaderType()
         {
-            return "DbDataReader";
+            return "SqlDataReader";
         }
 
         public override string GetParametrValue(BaseParametr parametr, int index, string source)
@@ -32,17 +33,28 @@ namespace Gedaq.DbConnection.GeneratorsQuery
 
         public override bool IsKnownProviderType(ITypeSymbol type)
         {
-            return DbMapTypeHelper.IsKnownProviderType(type);
+            return SqlClientMapTypeHelper.IsKnownProviderType(type);
         }
 
         public override bool IsSpecialHandlerType(ITypeSymbol type)
         {
-            return false;
+            return SqlClientMapTypeHelper.IsSpecialHandlerType(type);
         }
 
         public override string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader")
         {
-            throw new NotImplementedException();
+            switch (type.GetFullTypeName())
+            {
+                case "System.Data.SqlTypes.SqlXml":
+                {
+                    return $"{source}.GetSqlXml({fieldId})";
+                }
+
+                default:
+                {
+                    throw new NotImplementedException();
+                }
+            }
         }
     }
 }

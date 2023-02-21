@@ -1,10 +1,11 @@
-﻿using Gedaq.Npgsql.Helpers;
+﻿using Gedaq.Helpers;
+using Gedaq.Npgsql.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Gedaq.Helpers
+namespace Gedaq.DbConnection.Helpers
 {
     internal static class DbMapTypeHelper
     {
@@ -107,6 +108,11 @@ namespace Gedaq.Helpers
                 }
 
                 case "System.TimeOnly":
+                {
+                    return true;
+                }
+
+                case "System.String":
                 {
                     return true;
                 }

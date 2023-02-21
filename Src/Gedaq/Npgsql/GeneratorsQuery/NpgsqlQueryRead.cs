@@ -14,7 +14,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
 
         protected override void ReadMethod(QueryBase source, StringBuilder builder)
         {
-            QueryReadNpgsql npgsqlQuery = (QueryReadNpgsql)source;
+            NpgsqlQuery npgsqlQuery = (NpgsqlQuery)source;
             if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartReadMethod(source, MethodType.Sync, builder);
@@ -46,7 +46,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
 
         protected override void ReadAsyncMethod(QueryBase source, StringBuilder builder)
         {
-            QueryReadNpgsql npgsqlQuery = (QueryReadNpgsql)source;
+            NpgsqlQuery npgsqlQuery = (NpgsqlQuery)source;
             if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartReadMethod(source, MethodType.Async, builder);

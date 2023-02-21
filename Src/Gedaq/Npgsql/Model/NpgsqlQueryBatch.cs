@@ -10,12 +10,12 @@ using System.Linq;
 
 namespace Gedaq.Npgsql.Model
 {
-    internal class QueryBatchNpgsql : QueryBatch
+    internal class NpgsqlQueryBatch : QueryBatch
     {
         public NpgsqlSourceType SourceType;
-        public List<(int number, QueryReadNpgsql query)> Queries = new List<(int number, QueryReadNpgsql query)>();
+        public List<(int number, NpgsqlQuery query)> Queries = new List<(int number, NpgsqlQuery query)>();
 
-        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out QueryBatchNpgsql queryBatch)
+        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out NpgsqlQueryBatch queryBatch)
         {
             queryBatch = null;
             if (namedArguments.Length != 3)
@@ -23,7 +23,7 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            var result = new QueryBatchNpgsql();
+            var result = new NpgsqlQueryBatch();
             if (!(namedArguments[0].Type is INamedTypeSymbol methodName) ||
                 methodName.Name != nameof(String)
                 )

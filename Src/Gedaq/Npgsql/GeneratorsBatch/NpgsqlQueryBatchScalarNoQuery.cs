@@ -14,7 +14,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 
         protected override void ScalarMethod(QueryBatch source, StringBuilder builder)
         {
-            var npgsqlBatch = (QueryBatchNpgsql)source;
+            var npgsqlBatch = (NpgsqlQueryBatch)source;
             if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartScalarMethod(source, MethodType.Sync, builder);
@@ -36,7 +36,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 
         protected override void ScalarMethodAsync(QueryBatch source, StringBuilder builder)
         {
-            var npgsqlBatch = (QueryBatchNpgsql)source;
+            var npgsqlBatch = (NpgsqlQueryBatch)source;
             if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartScalarMethod(source, MethodType.Async, builder);
@@ -58,7 +58,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 
         protected override void NonQueryMethod(QueryBatch source, StringBuilder builder)
         {
-            var npgsqlBatch = (QueryBatchNpgsql)source;
+            var npgsqlBatch = (NpgsqlQueryBatch)source;
             if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartNonQueryMethod(source, MethodType.Sync, builder);
@@ -80,7 +80,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 
         protected override void NonQueryMethodAsync(QueryBatch source, StringBuilder builder)
         {
-            var npgsqlBatch = (QueryBatchNpgsql)source;
+            var npgsqlBatch = (NpgsqlQueryBatch)source;
             if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartNonQueryMethod(source, MethodType.Async, builder);

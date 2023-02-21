@@ -21,6 +21,10 @@ namespace Gedaq.Base
 
         public abstract bool IsKnownProviderType(ITypeSymbol type);
 
+        public abstract bool IsSpecialHandlerType(ITypeSymbol type);
+
+        public abstract string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader");
+
         public void WriteOutParametrs(BaseParametr parametr, StringBuilder builder, string batchPostfix = "")
         {
             if (parametr.Direction == System.Data.ParameterDirection.InputOutput || parametr.Direction == System.Data.ParameterDirection.Output)
@@ -83,6 +87,12 @@ namespace Gedaq.Base
             {
                 builder.Append($@"
                     yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);
+");
+            }
+            else if(IsSpecialHandlerType(source.MapTypeName))
+            {
+                builder.Append($@"
+                    yield return {castTypeExpr}{GetSpecialTypeValue(source.MapTypeName, 0)};
 ");
             }
             else if (source.MapTypeName.IsNullableType())
@@ -159,14 +169,23 @@ namespace Gedaq.Base
                         if (propertyType.IsNullableType())
                         {
                             builder.Append($@"
-                            {Tabs(pair.Tabs)}{propertyName} = reader.IsDBNull(field.Position) ? ({propertyType.GetFullTypeName(true)})null : reader.GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>(field.Position),
+                            {Tabs(pair.Tabs)}{propertyName} = reader.IsDBNull({field.Position}) ? ({propertyType.GetFullTypeName(true)})null : reader.GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({field.Position}),
 ");
                         }
                         else
                         {
-                            builder.Append($@"
+                            if(IsSpecialHandlerType(propertyType))
+                            {
+                                builder.Append($@"
+                            {Tabs(pair.Tabs)}{propertyName} = {GetSpecialTypeValue(propertyType, field.Position)},
+");
+                            }
+                            else
+                            {
+                                builder.Append($@"
                             {Tabs(pair.Tabs)}{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({field.Position}),
 ");
+                            }
                         }
                     }
                     builder.Append($@" 

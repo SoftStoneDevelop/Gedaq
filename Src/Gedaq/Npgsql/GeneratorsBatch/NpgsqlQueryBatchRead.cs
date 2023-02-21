@@ -14,7 +14,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 
         protected override void ReadMethod(QueryBatch source, StringBuilder builder)
         {
-            var npgsqlBatch = (QueryBatchNpgsql)source;
+            var npgsqlBatch = (NpgsqlQueryBatch)source;
             if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartReadMethod(source, MethodType.Sync, builder);
@@ -36,7 +36,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 
         protected override void ReadAsyncMethod(QueryBatch source, StringBuilder builder)
         {
-            var npgsqlBatch = (QueryBatchNpgsql)source;
+            var npgsqlBatch = (NpgsqlQueryBatch)source;
             if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartReadMethod(source, MethodType.Async, builder);

@@ -15,7 +15,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
 
         protected override void GenrateCommand(QueryBase baseSource, StringBuilder builder)
         {
-            QueryReadNpgsql source = (QueryReadNpgsql)baseSource;
+            NpgsqlQuery source = (NpgsqlQuery)baseSource;
             if (baseSource.MethodType.HasFlag(MethodType.Sync))
             {
                 if (source.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))

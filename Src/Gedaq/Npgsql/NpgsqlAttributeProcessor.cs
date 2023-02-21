@@ -14,12 +14,12 @@ namespace Gedaq.Npgsql
 {
     internal class NpgsqlAttributeProcessor
     {
-        private List<QueryReadNpgsql> _read = new List<QueryReadNpgsql>();
-        private List<QueryBatchNpgsql> _readBatch = new List<QueryBatchNpgsql>();
+        private List<NpgsqlQuery> _read = new List<NpgsqlQuery>();
+        private List<NpgsqlQueryBatch> _readBatch = new List<NpgsqlQueryBatch>();
 
-        Dictionary<string, QueryReadNpgsql> _readTemp = new Dictionary<string,QueryReadNpgsql>();
+        Dictionary<string, NpgsqlQuery> _readTemp = new Dictionary<string,NpgsqlQuery>();
         Dictionary<string, List<NpgsqlParametr>> _parametrsTemp = new Dictionary<string, List<NpgsqlParametr>>();
-        private List<QueryBatchNpgsql> _batchTemp = new List<QueryBatchNpgsql>();
+        private List<NpgsqlQueryBatch> _batchTemp = new List<NpgsqlQueryBatch>();
         private Dictionary<string, List<BatchPart>> _batchParts = new Dictionary<string, List<BatchPart>>();
 
         private QueryParser _queryParser = new QueryParser();
@@ -76,7 +76,7 @@ namespace Gedaq.Npgsql
                 _batchParts.Remove(batch.MethodName);
 
                 var set = new HashSet<int>();
-                QueryReadNpgsql firstRead = null;
+                NpgsqlQuery firstRead = null;
                 foreach (var part in batchParts.OrderBy(or => or.BatchNumber))
                 {
                     if (!set.Add(part.BatchNumber))
@@ -169,7 +169,7 @@ namespace Gedaq.Npgsql
 
         private void ProcessBatch(AttributeData parametrAttribute, INamedTypeSymbol containsType)
         {
-            if (!QueryBatchNpgsql.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var queryBatch))
+            if (!NpgsqlQueryBatch.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var queryBatch))
             {
                 throw new Exception($"Unknown {nameof(NpgsqlParametr)} constructor");
             }
@@ -195,9 +195,9 @@ namespace Gedaq.Npgsql
 
         private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
         {
-            if (!QueryReadNpgsql.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
+            if (!NpgsqlQuery.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
-                throw new Exception($"Unknown {nameof(QueryReadNpgsql)} constructor");
+                throw new Exception($"Unknown {nameof(NpgsqlQuery)} constructor");
             }
 
             if(_readTemp.ContainsKey(queryReadMethod.MethodName))
