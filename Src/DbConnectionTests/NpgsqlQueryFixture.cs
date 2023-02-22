@@ -22,9 +22,9 @@ namespace DbConnectionTests
             var dataSourceBuilder = new NpgsqlDataSourceBuilder(GetNpgsqlSqlConnectionString());
             _dataSource = dataSourceBuilder.Build();
             using var conn = _dataSource.OpenConnection();
-            NpgsqlDatabaseHelper.DropTable(conn, "dbconnectionreadfixtureperson");
-            NpgsqlDatabaseHelper.DropTable(conn, "dbconnectionreadfixtureidentification");
-            NpgsqlDatabaseHelper.DropTable(conn, "dbconnectionreadfixturecountry");
+            NpgsqlDatabaseHelper.DropTable(conn, "dbconnectionperson");
+            NpgsqlDatabaseHelper.DropTable(conn, "dbconnectionidentification");
+            NpgsqlDatabaseHelper.DropTable(conn, "dbconnectioncountry");
 
             using var cmd = conn.CreateCommand();
             DropFunction(cmd);
@@ -44,11 +44,11 @@ namespace DbConnectionTests
         private void CreateCountryTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE IF NOT EXISTS public.dbconnectionreadfixturecountry
+CREATE TABLE IF NOT EXISTS public.dbconnectioncountry
 (
     id integer NOT NULL,
     name text COLLATE pg_catalog.""default"" NOT NULL,
-    CONSTRAINT dbconnectionreadfixturecountry_pkey PRIMARY KEY (id)
+    CONSTRAINT dbconnectioncountry_pkey PRIMARY KEY (id)
 );
 ";
             cmd.ExecuteNonQuery();
@@ -57,14 +57,14 @@ CREATE TABLE IF NOT EXISTS public.dbconnectionreadfixturecountry
         private void CreateIdentificationTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE IF NOT EXISTS public.dbconnectionreadfixtureidentification
+CREATE TABLE IF NOT EXISTS public.dbconnectionidentification
 (
     id integer NOT NULL,
     typename text COLLATE pg_catalog.""default"" NOT NULL,
-    readfixturecountry_id integer,
-    CONSTRAINT dbconnectionreadfixtureidentification_pkey PRIMARY KEY (id),
-    CONSTRAINT dbconnectionreadfixturecountry_fk FOREIGN KEY (readfixturecountry_id)
-        REFERENCES public.dbconnectionreadfixturecountry (id) MATCH SIMPLE
+    country_id integer,
+    CONSTRAINT dbconnectionidentification_pkey PRIMARY KEY (id),
+    CONSTRAINT dbconnectioncountry_fk FOREIGN KEY (country_id)
+        REFERENCES public.dbconnectioncountry (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -75,16 +75,16 @@ CREATE TABLE IF NOT EXISTS public.dbconnectionreadfixtureidentification
         private void CreatePersonTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE IF NOT EXISTS public.dbconnectionreadfixtureperson
+CREATE TABLE IF NOT EXISTS public.dbconnectionperson
 (
     id integer NOT NULL,
     firstname text COLLATE pg_catalog.""default"" NOT NULL,
     middlename text COLLATE pg_catalog.""default"",
     lastname text COLLATE pg_catalog.""default"",
-    readfixtureidentification_id integer,
-    CONSTRAINT dbconnectionreadfixtureperson_pkey PRIMARY KEY (id),
-    CONSTRAINT dbconnectionreadfixtureidentification_fk FOREIGN KEY (readfixtureidentification_id)
-        REFERENCES public.dbconnectionreadfixtureidentification (id) MATCH SIMPLE
+    identification_id integer,
+    CONSTRAINT dbconnectionperson_pkey PRIMARY KEY (id),
+    CONSTRAINT dbconnectionidentification_fk FOREIGN KEY (identification_id)
+        REFERENCES public.dbconnectionidentification (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -96,8 +96,8 @@ CREATE TABLE IF NOT EXISTS public.dbconnectionreadfixtureperson
         {
             cmd.Parameters.Clear();
             cmd.CommandText = @"
-INSERT INTO public.dbconnectionreadfixtureperson(
-	id, firstname, middlename, lastname, readfixtureidentification_id)
+INSERT INTO public.dbconnectionperson(
+	id, firstname, middlename, lastname, identification_id)
 	VALUES (
     $1, $2, $3, $4, $5
 );
@@ -147,7 +147,7 @@ INSERT INTO public.dbconnectionreadfixtureperson(
         {
             cmd.Parameters.Clear();
             cmd.CommandText = @"
-INSERT INTO public.dbconnectionreadfixturecountry(
+INSERT INTO public.dbconnectioncountry(
 	id, name)
 	VALUES (
     $1, $2
@@ -187,8 +187,8 @@ INSERT INTO public.dbconnectionreadfixturecountry(
         {
             cmd.Parameters.Clear();
             cmd.CommandText = @"
-INSERT INTO public.dbconnectionreadfixtureidentification(
-	id, typename, readfixturecountry_id)
+INSERT INTO public.dbconnectionidentification(
+	id, typename, country_id)
 	VALUES (
     $1, $2, $3
 );
@@ -236,7 +236,7 @@ INSERT INTO public.dbconnectionreadfixtureidentification(
         private void CreateFunction(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE FUNCTION dbconnectionreadfixturefunc(in int, out out1 int, out out2 text)
+CREATE FUNCTION dbconnectionfunc(in int, out out1 int, out out2 text)
     AS $$ SELECT $1, CAST($1 AS text) || ' is text' $$
     LANGUAGE SQL;
 ";
@@ -246,7 +246,7 @@ CREATE FUNCTION dbconnectionreadfixturefunc(in int, out out1 int, out out2 text)
         private void DropFunction(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP FUNCTION IF EXISTS dbconnectionreadfixturefunc(in INT, out int, out text);
+DROP FUNCTION IF EXISTS dbconnectionfunc(in INT, out int, out text);
 ";
             cmd.ExecuteNonQuery();
         }
@@ -258,9 +258,9 @@ DROP FUNCTION IF EXISTS dbconnectionreadfixturefunc(in INT, out int, out text);
                 using var cmd = connection.CreateCommand();
                 DropFunction(cmd);
 
-                connection.DropTable("dbconnectionreadfixtureperson");
-                connection.DropTable("dbconnectionreadfixtureidentification");
-                connection.DropTable("dbconnectionreadfixturecountry");
+                connection.DropTable("dbconnectionperson");
+                connection.DropTable("dbconnectionidentification");
+                connection.DropTable("dbconnectioncountry");
             }
             _dataSource?.Dispose();
         }
@@ -282,14 +282,14 @@ SELECT
 ~EndInner::Identification~
     p.middlename,
     p.lastname
-FROM dbconnectionreadfixtureperson p
-LEFT JOIN dbconnectionreadfixtureidentification i ON i.id = p.readfixtureidentification_id
-LEFT JOIN dbconnectionreadfixturecountry c ON c.id = i.readfixturecountry_id
+FROM dbconnectionperson p
+LEFT JOIN dbconnectionidentification i ON i.id = p.identification_id
+LEFT JOIN dbconnectioncountry c ON c.id = i.country_id
 WHERE p.id != @id
 ORDER BY p.id ASC
 ",
             "NpgsqlToClass1",
-            typeof(ReadFixtureModel),
+            typeof(Person),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
             )]
         [Parametr("NpgsqlToClass1", parametrType: typeof(int), parametrName: "id", dbType: System.Data.DbType.Int32)]
@@ -312,14 +312,14 @@ SELECT
 ~EndInner::Identification~
     p.middlename,
     p.lastname
-FROM dbconnectionreadfixtureperson p
-LEFT JOIN dbconnectionreadfixtureidentification i ON i.id = p.readfixtureidentification_id
-LEFT JOIN dbconnectionreadfixturecountry c ON c.id = i.readfixturecountry_id
+FROM dbconnectionperson p
+LEFT JOIN dbconnectionidentification i ON i.id = p.identification_id
+LEFT JOIN dbconnectioncountry c ON c.id = i.country_id
 WHERE p.id != @id AND p.id != @id2
 ORDER BY p.id ASC
 ",
             "NpgsqlToClass2",
-            typeof(ReadFixtureModel),
+            typeof(Person),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
             )]
         [Parametr("NpgsqlToClass2", parametrType: typeof(int), parametrName: "id")]
@@ -467,7 +467,7 @@ ORDER BY p.id ASC
         [Test]
         [Query(
             @"
-select * from dbconnectionreadfixturefunc(@inParam);
+select * from dbconnectionfunc(@inParam);
 ",
             "FuncOut",
             queryType: Gedaq.Common.Enums.QueryType.NonQuery
@@ -488,7 +488,7 @@ select * from dbconnectionreadfixturefunc(@inParam);
         [Test]
         [Query(
             @"
-select out1, out2 from dbconnectionreadfixturefunc(@inParam);
+select out1, out2 from dbconnectionfunc(@inParam);
 ",
             "ReadFunc",
             typeof(ReadFunc),
@@ -523,12 +523,12 @@ SELECT
     p.middlename,
     p.lastname,
 ~EndInner::Person~
-	readfixturefunc.out1,
-	readfixturefunc.out2
-FROM dbconnectionreadfixtureperson p
-LEFT JOIN dbconnectionreadfixtureidentification i ON i.id = p.readfixtureidentification_id
-LEFT JOIN dbconnectionreadfixturecountry c ON c.id = i.readfixturecountry_id
-LEFT JOIN LATERAL dbconnectionreadfixturefunc(@inParam) AS readfixturefunc ON true
+	func.out1,
+	func.out2
+FROM dbconnectionperson p
+LEFT JOIN dbconnectionidentification i ON i.id = p.identification_id
+LEFT JOIN dbconnectioncountry c ON c.id = i.country_id
+LEFT JOIN LATERAL dbconnectionfunc(@inParam) AS func ON true
 WHERE p.id = @personId
 ORDER BY p.id ASC
 ",

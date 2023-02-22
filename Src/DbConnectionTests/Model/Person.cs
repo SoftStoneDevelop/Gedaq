@@ -1,6 +1,6 @@
 ﻿namespace DbConnectionTests.Model
 {
-    public class ReadFixtureModel
+    public class Person
     {
         public int Id { get; set; }
 
@@ -10,6 +10,6 @@
 
         public string LastName { get; set; }
 
-        public ReadFixtureIdentificationModel Identification { get; set; }
+        public Identification Identification { get; set; }
     }
 }
