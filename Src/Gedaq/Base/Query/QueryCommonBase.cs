@@ -80,7 +80,7 @@ namespace Gedaq.Base.Query
 
         public void ThrowExceptionIfOutCannotExist(QueryBase source)
         {
-            if (source.BaseParametrs().Any(an => an.Direction != System.Data.ParameterDirection.Input))
+            if (source.HaveParametrs() &&  source.BaseParametrs().Any(an => an.Direction != System.Data.ParameterDirection.Input))
             {
                 throw new Exception("Iterator and Async methods cannot have out parameter");
             }
