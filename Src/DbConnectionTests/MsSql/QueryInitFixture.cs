@@ -44,7 +44,7 @@ namespace DbConnectionTests
             cmd.CommandText = @"
 CREATE TABLE [dbo].[person](
 	[id] [int] NOT NULL,
-	[firstname] [text] NOT NULL,
+	[firstname] [text] NULL,
 	[middlename] [text] NULL,
 	[lastname] [text] NULL,
 	[identification_id] [int] NULL,
@@ -83,18 +83,21 @@ INSERT INTO person(
             var firstname = new SqlParameter();
             firstname.SqlDbType = System.Data.SqlDbType.Text;
             firstname.Size = 4000;
+            firstname.IsNullable = true;
             firstname.ParameterName = "firstname";
             cmd.Parameters.Add(firstname);
 
             var middlename = new SqlParameter();
             middlename.SqlDbType = System.Data.SqlDbType.Text;
             middlename.Size = 4000;
+            middlename.IsNullable= true;
             middlename.ParameterName = "middlename";
             cmd.Parameters.Add(middlename);
 
             var lastname = new SqlParameter();
             lastname.SqlDbType = System.Data.SqlDbType.Text;
             lastname.Size = 4000;
+            lastname.IsNullable = true;
             lastname.ParameterName = "lastname";
             cmd.Parameters.Add(lastname);
 
@@ -108,15 +111,18 @@ INSERT INTO person(
             for (int i = 0; i < 10; i++)
             {
                 id.Value = i;
-                firstname.Value = $"John{i}";
-                middlename.Value = $"Сurly{i}";
-                lastname.Value = $"Doe{i}";
                 if (i > 0 && i < 6)
                 {
+                    firstname.Value = $"John{i}";
+                    middlename.Value = $"Сurly{i}";
+                    lastname.Value = $"Doe{i}";
                     identificationId.Value = i;
                 }
                 else
                 {
+                    firstname.Value = DBNull.Value;
+                    middlename.Value = DBNull.Value;
+                    lastname.Value = DBNull.Value;
                     identificationId.Value = DBNull.Value;
                 }
 

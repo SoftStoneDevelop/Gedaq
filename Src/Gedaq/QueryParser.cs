@@ -561,6 +561,11 @@ namespace Gedaq
                             break;
                         }
 
+                        if (_query[_currentIndex] == '~')
+                        {
+                            break;
+                        }
+
                         if (_query[_currentIndex] == '.')
                         {
                             if (dotPass)

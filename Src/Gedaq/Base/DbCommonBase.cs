@@ -220,20 +220,9 @@ namespace Gedaq.Base
                 else//is root
                 {
                     builder.Append($@"
-                    var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}
-                    {{
+                    var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
 ");
-                    for (int i = 0; i < pair.Aliases.Fields.Count; i++)
-                    {
-                        var field = pair.Aliases.Fields[i];
-                        pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
-                        builder.Append($@"
-                        {propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({field.Position}),
-");
-                    }
-                    builder.Append($@" 
-                    }};
-");
+                    SetFields(pair, builder, true);
                 }
 
                 if (pair.Aliases.InnerEntities.Count != 0)
@@ -259,14 +248,11 @@ namespace Gedaq.Base
             {
                 var field = pair.Aliases.Fields[i];
                 pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
-                if(createItemIfNull || propertyType.IsNullableType())
-                {
-                    builder.Append($@"
+                builder.Append($@"
                         {Tabs(tabs)}if(!reader.IsDBNull({field.Position}))
                         {{
 ");
-                }
-                
+
                 if (createItemIfNull)
                 {
                     builder.Append($@"
@@ -299,12 +285,9 @@ namespace Gedaq.Base
                     }
                 }
 
-                if (createItemIfNull || propertyType.IsNullableType())
-                {
-                    builder.Append($@"
+                builder.Append($@"
                         }}
 ");
-                }
             }
         }
 
