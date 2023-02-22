@@ -56,5 +56,15 @@ namespace Gedaq.SqlClient.GeneratorsQuery
                 }
             }
         }
+
+        public override string DefaultSourceType()
+        {
+            return "SqlConnection";
+        }
+
+        public override string DefaultSourceTypeParametr()
+        {
+            return "connection";
+        }
     }
 }

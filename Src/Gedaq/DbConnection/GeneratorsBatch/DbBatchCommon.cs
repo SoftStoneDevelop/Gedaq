@@ -42,5 +42,15 @@ namespace Gedaq.DbConnection.GeneratorsBatch
         {
             throw new System.NotImplementedException();
         }
+
+        public override string DefaultSourceType()
+        {
+            return "DbConnection";
+        }
+
+        public override string DefaultSourceTypeParametr()
+        {
+            return "connection";
+        }
     }
 }

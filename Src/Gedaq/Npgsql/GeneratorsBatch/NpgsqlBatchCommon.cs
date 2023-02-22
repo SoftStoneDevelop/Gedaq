@@ -50,5 +50,15 @@ namespace Gedaq.Npgsql.GeneratorsBatch
         {
             throw new System.NotImplementedException();
         }
+
+        public override string DefaultSourceType()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override string DefaultSourceTypeParametr()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

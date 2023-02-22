@@ -26,18 +26,18 @@ namespace Gedaq.Base.Batch
         protected virtual void ReadMethod(QueryBatch source, StringBuilder builder)
         {
             StartReadMethod(source, MethodType.Sync, builder);
-            StartMethodParametrs(source, "DbConnection", "connection", builder);
+            StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder);
-            ReadMethodBody(source, true, "connection", MethodType.Sync, builder);
+            ReadMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Sync, builder);
             EndMethod(builder);
         }
 
         protected virtual void ReadAsyncMethod(QueryBatch source, StringBuilder builder)
         {
             StartReadMethod(source, MethodType.Async, builder);
-            StartMethodParametrs(source, "DbConnection", "connection", builder);
+            StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
             AsyncEndMethodParametrs(builder);
-            ReadMethodBody(source, true, "connection", MethodType.Async, builder);
+            ReadMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Async, builder);
             EndMethod(builder);
         }
 

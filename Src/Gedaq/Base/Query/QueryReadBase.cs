@@ -29,11 +29,11 @@ namespace Gedaq.Base.Query
             QueryMethodParametrs(
                 source,
                 builder,
-                "DbConnection",
-                "connection"
+                QueryCommon.DefaultSourceType(),
+                QueryCommon.DefaultSourceTypeParametr()
                 );
             EndMethodParametrs(builder);
-            ReadMethodBody(source, true, "connection", MethodType.Sync, builder);
+            ReadMethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Sync, builder);
             EndMethod(builder);
         }
 
@@ -43,11 +43,11 @@ namespace Gedaq.Base.Query
             QueryMethodParametrs(
                 source,
                 builder,
-                "DbConnection",
-                "connection"
+                QueryCommon.DefaultSourceType(),
+                QueryCommon.DefaultSourceTypeParametr()
                 );
             AsyncEndMethodParametrs(builder, true);
-            ReadMethodBody(source, true, "connection", MethodType.Async, builder);
+            ReadMethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Async, builder);
             EndMethod(builder);
         }
 

@@ -44,5 +44,15 @@ namespace Gedaq.DbConnection.GeneratorsQuery
         {
             throw new NotImplementedException();
         }
+
+        public override string DefaultSourceType()
+        {
+            return "DbConnection";
+        }
+
+        public override string DefaultSourceTypeParametr()
+        {
+            return "connection";
+        }
     }
 }

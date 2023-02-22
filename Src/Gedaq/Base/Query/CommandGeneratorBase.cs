@@ -23,12 +23,12 @@ namespace Gedaq.Base.Query
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                CreateCommandMethod(source, "DbConnection", "connection", MethodType.Sync, builder);
+                CreateCommandMethod(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), MethodType.Sync, builder);
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                CreateCommandMethod(source, "DbConnection", "connection", MethodType.Async, builder);
+                CreateCommandMethod(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), MethodType.Async, builder);
             }
         }
 

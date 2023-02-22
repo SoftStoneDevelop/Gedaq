@@ -42,25 +42,25 @@ namespace Gedaq.Base.Query
         protected virtual void NonQueryMethod(QueryBase source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Sync, builder);
-            QueryMethodParametrs(source, "DbConnection", "connection", builder);
+            QueryMethodParametrs(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder);
-            MethodBody(source, true, "connection", MethodType.Sync, QueryType.NonQuery, builder);
+            MethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.NonQuery, builder);
             EndMethod(builder);
         }
 
         protected virtual void NonQueryMethodAsync(QueryBase source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Async, builder);
-            QueryMethodParametrs(source, "DbConnection", "connection", builder);
+            QueryMethodParametrs(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), builder);
             AsyncEndMethodParametrs(builder);
-            MethodBody(source, true, "connection", MethodType.Async, QueryType.NonQuery, builder);
+            MethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Async, QueryType.NonQuery, builder);
             EndMethod(builder);
         }
 
         protected virtual void ScalarMethod(QueryBase source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Sync, builder);
-            QueryMethodParametrs(source, "DbConnection", "connection", builder);
+            QueryMethodParametrs(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder);
             MethodBody(source, true, "connection", MethodType.Sync, QueryType.Scalar, builder);
             EndMethod(builder);
@@ -69,9 +69,9 @@ namespace Gedaq.Base.Query
         protected virtual void ScalarMethodAsync(QueryBase source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Async, builder);
-            QueryMethodParametrs(source, "DbConnection", "connection", builder);
+            QueryMethodParametrs(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), builder);
             AsyncEndMethodParametrs(builder);
-            MethodBody(source, true, "connection", MethodType.Async, QueryType.Scalar, builder);
+            MethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Async, QueryType.Scalar, builder);
             EndMethod(builder);
         }
 

@@ -1,6 +1,7 @@
 ﻿using Gedaq.DbConnection;
 using Gedaq.Helpers;
 using Gedaq.Npgsql;
+using Gedaq.SqlClient;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace Gedaq
     {
         private NpgsqlAttributeProcessor _npgsqlProcessor = new NpgsqlAttributeProcessor();
         private DbConnectionAttributeProcessor _dbConnectionProcessor = new DbConnectionAttributeProcessor();
+        private SqlClientAttributeProcessor _sqlClientProcessor = new SqlClientAttributeProcessor();
 
         public void TryFillFrom(INamedTypeSymbol type)
         {
@@ -36,19 +38,21 @@ namespace Gedaq
         {
             _npgsqlProcessor.ProcessAttributes(attributes, containsType);
             _dbConnectionProcessor.ProcessAttributes(attributes, containsType);
+            _sqlClientProcessor.ProcessAttributes(attributes, containsType);
         }
 
         private void CompleteProcessContainTypes()
         {
             _npgsqlProcessor.CompleteProcessContainTypes();
             _dbConnectionProcessor.CompleteProcessContainTypes();
+            _sqlClientProcessor.CompleteProcessContainTypes();
         }
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)
         {
-            var builder = new StringBuilder();
             _npgsqlProcessor.GenerateAndSaveMethods(context);
             _dbConnectionProcessor.GenerateAndSaveMethods(context);
+            _sqlClientProcessor.GenerateAndSaveMethods(context);
         }
     }
 }

@@ -40,12 +40,12 @@ namespace Gedaq.Base.Batch
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                CreateBatchMethod(source, "DbConnection", "connection", MethodType.Sync, builder);
+                CreateBatchMethod(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), MethodType.Sync, builder);
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                CreateBatchMethod(source, "Dbconnection", "connection", MethodType.Async, builder);
+                CreateBatchMethod(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), MethodType.Async, builder);
             }
 
             SetParametrsMethod(source, builder);

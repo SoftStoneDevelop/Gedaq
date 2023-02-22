@@ -19,6 +19,9 @@ namespace Gedaq.Base
 
         public abstract string BatchType();
 
+        public abstract string DefaultSourceType();
+        public abstract string DefaultSourceTypeParametr();
+
         public abstract bool IsKnownProviderType(ITypeSymbol type);
 
         public abstract bool IsSpecialHandlerType(ITypeSymbol type);

@@ -42,36 +42,36 @@ namespace Gedaq.Base.Batch
         protected virtual void ScalarMethod(QueryBatch source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Sync, builder);
-            StartMethodParametrs(source, "DbConnection", "connection", builder);
+            StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder);
-            ScalarMethodBody(source, true, "connection", MethodType.Sync, QueryType.Scalar, builder);
+            ScalarMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.Scalar, builder);
             EndMethod(builder);
         }
 
         protected virtual void ScalarMethodAsync(QueryBatch source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Async, builder);
-            StartMethodParametrs(source, "DbConnection", "connection", builder);
+            StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
             AsyncEndMethodParametrs(builder);
-            ScalarMethodBody(source, true, "connection", MethodType.Async, QueryType.Scalar, builder);
+            ScalarMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Async, QueryType.Scalar, builder);
             EndMethod(builder);
         }
 
         protected virtual void NonQueryMethod(QueryBatch source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Sync, builder);
-            StartMethodParametrs(source, "DbConnection", "connection", builder);
+            StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder);
-            ScalarMethodBody(source, true, "connection", MethodType.Sync, QueryType.NonQuery, builder);
+            ScalarMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.NonQuery, builder);
             EndMethod(builder);
         }
 
         protected virtual void NonQueryMethodAsync(QueryBatch source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Async, builder);
-            StartMethodParametrs(source, "DbConnection", "connection", builder);
+            StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
             AsyncEndMethodParametrs(builder);
-            ScalarMethodBody(source, true, "connection", MethodType.Async, QueryType.NonQuery, builder);
+            ScalarMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Async, QueryType.NonQuery, builder);
             EndMethod(builder);
         }
 
