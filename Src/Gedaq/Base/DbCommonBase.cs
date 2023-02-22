@@ -158,51 +158,59 @@ namespace Gedaq.Base
                 var pair = aliases.Pop();
                 if (pair.Parent != null)
                 {
-                    var linkField = pair.Aliases.GetLinkField();
-                    builder.Append($@"
+                    if(pair.Aliases.HaveLinkKey)
+                    {
+                        var linkField = pair.Aliases.GetLinkField();
+                        builder.Append($@"
                     {Tabs(pair.Tabs)}if(!{(methodType == MethodType.Async ? "await " : "")}reader.IsDBNull{(methodType == MethodType.Async ? "Async" : "")}({linkField.Position}))
                     {Tabs(pair.Tabs)}{{
-                        {Tabs(pair.Tabs)}var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}
-                        {Tabs(pair.Tabs)}{{
+                    {Tabs(pair.Tabs)}    var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
 ");
-                    for (int i = 0; i < pair.Aliases.Fields.Count; i++)
-                    {
-                        var field = pair.Aliases.Fields[i];
-                        pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
-                        if (propertyType.IsNullableType())
-                        {
-                            builder.Append($@"
-                            {Tabs(pair.Tabs)}{propertyName} = reader.IsDBNull({field.Position}) ? ({propertyType.GetFullTypeName(true)})null : reader.GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({field.Position}),
-");
-                        }
-                        else
-                        {
-                            if(IsSpecialHandlerType(propertyType))
-                            {
-                                builder.Append($@"
-                            {Tabs(pair.Tabs)}{propertyName} = {GetSpecialTypeValue(propertyType, field.Position)},
-");
-                            }
-                            else
-                            {
-                                builder.Append($@"
-                            {Tabs(pair.Tabs)}{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({field.Position}),
-");
-                            }
-                        }
+                        SetFields(pair, builder, false);
                     }
-                    builder.Append($@" 
-                        {Tabs(pair.Tabs)}}};
+                    else
+                    {
+                        builder.Append($@" 
+                    {Tabs(pair.Tabs)}    {pair.MapTypeName.GetFullTypeName()}{(pair.MapTypeName.TypeKind != TypeKind.Class ? "?" : "")} {pair.ItemName} = null;
 ");
+                        SetFields(pair, builder, true);
+
+                    }
+
+                    
                     if (pair.Aliases.InnerEntities.Count == 0)
                     {
                         var current = pair;
                         while (current.Parent != null)
                         {
-                            builder.Append($@"
-                        {Tabs(current.Tabs)}{current.Parent.ItemName}.{current.PropertyName} = {current.ItemName};
+                            if(current.Aliases.HaveLinkKey)
+                            {
+                                builder.Append($@"
+                    {Tabs(current.Tabs)}    {current.Parent.ItemName}.{current.PropertyName} = {current.ItemName};
                     {Tabs(current.Tabs)}}}
 ");
+                            }
+                            else
+                            {
+                                builder.Append($@"
+                    {Tabs(current.Tabs)}if({current.ItemName} != null)
+                    {Tabs(current.Tabs)}{{
+");
+                                if(!current.Parent.Aliases.IsRoot)
+                                {
+                                    builder.Append($@"
+                    {Tabs(current.Tabs)}    if({current.Parent.ItemName} == null)
+                    {Tabs(current.Tabs)}    {{
+                    {Tabs(current.Tabs)}        {current.Parent.ItemName} = new {current.Parent.MapTypeName.GetFullTypeName()}();
+                    {Tabs(current.Tabs)}    }}
+");
+                                }
+                                builder.Append($@"
+                    {Tabs(current.Tabs)}    {current.Parent.ItemName}.{current.PropertyName} = {current.ItemName};
+                    {Tabs(current.Tabs)}}}
+");
+                            }
+
                             current = current.Parent;
                         }
 
@@ -240,6 +248,62 @@ namespace Gedaq.Base
                         newPair.Tabs = tabs;
                         aliases.Push(newPair);
                     }
+                }
+            }
+        }
+
+        private void SetFields(ItemPair pair, StringBuilder builder, bool createItemIfNull)
+        {
+            var tabs = pair.Tabs;
+            for (int i = 0; i < pair.Aliases.Fields.Count; i++)
+            {
+                var field = pair.Aliases.Fields[i];
+                pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
+                if(createItemIfNull || propertyType.IsNullableType())
+                {
+                    builder.Append($@"
+                        {Tabs(tabs)}if(!reader.IsDBNull({field.Position}))
+                        {{
+");
+                }
+                
+                if (createItemIfNull)
+                {
+                    builder.Append($@"
+                            {Tabs(tabs)}if({pair.ItemName} == null)
+                            {Tabs(tabs)}{{
+                                {Tabs(tabs)} {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
+                            {Tabs(tabs)}}}
+");
+                }
+
+                if (propertyType.IsNullableType())
+                {
+                    builder.Append($@"
+                            {Tabs(tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({field.Position});
+");
+                }
+                else
+                {
+                    if (IsSpecialHandlerType(propertyType))
+                    {
+                        builder.Append($@"
+                            {Tabs(tabs)}{pair.ItemName}.{propertyName} = {GetSpecialTypeValue(propertyType, field.Position)};
+");
+                    }
+                    else
+                    {
+                        builder.Append($@"
+                            {Tabs(tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({field.Position});
+");
+                    }
+                }
+
+                if (createItemIfNull || propertyType.IsNullableType())
+                {
+                    builder.Append($@"
+                        }}
+");
                 }
             }
         }

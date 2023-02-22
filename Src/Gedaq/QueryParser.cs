@@ -374,13 +374,23 @@ namespace Gedaq
                 linkKey = null;
                 var nameClosed = false;
                 var notAllowedcolon = false;
+                var isNullCheck = false;
                 name = null;
                 for (; _currentIndex < _query.Length; _currentIndex++)
                 {
                     if (char.IsLetterOrDigit(_query[_currentIndex]))
                     {
+                        if(notAllowedcolon && isNullCheck)
+                        {
+                            throw new Exception("After '?' can be only '~'");
+                        }
+
                         _field.Append(_query[_currentIndex]);
                         continue;
+                    }
+                    else if (_query[_currentIndex] == '?')
+                    {
+                        isNullCheck = true;
                     }
                     else if (_query[_currentIndex] == ':')
                     {
@@ -408,7 +418,7 @@ namespace Gedaq
 
                 if (name == null)
                 {
-                    throw new Exception("LinkKey not found");
+                    throw new Exception("The inner name cannot be empty");
                 }
 
                 if (!nameClosed)
@@ -416,13 +426,16 @@ namespace Gedaq
                     throw new Exception("Inner name must end on '~'");
                 }
 
-                if (_field.Length == 0)
+                if(!isNullCheck)
                 {
-                    throw new Exception("The inner name cannot be empty.");
-                }
+                    if (_field.Length == 0)
+                    {
+                        throw new Exception("LinkKey not found");
+                    }
 
-                linkKey = _field.ToString();
-                _field.Clear();
+                    linkKey = _field.ToString();
+                    _field.Clear();
+                }
             }
 
             private string GetEndInnerName()

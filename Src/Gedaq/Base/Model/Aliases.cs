@@ -33,6 +33,8 @@ namespace Gedaq.Base.Model
         public string EntityName { get; private set; }
         public string LinkKey { get; private set; }
 
+        public bool HaveLinkKey => LinkKey != null;
+
         public Field GetLinkField()
         {
             return Fields.First(f => f.Name.ToLowerInvariant() == LinkKey.ToLowerInvariant());
