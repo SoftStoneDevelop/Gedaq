@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using System;
 
-namespace DbConnectionTests
+namespace NpgsqlTests
 {
     [TestFixture]
     internal partial class BinaryParserFixture
