@@ -15,12 +15,25 @@ namespace Gedaq.Npgsql.Parser
             var querySpan = query.AsSpan();
 
             var body = FindBody(querySpan, out var start, out var end);
-            var aliases = FillAliases(body, out var newBody);
+            var afterInstruction = 0;
+            if (QueryParser.FindInstruction(body, out afterInstruction, out var instructionType) &&
+                (instructionType == InstructionType.Delete || instructionType == InstructionType.Insert)
+                )
+            {
+                throw new Exception("Instruction delete and insert not support in subquery");
+            }
+
+            if(afterInstruction == -1)
+            {
+                afterInstruction = 0;
+            }
+
+            var aliases = FillAliases(body.Slice(afterInstruction), out var newBody);
             if (newBody != null)
             {
                 var before = querySpan.Slice(0, start);
                 var after = querySpan.Slice(end);
-                query = before.ToString() + newBody.ToString() + after.ToString();
+                query = before.ToString() + body.Slice(0, afterInstruction).ToString() + newBody.ToString() + after.ToString();//rewrite to better perf
             }
 
             return aliases;

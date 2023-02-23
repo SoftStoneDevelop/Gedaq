@@ -92,7 +92,7 @@ namespace Gedaq.Parser
                 parser.GetAliases();
         }
 
-        private bool FindInstruction(ReadOnlySpan<char> command, out int indexAfterInstruction, out InstructionType instruction)
+        static internal bool FindInstruction(ReadOnlySpan<char> command, out int indexAfterInstruction, out InstructionType instruction)
         {
             indexAfterInstruction = -1;
             instruction = InstructionType.None;
@@ -148,7 +148,7 @@ namespace Gedaq.Parser
             return false;
         }
 
-        private InstructionType IndexToType(int index)
+        private static InstructionType IndexToType(int index)
         {
             switch (index)
             {
