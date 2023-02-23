@@ -4,6 +4,8 @@ using Gedaq.Helpers;
 using Gedaq.Npgsql.GeneratorsBatch;
 using Gedaq.Npgsql.GeneratorsQuery;
 using Gedaq.Npgsql.Model;
+using Gedaq.Npgsql.Parser;
+using Gedaq.Parser;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
@@ -16,6 +18,7 @@ namespace Gedaq.Npgsql
     {
         private List<NpgsqlQuery> _read = new List<NpgsqlQuery>();
         private List<NpgsqlQueryBatch> _readBatch = new List<NpgsqlQueryBatch>();
+        private List<BinaryExport> _binaryExports = new List<BinaryExport>();
 
         Dictionary<string, NpgsqlQuery> _readTemp = new Dictionary<string,NpgsqlQuery>();
         Dictionary<string, List<NpgsqlParametr>> _parametrsTemp = new Dictionary<string, List<NpgsqlParametr>>();
@@ -23,6 +26,7 @@ namespace Gedaq.Npgsql
         private Dictionary<string, List<BatchPart>> _batchParts = new Dictionary<string, List<BatchPart>>();
 
         private QueryParser _queryParser = new QueryParser();
+        private BinaryParser _binaryParser = new BinaryParser();
 
         public bool ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
         {
@@ -47,6 +51,12 @@ namespace Gedaq.Npgsql
                 }
 
                 if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BatchPartAttribute"))
+                {
+                    ProcessBatchPart(attribute, containsType);
+                    continue;
+                }
+
+                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BinaryExportAttribute"))
                 {
                     ProcessBatchPart(attribute, containsType);
                     continue;
@@ -222,6 +232,17 @@ namespace Gedaq.Npgsql
             }
 
             _parametrsTemp[methodName].Add(parametr);
+        }
+
+        private void ProcessBinaryExport(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
+        {
+            if (!BinaryExport.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var binaryExport))
+            {
+                throw new Exception($"Unknown {nameof(BinaryExport)} constructor");
+            }
+
+            binaryExport.Aliases = _binaryParser.Parse(ref binaryExport.Query);
+            _binaryExports.Add(binaryExport);
         }
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)

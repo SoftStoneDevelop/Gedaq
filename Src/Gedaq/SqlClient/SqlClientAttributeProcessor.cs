@@ -1,5 +1,6 @@
 ﻿using Gedaq.Enums;
 using Gedaq.Helpers;
+using Gedaq.Parser;
 using Gedaq.SqlClient.GeneratorsQuery;
 using Gedaq.SqlClient.Model;
 using Microsoft.CodeAnalysis;

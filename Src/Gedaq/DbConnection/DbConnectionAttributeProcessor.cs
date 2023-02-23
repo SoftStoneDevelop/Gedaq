@@ -4,6 +4,7 @@ using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
+using Gedaq.Parser;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
