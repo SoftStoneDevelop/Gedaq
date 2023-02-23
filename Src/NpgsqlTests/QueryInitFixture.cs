@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS public.readfixtureidentification
 CREATE TABLE IF NOT EXISTS public.readfixtureperson
 (
     id integer NOT NULL,
-    firstname text COLLATE pg_catalog.""default"" NOT NULL,
+    firstname text COLLATE pg_catalog.""default"" NULL,
     middlename text COLLATE pg_catalog.""default"",
     lastname text COLLATE pg_catalog.""default"",
     readfixtureidentification_id integer,
@@ -105,14 +105,17 @@ INSERT INTO public.readfixtureperson(
 
             var firstname = new NpgsqlParameter<string>();
             firstname.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
+            firstname.IsNullable = true;
             cmd.Parameters.Add(firstname);
 
             var middlename = new NpgsqlParameter<string>();
             middlename.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
+            middlename.IsNullable = true;
             cmd.Parameters.Add(middlename);
 
             var lastname = new NpgsqlParameter<string>();
             lastname.NpgsqlDbType = NpgsqlTypes.NpgsqlDbType.Text;
+            lastname.IsNullable = true;
             cmd.Parameters.Add(lastname);
 
             var identificationId = new NpgsqlParameter();
@@ -124,15 +127,18 @@ INSERT INTO public.readfixtureperson(
             for (int i = 0; i < 10; i++)
             {
                 id.Value = i;
-                firstname.Value = $"John{i}";
-                middlename.Value = $"Сurly{i}";
-                lastname.Value = $"Doe{i}";
                 if (i > 0 && i < 6)
                 {
+                    firstname.TypedValue = $"John{i}";
+                    middlename.TypedValue = $"Сurly{i}";
+                    lastname.TypedValue = $"Doe{i}";
                     identificationId.Value = i;
                 }
                 else
                 {
+                    firstname.TypedValue = null;
+                    middlename.TypedValue = null;
+                    lastname.TypedValue = null;
                     identificationId.Value = DBNull.Value;
                 }
 

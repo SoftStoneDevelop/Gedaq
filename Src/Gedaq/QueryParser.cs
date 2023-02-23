@@ -174,14 +174,6 @@ namespace Gedaq
             }
         }
 
-        private enum ActionAfterStep
-        {
-            None = 0,
-            AddField = 1,
-            EndSearch = 2,
-            EndSearchAndAddField = 3
-        }
-
         private ref struct AliasParser
         {
             private static readonly char[] _emptyOrCarret = new char[] { ' ', '\r', '\n' };
@@ -189,6 +181,9 @@ namespace Gedaq
             private static readonly string _as = "as";
             private static readonly string _startInner = "~startinner::";
             private static readonly string _endInner = "~endinner::";
+
+            private static readonly string _reinterpret = "~reinterpret::";
+            private StringBuilder _reinterpretName;
 
             private Aliases _root;
 
@@ -217,6 +212,7 @@ namespace Gedaq
                 _root = null;
                 _containInner = false;
                 _resultQuery = new StringBuilder();
+                _reinterpretName = new StringBuilder();
             }
 
             public Aliases GetAliases()
@@ -275,6 +271,12 @@ namespace Gedaq
                     {
                         _containInner |= true;
                         AppendPartQuery(_lastPartIndex, _currentIndex - _lastPartIndex);
+                        if(IsReinterpret())
+                        {
+                            _lastPartIndex = _currentIndex;
+                            continue;
+                        }
+
                         if (IsStartInner())
                         {
                             GetStartInnerName(out var innerName, out var linkName);
@@ -313,6 +315,12 @@ namespace Gedaq
                     if (string.IsNullOrWhiteSpace(fieldName))
                     {
                         throw new Exception("Not found Alias");
+                    }
+
+                    if(_reinterpretName.Length != 0)
+                    {
+                        fieldName = _reinterpretName.ToString();
+                        _reinterpretName.Clear();
                     }
 
                     var alias = innerStack.Peek();
@@ -534,6 +542,53 @@ namespace Gedaq
                 }
 
                 return false;
+            }
+
+            private bool IsReinterpret()
+            {
+                var index = 0;
+                if(_reinterpretName.Length != 0)
+                {
+                    throw new Exception(@"Double reinterpret");
+                }
+
+                for (int i = _currentIndex; i < _query.Length; i++)
+                {
+                    if (index < _reinterpret.Length)
+                    {
+                        if (char.ToLowerInvariant(_query[i]) != _reinterpret[index])
+                        {
+                            return false;
+                        }
+
+                        index++;
+                        continue;
+                    }
+
+                    if (!char.IsLetter(_query[i]))
+                    {
+                        if(_query[i] == '~')
+                        {
+                            if(_reinterpretName.Length == 0)
+                            {
+                                throw new Exception(@"Reinterpret name cannot be empty or contain not letter");
+                            }
+
+                            _currentIndex += index + 1;
+                            return true;
+                        }
+
+                        throw new NotSupportedException("Reinterpret name support only letter characters");
+                    }
+                    else
+                    {
+                        _reinterpretName.Append(_query[i]);
+                    }
+
+                    index++;
+                }
+
+                return true;
             }
 
             private string GetNameAlias(bool allowedDot = true)

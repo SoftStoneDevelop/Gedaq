@@ -1,5 +1,5 @@
 ﻿using Gedaq.Npgsql.Attributes;
-using Npgsql;
+using NpgsqlTests.Model;
 using NUnit.Framework;
 using System;
 using System.Data;
@@ -7,14 +7,6 @@ using System.Linq;
 
 namespace NpgsqlTests
 {
-    public class ReadFunc
-    {
-        public int Out1 { get; set; }
-        public string Out2 { get; set; }
-
-        public ReadFixtureModel Person { get; set; }
-    }
-
     [TestFixture]
     internal partial class ReadFixture : BaseFixture
     {

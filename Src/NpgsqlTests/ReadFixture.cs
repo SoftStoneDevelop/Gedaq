@@ -7,32 +7,6 @@ using System.Threading.Tasks;
 
 namespace NpgsqlTests
 {
-    public class ReadFixtureModel
-    {
-        public int Id { get; set; }
-
-        public string FirstName { get; set; }
-
-        public string MiddleName { get; set; }
-
-        public string LastName { get; set; }
-
-        public ReadFixtureIdentificationModel Identification { get; set; }
-    }
-
-    public class ReadFixtureIdentificationModel
-    {
-        public int Id { get; set; }
-        public string TypeName { get; set; }
-        public ReadFixtureCountryModel Country { get; set; }
-    }
-
-    public class ReadFixtureCountryModel
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-    }
-
     [TestFixture]
     internal partial class ReadFixture : BaseFixture
     {
@@ -72,13 +46,13 @@ ORDER BY p.id ASC
             Assert.Multiple(() =>
             {
                 Assert.That((int)list[0][0], Is.EqualTo(0));
-                Assert.That((string)list[0][1], Is.EqualTo("John0"));
+                Assert.That((DBNull)list[0][1], Is.EqualTo(DBNull.Value));
                 Assert.That((DBNull)list[0][2], Is.EqualTo(DBNull.Value));
                 Assert.That((DBNull)list[0][3], Is.EqualTo(DBNull.Value));
                 Assert.That((DBNull)list[0][4], Is.EqualTo(DBNull.Value));
                 Assert.That((DBNull)list[0][5], Is.EqualTo(DBNull.Value));
-                Assert.That((string)list[0][6], Is.EqualTo("Сurly0"));
-                Assert.That((string)list[0][7], Is.EqualTo("Doe0"));
+                Assert.That((DBNull)list[0][6], Is.EqualTo(DBNull.Value));
+                Assert.That((DBNull)list[0][7], Is.EqualTo(DBNull.Value));
             });
 
             Assert.Multiple(() =>
@@ -104,13 +78,13 @@ ORDER BY p.id ASC
             Assert.Multiple(() =>
             {
                 Assert.That((int)list[0][0], Is.EqualTo(0));
-                Assert.That((string)list[0][1], Is.EqualTo("John0"));
+                Assert.That((DBNull)list[0][1], Is.EqualTo(DBNull.Value));
                 Assert.That((DBNull)list[0][2], Is.EqualTo(DBNull.Value));
                 Assert.That((DBNull)list[0][3], Is.EqualTo(DBNull.Value));
                 Assert.That((DBNull)list[0][4], Is.EqualTo(DBNull.Value));
                 Assert.That((DBNull)list[0][5], Is.EqualTo(DBNull.Value));
-                Assert.That((string)list[0][6], Is.EqualTo("Сurly0"));
-                Assert.That((string)list[0][7], Is.EqualTo("Doe0"));
+                Assert.That((DBNull)list[0][6], Is.EqualTo(DBNull.Value));
+                Assert.That((DBNull)list[0][7], Is.EqualTo(DBNull.Value));
             });
 
             Assert.Multiple(() =>
@@ -158,13 +132,13 @@ ORDER BY p.id ASC
             Assert.Multiple(() =>
             {
                 Assert.That((int)((object[])list[0])[0], Is.EqualTo(0));
-                Assert.That((string)((object[])list[0])[1], Is.EqualTo("John0"));
+                Assert.That((string)((object[])list[0])[1], Is.EqualTo(null));
                 Assert.That((int?)((object[])list[0])[2], Is.EqualTo(null));
                 Assert.That((string)((object[])list[0])[3], Is.EqualTo(null));
                 Assert.That((int?)((object[])list[0])[4], Is.EqualTo(null));
                 Assert.That((string)((object[])list[0])[5], Is.EqualTo(null));
-                Assert.That((string)((object[])list[0])[6], Is.EqualTo("Сurly0"));
-                Assert.That((string)((object[])list[0])[7], Is.EqualTo("Doe0"));
+                Assert.That((string)((object[])list[0])[6], Is.EqualTo(null));
+                Assert.That((string)((object[])list[0])[7], Is.EqualTo(null));
             });
 
             Assert.Multiple(() =>
@@ -189,13 +163,13 @@ ORDER BY p.id ASC
             Assert.Multiple(() =>
             {
                 Assert.That((int)((object[])list[0])[0], Is.EqualTo(0));
-                Assert.That((string)((object[])list[0])[1], Is.EqualTo("John0"));
+                Assert.That((string)((object[])list[0])[1], Is.EqualTo(null));
                 Assert.That((int?)((object[])list[0])[2], Is.EqualTo(null));
                 Assert.That((string)((object[])list[0])[3], Is.EqualTo(null));
                 Assert.That((int?)((object[])list[0])[4], Is.EqualTo(null));
                 Assert.That((string)((object[])list[0])[5], Is.EqualTo(null));
-                Assert.That((string)((object[])list[0])[6], Is.EqualTo("Сurly0"));
-                Assert.That((string)((object[])list[0])[7], Is.EqualTo("Doe0"));
+                Assert.That((string)((object[])list[0])[6], Is.EqualTo(null));
+                Assert.That((string)((object[])list[0])[7], Is.EqualTo(null));
             });
 
             Assert.Multiple(() =>

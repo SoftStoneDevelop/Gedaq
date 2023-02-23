@@ -1,4 +1,5 @@
 ﻿using Gedaq.Npgsql.Attributes;
+using NpgsqlTests.Model;
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,9 +38,9 @@ namespace NpgsqlTests
                 Assert.Multiple(() =>
                 {
                     Assert.That(list[0].Id, Is.EqualTo(0));
-                    Assert.That(list[0].FirstName, Is.EqualTo("John0"));
-                    Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
-                    Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
+                    Assert.That(list[0].FirstName, Is.EqualTo(null));
+                    Assert.That(list[0].MiddleName, Is.EqualTo(null));
+                    Assert.That(list[0].LastName, Is.EqualTo(null));
 
                     Assert.That(list[0].Identification, Is.EqualTo(null));
                 });
@@ -97,9 +98,9 @@ namespace NpgsqlTests
                 Assert.Multiple(() =>
                 {
                     Assert.That(list[0].Id, Is.EqualTo(0));
-                    Assert.That(list[0].FirstName, Is.EqualTo("John0"));
-                    Assert.That(list[0].MiddleName, Is.EqualTo("Сurly0"));
-                    Assert.That(list[0].LastName, Is.EqualTo("Doe0"));
+                    Assert.That(list[0].FirstName, Is.EqualTo(null));
+                    Assert.That(list[0].MiddleName, Is.EqualTo(null));
+                    Assert.That(list[0].LastName, Is.EqualTo(null));
 
                     Assert.That(list[0].Identification, Is.EqualTo(null));
                 });
