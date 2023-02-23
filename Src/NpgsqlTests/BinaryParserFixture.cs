@@ -24,12 +24,12 @@ lastname
 ;
 ".AsSpan();
             var body = parser.FindBody(inSql, out var start, out var end);
-            var expectBody = inSql.Slice(28, 93).ToString();
+            var expectBody = inSql.Slice(28, 92).ToString();
 
             Assert.Multiple(() =>
             {
                 Assert.That(start, Is.EqualTo(28));
-                Assert.That(end, Is.EqualTo(121));
+                Assert.That(end, Is.EqualTo(120));
             });
 
             var bodyStr = body.ToString();
