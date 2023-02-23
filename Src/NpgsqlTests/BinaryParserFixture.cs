@@ -15,7 +15,7 @@ namespace NpgsqlTests
 COPY readfixtureperson 
 (
 id,
-~ReinterpretAs:id~
+~Reinterpret::id~
 readfixtureidentification_id,
 firstname,
 middlename,
