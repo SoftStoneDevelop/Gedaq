@@ -4,7 +4,7 @@ using Gedaq.Enums;
 
 namespace Gedaq.DbConnection.GeneratorsQuery
 {
-    internal class DbQueryGenerator : QueryBaseGenerator
+    internal class DbQueryGenerator : BaseGenerator
     {
         DbQueryRead _queryReadGenerator = new DbQueryRead();
         DbQueryScalarAndNonQuery _queryScalarAndNonQuery = new DbQueryScalarAndNonQuery();

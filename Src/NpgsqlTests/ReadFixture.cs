@@ -1,7 +1,6 @@
 ﻿using Gedaq.Npgsql.Attributes;
 using NUnit.Framework;
 using System;
-using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 

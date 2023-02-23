@@ -4,7 +4,7 @@ using Gedaq.Enums;
 
 namespace Gedaq.DbConnection.GeneratorsBatch
 {
-    internal class DbQueryBatchGenerator : QueryBaseGenerator
+    internal class DbQueryBatchGenerator : BaseGenerator
     {
         DbQueryBatchRead _batchRead = new DbQueryBatchRead();
         DbQueryBatchScalarNoQuery _batchScalarNoQuery = new DbQueryBatchScalarNoQuery();

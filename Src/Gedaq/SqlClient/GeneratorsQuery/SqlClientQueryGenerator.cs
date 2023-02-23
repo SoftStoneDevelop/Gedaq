@@ -6,7 +6,7 @@ using Gedaq.SqlClient.Model;
 
 namespace Gedaq.SqlClient.GeneratorsQuery
 {
-    internal class SqlClientQueryGenerator : QueryBaseGenerator
+    internal class SqlClientQueryGenerator : BaseGenerator
     {
         SqlClientQueryRead _queryReadGenerator = new SqlClientQueryRead();
         SqlClientQueryScalarAndNonQuery _queryScalarAndNonQuery = new SqlClientQueryScalarAndNonQuery();

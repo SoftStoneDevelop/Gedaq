@@ -9,7 +9,7 @@ using System.Text;
 
 namespace Gedaq.Base
 {
-    internal abstract class QueryBaseGenerator
+    internal abstract class BaseGenerator
     {
         protected StringBuilder _methodCode = new StringBuilder();
 

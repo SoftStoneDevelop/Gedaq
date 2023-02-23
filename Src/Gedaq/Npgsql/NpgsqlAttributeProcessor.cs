@@ -1,6 +1,7 @@
 ﻿using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
+using Gedaq.Npgsql.Generators;
 using Gedaq.Npgsql.GeneratorsBatch;
 using Gedaq.Npgsql.GeneratorsQuery;
 using Gedaq.Npgsql.Model;
@@ -58,7 +59,7 @@ namespace Gedaq.Npgsql
 
                 if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BinaryExportAttribute"))
                 {
-                    ProcessBatchPart(attribute, containsType);
+                    ProcessBinaryExport(attribute, containsType);
                     continue;
                 }
             }
@@ -262,6 +263,14 @@ namespace Gedaq.Npgsql
                 context.AddSource($"{batchRead.MethodName}NpgsqlExtension.g.cs", batchReadGenerator.GetCode());
             }
             _readBatch.Clear();
+
+            var binaryExportGenerator = new BinaryExportGenerator();
+            foreach (var binaryExport in _binaryExports)
+            {
+                binaryExportGenerator.Generate(binaryExport);
+                context.AddSource($"{binaryExport.MethodName}NpgsqlExtension.g.cs", binaryExportGenerator.GetCode());
+            }
+            _binaryExports.Clear();
         }
     }
 }

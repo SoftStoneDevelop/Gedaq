@@ -14,7 +14,7 @@ using System.Text;
 
 namespace Gedaq.Npgsql.GeneratorsQuery
 {
-    internal class NpgsqlQueryGenerator : QueryBaseGenerator
+    internal class NpgsqlQueryGenerator : BaseGenerator
     {
         NpgsqlQueryRead _queryReadGenerator = new NpgsqlQueryRead();
         NpgsqlQueryScalarAndNonQuery _queryScalarAndNonQuery = new NpgsqlQueryScalarAndNonQuery();
