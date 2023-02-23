@@ -565,20 +565,20 @@ namespace Gedaq
                         continue;
                     }
 
-                    if (!char.IsLetter(_query[i]))
+                    if (!char.IsLetterOrDigit(_query[i]))
                     {
                         if(_query[i] == '~')
                         {
                             if(_reinterpretName.Length == 0)
                             {
-                                throw new Exception(@"Reinterpret name cannot be empty or contain not letter");
+                                throw new Exception(@"Reinterpret name cannot be empty or contain not letter or digital");
                             }
 
                             _currentIndex += index + 1;
                             return true;
                         }
 
-                        throw new NotSupportedException("Reinterpret name support only letter characters");
+                        throw new NotSupportedException("Reinterpret name support only letter/digital characters");
                     }
                     else
                     {
