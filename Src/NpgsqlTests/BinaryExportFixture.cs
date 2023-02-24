@@ -1,7 +1,9 @@
 ﻿using Gedaq.Npgsql.Attributes;
 using NpgsqlTests.Model;
 using NUnit.Framework;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace NpgsqlTests
 {
@@ -21,11 +23,26 @@ lastname,
 readfixtureidentification_id
 ~EndInner::Identification~
 ) TO STDOUT (FORMAT BINARY)
-", "BinaryExportTable", typeof(ReadFixtureModel))]
+", 
+            "BinaryExportTable",
+            typeof(ReadFixtureModel), 
+            Gedaq.Common.Enums.MethodType.Sync | Gedaq.Common.Enums.MethodType.Async
+            )]
         public void BinaryExportTable()
         {
             var list = _dataSource.OpenConnection().BinaryExportTable().ToList();
+            BinaryExportTableCheck(list);
+        }
 
+        [Test]
+        public async Task BinaryExportTableAsync()
+        {
+            var list = await _dataSource.OpenConnection().BinaryExportTableAsync().ToListAsync();
+            BinaryExportTableCheck(list);
+        }
+
+        private void BinaryExportTableCheck(List<ReadFixtureModel> list)
+        {
             Assert.That(list, Has.Count.EqualTo(10));
 
             Assert.Multiple(() =>
@@ -71,11 +88,26 @@ LEFT JOIN readfixtureidentification i ON i.id = p.readfixtureidentification_id
 LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
 ORDER BY p.id ASC
 ) TO STDOUT (FORMAT BINARY)
-", "BinaryExportSubquery", typeof(ReadFixtureModel))]
+", 
+            "BinaryExportSubquery",
+            typeof(ReadFixtureModel),
+            Gedaq.Common.Enums.MethodType.Sync | Gedaq.Common.Enums.MethodType.Async
+            )]
         public void BinaryExportSubquery()
         {
             var list = _dataSource.OpenConnection().BinaryExportSubquery().ToList();
+            BinaryExportSubqueryCheck(list);
+        }
 
+        [Test]
+        public async Task BinaryExportSubqueryAsync()
+        {
+            var list = await _dataSource.OpenConnection().BinaryExportSubqueryAsync().ToListAsync();
+            BinaryExportSubqueryCheck(list);
+        }
+
+        private void BinaryExportSubqueryCheck(List<ReadFixtureModel> list)
+        {
             Assert.That(list, Has.Count.EqualTo(10));
 
             Assert.Multiple(() =>
