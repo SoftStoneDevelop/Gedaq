@@ -108,7 +108,7 @@ namespace Gedaq.Base.Batch
                 return first.MapTypeName.GetFullTypeName();
             }
 
-            var firstField = first.Aliases.GetFirstFieldInQuery();
+            var firstField = first.Aliases.AllFieldsOrderByPosition().First();
             first.MapTypeName.GetPropertyOrFieldName(firstField.Name, out _, out var type);
             return type.GetFullTypeName(true);
         }

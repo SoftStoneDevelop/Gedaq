@@ -73,7 +73,7 @@ namespace Gedaq.Base.Query
                 return source.MapTypeName.GetFullTypeName();
             }
 
-            var firstField = source.Aliases.GetFirstFieldInQuery();
+            var firstField = source.Aliases.AllFieldsOrderByPosition().First();
             source.MapTypeName.GetPropertyOrFieldName(firstField.Name, out _, out var type);
             return type.GetFullTypeName(true);
         }

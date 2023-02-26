@@ -9,6 +9,7 @@ using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 
@@ -275,23 +276,14 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
                     {Tabs(pair.Tabs)}else
                     {Tabs(pair.Tabs)}{{
 ");
-                var inDeepStack = new Stack<Aliases>();
-                inDeepStack.Push(pair.Aliases);
-                while (inDeepStack.Count != 0)
+                var needSkip = pair.Aliases.AllFieldsOrderByPosition().Count;
+                for ( var i = 0; i < needSkip; i++)
                 {
-                    var alias = inDeepStack.Pop();
-                    foreach (var item in alias.Fields)
-                    {
-                        _methodCode.Append($@"
+                    _methodCode.Append($@"
                     {Tabs(pair.Tabs)}    {await}export.Skip{async}{cancellation};
 ");
-                    }
-
-                    foreach (var inner in alias.InnerEntities)
-                    {
-                        inDeepStack.Push(inner);
-                    }
                 }
+
                 _methodCode.Append($@"
                     {Tabs(pair.Tabs)}}}
 ");

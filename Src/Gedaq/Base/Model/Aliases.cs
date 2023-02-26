@@ -42,24 +42,34 @@ namespace Gedaq.Base.Model
 
         public bool IsRoot => EntityName == null;
         public List<Aliases> InnerEntities = new List<Aliases>();
+        List<Field> _allFields = null;
 
-        public Field GetFirstFieldInQuery()
+        public List<Field> AllFieldsOrderByPosition()
         {
-            var allFields = new List<Field>();
+            if(_allFields == null)
+            {
+                _allFields = new List<Field>();
+            }
+            else
+            {
+                return _allFields;
+            }
 
             var entities = new Stack<Aliases>();
             entities.Push(this);
             while (entities.Count != 0)
             {
                 var current = entities.Pop();
-                allFields.AddRange(current.Fields);
+                _allFields.AddRange(current.Fields);
                 foreach (var inner in current.InnerEntities)
                 {
                     entities.Push(inner);
                 }
             }
 
-            return allFields.OrderBy(f => f.Position).First();
+            _allFields = _allFields.OrderBy(f => f.Position).ToList();
+
+            return _allFields;
         }
     }
 }

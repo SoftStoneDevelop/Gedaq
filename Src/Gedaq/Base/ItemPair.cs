@@ -2,6 +2,7 @@
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Gedaq.Base
@@ -78,7 +79,7 @@ namespace Gedaq.Base
                 return true;
             }
 
-            if(nextField.Position < nextInner.GetFirstFieldInQuery().Position)
+            if(nextField.Position < nextInner.AllFieldsOrderByPosition().First().Position)
             {
                 _lastProcessedField++;
                 field = nextField;
