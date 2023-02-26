@@ -43,23 +43,51 @@ namespace Gedaq.Base
         public ItemPair Parent { get; private set; }
         public int Tabs { get; private set; }
 
+        public bool HaveUnprocess => 
+            (Aliases.Fields.Count != 0 && (_lastProcessedField == -1 || _lastProcessedField != Aliases.Fields.Count - 1)) ||
+            (Aliases.InnerEntities.Count != 0 && (_lastProcessedInner == -1 || _lastProcessedInner != Aliases.InnerEntities.Count - 1))
+            ;
 
-        private int _lastProcessField = -1;
-        public bool GetNextField(out Field field)
+        private int _lastProcessedField = -1;
+        private int _lastProcessedInner = -1;
+
+        public bool GetUnprocessFieldOrInnerAlias(out Field field, out Aliases inner)
         {
-            if(Aliases.Fields.Count == 0)
+            field = null;
+            inner = null;
+
+            var nextField = (Aliases.Fields.Count != 0 && Aliases.Fields.Count - 1 != _lastProcessedField) ? Aliases.Fields[_lastProcessedField + 1] : null;
+            var nextInner = (Aliases.InnerEntities.Count != 0 && Aliases.InnerEntities.Count - 1 != _lastProcessedInner) ? Aliases.InnerEntities[_lastProcessedInner + 1] : null;
+
+            if(nextField == null && nextInner == null)
             {
-                field = null;
                 return false;
             }
 
-            field = Aliases.Fields[++_lastProcessField];
-            return true;
-        }
+            if(nextField == null)
+            {
+                _lastProcessedInner++;
+                inner = nextInner;
+                return true;
+            }
 
-        public void StepBackField()
-        {
-            --_lastProcessField;
+            if(nextInner == null)
+            {
+                _lastProcessedField++;
+                field = nextField;
+                return true;
+            }
+
+            if(nextField.Position < nextInner.GetFirstFieldInQuery().Position)
+            {
+                _lastProcessedField++;
+                field = nextField;
+                return true;
+            }
+
+            _lastProcessedInner++;
+            inner = nextInner;
+            return true;
         }
     }
 }
