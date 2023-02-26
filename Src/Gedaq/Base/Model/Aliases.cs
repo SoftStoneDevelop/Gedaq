@@ -28,7 +28,6 @@ namespace Gedaq.Base.Model
 
         public bool IsRowsAffected { get; private set; }
         public List<Field> Fields = new List<Field>();
-        public List<Field> _allFields;
 
         public string EntityName { get; private set; }
         public string LinkKey { get; private set; }
@@ -46,28 +45,21 @@ namespace Gedaq.Base.Model
 
         public Field GetFirstFieldInQuery()
         {
-            if (_allFields == null)
-            {
-                _allFields = new List<Field>();
-            }
-            else
-            {
-                return _allFields.First();
-            }
+            var allFields = new List<Field>();
 
             var entities = new Stack<Aliases>();
             entities.Push(this);
             while (entities.Count != 0)
             {
                 var current = entities.Pop();
-                _allFields.AddRange(current.Fields);
+                allFields.AddRange(current.Fields);
                 foreach (var inner in current.InnerEntities)
                 {
                     entities.Push(inner);
                 }
             }
 
-            return _allFields.First(); ;
+            return allFields.OrderBy(f => f.Position).First();
         }
     }
 }

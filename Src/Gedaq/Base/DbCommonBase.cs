@@ -116,7 +116,7 @@ namespace Gedaq.Base
             )
         {
             var aliases = new Stack<ItemPair>();
-            aliases.Push(new ItemPair(rootAliase, rootMapTypeName, "item"));
+            aliases.Push(new ItemPair(rootAliase, rootMapTypeName, "item", 0));
 
             var itemId = 0;
             int tabs = -1;
@@ -125,64 +125,7 @@ namespace Gedaq.Base
                 var pair = aliases.Pop();
                 if (pair.Parent != null)
                 {
-                    if(pair.Aliases.HaveLinkKey)
-                    {
-                        var linkField = pair.Aliases.GetLinkField();
-                        builder.Append($@"
-                    {Tabs(pair.Tabs)}if(!{(methodType == MethodType.Async ? "await " : "")}reader.IsDBNull{(methodType == MethodType.Async ? "Async" : "")}({linkField.Position}))
-                    {Tabs(pair.Tabs)}{{
-                    {Tabs(pair.Tabs)}    var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
-");
-                        SetFields(pair, builder, false);
-                    }
-                    else
-                    {
-                        builder.Append($@" 
-                    {Tabs(pair.Tabs)}    {pair.MapTypeName.GetFullTypeName()}{(pair.MapTypeName.TypeKind != TypeKind.Class ? "?" : "")} {pair.ItemName} = null;
-");
-                        SetFields(pair, builder, true);
-
-                    }
-
-                    
-                    if (pair.Aliases.InnerEntities.Count == 0)
-                    {
-                        var current = pair;
-                        while (current.Parent != null)
-                        {
-                            if(current.Aliases.HaveLinkKey)
-                            {
-                                builder.Append($@"
-                    {Tabs(current.Tabs)}    {current.Parent.ItemName}.{current.PropertyName} = {current.ItemName};
-                    {Tabs(current.Tabs)}}}
-");
-                            }
-                            else
-                            {
-                                builder.Append($@"
-                    {Tabs(current.Tabs)}if({current.ItemName} != null)
-                    {Tabs(current.Tabs)}{{
-");
-                                if(!current.Parent.Aliases.IsRoot)
-                                {
-                                    builder.Append($@"
-                    {Tabs(current.Tabs)}    if({current.Parent.ItemName} == null)
-                    {Tabs(current.Tabs)}    {{
-                    {Tabs(current.Tabs)}        {current.Parent.ItemName} = new {current.Parent.MapTypeName.GetFullTypeName()}();
-                    {Tabs(current.Tabs)}    }}
-");
-                                }
-                                builder.Append($@"
-                    {Tabs(current.Tabs)}    {current.Parent.ItemName}.{current.PropertyName} = {current.ItemName};
-                    {Tabs(current.Tabs)}}}
-");
-                            }
-
-                            current = current.Parent;
-                        }
-
-                        continue;
-                    }
+                    ProcessInnerEntity(methodType, pair, builder);
                 }
                 else//is root
                 {
@@ -199,11 +142,72 @@ namespace Gedaq.Base
                     {
                         var alias = pair.Aliases.InnerEntities[i];
                         pair.MapTypeName.GetPropertyOrFieldName(alias.EntityName, out var propertyName, out var pairType);
-                        var newPair = new ItemPair(alias, pairType, $"item{++itemId}", propertyName);
-                        newPair.Parent = pair;
-                        newPair.Tabs = tabs;
+                        var newPair = new ItemPair(alias, pairType, $"item{++itemId}", pair, propertyName, tabs);
                         aliases.Push(newPair);
                     }
+                }
+            }
+        }
+
+        private void ProcessInnerEntity(
+            MethodType methodType,
+            ItemPair pair,
+            StringBuilder builder
+            )
+        {
+            if (pair.Aliases.HaveLinkKey)
+            {
+                var linkField = pair.Aliases.GetLinkField();
+                builder.Append($@"
+                    {Tabs(pair.Tabs)}if(!{(methodType == MethodType.Async ? "await " : "")}reader.IsDBNull{(methodType == MethodType.Async ? "Async" : "")}({linkField.Position}))
+                    {Tabs(pair.Tabs)}{{
+                    {Tabs(pair.Tabs)}    var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
+");
+                SetFields(pair, builder, false);
+            }
+            else
+            {
+                builder.Append($@" 
+                    {Tabs(pair.Tabs)}    {pair.MapTypeName.GetFullTypeName()}{(pair.MapTypeName.TypeKind != TypeKind.Class ? "?" : "")} {pair.ItemName} = null;
+");
+                SetFields(pair, builder, true);
+
+            }
+
+            if (pair.Aliases.InnerEntities.Count == 0)
+            {
+                var current = pair;
+                while (current.Parent != null)
+                {
+                    if (current.Aliases.HaveLinkKey)
+                    {
+                        builder.Append($@"
+                    {Tabs(current.Tabs)}    {current.Parent.ItemName}.{current.PropertyName} = {current.ItemName};
+                    {Tabs(current.Tabs)}}}
+");
+                    }
+                    else
+                    {
+                        builder.Append($@"
+                    {Tabs(current.Tabs)}if({current.ItemName} != null)
+                    {Tabs(current.Tabs)}{{
+");
+                        if (!current.Parent.Aliases.IsRoot)
+                        {
+                            builder.Append($@"
+                    {Tabs(current.Tabs)}    if({current.Parent.ItemName} == null)
+                    {Tabs(current.Tabs)}    {{
+                    {Tabs(current.Tabs)}        {current.Parent.ItemName} = new {current.Parent.MapTypeName.GetFullTypeName()}();
+                    {Tabs(current.Tabs)}    }}
+");
+                        }
+                        builder.Append($@"
+                    {Tabs(current.Tabs)}    {current.Parent.ItemName}.{current.PropertyName} = {current.ItemName};
+                    {Tabs(current.Tabs)}}}
+");
+                    }
+
+                    current = current.Parent;
                 }
             }
         }
