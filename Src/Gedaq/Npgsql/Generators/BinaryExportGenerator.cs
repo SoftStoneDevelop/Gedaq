@@ -196,40 +196,65 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
             var await = isAsync ? "await " : "";
 
             var aliases = new Stack<ItemPair>();
-            aliases.Push(new ItemPair(rootAliase, rootMapTypeName, "item", 0));
+            {
+                var root = new ItemPair(rootAliase, rootMapTypeName, "item", 0);
+                aliases.Push(root);
+                _methodCode.Append($@"
+                    var {root.ItemName} = new {root.MapTypeName.GetFullTypeName()}();
+");
+            }
 
             var itemId = 0;
-            int tabs = -1;
             while (aliases.Count != 0)
             {
                 var pair = aliases.Pop();
-                if (pair.Parent != null)
+                if (!pair.HaveUnprocess)
                 {
-                    ProcessInnerEntity(methodType, pair, await, async, cancellation);
-                }
-                else//is root
-                {
-                    _methodCode.Append($@"
-                    var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
-");
-                    SetFields(pair, true, methodType);
+                    //close brackets and set
+                    EndInnerEntity(methodType, pair, await, async, cancellation);
+                    continue;
                 }
 
-                if (pair.Aliases.InnerEntities.Count != 0)
+                if (!pair.GetUnprocessFieldOrInnerAlias(out var field, out var inner))
                 {
-                    ++tabs;
-                    for (var i = 0; i < pair.Aliases.InnerEntities.Count; i++)
+                    throw new InvalidOperationException();
+                }
+
+                aliases.Push(pair);
+
+                if (field != null)
+                {
+                    SetFields(field, pair, methodType);
+                    continue;
+                }
+
+                if (inner != null)
+                {
+                    pair.MapTypeName.GetPropertyOrFieldName(inner.EntityName, out var propertyName, out var pairType);
+                    var newPair = new ItemPair(inner, pairType, $"item{++itemId}", pair, propertyName, pair.Tabs + 1);
+                    aliases.Push(newPair);
+
+                    if (newPair.Aliases.HaveLinkKey)
                     {
-                        var alias = pair.Aliases.InnerEntities[i];
-                        pair.MapTypeName.GetPropertyOrFieldName(alias.EntityName, out var propertyName, out var pairType);
-                        var newPair = new ItemPair(alias, pairType, $"item{++itemId}", pair, propertyName, tabs);
-                        aliases.Push(newPair);
+                        var linkField = newPair.Aliases.GetLinkField();
+                        _methodCode.Append($@"
+                    {Tabs(newPair.Tabs)}if(!export.IsNull)
+                    {Tabs(newPair.Tabs)}{{
+                    {Tabs(newPair.Tabs)}    var {newPair.ItemName} = new {newPair.MapTypeName.GetFullTypeName()}();
+");
                     }
+                    else
+                    {
+                        _methodCode.Append($@" 
+                    {Tabs(newPair.Tabs)}    {newPair.MapTypeName.GetFullTypeName()}{(newPair.MapTypeName.TypeKind != TypeKind.Class ? "?" : "")} {newPair.ItemName} = null;
+");
+                    }
+                    continue;
                 }
             }
         }
 
-        private void ProcessInnerEntity(
+        private void EndInnerEntity(
             MethodType methodType,
             ItemPair pair,
             string await,
@@ -237,133 +262,105 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
             string cancellation
             )
         {
+            if(pair.HaveUnprocess || pair.Parent == null)
+            {
+                return;
+            }
+
             if (pair.Aliases.HaveLinkKey)
             {
-                var linkField = pair.Aliases.GetLinkField();
                 _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}if(!export.IsNull)
+                    {Tabs(pair.Tabs)}    {pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
+                    {Tabs(pair.Tabs)}}}
+                    {Tabs(pair.Tabs)}else
                     {Tabs(pair.Tabs)}{{
-                    {Tabs(pair.Tabs)}    var {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
 ");
-                SetFields(pair, false, methodType);
+                var inDeepStack = new Stack<Aliases>();
+                inDeepStack.Push(pair.Aliases);
+                while (inDeepStack.Count != 0)
+                {
+                    var alias = inDeepStack.Pop();
+                    foreach (var item in alias.Fields)
+                    {
+                        _methodCode.Append($@"
+                    {Tabs(pair.Tabs)}    {await}export.Skip{async}{cancellation};
+");
+                    }
+
+                    foreach (var inner in alias.InnerEntities)
+                    {
+                        inDeepStack.Push(inner);
+                    }
+                }
+                _methodCode.Append($@"
+                    {Tabs(pair.Tabs)}}}
+");
             }
             else
             {
-                _methodCode.Append($@" 
-                    {Tabs(pair.Tabs)}    {pair.MapTypeName.GetFullTypeName()}{(pair.MapTypeName.TypeKind != TypeKind.Class ? "?" : "")} {pair.ItemName} = null;
+                _methodCode.Append($@"
+                    {Tabs(pair.Tabs)}if({pair.ItemName} != null)
+                    {Tabs(pair.Tabs)}{{
 ");
-                SetFields(pair, true, methodType);
-
-            }
-
-            if (pair.Aliases.InnerEntities.Count == 0)
-            {
-                var current = pair;
-                while (current.Parent != null)
+                if (!pair.Parent.Aliases.IsRoot)
                 {
-                    if (current.Aliases.HaveLinkKey)
-                    {
-                        _methodCode.Append($@"
-                    {Tabs(current.Tabs)}    {current.Parent.ItemName}.{current.PropertyName} = {current.ItemName};
-                    {Tabs(current.Tabs)}}}
-                    {Tabs(current.Tabs)}else
-                    {Tabs(current.Tabs)}{{
+                    _methodCode.Append($@"
+                    {Tabs(pair.Tabs)}    if({pair.Parent.ItemName} == null)
+                    {Tabs(pair.Tabs)}    {{
+                    {Tabs(pair.Tabs)}        {pair.Parent.ItemName} = new {pair.Parent.MapTypeName.GetFullTypeName()}();
+                    {Tabs(pair.Tabs)}    }}
 ");
-                        var inDeepStack = new Stack<Aliases>();
-                        inDeepStack.Push(current.Aliases);
-                        while (inDeepStack.Count != 0)
-                        {
-                            var alias = inDeepStack.Pop();
-                            foreach (var item in alias.Fields)
-                            {
-                                _methodCode.Append($@"
-                    {Tabs(current.Tabs)}    {await}export.Skip{async}{cancellation};
-");
-                            }
-
-                            foreach (var inner in alias.InnerEntities)
-                            {
-                                inDeepStack.Push(inner);
-                            }
-                        }
-                        _methodCode.Append($@"
-                    {Tabs(current.Tabs)}}}
-");
-                    }
-                    else
-                    {
-                        _methodCode.Append($@"
-                    {Tabs(current.Tabs)}if({current.ItemName} != null)
-                    {Tabs(current.Tabs)}{{
-");
-                        if (!current.Parent.Aliases.IsRoot)
-                        {
-                            _methodCode.Append($@"
-                    {Tabs(current.Tabs)}    if({current.Parent.ItemName} == null)
-                    {Tabs(current.Tabs)}    {{
-                    {Tabs(current.Tabs)}        {current.Parent.ItemName} = new {current.Parent.MapTypeName.GetFullTypeName()}();
-                    {Tabs(current.Tabs)}    }}
-");
-                        }
-                        _methodCode.Append($@"
-                    {Tabs(current.Tabs)}    {current.Parent.ItemName}.{current.PropertyName} = {current.ItemName};
-                    {Tabs(current.Tabs)}}}
-");
-                    }
-
-                    current = current.Parent;
                 }
+                _methodCode.Append($@"
+                    {Tabs(pair.Tabs)}    {pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
+                    {Tabs(pair.Tabs)}}}
+");
             }
         }
 
-        private void SetFields(ItemPair pair, bool createItemIfNull, MethodType methodType)
+        private void SetFields(Field field, ItemPair pair, MethodType methodType)
         {
             var isAsync = methodType == MethodType.Async;
             var async = isAsync ? "Async" : "";
             var cancelation = isAsync ? "(cancellationToken)" : "()"; ;
             var await = isAsync ? "await " : "";
 
-            var tabs = pair.Tabs;
-            for (int i = 0; i < pair.Aliases.Fields.Count; i++)
+            pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
+            _methodCode.Append($@"
+                        {Tabs(pair.Tabs)}if(!export.IsNull)
+                        {Tabs(pair.Tabs)}{{
+");
+
+            if (pair.Parent != null && !pair.Aliases.HaveLinkKey)
             {
-                var field = pair.Aliases.Fields[i];
-                pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
                 _methodCode.Append($@"
-                        {Tabs(tabs)}if(!export.IsNull)
-                        {Tabs(tabs)}{{
-");
-
-                if (createItemIfNull)
-                {
-                    _methodCode.Append($@"
-                            {Tabs(tabs)}if({pair.ItemName} == null)
-                            {Tabs(tabs)}{{
-                                {Tabs(tabs)} {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
-                            {Tabs(tabs)}}}
-");
-                }
-
-                if (propertyType.IsNullableType())
-                {
-                    _methodCode.Append($@"
-                            {Tabs(tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>{cancelation};
-");
-                }
-                else
-                {
-                    _methodCode.Append($@"
-                            {Tabs(tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName()}>{cancelation};
-");
-                }
-
-                _methodCode.Append($@"
-                        {Tabs(tabs)}}}
-                        {Tabs(tabs)}else
-                        {Tabs(tabs)}{{
-                        {Tabs(tabs)}    {await} export.Skip{async}{cancelation};
-                        {Tabs(tabs)}}}
+                            {Tabs(pair.Tabs)}if({pair.ItemName} == null)
+                            {Tabs(pair.Tabs)}{{
+                                {Tabs(pair.Tabs)} {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
+                            {Tabs(pair.Tabs)}}}
 ");
             }
+
+            if (propertyType.IsNullableType())
+            {
+                _methodCode.Append($@"
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>{cancelation};
+");
+            }
+            else
+            {
+                _methodCode.Append($@"
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName()}>{cancelation};
+");
+            }
+
+            _methodCode.Append($@"
+                        {Tabs(pair.Tabs)}}}
+                        {Tabs(pair.Tabs)}else
+                        {Tabs(pair.Tabs)}{{
+                        {Tabs(pair.Tabs)}    {await} export.Skip{async}{cancelation};
+                        {Tabs(pair.Tabs)}}}
+");
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

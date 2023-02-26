@@ -118,7 +118,7 @@ namespace Gedaq.Base
             var aliases = new Stack<ItemPair>();
             {
                 var root = new ItemPair(rootAliase, rootMapTypeName, "item", 0);
-                aliases.Push(new ItemPair(rootAliase, rootMapTypeName, "item", 0));
+                aliases.Push(root);
                 builder.Append($@"
                     var {root.ItemName} = new {root.MapTypeName.GetFullTypeName()}();
 ");
