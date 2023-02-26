@@ -28,6 +28,12 @@ namespace Gedaq.Npgsql.Model
 
         public void SetAliases(Aliases aliases)
         {
+            if(NpgSqlDbTypes == null)
+            {
+                Aliases = aliases;
+                return;
+            }
+
             var fields = aliases.AllFieldsOrderByPosition();
             if (NpgSqlDbTypes?.Length != fields.Count)
             {

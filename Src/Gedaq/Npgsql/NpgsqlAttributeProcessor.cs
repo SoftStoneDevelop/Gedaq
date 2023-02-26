@@ -295,7 +295,7 @@ namespace Gedaq.Npgsql
             foreach (var binaryImport in _binaryImports)
             {
                 binaryImportGenerator.Generate(binaryImport);
-                context.AddSource($"{binaryImport.MethodName}NpgsqlExtension.g.cs", binaryExportGenerator.GetCode());
+                context.AddSource($"{binaryImport.MethodName}NpgsqlExtension.g.cs", binaryImportGenerator.GetCode());
             }
             _binaryImports.Clear();
         }
