@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace Gedaq.Npgsql.Model
 {
-    internal class BinaryExport
+    internal class BinaryImport
     {
         public NpgsqlSourceType SourceType { get; private set; }
         public string Query;
@@ -18,21 +18,40 @@ namespace Gedaq.Npgsql.Model
         public string MethodName { get; protected set; }
         public MethodType MethodType { get; protected set; }
         public INamedTypeSymbol ContainTypeName { get; protected set; }
-        public Aliases Aliases;
+        public Aliases Aliases { get; protected set; }
 
-        private BinaryExport()
+        private int[] NpgSqlDbTypes;
+
+        private BinaryImport()
         {
         }
 
-        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out BinaryExport method)
+        public void SetAliases(Aliases aliases)
+        {
+            var fields = aliases.AllFieldsOrderByPosition();
+            if (NpgSqlDbTypes?.Length != fields.Count)
+            {
+                throw new Exception("The number of NpgSqlDbTypes and columns in the query does not match.");
+            }
+
+            for (int i = 0; i < fields.Count; i++)
+            {
+                Field field = fields[i];
+                field.AdditionalInfo = new NpgsqlFieldInfo(NpgSqlDbTypes[i]);
+            }
+
+            Aliases = aliases;
+        }
+
+        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out BinaryImport method)
         {
             method = null;
-            if (namedArguments.Length != 5)
+            if (namedArguments.Length != 6)
             {
                 return false;
             }
 
-            var methodSource = new BinaryExport();
+            var methodSource = new BinaryImport();
             if (!methodSource.FillQuery(namedArguments[0]))
             {
                 return false;
@@ -48,12 +67,17 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!methodSource.FillMethodType(namedArguments[3]))
+            if (!methodSource.FillNpgsqlDbTypes(namedArguments[3]))
             {
                 return false;
             }
 
-            if (!methodSource.FillSourceType(namedArguments[4]))
+            if (!methodSource.FillMethodType(namedArguments[4]))
+            {
+                return false;
+            }
+
+            if (!methodSource.FillSourceType(namedArguments[5]))
             {
                 return false;
             }
@@ -107,6 +131,32 @@ namespace Gedaq.Npgsql.Model
             }
 
             MapTypeName = typeParam;
+            return true;
+        }
+
+        protected bool FillNpgsqlDbTypes(TypedConstant argument)
+        {
+            if (!(argument.Type is IArrayTypeSymbol arrayTypeSymbol) ||
+                arrayTypeSymbol.Rank != 1 ||
+                arrayTypeSymbol.ElementType.TypeKind != TypeKind.Enum ||
+                !(arrayTypeSymbol.ElementType is INamedTypeSymbol elementType) ||
+                !elementType.IsAssignableFrom("NpgsqlTypes", "NpgsqlDbType")
+                )
+            {
+                return false;
+            }
+
+            if(argument.IsNull)
+            {
+                return true;
+            }
+
+            NpgSqlDbTypes = new int[argument.Values.Length];
+            for (int i = 0; i < argument.Values.Length; i++)
+            {
+                NpgSqlDbTypes[i] = (int)argument.Values[i].Value;
+            }
+
             return true;
         }
 

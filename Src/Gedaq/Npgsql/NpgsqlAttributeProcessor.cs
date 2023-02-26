@@ -20,6 +20,7 @@ namespace Gedaq.Npgsql
         private List<NpgsqlQuery> _read = new List<NpgsqlQuery>();
         private List<NpgsqlQueryBatch> _readBatch = new List<NpgsqlQueryBatch>();
         private List<BinaryExport> _binaryExports = new List<BinaryExport>();
+        private List<BinaryImport> _binaryImports = new List<BinaryImport>();
 
         Dictionary<string, NpgsqlQuery> _readTemp = new Dictionary<string,NpgsqlQuery>();
         Dictionary<string, List<NpgsqlParametr>> _parametrsTemp = new Dictionary<string, List<NpgsqlParametr>>();
@@ -60,6 +61,12 @@ namespace Gedaq.Npgsql
                 if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BinaryExportAttribute"))
                 {
                     ProcessBinaryExport(attribute, containsType);
+                    continue;
+                }
+
+                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BinaryImportAttribute"))
+                {
+                    ProcessBinaryImport(attribute, containsType);
                     continue;
                 }
             }
@@ -246,6 +253,18 @@ namespace Gedaq.Npgsql
             _binaryExports.Add(binaryExport);
         }
 
+        private void ProcessBinaryImport(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
+        {
+            if (!BinaryImport.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var binaryImport))
+            {
+                throw new Exception($"Unknown {nameof(BinaryExport)} constructor");
+            }
+
+            var aliases = _binaryParser.Parse(ref binaryImport.Query);
+            binaryImport.SetAliases(aliases);
+            _binaryImports.Add(binaryImport);
+        }
+
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)
         {
             var readGenerator = new NpgsqlQueryGenerator();
@@ -271,6 +290,14 @@ namespace Gedaq.Npgsql
                 context.AddSource($"{binaryExport.MethodName}NpgsqlExtension.g.cs", binaryExportGenerator.GetCode());
             }
             _binaryExports.Clear();
+
+            var binaryImportGenerator = new BinaryImportGenerator();
+            foreach (var binaryImport in _binaryImports)
+            {
+                binaryImportGenerator.Generate(binaryImport);
+                context.AddSource($"{binaryImport.MethodName}NpgsqlExtension.g.cs", binaryExportGenerator.GetCode());
+            }
+            _binaryImports.Clear();
         }
     }
 }

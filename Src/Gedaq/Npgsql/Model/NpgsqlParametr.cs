@@ -57,7 +57,7 @@ namespace Gedaq.Npgsql.Model
 
             if(!SetNpgSqlDbType(namedArguments[3], result))
             {
-
+                return false;
             }
 
             if (!SetSize(namedArguments[4], result))

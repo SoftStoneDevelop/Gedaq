@@ -89,6 +89,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
                 _methodCode.Append($@"
         public static async IAsyncEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}> {binaryExport.MethodName}Async(
             this {sourceType.ToTypeName()} {sourceType.ToParametrName()},
+            TimeSpan? timeout = null,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
         {{
@@ -97,7 +98,10 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
             else
             {
                 _methodCode.Append($@"
-        public static IEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}> {binaryExport.MethodName}(this {sourceType.ToTypeName()} {sourceType.ToParametrName()})
+        public static IEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}> {binaryExport.MethodName}(
+            this {sourceType.ToTypeName()} {sourceType.ToParametrName()},
+            TimeSpan? timeout = null
+            )
         {{
 ");
             }
@@ -110,26 +114,50 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
             )
         {
             var isAsync = methodType == MethodType.Async;
-            var async = isAsync ? "Async(cancellationToken)" : "()";
+            var cancellation = isAsync ? "cancellationToken" : "";
+            var async = isAsync ? "Async" : "";
             var await = isAsync ? "await " : "";
 
             if (sourceType == NpgsqlSourceType.NpgsqlDataSource)
             {
                 _methodCode.Append($@"
-            {await}using var {NpgsqlSourceType.NpgsqlConnection.ToParametrName()} = {await} {sourceType.ToParametrName()}.OpenConnection{async};
+            {NpgsqlSourceType.NpgsqlConnection.ToTypeName()} {NpgsqlSourceType.NpgsqlConnection.ToParametrName()} = {await} {sourceType.ToParametrName()}.OpenConnection{async}({cancellation});
 ");
             }
 
             _methodCode.Append($@"
-            {await}using (var export = {await}connection.BeginBinaryExport{(isAsync ? "Async" : "")}(@""
-{binaryExport.Query}
-""{(isAsync ? ", cancellationToken" : "")}))
+            NpgsqlBinaryExporter export = null;
+            try
             {{
-                while({await}export.StartRow{async} != -1)
+                export = {await}{NpgsqlSourceType.NpgsqlConnection.ToParametrName()}.BeginBinaryExport{async}(@""
+{binaryExport.Query}
+""{(isAsync ? ", cancellationToken" : "")});
+                if(timeout.HasValue)
                 {{
+                    export.Timeout = timeout.Value;
+                }}
+
+                while({await}export.StartRow{async}({cancellation}) != -1)
+                {{  
 ");
             YieldItem(binaryExport, methodType);
             _methodCode.Append($@"
+                }}
+
+                {await}export.Dispose{async}();
+                export = null;
+            }}
+            finally
+            {{
+                if(export != null)
+                {{
+                    try
+                    {{
+                        {await}export.Cancel{async}();
+                    }}
+                    catch {{ /* ignore */ }}
+
+                    {await}export.Dispose{async}();
                 }}
             }}
 ");

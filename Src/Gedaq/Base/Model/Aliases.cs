@@ -6,12 +6,6 @@ using System.Text;
 
 namespace Gedaq.Base.Model
 {
-    internal class Field
-    {
-        public string Name { get; set; }
-        public int Position { get; set; }
-    }
-
     internal class Aliases
     {
         public Aliases(bool isRowsAffected = false)
