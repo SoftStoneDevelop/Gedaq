@@ -11,12 +11,12 @@ namespace Gedaq.MySqlConnector.Helpers
             {
                 case MySqlConnectorSourceType.MySqlConnection:
                 {
-                    return "Npgsql.MySqlConnection";
+                    return "MySqlConnector.MySqlConnection";
                 }
 
                 case MySqlConnectorSourceType.MySqlDataSource:
                 {
-                    return "Npgsql.MySqlDataSource";
+                    return "MySqlConnector.MySqlDataSource";
                 }
 
                 default:
