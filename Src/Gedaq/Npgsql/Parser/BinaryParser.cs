@@ -17,10 +17,10 @@ namespace Gedaq.Npgsql.Parser
             var body = FindBody(querySpan, out var start, out var end);
             var afterInstruction = 0;
             if (QueryParser.FindInstruction(body, out afterInstruction, out var instructionType) &&
-                (instructionType == InstructionType.Delete || instructionType == InstructionType.Insert)
+                (instructionType == InstructionType.Delete || instructionType == InstructionType.Insert || instructionType == InstructionType.Update)
                 )
             {
-                throw new Exception("Instruction delete and insert not support in subquery");
+                throw new Exception("Instruction delete/insert/update not support in subquery");
             }
 
             if(afterInstruction == -1)

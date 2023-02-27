@@ -15,7 +15,7 @@ namespace Gedaq.Parser
 {
     internal class QueryParser
     {
-        static readonly string[] _knownCommands = new string[] { "select", "insert", "delete" };
+        static readonly string[] _knownCommands = new string[] { "select", "insert", "delete", "update" };
 
         public Aliases Parse(ref string query)
         {
@@ -32,7 +32,7 @@ namespace Gedaq.Parser
                 throw new Exception("The instruction is followed by no parameters.");
             }
 
-            if (instructionType == InstructionType.Delete || instructionType == InstructionType.Insert)
+            if (instructionType == InstructionType.Delete || instructionType == InstructionType.Insert || instructionType == InstructionType.Update)
             {
                 return new Aliases(true);
             }
@@ -153,24 +153,29 @@ namespace Gedaq.Parser
             switch (index)
             {
                 case 0:
-                    {
-                        return InstructionType.Select;
-                    }
+                {
+                    return InstructionType.Select;
+                }
 
                 case 1:
-                    {
-                        return InstructionType.Insert;
-                    }
+                {
+                    return InstructionType.Insert;
+                }
 
                 case 2:
-                    {
-                        return InstructionType.Delete;
-                    }
+                {
+                    return InstructionType.Delete;
+                }
+
+                case 3:
+                {
+                    return InstructionType.Update;
+                }
 
                 default:
-                    {
-                        return InstructionType.None;
-                    }
+                {
+                    return InstructionType.None;
+                }
             }
         }
     }

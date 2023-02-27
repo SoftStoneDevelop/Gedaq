@@ -6,6 +6,7 @@ using System;
 namespace DbConnectionTests
 {
     [TestFixture]
+    [Parallelizable(ParallelScope.Self)]
     internal partial class QueryFixture : BaseFixture
     {
         #region Init and destroy

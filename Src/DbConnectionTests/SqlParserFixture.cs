@@ -6,6 +6,7 @@ using System;
 namespace DbConnectionTests
 {
     [TestFixture]
+    [Parallelizable(ParallelScope.All)]
     internal partial class SqlParserFixture
     {
         [Test]

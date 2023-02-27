@@ -10,7 +10,8 @@ using System.Linq;
 namespace DbConnectionTests
 {
     [TestFixture]
-    internal class NpgsqlQueryFixture : BaseFixture
+    [Parallelizable(ParallelScope.Self)]
+    internal partial class NpgsqlQueryFixture : BaseFixture
     {
         #region Init and destroy
 

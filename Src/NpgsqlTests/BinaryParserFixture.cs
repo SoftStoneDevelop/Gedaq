@@ -5,6 +5,7 @@ using System;
 namespace NpgsqlTests
 {
     [TestFixture]
+    [Parallelizable(ParallelScope.All)]
     internal partial class BinaryParserFixture
     {
         [Test]

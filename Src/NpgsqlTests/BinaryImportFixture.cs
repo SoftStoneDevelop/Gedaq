@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 namespace NpgsqlTests
 {
     [TestFixture]
+    [Parallelizable(ParallelScope.Self)]
     internal class BinaryImportFixture : BaseFixture
     {
         #region Init and destroy

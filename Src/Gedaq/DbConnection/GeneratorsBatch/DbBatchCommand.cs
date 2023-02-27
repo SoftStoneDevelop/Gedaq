@@ -29,7 +29,7 @@ namespace Gedaq.DbConnection.GeneratorsBatch
             if (methodType == MethodType.Async)
             {
                 builder.Append($@"
-            await fakeCommand.DisposeAsync(cancellationToken).ConfigureAwait(false);
+            await fakeCommand.DisposeAsync().ConfigureAwait(false);
 ");
             }
             else

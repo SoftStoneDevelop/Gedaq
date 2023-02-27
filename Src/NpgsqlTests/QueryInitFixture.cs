@@ -7,6 +7,7 @@ using System;
 namespace NpgsqlTests
 {
     [TestFixture]
+    [Parallelizable(ParallelScope.Self)]
     internal partial class ReadFixture : BaseFixture
     {
         #region Init and destroy

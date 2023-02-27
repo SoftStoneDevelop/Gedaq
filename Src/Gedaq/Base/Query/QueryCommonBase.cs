@@ -65,6 +65,11 @@ namespace Gedaq.Base.Query
         {
             if (source.Aliases.IsRowsAffected)
             {
+                if (source.QueryType != Enums.QueryType.NonQuery)
+                {
+                    throw new Exception("Use NonQuery for update/delete/inser command");
+                }
+
                 return "System.Int32";
             }
 

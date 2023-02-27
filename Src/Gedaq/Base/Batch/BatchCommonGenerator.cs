@@ -100,6 +100,11 @@ namespace Gedaq.Base.Batch
             var first = source.QueryBases().First().query;
             if (first.Aliases.IsRowsAffected)
             {
+                if(source.QueryType != Enums.QueryType.NonQuery)
+                {
+                    throw new Exception("Use NonQuery for update/delete/inser command");
+                }
+
                 return "System.Int32";
             }
 
