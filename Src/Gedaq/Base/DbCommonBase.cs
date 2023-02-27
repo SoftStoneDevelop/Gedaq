@@ -13,6 +13,10 @@ namespace Gedaq.Base
     {
         public abstract string GetParametrValue(BaseParametr parametr, int index, string source);
 
+        public abstract string TransactionType();
+
+        public abstract bool CanSetTransaction { get; }
+
         public abstract string CommandType();
 
         public abstract string ReaderType();

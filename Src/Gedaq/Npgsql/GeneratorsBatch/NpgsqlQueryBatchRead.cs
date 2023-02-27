@@ -19,7 +19,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             {
                 StartReadMethod(source, MethodType.Sync, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
-                EndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Sync);
                 ReadMethodBody(source, true, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Sync, builder);
                 EndMethod(builder);
             }
@@ -28,7 +28,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             {
                 StartReadMethod(source, MethodType.Sync, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
-                EndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Sync);
                 ReadMethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Sync, builder);
                 EndMethod(builder);
             }
@@ -41,7 +41,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             {
                 StartReadMethod(source, MethodType.Async, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
-                AsyncEndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Async);
                 ReadMethodBody(source, true, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Async, builder);
                 EndMethod(builder);
             }
@@ -50,7 +50,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             {
                 StartReadMethod(source, MethodType.Async, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
-                AsyncEndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Async);
                 ReadMethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Sync, builder);
                 EndMethod(builder);
             }

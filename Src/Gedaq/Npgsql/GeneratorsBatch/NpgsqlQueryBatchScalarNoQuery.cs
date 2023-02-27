@@ -19,7 +19,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             {
                 StartScalarMethod(source, MethodType.Sync, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
-                EndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Sync);
                 ScalarMethodBody(source, true, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Sync, QueryType.Scalar, builder);
                 EndMethod(builder);
             }
@@ -28,7 +28,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             {
                 StartScalarMethod(source, MethodType.Sync, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
-                EndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Sync);
                 ScalarMethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Sync, QueryType.Scalar, builder);
                 EndMethod(builder);
             }
@@ -41,7 +41,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             {
                 StartScalarMethod(source, MethodType.Async, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
-                AsyncEndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Async);
                 ScalarMethodBody(source, true, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Async, QueryType.Scalar, builder);
                 EndMethod(builder);
             }
@@ -50,7 +50,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             {
                 StartScalarMethod(source, MethodType.Async, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
-                AsyncEndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Async);
                 ScalarMethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Async, QueryType.Scalar, builder);
                 EndMethod(builder);
             }
@@ -63,7 +63,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             {
                 StartNonQueryMethod(source, MethodType.Sync, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
-                EndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Sync);
                 ScalarMethodBody(source, true, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Sync, QueryType.NonQuery, builder);
                 EndMethod(builder);
             }
@@ -72,7 +72,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             {
                 StartNonQueryMethod(source, MethodType.Sync, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
-                EndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Sync);
                 ScalarMethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Sync, QueryType.NonQuery, builder);
                 EndMethod(builder);
             }
@@ -85,7 +85,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             {
                 StartNonQueryMethod(source, MethodType.Async, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
-                AsyncEndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Async);
                 ScalarMethodBody(source, true, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Async, QueryType.NonQuery, builder);
                 EndMethod(builder);
             }
@@ -94,7 +94,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             {
                 StartNonQueryMethod(source, MethodType.Async, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
-                AsyncEndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Async);
                 ScalarMethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Async, QueryType.NonQuery, builder);
                 EndMethod(builder);
             }

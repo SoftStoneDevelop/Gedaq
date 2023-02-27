@@ -46,11 +46,13 @@ ORDER BY p.id ASC
         [Test]
         public void CreateToClassCommand()
         {
-            using var command = _dataSource.OpenConnection().CreateToClass1Command(false, 10);
+            using var command = _dataSource.OpenConnection().CreateToClass1Command(false);
+            command.SetToClass1Parametrs(78, 10);
             Assert.That(command.IsPrepared, Is.EqualTo(false));
             Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
             using var command2 = _dataSource.OpenConnection().CreateToClass1Command(true);
+            command.SetToClass1Parametrs(45);
             Assert.That(command2.IsPrepared, Is.EqualTo(true));
             Assert.That(command2.CommandTimeout, Is.EqualTo(30));
             
@@ -62,11 +64,13 @@ ORDER BY p.id ASC
         [Test]
         public async Task CreateToClassCommandAsync()
         {
-            await using var command = await _dataSource.OpenConnection().CreateToClass1CommandAsync(false, timeout: 10);
+            await using var command = await _dataSource.OpenConnection().CreateToClass1CommandAsync(false);
+            command.SetToClass1Parametrs(78, 10);
             Assert.That(command.IsPrepared, Is.EqualTo(false));
             Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
             await using var command2 = await _dataSource.OpenConnection().CreateToClass1CommandAsync(true);
+            command.SetToClass1Parametrs(45);
             Assert.That(command2.IsPrepared, Is.EqualTo(true));
             Assert.That(command2.CommandTimeout, Is.EqualTo(30));
             

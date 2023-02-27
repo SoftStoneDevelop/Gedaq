@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsBatch;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using System.Text;
@@ -32,7 +33,7 @@ namespace Gedaq.Base.Query
                 QueryCommon.DefaultSourceType(),
                 QueryCommon.DefaultSourceTypeParametr()
                 );
-            EndMethodParametrs(builder);
+            EndMethodParametrs(builder, MethodType.Sync);
             ReadMethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Sync, builder);
             EndMethod(builder);
         }
@@ -46,7 +47,7 @@ namespace Gedaq.Base.Query
                 QueryCommon.DefaultSourceType(),
                 QueryCommon.DefaultSourceTypeParametr()
                 );
-            AsyncEndMethodParametrs(builder, true);
+            EndMethodParametrs(builder, MethodType.Async);
             ReadMethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Async, builder);
             EndMethod(builder);
         }
@@ -104,20 +105,26 @@ namespace Gedaq.Base.Query
 ");
         }
 
-        protected static void EndMethodParametrs(StringBuilder builder)
+        protected void EndMethodParametrs(StringBuilder builder, MethodType methodType)
         {
             builder.Append($@",
             int? timeout = null
-        )
-        {{
 ");
-        }
+            if (QueryCommon.CanSetTransaction)
+            {
+                builder.Append($@",
+            {QueryCommon.TransactionType()} transaction = null
+");
+            }
 
-        protected static void AsyncEndMethodParametrs(StringBuilder builder, bool enumerator)
-        {
-            builder.Append($@",
-            int? timeout = null,
-            {(enumerator ? "[EnumeratorCancellation] " : "")}CancellationToken cancellationToken = default
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@",
+            [EnumeratorCancellation] CancellationToken cancellationToken = default
+");
+            }
+
+            builder.Append($@"
         )
         {{
 ");
@@ -147,8 +154,8 @@ namespace Gedaq.Base.Query
             }
             var createCommand =
                 methodType == MethodType.Async ?
-                $"await Create{source.MethodName}CommandAsync({sourceParametrName}, false, cancellationToken, timeout)" :
-                $"Create{source.MethodName}Command({sourceParametrName}, false, timeout)"
+                $"await Create{source.MethodName}CommandAsync({sourceParametrName}, false, cancellationToken)" :
+                $"Create{source.MethodName}Command({sourceParametrName}, false)"
                 ;
             builder.Append($@"
             {QueryCommon.CommandType()} command = null;
@@ -157,10 +164,8 @@ namespace Gedaq.Base.Query
             {{
                 command = {createCommand};
 ");
-            if (source.HaveParametrs())
-            {
-                QueryCommon.WriteSetParametrs(source, builder);
-            }
+            QueryCommon.WriteSetParametrs(source, builder);
+
             builder.Append($@"
                 reader = {await}command.ExecuteReader{async};
 ");

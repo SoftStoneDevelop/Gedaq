@@ -4,11 +4,19 @@ using Gedaq.Helpers;
 using Gedaq.Npgsql.Helpers;
 using Gedaq.SqlClient.Helpers;
 using Microsoft.CodeAnalysis;
+using System;
 
 namespace Gedaq.Npgsql.GeneratorsQuery
 {
     internal class NpgsqlQueryCommon : QueryCommonBase
     {
+        public override bool CanSetTransaction => false;
+
+        public override string TransactionType()
+        {
+            throw new NotImplementedException();
+        }
+
         public override string BatchType()
         {
             return "NpgsqlBatch";

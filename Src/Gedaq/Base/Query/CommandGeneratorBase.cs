@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsBatch;
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
@@ -55,18 +56,13 @@ namespace Gedaq.Base.Query
 ");
             }
 
-            builder.Append($@",
-            int? timeout = null
+            builder.Append($@"
         )
         {{
             var command = {sourceParametrName}.CreateCommand();
             command.CommandText = @""
 {source.Query}
 "";
-            if(timeout.HasValue)
-            {{
-                command.CommandTimeout = timeout.Value;
-            }}
 ");
 
             if (source.HaveParametrs())
@@ -299,42 +295,70 @@ namespace Gedaq.Base.Query
             StringBuilder builder
             )
         {
-            if (!source.HaveParametrs())
-            {
-                return;
-            }
-
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static  void Set{source.MethodName}Parametrs(
             this {QueryCommon.CommandType()} command
 ");
-            foreach (var parametr in source.BaseParametrs())
+            if(source.HaveParametrs())
             {
-                if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                foreach (var parametr in source.BaseParametrs())
                 {
-                    builder.Append($@",
+                    if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                    {
+                        builder.Append($@",
             in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}
 ");
+                    }
                 }
+            }
+
+            builder.Append($@",
+            int? timeout = null
+
+            ");
+
+            if (QueryCommon.CanSetTransaction)
+            {
+                builder.Append($@",
+            {QueryCommon.TransactionType()} transaction = null
+");
             }
 
             builder.Append($@"
         )
         {{
-");
-            int index = -1;
-            foreach (var parametr in source.BaseParametrs())
-            {
-                ++index;
-                if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
-                {
-                    continue;
-                }
 
-                if (parametr.Type.IsNullableType())
+            if(timeout.HasValue)
+            {{
+                command.CommandTimeout = timeout.Value;
+            }}
+");
+
+            if (QueryCommon.CanSetTransaction)
+            {
+                builder.Append($@"
+            if(transaction != null)
+            {{
+                command.Transaction = transaction;
+            }}
+");
+            }
+
+            if(source.HaveParametrs())
+            {
+                int index = -1;
+                foreach (var parametr in source.BaseParametrs())
                 {
-                    builder.Append($@"
+                    ++index;
+                    if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                    {
+                        continue;
+                    }
+
+                    if (parametr.Type.IsNullableType())
+                    {
+                        builder.Append($@"
             if({parametr.VariableName()}.HasValue)
             {{
                 {QueryCommon.GetParametrValue(parametr, index, "command")} = {parametr.VariableName()}.Value;
@@ -344,12 +368,13 @@ namespace Gedaq.Base.Query
                 {QueryCommon.GetParametrValue(parametr, index, "command")} = DBNull.Value;
             }}
 ");
-                }
-                else
-                {
-                    builder.Append($@"
+                    }
+                    else
+                    {
+                        builder.Append($@"
                 {QueryCommon.GetParametrValue(parametr, index, "command")} = {parametr.VariableName()};
 ");
+                    }
                 }
             }
 

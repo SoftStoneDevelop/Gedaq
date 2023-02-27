@@ -11,6 +11,13 @@ namespace Gedaq.SqlClient.GeneratorsQuery
 {
     internal class SqlClientQueryCommon : QueryCommonBase
     {
+        public override bool CanSetTransaction => true;
+
+        public override string TransactionType()
+        {
+            return "SqlTransaction";
+        }
+
         public override string BatchType()
         {
             return "SqlBatch";

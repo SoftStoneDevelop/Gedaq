@@ -20,7 +20,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             {
                 StartScalarMethod(source, MethodType.Sync, builder);
                 StartMethodParametrs(source, MySqlConnectorSourceType.MySqlConnection.ToTypeName(), MySqlConnectorSourceType.MySqlConnection.ToParametrName(), builder);
-                EndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Sync);
                 ScalarMethodBody(source, true, MySqlConnectorSourceType.MySqlConnection.ToParametrName(), MethodType.Sync, QueryType.Scalar, builder);
                 EndMethod(builder);
             }
@@ -29,7 +29,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             {
                 StartScalarMethod(source, MethodType.Sync, builder);
                 StartMethodParametrs(source, MySqlConnectorSourceType.MySqlDataSource.ToTypeName(), MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), builder);
-                EndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Sync);
                 ScalarMethodBody(source, false, MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), MethodType.Sync, QueryType.Scalar, builder);
                 EndMethod(builder);
             }
@@ -42,7 +42,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             {
                 StartScalarMethod(source, MethodType.Async, builder);
                 StartMethodParametrs(source, MySqlConnectorSourceType.MySqlConnection.ToTypeName(), MySqlConnectorSourceType.MySqlConnection.ToParametrName(), builder);
-                AsyncEndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Async);
                 ScalarMethodBody(source, true, MySqlConnectorSourceType.MySqlConnection.ToParametrName(), MethodType.Async, QueryType.Scalar, builder);
                 EndMethod(builder);
             }
@@ -51,7 +51,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             {
                 StartScalarMethod(source, MethodType.Async, builder);
                 StartMethodParametrs(source, MySqlConnectorSourceType.MySqlDataSource.ToTypeName(), MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), builder);
-                AsyncEndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Async);
                 ScalarMethodBody(source, false, MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), MethodType.Async, QueryType.Scalar, builder);
                 EndMethod(builder);
             }
@@ -64,7 +64,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             {
                 StartNonQueryMethod(source, MethodType.Sync, builder);
                 StartMethodParametrs(source, MySqlConnectorSourceType.MySqlConnection.ToTypeName(), MySqlConnectorSourceType.MySqlConnection.ToParametrName(), builder);
-                EndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Sync);
                 ScalarMethodBody(source, true, MySqlConnectorSourceType.MySqlConnection.ToParametrName(), MethodType.Sync, QueryType.NonQuery, builder);
                 EndMethod(builder);
             }
@@ -73,7 +73,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             {
                 StartNonQueryMethod(source, MethodType.Sync, builder);
                 StartMethodParametrs(source, MySqlConnectorSourceType.MySqlDataSource.ToTypeName(), MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), builder);
-                EndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Sync);
                 ScalarMethodBody(source, false, MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), MethodType.Sync, QueryType.NonQuery, builder);
                 EndMethod(builder);
             }
@@ -86,7 +86,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             {
                 StartNonQueryMethod(source, MethodType.Async, builder);
                 StartMethodParametrs(source, MySqlConnectorSourceType.MySqlConnection.ToTypeName(), MySqlConnectorSourceType.MySqlConnection.ToParametrName(), builder);
-                AsyncEndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Async);
                 ScalarMethodBody(source, true, MySqlConnectorSourceType.MySqlConnection.ToParametrName(), MethodType.Async, QueryType.NonQuery, builder);
                 EndMethod(builder);
             }
@@ -95,7 +95,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             {
                 StartNonQueryMethod(source, MethodType.Async, builder);
                 StartMethodParametrs(source, MySqlConnectorSourceType.MySqlDataSource.ToTypeName(), MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), builder);
-                AsyncEndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Async);
                 ScalarMethodBody(source, false, MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), MethodType.Async, QueryType.NonQuery, builder);
                 EndMethod(builder);
             }

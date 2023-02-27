@@ -43,7 +43,7 @@ namespace Gedaq.Base.Batch
         {
             StartScalarMethod(source, MethodType.Sync, builder);
             StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
-            EndMethodParametrs(builder);
+            EndMethodParametrs(builder, MethodType.Sync);
             ScalarMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.Scalar, builder);
             EndMethod(builder);
         }
@@ -52,7 +52,7 @@ namespace Gedaq.Base.Batch
         {
             StartScalarMethod(source, MethodType.Async, builder);
             StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
-            AsyncEndMethodParametrs(builder);
+            EndMethodParametrs(builder, MethodType.Async);
             ScalarMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Async, QueryType.Scalar, builder);
             EndMethod(builder);
         }
@@ -61,7 +61,7 @@ namespace Gedaq.Base.Batch
         {
             StartNonQueryMethod(source, MethodType.Sync, builder);
             StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
-            EndMethodParametrs(builder);
+            EndMethodParametrs(builder, MethodType.Sync);
             ScalarMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.NonQuery, builder);
             EndMethod(builder);
         }
@@ -70,7 +70,7 @@ namespace Gedaq.Base.Batch
         {
             StartNonQueryMethod(source, MethodType.Async, builder);
             StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
-            AsyncEndMethodParametrs(builder);
+            EndMethodParametrs(builder, MethodType.Async);
             ScalarMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Async, QueryType.NonQuery, builder);
             EndMethod(builder);
         }
@@ -157,20 +157,26 @@ namespace Gedaq.Base.Batch
 ");
         }
 
-        protected void EndMethodParametrs(StringBuilder builder)
+        protected void EndMethodParametrs(StringBuilder builder, MethodType methodType)
         {
             builder.Append($@",
             int? timeout = null
-        )
-        {{
 ");
-        }
+            if (BatchCommon.CanSetTransaction)
+            {
+                builder.Append($@",
+            {BatchCommon.TransactionType()} transaction = null
+");
+            }
 
-        protected void AsyncEndMethodParametrs(StringBuilder builder)
-        {
-            builder.Append($@",
-            int? timeout = null,
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@",
             CancellationToken cancellationToken = default
+");
+            }
+
+            builder.Append($@"
         )
         {{
 ");
@@ -201,8 +207,8 @@ namespace Gedaq.Base.Batch
             }
             var createBatch =
                 methodType == MethodType.Async ?
-                $"await Create{source.MethodName}BatchAsync({sourceParametrName}, false, cancellationToken, timeout)" :
-                $"Create{source.MethodName}Batch({sourceParametrName}, false, timeout)"
+                $"await Create{source.MethodName}BatchAsync({sourceParametrName}, false, cancellationToken)" :
+                $"Create{source.MethodName}Batch({sourceParametrName}, false)"
                 ;
             builder.Append($@"
             {BatchCommon.BatchType()} batch = null;
@@ -210,10 +216,7 @@ namespace Gedaq.Base.Batch
             {{
                 batch = {createBatch};
 ");
-            if (source.HaveParametrs)
-            {
-                BatchCommon.WriteSetParametrs(source, builder);
-            }
+            BatchCommon.WriteSetParametrs(source, builder);
 
             if (queryType == QueryType.Scalar)
             {

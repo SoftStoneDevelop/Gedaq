@@ -37,23 +37,36 @@ namespace Gedaq.Base.Query
                 command.Set{source.MethodName}Parametrs(
 ");
             var afterFirst = false;
-            foreach (var parametr in source.BaseParametrs())
+            if(source.HaveParametrs())
             {
-                if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                foreach (var parametr in source.BaseParametrs())
                 {
-                    continue;
-                }
+                    if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                    {
+                        continue;
+                    }
 
-                if (afterFirst)
-                {
-                    builder.Append($@",");
-                }
+                    if (afterFirst)
+                    {
+                        builder.Append($@",");
+                    }
 
-                builder.Append($@"
+                    builder.Append($@"
                     in {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
 ");
 
-                afterFirst |= true;
+                    afterFirst |= true;
+                }
+            }
+
+            builder.Append($@"{(afterFirst ? "," : "")}
+                    timeout
+");
+            if (CanSetTransaction)
+            {
+                builder.Append($@",
+                    transaction
+");
             }
 
             builder.Append($@"

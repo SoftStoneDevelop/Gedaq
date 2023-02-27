@@ -24,7 +24,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName()
                     );
-                EndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Sync);
                 ReadMethodBody(source, true, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Sync, builder);
                 EndMethod(builder);
             }
@@ -38,7 +38,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName()
                     );
-                EndMethodParametrs(builder);
+                EndMethodParametrs(builder, MethodType.Sync);
                 ReadMethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Sync, builder);
                 EndMethod(builder);
             }
@@ -56,7 +56,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName()
                     );
-                AsyncEndMethodParametrs(builder, true);
+                EndMethodParametrs(builder, MethodType.Async);
                 ReadMethodBody(source, true, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Async, builder);
                 EndMethod(builder);
             }
@@ -70,7 +70,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName()
                     );
-                AsyncEndMethodParametrs(builder, true);
+                EndMethodParametrs(builder, MethodType.Async);
                 ReadMethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Async, builder);
                 EndMethod(builder);
             }

@@ -195,10 +195,12 @@ ORDER BY p.id ASC
         public void CreateCommand()
         {
             using var connection = OpenConnection();
-            using var command = connection.CreateMsSqlToClass1Command(false, 10);
+            using var command = connection.CreateMsSqlToClass1Command(false);
+            command.SetMsSqlToClass1Parametrs(26, 10);
             Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
             using var command2 = connection.CreateMsSqlToClass1Command(true);
+            command2.SetMsSqlToClass1Parametrs(15);
             Assert.That(command2.CommandTimeout, Is.EqualTo(30));
         }
 
@@ -206,10 +208,12 @@ ORDER BY p.id ASC
         public async Task CreateCommandAsync()
         {
             using var connection = OpenConnection();
-            await using var command = await connection.CreateMsSqlToClass1CommandAsync(false, timeout: 10);
+            await using var command = await connection.CreateMsSqlToClass1CommandAsync(false);
+            command.SetMsSqlToClass1Parametrs(26, 10);
             Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
             await using var command2 = await connection.CreateMsSqlToClass1CommandAsync(true);
+            command2.SetMsSqlToClass1Parametrs(15);
             Assert.That(command2.CommandTimeout, Is.EqualTo(30));
         }
 

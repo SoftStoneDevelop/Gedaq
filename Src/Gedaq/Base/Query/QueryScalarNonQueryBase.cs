@@ -43,7 +43,7 @@ namespace Gedaq.Base.Query
         {
             StartNonQueryMethod(source, MethodType.Sync, builder);
             QueryMethodParametrs(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), builder);
-            EndMethodParametrs(builder);
+            EndMethodParametrs(builder, MethodType.Sync);
             MethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.NonQuery, builder);
             EndMethod(builder);
         }
@@ -52,7 +52,7 @@ namespace Gedaq.Base.Query
         {
             StartNonQueryMethod(source, MethodType.Async, builder);
             QueryMethodParametrs(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), builder);
-            AsyncEndMethodParametrs(builder);
+            EndMethodParametrs(builder, MethodType.Async);
             MethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Async, QueryType.NonQuery, builder);
             EndMethod(builder);
         }
@@ -61,7 +61,7 @@ namespace Gedaq.Base.Query
         {
             StartScalarMethod(source, MethodType.Sync, builder);
             QueryMethodParametrs(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), builder);
-            EndMethodParametrs(builder);
+            EndMethodParametrs(builder, MethodType.Sync);
             MethodBody(source, true, "connection", MethodType.Sync, QueryType.Scalar, builder);
             EndMethod(builder);
         }
@@ -70,7 +70,7 @@ namespace Gedaq.Base.Query
         {
             StartScalarMethod(source, MethodType.Async, builder);
             QueryMethodParametrs(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), builder);
-            AsyncEndMethodParametrs(builder);
+            EndMethodParametrs(builder, MethodType.Async);
             MethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Async, QueryType.Scalar, builder);
             EndMethod(builder);
         }
@@ -143,20 +143,26 @@ namespace Gedaq.Base.Query
             }
         }
 
-        protected void EndMethodParametrs(StringBuilder builder)
+        protected void EndMethodParametrs(StringBuilder builder, MethodType methodType)
         {
             builder.Append($@",
             int? timeout = null
-        )
-        {{
 ");
-        }
+            if (QueryCommon.CanSetTransaction)
+            {
+                builder.Append($@",
+            {QueryCommon.TransactionType()} transaction = null
+");
+            }
 
-        protected void AsyncEndMethodParametrs(StringBuilder builder)
-        {
-            builder.Append($@",
-            int? timeout = null,
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@",
             CancellationToken cancellationToken = default
+");
+            }
+
+            builder.Append($@"
         )
         {{
 ");
@@ -194,8 +200,8 @@ namespace Gedaq.Base.Query
             }
             var createCommand =
                 methodType == MethodType.Async ?
-                $"await Create{source.MethodName}CommandAsync({sourceParametrName}, false, cancellationToken, timeout)" :
-                $"Create{source.MethodName}Command({sourceParametrName}, false, timeout)"
+                $"await Create{source.MethodName}CommandAsync({sourceParametrName}, false, cancellationToken)" :
+                $"Create{source.MethodName}Command({sourceParametrName}, false)"
                 ;
             builder.Append($@"
             {QueryCommon.CommandType()} command = null;
@@ -203,10 +209,7 @@ namespace Gedaq.Base.Query
             {{
                 command = {createCommand};
 ");
-            if (source.HaveParametrs())
-            {
-                QueryCommon.WriteSetParametrs(source, builder);
-            }
+            QueryCommon.WriteSetParametrs(source, builder);
 
             if (queryType == QueryType.Scalar)
             {

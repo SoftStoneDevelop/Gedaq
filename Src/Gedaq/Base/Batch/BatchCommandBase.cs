@@ -184,20 +184,13 @@ namespace Gedaq.Base.Batch
 ");
             }
 
-            builder.Append($@",
-            int? timeout = null
+            builder.Append($@"
         )
         {{
             var batch = {sourceParametrName}.CreateBatch();
 
 ");
             CreateFakeCommand(sourceParametrName, builder);
-            builder.Append($@"
-            if(timeout.HasValue)
-            {{
-                batch.Timeout = timeout.Value;
-            }}
-");
             int index = -1;
             foreach (var item in source.QueryBases())
             {
@@ -290,79 +283,105 @@ namespace Gedaq.Base.Batch
             StringBuilder builder
             )
         {
-            if (!source.HaveParametrs)
-            {
-                return;
-            }
-
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static  void Set{source.MethodName}Parametrs(
             this {BatchCommon.BatchType()} batch
 ");
-            foreach (var batchCommand in source.QueryBases())
+            if(source.HaveParametrs)
             {
-                if (!batchCommand.query.HaveParametrs())
+                foreach (var batchCommand in source.QueryBases())
                 {
-                    continue;
-                }
-
-                foreach (var parametr in batchCommand.query.BaseParametrs())
-                {
-                    if(parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                    if (!batchCommand.query.HaveParametrs())
                     {
-                        builder.Append($@",
+                        continue;
+                    }
+
+                    foreach (var parametr in batchCommand.query.BaseParametrs())
+                    {
+                        if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                        {
+                            builder.Append($@",
             in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{batchCommand.number}
 ");
+                        }
                     }
                 }
+            }
+
+            builder.Append($@",
+            int? timeout = null
+");
+
+            if (BatchCommon.CanSetTransaction)
+            {
+                builder.Append($@",
+            {BatchCommon.TransactionType()} transaction = null
+");
             }
 
             builder.Append($@"
         )
         {{
+
+            if(timeout.HasValue)
+            {{
+                batch.Timeout = timeout.Value;
+            }}
 ");
-            int indexBatch = -1;
-            var commandBatchDefine = false;
-            foreach (var batchCommand in source.QueryBases())
+            if (BatchCommon.CanSetTransaction)
             {
-                ++indexBatch;
-                if (!batchCommand.query.HaveParametrs())
-                {
-                    continue;
-                }
+                builder.Append($@"
+            if(transaction != null)
+            {{
+                batch.Transaction = transaction;
+            }}
+");
+            }
 
-                var indexP = -1;
-                var commandSet = false;
-
-                foreach (var parametr in batchCommand.query.BaseParametrs())
+            if(source.HaveParametrs)
+            {
+                int indexBatch = -1;
+                var commandBatchDefine = false;
+                foreach (var batchCommand in source.QueryBases())
                 {
-                    ++indexP;
-                    if(parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                    ++indexBatch;
+                    if (!batchCommand.query.HaveParametrs())
                     {
                         continue;
                     }
 
-                    if (commandBatchDefine && !commandSet)
+                    var indexP = -1;
+                    var commandSet = false;
+
+                    foreach (var parametr in batchCommand.query.BaseParametrs())
                     {
-                        builder.Append($@"
+                        ++indexP;
+                        if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                        {
+                            continue;
+                        }
+
+                        if (commandBatchDefine && !commandSet)
+                        {
+                            builder.Append($@"
             batchCommand = batch.BatchCommands[{indexBatch}];
 ");
-                        commandSet = true;
-                    }
+                            commandSet = true;
+                        }
 
-                    if (!commandBatchDefine)
-                    {
-                        builder.Append($@"
+                        if (!commandBatchDefine)
+                        {
+                            builder.Append($@"
             var batchCommand = batch.BatchCommands[{indexBatch}];
 ");
-                        commandBatchDefine = true;
-                        commandSet = true;
-                    }
+                            commandBatchDefine = true;
+                            commandSet = true;
+                        }
 
-                    if (parametr.Type.IsNullableType())
-                    {
-                        builder.Append($@"
+                        if (parametr.Type.IsNullableType())
+                        {
+                            builder.Append($@"
             if({parametr.VariableName()}Batch{batchCommand.number}.HasValue)
             {{
                 {BatchCommon.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number}.Value;
@@ -372,12 +391,13 @@ namespace Gedaq.Base.Batch
                 {BatchCommon.GetParametrValue(parametr, indexP, "batchCommand")} = DBNull.Value;
             }}
 ");
-                    }
-                    else
-                    {
-                        builder.Append($@"
+                        }
+                        else
+                        {
+                            builder.Append($@"
             {BatchCommon.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number};
 ");
+                        }
                     }
                 }
             }

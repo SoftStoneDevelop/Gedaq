@@ -8,6 +8,13 @@ namespace Gedaq.DbConnection.GeneratorsBatch
 {
     internal class DbBatchCommon : BatchCommonGenerator
     {
+        public override bool CanSetTransaction => true;
+
+        public override string TransactionType()
+        {
+            return "DbTransaction";
+        }
+
         public override string BatchType()
         {
             return "DbBatch";

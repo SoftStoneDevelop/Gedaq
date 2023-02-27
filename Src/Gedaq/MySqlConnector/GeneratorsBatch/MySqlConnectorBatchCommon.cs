@@ -7,6 +7,13 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
 {
     internal class MySqlConnectorBatchCommon : BatchCommonGenerator
     {
+        public override bool CanSetTransaction => true;
+
+        public override string TransactionType()
+        {
+            return "MySqlTransaction";
+        }
+
         public override string BatchType()
         {
             return "MySqlBatch";

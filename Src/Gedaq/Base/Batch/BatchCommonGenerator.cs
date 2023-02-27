@@ -54,41 +54,54 @@ namespace Gedaq.Base.Batch
                 batch.Set{batch.MethodName}Parametrs(
 ");
             var haveSuccessIteration = false;
-            foreach (var item in batch.QueryBases())
+            if(batch.HaveParametrs)
             {
-                if (!item.query.HaveParametrs())
+                foreach (var item in batch.QueryBases())
                 {
-                    continue;
-                }
-
-                if (haveSuccessIteration)
-                {
-                    builder.Append($@",");
-                }
-
-                int index = -1;
-                var afterFirst = false;
-                foreach (var parametr in item.query.BaseParametrs())
-                {
-                    ++index;
-                    if(parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                    if (!item.query.HaveParametrs())
                     {
                         continue;
                     }
 
-                    if (afterFirst)
+                    if (haveSuccessIteration)
                     {
                         builder.Append($@",");
                     }
 
-                    builder.Append($@"
+                    int index = -1;
+                    var afterFirst = false;
+                    foreach (var parametr in item.query.BaseParametrs())
+                    {
+                        ++index;
+                        if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                        {
+                            continue;
+                        }
+
+                        if (afterFirst)
+                        {
+                            builder.Append($@",");
+                        }
+
+                        builder.Append($@"
                     in {parametr.VariableName()}Batch{item.number}
 ");
 
-                    afterFirst |= true;
-                }
+                        afterFirst |= true;
+                    }
 
-                haveSuccessIteration |= true;
+                    haveSuccessIteration |= true;
+                }
+            }
+
+            builder.Append($@"{(haveSuccessIteration ? "," : "")}
+                    timeout
+");
+            if(CanSetTransaction)
+            {
+                builder.Append($@",
+                    transaction
+");
             }
 
             builder.Append($@"

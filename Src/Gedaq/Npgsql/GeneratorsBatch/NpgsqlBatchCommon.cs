@@ -3,12 +3,20 @@ using Gedaq.Base.Model;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Helpers;
 using Microsoft.CodeAnalysis;
+using System;
 using System.Collections.Generic;
 
 namespace Gedaq.Npgsql.GeneratorsBatch
 {
     internal class NpgsqlBatchCommon : BatchCommonGenerator
     {
+        public override bool CanSetTransaction => false;
+
+        public override string TransactionType()
+        {
+            throw new NotImplementedException();
+        }
+
         public override string BatchType()
         {
             return "NpgsqlBatch";
