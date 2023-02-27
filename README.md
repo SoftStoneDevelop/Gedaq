@@ -17,6 +17,7 @@ Supported databases(see examples and documentation in the relevant DB package):<
 - [DbConnection](https://github.com/SoftStoneDevelop/Gedaq.DbConnection)
 - [SqlClient](https://github.com/SoftStoneDevelop/Gedaq.SqlClient)
 - [MySqlConnector](https://github.com/SoftStoneDevelop/Gedaq.MySqlConnector)
+- [Oracle.ManagedDataAccess.Core]()
 
 Usage:
 
