@@ -16,6 +16,7 @@ Supported databases(see examples and documentation in the relevant DB package):<
 - [Npgsql](https://github.com/SoftStoneDevelop/Gedaq.Npgsql)
 - [DbConnection](https://github.com/SoftStoneDevelop/Gedaq.DbConnection)
 - [SqlClient](https://github.com/SoftStoneDevelop/Gedaq.SqlClient)
+- [MySqlConnector](https://github.com/SoftStoneDevelop/Gedaq.MySqlConnector)
 
 Usage:
 
