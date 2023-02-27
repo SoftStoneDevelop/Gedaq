@@ -14,8 +14,8 @@ namespace Gedaq.Npgsql.GeneratorsQuery
 
         protected override void ReadMethod(QueryBase source, StringBuilder builder)
         {
-            NpgsqlQuery npgsqlQuery = (NpgsqlQuery)source;
-            if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            NpgsqlQuery query = (NpgsqlQuery)source;
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartReadMethod(source, MethodType.Sync, builder);
                 QueryMethodParametrs(
@@ -29,7 +29,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                 EndMethod(builder);
             }
 
-            if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartReadMethod(source, MethodType.Sync, builder);
                 QueryMethodParametrs(
@@ -46,8 +46,8 @@ namespace Gedaq.Npgsql.GeneratorsQuery
 
         protected override void ReadAsyncMethod(QueryBase source, StringBuilder builder)
         {
-            NpgsqlQuery npgsqlQuery = (NpgsqlQuery)source;
-            if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            NpgsqlQuery query = (NpgsqlQuery)source;
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartReadMethod(source, MethodType.Async, builder);
                 QueryMethodParametrs(
@@ -61,7 +61,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                 EndMethod(builder);
             }
 
-            if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartReadMethod(source, MethodType.Async, builder);
                 QueryMethodParametrs(

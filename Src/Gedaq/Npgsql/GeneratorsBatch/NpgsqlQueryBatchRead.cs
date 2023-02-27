@@ -14,8 +14,8 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 
         protected override void ReadMethod(QueryBatch source, StringBuilder builder)
         {
-            var npgsqlBatch = (NpgsqlQueryBatch)source;
-            if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            var batch = (NpgsqlQueryBatch)source;
+            if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartReadMethod(source, MethodType.Sync, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
@@ -24,20 +24,20 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                 EndMethod(builder);
             }
 
-            if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartReadMethod(source, MethodType.Sync, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
                 EndMethodParametrs(builder);
-                ReadMethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Sync, builder);
+                ReadMethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Sync, builder);
                 EndMethod(builder);
             }
         }
 
         protected override void ReadAsyncMethod(QueryBatch source, StringBuilder builder)
         {
-            var npgsqlBatch = (NpgsqlQueryBatch)source;
-            if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            var batch = (NpgsqlQueryBatch)source;
+            if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartReadMethod(source, MethodType.Async, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
@@ -46,7 +46,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                 EndMethod(builder);
             }
 
-            if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartReadMethod(source, MethodType.Async, builder);
                 StartMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);

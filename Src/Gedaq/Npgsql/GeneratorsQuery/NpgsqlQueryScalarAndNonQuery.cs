@@ -19,8 +19,8 @@ namespace Gedaq.Npgsql.GeneratorsQuery
 
         protected override void NonQueryMethod(QueryBase source, StringBuilder builder)
         {
-            var npgsqlQuery = (NpgsqlQuery)source;
-            if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            var query = (NpgsqlQuery)source;
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartNonQueryMethod(source, MethodType.Sync, builder);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
@@ -29,7 +29,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                 EndMethod(builder);
             }
 
-            if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartNonQueryMethod(source, MethodType.Sync, builder);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
@@ -41,8 +41,8 @@ namespace Gedaq.Npgsql.GeneratorsQuery
 
         protected override void NonQueryMethodAsync(QueryBase source, StringBuilder builder)
         {
-            var npgsqlQuery = (NpgsqlQuery)source;
-            if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            var query = (NpgsqlQuery)source;
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartNonQueryMethod(source, MethodType.Async, builder);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
@@ -51,7 +51,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                 EndMethod(builder);
             }
 
-            if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartNonQueryMethod(source, MethodType.Async, builder);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
@@ -63,8 +63,8 @@ namespace Gedaq.Npgsql.GeneratorsQuery
 
         protected override void ScalarMethod(QueryBase source, StringBuilder builder)
         {
-            var npgsqlQuery = (NpgsqlQuery)source;
-            if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            var query = (NpgsqlQuery)source;
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartScalarMethod(source, MethodType.Sync, builder);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
@@ -73,7 +73,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                 EndMethod(builder);
             }
 
-            if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartScalarMethod(source, MethodType.Sync, builder);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
@@ -85,8 +85,8 @@ namespace Gedaq.Npgsql.GeneratorsQuery
 
         protected override void ScalarMethodAsync(QueryBase source, StringBuilder builder)
         {
-            var npgsqlQuery = (NpgsqlQuery)source;
-            if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            var query = (NpgsqlQuery)source;
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartScalarMethod(source, MethodType.Async, builder);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
@@ -95,7 +95,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                 EndMethod(builder);
             }
 
-            if (npgsqlQuery.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartScalarMethod(source, MethodType.Async, builder);
                 QueryMethodParametrs(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);

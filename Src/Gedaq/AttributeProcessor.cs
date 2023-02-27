@@ -1,14 +1,8 @@
-﻿using Gedaq.DbConnection;
-using Gedaq.Helpers;
+﻿using Gedaq.MySqlConnector;
 using Gedaq.Npgsql;
 using Gedaq.SqlClient;
 using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Xml.Linq;
 
 namespace Gedaq
 {
@@ -17,6 +11,7 @@ namespace Gedaq
         private NpgsqlAttributeProcessor _npgsqlProcessor = new NpgsqlAttributeProcessor();
         private DbConnectionAttributeProcessor _dbConnectionProcessor = new DbConnectionAttributeProcessor();
         private SqlClientAttributeProcessor _sqlClientProcessor = new SqlClientAttributeProcessor();
+        private MySqlConnectorAttributeProcessor _mysqlConnectorProcessor = new MySqlConnectorAttributeProcessor();
 
         public void TryFillFrom(INamedTypeSymbol type)
         {
@@ -39,6 +34,7 @@ namespace Gedaq
             _npgsqlProcessor.ProcessAttributes(attributes, containsType);
             _dbConnectionProcessor.ProcessAttributes(attributes, containsType);
             _sqlClientProcessor.ProcessAttributes(attributes, containsType);
+            _mysqlConnectorProcessor.ProcessAttributes(attributes, containsType);
         }
 
         private void CompleteProcessContainTypes()
@@ -46,6 +42,7 @@ namespace Gedaq
             _npgsqlProcessor.CompleteProcessContainTypes();
             _dbConnectionProcessor.CompleteProcessContainTypes();
             _sqlClientProcessor.CompleteProcessContainTypes();
+            _mysqlConnectorProcessor.CompleteProcessContainTypes();
         }
 
         public void GenerateAndSaveMethods(GeneratorExecutionContext context)
@@ -53,6 +50,7 @@ namespace Gedaq
             _npgsqlProcessor.GenerateAndSaveMethods(context);
             _dbConnectionProcessor.GenerateAndSaveMethods(context);
             _sqlClientProcessor.GenerateAndSaveMethods(context);
+            _mysqlConnectorProcessor.GenerateAndSaveMethods(context);
         }
     }
 }

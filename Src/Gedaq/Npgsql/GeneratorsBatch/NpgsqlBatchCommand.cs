@@ -15,15 +15,15 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 
         protected override void CreateBatchMethods(QueryBatch source, StringBuilder builder)
         {
-            var npgsqlBatch = (NpgsqlQueryBatch)source;
+            var batch = (NpgsqlQueryBatch)source;
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+                if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
                 {
                     CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Sync, builder);
                 }
 
-                if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+                if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
                 {
                     CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Sync, builder);
                 }
@@ -31,12 +31,12 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+                if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
                 {
                     CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Async, builder);
                 }
 
-                if (npgsqlBatch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+                if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
                 {
                     CreateBatchMethod(source, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Async, builder);
                 }
