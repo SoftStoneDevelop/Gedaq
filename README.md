@@ -49,7 +49,7 @@ Let's mark the Person class itself with an attribute:
 
 ```C#
 
-[Gedaq.Npgsql.Attributes.QueryRead(
+[Gedaq.Npgsql.Attributes.Query(
             @"
 SELECT 
     p.id,
