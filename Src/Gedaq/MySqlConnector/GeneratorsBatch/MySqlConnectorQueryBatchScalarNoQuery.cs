@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Batch;
+﻿using Gedaq.Base;
+using Gedaq.Base.Batch;
 using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.MySqlConnector.Enums;
@@ -12,6 +13,9 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
     {
         private readonly MySqlConnectorBatchCommon _batchCommon = new MySqlConnectorBatchCommon();
         protected override BatchCommonGenerator BatchCommon => _batchCommon;
+
+        MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
+        protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void ScalarMethod(QueryBatch source, StringBuilder builder)
         {

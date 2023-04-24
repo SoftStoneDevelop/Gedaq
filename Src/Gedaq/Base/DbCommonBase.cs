@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base.Batch;
+using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
@@ -12,19 +13,6 @@ namespace Gedaq.Base
     internal abstract class DbCommonBase
     {
         public abstract string GetParametrValue(BaseParametr parametr, int index, string source);
-
-        public abstract string TransactionType();
-
-        public abstract bool CanSetTransaction { get; }
-
-        public abstract string CommandType();
-
-        public abstract string ReaderType();
-
-        public abstract string BatchType();
-
-        public abstract string DefaultSourceType();
-        public abstract string DefaultSourceTypeParametr();
 
         public abstract bool IsKnownProviderType(ITypeSymbol type);
 

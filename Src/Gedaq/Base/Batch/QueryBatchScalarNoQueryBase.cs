@@ -13,6 +13,8 @@ namespace Gedaq.Base.Batch
     {
         protected abstract BatchCommonGenerator BatchCommon { get; }
 
+        protected abstract ProviderInfo ProviderInfo { get; }
+
         public void GenerateScalar(QueryBatch source, StringBuilder builder)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
@@ -42,36 +44,36 @@ namespace Gedaq.Base.Batch
         protected virtual void ScalarMethod(QueryBatch source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Sync, builder);
-            StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
+            StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder, MethodType.Sync);
-            ScalarMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.Scalar, builder);
+            ScalarMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.Scalar, builder);
             EndMethod(builder);
         }
 
         protected virtual void ScalarMethodAsync(QueryBatch source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Async, builder);
-            StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
+            StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder, MethodType.Async);
-            ScalarMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Async, QueryType.Scalar, builder);
+            ScalarMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, QueryType.Scalar, builder);
             EndMethod(builder);
         }
 
         protected virtual void NonQueryMethod(QueryBatch source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Sync, builder);
-            StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
+            StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder, MethodType.Sync);
-            ScalarMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.NonQuery, builder);
+            ScalarMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.NonQuery, builder);
             EndMethod(builder);
         }
 
         protected virtual void NonQueryMethodAsync(QueryBatch source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Async, builder);
-            StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
+            StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder, MethodType.Async);
-            ScalarMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Async, QueryType.NonQuery, builder);
+            ScalarMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, QueryType.NonQuery, builder);
             EndMethod(builder);
         }
 
@@ -162,10 +164,10 @@ namespace Gedaq.Base.Batch
             builder.Append($@",
             int? timeout = null
 ");
-            if (BatchCommon.CanSetTransaction)
+            if (ProviderInfo.CanSetTransaction)
             {
                 builder.Append($@",
-            {BatchCommon.TransactionType()} transaction = null
+            {ProviderInfo.TransactionType()} transaction = null
 ");
             }
 
@@ -211,12 +213,12 @@ namespace Gedaq.Base.Batch
                 $"Create{source.MethodName}Batch({sourceParametrName}, false)"
                 ;
             builder.Append($@"
-            {BatchCommon.BatchType()} batch = null;
+            {ProviderInfo.BatchType()} batch = null;
             try
             {{
                 batch = {createBatch};
 ");
-            BatchCommon.WriteSetParametrs(source, builder);
+            BatchCommon.WriteSetParametrs(source, builder, ProviderInfo);
 
             if (queryType == QueryType.Scalar)
             {

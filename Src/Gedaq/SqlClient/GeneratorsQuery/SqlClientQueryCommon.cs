@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.Base.Query;
 using Gedaq.Helpers;
 using Gedaq.SqlClient.Helpers;
@@ -11,28 +12,6 @@ namespace Gedaq.SqlClient.GeneratorsQuery
 {
     internal class SqlClientQueryCommon : QueryCommonBase
     {
-        public override bool CanSetTransaction => true;
-
-        public override string TransactionType()
-        {
-            return "SqlTransaction";
-        }
-
-        public override string BatchType()
-        {
-            return "SqlBatch";
-        }
-
-        public override string CommandType()
-        {
-            return "SqlCommand";
-        }
-
-        public override string ReaderType()
-        {
-            return "SqlDataReader";
-        }
-
         public override string GetParametrValue(BaseParametr parametr, int index, string source)
         {
             return $"{source}.Parameters[{index}].Value";
@@ -62,16 +41,6 @@ namespace Gedaq.SqlClient.GeneratorsQuery
                     throw new NotImplementedException();
                 }
             }
-        }
-
-        public override string DefaultSourceType()
-        {
-            return "SqlConnection";
-        }
-
-        public override string DefaultSourceTypeParametr()
-        {
-            return "connection";
         }
     }
 }

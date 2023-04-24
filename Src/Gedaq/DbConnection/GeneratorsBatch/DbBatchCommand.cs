@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Batch;
+﻿using Gedaq.Base;
+using Gedaq.Base.Batch;
 using Gedaq.Base.Model;
 using Gedaq.DbConnection.Helpers;
 using Gedaq.DbConnection.Model;
@@ -11,6 +12,9 @@ namespace Gedaq.DbConnection.GeneratorsBatch
     {
         private readonly DbBatchCommon _batchCommon = new DbBatchCommon();
         protected override BatchCommonGenerator BatchCommon => _batchCommon;
+
+        private readonly DbProviderInfo _dbProviderInfo = new DbProviderInfo();
+        protected override ProviderInfo ProviderInfo => _dbProviderInfo;
 
         protected override void CreateFakeCommand(string sourceParametrName, StringBuilder builder)
         {

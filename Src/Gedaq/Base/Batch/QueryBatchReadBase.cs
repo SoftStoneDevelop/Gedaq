@@ -10,6 +10,8 @@ namespace Gedaq.Base.Batch
     {
         protected abstract BatchCommonGenerator BatchCommon { get; }
 
+        protected abstract ProviderInfo ProviderInfo { get; }
+
         public void Generate(QueryBatch source, StringBuilder builder)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
@@ -26,18 +28,18 @@ namespace Gedaq.Base.Batch
         protected virtual void ReadMethod(QueryBatch source, StringBuilder builder)
         {
             StartReadMethod(source, MethodType.Sync, builder);
-            StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
+            StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder, MethodType.Sync);
-            ReadMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Sync, builder);
+            ReadMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Sync, builder);
             EndMethod(builder);
         }
 
         protected virtual void ReadAsyncMethod(QueryBatch source, StringBuilder builder)
         {
             StartReadMethod(source, MethodType.Async, builder);
-            StartMethodParametrs(source, BatchCommon.DefaultSourceType(), BatchCommon.DefaultSourceTypeParametr(), builder);
+            StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder, MethodType.Async);
-            ReadMethodBody(source, true, BatchCommon.DefaultSourceTypeParametr(), MethodType.Async, builder);
+            ReadMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, builder);
             EndMethod(builder);
         }
 
@@ -119,13 +121,13 @@ namespace Gedaq.Base.Batch
                 $"Create{source.MethodName}Batch({sourceParametrName}, false)"
                 ;
             builder.Append($@"
-            {BatchCommon.BatchType()} batch = null;
-            {BatchCommon.ReaderType()} reader = null;
+            {ProviderInfo.BatchType()} batch = null;
+            {ProviderInfo.ReaderType()} reader = null;
             try
             {{
                 batch = {createBatch};
 ");
-            BatchCommon.WriteSetParametrs(source, builder);
+            BatchCommon.WriteSetParametrs(source, builder, ProviderInfo);
 
             builder.Append($@"
                 reader = {await}batch.ExecuteReader{async};
@@ -191,10 +193,10 @@ namespace Gedaq.Base.Batch
             builder.Append($@",
             int? timeout = null
 ");
-            if(BatchCommon.CanSetTransaction)
+            if(ProviderInfo.CanSetTransaction)
             {
                 builder.Append($@",
-            {BatchCommon.TransactionType()} transaction = null
+            {ProviderInfo.TransactionType()} transaction = null
 ");
             }
 

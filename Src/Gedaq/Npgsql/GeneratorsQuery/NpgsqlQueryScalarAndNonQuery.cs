@@ -1,7 +1,9 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.Base.Query;
 using Gedaq.Enums;
 using Gedaq.Helpers;
+using Gedaq.MySqlConnector;
 using Gedaq.Npgsql.Enums;
 using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
@@ -16,6 +18,9 @@ namespace Gedaq.Npgsql.GeneratorsQuery
     {
         private readonly NpgsqlQueryCommon _queryCommon = new NpgsqlQueryCommon();
         protected override QueryCommonBase QueryCommon => _queryCommon;
+
+        private readonly NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
+        protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void NonQueryMethod(QueryBase source, StringBuilder builder)
         {

@@ -10,6 +10,8 @@ namespace Gedaq.Base.Query
     {
         protected abstract QueryCommonBase QueryCommon { get; }
 
+        protected abstract ProviderInfo ProviderInfo { get; }
+
         public void Generate(QueryBase source, StringBuilder builder)
         {
             QueryCommon.ThrowExceptionIfOutCannotExist(source);
@@ -30,11 +32,11 @@ namespace Gedaq.Base.Query
             QueryMethodParametrs(
                 source,
                 builder,
-                QueryCommon.DefaultSourceType(),
-                QueryCommon.DefaultSourceTypeParametr()
+                ProviderInfo.DefaultSourceType(),
+                ProviderInfo.DefaultSourceTypeParametr()
                 );
             EndMethodParametrs(builder, MethodType.Sync);
-            ReadMethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Sync, builder);
+            ReadMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Sync, builder);
             EndMethod(builder);
         }
 
@@ -44,11 +46,11 @@ namespace Gedaq.Base.Query
             QueryMethodParametrs(
                 source,
                 builder,
-                QueryCommon.DefaultSourceType(),
-                QueryCommon.DefaultSourceTypeParametr()
+                ProviderInfo.DefaultSourceType(),
+                ProviderInfo.DefaultSourceTypeParametr()
                 );
             EndMethodParametrs(builder, MethodType.Async);
-            ReadMethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Async, builder);
+            ReadMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, builder);
             EndMethod(builder);
         }
 
@@ -84,16 +86,25 @@ namespace Gedaq.Base.Query
 ");
             if (source.HaveParametrs())
             {
-                var index = -1;
                 foreach (var parametr in source.BaseParametrs())
                 {
-                    ++index;
                     if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
                     {
                         builder.Append($@",
             {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
 ");
                     }
+                }
+            }
+
+            if (source.HaveFromatParametrs())
+            {
+                var index = 0;
+                foreach (var parametr in source.FormatParametrs)
+                {
+                    builder.Append($@",
+            System.String {(parametr.HaveName ? parametr.Name : $"format{(index++).ToString()}")}
+");
                 }
             }
         }
@@ -110,10 +121,10 @@ namespace Gedaq.Base.Query
             builder.Append($@",
             int? timeout = null
 ");
-            if (QueryCommon.CanSetTransaction)
+            if (ProviderInfo.CanSetTransaction)
             {
                 builder.Append($@",
-            {QueryCommon.TransactionType()} transaction = null
+            {ProviderInfo.TransactionType()} transaction = null
 ");
             }
 
@@ -152,19 +163,20 @@ namespace Gedaq.Base.Query
             }}
 ");
             }
-            var createCommand =
-                methodType == MethodType.Async ?
-                $"await Create{source.MethodName}CommandAsync({sourceParametrName}, false, cancellationToken)" :
-                $"Create{source.MethodName}Command({sourceParametrName}, false)"
-                ;
+            
             builder.Append($@"
-            {QueryCommon.CommandType()} command = null;
-            {QueryCommon.ReaderType()} reader = null;
+            {ProviderInfo.CommandType()} command = null;
+            {ProviderInfo.ReaderType()} reader = null;
             try
             {{
-                command = {createCommand};
+                command =
 ");
-            QueryCommon.WriteSetParametrs(source, builder);
+            QueryCommon.CreateCommand(source, sourceParametrName, methodType, builder);
+
+            builder.Append($@"
+                ;
+");
+            QueryCommon.WriteSetParametrs(source, builder, ProviderInfo);
 
             builder.Append($@"
                 reader = {await}command.ExecuteReader{async};

@@ -1,5 +1,6 @@
 ﻿using Gedaq.Enums;
 using Gedaq.Helpers;
+using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,11 @@ namespace Gedaq.Base.Model
         public string Query;
         public ITypeSymbol MapTypeName { get; private set; }
         public Aliases Aliases;
+        public FormatParametr[] FormatParametrs;
+        public bool HaveFromatParametrs()
+        {
+            return FormatParametrs != null;
+        }
 
         public bool NeedGenerate;
 

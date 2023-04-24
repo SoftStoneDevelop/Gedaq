@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.DbConnection.GeneratorsBatch;
 using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.DbConnection.Model;
@@ -13,7 +14,7 @@ using System.Linq;
 
 namespace Gedaq.Npgsql
 {
-    internal class DbConnectionAttributeProcessor
+    internal class DbConnectionAttributeProcessor : BaseAttributeProcessor
     {
         private List<DbQuery> _read = new List<DbQuery>();
         private List<DbQueryBatch> _readBatch = new List<DbQueryBatch>();
@@ -25,7 +26,7 @@ namespace Gedaq.Npgsql
 
         private QueryParser _queryParser = new QueryParser();
 
-        public bool ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
+        public void ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
         {
             foreach (var attribute in attributes)
             {
@@ -52,15 +53,16 @@ namespace Gedaq.Npgsql
                     ProcessBatchPart(attribute, containsType);
                     continue;
                 }
-            }
 
-            return false;
+                base.ProcessAttribute(attribute, containsType);
+            }
         }
 
         public void CompleteProcessContainTypes()
         {
             FillReadMethods();
             _parametrsTemp.Clear();
+            _formatsTemp.Clear();
 
             FillBatches();
             _readTemp.Clear();
@@ -97,6 +99,7 @@ namespace Gedaq.Npgsql
 
                     batch.AllSameTypes &= SymbolEqualityComparer.Default.Equals(firstRead.MapTypeName, queryRead.MapTypeName);
                     batch.HaveParametrs |= queryRead.HaveParametrs();
+                    batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
                     batch.Queries.Add((part.BatchNumber, queryRead));
                 }
 
@@ -118,6 +121,7 @@ namespace Gedaq.Npgsql
                 {
                     read.Parametrs = parametrs.ToArray();
                 }
+                AddFormatParametrs(read);
 
                 if (read.QueryType == QueryType.Read)
                 {

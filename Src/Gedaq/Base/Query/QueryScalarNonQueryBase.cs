@@ -11,6 +11,8 @@ namespace Gedaq.Base.Query
     {
         protected abstract QueryCommonBase QueryCommon { get; }
 
+        protected abstract ProviderInfo ProviderInfo { get; }
+
         public void ScalarGenerate(QueryBase source, StringBuilder builder)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
@@ -42,25 +44,25 @@ namespace Gedaq.Base.Query
         protected virtual void NonQueryMethod(QueryBase source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Sync, builder);
-            QueryMethodParametrs(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), builder);
+            QueryMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder, MethodType.Sync);
-            MethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.NonQuery, builder);
+            MethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.NonQuery, builder);
             EndMethod(builder);
         }
 
         protected virtual void NonQueryMethodAsync(QueryBase source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Async, builder);
-            QueryMethodParametrs(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), builder);
+            QueryMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder, MethodType.Async);
-            MethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Async, QueryType.NonQuery, builder);
+            MethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, QueryType.NonQuery, builder);
             EndMethod(builder);
         }
 
         protected virtual void ScalarMethod(QueryBase source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Sync, builder);
-            QueryMethodParametrs(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), builder);
+            QueryMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder, MethodType.Sync);
             MethodBody(source, true, "connection", MethodType.Sync, QueryType.Scalar, builder);
             EndMethod(builder);
@@ -69,9 +71,9 @@ namespace Gedaq.Base.Query
         protected virtual void ScalarMethodAsync(QueryBase source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Async, builder);
-            QueryMethodParametrs(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), builder);
+            QueryMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
             EndMethodParametrs(builder, MethodType.Async);
-            MethodBody(source, true, QueryCommon.DefaultSourceTypeParametr(), MethodType.Async, QueryType.Scalar, builder);
+            MethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, QueryType.Scalar, builder);
             EndMethod(builder);
         }
 
@@ -127,10 +129,8 @@ namespace Gedaq.Base.Query
 ");
             if (source.HaveParametrs())
             {
-                var index = -1;
                 foreach (var parametr in source.BaseParametrs())
                 {
-                    ++index;
                     if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
                     {
                         builder.Append($@",
@@ -141,6 +141,17 @@ namespace Gedaq.Base.Query
                     QueryCommon.WriteOutParametrs(parametr, builder);
                 }
             }
+
+            if(source.HaveFromatParametrs())
+            {
+                var index = 0;
+                foreach (var parametr in source.FormatParametrs)
+                {
+                    builder.Append($@",
+            System.String {(parametr.HaveName? parametr.Name : $"format{(index++).ToString()}")}
+");
+                }
+            }
         }
 
         protected void EndMethodParametrs(StringBuilder builder, MethodType methodType)
@@ -148,10 +159,10 @@ namespace Gedaq.Base.Query
             builder.Append($@",
             int? timeout = null
 ");
-            if (QueryCommon.CanSetTransaction)
+            if (ProviderInfo.CanSetTransaction)
             {
                 builder.Append($@",
-            {QueryCommon.TransactionType()} transaction = null
+            {ProviderInfo.TransactionType()} transaction = null
 ");
             }
 
@@ -198,18 +209,20 @@ namespace Gedaq.Base.Query
             }}
 ");
             }
-            var createCommand =
-                methodType == MethodType.Async ?
-                $"await Create{source.MethodName}CommandAsync({sourceParametrName}, false, cancellationToken)" :
-                $"Create{source.MethodName}Command({sourceParametrName}, false)"
-                ;
+
             builder.Append($@"
-            {QueryCommon.CommandType()} command = null;
+            {ProviderInfo.CommandType()} command = null;
             try
             {{
-                command = {createCommand};
+                command =
 ");
-            QueryCommon.WriteSetParametrs(source, builder);
+            QueryCommon.CreateCommand(source, sourceParametrName, methodType, builder);
+
+            builder.Append($@"
+                ;
+");
+
+            QueryCommon.WriteSetParametrs(source, builder, ProviderInfo);
 
             if (queryType == QueryType.Scalar)
             {

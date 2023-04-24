@@ -10,28 +10,6 @@ namespace Gedaq.DbConnection.GeneratorsQuery
 {
     internal class DbQueryCommon : QueryCommonBase
     {
-        public override bool CanSetTransaction => true;
-
-        public override string TransactionType()
-        {
-            return "DbTransaction";
-        }
-
-        public override string BatchType()
-        {
-            return "DbBatch";
-        }
-
-        public override string CommandType()
-        {
-            return "DbCommand";
-        }
-
-        public override string ReaderType()
-        {
-            return "DbDataReader";
-        }
-
         public override string GetParametrValue(BaseParametr parametr, int index, string source)
         {
             return $"{source}.Parameters[{index}].Value";
@@ -50,16 +28,6 @@ namespace Gedaq.DbConnection.GeneratorsQuery
         public override string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader")
         {
             throw new NotImplementedException();
-        }
-
-        public override string DefaultSourceType()
-        {
-            return "DbConnection";
-        }
-
-        public override string DefaultSourceTypeParametr()
-        {
-            return "connection";
         }
     }
 }

@@ -8,6 +8,7 @@ namespace Gedaq.Base.Model
     {
         public bool AllSameTypes = true;
         public bool HaveParametrs;
+        public bool HaveFormatParametrs;
 
         public abstract IEnumerable<(int number, QueryBase query)> QueryBases();
     }

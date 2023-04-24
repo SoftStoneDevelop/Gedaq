@@ -48,7 +48,7 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        public void WriteSetParametrs(QueryBatch batch, StringBuilder builder)
+        public void WriteSetParametrs(QueryBatch batch, StringBuilder builder, ProviderInfo providerInfo)
         {
             builder.Append($@"
                 batch.Set{batch.MethodName}Parametrs(
@@ -97,7 +97,7 @@ namespace Gedaq.Base.Batch
             builder.Append($@"{(haveSuccessIteration ? "," : "")}
                     timeout
 ");
-            if(CanSetTransaction)
+            if(providerInfo.CanSetTransaction)
             {
                 builder.Append($@",
                     transaction

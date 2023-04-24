@@ -1,4 +1,5 @@
-﻿using Gedaq.Enums;
+﻿using Gedaq.Base;
+using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Parser;
 using Gedaq.SqlClient.GeneratorsQuery;
@@ -10,7 +11,7 @@ using System.Collections.Immutable;
 
 namespace Gedaq.SqlClient
 {
-    internal class SqlClientAttributeProcessor
+    internal class SqlClientAttributeProcessor : BaseAttributeProcessor
     {
         private List<SqlClientQuery> _read = new List<SqlClientQuery>();
 
@@ -19,7 +20,7 @@ namespace Gedaq.SqlClient
 
         private QueryParser _queryParser = new QueryParser();
 
-        public bool ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
+        public void ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
         {
             foreach (var attribute in attributes)
             {
@@ -34,15 +35,16 @@ namespace Gedaq.SqlClient
                     ProcessParametr(attribute, containsType);
                     continue;
                 }
-            }
 
-            return false;
+                base.ProcessAttribute(attribute, containsType);
+            }
         }
 
         public void CompleteProcessContainTypes()
         {
             FillReadMethods();
             _parametrsTemp.Clear();
+            _formatsTemp.Clear();
 
             _readTemp.Clear();
         }
@@ -55,6 +57,7 @@ namespace Gedaq.SqlClient
                 {
                     read.Parametrs = parametrs.ToArray();
                 }
+                AddFormatParametrs(read);
 
                 if (read.QueryType == QueryType.Read)
                 {

@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Generators;
@@ -15,7 +16,7 @@ using System.Linq;
 
 namespace Gedaq.Npgsql
 {
-    internal class NpgsqlAttributeProcessor
+    internal class NpgsqlAttributeProcessor : BaseAttributeProcessor
     {
         private List<NpgsqlQuery> _read = new List<NpgsqlQuery>();
         private List<NpgsqlQueryBatch> _readBatch = new List<NpgsqlQueryBatch>();
@@ -30,7 +31,7 @@ namespace Gedaq.Npgsql
         private QueryParser _queryParser = new QueryParser();
         private BinaryParser _binaryParser = new BinaryParser();
 
-        public bool ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
+        public void ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
         {
             foreach (var attribute in attributes)
             {
@@ -69,15 +70,16 @@ namespace Gedaq.Npgsql
                     ProcessBinaryImport(attribute, containsType);
                     continue;
                 }
-            }
 
-            return false;
+                base.ProcessAttribute(attribute, containsType);
+            }
         }
 
         public void CompleteProcessContainTypes()
         {
             FillReadMethods();
             _parametrsTemp.Clear();
+            _formatsTemp.Clear();
 
             FillBatches();
             _readTemp.Clear();
@@ -114,6 +116,7 @@ namespace Gedaq.Npgsql
 
                     batch.AllSameTypes &= SymbolEqualityComparer.Default.Equals(firstRead.MapTypeName, queryRead.MapTypeName);
                     batch.HaveParametrs |= queryRead.HaveParametrs();
+                    batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
                     batch.SourceType |= queryRead.SourceType;
                     batch.Queries.Add((part.BatchNumber, queryRead));
                 }
@@ -130,46 +133,12 @@ namespace Gedaq.Npgsql
 
         private void FillReadMethods()
         {
-            var set = new HashSet<int>();
             foreach (var read in _readTemp.Values)
             {
-                if (_parametrsTemp.TryGetValue(read.MethodName, out var parametrs))
-                {
-                    parametrs = parametrs.OrderBy(or => or.Position).ToList();
-                    read.Parametrs = new NpgsqlParametr[parametrs.Count];
+                AddParametrs(read);
+                AddFormatParametrs(read);
 
-                    set.Clear();
-                    var containNamedParametr = false;
-                    var containPositionParametr = false;
-                    for (int i = 0; i < parametrs.Count; i++)
-                    {
-                        var parametr = parametrs[i];
-                        if (parametr.HavePosition)
-                        {
-                            if (!set.Add(parametr.Position))
-                            {
-                                throw new Exception("Parametr position must be unique");
-                            }
-
-                            containPositionParametr |= true;
-                        }
-                        else
-                        {
-                            parametr.Position = i + 1;
-                        }
-
-                        containNamedParametr |= parametr.HaveName;
-
-                        read.Parametrs[i] = parametr;
-                    }
-
-                    if (containNamedParametr && containPositionParametr)
-                    {
-                        throw new Exception("Parameters in query can be positional or named, but not combined");
-                    }
-                }
-
-                if(read.QueryType == QueryType.Read)
+                if (read.QueryType == QueryType.Read)
                 {
                     read.Aliases = _queryParser.Parse(ref read.Query);
                 }
@@ -181,6 +150,46 @@ namespace Gedaq.Npgsql
                 if (read.NeedGenerate)
                 {
                     _read.Add(read);
+                }
+            }
+        }
+
+        private void AddParametrs(NpgsqlQuery read)
+        {
+            var set = new HashSet<int>();
+            if (_parametrsTemp.TryGetValue(read.MethodName, out var parametrs))
+            {
+                parametrs = parametrs.OrderBy(or => or.Position).ToList();
+                read.Parametrs = new NpgsqlParametr[parametrs.Count];
+
+                set.Clear();
+                var containNamedParametr = false;
+                var containPositionParametr = false;
+                for (int i = 0; i < parametrs.Count; i++)
+                {
+                    var parametr = parametrs[i];
+                    if (parametr.HavePosition)
+                    {
+                        if (!set.Add(parametr.Position))
+                        {
+                            throw new Exception("Parametr position must be unique");
+                        }
+
+                        containPositionParametr |= true;
+                    }
+                    else
+                    {
+                        parametr.Position = i + 1;
+                    }
+
+                    containNamedParametr |= parametr.HaveName;
+
+                    read.Parametrs[i] = parametr;
+                }
+
+                if (containNamedParametr && containPositionParametr)
+                {
+                    throw new Exception("Parameters in query can be positional or named, but not combined");
                 }
             }
         }

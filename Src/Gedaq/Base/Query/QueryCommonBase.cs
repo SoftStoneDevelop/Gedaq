@@ -31,7 +31,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        public void WriteSetParametrs(QueryBase source, StringBuilder builder)
+        public void WriteSetParametrs(QueryBase source, StringBuilder builder, ProviderInfo providerInfo)
         {
             builder.Append($@"
                 command.Set{source.MethodName}Parametrs(
@@ -62,7 +62,7 @@ namespace Gedaq.Base.Query
             builder.Append($@"{(afterFirst ? "," : "")}
                     timeout
 ");
-            if (CanSetTransaction)
+            if (providerInfo.CanSetTransaction)
             {
                 builder.Append($@",
                     transaction
@@ -101,6 +101,61 @@ namespace Gedaq.Base.Query
             if (source.HaveParametrs() &&  source.BaseParametrs().Any(an => an.Direction != System.Data.ParameterDirection.Input))
             {
                 throw new Exception("Iterator and Async methods cannot have out parameter");
+            }
+        }
+
+        public void CreateCommand(
+            QueryBase source,
+            string sourceParametrName,
+            MethodType methodType,
+            StringBuilder builder
+            )
+        {
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@"
+                await Create{source.MethodName}CommandAsync({sourceParametrName}
+");
+            }
+            else
+            {
+                builder.Append($@"
+                Create{source.MethodName}Command({sourceParametrName}
+");
+            }
+
+            AddFormatParametrs(source, builder);
+
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@"
+                , false, cancellationToken)
+");
+            }
+            else
+            {
+                builder.Append($@"
+                , false)
+");
+            }
+        }
+
+        private void AddFormatParametrs(
+            QueryBase source,
+            StringBuilder builder
+            )
+        {
+            if (!source.HaveFromatParametrs())
+            {
+                return;
+            }
+
+            int index = 0;
+            foreach (var format in source.FormatParametrs)
+            {
+                builder.Append($@",
+                {(format.HaveName ? format.Name : $"format{index++.ToString()}")}
+");
             }
         }
     }

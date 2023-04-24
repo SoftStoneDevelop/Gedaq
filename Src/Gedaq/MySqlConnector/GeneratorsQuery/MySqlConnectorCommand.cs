@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.Base.Query;
 using Gedaq.Enums;
 using Gedaq.MySqlConnector.Enums;
@@ -12,6 +13,9 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
     {
         private readonly MySqlConnectorQueryCommon _queryCommon = new MySqlConnectorQueryCommon();
         protected override QueryCommonBase QueryCommon => _queryCommon;
+
+        MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
+        protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void GenrateCommand(QueryBase baseSource, StringBuilder builder)
         {

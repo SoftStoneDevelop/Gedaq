@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Batch;
+﻿using Gedaq.Base;
+using Gedaq.Base.Batch;
 using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Npgsql.Helpers;
@@ -11,6 +12,9 @@ namespace Gedaq.Npgsql.GeneratorsBatch
     {
         private readonly NpgsqlBatchCommon _batchCommon = new NpgsqlBatchCommon();
         protected override BatchCommonGenerator BatchCommon => _batchCommon;
+
+        NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
+        protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void ScalarMethod(QueryBatch source, StringBuilder builder)
         {

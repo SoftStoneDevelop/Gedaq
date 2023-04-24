@@ -1,6 +1,8 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.Base.Query;
 using Gedaq.DbConnection.Helpers;
+using Gedaq.Npgsql;
 using Gedaq.SqlClient.Helpers;
 using System.Text;
 
@@ -10,6 +12,9 @@ namespace Gedaq.SqlClient.GeneratorsQuery
     {
         private readonly SqlClientQueryCommon _queryCommon = new SqlClientQueryCommon();
         protected override QueryCommonBase QueryCommon => _queryCommon;
+
+        NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
+        protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder)
         {

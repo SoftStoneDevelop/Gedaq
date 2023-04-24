@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Batch;
+﻿using Gedaq.Base;
+using Gedaq.Base.Batch;
 
 namespace Gedaq.DbConnection.GeneratorsBatch
 {
@@ -6,5 +7,8 @@ namespace Gedaq.DbConnection.GeneratorsBatch
     {
         DbBatchCommon _batchCommon = new DbBatchCommon();
         protected override BatchCommonGenerator BatchCommon => _batchCommon;
+
+        DbProviderInfo _providerInfo = new DbProviderInfo();
+        protected override ProviderInfo ProviderInfo => _providerInfo;
     }
 }

@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.Base.Query;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Helpers;
@@ -10,28 +11,6 @@ namespace Gedaq.Npgsql.GeneratorsQuery
 {
     internal class NpgsqlQueryCommon : QueryCommonBase
     {
-        public override bool CanSetTransaction => false;
-
-        public override string TransactionType()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string BatchType()
-        {
-            return "NpgsqlBatch";
-        }
-
-        public override string CommandType()
-        {
-            return "NpgsqlCommand";
-        }
-
-        public override string ReaderType()
-        {
-            return "NpgsqlDataReader";
-        }
-
         public override string GetParametrValue(BaseParametr parametr, int index, string source)
         {
             if (parametr.Type.IsNullableType())
@@ -55,16 +34,6 @@ namespace Gedaq.Npgsql.GeneratorsQuery
         }
 
         public override string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader")
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override string DefaultSourceType()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override string DefaultSourceTypeParametr()
         {
             throw new System.NotImplementedException();
         }

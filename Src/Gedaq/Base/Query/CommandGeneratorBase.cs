@@ -13,6 +13,8 @@ namespace Gedaq.Base.Query
     {
         protected abstract QueryCommonBase QueryCommon { get; }
 
+        protected abstract ProviderInfo ProviderInfo { get; }
+
         public void Generate(QueryBase source, StringBuilder builder)
         {
             GenrateCommand(source, builder);
@@ -24,12 +26,12 @@ namespace Gedaq.Base.Query
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                CreateCommandMethod(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), MethodType.Sync, builder);
+                CreateCommandMethod(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), MethodType.Sync, builder);
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                CreateCommandMethod(source, QueryCommon.DefaultSourceType(), QueryCommon.DefaultSourceTypeParametr(), MethodType.Async, builder);
+                CreateCommandMethod(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, builder);
             }
         }
 
@@ -45,10 +47,14 @@ namespace Gedaq.Base.Query
         {
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static  {(methodType == MethodType.Async ? $"async Task<{QueryCommon.CommandType()}>" : QueryCommon.CommandType())} Create{source.MethodName}Command{(methodType == MethodType.Async ? "Async" : "")}(
-            this {sourceTypeName} {sourceParametrName},
+        public static  {(methodType == MethodType.Async ? $"async Task<{ProviderInfo.CommandType()}>" : ProviderInfo.CommandType())} Create{source.MethodName}Command{(methodType == MethodType.Async ? "Async" : "")}(
+            this {sourceTypeName} {sourceParametrName}
+");
+            AddFormatParametrs(source, builder);
+            builder.Append($@",
             bool prepare = false
 ");
+
             if (methodType == MethodType.Async)
             {
                 builder.Append($@",
@@ -60,20 +66,9 @@ namespace Gedaq.Base.Query
         )
         {{
             var command = {sourceParametrName}.CreateCommand();
-            command.CommandText = @""
-{source.Query}
-"";
 ");
-
-            if (source.HaveParametrs())
-            {
-                var index = -1;
-                foreach (var parametr in source.BaseParametrs())
-                {
-                    ++index;
-                    CreateParametr(parametr, index, builder);
-                }
-            }
+            SetQuery(source, builder);
+            SetParametrs(source, builder);
 
             if (methodType == MethodType.Async)
             {
@@ -115,6 +110,76 @@ namespace Gedaq.Base.Query
         }}
 ");
 
+        }
+
+        private void AddFormatParametrs(
+            QueryBase source,
+            StringBuilder builder
+            )
+        {
+            if(!source.HaveFromatParametrs())
+            {
+                return;
+            }
+
+            int index = 0;
+            foreach (var format in source.FormatParametrs)
+            {
+                builder.Append($@",
+        {(format.HaveName ? format.Name : $"format{index++.ToString()}")}
+");
+            }
+        }
+
+        private void SetQuery(
+            QueryBase source,
+            StringBuilder builder
+            )
+        {
+            if (source.HaveFromatParametrs())
+            {
+                builder.Append($@"
+            command.CommandText = string.Format(@""
+{source.Query}
+""
+");
+                int index = 0;
+                foreach (var item in source.FormatParametrs)
+                {
+                    builder.Append($@",
+{(item.HaveName ? item.Name : $"format{index++.ToString()}")}
+");
+                }
+                builder.Append($@"
+;
+");
+            }
+            else
+            {
+                builder.Append($@"
+            command.CommandText = @""
+{source.Query}
+"";
+");
+            }
+        }
+
+        private void SetParametrs(
+            QueryBase source,
+            StringBuilder builder
+            )
+        {
+            if (!source.HaveParametrs())
+            {
+                return;
+            }
+
+            var index = -1;
+            foreach (var parametr in source.BaseParametrs())
+            {
+                ++index;
+                CreateParametr(parametr, index, builder);
+            }
         }
 
         protected void ExecuteCommandMethods(QueryBase source, StringBuilder builder)
@@ -170,7 +235,7 @@ namespace Gedaq.Base.Query
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        public static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}Command(this {QueryCommon.CommandType()} command)
+        public static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}Command(this {ProviderInfo.CommandType()} command)
         {{
 ");
             }
@@ -178,7 +243,7 @@ namespace Gedaq.Base.Query
             {
                 builder.Append($@"
         public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}CommandAsync(
-            this {QueryCommon.CommandType()} command,
+            this {ProviderInfo.CommandType()} command,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
         {{
@@ -199,7 +264,7 @@ namespace Gedaq.Base.Query
             var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
 
             builder.Append($@"
-            {QueryCommon.ReaderType()} reader = null;
+            {ProviderInfo.ReaderType()} reader = null;
             try
             {{
 ");
@@ -247,7 +312,7 @@ namespace Gedaq.Base.Query
             {
                 builder.Append($@"        
         public static {QueryCommon.GetScalarTypeName(source)} Scalar{source.MethodName}Command(
-            this {QueryCommon.CommandType()} command
+            this {ProviderInfo.CommandType()} command
 ");
                 if (source.HaveParametrs())
                 {
@@ -265,7 +330,7 @@ namespace Gedaq.Base.Query
             {
                 builder.Append($@"        
         public static async Task<{QueryCommon.GetScalarTypeName(source)}> Scalar{source.MethodName}CommandAsync(
-            this {QueryCommon.CommandType()} command,
+            this {ProviderInfo.CommandType()} command,
             CancellationToken cancellationToken = default
             )
         {{
@@ -298,7 +363,7 @@ namespace Gedaq.Base.Query
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static  void Set{source.MethodName}Parametrs(
-            this {QueryCommon.CommandType()} command
+            this {ProviderInfo.CommandType()} command
 ");
             if(source.HaveParametrs())
             {
@@ -318,10 +383,10 @@ namespace Gedaq.Base.Query
 
             ");
 
-            if (QueryCommon.CanSetTransaction)
+            if (ProviderInfo.CanSetTransaction)
             {
                 builder.Append($@",
-            {QueryCommon.TransactionType()} transaction = null
+            {ProviderInfo.TransactionType()} transaction = null
 ");
             }
 
@@ -335,7 +400,7 @@ namespace Gedaq.Base.Query
             }}
 ");
 
-            if (QueryCommon.CanSetTransaction)
+            if (ProviderInfo.CanSetTransaction)
             {
                 builder.Append($@"
             if(transaction != null)
