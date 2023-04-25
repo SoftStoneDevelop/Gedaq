@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace Gedaq.Npgsql.GeneratorsBatch
 {
-    internal class NpgsqlBatchCommon : BatchCommonGenerator
+    internal class NpgsqlBatchCommon : BatchCommonBase
     {
         public override string GetParametrValue(BaseParametr parametr, int index, string source)
         {

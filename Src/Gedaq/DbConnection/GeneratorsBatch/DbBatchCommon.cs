@@ -7,7 +7,7 @@ using Microsoft.CodeAnalysis;
 
 namespace Gedaq.DbConnection.GeneratorsBatch
 {
-    internal class DbBatchCommon : BatchCommonGenerator
+    internal class DbBatchCommon : BatchCommonBase
     {
         public override bool IsKnownProviderType(ITypeSymbol type)
         {

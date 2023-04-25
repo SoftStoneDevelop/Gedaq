@@ -10,7 +10,7 @@ namespace Gedaq.Base.Batch
 {
     internal abstract class BatchCommandBase
     {
-        protected abstract BatchCommonGenerator BatchCommon { get; }
+        protected abstract BatchCommonBase BatchCommon { get; }
 
         protected abstract ProviderInfo ProviderInfo { get; }
 

@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Gedaq.Base.Batch
 {
-    internal abstract class BatchCommonGenerator : DbCommonBase
+    internal abstract class BatchCommonBase : DbCommonBase
     {
         public void ThrowExceptionIfOutCannotExist(QueryBatch batch)
         {

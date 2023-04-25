@@ -11,7 +11,7 @@ namespace Gedaq.DbConnection.GeneratorsBatch
     internal class DbBatchCommand : BatchCommandBase
     {
         private readonly DbBatchCommon _batchCommon = new DbBatchCommon();
-        protected override BatchCommonGenerator BatchCommon => _batchCommon;
+        protected override BatchCommonBase BatchCommon => _batchCommon;
 
         private readonly DbProviderInfo _dbProviderInfo = new DbProviderInfo();
         protected override ProviderInfo ProviderInfo => _dbProviderInfo;

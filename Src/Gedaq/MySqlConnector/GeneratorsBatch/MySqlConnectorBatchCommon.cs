@@ -6,7 +6,7 @@ using Microsoft.CodeAnalysis;
 
 namespace Gedaq.MySqlConnector.GeneratorsBatch
 {
-    internal class MySqlConnectorBatchCommon : BatchCommonGenerator
+    internal class MySqlConnectorBatchCommon : BatchCommonBase
     {
         public override string GetParametrValue(BaseParametr parametr, int index, string source)
         {
