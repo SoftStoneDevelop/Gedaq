@@ -50,7 +50,7 @@ namespace Gedaq.Base.Query
         public static  {(methodType == MethodType.Async ? $"async Task<{ProviderInfo.CommandType()}>" : ProviderInfo.CommandType())} Create{source.MethodName}Command{(methodType == MethodType.Async ? "Async" : "")}(
             this {sourceTypeName} {sourceParametrName}
 ");
-            AddFormatParametrs(source, builder);
+            QueryCommon.AddFormatParametrs(source, builder);
             builder.Append($@",
             bool prepare = false
 ");
@@ -112,25 +112,6 @@ namespace Gedaq.Base.Query
 
         }
 
-        private void AddFormatParametrs(
-            QueryBase source,
-            StringBuilder builder
-            )
-        {
-            if(!source.HaveFromatParametrs())
-            {
-                return;
-            }
-
-            int index = 0;
-            foreach (var format in source.FormatParametrs)
-            {
-                builder.Append($@",
-        {(format.HaveName ? format.Name : $"format{index++.ToString()}")}
-");
-            }
-        }
-
         private void SetQuery(
             QueryBase source,
             StringBuilder builder
@@ -151,6 +132,7 @@ namespace Gedaq.Base.Query
 ");
                 }
                 builder.Append($@"
+)
 ;
 ");
             }
@@ -314,13 +296,7 @@ namespace Gedaq.Base.Query
         public static {QueryCommon.GetScalarTypeName(source)} Scalar{source.MethodName}Command(
             this {ProviderInfo.CommandType()} command
 ");
-                if (source.HaveParametrs())
-                {
-                    foreach (var parametr in source.BaseParametrs())
-                    {
-                        QueryCommon.WriteOutParametrs(parametr, builder);
-                    }
-                }
+                QueryCommon.AddParametrs(source, builder, methodType);
                 builder.Append($@"
         )
         {{
@@ -365,18 +341,7 @@ namespace Gedaq.Base.Query
         public static  void Set{source.MethodName}Parametrs(
             this {ProviderInfo.CommandType()} command
 ");
-            if(source.HaveParametrs())
-            {
-                foreach (var parametr in source.BaseParametrs())
-                {
-                    if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
-                    {
-                        builder.Append($@",
-            in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}
-");
-                    }
-                }
-            }
+            QueryCommon.AddParametrs(source, builder, MethodType.Sync, false);
 
             builder.Append($@",
             int? timeout = null

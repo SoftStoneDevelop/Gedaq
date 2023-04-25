@@ -24,7 +24,7 @@ namespace Gedaq.Base.Model
             format = null;
             methodName = null;
 
-            if (namedArguments.Length != 13)
+            if (namedArguments.Length != 3)
             {
                 return false;
             }
@@ -35,7 +35,12 @@ namespace Gedaq.Base.Model
             }
 
             var result = new FormatParametr();
-            if (!SetPosition(namedArguments[0], result))
+            if (!SetPosition(namedArguments[1], result))
+            {
+                return false;
+            }
+
+            if (!SetName(namedArguments[2], result))
             {
                 return false;
             }
@@ -54,6 +59,19 @@ namespace Gedaq.Base.Model
             }
 
             methodName = (string)argument.Value;
+            return true;
+        }
+
+        protected static bool SetName(TypedConstant argument, FormatParametr parametr)
+        {
+            if (!(argument.Type is INamedTypeSymbol strParam) ||
+                strParam.Name != nameof(String)
+                )
+            {
+                return false;
+            }
+
+            parametr.Name = (string)argument.Value;
             return true;
         }
 

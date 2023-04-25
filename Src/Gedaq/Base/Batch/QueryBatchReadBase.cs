@@ -74,23 +74,7 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
             this {sourceTypeName} {sourceParametrName}
 ");
-            if (source.HaveParametrs)
-            {
-                foreach (var item in source.QueryBases())
-                {
-                    if (!item.query.HaveParametrs())
-                    {
-                        continue;
-                    }
-
-                    foreach (var parametr in item.query.BaseParametrs())
-                    {
-                        builder.Append($@",
-            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{item.number}
-");
-                    }
-                }
-            }
+            BatchCommon.WriteMethodParametrs(source, builder);
         }
 
         protected void ReadMethodBody(
@@ -115,18 +99,20 @@ namespace Gedaq.Base.Batch
             }}
 ");
             }
-            var createBatch =
-                methodType == MethodType.Async ?
-                $"await Create{source.MethodName}BatchAsync({sourceParametrName}, false, cancellationToken)" :
-                $"Create{source.MethodName}Batch({sourceParametrName}, false)"
-                ;
+
             builder.Append($@"
             {ProviderInfo.BatchType()} batch = null;
             {ProviderInfo.ReaderType()} reader = null;
             try
             {{
-                batch = {createBatch};
+                batch = 
 ");
+            BatchCommon.CreateCommand(source, sourceParametrName, methodType, builder);
+
+            builder.Append($@"
+                ;
+");
+
             BatchCommon.WriteSetParametrs(source, builder, ProviderInfo);
 
             builder.Append($@"

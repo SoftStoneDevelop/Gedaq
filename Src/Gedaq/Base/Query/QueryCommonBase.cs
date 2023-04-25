@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
@@ -29,49 +30,6 @@ namespace Gedaq.Base.Query
 ");
                 }
             }
-        }
-
-        public void WriteSetParametrs(QueryBase source, StringBuilder builder, ProviderInfo providerInfo)
-        {
-            builder.Append($@"
-                command.Set{source.MethodName}Parametrs(
-");
-            var afterFirst = false;
-            if(source.HaveParametrs())
-            {
-                foreach (var parametr in source.BaseParametrs())
-                {
-                    if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
-                    {
-                        continue;
-                    }
-
-                    if (afterFirst)
-                    {
-                        builder.Append($@",");
-                    }
-
-                    builder.Append($@"
-                    in {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
-");
-
-                    afterFirst |= true;
-                }
-            }
-
-            builder.Append($@"{(afterFirst ? "," : "")}
-                    timeout
-");
-            if (providerInfo.CanSetTransaction)
-            {
-                builder.Append($@",
-                    transaction
-");
-            }
-
-            builder.Append($@"
-                    );
-");
         }
 
         public string GetScalarTypeName(QueryBase source)
@@ -124,7 +82,7 @@ namespace Gedaq.Base.Query
 ");
             }
 
-            AddFormatParametrs(source, builder);
+            SetFormatParametrs(source, builder);
 
             if (methodType == MethodType.Async)
             {
@@ -140,7 +98,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        private void AddFormatParametrs(
+        private void SetFormatParametrs(
             QueryBase source,
             StringBuilder builder
             )
@@ -155,6 +113,89 @@ namespace Gedaq.Base.Query
             {
                 builder.Append($@",
                 {(format.HaveName ? format.Name : $"format{index++.ToString()}")}
+");
+            }
+        }
+
+        public void AddFormatParametrs(
+            QueryBase source,
+            StringBuilder builder
+            )
+        {
+            if (!source.HaveFromatParametrs())
+            {
+                return;
+            }
+
+            int index = 0;
+            foreach (var format in source.FormatParametrs)
+            {
+                builder.Append($@",
+        System.String {(format.HaveName ? format.Name : $"format{index++.ToString()}")}
+");
+            }
+        }
+
+        public void AddParametrs(
+            QueryBase source,
+            StringBuilder builder,
+            MethodType methodType,
+            bool addOutParametrs = true
+            )
+        {
+            if (!source.HaveParametrs())
+            {
+                return;
+            }
+
+            foreach (var parametr in source.BaseParametrs())
+            {
+                if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                {
+                    builder.Append($@",
+            {(methodType != MethodType.Async ? "in " : "")}{parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
+                        ");
+                }
+
+                if(addOutParametrs)
+                {
+                    WriteOutParametrs(parametr, builder);
+                }
+            }
+        }
+
+        public void WriteSetParametrs(QueryBase source, StringBuilder builder, ProviderInfo providerInfo)
+        {
+            var afterFirst = false;
+            if (source.HaveParametrs())
+            {
+                foreach (var parametr in source.BaseParametrs())
+                {
+                    if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                    {
+                        continue;
+                    }
+
+                    if (afterFirst)
+                    {
+                        builder.Append($@",");
+                    }
+
+                    builder.Append($@"
+                    in {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
+");
+
+                    afterFirst |= true;
+                }
+            }
+
+            builder.Append($@"{(afterFirst ? "," : "")}
+                    timeout
+");
+            if (providerInfo.CanSetTransaction)
+            {
+                builder.Append($@",
+                    transaction
 ");
             }
         }

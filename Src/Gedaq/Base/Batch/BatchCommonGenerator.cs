@@ -1,9 +1,13 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsBatch;
+using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
+using System.Reflection;
 using System.Text;
 
 namespace Gedaq.Base.Batch
@@ -129,6 +133,130 @@ namespace Gedaq.Base.Batch
             var firstField = first.Aliases.AllFieldsOrderByPosition().First();
             first.MapTypeName.GetPropertyOrFieldName(firstField.Name, out _, out var type);
             return type.GetFullTypeName(true);
+        }
+
+        public void CreateCommand(
+            QueryBatch source,
+            string sourceParametrName,
+            MethodType methodType,
+            StringBuilder builder
+            )
+        {
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@"
+                await Create{source.MethodName}BatchAsync({sourceParametrName}
+");
+            }
+            else
+            {
+                builder.Append($@"
+                Create{source.MethodName}Batch({sourceParametrName}
+");
+            }
+
+            AddFormatParametrs(source, builder);
+
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@"
+                , false, cancellationToken)
+");
+            }
+            else
+            {
+                builder.Append($@"
+                , false)
+");
+            }
+        }
+
+        private void AddFormatParametrs(
+            QueryBatch source,
+            StringBuilder builder
+            )
+        {
+            if (!source.HaveFormatParametrs)
+            {
+                return;
+            }
+
+            foreach (var item in source.QueryBases())
+            {
+                if (!item.query.HaveFromatParametrs())
+                {
+                    continue;
+                }
+
+                int index = 0;
+                foreach (var format in item.query.FormatParametrs)
+                {
+                    builder.Append($@",
+                {(format.HaveName ? $"{format.Name}Batch{item.number.ToString()}" : $"format{index++.ToString()}Batch{item.number.ToString()}")}
+");
+                }
+            }
+        }
+
+        public void WriteMethodParametrs(
+            QueryBatch source,
+            StringBuilder builder
+            )
+        {
+            if (!source.HaveParametrs && !source.HaveFormatParametrs)
+            {
+                return;
+            }
+
+            foreach (var item in source.QueryBases())
+            {
+                WriteParametrs(item, builder);
+                WriteFormatParametrs(item, builder);
+            }
+        }
+
+        private void WriteParametrs(
+            (int number, QueryBase query) item,
+            StringBuilder builder
+            )
+        {
+            if (!item.query.HaveParametrs())
+            {
+                return;
+            }
+
+            foreach (var parametr in item.query.BaseParametrs())
+            {
+                if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                {
+                    builder.Append($@",
+            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}Batch{item.number}
+
+                            
+                        ");
+                }
+
+                WriteOutParametrs(parametr, builder, $"Batch{item.number}");
+            }
+        }
+
+        private void WriteFormatParametrs(
+            (int number, QueryBase query) item,
+            StringBuilder builder
+            )
+        {
+            if (!item.query.HaveFromatParametrs())
+            {
+                return;
+            }
+
+            int index = 0;
+            foreach (var format in item.query.FormatParametrs)
+            {
+                builder.Append($@",
+        System.String {(format.HaveName ? $"{format.Name}Batch{item.number.ToString()}" : $"format{index++.ToString()}Batch{item.number.ToString()}")}
+");
+            }
         }
     }
 }

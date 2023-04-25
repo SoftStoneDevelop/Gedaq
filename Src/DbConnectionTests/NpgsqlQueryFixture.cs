@@ -1,5 +1,6 @@
 ﻿using DbConnectionTests.Helpers;
 using DbConnectionTests.Model;
+using Gedaq.Common.Attributes;
 using Gedaq.DbConnection.Attributes;
 using Npgsql;
 using NUnit.Framework;
@@ -316,15 +317,15 @@ SELECT
 FROM dbconnectionperson p
 LEFT JOIN dbconnectionidentification i ON i.id = p.identification_id
 LEFT JOIN dbconnectioncountry c ON c.id = i.country_id
-WHERE p.id != @id AND p.id != @id2
+WHERE p.id != {1} AND p.id != {0}
 ORDER BY p.id ASC
 ",
             "NpgsqlToClass2",
             typeof(Person),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
             )]
-        [Parametr("NpgsqlToClass2", parametrType: typeof(int), parametrName: "id")]
-        [Parametr("NpgsqlToClass2", parametrType: typeof(int), parametrName: "id2")]
+        [QueryFormat("NpgsqlToClass2", 1, "condition")]
+        [QueryFormat("NpgsqlToClass2", 0)]
         public void NpgsqlToClass2()
         {
         }
@@ -335,7 +336,7 @@ ORDER BY p.id ASC
         [BatchPart("NpgsqlToClass1", "NpgsqlBatchReadToClass", 2)]
         public void BatchReadToClass()
         {
-            var batchList = _dataSource.OpenConnection().NpgsqlBatchReadToClass(3, 6, 3).Select(sel => sel.ToList()).ToList();
+            var batchList = _dataSource.OpenConnection().NpgsqlBatchReadToClass(6.ToString(), 3.ToString(), 3).Select(sel => sel.ToList()).ToList();
 
             var list = batchList[0];
             {
@@ -461,7 +462,7 @@ ORDER BY p.id ASC
         [Test]
         public void BatchScalarToClass()
         {
-            var id = _dataSource.OpenConnection().ScalarNpgsqlBatchReadToClass(0, 1, 3);
+            var id = _dataSource.OpenConnection().ScalarNpgsqlBatchReadToClass(0.ToString(), 1.ToString(), 0);
             Assert.That(id, Is.EqualTo(2));
         }
 

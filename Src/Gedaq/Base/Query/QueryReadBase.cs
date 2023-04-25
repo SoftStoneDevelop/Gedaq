@@ -74,7 +74,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        protected static void QueryMethodParametrs(
+        protected void QueryMethodParametrs(
             QueryBase source,
             StringBuilder builder,
             string sourceTypeName,
@@ -97,16 +97,7 @@ namespace Gedaq.Base.Query
                 }
             }
 
-            if (source.HaveFromatParametrs())
-            {
-                var index = 0;
-                foreach (var parametr in source.FormatParametrs)
-                {
-                    builder.Append($@",
-            System.String {(parametr.HaveName ? parametr.Name : $"format{(index++).ToString()}")}
-");
-                }
-            }
+            QueryCommon.AddFormatParametrs(source, builder);
         }
 
         protected static void EndMethod(StringBuilder builder)
@@ -175,8 +166,12 @@ namespace Gedaq.Base.Query
 
             builder.Append($@"
                 ;
+                command.Set{source.MethodName}Parametrs(
 ");
             QueryCommon.WriteSetParametrs(source, builder, ProviderInfo);
+            builder.Append($@"
+                    );
+");
 
             builder.Append($@"
                 reader = {await}command.ExecuteReader{async};
