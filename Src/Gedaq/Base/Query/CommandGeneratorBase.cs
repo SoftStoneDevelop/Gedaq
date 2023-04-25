@@ -200,9 +200,9 @@ namespace Gedaq.Base.Query
                 }
             }
 
-            if (source.QueryType.HasFlag(QueryType.NonQuery) && source.BaseParametrs().Any(a => a.HaveDirection))
+            if (source.QueryType.HasFlag(QueryType.NonQuery) && source.HaveParametrs() && source.BaseParametrs().Any(a => a.HaveDirection))
             {
-                //TODO
+                //TODO parametrs(out types) pass into method as class
             }
         }
 
