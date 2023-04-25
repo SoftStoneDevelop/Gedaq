@@ -45,25 +45,57 @@ namespace Gedaq.Base.Query
         protected virtual void NonQueryMethod(QueryBase source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Sync, builder);
-            QueryMethodParametrs(source, MethodType.Sync, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
+            QueryMethodParametrs(
+                source, 
+                ProviderInfo.DefaultSourceType(), 
+                ProviderInfo.DefaultSourceTypeParametr(), 
+                builder,
+                true
+                );
             EndMethodParametrs(builder, MethodType.Sync);
-            MethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.NonQuery, builder);
+            MethodBody(
+                source, 
+                true, 
+                ProviderInfo.DefaultSourceTypeParametr(), 
+                MethodType.Sync, 
+                QueryType.NonQuery, 
+                builder
+                );
             EndMethod(builder);
         }
 
         protected virtual void NonQueryMethodAsync(QueryBase source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Async, builder);
-            QueryMethodParametrs(source, MethodType.Async, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
+            QueryMethodParametrs(
+                source, 
+                ProviderInfo.DefaultSourceType(), 
+                ProviderInfo.DefaultSourceTypeParametr(), 
+                builder,
+                false
+                );
             EndMethodParametrs(builder, MethodType.Async);
-            MethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, QueryType.NonQuery, builder);
+            MethodBody(
+                source, 
+                true, 
+                ProviderInfo.DefaultSourceTypeParametr(), 
+                MethodType.Async, 
+                QueryType.NonQuery, 
+                builder
+                );
             EndMethod(builder);
         }
 
         protected virtual void ScalarMethod(QueryBase source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Sync, builder);
-            QueryMethodParametrs(source, MethodType.Sync, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
+            QueryMethodParametrs(
+                source, 
+                ProviderInfo.DefaultSourceType(), 
+                ProviderInfo.DefaultSourceTypeParametr(),
+                builder,
+                true
+                );
             EndMethodParametrs(builder, MethodType.Sync);
             MethodBody(source, true, "connection", MethodType.Sync, QueryType.Scalar, builder);
             EndMethod(builder);
@@ -72,9 +104,22 @@ namespace Gedaq.Base.Query
         protected virtual void ScalarMethodAsync(QueryBase source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Async, builder);
-            QueryMethodParametrs(source, MethodType.Async, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
+            QueryMethodParametrs(
+                source, 
+                ProviderInfo.DefaultSourceType(), 
+                ProviderInfo.DefaultSourceTypeParametr(),
+                builder,
+                false
+                );
             EndMethodParametrs(builder, MethodType.Async);
-            MethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, QueryType.Scalar, builder);
+            MethodBody(
+                source, 
+                true, 
+                ProviderInfo.DefaultSourceTypeParametr(), 
+                MethodType.Async, 
+                QueryType.Scalar, 
+                builder
+                );
             EndMethod(builder);
         }
 
@@ -120,16 +165,16 @@ namespace Gedaq.Base.Query
 
         protected void QueryMethodParametrs(
             QueryBase source,
-            MethodType methodType,
             string sourceTypeName,
             string sourceParametrName,
-            StringBuilder builder
+            StringBuilder builder,
+            bool useInAndOut
             )
         {
             builder.Append($@"
             this {sourceTypeName} {sourceParametrName}
 ");
-            QueryCommon.AddParametrs(source, builder, methodType);
+            QueryCommon.AddParametrs(source, builder, useInAndOut);
             QueryCommon.AddFormatParametrs(source, builder);
         }
 

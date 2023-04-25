@@ -296,7 +296,7 @@ namespace Gedaq.Base.Query
         public static {QueryCommon.GetScalarTypeName(source)} Scalar{source.MethodName}Command(
             this {ProviderInfo.CommandType()} command
 ");
-                QueryCommon.AddParametrs(source, builder, methodType);
+                QueryCommon.AddParametrs(source, builder, true);
                 builder.Append($@"
         )
         {{
@@ -306,7 +306,10 @@ namespace Gedaq.Base.Query
             {
                 builder.Append($@"        
         public static async Task<{QueryCommon.GetScalarTypeName(source)}> Scalar{source.MethodName}CommandAsync(
-            this {ProviderInfo.CommandType()} command,
+            this {ProviderInfo.CommandType()} command
+");
+                QueryCommon.AddParametrs(source, builder, false);
+                builder.Append($@",
             CancellationToken cancellationToken = default
             )
         {{
@@ -338,10 +341,10 @@ namespace Gedaq.Base.Query
         {
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static  void Set{source.MethodName}Parametrs(
+        public static void Set{source.MethodName}Parametrs(
             this {ProviderInfo.CommandType()} command
 ");
-            QueryCommon.AddParametrs(source, builder, MethodType.Sync, false);
+            QueryCommon.AddParametrs(source, builder, false);
 
             builder.Append($@",
             int? timeout = null

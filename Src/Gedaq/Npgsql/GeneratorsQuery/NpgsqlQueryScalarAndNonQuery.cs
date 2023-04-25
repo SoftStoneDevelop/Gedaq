@@ -28,18 +28,44 @@ namespace Gedaq.Npgsql.GeneratorsQuery
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartNonQueryMethod(source, MethodType.Sync, builder);
-                QueryMethodParametrs(source, MethodType.Sync, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
+                QueryMethodParametrs(
+                    source, 
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), 
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
+                    builder,
+                    true
+                    );
                 EndMethodParametrs(builder, MethodType.Sync);
-                MethodBody(source, true, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Sync, QueryType.NonQuery, builder);
+                MethodBody(
+                    source, 
+                    true, 
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
+                    MethodType.Sync, 
+                    QueryType.NonQuery, 
+                    builder
+                    );
                 EndMethod(builder);
             }
 
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartNonQueryMethod(source, MethodType.Sync, builder);
-                QueryMethodParametrs(source, MethodType.Sync, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
+                QueryMethodParametrs(
+                    source, 
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), 
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
+                    builder,
+                    true
+                    );
                 EndMethodParametrs(builder, MethodType.Sync);
-                MethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Sync, QueryType.NonQuery, builder);
+                MethodBody(
+                    source, 
+                    false, 
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
+                    MethodType.Sync, 
+                    QueryType.NonQuery, 
+                    builder
+                    );
                 EndMethod(builder);
             }
         }
@@ -50,18 +76,44 @@ namespace Gedaq.Npgsql.GeneratorsQuery
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartNonQueryMethod(source, MethodType.Async, builder);
-                QueryMethodParametrs(source, MethodType.Async, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
+                QueryMethodParametrs(
+                    source, 
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), 
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
+                    builder,
+                    false
+                    );
                 EndMethodParametrs(builder, MethodType.Async);
-                MethodBody(source, true, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Async, QueryType.NonQuery, builder);
+                MethodBody(
+                    source,
+                    true, 
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
+                    MethodType.Async, 
+                    QueryType.NonQuery, 
+                    builder
+                    );
                 EndMethod(builder);
             }
 
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartNonQueryMethod(source, MethodType.Async, builder);
-                QueryMethodParametrs(source, MethodType.Async, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
+                QueryMethodParametrs(
+                    source, 
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), 
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
+                    builder,
+                    false
+                    );
                 EndMethodParametrs(builder, MethodType.Async);
-                MethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Async, QueryType.NonQuery, builder);
+                MethodBody(
+                    source, 
+                    false, 
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
+                    MethodType.Async, 
+                    QueryType.NonQuery, 
+                    builder
+                    );
                 EndMethod(builder);
             }
         }
@@ -72,18 +124,44 @@ namespace Gedaq.Npgsql.GeneratorsQuery
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartScalarMethod(source, MethodType.Sync, builder);
-                QueryMethodParametrs(source, MethodType.Sync, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
+                QueryMethodParametrs(
+                    source, 
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), 
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
+                    builder,
+                    true
+                    );
                 EndMethodParametrs(builder, MethodType.Sync);
-                MethodBody(source, true, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Sync, QueryType.Scalar, builder);
+                MethodBody(
+                    source, 
+                    true, 
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
+                    MethodType.Sync, 
+                    QueryType.Scalar, 
+                    builder
+                    );
                 EndMethod(builder);
             }
 
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartScalarMethod(source, MethodType.Sync, builder);
-                QueryMethodParametrs(source, MethodType.Sync, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
+                QueryMethodParametrs(
+                    source, 
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), 
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
+                    builder,
+                    true
+                    );
                 EndMethodParametrs(builder, MethodType.Sync);
-                MethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Sync, QueryType.Scalar, builder);
+                MethodBody(
+                    source, 
+                    false, 
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
+                    MethodType.Sync, 
+                    QueryType.Scalar, 
+                    builder
+                    );
                 EndMethod(builder);
             }
         }
@@ -94,18 +172,44 @@ namespace Gedaq.Npgsql.GeneratorsQuery
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 StartScalarMethod(source, MethodType.Async, builder);
-                QueryMethodParametrs(source, MethodType.Async, Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), builder);
+                QueryMethodParametrs(
+                    source, 
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), 
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
+                    builder,
+                    false
+                    );
                 EndMethodParametrs(builder, MethodType.Async);
-                MethodBody(source, true, Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), MethodType.Async, QueryType.Scalar, builder);
+                MethodBody(
+                    source, 
+                    true, 
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
+                    MethodType.Async, 
+                    QueryType.Scalar, 
+                    builder
+                    );
                 EndMethod(builder);
             }
 
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
                 StartScalarMethod(source, MethodType.Async, builder);
-                QueryMethodParametrs(source, MethodType.Async, Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), builder);
+                QueryMethodParametrs(
+                    source, 
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), 
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
+                    builder,
+                    false
+                    );
                 EndMethodParametrs(builder, MethodType.Async);
-                MethodBody(source, false, Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), MethodType.Async, QueryType.Scalar, builder);
+                MethodBody(
+                    source, 
+                    false, 
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
+                    MethodType.Async, 
+                    QueryType.Scalar, 
+                    builder
+                    );
                 EndMethod(builder);
             }
         }

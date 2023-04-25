@@ -139,8 +139,7 @@ namespace Gedaq.Base.Query
         public void AddParametrs(
             QueryBase source,
             StringBuilder builder,
-            MethodType methodType,
-            bool addOutParametrs = true
+            bool writeOutParametrs
             )
         {
             if (!source.HaveParametrs())
@@ -153,11 +152,11 @@ namespace Gedaq.Base.Query
                 if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
                 {
                     builder.Append($@",
-            {(methodType != MethodType.Async ? "in " : "")}{parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
+            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
                         ");
                 }
 
-                if(addOutParametrs)
+                if(writeOutParametrs)
                 {
                     WriteOutParametrs(parametr, builder);
                 }
@@ -182,7 +181,7 @@ namespace Gedaq.Base.Query
                     }
 
                     builder.Append($@"
-                    in {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
+                    {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
 ");
 
                     afterFirst |= true;

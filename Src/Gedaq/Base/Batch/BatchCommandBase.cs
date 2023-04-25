@@ -422,49 +422,65 @@ namespace Gedaq.Base.Batch
 ");
             }
 
-            if(source.HaveParametrs)
+            SetBatchCommandParametrsValue(source, builder);
+
+            builder.Append($@"
+        }}
+");
+
+        }
+
+        private void SetBatchCommandParametrsValue(
+            QueryBatch source,
+            StringBuilder builder
+            )
+        {
+            if(!source.HaveParametrs)
             {
-                int indexBatch = -1;
-                var commandBatchDefine = false;
-                foreach (var batchCommand in source.QueryBases())
+                return;
+            }
+
+            int indexBatch = -1;
+            var commandBatchDefine = false;
+            foreach (var batchCommand in source.QueryBases())
+            {
+                ++indexBatch;
+                if (!batchCommand.query.HaveParametrs())
                 {
-                    ++indexBatch;
-                    if (!batchCommand.query.HaveParametrs())
+                    continue;
+                }
+
+                var indexP = -1;
+                var commandSet = false;
+
+                foreach (var parametr in batchCommand.query.BaseParametrs())
+                {
+                    ++indexP;
+                    if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
                     {
                         continue;
                     }
 
-                    var indexP = -1;
-                    var commandSet = false;
-
-                    foreach (var parametr in batchCommand.query.BaseParametrs())
+                    if (commandBatchDefine && !commandSet)
                     {
-                        ++indexP;
-                        if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
-                        {
-                            continue;
-                        }
-
-                        if (commandBatchDefine && !commandSet)
-                        {
-                            builder.Append($@"
+                        builder.Append($@"
             batchCommand = batch.BatchCommands[{indexBatch}];
 ");
-                            commandSet = true;
-                        }
+                        commandSet = true;
+                    }
 
-                        if (!commandBatchDefine)
-                        {
-                            builder.Append($@"
+                    if (!commandBatchDefine)
+                    {
+                        builder.Append($@"
             var batchCommand = batch.BatchCommands[{indexBatch}];
 ");
-                            commandBatchDefine = true;
-                            commandSet = true;
-                        }
+                        commandBatchDefine = true;
+                        commandSet = true;
+                    }
 
-                        if (parametr.Type.IsNullableType())
-                        {
-                            builder.Append($@"
+                    if (parametr.Type.IsNullableType())
+                    {
+                        builder.Append($@"
             if({parametr.VariableName()}Batch{batchCommand.number}.HasValue)
             {{
                 {BatchCommon.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number}.Value;
@@ -474,21 +490,15 @@ namespace Gedaq.Base.Batch
                 {BatchCommon.GetParametrValue(parametr, indexP, "batchCommand")} = DBNull.Value;
             }}
 ");
-                        }
-                        else
-                        {
-                            builder.Append($@"
+                    }
+                    else
+                    {
+                        builder.Append($@"
             {BatchCommon.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number};
 ");
-                        }
                     }
                 }
             }
-
-            builder.Append($@"
-        }}
-");
-
         }
 
         private void StartExecuteBatch(

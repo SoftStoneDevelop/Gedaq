@@ -84,19 +84,8 @@ namespace Gedaq.Base.Query
             builder.Append($@"
             this {sourceTypeName} {sourceParametrName}
 ");
-            if (source.HaveParametrs())
-            {
-                foreach (var parametr in source.BaseParametrs())
-                {
-                    if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
-                    {
-                        builder.Append($@",
-            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
-");
-                    }
-                }
-            }
 
+            QueryCommon.AddParametrs(source, builder, false);
             QueryCommon.AddFormatParametrs(source, builder);
         }
 
