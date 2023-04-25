@@ -11,10 +11,10 @@ using System.Text;
 
 namespace Gedaq.Base.Query
 {
-    internal abstract class QueryCommonBase : DbCommonBase
+    internal static class QueryCommonBase
     {
 
-        public virtual void SetOutAndReturnParametrs(QueryBase source, StringBuilder builder)
+        public static void SetOutAndReturnParametrs(QueryBase source, StringBuilder builder, ProviderInfo providerInfo)
         {
             var index = -1;
             foreach (var parametr in source.BaseParametrs())
@@ -26,13 +26,13 @@ namespace Gedaq.Base.Query
                     )
                 {
                     builder.Append($@"
-                    {parametr.VariableName(BaseParametr.VariablePostfix(parametr.Direction))} = ({parametr.Type.GetFullTypeName(true)}){GetParametrValue(parametr, index, "command")};
+                    {parametr.VariableName(BaseParametr.VariablePostfix(parametr.Direction))} = ({parametr.Type.GetFullTypeName(true)}){providerInfo.GetParametrValue(parametr, index, "command")};
 ");
                 }
             }
         }
 
-        public string GetScalarTypeName(QueryBase source)
+        public static string GetScalarTypeName(QueryBase source, ProviderInfo providerInfo)
         {
             if (source.Aliases.IsRowsAffected)
             {
@@ -44,7 +44,7 @@ namespace Gedaq.Base.Query
                 return "System.Int32";
             }
 
-            if (IsKnownProviderType(source.MapTypeName) || IsSpecialHandlerType(source.MapTypeName))
+            if (providerInfo.IsKnownProviderType(source.MapTypeName) || providerInfo.IsSpecialHandlerType(source.MapTypeName))
             {
                 return source.MapTypeName.GetFullTypeName();
             }
@@ -54,7 +54,7 @@ namespace Gedaq.Base.Query
             return type.GetFullTypeName(true);
         }
 
-        public void ThrowExceptionIfOutCannotExist(QueryBase source)
+        public static void ThrowExceptionIfOutCannotExist(QueryBase source)
         {
             if (source.HaveParametrs() &&  source.BaseParametrs().Any(an => an.Direction != System.Data.ParameterDirection.Input))
             {
@@ -62,7 +62,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        public void CreateCommand(
+        public static void CreateCommand(
             QueryBase source,
             string sourceParametrName,
             MethodType methodType,
@@ -98,7 +98,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        private void SetFormatParametrs(
+        private static void SetFormatParametrs(
             QueryBase source,
             StringBuilder builder
             )
@@ -117,7 +117,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        public void AddFormatParametrs(
+        public static void AddFormatParametrs(
             QueryBase source,
             StringBuilder builder
             )
@@ -136,7 +136,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        public void AddParametrs(
+        public static void AddParametrs(
             QueryBase source,
             StringBuilder builder,
             bool writeOutParametrs
@@ -158,12 +158,12 @@ namespace Gedaq.Base.Query
 
                 if(writeOutParametrs)
                 {
-                    WriteOutParametrs(parametr, builder);
+                    CommandParametrsHelper.WriteOutParametrs(parametr, builder);
                 }
             }
         }
 
-        public void WriteSetParametrs(QueryBase source, StringBuilder builder, ProviderInfo providerInfo)
+        public static void WriteSetParametrs(QueryBase source, StringBuilder builder, ProviderInfo providerInfo)
         {
             var afterFirst = false;
             if (source.HaveParametrs())

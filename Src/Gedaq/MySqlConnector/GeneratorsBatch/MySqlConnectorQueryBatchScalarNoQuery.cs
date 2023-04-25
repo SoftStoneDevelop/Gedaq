@@ -11,9 +11,6 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
 {
     internal class MySqlConnectorQueryBatchScalarNoQuery : QueryBatchScalarNoQueryBase
     {
-        private readonly MySqlConnectorBatchCommon _batchCommon = new MySqlConnectorBatchCommon();
-        protected override BatchCommonBase BatchCommon => _batchCommon;
-
         MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 

@@ -10,9 +10,6 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 {
     internal class NpgsqlQueryBatchScalarNoQuery : QueryBatchScalarNoQueryBase
     {
-        private readonly NpgsqlBatchCommon _batchCommon = new NpgsqlBatchCommon();
-        protected override BatchCommonBase BatchCommon => _batchCommon;
-
         NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 

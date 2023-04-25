@@ -8,13 +8,11 @@ namespace Gedaq.Base.Query
 {
     internal abstract class QueryReadBase
     {
-        protected abstract QueryCommonBase QueryCommon { get; }
-
         protected abstract ProviderInfo ProviderInfo { get; }
 
         public void Generate(QueryBase source, StringBuilder builder)
         {
-            QueryCommon.ThrowExceptionIfOutCannotExist(source);
+            QueryCommonBase.ThrowExceptionIfOutCannotExist(source);
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
                 ReadMethod(source, builder);
@@ -85,8 +83,8 @@ namespace Gedaq.Base.Query
             this {sourceTypeName} {sourceParametrName}
 ");
 
-            QueryCommon.AddParametrs(source, builder, false);
-            QueryCommon.AddFormatParametrs(source, builder);
+            QueryCommonBase.AddParametrs(source, builder, false);
+            QueryCommonBase.AddFormatParametrs(source, builder);
         }
 
         protected static void EndMethod(StringBuilder builder)
@@ -151,13 +149,13 @@ namespace Gedaq.Base.Query
             {{
                 command =
 ");
-            QueryCommon.CreateCommand(source, sourceParametrName, methodType, builder);
+            QueryCommonBase.CreateCommand(source, sourceParametrName, methodType, builder);
 
             builder.Append($@"
                 ;
                 command.Set{source.MethodName}Parametrs(
 ");
-            QueryCommon.WriteSetParametrs(source, builder, ProviderInfo);
+            QueryCommonBase.WriteSetParametrs(source, builder, ProviderInfo);
             builder.Append($@"
                     );
 ");
@@ -170,7 +168,7 @@ namespace Gedaq.Base.Query
                 while ({await}reader.Read{async})
                 {{
 ");
-            QueryCommon.YieldItem(source, builder);
+            MappingHelper.YieldItem(source, builder, ProviderInfo);
             builder.Append($@"
                 }}
 

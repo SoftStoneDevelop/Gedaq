@@ -8,9 +8,6 @@ namespace Gedaq.DbConnection.GeneratorsQuery
 {
     internal class DbCommandGenerator : CommandGeneratorBase
     {
-        private readonly DbQueryCommon _queryCommon = new DbQueryCommon();
-        protected override QueryCommonBase QueryCommon => _queryCommon;
-
         DbProviderInfo _providerInfo = new DbProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 

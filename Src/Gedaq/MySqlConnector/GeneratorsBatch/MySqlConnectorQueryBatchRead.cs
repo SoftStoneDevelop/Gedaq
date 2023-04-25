@@ -12,9 +12,6 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
 {
     internal class MySqlConnectorQueryBatchRead : QueryBatchReadBase
     {
-        MySqlConnectorBatchCommon _batchCommon = new MySqlConnectorBatchCommon();
-        protected override BatchCommonBase BatchCommon => _batchCommon;
-
         MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 

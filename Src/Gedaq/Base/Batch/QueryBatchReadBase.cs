@@ -8,8 +8,6 @@ namespace Gedaq.Base.Batch
 {
     internal abstract class QueryBatchReadBase
     {
-        protected abstract BatchCommonBase BatchCommon { get; }
-
         protected abstract ProviderInfo ProviderInfo { get; }
 
         public void Generate(QueryBatch source, StringBuilder builder)
@@ -74,7 +72,7 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
             this {sourceTypeName} {sourceParametrName}
 ");
-            BatchCommon.WriteMethodParametrs(source, builder);
+            BatchCommonBase.WriteMethodParametrs(source, builder);
         }
 
         protected void ReadMethodBody(
@@ -107,13 +105,13 @@ namespace Gedaq.Base.Batch
             {{
                 batch = 
 ");
-            BatchCommon.CreateCommand(source, sourceParametrName, methodType, builder);
+            BatchCommonBase.CreateCommand(source, sourceParametrName, methodType, builder);
 
             builder.Append($@"
                 ;
 ");
 
-            BatchCommon.WriteSetParametrs(source, builder, ProviderInfo);
+            BatchCommonBase.WriteSetParametrs(source, builder, ProviderInfo);
 
             builder.Append($@"
                 reader = {await}batch.ExecuteReader{async};

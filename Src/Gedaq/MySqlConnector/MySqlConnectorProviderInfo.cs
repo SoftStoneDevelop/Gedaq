@@ -1,4 +1,7 @@
 ﻿using Gedaq.Base;
+using Gedaq.Base.Model;
+using Gedaq.MySqlConnector.Helpers;
+using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -35,6 +38,26 @@ namespace Gedaq.MySqlConnector
         }
 
         public override string DefaultSourceTypeParametr()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override string GetParametrValue(BaseParametr parametr, int index, string source)
+        {
+            return $"{source}.Parameters[{index}].Value";
+        }
+
+        public override bool IsKnownProviderType(ITypeSymbol type)
+        {
+            return MySqlConnectorMapTypeHelper.IsKnownProviderType(type);
+        }
+
+        public override bool IsSpecialHandlerType(ITypeSymbol type)
+        {
+            return MySqlConnectorMapTypeHelper.IsSpecialHandlerType(type);
+        }
+
+        public override string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader")
         {
             throw new System.NotImplementedException();
         }

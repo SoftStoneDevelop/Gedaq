@@ -12,9 +12,9 @@ using System.Text;
 
 namespace Gedaq.Base.Batch
 {
-    internal abstract class BatchCommonBase : DbCommonBase
+    internal static class BatchCommonBase
     {
-        public void ThrowExceptionIfOutCannotExist(QueryBatch batch)
+        public static void ThrowExceptionIfOutCannotExist(QueryBatch batch)
         {
             if (batch.HaveParametrs &&
                 batch.QueryBases().Any(any => any.query.HaveParametrs() && any.query.BaseParametrs().Any(anyIn => anyIn.HaveDirection))
@@ -24,7 +24,11 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        public virtual void SetOutAndReturnParametrs(QueryBatch batch, StringBuilder builder)
+        public static void SetOutAndReturnParametrs(
+            QueryBatch batch, 
+            StringBuilder builder,
+            ProviderInfo providerInfo
+            )
         {
             var indexBatch = -1;
             foreach (var item in batch.QueryBases())
@@ -45,14 +49,14 @@ namespace Gedaq.Base.Batch
                     )
                     {
                         builder.Append($@"
-                    {parametr.VariableName(BaseParametr.VariablePostfix(parametr.Direction))}Batch{item.number} = ({parametr.Type.GetFullTypeName(true)}){GetParametrValue(parametr, index, $"batch.BatchCommands[{indexBatch}]")};
+                    {parametr.VariableName(BaseParametr.VariablePostfix(parametr.Direction))}Batch{item.number} = ({parametr.Type.GetFullTypeName(true)}){providerInfo.GetParametrValue(parametr, index, $"batch.BatchCommands[{indexBatch}]")};
 ");
                     }
                 }
             }
         }
 
-        public void WriteSetParametrs(QueryBatch batch, StringBuilder builder, ProviderInfo providerInfo)
+        public static void WriteSetParametrs(QueryBatch batch, StringBuilder builder, ProviderInfo providerInfo)
         {
             builder.Append($@"
                 batch.Set{batch.MethodName}Parametrs(
@@ -112,30 +116,7 @@ namespace Gedaq.Base.Batch
                     );");
         }
 
-        public string GetScalarTypeName(QueryBatch source)
-        {
-            var first = source.QueryBases().First().query;
-            if (first.Aliases.IsRowsAffected)
-            {
-                if(source.QueryType != Enums.QueryType.NonQuery)
-                {
-                    throw new Exception("Use NonQuery for update/delete/inser command");
-                }
-
-                return "System.Int32";
-            }
-
-            if (IsKnownProviderType(first.MapTypeName) || IsSpecialHandlerType(first.MapTypeName))
-            {
-                return first.MapTypeName.GetFullTypeName();
-            }
-
-            var firstField = first.Aliases.AllFieldsOrderByPosition().First();
-            first.MapTypeName.GetPropertyOrFieldName(firstField.Name, out _, out var type);
-            return type.GetFullTypeName(true);
-        }
-
-        public void CreateCommand(
+        public static void CreateCommand(
             QueryBatch source,
             string sourceParametrName,
             MethodType methodType,
@@ -171,7 +152,7 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        private void AddFormatParametrs(
+        private static void AddFormatParametrs(
             QueryBatch source,
             StringBuilder builder
             )
@@ -198,7 +179,7 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        public void WriteMethodParametrs(
+        public static void WriteMethodParametrs(
             QueryBatch source,
             StringBuilder builder
             )
@@ -215,7 +196,7 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        private void WriteParametrs(
+        private static void WriteParametrs(
             (int number, QueryBase query) item,
             StringBuilder builder
             )
@@ -236,11 +217,11 @@ namespace Gedaq.Base.Batch
                         ");
                 }
 
-                WriteOutParametrs(parametr, builder, $"Batch{item.number}");
+                CommandParametrsHelper.WriteOutParametrs(parametr, builder, $"Batch{item.number}");
             }
         }
 
-        private void WriteFormatParametrs(
+        private static void WriteFormatParametrs(
             (int number, QueryBase query) item,
             StringBuilder builder
             )
@@ -257,6 +238,29 @@ namespace Gedaq.Base.Batch
         System.String {(format.HaveName ? $"{format.Name}Batch{item.number.ToString()}" : $"format{index++.ToString()}Batch{item.number.ToString()}")}
 ");
             }
+        }
+
+        public static string GetScalarTypeName(QueryBatch source, ProviderInfo providerInfo)
+        {
+            var first = source.QueryBases().First().query;
+            if (first.Aliases.IsRowsAffected)
+            {
+                if (source.QueryType != Enums.QueryType.NonQuery)
+                {
+                    throw new Exception("Use NonQuery for update/delete/inser command");
+                }
+
+                return "System.Int32";
+            }
+
+            if (providerInfo.IsKnownProviderType(first.MapTypeName) || providerInfo.IsSpecialHandlerType(first.MapTypeName))
+            {
+                return first.MapTypeName.GetFullTypeName();
+            }
+
+            var firstField = first.Aliases.AllFieldsOrderByPosition().First();
+            first.MapTypeName.GetPropertyOrFieldName(firstField.Name, out _, out var type);
+            return type.GetFullTypeName(true);
         }
     }
 }

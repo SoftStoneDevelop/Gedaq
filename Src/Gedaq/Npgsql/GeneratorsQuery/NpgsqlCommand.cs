@@ -11,9 +11,6 @@ namespace Gedaq.Npgsql.GeneratorsQuery
 {
     internal class NpgsqlCommand : CommandGeneratorBase
     {
-        private readonly NpgsqlQueryCommon _queryCommon = new NpgsqlQueryCommon();
-        protected override QueryCommonBase QueryCommon => _queryCommon;
-
         NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 

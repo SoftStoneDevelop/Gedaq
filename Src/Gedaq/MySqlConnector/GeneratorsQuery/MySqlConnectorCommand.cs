@@ -11,9 +11,6 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
 {
     internal class MySqlConnectorCommand : CommandGeneratorBase
     {
-        private readonly MySqlConnectorQueryCommon _queryCommon = new MySqlConnectorQueryCommon();
-        protected override QueryCommonBase QueryCommon => _queryCommon;
-
         MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 

@@ -10,8 +10,6 @@ namespace Gedaq.Base.Batch
 {
     internal abstract class BatchCommandBase
     {
-        protected abstract BatchCommonBase BatchCommon { get; }
-
         protected abstract ProviderInfo ProviderInfo { get; }
 
         public void Generate(QueryBatch source, StringBuilder builder)
@@ -58,7 +56,7 @@ namespace Gedaq.Base.Batch
         {
             if (source.QueryType.HasFlag(QueryType.Read))
             {
-                BatchCommon.ThrowExceptionIfOutCannotExist(source);
+                BatchCommonBase.ThrowExceptionIfOutCannotExist(source);
                 if (source.MethodType.HasFlag(MethodType.Sync))
                 {
                     StartExecuteBatch(source, MethodType.Sync, builder);
@@ -85,7 +83,7 @@ namespace Gedaq.Base.Batch
 
                 if (source.MethodType.HasFlag(MethodType.Async))
                 {
-                    BatchCommon.ThrowExceptionIfOutCannotExist(source);
+                    BatchCommonBase.ThrowExceptionIfOutCannotExist(source);
                     StartExecuteScalarBatch(source, MethodType.Async, builder);
                     ExecuteScalarBatch(source, MethodType.Async, builder);
                     EndMethod(builder);
@@ -146,7 +144,7 @@ namespace Gedaq.Base.Batch
             while({await}reader.Read{async})
             {{
 ");
-                BatchCommon.YieldItem(item.query, builder, source.AllSameTypes ? "" : "(object)");
+                MappingHelper.YieldItem(item.query, builder, ProviderInfo, source.AllSameTypes ? "" : "(object)");
                 builder.Append($@"
             }}
         }}
@@ -483,18 +481,18 @@ namespace Gedaq.Base.Batch
                         builder.Append($@"
             if({parametr.VariableName()}Batch{batchCommand.number}.HasValue)
             {{
-                {BatchCommon.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number}.Value;
+                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number}.Value;
             }}
             else
             {{
-                {BatchCommon.GetParametrValue(parametr, indexP, "batchCommand")} = DBNull.Value;
+                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = DBNull.Value;
             }}
 ");
                     }
                     else
                     {
                         builder.Append($@"
-            {BatchCommon.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number};
+            {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number};
 ");
                     }
                 }
@@ -588,10 +586,10 @@ namespace Gedaq.Base.Batch
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        public static {BatchCommon.GetScalarTypeName(source)} Scalar{source.MethodName}Batch(
+        public static {BatchCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}Batch(
             this {ProviderInfo.BatchType()} batch
 ");
-                BatchCommon.WriteMethodParametrs(source, builder);
+                BatchCommonBase.WriteMethodParametrs(source, builder);
 
                 builder.Append($@"
         )
@@ -601,7 +599,7 @@ namespace Gedaq.Base.Batch
             else
             {
                 builder.Append($@"
-        public static async Task<{BatchCommon.GetScalarTypeName(source)}> Scalar{source.MethodName}BatchAsync(
+        public static async Task<{BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}BatchAsync(
             this {ProviderInfo.BatchType()} batch,
             CancellationToken cancellationToken = default
             )
@@ -621,7 +619,7 @@ namespace Gedaq.Base.Batch
             var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
 
             builder.Append($@"
-            var result = ({BatchCommon.GetScalarTypeName(source)}){await}batch.ExecuteScalar{async};
+            var result = ({BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}){await}batch.ExecuteScalar{async};
 ");
             if(source.HaveParametrs)
             {
@@ -634,7 +632,7 @@ namespace Gedaq.Base.Batch
                         continue;
                     }
 
-                    BatchCommon.SetOutAndReturnParametrs(source, builder);
+                    BatchCommonBase.SetOutAndReturnParametrs(source, builder, ProviderInfo);
                 }
             }
 

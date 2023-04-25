@@ -10,9 +10,6 @@ namespace Gedaq.SqlClient.GeneratorsQuery
 {
     internal class SqlClientCommandGenerator : CommandGeneratorBase
     {
-        private readonly SqlClientQueryCommon _queryCommon = new SqlClientQueryCommon();
-        protected override QueryCommonBase QueryCommon => _queryCommon;
-
         NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 

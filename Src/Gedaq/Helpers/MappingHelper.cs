@@ -1,60 +1,33 @@
-﻿using Gedaq.Base.Batch;
-using Gedaq.Base.Model;
+﻿using Gedaq.Base.Model;
+using Gedaq.Base;
 using Gedaq.Enums;
-using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Gedaq.Base
+namespace Gedaq.Helpers
 {
-    internal abstract class DbCommonBase
+    internal static class MappingHelper
     {
-        public abstract string GetParametrValue(BaseParametr parametr, int index, string source);
-
-        public abstract bool IsKnownProviderType(ITypeSymbol type);
-
-        public abstract bool IsSpecialHandlerType(ITypeSymbol type);
-
-        public abstract string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader");
-
-        public void WriteOutParametrs(BaseParametr parametr, StringBuilder builder, string batchPostfix = "")
-        {
-            if (parametr.Direction == System.Data.ParameterDirection.InputOutput || parametr.Direction == System.Data.ParameterDirection.Output)
-            {
-                builder.Append($@",
-            out {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Output))}{batchPostfix}
-");
-                return;
-            }
-
-            if (parametr.Direction == System.Data.ParameterDirection.ReturnValue)
-            {
-                builder.Append($@",
-            out {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.ReturnValue))}{batchPostfix}
-");
-                return;
-            }
-        }
-
-        public void YieldItem(
+        public static void YieldItem(
             QueryBase source,
             StringBuilder builder,
+            ProviderInfo provider,
             string castTypeExpr = ""
             )
         {
-            if (IsKnownProviderType(source.MapTypeName))
+            if (provider.IsKnownProviderType(source.MapTypeName))
             {
                 builder.Append($@"
                     yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);
 ");
             }
-            else if(IsSpecialHandlerType(source.MapTypeName))
+            else if (provider.IsSpecialHandlerType(source.MapTypeName))
             {
                 builder.Append($@"
-                    yield return {castTypeExpr}{GetSpecialTypeValue(source.MapTypeName, 0)};
+                    yield return {castTypeExpr}{provider.GetSpecialTypeValue(source.MapTypeName, 0)};
 ");
             }
             else if (source.MapTypeName.IsNullableType())
@@ -84,9 +57,9 @@ namespace Gedaq.Base
                     yield return {castTypeExpr}item;
 ");
             }
-            else if(source.MapTypeName.TypeKind == TypeKind.Class || source.MapTypeName.TypeKind == TypeKind.Struct)
+            else if (source.MapTypeName.TypeKind == TypeKind.Class || source.MapTypeName.TypeKind == TypeKind.Struct)
             {
-                ComplicateItem(source.Aliases, source.MapTypeName, source.MethodType, builder);
+                ComplicateItem(source.Aliases, source.MapTypeName, source.MethodType, builder, provider);
                 builder.Append($@" 
                     yield return {castTypeExpr}item;
 ");
@@ -100,11 +73,12 @@ namespace Gedaq.Base
         }
 
 
-        private void ComplicateItem(
+        private static void ComplicateItem(
             Aliases rootAliase,
             ITypeSymbol rootMapTypeName,
             MethodType methodType,
-            StringBuilder builder
+            StringBuilder builder,
+            ProviderInfo provider
             )
         {
             var aliases = new Stack<ItemPair>();
@@ -120,14 +94,14 @@ namespace Gedaq.Base
             while (aliases.Count != 0)
             {
                 var pair = aliases.Pop();
-                if(!pair.HaveUnprocess)
+                if (!pair.HaveUnprocess)
                 {
                     //close brackets and set
                     EndInnerEntity(methodType, pair, builder);
                     continue;
                 }
 
-                if(!pair.GetUnprocessFieldOrInnerAlias(out var field, out var inner))
+                if (!pair.GetUnprocessFieldOrInnerAlias(out var field, out var inner))
                 {
                     throw new InvalidOperationException();
                 }
@@ -136,18 +110,18 @@ namespace Gedaq.Base
 
                 if (field != null)
                 {
-                    SetFields(field, pair, builder, true);
+                    SetFields(field, pair, builder, true, provider);
 
                     continue;
                 }
 
-                if(inner != null)
+                if (inner != null)
                 {
                     pair.MapTypeName.GetPropertyOrFieldName(inner.EntityName, out var propertyName, out var pairType);
                     var newPair = new ItemPair(inner, pairType, $"item{++itemId}", pair, propertyName, pair.Tabs + 1);
                     aliases.Push(newPair);
 
-                    if(newPair.Aliases.HaveLinkKey)
+                    if (newPair.Aliases.HaveLinkKey)
                     {
                         var linkField = newPair.Aliases.GetLinkField();
                         builder.Append($@"
@@ -167,13 +141,13 @@ namespace Gedaq.Base
             }
         }
 
-        private void EndInnerEntity(
+        private static void EndInnerEntity(
             MethodType methodType,
             ItemPair pair,
             StringBuilder builder
             )
         {
-            if(pair.HaveUnprocess || pair.Parent == null)
+            if (pair.HaveUnprocess || pair.Parent == null)
             {
                 return;
             }
@@ -207,7 +181,13 @@ namespace Gedaq.Base
             }
         }
 
-        private void SetFields(Field field, ItemPair pair, StringBuilder builder, bool createItemIfNull)
+        private static void SetFields(
+            Field field,
+            ItemPair pair,
+            StringBuilder builder,
+            bool createItemIfNull,
+            ProviderInfo provider
+            )
         {
             pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
             builder.Append($@"
@@ -233,10 +213,10 @@ namespace Gedaq.Base
             }
             else
             {
-                if (IsSpecialHandlerType(propertyType))
+                if (provider.IsSpecialHandlerType(propertyType))
                 {
                     builder.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {GetSpecialTypeValue(propertyType, field.Position)};
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {provider.GetSpecialTypeValue(propertyType, field.Position)};
 ");
                 }
                 else
@@ -253,7 +233,7 @@ namespace Gedaq.Base
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private string Tabs(int tabs)
+        private static string Tabs(int tabs)
         {
             return new string(' ', tabs * 4);
         }

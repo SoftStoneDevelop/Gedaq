@@ -11,8 +11,6 @@ namespace Gedaq.Base.Batch
 {
     internal abstract class QueryBatchScalarNoQueryBase
     {
-        protected abstract BatchCommonBase BatchCommon { get; }
-
         protected abstract ProviderInfo ProviderInfo { get; }
 
         public void GenerateScalar(QueryBatch source, StringBuilder builder)
@@ -86,13 +84,13 @@ namespace Gedaq.Base.Batch
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        public static {BatchCommon.GetScalarTypeName(source)} Scalar{source.MethodName}(
+        public static {BatchCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}(
 ");
             }
             else
             {
                 builder.Append($@"
-        public static async Task<{BatchCommon.GetScalarTypeName(source)}> Scalar{source.MethodName}Async(
+        public static async Task<{BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}Async(
 ");
             }
         }
@@ -128,7 +126,7 @@ namespace Gedaq.Base.Batch
             this {sourceTypeName} {sourceParametrName}
 ");
 
-            BatchCommon.WriteMethodParametrs(source, builder);
+            BatchCommonBase.WriteMethodParametrs(source, builder);
         }
 
         protected void EndMethod(StringBuilder builder)
@@ -193,30 +191,30 @@ namespace Gedaq.Base.Batch
             {{
                 batch =
 ");
-            BatchCommon.CreateCommand(source, sourceParametrName, methodType, builder);
+            BatchCommonBase.CreateCommand(source, sourceParametrName, methodType, builder);
 
             builder.Append($@"
                 ;
 ");
-            BatchCommon.WriteSetParametrs(source, builder, ProviderInfo);
+            BatchCommonBase.WriteSetParametrs(source, builder, ProviderInfo);
 
             if (queryType == QueryType.Scalar)
             {
                 builder.Append($@"
-                //var result = {await}batch.ExecuteScalar<{BatchCommon.GetScalarTypeName(source)}>{async};
-                var result = ({BatchCommon.GetScalarTypeName(source)}){await}batch.ExecuteScalar{async};
+                //var result = {await}batch.ExecuteScalar<{BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}>{async};
+                var result = ({BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}){await}batch.ExecuteScalar{async};
 ");
             }
             else
             {
                 builder.Append($@"
-                var result = ({BatchCommon.GetScalarTypeName(source)}){await}batch.ExecuteNonQuery{async};
+                var result = ({BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}){await}batch.ExecuteNonQuery{async};
 ");
             }
 
             if (source.HaveParametrs)
             {
-                BatchCommon.SetOutAndReturnParametrs(source, builder);
+                BatchCommonBase.SetOutAndReturnParametrs(source, builder, ProviderInfo);
             }
 
             builder.Append($@"

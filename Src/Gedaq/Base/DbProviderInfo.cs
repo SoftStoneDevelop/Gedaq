@@ -1,5 +1,9 @@
-﻿using System;
+﻿using Gedaq.Base.Model;
+using Gedaq.Helpers;
+using Microsoft.CodeAnalysis;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Gedaq.Base
@@ -18,5 +22,13 @@ namespace Gedaq.Base
 
         public abstract string DefaultSourceType();
         public abstract string DefaultSourceTypeParametr();
+
+        public abstract string GetParametrValue(BaseParametr parametr, int index, string source);
+
+        public abstract bool IsKnownProviderType(ITypeSymbol type);
+
+        public abstract bool IsSpecialHandlerType(ITypeSymbol type);
+
+        public abstract string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader");
     }
 }

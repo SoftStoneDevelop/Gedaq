@@ -11,9 +11,6 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 {
     internal class NpgsqlQueryBatchRead : QueryBatchReadBase
     {
-        NpgsqlBatchCommon _batchCommon = new NpgsqlBatchCommon();
-        protected override BatchCommonBase BatchCommon => _batchCommon;
-
         NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
