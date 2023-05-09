@@ -29,7 +29,7 @@ There are versions for all of these methods (if possible):
 - NonQuery
 - ЕecuteScalar (return type is determined automatically at the generation stage)
 
-It also generates methods specific to each provider, such as BinaryImport and BinaryExport in PostgreSQL.
+It also generates methods specific to each provider, such as BinaryImport and BinaryExport in PostgreSQL.<br>
 Supported databases(see examples and documentation in the relevant DB package):<br>
 - [Npgsql](https://github.com/SoftStoneDevelop/Gedaq.Npgsql)
 - [DbConnection](https://github.com/SoftStoneDevelop/Gedaq.DbConnection)
