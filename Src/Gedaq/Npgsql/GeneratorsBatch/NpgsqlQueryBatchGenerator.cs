@@ -52,7 +52,7 @@ using System.Runtime.CompilerServices;
 
 namespace {source.ContainTypeName.ContainingNamespace}
 {{
-    public static class {source.MethodName}NpgsqlExtension
+    {GeneratedClassDeclarationHelper.GCDeclarationName(source.ContainTypeName, source.MethodInfo, "Npgsql")}
     {{
 ");
         }

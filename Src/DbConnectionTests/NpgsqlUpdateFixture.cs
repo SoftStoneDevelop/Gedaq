@@ -50,19 +50,19 @@ SET
         public void UpdatePerson()
         {
             using var connection = _dataSource.OpenConnection();
-            var result = connection.NonQueryUpdatePerson(null);
+            var result = NonQueryUpdatePerson(connection, null);
             Assert.That(result, Is.EqualTo(10));
 
-            var list = connection.GetAllPerson().ToList();
+            var list = GetAllPerson(connection).ToList();
             foreach (var person in list)
             {
                 Assert.That(person.Identification, Is.EqualTo(null));
             }
 
-            result = connection.NonQueryUpdatePerson(1);
+            result = NonQueryUpdatePerson(connection, 1);
             Assert.That(result, Is.EqualTo(10));
 
-            list = connection.GetAllPerson().ToList();
+            list = GetAllPerson(connection).ToList();
             foreach (var person in list)
             {
                 Assert.That(person.Identification, Is.Not.EqualTo(null));
@@ -74,19 +74,19 @@ SET
         public async Task UpdatePersonAsync()
         {
             using var connection = _dataSource.OpenConnection();
-            var result = await connection.NonQueryUpdatePersonAsync(null);
+            var result = await NonQueryUpdatePersonAsync(connection, null);
             Assert.That(result, Is.EqualTo(10));
 
-            var list = await connection.GetAllPersonAsync().ToListAsync();
+            var list = await GetAllPersonAsync(connection).ToListAsync();
             foreach (var person in list)
             {
                 Assert.That(person.Identification, Is.EqualTo(null));
             }
 
-            result = await connection.NonQueryUpdatePersonAsync(1);
+            result = await NonQueryUpdatePersonAsync(connection, 1);
             Assert.That(result, Is.EqualTo(10));
 
-            list = await connection.GetAllPersonAsync().ToListAsync();
+            list = await GetAllPersonAsync(connection).ToListAsync();
             foreach (var person in list)
             {
                 Assert.That(person.Identification, Is.Not.EqualTo(null));
@@ -105,22 +105,22 @@ SET
         public void UpdatePersonBatch()
         {
             using var connection = _dataSource.OpenConnection();
-            var result = connection.NonQueryUpdatePersonBatch(null, 1);
+            var result = NonQueryUpdatePersonBatch(connection, null, 1);
 
             Assert.That(result, Is.EqualTo(20));
 
-            var list = connection.GetAllPerson().ToList();
+            var list = GetAllPerson(connection).ToList();
             foreach (var person in list)
             {
                 Assert.That(person.Identification, Is.Not.EqualTo(null));
                 Assert.That(person.Identification.Id, Is.EqualTo(1));
             }
 
-            result = connection.NonQueryUpdatePersonBatch(1, null);
+            result = NonQueryUpdatePersonBatch(connection, 1, null);
 
             Assert.That(result, Is.EqualTo(20));
 
-            list = connection.GetAllPerson().ToList();
+            list = GetAllPerson(connection).ToList();
             foreach (var person in list)
             {
                 Assert.That(person.Identification, Is.EqualTo(null));
@@ -131,22 +131,22 @@ SET
         public async Task UpdatePersonBatchAsync()
         {
             using var connection = _dataSource.OpenConnection();
-            var result = await connection.NonQueryUpdatePersonBatchAsync(null, 1);
+            var result = await NonQueryUpdatePersonBatchAsync(connection, null, 1);
 
             Assert.That(result, Is.EqualTo(20));
 
-            var list = await connection.GetAllPersonAsync().ToListAsync();
+            var list = await GetAllPersonAsync(connection).ToListAsync();
             foreach (var person in list)
             {
                 Assert.That(person.Identification, Is.Not.EqualTo(null));
                 Assert.That(person.Identification.Id, Is.EqualTo(1));
             }
 
-            result = await connection.NonQueryUpdatePersonBatchAsync(1, null);
+            result = await NonQueryUpdatePersonBatchAsync(connection, 1, null);
 
             Assert.That(result, Is.EqualTo(20));
 
-            list = await connection.GetAllPersonAsync().ToListAsync();
+            list = await GetAllPersonAsync(connection).ToListAsync();
             foreach (var person in list)
             {
                 Assert.That(person.Identification, Is.EqualTo(null));

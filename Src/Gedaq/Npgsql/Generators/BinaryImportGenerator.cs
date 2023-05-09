@@ -41,7 +41,7 @@ using System.Runtime.CompilerServices;
 
 namespace {binaryImport.ContainTypeName.ContainingNamespace}
 {{
-    public static class {binaryImport.MethodName}NpgsqlExtension
+    {GeneratedClassDeclarationHelper.GCDeclarationName(binaryImport.ContainTypeName, binaryImport.MethodInfo, "Npgsql")}
     {{
 ");
         }
@@ -102,7 +102,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace}
             {
                 _methodCode.Append($@"
         public static async Task {binaryImport.MethodName}Async(
-            this {sourceType.ToTypeName()} {sourceType.ToParametrName()},
+            {binaryImport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
             {collectionType} collection,
             TimeSpan? timeout = null,
             CancellationToken cancellationToken = default
@@ -114,7 +114,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace}
             {
                 _methodCode.Append($@"
         public static void {binaryImport.MethodName}(
-            this {sourceType.ToTypeName()} {sourceType.ToParametrName()},
+            {binaryImport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
             {collectionType} collection,
             TimeSpan? timeout = null
             )

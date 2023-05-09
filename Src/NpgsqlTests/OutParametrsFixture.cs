@@ -3,6 +3,7 @@ using NpgsqlTests.Model;
 using NUnit.Framework;
 using System;
 using System.Data;
+using System.Data.Common;
 using System.Linq;
 
 namespace NpgsqlTests
@@ -23,7 +24,8 @@ select * from readfixturefunc(@inParam);
         [Parametr("FuncOut", parametrType: typeof(string), parametrName: "out2", direction: ParameterDirection.Output)]
         public void TestFuncOut()
         {
-            var result = _dataSource.OpenConnection().NonQueryFuncOut(46, out var out1, out var out2);
+            using var connection = _dataSource.OpenConnection();
+            var result = NonQueryFuncOut(connection, 46, out var out1, out var out2);
             Assert.Multiple(() =>
             {
                 Assert.That(out1, Is.EqualTo(46));
@@ -43,7 +45,8 @@ select out1, out2 from readfixturefunc(@inParam);
         [Parametr("ReadFunc", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
         public void TestReadFunc()
         {
-            var result = _dataSource.OpenConnection().ReadFunc(24).First();
+            using var connection = _dataSource.OpenConnection();
+            var result = ReadFunc(connection, 24).First();
             Assert.Multiple(() =>
             {
                 Assert.That(result.Out1, Is.EqualTo(24));
@@ -86,7 +89,8 @@ ORDER BY p.id ASC
         [Parametr("ReadFuncPerson", parametrType: typeof(int), parametrName: "personId", direction: ParameterDirection.Input)]
         public void TestReadFuncAndPerson()
         {
-            var result = _dataSource.OpenConnection().ReadFuncPerson(13, 1).First();
+            using var connection = _dataSource.OpenConnection();
+            var result = ReadFuncPerson(connection, 13, 1).First();
             Assert.Multiple(() =>
             {
                 Assert.That(result.Out1, Is.EqualTo(13));
@@ -103,14 +107,18 @@ ORDER BY p.id ASC
         [BatchPart("FuncOut", "BatchFixtureOut", 2)]
         public void BatchFixtureOut()
         {
-            Assert.That(() => _dataSource.OpenConnection()
-                .NonQueryBatchFixtureOut(
-                24, out var out11, out var out12,
-                75, out var out21, out var out22
-                ),
-                        Throws.Exception.TypeOf(typeof(NotSupportedException))
-                        .And.Message.EqualTo("Batches cannot cannot have out parameters")
-                        );
+            Assert.That(() => 
+            {
+                using var connection = _dataSource.OpenConnection();
+                
+                NonQueryBatchFixtureOut(
+                    connection,
+                    24, out var out11, out var out12,
+                    75, out var out21, out var out22
+                    );
+            },
+            Throws.Exception.TypeOf(typeof(NotSupportedException)).And.Message.EqualTo("Batches cannot cannot have out parameters")
+            );
         }
     }
 }

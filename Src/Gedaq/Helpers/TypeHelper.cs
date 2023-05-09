@@ -9,10 +9,12 @@ using System.Net.NetworkInformation;
 using System.Numerics;
 using System.Text;
 using System.Linq;
+using Gedaq.Npgsql.Model;
+using Gedaq.Base.Model;
 
 namespace Gedaq.Helpers
 {
-    internal static class TypeHelper
+    internal static class GeneratedClassDeclarationHelper
     {
         internal static bool IsPatrial(this INamedTypeSymbol type)
         {
@@ -33,7 +35,7 @@ namespace Gedaq.Helpers
             return false;
         }
 
-        internal static bool IsStatic(this INamedTypeSymbol type)
+        internal static bool GCIsStatic(this INamedTypeSymbol type)
         {
             foreach (var item in type.DeclaringSyntaxReferences)
             {
@@ -49,23 +51,43 @@ namespace Gedaq.Helpers
                 }
             }
 
-            return false;
+            return !type.IsPatrial();
         }
 
-        internal static string ThisWordOrEmpty(this INamedTypeSymbol type)
+        internal static string GCThisWordOrEmpty(this INamedTypeSymbol type)
         {
-            return type.IsStatic() ? "this " : "";
+            return type.GCIsStatic() ? "this " : "";
         }
 
-        internal static bool IsAssignableFrom(
-            this INamedTypeSymbol type,
-            string fullNamespace,
-            string typeName
+        internal static string GCPartialWordOrEmpty(this INamedTypeSymbol type)
+        {
+            return type.IsPatrial() ? "partial" : "";
+        }
+
+        internal static string GCStaticWordOrEmpty(this INamedTypeSymbol type)
+        {
+            return type.GCIsStatic() ? "static" : "";
+        }
+
+        internal static string GCDeclarationName(
+            INamedTypeSymbol type,
+            BaseMethodInfo methodInfo,
+            string extansionPrefix
             )
+        {
+            return $@"{methodInfo.AccessModifier.ToLowerInvariant()} {type.GCStaticWordOrEmpty()} {type.GCPartialWordOrEmpty()} class {(type.IsPatrial() ? type.Name : $"{methodInfo.MethodName}{extansionPrefix}Extension")}";
+        }
+    }
+    internal static class TypeHelper
+    {
+        internal static bool IsAssignableFrom(
+        this INamedTypeSymbol type,
+        string fullNamespace,
+        string typeName
+        )
         {
             var nestedStack = new Stack<INamedTypeSymbol>();
             nestedStack.Push(type);
-
             while (nestedStack.Count != 0)
             {
                 var currentType = nestedStack.Pop();
@@ -73,23 +95,19 @@ namespace Gedaq.Helpers
                 {
                     return true;
                 }
-
                 if (currentType.BaseType != null)
                 {
                     nestedStack.Push(currentType.BaseType);
                 }
             }
-
             return false;
         }
-
         internal static string GetFullNamespace(
-            this INamespaceSymbol namespaceSymbol
-            )
+        this INamespaceSymbol namespaceSymbol
+        )
         {
             var builder = new StringBuilder();
             var nestedStack = new Stack<INamespaceSymbol>();
-
             var currentNamespace = namespaceSymbol;
             while (currentNamespace != null)
             {

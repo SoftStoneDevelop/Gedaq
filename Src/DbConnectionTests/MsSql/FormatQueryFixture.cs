@@ -41,7 +41,7 @@ ORDER BY p.id ASC
         public async Task ReadFormatToClassAsync()
         {
             using var connection = OpenConnection();
-            var list = await connection.MsSqlFormatToClassAsync(format0: 3.ToString(), condition: 6.ToString()).ToListAsync();
+            var list = await MsSqlFormatToClassAsync(connection, format0: 3.ToString(), condition: 6.ToString()).ToListAsync();
 
             Assert.That(list, Has.Count.EqualTo(8));
 

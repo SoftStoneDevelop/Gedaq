@@ -39,43 +39,45 @@ ORDER BY p.id ASC
         [Parametr("ToClass1", parametrType: typeof(int), position: 1)]
         public void ReadToClass()
         {
-            var list = _dataSource.OpenConnection().ToClass1(3).ToList();
+            using var connection = _dataSource.OpenConnection();
+            var list = ToClass1(connection, 3).ToList();
             CheckToClass1Result(list);
         }
 
         [Test]
         public void CreateToClassCommand()
         {
-            using var command = _dataSource.OpenConnection().CreateToClass1Command(false);
-            command.SetToClass1Parametrs(78, 10);
+            using var connection = _dataSource.OpenConnection();
+            using var command = CreateToClass1Command(connection, false);
+            SetToClass1Parametrs(command, 78, 10);
             Assert.That(command.IsPrepared, Is.EqualTo(false));
             Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
-            using var command2 = _dataSource.OpenConnection().CreateToClass1Command(true);
-            command.SetToClass1Parametrs(45);
+            using var command2 = CreateToClass1Command(connection, true);
+            SetToClass1Parametrs(command, 45);
             Assert.That(command2.IsPrepared, Is.EqualTo(true));
             Assert.That(command2.CommandTimeout, Is.EqualTo(30));
             
-            command2.SetToClass1Parametrs(3);
-            var list = command2.ExecuteToClass2Command().ToList();
+            SetToClass1Parametrs(command2, 3);
+            var list = ExecuteToClass2Command(command2).ToList();
             CheckToClass1Result(list);
         }
 
         [Test]
         public async Task CreateToClassCommandAsync()
         {
-            await using var command = await _dataSource.OpenConnection().CreateToClass1CommandAsync(false);
-            command.SetToClass1Parametrs(78, 10);
+            await using var connection = _dataSource.OpenConnection();
+            await using var command = await CreateToClass1CommandAsync(connection, false);
+            SetToClass1Parametrs(command, 78, 10);
             Assert.That(command.IsPrepared, Is.EqualTo(false));
             Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
-            await using var command2 = await _dataSource.OpenConnection().CreateToClass1CommandAsync(true);
-            command.SetToClass1Parametrs(45);
+            await using var command2 = await CreateToClass1CommandAsync(connection, true);
             Assert.That(command2.IsPrepared, Is.EqualTo(true));
             Assert.That(command2.CommandTimeout, Is.EqualTo(30));
             
-            command2.SetToClass1Parametrs(3);
-            var list = await command2.ExecuteToClass2CommandAsync().ToListAsync();
+            SetToClass1Parametrs(command2, 3);
+            var list = await ExecuteToClass2CommandAsync(command2).ToListAsync();
             CheckToClass1Result(list);
         }
 
@@ -169,7 +171,8 @@ ORDER BY p.id ASC
         [Parametr("ToClass2", parametrType: typeof(int), position: 2)]
         public async Task ReadToClassAsync()
         {
-            var list = await _dataSource.OpenConnection().ToClass2Async(3, 6).ToListAsync();
+            await using var connection = _dataSource.OpenConnection();
+            var list = await ToClass2Async(connection, 3, 6).ToListAsync();
 
             Assert.That(list, Has.Count.EqualTo(8));
 

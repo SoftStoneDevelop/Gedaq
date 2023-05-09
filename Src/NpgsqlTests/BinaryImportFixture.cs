@@ -1,4 +1,5 @@
 ﻿using Gedaq.Npgsql.Attributes;
+using Gedaq.Npgsql.Model;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
 using NpgsqlTests.Helpers;

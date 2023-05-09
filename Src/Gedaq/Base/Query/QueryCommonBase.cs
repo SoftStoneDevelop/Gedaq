@@ -165,7 +165,7 @@ namespace Gedaq.Base.Query
 
         public static void WriteSetParametrs(QueryBaseCommand source, StringBuilder builder, ProviderInfo providerInfo)
         {
-            var isStatic = source.ContainTypeName.IsStatic();
+            var isStatic = source.ContainTypeName.GCIsStatic();
             var afterFirst = false;
             if (source.HaveParametrs())
             {

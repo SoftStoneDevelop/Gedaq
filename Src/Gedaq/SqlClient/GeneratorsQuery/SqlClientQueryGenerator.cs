@@ -1,6 +1,7 @@
 ﻿using Gedaq.Base;
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
+using Gedaq.Helpers;
 using Gedaq.SqlClient.GeneratorsQuery;
 using Gedaq.SqlClient.Model;
 
@@ -53,7 +54,7 @@ using System.Runtime.CompilerServices;
 
 namespace {source.ContainTypeName.ContainingNamespace}
 {{
-    public static class {source.MethodName}SqlClientExtension
+    {GeneratedClassDeclarationHelper.GCDeclarationName(source.ContainTypeName, source.MethodInfo, "SqlClient")}
     {{
 ");
         }

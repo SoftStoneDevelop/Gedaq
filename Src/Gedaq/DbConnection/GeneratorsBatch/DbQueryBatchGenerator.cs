@@ -1,6 +1,7 @@
 ﻿using Gedaq.Base;
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
+using Gedaq.Helpers;
 
 namespace Gedaq.DbConnection.GeneratorsBatch
 {
@@ -51,7 +52,7 @@ using System.Runtime.CompilerServices;
 
 namespace {source.ContainTypeName.ContainingNamespace}
 {{
-    public static class {source.MethodName}DbConnectionExtension
+    {GeneratedClassDeclarationHelper.GCDeclarationName(source.ContainTypeName, source.MethodInfo, "DbConnection")}
     {{
 ");
         }

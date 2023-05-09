@@ -1,5 +1,6 @@
 ﻿using Gedaq.Base;
 using Gedaq.Enums;
+using Gedaq.Helpers;
 using Gedaq.MySqlConnector.Model;
 
 namespace Gedaq.MySqlConnector.GeneratorsQuery
@@ -51,7 +52,7 @@ using System.Runtime.CompilerServices;
 
 namespace {source.ContainTypeName.ContainingNamespace}
 {{
-    public static class {source.MethodName}MySqlConnectorExtension
+    {GeneratedClassDeclarationHelper.GCDeclarationName(source.ContainTypeName, source.MethodInfo, "MySqlConnector")}
     {{
 ");
         }

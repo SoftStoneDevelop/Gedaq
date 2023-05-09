@@ -58,7 +58,7 @@ namespace Gedaq.Base.Batch
 
         public static void WriteSetParametrs(QueryBatchCommand batch, StringBuilder builder, ProviderInfo providerInfo)
         {
-            var isStatic = batch.ContainTypeName.IsStatic();
+            var isStatic = batch.ContainTypeName.GCIsStatic();
             if(isStatic)
             {
                 builder.Append($@"

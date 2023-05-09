@@ -41,7 +41,7 @@ using System.Runtime.CompilerServices;
 
 namespace {binaryExport.ContainTypeName.ContainingNamespace}
 {{
-    public static class {binaryExport.MethodName}NpgsqlExtension
+    {GeneratedClassDeclarationHelper.GCDeclarationName(binaryExport.ContainTypeName, binaryExport.MethodInfo, "Npgsql")}
     {{
 ");
         }
@@ -88,7 +88,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
             {
                 _methodCode.Append($@"
         public static async IAsyncEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}> {binaryExport.MethodName}Async(
-            this {sourceType.ToTypeName()} {sourceType.ToParametrName()},
+            {binaryExport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
             TimeSpan? timeout = null,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
@@ -99,7 +99,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
             {
                 _methodCode.Append($@"
         public static IEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}> {binaryExport.MethodName}(
-            this {sourceType.ToTypeName()} {sourceType.ToParametrName()},
+            {binaryExport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
             TimeSpan? timeout = null
             )
         {{

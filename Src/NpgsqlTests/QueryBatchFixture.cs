@@ -15,16 +15,18 @@ namespace NpgsqlTests
         [BatchPart("ToClass1", "BatchReadToClass", 2)]
         public void BatchReadToClass()
         {
-            var batchList = _dataSource.OpenConnection().BatchReadToClass(3, 6, 3).Select(sel => sel.ToList()).ToList();
+            using var connection = _dataSource.OpenConnection();
+            var batchList = BatchReadToClass(connection, 3, 6, 3).Select(sel => sel.ToList()).ToList();
             CheckBatchEnumerable(batchList);
         }
 
         [Test]
         public void BatchReadToClassCommand()
         {
-            var batchCommand = _dataSource.OpenConnection().CreateBatchReadToClassBatch();
-            batchCommand.SetBatchReadToClassParametrs(3, 6, 3);
-            var batchList = batchCommand.ExecuteBatchReadToClassBatch().Select(sel => sel.ToList()).ToList();
+            using var connection = _dataSource.OpenConnection();
+            var batchCommand = CreateBatchReadToClassBatch(connection);
+            SetBatchReadToClassParametrs(batchCommand, 3, 6, 3);
+            var batchList = ExecuteBatchReadToClassBatch(batchCommand).Select(sel => sel.ToList()).ToList();
 
             CheckBatchEnumerable(batchList);
         }
@@ -155,7 +157,8 @@ namespace NpgsqlTests
         [Test]
         public void BatchScalarToClass()
         {
-            var id = _dataSource.OpenConnection().ScalarBatchReadToClass(0, 1, 3);
+            using var connection = _dataSource.OpenConnection();
+            var id = ScalarBatchReadToClass(connection, 0, 1, 3);
             Assert.That(id, Is.EqualTo(2));
         }
     }

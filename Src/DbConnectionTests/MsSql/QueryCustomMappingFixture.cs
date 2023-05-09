@@ -40,7 +40,7 @@ ORDER BY p.id ASC
         public void CustomMapping()
         {
             using var connection = OpenConnection();
-            var list = connection.MsSqlCustomMapping(3).ToList();
+            var list = MsSqlCustomMapping(connection, 3).ToList();
 
             Assert.That(list, Has.Count.EqualTo(9));
 

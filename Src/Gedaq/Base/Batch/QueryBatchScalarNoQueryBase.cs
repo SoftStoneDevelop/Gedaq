@@ -123,7 +123,7 @@ namespace Gedaq.Base.Batch
             )
         {
             builder.Append($@"
-            {source.ContainTypeName.ThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
+            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
 ");
 
             BatchCommonBase.WriteMethodParametrs(source, builder);

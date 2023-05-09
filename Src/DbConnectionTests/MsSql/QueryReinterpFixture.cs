@@ -42,7 +42,7 @@ ORDER BY p.id ASC
         public void Reinterp()
         {
             using var connection = OpenConnection();
-            var list = connection.Reinterp(3).ToList();
+            var list = Reinterp(connection, 3).ToList();
 
             Assert.That(list, Has.Count.EqualTo(9));
 

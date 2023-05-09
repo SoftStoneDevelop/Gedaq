@@ -30,14 +30,16 @@ lastname
             )]
         public void BinaryExportTable()
         {
-            var list = _dataSource.OpenConnection().BinaryExportTable().ToList();
+            using var connection = _dataSource.OpenConnection();
+            var list = BinaryExportTable(connection).ToList();
             BinaryExportTableCheck(list);
         }
 
         [Test]
         public async Task BinaryExportTableAsync()
         {
-            var list = await _dataSource.OpenConnection().BinaryExportTableAsync().ToListAsync();
+            await using var connection = _dataSource.OpenConnection();
+            var list = await BinaryExportTableAsync(connection).ToListAsync();
             BinaryExportTableCheck(list);
         }
 
@@ -95,14 +97,16 @@ ORDER BY p.id ASC
             )]
         public void BinaryExportSubquery()
         {
-            var list = _dataSource.OpenConnection().BinaryExportSubquery().ToList();
+            using var connection = _dataSource.OpenConnection();
+            var list = BinaryExportSubquery(connection).ToList();
             BinaryExportSubqueryCheck(list);
         }
 
         [Test]
         public async Task BinaryExportSubqueryAsync()
         {
-            var list = await _dataSource.OpenConnection().BinaryExportSubqueryAsync().ToListAsync();
+            await using var connection = _dataSource.OpenConnection();
+            var list = await BinaryExportSubqueryAsync(connection).ToListAsync();
             BinaryExportSubqueryCheck(list);
         }
 

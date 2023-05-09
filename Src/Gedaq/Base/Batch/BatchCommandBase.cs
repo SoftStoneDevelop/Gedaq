@@ -175,7 +175,7 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static  {(methodType == MethodType.Async ? $"async Task<{ProviderInfo.BatchType()}>" : ProviderInfo.BatchType())} Create{source.MethodName}Batch{(methodType == MethodType.Async ? "Async" : "")}(
-            {source.ContainTypeName.ThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
+            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
 ");
             AddFormatParametrs(source, builder);
             builder.Append($@",
@@ -367,7 +367,7 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static  void Set{source.MethodName}Parametrs(
-            {source.ContainTypeName.ThisWordOrEmpty()}{ProviderInfo.BatchType()} batch
+            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch
 ");
             if(source.HaveParametrs)
             {
@@ -509,7 +509,7 @@ namespace Gedaq.Base.Batch
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        public static IEnumerable<IEnumerable<{type}>> Execute{source.MethodName}Batch({source.ContainTypeName.ThisWordOrEmpty()}{ProviderInfo.BatchType()} batch)
+        public static IEnumerable<IEnumerable<{type}>> Execute{source.MethodName}Batch({source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch)
         {{
 ");
             }
@@ -517,7 +517,7 @@ namespace Gedaq.Base.Batch
             {
                 builder.Append($@"
         public static async IAsyncEnumerable<IAsyncEnumerable<{type}>> Execute{source.MethodName}BatchAsync(
-            {source.ContainTypeName.ThisWordOrEmpty()}{ProviderInfo.BatchType()} batch,
+            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
         {{
@@ -587,7 +587,7 @@ namespace Gedaq.Base.Batch
             {
                 builder.Append($@"
         public static {BatchCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}Batch(
-            {source.ContainTypeName.ThisWordOrEmpty()}{ProviderInfo.BatchType()} batch
+            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch
 ");
                 BatchCommonBase.WriteMethodParametrs(source, builder);
 
@@ -600,7 +600,7 @@ namespace Gedaq.Base.Batch
             {
                 builder.Append($@"
         public static async Task<{BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}BatchAsync(
-            {source.ContainTypeName.ThisWordOrEmpty()}{ProviderInfo.BatchType()} batch,
+            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch,
             CancellationToken cancellationToken = default
             )
         {{

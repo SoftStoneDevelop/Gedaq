@@ -38,7 +38,8 @@ ORDER BY p.id ASC
         [Parametr("ToObjArr", parametrType: typeof(int), position: 1)]
         public void ReadToObjArr()
         {
-            var list = _dataSource.OpenConnection().ToObjArr(3).ToList();
+            using var connection = _dataSource.OpenConnection();
+            var list = ToObjArr(connection, 3).ToList();
 
             Assert.That(list, Has.Count.EqualTo(9));
 
@@ -70,7 +71,8 @@ ORDER BY p.id ASC
         [Test]
         public async Task ReadToObjArrAsync()
         {
-            var list = await _dataSource.OpenConnection().ToObjArrAsync(3).ToListAsync();
+            await using var connection = _dataSource.OpenConnection();
+            var list = await ToObjArrAsync(connection, 3).ToListAsync();
 
             Assert.That(list, Has.Count.EqualTo(9));
 
@@ -124,7 +126,8 @@ ORDER BY p.id ASC
         [Parametr("ToObj", parametrType: typeof(int), position: 1)]
         public void ReadToObj()
         {
-            var list = _dataSource.OpenConnection().ToObj(3).ToList();
+            using var connection = _dataSource.OpenConnection();
+            var list = ToObj(connection, 3).ToList();
 
             Assert.That(list, Has.Count.EqualTo(9));
 
@@ -156,7 +159,8 @@ ORDER BY p.id ASC
         [Test]
         public async Task ReadToObjAsync()
         {
-            var list = await _dataSource.OpenConnection().ToObjAsync(3).ToListAsync();
+            await using var connection = _dataSource.OpenConnection();
+            var list = await ToObjAsync(connection, 3).ToListAsync();
             Assert.That(list, Has.Count.EqualTo(9));
 
             Assert.Multiple(() =>

@@ -336,7 +336,8 @@ ORDER BY p.id ASC
         [BatchPart("NpgsqlToClass1", "NpgsqlBatchReadToClass", 2)]
         public void BatchReadToClass()
         {
-            var batchList = _dataSource.OpenConnection().NpgsqlBatchReadToClass(6.ToString(), 3.ToString(), 3).Select(sel => sel.ToList()).ToList();
+            using var connection = _dataSource.OpenConnection();
+            var batchList = NpgsqlBatchReadToClass(connection, 6.ToString(), 3.ToString(), 3).Select(sel => sel.ToList()).ToList();
 
             var list = batchList[0];
             {
@@ -462,7 +463,8 @@ ORDER BY p.id ASC
         [Test]
         public void BatchScalarToClass()
         {
-            var id = _dataSource.OpenConnection().ScalarNpgsqlBatchReadToClass(0.ToString(), 1.ToString(), 0);
+            using var connection = _dataSource.OpenConnection();
+            var id = ScalarNpgsqlBatchReadToClass(connection, 0.ToString(), 1.ToString(), 0);
             Assert.That(id, Is.EqualTo(2));
         }
 
@@ -479,7 +481,8 @@ select * from dbconnectionfunc(@inParam);
         [Parametr("FuncOut", parametrType: typeof(string), parametrName: "out2", direction: ParameterDirection.Output)]
         public void TestFuncOut()
         {
-            var result = _dataSource.OpenConnection().NonQueryFuncOut(46, out var out1, out var out2);
+            using var connection = _dataSource.OpenConnection();
+            var result = NonQueryFuncOut(connection, 46, out var out1, out var out2);
             Assert.Multiple(() =>
             {
                 Assert.That(out1, Is.EqualTo(46));
@@ -499,7 +502,8 @@ select out1, out2 from dbconnectionfunc(@inParam);
         [Parametr("ReadFunc", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
         public void TestReadFunc()
         {
-            var result = _dataSource.OpenConnection().ReadFunc(24).First();
+            using var connection = _dataSource.OpenConnection();
+            var result = ReadFunc(connection, 24).First();
             Assert.Multiple(() =>
             {
                 Assert.That(result.Out1, Is.EqualTo(24));
@@ -542,7 +546,8 @@ ORDER BY p.id ASC
         [Parametr("ReadFuncPerson", parametrType: typeof(int), parametrName: "personId", direction: ParameterDirection.Input)]
         public void TestReadFuncAndPerson()
         {
-            var result = _dataSource.OpenConnection().ReadFuncPerson(13, 1).First();
+            using var connection = _dataSource.OpenConnection();
+            var result = ReadFuncPerson(connection, 13, 1).First();
             Assert.Multiple(() =>
             {
                 Assert.That(result.Out1, Is.EqualTo(13));

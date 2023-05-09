@@ -80,7 +80,7 @@ namespace Gedaq.Base.Query
             )
         {
             builder.Append($@"
-            {source.ContainTypeName.ThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
+            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
 ");
 
             QueryCommonBase.AddParametrs(source, builder, false);
@@ -151,7 +151,7 @@ namespace Gedaq.Base.Query
 ");
             QueryCommonBase.CreateCommand(source, sourceParametrName, methodType, builder);
 
-            if(source.ContainTypeName.IsStatic())
+            if(source.ContainTypeName.GCIsStatic())
             {
                 builder.Append($@"
                 ;

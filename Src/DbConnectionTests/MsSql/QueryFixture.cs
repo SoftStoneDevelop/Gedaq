@@ -2,6 +2,7 @@
 using Gedaq.DbConnection.Attributes;
 using NUnit.Framework;
 using System;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -40,7 +41,7 @@ ORDER BY p.id ASC
         public void ReadToClass()
         {
             using var connection = OpenConnection();
-            var list = connection.MsSqlToClass1(3).ToList();
+            var list = MsSqlToClass1(connection, 3).ToList();
 
             Assert.That(list, Has.Count.EqualTo(9));
 
@@ -131,7 +132,7 @@ ORDER BY p.id ASC
         public async Task ReadToClassAsync()
         {
             using var connection = OpenConnection();
-            var list = await connection.MsSqlToClass2Async(3, 6).ToListAsync();
+            var list = await MsSqlToClass2Async(connection, 3, 6).ToListAsync();
 
             Assert.That(list, Has.Count.EqualTo(8));
 
@@ -195,12 +196,12 @@ ORDER BY p.id ASC
         public void CreateCommand()
         {
             using var connection = OpenConnection();
-            using var command = connection.CreateMsSqlToClass1Command(false);
-            command.SetMsSqlToClass1Parametrs(26, 10);
+            using var command = CreateMsSqlToClass1Command(connection, false);
+            SetMsSqlToClass1Parametrs(command, 26, 10);
             Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
-            using var command2 = connection.CreateMsSqlToClass1Command(true);
-            command2.SetMsSqlToClass1Parametrs(15);
+            using var command2 = CreateMsSqlToClass1Command(connection, true);
+            SetMsSqlToClass1Parametrs(command2, 15);
             Assert.That(command2.CommandTimeout, Is.EqualTo(30));
         }
 
@@ -208,12 +209,12 @@ ORDER BY p.id ASC
         public async Task CreateCommandAsync()
         {
             using var connection = OpenConnection();
-            await using var command = await connection.CreateMsSqlToClass1CommandAsync(false);
-            command.SetMsSqlToClass1Parametrs(26, 10);
+            await using var command = await CreateMsSqlToClass1CommandAsync(connection, false);
+            SetMsSqlToClass1Parametrs(command, 26, 10);
             Assert.That(command.CommandTimeout, Is.EqualTo(10));
 
-            await using var command2 = await connection.CreateMsSqlToClass1CommandAsync(true);
-            command2.SetMsSqlToClass1Parametrs(15);
+            await using var command2 = await CreateMsSqlToClass1CommandAsync(connection, true);
+            SetMsSqlToClass1Parametrs(command2, 15);
             Assert.That(command2.CommandTimeout, Is.EqualTo(30));
         }
 
@@ -247,7 +248,7 @@ ORDER BY p.id ASC
         public void ReadToObjArr()
         {
             using var connection = OpenConnection();
-            var list = connection.MsSqlToObjArr(3).ToList();
+            var list = MsSqlToObjArr(connection, 3).ToList();
 
             Assert.That(list, Has.Count.EqualTo(9));
 
@@ -280,7 +281,7 @@ ORDER BY p.id ASC
         public async Task ReadToObjArrAsync()
         {
             using var connection = OpenConnection();
-            var list = await connection.MsSqlToObjArrAsync(3).ToListAsync();
+            var list = await MsSqlToObjArrAsync(connection, 3).ToListAsync();
 
             Assert.That(list, Has.Count.EqualTo(9));
 
