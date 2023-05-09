@@ -14,7 +14,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
         MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void ScalarMethod(QueryBatch source, StringBuilder builder)
+        protected override void ScalarMethod(QueryBatchCommand source, StringBuilder builder)
         {
             var batch = (MySqlConnectorQueryBatch)source;
             if (batch.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
@@ -36,7 +36,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             }
         }
 
-        protected override void ScalarMethodAsync(QueryBatch source, StringBuilder builder)
+        protected override void ScalarMethodAsync(QueryBatchCommand source, StringBuilder builder)
         {
             var batch = (MySqlConnectorQueryBatch)source;
             if (batch.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
@@ -58,7 +58,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             }
         }
 
-        protected override void NonQueryMethod(QueryBatch source, StringBuilder builder)
+        protected override void NonQueryMethod(QueryBatchCommand source, StringBuilder builder)
         {
             var batch = (MySqlConnectorQueryBatch)source;
             if (batch.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
@@ -80,7 +80,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             }
         }
 
-        protected override void NonQueryMethodAsync(QueryBatch source, StringBuilder builder)
+        protected override void NonQueryMethodAsync(QueryBatchCommand source, StringBuilder builder)
         {
             var batch = (MySqlConnectorQueryBatch)source;
             if (batch.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))

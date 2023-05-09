@@ -12,7 +12,7 @@ namespace Gedaq.Helpers
     internal static class MappingHelper
     {
         public static void YieldItem(
-            QueryBase source,
+            QueryBaseCommand source,
             StringBuilder builder,
             ProviderInfo provider,
             string castTypeExpr = ""

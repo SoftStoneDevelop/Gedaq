@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace Gedaq.MySqlConnector.Model
 {
-    internal class MySqlConnectorQuery : QueryBase
+    internal class MySqlConnectorQuery : QueryBaseCommand
     {
         public MySqlConnectorSourceType SourceType { get; private set; }
         public MySqlConnectorParametr[] Parametrs;
@@ -27,7 +27,7 @@ namespace Gedaq.MySqlConnector.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out MySqlConnectorQuery method)
         {
             method = null;
-            if (namedArguments.Length != 7)
+            if (namedArguments.Length != 8)
             {
                 return false;
             }
@@ -38,7 +38,7 @@ namespace Gedaq.MySqlConnector.Model
                 return false;
             }
 
-            if (!methodSource.FillMethodName(namedArguments[1]))
+            if (!methodSource.MethodInfo.FillMethodName(namedArguments[1]))
             {
                 return false;
             }
@@ -48,7 +48,7 @@ namespace Gedaq.MySqlConnector.Model
                 return false;
             }
 
-            if (!methodSource.FillMethodType(namedArguments[3]))
+            if (!methodSource.MethodInfo.FillMethodType(namedArguments[3]))
             {
                 return false;
             }
@@ -68,7 +68,12 @@ namespace Gedaq.MySqlConnector.Model
                 return false;
             }
 
-            if(methodSource.MapTypeName == null && methodSource.QueryType.HasFlag(QueryType.Read))
+            if (!methodSource.MethodInfo.FillAccessModifier(namedArguments[7]))
+            {
+                return false;
+            }
+
+            if (methodSource.MapTypeName == null && methodSource.QueryType.HasFlag(QueryType.Read))
             {
                 throw new Exception("For the 'Read' type, the mapping type must be specified");
             }

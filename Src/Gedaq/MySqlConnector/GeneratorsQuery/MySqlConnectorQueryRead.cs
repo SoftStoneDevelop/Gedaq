@@ -14,7 +14,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
         private readonly MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void ReadMethod(QueryBase source, StringBuilder builder)
+        protected override void ReadMethod(QueryBaseCommand source, StringBuilder builder)
         {
             MySqlConnectorQuery query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
@@ -46,7 +46,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
             }
         }
 
-        protected override void ReadAsyncMethod(QueryBase source, StringBuilder builder)
+        protected override void ReadAsyncMethod(QueryBaseCommand source, StringBuilder builder)
         {
             MySqlConnectorQuery query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))

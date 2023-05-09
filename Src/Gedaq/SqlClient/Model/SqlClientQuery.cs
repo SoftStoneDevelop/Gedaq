@@ -8,11 +8,11 @@ using System.Linq;
 
 namespace Gedaq.SqlClient.Model
 {
-    internal class SqlClientQuery : QueryBase
+    internal class SqlClientQuery : QueryBaseCommand
     {
         public SqlClientParametr[] Parametrs;
 
-        public SqlClientQuery()
+        private SqlClientQuery()
         {
         }
 
@@ -24,7 +24,7 @@ namespace Gedaq.SqlClient.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out SqlClientQuery method)
         {
             method = null;
-            if (namedArguments.Length != 6)
+            if (namedArguments.Length != 7)
             {
                 return false;
             }
@@ -35,7 +35,7 @@ namespace Gedaq.SqlClient.Model
                 return false;
             }
 
-            if (!methodSource.FillMethodName(namedArguments[1]))
+            if (!methodSource.MethodInfo.FillMethodName(namedArguments[1]))
             {
                 return false;
             }
@@ -45,7 +45,7 @@ namespace Gedaq.SqlClient.Model
                 return false;
             }
 
-            if (!methodSource.FillMethodType(namedArguments[3]))
+            if (!methodSource.MethodInfo.FillMethodType(namedArguments[3]))
             {
                 return false;
             }
@@ -60,7 +60,12 @@ namespace Gedaq.SqlClient.Model
                 return false;
             }
 
-            if(methodSource.MapTypeName == null && methodSource.QueryType.HasFlag(QueryType.Read))
+            if (!methodSource.MethodInfo.FillAccessModifier(namedArguments[6]))
+            {
+                return false;
+            }
+
+            if (methodSource.MapTypeName == null && methodSource.QueryType.HasFlag(QueryType.Read))
             {
                 throw new Exception("For the 'Read' type, the mapping type must be specified");
             }

@@ -12,14 +12,14 @@ namespace Gedaq.Base.Batch
     {
         protected abstract ProviderInfo ProviderInfo { get; }
 
-        public void Generate(QueryBatch source, StringBuilder builder)
+        public void Generate(QueryBatchCommand source, StringBuilder builder)
         {
             CreateBatchItems(source, builder);
             CreateBatchMethods(source, builder);
             ExecuteBatchMethods(source, builder);
         }
 
-        private void CreateBatchItems(QueryBatch source, StringBuilder builder)
+        private void CreateBatchItems(QueryBatchCommand source, StringBuilder builder)
         {
             if(!source.QueryType.HasFlag(QueryType.Read))
             {
@@ -37,7 +37,7 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        protected virtual void CreateBatchMethods(QueryBatch source, StringBuilder builder)
+        protected virtual void CreateBatchMethods(QueryBatchCommand source, StringBuilder builder)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -52,7 +52,7 @@ namespace Gedaq.Base.Batch
             SetParametrsMethod(source, builder);
         }
 
-        protected void ExecuteBatchMethods(QueryBatch source, StringBuilder builder)
+        protected void ExecuteBatchMethods(QueryBatchCommand source, StringBuilder builder)
         {
             if (source.QueryType.HasFlag(QueryType.Read))
             {
@@ -107,7 +107,7 @@ namespace Gedaq.Base.Batch
         }
 
         private void CreateBatchItem(
-            QueryBatch source,
+            QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder
             )
@@ -165,7 +165,7 @@ namespace Gedaq.Base.Batch
         }
 
         protected void CreateBatchMethod(
-            QueryBatch source,
+            QueryBatchCommand source,
             string sourceTypeName,
             string sourceParametrName,
             MethodType methodType,
@@ -251,7 +251,7 @@ namespace Gedaq.Base.Batch
 
         private void CreateBatchCommand(
             int index,
-            (int number, QueryBase query) item,
+            (int number, QueryBaseCommand query) item,
             StringBuilder builder
             )
         {
@@ -273,7 +273,7 @@ namespace Gedaq.Base.Batch
         }
 
         private void SetCommandParametrs(
-            (int number, QueryBase query) item,
+            (int number, QueryBaseCommand query) item,
             StringBuilder builder
             )
         {
@@ -298,7 +298,7 @@ namespace Gedaq.Base.Batch
         }
 
         private void SetQuery(
-            (int number, QueryBase query) item,
+            (int number, QueryBaseCommand query) item,
             StringBuilder builder
             )
         {
@@ -333,7 +333,7 @@ namespace Gedaq.Base.Batch
         }
 
         private void AddFormatParametrs(
-            QueryBatch source,
+            QueryBatchCommand source,
             StringBuilder builder
             )
         {
@@ -360,7 +360,7 @@ namespace Gedaq.Base.Batch
         }
 
         protected void SetParametrsMethod(
-            QueryBatch source,
+            QueryBatchCommand source,
             StringBuilder builder
             )
         {
@@ -429,7 +429,7 @@ namespace Gedaq.Base.Batch
         }
 
         private void SetBatchCommandParametrsValue(
-            QueryBatch source,
+            QueryBatchCommand source,
             StringBuilder builder
             )
         {
@@ -500,7 +500,7 @@ namespace Gedaq.Base.Batch
         }
 
         private void StartExecuteBatch(
-            QueryBatch source,
+            QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder
             )
@@ -526,7 +526,7 @@ namespace Gedaq.Base.Batch
         }
 
         protected void ExecuteBatch(
-            QueryBatch source,
+            QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder
             )
@@ -577,7 +577,7 @@ namespace Gedaq.Base.Batch
         }
 
         private void StartExecuteScalarBatch(
-            QueryBatch source,
+            QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder
             )
@@ -609,7 +609,7 @@ namespace Gedaq.Base.Batch
         }
 
         protected void ExecuteScalarBatch(
-            QueryBatch source,
+            QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder
             )

@@ -1,14 +1,21 @@
 ﻿using Gedaq.Enums;
+using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
+using System;
 
 namespace Gedaq.Base.Model
 {
-    internal class BaseGenerateItem
+    internal class BaseGenerateItem : IMethodInfo
     {
-        public string MethodName { get; protected set; }
-        public MethodType MethodType { get; protected set; }
-        public QueryType QueryType { get; protected set; }
+        public BaseMethodInfo MethodInfo { get; } = new BaseMethodInfo();
+
+        public string MethodName => MethodInfo.MethodName;
+
+        public MethodType MethodType => MethodInfo.MethodType;
+
+        public AccessModifier AccessModifier => MethodInfo.AccessModifier;
+
         public INamedTypeSymbol ContainTypeName;
     }
 }

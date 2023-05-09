@@ -15,7 +15,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
         MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void ReadMethod(QueryBatch source, StringBuilder builder)
+        protected override void ReadMethod(QueryBatchCommand source, StringBuilder builder)
         {
             var batch = (MySqlConnectorQueryBatch)source;
             if (batch.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
@@ -37,7 +37,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             }
         }
 
-        protected override void ReadAsyncMethod(QueryBatch source, StringBuilder builder)
+        protected override void ReadAsyncMethod(QueryBatchCommand source, StringBuilder builder)
         {
             var batch = (MySqlConnectorQueryBatch)source;
             if (batch.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))

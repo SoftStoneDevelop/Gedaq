@@ -10,14 +10,11 @@ using System.Linq;
 
 namespace Gedaq.Npgsql.Model
 {
-    internal class BinaryExport
+    internal class BinaryExport : BaseGenerateItem
     {
         public NpgsqlSourceType SourceType { get; private set; }
         public string Query;
         public ITypeSymbol MapTypeName { get; private set; }
-        public string MethodName { get; protected set; }
-        public MethodType MethodType { get; protected set; }
-        public INamedTypeSymbol ContainTypeName { get; protected set; }
         public Aliases Aliases;
 
         private BinaryExport()
@@ -27,7 +24,7 @@ namespace Gedaq.Npgsql.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out BinaryExport method)
         {
             method = null;
-            if (namedArguments.Length != 5)
+            if (namedArguments.Length != 6)
             {
                 return false;
             }
@@ -38,7 +35,7 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!methodSource.FillMethodName(namedArguments[1]))
+            if (!methodSource.MethodInfo.FillMethodName(namedArguments[1]))
             {
                 return false;
             }
@@ -48,7 +45,7 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!methodSource.FillMethodType(namedArguments[3]))
+            if (!methodSource.MethodInfo.FillMethodType(namedArguments[3]))
             {
                 return false;
             }
@@ -58,26 +55,18 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if(methodSource.MapTypeName == null)
+            if (!methodSource.MethodInfo.FillAccessModifier(namedArguments[5]))
+            {
+                return false;
+            }
+
+            if (methodSource.MapTypeName == null)
             {
                 throw new Exception("The mapping type must be specified");
             }
 
             methodSource.ContainTypeName = containsType;
             method = methodSource;
-            return true;
-        }
-
-        protected bool FillMethodName(TypedConstant argument)
-        {
-            if (!(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
-                namedTypeSymbol.Name != nameof(String)
-                )
-            {
-                return false;
-            }
-
-            MethodName = (string)argument.Value;
             return true;
         }
 
@@ -107,20 +96,6 @@ namespace Gedaq.Npgsql.Model
             }
 
             MapTypeName = typeParam;
-            return true;
-        }
-
-        protected bool FillMethodType(TypedConstant argument)
-        {
-            if (argument.Kind != TypedConstantKind.Enum ||
-                !(argument.Type is INamedTypeSymbol namedTypeSymbol3) ||
-                !namedTypeSymbol3.IsAssignableFrom("Gedaq.Common.Enums", "MethodType")
-                )
-            {
-                return false;
-            }
-
-            MethodType = (MethodType)argument.Value;
             return true;
         }
 

@@ -9,7 +9,7 @@ using System.Text;
 
 namespace Gedaq.DbConnection.Model
 {
-    internal class DbQuery : QueryBase
+    internal class DbQuery : QueryBaseCommand
     {
         public DbParametr[] Parametrs;
         public override bool HaveParametrs()
@@ -20,7 +20,7 @@ namespace Gedaq.DbConnection.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out DbQuery query)
         {
             query = null;
-            if (namedArguments.Length != 6)
+            if (namedArguments.Length != 7)
             {
                 return false;
             }
@@ -31,7 +31,7 @@ namespace Gedaq.DbConnection.Model
                 return false;
             }
 
-            if (!methodSource.FillMethodName(namedArguments[1]))
+            if (!methodSource.MethodInfo.FillMethodName(namedArguments[1]))
             {
                 return false;
             }
@@ -41,7 +41,7 @@ namespace Gedaq.DbConnection.Model
                 return false;
             }
 
-            if (!methodSource.FillMethodType(namedArguments[3]))
+            if (!methodSource.MethodInfo.FillMethodType(namedArguments[3]))
             {
                 return false;
             }
@@ -52,6 +52,11 @@ namespace Gedaq.DbConnection.Model
             }
 
             if (!methodSource.FillGenerate(namedArguments[5]))
+            {
+                return false;
+            }
+
+            if (!methodSource.MethodInfo.FillAccessModifier(namedArguments[6]))
             {
                 return false;
             }

@@ -15,7 +15,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
         private readonly NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void CreateBatchMethods(QueryBatch source, StringBuilder builder)
+        protected override void CreateBatchMethods(QueryBatchCommand source, StringBuilder builder)
         {
             var batch = (NpgsqlQueryBatch)source;
             if (source.MethodType.HasFlag(MethodType.Sync))

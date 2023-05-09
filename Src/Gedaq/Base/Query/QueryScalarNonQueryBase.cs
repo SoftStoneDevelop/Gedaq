@@ -12,7 +12,7 @@ namespace Gedaq.Base.Query
     {
         protected abstract ProviderInfo ProviderInfo { get; }
 
-        public void ScalarGenerate(QueryBase source, StringBuilder builder)
+        public void ScalarGenerate(QueryBaseCommand source, StringBuilder builder)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -26,7 +26,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        public void NonQueryGenerate(QueryBase source, StringBuilder builder)
+        public void NonQueryGenerate(QueryBaseCommand source, StringBuilder builder)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -40,7 +40,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        protected virtual void NonQueryMethod(QueryBase source, StringBuilder builder)
+        protected virtual void NonQueryMethod(QueryBaseCommand source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Sync, builder);
             QueryMethodParametrs(
@@ -62,7 +62,7 @@ namespace Gedaq.Base.Query
             EndMethod(builder);
         }
 
-        protected virtual void NonQueryMethodAsync(QueryBase source, StringBuilder builder)
+        protected virtual void NonQueryMethodAsync(QueryBaseCommand source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Async, builder);
             QueryMethodParametrs(
@@ -84,7 +84,7 @@ namespace Gedaq.Base.Query
             EndMethod(builder);
         }
 
-        protected virtual void ScalarMethod(QueryBase source, StringBuilder builder)
+        protected virtual void ScalarMethod(QueryBaseCommand source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Sync, builder);
             QueryMethodParametrs(
@@ -99,7 +99,7 @@ namespace Gedaq.Base.Query
             EndMethod(builder);
         }
 
-        protected virtual void ScalarMethodAsync(QueryBase source, StringBuilder builder)
+        protected virtual void ScalarMethodAsync(QueryBaseCommand source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Async, builder);
             QueryMethodParametrs(
@@ -142,7 +142,7 @@ namespace Gedaq.Base.Query
         }
 
         protected void StartScalarMethod(
-            QueryBase source,
+            QueryBaseCommand source,
             MethodType methodType,
             StringBuilder builder
             )
@@ -162,7 +162,7 @@ namespace Gedaq.Base.Query
         }
 
         protected void QueryMethodParametrs(
-            QueryBase source,
+            QueryBaseCommand source,
             string sourceTypeName,
             string sourceParametrName,
             StringBuilder builder,
@@ -209,7 +209,7 @@ namespace Gedaq.Base.Query
         }
 
         protected void MethodBody(
-            QueryBase source,
+            QueryBaseCommand source,
             bool needCheckOpen,
             string sourceParametrName,
             MethodType methodType,

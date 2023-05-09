@@ -11,7 +11,7 @@ namespace Gedaq.Base
     {
         protected Dictionary<string, List<FormatParametr>> _formatsTemp = new Dictionary<string, List<FormatParametr>>();
 
-        protected void AddFormatParametrs(QueryBase read)
+        protected void AddFormatParametrs(QueryBaseCommand read)
         {
             var set = new HashSet<int>();
             if (_formatsTemp.TryGetValue(read.MethodName, out var parametrs))

@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace Gedaq.MySqlConnector.Model
 {
-    internal class MySqlConnectorQueryBatch : QueryBatch
+    internal class MySqlConnectorQueryBatch : QueryBatchCommand
     {
         public MySqlConnectorSourceType SourceType;
         public List<(int number, MySqlConnectorQuery query)> Queries = new List<(int number, MySqlConnectorQuery query)>();
@@ -18,49 +18,41 @@ namespace Gedaq.MySqlConnector.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out MySqlConnectorQueryBatch queryBatch)
         {
             queryBatch = null;
-            if (namedArguments.Length != 3)
+            if (namedArguments.Length != 4)
             {
                 return false;
             }
 
             var result = new MySqlConnectorQueryBatch();
-            if (!(namedArguments[0].Type is INamedTypeSymbol methodName) ||
-                methodName.Name != nameof(String)
-                )
+            if (!result.MethodInfo.FillMethodName(namedArguments[0]))
             {
                 return false;
             }
 
-            result.MethodName = (string)namedArguments[0].Value;
-
-            if (namedArguments[1].Kind != TypedConstantKind.Enum ||
-                !(namedArguments[1].Type is INamedTypeSymbol queryType) ||
-                !queryType.IsAssignableFrom("Gedaq.Common.Enums", "QueryType")
-                )
+            if (!result.FillQueryType(namedArguments[1]))
             {
                 return false;
             }
 
-            result.QueryType = (QueryType)namedArguments[1].Value;
-
-            if (namedArguments[2].Kind != TypedConstantKind.Enum ||
-                !(namedArguments[2].Type is INamedTypeSymbol methodType) ||
-                !methodType.IsAssignableFrom("Gedaq.Common.Enums", "MethodType")
-                )
+            if (!result.MethodInfo.FillMethodType(namedArguments[2]))
             {
                 return false;
             }
 
-            result.MethodType = (MethodType)namedArguments[2].Value;
+            if (!result.MethodInfo.FillAccessModifier(namedArguments[3]))
+            {
+                return false;
+            }
+
             result.ContainTypeName = containsType;
 
             queryBatch = result;
             return true;
         }
 
-        public override IEnumerable<(int, QueryBase)> QueryBases()
+        public override IEnumerable<(int, QueryBaseCommand)> QueryBases()
         {
-            return Queries.Select(sel => (sel.number, (QueryBase)sel.query));
+            return Queries.Select(sel => (sel.number, (QueryBaseCommand)sel.query));
         }
     }
 }

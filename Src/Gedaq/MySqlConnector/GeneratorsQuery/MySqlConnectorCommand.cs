@@ -14,7 +14,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
         MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void GenrateCommand(QueryBase baseSource, StringBuilder builder)
+        protected override void GenrateCommand(QueryBaseCommand baseSource, StringBuilder builder)
         {
             MySqlConnectorQuery source = (MySqlConnectorQuery)baseSource;
             if (baseSource.MethodType.HasFlag(MethodType.Sync))

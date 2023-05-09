@@ -14,7 +14,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
         NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void GenrateCommand(QueryBase baseSource, StringBuilder builder)
+        protected override void GenrateCommand(QueryBaseCommand baseSource, StringBuilder builder)
         {
             NpgsqlQuery source = (NpgsqlQuery)baseSource;
             if (baseSource.MethodType.HasFlag(MethodType.Sync))

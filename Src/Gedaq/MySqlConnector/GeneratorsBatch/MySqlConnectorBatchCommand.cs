@@ -15,7 +15,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
         private readonly MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void CreateBatchMethods(QueryBatch source, StringBuilder builder)
+        protected override void CreateBatchMethods(QueryBatchCommand source, StringBuilder builder)
         {
             var npgsqlBatch = (MySqlConnectorQueryBatch)source;
             if (source.MethodType.HasFlag(MethodType.Sync))

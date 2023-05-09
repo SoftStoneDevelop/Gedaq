@@ -10,7 +10,7 @@ namespace Gedaq.Base.Batch
     {
         protected abstract ProviderInfo ProviderInfo { get; }
 
-        public void Generate(QueryBatch source, StringBuilder builder)
+        public void Generate(QueryBatchCommand source, StringBuilder builder)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -23,7 +23,7 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        protected virtual void ReadMethod(QueryBatch source, StringBuilder builder)
+        protected virtual void ReadMethod(QueryBatchCommand source, StringBuilder builder)
         {
             StartReadMethod(source, MethodType.Sync, builder);
             StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
@@ -32,7 +32,7 @@ namespace Gedaq.Base.Batch
             EndMethod(builder);
         }
 
-        protected virtual void ReadAsyncMethod(QueryBatch source, StringBuilder builder)
+        protected virtual void ReadAsyncMethod(QueryBatchCommand source, StringBuilder builder)
         {
             StartReadMethod(source, MethodType.Async, builder);
             StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
@@ -42,7 +42,7 @@ namespace Gedaq.Base.Batch
         }
 
         protected void StartReadMethod(
-            QueryBatch source,
+            QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder
             )
@@ -63,7 +63,7 @@ namespace Gedaq.Base.Batch
         }
 
         protected void StartMethodParametrs(
-            QueryBatch source,
+            QueryBatchCommand source,
             string sourceTypeName,
             string sourceParametrName,
             StringBuilder builder
@@ -76,7 +76,7 @@ namespace Gedaq.Base.Batch
         }
 
         protected void ReadMethodBody(
-            QueryBatch source,
+            QueryBatchCommand source,
             bool needCheckOpen,
             string sourceParametrName,
             MethodType methodType,

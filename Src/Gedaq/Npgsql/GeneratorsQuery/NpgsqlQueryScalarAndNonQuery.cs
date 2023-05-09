@@ -19,7 +19,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
         private readonly NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void NonQueryMethod(QueryBase source, StringBuilder builder)
+        protected override void NonQueryMethod(QueryBaseCommand source, StringBuilder builder)
         {
             var query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
@@ -67,7 +67,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
             }
         }
 
-        protected override void NonQueryMethodAsync(QueryBase source, StringBuilder builder)
+        protected override void NonQueryMethodAsync(QueryBaseCommand source, StringBuilder builder)
         {
             var query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
@@ -115,7 +115,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
             }
         }
 
-        protected override void ScalarMethod(QueryBase source, StringBuilder builder)
+        protected override void ScalarMethod(QueryBaseCommand source, StringBuilder builder)
         {
             var query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
@@ -163,7 +163,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
             }
         }
 
-        protected override void ScalarMethodAsync(QueryBase source, StringBuilder builder)
+        protected override void ScalarMethodAsync(QueryBaseCommand source, StringBuilder builder)
         {
             var query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))

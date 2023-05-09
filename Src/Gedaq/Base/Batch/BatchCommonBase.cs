@@ -14,7 +14,7 @@ namespace Gedaq.Base.Batch
 {
     internal static class BatchCommonBase
     {
-        public static void ThrowExceptionIfOutCannotExist(QueryBatch batch)
+        public static void ThrowExceptionIfOutCannotExist(QueryBatchCommand batch)
         {
             if (batch.HaveParametrs &&
                 batch.QueryBases().Any(any => any.query.HaveParametrs() && any.query.BaseParametrs().Any(anyIn => anyIn.HaveDirection))
@@ -25,7 +25,7 @@ namespace Gedaq.Base.Batch
         }
 
         public static void SetOutAndReturnParametrs(
-            QueryBatch batch, 
+            QueryBatchCommand batch, 
             StringBuilder builder,
             ProviderInfo providerInfo
             )
@@ -56,7 +56,7 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        public static void WriteSetParametrs(QueryBatch batch, StringBuilder builder, ProviderInfo providerInfo)
+        public static void WriteSetParametrs(QueryBatchCommand batch, StringBuilder builder, ProviderInfo providerInfo)
         {
             builder.Append($@"
                 batch.Set{batch.MethodName}Parametrs(
@@ -117,7 +117,7 @@ namespace Gedaq.Base.Batch
         }
 
         public static void CreateCommand(
-            QueryBatch source,
+            QueryBatchCommand source,
             string sourceParametrName,
             MethodType methodType,
             StringBuilder builder
@@ -153,7 +153,7 @@ namespace Gedaq.Base.Batch
         }
 
         private static void AddFormatParametrs(
-            QueryBatch source,
+            QueryBatchCommand source,
             StringBuilder builder
             )
         {
@@ -180,7 +180,7 @@ namespace Gedaq.Base.Batch
         }
 
         public static void WriteMethodParametrs(
-            QueryBatch source,
+            QueryBatchCommand source,
             StringBuilder builder
             )
         {
@@ -197,7 +197,7 @@ namespace Gedaq.Base.Batch
         }
 
         private static void WriteParametrs(
-            (int number, QueryBase query) item,
+            (int number, QueryBaseCommand query) item,
             StringBuilder builder
             )
         {
@@ -222,7 +222,7 @@ namespace Gedaq.Base.Batch
         }
 
         private static void WriteFormatParametrs(
-            (int number, QueryBase query) item,
+            (int number, QueryBaseCommand query) item,
             StringBuilder builder
             )
         {
@@ -240,7 +240,7 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        public static string GetScalarTypeName(QueryBatch source, ProviderInfo providerInfo)
+        public static string GetScalarTypeName(QueryBatchCommand source, ProviderInfo providerInfo)
         {
             var first = source.QueryBases().First().query;
             if (first.Aliases.IsRowsAffected)

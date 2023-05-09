@@ -13,7 +13,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
         private readonly NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void ReadMethod(QueryBase source, StringBuilder builder)
+        protected override void ReadMethod(QueryBaseCommand source, StringBuilder builder)
         {
             NpgsqlQuery query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
@@ -45,7 +45,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
             }
         }
 
-        protected override void ReadAsyncMethod(QueryBase source, StringBuilder builder)
+        protected override void ReadAsyncMethod(QueryBaseCommand source, StringBuilder builder)
         {
             NpgsqlQuery query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))

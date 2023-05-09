@@ -14,7 +14,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
         NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void ReadMethod(QueryBatch source, StringBuilder builder)
+        protected override void ReadMethod(QueryBatchCommand source, StringBuilder builder)
         {
             var batch = (NpgsqlQueryBatch)source;
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
@@ -36,7 +36,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             }
         }
 
-        protected override void ReadAsyncMethod(QueryBatch source, StringBuilder builder)
+        protected override void ReadAsyncMethod(QueryBatchCommand source, StringBuilder builder)
         {
             var batch = (NpgsqlQueryBatch)source;
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))

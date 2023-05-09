@@ -14,7 +14,7 @@ namespace Gedaq.Base.Query
     internal static class QueryCommonBase
     {
 
-        public static void SetOutAndReturnParametrs(QueryBase source, StringBuilder builder, ProviderInfo providerInfo)
+        public static void SetOutAndReturnParametrs(QueryBaseCommand source, StringBuilder builder, ProviderInfo providerInfo)
         {
             var index = -1;
             foreach (var parametr in source.BaseParametrs())
@@ -32,7 +32,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        public static string GetScalarTypeName(QueryBase source, ProviderInfo providerInfo)
+        public static string GetScalarTypeName(QueryBaseCommand source, ProviderInfo providerInfo)
         {
             if (source.Aliases.IsRowsAffected)
             {
@@ -54,7 +54,7 @@ namespace Gedaq.Base.Query
             return type.GetFullTypeName(true);
         }
 
-        public static void ThrowExceptionIfOutCannotExist(QueryBase source)
+        public static void ThrowExceptionIfOutCannotExist(QueryBaseCommand source)
         {
             if (source.HaveParametrs() &&  source.BaseParametrs().Any(an => an.Direction != System.Data.ParameterDirection.Input))
             {
@@ -63,7 +63,7 @@ namespace Gedaq.Base.Query
         }
 
         public static void CreateCommand(
-            QueryBase source,
+            QueryBaseCommand source,
             string sourceParametrName,
             MethodType methodType,
             StringBuilder builder
@@ -99,7 +99,7 @@ namespace Gedaq.Base.Query
         }
 
         private static void SetFormatParametrs(
-            QueryBase source,
+            QueryBaseCommand source,
             StringBuilder builder
             )
         {
@@ -118,7 +118,7 @@ namespace Gedaq.Base.Query
         }
 
         public static void AddFormatParametrs(
-            QueryBase source,
+            QueryBaseCommand source,
             StringBuilder builder
             )
         {
@@ -137,7 +137,7 @@ namespace Gedaq.Base.Query
         }
 
         public static void AddParametrs(
-            QueryBase source,
+            QueryBaseCommand source,
             StringBuilder builder,
             bool writeOutParametrs
             )
@@ -163,7 +163,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        public static void WriteSetParametrs(QueryBase source, StringBuilder builder, ProviderInfo providerInfo)
+        public static void WriteSetParametrs(QueryBaseCommand source, StringBuilder builder, ProviderInfo providerInfo)
         {
             var afterFirst = false;
             if (source.HaveParametrs())

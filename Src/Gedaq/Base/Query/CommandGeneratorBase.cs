@@ -13,14 +13,14 @@ namespace Gedaq.Base.Query
     {
         protected abstract ProviderInfo ProviderInfo { get; }
 
-        public void Generate(QueryBase source, StringBuilder builder)
+        public void Generate(QueryBaseCommand source, StringBuilder builder)
         {
             GenrateCommand(source, builder);
             ExecuteCommandMethods(source, builder);
             SetParametrsMethod(source, builder);
         }
 
-        protected virtual void GenrateCommand(QueryBase source, StringBuilder builder)
+        protected virtual void GenrateCommand(QueryBaseCommand source, StringBuilder builder)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -36,7 +36,7 @@ namespace Gedaq.Base.Query
         protected abstract void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder);
 
         protected void CreateCommandMethod(
-            QueryBase source,
+            QueryBaseCommand source,
             string sourceTypeName,
             string sourceParametrName,
             MethodType methodType,
@@ -111,7 +111,7 @@ namespace Gedaq.Base.Query
         }
 
         private void SetQuery(
-            QueryBase source,
+            QueryBaseCommand source,
             StringBuilder builder
             )
         {
@@ -145,7 +145,7 @@ namespace Gedaq.Base.Query
         }
 
         private void SetParametrs(
-            QueryBase source,
+            QueryBaseCommand source,
             StringBuilder builder
             )
         {
@@ -162,7 +162,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        protected void ExecuteCommandMethods(QueryBase source, StringBuilder builder)
+        protected void ExecuteCommandMethods(QueryBaseCommand source, StringBuilder builder)
         {
             if (source.QueryType.HasFlag(QueryType.Read))
             {
@@ -234,7 +234,7 @@ namespace Gedaq.Base.Query
         }
 
         protected void ExecuteCommand(
-            QueryBase source,
+            QueryBaseCommand source,
             MethodType methodType,
             StringBuilder builder
             )
@@ -283,7 +283,7 @@ namespace Gedaq.Base.Query
         }
 
         protected void StartExecuteScalarCommand(
-            QueryBase source,
+            QueryBaseCommand source,
             MethodType methodType,
             StringBuilder builder
             )
@@ -315,7 +315,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        protected void ExecuteScalarCommand(QueryBase source, MethodType methodType, StringBuilder builder)
+        protected void ExecuteScalarCommand(QueryBaseCommand source, MethodType methodType, StringBuilder builder)
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
@@ -333,7 +333,7 @@ namespace Gedaq.Base.Query
         }
 
         protected void SetParametrsMethod(
-            QueryBase source,
+            QueryBaseCommand source,
             StringBuilder builder
             )
         {

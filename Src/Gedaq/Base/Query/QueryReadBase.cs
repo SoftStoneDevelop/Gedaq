@@ -10,7 +10,7 @@ namespace Gedaq.Base.Query
     {
         protected abstract ProviderInfo ProviderInfo { get; }
 
-        public void Generate(QueryBase source, StringBuilder builder)
+        public void Generate(QueryBaseCommand source, StringBuilder builder)
         {
             QueryCommonBase.ThrowExceptionIfOutCannotExist(source);
             if (source.MethodType.HasFlag(MethodType.Sync))
@@ -24,7 +24,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        protected virtual void ReadMethod(QueryBase source, StringBuilder builder)
+        protected virtual void ReadMethod(QueryBaseCommand source, StringBuilder builder)
         {
             StartReadMethod(source, MethodType.Sync, builder);
             QueryMethodParametrs(
@@ -38,7 +38,7 @@ namespace Gedaq.Base.Query
             EndMethod(builder);
         }
 
-        protected virtual void ReadAsyncMethod(QueryBase source, StringBuilder builder)
+        protected virtual void ReadAsyncMethod(QueryBaseCommand source, StringBuilder builder)
         {
             StartReadMethod(source, MethodType.Async, builder);
             QueryMethodParametrs(
@@ -73,7 +73,7 @@ namespace Gedaq.Base.Query
         }
 
         protected void QueryMethodParametrs(
-            QueryBase source,
+            QueryBaseCommand source,
             StringBuilder builder,
             string sourceTypeName,
             string sourceParametrName
@@ -120,7 +120,7 @@ namespace Gedaq.Base.Query
         }
 
         protected void ReadMethodBody(
-            QueryBase source,
+            QueryBaseCommand source,
             bool needCheckOpen,
             string sourceParametrName,
             MethodType methodType,

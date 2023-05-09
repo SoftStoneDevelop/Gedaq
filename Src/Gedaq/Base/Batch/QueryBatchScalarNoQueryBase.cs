@@ -13,7 +13,7 @@ namespace Gedaq.Base.Batch
     {
         protected abstract ProviderInfo ProviderInfo { get; }
 
-        public void GenerateScalar(QueryBatch source, StringBuilder builder)
+        public void GenerateScalar(QueryBatchCommand source, StringBuilder builder)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -26,7 +26,7 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        public void GenerateNonQuery(QueryBatch source, StringBuilder builder)
+        public void GenerateNonQuery(QueryBatchCommand source, StringBuilder builder)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -39,7 +39,7 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        protected virtual void ScalarMethod(QueryBatch source, StringBuilder builder)
+        protected virtual void ScalarMethod(QueryBatchCommand source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Sync, builder);
             StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
@@ -48,7 +48,7 @@ namespace Gedaq.Base.Batch
             EndMethod(builder);
         }
 
-        protected virtual void ScalarMethodAsync(QueryBatch source, StringBuilder builder)
+        protected virtual void ScalarMethodAsync(QueryBatchCommand source, StringBuilder builder)
         {
             StartScalarMethod(source, MethodType.Async, builder);
             StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
@@ -57,7 +57,7 @@ namespace Gedaq.Base.Batch
             EndMethod(builder);
         }
 
-        protected virtual void NonQueryMethod(QueryBatch source, StringBuilder builder)
+        protected virtual void NonQueryMethod(QueryBatchCommand source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Sync, builder);
             StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
@@ -66,7 +66,7 @@ namespace Gedaq.Base.Batch
             EndMethod(builder);
         }
 
-        protected virtual void NonQueryMethodAsync(QueryBatch source, StringBuilder builder)
+        protected virtual void NonQueryMethodAsync(QueryBatchCommand source, StringBuilder builder)
         {
             StartNonQueryMethod(source, MethodType.Async, builder);
             StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
@@ -76,7 +76,7 @@ namespace Gedaq.Base.Batch
         }
 
         protected void StartScalarMethod(
-            QueryBatch source,
+            QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder
             )
@@ -96,7 +96,7 @@ namespace Gedaq.Base.Batch
         }
 
         protected void StartNonQueryMethod(
-            QueryBatch source,
+            QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder
             )
@@ -116,7 +116,7 @@ namespace Gedaq.Base.Batch
         }
 
         protected void StartMethodParametrs(
-            QueryBatch source,
+            QueryBatchCommand source,
             string sourceTypeName,
             string sourceParametrName,
             StringBuilder builder
@@ -162,7 +162,7 @@ namespace Gedaq.Base.Batch
         }
 
         protected void ScalarMethodBody(
-            QueryBatch source,
+            QueryBatchCommand source,
             bool needCheckOpen,
             string sourceParametrName,
             MethodType methodType,
