@@ -63,7 +63,7 @@ public class Identification
 }
 
 ```
-We just mark anywhere in the code with a special attribute (class, structure, method) that tells the analyzer to generate the data acquisition code.
+We just mark anywhere in the code with a special attribute (class, structure, method) that tells the analyzer to generate the code.
 Let's mark the Person class itself with an attribute:
 
 ```C#
