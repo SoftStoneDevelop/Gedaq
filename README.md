@@ -13,16 +13,17 @@
 
 Generator for obtaining and mapping data from the database.
 Generates methods (synchronous and/or asynchronous):
-- creating a command for a request
-- method of setting parameters in a command
-- command execution, with data mapping
+- Creating a Command for a query
+- Method of setting parameters in a Command
+- Command execution, with data mapping
 
-- creating a batch request command
-- setting parameters in a batch command
-- get data from a batch command
-- receiving data from a batch of requests, with data mapping
+- Creating a QueryBatch Command
+- Setting parameters in a QueryBatch Command
+- Get data from a batch Command
+- Receiving data from a batch of queries, with data mapping
 
-- getting data based on a request, with data mapping
+- Getting data based on a query, with data mapping
+<br>
 There are versions for all of these methods (if possible):
 - Query
 - NonQuery
