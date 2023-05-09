@@ -23,26 +23,18 @@ namespace Gedaq.DbConnection.Model
             }
 
             var result = new DbQueryBatch();
-
-            if (!result.MethodInfo.FillMethodName(namedArguments[0]))
-            {
-                return false;
-            }
-
             if (!result.FillQueryType(namedArguments[1]))
             {
                 return false;
             }
 
-            if (!result.MethodInfo.FillMethodType(namedArguments[2]))
-            {
-                return false;
-            }
-
-            if (!result.MethodInfo.FillAccessModifier(namedArguments[3]))
-            {
-                return false;
-            }
+            result.MethodInfo =
+                new BaseMethodInfo(
+                    namedArguments[0],
+                    namedArguments[2],
+                    namedArguments[3],
+                    containsType
+                    );
 
             result.ContainTypeName = containsType;
             queryBatch = result;

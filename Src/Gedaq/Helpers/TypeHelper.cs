@@ -1,15 +1,40 @@
-﻿using Microsoft.CodeAnalysis;
+﻿using Gedaq.Enums;
+using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.CodeAnalysis.CSharp;
 using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Numerics;
 using System.Text;
+using System.Linq;
 
 namespace Gedaq.Helpers
 {
     internal static class TypeHelper
     {
+        internal static bool IsPatrial(this INamedTypeSymbol type)
+        {
+            var isPatrial = false;
+            foreach (var item in type.DeclaringSyntaxReferences)
+            {
+                var syntax = item.GetSyntax();
+                if (!(syntax is ClassDeclarationSyntax classDeclarationSyntax))
+                {
+                    continue;
+                }
+
+                if (classDeclarationSyntax.Modifiers.Any(m => m.IsKind(SyntaxKind.PartialKeyword)))
+                {
+                    isPatrial = true;
+                    break;
+                }
+            }
+
+            return isPatrial;
+        }
+
         internal static bool IsAssignableFrom(
             this INamedTypeSymbol type,
             string fullNamespace,

@@ -31,17 +31,7 @@ namespace Gedaq.DbConnection.Model
                 return false;
             }
 
-            if (!methodSource.MethodInfo.FillMethodName(namedArguments[1]))
-            {
-                return false;
-            }
-
             if (!methodSource.FillMapType(namedArguments[2]))
-            {
-                return false;
-            }
-
-            if (!methodSource.MethodInfo.FillMethodType(namedArguments[3]))
             {
                 return false;
             }
@@ -56,11 +46,13 @@ namespace Gedaq.DbConnection.Model
                 return false;
             }
 
-            if (!methodSource.MethodInfo.FillAccessModifier(namedArguments[6]))
-            {
-                return false;
-            }
-
+            methodSource.MethodInfo = 
+                new BaseMethodInfo(
+                    namedArguments[1], 
+                    namedArguments[3], 
+                    namedArguments[6],
+                    containsType
+                    );
             methodSource.ContainTypeName = containsType;
             query = methodSource;
             return true;

@@ -14,49 +14,82 @@ namespace Gedaq.Base.Model
 
     internal class BaseMethodInfo : IMethodInfo
     {
+        public BaseMethodInfo(
+            TypedConstant nameArgument,
+            TypedConstant typeArgument,
+            TypedConstant accessModifierArgument,
+            INamedTypeSymbol containsType
+            )
+        {
+            SetMethodName(nameArgument);
+            SetMethodType(typeArgument);
+            SetAccessModifier(accessModifierArgument, containsType);
+        }
+
         public string MethodName { get; private set; }
         public MethodType MethodType { get; private set; }
         public AccessModifier AccessModifier { get; private set; }
 
-        public bool FillMethodType(TypedConstant argument)
+        private void SetMethodType(TypedConstant argument)
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol namedTypeSymbol3) ||
                 !namedTypeSymbol3.IsAssignableFrom("Gedaq.Common.Enums", "MethodType")
                 )
             {
-                return false;
+                throw new ArgumentException($"{nameof(SetMethodType)}:Wrong argument");
             }
 
             MethodType = (MethodType)argument.Value;
-            return true;
         }
 
-        public bool FillAccessModifier(TypedConstant argument)
+        private void SetAccessModifier(TypedConstant argument, INamedTypeSymbol containsType)
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol accessModifier) ||
                 !accessModifier.IsAssignableFrom("Gedaq.Common.Enums", "AccessModifier")
                 )
             {
-                return false;
+                throw new ArgumentException($"{nameof(SetAccessModifier)}:Wrong argument");
             }
 
-            AccessModifier = (AccessModifier)argument.Value;
-            return true;
+            var modifier = (AccessModifier)argument.Value;
+            AccessModifier = GetAccessModifier((AccessModifier)argument.Value, containsType);
         }
 
-        public bool FillMethodName(TypedConstant argument)
+        private AccessModifier GetAccessModifier(
+            AccessModifier accessModifier,
+            INamedTypeSymbol type
+            )
+        {
+            if (type.DeclaredAccessibility == Accessibility.Private)
+            {
+                return AccessModifier.Private;
+            }
+
+            if (type.DeclaredAccessibility == Accessibility.Protected)
+            {
+                return AccessModifier.Protected;
+            }
+
+            if (type.DeclaredAccessibility == Accessibility.Internal)
+            {
+                return AccessModifier.Internal;
+            }
+
+            return AccessModifier.Public;
+        }
+
+        public void SetMethodName(TypedConstant argument)
         {
             if (!(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
                 namedTypeSymbol.Name != nameof(String)
                 )
             {
-                return false;
+                throw new ArgumentException($"{nameof(SetMethodName)}:Wrong argument");
             }
 
             MethodName = (string)argument.Value;
-            return true;
         }
     }
 }

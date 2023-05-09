@@ -60,11 +60,6 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!methodSource.MethodInfo.FillMethodName(namedArguments[1]))
-            {
-                return false;
-            }
-
             if (!methodSource.FillMapType(namedArguments[2]))
             {
                 return false;
@@ -75,20 +70,18 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!methodSource.MethodInfo.FillMethodType(namedArguments[4]))
-            {
-                return false;
-            }
-
             if (!methodSource.FillSourceType(namedArguments[5]))
             {
                 return false;
             }
 
-            if (!methodSource.MethodInfo.FillAccessModifier(namedArguments[6]))
-            {
-                return false;
-            }
+            methodSource.MethodInfo =
+                new BaseMethodInfo(
+                    namedArguments[1],
+                    namedArguments[4],
+                    namedArguments[6],
+                    containsType
+                    );
 
             if (methodSource.MapTypeName == null)
             {
