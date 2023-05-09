@@ -11,7 +11,24 @@
 
 </h3>
 
-Generator of methods for obtaining data from databases.
+Generator for obtaining and mapping data from the database.
+Generates methods (synchronous and/or asynchronous):
+- creating a command for a request
+- method of setting parameters in a command
+- command execution, with data mapping
+
+- creating a batch request command
+- setting parameters in a batch command
+- get data from a batch command
+- receiving data from a batch of requests, with data mapping
+
+- getting data based on a request, with data mapping
+There are versions for all of these methods (if possible):
+- Query
+-NonQuery
+- ЕecuteScalar (return type is determined automatically at the generation stage)
+
+It also generates methods specific to each provider, such as BinaryImport and BinaryExport in PostgreSQL.
 Supported databases(see examples and documentation in the relevant DB package):<br>
 - [Npgsql](https://github.com/SoftStoneDevelop/Gedaq.Npgsql)
 - [DbConnection](https://github.com/SoftStoneDevelop/Gedaq.DbConnection)
