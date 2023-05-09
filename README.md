@@ -25,7 +25,7 @@ Generates methods (synchronous and/or asynchronous):
 - getting data based on a request, with data mapping
 There are versions for all of these methods (if possible):
 - Query
--NonQuery
+- NonQuery
 - ЕecuteScalar (return type is determined automatically at the generation stage)
 
 It also generates methods specific to each provider, such as BinaryImport and BinaryExport in PostgreSQL.
