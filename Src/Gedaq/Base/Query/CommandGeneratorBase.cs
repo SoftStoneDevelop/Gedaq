@@ -46,7 +46,7 @@ namespace Gedaq.Base.Query
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static  {(methodType == MethodType.Async ? $"async Task<{ProviderInfo.CommandType()}>" : ProviderInfo.CommandType())} Create{source.MethodName}Command{(methodType == MethodType.Async ? "Async" : "")}(
-            this {sourceTypeName} {sourceParametrName}
+            {sourceTypeName} {sourceParametrName}
 ");
             QueryCommonBase.AddFormatParametrs(source, builder);
             builder.Append($@",
@@ -215,7 +215,7 @@ namespace Gedaq.Base.Query
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        public static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}Command(this {ProviderInfo.CommandType()} command)
+        public static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}Command({ProviderInfo.CommandType()} command)
         {{
 ");
             }
@@ -223,7 +223,7 @@ namespace Gedaq.Base.Query
             {
                 builder.Append($@"
         public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}CommandAsync(
-            this {ProviderInfo.CommandType()} command,
+            {ProviderInfo.CommandType()} command,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
         {{
@@ -292,7 +292,7 @@ namespace Gedaq.Base.Query
             {
                 builder.Append($@"        
         public static {QueryCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}Command(
-            this {ProviderInfo.CommandType()} command
+            {ProviderInfo.CommandType()} command
 ");
                 QueryCommonBase.AddParametrs(source, builder, true);
                 builder.Append($@"
@@ -304,7 +304,7 @@ namespace Gedaq.Base.Query
             {
                 builder.Append($@"        
         public static async Task<{QueryCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}CommandAsync(
-            this {ProviderInfo.CommandType()} command
+            {ProviderInfo.CommandType()} command
 ");
                 QueryCommonBase.AddParametrs(source, builder, false);
                 builder.Append($@",
@@ -340,7 +340,7 @@ namespace Gedaq.Base.Query
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Set{source.MethodName}Parametrs(
-            this {ProviderInfo.CommandType()} command
+            {ProviderInfo.CommandType()} command
 ");
             QueryCommonBase.AddParametrs(source, builder, false);
 

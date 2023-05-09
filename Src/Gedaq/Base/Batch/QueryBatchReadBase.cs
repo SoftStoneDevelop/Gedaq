@@ -70,7 +70,7 @@ namespace Gedaq.Base.Batch
             )
         {
             builder.Append($@"
-            this {sourceTypeName} {sourceParametrName}
+            {sourceTypeName} {sourceParametrName}
 ");
             BatchCommonBase.WriteMethodParametrs(source, builder);
         }
@@ -121,7 +121,7 @@ namespace Gedaq.Base.Batch
             {
                 ++index;
                 builder.Append($@"
-                yield return reader.BatchItem{index}{(methodType == MethodType.Async ? "Async(cancellationToken)" : "()")};
+                yield return BatchItem{index}{(methodType == MethodType.Async ? "Async(reader, cancellationToken)" : "(reader)")};
                 {await}reader.NextResult{async};
 ");
             }

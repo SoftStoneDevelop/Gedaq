@@ -165,7 +165,6 @@ namespace Gedaq.Base.Query
 
         public static void WriteSetParametrs(QueryBaseCommand source, StringBuilder builder, ProviderInfo providerInfo)
         {
-            var afterFirst = false;
             if (source.HaveParametrs())
             {
                 foreach (var parametr in source.BaseParametrs())
@@ -175,20 +174,15 @@ namespace Gedaq.Base.Query
                         continue;
                     }
 
-                    if (afterFirst)
-                    {
-                        builder.Append($@",");
-                    }
+                    builder.Append($@",");
 
                     builder.Append($@"
                     {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
 ");
-
-                    afterFirst |= true;
                 }
             }
 
-            builder.Append($@"{(afterFirst ? "," : "")}
+            builder.Append($@",
                     timeout
 ");
             if (providerInfo.CanSetTransaction)

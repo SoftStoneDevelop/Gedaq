@@ -59,9 +59,9 @@ namespace Gedaq.Base.Batch
         public static void WriteSetParametrs(QueryBatchCommand batch, StringBuilder builder, ProviderInfo providerInfo)
         {
             builder.Append($@"
-                batch.Set{batch.MethodName}Parametrs(
+                Set{batch.MethodName}Parametrs(
+                    batch
 ");
-            var haveSuccessIteration = false;
             if(batch.HaveParametrs)
             {
                 foreach (var item in batch.QueryBases())
@@ -71,10 +71,7 @@ namespace Gedaq.Base.Batch
                         continue;
                     }
 
-                    if (haveSuccessIteration)
-                    {
-                        builder.Append($@",");
-                    }
+                    builder.Append($@",");
 
                     int index = -1;
                     var afterFirst = false;
@@ -97,13 +94,11 @@ namespace Gedaq.Base.Batch
 
                         afterFirst |= true;
                     }
-
-                    haveSuccessIteration |= true;
                 }
             }
 
-            builder.Append($@"{(haveSuccessIteration ? "," : "")}
-                    timeout
+            builder.Append($@",
+                timeout
 ");
             if(providerInfo.CanSetTransaction)
             {
@@ -212,8 +207,6 @@ namespace Gedaq.Base.Batch
                 {
                     builder.Append($@",
             {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}Batch{item.number}
-
-                            
                         ");
                 }
 

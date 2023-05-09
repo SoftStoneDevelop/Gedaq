@@ -80,7 +80,7 @@ namespace Gedaq.Base.Query
             )
         {
             builder.Append($@"
-            this {sourceTypeName} {sourceParametrName}
+            {sourceTypeName} {sourceParametrName}
 ");
 
             QueryCommonBase.AddParametrs(source, builder, false);
@@ -153,7 +153,8 @@ namespace Gedaq.Base.Query
 
             builder.Append($@"
                 ;
-                command.Set{source.MethodName}Parametrs(
+                Set{source.MethodName}Parametrs(
+                    command
 ");
             QueryCommonBase.WriteSetParametrs(source, builder, ProviderInfo);
             builder.Append($@"

@@ -124,7 +124,7 @@ namespace Gedaq.Base.Batch
                 {
                     builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static IEnumerable<{type}> BatchItem{index}(this {ProviderInfo.ReaderType()} reader)
+        private static IEnumerable<{type}> BatchItem{index}({ProviderInfo.ReaderType()} reader)
         {{
 ");
                 }
@@ -133,7 +133,7 @@ namespace Gedaq.Base.Batch
                     builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static async IAsyncEnumerable<{type}> BatchItem{index}Async(
-            this {ProviderInfo.ReaderType()} reader,
+            {ProviderInfo.ReaderType()} reader,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
         {{
@@ -175,7 +175,7 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static  {(methodType == MethodType.Async ? $"async Task<{ProviderInfo.BatchType()}>" : ProviderInfo.BatchType())} Create{source.MethodName}Batch{(methodType == MethodType.Async ? "Async" : "")}(
-            this {sourceTypeName} {sourceParametrName}
+            {sourceTypeName} {sourceParametrName}
 ");
             AddFormatParametrs(source, builder);
             builder.Append($@",
@@ -367,7 +367,7 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static  void Set{source.MethodName}Parametrs(
-            this {ProviderInfo.BatchType()} batch
+            {ProviderInfo.BatchType()} batch
 ");
             if(source.HaveParametrs)
             {
@@ -509,7 +509,7 @@ namespace Gedaq.Base.Batch
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        public static IEnumerable<IEnumerable<{type}>> Execute{source.MethodName}Batch(this {ProviderInfo.BatchType()} batch)
+        public static IEnumerable<IEnumerable<{type}>> Execute{source.MethodName}Batch({ProviderInfo.BatchType()} batch)
         {{
 ");
             }
@@ -517,7 +517,7 @@ namespace Gedaq.Base.Batch
             {
                 builder.Append($@"
         public static async IAsyncEnumerable<IAsyncEnumerable<{type}>> Execute{source.MethodName}BatchAsync(
-            this {ProviderInfo.BatchType()} batch,
+            {ProviderInfo.BatchType()} batch,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
         {{
@@ -548,7 +548,7 @@ namespace Gedaq.Base.Batch
             {
                 ++index;
                 builder.Append($@"
-                yield return reader.BatchItem{index}{(methodType == MethodType.Async ? "Async(cancellationToken)" : "()")};
+                yield return BatchItem{index}{(methodType == MethodType.Async ? "Async(reader, cancellationToken)" : "(reader)")};
                 {await}reader.NextResult{async};
 ");
             }
@@ -587,7 +587,7 @@ namespace Gedaq.Base.Batch
             {
                 builder.Append($@"
         public static {BatchCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}Batch(
-            this {ProviderInfo.BatchType()} batch
+            {ProviderInfo.BatchType()} batch
 ");
                 BatchCommonBase.WriteMethodParametrs(source, builder);
 
@@ -600,7 +600,7 @@ namespace Gedaq.Base.Batch
             {
                 builder.Append($@"
         public static async Task<{BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}BatchAsync(
-            this {ProviderInfo.BatchType()} batch,
+            {ProviderInfo.BatchType()} batch,
             CancellationToken cancellationToken = default
             )
         {{
