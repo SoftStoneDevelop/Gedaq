@@ -174,7 +174,7 @@ namespace Gedaq.Base.Batch
         {
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static  {(methodType == MethodType.Async ? $"async Task<{ProviderInfo.BatchType()}>" : ProviderInfo.BatchType())} Create{source.MethodName}Batch{(methodType == MethodType.Async ? "Async" : "")}(
+        {source.AccessModifier.ToLowerInvariant()} static  {(methodType == MethodType.Async ? $"async Task<{ProviderInfo.BatchType()}>" : ProviderInfo.BatchType())} Create{source.MethodName}Batch{(methodType == MethodType.Async ? "Async" : "")}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
 ");
             AddFormatParametrs(source, builder);
@@ -366,7 +366,7 @@ namespace Gedaq.Base.Batch
         {
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static  void Set{source.MethodName}Parametrs(
+        {source.AccessModifier.ToLowerInvariant()} static  void Set{source.MethodName}Parametrs(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch
 ");
             if(source.HaveParametrs)
@@ -509,14 +509,14 @@ namespace Gedaq.Base.Batch
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        public static IEnumerable<IEnumerable<{type}>> Execute{source.MethodName}Batch({source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch)
+        {source.AccessModifier.ToLowerInvariant()} static IEnumerable<IEnumerable<{type}>> Execute{source.MethodName}Batch({source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch)
         {{
 ");
             }
             else
             {
                 builder.Append($@"
-        public static async IAsyncEnumerable<IAsyncEnumerable<{type}>> Execute{source.MethodName}BatchAsync(
+        {source.AccessModifier.ToLowerInvariant()} static async IAsyncEnumerable<IAsyncEnumerable<{type}>> Execute{source.MethodName}BatchAsync(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
@@ -586,7 +586,7 @@ namespace Gedaq.Base.Batch
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        public static {BatchCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}Batch(
+        {source.AccessModifier.ToLowerInvariant()} static {BatchCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}Batch(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch
 ");
                 BatchCommonBase.WriteMethodParametrs(source, builder);
@@ -599,7 +599,7 @@ namespace Gedaq.Base.Batch
             else
             {
                 builder.Append($@"
-        public static async Task<{BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}BatchAsync(
+        {source.AccessModifier.ToLowerInvariant()} static async Task<{BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}BatchAsync(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch,
             CancellationToken cancellationToken = default
             )

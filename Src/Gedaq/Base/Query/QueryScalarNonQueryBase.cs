@@ -130,13 +130,13 @@ namespace Gedaq.Base.Query
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"        
-        public static System.Int32 NonQuery{source.MethodName}(
+        {source.AccessModifier.ToLowerInvariant()} static System.Int32 NonQuery{source.MethodName}(
 ");
             }
             else
             {
                 builder.Append($@"        
-        public static async Task<System.Int32> NonQuery{source.MethodName}Async(
+        {source.AccessModifier.ToLowerInvariant()} static async Task<System.Int32> NonQuery{source.MethodName}Async(
 ");
             }
         }
@@ -150,13 +150,13 @@ namespace Gedaq.Base.Query
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"        
-        public static {QueryCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}(
+        {source.AccessModifier.ToLowerInvariant()} static {QueryCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}(
 ");
             }
             else
             {
                 builder.Append($@"        
-        public static async Task<{QueryCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}Async(
+        {source.AccessModifier.ToLowerInvariant()} static async Task<{QueryCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}Async(
 ");
             }
         }

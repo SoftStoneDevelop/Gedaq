@@ -75,7 +75,29 @@ namespace Gedaq.Helpers
             string extansionPrefix
             )
         {
-            return $@"{methodInfo.AccessModifier.ToLowerInvariant()} {type.GCStaticWordOrEmpty()} {type.GCPartialWordOrEmpty()} class {(type.IsPatrial() ? type.Name : $"{methodInfo.MethodName}{extansionPrefix}Extension")}";
+            return $@"{type.ToAccessModifier().ToLowerInvariant()} {type.GCStaticWordOrEmpty()} {type.GCPartialWordOrEmpty()} class {(type.IsPatrial() ? type.Name : $"{methodInfo.MethodName}{extansionPrefix}Extension")}";
+        }
+
+        internal static AccessModifier ToAccessModifier(
+            this INamedTypeSymbol type
+            )
+        {
+            if (type.DeclaredAccessibility == Accessibility.Private)
+            {
+                return AccessModifier.Private;
+            }
+
+            if (type.DeclaredAccessibility == Accessibility.Protected)
+            {
+                return AccessModifier.Protected;
+            }
+
+            if (type.DeclaredAccessibility == Accessibility.Internal)
+            {
+                return AccessModifier.Internal;
+            }
+
+            return AccessModifier.Public;
         }
     }
     internal static class TypeHelper

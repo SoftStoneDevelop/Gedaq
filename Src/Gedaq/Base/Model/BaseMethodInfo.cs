@@ -62,6 +62,11 @@ namespace Gedaq.Base.Model
             INamedTypeSymbol type
             )
         {
+            if(accessModifier != AccessModifier.AsContainingClass)
+            {
+                return accessModifier;
+            }
+
             if (type.DeclaredAccessibility == Accessibility.Private)
             {
                 return AccessModifier.Private;

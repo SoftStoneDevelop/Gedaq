@@ -45,7 +45,7 @@ namespace Gedaq.Base.Query
         {
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static  {(methodType == MethodType.Async ? $"async Task<{ProviderInfo.CommandType()}>" : ProviderInfo.CommandType())} Create{source.MethodName}Command{(methodType == MethodType.Async ? "Async" : "")}(
+        {source.AccessModifier.ToLowerInvariant()} static  {(methodType == MethodType.Async ? $"async Task<{ProviderInfo.CommandType()}>" : ProviderInfo.CommandType())} Create{source.MethodName}Command{(methodType == MethodType.Async ? "Async" : "")}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
 ");
             QueryCommonBase.AddFormatParametrs(source, builder);
@@ -215,14 +215,14 @@ namespace Gedaq.Base.Query
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        public static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}Command({source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command)
+        {source.AccessModifier.ToLowerInvariant()} static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}Command({source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command)
         {{
 ");
             }
             else
             {
                 builder.Append($@"
-        public static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}CommandAsync(
+        {source.AccessModifier.ToLowerInvariant()} static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> Execute{source.MethodName}CommandAsync(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
@@ -291,7 +291,7 @@ namespace Gedaq.Base.Query
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"        
-        public static {QueryCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}Command(
+        {source.AccessModifier.ToLowerInvariant()} static {QueryCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}Command(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command
 ");
                 QueryCommonBase.AddParametrs(source, builder, true);
@@ -303,7 +303,7 @@ namespace Gedaq.Base.Query
             else
             {
                 builder.Append($@"        
-        public static async Task<{QueryCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}CommandAsync(
+        {source.AccessModifier.ToLowerInvariant()} static async Task<{QueryCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}CommandAsync(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command
 ");
                 QueryCommonBase.AddParametrs(source, builder, false);
@@ -339,7 +339,7 @@ namespace Gedaq.Base.Query
         {
             builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void Set{source.MethodName}Parametrs(
+        {source.AccessModifier.ToLowerInvariant()} static void Set{source.MethodName}Parametrs(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command
 ");
             QueryCommonBase.AddParametrs(source, builder, false);

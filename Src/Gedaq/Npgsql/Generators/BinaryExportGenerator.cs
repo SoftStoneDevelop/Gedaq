@@ -87,7 +87,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
             if(methodType == MethodType.Async)
             {
                 _methodCode.Append($@"
-        public static async IAsyncEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}> {binaryExport.MethodName}Async(
+        {binaryExport.AccessModifier.ToLowerInvariant()} static async IAsyncEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}> {binaryExport.MethodName}Async(
             {binaryExport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
             TimeSpan? timeout = null,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
@@ -98,7 +98,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
             else
             {
                 _methodCode.Append($@"
-        public static IEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}> {binaryExport.MethodName}(
+        {binaryExport.AccessModifier.ToLowerInvariant()} static IEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}> {binaryExport.MethodName}(
             {binaryExport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
             TimeSpan? timeout = null
             )
