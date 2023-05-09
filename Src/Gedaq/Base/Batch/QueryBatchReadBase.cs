@@ -70,7 +70,7 @@ namespace Gedaq.Base.Batch
             )
         {
             builder.Append($@"
-            {sourceTypeName} {sourceParametrName}
+            {source.ContainTypeName.ThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
 ");
             BatchCommonBase.WriteMethodParametrs(source, builder);
         }

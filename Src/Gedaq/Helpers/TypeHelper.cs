@@ -16,7 +16,6 @@ namespace Gedaq.Helpers
     {
         internal static bool IsPatrial(this INamedTypeSymbol type)
         {
-            var isPatrial = false;
             foreach (var item in type.DeclaringSyntaxReferences)
             {
                 var syntax = item.GetSyntax();
@@ -27,12 +26,35 @@ namespace Gedaq.Helpers
 
                 if (classDeclarationSyntax.Modifiers.Any(m => m.IsKind(SyntaxKind.PartialKeyword)))
                 {
-                    isPatrial = true;
-                    break;
+                    return true;
                 }
             }
 
-            return isPatrial;
+            return false;
+        }
+
+        internal static bool IsStatic(this INamedTypeSymbol type)
+        {
+            foreach (var item in type.DeclaringSyntaxReferences)
+            {
+                var syntax = item.GetSyntax();
+                if (!(syntax is ClassDeclarationSyntax classDeclarationSyntax))
+                {
+                    continue;
+                }
+
+                if (classDeclarationSyntax.Modifiers.Any(m => m.IsKind(SyntaxKind.StaticKeyword)))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        internal static string ThisWordOrEmpty(this INamedTypeSymbol type)
+        {
+            return type.IsStatic() ? "this " : "";
         }
 
         internal static bool IsAssignableFrom(
