@@ -23,7 +23,7 @@ Generates methods (synchronous and/or asynchronous):
 - Receiving data from a batch of queries, with data mapping
 
 - Getting data based on a query, with data mapping
-<br>
+
 There are versions for all of these methods (if possible):
 - Query
 - NonQuery
