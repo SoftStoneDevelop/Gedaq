@@ -11,7 +11,26 @@
 
 </h3>
 
-Generator of methods for obtaining data from databases.
+Generator for obtaining and mapping data from the database.
+Generates methods (synchronous and/or asynchronous):
+- Creating a Command for a query
+- Method of setting parameters in a Command
+- Command execution, with data mapping
+
+- Creating a QueryBatch Command
+- Setting parameters in a QueryBatch Command
+- Get data from a batch Command
+- Receiving data from a batch of queries, with data mapping
+
+- Getting data based on a query, with data mapping
+
+There are versions for all of these methods (if possible):
+- Query
+- NonQuery
+- ЕecuteScalar (return type is determined automatically at the generation stage)
+<br>
+It also generates methods specific to each provider, such as BinaryImport and BinaryExport in PostgreSQL.
+
 Supported databases(see examples and documentation in the relevant DB package):<br>
 - [Npgsql](https://github.com/SoftStoneDevelop/Gedaq.Npgsql)
 - [DbConnection](https://github.com/SoftStoneDevelop/Gedaq.DbConnection)
@@ -44,7 +63,7 @@ public class Identification
 }
 
 ```
-We just mark anywhere in the code with a special attribute (class, structure, method) that tells the analyzer to generate the data acquisition code.
+We just mark anywhere in the code with a special attribute (class, structure, method) that tells the analyzer to generate the code.
 Let's mark the Person class itself with an attribute:
 
 ```C#
