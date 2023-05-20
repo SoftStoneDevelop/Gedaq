@@ -10,7 +10,7 @@ using System.Text;
 
 namespace Gedaq
 {
-    [Generator(LanguageNames.CSharp)]
+    [Generator]
     public partial class Gedaq : IIncrementalGenerator
     {
         public void Initialize(IncrementalGeneratorInitializationContext context)
