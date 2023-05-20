@@ -14,7 +14,7 @@ namespace Gedaq.DbConnection.Model
         public DbParametr[] Parametrs;
         public override bool HaveParametrs()
         {
-            return Parametrs != null;
+            return Parametrs?.Length != 0;
         }
 
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out DbQuery query)

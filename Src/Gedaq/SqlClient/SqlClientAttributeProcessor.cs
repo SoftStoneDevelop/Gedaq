@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Parser;
@@ -8,113 +9,109 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.Linq;
 
 namespace Gedaq.SqlClient
 {
     internal class SqlClientAttributeProcessor : BaseAttributeProcessor
     {
+        private class ReadPair
+        {
+            public SqlClientQuery Query { get; set; }
+            public List<SqlClientParametr> Parametrs { get; } = new List<SqlClientParametr>();
+
+            public List<FormatParametr> FormatParametrs { get; } = new List<FormatParametr>();
+
+            public bool IsEmpty()
+            {
+                return Query == null && Parametrs.Count == 0;
+            }
+        }
+
         private List<SqlClientQuery> _read = new List<SqlClientQuery>();
-
-        Dictionary<string, SqlClientQuery> _readTemp = new Dictionary<string, SqlClientQuery>();
-        Dictionary<string, List<SqlClientParametr>> _parametrsTemp = new Dictionary<string, List<SqlClientParametr>>();
-
         private QueryParser _queryParser = new QueryParser();
 
-        public void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
+        public override void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
         {
             foreach (var attributeListSyntax in attributes)
             {
                 var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
                 var parentAttributes = parentSymbol.GetAttributes();
+
+                var readTemp = new ReadPair();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
                     var attributeData = parentAttributes.First(f => f.ApplicationSyntaxReference.GetSyntax() == attributeSyntax);
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.SqlClient.Attributes", "QueryAttribute"))
                     {
-                        ProcessQueryRead(attributeData, containsType);
+                        ProcessQueryRead(attributeData, containsType, readTemp);
                         continue;
                     }
 
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.SqlClient.Attributes", "ParametrAttribute"))
                     {
-                        ProcessParametr(attributeData, containsType);
+                        ProcessParametr(attributeData, containsType, readTemp);
                         continue;
                     }
 
-                    base.ProcessAttribute(attributeData, containsType);
+                    base.ProcessAttribute(attributeData, containsType, readTemp.FormatParametrs);
                 }
+
+                TryAddReadMethod(readTemp);
             }
         }
 
-        public void CompleteProcessContainTypes()
+        public override void CompleteProcessContainTypes()
         {
-            FillReadMethods();
-            _parametrsTemp.Clear();
-            _formatsTemp.Clear();
-
-            _readTemp.Clear();
         }
 
-        private void FillReadMethods()
+        private void TryAddReadMethod(ReadPair readPair)
         {
-            foreach (var read in _readTemp.Values)
+            if (readPair.IsEmpty())
             {
-                if (_parametrsTemp.TryGetValue(read.MethodName, out var parametrs))
-                {
-                    read.Parametrs = parametrs.ToArray();
-                }
-                AddFormatParametrs(read);
+                return;
+            }
 
-                if (read.QueryType == QueryType.Read)
-                {
-                    read.Aliases = _queryParser.Parse(ref read.Query);
-                }
-                else
-                {
-                    read.Aliases = _queryParser.GetIntResultAlias();
-                }
+            var query = readPair.Query;
+            readPair.Query.Parametrs = readPair.Parametrs.ToArray();
+            AddFormatParametrs(readPair.Query, readPair.FormatParametrs);
 
-                if (read.NeedGenerate)
-                {
-                    _read.Add(read);
-                }
+            if (query.QueryType == QueryType.Read)
+            {
+                query.Aliases = _queryParser.Parse(ref query.Query);
+            }
+            else
+            {
+                query.Aliases = _queryParser.GetIntResultAlias();
+            }
+
+            if (query.NeedGenerate)
+            {
+                _read.Add(query);
             }
         }
 
-        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
+        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ReadPair readPair)
         {
             if (!SqlClientQuery.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
                 throw new Exception($"Unknown {nameof(SqlClientQuery)} constructor");
             }
 
-            if(_readTemp.ContainsKey(queryReadMethod.MethodName))
-            {
-                throw new Exception("Request with duplicate name");
-            }
-
-            _readTemp[queryReadMethod.MethodName] = queryReadMethod;
+            readPair.Query = queryReadMethod;
         }
 
-        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType)
+        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType, ReadPair readPair)
         {
             if (!SqlClientParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
             {
                 throw new Exception($"Unknown {nameof(SqlClientParametr)} constructor");
             }
 
-            if (!_parametrsTemp.ContainsKey(methodName))
-            {
-                var methods = new List<SqlClientParametr>();
-                _parametrsTemp.Add(methodName, methods);
-            }
-
-            _parametrsTemp[methodName].Add(parametr);
+            readPair.Parametrs.Add(parametr);
         }
 
-        public void GenerateAndSaveMethods(SourceProductionContext context)
+        public override void GenerateAndSaveMethods(SourceProductionContext context)
         {
             var readGenerator = new SqlClientQueryGenerator();
             foreach (var queryRead in _read)

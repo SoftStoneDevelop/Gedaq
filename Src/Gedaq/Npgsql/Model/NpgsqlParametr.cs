@@ -34,73 +34,68 @@ namespace Gedaq.Npgsql.Model
             parametr = null;
             methodName = null;
 
-            if (namedArguments.Length != 13)
-            {
-                return false;
-            }
-
-            if (!SetMethodName(namedArguments[0], ref methodName))
+            if (namedArguments.Length != 12)
             {
                 return false;
             }
 
             var result = new NpgsqlParametr();
-            if (!SetType(namedArguments[1], result))
+            if (!SetType(namedArguments[0], result))
             {
                 return false;
             }
 
-            if (!SetName(namedArguments[2], result))
+            if (!SetName(namedArguments[1], result))
             {
                 return false;
             }
 
-            if(!SetNpgSqlDbType(namedArguments[3], result))
+            if(!SetNpgSqlDbType(namedArguments[2], result))
             {
                 return false;
             }
 
-            if (!SetSize(namedArguments[4], result))
+            if (!SetSize(namedArguments[3], result))
             {
                 return false;
             }
 
-            if (!SetNullable(namedArguments[5], result))
+            if (!SetNullable(namedArguments[4], result))
             {
                 return false;
             }
 
-            if (!SetDirection(namedArguments[6], result))
+            if (!SetDirection(namedArguments[5], result))
             {
                 return false;
             }
 
-            if (!SetPosition(namedArguments[7], result))
+            if (!SetPosition(namedArguments[6], result))
             {
                 return false;
             }
 
-            if (!SetSourceColumn(namedArguments[8], result))
+            if (!SetSourceColumn(namedArguments[7], result))
             {
                 return false;
             }
 
-            if (!SetSourceColumnNullMapping(namedArguments[9], result))
+            if (!SetSourceColumnNullMapping(namedArguments[8], result))
             {
                 return false;
             }
 
-            if (!SetSourceVersion(namedArguments[10], result))
+            if (!SetSourceVersion(namedArguments[9], result))
             {
                 return false;
             }
 
-            if (!SetScale(namedArguments[11], result))
+            if (!SetScale(namedArguments[10], result))
             {
                 return false;
             }
 
-            if (!SetPrecision(namedArguments[12], result))
+            if (!SetPrecision(namedArguments[11], result))
             {
                 return false;
             }

@@ -1,60 +1,67 @@
 ﻿using Gedaq.Base.Model;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 
 namespace Gedaq.Base
 {
-    internal class BaseAttributeProcessor
+    internal abstract class BaseAttributeProcessor
     {
-        protected Dictionary<string, List<FormatParametr>> _formatsTemp = new Dictionary<string, List<FormatParametr>>();
+        public abstract void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType);
 
-        protected void AddFormatParametrs(QueryBaseCommand read)
+        public abstract void CompleteProcessContainTypes();
+
+        public abstract void GenerateAndSaveMethods(SourceProductionContext context);
+
+        protected void AddFormatParametrs(QueryBaseCommand read, List<FormatParametr> formatParametrs)
         {
-            var set = new HashSet<int>();
-            if (_formatsTemp.TryGetValue(read.MethodName, out var parametrs))
+            if (formatParametrs.Count == 0)
             {
-                parametrs = parametrs.OrderBy(or => or.Position).ToList();
-                read.FormatParametrs = new FormatParametr[parametrs.Count];
+                return;
+            }
 
-                set.Clear();
-                for (int i = 0; i < parametrs.Count; i++)
+            if (read == null)
+            {
+                return;
+            }
+
+            var set = new HashSet<int>();
+            var parametrs = formatParametrs.OrderBy(or => or.Position).ToList();
+            read.FormatParametrs = new FormatParametr[parametrs.Count];
+
+            set.Clear();
+            for (int i = 0; i < parametrs.Count; i++)
+            {
+                var parametr = parametrs[i];
+                if (!set.Add(parametr.Position))
                 {
-                    var parametr = parametrs[i];
-                    if (!set.Add(parametr.Position))
-                    {
-                        throw new Exception("Parametr position must be unique");
-                    }
-
-                    read.FormatParametrs[i] = parametr;
+                    throw new Exception("Parametr position must be unique");
                 }
+
+                read.FormatParametrs[i] = parametr;
             }
         }
 
-        protected void ProcessAttribute(AttributeData attribute, INamedTypeSymbol containsType)
+        protected void ProcessAttribute(AttributeData attribute, INamedTypeSymbol containsType, List<FormatParametr> formatParametrs)
         {
             if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "QueryFormatAttribute"))
             {
-                ProcessQueryFormat(attribute, containsType);
+                ProcessQueryFormat(attribute, containsType, formatParametrs);
             }
         }
 
-        private void ProcessQueryFormat(AttributeData formatAttribute, INamedTypeSymbol containsType)
+        private void ProcessQueryFormat(AttributeData formatAttribute, INamedTypeSymbol containsType, List<FormatParametr> formatParametrs)
         {
             if (!FormatParametr.CreateNew(formatAttribute.ConstructorArguments, containsType, out var format, out var methodName))
             {
                 throw new Exception($"Unknown {nameof(FormatParametr)} constructor");
             }
 
-            if (!_formatsTemp.ContainsKey(methodName))
-            {
-                var methods = new List<FormatParametr>();
-                _formatsTemp.Add(methodName, methods);
-            }
-
-            _formatsTemp[methodName].Add(format);
+            formatParametrs.Add(format);
         }
     }
 }

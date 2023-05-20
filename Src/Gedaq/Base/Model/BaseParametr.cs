@@ -65,19 +65,6 @@ namespace Gedaq.Base.Model
             }
         }
 
-        protected static bool SetMethodName(TypedConstant argument, ref string methodName)
-        {
-            if (!(argument.Type is INamedTypeSymbol strParam) ||
-                strParam.Name != nameof(String)
-                )
-            {
-                return false;
-            }
-
-            methodName = (string)argument.Value;
-            return true;
-        }
-
         protected static bool SetType(TypedConstant argument, BaseParametr parametr)
         {
             if (!(argument.Value is ITypeSymbol typeParam))

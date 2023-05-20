@@ -10,94 +10,130 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.Linq;
 
 namespace Gedaq.Npgsql
 {
     internal class DbConnectionAttributeProcessor : BaseAttributeProcessor
     {
+        private class BatchPair
+        {
+            public DbQueryBatch Batch { get; set; }
+            public List<BatchPart> Parts { get; } = new List<BatchPart>();
+
+            public bool IsEmpty()
+            {
+                return Batch == null && Parts.Count == 0;
+            }
+        }
+
+        private class ReadPair
+        {
+            public DbQuery Query { get; set; }
+            public List<DbParametr> Parametrs { get; } = new List<DbParametr>();
+
+            public List<FormatParametr> FormatParametrs { get; } = new List<FormatParametr>();
+
+            public bool IsEmpty()
+            {
+                return Query == null && Parametrs.Count == 0;
+            }
+        }
+
         private List<DbQuery> _read = new List<DbQuery>();
         private List<DbQueryBatch> _readBatch = new List<DbQueryBatch>();
 
-        Dictionary<string, DbQuery> _readTemp = new Dictionary<string, DbQuery>();
-        Dictionary<string, List<DbParametr>> _parametrsTemp = new Dictionary<string, List<DbParametr>>();
-        private List<DbQueryBatch> _batchTemp = new List<DbQueryBatch>();
-        private Dictionary<string, List<BatchPart>> _batchParts = new Dictionary<string, List<BatchPart>>();
+        private List<BatchPair> _batchPairTemp = new List<BatchPair>();
+        private Dictionary<string, DbQuery> _readContainsType = new Dictionary<string, DbQuery>();
 
         private QueryParser _queryParser = new QueryParser();
 
-        public void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
+        public override void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
         {
             foreach (var attributeListSyntax in attributes)
             {
                 var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
                 var parentAttributes = parentSymbol.GetAttributes();
+
+                var batchPair = new BatchPair();
+                var readTemp = new ReadPair();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
                     var attributeData = parentAttributes.First(f => f.ApplicationSyntaxReference.GetSyntax() == attributeSyntax);
 
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "QueryAttribute"))
                     {
-                        ProcessQueryRead(attributeData, containsType);
+                        ProcessQueryRead(attributeData, containsType, readTemp);
                         continue;
                     }
 
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "ParametrAttribute"))
                     {
-                        ProcessParametr(attributeData, containsType);
+                        ProcessParametr(attributeData, containsType, readTemp);
                         continue;
                     }
 
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "QueryBatchAttribute"))
                     {
-                        ProcessBatch(attributeData, containsType);
+                        ProcessBatch(attributeData, containsType, batchPair);
                         continue;
                     }
 
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "BatchPartAttribute"))
                     {
-                        ProcessBatchPart(attributeData, containsType);
+                        ProcessBatchPart(attributeData, containsType, batchPair);
                         continue;
                     }
 
-                    base.ProcessAttribute(attributeData, containsType);
+                    base.ProcessAttribute(attributeData, containsType, readTemp.FormatParametrs);
                 }
+
+                TryAddReadMethod(readTemp);
+                TryAddBatchToTemp(batchPair);
             }
         }
 
-        public void CompleteProcessContainTypes()
+        public override void CompleteProcessContainTypes()
         {
-            FillReadMethods();
-            _parametrsTemp.Clear();
-            _formatsTemp.Clear();
-
             FillBatches();
-            _readTemp.Clear();
+        }
+
+        private void TryAddBatchToTemp(BatchPair candidatePair)
+        {
+            if (candidatePair.IsEmpty())
+            {
+                return;
+            }
+
+            if (!candidatePair.Parts.Any())
+            {
+                throw new Exception($"Batch query must contain batch parts:'{candidatePair.Batch.MethodName}'");
+            }
+
+            if (candidatePair.Batch == null)
+            {
+                throw new Exception($"Batch query must contain batch parts:'{candidatePair.Batch.MethodName}'");
+            }
+
+            _batchPairTemp.Add(candidatePair);
         }
 
         private void FillBatches()
         {
-            foreach (var batch in _batchTemp)
+            foreach (var batchPair in _batchPairTemp)
             {
-                if(!_batchParts.TryGetValue(batch.MethodName, out var batchParts))
-                {
-                    throw new Exception($"There are no requests in the batch: '{batch.MethodName}'");
-                }
-                _batchParts.Remove(batch.MethodName);
-
                 var set = new HashSet<int>();
                 DbQuery firstRead = null;
-                foreach (var part in batchParts.OrderBy(or => or.BatchNumber))
+                foreach (var part in batchPair.Parts.OrderBy(or => or.BatchNumber))
                 {
                     if (!set.Add(part.BatchNumber))
                     {
-                        throw new Exception($"Batch number must be unique in batch:'{part.BatchName}'");
+                        throw new Exception($"Batch number must be unique in batch:'{batchPair.Batch.MethodName}'");
                     }
 
-                    if(!_readTemp.TryGetValue(part.MethodName, out var queryRead))
+                    if(!_readContainsType.TryGetValue(part.MethodName, out var queryRead))
                     {
-                        throw new Exception($"Request for batch not found.:'{part.MethodName}'");
+                        throw new Exception($"Request for batch not found:'{part.MethodName}'");
                     }
 
                     if(firstRead == null)
@@ -105,105 +141,97 @@ namespace Gedaq.Npgsql
                         firstRead = queryRead;
                     }
 
-                    batch.AllSameTypes &= SymbolEqualityComparer.Default.Equals(firstRead.MapTypeName, queryRead.MapTypeName);
-                    batch.HaveParametrs |= queryRead.HaveParametrs();
-                    batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
-                    batch.Queries.Add((part.BatchNumber, queryRead));
+                    batchPair.Batch.AllSameTypes &= SymbolEqualityComparer.Default.Equals(firstRead.MapTypeName, queryRead.MapTypeName);
+                    batchPair.Batch.HaveParametrs |= queryRead.HaveParametrs();
+                    batchPair.Batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
+                    batchPair.Batch.Queries.Add((part.BatchNumber, queryRead));
                 }
 
-                _readBatch.Add(batch);
+                _readBatch.Add(batchPair.Batch);
             }
 
-            _batchTemp.Clear();
-            if(_batchParts.Count != 0)
-            {
-                throw new Exception($"Batch part without batch");
-            }
+            _batchPairTemp.Clear();
+            _readContainsType.Clear();
         }
 
-        private void FillReadMethods()
+        private void TryAddReadMethod(ReadPair readPair)
         {
-            foreach (var read in _readTemp.Values)
+            if (readPair.IsEmpty())
             {
-                if (_parametrsTemp.TryGetValue(read.MethodName, out var parametrs))
-                {
-                    read.Parametrs = parametrs.ToArray();
-                }
-                AddFormatParametrs(read);
-
-                if (read.QueryType == QueryType.Read)
-                {
-                    read.Aliases = _queryParser.Parse(ref read.Query);
-                }
-                else
-                {
-                    read.Aliases = _queryParser.GetIntResultAlias();
-                }
-                if (read.NeedGenerate)
-                {
-                    _read.Add(read);
-                }
+                return;
             }
+
+            var query = readPair.Query;
+            query.Parametrs = readPair.Parametrs.ToArray();
+            AddFormatParametrs(query, readPair.FormatParametrs);
+
+            if (query.QueryType == QueryType.Read)
+            {
+                query.Aliases = _queryParser.Parse(ref query.Query);
+            }
+            else
+            {
+                query.Aliases = _queryParser.GetIntResultAlias();
+            }
+            if (query.NeedGenerate)
+            {
+                _read.Add(query);
+            }
+
+            _readContainsType.Add(query.MethodName, query);
         }
 
-        private void ProcessBatch(AttributeData parametrAttribute, INamedTypeSymbol containsType)
+        private void ProcessBatch(AttributeData parametrAttribute, INamedTypeSymbol containsType, BatchPair currentPair)
         {
             if (!DbQueryBatch.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var queryBatch))
             {
                 throw new Exception($"Unknown {nameof(DbQueryBatch)} constructor");
             }
 
-            _batchTemp.Add(queryBatch);
+            if (currentPair.Batch != null)
+            {
+                throw new Exception($"One attribute group cannot have more than one main attribute (batch query): '{queryBatch.MethodName}'");
+            }
+
+            currentPair.Batch = queryBatch;
         }
 
-        private void ProcessBatchPart(AttributeData parametrAttribute, INamedTypeSymbol containsType)
+        private void ProcessBatchPart(AttributeData parametrAttribute, INamedTypeSymbol containsType, BatchPair currentPair)
         {
             if (!BatchPart.CreateNew(parametrAttribute.ConstructorArguments, out var batchPart))
             {
                 throw new Exception($"Unknown {nameof(BatchPart)} constructor");
             }
 
-            if (!_batchParts.TryGetValue(batchPart.BatchName, out var parts))
-            {
-                parts = new List<BatchPart>();
-                _batchParts.Add(batchPart.BatchName, parts);
-            }
-
-            parts.Add(batchPart);
+            currentPair.Parts.Add(batchPart);
         }
 
-        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
+        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ReadPair readPair)
         {
             if (!DbQuery.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
                 throw new Exception($"Unknown {nameof(DbQuery)} constructor");
             }
 
-            if(_readTemp.ContainsKey(queryReadMethod.MethodName))
+            if (readPair.Query != null)
             {
-                throw new Exception("Request with duplicate name");
+                throw new Exception($"One attribute group cannot have more than one main attribute (query): '{readPair.Query.MethodName}'");
             }
 
-            _readTemp[queryReadMethod.MethodName] = queryReadMethod;
+            readPair.Query = queryReadMethod;
         }
 
-        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType)
+        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType, ReadPair readPair)
         {
             if (!DbParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
             {
                 throw new Exception($"Unknown {nameof(DbParametr)} constructor");
             }
 
-            if (!_parametrsTemp.ContainsKey(methodName))
-            {
-                var methods = new List<DbParametr>();
-                _parametrsTemp.Add(methodName, methods);
-            }
-
-            _parametrsTemp[methodName].Add(parametr);
+            readPair.Parametrs.Add(parametr);
         }
 
-        public void GenerateAndSaveMethods(SourceProductionContext context)
+        public override void GenerateAndSaveMethods(SourceProductionContext context)
         {
             var readGenerator = new DbQueryGenerator();
             foreach (var queryRead in _read)

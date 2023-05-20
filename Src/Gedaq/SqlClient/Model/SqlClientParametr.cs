@@ -62,113 +62,108 @@ namespace Gedaq.SqlClient.Model
             parametr = null;
             methodName = null;
 
-            if (namedArguments.Length != 21)
-            {
-                return false;
-            }
-
-            if(!SetMethodName(namedArguments[0], ref methodName))
+            if (namedArguments.Length != 20)
             {
                 return false;
             }
 
             var result = new SqlClientParametr();
-            if (!SetType(namedArguments[1], result))
+            if (!SetType(namedArguments[0], result))
             {
                 return false;
             }
 
-            if (!SetName(namedArguments[2], result))
+            if (!SetName(namedArguments[1], result))
             {
                 return false;
             }
 
-            if (!SetCompareInfo(namedArguments[3], result))
+            if (!SetCompareInfo(namedArguments[2], result))
             {
                 return false;
             }
 
-            if (!SetForceColumnEncryption(namedArguments[4], result))
+            if (!SetForceColumnEncryption(namedArguments[3], result))
             {
                 return false;
             }
 
-            if (!SetLocaleId(namedArguments[5], result))
+            if (!SetLocaleId(namedArguments[4], result))
             {
                 return false;
             }
 
-            if (!SetOffset(namedArguments[6], result))
+            if (!SetOffset(namedArguments[5], result))
             {
                 return false;
             }
 
-            if (!SetSqlDbType(namedArguments[7], result))
+            if (!SetSqlDbType(namedArguments[6], result))
             {
                 return false;
             }
 
-            if (!SetTypeName(namedArguments[8], result))
+            if (!SetTypeName(namedArguments[7], result))
             {
                 return false;
             }
 
-            if (!SetUdtTypeName(namedArguments[9], result))
+            if (!SetUdtTypeName(namedArguments[8], result))
             {
                 return false;
             }
 
-            if (!SetXmlSchemaCollectionDatabase(namedArguments[10], result))
+            if (!SetXmlSchemaCollectionDatabase(namedArguments[9], result))
             {
                 return false;
             }
 
-            if (!SetXmlSchemaCollectionName(namedArguments[11], result))
+            if (!SetXmlSchemaCollectionName(namedArguments[10], result))
             {
                 return false;
             }
 
-            if (!SetXmlSchemaCollectionOwningSchema(namedArguments[12], result))
+            if (!SetXmlSchemaCollectionOwningSchema(namedArguments[11], result))
             {
                 return false;
             }
 
-            if (!SetSize(namedArguments[13], result))
+            if (!SetSize(namedArguments[12], result))
             {
                 return false;
             }
 
-            if (!SetNullable(namedArguments[14], result))
+            if (!SetNullable(namedArguments[13], result))
             {
                 return false;
             }
 
-            if (!SetDirection(namedArguments[15], result))
+            if (!SetDirection(namedArguments[14], result))
             {
                 return false;
             }
 
-            if (!SetSourceColumn(namedArguments[16], result))
+            if (!SetSourceColumn(namedArguments[15], result))
             {
                 return false;
             }
 
-            if (!SetSourceColumnNullMapping(namedArguments[17], result))
+            if (!SetSourceColumnNullMapping(namedArguments[16], result))
             {
                 return false;
             }
 
-            if (!SetSourceVersion(namedArguments[18], result))
+            if (!SetSourceVersion(namedArguments[17], result))
             {
                 return false;
             }
 
-            if (!SetScale(namedArguments[19], result))
+            if (!SetScale(namedArguments[18], result))
             {
                 return false;
             }
 
-            if (!SetPrecision(namedArguments[20], result))
+            if (!SetPrecision(namedArguments[19], result))
             {
                 return false;
             }

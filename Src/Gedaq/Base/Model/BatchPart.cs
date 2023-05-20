@@ -8,14 +8,13 @@ namespace Gedaq.Base.Model
 {
     internal class BatchPart
     {
-        public string BatchName;
         public string MethodName;
         public int BatchNumber;
 
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, out BatchPart batchPart)
         {
             batchPart = null;
-            if (namedArguments.Length != 3)
+            if (namedArguments.Length != 2)
             {
                 return false;
             }
@@ -30,23 +29,14 @@ namespace Gedaq.Base.Model
 
             result.MethodName = (string)namedArguments[0].Value;
 
-            if (!(namedArguments[1].Type is INamedTypeSymbol batchName) ||
-                batchName.Name != nameof(String)
-                )
-            {
-                return false;
-            }
-
-            result.BatchName = (string)namedArguments[1].Value;
-
-            if (!(namedArguments[2].Type is INamedTypeSymbol number) ||
+            if (!(namedArguments[1].Type is INamedTypeSymbol number) ||
                 number.Name != nameof(Int32)
                 )
             {
                 return false;
             }
 
-            result.BatchNumber = (int)namedArguments[2].Value;
+            result.BatchNumber = (int)namedArguments[1].Value;
 
             batchPart = result;
             return true;

@@ -24,41 +24,23 @@ namespace Gedaq.Base.Model
             format = null;
             methodName = null;
 
-            if (namedArguments.Length != 3)
-            {
-                return false;
-            }
-
-            if (!SetMethodName(namedArguments[0], ref methodName))
+            if (namedArguments.Length != 2)
             {
                 return false;
             }
 
             var result = new FormatParametr();
-            if (!SetPosition(namedArguments[1], result))
+            if (!SetPosition(namedArguments[0], result))
             {
                 return false;
             }
 
-            if (!SetName(namedArguments[2], result))
+            if (!SetName(namedArguments[1], result))
             {
                 return false;
             }
 
             format = result;
-            return true;
-        }
-
-        protected static bool SetMethodName(TypedConstant argument, ref string methodName)
-        {
-            if (!(argument.Type is INamedTypeSymbol strParam) ||
-                strParam.Name != nameof(String)
-                )
-            {
-                return false;
-            }
-
-            methodName = (string)argument.Value;
             return true;
         }
 
