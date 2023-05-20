@@ -7,6 +7,7 @@ using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Parser;
 using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -26,35 +27,42 @@ namespace Gedaq.Npgsql
 
         private QueryParser _queryParser = new QueryParser();
 
-        public void ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
+        public void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
         {
-            foreach (var attribute in attributes)
+            foreach (var attributeListSyntax in attributes)
             {
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "QueryAttribute"))
+                var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
+                var parentAttributes = parentSymbol.GetAttributes();
+                foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
-                    ProcessQueryRead(attribute, containsType);
-                    continue;
-                }
+                    var attributeData = parentAttributes.First(f => f.ApplicationSyntaxReference.GetSyntax() == attributeSyntax);
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "ParametrAttribute"))
-                {
-                    ProcessParametr(attribute, containsType);
-                    continue;
-                }
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "QueryAttribute"))
+                    {
+                        ProcessQueryRead(attributeData, containsType);
+                        continue;
+                    }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "QueryBatchAttribute"))
-                {
-                    ProcessBatch(attribute, containsType);
-                    continue;
-                }
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "ParametrAttribute"))
+                    {
+                        ProcessParametr(attributeData, containsType);
+                        continue;
+                    }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "BatchPartAttribute"))
-                {
-                    ProcessBatchPart(attribute, containsType);
-                    continue;
-                }
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "QueryBatchAttribute"))
+                    {
+                        ProcessBatch(attributeData, containsType);
+                        continue;
+                    }
 
-                base.ProcessAttribute(attribute, containsType);
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "BatchPartAttribute"))
+                    {
+                        ProcessBatchPart(attributeData, containsType);
+                        continue;
+                    }
+
+                    base.ProcessAttribute(attributeData, containsType);
+                }
             }
         }
 
@@ -195,7 +203,7 @@ namespace Gedaq.Npgsql
             _parametrsTemp[methodName].Add(parametr);
         }
 
-        public void GenerateAndSaveMethods(GeneratorExecutionContext context)
+        public void GenerateAndSaveMethods(SourceProductionContext context)
         {
             var readGenerator = new DbQueryGenerator();
             foreach (var queryRead in _read)

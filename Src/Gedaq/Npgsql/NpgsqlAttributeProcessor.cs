@@ -9,6 +9,7 @@ using Gedaq.Npgsql.Model;
 using Gedaq.Npgsql.Parser;
 using Gedaq.Parser;
 using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -31,47 +32,58 @@ namespace Gedaq.Npgsql
         private QueryParser _queryParser = new QueryParser();
         private BinaryParser _binaryParser = new BinaryParser();
 
-        public void ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
+        public void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
         {
-            foreach (var attribute in attributes)
+            foreach (var attributeListSyntax in attributes)
             {
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "QueryAttribute"))
+                var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
+                var parentAttributes = parentSymbol.GetAttributes();
+                if(attributeListSyntax.Attributes.Count != 1)
                 {
-                    ProcessQueryRead(attribute, containsType);
-                    continue;
+                    //TODO apply new syntax
                 }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "ParametrAttribute"))
+                foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
-                    ProcessParametr(attribute, containsType);
-                    continue;
-                }
+                    var attributeData = parentAttributes.First(f => f.ApplicationSyntaxReference.GetSyntax() == attributeSyntax);
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "QueryAttribute"))
+                    {
+                        ProcessQueryRead(attributeData, containsType);
+                        continue;
+                    }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "QueryBatchAttribute"))
-                {
-                    ProcessBatch(attribute, containsType);
-                    continue;
-                }
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "ParametrAttribute"))
+                    {
+                        ProcessParametr(attributeData, containsType);
+                        continue;
+                    }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BatchPartAttribute"))
-                {
-                    ProcessBatchPart(attribute, containsType);
-                    continue;
-                }
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "QueryBatchAttribute"))
+                    {
+                        ProcessBatch(attributeData, containsType);
+                        continue;
+                    }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BinaryExportAttribute"))
-                {
-                    ProcessBinaryExport(attribute, containsType);
-                    continue;
-                }
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BatchPartAttribute"))
+                    {
+                        ProcessBatchPart(attributeData, containsType);
+                        continue;
+                    }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BinaryImportAttribute"))
-                {
-                    ProcessBinaryImport(attribute, containsType);
-                    continue;
-                }
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BinaryExportAttribute"))
+                    {
+                        ProcessBinaryExport(attributeData, containsType);
+                        continue;
+                    }
 
-                base.ProcessAttribute(attribute, containsType);
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BinaryImportAttribute"))
+                    {
+                        ProcessBinaryImport(attributeData, containsType);
+                        continue;
+                    }
+
+                    base.ProcessAttribute(attributeData, containsType);
+                }
             }
         }
 
@@ -274,7 +286,7 @@ namespace Gedaq.Npgsql
             _binaryImports.Add(binaryImport);
         }
 
-        public void GenerateAndSaveMethods(GeneratorExecutionContext context)
+        public void GenerateAndSaveMethods(SourceProductionContext context)
         {
             var readGenerator = new NpgsqlQueryGenerator();
             foreach (var queryRead in _read)

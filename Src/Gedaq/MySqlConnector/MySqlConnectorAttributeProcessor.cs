@@ -7,6 +7,7 @@ using Gedaq.MySqlConnector.GeneratorsQuery;
 using Gedaq.MySqlConnector.Model;
 using Gedaq.Parser;
 using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -26,35 +27,41 @@ namespace Gedaq.MySqlConnector
 
         private QueryParser _queryParser = new QueryParser();
 
-        public void ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
+        public void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
         {
-            foreach (var attribute in attributes)
+            foreach (var attributeListSyntax in attributes)
             {
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.MySqlConnector.Attributes", "QueryAttribute"))
+                var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
+                var parentAttributes = parentSymbol.GetAttributes();
+                foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
-                    ProcessQueryRead(attribute, containsType);
-                    continue;
-                }
+                    var attributeData = parentAttributes.First(f => f.ApplicationSyntaxReference.GetSyntax() == attributeSyntax);
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.MySqlConnector.Attributes", "QueryAttribute"))
+                    {
+                        ProcessQueryRead(attributeData, containsType);
+                        continue;
+                    }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.MySqlConnector.Attributes", "ParametrAttribute"))
-                {
-                    ProcessParametr(attribute, containsType);
-                    continue;
-                }
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.MySqlConnector.Attributes", "ParametrAttribute"))
+                    {
+                        ProcessParametr(attributeData, containsType);
+                        continue;
+                    }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.MySqlConnector.Attributes", "QueryBatchAttribute"))
-                {
-                    ProcessBatch(attribute, containsType);
-                    continue;
-                }
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.MySqlConnector.Attributes", "QueryBatchAttribute"))
+                    {
+                        ProcessBatch(attributeData, containsType);
+                        continue;
+                    }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.MySqlConnector.Attributes", "BatchPartAttribute"))
-                {
-                    ProcessBatchPart(attribute, containsType);
-                    continue;
-                }
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.MySqlConnector.Attributes", "BatchPartAttribute"))
+                    {
+                        ProcessBatchPart(attributeData, containsType);
+                        continue;
+                    }
 
-                base.ProcessAttribute(attribute, containsType);
+                    base.ProcessAttribute(attributeData, containsType);
+                }
             }
         }
 
@@ -196,7 +203,7 @@ namespace Gedaq.MySqlConnector
             _parametrsTemp[methodName].Add(parametr);
         }
 
-        public void GenerateAndSaveMethods(GeneratorExecutionContext context)
+        public void GenerateAndSaveMethods(SourceProductionContext context)
         {
             var readGenerator = new MySqlConnectorQueryGenerator();
             foreach (var queryRead in _read)

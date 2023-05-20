@@ -2,7 +2,9 @@
 using Gedaq.Npgsql;
 using Gedaq.SqlClient;
 using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Collections.Immutable;
+using System.Linq;
 
 namespace Gedaq
 {
@@ -13,31 +15,29 @@ namespace Gedaq
         private SqlClientAttributeProcessor _sqlClientProcessor = new SqlClientAttributeProcessor();
         private MySqlConnectorAttributeProcessor _mysqlConnectorProcessor = new MySqlConnectorAttributeProcessor();
 
-        public void TryFillFrom(INamedTypeSymbol type)
+        public void TryFillFrom(TypeDeclarationSyntax type, Compilation compilation, INamedTypeSymbol containsType)
         {
-            ProcessAttributes(type.GetAttributes(), type);
-            foreach (var member in type.GetMembers())
+            ProcessAttributes(type.AttributeLists, compilation, containsType);
+            foreach (var member in type.Members)
             {
-                if(!(member is IMethodSymbol methodSymbol))
+                if(!(member is MethodDeclarationSyntax methodSymbol))
                 {
                     continue;
                 }
 
-                ProcessAttributes(methodSymbol.GetAttributes(), type);
+                ProcessAttributes(methodSymbol.AttributeLists, compilation, containsType);
             }
-
-            CompleteProcessContainTypes();
         }
 
-        private void ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
+        private void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
         {
-            _npgsqlProcessor.ProcessAttributes(attributes, containsType);
-            _dbConnectionProcessor.ProcessAttributes(attributes, containsType);
-            _sqlClientProcessor.ProcessAttributes(attributes, containsType);
-            _mysqlConnectorProcessor.ProcessAttributes(attributes, containsType);
+            _npgsqlProcessor.ProcessAttributes(attributes, compilation, containsType);
+            _dbConnectionProcessor.ProcessAttributes(attributes, compilation, containsType);
+            _sqlClientProcessor.ProcessAttributes(attributes, compilation, containsType);
+            _mysqlConnectorProcessor.ProcessAttributes(attributes, compilation, containsType);
         }
 
-        private void CompleteProcessContainTypes()
+        public void CompleteProcessContainTypes()
         {
             _npgsqlProcessor.CompleteProcessContainTypes();
             _dbConnectionProcessor.CompleteProcessContainTypes();
@@ -45,7 +45,7 @@ namespace Gedaq
             _mysqlConnectorProcessor.CompleteProcessContainTypes();
         }
 
-        public void GenerateAndSaveMethods(GeneratorExecutionContext context)
+        public void GenerateAndSaveMethods(SourceProductionContext context)
         {
             _npgsqlProcessor.GenerateAndSaveMethods(context);
             _dbConnectionProcessor.GenerateAndSaveMethods(context);

@@ -16,6 +16,12 @@ namespace Gedaq.Helpers
 {
     internal static class GeneratedClassDeclarationHelper
     {
+        public static ISymbol GetDeclaredSymbol(this SyntaxNode node, Compilation compilation)
+        {
+            var model = compilation.GetSemanticModel(node.SyntaxTree);
+            return model.GetDeclaredSymbol(node);
+        }
+
         internal static bool IsPatrial(this INamedTypeSymbol type)
         {
             foreach (var item in type.DeclaringSyntaxReferences)
@@ -103,9 +109,9 @@ namespace Gedaq.Helpers
     internal static class TypeHelper
     {
         internal static bool IsAssignableFrom(
-        this INamedTypeSymbol type,
-        string fullNamespace,
-        string typeName
+            this INamedTypeSymbol type,
+            string fullNamespace,
+            string typeName
         )
         {
             var nestedStack = new Stack<INamedTypeSymbol>();
@@ -124,8 +130,9 @@ namespace Gedaq.Helpers
             }
             return false;
         }
+
         internal static string GetFullNamespace(
-        this INamespaceSymbol namespaceSymbol
+            this INamespaceSymbol namespaceSymbol
         )
         {
             var builder = new StringBuilder();

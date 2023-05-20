@@ -5,9 +5,11 @@ using Gedaq.Parser;
 using Gedaq.SqlClient.GeneratorsQuery;
 using Gedaq.SqlClient.Model;
 using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Linq;
 
 namespace Gedaq.SqlClient
 {
@@ -20,23 +22,29 @@ namespace Gedaq.SqlClient
 
         private QueryParser _queryParser = new QueryParser();
 
-        public void ProcessAttributes(ImmutableArray<AttributeData> attributes, INamedTypeSymbol containsType)
+        public void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
         {
-            foreach (var attribute in attributes)
+            foreach (var attributeListSyntax in attributes)
             {
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.SqlClient.Attributes", "QueryAttribute"))
+                var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
+                var parentAttributes = parentSymbol.GetAttributes();
+                foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
-                    ProcessQueryRead(attribute, containsType);
-                    continue;
-                }
+                    var attributeData = parentAttributes.First(f => f.ApplicationSyntaxReference.GetSyntax() == attributeSyntax);
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.SqlClient.Attributes", "QueryAttribute"))
+                    {
+                        ProcessQueryRead(attributeData, containsType);
+                        continue;
+                    }
 
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.SqlClient.Attributes", "ParametrAttribute"))
-                {
-                    ProcessParametr(attribute, containsType);
-                    continue;
-                }
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.SqlClient.Attributes", "ParametrAttribute"))
+                    {
+                        ProcessParametr(attributeData, containsType);
+                        continue;
+                    }
 
-                base.ProcessAttribute(attribute, containsType);
+                    base.ProcessAttribute(attributeData, containsType);
+                }
             }
         }
 
@@ -106,7 +114,7 @@ namespace Gedaq.SqlClient
             _parametrsTemp[methodName].Add(parametr);
         }
 
-        public void GenerateAndSaveMethods(GeneratorExecutionContext context)
+        public void GenerateAndSaveMethods(SourceProductionContext context)
         {
             var readGenerator = new SqlClientQueryGenerator();
             foreach (var queryRead in _read)

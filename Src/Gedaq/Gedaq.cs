@@ -1,49 +1,143 @@
-﻿using Microsoft.CodeAnalysis;
+﻿using Gedaq.Helpers;
+using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.CodeAnalysis.Text;
 using System.Collections.Generic;
+using System.Collections.Immutable;
+using System.Linq;
+using System.Text;
 
 namespace Gedaq
 {
-    [Generator]
-    public partial class Gedaq : ISourceGenerator
+    [Generator(LanguageNames.CSharp)]
+    public partial class Gedaq : IIncrementalGenerator
     {
-        public void Execute(GeneratorExecutionContext context)
+        public void Initialize(IncrementalGeneratorInitializationContext context)
         {
-            //System.Diagnostics.Debugger.Launch();
+            var classDeclarations = context.SyntaxProvider
+                .CreateSyntaxProvider(
+                predicate: (s, _) => IsSyntaxTargetForGeneration(s),
+                transform: (ctx, _) => GetSemanticTargetForGeneration(ctx))
+                .Where(m => m != null);
 
-            var c = (CSharpCompilation)context.Compilation;
+            var compilationAndClasses = context.CompilationProvider.Combine(classDeclarations.Collect());
 
-            var processor = new AttributeProcessor();
-            FillTypes(c.Assembly.GlobalNamespace, processor);
-            processor.GenerateAndSaveMethods(context);
+            context.RegisterSourceOutput(compilationAndClasses,
+                (spc, source) => Execute(source.Item1, source.Item2, spc));
         }
 
-        public void Initialize(GeneratorInitializationContext context)
-        {
-            // No initialization required for this one
-        }
+        static bool IsSyntaxTargetForGeneration(SyntaxNode node)
+            => (node is MethodDeclarationSyntax m && m.AttributeLists.Count > 0) || 
+            (node is ClassDeclarationSyntax c && c.AttributeLists.Count > 0) ||
+            (node is StructDeclarationSyntax s && s.AttributeLists.Count > 0)
+            ;
 
-        private void FillTypes(INamespaceOrTypeSymbol symbol, AttributeProcessor processor)
+        static TypeDeclarationSyntax GetSemanticTargetForGeneration(GeneratorSyntaxContext context)
         {
-            var queue = new Queue<INamespaceOrTypeSymbol>();
-            queue.Enqueue(symbol);
-
-            while (queue.Count != 0)
+            var typeDeclaration = GetSemanticClassOrStruct(context);
+            if (typeDeclaration != null)
             {
-                var current = queue.Dequeue();
-                if (current is INamedTypeSymbol type)
-                {
-                    processor.TryFillFrom(type);
-                }
+                return typeDeclaration;
+            }
 
-                foreach (var child in current.GetMembers())
+            typeDeclaration = GetSemanticFromMethod(context);
+
+            return typeDeclaration;
+        }
+
+        static TypeDeclarationSyntax GetSemanticFromMethod(GeneratorSyntaxContext context)
+        {
+            if(!(context.Node is MethodDeclarationSyntax methodDeclarationSyntax))
+            {
+                return null;
+            }
+
+            foreach (AttributeListSyntax attributeListSyntax in methodDeclarationSyntax.AttributeLists)
+            {
+                foreach (AttributeSyntax attributeSyntax in attributeListSyntax.Attributes)
                 {
-                    if (child is INamespaceOrTypeSymbol symbolChild)
+                    IMethodSymbol attributeSymbol = context.SemanticModel.GetSymbolInfo(attributeSyntax).Symbol as IMethodSymbol;
+                    if (attributeSymbol == null)
                     {
-                        queue.Enqueue(symbolChild);
+                        continue;
+                    }
+
+                    INamedTypeSymbol attributeContainingTypeSymbol = attributeSymbol.ContainingType;
+
+                    if (attributeContainingTypeSymbol.ContainingNamespace.GetFullNamespace().StartsWith("Gedaq."))
+                    {
+                        return methodDeclarationSyntax.Parent as TypeDeclarationSyntax;
                     }
                 }
             }
+
+            return null;
+        }
+
+        static TypeDeclarationSyntax GetSemanticClassOrStruct(GeneratorSyntaxContext context)
+        {
+            if(!(context.Node is ClassDeclarationSyntax))
+            {
+                return null;
+            }
+
+            if (!(context.Node is StructDeclarationSyntax))
+            {
+                return null;
+            }
+
+            var typeDeclarationSyntax = (TypeDeclarationSyntax)context.Node;
+            foreach (var attributeListSyntax in typeDeclarationSyntax.AttributeLists)
+            {
+                foreach (AttributeSyntax attributeSyntax in attributeListSyntax.Attributes)
+                {
+                    IMethodSymbol attributeSymbol = context.SemanticModel.GetSymbolInfo(attributeSyntax).Symbol as IMethodSymbol;
+                    if (attributeSymbol == null)
+                    {
+                        continue;
+                    }
+
+                    INamedTypeSymbol attributeContainingTypeSymbol = attributeSymbol.ContainingType;
+
+                    if (attributeContainingTypeSymbol.ContainingNamespace.GetFullNamespace().StartsWith("Gedaq."))
+                    {
+                        return typeDeclarationSyntax;
+                    }
+                }
+            }
+
+            return null;
+        }
+
+        private static void Execute(Compilation compilation, ImmutableArray<TypeDeclarationSyntax> types, SourceProductionContext context)
+        {
+            if (types.IsDefaultOrEmpty)
+            {
+                return;
+            }
+
+            //System.Diagnostics.Debugger.Launch();
+            var distinctTypes = types.Distinct().GroupBy(gr => gr.Identifier.ValueText);
+
+            var processor = new AttributeProcessor();
+            foreach (var item in distinctTypes)
+            {
+                INamedTypeSymbol containType = null;
+                foreach (var typeDeclarationSyntax in item)
+                {
+                    if(containType == null)
+                    {
+                        containType = (INamedTypeSymbol)compilation.GetSemanticModel(typeDeclarationSyntax.SyntaxTree).GetDeclaredSymbol(typeDeclarationSyntax);
+                    }
+
+                    processor.TryFillFrom(typeDeclarationSyntax, compilation, containType);
+                }
+
+                processor.CompleteProcessContainTypes();
+            }
+            
+            processor.GenerateAndSaveMethods(context);
         }
     }
 }
