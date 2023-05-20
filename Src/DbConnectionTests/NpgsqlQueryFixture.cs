@@ -293,8 +293,9 @@ ORDER BY p.id ASC
             "NpgsqlToClass1",
             typeof(Person),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [Parametr("NpgsqlToClass1", parametrType: typeof(int), parametrName: "id", dbType: System.Data.DbType.Int32)]
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "id", dbType: System.Data.DbType.Int32)
+            ]
         public void NpgsqlToClass1()
         {
         }
@@ -323,17 +324,19 @@ ORDER BY p.id ASC
             "NpgsqlToClass2",
             typeof(Person),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [QueryFormat("NpgsqlToClass2", 1, "condition")]
-        [QueryFormat("NpgsqlToClass2", 0)]
+            ),
+            QueryFormat(1, "condition"),
+            QueryFormat(0)
+            ]
         public void NpgsqlToClass2()
         {
         }
 
         [Test]
-        [QueryBatch("NpgsqlBatchReadToClass", Gedaq.Common.Enums.QueryType.Read | Gedaq.Common.Enums.QueryType.Scalar, Gedaq.Common.Enums.MethodType.Sync)]
-        [BatchPart("NpgsqlToClass2", "NpgsqlBatchReadToClass", 1)]
-        [BatchPart("NpgsqlToClass1", "NpgsqlBatchReadToClass", 2)]
+        [QueryBatch("NpgsqlBatchReadToClass", Gedaq.Common.Enums.QueryType.Read | Gedaq.Common.Enums.QueryType.Scalar, Gedaq.Common.Enums.MethodType.Sync),
+            BatchPart("NpgsqlToClass2", 1),
+            BatchPart("NpgsqlToClass1", 2)
+            ]
         public void BatchReadToClass()
         {
             using var connection = _dataSource.OpenConnection();
@@ -475,10 +478,11 @@ select * from dbconnectionfunc(@inParam);
 ",
             "FuncOut",
             queryType: Gedaq.Common.Enums.QueryType.NonQuery
-            )]
-        [Parametr("FuncOut", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
-        [Parametr("FuncOut", parametrType: typeof(int), parametrName: "out1", direction: ParameterDirection.Output)]
-        [Parametr("FuncOut", parametrType: typeof(string), parametrName: "out2", direction: ParameterDirection.Output)]
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input),
+            Parametr(parametrType: typeof(int), parametrName: "out1", direction: ParameterDirection.Output),
+            Parametr(parametrType: typeof(string), parametrName: "out2", direction: ParameterDirection.Output)
+            ]
         public void TestFuncOut()
         {
             using var connection = _dataSource.OpenConnection();
@@ -498,8 +502,9 @@ select out1, out2 from dbconnectionfunc(@inParam);
             "ReadFunc",
             typeof(ReadFunc),
             queryType: Gedaq.Common.Enums.QueryType.Read
-            )]
-        [Parametr("ReadFunc", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)
+            ]
         public void TestReadFunc()
         {
             using var connection = _dataSource.OpenConnection();
@@ -541,9 +546,10 @@ ORDER BY p.id ASC
             "ReadFuncPerson",
             typeof(ReadFunc),
              queryType: Gedaq.Common.Enums.QueryType.Read
-            )]
-        [Parametr("ReadFuncPerson", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
-        [Parametr("ReadFuncPerson", parametrType: typeof(int), parametrName: "personId", direction: ParameterDirection.Input)]
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input),
+            Parametr(parametrType: typeof(int), parametrName: "personId", direction: ParameterDirection.Input)
+            ]
         public void TestReadFuncAndPerson()
         {
             using var connection = _dataSource.OpenConnection();

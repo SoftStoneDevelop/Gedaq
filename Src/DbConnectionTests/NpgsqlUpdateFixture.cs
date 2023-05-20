@@ -45,8 +45,9 @@ SET
             "UpdatePerson",
             queryType: QueryType.NonQuery,
             methodType: Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [Parametr("UpdatePerson", parametrType: typeof(int?), parametrName: "refId", dbType: System.Data.DbType.Int32, nullable: true)]
+            ),
+            Parametr(parametrType: typeof(int?), parametrName: "refId", dbType: System.Data.DbType.Int32, nullable: true)
+            ]
         public void UpdatePerson()
         {
             using var connection = _dataSource.OpenConnection();
@@ -99,9 +100,10 @@ SET
             "UpdatePersonBatch",
             queryType: QueryType.NonQuery,
             methodType: Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [BatchPart("UpdatePerson", "UpdatePersonBatch", 1)]
-        [BatchPart("UpdatePerson", "UpdatePersonBatch", 2)]
+            ),
+            BatchPart("UpdatePerson", 1),
+            BatchPart("UpdatePerson", 2)
+            ]
         public void UpdatePersonBatch()
         {
             using var connection = _dataSource.OpenConnection();

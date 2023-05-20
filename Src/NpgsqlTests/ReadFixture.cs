@@ -34,8 +34,9 @@ ORDER BY p.id ASC
             "ToObjArr",
             typeof(object[]),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [Parametr("ToObjArr", parametrType: typeof(int), position: 1)]
+            ),
+            Parametr(parametrType: typeof(int), position: 1)
+            ]
         public void ReadToObjArr()
         {
             using var connection = _dataSource.OpenConnection();
@@ -122,8 +123,9 @@ ORDER BY p.id ASC
             "ToObj",
             typeof(object),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [Parametr("ToObj", parametrType: typeof(int), position: 1)]
+            ),
+            Parametr(parametrType: typeof(int), position: 1)
+            ]
         public void ReadToObj()
         {
             using var connection = _dataSource.OpenConnection();

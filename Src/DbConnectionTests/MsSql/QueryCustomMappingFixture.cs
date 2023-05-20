@@ -35,8 +35,9 @@ ORDER BY p.id ASC
             "MsSqlCustomMapping",
             typeof(PersonCustom),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [Parametr("MsSqlCustomMapping", parametrType: typeof(int), parametrName: "id", dbType: System.Data.DbType.Int32)]
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "id", dbType: System.Data.DbType.Int32)
+            ]
         public void CustomMapping()
         {
             using var connection = OpenConnection();

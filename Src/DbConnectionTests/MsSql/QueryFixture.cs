@@ -37,8 +37,9 @@ ORDER BY p.id ASC
             "MsSqlToClass1",
             typeof(Person),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [Parametr("MsSqlToClass1", parametrType: typeof(int), parametrName: "id", dbType: System.Data.DbType.Int32)]
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "id", dbType: System.Data.DbType.Int32)
+            ]
         public void ReadToClass()
         {
             using var connection = OpenConnection();
@@ -127,9 +128,10 @@ ORDER BY p.id ASC
             "MsSqlToClass2",
             typeof(Person),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [Parametr("MsSqlToClass2", parametrType: typeof(int), parametrName: "id")]
-        [Parametr("MsSqlToClass2", parametrType: typeof(int), parametrName: "id2")]
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "id"),
+            Parametr(parametrType: typeof(int), parametrName: "id2")
+            ]
         public async Task ReadToClassAsync()
         {
             using var connection = OpenConnection();
@@ -244,8 +246,9 @@ ORDER BY p.id ASC
             "MsSqlToObjArr",
             typeof(object[]),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [Parametr("MsSqlToObjArr", parametrType: typeof(int), parametrName: "id")]
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "id")
+            ]
         public void ReadToObjArr()
         {
             using var connection = OpenConnection();

@@ -18,10 +18,11 @@ select * from readfixturefunc(@inParam);
 ",
             "FuncOut",
             queryType: Gedaq.Common.Enums.QueryType.NonQuery
-            )]
-        [Parametr("FuncOut", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
-        [Parametr("FuncOut", parametrType: typeof(int), parametrName: "out1", direction: ParameterDirection.Output)]
-        [Parametr("FuncOut", parametrType: typeof(string), parametrName: "out2", direction: ParameterDirection.Output)]
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input),
+            Parametr(parametrType: typeof(int), parametrName: "out1", direction: ParameterDirection.Output),
+            Parametr(parametrType: typeof(string), parametrName: "out2", direction: ParameterDirection.Output)
+            ]
         public void TestFuncOut()
         {
             using var connection = _dataSource.OpenConnection();
@@ -41,8 +42,9 @@ select out1, out2 from readfixturefunc(@inParam);
             "ReadFunc",
             typeof(ReadFunc),
             queryType: Gedaq.Common.Enums.QueryType.Read
-            )]
-        [Parametr("ReadFunc", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)
+            ]
         public void TestReadFunc()
         {
             using var connection = _dataSource.OpenConnection();
@@ -84,9 +86,10 @@ ORDER BY p.id ASC
             "ReadFuncPerson",
             typeof(ReadFunc),
              queryType: Gedaq.Common.Enums.QueryType.Read
-            )]
-        [Parametr("ReadFuncPerson", parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)]
-        [Parametr("ReadFuncPerson", parametrType: typeof(int), parametrName: "personId", direction: ParameterDirection.Input)]
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input),
+            Parametr(parametrType: typeof(int), parametrName: "personId", direction: ParameterDirection.Input)
+            ]
         public void TestReadFuncAndPerson()
         {
             using var connection = _dataSource.OpenConnection();
@@ -102,9 +105,10 @@ ORDER BY p.id ASC
         }
 
         [Test]
-        [QueryBatch("BatchFixtureOut", Gedaq.Common.Enums.QueryType.NonQuery, Gedaq.Common.Enums.MethodType.Sync)]
-        [BatchPart("FuncOut", "BatchFixtureOut", 1)]
-        [BatchPart("FuncOut", "BatchFixtureOut", 2)]
+        [QueryBatch("BatchFixtureOut", Gedaq.Common.Enums.QueryType.NonQuery, Gedaq.Common.Enums.MethodType.Sync),
+            BatchPart("FuncOut", 1),
+            BatchPart("FuncOut", 2)
+            ]
         public void BatchFixtureOut()
         {
             Assert.That(() => 

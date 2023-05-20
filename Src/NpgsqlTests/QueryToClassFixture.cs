@@ -35,8 +35,9 @@ ORDER BY p.id ASC
             "ToClass1",
             typeof(ReadFixtureModel),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [Parametr("ToClass1", parametrType: typeof(int), position: 1)]
+            ),
+            Parametr(parametrType: typeof(int), position: 1)
+            ]
         public void ReadToClass()
         {
             using var connection = _dataSource.OpenConnection();
@@ -166,9 +167,10 @@ ORDER BY p.id ASC
             "ToClass2",
             typeof(ReadFixtureModel),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [Parametr("ToClass2", parametrType: typeof(int), position: 1)]
-        [Parametr("ToClass2", parametrType: typeof(int), position: 2)]
+            ),
+            Parametr(parametrType: typeof(int), position: 1),
+            Parametr(parametrType: typeof(int), position: 2)
+            ]
         public async Task ReadToClassAsync()
         {
             await using var connection = _dataSource.OpenConnection();

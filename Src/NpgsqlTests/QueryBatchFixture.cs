@@ -10,9 +10,10 @@ namespace NpgsqlTests
     internal partial class ReadFixture : BaseFixture
     {
         [Test]
-        [QueryBatch("BatchReadToClass", Gedaq.Common.Enums.QueryType.Read | Gedaq.Common.Enums.QueryType.Scalar, Gedaq.Common.Enums.MethodType.Sync)]
-        [BatchPart("ToClass2", "BatchReadToClass", 1)]
-        [BatchPart("ToClass1", "BatchReadToClass", 2)]
+        [QueryBatch("BatchReadToClass", Gedaq.Common.Enums.QueryType.Read | Gedaq.Common.Enums.QueryType.Scalar, Gedaq.Common.Enums.MethodType.Sync),
+            BatchPart("ToClass2", 1),
+            BatchPart("ToClass1", 2)
+            ]
         public void BatchReadToClass()
         {
             using var connection = _dataSource.OpenConnection();

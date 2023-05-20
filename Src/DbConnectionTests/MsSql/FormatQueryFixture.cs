@@ -35,9 +35,10 @@ ORDER BY p.id ASC
             "MsSqlFormatToClass",
             typeof(Person),
             Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            )]
-        [QueryFormat("MsSqlFormatToClass", 1, "condition")]
-        [QueryFormat("MsSqlFormatToClass", 0)]
+            ), 
+            QueryFormat(1, "condition"), 
+            QueryFormat(0)
+            ]
         public async Task ReadFormatToClassAsync()
         {
             using var connection = OpenConnection();
