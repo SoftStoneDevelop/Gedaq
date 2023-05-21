@@ -68,7 +68,7 @@ Let's mark the Person class itself with an attribute:
 
 ```C#
 
-[Gedaq.Npgsql.Attributes.Query(
+[Query(
             @"
 SELECT 
     p.id,
@@ -86,8 +86,9 @@ WHERE p.id > $1
         "GetAllPerson",
         typeof(Person),
         MethodType.Sync | MethodType.Async
-        )]
-[Parametr("GetAllPerson", parametrType: typeof(int), position: 1)]
+        ),
+        Parametr(parametrType: typeof(int), position: 1)
+        ]
 public class Person
 //...
 
