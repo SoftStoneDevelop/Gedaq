@@ -77,12 +77,7 @@ namespace Gedaq
 
         static TypeDeclarationSyntax GetSemanticClassOrStruct(GeneratorSyntaxContext context)
         {
-            if(!(context.Node is ClassDeclarationSyntax))
-            {
-                return null;
-            }
-
-            if (!(context.Node is StructDeclarationSyntax))
+            if(!(context.Node is ClassDeclarationSyntax) && !(context.Node is StructDeclarationSyntax))
             {
                 return null;
             }
