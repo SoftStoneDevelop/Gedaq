@@ -7,8 +7,11 @@ namespace Gedaq.Base.Model
 {
     internal abstract class BaseParametr
     {
-        public string Name;
-        public bool HaveName => Name != null;
+        public string NameInCommand;
+        public bool HaveNameInCommand => NameInCommand != null;
+
+        public string NameInMethod;
+        public bool HaveNameInMethod => NameInMethod != null;
 
         public ITypeSymbol Type;
 
@@ -76,7 +79,7 @@ namespace Gedaq.Base.Model
             return true;
         }
 
-        protected static bool SetName(TypedConstant argument, BaseParametr parametr)
+        protected static bool SetNameInCommand(TypedConstant argument, BaseParametr parametr)
         {
             if (!(argument.Type is INamedTypeSymbol paramName) ||
                 paramName.Name != nameof(String)
@@ -85,7 +88,20 @@ namespace Gedaq.Base.Model
                 return false;
             }
 
-            parametr.Name = (string)argument.Value;
+            parametr.NameInCommand = (string)argument.Value;
+            return true;
+        }
+
+        protected static bool SetNameInMethod(TypedConstant argument, BaseParametr parametr)
+        {
+            if (!(argument.Type is INamedTypeSymbol paramName) ||
+                paramName.Name != nameof(String)
+                )
+            {
+                return false;
+            }
+
+            parametr.NameInMethod = (string)argument.Value;
             return true;
         }
 

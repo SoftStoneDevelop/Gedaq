@@ -1,9 +1,7 @@
 ﻿using DbConnectionTests.Model;
-using Gedaq.Common.Enums;
 using Gedaq.DbConnection.Attributes;
 using NUnit.Framework;
 using System;
-using System.ComponentModel.Design;
 using System.Linq;
 using System.Threading.Tasks;
 

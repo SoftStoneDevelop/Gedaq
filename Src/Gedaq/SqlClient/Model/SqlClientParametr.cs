@@ -49,7 +49,12 @@ namespace Gedaq.SqlClient.Model
 
         public override string VariableName(string postfix = default)
         {
-            return $"{Name.ToLowerInvariant()}{postfix}";
+            if (HaveNameInMethod)
+            {
+                return $"{NameInMethod}{postfix}";
+            }
+
+            return $"{NameInCommand}{postfix}";
         }
 
         internal static bool CreateNew(
@@ -62,7 +67,7 @@ namespace Gedaq.SqlClient.Model
             parametr = null;
             methodName = null;
 
-            if (namedArguments.Length != 20)
+            if (namedArguments.Length != 21)
             {
                 return false;
             }
@@ -73,7 +78,7 @@ namespace Gedaq.SqlClient.Model
                 return false;
             }
 
-            if (!SetName(namedArguments[1], result))
+            if (!SetNameInCommand(namedArguments[1], result))
             {
                 return false;
             }
@@ -168,7 +173,12 @@ namespace Gedaq.SqlClient.Model
                 return false;
             }
 
-            if (!result.HaveName)
+            if (!SetNameInMethod(namedArguments[20], result))
+            {
+                return false;
+            }
+
+            if (!result.HaveNameInCommand)
             {
                 throw new Exception("Parameter not have name");
             }

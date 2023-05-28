@@ -32,10 +32,10 @@ namespace Gedaq.DbConnection.Helpers
 ");
             }
 
-            if (parametr.HaveName)
+            if (parametr.HaveNameInCommand)
             {
                 builder.Append($@"
-                parametr{index}.ParameterName = ""{parametr.Name}"";
+                parametr{index}.ParameterName = ""{parametr.NameInCommand}"";
 ");
             }
 

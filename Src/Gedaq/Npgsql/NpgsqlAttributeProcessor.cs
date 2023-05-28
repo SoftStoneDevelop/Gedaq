@@ -236,7 +236,7 @@ namespace Gedaq.Npgsql
                     parametr.Position = i + 1;
                 }
 
-                containNamedParametr |= parametr.HaveName;
+                containNamedParametr |= parametr.HaveNameInCommand;
 
                 readPair.Query.Parametrs[i] = parametr;
             }

@@ -14,7 +14,12 @@ namespace Gedaq.MySqlConnector.Model
 
         public override string VariableName(string postfix = default)
         {
-            return $"{Name.ToLowerInvariant()}{postfix}";
+            if (HaveNameInMethod)
+            {
+                return $"{NameInMethod}{postfix}";
+            }
+
+            return $"{NameInCommand}{postfix}";
         }
 
         internal static bool CreateNew(
@@ -27,7 +32,7 @@ namespace Gedaq.MySqlConnector.Model
             parametr = null;
             methodName = null;
 
-            if (namedArguments.Length != 11)
+            if (namedArguments.Length != 12)
             {
                 return false;
             }
@@ -38,7 +43,7 @@ namespace Gedaq.MySqlConnector.Model
                 return false;
             }
 
-            if (!SetName(namedArguments[1], result))
+            if (!SetNameInCommand(namedArguments[1], result))
             {
                 return false;
             }
@@ -88,7 +93,12 @@ namespace Gedaq.MySqlConnector.Model
                 return false;
             }
 
-            if (!result.HaveName)
+            if (!SetNameInMethod(namedArguments[11], result))
+            {
+                return false;
+            }
+
+            if (!result.HaveNameInCommand)
             {
                 throw new Exception("Parameter not have name");
             }

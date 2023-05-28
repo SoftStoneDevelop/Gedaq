@@ -18,8 +18,13 @@ namespace Gedaq.Npgsql.Model
 
         public override string VariableName(string postfix = default)
         {
-            return HaveName ?
-                    $"{Name.ToLowerInvariant()}{postfix}" :
+            if (HaveNameInMethod)
+            {
+                return $"{NameInMethod}{postfix}";
+            }
+
+            return HaveNameInCommand ?
+                    $"{NameInCommand}{postfix}" :
                     $"mParametr{Position}{postfix}"
                 ;
         }
@@ -34,7 +39,7 @@ namespace Gedaq.Npgsql.Model
             parametr = null;
             methodName = null;
 
-            if (namedArguments.Length != 12)
+            if (namedArguments.Length != 13)
             {
                 return false;
             }
@@ -45,7 +50,7 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!SetName(namedArguments[1], result))
+            if (!SetNameInCommand(namedArguments[1], result))
             {
                 return false;
             }
@@ -100,12 +105,17 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (result.HaveName && result.HavePosition)
+            if (!SetNameInMethod(namedArguments[12], result))
+            {
+                return false;
+            }
+
+            if (result.HaveNameInCommand && result.HavePosition)
             {
                 throw new Exception("Parameter can have position or name, but not both");
             }
 
-            if(!result.HaveName && !result.HavePosition)
+            if(!result.HaveNameInCommand && !result.HavePosition)
             {
                 throw new Exception("Parameter not have position or name");
             }

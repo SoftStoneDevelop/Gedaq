@@ -10,10 +10,10 @@ namespace Gedaq.Npgsql.Helpers
     {
         private static void CreateNullableParametr(NpgsqlParametr parametr, StringBuilder builder)
         {
-            if(parametr.HaveName && parametr.HaveNpgSqlDbType)
+            if(parametr.HaveNameInCommand && parametr.HaveNpgSqlDbType)
             {
                 builder.Append($@"
-                var parametr{parametr.Position} = new NpgsqlParameter(""{parametr.Name}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType});
+                var parametr{parametr.Position} = new NpgsqlParameter(""{parametr.NameInCommand}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType});
 ");
                 SetParametrs(
                     parametr,
@@ -39,7 +39,7 @@ namespace Gedaq.Npgsql.Helpers
                 parametr,
                 builder,
                 parametr.HaveNpgSqlDbType,
-                parametr.HaveName,
+                parametr.HaveNameInCommand,
                 parametr.HaveSize,
                 parametr.Nullable,
                 parametr.HaveDirection,
@@ -53,10 +53,10 @@ namespace Gedaq.Npgsql.Helpers
 
         private static void CreateValueParametr(NpgsqlParametr parametr, StringBuilder builder)
         {
-            if (parametr.HaveName && parametr.HaveNpgSqlDbType)
+            if (parametr.HaveNameInCommand && parametr.HaveNpgSqlDbType)
             {
                 builder.Append($@"
-                var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>(""{parametr.Name}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType});
+                var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>(""{parametr.NameInCommand}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType});
 ");
                 SetParametrs(
                     parametr,
@@ -82,7 +82,7 @@ namespace Gedaq.Npgsql.Helpers
                 parametr,
                 builder,
                 parametr.HaveNpgSqlDbType,
-                parametr.HaveName,
+                parametr.HaveNameInCommand,
                 parametr.HaveSize,
                 parametr.Nullable,
                 parametr.HaveDirection,
@@ -119,7 +119,7 @@ namespace Gedaq.Npgsql.Helpers
             if (setHaveName)
             {
                 builder.Append($@"
-                parametr{parametr.Position}.ParameterName = ""{parametr.Name}"";
+                parametr{parametr.Position}.ParameterName = ""{parametr.NameInCommand}"";
 ");
             }
 

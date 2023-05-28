@@ -8,6 +8,7 @@ using System.Collections.Immutable;
 using System.Data;
 using System.Reflection;
 using System.Text;
+using System.Xml.Linq;
 
 namespace Gedaq.DbConnection.Model
 {
@@ -18,7 +19,12 @@ namespace Gedaq.DbConnection.Model
 
         public override string VariableName(string postfix = default)
         {
-            return $"{Name.ToLowerInvariant()}{postfix}";
+            if(HaveNameInMethod)
+            {
+                return $"{NameInMethod}{postfix}";
+            }
+
+            return $"{NameInCommand}{postfix}";
         }
 
         internal static bool CreateNew(
@@ -31,13 +37,13 @@ namespace Gedaq.DbConnection.Model
             parametr = null;
             methodName = null;
 
-            if (namedArguments.Length != 11)
+            if (namedArguments.Length != 12)
             {
                 return false;
             }
 
             var result = new DbParametr();
-            if (!SetName(namedArguments[0], result))
+            if (!SetNameInCommand(namedArguments[0], result))
             {
                 return false;
             }
@@ -92,7 +98,12 @@ namespace Gedaq.DbConnection.Model
                 return false;
             }
 
-            if (!result.HaveName)
+            if (!SetNameInMethod(namedArguments[11], result))
+            {
+                return false;
+            }
+
+            if (!result.HaveNameInCommand)
             {
                 throw new Exception("Parameter not have name");
             }
