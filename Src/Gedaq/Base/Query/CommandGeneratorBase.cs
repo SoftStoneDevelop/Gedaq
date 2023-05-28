@@ -291,7 +291,7 @@ namespace Gedaq.Base.Query
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {QueryCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}Command(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {QueryCommonBase.GetScalarTypeName(source, ProviderInfo)} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Command(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command
 ");
                 QueryCommonBase.AddParametrs(source, builder, true);
@@ -303,7 +303,7 @@ namespace Gedaq.Base.Query
             else
             {
                 builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{QueryCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}CommandAsync(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{QueryCommonBase.GetScalarTypeName(source, ProviderInfo)}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}CommandAsync(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command
 ");
                 QueryCommonBase.AddParametrs(source, builder, false);

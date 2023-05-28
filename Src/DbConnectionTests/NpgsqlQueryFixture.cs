@@ -486,7 +486,7 @@ select * from dbconnectionfunc(@inParam);
         public void TestFuncOut()
         {
             using var connection = _dataSource.OpenConnection();
-            var result = NonQueryFuncOut(connection, 46, out var out1, out var out2);
+            var result = FuncOut(connection, 46, out var out1, out var out2);
             Assert.Multiple(() =>
             {
                 Assert.That(out1, Is.EqualTo(46));

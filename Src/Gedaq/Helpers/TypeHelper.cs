@@ -245,5 +245,15 @@ namespace Gedaq.Helpers
 
             throw new Exception($"Type '{typeSymbol.GetFullTypeName()}' does not contain a member named '{propertyName}'");
         }
+
+        public static bool IsPowerOfTwo(this int x)
+        {
+            //for example 4
+            //1000 x
+            //0111 (x - 1)
+            //0000 result &
+            return
+                (x != 0) && ((x & (x - 1)) == 0);
+        }
     }
 }

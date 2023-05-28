@@ -586,7 +586,7 @@ namespace Gedaq.Base.Batch
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {BatchCommonBase.GetScalarTypeName(source, ProviderInfo)} Scalar{source.MethodName}Batch(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {BatchCommonBase.GetScalarTypeName(source, ProviderInfo)} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Batch(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch
 ");
                 BatchCommonBase.WriteMethodParametrs(source, builder);
@@ -599,7 +599,7 @@ namespace Gedaq.Base.Batch
             else
             {
                 builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}> Scalar{source.MethodName}BatchAsync(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}BatchAsync(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch,
             CancellationToken cancellationToken = default
             )

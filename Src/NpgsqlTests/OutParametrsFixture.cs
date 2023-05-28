@@ -23,10 +23,10 @@ select * from readfixturefunc(@inParam);
             Parametr(parametrType: typeof(int), parametrName: "out1", direction: ParameterDirection.Output),
             Parametr(parametrType: typeof(string), parametrName: "out2", direction: ParameterDirection.Output)
             ]
-        public void TestFuncOut()
+        public void FuncOutTest()
         {
             using var connection = _dataSource.OpenConnection();
-            var result = NonQueryFuncOut(connection, 46, out var out1, out var out2);
+            var result = FuncOut(connection, 46, out var out1, out var out2);
             Assert.Multiple(() =>
             {
                 Assert.That(out1, Is.EqualTo(46));
@@ -109,13 +109,13 @@ ORDER BY p.id ASC
             BatchPart("FuncOut", 1),
             BatchPart("FuncOut", 2)
             ]
-        public void BatchFixtureOut()
+        public void BatchFixtureOutTest()
         {
             Assert.That(() => 
             {
                 using var connection = _dataSource.OpenConnection();
                 
-                NonQueryBatchFixtureOut(
+                BatchFixtureOut(
                     connection,
                     24, out var out11, out var out12,
                     75, out var out21, out var out22
