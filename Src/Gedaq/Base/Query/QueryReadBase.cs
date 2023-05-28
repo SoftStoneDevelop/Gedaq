@@ -61,13 +61,13 @@ namespace Gedaq.Base.Query
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} static IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> {source.MethodName}(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> {source.MethodName}(
 ");
             }
             else
             {
                 builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} static async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> {source.MethodName}Async(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> {source.MethodName}Async(
 ");
             }
         }

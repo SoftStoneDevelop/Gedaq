@@ -19,6 +19,10 @@ namespace Gedaq.Base.Model
 
         public AccessModifier AccessModifier => MethodInfo.AccessModifier;
 
+        public bool MethodsMustBeStatic => ContainTypeName.IsStatic || !ContainTypeName.IsPatrial();
+
+        public string MethodStaticModifier => MethodsMustBeStatic ? "static" : "";
+
         public INamedTypeSymbol ContainTypeName;
     }
 }

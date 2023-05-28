@@ -51,13 +51,13 @@ namespace Gedaq.Base.Batch
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} static IEnumerable<IEnumerable<{type}>> {source.MethodName}(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} IEnumerable<IEnumerable<{type}>> {source.MethodName}(
 ");
             }
             else
             {
                 builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} static async IAsyncEnumerable<IAsyncEnumerable<{type}>> {source.MethodName}Async(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async IAsyncEnumerable<IAsyncEnumerable<{type}>> {source.MethodName}Async(
 ");
             }
         }
