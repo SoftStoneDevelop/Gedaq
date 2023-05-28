@@ -237,7 +237,7 @@ namespace Gedaq.MySqlConnector
             foreach (var queryRead in _read)
             {
                 readGenerator.GenerateMethod(queryRead);
-                context.AddSource($"{queryRead.MethodName}MySqlConnectorExtension.g.cs", readGenerator.GetCode());
+                context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}MySqlConnector.g.cs", readGenerator.GetCode());
             }
             _read.Clear();
 
@@ -245,7 +245,7 @@ namespace Gedaq.MySqlConnector
             foreach (var batchRead in _readBatch)
             {
                 batchReadGenerator.GenerateMethod(batchRead);
-                context.AddSource($"{batchRead.MethodName}MySqlConnectorExtension.g.cs", batchReadGenerator.GetCode());
+                context.AddSource($"{batchRead.ContainTypeName.Name}{batchRead.MethodName}MySqlConnector.g.cs", batchReadGenerator.GetCode());
             }
             _readBatch.Clear();
         }

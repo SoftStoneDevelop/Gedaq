@@ -11,7 +11,7 @@
 	</ItemGroup>
 	<PropertyGroup>
 		<PackageId>Gedaq</PackageId>
-		<PackageVersion>1.4.3.0</PackageVersion>
+		<PackageVersion>1.4.4.0</PackageVersion>
 		<Authors>Brevnov Vyacheslav Sergeevich</Authors>
 		<RepositoryUrl>https://github.com/SoftStoneDevelop/Gedaq</RepositoryUrl>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>

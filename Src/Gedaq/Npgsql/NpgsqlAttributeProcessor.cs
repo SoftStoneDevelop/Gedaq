@@ -326,7 +326,7 @@ namespace Gedaq.Npgsql
             foreach (var queryRead in _read)
             {
                 readGenerator.GenerateMethod(queryRead);
-                context.AddSource($"{queryRead.MethodName}NpgsqlExtension.g.cs", readGenerator.GetCode());
+                context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}Npgsql.g.cs", readGenerator.GetCode());
             }
             _read.Clear();
 
@@ -334,7 +334,7 @@ namespace Gedaq.Npgsql
             foreach (var batchRead in _readBatch)
             {
                 batchReadGenerator.GenerateMethod(batchRead);
-                context.AddSource($"{batchRead.MethodName}NpgsqlExtension.g.cs", batchReadGenerator.GetCode());
+                context.AddSource($"{batchRead.ContainTypeName.Name}{batchRead.MethodName}Npgsql.g.cs", batchReadGenerator.GetCode());
             }
             _readBatch.Clear();
 
@@ -342,7 +342,7 @@ namespace Gedaq.Npgsql
             foreach (var binaryExport in _binaryExports)
             {
                 binaryExportGenerator.Generate(binaryExport);
-                context.AddSource($"{binaryExport.MethodName}NpgsqlExtension.g.cs", binaryExportGenerator.GetCode());
+                context.AddSource($"{binaryExport.ContainTypeName.Name}{binaryExport.MethodName}Npgsql.g.cs", binaryExportGenerator.GetCode());
             }
             _binaryExports.Clear();
 
@@ -350,7 +350,7 @@ namespace Gedaq.Npgsql
             foreach (var binaryImport in _binaryImports)
             {
                 binaryImportGenerator.Generate(binaryImport);
-                context.AddSource($"{binaryImport.MethodName}NpgsqlExtension.g.cs", binaryImportGenerator.GetCode());
+                context.AddSource($"{binaryImport.ContainTypeName.Name}{binaryImport.MethodName}Npgsql.g.cs", binaryImportGenerator.GetCode());
             }
             _binaryImports.Clear();
         }

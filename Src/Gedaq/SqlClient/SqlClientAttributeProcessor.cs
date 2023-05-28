@@ -117,7 +117,7 @@ namespace Gedaq.SqlClient
             foreach (var queryRead in _read)
             {
                 readGenerator.Generate(queryRead);
-                context.AddSource($"{queryRead.MethodName}SqlClientExtension.g.cs", readGenerator.GetCode());
+                context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}SqlClient.g.cs", readGenerator.GetCode());
             }
             _read.Clear();
         }

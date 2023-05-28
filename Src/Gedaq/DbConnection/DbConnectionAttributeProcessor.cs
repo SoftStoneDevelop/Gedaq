@@ -237,7 +237,7 @@ namespace Gedaq.Npgsql
             foreach (var queryRead in _read)
             {
                 readGenerator.Generate(queryRead);
-                context.AddSource($"{queryRead.MethodName}DbConnectionExtension.g.cs", readGenerator.GetCode());
+                context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}DbConnection.g.cs", readGenerator.GetCode());
             }
             _read.Clear();
 
@@ -245,7 +245,7 @@ namespace Gedaq.Npgsql
             foreach (var batchRead in _readBatch)
             {
                 batchReadGenerator.Generate(batchRead);
-                context.AddSource($"{batchRead.MethodName}DbConnectionExtension.g.cs", batchReadGenerator.GetCode());
+                context.AddSource($"{batchRead.ContainTypeName.Name}{batchRead.MethodName}DbConnection.g.cs", batchReadGenerator.GetCode());
             }
             _readBatch.Clear();
         }
