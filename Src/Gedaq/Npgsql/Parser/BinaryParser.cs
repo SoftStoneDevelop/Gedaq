@@ -16,7 +16,7 @@ namespace Gedaq.Npgsql.Parser
 
             var body = FindBody(querySpan, out var start, out var end);
             var afterInstruction = 0;
-            if (QueryParser.FindInstruction(body, out afterInstruction, out var instructionType) &&
+            if (PostgreSQLQueryParser.FindInstruction(body, out afterInstruction, out var instructionType) &&
                 (instructionType == InstructionType.Delete || instructionType == InstructionType.Insert || instructionType == InstructionType.Update)
                 )
             {

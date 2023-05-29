@@ -50,7 +50,7 @@ namespace Gedaq.Npgsql
         private List<BatchPair> _batchPairTemp = new List<BatchPair>();
         private Dictionary<string, NpgsqlQuery> _readContainsType = new Dictionary<string, NpgsqlQuery>();
 
-        private QueryParser _queryParser = new QueryParser();
+        private PostgreSQLQueryParser _queryParser = new PostgreSQLQueryParser();
         private BinaryParser _binaryParser = new BinaryParser();
 
         public override void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
@@ -183,13 +183,13 @@ namespace Gedaq.Npgsql
             AddParametrs(readPair);
             AddFormatParametrs(readPair.Query, readPair.FormatParametrs);
 
-            if (query.QueryType == QueryType.Read)
+            if (query.QueryType == QueryType.NonQuery)
             {
-                query.Aliases = _queryParser.Parse(ref query.Query);
+                query.Aliases = _queryParser.GetIntResultAlias();
             }
             else
             {
-                query.Aliases = _queryParser.GetIntResultAlias();
+                query.Aliases = _queryParser.Parse(ref query.Query);
             }
 
             if (query.NeedGenerate)

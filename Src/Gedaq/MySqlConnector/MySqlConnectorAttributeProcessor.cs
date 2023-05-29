@@ -164,13 +164,13 @@ namespace Gedaq.MySqlConnector
             query.Parametrs = readPair.Parametrs.ToArray();
             AddFormatParametrs(query, readPair.FormatParametrs);
 
-            if (query.QueryType == QueryType.Read)
+            if (query.QueryType == QueryType.NonQuery)
             {
-                query.Aliases = _queryParser.Parse(ref query.Query);
+                query.Aliases = _queryParser.GetIntResultAlias();
             }
             else
             {
-                query.Aliases = _queryParser.GetIntResultAlias();
+                query.Aliases = _queryParser.Parse(ref query.Query);
             }
 
             if (query.NeedGenerate)

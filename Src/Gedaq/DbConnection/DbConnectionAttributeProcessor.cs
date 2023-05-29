@@ -165,14 +165,15 @@ namespace Gedaq.Npgsql
             query.Parametrs = readPair.Parametrs.ToArray();
             AddFormatParametrs(query, readPair.FormatParametrs);
 
-            if (query.QueryType == QueryType.Read)
-            {
-                query.Aliases = _queryParser.Parse(ref query.Query);
-            }
-            else
+            if (query.QueryType == QueryType.NonQuery)
             {
                 query.Aliases = _queryParser.GetIntResultAlias();
             }
+            else
+            {
+                query.Aliases = _queryParser.Parse(ref query.Query);
+            }
+
             if (query.NeedGenerate)
             {
                 _read.Add(query);
