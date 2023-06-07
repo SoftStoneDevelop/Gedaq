@@ -21,7 +21,7 @@ namespace Gedaq.MySqlConnector.Helpers
             this ITypeSymbol namedTypeSymbol
             )
         {
-            switch (namedTypeSymbol.GetFullTypeName())
+            switch (namedTypeSymbol.GetFullTypeName(replaceNullable: true))
             {
                 case "System.Int32":
                 {

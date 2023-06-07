@@ -20,19 +20,9 @@ namespace Gedaq.Helpers
         {
             if (provider.IsKnownProviderType(source.MapTypeName))
             {
-                builder.Append($@"
-                    yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);
-");
-            }
-            else if (provider.IsSpecialHandlerType(source.MapTypeName))
-            {
-                builder.Append($@"
-                    yield return {castTypeExpr}{provider.GetSpecialTypeValue(source.MapTypeName, 0)};
-");
-            }
-            else if (source.MapTypeName.IsNullableType())
-            {
-                builder.Append($@"
+                if (source.MapTypeName.IsNullableType())
+                {
+                    builder.Append($@"
                     if(reader.IsDBNull(0))
                     {{
                         yield return {castTypeExpr}({source.MapTypeName.GetFullTypeName(true)})null;
@@ -42,6 +32,35 @@ namespace Gedaq.Helpers
                         yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName(true, addQuestionNoatble: false)}>(0);
                     }}
 ");
+                }
+                else
+                {
+                    builder.Append($@"
+                    yield return {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);
+");
+                }
+            }
+            else if (provider.IsSpecialHandlerType(source.MapTypeName))
+            {
+                if (source.MapTypeName.IsNullableType())
+                {
+                    builder.Append($@"
+                    if(reader.IsDBNull(0))
+                    {{
+                        yield return {castTypeExpr}({provider.GetSpecialTypeValue(source.MapTypeName, 0)})null;
+                    }}
+                    else
+                    {{
+                        yield return {castTypeExpr}reader.GetFieldValue<{provider.GetSpecialTypeValue(source.MapTypeName, 0)}>(0);
+                    }}
+");
+                }
+                else
+                {
+                    builder.Append($@"
+                    yield return {castTypeExpr}{provider.GetSpecialTypeValue(source.MapTypeName, 0)};
+");
+                }
             }
             else if (source.MapTypeName.Name == nameof(Object))
             {

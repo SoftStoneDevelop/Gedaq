@@ -25,7 +25,7 @@ namespace Gedaq.DbConnection.Helpers
             this ITypeSymbol namedTypeSymbol
             )
         {
-            switch (namedTypeSymbol.GetFullTypeName())
+            switch (namedTypeSymbol.GetFullTypeName(replaceNullable: true))
             {
                 case "System.Int32":
                 {

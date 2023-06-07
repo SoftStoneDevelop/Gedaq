@@ -46,7 +46,7 @@ namespace Gedaq.Base.Query
 
             if (providerInfo.IsKnownProviderType(source.MapTypeName) || providerInfo.IsSpecialHandlerType(source.MapTypeName))
             {
-                return source.MapTypeName.GetFullTypeName();
+                return source.MapTypeName.GetFullTypeName(replaceNullable: true);
             }
 
             var firstField = source.Aliases.AllFieldsOrderByPosition().First();

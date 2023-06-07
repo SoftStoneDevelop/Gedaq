@@ -266,7 +266,7 @@ namespace Gedaq.Base.Batch
 
             if (providerInfo.IsKnownProviderType(first.MapTypeName) || providerInfo.IsSpecialHandlerType(first.MapTypeName))
             {
-                return first.MapTypeName.GetFullTypeName();
+                return first.MapTypeName.GetFullTypeName(replaceNullable: true);
             }
 
             var firstField = first.Aliases.AllFieldsOrderByPosition().First();

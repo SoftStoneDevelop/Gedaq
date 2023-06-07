@@ -28,7 +28,7 @@ namespace Gedaq.Npgsql.Helpers
             this ITypeSymbol namedTypeSymbol
             )
         {
-            switch (namedTypeSymbol.GetFullTypeName())
+            switch (namedTypeSymbol.GetFullTypeName(replaceNullable: true, addQuestionNoatble: false))
             {
                 case "System.Int32":
                 {

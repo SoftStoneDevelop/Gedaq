@@ -25,7 +25,7 @@ namespace Gedaq.SqlClient.Helpers
             this ITypeSymbol namedTypeSymbol
             )
         {
-            switch (namedTypeSymbol.GetFullTypeName())
+            switch (namedTypeSymbol.GetFullTypeName(replaceNullable: true))
             {
                 case "System.Int32":
                 {
@@ -133,7 +133,7 @@ namespace Gedaq.SqlClient.Helpers
 
         public static bool IsSpecialHandlerType(this ITypeSymbol type)
         {
-            switch (type.GetFullTypeName())
+            switch (type.GetFullTypeName(replaceNullable: true))
             {
                 case "System.Data.SqlTypes.SqlXml":
                 {
