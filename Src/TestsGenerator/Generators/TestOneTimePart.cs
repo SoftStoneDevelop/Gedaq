@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Text;
+using System.Threading.Tasks;
 using TestsGenegator.Enums;
 using TestsGenegator.Helpers;
 
@@ -9,7 +10,7 @@ namespace TestsGenegator.Generators
     {
         private readonly StringBuilder _stringBuilder = new StringBuilder();
 
-        public void Generate(Model.Model model, Database database, string destinationFolder)
+        public async Task Generate(Model.Model model, Database database, string destinationFolder)
         {
             _stringBuilder.Clear();
             Start(model, database);
@@ -26,7 +27,7 @@ namespace TestsGenegator.Generators
             End();
 
             Directory.CreateDirectory($"{destinationFolder}/TestOneTimeParts/");
-            File.WriteAllText($"{destinationFolder}/TestOneTimeParts/{model.ClassName}TestOneTimePart.cs", _stringBuilder.ToString());
+            await File.WriteAllTextAsync($"{destinationFolder}/TestOneTimeParts/{model.ClassName}TestOneTimePart.cs", _stringBuilder.ToString());
         }
 
         private void Start(Model.Model model, Database database)

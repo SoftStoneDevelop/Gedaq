@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace TestsGenegator.Generators
 {
@@ -8,16 +9,16 @@ namespace TestsGenegator.Generators
     {
         private readonly StringBuilder _stringBuilder = new StringBuilder();
 
-        public void Generate(List<Model.Model> models, string destinationFolder)
+        public async Task Generate(List<Model.Model> models, string destinationFolder)
         {
             foreach (var model in models)
             {
-                Model(model, destinationFolder);
-                ModelInner(model.ModelInner, destinationFolder);
+                await Model(model, destinationFolder);
+                await ModelInner(model.ModelInner, destinationFolder);
             }
         }
 
-        private void Model(Model.Model model, string destinationFolder)
+        private async Task Model(Model.Model model, string destinationFolder)
         {
             _stringBuilder.Clear();
             _stringBuilder.Append($@"
@@ -37,11 +38,11 @@ namespace Tests
 
 ");
             Directory.CreateDirectory($"{destinationFolder}/Model/");
-            File.WriteAllText($"{destinationFolder}/Model/{model.ClassName}.cs", _stringBuilder.ToString());
+            await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName}.cs", _stringBuilder.ToString());
             _stringBuilder.Clear();
         }
 
-        private void ModelInner(Model.ModelInner model, string destinationFolder)
+        private async Task ModelInner(Model.ModelInner model, string destinationFolder)
         {
             _stringBuilder.Clear();
             _stringBuilder.Append($@"
@@ -59,7 +60,7 @@ namespace Tests
 
 ");
             Directory.CreateDirectory($"{destinationFolder}/Model/");
-            File.WriteAllText($"{destinationFolder}/Model/{model.ClassName}.cs", _stringBuilder.ToString());
+            await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName}.cs", _stringBuilder.ToString());
             _stringBuilder.Clear();
         }
     }

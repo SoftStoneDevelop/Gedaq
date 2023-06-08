@@ -1,6 +1,6 @@
-﻿using Microsoft.CodeAnalysis;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using TestsGenegator.Comparers;
 using TestsGenegator.Enums;
 
@@ -10,21 +10,36 @@ namespace TestsGenegator.Generators
     {
         private List<Model.Model> _models = new List<Model.Model>();
 
-        public void Generate(Database database, string destinationFolder)
+        public async Task Generate(Database database, string destinationFolder)
         {
             AddModels(database);
 
-            {
-                var modelgenerator = new ModelGenerator();
-                modelgenerator.Generate(_models.Distinct(new ModelTypeComparer()).ToList(), destinationFolder);
-            }
+            var modelgenerator = new ModelGenerator();
+            var modelGeneratorTask = modelgenerator.Generate(_models.Distinct(new ModelTypeComparer()).ToList(), destinationFolder);
 
+            var generateTestOneTimeParts = GenerateTestOneTimeParts(database, destinationFolder);
+            var generateTestParts = GenerateTestParts(database, destinationFolder);
+
+            await modelGeneratorTask;
+            await generateTestOneTimeParts;
+            await generateTestParts;
+        }
+
+        private async Task GenerateTestOneTimeParts(Database database, string destinationFolder)
+        {
             var testOneTimePart = new TestOneTimePart();
+            foreach (var model in _models)
+            {
+                await testOneTimePart.Generate(model, database, destinationFolder);
+            }
+        }
+
+        private async Task GenerateTestParts(Database database, string destinationFolder)
+        {
             var tests = new TestsPart();
             foreach (var model in _models)
             {
-                testOneTimePart.Generate(model, database, destinationFolder);
-                tests.Generate(model, database, destinationFolder);
+                await tests.Generate(model, database, destinationFolder);
             }
         }
 
