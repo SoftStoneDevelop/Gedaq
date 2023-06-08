@@ -24,6 +24,6 @@
 		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\TestsGenegator\TestsGenegator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="True" />
+		<ProjectReference Include="..\TestsGenegator\TestsGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="True" />
 	</ItemGroup>
 </Project>
