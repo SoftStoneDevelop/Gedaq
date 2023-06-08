@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TestsGenegator.Enums;
+﻿using TestsGenegator.Enums;
 
 namespace TestsGenegator.Helpers
 {
@@ -15,6 +12,9 @@ namespace TestsGenegator.Helpers
                 {
                     return @"
 using Npgsql;
+using Gedaq.Common.Enums;
+using Gedaq.Npgsql.Attributes;
+using Gedaq.Npgsql.Enums;
 ";
                 }
                 case Database.MsSQL:

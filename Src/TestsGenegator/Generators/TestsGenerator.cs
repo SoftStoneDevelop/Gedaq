@@ -1,11 +1,8 @@
 ﻿using Microsoft.CodeAnalysis;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using TestsGenegator.Comparers;
 using TestsGenegator.Enums;
-using TestsGenegator.Model;
 
 namespace TestsGenegator.Generators
 {
@@ -23,9 +20,11 @@ namespace TestsGenegator.Generators
             }
 
             var testOneTimePart = new TestOneTimePart();
+            var tests = new TestsPart();
             foreach (var model in _models)
             {
                 testOneTimePart.Generate(model, database, context);
+                tests.Generate(model, database, context);
             }
         }
 

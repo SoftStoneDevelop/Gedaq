@@ -2,8 +2,14 @@
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
 		<IsPackable>false</IsPackable>
-		<IsTestProject>true</IsTestProject>
+		<IsTestProject>false</IsTestProject>
+		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+		<CompilerGeneratedFilesOutputPath>../PostgreSQLTests</CompilerGeneratedFilesOutputPath>
 	</PropertyGroup>
+	<ItemGroup>
+		<!-- Exclude the output of source generators from the compilation -->
+		<Compile Remove="$(CompilerGeneratedFilesOutputPath)/**/*.cs" />
+	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Gedaq.Npgsql" Version="1.2.3" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.2" />
@@ -18,7 +24,6 @@
 		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\Gedaq\Gedaq.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="True" />
 		<ProjectReference Include="..\TestsGenegator\TestsGenegator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="True" />
 	</ItemGroup>
 	<ItemGroup>
