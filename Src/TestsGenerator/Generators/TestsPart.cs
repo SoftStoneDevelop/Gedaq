@@ -1,4 +1,4 @@
-﻿using Microsoft.CodeAnalysis;
+﻿using System.IO;
 using System.Text;
 using TestsGenegator.Enums;
 using TestsGenegator.Helpers;
@@ -9,7 +9,7 @@ namespace TestsGenegator.Generators
     {
         private readonly StringBuilder _stringBuilder = new StringBuilder();
 
-        public void Generate(Model.Model model, Database database, SourceProductionContext context)
+        public void Generate(Model.Model model, Database database, string destinationFolder)
         {
             _stringBuilder.Clear();
             Start(model, database);
@@ -18,7 +18,8 @@ namespace TestsGenegator.Generators
 
             End();
 
-            context.AddSource($"{model.ClassName}TestsPart.g.cs", _stringBuilder.ToString());
+            Directory.CreateDirectory($"{destinationFolder}/TestsParts/");
+            File.WriteAllText($"{destinationFolder}/TestsParts/{model.ClassName}TestsPart.cs", _stringBuilder.ToString());
         }
 
         private void Start(Model.Model model, Database database)

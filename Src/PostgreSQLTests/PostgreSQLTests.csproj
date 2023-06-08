@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
 		<IsPackable>false</IsPackable>
@@ -25,4 +25,7 @@
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
+	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+		<Exec Command="powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -File &quot;$(ProjectDir)prebuild.ps1&quot; &quot;$(SolutionDir)Src\TestsGenerator\bin\$(ConfigurationName)\net7.0&quot; &quot;PostgreSQL&quot; &quot;$(SolutionDir)Src\PostgreSQLTests&quot;" />
+	</Target>
 </Project>

@@ -241,4 +241,6 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 *.msi
-/Src/PostgreSQLTests/TestsGenerator
+/Src/PostgreSQLTests/Model
+/Src/PostgreSQLTests/TestOneTimeParts
+/Src/PostgreSQLTests/TestsParts

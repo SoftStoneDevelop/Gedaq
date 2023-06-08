@@ -1,9 +1,6 @@
-﻿using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Reflection;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Text;
-using TestsGenegator.Model;
 
 namespace TestsGenegator.Generators
 {
@@ -11,16 +8,16 @@ namespace TestsGenegator.Generators
     {
         private readonly StringBuilder _stringBuilder = new StringBuilder();
 
-        public void Generate(List<Model.Model> models, SourceProductionContext context)
+        public void Generate(List<Model.Model> models, string destinationFolder)
         {
             foreach (var model in models)
             {
-                Model(model, context);
-                ModelInner(model.ModelInner, context);
+                Model(model, destinationFolder);
+                ModelInner(model.ModelInner, destinationFolder);
             }
         }
 
-        private void Model(Model.Model model, SourceProductionContext context)
+        private void Model(Model.Model model, string destinationFolder)
         {
             _stringBuilder.Clear();
             _stringBuilder.Append($@"
@@ -39,11 +36,12 @@ namespace Tests
 }}
 
 ");
-            context.AddSource($"{model.ClassName}.g.cs", _stringBuilder.ToString());
+            Directory.CreateDirectory($"{destinationFolder}/Model/");
+            File.WriteAllText($"{destinationFolder}/Model/{model.ClassName}.cs", _stringBuilder.ToString());
             _stringBuilder.Clear();
         }
 
-        private void ModelInner(Model.ModelInner model, SourceProductionContext context)
+        private void ModelInner(Model.ModelInner model, string destinationFolder)
         {
             _stringBuilder.Clear();
             _stringBuilder.Append($@"
@@ -60,7 +58,8 @@ namespace Tests
 }}
 
 ");
-            context.AddSource($"{model.ClassName}.g.cs", _stringBuilder.ToString());
+            Directory.CreateDirectory($"{destinationFolder}/Model/");
+            File.WriteAllText($"{destinationFolder}/Model/{model.ClassName}.cs", _stringBuilder.ToString());
             _stringBuilder.Clear();
         }
     }

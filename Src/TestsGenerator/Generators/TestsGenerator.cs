@@ -10,21 +10,21 @@ namespace TestsGenegator.Generators
     {
         private List<Model.Model> _models = new List<Model.Model>();
 
-        public void Generate(Database database, SourceProductionContext context)
+        public void Generate(Database database, string destinationFolder)
         {
             AddModels(database);
 
             {
                 var modelgenerator = new ModelGenerator();
-                modelgenerator.Generate(_models.Distinct(new ModelTypeComparer()).ToList(), context);
+                modelgenerator.Generate(_models.Distinct(new ModelTypeComparer()).ToList(), destinationFolder);
             }
 
             var testOneTimePart = new TestOneTimePart();
             var tests = new TestsPart();
             foreach (var model in _models)
             {
-                testOneTimePart.Generate(model, database, context);
-                tests.Generate(model, database, context);
+                testOneTimePart.Generate(model, database, destinationFolder);
+                tests.Generate(model, database, destinationFolder);
             }
         }
 
