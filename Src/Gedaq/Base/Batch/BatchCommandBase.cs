@@ -485,15 +485,31 @@ namespace Gedaq.Base.Batch
             }}
             else
             {{
-                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = DBNull.Value;
+                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {ProviderInfo.GetNullValue(parametr)};
             }}
 ");
                     }
                     else
                     {
-                        builder.Append($@"
+                        if (parametr.Type.IsReferenceType)
+                        {
+                            builder.Append($@"
+            if({parametr.VariableName()}Batch{batchCommand.number} == null)
+            {{
+                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {ProviderInfo.GetNullValue(parametr)};
+            }}
+            else
+            {{
+                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number};
+            }}
+");
+                        }
+                        else
+                        {
+                            builder.Append($@"
             {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number};
 ");
+                        }
                     }
                 }
             }

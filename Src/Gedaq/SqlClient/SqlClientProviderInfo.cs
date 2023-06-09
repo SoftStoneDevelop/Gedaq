@@ -48,6 +48,11 @@ namespace Gedaq.SqlClient
             return $"{source}.Parameters[{index}].Value";
         }
 
+        public override string GetNullValue(BaseParametr parametr)
+        {
+            return $"DBNull.Value";
+        }
+
         public override bool IsKnownProviderType(ITypeSymbol type)
         {
             return SqlClientMapTypeHelper.IsKnownProviderType(type);

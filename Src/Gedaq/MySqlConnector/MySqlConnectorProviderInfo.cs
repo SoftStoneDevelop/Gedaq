@@ -47,6 +47,11 @@ namespace Gedaq.MySqlConnector
             return $"{source}.Parameters[{index}].Value";
         }
 
+        public override string GetNullValue(BaseParametr parametr)
+        {
+            return $"DBNull.Value";
+        }
+
         public override bool IsKnownProviderType(ITypeSymbol type)
         {
             return MySqlConnectorMapTypeHelper.IsKnownProviderType(type);

@@ -396,15 +396,31 @@ namespace Gedaq.Base.Query
             }}
             else
             {{
-                {ProviderInfo.GetParametrValue(parametr, index, "command")} = DBNull.Value;
+                {ProviderInfo.GetParametrValue(parametr, index, "command")} = {ProviderInfo.GetNullValue(parametr)};
             }}
 ");
                     }
                     else
                     {
-                        builder.Append($@"
+                        if(parametr.Type.IsReferenceType)
+                        {
+                            builder.Append($@"
+            if({parametr.VariableName()} == null)
+            {{
+                {ProviderInfo.GetParametrValue(parametr, index, "command")} = {ProviderInfo.GetNullValue(parametr)};
+            }}
+            else
+            {{
+                {ProviderInfo.GetParametrValue(parametr, index, "command")} = {parametr.VariableName()};
+            }}
+");
+                        }
+                        else
+                        {
+                            builder.Append($@"
                 {ProviderInfo.GetParametrValue(parametr, index, "command")} = {parametr.VariableName()};
 ");
+                        }
                     }
                 }
             }

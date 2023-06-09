@@ -4,6 +4,7 @@ using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace Gedaq.Npgsql
@@ -51,6 +52,18 @@ namespace Gedaq.Npgsql
             else
             {
                 return $"((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>){source}.Parameters[{index}]).TypedValue";
+            }
+        }
+
+        public override string GetNullValue(BaseParametr parametr)
+        {
+            if (parametr.Type.IsNullableType())
+            {
+                return $"DBNull.Value";
+            }
+            else
+            {
+                return $"null";
             }
         }
 

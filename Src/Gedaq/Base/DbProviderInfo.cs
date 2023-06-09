@@ -25,6 +25,8 @@ namespace Gedaq.Base
 
         public abstract string GetParametrValue(BaseParametr parametr, int index, string source);
 
+        public abstract string GetNullValue(BaseParametr parametr);
+
         public abstract bool IsKnownProviderType(ITypeSymbol type);
 
         public abstract bool IsSpecialHandlerType(ITypeSymbol type);

@@ -1,5 +1,6 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsBatch;
 using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
@@ -382,9 +383,25 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace}
             }
             else
             {
-                _methodCode.Append($@"
+                if (propertyType.IsReferenceType)
+                {
+                    _methodCode.Append($@"
+                    {Tabs(tabs)}if(item.{propertyName} == null)
+                    {Tabs(tabs)}{{
+                    {Tabs(tabs)}    {await}import.WriteNull{async}{cancellation};
+                    {Tabs(tabs)}}}
+                    {Tabs(tabs)}else
+                    {Tabs(tabs)}{{
+                    {Tabs(tabs)}    {await}import.Write{async}(item.{propertyName}{dbType}{(isAsync ? $",cancellationToken" : "")});
+                    {Tabs(tabs)}}}
+");
+                }
+                else
+                {
+                    _methodCode.Append($@"
                     {Tabs(tabs)}{await}import.Write{async}(item.{propertyName}{dbType}{(isAsync ? $",cancellationToken" : "")});
 ");
+                }
             }
         }
 
