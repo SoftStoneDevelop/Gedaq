@@ -1,18 +1,28 @@
-﻿namespace TestsGenegator.Model
+﻿using TestsGenerator.TypeInfos;
+using TestsGenerator.TypeValueHelpers;
+
+namespace TestsGenerator.Model
 {
-    internal abstract class BaseModel
+    internal abstract class BaseModelType
     {
-        public BaseModel(string idDbType, TypeInfo typeInfo)
+        public BaseModelType(
+            TypeInfo idTypeInfo, 
+            TypeInfo typeInfo, 
+            ValueHelper valueStorage
+            )
         {
             TypeInfo = typeInfo;
-            IdDbType = idDbType;
+            IdTypeInfo = idTypeInfo;
+            ValueStorage = valueStorage;
         }
+
+        public ValueHelper ValueStorage { get; }
 
         public string IdName => "Id";
 
         public string IdType => "System.Int32";
 
-        public string IdDbType { get; }
+        public TypeInfo IdTypeInfo { get; }
 
         public string IdColumnName => IdName.ToLowerInvariant();
 
@@ -21,7 +31,6 @@
         public string ValueType => TypeInfo.TypeFullName;
 
         public string ValueColumnName => ValueName.ToLowerInvariant();
-
 
         public string NullableValueName => "NullableValue";
 

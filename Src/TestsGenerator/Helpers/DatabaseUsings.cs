@@ -1,6 +1,6 @@
-﻿using TestsGenegator.Enums;
+﻿using TestsGenerator.Enums;
 
-namespace TestsGenegator.Helpers
+namespace TestsGenerator.Helpers
 {
     internal static class DatabaseUsings
     {
@@ -12,6 +12,7 @@ namespace TestsGenegator.Helpers
                 {
                     return @"
 using Npgsql;
+using NpgsqlTypes;
 using Gedaq.Common.Enums;
 using Gedaq.Npgsql.Attributes;
 using Gedaq.Npgsql.Enums;

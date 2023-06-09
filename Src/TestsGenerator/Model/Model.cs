@@ -1,17 +1,19 @@
-﻿namespace TestsGenegator.Model
+﻿using System;
+using TestsGenerator.TypeInfos;
+using TestsGenerator.TypeValueHelpers;
+
+namespace TestsGenerator.Model
 {
-    internal class Model : BaseModel
+    internal class ModelType : BaseModelType
     {
-        public Model(
-            string dbType,
-            string typeName, 
-            string typeFullName,
-            string idDbType,
-            bool isReferenceType = false
+        public ModelType(
+            TypeInfo idTypeInfo,
+            TypeInfo typeInfo,
+            Func<ValueHelper> valueStorageFactory
             ) 
-            : base(idDbType, new TypeInfo(dbType, typeName, typeFullName, isReferenceType))
+            : base(idTypeInfo, typeInfo, valueStorageFactory())
         {
-            ModelInner = new ModelInner(dbType, typeName, typeFullName, idDbType, isReferenceType);
+            ModelInner = new ModelInnerType(idTypeInfo, typeInfo, valueStorageFactory());
         }
 
         public override string ClassName => TypeInfo.TypeName + "Model";
@@ -22,6 +24,11 @@
 
         public string ModelInnerType => ModelInner.ClassName;
 
-        public readonly ModelInner ModelInner;
+        public readonly ModelInnerType ModelInner;
+
+        public ModelValueStorage NewStorage()
+        {
+            return new ModelValueStorage(ValueStorage);
+        }
     }
 }

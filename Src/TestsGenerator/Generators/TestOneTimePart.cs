@@ -1,16 +1,16 @@
 ﻿using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using TestsGenegator.Enums;
-using TestsGenegator.Helpers;
+using TestsGenerator.Enums;
+using TestsGenerator.Helpers;
 
-namespace TestsGenegator.Generators
+namespace TestsGenerator.Generators
 {
     internal class TestOneTimePart
     {
         private readonly StringBuilder _stringBuilder = new StringBuilder();
 
-        public async Task Generate(Model.Model model, Database database, string destinationFolder)
+        public async Task Generate(Model.ModelType model, Database database, string destinationFolder)
         {
             _stringBuilder.Clear();
             Start(model, database);
@@ -30,7 +30,7 @@ namespace TestsGenegator.Generators
             await File.WriteAllTextAsync($"{destinationFolder}/TestOneTimeParts/{model.ClassName}TestOneTimePart.cs", _stringBuilder.ToString());
         }
 
-        private void Start(Model.Model model, Database database)
+        private void Start(Model.ModelType model, Database database)
         {
             _stringBuilder.AppendLine($@"
 {database.ToUsings()}
@@ -56,7 +56,7 @@ namespace Tests
 ");
         }
 
-        private void CreateModelInnerTable(Model.Model model, Database database)
+        private void CreateModelInnerTable(Model.ModelType model, Database database)
         {
             switch (database)
             {
@@ -68,9 +68,9 @@ namespace Tests
             cmd.CommandText = @""
 CREATE TABLE public.{model.ModelInner.TableName}
 (
-    {model.ModelInner.IdColumnName} {model.ModelInner.IdDbType} NOT NULL,
-    {model.ModelInner.ValueColumnName} {model.ModelInner.TypeInfo.DbType} NOT NULL,
-    {model.ModelInner.NullableValueColumnName} {model.ModelInner.TypeInfo.DbType},
+    {model.ModelInner.IdColumnName} {model.ModelInner.IdTypeInfo.DbSqlType} NOT NULL,
+    {model.ModelInner.ValueColumnName} {model.ModelInner.TypeInfo.DbSqlType} NOT NULL,
+    {model.ModelInner.NullableValueColumnName} {model.ModelInner.TypeInfo.DbSqlType},
     CONSTRAINT {model.ModelInner.TableName}_pkey PRIMARY KEY (id)
 );
 "";
@@ -90,7 +90,7 @@ CREATE TABLE public.{model.ModelInner.TableName}
             }
         }
 
-        private void DropModelInnerTable(Model.Model model, Database database)
+        private void DropModelInnerTable(Model.ModelType model, Database database)
         {
             switch (database)
             {
@@ -118,7 +118,7 @@ DROP TABLE public.{model.ModelInner.TableName};
             }
         }
 
-        private void CreateModelTable(Model.Model model, Database database)
+        private void CreateModelTable(Model.ModelType model, Database database)
         {
             switch (database)
             {
@@ -130,10 +130,10 @@ DROP TABLE public.{model.ModelInner.TableName};
             cmd.CommandText = @""
 CREATE TABLE public.{model.TableName}
 (
-    {model.IdColumnName} {model.IdDbType} NOT NULL,
-    {model.ValueColumnName} {model.TypeInfo.DbType} NOT NULL,
-    {model.NullableValueColumnName} {model.TypeInfo.DbType},
-    {model.ModelInner.TableName}_id {model.ModelInner.IdDbType},
+    {model.IdColumnName} {model.IdTypeInfo.DbSqlType} NOT NULL,
+    {model.ValueColumnName} {model.TypeInfo.DbSqlType} NOT NULL,
+    {model.NullableValueColumnName} {model.TypeInfo.DbSqlType},
+    {model.ModelInner.TableName}_id {model.ModelInner.IdTypeInfo.DbSqlType},
     CONSTRAINT {model.TableName}_pkey PRIMARY KEY (id),
     CONSTRAINT {model.TableName}_{model.ModelInner.TableName}_fk FOREIGN KEY ({model.ModelInner.TableName}_id)
         REFERENCES public.{model.ModelInner.TableName} ({model.ModelInner.IdColumnName}) MATCH SIMPLE
@@ -157,7 +157,7 @@ CREATE TABLE public.{model.TableName}
             }
         }
 
-        private void DropModelTable(Model.Model model, Database database)
+        private void DropModelTable(Model.ModelType model, Database database)
         {
             switch (database)
             {
@@ -185,7 +185,7 @@ DROP TABLE public.{model.TableName};
             }
         }
 
-        private void OneTimeSetUp(Model.Model model, Database database)
+        private void OneTimeSetUp(Model.ModelType model, Database database)
         {
             _stringBuilder.AppendLine($@"
         [OneTimeSetUp]
@@ -202,7 +202,7 @@ DROP TABLE public.{model.TableName};
 ");
         }
 
-        private void OneTimeTearDown(Model.Model model, Database database)
+        private void OneTimeTearDown(Model.ModelType model, Database database)
         {
             _stringBuilder.AppendLine($@"
         [OneTimeTearDown]

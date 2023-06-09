@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace TestsGenegator.Comparers
+namespace TestsGenerator.Comparers
 {
-    internal class ModelTypeComparer : IEqualityComparer<Model.Model>
+    internal class ModelTypeComparer : IEqualityComparer<Model.ModelType>
     {
-        public bool Equals(Model.Model x, Model.Model y)
+        public bool Equals(Model.ModelType x, Model.ModelType y)
         {
             return x.TypeInfo.TypeFullName == y.TypeInfo.TypeFullName;
         }
 
-        public int GetHashCode(Model.Model obj)
+        public int GetHashCode(Model.ModelType obj)
         {
             return 0;
         }

@@ -25,7 +25,6 @@ namespace Gedaq.Base.Model
         public bool HavePrecision => Precision != 0;
 
         public bool Nullable;
-        public bool HaveNullable => Nullable;
 
         public ParameterDirection Direction;
         public bool HaveDirection => Direction != ParameterDirection.Input;
@@ -167,7 +166,7 @@ namespace Gedaq.Base.Model
                 return false;
             }
 
-            parametr.Nullable = (bool)argument.Value;
+            parametr.SourceColumnNullMapping = (bool)argument.Value;
             return true;
         }
 

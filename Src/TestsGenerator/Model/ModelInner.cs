@@ -1,15 +1,16 @@
-﻿namespace TestsGenegator.Model
+﻿using TestsGenerator.TypeInfos;
+using TestsGenerator.TypeValueHelpers;
+
+namespace TestsGenerator.Model
 {
-    internal class ModelInner : BaseModel
+    internal class ModelInnerType : BaseModelType
     {
-        public ModelInner(
-            string dbType,
-            string typeName, 
-            string typeFullName,
-            string idDbType,
-            bool isReferenceType
+        public ModelInnerType(
+            TypeInfo idTypeInfo,
+            TypeInfo typeInfo,
+            ValueHelper valueStorage
             )
-            : base(idDbType, new TypeInfo(dbType, typeName, typeFullName, isReferenceType))
+            : base(idTypeInfo, typeInfo, valueStorage)
         {
         }
 

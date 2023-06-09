@@ -1,13 +1,12 @@
 ﻿using System.Threading.Tasks;
-using TestsGenegator.Generators;
 
-namespace TestsGenegator
+namespace TestsGenerator
 {
     internal class Program
     {
         static async Task Main(string[] args)
         {
-            var generator = new TestsGenerator();
+            var generator = new Generators.TestsGenerator();
             switch (args[0])
             {
                 case "PostgreSQL":

@@ -1,4 +1,4 @@
-﻿namespace TestsGenegator.Enums
+﻿namespace TestsGenerator.Enums
 {
     public enum Database
     {

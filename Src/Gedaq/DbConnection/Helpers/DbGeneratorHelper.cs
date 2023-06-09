@@ -46,12 +46,10 @@ namespace Gedaq.DbConnection.Helpers
 ");
             }
 
-            if (parametr.HaveNullable)
+            if (parametr.Nullable)
             {
                 builder.Append($@"
-                parametr
-                {index}.IsNullable = true;
-
+                parametr{index}.IsNullable = true;
                 ");
             }
 

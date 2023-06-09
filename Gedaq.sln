@@ -14,6 +14,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestsGenerator", "Src\TestsGenerator\TestsGenerator.csproj", "{8DE53B85-FC23-4C3F-BAFF-1BEF677E4716}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostgreSQLTests", "Src\PostgreSQLTests\PostgreSQLTests.csproj", "{06496CA2-6CB4-43F7-AC07-A81F14EACC98}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8DE53B85-FC23-4C3F-BAFF-1BEF677E4716} = {8DE53B85-FC23-4C3F-BAFF-1BEF677E4716}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

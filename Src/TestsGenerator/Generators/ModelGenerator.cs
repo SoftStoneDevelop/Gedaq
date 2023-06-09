@@ -3,13 +3,13 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestsGenegator.Generators
+namespace TestsGenerator.Generators
 {
     internal class ModelGenerator
     {
         private readonly StringBuilder _stringBuilder = new StringBuilder();
 
-        public async Task Generate(List<Model.Model> models, string destinationFolder)
+        public async Task Generate(List<Model.ModelType> models, string destinationFolder)
         {
             foreach (var model in models)
             {
@@ -18,7 +18,7 @@ namespace TestsGenegator.Generators
             }
         }
 
-        private async Task Model(Model.Model model, string destinationFolder)
+        private async Task Model(Model.ModelType model, string destinationFolder)
         {
             _stringBuilder.Clear();
             _stringBuilder.Append($@"
@@ -42,7 +42,7 @@ namespace Tests
             _stringBuilder.Clear();
         }
 
-        private async Task ModelInner(Model.ModelInner model, string destinationFolder)
+        private async Task ModelInner(Model.ModelInnerType model, string destinationFolder)
         {
             _stringBuilder.Clear();
             _stringBuilder.Append($@"

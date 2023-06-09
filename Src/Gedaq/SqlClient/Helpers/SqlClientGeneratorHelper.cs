@@ -37,7 +37,7 @@ namespace Gedaq.SqlClient.Helpers
 ");
             }
 
-            if (parametr.HaveNullable)
+            if (parametr.Nullable)
             {
                 builder.Append($@"
                 parametr

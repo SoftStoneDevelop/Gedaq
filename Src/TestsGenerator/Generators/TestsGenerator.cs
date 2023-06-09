@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TestsGenegator.Comparers;
-using TestsGenegator.Enums;
+using TestsGenerator.Comparers;
+using TestsGenerator.Enums;
+using TestsGenerator.TypeValueHelpers;
 
-namespace TestsGenegator.Generators
+namespace TestsGenerator.Generators
 {
-    internal class TestsGenerator
+    public class TestsGenerator
     {
-        private List<Model.Model> _models = new List<Model.Model>();
+        private List<Model.ModelType> _models = new List<Model.ModelType>();
 
         public async Task Generate(Database database, string destinationFolder)
         {
@@ -65,48 +66,44 @@ namespace TestsGenegator.Generators
 
         private void AddPostgreSQLTypes()
         {
-            _models.Add(new Model.NpgsqlModel("integer", "Int32", "System.Int32"));
-            _models.Add(new Model.NpgsqlModel("integer", "UInt32", "System.UInt32"));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Integer, "Int32", "System.Int32", () => new Int32ValueHelper()));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Bigint, "Int64", "System.Int64", () => new Int64ValueHelper()));
 
-            _models.Add(new Model.NpgsqlModel("bigint", "Int64", "System.Int64"));
-            _models.Add(new Model.NpgsqlModel("bigint", "UInt64", "System.UInt64"));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Smallint, "Byte", "System.Byte", () => new ByteValueHelper()));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Smallint, "SByte", "System.SByte", () => new SByteValueHelper()));
 
-            _models.Add(new Model.NpgsqlModel("smallint", "Byte", "System.Byte"));
-            _models.Add(new Model.NpgsqlModel("smallint", "SByte", "System.SByte"));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Smallint, "Int16", "System.Int16", () => new Int16ValueHelper()));
 
-            _models.Add(new Model.NpgsqlModel("smallint", "Int16", "System.Int16"));
-            _models.Add(new Model.NpgsqlModel("smallint", "UInt16", "System.UInt16"));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Char, "Char", "System.Char", () => new CharValueHelper()));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Numeric, "Decimal", "System.Decimal", () => new DecimalValueHelper()));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Double, "Double", "System.Double", () => new DoubleValueHelper()));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Boolean, "Boolean", "System.Boolean", () => new BooleanValueHelper()));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Real, "Single", "System.Single", () => new SingleValueHelper()));
 
-            _models.Add(new Model.NpgsqlModel("char", "Char", "System.Char"));
-            _models.Add(new Model.NpgsqlModel("numeric", "Decimal", "System.Decimal"));
-            _models.Add(new Model.NpgsqlModel("double precision", "Double", "System.Double"));
-            _models.Add(new Model.NpgsqlModel("boolean", "Boolean", "System.Boolean"));
-            _models.Add(new Model.NpgsqlModel("real", "Single", "System.Single"));
+            //_models.Add(new Model.NpgsqlModel("time without time zone", "TimeSpan", "System.TimeSpan", () => new TimeSpanStorage()));
+            //_models.Add(new Model.NpgsqlModel("time without time zone", "TimeOnly", "System.TimeOnly", () => new TimeOnlyStorage()));
 
-            _models.Add(new Model.NpgsqlModel("time without time zone", "TimeSpan", "System.TimeSpan"));
-            _models.Add(new Model.NpgsqlModel("time without time zone", "TimeOnly", "System.TimeOnly"));
+            //_models.Add(new Model.NpgsqlModel("date", "DateTime", "System.DateTime", () => new DateTimeStorage()));
+            //_models.Add(new Model.NpgsqlModel("date", "DateOnly", "System.DateOnly", () => new DateOnlyStorage()));
 
-            _models.Add(new Model.NpgsqlModel("date", "DateTime", "System.DateTime"));
-            _models.Add(new Model.NpgsqlModel("date", "DateOnly", "System.DateOnly"));
+            //_models.Add(new Model.NpgsqlModel("time with time zone", "DateTimeOffset", "System.DateTimeOffset"));
 
-            _models.Add(new Model.NpgsqlModel("time with time zone", "DateTimeOffset", "System.DateTimeOffset"));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Text, "String", "System.String", () => new StringValueHelper(), size: 400, mustHaveSize: true, isReferenceType: true));
 
-            _models.Add(new Model.NpgsqlModel("text", "String", "System.String", true));
-
-            _models.Add(new Model.NpgsqlModel("inet", "IPAddress", "System.Net.IPAddress", true));
-            _models.Add(new Model.NpgsqlModel("macaddr", "PhysicalAddress", "System.Net.NetworkInformation.PhysicalAddress", true));
-            _models.Add(new Model.NpgsqlModel("uuid", "Guid", "System.Guid"));
-            _models.Add(new Model.NpgsqlModel("numeric", "BigInteger", "System.Numerics.BigInteger"));
-            _models.Add(new Model.NpgsqlModel("bit varying", "BitArray", "System.Collections.BitArray", true));
-            _models.Add(new Model.NpgsqlModel("tsquery", "NpgsqlTsQuery", "NpgsqlTypes.NpgsqlTsQuery", true));
-            _models.Add(new Model.NpgsqlModel("tsvector", "NpgsqlTsVector", "NpgsqlTypes.NpgsqlTsVector", true));
-            _models.Add(new Model.NpgsqlModel("point", "NpgsqlPoint", "NpgsqlTypes.NpgsqlPoint"));
-            _models.Add(new Model.NpgsqlModel("lseg", "NpgsqlLSeg", "NpgsqlTypes.NpgsqlLSeg"));
-            _models.Add(new Model.NpgsqlModel("path", "NpgsqlPath", "NpgsqlTypes.NpgsqlPath"));
-            _models.Add(new Model.NpgsqlModel("polygon", "NpgsqlPolygon", "NpgsqlTypes.NpgsqlPolygon"));
-            _models.Add(new Model.NpgsqlModel("line", "NpgsqlLine", "NpgsqlTypes.NpgsqlLine"));
-            _models.Add(new Model.NpgsqlModel("circle", "NpgsqlCircle", "NpgsqlTypes.NpgsqlCircle"));
-            _models.Add(new Model.NpgsqlModel("box", "NpgsqlBox", "NpgsqlTypes.NpgsqlBox"));
+            //_models.Add(new Model.NpgsqlModel("inet", "IPAddress", "System.Net.IPAddress", true));
+            //_models.Add(new Model.NpgsqlModel("macaddr", "PhysicalAddress", "System.Net.NetworkInformation.PhysicalAddress", true));
+            //_models.Add(new Model.NpgsqlModel("uuid", "Guid", "System.Guid"));
+            //_models.Add(new Model.NpgsqlModel("numeric", "BigInteger", "System.Numerics.BigInteger"));
+            //_models.Add(new Model.NpgsqlModel("bit varying", "BitArray", "System.Collections.BitArray", true));
+            //_models.Add(new Model.NpgsqlModel("tsquery", "NpgsqlTsQuery", "NpgsqlTypes.NpgsqlTsQuery", true));
+            //_models.Add(new Model.NpgsqlModel("tsvector", "NpgsqlTsVector", "NpgsqlTypes.NpgsqlTsVector", true));
+            //_models.Add(new Model.NpgsqlModel("point", "NpgsqlPoint", "NpgsqlTypes.NpgsqlPoint"));
+            //_models.Add(new Model.NpgsqlModel("lseg", "NpgsqlLSeg", "NpgsqlTypes.NpgsqlLSeg"));
+            //_models.Add(new Model.NpgsqlModel("path", "NpgsqlPath", "NpgsqlTypes.NpgsqlPath"));
+            //_models.Add(new Model.NpgsqlModel("polygon", "NpgsqlPolygon", "NpgsqlTypes.NpgsqlPolygon"));
+            //_models.Add(new Model.NpgsqlModel("line", "NpgsqlLine", "NpgsqlTypes.NpgsqlLine"));
+            //_models.Add(new Model.NpgsqlModel("circle", "NpgsqlCircle", "NpgsqlTypes.NpgsqlCircle"));
+            //_models.Add(new Model.NpgsqlModel("box", "NpgsqlBox", "NpgsqlTypes.NpgsqlBox"));
         }
     }
 }
