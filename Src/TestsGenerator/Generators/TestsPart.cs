@@ -18,11 +18,11 @@ namespace TestsGenerator.Generators
 
             Start(model, database);
 
-            StartRegion("InsertModel");
+            StartRegion("InsertModelInner");
             InsertModelInnerTest.Generate(0, _stringBuilder, model, storage, database);
             EndRegion();
 
-            StartRegion("InsertModelInner");
+            StartRegion("InsertModel");
             InsertModelTest.Generate(1, _stringBuilder, model, storage, database);
             EndRegion();
 

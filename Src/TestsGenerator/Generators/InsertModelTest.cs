@@ -21,7 +21,7 @@ namespace TestsGenerator.Generators
             {
                 case Database.PostgreSQL:
                 {
-                    PostgreSQL.InsertModelTest.Generate(order, stringBuilder, model, storage, ref i);
+                    PostgreSQL.InsertModel.Generate(order, stringBuilder, model, storage, ref i);
                     break;
                 }
                 case Database.MsSQL:
@@ -34,7 +34,7 @@ namespace TestsGenerator.Generators
                 }
             }
 
-            DbConnectionInsertModelConfig(order, stringBuilder, model);
+            DbConnectionInsertModelConfig(stringBuilder, model);
             DbConnectionInsertModelTest(order, stringBuilder, storage, ref i, i + 2, isAsync: false);
 
             if(i + 2 >= storage.Values.Count)
@@ -45,7 +45,6 @@ namespace TestsGenerator.Generators
         }
 
         private static void DbConnectionInsertModelConfig(
-            int order,
             StringBuilder stringBuilder,
             Model.ModelType model
             )
@@ -90,7 +89,6 @@ VALUES (
                 nullable: true
             )
             ]
-        [Test, Order({order})]
         public void DbConnection{_testName}Config()
         {{
         }}

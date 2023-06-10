@@ -6,6 +6,8 @@ namespace TestsGenerator.Generators
 {
     internal static class InsertModelInnerTest
     {
+        private static string _testName = "InsertInnerModel";
+
         public static void Generate(
             int order,
             StringBuilder stringBuilder,
@@ -14,88 +16,12 @@ namespace TestsGenerator.Generators
             Database database
             )
         {
-            if (storage.Values.Count < 28)
-            {
-                throw new System.Exception("storage less 28");
-            }
-            var testName = "InsertInnerModelTest";
             int i = 0;
             switch (database)
             {
                 case Database.PostgreSQL:
                 {
-                    stringBuilder.AppendLine($@"
-[Gedaq.Npgsql.Attributes.Query(
-            query: @""
-INSERT INTO public.{model.ModelInner.TableName}(
-	{model.ModelInner.IdColumnName},
-    {model.ModelInner.ValueColumnName},
-    {model.ModelInner.NullableValueColumnName}
-)
-VALUES (
-    $1, 
-    $2, 
-    $3
-);
-"",
-            methodName:""InsertModelInner"",
-            queryMapType: null,
-            methodType: MethodType.Async | MethodType.Sync,
-            sourceType: SourceType.Connection,
-            queryType: QueryType.NonQuery,
-            generate: true,
-            accessModifier: AccessModifier.Private
-            ), 
-            Gedaq.Npgsql.Attributes.Parametr(parametrType: typeof({model.ModelInner.IdType}), position: 1, methodParametrName: ""{model.ModelInner.IdColumnName}"", dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()}),
-            Gedaq.Npgsql.Attributes.Parametr(parametrType: typeof({model.ModelInner.ValueType}), position: 2, methodParametrName: ""{model.ModelInner.ValueColumnName}"", dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()}),
-            Gedaq.Npgsql.Attributes.Parametr(parametrType: typeof({model.ModelInner.NullableValueType}), position: 3, methodParametrName: ""{model.ModelInner.NullableValueColumnName}"", dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()})
-            ]
-        [Test, Order({order})]
-        public async Task {testName}()
-        {{
-            await using (var connection = GlobalSetUp.GetConnection)
-            {{
-                await connection.OpenAsync();
-");
-                    for (; i < 5; i++)
-                    {
-                        ModelValue value = storage.Values[i];
-                        if (value.InnerModel == null)
-                        {
-                            continue;
-                        }
-
-                        stringBuilder.AppendLine($@"
-                InsertModelInner(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
-");
-                    }
-                    stringBuilder.AppendLine($@"
-            }}
-        }}
-
-        [Test, Order({order})]
-        public async Task {testName}Async()
-        {{
-            await using (var connection = GlobalSetUp.GetConnection)
-            {{
-                await connection.OpenAsync();
-");
-                    for (; i < 10; i++)
-                    {
-                        ModelValue value = storage.Values[i];
-                        if (value.InnerModel == null)
-                        {
-                            continue;
-                        }
-
-                        stringBuilder.AppendLine($@"
-                await InsertModelInnerAsync(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
-");
-                    }
-                    stringBuilder.AppendLine($@"
-            }}
-        }}
-");
+                    PostgreSQL.InsertModelInner.Generate(order, stringBuilder, model, storage, ref i);
                     break;
                 }
                 case Database.MsSQL:
@@ -108,7 +34,22 @@ VALUES (
                 }
             }
 
-            stringBuilder.AppendLine($@"
+            DbConnectionInsertModelInnerConfig(stringBuilder, model);
+            DbConnectionInsertModelInnerTest(order, stringBuilder, storage, ref i, i + 2, isAsync: false);
+
+            if (i + 2 >= storage.Values.Count)
+            {
+                throw new System.ArgumentOutOfRangeException(nameof(i));
+            }
+            DbConnectionInsertModelInnerTest(order, stringBuilder, storage, ref i, storage.Values.Count, isAsync: true);
+        }
+
+        private static void DbConnectionInsertModelInnerConfig(
+            StringBuilder stringBuilder,
+            Model.ModelType model
+            )
+        {
+            stringBuilder.Append($@"
 [Gedaq.DbConnection.Attributes.Query(
             query: @""
 INSERT INTO public.{model.ModelInner.TableName}(
@@ -122,60 +63,78 @@ VALUES (
     @{model.ModelInner.NullableValueColumnName}
 );
 "",
-            methodName:""DbConnectionInsertModelInner"",
+            methodName:""DbConnection{_testName}"",
             queryMapType: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.NonQuery,
             generate: true,
             accessModifier: AccessModifier.Private
             ), 
-            Gedaq.DbConnection.Attributes.Parametr(parametrType: typeof({model.ModelInner.IdType}), parametrName: ""{model.ModelInner.IdColumnName}"", methodParametrName: ""{model.ModelInner.IdColumnName}"", dbType: {model.ModelInner.IdTypeInfo.DbTypeStr()}),
-            Gedaq.DbConnection.Attributes.Parametr(parametrType: typeof({model.ModelInner.ValueType}), parametrName: ""{model.ModelInner.ValueColumnName}"", methodParametrName: ""{model.ModelInner.ValueColumnName}"", dbType: {model.ModelInner.TypeInfo.DbTypeStr()}),
-            Gedaq.DbConnection.Attributes.Parametr(parametrType: typeof({model.ModelInner.NullableValueType}), parametrName: ""{model.ModelInner.NullableValueColumnName}"", methodParametrName: ""{model.ModelInner.NullableValueColumnName}"", dbType: {model.ModelInner.TypeInfo.DbTypeStr()}, nullable: true)
+            Gedaq.DbConnection.Attributes.Parametr(
+                parametrType: typeof({model.ModelInner.IdType}), 
+                parametrName: ""{model.ModelInner.IdColumnName}"", 
+                methodParametrName: ""{model.ModelInner.IdColumnName}"", 
+                dbType: {model.ModelInner.IdTypeInfo.DbTypeStr()}
+                ),
+            Gedaq.DbConnection.Attributes.Parametr(
+                parametrType: typeof({model.ModelInner.ValueType}), 
+                parametrName: ""{model.ModelInner.ValueColumnName}"", 
+                methodParametrName: ""{model.ModelInner.ValueColumnName}"", 
+                dbType: {model.ModelInner.TypeInfo.DbTypeStr()}
+                ),
+            Gedaq.DbConnection.Attributes.Parametr(
+                parametrType: typeof({model.ModelInner.NullableValueType}), 
+                parametrName: ""{model.ModelInner.NullableValueColumnName}"", 
+                methodParametrName: ""{model.ModelInner.NullableValueColumnName}"", 
+                dbType: {model.ModelInner.TypeInfo.DbTypeStr()}, 
+                nullable: true
+                )
             ]
-        [Test, Order({order})]
-        public async Task DbConnection{testName}()
+        public void DbConnection{_testName}Config()
         {{
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {{
-                await connection.OpenAsync();
-");
-            for (; i < storage.Values.Count - 5; i++)
-            {
-                ModelValue value = storage.Values[i];
-                if (value.InnerModel == null)
-                {
-                    continue;
-                }
-
-                stringBuilder.AppendLine($@"
-                DbConnectionInsertModelInner(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
-");
-            }
-            stringBuilder.AppendLine($@"
-            }}
         }}
+");
+        }
 
+        private static void DbConnectionInsertModelInnerTest(
+            int order,
+            StringBuilder stringBuilder,
+            ModelValueStorage storage,
+            ref int indexValue,
+            int endIndex,
+            bool isAsync
+            )
+        {
+            if (endIndex > storage.Values.Count)
+            {
+                throw new System.ArgumentOutOfRangeException(nameof(endIndex));
+            }
+
+            var await = isAsync ? "await" : string.Empty;
+            var async = isAsync ? "Async" : string.Empty;
+            stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task DbConnection{testName}Async()
+        public async Task DbConnection{_testName}Test{async}()
         {{
             await using (var connection = GlobalSetUp.GetDbConnection)
             {{
                 await connection.OpenAsync();
+                int changedRows = 0;
 ");
-            for (; i < storage.Values.Count; i++)
+            for (; indexValue < endIndex; indexValue++)
             {
-                ModelValue value = storage.Values[i];
+                ModelValue value = storage.Values[indexValue];
                 if (value.InnerModel == null)
                 {
                     continue;
                 }
 
-                stringBuilder.AppendLine($@"
-                await DbConnectionInsertModelInnerAsync(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
+                stringBuilder.Append($@"
+                changedRows = {await} DbConnection{_testName}{async}(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
+                Assert.That(changedRows, Is.EqualTo(1));
 ");
             }
-            stringBuilder.AppendLine($@"
+            stringBuilder.Append($@"
             }}
         }}
 ");

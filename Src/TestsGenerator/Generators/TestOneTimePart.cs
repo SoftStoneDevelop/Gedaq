@@ -21,8 +21,8 @@ namespace TestsGenerator.Generators
             CreateModelTable(model, database);
             DropModelTable(model, database);
 
-            OneTimeSetUp(model, database);
-            OneTimeTearDown(model, database);
+            OneTimeSetUp();
+            OneTimeTearDown();
 
             End();
 
@@ -185,7 +185,7 @@ DROP TABLE public.{model.TableName};
             }
         }
 
-        private void OneTimeSetUp(Model.ModelType model, Database database)
+        private void OneTimeSetUp()
         {
             _stringBuilder.AppendLine($@"
         [OneTimeSetUp]
@@ -202,7 +202,7 @@ DROP TABLE public.{model.TableName};
 ");
         }
 
-        private void OneTimeTearDown(Model.ModelType model, Database database)
+        private void OneTimeTearDown()
         {
             _stringBuilder.AppendLine($@"
         [OneTimeTearDown]

@@ -3,7 +3,7 @@ using TestsGenerator.Model;
 
 namespace TestsGenerator.Generators.PostgreSQL
 {
-    internal static class InsertModelTest
+    internal static class InsertModel
     {
         private static string _testName = "InsertModel";
 
@@ -16,12 +16,12 @@ namespace TestsGenerator.Generators.PostgreSQL
             )
         {
             InsertModelConfig(stringBuilder, model);
-            InsertModelTests(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: false);
-            InsertModelTests(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: true);
+            InsertModelTest(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: false);
+            InsertModelTest(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: true);
 
             InsertModelReturningReadConfig(stringBuilder, model);
-            InsertModelReturningReadTests(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: false);
-            InsertModelReturningReadTests(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: true);
+            InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: false);
+            InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: true);
         }
 
         private static void InsertModelConfig(
@@ -84,7 +84,7 @@ VALUES (
 ");
         }
 
-        private static void InsertModelTests(
+        private static void InsertModelTest(
             int order,
             StringBuilder stringBuilder,
             ModelValueStorage storage,
@@ -192,7 +192,7 @@ RETURNING
 ");
         }
 
-        private static void InsertModelReturningReadTests(
+        private static void InsertModelReturningReadTest(
             int order,
             StringBuilder stringBuilder,
             ModelValueStorage storage,
