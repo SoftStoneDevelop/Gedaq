@@ -35,7 +35,7 @@ namespace TestsGenerator.Model
             return new ModelValueStorage(ValueStorage);
         }
 
-        public string Assert(ModelValue expectValue)
+        public string Assert(ModelValue expectValue, bool innerHaveOnlyId = false)
         {
             var builder = new StringBuilder();
             builder.Append($@"
@@ -68,20 +68,32 @@ namespace TestsGenerator.Model
                 builder.Append($@"
                 Assert.That(model.ModelInner, Is.Not.Null);
                 Assert.That(model.ModelInner.Id, Is.EqualTo({expectValue.InnerModel.Id}));
-                Assert.That(model.ModelInner.Value, Is.EqualTo({expectValue.InnerModel.Value}));
 ");
-                if (expectValue.InnerModel.NullableValue == ValueConstants.NullValue)
+                if(innerHaveOnlyId)
                 {
                     builder.Append($@"
+                Assert.That(model.ModelInner.Value, Is.EqualTo(({ModelInner.ValueType})default));
                 Assert.That(model.ModelInner.NullableValue, Is.Null);
 ");
                 }
                 else
                 {
                     builder.Append($@"
+                Assert.That(model.ModelInner.Value, Is.EqualTo({expectValue.InnerModel.Value}));
+");
+                    if (expectValue.InnerModel.NullableValue == ValueConstants.NullValue)
+                    {
+                        builder.Append($@"
+                Assert.That(model.ModelInner.NullableValue, Is.Null);
+");
+                    }
+                    else
+                    {
+                        builder.Append($@"
                 Assert.That(model.ModelInner.NullableValue, Is.Not.Null);
                 Assert.That(model.ModelInner.NullableValue, Is.EqualTo({expectValue.InnerModel.NullableValue}));
 ");
+                    }
                 }
             }
             return builder.ToString();

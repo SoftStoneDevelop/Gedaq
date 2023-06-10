@@ -14,7 +14,7 @@ namespace TestsGenerator.Generators
         public async Task Generate(Model.ModelType model, Database database, string destinationFolder)
         {
             _stringBuilder.Clear();
-            var storage = InitStorage(model, 28);
+            var storage = InitStorage(model, 30);
 
             Start(model, database);
 
