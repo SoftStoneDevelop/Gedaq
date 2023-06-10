@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Model;
 
@@ -14,20 +15,24 @@ namespace TestsGenerator.Generators
             Database database
             )
         {
+            if (storage.Values.Count < 28)
+            {
+                throw new System.Exception("storage less 28");
+            }
+
             var testName = "InsertModelTest";
             int i = 0;
             switch (database)
             {
                 case Database.PostgreSQL:
                 {
-                    stringBuilder.AppendLine($@"
-[Gedaq.Npgsql.Attributes.Query(
-            query: @""
+                    var postgreQuery = $@"
+@""
 INSERT INTO public.{model.TableName}(
 	{model.IdColumnName},
     {model.ValueColumnName},
     {model.NullableValueColumnName},
-    {model.ModelInner.TableName}_id
+    {model.ModelInnerColumnName}
 )
 VALUES (
     $1, 
@@ -35,7 +40,11 @@ VALUES (
     $3,
     $4
 );
-"",
+""
+";
+                    stringBuilder.AppendLine($@"
+[Gedaq.Npgsql.Attributes.Query(
+            query: {postgreQuery},
             methodName:""InsertModel"",
             queryMapType: null,
             methodType: MethodType.Async | MethodType.Sync,
@@ -47,7 +56,7 @@ VALUES (
             Gedaq.Npgsql.Attributes.Parametr(parametrType: typeof({model.ModelInner.IdType}), position: 1, methodParametrName: ""{model.ModelInner.IdColumnName}"", dbType: {model.IdTypeInfo.SpecialDbTypeStr()}),
             Gedaq.Npgsql.Attributes.Parametr(parametrType: typeof({model.ModelInner.ValueType}), position: 2, methodParametrName: ""{model.ModelInner.ValueColumnName}"", dbType: {model.TypeInfo.SpecialDbTypeStr()}),
             Gedaq.Npgsql.Attributes.Parametr(parametrType: typeof({model.ModelInner.NullableValueType}), position: 3, methodParametrName: ""{model.ModelInner.NullableValueColumnName}"", dbType: {model.TypeInfo.SpecialDbTypeStr()}),
-            Gedaq.Npgsql.Attributes.Parametr(parametrType: typeof({model.ModelInner.IdType}?), position: 4, methodParametrName: ""{model.ModelInner.TableName}_id"", dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()})
+            Gedaq.Npgsql.Attributes.Parametr(parametrType: typeof({model.ModelInner.IdType}?), position: 4, methodParametrName: ""{model.ModelInnerColumnName}"", dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()})
             ]
         [Test, Order({order})]
         public async Task {testName}()
@@ -60,7 +69,25 @@ VALUES (
                     {
                         ModelValue value = storage.Values[i];
                         stringBuilder.AppendLine($@"
-                InsertModel(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null? "null" : value.InnerModel.IdValue)});
+                InsertModel(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null? ValueConstants.NullValue : value.InnerModel.IdValue)});
+");
+                    }
+                    stringBuilder.AppendLine($@"
+            }}
+        }}
+
+        [Test, Order({order})]
+        public async Task {testName}Async()
+        {{
+            await using (var connection = GlobalSetUp.GetConnection)
+            {{
+                await connection.OpenAsync();
+");
+                    for (; i < 10; i++)
+                    {
+                        ModelValue value = storage.Values[i];
+                        stringBuilder.AppendLine($@"
+                await InsertModelAsync(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? ValueConstants.NullValue : value.InnerModel.IdValue)});
 ");
                     }
                     stringBuilder.AppendLine($@"
@@ -86,13 +113,13 @@ INSERT INTO public.{model.TableName}(
 	{model.IdColumnName},
     {model.ValueColumnName},
     {model.NullableValueColumnName},
-    {model.ModelInner.TableName}_id
+    {model.ModelInnerColumnName}
 )
 VALUES (
     @{model.ModelInner.IdColumnName}, 
     @{model.ModelInner.ValueColumnName}, 
     @{model.ModelInner.NullableValueColumnName},
-    @{model.ModelInner.TableName}_id
+    @{model.ModelInnerColumnName}
 );
 "",
             methodName:""DbConnectionInsertModel"",
@@ -113,8 +140,8 @@ VALUES (
 ),
             Gedaq.DbConnection.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdType}?), 
-                parametrName: ""{model.ModelInner.TableName}_id"", 
-                methodParametrName: ""{model.ModelInner.TableName}_id"", 
+                parametrName: ""{model.ModelInnerColumnName}"", 
+                methodParametrName: ""{model.ModelInnerColumnName}"", 
                 dbType: {model.ModelInner.IdTypeInfo.DbTypeStr()},
                 nullable: true
             )
@@ -126,11 +153,29 @@ VALUES (
             {{
                 await connection.OpenAsync();
 ");
-            for (; i < storage.Values.Count; i++)
+            for (; i < storage.Values.Count - 5; i++)
             {
                 ModelValue value = storage.Values[i];
                 stringBuilder.AppendLine($@"
                 DbConnectionInsertModel(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)});
+");
+            }
+            stringBuilder.AppendLine($@"
+            }}
+        }}
+
+        [Test, Order({order})]
+        public async Task DbConnection{testName}Async()
+        {{
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {{
+                await connection.OpenAsync();
+");
+            for (; i < storage.Values.Count; i++)
+            {
+                ModelValue value = storage.Values[i];
+                stringBuilder.AppendLine($@"
+                await DbConnectionInsertModelAsync(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)});
 ");
             }
             stringBuilder.AppendLine($@"

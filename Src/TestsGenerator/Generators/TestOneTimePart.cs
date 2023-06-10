@@ -133,9 +133,9 @@ CREATE TABLE public.{model.TableName}
     {model.IdColumnName} {model.IdTypeInfo.DbSqlType} NOT NULL,
     {model.ValueColumnName} {model.TypeInfo.DbSqlType} NOT NULL,
     {model.NullableValueColumnName} {model.TypeInfo.DbSqlType},
-    {model.ModelInner.TableName}_id {model.ModelInner.IdTypeInfo.DbSqlType},
+    {model.ModelInnerColumnName} {model.ModelInner.IdTypeInfo.DbSqlType},
     CONSTRAINT {model.TableName}_pkey PRIMARY KEY (id),
-    CONSTRAINT {model.TableName}_{model.ModelInner.TableName}_fk FOREIGN KEY ({model.ModelInner.TableName}_id)
+    CONSTRAINT {model.TableName}_{model.ModelInner.TableName}_fk FOREIGN KEY ({model.ModelInnerColumnName})
         REFERENCES public.{model.ModelInner.TableName} ({model.ModelInner.IdColumnName}) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION

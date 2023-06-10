@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using TestsGenerator.Constants;
 using TestsGenerator.TypeValueHelpers;
 
 namespace TestsGenerator.Model
@@ -69,7 +70,7 @@ namespace TestsGenerator.Model
                     Id = GetNextInnerModelId(out var idInnerValue),
                     IdValue = idInnerValue,
                     Value = Value.NewValue(),
-                    NullableValue = NextNull() ? "null" : NullableValue.NewValue()
+                    NullableValue = NextNull() ? ValueConstants.NullValue : NullableValue.NewValue()
                 };
             }
 
@@ -78,7 +79,7 @@ namespace TestsGenerator.Model
                 Id = GetNextModelId(out var idValue),
                 IdValue = idValue,
                 Value = Value.NewValue(),
-                NullableValue = NextNull() ? "null" : NullableValue.NewValue(),
+                NullableValue = NextNull() ? ValueConstants.NullValue : NullableValue.NewValue(),
 
                 InnerModel = newInnerValue
             };

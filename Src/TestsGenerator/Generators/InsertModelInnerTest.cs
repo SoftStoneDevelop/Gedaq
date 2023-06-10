@@ -14,6 +14,10 @@ namespace TestsGenerator.Generators
             Database database
             )
         {
+            if (storage.Values.Count < 28)
+            {
+                throw new System.Exception("storage less 28");
+            }
             var testName = "InsertInnerModelTest";
             int i = 0;
             switch (database)
@@ -68,6 +72,29 @@ VALUES (
                     stringBuilder.AppendLine($@"
             }}
         }}
+
+        [Test, Order({order})]
+        public async Task {testName}Async()
+        {{
+            await using (var connection = GlobalSetUp.GetConnection)
+            {{
+                await connection.OpenAsync();
+");
+                    for (; i < 10; i++)
+                    {
+                        ModelValue value = storage.Values[i];
+                        if (value.InnerModel == null)
+                        {
+                            continue;
+                        }
+
+                        stringBuilder.AppendLine($@"
+                await InsertModelInnerAsync(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
+");
+                    }
+                    stringBuilder.AppendLine($@"
+            }}
+        }}
 ");
                     break;
                 }
@@ -113,7 +140,7 @@ VALUES (
             {{
                 await connection.OpenAsync();
 ");
-            for (; i < storage.Values.Count; i++)
+            for (; i < storage.Values.Count - 5; i++)
             {
                 ModelValue value = storage.Values[i];
                 if (value.InnerModel == null)
@@ -123,6 +150,29 @@ VALUES (
 
                 stringBuilder.AppendLine($@"
                 DbConnectionInsertModelInner(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
+");
+            }
+            stringBuilder.AppendLine($@"
+            }}
+        }}
+
+        [Test, Order({order})]
+        public async Task DbConnection{testName}Async()
+        {{
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {{
+                await connection.OpenAsync();
+");
+            for (; i < storage.Values.Count; i++)
+            {
+                ModelValue value = storage.Values[i];
+                if (value.InnerModel == null)
+                {
+                    continue;
+                }
+
+                stringBuilder.AppendLine($@"
+                await DbConnectionInsertModelInnerAsync(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
 ");
             }
             stringBuilder.AppendLine($@"

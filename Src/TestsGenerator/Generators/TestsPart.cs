@@ -14,12 +14,21 @@ namespace TestsGenerator.Generators
         public async Task Generate(Model.ModelType model, Database database, string destinationFolder)
         {
             _stringBuilder.Clear();
-            var storage = InitStorage(model);
+            var storage = InitStorage(model, 28);
 
             Start(model, database);
 
+            StartRegion("InsertModel");
             InsertModelInnerTest.Generate(0, _stringBuilder, model, storage, database);
+            EndRegion();
+
+            StartRegion("InsertModelInner");
             InsertModelTest.Generate(1, _stringBuilder, model, storage, database);
+            EndRegion();
+
+            StartRegion("Select Models");
+            SelectModelTest.Generate(2, _stringBuilder, model, storage, database);
+            EndRegion();
 
             End();
 
@@ -27,10 +36,24 @@ namespace TestsGenerator.Generators
             await File.WriteAllTextAsync($"{destinationFolder}/TestsParts/{model.ClassName}TestsPart.cs", _stringBuilder.ToString());
         }
 
-        private ModelValueStorage InitStorage(Model.ModelType model)
+        private void StartRegion(string regionName)
+        {
+            _stringBuilder.Append($@"
+#region {regionName}
+");
+        }
+        
+        private void EndRegion()
+        {
+            _stringBuilder.Append($@"
+        #endregion
+");
+        }
+
+        private ModelValueStorage InitStorage(Model.ModelType model, int valuesCount)
         {
             var storage = model.NewStorage();
-            for (int i = 0; i < 12; i++)
+            for (int i = 0; i < valuesCount; i++)
             {
                 storage.AddNewValue();
             }
@@ -43,8 +66,10 @@ namespace TestsGenerator.Generators
             _stringBuilder.AppendLine($@"
 {database.ToUsings()}
 
+using System.Linq;
 using NUnit.Framework;
 using System.Data.Common;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Tests
