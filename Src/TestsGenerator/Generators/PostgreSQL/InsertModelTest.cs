@@ -19,7 +19,7 @@ namespace TestsGenerator.Generators.PostgreSQL
             InsertModelTest(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: false);
             InsertModelTest(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: true);
 
-            InsertModelReturningReadConfig(stringBuilder, model);
+            InsertModelReturningConfig(stringBuilder, model);
             InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: false);
             InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: true);
         }
@@ -123,7 +123,7 @@ VALUES (
 ");
         }
 
-        private static void InsertModelReturningReadConfig(
+        private static void InsertModelReturningConfig(
             StringBuilder stringBuilder,
             Model.ModelType model
             )
@@ -144,20 +144,20 @@ VALUES (
     $4
 )
 RETURNING
-    {model.IdColumnName},
+    {model.NullableValueColumnName},
     {model.ValueColumnName},
 ~StartInner::{model.ModelInnerName}:{model.ModelInner.IdName}~
 ~Reinterpret::{model.ModelInner.IdName}~
     {model.ModelInnerColumnName},
 ~EndInner::{model.ModelInnerName}~
-    {model.NullableValueColumnName}
+    {model.IdColumnName}
 ;
 "",
-            methodName:""{_testName}ReturningRead"",
+            methodName:""{_testName}Returning"",
             queryMapType: typeof({model.ClassName}),
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
-            queryType: QueryType.Read,
+            queryType: QueryType.Read | QueryType.Scalar,
             generate: true,
             accessModifier: AccessModifier.Private
             ), 
@@ -223,7 +223,7 @@ RETURNING
             {
                 ModelValue value = storage.Values[indexValue];
                 stringBuilder.Append($@"
-                models = {await} {_testName}ReturningRead{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)}).ToList{async}();
+                models = {await} {_testName}Returning{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)}).ToList{async}();
                 Assert.That(models, Has.Count.EqualTo(1));
                 model = models[0];
 ");

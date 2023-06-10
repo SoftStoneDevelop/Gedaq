@@ -29,6 +29,13 @@ namespace TestsGenerator.Model
             return Random.Shared.Next(2) == 1;
         }
 
+        private bool _nextInnerNull;
+        private bool NextInnerNull()
+        {
+            _nextInnerNull = !_nextInnerNull;
+            return _nextInnerNull;
+        }
+
         private HashSet<int> _modelIds = new();
         private HashSet<int> _innerModelIds = new();
 
@@ -59,7 +66,7 @@ namespace TestsGenerator.Model
         public ModelValue AddNewValue()
         {
             InnerModelValue newInnerValue;
-            if(NextNull())
+            if(NextInnerNull())
             {
                 newInnerValue = null;
             }
