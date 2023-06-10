@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using TestsGenerator.Constants;
 using TestsGenerator.Model;
 
 namespace TestsGenerator.Generators.PostgreSQL
@@ -22,6 +23,9 @@ namespace TestsGenerator.Generators.PostgreSQL
             InsertModelReturningConfig(stringBuilder, model);
             InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: false);
             InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: true);
+
+            InsertModelReturningScalarTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: false);
+            InsertModelReturningScalarTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: true);
         }
 
         private static void InsertModelConfig(
@@ -228,6 +232,58 @@ RETURNING
                 model = models[0];
 ");
                 stringBuilder.Append(model.Assert(value, innerHaveOnlyId: true));
+            }
+            stringBuilder.Append($@"
+            }}
+        }}
+");
+        }
+
+        private static void InsertModelReturningScalarTest(
+            int order,
+            StringBuilder stringBuilder,
+            ModelValueStorage storage,
+            Model.ModelType model,
+            ref int indexValue,
+            int endIndex,
+            bool isAsync
+            )
+        {
+            if (endIndex > storage.Values.Count)
+            {
+                throw new System.ArgumentOutOfRangeException(nameof(endIndex));
+            }
+
+            var await = isAsync ? "await" : string.Empty;
+            var async = isAsync ? "Async" : string.Empty;
+            stringBuilder.Append($@"
+        [Test, Order({order})]
+        public async Task {_testName}TestReturningScalar{async}()
+        {{
+            await using (var connection = GlobalSetUp.GetConnection)
+            {{
+                await connection.OpenAsync();
+                {model.NullableValueType} nullable = null;
+");
+            for (; indexValue < endIndex; indexValue++)
+            {
+                ModelValue value = storage.Values[indexValue];
+                stringBuilder.Append($@"
+                nullable = {await} Scalar{_testName}Returning{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)});
+");
+                if(value.NullableValue == ValueConstants.NullValue)
+                {
+                    stringBuilder.Append($@"
+                Assert.That(nullable, Is.Null);
+");
+                }
+                else
+                {
+                    stringBuilder.Append($@"
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo({value.NullableValue}));
+");
+                }
             }
             stringBuilder.Append($@"
             }}
