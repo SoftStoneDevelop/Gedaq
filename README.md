@@ -109,7 +109,7 @@ var personsAsync =
 
 ```
 
-Comparison of getting 50000 Person in a loop(Size is number of loop iterations) from the database:
+[Comparison](https://github.com/SoftStoneDevelop/Gedaq.Npgsql/blob/main/Src/NpgsqlBenchmark/Benchmarks/CompareDapper.cs) of getting 50000 Person in a loop(Size is number of loop iterations) from the database:
 
 
 |       Method | Size |       Mean | Ratio | Allocated | Alloc Ratio |
@@ -122,3 +122,43 @@ Comparison of getting 50000 Person in a loop(Size is number of loop iterations) 
 |              |      |            |       |           |             |
 | **Gedaq.Npgsql** |   **30** | **1,396.6 ms** |  **0.59** | **396.28 MB** |        **0.88** |
 |       Dapper |   30 | 2,356.8 ms |  1.00 | 451.22 MB |        1.00 |
+
+But with Gedaq, we can prepare the command in advance.
+```C#
+[Query(
+            @"
+SELECT 
+    p.id,
+    p.firstname,
+~StartInner::Identification:id~
+    i.id,
+    i.typename,
+~EndInner::Identification~
+    p.middlename,
+    p.lastname
+FROM person p
+LEFT JOIN identification i ON i.id = p.identification_id
+WHERE p.id > $1
+",
+        "GetAllPerson",
+        typeof(Person),
+        MethodType.Sync | MethodType.Async
+        ),
+        Parametr(parametrType: typeof(int), position: 1)
+        ]
+public class Person
+//...
+
+var personsCmd = connection.CreateGetAllPersonCommand(prepare: true);
+personsCmd.SetGetAllPersonParametrs(49999);
+var persons = personsCmd.ExecuteGetAllPersonCommand().ToList();
+
+//or
+
+var personsCmd = await connection.CreateGetAllPersonCommandAsync(prepare: true);
+personsCmd.SetGetAllPersonParametrs(49999);
+var persons = await personsCmd.ExecuteGetAllPersonCommand().ToListAsync();
+
+
+```
+[Prepare comparsion](https://github.com/SoftStoneDevelop/Gedaq.Npgsql/blob/main/Src/NpgsqlBenchmark/Benchmarks/ComparePrepareDapper.cs):
