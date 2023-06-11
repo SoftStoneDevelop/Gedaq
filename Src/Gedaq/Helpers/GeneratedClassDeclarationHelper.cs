@@ -74,7 +74,7 @@ namespace Gedaq.Helpers
             string extansionPrefix
             )
         {
-            return $@"{type.ToAccessModifier().ToLowerInvariant()} {type.GCStaticWordOrEmpty()} {type.GCPartialWordOrEmpty()} class {(type.IsPatrial() ? type.Name : $"{methodInfo.MethodName}{extansionPrefix}Extension")}";
+            return $@"{type.ToAccessModifier().ToLowerInvariant()} {type.GCStaticWordOrEmpty()} {type.GCPartialWordOrEmpty()} class {(type.IsPatrial() ? type.Name : $"{type.Name}{methodInfo.MethodName}{extansionPrefix}Extension")}";
         }
 
         internal static AccessModifier ToAccessModifier(
