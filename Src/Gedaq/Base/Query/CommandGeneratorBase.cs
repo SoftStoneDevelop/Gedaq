@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base.Batch;
+using Gedaq.Base.Model;
 using Gedaq.DbConnection.GeneratorsBatch;
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
@@ -288,10 +289,11 @@ namespace Gedaq.Base.Query
             StringBuilder builder
             )
         {
+            QueryCommonBase.GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {QueryCommonBase.GetScalarTypeName(source, ProviderInfo)} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Command(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {typeName} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Command(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command
 ");
                 QueryCommonBase.AddParametrs(source, builder, true);
@@ -303,7 +305,7 @@ namespace Gedaq.Base.Query
             else
             {
                 builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{QueryCommonBase.GetScalarTypeName(source, ProviderInfo)}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}CommandAsync(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{typeName}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}CommandAsync(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command
 ");
                 QueryCommonBase.AddParametrs(source, builder, false);
@@ -319,9 +321,29 @@ namespace Gedaq.Base.Query
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
-            builder.Append($@"
-            var result = ({QueryCommonBase.GetScalarTypeName(source, ProviderInfo)}){await}command.ExecuteScalar{async};
+            QueryCommonBase.GetScalarType(source, ProviderInfo, out var typeSymbol, out var isRowAffected, out var typeName);
+            if (isRowAffected || (!typeSymbol.IsNullableType() && !typeSymbol.IsReferenceType))
+            {
+                builder.Append($@"
+            {typeName} result = ({typeName}){await}command.ExecuteScalar{async};
 ");
+            }
+            else
+            {
+                builder.Append($@"
+            var scalarResult = {await}command.ExecuteScalar{async};
+            {typeName} result;
+            if(scalarResult == null || scalarResult == DBNull.Value)
+            {{
+                result = null;
+            }}
+            else
+            {{
+                result = ({typeName})scalarResult;
+            }}
+");
+            }
+
             if (source.HaveParametrs())
             {
                 QueryCommonBase.SetOutAndReturnParametrs(source, builder, ProviderInfo);

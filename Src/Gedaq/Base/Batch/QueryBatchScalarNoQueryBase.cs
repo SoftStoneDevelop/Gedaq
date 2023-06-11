@@ -81,16 +81,17 @@ namespace Gedaq.Base.Batch
             StringBuilder builder
             )
         {
+            BatchCommonBase.GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {BatchCommonBase.GetScalarTypeName(source, ProviderInfo)} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {typeName} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}(
 ");
             }
             else
             {
                 builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Async(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{typeName}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Async(
 ");
             }
         }
@@ -198,17 +199,35 @@ namespace Gedaq.Base.Batch
 ");
             BatchCommonBase.WriteSetParametrs(source, builder, ProviderInfo);
 
+            BatchCommonBase.GetScalarType(source, ProviderInfo, out var typeSymbol, out var isRowAffected, out var typeName);
             if (queryType == QueryType.Scalar)
             {
-                builder.Append($@"
-                //var result = {await}batch.ExecuteScalar<{BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}>{async};
-                var result = ({BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}){await}batch.ExecuteScalar{async};
+                if (isRowAffected || (!typeSymbol.IsNullableType() && !typeSymbol.IsReferenceType))
+                {
+                    builder.Append($@"
+            {typeName} result = ({typeName}){await}batch.ExecuteScalar{async};
 ");
+                }
+                else
+                {
+                    builder.Append($@"
+            var scalarResult = {await}batch.ExecuteScalar{async};
+            {typeName} result;
+            if(scalarResult == null || scalarResult == DBNull.Value)
+            {{
+                result = null;
+            }}
+            else
+            {{
+                result = ({typeName})scalarResult;
+            }}
+");
+                }
             }
             else
             {
                 builder.Append($@"
-                var result = ({BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}){await}batch.ExecuteNonQuery{async};
+                var result = ({typeName}){await}batch.ExecuteNonQuery{async};
 ");
             }
 

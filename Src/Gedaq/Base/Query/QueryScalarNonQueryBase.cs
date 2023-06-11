@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base.Batch;
+using Gedaq.Base.Model;
 using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
@@ -147,16 +148,17 @@ namespace Gedaq.Base.Query
             StringBuilder builder
             )
         {
+            QueryCommonBase.GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {QueryCommonBase.GetScalarTypeName(source, ProviderInfo)} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {typeName} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}(
 ");
             }
             else
             {
                 builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{QueryCommonBase.GetScalarTypeName(source, ProviderInfo)}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Async(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{typeName}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Async(
 ");
             }
         }
@@ -259,17 +261,35 @@ namespace Gedaq.Base.Query
             builder.Append($@"
                     );
 ");
-
+            QueryCommonBase.GetScalarType(source, ProviderInfo, out var typeSymbol, out var isRowAffected, out var typeName);
             if (queryType == QueryType.Scalar)
             {
-                builder.Append($@"
-                var result = ({QueryCommonBase.GetScalarTypeName(source, ProviderInfo)}){await}command.ExecuteScalar{async};
+                if (isRowAffected || (!typeSymbol.IsNullableType() && !typeSymbol.IsReferenceType))
+                {
+                    builder.Append($@"
+            {typeName} result = ({typeName}){await}command.ExecuteScalar{async};
 ");
+                }
+                else
+                {
+                    builder.Append($@"
+            var scalarResult = {await}command.ExecuteScalar{async};
+            {typeName} result;
+            if(scalarResult == null || scalarResult == DBNull.Value)
+            {{
+                result = null;
+            }}
+            else
+            {{
+                result = ({typeName})scalarResult;
+            }}
+");
+                }
             }
             else
             {
                 builder.Append($@"
-                var result = {await}command.ExecuteNonQuery{async};
+                var result = ({typeName}){await}command.ExecuteNonQuery{async};
 ");
             }
 

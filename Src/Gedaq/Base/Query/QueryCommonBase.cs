@@ -32,7 +32,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        public static string GetScalarTypeName(QueryBaseCommand source, ProviderInfo providerInfo)
+        public static void GetScalarType(QueryBaseCommand source, ProviderInfo providerInfo, out ITypeSymbol type, out bool isRowsAffected, out string typeName)
         {
             if (source.Aliases.IsRowsAffected)
             {
@@ -41,17 +41,25 @@ namespace Gedaq.Base.Query
                     throw new Exception("Use NonQuery for update/delete/inser command");
                 }
 
-                return "System.Int32";
+                isRowsAffected = true;
+                type = null;
+                typeName = "System.Int32";
+                return;
             }
 
+            isRowsAffected = false;
             if (providerInfo.IsKnownProviderType(source.MapTypeName) || providerInfo.IsSpecialHandlerType(source.MapTypeName))
             {
-                return source.MapTypeName.GetFullTypeName(replaceNullable: true);
+                type = source.MapTypeName;
+                typeName = type.GetFullTypeName(replaceNullable: true);
+                return;
             }
 
             var firstField = source.Aliases.AllFieldsOrderByPosition().First();
-            source.MapTypeName.GetPropertyOrFieldName(firstField.Name, out _, out var type);
-            return type.GetFullTypeName(true);
+            source.MapTypeName.GetPropertyOrFieldName(firstField.Name, out _, out var typeProp);
+            type = typeProp;
+            typeName = type.GetFullTypeName(replaceNullable: true);
+            return;
         }
 
         public static void ThrowExceptionIfOutCannotExist(QueryBaseCommand source)

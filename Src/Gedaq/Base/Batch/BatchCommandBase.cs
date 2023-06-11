@@ -599,10 +599,11 @@ namespace Gedaq.Base.Batch
             )
         {
             var type = source.AllSameTypes ? source.QueryBases().First().query.MapTypeName.GetFullTypeName(true) : "object";
+            BatchCommonBase.GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {BatchCommonBase.GetScalarTypeName(source, ProviderInfo)} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Batch(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {typeName} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Batch(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch
 ");
                 BatchCommonBase.WriteMethodParametrs(source, builder);
@@ -615,7 +616,7 @@ namespace Gedaq.Base.Batch
             else
             {
                 builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}BatchAsync(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{typeName}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}BatchAsync(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch,
             CancellationToken cancellationToken = default
             )
@@ -633,10 +634,29 @@ namespace Gedaq.Base.Batch
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
-
-            builder.Append($@"
-            var result = ({BatchCommonBase.GetScalarTypeName(source, ProviderInfo)}){await}batch.ExecuteScalar{async};
+            BatchCommonBase.GetScalarType(source, ProviderInfo, out var type, out var isRowAffected, out var typeName);
+            if (isRowAffected || (!type.IsNullableType() && !type.IsReferenceType))
+            {
+                builder.Append($@"
+            {typeName} result = ({typeName}){await}batch.ExecuteScalar{async};
 ");
+            }
+            else
+            {
+                builder.Append($@"
+            var scalarResult = {await}batch.ExecuteScalar{async};
+            {typeName} result;
+            if(scalarResult == null || scalarResult == DBNull.Value)
+            {{
+                result = null;
+            }}
+            else
+            {{
+                result = ({typeName})scalarResult;
+            }}
+");
+            }
+
             if(source.HaveParametrs)
             {
                 int index = -1;

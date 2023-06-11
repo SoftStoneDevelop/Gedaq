@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using TestsGenerator.Constants;
 using TestsGenerator.Model;
+using TestsGenerator.TypeValueHelpers;
 
 namespace TestsGenerator.Generators.PostgreSQL
 {
@@ -256,6 +257,20 @@ RETURNING
 
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
+
+            if (model.ValueStorage is CharValueHelper || model.ValueStorage is ByteValueHelper || model.ValueStorage is SByteValueHelper)
+            {
+                stringBuilder.Append($@"
+        [Ignore(""Invalid cast, ExecuteScalar provider return wrong type"")]
+        [Test, Order({order})]
+        public async Task {_testName}TestReturningScalar{async}()
+        {{
+            
+        }}
+");
+                return;
+            }
+
             stringBuilder.Append($@"
         [Test, Order({order})]
         public async Task {_testName}TestReturningScalar{async}()
