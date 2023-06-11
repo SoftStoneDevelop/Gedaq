@@ -244,3 +244,6 @@ ModelManifest.xml
 /Src/PostgreSQLTests/Model
 /Src/PostgreSQLTests/TestOneTimeParts
 /Src/PostgreSQLTests/TestsParts
+/Src/MSSQLTests/TestOneTimeParts
+/Src/MSSQLTests/TestsParts
+/Src/MSSQLTests/Model

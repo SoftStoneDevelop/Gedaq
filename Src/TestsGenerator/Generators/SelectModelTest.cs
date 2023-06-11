@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Text;
 using TestsGenerator.Enums;
+using TestsGenerator.Helpers;
 using TestsGenerator.Model;
 
 namespace TestsGenerator.Generators
@@ -28,10 +29,10 @@ SELECT
     mi.{model.ModelInner.NullableValueColumnName},
 ~EndInner::{model.ModelInnerName}~
     m.{model.NullableValueColumnName}
-FROM public.{model.TableName} m
-LEFT JOIN {model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}
+FROM {database.ToDefaultSchema()}.{model.TableName} m
+LEFT JOIN {database.ToDefaultSchema()}.{model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}
 ORDER BY
-    m.{model.IdColumnName} ASC;
+    m.{model.IdColumnName} ASC
 ""
 ";
             switch (database)

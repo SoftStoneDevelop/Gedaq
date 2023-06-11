@@ -64,7 +64,6 @@ CREATE DATABASE gedaqtests TEMPLATE template0 CONNECTION LIMIT = -1;
                 await using var command = masterConnection.CreateCommand();
                 command.CommandText = $@"
 DROP DATABASE gedaqtests WITH (FORCE);
-;
 ";
                 await command.ExecuteNonQueryAsync();
             }

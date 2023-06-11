@@ -43,6 +43,8 @@ namespace TestsGenerator.TypeInfos
             return result;
         }
 
+        public abstract string DbSqlAfterType();
+
         [GeneratedRegex("\\s+")]
         public static partial Regex WhiteSpaces();
 

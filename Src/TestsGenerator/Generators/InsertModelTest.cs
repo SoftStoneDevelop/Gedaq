@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using TestsGenerator.Enums;
+using TestsGenerator.Helpers;
 using TestsGenerator.Model;
 
 namespace TestsGenerator.Generators
@@ -34,7 +35,7 @@ namespace TestsGenerator.Generators
                 }
             }
 
-            DbConnectionInsertModelConfig(stringBuilder, model);
+            DbConnectionInsertModelConfig(stringBuilder, model, database);
             DbConnectionInsertModelTest(order, stringBuilder, storage, ref i, i + 2, isAsync: false);
 
             if(i + 2 >= storage.Values.Count)
@@ -46,13 +47,14 @@ namespace TestsGenerator.Generators
 
         private static void DbConnectionInsertModelConfig(
             StringBuilder stringBuilder,
-            Model.ModelType model
+            Model.ModelType model,
+            Database database
             )
         {
             stringBuilder.Append($@"
 [Gedaq.DbConnection.Attributes.Query(
             query: @""
-INSERT INTO public.{model.TableName}(
+INSERT INTO {database.ToDefaultSchema()}.{model.TableName}(
 	{model.IdColumnName},
     {model.ValueColumnName},
     {model.NullableValueColumnName},
@@ -63,7 +65,7 @@ VALUES (
     @{model.ModelInner.ValueColumnName}, 
     @{model.ModelInner.NullableValueColumnName},
     @{model.ModelInnerColumnName}
-);
+)
 "",
             methodName:""DbConnection{_testName}"",
             queryMapType: null,

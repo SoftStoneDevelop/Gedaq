@@ -68,9 +68,9 @@ namespace Tests
             cmd.CommandText = @""
 CREATE TABLE public.{model.ModelInner.TableName}
 (
-    {model.ModelInner.IdColumnName} {model.ModelInner.IdTypeInfo.DbSqlType} NOT NULL,
-    {model.ModelInner.ValueColumnName} {model.ModelInner.TypeInfo.DbSqlType} NOT NULL,
-    {model.ModelInner.NullableValueColumnName} {model.ModelInner.TypeInfo.DbSqlType},
+    {model.ModelInner.IdColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()} NOT NULL,
+    {model.ModelInner.ValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()} NOT NULL,
+    {model.ModelInner.NullableValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()},
     CONSTRAINT {model.ModelInner.TableName}_pkey PRIMARY KEY (id)
 );
 "";
@@ -81,6 +81,20 @@ CREATE TABLE public.{model.ModelInner.TableName}
                 }
                 case Database.MsSQL:
                 {
+                    _stringBuilder.AppendLine($@"
+        private async Task CreateModelInnerTable(SqlCommand cmd)
+        {{
+            cmd.CommandText = @""
+CREATE TABLE dbo.{model.ModelInner.TableName}(
+	{model.ModelInner.IdColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()} NOT NULL,
+	{model.ModelInner.ValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()} NOT NULL,
+	{model.ModelInner.NullableValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()} NULL,
+    CONSTRAINT PK_{model.ModelInner.TableName} PRIMARY KEY NONCLUSTERED ({model.ModelInner.IdColumnName})
+)
+"";
+            await cmd.ExecuteNonQueryAsync();
+        }}
+");
                     return;
                 }
                 case Database.MySQL:
@@ -109,6 +123,15 @@ DROP TABLE public.{model.ModelInner.TableName};
                 }
                 case Database.MsSQL:
                 {
+                    _stringBuilder.AppendLine($@"
+        private async Task DropModelInnerTable(SqlCommand cmd)
+        {{
+            cmd.CommandText = @""
+DROP TABLE dbo.{model.ModelInner.TableName}
+"";
+            await cmd.ExecuteNonQueryAsync();
+        }}
+");
                     return;
                 }
                 case Database.MySQL:
@@ -130,10 +153,10 @@ DROP TABLE public.{model.ModelInner.TableName};
             cmd.CommandText = @""
 CREATE TABLE public.{model.TableName}
 (
-    {model.IdColumnName} {model.IdTypeInfo.DbSqlType} NOT NULL,
-    {model.ValueColumnName} {model.TypeInfo.DbSqlType} NOT NULL,
-    {model.NullableValueColumnName} {model.TypeInfo.DbSqlType},
-    {model.ModelInnerColumnName} {model.ModelInner.IdTypeInfo.DbSqlType},
+    {model.IdColumnName} {model.IdTypeInfo.DbSqlType}{model.IdTypeInfo.DbSqlAfterType()} NOT NULL,
+    {model.ValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()} NOT NULL,
+    {model.NullableValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()},
+    {model.ModelInnerColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()},
     CONSTRAINT {model.TableName}_pkey PRIMARY KEY (id),
     CONSTRAINT {model.TableName}_{model.ModelInner.TableName}_fk FOREIGN KEY ({model.ModelInnerColumnName})
         REFERENCES public.{model.ModelInner.TableName} ({model.ModelInner.IdColumnName}) MATCH SIMPLE
@@ -148,6 +171,25 @@ CREATE TABLE public.{model.TableName}
                 }
                 case Database.MsSQL:
                 {
+                    _stringBuilder.AppendLine($@"
+        private async Task CreateModelTable(SqlCommand cmd)
+        {{
+            cmd.CommandText = @""
+CREATE TABLE dbo.{model.TableName}(
+	{model.IdColumnName} {model.IdTypeInfo.DbSqlType}{model.IdTypeInfo.DbSqlAfterType()} NOT NULL,
+	{model.ValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()} NOT NULL,
+    {model.NullableValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()} NULL,
+	{model.ModelInnerColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()} NULL,
+    CONSTRAINT PK_{model.TableName} PRIMARY KEY NONCLUSTERED ({model.IdColumnName}),
+    CONSTRAINT FK_{model.TableName}_{model.ModelInner.TableName} FOREIGN KEY ({model.ModelInnerColumnName})
+        REFERENCES dbo.{model.ModelInner.TableName} ({model.ModelInner.IdColumnName})
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+)
+"";
+            await cmd.ExecuteNonQueryAsync();
+        }}
+");
                     return;
                 }
                 case Database.MySQL:
@@ -176,6 +218,15 @@ DROP TABLE public.{model.TableName};
                 }
                 case Database.MsSQL:
                 {
+                    _stringBuilder.AppendLine($@"
+        private async Task DropModelTable(SqlCommand cmd)
+        {{
+            cmd.CommandText = @""
+DROP TABLE dbo.{model.TableName}
+"";
+            await cmd.ExecuteNonQueryAsync();
+        }}
+");
                     return;
                 }
                 case Database.MySQL:

@@ -28,5 +28,10 @@ namespace TestsGenerator.TypeInfos
         {
             return $"System.Data.DbType.{DbType.ToString()}";
         }
+
+        public override string DbSqlAfterType()
+        {
+            return string.Empty;
+        }
     }
 }

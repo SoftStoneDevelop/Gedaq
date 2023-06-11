@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using TestsGenerator.Comparers;
@@ -55,6 +56,7 @@ namespace TestsGenerator.Generators
                 }
                 case Database.MsSQL:
                 {
+                    AddMSSQLTypes();
                     break; 
                 }
                 case Database.MySQL:
@@ -104,6 +106,29 @@ namespace TestsGenerator.Generators
             //_models.Add(new Model.NpgsqlModel("line", "NpgsqlLine", "NpgsqlTypes.NpgsqlLine"));
             //_models.Add(new Model.NpgsqlModel("circle", "NpgsqlCircle", "NpgsqlTypes.NpgsqlCircle"));
             //_models.Add(new Model.NpgsqlModel("box", "NpgsqlBox", "NpgsqlTypes.NpgsqlBox"));
+        }
+
+        private void AddMSSQLTypes()
+        {
+            _models.Add(new Model.MSSQLModel(SqlDbType.Int, "Int32", "System.Int32", () => new Int32ValueHelper()));
+            _models.Add(new Model.MSSQLModel(SqlDbType.BigInt, "Int64", "System.Int64", () => new Int64ValueHelper()));
+
+            _models.Add(new Model.MSSQLModel(SqlDbType.TinyInt, "Byte", "System.Byte", () => new ByteValueHelper()));
+
+            _models.Add(new Model.MSSQLModel(SqlDbType.SmallInt, "Int16", "System.Int16", () => new Int16ValueHelper()));
+
+            _models.Add(new Model.MSSQLModel(SqlDbType.Decimal, "Decimal", "System.Decimal", () => new DecimalValueHelper()));
+            _models.Add(new Model.MSSQLModel(SqlDbType.Float, "Double", "System.Double", () => new DoubleValueHelper()));
+            _models.Add(new Model.MSSQLModel(SqlDbType.Bit, "Boolean", "System.Boolean", () => new BooleanValueHelper()));
+            _models.Add(new Model.MSSQLModel(SqlDbType.Real, "Single", "System.Single", () => new SingleValueHelper()));
+
+            _models.Add(new Model.MSSQLModel(SqlDbType.Time, "TimeSpan", "System.TimeSpan", () => new TimeSpanValueHelper(true)));
+
+            _models.Add(new Model.MSSQLModel(SqlDbType.DateTime2, "DateTime", "System.DateTime", () => new DateTimeValueHelper(System.DateTimeKind.Local)));
+            _models.Add(new Model.MSSQLModel(SqlDbType.Date, "DateOnly", "System.DateOnly", () => new DateOnlyValueHelper()));
+
+            _models.Add(new Model.MSSQLModel(SqlDbType.Text, "String", "System.String", () => new StringValueHelper(), size: 400, mustHaveSize: true, isReferenceType: true));
+            _models.Add(new Model.MSSQLModel(SqlDbType.UniqueIdentifier, "Guid", "System.Guid", () => new GuidValueHelper()));
         }
     }
 }
