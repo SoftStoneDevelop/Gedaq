@@ -134,7 +134,7 @@ var persons = personsCmd.ExecuteGetAllPersonCommand().ToList();
 
 var personsCmd = await connection.CreateGetAllPersonCommandAsync(prepare: true);
 personsCmd.SetGetAllPersonParametrs(49999);
-var persons = await personsCmd.ExecuteGetAllPersonCommand().ToListAsync();
+var persons = await personsCmd.ExecuteGetAllPersonCommandAsync().ToListAsync();
 
 
 ```
