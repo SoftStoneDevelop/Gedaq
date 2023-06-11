@@ -1,16 +1,9 @@
-﻿using TestsGenerator.Helpers;
+﻿using System;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class ByteValueHelper : ValueHelper
     {
-        public ByteValueHelper() : base(@"
-{0}
-")
-        {
-
-        }
-
         public override ValueHelper NewInstance()
         {
             return new ByteValueHelper();
@@ -18,8 +11,8 @@ namespace TestsGenerator.TypeValueHelpers
 
         public override string NewValue()
         {
-            var newValue = string.Format(_newValueFormat, PrimitiveRandomaiser.Byte());
-            return newValue;
+            var result = (byte)Random.Shared.Next(byte.MinValue, byte.MaxValue);
+            return $"{result}";
         }
     }
 }

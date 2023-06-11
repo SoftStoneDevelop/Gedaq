@@ -4,13 +4,6 @@ namespace TestsGenerator.TypeValueHelpers
 {
     internal class BooleanValueHelper : ValueHelper
     {
-        public BooleanValueHelper() : base(@"
-{0}
-")
-        {
-
-        }
-
         public override ValueHelper NewInstance()
         {
             return new BooleanValueHelper();
@@ -18,8 +11,8 @@ namespace TestsGenerator.TypeValueHelpers
 
         public override string NewValue()
         {
-            var newValue = string.Format(_newValueFormat, PrimitiveRandomaiser.Boolean().ToString().ToLowerInvariant());
-            return newValue;
+            var result = PrimitiveRandomaiser.Boolean();
+            return $"{result.ToString().ToLowerInvariant()}";
         }
     }
 }

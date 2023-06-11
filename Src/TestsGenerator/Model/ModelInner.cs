@@ -14,7 +14,7 @@ namespace TestsGenerator.Model
         {
         }
 
-        public override string ClassName => TypeInfo.TypeName + "ModelInner";
+        public override string ClassName => $"{TypeInfo.TypeName}_{TypeInfo.DbSqlTypeWithoutSpace()}_ModelInner";
 
         public override string TableName => ClassName.ToLowerInvariant();
     }

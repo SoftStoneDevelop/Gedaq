@@ -16,6 +16,7 @@ using NpgsqlTypes;
 using Gedaq.Common.Enums;
 using Gedaq.Npgsql.Attributes;
 using Gedaq.Npgsql.Enums;
+using System;
 ";
                 }
                 case Database.MsSQL:

@@ -1,16 +1,9 @@
-﻿using TestsGenerator.Helpers;
+﻿using System;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class Int64ValueHelper : ValueHelper
     {
-        public Int64ValueHelper() : base(@"
-{0}L
-")
-        {
-
-        }
-
         public override ValueHelper NewInstance()
         {
             return new Int64ValueHelper();
@@ -18,8 +11,8 @@ namespace TestsGenerator.TypeValueHelpers
 
         public override string NewValue()
         {
-            var newValue = string.Format(_newValueFormat, PrimitiveRandomaiser.Int64());
-            return newValue;
+            var result = Random.Shared.NextInt64(0, long.MaxValue);
+            return $"{result}L";
         }
     }
 }

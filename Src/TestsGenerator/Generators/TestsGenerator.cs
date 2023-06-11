@@ -80,19 +80,19 @@ namespace TestsGenerator.Generators
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Boolean, "Boolean", "System.Boolean", () => new BooleanValueHelper()));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Real, "Single", "System.Single", () => new SingleValueHelper()));
 
-            //_models.Add(new Model.NpgsqlModel("time without time zone", "TimeSpan", "System.TimeSpan", () => new TimeSpanStorage()));
-            //_models.Add(new Model.NpgsqlModel("time without time zone", "TimeOnly", "System.TimeOnly", () => new TimeOnlyStorage()));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Time, "TimeSpan", "System.TimeSpan", () => new TimeSpanValueHelper(true)));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Time, "TimeOnly", "System.TimeOnly", () => new TimeOnlyValueHelper()));
 
-            //_models.Add(new Model.NpgsqlModel("date", "DateTime", "System.DateTime", () => new DateTimeStorage()));
-            //_models.Add(new Model.NpgsqlModel("date", "DateOnly", "System.DateOnly", () => new DateOnlyStorage()));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Timestamp, "DateTime", "System.DateTime", () => new DateTimeValueHelper(System.DateTimeKind.Local)));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.TimestampTz, "DateTime", "System.DateTime", () => new DateTimeValueHelper(System.DateTimeKind.Utc)));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Date, "DateOnly", "System.DateOnly", () => new DateOnlyValueHelper()));
 
             //_models.Add(new Model.NpgsqlModel("time with time zone", "DateTimeOffset", "System.DateTimeOffset"));
 
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Text, "String", "System.String", () => new StringValueHelper(), size: 400, mustHaveSize: true, isReferenceType: true));
 
-            //_models.Add(new Model.NpgsqlModel("inet", "IPAddress", "System.Net.IPAddress", true));
-            //_models.Add(new Model.NpgsqlModel("macaddr", "PhysicalAddress", "System.Net.NetworkInformation.PhysicalAddress", true));
-            //_models.Add(new Model.NpgsqlModel("uuid", "Guid", "System.Guid"));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Inet, "IPAddress", "System.Net.IPAddress", () => new IPAddressValueHelper(), isReferenceType: true));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Uuid, "Guid", "System.Guid", () => new GuidValueHelper()));
             //_models.Add(new Model.NpgsqlModel("numeric", "BigInteger", "System.Numerics.BigInteger"));
             //_models.Add(new Model.NpgsqlModel("bit varying", "BitArray", "System.Collections.BitArray", true));
             //_models.Add(new Model.NpgsqlModel("tsquery", "NpgsqlTsQuery", "NpgsqlTypes.NpgsqlTsQuery", true));

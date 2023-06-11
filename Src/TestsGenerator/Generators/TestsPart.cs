@@ -74,7 +74,7 @@ using System.Threading.Tasks;
 
 namespace Tests
 {{
-    internal partial class Tests{model.TypeInfo.TypeName}
+    internal partial class Tests_{model.TypeInfo.TypeName}_{model.TypeInfo.DbSqlTypeWithoutSpace()}
     {{
 ");
         }

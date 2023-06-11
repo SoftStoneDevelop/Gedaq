@@ -2,17 +2,17 @@
 
 namespace TestsGenerator.TypeValueHelpers
 {
-    internal class SingleValueHelper : ValueHelper
+    internal class GuidValueHelper : ValueHelper
     {
         public override ValueHelper NewInstance()
         {
-            return new SingleValueHelper();
+            return new GuidValueHelper();
         }
 
         public override string NewValue()
         {
-            var result = (float)Random.Shared.NextSingle();
-            return $@"{result}f";
+            var guid = Guid.NewGuid();
+            return $@"Guid.Parse(""{guid}"")";
         }
     }
 }

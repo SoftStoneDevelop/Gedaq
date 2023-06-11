@@ -4,13 +4,6 @@ namespace TestsGenerator.TypeValueHelpers
 {
     internal class CharValueHelper : ValueHelper
     {
-        public CharValueHelper() : base(@"
-'{0}'
-")
-        {
-
-        }
-
         public override ValueHelper NewInstance()
         {
             return new CharValueHelper();
@@ -18,8 +11,7 @@ namespace TestsGenerator.TypeValueHelpers
 
         public override string NewValue()
         {
-            var newValue = string.Format(_newValueFormat, PrimitiveRandomaiser.Char());
-            return newValue;
+            return $"'{PrimitiveRandomaiser.Char()}'";
         }
     }
 }

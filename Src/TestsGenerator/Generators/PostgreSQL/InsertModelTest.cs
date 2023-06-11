@@ -258,7 +258,11 @@ RETURNING
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
 
-            if (model.ValueStorage is CharValueHelper || model.ValueStorage is ByteValueHelper || model.ValueStorage is SByteValueHelper)
+            if (model.ValueStorage is CharValueHelper ||
+                model.ValueStorage is ByteValueHelper || 
+                model.ValueStorage is SByteValueHelper ||
+                model.ValueStorage is TimeOnlyValueHelper ||
+                model.ValueStorage is DateOnlyValueHelper)
             {
                 stringBuilder.Append($@"
         [Ignore(""Invalid cast, ExecuteScalar provider return wrong type"")]

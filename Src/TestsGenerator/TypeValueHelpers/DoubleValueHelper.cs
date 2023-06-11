@@ -1,16 +1,9 @@
-﻿using TestsGenerator.Helpers;
+﻿using System;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class DoubleValueHelper : ValueHelper
     {
-        public DoubleValueHelper() : base(@"
-{0}d
-")
-        {
-
-        }
-
         public override ValueHelper NewInstance()
         {
             return new DoubleValueHelper();
@@ -18,8 +11,8 @@ namespace TestsGenerator.TypeValueHelpers
 
         public override string NewValue()
         {
-            var newValue = string.Format(_newValueFormat, PrimitiveRandomaiser.Double());
-            return newValue;
+            var result = (double)Random.Shared.NextDouble();
+            return $"{result}d";
         }
     }
 }

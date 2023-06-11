@@ -1,8 +1,9 @@
 ﻿using System.Data;
+using System.Text.RegularExpressions;
 
 namespace TestsGenerator.TypeInfos
 {
-    internal abstract class TypeInfo
+    internal abstract partial class TypeInfo
     {
         public TypeInfo(
             DbType dbType,
@@ -35,6 +36,15 @@ namespace TestsGenerator.TypeInfos
         public readonly int Size;
 
         public readonly string DbSqlType;
+
+        public string DbSqlTypeWithoutSpace()
+        {
+            var result = WhiteSpaces().Replace(DbSqlType, "_");
+            return result;
+        }
+
+        [GeneratedRegex("\\s+")]
+        public static partial Regex WhiteSpaces();
 
         public readonly string TypeName;
 

@@ -1,6 +1,7 @@
 ﻿using Npgsql;
 using NpgsqlTypes;
 using System;
+using System.Collections.Generic;
 using System.Data;
 
 namespace TestsGenerator.Helpers
@@ -53,6 +54,38 @@ namespace TestsGenerator.Helpers
                 case NpgsqlDbType.Text:
                 {
                     return "text";
+                }
+                case NpgsqlDbType.Timestamp:
+                {
+                    return "timestamp without time zone";
+                }
+                case NpgsqlDbType.Time:
+                {
+                    return "time without time zone";
+                }
+                case NpgsqlDbType.TimeTz:
+                {
+                    return "time with time zone";
+                }
+                case NpgsqlDbType.Date:
+                {
+                    return "date";
+                }
+                case NpgsqlDbType.TimestampTz:
+                {
+                    return "timestamp with time zone";
+                }
+                case NpgsqlDbType.Inet:
+                {
+                    return "inet";
+                }
+                case NpgsqlDbType.MacAddr:
+                {
+                    return "macaddr";
+                }
+                case NpgsqlDbType.Uuid:
+                {
+                    return "uuid";
                 }
                 default:
                 {

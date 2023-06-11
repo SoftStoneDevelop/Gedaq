@@ -43,7 +43,7 @@ namespace Tests
 {{
     [TestFixture]
     [Parallelizable(ParallelScope.Self)]
-    internal partial class Tests{model.TypeInfo.TypeName}
+    internal partial class Tests_{model.TypeInfo.TypeName}_{model.TypeInfo.DbSqlTypeWithoutSpace()}
     {{
 ");
         }

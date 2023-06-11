@@ -6,7 +6,7 @@ using TestsGenerator.TypeValueHelpers;
 
 namespace TestsGenerator.Model
 {
-    internal class ModelType : BaseModelType
+    internal partial class ModelType : BaseModelType
     {
         public ModelType(
             TypeInfo idTypeInfo,
@@ -18,7 +18,7 @@ namespace TestsGenerator.Model
             ModelInner = new ModelInnerType(idTypeInfo, typeInfo, valueStorageFactory());
         }
 
-        public override string ClassName => TypeInfo.TypeName + "Model";
+        public override string ClassName => $"{TypeInfo.TypeName}_{TypeInfo.DbSqlTypeWithoutSpace()}_Model";
 
         public override string TableName => ClassName.ToLowerInvariant();
 

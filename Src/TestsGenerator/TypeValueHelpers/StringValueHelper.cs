@@ -5,13 +5,6 @@ namespace TestsGenerator.TypeValueHelpers
 {
     internal class StringValueHelper : ValueHelper
     {
-        public StringValueHelper() : base(@"
-""{0}""
-")
-        {
-
-        }
-
         public override ValueHelper NewInstance()
         {
             return new StringValueHelper();
@@ -26,8 +19,7 @@ namespace TestsGenerator.TypeValueHelpers
                 initArray[i] = PrimitiveRandomaiser.Char();
             }
             var str = new string(initArray);
-            var newValue = string.Format(_newValueFormat, str);
-            return newValue;
+            return $@"""{str}""";
         }
     }
 }
