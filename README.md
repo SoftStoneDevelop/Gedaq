@@ -125,29 +125,6 @@ var personsAsync =
 
 But with Gedaq, we can prepare the command in advance.
 ```C#
-[Query(
-            @"
-SELECT 
-    p.id,
-    p.firstname,
-~StartInner::Identification:id~
-    i.id,
-    i.typename,
-~EndInner::Identification~
-    p.middlename,
-    p.lastname
-FROM person p
-LEFT JOIN identification i ON i.id = p.identification_id
-WHERE p.id > $1
-",
-        "GetAllPerson",
-        typeof(Person),
-        MethodType.Sync | MethodType.Async
-        ),
-        Parametr(parametrType: typeof(int), position: 1)
-        ]
-public class Person
-//...
 
 var personsCmd = connection.CreateGetAllPersonCommand(prepare: true);
 personsCmd.SetGetAllPersonParametrs(49999);
