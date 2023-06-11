@@ -161,4 +161,3 @@ var persons = await personsCmd.ExecuteGetAllPersonCommand().ToListAsync();
 
 
 ```
-[Prepare comparsion](https://github.com/SoftStoneDevelop/Gedaq.Npgsql/blob/main/Src/NpgsqlBenchmark/Benchmarks/ComparePrepareDapper.cs):
