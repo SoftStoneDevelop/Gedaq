@@ -5,48 +5,29 @@ using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
 
-namespace TestsGenerator.Generators
+namespace TestsGenerator.Generators.PostgreSQL
 {
     internal static class SelectModelTest
     {
-        private readonly static string _testName = "SelectModel";
+        private static readonly string _testName = "SelectModel";
 
         public static void Generate(
             int order,
             StringBuilder stringBuilder,
             Model.ModelType model,
-            ModelValueStorage storage,
-            Database database
+            ModelValueStorage storage
             )
         {
             var orderedValues = storage.Values.OrderBy(or => or.IdValue).ToList();
-            
-            switch (database)
-            {
-                case Database.PostgreSQL:
-                {
-                    PostgreSQL.SelectModelTest.Generate(order, stringBuilder, model, storage);
-                    break;
-                }
-                case Database.MsSQL:
-                {
-                    break;
-                }
-                case Database.MySQL:
-                {
-                    break;
-                }
-            }
 
-            SelectTestConfig(model, stringBuilder, database);
+            SelectTestConfig(model, stringBuilder);
             SelectTest(order, orderedValues, model, stringBuilder, false);
             SelectTest(order, orderedValues, model, stringBuilder, true);
         }
 
         private static void SelectTestConfig(
             Model.ModelType model,
-            StringBuilder stringBuilder,
-            Database database
+            StringBuilder stringBuilder
             )
         {
             var query = $@"
@@ -60,33 +41,33 @@ SELECT
     mi.{model.ModelInner.NullableValueColumnName},
 ~EndInner::{model.ModelInnerName}~
     m.{model.NullableValueColumnName}
-FROM {database.ToDefaultSchema()}.{model.TableName} m
-LEFT JOIN {database.ToDefaultSchema()}.{model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}
-WHERE
-    m.{model.IdColumnName} > @{model.IdColumnName}
+FROM {Database.PostgreSQL.ToDefaultSchema()}.{model.TableName} m
+LEFT JOIN {Database.PostgreSQL.ToDefaultSchema()}.{model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}
+WHERE 
+    m.{model.IdColumnName} > $1
 ORDER BY
     m.{model.IdColumnName} ASC
 ""
 ";
-
             stringBuilder.AppendLine($@"
-[Gedaq.DbConnection.Attributes.Query(
+[Gedaq.Npgsql.Attributes.Query(
             query: {query},
-            methodName:""DbConnection{_testName}"",
+            methodName:""SelectModel"",
             queryMapType: typeof({model.ClassName}),
             methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Private
             ),
-Gedaq.DbConnection.Attributes.Parametr(
-            parametrType: typeof({model.IdType}), 
-            parametrName: ""{model.IdColumnName}"", 
-            methodParametrName: ""{model.IdColumnName}"", 
-            dbType: {model.IdTypeInfo.DbTypeStr()}
+Gedaq.Npgsql.Attributes.Parametr(
+            parametrType: typeof({model.IdType}),
+            position: 1,
+            methodParametrName: ""{model.IdColumnName}"",
+            dbType: {model.IdTypeInfo.SpecialDbTypeStr()}
                 )
             ]
-        private void DbConnection{_testName}Config()
+        private void {_testName}Config()
         {{
         }}
 ");
@@ -105,12 +86,12 @@ Gedaq.DbConnection.Attributes.Parametr(
 
             stringBuilder.AppendLine($@"
         [Test, Order({order})]
-        public async Task DbConnection{_testName}Test{async}()
+        public async Task {_testName}Test{async}()
         {{
-            await using (var connection = GlobalSetUp.GetDbConnection)
+            await using (var connection = GlobalSetUp.GetConnection)
             {{
                 await connection.OpenAsync();
-                var models = {await} DbConnection{_testName}{async}(connection, 0).ToList{async}();
+                var models = {await} {_testName}{async}(connection, 0).ToList{async}();
 ");
             for (int i = 0; i < orderedValues.Count; i++)
             {
