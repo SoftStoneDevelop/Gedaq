@@ -49,7 +49,7 @@ ORDER BY
     m.{model.IdColumnName} ASC
 ""
 ";
-            stringBuilder.AppendLine($@"
+            stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.Query(
             query: {query},
             methodName:""SelectModel"",
@@ -84,7 +84,7 @@ Gedaq.Npgsql.Attributes.Parametr(
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
 
-            stringBuilder.AppendLine($@"
+            stringBuilder.Append($@"
         [Test, Order({order})]
         public async Task {_testName}Test{async}()
         {{
@@ -92,26 +92,27 @@ Gedaq.Npgsql.Attributes.Parametr(
             {{
                 await connection.OpenAsync();
                 var models = {await} {_testName}{async}(connection, 0).ToList{async}();
+                Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
 ");
             for (int i = 0; i < orderedValues.Count; i++)
             {
                 ModelValue value = orderedValues[i];
                 if (i == 0)
                 {
-                    stringBuilder.AppendLine($@"
+                    stringBuilder.Append($@"
                 var model = models[{i}];
 ");
                 }
                 else
                 {
-                    stringBuilder.AppendLine($@"
+                    stringBuilder.Append($@"
                 model = models[{i}];
 ");
                 }
 
-                stringBuilder.AppendLine(model.Assert(value));
+                stringBuilder.Append(model.Assert(value));
             }
-            stringBuilder.AppendLine($@"
+            stringBuilder.Append($@"
             }}
         }}
 ");
