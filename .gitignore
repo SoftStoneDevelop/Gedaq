@@ -247,3 +247,6 @@ ModelManifest.xml
 /Src/MSSQLTests/TestOneTimeParts
 /Src/MSSQLTests/TestsParts
 /Src/MSSQLTests/Model
+/Src/MySQLTests/TestOneTimeParts
+/Src/MySQLTests/TestsParts
+/Src/MySQLTests/Model

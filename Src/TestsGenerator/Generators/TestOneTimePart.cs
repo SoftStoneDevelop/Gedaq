@@ -66,7 +66,7 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {{
             cmd.CommandText = @""
-CREATE TABLE public.{model.ModelInner.TableName}
+CREATE TABLE {Database.PostgreSQL.ToDefaultSchema()}.{model.ModelInner.TableName}
 (
     {model.ModelInner.IdColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()} NOT NULL,
     {model.ModelInner.ValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()} NOT NULL,
@@ -85,7 +85,7 @@ CREATE TABLE public.{model.ModelInner.TableName}
         private async Task CreateModelInnerTable(SqlCommand cmd)
         {{
             cmd.CommandText = @""
-CREATE TABLE dbo.{model.ModelInner.TableName}(
+CREATE TABLE {Database.MsSQL.ToDefaultSchema()}.{model.ModelInner.TableName}(
 	{model.ModelInner.IdColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()} NOT NULL,
 	{model.ModelInner.ValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()} NOT NULL,
 	{model.ModelInner.NullableValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()} NULL,
@@ -99,6 +99,20 @@ CREATE TABLE dbo.{model.ModelInner.TableName}(
                 }
                 case Database.MySQL:
                 {
+                    _stringBuilder.AppendLine($@"
+        private async Task CreateModelInnerTable(MySqlCommand cmd)
+        {{
+            cmd.CommandText = @""
+CREATE TABLE {Database.MySQL.ToDefaultSchema()}.{model.ModelInner.TableName} (
+    {model.ModelInner.IdColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()}  NOT NULL,
+    {model.ModelInner.ValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()} NOT NULL,
+	{model.ModelInner.NullableValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()} NULL,
+    PRIMARY KEY ({model.ModelInner.IdColumnName})
+);
+"";
+            await cmd.ExecuteNonQueryAsync();
+        }}
+");
                     return;
                 }
             }
@@ -114,7 +128,7 @@ CREATE TABLE dbo.{model.ModelInner.TableName}(
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {{
             cmd.CommandText = @""
-DROP TABLE public.{model.ModelInner.TableName};
+DROP TABLE {Database.PostgreSQL.ToDefaultSchema()}.{model.ModelInner.TableName};
 "";
             await cmd.ExecuteNonQueryAsync();
         }}
@@ -127,7 +141,7 @@ DROP TABLE public.{model.ModelInner.TableName};
         private async Task DropModelInnerTable(SqlCommand cmd)
         {{
             cmd.CommandText = @""
-DROP TABLE dbo.{model.ModelInner.TableName}
+DROP TABLE {Database.MsSQL.ToDefaultSchema()}.{model.ModelInner.TableName}
 "";
             await cmd.ExecuteNonQueryAsync();
         }}
@@ -136,6 +150,15 @@ DROP TABLE dbo.{model.ModelInner.TableName}
                 }
                 case Database.MySQL:
                 {
+                    _stringBuilder.AppendLine($@"
+        private async Task DropModelInnerTable(MySqlCommand cmd)
+        {{
+            cmd.CommandText = @""
+DROP TABLE IF EXISTS {Database.MySQL.ToDefaultSchema()}.{model.ModelInner.TableName}
+"";
+            await cmd.ExecuteNonQueryAsync();
+        }}
+");
                     return;
                 }
             }
@@ -151,15 +174,15 @@ DROP TABLE dbo.{model.ModelInner.TableName}
         private async Task CreateModelTable(NpgsqlCommand cmd)
         {{
             cmd.CommandText = @""
-CREATE TABLE public.{model.TableName}
+CREATE TABLE {Database.PostgreSQL.ToDefaultSchema()}.{model.TableName}
 (
     {model.IdColumnName} {model.IdTypeInfo.DbSqlType}{model.IdTypeInfo.DbSqlAfterType()} NOT NULL,
     {model.ValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()} NOT NULL,
     {model.NullableValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()},
     {model.ModelInnerColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()},
-    CONSTRAINT {model.TableName}_pkey PRIMARY KEY (id),
+    CONSTRAINT {model.TableName}_pkey PRIMARY KEY ({model.IdColumnName}),
     CONSTRAINT {model.TableName}_{model.ModelInner.TableName}_fk FOREIGN KEY ({model.ModelInnerColumnName})
-        REFERENCES public.{model.ModelInner.TableName} ({model.ModelInner.IdColumnName}) MATCH SIMPLE
+        REFERENCES {Database.PostgreSQL.ToDefaultSchema()}.{model.ModelInner.TableName} ({model.ModelInner.IdColumnName}) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -175,14 +198,14 @@ CREATE TABLE public.{model.TableName}
         private async Task CreateModelTable(SqlCommand cmd)
         {{
             cmd.CommandText = @""
-CREATE TABLE dbo.{model.TableName}(
+CREATE TABLE {Database.MsSQL.ToDefaultSchema()}.{model.TableName}(
 	{model.IdColumnName} {model.IdTypeInfo.DbSqlType}{model.IdTypeInfo.DbSqlAfterType()} NOT NULL,
 	{model.ValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()} NOT NULL,
     {model.NullableValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()} NULL,
 	{model.ModelInnerColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()} NULL,
     CONSTRAINT PK_{model.TableName} PRIMARY KEY NONCLUSTERED ({model.IdColumnName}),
     CONSTRAINT FK_{model.TableName}_{model.ModelInner.TableName} FOREIGN KEY ({model.ModelInnerColumnName})
-        REFERENCES dbo.{model.ModelInner.TableName} ({model.ModelInner.IdColumnName})
+        REFERENCES {Database.MsSQL.ToDefaultSchema()}.{model.ModelInner.TableName} ({model.ModelInner.IdColumnName})
         ON DELETE CASCADE
         ON UPDATE CASCADE
 )
@@ -194,6 +217,26 @@ CREATE TABLE dbo.{model.TableName}(
                 }
                 case Database.MySQL:
                 {
+                    _stringBuilder.AppendLine($@"
+        private async Task CreateModelTable(MySqlCommand cmd)
+        {{
+            cmd.CommandText = @""
+CREATE TABLE {Database.MySQL.ToDefaultSchema()}.{model.TableName}
+(
+    {model.IdColumnName} {model.IdTypeInfo.DbSqlType}{model.IdTypeInfo.DbSqlAfterType()} NOT NULL,
+    {model.ValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()} NOT NULL,
+    {model.NullableValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()},
+    {model.ModelInnerColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()},
+    PRIMARY KEY ({model.IdColumnName}),
+    FOREIGN KEY ({model.ModelInnerColumnName})
+        REFERENCES {Database.MySQL.ToDefaultSchema()}.{model.ModelInner.TableName} ({model.ModelInner.IdColumnName})
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+);
+"";
+            await cmd.ExecuteNonQueryAsync();
+        }}
+");
                     return;
                 }
             }
@@ -209,7 +252,7 @@ CREATE TABLE dbo.{model.TableName}(
         private async Task DropModelTable(NpgsqlCommand cmd)
         {{
             cmd.CommandText = @""
-DROP TABLE public.{model.TableName};
+DROP TABLE {Database.PostgreSQL.ToDefaultSchema()}.{model.TableName};
 "";
             await cmd.ExecuteNonQueryAsync();
         }}
@@ -222,7 +265,7 @@ DROP TABLE public.{model.TableName};
         private async Task DropModelTable(SqlCommand cmd)
         {{
             cmd.CommandText = @""
-DROP TABLE dbo.{model.TableName}
+DROP TABLE {Database.MsSQL.ToDefaultSchema()}.{model.TableName}
 "";
             await cmd.ExecuteNonQueryAsync();
         }}
@@ -231,6 +274,15 @@ DROP TABLE dbo.{model.TableName}
                 }
                 case Database.MySQL:
                 {
+                    _stringBuilder.AppendLine($@"
+        private async Task DropModelTable(MySqlCommand cmd)
+        {{
+            cmd.CommandText = @""
+DROP TABLE IF EXISTS {Database.MySQL.ToDefaultSchema()}.{model.TableName};
+"";
+            await cmd.ExecuteNonQueryAsync();
+        }}
+");
                     return;
                 }
             }

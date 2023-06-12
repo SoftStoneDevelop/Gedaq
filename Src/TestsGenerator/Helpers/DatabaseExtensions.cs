@@ -31,7 +31,10 @@ using System;
                 case Database.MySQL:
                 {
                     return @"
-//TODO
+using MySqlConnector;
+using System;
+using Gedaq.Common.Enums;
+using Gedaq.MySqlConnector.Attributes;
 ";
                 }
                 default:
@@ -53,10 +56,9 @@ using System;
                 }
                 case Database.MySQL:
                 {
-                    return @"
-//TODO
-";
+                    return @"gedaqtests";
                 }
+
                 default:
                     return "";
             }
