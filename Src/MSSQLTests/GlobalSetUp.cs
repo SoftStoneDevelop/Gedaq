@@ -60,6 +60,7 @@ CREATE DATABASE gedaqtests
                 await masterConnection.OpenAsync();
                 await using var command = masterConnection.CreateCommand();
                 command.CommandText = $@"
+ALTER DATABASE gedaqtests SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 DROP DATABASE gedaqtests;
 ";
                 await command.ExecuteNonQueryAsync();
