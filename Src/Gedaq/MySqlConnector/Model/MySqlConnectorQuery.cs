@@ -27,7 +27,7 @@ namespace Gedaq.MySqlConnector.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out MySqlConnectorQuery method)
         {
             method = null;
-            if (namedArguments.Length != 8)
+            if (namedArguments.Length != 9)
             {
                 return false;
             }
@@ -63,6 +63,7 @@ namespace Gedaq.MySqlConnector.Model
                     namedArguments[1],
                     namedArguments[3],
                     namedArguments[7],
+                    namedArguments[8],
                     containsType
                     );
 

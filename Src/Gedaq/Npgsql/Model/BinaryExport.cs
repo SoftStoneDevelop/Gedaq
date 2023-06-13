@@ -24,7 +24,7 @@ namespace Gedaq.Npgsql.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out BinaryExport method)
         {
             method = null;
-            if (namedArguments.Length != 6)
+            if (namedArguments.Length != 7)
             {
                 return false;
             }
@@ -50,6 +50,7 @@ namespace Gedaq.Npgsql.Model
                     namedArguments[1],
                     namedArguments[3],
                     namedArguments[5],
+                    namedArguments[6],
                     containsType
                     );
 

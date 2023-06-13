@@ -4,7 +4,7 @@
 		<IsPackable>false</IsPackable>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Gedaq.Npgsql" Version="1.2.3" />
+		<PackageReference Include="Gedaq.Npgsql" Version="1.2.4" />
 		<PackageReference Include="System.Linq.Async" Version="6.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.2" />

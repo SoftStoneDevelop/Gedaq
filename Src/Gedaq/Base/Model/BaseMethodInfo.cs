@@ -18,16 +18,19 @@ namespace Gedaq.Base.Model
             TypedConstant nameArgument,
             TypedConstant typeArgument,
             TypedConstant accessModifierArgument,
+            TypedConstant asyncResultArgument,
             INamedTypeSymbol containsType
             )
         {
             SetMethodName(nameArgument);
             SetMethodType(typeArgument);
             SetAccessModifier(accessModifierArgument, containsType);
+            SetAsyncResultType(asyncResultArgument);
         }
 
         public string MethodName { get; private set; }
         public MethodType MethodType { get; private set; }
+        public AsyncResult AsyncResultType { get; private set; }
         public AccessModifier AccessModifier { get; private set; }
 
         private void SetMethodType(TypedConstant argument)
@@ -41,6 +44,19 @@ namespace Gedaq.Base.Model
             }
 
             MethodType = (MethodType)argument.Value;
+        }
+
+        private void SetAsyncResultType(TypedConstant argument)
+        {
+            if (argument.Kind != TypedConstantKind.Enum ||
+                !(argument.Type is INamedTypeSymbol namedTypeSymbol3) ||
+                !namedTypeSymbol3.IsAssignableFrom("Gedaq.Common.Enums", "AsyncResult")
+                )
+            {
+                throw new ArgumentException($"{nameof(SetAsyncResultType)}:Wrong argument");
+            }
+
+            AsyncResultType = (AsyncResult)argument.Value;
         }
 
         private void SetAccessModifier(TypedConstant argument, INamedTypeSymbol containsType)

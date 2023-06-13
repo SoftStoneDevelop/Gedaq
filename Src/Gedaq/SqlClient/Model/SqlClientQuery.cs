@@ -24,7 +24,7 @@ namespace Gedaq.SqlClient.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out SqlClientQuery method)
         {
             method = null;
-            if (namedArguments.Length != 7)
+            if (namedArguments.Length != 8)
             {
                 return false;
             }
@@ -55,6 +55,7 @@ namespace Gedaq.SqlClient.Model
                     namedArguments[1],
                     namedArguments[3],
                     namedArguments[6],
+                    namedArguments[7],
                     containsType
                     );
 

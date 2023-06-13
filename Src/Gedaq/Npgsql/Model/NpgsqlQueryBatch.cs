@@ -18,7 +18,7 @@ namespace Gedaq.Npgsql.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out NpgsqlQueryBatch queryBatch)
         {
             queryBatch = null;
-            if (namedArguments.Length != 4)
+            if (namedArguments.Length != 5)
             {
                 return false;
             }
@@ -34,6 +34,7 @@ namespace Gedaq.Npgsql.Model
                     namedArguments[0],
                     namedArguments[2],
                     namedArguments[3],
+                    namedArguments[4],
                     containsType
                     );
 

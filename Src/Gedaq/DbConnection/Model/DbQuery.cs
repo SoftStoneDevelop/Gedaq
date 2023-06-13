@@ -20,7 +20,7 @@ namespace Gedaq.DbConnection.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out DbQuery query)
         {
             query = null;
-            if (namedArguments.Length != 7)
+            if (namedArguments.Length != 8)
             {
                 return false;
             }
@@ -51,6 +51,7 @@ namespace Gedaq.DbConnection.Model
                     namedArguments[1], 
                     namedArguments[3], 
                     namedArguments[6],
+                    namedArguments[7],
                     containsType
                     );
             methodSource.ContainTypeName = containsType;
