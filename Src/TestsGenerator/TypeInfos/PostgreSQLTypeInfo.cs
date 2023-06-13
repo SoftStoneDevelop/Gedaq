@@ -19,6 +19,8 @@ namespace TestsGenerator.TypeInfos
 
         public readonly NpgsqlDbType NpgsqlDbType;
 
+        public override string DefaultMapType => NpgsqlDbType.ToDefaultMapType();
+
         public override string SpecialDbTypeStr()
         {
             return $"NpgsqlTypes.NpgsqlDbType.{NpgsqlDbType.ToString()}";

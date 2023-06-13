@@ -88,5 +88,81 @@ namespace TestsGenerator.Helpers
                 }
             }
         }
+
+        public static string ToDefaultMapType(this SqlDbType npgsqlDbType)
+        {
+            switch (npgsqlDbType)
+            {
+                case SqlDbType.Int:
+                {
+                    return "System.Int32";
+                }
+
+                case SqlDbType.BigInt:
+                {
+                    return "System.Int64";
+                }
+
+                case SqlDbType.TinyInt:
+                {
+                    return "System.Byte";
+                }
+
+                case SqlDbType.SmallInt:
+                {
+                    return "System.Int16";
+                }
+
+                case SqlDbType.Decimal:
+                {
+                    return "System.Decimal";
+                }
+
+                case SqlDbType.Float:
+                {
+                    return "System.Double";
+                }
+
+                case SqlDbType.Bit:
+                {
+                    return "System.Boolean";
+                }
+
+                case SqlDbType.Real:
+                {
+                    return "System.Single";
+                }
+
+                case SqlDbType.Time:
+                {
+                    return "System.TimeSpan";
+                }
+
+                case SqlDbType.DateTime2:
+                {
+                    return "System.DateTime";
+                }
+
+                case SqlDbType.Date:
+                {
+                    return "System.DateTime";
+                }
+
+                case SqlDbType.Text:
+                {
+                    return "System.String";
+                }
+
+                case SqlDbType.UniqueIdentifier:
+                {
+                    return "System.Guid";
+                }
+
+                default:
+                {
+                    throw new NotImplementedException();
+                }
+            }
+        }
     }
 }

@@ -83,5 +83,76 @@ namespace TestsGenerator.Helpers
                 }
             }
         }
+
+        public static string ToDefaultMapType(this MySqlDbType mySqlDbType)
+        {
+            switch (mySqlDbType)
+            {
+                case MySqlDbType.Int32:
+                {
+                    return "System.Int32";
+                }
+
+                case MySqlDbType.Int64:
+                {
+                    return "System.Int64";
+                }
+
+                case MySqlDbType.Int16:
+                {
+                    return "System.Int16";
+                }
+
+                case MySqlDbType.Bool:
+                {
+                    return "System.Boolean";
+                }
+
+                case MySqlDbType.Decimal:
+                {
+                    return "System.Decimal";
+                }
+
+                case MySqlDbType.Double:
+                {
+                    return "System.Double";
+                }
+
+                case MySqlDbType.Float:
+                {
+                    return "System.Single";
+                }
+
+                case MySqlDbType.Date:
+                {
+                    return "System.DateTime";
+                }
+
+                case MySqlDbType.DateTime:
+                {
+                    return "System.DateTime";
+                }
+
+                case MySqlDbType.Time:
+                {
+                    return "System.TimeSpan";
+                }
+
+                case MySqlDbType.Text:
+                {
+                    return "System.String";
+                }
+
+                case MySqlDbType.Guid:
+                {
+                    return "System.Guid";
+                }
+
+                default:
+                {
+                    throw new NotImplementedException();
+                }
+            }
+        }
     }
 }

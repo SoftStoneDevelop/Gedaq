@@ -19,6 +19,8 @@ namespace TestsGenerator.TypeInfos
 
         public readonly SqlDbType SqlDbType;
 
+        public override string DefaultMapType => SqlDbType.ToDefaultMapType();
+
         public override string SpecialDbTypeStr()
         {
             return $"System.Data.{SqlDbType.ToString()}";

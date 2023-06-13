@@ -20,6 +20,8 @@ namespace TestsGenerator.TypeInfos
 
         public readonly MySqlDbType MySqlDbType;
 
+        public override string DefaultMapType => MySqlDbType.ToDefaultMapType();
+
         public override string SpecialDbTypeStr()
         {
             return $"MySqlConnector.{MySqlDbType.ToString()}";

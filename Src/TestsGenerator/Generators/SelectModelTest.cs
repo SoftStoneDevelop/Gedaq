@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using MySqlConnector;
+using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
-using TestsGenerator.TypeValueHelpers;
 
 namespace TestsGenerator.Generators
 {
@@ -46,12 +47,11 @@ namespace TestsGenerator.Generators
             SelectTest(order, orderedValues, model, stringBuilder, false);
             SelectTest(order, orderedValues, model, stringBuilder, true);
 
-            if(CanPassToObjArrCorrect(model, database))
-            {
-                SelectToObjArrTestConfig(model, stringBuilder, database);
-                SelectToObjArrTest(order, model, orderedValues, stringBuilder, false);
-                SelectToObjArrTest(order, model, orderedValues, stringBuilder, true);
-            }
+            BatchTests(order, orderedValues, model, stringBuilder, database);
+
+            SelectToObjArrTestConfig(model, stringBuilder, database);
+            SelectToObjArrTest(order, model, orderedValues, stringBuilder, false);
+            SelectToObjArrTest(order, model, orderedValues, stringBuilder, true);
         }
 
         private static void SelectTestConfig(
@@ -146,42 +146,6 @@ Gedaq.DbConnection.Attributes.Parametr(
             }}
         }}
 ");
-        }
-
-        private static bool CanPassToObjArrCorrect(
-            Model.ModelType model,
-            Database database
-            )
-        {
-            switch(database)
-            {
-                case Database.PostgreSQL:
-                {
-                    return
-                        model.ValueStorage is not CharValueHelper &&
-                        model.ValueStorage is not ByteValueHelper &&
-                        model.ValueStorage is not SByteValueHelper &&
-                        model.ValueStorage is not TimeOnlyValueHelper &&
-                        model.ValueStorage is not DateOnlyValueHelper;
-                }
-
-                case Database.MsSQL:
-                {
-                    return
-                        model.ValueStorage is not DateOnlyValueHelper;
-                }
-
-                case Database.MySQL:
-                {
-                    return
-                        model.ValueStorage is not DateOnlyValueHelper;
-                }
-
-                default:
-                { 
-                    return true; 
-                }
-            }
         }
 
         private static void SelectToObjArrTestConfig(
@@ -281,8 +245,8 @@ ORDER BY
         {
             stringBuilder.Append($@"
                 Assert.That(model, Is.Not.Null);
-                Assert.That(({model.IdType})model[0], Is.EqualTo({expectValue.Id}));//Id
-                Assert.That(({model.ValueType})model[1], Is.EqualTo({expectValue.Value}));//Value
+                Assert.That(({model.IdTypeInfo.DefaultMapType})model[0], Is.EqualTo({DefaultTypeHelper.Convert(model.IdTypeInfo.TypeFullName, model.IdTypeInfo.DefaultMapType, expectValue.Id)}));//Id
+                Assert.That(({model.TypeInfo.DefaultMapType})model[1], Is.EqualTo({DefaultTypeHelper.Convert(model.TypeInfo.TypeFullName, model.TypeInfo.DefaultMapType, expectValue.Value)}));//Value
 ");
             if (expectValue.InnerModel == null)
             {
@@ -295,8 +259,8 @@ ORDER BY
             else
             {
                 stringBuilder.Append($@"
-                Assert.That(({model.ModelInner.IdType})model[2], Is.EqualTo({expectValue.InnerModel.Id}));//InnerModel.Id
-                Assert.That(({model.ModelInner.ValueType})model[3], Is.EqualTo({expectValue.InnerModel.Value}));//InnerModel.Value
+                Assert.That(({model.ModelInner.IdTypeInfo.DefaultMapType})model[2], Is.EqualTo({DefaultTypeHelper.Convert(model.ModelInner.IdTypeInfo.TypeFullName, model.ModelInner.IdTypeInfo.DefaultMapType, expectValue.InnerModel.Id)}));//InnerModel.Id
+                Assert.That(({model.ModelInner.TypeInfo.DefaultMapType})model[3], Is.EqualTo({DefaultTypeHelper.Convert(model.ModelInner.TypeInfo.TypeFullName, model.ModelInner.TypeInfo.DefaultMapType, expectValue.InnerModel.Value)}));//InnerModel.Value
 ");
                 if (expectValue.InnerModel.NullableValue == ValueConstants.NullValue)
                 {
@@ -307,7 +271,7 @@ ORDER BY
                 else
                 {
                     stringBuilder.Append($@"
-                Assert.That(({model.ModelInner.NullableValueType})model[4], Is.EqualTo({expectValue.InnerModel.NullableValue}));//InnerModel.NullableValue
+                Assert.That(({model.ModelInner.TypeInfo.DefaultMapTypeNullable})model[4], Is.EqualTo({DefaultTypeHelper.Convert(model.ModelInner.TypeInfo.TypeFullName, model.ModelInner.TypeInfo.DefaultMapType, expectValue.InnerModel.NullableValue)}));//InnerModel.NullableValue
 ");
                 }
             }
@@ -320,9 +284,169 @@ ORDER BY
             else
             {
                 stringBuilder.Append($@"
-                Assert.That(({model.NullableValueType})model[5], Is.EqualTo({expectValue.NullableValue}));
+                Assert.That(({model.TypeInfo.DefaultMapTypeNullable})model[5], Is.EqualTo({DefaultTypeHelper.Convert(model.TypeInfo.TypeFullName, model.TypeInfo.DefaultMapType, expectValue.NullableValue)}));
 ");
             }
+        }
+
+        private static void BatchTests(
+            int order,
+            List<ModelValue> orderedValues,
+            Model.ModelType model,
+            StringBuilder stringBuilder,
+            Database database
+            )
+        {
+            switch (database)
+            {
+                case Database.PostgreSQL:
+                {
+                    if(!NpgsqlFactory.Instance.CanCreateBatch)
+                    {
+                        return;
+                    }
+                    break;
+                }
+                case Database.MsSQL:
+                {
+                    if (!SqlClientFactory.Instance.CanCreateBatch)
+                    {
+                        return;
+                    }
+                    break;
+                }
+                case Database.MySQL:
+                {
+                    if (!MySqlConnectorFactory.Instance.CanCreateBatch)
+                    {
+                        return;
+                    }
+
+                    break;
+                }
+            }
+
+            SelectBatchReadTestConfig(stringBuilder);
+            SelectBatchReadTest(order, orderedValues, model, stringBuilder, false);
+            SelectBatchReadTest(order, orderedValues, model, stringBuilder, true);
+        }
+
+        private static void SelectBatchReadTestConfig(
+            StringBuilder stringBuilder
+            )
+        {
+            stringBuilder.Append($@"
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: ""DbConnection{_testName}Batch"",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Private
+            ),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: ""DbConnection{_testName}"",
+            position: 1
+            ),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: ""DbConnection{_testName}"",
+            position: 2
+            )
+            ]
+        private void DbConnection{_testName}BatchConfig()
+        {{
+        }}
+");
+        }
+
+        private static void SelectBatchReadTest(
+            int order,
+            List<ModelValue> orderedValues,
+            Model.ModelType model,
+            StringBuilder stringBuilder,
+            bool isAsync
+            )
+        {
+            var await = isAsync ? "await" : string.Empty;
+            var async = isAsync ? "Async" : string.Empty;
+
+            var firstBatchStart = Random.Shared.Next(0, orderedValues.Count - 2);
+            var secondBatchStart = Random.Shared.Next(0, orderedValues.Count - 2);
+            stringBuilder.Append($@"
+        [Test, Order({order})]
+        public async Task DbConnection{_testName}BatchTest{async}()
+        {{
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {{
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                {await} foreach(var batchResult in DbConnection{_testName}Batch{async}(connection, {orderedValues[firstBatchStart].Id}, {orderedValues[secondBatchStart].Id}))
+                {{
+                    if(++resultIndex == 1)
+                    {{
+                        var models = {await} batchResult.ToList{async}();
+");
+            firstBatchStart++;
+            stringBuilder.Append($@"
+                        Assert.That(models, Has.Count.EqualTo({orderedValues.Count - firstBatchStart}));
+");
+            var index = 0;
+            for (; firstBatchStart < orderedValues.Count; firstBatchStart++)
+            {
+                ModelValue value = orderedValues[firstBatchStart];
+                if (index == 0)
+                {
+                    stringBuilder.Append($@"
+                        var model = models[{index}];
+");
+                }
+                else
+                {
+                    stringBuilder.Append($@"
+                        model = models[{index}];
+");
+                }
+
+                stringBuilder.Append($@"    {model.Assert(value)}");
+                index++;
+            }
+
+            secondBatchStart++;
+            stringBuilder.Append($@"
+                        continue;
+                    }}                    
+
+                    if(resultIndex == 2)
+                    {{
+                        var models = {await} batchResult.ToList{async}();
+                        Assert.That(models, Has.Count.EqualTo({orderedValues.Count - secondBatchStart}));
+");
+            index = 0;
+            for (; secondBatchStart < orderedValues.Count; secondBatchStart++)
+            {
+                ModelValue value = orderedValues[secondBatchStart];
+                if (index == 0)
+                {
+                    stringBuilder.Append($@"
+                        var model = models[{index}];
+");
+                }
+                else
+                {
+                    stringBuilder.Append($@"
+                        model = models[{index}];
+");
+                }
+                stringBuilder.Append($@"    {model.Assert(value)}");
+                index++;
+            }
+            stringBuilder.Append($@"
+                        continue;
+                    }}
+                    
+                    //todo return false
+                }}
+            }}
+        }}
+");
         }
     }
 }

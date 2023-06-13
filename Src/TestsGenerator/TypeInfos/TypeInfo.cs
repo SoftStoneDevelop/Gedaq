@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using System.Text.RegularExpressions;
+using TestsGenerator.Helpers;
 
 namespace TestsGenerator.TypeInfos
 {
@@ -36,6 +37,21 @@ namespace TestsGenerator.TypeInfos
         public readonly int Size;
 
         public readonly string DbSqlType;
+
+        public abstract string DefaultMapType { get; }
+
+        public string DefaultMapTypeNullable
+        {
+            get
+            {
+                if(DefaultMapType.IsNullable())
+                {
+                    return DefaultMapType;
+                }
+
+                return $"{DefaultMapType}?";
+            }
+        }
 
         public string DbSqlTypeWithoutSpace()
         {

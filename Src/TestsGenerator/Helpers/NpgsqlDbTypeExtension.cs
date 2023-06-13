@@ -78,13 +78,84 @@ namespace TestsGenerator.Helpers
                 {
                     return "inet";
                 }
-                case NpgsqlDbType.MacAddr:
-                {
-                    return "macaddr";
-                }
                 case NpgsqlDbType.Uuid:
                 {
                     return "uuid";
+                }
+                default:
+                {
+                    throw new NotImplementedException();
+                }
+            }
+        }
+
+        public static string ToDefaultMapType(this NpgsqlDbType npgsqlDbType)
+        {
+            switch (npgsqlDbType)
+            {
+                case NpgsqlDbType.Bigint:
+                {
+                    return "System.Int64";
+                }
+                case NpgsqlDbType.Double:
+                {
+                    return "System.Double";
+                }
+                case NpgsqlDbType.Integer:
+                {
+                    return "System.Int32";
+                }
+                case NpgsqlDbType.Numeric:
+                {
+                    return "System.Decimal";
+                }
+                case NpgsqlDbType.Real:
+                {
+                    return "System.Single";
+                }
+                case NpgsqlDbType.Smallint:
+                {
+                    return "System.Int16";
+                }
+                case NpgsqlDbType.Boolean:
+                {
+                    return "System.Boolean";
+                }
+                case NpgsqlDbType.Char:
+                {
+                    return "System.String";
+                }
+                case NpgsqlDbType.Text:
+                {
+                    return "System.String";
+                }
+                case NpgsqlDbType.Timestamp:
+                {
+                    return "System.DateTime";
+                }
+                case NpgsqlDbType.Time:
+                {
+                    return "System.TimeSpan";
+                }
+                case NpgsqlDbType.TimeTz:
+                {
+                    return "System.DateTimeOffset";
+                }
+                case NpgsqlDbType.Date:
+                {
+                    return "System.DateTime";
+                }
+                case NpgsqlDbType.TimestampTz:
+                {
+                    return "System.DateTime";
+                }
+                case NpgsqlDbType.Inet:
+                {
+                    return "System.Net.IPAddress";
+                }
+                case NpgsqlDbType.Uuid:
+                {
+                    return "System.Guid";
                 }
                 default:
                 {
