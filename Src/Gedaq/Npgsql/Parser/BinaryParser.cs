@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("NpgsqlTests")]
+[assembly: InternalsVisibleTo("PostgreSQLTests")]
 namespace Gedaq.Npgsql.Parser
 {
     internal class BinaryParser

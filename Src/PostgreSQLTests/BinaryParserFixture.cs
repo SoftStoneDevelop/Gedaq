@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using System;
 
-namespace NpgsqlTests
+namespace Tests
 {
     [TestFixture]
     [Parallelizable(ParallelScope.All)]
