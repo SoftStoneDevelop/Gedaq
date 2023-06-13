@@ -47,6 +47,9 @@ namespace TestsGenerator.Generators
             SelectTest(order, orderedValues, model, stringBuilder, false);
             SelectTest(order, orderedValues, model, stringBuilder, true);
 
+            CommandSelectTest(order, orderedValues, model, stringBuilder, false);
+            CommandSelectTest(order, orderedValues, model, stringBuilder, true);
+
             BatchTests(order, orderedValues, model, stringBuilder, database);
 
             SelectToObjArrTestConfig(model, stringBuilder, database);
@@ -141,6 +144,59 @@ Gedaq.DbConnection.Attributes.Parametr(
                 }
 
                 stringBuilder.Append(model.Assert(value));
+            }
+            stringBuilder.Append($@"
+            }}
+        }}
+");
+        }
+
+        private static void CommandSelectTest(
+            int order,
+            List<ModelValue> orderedValues,
+            Model.ModelType model,
+            StringBuilder stringBuilder,
+            bool isAsync
+            )
+        {
+            var await = isAsync ? "await" : string.Empty;
+            var async = isAsync ? "Async" : string.Empty;
+
+            var valIndex = Random.Shared.Next(0, orderedValues.Count - 2);
+            stringBuilder.Append($@"
+        [Test, Order({order})]
+        public async Task DbConnectionCommand{_testName}Test{async}()
+        {{
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {{
+                await connection.OpenAsync();
+                var cmd = {await} CreateDbConnection{_testName}Command{async}(connection);
+                SetDbConnection{_testName}Parametrs(cmd, {orderedValues[valIndex].Id});
+                var models = {await} ExecuteDbConnection{_testName}Command{async}(cmd).ToList{async}();
+");
+            valIndex++;
+            stringBuilder.Append($@"
+                Assert.That(models, Has.Count.EqualTo({orderedValues.Count - valIndex}));
+");
+            var index = 0;
+            for (; valIndex < orderedValues.Count; valIndex++)
+            {
+                ModelValue value = orderedValues[valIndex];
+                if (index == 0)
+                {
+                    stringBuilder.Append($@"
+                var model = models[{index}];
+");
+                }
+                else
+                {
+                    stringBuilder.Append($@"
+                model = models[{index}];
+");
+                }
+
+                stringBuilder.Append(model.Assert(value));
+                index++;
             }
             stringBuilder.Append($@"
             }}
