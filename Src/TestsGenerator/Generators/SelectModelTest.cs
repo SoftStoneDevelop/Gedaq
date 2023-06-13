@@ -170,7 +170,7 @@ Gedaq.DbConnection.Attributes.Parametr(
             await using (var connection = GlobalSetUp.GetDbConnection)
             {{
                 await connection.OpenAsync();
-                var cmd = {await} CreateDbConnection{_testName}Command{async}(connection);
+                {await} using var cmd = {await} CreateDbConnection{_testName}Command{async}(connection);
                 SetDbConnection{_testName}Parametrs(cmd, {orderedValues[valIndex].Id});
                 var models = {await} ExecuteDbConnection{_testName}Command{async}(cmd).ToList{async}();
 ");
