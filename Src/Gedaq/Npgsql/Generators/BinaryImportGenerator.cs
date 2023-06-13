@@ -102,7 +102,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace}
             if (methodType == MethodType.Async)
             {
                 _methodCode.Append($@"
-        {binaryImport.AccessModifier.ToLowerInvariant()} {binaryImport.MethodStaticModifier} async Task {binaryImport.MethodName}Async(
+        {binaryImport.AccessModifier.ToLowerInvariant()} {binaryImport.MethodStaticModifier} async {binaryImport.MethodInfo.AsyncResultType.ToResultType()} {binaryImport.MethodName}Async(
             {binaryImport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
             {collectionType} collection,
             TimeSpan? timeout = null,

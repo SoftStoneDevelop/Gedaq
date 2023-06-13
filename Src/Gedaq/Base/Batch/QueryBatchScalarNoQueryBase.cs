@@ -91,7 +91,7 @@ namespace Gedaq.Base.Batch
             else
             {
                 builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<{typeName}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Async(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async {source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Async(
 ");
             }
         }
@@ -111,7 +111,7 @@ namespace Gedaq.Base.Batch
             else
             {
                 builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async Task<System.Int32> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "NonQuery")}{source.MethodName}Async(
+        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async {source.MethodInfo.AsyncResultType.ToResultType()}<System.Int32> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "NonQuery")}{source.MethodName}Async(
 ");
             }
         }
