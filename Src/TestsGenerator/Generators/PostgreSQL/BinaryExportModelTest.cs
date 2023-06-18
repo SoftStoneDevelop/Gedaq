@@ -52,6 +52,14 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
 "",
             methodName:""{_testName}"",
             queryMapType: typeof({model.ClassName}),
+            dbTypes:
+            new NpgsqlDbType[]
+            {{
+                {model.IdTypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
+            }},
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Private

@@ -26,7 +26,7 @@ lastname
 ", 
             "BinaryExportTable",
             typeof(ReadFixtureModel), 
-            Gedaq.Common.Enums.MethodType.Sync | Gedaq.Common.Enums.MethodType.Async
+            methodType: Gedaq.Common.Enums.MethodType.Sync | Gedaq.Common.Enums.MethodType.Async
             )]
         public void BinaryExportTable()
         {
@@ -93,7 +93,7 @@ ORDER BY p.id ASC
 ", 
             "BinaryExportSubquery",
             typeof(ReadFixtureModel),
-            Gedaq.Common.Enums.MethodType.Sync | Gedaq.Common.Enums.MethodType.Async
+            methodType: Gedaq.Common.Enums.MethodType.Sync | Gedaq.Common.Enums.MethodType.Async
             )]
         public void BinaryExportSubquery()
         {

@@ -174,12 +174,14 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
 
             if (NpgsqlMapTypeHelper.IsKnownProviderType(binaryExport.MapTypeName))
             {
+                var field = binaryExport.Aliases.AllFieldsOrderByPosition().First();
                 _methodCode.Append($@"
-                    yield return export.Read{async}<{binaryExport.MapTypeName.GetFullTypeName()}>{cancelation};
+                    yield return export.Read{async}<{binaryExport.MapTypeName.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});
 ");
             }
             else if (binaryExport.MapTypeName.IsNullableType())
             {
+                var field = binaryExport.Aliases.AllFieldsOrderByPosition().First();
                 _methodCode.Append($@"
                     if (export.IsNull)
                     {{
@@ -188,14 +190,15 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
                     }}
                     else
                     {{
-                        yield return export.Read{async}<{binaryExport.MapTypeName.GetFullTypeName(true, addQuestionNoatble: false)}>{cancelation};
+                        yield return export.Read{async}<{binaryExport.MapTypeName.GetFullTypeName(true, addQuestionNoatble: false)}>({GetReadParametrs(field, isAsync)});
                     }}
 ");
             }
             else if (binaryExport.MapTypeName.Name == nameof(Object))
             {
+                var field = binaryExport.Aliases.AllFieldsOrderByPosition().First();
                 _methodCode.Append($@"
-                    yield return export.Read{async}<object>{cancelation};
+                    yield return export.Read{async}<object>({GetReadParametrs(field, isAsync)});
 ");
             }
             else if (binaryExport.MapTypeName.TypeKind == TypeKind.Class || binaryExport.MapTypeName.TypeKind == TypeKind.Struct)
@@ -207,9 +210,36 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
             }
             else
             {
+                var field = binaryExport.Aliases.AllFieldsOrderByPosition().First();
                 _methodCode.Append($@"
-                    yield return export.Read{async}<{binaryExport.MapTypeName.GetFullTypeName()}>{cancelation};
+                    yield return export.Read{async}<{binaryExport.MapTypeName.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});
 ");
+            }
+        }
+
+        private string GetReadParametrs(Field field, bool isAsync)
+        {
+            if (field.HaveAdditionalInfo)
+            {
+                if(isAsync)
+                {
+                    return $"(NpgsqlTypes.NpgsqlDbType){((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType}, cancellationToken";
+                }
+                else
+                {
+                    return $"(NpgsqlTypes.NpgsqlDbType){((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType}";
+                }
+            }
+            else
+            {
+                if (isAsync)
+                {
+                    return "cancellationToken";
+                }
+                else
+                {
+                    return string.Empty;
+                }
             }
         }
 
@@ -364,13 +394,13 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
             if (propertyType.IsNullableType())
             {
                 _methodCode.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>{cancelation};
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({GetReadParametrs(field, isAsync)});
 ");
             }
             else
             {
                 _methodCode.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName()}>{cancelation};
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});
 ");
             }
 

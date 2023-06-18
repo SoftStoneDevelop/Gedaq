@@ -15,17 +15,17 @@ namespace Gedaq.Base.Model
     internal class BaseMethodInfo : IMethodInfo
     {
         public BaseMethodInfo(
-            TypedConstant nameArgument,
-            TypedConstant typeArgument,
-            TypedConstant accessModifierArgument,
-            TypedConstant asyncResultArgument,
+            TypedConstant methodName,
+            TypedConstant methodType,
+            TypedConstant accessModifier,
+            TypedConstant asyncResultType,
             INamedTypeSymbol containsType
             )
         {
-            SetMethodName(nameArgument);
-            SetMethodType(typeArgument);
-            SetAccessModifier(accessModifierArgument, containsType);
-            SetAsyncResultType(asyncResultArgument);
+            SetMethodName(methodName);
+            SetMethodType(methodType);
+            SetAccessModifier(accessModifier, containsType);
+            SetAsyncResultType(asyncResultType);
         }
 
         public string MethodName { get; private set; }

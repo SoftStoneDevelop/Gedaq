@@ -304,7 +304,8 @@ namespace Gedaq.Npgsql
                 throw new Exception($"Unknown {nameof(BinaryExport)} constructor");
             }
 
-            binaryExport.Aliases = _binaryParser.Parse(ref binaryExport.Query);
+            var aliases = _binaryParser.Parse(ref binaryExport.Query);
+            binaryExport.SetAliases(aliases);
             _binaryExports.Add(binaryExport);
         }
 

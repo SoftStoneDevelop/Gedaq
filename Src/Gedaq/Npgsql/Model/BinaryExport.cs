@@ -15,7 +15,11 @@ namespace Gedaq.Npgsql.Model
         public NpgsqlSourceType SourceType { get; private set; }
         public string Query;
         public ITypeSymbol MapTypeName { get; private set; }
-        public Aliases Aliases;
+        public Aliases Aliases { get; protected set; }
+
+        private int[] NpgSqlDbTypes;
+
+        public bool HaveNpgSqlDbTypes => NpgSqlDbTypes != null && NpgSqlDbTypes.Length != 0;
 
         private BinaryExport()
         {
@@ -24,7 +28,7 @@ namespace Gedaq.Npgsql.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out BinaryExport method)
         {
             method = null;
-            if (namedArguments.Length != 7)
+            if (namedArguments.Length != 8)
             {
                 return false;
             }
@@ -40,17 +44,22 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!methodSource.FillSourceType(namedArguments[4]))
+            if (!methodSource.FillNpgsqlDbTypes(namedArguments[3]))
+            {
+                return false;
+            }
+
+            if (!methodSource.FillSourceType(namedArguments[5]))
             {
                 return false;
             }
 
             methodSource.MethodInfo =
                 new BaseMethodInfo(
-                    namedArguments[1],
-                    namedArguments[3],
-                    namedArguments[5],
-                    namedArguments[6],
+                    methodName: namedArguments[1],
+                    methodType: namedArguments[4],
+                    accessModifier: namedArguments[6],
+                    asyncResultType: namedArguments[7],
                     containsType
                     );
 
@@ -105,6 +114,55 @@ namespace Gedaq.Npgsql.Model
 
             SourceType = (NpgsqlSourceType)argument.Value;
             return true;
+        }
+
+        protected bool FillNpgsqlDbTypes(TypedConstant argument)
+        {
+            if (!(argument.Type is IArrayTypeSymbol arrayTypeSymbol) ||
+                arrayTypeSymbol.Rank != 1 ||
+                arrayTypeSymbol.ElementType.TypeKind != TypeKind.Enum ||
+                !(arrayTypeSymbol.ElementType is INamedTypeSymbol elementType) ||
+                !elementType.IsAssignableFrom("NpgsqlTypes", "NpgsqlDbType")
+                )
+            {
+                return false;
+            }
+
+            if (argument.IsNull)
+            {
+                return true;
+            }
+
+            NpgSqlDbTypes = new int[argument.Values.Length];
+            for (int i = 0; i < argument.Values.Length; i++)
+            {
+                NpgSqlDbTypes[i] = (int)argument.Values[i].Value;
+            }
+
+            return true;
+        }
+
+        public void SetAliases(Aliases aliases)
+        {
+            if (NpgSqlDbTypes == null)
+            {
+                Aliases = aliases;
+                return;
+            }
+
+            var fields = aliases.AllFieldsOrderByPosition();
+            if (NpgSqlDbTypes?.Length != fields.Count)
+            {
+                throw new Exception("The number of NpgSqlDbTypes and columns in the query does not match.");
+            }
+
+            for (int i = 0; i < fields.Count; i++)
+            {
+                Field field = fields[i];
+                field.AdditionalInfo = new NpgsqlFieldInfo(NpgSqlDbTypes[i]);
+            }
+
+            Aliases = aliases;
         }
     }
 }

@@ -52,9 +52,9 @@ FROM STDIN (FORMAT BINARY)
             dbTypes:
             new NpgsqlDbType[]
             {{
-                {model.IdTypeInfo.SpecialDbTypeStr()},
-                {model.TypeInfo.SpecialDbTypeStr()},
-                {model.TypeInfo.SpecialDbTypeStr()}
+                {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
             }},
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
