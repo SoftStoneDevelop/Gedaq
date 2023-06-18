@@ -10,7 +10,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
-[assembly: InternalsVisibleTo("DbConnectionTests")]
+[assembly: InternalsVisibleTo("PostgreSQLTests")]
 namespace Gedaq.Parser
 {
     internal class PostgreSQLQueryParser

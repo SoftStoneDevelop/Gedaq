@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using System;
 
-namespace DbConnectionTests
+namespace Tests
 {
     [TestFixture]
     [Parallelizable(ParallelScope.All)]
