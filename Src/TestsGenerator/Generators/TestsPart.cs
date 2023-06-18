@@ -2,6 +2,7 @@
 using System.Text;
 using System.Threading.Tasks;
 using TestsGenerator.Enums;
+using TestsGenerator.Generators.PostgreSQL;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
 
@@ -30,10 +31,38 @@ namespace TestsGenerator.Generators
             SelectModelTest.Generate(2, _stringBuilder, model, storage, database);
             EndRegion();
 
+            SpecialDatabaseTests(model, database, storage);
+
             End();
 
             Directory.CreateDirectory($"{destinationFolder}/TestsParts/");
             await File.WriteAllTextAsync($"{destinationFolder}/TestsParts/{model.ClassName}TestsPart.cs", _stringBuilder.ToString());
+        }
+
+        private void SpecialDatabaseTests(Model.ModelType model, Database database, ModelValueStorage storage)
+        {
+            switch (database)
+            {
+                case Database.PostgreSQL:
+                {
+                    StartRegion("BinaryImportModelInner");
+                    BinaryImportModelInnerTest.Generate(0, _stringBuilder, model, storage);
+                    EndRegion();
+
+                    StartRegion("BinaryImportModel");
+                    BinaryImportModelTest.Generate(1, _stringBuilder, model, storage);
+                    EndRegion();
+
+                    StartRegion("BinaryExportModel");
+                    //BinaryExportModelTest.Generate(1, _stringBuilder, model, storage);
+                    EndRegion();
+
+                    StartRegion("BinaryExportModelInner");
+                    //BinaryExportModelTest.Generate(1, _stringBuilder, model, storage);
+                    EndRegion();
+                    break;
+                }
+            }
         }
 
         private void StartRegion(string regionName)

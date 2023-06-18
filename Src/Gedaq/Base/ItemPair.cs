@@ -39,6 +39,26 @@ namespace Gedaq.Base
         public Aliases Aliases { get; private set; }
         public ITypeSymbol MapTypeName { get; private set; }
         public string PropertyName { get; private set; }
+        public string PathInItem(string property = "")
+        {
+            if (Parent != null)
+            {
+                var parentProperty = Parent?.PathInItem();
+                var postfix = string.IsNullOrEmpty(property) ? string.Empty : $".{property}";
+                if(!string.IsNullOrEmpty(parentProperty))
+                {
+                    return $"{parentProperty}.{PropertyName}{postfix}";
+                }
+                else
+                {
+                    return $"{PropertyName}{postfix}";
+                }
+            }
+            else
+            {
+                return property;
+            }
+        }
         public string ItemName { get; private set; }
 
         public ItemPair Parent { get; private set; }

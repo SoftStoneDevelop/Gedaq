@@ -75,6 +75,17 @@ CREATE TABLE {Database.PostgreSQL.ToDefaultSchema()}.{model.ModelInner.TableName
 );
 "";
             await cmd.ExecuteNonQueryAsync();
+
+            cmd.CommandText = @""
+CREATE TABLE {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
+(
+    {model.ModelInner.IdColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()} NOT NULL,
+    {model.ModelInner.ValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()} NOT NULL,
+    {model.ModelInner.NullableValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()},
+    CONSTRAINT binary_{model.ModelInner.TableName}_pkey PRIMARY KEY (id)
+);
+"";
+            await cmd.ExecuteNonQueryAsync();
         }}
 ");
                     return;
@@ -131,6 +142,11 @@ CREATE TABLE {Database.MySQL.ToDefaultSchema()}.{model.ModelInner.TableName} (
 DROP TABLE {Database.PostgreSQL.ToDefaultSchema()}.{model.ModelInner.TableName};
 "";
             await cmd.ExecuteNonQueryAsync();
+
+            cmd.CommandText = @""
+DROP TABLE {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName};
+"";
+            await cmd.ExecuteNonQueryAsync();
         }}
 ");
                     return;
@@ -183,6 +199,22 @@ CREATE TABLE {Database.PostgreSQL.ToDefaultSchema()}.{model.TableName}
     CONSTRAINT {model.TableName}_pkey PRIMARY KEY ({model.IdColumnName}),
     CONSTRAINT {model.TableName}_{model.ModelInner.TableName}_fk FOREIGN KEY ({model.ModelInnerColumnName})
         REFERENCES {Database.PostgreSQL.ToDefaultSchema()}.{model.ModelInner.TableName} ({model.ModelInner.IdColumnName}) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+);
+"";
+            await cmd.ExecuteNonQueryAsync();
+
+            cmd.CommandText = @""
+CREATE TABLE {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
+(
+    {model.IdColumnName} {model.IdTypeInfo.DbSqlType}{model.IdTypeInfo.DbSqlAfterType()} NOT NULL,
+    {model.ValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()} NOT NULL,
+    {model.NullableValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()},
+    {model.ModelInnerColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()},
+    CONSTRAINT binary_{model.TableName}_pkey PRIMARY KEY ({model.IdColumnName}),
+    CONSTRAINT binary_{model.TableName}_{model.ModelInner.TableName}_fk FOREIGN KEY ({model.ModelInnerColumnName})
+        REFERENCES {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName} ({model.ModelInner.IdColumnName}) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -253,6 +285,11 @@ CREATE TABLE {Database.MySQL.ToDefaultSchema()}.{model.TableName}
         {{
             cmd.CommandText = @""
 DROP TABLE {Database.PostgreSQL.ToDefaultSchema()}.{model.TableName};
+"";
+            await cmd.ExecuteNonQueryAsync();
+
+            cmd.CommandText = @""
+DROP TABLE {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName};
 "";
             await cmd.ExecuteNonQueryAsync();
         }}

@@ -300,11 +300,19 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace}
                 if (inner != null)
                 {
                     pair.MapTypeName.GetPropertyOrFieldName(inner.EntityName, out var propertyName, out var pairType);
-                    var newPair = new ItemPair(inner, pairType, $"item{++itemId}", pair, propertyName, 0);
+                    var newPair = 
+                        new ItemPair(
+                            inner, 
+                            pairType, 
+                            $"item{++itemId}",
+                            pair,
+                            propertyName,
+                            0
+                            );
                     aliases.Push(newPair);
 
                     _methodCode.Append($@"
-                    {Tabs(newPair.Tabs)}if(item.{newPair.PropertyName} != null)
+                    {Tabs(newPair.Tabs)}if(item.{newPair.PathInItem()} != null)
                     {Tabs(newPair.Tabs)}{{
 ");
                     continue;
@@ -353,17 +361,17 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace}
             var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType){((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType}" : "";
             var tabs = pair.Parent != null ? pair.Tabs + 1 : pair.Tabs;
             pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
-
+            var pathInItem = pair.PathInItem(propertyName);
             if (propertyType.IsReferenceType)
             {
                 _methodCode.Append($@"
-                    {Tabs(tabs)}if (item.{propertyName} == null)
+                    {Tabs(tabs)}if (item.{pathInItem} == null)
                     {Tabs(tabs)}{{
                     {Tabs(tabs)}    {await}import.WriteNull{async}{cancellation};
                     {Tabs(tabs)}}}
                     {Tabs(tabs)}else
                     {Tabs(tabs)}{{
-                    {Tabs(tabs)}    {await}import.Write{async}(item.{propertyName}{dbType}{(isAsync ? $",cancellationToken" : "")});
+                    {Tabs(tabs)}    {await}import.Write{async}(item.{pathInItem}{dbType}{(isAsync ? $",cancellationToken" : "")});
                     {Tabs(tabs)}}}
 ");
             }
@@ -371,13 +379,13 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace}
             if (propertyType.IsNullableType())
             {
                 _methodCode.Append($@"
-                    {Tabs(tabs)}if (!item.{propertyName}.HasValue)
+                    {Tabs(tabs)}if (!item.{pathInItem}.HasValue)
                     {Tabs(tabs)}{{
                     {Tabs(tabs)}    {await}import.WriteNull{async}{cancellation};
                     {Tabs(tabs)}}}
                     {Tabs(tabs)}else
                     {Tabs(tabs)}{{
-                    {Tabs(tabs)}    {await}import.Write{async}(item.{propertyName}.Value{dbType}{(isAsync ? $",cancellationToken" : "")});
+                    {Tabs(tabs)}    {await}import.Write{async}(item.{pathInItem}.Value{dbType}{(isAsync ? $",cancellationToken" : "")});
                     {Tabs(tabs)}}}
 ");
             }
@@ -386,20 +394,20 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace}
                 if (propertyType.IsReferenceType)
                 {
                     _methodCode.Append($@"
-                    {Tabs(tabs)}if(item.{propertyName} == null)
+                    {Tabs(tabs)}if(item.{pathInItem} == null)
                     {Tabs(tabs)}{{
                     {Tabs(tabs)}    {await}import.WriteNull{async}{cancellation};
                     {Tabs(tabs)}}}
                     {Tabs(tabs)}else
                     {Tabs(tabs)}{{
-                    {Tabs(tabs)}    {await}import.Write{async}(item.{propertyName}{dbType}{(isAsync ? $",cancellationToken" : "")});
+                    {Tabs(tabs)}    {await}import.Write{async}(item.{pathInItem}{dbType}{(isAsync ? $",cancellationToken" : "")});
                     {Tabs(tabs)}}}
 ");
                 }
                 else
                 {
                     _methodCode.Append($@"
-                    {Tabs(tabs)}{await}import.Write{async}(item.{propertyName}{dbType}{(isAsync ? $",cancellationToken" : "")});
+                    {Tabs(tabs)}{await}import.Write{async}(item.{pathInItem}{dbType}{(isAsync ? $",cancellationToken" : "")});
 ");
                 }
             }
