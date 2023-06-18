@@ -232,7 +232,7 @@ RETURNING
                 Assert.That(models, Has.Count.EqualTo(1));
                 model = models[0];
 ");
-                stringBuilder.Append(model.Assert(value, innerHaveOnlyId: true));
+                stringBuilder.Append(model.Assert("model", value, innerHaveOnlyId: true));
             }
             stringBuilder.Append($@"
             }}

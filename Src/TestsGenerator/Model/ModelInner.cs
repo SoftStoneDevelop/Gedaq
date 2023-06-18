@@ -20,29 +20,48 @@ namespace TestsGenerator.Model
 
         public override string TableName => ClassName.ToLowerInvariant();
 
-        public string Assert(InnerModelValue expectValue)
+        public string Assert(string modelVariable, InnerModelValue expectValue)
         {
             var builder = new StringBuilder();
             builder.Append($@"
-                Assert.That(model, Is.Not.Null);
-                Assert.That(model.Id, Is.EqualTo({expectValue.Id}));
-                Assert.That(model.Value, Is.EqualTo({expectValue.Value}));
+                Assert.That({modelVariable}, Is.Not.Null);
+                Assert.That({modelVariable}.{IdName}, Is.EqualTo({expectValue.Id}));
+                Assert.That({modelVariable}.{ValueName}, Is.EqualTo({expectValue.Value}));
 ");
             if (expectValue.NullableValue == ValueConstants.NullValue)
             {
                 builder.Append($@"
-                Assert.That(model.NullableValue, Is.Null);
+                Assert.That({modelVariable}.{NullableValueName}, Is.Null);
 ");
             }
             else
             {
                 builder.Append($@"
-                Assert.That(model.NullableValue, Is.Not.Null);
-                Assert.That(model.NullableValue, Is.EqualTo({expectValue.NullableValue}));
+                Assert.That({modelVariable}.{NullableValueName}, Is.Not.Null);
+                Assert.That({modelVariable}.{NullableValueName}, Is.EqualTo({expectValue.NullableValue}));
 ");
             }
 
             return builder.ToString();
+        }
+
+        public string Assert(string modelVariable, string expectVariable)
+        {
+            return
+                $@"
+                Assert.That({modelVariable}, Is.Not.Null);
+                Assert.That({modelVariable}.{IdName}, Is.EqualTo({expectVariable}.{IdName}));
+                Assert.That({modelVariable}.{ValueName}, Is.EqualTo({expectVariable}.{ValueName}));
+                if({expectVariable}.{NullableValueName} != {ValueConstants.NullValue})
+                {{
+                    Assert.That({modelVariable}.{NullableValueName}, Is.Not.Null);
+                    Assert.That({modelVariable}.{NullableValueName}, Is.EqualTo({expectVariable}.{NullableValueName}));
+                }}
+                else
+                {{
+                    Assert.That({modelVariable}.{NullableValueName}, Is.Null);
+                }}
+";
         }
     }
 }

@@ -110,7 +110,7 @@ Gedaq.Npgsql.Attributes.Parametr(
 ");
                 }
 
-                stringBuilder.Append(model.Assert(value));
+                stringBuilder.Append(model.Assert("model", value));
             }
             stringBuilder.Append($@"
             }}

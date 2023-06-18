@@ -35,67 +35,122 @@ namespace TestsGenerator.Model
             return new ModelValueStorage(ValueStorage);
         }
 
-        public string Assert(ModelValue expectValue, bool innerHaveOnlyId = false)
+        public string Assert(string modelVariable, ModelValue expectValue, bool innerHaveOnlyId = false)
         {
             var builder = new StringBuilder();
             builder.Append($@"
-                Assert.That(model, Is.Not.Null);
-                Assert.That(model.Id, Is.EqualTo({expectValue.Id}));
-                Assert.That(model.Value, Is.EqualTo({expectValue.Value}));
+                Assert.That({modelVariable}, Is.Not.Null);
+                Assert.That({modelVariable}.{IdName}, Is.EqualTo({expectValue.Id}));
+                Assert.That({modelVariable}.{ValueName}, Is.EqualTo({expectValue.Value}));
 ");
             if(expectValue.NullableValue == ValueConstants.NullValue)
             {
                 builder.Append($@"
-                Assert.That(model.NullableValue, Is.Null);
+                Assert.That({modelVariable}.{NullableValueName}, Is.Null);
 ");
             }
             else
             {
                 builder.Append($@"
-                Assert.That(model.NullableValue, Is.Not.Null);
-                Assert.That(model.NullableValue, Is.EqualTo({expectValue.NullableValue}));
+                Assert.That({modelVariable}.{NullableValueName}, Is.Not.Null);
+                Assert.That({modelVariable}.{NullableValueName}, Is.EqualTo({expectValue.NullableValue}));
 ");
             }
 
             if (expectValue.InnerModel == null)
             {
                 builder.Append($@"
-                Assert.That(model.ModelInner, Is.Null);
+                Assert.That({modelVariable}.{ModelInnerName}, Is.Null);
 ");
             }
             else
             {
                 builder.Append($@"
-                Assert.That(model.ModelInner, Is.Not.Null);
-                Assert.That(model.ModelInner.Id, Is.EqualTo({expectValue.InnerModel.Id}));
+                Assert.That({modelVariable}.{ModelInnerName}, Is.Not.Null);
+                Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.IdName}, Is.EqualTo({expectValue.InnerModel.Id}));
 ");
                 if(innerHaveOnlyId)
                 {
                     builder.Append($@"
-                Assert.That(model.ModelInner.Value, Is.EqualTo(({ModelInner.ValueType})default));
-                Assert.That(model.ModelInner.NullableValue, Is.Null);
+                Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.ValueName}, Is.EqualTo(({ModelInner.ValueType})default));
+                Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.NullableValueName}, Is.Null);
 ");
                 }
                 else
                 {
                     builder.Append($@"
-                Assert.That(model.ModelInner.Value, Is.EqualTo({expectValue.InnerModel.Value}));
+                Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.ValueName}, Is.EqualTo({expectValue.InnerModel.Value}));
 ");
                     if (expectValue.InnerModel.NullableValue == ValueConstants.NullValue)
                     {
                         builder.Append($@"
-                Assert.That(model.ModelInner.NullableValue, Is.Null);
+                Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.NullableValueName}, Is.Null);
 ");
                     }
                     else
                     {
                         builder.Append($@"
-                Assert.That(model.ModelInner.NullableValue, Is.Not.Null);
-                Assert.That(model.ModelInner.NullableValue, Is.EqualTo({expectValue.InnerModel.NullableValue}));
+                Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.NullableValueName}, Is.Not.Null);
+                Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.NullableValueName}, Is.EqualTo({expectValue.InnerModel.NullableValue}));
 ");
                     }
                 }
             }
+            return builder.ToString();
+        }
+
+        public string Assert(string modelVariable, string expectVariable, bool innerHaveOnlyId = false)
+        {
+            var builder = new StringBuilder();
+            builder.Append($@"
+                Assert.That({modelVariable}, Is.Not.Null);
+                Assert.That({modelVariable}.{IdName}, Is.EqualTo({expectVariable}.{IdName}));
+                Assert.That({modelVariable}.{ValueName}, Is.EqualTo({expectVariable}.{ValueName}));
+                if({expectVariable}.{NullableValueName} == {ValueConstants.NullValue})
+                {{
+                    Assert.That({modelVariable}.{NullableValueName}, Is.Null);
+                }}
+                else
+                {{
+                    Assert.That({modelVariable}.{NullableValueName}, Is.Not.Null);
+                    Assert.That({modelVariable}.{NullableValueName}, Is.EqualTo({expectVariable}.{NullableValueName}));
+                }}
+
+                if({expectVariable}.{ModelInnerName} == {ValueConstants.NullValue})
+                {{
+                    Assert.That({modelVariable}.{ModelInnerName}, Is.Null);
+                }}
+                else
+                {{
+                    Assert.That({modelVariable}.{ModelInnerName}, Is.Not.Null);
+                    Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.IdName}, Is.EqualTo({expectVariable}.{ModelInnerName}.{ModelInner.IdName}));
+");
+            if (innerHaveOnlyId)
+            {
+                builder.Append($@"
+                    Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.ValueName}, Is.EqualTo(({ModelInner.ValueType})default));
+                    Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.NullableValueName}, Is.Null);
+");
+            }
+            else
+            {
+                builder.Append($@"
+                    Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.ValueName}, Is.EqualTo({expectVariable}.{ModelInnerName}.{ModelInner.ValueName}));
+                    if({expectVariable}.{ModelInnerName}.{ModelInner.NullableValueName} == {ValueConstants.NullValue})
+                    {{
+                        Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.NullableValueName}, Is.Null);
+                    }}
+                    else
+                    {{
+                        Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.NullableValueName}, Is.Not.Null);
+                        Assert.That({modelVariable}.{ModelInnerName}.{ModelInner.NullableValueName}, Is.EqualTo({expectVariable}.{ModelInnerName}.{ModelInner.NullableValueName}));
+                    }}
+");
+            }
+            
+            builder.Append($@"
+                }}
+");
             return builder.ToString();
         }
     }

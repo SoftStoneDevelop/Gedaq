@@ -54,11 +54,11 @@ namespace TestsGenerator.Generators
                     EndRegion();
 
                     StartRegion("BinaryExportModel");
-                    //BinaryExportModelTest.Generate(1, _stringBuilder, model, storage);
+                    BinaryExportModelTest.Generate(2, _stringBuilder, model, storage);
                     EndRegion();
 
                     StartRegion("BinaryExportModelInner");
-                    //BinaryExportModelTest.Generate(1, _stringBuilder, model, storage);
+                    BinaryExportModelInnerTest.Generate(2, _stringBuilder, model, storage);
                     EndRegion();
                     break;
                 }

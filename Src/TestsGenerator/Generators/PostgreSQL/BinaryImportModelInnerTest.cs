@@ -149,7 +149,7 @@ ORDER BY
 ");
                 }
 
-                stringBuilder.Append(model.ModelInner.Assert(value));
+                stringBuilder.Append(model.ModelInner.Assert("model", value));
             }
 
             stringBuilder.Append($@"
@@ -168,7 +168,7 @@ ORDER BY
                 InnerModelValue value = storage[indexCollection];
                 stringBuilder.Append($@"
                 model = models[{indexCollection}];
-{model.ModelInner.Assert(value)}
+{model.ModelInner.Assert("model", value)}
 ");
             }
 

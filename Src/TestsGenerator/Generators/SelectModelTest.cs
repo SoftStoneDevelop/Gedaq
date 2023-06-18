@@ -143,7 +143,7 @@ Gedaq.DbConnection.Attributes.Parametr(
 ");
                 }
 
-                stringBuilder.Append(model.Assert(value));
+                stringBuilder.Append(model.Assert("model", value));
             }
             stringBuilder.Append($@"
             }}
@@ -195,7 +195,7 @@ Gedaq.DbConnection.Attributes.Parametr(
 ");
                 }
 
-                stringBuilder.Append(model.Assert(value));
+                stringBuilder.Append(model.Assert("model", value));
                 index++;
             }
             stringBuilder.Append($@"
@@ -461,7 +461,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
 ");
                 }
 
-                stringBuilder.Append($@"    {model.Assert(value)}");
+                stringBuilder.Append($@"    {model.Assert("model", value)}");
                 index++;
             }
 
@@ -491,7 +491,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
                         model = models[{index}];
 ");
                 }
-                stringBuilder.Append($@"    {model.Assert(value)}");
+                stringBuilder.Append($@"    {model.Assert("model", value)}");
                 index++;
             }
             stringBuilder.Append($@"
