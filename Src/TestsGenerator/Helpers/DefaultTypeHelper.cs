@@ -19,6 +19,11 @@
                 return $"({value}).ToString()";
             }
 
+            if (type == "System.Numerics.BigInteger" && defaultType == "System.Decimal")
+            {
+                return $"((System.Decimal){value})";
+            }
+
             return $"({value})";
         }
 

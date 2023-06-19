@@ -266,7 +266,8 @@ RETURNING
                 model.ValueStorage is ByteValueHelper || 
                 model.ValueStorage is SByteValueHelper ||
                 model.ValueStorage is TimeOnlyValueHelper ||
-                model.ValueStorage is DateOnlyValueHelper)
+                model.ValueStorage is DateOnlyValueHelper ||
+                model.ValueStorage is BigIntegerValueHelper)
             {
                 stringBuilder.Append($@"
         [Ignore(""Invalid cast, ExecuteScalar provider return wrong type"")]

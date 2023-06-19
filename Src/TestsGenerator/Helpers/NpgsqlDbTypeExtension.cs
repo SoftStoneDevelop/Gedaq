@@ -110,6 +110,10 @@ namespace TestsGenerator.Helpers
                 {
                     return "box";
                 }
+                case NpgsqlDbType.Path:
+                {
+                    return "path";
+                }
                 default:
                 {
                     throw new NotImplementedException();
@@ -212,6 +216,10 @@ namespace TestsGenerator.Helpers
                 case NpgsqlDbType.Box:
                 {
                     return "NpgsqlTypes.NpgsqlBox";
+                }
+                case NpgsqlDbType.Path:
+                {
+                    return "NpgsqlTypes.NpgsqlPath";
                 }
                 default:
                 {

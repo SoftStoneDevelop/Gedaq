@@ -79,7 +79,10 @@ namespace TestsGenerator.Generators
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Smallint, "Int16", "System.Int16", () => new Int16ValueHelper()));
 
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Char, "Char", "System.Char", () => new CharValueHelper()));
+
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Numeric, "Decimal", "System.Decimal", () => new DecimalValueHelper()));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Numeric, "BigInteger", "System.Numerics.BigInteger", () => new BigIntegerValueHelper()));
+
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Money, "Decimal", "System.Decimal", () => new DecimalValueHelper(2)));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Double, "Double", "System.Double", () => new DoubleValueHelper()));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Boolean, "Boolean", "System.Boolean", () => new BooleanValueHelper()));
@@ -104,13 +107,12 @@ namespace TestsGenerator.Generators
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Point, "NpgsqlPoint", "NpgsqlTypes.NpgsqlPoint", () => new NpgsqlPointValueHelper()));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Circle, "NpgsqlCircle", "NpgsqlTypes.NpgsqlCircle", () => new NpgsqlCircleValueHelper()));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Box, "NpgsqlBox", "NpgsqlTypes.NpgsqlBox", () => new NpgsqlBoxValueHelper()));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Path, "NpgsqlPath", "NpgsqlTypes.NpgsqlPath", () => new NpgsqlPathValueHelper()));
 
-            //_models.Add(new Model.NpgsqlModel("numeric", "BigInteger", "System.Numerics.BigInteger"));
             //_models.Add(new Model.NpgsqlModel("bit varying", "BitArray", "System.Collections.BitArray", true));
             //_models.Add(new Model.NpgsqlModel("tsquery", "NpgsqlTsQuery", "NpgsqlTypes.NpgsqlTsQuery", true));
             //_models.Add(new Model.NpgsqlModel("tsvector", "NpgsqlTsVector", "NpgsqlTypes.NpgsqlTsVector", true));
             //_models.Add(new Model.NpgsqlModel("lseg", "NpgsqlLSeg", "NpgsqlTypes.NpgsqlLSeg"));
-            //_models.Add(new Model.NpgsqlModel("path", "NpgsqlPath", "NpgsqlTypes.NpgsqlPath"));
         }
 
         private void AddMSSQLTypes()
