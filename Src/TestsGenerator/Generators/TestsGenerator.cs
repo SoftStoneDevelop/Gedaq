@@ -102,6 +102,7 @@ namespace TestsGenerator.Generators
             if(false)
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Polygon, "NpgsqlPolygon", "NpgsqlTypes.NpgsqlPolygon", () => new NpgsqlPolygonValueHelper()));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Point, "NpgsqlPoint", "NpgsqlTypes.NpgsqlPoint", () => new NpgsqlPointValueHelper()));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Circle, "NpgsqlCircle", "NpgsqlTypes.NpgsqlCircle", () => new NpgsqlCircleValueHelper()));
 
             //_models.Add(new Model.NpgsqlModel("numeric", "BigInteger", "System.Numerics.BigInteger"));
             //_models.Add(new Model.NpgsqlModel("bit varying", "BitArray", "System.Collections.BitArray", true));
