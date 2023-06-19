@@ -106,6 +106,10 @@ namespace TestsGenerator.Helpers
                 {
                     return "circle";
                 }
+                case NpgsqlDbType.Box:
+                {
+                    return "box";
+                }
                 default:
                 {
                     throw new NotImplementedException();
@@ -204,6 +208,10 @@ namespace TestsGenerator.Helpers
                 case NpgsqlDbType.Circle:
                 {
                     return "NpgsqlTypes.NpgsqlCircle";
+                }
+                case NpgsqlDbType.Box:
+                {
+                    return "NpgsqlTypes.NpgsqlBox";
                 }
                 default:
                 {
