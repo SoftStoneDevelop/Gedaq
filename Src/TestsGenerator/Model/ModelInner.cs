@@ -16,7 +16,7 @@ namespace TestsGenerator.Model
         {
         }
 
-        public override string ClassName => $"{TypeInfo.ItemTypeName}_{TypeInfo.DbSqlTypeWithoutSpace()}{(TypeInfo.EnumerableType != Enums.EnumerableType.SingleType ? $"_{TypeInfo.EnumerableType.ToString()}" : string.Empty)}_ModelInner";
+        public override string ClassName => $"{TypeInfo.ItemTypeName}{TypeInfo.DbSqlTypeWithoutSpace()}{(int)TypeInfo.EnumerableType}MI";
 
         public override string TableName => ClassName.ToLowerInvariant();
 
