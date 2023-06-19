@@ -90,6 +90,18 @@ namespace TestsGenerator.Helpers
                 {
                     return "interval";
                 }
+                case NpgsqlDbType.Line:
+                {
+                    return "line";
+                }
+                case NpgsqlDbType.Polygon:
+                {
+                    return "polygon";
+                }
+                case NpgsqlDbType.Point:
+                {
+                    return "point";
+                }
                 default:
                 {
                     throw new NotImplementedException();
@@ -172,6 +184,18 @@ namespace TestsGenerator.Helpers
                 case NpgsqlDbType.Interval:
                 {
                     return "System.TimeSpan";
+                }
+                case NpgsqlDbType.Line:
+                {
+                    return "NpgsqlTypes.NpgsqlLine";
+                }
+                case NpgsqlDbType.Polygon:
+                {
+                    return "NpgsqlTypes.NpgsqlPolygon";
+                }
+                case NpgsqlDbType.Point:
+                {
+                    return "NpgsqlTypes.NpgsqlPoint";
                 }
                 default:
                 {
