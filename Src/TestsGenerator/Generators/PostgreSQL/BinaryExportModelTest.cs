@@ -5,6 +5,7 @@ using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
+using TestsGenerator.TypeValueHelpers;
 
 namespace TestsGenerator.Generators.PostgreSQL
 {
@@ -19,6 +20,11 @@ namespace TestsGenerator.Generators.PostgreSQL
             ModelValueStorage storage
             )
         {
+            if(model.ValueStorage is CharValueHelper)
+            {
+                return;
+            }
+
             ExportModelConfig(stringBuilder, model);
 
             var ordered = 

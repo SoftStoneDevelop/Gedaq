@@ -4,6 +4,7 @@ using System.Text;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
+using TestsGenerator.TypeValueHelpers;
 
 namespace TestsGenerator.Generators.PostgreSQL
 {
@@ -18,6 +19,11 @@ namespace TestsGenerator.Generators.PostgreSQL
             ModelValueStorage storage
             )
         {
+            if (model.ValueStorage is CharValueHelper)
+            {
+                return;
+            }
+
             ExportModelInnerConfig(stringBuilder, model);
 
             var ordered = 
