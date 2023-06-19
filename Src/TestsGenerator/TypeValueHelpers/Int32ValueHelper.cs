@@ -1,14 +1,20 @@
 ﻿using System;
+using TestsGenerator.Enums;
+
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class Int32ValueHelper : ValueHelper
     {
-        public override ValueHelper NewInstance()
+        public Int32ValueHelper(EnumerableType enumerableType) : base(enumerableType)
         {
-            return new Int32ValueHelper();
         }
 
-        public override string NewValue()
+        public override ValueHelper NewInstance()
+        {
+            return new Int32ValueHelper(_enumerableType);
+        }
+
+        public override string NewSingleValue()
         {
             return NewValue(out _);
         }

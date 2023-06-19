@@ -1,15 +1,20 @@
 ﻿using System;
+using TestsGenerator.Enums;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class GuidValueHelper : ValueHelper
     {
-        public override ValueHelper NewInstance()
+        public GuidValueHelper(EnumerableType enumerableType) : base(enumerableType)
         {
-            return new GuidValueHelper();
         }
 
-        public override string NewValue()
+        public override ValueHelper NewInstance()
+        {
+            return new GuidValueHelper(_enumerableType);
+        }
+
+        public override string NewSingleValue()
         {
             var guid = Guid.NewGuid();
             return $@"Guid.Parse(""{guid}"")";

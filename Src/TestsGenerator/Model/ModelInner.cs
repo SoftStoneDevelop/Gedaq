@@ -16,11 +16,23 @@ namespace TestsGenerator.Model
         {
         }
 
-        public override string ClassName => $"{TypeInfo.TypeName}_{TypeInfo.DbSqlTypeWithoutSpace()}_ModelInner";
+        public override string ClassName => $"{TypeInfo.ItemTypeName}_{TypeInfo.DbSqlTypeWithoutSpace()}{(TypeInfo.EnumerableType != Enums.EnumerableType.SingleType ? $"_{TypeInfo.EnumerableType.ToString()}" : string.Empty)}_ModelInner";
 
         public override string TableName => ClassName.ToLowerInvariant();
 
         public string Assert(string modelVariable, InnerModelValue expectValue)
+        {
+            if(TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)
+            {
+                return AssertSingle(modelVariable, expectValue);
+            }
+            else
+            {
+                return AssertEnumerable(modelVariable, expectValue);
+            }
+        }
+
+        private string AssertSingle(string modelVariable, InnerModelValue expectValue)
         {
             var builder = new StringBuilder();
             builder.Append($@"
@@ -45,7 +57,63 @@ namespace TestsGenerator.Model
             return builder.ToString();
         }
 
+        private string AssertEnumerable(string modelVariable, InnerModelValue expectValue)
+        {
+            var builder = new StringBuilder();
+            builder.Append($@"
+                Assert.That({modelVariable}, Is.Not.Null);
+                Assert.That({modelVariable}.{IdName}, Is.EqualTo({expectValue.Id}));
+                {{
+                    var expectEnumerValue = {expectValue.Value};
+                    Assert.That({modelVariable}.{ValueName}.Count(), Is.EqualTo(expectEnumerValue.Count()));
+                    for(int i = 0; i < expectEnumerValue.Count(); i++)
+                    {{
+                        var expectItem = expectEnumerValue[i];
+                        var haveItem = {modelVariable}.{ValueName}[i];
+                        Assert.That(expectItem, Is.EqualTo(haveItem));
+                    }}
+                }}
+");
+
+            if (expectValue.NullableValue == ValueConstants.NullValue)
+            {
+                builder.Append($@"
+                Assert.That({modelVariable}.{NullableValueName}, Is.Null);
+");
+            }
+            else
+            {
+                builder.Append($@"
+                Assert.That({modelVariable}.{NullableValueName}, Is.Not.Null);
+                {{
+                    var expectEnumerValue = {expectValue.NullableValue};
+                    Assert.That({modelVariable}.{NullableValueName}.Count(), Is.EqualTo(expectEnumerValue.Count()));
+                    for(int i = 0; i < expectEnumerValue.Count(); i++)
+                    {{
+                        var expectItem = expectEnumerValue[i];
+                        var haveItem = {modelVariable}.{NullableValueName}[i];
+                        Assert.That(expectItem, Is.EqualTo(haveItem));
+                    }}
+                }}
+");
+            }
+
+            return builder.ToString();
+        }
+
         public string Assert(string modelVariable, string expectVariable)
+        {
+            if (TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)
+            {
+                return AssertSingle(modelVariable, expectVariable);
+            }
+            else
+            {
+                return AssertEnumerable(modelVariable, expectVariable);
+            }
+        }
+
+        private string AssertSingle(string modelVariable, string expectVariable)
         {
             return
                 $@"
@@ -56,6 +124,43 @@ namespace TestsGenerator.Model
                 {{
                     Assert.That({modelVariable}.{NullableValueName}, Is.Not.Null);
                     Assert.That({modelVariable}.{NullableValueName}, Is.EqualTo({expectVariable}.{NullableValueName}));
+                }}
+                else
+                {{
+                    Assert.That({modelVariable}.{NullableValueName}, Is.Null);
+                }}
+";
+        }
+
+        private string AssertEnumerable(string modelVariable, string expectVariable)
+        {
+            return
+                $@"
+                Assert.That({modelVariable}, Is.Not.Null);
+                Assert.That({modelVariable}.{IdName}, Is.EqualTo({expectVariable}.{IdName}));
+                {{
+                    var expectEnumerValue = {expectVariable}.{ValueName};
+                    Assert.That({modelVariable}.{ValueName}.Count(), Is.EqualTo(expectEnumerValue.Count()));
+                    for(int i = 0; i < expectEnumerValue.Count(); i++)
+                    {{
+                        var expectItem = expectEnumerValue[i];
+                        var haveItem = {modelVariable}.{ValueName}[i];
+                        Assert.That(expectItem, Is.EqualTo(haveItem));
+                    }}
+                }}
+                if({expectVariable}.{NullableValueName} != {ValueConstants.NullValue})
+                {{
+                    Assert.That({modelVariable}.{NullableValueName}, Is.Not.Null);
+                    {{
+                        var expectEnumerValue = {expectVariable}.{NullableValueName};
+                        Assert.That({modelVariable}.{NullableValueName}.Count(), Is.EqualTo(expectEnumerValue.Count()));
+                        for(int i = 0; i < expectEnumerValue.Count(); i++)
+                        {{
+                            var expectItem = expectEnumerValue[i];
+                            var haveItem = {modelVariable}.{NullableValueName}[i];
+                            Assert.That(expectItem, Is.EqualTo(haveItem));
+                        }}
+                }}
                 }}
                 else
                 {{

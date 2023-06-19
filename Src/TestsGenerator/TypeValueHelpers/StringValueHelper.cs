@@ -1,16 +1,22 @@
 ﻿using System;
+using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class StringValueHelper : ValueHelper
     {
-        public override ValueHelper NewInstance()
+        public StringValueHelper(EnumerableType enumerableType) : base(enumerableType)
         {
-            return new StringValueHelper();
+
         }
 
-        public override string NewValue()
+        public override ValueHelper NewInstance()
+        {
+            return new StringValueHelper(_enumerableType);
+        }
+
+        public override string NewSingleValue()
         {
             var length = Random.Shared.Next(0, 30);
             var initArray = new char[length];

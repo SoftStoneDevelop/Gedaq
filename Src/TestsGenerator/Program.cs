@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using NpgsqlTypes;
+using System.Threading.Tasks;
 
 namespace TestsGenerator
 {

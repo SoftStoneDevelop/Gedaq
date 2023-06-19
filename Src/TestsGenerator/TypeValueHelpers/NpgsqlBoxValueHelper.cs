@@ -1,17 +1,23 @@
-﻿namespace TestsGenerator.TypeValueHelpers
+﻿using TestsGenerator.Enums;
+
+namespace TestsGenerator.TypeValueHelpers
 {
     internal class NpgsqlBoxValueHelper : ValueHelper
     {
-        private readonly NpgsqlPointValueHelper _pointValueHelper = new();
+        private readonly NpgsqlPointValueHelper _pointValueHelper = new(EnumerableType.SingleType);
+
+        public NpgsqlBoxValueHelper(EnumerableType enumerableType) : base(enumerableType)
+        {
+        }
 
         public override ValueHelper NewInstance()
         {
-            return new NpgsqlBoxValueHelper();
+            return new NpgsqlBoxValueHelper(_enumerableType);
         }
 
-        public override string NewValue()
+        public override string NewSingleValue()
         {
-            return $"new NpgsqlTypes.NpgsqlBox(upperRight: {_pointValueHelper.NewValue()}, lowerLeft: {_pointValueHelper.NewValue()})";
+            return $"new NpgsqlTypes.NpgsqlBox(upperRight: {_pointValueHelper.NewSingleValue()}, lowerLeft: {_pointValueHelper.NewSingleValue()})";
         }
     }
 }

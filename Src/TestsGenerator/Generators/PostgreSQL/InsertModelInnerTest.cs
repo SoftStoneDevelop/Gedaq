@@ -12,16 +12,19 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilder stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            ref int indexValue
+            ref int indexValue,
+            bool toEnd
             )
         {
             InsertModelInnerConfig(stringBuilder, model);
+            InsertModelInnerReturningConfig(stringBuilder, model);
+
             InsertModelInnerTest(order, stringBuilder, storage, ref indexValue, indexValue + 4, isAsync: false);
             InsertModelInnerTest(order, stringBuilder, storage, ref indexValue, indexValue + 4, isAsync: true);
 
-            InsertModelInnerReturningConfig(stringBuilder, model);
             InsertModelInnerReturningTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 4, isAsync: false);
-            InsertModelInnerReturningTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 4, isAsync: true);
+            int endIndex = toEnd ? storage.Values.Count : indexValue + 4;
+            InsertModelInnerReturningTest(order, stringBuilder, storage, model, ref indexValue, endIndex, isAsync: true);
         }
 
         private static void InsertModelInnerConfig(

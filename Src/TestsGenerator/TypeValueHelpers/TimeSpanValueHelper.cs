@@ -1,20 +1,22 @@
 ﻿using System;
+using TestsGenerator.Enums;
+
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class TimeSpanValueHelper : ValueHelper
     {
         private bool _likeTimeOnly;
-        public TimeSpanValueHelper(bool likeTimeOnly)
+        public TimeSpanValueHelper(EnumerableType enumerableType, bool likeTimeOnly) : base(enumerableType)
         {
             _likeTimeOnly = likeTimeOnly;
         }
 
         public override ValueHelper NewInstance()
         {
-            return new TimeSpanValueHelper(_likeTimeOnly);
+            return new TimeSpanValueHelper(_enumerableType, _likeTimeOnly);
         }
 
-        public override string NewValue()
+        public override string NewSingleValue()
         {
             var days = Random.Shared.Next(0, 30);
             var hours = Random.Shared.Next(0, 23);

@@ -34,7 +34,7 @@ namespace TestsGenerator.Model
 
         public string NullableValueName => "NullableValue";
 
-        public string NullableValueType => TypeInfo.IsReferenceType ? TypeInfo.TypeFullName : TypeInfo.TypeFullName + "?";
+        public string NullableValueType => (TypeInfo.IsReferenceType || TypeInfo.EnumerableType != Enums.EnumerableType.SingleType) ? TypeInfo.TypeFullName : TypeInfo.TypeFullName + "?";
 
         public string NullableValueColumnName => NullableValueName.ToLowerInvariant();
 

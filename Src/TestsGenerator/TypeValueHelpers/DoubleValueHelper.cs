@@ -1,15 +1,20 @@
 ﻿using System;
+using TestsGenerator.Enums;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class DoubleValueHelper : ValueHelper
     {
-        public override ValueHelper NewInstance()
+        public DoubleValueHelper(EnumerableType enumerableType) : base(enumerableType)
         {
-            return new DoubleValueHelper();
         }
 
-        public override string NewValue()
+        public override ValueHelper NewInstance()
+        {
+            return new DoubleValueHelper(_enumerableType);
+        }
+
+        public override string NewSingleValue()
         {
             var result = (double)Random.Shared.NextDouble();
             return $"{result}d";

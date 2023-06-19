@@ -13,7 +13,7 @@ namespace Gedaq.Npgsql.Helpers
             if(parametr.HaveNameInCommand && parametr.HaveNpgSqlDbType)
             {
                 builder.Append($@"
-                var parametr{parametr.Position} = new NpgsqlParameter(""{parametr.NameInCommand}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType});
+                var parametr{parametr.Position} = new NpgsqlParameter(""{parametr.NameInCommand}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName})({parametr.NpgSqlDbType}));
 ");
                 SetParametrs(
                     parametr,
@@ -112,7 +112,7 @@ namespace Gedaq.Npgsql.Helpers
             if (setNpgSqlDbType)
             {
                 builder.Append($@"
-                parametr{parametr.Position}.NpgsqlDbType = ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType};
+                parametr{parametr.Position}.NpgsqlDbType = ({NpgsqlMapTypeHelper.NpgsqlDbTypeName})({parametr.NpgSqlDbType});
 ");
             }
 

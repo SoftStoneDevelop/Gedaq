@@ -1,4 +1,6 @@
 ﻿using NpgsqlTypes;
+using System;
+using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 
 namespace TestsGenerator.TypeInfos
@@ -9,10 +11,11 @@ namespace TestsGenerator.TypeInfos
             NpgsqlDbType npgsqlDbType,
             string typeName,
             string typeFullName,
+            EnumerableType enumerableType,
             int size = -1,
             bool mustHaveSize = false,
             bool isReferenceType = false
-            ) : base(npgsqlDbType.ToDbType(), npgsqlDbType.ToDbSqlTableType(), typeName, typeFullName, size, mustHaveSize, isReferenceType)
+            ) : base(npgsqlDbType.ToDbType(), npgsqlDbType.ToDbSqlTableType(), typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType)
         {
             NpgsqlDbType = npgsqlDbType;
         }
@@ -21,14 +24,64 @@ namespace TestsGenerator.TypeInfos
 
         public override string DefaultMapType => NpgsqlDbType.ToDefaultMapType();
 
+        public override string TypeName
+        {
+            get
+            {
+                switch (EnumerableType)
+                {
+                    default:
+                    case EnumerableType.SingleType:
+                    {
+                        return $"{ItemTypeName}";
+                    }
+
+                    case EnumerableType.Array:
+                    {
+                        return $"{ItemTypeName}[]";
+                    }
+
+                    case EnumerableType.List:
+                    {
+                        return $"List<{ItemTypeName}>";
+                    }
+                }
+            }
+        }
+
+        public override string TypeFullName
+        {
+            get
+            {
+                switch (EnumerableType)
+                {
+                    default:
+                    case EnumerableType.SingleType:
+                    {
+                        return $"{ItemTypeFullName}";
+                    }
+
+                    case EnumerableType.Array:
+                    {
+                        return $"{ItemTypeFullName}[]";
+                    }
+
+                    case EnumerableType.List:
+                    {
+                        return $"System.Collections.Generic.List<{ItemTypeFullName}>";
+                    }
+                }
+            }
+        }
+
         public override string SpecialDbTypeStr()
         {
-            return $"NpgsqlTypes.NpgsqlDbType.{NpgsqlDbType.ToString()}";
+            return $"(NpgsqlTypes.NpgsqlDbType)({(int)NpgsqlDbType})";
         }
 
         public override string DbTypeStr()
         {
-            return $"System.Data.DbType.{DbType.ToString()}";
+            return $"(System.Data.DbType)({(int)DbType})";
         }
 
         public override string DbSqlAfterType()

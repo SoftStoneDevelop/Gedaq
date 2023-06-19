@@ -30,6 +30,10 @@ namespace TestsGenerator.Helpers
                 {
                     return "integer";
                 }
+                case NpgsqlDbType.Integer | NpgsqlDbType.Array:
+                {
+                    return "integer[]";
+                }
                 case NpgsqlDbType.Numeric:
                 {
                     return "numeric";
@@ -136,6 +140,10 @@ namespace TestsGenerator.Helpers
                 case NpgsqlDbType.Integer:
                 {
                     return "System.Int32";
+                }
+                case NpgsqlDbType.Integer | NpgsqlDbType.Array:
+                {
+                    return "System.Int32[]";
                 }
                 case NpgsqlDbType.Numeric:
                 {

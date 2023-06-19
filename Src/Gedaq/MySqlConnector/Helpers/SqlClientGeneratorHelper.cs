@@ -17,7 +17,7 @@ namespace Gedaq.MySqlConnector.Helpers
             if (parametr.HaveMySqlDbType)
             {
                 builder.Append($@"
-                parametr{index}.NpgsqlDbType = (MySqlConnector.MySqlDbType){parametr.MySqlDbType};
+                parametr{index}.MySqlDbType = (MySqlConnector.MySqlDbType)({parametr.MySqlDbType});
 ");
             }
 

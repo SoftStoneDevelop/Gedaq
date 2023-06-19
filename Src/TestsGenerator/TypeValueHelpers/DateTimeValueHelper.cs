@@ -1,4 +1,5 @@
 ﻿using System;
+using TestsGenerator.Enums;
 
 namespace TestsGenerator.TypeValueHelpers
 {
@@ -6,17 +7,17 @@ namespace TestsGenerator.TypeValueHelpers
     {
         private readonly DateTimeKind _kind;
 
-        public DateTimeValueHelper(DateTimeKind kind) 
+        public DateTimeValueHelper(EnumerableType enumerableType, DateTimeKind kind) : base(enumerableType)
         {
             _kind = kind;
         }
 
         public override ValueHelper NewInstance()
         {
-            return new DateTimeValueHelper(_kind);
+            return new DateTimeValueHelper(_enumerableType, _kind);
         }
 
-        public override string NewValue()
+        public override string NewSingleValue()
         {
             var year = Random.Shared.Next(1917, 2020);
             var month = Random.Shared.Next(10, 11);

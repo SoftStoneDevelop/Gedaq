@@ -103,7 +103,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
 ");
             var index = 0;
             stringBuilder.Append($@"
-                var expected = new Dictionary<{model.IdTypeInfo.TypeFullName},{model.ClassName}>({storage.Count});
+                var expected = new Dictionary<{model.IdTypeInfo.ItemTypeFullName},{model.ClassName}>({storage.Count});
 ");
             for (; index < storage.Count; index++)
             {
@@ -142,9 +142,9 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
             stringBuilder.Append($@"
                 var models = {await} {_testName}{async}(connection).ToList{async}();
                 Assert.That(models, Has.Count.EqualTo(expected.Count));
-                for(int i = 0; i < models.Count; i++)
+                for(int modelIndex = 0; modelIndex < models.Count; modelIndex++)
                 {{
-                    var model = models[i];
+                    var model = models[modelIndex];
                     var expectedModel = expected[model.{model.ModelInner.IdName}];
 {model.Assert("model", "expectedModel", true)}
 ");

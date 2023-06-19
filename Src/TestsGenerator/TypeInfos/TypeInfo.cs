@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using System.Text.RegularExpressions;
+using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 
 namespace TestsGenerator.TypeInfos
@@ -11,6 +12,7 @@ namespace TestsGenerator.TypeInfos
             string dbTypeStr,
             string typeName,
             string typeFullName,
+            EnumerableType enumerableType,
             int size = -1,
             bool mustHaveSize = false,
             bool isReferenceType = false
@@ -18,13 +20,16 @@ namespace TestsGenerator.TypeInfos
         {
             DbType = dbType;
             DbSqlType = dbTypeStr;
-            TypeName = typeName;
-            TypeFullName = typeFullName;
+            ItemTypeName = typeName;
+            ItemTypeFullName = typeFullName;
             IsReferenceType = isReferenceType;
 
             MustHaveSize = mustHaveSize;
             Size = size;
+            EnumerableType = enumerableType;
         }
+
+        public EnumerableType EnumerableType { get; }
 
         public readonly DbType DbType;
 
@@ -56,6 +61,7 @@ namespace TestsGenerator.TypeInfos
         public string DbSqlTypeWithoutSpace()
         {
             var result = WhiteSpaces().Replace(DbSqlType, "_");
+            result = SquareBracketsSpaces().Replace(result, "Array");
             return result;
         }
 
@@ -63,10 +69,16 @@ namespace TestsGenerator.TypeInfos
 
         [GeneratedRegex("\\s+")]
         public static partial Regex WhiteSpaces();
+        [GeneratedRegex("\\[\\]")]
+        public static partial Regex SquareBracketsSpaces();
 
-        public readonly string TypeName;
+        public readonly string ItemTypeName;
 
-        public readonly string TypeFullName;
+        public readonly string ItemTypeFullName;
+
+        public abstract string TypeName { get; }
+
+        public abstract string TypeFullName { get; }
 
         public readonly bool IsReferenceType;
     }

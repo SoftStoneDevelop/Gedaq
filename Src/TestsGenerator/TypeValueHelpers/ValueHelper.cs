@@ -1,8 +1,17 @@
-﻿namespace TestsGenerator.TypeValueHelpers
+﻿using TestsGenerator.Enums;
+
+namespace TestsGenerator.TypeValueHelpers
 {
     internal abstract class ValueHelper
     {
-        public abstract string NewValue();
+        public readonly EnumerableType _enumerableType;
+
+        public ValueHelper(EnumerableType enumerableType)
+        {
+            _enumerableType = enumerableType;
+        }
+
+        public abstract string NewSingleValue();
 
         public abstract ValueHelper NewInstance();
     }

@@ -1,15 +1,20 @@
-﻿using TestsGenerator.Helpers;
+﻿using TestsGenerator.Enums;
+using TestsGenerator.Helpers;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class BooleanValueHelper : ValueHelper
     {
-        public override ValueHelper NewInstance()
+        public BooleanValueHelper(EnumerableType enumerableType) : base(enumerableType)
         {
-            return new BooleanValueHelper();
         }
 
-        public override string NewValue()
+        public override ValueHelper NewInstance()
+        {
+            return new BooleanValueHelper(_enumerableType);
+        }
+
+        public override string NewSingleValue()
         {
             var result = PrimitiveRandomaiser.Boolean();
             return $"{result.ToString().ToLowerInvariant()}";

@@ -19,7 +19,7 @@ namespace Gedaq.SqlClient.Helpers
             if (parametr.HaveSqlDbType)
             {
                 builder.Append($@"
-                parametr{index}.SqlDbType = System.Data.SqlDbType.{parametr.SqlDbType.ToString()};
+                parametr{index}.SqlDbType = (System.Data.SqlDbType)({(int)parametr.SqlDbType});
 ");
             }
 

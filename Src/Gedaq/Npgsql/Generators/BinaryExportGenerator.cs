@@ -223,11 +223,11 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace}
             {
                 if(isAsync)
                 {
-                    return $"(NpgsqlTypes.NpgsqlDbType){((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType}, cancellationToken";
+                    return $"(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType}), cancellationToken";
                 }
                 else
                 {
-                    return $"(NpgsqlTypes.NpgsqlDbType){((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType}";
+                    return $"(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})";
                 }
             }
             else

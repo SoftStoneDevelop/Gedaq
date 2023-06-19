@@ -196,7 +196,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace}
             if (NpgsqlMapTypeHelper.IsKnownProviderType(binaryImport.MapTypeName))
             {
                 var field = binaryImport.Aliases.AllFieldsOrderByPosition().First();
-                var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType){((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType}" : "";
+                var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" : "";
                 _methodCode.Append($@"
                     {await}import.Write{async}(item{dbType}{(isAsync ? $",cancellationToken" : "")});
 ");
@@ -204,7 +204,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace}
             else if (binaryImport.MapTypeName.IsNullableType())
             {
                 var field = binaryImport.Aliases.AllFieldsOrderByPosition().First();
-                var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType){((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType}" : "";
+                var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" : "";
                 _methodCode.Append($@"
                     if (!item.HasValue)
                     {{
@@ -223,7 +223,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace}
             else
             {
                 var field = binaryImport.Aliases.AllFieldsOrderByPosition().First();
-                var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType){((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType}" : "";
+                var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" : "";
                 _methodCode.Append($@"
                     {await}import.Write{async}(item{dbType}{(isAsync ? $",cancellationToken" : "")});
 ");
@@ -358,7 +358,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace}
             var cancellation = isAsync ? "(cancellationToken)" : "()"; ;
             var await = isAsync ? "await " : "";
 
-            var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType){((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType}" : "";
+            var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" : "";
             var tabs = pair.Parent != null ? pair.Tabs + 1 : pair.Tabs;
             pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
             var pathInItem = pair.PathInItem(propertyName);

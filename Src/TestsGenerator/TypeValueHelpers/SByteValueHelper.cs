@@ -1,15 +1,20 @@
 ﻿using System;
+using TestsGenerator.Enums;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class SByteValueHelper : ValueHelper
     {
-        public override ValueHelper NewInstance()
+        public SByteValueHelper(EnumerableType enumerableType) : base(enumerableType)
         {
-            return new SByteValueHelper();
         }
 
-        public override string NewValue()
+        public override ValueHelper NewInstance()
+        {
+            return new SByteValueHelper(_enumerableType);
+        }
+
+        public override string NewSingleValue()
         {
             var result = (sbyte)Random.Shared.Next(sbyte.MinValue, sbyte.MaxValue);
             return $@"{result}";

@@ -28,7 +28,7 @@ namespace Gedaq.DbConnection.Helpers
             if (parametr.HaveDbType)
             {
                 builder.Append($@"
-                parametr{index}.DbType = (System.Data.DbType){parametr.DbType};
+                parametr{index}.DbType = (System.Data.DbType)({parametr.DbType});
 ");
             }
 

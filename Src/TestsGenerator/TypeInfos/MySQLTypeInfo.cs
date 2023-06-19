@@ -1,5 +1,7 @@
 ﻿using MySqlConnector;
+using System;
 using System.Data;
+using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 
 namespace TestsGenerator.TypeInfos
@@ -10,10 +12,11 @@ namespace TestsGenerator.TypeInfos
             MySqlDbType mySqlDbType,
             string typeName,
             string typeFullName,
+            EnumerableType enumerableType,
             int size = -1,
             bool mustHaveSize = false,
             bool isReferenceType = false
-            ) : base(mySqlDbType.ToDbType(), mySqlDbType.ToDbSqlTableType(), typeName, typeFullName, size, mustHaveSize, isReferenceType)
+            ) : base(mySqlDbType.ToDbType(), mySqlDbType.ToDbSqlTableType(), typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType)
         {
             MySqlDbType = mySqlDbType;
         }
@@ -30,6 +33,22 @@ namespace TestsGenerator.TypeInfos
         public override string DbTypeStr()
         {
             return $"System.Data.DbType.{DbType.ToString()}";
+        }
+
+        public override string TypeName
+        {
+            get
+            {
+                return ItemTypeName;
+            }
+        }
+
+        public override string TypeFullName
+        {
+            get
+            {
+                return ItemTypeFullName;
+            }
         }
 
         public override string DbSqlAfterType()

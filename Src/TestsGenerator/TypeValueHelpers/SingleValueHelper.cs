@@ -1,15 +1,21 @@
 ﻿using System;
+using TestsGenerator.Enums;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class SingleValueHelper : ValueHelper
     {
-        public override ValueHelper NewInstance()
+        public SingleValueHelper(EnumerableType enumerableType) : base(enumerableType)
         {
-            return new SingleValueHelper();
+
         }
 
-        public override string NewValue()
+        public override ValueHelper NewInstance()
+        {
+            return new SingleValueHelper(_enumerableType);
+        }
+
+        public override string NewSingleValue()
         {
             var result = (float)Random.Shared.NextSingle();
             return $@"{result}f";

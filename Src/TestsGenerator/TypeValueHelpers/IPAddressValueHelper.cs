@@ -1,15 +1,20 @@
 ﻿using System;
+using TestsGenerator.Enums;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class IPAddressValueHelper : ValueHelper
     {
-        public override ValueHelper NewInstance()
+        public IPAddressValueHelper(EnumerableType enumerableType) : base(enumerableType)
         {
-            return new IPAddressValueHelper();
         }
 
-        public override string NewValue()
+        public override ValueHelper NewInstance()
+        {
+            return new IPAddressValueHelper(_enumerableType);
+        }
+
+        public override string NewSingleValue()
         {
             var p1 = Random.Shared.Next(0, 255);
             var p2 = Random.Shared.Next(0, 255);

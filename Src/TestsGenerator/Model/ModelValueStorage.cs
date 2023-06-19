@@ -1,21 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Text;
 using TestsGenerator.Constants;
+using TestsGenerator.Enums;
+using TestsGenerator.TypeInfos;
 using TestsGenerator.TypeValueHelpers;
 
 namespace TestsGenerator.Model
 {
     internal class ModelValueStorage
     {
-        public ModelValueStorage(ValueHelper valueStorage)
+        public ModelValueStorage(TypeInfo typeInfo, ValueHelper valueStorage)
         {
-            Id = new Int32ValueHelper();
+            _id = new Int32ValueHelper(Enums.EnumerableType.SingleType);
             Value = valueStorage.NewInstance();
             NullableValue = valueStorage.NewInstance();
+            _typeInfo = typeInfo;
         }
 
-        private Int32ValueHelper Id { get; }
+        private readonly TypeInfo _typeInfo;
+
+        private readonly Int32ValueHelper _id;
 
         private ValueHelper Value { get; }
 
@@ -43,7 +49,7 @@ namespace TestsGenerator.Model
         {
             while (true)
             {
-                var idStr = Id.NewValue(out idValue);
+                var idStr = _id.NewValue(out idValue);
                 if(_modelIds.Add(idValue))
                 {
                     return idStr;
@@ -55,7 +61,7 @@ namespace TestsGenerator.Model
         {
             while (true)
             {
-                var idStr = Id.NewValue(out idValue);
+                var idStr = _id.NewValue(out idValue);
                 if (_innerModelIds.Add(idValue))
                 {
                     return idStr;
@@ -76,8 +82,8 @@ namespace TestsGenerator.Model
                 {
                     Id = GetNextInnerModelId(out var idInnerValue),
                     IdValue = idInnerValue,
-                    Value = Value.NewValue(),
-                    NullableValue = NextNull() ? ValueConstants.NullValue : NullableValue.NewValue()
+                    Value = NextValue(false),
+                    NullableValue = NextNull() ? ValueConstants.NullValue : NextValue(true)
                 };
             }
 
@@ -85,14 +91,60 @@ namespace TestsGenerator.Model
             {
                 Id = GetNextModelId(out var idValue),
                 IdValue = idValue,
-                Value = Value.NewValue(),
-                NullableValue = NextNull() ? ValueConstants.NullValue : NullableValue.NewValue(),
+                Value = NextValue(false),
+                NullableValue = NextNull() ? ValueConstants.NullValue : NextValue(true),
 
                 InnerModel = newInnerValue
             };
 
             _values.Add(newValue);
             return newValue;
+        }
+
+        private string NextValue(bool nullable)
+        {
+            switch (Value._enumerableType)
+            {
+                default:
+                case EnumerableType.SingleType:
+                {
+                    return Value.NewSingleValue();
+                }
+                case EnumerableType.Array:
+                {
+                    var count = Random.Shared.Next(3, 5);
+                    var builder = new StringBuilder();
+                    builder.Append($@"
+new {_typeInfo.ItemTypeFullName}[{count}]
+{{");
+                    for (int i = 0; i < count; i++)
+                    {
+                        builder.Append($@"
+{(nullable? NullableValue.NewSingleValue() : Value.NewSingleValue())},
+");
+                    }
+                    builder.Append($@"
+}}");
+                    return builder.ToString();
+                }
+                case EnumerableType.List:
+                {
+                    var count = Random.Shared.Next(3, 5);
+                    var builder = new StringBuilder();
+                    builder.Append($@"
+new System.Collections.Generic.List<{_typeInfo.ItemTypeFullName}>({count})
+{{");
+                    for (int i = 0; i < count; i++)
+                    {
+                        builder.Append($@"
+{(nullable ? NullableValue.NewSingleValue() : Value.NewSingleValue())},
+");
+                    }
+                    builder.Append($@"
+}}");
+                    return builder.ToString();
+                }
+            }
         }
     }
 

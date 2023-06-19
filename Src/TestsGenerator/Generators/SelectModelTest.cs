@@ -31,6 +31,7 @@ namespace TestsGenerator.Generators
                 case Database.PostgreSQL:
                 {
                     PostgreSQL.SelectModelTest.Generate(order, stringBuilder, model, storage);
+                    
                     break;
                 }
                 case Database.MsSQL:
@@ -43,20 +44,23 @@ namespace TestsGenerator.Generators
                 }
             }
 
-            SelectTestConfig(model, stringBuilder, database);
-            SelectTest(order, orderedValues, model, stringBuilder, false);
-            SelectTest(order, orderedValues, model, stringBuilder, true);
-
-            CommandSelectTest(order, orderedValues, model, stringBuilder, false);
-            CommandSelectTest(order, orderedValues, model, stringBuilder, true);
-
-            BatchTests(order, orderedValues, model, stringBuilder, database);
-
-            if(DefaultTypeHelper.CanConvert(model.TypeInfo.TypeFullName))
+            if(model.TypeInfo.EnumerableType == EnumerableType.SingleType)
             {
-                SelectToObjArrTestConfig(model, stringBuilder, database);
-                SelectToObjArrTest(order, model, orderedValues, stringBuilder, false);
-                SelectToObjArrTest(order, model, orderedValues, stringBuilder, true);
+                SelectTestConfig(model, stringBuilder, database);
+                SelectTest(order, orderedValues, model, stringBuilder, false);
+                SelectTest(order, orderedValues, model, stringBuilder, true);
+
+                CommandSelectTest(order, orderedValues, model, stringBuilder, false);
+                CommandSelectTest(order, orderedValues, model, stringBuilder, true);
+
+                BatchTests(order, orderedValues, model, stringBuilder, database);
+
+                if (DefaultTypeHelper.CanConvert(model.TypeInfo.ItemTypeFullName))
+                {
+                    SelectToObjArrTestConfig(model, stringBuilder, database);
+                    SelectToObjArrTest(order, model, orderedValues, stringBuilder, false);
+                    SelectToObjArrTest(order, model, orderedValues, stringBuilder, true);
+                }
             }
         }
 
@@ -304,8 +308,8 @@ ORDER BY
         {
             stringBuilder.Append($@"
                 Assert.That(model, Is.Not.Null);
-                Assert.That(({model.IdTypeInfo.DefaultMapType})model[0], Is.EqualTo({DefaultTypeHelper.Convert(model.IdTypeInfo.TypeFullName, model.IdTypeInfo.DefaultMapType, expectValue.Id)}));//Id
-                Assert.That(({model.TypeInfo.DefaultMapType})model[1], Is.EqualTo({DefaultTypeHelper.Convert(model.TypeInfo.TypeFullName, model.TypeInfo.DefaultMapType, expectValue.Value)}));//Value
+                Assert.That(({model.IdTypeInfo.DefaultMapType})model[0], Is.EqualTo({DefaultTypeHelper.Convert(model.IdTypeInfo.ItemTypeFullName, model.IdTypeInfo.DefaultMapType, expectValue.Id)}));//Id
+                Assert.That(({model.TypeInfo.DefaultMapType})model[1], Is.EqualTo({DefaultTypeHelper.Convert(model.TypeInfo.ItemTypeFullName, model.TypeInfo.DefaultMapType, expectValue.Value)}));//Value
 ");
             if (expectValue.InnerModel == null)
             {
@@ -318,8 +322,8 @@ ORDER BY
             else
             {
                 stringBuilder.Append($@"
-                Assert.That(({model.ModelInner.IdTypeInfo.DefaultMapType})model[2], Is.EqualTo({DefaultTypeHelper.Convert(model.ModelInner.IdTypeInfo.TypeFullName, model.ModelInner.IdTypeInfo.DefaultMapType, expectValue.InnerModel.Id)}));//InnerModel.Id
-                Assert.That(({model.ModelInner.TypeInfo.DefaultMapType})model[3], Is.EqualTo({DefaultTypeHelper.Convert(model.ModelInner.TypeInfo.TypeFullName, model.ModelInner.TypeInfo.DefaultMapType, expectValue.InnerModel.Value)}));//InnerModel.Value
+                Assert.That(({model.ModelInner.IdTypeInfo.DefaultMapType})model[2], Is.EqualTo({DefaultTypeHelper.Convert(model.ModelInner.IdTypeInfo.ItemTypeFullName, model.ModelInner.IdTypeInfo.DefaultMapType, expectValue.InnerModel.Id)}));//InnerModel.Id
+                Assert.That(({model.ModelInner.TypeInfo.DefaultMapType})model[3], Is.EqualTo({DefaultTypeHelper.Convert(model.ModelInner.TypeInfo.ItemTypeFullName, model.ModelInner.TypeInfo.DefaultMapType, expectValue.InnerModel.Value)}));//InnerModel.Value
 ");
                 if (expectValue.InnerModel.NullableValue == ValueConstants.NullValue)
                 {
@@ -330,7 +334,7 @@ ORDER BY
                 else
                 {
                     stringBuilder.Append($@"
-                Assert.That(({model.ModelInner.TypeInfo.DefaultMapTypeNullable})model[4], Is.EqualTo({DefaultTypeHelper.Convert(model.ModelInner.TypeInfo.TypeFullName, model.ModelInner.TypeInfo.DefaultMapType, expectValue.InnerModel.NullableValue)}));//InnerModel.NullableValue
+                Assert.That(({model.ModelInner.TypeInfo.DefaultMapTypeNullable})model[4], Is.EqualTo({DefaultTypeHelper.Convert(model.ModelInner.TypeInfo.ItemTypeFullName, model.ModelInner.TypeInfo.DefaultMapType, expectValue.InnerModel.NullableValue)}));//InnerModel.NullableValue
 ");
                 }
             }
@@ -343,7 +347,7 @@ ORDER BY
             else
             {
                 stringBuilder.Append($@"
-                Assert.That(({model.TypeInfo.DefaultMapTypeNullable})model[5], Is.EqualTo({DefaultTypeHelper.Convert(model.TypeInfo.TypeFullName, model.TypeInfo.DefaultMapType, expectValue.NullableValue)}));
+                Assert.That(({model.TypeInfo.DefaultMapTypeNullable})model[5], Is.EqualTo({DefaultTypeHelper.Convert(model.TypeInfo.ItemTypeFullName, model.TypeInfo.DefaultMapType, expectValue.NullableValue)}));
 ");
             }
         }

@@ -103,7 +103,7 @@ using System.Threading.Tasks;
 
 namespace Tests
 {{
-    internal partial class Tests_{model.TypeInfo.TypeName}_{model.TypeInfo.DbSqlTypeWithoutSpace()}
+    internal partial class Tests_{model.TypeInfo.ItemTypeName}{(model.TypeInfo.EnumerableType == EnumerableType.SingleType ? string.Empty : $"_{model.TypeInfo.EnumerableType.ToString()}")}_{model.TypeInfo.DbSqlTypeWithoutSpace()}
     {{
 ");
         }

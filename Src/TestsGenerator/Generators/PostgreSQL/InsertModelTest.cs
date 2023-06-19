@@ -15,14 +15,15 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilder stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            ref int indexValue
+            ref int indexValue,
+            bool toEnd
             )
         {
             InsertModelConfig(stringBuilder, model);
             InsertModelTest(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: false);
             InsertModelTest(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: true);
 
-            if(DefaultTypeHelper.CanConvert(model.TypeInfo.TypeFullName))
+            if(DefaultTypeHelper.CanConvert(model.TypeInfo.ItemTypeFullName))
             {
                 InsertModelReturningScalarTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: false);
                 InsertModelReturningScalarTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: true);
@@ -30,7 +31,8 @@ namespace TestsGenerator.Generators.PostgreSQL
 
             InsertModelReturningConfig(stringBuilder, model);
             InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 4, isAsync: false);
-            InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 4, isAsync: true);
+            int endIndex = toEnd ? storage.Values.Count : indexValue + 4;
+            InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, endIndex, isAsync: true);
         }
 
         private static void InsertModelConfig(

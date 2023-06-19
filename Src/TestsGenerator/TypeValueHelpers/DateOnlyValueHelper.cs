@@ -1,15 +1,20 @@
 ﻿using System;
+using TestsGenerator.Enums;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class DateOnlyValueHelper : ValueHelper
     {
-        public override ValueHelper NewInstance()
+        public DateOnlyValueHelper(EnumerableType enumerableType) : base(enumerableType)
         {
-            return new DateOnlyValueHelper();
         }
 
-        public override string NewValue()
+        public override ValueHelper NewInstance()
+        {
+            return new DateOnlyValueHelper(_enumerableType);
+        }
+
+        public override string NewSingleValue()
         {
             var year = Random.Shared.Next(1917, 2020);
             var month = Random.Shared.Next(10, 11);

@@ -6,7 +6,7 @@ namespace TestsGenerator.Comparers
     {
         public bool Equals(Model.ModelType x, Model.ModelType y)
         {
-            return x.TypeInfo.TypeFullName == y.TypeInfo.TypeFullName && x.TypeInfo.DbSqlType == y.TypeInfo.DbSqlType;
+            return x.TypeInfo.ItemTypeFullName == y.TypeInfo.ItemTypeFullName && x.TypeInfo.DbSqlType == y.TypeInfo.DbSqlType && x.TypeInfo.EnumerableType == y.TypeInfo.EnumerableType;
         }
 
         public int GetHashCode(Model.ModelType obj)

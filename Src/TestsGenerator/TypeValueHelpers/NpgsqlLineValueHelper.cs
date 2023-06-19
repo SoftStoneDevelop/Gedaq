@@ -1,15 +1,20 @@
 ﻿using System;
+using TestsGenerator.Enums;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class NpgsqlLineValueHelper : ValueHelper
     {
-        public override ValueHelper NewInstance()
+        public NpgsqlLineValueHelper(EnumerableType enumerableType) : base(enumerableType)
         {
-            return new NpgsqlLineValueHelper();
         }
 
-        public override string NewValue()
+        public override ValueHelper NewInstance()
+        {
+            return new NpgsqlLineValueHelper(_enumerableType);
+        }
+
+        public override string NewSingleValue()
         {
             var a = Random.Shared.NextDouble();
             var b = Random.Shared.NextDouble();

@@ -1,4 +1,5 @@
 ﻿using System;
+using TestsGenerator.Enums;
 
 namespace TestsGenerator.TypeValueHelpers
 {
@@ -6,17 +7,17 @@ namespace TestsGenerator.TypeValueHelpers
     {
         private readonly bool _likeTimeOnly;
 
-        public NpgsqlIntervalValueHelper(bool likeTimeOnly) 
+        public NpgsqlIntervalValueHelper(EnumerableType enumerableType, bool likeTimeOnly) : base(enumerableType)
         {
             _likeTimeOnly = likeTimeOnly;
         }
 
         public override ValueHelper NewInstance()
         {
-            return new NpgsqlIntervalValueHelper(_likeTimeOnly);
+            return new NpgsqlIntervalValueHelper(_enumerableType, _likeTimeOnly);
         }
 
-        public override string NewValue()
+        public override string NewSingleValue()
         {
             var time = Random.Shared.Next(0, 5000);
 

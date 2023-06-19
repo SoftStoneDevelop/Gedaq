@@ -1,15 +1,21 @@
-﻿using TestsGenerator.Helpers;
+﻿using TestsGenerator.Enums;
+using TestsGenerator.Helpers;
 
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class CharValueHelper : ValueHelper
     {
-        public override ValueHelper NewInstance()
+        public CharValueHelper(EnumerableType enumerableType) : base(enumerableType) 
         {
-            return new CharValueHelper();
+
         }
 
-        public override string NewValue()
+        public override ValueHelper NewInstance()
+        {
+            return new CharValueHelper(_enumerableType);
+        }
+
+        public override string NewSingleValue()
         {
             return $"'{PrimitiveRandomaiser.Char()}'";
         }

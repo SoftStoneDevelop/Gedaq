@@ -1,4 +1,6 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
+using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 
 namespace TestsGenerator.TypeInfos
@@ -9,10 +11,11 @@ namespace TestsGenerator.TypeInfos
             SqlDbType sqlDbType,
             string typeName,
             string typeFullName,
+            EnumerableType enumerableType,
             int size = -1,
             bool mustHaveSize = false,
             bool isReferenceType = false
-            ) : base(sqlDbType.ToDbType(), sqlDbType.ToDbSqlTableType(), typeName, typeFullName, size, mustHaveSize, isReferenceType)
+            ) : base(sqlDbType.ToDbType(), sqlDbType.ToDbSqlTableType(), typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType)
         {
             SqlDbType = sqlDbType;
         }
@@ -29,6 +32,22 @@ namespace TestsGenerator.TypeInfos
         public override string DbTypeStr()
         {
             return $"System.Data.DbType.{DbType.ToString()}";
+        }
+
+        public override string TypeName
+        {
+            get
+            {
+                return ItemTypeName;
+            }
+        }
+
+        public override string TypeFullName
+        {
+            get
+            {
+                return ItemTypeFullName;
+            }
         }
 
         public override string DbSqlAfterType()

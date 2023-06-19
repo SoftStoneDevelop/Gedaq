@@ -1,15 +1,22 @@
 ﻿using System;
+using TestsGenerator.Enums;
+
 namespace TestsGenerator.TypeValueHelpers
 {
     internal class TimeOnlyValueHelper : ValueHelper
     {
+        public TimeOnlyValueHelper(EnumerableType enumerableType) : base(enumerableType)
+        {
+
+        }
+
         public override ValueHelper NewInstance()
         {
             new TimeOnly(hour: 1, minute: 1, second: 1, millisecond: 1);
-            return new TimeOnlyValueHelper();
+            return new TimeOnlyValueHelper(_enumerableType);
         }
 
-        public override string NewValue()
+        public override string NewSingleValue()
         {
             var hour = Random.Shared.Next(0, 23);
             var minute = Random.Shared.Next(0, 59);

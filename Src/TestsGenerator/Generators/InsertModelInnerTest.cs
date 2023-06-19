@@ -22,7 +22,7 @@ namespace TestsGenerator.Generators
             {
                 case Database.PostgreSQL:
                 {
-                    PostgreSQL.InsertModelInner.Generate(order, stringBuilder, model, storage, ref i);
+                    PostgreSQL.InsertModelInner.Generate(order, stringBuilder, model, storage, ref i, model.TypeInfo.EnumerableType != EnumerableType.SingleType);
                     break;
                 }
                 case Database.MsSQL:
@@ -35,14 +35,17 @@ namespace TestsGenerator.Generators
                 }
             }
 
-            DbConnectionInsertModelInnerConfig(stringBuilder, model, database);
-            DbConnectionInsertModelInnerTest(order, stringBuilder, storage, ref i, i + 2, isAsync: false);
-
-            if (i + 2 >= storage.Values.Count)
+            if (model.TypeInfo.EnumerableType == EnumerableType.SingleType)
             {
-                throw new System.ArgumentOutOfRangeException(nameof(i));
+                DbConnectionInsertModelInnerConfig(stringBuilder, model, database);
+                DbConnectionInsertModelInnerTest(order, stringBuilder, storage, ref i, i + 2, isAsync: false);
+
+                if (i + 2 >= storage.Values.Count)
+                {
+                    throw new System.ArgumentOutOfRangeException(nameof(i));
+                }
+                DbConnectionInsertModelInnerTest(order, stringBuilder, storage, ref i, storage.Values.Count, isAsync: true);
             }
-            DbConnectionInsertModelInnerTest(order, stringBuilder, storage, ref i, storage.Values.Count, isAsync: true);
         }
 
         private static void DbConnectionInsertModelInnerConfig(
