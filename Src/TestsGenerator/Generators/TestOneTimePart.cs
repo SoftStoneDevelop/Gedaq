@@ -213,7 +213,7 @@ CREATE TABLE {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
     {model.NullableValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()},
     {model.ModelInnerColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()},
     CONSTRAINT binary_{model.TableName}_pkey PRIMARY KEY ({model.IdColumnName}),
-    CONSTRAINT binary_{model.TableName}_{model.ModelInner.TableName}_fk FOREIGN KEY ({model.ModelInnerColumnName})
+    CONSTRAINT binary_{model.TableName}_binary_{model.ModelInner.TableName}_fk FOREIGN KEY ({model.ModelInnerColumnName})
         REFERENCES {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName} ({model.ModelInner.IdColumnName}) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION

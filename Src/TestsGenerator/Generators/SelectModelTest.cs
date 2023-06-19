@@ -52,9 +52,12 @@ namespace TestsGenerator.Generators
 
             BatchTests(order, orderedValues, model, stringBuilder, database);
 
-            SelectToObjArrTestConfig(model, stringBuilder, database);
-            SelectToObjArrTest(order, model, orderedValues, stringBuilder, false);
-            SelectToObjArrTest(order, model, orderedValues, stringBuilder, true);
+            if(DefaultTypeHelper.CanConvert(model.TypeInfo.TypeFullName))
+            {
+                SelectToObjArrTestConfig(model, stringBuilder, database);
+                SelectToObjArrTest(order, model, orderedValues, stringBuilder, false);
+                SelectToObjArrTest(order, model, orderedValues, stringBuilder, true);
+            }
         }
 
         private static void SelectTestConfig(

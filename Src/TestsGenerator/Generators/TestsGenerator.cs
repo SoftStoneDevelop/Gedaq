@@ -80,18 +80,19 @@ namespace TestsGenerator.Generators
 
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Char, "Char", "System.Char", () => new CharValueHelper()));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Numeric, "Decimal", "System.Decimal", () => new DecimalValueHelper()));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Money, "Decimal", "System.Decimal", () => new DecimalValueHelper(2)));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Double, "Double", "System.Double", () => new DoubleValueHelper()));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Boolean, "Boolean", "System.Boolean", () => new BooleanValueHelper()));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Real, "Single", "System.Single", () => new SingleValueHelper()));
 
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Time, "TimeSpan", "System.TimeSpan", () => new TimeSpanValueHelper(true)));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Interval, "TimeSpan", "System.TimeSpan", () => new TimeSpanValueHelper(true)));
+            _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Interval, "NpgsqlInterval", "NpgsqlTypes.NpgsqlInterval", () => new NpgsqlIntervalValueHelper(true)));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Time, "TimeOnly", "System.TimeOnly", () => new TimeOnlyValueHelper()));
 
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Timestamp, "DateTime", "System.DateTime", () => new DateTimeValueHelper(System.DateTimeKind.Local)));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.TimestampTz, "DateTime", "System.DateTime", () => new DateTimeValueHelper(System.DateTimeKind.Utc)));
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Date, "DateOnly", "System.DateOnly", () => new DateOnlyValueHelper()));
-
-            //_models.Add(new Model.NpgsqlModel("time with time zone", "DateTimeOffset", "System.DateTimeOffset"));
 
             _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Text, "String", "System.String", () => new StringValueHelper(), size: 400, mustHaveSize: true, isReferenceType: true));
 

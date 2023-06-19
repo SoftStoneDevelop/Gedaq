@@ -34,6 +34,10 @@ namespace TestsGenerator.Helpers
                 {
                     return "numeric";
                 }
+                case NpgsqlDbType.Money:
+                {
+                    return "money";
+                }
                 case NpgsqlDbType.Real:
                 {
                     return "real";
@@ -82,6 +86,10 @@ namespace TestsGenerator.Helpers
                 {
                     return "uuid";
                 }
+                case NpgsqlDbType.Interval:
+                {
+                    return "interval";
+                }
                 default:
                 {
                     throw new NotImplementedException();
@@ -106,6 +114,10 @@ namespace TestsGenerator.Helpers
                     return "System.Int32";
                 }
                 case NpgsqlDbType.Numeric:
+                {
+                    return "System.Decimal";
+                }
+                case NpgsqlDbType.Money:
                 {
                     return "System.Decimal";
                 }
@@ -156,6 +168,10 @@ namespace TestsGenerator.Helpers
                 case NpgsqlDbType.Uuid:
                 {
                     return "System.Guid";
+                }
+                case NpgsqlDbType.Interval:
+                {
+                    return "System.TimeSpan";
                 }
                 default:
                 {

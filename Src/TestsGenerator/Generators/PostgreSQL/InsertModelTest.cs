@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using TestsGenerator.Constants;
+using TestsGenerator.Helpers;
 using TestsGenerator.Model;
 using TestsGenerator.TypeValueHelpers;
 
@@ -21,12 +22,15 @@ namespace TestsGenerator.Generators.PostgreSQL
             InsertModelTest(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: false);
             InsertModelTest(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: true);
 
-            InsertModelReturningConfig(stringBuilder, model);
-            InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: false);
-            InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: true);
+            if(DefaultTypeHelper.CanConvert(model.TypeInfo.TypeFullName))
+            {
+                InsertModelReturningScalarTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: false);
+                InsertModelReturningScalarTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: true);
+            }
 
-            InsertModelReturningScalarTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: false);
-            InsertModelReturningScalarTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: true);
+            InsertModelReturningConfig(stringBuilder, model);
+            InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 4, isAsync: false);
+            InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 4, isAsync: true);
         }
 
         private static void InsertModelConfig(

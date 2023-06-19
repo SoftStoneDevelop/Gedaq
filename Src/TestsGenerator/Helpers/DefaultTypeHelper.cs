@@ -22,6 +22,16 @@
             return $"({value})";
         }
 
+        public static bool CanConvert(string type)
+        {
+            if (type == "NpgsqlTypes.NpgsqlInterval")
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         public static bool IsNullable(this string type)
         {
             switch(type)
