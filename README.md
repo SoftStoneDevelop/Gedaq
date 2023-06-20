@@ -37,6 +37,9 @@ Supported databases(see examples and documentation in the relevant DB package):<
 - [SqlClient](https://github.com/SoftStoneDevelop/Gedaq.SqlClient)
 - [MySqlConnector](https://github.com/SoftStoneDevelop/Gedaq.MySqlConnector)
 - [Oracle.ManagedDataAccess.Core](https://github.com/SoftStoneDevelop/Gedaq/issues/6)
+<br>
+Join the Discord server: https://discord.gg/MP3TCFuX
+<br>
 
 Usage:
 
