@@ -1,7 +1,9 @@
 <h1 align="center">
   <a>Gedaq</a>
 </h1>
-
+<h1 align="center">
+  <a href="https://discord.gg/xsR5EYU4ZM"><img height="30px" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"><img></a>
+</h1>
 <h3 align="center">
 
   [![Nuget](https://img.shields.io/nuget/v/Gedaq?logo=Gedaq)](https://www.nuget.org/packages/Gedaq/)
@@ -37,6 +39,7 @@ Supported databases(see examples and documentation in the relevant DB package):<
 - [SqlClient](https://github.com/SoftStoneDevelop/Gedaq.SqlClient)
 - [MySqlConnector](https://github.com/SoftStoneDevelop/Gedaq.MySqlConnector)
 - [Oracle.ManagedDataAccess.Core](https://github.com/SoftStoneDevelop/Gedaq/issues/6)
+<br>
 
 Usage:
 
