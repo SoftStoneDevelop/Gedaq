@@ -2,7 +2,7 @@
   <a>Gedaq</a>
 </h1>
 <h1 align="center">
-  <a href="https://discord.gg/tNrunagn"><img height="30px" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"><img></a>
+  <a href="https://discord.gg/xsR5EYU4ZM"><img height="30px" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"><img></a>
 </h1>
 <h3 align="center">
 
