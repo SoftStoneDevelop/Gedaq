@@ -5,9 +5,9 @@ using TestsGenerator.Model;
 
 namespace TestsGenerator.Generators.MySQL
 {
-    internal static class InsertModel
+    internal static class InsertModelInner
     {
-        private static string _testName = "InsertModel";
+        private static string _testName = "InsertModelInner";
 
         public static void Generate(
             int order,
@@ -16,21 +16,20 @@ namespace TestsGenerator.Generators.MySQL
             ModelValueStorage storage
             )
         {
-            var index = 0;
-            InsertModelConfig(stringBuilder, model);
-            InsertModelTest(order, stringBuilder, storage, ref index, index + 2, isAsync: false);
+            var indexValue = 0;
+            InsertModelInnerConfig(stringBuilder, model);
 
-            if (index + 2 >= storage.Values.Count)
-            {
-                throw new System.ArgumentOutOfRangeException(nameof(index));
-            }
+            InsertModelInnerTest(order, stringBuilder, storage, ref indexValue, indexValue + 4, isAsync: false);
 
-            InsertModelTest(order, stringBuilder, storage, ref index, index + 2, isAsync: true);
+            var canDbConnection = model.TypeInfo.EnumerableType == EnumerableType.SingleType;
+            int endIndex = !canDbConnection ? storage.Values.Count : indexValue + 4;
+            InsertModelInnerTest(order, stringBuilder, storage, ref indexValue, endIndex, isAsync: true);
 
-            DbConnection.InsertModel.Generate(order, stringBuilder, model, storage, Database.MySQL, ref index, toEnd: true);
+            if (canDbConnection)
+                DbConnection.InsertModelInner.Generate(order, stringBuilder, model, storage, Database.MySQL, ref indexValue, toEnd: true);
         }
 
-        private static void InsertModelConfig(
+        private static void InsertModelInnerConfig(
             StringBuilder stringBuilder,
             Model.ModelType model
             )
@@ -38,18 +37,16 @@ namespace TestsGenerator.Generators.MySQL
             stringBuilder.Append($@"
 [Gedaq.MySqlConnector.Attributes.Query(
             query: @""
-INSERT INTO {Database.MySQL.ToDefaultSchema()}.{model.TableName}(
-	{model.IdColumnName},
-    {model.ValueColumnName},
-    {model.NullableValueColumnName},
-    {model.ModelInnerColumnName}
+INSERT INTO {Database.MySQL.ToDefaultSchema()}.{model.ModelInner.TableName}(
+	{model.ModelInner.IdColumnName},
+    {model.ModelInner.ValueColumnName},
+    {model.ModelInner.NullableValueColumnName}
 )
 VALUES (
     @{model.ModelInner.IdColumnName}, 
     @{model.ModelInner.ValueColumnName}, 
-    @{model.ModelInner.NullableValueColumnName},
-    @{model.ModelInnerColumnName}
-)
+    @{model.ModelInner.NullableValueColumnName}
+);
 "",
             methodName:""{_testName}"",
             sourceType: SourceType.MySqlConnection,
@@ -60,31 +57,23 @@ VALUES (
             accessModifier: AccessModifier.Private
             ), 
             Gedaq.MySqlConnector.Attributes.Parametr(
-                parametrType: typeof({model.ModelInner.IdType}), 
-                parametrName: ""{model.ModelInner.IdColumnName}"", 
+                parametrType: typeof({model.ModelInner.IdType}),
+                parametrName: ""{model.ModelInner.IdColumnName}"",
                 methodParametrName: ""{model.ModelInner.IdColumnName}"", 
-                dbType: {model.IdTypeInfo.SpecialDbTypeStr()}
-            ),
+                dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()}
+                ),
             Gedaq.MySqlConnector.Attributes.Parametr(
-                parametrType: typeof({model.ModelInner.ValueType}), 
-                parametrName: ""{model.ModelInner.ValueColumnName}"", 
-                methodParametrName: ""{model.ModelInner.ValueColumnName}"", 
-                dbType: {model.TypeInfo.SpecialDbTypeStr()}
-            ),
+                parametrType: typeof({model.ModelInner.ValueType}),
+                parametrName: ""{model.ModelInner.ValueColumnName}"",
+                methodParametrName: ""{model.ModelInner.ValueColumnName}"",
+                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
+                ),
             Gedaq.MySqlConnector.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.NullableValueType}), 
-                parametrName: ""{model.ModelInner.NullableValueColumnName}"", 
-                methodParametrName: ""{model.ModelInner.NullableValueColumnName}"", 
-                dbType: {model.TypeInfo.SpecialDbTypeStr()},
-                nullable: true
-            ),
-            Gedaq.MySqlConnector.Attributes.Parametr(
-                parametrType: typeof({model.ModelInner.IdType}?), 
-                parametrName: ""{model.ModelInnerColumnName}"", 
-                methodParametrName: ""{model.ModelInnerColumnName}"", 
-                dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
-                nullable: true
-            )
+                parametrName: ""{model.ModelInner.NullableValueColumnName}"",
+                methodParametrName: ""{model.ModelInner.NullableValueColumnName}"",
+                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
+                )
             ]
         public void {_testName}Config()
         {{
@@ -92,7 +81,7 @@ VALUES (
 ");
         }
 
-        private static void InsertModelTest(
+        private static void InsertModelInnerTest(
             int order,
             StringBuilder stringBuilder,
             ModelValueStorage storage,
@@ -120,8 +109,13 @@ VALUES (
             for (; indexValue < endIndex; indexValue++)
             {
                 ModelValue value = storage.Values[indexValue];
+                if (value.InnerModel == null)
+                {
+                    continue;
+                }
+
                 stringBuilder.Append($@"
-                changedRows = {await} {_testName}{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)});
+                changedRows = {await} {_testName}{async}(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
                 Assert.That(changedRows, Is.EqualTo(1));
 ");
             }

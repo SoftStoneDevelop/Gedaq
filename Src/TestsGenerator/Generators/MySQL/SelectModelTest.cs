@@ -54,6 +54,7 @@ ORDER BY
             stringBuilder.Append($@"
 [Gedaq.MySqlConnector.Attributes.Query(
             query: {query},
+            sourceType: SourceType.MySqlConnection,
             methodName:""SelectModel"",
             queryMapType: typeof({model.ClassName}),
             methodType: MethodType.Async | MethodType.Sync,

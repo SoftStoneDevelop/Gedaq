@@ -1,4 +1,6 @@
 ﻿using System.Text;
+using TestsGenerator.Enums;
+using TestsGenerator.Helpers;
 using TestsGenerator.Model;
 
 namespace TestsGenerator.Generators.PostgreSQL
@@ -11,11 +13,10 @@ namespace TestsGenerator.Generators.PostgreSQL
             int order,
             StringBuilder stringBuilder,
             Model.ModelType model,
-            ModelValueStorage storage,
-            ref int indexValue,
-            bool toEnd
+            ModelValueStorage storage
             )
         {
+            var indexValue = 0;
             InsertModelInnerConfig(stringBuilder, model);
             InsertModelInnerReturningConfig(stringBuilder, model);
 
@@ -23,8 +24,12 @@ namespace TestsGenerator.Generators.PostgreSQL
             InsertModelInnerTest(order, stringBuilder, storage, ref indexValue, indexValue + 4, isAsync: true);
 
             InsertModelInnerReturningTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 4, isAsync: false);
-            int endIndex = toEnd ? storage.Values.Count : indexValue + 4;
+            var canDbConnection = model.TypeInfo.EnumerableType == EnumerableType.SingleType;
+            int endIndex = !canDbConnection ? storage.Values.Count : indexValue + 4;
             InsertModelInnerReturningTest(order, stringBuilder, storage, model, ref indexValue, endIndex, isAsync: true);
+
+            if (canDbConnection)
+                DbConnection.InsertModelInner.Generate(order, stringBuilder, model, storage, Database.PostgreSQL, ref indexValue, toEnd: true);
         }
 
         private static void InsertModelInnerConfig(
@@ -35,7 +40,7 @@ namespace TestsGenerator.Generators.PostgreSQL
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.Query(
             query: @""
-INSERT INTO public.{model.ModelInner.TableName}(
+INSERT INTO {Database.PostgreSQL.ToDefaultSchema()}.{model.ModelInner.TableName}(
 	{model.ModelInner.IdColumnName},
     {model.ModelInner.ValueColumnName},
     {model.ModelInner.NullableValueColumnName}

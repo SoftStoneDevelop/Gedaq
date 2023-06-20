@@ -35,6 +35,7 @@ using MySqlConnector;
 using System;
 using Gedaq.Common.Enums;
 using Gedaq.MySqlConnector.Attributes;
+using Gedaq.MySqlConnector.Enums;
 ";
                 }
                 default:
