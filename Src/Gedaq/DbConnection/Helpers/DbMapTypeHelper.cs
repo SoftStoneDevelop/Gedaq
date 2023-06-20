@@ -18,6 +18,11 @@ namespace Gedaq.DbConnection.Helpers
                 return true;
             }
 
+            if (typeSymbol.IsKnownListType())
+            {
+                return true;
+            }
+
             return typeSymbol.IsKnownProviderBaseType();
         }
 
@@ -124,6 +129,16 @@ namespace Gedaq.DbConnection.Helpers
         private static bool IsKnownArrayType(this ITypeSymbol type)
         {
             if (type.IsArrayType(out var elementType))
+            {
+                return elementType.IsKnownProviderBaseType();
+            }
+
+            return false;
+        }
+
+        private static bool IsKnownListType(this ITypeSymbol type)
+        {
+            if (type.IsListType(out var elementType))
             {
                 return elementType.IsKnownProviderBaseType();
             }

@@ -16,7 +16,12 @@ namespace Gedaq.Npgsql.Helpers
             this ITypeSymbol typeSymbol
             )
         {
-            if(typeSymbol.IsKnownArrayType())
+            if (typeSymbol.IsKnownArrayType())
+            {
+                return true;
+            }
+
+            if (typeSymbol.IsKnownListType())
             {
                 return true;
             }
@@ -197,6 +202,16 @@ namespace Gedaq.Npgsql.Helpers
         private static bool IsKnownArrayType(this ITypeSymbol type)
         {
             if(type.IsArrayType(out var elementType))
+            {
+                return elementType.IsKnownProviderBaseType();
+            }
+
+            return false;
+        }
+
+        private static bool IsKnownListType(this ITypeSymbol type)
+        {
+            if (type.IsListType(out var elementType))
             {
                 return elementType.IsKnownProviderBaseType();
             }

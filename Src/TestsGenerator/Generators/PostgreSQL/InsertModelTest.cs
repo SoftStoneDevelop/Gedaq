@@ -23,7 +23,9 @@ namespace TestsGenerator.Generators.PostgreSQL
             InsertModelTest(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: false);
             InsertModelTest(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: true);
 
-            if(DefaultTypeHelper.CanConvert(model.TypeInfo.ItemTypeFullName))
+            if(DefaultTypeHelper.CanConvert(model.TypeInfo.ItemTypeFullName) &&
+                model.TypeInfo.EnumerableType != EnumerableType.List//cannot implicity convert array to list
+                )
             {
                 InsertModelReturningScalarTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: false);
                 InsertModelReturningScalarTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 2, isAsync: true);

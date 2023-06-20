@@ -132,8 +132,11 @@ namespace TestsGenerator.Generators
             )
         {
             _models.Add(new Model.NpgsqlModel(npgsqlDbType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.SingleType), EnumerableType.SingleType, size, mustHaveSize, isReferenceType));
-            if(generateArray)
+            if (generateArray)
+            { 
                 _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Array | npgsqlDbType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.Array), EnumerableType.Array, size, mustHaveSize, isReferenceType));
+                _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Array | npgsqlDbType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.List), EnumerableType.List, size, mustHaveSize, isReferenceType));
+            }
         }
 
         private void AddMSSQLTypes()

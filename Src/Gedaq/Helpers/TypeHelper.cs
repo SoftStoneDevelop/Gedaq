@@ -70,32 +70,44 @@ namespace Gedaq.Helpers
             if(replaceNullable && typeSymbol.IsNullableType())
             {
                 var named = (INamedTypeSymbol)typeSymbol;
-                var firstArg = named.TypeArguments[0];
+                var firstArg = (INamedTypeSymbol)named.TypeArguments[0];
 
-                return $"{firstArg.GetFullTypeName()}{(addQuestionNoatble ? "?" : "")}";
+                return $"{firstArg.NameSpaceWithName()}{(addQuestionNoatble ? "?" : "")}";
             }
 
             if(typeSymbol is INamedTypeSymbol namedTypeSymbol)
             {
-                return $"{namedTypeSymbol.ContainingNamespace.GetFullNamespace()}.{typeSymbol.Name}";
+                if (typeSymbol.IsListType(out var elementListType))
+                {
+                    return $"System.Collections.Generic.List<{elementListType.NameSpaceWithName()}>";
+                }
+
+                return namedTypeSymbol.NameSpaceWithName();
             }
 
-            if(typeSymbol is IArrayTypeSymbol arrayTypeSymbol)
+            if(typeSymbol.IsArrayType(out var elementArrType))
             {
-                return $"{arrayTypeSymbol.ElementType.GetFullTypeName()}[]";
+                return $"{elementArrType.NameSpaceWithName()}[]";
             }
 
             throw new NotImplementedException();
         }
 
+        private static string NameSpaceWithName(
+            this INamedTypeSymbol namedTypeSymbol
+            )
+        {
+            return $"{namedTypeSymbol.ContainingNamespace.GetFullNamespace()}.{namedTypeSymbol.Name}";
+        }
+
         internal static bool IsArrayType(
             this ITypeSymbol typeSymbol,
-            out ITypeSymbol elementType
+            out INamedTypeSymbol elementType
             )
         {
             if (typeSymbol is IArrayTypeSymbol arrayTypeSymbol)
             {
-                elementType = arrayTypeSymbol.ElementType;
+                elementType = (INamedTypeSymbol)arrayTypeSymbol.ElementType;
                 return true;
             }
 
@@ -103,12 +115,31 @@ namespace Gedaq.Helpers
             return false;
         }
 
+        internal static bool IsListType(
+            this ITypeSymbol typeSymbol,
+            out INamedTypeSymbol elementType
+            )
+        {
+            if (!(typeSymbol is INamedTypeSymbol namedTypeSymbol) ||
+                !namedTypeSymbol.IsGenericType ||
+                namedTypeSymbol.ConstructedFrom == null ||
+                namedTypeSymbol.ConstructedFrom.NameSpaceWithName() != "System.Collections.Generic.List"
+                )
+            {
+                elementType = null;
+                return false;
+            }
+
+            elementType = (INamedTypeSymbol)namedTypeSymbol.TypeArguments[0];
+            return true;
+        }
+
         internal static bool IsNullableType(this ITypeSymbol typeSymbol)
         {
             if(!(typeSymbol is INamedTypeSymbol namedTypeSymbol) ||
                 !namedTypeSymbol.IsGenericType ||
                 namedTypeSymbol.ConstructedFrom == null ||
-                namedTypeSymbol.ConstructedFrom.GetFullTypeName() != "System.Nullable"
+                namedTypeSymbol.ConstructedFrom.NameSpaceWithName() != "System.Nullable"
                 )
             {
                 return false;
