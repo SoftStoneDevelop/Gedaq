@@ -40,9 +40,7 @@ namespace Gedaq.SqlClient.Helpers
             if (parametr.Nullable)
             {
                 builder.Append($@"
-                parametr
-                {index}.IsNullable = true;
-
+                parametr{index}.IsNullable = true;
                 ");
             }
 

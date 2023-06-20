@@ -1,6 +1,4 @@
 ﻿using MySqlConnector;
-using System;
-using System.Data;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 
@@ -27,12 +25,12 @@ namespace TestsGenerator.TypeInfos
 
         public override string SpecialDbTypeStr()
         {
-            return $"MySqlConnector.{MySqlDbType.ToString()}";
+            return $"(MySqlConnector.MySqlDbType)({(int)MySqlDbType})";
         }
 
         public override string DbTypeStr()
         {
-            return $"System.Data.DbType.{DbType.ToString()}";
+            return $"(System.Data.DbType)({(int)DbType})";
         }
 
         public override string TypeName

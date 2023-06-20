@@ -5,7 +5,7 @@ using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
 
-namespace TestsGenerator.Generators.PostgreSQL
+namespace TestsGenerator.Generators.MsSQL
 {
     internal static class SelectModelTest
     {
@@ -24,7 +24,7 @@ namespace TestsGenerator.Generators.PostgreSQL
             SelectTest(order, orderedValues, model, stringBuilder, false);
             SelectTest(order, orderedValues, model, stringBuilder, true);
 
-            DbConnection.SelectModel.Generate(order, stringBuilder, model, orderedValues, Database.PostgreSQL);
+            DbConnection.SelectModel.Generate(order, stringBuilder, model, orderedValues, Database.MsSQL);
         }
 
         private static void SelectTestConfig(
@@ -43,31 +43,30 @@ SELECT
     mi.{model.ModelInner.NullableValueColumnName},
 ~EndInner::{model.ModelInnerName}~
     m.{model.NullableValueColumnName}
-FROM {Database.PostgreSQL.ToDefaultSchema()}.{model.TableName} m
-LEFT JOIN {Database.PostgreSQL.ToDefaultSchema()}.{model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}
+FROM {Database.MySQL.ToDefaultSchema()}.{model.TableName} m
+LEFT JOIN {Database.MySQL.ToDefaultSchema()}.{model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}
 WHERE 
-    m.{model.IdColumnName} > $1
+    m.{model.IdColumnName} > @{model.IdColumnName}
 ORDER BY
     m.{model.IdColumnName} ASC
 ""
 ";
             stringBuilder.Append($@"
-[Gedaq.Npgsql.Attributes.Query(
+[Gedaq.SqlClient.Attributes.Query(
             query: {query},
             methodName:""SelectModel"",
             queryMapType: typeof({model.ClassName}),
             methodType: MethodType.Async | MethodType.Sync,
-            sourceType: SourceType.Connection,
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Private
             ),
-Gedaq.Npgsql.Attributes.Parametr(
+Gedaq.SqlClient.Attributes.Parametr(
             parametrType: typeof({model.IdType}),
-            position: 1,
+            parametrName: ""{model.IdColumnName}"",
             methodParametrName: ""{model.IdColumnName}"",
-            dbType: {model.IdTypeInfo.SpecialDbTypeStr()}
-                )
+            sqlDbType: {model.IdTypeInfo.SpecialDbTypeStr()}
+            )
             ]
         private void {_testName}Config()
         {{

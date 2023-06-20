@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using TestsGenerator.Constants;
+using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
 using TestsGenerator.TypeValueHelpers;
@@ -14,11 +15,10 @@ namespace TestsGenerator.Generators.PostgreSQL
             int order,
             StringBuilder stringBuilder,
             Model.ModelType model,
-            ModelValueStorage storage,
-            ref int indexValue,
-            bool toEnd
+            ModelValueStorage storage
             )
         {
+            var indexValue = 0;
             InsertModelConfig(stringBuilder, model);
             InsertModelTest(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: false);
             InsertModelTest(order, stringBuilder, storage, ref indexValue, indexValue + 2, isAsync: true);
@@ -31,8 +31,12 @@ namespace TestsGenerator.Generators.PostgreSQL
 
             InsertModelReturningConfig(stringBuilder, model);
             InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 4, isAsync: false);
-            int endIndex = toEnd ? storage.Values.Count : indexValue + 4;
+            var canDbConnection = model.TypeInfo.EnumerableType == EnumerableType.SingleType;
+            int endIndex = !canDbConnection ? storage.Values.Count : indexValue + 4;
             InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, endIndex, isAsync: true);
+
+            if(canDbConnection)
+                DbConnection.InsertModel.Generate(order, stringBuilder, model, storage, Database.MySQL, ref indexValue, toEnd: true);
         }
 
         private static void InsertModelConfig(

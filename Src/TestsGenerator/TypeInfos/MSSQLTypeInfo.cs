@@ -1,5 +1,4 @@
-﻿using System;
-using System.Data;
+﻿using System.Data;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 
@@ -26,12 +25,12 @@ namespace TestsGenerator.TypeInfos
 
         public override string SpecialDbTypeStr()
         {
-            return $"System.Data.{SqlDbType.ToString()}";
+            return $"(System.Data.SqlDbType)({(int)SqlDbType})";
         }
 
         public override string DbTypeStr()
         {
-            return $"System.Data.DbType.{DbType.ToString()}";
+            return $"(System.Data.DbType){(int)DbType}";
         }
 
         public override string TypeName

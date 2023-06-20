@@ -10,7 +10,7 @@ namespace Gedaq.SqlClient.GeneratorsQuery
 {
     internal class SqlClientCommandGenerator : CommandGeneratorBase
     {
-        NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
+        SqlClientProviderInfo _providerInfo = new SqlClientProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder)
