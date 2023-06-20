@@ -36,7 +36,7 @@ namespace TestsGenerator.Generators.PostgreSQL
             InsertModelReturningReadTest(order, stringBuilder, storage, model, ref indexValue, endIndex, isAsync: true);
 
             if(canDbConnection)
-                DbConnection.InsertModel.Generate(order, stringBuilder, model, storage, Database.MySQL, ref indexValue, toEnd: true);
+                DbConnection.InsertModel.Generate(order, stringBuilder, model, storage, Database.PostgreSQL, ref indexValue, toEnd: true);
         }
 
         private static void InsertModelConfig(
@@ -47,7 +47,7 @@ namespace TestsGenerator.Generators.PostgreSQL
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.Query(
             query: @""
-INSERT INTO public.{model.TableName}(
+INSERT INTO {Database.PostgreSQL.ToDefaultSchema()}.{model.TableName}(
 	{model.IdColumnName},
     {model.ValueColumnName},
     {model.NullableValueColumnName},
@@ -146,7 +146,7 @@ VALUES (
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.Query(
             query: @""
-INSERT INTO public.{model.TableName}(
+INSERT INTO {Database.PostgreSQL.ToDefaultSchema()}.{model.TableName}(
 	{model.IdColumnName},
     {model.ValueColumnName},
     {model.NullableValueColumnName},
