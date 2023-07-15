@@ -49,7 +49,7 @@ namespace TestsGenerator.Model
 
         private string AssertSingle(string modelVariable, ModelValue expectValue, bool innerHaveOnlyId)
         {
-            var builder = new StringBuilder();
+            var builder = new StringBuilderArray.StringBuilderArray();
             builder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
                 Assert.That({modelVariable}.{IdName}, Is.EqualTo({expectValue.Id}));
@@ -113,7 +113,7 @@ namespace TestsGenerator.Model
 
         public string AssertEnumerable(string modelVariable, ModelValue expectValue, bool innerHaveOnlyId)
         {
-            var builder = new StringBuilder();
+            var builder = new StringBuilderArray.StringBuilderArray();
             builder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
                 Assert.That({modelVariable}.{IdName}, Is.EqualTo({expectValue.Id}));
@@ -225,7 +225,7 @@ namespace TestsGenerator.Model
 
         private string AssertSingle(string modelVariable, string expectVariable, bool innerHaveOnlyId)
         {
-            var builder = new StringBuilder();
+            var builder = new StringBuilderArray.StringBuilderArray();
             builder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
                 Assert.That({modelVariable}.{IdName}, Is.EqualTo({expectVariable}.{IdName}));
@@ -280,7 +280,7 @@ namespace TestsGenerator.Model
 
         private string AssertEnumerable(string modelVariable, string expectVariable, bool innerHaveOnlyId)
         {
-            var builder = new StringBuilder();
+            var builder = new StringBuilderArray.StringBuilderArray();
             builder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
                 Assert.That({modelVariable}.{IdName}, Is.EqualTo({expectVariable}.{IdName}));

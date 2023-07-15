@@ -11,7 +11,7 @@ namespace TestsGenerator.Generators.DbConnection
 
         public static void Generate(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
             Database database,
@@ -32,7 +32,7 @@ namespace TestsGenerator.Generators.DbConnection
         }
 
         private static void DbConnectionInsertModelConfig(
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             Database database
             )
@@ -85,7 +85,7 @@ VALUES (
 
         private static void DbConnectionInsertModelTest(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             ModelValueStorage storage,
             ref int indexValue,
             int endIndex,

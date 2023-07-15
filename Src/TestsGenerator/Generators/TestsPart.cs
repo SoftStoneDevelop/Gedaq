@@ -10,7 +10,7 @@ namespace TestsGenerator.Generators
 {
     internal class TestsPart
     {
-        private readonly StringBuilder _stringBuilder = new StringBuilder();
+        private readonly StringBuilderArray.StringBuilderArray _stringBuilder = new StringBuilderArray.StringBuilderArray();
 
         public async Task Generate(Model.ModelType model, Database database, string destinationFolder)
         {

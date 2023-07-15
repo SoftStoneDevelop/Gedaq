@@ -14,7 +14,7 @@ namespace TestsGenerator.Generators.PostgreSQL
 
         public static void Generate(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage
             )
@@ -39,7 +39,7 @@ namespace TestsGenerator.Generators.PostgreSQL
         }
 
         private static void ExportModelInnerConfig(
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model
             )
         {
@@ -76,7 +76,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
         private static void ExportModelInnerTest(
             int order,
             Model.ModelType model,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             List<InnerModelValue> storage,
             bool isAsync
             )

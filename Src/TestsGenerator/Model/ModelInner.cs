@@ -34,7 +34,7 @@ namespace TestsGenerator.Model
 
         private string AssertSingle(string modelVariable, InnerModelValue expectValue)
         {
-            var builder = new StringBuilder();
+            var builder = new StringBuilderArray.StringBuilderArray();
             builder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
                 Assert.That({modelVariable}.{IdName}, Is.EqualTo({expectValue.Id}));
@@ -59,7 +59,7 @@ namespace TestsGenerator.Model
 
         private string AssertEnumerable(string modelVariable, InnerModelValue expectValue)
         {
-            var builder = new StringBuilder();
+            var builder = new StringBuilderArray.StringBuilderArray();
             builder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
                 Assert.That({modelVariable}.{IdName}, Is.EqualTo({expectValue.Id}));

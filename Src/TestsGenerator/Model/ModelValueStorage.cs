@@ -113,7 +113,7 @@ namespace TestsGenerator.Model
                 case EnumerableType.Array:
                 {
                     var count = Random.Shared.Next(3, 5);
-                    var builder = new StringBuilder();
+                    var builder = new StringBuilderArray.StringBuilderArray();
                     builder.Append($@"
 new {_typeInfo.ItemTypeFullName}[{count}]
 {{");
@@ -130,7 +130,7 @@ new {_typeInfo.ItemTypeFullName}[{count}]
                 case EnumerableType.List:
                 {
                     var count = Random.Shared.Next(3, 5);
-                    var builder = new StringBuilder();
+                    var builder = new StringBuilderArray.StringBuilderArray();
                     builder.Append($@"
 new System.Collections.Generic.List<{_typeInfo.ItemTypeFullName}>({count})
 {{");

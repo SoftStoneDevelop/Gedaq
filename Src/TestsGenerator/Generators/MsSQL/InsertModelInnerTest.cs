@@ -11,7 +11,7 @@ namespace TestsGenerator.Generators.MsSQL
 
         public static void Generate(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage
             )
@@ -30,7 +30,7 @@ namespace TestsGenerator.Generators.MsSQL
         }
 
         private static void InsertModelInnerConfig(
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model
             )
         {
@@ -82,7 +82,7 @@ VALUES (
 
         private static void InsertModelInnerTest(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             ModelValueStorage storage,
             ref int indexValue,
             int endIndex,

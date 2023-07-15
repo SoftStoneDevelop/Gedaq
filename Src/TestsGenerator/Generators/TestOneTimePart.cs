@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Text;
 using System.Threading.Tasks;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
@@ -8,7 +7,7 @@ namespace TestsGenerator.Generators
 {
     internal class TestOneTimePart
     {
-        private readonly StringBuilder _stringBuilder = new StringBuilder();
+        private readonly StringBuilderArray.StringBuilderArray _stringBuilder = new StringBuilderArray.StringBuilderArray();
 
         public async Task Generate(Model.ModelType model, Database database, string destinationFolder)
         {

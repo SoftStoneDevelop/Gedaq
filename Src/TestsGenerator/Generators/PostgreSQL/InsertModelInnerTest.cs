@@ -11,7 +11,7 @@ namespace TestsGenerator.Generators.PostgreSQL
 
         public static void Generate(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage
             )
@@ -33,7 +33,7 @@ namespace TestsGenerator.Generators.PostgreSQL
         }
 
         private static void InsertModelInnerConfig(
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model
             )
         {
@@ -86,7 +86,7 @@ VALUES (
 
         private static void InsertModelInnerTest(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             ModelValueStorage storage,
             ref int indexValue,
             int endIndex,
@@ -129,7 +129,7 @@ VALUES (
         }
 
         private static void InsertModelInnerReturningConfig(
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model
             )
         {
@@ -187,7 +187,7 @@ RETURNING
 
         private static void InsertModelInnerReturningTest(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             ModelValueStorage storage,
             Model.ModelType model,
             ref int indexValue,

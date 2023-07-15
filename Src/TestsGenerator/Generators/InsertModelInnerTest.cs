@@ -8,7 +8,7 @@ namespace TestsGenerator.Generators
     {
         public static void Generate(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model, 
             ModelValueStorage storage,
             Database database

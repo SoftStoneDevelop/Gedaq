@@ -13,7 +13,7 @@ namespace TestsGenerator.Generators.PostgreSQL
 
         public static void Generate(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage
             )
@@ -32,7 +32,7 @@ namespace TestsGenerator.Generators.PostgreSQL
         }
 
         private static void ImportModelInnerConfig(
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model
             )
         {
@@ -69,7 +69,7 @@ FROM STDIN (FORMAT BINARY)
 
         private static void SelectImportModelInnerConfig(
             Model.ModelType model,
-            StringBuilder stringBuilder
+            StringBuilderArray.StringBuilderArray stringBuilder
             )
         {
             var query = $@"
@@ -104,7 +104,7 @@ ORDER BY
         private static void ImportModelInnerTest(
             int order,
             Model.ModelType model,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             List<InnerModelValue> storage
             )
         {

@@ -13,7 +13,7 @@ namespace TestsGenerator.Generators.MySQL
 
         public static void Generate(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage
             )
@@ -29,7 +29,7 @@ namespace TestsGenerator.Generators.MySQL
 
         private static void SelectTestConfig(
             Model.ModelType model,
-            StringBuilder stringBuilder
+            StringBuilderArray.StringBuilderArray stringBuilder
             )
         {
             var query = $@"
@@ -79,7 +79,7 @@ Gedaq.MySqlConnector.Attributes.Parametr(
             int order,
             List<ModelValue> orderedValues,
             Model.ModelType model,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync
             )
         {

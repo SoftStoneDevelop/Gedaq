@@ -13,7 +13,7 @@ namespace TestsGenerator.Generators.MsSQL
 
         public static void Generate(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage
             )
@@ -29,7 +29,7 @@ namespace TestsGenerator.Generators.MsSQL
 
         private static void SelectTestConfig(
             Model.ModelType model,
-            StringBuilder stringBuilder
+            StringBuilderArray.StringBuilderArray stringBuilder
             )
         {
             var query = $@"
@@ -78,7 +78,7 @@ Gedaq.SqlClient.Attributes.Parametr(
             int order,
             List<ModelValue> orderedValues,
             Model.ModelType model,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync
             )
         {

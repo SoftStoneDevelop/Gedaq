@@ -17,7 +17,7 @@ namespace TestsGenerator.Generators.DbConnection
 
         public static void Generate(
             int order,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             List<ModelValue> orderedValues,
             Database database
@@ -43,7 +43,7 @@ namespace TestsGenerator.Generators.DbConnection
 
         private static void SelectTestConfig(
             Model.ModelType model,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Database database
             )
         {
@@ -94,7 +94,7 @@ Gedaq.DbConnection.Attributes.Parametr(
             int order,
             List<ModelValue> orderedValues,
             Model.ModelType model,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync
             )
         {
@@ -139,7 +139,7 @@ Gedaq.DbConnection.Attributes.Parametr(
             int order,
             List<ModelValue> orderedValues,
             Model.ModelType model,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync
             )
         {
@@ -190,7 +190,7 @@ Gedaq.DbConnection.Attributes.Parametr(
 
         private static void SelectToObjArrTestConfig(
             Model.ModelType model,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Database database
             )
         {
@@ -233,7 +233,7 @@ ORDER BY
             int order,
             Model.ModelType model,
             List<ModelValue> orderedValues,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync
             )
         {
@@ -280,7 +280,7 @@ ORDER BY
         private static void ToObjArrAssert(
             Model.ModelType model,
             ModelValue expectValue,
-            StringBuilder stringBuilder
+            StringBuilderArray.StringBuilderArray stringBuilder
             )
         {
             stringBuilder.Append($@"
@@ -333,7 +333,7 @@ ORDER BY
             int order,
             List<ModelValue> orderedValues,
             Model.ModelType model,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             Database database
             )
         {
@@ -372,7 +372,7 @@ ORDER BY
         }
 
         private static void SelectBatchReadTestConfig(
-            StringBuilder stringBuilder
+            StringBuilderArray.StringBuilderArray stringBuilder
             )
         {
             stringBuilder.Append($@"
@@ -401,7 +401,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             int order,
             List<ModelValue> orderedValues,
             Model.ModelType model,
-            StringBuilder stringBuilder,
+            StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync
             )
         {
