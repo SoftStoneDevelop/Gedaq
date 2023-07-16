@@ -129,7 +129,7 @@ var personsAsync =
 |       Dapper |   30 | 2,276.7 ms |  1.67 | 451.22 MB |        1.14 |
 |    DapperAOT |   30 | 2,279.6 ms |  1.67 | 451.22 MB |        1.14 |
 
-## NativeAOT .NET 7:
+## NativeAOT .NET 7 Benchmark:
 
 But with Gedaq, we can prepare the command in advance.
 ```C#
