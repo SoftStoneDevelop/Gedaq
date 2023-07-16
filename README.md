@@ -112,7 +112,7 @@ var personsAsync =
 
 ```
 
-[Comparison](https://github.com/SoftStoneDevelop/Gedaq.Npgsql/blob/main/Src/NpgsqlBenchmark/Benchmarks/CompareDapper.cs) of getting 50000 Person in a loop(Size is number of loop iterations) from the database:
+[Comparison](https://github.com/SoftStoneDevelop/Gedaq.Npgsql/blob/main/Src/NpgsqlBenchmark/Benchmarks/CompareDapper.cs) with [Dapper](https://github.com/DapperLib/Dapper) and [DapperAOT](https://github.com/DapperLib/DapperAOT) of getting 50000 Person in a loop(Size is number of loop iterations) from the database:
 
 
 |       Method | Size |       Mean | Ratio | Allocated | Alloc Ratio |
