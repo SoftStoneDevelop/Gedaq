@@ -114,7 +114,7 @@ var personsAsync =
 
 [Comparison](https://github.com/SoftStoneDevelop/Gedaq.Npgsql/blob/main/Src/NpgsqlBenchmark/Benchmarks/CompareDapper.cs) with [Dapper](https://github.com/DapperLib/Dapper) and [DapperAOT](https://github.com/DapperLib/DapperAOT) of getting 50000 Person in a loop(Size is number of loop iterations) from the database:
 
-
+## .NET 7 Benchmark:
 |       Method | Size |       Mean | Ratio | Allocated | Alloc Ratio |
 |------------- |----- |-----------:|------:|----------:|------------:|
 | **Gedaq.Npgsql** |   **10** |   **445.5 ms** |  **1.00** | **132.09 MB** |        **1.00** |
@@ -128,6 +128,8 @@ var personsAsync =
 | **Gedaq.Npgsql** |   **30** | **1,366.2 ms** |  **1.00** | **396.28 MB** |        **1.00** |
 |       Dapper |   30 | 2,276.7 ms |  1.67 | 451.22 MB |        1.14 |
 |    DapperAOT |   30 | 2,279.6 ms |  1.67 | 451.22 MB |        1.14 |
+
+## NativeAOT .NET 7:
 
 But with Gedaq, we can prepare the command in advance.
 ```C#
