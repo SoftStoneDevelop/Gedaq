@@ -112,19 +112,37 @@ var personsAsync =
 
 ```
 
-[Comparison](https://github.com/SoftStoneDevelop/Gedaq.Npgsql/blob/main/Src/NpgsqlBenchmark/Benchmarks/CompareDapper.cs) of getting 50000 Person in a loop(Size is number of loop iterations) from the database:
+[Comparison](https://github.com/SoftStoneDevelop/Gedaq.Npgsql/blob/main/Src/NpgsqlBenchmark/Benchmarks/CompareDapper.cs) with [Dapper](https://github.com/DapperLib/Dapper) and [DapperAOT](https://github.com/DapperLib/DapperAOT) of getting 50000 Person in a loop(Size is number of loop iterations) from the database:
 
-
+## .NET 7 Benchmark:
 |       Method | Size |       Mean | Ratio | Allocated | Alloc Ratio |
 |------------- |----- |-----------:|------:|----------:|------------:|
-| **Gedaq.Npgsql** |   **10** |   **462.2 ms** |  **0.59** | **132.09 MB** |        **0.88** |
-|       Dapper |   10 |   778.3 ms |  1.00 |  150.4 MB |        1.00 |
+| **Gedaq.Npgsql** |   **10** |   **445.5 ms** |  **1.00** | **132.09 MB** |        **1.00** |
+|       Dapper |   10 |   749.2 ms |  1.68 | 150.41 MB |        1.14 |
+|    DapperAOT |   10 |   777.5 ms |  1.75 |  150.4 MB |        1.14 |
 |              |      |            |       |           |             |
-| **Gedaq.Npgsql** |   **20** |   **933.5 ms** |  **0.59** | **264.18 MB** |        **0.88** |
-|       Dapper |   20 | 1,583.0 ms |  1.00 | 300.81 MB |        1.00 |
+| **Gedaq.Npgsql** |   **20** |   **901.9 ms** |  **1.00** | **264.17 MB** |        **1.00** |
+|       Dapper |   20 | 1,510.0 ms |  1.68 | 300.81 MB |        1.14 |
+|    DapperAOT |   20 | 1,505.3 ms |  1.67 | 300.81 MB |        1.14 |
 |              |      |            |       |           |             |
-| **Gedaq.Npgsql** |   **30** | **1,396.6 ms** |  **0.59** | **396.28 MB** |        **0.88** |
-|       Dapper |   30 | 2,356.8 ms |  1.00 | 451.22 MB |        1.00 |
+| **Gedaq.Npgsql** |   **30** | **1,366.2 ms** |  **1.00** | **396.28 MB** |        **1.00** |
+|       Dapper |   30 | 2,276.7 ms |  1.67 | 451.22 MB |        1.14 |
+|    DapperAOT |   30 | 2,279.6 ms |  1.67 | 451.22 MB |        1.14 |
+
+## NativeAOT .NET 7 Benchmark:
+|       Method | Size |       Mean | Ratio | Allocated | Alloc Ratio |
+|------------- |----- |-----------:|------:|----------:|------------:|
+| **Gedaq.Npgsql** |   **10** |   **433.6 ms** |  **1.00** | **132.08 MB** |        **1.00** |
+|       Dapper |   10 |         NA |     ? |        NA |           ? |
+|    DapperAOT |   10 |         NA |     ? |        NA |           ? |
+|              |      |            |       |           |             |
+| **Gedaq.Npgsql** |   **20** |   **927.6 ms** |  **1.00** | **264.16 MB** |        **1.00** |
+|       Dapper |   20 |         NA |     ? |        NA |           ? |
+|    DapperAOT |   20 |         NA |     ? |        NA |           ? |
+|              |      |            |       |           |             |
+| **Gedaq.Npgsql** |   **30** | **1,367.9 ms** |  **1.00** | **396.25 MB** |        **1.00** |
+|       Dapper |   30 |         NA |     ? |        NA |           ? |
+|    DapperAOT |   30 |         NA |     ? |        NA |           ? |
 
 But with Gedaq, we can prepare the command in advance.
 ```C#
