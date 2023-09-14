@@ -11,6 +11,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 
 namespace Gedaq.MySqlConnector
 {
@@ -48,10 +49,16 @@ namespace Gedaq.MySqlConnector
 
         private QueryParser _queryParser = new QueryParser();
 
-        public override void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
+        public override void ProcessAttributes(
+            SyntaxList<AttributeListSyntax> attributes, 
+            Compilation compilation, 
+            INamedTypeSymbol containsType,
+            CancellationToken cancellationToken
+            )
         {
             foreach (var attributeListSyntax in attributes)
             {
+                cancellationToken.ThrowIfCancellationRequested();
                 var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
                 var parentAttributes = parentSymbol.GetAttributes();
 
@@ -59,6 +66,7 @@ namespace Gedaq.MySqlConnector
                 var readTemp = new ReadPair();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
+                    cancellationToken.ThrowIfCancellationRequested();
                     var attributeData = parentAttributes.First(f => f.ApplicationSyntaxReference.GetSyntax() == attributeSyntax);
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.MySqlConnector.Attributes", "QueryAttribute"))
                     {
@@ -231,11 +239,12 @@ namespace Gedaq.MySqlConnector
             readPair.Parametrs.Add(parametr);
         }
 
-        public override void GenerateAndSaveMethods(SourceProductionContext context)
+        public override void GenerateAndSaveMethods(SourceProductionContext context, CancellationToken cancellationToken)
         {
             var readGenerator = new MySqlConnectorQueryGenerator();
             foreach (var queryRead in _read)
             {
+                cancellationToken.ThrowIfCancellationRequested();
                 readGenerator.GenerateMethod(queryRead);
                 context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}MySqlConnector.g.cs", readGenerator.GetCode());
             }
@@ -244,6 +253,7 @@ namespace Gedaq.MySqlConnector
             var batchReadGenerator = new MySqlConnectorQueryBatchGenerator();
             foreach (var batchRead in _readBatch)
             {
+                cancellationToken.ThrowIfCancellationRequested();
                 batchReadGenerator.GenerateMethod(batchRead);
                 context.AddSource($"{batchRead.ContainTypeName.Name}{batchRead.MethodName}MySqlConnector.g.cs", batchReadGenerator.GetCode());
             }

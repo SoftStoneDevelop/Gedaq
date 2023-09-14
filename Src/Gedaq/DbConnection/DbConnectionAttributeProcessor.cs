@@ -11,6 +11,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 
 namespace Gedaq.Npgsql
 {
@@ -48,10 +49,16 @@ namespace Gedaq.Npgsql
 
         private QueryParser _queryParser = new QueryParser();
 
-        public override void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
+        public override void ProcessAttributes(
+            SyntaxList<AttributeListSyntax> attributes, 
+            Compilation compilation, 
+            INamedTypeSymbol containsType, 
+            CancellationToken cancellationToken
+            )
         {
             foreach (var attributeListSyntax in attributes)
             {
+                cancellationToken.ThrowIfCancellationRequested();
                 var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
                 var parentAttributes = parentSymbol.GetAttributes();
 
@@ -59,6 +66,7 @@ namespace Gedaq.Npgsql
                 var readTemp = new ReadPair();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
+                    cancellationToken.ThrowIfCancellationRequested();
                     var attributeData = parentAttributes.First(f => f.ApplicationSyntaxReference.GetSyntax() == attributeSyntax);
 
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "QueryAttribute"))
@@ -232,11 +240,12 @@ namespace Gedaq.Npgsql
             readPair.Parametrs.Add(parametr);
         }
 
-        public override void GenerateAndSaveMethods(SourceProductionContext context)
+        public override void GenerateAndSaveMethods(SourceProductionContext context, CancellationToken cancellationToken)
         {
             var readGenerator = new DbQueryGenerator();
             foreach (var queryRead in _read)
             {
+                cancellationToken.ThrowIfCancellationRequested();
                 readGenerator.Generate(queryRead);
                 context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}DbConnection.g.cs", readGenerator.GetCode());
             }
@@ -245,6 +254,7 @@ namespace Gedaq.Npgsql
             var batchReadGenerator = new DbQueryBatchGenerator();
             foreach (var batchRead in _readBatch)
             {
+                cancellationToken.ThrowIfCancellationRequested();
                 batchReadGenerator.Generate(batchRead);
                 context.AddSource($"{batchRead.ContainTypeName.Name}{batchRead.MethodName}DbConnection.g.cs", batchReadGenerator.GetCode());
             }

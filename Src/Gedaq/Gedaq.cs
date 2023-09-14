@@ -128,6 +128,8 @@ namespace Gedaq
         //private static int _counter;
         private static void Execute(Compilation compilation, ImmutableArray<TypeDeclarationSyntax> types, SourceProductionContext context)
         {
+            //System.Diagnostics.Debugger.Launch();
+
             if (types.IsDefaultOrEmpty)
             {
                 return;
@@ -137,27 +139,25 @@ namespace Gedaq
             //// Counter: {Interlocked.Increment(ref _counter)}
             //");
 
-            //System.Diagnostics.Debugger.Launch();
-            var distinctTypes = types.Distinct().GroupBy(gr => gr.Identifier.ValueText);
+            var distinctTypes = types.GroupBy(gr => gr.Identifier.ValueText);
 
             var processor = new AttributeProcessor();
-            foreach (var item in distinctTypes)
+            foreach (var partialGroup in distinctTypes)
             {
-                INamedTypeSymbol containType = null;
-                foreach (var typeDeclarationSyntax in item)
+                foreach (var typeDeclarationSyntax in partialGroup)
                 {
-                    if(containType == null)
-                    {
-                        containType = (INamedTypeSymbol)compilation.GetSemanticModel(typeDeclarationSyntax.SyntaxTree).GetDeclaredSymbol(typeDeclarationSyntax);
-                    }
-
-                    processor.TryFillFrom(typeDeclarationSyntax, compilation, containType);
+                    processor.TryFillFrom(
+                        typeDeclarationSyntax, 
+                        compilation, 
+                        (INamedTypeSymbol)compilation.GetSemanticModel(typeDeclarationSyntax.SyntaxTree).GetDeclaredSymbol(typeDeclarationSyntax),
+                        context.CancellationToken
+                        );
                 }
 
                 processor.CompleteProcessContainTypes();
             }
-            
-            processor.GenerateAndSaveMethods(context);
+
+            processor.GenerateAndSaveMethods(context, context.CancellationToken);
         }
     }
 }

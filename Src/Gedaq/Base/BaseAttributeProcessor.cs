@@ -6,16 +6,25 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
+using System.Threading;
 
 namespace Gedaq.Base
 {
     internal abstract class BaseAttributeProcessor
     {
-        public abstract void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType);
+        public abstract void ProcessAttributes(
+            SyntaxList<AttributeListSyntax> attributes,
+            Compilation compilation, 
+            INamedTypeSymbol containsType,
+            CancellationToken cancellationToken
+            );
 
         public abstract void CompleteProcessContainTypes();
 
-        public abstract void GenerateAndSaveMethods(SourceProductionContext context);
+        public abstract void GenerateAndSaveMethods(
+            SourceProductionContext context,
+            CancellationToken cancellationToken
+            );
 
         protected void AddFormatParametrs(QueryBaseCommand read, List<FormatParametr> formatParametrs)
         {
@@ -46,7 +55,11 @@ namespace Gedaq.Base
             }
         }
 
-        protected void ProcessAttribute(AttributeData attribute, INamedTypeSymbol containsType, List<FormatParametr> formatParametrs)
+        protected void ProcessAttribute(
+            AttributeData attribute,
+            INamedTypeSymbol containsType, 
+            List<FormatParametr> formatParametrs
+            )
         {
             if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "QueryFormatAttribute"))
             {

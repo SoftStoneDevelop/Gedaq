@@ -3,8 +3,7 @@ using Gedaq.Npgsql;
 using Gedaq.SqlClient;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System.Collections.Immutable;
-using System.Linq;
+using System.Threading;
 
 namespace Gedaq
 {
@@ -15,26 +14,38 @@ namespace Gedaq
         private SqlClientAttributeProcessor _sqlClientProcessor = new SqlClientAttributeProcessor();
         private MySqlConnectorAttributeProcessor _mysqlConnectorProcessor = new MySqlConnectorAttributeProcessor();
 
-        public void TryFillFrom(TypeDeclarationSyntax type, Compilation compilation, INamedTypeSymbol containsType)
+        public void TryFillFrom(
+            TypeDeclarationSyntax type,
+            Compilation compilation, 
+            INamedTypeSymbol containsType,
+            CancellationToken cancellationToken
+            )
         {
-            ProcessAttributes(type.AttributeLists, compilation, containsType);
+            cancellationToken.ThrowIfCancellationRequested();
+            ProcessAttributes(type.AttributeLists, compilation, containsType, cancellationToken);
             foreach (var member in type.Members)
             {
-                if(!(member is MethodDeclarationSyntax methodSymbol))
+                cancellationToken.ThrowIfCancellationRequested();
+                if (!(member is MethodDeclarationSyntax methodSymbol))
                 {
                     continue;
                 }
 
-                ProcessAttributes(methodSymbol.AttributeLists, compilation, containsType);
+                ProcessAttributes(methodSymbol.AttributeLists, compilation, containsType, cancellationToken);
             }
         }
 
-        private void ProcessAttributes(SyntaxList<AttributeListSyntax> attributes, Compilation compilation, INamedTypeSymbol containsType)
+        private void ProcessAttributes(
+            SyntaxList<AttributeListSyntax> attributes, 
+            Compilation compilation, 
+            INamedTypeSymbol containsType,
+            CancellationToken cancellationToken
+            )
         {
-            _npgsqlProcessor.ProcessAttributes(attributes, compilation, containsType);
-            _dbConnectionProcessor.ProcessAttributes(attributes, compilation, containsType);
-            _sqlClientProcessor.ProcessAttributes(attributes, compilation, containsType);
-            _mysqlConnectorProcessor.ProcessAttributes(attributes, compilation, containsType);
+            _npgsqlProcessor.ProcessAttributes(attributes, compilation, containsType, cancellationToken);
+            _dbConnectionProcessor.ProcessAttributes(attributes, compilation, containsType, cancellationToken);
+            _sqlClientProcessor.ProcessAttributes(attributes, compilation, containsType, cancellationToken);
+            _mysqlConnectorProcessor.ProcessAttributes(attributes, compilation, containsType, cancellationToken);
         }
 
         public void CompleteProcessContainTypes()
@@ -45,12 +56,12 @@ namespace Gedaq
             _mysqlConnectorProcessor.CompleteProcessContainTypes();
         }
 
-        public void GenerateAndSaveMethods(SourceProductionContext context)
+        public void GenerateAndSaveMethods(SourceProductionContext context, CancellationToken cancellationToken)
         {
-            _npgsqlProcessor.GenerateAndSaveMethods(context);
-            _dbConnectionProcessor.GenerateAndSaveMethods(context);
-            _sqlClientProcessor.GenerateAndSaveMethods(context);
-            _mysqlConnectorProcessor.GenerateAndSaveMethods(context);
+            _npgsqlProcessor.GenerateAndSaveMethods(context, cancellationToken);
+            _dbConnectionProcessor.GenerateAndSaveMethods(context, cancellationToken);
+            _sqlClientProcessor.GenerateAndSaveMethods(context, cancellationToken);
+            _mysqlConnectorProcessor.GenerateAndSaveMethods(context, cancellationToken);
         }
     }
 }
