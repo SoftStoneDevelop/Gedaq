@@ -2,26 +2,46 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.CodeAnalysis.Text;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using System.Text;
+using System.Threading;
 
 namespace Gedaq
 {
     [Generator]
     public partial class Gedaq : IIncrementalGenerator
     {
+        public class ByArrayComparer : IEqualityComparer<(Compilation compilation, ImmutableArray<TypeDeclarationSyntax> Nodes)>
+        {
+            public bool Equals(
+               (Compilation compilation, ImmutableArray<TypeDeclarationSyntax> Nodes) x,
+               (Compilation compilation, ImmutableArray<TypeDeclarationSyntax> Nodes) y)
+            {
+                return x.Nodes.Equals(y.Nodes);
+            }
+
+            public int GetHashCode((Compilation compilation, ImmutableArray<TypeDeclarationSyntax> Nodes) obj)
+            {
+                return obj.Nodes.GetHashCode();
+            }
+        }
+
         public void Initialize(IncrementalGeneratorInitializationContext context)
         {
             var classDeclarations = context.SyntaxProvider
                 .CreateSyntaxProvider(
                 predicate: (s, _) => IsSyntaxTargetForGeneration(s),
                 transform: (ctx, _) => GetSemanticTargetForGeneration(ctx))
-                .Where(m => m != null);
+                .Where(m => m != null)
+                .Collect()
+                .Select((sel, _) => sel.Distinct().ToImmutableArray())
+                ;
 
-            var compilationAndClasses = context.CompilationProvider.Combine(classDeclarations.Collect());
+            var compilationAndClasses =
+                context.CompilationProvider.Combine(classDeclarations)
+                .WithComparer(new ByArrayComparer())
+                ;
 
             context.RegisterSourceOutput(compilationAndClasses,
                 (spc, source) => Execute(source.Item1, source.Item2, spc));
@@ -105,12 +125,17 @@ namespace Gedaq
             return null;
         }
 
+        //private static int _counter;
         private static void Execute(Compilation compilation, ImmutableArray<TypeDeclarationSyntax> types, SourceProductionContext context)
         {
             if (types.IsDefaultOrEmpty)
             {
                 return;
             }
+
+            //context.AddSource($"perf.cs", $@"//
+            //// Counter: {Interlocked.Increment(ref _counter)}
+            //");
 
             //System.Diagnostics.Debugger.Launch();
             var distinctTypes = types.Distinct().GroupBy(gr => gr.Identifier.ValueText);
