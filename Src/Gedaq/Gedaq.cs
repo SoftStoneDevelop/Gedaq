@@ -12,43 +12,76 @@ namespace Gedaq
     [Generator]
     public partial class Gedaq : IIncrementalGenerator
     {
-        public class ByArrayComparer : IEqualityComparer<(Compilation compilation, ImmutableArray<TypeDeclarationSyntax> Nodes)>
+        public class ByArrayComparer : IEqualityComparer<(ImmutableArray<TypeDeclarationSyntax> Nodes, Compilation compilation)>
         {
             public bool Equals(
-               (Compilation compilation, ImmutableArray<TypeDeclarationSyntax> Nodes) x,
-               (Compilation compilation, ImmutableArray<TypeDeclarationSyntax> Nodes) y)
+               (ImmutableArray<TypeDeclarationSyntax> Nodes, Compilation compilation) left,
+               (ImmutableArray<TypeDeclarationSyntax> Nodes, Compilation compilation) rigth
+                )
             {
-                return x.Nodes.Equals(y.Nodes);
+                if(left.Nodes.Length != rigth.Nodes.Length)
+                {
+                    return false;
+                }
+
+                for(int i = 0; i < left.Nodes.Length; i++)
+                {
+                    var leftNode = left.Nodes[i];
+                    var rigthNode = rigth.Nodes[i];
+
+                    if(!leftNode.IsEquivalentTo(rigthNode))
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
             }
 
-            public int GetHashCode((Compilation compilation, ImmutableArray<TypeDeclarationSyntax> Nodes) obj)
+            public int GetHashCode((ImmutableArray<TypeDeclarationSyntax> Nodes, Compilation compilation) obj)
             {
-                return obj.Nodes.GetHashCode();
+                int hash = 0;
+                unchecked
+                {
+                    for (int i = 0; i < obj.Nodes.Length; i++)
+                    {
+                        hash += obj.Nodes[i].GetHashCode();
+                    }
+                }
+
+                return hash;
             }
         }
 
         public void Initialize(IncrementalGeneratorInitializationContext context)
         {
+            //System.Diagnostics.Debugger.Launch();
+
             var classDeclarations = context.SyntaxProvider
                 .CreateSyntaxProvider(
                 predicate: (s, _) => IsSyntaxTargetForGeneration(s),
                 transform: (ctx, _) => GetSemanticTargetForGeneration(ctx))
                 .Where(m => m != null)
                 .Collect()
-                .Select((sel, _) => sel.Distinct().ToImmutableArray())
+                .Select((sel, _) => sel.Distinct())
+                .SelectMany(
+                (sel, _) =>
+                sel.GroupBy(gr => gr.Identifier.ValueText)
+                .Select(grSel => grSel.ToImmutableArray())
+                )
                 ;
 
             var compilationAndClasses =
-                context.CompilationProvider.Combine(classDeclarations)
+                classDeclarations.Combine(context.CompilationProvider)
                 .WithComparer(new ByArrayComparer())
                 ;
 
             context.RegisterSourceOutput(compilationAndClasses,
-                (spc, source) => Execute(source.Item1, source.Item2, spc));
+                (spc, source) => Execute(source.Item2, source.Item1, spc));
         }
 
         static bool IsSyntaxTargetForGeneration(SyntaxNode node)
-            => (node is MethodDeclarationSyntax m && m.AttributeLists.Count > 0) || 
+            => (node is MethodDeclarationSyntax m && m.AttributeLists.Count > 0) ||
             (node is ClassDeclarationSyntax c && c.AttributeLists.Count > 0) ||
             (node is StructDeclarationSyntax s && s.AttributeLists.Count > 0)
             ;
@@ -68,7 +101,7 @@ namespace Gedaq
 
         static TypeDeclarationSyntax GetSemanticFromMethod(GeneratorSyntaxContext context)
         {
-            if(!(context.Node is MethodDeclarationSyntax methodDeclarationSyntax))
+            if (!(context.Node is MethodDeclarationSyntax methodDeclarationSyntax))
             {
                 return null;
             }
@@ -97,7 +130,7 @@ namespace Gedaq
 
         static TypeDeclarationSyntax GetSemanticClassOrStruct(GeneratorSyntaxContext context)
         {
-            if(!(context.Node is ClassDeclarationSyntax) && !(context.Node is StructDeclarationSyntax))
+            if (!(context.Node is ClassDeclarationSyntax) && !(context.Node is StructDeclarationSyntax))
             {
                 return null;
             }
@@ -125,37 +158,36 @@ namespace Gedaq
             return null;
         }
 
-        //private static int _counter;
-        private static void Execute(Compilation compilation, ImmutableArray<TypeDeclarationSyntax> types, SourceProductionContext context)
+        private static int _counter;
+        private static void Execute(Compilation compilation, ImmutableArray<TypeDeclarationSyntax> partialGroup, SourceProductionContext context)
         {
             //System.Diagnostics.Debugger.Launch();
 
-            if (types.IsDefaultOrEmpty)
+            if (!partialGroup.Any())
             {
                 return;
             }
 
-            //context.AddSource($"perf.cs", $@"//
-            //// Counter: {Interlocked.Increment(ref _counter)}
+            //var incremented = Interlocked.Increment(ref _counter);
+            //if (partialGroup.First().Identifier.ValueText == "Tests_BigInteger_numeric")
+            //{
+            //    context.AddSource($"Aperf.cs", $@"//
+            //// Counter: {incremented}
             //");
-
-            var distinctTypes = types.GroupBy(gr => gr.Identifier.ValueText);
+            //}
 
             var processor = new AttributeProcessor();
-            foreach (var partialGroup in distinctTypes)
+            foreach (var typeDeclarationSyntax in partialGroup)
             {
-                foreach (var typeDeclarationSyntax in partialGroup)
-                {
-                    processor.TryFillFrom(
-                        typeDeclarationSyntax, 
-                        compilation, 
-                        (INamedTypeSymbol)compilation.GetSemanticModel(typeDeclarationSyntax.SyntaxTree).GetDeclaredSymbol(typeDeclarationSyntax),
-                        context.CancellationToken
-                        );
-                }
-
-                processor.CompleteProcessContainTypes();
+                processor.TryFillFrom(
+                    typeDeclarationSyntax,
+                    compilation,
+                    (INamedTypeSymbol)compilation.GetSemanticModel(typeDeclarationSyntax.SyntaxTree).GetDeclaredSymbol(typeDeclarationSyntax),
+                    context.CancellationToken
+                    );
             }
+
+            processor.CompleteProcessContainTypes();
 
             processor.GenerateAndSaveMethods(context, context.CancellationToken);
         }
