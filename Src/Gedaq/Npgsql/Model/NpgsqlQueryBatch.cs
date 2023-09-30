@@ -1,9 +1,6 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.Enums;
-using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
-using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
@@ -18,7 +15,7 @@ namespace Gedaq.Npgsql.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out NpgsqlQueryBatch queryBatch)
         {
             queryBatch = null;
-            if (namedArguments.Length != 5)
+            if (namedArguments.Length != 6)
             {
                 return false;
             }
@@ -39,8 +36,12 @@ namespace Gedaq.Npgsql.Model
                     );
 
             result.ContainTypeName = containsType;
-
             queryBatch = result;
+            if (!result.SetPartInterfaceType(namedArguments[5]))
+            {
+                return false;
+            }
+
             return true;
         }
 

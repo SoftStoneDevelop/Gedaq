@@ -158,7 +158,7 @@ namespace Gedaq
             return null;
         }
 
-        private static int _counter;
+        //private static int _counter;
         private static void Execute(Compilation compilation, ImmutableArray<TypeDeclarationSyntax> partialGroup, SourceProductionContext context)
         {
             //System.Diagnostics.Debugger.Launch();

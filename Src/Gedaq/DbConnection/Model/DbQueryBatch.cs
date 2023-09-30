@@ -1,12 +1,8 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.Enums;
-using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
-using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using System.Text;
 
 namespace Gedaq.DbConnection.Model
 {
@@ -17,7 +13,7 @@ namespace Gedaq.DbConnection.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out DbQueryBatch queryBatch)
         {
             queryBatch = null;
-            if (namedArguments.Length != 5)
+            if (namedArguments.Length != 6)
             {
                 return false;
             }
@@ -39,6 +35,11 @@ namespace Gedaq.DbConnection.Model
 
             result.ContainTypeName = containsType;
             queryBatch = result;
+            if (!result.SetPartInterfaceType(namedArguments[5]))
+            {
+                return false;
+            }
+
             return true;
         }
 
