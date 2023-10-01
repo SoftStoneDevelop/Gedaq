@@ -32,54 +32,99 @@ namespace Gedaq.Base.Batch
 
         protected virtual void ReadMethod(QueryBatchCommand source, StringBuilder builder)
         {
-            StartReadMethod(source, MethodType.Sync, builder);
-            StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
-            EndMethodParametrs(builder, MethodType.Sync);
-            ReadMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Sync, builder);
-            EndMethod(builder);
+            ReadMethodDefinition(
+                source,
+                MethodType.Sync, 
+                builder,
+                ProviderInfo.DefaultSourceType(), 
+                ProviderInfo.DefaultSourceTypeParametr()
+                );
+            ReadMethodBody(
+                source, 
+                true, 
+                ProviderInfo.DefaultSourceTypeParametr(), 
+                MethodType.Sync, 
+                builder
+                );
         }
 
         protected virtual void ReadAsyncMethod(QueryBatchCommand source, StringBuilder builder)
         {
-            StartReadMethod(source, MethodType.Async, builder);
-            StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
-            EndMethodParametrs(builder, MethodType.Async);
-            ReadMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, builder);
-            EndMethod(builder);
+            ReadMethodDefinition(
+                source,
+                MethodType.Async,
+                builder,
+                ProviderInfo.DefaultSourceType(),
+                ProviderInfo.DefaultSourceTypeParametr()
+                );
+            ReadMethodBody(
+                source, 
+                true, 
+                ProviderInfo.DefaultSourceTypeParametr(), 
+                MethodType.Async, 
+                builder
+                );
         }
 
-        protected void StartReadMethod(
+        public string ReadMethodName(
             QueryBatchCommand source,
-            MethodType methodType,
-            StringBuilder builder
+            MethodType methodType
             )
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
-            if (methodType == MethodType.Sync)
+            if(methodType == MethodType.Sync)
             {
-                builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} IEnumerable<IEnumerable<{type}>> {source.MethodName}(
-");
+                return $"{source.MethodName}";
             }
             else
             {
-                builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async IAsyncEnumerable<IAsyncEnumerable<{type}>> {source.MethodName}Async(
-");
+                return $"{source.MethodName}Async";
             }
         }
 
-        protected void StartMethodParametrs(
+        protected void ReadMethodDefinition(
             QueryBatchCommand source,
+            MethodType methodType,
+            StringBuilder builder,
             string sourceTypeName,
             string sourceParametrName,
-            StringBuilder builder
+            bool forInterface = false
             )
         {
-            builder.Append($@"
-            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
-");
+            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
+            var returnType = methodType == MethodType.Sync ? $"IEnumerable<IEnumerable<{type}>>" : $"IAsyncEnumerable<IAsyncEnumerable<{type}>>";
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+
+            builder.Append($@"        
+        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {ReadMethodName(source, methodType)}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
+
             _commandGenerator.AddMethodParametrs(source, builder);
+
+            builder.Append($@",
+            int? timeout = null");
+
+            if (ProviderInfo.CanSetTransaction)
+            {
+                builder.Append($@",
+            {ProviderInfo.TransactionType()} transaction = null");
+            }
+
+            if (methodType == MethodType.Async)
+            {
+                var enumeratorCancellation = forInterface ? string.Empty : "[EnumeratorCancellation]";
+                builder.Append($@",
+            {enumeratorCancellation} CancellationToken cancellationToken = default");
+
+            }
+
+            builder.Append($@"
+            )");
         }
 
         protected void ReadMethodBody(
@@ -93,6 +138,8 @@ namespace Gedaq.Base.Batch
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             var disposeOrCloseAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
+            builder.Append($@"
+        {{");
 
             if (needCheckOpen)
             {
@@ -167,38 +214,7 @@ namespace Gedaq.Base.Batch
                     {await}batch.Dispose{disposeOrCloseAsync};
                 }}
             }}
-");
-        }
-
-        protected void EndMethod(StringBuilder builder)
-        {
-            builder.Append($@"
         }}
-");
-        }
-
-        protected void EndMethodParametrs(StringBuilder builder, MethodType methodType)
-        {
-            builder.Append($@",
-            int? timeout = null
-");
-            if(ProviderInfo.CanSetTransaction)
-            {
-                builder.Append($@",
-            {ProviderInfo.TransactionType()} transaction = null
-");
-            }
-
-            if (methodType == MethodType.Async)
-            {
-                builder.Append($@",
-            [EnumeratorCancellation] CancellationToken cancellationToken = default
-");
-            }
-
-            builder.Append($@"
-        )
-        {{
 ");
         }
     }

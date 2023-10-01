@@ -45,128 +45,200 @@ namespace Gedaq.Base.Batch
 
         protected virtual void ScalarMethod(QueryBatchCommand source, StringBuilder builder)
         {
-            StartScalarMethod(source, MethodType.Sync, builder);
-            StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
-            EndMethodParametrs(builder, MethodType.Sync);
-            ScalarMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.Scalar, builder);
-            EndMethod(builder);
+            ScalarMethodDefinition(
+                source, 
+                MethodType.Sync,
+                ProviderInfo.DefaultSourceType(), 
+                ProviderInfo.DefaultSourceTypeParametr(),
+                builder
+                );
+            MethodBody(
+                source, 
+                true, 
+                ProviderInfo.DefaultSourceTypeParametr(), 
+                MethodType.Sync, 
+                QueryType.Scalar, 
+                builder
+                );
         }
 
         protected virtual void ScalarMethodAsync(QueryBatchCommand source, StringBuilder builder)
         {
-            StartScalarMethod(source, MethodType.Async, builder);
-            StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
-            EndMethodParametrs(builder, MethodType.Async);
-            ScalarMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, QueryType.Scalar, builder);
-            EndMethod(builder);
+            ScalarMethodDefinition(
+                source,
+                MethodType.Async,
+                ProviderInfo.DefaultSourceType(),
+                ProviderInfo.DefaultSourceTypeParametr(),
+                builder
+                );
+            MethodBody(
+                source,
+                true,
+                ProviderInfo.DefaultSourceTypeParametr(),
+                MethodType.Async,
+                QueryType.Scalar,
+                builder
+                );
         }
 
         protected virtual void NonQueryMethod(QueryBatchCommand source, StringBuilder builder)
         {
-            StartNonQueryMethod(source, MethodType.Sync, builder);
-            StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
-            EndMethodParametrs(builder, MethodType.Sync);
-            ScalarMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Sync, QueryType.NonQuery, builder);
-            EndMethod(builder);
+            NonQueryMethodDefinition(
+                source,
+                MethodType.Sync,
+                ProviderInfo.DefaultSourceType(),
+                ProviderInfo.DefaultSourceTypeParametr(),
+                builder
+                );
+            MethodBody(
+                source,
+                true,
+                ProviderInfo.DefaultSourceTypeParametr(),
+                MethodType.Sync,
+                QueryType.NonQuery,
+                builder
+                );
         }
 
         protected virtual void NonQueryMethodAsync(QueryBatchCommand source, StringBuilder builder)
         {
-            StartNonQueryMethod(source, MethodType.Async, builder);
-            StartMethodParametrs(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), builder);
-            EndMethodParametrs(builder, MethodType.Async);
-            ScalarMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, QueryType.NonQuery, builder);
-            EndMethod(builder);
+            NonQueryMethodDefinition(
+                source,
+                MethodType.Async,
+                ProviderInfo.DefaultSourceType(),
+                ProviderInfo.DefaultSourceTypeParametr(),
+                builder
+                );
+            MethodBody(
+                source,
+                true,
+                ProviderInfo.DefaultSourceTypeParametr(),
+                MethodType.Async,
+                QueryType.NonQuery,
+                builder
+                );
         }
 
-        protected void StartScalarMethod(
+        public string ScalarMethodName(
+            QueryBatchCommand source,
+            MethodType methodType
+            )
+        {
+            if (methodType == MethodType.Sync)
+            {
+                return $"{(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}";
+            }
+            else
+            {
+                return $"{(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Async";
+            }
+        }
+
+        public void ScalarMethodDefinition(
             QueryBatchCommand source,
             MethodType methodType,
-            StringBuilder builder
+            string sourceTypeName,
+            string sourceParametrName,
+            StringBuilder builder,
+            bool forInterface = false
             )
         {
             _commandGenerator.GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
-            if (methodType == MethodType.Sync)
-            {
-                builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {typeName} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}(
-");
-            }
-            else
-            {
-                builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async {source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Async(
-");
-            }
-        }
+            var returnType = methodType == MethodType.Sync ? $"{source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}>" : typeName;
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
 
-        protected void StartNonQueryMethod(
-            QueryBatchCommand source,
-            MethodType methodType,
-            StringBuilder builder
-            )
-        {
-            if (methodType == MethodType.Sync)
-            {
-                builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} System.Int32 {(((int)source.QueryType).IsPowerOfTwo() ? "" : "NonQuery")}{source.MethodName}(
-");
-            }
-            else
-            {
-                builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async {source.MethodInfo.AsyncResultType.ToResultType()}<System.Int32> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "NonQuery")}{source.MethodName}Async(
-");
-            }
-        }
-
-        protected void StartMethodParametrs(
-            QueryBatchCommand source,
-            string sourceTypeName,
-            string sourceParametrName,
-            StringBuilder builder
-            )
-        {
             builder.Append($@"
-            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
-");
+        {accessModifier} {staticModifier} {asyncKeyword} {typeName} {ScalarMethodName(source, methodType)}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
             _commandGenerator.AddMethodParametrs(source, builder);
-        }
 
-        protected void EndMethod(StringBuilder builder)
-        {
-            builder.Append($@"
-        }}
-");
-        }
-
-        protected void EndMethodParametrs(StringBuilder builder, MethodType methodType)
-        {
             builder.Append($@",
-            int? timeout = null
-");
+            int? timeout = null");
+
             if (ProviderInfo.CanSetTransaction)
             {
                 builder.Append($@",
-            {ProviderInfo.TransactionType()} transaction = null
-");
+            {ProviderInfo.TransactionType()} transaction = null");
             }
 
             if (methodType == MethodType.Async)
             {
                 builder.Append($@",
-            CancellationToken cancellationToken = default
-");
+            CancellationToken cancellationToken = default");
             }
 
             builder.Append($@"
         )
-        {{
 ");
         }
 
-        protected void ScalarMethodBody(
+        public string NonQueryMethodName(
+            QueryBatchCommand source,
+            MethodType methodType
+            )
+        {
+            if (methodType == MethodType.Sync)
+            {
+                return $"{(((int)source.QueryType).IsPowerOfTwo() ? "" : "NonQuery")}{source.MethodName}";
+            }
+            else
+            {
+                return $"{(((int)source.QueryType).IsPowerOfTwo() ? "" : "NonQuery")}{source.MethodName}Async";
+            }
+        }
+
+        public void NonQueryMethodDefinition(
+            QueryBatchCommand source,
+            MethodType methodType,
+            string sourceTypeName,
+            string sourceParametrName,
+            StringBuilder builder,
+            bool forInterface = false
+            )
+        {
+            var returnType = methodType == MethodType.Sync ? $"System.Int32" : $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Int32>";
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+
+            builder.Append($@"        
+        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {NonQueryMethodName(source, methodType)}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
+
+            _commandGenerator.AddMethodParametrs(source, builder);
+
+            builder.Append($@",
+            int? timeout = null");
+
+            if (ProviderInfo.CanSetTransaction)
+            {
+                builder.Append($@",
+            {ProviderInfo.TransactionType()} transaction = null");
+            }
+
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@",
+            CancellationToken cancellationToken = default");
+            }
+
+            builder.Append($@"
+        )
+");
+        }
+
+        protected void MethodBody(
             QueryBatchCommand source,
             bool needCheckOpen,
             string sourceParametrName,
@@ -178,6 +250,8 @@ namespace Gedaq.Base.Batch
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             var disposeOrCloseAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
+            builder.Append($@"
+        {{");
 
             if (needCheckOpen)
             {
@@ -263,6 +337,7 @@ namespace Gedaq.Base.Batch
                     {await}batch.Dispose{disposeOrCloseAsync};
                 }}
             }}
+        }}
 ");
         }
     }
