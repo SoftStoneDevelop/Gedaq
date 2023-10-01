@@ -13,6 +13,7 @@ namespace Gedaq.Helpers
             {
                 builder.Append($@",
             out {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Output))}{batchPostfix}");
+
                 return;
             }
 
@@ -20,6 +21,7 @@ namespace Gedaq.Helpers
             {
                 builder.Append($@",
             out {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.ReturnValue))}{batchPostfix}");
+
                 return;
             }
         }

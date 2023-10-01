@@ -1,7 +1,6 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Model;
 using Gedaq.Base.Query;
-using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.MySqlConnector.Enums;
 using Gedaq.MySqlConnector.Helpers;
@@ -26,30 +25,38 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
             MySqlConnectorQuery query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
             {
-                StartReadMethod(source, MethodType.Sync, builder);
-                QueryMethodParametrs(
+                ReadMethodDefinition(
                     source,
+                    MethodType.Sync,
                     builder,
                     MySqlConnectorSourceType.MySqlConnection.ToTypeName(),
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName()
                     );
-                EndMethodParametrs(builder, MethodType.Sync);
-                ReadMethodBody(source, true, MySqlConnectorSourceType.MySqlConnection.ToParametrName(), MethodType.Sync, builder);
-                EndMethod(builder);
+                ReadMethodBody(
+                    source,
+                    needCheckOpen: true,
+                    MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
+                    MethodType.Sync,
+                    builder
+                    );
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
             {
-                StartReadMethod(source, MethodType.Sync, builder);
-                QueryMethodParametrs(
+                ReadMethodDefinition(
                     source,
+                    MethodType.Sync,
                     builder,
                     MySqlConnectorSourceType.MySqlDataSource.ToTypeName(),
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName()
                     );
-                EndMethodParametrs(builder, MethodType.Sync);
-                ReadMethodBody(source, false, MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), MethodType.Sync, builder);
-                EndMethod(builder);
+                ReadMethodBody(
+                    source,
+                    needCheckOpen: false,
+                    MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
+                    MethodType.Sync,
+                    builder
+                    );
             }
         }
 
@@ -58,30 +65,38 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
             MySqlConnectorQuery query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
             {
-                StartReadMethod(source, MethodType.Async, builder);
-                QueryMethodParametrs(
+                ReadMethodDefinition(
                     source,
+                    MethodType.Async,
                     builder,
                     MySqlConnectorSourceType.MySqlConnection.ToTypeName(),
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName()
                     );
-                EndMethodParametrs(builder, MethodType.Async);
-                ReadMethodBody(source, true, MySqlConnectorSourceType.MySqlConnection.ToParametrName(), MethodType.Async, builder);
-                EndMethod(builder);
+                ReadMethodBody(
+                    source,
+                    needCheckOpen: true,
+                    MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
+                    MethodType.Async,
+                    builder
+                    );
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
             {
-                StartReadMethod(source, MethodType.Async, builder);
-                QueryMethodParametrs(
+                ReadMethodDefinition(
                     source,
+                    MethodType.Async,
                     builder,
                     MySqlConnectorSourceType.MySqlDataSource.ToTypeName(),
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName()
                     );
-                EndMethodParametrs(builder, MethodType.Async);
-                ReadMethodBody(source, false, MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), MethodType.Async, builder);
-                EndMethod(builder);
+                ReadMethodBody(
+                    source,
+                    needCheckOpen: false,
+                    MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
+                    MethodType.Async,
+                    builder
+                    );
             }
         }
     }

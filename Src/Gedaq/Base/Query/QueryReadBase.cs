@@ -32,97 +32,101 @@ namespace Gedaq.Base.Query
 
         protected virtual void ReadMethod(QueryBaseCommand source, StringBuilder builder)
         {
-            StartReadMethod(source, MethodType.Sync, builder);
-            QueryMethodParametrs(
-                source,
+            ReadMethodDefinition(
+                source, 
+                MethodType.Sync, 
                 builder,
                 ProviderInfo.DefaultSourceType(),
                 ProviderInfo.DefaultSourceTypeParametr()
                 );
-            EndMethodParametrs(builder, MethodType.Sync);
-            ReadMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Sync, builder);
-            EndMethod(builder);
+            ReadMethodBody(
+                source, 
+                needCheckOpen: true, 
+                ProviderInfo.DefaultSourceTypeParametr(), 
+                MethodType.Sync, 
+                builder
+                );
         }
 
         protected virtual void ReadAsyncMethod(QueryBaseCommand source, StringBuilder builder)
         {
-            StartReadMethod(source, MethodType.Async, builder);
-            QueryMethodParametrs(
+            ReadMethodDefinition(
                 source,
+                MethodType.Async,
                 builder,
                 ProviderInfo.DefaultSourceType(),
                 ProviderInfo.DefaultSourceTypeParametr()
                 );
-            EndMethodParametrs(builder, MethodType.Async);
-            ReadMethodBody(source, true, ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, builder);
-            EndMethod(builder);
+            ReadMethodBody(
+                source,
+                needCheckOpen: true,
+                ProviderInfo.DefaultSourceTypeParametr(),
+                MethodType.Async,
+                builder
+                );
         }
 
-        protected void StartReadMethod(
+        public string ReadMethodName(
             QueryBase source,
-            MethodType methodType,
-            StringBuilder builder
+            MethodType methodType
             )
         {
             if (methodType == MethodType.Sync)
             {
-                builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> {source.MethodName}(
-");
+                return $"{source.MethodName}";
             }
             else
             {
-                builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> {source.MethodName}Async(
-");
+                return $"{source.MethodName}Async";
             }
         }
 
-        protected void QueryMethodParametrs(
+        public void ReadMethodDefinition(
             QueryBaseCommand source,
+            MethodType methodType,
             StringBuilder builder,
             string sourceTypeName,
-            string sourceParametrName
+            string sourceParametrName,
+            bool forInterface = false
             )
         {
-            builder.Append($@"
-            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
-");
+            var returnType = methodType == MethodType.Sync ? $"IEnumerable<{source.MapTypeName.GetFullTypeName(true)}>" : $"IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}>";
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+
+            builder.Append($@"        
+        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {ReadMethodName(source, methodType)}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
             _commandGenerator.AddParametrs(source, builder, false);
             _commandGenerator.AddFormatParametrs(source, builder);
-        }
 
-        protected static void EndMethod(StringBuilder builder)
-        {
-            builder.Append($@"
-        }}
-");
-        }
-
-        protected void EndMethodParametrs(StringBuilder builder, MethodType methodType)
-        {
             builder.Append($@",
-            int? timeout = null
-");
+            int? timeout = null");
+
             if (ProviderInfo.CanSetTransaction)
             {
                 builder.Append($@",
-            {ProviderInfo.TransactionType()} transaction = null
-");
+            {ProviderInfo.TransactionType()} transaction = null");
+
             }
 
             if (methodType == MethodType.Async)
             {
+                var enumeratorCancellation = forInterface ? string.Empty : "[EnumeratorCancellation]";
                 builder.Append($@",
-            [EnumeratorCancellation] CancellationToken cancellationToken = default
-");
+            {enumeratorCancellation} CancellationToken cancellationToken = default");
+
             }
 
             builder.Append($@"
-        )
-        {{
-");
+        )");
+
         }
 
         protected void ReadMethodBody(
@@ -136,6 +140,8 @@ namespace Gedaq.Base.Query
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             var disposeOrCloseAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
+            builder.Append($@"
+        {{");
 
             if (needCheckOpen)
             {
@@ -228,6 +234,7 @@ namespace Gedaq.Base.Query
                     {await}command.Dispose{disposeOrCloseAsync};
                 }}
             }}
+        }}
 ");
         }
     }

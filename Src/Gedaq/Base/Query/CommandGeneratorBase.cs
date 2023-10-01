@@ -609,8 +609,8 @@ namespace Gedaq.Base.Query
             foreach (var format in source.FormatParametrs)
             {
                 builder.Append($@",
-        System.String {format.Name}
-");
+        System.String {format.Name}");
+
             }
         }
 
@@ -630,8 +630,8 @@ namespace Gedaq.Base.Query
                 if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
                 {
                     builder.Append($@",
-            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}
-                        ");
+            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}");
+
                 }
 
                 if (writeOutParametrs)
