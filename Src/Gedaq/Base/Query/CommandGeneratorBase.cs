@@ -32,7 +32,7 @@ namespace Gedaq.Base.Query
             }
         }
 
-        protected abstract void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder);
+        protected abstract void CreateParametr(BaseParametr baseParametr, StringBuilder builder);
 
         public string CreateCommandMethodName(
             QueryBaseCommand source,
@@ -167,11 +167,9 @@ namespace Gedaq.Base.Query
                 return;
             }
 
-            var index = -1;
             foreach (var parametr in source.BaseParametrs())
             {
-                ++index;
-                CreateParametr(parametr, index, builder);
+                CreateParametr(parametr, builder);
             }
         }
 
@@ -447,10 +445,8 @@ namespace Gedaq.Base.Query
 
             if(source.HaveParametrs())
             {
-                int index = -1;
                 foreach (var parametr in source.BaseParametrs())
                 {
-                    ++index;
                     if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
                     {
                         continue;
@@ -461,11 +457,11 @@ namespace Gedaq.Base.Query
                         builder.Append($@"
             if({parametr.VariableName()}.HasValue)
             {{
-                {ProviderInfo.GetParametrValue(parametr, index, "command")} = {parametr.VariableName()}.Value;
+                {ProviderInfo.GetParametrValue(parametr, "command")} = {parametr.VariableName()}.Value;
             }}
             else
             {{
-                {ProviderInfo.GetParametrValue(parametr, index, "command")} = {ProviderInfo.GetNullValue(parametr)};
+                {ProviderInfo.GetParametrValue(parametr, "command")} = {ProviderInfo.GetNullValue(parametr)};
             }}
 ");
                     }
@@ -476,18 +472,18 @@ namespace Gedaq.Base.Query
                             builder.Append($@"
             if({parametr.VariableName()} == null)
             {{
-                {ProviderInfo.GetParametrValue(parametr, index, "command")} = {ProviderInfo.GetNullValue(parametr)};
+                {ProviderInfo.GetParametrValue(parametr, "command")} = {ProviderInfo.GetNullValue(parametr)};
             }}
             else
             {{
-                {ProviderInfo.GetParametrValue(parametr, index, "command")} = {parametr.VariableName()};
+                {ProviderInfo.GetParametrValue(parametr, "command")} = {parametr.VariableName()};
             }}
 ");
                         }
                         else
                         {
                             builder.Append($@"
-                {ProviderInfo.GetParametrValue(parametr, index, "command")} = {parametr.VariableName()};
+                {ProviderInfo.GetParametrValue(parametr, "command")} = {parametr.VariableName()};
 ");
                         }
                     }
@@ -601,7 +597,7 @@ namespace Gedaq.Base.Query
 
                 if (writeOutParametrs)
                 {
-                    CommandParametrsHelper.WriteOutParametrs(parametr, builder);
+                    CommandParametrsHelper.AddOutParametrs(parametr, builder);
                 }
             }
         }
@@ -644,17 +640,15 @@ namespace Gedaq.Base.Query
 
         public void SetOutAndReturnParametrs(QueryBaseCommand source, StringBuilder builder, ProviderInfo providerInfo)
         {
-            var index = -1;
             foreach (var parametr in source.BaseParametrs())
             {
-                ++index;
                 if (parametr.Direction == System.Data.ParameterDirection.ReturnValue ||
                     parametr.Direction == System.Data.ParameterDirection.Output ||
                     parametr.Direction == System.Data.ParameterDirection.InputOutput
                     )
                 {
                     builder.Append($@"
-                    {parametr.VariableName(BaseParametr.VariablePostfix(parametr.Direction))} = ({parametr.Type.GetFullTypeName(true)}){providerInfo.GetParametrValue(parametr, index, "command")};
+                    {parametr.VariableName(BaseParametr.VariablePostfix(parametr.Direction))} = ({parametr.Type.GetFullTypeName(true)}){providerInfo.GetParametrValue(parametr, "command")};
 ");
                 }
             }

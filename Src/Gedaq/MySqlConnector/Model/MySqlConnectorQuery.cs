@@ -85,7 +85,7 @@ namespace Gedaq.MySqlConnector.Model
 
         public override IEnumerable<BaseParametr> BaseParametrs()
         {
-            return Parametrs.Cast<BaseParametr>();
+            return Parametrs;
         }
 
         private bool FillSourceType(TypedConstant argument)

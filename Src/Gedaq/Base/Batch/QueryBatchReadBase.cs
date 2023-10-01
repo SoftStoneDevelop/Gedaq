@@ -54,7 +54,7 @@ namespace Gedaq.Base.Batch
             StringBuilder builder
             )
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().query.MapTypeName.GetFullTypeName(true) : "object";
+            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"        
@@ -123,12 +123,10 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
                 reader = {await}batch.ExecuteReader{async};
 ");
-            int index = -1;
             foreach (var item in source.QueryBases())
             {
-                ++index;
                 builder.Append($@"
-                yield return {_commandGenerator.BatchItemMethodName(index, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
+                yield return {_commandGenerator.BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
                 {await}reader.NextResult{async};
 ");
             }

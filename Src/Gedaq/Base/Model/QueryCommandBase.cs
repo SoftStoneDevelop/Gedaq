@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Gedaq.Base.Model
-{
+{    
     internal abstract class QueryBaseCommand : QueryBase
     {
         public string Query;

@@ -64,9 +64,13 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
             }
         }
 
-        protected override void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder)
+        protected override void CreateParametr(BaseParametr baseParametr, StringBuilder builder)
         {
-            MySqlConnectorGeneratorHelper.CreateParametr(baseParametr, index, builder);
+            builder.Append($@"
+                {{");
+            MySqlConnectorGeneratorHelper.CreateParametr(baseParametr, builder);
+            builder.Append($@"
+                }}");
         }
     }
 }

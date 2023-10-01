@@ -6,86 +6,86 @@ namespace Gedaq.MySqlConnector.Helpers
 {
     internal static class MySqlConnectorGeneratorHelper
     {
-        public static void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder)
+        public static void CreateParametr(BaseParametr baseParametr, StringBuilder builder)
         {
             var parametr = (MySqlConnectorParametr)baseParametr;
 
             builder.Append($@"
-            var parametr{index} = command.CreateParameter();
+            var parametr = command.CreateParameter();
 ");
 
             if (parametr.HaveMySqlDbType)
             {
                 builder.Append($@"
-                parametr{index}.MySqlDbType = (MySqlConnector.MySqlDbType)({parametr.MySqlDbType});
+                parametr.MySqlDbType = (MySqlConnector.MySqlDbType)({parametr.MySqlDbType});
 ");
             }
 
             if (parametr.HaveNameInCommand)
             {
                 builder.Append($@"
-                parametr{index}.ParameterName = ""{parametr.NameInCommand}"";
+                parametr.ParameterName = ""{parametr.NameInCommand}"";
 ");
             }
 
             if (parametr.HaveSize)
             {
                 builder.Append($@"
-                parametr{index}.Size = {parametr.Size};
+                parametr.Size = {parametr.Size};
 ");
             }
 
             if (parametr.Nullable)
             {
                 builder.Append($@"
-                parametr{index}.IsNullable = true;
+                parametr.IsNullable = true;
 ");
             }
 
             if (parametr.HaveDirection)
             {
                 builder.Append($@"
-                parametr{index}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
+                parametr.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
 ");
             }
 
             if (parametr.HaveSourceColumn)
             {
                 builder.Append($@"
-                parametr{index}.SourceColumn = ""{parametr.SourceColumn}"";
+                parametr.SourceColumn = ""{parametr.SourceColumn}"";
 ");
             }
 
             if (parametr.HaveSourceColumnNullMapping)
             {
                 builder.Append($@"
-                parametr{index}.SourceColumnNullMapping = true;
+                parametr.SourceColumnNullMapping = true;
 ");
             }
 
             if (parametr.HaveSourceVersion)
             {
                 builder.Append($@"
-                parametr{index}.SourceVersion = System.Data.DataRowVersion.{parametr.SourceVersion.ToString()};
+                parametr.SourceVersion = System.Data.DataRowVersion.{parametr.SourceVersion.ToString()};
 ");
             }
 
             if (parametr.HaveScale)
             {
                 builder.Append($@"
-                parametr{index}.Scale = {parametr.Scale};
+                parametr.Scale = {parametr.Scale};
 ");
             }
 
             if (parametr.HavePrecision)
             {
                 builder.Append($@"
-                parametr{index}.Precision = {parametr.Precision};
+                parametr.Precision = {parametr.Precision};
 ");
             }
 
             builder.Append($@"
-                command.Parameters.Add(parametr{index});
+                command.Parameters.Add(parametr);
 ");
         }
     }

@@ -98,7 +98,7 @@ namespace Gedaq.Npgsql.Model
 
         public override IEnumerable<BaseParametr> BaseParametrs()
         {
-            return Parametrs.Cast<BaseParametr>();
+            return Parametrs;
         }
     }
 }

@@ -47,9 +47,13 @@ namespace Gedaq.Npgsql.GeneratorsBatch
             SetParametrsMethod(source, builder);
         }
 
-        protected override void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder)
+        protected override void CreateParametr(BaseParametr baseParametr, StringBuilder builder)
         {
-            NpgsqlGeneratorHelper.CreateParametr(baseParametr, index, builder);
+            builder.Append($@"
+                {{");
+            NpgsqlGeneratorHelper.CreateParametr(baseParametr, builder);
+            builder.Append($@"
+                }}");
         }
     }
 }

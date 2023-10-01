@@ -19,36 +19,12 @@ namespace Gedaq.Npgsql
 {
     internal class NpgsqlAttributeProcessor : BaseAttributeProcessor
     {
-        private class BatchPair
-        {
-            public NpgsqlQueryBatch Batch { get; set; }
-            public List<BatchPart> Parts { get; } = new List<BatchPart>();
-
-            public bool IsEmpty()
-            {
-                return Batch == null && Parts.Count == 0;
-            }
-        }
-
-        private class ReadPair
-        {
-            public NpgsqlQuery Query { get; set; }
-            public List<NpgsqlParametr> Parametrs { get; } = new List<NpgsqlParametr>();
-
-            public List<FormatParametr> FormatParametrs { get; } = new List<FormatParametr>();
-
-            public bool IsEmpty()
-            {
-                return Query == null && Parametrs.Count == 0;
-            }
-        }
-
         private List<NpgsqlQuery> _read = new List<NpgsqlQuery>();
         private List<NpgsqlQueryBatch> _readBatch = new List<NpgsqlQueryBatch>();
         private List<BinaryExport> _binaryExports = new List<BinaryExport>();
         private List<BinaryImport> _binaryImports = new List<BinaryImport>();
 
-        private List<BatchPair> _batchPairTemp = new List<BatchPair>();
+        private List<BatchPair<NpgsqlQueryBatch>> _batchPairTemp = new List<BatchPair<NpgsqlQueryBatch>>();
         private Dictionary<string, NpgsqlQuery> _readContainsType = new Dictionary<string, NpgsqlQuery>();
 
         private PostgreSQLQueryParser _queryParser = new PostgreSQLQueryParser();
@@ -67,8 +43,8 @@ namespace Gedaq.Npgsql
                 var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
                 var parentAttributes = parentSymbol.GetAttributes();
                 
-                var batchPair = new BatchPair();
-                var readTemp = new ReadPair();
+                var batchPair = new BatchPair<NpgsqlQueryBatch>();
+                var readTemp = new ReadPair<NpgsqlQuery, NpgsqlParametr>();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
                     cancellationToken.ThrowIfCancellationRequested();
@@ -122,7 +98,7 @@ namespace Gedaq.Npgsql
             FillBatches();
         }
 
-        private void TryAddBatchToTemp(BatchPair candidatePair)
+        private void TryAddBatchToTemp(BatchPair<NpgsqlQueryBatch> candidatePair)
         {
             if(candidatePair.IsEmpty())
             {
@@ -149,6 +125,7 @@ namespace Gedaq.Npgsql
                 NpgsqlQuery firstRead = null;
 
                 var set = new HashSet<int>();
+                var queries = new List<BatchPart<NpgsqlQuery>>();
                 foreach (var part in batchPair.Parts.OrderBy(or => or.BatchNumber))
                 {
                     if (!set.Add(part.BatchNumber))
@@ -170,7 +147,13 @@ namespace Gedaq.Npgsql
                     batchPair.Batch.HaveParametrs |= queryRead.HaveParametrs();
                     batchPair.Batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
                     batchPair.Batch.SourceType |= queryRead.SourceType;
-                    batchPair.Batch.Queries.Add((part.BatchNumber, queryRead));
+                    queries.Add(new BatchPart<NpgsqlQuery>(queryRead, part.BatchNumber));
+                }
+
+                batchPair.Batch.Queries = queries.OrderBy(or => or.Number).ToArray();
+                for (int i = 0; i < batchPair.Batch.Queries.Length; i++)
+                {
+                    batchPair.Batch.Queries[i].Index = i;
                 }
 
                 _readBatch.Add(batchPair.Batch);
@@ -180,7 +163,7 @@ namespace Gedaq.Npgsql
             _readContainsType.Clear();
         }
 
-        private void TryAddReadMethod(ReadPair readPair)
+        private void TryAddReadMethod(ReadPair<NpgsqlQuery, NpgsqlParametr> readPair)
         {
             if(readPair.IsEmpty())
             {
@@ -208,7 +191,7 @@ namespace Gedaq.Npgsql
             _readContainsType.Add(query.MethodName, query);
         }
 
-        private void AddParametrs(ReadPair readPair)
+        private void AddParametrs(ReadPair<NpgsqlQuery, NpgsqlParametr> readPair)
         {
             if(readPair.Parametrs.Count == 0)
             {
@@ -239,13 +222,10 @@ namespace Gedaq.Npgsql
 
                     containPositionParametr |= true;
                 }
-                else
-                {
-                    parametr.Position = i + 1;
-                }
 
                 containNamedParametr |= parametr.HaveNameInCommand;
 
+                parametr.Index = i;
                 readPair.Query.Parametrs[i] = parametr;
             }
 
@@ -255,7 +235,7 @@ namespace Gedaq.Npgsql
             }
         }
 
-        private void ProcessBatch(AttributeData parametrAttribute, INamedTypeSymbol containsType, BatchPair currentPair)
+        private void ProcessBatch(AttributeData parametrAttribute, INamedTypeSymbol containsType, BatchPair<NpgsqlQueryBatch> currentPair)
         {
             if (!NpgsqlQueryBatch.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var queryBatch))
             {
@@ -270,7 +250,7 @@ namespace Gedaq.Npgsql
             currentPair.Batch = queryBatch;
         }
 
-        private void ProcessBatchPart(AttributeData parametrAttribute, INamedTypeSymbol containsType, BatchPair currentPair)
+        private void ProcessBatchPart(AttributeData parametrAttribute, INamedTypeSymbol containsType, BatchPair<NpgsqlQueryBatch> currentPair)
         {
             if (!BatchPart.CreateNew(parametrAttribute.ConstructorArguments, out var batchPart))
             {
@@ -280,7 +260,7 @@ namespace Gedaq.Npgsql
             currentPair.Parts.Add(batchPart);
         }
 
-        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ReadPair readPair)
+        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ReadPair<NpgsqlQuery, NpgsqlParametr> readPair)
         {
             if (!NpgsqlQuery.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
@@ -295,7 +275,7 @@ namespace Gedaq.Npgsql
             readPair.Query = queryReadMethod;
         }
 
-        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType, ReadPair readPair)
+        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType, ReadPair<NpgsqlQuery, NpgsqlParametr> readPair)
         {
             if (!NpgsqlParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
             {

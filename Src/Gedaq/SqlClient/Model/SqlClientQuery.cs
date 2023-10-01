@@ -76,7 +76,7 @@ namespace Gedaq.SqlClient.Model
 
         public override IEnumerable<BaseParametr> BaseParametrs()
         {
-            return Parametrs.Cast<BaseParametr>();
+            return Parametrs;
         }
     }
 }

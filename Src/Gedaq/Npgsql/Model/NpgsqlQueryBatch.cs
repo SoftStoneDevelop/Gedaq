@@ -10,7 +10,7 @@ namespace Gedaq.Npgsql.Model
     internal class NpgsqlQueryBatch : QueryBatchCommand
     {
         public NpgsqlSourceType SourceType;
-        public List<(int number, NpgsqlQuery query)> Queries = new List<(int number, NpgsqlQuery query)>();
+        public BatchPart<NpgsqlQuery>[] Queries;
 
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out NpgsqlQueryBatch queryBatch)
         {
@@ -45,9 +45,9 @@ namespace Gedaq.Npgsql.Model
             return true;
         }
 
-        public override IEnumerable<(int, QueryBaseCommand)> QueryBases()
+        public override IEnumerable<BatchPartBase> QueryBases()
         {
-            return Queries.Select(sel => (sel.number, (QueryBaseCommand)sel.query));
+            return Queries;
         }
     }
 }

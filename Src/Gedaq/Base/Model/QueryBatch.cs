@@ -10,6 +10,6 @@ namespace Gedaq.Base.Model
         public bool HaveParametrs;
         public bool HaveFormatParametrs;
 
-        public abstract IEnumerable<(int number, QueryBaseCommand query)> QueryBases();
+        public abstract IEnumerable<BatchPartBase> QueryBases();
     }
 }

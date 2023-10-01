@@ -2,7 +2,6 @@
 using Gedaq.Base.Model;
 using Gedaq.Base.Query;
 using Gedaq.Enums;
-using Gedaq.Helpers;
 using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
 using System.Text;
@@ -64,9 +63,13 @@ namespace Gedaq.Npgsql.GeneratorsQuery
             }
         }
 
-        protected override void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder)
+        protected override void CreateParametr(BaseParametr baseParametr, StringBuilder builder)
         {
-            NpgsqlGeneratorHelper.CreateParametr(baseParametr, index, builder);
+            builder.Append($@"
+                {{");
+            NpgsqlGeneratorHelper.CreateParametr(baseParametr, builder);
+            builder.Append($@"
+                }}");
         }
     }
 }

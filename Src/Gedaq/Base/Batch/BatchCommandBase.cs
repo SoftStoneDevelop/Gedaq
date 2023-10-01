@@ -4,7 +4,6 @@ using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 
 namespace Gedaq.Base.Batch
@@ -93,7 +92,7 @@ namespace Gedaq.Base.Batch
 
             if (source.QueryType.HasFlag(QueryType.NonQuery) && 
                 source.HaveParametrs && 
-                source.QueryBases().Any(a => a.query.HaveParametrs() && a.query.BaseParametrs().Any(an => an .HaveDirection))
+                source.QueryBases().Any(a => a.QueryBase.HaveParametrs() && a.QueryBase.BaseParametrs().Any(an => an .HaveDirection))
                 )
             {
                 //TODO
@@ -108,17 +107,17 @@ namespace Gedaq.Base.Batch
         }
 
         public string BatchItemMethodName(
-            int index,
+            BatchPartBase batchPart,
             MethodType methodType
             )
         {
             if (methodType == MethodType.Sync)
             {
-                return $"BatchItem{index}";
+                return $"BatchItem{batchPart.Index}";
             }
             else
             {
-                return $"BatchItem{index}Async";
+                return $"BatchItem{batchPart.Index}Async";
             }
         }
 
@@ -128,19 +127,17 @@ namespace Gedaq.Base.Batch
             StringBuilder builder
             )
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().query.MapTypeName.GetFullTypeName(true) : "object";
+            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
             var async = methodType == MethodType.Sync ? "()" : "Async(cancellationToken).ConfigureAwait(false)";
             var await = methodType == MethodType.Sync ? "" : "await ";
 
-            int index = -1;
             foreach (var item in source.QueryBases())
             {
-                ++index;
                 if (methodType == MethodType.Sync)
                 {
                     builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static IEnumerable<{type}> {BatchItemMethodName(index, methodType)}({ProviderInfo.ReaderType()} reader)
+        private static IEnumerable<{type}> {BatchItemMethodName(item, methodType)}({ProviderInfo.ReaderType()} reader)
         {{
 ");
                 }
@@ -148,7 +145,7 @@ namespace Gedaq.Base.Batch
                 {
                     builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static async IAsyncEnumerable<{type}> {BatchItemMethodName(index, methodType)}(
+        private static async IAsyncEnumerable<{type}> {BatchItemMethodName(item, methodType)}(
             {ProviderInfo.ReaderType()} reader,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
@@ -160,7 +157,7 @@ namespace Gedaq.Base.Batch
             while({await}reader.Read{async})
             {{
 ");
-                MappingHelper.YieldItem(item.query, builder, ProviderInfo, source.AllSameTypes ? "" : "(object)");
+                MappingHelper.YieldItem(item.QueryBase, builder, ProviderInfo, source.AllSameTypes ? "" : "(object)");
                 builder.Append($@"
             }}
         }}
@@ -168,7 +165,7 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        protected abstract void CreateParametr(BaseParametr parametr, int index, StringBuilder builder);
+        protected abstract void CreateParametr(BaseParametr parametr, StringBuilder builder);
 
         protected virtual void CreateFakeCommand(string sourceParametrName, StringBuilder builder)
         {
@@ -227,11 +224,9 @@ namespace Gedaq.Base.Batch
 
 ");
             CreateFakeCommand(sourceParametrName, builder);
-            int index = -1;
             foreach (var item in source.QueryBases())
             {
-                ++index;
-                CreateBatchCommand(index, item, builder);
+                CreateBatchCommand(item, builder);
                 builder.Append($@"
             batch.BatchCommands.Add(command);
 ");
@@ -281,12 +276,11 @@ namespace Gedaq.Base.Batch
         }
 
         private void CreateBatchCommand(
-            int index,
-            (int number, QueryBaseCommand query) item,
+            BatchPartBase item,
             StringBuilder builder
             )
         {
-            if (index == 0)
+            if (item.Index == 0)
             {
                 builder.Append($@"
             var command = batch.CreateBatchCommand();
@@ -304,11 +298,11 @@ namespace Gedaq.Base.Batch
         }
 
         private void SetCommandParametrs(
-            (int number, QueryBaseCommand query) item,
+            BatchPartBase item,
             StringBuilder builder
             )
         {
-            if (!item.query.HaveParametrs())
+            if (!item.QueryBase.HaveParametrs())
             {
                 return;
             }
@@ -316,11 +310,9 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
             {{
 ");
-            int indexP = -1;
-            foreach (var parametr in item.query.BaseParametrs())
+            foreach (var parametr in item.QueryBase.BaseParametrs())
             {
-                ++indexP;
-                CreateParametr(parametr, indexP, builder);
+                CreateParametr(parametr, builder);
             }
 
             builder.Append($@"
@@ -329,21 +321,21 @@ namespace Gedaq.Base.Batch
         }
 
         private void SetQuery(
-            (int number, QueryBaseCommand query) item,
+            BatchPartBase item,
             StringBuilder builder
             )
         {
-            if (item.query.HaveFromatParametrs())
+            if (item.QueryBase.HaveFromatParametrs())
             {
                 builder.Append($@"
             command.CommandText = string.Format(@""
-{item.query.Query}
+{item.QueryBase.Query}
 ""
 ");
-                foreach (var format in item.query.FormatParametrs)
+                foreach (var format in item.QueryBase.FormatParametrs)
                 {
                     builder.Append($@",
-{format.Name}Batch{item.number}
+{item.FormatName(format)}
 ");
                 }
 
@@ -356,7 +348,7 @@ namespace Gedaq.Base.Batch
             {
                 builder.Append($@"
             command.CommandText = @""
-{item.query.Query}
+{item.QueryBase.Query}
 "";
 ");
             }
@@ -374,15 +366,15 @@ namespace Gedaq.Base.Batch
 
             foreach (var item in source.QueryBases())
             {
-                if(!item.query.HaveFromatParametrs())
+                if(!item.QueryBase.HaveFromatParametrs())
                 {
                     continue;
                 }
 
-                foreach (var format in item.query.FormatParametrs)
+                foreach (var format in item.QueryBase.FormatParametrs)
                 {
                     builder.Append($@",
-        System.String {format.Name}Batch{item.number.ToString()}
+        System.String {item.FormatName(format)}
 ");
                 }
             }
@@ -409,17 +401,17 @@ namespace Gedaq.Base.Batch
             {
                 foreach (var batchCommand in source.QueryBases())
                 {
-                    if (!batchCommand.query.HaveParametrs())
+                    if (!batchCommand.QueryBase.HaveParametrs())
                     {
                         continue;
                     }
 
-                    foreach (var parametr in batchCommand.query.BaseParametrs())
+                    foreach (var parametr in batchCommand.QueryBase.BaseParametrs())
                     {
                         if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
                         {
                             builder.Append($@",
-            in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{batchCommand.number}
+            in {parametr.Type.GetFullTypeName(true)} {batchCommand.VariableName(parametr)}
 ");
                         }
                     }
@@ -474,22 +466,18 @@ namespace Gedaq.Base.Batch
                 return;
             }
 
-            int indexBatch = -1;
             var commandBatchDefine = false;
             foreach (var batchCommand in source.QueryBases())
             {
-                ++indexBatch;
-                if (!batchCommand.query.HaveParametrs())
+                if (!batchCommand.QueryBase.HaveParametrs())
                 {
                     continue;
                 }
 
-                var indexP = -1;
                 var commandSet = false;
 
-                foreach (var parametr in batchCommand.query.BaseParametrs())
+                foreach (var parametr in batchCommand.QueryBase.BaseParametrs())
                 {
-                    ++indexP;
                     if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
                     {
                         continue;
@@ -498,7 +486,7 @@ namespace Gedaq.Base.Batch
                     if (commandBatchDefine && !commandSet)
                     {
                         builder.Append($@"
-            batchCommand = batch.BatchCommands[{indexBatch}];
+            batchCommand = batch.BatchCommands[{batchCommand.Index}];
 ");
                         commandSet = true;
                     }
@@ -506,7 +494,7 @@ namespace Gedaq.Base.Batch
                     if (!commandBatchDefine)
                     {
                         builder.Append($@"
-            var batchCommand = batch.BatchCommands[{indexBatch}];
+            var batchCommand = batch.BatchCommands[{batchCommand.Index}];
 ");
                         commandBatchDefine = true;
                         commandSet = true;
@@ -515,13 +503,13 @@ namespace Gedaq.Base.Batch
                     if (parametr.Type.IsNullableType())
                     {
                         builder.Append($@"
-            if({parametr.VariableName()}Batch{batchCommand.number}.HasValue)
+            if({batchCommand.VariableName(parametr)}.HasValue)
             {{
-                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number}.Value;
+                {ProviderInfo.GetParametrValue(parametr, "batchCommand")} = {batchCommand.VariableName(parametr)}.Value;
             }}
             else
             {{
-                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {ProviderInfo.GetNullValue(parametr)};
+                {ProviderInfo.GetParametrValue(parametr, "batchCommand")} = {ProviderInfo.GetNullValue(parametr)};
             }}
 ");
                     }
@@ -530,20 +518,20 @@ namespace Gedaq.Base.Batch
                         if (parametr.Type.IsReferenceType)
                         {
                             builder.Append($@"
-            if({parametr.VariableName()}Batch{batchCommand.number} == null)
+            if({batchCommand.VariableName(parametr)} == null)
             {{
-                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {ProviderInfo.GetNullValue(parametr)};
+                {ProviderInfo.GetParametrValue(parametr, "batchCommand")} = {ProviderInfo.GetNullValue(parametr)};
             }}
             else
             {{
-                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number};
+                {ProviderInfo.GetParametrValue(parametr, "batchCommand")} = {batchCommand.VariableName(parametr)};
             }}
 ");
                         }
                         else
                         {
                             builder.Append($@"
-            {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number};
+            {ProviderInfo.GetParametrValue(parametr, "batchCommand")} = {batchCommand.VariableName(parametr)};
 ");
                         }
                     }
@@ -572,7 +560,7 @@ namespace Gedaq.Base.Batch
             StringBuilder builder
             )
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().query.MapTypeName.GetFullTypeName(true) : "object";
+            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
@@ -610,12 +598,10 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
                 reader = {await}batch.ExecuteReader{async};
 ");
-            int index = -1;
             foreach (var item in source.QueryBases())
             {
-                ++index;
                 builder.Append($@"
-                yield return {BatchItemMethodName(index, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
+                yield return {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
                 {await}reader.NextResult{async};
 ");
             }
@@ -664,7 +650,7 @@ namespace Gedaq.Base.Batch
             StringBuilder builder
             )
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().query.MapTypeName.GetFullTypeName(true) : "object";
+            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
             GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
             if (methodType == MethodType.Sync)
             {
@@ -725,11 +711,9 @@ namespace Gedaq.Base.Batch
 
             if(source.HaveParametrs)
             {
-                int index = -1;
                 foreach (var item in source.QueryBases())
                 {
-                    ++index;
-                    if (!item.query.HaveParametrs())
+                    if (!item.QueryBase.HaveParametrs())
                     {
                         continue;
                     }
@@ -749,26 +733,22 @@ namespace Gedaq.Base.Batch
             ProviderInfo providerInfo
             )
         {
-            var indexBatch = -1;
             foreach (var item in batch.QueryBases())
             {
-                ++indexBatch;
-                if (!item.query.HaveParametrs())
+                if (!item.QueryBase.HaveParametrs())
                 {
                     continue;
                 }
 
-                int index = -1;
-                foreach (var parametr in item.query.BaseParametrs())
+                foreach (var parametr in item.QueryBase.BaseParametrs())
                 {
-                    ++index;
                     if (parametr.Direction == System.Data.ParameterDirection.ReturnValue ||
                     parametr.Direction == System.Data.ParameterDirection.Output ||
                     parametr.Direction == System.Data.ParameterDirection.InputOutput
                     )
                     {
                         builder.Append($@"
-                    {parametr.VariableName(BaseParametr.VariablePostfix(parametr.Direction))}Batch{item.number} = ({parametr.Type.GetFullTypeName(true)}){providerInfo.GetParametrValue(parametr, index, $"batch.BatchCommands[{indexBatch}]")};
+                    {item.VariableName(parametr, BaseParametr.VariablePostfix(parametr.Direction))} = ({parametr.Type.GetFullTypeName(true)}){providerInfo.GetParametrValue(parametr, $"batch.BatchCommands[{item.Index}]")};
 ");
                     }
                 }
@@ -797,7 +777,7 @@ namespace Gedaq.Base.Batch
             {
                 foreach (var item in batch.QueryBases())
                 {
-                    if (!item.query.HaveParametrs())
+                    if (!item.QueryBase.HaveParametrs())
                     {
                         continue;
                     }
@@ -807,11 +787,9 @@ namespace Gedaq.Base.Batch
                         builder.Append($@",");
                     }
 
-                    int index = -1;
                     var afterFirst = false;
-                    foreach (var parametr in item.query.BaseParametrs())
+                    foreach (var parametr in item.QueryBase.BaseParametrs())
                     {
-                        ++index;
                         if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
                         {
                             continue;
@@ -823,7 +801,7 @@ namespace Gedaq.Base.Batch
                         }
 
                         builder.Append($@"
-                    in {parametr.VariableName()}Batch{item.number}
+                    in {item.VariableName(parametr)}
 ");
 
                         afterFirst |= true;
@@ -896,15 +874,15 @@ namespace Gedaq.Base.Batch
 
             foreach (var item in source.QueryBases())
             {
-                if (!item.query.HaveFromatParametrs())
+                if (!item.QueryBase.HaveFromatParametrs())
                 {
                     continue;
                 }
 
-                foreach (var format in item.query.FormatParametrs)
+                foreach (var format in item.QueryBase.FormatParametrs)
                 {
                     builder.Append($@",
-                {format.Name}Batch{item.number.ToString()}
+                {item.FormatName(format)}
 ");
                 }
             }
@@ -928,42 +906,42 @@ namespace Gedaq.Base.Batch
         }
 
         private void AddParametrs(
-            (int number, QueryBaseCommand query) item,
+            BatchPartBase item,
             StringBuilder builder
             )
         {
-            if (!item.query.HaveParametrs())
+            if (!item.QueryBase.HaveParametrs())
             {
                 return;
             }
 
-            foreach (var parametr in item.query.BaseParametrs())
+            foreach (var parametr in item.QueryBase.BaseParametrs())
             {
                 if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
                 {
                     builder.Append($@",
-            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}Batch{item.number}
+            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}Batch{item.Number}
                         ");
                 }
 
-                CommandParametrsHelper.WriteOutParametrs(parametr, builder, $"Batch{item.number}");
+                CommandParametrsHelper.AddOutParametrs(parametr, builder, $"Batch{item.Number}");
             }
         }
 
         private void AddFormatParametrs(
-            (int number, QueryBaseCommand query) item,
+            BatchPartBase item,
             StringBuilder builder
             )
         {
-            if (!item.query.HaveFromatParametrs())
+            if (!item.QueryBase.HaveFromatParametrs())
             {
                 return;
             }
 
-            foreach (var format in item.query.FormatParametrs)
+            foreach (var format in item.QueryBase.FormatParametrs)
             {
                 builder.Append($@",
-        System.String {format.Name}Batch{item.number.ToString()}
+        System.String {item.FormatName(format)}
 ");
             }
         }
@@ -976,7 +954,7 @@ namespace Gedaq.Base.Batch
             out string typeName
             )
         {
-            var first = source.QueryBases().First().query;
+            var first = source.QueryBases().First().QueryBase;
             if (first.Aliases.IsRowsAffected)
             {
                 if (source.QueryType != Enums.QueryType.NonQuery)

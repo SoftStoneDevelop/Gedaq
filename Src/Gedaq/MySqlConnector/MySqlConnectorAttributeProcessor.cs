@@ -17,34 +17,10 @@ namespace Gedaq.MySqlConnector
 {
     internal class MySqlConnectorAttributeProcessor : BaseAttributeProcessor
     {
-        private class BatchPair
-        {
-            public MySqlConnectorQueryBatch Batch { get; set; }
-            public List<BatchPart> Parts { get; } = new List<BatchPart>();
-
-            public bool IsEmpty()
-            {
-                return Batch == null && Parts.Count == 0;
-            }
-        }
-
-        private class ReadPair
-        {
-            public MySqlConnectorQuery Query { get; set; }
-            public List<MySqlConnectorParametr> Parametrs { get; } = new List<MySqlConnectorParametr>();
-
-            public List<FormatParametr> FormatParametrs { get; } = new List<FormatParametr>();
-
-            public bool IsEmpty()
-            {
-                return Query == null && Parametrs.Count == 0;
-            }
-        }
-
         private List<MySqlConnectorQuery> _read = new List<MySqlConnectorQuery>();
         private List<MySqlConnectorQueryBatch> _readBatch = new List<MySqlConnectorQueryBatch>();
 
-        private List<BatchPair> _batchPairTemp = new List<BatchPair>();
+        private List<BatchPair<MySqlConnectorQueryBatch>> _batchPairTemp = new List<BatchPair<MySqlConnectorQueryBatch>>();
         private Dictionary<string, MySqlConnectorQuery> _readContainsType = new Dictionary<string, MySqlConnectorQuery>();
 
         private QueryParser _queryParser = new QueryParser();
@@ -62,8 +38,8 @@ namespace Gedaq.MySqlConnector
                 var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
                 var parentAttributes = parentSymbol.GetAttributes();
 
-                var batchPair = new BatchPair();
-                var readTemp = new ReadPair();
+                var batchPair = new BatchPair<MySqlConnectorQueryBatch>();
+                var readTemp = new ReadPair<MySqlConnectorQuery, MySqlConnectorParametr>();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
                     cancellationToken.ThrowIfCancellationRequested();
@@ -105,7 +81,7 @@ namespace Gedaq.MySqlConnector
             FillBatches();
         }
 
-        private void TryAddBatchToTemp(BatchPair candidatePair)
+        private void TryAddBatchToTemp(BatchPair<MySqlConnectorQueryBatch> candidatePair)
         {
             if (candidatePair.IsEmpty())
             {
@@ -131,6 +107,8 @@ namespace Gedaq.MySqlConnector
             {
                 var set = new HashSet<int>();
                 MySqlConnectorQuery firstRead = null;
+
+                var queries = new List<BatchPart<MySqlConnectorQuery>>();
                 foreach (var part in batchPair.Parts.OrderBy(or => or.BatchNumber))
                 {
                     if (!set.Add(part.BatchNumber))
@@ -151,7 +129,13 @@ namespace Gedaq.MySqlConnector
                     batchPair.Batch.AllSameTypes &= SymbolEqualityComparer.Default.Equals(firstRead.MapTypeName, queryRead.MapTypeName);
                     batchPair.Batch.HaveParametrs |= queryRead.HaveParametrs();
                     batchPair.Batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
-                    batchPair.Batch.Queries.Add((part.BatchNumber, queryRead));
+                    queries.Add(new BatchPart<MySqlConnectorQuery>(queryRead, part.BatchNumber));
+                }
+
+                batchPair.Batch.Queries = queries.OrderBy(or => or.Number).ToArray();
+                for (int i = 0; i < batchPair.Batch.Queries.Length; i++)
+                {
+                    batchPair.Batch.Queries[i].Index = i;
                 }
 
                 _readBatch.Add(batchPair.Batch);
@@ -161,7 +145,7 @@ namespace Gedaq.MySqlConnector
             _readContainsType.Clear();
         }
 
-        private void TryAddReadMethod(ReadPair readPair)
+        private void TryAddReadMethod(ReadPair<MySqlConnectorQuery, MySqlConnectorParametr> readPair)
         {
             if (readPair.IsEmpty())
             {
@@ -170,6 +154,11 @@ namespace Gedaq.MySqlConnector
 
             var query = readPair.Query;
             query.Parametrs = readPair.Parametrs.ToArray();
+            for (int i = 0; i < query.Parametrs.Length; i++)
+            {
+                query.Parametrs[i].Index = i;
+            }
+
             AddFormatParametrs(query, readPair.FormatParametrs);
 
             if (query.QueryType == QueryType.NonQuery)
@@ -189,7 +178,7 @@ namespace Gedaq.MySqlConnector
             _readContainsType.Add(query.MethodName, query);
         }
 
-        private void ProcessBatch(AttributeData parametrAttribute, INamedTypeSymbol containsType, BatchPair currentPair)
+        private void ProcessBatch(AttributeData parametrAttribute, INamedTypeSymbol containsType, BatchPair<MySqlConnectorQueryBatch> currentPair)
         {
             if (!MySqlConnectorQueryBatch.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var queryBatch))
             {
@@ -204,7 +193,7 @@ namespace Gedaq.MySqlConnector
             currentPair.Batch = queryBatch;
         }
 
-        private void ProcessBatchPart(AttributeData parametrAttribute, INamedTypeSymbol containsType, BatchPair currentPair)
+        private void ProcessBatchPart(AttributeData parametrAttribute, INamedTypeSymbol containsType, BatchPair<MySqlConnectorQueryBatch> currentPair)
         {
             if (!BatchPart.CreateNew(parametrAttribute.ConstructorArguments, out var batchPart))
             {
@@ -214,7 +203,7 @@ namespace Gedaq.MySqlConnector
             currentPair.Parts.Add(batchPart);
         }
 
-        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ReadPair readPair)
+        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ReadPair<MySqlConnectorQuery, MySqlConnectorParametr> readPair)
         {
             if (!MySqlConnectorQuery.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
@@ -229,7 +218,7 @@ namespace Gedaq.MySqlConnector
             readPair.Query = queryReadMethod;
         }
 
-        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType, ReadPair readPair)
+        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType, ReadPair<MySqlConnectorQuery, MySqlConnectorParametr> readPair)
         {
             if (!MySqlConnectorParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
             {

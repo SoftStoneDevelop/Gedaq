@@ -2,7 +2,6 @@
 using Gedaq.Base.Batch;
 using Gedaq.Base.Model;
 using Gedaq.DbConnection.Helpers;
-using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using System.Text;
 
@@ -16,13 +15,12 @@ namespace Gedaq.DbConnection.GeneratorsBatch
         protected override void CreateFakeCommand(string sourceParametrName, StringBuilder builder)
         {
             builder.Append($@"
-            var fakeCommand = {sourceParametrName}.CreateCommand();
-");
+            var fakeCommand = {sourceParametrName}.CreateCommand();");
         }
 
-        protected override void CreateParametr(BaseParametr parametr, int index, StringBuilder builder)
+        protected override void CreateParametr(BaseParametr parametr, StringBuilder builder)
         {
-            DbGeneratorHelper.CreateParametr(parametr, index, builder, true);
+            DbGeneratorHelper.CreateParametr(parametr, builder, true);
         }
 
         protected override void DisposeFakeCommand(MethodType methodType, StringBuilder builder)
@@ -30,14 +28,12 @@ namespace Gedaq.DbConnection.GeneratorsBatch
             if (methodType == MethodType.Async)
             {
                 builder.Append($@"
-            await fakeCommand.DisposeAsync().ConfigureAwait(false);
-");
+            await fakeCommand.DisposeAsync().ConfigureAwait(false);");
             }
             else
             {
                 builder.Append($@"
-            fakeCommand.Dispose();
-");
+            fakeCommand.Dispose();");
             }
         }
     }

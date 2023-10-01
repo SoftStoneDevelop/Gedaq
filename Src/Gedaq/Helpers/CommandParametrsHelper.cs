@@ -7,7 +7,7 @@ namespace Gedaq.Helpers
 {
     internal static class CommandParametrsHelper
     {
-        public static void WriteOutParametrs(BaseParametr parametr, StringBuilder builder, string batchPostfix = "")
+        public static void AddOutParametrs(BaseParametr parametr, StringBuilder builder, string batchPostfix = "")
         {
             if (parametr.Direction == System.Data.ParameterDirection.InputOutput || parametr.Direction == System.Data.ParameterDirection.Output)
             {

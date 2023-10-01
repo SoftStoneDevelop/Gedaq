@@ -25,7 +25,7 @@ namespace Gedaq.Npgsql.Model
 
             return HaveNameInCommand ?
                     $"{NameInCommand}{postfix}" :
-                    $"mParametr{Position}{postfix}"
+                    $"mParametr{Index}{postfix}"
                 ;
         }
 
