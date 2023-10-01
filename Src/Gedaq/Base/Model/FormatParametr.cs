@@ -12,8 +12,6 @@ namespace Gedaq.Base.Model
         public string Name;
         public int Position;
 
-        public bool HaveName => !String.IsNullOrWhiteSpace(Name);
-
         internal static bool CreateNew(
             ImmutableArray<TypedConstant> namedArguments,
             INamedTypeSymbol containsType,
@@ -68,6 +66,21 @@ namespace Gedaq.Base.Model
 
             parametr.Position = (int)argument.Value;
             return true;
+        }
+
+        public void CalculateDatas(int index)
+        {
+            CalculateName(index);
+        }
+
+        private void CalculateName(int index)
+        {
+            if(Name != null)
+            {
+                return;
+            }
+
+            Name = $"format{index}";
         }
     }
 }

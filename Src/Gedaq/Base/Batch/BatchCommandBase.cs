@@ -340,11 +340,10 @@ namespace Gedaq.Base.Batch
 {item.query.Query}
 ""
 ");
-                int index = 0;
                 foreach (var format in item.query.FormatParametrs)
                 {
                     builder.Append($@",
-{(format.HaveName ? $"{format.Name}Batch{item.number}" : $"format{index++.ToString()}Batch{item.number}")}
+{format.Name}Batch{item.number}
 ");
                 }
 
@@ -380,11 +379,10 @@ namespace Gedaq.Base.Batch
                     continue;
                 }
 
-                int index = 0;
                 foreach (var format in item.query.FormatParametrs)
                 {
                     builder.Append($@",
-        System.String {(format.HaveName ? $"{format.Name}Batch{item.number.ToString()}" : $"format{index++.ToString()}Batch{item.number.ToString()}")}
+        System.String {format.Name}Batch{item.number.ToString()}
 ");
                 }
             }
@@ -903,11 +901,10 @@ namespace Gedaq.Base.Batch
                     continue;
                 }
 
-                int index = 0;
                 foreach (var format in item.query.FormatParametrs)
                 {
                     builder.Append($@",
-                {(format.HaveName ? $"{format.Name}Batch{item.number.ToString()}" : $"format{index++.ToString()}Batch{item.number.ToString()}")}
+                {format.Name}Batch{item.number.ToString()}
 ");
                 }
             }
@@ -963,11 +960,10 @@ namespace Gedaq.Base.Batch
                 return;
             }
 
-            int index = 0;
             foreach (var format in item.query.FormatParametrs)
             {
                 builder.Append($@",
-        System.String {(format.HaveName ? $"{format.Name}Batch{item.number.ToString()}" : $"format{index++.ToString()}Batch{item.number.ToString()}")}
+        System.String {format.Name}Batch{item.number.ToString()}
 ");
             }
         }

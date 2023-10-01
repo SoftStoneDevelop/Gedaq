@@ -136,11 +136,10 @@ namespace Gedaq.Base.Query
 {source.Query}
 ""
 ");
-                int index = 0;
                 foreach (var item in source.FormatParametrs)
                 {
                     builder.Append($@",
-{(item.HaveName ? item.Name : $"format{index++.ToString()}")}
+{item.Name}
 ");
                 }
                 builder.Append($@"
@@ -554,11 +553,10 @@ namespace Gedaq.Base.Query
                 return;
             }
 
-            int index = 0;
             foreach (var format in source.FormatParametrs)
             {
                 builder.Append($@",
-                {(format.HaveName ? format.Name : $"format{index++.ToString()}")}
+                {format.Name}
 ");
             }
         }
@@ -573,11 +571,10 @@ namespace Gedaq.Base.Query
                 return;
             }
 
-            int index = 0;
             foreach (var format in source.FormatParametrs)
             {
                 builder.Append($@",
-        System.String {(format.HaveName ? format.Name : $"format{index++.ToString()}")}
+        System.String {format.Name}
 ");
             }
         }

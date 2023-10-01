@@ -5,7 +5,6 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Metadata;
 using System.Threading;
 
 namespace Gedaq.Base
@@ -42,7 +41,6 @@ namespace Gedaq.Base
             var parametrs = formatParametrs.OrderBy(or => or.Position).ToList();
             read.FormatParametrs = new FormatParametr[parametrs.Count];
 
-            set.Clear();
             for (int i = 0; i < parametrs.Count; i++)
             {
                 var parametr = parametrs[i];
@@ -51,6 +49,7 @@ namespace Gedaq.Base
                     throw new Exception("Parametr position must be unique");
                 }
 
+                parametr.CalculateDatas(i);
                 read.FormatParametrs[i] = parametr;
             }
         }
