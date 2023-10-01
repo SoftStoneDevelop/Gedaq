@@ -49,17 +49,26 @@ namespace Gedaq.Base.Query
             }
         }
 
-        protected void CreateCommandMethod(
+        public void CreateCommandMethodDefinition(
             QueryBaseCommand source,
             string sourceTypeName,
             string sourceParametrName,
             MethodType methodType,
-            StringBuilder builder
+            StringBuilder builder,
+            bool forInterface = false
             )
         {
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+            var returnType = methodType == MethodType.Async ? $"{source.MethodInfo.AsyncResultType.ToResultType()}<{ProviderInfo.CommandType()}>" : ProviderInfo.CommandType();
+
             builder.Append($@"
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {(methodType == MethodType.Async ? $"async {source.MethodInfo.AsyncResultType.ToResultType()}<{ProviderInfo.CommandType()}>" : ProviderInfo.CommandType())} {CreateCommandMethodName(source, methodType)}(
+        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {CreateCommandMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
 ");
             AddFormatParametrs(source, builder);
@@ -76,6 +85,26 @@ namespace Gedaq.Base.Query
 
             builder.Append($@"
         )
+");
+        }
+
+        protected void CreateCommandMethod(
+            QueryBaseCommand source,
+            string sourceTypeName,
+            string sourceParametrName,
+            MethodType methodType,
+            StringBuilder builder
+            )
+        {
+            CreateCommandMethodDefinition(
+                source, 
+                sourceTypeName, 
+                sourceParametrName, 
+                methodType, 
+                builder
+                );
+
+            builder.Append($@"
         {{
             var command = {sourceParametrName}.CreateCommand();
 ");
@@ -180,16 +209,14 @@ namespace Gedaq.Base.Query
                 QueryCommonBase.ThrowExceptionIfOutCannotExist(source);
                 if (source.MethodType.HasFlag(MethodType.Sync))
                 {
-                    StartExecuteCommand(source, MethodType.Sync, builder);
-                    ExecuteCommand(source, MethodType.Sync, builder);
-                    EndMethod(builder);
+                    ExecuteCommandDefinition(source, MethodType.Sync, builder);
+                    ExecuteCommandBody(source, MethodType.Sync, builder);
                 }
 
                 if (source.MethodType.HasFlag(MethodType.Async))
                 {
-                    StartExecuteCommand(source, MethodType.Async, builder);
-                    ExecuteCommand(source, MethodType.Async, builder);
-                    EndMethod(builder);
+                    ExecuteCommandDefinition(source, MethodType.Async, builder);
+                    ExecuteCommandBody(source, MethodType.Async, builder);
                 }
             }
 
@@ -197,17 +224,15 @@ namespace Gedaq.Base.Query
             {
                 if (source.MethodType.HasFlag(MethodType.Sync))
                 {
-                    StartExecuteScalarCommand(source, MethodType.Sync, builder);
-                    ExecuteScalarCommand(source, MethodType.Sync, builder);
-                    EndMethod(builder);
+                    ExecuteScalarCommandDefinition(source, MethodType.Sync, builder);
+                    ExecuteScalarCommandBody(source, MethodType.Sync, builder);
                 }
 
                 if (source.MethodType.HasFlag(MethodType.Async))
                 {
                     QueryCommonBase.ThrowExceptionIfOutCannotExist(source);
-                    StartExecuteScalarCommand(source, MethodType.Async, builder);
-                    ExecuteScalarCommand(source, MethodType.Async, builder);
-                    EndMethod(builder);
+                    ExecuteScalarCommandDefinition(source, MethodType.Async, builder);
+                    ExecuteScalarCommandBody(source, MethodType.Async, builder);
                 }
             }
 
@@ -232,34 +257,40 @@ namespace Gedaq.Base.Query
             }
         }
 
-        protected void StartExecuteCommand(
+        public void ExecuteCommandDefinition(
             QueryBaseCommand source,
             MethodType methodType,
-            StringBuilder builder
+            StringBuilder builder,
+            bool forInterface = false
             )
         {
-            if (methodType == MethodType.Sync)
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var methodName = ExecuteCommandMethodName(source, methodType);
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+            var returnType = methodType == MethodType.Async ? $"IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}>" : $"IEnumerable<{source.MapTypeName.GetFullTypeName(true)}>";
+            builder.Append($@"
+        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {methodName}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command");
+
+            if (methodType == MethodType.Async)
             {
-                builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} IEnumerable<{source.MapTypeName.GetFullTypeName(true)}> {ExecuteCommandMethodName(source, methodType)}({source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command)
-        {{
-");
-            }
-            else
-            {
-                builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}> {ExecuteCommandMethodName(source, methodType)}(
-            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command,
-            [EnumeratorCancellation] CancellationToken cancellationToken = default
-            )
-        {{
+                var enumeratorCancellation = forInterface ? string.Empty : "[EnumeratorCancellation]";
+                builder.Append($@",
+            {enumeratorCancellation} CancellationToken cancellationToken = default
 ");
             }
 
-
+            builder.Append($@"
+            )");
         }
 
-        protected void ExecuteCommand(
+        protected void ExecuteCommandBody(
             QueryBaseCommand source,
             MethodType methodType,
             StringBuilder builder
@@ -270,6 +301,7 @@ namespace Gedaq.Base.Query
             var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
 
             builder.Append($@"
+        {{
             {ProviderInfo.ReaderType()} reader = null;
             try
             {{
@@ -305,6 +337,7 @@ namespace Gedaq.Base.Query
                     {await}reader.Dispose{disposeAsync};
                 }}
             }}
+        }}
 ");
         }
 
@@ -323,45 +356,48 @@ namespace Gedaq.Base.Query
             }
         }
 
-        protected void StartExecuteScalarCommand(
+        public void ExecuteScalarCommandDefinition(
             QueryBaseCommand source,
             MethodType methodType,
-            StringBuilder builder
+            StringBuilder builder,
+            bool forInterface = false
             )
         {
             GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
-            if (methodType == MethodType.Sync)
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+            var returnType = methodType == MethodType.Sync ? typeName : $"{source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}>";
+
+            builder.Append($@"        
+        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {ExecuteScalarCommandMethodName(source, methodType)}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command");
+            AddParametrs(source, builder, methodType == MethodType.Sync);
+
+            if (methodType == MethodType.Async)
             {
-                builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {typeName} {ExecuteScalarCommandMethodName(source, methodType)}(
-            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command
-");
-                AddParametrs(source, builder, true);
-                builder.Append($@"
-        )
-        {{
-");
-            }
-            else
-            {
-                builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async {source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}> {ExecuteScalarCommandMethodName(source, methodType)}(
-            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command
-");
-                AddParametrs(source, builder, false);
                 builder.Append($@",
-            CancellationToken cancellationToken = default
-            )
-        {{
-");
+            CancellationToken cancellationToken = default");
             }
+
+            builder.Append($@"
+            )
+");
         }
 
-        protected void ExecuteScalarCommand(QueryBaseCommand source, MethodType methodType, StringBuilder builder)
+        protected void ExecuteScalarCommandBody(QueryBaseCommand source, MethodType methodType, StringBuilder builder)
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             GetScalarType(source, ProviderInfo, out var typeSymbol, out var isRowAffected, out var typeName);
+            builder.Append($@"
+        {{
+");
+
             if (isRowAffected || (!typeSymbol.IsNullableType() && !typeSymbol.IsReferenceType))
             {
                 builder.Append($@"
@@ -391,6 +427,7 @@ namespace Gedaq.Base.Query
 
             builder.Append($@"
             return result;
+        }}
 ");
         }
 
@@ -399,32 +436,41 @@ namespace Gedaq.Base.Query
             return $"Set{source.MethodName}Parametrs";
         }
 
+        public void SetParametrsMethodDefinition(
+            QueryBaseCommand source,
+            StringBuilder builder,
+            bool forInterface = false
+            )
+        {
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+
+            builder.Append($@"
+        {accessModifier} {staticModifier} void {SetParametrsMethodName(source)}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command");
+
+            AddParametrs(source, builder, false);
+
+            builder.Append($@",
+            int? timeout = null");
+
+            if (ProviderInfo.CanSetTransaction)
+            {
+                builder.Append($@",
+            {ProviderInfo.TransactionType()} transaction = null");
+            }
+
+            builder.Append($@"
+            )");
+        }
+
         protected void SetParametrsMethod(
             QueryBaseCommand source,
             StringBuilder builder
             )
         {
+            SetParametrsMethodDefinition(source, builder);
             builder.Append($@"
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} void {SetParametrsMethodName(source)}(
-            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command
-");
-            AddParametrs(source, builder, false);
-
-            builder.Append($@",
-            int? timeout = null
-
-            ");
-
-            if (ProviderInfo.CanSetTransaction)
-            {
-                builder.Append($@",
-            {ProviderInfo.TransactionType()} transaction = null
-");
-            }
-
-            builder.Append($@"
-        )
         {{
 
             if(timeout.HasValue)
@@ -494,13 +540,6 @@ namespace Gedaq.Base.Query
         }}
 ");
 
-        }
-
-        protected void EndMethod(StringBuilder builder)
-        {
-            builder.Append($@"
-        }}
-");
         }
 
         public void CreateCommand(
