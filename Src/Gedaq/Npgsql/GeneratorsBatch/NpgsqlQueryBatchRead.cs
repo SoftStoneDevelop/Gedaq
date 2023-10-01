@@ -33,7 +33,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     );
                 ReadMethodBody(
                     source,
-                    true,
+                    needCheckOpen: true,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                     MethodType.Sync,
                     builder
@@ -51,7 +51,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     );
                 ReadMethodBody(
                     source,
-                    true,
+                    needCheckOpen: false,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                     MethodType.Sync,
                     builder
@@ -73,7 +73,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     );
                 ReadMethodBody(
                     source,
-                    true,
+                    needCheckOpen: true,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                     MethodType.Async,
                     builder
@@ -91,7 +91,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     );
                 ReadMethodBody(
                     source,
-                    true,
+                    needCheckOpen: false,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                     MethodType.Async,
                     builder

@@ -40,8 +40,8 @@ namespace Gedaq.Base.Batch
                 ProviderInfo.DefaultSourceTypeParametr()
                 );
             ReadMethodBody(
-                source, 
-                true, 
+                source,
+                needCheckOpen: true, 
                 ProviderInfo.DefaultSourceTypeParametr(), 
                 MethodType.Sync, 
                 builder
@@ -58,8 +58,8 @@ namespace Gedaq.Base.Batch
                 ProviderInfo.DefaultSourceTypeParametr()
                 );
             ReadMethodBody(
-                source, 
-                true, 
+                source,
+                needCheckOpen: true, 
                 ProviderInfo.DefaultSourceTypeParametr(), 
                 MethodType.Async, 
                 builder

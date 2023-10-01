@@ -34,7 +34,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                     );
                 ReadMethodBody(
                     source,
-                    true,
+                    needCheckOpen: true,
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                     MethodType.Sync,
                     builder
@@ -52,7 +52,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                     );
                 ReadMethodBody(
                     source,
-                    true,
+                    needCheckOpen: false,
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                     MethodType.Sync,
                     builder
@@ -74,7 +74,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                     );
                 ReadMethodBody(
                     source,
-                    true,
+                    needCheckOpen: true,
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                     MethodType.Async,
                     builder
@@ -92,7 +92,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                     );
                 ReadMethodBody(
                     source,
-                    true,
+                    needCheckOpen: false,
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                     MethodType.Async,
                     builder

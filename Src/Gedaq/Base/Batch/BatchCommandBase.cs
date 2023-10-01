@@ -927,8 +927,7 @@ namespace Gedaq.Base.Batch
                 if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
                 {
                     builder.Append($@",
-            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}Batch{item.Number}
-                        ");
+            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}Batch{item.Number}");
                 }
 
                 CommandParametrsHelper.AddOutParametrs(parametr, builder, $"Batch{item.Number}");
@@ -948,8 +947,7 @@ namespace Gedaq.Base.Batch
             foreach (var format in item.QueryBase.FormatParametrs)
             {
                 builder.Append($@",
-        System.String {item.FormatName(format)}
-");
+        System.String {item.FormatName(format)}");
             }
         }
 

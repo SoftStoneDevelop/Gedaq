@@ -33,7 +33,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: true,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                     MethodType.Sync,
                     QueryType.Scalar,
@@ -52,7 +52,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: false,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                     MethodType.Sync,
                     QueryType.Scalar,
@@ -75,7 +75,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: true,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                     MethodType.Async,
                     QueryType.Scalar,
@@ -94,7 +94,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: false,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                     MethodType.Async,
                     QueryType.Scalar,
@@ -117,7 +117,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: true,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                     MethodType.Sync,
                     QueryType.NonQuery,
@@ -136,7 +136,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: false,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                     MethodType.Sync,
                     QueryType.NonQuery,
@@ -159,7 +159,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: true,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                     MethodType.Async,
                     QueryType.NonQuery,
@@ -178,7 +178,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: false,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                     MethodType.Async,
                     QueryType.NonQuery,

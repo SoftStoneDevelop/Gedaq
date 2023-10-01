@@ -34,7 +34,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: true,
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                     MethodType.Sync,
                     QueryType.Scalar,
@@ -53,7 +53,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: false,
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                     MethodType.Sync,
                     QueryType.Scalar,
@@ -76,7 +76,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: true,
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                     MethodType.Async,
                     QueryType.Scalar,
@@ -95,7 +95,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: false,
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                     MethodType.Async,
                     QueryType.Scalar,
@@ -118,7 +118,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: true,
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                     MethodType.Sync,
                     QueryType.NonQuery,
@@ -137,7 +137,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: false,
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                     MethodType.Sync,
                     QueryType.NonQuery,
@@ -160,7 +160,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: true,
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                     MethodType.Sync,
                     QueryType.NonQuery,
@@ -179,7 +179,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                     );
                 MethodBody(
                     source,
-                    true,
+                    needCheckOpen: false,
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                     MethodType.Async,
                     QueryType.NonQuery,

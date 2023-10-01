@@ -53,8 +53,8 @@ namespace Gedaq.Base.Batch
                 builder
                 );
             MethodBody(
-                source, 
-                true, 
+                source,
+                needCheckOpen: true, 
                 ProviderInfo.DefaultSourceTypeParametr(), 
                 MethodType.Sync, 
                 QueryType.Scalar, 
@@ -73,7 +73,7 @@ namespace Gedaq.Base.Batch
                 );
             MethodBody(
                 source,
-                true,
+                needCheckOpen: true,
                 ProviderInfo.DefaultSourceTypeParametr(),
                 MethodType.Async,
                 QueryType.Scalar,
@@ -92,7 +92,7 @@ namespace Gedaq.Base.Batch
                 );
             MethodBody(
                 source,
-                true,
+                needCheckOpen: true,
                 ProviderInfo.DefaultSourceTypeParametr(),
                 MethodType.Sync,
                 QueryType.NonQuery,
@@ -111,7 +111,7 @@ namespace Gedaq.Base.Batch
                 );
             MethodBody(
                 source,
-                true,
+                needCheckOpen: true,
                 ProviderInfo.DefaultSourceTypeParametr(),
                 MethodType.Async,
                 QueryType.NonQuery,
