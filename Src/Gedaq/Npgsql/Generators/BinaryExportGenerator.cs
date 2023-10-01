@@ -39,7 +39,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 
-namespace {binaryExport.ContainTypeName.ContainingNamespace}
+namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 {{
     {GeneratedClassDeclarationHelper.GCDeclarationName(binaryExport.ContainTypeName, binaryExport.MethodInfo, "Npgsql")}
     {{
