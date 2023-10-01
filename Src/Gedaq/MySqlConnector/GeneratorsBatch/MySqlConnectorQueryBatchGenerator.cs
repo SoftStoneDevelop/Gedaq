@@ -2,15 +2,22 @@
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.MySqlConnector.Model;
-using Gedaq.Npgsql.Model;
 
 namespace Gedaq.MySqlConnector.GeneratorsBatch
 {
     internal class MySqlConnectorQueryBatchGenerator : BaseGenerator
     {
-        MySqlConnectorQueryBatchRead _batchRead = new MySqlConnectorQueryBatchRead();
-        MySqlConnectorQueryBatchScalarNoQuery _batchScalarNoQuery = new MySqlConnectorQueryBatchScalarNoQuery();
-        MySqlConnectorBatchCommand _batchCommand = new MySqlConnectorBatchCommand();
+        private readonly MySqlConnectorBatchCommand _batchCommand;
+        private readonly MySqlConnectorQueryBatchRead _batchRead;
+        private readonly MySqlConnectorQueryBatchScalarNoQuery _batchScalarNoQuery;
+
+        public MySqlConnectorQueryBatchGenerator()
+        {
+            _batchCommand = new MySqlConnectorBatchCommand();
+            _batchRead = new MySqlConnectorQueryBatchRead(_batchCommand);
+            _batchScalarNoQuery = new MySqlConnectorQueryBatchScalarNoQuery(_batchCommand);
+        }
+
 
         public void GenerateMethod(MySqlConnectorQueryBatch source)
         {

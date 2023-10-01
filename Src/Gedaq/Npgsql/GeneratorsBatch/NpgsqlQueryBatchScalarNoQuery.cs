@@ -11,6 +11,12 @@ namespace Gedaq.Npgsql.GeneratorsBatch
     internal class NpgsqlQueryBatchScalarNoQuery : QueryBatchScalarNoQueryBase
     {
         NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
+
+        public NpgsqlQueryBatchScalarNoQuery(NpgsqlBatchCommand commandGenerator) : base(commandGenerator)
+        {
+
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void ScalarMethod(QueryBatchCommand source, StringBuilder builder)

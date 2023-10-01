@@ -1,7 +1,6 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Batch;
 using Gedaq.Base.Model;
-using Gedaq.DbConnection;
 using Gedaq.Enums;
 using Gedaq.MySqlConnector.Enums;
 using Gedaq.MySqlConnector.Helpers;
@@ -13,6 +12,12 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
     internal class MySqlConnectorQueryBatchRead : QueryBatchReadBase
     {
         MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
+
+        public MySqlConnectorQueryBatchRead(MySqlConnectorBatchCommand commandGenerator) : base(commandGenerator)
+        {
+
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void ReadMethod(QueryBatchCommand source, StringBuilder builder)

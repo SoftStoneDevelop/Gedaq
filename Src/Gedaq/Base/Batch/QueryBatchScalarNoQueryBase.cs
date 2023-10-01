@@ -1,16 +1,20 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Model;
 using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace Gedaq.Base.Batch
 {
     internal abstract class QueryBatchScalarNoQueryBase
     {
+        private readonly BatchCommandBase _commandGenerator;
+
+        public QueryBatchScalarNoQueryBase(BatchCommandBase commandGenerator)
+        {
+            _commandGenerator = commandGenerator;
+        }
+
         protected abstract ProviderInfo ProviderInfo { get; }
 
         public void GenerateScalar(QueryBatchCommand source, StringBuilder builder)
@@ -81,7 +85,7 @@ namespace Gedaq.Base.Batch
             StringBuilder builder
             )
         {
-            BatchCommonBase.GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
+            _commandGenerator.GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"
@@ -127,7 +131,7 @@ namespace Gedaq.Base.Batch
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
 ");
 
-            BatchCommonBase.WriteMethodParametrs(source, builder);
+            _commandGenerator.AddMethodParametrs(source, builder);
         }
 
         protected void EndMethod(StringBuilder builder)
@@ -192,14 +196,14 @@ namespace Gedaq.Base.Batch
             {{
                 batch =
 ");
-            BatchCommonBase.CreateCommand(source, sourceParametrName, methodType, builder);
+            _commandGenerator.CreateCommand(source, sourceParametrName, methodType, builder);
 
             builder.Append($@"
                 ;
 ");
-            BatchCommonBase.WriteSetParametrs(source, builder, ProviderInfo);
+            _commandGenerator.WriteSetParametrs(source, builder, ProviderInfo);
 
-            BatchCommonBase.GetScalarType(source, ProviderInfo, out var typeSymbol, out var isRowAffected, out var typeName);
+            _commandGenerator.GetScalarType(source, ProviderInfo, out var typeSymbol, out var isRowAffected, out var typeName);
             if (queryType == QueryType.Scalar)
             {
                 if (isRowAffected || (!typeSymbol.IsNullableType() && !typeSymbol.IsReferenceType))
@@ -233,7 +237,7 @@ namespace Gedaq.Base.Batch
 
             if (source.HaveParametrs)
             {
-                BatchCommonBase.SetOutAndReturnParametrs(source, builder, ProviderInfo);
+                _commandGenerator.SetOutAndReturnParametrs(source, builder, ProviderInfo);
             }
 
             builder.Append($@"

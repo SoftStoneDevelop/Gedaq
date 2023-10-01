@@ -1,16 +1,20 @@
-﻿using Gedaq.Base.Batch;
-using Gedaq.Base.Model;
-using Gedaq.DbConnection.GeneratorsQuery;
+﻿using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace Gedaq.Base.Query
 {
     internal abstract class QueryScalarNonQueryBase
     {
+        private readonly CommandGeneratorBase _commandGenerator;
+
+        public QueryScalarNonQueryBase(CommandGeneratorBase commandGenerator)
+        {
+            _commandGenerator = commandGenerator;
+        }
+
         protected abstract ProviderInfo ProviderInfo { get; }
 
         public void ScalarGenerate(QueryBaseCommand source, StringBuilder builder)
@@ -148,7 +152,7 @@ namespace Gedaq.Base.Query
             StringBuilder builder
             )
         {
-            QueryCommonBase.GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
+            _commandGenerator.GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
             if (methodType == MethodType.Sync)
             {
                 builder.Append($@"        
@@ -174,8 +178,8 @@ namespace Gedaq.Base.Query
             builder.Append($@"
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
 ");
-            QueryCommonBase.AddParametrs(source, builder, useInAndOut);
-            QueryCommonBase.AddFormatParametrs(source, builder);
+            _commandGenerator.AddParametrs(source, builder, useInAndOut);
+            _commandGenerator.AddFormatParametrs(source, builder);
         }
 
         protected void EndMethodParametrs(StringBuilder builder, MethodType methodType)
@@ -240,28 +244,28 @@ namespace Gedaq.Base.Query
             {{
                 command =
 ");
-            QueryCommonBase.CreateCommand(source, sourceParametrName, methodType, builder);
+            _commandGenerator.CreateCommand(source, sourceParametrName, methodType, builder);
 
             if(source.ContainTypeName.GCIsStatic())
             {
                 builder.Append($@"
                 ;
-                command.Set{source.MethodName}Parametrs(
+                command.{_commandGenerator.SetParametrsMethodName(source)}(
 ");
             }
             else
             {
                 builder.Append($@"
                 ;
-                Set{source.MethodName}Parametrs(
+                {_commandGenerator.SetParametrsMethodName(source)}(
                     command
 ");
             }
-            QueryCommonBase.WriteSetParametrs(source, builder, ProviderInfo);
+            _commandGenerator.WriteSetParametrs(source, builder, ProviderInfo);
             builder.Append($@"
                     );
 ");
-            QueryCommonBase.GetScalarType(source, ProviderInfo, out var typeSymbol, out var isRowAffected, out var typeName);
+            _commandGenerator.GetScalarType(source, ProviderInfo, out var typeSymbol, out var isRowAffected, out var typeName);
             if (queryType == QueryType.Scalar)
             {
                 if (isRowAffected || (!typeSymbol.IsNullableType() && !typeSymbol.IsReferenceType))
@@ -295,7 +299,7 @@ namespace Gedaq.Base.Query
 
             if (source.HaveParametrs())
             {
-                QueryCommonBase.SetOutAndReturnParametrs(source, builder, ProviderInfo);
+                _commandGenerator.SetOutAndReturnParametrs(source, builder, ProviderInfo);
             }
 
             builder.Append($@"

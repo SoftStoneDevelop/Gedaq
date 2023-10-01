@@ -13,6 +13,12 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
     internal class MySqlConnectorQueryScalarAndNonQuery : QueryScalarNonQueryBase
     {
         private readonly MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
+
+        public MySqlConnectorQueryScalarAndNonQuery(MySqlConnectorCommand commandGenerator) : base(commandGenerator)
+        {
+
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void NonQueryMethod(QueryBaseCommand source, StringBuilder builder)

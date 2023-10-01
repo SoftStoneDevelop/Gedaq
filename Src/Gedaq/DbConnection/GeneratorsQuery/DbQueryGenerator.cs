@@ -7,9 +7,16 @@ namespace Gedaq.DbConnection.GeneratorsQuery
 {
     internal class DbQueryGenerator : BaseGenerator
     {
-        DbQueryRead _queryReadGenerator = new DbQueryRead();
-        DbQueryScalarAndNonQuery _queryScalarAndNonQuery = new DbQueryScalarAndNonQuery();
-        DbCommandGenerator _commandGenerator = new DbCommandGenerator();
+        private readonly DbCommandGenerator _commandGenerator;
+        private readonly DbQueryRead _queryReadGenerator;
+        private readonly DbQueryScalarAndNonQuery _queryScalarAndNonQuery;
+
+        public DbQueryGenerator() 
+        {
+            _commandGenerator = new DbCommandGenerator();
+            _queryReadGenerator = new DbQueryRead(_commandGenerator);
+            _queryScalarAndNonQuery = new DbQueryScalarAndNonQuery(_commandGenerator);
+        }
 
         public void Generate(DbQuery source)
         {

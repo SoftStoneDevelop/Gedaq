@@ -2,7 +2,6 @@
 using Gedaq.Base.Batch;
 using Gedaq.Base.Model;
 using Gedaq.Enums;
-using Gedaq.MySqlConnector;
 using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
 using System.Text;
@@ -12,6 +11,12 @@ namespace Gedaq.Npgsql.GeneratorsBatch
     internal class NpgsqlQueryBatchRead : QueryBatchReadBase
     {
         NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
+
+        public NpgsqlQueryBatchRead(NpgsqlBatchCommand commandGenerator) : base(commandGenerator)
+        {
+
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void ReadMethod(QueryBatchCommand source, StringBuilder builder)

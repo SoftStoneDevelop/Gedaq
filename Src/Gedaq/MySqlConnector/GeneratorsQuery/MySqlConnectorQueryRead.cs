@@ -1,6 +1,7 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Model;
 using Gedaq.Base.Query;
+using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.MySqlConnector.Enums;
 using Gedaq.MySqlConnector.Helpers;
@@ -12,6 +13,12 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
     internal class MySqlConnectorQueryRead : QueryReadBase
     {
         private readonly MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
+
+        public MySqlConnectorQueryRead(MySqlConnectorCommand commandGenerator) : base(commandGenerator)
+        {
+
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void ReadMethod(QueryBaseCommand source, StringBuilder builder)

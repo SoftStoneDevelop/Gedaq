@@ -2,6 +2,7 @@
 using Gedaq.Base.Model;
 using Gedaq.Base.Query;
 using Gedaq.Enums;
+using Gedaq.MySqlConnector.GeneratorsQuery;
 using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
 using System.Text;
@@ -11,6 +12,12 @@ namespace Gedaq.Npgsql.GeneratorsQuery
     internal class NpgsqlQueryRead : QueryReadBase
     {
         private readonly NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
+
+        public NpgsqlQueryRead(NpgsqlCommand commandGenerator) : base(commandGenerator)
+        {
+
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void ReadMethod(QueryBaseCommand source, StringBuilder builder)

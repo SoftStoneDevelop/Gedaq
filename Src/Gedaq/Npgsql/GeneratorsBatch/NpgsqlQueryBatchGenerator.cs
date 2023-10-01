@@ -7,9 +7,16 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 {
     internal class NpgsqlQueryBatchGenerator : BaseGenerator
     {
-        NpgsqlQueryBatchRead _batchRead = new NpgsqlQueryBatchRead();
-        NpgsqlQueryBatchScalarNoQuery _batchScalarNoQuery = new NpgsqlQueryBatchScalarNoQuery();
-        NpgsqlBatchCommand _batchCommand = new NpgsqlBatchCommand();
+        private readonly NpgsqlBatchCommand _batchCommand;
+        private readonly NpgsqlQueryBatchRead _batchRead;
+        private readonly NpgsqlQueryBatchScalarNoQuery _batchScalarNoQuery;
+
+        public NpgsqlQueryBatchGenerator()
+        {
+            _batchCommand = new NpgsqlBatchCommand();
+            _batchRead = new NpgsqlQueryBatchRead(_batchCommand);
+            _batchScalarNoQuery = new NpgsqlQueryBatchScalarNoQuery(_batchCommand);
+        }
 
         public void GenerateMethod(NpgsqlQueryBatch source)
         {

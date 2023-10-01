@@ -1,24 +1,22 @@
 ﻿using Gedaq.Base;
-using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Enums;
-using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
-using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 
 namespace Gedaq.Npgsql.GeneratorsQuery
 {
     internal class NpgsqlQueryGenerator : BaseGenerator
     {
-        NpgsqlQueryRead _queryReadGenerator = new NpgsqlQueryRead();
-        NpgsqlQueryScalarAndNonQuery _queryScalarAndNonQuery = new NpgsqlQueryScalarAndNonQuery();
-        NpgsqlCommand _commandGenerator = new NpgsqlCommand();
+        private readonly NpgsqlQueryRead _queryReadGenerator;
+        private readonly NpgsqlQueryScalarAndNonQuery _queryScalarAndNonQuery;
+        private readonly NpgsqlCommand _commandGenerator;
+
+        public NpgsqlQueryGenerator()
+        {
+            _commandGenerator = new NpgsqlCommand();
+            _queryReadGenerator = new NpgsqlQueryRead(_commandGenerator);
+            _queryScalarAndNonQuery = new NpgsqlQueryScalarAndNonQuery(_commandGenerator);
+        }
 
         public void GenerateMethod(NpgsqlQuery source)
         {

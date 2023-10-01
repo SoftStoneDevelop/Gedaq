@@ -7,9 +7,16 @@ namespace Gedaq.DbConnection.GeneratorsBatch
 {
     internal class DbQueryBatchGenerator : BaseGenerator
     {
-        DbQueryBatchRead _batchRead = new DbQueryBatchRead();
-        DbQueryBatchScalarNoQuery _batchScalarNoQuery = new DbQueryBatchScalarNoQuery();
-        DbBatchCommand _batchCommand = new DbBatchCommand();
+        private readonly DbBatchCommand _batchCommand = new DbBatchCommand();
+        private readonly DbQueryBatchRead _batchRead;
+        private readonly DbQueryBatchScalarNoQuery _batchScalarNoQuery;
+
+        public DbQueryBatchGenerator()
+        {
+            _batchCommand = new DbBatchCommand();
+            _batchRead = new DbQueryBatchRead(_batchCommand);
+            _batchScalarNoQuery = new DbQueryBatchScalarNoQuery(_batchCommand);
+        }
 
         public void Generate(DbQueryBatch source)
         {

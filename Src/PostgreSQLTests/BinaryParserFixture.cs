@@ -1,9 +1,59 @@
-﻿using Gedaq.Npgsql.Parser;
+﻿using Gedaq.Common.Enums;
+using Gedaq.Npgsql.Enums;
+using Gedaq.Npgsql.Parser;
 using NUnit.Framework;
 using System;
 
 namespace Tests
 {
+    public partial interface ISuperInterface
+    {
+
+    }
+
+    public partial class SuperClass
+    {
+        [Gedaq.Npgsql.Attributes.Query(
+            query:
+@"
+SELECT
+    m.id,
+    m.value,
+~StartInner::ModelInner:Id~
+    mi.id,
+    mi.value,
+    mi.nullablevalue,
+~EndInner::ModelInner~
+    m.nullablevalue
+FROM public.bigintegernumeric0m m
+LEFT JOIN public.bigintegernumeric0mi mi ON mi.id = m.bigintegernumeric0mi_id
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+"
+,
+            methodName: "SelectModel",
+            queryMapType: typeof(BigIntegernumeric0M),
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Private,
+            asPartInterface: typeof(ISuperInterface)
+            ),
+Gedaq.Npgsql.Attributes.Parametr(
+            parametrType: typeof(System.Int32),
+            position: 1,
+            methodParametrName: "id",
+            dbType: (NpgsqlTypes.NpgsqlDbType)(9)
+                )
+            ]
+        private void SelectModelConfig()
+        {
+        }
+    }
+
     [TestFixture]
     [Parallelizable(ParallelScope.All)]
     internal partial class BinaryParserFixture

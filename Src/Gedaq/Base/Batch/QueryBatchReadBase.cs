@@ -8,6 +8,13 @@ namespace Gedaq.Base.Batch
 {
     internal abstract class QueryBatchReadBase
     {
+        private readonly BatchCommandBase _commandGenerator;
+
+        public QueryBatchReadBase(BatchCommandBase commandGenerator)
+        {
+            _commandGenerator = commandGenerator;
+        }
+
         protected abstract ProviderInfo ProviderInfo { get; }
 
         public void Generate(QueryBatchCommand source, StringBuilder builder)
@@ -72,7 +79,7 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
 ");
-            BatchCommonBase.WriteMethodParametrs(source, builder);
+            _commandGenerator.AddMethodParametrs(source, builder);
         }
 
         protected void ReadMethodBody(
@@ -105,13 +112,13 @@ namespace Gedaq.Base.Batch
             {{
                 batch = 
 ");
-            BatchCommonBase.CreateCommand(source, sourceParametrName, methodType, builder);
+            _commandGenerator.CreateCommand(source, sourceParametrName, methodType, builder);
 
             builder.Append($@"
                 ;
 ");
 
-            BatchCommonBase.WriteSetParametrs(source, builder, ProviderInfo);
+            _commandGenerator.WriteSetParametrs(source, builder, ProviderInfo);
 
             builder.Append($@"
                 reader = {await}batch.ExecuteReader{async};
@@ -121,7 +128,7 @@ namespace Gedaq.Base.Batch
             {
                 ++index;
                 builder.Append($@"
-                yield return BatchItem{index}{(methodType == MethodType.Async ? "Async(reader, cancellationToken)" : "(reader)")};
+                yield return {_commandGenerator.BatchItemMethodName(index, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
                 {await}reader.NextResult{async};
 ");
             }

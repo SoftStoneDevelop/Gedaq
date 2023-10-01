@@ -17,6 +17,12 @@ namespace Gedaq.Npgsql.GeneratorsQuery
     internal class NpgsqlQueryScalarAndNonQuery : QueryScalarNonQueryBase
     {
         private readonly NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
+
+        public NpgsqlQueryScalarAndNonQuery(NpgsqlCommand commandGenerator) : base(commandGenerator)
+        {
+
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void NonQueryMethod(QueryBaseCommand source, StringBuilder builder)

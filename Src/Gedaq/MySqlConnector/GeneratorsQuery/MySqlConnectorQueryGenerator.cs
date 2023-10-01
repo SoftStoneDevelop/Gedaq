@@ -7,9 +7,16 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
 {
     internal class MySqlConnectorQueryGenerator : BaseGenerator
     {
-        MySqlConnectorQueryRead _queryReadGenerator = new MySqlConnectorQueryRead();
-        MySqlConnectorQueryScalarAndNonQuery _queryScalarAndNonQuery = new MySqlConnectorQueryScalarAndNonQuery();
-        MySqlConnectorCommand _commandGenerator = new MySqlConnectorCommand();
+        private readonly MySqlConnectorCommand _commandGenerator;
+        private readonly MySqlConnectorQueryRead _queryReadGenerator;
+        private readonly MySqlConnectorQueryScalarAndNonQuery _queryScalarAndNonQuery;
+
+        public MySqlConnectorQueryGenerator()
+        {
+            _commandGenerator = new MySqlConnectorCommand();
+            _queryReadGenerator = new MySqlConnectorQueryRead(_commandGenerator);
+            _queryScalarAndNonQuery = new MySqlConnectorQueryScalarAndNonQuery(_commandGenerator);
+        }
 
         public void GenerateMethod(MySqlConnectorQuery source)
         {

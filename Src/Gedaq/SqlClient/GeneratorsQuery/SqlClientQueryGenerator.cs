@@ -9,9 +9,16 @@ namespace Gedaq.SqlClient.GeneratorsQuery
 {
     internal class SqlClientQueryGenerator : BaseGenerator
     {
-        SqlClientQueryRead _queryReadGenerator = new SqlClientQueryRead();
-        SqlClientQueryScalarAndNonQuery _queryScalarAndNonQuery = new SqlClientQueryScalarAndNonQuery();
-        SqlClientCommandGenerator _commandGenerator = new SqlClientCommandGenerator();
+        private readonly SqlClientCommandGenerator _commandGenerator;
+        private readonly SqlClientQueryRead _queryReadGenerator;
+        private readonly SqlClientQueryScalarAndNonQuery _queryScalarAndNonQuery;
+
+        public SqlClientQueryGenerator()
+        {
+            _commandGenerator = new SqlClientCommandGenerator();
+            _queryReadGenerator = new SqlClientQueryRead(_commandGenerator);
+            _queryScalarAndNonQuery = new SqlClientQueryScalarAndNonQuery(_commandGenerator);
+        }
 
         public void Generate(SqlClientQuery source)
         {

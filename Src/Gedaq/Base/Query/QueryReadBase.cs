@@ -1,5 +1,4 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.DbConnection.GeneratorsBatch;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using System.Text;
@@ -8,6 +7,13 @@ namespace Gedaq.Base.Query
 {
     internal abstract class QueryReadBase
     {
+        private readonly CommandGeneratorBase _commandGenerator;
+
+        public QueryReadBase(CommandGeneratorBase commandGenerator)
+        {
+            _commandGenerator = commandGenerator;
+        }
+
         protected abstract ProviderInfo ProviderInfo { get; }
 
         public void Generate(QueryBaseCommand source, StringBuilder builder)
@@ -83,8 +89,8 @@ namespace Gedaq.Base.Query
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
 ");
 
-            QueryCommonBase.AddParametrs(source, builder, false);
-            QueryCommonBase.AddFormatParametrs(source, builder);
+            _commandGenerator.AddParametrs(source, builder, false);
+            _commandGenerator.AddFormatParametrs(source, builder);
         }
 
         protected static void EndMethod(StringBuilder builder)
@@ -149,24 +155,24 @@ namespace Gedaq.Base.Query
             {{
                 command =
 ");
-            QueryCommonBase.CreateCommand(source, sourceParametrName, methodType, builder);
+            _commandGenerator.CreateCommand(source, sourceParametrName, methodType, builder);
 
             if(source.ContainTypeName.GCIsStatic())
             {
                 builder.Append($@"
                 ;
-                command.Set{source.MethodName}Parametrs(
+                command.{_commandGenerator.SetParametrsMethodName(source)}(
 ");
             }
             else
             {
                 builder.Append($@"
                 ;
-                Set{source.MethodName}Parametrs(
+                {_commandGenerator.SetParametrsMethodName(source)}(
                     command
 ");
             }
-            QueryCommonBase.WriteSetParametrs(source, builder, ProviderInfo);
+            _commandGenerator.WriteSetParametrs(source, builder, ProviderInfo);
             builder.Append($@"
                     );
 ");
