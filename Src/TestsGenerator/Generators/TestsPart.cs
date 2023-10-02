@@ -52,33 +52,67 @@ namespace TestsGenerator.Generators
                 );
             EndRegion();
 
-            SpecialDatabaseTests(model, database, storage);
+            SpecialDatabaseTests(
+                model, 
+                database, 
+                storage,
+                interfaceTypeName
+                );
 
             End();
 
             await File.WriteAllTextAsync($"{destinationFolder}/TestsParts/{model.ClassName}Tests.cs", _stringBuilder.ToString());
         }
 
-        private void SpecialDatabaseTests(Model.ModelType model, Database database, ModelValueStorage storage)
+        private void SpecialDatabaseTests(
+            Model.ModelType model, 
+            Database database, 
+            ModelValueStorage storage,
+            string interfaceTypeName
+            )
         {
             switch (database)
             {
                 case Database.PostgreSQL:
                 {
                     StartRegion("BinaryImportModelInner");
-                    BinaryImportModelInnerTest.Generate(0, _stringBuilder, model, storage);
+                    BinaryImportModelInnerTest.Generate(
+                        0, 
+                        _stringBuilder, 
+                        model, 
+                        storage,
+                        interfaceTypeName
+                        );
                     EndRegion();
 
                     StartRegion("BinaryImportModel");
-                    BinaryImportModelTest.Generate(1, _stringBuilder, model, storage);
+                    BinaryImportModelTest.Generate(
+                        1, 
+                        _stringBuilder, 
+                        model, 
+                        storage,
+                        interfaceTypeName
+                        );
                     EndRegion();
 
                     StartRegion("BinaryExportModel");
-                    BinaryExportModelTest.Generate(2, _stringBuilder, model, storage);
+                    BinaryExportModelTest.Generate(
+                        2, 
+                        _stringBuilder, 
+                        model, 
+                        storage,
+                        interfaceTypeName
+                        );
                     EndRegion();
 
                     StartRegion("BinaryExportModelInner");
-                    BinaryExportModelInnerTest.Generate(2, _stringBuilder, model, storage);
+                    BinaryExportModelInnerTest.Generate(
+                        2, 
+                        _stringBuilder, 
+                        model, 
+                        storage,
+                        interfaceTypeName
+                        );
                     EndRegion();
                     break;
                 }

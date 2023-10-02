@@ -10,16 +10,20 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Text;
 
 namespace Gedaq.Npgsql.Generators
 {
     internal class BinaryExportGenerator : BaseGenerator
     {
-        public void Generate(BinaryExport binaryExport)
+        public void Generate(
+            BinaryExport binaryExport, 
+            InterfaceGenerator interfaceGenerator
+            )
         {
             Reset();
             Start(binaryExport);
-            GenerateMethod(binaryExport);
+            GenerateMethod(binaryExport, interfaceGenerator);
             EndClass();
             EndNameSpace();
         }
@@ -45,18 +49,18 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 ");
         }
 
-        private void GenerateMethod(BinaryExport binaryExport)
+        private void GenerateMethod(BinaryExport binaryExport, InterfaceGenerator interfaceGenerator)
         {
             if (binaryExport.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 if(binaryExport.MethodType.HasFlag(MethodType.Sync))
                 {
-                    GenerateMethod(binaryExport, NpgsqlSourceType.NpgsqlConnection, MethodType.Sync);
+                    GenerateMethod(binaryExport, NpgsqlSourceType.NpgsqlConnection, MethodType.Sync, interfaceGenerator);
                 }
 
                 if (binaryExport.MethodType.HasFlag(MethodType.Async))
                 {
-                    GenerateMethod(binaryExport, NpgsqlSourceType.NpgsqlConnection, MethodType.Async);
+                    GenerateMethod(binaryExport, NpgsqlSourceType.NpgsqlConnection, MethodType.Async, interfaceGenerator);
                 }
             }
 
@@ -64,46 +68,83 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             {
                 if (binaryExport.MethodType.HasFlag(MethodType.Sync))
                 {
-                    GenerateMethod(binaryExport, NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync);
+                    GenerateMethod(binaryExport, NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync, interfaceGenerator);
                 }
 
                 if (binaryExport.MethodType.HasFlag(MethodType.Async))
                 {
-                    GenerateMethod(binaryExport, NpgsqlSourceType.NpgsqlDataSource, MethodType.Async);
+                    GenerateMethod(binaryExport, NpgsqlSourceType.NpgsqlDataSource, MethodType.Async, interfaceGenerator);
                 }
             }
         }
 
-        private void GenerateMethod(BinaryExport binaryExport, NpgsqlSourceType sourceType, MethodType methodType)
+        private void GenerateMethod(
+            BinaryExport binaryExport, 
+            NpgsqlSourceType sourceType, 
+            MethodType methodType,
+            InterfaceGenerator interfaceGenerator
+            )
         {
-            StartMethod(binaryExport, sourceType, methodType);
+            MethodDefinition(
+                binaryExport, 
+                sourceType, 
+                methodType,
+                _methodCode,
+                forInterface: false
+                );
+            if(binaryExport.AsPartInterface)
+            {
+                MethodDefinition(
+                    binaryExport,
+                    sourceType,
+                    methodType,
+                    interfaceGenerator.DefinitionBuilder(),
+                    forInterface: true
+                    );
+
+                interfaceGenerator.AddMethodDefinition();
+            }
             MethodBody(binaryExport, sourceType, methodType);
             EndMethod();
         }
 
-        private void StartMethod(BinaryExport binaryExport, NpgsqlSourceType sourceType, MethodType methodType)
+        private void MethodDefinition(
+            BinaryExport binaryExport, 
+            NpgsqlSourceType sourceType, 
+            MethodType methodType,
+            StringBuilder builder,
+            bool forInterface = false
+            )
         {
-            if(methodType == MethodType.Async)
-            {
-                _methodCode.Append($@"
-        {binaryExport.AccessModifier.ToLowerInvariant()} {binaryExport.MethodStaticModifier} async IAsyncEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}> {binaryExport.MethodName}Async(
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : binaryExport.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : binaryExport.MethodStaticModifier;
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+            var returnType = methodType == MethodType.Async ? 
+                $@"IAsyncEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}>" : 
+                $@"IEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}>"
+                ;
+            var methodName = methodType == MethodType.Async ? $@"{binaryExport.MethodName}Async" : $@"{binaryExport.MethodName}";
+
+            builder.Append($@"
+        {binaryExport.AccessModifier.ToLowerInvariant()} {binaryExport.MethodStaticModifier} {asyncKeyword} {returnType} {methodName}(
             {binaryExport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
-            TimeSpan? timeout = null,
-            [EnumeratorCancellation] CancellationToken cancellationToken = default
-            )
-        {{
-");
-            }
-            else
+            TimeSpan? timeout = null");
+
+            if (methodType == MethodType.Async)
             {
-                _methodCode.Append($@"
-        {binaryExport.AccessModifier.ToLowerInvariant()} {binaryExport.MethodStaticModifier} IEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}> {binaryExport.MethodName}(
-            {binaryExport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
-            TimeSpan? timeout = null
-            )
-        {{
-");
+                var enumeratorCancellation = forInterface ? string.Empty : "[EnumeratorCancellation]";
+                builder.Append($@",
+            {enumeratorCancellation} CancellationToken cancellationToken = default");
+
             }
+
+            builder.Append($@"
+            )
+");
         }
 
         private void MethodBody(
@@ -116,6 +157,8 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             var cancellation = isAsync ? "cancellationToken" : "";
             var async = isAsync ? "Async" : "";
             var await = isAsync ? "await " : "";
+            _methodCode.Append($@"
+        {{");
 
             if (sourceType == NpgsqlSourceType.NpgsqlDataSource)
             {

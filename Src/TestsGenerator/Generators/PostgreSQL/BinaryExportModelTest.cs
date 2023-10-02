@@ -1,31 +1,29 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
-using TestsGenerator.TypeValueHelpers;
 
 namespace TestsGenerator.Generators.PostgreSQL
 {
     internal static class BinaryExportModelTest
     {
-        private static string _testName = "ExportModel";
+        private const string _testName = "ExportModel";
 
         public static void Generate(
             int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            ModelValueStorage storage
+            ModelValueStorage storage,
+            string interfaceTypeName
             )
         {
-            if(model.ValueStorage is CharValueHelper)
-            {
-                return;
-            }
-
-            ExportModelConfig(stringBuilder, model);
+            ExportModelConfig(
+                stringBuilder, 
+                model,
+                interfaceTypeName
+                );
 
             var ordered = 
                 storage.Values
@@ -33,13 +31,28 @@ namespace TestsGenerator.Generators.PostgreSQL
                 .ToList()
                 ;
 
-            ExportModelTest(order, model, stringBuilder, ordered, false);
-            ExportModelTest(order, model, stringBuilder, ordered, true);
+            ExportModelTest(
+                order, 
+                model, 
+                stringBuilder, 
+                ordered, 
+                false,
+                interfaceTypeName
+                );
+            ExportModelTest(
+                order, 
+                model, 
+                stringBuilder, 
+                ordered, 
+                true,
+                interfaceTypeName
+                );
         }
 
         private static void ExportModelConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
-            Model.ModelType model
+            Model.ModelType model,
+            string interfaceTypeName
             )
         {
             stringBuilder.Append($@"
@@ -68,7 +81,8 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
             }},
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
-            accessModifier: AccessModifier.Public
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof({interfaceTypeName})
             )
             ]
         private void {_testName}Config()
@@ -82,7 +96,8 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             List<ModelValue> storage,
-            bool isAsync
+            bool isAsync,
+            string interfaceTypeName
             )
         {
             if (storage.Count < 4)
@@ -140,7 +155,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
 ");
             }
             stringBuilder.Append($@"
-                var models = {await} {_testName}{async}(connection).ToList{async}();
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection).ToList{async}();
                 Assert.That(models, Has.Count.EqualTo(expected.Count));
                 for(int modelIndex = 0; modelIndex < models.Count; modelIndex++)
                 {{

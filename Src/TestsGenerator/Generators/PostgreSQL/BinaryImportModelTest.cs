@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
@@ -10,25 +9,41 @@ namespace TestsGenerator.Generators.PostgreSQL
 {
     internal static class BinaryImportModelTest
     {
-        private static string _testName = "ImportModel";
+        private const string _testName = "ImportModel";
 
         public static void Generate(
             int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            ModelValueStorage storage
+            ModelValueStorage storage,
+            string interfaceTypeName
             )
         {
-            ImportModelConfig(stringBuilder, model);
-            SelectImportModelConfig(model, stringBuilder);
+            ImportModelConfig(
+                stringBuilder, 
+                model,
+                interfaceTypeName
+                );
+            SelectImportModelConfig(
+                model, 
+                stringBuilder,
+                interfaceTypeName
+                );
 
             var ordered = storage.Values.OrderBy(or => or.IdValue).ToList();
-            ImportModelTest(order, model, stringBuilder, ordered);
+            ImportModelTest(
+                order, 
+                model, 
+                stringBuilder, 
+                ordered,
+                interfaceTypeName
+                );
         }
 
         private static void ImportModelConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
-            Model.ModelType model
+            Model.ModelType model,
+            string interfaceTypeName
             )
         {
             stringBuilder.Append($@"
@@ -58,7 +73,8 @@ FROM STDIN (FORMAT BINARY)
             }},
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
-            accessModifier: AccessModifier.Public
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof({interfaceTypeName})
             )
             ]
         private void {_testName}Config()
@@ -69,7 +85,8 @@ FROM STDIN (FORMAT BINARY)
 
         private static void SelectImportModelConfig(
             Model.ModelType model,
-            StringBuilderArray.StringBuilderArray stringBuilder
+            StringBuilderArray.StringBuilderArray stringBuilder,
+            string interfaceTypeName
             )
         {
             var query = $@"
@@ -98,7 +115,8 @@ ORDER BY
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
-            accessModifier: AccessModifier.Public
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof({interfaceTypeName})
             )
             ]
         private void Select{_testName}Config()
@@ -111,7 +129,8 @@ ORDER BY
             int order,
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            List<ModelValue> storage
+            List<ModelValue> storage,
+            string interfaceTypeName
             )
         {
             if (storage.Count < 4)
@@ -134,8 +153,8 @@ ORDER BY
             FillCollection(storage.Count / 2);
 
             stringBuilder.Append($@"
-                {_testName}(connection, importCollection);
-                var models = Select{_testName}(connection).ToList();
+                {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}(connection, importCollection);
+                var models = {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}(connection).ToList();
                 Assert.That(models, Has.Count.EqualTo(importCollection.Count));
 ");
             var indexCollection = 0;
@@ -164,8 +183,8 @@ ORDER BY
             FillCollection(storage.Count);
 
             stringBuilder.Append($@"
-                await {_testName}Async(connection, importCollection);
-                models = await Select{_testName}Async(connection).ToListAsync();
+                await {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Async(connection, importCollection);
+                models = await {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}Async(connection).ToListAsync();
                 Assert.That(models, Has.Count.EqualTo({storage.Count}));
 ");
             indexCollection = 0;

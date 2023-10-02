@@ -10,16 +10,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Text;
 
 namespace Gedaq.Npgsql.Generators
 {
     internal class BinaryImportGenerator : BaseGenerator
     {
-        public void Generate(BinaryImport binaryImport)
+        public void Generate(BinaryImport binaryImport, InterfaceGenerator interfaceGenerator)
         {
             Reset();
             Start(binaryImport);
-            GenerateMethod(binaryImport);
+            GenerateMethod(binaryImport, interfaceGenerator);
             EndClass();
             EndNameSpace();
         }
@@ -45,19 +46,19 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 ");
         }
 
-        private void GenerateMethod(BinaryImport binaryImport)
+        private void GenerateMethod(BinaryImport binaryImport, InterfaceGenerator interfaceGenerator)
         {
             if (binaryImport.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
                 if(binaryImport.MethodType.HasFlag(MethodType.Sync))
                 {
-                    GenerateMethod(binaryImport, NpgsqlSourceType.NpgsqlConnection, MethodType.Sync, false);
+                    GenerateMethod(binaryImport, NpgsqlSourceType.NpgsqlConnection, MethodType.Sync, false, interfaceGenerator);
                 }
 
                 if (binaryImport.MethodType.HasFlag(MethodType.Async))
                 {
-                    GenerateMethod(binaryImport, NpgsqlSourceType.NpgsqlConnection, MethodType.Async, false);
-                    GenerateMethod(binaryImport, NpgsqlSourceType.NpgsqlConnection, MethodType.Async, true);
+                    GenerateMethod(binaryImport, NpgsqlSourceType.NpgsqlConnection, MethodType.Async, false, interfaceGenerator);
+                    GenerateMethod(binaryImport, NpgsqlSourceType.NpgsqlConnection, MethodType.Async, true, interfaceGenerator);
                 }
             }
 
@@ -65,13 +66,13 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             {
                 if (binaryImport.MethodType.HasFlag(MethodType.Sync))
                 {
-                    GenerateMethod(binaryImport, NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync, false);
+                    GenerateMethod(binaryImport, NpgsqlSourceType.NpgsqlDataSource, MethodType.Sync, false, interfaceGenerator);
                 }
 
                 if (binaryImport.MethodType.HasFlag(MethodType.Async))
                 {
-                    GenerateMethod(binaryImport, NpgsqlSourceType.NpgsqlDataSource, MethodType.Async, false);
-                    GenerateMethod(binaryImport, NpgsqlSourceType.NpgsqlConnection, MethodType.Async, true);
+                    GenerateMethod(binaryImport, NpgsqlSourceType.NpgsqlDataSource, MethodType.Async, false, interfaceGenerator);
+                    GenerateMethod(binaryImport, NpgsqlSourceType.NpgsqlConnection, MethodType.Async, true, interfaceGenerator);
                 }
             }
         }
@@ -80,46 +81,72 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             BinaryImport binaryImport,
             NpgsqlSourceType sourceType,
             MethodType methodType,
-            bool isAsyncCollection
+            bool isAsyncCollection,
+            InterfaceGenerator interfaceGenerator
             )
         {
-            StartMethod(binaryImport, sourceType, methodType, isAsyncCollection);
+            MethodDefinition(
+                binaryImport, 
+                sourceType, 
+                methodType, 
+                isAsyncCollection, 
+                _methodCode, 
+                forInterface: false
+                );
+            if(binaryImport.AsPartInterface)
+            {
+                MethodDefinition(
+                    binaryImport, 
+                    sourceType, 
+                    methodType, 
+                    isAsyncCollection, 
+                    interfaceGenerator.DefinitionBuilder(),
+                    forInterface: true
+                    );
+
+                interfaceGenerator.AddMethodDefinition();
+            }
             MethodBody(binaryImport, sourceType, methodType, isAsyncCollection);
             EndMethod();
         }
 
-        private void StartMethod(
+        private void MethodDefinition(
             BinaryImport binaryImport,
             NpgsqlSourceType sourceType,
             MethodType methodType,
-            bool isAsyncCollection
+            bool isAsyncCollection,
+            StringBuilder builder,
+            bool forInterface = false
             )
         {
             var collectionType = $"I{(isAsyncCollection ? "Async" : "")}Enumerable<{binaryImport.MapTypeName.GetFullTypeName(true, true)}>";
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : binaryImport.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : binaryImport.MethodStaticModifier;
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+            var returnType = methodType == MethodType.Async ? binaryImport.MethodInfo.AsyncResultType.ToResultType() : "void";
+            var methodName = methodType == MethodType.Async ? $@"{binaryImport.MethodName}Async" : $@"{binaryImport.MethodName}";
 
-            if (methodType == MethodType.Async)
-            {
-                _methodCode.Append($@"
-        {binaryImport.AccessModifier.ToLowerInvariant()} {binaryImport.MethodStaticModifier} async {binaryImport.MethodInfo.AsyncResultType.ToResultType()} {binaryImport.MethodName}Async(
-            {binaryImport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
-            {collectionType} collection,
-            TimeSpan? timeout = null,
-            CancellationToken cancellationToken = default
-            )
-        {{
-");
-            }
-            else
-            {
-                _methodCode.Append($@"
-        {binaryImport.AccessModifier.ToLowerInvariant()} {binaryImport.MethodStaticModifier} void {binaryImport.MethodName}(
+            builder.Append($@"
+        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {methodName}(
             {binaryImport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
             {collectionType} collection,
             TimeSpan? timeout = null
-            )
-        {{
 ");
+
+
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@",
+            CancellationToken cancellationToken = default");
+
             }
+
+            builder.Append($@"
+            )");
         }
 
         private void MethodBody(
@@ -133,6 +160,8 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             var cancellation = isAsync ? "cancellationToken" : "";
             var async = isAsync ? "Async" : "";
             var await = isAsync ? "await " : "";
+            _methodCode.Append($@"
+        {{");
 
             if (sourceType == NpgsqlSourceType.NpgsqlDataSource)
             {

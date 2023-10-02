@@ -349,7 +349,7 @@ namespace Gedaq.Npgsql
             {
                 cancellationToken.ThrowIfCancellationRequested();
                 interfaceGenerator.Reset();
-                binaryExportGenerator.Generate(binaryExport);
+                binaryExportGenerator.Generate(binaryExport, interfaceGenerator);
                 context.AddSource($"{binaryExport.ContainTypeName.Name}{binaryExport.MethodName}Npgsql.g.cs", binaryExportGenerator.GetCode());
                 interfaceGenerator.GenerateAndSave(
                     context,
@@ -365,7 +365,7 @@ namespace Gedaq.Npgsql
             {
                 cancellationToken.ThrowIfCancellationRequested();
                 interfaceGenerator.Reset();
-                binaryImportGenerator.Generate(binaryImport);
+                binaryImportGenerator.Generate(binaryImport, interfaceGenerator);
                 context.AddSource($"{binaryImport.ContainTypeName.Name}{binaryImport.MethodName}Npgsql.g.cs", binaryImportGenerator.GetCode());
                 interfaceGenerator.GenerateAndSave(
                     context,
