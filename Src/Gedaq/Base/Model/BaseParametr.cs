@@ -209,5 +209,7 @@ namespace Gedaq.Base.Model
             parametr.Precision = (byte)argument.Value;
             return true;
         }
+
+        public int Index {  get; set; }
     }
 }

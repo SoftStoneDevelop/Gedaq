@@ -12,69 +12,79 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
     internal class MySqlConnectorQueryRead : QueryReadBase
     {
         private readonly MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
+
+        public MySqlConnectorQueryRead(MySqlConnectorCommand commandGenerator) : base(commandGenerator)
+        {
+
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void ReadMethod(QueryBaseCommand source, StringBuilder builder)
+        protected override void ReadMethod(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             MySqlConnectorQuery query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
             {
-                StartReadMethod(source, MethodType.Sync, builder);
-                QueryMethodParametrs(
+                ReadMethodInner(
                     source,
+                    MethodType.Sync,
                     builder,
                     MySqlConnectorSourceType.MySqlConnection.ToTypeName(),
-                    MySqlConnectorSourceType.MySqlConnection.ToParametrName()
+                    MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
+                    needCheckOpen: true,
+                    interfaceGenerator
                     );
-                EndMethodParametrs(builder, MethodType.Sync);
-                ReadMethodBody(source, true, MySqlConnectorSourceType.MySqlConnection.ToParametrName(), MethodType.Sync, builder);
-                EndMethod(builder);
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
             {
-                StartReadMethod(source, MethodType.Sync, builder);
-                QueryMethodParametrs(
+                ReadMethodInner(
                     source,
+                    MethodType.Sync,
                     builder,
                     MySqlConnectorSourceType.MySqlDataSource.ToTypeName(),
-                    MySqlConnectorSourceType.MySqlDataSource.ToParametrName()
+                    MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
+                    needCheckOpen: false,
+                    interfaceGenerator
                     );
-                EndMethodParametrs(builder, MethodType.Sync);
-                ReadMethodBody(source, false, MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), MethodType.Sync, builder);
-                EndMethod(builder);
             }
         }
 
-        protected override void ReadAsyncMethod(QueryBaseCommand source, StringBuilder builder)
+        protected override void ReadAsyncMethod(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             MySqlConnectorQuery query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
             {
-                StartReadMethod(source, MethodType.Async, builder);
-                QueryMethodParametrs(
+                ReadMethodInner(
                     source,
+                    MethodType.Async,
                     builder,
                     MySqlConnectorSourceType.MySqlConnection.ToTypeName(),
-                    MySqlConnectorSourceType.MySqlConnection.ToParametrName()
+                    MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
+                    needCheckOpen: true,
+                    interfaceGenerator
                     );
-                EndMethodParametrs(builder, MethodType.Async);
-                ReadMethodBody(source, true, MySqlConnectorSourceType.MySqlConnection.ToParametrName(), MethodType.Async, builder);
-                EndMethod(builder);
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
             {
-                StartReadMethod(source, MethodType.Async, builder);
-                QueryMethodParametrs(
+                ReadMethodInner(
                     source,
+                    MethodType.Async,
                     builder,
                     MySqlConnectorSourceType.MySqlDataSource.ToTypeName(),
-                    MySqlConnectorSourceType.MySqlDataSource.ToParametrName()
+                    MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
+                    needCheckOpen: false,
+                    interfaceGenerator
                     );
-                EndMethodParametrs(builder, MethodType.Async);
-                ReadMethodBody(source, false, MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), MethodType.Async, builder);
-                EndMethod(builder);
             }
         }
     }

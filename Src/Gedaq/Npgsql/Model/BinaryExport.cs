@@ -14,7 +14,6 @@ namespace Gedaq.Npgsql.Model
     {
         public NpgsqlSourceType SourceType { get; private set; }
         public string Query;
-        public ITypeSymbol MapTypeName { get; private set; }
         public Aliases Aliases { get; protected set; }
 
         private int[] NpgSqlDbTypes;
@@ -28,7 +27,7 @@ namespace Gedaq.Npgsql.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out BinaryExport method)
         {
             method = null;
-            if (namedArguments.Length != 8)
+            if (namedArguments.Length != 9)
             {
                 return false;
             }
@@ -70,6 +69,11 @@ namespace Gedaq.Npgsql.Model
 
             methodSource.ContainTypeName = containsType;
             method = methodSource;
+            if (!methodSource.SetPartInterfaceType(namedArguments[8]))
+            {
+                return false;
+            }
+
             return true;
         }
 
@@ -83,22 +87,6 @@ namespace Gedaq.Npgsql.Model
             }
 
             Query = (string)argument.Value;
-            return true;
-        }
-
-        protected bool FillMapType(TypedConstant argument)
-        {
-            if (argument.IsNull)
-            {
-                return true;
-            }
-
-            if (!(argument.Value is ITypeSymbol typeParam))
-            {
-                return false;
-            }
-
-            MapTypeName = typeParam;
             return true;
         }
 

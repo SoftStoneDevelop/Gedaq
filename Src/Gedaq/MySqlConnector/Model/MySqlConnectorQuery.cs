@@ -27,7 +27,7 @@ namespace Gedaq.MySqlConnector.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out MySqlConnectorQuery method)
         {
             method = null;
-            if (namedArguments.Length != 9)
+            if (namedArguments.Length != 10)
             {
                 return false;
             }
@@ -74,12 +74,18 @@ namespace Gedaq.MySqlConnector.Model
 
             methodSource.ContainTypeName = containsType;
             method = methodSource;
+
+            if (!methodSource.SetPartInterfaceType(namedArguments[9]))
+            {
+                return false;
+            }
+
             return true;
         }
 
         public override IEnumerable<BaseParametr> BaseParametrs()
         {
-            return Parametrs.Cast<BaseParametr>();
+            return Parametrs;
         }
 
         private bool FillSourceType(TypedConstant argument)

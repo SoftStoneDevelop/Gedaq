@@ -1,24 +1,20 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.Enums;
-using Gedaq.Helpers;
 using Gedaq.MySqlConnector.Enums;
 using Microsoft.CodeAnalysis;
-using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Linq;
 
 namespace Gedaq.MySqlConnector.Model
 {
     internal class MySqlConnectorQueryBatch : QueryBatchCommand
     {
         public MySqlConnectorSourceType SourceType;
-        public List<(int number, MySqlConnectorQuery query)> Queries = new List<(int number, MySqlConnectorQuery query)>();
+        public BatchPart<MySqlConnectorQuery>[] Queries;
 
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out MySqlConnectorQueryBatch queryBatch)
         {
             queryBatch = null;
-            if (namedArguments.Length != 5)
+            if (namedArguments.Length != 6)
             {
                 return false;
             }
@@ -39,14 +35,19 @@ namespace Gedaq.MySqlConnector.Model
                     );
 
             result.ContainTypeName = containsType;
-
             queryBatch = result;
+
+            if (!result.SetPartInterfaceType(namedArguments[5]))
+            {
+                return false;
+            }
+
             return true;
         }
 
-        public override IEnumerable<(int, QueryBaseCommand)> QueryBases()
+        public override IEnumerable<BatchPartBase> QueryBases()
         {
-            return Queries.Select(sel => (sel.number, (QueryBaseCommand)sel.query));
+            return Queries;
         }
     }
 }

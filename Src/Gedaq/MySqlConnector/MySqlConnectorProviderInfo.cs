@@ -2,9 +2,6 @@
 using Gedaq.Base.Model;
 using Gedaq.MySqlConnector.Helpers;
 using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Gedaq.MySqlConnector
 {
@@ -42,9 +39,9 @@ namespace Gedaq.MySqlConnector
             throw new System.NotImplementedException();
         }
 
-        public override string GetParametrValue(BaseParametr parametr, int index, string source)
+        public override string GetParametrValue(BaseParametr parametr, string source)
         {
-            return $"{source}.Parameters[{index}].Value";
+            return $"{source}.Parameters[{parametr.Index}].Value";
         }
 
         public override string GetNullValue(BaseParametr parametr)

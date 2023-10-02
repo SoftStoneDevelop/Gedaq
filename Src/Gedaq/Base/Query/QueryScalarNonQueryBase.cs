@@ -1,216 +1,341 @@
-﻿using Gedaq.Base.Batch;
-using Gedaq.Base.Model;
-using Gedaq.DbConnection.GeneratorsQuery;
+﻿using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace Gedaq.Base.Query
 {
     internal abstract class QueryScalarNonQueryBase
     {
+        private readonly CommandGeneratorBase _commandGenerator;
+
+        public QueryScalarNonQueryBase(CommandGeneratorBase commandGenerator)
+        {
+            _commandGenerator = commandGenerator;
+        }
+
         protected abstract ProviderInfo ProviderInfo { get; }
 
-        public void ScalarGenerate(QueryBaseCommand source, StringBuilder builder)
+        public void ScalarGenerate(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                ScalarMethod(source, builder);
+                ScalarMethod(source, builder, interfaceGenerator);
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
                 QueryCommonBase.ThrowExceptionIfOutCannotExist(source);
-                ScalarMethodAsync(source, builder);
+                ScalarMethodAsync(source, builder, interfaceGenerator);
             }
         }
 
-        public void NonQueryGenerate(QueryBaseCommand source, StringBuilder builder)
+        public void NonQueryGenerate(
+            QueryBaseCommand source, 
+            StringBuilder builder, 
+            InterfaceGenerator interfaceGenerator
+            )
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                NonQueryMethod(source, builder);
+                NonQueryMethod(source, builder, interfaceGenerator);
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
                 QueryCommonBase.ThrowExceptionIfOutCannotExist(source);
-                NonQueryMethodAsync(source, builder);
+                NonQueryMethodAsync(source, builder, interfaceGenerator);
             }
         }
 
-        protected virtual void NonQueryMethod(QueryBaseCommand source, StringBuilder builder)
+        protected virtual void NonQueryMethod(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
-            StartNonQueryMethod(source, MethodType.Sync, builder);
-            QueryMethodParametrs(
-                source, 
-                ProviderInfo.DefaultSourceType(), 
-                ProviderInfo.DefaultSourceTypeParametr(), 
+            NonQueryMethodInner(
+                source,
+                MethodType.Sync,
                 builder,
-                true
-                );
-            EndMethodParametrs(builder, MethodType.Sync);
-            MethodBody(
-                source, 
-                true, 
-                ProviderInfo.DefaultSourceTypeParametr(), 
-                MethodType.Sync, 
-                QueryType.NonQuery, 
-                builder
-                );
-            EndMethod(builder);
-        }
-
-        protected virtual void NonQueryMethodAsync(QueryBaseCommand source, StringBuilder builder)
-        {
-            StartNonQueryMethod(source, MethodType.Async, builder);
-            QueryMethodParametrs(
-                source, 
-                ProviderInfo.DefaultSourceType(), 
-                ProviderInfo.DefaultSourceTypeParametr(), 
-                builder,
-                false
-                );
-            EndMethodParametrs(builder, MethodType.Async);
-            MethodBody(
-                source, 
-                true, 
-                ProviderInfo.DefaultSourceTypeParametr(), 
-                MethodType.Async, 
-                QueryType.NonQuery, 
-                builder
-                );
-            EndMethod(builder);
-        }
-
-        protected virtual void ScalarMethod(QueryBaseCommand source, StringBuilder builder)
-        {
-            StartScalarMethod(source, MethodType.Sync, builder);
-            QueryMethodParametrs(
-                source, 
-                ProviderInfo.DefaultSourceType(), 
+                ProviderInfo.DefaultSourceType(),
                 ProviderInfo.DefaultSourceTypeParametr(),
-                builder,
-                true
+                useInAndOut: true,
+                needCheckOpen: true,
+                interfaceGenerator
                 );
-            EndMethodParametrs(builder, MethodType.Sync);
-            MethodBody(source, true, "connection", MethodType.Sync, QueryType.Scalar, builder);
-            EndMethod(builder);
         }
 
-        protected virtual void ScalarMethodAsync(QueryBaseCommand source, StringBuilder builder)
+        protected virtual void NonQueryMethodAsync(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
-            StartScalarMethod(source, MethodType.Async, builder);
-            QueryMethodParametrs(
+            NonQueryMethodInner(
                 source, 
-                ProviderInfo.DefaultSourceType(), 
-                ProviderInfo.DefaultSourceTypeParametr(),
-                builder,
-                false
-                );
-            EndMethodParametrs(builder, MethodType.Async);
-            MethodBody(
-                source, 
-                true, 
-                ProviderInfo.DefaultSourceTypeParametr(), 
                 MethodType.Async, 
-                QueryType.Scalar, 
-                builder
+                builder,
+                ProviderInfo.DefaultSourceType(),
+                ProviderInfo.DefaultSourceTypeParametr(),
+                useInAndOut: false,
+                needCheckOpen: true,
+                interfaceGenerator
                 );
-            EndMethod(builder);
         }
 
-        protected void StartNonQueryMethod(
+        protected virtual void ScalarMethod(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            ScalarMethodInner(
+                source,
+                MethodType.Sync,
+                builder,
+                ProviderInfo.DefaultSourceType(),
+                ProviderInfo.DefaultSourceTypeParametr(),
+                useInAndOut: true,
+                needCheckOpen: true,
+                interfaceGenerator
+                );
+        }
+
+        protected virtual void ScalarMethodAsync(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            ScalarMethodInner(
+                source, 
+                MethodType.Async, 
+                builder,
+                ProviderInfo.DefaultSourceType(),
+                ProviderInfo.DefaultSourceTypeParametr(),
+                useInAndOut: false,
+                needCheckOpen: true,
+                interfaceGenerator
+                );
+        }
+
+        public string NonQueryMethodName(
             QueryBase source,
-            MethodType methodType,
-            StringBuilder builder
+            MethodType methodType
             )
         {
             if (methodType == MethodType.Sync)
             {
-                builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} System.Int32 {(((int)source.QueryType).IsPowerOfTwo() ? "" : "NonQuery")}{source.MethodName}(
-");
+                return $"{(((int)source.QueryType).IsPowerOfTwo() ? "" : "NonQuery")}{source.MethodName}";
             }
             else
             {
-                builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async {source.MethodInfo.AsyncResultType.ToResultType()}<System.Int32> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "NonQuery")}{source.MethodName}Async(
-");
+                return $"{(((int)source.QueryType).IsPowerOfTwo() ? "" : "NonQuery")}{source.MethodName}Async";
             }
         }
 
-        protected void StartScalarMethod(
+        public void NonQueryMethodInner(
             QueryBaseCommand source,
             MethodType methodType,
-            StringBuilder builder
-            )
-        {
-            QueryCommonBase.GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
-            if (methodType == MethodType.Sync)
-            {
-                builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {typeName} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}(
-");
-            }
-            else
-            {
-                builder.Append($@"        
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async {source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Async(
-");
-            }
-        }
-
-        protected void QueryMethodParametrs(
-            QueryBaseCommand source,
+            StringBuilder builder,
             string sourceTypeName,
             string sourceParametrName,
-            StringBuilder builder,
-            bool useInAndOut
+            bool useInAndOut,
+            bool needCheckOpen,
+            InterfaceGenerator interfaceGenerator
             )
         {
-            builder.Append($@"
-            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
-");
-            QueryCommonBase.AddParametrs(source, builder, useInAndOut);
-            QueryCommonBase.AddFormatParametrs(source, builder);
+            NonQueryMethodDefinition(
+                    source,
+                    methodType,
+                    builder,
+                    sourceTypeName,
+                    sourceParametrName,
+                    useInAndOut: useInAndOut
+                    );
+            if (source.AsPartInterface)
+            {
+                NonQueryMethodDefinition(
+                    source,
+                    methodType,
+                    interfaceGenerator.DefinitionBuilder(),
+                    sourceTypeName,
+                    sourceParametrName,
+                    useInAndOut: useInAndOut,
+                    forInterface: true
+                    );
+                interfaceGenerator.AddMethodDefinition();
+            }
+            MethodBody(
+                source,
+                needCheckOpen: needCheckOpen,
+                sourceParametrName,
+                methodType,
+                QueryType.NonQuery,
+                builder
+                );
         }
 
-        protected void EndMethodParametrs(StringBuilder builder, MethodType methodType)
+        private void NonQueryMethodDefinition(
+            QueryBaseCommand source,
+            MethodType methodType,
+            StringBuilder builder,
+            string sourceTypeName,
+            string sourceParametrName,
+            bool useInAndOut,
+            bool forInterface = false
+            )
         {
+            var returnType = methodType == MethodType.Sync ? $"System.Int32" : $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Int32>";
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+
+            builder.Append($@"        
+        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {NonQueryMethodName(source, methodType)}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
+
+            _commandGenerator.AddParametrs(source, builder, useInAndOut);
+            _commandGenerator.AddFormatParametrs(source, builder);
+
             builder.Append($@",
-            int? timeout = null
-");
+            int? timeout = null");
+
             if (ProviderInfo.CanSetTransaction)
             {
                 builder.Append($@",
-            {ProviderInfo.TransactionType()} transaction = null
-");
+            {ProviderInfo.TransactionType()} transaction = null");
+
             }
 
             if (methodType == MethodType.Async)
             {
                 builder.Append($@",
-            CancellationToken cancellationToken = default
-");
+            CancellationToken cancellationToken = default");
+
             }
 
             builder.Append($@"
-        )
-        {{
-");
+        )");
+
         }
 
-        protected void EndMethod(StringBuilder builder)
+        public string ScalarMethodName(
+            QueryBase source,
+            MethodType methodType
+            )
         {
-            builder.Append($@"
-        }}
-");
+            if (methodType == MethodType.Sync)
+            {
+                return $"{(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}";
+            }
+            else
+            {
+                return $"{(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Async";
+            }
         }
 
-        protected void MethodBody(
+        public void ScalarMethodInner(
+            QueryBaseCommand source,
+            MethodType methodType,
+            StringBuilder builder,
+            string sourceTypeName,
+            string sourceParametrName,
+            bool useInAndOut,
+            bool needCheckOpen,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            ScalarMethodDefinition(
+                    source,
+                    methodType,
+                    builder,
+                    sourceTypeName,
+                    sourceParametrName,
+                    useInAndOut: useInAndOut
+                    );
+            if (source.AsPartInterface)
+            {
+                ScalarMethodDefinition(
+                    source,
+                    methodType,
+                    interfaceGenerator.DefinitionBuilder(),
+                    sourceTypeName,
+                    sourceParametrName,
+                    useInAndOut: useInAndOut,
+                    forInterface: true
+                    );
+                interfaceGenerator.AddMethodDefinition();
+            }
+            MethodBody(
+                source,
+                needCheckOpen: needCheckOpen,
+                sourceParametrName,
+                methodType,
+                QueryType.Scalar,
+                builder
+                );
+        }
+
+        private void ScalarMethodDefinition(
+            QueryBaseCommand source,
+            MethodType methodType,
+            StringBuilder builder,
+            string sourceTypeName,
+            string sourceParametrName,
+            bool useInAndOut,
+            bool forInterface = false
+            )
+        {
+            _commandGenerator.GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
+            var returnType = methodType == MethodType.Sync ? typeName : $"{source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}>";
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+
+            builder.Append($@"        
+        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {ScalarMethodName(source, methodType)}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
+
+            _commandGenerator.AddParametrs(source, builder, useInAndOut);
+            _commandGenerator.AddFormatParametrs(source, builder);
+
+            builder.Append($@",
+            int? timeout = null");
+
+            if (ProviderInfo.CanSetTransaction)
+            {
+                builder.Append($@",
+            {ProviderInfo.TransactionType()} transaction = null");
+
+            }
+
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@",
+            CancellationToken cancellationToken = default");
+
+            }
+
+            builder.Append($@"
+            )");
+        }
+
+        private void MethodBody(
             QueryBaseCommand source,
             bool needCheckOpen,
             string sourceParametrName,
@@ -222,6 +347,8 @@ namespace Gedaq.Base.Query
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             var disposeOrCloseAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
+            builder.Append($@"
+        {{");
 
             if (needCheckOpen)
             {
@@ -240,28 +367,28 @@ namespace Gedaq.Base.Query
             {{
                 command =
 ");
-            QueryCommonBase.CreateCommand(source, sourceParametrName, methodType, builder);
+            _commandGenerator.CreateCommand(source, sourceParametrName, methodType, builder);
 
             if(source.ContainTypeName.GCIsStatic())
             {
                 builder.Append($@"
                 ;
-                command.Set{source.MethodName}Parametrs(
+                command.{_commandGenerator.SetParametrsMethodName(source)}(
 ");
             }
             else
             {
                 builder.Append($@"
                 ;
-                Set{source.MethodName}Parametrs(
+                {_commandGenerator.SetParametrsMethodName(source)}(
                     command
 ");
             }
-            QueryCommonBase.WriteSetParametrs(source, builder, ProviderInfo);
+            _commandGenerator.WriteSetParametrs(source, builder, ProviderInfo);
             builder.Append($@"
                     );
 ");
-            QueryCommonBase.GetScalarType(source, ProviderInfo, out var typeSymbol, out var isRowAffected, out var typeName);
+            _commandGenerator.GetScalarType(source, ProviderInfo, out var typeSymbol, out var isRowAffected, out var typeName);
             if (queryType == QueryType.Scalar)
             {
                 if (isRowAffected || (!typeSymbol.IsNullableType() && !typeSymbol.IsReferenceType))
@@ -295,7 +422,7 @@ namespace Gedaq.Base.Query
 
             if (source.HaveParametrs())
             {
-                QueryCommonBase.SetOutAndReturnParametrs(source, builder, ProviderInfo);
+                _commandGenerator.SetOutAndReturnParametrs(source, builder, ProviderInfo);
             }
 
             builder.Append($@"
@@ -321,6 +448,7 @@ namespace Gedaq.Base.Query
                     {await}command.Dispose{disposeOrCloseAsync};
                 }}
             }}
+        }}
 ");
         }
     }

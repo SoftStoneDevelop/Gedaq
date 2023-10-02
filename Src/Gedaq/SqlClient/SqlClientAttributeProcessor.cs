@@ -1,5 +1,4 @@
 ﻿using Gedaq.Base;
-using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Parser;
@@ -16,19 +15,6 @@ namespace Gedaq.SqlClient
 {
     internal class SqlClientAttributeProcessor : BaseAttributeProcessor
     {
-        private class ReadPair
-        {
-            public SqlClientQuery Query { get; set; }
-            public List<SqlClientParametr> Parametrs { get; } = new List<SqlClientParametr>();
-
-            public List<FormatParametr> FormatParametrs { get; } = new List<FormatParametr>();
-
-            public bool IsEmpty()
-            {
-                return Query == null && Parametrs.Count == 0;
-            }
-        }
-
         private List<SqlClientQuery> _read = new List<SqlClientQuery>();
         private QueryParser _queryParser = new QueryParser();
 
@@ -45,7 +31,7 @@ namespace Gedaq.SqlClient
                 var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
                 var parentAttributes = parentSymbol.GetAttributes();
 
-                var readTemp = new ReadPair();
+                var readTemp = new ReadPair<SqlClientQuery, SqlClientParametr>();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
                     cancellationToken.ThrowIfCancellationRequested();
@@ -73,7 +59,7 @@ namespace Gedaq.SqlClient
         {
         }
 
-        private void TryAddReadMethod(ReadPair readPair)
+        private void TryAddReadMethod(ReadPair<SqlClientQuery, SqlClientParametr> readPair)
         {
             if (readPair.IsEmpty())
             {
@@ -82,6 +68,11 @@ namespace Gedaq.SqlClient
 
             var query = readPair.Query;
             readPair.Query.Parametrs = readPair.Parametrs.ToArray();
+            for (int i = 0; i < query.Parametrs.Length; i++)
+            {
+                query.Parametrs[i].Index = i;
+            }
+
             AddFormatParametrs(readPair.Query, readPair.FormatParametrs);
 
             if (query.QueryType == QueryType.NonQuery)
@@ -99,7 +90,7 @@ namespace Gedaq.SqlClient
             }
         }
 
-        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ReadPair readPair)
+        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ReadPair<SqlClientQuery, SqlClientParametr> readPair)
         {
             if (!SqlClientQuery.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
@@ -109,7 +100,7 @@ namespace Gedaq.SqlClient
             readPair.Query = queryReadMethod;
         }
 
-        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType, ReadPair readPair)
+        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType, ReadPair<SqlClientQuery, SqlClientParametr> readPair)
         {
             if (!SqlClientParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
             {
@@ -122,11 +113,19 @@ namespace Gedaq.SqlClient
         public override void GenerateAndSaveMethods(SourceProductionContext context, CancellationToken cancellationToken)
         {
             var readGenerator = new SqlClientQueryGenerator();
+            var interfaceGenerator = new InterfaceGenerator();
             foreach (var queryRead in _read)
             {
                 cancellationToken.ThrowIfCancellationRequested();
-                readGenerator.Generate(queryRead);
+                interfaceGenerator.Reset();
+                readGenerator.Generate(queryRead, interfaceGenerator);
                 context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}SqlClient.g.cs", readGenerator.GetCode());
+                interfaceGenerator.GenerateAndSave(
+                    context,
+                    queryRead.PartInterfaceType,
+                    readGenerator.Usings(),
+                    $"{queryRead.ContainTypeName.Name}{queryRead.MethodName}"
+                    );
             }
             _read.Clear();
         }

@@ -11,7 +11,6 @@ namespace Gedaq.Base.Model
 {
     internal abstract class QueryBase : BaseGenerateItem
     {
-        public ITypeSymbol MapTypeName { get; private set; }
         public QueryType QueryType { get; protected set; }
 
         protected bool FillQueryType(TypedConstant argument)
@@ -25,22 +24,6 @@ namespace Gedaq.Base.Model
             }
 
             QueryType = (QueryType)argument.Value;
-            return true;
-        }
-
-        protected bool FillMapType(TypedConstant argument)
-        {
-            if (argument.IsNull)
-            {
-                return true;
-            }
-
-            if (!(argument.Value is ITypeSymbol typeParam))
-            {
-                return false;
-            }
-
-            MapTypeName = typeParam;
             return true;
         }
     }

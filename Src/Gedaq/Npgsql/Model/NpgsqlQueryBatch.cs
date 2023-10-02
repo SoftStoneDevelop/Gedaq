@@ -1,9 +1,6 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.Enums;
-using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
-using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
@@ -13,12 +10,12 @@ namespace Gedaq.Npgsql.Model
     internal class NpgsqlQueryBatch : QueryBatchCommand
     {
         public NpgsqlSourceType SourceType;
-        public List<(int number, NpgsqlQuery query)> Queries = new List<(int number, NpgsqlQuery query)>();
+        public BatchPart<NpgsqlQuery>[] Queries;
 
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out NpgsqlQueryBatch queryBatch)
         {
             queryBatch = null;
-            if (namedArguments.Length != 5)
+            if (namedArguments.Length != 6)
             {
                 return false;
             }
@@ -39,14 +36,18 @@ namespace Gedaq.Npgsql.Model
                     );
 
             result.ContainTypeName = containsType;
-
             queryBatch = result;
+            if (!result.SetPartInterfaceType(namedArguments[5]))
+            {
+                return false;
+            }
+
             return true;
         }
 
-        public override IEnumerable<(int, QueryBaseCommand)> QueryBases()
+        public override IEnumerable<BatchPartBase> QueryBases()
         {
-            return Queries.Select(sel => (sel.number, (QueryBaseCommand)sel.query));
+            return Queries;
         }
     }
 }

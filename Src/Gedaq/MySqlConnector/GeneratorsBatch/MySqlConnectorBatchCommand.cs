@@ -1,7 +1,6 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Batch;
 using Gedaq.Base.Model;
-using Gedaq.DbConnection;
 using Gedaq.Enums;
 using Gedaq.MySqlConnector.Enums;
 using Gedaq.MySqlConnector.Helpers;
@@ -15,19 +14,71 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
         private readonly MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void CreateBatchMethods(QueryBatchCommand source, StringBuilder builder)
+        protected override void CreateBatchMethods(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var npgsqlBatch = (MySqlConnectorQueryBatch)source;
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
                 if (npgsqlBatch.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
                 {
-                    CreateBatchMethod(source, MySqlConnectorSourceType.MySqlConnection.ToTypeName(), MySqlConnectorSourceType.MySqlConnection.ToParametrName(), MethodType.Sync, builder);
+                    CreateBatchMethodDefinition(
+                        source, 
+                        MySqlConnectorSourceType.MySqlConnection.ToTypeName(), 
+                        MySqlConnectorSourceType.MySqlConnection.ToParametrName(), 
+                        MethodType.Sync, 
+                        builder
+                        );
+                    if(source.AsPartInterface)
+                    {
+                        CreateBatchMethodDefinition(
+                            source,
+                            MySqlConnectorSourceType.MySqlConnection.ToTypeName(),
+                            MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
+                            MethodType.Sync,
+                            interfaceGenerator.DefinitionBuilder(),
+                            forInterface: true
+                            );
+                        interfaceGenerator.AddMethodDefinition();
+                    }
+                    CreateBatchMethodBody(
+                        source, 
+                        MySqlConnectorSourceType.MySqlConnection.ToParametrName(), 
+                        MethodType.Sync, 
+                        builder
+                        );
                 }
 
                 if (npgsqlBatch.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
                 {
-                    CreateBatchMethod(source, MySqlConnectorSourceType.MySqlDataSource.ToTypeName(), MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), MethodType.Sync, builder);
+                    CreateBatchMethodDefinition(
+                        source, 
+                        MySqlConnectorSourceType.MySqlDataSource.ToTypeName(), 
+                        MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), 
+                        MethodType.Sync, 
+                        builder
+                        );
+                    if(source.AsPartInterface)
+                    {
+                        CreateBatchMethodDefinition(
+                            source,
+                            MySqlConnectorSourceType.MySqlDataSource.ToTypeName(),
+                            MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
+                            MethodType.Sync,
+                            interfaceGenerator.DefinitionBuilder(),
+                            forInterface: true
+                            );
+                        interfaceGenerator.AddMethodDefinition();
+                    }
+                    CreateBatchMethodBody(
+                        source,
+                        MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
+                        MethodType.Sync,
+                        builder
+                        );
                 }
             }
 
@@ -35,21 +86,79 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             {
                 if (npgsqlBatch.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
                 {
-                    CreateBatchMethod(source, MySqlConnectorSourceType.MySqlConnection.ToTypeName(), MySqlConnectorSourceType.MySqlConnection.ToParametrName(), MethodType.Async, builder);
+                    CreateBatchMethodDefinition(
+                        source, 
+                        MySqlConnectorSourceType.MySqlConnection.ToTypeName(), 
+                        MySqlConnectorSourceType.MySqlConnection.ToParametrName(), 
+                        MethodType.Async, 
+                        builder
+                        );
+                    if(source.AsPartInterface)
+                    {
+                        CreateBatchMethodDefinition(
+                            source,
+                            MySqlConnectorSourceType.MySqlConnection.ToTypeName(),
+                            MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
+                            MethodType.Async,
+                            interfaceGenerator.DefinitionBuilder(),
+                            forInterface: true
+                            );
+                        interfaceGenerator.AddMethodDefinition();
+                    }
+                    CreateBatchMethodBody(
+                        source,
+                        MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
+                        MethodType.Async,
+                        builder
+                        );
                 }
 
                 if (npgsqlBatch.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
                 {
-                    CreateBatchMethod(source, MySqlConnectorSourceType.MySqlDataSource.ToTypeName(), MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), MethodType.Async, builder);
+                    CreateBatchMethodDefinition(
+                        source,
+                        MySqlConnectorSourceType.MySqlDataSource.ToTypeName(), 
+                        MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), 
+                        MethodType.Async, 
+                        builder
+                        );
+                    if(source.AsPartInterface)
+                    {
+                        CreateBatchMethodDefinition(
+                            source,
+                            MySqlConnectorSourceType.MySqlDataSource.ToTypeName(),
+                            MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
+                            MethodType.Async,
+                            interfaceGenerator.DefinitionBuilder(),
+                            forInterface: true
+                            );
+                        interfaceGenerator.AddMethodDefinition();
+                    }
+                    CreateBatchMethodBody(
+                        source,
+                        MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
+                        MethodType.Async,
+                        builder
+                        );
                 }
             }
 
-            SetParametrsMethod(source, builder);
+            SetParametrsMethodDefinition(source, builder);
+            if(source.AsPartInterface)
+            {
+                SetParametrsMethodDefinition(source, interfaceGenerator.DefinitionBuilder(), forInterface: true);
+                interfaceGenerator.AddMethodDefinition();
+            }
+            SetParametrsMethodBody(source, builder);
         }
 
-        protected override void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder)
+        protected override void CreateParametr(BaseParametr baseParametr, StringBuilder builder)
         {
-            MySqlConnectorGeneratorHelper.CreateParametr(baseParametr, index, builder);
+            builder.Append($@"
+                {{");
+            MySqlConnectorGeneratorHelper.CreateParametr(baseParametr, builder);
+            builder.Append($@"
+                }}");
         }
     }
 }

@@ -43,15 +43,15 @@ namespace Gedaq.Npgsql
             throw new System.NotImplementedException();
         }
 
-        public override string GetParametrValue(BaseParametr parametr, int index, string source)
+        public override string GetParametrValue(BaseParametr parametr, string source)
         {
             if (parametr.Type.IsNullableType())
             {
-                return $"((NpgsqlParameter){source}.Parameters[{index}]).Value";
+                return $"((NpgsqlParameter){source}.Parameters[{parametr.Index}]).Value";
             }
             else
             {
-                return $"((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>){source}.Parameters[{index}]).TypedValue";
+                return $"((NpgsqlParameter<{parametr.Type.GetFullTypeName()}>){source}.Parameters[{parametr.Index}]).TypedValue";
             }
         }
 

@@ -13,9 +13,13 @@ namespace Gedaq.SqlClient.GeneratorsQuery
         SqlClientProviderInfo _providerInfo = new SqlClientProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder)
+        protected override void CreateParametr(BaseParametr baseParametr, StringBuilder builder)
         {
-            SqlClientGeneratorHelper.CreateParametr(baseParametr, index, builder);
+            builder.Append($@"
+                {{");
+            SqlClientGeneratorHelper.CreateParametr(baseParametr, builder);
+            builder.Append($@"
+                }}");
         }
     }
 }

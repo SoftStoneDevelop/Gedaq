@@ -7,33 +7,41 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 {
     internal class NpgsqlQueryBatchGenerator : BaseGenerator
     {
-        NpgsqlQueryBatchRead _batchRead = new NpgsqlQueryBatchRead();
-        NpgsqlQueryBatchScalarNoQuery _batchScalarNoQuery = new NpgsqlQueryBatchScalarNoQuery();
-        NpgsqlBatchCommand _batchCommand = new NpgsqlBatchCommand();
+        private readonly NpgsqlBatchCommand _batchCommand;
+        private readonly NpgsqlQueryBatchRead _batchRead;
+        private readonly NpgsqlQueryBatchScalarNoQuery _batchScalarNoQuery;
 
-        public void GenerateMethod(NpgsqlQueryBatch source)
+        public NpgsqlQueryBatchGenerator()
+        {
+            _batchCommand = new NpgsqlBatchCommand();
+            _batchRead = new NpgsqlQueryBatchRead(_batchCommand);
+            _batchScalarNoQuery = new NpgsqlQueryBatchScalarNoQuery(_batchCommand);
+        }
+
+        public void GenerateMethod(NpgsqlQueryBatch source, InterfaceGenerator interfaceGenerator)
         {
             Reset();
             Start(source);
 
             if (source.QueryType.HasFlag(QueryType.Read))
             {
-                _batchRead.Generate(source, _methodCode);
+                _batchRead.Generate(source, _methodCode, interfaceGenerator);
             }
 
             if (source.QueryType.HasFlag(QueryType.Scalar))
             {
-                _batchScalarNoQuery.GenerateScalar(source, _methodCode);
+                _batchScalarNoQuery.GenerateScalar(source, _methodCode, interfaceGenerator);
             }
 
             if (source.QueryType.HasFlag(QueryType.NonQuery))
             {
-                _batchScalarNoQuery.GenerateNonQuery(source, _methodCode);
+                _batchScalarNoQuery.GenerateNonQuery(source, _methodCode, interfaceGenerator);
             }
 
-            _batchCommand.Generate(source, _methodCode);
+            _batchCommand.Generate(source, _methodCode, interfaceGenerator);
 
-            End();
+            EndClass();
+            EndNameSpace();
         }
 
         private void Start(
@@ -50,11 +58,23 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 
-namespace {source.ContainTypeName.ContainingNamespace}
+namespace {source.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 {{
     {GeneratedClassDeclarationHelper.GCDeclarationName(source.ContainTypeName, source.MethodInfo, "Npgsql")}
     {{
 ");
+        }
+
+        private void EndClass()
+        {
+            _methodCode.Append($@"
+    }}");
+        }
+
+        private void EndNameSpace()
+        {
+            _methodCode.Append($@"
+}}");
         }
     }
 }

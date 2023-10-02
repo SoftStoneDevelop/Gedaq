@@ -23,7 +23,7 @@ namespace Gedaq.Base
         public abstract string DefaultSourceType();
         public abstract string DefaultSourceTypeParametr();
 
-        public abstract string GetParametrValue(BaseParametr parametr, int index, string source);
+        public abstract string GetParametrValue(BaseParametr parametr, string source);
 
         public abstract string GetNullValue(BaseParametr parametr);
 

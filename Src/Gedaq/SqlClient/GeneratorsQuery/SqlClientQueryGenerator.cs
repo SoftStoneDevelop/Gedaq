@@ -1,48 +1,52 @@
 ﻿using Gedaq.Base;
-using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.SqlClient.GeneratorsQuery;
 using Gedaq.SqlClient.Model;
 
 namespace Gedaq.SqlClient.GeneratorsQuery
 {
     internal class SqlClientQueryGenerator : BaseGenerator
     {
-        SqlClientQueryRead _queryReadGenerator = new SqlClientQueryRead();
-        SqlClientQueryScalarAndNonQuery _queryScalarAndNonQuery = new SqlClientQueryScalarAndNonQuery();
-        SqlClientCommandGenerator _commandGenerator = new SqlClientCommandGenerator();
+        private readonly SqlClientCommandGenerator _commandGenerator;
+        private readonly SqlClientQueryRead _queryReadGenerator;
+        private readonly SqlClientQueryScalarAndNonQuery _queryScalarAndNonQuery;
 
-        public void Generate(SqlClientQuery source)
+        public SqlClientQueryGenerator()
+        {
+            _commandGenerator = new SqlClientCommandGenerator();
+            _queryReadGenerator = new SqlClientQueryRead(_commandGenerator);
+            _queryScalarAndNonQuery = new SqlClientQueryScalarAndNonQuery(_commandGenerator);
+        }
+
+        public void Generate(SqlClientQuery source, InterfaceGenerator interfaceGenerator)
         {
             Reset();
             Start(source);
 
             if (source.QueryType.HasFlag(QueryType.Read))
             {
-                _queryReadGenerator.Generate(source, _methodCode);
+                _queryReadGenerator.Generate(source, _methodCode, interfaceGenerator);
             }
 
             if (source.QueryType.HasFlag(QueryType.Scalar))
             {
-                _queryScalarAndNonQuery.ScalarGenerate(source, _methodCode);
+                _queryScalarAndNonQuery.ScalarGenerate(source, _methodCode, interfaceGenerator);
             }
 
             if (source.QueryType.HasFlag(QueryType.NonQuery))
             {
-                _queryScalarAndNonQuery.NonQueryGenerate(source, _methodCode);
+                _queryScalarAndNonQuery.NonQueryGenerate(source, _methodCode, interfaceGenerator);
             }
 
-            _commandGenerator.Generate(source, _methodCode);
-            End();
+            _commandGenerator.Generate(source, _methodCode, interfaceGenerator);
+
+            EndClass();
+            EndNameSpace();
         }
 
-        private void Start(
-            SqlClientQuery source
-            )
+        public string Usings()
         {
-            _methodCode.Append($@"
-using System;
+            return @"using System;
 using System.Data;
 using System.Data.Common;
 using Microsoft.Data.SqlClient;
@@ -50,13 +54,33 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Runtime.CompilerServices;
+using System.Runtime.CompilerServices;";
+        }
 
-namespace {source.ContainTypeName.ContainingNamespace}
+        private void Start(
+            SqlClientQuery source
+            )
+        {
+            _methodCode.Append($@"
+{Usings()}
+
+namespace {source.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 {{
     {GeneratedClassDeclarationHelper.GCDeclarationName(source.ContainTypeName, source.MethodInfo, "SqlClient")}
     {{
 ");
+        }
+
+        private void EndClass()
+        {
+            _methodCode.Append($@"
+    }}");
+        }
+
+        private void EndNameSpace()
+        {
+            _methodCode.Append($@"
+}}");
         }
     }
 }

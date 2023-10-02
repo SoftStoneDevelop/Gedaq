@@ -1,9 +1,9 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
+using Microsoft.CodeAnalysis;
+using System;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 
 namespace Gedaq.Base.Batch
@@ -12,14 +12,21 @@ namespace Gedaq.Base.Batch
     {
         protected abstract ProviderInfo ProviderInfo { get; }
 
-        public void Generate(QueryBatchCommand source, StringBuilder builder)
+        public void Generate(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             CreateBatchItems(source, builder);
-            CreateBatchMethods(source, builder);
-            ExecuteBatchMethods(source, builder);
+            CreateBatchMethods(source, builder, interfaceGenerator);
+            ExecuteBatchMethods(source, builder, interfaceGenerator);
         }
 
-        private void CreateBatchItems(QueryBatchCommand source, StringBuilder builder)
+        private void CreateBatchItems(
+            QueryBatchCommand source, 
+            StringBuilder builder
+            )
         {
             if(!source.QueryType.HasFlag(QueryType.Read))
             {
@@ -37,38 +44,66 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        protected virtual void CreateBatchMethods(QueryBatchCommand source, StringBuilder builder)
+        protected virtual void CreateBatchMethods(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                CreateBatchMethod(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), MethodType.Sync, builder);
+                CreateBatchMethodInner(
+                    source, 
+                    ProviderInfo.DefaultSourceType(), 
+                    ProviderInfo.DefaultSourceTypeParametr(), 
+                    MethodType.Sync, 
+                    builder,
+                    interfaceGenerator
+                    );
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                CreateBatchMethod(source, ProviderInfo.DefaultSourceType(), ProviderInfo.DefaultSourceTypeParametr(), MethodType.Async, builder);
+                CreateBatchMethodInner(
+                    source,
+                    ProviderInfo.DefaultSourceType(),
+                    ProviderInfo.DefaultSourceTypeParametr(),
+                    MethodType.Async,
+                    builder,
+                    interfaceGenerator
+                    );
             }
 
-            SetParametrsMethod(source, builder);
+            SetParametrsMethodInner(source, builder, interfaceGenerator);
         }
 
-        protected void ExecuteBatchMethods(QueryBatchCommand source, StringBuilder builder)
+        protected void ExecuteBatchMethods(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             if (source.QueryType.HasFlag(QueryType.Read))
             {
                 BatchCommonBase.ThrowExceptionIfOutCannotExist(source);
                 if (source.MethodType.HasFlag(MethodType.Sync))
                 {
-                    StartExecuteBatch(source, MethodType.Sync, builder);
-                    ExecuteBatch(source, MethodType.Sync, builder);
-                    EndMethod(builder);
+                    ExecuteBatchInner(
+                        source, 
+                        MethodType.Sync, 
+                        builder, 
+                        interfaceGenerator
+                        );
                 }
 
                 if (source.MethodType.HasFlag(MethodType.Async))
                 {
-                    StartExecuteBatch(source, MethodType.Async, builder);
-                    ExecuteBatch(source, MethodType.Async, builder);
-                    EndMethod(builder);
+                    ExecuteBatchInner(
+                        source,
+                        MethodType.Async,
+                        builder,
+                        interfaceGenerator
+                        );
                 }
             }
 
@@ -76,23 +111,29 @@ namespace Gedaq.Base.Batch
             {
                 if (source.MethodType.HasFlag(MethodType.Sync))
                 {
-                    StartExecuteScalarBatch(source, MethodType.Sync, builder);
-                    ExecuteScalarBatch(source, MethodType.Sync, builder);
-                    EndMethod(builder);
+                    ExecuteScalarBatchInner(
+                        source, 
+                        MethodType.Sync, 
+                        builder, 
+                        interfaceGenerator
+                        );
                 }
 
                 if (source.MethodType.HasFlag(MethodType.Async))
                 {
                     BatchCommonBase.ThrowExceptionIfOutCannotExist(source);
-                    StartExecuteScalarBatch(source, MethodType.Async, builder);
-                    ExecuteScalarBatch(source, MethodType.Async, builder);
-                    EndMethod(builder);
+                    ExecuteScalarBatchInner(
+                        source,
+                        MethodType.Async,
+                        builder,
+                        interfaceGenerator
+                        );
                 }
             }
 
             if (source.QueryType.HasFlag(QueryType.NonQuery) && 
                 source.HaveParametrs && 
-                source.QueryBases().Any(a => a.query.HaveParametrs() && a.query.BaseParametrs().Any(an => an .HaveDirection))
+                source.QueryBases().Any(a => a.QueryBase.HaveParametrs() && a.QueryBase.BaseParametrs().Any(an => an.HaveDirection))
                 )
             {
                 //TODO
@@ -106,25 +147,38 @@ namespace Gedaq.Base.Batch
 ");
         }
 
+        public string BatchItemMethodName(
+            BatchPartBase batchPart,
+            MethodType methodType
+            )
+        {
+            if (methodType == MethodType.Sync)
+            {
+                return $"BatchItem{batchPart.Index}";
+            }
+            else
+            {
+                return $"BatchItem{batchPart.Index}Async";
+            }
+        }
+
         private void CreateBatchItem(
             QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder
             )
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().query.MapTypeName.GetFullTypeName(true) : "object";
+            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
             var async = methodType == MethodType.Sync ? "()" : "Async(cancellationToken).ConfigureAwait(false)";
             var await = methodType == MethodType.Sync ? "" : "await ";
 
-            int index = -1;
             foreach (var item in source.QueryBases())
             {
-                ++index;
                 if (methodType == MethodType.Sync)
                 {
                     builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static IEnumerable<{type}> BatchItem{index}({ProviderInfo.ReaderType()} reader)
+        private static IEnumerable<{type}> {BatchItemMethodName(item, methodType)}({ProviderInfo.ReaderType()} reader)
         {{
 ");
                 }
@@ -132,7 +186,7 @@ namespace Gedaq.Base.Batch
                 {
                     builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static async IAsyncEnumerable<{type}> BatchItem{index}Async(
+        private static async IAsyncEnumerable<{type}> {BatchItemMethodName(item, methodType)}(
             {ProviderInfo.ReaderType()} reader,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
@@ -144,7 +198,7 @@ namespace Gedaq.Base.Batch
             while({await}reader.Read{async})
             {{
 ");
-                MappingHelper.YieldItem(item.query, builder, ProviderInfo, source.AllSameTypes ? "" : "(object)");
+                MappingHelper.YieldItem(item.QueryBase, builder, ProviderInfo, source.AllSameTypes ? "" : "(object)");
                 builder.Append($@"
             }}
         }}
@@ -152,7 +206,7 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        protected abstract void CreateParametr(BaseParametr parametr, int index, StringBuilder builder);
+        protected abstract void CreateParametr(BaseParametr parametr, StringBuilder builder);
 
         protected virtual void CreateFakeCommand(string sourceParametrName, StringBuilder builder)
         {
@@ -164,43 +218,110 @@ namespace Gedaq.Base.Batch
 
         }
 
-        protected void CreateBatchMethod(
+        public string CreateBatchMethodName(
+            QueryBatchCommand source,
+            MethodType methodType
+            )
+        {
+            if (methodType == MethodType.Sync)
+            {
+                return $"Create{source.MethodName}Batch";
+            }
+            else
+            {
+                return $"Create{source.MethodName}BatchAsync";
+            }
+        }
+
+        public void CreateBatchMethodInner(
             QueryBatchCommand source,
             string sourceTypeName,
+            string sourceParametrName,
+            MethodType methodType,
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            CreateBatchMethodDefinition(
+                    source,
+                    sourceTypeName,
+                    sourceParametrName,
+                    methodType,
+                    builder
+                    );
+            if (source.AsPartInterface)
+            {
+                CreateBatchMethodDefinition(
+                    source,
+                    sourceTypeName,
+                    sourceParametrName,
+                    methodType,
+                    interfaceGenerator.DefinitionBuilder(),
+                    forInterface: true
+                    );
+                interfaceGenerator.AddMethodDefinition();
+            }
+
+            CreateBatchMethodBody(
+                source,
+                sourceParametrName,
+                methodType, 
+                builder
+                );
+        }
+
+        public void CreateBatchMethodDefinition(
+            QueryBatchCommand source,
+            string sourceTypeName,
+            string sourceParametrName,
+            MethodType methodType,
+            StringBuilder builder,
+            bool forInterface = false
+            )
+        {
+            var returnType = methodType == MethodType.Async ? $"{source.MethodInfo.AsyncResultType.ToResultType()}<{ProviderInfo.BatchType()}>" : ProviderInfo.BatchType();
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+
+            builder.Append($@"
+        {accessModifier} {source.MethodStaticModifier} {asyncKeyword} {returnType} {CreateBatchMethodName(source, methodType)}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
+
+            AddFormatParametrs(source, builder);
+            builder.Append($@",
+            bool prepare = false");
+
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@",
+            CancellationToken cancellationToken = default");
+
+            }
+
+            builder.Append($@"
+            )");
+        }
+
+        protected void CreateBatchMethodBody(
+            QueryBatchCommand source,
             string sourceParametrName,
             MethodType methodType,
             StringBuilder builder
             )
         {
             builder.Append($@"
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {(methodType == MethodType.Async ? $"async {source.MethodInfo.AsyncResultType.ToResultType()}<{ProviderInfo.BatchType()}>" : ProviderInfo.BatchType())} Create{source.MethodName}Batch{(methodType == MethodType.Async ? "Async" : "")}(
-            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}
-");
-            AddFormatParametrs(source, builder);
-            builder.Append($@",
-            bool prepare = false
-");
-
-            if (methodType == MethodType.Async)
-            {
-                builder.Append($@",
-            CancellationToken cancellationToken = default
-");
-            }
-
-            builder.Append($@"
-        )
         {{
-            var batch = {sourceParametrName}.CreateBatch();
+            var batch = {sourceParametrName}.CreateBatch();");
 
-");
             CreateFakeCommand(sourceParametrName, builder);
-            int index = -1;
             foreach (var item in source.QueryBases())
             {
-                ++index;
-                CreateBatchCommand(index, item, builder);
+                CreateBatchCommand(item, builder);
                 builder.Append($@"
             batch.BatchCommands.Add(command);
 ");
@@ -250,12 +371,11 @@ namespace Gedaq.Base.Batch
         }
 
         private void CreateBatchCommand(
-            int index,
-            (int number, QueryBaseCommand query) item,
+            BatchPartBase item,
             StringBuilder builder
             )
         {
-            if (index == 0)
+            if (item.Index == 0)
             {
                 builder.Append($@"
             var command = batch.CreateBatchCommand();
@@ -273,11 +393,11 @@ namespace Gedaq.Base.Batch
         }
 
         private void SetCommandParametrs(
-            (int number, QueryBaseCommand query) item,
+            BatchPartBase item,
             StringBuilder builder
             )
         {
-            if (!item.query.HaveParametrs())
+            if (!item.QueryBase.HaveParametrs())
             {
                 return;
             }
@@ -285,11 +405,9 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
             {{
 ");
-            int indexP = -1;
-            foreach (var parametr in item.query.BaseParametrs())
+            foreach (var parametr in item.QueryBase.BaseParametrs())
             {
-                ++indexP;
-                CreateParametr(parametr, indexP, builder);
+                CreateParametr(parametr, builder);
             }
 
             builder.Append($@"
@@ -298,22 +416,21 @@ namespace Gedaq.Base.Batch
         }
 
         private void SetQuery(
-            (int number, QueryBaseCommand query) item,
+            BatchPartBase item,
             StringBuilder builder
             )
         {
-            if (item.query.HaveFromatParametrs())
+            if (item.QueryBase.HaveFromatParametrs())
             {
                 builder.Append($@"
             command.CommandText = string.Format(@""
-{item.query.Query}
+{item.QueryBase.Query}
 ""
 ");
-                int index = 0;
-                foreach (var format in item.query.FormatParametrs)
+                foreach (var format in item.QueryBase.FormatParametrs)
                 {
                     builder.Append($@",
-{(format.HaveName ? $"{format.Name}Batch{item.number}" : $"format{index++.ToString()}Batch{item.number}")}
+{item.FormatName(format)}
 ");
                 }
 
@@ -326,7 +443,7 @@ namespace Gedaq.Base.Batch
             {
                 builder.Append($@"
             command.CommandText = @""
-{item.query.Query}
+{item.QueryBase.Query}
 "";
 ");
             }
@@ -344,65 +461,99 @@ namespace Gedaq.Base.Batch
 
             foreach (var item in source.QueryBases())
             {
-                if(!item.query.HaveFromatParametrs())
+                if(!item.QueryBase.HaveFromatParametrs())
                 {
                     continue;
                 }
 
-                int index = 0;
-                foreach (var format in item.query.FormatParametrs)
+                foreach (var format in item.QueryBase.FormatParametrs)
                 {
                     builder.Append($@",
-        System.String {(format.HaveName ? $"{format.Name}Batch{item.number.ToString()}" : $"format{index++.ToString()}Batch{item.number.ToString()}")}
+        System.String {item.FormatName(format)}
 ");
                 }
             }
         }
 
-        protected void SetParametrsMethod(
-            QueryBatchCommand source,
-            StringBuilder builder
+        public string SetParametrsMethodName(
+            QueryBatchCommand source
             )
         {
+            return $"Set{source.MethodName}Parametrs";
+        }
+
+        protected void SetParametrsMethodInner(
+            QueryBatchCommand source,
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            SetParametrsMethodDefinition(source, builder);
+            if (source.AsPartInterface)
+            {
+                SetParametrsMethodDefinition(
+                    source,
+                    interfaceGenerator.DefinitionBuilder(),
+                    forInterface: true
+                    );
+                interfaceGenerator.AddMethodDefinition();
+            }
+            SetParametrsMethodBody(source, builder);
+        }
+
+        protected void SetParametrsMethodDefinition(
+            QueryBatchCommand source,
+            StringBuilder builder,
+            bool forInterface = false
+            )
+        {
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+
             builder.Append($@"
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} void Set{source.MethodName}Parametrs(
-            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch
-");
-            if(source.HaveParametrs)
+        {accessModifier} {staticModifier} void {SetParametrsMethodName(source)}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch");
+
+            if (source.HaveParametrs)
             {
                 foreach (var batchCommand in source.QueryBases())
                 {
-                    if (!batchCommand.query.HaveParametrs())
+                    if (!batchCommand.QueryBase.HaveParametrs())
                     {
                         continue;
                     }
 
-                    foreach (var parametr in batchCommand.query.BaseParametrs())
+                    foreach (var parametr in batchCommand.QueryBase.BaseParametrs())
                     {
                         if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
                         {
                             builder.Append($@",
-            in {parametr.Type.GetFullTypeName(true)} {parametr.VariableName()}Batch{batchCommand.number}
-");
+            {parametr.Type.GetFullTypeName(true)} {batchCommand.VariableName(parametr)}");
                         }
                     }
                 }
             }
 
             builder.Append($@",
-            int? timeout = null
-");
+            int? timeout = null");
 
             if (ProviderInfo.CanSetTransaction)
             {
                 builder.Append($@",
-            {ProviderInfo.TransactionType()} transaction = null
-");
+            {ProviderInfo.TransactionType()} transaction = null");
+
             }
 
             builder.Append($@"
-        )
+            )");
+        }
+
+        protected void SetParametrsMethodBody(
+            QueryBatchCommand source,
+            StringBuilder builder
+            )
+        {
+            builder.Append($@"
         {{
 
             if(timeout.HasValue)
@@ -438,22 +589,18 @@ namespace Gedaq.Base.Batch
                 return;
             }
 
-            int indexBatch = -1;
             var commandBatchDefine = false;
             foreach (var batchCommand in source.QueryBases())
             {
-                ++indexBatch;
-                if (!batchCommand.query.HaveParametrs())
+                if (!batchCommand.QueryBase.HaveParametrs())
                 {
                     continue;
                 }
 
-                var indexP = -1;
                 var commandSet = false;
 
-                foreach (var parametr in batchCommand.query.BaseParametrs())
+                foreach (var parametr in batchCommand.QueryBase.BaseParametrs())
                 {
-                    ++indexP;
                     if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
                     {
                         continue;
@@ -462,7 +609,7 @@ namespace Gedaq.Base.Batch
                     if (commandBatchDefine && !commandSet)
                     {
                         builder.Append($@"
-            batchCommand = batch.BatchCommands[{indexBatch}];
+            batchCommand = batch.BatchCommands[{batchCommand.Index}];
 ");
                         commandSet = true;
                     }
@@ -470,7 +617,7 @@ namespace Gedaq.Base.Batch
                     if (!commandBatchDefine)
                     {
                         builder.Append($@"
-            var batchCommand = batch.BatchCommands[{indexBatch}];
+            var batchCommand = batch.BatchCommands[{batchCommand.Index}];
 ");
                         commandBatchDefine = true;
                         commandSet = true;
@@ -479,13 +626,13 @@ namespace Gedaq.Base.Batch
                     if (parametr.Type.IsNullableType())
                     {
                         builder.Append($@"
-            if({parametr.VariableName()}Batch{batchCommand.number}.HasValue)
+            if({batchCommand.VariableName(parametr)}.HasValue)
             {{
-                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number}.Value;
+                {ProviderInfo.GetParametrValue(parametr, "batchCommand")} = {batchCommand.VariableName(parametr)}.Value;
             }}
             else
             {{
-                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {ProviderInfo.GetNullValue(parametr)};
+                {ProviderInfo.GetParametrValue(parametr, "batchCommand")} = {ProviderInfo.GetNullValue(parametr)};
             }}
 ");
                     }
@@ -494,20 +641,20 @@ namespace Gedaq.Base.Batch
                         if (parametr.Type.IsReferenceType)
                         {
                             builder.Append($@"
-            if({parametr.VariableName()}Batch{batchCommand.number} == null)
+            if({batchCommand.VariableName(parametr)} == null)
             {{
-                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {ProviderInfo.GetNullValue(parametr)};
+                {ProviderInfo.GetParametrValue(parametr, "batchCommand")} = {ProviderInfo.GetNullValue(parametr)};
             }}
             else
             {{
-                {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number};
+                {ProviderInfo.GetParametrValue(parametr, "batchCommand")} = {batchCommand.VariableName(parametr)};
             }}
 ");
                         }
                         else
                         {
                             builder.Append($@"
-            {ProviderInfo.GetParametrValue(parametr, indexP, "batchCommand")} = {parametr.VariableName()}Batch{batchCommand.number};
+            {ProviderInfo.GetParametrValue(parametr, "batchCommand")} = {batchCommand.VariableName(parametr)};
 ");
                         }
                     }
@@ -515,33 +662,75 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        private void StartExecuteBatch(
+        public string ExecuteBatchMethodName(
             QueryBatchCommand source,
-            MethodType methodType,
-            StringBuilder builder
+            MethodType methodType
             )
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().query.MapTypeName.GetFullTypeName(true) : "object";
             if (methodType == MethodType.Sync)
             {
-                builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} IEnumerable<IEnumerable<{type}>> Execute{source.MethodName}Batch({source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch)
-        {{
-");
+                return $"Execute{source.MethodName}Batch";
             }
             else
             {
-                builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async IAsyncEnumerable<IAsyncEnumerable<{type}>> Execute{source.MethodName}BatchAsync(
-            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch,
-            [EnumeratorCancellation] CancellationToken cancellationToken = default
-            )
-        {{
-");
+                return $"Execute{source.MethodName}BatchAsync";
             }
         }
 
-        protected void ExecuteBatch(
+        public void ExecuteBatchInner(
+            QueryBatchCommand source,
+            MethodType methodType,
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            ExecuteBatchDefinition(source, methodType, builder);
+            if (source.AsPartInterface)
+            {
+                ExecuteBatchDefinition(
+                    source,
+                    methodType,
+                    interfaceGenerator.DefinitionBuilder(),
+                    forInterface: true
+                    );
+                interfaceGenerator.AddMethodDefinition();
+            }
+            ExecuteBatchBody(source, methodType, builder);
+        }
+
+        public void ExecuteBatchDefinition(
+            QueryBatchCommand source,
+            MethodType methodType,
+            StringBuilder builder,
+            bool forInterface = false
+            )
+        {
+            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
+            var returnType = methodType == MethodType.Async ? $"IAsyncEnumerable<IAsyncEnumerable<{type}>>" : $"IEnumerable<IEnumerable<{type}>>";
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+
+            builder.Append($@"
+        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {ExecuteBatchMethodName(source, methodType)}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch");
+
+            if (methodType == MethodType.Async)
+            {
+                var enumeratorCancellation = forInterface ? string.Empty : "[EnumeratorCancellation]";
+                builder.Append($@",
+            {enumeratorCancellation} CancellationToken cancellationToken = default");
+            }
+
+            builder.Append($@"
+            )");
+        }
+
+        protected void ExecuteBatchBody(
             QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder
@@ -552,6 +741,7 @@ namespace Gedaq.Base.Batch
             var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
 
             builder.Append($@"
+        {{
             {ProviderInfo.ReaderType()} reader = null;
             try
             {{
@@ -559,12 +749,10 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
                 reader = {await}batch.ExecuteReader{async};
 ");
-            int index = -1;
             foreach (var item in source.QueryBases())
             {
-                ++index;
                 builder.Append($@"
-                yield return BatchItem{index}{(methodType == MethodType.Async ? "Async(reader, cancellationToken)" : "(reader)")};
+                yield return {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
                 {await}reader.NextResult{async};
 ");
             }
@@ -589,43 +777,80 @@ namespace Gedaq.Base.Batch
                     {await}reader.Dispose{disposeAsync};
                 }}
             }}
+        }}
 ");
         }
 
-        private void StartExecuteScalarBatch(
+        public string ExecuteScalarBatchMethodName(
             QueryBatchCommand source,
-            MethodType methodType,
-            StringBuilder builder
+            MethodType methodType
             )
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().query.MapTypeName.GetFullTypeName(true) : "object";
-            BatchCommonBase.GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
             if (methodType == MethodType.Sync)
             {
-                builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} {typeName} {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Batch(
-            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch
-");
-                BatchCommonBase.WriteMethodParametrs(source, builder);
-
-                builder.Append($@"
-        )
-        {{
-");
+                return $"Execute{(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}Batch";
             }
             else
             {
-                builder.Append($@"
-        {source.AccessModifier.ToLowerInvariant()} {source.MethodStaticModifier} async {source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}> {(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}BatchAsync(
-            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch,
-            CancellationToken cancellationToken = default
-            )
-        {{
-");
+                return $"Execute{(((int)source.QueryType).IsPowerOfTwo() ? "" : "Scalar")}{source.MethodName}BatchAsync";
             }
         }
 
-        protected void ExecuteScalarBatch(
+        private void ExecuteScalarBatchInner(
+            QueryBatchCommand source,
+            MethodType methodType,
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            ExecuteScalarBatchDefinition(source, methodType, builder);
+            if (source.AsPartInterface)
+            {
+                ExecuteScalarBatchDefinition(
+                    source,
+                    methodType,
+                    interfaceGenerator.DefinitionBuilder(),
+                    forInterface: true
+                    );
+                interfaceGenerator.AddMethodDefinition();
+            }
+            ExecuteScalarBatchBody(source, methodType, builder);
+        }
+
+        private void ExecuteScalarBatchDefinition(
+            QueryBatchCommand source,
+            MethodType methodType,
+            StringBuilder builder,
+            bool forInterface = false
+            )
+        {
+            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
+            GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
+            var returnType = methodType == MethodType.Async ? $"{source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}>" : typeName;
+            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
+            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
+            var asyncKeyword =
+                methodType != MethodType.Async || forInterface ?
+                string.Empty :
+                "async"
+                ;
+
+            builder.Append($@"
+        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {ExecuteScalarBatchMethodName(source, methodType)}(
+            {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch");
+            AddMethodParametrs(source, builder);
+
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@",
+            CancellationToken cancellationToken = default");
+            }
+
+            builder.Append($@"
+            )");
+        }
+
+        protected void ExecuteScalarBatchBody(
             QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder
@@ -634,7 +859,9 @@ namespace Gedaq.Base.Batch
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
-            BatchCommonBase.GetScalarType(source, ProviderInfo, out var type, out var isRowAffected, out var typeName);
+            GetScalarType(source, ProviderInfo, out var type, out var isRowAffected, out var typeName);
+            builder.Append($@"
+        {{");
             if (isRowAffected || (!type.IsNullableType() && !type.IsReferenceType))
             {
                 builder.Append($@"
@@ -659,22 +886,275 @@ namespace Gedaq.Base.Batch
 
             if(source.HaveParametrs)
             {
-                int index = -1;
                 foreach (var item in source.QueryBases())
                 {
-                    ++index;
-                    if (!item.query.HaveParametrs())
+                    if (!item.QueryBase.HaveParametrs())
                     {
                         continue;
                     }
 
-                    BatchCommonBase.SetOutAndReturnParametrs(source, builder, ProviderInfo);
+                    SetOutAndReturnParametrs(source, builder, ProviderInfo);
                 }
             }
 
             builder.Append($@"
             return result;
+        }}
 ");
+        }
+
+        public void SetOutAndReturnParametrs(
+            QueryBatchCommand batch,
+            StringBuilder builder,
+            ProviderInfo providerInfo
+            )
+        {
+            foreach (var item in batch.QueryBases())
+            {
+                if (!item.QueryBase.HaveParametrs())
+                {
+                    continue;
+                }
+
+                foreach (var parametr in item.QueryBase.BaseParametrs())
+                {
+                    if (parametr.Direction == System.Data.ParameterDirection.ReturnValue ||
+                    parametr.Direction == System.Data.ParameterDirection.Output ||
+                    parametr.Direction == System.Data.ParameterDirection.InputOutput
+                    )
+                    {
+                        builder.Append($@"
+                    {item.VariableName(parametr, BaseParametr.VariablePostfix(parametr.Direction))} = ({parametr.Type.GetFullTypeName(true)}){providerInfo.GetParametrValue(parametr, $"batch.BatchCommands[{item.Index}]")};
+");
+                    }
+                }
+            }
+        }
+
+        public void WriteSetParametrs(QueryBatchCommand batch, StringBuilder builder, ProviderInfo providerInfo)
+        {
+            var isStatic = batch.ContainTypeName.GCIsStatic();
+            if (isStatic)
+            {
+                builder.Append($@"
+                batch.{SetParametrsMethodName(batch)}(
+");
+            }
+            else
+            {
+                builder.Append($@"
+                {SetParametrsMethodName(batch)}(
+                    batch
+");
+            }
+
+            var haveSuccessIteration = false;
+            if (batch.HaveParametrs)
+            {
+                foreach (var item in batch.QueryBases())
+                {
+                    if (!item.QueryBase.HaveParametrs())
+                    {
+                        continue;
+                    }
+
+                    if (!isStatic || haveSuccessIteration)
+                    {
+                        builder.Append($@",");
+                    }
+
+                    var afterFirst = false;
+                    foreach (var parametr in item.QueryBase.BaseParametrs())
+                    {
+                        if (parametr.Direction != System.Data.ParameterDirection.Input && parametr.Direction != System.Data.ParameterDirection.InputOutput)
+                        {
+                            continue;
+                        }
+
+                        if (afterFirst)
+                        {
+                            builder.Append($@",");
+                        }
+
+                        builder.Append($@"
+                    {item.VariableName(parametr)}
+");
+
+                        afterFirst |= true;
+                    }
+
+                    haveSuccessIteration |= true;
+                }
+            }
+
+            builder.Append($@"{(!isStatic || haveSuccessIteration ? "," : "")}
+                    timeout
+");
+
+            if (providerInfo.CanSetTransaction)
+            {
+                builder.Append($@",
+                    transaction
+");
+            }
+
+            builder.Append($@"
+                    );");
+        }
+
+        public void CreateCommand(
+            QueryBatchCommand source,
+            string sourceParametrName,
+            MethodType methodType,
+            StringBuilder builder
+            )
+        {
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@"
+                await {CreateBatchMethodName(source, methodType)}({sourceParametrName}
+");
+            }
+            else
+            {
+                builder.Append($@"
+                {CreateBatchMethodName(source, methodType)}({sourceParametrName}
+");
+            }
+
+            PassFormatParametrs(source, builder);
+
+            if (methodType == MethodType.Async)
+            {
+                builder.Append($@"
+                , false, cancellationToken)
+");
+            }
+            else
+            {
+                builder.Append($@"
+                , false)
+");
+            }
+        }
+
+        private void PassFormatParametrs(
+            QueryBatchCommand source,
+            StringBuilder builder
+            )
+        {
+            if (!source.HaveFormatParametrs)
+            {
+                return;
+            }
+
+            foreach (var item in source.QueryBases())
+            {
+                if (!item.QueryBase.HaveFromatParametrs())
+                {
+                    continue;
+                }
+
+                foreach (var format in item.QueryBase.FormatParametrs)
+                {
+                    builder.Append($@",
+                {item.FormatName(format)}
+");
+                }
+            }
+        }
+
+        public void AddMethodParametrs(
+            QueryBatchCommand source,
+            StringBuilder builder
+            )
+        {
+            if (!source.HaveParametrs && !source.HaveFormatParametrs)
+            {
+                return;
+            }
+
+            foreach (var item in source.QueryBases())
+            {
+                AddParametrs(item, builder);
+                AddFormatParametrs(item, builder);
+            }
+        }
+
+        private void AddParametrs(
+            BatchPartBase item,
+            StringBuilder builder
+            )
+        {
+            if (!item.QueryBase.HaveParametrs())
+            {
+                return;
+            }
+
+            foreach (var parametr in item.QueryBase.BaseParametrs())
+            {
+                if (parametr.Direction == System.Data.ParameterDirection.Input || parametr.Direction == System.Data.ParameterDirection.InputOutput)
+                {
+                    builder.Append($@",
+            {parametr.Type.GetFullTypeName(true)} {parametr.VariableName(BaseParametr.VariablePostfix(System.Data.ParameterDirection.Input))}Batch{item.Number}");
+                }
+
+                CommandParametrsHelper.AddOutParametrs(parametr, builder, $"Batch{item.Number}");
+            }
+        }
+
+        private void AddFormatParametrs(
+            BatchPartBase item,
+            StringBuilder builder
+            )
+        {
+            if (!item.QueryBase.HaveFromatParametrs())
+            {
+                return;
+            }
+
+            foreach (var format in item.QueryBase.FormatParametrs)
+            {
+                builder.Append($@",
+        System.String {item.FormatName(format)}");
+            }
+        }
+
+        public void GetScalarType(
+            QueryBatchCommand source,
+            ProviderInfo providerInfo,
+            out ITypeSymbol type,
+            out bool isRowAffected,
+            out string typeName
+            )
+        {
+            var first = source.QueryBases().First().QueryBase;
+            if (first.Aliases.IsRowsAffected)
+            {
+                if (source.QueryType != Enums.QueryType.NonQuery)
+                {
+                    throw new Exception("Use NonQuery for update/delete/inser command");
+                }
+
+                isRowAffected = true;
+                type = null;
+                typeName = "System.Int32";
+                return;
+            }
+
+            isRowAffected = false;
+            if (providerInfo.IsKnownProviderType(first.MapTypeName) || providerInfo.IsSpecialHandlerType(first.MapTypeName))
+            {
+                type = first.MapTypeName;
+                typeName = type.GetFullTypeName(replaceNullable: true);
+                return;
+            }
+
+            var firstField = first.Aliases.AllFieldsOrderByPosition().First();
+            first.MapTypeName.GetPropertyOrFieldName(firstField.Name, out _, out var typeProp);
+            type = typeProp;
+            typeName = type.GetFullTypeName(replaceNullable: true);
+            return;
         }
     }
 };

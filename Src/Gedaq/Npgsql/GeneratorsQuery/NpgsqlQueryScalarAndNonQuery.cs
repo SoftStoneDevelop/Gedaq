@@ -2,14 +2,8 @@
 using Gedaq.Base.Model;
 using Gedaq.Base.Query;
 using Gedaq.Enums;
-using Gedaq.Helpers;
-using Gedaq.MySqlConnector;
-using Gedaq.Npgsql.Enums;
 using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
-using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace Gedaq.Npgsql.GeneratorsQuery
@@ -17,197 +11,155 @@ namespace Gedaq.Npgsql.GeneratorsQuery
     internal class NpgsqlQueryScalarAndNonQuery : QueryScalarNonQueryBase
     {
         private readonly NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
+
+        public NpgsqlQueryScalarAndNonQuery(NpgsqlCommand commandGenerator) : base(commandGenerator)
+        {
+
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void NonQueryMethod(QueryBaseCommand source, StringBuilder builder)
+        protected override void NonQueryMethod(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
-                StartNonQueryMethod(source, MethodType.Sync, builder);
-                QueryMethodParametrs(
-                    source, 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
-                    builder,
-                    true
-                    );
-                EndMethodParametrs(builder, MethodType.Sync);
-                MethodBody(
-                    source, 
-                    true, 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
-                    MethodType.Sync, 
-                    QueryType.NonQuery, 
-                    builder
-                    );
-                EndMethod(builder);
-            }
-
-            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
-            {
-                StartNonQueryMethod(source, MethodType.Sync, builder);
-                QueryMethodParametrs(
-                    source, 
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), 
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
-                    builder,
-                    true
-                    );
-                EndMethodParametrs(builder, MethodType.Sync);
-                MethodBody(
-                    source, 
-                    false, 
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
-                    MethodType.Sync, 
-                    QueryType.NonQuery, 
-                    builder
-                    );
-                EndMethod(builder);
-            }
-        }
-
-        protected override void NonQueryMethodAsync(QueryBaseCommand source, StringBuilder builder)
-        {
-            var query = (NpgsqlQuery)source;
-            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
-            {
-                StartNonQueryMethod(source, MethodType.Async, builder);
-                QueryMethodParametrs(
-                    source, 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
-                    builder,
-                    false
-                    );
-                EndMethodParametrs(builder, MethodType.Async);
-                MethodBody(
+                NonQueryMethodInner(
                     source,
-                    true, 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
-                    MethodType.Async, 
-                    QueryType.NonQuery, 
-                    builder
+                    MethodType.Sync,
+                    builder,
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(),
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
+                    useInAndOut: true,
+                    needCheckOpen: true,
+                    interfaceGenerator
                     );
-                EndMethod(builder);
             }
 
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
-                StartNonQueryMethod(source, MethodType.Async, builder);
-                QueryMethodParametrs(
-                    source, 
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), 
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
+                NonQueryMethodInner(
+                    source,
+                    MethodType.Sync,
                     builder,
-                    false
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
+                    useInAndOut: true,
+                    needCheckOpen: false,
+                    interfaceGenerator
                     );
-                EndMethodParametrs(builder, MethodType.Async);
-                MethodBody(
-                    source, 
-                    false, 
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
-                    MethodType.Async, 
-                    QueryType.NonQuery, 
-                    builder
-                    );
-                EndMethod(builder);
             }
         }
 
-        protected override void ScalarMethod(QueryBaseCommand source, StringBuilder builder)
+        protected override void NonQueryMethodAsync(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
-                StartScalarMethod(source, MethodType.Sync, builder);
-                QueryMethodParametrs(
-                    source, 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
+                NonQueryMethodInner(
+                    source,
+                    MethodType.Async,
                     builder,
-                    true
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(),
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
+                    useInAndOut: false,
+                    needCheckOpen: true,
+                    interfaceGenerator
                     );
-                EndMethodParametrs(builder, MethodType.Sync);
-                MethodBody(
-                    source, 
-                    true, 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
-                    MethodType.Sync, 
-                    QueryType.Scalar, 
-                    builder
-                    );
-                EndMethod(builder);
             }
 
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
-                StartScalarMethod(source, MethodType.Sync, builder);
-                QueryMethodParametrs(
-                    source, 
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), 
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
+                NonQueryMethodInner(
+                    source,
+                    MethodType.Async,
                     builder,
-                    true
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
+                    useInAndOut: false,
+                    needCheckOpen: false,
+                    interfaceGenerator
                     );
-                EndMethodParametrs(builder, MethodType.Sync);
-                MethodBody(
-                    source, 
-                    false, 
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
-                    MethodType.Sync, 
-                    QueryType.Scalar, 
-                    builder
-                    );
-                EndMethod(builder);
             }
         }
 
-        protected override void ScalarMethodAsync(QueryBaseCommand source, StringBuilder builder)
+        protected override void ScalarMethod(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
-                StartScalarMethod(source, MethodType.Async, builder);
-                QueryMethodParametrs(
-                    source, 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
+                ScalarMethodInner(
+                    source,
+                    MethodType.Sync,
                     builder,
-                    false
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(),
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
+                    useInAndOut: true,
+                    needCheckOpen: true,
+                    interfaceGenerator
                     );
-                EndMethodParametrs(builder, MethodType.Async);
-                MethodBody(
-                    source, 
-                    true, 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
-                    MethodType.Async, 
-                    QueryType.Scalar, 
-                    builder
-                    );
-                EndMethod(builder);
             }
 
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
-                StartScalarMethod(source, MethodType.Async, builder);
-                QueryMethodParametrs(
-                    source, 
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(), 
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
+                ScalarMethodInner(
+                    source,
+                    MethodType.Sync,
                     builder,
-                    false
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
+                    useInAndOut: true,
+                    needCheckOpen: false,
+                    interfaceGenerator
                     );
-                EndMethodParametrs(builder, MethodType.Async);
-                MethodBody(
-                    source, 
-                    false, 
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(), 
-                    MethodType.Async, 
-                    QueryType.Scalar, 
-                    builder
+            }
+        }
+
+        protected override void ScalarMethodAsync(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            var query = (NpgsqlQuery)source;
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
+            {
+                ScalarMethodInner(
+                    source,
+                    MethodType.Async,
+                    builder,
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(),
+                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
+                    useInAndOut: false,
+                    needCheckOpen: true,
+                    interfaceGenerator
                     );
-                EndMethod(builder);
+            }
+
+            if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
+            {
+                ScalarMethodInner(
+                    source,
+                    MethodType.Async,
+                    builder,
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
+                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
+                    useInAndOut: false,
+                    needCheckOpen: false,
+                    interfaceGenerator
+                    );
             }
         }
     }

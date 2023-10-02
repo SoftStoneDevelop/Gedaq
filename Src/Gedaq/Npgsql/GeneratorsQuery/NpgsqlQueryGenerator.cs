@@ -1,48 +1,59 @@
 ﻿using Gedaq.Base;
-using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Enums;
-using Gedaq.Npgsql.Helpers;
 using Gedaq.Npgsql.Model;
-using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 
 namespace Gedaq.Npgsql.GeneratorsQuery
 {
     internal class NpgsqlQueryGenerator : BaseGenerator
     {
-        NpgsqlQueryRead _queryReadGenerator = new NpgsqlQueryRead();
-        NpgsqlQueryScalarAndNonQuery _queryScalarAndNonQuery = new NpgsqlQueryScalarAndNonQuery();
-        NpgsqlCommand _commandGenerator = new NpgsqlCommand();
+        private readonly NpgsqlQueryRead _queryReadGenerator;
+        private readonly NpgsqlQueryScalarAndNonQuery _queryScalarAndNonQuery;
+        private readonly NpgsqlCommand _commandGenerator;
 
-        public void GenerateMethod(NpgsqlQuery source)
+        public NpgsqlQueryGenerator()
+        {
+            _commandGenerator = new NpgsqlCommand();
+            _queryReadGenerator = new NpgsqlQueryRead(_commandGenerator);
+            _queryScalarAndNonQuery = new NpgsqlQueryScalarAndNonQuery(_commandGenerator);
+        }
+
+        public void GenerateMethod(NpgsqlQuery source, InterfaceGenerator interfaceGenerator)
         {
             Reset();
             Start(source);
 
             if (source.QueryType.HasFlag(QueryType.Read))
             {
-                _queryReadGenerator.Generate(source, _methodCode);
+                _queryReadGenerator.Generate(source, _methodCode, interfaceGenerator);
             }
 
             if (source.QueryType.HasFlag(QueryType.Scalar))
             {
-                _queryScalarAndNonQuery.ScalarGenerate(source, _methodCode);
+                _queryScalarAndNonQuery.ScalarGenerate(source, _methodCode, interfaceGenerator);
             }
 
             if (source.QueryType.HasFlag(QueryType.NonQuery))
             {
-                _queryScalarAndNonQuery.NonQueryGenerate(source, _methodCode);
+                _queryScalarAndNonQuery.NonQueryGenerate(source, _methodCode, interfaceGenerator);
             }
 
-            _commandGenerator.Generate(source, _methodCode);
+            _commandGenerator.Generate(source, _methodCode, interfaceGenerator);
 
-            End();
+            EndClass();
+            EndNameSpace();
+        }
+
+        public string Usings()
+        {
+            return @"using Npgsql;
+using System;
+using System.Data;
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Runtime.CompilerServices;";
         }
 
         private void Start(
@@ -50,20 +61,25 @@ namespace Gedaq.Npgsql.GeneratorsQuery
             )
         {
             _methodCode.Append($@"
-using Npgsql;
-using System;
-using System.Data;
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Runtime.CompilerServices;
+{Usings()}
 
-namespace {source.ContainTypeName.ContainingNamespace}
+namespace {source.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 {{
     {GeneratedClassDeclarationHelper.GCDeclarationName(source.ContainTypeName, source.MethodInfo, "Npgsql")}
     {{
 ");
+        }
+
+        private void EndClass()
+        {
+            _methodCode.Append($@"
+    }}");
+        }
+
+        private void EndNameSpace()
+        {
+            _methodCode.Append($@"
+}}");
         }
     }
 }

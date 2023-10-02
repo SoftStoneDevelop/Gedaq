@@ -13,7 +13,7 @@ namespace Gedaq.Npgsql.Helpers
             if(parametr.HaveNameInCommand && parametr.HaveNpgSqlDbType)
             {
                 builder.Append($@"
-                var parametr{parametr.Position} = new NpgsqlParameter(""{parametr.NameInCommand}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName})({parametr.NpgSqlDbType}));
+                var parametr = new NpgsqlParameter(""{parametr.NameInCommand}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName})({parametr.NpgSqlDbType}));
 ");
                 SetParametrs(
                     parametr,
@@ -33,7 +33,7 @@ namespace Gedaq.Npgsql.Helpers
             }
 
             builder.Append($@"
-                var parametr{parametr.Position} = new NpgsqlParameter();
+                var parametr = new NpgsqlParameter();
 ");
             SetParametrs(
                 parametr,
@@ -56,7 +56,7 @@ namespace Gedaq.Npgsql.Helpers
             if (parametr.HaveNameInCommand && parametr.HaveNpgSqlDbType)
             {
                 builder.Append($@"
-                var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>(""{parametr.NameInCommand}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType});
+                var parametr = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>(""{parametr.NameInCommand}"", ({NpgsqlMapTypeHelper.NpgsqlDbTypeName}){parametr.NpgSqlDbType});
 ");
                 SetParametrs(
                     parametr,
@@ -76,7 +76,7 @@ namespace Gedaq.Npgsql.Helpers
             }
 
             builder.Append($@"
-                var parametr{parametr.Position} = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>();
+                var parametr = new NpgsqlParameter<{parametr.Type.GetFullTypeName()}>();
 ");
             SetParametrs(
                 parametr,
@@ -112,75 +112,75 @@ namespace Gedaq.Npgsql.Helpers
             if (setNpgSqlDbType)
             {
                 builder.Append($@"
-                parametr{parametr.Position}.NpgsqlDbType = ({NpgsqlMapTypeHelper.NpgsqlDbTypeName})({parametr.NpgSqlDbType});
+                parametr.NpgsqlDbType = ({NpgsqlMapTypeHelper.NpgsqlDbTypeName})({parametr.NpgSqlDbType});
 ");
             }
 
             if (setHaveName)
             {
                 builder.Append($@"
-                parametr{parametr.Position}.ParameterName = ""{parametr.NameInCommand}"";
+                parametr.ParameterName = ""{parametr.NameInCommand}"";
 ");
             }
 
             if (setHaveSize)
             {
                 builder.Append($@"
-                parametr{parametr.Position}.Size = {parametr.Size};
+                parametr.Size = {parametr.Size};
 ");
             }
 
             if (setNullable)
             {
                 builder.Append($@"
-                parametr{parametr.Position}.IsNullable = true;
+                parametr.IsNullable = true;
 ");
             }
 
             if (setDirection)
             {
                 builder.Append($@"
-                parametr{parametr.Position}.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
+                parametr.Direction = System.Data.ParameterDirection.{parametr.Direction.ToString()};
 ");
             }
 
             if (setSourceColumn)
             {
                 builder.Append($@"
-                parametr{parametr.Position}.SourceColumn = ""{parametr.SourceColumn}"";
+                parametr.SourceColumn = ""{parametr.SourceColumn}"";
 ");
             }
 
             if (setSourceColumnNullMapping)
             {
                 builder.Append($@"
-                parametr{parametr.Position}.SourceColumnNullMapping = true;
+                parametr.SourceColumnNullMapping = true;
 ");
             }
 
             if (setSourceVersion)
             {
                 builder.Append($@"
-                parametr{parametr.Position}.SourceVersion = System.Data.DataRowVersion.{parametr.SourceVersion.ToString()};
+                parametr.SourceVersion = System.Data.DataRowVersion.{parametr.SourceVersion.ToString()};
 ");
             }
 
             if (setScale)
             {
                 builder.Append($@"
-                parametr{parametr.Position}.Scale = {parametr.Scale};
+                parametr.Scale = {parametr.Scale};
 ");
             }
 
             if (setPrecision)
             {
                 builder.Append($@"
-                parametr{parametr.Position}.Precision = {parametr.Precision};
+                parametr.Precision = {parametr.Precision};
 ");
             }
         }
 
-        public static void CreateParametr(BaseParametr baseParametr, int index, StringBuilder builder)
+        public static void CreateParametr(BaseParametr baseParametr, StringBuilder builder)
         {
             var parametr = (NpgsqlParametr)baseParametr;
             if (parametr.Type.IsNullableType())
@@ -193,7 +193,7 @@ namespace Gedaq.Npgsql.Helpers
             }
 
             builder.Append($@"
-                command.Parameters.Add(parametr{parametr.Position});
+                command.Parameters.Add(parametr);
 ");
         }
     }
