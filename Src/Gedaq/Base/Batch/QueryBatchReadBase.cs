@@ -17,52 +17,54 @@ namespace Gedaq.Base.Batch
 
         protected abstract ProviderInfo ProviderInfo { get; }
 
-        public void Generate(QueryBatchCommand source, StringBuilder builder)
+        public void Generate(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                ReadMethod(source, builder);
+                ReadMethod(source, builder, interfaceGenerator);
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                ReadAsyncMethod(source, builder);
+                ReadAsyncMethod(source, builder, interfaceGenerator);
             }
         }
 
-        protected virtual void ReadMethod(QueryBatchCommand source, StringBuilder builder)
+        protected virtual void ReadMethod(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
-            ReadMethodDefinition(
+            ReadMethodInner(
                 source,
-                MethodType.Sync, 
+                MethodType.Sync,
                 builder,
-                ProviderInfo.DefaultSourceType(), 
-                ProviderInfo.DefaultSourceTypeParametr()
-                );
-            ReadMethodBody(
-                source,
-                needCheckOpen: true, 
-                ProviderInfo.DefaultSourceTypeParametr(), 
-                MethodType.Sync, 
-                builder
+                ProviderInfo.DefaultSourceType(),
+                ProviderInfo.DefaultSourceTypeParametr(),
+                needCheckOpen: true,
+                interfaceGenerator
                 );
         }
 
-        protected virtual void ReadAsyncMethod(QueryBatchCommand source, StringBuilder builder)
+        protected virtual void ReadAsyncMethod(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
-            ReadMethodDefinition(
+            ReadMethodInner(
                 source,
                 MethodType.Async,
                 builder,
                 ProviderInfo.DefaultSourceType(),
-                ProviderInfo.DefaultSourceTypeParametr()
-                );
-            ReadMethodBody(
-                source,
-                needCheckOpen: true, 
-                ProviderInfo.DefaultSourceTypeParametr(), 
-                MethodType.Async, 
-                builder
+                ProviderInfo.DefaultSourceTypeParametr(),
+                needCheckOpen: true,
+                interfaceGenerator
                 );
         }
 
@@ -81,7 +83,45 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        protected void ReadMethodDefinition(
+        protected void ReadMethodInner(
+            QueryBatchCommand source,
+            MethodType methodType,
+            StringBuilder builder,
+            string sourceTypeName,
+            string sourceParametrName,
+            bool needCheckOpen,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            ReadMethodDefinition(
+                source,
+                methodType,
+                builder,
+                sourceTypeName,
+                sourceParametrName
+                );
+            if (source.AsPartInterface)
+            {
+                ReadMethodDefinition(
+                    source,
+                    methodType,
+                    interfaceGenerator.DefinitionBuilder(),
+                    sourceTypeName,
+                    sourceParametrName,
+                    forInterface: true
+                    );
+                interfaceGenerator.AddMethodDefinition();
+            }
+            ReadMethodBody(
+                source,
+                needCheckOpen: needCheckOpen,
+                sourceParametrName,
+                methodType,
+                builder
+                );
+        }
+
+        private void ReadMethodDefinition(
             QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder,
@@ -127,7 +167,7 @@ namespace Gedaq.Base.Batch
             )");
         }
 
-        protected void ReadMethodBody(
+        private void ReadMethodBody(
             QueryBatchCommand source,
             bool needCheckOpen,
             string sourceParametrName,

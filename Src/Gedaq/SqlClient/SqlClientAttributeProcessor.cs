@@ -113,11 +113,19 @@ namespace Gedaq.SqlClient
         public override void GenerateAndSaveMethods(SourceProductionContext context, CancellationToken cancellationToken)
         {
             var readGenerator = new SqlClientQueryGenerator();
+            var interfaceGenerator = new InterfaceGenerator();
             foreach (var queryRead in _read)
             {
                 cancellationToken.ThrowIfCancellationRequested();
-                readGenerator.Generate(queryRead);
+                interfaceGenerator.Reset();
+                readGenerator.Generate(queryRead, interfaceGenerator);
                 context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}SqlClient.g.cs", readGenerator.GetCode());
+                interfaceGenerator.GenerateAndSave(
+                    context,
+                    queryRead.PartInterfaceType,
+                    readGenerator.Usings(),
+                    $"{queryRead.ContainTypeName.Name}{queryRead.MethodName}"
+                    );
             }
             _read.Clear();
         }

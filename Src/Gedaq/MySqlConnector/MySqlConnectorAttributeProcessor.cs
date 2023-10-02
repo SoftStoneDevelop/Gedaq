@@ -1,5 +1,6 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.MySqlConnector.GeneratorsBatch;
@@ -230,12 +231,20 @@ namespace Gedaq.MySqlConnector
 
         public override void GenerateAndSaveMethods(SourceProductionContext context, CancellationToken cancellationToken)
         {
+            var interfaceGenerator = new InterfaceGenerator();
             var readGenerator = new MySqlConnectorQueryGenerator();
             foreach (var queryRead in _read)
             {
                 cancellationToken.ThrowIfCancellationRequested();
-                readGenerator.GenerateMethod(queryRead);
+                interfaceGenerator.Reset();
+                readGenerator.GenerateMethod(queryRead, interfaceGenerator);
                 context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}MySqlConnector.g.cs", readGenerator.GetCode());
+                interfaceGenerator.GenerateAndSave(
+                    context,
+                    queryRead.PartInterfaceType,
+                    readGenerator.Usings(),
+                    $"{queryRead.ContainTypeName.Name}{queryRead.MethodName}"
+                    );
             }
             _read.Clear();
 
@@ -243,8 +252,15 @@ namespace Gedaq.MySqlConnector
             foreach (var batchRead in _readBatch)
             {
                 cancellationToken.ThrowIfCancellationRequested();
-                batchReadGenerator.GenerateMethod(batchRead);
+                interfaceGenerator.Reset();
+                batchReadGenerator.GenerateMethod(batchRead, interfaceGenerator);
                 context.AddSource($"{batchRead.ContainTypeName.Name}{batchRead.MethodName}MySqlConnector.g.cs", batchReadGenerator.GetCode());
+                interfaceGenerator.GenerateAndSave(
+                    context,
+                    batchRead.PartInterfaceType,
+                    readGenerator.Usings(),
+                    $"{batchRead.ContainTypeName.Name}{batchRead.MethodName}"
+                    );
             }
             _readBatch.Clear();
         }

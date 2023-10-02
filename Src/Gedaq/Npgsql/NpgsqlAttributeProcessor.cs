@@ -311,12 +311,20 @@ namespace Gedaq.Npgsql
 
         public override void GenerateAndSaveMethods(SourceProductionContext context, CancellationToken cancellationToken)
         {
+            var interfaceGenerator = new InterfaceGenerator();
             var readGenerator = new NpgsqlQueryGenerator();
             foreach (var queryRead in _read)
             {
                 cancellationToken.ThrowIfCancellationRequested();
-                readGenerator.GenerateMethod(queryRead);
+                interfaceGenerator.Reset();
+                readGenerator.GenerateMethod(queryRead, interfaceGenerator);
                 context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}Npgsql.g.cs", readGenerator.GetCode());
+                interfaceGenerator.GenerateAndSave(
+                    context,
+                    queryRead.PartInterfaceType,
+                    readGenerator.Usings(),
+                    $"{queryRead.ContainTypeName.Name}{queryRead.MethodName}"
+                    );
             }
             _read.Clear();
 
@@ -324,8 +332,15 @@ namespace Gedaq.Npgsql
             foreach (var batchRead in _readBatch)
             {
                 cancellationToken.ThrowIfCancellationRequested();
-                batchReadGenerator.GenerateMethod(batchRead);
+                interfaceGenerator.Reset();
+                batchReadGenerator.GenerateMethod(batchRead, interfaceGenerator);
                 context.AddSource($"{batchRead.ContainTypeName.Name}{batchRead.MethodName}Npgsql.g.cs", batchReadGenerator.GetCode());
+                interfaceGenerator.GenerateAndSave(
+                    context,
+                    batchRead.PartInterfaceType,
+                    readGenerator.Usings(),
+                    $"{batchRead.ContainTypeName.Name}{batchRead.MethodName}"
+                    );
             }
             _readBatch.Clear();
 
@@ -333,8 +348,15 @@ namespace Gedaq.Npgsql
             foreach (var binaryExport in _binaryExports)
             {
                 cancellationToken.ThrowIfCancellationRequested();
+                interfaceGenerator.Reset();
                 binaryExportGenerator.Generate(binaryExport);
                 context.AddSource($"{binaryExport.ContainTypeName.Name}{binaryExport.MethodName}Npgsql.g.cs", binaryExportGenerator.GetCode());
+                interfaceGenerator.GenerateAndSave(
+                    context,
+                    binaryExport.PartInterfaceType,
+                    readGenerator.Usings(),
+                    $"{binaryExport.ContainTypeName.Name}{binaryExport.MethodName}"
+                    );
             }
             _binaryExports.Clear();
 
@@ -342,8 +364,15 @@ namespace Gedaq.Npgsql
             foreach (var binaryImport in _binaryImports)
             {
                 cancellationToken.ThrowIfCancellationRequested();
+                interfaceGenerator.Reset();
                 binaryImportGenerator.Generate(binaryImport);
                 context.AddSource($"{binaryImport.ContainTypeName.Name}{binaryImport.MethodName}Npgsql.g.cs", binaryImportGenerator.GetCode());
+                interfaceGenerator.GenerateAndSave(
+                    context,
+                    binaryImport.PartInterfaceType,
+                    readGenerator.Usings(),
+                    $"{binaryImport.ContainTypeName.Name}{binaryImport.MethodName}"
+                    );
             }
             _binaryImports.Clear();
         }

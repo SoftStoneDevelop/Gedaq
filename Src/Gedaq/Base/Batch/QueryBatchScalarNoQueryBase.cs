@@ -17,105 +17,105 @@ namespace Gedaq.Base.Batch
 
         protected abstract ProviderInfo ProviderInfo { get; }
 
-        public void GenerateScalar(QueryBatchCommand source, StringBuilder builder)
+        public void GenerateScalar(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                ScalarMethod(source, builder);
+                ScalarMethod(source, builder, interfaceGenerator);
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                ScalarMethodAsync(source, builder);
+                ScalarMethodAsync(source, builder, interfaceGenerator);
             }
         }
 
-        public void GenerateNonQuery(QueryBatchCommand source, StringBuilder builder)
+        public void GenerateNonQuery(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                NonQueryMethod(source, builder);
+                NonQueryMethod(source, builder, interfaceGenerator);
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                NonQueryMethodAsync(source, builder);
+                NonQueryMethodAsync(source, builder, interfaceGenerator);
             }
         }
 
-        protected virtual void ScalarMethod(QueryBatchCommand source, StringBuilder builder)
+        protected virtual void ScalarMethod(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
-            ScalarMethodDefinition(
-                source, 
-                MethodType.Sync,
-                ProviderInfo.DefaultSourceType(), 
-                ProviderInfo.DefaultSourceTypeParametr(),
-                builder
-                );
-            MethodBody(
-                source,
-                needCheckOpen: true, 
-                ProviderInfo.DefaultSourceTypeParametr(), 
-                MethodType.Sync, 
-                QueryType.Scalar, 
-                builder
-                );
-        }
-
-        protected virtual void ScalarMethodAsync(QueryBatchCommand source, StringBuilder builder)
-        {
-            ScalarMethodDefinition(
-                source,
-                MethodType.Async,
-                ProviderInfo.DefaultSourceType(),
-                ProviderInfo.DefaultSourceTypeParametr(),
-                builder
-                );
-            MethodBody(
-                source,
-                needCheckOpen: true,
-                ProviderInfo.DefaultSourceTypeParametr(),
-                MethodType.Async,
-                QueryType.Scalar,
-                builder
-                );
-        }
-
-        protected virtual void NonQueryMethod(QueryBatchCommand source, StringBuilder builder)
-        {
-            NonQueryMethodDefinition(
+            ScalarMethodInner(
                 source,
                 MethodType.Sync,
                 ProviderInfo.DefaultSourceType(),
                 ProviderInfo.DefaultSourceTypeParametr(),
-                builder
-                );
-            MethodBody(
-                source,
+                builder,
                 needCheckOpen: true,
-                ProviderInfo.DefaultSourceTypeParametr(),
-                MethodType.Sync,
-                QueryType.NonQuery,
-                builder
+                interfaceGenerator
                 );
         }
 
-        protected virtual void NonQueryMethodAsync(QueryBatchCommand source, StringBuilder builder)
+        protected virtual void ScalarMethodAsync(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
-            NonQueryMethodDefinition(
+            ScalarMethodInner(
                 source,
                 MethodType.Async,
                 ProviderInfo.DefaultSourceType(),
                 ProviderInfo.DefaultSourceTypeParametr(),
-                builder
-                );
-            MethodBody(
-                source,
+                builder,
                 needCheckOpen: true,
+                interfaceGenerator
+                );
+        }
+
+        protected virtual void NonQueryMethod(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            NonQueryMethodInner(
+                source,
+                MethodType.Sync,
+                ProviderInfo.DefaultSourceType(),
                 ProviderInfo.DefaultSourceTypeParametr(),
+                builder,
+                needCheckOpen: true,
+                interfaceGenerator
+                );
+        }
+
+        protected virtual void NonQueryMethodAsync(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            NonQueryMethodInner(
+                source,
                 MethodType.Async,
-                QueryType.NonQuery,
-                builder
+                ProviderInfo.DefaultSourceType(),
+                ProviderInfo.DefaultSourceTypeParametr(),
+                builder,
+                needCheckOpen: true,
+                interfaceGenerator
                 );
         }
 
@@ -134,7 +134,46 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        public void ScalarMethodDefinition(
+        protected void ScalarMethodInner(
+            QueryBatchCommand source,
+            MethodType methodType,
+            string sourceTypeName,
+            string sourceParametrName,
+            StringBuilder builder,
+            bool needCheckOpen,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            ScalarMethodDefinition(
+                    source,
+                    methodType,
+                    sourceTypeName,
+                    sourceParametrName,
+                    builder
+                    );
+            if (source.AsPartInterface)
+            {
+                ScalarMethodDefinition(
+                    source,
+                    methodType,
+                    sourceTypeName,
+                    sourceParametrName,
+                    interfaceGenerator.DefinitionBuilder(),
+                    forInterface: true
+                    );
+                interfaceGenerator.AddMethodDefinition();
+            }
+            MethodBody(
+                source,
+                needCheckOpen: needCheckOpen,
+                sourceParametrName,
+                methodType,
+                QueryType.Scalar,
+                builder
+                );
+        }
+
+        private void ScalarMethodDefinition(
             QueryBatchCommand source,
             MethodType methodType,
             string sourceTypeName,
@@ -194,7 +233,46 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        public void NonQueryMethodDefinition(
+        protected void NonQueryMethodInner(
+            QueryBatchCommand source,
+            MethodType methodType,
+            string sourceTypeName,
+            string sourceParametrName,
+            StringBuilder builder,
+            bool needCheckOpen,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            NonQueryMethodDefinition(
+                source,
+                methodType,
+                sourceTypeName,
+                sourceParametrName,
+                builder
+                );
+            if (source.AsPartInterface)
+            {
+                NonQueryMethodDefinition(
+                    source,
+                    methodType,
+                    sourceTypeName,
+                    sourceParametrName,
+                    interfaceGenerator.DefinitionBuilder(),
+                    forInterface: true
+                    );
+                interfaceGenerator.AddMethodDefinition();
+            }
+            MethodBody(
+                source,
+                needCheckOpen: needCheckOpen,
+                sourceParametrName,
+                methodType,
+                QueryType.NonQuery,
+                builder
+                );
+        }
+
+        private void NonQueryMethodDefinition(
             QueryBatchCommand source,
             MethodType methodType,
             string sourceTypeName,
@@ -238,7 +316,7 @@ namespace Gedaq.Base.Batch
 ");
         }
 
-        protected void MethodBody(
+        private void MethodBody(
             QueryBatchCommand source,
             bool needCheckOpen,
             string sourceParametrName,

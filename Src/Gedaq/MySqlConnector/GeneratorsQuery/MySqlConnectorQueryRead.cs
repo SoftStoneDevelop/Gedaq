@@ -20,82 +20,70 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
 
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void ReadMethod(QueryBaseCommand source, StringBuilder builder)
+        protected override void ReadMethod(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             MySqlConnectorQuery query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
             {
-                ReadMethodDefinition(
+                ReadMethodInner(
                     source,
                     MethodType.Sync,
                     builder,
                     MySqlConnectorSourceType.MySqlConnection.ToTypeName(),
-                    MySqlConnectorSourceType.MySqlConnection.ToParametrName()
-                    );
-                ReadMethodBody(
-                    source,
-                    needCheckOpen: true,
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
-                    MethodType.Sync,
-                    builder
+                    needCheckOpen: true,
+                    interfaceGenerator
                     );
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
             {
-                ReadMethodDefinition(
+                ReadMethodInner(
                     source,
                     MethodType.Sync,
                     builder,
                     MySqlConnectorSourceType.MySqlDataSource.ToTypeName(),
-                    MySqlConnectorSourceType.MySqlDataSource.ToParametrName()
-                    );
-                ReadMethodBody(
-                    source,
-                    needCheckOpen: false,
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
-                    MethodType.Sync,
-                    builder
+                    needCheckOpen: false,
+                    interfaceGenerator
                     );
             }
         }
 
-        protected override void ReadAsyncMethod(QueryBaseCommand source, StringBuilder builder)
+        protected override void ReadAsyncMethod(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             MySqlConnectorQuery query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
             {
-                ReadMethodDefinition(
+                ReadMethodInner(
                     source,
                     MethodType.Async,
                     builder,
                     MySqlConnectorSourceType.MySqlConnection.ToTypeName(),
-                    MySqlConnectorSourceType.MySqlConnection.ToParametrName()
-                    );
-                ReadMethodBody(
-                    source,
-                    needCheckOpen: true,
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
-                    MethodType.Async,
-                    builder
+                    needCheckOpen: true,
+                    interfaceGenerator
                     );
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
             {
-                ReadMethodDefinition(
+                ReadMethodInner(
                     source,
                     MethodType.Async,
                     builder,
                     MySqlConnectorSourceType.MySqlDataSource.ToTypeName(),
-                    MySqlConnectorSourceType.MySqlDataSource.ToParametrName()
-                    );
-                ReadMethodBody(
-                    source,
-                    needCheckOpen: false,
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
-                    MethodType.Async,
-                    builder
+                    needCheckOpen: false,
+                    interfaceGenerator
                     );
             }
         }

@@ -1,11 +1,4 @@
-﻿using Gedaq.DbConnection.Model;
-using Gedaq.Enums;
-using Gedaq.Helpers;
-using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Text;
+﻿using System.Text;
 
 namespace Gedaq.Base
 {
@@ -22,14 +15,6 @@ namespace Gedaq.Base
         protected void Reset()
         {
             _methodCode.Clear();
-        }
-
-        protected void End()
-        {
-            _methodCode.Append($@"
-    }}
-}}
-");
         }
     }
 }

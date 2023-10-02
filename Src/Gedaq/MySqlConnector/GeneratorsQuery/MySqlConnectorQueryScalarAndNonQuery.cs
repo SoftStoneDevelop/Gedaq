@@ -20,178 +20,146 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
 
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void NonQueryMethod(QueryBaseCommand source, StringBuilder builder)
+        protected override void NonQueryMethod(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
             {
-                NonQueryMethodDefinition(
+                NonQueryMethodInner(
                     source,
                     MethodType.Sync,
                     builder,
                     MySqlConnectorSourceType.MySqlConnection.ToTypeName(),
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
-                    useInAndOut: true
-                    );
-                MethodBody(
-                    source,
+                    useInAndOut: true,
                     needCheckOpen: true,
-                    MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
-                    MethodType.Sync,
-                    QueryType.NonQuery,
-                    builder
+                    interfaceGenerator
                     );
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
             {
-                NonQueryMethodDefinition(
+                NonQueryMethodInner(
                     source,
                     MethodType.Sync,
                     builder,
                     MySqlConnectorSourceType.MySqlDataSource.ToTypeName(),
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
-                    useInAndOut: true
-                    );
-                MethodBody(
-                    source,
+                    useInAndOut: true,
                     needCheckOpen: false,
-                    MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
-                    MethodType.Sync,
-                    QueryType.NonQuery,
-                    builder
+                    interfaceGenerator
                     );
             }
         }
 
-        protected override void NonQueryMethodAsync(QueryBaseCommand source, StringBuilder builder)
+        protected override void NonQueryMethodAsync(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
             {
-                NonQueryMethodDefinition(
+                NonQueryMethodInner(
                     source,
                     MethodType.Async,
                     builder,
                     MySqlConnectorSourceType.MySqlConnection.ToTypeName(),
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
-                    useInAndOut: false
-                    );
-                MethodBody(
-                    source,
+                    useInAndOut: false,
                     needCheckOpen: true,
-                    MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
-                    MethodType.Async,
-                    QueryType.NonQuery,
-                    builder
+                    interfaceGenerator
                     );
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
             {
-                NonQueryMethodDefinition(
+                NonQueryMethodInner(
                     source,
                     MethodType.Async,
                     builder,
                     MySqlConnectorSourceType.MySqlDataSource.ToTypeName(),
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
-                    useInAndOut: false
-                    );
-                MethodBody(
-                    source,
+                    useInAndOut: false,
                     needCheckOpen: false,
-                    MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
-                    MethodType.Async,
-                    QueryType.NonQuery,
-                    builder
+                    interfaceGenerator
                     );
             }
         }
 
-        protected override void ScalarMethod(QueryBaseCommand source, StringBuilder builder)
+        protected override void ScalarMethod(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
             {
-                ScalarMethodDefinition(
+                ScalarMethodInner(
                     source,
                     MethodType.Sync,
                     builder,
                     MySqlConnectorSourceType.MySqlConnection.ToTypeName(),
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
-                    useInAndOut: true
-                    );
-                MethodBody(
-                    source,
+                    useInAndOut: true,
                     needCheckOpen: true,
-                    MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
-                    MethodType.Sync,
-                    QueryType.Scalar,
-                    builder
+                    interfaceGenerator
                     );
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
             {
-                ScalarMethodDefinition(
+                ScalarMethodInner(
                     source,
                     MethodType.Sync,
                     builder,
                     MySqlConnectorSourceType.MySqlDataSource.ToTypeName(),
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
-                    useInAndOut: true
-                    );
-                MethodBody(
-                    source,
+                    useInAndOut: true,
                     needCheckOpen: false,
-                    MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
-                    MethodType.Sync,
-                    QueryType.Scalar,
-                    builder
+                    interfaceGenerator
                     );
             }
         }
 
-        protected override void ScalarMethodAsync(QueryBaseCommand source, StringBuilder builder)
+        protected override void ScalarMethodAsync(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
             {
-                ScalarMethodDefinition(
+                ScalarMethodInner(
                     source,
                     MethodType.Async,
                     builder,
                     MySqlConnectorSourceType.MySqlConnection.ToTypeName(),
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
-                    useInAndOut: false
-                    );
-                MethodBody(
-                    source,
+                    useInAndOut: false,
                     needCheckOpen: true,
-                    MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
-                    MethodType.Async,
-                    QueryType.Scalar,
-                    builder
+                    interfaceGenerator
                     );
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
             {
-                ScalarMethodDefinition(
+                ScalarMethodInner(
                     source,
                     MethodType.Async,
                     builder,
                     MySqlConnectorSourceType.MySqlDataSource.ToTypeName(),
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
-                    useInAndOut: false
-                    );
-                MethodBody(
-                    source,
+                    useInAndOut: false,
                     needCheckOpen: false,
-                    MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
-                    MethodType.Async,
-                    QueryType.Scalar,
-                    builder
+                    interfaceGenerator
                     );
             }
         }

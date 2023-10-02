@@ -16,53 +16,55 @@ namespace Gedaq.Base.Query
 
         protected abstract ProviderInfo ProviderInfo { get; }
 
-        public void Generate(QueryBaseCommand source, StringBuilder builder)
+        public void Generate(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             QueryCommonBase.ThrowExceptionIfOutCannotExist(source);
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
-                ReadMethod(source, builder);
+                ReadMethod(source, builder, interfaceGenerator);
             }
 
             if (source.MethodType.HasFlag(MethodType.Async))
             {
-                ReadAsyncMethod(source, builder);
+                ReadAsyncMethod(source, builder, interfaceGenerator);
             }
         }
 
-        protected virtual void ReadMethod(QueryBaseCommand source, StringBuilder builder)
+        protected virtual void ReadMethod(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
-            ReadMethodDefinition(
-                source, 
-                MethodType.Sync, 
+            ReadMethodInner(
+                source,
+                MethodType.Sync,
                 builder,
                 ProviderInfo.DefaultSourceType(),
-                ProviderInfo.DefaultSourceTypeParametr()
-                );
-            ReadMethodBody(
-                source, 
-                needCheckOpen: true, 
-                ProviderInfo.DefaultSourceTypeParametr(), 
-                MethodType.Sync, 
-                builder
+                ProviderInfo.DefaultSourceTypeParametr(),
+                needCheckOpen: true,
+                interfaceGenerator
                 );
         }
 
-        protected virtual void ReadAsyncMethod(QueryBaseCommand source, StringBuilder builder)
+        protected virtual void ReadAsyncMethod(
+            QueryBaseCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
-            ReadMethodDefinition(
+            ReadMethodInner(
                 source,
                 MethodType.Async,
                 builder,
                 ProviderInfo.DefaultSourceType(),
-                ProviderInfo.DefaultSourceTypeParametr()
-                );
-            ReadMethodBody(
-                source,
-                needCheckOpen: true,
                 ProviderInfo.DefaultSourceTypeParametr(),
-                MethodType.Async,
-                builder
+                needCheckOpen: true,
+                interfaceGenerator
                 );
         }
 
@@ -81,7 +83,45 @@ namespace Gedaq.Base.Query
             }
         }
 
-        public void ReadMethodDefinition(
+        protected void ReadMethodInner(
+            QueryBaseCommand source,
+            MethodType methodType,
+            StringBuilder builder,
+            string sourceTypeName,
+            string sourceParametrName,
+            bool needCheckOpen,
+            InterfaceGenerator interfaceGenerator
+            )
+        {
+            ReadMethodDefinition(
+                source,
+                methodType,
+                builder,
+                sourceTypeName,
+                sourceParametrName
+                );
+            if (source.AsPartInterface)
+            {
+                ReadMethodDefinition(
+                    source,
+                    methodType,
+                    interfaceGenerator.DefinitionBuilder(),
+                    sourceTypeName,
+                    sourceParametrName,
+                    forInterface: true
+                    );
+                interfaceGenerator.AddMethodDefinition();
+            }
+            ReadMethodBody(
+                source,
+                needCheckOpen: needCheckOpen,
+                sourceParametrName,
+                methodType,
+                builder
+                );
+        }
+
+        private void ReadMethodDefinition(
             QueryBaseCommand source,
             MethodType methodType,
             StringBuilder builder,
@@ -129,7 +169,7 @@ namespace Gedaq.Base.Query
 
         }
 
-        protected void ReadMethodBody(
+        private void ReadMethodBody(
             QueryBaseCommand source,
             bool needCheckOpen,
             string sourceParametrName,

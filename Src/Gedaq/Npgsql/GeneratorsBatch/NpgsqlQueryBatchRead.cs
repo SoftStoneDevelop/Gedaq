@@ -19,82 +19,70 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void ReadMethod(QueryBatchCommand source, StringBuilder builder)
+        protected override void ReadMethod(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var batch = (NpgsqlQueryBatch)source;
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
-                ReadMethodDefinition(
+                ReadMethodInner(
                     source,
                     MethodType.Sync,
                     builder,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), 
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName()
-                    );
-                ReadMethodBody(
-                    source,
-                    needCheckOpen: true,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
-                    MethodType.Sync,
-                    builder
+                    needCheckOpen: true,
+                    interfaceGenerator
                     );
             }
 
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
-                ReadMethodDefinition(
+                ReadMethodInner(
                     source,
                     MethodType.Sync,
                     builder,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName()
-                    );
-                ReadMethodBody(
-                    source,
-                    needCheckOpen: false,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
-                    MethodType.Sync,
-                    builder
+                    needCheckOpen: false,
+                    interfaceGenerator
                     );
             }
         }
 
-        protected override void ReadAsyncMethod(QueryBatchCommand source, StringBuilder builder)
+        protected override void ReadAsyncMethod(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var batch = (NpgsqlQueryBatch)source;
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
-                ReadMethodDefinition(
+                ReadMethodInner(
                     source,
                     MethodType.Async,
                     builder,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(),
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName()
-                    );
-                ReadMethodBody(
-                    source,
-                    needCheckOpen: true,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
-                    MethodType.Async,
-                    builder
+                    needCheckOpen: true,
+                    interfaceGenerator
                     );
             }
 
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
-                ReadMethodDefinition(
+                ReadMethodInner(
                     source,
                     MethodType.Async,
                     builder,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName()
-                    );
-                ReadMethodBody(
-                    source,
-                    needCheckOpen: false,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
-                    MethodType.Async,
-                    builder
+                    needCheckOpen: false,
+                    interfaceGenerator
                     );
             }
         }

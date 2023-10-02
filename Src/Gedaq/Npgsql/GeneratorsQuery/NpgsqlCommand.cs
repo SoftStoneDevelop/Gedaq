@@ -13,7 +13,11 @@ namespace Gedaq.Npgsql.GeneratorsQuery
         NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void GenrateCommand(QueryBaseCommand baseSource, StringBuilder builder)
+        protected override void GenrateCommand(
+            QueryBaseCommand baseSource, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             NpgsqlQuery source = (NpgsqlQuery)baseSource;
             if (baseSource.MethodType.HasFlag(MethodType.Sync))
@@ -24,7 +28,9 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                         baseSource,
                         Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(),
                         Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
-                        MethodType.Sync, builder
+                        MethodType.Sync, 
+                        builder,
+                        interfaceGenerator
                         );
                 }
 
@@ -34,7 +40,9 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                         baseSource,
                         Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
                         Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
-                        MethodType.Sync, builder
+                        MethodType.Sync, 
+                        builder,
+                        interfaceGenerator
                         );
                 }
             }
@@ -47,7 +55,9 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                         baseSource,
                         Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(),
                         Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
-                        MethodType.Async, builder
+                        MethodType.Async, 
+                        builder,
+                        interfaceGenerator
                         );
                 }
 
@@ -57,7 +67,9 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                         baseSource,
                         Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
                         Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
-                        MethodType.Async, builder
+                        MethodType.Async, 
+                        builder,
+                        interfaceGenerator
                         );
                 }
             }

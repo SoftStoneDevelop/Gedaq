@@ -1,6 +1,5 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Model;
-using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
@@ -11,7 +10,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
 
 namespace Gedaq.Npgsql.Generators
 {
@@ -22,7 +20,8 @@ namespace Gedaq.Npgsql.Generators
             Reset();
             Start(binaryExport);
             GenerateMethod(binaryExport);
-            End();
+            EndClass();
+            EndNameSpace();
         }
 
         private void Start(
@@ -424,6 +423,18 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             _methodCode.Append($@"
         }}
 ");
+        }
+
+        private void EndClass()
+        {
+            _methodCode.Append($@"
+    }}");
+        }
+
+        private void EndNameSpace()
+        {
+            _methodCode.Append($@"
+}}");
         }
     }
 }

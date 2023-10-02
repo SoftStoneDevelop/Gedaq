@@ -19,170 +19,138 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
-        protected override void ScalarMethod(QueryBatchCommand source, StringBuilder builder)
+        protected override void ScalarMethod(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var batch = (NpgsqlQueryBatch)source;
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
-                ScalarMethodDefinition(
+                ScalarMethodInner(
                     source,
                     MethodType.Sync,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), 
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
-                    builder
-                    );
-                MethodBody(
-                    source,
+                    builder,
                     needCheckOpen: true,
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
-                    MethodType.Sync,
-                    QueryType.Scalar,
-                    builder
+                    interfaceGenerator
                     );
             }
 
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
-                ScalarMethodDefinition(
+                ScalarMethodInner(
                     source,
                     MethodType.Sync,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
-                    builder
-                    );
-                MethodBody(
-                    source,
+                    builder,
                     needCheckOpen: false,
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
-                    MethodType.Sync,
-                    QueryType.Scalar,
-                    builder
+                    interfaceGenerator
                     );
             }
         }
 
-        protected override void ScalarMethodAsync(QueryBatchCommand source, StringBuilder builder)
+        protected override void ScalarMethodAsync(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var batch = (NpgsqlQueryBatch)source;
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
-                ScalarMethodDefinition(
+                ScalarMethodInner(
                     source,
                     MethodType.Async,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
-                    builder
-                    );
-                MethodBody(
-                    source,
+                    builder,
                     needCheckOpen: true,
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
-                    MethodType.Async,
-                    QueryType.Scalar,
-                    builder
+                    interfaceGenerator
                     );
             }
 
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
-                ScalarMethodDefinition(
+                ScalarMethodInner(
                     source,
                     MethodType.Async,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
-                    builder
-                    );
-                MethodBody(
-                    source,
+                    builder,
                     needCheckOpen: false,
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
-                    MethodType.Async,
-                    QueryType.Scalar,
-                    builder
+                    interfaceGenerator
                     );
             }
         }
 
-        protected override void NonQueryMethod(QueryBatchCommand source, StringBuilder builder)
+        protected override void NonQueryMethod(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var batch = (NpgsqlQueryBatch)source;
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
-                NonQueryMethodDefinition(
+                NonQueryMethodInner(
                     source,
                     MethodType.Sync,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), 
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
-                    builder
-                    );
-                MethodBody(
-                    source,
+                    builder,
                     needCheckOpen: true,
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
-                    MethodType.Sync,
-                    QueryType.NonQuery,
-                    builder
+                    interfaceGenerator
                     );
             }
 
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
-                NonQueryMethodDefinition(
+                NonQueryMethodInner(
                     source,
                     MethodType.Sync,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
-                    builder
-                    );
-                MethodBody(
-                    source,
+                    builder,
                     needCheckOpen: false,
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
-                    MethodType.Sync,
-                    QueryType.NonQuery,
-                    builder
+                    interfaceGenerator
                     );
             }
         }
 
-        protected override void NonQueryMethodAsync(QueryBatchCommand source, StringBuilder builder)
+        protected override void NonQueryMethodAsync(
+            QueryBatchCommand source, 
+            StringBuilder builder,
+            InterfaceGenerator interfaceGenerator
+            )
         {
             var batch = (NpgsqlQueryBatch)source;
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
             {
-                NonQueryMethodDefinition(
+                NonQueryMethodInner(
                     source,
                     MethodType.Async,
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
-                    builder
-                    );
-                MethodBody(
-                    source,
+                    builder,
                     needCheckOpen: true,
-                    Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
-                    MethodType.Async,
-                    QueryType.NonQuery,
-                    builder
+                    interfaceGenerator
                     );
             }
 
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
             {
-                NonQueryMethodDefinition(
+                NonQueryMethodInner(
                     source,
                     MethodType.Async,
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
-                    builder
-                    );
-                MethodBody(
-                    source,
+                    builder,
                     needCheckOpen: false,
-                    Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
-                    MethodType.Async,
-                    QueryType.NonQuery,
-                    builder
+                    interfaceGenerator
                     );
             }
         }

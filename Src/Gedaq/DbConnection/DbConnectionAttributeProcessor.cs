@@ -231,11 +231,20 @@ namespace Gedaq.Npgsql
         public override void GenerateAndSaveMethods(SourceProductionContext context, CancellationToken cancellationToken)
         {
             var readGenerator = new DbQueryGenerator();
+            var interfaceGenerator = new InterfaceGenerator();
             foreach (var queryRead in _read)
             {
                 cancellationToken.ThrowIfCancellationRequested();
-                readGenerator.Generate(queryRead);
+                interfaceGenerator.Reset();
+                readGenerator.Generate(queryRead, interfaceGenerator);
+
                 context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}DbConnection.g.cs", readGenerator.GetCode());
+                interfaceGenerator.GenerateAndSave(
+                    context, 
+                    queryRead.PartInterfaceType, 
+                    readGenerator.Usings(), 
+                    $"{queryRead.ContainTypeName.Name}{queryRead.MethodName}"
+                    );
             }
             _read.Clear();
 
@@ -243,8 +252,15 @@ namespace Gedaq.Npgsql
             foreach (var batchRead in _readBatch)
             {
                 cancellationToken.ThrowIfCancellationRequested();
-                batchReadGenerator.Generate(batchRead);
+                interfaceGenerator.Reset();
+                batchReadGenerator.Generate(batchRead, interfaceGenerator);
                 context.AddSource($"{batchRead.ContainTypeName.Name}{batchRead.MethodName}DbConnection.g.cs", batchReadGenerator.GetCode());
+                interfaceGenerator.GenerateAndSave(
+                    context,
+                    batchRead.PartInterfaceType,
+                    readGenerator.Usings(),
+                    $"{batchRead.ContainTypeName.Name}{batchRead.MethodName}"
+                    );
             }
             _readBatch.Clear();
         }

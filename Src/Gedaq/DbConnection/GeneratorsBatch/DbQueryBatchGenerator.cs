@@ -7,7 +7,7 @@ namespace Gedaq.DbConnection.GeneratorsBatch
 {
     internal class DbQueryBatchGenerator : BaseGenerator
     {
-        private readonly DbBatchCommand _batchCommand = new DbBatchCommand();
+        private readonly DbBatchCommand _batchCommand;
         private readonly DbQueryBatchRead _batchRead;
         private readonly DbQueryBatchScalarNoQuery _batchScalarNoQuery;
 
@@ -18,29 +18,30 @@ namespace Gedaq.DbConnection.GeneratorsBatch
             _batchScalarNoQuery = new DbQueryBatchScalarNoQuery(_batchCommand);
         }
 
-        public void Generate(DbQueryBatch source)
+        public void Generate(DbQueryBatch source, InterfaceGenerator interfaceGenerator)
         {
             Reset();
             Start(source);
 
             if (source.QueryType.HasFlag(QueryType.Read))
             {
-                _batchRead.Generate(source, _methodCode);
+                _batchRead.Generate(source, _methodCode, interfaceGenerator);
             }
 
             if (source.QueryType.HasFlag(QueryType.Scalar))
             {
-                _batchScalarNoQuery.GenerateScalar(source, _methodCode);
+                _batchScalarNoQuery.GenerateScalar(source, _methodCode, interfaceGenerator);
             }
 
             if (source.QueryType.HasFlag(QueryType.NonQuery))
             {
-                _batchScalarNoQuery.GenerateNonQuery(source, _methodCode);
+                _batchScalarNoQuery.GenerateNonQuery(source, _methodCode, interfaceGenerator);
             }
 
-            _batchCommand.Generate(source, _methodCode);
+            _batchCommand.Generate(source, _methodCode, interfaceGenerator);
 
-            End();
+            EndClass();
+            EndNameSpace();
         }
 
         private void Start(
@@ -62,6 +63,18 @@ namespace {source.ContainTypeName.ContainingNamespace.GetFullNamespace()}
     {GeneratedClassDeclarationHelper.GCDeclarationName(source.ContainTypeName, source.MethodInfo, "DbConnection")}
     {{
 ");
+        }
+
+        private void EndClass()
+        {
+            _methodCode.Append($@"
+    }}");
+        }
+
+        private void EndNameSpace()
+        {
+            _methodCode.Append($@"
+}}");
         }
     }
 }
