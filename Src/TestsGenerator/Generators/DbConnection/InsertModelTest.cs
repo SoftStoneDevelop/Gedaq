@@ -1,5 +1,4 @@
-﻿using System.Text;
-using TestsGenerator.Enums;
+﻿using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
 
@@ -7,7 +6,7 @@ namespace TestsGenerator.Generators.DbConnection
 {
     internal static class InsertModel
     {
-        private static string _testName = "InsertModel";
+        private const string _testName = "InsertModel";
 
         public static void Generate(
             int order,
@@ -16,11 +15,25 @@ namespace TestsGenerator.Generators.DbConnection
             ModelValueStorage storage,
             Database database,
             ref int index,
+            string interfaceTypeName,
             bool toEnd = false
             )
         {
-            DbConnectionInsertModelConfig(stringBuilder, model, database);
-            DbConnectionInsertModelTest(order, stringBuilder, storage, ref index, index + 2, isAsync: false);
+            DbConnectionInsertModelConfig(
+                stringBuilder, 
+                model, 
+                database,
+                interfaceTypeName
+                );
+            DbConnectionInsertModelTest(
+                order, 
+                stringBuilder, 
+                storage, 
+                ref index, 
+                index + 2, 
+                isAsync: false,
+                interfaceTypeName
+                );
 
             if (index + 2 >= storage.Values.Count)
             {
@@ -28,13 +41,22 @@ namespace TestsGenerator.Generators.DbConnection
             }
 
             var endIndex = toEnd ? storage.Values.Count : index + 2;
-            DbConnectionInsertModelTest(order, stringBuilder, storage, ref index, endIndex, isAsync: true);
+            DbConnectionInsertModelTest(
+                order, 
+                stringBuilder, 
+                storage, 
+                ref index, 
+                endIndex, 
+                isAsync: true,
+                interfaceTypeName
+                );
         }
 
         private static void DbConnectionInsertModelConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            Database database
+            Database database,
+            string interfaceTypeName
             )
         {
             stringBuilder.Append($@"
@@ -58,7 +80,8 @@ VALUES (
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.NonQuery,
             generate: true,
-            accessModifier: AccessModifier.Private
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof({interfaceTypeName})
             ), 
             Gedaq.DbConnection.Attributes.Parametr(parametrType: typeof({model.ModelInner.IdType}), parametrName: ""{model.ModelInner.IdColumnName}"", methodParametrName: ""{model.ModelInner.IdColumnName}"", dbType: {model.IdTypeInfo.DbTypeStr()}),
             Gedaq.DbConnection.Attributes.Parametr(parametrType: typeof({model.ModelInner.ValueType}), parametrName: ""{model.ModelInner.ValueColumnName}"", methodParametrName: ""{model.ModelInner.ValueColumnName}"", dbType: {model.TypeInfo.DbTypeStr()}),
@@ -89,7 +112,8 @@ VALUES (
             ModelValueStorage storage,
             ref int indexValue,
             int endIndex,
-            bool isAsync
+            bool isAsync,
+            string interfaceTypeName
             )
         {
             if (endIndex > storage.Values.Count)
@@ -112,7 +136,7 @@ VALUES (
             {
                 ModelValue value = storage.Values[indexValue];
                 stringBuilder.Append($@"
-                changedRows = {await} DbConnection{_testName}{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)});
+                changedRows = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)});
                 Assert.That(changedRows, Is.EqualTo(1));
 ");
             }

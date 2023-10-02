@@ -1,5 +1,4 @@
-﻿using System.Text;
-using TestsGenerator.Enums;
+﻿using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
 
@@ -7,34 +6,87 @@ namespace TestsGenerator.Generators.PostgreSQL
 {
     internal static class InsertModelInner
     {
-        private static string _testName = "InsertModelInner";
+        private const string _testName = "InsertModelInner";
 
         public static void Generate(
             int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            ModelValueStorage storage
+            ModelValueStorage storage,
+            string interfaceTypeName
             )
         {
             var indexValue = 0;
-            InsertModelInnerConfig(stringBuilder, model);
-            InsertModelInnerReturningConfig(stringBuilder, model);
+            InsertModelInnerConfig(
+                stringBuilder, 
+                model,
+                interfaceTypeName
+                );
+            InsertModelInnerReturningConfig(
+                stringBuilder, 
+                model,
+                interfaceTypeName
+                );
 
-            InsertModelInnerTest(order, stringBuilder, storage, ref indexValue, indexValue + 4, isAsync: false);
-            InsertModelInnerTest(order, stringBuilder, storage, ref indexValue, indexValue + 4, isAsync: true);
+            InsertModelInnerTest(
+                order, 
+                stringBuilder, 
+                storage, 
+                ref indexValue, 
+                indexValue + 4, 
+                isAsync: false,
+                interfaceTypeName
+                );
+            InsertModelInnerTest(
+                order, 
+                stringBuilder, 
+                storage, 
+                ref indexValue, 
+                indexValue + 4, 
+                isAsync: true, 
+                interfaceTypeName
+                );
 
-            InsertModelInnerReturningTest(order, stringBuilder, storage, model, ref indexValue, indexValue + 4, isAsync: false);
+            InsertModelInnerReturningTest(
+                order, 
+                stringBuilder, 
+                storage, 
+                model, 
+                ref indexValue, 
+                indexValue + 4, 
+                isAsync: false, 
+                interfaceTypeName
+                );
             var canDbConnection = model.TypeInfo.EnumerableType == EnumerableType.SingleType;
             int endIndex = !canDbConnection ? storage.Values.Count : indexValue + 4;
-            InsertModelInnerReturningTest(order, stringBuilder, storage, model, ref indexValue, endIndex, isAsync: true);
+            InsertModelInnerReturningTest(
+                order, 
+                stringBuilder, 
+                storage, 
+                model, 
+                ref indexValue, 
+                endIndex, 
+                isAsync: true, 
+                interfaceTypeName
+                );
 
             if (canDbConnection)
-                DbConnection.InsertModelInner.Generate(order, stringBuilder, model, storage, Database.PostgreSQL, ref indexValue, toEnd: true);
+                DbConnection.InsertModelInner.Generate(
+                    order, 
+                    stringBuilder, 
+                    model, 
+                    storage, 
+                    Database.PostgreSQL, 
+                    ref indexValue, 
+                    interfaceTypeName,
+                    toEnd: true
+                    );
         }
 
         private static void InsertModelInnerConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
-            Model.ModelType model
+            Model.ModelType model,
+            string interfaceTypeName
             )
         {
             stringBuilder.Append($@"
@@ -57,7 +109,8 @@ VALUES (
             sourceType: SourceType.Connection,
             queryType: QueryType.NonQuery,
             generate: true,
-            accessModifier: AccessModifier.Private
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof({interfaceTypeName})
             ), 
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdType}),
@@ -90,7 +143,8 @@ VALUES (
             ModelValueStorage storage,
             ref int indexValue,
             int endIndex,
-            bool isAsync
+            bool isAsync,
+            string interfaceTypeName
             )
         {
             if (endIndex > storage.Values.Count)
@@ -118,7 +172,7 @@ VALUES (
                 }
 
                 stringBuilder.Append($@"
-                changedRows = {await} {_testName}{async}(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
+                changedRows = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
                 Assert.That(changedRows, Is.EqualTo(1));
 ");
             }
@@ -130,7 +184,8 @@ VALUES (
 
         private static void InsertModelInnerReturningConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
-            Model.ModelType model
+            Model.ModelType model,
+            string interfaceTypeName
             )
         {
             stringBuilder.Append($@"
@@ -158,7 +213,8 @@ RETURNING
             sourceType: SourceType.Connection,
             queryType: QueryType.Scalar,
             generate: true,
-            accessModifier: AccessModifier.Private
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof({interfaceTypeName})
             ), 
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdType}), 
@@ -192,7 +248,8 @@ RETURNING
             Model.ModelType model,
             ref int indexValue,
             int endIndex,
-            bool isAsync
+            bool isAsync,
+            string interfaceTypeName
             )
         {
             if (endIndex > storage.Values.Count)
@@ -220,7 +277,7 @@ RETURNING
                 }
 
                 stringBuilder.Append($@"
-                id = {await} {_testName}Returning{async}(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
+                id = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Returning{async}(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
                 Assert.That(id, Is.EqualTo({value.InnerModel.Id}));
 ");
             }

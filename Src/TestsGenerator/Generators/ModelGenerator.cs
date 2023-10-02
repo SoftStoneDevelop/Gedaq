@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace TestsGenerator.Generators
@@ -11,6 +10,12 @@ namespace TestsGenerator.Generators
 
         public async Task Generate(List<Model.ModelType> models, string destinationFolder)
         {
+            var directory = Directory.CreateDirectory($"{destinationFolder}/Model/");
+            foreach (var file in directory.GetFiles())
+            {
+                File.Delete(file.FullName);
+            }
+
             foreach (var model in models)
             {
                 await Model(model, destinationFolder);
@@ -37,7 +42,6 @@ namespace Tests
 }}
 
 ");
-            Directory.CreateDirectory($"{destinationFolder}/Model/");
             await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName}.cs", _stringBuilder.ToString());
             _stringBuilder.Clear();
         }
@@ -59,7 +63,6 @@ namespace Tests
 }}
 
 ");
-            Directory.CreateDirectory($"{destinationFolder}/Model/");
             await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName}.cs", _stringBuilder.ToString());
             _stringBuilder.Clear();
         }

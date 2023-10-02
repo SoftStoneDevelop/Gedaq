@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Text;
 using System.Threading.Tasks;
 using TestsGenerator.Enums;
 using TestsGenerator.Generators.PostgreSQL;
@@ -17,26 +16,47 @@ namespace TestsGenerator.Generators
             _stringBuilder.Clear();
             var storage = InitStorage(model, 30);
 
+            var interfaceTypeName = InterfaceName(model);
             Start(model, database);
 
             StartRegion("InsertModelInner");
-            InsertModelInnerTest.Generate(0, _stringBuilder, model, storage, database);
+            InsertModelInnerTest.Generate(
+                0, 
+                _stringBuilder, 
+                model, 
+                storage, 
+                database, 
+                interfaceTypeName
+                );
             EndRegion();
 
             StartRegion("InsertModel");
-            InsertModelTest.Generate(1, _stringBuilder, model, storage, database);
+            InsertModelTest.Generate(
+                1, 
+                _stringBuilder, 
+                model, 
+                storage, 
+                database, 
+                interfaceTypeName
+                );
             EndRegion();
 
             StartRegion("Select Models");
-            SelectModelTest.Generate(2, _stringBuilder, model, storage, database);
+            SelectModelTest.Generate(
+                2, 
+                _stringBuilder, 
+                model, 
+                storage, 
+                database, 
+                interfaceTypeName
+                );
             EndRegion();
 
             SpecialDatabaseTests(model, database, storage);
 
             End();
 
-            Directory.CreateDirectory($"{destinationFolder}/TestsParts/");
-            await File.WriteAllTextAsync($"{destinationFolder}/TestsParts/{model.ClassName}TestsPart.cs", _stringBuilder.ToString());
+            await File.WriteAllTextAsync($"{destinationFolder}/TestsParts/{model.ClassName}Tests.cs", _stringBuilder.ToString());
         }
 
         private void SpecialDatabaseTests(Model.ModelType model, Database database, ModelValueStorage storage)
@@ -90,6 +110,18 @@ namespace TestsGenerator.Generators
             return storage;
         }
 
+        public static string ClassName(Model.ModelType model)
+        {
+            return 
+                $@"{model.TypeInfo.ItemTypeName}{model.TypeInfo.EnumerableType}{model.TypeInfo.DbSqlTypeWithoutSpace()}";
+        }
+
+        private static string InterfaceName(Model.ModelType model)
+        {
+            return
+                $@"I{ClassName(model)}";
+        }
+
         private void Start(Model.ModelType model, Database database)
         {
             _stringBuilder.AppendLine($@"
@@ -103,7 +135,11 @@ using System.Threading.Tasks;
 
 namespace Tests
 {{
-    internal partial class Tests_{model.TypeInfo.ItemTypeName}{(model.TypeInfo.EnumerableType == EnumerableType.SingleType ? string.Empty : $"_{model.TypeInfo.EnumerableType.ToString()}")}_{model.TypeInfo.DbSqlTypeWithoutSpace()}
+    internal partial interface {InterfaceName(model)}
+    {{
+    }}
+    
+    internal partial class {ClassName(model)} : {InterfaceName(model)}
     {{
 ");
         }

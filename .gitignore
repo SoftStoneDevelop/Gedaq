@@ -241,12 +241,3 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 *.msi
-/Src/PostgreSQLTests/Model
-/Src/PostgreSQLTests/TestOneTimeParts
-/Src/PostgreSQLTests/TestsParts
-/Src/MSSQLTests/TestOneTimeParts
-/Src/MSSQLTests/TestsParts
-/Src/MSSQLTests/Model
-/Src/MySQLTests/TestOneTimeParts
-/Src/MySQLTests/TestsParts
-/Src/MySQLTests/Model

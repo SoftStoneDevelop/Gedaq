@@ -58,7 +58,7 @@ FROM STDIN (FORMAT BINARY)
             }},
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
-            accessModifier: AccessModifier.Private
+            accessModifier: AccessModifier.Public
             )
             ]
         private void {_testName}Config()
@@ -98,7 +98,7 @@ ORDER BY
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
-            accessModifier: AccessModifier.Private
+            accessModifier: AccessModifier.Public
             )
             ]
         private void Select{_testName}Config()

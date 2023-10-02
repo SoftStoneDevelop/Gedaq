@@ -68,7 +68,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
             }},
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
-            accessModifier: AccessModifier.Private
+            accessModifier: AccessModifier.Public
             )
             ]
         private void {_testName}Config()

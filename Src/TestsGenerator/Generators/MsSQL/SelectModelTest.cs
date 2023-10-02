@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
@@ -9,27 +8,54 @@ namespace TestsGenerator.Generators.MsSQL
 {
     internal static class SelectModelTest
     {
-        private static readonly string _testName = "SelectModel";
+        private const string _testName = "SelectModel";
 
         public static void Generate(
             int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            ModelValueStorage storage
+            ModelValueStorage storage,
+            string interfaceTypeName
             )
         {
             var orderedValues = storage.Values.OrderBy(or => or.IdValue).ToList();
 
-            SelectTestConfig(model, stringBuilder);
-            SelectTest(order, orderedValues, model, stringBuilder, false);
-            SelectTest(order, orderedValues, model, stringBuilder, true);
+            SelectTestConfig(
+                model, 
+                stringBuilder,
+                interfaceTypeName
+                );
+            SelectTest(
+                order, 
+                orderedValues, 
+                model, 
+                stringBuilder, 
+                false,
+                interfaceTypeName
+                );
+            SelectTest(
+                order, 
+                orderedValues, 
+                model, 
+                stringBuilder, 
+                true, 
+                interfaceTypeName
+                );
 
-            DbConnection.SelectModel.Generate(order, stringBuilder, model, orderedValues, Database.MsSQL);
+            DbConnection.SelectModel.Generate(
+                order, 
+                stringBuilder, 
+                model, 
+                orderedValues, 
+                Database.MsSQL, 
+                interfaceTypeName
+                );
         }
 
         private static void SelectTestConfig(
             Model.ModelType model,
-            StringBuilderArray.StringBuilderArray stringBuilder
+            StringBuilderArray.StringBuilderArray stringBuilder,
+            string interfaceTypeName
             )
         {
             var query = $@"
@@ -59,7 +85,8 @@ ORDER BY
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
-            accessModifier: AccessModifier.Private
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof({interfaceTypeName})
             ),
 Gedaq.SqlClient.Attributes.Parametr(
             parametrType: typeof({model.IdType}),
@@ -79,7 +106,8 @@ Gedaq.SqlClient.Attributes.Parametr(
             List<ModelValue> orderedValues,
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            bool isAsync
+            bool isAsync,
+            string interfaceTypeName
             )
         {
             var await = isAsync ? "await" : string.Empty;
@@ -92,7 +120,7 @@ Gedaq.SqlClient.Attributes.Parametr(
             await using (var connection = GlobalSetUp.GetConnection)
             {{
                 await connection.OpenAsync();
-                var models = {await} {_testName}{async}(connection, 0).ToList{async}();
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, 0).ToList{async}();
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
 ");
             for (int i = 0; i < orderedValues.Count; i++)

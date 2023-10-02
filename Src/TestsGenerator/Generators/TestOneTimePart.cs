@@ -25,7 +25,6 @@ namespace TestsGenerator.Generators
 
             End();
 
-            Directory.CreateDirectory($"{destinationFolder}/TestOneTimeParts/");
             await File.WriteAllTextAsync($"{destinationFolder}/TestOneTimeParts/{model.ClassName}TestOneTimePart.cs", _stringBuilder.ToString());
         }
 
@@ -42,7 +41,7 @@ namespace Tests
 {{
     [TestFixture]
     [Parallelizable(ParallelScope.Self)]
-    internal partial class Tests_{model.TypeInfo.ItemTypeName}{(model.TypeInfo.EnumerableType == EnumerableType.SingleType ? string.Empty : $"_{model.TypeInfo.EnumerableType.ToString()}")}_{model.TypeInfo.DbSqlTypeWithoutSpace()}
+    internal partial class {TestsPart.ClassName(model)}
     {{
 ");
         }

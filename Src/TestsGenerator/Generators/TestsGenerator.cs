@@ -3,6 +3,7 @@ using NpgsqlTypes;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using TestsGenerator.Comparers;
@@ -33,6 +34,12 @@ namespace TestsGenerator.Generators
         private async Task GenerateTestOneTimeParts(Database database, string destinationFolder)
         {
             var testOneTimePart = new TestOneTimePart();
+            var directory = Directory.CreateDirectory($"{destinationFolder}/TestOneTimeParts/");
+            foreach (var file in directory.GetFiles())
+            {
+                File.Delete(file.FullName);
+            }
+
             foreach (var model in _models)
             {
                 await testOneTimePart.Generate(model, database, destinationFolder);
@@ -42,6 +49,12 @@ namespace TestsGenerator.Generators
         private async Task GenerateTestParts(Database database, string destinationFolder)
         {
             var tests = new TestsPart();
+            var directory = Directory.CreateDirectory($"{destinationFolder}/TestsParts/");
+            foreach (var file in directory.GetFiles())
+            {
+                File.Delete(file.FullName);
+            }
+
             foreach (var model in _models)
             {
                 await tests.Generate(model, database, destinationFolder);

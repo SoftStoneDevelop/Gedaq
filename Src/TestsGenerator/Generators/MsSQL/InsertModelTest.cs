@@ -1,5 +1,4 @@
-﻿using System.Text;
-using TestsGenerator.Enums;
+﻿using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
 
@@ -7,32 +6,63 @@ namespace TestsGenerator.Generators.MsSQL
 {
     internal static class InsertModel
     {
-        private static string _testName = "InsertModel";
+        private const string _testName = "InsertModel";
 
         public static void Generate(
             int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            ModelValueStorage storage
+            ModelValueStorage storage,
+            string interfaceTypeName
             )
         {
             var index = 0;
-            InsertModelConfig(stringBuilder, model);
-            InsertModelTest(order, stringBuilder, storage, ref index, index + 2, isAsync: false);
+            InsertModelConfig(
+                stringBuilder, 
+                model,
+                interfaceTypeName
+                );
+            InsertModelTest(
+                order, 
+                stringBuilder, 
+                storage, 
+                ref index, 
+                index + 2, 
+                isAsync: false,
+                interfaceTypeName
+                );
 
             if (index + 2 >= storage.Values.Count)
             {
                 throw new System.ArgumentOutOfRangeException(nameof(index));
             }
 
-            InsertModelTest(order, stringBuilder, storage, ref index, index + 2, isAsync: true);
+            InsertModelTest(
+                order, 
+                stringBuilder, 
+                storage, 
+                ref index, 
+                index + 2, 
+                isAsync: true, 
+                interfaceTypeName
+                );
 
-            DbConnection.InsertModel.Generate(order, stringBuilder, model, storage, Database.MsSQL, ref index, toEnd: true);
+            DbConnection.InsertModel.Generate(
+                order, 
+                stringBuilder, 
+                model, 
+                storage, 
+                Database.MsSQL, 
+                ref index,
+                interfaceTypeName,
+                toEnd: true
+                );
         }
 
         private static void InsertModelConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
-            Model.ModelType model
+            Model.ModelType model,
+            string interfaceTypeName
             )
         {
             stringBuilder.Append($@"
@@ -56,7 +86,8 @@ VALUES (
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.NonQuery,
             generate: true,
-            accessModifier: AccessModifier.Private
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof({interfaceTypeName})
             ), 
             Gedaq.SqlClient.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdType}),
@@ -97,7 +128,8 @@ VALUES (
             ModelValueStorage storage,
             ref int indexValue,
             int endIndex,
-            bool isAsync
+            bool isAsync,
+            string interfaceTypeName
             )
         {
             if (endIndex > storage.Values.Count)
@@ -120,7 +152,7 @@ VALUES (
             {
                 ModelValue value = storage.Values[indexValue];
                 stringBuilder.Append($@"
-                changedRows = {await} {_testName}{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)});
+                changedRows = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)});
                 Assert.That(changedRows, Is.EqualTo(1));
 ");
             }

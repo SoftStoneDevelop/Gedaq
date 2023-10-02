@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 using TestsGenerator.Constants;
 using TestsGenerator.TypeInfos;
 using TestsGenerator.TypeValueHelpers;
