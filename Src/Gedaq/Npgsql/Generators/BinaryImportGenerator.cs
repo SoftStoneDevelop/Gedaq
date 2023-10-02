@@ -125,17 +125,16 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async"
+                "async "
                 ;
             var returnType = methodType == MethodType.Async ? binaryImport.MethodInfo.AsyncResultType.ToResultType() : "void";
             var methodName = methodType == MethodType.Async ? $@"{binaryImport.MethodName}Async" : $@"{binaryImport.MethodName}";
 
             builder.Append($@"
-        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {methodName}(
+        {accessModifier} {staticModifier} {asyncKeyword}{returnType} {methodName}(
             {binaryImport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
             {collectionType} collection,
-            TimeSpan? timeout = null
-");
+            TimeSpan? timeout = null");
 
 
             if (methodType == MethodType.Async)
@@ -166,8 +165,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             if (sourceType == NpgsqlSourceType.NpgsqlDataSource)
             {
                 _methodCode.Append($@"
-            {NpgsqlSourceType.NpgsqlConnection.ToTypeName()} {NpgsqlSourceType.NpgsqlConnection.ToParametrName()} = {await} {sourceType.ToParametrName()}.OpenConnection{async}({cancellation});
-");
+            {NpgsqlSourceType.NpgsqlConnection.ToTypeName()} {NpgsqlSourceType.NpgsqlConnection.ToParametrName()} = {await} {sourceType.ToParametrName()}.OpenConnection{async}({cancellation});");
             }
 
             _methodCode.Append($@"
@@ -185,8 +183,8 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 
                 {(isAsyncCollection ? await : "")}foreach (var item in collection{(isAsyncCollection ? ".WithCancellation(cancellationToken)" : "")})
                 {{
-                    {await}import.StartRow{async}({cancellation});
-");
+                    {await}import.StartRow{async}({cancellation});");
+
             WriteItem(binaryImport, methodType);
             _methodCode.Append($@"
                 }}
@@ -206,8 +204,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 
                     {await}import.Dispose{async}();
                 }}
-            }}
-");
+            }}");
         }
 
         public void WriteItem(
@@ -225,8 +222,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 var field = binaryImport.Aliases.AllFieldsOrderByPosition().First();
                 var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" : "";
                 _methodCode.Append($@"
-                    {await}import.Write{async}(item{dbType}{(isAsync ? $",cancellationToken" : "")});
-");
+                    {await}import.Write{async}(item{dbType}{(isAsync ? $",cancellationToken" : "")});");
             }
             else if (binaryImport.MapTypeName.IsNullableType())
             {
@@ -240,8 +236,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                     else
                     {{
                         {await}import.Write{async}(item.Value{dbType}{(isAsync ? $",cancellationToken" : "")});
-                    }}
-");
+                    }}");
             }
             else if (binaryImport.MapTypeName.TypeKind == TypeKind.Class || binaryImport.MapTypeName.TypeKind == TypeKind.Struct)
             {
@@ -252,8 +247,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 var field = binaryImport.Aliases.AllFieldsOrderByPosition().First();
                 var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" : "";
                 _methodCode.Append($@"
-                    {await}import.Write{async}(item{dbType}{(isAsync ? $",cancellationToken" : "")});
-");
+                    {await}import.Write{async}(item{dbType}{(isAsync ? $",cancellationToken" : "")});");
             }
         }
 
@@ -277,27 +271,23 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 {
                     _methodCode.Append($@"
                     if(!item.HasValue)
-                    {{
-");
+                    {{");
                 }
                 else if(rootMapTypeName.TypeKind == TypeKind.Class)
                 {
                     _methodCode.Append($@"
                     if(item == null)
-                    {{
-");
+                    {{");
                 }
 
                 for (var i = 0; i < needSkip; i++)
                 {
                     _methodCode.Append($@"
-                        {await}import.WriteNull{async}{cancellation};
-");
+                        {await}import.WriteNull{async}{cancellation};");
                 }
 
                 _methodCode.Append($@"
-                    }}
-");
+                    }}");
             }
 
             var itemId = 0;
@@ -340,8 +330,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 
                     _methodCode.Append($@"
                     {Tabs(newPair.Tabs)}if(item.{newPair.PathInItem()} != null)
-                    {Tabs(newPair.Tabs)}{{
-");
+                    {Tabs(newPair.Tabs)}{{");
                     continue;
                 }
             }
@@ -363,19 +352,16 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             _methodCode.Append($@"
                     {Tabs(pair.Tabs)}}}
                     {Tabs(pair.Tabs)}else
-                    {Tabs(pair.Tabs)}{{
-");
+                    {Tabs(pair.Tabs)}{{");
             var needSkip = pair.Aliases.AllFieldsOrderByPosition().Count;
             for (var i = 0; i < needSkip; i++)
             {
                 _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}    {await}import.WriteNull{async}{cancellation};
-");
+                    {Tabs(pair.Tabs)}    {await}import.WriteNull{async}{cancellation};");
             }
 
             _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}}}
-");
+                    {Tabs(pair.Tabs)}}}");
         }
 
         private void WriteFields(Field field, ItemPair pair, MethodType methodType)
@@ -399,8 +385,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                     {Tabs(tabs)}else
                     {Tabs(tabs)}{{
                     {Tabs(tabs)}    {await}import.Write{async}(item.{pathInItem}{dbType}{(isAsync ? $",cancellationToken" : "")});
-                    {Tabs(tabs)}}}
-");
+                    {Tabs(tabs)}}}");
             }
             else
             if (propertyType.IsNullableType())
@@ -413,8 +398,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                     {Tabs(tabs)}else
                     {Tabs(tabs)}{{
                     {Tabs(tabs)}    {await}import.Write{async}(item.{pathInItem}.Value{dbType}{(isAsync ? $",cancellationToken" : "")});
-                    {Tabs(tabs)}}}
-");
+                    {Tabs(tabs)}}}");
             }
             else
             {
@@ -428,14 +412,12 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                     {Tabs(tabs)}else
                     {Tabs(tabs)}{{
                     {Tabs(tabs)}    {await}import.Write{async}(item.{pathInItem}{dbType}{(isAsync ? $",cancellationToken" : "")});
-                    {Tabs(tabs)}}}
-");
+                    {Tabs(tabs)}}}");
                 }
                 else
                 {
                     _methodCode.Append($@"
-                    {Tabs(tabs)}{await}import.Write{async}(item.{pathInItem}{dbType}{(isAsync ? $",cancellationToken" : "")});
-");
+                    {Tabs(tabs)}{await}import.Write{async}(item.{pathInItem}{dbType}{(isAsync ? $",cancellationToken" : "")});");
                 }
             }
         }

@@ -121,7 +121,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async"
+                "async "
                 ;
             var returnType = methodType == MethodType.Async ? 
                 $@"IAsyncEnumerable<{binaryExport.MapTypeName.GetFullTypeName(true, true)}>" : 
@@ -130,7 +130,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             var methodName = methodType == MethodType.Async ? $@"{binaryExport.MethodName}Async" : $@"{binaryExport.MethodName}";
 
             builder.Append($@"
-        {binaryExport.AccessModifier.ToLowerInvariant()} {binaryExport.MethodStaticModifier} {asyncKeyword} {returnType} {methodName}(
+        {binaryExport.AccessModifier.ToLowerInvariant()} {binaryExport.MethodStaticModifier} {asyncKeyword}{returnType} {methodName}(
             {binaryExport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
             TimeSpan? timeout = null");
 
@@ -163,8 +163,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             if (sourceType == NpgsqlSourceType.NpgsqlDataSource)
             {
                 _methodCode.Append($@"
-            {NpgsqlSourceType.NpgsqlConnection.ToTypeName()} {NpgsqlSourceType.NpgsqlConnection.ToParametrName()} = {await} {sourceType.ToParametrName()}.OpenConnection{async}({cancellation});
-");
+            {NpgsqlSourceType.NpgsqlConnection.ToTypeName()} {NpgsqlSourceType.NpgsqlConnection.ToParametrName()} = {await} {sourceType.ToParametrName()}.OpenConnection{async}({cancellation});");
             }
 
             _methodCode.Append($@"
@@ -180,8 +179,8 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 }}
 
                 while({await}export.StartRow{async}({cancellation}) != -1)
-                {{  
-");
+                {{");
+
             YieldItem(binaryExport, methodType);
             _methodCode.Append($@"
                 }}
@@ -201,8 +200,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 
                     {await}export.Dispose{async}();
                 }}
-            }}
-");
+            }}");
         }
 
         public void YieldItem(
@@ -218,8 +216,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             {
                 var field = binaryExport.Aliases.AllFieldsOrderByPosition().First();
                 _methodCode.Append($@"
-                    yield return export.Read{async}<{binaryExport.MapTypeName.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});
-");
+                    yield return export.Read{async}<{binaryExport.MapTypeName.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
             }
             else if (binaryExport.MapTypeName.IsNullableType())
             {
@@ -233,29 +230,25 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                     else
                     {{
                         yield return export.Read{async}<{binaryExport.MapTypeName.GetFullTypeName(true, addQuestionNoatble: false)}>({GetReadParametrs(field, isAsync)});
-                    }}
-");
+                    }}");
             }
             else if (binaryExport.MapTypeName.Name == nameof(Object))
             {
                 var field = binaryExport.Aliases.AllFieldsOrderByPosition().First();
                 _methodCode.Append($@"
-                    yield return export.Read{async}<object>({GetReadParametrs(field, isAsync)});
-");
+                    yield return export.Read{async}<object>({GetReadParametrs(field, isAsync)});");
             }
             else if (binaryExport.MapTypeName.TypeKind == TypeKind.Class || binaryExport.MapTypeName.TypeKind == TypeKind.Struct)
             {
                 ComplicateItem(binaryExport.Aliases, binaryExport.MapTypeName, methodType);
                 _methodCode.Append($@" 
-                    yield return item;
-");
+                    yield return item;");
             }
             else
             {
                 var field = binaryExport.Aliases.AllFieldsOrderByPosition().First();
                 _methodCode.Append($@"
-                    yield return export.Read{async}<{binaryExport.MapTypeName.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});
-");
+                    yield return export.Read{async}<{binaryExport.MapTypeName.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
             }
         }
 
@@ -301,8 +294,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 var root = new ItemPair(rootAliase, rootMapTypeName, "item", 0);
                 aliases.Push(root);
                 _methodCode.Append($@"
-                    var {root.ItemName} = new {root.MapTypeName.GetFullTypeName()}();
-");
+                    var {root.ItemName} = new {root.MapTypeName.GetFullTypeName()}();");
             }
 
             var itemId = 0;
@@ -341,14 +333,12 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                         _methodCode.Append($@"
                     {Tabs(newPair.Tabs)}if(!export.IsNull)
                     {Tabs(newPair.Tabs)}{{
-                    {Tabs(newPair.Tabs)}    var {newPair.ItemName} = new {newPair.MapTypeName.GetFullTypeName()}();
-");
+                    {Tabs(newPair.Tabs)}    var {newPair.ItemName} = new {newPair.MapTypeName.GetFullTypeName()}();");
                     }
                     else
                     {
                         _methodCode.Append($@" 
-                    {Tabs(newPair.Tabs)}    {newPair.MapTypeName.GetFullTypeName()}{(newPair.MapTypeName.TypeKind != TypeKind.Class ? "?" : "")} {newPair.ItemName} = null;
-");
+                    {Tabs(newPair.Tabs)}    {newPair.MapTypeName.GetFullTypeName()}{(newPair.MapTypeName.TypeKind != TypeKind.Class ? "?" : "")} {newPair.ItemName} = null;");
                     }
                     continue;
                 }
@@ -374,39 +364,35 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                     {Tabs(pair.Tabs)}    {pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
                     {Tabs(pair.Tabs)}}}
                     {Tabs(pair.Tabs)}else
-                    {Tabs(pair.Tabs)}{{
-");
+                    {Tabs(pair.Tabs)}{{");
+
                 var needSkip = pair.Aliases.AllFieldsOrderByPosition().Count;
                 for ( var i = 0; i < needSkip; i++)
                 {
                     _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}    {await}export.Skip{async}{cancellation};
-");
+                    {Tabs(pair.Tabs)}    {await}export.Skip{async}{cancellation};");
                 }
 
                 _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}}}
-");
+                    {Tabs(pair.Tabs)}}}");
             }
             else
             {
                 _methodCode.Append($@"
                     {Tabs(pair.Tabs)}if({pair.ItemName} != null)
-                    {Tabs(pair.Tabs)}{{
-");
+                    {Tabs(pair.Tabs)}{{");
+
                 if (!pair.Parent.Aliases.IsRoot)
                 {
                     _methodCode.Append($@"
                     {Tabs(pair.Tabs)}    if({pair.Parent.ItemName} == null)
                     {Tabs(pair.Tabs)}    {{
                     {Tabs(pair.Tabs)}        {pair.Parent.ItemName} = new {pair.Parent.MapTypeName.GetFullTypeName()}();
-                    {Tabs(pair.Tabs)}    }}
-");
+                    {Tabs(pair.Tabs)}    }}");
                 }
                 _methodCode.Append($@"
                     {Tabs(pair.Tabs)}    {pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
-                    {Tabs(pair.Tabs)}}}
-");
+                    {Tabs(pair.Tabs)}}}");
             }
         }
 
@@ -420,8 +406,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
             _methodCode.Append($@"
                         {Tabs(pair.Tabs)}if(!export.IsNull)
-                        {Tabs(pair.Tabs)}{{
-");
+                        {Tabs(pair.Tabs)}{{");
 
             if (pair.Parent != null && !pair.Aliases.HaveLinkKey)
             {
@@ -429,21 +414,18 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                             {Tabs(pair.Tabs)}if({pair.ItemName} == null)
                             {Tabs(pair.Tabs)}{{
                                 {Tabs(pair.Tabs)} {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
-                            {Tabs(pair.Tabs)}}}
-");
+                            {Tabs(pair.Tabs)}}}");
             }
 
             if (propertyType.IsNullableType())
             {
                 _methodCode.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({GetReadParametrs(field, isAsync)});
-");
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({GetReadParametrs(field, isAsync)});");
             }
             else
             {
                 _methodCode.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});
-");
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
             }
 
             _methodCode.Append($@"
@@ -451,8 +433,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                         {Tabs(pair.Tabs)}else
                         {Tabs(pair.Tabs)}{{
                         {Tabs(pair.Tabs)}    {await} export.Skip{async}{cancelation};
-                        {Tabs(pair.Tabs)}}}
-");
+                        {Tabs(pair.Tabs)}}}");
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

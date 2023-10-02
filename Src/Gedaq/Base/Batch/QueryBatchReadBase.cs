@@ -137,11 +137,11 @@ namespace Gedaq.Base.Batch
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async"
+                "async "
                 ;
 
             builder.Append($@"        
-        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {ReadMethodName(source, methodType)}(
+        {accessModifier} {staticModifier} {asyncKeyword}{returnType} {ReadMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
             _commandGenerator.AddMethodParametrs(source, builder);
@@ -188,8 +188,8 @@ namespace Gedaq.Base.Batch
             if(needClose)
             {{
                 {await}{sourceParametrName}.Open{async};
-            }}
-");
+            }}");
+
             }
 
             builder.Append($@"
@@ -197,25 +197,24 @@ namespace Gedaq.Base.Batch
             {ProviderInfo.ReaderType()} reader = null;
             try
             {{
-                batch = 
-");
+                batch = ");
+
             _commandGenerator.CreateCommand(source, sourceParametrName, methodType, builder);
 
             builder.Append($@"
-                ;
-");
+                ;");
 
             _commandGenerator.WriteSetParametrs(source, builder, ProviderInfo);
 
             builder.Append($@"
-                reader = {await}batch.ExecuteReader{async};
-");
+                reader = {await}batch.ExecuteReader{async};");
+
             foreach (var item in source.QueryBases())
             {
                 builder.Append($@"
                 yield return {_commandGenerator.BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
-                {await}reader.NextResult{async};
-");
+                {await}reader.NextResult{async};");
+
             }
 
             builder.Append($@"
@@ -236,16 +235,16 @@ namespace Gedaq.Base.Batch
                     }}
                 
                     {await}reader.Dispose{disposeOrCloseAsync};
-                }}
-");
+                }}");
+
             if (needCheckOpen)
             {
                 builder.Append($@"
                 if (needClose)
                 {{
                     {await}{sourceParametrName}.Close{disposeOrCloseAsync};
-                }}
-");
+                }}");
+
             }
             builder.Append($@"
                 if(batch != null)

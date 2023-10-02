@@ -189,11 +189,11 @@ namespace Gedaq.Base.Batch
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async"
+                "async "
                 ;
 
             builder.Append($@"
-        {accessModifier} {staticModifier} {asyncKeyword} {typeName} {ScalarMethodName(source, methodType)}(
+        {accessModifier} {staticModifier} {asyncKeyword}{typeName} {ScalarMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
             _commandGenerator.AddMethodParametrs(source, builder);
@@ -287,11 +287,11 @@ namespace Gedaq.Base.Batch
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async"
+                "async "
                 ;
 
             builder.Append($@"        
-        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {NonQueryMethodName(source, methodType)}(
+        {accessModifier} {staticModifier} {asyncKeyword}{returnType} {NonQueryMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
             _commandGenerator.AddMethodParametrs(source, builder);
@@ -312,8 +312,8 @@ namespace Gedaq.Base.Batch
             }
 
             builder.Append($@"
-        )
-");
+        )");
+
         }
 
         private void MethodBody(
@@ -338,21 +338,20 @@ namespace Gedaq.Base.Batch
             if(needClose)
             {{
                 {await}{sourceParametrName}.Open{async};
-            }}
-");
+            }}");
             }
 
             builder.Append($@"
             {ProviderInfo.BatchType()} batch = null;
             try
             {{
-                batch =
-");
+                batch =");
+
             _commandGenerator.CreateCommand(source, sourceParametrName, methodType, builder);
 
             builder.Append($@"
-                ;
-");
+                ;");
+
             _commandGenerator.WriteSetParametrs(source, builder, ProviderInfo);
 
             _commandGenerator.GetScalarType(source, ProviderInfo, out var typeSymbol, out var isRowAffected, out var typeName);
@@ -361,8 +360,8 @@ namespace Gedaq.Base.Batch
                 if (isRowAffected || (!typeSymbol.IsNullableType() && !typeSymbol.IsReferenceType))
                 {
                     builder.Append($@"
-            {typeName} result = ({typeName}){await}batch.ExecuteScalar{async};
-");
+            {typeName} result = ({typeName}){await}batch.ExecuteScalar{async};");
+
                 }
                 else
                 {
@@ -376,15 +375,15 @@ namespace Gedaq.Base.Batch
             else
             {{
                 result = ({typeName})scalarResult;
-            }}
-");
+            }}");
+
                 }
             }
             else
             {
                 builder.Append($@"
-                var result = ({typeName}){await}batch.ExecuteNonQuery{async};
-");
+                var result = ({typeName}){await}batch.ExecuteNonQuery{async};");
+
             }
 
             if (source.HaveParametrs)
@@ -396,16 +395,16 @@ namespace Gedaq.Base.Batch
                 return result;
             }}
             finally
-            {{
-");
+            {{");
+
             if (needCheckOpen)
             {
                 builder.Append($@"
                 if (needClose)
                 {{
                     {await}connection.Close{disposeOrCloseAsync};
-                }}
-");
+                }}");
+
             }
 
             builder.Append($@"

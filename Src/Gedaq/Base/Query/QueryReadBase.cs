@@ -136,11 +136,11 @@ namespace Gedaq.Base.Query
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async"
+                "async "
                 ;
 
             builder.Append($@"        
-        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {ReadMethodName(source, methodType)}(
+        {accessModifier} {staticModifier} {asyncKeyword}{returnType} {ReadMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
             _commandGenerator.AddParametrs(source, builder, false);
@@ -190,8 +190,8 @@ namespace Gedaq.Base.Query
             if(needClose)
             {{
                 {await}{sourceParametrName}.Open{async};
-            }}
-");
+            }}");
+
             }
             
             builder.Append($@"
@@ -199,38 +199,33 @@ namespace Gedaq.Base.Query
             {ProviderInfo.ReaderType()} reader = null;
             try
             {{
-                command =
-");
+                command =");
+
             _commandGenerator.CreateCommand(source, sourceParametrName, methodType, builder);
 
             if(source.ContainTypeName.GCIsStatic())
             {
                 builder.Append($@"
                 ;
-                command.{_commandGenerator.SetParametrsMethodName(source)}(
-");
+                command.{_commandGenerator.SetParametrsMethodName(source)}(");
             }
             else
             {
                 builder.Append($@"
                 ;
                 {_commandGenerator.SetParametrsMethodName(source)}(
-                    command
-");
+                    command");
             }
             _commandGenerator.WriteSetParametrs(source, builder, ProviderInfo);
             builder.Append($@"
-                    );
-");
+                    );");
 
             builder.Append($@"
-                reader = {await}command.ExecuteReader{async};
-");
+                reader = {await}command.ExecuteReader{async};");
 
             builder.Append($@"
                 while ({await}reader.Read{async})
-                {{
-");
+                {{");
             MappingHelper.YieldItem(source, builder, ProviderInfo);
             builder.Append($@"
                 }}
@@ -256,16 +251,15 @@ namespace Gedaq.Base.Query
                     }}
                 
                     {await}reader.Dispose{disposeOrCloseAsync};
-                }}
-");
+                }}");
+
             if (needCheckOpen)
             {
                 builder.Append($@"
                 if (needClose)
                 {{
                     {await}connection.Close{disposeOrCloseAsync};
-                }}
-");
+                }}");
             }
             builder.Append($@"
                 if(command != null)

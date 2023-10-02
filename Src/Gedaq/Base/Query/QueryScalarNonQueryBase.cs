@@ -198,11 +198,11 @@ namespace Gedaq.Base.Query
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async"
+                "async "
                 ;
 
             builder.Append($@"        
-        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {NonQueryMethodName(source, methodType)}(
+        {accessModifier} {staticModifier} {asyncKeyword}{returnType} {NonQueryMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
             _commandGenerator.AddParametrs(source, builder, useInAndOut);
@@ -304,11 +304,11 @@ namespace Gedaq.Base.Query
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async"
+                "async "
                 ;
 
             builder.Append($@"        
-        {accessModifier} {staticModifier} {asyncKeyword} {returnType} {ScalarMethodName(source, methodType)}(
+        {accessModifier} {staticModifier} {asyncKeyword}{returnType} {ScalarMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
             _commandGenerator.AddParametrs(source, builder, useInAndOut);
@@ -357,45 +357,44 @@ namespace Gedaq.Base.Query
             if(needClose)
             {{
                 {await}{sourceParametrName}.Open{async};
-            }}
-");
+            }}");
             }
 
             builder.Append($@"
             {ProviderInfo.CommandType()} command = null;
             try
             {{
-                command =
-");
+                command =");
+
             _commandGenerator.CreateCommand(source, sourceParametrName, methodType, builder);
 
             if(source.ContainTypeName.GCIsStatic())
             {
                 builder.Append($@"
                 ;
-                command.{_commandGenerator.SetParametrsMethodName(source)}(
-");
+                command.{_commandGenerator.SetParametrsMethodName(source)}(");
+
             }
             else
             {
                 builder.Append($@"
                 ;
                 {_commandGenerator.SetParametrsMethodName(source)}(
-                    command
-");
+                    command");
+
             }
             _commandGenerator.WriteSetParametrs(source, builder, ProviderInfo);
             builder.Append($@"
-                    );
-");
+                    );");
+
             _commandGenerator.GetScalarType(source, ProviderInfo, out var typeSymbol, out var isRowAffected, out var typeName);
             if (queryType == QueryType.Scalar)
             {
                 if (isRowAffected || (!typeSymbol.IsNullableType() && !typeSymbol.IsReferenceType))
                 {
                     builder.Append($@"
-            {typeName} result = ({typeName}){await}command.ExecuteScalar{async};
-");
+            {typeName} result = ({typeName}){await}command.ExecuteScalar{async};");
+
                 }
                 else
                 {
@@ -409,15 +408,15 @@ namespace Gedaq.Base.Query
             else
             {{
                 result = ({typeName})scalarResult;
-            }}
-");
+            }}");
+
                 }
             }
             else
             {
                 builder.Append($@"
-                var result = ({typeName}){await}command.ExecuteNonQuery{async};
-");
+                var result = ({typeName}){await}command.ExecuteNonQuery{async};");
+
             }
 
             if (source.HaveParametrs())
@@ -429,8 +428,7 @@ namespace Gedaq.Base.Query
                 return result;
             }}
             finally
-            {{
-");
+            {{");
 
             if (needCheckOpen)
             {
@@ -438,8 +436,7 @@ namespace Gedaq.Base.Query
                 if (needClose)
                 {{
                     {await}connection.Close{disposeOrCloseAsync};
-                }}
-");
+                }}");
             }
             builder.Append($@"
                 if(command != null)
