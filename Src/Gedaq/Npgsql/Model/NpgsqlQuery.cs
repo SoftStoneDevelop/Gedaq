@@ -6,7 +6,6 @@ using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Linq;
 
 namespace Gedaq.Npgsql.Model
 {
@@ -27,7 +26,7 @@ namespace Gedaq.Npgsql.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out NpgsqlQuery method)
         {
             method = null;
-            if (namedArguments.Length != 10)
+            if (namedArguments.Length != 11)
             {
                 return false;
             }
@@ -75,6 +74,11 @@ namespace Gedaq.Npgsql.Model
             methodSource.ContainTypeName = containsType;
             method = methodSource;
             if (!methodSource.SetPartInterfaceType(namedArguments[9]))
+            {
+                return false;
+            }
+
+            if (!methodSource.FillReturnType(namedArguments[10]))
             {
                 return false;
             }

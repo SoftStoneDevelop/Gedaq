@@ -130,8 +130,32 @@ namespace Gedaq.Base.Batch
             bool forInterface = false
             )
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
-            var returnType = methodType == MethodType.Sync ? $"IEnumerable<IEnumerable<{type}>>" : $"IAsyncEnumerable<IAsyncEnumerable<{type}>>";
+            string ExecuteReturnType()
+            {
+                var type = _commandGenerator.ItemTypeName(source);
+                switch (source.ReturnType)
+                {
+                    case ReturnType.Enumerable:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"IAsyncEnumerable<IAsyncEnumerable<{type}>>" :
+                            $"IEnumerable<IEnumerable<{type}>>"
+                            ;
+                    }
+                    case ReturnType.Single:
+                    case ReturnType.SingleOrDefault:
+                    case ReturnType.First:
+                    case ReturnType.FirstOrDefault:
+                    default:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{type}>" :
+                            $"{type}"
+                            ;
+                    }
+                }
+            }
+
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
             var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
             var asyncKeyword =
@@ -141,7 +165,7 @@ namespace Gedaq.Base.Batch
                 ;
 
             builder.Append($@"        
-        {accessModifier} {staticModifier} {asyncKeyword}{returnType} {ReadMethodName(source, methodType)}(
+        {accessModifier} {staticModifier} {asyncKeyword}{ExecuteReturnType()} {ReadMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
             _commandGenerator.AddMethodParametrs(source, builder);
@@ -205,21 +229,9 @@ namespace Gedaq.Base.Batch
                 ;");
 
             _commandGenerator.WriteSetParametrs(source, builder, ProviderInfo);
+            _commandGenerator.ExecuteReadBody(source, methodType, builder);
 
             builder.Append($@"
-                reader = {await}batch.ExecuteReader{async};");
-
-            foreach (var item in source.QueryBases())
-            {
-                builder.Append($@"
-                yield return {_commandGenerator.BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
-                {await}reader.NextResult{async};");
-
-            }
-
-            builder.Append($@"
-                {await}reader.Dispose{disposeOrCloseAsync};
-                reader = null;
             }}
             finally
             {{

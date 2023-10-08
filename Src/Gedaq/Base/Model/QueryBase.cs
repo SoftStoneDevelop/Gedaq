@@ -1,17 +1,14 @@
 ﻿using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Reflection.Metadata;
-using System.Text;
 
 namespace Gedaq.Base.Model
 {
     internal abstract class QueryBase : BaseGenerateItem
     {
         public QueryType QueryType { get; protected set; }
+
+        public ReturnType ReturnType { get; protected set; }
 
         protected bool FillQueryType(TypedConstant argument)
         {
@@ -24,6 +21,20 @@ namespace Gedaq.Base.Model
             }
 
             QueryType = (QueryType)argument.Value;
+            return true;
+        }
+
+        protected bool FillReturnType(TypedConstant argument)
+        {
+            if (argument.Kind != TypedConstantKind.Enum ||
+                !(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
+                !namedTypeSymbol.IsAssignableFrom("Gedaq.Common.Enums", "ReturnType")
+                )
+            {
+                return false;
+            }
+
+            ReturnType = (ReturnType)argument.Value;
             return true;
         }
     }

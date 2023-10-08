@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
@@ -147,21 +148,6 @@ namespace Gedaq.Base.Batch
 ");
         }
 
-        public string BatchItemMethodName(
-            BatchPartBase batchPart,
-            MethodType methodType
-            )
-        {
-            if (methodType == MethodType.Sync)
-            {
-                return $"BatchItem{batchPart.Index}";
-            }
-            else
-            {
-                return $"BatchItem{batchPart.Index}Async";
-            }
-        }
-
         private void CreateBatchItem(
             QueryBatchCommand source,
             MethodType methodType,
@@ -178,14 +164,14 @@ namespace Gedaq.Base.Batch
                 {
                     builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static IEnumerable<{type}> {BatchItemMethodName(item, methodType)}({ProviderInfo.ReaderType()} reader)
+        private static IEnumerable<{type}> {BatchItemMethodName(source, item, methodType)}({ProviderInfo.ReaderType()} reader)
         {{");
                 }
                 else
                 {
                     builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static async IAsyncEnumerable<{type}> {BatchItemMethodName(item, methodType)}(
+        private static async IAsyncEnumerable<{type}> {BatchItemMethodName(source,item, methodType)}(
             {ProviderInfo.ReaderType()} reader,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
@@ -194,12 +180,30 @@ namespace Gedaq.Base.Batch
 
                 builder.Append($@"
             while({await}reader.Read{async})
-            {{");
-                MappingHelper.YieldItem(item.QueryBase, builder, ProviderInfo, source.AllSameTypes ? "" : "(object)");
+            {{
+                {ItemTypeName(source)} item;");
+                MappingHelper.MapItem(item.QueryBase, builder, ProviderInfo, "item", CastTypeExpr(source));
                 builder.Append($@"
+                yield return item;
             }}
         }}
 ");
+            }
+        }
+
+        public string BatchItemMethodName(
+            QueryBatchCommand source,
+            BatchPartBase batchPart,
+            MethodType methodType
+            )
+        {
+            if (methodType == MethodType.Sync)
+            {
+                return $"{source.MethodName}BatchItem{batchPart.Index}";
+            }
+            else
+            {
+                return $"{source.MethodName}BatchItem{batchPart.Index}Async";
             }
         }
 
@@ -691,8 +695,32 @@ namespace Gedaq.Base.Batch
             bool forInterface = false
             )
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
-            var returnType = methodType == MethodType.Async ? $"IAsyncEnumerable<IAsyncEnumerable<{type}>>" : $"IEnumerable<IEnumerable<{type}>>";
+            string ExecuteReturnType()
+            {
+                var type = ItemTypeName(source);
+                switch (source.ReturnType)
+                {
+                    case ReturnType.Enumerable:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"IAsyncEnumerable<IAsyncEnumerable<{type}>>" :
+                            $"IEnumerable<IEnumerable<{type}>>"
+                            ;
+                    }
+                    case ReturnType.Single:
+                    case ReturnType.SingleOrDefault:
+                    case ReturnType.First:
+                    case ReturnType.FirstOrDefault:
+                    default:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{type}>" :
+                            $"{type}"
+                            ;
+                    }
+                }
+            }
+
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
             var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
             var asyncKeyword =
@@ -702,7 +730,7 @@ namespace Gedaq.Base.Batch
                 ;
 
             builder.Append($@"
-        {accessModifier} {staticModifier} {asyncKeyword}{returnType} {ExecuteBatchMethodName(source, methodType)}(
+        {accessModifier} {staticModifier} {asyncKeyword}{ExecuteReturnType()} {ExecuteBatchMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch");
 
             if (methodType == MethodType.Async)
@@ -714,6 +742,16 @@ namespace Gedaq.Base.Batch
 
             builder.Append($@"
             )");
+        }
+
+        public string ItemTypeName(QueryBatchCommand source)
+        {
+            return source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
+        }
+
+        private string CastTypeExpr(QueryBatchCommand source)
+        {
+            return source.AllSameTypes ? string.Empty : $"({ItemTypeName(source)})";
         }
 
         protected void ExecuteBatchBody(
@@ -732,18 +770,9 @@ namespace Gedaq.Base.Batch
             try
             {{");
 
-            builder.Append($@"
-                reader = {await}batch.ExecuteReader{async};");
-            foreach (var item in source.QueryBases())
-            {
-                builder.Append($@"
-                yield return {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
-                {await}reader.NextResult{async};");
-            }
+            ExecuteReadBody(source, methodType, builder);
 
             builder.Append($@"
-                {await}reader.Dispose{disposeAsync};
-                reader = null;
             }}
             finally
             {{
@@ -763,6 +792,246 @@ namespace Gedaq.Base.Batch
             }}
         }}
 ");
+        }
+
+        public void ExecuteReadBody(
+            QueryBatchCommand source,
+            MethodType methodType,
+            StringBuilder builder
+            )
+        {
+            var await = methodType == MethodType.Async ? "await " : "";
+            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
+            var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
+            string GetEnumerator(BatchPartBase item)
+            {
+                if(methodType == MethodType.Async)
+                {
+                    return $"{BatchItemMethodName(source, item, methodType)}(reader, cancellationToken).GetAsyncEnumerator(cancellationToken)";
+                }
+                else
+                {
+                    return $"{BatchItemMethodName(source, item, methodType)}(reader).GetEnumerator()";
+                }
+            }
+
+            string EnumeratorMoveNext()
+            {
+                if (methodType == MethodType.Async)
+                {
+                    return $"await enumerator.MoveNextAsync(cancellationToken)";
+                }
+                else
+                {
+                    return $"enumerator.MoveNext()";
+                }
+            }
+
+            builder.Append($@"
+                reader = {await}batch.ExecuteReader{async};");
+
+            switch (source.ReturnType) 
+            {
+                case ReturnType.Enumerable:
+                {
+                    foreach (var item in source.QueryBases())
+                    {
+                        builder.Append($@"
+                yield return {BatchItemMethodName(source, item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
+                {await}reader.NextResult{async};");
+                    }
+
+                    builder.Append($@"
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+
+                {await}reader.Dispose{disposeAsync};
+                reader = null;");
+
+                    break;
+                }
+
+                case ReturnType.Single:
+                {
+                    builder.Append($@"
+                var notContainAny = true;
+                var haveMoreThanOne = false;
+                {ItemTypeName(source)} item = default;");
+                    foreach (var item in source.QueryBases())
+                    {
+                        builder.Append($@"
+                if(!haveMoreThanOne)
+                {{
+                    var enumerator = {GetEnumerator(item)};
+                    var haveItem = {EnumeratorMoveNext()};
+                    if(notContainAny)
+                    {{
+                        if(haveItem)
+                        {{
+                            item = enumerator.Current;
+                            notContainAny = false;
+                        }}
+                    }}
+                    else if(haveItem)
+                    {{
+                        haveMoreThanOne = true;
+                    }}
+                    
+                    {await}reader.NextResult{async};
+                }}");
+
+                    }
+
+                    builder.Append($@"
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+                
+                if(notContainAny)
+                {{
+                    throw new InvalidOperationException(""The sequence does not contain any elements"");
+                }}
+
+                if(haveMoreThanOne)
+                {{
+                    throw new InvalidOperationException(""The sequence have more than one element"");
+                }}
+
+                return item;");
+
+                    break;
+                }
+
+                case ReturnType.SingleOrDefault:
+                {
+                    builder.Append($@"
+                var notContainAny = true;
+                var haveMoreThanOne = false;
+                {ItemTypeName(source)} item = default;");
+                    foreach (var item in source.QueryBases())
+                    {
+                        builder.Append($@"
+                if(!haveMoreThanOne)
+                {{
+                    var enumerator = {GetEnumerator(item)};
+                    var haveItem = {EnumeratorMoveNext()};
+                    if(notContainAny)
+                    {{
+                        if(haveItem)
+                        {{
+                            item = enumerator.Current;
+                            notContainAny = false;
+                        }}
+                    }}
+                    else if(haveItem)
+                    {{
+                        haveMoreThanOne = true;
+                    }}
+                    
+                    {await}reader.NextResult{async};
+                }}");
+
+                    }
+
+                    builder.Append($@"
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+
+                if(haveMoreThanOne)
+                {{
+                    throw new InvalidOperationException(""The sequence have more than one element"");
+                }}
+
+                return item;");
+
+                    break;
+                }
+
+                case ReturnType.First:
+                {
+                    builder.Append($@"
+                var notContainAny = true;
+                {ItemTypeName(source)} item = default;");
+                    foreach (var item in source.QueryBases())
+                    {
+                        builder.Append($@"
+                if(notContainAny)
+                {{
+                    var enumerator = {GetEnumerator(item)};
+                    var haveItem = {EnumeratorMoveNext()};
+                    if(haveItem)
+                    {{
+                        item = enumerator.Current;
+                        notContainAny = false;
+                    }}
+                    
+                    {await}reader.NextResult{async};
+                }}");
+
+                    }
+
+                    builder.Append($@"
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+                
+                if(notContainAny)
+                {{
+                    throw new InvalidOperationException(""The sequence does not contain any elements"");
+                }}
+
+                return item;");
+
+                    break;
+                }
+
+                case ReturnType.FirstOrDefault:
+                {
+                    builder.Append($@"
+                var notContainAny = true;
+                {ItemTypeName(source)} item = default;");
+                    foreach (var item in source.QueryBases())
+                    {
+                        builder.Append($@"
+                if(notContainAny)
+                {{
+                    var enumerator = {GetEnumerator(item)};
+                    var haveItem = {EnumeratorMoveNext()};
+                    if(haveItem)
+                    {{
+                        item = enumerator.Current;
+                        notContainAny = false;
+                    }}
+                    
+                    {await}reader.NextResult{async};
+                }}");
+
+                    }
+
+                    builder.Append($@"
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+
+                return item;");
+
+                    break;
+                }
+            }  
         }
 
         public string ExecuteScalarBatchMethodName(

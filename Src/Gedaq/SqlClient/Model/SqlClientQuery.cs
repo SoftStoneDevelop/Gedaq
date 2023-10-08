@@ -4,7 +4,6 @@ using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Linq;
 
 namespace Gedaq.SqlClient.Model
 {
@@ -24,7 +23,7 @@ namespace Gedaq.SqlClient.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out SqlClientQuery method)
         {
             method = null;
-            if (namedArguments.Length != 9)
+            if (namedArguments.Length != 10)
             {
                 return false;
             }
@@ -67,6 +66,11 @@ namespace Gedaq.SqlClient.Model
             methodSource.ContainTypeName = containsType;
             method = methodSource;
             if (!methodSource.SetPartInterfaceType(namedArguments[8]))
+            {
+                return false;
+            }
+
+            if (!methodSource.FillReturnType(namedArguments[9]))
             {
                 return false;
             }

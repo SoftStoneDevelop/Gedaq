@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using System.Text;
@@ -130,7 +131,31 @@ namespace Gedaq.Base.Query
             bool forInterface = false
             )
         {
-            var returnType = methodType == MethodType.Sync ? $"IEnumerable<{source.MapTypeName.GetFullTypeName(true)}>" : $"IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}>";
+            string ExecuteCommandReturnType()
+            {
+                switch (source.ReturnType)
+                {
+                    case ReturnType.Enumerable:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"IAsyncEnumerable<{_commandGenerator.ItemTypeName(source)}>" :
+                            $"IEnumerable<{_commandGenerator.ItemTypeName(source)}>"
+                            ;
+                    }
+                    case ReturnType.Single:
+                    case ReturnType.SingleOrDefault:
+                    case ReturnType.First:
+                    case ReturnType.FirstOrDefault:
+                    default:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{_commandGenerator.ItemTypeName(source)}>" :
+                            $"{_commandGenerator.ItemTypeName(source)}"
+                            ;
+                    }
+                }
+            }
+
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
             var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
             var asyncKeyword =
@@ -140,7 +165,7 @@ namespace Gedaq.Base.Query
                 ;
 
             builder.Append($@"        
-        {accessModifier} {staticModifier} {asyncKeyword}{returnType} {ReadMethodName(source, methodType)}(
+        {accessModifier} {staticModifier} {asyncKeyword}{ExecuteCommandReturnType()} {ReadMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
             _commandGenerator.AddParametrs(source, builder, false);
@@ -220,22 +245,9 @@ namespace Gedaq.Base.Query
             builder.Append($@"
                     );");
 
-            builder.Append($@"
-                reader = {await}command.ExecuteReader{async};");
+            _commandGenerator.ExecuteReader(source, methodType, builder);
 
             builder.Append($@"
-                while ({await}reader.Read{async})
-                {{");
-            MappingHelper.YieldItem(source, builder, ProviderInfo);
-            builder.Append($@"
-                }}
-
-                while ({await}reader.NextResult{async})
-                {{
-                }}
-
-                {await}reader.Dispose{disposeOrCloseAsync};
-                reader = null;
             }}
             finally
             {{

@@ -14,7 +14,7 @@ namespace Gedaq.MySqlConnector.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out MySqlConnectorQueryBatch queryBatch)
         {
             queryBatch = null;
-            if (namedArguments.Length != 6)
+            if (namedArguments.Length != 7)
             {
                 return false;
             }
@@ -38,6 +38,11 @@ namespace Gedaq.MySqlConnector.Model
             queryBatch = result;
 
             if (!result.SetPartInterfaceType(namedArguments[5]))
+            {
+                return false;
+            }
+
+            if (!result.FillReturnType(namedArguments[6]))
             {
                 return false;
             }
