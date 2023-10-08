@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using System.Text;
@@ -220,22 +221,9 @@ namespace Gedaq.Base.Query
             builder.Append($@"
                     );");
 
-            builder.Append($@"
-                reader = {await}command.ExecuteReader{async};");
+            _commandGenerator.ExecuteReader(source, methodType, builder);
 
             builder.Append($@"
-                while ({await}reader.Read{async})
-                {{");
-            MappingHelper.YieldItem(source, builder, ProviderInfo);
-            builder.Append($@"
-                }}
-
-                while ({await}reader.NextResult{async})
-                {{
-                }}
-
-                {await}reader.Dispose{disposeOrCloseAsync};
-                reader = null;
             }}
             finally
             {{

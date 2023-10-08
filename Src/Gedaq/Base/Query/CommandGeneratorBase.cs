@@ -365,6 +365,13 @@ namespace Gedaq.Base.Query
             )");
         }
 
+        public string ItemTypeName(
+            QueryBaseCommand source
+            )
+        {
+            return source.MapTypeName.GetFullTypeName(true);
+        }
+
         protected void ExecuteCommandBody(
             QueryBaseCommand source,
             MethodType methodType,
@@ -381,20 +388,9 @@ namespace Gedaq.Base.Query
             try
             {{");
 
-            builder.Append($@"
-                reader = {await}command.ExecuteReader{async};
-                while ({await}reader.Read{async})
-                {{");
+            ExecuteReader(source, methodType, builder);
 
-            MappingHelper.YieldItem(source, builder, ProviderInfo);
             builder.Append($@"
-                }}
-
-                while ({await}reader.NextResult{async})
-                {{
-                }}
-                {await}reader.Dispose{disposeAsync};
-                reader = null;
             }}
             finally
             {{
@@ -414,6 +410,149 @@ namespace Gedaq.Base.Query
             }}
         }}
 ");
+        }
+
+        public void ExecuteReader(
+            QueryBaseCommand source,
+            MethodType methodType,
+            StringBuilder builder
+            )
+        {
+            var await = methodType == MethodType.Async ? "await " : "";
+            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
+            var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
+
+            builder.Append($@"
+                reader = {await}command.ExecuteReader{async};");
+
+            switch (source.ReturnType)
+            {
+                case ReturnType.Enumerable:
+                {
+                    builder.Append($@"
+                while ({await}reader.Read{async})
+                {{
+                    {ItemTypeName(source)} item;");
+
+                    MappingHelper.MapItem(source, builder, ProviderInfo, "item");
+
+                    builder.Append($@"
+                    yield return item;
+                }}
+
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+                {await}reader.Dispose{disposeAsync};
+                reader = null;");
+
+                    break;
+                }
+                case ReturnType.Single:
+                {
+                    builder.Append($@"
+                {ItemTypeName(source)} item;
+                var notContainAny = !{await}reader.Read{async};
+                if(!notContainAny)
+                {{");
+
+                    MappingHelper.MapItem(source, builder, ProviderInfo, "item");
+
+                    builder.Append($@"
+                }}
+
+                var haveMoreThanOne = {await}reader.Read{async};
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+
+                if(notContainAny)
+                {{
+                    throw new InvalidOperationException(""The sequence does not contain any elements"");
+                }}
+
+                if(haveMoreThanOne)
+                {{
+                    throw new InvalidOperationException(""The sequence have more than one element"");
+                }}
+
+                return item;");
+
+                    break;
+                }
+                case ReturnType.SingleOrDefault:
+                {
+                    builder.Append($@"
+                {ItemTypeName(source)} item = default;
+                if({await}reader.Read{async})
+                {{");
+
+                    MappingHelper.MapItem(source, builder, ProviderInfo, "item");
+
+                    builder.Append($@"
+                }}
+
+                var haveMoreThanOne = {await}reader.Read{async};
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+
+                if(haveMoreThanOne)
+                {{
+                    throw new InvalidOperationException(""The sequence have more than one element"");
+                }}
+
+                return item;");
+                    break;
+                }
+                case ReturnType.First:
+                {
+                    builder.Append($@"
+                {ItemTypeName(source)} item;
+                if(!{await}reader.Read{async})
+                {{
+                    throw new InvalidOperationException(""The sequence does not contain any elements"");
+                }}");
+
+                    MappingHelper.MapItem(source, builder, ProviderInfo, "item");
+
+                    builder.Append($@"
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+
+                return item;");
+
+                    break;
+                }
+                case ReturnType.FirstOrDefault:
+                {
+                    builder.Append($@"
+                {ItemTypeName(source)} item = default;
+                if({await}reader.Read{async})
+                {{");
+
+                    MappingHelper.MapItem(source, builder, ProviderInfo, "item");
+                    
+                    builder.Append($@"
+                }}
+
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+
+                return item;");
+                    break;
+                }
+            }
         }
 
         public string ExecuteScalarCommandMethodName(

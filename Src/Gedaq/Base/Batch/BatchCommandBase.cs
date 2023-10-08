@@ -147,21 +147,6 @@ namespace Gedaq.Base.Batch
 ");
         }
 
-        public string BatchItemMethodName(
-            BatchPartBase batchPart,
-            MethodType methodType
-            )
-        {
-            if (methodType == MethodType.Sync)
-            {
-                return $"BatchItem{batchPart.Index}";
-            }
-            else
-            {
-                return $"BatchItem{batchPart.Index}Async";
-            }
-        }
-
         private void CreateBatchItem(
             QueryBatchCommand source,
             MethodType methodType,
@@ -194,12 +179,29 @@ namespace Gedaq.Base.Batch
 
                 builder.Append($@"
             while({await}reader.Read{async})
-            {{");
-                MappingHelper.YieldItem(item.QueryBase, builder, ProviderInfo, source.AllSameTypes ? "" : "(object)");
+            {{
+                {ItemTypeName(source)} item;");
+                MappingHelper.MapItem(item.QueryBase, builder, ProviderInfo, "item", CastTypeExpr(source));
                 builder.Append($@"
+                yield return item;
             }}
         }}
 ");
+            }
+        }
+
+        public string BatchItemMethodName(
+            BatchPartBase batchPart,
+            MethodType methodType
+            )
+        {
+            if (methodType == MethodType.Sync)
+            {
+                return $"BatchItem{batchPart.Index}";
+            }
+            else
+            {
+                return $"BatchItem{batchPart.Index}Async";
             }
         }
 
@@ -691,7 +693,7 @@ namespace Gedaq.Base.Batch
             bool forInterface = false
             )
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
+            var type = ItemTypeName(source);
             var returnType = methodType == MethodType.Async ? $"IAsyncEnumerable<IAsyncEnumerable<{type}>>" : $"IEnumerable<IEnumerable<{type}>>";
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
             var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
@@ -716,6 +718,16 @@ namespace Gedaq.Base.Batch
             )");
         }
 
+        private string ItemTypeName(QueryBatchCommand source)
+        {
+            return source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
+        }
+
+        private string CastTypeExpr(QueryBatchCommand source)
+        {
+            return source.AllSameTypes ? string.Empty : $"({ItemTypeName(source)})";
+        }
+
         protected void ExecuteBatchBody(
             QueryBatchCommand source,
             MethodType methodType,
@@ -732,18 +744,9 @@ namespace Gedaq.Base.Batch
             try
             {{");
 
-            builder.Append($@"
-                reader = {await}batch.ExecuteReader{async};");
-            foreach (var item in source.QueryBases())
-            {
-                builder.Append($@"
-                yield return {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
-                {await}reader.NextResult{async};");
-            }
+            ExecuteReadBody(source, methodType, builder);
 
             builder.Append($@"
-                {await}reader.Dispose{disposeAsync};
-                reader = null;
             }}
             finally
             {{
@@ -763,6 +766,223 @@ namespace Gedaq.Base.Batch
             }}
         }}
 ");
+        }
+
+        private void ExecuteReadBody(
+            QueryBatchCommand source,
+            MethodType methodType,
+            StringBuilder builder
+            )
+        {
+            var await = methodType == MethodType.Async ? "await " : "";
+            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
+            var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
+
+            builder.Append($@"
+                reader = {await}batch.ExecuteReader{async};");
+
+            switch (source.ReturnType) 
+            {
+                case ReturnType.Enumerable:
+                {
+                    foreach (var item in source.QueryBases())
+                    {
+                        builder.Append($@"
+                yield return {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
+                {await}reader.NextResult{async};");
+                    }
+
+                    builder.Append($@"
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+
+                {await}reader.Dispose{disposeAsync};
+                reader = null;");
+
+                    break;
+                }
+
+                case ReturnType.Single:
+                {
+                    builder.Append($@"
+                var notContainAny = true;
+                var haveMoreThanOne = false;
+                {ItemTypeName(source)} item;");
+                    foreach (var item in source.QueryBases())
+                    {
+                        builder.Append($@"
+                if(!haveMoreThanOne)
+                {{
+                    var enumerable = {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
+                    var haveItem = enumerable.MoveNext();
+                    if(notContainAny)
+                    {{
+                        if(haveItem)
+                        {{
+                            item = enumerable.Current;
+                            notContainAny = false;
+                        }}
+                    }}
+                    else if(haveItem)
+                    {{
+                        haveMoreThanOne = true;
+                    }}
+                    
+                    {await}reader.NextResult{async};
+                }}");
+
+                    }
+
+                    builder.Append($@"
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+                
+                if(notContainAny)
+                {{
+                    throw new InvalidOperationException(""The sequence does not contain any elements"");
+                }}
+
+                if(haveMoreThanOne)
+                {{
+                    throw new InvalidOperationException(""The sequence have more than one element"");
+                }}
+
+                return item;");
+
+                    break;
+                }
+
+                case ReturnType.SingleOrDefault:
+                {
+                    builder.Append($@"
+                var notContainAny = true;
+                var haveMoreThanOne = false;
+                {ItemTypeName(source)} item = default;");
+                    foreach (var item in source.QueryBases())
+                    {
+                        builder.Append($@"
+                if(!haveMoreThanOne)
+                {{
+                    var enumerable = {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
+                    var haveItem = enumerable.MoveNext();
+                    if(notContainAny)
+                    {{
+                        if(haveItem)
+                        {{
+                            item = enumerable.Current;
+                            notContainAny = false;
+                        }}
+                    }}
+                    else if(haveItem)
+                    {{
+                        haveMoreThanOne = true;
+                    }}
+                    
+                    {await}reader.NextResult{async};
+                }}");
+
+                    }
+
+                    builder.Append($@"
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+
+                if(haveMoreThanOne)
+                {{
+                    throw new InvalidOperationException(""The sequence have more than one element"");
+                }}
+
+                return item;");
+
+                    break;
+                }
+
+                case ReturnType.First:
+                {
+                    builder.Append($@"
+                var notContainAny = true;
+                {ItemTypeName(source)} item;");
+                    foreach (var item in source.QueryBases())
+                    {
+                        builder.Append($@"
+                if(notContainAny)
+                {{
+                    var enumerable = {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
+                    var haveItem = enumerable.MoveNext();
+                    if(haveItem)
+                    {{
+                        item = enumerable.Current;
+                        notContainAny = false;
+                    }}
+                    
+                    {await}reader.NextResult{async};
+                }}");
+
+                    }
+
+                    builder.Append($@"
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+                
+                if(notContainAny)
+                {{
+                    throw new InvalidOperationException(""The sequence does not contain any elements"");
+                }}
+
+                return item;");
+
+                    break;
+                }
+
+                case ReturnType.FirstOrDefault:
+                {
+                    builder.Append($@"
+                var notContainAny = true;
+                {ItemTypeName(source)} item = default;");
+                    foreach (var item in source.QueryBases())
+                    {
+                        builder.Append($@"
+                if(notContainAny)
+                {{
+                    var enumerable = {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
+                    var haveItem = enumerable.MoveNext();
+                    if(haveItem)
+                    {{
+                        item = enumerable.Current;
+                        notContainAny = false;
+                    }}
+                    
+                    {await}reader.NextResult{async};
+                }}");
+
+                    }
+
+                    builder.Append($@"
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+
+                return item;");
+
+                    break;
+                }
+            }  
         }
 
         public string ExecuteScalarBatchMethodName(

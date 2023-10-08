@@ -2,7 +2,6 @@
 using Microsoft.CodeAnalysis;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Linq;
 
 namespace Gedaq.DbConnection.Model
 {
@@ -17,7 +16,7 @@ namespace Gedaq.DbConnection.Model
         internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out DbQuery query)
         {
             query = null;
-            if (namedArguments.Length != 9)
+            if (namedArguments.Length != 10)
             {
                 return false;
             }
@@ -55,6 +54,11 @@ namespace Gedaq.DbConnection.Model
             query = methodSource;
 
             if (!methodSource.SetPartInterfaceType(namedArguments[8]))
+            {
+                return false;
+            }
+
+            if (!methodSource.FillReturnType(namedArguments[9]))
             {
                 return false;
             }
