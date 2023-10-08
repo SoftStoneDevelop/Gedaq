@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
@@ -693,8 +694,32 @@ namespace Gedaq.Base.Batch
             bool forInterface = false
             )
         {
-            var type = ItemTypeName(source);
-            var returnType = methodType == MethodType.Async ? $"IAsyncEnumerable<IAsyncEnumerable<{type}>>" : $"IEnumerable<IEnumerable<{type}>>";
+            string ExecuteReturnType()
+            {
+                var type = ItemTypeName(source);
+                switch (source.ReturnType)
+                {
+                    case ReturnType.Enumerable:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"IAsyncEnumerable<IAsyncEnumerable<{type}>>" :
+                            $"IEnumerable<IEnumerable<{type}>>"
+                            ;
+                    }
+                    case ReturnType.Single:
+                    case ReturnType.SingleOrDefault:
+                    case ReturnType.First:
+                    case ReturnType.FirstOrDefault:
+                    default:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{type}>" :
+                            $"{type}"
+                            ;
+                    }
+                }
+            }
+
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
             var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
             var asyncKeyword =
@@ -704,7 +729,7 @@ namespace Gedaq.Base.Batch
                 ;
 
             builder.Append($@"
-        {accessModifier} {staticModifier} {asyncKeyword}{returnType} {ExecuteBatchMethodName(source, methodType)}(
+        {accessModifier} {staticModifier} {asyncKeyword}{ExecuteReturnType()} {ExecuteBatchMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch");
 
             if (methodType == MethodType.Async)

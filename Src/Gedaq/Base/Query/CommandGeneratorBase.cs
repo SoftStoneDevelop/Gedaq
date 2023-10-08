@@ -339,6 +339,31 @@ namespace Gedaq.Base.Query
             bool forInterface = false
             )
         {
+            string ExecuteCommandReturnType()
+            {
+                switch (source.ReturnType)
+                {
+                    case ReturnType.Enumerable:
+                    {
+                        return methodType == MethodType.Async ? 
+                            $"IAsyncEnumerable<{ItemTypeName(source)}>" : 
+                            $"IEnumerable<{ItemTypeName(source)}>"
+                            ;
+                    }
+                    case ReturnType.Single:
+                    case ReturnType.SingleOrDefault:
+                    case ReturnType.First:
+                    case ReturnType.FirstOrDefault:
+                    default:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{ItemTypeName(source)}>" :
+                            $"{ItemTypeName(source)}"
+                            ;
+                    }
+                }
+            }
+
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
             var methodName = ExecuteCommandMethodName(source, methodType);
             var asyncKeyword =
@@ -348,9 +373,9 @@ namespace Gedaq.Base.Query
                 ;
 
             var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
-            var returnType = methodType == MethodType.Async ? $"IAsyncEnumerable<{source.MapTypeName.GetFullTypeName(true)}>" : $"IEnumerable<{source.MapTypeName.GetFullTypeName(true)}>";
+
             builder.Append($@"
-        {accessModifier} {staticModifier} {asyncKeyword}{returnType} {methodName}(
+        {accessModifier} {staticModifier} {asyncKeyword}{ExecuteCommandReturnType()} {methodName}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command");
 
             if (methodType == MethodType.Async)
