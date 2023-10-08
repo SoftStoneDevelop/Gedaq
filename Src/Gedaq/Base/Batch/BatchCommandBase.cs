@@ -164,14 +164,14 @@ namespace Gedaq.Base.Batch
                 {
                     builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static IEnumerable<{type}> {BatchItemMethodName(item, methodType)}({ProviderInfo.ReaderType()} reader)
+        private static IEnumerable<{type}> {BatchItemMethodName(source, item, methodType)}({ProviderInfo.ReaderType()} reader)
         {{");
                 }
                 else
                 {
                     builder.Append($@"
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static async IAsyncEnumerable<{type}> {BatchItemMethodName(item, methodType)}(
+        private static async IAsyncEnumerable<{type}> {BatchItemMethodName(source,item, methodType)}(
             {ProviderInfo.ReaderType()} reader,
             [EnumeratorCancellation] CancellationToken cancellationToken = default
             )
@@ -192,17 +192,18 @@ namespace Gedaq.Base.Batch
         }
 
         public string BatchItemMethodName(
+            QueryBatchCommand source,
             BatchPartBase batchPart,
             MethodType methodType
             )
         {
             if (methodType == MethodType.Sync)
             {
-                return $"BatchItem{batchPart.Index}";
+                return $"{source.MethodName}BatchItem{batchPart.Index}";
             }
             else
             {
-                return $"BatchItem{batchPart.Index}Async";
+                return $"{source.MethodName}BatchItem{batchPart.Index}Async";
             }
         }
 
@@ -743,7 +744,7 @@ namespace Gedaq.Base.Batch
             )");
         }
 
-        private string ItemTypeName(QueryBatchCommand source)
+        public string ItemTypeName(QueryBatchCommand source)
         {
             return source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
         }
@@ -793,7 +794,7 @@ namespace Gedaq.Base.Batch
 ");
         }
 
-        private void ExecuteReadBody(
+        public void ExecuteReadBody(
             QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder
@@ -802,6 +803,29 @@ namespace Gedaq.Base.Batch
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
+            string GetEnumerator(BatchPartBase item)
+            {
+                if(methodType == MethodType.Async)
+                {
+                    return $"{BatchItemMethodName(source, item, methodType)}(reader, cancellationToken).GetAsyncEnumerator(cancellationToken)";
+                }
+                else
+                {
+                    return $"{BatchItemMethodName(source, item, methodType)}(reader).GetEnumerator()";
+                }
+            }
+
+            string EnumeratorMoveNext()
+            {
+                if (methodType == MethodType.Async)
+                {
+                    return $"await enumerator.MoveNextAsync(cancellationToken)";
+                }
+                else
+                {
+                    return $"enumerator.MoveNext()";
+                }
+            }
 
             builder.Append($@"
                 reader = {await}batch.ExecuteReader{async};");
@@ -813,7 +837,7 @@ namespace Gedaq.Base.Batch
                     foreach (var item in source.QueryBases())
                     {
                         builder.Append($@"
-                yield return {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
+                yield return {BatchItemMethodName(source, item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
                 {await}reader.NextResult{async};");
                     }
 
@@ -833,19 +857,19 @@ namespace Gedaq.Base.Batch
                     builder.Append($@"
                 var notContainAny = true;
                 var haveMoreThanOne = false;
-                {ItemTypeName(source)} item;");
+                {ItemTypeName(source)} item = default;");
                     foreach (var item in source.QueryBases())
                     {
                         builder.Append($@"
                 if(!haveMoreThanOne)
                 {{
-                    var enumerable = {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
-                    var haveItem = enumerable.MoveNext();
+                    var enumerator = {GetEnumerator(item)};
+                    var haveItem = {EnumeratorMoveNext()};
                     if(notContainAny)
                     {{
                         if(haveItem)
                         {{
-                            item = enumerable.Current;
+                            item = enumerator.Current;
                             notContainAny = false;
                         }}
                     }}
@@ -893,13 +917,13 @@ namespace Gedaq.Base.Batch
                         builder.Append($@"
                 if(!haveMoreThanOne)
                 {{
-                    var enumerable = {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
-                    var haveItem = enumerable.MoveNext();
+                    var enumerator = {GetEnumerator(item)};
+                    var haveItem = {EnumeratorMoveNext()};
                     if(notContainAny)
                     {{
                         if(haveItem)
                         {{
-                            item = enumerable.Current;
+                            item = enumerator.Current;
                             notContainAny = false;
                         }}
                     }}
@@ -935,17 +959,17 @@ namespace Gedaq.Base.Batch
                 {
                     builder.Append($@"
                 var notContainAny = true;
-                {ItemTypeName(source)} item;");
+                {ItemTypeName(source)} item = default;");
                     foreach (var item in source.QueryBases())
                     {
                         builder.Append($@"
                 if(notContainAny)
                 {{
-                    var enumerable = {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
-                    var haveItem = enumerable.MoveNext();
+                    var enumerator = {GetEnumerator(item)};
+                    var haveItem = {EnumeratorMoveNext()};
                     if(haveItem)
                     {{
-                        item = enumerable.Current;
+                        item = enumerator.Current;
                         notContainAny = false;
                     }}
                     
@@ -982,11 +1006,11 @@ namespace Gedaq.Base.Batch
                         builder.Append($@"
                 if(notContainAny)
                 {{
-                    var enumerable = {BatchItemMethodName(item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
-                    var haveItem = enumerable.MoveNext();
+                    var enumerator = {GetEnumerator(item)};
+                    var haveItem = {EnumeratorMoveNext()};
                     if(haveItem)
                     {{
-                        item = enumerable.Current;
+                        item = enumerator.Current;
                         notContainAny = false;
                     }}
                     

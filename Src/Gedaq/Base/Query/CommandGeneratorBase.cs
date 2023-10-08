@@ -476,7 +476,7 @@ namespace Gedaq.Base.Query
                 case ReturnType.Single:
                 {
                     builder.Append($@"
-                {ItemTypeName(source)} item;
+                {ItemTypeName(source)} item = default;
                 var notContainAny = !{await}reader.Read{async};
                 if(!notContainAny)
                 {{");
@@ -537,20 +537,26 @@ namespace Gedaq.Base.Query
                 case ReturnType.First:
                 {
                     builder.Append($@"
-                {ItemTypeName(source)} item;
-                if(!{await}reader.Read{async})
-                {{
-                    throw new InvalidOperationException(""The sequence does not contain any elements"");
-                }}");
+                {ItemTypeName(source)} item = default;
+                var notContainAny = !{await}reader.Read{async};
+                if(!notContainAny)
+                {{");
 
                     MappingHelper.MapItem(source, builder, ProviderInfo, "item");
 
                     builder.Append($@"
+                }}
+
                 while ({await}reader.NextResult{async})
                 {{
                 }}
                 {await}reader.Dispose{disposeAsync};
                 reader = null;
+
+                if(notContainAny)
+                {{
+                    throw new InvalidOperationException(""The sequence does not contain any elements"");
+                }}
 
                 return item;");
 
