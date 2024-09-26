@@ -22,5 +22,15 @@ namespace TestsGenerator.TypeValueHelpers
 
             return $"new NpgsqlTypes.NpgsqlPoint(x: {x}, y: {y})";
         }
+
+        public override ValuePair NewSingleValuePair()
+        {
+            var x = _doubleValueHelper.NewSingleValuePair();
+            var y = _doubleValueHelper.NewSingleValuePair();
+
+            return new (
+                new NpgsqlTypes.NpgsqlPoint((double)x.Value, (double)y.Value),
+                $"new NpgsqlTypes.NpgsqlPoint(x: {x.Represent}, y: {y.Represent})");
+        }
     }
 }
