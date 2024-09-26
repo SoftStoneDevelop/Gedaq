@@ -20,14 +20,10 @@
 		</PackageReference>
 		<PackageReference Include="System.Linq.Async" Version="6.0.1" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+		<PackageReference Include="Testcontainers.PostgreSql" Version="3.10.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Gedaq\Gedaq.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="True" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Update="appsettings.json">
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</None>
 	</ItemGroup>
 	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
 		<Exec Command="powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -File &quot;$(ProjectDir)prebuild.ps1&quot; &quot;$(SolutionDir)Src\TestsGenerator\bin\$(ConfigurationName)\net8.0&quot; &quot;PostgreSQL&quot; &quot;$(SolutionDir)Src\PostgreSQLTests&quot;" />
