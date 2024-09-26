@@ -29,14 +29,18 @@ namespace Tests
         {
             _mssql =
                 new MsSqlBuilder()
-                .WithPassword("dhgvbh73j")
                 .Build();
 
             await _mssql.StartAsync();
 
+            var builder = new SqlConnectionStringBuilder(_mssql.GetConnectionString());
+            builder.Encrypt = false;
+            builder.TrustServerCertificate = false;
+            builder.IntegratedSecurity = false;
+
             await using (var masterConnection = (SqlConnection)SqlClientFactory.Instance.CreateConnection())
             {
-                masterConnection.ConnectionString = _mssql.GetConnectionString();
+                masterConnection.ConnectionString = builder.ConnectionString;
                 await masterConnection.OpenAsync();
 
                 await using var createCmd = masterConnection.CreateCommand();
@@ -52,8 +56,11 @@ CREATE DATABASE gedaqtests
                 createCmd.ExecuteNonQuery();
             }
 
-            var builder = new SqlConnectionStringBuilder(_mssql.GetConnectionString());
-            builder.DataSource = "gedaqtests";
+            builder = new SqlConnectionStringBuilder(_mssql.GetConnectionString());
+            builder.Encrypt = false;
+            builder.TrustServerCertificate = false;
+            builder.IntegratedSecurity = false;
+            builder.InitialCatalog = "gedaqtests";
             _connectionString = builder.ConnectionString;
         }
 
@@ -62,9 +69,13 @@ CREATE DATABASE gedaqtests
         {
             if (_mssql != null)
             {
+                var builder = new SqlConnectionStringBuilder(_mssql.GetConnectionString());
+                builder.Encrypt = false;
+                builder.TrustServerCertificate = false;
+                builder.IntegratedSecurity = false;
                 await using (var masterConnection = (SqlConnection)SqlClientFactory.Instance.CreateConnection())
                 {
-                    masterConnection.ConnectionString = _mssql.GetConnectionString();
+                    masterConnection.ConnectionString = builder.ConnectionString;
                     await masterConnection.OpenAsync();
                     await using var command = masterConnection.CreateCommand();
                     command.CommandText = $@"
