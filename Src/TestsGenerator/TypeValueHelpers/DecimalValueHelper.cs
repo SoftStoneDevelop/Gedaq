@@ -22,7 +22,7 @@ namespace TestsGenerator.TypeValueHelpers
 
             if(_round != -1)
                 result = decimal.Round(result, _round);
-            return $"{result}m";
+            return $"{result.ToString(System.Globalization.CultureInfo.InvariantCulture)}m";
         }
     }
 }

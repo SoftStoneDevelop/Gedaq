@@ -17,7 +17,14 @@ namespace TestsGenerator.TypeValueHelpers
         public override string NewSingleValue()
         {
             var result = (double)Random.Shared.NextDouble();
-            return $"{result}d";
+            return $"{result.ToString(System.Globalization.CultureInfo.InvariantCulture)}d";
+        }
+
+        public override ValuePair NewSingleValuePair()
+        {
+            var result = (double)Random.Shared.NextDouble();
+
+            return new (result, $"{result.ToString(System.Globalization.CultureInfo.InvariantCulture)}d");
         }
     }
 }

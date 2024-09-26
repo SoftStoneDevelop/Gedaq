@@ -14,7 +14,7 @@ namespace NpgsqlTests
         [Test]
         [Query(
             @"
-select * from readfixturefunc(@inParam);
+select * from readfixturefunc(@inParam); 
 ",
             "FuncOut",
             queryType: Gedaq.Common.Enums.QueryType.NonQuery

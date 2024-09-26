@@ -122,7 +122,6 @@ namespace TestsGenerator.Generators
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Polygon, "NpgsqlPolygon", "NpgsqlTypes.NpgsqlPolygon", (EnumerableType type) => new NpgsqlPolygonValueHelper(type));
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Point, "NpgsqlPoint", "NpgsqlTypes.NpgsqlPoint", (EnumerableType type) => new NpgsqlPointValueHelper(type));
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Circle, "NpgsqlCircle", "NpgsqlTypes.NpgsqlCircle", (EnumerableType type) => new NpgsqlCircleValueHelper(type));
-            if (false)
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Box, "NpgsqlBox", "NpgsqlTypes.NpgsqlBox", (EnumerableType type) => new NpgsqlBoxValueHelper(type));
             if (false)
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Path, "NpgsqlPath", "NpgsqlTypes.NpgsqlPath", (EnumerableType type) => new NpgsqlPathValueHelper(type));

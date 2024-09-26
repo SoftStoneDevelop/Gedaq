@@ -1,35 +1,34 @@
-using Microsoft.Extensions.Configuration;
 using Npgsql;
 using NUnit.Framework;
 using System.Data.Common;
-using System.IO;
 using System.Threading.Tasks;
+using Testcontainers.PostgreSql;
 
 namespace Tests
 {
     [SetUpFixture]
     public class GlobalSetUp
     {
-        private IConfiguration _configuration;
-
         public static NpgsqlDataSource NpgsqlDataSource;
 
         public static NpgsqlConnection GetConnection => NpgsqlDataSource.CreateConnection();
 
         public static DbConnection GetDbConnection => NpgsqlDataSource.CreateConnection();
 
+        private PostgreSqlContainer _postgre;
+
         [OneTimeSetUp]
         public async Task OneTimeSetUp()
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: false);
-            _configuration = builder.Build();
+            _postgre =
+                new PostgreSqlBuilder()
+                .WithImage("postgres:16.0")
+                .WithPassword("dhgvbh73j")
+                .Build();
 
-            var dataSourceBuilder = new NpgsqlDataSourceBuilder(_configuration.GetConnectionString("SqlConnection"));
-            NpgsqlDataSource = dataSourceBuilder.Build();
+            await _postgre.StartAsync();
 
-            await using (var masterConnection = new NpgsqlConnection(_configuration.GetConnectionString("MasterConnection")))
+            await using (var masterConnection = new NpgsqlConnection(_postgre.GetConnectionString()))
             {
                 await masterConnection.OpenAsync();
                 await using var command = masterConnection.CreateCommand();
@@ -53,22 +52,37 @@ CREATE DATABASE gedaqtests TEMPLATE template0 CONNECTION LIMIT = -1;
                     createCmd.ExecuteNonQuery();
                 }
             }
+
+            var builder = new NpgsqlConnectionStringBuilder(_postgre.GetConnectionString());
+            builder.Database = "gedaqtests";
+            var dataSourceBuilder = new NpgsqlDataSourceBuilder(builder.ConnectionString);
+
+            NpgsqlDataSource = dataSourceBuilder.Build();
         }
 
         [OneTimeTearDown]
         public async Task OneTimeTearDown()
         {
-            await using (var masterConnection = new NpgsqlConnection(_configuration.GetConnectionString("MasterConnection")))
+            var dataSource = NpgsqlDataSource;
+            if (dataSource != null)
             {
-                await masterConnection.OpenAsync();
-                await using var command = masterConnection.CreateCommand();
-                command.CommandText = $@"
-DROP DATABASE gedaqtests WITH (FORCE);
-";
-                await command.ExecuteNonQueryAsync();
+                await NpgsqlDataSource.DisposeAsync();
             }
 
-            await NpgsqlDataSource.DisposeAsync();
+            if (_postgre != null)
+            {
+                await using (var masterConnection = new NpgsqlConnection(_postgre.GetConnectionString()))
+                {
+                    await masterConnection.OpenAsync();
+                    await using var command = masterConnection.CreateCommand();
+                    command.CommandText = $@"
+DROP DATABASE gedaqtests WITH (FORCE);
+";
+                    await command.ExecuteNonQueryAsync();
+                }
+
+                await _postgre.DisposeAsync();
+            }
         }
     }
 }
