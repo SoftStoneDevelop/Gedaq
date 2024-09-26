@@ -18,7 +18,7 @@ namespace TestsGenerator.TypeValueHelpers
         public override string NewSingleValue()
         {
             var result = (float)Random.Shared.NextSingle();
-            return $@"{result}f";
+            return $@"{result.ToString(System.Globalization.CultureInfo.InvariantCulture)}f";
         }
     }
 }

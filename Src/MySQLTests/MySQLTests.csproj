@@ -30,6 +30,6 @@
 		</None>
 	</ItemGroup>
 	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-		<Exec Command="powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -File &quot;$(ProjectDir)prebuild.ps1&quot; &quot;$(SolutionDir)Src\TestsGenerator\bin\$(ConfigurationName)\net7.0&quot; &quot;MySQL&quot; &quot;$(SolutionDir)Src\MySQLTests&quot;" />
+		<Exec Command="powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -File &quot;$(ProjectDir)prebuild.ps1&quot; &quot;$(SolutionDir)Src\TestsGenerator\bin\$(ConfigurationName)\net8.0&quot; &quot;MySQL&quot; &quot;$(SolutionDir)Src\MySQLTests&quot;" />
 	</Target>
 </Project>
