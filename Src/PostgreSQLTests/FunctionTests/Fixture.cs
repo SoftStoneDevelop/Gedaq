@@ -1,15 +1,15 @@
 ﻿using Gedaq.Npgsql.Attributes;
-using NpgsqlTests.Model;
 using NUnit.Framework;
 using System;
 using System.Data;
-using System.Data.Common;
 using System.Linq;
+using Tests.FunctionTests.Model;
 
-namespace NpgsqlTests
+namespace Tests.FunctionTests
 {
     [TestFixture]
-    internal partial class ReadFixture : BaseFixture
+    [Parallelizable(ParallelScope.Self)]
+    internal partial class ReadFixture
     {
         [Test]
         [Query(
@@ -25,7 +25,7 @@ select * from readfixturefunc(@inParam);
             ]
         public void FuncOutTest()
         {
-            using var connection = _dataSource.OpenConnection();
+            using var connection = GlobalSetUp.NpgsqlDataSource.OpenConnection();
             var result = FuncOut(connection, 46, out var out1, out var out2);
             Assert.Multiple(() =>
             {
@@ -47,7 +47,7 @@ select out1, out2 from readfixturefunc(@inParam);
             ]
         public void TestReadFunc()
         {
-            using var connection = _dataSource.OpenConnection();
+            using var connection = GlobalSetUp.NpgsqlDataSource.OpenConnection();
             var result = ReadFunc(connection, 24).First();
             Assert.Multiple(() =>
             {
@@ -92,7 +92,7 @@ ORDER BY p.id ASC
             ]
         public void TestReadFuncAndPerson()
         {
-            using var connection = _dataSource.OpenConnection();
+            using var connection = GlobalSetUp.NpgsqlDataSource.OpenConnection();
             var result = ReadFuncPerson(connection, 13, 1).First();
             Assert.Multiple(() =>
             {
@@ -111,10 +111,10 @@ ORDER BY p.id ASC
             ]
         public void BatchFixtureOutTest()
         {
-            Assert.That(() => 
+            Assert.That(() =>
             {
-                using var connection = _dataSource.OpenConnection();
-                
+                using var connection = GlobalSetUp.NpgsqlDataSource.OpenConnection();
+
                 BatchFixtureOut(
                     connection,
                     24, out var out11, out var out12,

@@ -1,4 +1,4 @@
-﻿namespace NpgsqlTests.Model
+﻿namespace Tests.FunctionTests.Model
 {
     public class ReadFunc
     {

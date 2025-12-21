@@ -1,3 +1,4 @@
+using DotNet.Testcontainers.Builders;
 using Npgsql;
 using NUnit.Framework;
 using System.Data.Common;
@@ -24,6 +25,9 @@ namespace Tests
                 new PostgreSqlBuilder()
                 .WithImage("postgres:16.0")
                 .WithPassword("dhgvbh73j")
+                .WithPortBinding(5432, true)
+                .WithAutoRemove(true)
+                .WithWaitStrategy(Wait.ForUnixContainer().UntilExternalTcpPortIsAvailable(5432))
                 .Build();
 
             await _postgre.StartAsync();
@@ -66,22 +70,26 @@ CREATE DATABASE gedaqtests TEMPLATE template0 CONNECTION LIMIT = -1;
             var dataSource = NpgsqlDataSource;
             if (dataSource != null)
             {
-                await NpgsqlDataSource.DisposeAsync();
+                try
+                {
+                    await NpgsqlDataSource.DisposeAsync();
+                }
+                catch
+                {
+                    // ignore
+                }
             }
 
             if (_postgre != null)
             {
-                await using (var masterConnection = new NpgsqlConnection(_postgre.GetConnectionString()))
+                try
                 {
-                    await masterConnection.OpenAsync();
-                    await using var command = masterConnection.CreateCommand();
-                    command.CommandText = $@"
-DROP DATABASE gedaqtests WITH (FORCE);
-";
-                    await command.ExecuteNonQueryAsync();
+                    await _postgre.DisposeAsync();
                 }
-
-                await _postgre.DisposeAsync();
+                catch
+                {
+                    // ignore
+                }
             }
         }
     }

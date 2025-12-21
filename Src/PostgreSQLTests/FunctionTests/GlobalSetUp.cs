@@ -1,34 +1,75 @@
-ï»¿using Microsoft.Extensions.Configuration;
+using DotNet.Testcontainers.Builders;
 using Npgsql;
-using NpgsqlTests.Helpers;
 using NUnit.Framework;
 using System;
+using System.Data.Common;
+using System.Threading.Tasks;
+using Testcontainers.PostgreSql;
 
-namespace NpgsqlTests
+namespace Tests.FunctionTests
 {
-    [TestFixture]
-    [Parallelizable(ParallelScope.Self)]
-    internal partial class ReadFixture : BaseFixture
+    [SetUpFixture]
+    public class GlobalSetUp
     {
-        #region Init and destroy
+        public static NpgsqlDataSource NpgsqlDataSource;
 
-        protected NpgsqlDataSource _dataSource;
+        public static NpgsqlConnection GetConnection => NpgsqlDataSource.CreateConnection();
 
-        [SetUp]
-        public void Init()
+        public static DbConnection GetDbConnection => NpgsqlDataSource.CreateConnection();
+
+        private PostgreSqlContainer _postgre;
+
+        [OneTimeSetUp]
+        public async Task OneTimeSetUp()
         {
-            var dataSourceBuilder = new NpgsqlDataSourceBuilder(Settings.GetConnectionString("SqlConnection"));
-            _dataSource = dataSourceBuilder.Build();
-            var conn = _dataSource.OpenConnection();
-            conn.DropTable("readfixtureperson");
-            conn.DropTable("readfixtureidentification");
-            conn.DropTable("readfixturecountry");
+            _postgre =
+                new PostgreSqlBuilder()
+                .WithImage("postgres:16.0")
+                .WithPassword("dhgvbh73j")
+                .WithPortBinding(5432, true)
+                .WithAutoRemove(true)
+                .WithWaitStrategy(Wait.ForUnixContainer().UntilExternalTcpPortIsAvailable(5432))
+                .Build();
 
-            using var cmd = conn.CreateCommand();
+            await _postgre.StartAsync();
+
+            await using (var masterConnection = new NpgsqlConnection(_postgre.GetConnectionString()))
+            {
+                await masterConnection.OpenAsync();
+                await using var command = masterConnection.CreateCommand();
+                command.CommandText = $@"
+SELECT
+    datname
+FROM
+    pg_database
+WHERE 
+    datname='gedaqtests'
+;
+";
+                var dbName = (string)await command.ExecuteScalarAsync();
+                if(dbName == null)
+                {
+                    await using var createCmd = masterConnection.CreateCommand();
+                    createCmd.CommandText = $@"
+CREATE DATABASE gedaqtests TEMPLATE template0 CONNECTION LIMIT = -1;
+;
+";
+                    createCmd.ExecuteNonQuery();
+                }
+            }
+
+            var builder = new NpgsqlConnectionStringBuilder(_postgre.GetConnectionString());
+            builder.Database = "gedaqtests";
+            var dataSourceBuilder = new NpgsqlDataSourceBuilder(builder.ConnectionString);
+
+            NpgsqlDataSource = dataSourceBuilder.Build();
+
+            await using var conn = GlobalSetUp.NpgsqlDataSource.OpenConnection();
+            await using var cmd = conn.CreateCommand();
             DropFunction(cmd);
 
             CreateCountryTable(cmd);
-            FillÐ¡ountries(cmd);
+            FillÑountries(cmd);
 
             CreateIdentificationTable(cmd);
             FillIdentification(cmd);
@@ -37,6 +78,35 @@ namespace NpgsqlTests
             FillPerson(cmd);
 
             CreateFunction(cmd);
+        }
+
+        [OneTimeTearDown]
+        public async Task OneTimeTearDown()
+        {
+            var dataSource = NpgsqlDataSource;
+            if (dataSource != null)
+            {
+                try
+                {
+                    await NpgsqlDataSource.DisposeAsync();
+                }
+                catch
+                {
+                    // ignore
+                }
+            }
+
+            if (_postgre != null)
+            {
+                try
+                {
+                    await _postgre.DisposeAsync();
+                }
+                catch
+                {
+                    // ignore
+                }
+            }
         }
 
         private void CreateCountryTable(NpgsqlCommand cmd)
@@ -131,7 +201,7 @@ INSERT INTO public.readfixtureperson(
                 if (i > 0 && i < 6)
                 {
                     firstname.TypedValue = $"John{i}";
-                    middlename.TypedValue = $"Ð¡urly{i}";
+                    middlename.TypedValue = $"Ñurly{i}";
                     lastname.TypedValue = $"Doe{i}";
                     identificationId.Value = i;
                 }
@@ -147,7 +217,7 @@ INSERT INTO public.readfixtureperson(
             }
         }
 
-        private void FillÐ¡ountries(NpgsqlCommand cmd)
+        private void FillÑountries(NpgsqlCommand cmd)
         {
             cmd.Parameters.Clear();
             cmd.CommandText = @"
@@ -254,22 +324,5 @@ DROP FUNCTION IF EXISTS readfixturefunc(in INT, out int, out text);
 ";
             cmd.ExecuteNonQuery();
         }
-
-        [TearDown]
-        public void Cleanup()
-        {
-            using (var connection = _dataSource.OpenConnection())
-            {
-                using var cmd = connection.CreateCommand();
-                DropFunction(cmd);
-
-                connection.DropTable("readfixtureperson");
-                connection.DropTable("readfixtureidentification");
-                connection.DropTable("readfixturecountry");
-            }
-            _dataSource?.Dispose();
-        }
-
-        #endregion
     }
 }
