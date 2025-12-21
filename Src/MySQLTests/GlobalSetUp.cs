@@ -50,22 +50,26 @@ CREATE DATABASE IF NOT EXISTS gedaqtests;
             var dataSource = MySqlDataSource;
             if (dataSource != null)
             {
-                await MySqlDataSource.DisposeAsync();
+                try
+                {
+                    await MySqlDataSource.DisposeAsync();
+                }
+                catch
+                {
+                    // ignore
+                }
             }
 
             if (_mysql != null)
             {
-                await using (var masterConnection = new MySqlConnection(_mysql.GetConnectionString()))
+                try
                 {
-                    await masterConnection.OpenAsync();
-                    await using var command = masterConnection.CreateCommand();
-                    command.CommandText = $@"
-DROP DATABASE IF EXISTS gedaqtests;
-";
-                    await command.ExecuteNonQueryAsync();
+                    await _mysql.DisposeAsync();
                 }
-
-                await _mysql.DisposeAsync();
+                catch
+                {
+                    // ignore
+                }
             }
         }
     }

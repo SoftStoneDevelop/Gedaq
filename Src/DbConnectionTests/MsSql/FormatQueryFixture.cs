@@ -5,10 +5,10 @@ using NUnit.Framework;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DbConnectionTests
+namespace DbConnectionTests.MsSql
 {
     [TestFixture]
-    internal partial class QueryFixture : BaseFixture
+    internal partial class QueryFixture
     {
         [Test]
         [Query(
@@ -41,7 +41,7 @@ ORDER BY p.id ASC
             ]
         public async Task ReadFormatToClassAsync()
         {
-            using var connection = OpenConnection();
+            using var connection = GlobalSetUp.OpenConnection();
             var list = await MsSqlFormatToClassAsync(connection, format0: 3.ToString(), condition: 6.ToString()).ToListAsync();
 
             Assert.That(list, Has.Count.EqualTo(8));

@@ -1,28 +1,74 @@
-ï»¿using DbConnectionTests.Helpers;
 using Microsoft.Data.SqlClient;
 using NUnit.Framework;
 using System;
+using System.Data.Common;
+using System.Threading.Tasks;
+using Testcontainers.MsSql;
 
-namespace DbConnectionTests
+namespace DbConnectionTests.MsSql
 {
-    [TestFixture]
-    [Parallelizable(ParallelScope.Self)]
-    internal partial class QueryFixture : BaseFixture
+    [SetUpFixture]
+    public class GlobalSetUp
     {
-        #region Init and destroy
-
-        [SetUp]
-        public void Init()
+        public static SqlConnection GetConnection
         {
-            using var connection = OpenConnection();
-            connection.DropTable("person");
-            connection.DropTable("identification");
-            connection.DropTable("country");
+            get
+            {
+                var connection = (SqlConnection)SqlClientFactory.Instance.CreateConnection();
+                connection.ConnectionString = _connectionString;
+                return connection;
+            }
+        }
 
-            using var cmd = connection.CreateCommand();
+        public static DbConnection GetDbConnection => GetConnection;
+
+        private MsSqlContainer _mssql;
+        private static string _connectionString;
+
+        [OneTimeSetUp]
+        public async Task OneTimeSetUp()
+        {
+            _mssql =
+                new MsSqlBuilder()
+                .Build();
+
+            await _mssql.StartAsync();
+
+            var builder = new SqlConnectionStringBuilder(_mssql.GetConnectionString());
+            builder.Encrypt = false;
+            builder.TrustServerCertificate = false;
+            builder.IntegratedSecurity = false;
+
+            await using (var masterConnection = (SqlConnection)SqlClientFactory.Instance.CreateConnection())
+            {
+                masterConnection.ConnectionString = builder.ConnectionString;
+                await masterConnection.OpenAsync();
+
+                await using var createCmd = masterConnection.CreateCommand();
+                createCmd.CommandText = $@"
+IF NOT EXISTS (
+   SELECT name
+   FROM sys.databases
+   WHERE name = N'gedaqtests'
+)
+CREATE DATABASE gedaqtests
+;
+";
+                createCmd.ExecuteNonQuery();
+            }
+
+            builder = new SqlConnectionStringBuilder(_mssql.GetConnectionString());
+            builder.Encrypt = false;
+            builder.TrustServerCertificate = false;
+            builder.IntegratedSecurity = false;
+            builder.InitialCatalog = "gedaqtests";
+            _connectionString = builder.ConnectionString;
+
+            await using var connection = OpenConnection();
+            await using var cmd = connection.CreateCommand();
 
             CreateCountryTable(cmd);
-            FillÐ¡ountries(cmd);
+            FillÑountries(cmd);
 
             CreateIdentificationTable(cmd);
             FillIdentification(cmd);
@@ -31,12 +77,20 @@ namespace DbConnectionTests
             FillPerson(cmd);
         }
 
-        private SqlConnection OpenConnection()
+        public static SqlConnection OpenConnection()
         {
-            var conn = Microsoft.Data.SqlClient.SqlClientFactory.Instance.CreateConnection();
-            conn.ConnectionString = GetMsSqlConnectionString();
+            var conn = GlobalSetUp.GetConnection;
             conn.Open();
             return (SqlConnection)conn;
+        }
+
+        [OneTimeTearDown]
+        public async Task OneTimeTearDown()
+        {
+            if (_mssql != null)
+            {
+                await _mssql.DisposeAsync();
+            }
         }
 
         private void CreatePersonTable(SqlCommand cmd)
@@ -91,7 +145,7 @@ INSERT INTO person(
             var middlename = new SqlParameter();
             middlename.SqlDbType = System.Data.SqlDbType.Text;
             middlename.Size = 4000;
-            middlename.IsNullable= true;
+            middlename.IsNullable = true;
             middlename.ParameterName = "middlename";
             cmd.Parameters.Add(middlename);
 
@@ -115,7 +169,7 @@ INSERT INTO person(
                 if (i > 0 && i < 6)
                 {
                     firstname.Value = $"John{i}";
-                    middlename.Value = $"Ð¡urly{i}";
+                    middlename.Value = $"Ñurly{i}";
                     lastname.Value = $"Doe{i}";
                     identificationId.Value = i;
                 }
@@ -148,7 +202,7 @@ CREATE TABLE [dbo].[country](
             cmd.ExecuteNonQuery();
         }
 
-        private void FillÐ¡ountries(SqlCommand cmd)
+        private void FillÑountries(SqlCommand cmd)
         {
             cmd.Parameters.Clear();
             cmd.CommandText = @"
@@ -269,16 +323,5 @@ INSERT INTO identification(
             countryId.Value = 5;
             cmd.ExecuteNonQuery();
         }
-
-        [TearDown]
-        public void Cleanup()
-        {
-            using var connection = OpenConnection();
-            connection?.DropTable("person");
-            connection?.DropTable("identification");
-            connection?.DropTable("country");
-        }
-
-        #endregion
     }
 }

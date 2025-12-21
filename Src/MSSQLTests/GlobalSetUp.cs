@@ -69,22 +69,6 @@ CREATE DATABASE gedaqtests
         {
             if (_mssql != null)
             {
-                var builder = new SqlConnectionStringBuilder(_mssql.GetConnectionString());
-                builder.Encrypt = false;
-                builder.TrustServerCertificate = false;
-                builder.IntegratedSecurity = false;
-                await using (var masterConnection = (SqlConnection)SqlClientFactory.Instance.CreateConnection())
-                {
-                    masterConnection.ConnectionString = builder.ConnectionString;
-                    await masterConnection.OpenAsync();
-                    await using var command = masterConnection.CreateCommand();
-                    command.CommandText = $@"
-ALTER DATABASE gedaqtests SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-DROP DATABASE gedaqtests;
-";
-                    await command.ExecuteNonQueryAsync();
-                }
-
                 await _mssql.DisposeAsync();
             }
         }
