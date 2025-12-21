@@ -29,6 +29,7 @@ namespace Tests
         {
             _mssql =
                 new MsSqlBuilder()
+                .WithAutoRemove(true)
                 .Build();
 
             await _mssql.StartAsync();

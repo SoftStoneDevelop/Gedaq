@@ -24,6 +24,7 @@ namespace Tests
                 new MySqlBuilder()
                 .WithUsername("root")
                 .WithPassword("dhgvbh73j")
+                .WithAutoRemove(true)
                 .Build();
 
             await _mysql.StartAsync();
