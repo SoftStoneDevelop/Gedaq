@@ -6,7 +6,7 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Gedaq.DbConnection" Version="1.2.6" />
-		<PackageReference Include="Gedaq.Npgsql" Version="1.2.7" />
+		<PackageReference Include="Gedaq.Npgsql" Version="9.0.1-beta" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
 		<PackageReference Include="NUnit" Version="4.4.0" />
 		<PackageReference Include="NUnit3TestAdapter" Version="6.0.1" />
