@@ -6,7 +6,7 @@
 		<Features>$(Features);experimental-data-section-string-literals</Features>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Gedaq.DbConnection" Version="1.2.6" />
+		<PackageReference Include="Gedaq.DbConnection" Version="9.0.0" />
 		<PackageReference Include="Gedaq.SqlClient" Version="0.2.6" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
 		<PackageReference Include="NUnit" Version="4.4.0" />
@@ -21,7 +21,7 @@
 		</PackageReference>
 		<PackageReference Include="System.Linq.Async" Version="7.0.0" />
 		<PackageReference Include="Testcontainers.MsSql" Version="4.9.0" />
-		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.3" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Gedaq\Gedaq.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="True" />
