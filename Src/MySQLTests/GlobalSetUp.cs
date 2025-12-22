@@ -1,5 +1,6 @@
 using MySqlConnector;
 using NUnit.Framework;
+using System;
 using System.Data.Common;
 using System.Threading.Tasks;
 using Testcontainers.MySql;
@@ -28,6 +29,8 @@ namespace Tests
                 .Build();
 
             await _mysql.StartAsync();
+            await _mysql.WaitContainerStateRunningAsync(TimeSpan.FromMinutes(1));
+            await _mysql.WaitResponseAsync(TimeSpan.FromMinutes(1));
 
             await using (var masterConnection = new MySqlConnection(_mysql.GetConnectionString()))
             {

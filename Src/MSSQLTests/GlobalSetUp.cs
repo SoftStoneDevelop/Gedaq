@@ -1,5 +1,6 @@
 using Microsoft.Data.SqlClient;
 using NUnit.Framework;
+using System;
 using System.Data.Common;
 using System.Threading.Tasks;
 using Testcontainers.MsSql;
@@ -33,6 +34,8 @@ namespace Tests
                 .Build();
 
             await _mssql.StartAsync();
+            await _mssql.WaitContainerStateRunningAsync(TimeSpan.FromMinutes(1));
+            await _mssql.WaitResponseAsync(TimeSpan.FromMinutes(1));
 
             var builder = new SqlConnectionStringBuilder(_mssql.GetConnectionString());
             builder.Encrypt = false;

@@ -104,7 +104,6 @@ namespace TestsGenerator.Generators
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Boolean, "Boolean", "System.Boolean", (EnumerableType type) => new BooleanValueHelper(type));
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Real, "Single", "System.Single", (EnumerableType type) => new SingleValueHelper(type));
 
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Time, "TimeSpan", "System.TimeSpan", (EnumerableType type) => new TimeSpanValueHelper(type, true));
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Interval, "TimeSpan", "System.TimeSpan", (EnumerableType type) => new TimeSpanValueHelper(type, true));
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Interval, "NpgsqlInterval", "NpgsqlTypes.NpgsqlInterval", (EnumerableType type) => new NpgsqlIntervalValueHelper(type, true));
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Time, "TimeOnly", "System.TimeOnly", (EnumerableType type) => new TimeOnlyValueHelper(type));

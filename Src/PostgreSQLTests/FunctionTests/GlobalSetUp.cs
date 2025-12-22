@@ -32,6 +32,8 @@ namespace Tests.FunctionTests
                 .Build();
 
             await _postgre.StartAsync();
+            await _postgre.WaitContainerStateRunningAsync(TimeSpan.FromMinutes(1));
+            await _postgre.WaitResponseAsync(TimeSpan.FromMinutes(1));
 
             await using (var masterConnection = new NpgsqlConnection(_postgre.GetConnectionString()))
             {

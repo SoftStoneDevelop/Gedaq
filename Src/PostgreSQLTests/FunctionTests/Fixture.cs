@@ -111,18 +111,22 @@ ORDER BY p.id ASC
             ]
         public void BatchFixtureOutTest()
         {
-            Assert.That(() =>
-            {
-                using var connection = GlobalSetUp.NpgsqlDataSource.OpenConnection();
+            using var connection = GlobalSetUp.NpgsqlDataSource.OpenConnection();
 
-                BatchFixtureOut(
-                    connection,
-                    24, out var out11, out var out12,
-                    75, out var out21, out var out22
-                    );
-            },
-            Throws.Exception.TypeOf(typeof(NotSupportedException)).And.Message.EqualTo("Batches cannot cannot have out parameters")
-            );
+            BatchFixtureOut(
+                connection,
+                24, out var out11, out var out12,
+                75, out var out21, out var out22
+                );
+
+            Assert.Multiple(() =>
+            {
+                Assert.That(out11, Is.EqualTo(24));
+                Assert.That(out12, Is.EqualTo("24 is text"));
+
+                Assert.That(out21, Is.EqualTo(75));
+                Assert.That(out22, Is.EqualTo("75 is text"));
+            });
         }
     }
 }

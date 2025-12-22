@@ -1,6 +1,7 @@
 using DotNet.Testcontainers.Builders;
 using Npgsql;
 using NUnit.Framework;
+using System;
 using System.Data.Common;
 using System.Threading.Tasks;
 using Testcontainers.PostgreSql;
@@ -31,6 +32,8 @@ namespace Tests
                 .Build();
 
             await _postgre.StartAsync();
+            await _postgre.WaitContainerStateRunningAsync(TimeSpan.FromMinutes(1));
+            await _postgre.WaitResponseAsync(TimeSpan.FromMinutes(1));
 
             await using (var masterConnection = new NpgsqlConnection(_postgre.GetConnectionString()))
             {
