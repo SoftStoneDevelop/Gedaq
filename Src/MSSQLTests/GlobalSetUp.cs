@@ -1,3 +1,4 @@
+using DotNet.Testcontainers.Builders;
 using Microsoft.Data.SqlClient;
 using NUnit.Framework;
 using System;
@@ -30,7 +31,9 @@ namespace Tests
         {
             _mssql =
                 new MsSqlBuilder()
+                .WithPortBinding(1433, true)
                 .WithAutoRemove(true)
+                .WithWaitStrategy(Wait.ForUnixContainer().UntilExternalTcpPortIsAvailable(1433))
                 .Build();
 
             await _mssql.StartAsync();

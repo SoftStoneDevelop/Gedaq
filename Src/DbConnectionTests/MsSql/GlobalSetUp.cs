@@ -1,3 +1,5 @@
+using DbConnectionTests.Helpers;
+using DotNet.Testcontainers.Builders;
 using Microsoft.Data.SqlClient;
 using NUnit.Framework;
 using System;
@@ -30,10 +32,14 @@ namespace DbConnectionTests.MsSql
         {
             _mssql =
                 new MsSqlBuilder()
+                .WithPortBinding(1433, true)
                 .WithAutoRemove(true)
+                .WithWaitStrategy(Wait.ForUnixContainer().UntilExternalTcpPortIsAvailable(1433))
                 .Build();
 
             await _mssql.StartAsync();
+            await _mssql.WaitContainerStateRunningAsync(TimeSpan.FromMinutes(1));
+            await _mssql.WaitResponseAsync(TimeSpan.FromMinutes(1));
 
             var builder = new SqlConnectionStringBuilder(_mssql.GetConnectionString());
             builder.Encrypt = false;
