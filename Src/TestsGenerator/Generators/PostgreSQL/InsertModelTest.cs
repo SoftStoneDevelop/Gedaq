@@ -346,24 +346,6 @@ RETURNING
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
 
-            if (model.ValueStorage is CharValueHelper ||
-                model.ValueStorage is ByteValueHelper || 
-                model.ValueStorage is SByteValueHelper ||
-                model.ValueStorage is TimeOnlyValueHelper ||
-                model.ValueStorage is DateOnlyValueHelper ||
-                model.ValueStorage is BigIntegerValueHelper)
-            {
-                stringBuilder.Append($@"
-        [Ignore(""Invalid cast, ExecuteScalar provider return wrong type"")]
-        [Test, Order({order})]
-        public async Task {_testName}TestReturningScalar{async}()
-        {{
-            
-        }}
-");
-                return;
-            }
-
             stringBuilder.Append($@"
         [Test, Order({order})]
         public async Task {_testName}TestReturningScalar{async}()

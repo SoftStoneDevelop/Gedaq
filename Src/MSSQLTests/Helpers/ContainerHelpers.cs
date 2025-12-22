@@ -41,7 +41,7 @@ namespace Tests
             {
                 if (sw.Elapsed >= timeout)
                 {
-                    throw new Exception($"Postgres has not responded to any queries in {timeout}. Container state {container.State}");
+                    throw new Exception($"MsSQL has not responded to any queries in {timeout}. Container state {container.State}");
                 }
 
                 var connectionString = container.GetConnectionString();
