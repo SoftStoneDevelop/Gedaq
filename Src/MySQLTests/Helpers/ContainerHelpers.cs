@@ -53,7 +53,8 @@ namespace Tests
                         await using var command = conn.CreateCommand();
                         command.CommandText = "SELECT 1";
                         var result = await command.ExecuteScalarAsync();
-                        if (result is int value && value == 1)
+
+                        if ((result is int intValue && intValue == 1) || (result is long longValue && longValue == 1))
                         {
                             break;
                         }

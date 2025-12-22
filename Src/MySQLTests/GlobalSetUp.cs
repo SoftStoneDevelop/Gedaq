@@ -1,3 +1,4 @@
+using DotNet.Testcontainers.Builders;
 using MySqlConnector;
 using NUnit.Framework;
 using System;
@@ -25,7 +26,9 @@ namespace Tests
                 new MySqlBuilder()
                 .WithUsername("root")
                 .WithPassword("dhgvbh73j")
+                .WithPortBinding(3306, true)
                 .WithAutoRemove(true)
+                .WithWaitStrategy(Wait.ForUnixContainer().UntilExternalTcpPortIsAvailable(3306))
                 .Build();
 
             await _mysql.StartAsync();
