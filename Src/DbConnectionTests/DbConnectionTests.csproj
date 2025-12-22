@@ -22,11 +22,6 @@
 		</PackageReference>
 	</ItemGroup>
 	<ItemGroup>
-		<None Update="testsettings.json">
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</None>
-	</ItemGroup>
-	<ItemGroup>
 		<ProjectReference Include="..\Gedaq\Gedaq.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="True" />
 	</ItemGroup>
 </Project>
