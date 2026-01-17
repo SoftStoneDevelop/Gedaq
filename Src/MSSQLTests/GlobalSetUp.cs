@@ -30,7 +30,7 @@ namespace Tests
         public async Task OneTimeSetUp()
         {
             _mssql =
-                new MsSqlBuilder()
+                new MsSqlBuilder("mcr.microsoft.com/mssql/server:2022-CU14-ubuntu-22.04")
                 .WithPortBinding(1433, true)
                 .WithAutoRemove(true)
                 .WithWaitStrategy(Wait.ForUnixContainer().UntilExternalTcpPortIsAvailable(1433))
