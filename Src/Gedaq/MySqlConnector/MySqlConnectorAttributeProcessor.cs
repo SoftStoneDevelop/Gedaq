@@ -207,9 +207,12 @@ namespace Gedaq.MySqlConnector
             currentPair.Parts.Add(batchPart);
         }
 
-        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ReadPair<MySqlConnectorQuery, MySqlConnectorParametr> readPair)
+        private void ProcessQueryRead(
+            AttributeData queryReadAttribute,
+            INamedTypeSymbol containsType,
+            ReadPair<MySqlConnectorQuery, MySqlConnectorParametr> readPair)
         {
-            if (!MySqlConnectorQuery.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
+            if (!MySqlConnectorQuery.CreateNew(_context, queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
                 throw new Exception($"Unknown {nameof(MySqlConnectorQuery)} constructor");
             }

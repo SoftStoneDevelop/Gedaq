@@ -98,7 +98,7 @@ namespace Gedaq.SqlClient
             INamedTypeSymbol containsType,
             ReadPair<SqlClientQuery, SqlClientParametr> readPair)
         {
-            if (!SqlClientQuery.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
+            if (!SqlClientQuery.CreateNew(_context, queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
                 throw new Exception($"Unknown {nameof(SqlClientQuery)} constructor");
             }
