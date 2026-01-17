@@ -170,7 +170,7 @@ Gedaq.DbConnection.Attributes.Parametr(
             await using (var connection = GlobalSetUp.GetDbConnection)
             {{
                 await connection.OpenAsync();
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{async}(connection, 0).ToList{async}();
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{async}(connection, 0);
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
 ");
             for (int i = 0; i < orderedValues.Count; i++)
@@ -219,7 +219,7 @@ Gedaq.DbConnection.Attributes.Parametr(
                 await connection.OpenAsync();
                 {await} using var cmd = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.CreateDbConnection{_testName}Command{async}(connection);
                 {TypeHelper.ThisAsInterface(interfaceTypeName)}.SetDbConnection{_testName}Parametrs(cmd, {orderedValues[valIndex].Id});
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.ExecuteDbConnection{_testName}Command{async}(cmd).ToList{async}();
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.ExecuteDbConnection{_testName}Command{async}(cmd);
 ");
             valIndex++;
             stringBuilder.Append($@"
@@ -313,7 +313,7 @@ ORDER BY
             await using (var connection = GlobalSetUp.GetDbConnection)
             {{
                 await connection.OpenAsync();
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}ToObjArr{async}(connection).ToList{async}();
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}ToObjArr{async}(connection);
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
 ");
             for (int i = 0; i < orderedValues.Count; i++)
@@ -488,11 +488,11 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {{
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                {await} foreach(var batchResult in {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}Batch{async}(connection, {orderedValues[firstBatchStart].Id}, {orderedValues[secondBatchStart].Id}))
+                foreach(var batchResult in {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}Batch{async}(connection, {orderedValues[firstBatchStart].Id}, {orderedValues[secondBatchStart].Id}))
                 {{
                     if(++resultIndex == 1)
                     {{
-                        var models = {await} batchResult.ToList{async}();
+                        var models = batchResult;
 ");
             firstBatchStart++;
             stringBuilder.Append($@"
@@ -526,7 +526,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
 
                     if(resultIndex == 2)
                     {{
-                        var models = {await} batchResult.ToList{async}();
+                        var models = batchResult;
                         Assert.That(models, Has.Count.EqualTo({orderedValues.Count - secondBatchStart}));
 ");
             index = 0;

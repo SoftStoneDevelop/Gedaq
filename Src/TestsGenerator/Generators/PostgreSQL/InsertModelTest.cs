@@ -315,7 +315,7 @@ RETURNING
             {
                 ModelValue value = storage.Values[indexValue];
                 stringBuilder.Append($@"
-                models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Returning{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)}).ToList{async}();
+                models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Returning{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)});
                 Assert.That(models, Has.Count.EqualTo(1));
                 model = models[0];
 ");

@@ -121,7 +121,7 @@ Gedaq.Npgsql.Attributes.Parametr(
             await using (var connection = GlobalSetUp.GetConnection)
             {{
                 await connection.OpenAsync();
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, 0).ToList{async}();
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, 0);
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
 ");
             for (int i = 0; i < orderedValues.Count; i++)

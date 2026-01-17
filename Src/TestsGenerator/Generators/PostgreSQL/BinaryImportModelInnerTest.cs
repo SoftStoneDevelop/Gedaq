@@ -148,7 +148,7 @@ ORDER BY
 
             stringBuilder.Append($@"
                 {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}(connection, importCollection);
-                var models = {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}(connection).ToList();
+                var models = {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}(connection);
                 Assert.That(models, Has.Count.EqualTo(importCollection.Count));
 ");
             var indexCollection = 0;
@@ -178,7 +178,7 @@ ORDER BY
 
             stringBuilder.Append($@"
                 await {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Async(connection, importCollection);
-                models = await {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}Async(connection).ToListAsync();
+                models = await {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}Async(connection);
                 Assert.That(models, Has.Count.EqualTo({storage.Count}));
 ");
             indexCollection = 0;
