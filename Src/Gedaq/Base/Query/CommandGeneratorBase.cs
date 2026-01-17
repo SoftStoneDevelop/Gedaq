@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
@@ -319,8 +320,7 @@ namespace Gedaq.Base.Query
 
         public string ExecuteCommandMethodName(
             QueryBaseCommand source,
-            MethodType methodType
-            )
+            MethodType methodType)
         {
             if (methodType == MethodType.Sync)
             {
@@ -336,8 +336,7 @@ namespace Gedaq.Base.Query
             QueryBaseCommand source,
             MethodType methodType,
             StringBuilder builder,
-            bool forInterface = false
-            )
+            bool forInterface = false)
         {
             string ExecuteCommandReturnType()
             {
@@ -347,9 +346,16 @@ namespace Gedaq.Base.Query
                     {
                         return methodType == MethodType.Async ? 
                             $"IAsyncEnumerable<{ItemTypeName(source)}>" : 
-                            $"IEnumerable<{ItemTypeName(source)}>"
-                            ;
+                            $"IEnumerable<{ItemTypeName(source)}>";
                     }
+
+                    case ReturnType.List:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Collections.Generic.List<{ItemTypeName(source)}>>" :
+                            $"System.Collections.Generic.List<{ItemTypeName(source)}>";
+                    }
+
                     case ReturnType.Single:
                     case ReturnType.SingleOrDefault:
                     case ReturnType.First:
@@ -358,8 +364,7 @@ namespace Gedaq.Base.Query
                     {
                         return methodType == MethodType.Async ?
                             $"{source.MethodInfo.AsyncResultType.ToResultType()}<{ItemTypeName(source)}>" :
-                            $"{ItemTypeName(source)}"
-                            ;
+                            $"{ItemTypeName(source)}";
                     }
                 }
             }
@@ -380,7 +385,7 @@ namespace Gedaq.Base.Query
 
             if (methodType == MethodType.Async)
             {
-                var enumeratorCancellation = forInterface ? string.Empty : "[EnumeratorCancellation]";
+                var enumeratorCancellation = forInterface || source.ReturnType != ReturnType.Enumerable ? string.Empty : "[EnumeratorCancellation]";
                 builder.Append($@",
             {enumeratorCancellation} CancellationToken cancellationToken = default
 ");
@@ -390,9 +395,7 @@ namespace Gedaq.Base.Query
             )");
         }
 
-        public string ItemTypeName(
-            QueryBaseCommand source
-            )
+        public string ItemTypeName(QueryBaseCommand source)
         {
             return source.MapTypeName.GetFullTypeName(true);
         }
@@ -400,8 +403,7 @@ namespace Gedaq.Base.Query
         protected void ExecuteCommandBody(
             QueryBaseCommand source,
             MethodType methodType,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
@@ -473,6 +475,32 @@ namespace Gedaq.Base.Query
 
                     break;
                 }
+
+                case ReturnType.List:
+                {
+                    builder.Append($@"
+                var resultList = new System.Collections.Generic.List<{ItemTypeName(source)}>();
+                while ({await}reader.Read{async})
+                {{
+                    {ItemTypeName(source)} item;");
+
+                    MappingHelper.MapItem(source, builder, ProviderInfo, "item");
+
+                    builder.Append($@"
+                    resultList.Add(item);
+                }}
+
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+
+                return resultList;");
+
+                    break;
+                }
+
                 case ReturnType.Single:
                 {
                     builder.Append($@"
@@ -507,6 +535,7 @@ namespace Gedaq.Base.Query
 
                     break;
                 }
+
                 case ReturnType.SingleOrDefault:
                 {
                     builder.Append($@"
@@ -534,6 +563,7 @@ namespace Gedaq.Base.Query
                 return item;");
                     break;
                 }
+
                 case ReturnType.First:
                 {
                     builder.Append($@"
@@ -562,6 +592,7 @@ namespace Gedaq.Base.Query
 
                     break;
                 }
+
                 case ReturnType.FirstOrDefault:
                 {
                     builder.Append($@"
@@ -941,7 +972,12 @@ namespace Gedaq.Base.Query
             }
         }
 
-        public void GetScalarType(QueryBaseCommand source, ProviderInfo providerInfo, out ITypeSymbol type, out bool isRowsAffected, out string typeName)
+        public void GetScalarType(
+            QueryBaseCommand source,
+            ProviderInfo providerInfo,
+            out ITypeSymbol type,
+            out bool isRowsAffected,
+            out string typeName)
         {
             if (source.Aliases.IsRowsAffected)
             {

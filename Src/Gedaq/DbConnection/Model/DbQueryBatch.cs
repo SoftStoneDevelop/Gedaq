@@ -9,7 +9,10 @@ namespace Gedaq.DbConnection.Model
     {
         public BatchPart<DbQuery>[] Queries;
 
-        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out DbQueryBatch queryBatch)
+        internal static bool CreateNew(
+            ImmutableArray<TypedConstant> namedArguments,
+            INamedTypeSymbol containsType,
+            out DbQueryBatch queryBatch)
         {
             queryBatch = null;
             if (namedArguments.Length != 7)
@@ -29,8 +32,7 @@ namespace Gedaq.DbConnection.Model
                     namedArguments[2],
                     namedArguments[3],
                     namedArguments[4],
-                    containsType
-                    );
+                    containsType);
 
             result.ContainTypeName = containsType;
             queryBatch = result;

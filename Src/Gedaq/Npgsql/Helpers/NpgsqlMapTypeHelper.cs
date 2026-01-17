@@ -12,9 +12,7 @@ namespace Gedaq.Npgsql.Helpers
     {
         public static readonly string NpgsqlDbTypeName = "NpgsqlTypes.NpgsqlDbType";
 
-        internal static bool IsKnownProviderType(
-            this ITypeSymbol typeSymbol
-            )
+        internal static bool IsKnownProviderType(this ITypeSymbol typeSymbol)
         {
             if (typeSymbol.IsKnownArrayType())
             {
@@ -29,9 +27,7 @@ namespace Gedaq.Npgsql.Helpers
             return typeSymbol.IsKnownProviderBaseType();
         }
 
-        internal static bool IsKnownProviderBaseType(
-            this ITypeSymbol namedTypeSymbol
-            )
+        internal static bool IsKnownProviderBaseType(this ITypeSymbol namedTypeSymbol)
         {
             switch (namedTypeSymbol.GetFullTypeName(replaceNullable: true, addQuestionNoatble: false))
             {

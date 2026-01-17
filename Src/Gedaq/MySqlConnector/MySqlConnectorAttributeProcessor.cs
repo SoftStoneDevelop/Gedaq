@@ -26,16 +26,19 @@ namespace Gedaq.MySqlConnector
 
         private QueryParser _queryParser = new QueryParser();
 
+        public MySqlConnectorAttributeProcessor(SourceProductionContext context)
+            : base(context)
+        {
+        }
+
         public override void ProcessAttributes(
             SyntaxList<AttributeListSyntax> attributes, 
             Compilation compilation, 
-            INamedTypeSymbol containsType,
-            CancellationToken cancellationToken
-            )
+            INamedTypeSymbol containsType)
         {
             foreach (var attributeListSyntax in attributes)
             {
-                cancellationToken.ThrowIfCancellationRequested();
+                _context.CancellationToken.ThrowIfCancellationRequested();
                 var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
                 var parentAttributes = parentSymbol.GetAttributes();
 
@@ -43,7 +46,7 @@ namespace Gedaq.MySqlConnector
                 var readTemp = new ReadPair<MySqlConnectorQuery, MySqlConnectorParametr>();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
-                    cancellationToken.ThrowIfCancellationRequested();
+                    _context.CancellationToken.ThrowIfCancellationRequested();
                     var attributeData = parentAttributes.First(f => f.ApplicationSyntaxReference.GetSyntax() == attributeSyntax);
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.MySqlConnector.Attributes", "QueryAttribute"))
                     {
@@ -229,38 +232,36 @@ namespace Gedaq.MySqlConnector
             readPair.Parametrs.Add(parametr);
         }
 
-        public override void GenerateAndSaveMethods(SourceProductionContext context, CancellationToken cancellationToken)
+        public override void GenerateAndSaveMethods()
         {
             var interfaceGenerator = new InterfaceGenerator();
             var readGenerator = new MySqlConnectorQueryGenerator();
             foreach (var queryRead in _read)
             {
-                cancellationToken.ThrowIfCancellationRequested();
+                _context.CancellationToken.ThrowIfCancellationRequested();
                 interfaceGenerator.Reset();
                 readGenerator.GenerateMethod(queryRead, interfaceGenerator);
-                context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}MySqlConnector.g.cs", readGenerator.GetCode());
+                _context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}MySqlConnector.g.cs", readGenerator.GetCode());
                 interfaceGenerator.GenerateAndSave(
-                    context,
+                    _context,
                     queryRead.PartInterfaceType,
                     readGenerator.Usings(),
-                    $"{queryRead.ContainTypeName.Name}{queryRead.MethodName}"
-                    );
+                    $"{queryRead.ContainTypeName.Name}{queryRead.MethodName}");
             }
             _read.Clear();
 
             var batchReadGenerator = new MySqlConnectorQueryBatchGenerator();
             foreach (var batchRead in _readBatch)
             {
-                cancellationToken.ThrowIfCancellationRequested();
+                _context.CancellationToken.ThrowIfCancellationRequested();
                 interfaceGenerator.Reset();
                 batchReadGenerator.GenerateMethod(batchRead, interfaceGenerator);
-                context.AddSource($"{batchRead.ContainTypeName.Name}{batchRead.MethodName}MySqlConnector.g.cs", batchReadGenerator.GetCode());
+                _context.AddSource($"{batchRead.ContainTypeName.Name}{batchRead.MethodName}MySqlConnector.g.cs", batchReadGenerator.GetCode());
                 interfaceGenerator.GenerateAndSave(
-                    context,
+                    _context,
                     batchRead.PartInterfaceType,
                     readGenerator.Usings(),
-                    $"{batchRead.ContainTypeName.Name}{batchRead.MethodName}"
-                    );
+                    $"{batchRead.ContainTypeName.Name}{batchRead.MethodName}");
             }
             _readBatch.Clear();
         }

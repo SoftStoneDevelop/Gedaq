@@ -128,8 +128,7 @@ namespace Gedaq.Base.Query
             StringBuilder builder,
             string sourceTypeName,
             string sourceParametrName,
-            bool forInterface = false
-            )
+            bool forInterface = false)
         {
             string ExecuteCommandReturnType()
             {
@@ -139,9 +138,16 @@ namespace Gedaq.Base.Query
                     {
                         return methodType == MethodType.Async ?
                             $"IAsyncEnumerable<{_commandGenerator.ItemTypeName(source)}>" :
-                            $"IEnumerable<{_commandGenerator.ItemTypeName(source)}>"
-                            ;
+                            $"IEnumerable<{_commandGenerator.ItemTypeName(source)}>";
                     }
+
+                    case ReturnType.List:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Collections.Generic.List<{_commandGenerator.ItemTypeName(source)}>>" :
+                            $"System.Collections.Generic.List<{_commandGenerator.ItemTypeName(source)}>";
+                    }
+
                     case ReturnType.Single:
                     case ReturnType.SingleOrDefault:
                     case ReturnType.First:
@@ -150,8 +156,7 @@ namespace Gedaq.Base.Query
                     {
                         return methodType == MethodType.Async ?
                             $"{source.MethodInfo.AsyncResultType.ToResultType()}<{_commandGenerator.ItemTypeName(source)}>" :
-                            $"{_commandGenerator.ItemTypeName(source)}"
-                            ;
+                            $"{_commandGenerator.ItemTypeName(source)}";
                     }
                 }
             }
@@ -161,8 +166,7 @@ namespace Gedaq.Base.Query
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async "
-                ;
+                "async ";
 
             builder.Append($@"        
         {accessModifier} {staticModifier} {asyncKeyword}{ExecuteCommandReturnType()} {ReadMethodName(source, methodType)}(
@@ -183,7 +187,7 @@ namespace Gedaq.Base.Query
 
             if (methodType == MethodType.Async)
             {
-                var enumeratorCancellation = forInterface ? string.Empty : "[EnumeratorCancellation]";
+                var enumeratorCancellation = forInterface || source.ReturnType != ReturnType.Enumerable ? string.Empty : "[EnumeratorCancellation]";
                 builder.Append($@",
             {enumeratorCancellation} CancellationToken cancellationToken = default");
 

@@ -139,9 +139,16 @@ namespace Gedaq.Base.Batch
                     {
                         return methodType == MethodType.Async ?
                             $"IAsyncEnumerable<IAsyncEnumerable<{type}>>" :
-                            $"IEnumerable<IEnumerable<{type}>>"
-                            ;
+                            $"IEnumerable<IEnumerable<{type}>>";
                     }
+
+                    case ReturnType.List:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Collections.Generic.List<System.Collections.Generic.List<{type}>>>" :
+                            $"System.Collections.Generic.List<System.Collections.Generic.List<{type}>>";
+                    }
+
                     case ReturnType.Single:
                     case ReturnType.SingleOrDefault:
                     case ReturnType.First:
@@ -150,8 +157,7 @@ namespace Gedaq.Base.Batch
                     {
                         return methodType == MethodType.Async ?
                             $"{source.MethodInfo.AsyncResultType.ToResultType()}<{type}>" :
-                            $"{type}"
-                            ;
+                            $"{type}";
                     }
                 }
             }
@@ -161,8 +167,7 @@ namespace Gedaq.Base.Batch
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async "
-                ;
+                "async ";
 
             builder.Append($@"        
         {accessModifier} {staticModifier} {asyncKeyword}{ExecuteReturnType()} {ReadMethodName(source, methodType)}(
@@ -181,7 +186,7 @@ namespace Gedaq.Base.Batch
 
             if (methodType == MethodType.Async)
             {
-                var enumeratorCancellation = forInterface ? string.Empty : "[EnumeratorCancellation]";
+                var enumeratorCancellation = forInterface || source.ReturnType != ReturnType.Enumerable ? string.Empty : "[EnumeratorCancellation]";
                 builder.Append($@",
             {enumeratorCancellation} CancellationToken cancellationToken = default");
 

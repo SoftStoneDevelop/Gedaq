@@ -18,23 +18,26 @@ namespace Gedaq.SqlClient
         private List<SqlClientQuery> _read = new List<SqlClientQuery>();
         private QueryParser _queryParser = new QueryParser();
 
+        public SqlClientAttributeProcessor(SourceProductionContext context)
+            : base(context)
+        {
+        }
+
         public override void ProcessAttributes(
             SyntaxList<AttributeListSyntax> attributes, 
             Compilation compilation, 
-            INamedTypeSymbol containsType,
-            CancellationToken cancellationToken
-            )
+            INamedTypeSymbol containsType)
         {
             foreach (var attributeListSyntax in attributes)
             {
-                cancellationToken.ThrowIfCancellationRequested();
+                _context.CancellationToken.ThrowIfCancellationRequested();
                 var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
                 var parentAttributes = parentSymbol.GetAttributes();
 
                 var readTemp = new ReadPair<SqlClientQuery, SqlClientParametr>();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
-                    cancellationToken.ThrowIfCancellationRequested();
+                    _context.CancellationToken.ThrowIfCancellationRequested();
                     var attributeData = parentAttributes.First(f => f.ApplicationSyntaxReference.GetSyntax() == attributeSyntax);
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.SqlClient.Attributes", "QueryAttribute"))
                     {
@@ -90,7 +93,10 @@ namespace Gedaq.SqlClient
             }
         }
 
-        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ReadPair<SqlClientQuery, SqlClientParametr> readPair)
+        private void ProcessQueryRead(
+            AttributeData queryReadAttribute,
+            INamedTypeSymbol containsType,
+            ReadPair<SqlClientQuery, SqlClientParametr> readPair)
         {
             if (!SqlClientQuery.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
@@ -100,7 +106,10 @@ namespace Gedaq.SqlClient
             readPair.Query = queryReadMethod;
         }
 
-        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType, ReadPair<SqlClientQuery, SqlClientParametr> readPair)
+        private void ProcessParametr(
+            AttributeData parametrAttribute,
+            INamedTypeSymbol containsType,
+            ReadPair<SqlClientQuery, SqlClientParametr> readPair)
         {
             if (!SqlClientParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
             {
@@ -110,22 +119,21 @@ namespace Gedaq.SqlClient
             readPair.Parametrs.Add(parametr);
         }
 
-        public override void GenerateAndSaveMethods(SourceProductionContext context, CancellationToken cancellationToken)
+        public override void GenerateAndSaveMethods()
         {
             var readGenerator = new SqlClientQueryGenerator();
             var interfaceGenerator = new InterfaceGenerator();
             foreach (var queryRead in _read)
             {
-                cancellationToken.ThrowIfCancellationRequested();
+                _context.CancellationToken.ThrowIfCancellationRequested();
                 interfaceGenerator.Reset();
                 readGenerator.Generate(queryRead, interfaceGenerator);
-                context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}SqlClient.g.cs", readGenerator.GetCode());
+                _context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}SqlClient.g.cs", readGenerator.GetCode());
                 interfaceGenerator.GenerateAndSave(
-                    context,
+                    _context,
                     queryRead.PartInterfaceType,
                     readGenerator.Usings(),
-                    $"{queryRead.ContainTypeName.Name}{queryRead.MethodName}"
-                    );
+                    $"{queryRead.ContainTypeName.Name}{queryRead.MethodName}");
             }
             _read.Clear();
         }

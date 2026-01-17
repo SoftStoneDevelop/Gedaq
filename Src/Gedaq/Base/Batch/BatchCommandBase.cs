@@ -157,35 +157,68 @@ namespace Gedaq.Base.Batch
             var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
             var async = methodType == MethodType.Sync ? "()" : "Async(cancellationToken).ConfigureAwait(false)";
             var await = methodType == MethodType.Sync ? "" : "await ";
+            string ExecuteReturnType()
+            {
+                switch (source.ReturnType)
+                {
+                    case ReturnType.List:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Collections.Generic.List<{ItemTypeName(source)}>>" :
+                            $"System.Collections.Generic.List<{ItemTypeName(source)}>";
+                    }
+
+                    default:
+                    case ReturnType.Enumerable:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"IAsyncEnumerable<{type}>" :
+                            $"IEnumerable<{type}>";
+                    }
+                }
+            }
 
             foreach (var item in source.QueryBases())
             {
-                if (methodType == MethodType.Sync)
+                var asyncDeclar = methodType == MethodType.Async ? "async " : "";
+                builder.Append($@"
+        private static {asyncDeclar}{ExecuteReturnType()} {BatchItemMethodName(source, item, methodType)}({ProviderInfo.ReaderType()} reader");
+
+                if (methodType == MethodType.Async)
+                {
+                    builder.Append($@", {(source.ReturnType == ReturnType.Enumerable ? "[EnumeratorCancellation] " : "")}CancellationToken cancellationToken = default");
+                }
+
+                builder.Append($@")
+        {{");
+
+                if (source.ReturnType == ReturnType.Enumerable)
                 {
                     builder.Append($@"
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static IEnumerable<{type}> {BatchItemMethodName(source, item, methodType)}({ProviderInfo.ReaderType()} reader)
-        {{");
+            while({await}reader.Read{async})
+            {{
+                {ItemTypeName(source)} item;");
+                    MappingHelper.MapItem(item.QueryBase, builder, ProviderInfo, "item", CastTypeExpr(source));
+                    builder.Append($@"
+                yield return item;
+            }}");
                 }
                 else
                 {
                     builder.Append($@"
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private static async IAsyncEnumerable<{type}> {BatchItemMethodName(source,item, methodType)}(
-            {ProviderInfo.ReaderType()} reader,
-            [EnumeratorCancellation] CancellationToken cancellationToken = default
-            )
-        {{");
-                }
-
-                builder.Append($@"
+            var batchItems = new System.Collections.Generic.List<{ItemTypeName(source)}>();
             while({await}reader.Read{async})
             {{
                 {ItemTypeName(source)} item;");
-                MappingHelper.MapItem(item.QueryBase, builder, ProviderInfo, "item", CastTypeExpr(source));
-                builder.Append($@"
-                yield return item;
+                    MappingHelper.MapItem(item.QueryBase, builder, ProviderInfo, "item", CastTypeExpr(source));
+                    builder.Append($@"
+                batchItems.Add(item);
             }}
+            
+            return batchItems;");
+                }
+
+                builder.Append($@"
         }}
 ");
             }
@@ -707,6 +740,14 @@ namespace Gedaq.Base.Batch
                             $"IEnumerable<IEnumerable<{type}>>"
                             ;
                     }
+
+                    case ReturnType.List:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Collections.Generic.List<System.Collections.Generic.List<{ItemTypeName(source)}>>>" :
+                            $"System.Collections.Generic.List<System.Collections.Generic.List<{ItemTypeName(source)}>>";
+                    }
+
                     case ReturnType.Single:
                     case ReturnType.SingleOrDefault:
                     case ReturnType.First:
@@ -735,7 +776,7 @@ namespace Gedaq.Base.Batch
 
             if (methodType == MethodType.Async)
             {
-                var enumeratorCancellation = forInterface ? string.Empty : "[EnumeratorCancellation]";
+                var enumeratorCancellation = forInterface || source.ReturnType != ReturnType.Enumerable ? string.Empty : "[EnumeratorCancellation]";
                 builder.Append($@",
             {enumeratorCancellation} CancellationToken cancellationToken = default");
             }
@@ -848,6 +889,32 @@ namespace Gedaq.Base.Batch
 
                 {await}reader.Dispose{disposeAsync};
                 reader = null;");
+
+                    break;
+                }
+
+                case ReturnType.List:
+                {
+                    var type = ItemTypeName(source);
+                    builder.Append($@"
+                var batchResult = new System.Collections.Generic.List<System.Collections.Generic.List<{type}>>();");
+
+                    foreach (var item in source.QueryBases())
+                    {
+                        builder.Append($@"
+                batchResult.Add({await}{BatchItemMethodName(source, item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")});
+                {await}reader.NextResult{async};");
+                    }
+
+                    builder.Append($@"
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+
+                {await}reader.Dispose{disposeAsync};
+                reader = null;
+
+                return batchResult;");
 
                     break;
                 }

@@ -9,43 +9,45 @@ namespace Gedaq
 {
     internal class AttributeProcessor
     {
-        private NpgsqlAttributeProcessor _npgsqlProcessor = new NpgsqlAttributeProcessor();
-        private DbConnectionAttributeProcessor _dbConnectionProcessor = new DbConnectionAttributeProcessor();
-        private SqlClientAttributeProcessor _sqlClientProcessor = new SqlClientAttributeProcessor();
-        private MySqlConnectorAttributeProcessor _mysqlConnectorProcessor = new MySqlConnectorAttributeProcessor();
+        private readonly NpgsqlAttributeProcessor _npgsqlProcessor;
+        private readonly DbConnectionAttributeProcessor _dbConnectionProcessor;
+        private readonly SqlClientAttributeProcessor _sqlClientProcessor;
+        private readonly MySqlConnectorAttributeProcessor _mysqlConnectorProcessor;
+
+        public AttributeProcessor(SourceProductionContext context)
+        {
+            _npgsqlProcessor = new NpgsqlAttributeProcessor(context);
+            _dbConnectionProcessor = new DbConnectionAttributeProcessor(context);
+            _sqlClientProcessor = new SqlClientAttributeProcessor(context);
+            _mysqlConnectorProcessor = new MySqlConnectorAttributeProcessor(context);
+        }
 
         public void TryFillFrom(
             TypeDeclarationSyntax type,
             Compilation compilation, 
-            INamedTypeSymbol containsType,
-            CancellationToken cancellationToken
-            )
+            INamedTypeSymbol containsType)
         {
-            cancellationToken.ThrowIfCancellationRequested();
-            ProcessAttributes(type.AttributeLists, compilation, containsType, cancellationToken);
+            ProcessAttributes(type.AttributeLists, compilation, containsType);
             foreach (var member in type.Members)
             {
-                cancellationToken.ThrowIfCancellationRequested();
                 if (!(member is MethodDeclarationSyntax methodSymbol))
                 {
                     continue;
                 }
 
-                ProcessAttributes(methodSymbol.AttributeLists, compilation, containsType, cancellationToken);
+                ProcessAttributes(methodSymbol.AttributeLists, compilation, containsType);
             }
         }
 
         private void ProcessAttributes(
             SyntaxList<AttributeListSyntax> attributes, 
             Compilation compilation, 
-            INamedTypeSymbol containsType,
-            CancellationToken cancellationToken
-            )
+            INamedTypeSymbol containsType)
         {
-            _npgsqlProcessor.ProcessAttributes(attributes, compilation, containsType, cancellationToken);
-            _dbConnectionProcessor.ProcessAttributes(attributes, compilation, containsType, cancellationToken);
-            _sqlClientProcessor.ProcessAttributes(attributes, compilation, containsType, cancellationToken);
-            _mysqlConnectorProcessor.ProcessAttributes(attributes, compilation, containsType, cancellationToken);
+            _npgsqlProcessor.ProcessAttributes(attributes, compilation, containsType);
+            _dbConnectionProcessor.ProcessAttributes(attributes, compilation, containsType);
+            _sqlClientProcessor.ProcessAttributes(attributes, compilation, containsType);
+            _mysqlConnectorProcessor.ProcessAttributes(attributes, compilation, containsType);
         }
 
         public void CompleteProcessContainTypes()
@@ -56,12 +58,12 @@ namespace Gedaq
             _mysqlConnectorProcessor.CompleteProcessContainTypes();
         }
 
-        public void GenerateAndSaveMethods(SourceProductionContext context, CancellationToken cancellationToken)
+        public void GenerateAndSaveMethods()
         {
-            _npgsqlProcessor.GenerateAndSaveMethods(context, cancellationToken);
-            _dbConnectionProcessor.GenerateAndSaveMethods(context, cancellationToken);
-            _sqlClientProcessor.GenerateAndSaveMethods(context, cancellationToken);
-            _mysqlConnectorProcessor.GenerateAndSaveMethods(context, cancellationToken);
+            _npgsqlProcessor.GenerateAndSaveMethods();
+            _dbConnectionProcessor.GenerateAndSaveMethods();
+            _sqlClientProcessor.GenerateAndSaveMethods();
+            _mysqlConnectorProcessor.GenerateAndSaveMethods();
         }
     }
 }

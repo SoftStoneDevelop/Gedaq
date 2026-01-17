@@ -113,8 +113,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             NpgsqlSourceType sourceType, 
             MethodType methodType,
             StringBuilder builder,
-            bool forInterface = false
-            )
+            bool forInterface = false)
         {
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : binaryExport.AccessModifier.ToLowerInvariant();
             var staticModifier = forInterface ? string.Empty : binaryExport.MethodStaticModifier;
@@ -150,8 +149,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
         private void MethodBody(
             BinaryExport binaryExport,
             NpgsqlSourceType sourceType,
-            MethodType methodType
-            )
+            MethodType methodType)
         {
             var isAsync = methodType == MethodType.Async;
             var cancellation = isAsync ? "cancellationToken" : "";
