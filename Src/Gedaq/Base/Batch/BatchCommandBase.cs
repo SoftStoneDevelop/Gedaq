@@ -242,16 +242,6 @@ namespace Gedaq.Base.Batch
 
         protected abstract void CreateParametr(BaseParametr parametr, StringBuilder builder);
 
-        protected virtual void CreateFakeCommand(string sourceParametrName, StringBuilder builder)
-        {
-
-        }
-
-        protected virtual void DisposeFakeCommand(MethodType methodType, StringBuilder builder)
-        {
-
-        }
-
         public string CreateBatchMethodName(
             QueryBatchCommand source,
             MethodType methodType
@@ -352,7 +342,6 @@ namespace Gedaq.Base.Batch
         {{
             var batch = {sourceParametrName}.CreateBatch();");
 
-            CreateFakeCommand(sourceParametrName, builder);
             foreach (var item in source.QueryBases())
             {
                 CreateBatchCommand(item, builder);
@@ -360,7 +349,6 @@ namespace Gedaq.Base.Batch
             batch.BatchCommands.Add(command);");
             }
 
-            DisposeFakeCommand(methodType, builder);
             if (methodType == MethodType.Async)
             {
                 builder.Append($@"

@@ -1,6 +1,5 @@
 ﻿using Gedaq.Npgsql.Attributes;
 using NUnit.Framework;
-using System;
 using System.Data;
 using System.Linq;
 using Tests.FunctionTests.Model;
@@ -13,10 +12,10 @@ namespace Tests.FunctionTests
     {
         [Test]
         [Query(
-            @"
+            query: @"
 select * from readfixturefunc(@inParam); 
 ",
-            "FuncOut",
+            methodName: "FuncOut",
             queryType: Gedaq.Common.Enums.QueryType.NonQuery
             ),
             Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input),
@@ -36,11 +35,11 @@ select * from readfixturefunc(@inParam);
 
         [Test]
         [Query(
-            @"
+            query: @"
 select out1, out2 from readfixturefunc(@inParam);
 ",
-            "ReadFunc",
-            typeof(ReadFunc),
+            methodName: "ReadFunc",
+            queryMapType: typeof(ReadFunc),
             queryType: Gedaq.Common.Enums.QueryType.Read
             ),
             Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)
@@ -58,7 +57,7 @@ select out1, out2 from readfixturefunc(@inParam);
 
         [Test]
         [Query(
-            @"
+            query: @"
 SELECT 
 ~StartInner::Person:id~
     P.id,
@@ -83,10 +82,9 @@ LEFT JOIN LATERAL readfixturefunc(@inParam) AS readfixturefunc ON true
 WHERE p.id = @personId
 ORDER BY p.id ASC
 ",
-            "ReadFuncPerson",
-            typeof(ReadFunc),
-             queryType: Gedaq.Common.Enums.QueryType.Read
-            ),
+            methodName: "ReadFuncPerson",
+            queryMapType: typeof(ReadFunc),
+            queryType: Gedaq.Common.Enums.QueryType.Read),
             Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input),
             Parametr(parametrType: typeof(int), parametrName: "personId", direction: ParameterDirection.Input)
             ]
