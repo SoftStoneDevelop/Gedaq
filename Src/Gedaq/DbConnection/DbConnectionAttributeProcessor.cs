@@ -178,13 +178,14 @@ namespace Gedaq.Npgsql
             {
                 query.Parametrs[i].Index = i;
             }
+
             AddFormatParametrs(query, readPair.FormatParametrs);
 
             if (query.QueryType == QueryType.NonQuery)
             {
                 query.Aliases = _queryParser.GetIntResultAlias();
             }
-            else
+            else if (!query.IsDynamicQuery())
             {
                 query.Aliases = _queryParser.Parse(ref query.Query);
             }

@@ -8,8 +8,15 @@ namespace Gedaq.Base.Model
     internal abstract class QueryBaseCommand : QueryBase
     {
         public string Query;
+
+        public bool IsDynamicQuery()
+        {
+            return Query == null;
+        }
+
         public Aliases Aliases;
         public FormatParametr[] FormatParametrs;
+
         public bool HaveFromatParametrs()
         {
             return FormatParametrs != null;
@@ -24,8 +31,7 @@ namespace Gedaq.Base.Model
         protected bool FillGenerate(TypedConstant argument)
         {
             if (!(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
-                namedTypeSymbol.Name != nameof(Boolean)
-                )
+                namedTypeSymbol.Name != nameof(Boolean))
             {
                 return false;
             }
@@ -37,8 +43,7 @@ namespace Gedaq.Base.Model
         protected bool FillQuery(TypedConstant argument)
         {
             if (!(argument.Type is INamedTypeSymbol strParam) ||
-                strParam.Name != nameof(String)
-                )
+                strParam.Name != nameof(String))
             {
                 return false;
             }

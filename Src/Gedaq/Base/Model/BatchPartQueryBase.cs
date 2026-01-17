@@ -43,5 +43,10 @@ namespace Gedaq.Base.Model
         {
             return $"{formatParametr.Name}Batch{Number}";
         }
+
+        public string DynamicQueryParametrName()
+        {
+            return $"dynamicQuery{Number}Batch";
+        }
     }
 }

@@ -16,8 +16,7 @@ namespace Gedaq.Base.Batch
         public void Generate(
             QueryBatchCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             CreateBatchItems(source, builder);
             CreateBatchMethods(source, builder, interfaceGenerator);
@@ -26,8 +25,7 @@ namespace Gedaq.Base.Batch
 
         private void CreateBatchItems(
             QueryBatchCommand source, 
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if(!source.QueryType.HasFlag(QueryType.Read))
             {
@@ -48,8 +46,7 @@ namespace Gedaq.Base.Batch
         protected virtual void CreateBatchMethods(
             QueryBatchCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -81,8 +78,7 @@ namespace Gedaq.Base.Batch
         protected void ExecuteBatchMethods(
             QueryBatchCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             if (source.QueryType.HasFlag(QueryType.Read))
             {
@@ -151,8 +147,7 @@ namespace Gedaq.Base.Batch
         private void CreateBatchItem(
             QueryBatchCommand source,
             MethodType methodType,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
             var async = methodType == MethodType.Sync ? "()" : "Async(cancellationToken).ConfigureAwait(false)";
@@ -227,8 +222,7 @@ namespace Gedaq.Base.Batch
         public string BatchItemMethodName(
             QueryBatchCommand source,
             BatchPartBase batchPart,
-            MethodType methodType
-            )
+            MethodType methodType)
         {
             if (methodType == MethodType.Sync)
             {
@@ -263,16 +257,14 @@ namespace Gedaq.Base.Batch
             string sourceParametrName,
             MethodType methodType,
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             CreateBatchMethodDefinition(
                     source,
                     sourceTypeName,
                     sourceParametrName,
                     methodType,
-                    builder
-                    );
+                    builder);
             if (source.AsPartInterface)
             {
                 CreateBatchMethodDefinition(
@@ -281,8 +273,7 @@ namespace Gedaq.Base.Batch
                     sourceParametrName,
                     methodType,
                     interfaceGenerator.DefinitionBuilder(),
-                    forInterface: true
-                    );
+                    forInterface: true);
                 interfaceGenerator.AddMethodDefinition();
             }
 
@@ -290,8 +281,7 @@ namespace Gedaq.Base.Batch
                 source,
                 sourceParametrName,
                 methodType, 
-                builder
-                );
+                builder);
         }
 
         public void CreateBatchMethodDefinition(
@@ -300,8 +290,7 @@ namespace Gedaq.Base.Batch
             string sourceParametrName,
             MethodType methodType,
             StringBuilder builder,
-            bool forInterface = false
-            )
+            bool forInterface = false)
         {
             var returnType = methodType == MethodType.Async ? $"{source.MethodInfo.AsyncResultType.ToResultType()}<{ProviderInfo.BatchType()}>" : ProviderInfo.BatchType();
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
@@ -315,6 +304,18 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
         {accessModifier} {source.MethodStaticModifier} {asyncKeyword}{returnType} {CreateBatchMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
+
+            // Add dynamic query
+            foreach (var queryBase in source.QueryBases())
+            {
+                if (!queryBase.QueryBase.IsDynamicQuery())
+                {
+                    continue;
+                }
+
+                builder.Append($@",
+            string {queryBase.DynamicQueryParametrName()}");
+            }
 
             AddFormatParametrs(source, builder);
             builder.Append($@",
@@ -335,8 +336,7 @@ namespace Gedaq.Base.Batch
             QueryBatchCommand source,
             string sourceParametrName,
             MethodType methodType,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             builder.Append($@"
         {{
@@ -391,8 +391,7 @@ namespace Gedaq.Base.Batch
 
         private void CreateBatchCommand(
             BatchPartBase item,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if (item.Index == 0)
             {
@@ -433,8 +432,7 @@ namespace Gedaq.Base.Batch
 
         private void SetQuery(
             BatchPartBase item,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if (item.QueryBase.HaveFromatParametrs())
             {
@@ -452,6 +450,11 @@ namespace Gedaq.Base.Batch
 )
 ;");
             }
+            else if (item.QueryBase.IsDynamicQuery())
+            {
+                builder.Append($@"
+            command.CommandText = {item.DynamicQueryParametrName()};");
+            }
             else
             {
                 builder.Append($@"
@@ -463,8 +466,7 @@ namespace Gedaq.Base.Batch
 
         private void AddFormatParametrs(
             QueryBatchCommand source,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if (!source.HaveFormatParametrs)
             {
@@ -496,8 +498,7 @@ namespace Gedaq.Base.Batch
         protected void SetParametrsMethodInner(
             QueryBatchCommand source,
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             SetParametrsMethodDefinition(source, builder);
             if (source.AsPartInterface)
@@ -515,8 +516,7 @@ namespace Gedaq.Base.Batch
         protected void SetParametrsMethodDefinition(
             QueryBatchCommand source,
             StringBuilder builder,
-            bool forInterface = false
-            )
+            bool forInterface = false)
         {
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
             var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
@@ -561,8 +561,7 @@ namespace Gedaq.Base.Batch
 
         protected void SetParametrsMethodBody(
             QueryBatchCommand source,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             builder.Append($@"
         {{
@@ -592,8 +591,7 @@ namespace Gedaq.Base.Batch
 
         private void SetBatchCommandParametrsValue(
             QueryBatchCommand source,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if(!source.HaveParametrs)
             {
@@ -675,8 +673,7 @@ namespace Gedaq.Base.Batch
 
         public string ExecuteBatchMethodName(
             QueryBatchCommand source,
-            MethodType methodType
-            )
+            MethodType methodType)
         {
             if (methodType == MethodType.Sync)
             {
@@ -692,8 +689,7 @@ namespace Gedaq.Base.Batch
             QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             ExecuteBatchDefinition(source, methodType, builder);
             if (source.AsPartInterface)
@@ -713,8 +709,7 @@ namespace Gedaq.Base.Batch
             QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder,
-            bool forInterface = false
-            )
+            bool forInterface = false)
         {
             string ExecuteReturnType()
             {
@@ -786,8 +781,7 @@ namespace Gedaq.Base.Batch
         protected void ExecuteBatchBody(
             QueryBatchCommand source,
             MethodType methodType,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
@@ -826,8 +820,7 @@ namespace Gedaq.Base.Batch
         public void ExecuteReadBody(
             QueryBatchCommand source,
             MethodType methodType,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
@@ -1091,8 +1084,7 @@ namespace Gedaq.Base.Batch
 
         public string ExecuteScalarBatchMethodName(
             QueryBatchCommand source,
-            MethodType methodType
-            )
+            MethodType methodType)
         {
             if (methodType == MethodType.Sync)
             {
@@ -1129,8 +1121,7 @@ namespace Gedaq.Base.Batch
             QueryBatchCommand source,
             MethodType methodType,
             StringBuilder builder,
-            bool forInterface = false
-            )
+            bool forInterface = false)
         {
             var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
             GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
@@ -1161,8 +1152,7 @@ namespace Gedaq.Base.Batch
         protected void ExecuteScalarBatchBody(
             QueryBatchCommand source,
             MethodType methodType,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
@@ -1214,8 +1204,7 @@ namespace Gedaq.Base.Batch
         public void SetOutAndReturnParametrs(
             QueryBatchCommand batch,
             StringBuilder builder,
-            ProviderInfo providerInfo
-            )
+            ProviderInfo providerInfo)
         {
             foreach (var item in batch.QueryBases())
             {
@@ -1238,7 +1227,10 @@ namespace Gedaq.Base.Batch
             }
         }
 
-        public void WriteSetParametrs(QueryBatchCommand batch, StringBuilder builder, ProviderInfo providerInfo)
+        public void WriteSetParametrs(
+            QueryBatchCommand batch,
+            StringBuilder builder,
+            ProviderInfo providerInfo)
         {
             var isStatic = batch.ContainTypeName.GCIsStatic();
             if (isStatic)
@@ -1308,8 +1300,7 @@ namespace Gedaq.Base.Batch
             QueryBatchCommand source,
             string sourceParametrName,
             MethodType methodType,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if (methodType == MethodType.Async)
             {
@@ -1338,8 +1329,7 @@ namespace Gedaq.Base.Batch
 
         private void PassFormatParametrs(
             QueryBatchCommand source,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if (!source.HaveFormatParametrs)
             {
@@ -1364,8 +1354,7 @@ namespace Gedaq.Base.Batch
 
         public void AddMethodParametrs(
             QueryBatchCommand source,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if (!source.HaveParametrs && !source.HaveFormatParametrs)
             {
@@ -1381,8 +1370,7 @@ namespace Gedaq.Base.Batch
 
         private void AddParametrs(
             BatchPartBase item,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if (!item.QueryBase.HaveParametrs())
             {
@@ -1403,8 +1391,7 @@ namespace Gedaq.Base.Batch
 
         private void AddFormatParametrs(
             BatchPartBase item,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if (!item.QueryBase.HaveFromatParametrs())
             {
@@ -1423,8 +1410,7 @@ namespace Gedaq.Base.Batch
             ProviderInfo providerInfo,
             out ITypeSymbol type,
             out bool isRowAffected,
-            out string typeName
-            )
+            out string typeName)
         {
             var first = source.QueryBases().First().QueryBase;
             if (first.Aliases.IsRowsAffected)

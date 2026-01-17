@@ -78,8 +78,7 @@ namespace Gedaq.Base.Query
             string sourceParametrName,
             MethodType methodType,
             StringBuilder builder,
-            bool forInterface = false
-            )
+            bool forInterface = false)
         {
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
             var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
@@ -89,10 +88,11 @@ namespace Gedaq.Base.Query
                 "async "
                 ;
             var returnType = methodType == MethodType.Async ? $"{source.MethodInfo.AsyncResultType.ToResultType()}<{ProviderInfo.CommandType()}>" : ProviderInfo.CommandType();
+            var queryParametr = source.IsDynamicQuery() ? ", string dynamicQuery" : "";
 
             builder.Append($@"
         {accessModifier} {staticModifier} {asyncKeyword}{returnType} {CreateCommandMethodName(source, methodType)}(
-            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
+            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}{queryParametr}");
             AddFormatParametrs(source, builder);
             builder.Append($@",
             bool prepare = false");
@@ -114,16 +114,14 @@ namespace Gedaq.Base.Query
             string sourceParametrName,
             MethodType methodType,
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             CreateCommandMethodDefinition(
                 source, 
                 sourceTypeName, 
                 sourceParametrName, 
                 methodType, 
-                builder
-                );
+                builder);
 
             if(source.AsPartInterface)
             {
@@ -133,8 +131,7 @@ namespace Gedaq.Base.Query
                     sourceParametrName,
                     methodType,
                     interfaceGenerator.DefinitionBuilder(),
-                    forInterface: true
-                    );
+                    forInterface: true);
                 interfaceGenerator.AddMethodDefinition();
             }
 
@@ -189,8 +186,7 @@ namespace Gedaq.Base.Query
 
         private void SetQuery(
             QueryBaseCommand source,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if (source.HaveFromatParametrs())
             {
@@ -207,6 +203,11 @@ namespace Gedaq.Base.Query
                 builder.Append($@"
 )
 ;");
+            }
+            else if (source.IsDynamicQuery())
+            {
+                builder.Append($@"
+            command.CommandText = dynamicQuery;");
             }
             else
             {
