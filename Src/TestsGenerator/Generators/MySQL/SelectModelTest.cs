@@ -15,32 +15,28 @@ namespace TestsGenerator.Generators.MySQL
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var orderedValues = storage.Values.OrderBy(or => or.IdValue).ToList();
 
             SelectTestConfig(
                 model, 
                 stringBuilder,
-                interfaceTypeName
-                );
+                interfaceTypeName);
             SelectTest(
                 order, 
                 orderedValues, 
                 model, 
                 stringBuilder, 
                 false,
-                interfaceTypeName
-                );
+                interfaceTypeName);
             SelectTest(
                 order, 
                 orderedValues, 
                 model, 
                 stringBuilder, 
                 true, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             DbConnection.SelectModel.Generate(
                 order, 
@@ -48,15 +44,13 @@ namespace TestsGenerator.Generators.MySQL
                 model, 
                 orderedValues, 
                 Database.MySQL, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
         }
 
         private static void SelectTestConfig(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var query = $@"
 @""
@@ -87,15 +81,12 @@ ORDER BY
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            ),
+            asPartInterface: typeof({interfaceTypeName})),
 Gedaq.MySqlConnector.Attributes.Parametr(
             parametrType: typeof({model.IdType}),
             parametrName: ""{model.IdColumnName}"",
             methodParametrName: ""{model.IdColumnName}"",
-            dbType: {model.IdTypeInfo.SpecialDbTypeStr()}
-            )
-            ]
+            dbType: {model.IdTypeInfo.SpecialDbTypeStr()})]
         private void {_testName}Config()
         {{
         }}
@@ -108,8 +99,7 @@ Gedaq.MySqlConnector.Attributes.Parametr(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -123,26 +113,10 @@ Gedaq.MySqlConnector.Attributes.Parametr(
                 await connection.OpenAsync();
                 var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, 0);
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
-");
-            for (int i = 0; i < orderedValues.Count; i++)
-            {
-                ModelValue value = orderedValues[i];
-                if (i == 0)
-                {
-                    stringBuilder.Append($@"
-                var model = models[{i}];
-");
-                }
-                else
-                {
-                    stringBuilder.Append($@"
-                model = models[{i}];
-");
-                }
-
-                stringBuilder.Append(model.Assert("model", value));
-            }
-            stringBuilder.Append($@"
+                for (int i = 0; i < {orderedValues.Count}; i++)
+                {{
+                    {model.ClassName}.{ModelGenerator.AssertMethodName}(models[i],{TestsPart.TestDataArrayName}[i], false);
+                }}
             }}
         }}
 ");
