@@ -138,21 +138,15 @@ ORDER BY
                 {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}(connection, importCollection);
                 var models = {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}(connection);
                 Assert.That(models, Has.Count.EqualTo(importCollection.Count));
-");
-            var indexCollection = 0;
-            for (; indexCollection < storage.Count / 2; indexCollection++)
-            {
-                if (storage[indexCollection].InnerModel == null)
-                {
-                    continue;
-                }
-
-                stringBuilder.Append($@"
-                {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}].{model.ModelInnerName}, false);");
-            }
-
-            stringBuilder.Append($@"
-                importCollection.Clear();
+                var set = new HashSet<long>();
+                for (var i = 0; i < models.Count(); i++)
+                {{
+                    var actual = models[i];
+                    var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
+                    {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(actual, expect, false);
+                    Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
+                }}
+                set.Clear();
 ");
             FillCollection(storage.Count);
 
@@ -160,20 +154,14 @@ ORDER BY
                 await {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Async(connection, importCollection);
                 models = await {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}Async(connection);
                 Assert.That(models, Has.Count.EqualTo({storage.Count}));
-");
-            indexCollection = 0;
-            for (; indexCollection < storage.Count; indexCollection++)
-            {
-                if (storage[indexCollection].InnerModel == null)
-                {
-                    continue;
-                }
-
-                stringBuilder.Append($@"
-                {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}].{model.ModelInnerName}, false);");
-            }
-
-            stringBuilder.Append($@"
+                for (var i = 0; i < models.Count(); i++)
+                {{
+                    var actual = models[i];
+                    var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
+                    {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(actual, expect, false);
+                    Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
+                }}
+                set.Clear();
             }}
         }}
 ");
