@@ -24,8 +24,6 @@ namespace TestsGenerator.Generators.PostgreSQL
 
             var ordered = 
                 storage.Values
-                .Where(wh => wh.InnerModel != null)
-                .Select(sel => sel.InnerModel)
                 .OrderBy(or => or.IdValue)
                 .ToList();
 
@@ -84,7 +82,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
             int order,
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            List<InnerModelValue> storage,
+            List<ModelValue> storage,
             bool isAsync,
             string interfaceTypeName)
         {
@@ -110,7 +108,12 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
 ");
             for (; index < storage.Count; index++)
             {
-                InnerModelValue value = storage[index];
+                InnerModelValue value = storage[index].InnerModel;
+                if (storage[index].InnerModel == null)
+                {
+                    continue;
+                }
+
                 stringBuilder.Append($@"
                 expected.Add(
                     {value.IdValue},

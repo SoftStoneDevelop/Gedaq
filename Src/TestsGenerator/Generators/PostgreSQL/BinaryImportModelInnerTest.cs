@@ -29,8 +29,6 @@ namespace TestsGenerator.Generators.PostgreSQL
 
             var ordered = 
                 storage.Values
-                .Where(wh => wh.InnerModel != null)
-                .Select(sel => sel.InnerModel)
                 .OrderBy(or => or.IdValue)
                 .ToList();
 
@@ -114,7 +112,7 @@ ORDER BY
             int order,
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            List<InnerModelValue> storage,
+            List<ModelValue> storage,
             string interfaceTypeName)
         {
             if (storage.Count < 4)
@@ -144,6 +142,11 @@ ORDER BY
             var indexCollection = 0;
             for (; indexCollection < storage.Count / 2; indexCollection++)
             {
+                if (storage[indexCollection].InnerModel == null)
+                {
+                    continue;
+                }
+
                 stringBuilder.Append($@"
                 {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}].{model.ModelInnerName}, false);");
             }
@@ -161,6 +164,11 @@ ORDER BY
             indexCollection = 0;
             for (; indexCollection < storage.Count; indexCollection++)
             {
+                if (storage[indexCollection].InnerModel == null)
+                {
+                    continue;
+                }
+
                 stringBuilder.Append($@"
                 {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}].{model.ModelInnerName}, false);");
             }
@@ -173,7 +181,12 @@ ORDER BY
             {
                 for (; index < end; index++)
                 {
-                    InnerModelValue value = storage[index];
+                    ModelValue value = storage[index];
+                    if (value.InnerModel == null)
+                    {
+                        continue;
+                    }
+
                     stringBuilder.Append($@"
                 importCollection.Add(
                 new {model.ModelInner.ClassName}
