@@ -20,31 +20,29 @@ namespace TestsGenerator.Generators.DbConnection
             Model.ModelType model,
             List<ModelValue> orderedValues,
             Database database,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             SelectTestConfig(
                 model, 
                 stringBuilder, 
                 database,
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             SelectTest(
                 order, 
                 orderedValues, 
                 model, 
                 stringBuilder, 
                 false,
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             SelectTest(
                 order, 
                 orderedValues, 
                 model, 
                 stringBuilder, 
                 true,
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             CommandSelectTest(
                 order, 
@@ -52,16 +50,15 @@ namespace TestsGenerator.Generators.DbConnection
                 model, 
                 stringBuilder, 
                 false,
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             CommandSelectTest(
                 order, 
                 orderedValues, 
                 model, 
                 stringBuilder, 
                 true,
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             BatchTests(
                 order, 
@@ -69,8 +66,7 @@ namespace TestsGenerator.Generators.DbConnection
                 model, 
                 stringBuilder, 
                 database, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             var canObjArr = model.TypeInfo.EnumerableType == EnumerableType.SingleType;
             if (canObjArr && DefaultTypeHelper.CanConvert(model.TypeInfo.ItemTypeFullName))
@@ -79,24 +75,23 @@ namespace TestsGenerator.Generators.DbConnection
                     model, 
                     stringBuilder, 
                     database, 
-                    interfaceTypeName
-                    );
+                    interfaceTypeName);
+
                 SelectToObjArrTest(
                     order, 
                     model, 
                     orderedValues, 
                     stringBuilder, 
                     false, 
-                    interfaceTypeName
-                    );
+                    interfaceTypeName);
+
                 SelectToObjArrTest(
                     order, 
                     model, 
                     orderedValues, 
                     stringBuilder, 
                     true, 
-                    interfaceTypeName
-                    );
+                    interfaceTypeName);
             }
         }
 
@@ -104,8 +99,7 @@ namespace TestsGenerator.Generators.DbConnection
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             Database database,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var query = $@"
 @""
@@ -136,15 +130,12 @@ ORDER BY
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            ),
+            asPartInterface: typeof({interfaceTypeName})),
 Gedaq.DbConnection.Attributes.Parametr(
             parametrType: typeof({model.IdType}), 
             parametrName: ""{model.IdColumnName}"", 
             methodParametrName: ""{model.IdColumnName}"", 
-            dbType: {model.IdTypeInfo.DbTypeStr()}
-                )
-            ]
+            dbType: {model.IdTypeInfo.DbTypeStr()})]
         private void DbConnection{_testName}Config()
         {{
         }}
@@ -157,8 +148,7 @@ Gedaq.DbConnection.Attributes.Parametr(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -172,26 +162,10 @@ Gedaq.DbConnection.Attributes.Parametr(
                 await connection.OpenAsync();
                 var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{async}(connection, 0);
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
-");
-            for (int i = 0; i < orderedValues.Count; i++)
-            {
-                ModelValue value = orderedValues[i];
-                if (i == 0)
-                {
-                    stringBuilder.Append($@"
-                var model = models[{i}];
-");
-                }
-                else
-                {
-                    stringBuilder.Append($@"
-                model = models[{i}];
-");
-                }
-
-                stringBuilder.Append(model.Assert("model", value));
-            }
-            stringBuilder.Append($@"
+                for (int i = 0; i < {orderedValues.Count}; i++)
+                {{
+                    {model.ClassName}.{ModelGenerator.AssertMethodName}(models[i],{TestsPart.TestDataArrayName}[i], false);
+                }}
             }}
         }}
 ");
@@ -203,8 +177,7 @@ Gedaq.DbConnection.Attributes.Parametr(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -228,21 +201,7 @@ Gedaq.DbConnection.Attributes.Parametr(
             var index = 0;
             for (; valIndex < orderedValues.Count; valIndex++)
             {
-                ModelValue value = orderedValues[valIndex];
-                if (index == 0)
-                {
-                    stringBuilder.Append($@"
-                var model = models[{index}];
-");
-                }
-                else
-                {
-                    stringBuilder.Append($@"
-                model = models[{index}];
-");
-                }
-
-                stringBuilder.Append(model.Assert("model", value));
+                stringBuilder.Append($"{model.ClassName}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{valIndex}], false);");
                 index++;
             }
             stringBuilder.Append($@"
@@ -255,8 +214,7 @@ Gedaq.DbConnection.Attributes.Parametr(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             Database database,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var query = $@"
 @""
@@ -285,9 +243,7 @@ ORDER BY
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            )
-            ]
+            asPartInterface: typeof({interfaceTypeName}))]
         private void DbConnection{_testName}ToObjArrConfig()
         {{
         }}
@@ -300,8 +256,7 @@ ORDER BY
             List<ModelValue> orderedValues,
             StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -346,8 +301,7 @@ ORDER BY
         private static void ToObjArrAssert(
             Model.ModelType model,
             ModelValue expectValue,
-            StringBuilderArray.StringBuilderArray stringBuilder
-            )
+            StringBuilderArray.StringBuilderArray stringBuilder)
         {
             stringBuilder.Append($@"
                 Assert.That(model, Is.Not.Null);
@@ -357,9 +311,9 @@ ORDER BY
             if (expectValue.InnerModel == null)
             {
                 stringBuilder.Append($@"
-                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value));//InnerModel.Id
-                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value));//InnerModel.Value
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.NullableValue
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 ");
             }
             else
@@ -401,8 +355,7 @@ ORDER BY
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             Database database,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             switch (database)
             {
@@ -412,16 +365,20 @@ ORDER BY
                     {
                         return;
                     }
+
                     break;
                 }
+
                 case Database.MsSQL:
                 {
                     if (!SqlClientFactory.Instance.CanCreateBatch)
                     {
                         return;
                     }
+
                     break;
                 }
+
                 case Database.MySQL:
                 {
                     if (!MySqlConnectorFactory.Instance.CanCreateBatch)
@@ -440,8 +397,7 @@ ORDER BY
 
         private static void SelectBatchReadTestConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             stringBuilder.Append($@"
 [Gedaq.DbConnection.Attributes.QueryBatch(
@@ -449,17 +405,13 @@ ORDER BY
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            ),
+            asPartInterface: typeof({interfaceTypeName})),
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: ""DbConnection{_testName}"",
-            position: 1
-            ),
+            position: 1),
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: ""DbConnection{_testName}"",
-            position: 2
-            )
-            ]
+            position: 2)]
         private void DbConnection{_testName}BatchConfig()
         {{
         }}
@@ -472,8 +424,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -501,21 +452,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             var index = 0;
             for (; firstBatchStart < orderedValues.Count; firstBatchStart++)
             {
-                ModelValue value = orderedValues[firstBatchStart];
-                if (index == 0)
-                {
-                    stringBuilder.Append($@"
-                        var model = models[{index}];
-");
-                }
-                else
-                {
-                    stringBuilder.Append($@"
-                        model = models[{index}];
-");
-                }
-
-                stringBuilder.Append($@"    {model.Assert("model", value)}");
+                stringBuilder.Append($"{model.ClassName}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{firstBatchStart}], false);");
                 index++;
             }
 
@@ -532,20 +469,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             index = 0;
             for (; secondBatchStart < orderedValues.Count; secondBatchStart++)
             {
-                ModelValue value = orderedValues[secondBatchStart];
-                if (index == 0)
-                {
-                    stringBuilder.Append($@"
-                        var model = models[{index}];
-");
-                }
-                else
-                {
-                    stringBuilder.Append($@"
-                        model = models[{index}];
-");
-                }
-                stringBuilder.Append($@"    {model.Assert("model", value)}");
+                stringBuilder.Append($"{model.ClassName}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{secondBatchStart}], false);");
                 index++;
             }
             stringBuilder.Append($@"
