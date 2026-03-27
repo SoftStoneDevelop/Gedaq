@@ -14,7 +14,7 @@ namespace TestsGenerator.Generators
 {
     public class TestsGenerator
     {
-        private List<Model.ModelType> _models = new List<Model.ModelType>();
+        private readonly List<Model.ModelType> _models = [];
 
         public async Task Generate(Database database, string destinationFolder)
         {
@@ -85,45 +85,45 @@ namespace TestsGenerator.Generators
 
         private void AddPostgreSQLTypes()
         {
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Integer, "Int32", "System.Int32", (EnumerableType type) => new Int32ValueHelper(type));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Bigint, "Int64", "System.Int64", (EnumerableType type) => new Int64ValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Integer, "Int32", "System.Int32", type => new Int32ValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Bigint, "Int64", "System.Int64", type => new Int64ValueHelper(type));
 
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Smallint, "Byte", "System.Byte", (EnumerableType type) => new ByteValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Smallint, "Byte", "System.Byte", type => new ByteValueHelper(type));
 
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Smallint, "SByte", "System.SByte", (EnumerableType type) => new SByteValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Smallint, "SByte", "System.SByte", type => new SByteValueHelper(type));
 
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Smallint, "Int16", "System.Int16", (EnumerableType type) => new Int16ValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Smallint, "Int16", "System.Int16", type => new Int16ValueHelper(type));
 
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Char, "Char", "System.Char", (EnumerableType type) => new CharValueHelper(type), generateArray: false);
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Char, "Char", "System.Char", type => new CharValueHelper(type), generateArray: false);
 
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Numeric, "Decimal", "System.Decimal", (EnumerableType type) => new DecimalValueHelper(type));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Numeric, "BigInteger", "System.Numerics.BigInteger", (EnumerableType type) => new BigIntegerValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Numeric, "Decimal", "System.Decimal", type => new DecimalValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Numeric, "BigInteger", "System.Numerics.BigInteger", type => new BigIntegerValueHelper(type));
 
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Money, "Decimal", "System.Decimal", (EnumerableType type) => new DecimalValueHelper(type, 2));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Double, "Double", "System.Double", (EnumerableType type) => new DoubleValueHelper(type));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Boolean, "Boolean", "System.Boolean", (EnumerableType type) => new BooleanValueHelper(type));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Real, "Single", "System.Single", (EnumerableType type) => new SingleValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Money, "Decimal", "System.Decimal", type => new DecimalValueHelper(type, 2));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Double, "Double", "System.Double", type => new DoubleValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Boolean, "Boolean", "System.Boolean", type => new BooleanValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Real, "Single", "System.Single", type => new SingleValueHelper(type));
 
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Interval, "TimeSpan", "System.TimeSpan", (EnumerableType type) => new TimeSpanValueHelper(type, true));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Interval, "NpgsqlInterval", "NpgsqlTypes.NpgsqlInterval", (EnumerableType type) => new NpgsqlIntervalValueHelper(type, true));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Time, "TimeOnly", "System.TimeOnly", (EnumerableType type) => new TimeOnlyValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Interval, "TimeSpan", "System.TimeSpan", type => new TimeSpanValueHelper(type, true));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Interval, "NpgsqlInterval", "NpgsqlTypes.NpgsqlInterval", type => new NpgsqlIntervalValueHelper(type, true));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Time, "TimeOnly", "System.TimeOnly", type => new TimeOnlyValueHelper(type));
 
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Timestamp, "DateTime", "System.DateTime", (EnumerableType type) => new DateTimeValueHelper(type, System.DateTimeKind.Local));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.TimestampTz, "DateTime", "System.DateTime", (EnumerableType type) => new DateTimeValueHelper(type, System.DateTimeKind.Utc));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Date, "DateOnly", "System.DateOnly", (EnumerableType type) => new DateOnlyValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Timestamp, "DateTime", "System.DateTime", type => new DateTimeValueHelper(type, System.DateTimeKind.Local));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.TimestampTz, "DateTime", "System.DateTime", type => new DateTimeValueHelper(type, System.DateTimeKind.Utc));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Date, "DateOnly", "System.DateOnly", type => new DateOnlyValueHelper(type));
 
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Text, "String", "System.String", (EnumerableType type) => new StringValueHelper(type), size: 400, mustHaveSize: true, isReferenceType: true);
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Text, "String", "System.String", type => new StringValueHelper(type), size: 400, mustHaveSize: true, isReferenceType: true);
 
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Inet, "IPAddress", "System.Net.IPAddress", (EnumerableType type) => new IPAddressValueHelper(type), isReferenceType: true);
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Uuid, "Guid", "System.Guid", (EnumerableType type) => new GuidValueHelper(type));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Line, "NpgsqlLine", "NpgsqlTypes.NpgsqlLine", (EnumerableType type) => new NpgsqlLineValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Inet, "IPAddress", "System.Net.IPAddress", type => new IPAddressValueHelper(type), isReferenceType: true);
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Uuid, "Guid", "System.Guid", type => new GuidValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Line, "NpgsqlLine", "NpgsqlTypes.NpgsqlLine", type => new NpgsqlLineValueHelper(type));
             if(false)
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Polygon, "NpgsqlPolygon", "NpgsqlTypes.NpgsqlPolygon", (EnumerableType type) => new NpgsqlPolygonValueHelper(type));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Point, "NpgsqlPoint", "NpgsqlTypes.NpgsqlPoint", (EnumerableType type) => new NpgsqlPointValueHelper(type));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Circle, "NpgsqlCircle", "NpgsqlTypes.NpgsqlCircle", (EnumerableType type) => new NpgsqlCircleValueHelper(type));
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Box, "NpgsqlBox", "NpgsqlTypes.NpgsqlBox", (EnumerableType type) => new NpgsqlBoxValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Polygon, "NpgsqlPolygon", "NpgsqlTypes.NpgsqlPolygon", type => new NpgsqlPolygonValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Point, "NpgsqlPoint", "NpgsqlTypes.NpgsqlPoint", type => new NpgsqlPointValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Circle, "NpgsqlCircle", "NpgsqlTypes.NpgsqlCircle", type => new NpgsqlCircleValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Box, "NpgsqlBox", "NpgsqlTypes.NpgsqlBox", type => new NpgsqlBoxValueHelper(type));
             if (false)
-            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Path, "NpgsqlPath", "NpgsqlTypes.NpgsqlPath", (EnumerableType type) => new NpgsqlPathValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Path, "NpgsqlPath", "NpgsqlTypes.NpgsqlPath", type => new NpgsqlPathValueHelper(type));
 
             //_models.Add(new Model.NpgsqlModel("bit varying", "BitArray", "System.Collections.BitArray", true));
             //_models.Add(new Model.NpgsqlModel("tsquery", "NpgsqlTsQuery", "NpgsqlTypes.NpgsqlTsQuery", true));

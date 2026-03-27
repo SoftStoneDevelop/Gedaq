@@ -13,20 +13,17 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var indexValue = 0;
             InsertModelInnerConfig(
                 stringBuilder, 
                 model,
-                interfaceTypeName
-                );
+                interfaceTypeName);
             InsertModelInnerReturningConfig(
                 stringBuilder, 
                 model,
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             InsertModelInnerTest(
                 order, 
@@ -35,8 +32,7 @@ namespace TestsGenerator.Generators.PostgreSQL
                 ref indexValue, 
                 indexValue + 4, 
                 isAsync: false,
-                interfaceTypeName
-                );
+                interfaceTypeName);
             InsertModelInnerTest(
                 order, 
                 stringBuilder, 
@@ -44,8 +40,7 @@ namespace TestsGenerator.Generators.PostgreSQL
                 ref indexValue, 
                 indexValue + 4, 
                 isAsync: true, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             InsertModelInnerReturningTest(
                 order, 
@@ -55,8 +50,8 @@ namespace TestsGenerator.Generators.PostgreSQL
                 ref indexValue, 
                 indexValue + 4, 
                 isAsync: false, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             var canDbConnection = model.TypeInfo.EnumerableType == EnumerableType.SingleType;
             int endIndex = !canDbConnection ? storage.Values.Count : indexValue + 4;
             InsertModelInnerReturningTest(
@@ -67,27 +62,26 @@ namespace TestsGenerator.Generators.PostgreSQL
                 ref indexValue, 
                 endIndex, 
                 isAsync: true, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             if (canDbConnection)
+            {
                 DbConnection.InsertModelInner.Generate(
-                    order, 
-                    stringBuilder, 
-                    model, 
-                    storage, 
-                    Database.PostgreSQL, 
-                    ref indexValue, 
+                    order,
+                    stringBuilder,
+                    model,
+                    storage,
+                    Database.PostgreSQL,
+                    ref indexValue,
                     interfaceTypeName,
-                    toEnd: true
-                    );
+                    toEnd: true);
+            }
         }
 
         private static void InsertModelInnerConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.Query(
@@ -110,26 +104,22 @@ VALUES (
             queryType: QueryType.NonQuery,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            ), 
+            asPartInterface: typeof({interfaceTypeName})),
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdType}),
                 position: 1,
                 methodParametrName: ""{model.ModelInner.IdColumnName}"", 
-                dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()}
-                ),
+                dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()}),
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.ValueType}),
                 position: 2,
                 methodParametrName: ""{model.ModelInner.ValueColumnName}"",
-                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
-                ),
+                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()}),
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.NullableValueType}), 
                 position: 3,
                 methodParametrName: ""{model.ModelInner.NullableValueColumnName}"",
-                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
-                )
+                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()})
             ]
         public void {_testName}Config()
         {{
@@ -144,13 +134,9 @@ VALUES (
             ref int indexValue,
             int endIndex,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
-            if (endIndex > storage.Values.Count)
-            {
-                throw new System.ArgumentOutOfRangeException(nameof(endIndex));
-            }
+            System.ArgumentOutOfRangeException.ThrowIfGreaterThan(endIndex, storage.Values.Count);
 
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -214,26 +200,22 @@ RETURNING
             queryType: QueryType.Scalar,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            ), 
+            asPartInterface: typeof({interfaceTypeName})),
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdType}), 
                 position: 1,
                 methodParametrName: ""{model.ModelInner.IdColumnName}"", 
-                dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()}
-                ),
+                dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()}),
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.ValueType}),
                 position: 2,
                 methodParametrName: ""{model.ModelInner.ValueColumnName}"",
-                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
-                ),
+                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()}),
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.NullableValueType}), 
                 position: 3, 
                 methodParametrName: ""{model.ModelInner.NullableValueColumnName}"", 
-                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
-                )
+                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()})
             ]
         public void {_testName}ReturningConfig()
         {{
@@ -249,13 +231,9 @@ RETURNING
             ref int indexValue,
             int endIndex,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
-            if (endIndex > storage.Values.Count)
-            {
-                throw new System.ArgumentOutOfRangeException(nameof(endIndex));
-            }
+            System.ArgumentOutOfRangeException.ThrowIfGreaterThan(endIndex, storage.Values.Count);
 
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;

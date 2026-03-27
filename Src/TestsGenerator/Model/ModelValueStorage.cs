@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.TypeInfos;
@@ -27,10 +26,10 @@ namespace TestsGenerator.Model
 
         private ValueHelper NullableValue { get; }
 
-        private List<ModelValue> _values = new();
+        private readonly List<ModelValue> _values = [];
         public ReadOnlyCollection<ModelValue> Values => _values.AsReadOnly();
 
-        private bool NextNull()
+        private static bool NextIsNull()
         {
             return Random.Shared.Next(2) == 1;
         }
@@ -42,8 +41,8 @@ namespace TestsGenerator.Model
             return _nextInnerNull;
         }
 
-        private HashSet<int> _modelIds = new();
-        private HashSet<int> _innerModelIds = new();
+        private readonly HashSet<int> _modelIds = [];
+        private readonly HashSet<int> _innerModelIds = [];
 
         private string GetNextModelId(out int idValue)
         {
@@ -83,7 +82,7 @@ namespace TestsGenerator.Model
                     Id = GetNextInnerModelId(out var idInnerValue),
                     IdValue = idInnerValue,
                     Value = NextValue(false),
-                    NullableValue = NextNull() ? ValueConstants.NullValue : NextValue(true)
+                    NullableValue = NextIsNull() ? ValueConstants.NullValue : NextValue(true)
                 };
             }
 
@@ -92,7 +91,7 @@ namespace TestsGenerator.Model
                 Id = GetNextModelId(out var idValue),
                 IdValue = idValue,
                 Value = NextValue(false),
-                NullableValue = NextNull() ? ValueConstants.NullValue : NextValue(true),
+                NullableValue = NextIsNull() ? ValueConstants.NullValue : NextValue(true),
 
                 InnerModel = newInnerValue
             };

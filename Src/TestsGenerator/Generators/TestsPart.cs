@@ -9,7 +9,7 @@ namespace TestsGenerator.Generators
 {
     internal class TestsPart
     {
-        private readonly StringBuilderArray.StringBuilderArray _stringBuilder = new StringBuilderArray.StringBuilderArray();
+        private readonly StringBuilderArray.StringBuilderArray _stringBuilder = new();
 
         public async Task Generate(Model.ModelType model, Database database, string destinationFolder)
         {
@@ -19,6 +19,12 @@ namespace TestsGenerator.Generators
             var interfaceTypeName = InterfaceName(model);
             Start(model, database);
 
+            StartRegion("TestData");
+
+
+
+            EndRegion();
+
             StartRegion("InsertModelInner");
             InsertModelInnerTest.Generate(
                 0, 
@@ -26,8 +32,7 @@ namespace TestsGenerator.Generators
                 model, 
                 storage, 
                 database, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
             EndRegion();
 
             StartRegion("InsertModel");
@@ -37,8 +42,7 @@ namespace TestsGenerator.Generators
                 model, 
                 storage, 
                 database, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
             EndRegion();
 
             StartRegion("Select Models");
@@ -48,16 +52,14 @@ namespace TestsGenerator.Generators
                 model, 
                 storage, 
                 database, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
             EndRegion();
 
             SpecialDatabaseTests(
                 model, 
                 database, 
                 storage,
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             End();
 
@@ -81,8 +83,7 @@ namespace TestsGenerator.Generators
                         _stringBuilder, 
                         model, 
                         storage,
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
                     EndRegion();
 
                     StartRegion("BinaryImportModel");
@@ -91,8 +92,7 @@ namespace TestsGenerator.Generators
                         _stringBuilder, 
                         model, 
                         storage,
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
                     EndRegion();
 
                     StartRegion("BinaryExportModel");
@@ -101,8 +101,7 @@ namespace TestsGenerator.Generators
                         _stringBuilder, 
                         model, 
                         storage,
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
                     EndRegion();
 
                     StartRegion("BinaryExportModelInner");
@@ -111,8 +110,7 @@ namespace TestsGenerator.Generators
                         _stringBuilder, 
                         model, 
                         storage,
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
                     EndRegion();
                     break;
                 }
@@ -133,7 +131,10 @@ namespace TestsGenerator.Generators
 ");
         }
 
-        private ModelValueStorage InitStorage(Model.ModelType model, int valuesCount)
+        /// <summary>
+        /// Create values for test cases
+        /// </summary>
+        private static ModelValueStorage InitStorage(Model.ModelType model, int valuesCount)
         {
             var storage = model.NewStorage();
             for (int i = 0; i < valuesCount; i++)
