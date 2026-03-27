@@ -10,8 +10,7 @@ namespace TestsGenerator.Model
         public ModelType(
             TypeInfo idTypeInfo,
             TypeInfo typeInfo,
-            Func<ValueHelper> valueStorageFactory
-            ) 
+            Func<ValueHelper> valueStorageFactory)
             : base(idTypeInfo, typeInfo, valueStorageFactory())
         {
             ModelInner = new ModelInnerType(idTypeInfo, typeInfo, valueStorageFactory());
@@ -34,6 +33,7 @@ namespace TestsGenerator.Model
             return new ModelValueStorage(TypeInfo, ValueStorage);
         }
 
+        [Obsolete]
         public string Assert(string modelVariable, ModelValue expectValue, bool innerHaveOnlyId = false)
         {
             if (TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)
@@ -46,6 +46,7 @@ namespace TestsGenerator.Model
             }
         }
 
+        [Obsolete]
         private string AssertSingle(string modelVariable, ModelValue expectValue, bool innerHaveOnlyId)
         {
             var builder = new StringBuilderArray.StringBuilderArray();
@@ -110,6 +111,7 @@ namespace TestsGenerator.Model
             return builder.ToString();
         }
 
+        [Obsolete]
         public string AssertEnumerable(string modelVariable, ModelValue expectValue, bool innerHaveOnlyId)
         {
             var builder = new StringBuilderArray.StringBuilderArray();
@@ -210,6 +212,7 @@ namespace TestsGenerator.Model
             return builder.ToString();
         }
 
+        [Obsolete]
         public string Assert(string modelVariable, string expectVariable, bool innerHaveOnlyId = false)
         {
             if (TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)
@@ -222,6 +225,7 @@ namespace TestsGenerator.Model
             }
         }
 
+        [Obsolete]
         private string AssertSingle(string modelVariable, string expectVariable, bool innerHaveOnlyId)
         {
             var builder = new StringBuilderArray.StringBuilderArray();
@@ -277,6 +281,7 @@ namespace TestsGenerator.Model
             return builder.ToString();
         }
 
+        [Obsolete]
         private string AssertEnumerable(string modelVariable, string expectVariable, bool innerHaveOnlyId)
         {
             var builder = new StringBuilderArray.StringBuilderArray();

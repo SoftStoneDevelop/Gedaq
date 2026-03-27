@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using TestsGenerator.Enums;
 using TestsGenerator.Generators.PostgreSQL;
@@ -151,9 +152,10 @@ namespace TestsGenerator.Generators
         private readonly {model.ClassName}[] {TestDataArrayName} = new {model.ClassName}[]
         {{");
 
-            for (int i = 0; i < dataStorage.Values.Count; i++)
+            var orderedValues = dataStorage.Values.OrderBy(or => or.IdValue).ToArray();
+            for (int i = 0; i < orderedValues.Length; i++)
             {
-                ModelValue value = dataStorage.Values[i];
+                ModelValue value = orderedValues[i];
                 _stringBuilder.Append($@"
             {ModelGenerator.CreateNewModelInstance(model, value)},");
             }

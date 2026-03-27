@@ -101,8 +101,7 @@ Gedaq.Npgsql.Attributes.Parametr(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -116,26 +115,10 @@ Gedaq.Npgsql.Attributes.Parametr(
                 await connection.OpenAsync();
                 var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, 0);
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
-");
-            for (int i = 0; i < orderedValues.Count; i++)
-            {
-                ModelValue value = orderedValues[i];
-                if (i == 0)
-                {
-                    stringBuilder.Append($@"
-                var model = models[{i}];
-");
-                }
-                else
-                {
-                    stringBuilder.Append($@"
-                model = models[{i}];
-");
-                }
-
-                stringBuilder.Append(model.Assert("model", value));
-            }
-            stringBuilder.Append($@"
+                for (int i = 0; i < {orderedValues.Count}; i++)
+                {{
+                    {model.ClassName}.{ModelGenerator.AssertMethodName}(models[i],{TestsPart.TestDataArrayName}[i], false);
+                }}
             }}
         }}
 ");

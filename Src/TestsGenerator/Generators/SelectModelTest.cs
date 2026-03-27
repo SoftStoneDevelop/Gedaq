@@ -1,5 +1,4 @@
-﻿using System.Text;
-using TestsGenerator.Enums;
+﻿using TestsGenerator.Enums;
 using TestsGenerator.Model;
 
 namespace TestsGenerator.Generators
@@ -12,8 +11,7 @@ namespace TestsGenerator.Generators
             Model.ModelType model,
             ModelValueStorage storage,
             Database database,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {           
             switch (database)
             {
@@ -24,10 +22,11 @@ namespace TestsGenerator.Generators
                         stringBuilder, 
                         model, 
                         storage, 
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
+
                     break;
                 }
+
                 case Database.MsSQL:
                 {
                     MsSQL.SelectModelTest.Generate(
@@ -35,10 +34,11 @@ namespace TestsGenerator.Generators
                         stringBuilder, 
                         model, 
                         storage, 
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
+
                     break;
                 }
+
                 case Database.MySQL:
                 {
                     MySQL.SelectModelTest.Generate(
@@ -46,8 +46,8 @@ namespace TestsGenerator.Generators
                         stringBuilder, 
                         model, 
                         storage, 
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
+
                     break;
                 }
             }

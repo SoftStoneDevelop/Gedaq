@@ -25,8 +25,9 @@ namespace TestsGenerator.Generators.PostgreSQL
 
             InsertModelTest(
                 order, 
-                stringBuilder, 
-                storage, 
+                stringBuilder,
+                storage,
+                model,
                 ref indexValue, 
                 indexValue + 2, 
                 isAsync: false,
@@ -35,7 +36,8 @@ namespace TestsGenerator.Generators.PostgreSQL
             InsertModelTest(
                 order, 
                 stringBuilder, 
-                storage, 
+                storage,
+                model,
                 ref indexValue, 
                 indexValue + 2,
                 isAsync: true, 
@@ -165,11 +167,11 @@ VALUES (
             int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             ModelValueStorage storage,
+            Model.ModelType model,
             ref int indexValue,
             int endIndex,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             System.ArgumentOutOfRangeException.ThrowIfGreaterThan(endIndex, storage.Values.Count);
 
@@ -186,9 +188,8 @@ VALUES (
 ");
             for (; indexValue < endIndex; indexValue++)
             {
-                ModelValue value = storage.Values[indexValue];
                 stringBuilder.Append($@"
-                changedRows = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? ValueConstants.NullValue : value.InnerModel.IdValue)});
+                changedRows = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, {TestsPart.TestDataArrayName}[{indexValue}].{model.IdName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.NullableValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName} == null ? {ValueConstants.NullValue} : {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName});
                 Assert.That(changedRows, Is.EqualTo(1));
 ");
             }
@@ -201,8 +202,7 @@ VALUES (
         private static void InsertModelReturningConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.Query(
@@ -273,10 +273,7 @@ RETURNING
             bool isAsync,
             string interfaceTypeName)
         {
-            if (endIndex > storage.Values.Count)
-            {
-                throw new System.ArgumentOutOfRangeException(nameof(endIndex));
-            }
+            System.ArgumentOutOfRangeException.ThrowIfGreaterThan(endIndex, storage.Values.Count);
 
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -294,7 +291,7 @@ RETURNING
             {
                 ModelValue value = storage.Values[indexValue];
                 stringBuilder.Append($@"
-                models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Returning{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? ValueConstants.NullValue : value.InnerModel.IdValue)});
+                models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Returning{async}(connection, {TestsPart.TestDataArrayName}[{indexValue}].{model.IdName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.NullableValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName} == null ? {ValueConstants.NullValue} : {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName});
                 Assert.That(models, Has.Count.EqualTo(1));
                 model = models[0];
 ");
@@ -314,13 +311,9 @@ RETURNING
             ref int indexValue,
             int endIndex,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
-            if (endIndex > storage.Values.Count)
-            {
-                throw new System.ArgumentOutOfRangeException(nameof(endIndex));
-            }
+            System.ArgumentOutOfRangeException.ThrowIfGreaterThan(endIndex, storage.Values.Count);
 
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -355,7 +348,7 @@ RETURNING
             {
                 ModelValue value = storage.Values[indexValue];
                 stringBuilder.Append($@"
-                nullable = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.Scalar{_testName}Returning{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? ValueConstants.NullValue : value.InnerModel.IdValue)});
+                nullable = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.Scalar{_testName}Returning{async}(connection, {TestsPart.TestDataArrayName}[{indexValue}].{model.IdName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.NullableValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName} == null ? {ValueConstants.NullValue} : {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName});
 ");
                 if(value.NullableValue == ValueConstants.NullValue)
                 {
