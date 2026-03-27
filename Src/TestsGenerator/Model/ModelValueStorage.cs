@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.TypeInfos;
@@ -26,7 +27,8 @@ namespace TestsGenerator.Model
 
         private ValueHelper NullableValue { get; }
 
-        private readonly List<ModelValue> _values = [];
+        private bool _inWriteMode = false;
+        private List<ModelValue> _values = [];
         public ReadOnlyCollection<ModelValue> Values => _values.AsReadOnly();
 
         private static bool NextIsNull()
@@ -68,8 +70,24 @@ namespace TestsGenerator.Model
             }
         }
 
+        public void StartInit()
+        {
+            _inWriteMode = true;
+        }
+
+        public void EndInit()
+        {
+            _values = [.. _values.OrderBy(o => o.IdValue)];
+            _inWriteMode = false;
+        }
+
         public ModelValue AddNewValue()
         {
+            if (!_inWriteMode)
+            {
+                throw new Exception("Storage in Read mode");
+            }
+
             InnerModelValue newInnerValue;
             if(NextInnerNull())
             {

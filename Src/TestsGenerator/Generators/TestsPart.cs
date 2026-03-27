@@ -71,8 +71,7 @@ namespace TestsGenerator.Generators
             Model.ModelType model, 
             Database database, 
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             switch (database)
             {
@@ -138,10 +137,12 @@ namespace TestsGenerator.Generators
         private static ModelValueStorage InitStorage(Model.ModelType model, int valuesCount)
         {
             var storage = model.NewStorage();
+            storage.StartInit();
             for (int i = 0; i < valuesCount; i++)
             {
                 storage.AddNewValue();
             }
+            storage.EndInit();
 
             return storage;
         }
