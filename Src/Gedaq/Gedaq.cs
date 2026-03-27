@@ -33,7 +33,8 @@ namespace Gedaq
                 .Combine(context.CompilationProvider)
                 .WithComparer(ByArrayComparer.Default);
 
-            context.RegisterSourceOutput(compilationAndClasses,
+            context.RegisterSourceOutput(
+                compilationAndClasses,
                 (spc, source) => Execute(source.Item2, source.Item1, spc));
         }
 
@@ -55,7 +56,7 @@ namespace Gedaq
             return typeDeclaration;
         }
 
-        static TypeDeclarationSyntax GetSemanticFromMethod(GeneratorSyntaxContext context)
+        private static TypeDeclarationSyntax GetSemanticFromMethod(GeneratorSyntaxContext context)
         {
             if (!(context.Node is MethodDeclarationSyntax methodDeclarationSyntax))
             {

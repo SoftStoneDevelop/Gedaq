@@ -238,7 +238,7 @@ namespace Gedaq.MySqlConnector
         public override void GenerateAndSaveMethods()
         {
             var interfaceGenerator = new InterfaceGenerator();
-            var readGenerator = new MySqlConnectorQueryGenerator();
+            var readGenerator = new MySqlConnectorQueryGenerator(_context);
             foreach (var queryRead in _read)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();
@@ -253,7 +253,7 @@ namespace Gedaq.MySqlConnector
             }
             _read.Clear();
 
-            var batchReadGenerator = new MySqlConnectorQueryBatchGenerator();
+            var batchReadGenerator = new MySqlConnectorQueryBatchGenerator(_context);
             foreach (var batchRead in _readBatch)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();

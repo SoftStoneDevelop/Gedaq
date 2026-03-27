@@ -2,6 +2,7 @@
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
+using Microsoft.CodeAnalysis;
 
 namespace Gedaq.DbConnection.GeneratorsBatch
 {
@@ -11,7 +12,8 @@ namespace Gedaq.DbConnection.GeneratorsBatch
         private readonly DbQueryBatchRead _batchRead;
         private readonly DbQueryBatchScalarNoQuery _batchScalarNoQuery;
 
-        public DbQueryBatchGenerator()
+        public DbQueryBatchGenerator(SourceProductionContext context)
+            : base (context)
         {
             _batchCommand = new DbBatchCommand();
             _batchRead = new DbQueryBatchRead(_batchCommand);
@@ -38,7 +40,7 @@ namespace Gedaq.DbConnection.GeneratorsBatch
                 _batchScalarNoQuery.GenerateNonQuery(source, _methodCode, interfaceGenerator);
             }
 
-            _batchCommand.Generate(source, _methodCode, interfaceGenerator);
+            _batchCommand.Generate(source, _methodCode, interfaceGenerator, _context);
 
             EndClass();
             EndNameSpace();

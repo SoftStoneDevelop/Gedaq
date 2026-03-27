@@ -2,6 +2,7 @@
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.MySqlConnector.Model;
+using Microsoft.CodeAnalysis;
 
 namespace Gedaq.MySqlConnector.GeneratorsQuery
 {
@@ -11,7 +12,8 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
         private readonly MySqlConnectorQueryRead _queryReadGenerator;
         private readonly MySqlConnectorQueryScalarAndNonQuery _queryScalarAndNonQuery;
 
-        public MySqlConnectorQueryGenerator()
+        public MySqlConnectorQueryGenerator(SourceProductionContext context)
+            : base(context)
         {
             _commandGenerator = new MySqlConnectorCommand();
             _queryReadGenerator = new MySqlConnectorQueryRead(_commandGenerator);

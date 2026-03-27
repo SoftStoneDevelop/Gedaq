@@ -262,7 +262,7 @@ namespace Gedaq.Npgsql
 
         public override void GenerateAndSaveMethods()
         {
-            var readGenerator = new DbQueryGenerator();
+            var readGenerator = new DbQueryGenerator(_context);
             var interfaceGenerator = new InterfaceGenerator();
             foreach (var queryRead in _read)
             {
@@ -279,7 +279,7 @@ namespace Gedaq.Npgsql
             }
             _read.Clear();
 
-            var batchReadGenerator = new DbQueryBatchGenerator();
+            var batchReadGenerator = new DbQueryBatchGenerator(_context);
             foreach (var batchRead in _readBatch)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();

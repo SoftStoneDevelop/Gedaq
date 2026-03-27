@@ -2,6 +2,8 @@
 using Gedaq.DbConnection.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
+using Microsoft.CodeAnalysis;
+using System;
 
 namespace Gedaq.DbConnection.GeneratorsQuery
 {
@@ -11,7 +13,8 @@ namespace Gedaq.DbConnection.GeneratorsQuery
         private readonly DbQueryRead _queryReadGenerator;
         private readonly DbQueryScalarAndNonQuery _queryScalarAndNonQuery;
 
-        public DbQueryGenerator() 
+        public DbQueryGenerator(SourceProductionContext context)
+            : base(context)
         {
             _commandGenerator = new DbCommandGenerator();
             _queryReadGenerator = new DbQueryRead(_commandGenerator);

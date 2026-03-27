@@ -13,5 +13,6 @@ namespace Gedaq.Constants
         public const string IncorrectAttributeParametr = "GDC0002";
         public const string BatchMustContainParts = "GDC0003";
         public const string BatchNumberUnique = "GDC0004";
+        public const string NotAllowedOutParametr = "GDC0005";
     }
 }

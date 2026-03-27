@@ -16,7 +16,14 @@ namespace Gedaq.Npgsql.Generators
 {
     internal class BinaryImportGenerator : BaseGenerator
     {
-        public void Generate(BinaryImport binaryImport, InterfaceGenerator interfaceGenerator)
+        public BinaryImportGenerator(SourceProductionContext context)
+            : base(context)
+        {
+        }
+
+        public void Generate(
+            BinaryImport binaryImport,
+            InterfaceGenerator interfaceGenerator)
         {
             Reset();
             Start(binaryImport);

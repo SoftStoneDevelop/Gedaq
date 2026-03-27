@@ -16,11 +16,12 @@ namespace Gedaq.Base.Batch
         public void Generate(
             QueryBatchCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator)
+            InterfaceGenerator interfaceGenerator,
+            SourceProductionContext context)
         {
             CreateBatchItems(source, builder);
             CreateBatchMethods(source, builder, interfaceGenerator);
-            ExecuteBatchMethods(source, builder, interfaceGenerator);
+            ExecuteBatchMethods(source, builder, interfaceGenerator, context);
         }
 
         private void CreateBatchItems(
@@ -78,11 +79,12 @@ namespace Gedaq.Base.Batch
         protected void ExecuteBatchMethods(
             QueryBatchCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator)
+            InterfaceGenerator interfaceGenerator,
+            SourceProductionContext context)
         {
             if (source.QueryType.HasFlag(QueryType.Read))
             {
-                BatchCommonBase.ThrowExceptionIfOutCannotExist(source);
+                BatchCommonBase.CheckOutCannotExist(source, context);
                 if (source.MethodType.HasFlag(MethodType.Sync))
                 {
                     ExecuteBatchInner(
@@ -118,7 +120,7 @@ namespace Gedaq.Base.Batch
 
                 if (source.MethodType.HasFlag(MethodType.Async))
                 {
-                    BatchCommonBase.ThrowExceptionIfOutCannotExist(source);
+                    BatchCommonBase.CheckOutCannotExist(source, context);
                     ExecuteScalarBatchInner(
                         source,
                         MethodType.Async,

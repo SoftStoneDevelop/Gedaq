@@ -2,6 +2,8 @@
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.MySqlConnector.Model;
+using Microsoft.CodeAnalysis;
+using System;
 
 namespace Gedaq.MySqlConnector.GeneratorsBatch
 {
@@ -11,7 +13,8 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
         private readonly MySqlConnectorQueryBatchRead _batchRead;
         private readonly MySqlConnectorQueryBatchScalarNoQuery _batchScalarNoQuery;
 
-        public MySqlConnectorQueryBatchGenerator()
+        public MySqlConnectorQueryBatchGenerator(SourceProductionContext context)
+            : base(context)
         {
             _batchCommand = new MySqlConnectorBatchCommand();
             _batchRead = new MySqlConnectorQueryBatchRead(_batchCommand);
@@ -39,7 +42,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                 _batchScalarNoQuery.GenerateNonQuery(source, _methodCode, interfaceGenerator);
             }
 
-            _batchCommand.Generate(source, _methodCode, interfaceGenerator);
+            _batchCommand.Generate(source, _methodCode, interfaceGenerator, _context);
 
             EndClass();
             EndNameSpace();

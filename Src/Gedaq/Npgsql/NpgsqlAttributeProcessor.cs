@@ -315,7 +315,7 @@ namespace Gedaq.Npgsql
         public override void GenerateAndSaveMethods()
         {
             var interfaceGenerator = new InterfaceGenerator();
-            var readGenerator = new NpgsqlQueryGenerator();
+            var readGenerator = new NpgsqlQueryGenerator(_context);
             foreach (var queryRead in _read)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();
@@ -330,7 +330,7 @@ namespace Gedaq.Npgsql
             }
             _read.Clear();
 
-            var batchReadGenerator = new NpgsqlQueryBatchGenerator();
+            var batchReadGenerator = new NpgsqlQueryBatchGenerator(_context);
             foreach (var batchRead in _readBatch)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();
@@ -345,7 +345,7 @@ namespace Gedaq.Npgsql
             }
             _readBatch.Clear();
 
-            var binaryExportGenerator = new BinaryExportGenerator();
+            var binaryExportGenerator = new BinaryExportGenerator(_context);
             foreach (var binaryExport in _binaryExports)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();
@@ -360,7 +360,7 @@ namespace Gedaq.Npgsql
             }
             _binaryExports.Clear();
 
-            var binaryImportGenerator = new BinaryImportGenerator();
+            var binaryImportGenerator = new BinaryImportGenerator(_context);
             foreach (var binaryImport in _binaryImports)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();

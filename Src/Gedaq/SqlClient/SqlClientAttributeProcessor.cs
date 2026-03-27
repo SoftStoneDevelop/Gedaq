@@ -121,7 +121,7 @@ namespace Gedaq.SqlClient
 
         public override void GenerateAndSaveMethods()
         {
-            var readGenerator = new SqlClientQueryGenerator();
+            var readGenerator = new SqlClientQueryGenerator(_context);
             var interfaceGenerator = new InterfaceGenerator();
             foreach (var queryRead in _read)
             {
