@@ -9,6 +9,8 @@ namespace TestsGenerator.Generators
 {
     internal class TestsPart
     {
+        public const string TestDataArrayName = "_testData";
+
         private readonly StringBuilderArray.StringBuilderArray _stringBuilder = new();
 
         public async Task Generate(Model.ModelType model, Database database, string destinationFolder)
@@ -20,9 +22,7 @@ namespace TestsGenerator.Generators
             Start(model, database);
 
             StartRegion("TestData");
-
-
-
+            WriteTestDataArray(model, storage);
             EndRegion();
 
             StartRegion("InsertModelInner");
@@ -127,7 +127,7 @@ namespace TestsGenerator.Generators
         private void EndRegion()
         {
             _stringBuilder.Append($@"
-        #endregion
+#endregion
 ");
         }
 
@@ -143,6 +143,24 @@ namespace TestsGenerator.Generators
             }
 
             return storage;
+        }
+
+        private void WriteTestDataArray(Model.ModelType model, ModelValueStorage dataStorage)
+        {
+            _stringBuilder.Append($@"
+        private readonly {model.ClassName}[] {TestDataArrayName} = new {model.ClassName}[]
+        {{");
+
+            for (int i = 0; i < dataStorage.Values.Count; i++)
+            {
+                ModelValue value = dataStorage.Values[i];
+                _stringBuilder.Append($@"
+            {ModelGenerator.CreateNewModelInstance(model, value)},");
+            }
+
+            _stringBuilder.Append($@"
+        }};
+");
         }
 
         public static string ClassName(Model.ModelType model)

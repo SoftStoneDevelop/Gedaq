@@ -15,32 +15,30 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var orderedValues = storage.Values.OrderBy(or => or.IdValue).ToList();
 
             SelectTestConfig(
                 model, 
                 stringBuilder,
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             SelectTest(
                 order, 
                 orderedValues, 
                 model, 
                 stringBuilder, 
                 false, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             SelectTest(
                 order, 
                 orderedValues, 
                 model, 
                 stringBuilder, 
                 true, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             DbConnection.SelectModel.Generate(
                 order, 
@@ -48,15 +46,13 @@ namespace TestsGenerator.Generators.PostgreSQL
                 model, 
                 orderedValues, 
                 Database.PostgreSQL, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
         }
 
         private static void SelectTestConfig(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var query = $@"
 @""
@@ -87,15 +83,12 @@ ORDER BY
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            ),
+            asPartInterface: typeof({interfaceTypeName})),
 Gedaq.Npgsql.Attributes.Parametr(
             parametrType: typeof({model.IdType}),
             position: 1,
             methodParametrName: ""{model.IdColumnName}"",
-            dbType: {model.IdTypeInfo.SpecialDbTypeStr()}
-                )
-            ]
+            dbType: {model.IdTypeInfo.SpecialDbTypeStr()})]
         private void {_testName}Config()
         {{
         }}

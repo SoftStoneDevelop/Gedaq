@@ -109,6 +109,7 @@ namespace TestsGenerator.Model
                 {
                     return Value.NewSingleValue();
                 }
+
                 case EnumerableType.Array:
                 {
                     var count = Random.Shared.Next(3, 5);
@@ -119,13 +120,14 @@ new {_typeInfo.ItemTypeFullName}[{count}]
                     for (int i = 0; i < count; i++)
                     {
                         builder.Append($@"
-{(nullable? NullableValue.NewSingleValue() : Value.NewSingleValue())},
-");
+{(nullable? NullableValue.NewSingleValue() : Value.NewSingleValue())},");
                     }
+
                     builder.Append($@"
 }}");
                     return builder.ToString();
                 }
+
                 case EnumerableType.List:
                 {
                     var count = Random.Shared.Next(3, 5);

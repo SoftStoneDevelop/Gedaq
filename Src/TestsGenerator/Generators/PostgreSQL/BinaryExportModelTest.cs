@@ -16,20 +16,17 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             ExportModelConfig(
                 stringBuilder, 
                 model,
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             var ordered = 
                 storage.Values
                 .OrderBy(or => or.IdValue)
-                .ToList()
-                ;
+                .ToList();
 
             ExportModelTest(
                 order, 
@@ -37,23 +34,21 @@ namespace TestsGenerator.Generators.PostgreSQL
                 stringBuilder, 
                 ordered, 
                 false,
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             ExportModelTest(
                 order, 
                 model, 
                 stringBuilder, 
                 ordered, 
                 true,
-                interfaceTypeName
-                );
+                interfaceTypeName);
         }
 
         private static void ExportModelConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.BinaryExport(
@@ -82,9 +77,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            )
-            ]
+            asPartInterface: typeof({interfaceTypeName}))]
         private void {_testName}Config()
         {{
         }}

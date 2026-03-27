@@ -28,7 +28,8 @@ namespace TestsGenerator.Generators.PostgreSQL
             InsertModelInnerTest(
                 order, 
                 stringBuilder, 
-                storage, 
+                storage,
+                model,
                 ref indexValue, 
                 indexValue + 4, 
                 isAsync: false,
@@ -36,7 +37,8 @@ namespace TestsGenerator.Generators.PostgreSQL
             InsertModelInnerTest(
                 order, 
                 stringBuilder, 
-                storage, 
+                storage,
+                model,
                 ref indexValue, 
                 indexValue + 4, 
                 isAsync: true, 
@@ -119,8 +121,7 @@ VALUES (
                 parametrType: typeof({model.ModelInner.NullableValueType}), 
                 position: 3,
                 methodParametrName: ""{model.ModelInner.NullableValueColumnName}"",
-                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()})
-            ]
+                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()})]
         public void {_testName}Config()
         {{
         }}
@@ -131,6 +132,7 @@ VALUES (
             int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             ModelValueStorage storage,
+            Model.ModelType model,
             ref int indexValue,
             int endIndex,
             bool isAsync,
@@ -158,7 +160,7 @@ VALUES (
                 }
 
                 stringBuilder.Append($@"
-                changedRows = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
+                changedRows = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.ValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.NullableValueName});
                 Assert.That(changedRows, Is.EqualTo(1));
 ");
             }
@@ -171,8 +173,7 @@ VALUES (
         private static void InsertModelInnerReturningConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.Query(
@@ -215,8 +216,7 @@ RETURNING
                 parametrType: typeof({model.ModelInner.NullableValueType}), 
                 position: 3, 
                 methodParametrName: ""{model.ModelInner.NullableValueColumnName}"", 
-                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()})
-            ]
+                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()})]
         public void {_testName}ReturningConfig()
         {{
         }}
@@ -255,8 +255,8 @@ RETURNING
                 }
 
                 stringBuilder.Append($@"
-                id = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Returning{async}(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
-                Assert.That(id, Is.EqualTo({value.InnerModel.Id}));
+                id = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Returning{async}(connection, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.ValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.NullableValueName});
+                Assert.That(id, Is.EqualTo({TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName}));
 ");
             }
             stringBuilder.Append($@"

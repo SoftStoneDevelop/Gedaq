@@ -16,19 +16,17 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             ImportModelConfig(
                 stringBuilder, 
                 model,
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             SelectImportModelConfig(
                 model, 
                 stringBuilder,
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             var ordered = storage.Values.OrderBy(or => or.IdValue).ToList();
             ImportModelTest(
@@ -36,15 +34,13 @@ namespace TestsGenerator.Generators.PostgreSQL
                 model, 
                 stringBuilder, 
                 ordered,
-                interfaceTypeName
-                );
+                interfaceTypeName);
         }
 
         private static void ImportModelConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.BinaryImport(
@@ -74,9 +70,7 @@ FROM STDIN (FORMAT BINARY)
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            )
-            ]
+            asPartInterface: typeof({interfaceTypeName}))]
         private void {_testName}Config()
         {{
         }}
@@ -116,9 +110,7 @@ ORDER BY
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            )
-            ]
+            asPartInterface: typeof({interfaceTypeName}))]
         private void Select{_testName}Config()
         {{
         }}

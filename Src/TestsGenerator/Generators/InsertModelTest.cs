@@ -11,8 +11,7 @@ namespace TestsGenerator.Generators
             Model.ModelType model,
             ModelValueStorage storage,
             Database database,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             switch (database)
             {
@@ -23,10 +22,11 @@ namespace TestsGenerator.Generators
                         stringBuilder, 
                         model, 
                         storage,
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
+
                     break;
                 }
+
                 case Database.MsSQL:
                 {
                     MsSQL.InsertModel.Generate(
@@ -34,10 +34,11 @@ namespace TestsGenerator.Generators
                         stringBuilder, 
                         model, 
                         storage,
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
+
                     break;
                 }
+
                 case Database.MySQL:
                 {
                     MySQL.InsertModel.Generate(
@@ -45,8 +46,8 @@ namespace TestsGenerator.Generators
                         stringBuilder, 
                         model, 
                         storage,
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
+
                     break;
                 }
             }

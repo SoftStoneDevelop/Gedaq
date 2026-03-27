@@ -15,22 +15,19 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             ExportModelInnerConfig(
                 stringBuilder, 
                 model,
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             var ordered = 
                 storage.Values
                 .Where(wh => wh.InnerModel != null)
                 .Select(sel => sel.InnerModel)
                 .OrderBy(or => or.IdValue)
-                .ToList()
-                ;
+                .ToList();
 
             ExportModelInnerTest(
                 order, 
@@ -38,23 +35,21 @@ namespace TestsGenerator.Generators.PostgreSQL
                 stringBuilder, 
                 ordered, 
                 false,
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             ExportModelInnerTest(
                 order, 
                 model, 
                 stringBuilder, 
                 ordered, 
                 true, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
         }
 
         private static void ExportModelInnerConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.BinaryExport(
@@ -78,9 +73,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            )
-            ]
+            asPartInterface: typeof({interfaceTypeName}))]
         private void {_testName}Config()
         {{
         }}

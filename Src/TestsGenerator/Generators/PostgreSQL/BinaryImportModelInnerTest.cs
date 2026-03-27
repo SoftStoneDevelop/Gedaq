@@ -15,41 +15,37 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             ImportModelInnerConfig(
                 stringBuilder, 
                 model,
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             SelectImportModelInnerConfig(
                 model, 
                 stringBuilder,
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             var ordered = 
                 storage.Values
                 .Where(wh => wh.InnerModel != null)
                 .Select(sel => sel.InnerModel)
                 .OrderBy(or => or.IdValue)
-                .ToList()
-                ;
+                .ToList();
+
             ImportModelInnerTest(
                 order, 
                 model, 
                 stringBuilder, 
                 ordered,
-                interfaceTypeName
-                );
+                interfaceTypeName);
         }
 
         private static void ImportModelInnerConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.BinaryImport(
@@ -74,9 +70,7 @@ FROM STDIN (FORMAT BINARY)
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            )
-            ]
+            asPartInterface: typeof({interfaceTypeName}))]
         private void {_testName}Config()
         {{
         }}
@@ -110,9 +104,7 @@ ORDER BY
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            )
-            ]
+            asPartInterface: typeof({interfaceTypeName}))]
         private void Select{_testName}Config()
         {{
         }}
@@ -124,8 +116,7 @@ ORDER BY
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             List<InnerModelValue> storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             if (storage.Count < 4)
             {
