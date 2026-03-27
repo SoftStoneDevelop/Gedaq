@@ -285,12 +285,11 @@ RETURNING
             {{
                 await connection.OpenAsync();
                 List<{model.ClassName}> models = null;
-                {model.ClassName} model = null;
 ");
             for (; indexValue < endIndex; indexValue++)
             {
-                ModelValue value = storage.Values[indexValue];
                 stringBuilder.Append($@"
+                models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Returning{async}(connection, {TestsPart.TestDataArrayName}[{indexValue}].{model.IdName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.NullableValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName} == null ? {ValueConstants.NullValue} : {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName});
                 Assert.That(models, Has.Count.EqualTo(1));
                 {model.ClassName}.{ModelGenerator.AssertMethodName}(models[0],{TestsPart.TestDataArrayName}[{indexValue}], true);");
             }
