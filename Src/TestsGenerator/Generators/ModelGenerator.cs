@@ -205,6 +205,9 @@ namespace Tests
         {
             _stringBuilder.Clear();
             _stringBuilder.Append($@"
+using NUnit.Framework;
+using System.Linq;
+
 namespace Tests
 {{
     public class {model.ClassName}
@@ -214,12 +217,88 @@ namespace Tests
         public {model.ValueType} {model.ValueName} {{ get; set; }}
 
         public {model.NullableValueType} {model.NullableValueName} {{ get; set; }}
+
+        public static void {AssertMethodName}({model.ClassName} actual, {model.ClassName} expect, bool checkInInnerOnlyId)
+        {{");
+
+            if (model.TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)
+            {
+                AssertInnerSingle("actual", "expect", model);
+            }
+            else
+            {
+                AssertInnerEnumerable("actual", "expect", model);
+            }
+
+            _stringBuilder.Append($@"
+        }}
     }}
 }}
 
 ");
             await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName}.cs", _stringBuilder.ToString());
             _stringBuilder.Clear();
+        }
+
+        private void AssertInnerSingle(
+            string modelVariable,
+            string expectVariable,
+            Model.ModelInnerType model)
+        {
+            _stringBuilder.Append($@"
+                Assert.That({modelVariable}, Is.Not.Null);
+                Assert.That({modelVariable}.{model.IdName}, Is.EqualTo({expectVariable}.{model.IdName}));
+                Assert.That({modelVariable}.{model.ValueName}, Is.EqualTo({expectVariable}.{model.ValueName}));
+                if ({expectVariable}.{model.NullableValueName} == null)
+                {{
+                    Assert.That({modelVariable}.{model.NullableValueName}, Is.Null);
+                }}
+                else
+                {{
+                    Assert.That({modelVariable}.{model.NullableValueName}, Is.Not.Null);
+                    Assert.That({modelVariable}.{model.NullableValueName}, Is.EqualTo({expectVariable}.{model.NullableValueName}));
+                }}
+");
+        }
+
+        private void AssertInnerEnumerable(
+            string modelVariable,
+            string expectVariable,
+            Model.ModelInnerType model)
+        {
+            _stringBuilder.Append($@"
+                Assert.That({modelVariable}, Is.Not.Null);
+                Assert.That({modelVariable}.{model.IdName}, Is.EqualTo({expectVariable}.{model.IdName}));
+                {{
+                    var expectEnumerValue = {expectVariable}.{model.ValueName};
+                    Assert.That({modelVariable}.{model.ValueName}.Count(), Is.EqualTo(expectEnumerValue.Count()));
+                    for(int i = 0; i < expectEnumerValue.Count(); i++)
+                    {{
+                        var expectItem = expectEnumerValue[i];
+                        var haveItem = {modelVariable}.{model.ValueName}[i];
+                        Assert.That(expectItem, Is.EqualTo(haveItem));
+                    }}
+                }}
+
+                if ({expectVariable}.{model.NullableValueName} == null)
+                {{
+                    Assert.That({modelVariable}.{model.NullableValueName}, Is.Null);
+                }}
+                else
+                {{
+                    Assert.That({modelVariable}.{model.NullableValueName}, Is.Not.Null);
+                    {{
+                        var expectEnumerValue = {expectVariable}.{model.NullableValueName};
+                        Assert.That({modelVariable}.{model.NullableValueName}.Count(), Is.EqualTo(expectEnumerValue.Count()));
+                        for(int i = 0; i < expectEnumerValue.Count(); i++)
+                        {{
+                            var expectItem = expectEnumerValue[i];
+                            var haveItem = {modelVariable}.{model.NullableValueName}[i];
+                            Assert.That(expectItem, Is.EqualTo(haveItem));
+                        }}
+                    }}
+                }}
+");
         }
 
         public static string CreateNewModelInstance(Model.ModelType model, Model.ModelValue value)

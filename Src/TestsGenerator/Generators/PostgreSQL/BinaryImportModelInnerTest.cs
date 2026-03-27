@@ -80,8 +80,7 @@ FROM STDIN (FORMAT BINARY)
         private static void SelectImportModelInnerConfig(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var query = $@"
 @""
@@ -145,21 +144,8 @@ ORDER BY
             var indexCollection = 0;
             for (; indexCollection < storage.Count / 2; indexCollection++)
             {
-                InnerModelValue value = storage[indexCollection];
-                if (indexCollection == 0)
-                {
-                    stringBuilder.Append($@"
-                var model = models[{indexCollection}];
-");
-                }
-                else
-                {
-                    stringBuilder.Append($@"
-                model = models[{indexCollection}];
-");
-                }
-
-                stringBuilder.Append(model.ModelInner.Assert("model", value));
+                stringBuilder.Append($@"
+                {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}].{model.ModelInnerName}, false);");
             }
 
             stringBuilder.Append($@"
@@ -175,11 +161,8 @@ ORDER BY
             indexCollection = 0;
             for (; indexCollection < storage.Count; indexCollection++)
             {
-                InnerModelValue value = storage[indexCollection];
                 stringBuilder.Append($@"
-                model = models[{indexCollection}];
-{model.ModelInner.Assert("model", value)}
-");
+                {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}].{model.ModelInnerName}, false);");
             }
 
             stringBuilder.Append($@"

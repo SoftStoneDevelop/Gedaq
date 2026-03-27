@@ -122,8 +122,7 @@ ORDER BY
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             List<ModelValue> storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             if (storage.Count < 4)
             {
@@ -152,21 +151,8 @@ ORDER BY
             var indexCollection = 0;
             for (; indexCollection < storage.Count / 2; indexCollection++)
             {
-                ModelValue value = storage[indexCollection];
-                if (indexCollection == 0)
-                {
-                    stringBuilder.Append($@"
-                var model = models[{indexCollection}];
-");
-                }
-                else
-                {
-                    stringBuilder.Append($@"
-                model = models[{indexCollection}];
-");
-                }
-
-                stringBuilder.Append(model.Assert("model", value));
+                stringBuilder.Append($@"
+                {model.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}], false);");
             }
 
             stringBuilder.Append($@"
@@ -182,11 +168,8 @@ ORDER BY
             indexCollection = 0;
             for (; indexCollection < storage.Count; indexCollection++)
             {
-                ModelValue value = storage[indexCollection];
                 stringBuilder.Append($@"
-                model = models[{indexCollection}];
-{model.Assert("model", value)}
-");
+                {model.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}], false);");
             }
 
             stringBuilder.Append($@"

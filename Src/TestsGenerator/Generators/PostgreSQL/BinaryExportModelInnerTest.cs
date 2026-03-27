@@ -86,8 +86,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
             StringBuilderArray.StringBuilderArray stringBuilder,
             List<InnerModelValue> storage,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             if (storage.Count < 4)
             {
@@ -131,9 +130,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
                 {{
                     var model = models[modelIndex];
                     var expectedModel = expected[model.{model.ModelInner.IdName}];
-{model.ModelInner.Assert("model", "expectedModel")}
-");
-            stringBuilder.Append($@"
+                    {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(model, expectedModel, false);
                 }}
             }}
         }}

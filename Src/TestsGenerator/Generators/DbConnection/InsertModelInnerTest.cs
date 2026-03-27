@@ -16,24 +16,23 @@ namespace TestsGenerator.Generators.DbConnection
             Database database,
             ref int index,
             string interfaceTypeName,
-            bool toEnd = false
-            )
+            bool toEnd = false)
         {
             DbConnectionInsertModelInnerConfig(
                 stringBuilder, 
                 model, 
                 database, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             DbConnectionInsertModelInnerTest(
                 order, 
                 stringBuilder, 
-                storage, 
+                storage,
+                model,
                 ref index, 
                 index + 2, 
                 isAsync: false, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             if (index + 2 >= storage.Values.Count)
             {
@@ -44,20 +43,19 @@ namespace TestsGenerator.Generators.DbConnection
             DbConnectionInsertModelInnerTest(
                 order, 
                 stringBuilder, 
-                storage, 
+                storage,
+                model,
                 ref index, 
                 endIndex, 
                 isAsync: true,
-                interfaceTypeName
-                );
+                interfaceTypeName);
         }
 
         private static void DbConnectionInsertModelInnerConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             Database database,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             stringBuilder.Append($@"
 [Gedaq.DbConnection.Attributes.Query(
@@ -79,28 +77,23 @@ VALUES (
             queryType: QueryType.NonQuery,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            ), 
+            asPartInterface: typeof({interfaceTypeName})), 
             Gedaq.DbConnection.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdType}), 
                 parametrName: ""{model.ModelInner.IdColumnName}"", 
                 methodParametrName: ""{model.ModelInner.IdColumnName}"", 
-                dbType: {model.ModelInner.IdTypeInfo.DbTypeStr()}
-                ),
+                dbType: {model.ModelInner.IdTypeInfo.DbTypeStr()}),
             Gedaq.DbConnection.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.ValueType}), 
                 parametrName: ""{model.ModelInner.ValueColumnName}"", 
                 methodParametrName: ""{model.ModelInner.ValueColumnName}"", 
-                dbType: {model.ModelInner.TypeInfo.DbTypeStr()}
-                ),
+                dbType: {model.ModelInner.TypeInfo.DbTypeStr()}),
             Gedaq.DbConnection.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.NullableValueType}), 
                 parametrName: ""{model.ModelInner.NullableValueColumnName}"", 
                 methodParametrName: ""{model.ModelInner.NullableValueColumnName}"", 
                 dbType: {model.ModelInner.TypeInfo.DbTypeStr()}, 
-                nullable: true
-                )
-            ]
+                nullable: true)]
         public void DbConnection{_testName}Config()
         {{
         }}
@@ -111,16 +104,13 @@ VALUES (
             int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             ModelValueStorage storage,
+            Model.ModelType model,
             ref int indexValue,
             int endIndex,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
-            if (endIndex > storage.Values.Count)
-            {
-                throw new System.ArgumentOutOfRangeException(nameof(endIndex));
-            }
+            System.ArgumentOutOfRangeException.ThrowIfGreaterThan(endIndex, storage.Values.Count);
 
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -142,7 +132,7 @@ VALUES (
                 }
 
                 stringBuilder.Append($@"
-                changedRows = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{async}(connection, {value.InnerModel.Id}, {value.InnerModel.Value}, {value.InnerModel.NullableValue});
+                changedRows = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{async}(connection, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.ValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.NullableValueName});
                 Assert.That(changedRows, Is.EqualTo(1));
 ");
             }
