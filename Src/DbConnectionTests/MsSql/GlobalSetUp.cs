@@ -176,7 +176,7 @@ INSERT INTO person(
                 if (i > 0 && i < 6)
                 {
                     firstname.Value = $"John{i}";
-                    middlename.Value = $"Ñurly{i}";
+                    middlename.Value = $"Curly{i}";
                     lastname.Value = $"Doe{i}";
                     identificationId.Value = i;
                 }

@@ -58,7 +58,7 @@ ORDER BY p.id ASC
             {
                 Assert.That(list[3].Id, Is.EqualTo(4));
                 Assert.That(list[3].FirstName, Is.EqualTo("John4"));
-                Assert.That(list[3].MiddleName, Is.EqualTo("Сurly4"));
+                Assert.That(list[3].MiddleName, Is.EqualTo("Curly4"));
                 Assert.That(list[3].LastName, Is.EqualTo("Doe4"));
 
                 Assert.That(list[3].Identification, Is.Not.EqualTo(null));
@@ -77,7 +77,7 @@ ORDER BY p.id ASC
             {
                 Assert.That(list[4].Id, Is.EqualTo(5));
                 Assert.That(list[4].FirstName, Is.EqualTo("John5"));
-                Assert.That(list[4].MiddleName, Is.EqualTo("Сurly5"));
+                Assert.That(list[4].MiddleName, Is.EqualTo("Curly5"));
                 Assert.That(list[4].LastName, Is.EqualTo("Doe5"));
 
                 Assert.That(list[4].Identification, Is.Not.EqualTo(null));
