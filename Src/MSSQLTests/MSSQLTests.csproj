@@ -21,7 +21,7 @@
 		</PackageReference>
 		<PackageReference Include="System.Linq.Async" Version="7.0.0" />
 		<PackageReference Include="Testcontainers.MsSql" Version="4.11.0" />
-		<PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.4" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Gedaq\Gedaq.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="True" />
