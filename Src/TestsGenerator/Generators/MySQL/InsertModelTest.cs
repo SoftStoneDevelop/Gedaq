@@ -122,8 +122,7 @@ VALUES (
             ref int indexValue,
             int endIndex,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             System.ArgumentOutOfRangeException.ThrowIfGreaterThan(endIndex, storage.Values.Count);
 
