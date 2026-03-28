@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
@@ -141,12 +140,12 @@ ORDER BY
             stringBuilder.Append($@"
                 var importCollection = new List<{model.ClassName}>({storage.Count / 2});
 ");
-            FillCollection(storage.Count / 2);
+            var expectCount = FillCollection(storage.Count / 2);
 
             stringBuilder.Append($@"
                 {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}(connection, importCollection);
                 var models = {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}(connection).ToList();
-                Assert.That(models, Has.Count.EqualTo(importCollection.Count));
+                Assert.That(models, Has.Count.EqualTo({expectCount}));
 ");
             var indexCollection = 0;
             for (; indexCollection < storage.Count / 2; indexCollection++)
@@ -158,12 +157,12 @@ ORDER BY
             stringBuilder.Append($@"
                 importCollection.Clear();
 ");
-            FillCollection(storage.Count);
+            var expectCount2 = FillCollection(storage.Count);
 
             stringBuilder.Append($@"
                 await {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Async(connection, importCollection);
                 models = await {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}Async(connection);
-                Assert.That(models, Has.Count.EqualTo({storage.Count}));
+                Assert.That(models, Has.Count.EqualTo({expectCount + expectCount2}));
 ");
             indexCollection = 0;
             for (; indexCollection < storage.Count; indexCollection++)
@@ -176,38 +175,17 @@ ORDER BY
             }}
         }}
 ");
-            void FillCollection(int end)
+            int FillCollection(int end)
             {
+                int count = 0;
                 for (; index < end; index++)
                 {
-                    ModelValue value = storage[index];
+                    count++;
                     stringBuilder.Append($@"
-                importCollection.Add(
-                new {model.ClassName}
-                {{
-                    {model.IdName} = {value.IdValue},
-                    {model.ValueName} = {value.Value},
-                    {model.NullableValueName} = {value.NullableValue},
-");
-                    if (value.InnerModel == null)
-                    {
-                        stringBuilder.Append($@"
-                    {model.ModelInnerName} = {ValueConstants.NullValue}
-");
-                    }
-                    else
-                    {
-                        stringBuilder.Append($@"
-                    {model.ModelInnerName} = new {model.ModelInner.ClassName} 
-                    {{
-                        {model.ModelInner.IdName} = {value.InnerModel.Id}
-                    }}
-");
-                    }
-                    stringBuilder.Append($@"
-                }});
-");
+                    importCollection.Add({TestsPart.TestDataArrayName}[{index}]);");
                 }
+
+                return count;
             }
         }
     }

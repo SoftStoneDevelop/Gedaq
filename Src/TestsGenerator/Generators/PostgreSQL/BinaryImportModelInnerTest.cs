@@ -132,32 +132,33 @@ ORDER BY
             stringBuilder.Append($@"
                 var importCollection = new List<{model.ModelInner.ClassName}>({storage.Count / 2});
 ");
-            FillCollection(storage.Count / 2);
+            var expectCount = FillCollection(storage.Count / 2);
 
             stringBuilder.Append($@"
                 {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}(connection, importCollection);
                 var models = {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}(connection);
-                Assert.That(models, Has.Count.EqualTo(importCollection.Count));
+                Assert.That(models, Has.Count.EqualTo({expectCount}));
                 var set = new HashSet<long>();
                 for (var i = 0; i < models.Count(); i++)
                 {{
                     var actual = models[i];
-                    var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
+                    var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
                     {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(actual, expect, false);
                     Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
                 }}
                 set.Clear();
+                importCollection.Clear();
 ");
-            FillCollection(storage.Count);
+            var expectCount2 = FillCollection(storage.Count);
 
             stringBuilder.Append($@"
                 await {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Async(connection, importCollection);
                 models = await {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}Async(connection);
-                Assert.That(models, Has.Count.EqualTo({storage.Count}));
+                Assert.That(models, Has.Count.EqualTo({expectCount + expectCount2}));
                 for (var i = 0; i < models.Count(); i++)
                 {{
                     var actual = models[i];
-                    var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
+                    var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
                     {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(actual, expect, false);
                     Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
                 }}
@@ -165,8 +166,9 @@ ORDER BY
             }}
         }}
 ");
-            void FillCollection(int end)
+            int FillCollection(int end)
             {
+                int count = 0;
                 for (; index < end; index++)
                 {
                     ModelValue value = storage[index];
@@ -175,16 +177,12 @@ ORDER BY
                         continue;
                     }
 
+                    count++;
                     stringBuilder.Append($@"
-                importCollection.Add(
-                new {model.ModelInner.ClassName}
-                {{
-                    {model.ModelInner.IdName} = {value.IdValue},
-                    {model.ModelInner.ValueName} = {value.Value},
-                    {model.ModelInner.NullableValueName} = {value.NullableValue}
-                }});
-");
+                importCollection.Add({TestsPart.TestDataArrayName}[{index}].{model.ModelInnerName});");
                 }
+
+                return count;
             }
         }
     }

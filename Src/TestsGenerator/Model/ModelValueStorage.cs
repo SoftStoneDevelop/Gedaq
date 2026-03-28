@@ -48,10 +48,18 @@ namespace TestsGenerator.Model
 
         private string GetNextModelId(out int idValue)
         {
+            var min = 0;
+            var max = 10;
             while (true)
             {
-                var idStr = _id.NewValue(out idValue);
-                if(_modelIds.Add(idValue))
+                if (_modelIds.Count != 0)
+                {
+                    min = _modelIds.Max();
+                    max = min + 10;
+                }
+
+                var idStr = _id.NewValue(min, max, out idValue);
+                if (_modelIds.Add(idValue))
                 {
                     return idStr;
                 }
@@ -60,9 +68,17 @@ namespace TestsGenerator.Model
 
         private string GetNextInnerModelId(out int idValue)
         {
+            var min = 0;
+            var max = 10;
             while (true)
             {
-                var idStr = _id.NewValue(out idValue);
+                if (_innerModelIds.Count != 0)
+                {
+                    min = _innerModelIds.Max();
+                    max = min + 10;
+                }
+
+                var idStr = _id.NewValue(min, max, out idValue);
                 if (_innerModelIds.Add(idValue))
                 {
                     return idStr;

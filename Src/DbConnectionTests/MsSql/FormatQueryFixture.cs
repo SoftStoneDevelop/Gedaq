@@ -35,8 +35,7 @@ ORDER BY p.id ASC
             queryMapType: typeof(Person),
             methodType: Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync), 
             QueryFormat(1, "condition"), 
-            QueryFormat(0)
-            ]
+            QueryFormat(0)]
         public async Task ReadFormatToClassAsync()
         {
             using var connection = GlobalSetUp.OpenConnection();
