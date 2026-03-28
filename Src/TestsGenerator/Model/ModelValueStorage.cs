@@ -48,7 +48,7 @@ namespace TestsGenerator.Model
 
         private string GetNextModelId(out int idValue)
         {
-            var min = 0;
+            var min = 1;
             var max = 10;
             while (true)
             {
@@ -68,7 +68,7 @@ namespace TestsGenerator.Model
 
         private string GetNextInnerModelId(out int idValue)
         {
-            var min = 0;
+            var min = 1;
             var max = 10;
             while (true)
             {
