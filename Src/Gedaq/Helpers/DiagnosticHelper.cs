@@ -12,14 +12,15 @@ namespace Gedaq.Helpers
             SourceProductionContext context,
             string disgnocticId,
             string message,
-            DiagnosticSeverity diagnosticSeverity)
+            DiagnosticSeverity diagnosticSeverity,
+            params string[] messageParameters)
         {
             try
             {
                 var diagnostic = Diagnostic.Create(new DiagnosticDescriptor(
                     disgnocticId,
                     string.Empty,
-                    message,
+                    string.Format(message, messageParameters),
                     DiagnosticConstants.Source,
                     diagnosticSeverity,
                     true),

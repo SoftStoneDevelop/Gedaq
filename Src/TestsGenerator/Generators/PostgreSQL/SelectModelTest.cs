@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
@@ -19,40 +20,48 @@ namespace TestsGenerator.Generators.PostgreSQL
         {
             var orderedValues = storage.Values.OrderBy(or => or.IdValue).ToList();
 
-            SelectTestConfig(
-                model, 
+            Span<bool> dynamicParametrValues = [true, false];
+            foreach (var dynamicParametrValue in dynamicParametrValues)
+            {
+                SelectTestConfig(
+                model,
                 stringBuilder,
-                interfaceTypeName);
+                interfaceTypeName,
+                dynamicParametrValue);
 
-            SelectTest(
-                order, 
-                orderedValues, 
-                model, 
-                stringBuilder, 
-                false, 
-                interfaceTypeName);
+                SelectTest(
+                    order,
+                    orderedValues,
+                    model,
+                    stringBuilder,
+                    false,
+                    interfaceTypeName,
+                    dynamicParametrValue);
 
-            SelectTest(
-                order, 
-                orderedValues, 
-                model, 
-                stringBuilder, 
-                true, 
-                interfaceTypeName);
+                SelectTest(
+                    order,
+                    orderedValues,
+                    model,
+                    stringBuilder,
+                    true,
+                    interfaceTypeName,
+                    dynamicParametrValue);
+            }
 
             DbConnection.SelectModel.Generate(
-                order, 
-                stringBuilder, 
-                model, 
-                orderedValues, 
-                Database.PostgreSQL, 
+                order,
+                stringBuilder,
+                model,
+                orderedValues,
+                Database.PostgreSQL,
                 interfaceTypeName);
         }
 
         private static void SelectTestConfig(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            string interfaceTypeName)
+            string interfaceTypeName,
+            bool dynamicParametr)
         {
             var query = $@"
 @""
@@ -76,20 +85,31 @@ ORDER BY
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.Query(
             query: {query},
-            methodName:""SelectModel"",
+            methodName:""{_testName}{(dynamicParametr ? "DynPar" : "")}"",
             queryMapType: typeof({model.ClassName}),
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})),
+            asPartInterface: typeof({interfaceTypeName})),");
+            if (dynamicParametr)
+            {
+                stringBuilder.Append($@"
+Gedaq.Npgsql.Attributes.DynamicParametr()");
+            }
+            else
+            {
+                stringBuilder.Append($@"
 Gedaq.Npgsql.Attributes.Parametr(
             parametrType: typeof({model.IdType}),
             position: 1,
             methodParametrName: ""{model.IdColumnName}"",
-            dbType: {model.IdTypeInfo.SpecialDbTypeStr()})]
-        private void {_testName}Config()
+            dbType: {model.IdTypeInfo.SpecialDbTypeStr()})");
+            }
+
+            stringBuilder.Append($@"]
+        private void {_testName}{(dynamicParametr ? "DynPar" : "")}Config()
         {{
         }}
 ");
@@ -101,19 +121,35 @@ Gedaq.Npgsql.Attributes.Parametr(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync,
-            string interfaceTypeName)
+            string interfaceTypeName,
+            bool dynamicParametr)
         {
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
 
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task {_testName}Test{async}()
+        public async Task {_testName}{(dynamicParametr ? "DynPar" : "")}Test{async}()
         {{
             await using (var connection = GlobalSetUp.GetConnection)
             {{
-                await connection.OpenAsync();
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, 0);
+                await connection.OpenAsync();");
+
+            if (dynamicParametr)
+            {
+                stringBuilder.Append($@"
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{(dynamicParametr ? "DynPar" : "")}{async}(connection, [parametr1]);");
+            }
+            else
+            {
+                stringBuilder.Append($@"
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{(dynamicParametr ? "DynPar" : "")}{async}(connection, 0);");
+            }
+
+            stringBuilder.Append($@"
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
                 for (int i = 0; i < {orderedValues.Count}; i++)
                 {{

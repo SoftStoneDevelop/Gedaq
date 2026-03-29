@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
@@ -19,24 +20,31 @@ namespace TestsGenerator.Generators.MsSQL
         {
             var orderedValues = storage.Values.OrderBy(or => or.IdValue).ToList();
 
-            SelectTestConfig(
-                model, 
-                stringBuilder,
-                interfaceTypeName);
-            SelectTest(
-                order, 
-                orderedValues, 
-                model, 
-                stringBuilder, 
-                false,
-                interfaceTypeName);
-            SelectTest(
-                order, 
-                orderedValues, 
-                model, 
-                stringBuilder, 
-                true, 
-                interfaceTypeName);
+            Span<bool> dynamicParametrValues = [true, false];
+            foreach (var dynamicParametrValue in dynamicParametrValues)
+            {
+                SelectTestConfig(
+                    model,
+                    stringBuilder,
+                    interfaceTypeName,
+                    dynamicParametrValue);
+                SelectTest(
+                    order,
+                    orderedValues,
+                    model,
+                    stringBuilder,
+                    false,
+                    interfaceTypeName,
+                    dynamicParametrValue);
+                SelectTest(
+                    order,
+                    orderedValues,
+                    model,
+                    stringBuilder,
+                    true,
+                    interfaceTypeName,
+                    dynamicParametrValue);
+            }
 
             DbConnection.SelectModel.Generate(
                 order, 
@@ -50,7 +58,8 @@ namespace TestsGenerator.Generators.MsSQL
         private static void SelectTestConfig(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            string interfaceTypeName)
+            string interfaceTypeName,
+            bool dynamicParametr)
         {
             var query = $@"
 @""
@@ -74,19 +83,31 @@ ORDER BY
             stringBuilder.Append($@"
 [Gedaq.SqlClient.Attributes.Query(
             query: {query},
-            methodName:""SelectModel"",
+            methodName:""{_testName}{(dynamicParametr ? "DynPar" : "")}"",
             queryMapType: typeof({model.ClassName}),
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})),
+            asPartInterface: typeof({interfaceTypeName})),");
+
+            if (dynamicParametr)
+            {
+                stringBuilder.Append($@"
+Gedaq.SqlClient.Attributes.DynamicParametr()");
+            }
+            else
+            {
+                stringBuilder.Append($@"
 Gedaq.SqlClient.Attributes.Parametr(
             parametrType: typeof({model.IdType}),
             parametrName: ""{model.IdColumnName}"",
             methodParametrName: ""{model.IdColumnName}"",
-            sqlDbType: {model.IdTypeInfo.SpecialDbTypeStr()})]
-        private void {_testName}Config()
+            sqlDbType: {model.IdTypeInfo.SpecialDbTypeStr()})");
+            }
+
+            stringBuilder.Append($@"]
+        private void {_testName}{(dynamicParametr ? "DynPar" : "")}Config()
         {{
         }}
 ");
@@ -98,19 +119,35 @@ Gedaq.SqlClient.Attributes.Parametr(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync,
-            string interfaceTypeName)
+            string interfaceTypeName,
+            bool dynamicParametr)
         {
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
 
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task {_testName}Test{async}()
+        public async Task {_testName}{(dynamicParametr ? "DynPar" : "")}Test{async}()
         {{
             await using (var connection = GlobalSetUp.GetConnection)
             {{
-                await connection.OpenAsync();
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, 0);
+                await connection.OpenAsync();");
+
+            if (dynamicParametr)
+            {
+                stringBuilder.Append($@"
+                var parametr1 = new SqlParameter();
+                parametr1.Value = 0;
+
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{(dynamicParametr ? "DynPar" : "")}{async}(connection, [parametr1]);");
+            }
+            else
+            {
+                stringBuilder.Append($@"
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{(dynamicParametr ? "DynPar" : "")}{async}(connection, 0);");
+            }
+
+            stringBuilder.Append($@"
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
                 for (int i = 0; i < {orderedValues.Count}; i++)
                 {{

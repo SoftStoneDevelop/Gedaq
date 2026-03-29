@@ -16,7 +16,7 @@ namespace Gedaq.Constants
         public const string NotAllowedOutParametr = "GDC0005";
 
         public const string AmbiguityOfParameterTypes = "GDC0006";
-        public const string AmbiguityOfParameterTypesDescr = "It is allowed to have either explicit parameters or dynamic ones, but not both";
+        public const string AmbiguityOfParameterTypesDescr = "{0}: It is allowed to have either explicit parameters or dynamic ones, but not both";
 
         public const string DynamicParameterDuplicate = "GDC0007";
         public const string DynamicParameterDuplicateDescr = "DynamicParameterDuplicate";

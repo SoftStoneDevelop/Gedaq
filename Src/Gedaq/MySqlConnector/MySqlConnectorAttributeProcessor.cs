@@ -151,7 +151,8 @@ namespace Gedaq.MySqlConnector
                         _context,
                         DiagnosticConstants.AmbiguityOfParameterTypes,
                         DiagnosticConstants.AmbiguityOfParameterTypesDescr,
-                        DiagnosticSeverity.Error);
+                        DiagnosticSeverity.Error,
+                        batchPair.Batch.MethodName);
                 }
 
                 batchPair.Batch.Queries = queries.OrderBy(or => or.Number).ToArray();
