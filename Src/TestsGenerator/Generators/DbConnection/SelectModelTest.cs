@@ -187,6 +187,8 @@ Gedaq.DbConnection.Attributes.Parametr(
                 stringBuilder.Append($@"
                 var parametr1 = connection.CreateCommand().CreateParameter();
                 parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = ""id"";
 
                 var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{(dynamicParametr ? "DynPar" : "")}{async}(connection, [parametr1]);");
             }

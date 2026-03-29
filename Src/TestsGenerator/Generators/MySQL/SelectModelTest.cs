@@ -139,6 +139,8 @@ Gedaq.MySqlConnector.Attributes.Parametr(
                 stringBuilder.Append($@"
                 var parametr1 = new MySqlParameter();
                 parametr1.Value = 0;
+                parametr1.MySqlDbType = (MySqlConnector.MySqlDbType)(3);
+                parametr1.ParameterName = ""id"";
 
                 var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{(dynamicParametr ? "DynPar" : "")}{async}(connection, [parametr1]);");
             }
