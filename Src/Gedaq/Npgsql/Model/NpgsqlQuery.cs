@@ -14,6 +14,7 @@ namespace Gedaq.Npgsql.Model
     {
         public NpgsqlSourceType SourceType { get; private set; }
         public NpgsqlParametr[] Parametrs;
+        public NpgsqlDynamicParametr DynamicParametrs;
 
         public NpgsqlQuery()
         {
@@ -148,8 +149,7 @@ namespace Gedaq.Npgsql.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
-                !namedTypeSymbol.IsAssignableFrom("Gedaq.Npgsql.Enums", "SourceType")
-                )
+                !namedTypeSymbol.IsAssignableFrom("Gedaq.Npgsql.Enums", "SourceType"))
             {
                 return false;
             }
@@ -161,6 +161,16 @@ namespace Gedaq.Npgsql.Model
         public override IEnumerable<BaseParametr> BaseParametrs()
         {
             return Parametrs;
+        }
+
+        public override BaseDynamicParametr BaseDynamicParametrs()
+        {
+            return DynamicParametrs;
+        }
+
+        public override bool HaveDynamicParametrs()
+        {
+            return DynamicParametrs != null;
         }
     }
 }

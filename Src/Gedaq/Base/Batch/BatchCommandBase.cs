@@ -412,8 +412,7 @@ namespace Gedaq.Base.Batch
 
         private void SetCommandParametrs(
             BatchPartBase item,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if (!item.QueryBase.HaveParametrs())
             {
@@ -508,8 +507,7 @@ namespace Gedaq.Base.Batch
                 SetParametrsMethodDefinition(
                     source,
                     interfaceGenerator.DefinitionBuilder(),
-                    forInterface: true
-                    );
+                    forInterface: true);
                 interfaceGenerator.AddMethodDefinition();
             }
             SetParametrsMethodBody(source, builder);
@@ -557,8 +555,7 @@ namespace Gedaq.Base.Batch
 
             }
 
-            builder.Append($@"
-            )");
+            builder.Append($@")");
         }
 
         protected void SetParametrsMethodBody(
@@ -567,7 +564,6 @@ namespace Gedaq.Base.Batch
         {
             builder.Append($@"
         {{
-
             if(timeout.HasValue)
             {{
                 batch.Timeout = timeout.Value;

@@ -3,7 +3,6 @@ using Gedaq.Constants;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
-using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 
@@ -12,6 +11,7 @@ namespace Gedaq.SqlClient.Model
     internal class SqlClientQuery : QueryBaseCommand
     {
         public SqlClientParametr[] Parametrs;
+        public SqlClientDynamicParametr DynamicParametrs;
 
         private SqlClientQuery()
         {
@@ -134,6 +134,16 @@ namespace Gedaq.SqlClient.Model
         public override IEnumerable<BaseParametr> BaseParametrs()
         {
             return Parametrs;
+        }
+
+        public override BaseDynamicParametr BaseDynamicParametrs()
+        {
+            return DynamicParametrs;
+        }
+
+        public override bool HaveDynamicParametrs()
+        {
+            return DynamicParametrs != null;
         }
     }
 }

@@ -9,6 +9,7 @@ namespace Gedaq.Base.Model
         public bool AllSameTypes = true;
         public bool HaveParametrs;
         public bool HaveFormatParametrs;
+        public bool HaveDynamicParametrs;
 
         public abstract IEnumerable<BatchPartBase> QueryBases();
     }

@@ -1,6 +1,8 @@
 ﻿using Gedaq.Base;
+using Gedaq.Constants;
 using Gedaq.Enums;
 using Gedaq.Helpers;
+using Gedaq.Npgsql.Model;
 using Gedaq.Parser;
 using Gedaq.SqlClient.GeneratorsQuery;
 using Gedaq.SqlClient.Model;
@@ -34,7 +36,7 @@ namespace Gedaq.SqlClient
                 var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
                 var parentAttributes = parentSymbol.GetAttributes();
 
-                var readTemp = new ReadPair<SqlClientQuery, SqlClientParametr>();
+                var readTemp = new ReadPair<SqlClientQuery, SqlClientParametr, SqlClientDynamicParametr>();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
                     _context.CancellationToken.ThrowIfCancellationRequested();
@@ -51,6 +53,12 @@ namespace Gedaq.SqlClient
                         continue;
                     }
 
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.SqlClient.Attributes", "DynamicParametrAttribute"))
+                    {
+                        ProcessDynamicParametr(attributeData, containsType, readTemp);
+                        continue;
+                    }
+
                     base.ProcessAttribute(attributeData, containsType, readTemp.FormatParametrs);
                 }
 
@@ -62,7 +70,7 @@ namespace Gedaq.SqlClient
         {
         }
 
-        private void TryAddReadMethod(ReadPair<SqlClientQuery, SqlClientParametr> readPair)
+        private void TryAddReadMethod(ReadPair<SqlClientQuery, SqlClientParametr, SqlClientDynamicParametr> readPair)
         {
             if (readPair.IsEmpty())
             {
@@ -76,6 +84,7 @@ namespace Gedaq.SqlClient
                 query.Parametrs[i].Index = i;
             }
 
+            AddDynamicParametrs(readPair);
             AddFormatParametrs(readPair.Query, readPair.FormatParametrs);
 
             if (query.QueryType == QueryType.NonQuery)
@@ -87,16 +96,30 @@ namespace Gedaq.SqlClient
                 query.Aliases = _queryParser.Parse(ref query.Query);
             }
 
+            if (query.HaveDynamicParametrs() && query.HaveParametrs())
+            {
+                DiagnosticHelper.ReportDiagnostic(
+                    _context,
+                    DiagnosticConstants.AmbiguityOfParameterTypes,
+                    DiagnosticConstants.AmbiguityOfParameterTypesDescr,
+                    DiagnosticSeverity.Error);
+            }
+
             if (query.NeedGenerate)
             {
                 _read.Add(query);
             }
         }
 
+        private void AddDynamicParametrs(ReadPair<SqlClientQuery, SqlClientParametr, SqlClientDynamicParametr> readPair)
+        {
+            readPair.Query.DynamicParametrs = readPair.DynamicParametr;
+        }
+
         private void ProcessQueryRead(
             AttributeData queryReadAttribute,
             INamedTypeSymbol containsType,
-            ReadPair<SqlClientQuery, SqlClientParametr> readPair)
+            ReadPair<SqlClientQuery, SqlClientParametr, SqlClientDynamicParametr> readPair)
         {
             if (!SqlClientQuery.CreateNew(_context, queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
@@ -109,7 +132,7 @@ namespace Gedaq.SqlClient
         private void ProcessParametr(
             AttributeData parametrAttribute,
             INamedTypeSymbol containsType,
-            ReadPair<SqlClientQuery, SqlClientParametr> readPair)
+            ReadPair<SqlClientQuery, SqlClientParametr, SqlClientDynamicParametr> readPair)
         {
             if (!SqlClientParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
             {
@@ -117,6 +140,28 @@ namespace Gedaq.SqlClient
             }
 
             readPair.Parametrs.Add(parametr);
+        }
+
+        private void ProcessDynamicParametr(
+            AttributeData parametrAttribute,
+            INamedTypeSymbol containsType,
+            ReadPair<SqlClientQuery, SqlClientParametr, SqlClientDynamicParametr> readPair)
+        {
+            if (!SqlClientDynamicParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr))
+            {
+                throw new Exception($"Unknown {nameof(SqlClientDynamicParametr)} constructor");
+            }
+
+            if (readPair.DynamicParametr != null)
+            {
+                DiagnosticHelper.ReportDiagnostic(
+                    _context,
+                    DiagnosticConstants.DynamicParameterDuplicate,
+                    DiagnosticConstants.DynamicParameterDuplicateDescr,
+                    DiagnosticSeverity.Error);
+            }
+
+            readPair.DynamicParametr = parametr;
         }
 
         public override void GenerateAndSaveMethods()

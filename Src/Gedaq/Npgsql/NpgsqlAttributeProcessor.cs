@@ -1,5 +1,6 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Model;
+using Gedaq.Constants;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Generators;
@@ -47,7 +48,7 @@ namespace Gedaq.Npgsql
                 var parentAttributes = parentSymbol.GetAttributes();
                 
                 var batchPair = new BatchPair<NpgsqlQueryBatch>();
-                var readTemp = new ReadPair<NpgsqlQuery, NpgsqlParametr>();
+                var readTemp = new ReadPair<NpgsqlQuery, NpgsqlParametr, NpgsqlDynamicParametr>();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
                     _context.CancellationToken.ThrowIfCancellationRequested();
@@ -61,6 +62,12 @@ namespace Gedaq.Npgsql
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "ParametrAttribute"))
                     {
                         ProcessParametr(attributeData, containsType, readTemp);
+                        continue;
+                    }
+
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "DynamicParametrAttribute"))
+                    {
+                        ProcessDynamicParametr(attributeData, containsType, readTemp);
                         continue;
                     }
 
@@ -123,12 +130,14 @@ namespace Gedaq.Npgsql
 
         private void FillBatches()
         {
+            var set = new HashSet<int>();
+            var queries = new List<BatchPart<NpgsqlQuery>>();
             foreach (var batchPair in _batchPairTemp)
             {
+                set.Clear();
+                queries.Clear();
                 NpgsqlQuery firstRead = null;
 
-                var set = new HashSet<int>();
-                var queries = new List<BatchPart<NpgsqlQuery>>();
                 foreach (var part in batchPair.Parts.OrderBy(or => or.BatchNumber))
                 {
                     if (!set.Add(part.BatchNumber))
@@ -149,8 +158,18 @@ namespace Gedaq.Npgsql
                     batchPair.Batch.AllSameTypes &= SymbolEqualityComparer.Default.Equals(firstRead.MapTypeName, queryRead.MapTypeName);
                     batchPair.Batch.HaveParametrs |= queryRead.HaveParametrs();
                     batchPair.Batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
+                    batchPair.Batch.HaveDynamicParametrs |= queryRead.HaveDynamicParametrs();
                     batchPair.Batch.SourceType |= queryRead.SourceType;
                     queries.Add(new BatchPart<NpgsqlQuery>(queryRead, part.BatchNumber));
+                }
+
+                if (batchPair.Batch.HaveParametrs && batchPair.Batch.HaveDynamicParametrs)
+                {
+                    DiagnosticHelper.ReportDiagnostic(
+                        _context,
+                        DiagnosticConstants.AmbiguityOfParameterTypes,
+                        DiagnosticConstants.AmbiguityOfParameterTypesDescr,
+                        DiagnosticSeverity.Error);
                 }
 
                 batchPair.Batch.Queries = queries.OrderBy(or => or.Number).ToArray();
@@ -166,17 +185,18 @@ namespace Gedaq.Npgsql
             _readContainsType.Clear();
         }
 
-        private void TryAddReadMethod(ReadPair<NpgsqlQuery, NpgsqlParametr> readPair)
+        private void TryAddReadMethod(ReadPair<NpgsqlQuery, NpgsqlParametr, NpgsqlDynamicParametr> readPair)
         {
             if(readPair.IsEmpty())
             {
                 return;
             }
 
-            var query = readPair.Query;
+            AddDynamicParametrs(readPair);
             AddParametrs(readPair);
             AddFormatParametrs(readPair.Query, readPair.FormatParametrs);
 
+            var query = readPair.Query;
             if (query.QueryType == QueryType.NonQuery)
             {
                 query.Aliases = _queryParser.GetIntResultAlias();
@@ -184,6 +204,15 @@ namespace Gedaq.Npgsql
             else
             {
                 query.Aliases = _queryParser.Parse(ref query.Query);
+            }
+
+            if (query.HaveDynamicParametrs() && query.HaveParametrs())
+            {
+                DiagnosticHelper.ReportDiagnostic(
+                    _context,
+                    DiagnosticConstants.AmbiguityOfParameterTypes,
+                    DiagnosticConstants.AmbiguityOfParameterTypesDescr,
+                    DiagnosticSeverity.Error);
             }
 
             if (query.NeedGenerate)
@@ -194,7 +223,12 @@ namespace Gedaq.Npgsql
             _readContainsType.Add(query.MethodName, query);
         }
 
-        private void AddParametrs(ReadPair<NpgsqlQuery, NpgsqlParametr> readPair)
+        private void AddDynamicParametrs(ReadPair<NpgsqlQuery, NpgsqlParametr, NpgsqlDynamicParametr> readPair)
+        {
+            readPair.Query.DynamicParametrs = readPair.DynamicParametr;
+        }
+
+        private void AddParametrs(ReadPair<NpgsqlQuery, NpgsqlParametr, NpgsqlDynamicParametr> readPair)
         {
             if(readPair.Parametrs.Count == 0)
             {
@@ -206,11 +240,10 @@ namespace Gedaq.Npgsql
                 throw new Exception("Parameters cannot exist without a Query");
             }
 
-            var set = new HashSet<int>();
             var parametrs = readPair.Parametrs.OrderBy(or => or.Position).ToList();
             readPair.Query.Parametrs = new NpgsqlParametr[parametrs.Count];
 
-            set.Clear();
+            var set = new HashSet<int>();
             var containNamedParametr = false;
             var containPositionParametr = false;
             for (int i = 0; i < parametrs.Count; i++)
@@ -238,7 +271,10 @@ namespace Gedaq.Npgsql
             }
         }
 
-        private void ProcessBatch(AttributeData parametrAttribute, INamedTypeSymbol containsType, BatchPair<NpgsqlQueryBatch> currentPair)
+        private void ProcessBatch(
+            AttributeData parametrAttribute,
+            INamedTypeSymbol containsType,
+            BatchPair<NpgsqlQueryBatch> currentPair)
         {
             if (!NpgsqlQueryBatch.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var queryBatch))
             {
@@ -253,7 +289,10 @@ namespace Gedaq.Npgsql
             currentPair.Batch = queryBatch;
         }
 
-        private void ProcessBatchPart(AttributeData parametrAttribute, INamedTypeSymbol containsType, BatchPair<NpgsqlQueryBatch> currentPair)
+        private void ProcessBatchPart(
+            AttributeData parametrAttribute,
+            INamedTypeSymbol containsType,
+            BatchPair<NpgsqlQueryBatch> currentPair)
         {
             if (!BatchPart.CreateNew(parametrAttribute.ConstructorArguments, out var batchPart))
             {
@@ -263,7 +302,10 @@ namespace Gedaq.Npgsql
             currentPair.Parts.Add(batchPart);
         }
 
-        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ReadPair<NpgsqlQuery, NpgsqlParametr> readPair)
+        private void ProcessQueryRead(
+            AttributeData queryReadAttribute,
+            INamedTypeSymbol containsType,
+            ReadPair<NpgsqlQuery, NpgsqlParametr, NpgsqlDynamicParametr> readPair)
         {
             if (!NpgsqlQuery.CreateNew(_context, queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
@@ -278,14 +320,39 @@ namespace Gedaq.Npgsql
             readPair.Query = queryReadMethod;
         }
 
-        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType, ReadPair<NpgsqlQuery, NpgsqlParametr> readPair)
+        private void ProcessParametr(
+            AttributeData parametrAttribute,
+            INamedTypeSymbol containsType,
+            ReadPair<NpgsqlQuery, NpgsqlParametr, NpgsqlDynamicParametr> readPair)
         {
-            if (!NpgsqlParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
+            if (!NpgsqlParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr))
             {
                 throw new Exception($"Unknown {nameof(NpgsqlParametr)} constructor");
             }
 
             readPair.Parametrs.Add(parametr);
+        }
+
+        private void ProcessDynamicParametr(
+            AttributeData parametrAttribute,
+            INamedTypeSymbol containsType,
+            ReadPair<NpgsqlQuery, NpgsqlParametr, NpgsqlDynamicParametr> readPair)
+        {
+            if (!NpgsqlDynamicParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr))
+            {
+                throw new Exception($"Unknown {nameof(NpgsqlDynamicParametr)} constructor");
+            }
+
+            if (readPair.DynamicParametr != null)
+            {
+                DiagnosticHelper.ReportDiagnostic(
+                    _context,
+                    DiagnosticConstants.DynamicParameterDuplicate,
+                    DiagnosticConstants.DynamicParameterDuplicateDescr,
+                    DiagnosticSeverity.Error);
+            }
+
+            readPair.DynamicParametr = parametr;
         }
 
         private void ProcessBinaryExport(AttributeData queryReadAttribute, INamedTypeSymbol containsType)

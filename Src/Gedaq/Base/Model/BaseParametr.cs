@@ -81,8 +81,7 @@ namespace Gedaq.Base.Model
         protected static bool SetNameInCommand(TypedConstant argument, BaseParametr parametr)
         {
             if (!(argument.Type is INamedTypeSymbol paramName) ||
-                paramName.Name != nameof(String)
-                )
+                paramName.Name != nameof(String))
             {
                 return false;
             }
@@ -94,8 +93,7 @@ namespace Gedaq.Base.Model
         protected static bool SetNameInMethod(TypedConstant argument, BaseParametr parametr)
         {
             if (!(argument.Type is INamedTypeSymbol paramName) ||
-                paramName.Name != nameof(String)
-                )
+                paramName.Name != nameof(String))
             {
                 return false;
             }
@@ -107,8 +105,7 @@ namespace Gedaq.Base.Model
         protected static bool SetSize(TypedConstant argument, BaseParametr parametr)
         {
             if (!(argument.Type is INamedTypeSymbol sizeParam) ||
-                sizeParam.Name != nameof(Int32)
-                )
+                sizeParam.Name != nameof(Int32))
             {
                 return false;
             }
@@ -120,8 +117,7 @@ namespace Gedaq.Base.Model
         protected static bool SetNullable(TypedConstant argument, BaseParametr parametr)
         {
             if (!(argument.Type is INamedTypeSymbol nullableParam) ||
-                nullableParam.Name != nameof(Boolean)
-                )
+                nullableParam.Name != nameof(Boolean))
             {
                 return false;
             }
@@ -134,8 +130,7 @@ namespace Gedaq.Base.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol directionParam) ||
-                !directionParam.IsAssignableFrom("System.Data", "ParameterDirection")
-                )
+                !directionParam.IsAssignableFrom("System.Data", "ParameterDirection"))
             {
                 return false;
             }
@@ -147,8 +142,7 @@ namespace Gedaq.Base.Model
         protected static bool SetSourceColumn(TypedConstant argument, BaseParametr parametr)
         {
             if (!(argument.Type is INamedTypeSymbol paramName) ||
-                paramName.Name != nameof(String)
-                )
+                paramName.Name != nameof(String))
             {
                 return false;
             }
@@ -160,8 +154,7 @@ namespace Gedaq.Base.Model
         protected static bool SetSourceColumnNullMapping(TypedConstant argument, BaseParametr parametr)
         {
             if (!(argument.Type is INamedTypeSymbol nullableParam) ||
-                nullableParam.Name != nameof(Boolean)
-                )
+                nullableParam.Name != nameof(Boolean))
             {
                 return false;
             }
@@ -174,8 +167,7 @@ namespace Gedaq.Base.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol directionParam) ||
-                !directionParam.IsAssignableFrom("System.Data", "DataRowVersion")
-                )
+                !directionParam.IsAssignableFrom("System.Data", "DataRowVersion"))
             {
                 return false;
             }
@@ -187,8 +179,7 @@ namespace Gedaq.Base.Model
         protected static bool SetScale(TypedConstant argument, BaseParametr parametr)
         {
             if (!(argument.Type is INamedTypeSymbol sizeParam) ||
-                sizeParam.Name != nameof(Byte)
-                )
+                sizeParam.Name != nameof(Byte))
             {
                 return false;
             }
@@ -200,8 +191,7 @@ namespace Gedaq.Base.Model
         protected static bool SetPrecision(TypedConstant argument, BaseParametr parametr)
         {
             if (!(argument.Type is INamedTypeSymbol sizeParam) ||
-                sizeParam.Name != nameof(Byte)
-                )
+                sizeParam.Name != nameof(Byte))
             {
                 return false;
             }

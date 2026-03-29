@@ -55,6 +55,11 @@ namespace Gedaq.Npgsql
             }
         }
 
+        public override string GetParametrType()
+        {
+            return "NpgsqlParameter";
+        }
+
         public override string GetNullValue(BaseParametr parametr)
         {
             if (parametr.Type.IsNullableType())

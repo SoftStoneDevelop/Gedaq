@@ -39,6 +39,11 @@ namespace Gedaq.MySqlConnector
             throw new System.NotImplementedException();
         }
 
+        public override string GetParametrType()
+        {
+            return "MySqlParameter";
+        }
+
         public override string GetParametrValue(BaseParametr parametr, string source)
         {
             return $"{source}.Parameters[{parametr.Index}].Value";

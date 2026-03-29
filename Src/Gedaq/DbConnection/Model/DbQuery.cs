@@ -10,6 +10,8 @@ namespace Gedaq.DbConnection.Model
     internal class DbQuery : QueryBaseCommand
     {
         public DbParametr[] Parametrs;
+        public DbDynamicParametr DynamicParametrs;
+
         public override bool HaveParametrs()
         {
             return Parametrs?.Length != 0;
@@ -117,6 +119,16 @@ namespace Gedaq.DbConnection.Model
         public override IEnumerable<BaseParametr> BaseParametrs()
         {
             return Parametrs;
+        }
+
+        public override BaseDynamicParametr BaseDynamicParametrs()
+        {
+            return DynamicParametrs;
+        }
+
+        public override bool HaveDynamicParametrs()
+        {
+            return DynamicParametrs != null;
         }
     }
 }

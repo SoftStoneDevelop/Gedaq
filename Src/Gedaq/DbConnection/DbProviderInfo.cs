@@ -35,6 +35,11 @@ namespace Gedaq.DbConnection
             return "DbConnection";
         }
 
+        public override string GetParametrType()
+        {
+            return "DbParameter";
+        }
+
         public override string DefaultSourceTypeParametr()
         {
             return "connection";

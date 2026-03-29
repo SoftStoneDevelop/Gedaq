@@ -30,12 +30,9 @@ namespace Gedaq.DbConnection.Model
         internal static bool CreateNew(
             ImmutableArray<TypedConstant> namedArguments,
             INamedTypeSymbol containsType,
-            out DbParametr parametr,
-            out string methodName
-            )
+            out DbParametr parametr)
         {
             parametr = null;
-            methodName = null;
 
             if (namedArguments.Length != 12)
             {
@@ -116,8 +113,7 @@ namespace Gedaq.DbConnection.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol dbType) ||
-                !dbType.IsAssignableFrom("System.Data", "DbType")
-                )
+                !dbType.IsAssignableFrom("System.Data", "DbType"))
             {
                 return false;
             }

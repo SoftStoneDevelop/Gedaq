@@ -4,7 +4,6 @@ using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.MySqlConnector.Enums;
 using Microsoft.CodeAnalysis;
-using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 
@@ -14,6 +13,7 @@ namespace Gedaq.MySqlConnector.Model
     {
         public MySqlConnectorSourceType SourceType { get; private set; }
         public MySqlConnectorParametr[] Parametrs;
+        public MySqlConnectorDynamicParametr DynamicParametrs;
 
         private MySqlConnectorQuery()
         {
@@ -145,23 +145,32 @@ namespace Gedaq.MySqlConnector.Model
             return true;
         }
 
-        public override IEnumerable<BaseParametr> BaseParametrs()
-        {
-            return Parametrs;
-        }
-
         private bool FillSourceType(TypedConstant argument)
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol namedTypeSymbol4) ||
-                !namedTypeSymbol4.IsAssignableFrom("Gedaq.MySqlConnector.Enums", "SourceType")
-                )
+                !namedTypeSymbol4.IsAssignableFrom("Gedaq.MySqlConnector.Enums", "SourceType"))
             {
                 return false;
             }
 
             SourceType = (MySqlConnectorSourceType)argument.Value;
             return true;
+        }
+
+        public override IEnumerable<BaseParametr> BaseParametrs()
+        {
+            return Parametrs;
+        }
+
+        public override BaseDynamicParametr BaseDynamicParametrs()
+        {
+            return DynamicParametrs;
+        }
+
+        public override bool HaveDynamicParametrs()
+        {
+            return DynamicParametrs != null;
         }
     }
 }

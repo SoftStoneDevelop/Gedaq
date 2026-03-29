@@ -3,12 +3,16 @@ using System.Collections.Generic;
 
 namespace Gedaq.Base
 {
-    internal class ReadPair<Q, P> 
+    internal class ReadPair<Q, P, Z> 
         where P : BaseParametr
         where Q : QueryBaseCommand
+        where Z : BaseDynamicParametr
     {
         public Q Query { get; set; }
+
         public List<P> Parametrs { get; } = new List<P>();
+
+        public Z DynamicParametr { get; set; }
 
         public List<FormatParametr> FormatParametrs { get; } = new List<FormatParametr>();
 

@@ -22,6 +22,10 @@ namespace Gedaq.Base.Model
             return FormatParametrs != null;
         }
 
+        public abstract bool HaveDynamicParametrs();
+
+        public abstract BaseDynamicParametr BaseDynamicParametrs();
+
         public bool NeedGenerate;
 
         public abstract bool HaveParametrs();

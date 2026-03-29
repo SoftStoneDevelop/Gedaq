@@ -21,7 +21,10 @@ namespace Gedaq.Base
         public abstract string BatchType();
 
         public abstract string DefaultSourceType();
+
         public abstract string DefaultSourceTypeParametr();
+
+        public abstract string GetParametrType();
 
         public abstract string GetParametrValue(BaseParametr parametr, string source);
 

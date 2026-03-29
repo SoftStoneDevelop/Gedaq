@@ -43,6 +43,11 @@ namespace Gedaq.SqlClient
             return "connection";
         }
 
+        public override string GetParametrType()
+        {
+            return "SqlParameter";
+        }
+
         public override string GetParametrValue(BaseParametr parametr, string source)
         {
             return $"{source}.Parameters[{parametr.Index}].Value";
