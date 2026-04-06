@@ -25,10 +25,10 @@ namespace TestsGenerator.Generators.PostgreSQL
             foreach (var dynamicParametrValue in dynamicParametrValues)
             {
                 SelectTestConfig(
-                model,
-                stringBuilder,
-                interfaceTypeName,
-                dynamicParametrValue);
+                    model,
+                    stringBuilder,
+                    interfaceTypeName,
+                    dynamicParametrValue);
 
                 SelectTest(
                     order,
