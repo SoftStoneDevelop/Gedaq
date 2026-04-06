@@ -140,7 +140,6 @@ namespace Gedaq.Npgsql
                             DiagnosticConstants.BatchNumberUnique,
                             $"Batch number must be unique in batch:'{batchPair.Batch.MethodName}'",
                             DiagnosticSeverity.Error);
-                        return;
                     }
 
                     if(!_readContainsType.TryGetValue(part.MethodName, out var queryRead))
@@ -166,7 +165,8 @@ namespace Gedaq.Npgsql
                         _context,
                         DiagnosticConstants.AmbiguityOfParameterTypes,
                         DiagnosticConstants.AmbiguityOfParameterTypesDescr,
-                        DiagnosticSeverity.Error);
+                        DiagnosticSeverity.Error,
+                        batchPair.Batch.MethodName);
                 }
 
                 batchPair.Batch.Queries = queries.OrderBy(or => or.Number).ToArray();

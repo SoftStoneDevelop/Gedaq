@@ -847,13 +847,11 @@ namespace Gedaq.Base.Query
 
             if (methodType == MethodType.Async)
             {
-                builder.Append($@"
-                , false, cancellationToken)");
+                builder.Append($@", false, cancellationToken)");
             }
             else
             {
-                builder.Append($@"
-                , false)");
+                builder.Append($@", false)");
             }
         }
 

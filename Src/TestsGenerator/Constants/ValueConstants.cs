@@ -4,4 +4,9 @@
     {
         public readonly static string NullValue = "null";
     }
+
+    internal static class NameConstants
+    {
+        public readonly static string DynamicParametr = "DynPar";
+    }
 }

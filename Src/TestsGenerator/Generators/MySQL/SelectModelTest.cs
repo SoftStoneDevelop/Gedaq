@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
@@ -84,7 +85,7 @@ ORDER BY
 [Gedaq.MySqlConnector.Attributes.Query(
             query: {query},
             sourceType: SourceType.MySqlConnection,
-            methodName:""{_testName}{(dynamicParametr ? "DynPar" : "")}"",
+            methodName:""{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}"",
             queryMapType: typeof({model.ClassName}),
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
@@ -108,7 +109,7 @@ Gedaq.MySqlConnector.Attributes.Parametr(
             }
 
             stringBuilder.Append($@"]
-        private void {_testName}{(dynamicParametr ? "DynPar" : "")}Config()
+        private void {_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}Config()
         {{
         }}
 ");
@@ -128,7 +129,7 @@ Gedaq.MySqlConnector.Attributes.Parametr(
 
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task {_testName}{(dynamicParametr ? "DynPar" : "")}Test{async}()
+        public async Task {_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}Test{async}()
         {{
             await using (var connection = GlobalSetUp.GetConnection)
             {{
@@ -142,12 +143,12 @@ Gedaq.MySqlConnector.Attributes.Parametr(
                 parametr1.MySqlDbType = (MySqlConnector.MySqlDbType)(3);
                 parametr1.ParameterName = ""id"";
 
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{(dynamicParametr ? "DynPar" : "")}{async}(connection, [parametr1]);");
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}{async}(connection, [parametr1]);");
             }
             else
             {
                 stringBuilder.Append($@"
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{(dynamicParametr ? "DynPar" : "")}{async}(connection, 0);");
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}{async}(connection, 0);");
             }
 
             stringBuilder.Append($@"

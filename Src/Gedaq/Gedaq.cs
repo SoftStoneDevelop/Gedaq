@@ -121,7 +121,7 @@ namespace Gedaq
             ImmutableArray<TypeDeclarationSyntax> partialGroup,
             SourceProductionContext context)
         {
-            //System.Diagnostics.Debugger.Launch();
+            // System.Diagnostics.Debugger.Launch();
 
             if (!partialGroup.Any())
             {

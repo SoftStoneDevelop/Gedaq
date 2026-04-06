@@ -20,8 +20,7 @@ namespace Gedaq.Base.Batch
         public void Generate(
             QueryBatchCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             if (source.MethodType.HasFlag(MethodType.Sync))
             {
@@ -37,8 +36,7 @@ namespace Gedaq.Base.Batch
         protected virtual void ReadMethod(
             QueryBatchCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             ReadMethodInner(
                 source,
@@ -47,15 +45,13 @@ namespace Gedaq.Base.Batch
                 ProviderInfo.DefaultSourceType(),
                 ProviderInfo.DefaultSourceTypeParametr(),
                 needCheckOpen: true,
-                interfaceGenerator
-                );
+                interfaceGenerator);
         }
 
         protected virtual void ReadAsyncMethod(
             QueryBatchCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             ReadMethodInner(
                 source,
@@ -70,8 +66,7 @@ namespace Gedaq.Base.Batch
 
         public string ReadMethodName(
             QueryBatchCommand source,
-            MethodType methodType
-            )
+            MethodType methodType)
         {
             if(methodType == MethodType.Sync)
             {
@@ -90,16 +85,15 @@ namespace Gedaq.Base.Batch
             string sourceTypeName,
             string sourceParametrName,
             bool needCheckOpen,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             ReadMethodDefinition(
                 source,
                 methodType,
                 builder,
                 sourceTypeName,
-                sourceParametrName
-                );
+                sourceParametrName);
+
             if (source.AsPartInterface)
             {
                 ReadMethodDefinition(
@@ -108,17 +102,16 @@ namespace Gedaq.Base.Batch
                     interfaceGenerator.DefinitionBuilder(),
                     sourceTypeName,
                     sourceParametrName,
-                    forInterface: true
-                    );
+                    forInterface: true);
                 interfaceGenerator.AddMethodDefinition();
             }
+
             ReadMethodBody(
                 source,
                 needCheckOpen: needCheckOpen,
                 sourceParametrName,
                 methodType,
-                builder
-                );
+                builder);
         }
 
         private void ReadMethodDefinition(
@@ -127,8 +120,7 @@ namespace Gedaq.Base.Batch
             StringBuilder builder,
             string sourceTypeName,
             string sourceParametrName,
-            bool forInterface = false
-            )
+            bool forInterface = false)
         {
             string ExecuteReturnType()
             {
@@ -201,8 +193,7 @@ namespace Gedaq.Base.Batch
             bool needCheckOpen,
             string sourceParametrName,
             MethodType methodType,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
@@ -230,8 +221,7 @@ namespace Gedaq.Base.Batch
 
             _commandGenerator.CreateCommand(source, sourceParametrName, methodType, builder);
 
-            builder.Append($@"
-                ;");
+            builder.Append($@";");
 
             _commandGenerator.WriteSetParametrs(source, builder, ProviderInfo);
             _commandGenerator.ExecuteReadBody(source, methodType, builder);

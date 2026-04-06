@@ -132,7 +132,7 @@ ORDER BY
             stringBuilder.Append($@"
 [Gedaq.DbConnection.Attributes.Query(
             query: {query},
-            methodName:""DbConnection{_testName}{(dynamicParametr ? "DynPar" : "")}"",
+            methodName:""DbConnection{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}"",
             queryMapType: typeof({model.ClassName}),
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
@@ -156,7 +156,7 @@ Gedaq.DbConnection.Attributes.Parametr(
             }
 
             stringBuilder.Append($@"]
-        private void DbConnection{_testName}{(dynamicParametr ? "DynPar" : "")}Config()
+        private void DbConnection{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}Config()
         {{
         }}
 ");
@@ -176,7 +176,7 @@ Gedaq.DbConnection.Attributes.Parametr(
 
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task DbConnection{_testName}{(dynamicParametr ? "DynPar" : "")}Test{async}()
+        public async Task DbConnection{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}Test{async}()
         {{
             await using (var connection = GlobalSetUp.GetDbConnection)
             {{
@@ -190,12 +190,12 @@ Gedaq.DbConnection.Attributes.Parametr(
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = ""id"";
 
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{(dynamicParametr ? "DynPar" : "")}{async}(connection, [parametr1]);");
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}{async}(connection, [parametr1]);");
             }
             else
             {
                 stringBuilder.Append($@"
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{(dynamicParametr ? "DynPar" : "")}{async}(connection, 0);");
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}{async}(connection, 0);");
             }
 
             stringBuilder.Append($@"
@@ -428,29 +428,34 @@ ORDER BY
                 }
             }
 
-            SelectBatchReadTestConfig(stringBuilder, interfaceTypeName);
-            SelectBatchReadTest(order, orderedValues, model, stringBuilder, false, interfaceTypeName);
-            SelectBatchReadTest(order, orderedValues, model, stringBuilder, true, interfaceTypeName);
+            Span<bool> dynamicParametrValues = [true, false];
+            foreach (var dynamicParametrValue in dynamicParametrValues)
+            {
+                SelectBatchReadTestConfig(stringBuilder, interfaceTypeName, withDynamicParameters: dynamicParametrValue);
+                SelectBatchReadTest(order, orderedValues, model, stringBuilder, false, interfaceTypeName, withDynamicParameters: dynamicParametrValue);
+                SelectBatchReadTest(order, orderedValues, model, stringBuilder, true, interfaceTypeName, withDynamicParameters: dynamicParametrValue);
+            }
         }
 
         private static void SelectBatchReadTestConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
-            string interfaceTypeName)
+            string interfaceTypeName,
+            bool withDynamicParameters)
         {
             stringBuilder.Append($@"
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: ""DbConnection{_testName}Batch"",
+            batchName: ""DbConnection{_testName}{(withDynamicParameters ? NameConstants.DynamicParametr : "")}Batch"",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
             asPartInterface: typeof({interfaceTypeName})),
 Gedaq.DbConnection.Attributes.BatchPart(
-            methodName: ""DbConnection{_testName}"",
+            methodName: ""DbConnection{_testName}{(withDynamicParameters ? NameConstants.DynamicParametr : "")}"",
             position: 1),
 Gedaq.DbConnection.Attributes.BatchPart(
-            methodName: ""DbConnection{_testName}"",
+            methodName: ""DbConnection{_testName}{(withDynamicParameters ? NameConstants.DynamicParametr : "")}"",
             position: 2)]
-        private void DbConnection{_testName}BatchConfig()
+        private void DbConnection{_testName}{(withDynamicParameters ? NameConstants.DynamicParametr : "")}BatchConfig()
         {{
         }}
 ");
@@ -462,7 +467,8 @@ Gedaq.DbConnection.Attributes.BatchPart(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync,
-            string interfaceTypeName)
+            string interfaceTypeName,
+            bool withDynamicParameters)
         {
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -471,20 +477,39 @@ Gedaq.DbConnection.Attributes.BatchPart(
             var secondBatchStart = Random.Shared.Next(0, orderedValues.Count - 2);
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task DbConnection{_testName}BatchTest{async}()
+        public async Task DbConnection{_testName}{(withDynamicParameters ? NameConstants.DynamicParametr : "")}BatchTest{async}()
         {{
             await using (var connection = GlobalSetUp.GetDbConnection)
             {{
                 await connection.OpenAsync();
-                int resultIndex = 0;
-                foreach(var batchResult in {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}Batch{async}(connection, {orderedValues[firstBatchStart].Id}, {orderedValues[secondBatchStart].Id}))
+                int resultIndex = 0;");
+            if (withDynamicParameters)
+            {
+                stringBuilder.Append($@"
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = {orderedValues[firstBatchStart].Id};
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = ""id"";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = {orderedValues[secondBatchStart].Id};
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = ""id"";
+
+                foreach(var batchResult in {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{(withDynamicParameters ? NameConstants.DynamicParametr : "")}Batch{async}(connection, [parametr1], [parametr2]))");
+            }
+            else
+            {
+                stringBuilder.Append($@"
+                foreach(var batchResult in {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{(withDynamicParameters ? NameConstants.DynamicParametr : "")}Batch{async}(connection, {orderedValues[firstBatchStart].Id}, {orderedValues[secondBatchStart].Id}))");
+            }
+
+            firstBatchStart++;
+            stringBuilder.Append($@"
                 {{
                     if(++resultIndex == 1)
                     {{
                         var models = batchResult;
-");
-            firstBatchStart++;
-            stringBuilder.Append($@"
                         Assert.That(models, Has.Count.EqualTo({orderedValues.Count - firstBatchStart}));
 ");
             var index = 0;
