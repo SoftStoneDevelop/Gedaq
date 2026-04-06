@@ -107,7 +107,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
                 for(int modelIndex = 0; modelIndex < expectCount; modelIndex++)
                 {{
                     var model = models[modelIndex];
-                    var expectedModel = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInner.IdName} == model.{model.ModelInner.IdName}).{model.ModelInnerName};
+                    var expectedModel = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInnerName}.{model.ModelInner.IdName} == model.{model.ModelInner.IdName}).{model.ModelInnerName};
                     {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(model, expectedModel, false);
                 }}
             }}
