@@ -190,6 +190,7 @@ namespace Gedaq.Base.Query
 
             _commandGenerator.AddParametrs(source, builder, useInAndOut);
             _commandGenerator.AddFormatParametrs(source, builder);
+            _commandGenerator.AddDynamicParametrs(source, builder);
 
             builder.Append($@",
             int? timeout = null");
