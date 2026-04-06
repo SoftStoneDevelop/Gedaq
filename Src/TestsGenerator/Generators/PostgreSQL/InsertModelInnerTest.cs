@@ -44,7 +44,7 @@ namespace TestsGenerator.Generators.PostgreSQL
                 isAsync: true, 
                 interfaceTypeName);
 
-            InsertModelInnerReturningTest(
+            InsertModelInnerReturningScalarTest(
                 order, 
                 stringBuilder, 
                 storage, 
@@ -56,7 +56,7 @@ namespace TestsGenerator.Generators.PostgreSQL
 
             var canDbConnection = model.TypeInfo.EnumerableType == EnumerableType.SingleType;
             int endIndex = !canDbConnection ? storage.Values.Count : indexValue + 4;
-            InsertModelInnerReturningTest(
+            InsertModelInnerReturningScalarTest(
                 order, 
                 stringBuilder, 
                 storage, 
@@ -223,7 +223,7 @@ RETURNING
 ");
         }
 
-        private static void InsertModelInnerReturningTest(
+        private static void InsertModelInnerReturningScalarTest(
             int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             ModelValueStorage storage,
@@ -239,7 +239,7 @@ RETURNING
             var async = isAsync ? "Async" : string.Empty;
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task {_testName}TestReturning{async}()
+        public async Task {_testName}TestReturningScalar{async}()
         {{
             await using (var connection = GlobalSetUp.GetConnection)
             {{
