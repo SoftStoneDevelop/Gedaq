@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
@@ -107,52 +106,12 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
             await using (var connection = GlobalSetUp.GetConnection)
             {{
                 await connection.OpenAsync();
-");
-            var index = 0;
-            stringBuilder.Append($@"
-                var expected = new Dictionary<{model.IdTypeInfo.ItemTypeFullName},{model.ClassName}>({storage.Count});
-");
-            for (; index < storage.Count; index++)
-            {
-                ModelValue value = storage[index];
-                stringBuilder.Append($@"
-                expected.Add(
-                    {value.IdValue},
-                    new {model.ClassName}
-                    {{
-                        {model.IdName} = {value.IdValue},
-                        {model.ValueName} = {value.Value},
-                        {model.NullableValueName} = {value.NullableValue},
-");
-                if(value.InnerModel == null)
-                {
-                    stringBuilder.Append($@"
-                        {model.ModelInnerName} = {ValueConstants.NullValue}
-");
-                }
-                else
-                {
-                    stringBuilder.Append($@"
-                        {model.ModelInnerName} = new {model.ModelInner.ClassName}
-                        {{
-                            {model.ModelInner.IdName} = {value.InnerModel.IdValue},
-                            {model.ModelInner.ValueName} = {value.InnerModel.Value},
-                            {model.ModelInner.NullableValueName} = {value.InnerModel.NullableValue}
-                        }}
-");
-                }
-                stringBuilder.Append($@"
-                    }}
-                );
-");
-            }
-            stringBuilder.Append($@"
                 var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection).ToList{async}();
-                Assert.That(models, Has.Count.EqualTo(expected.Count));
-                for(int modelIndex = 0; modelIndex < models.Count; modelIndex++)
+                Assert.That(models, Has.Count.EqualTo({TestsPart.TestDataArrayName}.Count()));
+                for(int modelIndex = 0; modelIndex < {TestsPart.TestDataArrayName}.Count(); modelIndex++)
                 {{
                     var model = models[modelIndex];
-                    var expectedModel = expected[model.{model.ModelInner.IdName}];
+                    var expectedModel = {TestsPart.TestDataArrayName}.First(wh => wh.{model.IdName} == model.{model.IdName});
                     {model.ClassName}.{ModelGenerator.AssertMethodName}(model, expectedModel, true);
                 }}
             }}

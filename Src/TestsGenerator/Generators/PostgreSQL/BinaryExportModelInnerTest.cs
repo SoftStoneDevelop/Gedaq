@@ -101,38 +101,13 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
             await using (var connection = GlobalSetUp.GetConnection)
             {{
                 await connection.OpenAsync();
-");
-            var index = 0;
-            stringBuilder.Append($@"
-                var expected = new Dictionary<{model.ModelInner.IdTypeInfo.ItemTypeFullName},{model.ModelInner.ClassName}>({storage.Count});
-");
-            for (; index < storage.Count; index++)
-            {
-                InnerModelValue value = storage[index].InnerModel;
-                if (storage[index].InnerModel == null)
-                {
-                    continue;
-                }
-
-                stringBuilder.Append($@"
-                expected.Add(
-                    {value.IdValue},
-                    new {model.ModelInner.ClassName}
-                    {{
-                        {model.ModelInner.IdName} = {value.IdValue},
-                        {model.ModelInner.ValueName} = {value.Value},
-                        {model.ModelInner.NullableValueName} = {value.NullableValue}
-                    }}
-                );
-");
-            }
-            stringBuilder.Append($@"
                 var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection).ToList{async}();
-                Assert.That(models, Has.Count.EqualTo(expected.Count));
-                for(int modelIndex = 0; modelIndex < models.Count; modelIndex++)
+                var expectCount = {TestsPart.TestDataArrayName}.Where(wh => wh.{model.ModelInnerName} != null).Count();
+                Assert.That(models, Has.Count.EqualTo(expectCount));
+                for(int modelIndex = 0; modelIndex < expectCount; modelIndex++)
                 {{
                     var model = models[modelIndex];
-                    var expectedModel = expected[model.{model.ModelInner.IdName}];
+                    var expectedModel = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInner.IdName} == model.{model.ModelInner.IdName}).{model.ModelInnerName};
                     {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(model, expectedModel, false);
                 }}
             }}
