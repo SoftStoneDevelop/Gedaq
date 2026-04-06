@@ -5,7 +5,7 @@
 		<Features>$(Features);experimental-data-section-string-literals</Features>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Gedaq.DbConnection" Version="9.0.0.1" />
+		<PackageReference Include="Gedaq.DbConnection" Version="9.1.0-beta" />
 		<PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.0" />
 		<PackageReference Include="System.Linq.Async" Version="7.0.0" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.3.0" />
