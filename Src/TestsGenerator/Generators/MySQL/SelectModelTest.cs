@@ -86,7 +86,7 @@ ORDER BY
             query: {query},
             sourceType: SourceType.MySqlConnection,
             methodName:""{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}"",
-            queryMapType: typeof({model.ClassName}),
+            queryMapTypes: [typeof({model.ClassName})],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,

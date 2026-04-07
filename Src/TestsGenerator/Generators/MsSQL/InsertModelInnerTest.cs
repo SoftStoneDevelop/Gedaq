@@ -77,7 +77,7 @@ VALUES (
 );
 "",
             methodName:""{_testName}"",
-            queryMapType: null,
+            queryMapTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.NonQuery,
             generate: true,

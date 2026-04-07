@@ -138,7 +138,7 @@ namespace Gedaq.MySqlConnector
                         firstRead = queryRead;
                     }
 
-                    batchPair.Batch.AllSameTypes &= ImmutableArrayExtensions.SequenceEqual(firstRead.MapTypes, queryRead.MapTypes, SymbolEqualityComparer.Default);
+                    batchPair.Batch.AllSameTypes &= CollectionHelper.SequnceEqual(firstRead.MapTypes, queryRead.MapTypes, SymbolEqualityComparer.Default);
                     batchPair.Batch.HaveParametrs |= queryRead.HaveParametrs();
                     batchPair.Batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
                     batchPair.Batch.HaveDynamicParametrs |= queryRead.HaveDynamicParametrs();
@@ -200,7 +200,8 @@ namespace Gedaq.MySqlConnector
                     _context,
                     DiagnosticConstants.AmbiguityOfParameterTypes,
                     DiagnosticConstants.AmbiguityOfParameterTypesDescr,
-                    DiagnosticSeverity.Error);
+                    DiagnosticSeverity.Error,
+                    query.MethodName);
             }
 
 

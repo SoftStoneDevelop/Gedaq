@@ -19,12 +19,13 @@ namespace Gedaq.Helpers
             {
                 var diagnostic = Diagnostic.Create(new DiagnosticDescriptor(
                     disgnocticId,
-                    string.Empty,
-                    string.Format(message, messageParameters),
-                    DiagnosticConstants.Source,
-                    diagnosticSeverity,
-                    true),
-                    null);
+                    title: "Generation Failed",
+                    messageFormat: message,
+                    category: DiagnosticConstants.Source,
+                    defaultSeverity: diagnosticSeverity,
+                    isEnabledByDefault: true),
+                    Location.None,
+                    messageParameters);
 
                 context.ReportDiagnostic(diagnostic);
             }

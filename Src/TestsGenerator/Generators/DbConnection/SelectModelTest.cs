@@ -133,7 +133,7 @@ ORDER BY
 [Gedaq.DbConnection.Attributes.Query(
             query: {query},
             methodName:""DbConnection{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}"",
-            queryMapType: typeof({model.ClassName}),
+            queryMapTypes: [typeof({model.ClassName})],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -276,7 +276,7 @@ ORDER BY
 [Gedaq.DbConnection.Attributes.Query(
             query: {query},
             methodName:""DbConnection{_testName}ToObjArr"",
-            queryMapType: typeof(object[]),
+            queryMapTypes: [typeof(object[])],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,

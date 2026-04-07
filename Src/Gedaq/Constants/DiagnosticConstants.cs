@@ -9,8 +9,11 @@ namespace Gedaq.Constants
     {
         public const string Source = "Gedaq";
 
+        public const string Exception = "GDC0000";
+        public const string ExceptionDescr = "Exception in generation: {0}; StackTrace: {1}";
+
         public const string IncorrectAttributeParametrsCount = "GDC0001";
-        public const string IncorrectAttributeParametrsCountDescr = "The number of attribute parameters does not match";
+        public const string IncorrectAttributeParametrsCountDescr = "The number of attribute parameters does not match: {0}";
 
         public const string IncorrectAttributeParametr = "GDC0002";
         public const string IncorrectAttributeParametrDescr = "Parameter {0}({1}) could not be parsed";
@@ -25,5 +28,7 @@ namespace Gedaq.Constants
         public const string DynamicParameterDuplicate = "GDC0007";
         public const string DynamicParameterDuplicateDescr = "DynamicParameterDuplicate";
 
+        public const string UnknownMapTypes = "GDC0008";
+        public const string UnknownMapTypesDescr = "The mapping type must be specified";
     }
 }

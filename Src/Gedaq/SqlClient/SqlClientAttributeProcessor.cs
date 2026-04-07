@@ -102,7 +102,8 @@ namespace Gedaq.SqlClient
                     _context,
                     DiagnosticConstants.AmbiguityOfParameterTypes,
                     DiagnosticConstants.AmbiguityOfParameterTypesDescr,
-                    DiagnosticSeverity.Error);
+                    DiagnosticSeverity.Error,
+                    query.MethodName);
             }
 
             if (query.NeedGenerate)

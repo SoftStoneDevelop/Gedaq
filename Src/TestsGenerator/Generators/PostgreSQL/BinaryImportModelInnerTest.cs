@@ -57,7 +57,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
 FROM STDIN (FORMAT BINARY)
 "",
             methodName:""{_testName}"",
-            queryMapType: typeof({model.ModelInner.ClassName}),
+            queryMapTypes: [typeof({model.ModelInner.ClassName})],
             dbTypes:
             new NpgsqlDbType[]
             {{
@@ -96,7 +96,7 @@ ORDER BY
 [Gedaq.DbConnection.Attributes.Query(
             query: {query},
             methodName:""Select{_testName}"",
-            queryMapType: typeof({model.ModelInner.ClassName}),
+            queryMapTypes: [typeof({model.ModelInner.ClassName})],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,

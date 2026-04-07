@@ -155,7 +155,7 @@ namespace Gedaq.Npgsql
                         firstRead = queryRead;
                     }
 
-                    batchPair.Batch.AllSameTypes &= ImmutableArrayExtensions.SequenceEqual(firstRead.MapTypes, queryRead.MapTypes, SymbolEqualityComparer.Default);
+                    batchPair.Batch.AllSameTypes &= CollectionHelper.SequnceEqual(firstRead.MapTypes, queryRead.MapTypes, SymbolEqualityComparer.Default);
                     batchPair.Batch.HaveParametrs |= queryRead.HaveParametrs();
                     batchPair.Batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
                     batchPair.Batch.HaveDynamicParametrs |= queryRead.HaveDynamicParametrs();
@@ -169,7 +169,8 @@ namespace Gedaq.Npgsql
                         _context,
                         DiagnosticConstants.AmbiguityOfParameterTypes,
                         DiagnosticConstants.AmbiguityOfParameterTypesDescr,
-                        DiagnosticSeverity.Error);
+                        DiagnosticSeverity.Error,
+                        batchPair.Batch.MethodName);
                 }
 
                 batchPair.Batch.Queries = queries.OrderBy(or => or.Number).ToArray();
@@ -212,7 +213,8 @@ namespace Gedaq.Npgsql
                     _context,
                     DiagnosticConstants.AmbiguityOfParameterTypes,
                     DiagnosticConstants.AmbiguityOfParameterTypesDescr,
-                    DiagnosticSeverity.Error);
+                    DiagnosticSeverity.Error,
+                    query.MethodName);
             }
 
             if (query.NeedGenerate)
@@ -357,7 +359,7 @@ namespace Gedaq.Npgsql
 
         private void ProcessBinaryExport(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
         {
-            if (!BinaryExport.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var binaryExport))
+            if (!BinaryExport.CreateNew(_context, queryReadAttribute.ConstructorArguments, containsType, out var binaryExport))
             {
                 throw new Exception($"Unknown {nameof(BinaryExport)} constructor");
             }
@@ -369,7 +371,7 @@ namespace Gedaq.Npgsql
 
         private void ProcessBinaryImport(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
         {
-            if (!BinaryImport.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var binaryImport))
+            if (!BinaryImport.CreateNew(_context, queryReadAttribute.ConstructorArguments, containsType, out var binaryImport))
             {
                 throw new Exception($"Unknown {nameof(BinaryExport)} constructor");
             }

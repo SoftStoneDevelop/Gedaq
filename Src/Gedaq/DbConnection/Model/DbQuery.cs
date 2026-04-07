@@ -14,7 +14,7 @@ namespace Gedaq.DbConnection.Model
 
         public override bool HaveParametrs()
         {
-            return Parametrs?.Length != 0;
+            return Parametrs?.Length > 0;
         }
 
         internal static bool CreateNew(
@@ -30,7 +30,8 @@ namespace Gedaq.DbConnection.Model
                     context,
                     DiagnosticConstants.IncorrectAttributeParametrsCount,
                     DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
-                    DiagnosticSeverity.Error);
+                    DiagnosticSeverity.Error,
+                    namedArguments.Length.ToString());
 
                 return false;
             }
@@ -72,19 +73,19 @@ namespace Gedaq.DbConnection.Model
                 return false;
             }
 
-            if (!methodSource.FillQueryType(namedArguments[4]))
+            if (!methodSource.FillQueryType(namedArguments[5]))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametr,
                     DiagnosticConstants.IncorrectAttributeParametrDescr,
                     DiagnosticSeverity.Error,
-                    new string[] { "5", nameof(QueryType) });
+                    new string[] { "6", nameof(QueryType) });
 
                 return false;
             }
 
-            if (!methodSource.FillGenerate(namedArguments[5]))
+            if (!methodSource.FillGenerate(namedArguments[6]))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,

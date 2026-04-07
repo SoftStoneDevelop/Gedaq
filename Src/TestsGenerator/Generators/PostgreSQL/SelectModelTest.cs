@@ -87,7 +87,7 @@ ORDER BY
 [Gedaq.Npgsql.Attributes.Query(
             query: {query},
             methodName:""{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}"",
-            queryMapType: typeof({model.ClassName}),
+            queryMapTypes: [typeof({model.ClassName})],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,

@@ -21,7 +21,7 @@ namespace Gedaq.MySqlConnector.Model
 
         public override bool HaveParametrs()
         {
-            return Parametrs != null;
+            return Parametrs?.Length > 0;
         }
 
         internal static bool CreateNew(
@@ -31,13 +31,14 @@ namespace Gedaq.MySqlConnector.Model
             out MySqlConnectorQuery method)
         {
             method = null;
-            if (namedArguments.Length != 11)
+            if (namedArguments.Length != 12)
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametrsCount,
-                    "The number of attribute parameters does not match",
-                    DiagnosticSeverity.Error);
+                    DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
+                    DiagnosticSeverity.Error,
+                    namedArguments.Length.ToString());
 
                 return false;
             }
@@ -48,52 +49,69 @@ namespace Gedaq.MySqlConnector.Model
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametr,
-                    "Parameter 2 (Query) could not be parsed",
-                    DiagnosticSeverity.Error);
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "2", nameof(Query) });
 
                 return false;
             }
 
-            if (!methodSource.FillMapType(namedArguments[2]))
+            if (!methodSource.FillMapTypes(namedArguments[2]))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametr,
-                    "Parameter 3 (MapType) could not be parsed",
-                    DiagnosticSeverity.Error);
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "3", nameof(MapTypes) });
 
                 return false;
             }
 
-            if (!methodSource.FillSourceType(namedArguments[4]))
+            if (!methodSource.FillOverrideAliasPrefixs(namedArguments[3]))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametr,
-                    "Parameter 5 (SourceType) could not be parsed",
-                    DiagnosticSeverity.Error);
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "4", nameof(OverrideAliasPrefixs) });
 
                 return false;
             }
 
-            if (!methodSource.FillQueryType(namedArguments[5]))
+            if (!methodSource.FillSourceType(namedArguments[5]))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametr,
-                    "Parameter 6 (QueryType) could not be parsed",
-                    DiagnosticSeverity.Error);
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "6", nameof(SourceType) });
 
                 return false;
             }
 
-            if (!methodSource.FillGenerate(namedArguments[6]))
+            if (!methodSource.FillQueryType(namedArguments[6]))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametr,
-                    "Parameter 7 (Generate) could not be parsed",
-                    DiagnosticSeverity.Error);
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "7", nameof(QueryType) });
+
+                return false;
+            }
+
+            if (!methodSource.FillGenerate(namedArguments[7]))
+            {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "8", nameof(NeedGenerate) });
 
                 return false;
             }
@@ -101,17 +119,17 @@ namespace Gedaq.MySqlConnector.Model
             methodSource.MethodInfo =
                 new BaseMethodInfo(
                     namedArguments[0],
-                    namedArguments[3],
-                    namedArguments[7],
+                    namedArguments[4],
                     namedArguments[8],
+                    namedArguments[9],
                     containsType);
 
-            if (methodSource.MapTypeName == null && methodSource.QueryType.HasFlag(QueryType.Read))
+            if (!methodSource.HaveMapTypes && methodSource.QueryType.HasFlag(QueryType.Read))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametr,
-                    "For the 'Read' type, the mapping type must be specified",
+                    $"For the '{nameof(QueryType.Read)}' type, the mapping type must be specified",
                     DiagnosticSeverity.Error);
 
                 return false;
@@ -120,24 +138,26 @@ namespace Gedaq.MySqlConnector.Model
             methodSource.ContainTypeName = containsType;
             method = methodSource;
 
-            if (!methodSource.SetPartInterfaceType(namedArguments[9]))
+            if (!methodSource.SetPartInterfaceType(namedArguments[10]))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametr,
-                    "Parameter 10 (PartInterfaceType) could not be parsed",
-                    DiagnosticSeverity.Error);
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "11", nameof(PartInterfaceType) });
 
                 return false;
             }
 
-            if (!methodSource.FillReturnType(namedArguments[10]))
+            if (!methodSource.FillReturnType(namedArguments[11]))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametr,
-                    "Parameter 11 (ReturnType) could not be parsed",
-                    DiagnosticSeverity.Error);
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "12", nameof(PartInterfaceType) });
 
                 return false;
             }

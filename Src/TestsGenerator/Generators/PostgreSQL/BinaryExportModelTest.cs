@@ -64,7 +64,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
 ) TO STDOUT (FORMAT BINARY)
 "",
             methodName:""{_testName}"",
-            queryMapType: typeof({model.ClassName}),
+            queryMapTypes: [typeof({model.ClassName})],
             dbTypes:
             new NpgsqlDbType[]
             {{

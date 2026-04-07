@@ -39,7 +39,7 @@ select * from readfixturefunc(@inParam);
 select out1, out2 from readfixturefunc(@inParam);
 ",
             methodName: "ReadFunc",
-            queryMapType: typeof(ReadFunc),
+            queryMapTypes: [typeof(ReadFunc)],
             queryType: Gedaq.Common.Enums.QueryType.Read
             ),
             Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)
@@ -83,7 +83,7 @@ WHERE p.id = @personId
 ORDER BY p.id ASC
 ",
             methodName: "ReadFuncPerson",
-            queryMapType: typeof(ReadFunc),
+            queryMapTypes: [typeof(ReadFunc)],
             queryType: Gedaq.Common.Enums.QueryType.Read),
             Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input),
             Parametr(parametrType: typeof(int), parametrName: "personId", direction: ParameterDirection.Input)

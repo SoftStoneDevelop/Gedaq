@@ -85,7 +85,7 @@ ORDER BY
 [Gedaq.SqlClient.Attributes.Query(
             query: {query},
             methodName:""{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}"",
-            queryMapType: typeof({model.ClassName}),
+            queryMapTypes: [typeof({model.ClassName})],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,

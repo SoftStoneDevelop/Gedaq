@@ -653,8 +653,8 @@ namespace Gedaq.Base.Query
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async "
-                ;
+                "async ";
+
             var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
             var returnType = methodType == MethodType.Sync ? typeName : $"{source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}>";
 
@@ -994,7 +994,6 @@ namespace Gedaq.Base.Query
             out bool isRowsAffected,
             out string typeName)
         {
-            var mapType = source.MapTypes[0];
             if (source.Aliases.IsRowsAffected)
             {
                 if (source.QueryType != Enums.QueryType.NonQuery)
@@ -1008,6 +1007,7 @@ namespace Gedaq.Base.Query
                 return;
             }
 
+            var mapType = source.MapTypes[0];
             isRowsAffected = false;
             if (providerInfo.IsKnownProviderType(mapType) || providerInfo.IsSpecialHandlerType(mapType))
             {
@@ -1020,7 +1020,6 @@ namespace Gedaq.Base.Query
             mapType.GetPropertyOrFieldName(firstField.Name, out _, out var typeProp);
             type = typeProp;
             typeName = type.GetFullTypeName(replaceNullable: true);
-            return;
         }
     }
 }

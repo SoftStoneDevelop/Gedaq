@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.Constants;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
@@ -42,52 +43,114 @@ namespace Gedaq.Npgsql.Model
             Aliases = aliases;
         }
 
-        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out BinaryImport method)
+        internal static bool CreateNew(
+            SourceProductionContext context,
+            ImmutableArray<TypedConstant> namedArguments,
+            INamedTypeSymbol containsType,
+            out BinaryImport method)
         {
             method = null;
-            if (namedArguments.Length != 9)
+            if (namedArguments.Length != 10)
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametrsCount,
+                    DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
+                    DiagnosticSeverity.Error,
+                    namedArguments.Length.ToString());
+
                 return false;
             }
 
             var methodSource = new BinaryImport();
             if (!methodSource.FillQuery(namedArguments[0]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "1", nameof(Query) });
+
                 return false;
             }
 
             if (!methodSource.FillMapTypes(namedArguments[2]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "3", nameof(MapTypes) });
+
                 return false;
             }
 
-            if (!methodSource.FillNpgsqlDbTypes(namedArguments[3]))
+            if (!methodSource.FillOverrideAliasPrefixs(namedArguments[3]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "4", nameof(OverrideAliasPrefixs) });
+
                 return false;
             }
 
-            if (!methodSource.FillSourceType(namedArguments[5]))
+            if (!methodSource.FillNpgsqlDbTypes(namedArguments[4]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "5", nameof(NpgSqlDbTypes) });
+
+                return false;
+            }
+
+            if (!methodSource.FillSourceType(namedArguments[6]))
+            {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "7", nameof(SourceType) });
+
                 return false;
             }
 
             methodSource.MethodInfo =
                 new BaseMethodInfo(
                     namedArguments[1],
-                    namedArguments[4],
-                    namedArguments[6],
+                    namedArguments[5],
                     namedArguments[7],
+                    namedArguments[8],
                     containsType);
 
-            if (methodSource.MapTypes == null)
+            if (!methodSource.HaveMapTypes)
             {
-                throw new Exception("The mapping type must be specified");
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.UnknownMapTypes,
+                    DiagnosticConstants.UnknownMapTypesDescr,
+                    DiagnosticSeverity.Error);
             }
 
             methodSource.ContainTypeName = containsType;
             method = methodSource;
-            if (!methodSource.SetPartInterfaceType(namedArguments[8]))
+            if (!methodSource.SetPartInterfaceType(namedArguments[9]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "10", nameof(PartInterfaceType) });
+
                 return false;
             }
 

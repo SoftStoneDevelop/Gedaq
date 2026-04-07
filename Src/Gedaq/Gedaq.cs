@@ -1,10 +1,14 @@
 ﻿using Gedaq.Comparers;
+using Gedaq.Constants;
+using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Diagnostics;
 using System.Linq;
 
 namespace Gedaq
@@ -136,17 +140,30 @@ namespace Gedaq
             //");
             //}
 
-            var processor = new AttributeProcessor(context);
-            foreach (var typeDeclarationSyntax in partialGroup)
+            try
             {
-                processor.TryFillFrom(
-                    typeDeclarationSyntax,
-                    compilation,
-                    (INamedTypeSymbol)compilation.GetSemanticModel(typeDeclarationSyntax.SyntaxTree).GetDeclaredSymbol(typeDeclarationSyntax));
-            }
+                var processor = new AttributeProcessor(context);
+                foreach (var typeDeclarationSyntax in partialGroup)
+                {
+                    processor.TryFillFrom(
+                        typeDeclarationSyntax,
+                        compilation,
+                        (INamedTypeSymbol)compilation.GetSemanticModel(typeDeclarationSyntax.SyntaxTree).GetDeclaredSymbol(typeDeclarationSyntax));
+                }
 
-            processor.CompleteProcessContainTypes();
-            processor.GenerateAndSaveMethods();
+                processor.CompleteProcessContainTypes();
+                processor.GenerateAndSaveMethods();
+            }
+            catch (Exception ex)
+            {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.Exception,
+                    DiagnosticConstants.ExceptionDescr,
+                    DiagnosticSeverity.Error,
+                    ex.Message,
+                    ex.StackTrace);
+            }
         }
     }
 }

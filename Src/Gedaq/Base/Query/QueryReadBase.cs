@@ -122,20 +122,26 @@ namespace Gedaq.Base.Query
         {
             string ExecuteCommandReturnType()
             {
+                if (source.IsCollectionDelegateMap)
+                {
+                    return "void";
+                }
+
+                var mapType = source.MapTypes[0];
                 switch (source.ReturnType)
                 {
                     case ReturnType.Enumerable:
                     {
                         return methodType == MethodType.Async ?
-                            $"IAsyncEnumerable<{_commandGenerator.ItemTypeName(source)}>" :
-                            $"IEnumerable<{_commandGenerator.ItemTypeName(source)}>";
+                            $"IAsyncEnumerable<{_commandGenerator.ItemTypeName(mapType)}>" :
+                            $"IEnumerable<{_commandGenerator.ItemTypeName(mapType)}>";
                     }
 
                     case ReturnType.List:
                     {
                         return methodType == MethodType.Async ?
-                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Collections.Generic.List<{_commandGenerator.ItemTypeName(source)}>>" :
-                            $"System.Collections.Generic.List<{_commandGenerator.ItemTypeName(source)}>";
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Collections.Generic.List<{_commandGenerator.ItemTypeName(mapType)}>>" :
+                            $"System.Collections.Generic.List<{_commandGenerator.ItemTypeName(mapType)}>";
                     }
 
                     case ReturnType.Single:
@@ -145,8 +151,8 @@ namespace Gedaq.Base.Query
                     default:
                     {
                         return methodType == MethodType.Async ?
-                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{_commandGenerator.ItemTypeName(source)}>" :
-                            $"{_commandGenerator.ItemTypeName(source)}";
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{_commandGenerator.ItemTypeName(mapType)}>" :
+                            $"{_commandGenerator.ItemTypeName(mapType)}";
                     }
                 }
             }

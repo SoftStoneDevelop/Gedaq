@@ -22,7 +22,7 @@ namespace Gedaq.Npgsql.Model
 
         public override bool HaveParametrs()
         {
-            return Parametrs != null;
+            return Parametrs?.Length > 0;
         }
 
         internal static bool CreateNew(
@@ -32,13 +32,14 @@ namespace Gedaq.Npgsql.Model
             out NpgsqlQuery method)
         {
             method = null;
-            if (namedArguments.Length != 11)
+            if (namedArguments.Length != 12)
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametrsCount,
                     DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
-                    DiagnosticSeverity.Error);
+                    DiagnosticSeverity.Error,
+                    namedArguments.Length.ToString());
 
                 return false;
             }
@@ -124,7 +125,7 @@ namespace Gedaq.Npgsql.Model
                     namedArguments[9],
                     containsType);
 
-            if (methodSource.MapTypes == null && methodSource.QueryType.HasFlag(QueryType.Read))
+            if (!methodSource.HaveMapTypes && methodSource.QueryType.HasFlag(QueryType.Read))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
@@ -137,6 +138,7 @@ namespace Gedaq.Npgsql.Model
 
             methodSource.ContainTypeName = containsType;
             method = methodSource;
+
             if (!methodSource.SetPartInterfaceType(namedArguments[10]))
             {
                 DiagnosticHelper.ReportDiagnostic(

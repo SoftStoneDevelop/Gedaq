@@ -32,7 +32,7 @@ WHERE p.id != {1} AND p.id != {0}
 ORDER BY p.id ASC
 ",
             methodName: "MsSqlFormatToClass",
-            queryMapType: typeof(Person),
+            queryMapTypes: [typeof(Person)],
             methodType: Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync), 
             QueryFormat(1, "condition"), 
             QueryFormat(0)]

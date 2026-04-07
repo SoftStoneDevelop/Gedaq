@@ -138,7 +138,7 @@ VALUES (
 );
 "",
             methodName:""{_testName}"",
-            queryMapType: null,
+            queryMapTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.NonQuery,
@@ -237,7 +237,7 @@ RETURNING
 ;
 "",
             methodName:""{_testName}{(withDynamicParameter ? NameConstants.DynamicParametr : "")}Returning"",
-            queryMapType: typeof({model.ClassName}),
+            queryMapTypes: [typeof({model.ClassName})],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read | QueryType.Scalar,

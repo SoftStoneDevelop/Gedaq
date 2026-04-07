@@ -100,7 +100,7 @@ VALUES (
 );
 "",
             methodName:""{_testName}"",
-            queryMapType: null,
+            queryMapTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.NonQuery,
@@ -195,7 +195,7 @@ RETURNING
 ;
 "",
             methodName:""{_testName}Returning"",
-            queryMapType: typeof({model.ModelInner.ClassName}),
+            queryMapTypes: [typeof({model.ModelInner.ClassName})],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Scalar,

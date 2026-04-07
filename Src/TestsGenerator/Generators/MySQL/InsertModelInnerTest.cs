@@ -78,7 +78,7 @@ VALUES (
 "",
             methodName:""{_testName}"",
             sourceType: SourceType.MySqlConnection,
-            queryMapType: null,
+            queryMapTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.NonQuery,
             generate: true,

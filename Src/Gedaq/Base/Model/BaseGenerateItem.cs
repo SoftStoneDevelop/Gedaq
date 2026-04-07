@@ -11,13 +11,13 @@ namespace Gedaq.Base.Model
 {
     internal class BaseGenerateItem : IMethodInfo
     {
-        public ImmutableArray<ITypeSymbol> MapTypes { get; protected set; }
+        public ITypeSymbol[] MapTypes { get; protected set; }
 
-        public bool IsSignleType => MapTypes != null && MapTypes.Length == 1;
+        public bool HaveMapTypes => MapTypes != null && MapTypes.Length > 0;
 
-        public bool IsCollectionDelegateMap => MapTypes != null && MapTypes.Length > 1;
+        public bool IsCollectionDelegateMap => HaveMapTypes && MapTypes.Length > 1;
 
-        public ImmutableArray<string> OverrideAliasPrefixs { get; protected set; }
+        public string[] OverrideAliasPrefixs { get; protected set; }
 
         public BaseMethodInfo MethodInfo { get; set; }
 
@@ -44,17 +44,55 @@ namespace Gedaq.Base.Model
                 return true;
             }
 
-            if (!(argument.Value is ITypeSymbol typeParam))
+            if (argument.Kind != TypedConstantKind.Array)
             {
                 return false;
             }
 
-            if (!typeParam.IsArrayType(out var elementType))
+            if (!argument.Type.IsArrayType(out var elementType))
             {
                 return false;
             }
 
-            MapTypes = argument.Values.CastArray<ITypeSymbol>();
+            MapTypes = new ITypeSymbol[argument.Values.Length];
+            for (int i = 0; i < argument.Values.Length; i++)
+            {
+                var value = (ITypeSymbol)argument.Values[i].Value;
+                MapTypes[i] = value;
+            }
+
+            return true;
+        }
+
+        protected bool FillOverrideAliasPrefixs(TypedConstant argument)
+        {
+            if (argument.IsNull)
+            {
+                return true;
+            }
+
+            if (argument.Kind != TypedConstantKind.Array)
+            {
+                return false;
+            }
+
+            if (!argument.Type.IsArrayType(out var elementType))
+            {
+                return false;
+            }
+
+            if (elementType.Name != nameof(String))
+            {
+                return false;
+            }
+
+            OverrideAliasPrefixs = new string[argument.Values.Length];
+            for (int i = 0; i < argument.Values.Length; i++)
+            {
+                var value = (string)argument.Values[i].Value;
+                OverrideAliasPrefixs[i] = value;
+            }
+
             return true;
         }
 
