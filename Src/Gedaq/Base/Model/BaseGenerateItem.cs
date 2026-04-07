@@ -4,13 +4,20 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
+using System.Collections.Immutable;
 using System.Linq;
 
 namespace Gedaq.Base.Model
 {
     internal class BaseGenerateItem : IMethodInfo
     {
-        public ITypeSymbol MapTypeName { get; protected set; }
+        public ImmutableArray<ITypeSymbol> MapTypes { get; protected set; }
+
+        public bool IsSignleType => MapTypes != null && MapTypes.Length == 1;
+
+        public bool IsCollectionDelegateMap => MapTypes != null && MapTypes.Length > 1;
+
+        public ImmutableArray<string> OverrideAliasPrefixs { get; protected set; }
 
         public BaseMethodInfo MethodInfo { get; set; }
 
@@ -30,7 +37,7 @@ namespace Gedaq.Base.Model
 
         public bool AsPartInterface => PartInterfaceType != null;
 
-        protected bool FillMapType(TypedConstant argument)
+        protected bool FillMapTypes(TypedConstant argument)
         {
             if (argument.IsNull)
             {
@@ -42,7 +49,12 @@ namespace Gedaq.Base.Model
                 return false;
             }
 
-            MapTypeName = typeParam;
+            if (!typeParam.IsArrayType(out var elementType))
+            {
+                return false;
+            }
+
+            MapTypes = argument.Values.CastArray<ITypeSymbol>();
             return true;
         }
 

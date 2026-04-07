@@ -144,7 +144,7 @@ namespace Gedaq.Base.Batch
             MethodType methodType,
             StringBuilder builder)
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
+            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypes[0].GetFullTypeName(true) : "object";
             var async = methodType == MethodType.Sync ? "()" : "Async(cancellationToken).ConfigureAwait(false)";
             var await = methodType == MethodType.Sync ? "" : "await ";
             string ExecuteReturnType()
@@ -181,31 +181,39 @@ namespace Gedaq.Base.Batch
 
                 builder.Append($@")
         {{");
-
-                if (source.ReturnType == ReturnType.Enumerable)
+                if (source.IsCollectionDelegateMap)
                 {
                     builder.Append($@"
-            while({await}reader.Read{async})
-            {{
-                {ItemTypeName(source)} item;");
-                    MappingHelper.MapItem(item.QueryBase, builder, ProviderInfo, "item", CastTypeExpr(source));
-                    builder.Append($@"
-                yield return item;
-            }}");
+                // By the power of BANANA;");
                 }
                 else
                 {
-                    builder.Append($@"
+                    var mapType = item.QueryBase.MapTypes[0];
+                    if (source.ReturnType == ReturnType.Enumerable)
+                    {
+                        builder.Append($@"
+            while({await}reader.Read{async})
+            {{
+                {ItemTypeName(source)} item;");
+                        MappingHelper.MapItem(mapType, item.QueryBase, builder, ProviderInfo, "item", CastTypeExpr(source));
+                        builder.Append($@"
+                yield return item;
+            }}");
+                    }
+                    else
+                    {
+                        builder.Append($@"
             var batchItems = new System.Collections.Generic.List<{ItemTypeName(source)}>({source.QueryBases().Count()});
             while({await}reader.Read{async})
             {{
                 {ItemTypeName(source)} item;");
-                    MappingHelper.MapItem(item.QueryBase, builder, ProviderInfo, "item", CastTypeExpr(source));
-                    builder.Append($@"
+                        MappingHelper.MapItem(mapType, item.QueryBase, builder, ProviderInfo, "item", CastTypeExpr(source));
+                        builder.Append($@"
                 batchItems.Add(item);
             }}
             
             return batchItems;");
+                    }
                 }
 
                 builder.Append($@"
@@ -783,7 +791,7 @@ namespace Gedaq.Base.Batch
 
         public string ItemTypeName(QueryBatchCommand source)
         {
-            return source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
+            return source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypes[0].GetFullTypeName(true) : "object";
         }
 
         private string CastTypeExpr(QueryBatchCommand source)
@@ -1136,7 +1144,7 @@ namespace Gedaq.Base.Batch
             StringBuilder builder,
             bool forInterface = false)
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeName.GetFullTypeName(true) : "object";
+            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypes[0].GetFullTypeName(true) : "object";
             GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
             var returnType = methodType == MethodType.Async ? $"{source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}>" : typeName;
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
@@ -1144,8 +1152,7 @@ namespace Gedaq.Base.Batch
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async "
-                ;
+                "async ";
 
             builder.Append($@"
         {accessModifier} {staticModifier} {asyncKeyword}{returnType} {ExecuteScalarBatchMethodName(source, methodType)}(
@@ -1472,15 +1479,15 @@ namespace Gedaq.Base.Batch
             }
 
             isRowAffected = false;
-            if (providerInfo.IsKnownProviderType(first.MapTypeName) || providerInfo.IsSpecialHandlerType(first.MapTypeName))
+            if (providerInfo.IsKnownProviderType(first.MapTypes[0]) || providerInfo.IsSpecialHandlerType(first.MapTypes[0]))
             {
-                type = first.MapTypeName;
+                type = first.MapTypes[0];
                 typeName = type.GetFullTypeName(replaceNullable: true);
                 return;
             }
 
             var firstField = first.Aliases.AllFieldsOrderByPosition().First();
-            first.MapTypeName.GetPropertyOrFieldName(firstField.Name, out _, out var typeProp);
+            first.MapTypes[0].GetPropertyOrFieldName(firstField.Name, out _, out var typeProp);
             type = typeProp;
             typeName = type.GetFullTypeName(replaceNullable: true);
         }

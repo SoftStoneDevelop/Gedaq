@@ -11,8 +11,7 @@ namespace Gedaq.Comparers
 
         public bool Equals(
            (ImmutableArray<TypeDeclarationSyntax> Nodes, Compilation compilation) left,
-           (ImmutableArray<TypeDeclarationSyntax> Nodes, Compilation compilation) rigth
-            )
+           (ImmutableArray<TypeDeclarationSyntax> Nodes, Compilation compilation) rigth)
         {
             if (left.Nodes.Length != rigth.Nodes.Length)
             {

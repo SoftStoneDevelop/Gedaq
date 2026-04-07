@@ -138,7 +138,7 @@ namespace Gedaq.MySqlConnector
                         firstRead = queryRead;
                     }
 
-                    batchPair.Batch.AllSameTypes &= SymbolEqualityComparer.Default.Equals(firstRead.MapTypeName, queryRead.MapTypeName);
+                    batchPair.Batch.AllSameTypes &= ImmutableArrayExtensions.SequenceEqual(firstRead.MapTypes, queryRead.MapTypes, SymbolEqualityComparer.Default);
                     batchPair.Batch.HaveParametrs |= queryRead.HaveParametrs();
                     batchPair.Batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
                     batchPair.Batch.HaveDynamicParametrs |= queryRead.HaveDynamicParametrs();

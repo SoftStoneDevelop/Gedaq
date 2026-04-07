@@ -123,17 +123,17 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             MethodType methodType,
             bool isAsyncCollection,
             StringBuilder builder,
-            bool forInterface = false
-            )
+            bool forInterface = false)
         {
-            var collectionType = $"I{(isAsyncCollection ? "Async" : "")}Enumerable<{binaryImport.MapTypeName.GetFullTypeName(true, true)}>";
+            var mapType = binaryImport.MapTypes[0];
+            var collectionType = $"I{(isAsyncCollection ? "Async" : "")}Enumerable<{mapType.GetFullTypeName(true, true)}>";
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : binaryImport.AccessModifier.ToLowerInvariant();
             var staticModifier = forInterface ? string.Empty : binaryImport.MethodStaticModifier;
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async "
-                ;
+                "async ";
+
             var returnType = methodType == MethodType.Async ? binaryImport.MethodInfo.AsyncResultType.ToResultType() : "void";
             var methodName = methodType == MethodType.Async ? $@"{binaryImport.MethodName}Async" : $@"{binaryImport.MethodName}";
 
@@ -143,7 +143,6 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             {collectionType} collection,
             TimeSpan? timeout = null");
 
-
             if (methodType == MethodType.Async)
             {
                 builder.Append($@",
@@ -151,16 +150,14 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 
             }
 
-            builder.Append($@"
-            )");
+            builder.Append($@")");
         }
 
         private void MethodBody(
             BinaryImport binaryImport,
             NpgsqlSourceType sourceType,
             MethodType methodType,
-            bool isAsyncCollection
-            )
+            bool isAsyncCollection)
         {
             var isAsync = methodType == MethodType.Async;
             var cancellation = isAsync ? "cancellationToken" : "";
@@ -216,22 +213,22 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 
         public void WriteItem(
             BinaryImport binaryImport,
-            MethodType methodType
-            )
+            MethodType methodType)
         {
             var isAsync = methodType == MethodType.Async;
             var async = isAsync ? "Async" : "";
             var await = isAsync ? "await " : "";
             var cancellation = isAsync ? "(cancellationToken)" : "()";
 
-            if (NpgsqlMapTypeHelper.IsKnownProviderType(binaryImport.MapTypeName))
+            var mapType = binaryImport.MapTypes[0];
+            if (NpgsqlMapTypeHelper.IsKnownProviderType(mapType))
             {
                 var field = binaryImport.Aliases.AllFieldsOrderByPosition().First();
                 var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" : "";
                 _methodCode.Append($@"
                     {await}import.Write{async}(item{dbType}{(isAsync ? $",cancellationToken" : "")});");
             }
-            else if (binaryImport.MapTypeName.IsNullableType())
+            else if (mapType.IsNullableType())
             {
                 var field = binaryImport.Aliases.AllFieldsOrderByPosition().First();
                 var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" : "";
@@ -245,9 +242,9 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                         {await}import.Write{async}(item.Value{dbType}{(isAsync ? $",cancellationToken" : "")});
                     }}");
             }
-            else if (binaryImport.MapTypeName.TypeKind == TypeKind.Class || binaryImport.MapTypeName.TypeKind == TypeKind.Struct)
+            else if (mapType.TypeKind == TypeKind.Class || mapType.TypeKind == TypeKind.Struct)
             {
-                ComplicateItem(binaryImport.Aliases, binaryImport.MapTypeName, methodType);
+                ComplicateItem(binaryImport.Aliases, mapType, methodType);
             }
             else
             {
@@ -261,8 +258,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
         private void ComplicateItem(
             Aliases rootAliase,
             ITypeSymbol rootMapTypeName,
-            MethodType methodType
-            )
+            MethodType methodType)
         {
             var isAsync = methodType == MethodType.Async;
             var async = isAsync ? "Async" : "";

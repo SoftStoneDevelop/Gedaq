@@ -1,6 +1,7 @@
 ﻿using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
+using System;
 
 namespace Gedaq.Base.Model
 {
@@ -33,6 +34,32 @@ namespace Gedaq.Base.Model
             }
 
             ReturnType = (ReturnType)argument.Value;
+            return true;
+        }
+
+        protected bool FillOverrideAliasPrefixs(TypedConstant argument)
+        {
+            if (argument.IsNull)
+            {
+                return true;
+            }
+
+            if (!(argument.Value is ITypeSymbol typeParam))
+            {
+                return false;
+            }
+
+            if (!typeParam.IsArrayType(out var elementType))
+            {
+                return false;
+            }
+
+            if (elementType.Name != nameof(String))
+            {
+                return false;
+            }
+
+            OverrideAliasPrefixs = argument.Values.CastArray<string>();
             return true;
         }
     }

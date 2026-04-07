@@ -11,6 +11,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 
 namespace Gedaq.Npgsql
@@ -152,7 +153,7 @@ namespace Gedaq.Npgsql
                         firstRead = queryRead;
                     }
 
-                    batchPair.Batch.AllSameTypes &= SymbolEqualityComparer.Default.Equals(firstRead.MapTypeName, queryRead.MapTypeName);
+                    batchPair.Batch.AllSameTypes &= ImmutableArrayExtensions.SequenceEqual(firstRead.MapTypes, queryRead.MapTypes, SymbolEqualityComparer.Default);
                     batchPair.Batch.HaveParametrs |= queryRead.HaveParametrs();
                     batchPair.Batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
                     batchPair.Batch.HaveDynamicParametrs |= queryRead.HaveDynamicParametrs();

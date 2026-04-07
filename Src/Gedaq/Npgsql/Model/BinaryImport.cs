@@ -56,7 +56,7 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!methodSource.FillMapType(namedArguments[2]))
+            if (!methodSource.FillMapTypes(namedArguments[2]))
             {
                 return false;
             }
@@ -77,10 +77,9 @@ namespace Gedaq.Npgsql.Model
                     namedArguments[4],
                     namedArguments[6],
                     namedArguments[7],
-                    containsType
-                    );
+                    containsType);
 
-            if (methodSource.MapTypeName == null)
+            if (methodSource.MapTypes == null)
             {
                 throw new Exception("The mapping type must be specified");
             }
@@ -98,8 +97,7 @@ namespace Gedaq.Npgsql.Model
         protected bool FillQuery(TypedConstant argument)
         {
             if (!(argument.Type is INamedTypeSymbol strParam) ||
-                strParam.Name != nameof(String)
-                )
+                strParam.Name != nameof(String))
             {
                 return false;
             }
@@ -114,8 +112,7 @@ namespace Gedaq.Npgsql.Model
                 arrayTypeSymbol.Rank != 1 ||
                 arrayTypeSymbol.ElementType.TypeKind != TypeKind.Enum ||
                 !(arrayTypeSymbol.ElementType is INamedTypeSymbol elementType) ||
-                !elementType.IsAssignableFrom("NpgsqlTypes", "NpgsqlDbType")
-                )
+                !elementType.IsAssignableFrom("NpgsqlTypes", "NpgsqlDbType"))
             {
                 return false;
             }
@@ -138,8 +135,7 @@ namespace Gedaq.Npgsql.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol namedTypeSymbol4) ||
-                !namedTypeSymbol4.IsAssignableFrom("Gedaq.Npgsql.Enums", "SourceType")
-                )
+                !namedTypeSymbol4.IsAssignableFrom("Gedaq.Npgsql.Enums", "SourceType"))
             {
                 return false;
             }

@@ -11,125 +11,122 @@ namespace Gedaq.Helpers
 {
     internal static class MappingHelper
     {
-        public static void MapItem(
+        public static void MapItems(
             QueryBaseCommand source,
             StringBuilder builder,
             ProviderInfo provider,
             string mapVariableName,
-            string castTypeExpr = ""
-            )
+            string castTypeExpr = "")
         {
-            if (provider.IsKnownProviderType(source.MapTypeName))
+            foreach (var mapType in source.MapTypes)
             {
-                ReturnKnownProviderType(
+                MapItem(
+                    mapType,
                     source,
                     builder,
                     provider,
                     mapVariableName,
-                    castTypeExpr
-                    );
+                    castTypeExpr);
             }
-            else
-            if (provider.IsSpecialHandlerType(source.MapTypeName))
+        }
+
+        public static void MapItem(
+            ITypeSymbol mapType,
+            QueryBaseCommand source,
+            StringBuilder builder,
+            ProviderInfo provider,
+            string mapVariableName,
+            string castTypeExpr = "")
+        {
+            if (provider.IsKnownProviderType(mapType))
+            {
+                ReturnKnownProviderType(
+                    mapType,
+                    builder,
+                    mapVariableName,
+                    castTypeExpr);
+            }
+            else if (provider.IsSpecialHandlerType(mapType))
             {
                 ReturnSpecialHandlerType(
-                    source, 
+                    mapType,
                     builder, 
                     provider,
                     mapVariableName,
-                    castTypeExpr
-                    );
+                    castTypeExpr);
             }
-            else
-            if (source.MapTypeName.Name == nameof(Object))
+            else if (mapType.Name == nameof(Object))
             {
                 ReturnObject(
-                    source,
                     builder,
-                    provider,
                     mapVariableName,
-                    castTypeExpr
-                    );
+                    castTypeExpr);
             }
-            else
-            if (source.MapTypeName is IArrayTypeSymbol typeArray && typeArray.ElementType.Name == nameof(Object))
+            else if (mapType is IArrayTypeSymbol typeArray && typeArray.ElementType.Name == nameof(Object))
             {
                 ReturnObjectArr(
-                    source,
                     builder,
-                    provider,
                     mapVariableName,
-                    castTypeExpr
-                    );
+                    castTypeExpr);
             }
-            else if (source.MapTypeName.TypeKind == TypeKind.Class || source.MapTypeName.TypeKind == TypeKind.Struct)
+            else if (mapType.TypeKind == TypeKind.Class || mapType.TypeKind == TypeKind.Struct)
             {
                 ReturnComplicateItem(
+                    mapType,
                     source,
                     builder,
                     provider,
                     mapVariableName,
-                    castTypeExpr
-                    );
+                    castTypeExpr);
             }
             else
             {
                 ReturnDefaultMap(
-                    source,
+                    mapType,
                     builder,
-                    provider,
                     mapVariableName,
-                    castTypeExpr
-                    );
+                    castTypeExpr);
             }
         }
 
         private static void ReturnKnownProviderType(
-            QueryBaseCommand source,
+            ITypeSymbol mapType,
             StringBuilder builder,
-            ProviderInfo provider,
             string mapVariableName,
-            string castTypeExpr = ""
-            )
+            string castTypeExpr = "")
         {
-            if (source.MapTypeName.IsNullableType())
+            if (mapType.IsNullableType())
             {
                 builder.Append($@"
                     if(reader.IsDBNull(0))
                     {{
-                        {mapVariableName} = {castTypeExpr}({source.MapTypeName.GetFullTypeName(true)})null;
+                        {mapVariableName} = {castTypeExpr}({mapType.GetFullTypeName(true)})null;
                     }}
                     else
                     {{
-                        {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName(true, addQuestionNoatble: false)}>(0);
+                        {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{mapType.GetFullTypeName(true, addQuestionNoatble: false)}>(0);
                     }}");
             }
             else
             {
                 builder.Append($@"
-                    {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);");
+                    {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{mapType.GetFullTypeName()}>(0);");
             }
         }
 
         private static void ReturnObject(
-            QueryBaseCommand source,
             StringBuilder builder,
-            ProviderInfo provider,
             string mapVariableName,
-            string castTypeExpr = ""
-            )
+            string castTypeExpr = "")
         {
             builder.Append($@"
                     {mapVariableName} = {castTypeExpr}reader.GetValue(0);");
         }
 
         private static void ReturnObjectArr(
-            QueryBaseCommand source,
             StringBuilder builder,
-            ProviderInfo provider,
             string mapVariableName,
-            string castTypeExpr = ""
-            )
+            string castTypeExpr = "")
         {
             builder.Append($@"
                     var tempItem = new object[reader.FieldCount];
@@ -138,55 +135,52 @@ namespace Gedaq.Helpers
         }
 
         private static void ReturnSpecialHandlerType(
-            QueryBaseCommand source,
+            ITypeSymbol mapType,
             StringBuilder builder,
             ProviderInfo provider,
             string mapVariableName,
-            string castTypeExpr = ""
-            )
+            string castTypeExpr = "")
         {
-            if (source.MapTypeName.IsNullableType())
+            if (mapType.IsNullableType())
             {
                 builder.Append($@"
                     if(reader.IsDBNull(0))
                     {{
-                        {mapVariableName} = {castTypeExpr}({provider.GetSpecialTypeValue(source.MapTypeName, 0)})null;
+                        {mapVariableName} = {castTypeExpr}({provider.GetSpecialTypeValue(mapType, 0)})null;
                     }}
                     else
                     {{
-                        {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{provider.GetSpecialTypeValue(source.MapTypeName, 0)}>(0);
+                        {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{provider.GetSpecialTypeValue(mapType, 0)}>(0);
                     }}");
             }
             else
             {
                 builder.Append($@"
-                    {mapVariableName} = {castTypeExpr}{provider.GetSpecialTypeValue(source.MapTypeName, 0)};");
+                    {mapVariableName} = {castTypeExpr}{provider.GetSpecialTypeValue(mapType, 0)};");
             }
         }
 
         private static void ReturnComplicateItem(
+            ITypeSymbol mapType,
             QueryBaseCommand source,
             StringBuilder builder,
             ProviderInfo provider,
             string mapVariableName,
-            string castTypeExpr = ""
-            )
+            string castTypeExpr = "")
         {
-            ComplicateItem(source.Aliases, source.MapTypeName, source.MethodType, builder, provider);
+            ComplicateItem(source.Aliases, mapType, source.MethodType, builder, provider);
             builder.Append($@" 
                     {mapVariableName} = {castTypeExpr}root;");
         }
 
         private static void ReturnDefaultMap(
-            QueryBaseCommand source,
+            ITypeSymbol mapType,
             StringBuilder builder,
-            ProviderInfo provider,
             string mapVariableName,
-            string castTypeExpr = ""
-            )
+            string castTypeExpr = "")
         {
             builder.Append($@"
-                    {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{source.MapTypeName.GetFullTypeName()}>(0);");
+                    {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{mapType.GetFullTypeName()}>(0);");
         }
 
 
@@ -195,8 +189,7 @@ namespace Gedaq.Helpers
             ITypeSymbol rootMapTypeName,
             MethodType methodType,
             StringBuilder builder,
-            ProviderInfo provider
-            )
+            ProviderInfo provider)
         {
             var aliases = new Stack<ItemPair>();
             {
@@ -258,8 +251,7 @@ namespace Gedaq.Helpers
         private static void EndInnerEntity(
             MethodType methodType,
             ItemPair pair,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             if (pair.HaveUnprocess || pair.Parent == null)
             {
@@ -277,6 +269,7 @@ namespace Gedaq.Helpers
                 builder.Append($@"
                     {Tabs(pair.Tabs)}if({pair.ItemName} != null)
                     {Tabs(pair.Tabs)}{{");
+
                 if (!pair.Parent.Aliases.IsRoot)
                 {
                     builder.Append($@"
@@ -296,8 +289,7 @@ namespace Gedaq.Helpers
             ItemPair pair,
             StringBuilder builder,
             bool createItemIfNull,
-            ProviderInfo provider
-            )
+            ProviderInfo provider)
         {
             pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
             builder.Append($@"

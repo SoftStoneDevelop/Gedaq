@@ -52,7 +52,7 @@ namespace Gedaq.SqlClient.Model
                 return false;
             }
 
-            if (!methodSource.FillMapType(namedArguments[2]))
+            if (!methodSource.FillMapTypes(namedArguments[2]))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
@@ -93,12 +93,12 @@ namespace Gedaq.SqlClient.Model
                     namedArguments[7],
                     containsType);
 
-            if (methodSource.MapTypeName == null && methodSource.QueryType.HasFlag(QueryType.Read))
+            if (methodSource.MapTypes == null && methodSource.QueryType.HasFlag(QueryType.Read))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametr,
-                    "For the 'Read' type, the mapping type must be specified",
+                    $"For the '{nameof(QueryType.Read)}' type, the mapping type must be specified",
                     DiagnosticSeverity.Error);
 
                 return false;
