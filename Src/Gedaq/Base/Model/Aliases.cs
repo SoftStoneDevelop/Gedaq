@@ -33,10 +33,9 @@ namespace Gedaq.Base.Model
             return Fields.First(f => f.Name.ToLowerInvariant() == LinkKey.ToLowerInvariant());
         }
 
-
         public bool IsRoot => EntityName == null;
         public List<Aliases> InnerEntities = new List<Aliases>();
-        List<Field> _allFields = null;
+        private List<Field> _allFields = null;
 
         public List<Field> AllFieldsOrderByPosition()
         {

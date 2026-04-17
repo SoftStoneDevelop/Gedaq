@@ -31,9 +31,7 @@ namespace Gedaq.Parser
 
         private int _leftBrackets;
 
-        public AliasParser(
-            ReadOnlySpan<char> query
-            )
+        public AliasParser(ReadOnlySpan<char> query)
         {
             _field = new StringBuilder();
             _currentIndex = 0;

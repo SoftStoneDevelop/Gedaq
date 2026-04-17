@@ -204,7 +204,16 @@ namespace Gedaq.Npgsql
             }
             else
             {
-                query.Aliases = _queryParser.Parse(ref query.Query);
+                if (query.Query != null)
+                {
+                    // query must contain select or return
+                    query.Aliases = _queryParser.Parse(ref query.Query);
+                }
+                else
+                {
+                    // need check mapTypeAttributes
+                    TODO;
+                }
             }
 
             if (query.HaveDynamicParametrs() && query.HaveParametrs())

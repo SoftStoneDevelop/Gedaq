@@ -19,7 +19,7 @@ namespace Gedaq.Base.Model
 
         public bool HaveFromatParametrs()
         {
-            return FormatParametrs != null;
+            return FormatParametrs?.Length > 0;
         }
 
         public abstract bool HaveDynamicParametrs();

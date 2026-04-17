@@ -13,8 +13,7 @@ namespace Gedaq.Base
             Aliases aliases,
             ITypeSymbol mapTypeName,
             string itemName,
-            int tabs
-            )
+            int tabs)
         {
             Aliases = aliases;
             MapTypeName = mapTypeName;
@@ -28,8 +27,7 @@ namespace Gedaq.Base
             string itemName,
             ItemPair parent,
             string propertyName,
-            int tabs
-            )
+            int tabs)
             : this(aliases, mapTypeName, itemName, tabs)
         {
             Parent = parent;
@@ -39,6 +37,7 @@ namespace Gedaq.Base
         public Aliases Aliases { get; private set; }
         public ITypeSymbol MapTypeName { get; private set; }
         public string PropertyName { get; private set; }
+
         public string PathInItem(string property = "")
         {
             if (Parent != null)
@@ -59,6 +58,7 @@ namespace Gedaq.Base
                 return property;
             }
         }
+
         public string ItemName { get; private set; }
 
         public ItemPair Parent { get; private set; }

@@ -6,13 +6,19 @@ namespace Gedaq.Base.Model
 {
     internal abstract class FieldInfo
     {
-
     }
 
     internal class Field
     {
+        /// <summary>
+        /// Name of property in type
+        /// </summary>
         public string Name { get; set; }
-        public int Position { get; set; }
+
+        /// <summary>
+        /// Position in SQL row
+        /// </summary>
+        public int? Position { get; set; }
 
         public FieldInfo AdditionalInfo { get; set; }
 
