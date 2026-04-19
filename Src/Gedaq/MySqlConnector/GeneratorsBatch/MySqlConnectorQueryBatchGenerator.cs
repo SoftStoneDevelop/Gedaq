@@ -3,7 +3,6 @@ using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.MySqlConnector.Model;
 using Microsoft.CodeAnalysis;
-using System;
 
 namespace Gedaq.MySqlConnector.GeneratorsBatch
 {
@@ -13,12 +12,14 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
         private readonly MySqlConnectorQueryBatchRead _batchRead;
         private readonly MySqlConnectorQueryBatchScalarNoQuery _batchScalarNoQuery;
 
-        public MySqlConnectorQueryBatchGenerator(SourceProductionContext context)
+        public MySqlConnectorQueryBatchGenerator(
+            SourceProductionContext context,
+            MySqlConnectorProviderInfo providerInfo)
             : base(context)
         {
-            _batchCommand = new MySqlConnectorBatchCommand();
-            _batchRead = new MySqlConnectorQueryBatchRead(_batchCommand);
-            _batchScalarNoQuery = new MySqlConnectorQueryBatchScalarNoQuery(_batchCommand);
+            _batchCommand = new MySqlConnectorBatchCommand(providerInfo);
+            _batchRead = new MySqlConnectorQueryBatchRead(_batchCommand, providerInfo);
+            _batchScalarNoQuery = new MySqlConnectorQueryBatchScalarNoQuery(_batchCommand, providerInfo);
         }
 
 
@@ -48,9 +49,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
             EndNameSpace();
         }
 
-        private void Start(
-            MySqlConnectorQueryBatch source
-            )
+        private void Start(MySqlConnectorQueryBatch source)
         {
             _methodCode.Append($@"
 using MySqlConnector;

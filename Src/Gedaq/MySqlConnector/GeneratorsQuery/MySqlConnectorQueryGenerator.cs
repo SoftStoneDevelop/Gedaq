@@ -12,12 +12,14 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
         private readonly MySqlConnectorQueryRead _queryReadGenerator;
         private readonly MySqlConnectorQueryScalarAndNonQuery _queryScalarAndNonQuery;
 
-        public MySqlConnectorQueryGenerator(SourceProductionContext context)
+        public MySqlConnectorQueryGenerator(
+            SourceProductionContext context,
+            MySqlConnectorProviderInfo providerInfo)
             : base(context)
         {
-            _commandGenerator = new MySqlConnectorCommand();
-            _queryReadGenerator = new MySqlConnectorQueryRead(_commandGenerator);
-            _queryScalarAndNonQuery = new MySqlConnectorQueryScalarAndNonQuery(_commandGenerator);
+            _commandGenerator = new MySqlConnectorCommand(providerInfo);
+            _queryReadGenerator = new MySqlConnectorQueryRead(_commandGenerator, providerInfo);
+            _queryScalarAndNonQuery = new MySqlConnectorQueryScalarAndNonQuery(_commandGenerator, providerInfo);
         }
 
         public void GenerateMethod(MySqlConnectorQuery source, InterfaceGenerator interfaceGenerator)

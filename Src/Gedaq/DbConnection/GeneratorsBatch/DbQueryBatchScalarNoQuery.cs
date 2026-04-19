@@ -5,11 +5,14 @@ namespace Gedaq.DbConnection.GeneratorsBatch
 {
     internal class DbQueryBatchScalarNoQuery : QueryBatchScalarNoQueryBase
     {
-        DbProviderInfo _providerInfo = new DbProviderInfo();
+        private readonly DbProviderInfo _providerInfo;
 
-        public DbQueryBatchScalarNoQuery(DbBatchCommand commandGenerator) : base(commandGenerator)
+        public DbQueryBatchScalarNoQuery(
+            DbBatchCommand commandGenerator,
+            DbProviderInfo providerInfo)
+            : base(commandGenerator)
         {
-
+            _providerInfo = providerInfo;
         }
 
         protected override ProviderInfo ProviderInfo => _providerInfo;

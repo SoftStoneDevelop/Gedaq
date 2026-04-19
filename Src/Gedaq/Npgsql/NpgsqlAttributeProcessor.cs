@@ -19,20 +19,25 @@ namespace Gedaq.Npgsql
 {
     internal class NpgsqlAttributeProcessor : BaseAttributeProcessor
     {
-        private List<NpgsqlQuery> _read = new List<NpgsqlQuery>();
-        private List<NpgsqlQueryBatch> _readBatch = new List<NpgsqlQueryBatch>();
-        private List<BinaryExport> _binaryExports = new List<BinaryExport>();
-        private List<BinaryImport> _binaryImports = new List<BinaryImport>();
+        private readonly NpgsqlProviderInfo _providerInfo;
 
-        private List<BatchPair<NpgsqlQueryBatch>> _batchPairTemp = new List<BatchPair<NpgsqlQueryBatch>>();
-        private Dictionary<string, NpgsqlQuery> _readContainsType = new Dictionary<string, NpgsqlQuery>();
+        private readonly List<NpgsqlQuery> _read = new List<NpgsqlQuery>();
+        private readonly List<NpgsqlQueryBatch> _readBatch = new List<NpgsqlQueryBatch>();
+        private readonly List<BinaryExport> _binaryExports = new List<BinaryExport>();
+        private readonly List<BinaryImport> _binaryImports = new List<BinaryImport>();
 
-        private PostgreSQLQueryParser _queryParser = new PostgreSQLQueryParser();
-        private BinaryParser _binaryParser = new BinaryParser();
+        private readonly List<BatchPair<NpgsqlQueryBatch>> _batchPairTemp = new List<BatchPair<NpgsqlQueryBatch>>();
+        private readonly Dictionary<string, NpgsqlQuery> _readContainsType = new Dictionary<string, NpgsqlQuery>();
 
-        public NpgsqlAttributeProcessor(SourceProductionContext context)
+        private readonly PostgreSQLQueryParser _queryParser = new PostgreSQLQueryParser();
+        private readonly BinaryParser _binaryParser = new BinaryParser();
+
+        public NpgsqlAttributeProcessor(
+            SourceProductionContext context,
+            NpgsqlProviderInfo providerInfo)
             : base(context)
         {
+            _providerInfo = providerInfo;
         }
 
         public override void ProcessAttributes(
@@ -212,7 +217,7 @@ namespace Gedaq.Npgsql
                 {
                     foreach (var mapTypeInfo in query.MapTypeInfos)
                     {
-                        mapTypeInfo.ParseAliasesFromType(_context);
+                        mapTypeInfo.ParseAliasesFromType(_context, _providerInfo);
                     }
                 }
             }
@@ -383,7 +388,7 @@ namespace Gedaq.Npgsql
             {
                 foreach (var mapTypeInfo in binaryExport.MapTypeInfos)
                 {
-                    mapTypeInfo.ParseAliasesFromType(_context);
+                    mapTypeInfo.ParseAliasesFromType(_context, _providerInfo);
                 }
             }
 
@@ -405,7 +410,7 @@ namespace Gedaq.Npgsql
         public override void GenerateAndSaveMethods()
         {
             var interfaceGenerator = new InterfaceGenerator();
-            var readGenerator = new NpgsqlQueryGenerator(_context);
+            var readGenerator = new NpgsqlQueryGenerator(_context, _providerInfo);
             foreach (var queryRead in _read)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();
@@ -420,7 +425,7 @@ namespace Gedaq.Npgsql
             }
             _read.Clear();
 
-            var batchReadGenerator = new NpgsqlQueryBatchGenerator(_context);
+            var batchReadGenerator = new NpgsqlQueryBatchGenerator(_context, _providerInfo);
             foreach (var batchRead in _readBatch)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();

@@ -11,7 +11,7 @@ namespace Gedaq.Base.Model
 
         public Aliases Aliases { get; set; }
 
-        public void ParseAliasesFromType(SourceProductionContext context)
+        public void ParseAliasesFromType(SourceProductionContext context, ProviderInfo providerInfo)
         {
             var mapType = MapType;
             var attributes = mapType.GetAttributes();
@@ -62,8 +62,9 @@ namespace Gedaq.Base.Model
                 }
 
                 var propertyType = propertySymbol.Type;
-                if (false) // TODO ProviderInfo check known types
+                if (!providerInfo.IsKnownProviderType(propertyType) && !providerInfo.IsSpecialHandlerType(propertyType))
                 {
+                    // Dynamic queries do not support nested mapping
                     continue;
                 }
 
@@ -103,12 +104,13 @@ namespace Gedaq.Base.Model
                     }
 
                     sqlName = ((string)aliasArgument.Value).ToLowerInvariant();
-                    if (string.IsNullOrWhiteSpace(sqlName))
-                    {
-                        sqlName = name.ToLowerInvariant();
-                    }
 
                     break;
+                }
+
+                if (string.IsNullOrWhiteSpace(sqlName))
+                {
+                    sqlName = name.ToLowerInvariant();
                 }
 
                 alias.Fields.Add(new Field { Name = name, Position = position, SQLName = sqlName });

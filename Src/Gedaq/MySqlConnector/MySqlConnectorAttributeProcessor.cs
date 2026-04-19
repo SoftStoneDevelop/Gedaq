@@ -6,7 +6,6 @@ using Gedaq.Helpers;
 using Gedaq.MySqlConnector.GeneratorsBatch;
 using Gedaq.MySqlConnector.GeneratorsQuery;
 using Gedaq.MySqlConnector.Model;
-using Gedaq.Npgsql.Model;
 using Gedaq.Parser;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -18,17 +17,22 @@ namespace Gedaq.MySqlConnector
 {
     internal class MySqlConnectorAttributeProcessor : BaseAttributeProcessor
     {
-        private List<MySqlConnectorQuery> _read = new List<MySqlConnectorQuery>();
-        private List<MySqlConnectorQueryBatch> _readBatch = new List<MySqlConnectorQueryBatch>();
+        private readonly MySqlConnectorProviderInfo _providerInfo;
 
-        private List<BatchPair<MySqlConnectorQueryBatch>> _batchPairTemp = new List<BatchPair<MySqlConnectorQueryBatch>>();
-        private Dictionary<string, MySqlConnectorQuery> _readContainsType = new Dictionary<string, MySqlConnectorQuery>();
+        private readonly List<MySqlConnectorQuery> _read = new List<MySqlConnectorQuery>();
+        private readonly List<MySqlConnectorQueryBatch> _readBatch = new List<MySqlConnectorQueryBatch>();
 
-        private QueryParser _queryParser = new QueryParser();
+        private readonly List<BatchPair<MySqlConnectorQueryBatch>> _batchPairTemp = new List<BatchPair<MySqlConnectorQueryBatch>>();
+        private readonly Dictionary<string, MySqlConnectorQuery> _readContainsType = new Dictionary<string, MySqlConnectorQuery>();
 
-        public MySqlConnectorAttributeProcessor(SourceProductionContext context)
+        private readonly QueryParser _queryParser = new QueryParser();
+
+        public MySqlConnectorAttributeProcessor(
+            SourceProductionContext context,
+            MySqlConnectorProviderInfo providerInfo)
             : base(context)
         {
+            _providerInfo = providerInfo;
         }
 
         public override void ProcessAttributes(
@@ -305,7 +309,7 @@ namespace Gedaq.MySqlConnector
         public override void GenerateAndSaveMethods()
         {
             var interfaceGenerator = new InterfaceGenerator();
-            var readGenerator = new MySqlConnectorQueryGenerator(_context);
+            var readGenerator = new MySqlConnectorQueryGenerator(_context, _providerInfo);
             foreach (var queryRead in _read)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();
@@ -320,7 +324,7 @@ namespace Gedaq.MySqlConnector
             }
             _read.Clear();
 
-            var batchReadGenerator = new MySqlConnectorQueryBatchGenerator(_context);
+            var batchReadGenerator = new MySqlConnectorQueryBatchGenerator(_context, _providerInfo);
             foreach (var batchRead in _readBatch)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();

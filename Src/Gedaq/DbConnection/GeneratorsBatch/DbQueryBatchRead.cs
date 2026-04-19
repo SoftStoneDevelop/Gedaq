@@ -5,11 +5,14 @@ namespace Gedaq.DbConnection.GeneratorsBatch
 {
     internal class DbQueryBatchRead : QueryBatchReadBase
     {
-        DbProviderInfo _providerInfo = new DbProviderInfo();
+        private readonly DbProviderInfo _providerInfo;
 
-        public DbQueryBatchRead(BatchCommandBase commandGenerator) : base(commandGenerator)
+        public DbQueryBatchRead(
+            BatchCommandBase commandGenerator,
+            DbProviderInfo providerInfo)
+            : base(commandGenerator)
         {
-
+            _providerInfo = providerInfo;
         }
 
         protected override ProviderInfo ProviderInfo => _providerInfo;

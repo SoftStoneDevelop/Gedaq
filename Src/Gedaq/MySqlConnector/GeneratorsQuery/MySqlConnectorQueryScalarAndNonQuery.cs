@@ -11,11 +11,14 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
 {
     internal class MySqlConnectorQueryScalarAndNonQuery : QueryScalarNonQueryBase
     {
-        private readonly MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
+        private readonly MySqlConnectorProviderInfo _providerInfo;
 
-        public MySqlConnectorQueryScalarAndNonQuery(MySqlConnectorCommand commandGenerator) : base(commandGenerator)
+        public MySqlConnectorQueryScalarAndNonQuery(
+            MySqlConnectorCommand commandGenerator,
+            MySqlConnectorProviderInfo providerInfo)
+            : base(commandGenerator)
         {
-
+            _providerInfo = providerInfo;
         }
 
         protected override ProviderInfo ProviderInfo => _providerInfo;
@@ -23,8 +26,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
         protected override void NonQueryMethod(
             QueryBaseCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             var query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
@@ -37,8 +39,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                     useInAndOut: true,
                     needCheckOpen: true,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
@@ -51,16 +52,14 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                     useInAndOut: true,
                     needCheckOpen: false,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
         }
 
         protected override void NonQueryMethodAsync(
             QueryBaseCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             var query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
@@ -73,8 +72,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                     useInAndOut: false,
                     needCheckOpen: true,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
@@ -87,16 +85,14 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                     useInAndOut: false,
                     needCheckOpen: false,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
         }
 
         protected override void ScalarMethod(
             QueryBaseCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             var query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
@@ -109,8 +105,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                     useInAndOut: true,
                     needCheckOpen: true,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
@@ -123,16 +118,14 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                     useInAndOut: true,
                     needCheckOpen: false,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
         }
 
         protected override void ScalarMethodAsync(
             QueryBaseCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             var query = (MySqlConnectorQuery)source;
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlConnection))
@@ -145,8 +138,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
                     MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                     useInAndOut: false,
                     needCheckOpen: true,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
 
             if (query.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
@@ -159,8 +151,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
                     MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                     useInAndOut: false,
                     needCheckOpen: false,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
         }
     }

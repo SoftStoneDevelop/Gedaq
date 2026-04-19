@@ -2,7 +2,6 @@
 using Gedaq.Base.Model;
 using Gedaq.MySqlConnector.Helpers;
 using Microsoft.CodeAnalysis;
-using System;
 
 namespace Gedaq.MySqlConnector
 {

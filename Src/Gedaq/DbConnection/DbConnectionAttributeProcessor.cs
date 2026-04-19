@@ -1,6 +1,7 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Model;
 using Gedaq.Constants;
+using Gedaq.DbConnection;
 using Gedaq.DbConnection.GeneratorsBatch;
 using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.DbConnection.Model;
@@ -17,17 +18,22 @@ namespace Gedaq.Npgsql
 {
     internal class DbConnectionAttributeProcessor : BaseAttributeProcessor
     {
-        private List<DbQuery> _read = new List<DbQuery>();
-        private List<DbQueryBatch> _readBatch = new List<DbQueryBatch>();
+        private readonly DbProviderInfo _providerInfo;
 
-        private List<BatchPair<DbQueryBatch>> _batchPairTemp = new List<BatchPair<DbQueryBatch>>();
-        private Dictionary<string, DbQuery> _readContainsType = new Dictionary<string, DbQuery>();
+        private readonly List<DbQuery> _read = new List<DbQuery>();
+        private readonly List<DbQueryBatch> _readBatch = new List<DbQueryBatch>();
 
-        private QueryParser _queryParser = new QueryParser();
+        private readonly List<BatchPair<DbQueryBatch>> _batchPairTemp = new List<BatchPair<DbQueryBatch>>();
+        private readonly Dictionary<string, DbQuery> _readContainsType = new Dictionary<string, DbQuery>();
 
-        public DbConnectionAttributeProcessor(SourceProductionContext context)
+        private readonly QueryParser _queryParser = new QueryParser();
+
+        public DbConnectionAttributeProcessor(
+            SourceProductionContext context,
+            DbProviderInfo providerInfo)
             : base(context)
         {
+            _providerInfo = providerInfo;
         }
 
         public override void ProcessAttributes(
@@ -307,7 +313,7 @@ namespace Gedaq.Npgsql
 
         public override void GenerateAndSaveMethods()
         {
-            var readGenerator = new DbQueryGenerator(_context);
+            var readGenerator = new DbQueryGenerator(_context, _providerInfo);
             var interfaceGenerator = new InterfaceGenerator();
             foreach (var queryRead in _read)
             {
@@ -324,7 +330,7 @@ namespace Gedaq.Npgsql
             }
             _read.Clear();
 
-            var batchReadGenerator = new DbQueryBatchGenerator(_context);
+            var batchReadGenerator = new DbQueryBatchGenerator(_context, _providerInfo);
             foreach (var batchRead in _readBatch)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();

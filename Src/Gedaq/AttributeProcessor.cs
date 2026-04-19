@@ -1,25 +1,39 @@
-﻿using Gedaq.MySqlConnector;
+﻿using Gedaq.DbConnection;
+using Gedaq.MySqlConnector;
 using Gedaq.Npgsql;
 using Gedaq.SqlClient;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System.Threading;
 
 namespace Gedaq
 {
     internal class AttributeProcessor
     {
+        private readonly NpgsqlProviderInfo _npgsqlProviderInfo;
         private readonly NpgsqlAttributeProcessor _npgsqlProcessor;
+
+        private readonly DbProviderInfo _dbProviderInfo;
         private readonly DbConnectionAttributeProcessor _dbConnectionProcessor;
+
+        private readonly SqlClientProviderInfo _sqlClientProviderInfo;
         private readonly SqlClientAttributeProcessor _sqlClientProcessor;
+
+        private readonly MySqlConnectorProviderInfo _mySqlConnectorProviderInfo;
         private readonly MySqlConnectorAttributeProcessor _mysqlConnectorProcessor;
 
         public AttributeProcessor(SourceProductionContext context)
         {
-            _npgsqlProcessor = new NpgsqlAttributeProcessor(context);
-            _dbConnectionProcessor = new DbConnectionAttributeProcessor(context);
-            _sqlClientProcessor = new SqlClientAttributeProcessor(context);
-            _mysqlConnectorProcessor = new MySqlConnectorAttributeProcessor(context);
+            _npgsqlProviderInfo = new NpgsqlProviderInfo();
+            _npgsqlProcessor = new NpgsqlAttributeProcessor(context, _npgsqlProviderInfo);
+
+            _dbProviderInfo = new DbProviderInfo();
+            _dbConnectionProcessor = new DbConnectionAttributeProcessor(context, _dbProviderInfo);
+
+            _sqlClientProviderInfo = new SqlClientProviderInfo();
+            _sqlClientProcessor = new SqlClientAttributeProcessor(context, _sqlClientProviderInfo);
+
+            _mySqlConnectorProviderInfo = new MySqlConnectorProviderInfo();
+            _mysqlConnectorProcessor = new MySqlConnectorAttributeProcessor(context, _mySqlConnectorProviderInfo);
         }
 
         public void TryFillFrom(

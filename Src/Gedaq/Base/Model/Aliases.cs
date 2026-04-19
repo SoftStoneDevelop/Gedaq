@@ -29,7 +29,7 @@ namespace Gedaq.Base.Model
         /// <summary>
         /// Prefix all fields in entity
         /// </summary>
-        public string Prefix { get; set; }
+        public string Prefix { get; set; } = "";
 
         public Field GetLinkField()
         {

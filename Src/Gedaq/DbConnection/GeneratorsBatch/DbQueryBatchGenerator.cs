@@ -12,12 +12,14 @@ namespace Gedaq.DbConnection.GeneratorsBatch
         private readonly DbQueryBatchRead _batchRead;
         private readonly DbQueryBatchScalarNoQuery _batchScalarNoQuery;
 
-        public DbQueryBatchGenerator(SourceProductionContext context)
+        public DbQueryBatchGenerator(
+            SourceProductionContext context,
+            DbProviderInfo providerInfo)
             : base (context)
         {
             _batchCommand = new DbBatchCommand();
-            _batchRead = new DbQueryBatchRead(_batchCommand);
-            _batchScalarNoQuery = new DbQueryBatchScalarNoQuery(_batchCommand);
+            _batchRead = new DbQueryBatchRead(_batchCommand, providerInfo);
+            _batchScalarNoQuery = new DbQueryBatchScalarNoQuery(_batchCommand, providerInfo);
         }
 
         public void Generate(DbQueryBatch source, InterfaceGenerator interfaceGenerator)

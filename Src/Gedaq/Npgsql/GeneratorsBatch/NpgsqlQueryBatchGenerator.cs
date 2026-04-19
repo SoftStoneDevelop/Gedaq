@@ -12,12 +12,14 @@ namespace Gedaq.Npgsql.GeneratorsBatch
         private readonly NpgsqlQueryBatchRead _batchRead;
         private readonly NpgsqlQueryBatchScalarNoQuery _batchScalarNoQuery;
 
-        public NpgsqlQueryBatchGenerator(SourceProductionContext context)
+        public NpgsqlQueryBatchGenerator(
+            SourceProductionContext context,
+            NpgsqlProviderInfo providerInfo)
             : base (context)
         {
-            _batchCommand = new NpgsqlBatchCommand();
-            _batchRead = new NpgsqlQueryBatchRead(_batchCommand);
-            _batchScalarNoQuery = new NpgsqlQueryBatchScalarNoQuery(_batchCommand);
+            _batchCommand = new NpgsqlBatchCommand(providerInfo);
+            _batchRead = new NpgsqlQueryBatchRead(_batchCommand, providerInfo);
+            _batchScalarNoQuery = new NpgsqlQueryBatchScalarNoQuery(_batchCommand, providerInfo);
         }
 
         public void GenerateMethod(NpgsqlQueryBatch source, InterfaceGenerator interfaceGenerator)

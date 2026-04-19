@@ -2,7 +2,6 @@
 using Gedaq.Constants;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Model;
 using Gedaq.Parser;
 using Gedaq.SqlClient.GeneratorsQuery;
 using Gedaq.SqlClient.Model;
@@ -11,18 +10,22 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 
 namespace Gedaq.SqlClient
 {
     internal class SqlClientAttributeProcessor : BaseAttributeProcessor
     {
-        private List<SqlClientQuery> _read = new List<SqlClientQuery>();
-        private QueryParser _queryParser = new QueryParser();
+        private readonly SqlClientProviderInfo _providerInfo;
 
-        public SqlClientAttributeProcessor(SourceProductionContext context)
+        private readonly List<SqlClientQuery> _read = new List<SqlClientQuery>();
+        private readonly QueryParser _queryParser = new QueryParser();
+
+        public SqlClientAttributeProcessor(
+            SourceProductionContext context,
+            SqlClientProviderInfo providerInfo)
             : base(context)
         {
+            _providerInfo = providerInfo;
         }
 
         public override void ProcessAttributes(
@@ -167,7 +170,7 @@ namespace Gedaq.SqlClient
 
         public override void GenerateAndSaveMethods()
         {
-            var readGenerator = new SqlClientQueryGenerator(_context);
+            var readGenerator = new SqlClientQueryGenerator(_context, _providerInfo);
             var interfaceGenerator = new InterfaceGenerator();
             foreach (var queryRead in _read)
             {

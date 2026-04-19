@@ -8,7 +8,13 @@ namespace Gedaq.DbConnection.GeneratorsQuery
 {
     internal class DbCommandGenerator : CommandGeneratorBase
     {
-        DbProviderInfo _providerInfo = new DbProviderInfo();
+        private readonly DbProviderInfo _providerInfo;
+
+        public DbCommandGenerator(DbProviderInfo providerInfo)
+        {
+            _providerInfo = providerInfo;
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void CreateParametr(BaseParametr baseParametr, StringBuilder builder)

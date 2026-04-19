@@ -1,10 +1,5 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Gedaq.Base
 {
@@ -47,8 +42,7 @@ namespace Gedaq.Base
             }
             else
             {
-                // TODO
-                throw new Exception("UB");
+                return $"\"{field.SQLName}\"";
             }
         }
     }
