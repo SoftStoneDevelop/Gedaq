@@ -64,7 +64,11 @@ namespace Gedaq.MySqlConnector
             return MySqlConnectorMapTypeHelper.IsSpecialHandlerType(type);
         }
 
-        public override string GetSpecialTypeValue(ITypeSymbol type, Field field, string source = "reader")
+        public override string GetSpecialTypeValue(
+            ITypeSymbol type,
+            string aliasesPrefix,
+            Field field,
+            string source = "reader")
         {
             throw new System.NotImplementedException();
         }

@@ -145,19 +145,19 @@ namespace Gedaq.Helpers
             if (mapType.IsNullableType())
             {
                 builder.Append($@"
-                    if(reader.IsDBNull({provider.ValueReaderKey(field)}))
+                    if(reader.IsDBNull({provider.ValueReaderKey(string.Empty, field)}))
                     {{
-                        {mapVariableName} = {castTypeExpr}({provider.GetSpecialTypeValue(mapType, field)})null;
+                        {mapVariableName} = {castTypeExpr}({provider.GetSpecialTypeValue(mapType, string.Empty, field)})null;
                     }}
                     else
                     {{
-                        {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{provider.GetSpecialTypeValue(mapType, field)}>({provider.ValueReaderKey(field)});
+                        {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{provider.GetSpecialTypeValue(mapType, string.Empty, field)}>({provider.ValueReaderKey(string.Empty, field)});
                     }}");
             }
             else
             {
                 builder.Append($@"
-                    {mapVariableName} = {castTypeExpr}{provider.GetSpecialTypeValue(mapType, field)};");
+                    {mapVariableName} = {castTypeExpr}{provider.GetSpecialTypeValue(mapType, string.Empty, field)};");
             }
         }
 
@@ -207,7 +207,7 @@ namespace Gedaq.Helpers
                 if (!pair.HaveUnprocess)
                 {
                     //close brackets and set
-                    EndInnerEntity(methodType, pair, builder);
+                    EndInnerEntity(pair, builder);
                     continue;
                 }
 
@@ -250,7 +250,6 @@ namespace Gedaq.Helpers
         }
 
         private static void EndInnerEntity(
-            MethodType methodType,
             ItemPair pair,
             StringBuilder builder)
         {
@@ -294,7 +293,7 @@ namespace Gedaq.Helpers
         {
             pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
             builder.Append($@"
-                        {Tabs(pair.Tabs)}if(!reader.IsDBNull({provider.ValueReaderKey(field)}))
+                        {Tabs(pair.Tabs)}if(!reader.IsDBNull({provider.ValueReaderKey(pair.Aliases.Prefix, field)}))
                         {{");
 
             if (createItemIfNull)
@@ -309,19 +308,19 @@ namespace Gedaq.Helpers
             if (propertyType.IsNullableType())
             {
                 builder.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({provider.ValueReaderKey(field)});");
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
             }
             else
             {
                 if (provider.IsSpecialHandlerType(propertyType))
                 {
                     builder.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {provider.GetSpecialTypeValue(propertyType, field)};");
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {provider.GetSpecialTypeValue(propertyType, pair.Aliases.Prefix, field)};");
                 }
                 else
                 {
                     builder.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({provider.ValueReaderKey(field)});");
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
                 }
             }
 

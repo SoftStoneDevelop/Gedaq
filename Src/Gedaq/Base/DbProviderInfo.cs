@@ -31,10 +31,11 @@ namespace Gedaq.Base
 
         public abstract string GetSpecialTypeValue(
             ITypeSymbol type,
+            string aliasesPrefix,
             Field field,
             string source = "reader");
 
-        public string ValueReaderKey(Field field)
+        public string ValueReaderKey(string prefix, Field field)
         {
             if (field.Position.HasValue)
             {
@@ -42,7 +43,7 @@ namespace Gedaq.Base
             }
             else
             {
-                return $"\"{field.SQLName}\"";
+                return $"\"{prefix}{field.SQLName}\"";
             }
         }
     }

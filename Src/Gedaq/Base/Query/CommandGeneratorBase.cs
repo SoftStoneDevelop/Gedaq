@@ -1,8 +1,7 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.DbConnection.GeneratorsQuery;
+using Gedaq.Constants;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Linq;
@@ -85,11 +84,12 @@ namespace Gedaq.Base.Query
                 "async "
                 ;
             var returnType = methodType == MethodType.Async ? $"{source.MethodInfo.AsyncResultType.ToResultType()}<{ProviderInfo.CommandType()}>" : ProviderInfo.CommandType();
-            var queryParametr = source.IsDynamicQuery() ? ", string dynamicQuery" : "";
 
             builder.Append($@"
         {accessModifier} {staticModifier} {asyncKeyword}{returnType} {CreateCommandMethodName(source, methodType)}(
-            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}{queryParametr}");
+            {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
+
+            AddDynamicQuery(source, builder);
             AddFormatParametrs(source, builder);
             AddDynamicParametrs(source, builder);
             builder.Append($@",
@@ -205,7 +205,7 @@ namespace Gedaq.Base.Query
             else if (source.IsDynamicQuery())
             {
                 builder.Append($@"
-            command.CommandText = dynamicQuery;");
+            command.CommandText = {MethodParametersConstants.DynamicQueryParametr};");
             }
             else
             {
@@ -851,6 +851,11 @@ namespace Gedaq.Base.Query
 
             }
 
+            if (source.IsDynamicQuery())
+            {
+                builder.Append($@", {MethodParametersConstants.DynamicQueryParametr}");
+            }
+
             if (source.HaveDynamicParametrs())
             {
                 builder.Append($@", {source.BaseDynamicParametrs().VariableName()}");
@@ -937,6 +942,18 @@ namespace Gedaq.Base.Query
 
             builder.Append($@",
             {ProviderInfo.GetParametrType()}[] {source.BaseDynamicParametrs().VariableName()}");
+        }
+
+        public void AddDynamicQuery(
+            QueryBaseCommand source,
+            StringBuilder builder)
+        {
+            if (!source.IsDynamicQuery())
+            {
+                return;
+            }
+
+            builder.Append($@", string {MethodParametersConstants.DynamicQueryParametr}");
         }
 
         public void WriteSetParametrs(QueryBaseCommand source, StringBuilder builder, ProviderInfo providerInfo)

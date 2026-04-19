@@ -168,6 +168,7 @@ namespace Gedaq.Base.Query
         {accessModifier} {staticModifier} {asyncKeyword}{ExecuteCommandReturnType()} {ReadMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
+            _commandGenerator.AddDynamicQuery(source, builder);
             _commandGenerator.AddParametrs(source, builder, false);
             _commandGenerator.AddFormatParametrs(source, builder);
             _commandGenerator.AddDynamicParametrs(source, builder);
