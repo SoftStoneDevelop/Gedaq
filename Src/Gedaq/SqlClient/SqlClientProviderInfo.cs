@@ -68,13 +68,13 @@ namespace Gedaq.SqlClient
             return SqlClientMapTypeHelper.IsSpecialHandlerType(type);
         }
 
-        public override string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader")
+        public override string GetSpecialTypeValue(ITypeSymbol type, Field field, string source = "reader")
         {
             switch (type.GetFullTypeName())
             {
                 case "System.Data.SqlTypes.SqlXml":
                 {
-                    return $"{source}.GetSqlXml({fieldId})";
+                    return $"{source}.GetSqlXml({ValueReaderKey(field)})";
                 }
 
                 default:

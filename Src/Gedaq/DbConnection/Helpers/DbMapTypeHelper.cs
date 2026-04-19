@@ -1,17 +1,11 @@
 ﻿using Gedaq.Helpers;
-using Gedaq.Npgsql.Helpers;
 using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Gedaq.DbConnection.Helpers
 {
     internal static class DbMapTypeHelper
     {
-        internal static bool IsKnownProviderType(
-            this ITypeSymbol typeSymbol
-            )
+        internal static bool IsKnownProviderType(this ITypeSymbol typeSymbol)
         {
             if (typeSymbol.IsKnownArrayType())
             {
@@ -26,9 +20,7 @@ namespace Gedaq.DbConnection.Helpers
             return typeSymbol.IsKnownProviderBaseType();
         }
 
-        internal static bool IsKnownProviderBaseType(
-            this ITypeSymbol namedTypeSymbol
-            )
+        internal static bool IsKnownProviderBaseType(this ITypeSymbol namedTypeSymbol)
         {
             switch (namedTypeSymbol.GetFullTypeName(replaceNullable: true))
             {

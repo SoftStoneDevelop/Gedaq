@@ -65,7 +65,7 @@ namespace Gedaq.DbConnection
             return false;
         }
 
-        public override string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader")
+        public override string GetSpecialTypeValue(ITypeSymbol type, Field field, string source = "reader")
         {
             throw new NotImplementedException();
         }

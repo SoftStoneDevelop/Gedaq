@@ -34,6 +34,22 @@ namespace Gedaq.Base
 
         public abstract bool IsSpecialHandlerType(ITypeSymbol type);
 
-        public abstract string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader");
+        public abstract string GetSpecialTypeValue(
+            ITypeSymbol type,
+            Field field,
+            string source = "reader");
+
+        public string ValueReaderKey(Field field)
+        {
+            if (field.Position.HasValue)
+            {
+                return field.Position.Value.ToString();
+            }
+            else
+            {
+                // TODO
+                throw new Exception("UB");
+            }
+        }
     }
 }

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Text;
 
 namespace Gedaq.Base.Model
 {
@@ -21,12 +18,22 @@ namespace Gedaq.Base.Model
         }
 
         public bool IsRowsAffected { get; private set; }
+
         public List<Field> Fields = new List<Field>();
 
+        /// <summary>
+        /// Name of this Entity in root entity
+        /// </summary>
         public string EntityName { get; private set; }
+
         public string LinkKey { get; private set; }
 
         public bool HaveLinkKey => LinkKey != null;
+
+        /// <summary>
+        /// Prefix all fields in entity
+        /// </summary>
+        public string Prefix { get; set; }
 
         public Field GetLinkField()
         {

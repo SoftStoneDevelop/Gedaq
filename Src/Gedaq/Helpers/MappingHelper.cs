@@ -141,22 +141,23 @@ namespace Gedaq.Helpers
             string mapVariableName,
             string castTypeExpr = "")
         {
+            var field = Field.OnlyPositionalField(0);
             if (mapType.IsNullableType())
             {
                 builder.Append($@"
-                    if(reader.IsDBNull(0))
+                    if(reader.IsDBNull({provider.ValueReaderKey(field)}))
                     {{
-                        {mapVariableName} = {castTypeExpr}({provider.GetSpecialTypeValue(mapType, 0)})null;
+                        {mapVariableName} = {castTypeExpr}({provider.GetSpecialTypeValue(mapType, field)})null;
                     }}
                     else
                     {{
-                        {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{provider.GetSpecialTypeValue(mapType, 0)}>(0);
+                        {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{provider.GetSpecialTypeValue(mapType, field)}>({provider.ValueReaderKey(field)});
                     }}");
             }
             else
             {
                 builder.Append($@"
-                    {mapVariableName} = {castTypeExpr}{provider.GetSpecialTypeValue(mapType, 0)};");
+                    {mapVariableName} = {castTypeExpr}{provider.GetSpecialTypeValue(mapType, field)};");
             }
         }
 
@@ -293,7 +294,7 @@ namespace Gedaq.Helpers
         {
             pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
             builder.Append($@"
-                        {Tabs(pair.Tabs)}if(!reader.IsDBNull({field.Position}))
+                        {Tabs(pair.Tabs)}if(!reader.IsDBNull({provider.ValueReaderKey(field)}))
                         {{");
 
             if (createItemIfNull)
@@ -308,19 +309,19 @@ namespace Gedaq.Helpers
             if (propertyType.IsNullableType())
             {
                 builder.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({field.Position});");
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({provider.ValueReaderKey(field)});");
             }
             else
             {
                 if (provider.IsSpecialHandlerType(propertyType))
                 {
                     builder.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {provider.GetSpecialTypeValue(propertyType, field.Position)};");
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {provider.GetSpecialTypeValue(propertyType, field)};");
                 }
                 else
                 {
                     builder.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({field.Position});");
+                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({provider.ValueReaderKey(field)});");
                 }
             }
 

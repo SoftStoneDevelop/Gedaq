@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Gedaq.Base.Model
+﻿namespace Gedaq.Base.Model
 {
     internal abstract class FieldInfo
     {
@@ -10,10 +6,23 @@ namespace Gedaq.Base.Model
 
     internal class Field
     {
+        public static Field OnlyPositionalField(int position)
+        {
+            return new Field
+            {
+                Position = position
+            };
+        }
+
         /// <summary>
         /// Name of property in type
         /// </summary>
         public string Name { get; set; }
+
+        /// <summary>
+        /// Name of property in sql (and in reader)
+        /// </summary>
+        public string SQLName { get; set; }
 
         /// <summary>
         /// Position in SQL row

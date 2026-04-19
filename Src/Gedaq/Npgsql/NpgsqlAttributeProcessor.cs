@@ -1,6 +1,7 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Model;
 using Gedaq.Constants;
+using Gedaq.DbConnection.Helpers;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Generators;
@@ -211,8 +212,115 @@ namespace Gedaq.Npgsql
                 }
                 else
                 {
-                    // need check mapTypeAttributes
-                    TODO;
+                    if (readPair.Query.IsCollectionDelegateMap)
+                    {
+
+                    }
+                    else
+                    {
+                        //System.Diagnostics.Debugger.Launch();
+                        var type = query.MapTypes[0];
+
+                        var attributes = type.GetAttributes();
+
+                        var alias = new Aliases();
+                        foreach (var attribute in attributes)
+                        {
+                            if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "AliasPrefixAttribute"))
+                            {
+                                var constructorArguments = attribute.ConstructorArguments;
+                                if (constructorArguments.Length != 1)
+                                {
+                                    DiagnosticHelper.ReportDiagnostic(
+                                        _context,
+                                        DiagnosticConstants.IncorrectAttributeParametrsCount,
+                                        DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
+                                        DiagnosticSeverity.Error,
+                                        constructorArguments.Length.ToString());
+                                }
+
+                                var prefixArgument = constructorArguments[0];
+                                if (!(prefixArgument.Type is INamedTypeSymbol paramName) ||
+                                    paramName.Name != nameof(String))
+                                {
+                                    DiagnosticHelper.ReportDiagnostic(
+                                        _context,
+                                        DiagnosticConstants.IncorrectAttributeParametr,
+                                        DiagnosticConstants.IncorrectAttributeParametrDescr,
+                                        DiagnosticSeverity.Error,
+                                        new string[] { "1", "AliasPrefix" });
+                                }
+
+                                alias.Prefix = ((string)prefixArgument.Value).ToLowerInvariant();
+                                break;
+                            }
+                        }
+
+                        foreach (var member in type.GetMembers())
+                        {
+                            if (!member.Kind.HasFlag(SymbolKind.Property))
+                            {
+                                continue;
+                            }
+
+                            if (!(member is Microsoft.CodeAnalysis.IPropertySymbol propertySymbol))
+                            {
+                                continue;
+                            }
+
+                            var propertyType = propertySymbol.Type;
+                            if (false) // TODO ProviderInfo check known types
+                            {
+                                continue;
+                            }
+
+                            var pAttributes = propertySymbol.GetAttributes();
+                            string sqlName = null;
+                            int? position = null;
+                            string name = propertySymbol.Name;
+
+                            foreach (var pAttribute in pAttributes)
+                            {
+                                if (!pAttribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "AliasAttribute"))
+                                {
+                                    continue;
+                                }
+
+                                var constructorArguments = pAttribute.ConstructorArguments;
+                                if (constructorArguments.Length != 1)
+                                {
+                                    DiagnosticHelper.ReportDiagnostic(
+                                        _context,
+                                        DiagnosticConstants.IncorrectAttributeParametrsCount,
+                                        DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
+                                        DiagnosticSeverity.Error,
+                                        constructorArguments.Length.ToString());
+                                }
+
+                                var aliasArgument = constructorArguments[0];
+                                if (!(aliasArgument.Type is INamedTypeSymbol paramName) ||
+                                    paramName.Name != nameof(String))
+                                {
+                                    DiagnosticHelper.ReportDiagnostic(
+                                        _context,
+                                        DiagnosticConstants.IncorrectAttributeParametr,
+                                        DiagnosticConstants.IncorrectAttributeParametrDescr,
+                                        DiagnosticSeverity.Error,
+                                        new string[] { "1", "Alias" });
+                                }
+
+                                sqlName = ((string)aliasArgument.Value).ToLowerInvariant();
+                                if (string.IsNullOrWhiteSpace(sqlName))
+                                {
+                                    sqlName = name.ToLowerInvariant();
+                                }
+
+                                break;
+                            }
+
+                            alias.Fields.Add(new Field { Name = name, Position = position, SQLName = sqlName });
+                        }
+                    }
                 }
             }
 

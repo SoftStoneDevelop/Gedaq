@@ -2,6 +2,7 @@
 using Gedaq.Base.Model;
 using Gedaq.MySqlConnector.Helpers;
 using Microsoft.CodeAnalysis;
+using System;
 
 namespace Gedaq.MySqlConnector
 {
@@ -64,7 +65,7 @@ namespace Gedaq.MySqlConnector
             return MySqlConnectorMapTypeHelper.IsSpecialHandlerType(type);
         }
 
-        public override string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader")
+        public override string GetSpecialTypeValue(ITypeSymbol type, Field field, string source = "reader")
         {
             throw new System.NotImplementedException();
         }
