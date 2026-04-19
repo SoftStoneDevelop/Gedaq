@@ -1,14 +1,11 @@
 ﻿using Gedaq.Comparers;
 using Gedaq.Constants;
-using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
-using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Diagnostics;
 using System.Linq;
 
 namespace Gedaq
@@ -18,7 +15,7 @@ namespace Gedaq
     {
         public void Initialize(IncrementalGeneratorInitializationContext context)
         {
-            // System.Diagnostics.Debugger.Launch();
+            //System.Diagnostics.Debugger.Launch();
 
             var classDeclarations = context.SyntaxProvider
                 .CreateSyntaxProvider(

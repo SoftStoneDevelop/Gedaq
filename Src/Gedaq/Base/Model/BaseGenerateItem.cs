@@ -4,20 +4,19 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
-using System.Collections.Immutable;
 using System.Linq;
 
 namespace Gedaq.Base.Model
 {
     internal class BaseGenerateItem : IMethodInfo
     {
-        public ITypeSymbol[] MapTypes { get; protected set; }
+        public MapTypeInfo[] MapTypeInfos { get; protected set; }
 
-        public bool HaveMapTypes => MapTypes != null && MapTypes.Length > 0;
+        public bool HaveMapTypes => MapTypeInfos?.Length > 0;
 
-        public bool IsCollectionDelegateMap => HaveMapTypes && MapTypes.Length > 1;
+        public bool IsCollectionDelegateMap => MapTypeInfos?.Length > 1;
 
-        public string[] OverrideAliasPrefixs { get; protected set; }
+        public string[] _overrideAliasPrefixs { get; protected set; }
 
         public BaseMethodInfo MethodInfo { get; set; }
 
@@ -49,16 +48,16 @@ namespace Gedaq.Base.Model
                 return false;
             }
 
-            if (!argument.Type.IsArrayType(out var elementType))
+            if (!argument.Type.IsArrayType(out var _))
             {
                 return false;
             }
 
-            MapTypes = new ITypeSymbol[argument.Values.Length];
+            MapTypeInfos = new MapTypeInfo[argument.Values.Length];
             for (int i = 0; i < argument.Values.Length; i++)
             {
                 var value = (ITypeSymbol)argument.Values[i].Value;
-                MapTypes[i] = value;
+                MapTypeInfos[i] = new MapTypeInfo { MapType = value };
             }
 
             return true;
@@ -86,11 +85,11 @@ namespace Gedaq.Base.Model
                 return false;
             }
 
-            OverrideAliasPrefixs = new string[argument.Values.Length];
+            _overrideAliasPrefixs = new string[argument.Values.Length];
             for (int i = 0; i < argument.Values.Length; i++)
             {
                 var value = (string)argument.Values[i].Value;
-                OverrideAliasPrefixs[i] = value;
+                _overrideAliasPrefixs[i] = value;
             }
 
             return true;

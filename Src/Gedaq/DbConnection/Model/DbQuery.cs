@@ -56,7 +56,7 @@ namespace Gedaq.DbConnection.Model
                     DiagnosticConstants.IncorrectAttributeParametr,
                     DiagnosticConstants.IncorrectAttributeParametrDescr,
                     DiagnosticSeverity.Error,
-                    new string[] { "3", nameof(MapTypes) });
+                    new string[] { "3", nameof(MapTypeInfos) });
 
                 return false;
             }
@@ -68,7 +68,7 @@ namespace Gedaq.DbConnection.Model
                     DiagnosticConstants.IncorrectAttributeParametr,
                     DiagnosticConstants.IncorrectAttributeParametrDescr,
                     DiagnosticSeverity.Error,
-                    new string[] { "4", nameof(OverrideAliasPrefixs) });
+                    new string[] { "4", nameof(_overrideAliasPrefixs) });
 
                 return false;
             }

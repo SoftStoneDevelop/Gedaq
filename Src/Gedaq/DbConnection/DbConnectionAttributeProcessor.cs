@@ -11,7 +11,6 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.Linq;
 
 namespace Gedaq.Npgsql
@@ -153,7 +152,7 @@ namespace Gedaq.Npgsql
                         firstRead = queryRead;
                     }
 
-                    batchPair.Batch.AllSameTypes &= CollectionHelper.SequnceEqual(firstRead.MapTypes, queryRead.MapTypes, SymbolEqualityComparer.Default);
+                    batchPair.Batch.AllSameTypes &= CollectionHelper.SequnceEqual(firstRead.MapTypeInfos, queryRead.MapTypeInfos, SymbolEqualityComparer.Default);
                     batchPair.Batch.HaveParametrs |= queryRead.HaveParametrs();
                     batchPair.Batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
                     batchPair.Batch.HaveDynamicParametrs |= queryRead.HaveDynamicParametrs();
@@ -202,11 +201,11 @@ namespace Gedaq.Npgsql
 
             if (query.QueryType == QueryType.NonQuery)
             {
-                query.Aliases = _queryParser.GetIntResultAlias();
+                query.IsRowsAffected = true;
             }
             else if (!query.IsDynamicQuery())
             {
-                query.Aliases = _queryParser.Parse(ref query.Query);
+                query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);
             }
 
             if (query.NeedGenerate)

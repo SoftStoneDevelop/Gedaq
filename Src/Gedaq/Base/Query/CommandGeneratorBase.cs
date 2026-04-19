@@ -344,7 +344,7 @@ namespace Gedaq.Base.Query
                     return "void";
                 }
 
-                var mapType = source.MapTypes[0];
+                var mapType = source.MapTypeInfos[0].MapType;
                 switch (source.ReturnType)
                 {
                     case ReturnType.Enumerable:
@@ -457,11 +457,11 @@ namespace Gedaq.Base.Query
             if (source.IsCollectionDelegateMap)
             {
                 builder.Append($@"
-                // By the power of BANANA;");
+                // TODO By the power of BANANA;");
             }
             else
             {
-                var mapType = source.MapTypes[0];
+                var mapType = source.MapTypeInfos[0].MapType;
                 switch (source.ReturnType)
                 {
                     case ReturnType.Enumerable:
@@ -994,7 +994,7 @@ namespace Gedaq.Base.Query
             out bool isRowsAffected,
             out string typeName)
         {
-            if (source.Aliases.IsRowsAffected)
+            if (source.IsRowsAffected)
             {
                 if (source.QueryType != Enums.QueryType.NonQuery)
                 {
@@ -1007,7 +1007,7 @@ namespace Gedaq.Base.Query
                 return;
             }
 
-            var mapType = source.MapTypes[0];
+            var mapType = source.MapTypeInfos[0].MapType;
             isRowsAffected = false;
             if (providerInfo.IsKnownProviderType(mapType) || providerInfo.IsSpecialHandlerType(mapType))
             {
@@ -1016,7 +1016,7 @@ namespace Gedaq.Base.Query
                 return;
             }
 
-            var firstField = source.Aliases.AllFieldsOrderByPosition().First();
+            var firstField = source.MapTypeInfos[0].Aliases.AllFieldsOrderByPosition().First();
             mapType.GetPropertyOrFieldName(firstField.Name, out _, out var typeProp);
             type = typeProp;
             typeName = type.GetFullTypeName(replaceNullable: true);

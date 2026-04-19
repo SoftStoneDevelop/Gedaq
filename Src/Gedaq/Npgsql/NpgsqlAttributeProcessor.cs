@@ -1,7 +1,6 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Model;
 using Gedaq.Constants;
-using Gedaq.DbConnection.Helpers;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Generators;
@@ -15,7 +14,6 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 
 namespace Gedaq.Npgsql
 {
@@ -156,7 +154,7 @@ namespace Gedaq.Npgsql
                         firstRead = queryRead;
                     }
 
-                    batchPair.Batch.AllSameTypes &= CollectionHelper.SequnceEqual(firstRead.MapTypes, queryRead.MapTypes, SymbolEqualityComparer.Default);
+                    batchPair.Batch.AllSameTypes &= CollectionHelper.SequnceEqual(firstRead.MapTypeInfos, queryRead.MapTypeInfos, SymbolEqualityComparer.Default);
                     batchPair.Batch.HaveParametrs |= queryRead.HaveParametrs();
                     batchPair.Batch.HaveFormatParametrs |= queryRead.HaveFromatParametrs();
                     batchPair.Batch.HaveDynamicParametrs |= queryRead.HaveDynamicParametrs();
@@ -201,125 +199,20 @@ namespace Gedaq.Npgsql
             var query = readPair.Query;
             if (query.QueryType == QueryType.NonQuery)
             {
-                query.Aliases = _queryParser.GetIntResultAlias();
+                query.IsRowsAffected = true;
             }
             else
             {
                 if (query.Query != null)
                 {
                     // query must contain select or return
-                    query.Aliases = _queryParser.Parse(ref query.Query);
+                    query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);
                 }
                 else
                 {
-                    if (readPair.Query.IsCollectionDelegateMap)
+                    foreach (var mapTypeInfo in query.MapTypeInfos)
                     {
-
-                    }
-                    else
-                    {
-                        //System.Diagnostics.Debugger.Launch();
-                        var type = query.MapTypes[0];
-
-                        var attributes = type.GetAttributes();
-
-                        var alias = new Aliases();
-                        foreach (var attribute in attributes)
-                        {
-                            if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "AliasPrefixAttribute"))
-                            {
-                                var constructorArguments = attribute.ConstructorArguments;
-                                if (constructorArguments.Length != 1)
-                                {
-                                    DiagnosticHelper.ReportDiagnostic(
-                                        _context,
-                                        DiagnosticConstants.IncorrectAttributeParametrsCount,
-                                        DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
-                                        DiagnosticSeverity.Error,
-                                        constructorArguments.Length.ToString());
-                                }
-
-                                var prefixArgument = constructorArguments[0];
-                                if (!(prefixArgument.Type is INamedTypeSymbol paramName) ||
-                                    paramName.Name != nameof(String))
-                                {
-                                    DiagnosticHelper.ReportDiagnostic(
-                                        _context,
-                                        DiagnosticConstants.IncorrectAttributeParametr,
-                                        DiagnosticConstants.IncorrectAttributeParametrDescr,
-                                        DiagnosticSeverity.Error,
-                                        new string[] { "1", "AliasPrefix" });
-                                }
-
-                                alias.Prefix = ((string)prefixArgument.Value).ToLowerInvariant();
-                                break;
-                            }
-                        }
-
-                        foreach (var member in type.GetMembers())
-                        {
-                            if (!member.Kind.HasFlag(SymbolKind.Property))
-                            {
-                                continue;
-                            }
-
-                            if (!(member is Microsoft.CodeAnalysis.IPropertySymbol propertySymbol))
-                            {
-                                continue;
-                            }
-
-                            var propertyType = propertySymbol.Type;
-                            if (false) // TODO ProviderInfo check known types
-                            {
-                                continue;
-                            }
-
-                            var pAttributes = propertySymbol.GetAttributes();
-                            string sqlName = null;
-                            int? position = null;
-                            string name = propertySymbol.Name;
-
-                            foreach (var pAttribute in pAttributes)
-                            {
-                                if (!pAttribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "AliasAttribute"))
-                                {
-                                    continue;
-                                }
-
-                                var constructorArguments = pAttribute.ConstructorArguments;
-                                if (constructorArguments.Length != 1)
-                                {
-                                    DiagnosticHelper.ReportDiagnostic(
-                                        _context,
-                                        DiagnosticConstants.IncorrectAttributeParametrsCount,
-                                        DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
-                                        DiagnosticSeverity.Error,
-                                        constructorArguments.Length.ToString());
-                                }
-
-                                var aliasArgument = constructorArguments[0];
-                                if (!(aliasArgument.Type is INamedTypeSymbol paramName) ||
-                                    paramName.Name != nameof(String))
-                                {
-                                    DiagnosticHelper.ReportDiagnostic(
-                                        _context,
-                                        DiagnosticConstants.IncorrectAttributeParametr,
-                                        DiagnosticConstants.IncorrectAttributeParametrDescr,
-                                        DiagnosticSeverity.Error,
-                                        new string[] { "1", "Alias" });
-                                }
-
-                                sqlName = ((string)aliasArgument.Value).ToLowerInvariant();
-                                if (string.IsNullOrWhiteSpace(sqlName))
-                                {
-                                    sqlName = name.ToLowerInvariant();
-                                }
-
-                                break;
-                            }
-
-                            alias.Fields.Add(new Field { Name = name, Position = position, SQLName = sqlName });
-                        }
+                        mapTypeInfo.ParseAliasesFromType(_context);
                     }
                 }
             }
@@ -481,8 +374,19 @@ namespace Gedaq.Npgsql
                 throw new Exception($"Unknown {nameof(BinaryExport)} constructor");
             }
 
-            var aliases = _binaryParser.Parse(ref binaryExport.Query);
-            binaryExport.SetAliases(aliases);
+            if (binaryExport.Query != null)
+            {
+                var aliases = _binaryParser.Parse(ref binaryExport.Query);
+                binaryExport.SetAliases(binaryExport.MapTypeInfos[0], aliases);
+            }
+            else
+            {
+                foreach (var mapTypeInfo in binaryExport.MapTypeInfos)
+                {
+                    mapTypeInfo.ParseAliasesFromType(_context);
+                }
+            }
+
             _binaryExports.Add(binaryExport);
         }
 

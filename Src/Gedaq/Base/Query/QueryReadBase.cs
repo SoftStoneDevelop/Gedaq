@@ -127,7 +127,7 @@ namespace Gedaq.Base.Query
                     return "void";
                 }
 
-                var mapType = source.MapTypes[0];
+                var mapType = source.MapTypeInfos[0].MapType;
                 switch (source.ReturnType)
                 {
                     case ReturnType.Enumerable:

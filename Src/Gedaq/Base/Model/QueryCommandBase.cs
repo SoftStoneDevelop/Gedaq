@@ -1,7 +1,6 @@
 ﻿using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Gedaq.Base.Model
 {    
@@ -14,7 +13,6 @@ namespace Gedaq.Base.Model
             return Query == null;
         }
 
-        public Aliases Aliases;
         public FormatParametr[] FormatParametrs;
 
         public bool HaveFromatParametrs()
@@ -31,6 +29,11 @@ namespace Gedaq.Base.Model
         public abstract bool HaveParametrs();
 
         public abstract IEnumerable<BaseParametr> BaseParametrs();
+
+        /// <summary>
+        /// ExecuteNonQuery method, means return type is int
+        /// </summary>
+        public bool IsRowsAffected { get; set; }
 
         protected bool FillGenerate(TypedConstant argument)
         {

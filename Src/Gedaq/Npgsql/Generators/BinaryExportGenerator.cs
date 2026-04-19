@@ -137,8 +137,8 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             else
             {
                 returnType = methodType == MethodType.Async ?
-                    $@"IAsyncEnumerable<{binaryExport.MapTypes[0].GetFullTypeName(true, true)}>" :
-                    $@"IEnumerable<{binaryExport.MapTypes[0].GetFullTypeName(true, true)}>";
+                    $@"IAsyncEnumerable<{binaryExport.MapTypeInfos[0].MapType.GetFullTypeName(true, true)}>" :
+                    $@"IEnumerable<{binaryExport.MapTypeInfos[0].MapType.GetFullTypeName(true, true)}>";
             }
 
             var methodName = methodType == MethodType.Async ? $@"{binaryExport.MethodName}Async" : $@"{binaryExport.MethodName}";
@@ -227,20 +227,21 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             if (binaryExport.IsCollectionDelegateMap)
             {
                 _methodCode.Append($@"
-                // By the power of BANANA;");
+                // TODO By the power of BANANA;");
             }
             else
             {
-                var mapType = binaryExport.MapTypes[0];
+                var mapType = binaryExport.MapTypeInfos[0].MapType;
+                var aliases = binaryExport.MapTypeInfos[0].Aliases;
                 if (NpgsqlMapTypeHelper.IsKnownProviderType(mapType))
                 {
-                    var field = binaryExport.Aliases.AllFieldsOrderByPosition().First();
+                    var field = aliases.AllFieldsOrderByPosition().First();
                     _methodCode.Append($@"
                     yield return export.Read{async}<{mapType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
                 }
                 else if (mapType.IsNullableType())
                 {
-                    var field = binaryExport.Aliases.AllFieldsOrderByPosition().First();
+                    var field = aliases.AllFieldsOrderByPosition().First();
                     _methodCode.Append($@"
                     if (export.IsNull)
                     {{
@@ -254,19 +255,19 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 }
                 else if (mapType.Name == nameof(Object))
                 {
-                    var field = binaryExport.Aliases.AllFieldsOrderByPosition().First();
+                    var field = aliases.AllFieldsOrderByPosition().First();
                     _methodCode.Append($@"
                     yield return export.Read{async}<object>({GetReadParametrs(field, isAsync)});");
                 }
                 else if (mapType.TypeKind == TypeKind.Class || mapType.TypeKind == TypeKind.Struct)
                 {
-                    ComplicateItem(binaryExport.Aliases, mapType, methodType);
+                    ComplicateItem(aliases, mapType, methodType);
                     _methodCode.Append($@" 
                     yield return item;");
                 }
                 else
                 {
-                    var field = binaryExport.Aliases.AllFieldsOrderByPosition().First();
+                    var field = aliases.AllFieldsOrderByPosition().First();
                     _methodCode.Append($@"
                     yield return export.Read{async}<{mapType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
                 }

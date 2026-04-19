@@ -125,7 +125,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             StringBuilder builder,
             bool forInterface = false)
         {
-            var mapType = binaryImport.MapTypes[0];
+            var mapType = binaryImport.MapTypeInfos[0].MapType;
             var collectionType = $"I{(isAsyncCollection ? "Async" : "")}Enumerable<{mapType.GetFullTypeName(true, true)}>";
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : binaryImport.AccessModifier.ToLowerInvariant();
             var staticModifier = forInterface ? string.Empty : binaryImport.MethodStaticModifier;
@@ -220,7 +220,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             var await = isAsync ? "await " : "";
             var cancellation = isAsync ? "(cancellationToken)" : "()";
 
-            var mapType = binaryImport.MapTypes[0];
+            var mapType = binaryImport.MapTypeInfos[0].MapType;
             if (NpgsqlMapTypeHelper.IsKnownProviderType(mapType))
             {
                 var field = binaryImport.Aliases.AllFieldsOrderByPosition().First();
@@ -344,8 +344,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             ItemPair pair,
             string await,
             string async,
-            string cancellation
-            )
+            string cancellation)
         {
             if(pair.HaveUnprocess || pair.Parent == null)
             {

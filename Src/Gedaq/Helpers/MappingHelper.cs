@@ -18,10 +18,10 @@ namespace Gedaq.Helpers
             string mapVariableName,
             string castTypeExpr = "")
         {
-            foreach (var mapType in source.MapTypes)
+            foreach (var mapType in source.MapTypeInfos)
             {
                 MapItem(
-                    mapType,
+                    mapType.MapType,
                     source,
                     builder,
                     provider,
@@ -169,7 +169,7 @@ namespace Gedaq.Helpers
             string mapVariableName,
             string castTypeExpr = "")
         {
-            ComplicateItem(source.Aliases, mapType, source.MethodType, builder, provider);
+            ComplicateItem(source.MapTypeInfos[0].Aliases, mapType, source.MethodType, builder, provider);
             builder.Append($@" 
                     {mapVariableName} = {castTypeExpr}root;");
         }

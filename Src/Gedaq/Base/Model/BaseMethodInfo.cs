@@ -8,7 +8,9 @@ namespace Gedaq.Base.Model
     internal interface IMethodInfo
     {
         string MethodName { get; }
+
         MethodType MethodType { get; }
+
         AccessModifier AccessModifier { get; }
     }
 

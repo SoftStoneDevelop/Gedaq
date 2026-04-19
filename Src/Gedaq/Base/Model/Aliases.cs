@@ -5,19 +5,15 @@ namespace Gedaq.Base.Model
 {
     internal class Aliases
     {
-        public Aliases(bool isRowsAffected = false)
+        public Aliases()
         {
-            IsRowsAffected = isRowsAffected;
         }
 
         public Aliases(string entityName, string linkKey = null)
         {
-            IsRowsAffected = false;
             EntityName = entityName;
             LinkKey = linkKey;
         }
-
-        public bool IsRowsAffected { get; private set; }
 
         public List<Field> Fields = new List<Field>();
 

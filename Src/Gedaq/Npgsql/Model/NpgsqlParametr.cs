@@ -1,10 +1,8 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.DbConnection.Model;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Immutable;
-using System.Data;
 
 namespace Gedaq.Npgsql.Model
 {

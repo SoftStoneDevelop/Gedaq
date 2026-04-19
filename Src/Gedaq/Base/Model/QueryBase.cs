@@ -1,7 +1,6 @@
 ﻿using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
-using System;
 
 namespace Gedaq.Base.Model
 {

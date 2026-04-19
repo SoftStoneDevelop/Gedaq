@@ -1,14 +1,7 @@
 ﻿using Gedaq.Base.Model;
 using Gedaq.Enums;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Xml.Linq;
 
 [assembly: InternalsVisibleTo("PostgreSQLTests")]
 namespace Gedaq.Parser
@@ -17,7 +10,7 @@ namespace Gedaq.Parser
     {
         static readonly string[] _knownCommands = new string[] { "select", "insert", "delete", "update" };
 
-        public Aliases Parse(ref string query)
+        public Aliases Parse(ref string query, out bool isRowAffected)
         {
             var querySpan = query.AsSpan();
             var lastCommandIndex = GetLastSplitedItem(querySpan, ';');
@@ -40,7 +33,8 @@ namespace Gedaq.Parser
                 }
                 else
                 {
-                    return new Aliases(true);
+                    isRowAffected = true;
+                    return null;
                 }
             }
 
@@ -50,12 +44,8 @@ namespace Gedaq.Parser
                 query = querySpan.Slice(0, lastCommandIndex + indexAfterInstruction).ToString() + newQuery;
             }
 
+            isRowAffected = false;
             return aliases;
-        }
-
-        public Aliases GetIntResultAlias()
-        {
-            return new Aliases(true);
         }
 
         internal int GetLastSplitedItem(ReadOnlySpan<char> query, char splitter)

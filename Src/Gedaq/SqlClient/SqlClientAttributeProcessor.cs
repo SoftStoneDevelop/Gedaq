@@ -89,11 +89,11 @@ namespace Gedaq.SqlClient
 
             if (query.QueryType == QueryType.NonQuery)
             {
-                query.Aliases = _queryParser.GetIntResultAlias();
+                query.IsRowsAffected = true;
             }
             else
             {
-                query.Aliases = _queryParser.Parse(ref query.Query);
+                query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);
             }
 
             if (query.HaveDynamicParametrs() && query.HaveParametrs())

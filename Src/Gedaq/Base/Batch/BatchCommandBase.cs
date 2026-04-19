@@ -1,5 +1,4 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
@@ -144,7 +143,7 @@ namespace Gedaq.Base.Batch
             MethodType methodType,
             StringBuilder builder)
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypes[0].GetFullTypeName(true) : "object";
+            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeInfos[0].MapType.GetFullTypeName(true) : "object";
             var async = methodType == MethodType.Sync ? "()" : "Async(cancellationToken).ConfigureAwait(false)";
             var await = methodType == MethodType.Sync ? "" : "await ";
             string ExecuteReturnType()
@@ -188,7 +187,7 @@ namespace Gedaq.Base.Batch
                 }
                 else
                 {
-                    var mapType = item.QueryBase.MapTypes[0];
+                    var mapType = item.QueryBase.MapTypeInfos[0].MapType;
                     if (source.ReturnType == ReturnType.Enumerable)
                     {
                         builder.Append($@"
@@ -791,7 +790,7 @@ namespace Gedaq.Base.Batch
 
         public string ItemTypeName(QueryBatchCommand source)
         {
-            return source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypes[0].GetFullTypeName(true) : "object";
+            return source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeInfos[0].MapType.GetFullTypeName(true) : "object";
         }
 
         private string CastTypeExpr(QueryBatchCommand source)
@@ -1144,7 +1143,7 @@ namespace Gedaq.Base.Batch
             StringBuilder builder,
             bool forInterface = false)
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypes[0].GetFullTypeName(true) : "object";
+            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeInfos[0].MapType.GetFullTypeName(true) : "object";
             GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
             var returnType = methodType == MethodType.Async ? $"{source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}>" : typeName;
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
@@ -1465,7 +1464,7 @@ namespace Gedaq.Base.Batch
             out string typeName)
         {
             var first = source.QueryBases().First().QueryBase;
-            if (first.Aliases.IsRowsAffected)
+            if (first.IsRowsAffected)
             {
                 if (source.QueryType != Enums.QueryType.NonQuery)
                 {
@@ -1479,15 +1478,15 @@ namespace Gedaq.Base.Batch
             }
 
             isRowAffected = false;
-            if (providerInfo.IsKnownProviderType(first.MapTypes[0]) || providerInfo.IsSpecialHandlerType(first.MapTypes[0]))
+            if (providerInfo.IsKnownProviderType(first.MapTypeInfos[0].MapType) || providerInfo.IsSpecialHandlerType(first.MapTypeInfos[0].MapType))
             {
-                type = first.MapTypes[0];
+                type = first.MapTypeInfos[0].MapType;
                 typeName = type.GetFullTypeName(replaceNullable: true);
                 return;
             }
 
-            var firstField = first.Aliases.AllFieldsOrderByPosition().First();
-            first.MapTypes[0].GetPropertyOrFieldName(firstField.Name, out _, out var typeProp);
+            var firstField = first.MapTypeInfos[0].Aliases.AllFieldsOrderByPosition().First();
+            first.MapTypeInfos[0].MapType.GetPropertyOrFieldName(firstField.Name, out _, out var typeProp);
             type = typeProp;
             typeName = type.GetFullTypeName(replaceNullable: true);
         }

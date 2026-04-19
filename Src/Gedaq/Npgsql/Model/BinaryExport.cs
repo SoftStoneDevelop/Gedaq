@@ -1,13 +1,10 @@
 ﻿using Gedaq.Base.Model;
 using Gedaq.Constants;
-using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
 using System;
-using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Linq;
 
 namespace Gedaq.Npgsql.Model
 {
@@ -15,11 +12,10 @@ namespace Gedaq.Npgsql.Model
     {
         public NpgsqlSourceType SourceType { get; private set; }
         public string Query;
-        public Aliases Aliases { get; protected set; }
 
-        private int[] NpgSqlDbTypes;
+        private int[] _npgSqlDbTypes;
 
-        public bool HaveNpgSqlDbTypes => NpgSqlDbTypes != null && NpgSqlDbTypes.Length != 0;
+        public bool HaveNpgSqlDbTypes => _npgSqlDbTypes?.Length > 0;
 
         private BinaryExport()
         {
@@ -64,7 +60,7 @@ namespace Gedaq.Npgsql.Model
                     DiagnosticConstants.IncorrectAttributeParametr,
                     DiagnosticConstants.IncorrectAttributeParametrDescr,
                     DiagnosticSeverity.Error,
-                    new string[] { "3", nameof(MapTypes) });
+                    new string[] { "3", nameof(MapTypeInfos) });
 
                 return false;
             }
@@ -76,7 +72,7 @@ namespace Gedaq.Npgsql.Model
                     DiagnosticConstants.IncorrectAttributeParametr,
                     DiagnosticConstants.IncorrectAttributeParametrDescr,
                     DiagnosticSeverity.Error,
-                    new string[] { "4", nameof(OverrideAliasPrefixs) });
+                    new string[] { "4", nameof(_overrideAliasPrefixs) });
 
                 return false;
             }
@@ -88,7 +84,7 @@ namespace Gedaq.Npgsql.Model
                     DiagnosticConstants.IncorrectAttributeParametr,
                     DiagnosticConstants.IncorrectAttributeParametrDescr,
                     DiagnosticSeverity.Error,
-                    new string[] { "5", nameof(NpgSqlDbTypes) });
+                    new string[] { "5", nameof(_npgSqlDbTypes) });
 
                 return false;
             }
@@ -180,25 +176,25 @@ namespace Gedaq.Npgsql.Model
                 return true;
             }
 
-            NpgSqlDbTypes = new int[argument.Values.Length];
+            _npgSqlDbTypes = new int[argument.Values.Length];
             for (int i = 0; i < argument.Values.Length; i++)
             {
-                NpgSqlDbTypes[i] = (int)argument.Values[i].Value;
+                _npgSqlDbTypes[i] = (int)argument.Values[i].Value;
             }
 
             return true;
         }
 
-        public void SetAliases(Aliases aliases)
+        public void SetAliases(MapTypeInfo mapTypeInfo, Aliases aliases)
         {
-            if (NpgSqlDbTypes == null)
+            if (_npgSqlDbTypes == null)
             {
-                Aliases = aliases;
+                mapTypeInfo.Aliases = aliases;
                 return;
             }
 
             var fields = aliases.AllFieldsOrderByPosition();
-            if (NpgSqlDbTypes?.Length != fields.Count)
+            if (_npgSqlDbTypes?.Length != fields.Count)
             {
                 throw new Exception("The number of NpgSqlDbTypes and columns in the query does not match.");
             }
@@ -206,10 +202,10 @@ namespace Gedaq.Npgsql.Model
             for (int i = 0; i < fields.Count; i++)
             {
                 Field field = fields[i];
-                field.AdditionalInfo = new NpgsqlFieldInfo(NpgSqlDbTypes[i]);
+                field.AdditionalInfo = new NpgsqlFieldInfo(_npgSqlDbTypes[i]);
             }
 
-            Aliases = aliases;
+            mapTypeInfo.Aliases = aliases;
         }
     }
 }
