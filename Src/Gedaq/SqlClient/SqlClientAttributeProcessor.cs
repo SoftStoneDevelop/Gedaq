@@ -96,7 +96,18 @@ namespace Gedaq.SqlClient
             }
             else
             {
-                query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);
+                if (!query.IsDynamicQuery())
+                {
+                    // query must contain select or return
+                    query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);
+                }
+                else
+                {
+                    foreach (var mapTypeInfo in query.MapTypeInfos)
+                    {
+                        mapTypeInfo.ParseAliasesFromType(_context, _providerInfo);
+                    }
+                }
             }
 
             if (query.HaveDynamicParametrs() && query.HaveParametrs())

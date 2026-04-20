@@ -22,33 +22,32 @@ namespace TestsGenerator.Generators.DbConnection
             Database database,
             string interfaceTypeName)
         {
-            Span<bool> dynamicParametrValues = [true, false];
-            foreach (var dynamicParametrValue in dynamicParametrValues)
+            foreach (var dynamicParametrValue in ValueConstants.BoolValues)
             {
-                SelectTestConfig(
-                    model,
-                    stringBuilder,
-                    database,
-                    interfaceTypeName,
-                    dynamicParametrValue);
+                foreach (var isDynamicQuery in ValueConstants.BoolValues)
+                {
+                    SelectTestConfig(
+                        model,
+                        stringBuilder,
+                        database,
+                        interfaceTypeName,
+                        dynamicParametrValue,
+                        isDynamicQuery: isDynamicQuery);
 
-                SelectTest(
-                    order,
-                    orderedValues,
-                    model,
-                    stringBuilder,
-                    false,
-                    interfaceTypeName,
-                    dynamicParametrValue);
-
-                SelectTest(
-                    order,
-                    orderedValues,
-                    model,
-                    stringBuilder,
-                    true,
-                    interfaceTypeName,
-                    dynamicParametrValue);
+                    foreach (var isAsync in ValueConstants.BoolValues)
+                    {
+                        SelectTest(
+                            order,
+                            orderedValues,
+                            model,
+                            stringBuilder,
+                            isAsync,
+                            interfaceTypeName,
+                            dynamicParametrValue,
+                            database: database,
+                            isDynamicQuery: isDynamicQuery);
+                    }
+                }
             }
 
             CommandSelectTest(
@@ -107,9 +106,10 @@ namespace TestsGenerator.Generators.DbConnection
             StringBuilderArray.StringBuilderArray stringBuilder,
             Database database,
             string interfaceTypeName,
-            bool dynamicParametr)
+            bool dynamicParametr,
+            bool isDynamicQuery)
         {
-            var query = $@"
+            var query = isDynamicQuery ? ValueConstants.NullValue : $@"
 @""
 SELECT
     m.{model.IdColumnName},
@@ -132,7 +132,7 @@ ORDER BY
             stringBuilder.Append($@"
 [Gedaq.DbConnection.Attributes.Query(
             query: {query},
-            methodName:""DbConnection{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}"",
+            methodName:""DbConnection{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}"",
             queryMapTypes: [typeof({model.ClassName})],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
@@ -156,7 +156,7 @@ Gedaq.DbConnection.Attributes.Parametr(
             }
 
             stringBuilder.Append($@"]
-        private void DbConnection{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}Config()
+        private void DbConnection{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}Config()
         {{
         }}
 ");
@@ -169,18 +169,42 @@ Gedaq.DbConnection.Attributes.Parametr(
             StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync,
             string interfaceTypeName,
-            bool dynamicParametr)
+            bool dynamicParametr,
+            Database database,
+            bool isDynamicQuery)
         {
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
+            var queryParametr = isDynamicQuery ? " query, " : string.Empty;
 
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task DbConnection{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}Test{async}()
+        public async Task DbConnection{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}Test{async}()
         {{
             await using (var connection = GlobalSetUp.GetDbConnection)
             {{
                 await connection.OpenAsync();");
+            if (isDynamicQuery)
+            {
+                stringBuilder.Append($@"
+                var query = @""
+SELECT
+    m.{model.IdColumnName},
+    m.{model.ValueColumnName},
+~StartInner::{model.ModelInnerName}:{model.ModelInner.IdName}~
+    mi.{model.ModelInner.IdColumnName},
+    mi.{model.ModelInner.ValueColumnName},
+    mi.{model.ModelInner.NullableValueColumnName},
+~EndInner::{model.ModelInnerName}~
+    m.{model.NullableValueColumnName}
+FROM {database.ToDefaultSchema()}.{model.TableName} m
+LEFT JOIN {database.ToDefaultSchema()}.{model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}
+WHERE
+    m.{model.IdColumnName} > @{model.IdColumnName}
+ORDER BY
+    m.{model.IdColumnName} ASC
+"";");
+            }
 
             if (dynamicParametr)
             {
@@ -190,19 +214,19 @@ Gedaq.DbConnection.Attributes.Parametr(
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = ""id"";
 
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}{async}(connection, [parametr1]);");
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}{async}(connection, {queryParametr}[parametr1]);");
             }
             else
             {
                 stringBuilder.Append($@"
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}{async}(connection, 0);");
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.DbConnection{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}{async}(connection, {queryParametr}0);");
             }
 
             stringBuilder.Append($@"
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
                 for (int i = 0; i < {orderedValues.Count}; i++)
                 {{
-                    {model.ClassName}.{ModelGenerator.AssertMethodName}(models[i],{TestsPart.TestDataArrayName}[i], false);
+                    {model.ClassName}.{ModelGenerator.AssertMethodName}(models[i],{TestsPart.TestDataArrayName}[i], false, ignoreInner: {isDynamicQuery.ToLowerString()});
                 }}
             }}
         }}
@@ -239,7 +263,7 @@ Gedaq.DbConnection.Attributes.Parametr(
             var index = 0;
             for (; valIndex < orderedValues.Count; valIndex++)
             {
-                stringBuilder.Append($"{model.ClassName}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{valIndex}], false);");
+                stringBuilder.Append($"{model.ClassName}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{valIndex}], false, ignoreInner: false);");
                 index++;
             }
             stringBuilder.Append($@"
@@ -515,7 +539,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             var index = 0;
             for (; firstBatchStart < orderedValues.Count; firstBatchStart++)
             {
-                stringBuilder.Append($"{model.ClassName}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{firstBatchStart}], false);");
+                stringBuilder.Append($"{model.ClassName}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{firstBatchStart}], false, ignoreInner: false);");
                 index++;
             }
 
@@ -532,7 +556,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             index = 0;
             for (; secondBatchStart < orderedValues.Count; secondBatchStart++)
             {
-                stringBuilder.Append($"{model.ClassName}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{secondBatchStart}], false);");
+                stringBuilder.Append($"{model.ClassName}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{secondBatchStart}], false, ignoreInner: false);");
                 index++;
             }
             stringBuilder.Append($@"

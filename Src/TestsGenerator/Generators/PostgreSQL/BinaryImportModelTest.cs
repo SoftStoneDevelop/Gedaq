@@ -151,7 +151,7 @@ ORDER BY
             for (; indexCollection < storage.Count / 2; indexCollection++)
             {
                 stringBuilder.Append($@"
-                {model.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}], false);");
+                {model.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}], false, ignoreInner: false);");
             }
 
             stringBuilder.Append($@"
@@ -168,7 +168,7 @@ ORDER BY
             for (; indexCollection < storage.Count; indexCollection++)
             {
                 stringBuilder.Append($@"
-                {model.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}], false);");
+                {model.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}], false, ignoreInner: false);");
             }
 
             stringBuilder.Append($@"

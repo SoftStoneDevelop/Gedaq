@@ -108,7 +108,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
                 {{
                     var model = models[modelIndex];
                     var expectedModel = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInnerName}.{model.ModelInner.IdName} == model.{model.ModelInner.IdName}).{model.ModelInnerName};
-                    {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(model, expectedModel, false);
+                    {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(model, expectedModel, false, ignoreInner: false);
                 }}
             }}
         }}

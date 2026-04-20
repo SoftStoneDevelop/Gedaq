@@ -45,7 +45,7 @@ namespace Tests
 
         public {model.NullableValueType} {model.NullableValueName} {{ get; set; }}
 
-        public static void {AssertMethodName}({model.ClassName} actual, {model.ClassName} expect, bool checkInInnerOnlyId)
+        public static void {AssertMethodName}({model.ClassName} actual, {model.ClassName} expect, bool checkInInnerOnlyId, bool ignoreInner)
         {{");
 
             if (model.TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)
@@ -86,7 +86,7 @@ namespace Tests
                     Assert.That({modelVariable}.{model.NullableValueName}, Is.EqualTo({expectVariable}.{model.NullableValueName}));
                 }}
 
-                if({expectVariable}.{model.ModelInnerName} == {ValueConstants.NullValue})
+                if({expectVariable}.{model.ModelInnerName} == {ValueConstants.NullValue} || ignoreInner)
                 {{
                     Assert.That({modelVariable}.{model.ModelInnerName}, Is.Null);
                 }}
@@ -153,7 +153,7 @@ namespace Tests
                     }}
                 }}
 
-                if({expectVariable}.{model.ModelInnerName} == {ValueConstants.NullValue})
+                if({expectVariable}.{model.ModelInnerName} == {ValueConstants.NullValue} || ignoreInner)
                 {{
                     Assert.That({modelVariable}.{model.ModelInnerName}, Is.Null);
                 }}
@@ -218,7 +218,7 @@ namespace Tests
 
         public {model.NullableValueType} {model.NullableValueName} {{ get; set; }}
 
-        public static void {AssertMethodName}({model.ClassName} actual, {model.ClassName} expect, bool checkInInnerOnlyId)
+        public static void {AssertMethodName}({model.ClassName} actual, {model.ClassName} expect, bool checkInInnerOnlyId, bool ignoreInner)
         {{");
 
             if (model.TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)

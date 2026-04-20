@@ -143,7 +143,7 @@ ORDER BY
                 {{
                     var actual = models[i];
                     var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
-                    {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(actual, expect, false);
+                    {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(actual, expect, false, ignoreInner: false);
                     Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
                 }}
                 set.Clear();
@@ -159,7 +159,7 @@ ORDER BY
                 {{
                     var actual = models[i];
                     var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
-                    {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(actual, expect, false);
+                    {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(actual, expect, false, ignoreInner: false);
                     Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
                 }}
                 set.Clear();

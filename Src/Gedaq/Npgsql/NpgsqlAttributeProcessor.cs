@@ -208,7 +208,7 @@ namespace Gedaq.Npgsql
             }
             else
             {
-                if (query.Query != null)
+                if (!query.IsDynamicQuery())
                 {
                     // query must contain select or return
                     query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);

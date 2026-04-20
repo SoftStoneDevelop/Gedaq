@@ -112,7 +112,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
                 {{
                     var model = models[modelIndex];
                     var expectedModel = {TestsPart.TestDataArrayName}.First(wh => wh.{model.IdName} == model.{model.IdName});
-                    {model.ClassName}.{ModelGenerator.AssertMethodName}(model, expectedModel, true);
+                    {model.ClassName}.{ModelGenerator.AssertMethodName}(model, expectedModel, true, ignoreInner: false);
                 }}
             }}
         }}
