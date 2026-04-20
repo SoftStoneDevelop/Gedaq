@@ -191,11 +191,9 @@ Gedaq.DbConnection.Attributes.Parametr(
 SELECT
     m.{model.IdColumnName},
     m.{model.ValueColumnName},
-~StartInner::{model.ModelInnerName}:{model.ModelInner.IdName}~
     mi.{model.ModelInner.IdColumnName},
     mi.{model.ModelInner.ValueColumnName},
     mi.{model.ModelInner.NullableValueColumnName},
-~EndInner::{model.ModelInnerName}~
     m.{model.NullableValueColumnName}
 FROM {database.ToDefaultSchema()}.{model.TableName} m
 LEFT JOIN {database.ToDefaultSchema()}.{model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}

@@ -143,11 +143,9 @@ Gedaq.MySqlConnector.Attributes.Parametr(
 SELECT
     m.{model.IdColumnName},
     m.{model.ValueColumnName},
-~StartInner::{model.ModelInnerName}:{model.ModelInner.IdName}~
     mi.{model.ModelInner.IdColumnName},
     mi.{model.ModelInner.ValueColumnName},
     mi.{model.ModelInner.NullableValueColumnName},
-~EndInner::{model.ModelInnerName}~
     m.{model.NullableValueColumnName}
 FROM {Database.MySQL.ToDefaultSchema()}.{model.TableName} m
 LEFT JOIN {Database.MySQL.ToDefaultSchema()}.{model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}
