@@ -21,12 +21,19 @@ namespace TestsGenerator.Generators
 
             foreach (var model in models)
             {
-                await Model(model, destinationFolder);
+                foreach (var isFlat in ValueConstants.BoolValues)
+                {
+                    await Model(model, destinationFolder, isFlat: isFlat);
+                }
+
                 await ModelInner(model.ModelInner, destinationFolder);
             }
         }
 
-        private async Task Model(Model.ModelType model, string destinationFolder)
+        private async Task Model(
+            Model.ModelType model,
+            string destinationFolder,
+            bool isFlat)
         {
             _stringBuilder.Clear();
             _stringBuilder.Append($@"
@@ -35,26 +42,26 @@ using System.Linq;
 
 namespace Tests
 {{
-    public class {model.ClassName}
+    public class {model.ClassName(isFlat)}
     {{
         public {model.IdType} {model.IdName} {{ get; set; }}
 
         public {model.ValueType} {model.ValueName} {{ get; set; }}
 
-        public {model.ModelInnerType} {model.ModelInnerName} {{ get; set; }}
+{(isFlat ? string.Empty : $"        public {model.ModelInnerType} {model.ModelInnerName} {{ get; set; }}")}
 
         public {model.NullableValueType} {model.NullableValueName} {{ get; set; }}
 
-        public static void {AssertMethodName}({model.ClassName} actual, {model.ClassName} expect, bool checkInInnerOnlyId, bool ignoreInner)
+        public static void {AssertMethodName}({model.ClassName(isFlat)} actual, {model.ClassName(false)} expect, bool checkInInnerOnlyId)
         {{");
 
             if (model.TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)
             {
-                AssertSingle("actual", "expect", model);
+                AssertSingle("actual", "expect", model, isFlat: isFlat);
             }
             else
             {
-                AssertEnumerable("actual", "expect", model);
+                AssertEnumerable("actual", "expect", model, isFlat: isFlat);
             }
 
             _stringBuilder.Append($@"
@@ -63,14 +70,15 @@ namespace Tests
 }}
 
 ");
-            await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName}.cs", _stringBuilder.ToString());
+            await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName(isFlat)}.cs", _stringBuilder.ToString());
             _stringBuilder.Clear();
         }
 
         private void AssertSingle(
             string modelVariable,
             string expectVariable,
-            Model.ModelType model)
+            Model.ModelType model,
+            bool isFlat)
         {
             _stringBuilder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
@@ -85,8 +93,11 @@ namespace Tests
                     Assert.That({modelVariable}.{model.NullableValueName}, Is.Not.Null);
                     Assert.That({modelVariable}.{model.NullableValueName}, Is.EqualTo({expectVariable}.{model.NullableValueName}));
                 }}
-
-                if({expectVariable}.{model.ModelInnerName} == {ValueConstants.NullValue} || ignoreInner)
+");
+            if (!isFlat)
+            {
+                _stringBuilder.Append($@"
+                if({expectVariable}.{model.ModelInnerName} == {ValueConstants.NullValue})
                 {{
                     Assert.That({modelVariable}.{model.ModelInnerName}, Is.Null);
                 }}
@@ -114,12 +125,14 @@ namespace Tests
                     }}
                 }}
 ");
+            }
         }
 
         private void AssertEnumerable(
             string modelVariable,
             string expectVariable,
-            Model.ModelType model)
+            Model.ModelType model,
+            bool isFlat)
         {
             _stringBuilder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
@@ -152,8 +165,11 @@ namespace Tests
                         }}
                     }}
                 }}
-
-                if({expectVariable}.{model.ModelInnerName} == {ValueConstants.NullValue} || ignoreInner)
+");
+            if (!isFlat)
+            {
+                _stringBuilder.Append($@"
+                if({expectVariable}.{model.ModelInnerName} == {ValueConstants.NullValue})
                 {{
                     Assert.That({modelVariable}.{model.ModelInnerName}, Is.Null);
                 }}
@@ -199,6 +215,7 @@ namespace Tests
                     }}
                 }}
 ");
+            }
         }
 
         private async Task ModelInner(Model.ModelInnerType model, string destinationFolder)
@@ -210,7 +227,7 @@ using System.Linq;
 
 namespace Tests
 {{
-    public class {model.ClassName}
+    public class {model.ClassName(false)}
     {{
         public {model.IdType} {model.IdName} {{ get; set; }}
 
@@ -218,7 +235,7 @@ namespace Tests
 
         public {model.NullableValueType} {model.NullableValueName} {{ get; set; }}
 
-        public static void {AssertMethodName}({model.ClassName} actual, {model.ClassName} expect, bool checkInInnerOnlyId, bool ignoreInner)
+        public static void {AssertMethodName}({model.ClassName(false)} actual, {model.ClassName(false)} expect, bool checkInInnerOnlyId)
         {{");
 
             if (model.TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)
@@ -236,7 +253,7 @@ namespace Tests
 }}
 
 ");
-            await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName}.cs", _stringBuilder.ToString());
+            await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName(false)}.cs", _stringBuilder.ToString());
             _stringBuilder.Clear();
         }
 
@@ -303,7 +320,7 @@ namespace Tests
 
         public static string CreateNewModelInstance(Model.ModelType model, Model.ModelValue value)
         {
-            return $@"new {model.ClassName}
+            return $@"new {model.ClassName(false)}
 {{
     {model.IdName} = {value.Id},
     {model.ValueName} = {value.Value},
@@ -319,7 +336,7 @@ namespace Tests
                 return ValueConstants.NullValue;
             }
 
-            return $@"new {model.ClassName}
+            return $@"new {model.ClassName(false)}
 {{
     {model.IdName} = {value.Id},
     {model.ValueName} = {value.Value},

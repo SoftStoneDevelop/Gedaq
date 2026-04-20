@@ -1,4 +1,5 @@
 ﻿using System;
+using TestsGenerator.Constants;
 using TestsGenerator.TypeInfos;
 using TestsGenerator.TypeValueHelpers;
 
@@ -15,15 +16,18 @@ namespace TestsGenerator.Model
             ModelInner = new ModelInnerType(idTypeInfo, typeInfo, valueStorageFactory());
         }
 
-        public override string ClassName => $"{TypeInfo.ItemTypeName}{TypeInfo.DbSqlTypeWithoutSpace()}{(int)TypeInfo.EnumerableType}M";
+        public override string ClassName(bool isFlat)
+        {
+            return $"{ValueConstants.FlatModelPrefix(isFlat)}{TypeInfo.ItemTypeName}{TypeInfo.DbSqlTypeWithoutSpace()}{(int)TypeInfo.EnumerableType}M";
+        }
 
-        public override string TableName => ClassName.ToLowerInvariant();
+        public override string TableName => ClassName(false).ToLowerInvariant();
 
         public string ModelInnerName => "ModelInner";
 
         public string ModelInnerColumnName => $"{ModelInner.TableName}_id";
 
-        public string ModelInnerType => ModelInner.ClassName;
+        public string ModelInnerType => ModelInner.ClassName(false);
 
         public readonly ModelInnerType ModelInner;
 

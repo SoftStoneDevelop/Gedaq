@@ -57,7 +57,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
 FROM STDIN (FORMAT BINARY)
 "",
             methodName:""{_testName}"",
-            queryMapTypes: [typeof({model.ClassName})],
+            queryMapTypes: [typeof({model.ClassName(false)})],
             dbTypes:
             new NpgsqlDbType[]
             {{
@@ -104,7 +104,7 @@ ORDER BY
 [Gedaq.DbConnection.Attributes.Query(
             query: {query},
             methodName:""Select{_testName}"",
-            queryMapTypes: [typeof({model.ClassName})],
+            queryMapTypes: [typeof({model.ClassName(false)})],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -138,7 +138,7 @@ ORDER BY
 ");
             var index = 0;
             stringBuilder.Append($@"
-                var importCollection = new List<{model.ClassName}>({storage.Count / 2});
+                var importCollection = new List<{model.ClassName(false)}>({storage.Count / 2});
 ");
             var expectCount = FillCollection(storage.Count / 2);
 
@@ -151,7 +151,7 @@ ORDER BY
             for (; indexCollection < storage.Count / 2; indexCollection++)
             {
                 stringBuilder.Append($@"
-                {model.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}], false, ignoreInner: false);");
+                {model.ClassName(false)}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}], false);");
             }
 
             stringBuilder.Append($@"
@@ -168,7 +168,7 @@ ORDER BY
             for (; indexCollection < storage.Count; indexCollection++)
             {
                 stringBuilder.Append($@"
-                {model.ClassName}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}], false, ignoreInner: false);");
+                {model.ClassName(false)}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}], false);");
             }
 
             stringBuilder.Append($@"

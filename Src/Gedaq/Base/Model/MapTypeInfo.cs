@@ -62,12 +62,6 @@ namespace Gedaq.Base.Model
                 }
 
                 var propertyType = propertySymbol.Type;
-                if (!providerInfo.IsKnownProviderType(propertyType) && !providerInfo.IsSpecialHandlerType(propertyType))
-                {
-                    // Dynamic queries do not support nested mapping
-                    continue;
-                }
-
                 var pAttributes = propertySymbol.GetAttributes();
                 string sqlName = null;
                 int? position = null;

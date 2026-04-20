@@ -85,7 +85,7 @@ ORDER BY
 [Gedaq.Npgsql.Attributes.Query(
             query: {query},
             methodName:""{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}"",
-            queryMapTypes: [typeof({model.ClassName})],
+            queryMapTypes: [typeof({model.ClassName(isDynamicQuery)})],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
@@ -170,7 +170,7 @@ ORDER BY
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
                 for (int i = 0; i < {orderedValues.Count}; i++)
                 {{
-                    {model.ClassName}.{ModelGenerator.AssertMethodName}(models[i],{TestsPart.TestDataArrayName}[i], false, ignoreInner: {isDynamicQuery.ToLowerString()});
+                    {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models[i],{TestsPart.TestDataArrayName}[i], false);
                 }}
             }}
         }}

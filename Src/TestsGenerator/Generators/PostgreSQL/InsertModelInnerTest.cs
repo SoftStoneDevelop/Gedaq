@@ -195,7 +195,7 @@ RETURNING
 ;
 "",
             methodName:""{_testName}Returning"",
-            queryMapTypes: [typeof({model.ModelInner.ClassName})],
+            queryMapTypes: [typeof({model.ModelInner.ClassName(false)})],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Scalar,

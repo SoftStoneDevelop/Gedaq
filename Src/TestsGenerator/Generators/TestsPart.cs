@@ -64,7 +64,7 @@ namespace TestsGenerator.Generators
 
             End();
 
-            await File.WriteAllTextAsync($"{destinationFolder}/TestsParts/{model.ClassName}Tests.cs", _stringBuilder.ToString());
+            await File.WriteAllTextAsync($"{destinationFolder}/TestsParts/{model.ClassName(false)}Tests.cs", _stringBuilder.ToString());
         }
 
         private void SpecialDatabaseTests(
@@ -150,7 +150,7 @@ namespace TestsGenerator.Generators
         private void WriteTestDataArray(Model.ModelType model, ModelValueStorage dataStorage)
         {
             _stringBuilder.Append($@"
-        private readonly {model.ClassName}[] {TestDataArrayName} = new {model.ClassName}[]
+        private readonly {model.ClassName(false)}[] {TestDataArrayName} = new {model.ClassName(false)}[]
         {{");
 
             var orderedValues = dataStorage.Values.OrderBy(or => or.IdValue).ToArray();

@@ -133,7 +133,7 @@ ORDER BY
 [Gedaq.DbConnection.Attributes.Query(
             query: {query},
             methodName:""DbConnection{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}"",
-            queryMapTypes: [typeof({model.ClassName})],
+            queryMapTypes: [typeof({model.ClassName(isDynamicQuery)})],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -221,7 +221,7 @@ ORDER BY
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
                 for (int i = 0; i < {orderedValues.Count}; i++)
                 {{
-                    {model.ClassName}.{ModelGenerator.AssertMethodName}(models[i],{TestsPart.TestDataArrayName}[i], false, ignoreInner: {isDynamicQuery.ToLowerString()});
+                    {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models[i],{TestsPart.TestDataArrayName}[i], false);
                 }}
             }}
         }}
@@ -258,7 +258,7 @@ ORDER BY
             var index = 0;
             for (; valIndex < orderedValues.Count; valIndex++)
             {
-                stringBuilder.Append($"{model.ClassName}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{valIndex}], false, ignoreInner: false);");
+                stringBuilder.Append($"{model.ClassName(false)}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{valIndex}], false);");
                 index++;
             }
             stringBuilder.Append($@"
@@ -534,7 +534,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             var index = 0;
             for (; firstBatchStart < orderedValues.Count; firstBatchStart++)
             {
-                stringBuilder.Append($"{model.ClassName}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{firstBatchStart}], false, ignoreInner: false);");
+                stringBuilder.Append($"{model.ClassName(false)}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{firstBatchStart}], false);");
                 index++;
             }
 
@@ -551,7 +551,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             index = 0;
             for (; secondBatchStart < orderedValues.Count; secondBatchStart++)
             {
-                stringBuilder.Append($"{model.ClassName}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{secondBatchStart}], false, ignoreInner: false);");
+                stringBuilder.Append($"{model.ClassName(false)}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{secondBatchStart}], false);");
                 index++;
             }
             stringBuilder.Append($@"

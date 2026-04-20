@@ -8,8 +8,7 @@ namespace TestsGenerator.Model
         public BaseModelType(
             TypeInfo idTypeInfo, 
             TypeInfo typeInfo, 
-            ValueHelper valueStorage
-            )
+            ValueHelper valueStorage)
         {
             TypeInfo = typeInfo;
             IdTypeInfo = idTypeInfo;
@@ -42,6 +41,6 @@ namespace TestsGenerator.Model
 
         public abstract string TableName { get; }
 
-        public abstract string ClassName { get; }
+        public abstract string ClassName(bool isFlat);
     }
 }

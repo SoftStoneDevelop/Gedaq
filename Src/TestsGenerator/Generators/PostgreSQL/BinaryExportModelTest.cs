@@ -64,7 +64,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
 ) TO STDOUT (FORMAT BINARY)
 "",
             methodName:""{_testName}"",
-            queryMapTypes: [typeof({model.ClassName})],
+            queryMapTypes: [typeof({model.ClassName(false)})],
             dbTypes:
             new NpgsqlDbType[]
             {{
@@ -112,7 +112,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
                 {{
                     var model = models[modelIndex];
                     var expectedModel = {TestsPart.TestDataArrayName}.First(wh => wh.{model.IdName} == model.{model.IdName});
-                    {model.ClassName}.{ModelGenerator.AssertMethodName}(model, expectedModel, true, ignoreInner: false);
+                    {model.ClassName(false)}.{ModelGenerator.AssertMethodName}(model, expectedModel, true);
                 }}
             }}
         }}

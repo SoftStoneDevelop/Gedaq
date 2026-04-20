@@ -15,6 +15,11 @@
         {
             return value.ToString().ToLowerInvariant();
         }
+
+        public static string FlatModelPrefix(bool isFlat)
+        {
+            return isFlat ? "Flat" : string.Empty;
+        }
     }
 
     internal static class NameConstants

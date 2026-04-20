@@ -57,7 +57,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
 FROM STDIN (FORMAT BINARY)
 "",
             methodName:""{_testName}"",
-            queryMapTypes: [typeof({model.ModelInner.ClassName})],
+            queryMapTypes: [typeof({model.ModelInner.ClassName(false)})],
             dbTypes:
             new NpgsqlDbType[]
             {{
@@ -96,7 +96,7 @@ ORDER BY
 [Gedaq.DbConnection.Attributes.Query(
             query: {query},
             methodName:""Select{_testName}"",
-            queryMapTypes: [typeof({model.ModelInner.ClassName})],
+            queryMapTypes: [typeof({model.ModelInner.ClassName(false)})],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -130,7 +130,7 @@ ORDER BY
 ");
             var index = 0;
             stringBuilder.Append($@"
-                var importCollection = new List<{model.ModelInner.ClassName}>({storage.Count / 2});
+                var importCollection = new List<{model.ModelInner.ClassName(false)}>({storage.Count / 2});
 ");
             var expectCount = FillCollection(storage.Count / 2);
 
@@ -143,7 +143,7 @@ ORDER BY
                 {{
                     var actual = models[i];
                     var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
-                    {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(actual, expect, false, ignoreInner: false);
+                    {model.ModelInner.ClassName(false)}.{ModelGenerator.AssertMethodName}(actual, expect, false);
                     Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
                 }}
                 set.Clear();
@@ -159,7 +159,7 @@ ORDER BY
                 {{
                     var actual = models[i];
                     var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
-                    {model.ModelInner.ClassName}.{ModelGenerator.AssertMethodName}(actual, expect, false, ignoreInner: false);
+                    {model.ModelInner.ClassName(false)}.{ModelGenerator.AssertMethodName}(actual, expect, false);
                     Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
                 }}
                 set.Clear();

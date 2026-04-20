@@ -237,7 +237,7 @@ RETURNING
 ;
 "",
             methodName:""{_testName}{(withDynamicParameter ? NameConstants.DynamicParametr : "")}Returning"",
-            queryMapTypes: [typeof({model.ClassName})],
+            queryMapTypes: [typeof({model.ClassName(false)})],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read | QueryType.Scalar,
@@ -303,14 +303,14 @@ RETURNING
             await using (var connection = GlobalSetUp.GetConnection)
             {{
                 await connection.OpenAsync();
-                List<{model.ClassName}> models = null;
+                List<{model.ClassName(false)}> models = null;
 ");
             for (; indexValue < endIndex; indexValue++)
             {
                 stringBuilder.Append($@"
                 models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Returning{async}(connection, {TestsPart.TestDataArrayName}[{indexValue}].{model.IdName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.NullableValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName} == null ? {ValueConstants.NullValue} : {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName});
                 Assert.That(models, Has.Count.EqualTo(1));
-                {model.ClassName}.{ModelGenerator.AssertMethodName}(models[0],{TestsPart.TestDataArrayName}[{indexValue}], true, ignoreInner: false);");
+                {model.ClassName(false)}.{ModelGenerator.AssertMethodName}(models[0],{TestsPart.TestDataArrayName}[{indexValue}], true);");
             }
             stringBuilder.Append($@"
             }}

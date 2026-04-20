@@ -22,7 +22,7 @@ namespace Gedaq.DbConnection.Helpers
 
         internal static bool IsKnownProviderBaseType(this ITypeSymbol namedTypeSymbol)
         {
-            switch (namedTypeSymbol.GetFullTypeName(replaceNullable: true))
+            switch (namedTypeSymbol.GetFullTypeName(replaceNullable: true, addQuestionNoatble: false))
             {
                 case "System.Int32":
                 {

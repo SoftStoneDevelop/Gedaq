@@ -1,10 +1,5 @@
-﻿using Gedaq.Base.Model;
-using Gedaq.Helpers;
-using Gedaq.Npgsql.Model;
+﻿using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Gedaq.Npgsql.Helpers
 {
