@@ -84,7 +84,7 @@ ORDER BY
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.Query(
             query: {query},
-            methodName:""{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}"",
+            methodName:""{SelectMethodName(isDynamicQuery, dynamicParametr)}"",
             queryMapTypes: [typeof({model.ClassName(isDynamicQuery)})],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
@@ -108,10 +108,15 @@ Gedaq.Npgsql.Attributes.Parametr(
             }
 
             stringBuilder.Append($@"]
-        private void {ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}Config()
+        private void {SelectMethodName(isDynamicQuery, dynamicParametr)}Config()
         {{
         }}
 ");
+        }
+
+        private static string SelectMethodName(bool isDynamicQuery, bool dynamicParametr)
+        {
+            return $"{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}";
         }
 
         private static void SelectTest(
@@ -130,7 +135,7 @@ Gedaq.Npgsql.Attributes.Parametr(
 
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task {ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}Test{async}()
+        public async Task {SelectMethodName(isDynamicQuery, dynamicParametr)}Test{async}()
         {{
             await using (var connection = GlobalSetUp.GetConnection)
             {{
@@ -158,12 +163,12 @@ ORDER BY
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
 
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}{async}(connection, {queryParametr}[parametr1]);");
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectMethodName(isDynamicQuery, dynamicParametr)}{async}(connection, {queryParametr}[parametr1]);");
             }
             else
             {
                 stringBuilder.Append($@"
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}{async}(connection, {queryParametr}0);");
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectMethodName(isDynamicQuery, dynamicParametr)}{async}(connection, {queryParametr}0);");
             }
 
             stringBuilder.Append($@"
