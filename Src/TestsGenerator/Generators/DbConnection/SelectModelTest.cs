@@ -34,6 +34,15 @@ namespace TestsGenerator.Generators.DbConnection
                         dynamicParametrValue,
                         isDynamicQuery: isDynamicQuery);
 
+                    if (IsSupportBatch(database))
+                    {
+                        SelectBatchReadTestConfig(
+                            stringBuilder,
+                            interfaceTypeName,
+                            withDynamicParameters: dynamicParametrValue,
+                            isDynamicQuery: isDynamicQuery);
+                    }
+
                     foreach (var isAsync in ValueConstants.BoolValues)
                     {
                         SelectTest(
@@ -47,34 +56,33 @@ namespace TestsGenerator.Generators.DbConnection
                             database: database,
                             isDynamicQuery: isDynamicQuery);
 
-                        BatchTests(
-                            order,
-                            orderedValues,
-                            model,
-                            stringBuilder,
-                            database,
-                            interfaceTypeName,
-                            dynamicParametrValue: dynamicParametrValue,
-                            isDynamicQuery: isDynamicQuery);
+                        if (IsSupportBatch(database))
+                        {
+                            SelectBatchReadTest(
+                                order,
+                                database,
+                                orderedValues,
+                                model,
+                                stringBuilder,
+                                isAsync,
+                                interfaceTypeName,
+                                withDynamicParameters: dynamicParametrValue,
+                                isDynamicQuery: isDynamicQuery);
+                        }
                     }
                 }
             }
 
-            CommandSelectTest(
-                order, 
-                orderedValues, 
-                model, 
-                stringBuilder, 
-                false,
-                interfaceTypeName);
-
-            CommandSelectTest(
-                order, 
-                orderedValues, 
-                model, 
-                stringBuilder, 
-                true,
-                interfaceTypeName);
+            foreach (var isAsync in ValueConstants.BoolValues)
+            {
+                CommandSelectTest(
+                    order,
+                    orderedValues,
+                    model,
+                    stringBuilder,
+                    isAsync,
+                    interfaceTypeName);
+            }
 
             var canObjArr = model.TypeInfo.EnumerableType == EnumerableType.SingleType;
             if (canObjArr && DefaultTypeHelper.CanConvert(model.TypeInfo.ItemTypeFullName))
@@ -85,33 +93,42 @@ namespace TestsGenerator.Generators.DbConnection
                     database, 
                     interfaceTypeName);
 
-                SelectToObjArrTest(
-                    order, 
-                    model, 
-                    orderedValues, 
-                    stringBuilder, 
-                    false, 
-                    interfaceTypeName);
-
-                SelectToObjArrTest(
-                    order, 
-                    model, 
-                    orderedValues, 
-                    stringBuilder, 
-                    true, 
-                    interfaceTypeName);
+                foreach (var isAsync in ValueConstants.BoolValues)
+                {
+                    SelectToObjArrTest(
+                        order,
+                        model,
+                        orderedValues,
+                        stringBuilder,
+                        isAsync,
+                        interfaceTypeName);
+                }
             }
         }
 
-        private static void SelectTestConfig(
+        private static string SelectQueryText(
             Model.ModelType model,
-            StringBuilderArray.StringBuilderArray stringBuilder,
             Database database,
-            string interfaceTypeName,
-            bool dynamicParametr,
             bool isDynamicQuery)
         {
-            var query = isDynamicQuery ? ValueConstants.NullValue : $@"
+            if (isDynamicQuery)
+            {
+                return $@"@""
+SELECT
+    m.{model.IdColumnName},
+    m.{model.ValueColumnName},
+    m.{model.NullableValueColumnName}
+FROM {database.ToDefaultSchema()}.{model.TableName} m
+LEFT JOIN {database.ToDefaultSchema()}.{model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}
+WHERE
+    m.{model.IdColumnName} > @{model.IdColumnName}
+ORDER BY
+    m.{model.IdColumnName} ASC
+""";
+            }
+            else
+            {
+                return $@"
 @""
 SELECT
     m.{model.IdColumnName},
@@ -128,7 +145,20 @@ WHERE
     m.{model.IdColumnName} > @{model.IdColumnName}
 ORDER BY
     m.{model.IdColumnName} ASC
-""
+""";
+            }
+        }
+
+        private static void SelectTestConfig(
+            Model.ModelType model,
+            StringBuilderArray.StringBuilderArray stringBuilder,
+            Database database,
+            string interfaceTypeName,
+            bool dynamicParametr,
+            bool isDynamicQuery)
+        {
+            var query = isDynamicQuery ? ValueConstants.NullValue : $@"
+{SelectQueryText(model, database, isDynamicQuery)}
 ";
 
             stringBuilder.Append($@"
@@ -194,18 +224,7 @@ Gedaq.DbConnection.Attributes.Parametr(
             if (isDynamicQuery)
             {
                 stringBuilder.Append($@"
-                var query = @""
-SELECT
-    m.{model.IdColumnName},
-    m.{model.ValueColumnName},
-    m.{model.NullableValueColumnName}
-FROM {database.ToDefaultSchema()}.{model.TableName} m
-LEFT JOIN {database.ToDefaultSchema()}.{model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}
-WHERE
-    m.{model.IdColumnName} > @{model.IdColumnName}
-ORDER BY
-    m.{model.IdColumnName} ASC
-"";");
+                var query = {SelectQueryText(model, database, isDynamicQuery)};");
             }
 
             if (dynamicParametr)
@@ -413,64 +432,30 @@ ORDER BY
             }
         }
 
-        private static void BatchTests(
-            int order,
-            List<ModelValue> orderedValues,
-            Model.ModelType model,
-            StringBuilderArray.StringBuilderArray stringBuilder,
-            Database database,
-            string interfaceTypeName,
-            bool dynamicParametrValue,
-            bool isDynamicQuery,
-            bool isAsync)
+        private static bool IsSupportBatch(Database database)
         {
             switch (database)
             {
                 case Database.PostgreSQL:
                 {
-                    if (!NpgsqlFactory.Instance.CanCreateBatch)
-                    {
-                        return;
-                    }
-
-                    break;
+                    return NpgsqlFactory.Instance.CanCreateBatch;
                 }
 
                 case Database.MsSQL:
                 {
-                    if (!SqlClientFactory.Instance.CanCreateBatch)
-                    {
-                        return;
-                    }
-
-                    break;
+                    return SqlClientFactory.Instance.CanCreateBatch;
                 }
 
                 case Database.MySQL:
                 {
-                    if (!MySqlConnectorFactory.Instance.CanCreateBatch)
-                    {
-                        return;
-                    }
+                    return MySqlConnectorFactory.Instance.CanCreateBatch;
+                }
 
-                    break;
+                default:
+                {
+                    return false;
                 }
             }
-
-            SelectBatchReadTestConfig(
-                stringBuilder,
-                interfaceTypeName,
-                withDynamicParameters: dynamicParametrValue,
-                isDynamicQuery: isDynamicQuery);
-            SelectBatchReadTest(
-                order,
-                orderedValues,
-                model,
-                stringBuilder,
-                isAsync,
-                interfaceTypeName,
-                withDynamicParameters: dynamicParametrValue,
-                isDynamicQuery: isDynamicQuery);
         }
 
         private static string SelectBatchMethodName(bool isDynamicQuery, bool dynamicParametr)
@@ -505,6 +490,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
 
         private static void SelectBatchReadTest(
             int order,
+            Database database,
             List<ModelValue> orderedValues,
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
@@ -518,6 +504,13 @@ Gedaq.DbConnection.Attributes.BatchPart(
 
             var firstBatchStart = Random.Shared.Next(0, orderedValues.Count - 2);
             var secondBatchStart = Random.Shared.Next(0, orderedValues.Count - 2);
+            var methodPassParametrs = BatchMethodPassParametrs(
+                orderedValues,
+                withDynamicParameters,
+                isDynamicQuery,
+                firstBatchStart: firstBatchStart,
+                secondBatchStart: secondBatchStart);
+
             stringBuilder.Append($@"
         [Test, Order({order})]
         public async Task {SelectBatchMethodName(isDynamicQuery, withDynamicParameters)}Test{async}()
@@ -537,18 +530,19 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 var parametr2 = connection.CreateCommand().CreateParameter();
                 parametr2.Value = {orderedValues[secondBatchStart].Id};
                 parametr2.DbType = (System.Data.DbType)(11);
-                parametr2.ParameterName = ""id"";
-
-                foreach(var batchResult in {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectBatchMethodName(isDynamicQuery, withDynamicParameters)}{async}(connection, [parametr1], [parametr2]))");
+                parametr2.ParameterName = ""id"";");
             }
-            else
+
+            if (isDynamicQuery)
             {
                 stringBuilder.Append($@"
-                foreach(var batchResult in {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectBatchMethodName(isDynamicQuery, withDynamicParameters)}{async}(connection, {orderedValues[firstBatchStart].Id}, {orderedValues[secondBatchStart].Id}))");
+                var query1 = {SelectQueryText(model, database, isDynamicQuery)};
+                var query2 = {SelectQueryText(model, database, isDynamicQuery)};");
             }
 
             firstBatchStart++;
             stringBuilder.Append($@"
+                foreach(var batchResult in {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectBatchMethodName(isDynamicQuery, withDynamicParameters)}{async}({methodPassParametrs}))
                 {{
                     if(++resultIndex == 1)
                     {{
@@ -558,7 +552,8 @@ Gedaq.DbConnection.Attributes.BatchPart(
             var index = 0;
             for (; firstBatchStart < orderedValues.Count; firstBatchStart++)
             {
-                stringBuilder.Append($"{model.ClassName(false)}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{firstBatchStart}], false);");
+                stringBuilder.Append(
+                    $"{model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{firstBatchStart}], false);");
                 index++;
             }
 
@@ -575,18 +570,35 @@ Gedaq.DbConnection.Attributes.BatchPart(
             index = 0;
             for (; secondBatchStart < orderedValues.Count; secondBatchStart++)
             {
-                stringBuilder.Append($"{model.ClassName(false)}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{secondBatchStart}], false);");
+                stringBuilder.Append($"" +
+                    $"{model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{secondBatchStart}], false);");
                 index++;
             }
             stringBuilder.Append($@"
                         continue;
                     }}
                     
-                    //todo return false
+                    Assert.Fail(""Unexpected batch count"");
                 }}
             }}
         }}
 ");
+        }
+
+        private static string BatchMethodPassParametrs(
+            List<ModelValue> orderedValues,
+            bool withDynamicParameters,
+            bool isDynamicQuery,
+            int firstBatchStart,
+            int secondBatchStart)
+        {
+            var dynamicParametr1 = withDynamicParameters ? ", [parametr1]" : $", {orderedValues[firstBatchStart].Id}";
+            var dynamicParametr2 = withDynamicParameters ? ", [parametr2]" : $", {orderedValues[secondBatchStart].Id}";
+
+            var dynamicQuery1 = isDynamicQuery ? ", query1" : string.Empty;
+            var dynamicQuery2 = isDynamicQuery ? ", query2" : string.Empty;
+
+            return $"connection{dynamicParametr1}{dynamicQuery1}{dynamicParametr2}{dynamicQuery2}";
         }
     }
 }

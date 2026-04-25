@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Gedaq.Base.Model
+﻿namespace Gedaq.Base.Model
 {
     internal class BatchPart<T> : BatchPartBase where T : QueryBaseCommand
     {
@@ -42,6 +38,11 @@ namespace Gedaq.Base.Model
         public string FormatName(FormatParametr formatParametr)
         {
             return $"{formatParametr.Name}Batch{Number}";
+        }
+
+        public string DynamicParametersParametrName()
+        {
+            return $"paramersQuery{Number}Batch";
         }
 
         public string DynamicQueryParametrName()

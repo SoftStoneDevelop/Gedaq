@@ -309,20 +309,9 @@ namespace Gedaq.Base.Batch
         {accessModifier} {source.MethodStaticModifier} {asyncKeyword}{returnType} {CreateBatchMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
-            // Add dynamic query
-            foreach (var queryBase in source.QueryBases())
-            {
-                if (!queryBase.QueryBase.IsDynamicQuery())
-                {
-                    continue;
-                }
-
-                builder.Append($@",
-            string {queryBase.DynamicQueryParametrName()}");
-            }
-
             AddFormatParametrs(source, builder);
             AddDynamicParametrs(source, builder);
+            AddDynamicQueries(source, builder);
 
             builder.Append($@",
             bool prepare = false");
@@ -428,7 +417,7 @@ namespace Gedaq.Base.Batch
             if (item.QueryBase.HaveDynamicParametrs())
             {
                 builder.Append($@"
-            command.Parameters.AddRange({item.DynamicQueryParametrName()});");
+            command.Parameters.AddRange({item.DynamicParametersParametrName()});");
             }
 
             foreach (var parametr in item.QueryBase.BaseParametrs())
@@ -500,20 +489,27 @@ namespace Gedaq.Base.Batch
             QueryBatchCommand source,
             StringBuilder builder)
         {
-            if (!source.HaveDynamicParametrs)
-            {
-                return;
-            }
-
             foreach (var item in source.QueryBases())
             {
-                if (!item.QueryBase.HaveDynamicParametrs())
+                if (item.QueryBase.HaveDynamicParametrs())
                 {
-                    continue;
+                    builder.Append($@",
+        {ProviderInfo.GetParametrType()}[] {item.DynamicParametersParametrName()}");
                 }
+            }
+        }
 
-                builder.Append($@",
-        {ProviderInfo.GetParametrType()}[] {item.DynamicQueryParametrName()}");
+        private void AddDynamicQueries(
+            QueryBatchCommand source,
+            StringBuilder builder)
+        {
+            foreach (var item in source.QueryBases())
+            {
+                if (item.QueryBase.IsDynamicQuery())
+                {
+                    builder.Append($@",
+            System.String {item.DynamicQueryParametrName()}");
+                }
             }
         }
 
@@ -1332,6 +1328,7 @@ namespace Gedaq.Base.Batch
 
             PassFormatParametrs(source, builder);
             PassDynamicParametrs(source, builder);
+            PassDynamicQueries(source, builder);
 
             if (methodType == MethodType.Async)
             {
@@ -1385,6 +1382,22 @@ namespace Gedaq.Base.Batch
                 }
 
                 builder.Append($@",
+                {item.DynamicParametersParametrName()}");
+            }
+        }
+
+        private void PassDynamicQueries(
+            QueryBatchCommand source,
+            StringBuilder builder)
+        {
+            foreach (var item in source.QueryBases())
+            {
+                if (!item.QueryBase.IsDynamicQuery())
+                {
+                    continue;
+                }
+
+                builder.Append($@",
                 {item.DynamicQueryParametrName()}");
             }
         }
@@ -1403,6 +1416,7 @@ namespace Gedaq.Base.Batch
                 AddParametrs(item, builder);
                 AddFormatParametrs(item, builder);
                 AddDynamicParametrs(item, builder);
+                AddDynamicQuery(item, builder);
             }
         }
 
@@ -1453,7 +1467,20 @@ namespace Gedaq.Base.Batch
             }
 
             builder.Append($@",
-            {ProviderInfo.GetParametrType()}[] {item.DynamicQueryParametrName()}");
+            {ProviderInfo.GetParametrType()}[] {item.DynamicParametersParametrName()}");
+        }
+
+        public void AddDynamicQuery(
+            BatchPartBase item,
+            StringBuilder builder)
+        {
+            if (!item.QueryBase.IsDynamicQuery())
+            {
+                return;
+            }
+
+            builder.Append($@",
+            System.String {item.DynamicQueryParametrName()}");
         }
 
         public void GetScalarType(
