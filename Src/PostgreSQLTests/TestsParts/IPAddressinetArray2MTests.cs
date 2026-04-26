@@ -30,135 +30,164 @@ namespace Tests
         {
             new IPAddressinetArray2M
 {
-    Id = 2,
+    Id = 8,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("27.179.20.130"),
+System.Net.IPAddress.Parse("173.222.128.32"),
 
-System.Net.IPAddress.Parse("26.63.143.59"),
+System.Net.IPAddress.Parse("156.127.33.33"),
 
-System.Net.IPAddress.Parse("93.248.115.191"),
+System.Net.IPAddress.Parse("37.175.190.99"),
 
 },
     ModelInner = null,
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 5,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("26.47.96.140"),
-
-System.Net.IPAddress.Parse("107.196.134.17"),
-
-System.Net.IPAddress.Parse("163.49.120.28"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 8,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("223.43.156.38"),
-
-System.Net.IPAddress.Parse("32.107.89.95"),
-
-System.Net.IPAddress.Parse("199.159.37.20"),
-
-System.Net.IPAddress.Parse("19.50.128.27"),
-
-},
-    NullableValue = null,
-},
     NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("4.207.23.146"),
+System.Net.IPAddress.Parse("220.250.102.210"),
 
-System.Net.IPAddress.Parse("53.101.82.218"),
+System.Net.IPAddress.Parse("105.44.72.99"),
 
-System.Net.IPAddress.Parse("126.187.201.45"),
+System.Net.IPAddress.Parse("231.195.197.111"),
 
-System.Net.IPAddress.Parse("213.175.29.79"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 6,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("249.61.13.143"),
-
-System.Net.IPAddress.Parse("26.99.148.46"),
-
-System.Net.IPAddress.Parse("225.59.159.235"),
-
-System.Net.IPAddress.Parse("90.196.56.203"),
+System.Net.IPAddress.Parse("41.18.3.204"),
 
 },
-    ModelInner = null,
-    NullableValue = null,
 },
             new IPAddressinetArray2M
-{
-    Id = 9,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("104.170.107.59"),
-
-System.Net.IPAddress.Parse("129.242.25.11"),
-
-System.Net.IPAddress.Parse("186.161.253.18"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
 {
     Id = 11,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("222.149.18.80"),
+System.Net.IPAddress.Parse("236.115.56.233"),
 
-System.Net.IPAddress.Parse("82.103.209.183"),
+System.Net.IPAddress.Parse("99.58.67.16"),
 
-System.Net.IPAddress.Parse("170.95.105.131"),
+System.Net.IPAddress.Parse("147.155.40.153"),
 
 },
-    NullableValue = null,
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 4,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("27.206.2.239"),
+
+System.Net.IPAddress.Parse("228.50.55.126"),
+
+System.Net.IPAddress.Parse("45.215.56.158"),
+
+System.Net.IPAddress.Parse("193.251.188.83"),
+
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("98.231.178.209"),
+System.Net.IPAddress.Parse("154.248.69.125"),
 
-System.Net.IPAddress.Parse("88.157.56.107"),
+System.Net.IPAddress.Parse("77.131.52.183"),
 
-System.Net.IPAddress.Parse("206.254.129.16"),
+System.Net.IPAddress.Parse("144.224.5.183"),
 
-System.Net.IPAddress.Parse("235.72.32.218"),
+System.Net.IPAddress.Parse("136.159.251.132"),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("221.66.59.55"),
+
+System.Net.IPAddress.Parse("73.139.52.13"),
+
+System.Net.IPAddress.Parse("181.236.127.198"),
 
 },
 },
             new IPAddressinetArray2M
 {
-    Id = 18,
+    Id = 12,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("159.18.239.103"),
+System.Net.IPAddress.Parse("253.31.96.248"),
 
-System.Net.IPAddress.Parse("179.0.187.181"),
+System.Net.IPAddress.Parse("16.56.90.13"),
 
-System.Net.IPAddress.Parse("246.42.140.137"),
+System.Net.IPAddress.Parse("151.16.141.38"),
 
-System.Net.IPAddress.Parse("213.245.99.164"),
+System.Net.IPAddress.Parse("18.177.222.142"),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("213.21.222.48"),
+
+System.Net.IPAddress.Parse("82.94.97.118"),
+
+System.Net.IPAddress.Parse("235.94.35.18"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 19,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("168.13.67.87"),
+
+System.Net.IPAddress.Parse("180.27.79.29"),
+
+System.Net.IPAddress.Parse("104.139.34.77"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 12,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("163.143.99.181"),
+
+System.Net.IPAddress.Parse("81.180.72.93"),
+
+System.Net.IPAddress.Parse("204.248.84.133"),
+
+System.Net.IPAddress.Parse("57.206.125.193"),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("85.95.87.162"),
+
+System.Net.IPAddress.Parse("150.183.21.184"),
+
+System.Net.IPAddress.Parse("45.83.182.115"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 28,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("126.49.160.36"),
+
+System.Net.IPAddress.Parse("12.216.203.214"),
+
+System.Net.IPAddress.Parse("29.226.21.58"),
+
+System.Net.IPAddress.Parse("211.218.163.67"),
 
 },
     ModelInner = null,
@@ -166,125 +195,40 @@ System.Net.IPAddress.Parse("213.245.99.164"),
 },
             new IPAddressinetArray2M
 {
-    Id = 27,
+    Id = 37,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("33.169.120.97"),
+System.Net.IPAddress.Parse("39.141.185.213"),
 
-System.Net.IPAddress.Parse("43.160.129.24"),
+System.Net.IPAddress.Parse("79.16.6.207"),
 
-System.Net.IPAddress.Parse("132.168.43.65"),
-
-System.Net.IPAddress.Parse("113.121.172.194"),
+System.Net.IPAddress.Parse("194.62.183.110"),
 
 },
     ModelInner = new IPAddressinetArray2MI
 {
-    Id = 18,
+    Id = 13,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("81.245.202.249"),
+System.Net.IPAddress.Parse("13.122.136.219"),
 
-System.Net.IPAddress.Parse("7.207.200.65"),
+System.Net.IPAddress.Parse("97.7.52.193"),
 
-System.Net.IPAddress.Parse("41.99.126.206"),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("162.179.38.142"),
-
-System.Net.IPAddress.Parse("137.51.231.216"),
-
-System.Net.IPAddress.Parse("235.124.40.158"),
-
-System.Net.IPAddress.Parse("122.9.211.78"),
+System.Net.IPAddress.Parse("212.18.139.143"),
 
 },
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("190.48.46.249"),
-
-System.Net.IPAddress.Parse("23.219.193.245"),
-
-System.Net.IPAddress.Parse("204.94.45.134"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 31,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("128.220.46.117"),
-
-System.Net.IPAddress.Parse("88.68.149.171"),
-
-System.Net.IPAddress.Parse("233.196.72.167"),
-
-},
-    ModelInner = null,
     NullableValue = null,
 },
-            new IPAddressinetArray2M
-{
-    Id = 34,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("20.82.18.13"),
-
-System.Net.IPAddress.Parse("34.94.189.54"),
-
-System.Net.IPAddress.Parse("179.84.37.37"),
-
-System.Net.IPAddress.Parse("156.203.133.144"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 23,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("115.205.219.142"),
-
-System.Net.IPAddress.Parse("196.147.147.70"),
-
-System.Net.IPAddress.Parse("252.215.210.70"),
-
-System.Net.IPAddress.Parse("9.170.158.26"),
-
-},
     NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("16.206.181.0"),
+System.Net.IPAddress.Parse("92.61.143.215"),
 
-System.Net.IPAddress.Parse("16.232.165.16"),
+System.Net.IPAddress.Parse("135.196.93.126"),
 
-System.Net.IPAddress.Parse("83.223.132.62"),
-
-System.Net.IPAddress.Parse("173.195.155.157"),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("224.54.167.116"),
-
-System.Net.IPAddress.Parse("44.33.113.231"),
-
-System.Net.IPAddress.Parse("0.152.207.98"),
-
-System.Net.IPAddress.Parse("12.63.79.90"),
+System.Net.IPAddress.Parse("15.49.121.111"),
 
 },
 },
@@ -292,93 +236,103 @@ System.Net.IPAddress.Parse("12.63.79.90"),
 {
     Id = 42,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("27.181.52.96"),
+System.Net.IPAddress.Parse("171.81.43.221"),
 
-System.Net.IPAddress.Parse("7.101.203.96"),
+System.Net.IPAddress.Parse("155.29.38.217"),
 
-System.Net.IPAddress.Parse("160.234.121.107"),
-
-System.Net.IPAddress.Parse("22.139.49.154"),
+System.Net.IPAddress.Parse("148.140.234.30"),
 
 },
     ModelInner = null,
     NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("218.214.14.77"),
+System.Net.IPAddress.Parse("98.78.219.210"),
 
-System.Net.IPAddress.Parse("169.120.153.165"),
+System.Net.IPAddress.Parse("169.161.3.54"),
 
-System.Net.IPAddress.Parse("79.108.20.102"),
-
-System.Net.IPAddress.Parse("254.8.230.216"),
+System.Net.IPAddress.Parse("79.200.203.253"),
 
 },
 },
             new IPAddressinetArray2M
 {
-    Id = 46,
+    Id = 51,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("221.0.173.59"),
+System.Net.IPAddress.Parse("13.118.87.86"),
 
-System.Net.IPAddress.Parse("179.91.164.17"),
+System.Net.IPAddress.Parse("68.43.186.21"),
 
-System.Net.IPAddress.Parse("141.68.56.217"),
-
-System.Net.IPAddress.Parse("21.132.16.200"),
+System.Net.IPAddress.Parse("27.106.225.86"),
 
 },
     ModelInner = new IPAddressinetArray2MI
 {
-    Id = 30,
+    Id = 18,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("129.120.178.33"),
+System.Net.IPAddress.Parse("202.40.45.36"),
 
-System.Net.IPAddress.Parse("98.112.192.169"),
+System.Net.IPAddress.Parse("141.19.41.234"),
 
-System.Net.IPAddress.Parse("114.120.212.199"),
+System.Net.IPAddress.Parse("151.69.225.61"),
 
-System.Net.IPAddress.Parse("132.179.91.137"),
+System.Net.IPAddress.Parse("153.91.159.166"),
 
 },
     NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("26.45.88.213"),
+System.Net.IPAddress.Parse("107.79.171.232"),
 
-System.Net.IPAddress.Parse("149.174.240.197"),
+System.Net.IPAddress.Parse("180.239.202.182"),
 
-System.Net.IPAddress.Parse("19.154.67.105"),
-
-System.Net.IPAddress.Parse("222.106.38.54"),
+System.Net.IPAddress.Parse("201.229.95.36"),
 
 },
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("95.58.38.207"),
+
+System.Net.IPAddress.Parse("229.221.132.214"),
+
+System.Net.IPAddress.Parse("70.215.130.103"),
+
+},
 },
             new IPAddressinetArray2M
 {
-    Id = 55,
+    Id = 54,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("131.85.145.165"),
+System.Net.IPAddress.Parse("111.5.55.158"),
 
-System.Net.IPAddress.Parse("204.164.207.176"),
+System.Net.IPAddress.Parse("139.96.193.210"),
 
-System.Net.IPAddress.Parse("127.248.191.179"),
-
-System.Net.IPAddress.Parse("17.11.217.138"),
+System.Net.IPAddress.Parse("118.101.140.248"),
 
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("80.51.43.10"),
+
+System.Net.IPAddress.Parse("117.252.81.158"),
+
+System.Net.IPAddress.Parse("191.179.235.33"),
+
+System.Net.IPAddress.Parse("61.60.123.235"),
+
+},
 },
             new IPAddressinetArray2M
 {
@@ -386,306 +340,282 @@ System.Net.IPAddress.Parse("17.11.217.138"),
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("127.3.16.206"),
+System.Net.IPAddress.Parse("247.90.100.173"),
 
-System.Net.IPAddress.Parse("5.223.241.138"),
+System.Net.IPAddress.Parse("183.26.134.195"),
 
-System.Net.IPAddress.Parse("229.73.150.30"),
+System.Net.IPAddress.Parse("143.217.242.94"),
 
-System.Net.IPAddress.Parse("110.156.15.102"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 39,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("72.158.206.127"),
-
-System.Net.IPAddress.Parse("109.174.252.59"),
-
-System.Net.IPAddress.Parse("13.234.12.190"),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("90.79.54.172"),
-
-System.Net.IPAddress.Parse("237.19.137.215"),
-
-System.Net.IPAddress.Parse("247.134.232.42"),
-
-System.Net.IPAddress.Parse("90.126.211.217"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 64,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("217.72.188.228"),
-
-System.Net.IPAddress.Parse("184.139.247.173"),
-
-System.Net.IPAddress.Parse("97.177.45.86"),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("119.36.235.98"),
-
-System.Net.IPAddress.Parse("63.139.51.84"),
-
-System.Net.IPAddress.Parse("228.73.125.103"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 68,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("26.229.124.129"),
-
-System.Net.IPAddress.Parse("197.110.242.9"),
-
-System.Net.IPAddress.Parse("98.110.227.52"),
+System.Net.IPAddress.Parse("4.89.226.241"),
 
 },
     ModelInner = new IPAddressinetArray2MI
 {
-    Id = 42,
+    Id = 21,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("82.241.213.203"),
-
-System.Net.IPAddress.Parse("65.128.184.248"),
-
-System.Net.IPAddress.Parse("245.60.242.212"),
-
-System.Net.IPAddress.Parse("207.132.28.240"),
-
-},
-    NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("114.206.30.191"),
+System.Net.IPAddress.Parse("217.196.8.60"),
 
-System.Net.IPAddress.Parse("115.38.105.67"),
+System.Net.IPAddress.Parse("231.196.40.145"),
 
-System.Net.IPAddress.Parse("148.49.118.221"),
+System.Net.IPAddress.Parse("136.84.15.2"),
 
-},
 },
     NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("37.4.91.145"),
+
+System.Net.IPAddress.Parse("250.108.125.240"),
+
+System.Net.IPAddress.Parse("6.182.207.57"),
+
+System.Net.IPAddress.Parse("221.194.22.186"),
+
+},
 },
             new IPAddressinetArray2M
 {
-    Id = 73,
+    Id = 69,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("14.137.64.197"),
+System.Net.IPAddress.Parse("226.169.146.38"),
 
-System.Net.IPAddress.Parse("232.125.29.45"),
+System.Net.IPAddress.Parse("247.73.199.252"),
 
-System.Net.IPAddress.Parse("77.96.154.156"),
+System.Net.IPAddress.Parse("64.124.95.220"),
 
-System.Net.IPAddress.Parse("67.159.174.57"),
+System.Net.IPAddress.Parse("74.162.132.0"),
 
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("165.25.141.180"),
+
+System.Net.IPAddress.Parse("202.242.32.7"),
+
+System.Net.IPAddress.Parse("237.135.194.160"),
+
+System.Net.IPAddress.Parse("117.155.37.23"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 72,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("203.219.94.6"),
+
+System.Net.IPAddress.Parse("161.5.54.185"),
+
+System.Net.IPAddress.Parse("181.211.115.10"),
+
+System.Net.IPAddress.Parse("70.60.240.121"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 28,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("23.162.235.17"),
+
+System.Net.IPAddress.Parse("227.19.226.172"),
+
+System.Net.IPAddress.Parse("223.159.57.4"),
+
+System.Net.IPAddress.Parse("161.112.59.8"),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("106.126.194.17"),
+
+System.Net.IPAddress.Parse("193.18.9.159"),
+
+System.Net.IPAddress.Parse("198.94.149.74"),
+
+System.Net.IPAddress.Parse("103.142.129.166"),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("187.207.193.126"),
+
+System.Net.IPAddress.Parse("108.32.76.19"),
+
+System.Net.IPAddress.Parse("154.135.81.242"),
+
+System.Net.IPAddress.Parse("234.18.166.144"),
+
+},
 },
             new IPAddressinetArray2M
 {
     Id = 81,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("240.189.242.46"),
-
-System.Net.IPAddress.Parse("7.56.136.178"),
-
-System.Net.IPAddress.Parse("222.22.253.184"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 49,
-    Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("85.252.66.58"),
+System.Net.IPAddress.Parse("96.66.156.219"),
 
-System.Net.IPAddress.Parse("81.188.235.40"),
+System.Net.IPAddress.Parse("179.21.61.23"),
 
-System.Net.IPAddress.Parse("169.2.176.68"),
+System.Net.IPAddress.Parse("193.130.170.243"),
 
-System.Net.IPAddress.Parse("181.112.55.74"),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("84.28.225.15"),
-
-System.Net.IPAddress.Parse("230.121.41.27"),
-
-System.Net.IPAddress.Parse("229.182.51.220"),
-
-System.Net.IPAddress.Parse("110.238.254.167"),
-
-},
-},
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 83,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("76.101.141.203"),
-
-System.Net.IPAddress.Parse("33.13.141.189"),
-
-System.Net.IPAddress.Parse("35.15.2.191"),
-
-System.Net.IPAddress.Parse("215.167.119.110"),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("28.135.226.126"),
-
-System.Net.IPAddress.Parse("201.224.108.216"),
-
-System.Net.IPAddress.Parse("138.113.85.131"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 92,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("197.97.166.79"),
-
-System.Net.IPAddress.Parse("55.35.115.40"),
-
-System.Net.IPAddress.Parse("105.83.99.112"),
-
-System.Net.IPAddress.Parse("159.33.43.169"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 52,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("205.248.2.97"),
-
-System.Net.IPAddress.Parse("167.100.189.131"),
-
-System.Net.IPAddress.Parse("167.37.173.13"),
-
-System.Net.IPAddress.Parse("98.137.48.212"),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("59.86.236.202"),
-
-System.Net.IPAddress.Parse("106.187.242.25"),
-
-System.Net.IPAddress.Parse("176.44.190.71"),
-
-},
-},
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 98,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("127.233.95.63"),
-
-System.Net.IPAddress.Parse("195.224.167.121"),
-
-System.Net.IPAddress.Parse("228.84.225.82"),
+System.Net.IPAddress.Parse("31.232.28.20"),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("44.231.55.235"),
+System.Net.IPAddress.Parse("112.65.6.202"),
 
-System.Net.IPAddress.Parse("120.28.211.131"),
+System.Net.IPAddress.Parse("173.128.44.84"),
 
-System.Net.IPAddress.Parse("214.146.230.77"),
+System.Net.IPAddress.Parse("237.158.110.165"),
 
-System.Net.IPAddress.Parse("108.199.129.1"),
+System.Net.IPAddress.Parse("21.218.117.47"),
 
 },
 },
             new IPAddressinetArray2M
 {
-    Id = 99,
+    Id = 85,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("27.144.247.183"),
+System.Net.IPAddress.Parse("190.81.186.51"),
 
-System.Net.IPAddress.Parse("182.147.98.152"),
+System.Net.IPAddress.Parse("101.36.100.222"),
 
-System.Net.IPAddress.Parse("12.178.238.184"),
+System.Net.IPAddress.Parse("56.26.168.16"),
 
 },
     ModelInner = new IPAddressinetArray2MI
 {
-    Id = 56,
+    Id = 31,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("107.11.49.112"),
+
+System.Net.IPAddress.Parse("81.7.148.225"),
+
+System.Net.IPAddress.Parse("28.153.48.238"),
+
+System.Net.IPAddress.Parse("103.42.52.170"),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("194.56.249.178"),
+
+System.Net.IPAddress.Parse("177.0.234.116"),
+
+System.Net.IPAddress.Parse("109.243.96.100"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 88,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("216.19.172.254"),
+
+System.Net.IPAddress.Parse("250.14.1.13"),
+
+System.Net.IPAddress.Parse("113.165.45.22"),
+
+System.Net.IPAddress.Parse("248.126.110.213"),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("47.108.235.232"),
+
+System.Net.IPAddress.Parse("144.199.249.154"),
+
+System.Net.IPAddress.Parse("253.135.71.212"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 95,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("245.62.146.195"),
+
+System.Net.IPAddress.Parse("188.128.247.63"),
+
+System.Net.IPAddress.Parse("212.98.176.175"),
+
+System.Net.IPAddress.Parse("37.172.205.61"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 38,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("213.243.219.93"),
+
+System.Net.IPAddress.Parse("166.193.232.73"),
+
+System.Net.IPAddress.Parse("54.14.67.200"),
+
+System.Net.IPAddress.Parse("176.126.21.179"),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("63.198.238.88"),
+
+System.Net.IPAddress.Parse("218.40.62.138"),
+
+System.Net.IPAddress.Parse("5.4.228.213"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 104,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("207.226.50.233"),
+System.Net.IPAddress.Parse("63.191.170.71"),
 
-System.Net.IPAddress.Parse("4.110.249.113"),
+System.Net.IPAddress.Parse("107.71.64.103"),
 
-System.Net.IPAddress.Parse("94.48.147.108"),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("246.53.159.192"),
-
-System.Net.IPAddress.Parse("95.231.25.190"),
-
-System.Net.IPAddress.Parse("239.84.180.61"),
-
-System.Net.IPAddress.Parse("56.252.4.23"),
+System.Net.IPAddress.Parse("199.66.178.243"),
 
 },
-},
+    ModelInner = null,
     NullableValue = null,
 },
             new IPAddressinetArray2M
@@ -694,42 +624,28 @@ System.Net.IPAddress.Parse("56.252.4.23"),
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("120.185.174.8"),
+System.Net.IPAddress.Parse("47.211.143.226"),
 
-System.Net.IPAddress.Parse("12.191.170.11"),
+System.Net.IPAddress.Parse("86.115.237.243"),
 
-System.Net.IPAddress.Parse("161.49.21.198"),
+System.Net.IPAddress.Parse("92.158.219.250"),
 
-System.Net.IPAddress.Parse("192.2.179.103"),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 108,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("160.147.19.128"),
-
-System.Net.IPAddress.Parse("84.53.132.145"),
-
-System.Net.IPAddress.Parse("200.72.15.115"),
+System.Net.IPAddress.Parse("252.206.7.21"),
 
 },
     ModelInner = new IPAddressinetArray2MI
 {
-    Id = 64,
+    Id = 40,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("90.208.177.183"),
+System.Net.IPAddress.Parse("33.159.11.235"),
 
-System.Net.IPAddress.Parse("91.157.71.95"),
+System.Net.IPAddress.Parse("170.231.48.205"),
 
-System.Net.IPAddress.Parse("108.10.193.13"),
+System.Net.IPAddress.Parse("26.236.1.155"),
+
+System.Net.IPAddress.Parse("162.90.57.38"),
 
 },
     NullableValue = null,
@@ -737,15 +653,31 @@ System.Net.IPAddress.Parse("108.10.193.13"),
     NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("104.117.57.226"),
+System.Net.IPAddress.Parse("230.127.205.248"),
 
-System.Net.IPAddress.Parse("192.141.137.176"),
+System.Net.IPAddress.Parse("142.148.142.159"),
 
-System.Net.IPAddress.Parse("214.251.222.26"),
+System.Net.IPAddress.Parse("22.23.35.103"),
 
-System.Net.IPAddress.Parse("228.5.201.204"),
+System.Net.IPAddress.Parse("119.251.139.5"),
 
 },
+},
+            new IPAddressinetArray2M
+{
+    Id = 113,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("124.25.48.237"),
+
+System.Net.IPAddress.Parse("241.192.8.174"),
+
+System.Net.IPAddress.Parse("96.91.123.55"),
+
+},
+    ModelInner = null,
+    NullableValue = null,
 },
             new IPAddressinetArray2M
 {
@@ -753,44 +685,98 @@ System.Net.IPAddress.Parse("228.5.201.204"),
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("97.60.178.63"),
+System.Net.IPAddress.Parse("167.216.197.95"),
 
-System.Net.IPAddress.Parse("53.247.213.55"),
+System.Net.IPAddress.Parse("60.113.140.27"),
 
-System.Net.IPAddress.Parse("111.203.215.174"),
+System.Net.IPAddress.Parse("63.230.5.199"),
 
-System.Net.IPAddress.Parse("192.73.241.114"),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 117,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("92.77.118.88"),
-
-System.Net.IPAddress.Parse("177.124.17.34"),
-
-System.Net.IPAddress.Parse("119.180.57.164"),
-
-System.Net.IPAddress.Parse("177.153.113.226"),
+System.Net.IPAddress.Parse("123.25.39.27"),
 
 },
     ModelInner = new IPAddressinetArray2MI
 {
-    Id = 66,
+    Id = 45,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("67.218.31.109"),
+System.Net.IPAddress.Parse("129.57.193.251"),
 
-System.Net.IPAddress.Parse("134.14.142.11"),
+System.Net.IPAddress.Parse("174.173.226.5"),
 
-System.Net.IPAddress.Parse("97.51.54.230"),
+System.Net.IPAddress.Parse("153.99.171.242"),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("200.37.97.15"),
+
+System.Net.IPAddress.Parse("97.40.169.240"),
+
+System.Net.IPAddress.Parse("188.211.34.11"),
+
+System.Net.IPAddress.Parse("195.162.251.22"),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("253.4.106.72"),
+
+System.Net.IPAddress.Parse("49.202.19.100"),
+
+System.Net.IPAddress.Parse("114.237.247.147"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 124,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("187.209.41.212"),
+
+System.Net.IPAddress.Parse("204.82.147.127"),
+
+System.Net.IPAddress.Parse("49.48.202.13"),
+
+System.Net.IPAddress.Parse("12.29.177.197"),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new IPAddressinetArray2M
+{
+    Id = 128,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("214.39.60.124"),
+
+System.Net.IPAddress.Parse("218.216.4.17"),
+
+System.Net.IPAddress.Parse("36.119.56.185"),
+
+System.Net.IPAddress.Parse("119.187.153.190"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 48,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("57.84.216.189"),
+
+System.Net.IPAddress.Parse("41.169.29.117"),
+
+System.Net.IPAddress.Parse("10.161.21.207"),
+
+System.Net.IPAddress.Parse("161.38.32.58"),
 
 },
     NullableValue = null,
@@ -799,44 +785,221 @@ System.Net.IPAddress.Parse("97.51.54.230"),
 },
             new IPAddressinetArray2M
 {
-    Id = 119,
+    Id = 131,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("247.139.193.249"),
+System.Net.IPAddress.Parse("224.208.87.49"),
 
-System.Net.IPAddress.Parse("41.191.233.76"),
+System.Net.IPAddress.Parse("159.82.191.242"),
 
-System.Net.IPAddress.Parse("109.94.161.57"),
+System.Net.IPAddress.Parse("186.252.94.125"),
 
-System.Net.IPAddress.Parse("203.77.132.56"),
+System.Net.IPAddress.Parse("141.138.61.159"),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new IPAddressinetArray2M
+{
+    Id = 137,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("143.63.166.184"),
+
+System.Net.IPAddress.Parse("102.82.211.8"),
+
+System.Net.IPAddress.Parse("43.228.233.89"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 56,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("218.75.215.128"),
+
+System.Net.IPAddress.Parse("122.233.14.132"),
+
+System.Net.IPAddress.Parse("114.4.114.81"),
+
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new IPAddressinetArray2M
+{
+    Id = 138,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("84.48.208.7"),
+
+System.Net.IPAddress.Parse("94.243.25.4"),
+
+System.Net.IPAddress.Parse("55.182.83.97"),
+
+System.Net.IPAddress.Parse("136.168.124.63"),
 
 },
     ModelInner = null,
     NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("87.184.31.96"),
+System.Net.IPAddress.Parse("198.13.83.196"),
 
-System.Net.IPAddress.Parse("6.175.198.173"),
+System.Net.IPAddress.Parse("55.0.236.47"),
 
-System.Net.IPAddress.Parse("233.114.142.157"),
-
-System.Net.IPAddress.Parse("160.159.254.99"),
+System.Net.IPAddress.Parse("251.166.74.185"),
 
 },
 },
             new IPAddressinetArray2M
 {
-    Id = 123,
+    Id = 146,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("125.121.159.64"),
+
+System.Net.IPAddress.Parse("169.23.124.149"),
+
+System.Net.IPAddress.Parse("13.102.177.206"),
+
+System.Net.IPAddress.Parse("168.135.51.184"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 65,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("191.0.175.7"),
+
+System.Net.IPAddress.Parse("202.214.164.204"),
+
+System.Net.IPAddress.Parse("6.0.88.51"),
+
+System.Net.IPAddress.Parse("23.39.127.84"),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("42.118.217.200"),
+
+System.Net.IPAddress.Parse("159.162.115.240"),
+
+System.Net.IPAddress.Parse("184.146.201.95"),
+
+System.Net.IPAddress.Parse("233.185.251.248"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 153,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("79.193.196.44"),
+System.Net.IPAddress.Parse("43.21.187.79"),
 
-System.Net.IPAddress.Parse("109.208.77.44"),
+System.Net.IPAddress.Parse("100.19.131.94"),
 
-System.Net.IPAddress.Parse("62.216.16.86"),
+System.Net.IPAddress.Parse("193.39.62.80"),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("109.73.67.25"),
+
+System.Net.IPAddress.Parse("70.18.61.234"),
+
+System.Net.IPAddress.Parse("183.117.21.124"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 160,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("77.65.166.38"),
+
+System.Net.IPAddress.Parse("243.153.55.146"),
+
+System.Net.IPAddress.Parse("80.20.136.37"),
+
+System.Net.IPAddress.Parse("32.246.27.14"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 71,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("50.206.38.179"),
+
+System.Net.IPAddress.Parse("41.180.204.233"),
+
+System.Net.IPAddress.Parse("19.202.190.193"),
+
+System.Net.IPAddress.Parse("20.222.254.185"),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("41.239.126.214"),
+
+System.Net.IPAddress.Parse("63.84.193.143"),
+
+System.Net.IPAddress.Parse("175.245.21.67"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 168,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("110.68.201.137"),
+
+System.Net.IPAddress.Parse("243.123.173.152"),
+
+System.Net.IPAddress.Parse("148.39.94.96"),
+
+System.Net.IPAddress.Parse("150.77.75.232"),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new IPAddressinetArray2M
+{
+    Id = 170,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("53.39.110.52"),
+
+System.Net.IPAddress.Parse("43.196.178.83"),
+
+System.Net.IPAddress.Parse("123.98.48.238"),
 
 },
     ModelInner = new IPAddressinetArray2MI
@@ -845,146 +1008,38 @@ System.Net.IPAddress.Parse("62.216.16.86"),
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("154.62.69.113"),
+System.Net.IPAddress.Parse("189.49.225.142"),
 
-System.Net.IPAddress.Parse("221.180.60.149"),
+System.Net.IPAddress.Parse("183.25.54.74"),
 
-System.Net.IPAddress.Parse("189.157.47.48"),
+System.Net.IPAddress.Parse("42.65.144.97"),
 
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("71.214.46.213"),
+System.Net.IPAddress.Parse("243.143.199.24"),
 
-System.Net.IPAddress.Parse("142.184.141.165"),
+System.Net.IPAddress.Parse("145.222.226.186"),
 
-System.Net.IPAddress.Parse("85.33.171.96"),
+System.Net.IPAddress.Parse("22.13.28.205"),
 
-System.Net.IPAddress.Parse("84.179.61.221"),
-
-},
-},
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 132,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("97.140.138.215"),
-
-System.Net.IPAddress.Parse("249.225.8.47"),
-
-System.Net.IPAddress.Parse("45.214.95.55"),
+System.Net.IPAddress.Parse("217.230.160.119"),
 
 },
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("237.7.116.8"),
-
-System.Net.IPAddress.Parse("96.141.124.166"),
-
-System.Net.IPAddress.Parse("102.127.169.248"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 137,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("43.199.171.176"),
-
-System.Net.IPAddress.Parse("209.67.96.108"),
-
-System.Net.IPAddress.Parse("69.64.220.74"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 80,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("131.37.125.166"),
-
-System.Net.IPAddress.Parse("68.223.110.212"),
-
-System.Net.IPAddress.Parse("212.25.11.223"),
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 146,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("7.172.199.26"),
-
-System.Net.IPAddress.Parse("93.33.15.201"),
-
-System.Net.IPAddress.Parse("102.246.105.97"),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("244.96.101.73"),
-
-System.Net.IPAddress.Parse("18.227.34.240"),
-
-System.Net.IPAddress.Parse("81.10.184.228"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 152,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("2.108.212.43"),
-
-System.Net.IPAddress.Parse("185.53.10.233"),
-
-System.Net.IPAddress.Parse("110.222.212.183"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 86,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("129.96.253.49"),
-
-System.Net.IPAddress.Parse("12.162.35.250"),
-
-System.Net.IPAddress.Parse("194.80.65.247"),
-
 },
     NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("189.169.71.75"),
+System.Net.IPAddress.Parse("42.122.113.135"),
 
-System.Net.IPAddress.Parse("37.51.96.164"),
+System.Net.IPAddress.Parse("157.119.233.120"),
 
-System.Net.IPAddress.Parse("42.18.163.79"),
+System.Net.IPAddress.Parse("154.188.220.125"),
+
+System.Net.IPAddress.Parse("207.198.47.229"),
 
 },
-},
-    NullableValue = null,
 },
         };
 
@@ -1444,6 +1499,99 @@ RETURNING
 
 [Gedaq.Npgsql.Attributes.Query(
             query: null,
+            methodName:"MMDynQuerySelectModelDynPar",
+            queryMapTypes: [typeof(FlatIPAddressinetArray2M), typeof(FlatIPAddressinetArray2M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IIPAddressListinetArray)),
+Gedaq.Npgsql.Attributes.DynamicParametr()]
+        private void MMDynQuerySelectModelDynParConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelDynParTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.ipaddressinetarray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+                var models1 = new List<FlatIPAddressinetArray2M>();
+                var models2 = new List<FlatIPAddressinetArray2M>();
+                await ((IIPAddressListinetArray)this).MMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.ipaddressinetarray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+                var models1 = new List<FlatIPAddressinetArray2M>();
+                var models2 = new List<FlatIPAddressinetArray2M>();
+                ((IIPAddressListinetArray)this).MMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.Query(
+            query: null,
             methodName:"DynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatIPAddressinetArray2M)],
             methodType: MethodType.Async | MethodType.Sync,
@@ -1469,7 +1617,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1477,7 +1624,6 @@ ORDER BY
 ";
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
                 var models = await ((IIPAddressListinetArray)this).DynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
@@ -1499,7 +1645,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1507,8 +1652,7 @@ ORDER BY
 ";
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
-                var models =  ((IIPAddressListinetArray)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                var models = ((IIPAddressListinetArray)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1558,7 +1702,6 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 await connection.OpenAsync();
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
                 var models = await ((IIPAddressListinetArray)this).SelectModelDynParAsync(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
@@ -1576,12 +1719,104 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 await connection.OpenAsync();
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
-                var models =  ((IIPAddressListinetArray)this).SelectModelDynPar(connection, [parametr1]);
+                var models = ((IIPAddressListinetArray)this).SelectModelDynPar(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
                     IPAddressinetArray2M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.Query(
+            query: null,
+            methodName:"MMDynQuerySelectModel",
+            queryMapTypes: [typeof(FlatIPAddressinetArray2M), typeof(FlatIPAddressinetArray2M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IIPAddressListinetArray)),
+Gedaq.Npgsql.Attributes.Parametr(
+            parametrType: typeof(System.Int32),
+            position: 1,
+            methodParametrName: "id",
+            dbType: (NpgsqlTypes.NpgsqlDbType)(9))]
+        private void MMDynQuerySelectModelConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.ipaddressinetarray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatIPAddressinetArray2M>();
+                var models2 = new List<FlatIPAddressinetArray2M>();
+                await ((IIPAddressListinetArray)this).MMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.ipaddressinetarray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatIPAddressinetArray2M>();
+                var models2 = new List<FlatIPAddressinetArray2M>();
+                ((IIPAddressListinetArray)this).MMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -1617,7 +1852,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1644,13 +1878,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
     m.id ASC
 ";
-                var models =  ((IIPAddressListinetArray)this).DynQuerySelectModel(connection,  query, 0);
+                var models = ((IIPAddressListinetArray)this).DynQuerySelectModel(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1717,11 +1950,107 @@ Gedaq.Npgsql.Attributes.Parametr(
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((IIPAddressListinetArray)this).SelectModel(connection, 0);
+                var models = ((IIPAddressListinetArray)this).SelectModel(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
                     IPAddressinetArray2M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: null,
+            methodName:"DbConnectionMMDynQuerySelectModelDynPar",
+            queryMapTypes: [typeof(FlatIPAddressinetArray2M), typeof(FlatIPAddressinetArray2M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IIPAddressListinetArray)),
+Gedaq.DbConnection.Attributes.DynamicParametr()]
+        private void DbConnectionMMDynQuerySelectModelDynParConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.ipaddressinetarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatIPAddressinetArray2M>();
+                var models2 = new List<FlatIPAddressinetArray2M>();
+                await((IIPAddressListinetArray)this).DbConnectionMMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.ipaddressinetarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatIPAddressinetArray2M>();
+                var models2 = new List<FlatIPAddressinetArray2M>();
+                ((IIPAddressListinetArray)this).DbConnectionMMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -1768,7 +2097,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1778,8 +2106,7 @@ ORDER BY
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models = await ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
+                var models = await((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1796,12 +2123,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 63;
+                parametr1.Value = 8;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 64;
+                parametr2.Value = 37;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1810,7 +2137,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1822,7 +2148,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1833,16 +2158,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
-FlatIPAddressinetArray2M.AssertModel(models[0],_testData[12], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[13], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[14], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[15], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[16], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[17], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[18], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[19], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[20], false);FlatIPAddressinetArray2M.AssertModel(models[9],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[10],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[11],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[12],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[13],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[14],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[15],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[16],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[17],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(29));
+FlatIPAddressinetArray2M.AssertModel(models[0],_testData[1], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[2], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[3], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[4], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[5], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[6], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[7], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[8], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[9], false);FlatIPAddressinetArray2M.AssertModel(models[9],_testData[10], false);FlatIPAddressinetArray2M.AssertModel(models[10],_testData[11], false);FlatIPAddressinetArray2M.AssertModel(models[11],_testData[12], false);FlatIPAddressinetArray2M.AssertModel(models[12],_testData[13], false);FlatIPAddressinetArray2M.AssertModel(models[13],_testData[14], false);FlatIPAddressinetArray2M.AssertModel(models[14],_testData[15], false);FlatIPAddressinetArray2M.AssertModel(models[15],_testData[16], false);FlatIPAddressinetArray2M.AssertModel(models[16],_testData[17], false);FlatIPAddressinetArray2M.AssertModel(models[17],_testData[18], false);FlatIPAddressinetArray2M.AssertModel(models[18],_testData[19], false);FlatIPAddressinetArray2M.AssertModel(models[19],_testData[20], false);FlatIPAddressinetArray2M.AssertModel(models[20],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[21],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[22],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[23],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[24],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[25],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[26],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[27],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[28],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(17));
-FlatIPAddressinetArray2M.AssertModel(models[0],_testData[13], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[14], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[15], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[16], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[17], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[18], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[19], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[20], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[9],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[10],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[11],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[12],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[13],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[14],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[15],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[16],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(24));
+FlatIPAddressinetArray2M.AssertModel(models[0],_testData[6], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[7], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[8], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[9], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[10], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[11], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[12], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[13], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[14], false);FlatIPAddressinetArray2M.AssertModel(models[9],_testData[15], false);FlatIPAddressinetArray2M.AssertModel(models[10],_testData[16], false);FlatIPAddressinetArray2M.AssertModel(models[11],_testData[17], false);FlatIPAddressinetArray2M.AssertModel(models[12],_testData[18], false);FlatIPAddressinetArray2M.AssertModel(models[13],_testData[19], false);FlatIPAddressinetArray2M.AssertModel(models[14],_testData[20], false);FlatIPAddressinetArray2M.AssertModel(models[15],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[16],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[17],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[18],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[19],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[20],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[21],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[22],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[23],_testData[29], false);
                         continue;
                     }
                     
@@ -1863,7 +2188,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1873,8 +2197,7 @@ ORDER BY
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models =  ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                var models = ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1891,12 +2214,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 106;
+                parametr1.Value = 115;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 5;
+                parametr2.Value = 12;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1905,7 +2228,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1917,7 +2239,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1928,16 +2249,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
-FlatIPAddressinetArray2M.AssertModel(models[0],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(10));
+FlatIPAddressinetArray2M.AssertModel(models[0],_testData[20], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[9],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(28));
-FlatIPAddressinetArray2M.AssertModel(models[0],_testData[2], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[3], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[4], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[5], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[6], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[7], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[8], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[9], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[10], false);FlatIPAddressinetArray2M.AssertModel(models[9],_testData[11], false);FlatIPAddressinetArray2M.AssertModel(models[10],_testData[12], false);FlatIPAddressinetArray2M.AssertModel(models[11],_testData[13], false);FlatIPAddressinetArray2M.AssertModel(models[12],_testData[14], false);FlatIPAddressinetArray2M.AssertModel(models[13],_testData[15], false);FlatIPAddressinetArray2M.AssertModel(models[14],_testData[16], false);FlatIPAddressinetArray2M.AssertModel(models[15],_testData[17], false);FlatIPAddressinetArray2M.AssertModel(models[16],_testData[18], false);FlatIPAddressinetArray2M.AssertModel(models[17],_testData[19], false);FlatIPAddressinetArray2M.AssertModel(models[18],_testData[20], false);FlatIPAddressinetArray2M.AssertModel(models[19],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[20],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[21],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[22],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[23],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[24],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[25],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[26],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[27],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(27));
+FlatIPAddressinetArray2M.AssertModel(models[0],_testData[3], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[4], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[5], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[6], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[7], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[8], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[9], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[10], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[11], false);FlatIPAddressinetArray2M.AssertModel(models[9],_testData[12], false);FlatIPAddressinetArray2M.AssertModel(models[10],_testData[13], false);FlatIPAddressinetArray2M.AssertModel(models[11],_testData[14], false);FlatIPAddressinetArray2M.AssertModel(models[12],_testData[15], false);FlatIPAddressinetArray2M.AssertModel(models[13],_testData[16], false);FlatIPAddressinetArray2M.AssertModel(models[14],_testData[17], false);FlatIPAddressinetArray2M.AssertModel(models[15],_testData[18], false);FlatIPAddressinetArray2M.AssertModel(models[16],_testData[19], false);FlatIPAddressinetArray2M.AssertModel(models[17],_testData[20], false);FlatIPAddressinetArray2M.AssertModel(models[18],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[19],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[20],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[21],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[22],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[23],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[24],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[25],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[26],_testData[29], false);
                         continue;
                     }
                     
@@ -2005,8 +2326,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models = await ((IIPAddressListinetArray)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
+                var models = await((IIPAddressListinetArray)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2023,12 +2343,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 42;
+                parametr1.Value = 81;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 117;
+                parametr2.Value = 37;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in await ((IIPAddressListinetArray)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
@@ -2036,16 +2356,16 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(21));
-IPAddressinetArray2M.AssertModel(models[0],_testData[9], false);IPAddressinetArray2M.AssertModel(models[1],_testData[10], false);IPAddressinetArray2M.AssertModel(models[2],_testData[11], false);IPAddressinetArray2M.AssertModel(models[3],_testData[12], false);IPAddressinetArray2M.AssertModel(models[4],_testData[13], false);IPAddressinetArray2M.AssertModel(models[5],_testData[14], false);IPAddressinetArray2M.AssertModel(models[6],_testData[15], false);IPAddressinetArray2M.AssertModel(models[7],_testData[16], false);IPAddressinetArray2M.AssertModel(models[8],_testData[17], false);IPAddressinetArray2M.AssertModel(models[9],_testData[18], false);IPAddressinetArray2M.AssertModel(models[10],_testData[19], false);IPAddressinetArray2M.AssertModel(models[11],_testData[20], false);IPAddressinetArray2M.AssertModel(models[12],_testData[21], false);IPAddressinetArray2M.AssertModel(models[13],_testData[22], false);IPAddressinetArray2M.AssertModel(models[14],_testData[23], false);IPAddressinetArray2M.AssertModel(models[15],_testData[24], false);IPAddressinetArray2M.AssertModel(models[16],_testData[25], false);IPAddressinetArray2M.AssertModel(models[17],_testData[26], false);IPAddressinetArray2M.AssertModel(models[18],_testData[27], false);IPAddressinetArray2M.AssertModel(models[19],_testData[28], false);IPAddressinetArray2M.AssertModel(models[20],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(17));
+IPAddressinetArray2M.AssertModel(models[0],_testData[13], false);IPAddressinetArray2M.AssertModel(models[1],_testData[14], false);IPAddressinetArray2M.AssertModel(models[2],_testData[15], false);IPAddressinetArray2M.AssertModel(models[3],_testData[16], false);IPAddressinetArray2M.AssertModel(models[4],_testData[17], false);IPAddressinetArray2M.AssertModel(models[5],_testData[18], false);IPAddressinetArray2M.AssertModel(models[6],_testData[19], false);IPAddressinetArray2M.AssertModel(models[7],_testData[20], false);IPAddressinetArray2M.AssertModel(models[8],_testData[21], false);IPAddressinetArray2M.AssertModel(models[9],_testData[22], false);IPAddressinetArray2M.AssertModel(models[10],_testData[23], false);IPAddressinetArray2M.AssertModel(models[11],_testData[24], false);IPAddressinetArray2M.AssertModel(models[12],_testData[25], false);IPAddressinetArray2M.AssertModel(models[13],_testData[26], false);IPAddressinetArray2M.AssertModel(models[14],_testData[27], false);IPAddressinetArray2M.AssertModel(models[15],_testData[28], false);IPAddressinetArray2M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
-IPAddressinetArray2M.AssertModel(models[0],_testData[24], false);IPAddressinetArray2M.AssertModel(models[1],_testData[25], false);IPAddressinetArray2M.AssertModel(models[2],_testData[26], false);IPAddressinetArray2M.AssertModel(models[3],_testData[27], false);IPAddressinetArray2M.AssertModel(models[4],_testData[28], false);IPAddressinetArray2M.AssertModel(models[5],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(24));
+IPAddressinetArray2M.AssertModel(models[0],_testData[6], false);IPAddressinetArray2M.AssertModel(models[1],_testData[7], false);IPAddressinetArray2M.AssertModel(models[2],_testData[8], false);IPAddressinetArray2M.AssertModel(models[3],_testData[9], false);IPAddressinetArray2M.AssertModel(models[4],_testData[10], false);IPAddressinetArray2M.AssertModel(models[5],_testData[11], false);IPAddressinetArray2M.AssertModel(models[6],_testData[12], false);IPAddressinetArray2M.AssertModel(models[7],_testData[13], false);IPAddressinetArray2M.AssertModel(models[8],_testData[14], false);IPAddressinetArray2M.AssertModel(models[9],_testData[15], false);IPAddressinetArray2M.AssertModel(models[10],_testData[16], false);IPAddressinetArray2M.AssertModel(models[11],_testData[17], false);IPAddressinetArray2M.AssertModel(models[12],_testData[18], false);IPAddressinetArray2M.AssertModel(models[13],_testData[19], false);IPAddressinetArray2M.AssertModel(models[14],_testData[20], false);IPAddressinetArray2M.AssertModel(models[15],_testData[21], false);IPAddressinetArray2M.AssertModel(models[16],_testData[22], false);IPAddressinetArray2M.AssertModel(models[17],_testData[23], false);IPAddressinetArray2M.AssertModel(models[18],_testData[24], false);IPAddressinetArray2M.AssertModel(models[19],_testData[25], false);IPAddressinetArray2M.AssertModel(models[20],_testData[26], false);IPAddressinetArray2M.AssertModel(models[21],_testData[27], false);IPAddressinetArray2M.AssertModel(models[22],_testData[28], false);IPAddressinetArray2M.AssertModel(models[23],_testData[29], false);
                         continue;
                     }
                     
@@ -2064,8 +2384,7 @@ IPAddressinetArray2M.AssertModel(models[0],_testData[24], false);IPAddressinetAr
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models =  ((IIPAddressListinetArray)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
+                var models = ((IIPAddressListinetArray)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2082,12 +2401,12 @@ IPAddressinetArray2M.AssertModel(models[0],_testData[24], false);IPAddressinetAr
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 83;
+                parametr1.Value = 19;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 55;
+                parametr2.Value = 104;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in  ((IIPAddressListinetArray)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
@@ -2095,20 +2414,112 @@ IPAddressinetArray2M.AssertModel(models[0],_testData[24], false);IPAddressinetAr
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
-IPAddressinetArray2M.AssertModel(models[0],_testData[17], false);IPAddressinetArray2M.AssertModel(models[1],_testData[18], false);IPAddressinetArray2M.AssertModel(models[2],_testData[19], false);IPAddressinetArray2M.AssertModel(models[3],_testData[20], false);IPAddressinetArray2M.AssertModel(models[4],_testData[21], false);IPAddressinetArray2M.AssertModel(models[5],_testData[22], false);IPAddressinetArray2M.AssertModel(models[6],_testData[23], false);IPAddressinetArray2M.AssertModel(models[7],_testData[24], false);IPAddressinetArray2M.AssertModel(models[8],_testData[25], false);IPAddressinetArray2M.AssertModel(models[9],_testData[26], false);IPAddressinetArray2M.AssertModel(models[10],_testData[27], false);IPAddressinetArray2M.AssertModel(models[11],_testData[28], false);IPAddressinetArray2M.AssertModel(models[12],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(26));
+IPAddressinetArray2M.AssertModel(models[0],_testData[4], false);IPAddressinetArray2M.AssertModel(models[1],_testData[5], false);IPAddressinetArray2M.AssertModel(models[2],_testData[6], false);IPAddressinetArray2M.AssertModel(models[3],_testData[7], false);IPAddressinetArray2M.AssertModel(models[4],_testData[8], false);IPAddressinetArray2M.AssertModel(models[5],_testData[9], false);IPAddressinetArray2M.AssertModel(models[6],_testData[10], false);IPAddressinetArray2M.AssertModel(models[7],_testData[11], false);IPAddressinetArray2M.AssertModel(models[8],_testData[12], false);IPAddressinetArray2M.AssertModel(models[9],_testData[13], false);IPAddressinetArray2M.AssertModel(models[10],_testData[14], false);IPAddressinetArray2M.AssertModel(models[11],_testData[15], false);IPAddressinetArray2M.AssertModel(models[12],_testData[16], false);IPAddressinetArray2M.AssertModel(models[13],_testData[17], false);IPAddressinetArray2M.AssertModel(models[14],_testData[18], false);IPAddressinetArray2M.AssertModel(models[15],_testData[19], false);IPAddressinetArray2M.AssertModel(models[16],_testData[20], false);IPAddressinetArray2M.AssertModel(models[17],_testData[21], false);IPAddressinetArray2M.AssertModel(models[18],_testData[22], false);IPAddressinetArray2M.AssertModel(models[19],_testData[23], false);IPAddressinetArray2M.AssertModel(models[20],_testData[24], false);IPAddressinetArray2M.AssertModel(models[21],_testData[25], false);IPAddressinetArray2M.AssertModel(models[22],_testData[26], false);IPAddressinetArray2M.AssertModel(models[23],_testData[27], false);IPAddressinetArray2M.AssertModel(models[24],_testData[28], false);IPAddressinetArray2M.AssertModel(models[25],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(19));
-IPAddressinetArray2M.AssertModel(models[0],_testData[11], false);IPAddressinetArray2M.AssertModel(models[1],_testData[12], false);IPAddressinetArray2M.AssertModel(models[2],_testData[13], false);IPAddressinetArray2M.AssertModel(models[3],_testData[14], false);IPAddressinetArray2M.AssertModel(models[4],_testData[15], false);IPAddressinetArray2M.AssertModel(models[5],_testData[16], false);IPAddressinetArray2M.AssertModel(models[6],_testData[17], false);IPAddressinetArray2M.AssertModel(models[7],_testData[18], false);IPAddressinetArray2M.AssertModel(models[8],_testData[19], false);IPAddressinetArray2M.AssertModel(models[9],_testData[20], false);IPAddressinetArray2M.AssertModel(models[10],_testData[21], false);IPAddressinetArray2M.AssertModel(models[11],_testData[22], false);IPAddressinetArray2M.AssertModel(models[12],_testData[23], false);IPAddressinetArray2M.AssertModel(models[13],_testData[24], false);IPAddressinetArray2M.AssertModel(models[14],_testData[25], false);IPAddressinetArray2M.AssertModel(models[15],_testData[26], false);IPAddressinetArray2M.AssertModel(models[16],_testData[27], false);IPAddressinetArray2M.AssertModel(models[17],_testData[28], false);IPAddressinetArray2M.AssertModel(models[18],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(13));
+IPAddressinetArray2M.AssertModel(models[0],_testData[17], false);IPAddressinetArray2M.AssertModel(models[1],_testData[18], false);IPAddressinetArray2M.AssertModel(models[2],_testData[19], false);IPAddressinetArray2M.AssertModel(models[3],_testData[20], false);IPAddressinetArray2M.AssertModel(models[4],_testData[21], false);IPAddressinetArray2M.AssertModel(models[5],_testData[22], false);IPAddressinetArray2M.AssertModel(models[6],_testData[23], false);IPAddressinetArray2M.AssertModel(models[7],_testData[24], false);IPAddressinetArray2M.AssertModel(models[8],_testData[25], false);IPAddressinetArray2M.AssertModel(models[9],_testData[26], false);IPAddressinetArray2M.AssertModel(models[10],_testData[27], false);IPAddressinetArray2M.AssertModel(models[11],_testData[28], false);IPAddressinetArray2M.AssertModel(models[12],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
+                }
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: null,
+            methodName:"DbConnectionMMDynQuerySelectModel",
+            queryMapTypes: [typeof(FlatIPAddressinetArray2M), typeof(FlatIPAddressinetArray2M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IIPAddressListinetArray)),
+Gedaq.DbConnection.Attributes.Parametr(
+            parametrType: typeof(System.Int32), 
+            parametrName: "id", 
+            methodParametrName: "id", 
+            dbType: (System.Data.DbType)(11))]
+        private void DbConnectionMMDynQuerySelectModelConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.ipaddressinetarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatIPAddressinetArray2M>();
+                var models2 = new List<FlatIPAddressinetArray2M>();
+                await((IIPAddressListinetArray)this).DbConnectionMMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.ipaddressinetarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatIPAddressinetArray2M>();
+                var models2 = new List<FlatIPAddressinetArray2M>();
+                ((IIPAddressListinetArray)this).DbConnectionMMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatIPAddressinetArray2M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -2159,13 +2570,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                var models = await ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
+                var models = await((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2187,7 +2597,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -2199,27 +2608,26 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 27, query1, 64, query2))
+                foreach(var batchResult in await ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 51, query1, 137, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
-FlatIPAddressinetArray2M.AssertModel(models[0],_testData[6], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[7], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[8], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[9], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[10], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[11], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[12], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[13], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[14], false);FlatIPAddressinetArray2M.AssertModel(models[9],_testData[15], false);FlatIPAddressinetArray2M.AssertModel(models[10],_testData[16], false);FlatIPAddressinetArray2M.AssertModel(models[11],_testData[17], false);FlatIPAddressinetArray2M.AssertModel(models[12],_testData[18], false);FlatIPAddressinetArray2M.AssertModel(models[13],_testData[19], false);FlatIPAddressinetArray2M.AssertModel(models[14],_testData[20], false);FlatIPAddressinetArray2M.AssertModel(models[15],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[16],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[17],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[18],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[19],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[20],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[21],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[22],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[23],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(22));
+FlatIPAddressinetArray2M.AssertModel(models[0],_testData[8], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[9], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[10], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[11], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[12], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[13], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[14], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[15], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[16], false);FlatIPAddressinetArray2M.AssertModel(models[9],_testData[17], false);FlatIPAddressinetArray2M.AssertModel(models[10],_testData[18], false);FlatIPAddressinetArray2M.AssertModel(models[11],_testData[19], false);FlatIPAddressinetArray2M.AssertModel(models[12],_testData[20], false);FlatIPAddressinetArray2M.AssertModel(models[13],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[14],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[15],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[16],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[17],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[18],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[19],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[20],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[21],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(17));
-FlatIPAddressinetArray2M.AssertModel(models[0],_testData[13], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[14], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[15], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[16], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[17], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[18], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[19], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[20], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[9],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[10],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[11],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[12],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[13],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[14],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[15],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[16],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+FlatIPAddressinetArray2M.AssertModel(models[0],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }
                     
@@ -2240,13 +2648,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                var models =  ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
+                var models = ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2268,7 +2675,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -2280,27 +2686,26 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.ipaddressinetarray2m m
-LEFT JOIN public.ipaddressinetarray2mi mi ON mi.id = m.ipaddressinetarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelBatch(connection, 137, query1, 27, query2))
+                foreach(var batchResult in  ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelBatch(connection, 146, query1, 28, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(2));
-FlatIPAddressinetArray2M.AssertModel(models[0],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+FlatIPAddressinetArray2M.AssertModel(models[0],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
-FlatIPAddressinetArray2M.AssertModel(models[0],_testData[6], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[7], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[8], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[9], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[10], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[11], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[12], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[13], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[14], false);FlatIPAddressinetArray2M.AssertModel(models[9],_testData[15], false);FlatIPAddressinetArray2M.AssertModel(models[10],_testData[16], false);FlatIPAddressinetArray2M.AssertModel(models[11],_testData[17], false);FlatIPAddressinetArray2M.AssertModel(models[12],_testData[18], false);FlatIPAddressinetArray2M.AssertModel(models[13],_testData[19], false);FlatIPAddressinetArray2M.AssertModel(models[14],_testData[20], false);FlatIPAddressinetArray2M.AssertModel(models[15],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[16],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[17],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[18],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[19],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[20],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[21],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[22],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[23],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(25));
+FlatIPAddressinetArray2M.AssertModel(models[0],_testData[5], false);FlatIPAddressinetArray2M.AssertModel(models[1],_testData[6], false);FlatIPAddressinetArray2M.AssertModel(models[2],_testData[7], false);FlatIPAddressinetArray2M.AssertModel(models[3],_testData[8], false);FlatIPAddressinetArray2M.AssertModel(models[4],_testData[9], false);FlatIPAddressinetArray2M.AssertModel(models[5],_testData[10], false);FlatIPAddressinetArray2M.AssertModel(models[6],_testData[11], false);FlatIPAddressinetArray2M.AssertModel(models[7],_testData[12], false);FlatIPAddressinetArray2M.AssertModel(models[8],_testData[13], false);FlatIPAddressinetArray2M.AssertModel(models[9],_testData[14], false);FlatIPAddressinetArray2M.AssertModel(models[10],_testData[15], false);FlatIPAddressinetArray2M.AssertModel(models[11],_testData[16], false);FlatIPAddressinetArray2M.AssertModel(models[12],_testData[17], false);FlatIPAddressinetArray2M.AssertModel(models[13],_testData[18], false);FlatIPAddressinetArray2M.AssertModel(models[14],_testData[19], false);FlatIPAddressinetArray2M.AssertModel(models[15],_testData[20], false);FlatIPAddressinetArray2M.AssertModel(models[16],_testData[21], false);FlatIPAddressinetArray2M.AssertModel(models[17],_testData[22], false);FlatIPAddressinetArray2M.AssertModel(models[18],_testData[23], false);FlatIPAddressinetArray2M.AssertModel(models[19],_testData[24], false);FlatIPAddressinetArray2M.AssertModel(models[20],_testData[25], false);FlatIPAddressinetArray2M.AssertModel(models[21],_testData[26], false);FlatIPAddressinetArray2M.AssertModel(models[22],_testData[27], false);FlatIPAddressinetArray2M.AssertModel(models[23],_testData[28], false);FlatIPAddressinetArray2M.AssertModel(models[24],_testData[29], false);
                         continue;
                     }
                     
@@ -2368,7 +2773,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                var models = await ((IIPAddressListinetArray)this).DbConnectionSelectModelAsync(connection, 0);
+                var models = await((IIPAddressListinetArray)this).DbConnectionSelectModelAsync(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2384,21 +2789,21 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IIPAddressListinetArray)this).DbConnectionSelectModelBatchAsync(connection, 108, 83))
+                foreach(var batchResult in await ((IIPAddressListinetArray)this).DbConnectionSelectModelBatchAsync(connection, 160, 88))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
-IPAddressinetArray2M.AssertModel(models[0],_testData[22], false);IPAddressinetArray2M.AssertModel(models[1],_testData[23], false);IPAddressinetArray2M.AssertModel(models[2],_testData[24], false);IPAddressinetArray2M.AssertModel(models[3],_testData[25], false);IPAddressinetArray2M.AssertModel(models[4],_testData[26], false);IPAddressinetArray2M.AssertModel(models[5],_testData[27], false);IPAddressinetArray2M.AssertModel(models[6],_testData[28], false);IPAddressinetArray2M.AssertModel(models[7],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(2));
+IPAddressinetArray2M.AssertModel(models[0],_testData[28], false);IPAddressinetArray2M.AssertModel(models[1],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
-IPAddressinetArray2M.AssertModel(models[0],_testData[17], false);IPAddressinetArray2M.AssertModel(models[1],_testData[18], false);IPAddressinetArray2M.AssertModel(models[2],_testData[19], false);IPAddressinetArray2M.AssertModel(models[3],_testData[20], false);IPAddressinetArray2M.AssertModel(models[4],_testData[21], false);IPAddressinetArray2M.AssertModel(models[5],_testData[22], false);IPAddressinetArray2M.AssertModel(models[6],_testData[23], false);IPAddressinetArray2M.AssertModel(models[7],_testData[24], false);IPAddressinetArray2M.AssertModel(models[8],_testData[25], false);IPAddressinetArray2M.AssertModel(models[9],_testData[26], false);IPAddressinetArray2M.AssertModel(models[10],_testData[27], false);IPAddressinetArray2M.AssertModel(models[11],_testData[28], false);IPAddressinetArray2M.AssertModel(models[12],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(15));
+IPAddressinetArray2M.AssertModel(models[0],_testData[15], false);IPAddressinetArray2M.AssertModel(models[1],_testData[16], false);IPAddressinetArray2M.AssertModel(models[2],_testData[17], false);IPAddressinetArray2M.AssertModel(models[3],_testData[18], false);IPAddressinetArray2M.AssertModel(models[4],_testData[19], false);IPAddressinetArray2M.AssertModel(models[5],_testData[20], false);IPAddressinetArray2M.AssertModel(models[6],_testData[21], false);IPAddressinetArray2M.AssertModel(models[7],_testData[22], false);IPAddressinetArray2M.AssertModel(models[8],_testData[23], false);IPAddressinetArray2M.AssertModel(models[9],_testData[24], false);IPAddressinetArray2M.AssertModel(models[10],_testData[25], false);IPAddressinetArray2M.AssertModel(models[11],_testData[26], false);IPAddressinetArray2M.AssertModel(models[12],_testData[27], false);IPAddressinetArray2M.AssertModel(models[13],_testData[28], false);IPAddressinetArray2M.AssertModel(models[14],_testData[29], false);
                         continue;
                     }
                     
@@ -2413,7 +2818,7 @@ IPAddressinetArray2M.AssertModel(models[0],_testData[17], false);IPAddressinetAr
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((IIPAddressListinetArray)this).DbConnectionSelectModel(connection, 0);
+                var models = ((IIPAddressListinetArray)this).DbConnectionSelectModel(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2429,21 +2834,21 @@ IPAddressinetArray2M.AssertModel(models[0],_testData[17], false);IPAddressinetAr
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IIPAddressListinetArray)this).DbConnectionSelectModelBatch(connection, 34, 132))
+                foreach(var batchResult in  ((IIPAddressListinetArray)this).DbConnectionSelectModelBatch(connection, 128, 160))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
-IPAddressinetArray2M.AssertModel(models[0],_testData[8], false);IPAddressinetArray2M.AssertModel(models[1],_testData[9], false);IPAddressinetArray2M.AssertModel(models[2],_testData[10], false);IPAddressinetArray2M.AssertModel(models[3],_testData[11], false);IPAddressinetArray2M.AssertModel(models[4],_testData[12], false);IPAddressinetArray2M.AssertModel(models[5],_testData[13], false);IPAddressinetArray2M.AssertModel(models[6],_testData[14], false);IPAddressinetArray2M.AssertModel(models[7],_testData[15], false);IPAddressinetArray2M.AssertModel(models[8],_testData[16], false);IPAddressinetArray2M.AssertModel(models[9],_testData[17], false);IPAddressinetArray2M.AssertModel(models[10],_testData[18], false);IPAddressinetArray2M.AssertModel(models[11],_testData[19], false);IPAddressinetArray2M.AssertModel(models[12],_testData[20], false);IPAddressinetArray2M.AssertModel(models[13],_testData[21], false);IPAddressinetArray2M.AssertModel(models[14],_testData[22], false);IPAddressinetArray2M.AssertModel(models[15],_testData[23], false);IPAddressinetArray2M.AssertModel(models[16],_testData[24], false);IPAddressinetArray2M.AssertModel(models[17],_testData[25], false);IPAddressinetArray2M.AssertModel(models[18],_testData[26], false);IPAddressinetArray2M.AssertModel(models[19],_testData[27], false);IPAddressinetArray2M.AssertModel(models[20],_testData[28], false);IPAddressinetArray2M.AssertModel(models[21],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(8));
+IPAddressinetArray2M.AssertModel(models[0],_testData[22], false);IPAddressinetArray2M.AssertModel(models[1],_testData[23], false);IPAddressinetArray2M.AssertModel(models[2],_testData[24], false);IPAddressinetArray2M.AssertModel(models[3],_testData[25], false);IPAddressinetArray2M.AssertModel(models[4],_testData[26], false);IPAddressinetArray2M.AssertModel(models[5],_testData[27], false);IPAddressinetArray2M.AssertModel(models[6],_testData[28], false);IPAddressinetArray2M.AssertModel(models[7],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-IPAddressinetArray2M.AssertModel(models[0],_testData[27], false);IPAddressinetArray2M.AssertModel(models[1],_testData[28], false);IPAddressinetArray2M.AssertModel(models[2],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(2));
+IPAddressinetArray2M.AssertModel(models[0],_testData[28], false);IPAddressinetArray2M.AssertModel(models[1],_testData[29], false);
                         continue;
                     }
                     
@@ -2459,11 +2864,11 @@ IPAddressinetArray2M.AssertModel(models[0],_testData[27], false);IPAddressinetAr
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IIPAddressListinetArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IIPAddressListinetArray)this).SetDbConnectionSelectModelParametrs(cmd, 73);
+                ((IIPAddressListinetArray)this).SetDbConnectionSelectModelParametrs(cmd, 12);
                 var models = await ((IIPAddressListinetArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(15));
-IPAddressinetArray2M.AssertModel(models[0],_testData[15], false);IPAddressinetArray2M.AssertModel(models[1],_testData[16], false);IPAddressinetArray2M.AssertModel(models[2],_testData[17], false);IPAddressinetArray2M.AssertModel(models[3],_testData[18], false);IPAddressinetArray2M.AssertModel(models[4],_testData[19], false);IPAddressinetArray2M.AssertModel(models[5],_testData[20], false);IPAddressinetArray2M.AssertModel(models[6],_testData[21], false);IPAddressinetArray2M.AssertModel(models[7],_testData[22], false);IPAddressinetArray2M.AssertModel(models[8],_testData[23], false);IPAddressinetArray2M.AssertModel(models[9],_testData[24], false);IPAddressinetArray2M.AssertModel(models[10],_testData[25], false);IPAddressinetArray2M.AssertModel(models[11],_testData[26], false);IPAddressinetArray2M.AssertModel(models[12],_testData[27], false);IPAddressinetArray2M.AssertModel(models[13],_testData[28], false);IPAddressinetArray2M.AssertModel(models[14],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(27));
+IPAddressinetArray2M.AssertModel(models[0],_testData[3], false);IPAddressinetArray2M.AssertModel(models[1],_testData[4], false);IPAddressinetArray2M.AssertModel(models[2],_testData[5], false);IPAddressinetArray2M.AssertModel(models[3],_testData[6], false);IPAddressinetArray2M.AssertModel(models[4],_testData[7], false);IPAddressinetArray2M.AssertModel(models[5],_testData[8], false);IPAddressinetArray2M.AssertModel(models[6],_testData[9], false);IPAddressinetArray2M.AssertModel(models[7],_testData[10], false);IPAddressinetArray2M.AssertModel(models[8],_testData[11], false);IPAddressinetArray2M.AssertModel(models[9],_testData[12], false);IPAddressinetArray2M.AssertModel(models[10],_testData[13], false);IPAddressinetArray2M.AssertModel(models[11],_testData[14], false);IPAddressinetArray2M.AssertModel(models[12],_testData[15], false);IPAddressinetArray2M.AssertModel(models[13],_testData[16], false);IPAddressinetArray2M.AssertModel(models[14],_testData[17], false);IPAddressinetArray2M.AssertModel(models[15],_testData[18], false);IPAddressinetArray2M.AssertModel(models[16],_testData[19], false);IPAddressinetArray2M.AssertModel(models[17],_testData[20], false);IPAddressinetArray2M.AssertModel(models[18],_testData[21], false);IPAddressinetArray2M.AssertModel(models[19],_testData[22], false);IPAddressinetArray2M.AssertModel(models[20],_testData[23], false);IPAddressinetArray2M.AssertModel(models[21],_testData[24], false);IPAddressinetArray2M.AssertModel(models[22],_testData[25], false);IPAddressinetArray2M.AssertModel(models[23],_testData[26], false);IPAddressinetArray2M.AssertModel(models[24],_testData[27], false);IPAddressinetArray2M.AssertModel(models[25],_testData[28], false);IPAddressinetArray2M.AssertModel(models[26],_testData[29], false);
             }
         }
 
@@ -2474,11 +2879,11 @@ IPAddressinetArray2M.AssertModel(models[0],_testData[15], false);IPAddressinetAr
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IIPAddressListinetArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IIPAddressListinetArray)this).SetDbConnectionSelectModelParametrs(cmd, 5);
+                ((IIPAddressListinetArray)this).SetDbConnectionSelectModelParametrs(cmd, 28);
                 var models =  ((IIPAddressListinetArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(28));
-IPAddressinetArray2M.AssertModel(models[0],_testData[2], false);IPAddressinetArray2M.AssertModel(models[1],_testData[3], false);IPAddressinetArray2M.AssertModel(models[2],_testData[4], false);IPAddressinetArray2M.AssertModel(models[3],_testData[5], false);IPAddressinetArray2M.AssertModel(models[4],_testData[6], false);IPAddressinetArray2M.AssertModel(models[5],_testData[7], false);IPAddressinetArray2M.AssertModel(models[6],_testData[8], false);IPAddressinetArray2M.AssertModel(models[7],_testData[9], false);IPAddressinetArray2M.AssertModel(models[8],_testData[10], false);IPAddressinetArray2M.AssertModel(models[9],_testData[11], false);IPAddressinetArray2M.AssertModel(models[10],_testData[12], false);IPAddressinetArray2M.AssertModel(models[11],_testData[13], false);IPAddressinetArray2M.AssertModel(models[12],_testData[14], false);IPAddressinetArray2M.AssertModel(models[13],_testData[15], false);IPAddressinetArray2M.AssertModel(models[14],_testData[16], false);IPAddressinetArray2M.AssertModel(models[15],_testData[17], false);IPAddressinetArray2M.AssertModel(models[16],_testData[18], false);IPAddressinetArray2M.AssertModel(models[17],_testData[19], false);IPAddressinetArray2M.AssertModel(models[18],_testData[20], false);IPAddressinetArray2M.AssertModel(models[19],_testData[21], false);IPAddressinetArray2M.AssertModel(models[20],_testData[22], false);IPAddressinetArray2M.AssertModel(models[21],_testData[23], false);IPAddressinetArray2M.AssertModel(models[22],_testData[24], false);IPAddressinetArray2M.AssertModel(models[23],_testData[25], false);IPAddressinetArray2M.AssertModel(models[24],_testData[26], false);IPAddressinetArray2M.AssertModel(models[25],_testData[27], false);IPAddressinetArray2M.AssertModel(models[26],_testData[28], false);IPAddressinetArray2M.AssertModel(models[27],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(25));
+IPAddressinetArray2M.AssertModel(models[0],_testData[5], false);IPAddressinetArray2M.AssertModel(models[1],_testData[6], false);IPAddressinetArray2M.AssertModel(models[2],_testData[7], false);IPAddressinetArray2M.AssertModel(models[3],_testData[8], false);IPAddressinetArray2M.AssertModel(models[4],_testData[9], false);IPAddressinetArray2M.AssertModel(models[5],_testData[10], false);IPAddressinetArray2M.AssertModel(models[6],_testData[11], false);IPAddressinetArray2M.AssertModel(models[7],_testData[12], false);IPAddressinetArray2M.AssertModel(models[8],_testData[13], false);IPAddressinetArray2M.AssertModel(models[9],_testData[14], false);IPAddressinetArray2M.AssertModel(models[10],_testData[15], false);IPAddressinetArray2M.AssertModel(models[11],_testData[16], false);IPAddressinetArray2M.AssertModel(models[12],_testData[17], false);IPAddressinetArray2M.AssertModel(models[13],_testData[18], false);IPAddressinetArray2M.AssertModel(models[14],_testData[19], false);IPAddressinetArray2M.AssertModel(models[15],_testData[20], false);IPAddressinetArray2M.AssertModel(models[16],_testData[21], false);IPAddressinetArray2M.AssertModel(models[17],_testData[22], false);IPAddressinetArray2M.AssertModel(models[18],_testData[23], false);IPAddressinetArray2M.AssertModel(models[19],_testData[24], false);IPAddressinetArray2M.AssertModel(models[20],_testData[25], false);IPAddressinetArray2M.AssertModel(models[21],_testData[26], false);IPAddressinetArray2M.AssertModel(models[22],_testData[27], false);IPAddressinetArray2M.AssertModel(models[23],_testData[28], false);IPAddressinetArray2M.AssertModel(models[24],_testData[29], false);
             }
         }
 

@@ -800,7 +800,6 @@ namespace Gedaq.Base.Batch
             StringBuilder builder)
         {
             var await = methodType == MethodType.Async ? "await " : "";
-            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
 
             builder.Append($@"

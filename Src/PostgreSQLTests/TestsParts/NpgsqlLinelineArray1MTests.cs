@@ -34,338 +34,346 @@ namespace Tests
     Value = 
 new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.3322944591117851d, b: 0.7539266976705091d, c: 0.4409654179260807d),
-new NpgsqlTypes.NpgsqlLine(a: 0.07368211506783873d, b: 0.8971825677915621d, c: 0.8084843587613566d),
-new NpgsqlTypes.NpgsqlLine(a: 0.46363569593670373d, b: 0.6067094802559195d, c: 0.008866411934452922d),
+new NpgsqlTypes.NpgsqlLine(a: 0.545852386792688d, b: 0.2797227225920307d, c: 0.7840490748234987d),
+new NpgsqlTypes.NpgsqlLine(a: 0.27034550241895106d, b: 0.7517528876877466d, c: 0.5672271761801989d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8956959707566623d, b: 0.3612241935032796d, c: 0.680609008701588d),
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[3]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.6191276907640871d, b: 0.06940572702643444d, c: 0.7582280435754742d),
+new NpgsqlTypes.NpgsqlLine(a: 0.13699109174849622d, b: 0.0021082653314964395d, c: 0.6303261674728727d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5855880551591452d, b: 0.4612812495198122d, c: 0.4922682955499721d),
+},
 },
             new NpgsqlLinelineArray1M
 {
     Id = 12,
     Value = 
-new NpgsqlTypes.NpgsqlLine[3]
+new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.1876676583633169d, b: 0.13052859118214366d, c: 0.45146086376226213d),
-new NpgsqlTypes.NpgsqlLine(a: 0.32829429495396345d, b: 0.782918609764023d, c: 0.6385038974064269d),
-new NpgsqlTypes.NpgsqlLine(a: 0.6664963908642473d, b: 0.33936104297548975d, c: 0.8361870979345528d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8290292222020401d, b: 0.329432222532831d, c: 0.522679996576427d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6732750350587192d, b: 0.4614014675890741d, c: 0.11201203209762789d),
+new NpgsqlTypes.NpgsqlLine(a: 0.31417416636987716d, b: 0.8878451778317197d, c: 0.8904819222722685d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5869948535189659d, b: 0.691582221241478d, c: 0.7227445604801984d),
 },
     ModelInner = new NpgsqlLinelineArray1MI
 {
-    Id = 8,
+    Id = 6,
     Value = 
-new NpgsqlTypes.NpgsqlLine[4]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.8186960221061003d, b: 0.6582561370466846d, c: 0.9596472719822262d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9632229561365503d, b: 0.28813382856473d, c: 0.23206088459908158d),
-new NpgsqlTypes.NpgsqlLine(a: 0.33556317062110463d, b: 0.14313153937667222d, c: 0.8987696404858866d),
-new NpgsqlTypes.NpgsqlLine(a: 0.65035937156573d, b: 0.5022145701186185d, c: 0.41266962394316287d),
-},
-    NullableValue = 
 new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.7799226240677382d, b: 0.8544360012544622d, c: 0.4998027985004724d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7231896374522447d, b: 0.07780896126967829d, c: 0.7339984667177185d),
-new NpgsqlTypes.NpgsqlLine(a: 0.13881492671364037d, b: 0.32695090862737497d, c: 0.45703039231525266d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7550040833093649d, b: 0.1855499824292579d, c: 0.08733374250629522d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8394265631538236d, b: 0.10227454089309906d, c: 0.4687927981488874d),
+new NpgsqlTypes.NpgsqlLine(a: 0.20981663461473443d, b: 0.7537821616861422d, c: 0.8546694982435434d),
 },
+    NullableValue = null,
 },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.46252833451435216d, b: 0.09112670590995864d, c: 0.16667626049610285d),
-new NpgsqlTypes.NpgsqlLine(a: 0.2696480846988678d, b: 0.9981395649583126d, c: 0.025482779887713414d),
-new NpgsqlTypes.NpgsqlLine(a: 0.760082819975719d, b: 0.3610685492927104d, c: 0.9511045099740362d),
-},
+    NullableValue = null,
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 20,
+    Id = 18,
     Value = 
-new NpgsqlTypes.NpgsqlLine[3]
+new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.3702404982690053d, b: 0.5715728611516536d, c: 0.10969854952620284d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5792417136925058d, b: 0.46296325100412195d, c: 0.6918343604241519d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5451079413129363d, b: 0.3999548628073948d, c: 0.045515941646172564d),
+new NpgsqlTypes.NpgsqlLine(a: 0.04016649868890365d, b: 0.7181793237485706d, c: 0.4440558589304391d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6107300402469464d, b: 0.8766620611229541d, c: 0.3720698741944346d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9147893781143626d, b: 0.6584999895050536d, c: 0.6524183875375371d),
+new NpgsqlTypes.NpgsqlLine(a: 0.0883651085917666d, b: 0.736394092106881d, c: 0.34364742963780104d),
 },
     ModelInner = null,
-    NullableValue = 
-new NpgsqlTypes.NpgsqlLine[4]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.12620294192446513d, b: 0.4587772048411025d, c: 0.3145746219240537d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9914086254953884d, b: 0.8062028840859706d, c: 0.8082520678112184d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8881220937920331d, b: 0.7460500374567599d, c: 0.8157476970121748d),
-new NpgsqlTypes.NpgsqlLine(a: 0.6198680134172344d, b: 0.6853573158807909d, c: 0.6833255304571043d),
-},
+    NullableValue = null,
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 29,
+    Id = 23,
     Value = 
-new NpgsqlTypes.NpgsqlLine[3]
+new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.5339121215932692d, b: 0.14219702024289493d, c: 0.7560325007676297d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9398693087436453d, b: 0.9439996138692827d, c: 0.3776009868507342d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7919580112876103d, b: 0.8842899556837263d, c: 0.27224566113142057d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9195349002494371d, b: 0.8304575518031196d, c: 0.11502915008848635d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7845904576951158d, b: 0.3900103495643027d, c: 0.9128770789082497d),
+new NpgsqlTypes.NpgsqlLine(a: 0.31666749363717217d, b: 0.033075627906477556d, c: 0.4499959524546586d),
+new NpgsqlTypes.NpgsqlLine(a: 0.580986246133345d, b: 0.6055276208167839d, c: 0.956337997299678d),
 },
     ModelInner = new NpgsqlLinelineArray1MI
 {
-    Id = 12,
+    Id = 13,
     Value = 
-new NpgsqlTypes.NpgsqlLine[4]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.8779884784002131d, b: 0.7333588852656597d, c: 0.9074003063576196d),
-new NpgsqlTypes.NpgsqlLine(a: 0.4006510536437522d, b: 0.2251000115568662d, c: 0.7059687390968042d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9053049499136627d, b: 0.6741762498324637d, c: 0.16518003455572994d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5110213916017355d, b: 0.8109906580163063d, c: 0.0781721146818608d),
-},
-    NullableValue = null,
-},
-    NullableValue = 
 new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.40693673183138945d, b: 0.5507489387721164d, c: 0.516993697879588d),
-new NpgsqlTypes.NpgsqlLine(a: 0.42320204364197445d, b: 0.9030599609050395d, c: 0.4682379742012508d),
-new NpgsqlTypes.NpgsqlLine(a: 0.24897368844976808d, b: 0.23391949787484556d, c: 0.5961473688662137d),
+new NpgsqlTypes.NpgsqlLine(a: 0.3549478073014325d, b: 0.2721084734359681d, c: 0.6101273825754957d),
+new NpgsqlTypes.NpgsqlLine(a: 0.3733413475825855d, b: 0.09889918347521132d, c: 0.8046129721366936d),
+new NpgsqlTypes.NpgsqlLine(a: 0.24001248182725254d, b: 0.7424898776846477d, c: 0.0893447006819621d),
 },
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.997432325972822d, b: 0.6769234372370924d, c: 0.7760215425805155d),
+new NpgsqlTypes.NpgsqlLine(a: 0.37167485636326447d, b: 0.4490678367789479d, c: 0.06276063481273875d),
+new NpgsqlTypes.NpgsqlLine(a: 0.4044237830742341d, b: 0.16113639964201998d, c: 0.40657046910190786d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5567137367507611d, b: 0.4103335987710893d, c: 0.24285684670615937d),
+},
+},
+    NullableValue = null,
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 38,
+    Id = 30,
     Value = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.7411187115687704d, b: 0.5301449868695544d, c: 0.405317784801312d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5886244165059616d, b: 0.07471312969115729d, c: 0.8012438483990786d),
-new NpgsqlTypes.NpgsqlLine(a: 0.613206346513417d, b: 0.9853065187391009d, c: 0.9390120990112014d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9199933146119025d, b: 0.49465991950697674d, c: 0.26264153143009306d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7970874233065316d, b: 0.7869835509095054d, c: 0.4633880312102634d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6535307877307887d, b: 0.06778527808544621d, c: 0.5324923653311956d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6767701459465397d, b: 0.757439328575128d, c: 0.13262220787063872d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7925646238348634d, b: 0.854891371668945d, c: 0.5680938393764643d),
 },
     ModelInner = null,
     NullableValue = null,
+},
+            new NpgsqlLinelineArray1M
+{
+    Id = 37,
+    Value = 
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.4351346066611683d, b: 0.7022646948934573d, c: 0.022116470434292212d),
+new NpgsqlTypes.NpgsqlLine(a: 0.40233549436302374d, b: 0.2277621894784969d, c: 0.44859279325420176d),
+new NpgsqlTypes.NpgsqlLine(a: 0.1129894990418806d, b: 0.6583838055893074d, c: 0.8184243168936701d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7322518006954702d, b: 0.8560269015722015d, c: 0.09878629609257716d),
+},
+    ModelInner = new NpgsqlLinelineArray1MI
+{
+    Id = 22,
+    Value = 
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.43915677156112465d, b: 0.7799282665136356d, c: 0.9742642701384893d),
+new NpgsqlTypes.NpgsqlLine(a: 0.98365861984609d, b: 0.5715597050115645d, c: 0.7028671260669972d),
+new NpgsqlTypes.NpgsqlLine(a: 0.626116260052116d, b: 0.7858041527267805d, c: 0.8417622886766026d),
+new NpgsqlTypes.NpgsqlLine(a: 0.01211733727918518d, b: 0.03794899773281757d, c: 0.16773410450278547d),
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new NpgsqlLinelineArray1M
+{
+    Id = 40,
+    Value = 
+new NpgsqlTypes.NpgsqlLine[3]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.08762572806460467d, b: 0.2693329165722885d, c: 0.8610926140752668d),
+new NpgsqlTypes.NpgsqlLine(a: 0.185146202442804d, b: 0.2935352055188363d, c: 0.11886160650706179d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6213328319471964d, b: 0.4646145355482356d, c: 0.25479518629630005d),
+},
+    ModelInner = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[3]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.983049202534315d, b: 0.5361285154697061d, c: 0.19871271473608254d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5049219582703102d, b: 0.34081569079934204d, c: 0.8576844421793958d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8103080962132525d, b: 0.22388083539911197d, c: 0.4650133192057646d),
+},
 },
             new NpgsqlLinelineArray1M
 {
     Id = 45,
     Value = 
-new NpgsqlTypes.NpgsqlLine[3]
+new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.9172645476874312d, b: 0.1265718083347943d, c: 0.14255002208872858d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9786863383091055d, b: 0.22587094365568383d, c: 0.5756895497875085d),
-new NpgsqlTypes.NpgsqlLine(a: 0.45831815683343313d, b: 0.33861250315971836d, c: 0.06204575074756036d),
+new NpgsqlTypes.NpgsqlLine(a: 0.353006804265372d, b: 0.5288470470411414d, c: 0.003711000633956907d),
+new NpgsqlTypes.NpgsqlLine(a: 0.003556899193295826d, b: 0.5182388019273365d, c: 0.6893987543191848d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9606018982284571d, b: 0.25028229278787395d, c: 0.4535745739496856d),
+new NpgsqlTypes.NpgsqlLine(a: 0.33184789606607024d, b: 0.5929857800370832d, c: 0.09658562285185657d),
 },
     ModelInner = new NpgsqlLinelineArray1MI
 {
-    Id = 14,
+    Id = 26,
+    Value = 
+new NpgsqlTypes.NpgsqlLine[3]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.2933646872048695d, b: 0.8213528794478999d, c: 0.16144286294167098d),
+new NpgsqlTypes.NpgsqlLine(a: 0.12734542807760096d, b: 0.4652645107625416d, c: 0.13706146854670487d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6195806414074427d, b: 0.754935701011626d, c: 0.16219739686537604d),
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.2044928727494889d, b: 0.444043604484203d, c: 0.9180593426127833d),
+new NpgsqlTypes.NpgsqlLine(a: 0.4600505853886667d, b: 0.9915595866839853d, c: 0.27125424373390605d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6346678601805319d, b: 0.10176568494846217d, c: 0.9481837799757266d),
+new NpgsqlTypes.NpgsqlLine(a: 0.11806818480946268d, b: 0.017219526140809238d, c: 0.8491331490578823d),
+},
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.9701647523073526d, b: 0.5035851937311939d, c: 0.09801477887991938d),
+new NpgsqlTypes.NpgsqlLine(a: 0.46905450113397906d, b: 0.45249331691409367d, c: 0.571848702862225d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9391945053848348d, b: 0.14312494718762714d, c: 0.3461189294403175d),
+new NpgsqlTypes.NpgsqlLine(a: 0.2870474950602079d, b: 0.539415781773023d, c: 0.8786208069556296d),
+},
+},
+            new NpgsqlLinelineArray1M
+{
+    Id = 52,
     Value = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.5258267801525661d, b: 0.5060305433501399d, c: 0.4130156951672401d),
-new NpgsqlTypes.NpgsqlLine(a: 0.21275111936802327d, b: 0.5136849227261764d, c: 0.5150776828865012d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8218995543943078d, b: 0.3284426587529089d, c: 0.9072358151058112d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7915998222942283d, b: 0.8609728781869614d, c: 0.9197123448199989d),
+new NpgsqlTypes.NpgsqlLine(a: 0.1256483530684237d, b: 0.6062237608944316d, c: 0.9421387060391745d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5496660884795377d, b: 0.369621144055319d, c: 0.49514732668949324d),
+new NpgsqlTypes.NpgsqlLine(a: 0.07814497286011513d, b: 0.3872255908191726d, c: 0.3477931324513558d),
+new NpgsqlTypes.NpgsqlLine(a: 0.3007188229140447d, b: 0.10691629486885401d, c: 0.3077415673158125d),
 },
-    NullableValue = null,
-},
+    ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlLinelineArray1M
 {
     Id = 54,
     Value = 
-new NpgsqlTypes.NpgsqlLine[4]
+new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.9141568434133602d, b: 0.9741911328212004d, c: 0.14707131854571465d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9174126857112254d, b: 0.16560760918655504d, c: 0.20959558536479006d),
-new NpgsqlTypes.NpgsqlLine(a: 0.12853702616292972d, b: 0.316375376325273d, c: 0.5647372043962983d),
-new NpgsqlTypes.NpgsqlLine(a: 0.3657445510098959d, b: 0.12193613660188896d, c: 0.6591263517762267d),
+new NpgsqlTypes.NpgsqlLine(a: 0.4643954538107232d, b: 0.23649448979301024d, c: 0.932514311918332d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9608584497715058d, b: 0.03856757863472915d, c: 0.3306261169469463d),
+new NpgsqlTypes.NpgsqlLine(a: 0.19407151628906427d, b: 0.535581673957276d, c: 0.6597625987902807d),
+},
+    ModelInner = new NpgsqlLinelineArray1MI
+{
+    Id = 31,
+    Value = 
+new NpgsqlTypes.NpgsqlLine[3]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.04356136882228301d, b: 0.8301686108599573d, c: 0.1730665993653423d),
+new NpgsqlTypes.NpgsqlLine(a: 0.10645800625485824d, b: 0.9201384256894121d, c: 0.3605406266701442d),
+new NpgsqlTypes.NpgsqlLine(a: 0.3568949291904562d, b: 0.3144596552240063d, c: 0.24626211464699022d),
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[3]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.33842811300840026d, b: 0.598702223869042d, c: 0.41111617680474555d),
+new NpgsqlTypes.NpgsqlLine(a: 0.4619801375578497d, b: 0.2363248930335491d, c: 0.3465262774158264d),
+new NpgsqlTypes.NpgsqlLine(a: 0.005094768987942366d, b: 0.890711993236365d, c: 0.7151977399263099d),
+},
+},
+    NullableValue = null,
+},
+            new NpgsqlLinelineArray1M
+{
+    Id = 60,
+    Value = 
+new NpgsqlTypes.NpgsqlLine[3]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.5920534320857385d, b: 0.9600124465215915d, c: 0.5553463853231193d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6507292533129737d, b: 0.33596614283295967d, c: 0.38166488246121444d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5734548541626089d, b: 0.987084383042829d, c: 0.9497730483854266d),
 },
     ModelInner = null,
     NullableValue = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.33387274067771966d, b: 0.25646353534228417d, c: 0.7568691507412332d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9391064805283429d, b: 0.4496582516672789d, c: 0.5546462940993716d),
-new NpgsqlTypes.NpgsqlLine(a: 0.6200619396953089d, b: 0.0024805321450348528d, c: 0.6882160611592212d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7278657232549832d, b: 0.5851038275370422d, c: 0.08503563934401681d),
+new NpgsqlTypes.NpgsqlLine(a: 0.576790768068071d, b: 0.9753307498729779d, c: 0.4286388876755546d),
+new NpgsqlTypes.NpgsqlLine(a: 0.4889402801178365d, b: 0.6569066204756426d, c: 0.6819606209065061d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7483233181350131d, b: 0.5302738919534661d, c: 0.34291332095473004d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8670708435277613d, b: 0.2962417865410839d, c: 0.680437520789489d),
 },
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 59,
+    Id = 66,
     Value = 
-new NpgsqlTypes.NpgsqlLine[4]
+new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.32640904103448576d, b: 0.6146258995513508d, c: 0.8959470658924553d),
-new NpgsqlTypes.NpgsqlLine(a: 0.43942986604863576d, b: 0.20198361476832938d, c: 0.08918007725165922d),
-new NpgsqlTypes.NpgsqlLine(a: 0.362112887352515d, b: 0.5073993752444573d, c: 0.5608374918328386d),
-new NpgsqlTypes.NpgsqlLine(a: 0.08890362271300978d, b: 0.36978725668374235d, c: 0.5094743167337039d),
+new NpgsqlTypes.NpgsqlLine(a: 0.11187490470277273d, b: 0.5326060235903286d, c: 0.22629407627656883d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6270624655855588d, b: 0.7313196741126788d, c: 0.08980358578264958d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5165539442560798d, b: 0.5149335072553373d, c: 0.8807703650252189d),
 },
     ModelInner = new NpgsqlLinelineArray1MI
 {
-    Id = 18,
+    Id = 37,
     Value = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.5685718318806668d, b: 0.6514288915796582d, c: 0.9650078593978202d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9691354919774698d, b: 0.744019959355153d, c: 0.08559632332302469d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9322577289868452d, b: 0.7875340312199555d, c: 0.8198793023735589d),
-new NpgsqlTypes.NpgsqlLine(a: 0.2754631145840173d, b: 0.03367109317292083d, c: 0.4687624999399427d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6189641696586488d, b: 0.022163906619385276d, c: 0.6540690167671809d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7296339402695019d, b: 0.1590400201800709d, c: 0.597241939046476d),
+new NpgsqlTypes.NpgsqlLine(a: 0.47847528925858185d, b: 0.6943946567629541d, c: 0.3153442650106917d),
+new NpgsqlTypes.NpgsqlLine(a: 0.774987903194798d, b: 0.561160690909337d, c: 0.03074285152594536d),
 },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.26643494286933056d, b: 0.7185584062467373d, c: 0.6057859429343528d),
-new NpgsqlTypes.NpgsqlLine(a: 0.08962187715262326d, b: 0.9718285587336293d, c: 0.7590755861928469d),
-new NpgsqlTypes.NpgsqlLine(a: 0.2788808972120972d, b: 0.8249471201155655d, c: 0.6865588710549769d),
-},
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 64,
+    Id = 72,
     Value = 
-new NpgsqlTypes.NpgsqlLine[4]
+new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.4396812158790867d, b: 0.12422413723074788d, c: 0.2746636177959727d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9816448888764031d, b: 0.6045741820771934d, c: 0.19687467823771d),
-new NpgsqlTypes.NpgsqlLine(a: 0.4718215184122456d, b: 0.8560592907114869d, c: 0.20080676689168053d),
-new NpgsqlTypes.NpgsqlLine(a: 0.03740027227438214d, b: 0.5100011641493095d, c: 0.9902529342135493d),
+new NpgsqlTypes.NpgsqlLine(a: 0.904417747971749d, b: 0.2324750153997176d, c: 0.8234216709391163d),
+new NpgsqlTypes.NpgsqlLine(a: 0.1887361181372611d, b: 0.566079333196146d, c: 0.7366258846011824d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9262925155024994d, b: 0.6490980116819223d, c: 0.9047864963367368d),
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[3]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.23833386768204012d, b: 0.37020141124407757d, c: 0.08233361829122199d),
+new NpgsqlTypes.NpgsqlLine(a: 0.28178885390364994d, b: 0.28233314789832975d, c: 0.6123487264612619d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6830573925272246d, b: 0.5560347401882367d, c: 0.39818356937186905d),
+},
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 69,
+    Id = 76,
     Value = 
-new NpgsqlTypes.NpgsqlLine[4]
+new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.03771271887766248d, b: 0.9935326111739363d, c: 0.2520255694992247d),
-new NpgsqlTypes.NpgsqlLine(a: 0.22588986884604667d, b: 0.3568001209807877d, c: 0.45572208988303153d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7463749791301734d, b: 0.952921635120058d, c: 0.6894582150052359d),
-new NpgsqlTypes.NpgsqlLine(a: 0.19586712937447104d, b: 0.2533062981591634d, c: 0.45679431139501503d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7173461240789274d, b: 0.24156116356179314d, c: 0.5107576925526297d),
+new NpgsqlTypes.NpgsqlLine(a: 0.4333434451590418d, b: 0.7566436794152285d, c: 0.6665767759707732d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5368081155269908d, b: 0.2750726561249035d, c: 0.3222289834011237d),
 },
     ModelInner = new NpgsqlLinelineArray1MI
 {
-    Id = 22,
+    Id = 42,
     Value = 
-new NpgsqlTypes.NpgsqlLine[3]
+new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.9569272641004067d, b: 0.5363904549952764d, c: 0.740027977390762d),
-new NpgsqlTypes.NpgsqlLine(a: 0.11100790006000893d, b: 0.9506711440873438d, c: 0.03642543132272369d),
-new NpgsqlTypes.NpgsqlLine(a: 0.3485193341219477d, b: 0.04061103879223149d, c: 0.45282943675216314d),
+new NpgsqlTypes.NpgsqlLine(a: 0.10645849606453539d, b: 0.972752458779941d, c: 0.9634258335596769d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7679747473525611d, b: 0.3695660386901839d, c: 0.2736296484240265d),
+new NpgsqlTypes.NpgsqlLine(a: 0.538942920628706d, b: 0.4006133667655979d, c: 0.4393481652212773d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9382325721550133d, b: 0.18977569388953752d, c: 0.07105792151879053d),
 },
     NullableValue = null,
 },
     NullableValue = 
-new NpgsqlTypes.NpgsqlLine[4]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.4840698994379439d, b: 0.4791296780594393d, c: 0.6054753219536385d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5339408599652941d, b: 0.6294851620000889d, c: 0.039321570537478645d),
-new NpgsqlTypes.NpgsqlLine(a: 0.1346333478965066d, b: 0.28544699262390494d, c: 0.23230297745529138d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8611845131120149d, b: 0.9489783590201448d, c: 0.48973593311006225d),
-},
-},
-            new NpgsqlLinelineArray1M
-{
-    Id = 71,
-    Value = 
 new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.2821732487722356d, b: 0.27490638931688527d, c: 0.08034459208847189d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9752749711163542d, b: 0.07583513606548531d, c: 0.9234928865010488d),
-new NpgsqlTypes.NpgsqlLine(a: 0.12712236911605168d, b: 0.6054466847593608d, c: 0.17987611372576062d),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlLinelineArray1M
-{
-    Id = 73,
-    Value = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.15924737026028535d, b: 0.610810242058416d, c: 0.047564035363183654d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7835704592191169d, b: 0.41316771450893697d, c: 0.05576325433331675d),
-new NpgsqlTypes.NpgsqlLine(a: 0.4667730045361669d, b: 0.6484459339722798d, c: 0.28852652804734036d),
-},
-    ModelInner = new NpgsqlLinelineArray1MI
-{
-    Id = 24,
-    Value = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.6898854654422867d, b: 0.6614981685987237d, c: 0.8168008410700277d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9610345992993377d, b: 0.6868618454761212d, c: 0.9229519825010596d),
-new NpgsqlTypes.NpgsqlLine(a: 0.3927324734262332d, b: 0.19459198597934868d, c: 0.9041256328401165d),
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.8824171486145446d, b: 0.8593282157176876d, c: 0.0031019720775455895d),
-new NpgsqlTypes.NpgsqlLine(a: 0.42501875462671046d, b: 0.3055562799901991d, c: 0.863697136216471d),
-new NpgsqlTypes.NpgsqlLine(a: 0.08890877224547356d, b: 0.35426322408324296d, c: 0.35199628541284744d),
-},
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlLine[4]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.06787018110232257d, b: 0.517832229213823d, c: 0.016575966132609143d),
-new NpgsqlTypes.NpgsqlLine(a: 0.34064968933983497d, b: 0.0736120595432791d, c: 0.9436569541063086d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7161846781143746d, b: 0.5250962543863624d, c: 0.052476756359248755d),
-new NpgsqlTypes.NpgsqlLine(a: 0.2816982086488975d, b: 0.8367867261556318d, c: 0.6658315294767196d),
+new NpgsqlTypes.NpgsqlLine(a: 0.46101185594613814d, b: 0.5236257033665215d, c: 0.2883274148772298d),
+new NpgsqlTypes.NpgsqlLine(a: 0.11911178299489789d, b: 0.7928716308221454d, c: 0.8136500434275968d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5793859581295892d, b: 0.38001552594875043d, c: 0.3618346575137674d),
 },
 },
             new NpgsqlLinelineArray1M
 {
     Id = 81,
     Value = 
-new NpgsqlTypes.NpgsqlLine[3]
+new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.5937419612167778d, b: 0.31078922558449307d, c: 0.3333255381482262d),
-new NpgsqlTypes.NpgsqlLine(a: 0.1053252334187097d, b: 0.7728609100381276d, c: 0.16554032989030576d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7869970583876891d, b: 0.40249174989016745d, c: 0.2137420370704588d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7473192145864284d, b: 0.33264024687819826d, c: 0.17923040590095574d),
+new NpgsqlTypes.NpgsqlLine(a: 0.4193341829703201d, b: 0.009877624935504148d, c: 0.918082095367848d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6095336993583768d, b: 0.5195734554940978d, c: 0.17676679060997935d),
+new NpgsqlTypes.NpgsqlLine(a: 0.24270108642725852d, b: 0.001814398369607173d, c: 0.013701154560494588d),
 },
     ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlLinelineArray1M
-{
-    Id = 83,
-    Value = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.11894288387586582d, b: 0.47404995988104603d, c: 0.5943511222286739d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5512144219843503d, b: 0.6475621496083337d, c: 0.9326525070628255d),
-new NpgsqlTypes.NpgsqlLine(a: 0.11830248877611993d, b: 0.3092945302480671d, c: 0.34084307908334643d),
-},
-    ModelInner = new NpgsqlLinelineArray1MI
-{
-    Id = 29,
-    Value = 
-new NpgsqlTypes.NpgsqlLine[4]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.6195003049681101d, b: 0.5303448107084036d, c: 0.19083892828893345d),
-new NpgsqlTypes.NpgsqlLine(a: 0.0453733705315823d, b: 0.619821443090492d, c: 0.49675225358222974d),
-new NpgsqlTypes.NpgsqlLine(a: 0.1828549881054674d, b: 4.809866606458879E-05d, c: 0.9398648778547661d),
-new NpgsqlTypes.NpgsqlLine(a: 0.6426768264548707d, b: 0.3430453963070057d, c: 0.1987358514440013d),
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.2521987192878654d, b: 0.8147621787255886d, c: 0.6737454992999647d),
-new NpgsqlTypes.NpgsqlLine(a: 0.47869001600567584d, b: 0.28742881373883644d, c: 0.521642444156669d),
-new NpgsqlTypes.NpgsqlLine(a: 0.875381164924445d, b: 0.010443178142555798d, c: 0.972664397961333d),
-},
-},
     NullableValue = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.44468049361172834d, b: 0.41357642373998005d, c: 0.9119966044491046d),
-new NpgsqlTypes.NpgsqlLine(a: 0.16463228697761145d, b: 0.9594978069248687d, c: 0.5749292668678682d),
-new NpgsqlTypes.NpgsqlLine(a: 0.40156935036150465d, b: 0.6023743616715378d, c: 0.4966370736981296d),
-new NpgsqlTypes.NpgsqlLine(a: 0.11486144385019981d, b: 0.2570893965031118d, c: 0.12305439368226434d),
+new NpgsqlTypes.NpgsqlLine(a: 0.3394995106933839d, b: 0.9797678037792487d, c: 0.5241203425745723d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5626900253316582d, b: 0.0634738452113528d, c: 0.5154359237797266d),
+new NpgsqlTypes.NpgsqlLine(a: 0.018568190903690662d, b: 0.761278272479281d, c: 0.5323937314309016d),
+new NpgsqlTypes.NpgsqlLine(a: 0.11010311840005238d, b: 0.06302395796387927d, c: 0.4258261486120696d),
 },
 },
             new NpgsqlLinelineArray1M
@@ -374,381 +382,374 @@ new NpgsqlTypes.NpgsqlLine(a: 0.11486144385019981d, b: 0.2570893965031118d, c: 0
     Value = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.7486352742543062d, b: 0.19003476752254678d, c: 0.504062767559317d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9290340257911988d, b: 0.8683991282484376d, c: 0.834832786443788d),
-new NpgsqlTypes.NpgsqlLine(a: 0.053798937631319044d, b: 0.2787793690453395d, c: 0.39626090077925735d),
-new NpgsqlTypes.NpgsqlLine(a: 0.3171178047001245d, b: 0.3279536528718464d, c: 0.43037505222950134d),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlLinelineArray1M
-{
-    Id = 93,
-    Value = 
-new NpgsqlTypes.NpgsqlLine[4]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.8742123767412201d, b: 0.7454449461640429d, c: 0.34176138880748586d),
-new NpgsqlTypes.NpgsqlLine(a: 0.4955146324209546d, b: 0.1662841942862907d, c: 0.7863149132958562d),
-new NpgsqlTypes.NpgsqlLine(a: 0.4259539751603606d, b: 0.40300317142531006d, c: 0.9578971818693816d),
-new NpgsqlTypes.NpgsqlLine(a: 0.32184499278491174d, b: 0.3045993445020103d, c: 0.14675445822272803d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9598395332735696d, b: 0.8223610015840128d, c: 0.06802232532834007d),
+new NpgsqlTypes.NpgsqlLine(a: 0.12830270719927628d, b: 0.7863067210231013d, c: 0.5322449442005339d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8188359266030499d, b: 0.6651682729019605d, c: 0.7183419472373989d),
+new NpgsqlTypes.NpgsqlLine(a: 0.016478207561757885d, b: 0.35087903748575666d, c: 0.7127816698695846d),
 },
     ModelInner = new NpgsqlLinelineArray1MI
 {
-    Id = 34,
+    Id = 47,
     Value = 
+new NpgsqlTypes.NpgsqlLine[3]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.2415322928261162d, b: 0.24396594676676342d, c: 0.33029314455147085d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8861790317430864d, b: 0.9560903231123574d, c: 0.07319230706429702d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9056678933606814d, b: 0.13563807749486012d, c: 0.32285910737758117d),
+},
+    NullableValue = null,
+},
+    NullableValue = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.24075324381296714d, b: 0.7453994587995089d, c: 0.9013114211823863d),
-new NpgsqlTypes.NpgsqlLine(a: 0.3652091619401062d, b: 0.7264369326421285d, c: 0.40026697005721146d),
-new NpgsqlTypes.NpgsqlLine(a: 0.3263579245689735d, b: 0.24428644388200338d, c: 0.9779815532818864d),
-new NpgsqlTypes.NpgsqlLine(a: 0.4855102699624938d, b: 0.3570162991776038d, c: 0.7764671258292722d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7392070621254255d, b: 0.08514784182153112d, c: 0.25230347776213446d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8474465838101137d, b: 0.5319932271073219d, c: 0.4074407365466295d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8494315689195733d, b: 0.6946313808073095d, c: 0.6539878501699565d),
+new NpgsqlTypes.NpgsqlLine(a: 0.034390099837136257d, b: 0.17444280711741966d, c: 0.39762540071649266d),
 },
-    NullableValue = null,
-},
-    NullableValue = null,
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 102,
+    Id = 91,
     Value = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.06360928098359597d, b: 0.668074866353519d, c: 0.21712875651799257d),
-new NpgsqlTypes.NpgsqlLine(a: 0.28137000599280815d, b: 0.3165425190811708d, c: 0.28101585765015935d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8266783866155902d, b: 0.6099510666867435d, c: 0.8531747901298298d),
-new NpgsqlTypes.NpgsqlLine(a: 0.10632208554400102d, b: 0.7707692450105008d, c: 0.45641856792543456d),
+new NpgsqlTypes.NpgsqlLine(a: 0.910939405024259d, b: 0.8503480473630441d, c: 0.5455476508827267d),
+new NpgsqlTypes.NpgsqlLine(a: 0.4080603488253022d, b: 0.23005877372140493d, c: 0.6558356150155602d),
+new NpgsqlTypes.NpgsqlLine(a: 0.2662749404206176d, b: 0.43835539845202154d, c: 0.8328676497825674d),
+new NpgsqlTypes.NpgsqlLine(a: 0.27028442190606694d, b: 0.8779154984634012d, c: 0.2838432737785602d),
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[3]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.23269841862554252d, b: 0.4409120759701646d, c: 0.5925387642172576d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5650178563321977d, b: 0.25887503530621436d, c: 0.8788406494035338d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8075142447178142d, b: 0.9130032937231113d, c: 0.6099950150054924d),
+},
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 105,
+    Id = 100,
     Value = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.2915983437751124d, b: 0.38929846133674084d, c: 0.33088497585258214d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9462733321243834d, b: 0.799663743984983d, c: 0.02422555019636785d),
-new NpgsqlTypes.NpgsqlLine(a: 0.17763612158603992d, b: 0.5486924711844021d, c: 0.8314917385060339d),
-new NpgsqlTypes.NpgsqlLine(a: 0.004466238897971597d, b: 0.8955432112038512d, c: 0.580955470356308d),
+new NpgsqlTypes.NpgsqlLine(a: 0.4472001676146127d, b: 0.7438378105640603d, c: 0.655310296601477d),
+new NpgsqlTypes.NpgsqlLine(a: 0.38735029382263453d, b: 0.913748317591077d, c: 0.7088513480302607d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6005125264509314d, b: 0.5359259289245484d, c: 0.05614173177496329d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6459856745410179d, b: 0.5486328007977976d, c: 0.32642930287210603d),
 },
     ModelInner = new NpgsqlLinelineArray1MI
 {
-    Id = 36,
+    Id = 49,
     Value = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.2831083372872616d, b: 0.3761974819498304d, c: 0.047291161666033865d),
-new NpgsqlTypes.NpgsqlLine(a: 0.6928537423344224d, b: 0.6231966996872502d, c: 0.26282989703993964d),
-new NpgsqlTypes.NpgsqlLine(a: 0.4064610336915785d, b: 0.40279829024425395d, c: 0.9248658292901885d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8790808170847327d, b: 0.7674535249144522d, c: 0.3480562606657668d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8399281594750982d, b: 0.9138219309152058d, c: 0.1854447203456593d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5169315852312625d, b: 0.35586046517746206d, c: 0.54367132509006d),
+new NpgsqlTypes.NpgsqlLine(a: 0.17146934805585934d, b: 0.9597136210353977d, c: 0.44510244855936876d),
+new NpgsqlTypes.NpgsqlLine(a: 0.4222675052163112d, b: 0.04789830902041359d, c: 0.045292544153369474d),
 },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.5845938641434265d, b: 0.7880390741030004d, c: 0.18398925444429748d),
-new NpgsqlTypes.NpgsqlLine(a: 0.3088003615493964d, b: 0.8670253202827508d, c: 0.5472431950495096d),
-new NpgsqlTypes.NpgsqlLine(a: 0.37010785374213295d, b: 0.6422472317076691d, c: 0.21791256831771932d),
+    NullableValue = null,
 },
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.7576276158626449d, b: 0.06440378549825565d, c: 0.23261592403802445d),
-new NpgsqlTypes.NpgsqlLine(a: 0.010799682519600506d, b: 0.19991425169084365d, c: 0.7926250428703169d),
-new NpgsqlTypes.NpgsqlLine(a: 0.6873349057257594d, b: 0.3077083875133175d, c: 0.4011164366883265d),
-},
+    NullableValue = null,
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 111,
+    Id = 106,
     Value = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.274057549011658d, b: 0.6765492312889002d, c: 0.22821932688759983d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7519958867938824d, b: 0.5220294934266224d, c: 0.4683614035334128d),
-new NpgsqlTypes.NpgsqlLine(a: 0.897254105819813d, b: 0.30888114682126167d, c: 0.8197475429456442d),
-new NpgsqlTypes.NpgsqlLine(a: 0.3877993554477315d, b: 0.8621301658753625d, c: 0.12933783450196756d),
+new NpgsqlTypes.NpgsqlLine(a: 0.11088169040559914d, b: 0.7034341892164061d, c: 0.7022645558650498d),
+new NpgsqlTypes.NpgsqlLine(a: 0.06536962409434222d, b: 0.6872381568655912d, c: 0.6947402622020376d),
+new NpgsqlTypes.NpgsqlLine(a: 0.06092786311605991d, b: 0.44830610117264147d, c: 0.11763856557311181d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9920677999243943d, b: 0.9920097896997716d, c: 0.5807660064585064d),
 },
     ModelInner = null,
     NullableValue = null,
+},
+            new NpgsqlLinelineArray1M
+{
+    Id = 108,
+    Value = 
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.5396894491231056d, b: 0.288761969799444d, c: 0.786015297881979d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7786121364918481d, b: 0.4653096139041315d, c: 0.7188556490392914d),
+new NpgsqlTypes.NpgsqlLine(a: 0.10961783248630608d, b: 0.6479435146374951d, c: 0.17872204727211338d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7432527612939801d, b: 0.7141468279099863d, c: 0.668152713712314d),
+},
+    ModelInner = new NpgsqlLinelineArray1MI
+{
+    Id = 54,
+    Value = 
+new NpgsqlTypes.NpgsqlLine[3]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.17965988317765313d, b: 0.011839694049724847d, c: 0.3216105644880942d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7363108779661915d, b: 0.4073255651361457d, c: 0.39201806856198373d),
+new NpgsqlTypes.NpgsqlLine(a: 0.040560077478887346d, b: 0.8482443116871536d, c: 0.13749969448053634d),
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.9214706456581485d, b: 0.7639956931398001d, c: 0.2856513419082566d),
+new NpgsqlTypes.NpgsqlLine(a: 0.43355068258029916d, b: 0.04466305996438924d, c: 0.017500303078834212d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8330266502027551d, b: 0.6889830976170953d, c: 0.5046065904704751d),
+new NpgsqlTypes.NpgsqlLine(a: 0.22698701197410776d, b: 0.18560759657922465d, c: 0.6006105430970615d),
+},
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.46794335397509224d, b: 0.44138119344250504d, c: 0.6028233745237942d),
+new NpgsqlTypes.NpgsqlLine(a: 0.17110581000275216d, b: 0.8546405196310065d, c: 0.13825348881462207d),
+new NpgsqlTypes.NpgsqlLine(a: 0.1817739600842021d, b: 0.37808352830214054d, c: 0.1598724591316475d),
+new NpgsqlTypes.NpgsqlLine(a: 0.755582971729305d, b: 0.5241342277993838d, c: 0.5920062418277521d),
+},
 },
             new NpgsqlLinelineArray1M
 {
     Id = 114,
     Value = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.7324759262122564d, b: 0.9448226934443881d, c: 0.071761406116708d),
-new NpgsqlTypes.NpgsqlLine(a: 0.4441061543818434d, b: 0.23763712069908527d, c: 0.35784678010905213d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7983772119686993d, b: 0.817626641485655d, c: 0.0016704239969909107d),
-},
-    ModelInner = new NpgsqlLinelineArray1MI
-{
-    Id = 39,
-    Value = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.4093931813677626d, b: 0.22844905856197406d, c: 0.18426717586094465d),
-new NpgsqlTypes.NpgsqlLine(a: 0.007127047518669105d, b: 0.24996840933736297d, c: 0.7787523243280563d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9717934198875047d, b: 0.8877245279282036d, c: 0.7930869494771148d),
-},
-    NullableValue = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.3023952785096202d, b: 0.8555208623024741d, c: 0.9965035280974702d),
-new NpgsqlTypes.NpgsqlLine(a: 0.892773202915513d, b: 0.7939776275712718d, c: 0.1998303503510479d),
-new NpgsqlTypes.NpgsqlLine(a: 0.10997558976415422d, b: 0.20130027775025716d, c: 0.6263061126885605d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5746691338813272d, b: 0.772794862901342d, c: 0.22769780302386533d),
-},
-},
-    NullableValue = null,
-},
-            new NpgsqlLinelineArray1M
-{
-    Id = 116,
-    Value = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.023247511086371464d, b: 0.007271519793043635d, c: 0.6110393239242567d),
-new NpgsqlTypes.NpgsqlLine(a: 0.20016525415119502d, b: 0.7470365513405113d, c: 0.2626394838551257d),
-new NpgsqlTypes.NpgsqlLine(a: 0.42524071896677884d, b: 0.10335803848410441d, c: 0.19445382356770247d),
+new NpgsqlTypes.NpgsqlLine(a: 0.2483594767930798d, b: 0.04246222043739467d, c: 0.9485759572237508d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9529363146623583d, b: 0.339738643125581d, c: 0.5835566478393872d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8318000291998224d, b: 0.6819040721418667d, c: 0.7122906649227216d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9517176620824557d, b: 0.004189593167267747d, c: 0.27390128682230397d),
 },
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 118,
+    Id = 122,
     Value = 
 new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.061038540904272076d, b: 0.7168681784477504d, c: 0.7625638815635334d),
-new NpgsqlTypes.NpgsqlLine(a: 0.1206154703905834d, b: 0.739604897613623d, c: 0.1475324466861908d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8403230372207487d, b: 0.9603401763407577d, c: 0.9402506296536041d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8454992566046708d, b: 0.0898483113860078d, c: 0.46067213707831656d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9249529581770296d, b: 0.544624037419762d, c: 0.31130612984076556d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6588406019898624d, b: 0.677086131721045d, c: 0.20517551465565997d),
 },
     ModelInner = new NpgsqlLinelineArray1MI
 {
-    Id = 42,
+    Id = 61,
     Value = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.18513817460506243d, b: 0.5813442292518449d, c: 0.6409313559617078d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7744786336853299d, b: 0.7568522879577092d, c: 0.35217046714216793d),
-new NpgsqlTypes.NpgsqlLine(a: 0.13492161728939667d, b: 0.015570209472063556d, c: 0.7892596364671869d),
-new NpgsqlTypes.NpgsqlLine(a: 0.3180662634067771d, b: 0.9529845877522648d, c: 0.6867467173479135d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9827328874176315d, b: 0.0008010425907269969d, c: 0.759822553934579d),
+new NpgsqlTypes.NpgsqlLine(a: 0.3459558743418233d, b: 0.12380377462835235d, c: 0.5641996111663459d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9389425559442431d, b: 0.3833238179309131d, c: 0.3929264283664108d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7297591968843339d, b: 0.6133940677230294d, c: 0.47313458947884934d),
 },
     NullableValue = null,
 },
     NullableValue = 
-new NpgsqlTypes.NpgsqlLine[3]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.6941230149187188d, b: 0.6632103106814548d, c: 0.5443472610277665d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5424952262054562d, b: 0.12370905677710908d, c: 0.3260795519566638d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5263420873265069d, b: 0.9887667899790801d, c: 0.865499892367578d),
-},
-},
-            new NpgsqlLinelineArray1M
-{
-    Id = 123,
-    Value = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.10317186335636197d, b: 0.31164528669145d, c: 0.6165826994317185d),
-new NpgsqlTypes.NpgsqlLine(a: 0.47066370873170027d, b: 0.00461715845403099d, c: 0.09030981568357233d),
-new NpgsqlTypes.NpgsqlLine(a: 0.6588368950192189d, b: 0.2850116994329531d, c: 0.15716103089926314d),
-new NpgsqlTypes.NpgsqlLine(a: 0.09190457751245984d, b: 0.14181362539123032d, c: 0.8846590309728231d),
-},
-    ModelInner = null,
-    NullableValue = 
-new NpgsqlTypes.NpgsqlLine[4]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.40891659887596765d, b: 0.5131539627808425d, c: 0.6550593194117625d),
-new NpgsqlTypes.NpgsqlLine(a: 0.24326424395655155d, b: 0.4377036440779385d, c: 0.3068132516295945d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7690976798932875d, b: 0.254162168978705d, c: 0.5248492139623214d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7712646529211225d, b: 0.5125520921763342d, c: 0.6090651255077288d),
+new NpgsqlTypes.NpgsqlLine(a: 0.02719727221324031d, b: 0.09640559497351076d, c: 0.38241821120043784d),
+new NpgsqlTypes.NpgsqlLine(a: 0.40440320157622534d, b: 0.31090764202905097d, c: 0.2116811962211731d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5336875968761744d, b: 0.7885247262437236d, c: 0.9390391583661659d),
+new NpgsqlTypes.NpgsqlLine(a: 0.919122254849809d, b: 0.6667791637261866d, c: 0.8268660715101787d),
 },
 },
             new NpgsqlLinelineArray1M
 {
     Id = 130,
     Value = 
-new NpgsqlTypes.NpgsqlLine[3]
+new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.007846149701128402d, b: 0.8016907281499581d, c: 0.8777521252396153d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8195477348714493d, b: 0.2813889942965645d, c: 0.3316770565184456d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9576763096452942d, b: 0.8816444769731597d, c: 0.5445150299784325d),
+new NpgsqlTypes.NpgsqlLine(a: 0.4364193956365221d, b: 0.6712659533477032d, c: 0.5271571974049988d),
+new NpgsqlTypes.NpgsqlLine(a: 0.27809325038500043d, b: 0.2697286533732647d, c: 0.2779765497788367d),
+new NpgsqlTypes.NpgsqlLine(a: 0.25062214526352d, b: 0.47709135953021886d, c: 0.8935214123776102d),
+new NpgsqlTypes.NpgsqlLine(a: 0.31999949601244826d, b: 0.5541255403564673d, c: 0.50982404641773d),
 },
-    ModelInner = new NpgsqlLinelineArray1MI
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlLinelineArray1M
 {
-    Id = 45,
+    Id = 133,
     Value = 
 new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.9912106135312041d, b: 0.7603273562890804d, c: 0.7853352511915549d),
-new NpgsqlTypes.NpgsqlLine(a: 0.34873298428592525d, b: 0.8925241972243256d, c: 0.2094537755035457d),
-new NpgsqlTypes.NpgsqlLine(a: 0.16623074842172725d, b: 0.9203901895448098d, c: 0.1818238553088315d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5670288729195169d, b: 0.46550214223875597d, c: 0.14335380611488902d),
+new NpgsqlTypes.NpgsqlLine(a: 0.711734257375294d, b: 0.06066478239864603d, c: 0.9052374819502954d),
+new NpgsqlTypes.NpgsqlLine(a: 0.08241308569660555d, b: 0.894549671907945d, c: 0.5929479198178172d),
 },
-    NullableValue = null,
+    ModelInner = new NpgsqlLinelineArray1MI
+{
+    Id = 69,
+    Value = 
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.9642355230531159d, b: 0.48106129083527016d, c: 0.7616120667458639d),
+new NpgsqlTypes.NpgsqlLine(a: 0.28255139943904495d, b: 0.16429212074215904d, c: 0.5511540825106924d),
+new NpgsqlTypes.NpgsqlLine(a: 0.18089492534080576d, b: 0.035140650969410214d, c: 0.8126176540334441d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8725110863358299d, b: 0.6969617326374523d, c: 0.8370567159480973d),
 },
-    NullableValue = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[3]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.9682624737346482d, b: 0.812174203719524d, c: 0.2467040615569719d),
+new NpgsqlTypes.NpgsqlLine(a: 0.07442005382734851d, b: 0.4005909062864468d, c: 0.0793011394570684d),
+new NpgsqlTypes.NpgsqlLine(a: 0.610385705864634d, b: 0.2122274249847469d, c: 0.9739650656360509d),
+},
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.7175060227938672d, b: 0.8515183043439335d, c: 0.6255976748900768d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7346411881270064d, b: 0.8641106667354187d, c: 0.41698990725270135d),
+new NpgsqlTypes.NpgsqlLine(a: 0.06575369132486075d, b: 0.2873950285121063d, c: 0.7861460596591114d),
+new NpgsqlTypes.NpgsqlLine(a: 0.2600957974026826d, b: 0.21304028847715184d, c: 0.39033084327441436d),
+},
 },
             new NpgsqlLinelineArray1M
 {
     Id = 135,
     Value = 
-new NpgsqlTypes.NpgsqlLine[4]
+new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.5961357642383137d, b: 0.4968022364537009d, c: 0.6562185293573495d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7007229795034658d, b: 0.19793032066295413d, c: 0.898829959625248d),
-new NpgsqlTypes.NpgsqlLine(a: 0.04372924217177232d, b: 0.9567843692424782d, c: 0.445898504253059d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8132070699821532d, b: 0.5817040658584637d, c: 0.7725077768742603d),
+new NpgsqlTypes.NpgsqlLine(a: 0.30941147233035804d, b: 0.8588963102959805d, c: 0.4872785095124714d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5040324995121587d, b: 0.7553884573488464d, c: 0.5586812373148542d),
+new NpgsqlTypes.NpgsqlLine(a: 0.3732623841951146d, b: 0.8495812936630456d, c: 0.5437518128951385d),
 },
     ModelInner = null,
     NullableValue = 
 new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.003952498173376062d, b: 0.523121736831529d, c: 0.6346264954644488d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5851347952628058d, b: 0.5475580037737305d, c: 0.06275327295916744d),
-new NpgsqlTypes.NpgsqlLine(a: 0.16642949674029328d, b: 0.5121105598802986d, c: 0.577642247164822d),
+new NpgsqlTypes.NpgsqlLine(a: 0.6540055297200417d, b: 0.27201297949348224d, c: 0.26200780463375606d),
+new NpgsqlTypes.NpgsqlLine(a: 0.17417180353635642d, b: 0.5551620559441894d, c: 0.009845162533531293d),
+new NpgsqlTypes.NpgsqlLine(a: 0.27277282044781004d, b: 0.7593947510053266d, c: 0.39352270060829475d),
 },
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 140,
+    Id = 142,
     Value = 
-new NpgsqlTypes.NpgsqlLine[4]
+new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.8264204684147359d, b: 0.5888068547363788d, c: 0.49018308877567096d),
-new NpgsqlTypes.NpgsqlLine(a: 0.22680006816503617d, b: 0.22437232171882593d, c: 0.5947921137923824d),
-new NpgsqlTypes.NpgsqlLine(a: 0.04254397126944254d, b: 0.5704919980884621d, c: 0.014329893017944406d),
-new NpgsqlTypes.NpgsqlLine(a: 0.2855278702491796d, b: 0.1616720298140304d, c: 0.8829169371955667d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7561657685725661d, b: 0.39519901342297037d, c: 0.5373806707207625d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9654864614782618d, b: 0.08594808744092919d, c: 0.7169539542628809d),
+new NpgsqlTypes.NpgsqlLine(a: 0.3795412169138609d, b: 0.1413807855992546d, c: 0.6066062663430598d),
 },
     ModelInner = new NpgsqlLinelineArray1MI
 {
-    Id = 52,
+    Id = 73,
     Value = 
-new NpgsqlTypes.NpgsqlLine[4]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.5757759343568757d, b: 0.3821481895860175d, c: 0.3879574802360731d),
-new NpgsqlTypes.NpgsqlLine(a: 0.3741316791548528d, b: 0.24196570432947295d, c: 0.07487572890786742d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5759363445031084d, b: 0.5197334857812173d, c: 0.7417711192614012d),
-new NpgsqlTypes.NpgsqlLine(a: 0.6714972491945999d, b: 0.35433353347743446d, c: 0.9827423147329807d),
-},
-    NullableValue = 
 new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.5654907496220469d, b: 0.6919747475979858d, c: 0.8963795103703633d),
-new NpgsqlTypes.NpgsqlLine(a: 0.2446746865149222d, b: 0.7276134980322566d, c: 0.2690767971492003d),
-new NpgsqlTypes.NpgsqlLine(a: 0.34015179654295125d, b: 0.8157516501927863d, c: 0.40074377281403084d),
+new NpgsqlTypes.NpgsqlLine(a: 0.415346275206922d, b: 0.9346013580444518d, c: 0.5933128730379132d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5774064236163784d, b: 0.5643360858126755d, c: 0.613285606601471d),
+new NpgsqlTypes.NpgsqlLine(a: 0.04227380923341839d, b: 0.9453787195441979d, c: 0.7700707723961496d),
 },
+    NullableValue = null,
 },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlLine[4]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.39013659921893995d, b: 0.9960702463111313d, c: 0.07167250521092539d),
-new NpgsqlTypes.NpgsqlLine(a: 0.0721968123432487d, b: 0.23682313103679076d, c: 0.9590403069219745d),
-new NpgsqlTypes.NpgsqlLine(a: 0.3697233592890974d, b: 0.033442825830390044d, c: 0.8927639029661422d),
-new NpgsqlTypes.NpgsqlLine(a: 0.6200080002690214d, b: 0.14271196335459913d, c: 0.888610968782483d),
-},
+    NullableValue = null,
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 147,
+    Id = 143,
     Value = 
-new NpgsqlTypes.NpgsqlLine[4]
+new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.08502892906319703d, b: 0.5490193735233685d, c: 0.067644937662249d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9524306533168114d, b: 0.09222933365825936d, c: 0.6594351484184465d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8476962301727549d, b: 0.03120689401614818d, c: 0.5733522834864987d),
-new NpgsqlTypes.NpgsqlLine(a: 0.6753717838495492d, b: 0.6339361518889227d, c: 0.7972877619168982d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8669665759226045d, b: 0.1284351902891685d, c: 0.5150308941415239d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9575571984218734d, b: 0.4420569893852393d, c: 0.04008188945451452d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9829518371629768d, b: 0.05652197820727012d, c: 0.23473309557174238d),
 },
     ModelInner = null,
     NullableValue = 
-new NpgsqlTypes.NpgsqlLine[4]
+new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.6025100176385589d, b: 0.19284564808916438d, c: 0.6015985631407473d),
-new NpgsqlTypes.NpgsqlLine(a: 0.46588061299352734d, b: 0.6494786066675621d, c: 0.3735265534662233d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7125682799659124d, b: 0.8253895288063942d, c: 0.8087037458944674d),
-new NpgsqlTypes.NpgsqlLine(a: 0.6204775833784675d, b: 0.6273780633588097d, c: 0.9639385212787964d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7116508036527852d, b: 0.8975490992586191d, c: 0.5004799933162913d),
+new NpgsqlTypes.NpgsqlLine(a: 0.09008018940488005d, b: 0.6182754355409882d, c: 0.17410554314000026d),
+new NpgsqlTypes.NpgsqlLine(a: 0.20818962843425604d, b: 0.40262536529795845d, c: 0.2684567850419687d),
 },
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 148,
+    Id = 146,
     Value = 
-new NpgsqlTypes.NpgsqlLine[4]
+new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.4642460631237928d, b: 0.8995201324093628d, c: 0.9015715911982033d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5917435382196156d, b: 0.9752484107456248d, c: 0.848480315870943d),
-new NpgsqlTypes.NpgsqlLine(a: 0.053783314390640546d, b: 0.7899969364329509d, c: 0.04621844451389334d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8072014105695193d, b: 0.09297442194570849d, c: 0.4824579822423939d),
+new NpgsqlTypes.NpgsqlLine(a: 0.022775204990137632d, b: 0.47252975554903587d, c: 0.5590122209349456d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7275814740748243d, b: 0.3371801211330445d, c: 0.9063604498035879d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5518413615108586d, b: 0.3878903346860191d, c: 0.656836207710925d),
 },
     ModelInner = new NpgsqlLinelineArray1MI
 {
-    Id = 56,
+    Id = 82,
     Value = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.43666708451974734d, b: 0.44272002259226007d, c: 0.22645877323057806d),
-new NpgsqlTypes.NpgsqlLine(a: 0.30500388856298233d, b: 0.5037553881294338d, c: 0.09402440678664936d),
-new NpgsqlTypes.NpgsqlLine(a: 0.21299975136627658d, b: 0.9635365575892385d, c: 0.4806573360376686d),
-new NpgsqlTypes.NpgsqlLine(a: 0.1566892233382d, b: 0.9417595184665243d, c: 0.4266065091447906d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9148384748106044d, b: 0.5474084080528964d, c: 0.25160260142909874d),
+new NpgsqlTypes.NpgsqlLine(a: 0.3197027457441345d, b: 0.9591225858385324d, c: 0.667782971303624d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8187146237628845d, b: 0.6612765569755d, c: 0.1440135449596771d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7889465527884458d, b: 0.0068847043164567134d, c: 0.480831883847899d),
 },
     NullableValue = 
-new NpgsqlTypes.NpgsqlLine[3]
+new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.7187268633187164d, b: 0.1313694731245021d, c: 0.25748720515789103d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8979156895520606d, b: 0.26375770067638027d, c: 0.5774787323923358d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7539748300629086d, b: 0.7558560240123829d, c: 0.35036013105607366d),
+new NpgsqlTypes.NpgsqlLine(a: 0.06807320903409175d, b: 0.34290395537763785d, c: 0.9124823819701655d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7441218511330832d, b: 0.4792238974034463d, c: 0.4308804863814405d),
+new NpgsqlTypes.NpgsqlLine(a: 0.03848317216799124d, b: 0.7750514907849687d, c: 0.341084125507763d),
+new NpgsqlTypes.NpgsqlLine(a: 0.3505804426567509d, b: 0.944572098185963d, c: 0.537874652545338d),
 },
 },
     NullableValue = null,
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 154,
+    Id = 153,
     Value = 
-new NpgsqlTypes.NpgsqlLine[3]
+new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.009658523573148114d, b: 0.28094995587296623d, c: 0.3876603037228912d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8371038923401372d, b: 0.9467222465545653d, c: 0.7812049783396957d),
-new NpgsqlTypes.NpgsqlLine(a: 0.942144179930908d, b: 0.2950528607069548d, c: 0.7749240481069433d),
+new NpgsqlTypes.NpgsqlLine(a: 0.17015291407161015d, b: 0.42938586791520916d, c: 0.36494902669106055d),
+new NpgsqlTypes.NpgsqlLine(a: 0.1391590378600105d, b: 0.2391763467840734d, c: 0.8014143380443572d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9927990059505936d, b: 0.6707927966927265d, c: 0.5991873245073748d),
+new NpgsqlTypes.NpgsqlLine(a: 0.349525258631617d, b: 0.7058193420442924d, c: 0.24807618735672232d),
 },
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlLinelineArray1M
 {
-    Id = 160,
-    Value = 
-new NpgsqlTypes.NpgsqlLine[4]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.39911680196512167d, b: 0.49149108154924404d, c: 0.3668328381869299d),
-new NpgsqlTypes.NpgsqlLine(a: 0.02092097995095643d, b: 0.7401773479813744d, c: 0.7167658485401234d),
-new NpgsqlTypes.NpgsqlLine(a: 0.2238339366901677d, b: 0.2928581199455107d, c: 0.5913851321411162d),
-new NpgsqlTypes.NpgsqlLine(a: 0.059848086900432085d, b: 0.5495095426901793d, c: 0.14499455144145568d),
-},
-    ModelInner = new NpgsqlLinelineArray1MI
-{
-    Id = 62,
+    Id = 162,
     Value = 
 new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.9930009960566456d, b: 0.6644189788989352d, c: 0.5885290451028179d),
-new NpgsqlTypes.NpgsqlLine(a: 0.4264611062344641d, b: 0.5183753510081849d, c: 0.6945920916125263d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7096585595079824d, b: 0.9961174494777797d, c: 0.3286463631257731d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9578379807906027d, b: 0.06765036821865655d, c: 0.01455694372027394d),
+new NpgsqlTypes.NpgsqlLine(a: 0.2148400150490678d, b: 0.5849298830474224d, c: 0.19247023955692755d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7906882864888175d, b: 0.876413650657427d, c: 0.37325558047816465d),
 },
-    NullableValue = null,
+    ModelInner = new NpgsqlLinelineArray1MI
+{
+    Id = 87,
+    Value = 
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.8588508977989625d, b: 0.650733683526847d, c: 0.6441483273379074d),
+new NpgsqlTypes.NpgsqlLine(a: 0.2517741958806604d, b: 0.1831612419516d, c: 0.10742175755714045d),
+new NpgsqlTypes.NpgsqlLine(a: 0.38653771022166994d, b: 0.3905067482247653d, c: 0.036081085984526085d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7443778029789723d, b: 0.2921836851266463d, c: 0.7463943632171632d),
 },
     NullableValue = 
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.782726745818714d, b: 0.9097703669573031d, c: 0.5945788076091368d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9383991858312712d, b: 0.25621674492750357d, c: 0.9164659190304624d),
-new NpgsqlTypes.NpgsqlLine(a: 0.365759813923041d, b: 0.3358944967655988d, c: 0.2900587093963396d),
-new NpgsqlTypes.NpgsqlLine(a: 0.36466641235630004d, b: 0.08734209869869591d, c: 0.3662970154998769d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9099423392735837d, b: 0.09398975834158207d, c: 0.8406835035328212d),
+new NpgsqlTypes.NpgsqlLine(a: 0.1375137498299226d, b: 0.19448430775601622d, c: 0.8977857852357363d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7401746633515903d, b: 0.31716661004575164d, c: 0.1717490610386181d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7653077794024618d, b: 0.07553835828616395d, c: 0.7885641658457322d),
+},
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.13234008414536835d, b: 0.5973367968774957d, c: 0.049113903988625696d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7494178655593631d, b: 0.6990121698591225d, c: 0.046510534541349347d),
+new NpgsqlTypes.NpgsqlLine(a: 0.887155422716831d, b: 0.8000945817603192d, c: 0.6264635156228668d),
+new NpgsqlTypes.NpgsqlLine(a: 0.23613073073747448d, b: 0.1351430201964926d, c: 0.8858546792573133d),
 },
 },
         };
@@ -1170,12 +1171,11 @@ RETURNING
                 }
                 Assert.That(nullable, Is.Not.Null);
                 Assert.That(nullable, Is.EqualTo(
-new NpgsqlTypes.NpgsqlLine[4]
+new NpgsqlTypes.NpgsqlLine[3]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.33387274067771966d, b: 0.25646353534228417d, c: 0.7568691507412332d),
-new NpgsqlTypes.NpgsqlLine(a: 0.9391064805283429d, b: 0.4496582516672789d, c: 0.5546462940993716d),
-new NpgsqlTypes.NpgsqlLine(a: 0.6200619396953089d, b: 0.0024805321450348528d, c: 0.6882160611592212d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7278657232549832d, b: 0.5851038275370422d, c: 0.08503563934401681d),
+new NpgsqlTypes.NpgsqlLine(a: 0.983049202534315d, b: 0.5361285154697061d, c: 0.19871271473608254d),
+new NpgsqlTypes.NpgsqlLine(a: 0.5049219582703102d, b: 0.34081569079934204d, c: 0.8576844421793958d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8103080962132525d, b: 0.22388083539911197d, c: 0.4650133192057646d),
 }));
                 {
                     var parameters = new NpgsqlParameter[4];
@@ -1211,7 +1211,15 @@ new NpgsqlTypes.NpgsqlLine(a: 0.7278657232549832d, b: 0.5851038275370422d, c: 0.
 
                     nullable = await ((INpgsqlLineArraylineArray)this).ScalarInsertModelDynParReturningAsync(connection, parameters);
                 }
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(
+new NpgsqlTypes.NpgsqlLine[4]
+{
+new NpgsqlTypes.NpgsqlLine(a: 0.9701647523073526d, b: 0.5035851937311939d, c: 0.09801477887991938d),
+new NpgsqlTypes.NpgsqlLine(a: 0.46905450113397906d, b: 0.45249331691409367d, c: 0.571848702862225d),
+new NpgsqlTypes.NpgsqlLine(a: 0.9391945053848348d, b: 0.14312494718762714d, c: 0.3461189294403175d),
+new NpgsqlTypes.NpgsqlLine(a: 0.2870474950602079d, b: 0.539415781773023d, c: 0.8786208069556296d),
+}));
             }
         }
 
@@ -1281,15 +1289,7 @@ RETURNING
                 nullable =  ((INpgsqlLineArraylineArray)this).ScalarInsertModelReturning(connection, _testData[8].Id, _testData[8].Value, _testData[8].NullableValue, _testData[8].ModelInner == null ? null : _testData[8].ModelInner.Id);
                 Assert.That(nullable, Is.Null);
                 nullable =  ((INpgsqlLineArraylineArray)this).ScalarInsertModelReturning(connection, _testData[9].Id, _testData[9].Value, _testData[9].NullableValue, _testData[9].ModelInner == null ? null : _testData[9].ModelInner.Id);
-                Assert.That(nullable, Is.Not.Null);
-                Assert.That(nullable, Is.EqualTo(
-new NpgsqlTypes.NpgsqlLine[4]
-{
-new NpgsqlTypes.NpgsqlLine(a: 0.4840698994379439d, b: 0.4791296780594393d, c: 0.6054753219536385d),
-new NpgsqlTypes.NpgsqlLine(a: 0.5339408599652941d, b: 0.6294851620000889d, c: 0.039321570537478645d),
-new NpgsqlTypes.NpgsqlLine(a: 0.1346333478965066d, b: 0.28544699262390494d, c: 0.23230297745529138d),
-new NpgsqlTypes.NpgsqlLine(a: 0.8611845131120149d, b: 0.9489783590201448d, c: 0.48973593311006225d),
-}));
+                Assert.That(nullable, Is.Null);
             }
         }
 
@@ -1301,17 +1301,17 @@ new NpgsqlTypes.NpgsqlLine(a: 0.8611845131120149d, b: 0.9489783590201448d, c: 0.
                 await connection.OpenAsync();
                 NpgsqlTypes.NpgsqlLine[] nullable = null;
                 nullable = await ((INpgsqlLineArraylineArray)this).ScalarInsertModelReturningAsync(connection, _testData[10].Id, _testData[10].Value, _testData[10].NullableValue, _testData[10].ModelInner == null ? null : _testData[10].ModelInner.Id);
-                Assert.That(nullable, Is.Null);
-                nullable = await ((INpgsqlLineArraylineArray)this).ScalarInsertModelReturningAsync(connection, _testData[11].Id, _testData[11].Value, _testData[11].NullableValue, _testData[11].ModelInner == null ? null : _testData[11].ModelInner.Id);
                 Assert.That(nullable, Is.Not.Null);
                 Assert.That(nullable, Is.EqualTo(
 new NpgsqlTypes.NpgsqlLine[4]
 {
-new NpgsqlTypes.NpgsqlLine(a: 0.06787018110232257d, b: 0.517832229213823d, c: 0.016575966132609143d),
-new NpgsqlTypes.NpgsqlLine(a: 0.34064968933983497d, b: 0.0736120595432791d, c: 0.9436569541063086d),
-new NpgsqlTypes.NpgsqlLine(a: 0.7161846781143746d, b: 0.5250962543863624d, c: 0.052476756359248755d),
-new NpgsqlTypes.NpgsqlLine(a: 0.2816982086488975d, b: 0.8367867261556318d, c: 0.6658315294767196d),
+new NpgsqlTypes.NpgsqlLine(a: 0.576790768068071d, b: 0.9753307498729779d, c: 0.4286388876755546d),
+new NpgsqlTypes.NpgsqlLine(a: 0.4889402801178365d, b: 0.6569066204756426d, c: 0.6819606209065061d),
+new NpgsqlTypes.NpgsqlLine(a: 0.7483233181350131d, b: 0.5302738919534661d, c: 0.34291332095473004d),
+new NpgsqlTypes.NpgsqlLine(a: 0.8670708435277613d, b: 0.2962417865410839d, c: 0.680437520789489d),
 }));
+                nullable = await ((INpgsqlLineArraylineArray)this).ScalarInsertModelReturningAsync(connection, _testData[11].Id, _testData[11].Value, _testData[11].NullableValue, _testData[11].ModelInner == null ? null : _testData[11].ModelInner.Id);
+                Assert.That(nullable, Is.Null);
             }
         }
 
@@ -1397,6 +1397,99 @@ new NpgsqlTypes.NpgsqlLine(a: 0.2816982086488975d, b: 0.8367867261556318d, c: 0.
 
 [Gedaq.Npgsql.Attributes.Query(
             query: null,
+            methodName:"MMDynQuerySelectModelDynPar",
+            queryMapTypes: [typeof(FlatNpgsqlLinelineArray1M), typeof(FlatNpgsqlLinelineArray1M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(INpgsqlLineArraylineArray)),
+Gedaq.Npgsql.Attributes.DynamicParametr()]
+        private void MMDynQuerySelectModelDynParConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelDynParTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqllinelinearray1m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+                var models1 = new List<FlatNpgsqlLinelineArray1M>();
+                var models2 = new List<FlatNpgsqlLinelineArray1M>();
+                await ((INpgsqlLineArraylineArray)this).MMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqllinelinearray1m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+                var models1 = new List<FlatNpgsqlLinelineArray1M>();
+                var models2 = new List<FlatNpgsqlLinelineArray1M>();
+                ((INpgsqlLineArraylineArray)this).MMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.Query(
+            query: null,
             methodName:"DynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatNpgsqlLinelineArray1M)],
             methodType: MethodType.Async | MethodType.Sync,
@@ -1422,7 +1515,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1430,7 +1522,6 @@ ORDER BY
 ";
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
                 var models = await ((INpgsqlLineArraylineArray)this).DynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
@@ -1452,7 +1543,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1460,8 +1550,7 @@ ORDER BY
 ";
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
-                var models =  ((INpgsqlLineArraylineArray)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                var models = ((INpgsqlLineArraylineArray)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1511,7 +1600,6 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 await connection.OpenAsync();
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
                 var models = await ((INpgsqlLineArraylineArray)this).SelectModelDynParAsync(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
@@ -1529,12 +1617,104 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 await connection.OpenAsync();
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
-                var models =  ((INpgsqlLineArraylineArray)this).SelectModelDynPar(connection, [parametr1]);
+                var models = ((INpgsqlLineArraylineArray)this).SelectModelDynPar(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
                     NpgsqlLinelineArray1M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.Query(
+            query: null,
+            methodName:"MMDynQuerySelectModel",
+            queryMapTypes: [typeof(FlatNpgsqlLinelineArray1M), typeof(FlatNpgsqlLinelineArray1M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(INpgsqlLineArraylineArray)),
+Gedaq.Npgsql.Attributes.Parametr(
+            parametrType: typeof(System.Int32),
+            position: 1,
+            methodParametrName: "id",
+            dbType: (NpgsqlTypes.NpgsqlDbType)(9))]
+        private void MMDynQuerySelectModelConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqllinelinearray1m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatNpgsqlLinelineArray1M>();
+                var models2 = new List<FlatNpgsqlLinelineArray1M>();
+                await ((INpgsqlLineArraylineArray)this).MMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqllinelinearray1m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatNpgsqlLinelineArray1M>();
+                var models2 = new List<FlatNpgsqlLinelineArray1M>();
+                ((INpgsqlLineArraylineArray)this).MMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -1570,7 +1750,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1597,13 +1776,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE 
     m.id > $1
 ORDER BY
     m.id ASC
 ";
-                var models =  ((INpgsqlLineArraylineArray)this).DynQuerySelectModel(connection,  query, 0);
+                var models = ((INpgsqlLineArraylineArray)this).DynQuerySelectModel(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1670,11 +1848,107 @@ Gedaq.Npgsql.Attributes.Parametr(
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((INpgsqlLineArraylineArray)this).SelectModel(connection, 0);
+                var models = ((INpgsqlLineArraylineArray)this).SelectModel(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
                     NpgsqlLinelineArray1M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: null,
+            methodName:"DbConnectionMMDynQuerySelectModelDynPar",
+            queryMapTypes: [typeof(FlatNpgsqlLinelineArray1M), typeof(FlatNpgsqlLinelineArray1M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(INpgsqlLineArraylineArray)),
+Gedaq.DbConnection.Attributes.DynamicParametr()]
+        private void DbConnectionMMDynQuerySelectModelDynParConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqllinelinearray1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatNpgsqlLinelineArray1M>();
+                var models2 = new List<FlatNpgsqlLinelineArray1M>();
+                await((INpgsqlLineArraylineArray)this).DbConnectionMMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqllinelinearray1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatNpgsqlLinelineArray1M>();
+                var models2 = new List<FlatNpgsqlLinelineArray1M>();
+                ((INpgsqlLineArraylineArray)this).DbConnectionMMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -1721,7 +1995,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1731,8 +2004,7 @@ ORDER BY
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models = await ((INpgsqlLineArraylineArray)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
+                var models = await((INpgsqlLineArraylineArray)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1749,12 +2021,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 147;
+                parametr1.Value = 72;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 71;
+                parametr2.Value = 72;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1763,7 +2035,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1775,7 +2046,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1786,16 +2056,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(17));
+FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[13], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[14], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[15], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[16], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[17], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[18], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[19], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[20], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[9],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[10],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[11],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[12],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[13],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[14],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[15],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(19));
-FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[11], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[12], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[13], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[14], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[15], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[16], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[17], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[18], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[19], false);FlatNpgsqlLinelineArray1M.AssertModel(models[9],_testData[20], false);FlatNpgsqlLinelineArray1M.AssertModel(models[10],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[11],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[12],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[13],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[14],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[15],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[16],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[17],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[18],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(17));
+FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[13], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[14], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[15], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[16], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[17], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[18], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[19], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[20], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[9],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[10],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[11],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[12],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[13],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[14],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[15],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }
                     
@@ -1816,7 +2086,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1826,8 +2095,7 @@ ORDER BY
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models =  ((INpgsqlLineArraylineArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                var models = ((INpgsqlLineArraylineArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1844,12 +2112,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 45;
+                parametr1.Value = 100;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 38;
+                parametr2.Value = 81;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1858,7 +2126,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1870,7 +2137,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1881,16 +2147,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
-FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[6], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[7], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[8], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[9], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[10], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[11], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[12], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[13], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[14], false);FlatNpgsqlLinelineArray1M.AssertModel(models[9],_testData[15], false);FlatNpgsqlLinelineArray1M.AssertModel(models[10],_testData[16], false);FlatNpgsqlLinelineArray1M.AssertModel(models[11],_testData[17], false);FlatNpgsqlLinelineArray1M.AssertModel(models[12],_testData[18], false);FlatNpgsqlLinelineArray1M.AssertModel(models[13],_testData[19], false);FlatNpgsqlLinelineArray1M.AssertModel(models[14],_testData[20], false);FlatNpgsqlLinelineArray1M.AssertModel(models[15],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[16],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[17],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[18],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[19],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[20],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[21],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[22],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[23],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(12));
+FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[18], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[19], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[20], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[9],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[10],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[11],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
-FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[5], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[6], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[7], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[8], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[9], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[10], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[11], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[12], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[13], false);FlatNpgsqlLinelineArray1M.AssertModel(models[9],_testData[14], false);FlatNpgsqlLinelineArray1M.AssertModel(models[10],_testData[15], false);FlatNpgsqlLinelineArray1M.AssertModel(models[11],_testData[16], false);FlatNpgsqlLinelineArray1M.AssertModel(models[12],_testData[17], false);FlatNpgsqlLinelineArray1M.AssertModel(models[13],_testData[18], false);FlatNpgsqlLinelineArray1M.AssertModel(models[14],_testData[19], false);FlatNpgsqlLinelineArray1M.AssertModel(models[15],_testData[20], false);FlatNpgsqlLinelineArray1M.AssertModel(models[16],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[17],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[18],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[19],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[20],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[21],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[22],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[23],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[24],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(15));
+FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[15], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[16], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[17], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[18], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[19], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[20], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[9],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[10],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[11],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[12],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[13],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[14],_testData[29], false);
                         continue;
                     }
                     
@@ -1958,8 +2224,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models = await ((INpgsqlLineArraylineArray)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
+                var models = await((INpgsqlLineArraylineArray)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1976,12 +2241,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 123;
+                parametr1.Value = 142;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 54;
+                parametr2.Value = 81;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in await ((INpgsqlLineArraylineArray)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
@@ -1989,16 +2254,16 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(7));
-NpgsqlLinelineArray1M.AssertModel(models[0],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+NpgsqlLinelineArray1M.AssertModel(models[0],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
-NpgsqlLinelineArray1M.AssertModel(models[0],_testData[7], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[8], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[9], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[10], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[11], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[12], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[13], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[14], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[15], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[16], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[13],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[14],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[15],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[16],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[17],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[18],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[19],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[20],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[21],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[22],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(15));
+NpgsqlLinelineArray1M.AssertModel(models[0],_testData[15], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[16], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[13],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[14],_testData[29], false);
                         continue;
                     }
                     
@@ -2017,8 +2282,7 @@ NpgsqlLinelineArray1M.AssertModel(models[0],_testData[7], false);NpgsqlLinelineA
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models =  ((INpgsqlLineArraylineArray)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
+                var models = ((INpgsqlLineArraylineArray)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2035,12 +2299,12 @@ NpgsqlLinelineArray1M.AssertModel(models[0],_testData[7], false);NpgsqlLinelineA
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 45;
+                parametr1.Value = 52;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 102;
+                parametr2.Value = 76;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in  ((INpgsqlLineArraylineArray)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
@@ -2048,20 +2312,112 @@ NpgsqlLinelineArray1M.AssertModel(models[0],_testData[7], false);NpgsqlLinelineA
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
-NpgsqlLinelineArray1M.AssertModel(models[0],_testData[6], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[7], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[8], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[9], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[10], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[11], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[12], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[13], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[14], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[15], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[16], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[13],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[14],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[15],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[16],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[17],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[18],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[19],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[20],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[21],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[22],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[23],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(21));
+NpgsqlLinelineArray1M.AssertModel(models[0],_testData[9], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[10], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[11], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[12], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[13], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[14], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[15], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[16], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[13],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[14],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[15],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[16],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[17],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[18],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[19],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[20],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
-NpgsqlLinelineArray1M.AssertModel(models[0],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(16));
+NpgsqlLinelineArray1M.AssertModel(models[0],_testData[14], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[15], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[16], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[13],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[14],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[15],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
+                }
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: null,
+            methodName:"DbConnectionMMDynQuerySelectModel",
+            queryMapTypes: [typeof(FlatNpgsqlLinelineArray1M), typeof(FlatNpgsqlLinelineArray1M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(INpgsqlLineArraylineArray)),
+Gedaq.DbConnection.Attributes.Parametr(
+            parametrType: typeof(System.Int32), 
+            parametrName: "id", 
+            methodParametrName: "id", 
+            dbType: (System.Data.DbType)(11))]
+        private void DbConnectionMMDynQuerySelectModelConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqllinelinearray1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatNpgsqlLinelineArray1M>();
+                var models2 = new List<FlatNpgsqlLinelineArray1M>();
+                await((INpgsqlLineArraylineArray)this).DbConnectionMMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqllinelinearray1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatNpgsqlLinelineArray1M>();
+                var models2 = new List<FlatNpgsqlLinelineArray1M>();
+                ((INpgsqlLineArraylineArray)this).DbConnectionMMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatNpgsqlLinelineArray1M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -2112,13 +2468,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                var models = await ((INpgsqlLineArraylineArray)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
+                var models = await((INpgsqlLineArraylineArray)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2140,7 +2495,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -2152,27 +2506,26 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((INpgsqlLineArraylineArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 45, query1, 5, query2))
+                foreach(var batchResult in await ((INpgsqlLineArraylineArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 133, query1, 114, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
-FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[6], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[7], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[8], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[9], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[10], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[11], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[12], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[13], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[14], false);FlatNpgsqlLinelineArray1M.AssertModel(models[9],_testData[15], false);FlatNpgsqlLinelineArray1M.AssertModel(models[10],_testData[16], false);FlatNpgsqlLinelineArray1M.AssertModel(models[11],_testData[17], false);FlatNpgsqlLinelineArray1M.AssertModel(models[12],_testData[18], false);FlatNpgsqlLinelineArray1M.AssertModel(models[13],_testData[19], false);FlatNpgsqlLinelineArray1M.AssertModel(models[14],_testData[20], false);FlatNpgsqlLinelineArray1M.AssertModel(models[15],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[16],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[17],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[18],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[19],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[20],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[21],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[22],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[23],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(29));
-FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[1], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[2], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[3], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[4], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[5], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[6], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[7], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[8], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[9], false);FlatNpgsqlLinelineArray1M.AssertModel(models[9],_testData[10], false);FlatNpgsqlLinelineArray1M.AssertModel(models[10],_testData[11], false);FlatNpgsqlLinelineArray1M.AssertModel(models[11],_testData[12], false);FlatNpgsqlLinelineArray1M.AssertModel(models[12],_testData[13], false);FlatNpgsqlLinelineArray1M.AssertModel(models[13],_testData[14], false);FlatNpgsqlLinelineArray1M.AssertModel(models[14],_testData[15], false);FlatNpgsqlLinelineArray1M.AssertModel(models[15],_testData[16], false);FlatNpgsqlLinelineArray1M.AssertModel(models[16],_testData[17], false);FlatNpgsqlLinelineArray1M.AssertModel(models[17],_testData[18], false);FlatNpgsqlLinelineArray1M.AssertModel(models[18],_testData[19], false);FlatNpgsqlLinelineArray1M.AssertModel(models[19],_testData[20], false);FlatNpgsqlLinelineArray1M.AssertModel(models[20],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[21],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[22],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[23],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[24],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[25],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[26],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[27],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[28],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(9));
+FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[29], false);
                         continue;
                     }
                     
@@ -2193,13 +2546,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                var models =  ((INpgsqlLineArraylineArray)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
+                var models = ((INpgsqlLineArraylineArray)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2221,7 +2573,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -2233,27 +2584,26 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.npgsqllinelinearray1m m
-LEFT JOIN public.npgsqllinelinearray1mi mi ON mi.id = m.npgsqllinelinearray1mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((INpgsqlLineArraylineArray)this).DbConnectionDynQuerySelectModelBatch(connection, 81, query1, 116, query2))
+                foreach(var batchResult in  ((INpgsqlLineArraylineArray)this).DbConnectionDynQuerySelectModelBatch(connection, 133, query1, 91, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(17));
-FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[13], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[14], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[15], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[16], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[17], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[18], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[19], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[20], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[9],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[10],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[11],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[12],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[13],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[14],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[15],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[16],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
-FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(13));
+FlatNpgsqlLinelineArray1M.AssertModel(models[0],_testData[17], false);FlatNpgsqlLinelineArray1M.AssertModel(models[1],_testData[18], false);FlatNpgsqlLinelineArray1M.AssertModel(models[2],_testData[19], false);FlatNpgsqlLinelineArray1M.AssertModel(models[3],_testData[20], false);FlatNpgsqlLinelineArray1M.AssertModel(models[4],_testData[21], false);FlatNpgsqlLinelineArray1M.AssertModel(models[5],_testData[22], false);FlatNpgsqlLinelineArray1M.AssertModel(models[6],_testData[23], false);FlatNpgsqlLinelineArray1M.AssertModel(models[7],_testData[24], false);FlatNpgsqlLinelineArray1M.AssertModel(models[8],_testData[25], false);FlatNpgsqlLinelineArray1M.AssertModel(models[9],_testData[26], false);FlatNpgsqlLinelineArray1M.AssertModel(models[10],_testData[27], false);FlatNpgsqlLinelineArray1M.AssertModel(models[11],_testData[28], false);FlatNpgsqlLinelineArray1M.AssertModel(models[12],_testData[29], false);
                         continue;
                     }
                     
@@ -2321,7 +2671,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                var models = await ((INpgsqlLineArraylineArray)this).DbConnectionSelectModelAsync(connection, 0);
+                var models = await((INpgsqlLineArraylineArray)this).DbConnectionSelectModelAsync(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2337,21 +2687,21 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((INpgsqlLineArraylineArray)this).DbConnectionSelectModelBatchAsync(connection, 29, 123))
+                foreach(var batchResult in await ((INpgsqlLineArraylineArray)this).DbConnectionSelectModelBatchAsync(connection, 72, 40))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(26));
-NpgsqlLinelineArray1M.AssertModel(models[0],_testData[4], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[5], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[6], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[7], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[8], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[9], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[10], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[11], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[12], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[13], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[14], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[15], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[16], false);NpgsqlLinelineArray1M.AssertModel(models[13],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[14],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[15],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[16],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[17],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[18],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[19],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[20],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[21],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[22],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[23],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[24],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[25],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(17));
+NpgsqlLinelineArray1M.AssertModel(models[0],_testData[13], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[14], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[15], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[16], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[13],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[14],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[15],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(7));
-NpgsqlLinelineArray1M.AssertModel(models[0],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(23));
+NpgsqlLinelineArray1M.AssertModel(models[0],_testData[7], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[8], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[9], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[10], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[11], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[12], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[13], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[14], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[15], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[16], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[13],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[14],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[15],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[16],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[17],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[18],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[19],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[20],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[21],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[22],_testData[29], false);
                         continue;
                     }
                     
@@ -2366,7 +2716,7 @@ NpgsqlLinelineArray1M.AssertModel(models[0],_testData[23], false);NpgsqlLineline
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((INpgsqlLineArraylineArray)this).DbConnectionSelectModel(connection, 0);
+                var models = ((INpgsqlLineArraylineArray)this).DbConnectionSelectModel(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2382,21 +2732,21 @@ NpgsqlLinelineArray1M.AssertModel(models[0],_testData[23], false);NpgsqlLineline
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((INpgsqlLineArraylineArray)this).DbConnectionSelectModelBatch(connection, 93, 102))
+                foreach(var batchResult in  ((INpgsqlLineArraylineArray)this).DbConnectionSelectModelBatch(connection, 91, 81))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
-NpgsqlLinelineArray1M.AssertModel(models[0],_testData[16], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[13],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(13));
+NpgsqlLinelineArray1M.AssertModel(models[0],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
-NpgsqlLinelineArray1M.AssertModel(models[0],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(15));
+NpgsqlLinelineArray1M.AssertModel(models[0],_testData[15], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[16], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[13],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[14],_testData[29], false);
                         continue;
                     }
                     
@@ -2412,11 +2762,11 @@ NpgsqlLinelineArray1M.AssertModel(models[0],_testData[17], false);NpgsqlLineline
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((INpgsqlLineArraylineArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((INpgsqlLineArraylineArray)this).SetDbConnectionSelectModelParametrs(cmd, 59);
+                ((INpgsqlLineArraylineArray)this).SetDbConnectionSelectModelParametrs(cmd, 52);
                 var models = await ((INpgsqlLineArraylineArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(22));
-NpgsqlLinelineArray1M.AssertModel(models[0],_testData[8], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[9], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[10], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[11], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[12], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[13], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[14], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[15], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[16], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[13],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[14],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[15],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[16],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[17],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[18],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[19],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[20],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[21],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(21));
+NpgsqlLinelineArray1M.AssertModel(models[0],_testData[9], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[10], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[11], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[12], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[13], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[14], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[15], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[16], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[17], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[12],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[13],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[14],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[15],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[16],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[17],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[18],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[19],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[20],_testData[29], false);
             }
         }
 
@@ -2427,11 +2777,11 @@ NpgsqlLinelineArray1M.AssertModel(models[0],_testData[8], false);NpgsqlLinelineA
             {
                 await connection.OpenAsync();
                  using var cmd =  ((INpgsqlLineArraylineArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((INpgsqlLineArraylineArray)this).SetDbConnectionSelectModelParametrs(cmd, 105);
+                ((INpgsqlLineArraylineArray)this).SetDbConnectionSelectModelParametrs(cmd, 106);
                 var models =  ((INpgsqlLineArraylineArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(12));
-NpgsqlLinelineArray1M.AssertModel(models[0],_testData[18], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[11],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(11));
+NpgsqlLinelineArray1M.AssertModel(models[0],_testData[19], false);NpgsqlLinelineArray1M.AssertModel(models[1],_testData[20], false);NpgsqlLinelineArray1M.AssertModel(models[2],_testData[21], false);NpgsqlLinelineArray1M.AssertModel(models[3],_testData[22], false);NpgsqlLinelineArray1M.AssertModel(models[4],_testData[23], false);NpgsqlLinelineArray1M.AssertModel(models[5],_testData[24], false);NpgsqlLinelineArray1M.AssertModel(models[6],_testData[25], false);NpgsqlLinelineArray1M.AssertModel(models[7],_testData[26], false);NpgsqlLinelineArray1M.AssertModel(models[8],_testData[27], false);NpgsqlLinelineArray1M.AssertModel(models[9],_testData[28], false);NpgsqlLinelineArray1M.AssertModel(models[10],_testData[29], false);
             }
         }
 

@@ -30,99 +30,119 @@ namespace Tests
         {
             new BigIntegernumericArray1M
 {
-    Id = 6,
+    Id = 2,
     Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(1735308727493607541L),
-new System.Numerics.BigInteger(1768324606559319619L),
-new System.Numerics.BigInteger(704796096736410112L),
-new System.Numerics.BigInteger(6909577407408910008L),
+new System.Numerics.BigInteger(4483449483172445044L),
+new System.Numerics.BigInteger(3800715978376360088L),
+new System.Numerics.BigInteger(8404031594501449314L),
+new System.Numerics.BigInteger(3579516916693408050L),
 },
     ModelInner = null,
     NullableValue = null,
 },
             new BigIntegernumericArray1M
 {
-    Id = 15,
+    Id = 4,
     Value = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(4223978005772770798L),
-new System.Numerics.BigInteger(2239948315336140822L),
-new System.Numerics.BigInteger(1824284719453186195L),
+new System.Numerics.BigInteger(977414769551385642L),
+new System.Numerics.BigInteger(3619278146421881372L),
+new System.Numerics.BigInteger(2688591376398355064L),
 },
     ModelInner = new BigIntegernumericArray1MI
 {
     Id = 4,
     Value = 
-new System.Numerics.BigInteger[4]
+new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(7796657125069825900L),
-new System.Numerics.BigInteger(3197594334691157832L),
-new System.Numerics.BigInteger(7864702189352945593L),
-new System.Numerics.BigInteger(4235536941239791024L),
+new System.Numerics.BigInteger(4655848560246143486L),
+new System.Numerics.BigInteger(2509940994582647386L),
+new System.Numerics.BigInteger(3961818645135015984L),
+},
+    NullableValue = null,
 },
     NullableValue = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(1996308271319528070L),
-new System.Numerics.BigInteger(7602264485486656969L),
-new System.Numerics.BigInteger(5630349955927036178L),
-new System.Numerics.BigInteger(2914331047854001961L),
+new System.Numerics.BigInteger(5440866919109523058L),
+new System.Numerics.BigInteger(6000176587741391329L),
+new System.Numerics.BigInteger(6965628905348653228L),
+new System.Numerics.BigInteger(5837014550032684371L),
 },
-},
-    NullableValue = null,
 },
             new BigIntegernumericArray1M
 {
-    Id = 19,
+    Id = 7,
     Value = 
-new System.Numerics.BigInteger[3]
+new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(7353176885231904399L),
-new System.Numerics.BigInteger(1350270447086583831L),
-new System.Numerics.BigInteger(6186794509993593150L),
+new System.Numerics.BigInteger(7279605012502904823L),
+new System.Numerics.BigInteger(3865144043826493900L),
+new System.Numerics.BigInteger(7264455405287267700L),
+new System.Numerics.BigInteger(2892742350600298171L),
 },
     ModelInner = null,
     NullableValue = 
-new System.Numerics.BigInteger[3]
+new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(7526936579101171220L),
-new System.Numerics.BigInteger(5683462992687423255L),
-new System.Numerics.BigInteger(5518661418183376543L),
+new System.Numerics.BigInteger(9221284859285553570L),
+new System.Numerics.BigInteger(3811400961564492123L),
+new System.Numerics.BigInteger(8816690819399105187L),
+new System.Numerics.BigInteger(7244736440446128430L),
 },
 },
             new BigIntegernumericArray1M
 {
-    Id = 23,
+    Id = 14,
     Value = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(3204601444879314377L),
-new System.Numerics.BigInteger(8547065062594208966L),
-new System.Numerics.BigInteger(1442897798734620066L),
+new System.Numerics.BigInteger(2344047896928843502L),
+new System.Numerics.BigInteger(3387228640171709552L),
+new System.Numerics.BigInteger(1240019332121853104L),
 },
     ModelInner = new BigIntegernumericArray1MI
 {
-    Id = 6,
+    Id = 10,
     Value = 
-new System.Numerics.BigInteger[4]
+new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(8741931432590565946L),
-new System.Numerics.BigInteger(1987986467593789116L),
-new System.Numerics.BigInteger(798368230938556299L),
-new System.Numerics.BigInteger(1083894343431447535L),
+new System.Numerics.BigInteger(1348065782335745243L),
+new System.Numerics.BigInteger(607598795549401418L),
+new System.Numerics.BigInteger(9214074786929032938L),
+},
+    NullableValue = null,
 },
     NullableValue = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(7863535157188108119L),
-new System.Numerics.BigInteger(5601717967261283847L),
-new System.Numerics.BigInteger(8227112479008044007L),
+new System.Numerics.BigInteger(2054623288141599471L),
+new System.Numerics.BigInteger(7446764410976681657L),
+new System.Numerics.BigInteger(3309468286608195247L),
 },
 },
-    NullableValue = null,
+            new BigIntegernumericArray1M
+{
+    Id = 22,
+    Value = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(6342693973524050036L),
+new System.Numerics.BigInteger(98501235515094377L),
+new System.Numerics.BigInteger(8338620423183837592L),
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Numerics.BigInteger[4]
+{
+new System.Numerics.BigInteger(8069055232845799128L),
+new System.Numerics.BigInteger(4717881194377633929L),
+new System.Numerics.BigInteger(4473794665756336737L),
+new System.Numerics.BigInteger(7528145600400822070L),
+},
 },
             new BigIntegernumericArray1M
 {
@@ -130,224 +150,146 @@ new System.Numerics.BigInteger(8227112479008044007L),
     Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(2167705291612385652L),
-new System.Numerics.BigInteger(4729419036246036120L),
-new System.Numerics.BigInteger(7020318573283835523L),
-new System.Numerics.BigInteger(8973540080024139499L),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new BigIntegernumericArray1M
-{
-    Id = 30,
-    Value = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(1738441304222798422L),
-new System.Numerics.BigInteger(728712583843364095L),
-new System.Numerics.BigInteger(7932515645789688909L),
+new System.Numerics.BigInteger(8435346806965423190L),
+new System.Numerics.BigInteger(729583760540710322L),
+new System.Numerics.BigInteger(6909638681841737286L),
+new System.Numerics.BigInteger(2458664100502722523L),
 },
     ModelInner = new BigIntegernumericArray1MI
 {
-    Id = 7,
+    Id = 16,
     Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(230921523073580821L),
-new System.Numerics.BigInteger(3573129486900424090L),
-new System.Numerics.BigInteger(6805370885874851586L),
-new System.Numerics.BigInteger(5971418850807299517L),
+new System.Numerics.BigInteger(1028343627771096270L),
+new System.Numerics.BigInteger(3032735235675768391L),
+new System.Numerics.BigInteger(8036388739525731377L),
+new System.Numerics.BigInteger(3627545521459574705L),
 },
-    NullableValue = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(5580821819010650436L),
-new System.Numerics.BigInteger(1068792136758182688L),
-new System.Numerics.BigInteger(6804742949163296899L),
+    NullableValue = null,
 },
-},
-    NullableValue = 
-new System.Numerics.BigInteger[4]
-{
-new System.Numerics.BigInteger(7853002028518343722L),
-new System.Numerics.BigInteger(8122215832077008128L),
-new System.Numerics.BigInteger(4073729330083469355L),
-new System.Numerics.BigInteger(7519229629853128279L),
-},
+    NullableValue = null,
 },
             new BigIntegernumericArray1M
 {
-    Id = 37,
+    Id = 38,
     Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(1955040311216762429L),
-new System.Numerics.BigInteger(4489663921021418208L),
-new System.Numerics.BigInteger(1909953942204475472L),
-new System.Numerics.BigInteger(1040897826638954004L),
+new System.Numerics.BigInteger(3015732863248218533L),
+new System.Numerics.BigInteger(6993685222091862996L),
+new System.Numerics.BigInteger(1005140904439880059L),
+new System.Numerics.BigInteger(6199385113973737730L),
 },
     ModelInner = null,
-    NullableValue = 
-new System.Numerics.BigInteger[4]
-{
-new System.Numerics.BigInteger(521718099388669571L),
-new System.Numerics.BigInteger(2906190638750290962L),
-new System.Numerics.BigInteger(6411101080633140233L),
-new System.Numerics.BigInteger(4328273557130272549L),
-},
+    NullableValue = null,
 },
             new BigIntegernumericArray1M
 {
-    Id = 44,
+    Id = 47,
     Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(2945975639219905808L),
-new System.Numerics.BigInteger(1369356349290340065L),
-new System.Numerics.BigInteger(9048593121649756628L),
-new System.Numerics.BigInteger(2804071976360634165L),
+new System.Numerics.BigInteger(4675197375320058239L),
+new System.Numerics.BigInteger(6427091754438038349L),
+new System.Numerics.BigInteger(3226517024721790838L),
+new System.Numerics.BigInteger(4670699716626810523L),
 },
     ModelInner = new BigIntegernumericArray1MI
 {
-    Id = 14,
+    Id = 24,
     Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(493265112339114401L),
-new System.Numerics.BigInteger(7155338571741841641L),
-new System.Numerics.BigInteger(8980878913669553905L),
-new System.Numerics.BigInteger(2738006696086326005L),
+new System.Numerics.BigInteger(4850591510574192144L),
+new System.Numerics.BigInteger(2375956601111953411L),
+new System.Numerics.BigInteger(992405440554552736L),
+new System.Numerics.BigInteger(5192406301085141623L),
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(6687168573323213815L),
+new System.Numerics.BigInteger(5579256055275833987L),
+new System.Numerics.BigInteger(7293032891715827838L),
 },
-    NullableValue = null,
+},
+    NullableValue = 
+new System.Numerics.BigInteger[4]
+{
+new System.Numerics.BigInteger(6860486859014848338L),
+new System.Numerics.BigInteger(7773433447604442307L),
+new System.Numerics.BigInteger(3272169700500550870L),
+new System.Numerics.BigInteger(7830036516851763571L),
+},
 },
             new BigIntegernumericArray1M
 {
-    Id = 46,
+    Id = 51,
     Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(812997050855097731L),
-new System.Numerics.BigInteger(3401413438076391293L),
-new System.Numerics.BigInteger(3517674326217477813L),
-new System.Numerics.BigInteger(5933735761853556137L),
+new System.Numerics.BigInteger(8427841641804912801L),
+new System.Numerics.BigInteger(3426384213091215026L),
+new System.Numerics.BigInteger(8397359458611250128L),
+new System.Numerics.BigInteger(5613487188821868649L),
 },
     ModelInner = null,
     NullableValue = null,
 },
             new BigIntegernumericArray1M
 {
-    Id = 55,
+    Id = 53,
     Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(2074388779238294705L),
-new System.Numerics.BigInteger(671869588273809988L),
-new System.Numerics.BigInteger(1556739380030102544L),
-new System.Numerics.BigInteger(719691407191592511L),
+new System.Numerics.BigInteger(3933943429815015667L),
+new System.Numerics.BigInteger(686740221900694426L),
+new System.Numerics.BigInteger(5053726993903114466L),
+new System.Numerics.BigInteger(4410927711680650281L),
 },
     ModelInner = new BigIntegernumericArray1MI
 {
-    Id = 21,
+    Id = 33,
     Value = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(5057864437770095103L),
-new System.Numerics.BigInteger(1094894703059037228L),
-new System.Numerics.BigInteger(3862894363143941688L),
+new System.Numerics.BigInteger(1498102486889428489L),
+new System.Numerics.BigInteger(7285028153404077152L),
+new System.Numerics.BigInteger(886811577687551493L),
 },
-    NullableValue = 
-new System.Numerics.BigInteger[4]
-{
-new System.Numerics.BigInteger(7640108622911961723L),
-new System.Numerics.BigInteger(3264581179042787579L),
-new System.Numerics.BigInteger(5130479931947146519L),
-new System.Numerics.BigInteger(4082246121477002622L),
-},
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new BigIntegernumericArray1M
 {
-    Id = 64,
+    Id = 61,
     Value = 
-new System.Numerics.BigInteger[4]
+new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(335586653291956407L),
-new System.Numerics.BigInteger(311628282745489990L),
-new System.Numerics.BigInteger(8216833952822032576L),
-new System.Numerics.BigInteger(2307171270084608054L),
+new System.Numerics.BigInteger(7292762422966567431L),
+new System.Numerics.BigInteger(1659519636728821156L),
+new System.Numerics.BigInteger(6000523628499697119L),
 },
     ModelInner = null,
     NullableValue = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(6389649984356740066L),
-new System.Numerics.BigInteger(804763241711701232L),
-new System.Numerics.BigInteger(2105733086840038093L),
+new System.Numerics.BigInteger(3082631040221214349L),
+new System.Numerics.BigInteger(5663322317284991371L),
+new System.Numerics.BigInteger(9113124455111808605L),
 },
 },
             new BigIntegernumericArray1M
 {
-    Id = 72,
+    Id = 63,
     Value = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(8540872067840799605L),
-new System.Numerics.BigInteger(2286965319975507305L),
-new System.Numerics.BigInteger(4778757473888530837L),
-},
-    ModelInner = new BigIntegernumericArray1MI
-{
-    Id = 27,
-    Value = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(8822208390630030960L),
-new System.Numerics.BigInteger(1637263342790469554L),
-new System.Numerics.BigInteger(5560557536459306280L),
-},
-    NullableValue = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(3237943975712177929L),
-new System.Numerics.BigInteger(4635035158697925977L),
-new System.Numerics.BigInteger(8183773522364757997L),
-},
-},
-    NullableValue = 
-new System.Numerics.BigInteger[4]
-{
-new System.Numerics.BigInteger(4757196086592713255L),
-new System.Numerics.BigInteger(8533075285839682516L),
-new System.Numerics.BigInteger(285376800209065111L),
-new System.Numerics.BigInteger(8312806910390616009L),
-},
-},
-            new BigIntegernumericArray1M
-{
-    Id = 76,
-    Value = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(2975805385420411971L),
-new System.Numerics.BigInteger(6006124620124692047L),
-new System.Numerics.BigInteger(1036576162650229343L),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new BigIntegernumericArray1M
-{
-    Id = 78,
-    Value = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(2183352258394249189L),
-new System.Numerics.BigInteger(8011553833878976688L),
-new System.Numerics.BigInteger(5592113685872159719L),
+new System.Numerics.BigInteger(7819678029895161037L),
+new System.Numerics.BigInteger(4138854208677063466L),
+new System.Numerics.BigInteger(6287692231957751754L),
 },
     ModelInner = new BigIntegernumericArray1MI
 {
@@ -355,82 +297,50 @@ new System.Numerics.BigInteger(5592113685872159719L),
     Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(5717323916252756174L),
-new System.Numerics.BigInteger(3217702205775907193L),
-new System.Numerics.BigInteger(4630264616764735176L),
-new System.Numerics.BigInteger(5348196041034503746L),
+new System.Numerics.BigInteger(158447492575956472L),
+new System.Numerics.BigInteger(1353826361039284075L),
+new System.Numerics.BigInteger(796370579450297839L),
+new System.Numerics.BigInteger(1029780816717133672L),
 },
+    NullableValue = 
+new System.Numerics.BigInteger[4]
+{
+new System.Numerics.BigInteger(4767488343142328944L),
+new System.Numerics.BigInteger(3788207008990548518L),
+new System.Numerics.BigInteger(9059166421452903913L),
+new System.Numerics.BigInteger(8680132970007681590L),
+},
+},
+    NullableValue = null,
+},
+            new BigIntegernumericArray1M
+{
+    Id = 72,
+    Value = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(90647740937131373L),
+new System.Numerics.BigInteger(3162835324503550678L),
+new System.Numerics.BigInteger(7168772733364765271L),
+},
+    ModelInner = null,
     NullableValue = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(5495113857722970240L),
-new System.Numerics.BigInteger(1238748095384078799L),
-new System.Numerics.BigInteger(1502488299452828674L),
+new System.Numerics.BigInteger(8596865735486534697L),
+new System.Numerics.BigInteger(5430167424739034131L),
+new System.Numerics.BigInteger(1932282979828350991L),
 },
-},
-    NullableValue = null,
 },
             new BigIntegernumericArray1M
 {
-    Id = 79,
-    Value = 
-new System.Numerics.BigInteger[4]
-{
-new System.Numerics.BigInteger(830514274925425121L),
-new System.Numerics.BigInteger(778190749718892921L),
-new System.Numerics.BigInteger(7919277418884932035L),
-new System.Numerics.BigInteger(2627201420396502322L),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new BigIntegernumericArray1M
-{
-    Id = 85,
-    Value = 
-new System.Numerics.BigInteger[4]
-{
-new System.Numerics.BigInteger(504208437793907243L),
-new System.Numerics.BigInteger(2652016388926520221L),
-new System.Numerics.BigInteger(4055644756015043184L),
-new System.Numerics.BigInteger(1590275090617123886L),
-},
-    ModelInner = new BigIntegernumericArray1MI
-{
-    Id = 41,
+    Id = 73,
     Value = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(2075035429592531061L),
-new System.Numerics.BigInteger(9217116378061111290L),
-new System.Numerics.BigInteger(2390616412006436716L),
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new BigIntegernumericArray1M
-{
-    Id = 86,
-    Value = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(3510172864220487687L),
-new System.Numerics.BigInteger(5001700778714121912L),
-new System.Numerics.BigInteger(3263088964011603037L),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new BigIntegernumericArray1M
-{
-    Id = 95,
-    Value = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(2876226747779927334L),
-new System.Numerics.BigInteger(8520641968502594769L),
-new System.Numerics.BigInteger(3839878742796735583L),
+new System.Numerics.BigInteger(3567558678787854730L),
+new System.Numerics.BigInteger(1960243856796100837L),
+new System.Numerics.BigInteger(3338549394533056254L),
 },
     ModelInner = new BigIntegernumericArray1MI
 {
@@ -438,184 +348,189 @@ new System.Numerics.BigInteger(3839878742796735583L),
     Value = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(7639422646814083758L),
-new System.Numerics.BigInteger(5162227173590855042L),
-new System.Numerics.BigInteger(4269874321617902281L),
+new System.Numerics.BigInteger(4865599649864117502L),
+new System.Numerics.BigInteger(646194419364917938L),
+new System.Numerics.BigInteger(2197076842174123406L),
 },
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new BigIntegernumericArray1M
-{
-    Id = 104,
-    Value = 
-new System.Numerics.BigInteger[4]
-{
-new System.Numerics.BigInteger(5666712442057447022L),
-new System.Numerics.BigInteger(1266346177725236725L),
-new System.Numerics.BigInteger(1067831325612499950L),
-new System.Numerics.BigInteger(6217946344398075714L),
-},
-    ModelInner = null,
     NullableValue = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(8228362258382126311L),
-new System.Numerics.BigInteger(7243282736898653894L),
-new System.Numerics.BigInteger(71833593628977090L),
+new System.Numerics.BigInteger(6272640297688802047L),
+new System.Numerics.BigInteger(5744277266836549776L),
+new System.Numerics.BigInteger(7073896543203551447L),
+},
+},
+    NullableValue = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(2058432808523503232L),
+new System.Numerics.BigInteger(8626385235359602177L),
+new System.Numerics.BigInteger(7517181032258427468L),
 },
 },
             new BigIntegernumericArray1M
 {
-    Id = 105,
+    Id = 79,
+    Value = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(5719589098898443678L),
+new System.Numerics.BigInteger(1523676558667128308L),
+new System.Numerics.BigInteger(6002301496932428629L),
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BigIntegernumericArray1M
+{
+    Id = 83,
     Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(3806118624606220052L),
-new System.Numerics.BigInteger(7536644773437939190L),
-new System.Numerics.BigInteger(3673503546911447912L),
-new System.Numerics.BigInteger(8172948831509515675L),
+new System.Numerics.BigInteger(8711555497953417603L),
+new System.Numerics.BigInteger(2976721680724104720L),
+new System.Numerics.BigInteger(8442176906070283245L),
+new System.Numerics.BigInteger(9019459894228612902L),
 },
     ModelInner = new BigIntegernumericArray1MI
 {
-    Id = 45,
+    Id = 43,
     Value = 
-new System.Numerics.BigInteger[3]
+new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(426870317434399188L),
-new System.Numerics.BigInteger(7481096519982770692L),
-new System.Numerics.BigInteger(2971771647562670601L),
+new System.Numerics.BigInteger(6495963696070420406L),
+new System.Numerics.BigInteger(2252095835640043335L),
+new System.Numerics.BigInteger(8953245206379424927L),
+new System.Numerics.BigInteger(4815569181622454289L),
 },
     NullableValue = null,
 },
     NullableValue = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(5485797798955646663L),
-new System.Numerics.BigInteger(1621027905675820724L),
-new System.Numerics.BigInteger(7557527858528533108L),
-new System.Numerics.BigInteger(5576064482128874551L),
+new System.Numerics.BigInteger(1273513069804897805L),
+new System.Numerics.BigInteger(2477402639620153995L),
+new System.Numerics.BigInteger(1958794429532970015L),
+new System.Numerics.BigInteger(7567925925325234758L),
+},
+},
+            new BigIntegernumericArray1M
+{
+    Id = 92,
+    Value = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(5106694631350594134L),
+new System.Numerics.BigInteger(5981154827428898375L),
+new System.Numerics.BigInteger(6763256337686599516L),
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BigIntegernumericArray1M
+{
+    Id = 96,
+    Value = 
+new System.Numerics.BigInteger[4]
+{
+new System.Numerics.BigInteger(4016274224024745064L),
+new System.Numerics.BigInteger(1304579674674794787L),
+new System.Numerics.BigInteger(1211329640079235309L),
+new System.Numerics.BigInteger(3373702929679508220L),
+},
+    ModelInner = new BigIntegernumericArray1MI
+{
+    Id = 49,
+    Value = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(303869812327074802L),
+new System.Numerics.BigInteger(4863650535052239614L),
+new System.Numerics.BigInteger(7612681264468153985L),
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(3847471247470631635L),
+new System.Numerics.BigInteger(5838406288846376875L),
+new System.Numerics.BigInteger(2575066801645827919L),
+},
+},
+            new BigIntegernumericArray1M
+{
+    Id = 100,
+    Value = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(5018200566056118807L),
+new System.Numerics.BigInteger(8746253391791436811L),
+new System.Numerics.BigInteger(8586891880519560878L),
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Numerics.BigInteger[4]
+{
+new System.Numerics.BigInteger(755284700374419077L),
+new System.Numerics.BigInteger(5453971170243498728L),
+new System.Numerics.BigInteger(9158011168476089788L),
+new System.Numerics.BigInteger(4680268536518723175L),
 },
 },
             new BigIntegernumericArray1M
 {
     Id = 106,
     Value = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(4165628846525299539L),
-new System.Numerics.BigInteger(1758734142873772969L),
-new System.Numerics.BigInteger(6294886464070189722L),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new BigIntegernumericArray1M
-{
-    Id = 109,
-    Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(3043389274458727823L),
-new System.Numerics.BigInteger(9199282071695583470L),
-new System.Numerics.BigInteger(1311290657158581066L),
-new System.Numerics.BigInteger(2627417093952222770L),
-},
-    ModelInner = new BigIntegernumericArray1MI
-{
-    Id = 50,
-    Value = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(5428214843131675678L),
-new System.Numerics.BigInteger(4772296530435899257L),
-new System.Numerics.BigInteger(4654051849915540556L),
-},
-    NullableValue = 
-new System.Numerics.BigInteger[4]
-{
-new System.Numerics.BigInteger(1899584294347224016L),
-new System.Numerics.BigInteger(5306686977894697926L),
-new System.Numerics.BigInteger(2644868795394326065L),
-new System.Numerics.BigInteger(6950483711318458224L),
-},
-},
-    NullableValue = null,
-},
-            new BigIntegernumericArray1M
-{
-    Id = 112,
-    Value = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(6185841538225909003L),
-new System.Numerics.BigInteger(9012612709460736700L),
-new System.Numerics.BigInteger(7985959780870968177L),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new BigIntegernumericArray1M
-{
-    Id = 121,
-    Value = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(5105681717435914993L),
-new System.Numerics.BigInteger(3145587919480162988L),
-new System.Numerics.BigInteger(7826699531958030923L),
+new System.Numerics.BigInteger(6700681883083119784L),
+new System.Numerics.BigInteger(4935149985141351572L),
+new System.Numerics.BigInteger(1017713839984994748L),
+new System.Numerics.BigInteger(7219162953552236980L),
 },
     ModelInner = new BigIntegernumericArray1MI
 {
     Id = 56,
     Value = 
-new System.Numerics.BigInteger[4]
+new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(3191159652459026347L),
-new System.Numerics.BigInteger(3541156544814916210L),
-new System.Numerics.BigInteger(4406425373038010141L),
-new System.Numerics.BigInteger(5649885967989295877L),
+new System.Numerics.BigInteger(5087400089887090986L),
+new System.Numerics.BigInteger(4953464596799342887L),
+new System.Numerics.BigInteger(5725414966358223087L),
 },
-    NullableValue = 
-new System.Numerics.BigInteger[4]
-{
-new System.Numerics.BigInteger(8758502605440258624L),
-new System.Numerics.BigInteger(8397554854388401621L),
-new System.Numerics.BigInteger(4096676389909990791L),
-new System.Numerics.BigInteger(2610149467391576859L),
-},
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new BigIntegernumericArray1M
 {
-    Id = 129,
+    Id = 110,
     Value = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(3025192768732588819L),
-new System.Numerics.BigInteger(5547383284315953560L),
-new System.Numerics.BigInteger(6783680102032023718L),
+new System.Numerics.BigInteger(4105441782605778365L),
+new System.Numerics.BigInteger(8164814135900323938L),
+new System.Numerics.BigInteger(8083170656161931484L),
 },
     ModelInner = null,
     NullableValue = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(3716894331022588250L),
-new System.Numerics.BigInteger(5327979465409750006L),
-new System.Numerics.BigInteger(3508428436422021017L),
+new System.Numerics.BigInteger(2972654382634220942L),
+new System.Numerics.BigInteger(1458399355580660372L),
+new System.Numerics.BigInteger(2765132513834415248L),
 },
 },
             new BigIntegernumericArray1M
 {
-    Id = 136,
+    Id = 116,
     Value = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(6957198390621098380L),
-new System.Numerics.BigInteger(160224312579130017L),
-new System.Numerics.BigInteger(6162348697425723448L),
+new System.Numerics.BigInteger(2578211775201842265L),
+new System.Numerics.BigInteger(2789395479512528708L),
+new System.Numerics.BigInteger(7702360498727718119L),
 },
     ModelInner = new BigIntegernumericArray1MI
 {
@@ -623,97 +538,94 @@ new System.Numerics.BigInteger(6162348697425723448L),
     Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(4339664692223316956L),
-new System.Numerics.BigInteger(596553845609004831L),
-new System.Numerics.BigInteger(3980092311143851804L),
-new System.Numerics.BigInteger(3242325182333121786L),
+new System.Numerics.BigInteger(5259561209052940075L),
+new System.Numerics.BigInteger(8357252508074035628L),
+new System.Numerics.BigInteger(2295966428923281669L),
+new System.Numerics.BigInteger(3186689754010426651L),
 },
-    NullableValue = 
-new System.Numerics.BigInteger[4]
-{
-new System.Numerics.BigInteger(255758319982938654L),
-new System.Numerics.BigInteger(5459973739949728366L),
-new System.Numerics.BigInteger(2746555916511116010L),
-new System.Numerics.BigInteger(6697311791906130505L),
-},
-},
-    NullableValue = 
-new System.Numerics.BigInteger[4]
-{
-new System.Numerics.BigInteger(8724869259903286483L),
-new System.Numerics.BigInteger(8641778361432767019L),
-new System.Numerics.BigInteger(2541610227751599904L),
-new System.Numerics.BigInteger(6475023521898924859L),
-},
-},
-            new BigIntegernumericArray1M
-{
-    Id = 143,
-    Value = 
-new System.Numerics.BigInteger[4]
-{
-new System.Numerics.BigInteger(2002960113355572222L),
-new System.Numerics.BigInteger(6330381534927731194L),
-new System.Numerics.BigInteger(7568954492493543552L),
-new System.Numerics.BigInteger(2046303872142358274L),
-},
-    ModelInner = null,
     NullableValue = null,
 },
+    NullableValue = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(2718217807055718899L),
+new System.Numerics.BigInteger(4513923925451636685L),
+new System.Numerics.BigInteger(5007014145501269749L),
+},
+},
             new BigIntegernumericArray1M
 {
-    Id = 145,
+    Id = 118,
     Value = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(6694757354894346290L),
-new System.Numerics.BigInteger(5839296046752134987L),
-new System.Numerics.BigInteger(7867163589662314748L),
+new System.Numerics.BigInteger(652085782909171266L),
+new System.Numerics.BigInteger(2749082889693891154L),
+new System.Numerics.BigInteger(3790835812538019941L),
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(5817393541035530507L),
+new System.Numerics.BigInteger(6046427593964254529L),
+new System.Numerics.BigInteger(2440031130158168914L),
+},
+},
+            new BigIntegernumericArray1M
+{
+    Id = 126,
+    Value = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(3482589091756982573L),
+new System.Numerics.BigInteger(7923325642215404900L),
+new System.Numerics.BigInteger(29370549286211977L),
 },
     ModelInner = new BigIntegernumericArray1MI
 {
-    Id = 73,
+    Id = 69,
     Value = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(3425507623478060226L),
-new System.Numerics.BigInteger(9144714276512852694L),
-new System.Numerics.BigInteger(5423802868307312353L),
+new System.Numerics.BigInteger(1066613079664457377L),
+new System.Numerics.BigInteger(8259222101055852695L),
+new System.Numerics.BigInteger(3772138057405662481L),
 },
     NullableValue = null,
 },
-    NullableValue = 
-new System.Numerics.BigInteger[3]
-{
-new System.Numerics.BigInteger(1540225286977462938L),
-new System.Numerics.BigInteger(9044286335554357344L),
-new System.Numerics.BigInteger(638086892129718558L),
-},
+    NullableValue = null,
 },
             new BigIntegernumericArray1M
 {
-    Id = 151,
+    Id = 134,
     Value = 
-new System.Numerics.BigInteger[4]
+new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(7015975220930310480L),
-new System.Numerics.BigInteger(5158524284838058560L),
-new System.Numerics.BigInteger(7931752385924739917L),
-new System.Numerics.BigInteger(6516644097451310657L),
+new System.Numerics.BigInteger(744535335564484005L),
+new System.Numerics.BigInteger(6794194742883212273L),
+new System.Numerics.BigInteger(24075196155054513L),
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Numerics.BigInteger[4]
+{
+new System.Numerics.BigInteger(7879429054108524867L),
+new System.Numerics.BigInteger(1443850355301674923L),
+new System.Numerics.BigInteger(2968961042459822154L),
+new System.Numerics.BigInteger(560658473596476066L),
+},
 },
             new BigIntegernumericArray1M
 {
-    Id = 152,
+    Id = 141,
     Value = 
 new System.Numerics.BigInteger[4]
 {
-new System.Numerics.BigInteger(1213627132496212183L),
-new System.Numerics.BigInteger(5912365014474413521L),
-new System.Numerics.BigInteger(3973677171390864066L),
-new System.Numerics.BigInteger(7726508472679525540L),
+new System.Numerics.BigInteger(2232554647403418010L),
+new System.Numerics.BigInteger(3806635282606244930L),
+new System.Numerics.BigInteger(6003842892496835697L),
+new System.Numerics.BigInteger(3910563373749862041L),
 },
     ModelInner = new BigIntegernumericArray1MI
 {
@@ -721,13 +633,107 @@ new System.Numerics.BigInteger(7726508472679525540L),
     Value = 
 new System.Numerics.BigInteger[3]
 {
-new System.Numerics.BigInteger(7695541625110686542L),
-new System.Numerics.BigInteger(8943037530540603502L),
-new System.Numerics.BigInteger(5657389629703350543L),
+new System.Numerics.BigInteger(8132902583536490242L),
+new System.Numerics.BigInteger(9192649624687486155L),
+new System.Numerics.BigInteger(7859812496120918377L),
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(7083524459485085423L),
+new System.Numerics.BigInteger(3873627005188647066L),
+new System.Numerics.BigInteger(7741310523026069804L),
+},
+},
+            new BigIntegernumericArray1M
+{
+    Id = 148,
+    Value = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(6560568877704686906L),
+new System.Numerics.BigInteger(9217547318441694494L),
+new System.Numerics.BigInteger(1586076249817163579L),
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BigIntegernumericArray1M
+{
+    Id = 151,
+    Value = 
+new System.Numerics.BigInteger[4]
+{
+new System.Numerics.BigInteger(6438325658410764009L),
+new System.Numerics.BigInteger(5643011946610526557L),
+new System.Numerics.BigInteger(5501046775763242254L),
+new System.Numerics.BigInteger(6245995976837266719L),
+},
+    ModelInner = new BigIntegernumericArray1MI
+{
+    Id = 82,
+    Value = 
+new System.Numerics.BigInteger[4]
+{
+new System.Numerics.BigInteger(3043930322179858645L),
+new System.Numerics.BigInteger(5854687545715062054L),
+new System.Numerics.BigInteger(1928258786735678099L),
+new System.Numerics.BigInteger(7261398257885313331L),
 },
     NullableValue = null,
 },
     NullableValue = null,
+},
+            new BigIntegernumericArray1M
+{
+    Id = 159,
+    Value = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(6347668487959680350L),
+new System.Numerics.BigInteger(4547809423404122919L),
+new System.Numerics.BigInteger(6527999556951551519L),
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(4998063637194119707L),
+new System.Numerics.BigInteger(4254053710073799182L),
+new System.Numerics.BigInteger(4200623796336706789L),
+},
+},
+            new BigIntegernumericArray1M
+{
+    Id = 164,
+    Value = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(5573850338712737731L),
+new System.Numerics.BigInteger(3541131920921754439L),
+new System.Numerics.BigInteger(4537205929143350577L),
+},
+    ModelInner = new BigIntegernumericArray1MI
+{
+    Id = 88,
+    Value = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(5633179336639038482L),
+new System.Numerics.BigInteger(8213831901820799868L),
+new System.Numerics.BigInteger(3017879315717639244L),
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Numerics.BigInteger[3]
+{
+new System.Numerics.BigInteger(350953142853819751L),
+new System.Numerics.BigInteger(8410607690903041988L),
+new System.Numerics.BigInteger(8155895968476336019L),
+},
 },
         };
 
@@ -1211,6 +1217,99 @@ RETURNING
 
 [Gedaq.Npgsql.Attributes.Query(
             query: null,
+            methodName:"MMDynQuerySelectModelDynPar",
+            queryMapTypes: [typeof(FlatBigIntegernumericArray1M), typeof(FlatBigIntegernumericArray1M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBigIntegerArraynumericArray)),
+Gedaq.Npgsql.Attributes.DynamicParametr()]
+        private void MMDynQuerySelectModelDynParConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelDynParTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.bigintegernumericarray1m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+                var models1 = new List<FlatBigIntegernumericArray1M>();
+                var models2 = new List<FlatBigIntegernumericArray1M>();
+                await ((IBigIntegerArraynumericArray)this).MMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.bigintegernumericarray1m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+                var models1 = new List<FlatBigIntegernumericArray1M>();
+                var models2 = new List<FlatBigIntegernumericArray1M>();
+                ((IBigIntegerArraynumericArray)this).MMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.Query(
+            query: null,
             methodName:"DynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatBigIntegernumericArray1M)],
             methodType: MethodType.Async | MethodType.Sync,
@@ -1236,7 +1335,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1244,7 +1342,6 @@ ORDER BY
 ";
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
                 var models = await ((IBigIntegerArraynumericArray)this).DynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
@@ -1266,7 +1363,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1274,8 +1370,7 @@ ORDER BY
 ";
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
-                var models =  ((IBigIntegerArraynumericArray)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                var models = ((IBigIntegerArraynumericArray)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1325,7 +1420,6 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 await connection.OpenAsync();
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
                 var models = await ((IBigIntegerArraynumericArray)this).SelectModelDynParAsync(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
@@ -1343,12 +1437,104 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 await connection.OpenAsync();
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
-                var models =  ((IBigIntegerArraynumericArray)this).SelectModelDynPar(connection, [parametr1]);
+                var models = ((IBigIntegerArraynumericArray)this).SelectModelDynPar(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
                     BigIntegernumericArray1M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.Query(
+            query: null,
+            methodName:"MMDynQuerySelectModel",
+            queryMapTypes: [typeof(FlatBigIntegernumericArray1M), typeof(FlatBigIntegernumericArray1M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBigIntegerArraynumericArray)),
+Gedaq.Npgsql.Attributes.Parametr(
+            parametrType: typeof(System.Int32),
+            position: 1,
+            methodParametrName: "id",
+            dbType: (NpgsqlTypes.NpgsqlDbType)(9))]
+        private void MMDynQuerySelectModelConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.bigintegernumericarray1m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatBigIntegernumericArray1M>();
+                var models2 = new List<FlatBigIntegernumericArray1M>();
+                await ((IBigIntegerArraynumericArray)this).MMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.bigintegernumericarray1m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatBigIntegernumericArray1M>();
+                var models2 = new List<FlatBigIntegernumericArray1M>();
+                ((IBigIntegerArraynumericArray)this).MMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -1384,7 +1570,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1411,13 +1596,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE 
     m.id > $1
 ORDER BY
     m.id ASC
 ";
-                var models =  ((IBigIntegerArraynumericArray)this).DynQuerySelectModel(connection,  query, 0);
+                var models = ((IBigIntegerArraynumericArray)this).DynQuerySelectModel(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1484,11 +1668,107 @@ Gedaq.Npgsql.Attributes.Parametr(
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((IBigIntegerArraynumericArray)this).SelectModel(connection, 0);
+                var models = ((IBigIntegerArraynumericArray)this).SelectModel(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
                     BigIntegernumericArray1M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: null,
+            methodName:"DbConnectionMMDynQuerySelectModelDynPar",
+            queryMapTypes: [typeof(FlatBigIntegernumericArray1M), typeof(FlatBigIntegernumericArray1M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBigIntegerArraynumericArray)),
+Gedaq.DbConnection.Attributes.DynamicParametr()]
+        private void DbConnectionMMDynQuerySelectModelDynParConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.bigintegernumericarray1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatBigIntegernumericArray1M>();
+                var models2 = new List<FlatBigIntegernumericArray1M>();
+                await((IBigIntegerArraynumericArray)this).DbConnectionMMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.bigintegernumericarray1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatBigIntegernumericArray1M>();
+                var models2 = new List<FlatBigIntegernumericArray1M>();
+                ((IBigIntegerArraynumericArray)this).DbConnectionMMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -1535,7 +1815,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1545,8 +1824,7 @@ ORDER BY
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models = await ((IBigIntegerArraynumericArray)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
+                var models = await((IBigIntegerArraynumericArray)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1563,12 +1841,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 37;
+                parametr1.Value = 92;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 105;
+                parametr2.Value = 63;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1577,7 +1855,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1589,7 +1866,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1600,16 +1876,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
-FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[7], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[8], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[9], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[10], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[11], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[12], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[13], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[14], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[15], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[16], false);FlatBigIntegernumericArray1M.AssertModel(models[10],_testData[17], false);FlatBigIntegernumericArray1M.AssertModel(models[11],_testData[18], false);FlatBigIntegernumericArray1M.AssertModel(models[12],_testData[19], false);FlatBigIntegernumericArray1M.AssertModel(models[13],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[14],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[15],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[16],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[17],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[18],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[19],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[20],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[21],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[22],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(13));
+FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[17], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[18], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[19], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[10],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[11],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[12],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
-FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(18));
+FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[12], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[13], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[14], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[15], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[16], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[17], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[18], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[19], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[10],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[11],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[12],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[13],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[14],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[15],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[16],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[17],_testData[29], false);
                         continue;
                     }
                     
@@ -1630,7 +1906,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1640,8 +1915,7 @@ ORDER BY
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models =  ((IBigIntegerArraynumericArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                var models = ((IBigIntegerArraynumericArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1658,12 +1932,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 55;
+                parametr1.Value = 126;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 79;
+                parametr2.Value = 83;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1672,7 +1946,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1684,7 +1957,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1695,16 +1967,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
-FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[10], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[11], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[12], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[13], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[14], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[15], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[16], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[17], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[18], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[19], false);FlatBigIntegernumericArray1M.AssertModel(models[10],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[11],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[12],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[13],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[14],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[15],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[16],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[17],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[18],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[19],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(15));
-FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[15], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[16], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[17], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[18], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[19], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[10],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[11],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[12],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[13],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[14],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(14));
+FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[16], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[17], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[18], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[19], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[10],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[11],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[12],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[13],_testData[29], false);
                         continue;
                     }
                     
@@ -1772,8 +2044,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models = await ((IBigIntegerArraynumericArray)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
+                var models = await((IBigIntegerArraynumericArray)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1790,12 +2061,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 72;
+                parametr1.Value = 134;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 19;
+                parametr2.Value = 51;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in await ((IBigIntegerArraynumericArray)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
@@ -1803,16 +2074,16 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
-BigIntegernumericArray1M.AssertModel(models[0],_testData[12], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[13], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[14], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[15], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[16], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[17], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[18], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[19], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[10],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[11],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[12],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[13],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[14],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[15],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[16],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[17],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(5));
+BigIntegernumericArray1M.AssertModel(models[0],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
-BigIntegernumericArray1M.AssertModel(models[0],_testData[3], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[4], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[5], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[6], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[7], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[8], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[9], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[10], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[11], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[12], false);BigIntegernumericArray1M.AssertModel(models[10],_testData[13], false);BigIntegernumericArray1M.AssertModel(models[11],_testData[14], false);BigIntegernumericArray1M.AssertModel(models[12],_testData[15], false);BigIntegernumericArray1M.AssertModel(models[13],_testData[16], false);BigIntegernumericArray1M.AssertModel(models[14],_testData[17], false);BigIntegernumericArray1M.AssertModel(models[15],_testData[18], false);BigIntegernumericArray1M.AssertModel(models[16],_testData[19], false);BigIntegernumericArray1M.AssertModel(models[17],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[18],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[19],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[20],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[21],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[22],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[23],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[24],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[25],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[26],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(21));
+BigIntegernumericArray1M.AssertModel(models[0],_testData[9], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[10], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[11], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[12], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[13], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[14], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[15], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[16], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[17], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[18], false);BigIntegernumericArray1M.AssertModel(models[10],_testData[19], false);BigIntegernumericArray1M.AssertModel(models[11],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[12],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[13],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[14],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[15],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[16],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[17],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[18],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[19],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[20],_testData[29], false);
                         continue;
                     }
                     
@@ -1831,8 +2102,7 @@ BigIntegernumericArray1M.AssertModel(models[0],_testData[3], false);BigIntegernu
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models =  ((IBigIntegerArraynumericArray)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
+                var models = ((IBigIntegerArraynumericArray)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1849,12 +2119,12 @@ BigIntegernumericArray1M.AssertModel(models[0],_testData[3], false);BigIntegernu
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 19;
+                parametr1.Value = 100;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 121;
+                parametr2.Value = 51;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in  ((IBigIntegerArraynumericArray)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
@@ -1862,20 +2132,112 @@ BigIntegernumericArray1M.AssertModel(models[0],_testData[3], false);BigIntegernu
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
-BigIntegernumericArray1M.AssertModel(models[0],_testData[3], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[4], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[5], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[6], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[7], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[8], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[9], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[10], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[11], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[12], false);BigIntegernumericArray1M.AssertModel(models[10],_testData[13], false);BigIntegernumericArray1M.AssertModel(models[11],_testData[14], false);BigIntegernumericArray1M.AssertModel(models[12],_testData[15], false);BigIntegernumericArray1M.AssertModel(models[13],_testData[16], false);BigIntegernumericArray1M.AssertModel(models[14],_testData[17], false);BigIntegernumericArray1M.AssertModel(models[15],_testData[18], false);BigIntegernumericArray1M.AssertModel(models[16],_testData[19], false);BigIntegernumericArray1M.AssertModel(models[17],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[18],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[19],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[20],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[21],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[22],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[23],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[24],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[25],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[26],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(11));
+BigIntegernumericArray1M.AssertModel(models[0],_testData[19], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[10],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
-BigIntegernumericArray1M.AssertModel(models[0],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(21));
+BigIntegernumericArray1M.AssertModel(models[0],_testData[9], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[10], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[11], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[12], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[13], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[14], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[15], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[16], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[17], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[18], false);BigIntegernumericArray1M.AssertModel(models[10],_testData[19], false);BigIntegernumericArray1M.AssertModel(models[11],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[12],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[13],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[14],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[15],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[16],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[17],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[18],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[19],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[20],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
+                }
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: null,
+            methodName:"DbConnectionMMDynQuerySelectModel",
+            queryMapTypes: [typeof(FlatBigIntegernumericArray1M), typeof(FlatBigIntegernumericArray1M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBigIntegerArraynumericArray)),
+Gedaq.DbConnection.Attributes.Parametr(
+            parametrType: typeof(System.Int32), 
+            parametrName: "id", 
+            methodParametrName: "id", 
+            dbType: (System.Data.DbType)(11))]
+        private void DbConnectionMMDynQuerySelectModelConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.bigintegernumericarray1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatBigIntegernumericArray1M>();
+                var models2 = new List<FlatBigIntegernumericArray1M>();
+                await((IBigIntegerArraynumericArray)this).DbConnectionMMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.bigintegernumericarray1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatBigIntegernumericArray1M>();
+                var models2 = new List<FlatBigIntegernumericArray1M>();
+                ((IBigIntegerArraynumericArray)this).DbConnectionMMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBigIntegernumericArray1M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -1926,13 +2288,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                var models = await ((IBigIntegerArraynumericArray)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
+                var models = await((IBigIntegerArraynumericArray)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1954,7 +2315,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1966,27 +2326,26 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((IBigIntegerArraynumericArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 72, query1, 44, query2))
+                foreach(var batchResult in await ((IBigIntegerArraynumericArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 79, query1, 79, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
-FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[12], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[13], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[14], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[15], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[16], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[17], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[18], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[19], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[10],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[11],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[12],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[13],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[14],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[15],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[16],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[17],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(15));
+FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[15], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[16], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[17], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[18], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[19], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[10],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[11],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[12],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[13],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[14],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
-FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[8], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[9], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[10], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[11], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[12], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[13], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[14], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[15], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[16], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[17], false);FlatBigIntegernumericArray1M.AssertModel(models[10],_testData[18], false);FlatBigIntegernumericArray1M.AssertModel(models[11],_testData[19], false);FlatBigIntegernumericArray1M.AssertModel(models[12],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[13],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[14],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[15],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[16],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[17],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[18],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[19],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[20],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[21],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(15));
+FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[15], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[16], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[17], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[18], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[19], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[10],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[11],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[12],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[13],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[14],_testData[29], false);
                         continue;
                     }
                     
@@ -2007,13 +2366,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                var models =  ((IBigIntegerArraynumericArray)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
+                var models = ((IBigIntegerArraynumericArray)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2035,7 +2393,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -2047,27 +2404,26 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.bigintegernumericarray1m m
-LEFT JOIN public.bigintegernumericarray1mi mi ON mi.id = m.bigintegernumericarray1mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((IBigIntegerArraynumericArray)this).DbConnectionDynQuerySelectModelBatch(connection, 29, query1, 145, query2))
+                foreach(var batchResult in  ((IBigIntegerArraynumericArray)this).DbConnectionDynQuerySelectModelBatch(connection, 2, query1, 126, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
-FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[5], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[6], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[7], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[8], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[9], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[10], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[11], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[12], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[13], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[14], false);FlatBigIntegernumericArray1M.AssertModel(models[10],_testData[15], false);FlatBigIntegernumericArray1M.AssertModel(models[11],_testData[16], false);FlatBigIntegernumericArray1M.AssertModel(models[12],_testData[17], false);FlatBigIntegernumericArray1M.AssertModel(models[13],_testData[18], false);FlatBigIntegernumericArray1M.AssertModel(models[14],_testData[19], false);FlatBigIntegernumericArray1M.AssertModel(models[15],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[16],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[17],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[18],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[19],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[20],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[21],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[22],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[23],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[24],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(29));
+FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[1], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[2], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[3], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[4], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[5], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[6], false);FlatBigIntegernumericArray1M.AssertModel(models[6],_testData[7], false);FlatBigIntegernumericArray1M.AssertModel(models[7],_testData[8], false);FlatBigIntegernumericArray1M.AssertModel(models[8],_testData[9], false);FlatBigIntegernumericArray1M.AssertModel(models[9],_testData[10], false);FlatBigIntegernumericArray1M.AssertModel(models[10],_testData[11], false);FlatBigIntegernumericArray1M.AssertModel(models[11],_testData[12], false);FlatBigIntegernumericArray1M.AssertModel(models[12],_testData[13], false);FlatBigIntegernumericArray1M.AssertModel(models[13],_testData[14], false);FlatBigIntegernumericArray1M.AssertModel(models[14],_testData[15], false);FlatBigIntegernumericArray1M.AssertModel(models[15],_testData[16], false);FlatBigIntegernumericArray1M.AssertModel(models[16],_testData[17], false);FlatBigIntegernumericArray1M.AssertModel(models[17],_testData[18], false);FlatBigIntegernumericArray1M.AssertModel(models[18],_testData[19], false);FlatBigIntegernumericArray1M.AssertModel(models[19],_testData[20], false);FlatBigIntegernumericArray1M.AssertModel(models[20],_testData[21], false);FlatBigIntegernumericArray1M.AssertModel(models[21],_testData[22], false);FlatBigIntegernumericArray1M.AssertModel(models[22],_testData[23], false);FlatBigIntegernumericArray1M.AssertModel(models[23],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[24],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[25],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[26],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[27],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[28],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(2));
-FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+FlatBigIntegernumericArray1M.AssertModel(models[0],_testData[24], false);FlatBigIntegernumericArray1M.AssertModel(models[1],_testData[25], false);FlatBigIntegernumericArray1M.AssertModel(models[2],_testData[26], false);FlatBigIntegernumericArray1M.AssertModel(models[3],_testData[27], false);FlatBigIntegernumericArray1M.AssertModel(models[4],_testData[28], false);FlatBigIntegernumericArray1M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }
                     
@@ -2135,7 +2491,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                var models = await ((IBigIntegerArraynumericArray)this).DbConnectionSelectModelAsync(connection, 0);
+                var models = await((IBigIntegerArraynumericArray)this).DbConnectionSelectModelAsync(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2151,7 +2507,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IBigIntegerArraynumericArray)this).DbConnectionSelectModelBatchAsync(connection, 145, 23))
+                foreach(var batchResult in await ((IBigIntegerArraynumericArray)this).DbConnectionSelectModelBatchAsync(connection, 151, 126))
                 {
                     if(++resultIndex == 1)
                     {
@@ -2164,8 +2520,8 @@ BigIntegernumericArray1M.AssertModel(models[0],_testData[28], false);BigIntegern
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(26));
-BigIntegernumericArray1M.AssertModel(models[0],_testData[4], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[5], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[6], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[7], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[8], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[9], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[10], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[11], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[12], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[13], false);BigIntegernumericArray1M.AssertModel(models[10],_testData[14], false);BigIntegernumericArray1M.AssertModel(models[11],_testData[15], false);BigIntegernumericArray1M.AssertModel(models[12],_testData[16], false);BigIntegernumericArray1M.AssertModel(models[13],_testData[17], false);BigIntegernumericArray1M.AssertModel(models[14],_testData[18], false);BigIntegernumericArray1M.AssertModel(models[15],_testData[19], false);BigIntegernumericArray1M.AssertModel(models[16],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[17],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[18],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[19],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[20],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[21],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[22],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[23],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[24],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[25],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+BigIntegernumericArray1M.AssertModel(models[0],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }
                     
@@ -2180,7 +2536,7 @@ BigIntegernumericArray1M.AssertModel(models[0],_testData[4], false);BigIntegernu
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((IBigIntegerArraynumericArray)this).DbConnectionSelectModel(connection, 0);
+                var models = ((IBigIntegerArraynumericArray)this).DbConnectionSelectModel(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2196,21 +2552,21 @@ BigIntegernumericArray1M.AssertModel(models[0],_testData[4], false);BigIntegernu
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IBigIntegerArraynumericArray)this).DbConnectionSelectModelBatch(connection, 143, 15))
+                foreach(var batchResult in  ((IBigIntegerArraynumericArray)this).DbConnectionSelectModelBatch(connection, 47, 72))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-BigIntegernumericArray1M.AssertModel(models[0],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(22));
+BigIntegernumericArray1M.AssertModel(models[0],_testData[8], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[9], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[10], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[11], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[12], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[13], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[14], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[15], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[16], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[17], false);BigIntegernumericArray1M.AssertModel(models[10],_testData[18], false);BigIntegernumericArray1M.AssertModel(models[11],_testData[19], false);BigIntegernumericArray1M.AssertModel(models[12],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[13],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[14],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[15],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[16],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[17],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[18],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[19],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[20],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[21],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(28));
-BigIntegernumericArray1M.AssertModel(models[0],_testData[2], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[3], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[4], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[5], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[6], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[7], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[8], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[9], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[10], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[11], false);BigIntegernumericArray1M.AssertModel(models[10],_testData[12], false);BigIntegernumericArray1M.AssertModel(models[11],_testData[13], false);BigIntegernumericArray1M.AssertModel(models[12],_testData[14], false);BigIntegernumericArray1M.AssertModel(models[13],_testData[15], false);BigIntegernumericArray1M.AssertModel(models[14],_testData[16], false);BigIntegernumericArray1M.AssertModel(models[15],_testData[17], false);BigIntegernumericArray1M.AssertModel(models[16],_testData[18], false);BigIntegernumericArray1M.AssertModel(models[17],_testData[19], false);BigIntegernumericArray1M.AssertModel(models[18],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[19],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[20],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[21],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[22],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[23],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[24],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[25],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[26],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[27],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(17));
+BigIntegernumericArray1M.AssertModel(models[0],_testData[13], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[14], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[15], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[16], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[17], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[18], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[19], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[10],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[11],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[12],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[13],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[14],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[15],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }
                     
@@ -2226,11 +2582,11 @@ BigIntegernumericArray1M.AssertModel(models[0],_testData[2], false);BigIntegernu
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IBigIntegerArraynumericArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IBigIntegerArraynumericArray)this).SetDbConnectionSelectModelParametrs(cmd, 15);
+                ((IBigIntegerArraynumericArray)this).SetDbConnectionSelectModelParametrs(cmd, 47);
                 var models = await ((IBigIntegerArraynumericArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(28));
-BigIntegernumericArray1M.AssertModel(models[0],_testData[2], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[3], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[4], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[5], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[6], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[7], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[8], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[9], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[10], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[11], false);BigIntegernumericArray1M.AssertModel(models[10],_testData[12], false);BigIntegernumericArray1M.AssertModel(models[11],_testData[13], false);BigIntegernumericArray1M.AssertModel(models[12],_testData[14], false);BigIntegernumericArray1M.AssertModel(models[13],_testData[15], false);BigIntegernumericArray1M.AssertModel(models[14],_testData[16], false);BigIntegernumericArray1M.AssertModel(models[15],_testData[17], false);BigIntegernumericArray1M.AssertModel(models[16],_testData[18], false);BigIntegernumericArray1M.AssertModel(models[17],_testData[19], false);BigIntegernumericArray1M.AssertModel(models[18],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[19],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[20],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[21],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[22],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[23],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[24],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[25],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[26],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[27],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(22));
+BigIntegernumericArray1M.AssertModel(models[0],_testData[8], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[9], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[10], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[11], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[12], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[13], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[14], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[15], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[16], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[17], false);BigIntegernumericArray1M.AssertModel(models[10],_testData[18], false);BigIntegernumericArray1M.AssertModel(models[11],_testData[19], false);BigIntegernumericArray1M.AssertModel(models[12],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[13],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[14],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[15],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[16],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[17],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[18],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[19],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[20],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[21],_testData[29], false);
             }
         }
 
@@ -2241,11 +2597,11 @@ BigIntegernumericArray1M.AssertModel(models[0],_testData[2], false);BigIntegernu
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IBigIntegerArraynumericArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IBigIntegerArraynumericArray)this).SetDbConnectionSelectModelParametrs(cmd, 145);
+                ((IBigIntegerArraynumericArray)this).SetDbConnectionSelectModelParametrs(cmd, 106);
                 var models =  ((IBigIntegerArraynumericArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(2));
-BigIntegernumericArray1M.AssertModel(models[0],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(10));
+BigIntegernumericArray1M.AssertModel(models[0],_testData[20], false);BigIntegernumericArray1M.AssertModel(models[1],_testData[21], false);BigIntegernumericArray1M.AssertModel(models[2],_testData[22], false);BigIntegernumericArray1M.AssertModel(models[3],_testData[23], false);BigIntegernumericArray1M.AssertModel(models[4],_testData[24], false);BigIntegernumericArray1M.AssertModel(models[5],_testData[25], false);BigIntegernumericArray1M.AssertModel(models[6],_testData[26], false);BigIntegernumericArray1M.AssertModel(models[7],_testData[27], false);BigIntegernumericArray1M.AssertModel(models[8],_testData[28], false);BigIntegernumericArray1M.AssertModel(models[9],_testData[29], false);
             }
         }
 

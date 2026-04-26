@@ -11,9 +11,9 @@
             return isDynamicQuery ? "DynQuery" : string.Empty;
         }
 
-        public static string ToLowerString(this bool value)
+        public static string MultiMapQueryPrefix(bool isMultyMap)
         {
-            return value.ToString().ToLowerInvariant();
+            return isMultyMap ? "MM" : string.Empty;
         }
 
         public static string FlatModelPrefix(bool isFlat)

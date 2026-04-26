@@ -389,6 +389,12 @@ namespace Gedaq.Base.Query
         {accessModifier} {staticModifier} {asyncKeyword}{ExecuteCommandReturnType()} {methodName}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.CommandType()} command");
 
+            if (source.IsCollectionDelegateMap)
+            {
+                builder.Append($@",
+            {source.MapDelegateParametrType()} {source.MapDelegateParametrName}");
+            }
+
             if (methodType == MethodType.Async)
             {
                 var enumeratorCancellation =
@@ -397,12 +403,6 @@ namespace Gedaq.Base.Query
                     : "[EnumeratorCancellation] ";
                 builder.Append($@",
             {enumeratorCancellation}CancellationToken cancellationToken = default");
-            }
-
-            if (source.IsCollectionDelegateMap)
-            {
-                builder.Append($@",
-            {source.MapDelegateParametrType()} {source.MapDelegateParametrName}");
             }
 
             builder.Append($@")");
@@ -486,7 +486,7 @@ namespace Gedaq.Base.Query
 
                     builder.Append($@"{mapInfo.MapItemName}");
                 }
-                builder.Append(")");
+                builder.Append(");");
 
                 builder.Append($@"
                 }}

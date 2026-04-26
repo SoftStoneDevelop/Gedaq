@@ -30,700 +30,649 @@ namespace Tests
         {
             new DateTimetimestamp_with_time_zoneArray2M
 {
-    Id = 9,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 1993, month: 10, day: 7, hour: 14, minute: 50, second: 57, millisecond: 151, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1940, month: 10, day: 13, hour: 6, minute: 9, second: 56, millisecond: 354, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1921, month: 10, day: 18, hour: 1, minute: 41, second: 47, millisecond: 188, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 12,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 2007, month: 10, day: 8, hour: 5, minute: 29, second: 1, millisecond: 193, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1977, month: 10, day: 13, hour: 15, minute: 52, second: 52, millisecond: 557, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1919, month: 10, day: 15, hour: 1, minute: 20, second: 46, millisecond: 889, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1932, month: 10, day: 2, hour: 12, minute: 51, second: 31, millisecond: 318, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
-{
-    Id = 4,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 2006, month: 10, day: 7, hour: 10, minute: 49, second: 40, millisecond: 767, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1943, month: 10, day: 7, hour: 4, minute: 52, second: 13, millisecond: 691, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1981, month: 10, day: 12, hour: 20, minute: 14, second: 21, millisecond: 622, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1972, month: 10, day: 16, hour: 12, minute: 50, second: 22, millisecond: 346, kind: DateTimeKind.Utc),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1931, month: 10, day: 3, hour: 11, minute: 50, second: 3, millisecond: 475, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1990, month: 10, day: 12, hour: 18, minute: 16, second: 24, millisecond: 179, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1963, month: 10, day: 5, hour: 1, minute: 45, second: 16, millisecond: 976, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1941, month: 10, day: 14, hour: 10, minute: 13, second: 57, millisecond: 947, kind: DateTimeKind.Utc),
-
-},
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 19,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1932, month: 10, day: 14, hour: 16, minute: 15, second: 27, millisecond: 817, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2011, month: 10, day: 6, hour: 2, minute: 11, second: 20, millisecond: 859, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1959, month: 10, day: 17, hour: 1, minute: 50, second: 2, millisecond: 560, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1936, month: 10, day: 2, hour: 2, minute: 58, second: 27, millisecond: 201, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 26,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 1921, month: 10, day: 3, hour: 12, minute: 49, second: 11, millisecond: 931, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1950, month: 10, day: 17, hour: 15, minute: 52, second: 30, millisecond: 802, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1966, month: 10, day: 5, hour: 13, minute: 45, second: 42, millisecond: 150, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
-{
-    Id = 6,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1999, month: 10, day: 8, hour: 2, minute: 31, second: 35, millisecond: 965, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1938, month: 10, day: 2, hour: 10, minute: 53, second: 1, millisecond: 686, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2014, month: 10, day: 15, hour: 21, minute: 10, second: 34, millisecond: 81, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1963, month: 10, day: 19, hour: 14, minute: 14, second: 25, millisecond: 288, kind: DateTimeKind.Utc),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 1919, month: 10, day: 11, hour: 11, minute: 27, second: 11, millisecond: 139, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1921, month: 10, day: 12, hour: 17, minute: 45, second: 55, millisecond: 219, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1992, month: 10, day: 3, hour: 3, minute: 27, second: 35, millisecond: 175, kind: DateTimeKind.Utc),
-
-},
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 31,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 2009, month: 10, day: 8, hour: 9, minute: 35, second: 57, millisecond: 568, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1920, month: 10, day: 11, hour: 12, minute: 32, second: 28, millisecond: 82, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1927, month: 10, day: 8, hour: 2, minute: 27, second: 45, millisecond: 353, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1969, month: 10, day: 10, hour: 11, minute: 25, second: 3, millisecond: 867, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 35,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1919, month: 10, day: 17, hour: 1, minute: 6, second: 10, millisecond: 88, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1922, month: 10, day: 6, hour: 20, minute: 23, second: 18, millisecond: 58, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1940, month: 10, day: 18, hour: 14, minute: 9, second: 10, millisecond: 802, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1937, month: 10, day: 7, hour: 4, minute: 54, second: 10, millisecond: 792, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
-{
     Id = 8,
     Value = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 2013, month: 10, day: 10, hour: 21, minute: 12, second: 44, millisecond: 635, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1928, month: 10, day: 15, hour: 11, minute: 29, second: 14, millisecond: 767, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2007, month: 10, day: 9, hour: 13, minute: 56, second: 49, millisecond: 707, kind: DateTimeKind.Utc),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 1980, month: 10, day: 15, hour: 4, minute: 25, second: 31, millisecond: 995, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1942, month: 10, day: 14, hour: 19, minute: 27, second: 39, millisecond: 833, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1972, month: 10, day: 18, hour: 14, minute: 56, second: 22, millisecond: 114, kind: DateTimeKind.Utc),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 2001, month: 10, day: 1, hour: 3, minute: 35, second: 42, millisecond: 357, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1964, month: 10, day: 13, hour: 10, minute: 49, second: 16, millisecond: 108, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1922, month: 10, day: 18, hour: 21, minute: 41, second: 11, millisecond: 577, kind: DateTimeKind.Utc),
-
-},
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 40,
-    Value = 
 new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 1940, month: 10, day: 15, hour: 9, minute: 15, second: 49, millisecond: 753, kind: DateTimeKind.Utc),
+new DateTime(year: 1954, month: 10, day: 16, hour: 5, minute: 34, second: 43, millisecond: 563, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1963, month: 10, day: 3, hour: 22, minute: 53, second: 13, millisecond: 19, kind: DateTimeKind.Utc),
+new DateTime(year: 1934, month: 10, day: 4, hour: 17, minute: 56, second: 1, millisecond: 67, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1999, month: 10, day: 19, hour: 9, minute: 34, second: 1, millisecond: 455, kind: DateTimeKind.Utc),
+new DateTime(year: 2002, month: 10, day: 10, hour: 17, minute: 10, second: 6, millisecond: 704, kind: DateTimeKind.Utc),
 
-new DateTime(year: 2015, month: 10, day: 2, hour: 13, minute: 21, second: 56, millisecond: 534, kind: DateTimeKind.Utc),
+new DateTime(year: 1961, month: 10, day: 16, hour: 5, minute: 55, second: 9, millisecond: 588, kind: DateTimeKind.Utc),
 
 },
     ModelInner = null,
     NullableValue = null,
 },
             new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 47,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 2012, month: 10, day: 14, hour: 3, minute: 20, second: 39, millisecond: 76, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1955, month: 10, day: 2, hour: 22, minute: 15, second: 33, millisecond: 792, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2004, month: 10, day: 7, hour: 5, minute: 57, second: 9, millisecond: 196, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1965, month: 10, day: 6, hour: 5, minute: 22, second: 12, millisecond: 435, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
 {
     Id = 16,
     Value = 
 new System.Collections.Generic.List<System.DateTime>(3)
 {
-new DateTime(year: 1947, month: 10, day: 1, hour: 4, minute: 41, second: 33, millisecond: 113, kind: DateTimeKind.Utc),
+new DateTime(year: 2008, month: 10, day: 1, hour: 11, minute: 22, second: 5, millisecond: 949, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1957, month: 10, day: 10, hour: 2, minute: 39, second: 8, millisecond: 881, kind: DateTimeKind.Utc),
+new DateTime(year: 1975, month: 10, day: 19, hour: 16, minute: 14, second: 21, millisecond: 561, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1939, month: 10, day: 11, hour: 1, minute: 22, second: 33, millisecond: 759, kind: DateTimeKind.Utc),
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 49,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 2001, month: 10, day: 15, hour: 3, minute: 19, second: 9, millisecond: 569, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1932, month: 10, day: 18, hour: 14, minute: 29, second: 58, millisecond: 30, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1946, month: 10, day: 11, hour: 15, minute: 47, second: 2, millisecond: 37, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1918, month: 10, day: 16, hour: 21, minute: 49, second: 33, millisecond: 713, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 51,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1943, month: 10, day: 16, hour: 10, minute: 53, second: 2, millisecond: 570, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1952, month: 10, day: 14, hour: 14, minute: 18, second: 41, millisecond: 698, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1988, month: 10, day: 3, hour: 3, minute: 26, second: 35, millisecond: 612, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1921, month: 10, day: 1, hour: 21, minute: 9, second: 30, millisecond: 870, kind: DateTimeKind.Utc),
+new DateTime(year: 1981, month: 10, day: 3, hour: 14, minute: 57, second: 7, millisecond: 140, kind: DateTimeKind.Utc),
 
 },
     ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
 {
-    Id = 24,
+    Id = 2,
     Value = 
 new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 1934, month: 10, day: 4, hour: 16, minute: 2, second: 49, millisecond: 542, kind: DateTimeKind.Utc),
+new DateTime(year: 1920, month: 10, day: 17, hour: 21, minute: 32, second: 4, millisecond: 603, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1953, month: 10, day: 16, hour: 2, minute: 50, second: 9, millisecond: 876, kind: DateTimeKind.Utc),
+new DateTime(year: 1999, month: 10, day: 17, hour: 16, minute: 31, second: 43, millisecond: 309, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1949, month: 10, day: 5, hour: 11, minute: 50, second: 7, millisecond: 26, kind: DateTimeKind.Utc),
+new DateTime(year: 1961, month: 10, day: 18, hour: 20, minute: 41, second: 45, millisecond: 442, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1943, month: 10, day: 16, hour: 4, minute: 49, second: 51, millisecond: 31, kind: DateTimeKind.Utc),
+new DateTime(year: 1986, month: 10, day: 13, hour: 1, minute: 44, second: 42, millisecond: 409, kind: DateTimeKind.Utc),
 
-},
-    NullableValue = null,
 },
     NullableValue = 
 new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 1978, month: 10, day: 4, hour: 3, minute: 19, second: 27, millisecond: 432, kind: DateTimeKind.Utc),
+new DateTime(year: 1944, month: 10, day: 6, hour: 2, minute: 33, second: 44, millisecond: 644, kind: DateTimeKind.Utc),
 
-new DateTime(year: 2016, month: 10, day: 19, hour: 10, minute: 18, second: 14, millisecond: 895, kind: DateTimeKind.Utc),
+new DateTime(year: 1922, month: 10, day: 8, hour: 9, minute: 4, second: 50, millisecond: 218, kind: DateTimeKind.Utc),
 
-new DateTime(year: 2003, month: 10, day: 11, hour: 21, minute: 52, second: 38, millisecond: 638, kind: DateTimeKind.Utc),
+new DateTime(year: 2015, month: 10, day: 16, hour: 11, minute: 51, second: 7, millisecond: 238, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1962, month: 10, day: 8, hour: 12, minute: 35, second: 24, millisecond: 534, kind: DateTimeKind.Utc),
+new DateTime(year: 1951, month: 10, day: 9, hour: 1, minute: 17, second: 4, millisecond: 814, kind: DateTimeKind.Utc),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1950, month: 10, day: 15, hour: 3, minute: 1, second: 7, millisecond: 367, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2019, month: 10, day: 18, hour: 12, minute: 36, second: 20, millisecond: 552, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1923, month: 10, day: 5, hour: 5, minute: 47, second: 52, millisecond: 849, kind: DateTimeKind.Utc),
 
 },
 },
             new DateTimetimestamp_with_time_zoneArray2M
 {
-    Id = 52,
+    Id = 25,
     Value = 
 new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 1917, month: 10, day: 18, hour: 20, minute: 24, second: 7, millisecond: 351, kind: DateTimeKind.Utc),
+new DateTime(year: 1999, month: 10, day: 7, hour: 1, minute: 56, second: 37, millisecond: 518, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1994, month: 10, day: 3, hour: 7, minute: 50, second: 48, millisecond: 35, kind: DateTimeKind.Utc),
+new DateTime(year: 1985, month: 10, day: 6, hour: 18, minute: 17, second: 56, millisecond: 828, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1986, month: 10, day: 2, hour: 4, minute: 27, second: 24, millisecond: 672, kind: DateTimeKind.Utc),
+new DateTime(year: 1976, month: 10, day: 12, hour: 15, minute: 19, second: 21, millisecond: 729, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1972, month: 10, day: 9, hour: 10, minute: 48, second: 39, millisecond: 63, kind: DateTimeKind.Utc),
+new DateTime(year: 2006, month: 10, day: 18, hour: 7, minute: 38, second: 1, millisecond: 841, kind: DateTimeKind.Utc),
 
 },
     ModelInner = null,
-    NullableValue = null,
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 54,
-    Value = 
+    NullableValue = 
 new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 1984, month: 10, day: 11, hour: 12, minute: 39, second: 43, millisecond: 949, kind: DateTimeKind.Utc),
+new DateTime(year: 1999, month: 10, day: 19, hour: 4, minute: 28, second: 13, millisecond: 243, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1996, month: 10, day: 11, hour: 20, minute: 26, second: 38, millisecond: 38, kind: DateTimeKind.Utc),
+new DateTime(year: 1987, month: 10, day: 8, hour: 19, minute: 39, second: 27, millisecond: 771, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1963, month: 10, day: 15, hour: 9, minute: 53, second: 24, millisecond: 891, kind: DateTimeKind.Utc),
+new DateTime(year: 1935, month: 10, day: 9, hour: 9, minute: 40, second: 32, millisecond: 21, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1962, month: 10, day: 6, hour: 6, minute: 56, second: 44, millisecond: 759, kind: DateTimeKind.Utc),
+new DateTime(year: 1954, month: 10, day: 5, hour: 9, minute: 34, second: 37, millisecond: 482, kind: DateTimeKind.Utc),
 
 },
-    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
+},
+            new DateTimetimestamp_with_time_zoneArray2M
 {
     Id = 32,
     Value = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 1950, month: 10, day: 16, hour: 1, minute: 11, second: 14, millisecond: 983, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1941, month: 10, day: 13, hour: 8, minute: 35, second: 11, millisecond: 52, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1941, month: 10, day: 7, hour: 9, minute: 4, second: 36, millisecond: 490, kind: DateTimeKind.Utc),
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 62,
-    Value = 
 new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 1954, month: 10, day: 7, hour: 6, minute: 23, second: 43, millisecond: 75, kind: DateTimeKind.Utc),
+new DateTime(year: 2018, month: 10, day: 12, hour: 20, minute: 27, second: 56, millisecond: 254, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1993, month: 10, day: 4, hour: 2, minute: 21, second: 58, millisecond: 977, kind: DateTimeKind.Utc),
+new DateTime(year: 1945, month: 10, day: 18, hour: 2, minute: 20, second: 9, millisecond: 62, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1990, month: 10, day: 14, hour: 18, minute: 46, second: 30, millisecond: 489, kind: DateTimeKind.Utc),
+new DateTime(year: 2001, month: 10, day: 2, hour: 22, minute: 42, second: 38, millisecond: 271, kind: DateTimeKind.Utc),
 
-new DateTime(year: 2019, month: 10, day: 18, hour: 22, minute: 21, second: 1, millisecond: 279, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1953, month: 10, day: 3, hour: 21, minute: 10, second: 26, millisecond: 202, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1947, month: 10, day: 1, hour: 19, minute: 24, second: 13, millisecond: 391, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1954, month: 10, day: 18, hour: 8, minute: 45, second: 49, millisecond: 816, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1941, month: 10, day: 19, hour: 5, minute: 21, second: 46, millisecond: 261, kind: DateTimeKind.Utc),
-
-},
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 71,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1999, month: 10, day: 2, hour: 19, minute: 18, second: 12, millisecond: 202, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1927, month: 10, day: 16, hour: 18, minute: 38, second: 31, millisecond: 89, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1933, month: 10, day: 16, hour: 4, minute: 26, second: 29, millisecond: 942, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2003, month: 10, day: 13, hour: 10, minute: 24, second: 36, millisecond: 646, kind: DateTimeKind.Utc),
+new DateTime(year: 2005, month: 10, day: 7, hour: 14, minute: 13, second: 22, millisecond: 488, kind: DateTimeKind.Utc),
 
 },
     ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
 {
-    Id = 41,
+    Id = 9,
     Value = 
-new System.Collections.Generic.List<System.DateTime>(3)
+new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 1926, month: 10, day: 14, hour: 15, minute: 27, second: 21, millisecond: 938, kind: DateTimeKind.Utc),
+new DateTime(year: 1980, month: 10, day: 19, hour: 7, minute: 38, second: 49, millisecond: 156, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1984, month: 10, day: 9, hour: 3, minute: 24, second: 21, millisecond: 329, kind: DateTimeKind.Utc),
+new DateTime(year: 1964, month: 10, day: 4, hour: 9, minute: 9, second: 38, millisecond: 209, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1922, month: 10, day: 12, hour: 3, minute: 43, second: 35, millisecond: 503, kind: DateTimeKind.Utc),
+new DateTime(year: 1959, month: 10, day: 7, hour: 2, minute: 37, second: 28, millisecond: 478, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1931, month: 10, day: 3, hour: 15, minute: 1, second: 28, millisecond: 704, kind: DateTimeKind.Utc),
 
 },
     NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1938, month: 10, day: 19, hour: 22, minute: 56, second: 6, millisecond: 226, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1977, month: 10, day: 1, hour: 14, minute: 20, second: 13, millisecond: 235, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2003, month: 10, day: 9, hour: 20, minute: 15, second: 29, millisecond: 794, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1931, month: 10, day: 15, hour: 12, minute: 48, second: 54, millisecond: 907, kind: DateTimeKind.Utc),
-
-},
-},
-    NullableValue = null,
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 73,
-    Value = 
 new System.Collections.Generic.List<System.DateTime>(3)
 {
-new DateTime(year: 1954, month: 10, day: 5, hour: 3, minute: 24, second: 9, millisecond: 756, kind: DateTimeKind.Utc),
+new DateTime(year: 1999, month: 10, day: 7, hour: 9, minute: 36, second: 38, millisecond: 783, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1979, month: 10, day: 12, hour: 14, minute: 28, second: 20, millisecond: 501, kind: DateTimeKind.Utc),
+new DateTime(year: 1965, month: 10, day: 5, hour: 19, minute: 31, second: 24, millisecond: 613, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1969, month: 10, day: 2, hour: 3, minute: 14, second: 26, millisecond: 361, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 2005, month: 10, day: 1, hour: 4, minute: 30, second: 23, millisecond: 229, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1937, month: 10, day: 16, hour: 19, minute: 3, second: 5, millisecond: 542, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1996, month: 10, day: 7, hour: 18, minute: 12, second: 32, millisecond: 137, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1933, month: 10, day: 12, hour: 18, minute: 16, second: 18, millisecond: 248, kind: DateTimeKind.Utc),
+new DateTime(year: 1977, month: 10, day: 11, hour: 16, minute: 55, second: 31, millisecond: 331, kind: DateTimeKind.Utc),
 
 },
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 80,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 1943, month: 10, day: 14, hour: 2, minute: 55, second: 31, millisecond: 482, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2018, month: 10, day: 17, hour: 15, minute: 34, second: 57, millisecond: 861, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1955, month: 10, day: 14, hour: 5, minute: 15, second: 52, millisecond: 118, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
-{
-    Id = 46,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1976, month: 10, day: 16, hour: 21, minute: 45, second: 9, millisecond: 951, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2014, month: 10, day: 15, hour: 15, minute: 40, second: 57, millisecond: 789, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1957, month: 10, day: 6, hour: 2, minute: 42, second: 49, millisecond: 895, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1932, month: 10, day: 14, hour: 6, minute: 25, second: 48, millisecond: 36, kind: DateTimeKind.Utc),
-
-},
-    NullableValue = null,
 },
     NullableValue = null,
 },
             new DateTimetimestamp_with_time_zoneArray2M
 {
-    Id = 89,
+    Id = 37,
     Value = 
 new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 2017, month: 10, day: 16, hour: 11, minute: 53, second: 56, millisecond: 101, kind: DateTimeKind.Utc),
+new DateTime(year: 1972, month: 10, day: 9, hour: 2, minute: 44, second: 30, millisecond: 248, kind: DateTimeKind.Utc),
 
-new DateTime(year: 2005, month: 10, day: 1, hour: 4, minute: 43, second: 50, millisecond: 282, kind: DateTimeKind.Utc),
+new DateTime(year: 1924, month: 10, day: 5, hour: 19, minute: 34, second: 15, millisecond: 747, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1936, month: 10, day: 14, hour: 21, minute: 47, second: 36, millisecond: 591, kind: DateTimeKind.Utc),
+new DateTime(year: 1960, month: 10, day: 13, hour: 1, minute: 24, second: 7, millisecond: 670, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1936, month: 10, day: 10, hour: 12, minute: 26, second: 31, millisecond: 583, kind: DateTimeKind.Utc),
+new DateTime(year: 1961, month: 10, day: 9, hour: 14, minute: 19, second: 50, millisecond: 501, kind: DateTimeKind.Utc),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.DateTime>(3)
 {
-new DateTime(year: 1922, month: 10, day: 15, hour: 13, minute: 24, second: 33, millisecond: 851, kind: DateTimeKind.Utc),
+new DateTime(year: 1963, month: 10, day: 11, hour: 16, minute: 12, second: 37, millisecond: 747, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1933, month: 10, day: 9, hour: 12, minute: 37, second: 7, millisecond: 389, kind: DateTimeKind.Utc),
+new DateTime(year: 2005, month: 10, day: 19, hour: 18, minute: 42, second: 11, millisecond: 464, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1961, month: 10, day: 8, hour: 19, minute: 52, second: 18, millisecond: 773, kind: DateTimeKind.Utc),
+new DateTime(year: 1973, month: 10, day: 16, hour: 7, minute: 27, second: 22, millisecond: 544, kind: DateTimeKind.Utc),
 
 },
 },
             new DateTimetimestamp_with_time_zoneArray2M
 {
-    Id = 90,
+    Id = 45,
     Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
+new System.Collections.Generic.List<System.DateTime>(3)
 {
-new DateTime(year: 2019, month: 10, day: 1, hour: 20, minute: 53, second: 55, millisecond: 392, kind: DateTimeKind.Utc),
+new DateTime(year: 1941, month: 10, day: 8, hour: 7, minute: 14, second: 53, millisecond: 834, kind: DateTimeKind.Utc),
 
-new DateTime(year: 2015, month: 10, day: 4, hour: 9, minute: 19, second: 47, millisecond: 346, kind: DateTimeKind.Utc),
+new DateTime(year: 1980, month: 10, day: 18, hour: 7, minute: 53, second: 46, millisecond: 191, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1982, month: 10, day: 5, hour: 5, minute: 8, second: 31, millisecond: 926, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1918, month: 10, day: 10, hour: 17, minute: 58, second: 37, millisecond: 155, kind: DateTimeKind.Utc),
+new DateTime(year: 1973, month: 10, day: 4, hour: 10, minute: 26, second: 54, millisecond: 863, kind: DateTimeKind.Utc),
 
 },
     ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
 {
-    Id = 52,
+    Id = 14,
     Value = 
 new System.Collections.Generic.List<System.DateTime>(3)
 {
-new DateTime(year: 1994, month: 10, day: 2, hour: 5, minute: 58, second: 26, millisecond: 361, kind: DateTimeKind.Utc),
+new DateTime(year: 1940, month: 10, day: 1, hour: 22, minute: 34, second: 41, millisecond: 440, kind: DateTimeKind.Utc),
 
-new DateTime(year: 2006, month: 10, day: 4, hour: 17, minute: 44, second: 48, millisecond: 408, kind: DateTimeKind.Utc),
+new DateTime(year: 1934, month: 10, day: 5, hour: 12, minute: 22, second: 42, millisecond: 403, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1927, month: 10, day: 2, hour: 17, minute: 32, second: 21, millisecond: 871, kind: DateTimeKind.Utc),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 1999, month: 10, day: 6, hour: 11, minute: 36, second: 13, millisecond: 529, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1922, month: 10, day: 9, hour: 10, minute: 47, second: 4, millisecond: 816, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1952, month: 10, day: 5, hour: 1, minute: 31, second: 19, millisecond: 391, kind: DateTimeKind.Utc),
+new DateTime(year: 1980, month: 10, day: 10, hour: 2, minute: 31, second: 16, millisecond: 392, kind: DateTimeKind.Utc),
 
 },
+    NullableValue = null,
 },
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1945, month: 10, day: 17, hour: 14, minute: 8, second: 24, millisecond: 795, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1942, month: 10, day: 9, hour: 4, minute: 44, second: 13, millisecond: 702, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1927, month: 10, day: 4, hour: 10, minute: 56, second: 21, millisecond: 84, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1962, month: 10, day: 4, hour: 14, minute: 38, second: 52, millisecond: 350, kind: DateTimeKind.Utc),
-
-},
+    NullableValue = null,
 },
             new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 98,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1969, month: 10, day: 10, hour: 14, minute: 33, second: 57, millisecond: 578, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1971, month: 10, day: 12, hour: 1, minute: 46, second: 26, millisecond: 467, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1993, month: 10, day: 10, hour: 19, minute: 4, second: 29, millisecond: 567, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1942, month: 10, day: 14, hour: 3, minute: 37, second: 32, millisecond: 758, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 2012, month: 10, day: 7, hour: 10, minute: 8, second: 10, millisecond: 662, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1951, month: 10, day: 15, hour: 17, minute: 47, second: 34, millisecond: 76, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1945, month: 10, day: 16, hour: 8, minute: 25, second: 20, millisecond: 416, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1960, month: 10, day: 19, hour: 20, minute: 27, second: 3, millisecond: 167, kind: DateTimeKind.Utc),
-
-},
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 107,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1920, month: 10, day: 14, hour: 10, minute: 12, second: 52, millisecond: 365, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2008, month: 10, day: 12, hour: 12, minute: 49, second: 25, millisecond: 25, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1935, month: 10, day: 19, hour: 13, minute: 3, second: 49, millisecond: 323, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2018, month: 10, day: 13, hour: 14, minute: 32, second: 29, millisecond: 345, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
 {
     Id = 54,
     Value = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 2004, month: 10, day: 5, hour: 13, minute: 30, second: 8, millisecond: 444, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1942, month: 10, day: 17, hour: 11, minute: 51, second: 43, millisecond: 210, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1944, month: 10, day: 7, hour: 15, minute: 5, second: 49, millisecond: 256, kind: DateTimeKind.Utc),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 2013, month: 10, day: 10, hour: 19, minute: 51, second: 10, millisecond: 805, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2017, month: 10, day: 11, hour: 17, minute: 38, second: 57, millisecond: 836, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1935, month: 10, day: 1, hour: 8, minute: 18, second: 42, millisecond: 851, kind: DateTimeKind.Utc),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 1940, month: 10, day: 16, hour: 21, minute: 36, second: 48, millisecond: 627, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1971, month: 10, day: 6, hour: 12, minute: 35, second: 27, millisecond: 548, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1942, month: 10, day: 9, hour: 9, minute: 7, second: 24, millisecond: 295, kind: DateTimeKind.Utc),
-
-},
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 111,
-    Value = 
 new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 1979, month: 10, day: 6, hour: 13, minute: 8, second: 21, millisecond: 648, kind: DateTimeKind.Utc),
+new DateTime(year: 2013, month: 10, day: 10, hour: 5, minute: 43, second: 37, millisecond: 954, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1957, month: 10, day: 7, hour: 22, minute: 7, second: 36, millisecond: 431, kind: DateTimeKind.Utc),
+new DateTime(year: 1942, month: 10, day: 2, hour: 15, minute: 41, second: 5, millisecond: 665, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1923, month: 10, day: 6, hour: 11, minute: 38, second: 6, millisecond: 859, kind: DateTimeKind.Utc),
+new DateTime(year: 1986, month: 10, day: 17, hour: 7, minute: 19, second: 38, millisecond: 673, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1998, month: 10, day: 10, hour: 3, minute: 49, second: 18, millisecond: 356, kind: DateTimeKind.Utc),
+new DateTime(year: 1945, month: 10, day: 16, hour: 14, minute: 56, second: 45, millisecond: 655, kind: DateTimeKind.Utc),
 
 },
     ModelInner = null,
     NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(4)
+new System.Collections.Generic.List<System.DateTime>(3)
 {
-new DateTime(year: 2004, month: 10, day: 19, hour: 8, minute: 34, second: 19, millisecond: 618, kind: DateTimeKind.Utc),
+new DateTime(year: 1932, month: 10, day: 13, hour: 14, minute: 48, second: 29, millisecond: 180, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1931, month: 10, day: 14, hour: 16, minute: 26, second: 41, millisecond: 62, kind: DateTimeKind.Utc),
+new DateTime(year: 1966, month: 10, day: 9, hour: 4, minute: 24, second: 16, millisecond: 324, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1922, month: 10, day: 2, hour: 1, minute: 47, second: 13, millisecond: 821, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1936, month: 10, day: 9, hour: 3, minute: 1, second: 44, millisecond: 501, kind: DateTimeKind.Utc),
+new DateTime(year: 1918, month: 10, day: 15, hour: 10, minute: 16, second: 7, millisecond: 381, kind: DateTimeKind.Utc),
 
 },
 },
             new DateTimetimestamp_with_time_zoneArray2M
 {
-    Id = 117,
+    Id = 57,
     Value = 
 new System.Collections.Generic.List<System.DateTime>(3)
 {
-new DateTime(year: 1935, month: 10, day: 7, hour: 3, minute: 29, second: 20, millisecond: 876, kind: DateTimeKind.Utc),
+new DateTime(year: 1942, month: 10, day: 7, hour: 4, minute: 48, second: 23, millisecond: 185, kind: DateTimeKind.Utc),
 
-new DateTime(year: 2007, month: 10, day: 8, hour: 10, minute: 23, second: 15, millisecond: 280, kind: DateTimeKind.Utc),
+new DateTime(year: 1995, month: 10, day: 10, hour: 12, minute: 27, second: 55, millisecond: 660, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1941, month: 10, day: 17, hour: 9, minute: 37, second: 42, millisecond: 207, kind: DateTimeKind.Utc),
+new DateTime(year: 1918, month: 10, day: 1, hour: 14, minute: 10, second: 28, millisecond: 54, kind: DateTimeKind.Utc),
 
 },
     ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
 {
-    Id = 58,
+    Id = 17,
     Value = 
-new System.Collections.Generic.List<System.DateTime>(3)
+new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 2003, month: 10, day: 8, hour: 14, minute: 21, second: 46, millisecond: 122, kind: DateTimeKind.Utc),
+new DateTime(year: 1967, month: 10, day: 15, hour: 5, minute: 32, second: 17, millisecond: 532, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1931, month: 10, day: 15, hour: 3, minute: 28, second: 36, millisecond: 672, kind: DateTimeKind.Utc),
+new DateTime(year: 1955, month: 10, day: 8, hour: 2, minute: 20, second: 35, millisecond: 560, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1951, month: 10, day: 10, hour: 21, minute: 26, second: 29, millisecond: 167, kind: DateTimeKind.Utc),
+new DateTime(year: 2004, month: 10, day: 3, hour: 17, minute: 16, second: 37, millisecond: 448, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2009, month: 10, day: 3, hour: 9, minute: 45, second: 58, millisecond: 320, kind: DateTimeKind.Utc),
 
 },
     NullableValue = null,
+},
+    NullableValue = null,
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 61,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1934, month: 10, day: 7, hour: 20, minute: 6, second: 26, millisecond: 852, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1988, month: 10, day: 5, hour: 21, minute: 17, second: 1, millisecond: 178, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1926, month: 10, day: 12, hour: 9, minute: 34, second: 42, millisecond: 497, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2014, month: 10, day: 10, hour: 13, minute: 38, second: 29, millisecond: 17, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 64,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1954, month: 10, day: 2, hour: 1, minute: 37, second: 11, millisecond: 941, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1918, month: 10, day: 9, hour: 21, minute: 30, second: 51, millisecond: 795, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1946, month: 10, day: 14, hour: 17, minute: 10, second: 58, millisecond: 679, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
+{
+    Id = 22,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 2016, month: 10, day: 2, hour: 5, minute: 9, second: 41, millisecond: 512, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1942, month: 10, day: 11, hour: 18, minute: 46, second: 4, millisecond: 383, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2013, month: 10, day: 15, hour: 18, minute: 45, second: 30, millisecond: 666, kind: DateTimeKind.Utc),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1986, month: 10, day: 7, hour: 2, minute: 4, second: 55, millisecond: 806, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1935, month: 10, day: 14, hour: 10, minute: 43, second: 31, millisecond: 188, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1972, month: 10, day: 19, hour: 9, minute: 16, second: 55, millisecond: 344, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1971, month: 10, day: 4, hour: 18, minute: 8, second: 12, millisecond: 181, kind: DateTimeKind.Utc),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1923, month: 10, day: 8, hour: 11, minute: 22, second: 51, millisecond: 799, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1995, month: 10, day: 3, hour: 15, minute: 37, second: 35, millisecond: 28, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1928, month: 10, day: 17, hour: 16, minute: 24, second: 36, millisecond: 656, kind: DateTimeKind.Utc),
+
+},
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 69,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 2013, month: 10, day: 17, hour: 13, minute: 17, second: 15, millisecond: 962, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1980, month: 10, day: 12, hour: 5, minute: 1, second: 46, millisecond: 567, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2003, month: 10, day: 10, hour: 18, minute: 28, second: 14, millisecond: 285, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 74,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1990, month: 10, day: 5, hour: 8, minute: 5, second: 52, millisecond: 385, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1981, month: 10, day: 12, hour: 10, minute: 26, second: 54, millisecond: 198, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1973, month: 10, day: 6, hour: 11, minute: 15, second: 37, millisecond: 604, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
+{
+    Id = 30,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 2013, month: 10, day: 17, hour: 22, minute: 31, second: 6, millisecond: 379, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1970, month: 10, day: 17, hour: 3, minute: 10, second: 14, millisecond: 858, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1993, month: 10, day: 1, hour: 22, minute: 45, second: 39, millisecond: 896, kind: DateTimeKind.Utc),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1968, month: 10, day: 3, hour: 22, minute: 48, second: 49, millisecond: 500, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1960, month: 10, day: 8, hour: 17, minute: 26, second: 56, millisecond: 935, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1963, month: 10, day: 18, hour: 8, minute: 8, second: 55, millisecond: 580, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1995, month: 10, day: 18, hour: 2, minute: 16, second: 41, millisecond: 857, kind: DateTimeKind.Utc),
+
+},
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 81,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 2019, month: 10, day: 13, hour: 1, minute: 4, second: 24, millisecond: 981, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1964, month: 10, day: 1, hour: 10, minute: 5, second: 54, millisecond: 818, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1939, month: 10, day: 7, hour: 11, minute: 38, second: 15, millisecond: 143, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2004, month: 10, day: 18, hour: 5, minute: 34, second: 39, millisecond: 332, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 2004, month: 10, day: 17, hour: 3, minute: 39, second: 49, millisecond: 803, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2011, month: 10, day: 19, hour: 4, minute: 57, second: 53, millisecond: 923, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1918, month: 10, day: 5, hour: 2, minute: 17, second: 21, millisecond: 798, kind: DateTimeKind.Utc),
+
+},
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 84,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1948, month: 10, day: 14, hour: 15, minute: 3, second: 40, millisecond: 740, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1975, month: 10, day: 11, hour: 5, minute: 57, second: 12, millisecond: 859, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2013, month: 10, day: 10, hour: 9, minute: 5, second: 3, millisecond: 833, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2012, month: 10, day: 11, hour: 11, minute: 53, second: 22, millisecond: 936, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
+{
+    Id = 33,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 2006, month: 10, day: 16, hour: 11, minute: 39, second: 38, millisecond: 321, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2014, month: 10, day: 1, hour: 21, minute: 4, second: 54, millisecond: 724, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1950, month: 10, day: 9, hour: 20, minute: 32, second: 34, millisecond: 647, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1939, month: 10, day: 3, hour: 13, minute: 11, second: 3, millisecond: 681, kind: DateTimeKind.Utc),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1930, month: 10, day: 4, hour: 10, minute: 38, second: 39, millisecond: 529, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1979, month: 10, day: 10, hour: 20, minute: 7, second: 32, millisecond: 839, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1978, month: 10, day: 3, hour: 3, minute: 19, second: 57, millisecond: 833, kind: DateTimeKind.Utc),
+
+},
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 85,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1959, month: 10, day: 19, hour: 18, minute: 45, second: 54, millisecond: 850, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1994, month: 10, day: 1, hour: 5, minute: 22, second: 58, millisecond: 343, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1986, month: 10, day: 12, hour: 6, minute: 56, second: 39, millisecond: 640, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 86,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 2015, month: 10, day: 7, hour: 8, minute: 19, second: 37, millisecond: 400, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2018, month: 10, day: 6, hour: 20, minute: 4, second: 31, millisecond: 508, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1957, month: 10, day: 14, hour: 3, minute: 48, second: 34, millisecond: 23, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1970, month: 10, day: 2, hour: 12, minute: 42, second: 16, millisecond: 754, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
+{
+    Id = 34,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1941, month: 10, day: 17, hour: 15, minute: 45, second: 2, millisecond: 539, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1987, month: 10, day: 8, hour: 11, minute: 23, second: 34, millisecond: 378, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1987, month: 10, day: 18, hour: 22, minute: 14, second: 37, millisecond: 901, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1988, month: 10, day: 17, hour: 10, minute: 25, second: 32, millisecond: 146, kind: DateTimeKind.Utc),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1979, month: 10, day: 17, hour: 9, minute: 15, second: 44, millisecond: 857, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1940, month: 10, day: 19, hour: 5, minute: 46, second: 31, millisecond: 325, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1991, month: 10, day: 12, hour: 7, minute: 55, second: 53, millisecond: 4, kind: DateTimeKind.Utc),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1935, month: 10, day: 4, hour: 18, minute: 25, second: 18, millisecond: 538, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1917, month: 10, day: 16, hour: 7, minute: 42, second: 13, millisecond: 587, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1963, month: 10, day: 13, hour: 3, minute: 20, second: 1, millisecond: 729, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1978, month: 10, day: 1, hour: 7, minute: 46, second: 38, millisecond: 358, kind: DateTimeKind.Utc),
+
+},
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 91,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1986, month: 10, day: 17, hour: 19, minute: 38, second: 38, millisecond: 898, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2001, month: 10, day: 7, hour: 20, minute: 39, second: 1, millisecond: 608, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2019, month: 10, day: 17, hour: 4, minute: 33, second: 22, millisecond: 226, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 97,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1973, month: 10, day: 8, hour: 13, minute: 58, second: 56, millisecond: 408, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1920, month: 10, day: 3, hour: 13, minute: 2, second: 19, millisecond: 568, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1927, month: 10, day: 6, hour: 8, minute: 24, second: 1, millisecond: 118, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
+{
+    Id = 37,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 2013, month: 10, day: 11, hour: 22, minute: 52, second: 51, millisecond: 285, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1998, month: 10, day: 6, hour: 7, minute: 51, second: 22, millisecond: 93, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1964, month: 10, day: 3, hour: 9, minute: 53, second: 53, millisecond: 431, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1922, month: 10, day: 18, hour: 16, minute: 46, second: 52, millisecond: 728, kind: DateTimeKind.Utc),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1963, month: 10, day: 11, hour: 14, minute: 24, second: 7, millisecond: 541, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1956, month: 10, day: 3, hour: 21, minute: 53, second: 46, millisecond: 689, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1970, month: 10, day: 15, hour: 12, minute: 10, second: 6, millisecond: 329, kind: DateTimeKind.Utc),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1948, month: 10, day: 13, hour: 10, minute: 28, second: 9, millisecond: 966, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1927, month: 10, day: 8, hour: 8, minute: 40, second: 5, millisecond: 902, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1931, month: 10, day: 1, hour: 13, minute: 14, second: 16, millisecond: 351, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1964, month: 10, day: 14, hour: 13, minute: 47, second: 11, millisecond: 594, kind: DateTimeKind.Utc),
+
+},
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 103,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 2017, month: 10, day: 13, hour: 14, minute: 10, second: 41, millisecond: 450, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2015, month: 10, day: 9, hour: 4, minute: 16, second: 36, millisecond: 115, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1977, month: 10, day: 19, hour: 13, minute: 46, second: 14, millisecond: 560, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 112,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1978, month: 10, day: 17, hour: 1, minute: 52, second: 40, millisecond: 772, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1919, month: 10, day: 19, hour: 17, minute: 33, second: 57, millisecond: 129, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1950, month: 10, day: 6, hour: 15, minute: 2, second: 52, millisecond: 798, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
+{
+    Id = 39,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 2003, month: 10, day: 9, hour: 4, minute: 9, second: 44, millisecond: 553, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1974, month: 10, day: 13, hour: 21, minute: 52, second: 2, millisecond: 162, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1975, month: 10, day: 10, hour: 4, minute: 42, second: 33, millisecond: 839, kind: DateTimeKind.Utc),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1936, month: 10, day: 6, hour: 9, minute: 38, second: 16, millisecond: 196, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1988, month: 10, day: 9, hour: 14, minute: 21, second: 35, millisecond: 555, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1939, month: 10, day: 6, hour: 21, minute: 26, second: 31, millisecond: 492, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2018, month: 10, day: 16, hour: 21, minute: 31, second: 37, millisecond: 137, kind: DateTimeKind.Utc),
+
+},
 },
     NullableValue = null,
 },
@@ -731,94 +680,15 @@ new DateTime(year: 1951, month: 10, day: 10, hour: 21, minute: 26, second: 29, m
 {
     Id = 120,
     Value = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 1939, month: 10, day: 17, hour: 13, minute: 50, second: 7, millisecond: 454, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1951, month: 10, day: 4, hour: 4, minute: 1, second: 52, millisecond: 429, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1918, month: 10, day: 10, hour: 10, minute: 48, second: 37, millisecond: 114, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 1980, month: 10, day: 2, hour: 7, minute: 14, second: 41, millisecond: 215, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1930, month: 10, day: 8, hour: 2, minute: 13, second: 17, millisecond: 694, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1981, month: 10, day: 15, hour: 5, minute: 47, second: 54, millisecond: 109, kind: DateTimeKind.Utc),
-
-},
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 121,
-    Value = 
 new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 1998, month: 10, day: 4, hour: 14, minute: 19, second: 31, millisecond: 396, kind: DateTimeKind.Utc),
+new DateTime(year: 1939, month: 10, day: 17, hour: 7, minute: 46, second: 32, millisecond: 879, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1917, month: 10, day: 5, hour: 11, minute: 40, second: 49, millisecond: 167, kind: DateTimeKind.Utc),
+new DateTime(year: 1930, month: 10, day: 9, hour: 17, minute: 10, second: 13, millisecond: 934, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1962, month: 10, day: 19, hour: 11, minute: 53, second: 43, millisecond: 115, kind: DateTimeKind.Utc),
+new DateTime(year: 2007, month: 10, day: 4, hour: 10, minute: 20, second: 17, millisecond: 453, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1945, month: 10, day: 6, hour: 9, minute: 28, second: 7, millisecond: 669, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
-{
-    Id = 63,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1960, month: 10, day: 12, hour: 10, minute: 14, second: 43, millisecond: 109, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1941, month: 10, day: 17, hour: 18, minute: 53, second: 34, millisecond: 534, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1939, month: 10, day: 16, hour: 1, minute: 43, second: 49, millisecond: 108, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1971, month: 10, day: 18, hour: 21, minute: 52, second: 32, millisecond: 386, kind: DateTimeKind.Utc),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(3)
-{
-new DateTime(year: 1956, month: 10, day: 4, hour: 13, minute: 28, second: 21, millisecond: 648, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1936, month: 10, day: 8, hour: 20, minute: 21, second: 27, millisecond: 586, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1992, month: 10, day: 19, hour: 7, minute: 54, second: 7, millisecond: 288, kind: DateTimeKind.Utc),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1979, month: 10, day: 16, hour: 17, minute: 32, second: 29, millisecond: 644, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1957, month: 10, day: 19, hour: 13, minute: 31, second: 35, millisecond: 518, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1922, month: 10, day: 3, hour: 12, minute: 26, second: 10, millisecond: 225, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1924, month: 10, day: 13, hour: 11, minute: 49, second: 18, millisecond: 249, kind: DateTimeKind.Utc),
-
-},
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 125,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 2015, month: 10, day: 9, hour: 2, minute: 42, second: 16, millisecond: 349, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1955, month: 10, day: 18, hour: 17, minute: 29, second: 27, millisecond: 184, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2002, month: 10, day: 3, hour: 9, minute: 52, second: 17, millisecond: 210, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1996, month: 10, day: 19, hour: 10, minute: 30, second: 47, millisecond: 361, kind: DateTimeKind.Utc),
+new DateTime(year: 1972, month: 10, day: 13, hour: 16, minute: 11, second: 33, millisecond: 456, kind: DateTimeKind.Utc),
 
 },
     ModelInner = null,
@@ -826,42 +696,33 @@ new DateTime(year: 1996, month: 10, day: 19, hour: 10, minute: 30, second: 47, m
 },
             new DateTimetimestamp_with_time_zoneArray2M
 {
-    Id = 130,
+    Id = 126,
     Value = 
-new System.Collections.Generic.List<System.DateTime>(3)
+new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 1965, month: 10, day: 16, hour: 2, minute: 6, second: 49, millisecond: 38, kind: DateTimeKind.Utc),
+new DateTime(year: 1952, month: 10, day: 7, hour: 18, minute: 48, second: 7, millisecond: 808, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1988, month: 10, day: 10, hour: 9, minute: 4, second: 32, millisecond: 891, kind: DateTimeKind.Utc),
+new DateTime(year: 1990, month: 10, day: 17, hour: 3, minute: 7, second: 22, millisecond: 47, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1939, month: 10, day: 8, hour: 22, minute: 35, second: 33, millisecond: 198, kind: DateTimeKind.Utc),
+new DateTime(year: 1962, month: 10, day: 14, hour: 19, minute: 28, second: 38, millisecond: 337, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1936, month: 10, day: 15, hour: 11, minute: 34, second: 4, millisecond: 283, kind: DateTimeKind.Utc),
 
 },
     ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
 {
-    Id = 68,
+    Id = 46,
     Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 2002, month: 10, day: 12, hour: 15, minute: 18, second: 45, millisecond: 932, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2001, month: 10, day: 12, hour: 17, minute: 54, second: 8, millisecond: 154, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1935, month: 10, day: 6, hour: 9, minute: 3, second: 2, millisecond: 78, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1994, month: 10, day: 1, hour: 17, minute: 51, second: 28, millisecond: 401, kind: DateTimeKind.Utc),
-
-},
-    NullableValue = 
 new System.Collections.Generic.List<System.DateTime>(3)
 {
-new DateTime(year: 2012, month: 10, day: 4, hour: 20, minute: 55, second: 26, millisecond: 621, kind: DateTimeKind.Utc),
+new DateTime(year: 1935, month: 10, day: 3, hour: 3, minute: 3, second: 9, millisecond: 527, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1935, month: 10, day: 5, hour: 7, minute: 27, second: 17, millisecond: 84, kind: DateTimeKind.Utc),
+new DateTime(year: 1940, month: 10, day: 8, hour: 20, minute: 30, second: 50, millisecond: 279, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1982, month: 10, day: 2, hour: 15, minute: 51, second: 55, millisecond: 565, kind: DateTimeKind.Utc),
+new DateTime(year: 2000, month: 10, day: 14, hour: 1, minute: 36, second: 58, millisecond: 89, kind: DateTimeKind.Utc),
 
 },
+    NullableValue = null,
 },
     NullableValue = null,
 },
@@ -869,123 +730,251 @@ new DateTime(year: 1982, month: 10, day: 2, hour: 15, minute: 51, second: 55, mi
 {
     Id = 132,
     Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
+new System.Collections.Generic.List<System.DateTime>(3)
 {
-new DateTime(year: 1988, month: 10, day: 10, hour: 17, minute: 53, second: 16, millisecond: 539, kind: DateTimeKind.Utc),
+new DateTime(year: 1960, month: 10, day: 18, hour: 3, minute: 10, second: 58, millisecond: 886, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1988, month: 10, day: 1, hour: 21, minute: 49, second: 8, millisecond: 817, kind: DateTimeKind.Utc),
+new DateTime(year: 1923, month: 10, day: 5, hour: 8, minute: 5, second: 44, millisecond: 164, kind: DateTimeKind.Utc),
 
-new DateTime(year: 2010, month: 10, day: 9, hour: 4, minute: 24, second: 12, millisecond: 177, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1995, month: 10, day: 12, hour: 17, minute: 7, second: 47, millisecond: 480, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 141,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 2010, month: 10, day: 5, hour: 9, minute: 29, second: 4, millisecond: 116, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1954, month: 10, day: 5, hour: 15, minute: 23, second: 34, millisecond: 653, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1994, month: 10, day: 1, hour: 12, minute: 10, second: 47, millisecond: 374, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1978, month: 10, day: 12, hour: 14, minute: 14, second: 29, millisecond: 951, kind: DateTimeKind.Utc),
-
-},
-    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
-{
-    Id = 69,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1966, month: 10, day: 8, hour: 12, minute: 41, second: 10, millisecond: 890, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1918, month: 10, day: 7, hour: 14, minute: 27, second: 11, millisecond: 768, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1980, month: 10, day: 6, hour: 11, minute: 53, second: 9, millisecond: 285, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1967, month: 10, day: 10, hour: 17, minute: 13, second: 2, millisecond: 844, kind: DateTimeKind.Utc),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 2017, month: 10, day: 4, hour: 17, minute: 24, second: 37, millisecond: 578, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1947, month: 10, day: 5, hour: 10, minute: 13, second: 54, millisecond: 600, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1982, month: 10, day: 9, hour: 12, minute: 47, second: 32, millisecond: 78, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1929, month: 10, day: 4, hour: 5, minute: 52, second: 34, millisecond: 336, kind: DateTimeKind.Utc),
-
-},
-},
-            new DateTimetimestamp_with_time_zoneArray2M
-{
-    Id = 146,
-    Value = 
-new System.Collections.Generic.List<System.DateTime>(4)
-{
-new DateTime(year: 1952, month: 10, day: 19, hour: 7, minute: 57, second: 46, millisecond: 254, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1946, month: 10, day: 1, hour: 9, minute: 22, second: 19, millisecond: 798, kind: DateTimeKind.Utc),
-
-new DateTime(year: 2003, month: 10, day: 4, hour: 17, minute: 26, second: 2, millisecond: 216, kind: DateTimeKind.Utc),
-
-new DateTime(year: 1932, month: 10, day: 10, hour: 22, minute: 34, second: 3, millisecond: 860, kind: DateTimeKind.Utc),
+new DateTime(year: 1968, month: 10, day: 5, hour: 18, minute: 13, second: 4, millisecond: 957, kind: DateTimeKind.Utc),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.DateTime>(3)
 {
-new DateTime(year: 2004, month: 10, day: 17, hour: 1, minute: 58, second: 9, millisecond: 223, kind: DateTimeKind.Utc),
+new DateTime(year: 1918, month: 10, day: 17, hour: 18, minute: 15, second: 13, millisecond: 353, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1993, month: 10, day: 5, hour: 2, minute: 46, second: 53, millisecond: 388, kind: DateTimeKind.Utc),
+new DateTime(year: 2018, month: 10, day: 17, hour: 1, minute: 15, second: 3, millisecond: 232, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1926, month: 10, day: 17, hour: 14, minute: 49, second: 39, millisecond: 162, kind: DateTimeKind.Utc),
+new DateTime(year: 1919, month: 10, day: 7, hour: 5, minute: 4, second: 10, millisecond: 685, kind: DateTimeKind.Utc),
 
 },
 },
             new DateTimetimestamp_with_time_zoneArray2M
 {
-    Id = 154,
+    Id = 136,
     Value = 
 new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 2016, month: 10, day: 18, hour: 16, minute: 38, second: 56, millisecond: 649, kind: DateTimeKind.Utc),
+new DateTime(year: 1986, month: 10, day: 7, hour: 3, minute: 54, second: 54, millisecond: 723, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1974, month: 10, day: 3, hour: 18, minute: 2, second: 50, millisecond: 40, kind: DateTimeKind.Utc),
+new DateTime(year: 1944, month: 10, day: 10, hour: 11, minute: 47, second: 50, millisecond: 545, kind: DateTimeKind.Utc),
 
-new DateTime(year: 2001, month: 10, day: 2, hour: 4, minute: 43, second: 43, millisecond: 162, kind: DateTimeKind.Utc),
+new DateTime(year: 1942, month: 10, day: 7, hour: 18, minute: 11, second: 29, millisecond: 711, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1935, month: 10, day: 2, hour: 9, minute: 11, second: 48, millisecond: 724, kind: DateTimeKind.Utc),
+new DateTime(year: 1983, month: 10, day: 18, hour: 20, minute: 9, second: 28, millisecond: 652, kind: DateTimeKind.Utc),
 
 },
     ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
 {
-    Id = 73,
+    Id = 47,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1992, month: 10, day: 15, hour: 11, minute: 27, second: 56, millisecond: 639, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1996, month: 10, day: 10, hour: 16, minute: 5, second: 31, millisecond: 877, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1977, month: 10, day: 14, hour: 8, minute: 2, second: 3, millisecond: 750, kind: DateTimeKind.Utc),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1923, month: 10, day: 18, hour: 20, minute: 4, second: 47, millisecond: 936, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2000, month: 10, day: 9, hour: 8, minute: 13, second: 7, millisecond: 703, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1962, month: 10, day: 16, hour: 21, minute: 44, second: 4, millisecond: 987, kind: DateTimeKind.Utc),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1936, month: 10, day: 5, hour: 9, minute: 17, second: 22, millisecond: 719, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1926, month: 10, day: 17, hour: 7, minute: 21, second: 4, millisecond: 704, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1934, month: 10, day: 11, hour: 13, minute: 19, second: 9, millisecond: 495, kind: DateTimeKind.Utc),
+
+},
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 137,
     Value = 
 new System.Collections.Generic.List<System.DateTime>(4)
 {
-new DateTime(year: 1931, month: 10, day: 17, hour: 21, minute: 48, second: 31, millisecond: 135, kind: DateTimeKind.Utc),
+new DateTime(year: 2011, month: 10, day: 16, hour: 18, minute: 14, second: 6, millisecond: 385, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1970, month: 10, day: 13, hour: 2, minute: 39, second: 12, millisecond: 886, kind: DateTimeKind.Utc),
+new DateTime(year: 1987, month: 10, day: 11, hour: 6, minute: 23, second: 7, millisecond: 570, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1919, month: 10, day: 10, hour: 16, minute: 44, second: 37, millisecond: 188, kind: DateTimeKind.Utc),
+new DateTime(year: 1938, month: 10, day: 9, hour: 7, minute: 8, second: 32, millisecond: 997, kind: DateTimeKind.Utc),
 
-new DateTime(year: 1999, month: 10, day: 16, hour: 1, minute: 4, second: 31, millisecond: 8, kind: DateTimeKind.Utc),
+new DateTime(year: 1931, month: 10, day: 6, hour: 4, minute: 24, second: 18, millisecond: 278, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 143,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1939, month: 10, day: 13, hour: 18, minute: 3, second: 52, millisecond: 430, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2001, month: 10, day: 2, hour: 18, minute: 40, second: 6, millisecond: 362, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1917, month: 10, day: 2, hour: 21, minute: 22, second: 23, millisecond: 371, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1970, month: 10, day: 3, hour: 15, minute: 58, second: 25, millisecond: 674, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
+{
+    Id = 49,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1983, month: 10, day: 17, hour: 7, minute: 50, second: 6, millisecond: 824, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1944, month: 10, day: 11, hour: 4, minute: 9, second: 48, millisecond: 960, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1957, month: 10, day: 9, hour: 8, minute: 49, second: 48, millisecond: 934, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2012, month: 10, day: 13, hour: 21, minute: 52, second: 5, millisecond: 794, kind: DateTimeKind.Utc),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1977, month: 10, day: 1, hour: 4, minute: 4, second: 24, millisecond: 766, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1978, month: 10, day: 10, hour: 20, minute: 22, second: 8, millisecond: 85, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1967, month: 10, day: 10, hour: 9, minute: 38, second: 30, millisecond: 857, kind: DateTimeKind.Utc),
+
+},
+},
+    NullableValue = null,
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 151,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1956, month: 10, day: 5, hour: 6, minute: 30, second: 6, millisecond: 667, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1921, month: 10, day: 12, hour: 9, minute: 42, second: 7, millisecond: 674, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1992, month: 10, day: 5, hour: 2, minute: 6, second: 8, millisecond: 649, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1918, month: 10, day: 10, hour: 9, minute: 44, second: 32, millisecond: 232, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 153,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1978, month: 10, day: 15, hour: 5, minute: 47, second: 24, millisecond: 4, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2005, month: 10, day: 10, hour: 4, minute: 41, second: 9, millisecond: 490, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1993, month: 10, day: 10, hour: 9, minute: 5, second: 11, millisecond: 143, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1923, month: 10, day: 2, hour: 16, minute: 18, second: 37, millisecond: 762, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
+{
+    Id = 51,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1974, month: 10, day: 13, hour: 6, minute: 39, second: 25, millisecond: 737, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1990, month: 10, day: 4, hour: 14, minute: 57, second: 39, millisecond: 930, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2002, month: 10, day: 3, hour: 21, minute: 29, second: 6, millisecond: 782, kind: DateTimeKind.Utc),
 
 },
     NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1948, month: 10, day: 3, hour: 2, minute: 50, second: 4, millisecond: 949, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1943, month: 10, day: 14, hour: 8, minute: 40, second: 28, millisecond: 245, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1925, month: 10, day: 15, hour: 16, minute: 38, second: 49, millisecond: 243, kind: DateTimeKind.Utc),
+
+},
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 162,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 2006, month: 10, day: 15, hour: 16, minute: 52, second: 23, millisecond: 351, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1949, month: 10, day: 10, hour: 16, minute: 58, second: 35, millisecond: 2, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1934, month: 10, day: 1, hour: 19, minute: 42, second: 32, millisecond: 140, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateTimetimestamp_with_time_zoneArray2M
+{
+    Id = 165,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1955, month: 10, day: 19, hour: 15, minute: 29, second: 6, millisecond: 706, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1986, month: 10, day: 18, hour: 11, minute: 29, second: 7, millisecond: 905, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1959, month: 10, day: 9, hour: 16, minute: 58, second: 4, millisecond: 441, kind: DateTimeKind.Utc),
+
+},
+    ModelInner = new DateTimetimestamp_with_time_zoneArray2MI
+{
+    Id = 59,
+    Value = 
+new System.Collections.Generic.List<System.DateTime>(3)
+{
+new DateTime(year: 1976, month: 10, day: 18, hour: 4, minute: 19, second: 58, millisecond: 959, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1995, month: 10, day: 3, hour: 22, minute: 23, second: 10, millisecond: 125, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1940, month: 10, day: 19, hour: 12, minute: 28, second: 53, millisecond: 145, kind: DateTimeKind.Utc),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateTime>(4)
+{
+new DateTime(year: 1927, month: 10, day: 9, hour: 17, minute: 54, second: 2, millisecond: 744, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1983, month: 10, day: 5, hour: 5, minute: 14, second: 36, millisecond: 43, kind: DateTimeKind.Utc),
+
+new DateTime(year: 1969, month: 10, day: 7, hour: 14, minute: 45, second: 38, millisecond: 616, kind: DateTimeKind.Utc),
+
+new DateTime(year: 2000, month: 10, day: 18, hour: 17, minute: 29, second: 51, millisecond: 427, kind: DateTimeKind.Utc),
+
+},
 },
     NullableValue = null,
 },
@@ -1447,6 +1436,99 @@ RETURNING
 
 [Gedaq.Npgsql.Attributes.Query(
             query: null,
+            methodName:"MMDynQuerySelectModelDynPar",
+            queryMapTypes: [typeof(FlatDateTimetimestamp_with_time_zoneArray2M), typeof(FlatDateTimetimestamp_with_time_zoneArray2M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IDateTimeListtimestamp_with_time_zoneArray)),
+Gedaq.Npgsql.Attributes.DynamicParametr()]
+        private void MMDynQuerySelectModelDynParConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelDynParTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.datetimetimestamp_with_time_zonearray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+                var models1 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                var models2 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                await ((IDateTimeListtimestamp_with_time_zoneArray)this).MMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.datetimetimestamp_with_time_zonearray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+                var models1 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                var models2 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                ((IDateTimeListtimestamp_with_time_zoneArray)this).MMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.Query(
+            query: null,
             methodName:"DynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatDateTimetimestamp_with_time_zoneArray2M)],
             methodType: MethodType.Async | MethodType.Sync,
@@ -1472,7 +1554,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1480,7 +1561,6 @@ ORDER BY
 ";
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
                 var models = await ((IDateTimeListtimestamp_with_time_zoneArray)this).DynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
@@ -1502,7 +1582,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1510,8 +1589,7 @@ ORDER BY
 ";
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
-                var models =  ((IDateTimeListtimestamp_with_time_zoneArray)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                var models = ((IDateTimeListtimestamp_with_time_zoneArray)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1561,7 +1639,6 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 await connection.OpenAsync();
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
                 var models = await ((IDateTimeListtimestamp_with_time_zoneArray)this).SelectModelDynParAsync(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
@@ -1579,12 +1656,104 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 await connection.OpenAsync();
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
-                var models =  ((IDateTimeListtimestamp_with_time_zoneArray)this).SelectModelDynPar(connection, [parametr1]);
+                var models = ((IDateTimeListtimestamp_with_time_zoneArray)this).SelectModelDynPar(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
                     DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.Query(
+            query: null,
+            methodName:"MMDynQuerySelectModel",
+            queryMapTypes: [typeof(FlatDateTimetimestamp_with_time_zoneArray2M), typeof(FlatDateTimetimestamp_with_time_zoneArray2M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IDateTimeListtimestamp_with_time_zoneArray)),
+Gedaq.Npgsql.Attributes.Parametr(
+            parametrType: typeof(System.Int32),
+            position: 1,
+            methodParametrName: "id",
+            dbType: (NpgsqlTypes.NpgsqlDbType)(9))]
+        private void MMDynQuerySelectModelConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.datetimetimestamp_with_time_zonearray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                var models2 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                await ((IDateTimeListtimestamp_with_time_zoneArray)this).MMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.datetimetimestamp_with_time_zonearray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                var models2 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                ((IDateTimeListtimestamp_with_time_zoneArray)this).MMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -1620,7 +1789,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1647,13 +1815,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
     m.id ASC
 ";
-                var models =  ((IDateTimeListtimestamp_with_time_zoneArray)this).DynQuerySelectModel(connection,  query, 0);
+                var models = ((IDateTimeListtimestamp_with_time_zoneArray)this).DynQuerySelectModel(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1720,11 +1887,107 @@ Gedaq.Npgsql.Attributes.Parametr(
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((IDateTimeListtimestamp_with_time_zoneArray)this).SelectModel(connection, 0);
+                var models = ((IDateTimeListtimestamp_with_time_zoneArray)this).SelectModel(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
                     DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: null,
+            methodName:"DbConnectionMMDynQuerySelectModelDynPar",
+            queryMapTypes: [typeof(FlatDateTimetimestamp_with_time_zoneArray2M), typeof(FlatDateTimetimestamp_with_time_zoneArray2M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IDateTimeListtimestamp_with_time_zoneArray)),
+Gedaq.DbConnection.Attributes.DynamicParametr()]
+        private void DbConnectionMMDynQuerySelectModelDynParConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.datetimetimestamp_with_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                var models2 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                await((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionMMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.datetimetimestamp_with_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                var models2 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionMMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -1771,7 +2034,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1781,8 +2043,7 @@ ORDER BY
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models = await ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
+                var models = await((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1799,12 +2060,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 73;
+                parametr1.Value = 112;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 117;
+                parametr2.Value = 120;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1813,7 +2074,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1825,7 +2085,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1836,16 +2095,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(15));
-FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[15], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[16], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[17], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[18], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[19], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[20], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[21], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(10));
+FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[20], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[21], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
-FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(9));
+FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[21], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[29], false);
                         continue;
                     }
                     
@@ -1866,7 +2125,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1876,8 +2134,7 @@ ORDER BY
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models =  ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                var models = ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1894,12 +2151,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 62;
+                parametr1.Value = 143;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 107;
+                parametr2.Value = 32;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1908,7 +2165,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1920,7 +2176,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1931,16 +2186,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(17));
-FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[13], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[14], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[15], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[16], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[17], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[18], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[19], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[20], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[21], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
-FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[20], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[21], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(26));
+FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[4], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[5], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[6], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[7], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[8], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[9], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[10], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[11], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[12], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[13], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[14], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[15], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[16], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[17], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[18], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[19], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[20], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[21], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[18],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[19],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[20],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[21],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[22],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[23],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[24],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[25],_testData[29], false);
                         continue;
                     }
                     
@@ -2008,8 +2263,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models = await ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
+                var models = await((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2026,12 +2280,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 9;
+                parametr1.Value = 32;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 130;
+                parametr2.Value = 16;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in await ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
@@ -2039,16 +2293,16 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(29));
-DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[1], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[2], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[3], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[4], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[5], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[6], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[7], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[8], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[9], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[10], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[11], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[12], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[13], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[14], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[15], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[16], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[17], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[18], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[18],_testData[19], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[19],_testData[20], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[20],_testData[21], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[21],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[22],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[23],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[24],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[25],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[26],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[27],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[28],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(26));
+DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[4], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[5], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[6], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[7], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[8], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[9], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[10], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[11], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[12], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[13], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[14], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[15], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[16], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[17], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[18], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[19], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[20], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[21], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[18],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[19],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[20],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[21],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[22],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[23],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[24],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[25],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
-DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(28));
+DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[2], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[3], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[4], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[5], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[6], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[7], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[8], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[9], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[10], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[11], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[12], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[13], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[14], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[15], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[16], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[17], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[18], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[19], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[18],_testData[20], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[19],_testData[21], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[20],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[21],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[22],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[23],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[24],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[25],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[26],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[27],_testData[29], false);
                         continue;
                     }
                     
@@ -2067,8 +2321,7 @@ DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[26], fal
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models =  ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
+                var models = ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2085,12 +2338,12 @@ DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[26], fal
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 40;
+                parametr1.Value = 112;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 40;
+                parametr2.Value = 32;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in  ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
@@ -2098,20 +2351,112 @@ DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[26], fal
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
-DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[7], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[8], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[9], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[10], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[11], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[12], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[13], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[14], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[15], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[16], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[17], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[18], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[19], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[20], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[21], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[18],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[19],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[20],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[21],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[22],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(10));
+DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[20], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[21], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
-DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[7], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[8], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[9], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[10], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[11], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[12], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[13], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[14], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[15], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[16], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[17], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[18], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[19], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[20], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[21], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[18],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[19],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[20],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[21],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[22],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(26));
+DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[4], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[5], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[6], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[7], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[8], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[9], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[10], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[11], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[12], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[13], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[14], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[15], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[16], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[17], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[18], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[19], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[20], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[21], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[18],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[19],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[20],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[21],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[22],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[23],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[24],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[25],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
+                }
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: null,
+            methodName:"DbConnectionMMDynQuerySelectModel",
+            queryMapTypes: [typeof(FlatDateTimetimestamp_with_time_zoneArray2M), typeof(FlatDateTimetimestamp_with_time_zoneArray2M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IDateTimeListtimestamp_with_time_zoneArray)),
+Gedaq.DbConnection.Attributes.Parametr(
+            parametrType: typeof(System.Int32), 
+            parametrName: "id", 
+            methodParametrName: "id", 
+            dbType: (System.Data.DbType)(11))]
+        private void DbConnectionMMDynQuerySelectModelConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.datetimetimestamp_with_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                var models2 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                await((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionMMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.datetimetimestamp_with_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                var models2 = new List<FlatDateTimetimestamp_with_time_zoneArray2M>();
+                ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionMMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -2162,13 +2507,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                var models = await ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
+                var models = await((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2190,7 +2534,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -2202,27 +2545,26 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 9, query1, 19, query2))
+                foreach(var batchResult in await ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 112, query1, 143, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(29));
-FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[1], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[2], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[3], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[4], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[5], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[6], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[7], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[8], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[9], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[10], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[11], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[12], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[13], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[14], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[15], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[16], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[17], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[18], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[18],_testData[19], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[19],_testData[20], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[20],_testData[21], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[21],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[22],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[23],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[24],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[25],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[26],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[27],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[28],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(10));
+FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[20], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[21], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
-FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[3], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[4], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[5], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[6], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[7], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[8], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[9], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[10], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[11], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[12], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[13], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[14], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[15], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[16], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[17], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[18], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[19], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[20], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[18],_testData[21], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[19],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[20],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[21],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[22],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[23],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[24],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[25],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[26],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }
                     
@@ -2243,13 +2585,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                var models =  ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
+                var models = ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2271,7 +2612,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -2283,27 +2623,26 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.datetimetimestamp_with_time_zonearray2m m
-LEFT JOIN public.datetimetimestamp_with_time_zonearray2mi mi ON mi.id = m.datetimetimestamp_with_time_zonearray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionDynQuerySelectModelBatch(connection, 130, query1, 107, query2))
+                foreach(var batchResult in  ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionDynQuerySelectModelBatch(connection, 37, query1, 54, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
-FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(25));
+FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[5], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[6], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[7], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[8], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[9], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[10], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[11], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[12], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[13], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[14], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[15], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[16], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[17], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[18], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[19], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[20], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[21], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[18],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[19],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[20],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[21],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[22],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[23],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[24],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
-FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[20], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[21], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(23));
+FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[7], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[8], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[9], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[10], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[11], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[12], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[13], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[14], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[15], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[16], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[17], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[18], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[19], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[20], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[21], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[22], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[23], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[24], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[18],_testData[25], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[19],_testData[26], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[20],_testData[27], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[21],_testData[28], false);FlatDateTimetimestamp_with_time_zoneArray2M.AssertModel(models[22],_testData[29], false);
                         continue;
                     }
                     
@@ -2371,7 +2710,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                var models = await ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModelAsync(connection, 0);
+                var models = await((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModelAsync(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2387,58 +2726,13 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModelBatchAsync(connection, 54, 132))
+                foreach(var batchResult in await ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModelBatchAsync(connection, 8, 97))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
-DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[12], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[13], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[14], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[15], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[16], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[17], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[18], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[19], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[20], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[21], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[29], false);
-                        continue;
-                    }                    
-
-                    if(resultIndex == 2)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[29], false);
-                        continue;
-                    }
-                    
-                    Assert.Fail("Unexpected batch count");
-                }
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionSelectModelTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var models =  ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModel(connection, 0);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
-                {
-                    DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[i],_testData[i], false);
-                }
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionSelectModelBatchTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                int resultIndex = 0;
-                foreach(var batchResult in  ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModelBatch(connection, 117, 90))
-                {
-                    if(++resultIndex == 1)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
-DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(29));
+DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[1], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[2], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[3], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[4], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[5], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[6], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[7], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[8], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[9], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[10], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[11], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[12], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[13], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[14], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[15], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[16], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[17], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[18], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[18],_testData[19], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[19],_testData[20], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[20],_testData[21], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[21],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[22],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[23],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[24],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[25],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[26],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[27],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[28],_testData[29], false);
                         continue;
                     }                    
 
@@ -2456,13 +2750,58 @@ DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[18], fal
         }
 
         [Test, Order(2)]
+        public async Task DbConnectionSelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var models = ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModel(connection, 0);
+                Assert.That(models, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                foreach(var batchResult in  ((IDateTimeListtimestamp_with_time_zoneArray)this).DbConnectionSelectModelBatch(connection, 74, 120))
+                {
+                    if(++resultIndex == 1)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(18));
+DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[12], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[13], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[14], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[15], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[16], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[17], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[18], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[19], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[20], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[21], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[29], false);
+                        continue;
+                    }                    
+
+                    if(resultIndex == 2)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(9));
+DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[21], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[29], false);
+                        continue;
+                    }
+                    
+                    Assert.Fail("Unexpected batch count");
+                }
+            }
+        }
+
+        [Test, Order(2)]
         public async Task DbConnectionCommandSelectModelTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IDateTimeListtimestamp_with_time_zoneArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IDateTimeListtimestamp_with_time_zoneArray)this).SetDbConnectionSelectModelParametrs(cmd, 89);
+                ((IDateTimeListtimestamp_with_time_zoneArray)this).SetDbConnectionSelectModelParametrs(cmd, 91);
                 var models = await ((IDateTimeListtimestamp_with_time_zoneArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
                 Assert.That(models, Has.Count.EqualTo(13));
@@ -2477,11 +2816,11 @@ DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[17], fal
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IDateTimeListtimestamp_with_time_zoneArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IDateTimeListtimestamp_with_time_zoneArray)this).SetDbConnectionSelectModelParametrs(cmd, 54);
+                ((IDateTimeListtimestamp_with_time_zoneArray)this).SetDbConnectionSelectModelParametrs(cmd, 151);
                 var models =  ((IDateTimeListtimestamp_with_time_zoneArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(18));
-DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[12], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[13], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[14], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[3],_testData[15], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[4],_testData[16], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[5],_testData[17], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[6],_testData[18], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[7],_testData[19], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[8],_testData[20], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[9],_testData[21], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[10],_testData[22], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[11],_testData[23], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[12],_testData[24], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[13],_testData[25], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[14],_testData[26], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[15],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[16],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[17],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(3));
+DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[0],_testData[27], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[1],_testData[28], false);DateTimetimestamp_with_time_zoneArray2M.AssertModel(models[2],_testData[29], false);
             }
         }
 

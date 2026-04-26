@@ -30,82 +30,26 @@ namespace Tests
         {
             new Doubledouble_precisionArray2M
 {
-    Id = 2,
+    Id = 9,
     Value = 
-new System.Collections.Generic.List<System.Double>(4)
+new System.Collections.Generic.List<System.Double>(3)
 {
-0.4146467454765206d,
+0.10142429518225715d,
 
-0.8102433977062802d,
+0.47325521957817895d,
 
-0.9563961174128548d,
-
-0.224406790216518d,
+0.26332596333700586d,
 
 },
     ModelInner = null,
     NullableValue = 
-new System.Collections.Generic.List<System.Double>(4)
-{
-0.8642190916074152d,
-
-0.5452644178210833d,
-
-0.18647841144105726d,
-
-0.1930445713508282d,
-
-},
-},
-            new Doubledouble_precisionArray2M
-{
-    Id = 8,
-    Value = 
-new System.Collections.Generic.List<System.Double>(4)
-{
-0.5062564055214754d,
-
-0.5784289128607623d,
-
-0.33538095463508066d,
-
-0.36189911186027224d,
-
-},
-    ModelInner = new Doubledouble_precisionArray2MI
-{
-    Id = 5,
-    Value = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.3248747165660951d,
+0.8576033185250624d,
 
-0.8415965811384007d,
+0.13986670249260946d,
 
-0.7761101889011847d,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Double>(4)
-{
-0.4391868885987852d,
-
-0.8525692801890241d,
-
-0.30754791486323374d,
-
-0.7978287398520393d,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Double>(3)
-{
-0.3512670024312379d,
-
-0.316894729478173d,
-
-0.26897530180088614d,
+0.18148368070675913d,
 
 },
 },
@@ -115,11 +59,50 @@ new System.Collections.Generic.List<System.Double>(3)
     Value = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.9710189900653546d,
+0.6682642742988459d,
 
-0.9446806337933373d,
+0.5795556224202867d,
 
-0.36672282093096165d,
+0.06918229551194699d,
+
+},
+    ModelInner = new Doubledouble_precisionArray2MI
+{
+    Id = 8,
+    Value = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.39500334477922094d,
+
+0.7589178087090797d,
+
+0.17658404017046192d,
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.4130140083532151d,
+
+0.3400473535523708d,
+
+0.11314792879001101d,
+
+},
+},
+            new Doubledouble_precisionArray2M
+{
+    Id = 18,
+    Value = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.3516632650674485d,
+
+0.12079103659700985d,
+
+0.9045045688753911d,
 
 },
     ModelInner = null,
@@ -127,76 +110,47 @@ new System.Collections.Generic.List<System.Double>(3)
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 15,
-    Value = 
-new System.Collections.Generic.List<System.Double>(4)
-{
-0.05288053576480878d,
-
-0.5238375472377271d,
-
-0.4803795058042126d,
-
-0.15044167681747522d,
-
-},
-    ModelInner = new Doubledouble_precisionArray2MI
-{
-    Id = 13,
-    Value = 
-new System.Collections.Generic.List<System.Double>(4)
-{
-0.4593071020111743d,
-
-0.6820003950280947d,
-
-0.2525840695831335d,
-
-0.17275473589443835d,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Double>(4)
-{
-0.5043113624873713d,
-
-0.4158461682027491d,
-
-0.3040414029791533d,
-
-0.814880193996661d,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Double>(4)
-{
-0.7613273982433308d,
-
-0.54829653430374d,
-
-0.8534608944878485d,
-
-0.43719744850528397d,
-
-},
-},
-            new Doubledouble_precisionArray2M
-{
     Id = 21,
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.3171550569431283d,
+0.10836497752817986d,
 
-0.13312826460332083d,
+0.0007316495327214234d,
 
-0.5100307101674362d,
+0.20937589354767572d,
 
-0.023306770220006157d,
+0.8701100836860878d,
 
 },
-    ModelInner = null,
+    ModelInner = new Doubledouble_precisionArray2MI
+{
+    Id = 16,
+    Value = 
+new System.Collections.Generic.List<System.Double>(4)
+{
+0.3657427713461059d,
+
+0.9630352267539557d,
+
+0.8952148862070703d,
+
+0.7947408322526933d,
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Double>(4)
+{
+0.30286322076679384d,
+
+0.7302934931039964d,
+
+0.7928356583392796d,
+
+0.427409948106929d,
+
+},
+},
     NullableValue = null,
 },
             new Doubledouble_precisionArray2M
@@ -205,11 +159,29 @@ new System.Collections.Generic.List<System.Double>(4)
     Value = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.4786557531222234d,
+0.3244899486000855d,
 
-0.9794306128905371d,
+0.40880359976313707d,
 
-0.019451400154394283d,
+0.5862175101558059d,
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new Doubledouble_precisionArray2M
+{
+    Id = 33,
+    Value = 
+new System.Collections.Generic.List<System.Double>(4)
+{
+0.12622029389759082d,
+
+0.762134334571416d,
+
+0.9809596903413643d,
+
+0.5336872708198801d,
 
 },
     ModelInner = new Doubledouble_precisionArray2MI
@@ -218,96 +190,96 @@ new System.Collections.Generic.List<System.Double>(3)
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.5584342277580674d,
+0.2380475658039879d,
 
-0.13041800727128117d,
+0.816513842273225d,
 
-0.3951925157343452d,
+0.1750452052915331d,
 
-0.7660813094405555d,
+0.8574873065368371d,
 
+},
+    NullableValue = null,
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.1817084146852439d,
+0.9293653664755624d,
 
-0.5707074560496416d,
+0.9731473135562992d,
 
-0.5099611283811794d,
+0.6108463733484301d,
 
 },
-},
-    NullableValue = null,
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 28,
+    Id = 38,
     Value = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.317014040918994d,
+0.3404678046672438d,
 
-0.6659337252924802d,
+0.8985169662603338d,
 
-0.4935460770837823d,
+0.6611485886854948d,
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.3068734943378967d,
+0.26291262932348836d,
 
-0.6032838064274859d,
+0.12950114239706612d,
 
-0.38334647213107687d,
+0.8182704840837337d,
 
 },
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 30,
+    Id = 45,
     Value = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.5142907747384494d,
+0.3559323309152814d,
 
-0.2180548281842607d,
+0.043802833499011595d,
 
-0.4357256398147722d,
+0.9337905783946276d,
 
 },
     ModelInner = new Doubledouble_precisionArray2MI
 {
-    Id = 29,
+    Id = 24,
+    Value = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.9962099519239883d,
+
+0.9472689445260024d,
+
+0.4181247892275486d,
+
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new Doubledouble_precisionArray2M
+{
+    Id = 47,
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.051503405357362975d,
+0.4069861851322879d,
 
-0.885211812832049d,
+0.8567119523257216d,
 
-0.5836696199696806d,
+0.5474705105424404d,
 
-0.5016395546983108d,
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new Doubledouble_precisionArray2M
-{
-    Id = 37,
-    Value = 
-new System.Collections.Generic.List<System.Double>(3)
-{
-0.09968862261373401d,
-
-0.33007438651562715d,
-
-0.05004112653859494d,
+0.4819329438802402d,
 
 },
     ModelInner = null,
@@ -315,133 +287,125 @@ new System.Collections.Generic.List<System.Double>(3)
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 41,
+    Id = 49,
     Value = 
-new System.Collections.Generic.List<System.Double>(3)
+new System.Collections.Generic.List<System.Double>(4)
 {
-0.9572494568802122d,
+0.8947127662419225d,
 
-0.3952220733344951d,
+0.6103019966699266d,
 
-0.6706809316294122d,
+0.5311082199998901d,
+
+0.053571759306965006d,
 
 },
     ModelInner = new Doubledouble_precisionArray2MI
 {
-    Id = 35,
+    Id = 31,
     Value = 
-new System.Collections.Generic.List<System.Double>(3)
+new System.Collections.Generic.List<System.Double>(4)
 {
-0.44542183345256237d,
+0.3960221371926621d,
 
-0.9257098411714455d,
+0.9527625093214039d,
 
-0.2634754148422144d,
+0.34643628047050645d,
 
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new Doubledouble_precisionArray2M
-{
-    Id = 48,
-    Value = 
-new System.Collections.Generic.List<System.Double>(3)
-{
-0.49685348613749647d,
-
-0.908425842184047d,
-
-0.986592051013518d,
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Double>(3)
-{
-0.6752226378812539d,
-
-0.7574474687427665d,
-
-0.027671722752058425d,
-
-},
-},
-            new Doubledouble_precisionArray2M
-{
-    Id = 54,
-    Value = 
-new System.Collections.Generic.List<System.Double>(3)
-{
-0.4726479114903438d,
-
-0.24572973345961546d,
-
-0.4612620731404842d,
-
-},
-    ModelInner = new Doubledouble_precisionArray2MI
-{
-    Id = 41,
-    Value = 
-new System.Collections.Generic.List<System.Double>(3)
-{
-0.43598352594638234d,
-
-0.7719942015819192d,
-
-0.43441039629045464d,
+0.46966356487844607d,
 
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.7246018843106282d,
+0.08060212871500905d,
 
-0.5604526397482382d,
+0.6570846168592598d,
 
-0.2235428659144869d,
+0.008467747550405691d,
 
-0.08324527769085266d,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Double>(3)
-{
-0.7605090633783707d,
-
-0.21182101343702753d,
-
-0.8634481811098261d,
+0.951075982890379d,
 
 },
+},
+    NullableValue = null,
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 57,
+    Id = 50,
     Value = 
-new System.Collections.Generic.List<System.Double>(3)
+new System.Collections.Generic.List<System.Double>(4)
 {
-0.9766495095825032d,
+0.8952456743016632d,
 
-0.3343009811410941d,
+0.3614283998089365d,
 
-0.24838531685693743d,
+0.4412850915732127d,
+
+0.05679552176486735d,
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.7305507578690182d,
+0.6948804119861592d,
 
-0.31906463134831176d,
+0.331805534842181d,
 
-0.41986310936348625d,
+0.392473838179772d,
 
-0.19400808363871858d,
+0.13320801079829736d,
+
+},
+},
+            new Doubledouble_precisionArray2M
+{
+    Id = 58,
+    Value = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.1930253200704145d,
+
+0.20968580886373345d,
+
+0.4851106968590245d,
+
+},
+    ModelInner = new Doubledouble_precisionArray2MI
+{
+    Id = 34,
+    Value = 
+new System.Collections.Generic.List<System.Double>(4)
+{
+0.35339155690161805d,
+
+0.26519915029490326d,
+
+0.4123284173073274d,
+
+0.9976797299366764d,
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.48360375074924056d,
+
+0.7507293963105977d,
+
+0.4108845201907936d,
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.32553670506715915d,
+
+0.4120491332969727d,
+
+0.8702467673825246d,
 
 },
 },
@@ -449,126 +413,225 @@ new System.Collections.Generic.List<System.Double>(4)
 {
     Id = 64,
     Value = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.9729222246056188d,
+
+0.08340357384132269d,
+
+0.8036464220327372d,
+
+},
+    ModelInner = null,
+    NullableValue = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.8601983275225573d,
+0.18488409085858049d,
 
-0.8483997439398457d,
+0.31337012740211645d,
 
-0.8108273434418405d,
+0.40245270397410393d,
 
-0.13280352887608127d,
+0.3608947778197681d,
+
+},
+},
+            new Doubledouble_precisionArray2M
+{
+    Id = 67,
+    Value = 
+new System.Collections.Generic.List<System.Double>(4)
+{
+0.10495644543165938d,
+
+0.4790756776706372d,
+
+0.10488221897435268d,
+
+0.8753167564624038d,
 
 },
     ModelInner = new Doubledouble_precisionArray2MI
 {
-    Id = 44,
+    Id = 40,
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.5423466833210422d,
+0.1577424248998186d,
 
-0.3000420956247496d,
+0.24391655390373723d,
 
-0.6707605899340482d,
+0.3874778515069025d,
 
-0.493800948553066d,
+0.17825454571711252d,
 
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.40269599909806353d,
+0.8977577801576816d,
 
-0.7201490525231136d,
+0.4323418796313627d,
 
-0.7972416518620269d,
+0.8294516978585523d,
 
 },
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.35906322369684907d,
+0.16234464222134282d,
 
-0.888378301066642d,
+0.038065994185707996d,
 
-0.8891929725470852d,
+0.7668437967762957d,
 
-0.0913783316175375d,
+0.699133242418151d,
 
 },
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 69,
+    Id = 74,
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.6497668218398828d,
+0.14970389862551758d,
 
-0.5476127306189118d,
+0.03437414574737496d,
 
-0.9669941511887525d,
+0.71987013368382d,
 
-0.16931232920315908d,
+0.2201617106644812d,
 
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.09348420010302716d,
+
+0.6690816406082922d,
+
+0.7217481307912313d,
+
+},
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 72,
+    Id = 79,
     Value = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.12392708191676449d,
+0.9362894212952754d,
 
-0.29406353480749314d,
+0.42544076848080836d,
 
-0.4707942801742887d,
+0.9247169081846635d,
+
+},
+    ModelInner = new Doubledouble_precisionArray2MI
+{
+    Id = 46,
+    Value = 
+new System.Collections.Generic.List<System.Double>(4)
+{
+0.25948801325549864d,
+
+0.5052112778930434d,
+
+0.7324554411023128d,
+
+0.14777499173609998d,
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.26465408242074917d,
+
+0.7226422230012356d,
+
+0.36437549623228627d,
+
+},
+},
+            new Doubledouble_precisionArray2M
+{
+    Id = 84,
+    Value = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.5565117050855491d,
+
+0.7055501856009387d,
+
+0.10610446826502229d,
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Double>(4)
+{
+0.2736809791658392d,
+
+0.4899919960790512d,
+
+0.8846174067272008d,
+
+0.4405364022762467d,
+
+},
+},
+            new Doubledouble_precisionArray2M
+{
+    Id = 91,
+    Value = 
+new System.Collections.Generic.List<System.Double>(4)
+{
+0.054243243486824744d,
+
+0.2802435759906189d,
+
+0.030311359741531874d,
+
+0.6317425892111972d,
 
 },
     ModelInner = new Doubledouble_precisionArray2MI
 {
     Id = 53,
     Value = 
-new System.Collections.Generic.List<System.Double>(3)
+new System.Collections.Generic.List<System.Double>(4)
 {
-0.8387767737510929d,
+0.2641247335112846d,
 
-0.6284399333314996d,
+0.8248592562245909d,
 
-0.6170644724941026d,
+0.39526122708967426d,
+
+0.6733845546442114d,
 
 },
     NullableValue = null,
 },
-    NullableValue = 
-new System.Collections.Generic.List<System.Double>(3)
-{
-0.8614451182034341d,
-
-0.07454874688495094d,
-
-0.6787553374676335d,
-
-},
+    NullableValue = null,
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 77,
+    Id = 95,
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.09117769433552136d,
+0.4541984373330825d,
 
-0.1631684266687109d,
+0.1822943240503513d,
 
-0.3496592558267769d,
+0.8498786019248484d,
 
-0.012491702798054671d,
+0.7694134444117957d,
 
 },
     ModelInner = null,
@@ -576,62 +639,119 @@ new System.Collections.Generic.List<System.Double>(4)
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 84,
+    Id = 100,
     Value = 
-new System.Collections.Generic.List<System.Double>(4)
+new System.Collections.Generic.List<System.Double>(3)
 {
-0.5259519822147748d,
+0.28424378361836433d,
 
-0.5317282259577871d,
+0.050586190238495976d,
 
-0.9400180239788312d,
-
-0.33077399699792787d,
+0.014440021603605913d,
 
 },
     ModelInner = new Doubledouble_precisionArray2MI
 {
-    Id = 55,
+    Id = 62,
     Value = 
-new System.Collections.Generic.List<System.Double>(4)
+new System.Collections.Generic.List<System.Double>(3)
 {
-0.11128485341401528d,
+0.21185647053585954d,
 
-0.9666815318430889d,
+0.7667366476020179d,
 
-0.20241874478558797d,
-
-0.3909351850236019d,
+0.9057019882375188d,
 
 },
     NullableValue = null,
 },
+    NullableValue = null,
+},
+            new Doubledouble_precisionArray2M
+{
+    Id = 106,
+    Value = 
+new System.Collections.Generic.List<System.Double>(4)
+{
+0.9080962413804411d,
+
+0.4603015641275604d,
+
+0.5435393244220282d,
+
+0.8708182158262753d,
+
+},
+    ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.7566193236482037d,
+0.048811286870288684d,
 
-0.012846465124764839d,
+0.29091178219903446d,
 
-0.5918736071128543d,
+0.2552717158618455d,
 
-0.5485965474774754d,
+0.18738296765233142d,
 
 },
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 90,
+    Id = 114,
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.1608050950483625d,
+0.15665956014400217d,
 
-0.7069849738222745d,
+0.44951807682550093d,
 
-0.8058999439981502d,
+0.16585475682525153d,
 
-0.16259637539913974d,
+0.5484215674012172d,
+
+},
+    ModelInner = new Doubledouble_precisionArray2MI
+{
+    Id = 71,
+    Value = 
+new System.Collections.Generic.List<System.Double>(4)
+{
+0.690194525585645d,
+
+0.6539913641980123d,
+
+0.28361236687507496d,
+
+0.7638901913676014d,
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.06470916916257174d,
+
+0.6644860158712605d,
+
+0.6365533700791723d,
+
+},
+},
+            new Doubledouble_precisionArray2M
+{
+    Id = 119,
+    Value = 
+new System.Collections.Generic.List<System.Double>(4)
+{
+0.8910980143930602d,
+
+0.48106153300965904d,
+
+0.08730592475491183d,
+
+0.24895133910280343d,
 
 },
     ModelInner = null,
@@ -639,117 +759,58 @@ new System.Collections.Generic.List<System.Double>(4)
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 97,
+    Id = 126,
     Value = 
-new System.Collections.Generic.List<System.Double>(4)
+new System.Collections.Generic.List<System.Double>(3)
 {
-0.24236177962430805d,
+0.028997876201287576d,
 
-0.7705483794604052d,
+0.152013302167474d,
 
-0.8601728058383905d,
-
-0.5982641185840735d,
+0.9219831910799722d,
 
 },
     ModelInner = new Doubledouble_precisionArray2MI
 {
-    Id = 56,
-    Value = 
-new System.Collections.Generic.List<System.Double>(3)
-{
-0.18335052002898444d,
-
-0.3283168662998053d,
-
-0.5900784842709862d,
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new Doubledouble_precisionArray2M
-{
-    Id = 105,
+    Id = 79,
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.7906621230658009d,
+0.2955305655577388d,
 
-0.7696108727902904d,
+0.5437178817564895d,
 
-0.8120056021160749d,
+0.6938784333309842d,
 
-0.42532174485385965d,
+0.2050954364452262d,
 
 },
-    ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.734171794381613d,
+0.017325881888056283d,
 
-0.4412959129269437d,
+0.23202479207150772d,
 
-0.24934357719997258d,
-
-},
-},
-            new Doubledouble_precisionArray2M
-{
-    Id = 112,
-    Value = 
-new System.Collections.Generic.List<System.Double>(3)
-{
-0.4496343197688403d,
-
-0.5802785849925367d,
-
-0.7559384655029563d,
+0.5723160868605441d,
 
 },
-    ModelInner = new Doubledouble_precisionArray2MI
-{
-    Id = 59,
-    Value = 
-new System.Collections.Generic.List<System.Double>(4)
-{
-0.976365256607705d,
-
-0.593499353429866d,
-
-0.7602450221391585d,
-
-0.990213154677707d,
-
 },
     NullableValue = null,
 },
-    NullableValue = 
-new System.Collections.Generic.List<System.Double>(4)
-{
-0.9312283287312075d,
-
-0.23929476773372382d,
-
-0.547612756763568d,
-
-0.6896004592364126d,
-
-},
-},
             new Doubledouble_precisionArray2M
 {
-    Id = 120,
+    Id = 133,
     Value = 
-new System.Collections.Generic.List<System.Double>(3)
+new System.Collections.Generic.List<System.Double>(4)
 {
-0.20382105743880286d,
+0.1124129610809691d,
 
-0.5301108687732465d,
+0.9872593350177734d,
 
-0.8024511813679993d,
+0.4627573683967341d,
+
+0.5412131761783855d,
 
 },
     ModelInner = null,
@@ -757,67 +818,58 @@ new System.Collections.Generic.List<System.Double>(3)
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 125,
+    Id = 135,
     Value = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.6870231220394897d,
+0.6997785205210002d,
 
-0.5488799320673419d,
+0.5606021855535092d,
 
-0.36377515427696583d,
+0.07091222351190118d,
 
 },
     ModelInner = new Doubledouble_precisionArray2MI
 {
-    Id = 63,
+    Id = 86,
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.07650846274622969d,
+0.8567028861950444d,
 
-0.6565264138669705d,
+0.8756519764149558d,
 
-0.46003670560422594d,
+0.034979140325200775d,
 
-0.1971167828871332d,
+0.31839335270955904d,
 
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.8772263231010283d,
+0.1798758668465441d,
 
-0.08887032455298094d,
+0.45535394441903865d,
 
-0.5537201444344194d,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Double>(3)
-{
-0.26157382738348445d,
-
-0.6944632295034666d,
-
-0.9210971253905073d,
+0.7973864950113875d,
 
 },
+},
+    NullableValue = null,
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 127,
+    Id = 136,
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.9670123308861052d,
+0.915710307441879d,
 
-0.7665144737850211d,
+0.20813395625349584d,
 
-0.03395375814155566d,
+0.17515455604057062d,
 
-0.3065922050854939d,
+0.05881334228299939d,
 
 },
     ModelInner = null,
@@ -825,67 +877,69 @@ new System.Collections.Generic.List<System.Double>(4)
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 129,
+    Id = 140,
     Value = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.8795650648566947d,
+0.9839552625663711d,
 
-0.6656383627575491d,
+0.3580838664316127d,
 
-0.9204667312947173d,
+0.5492111870776655d,
 
 },
     ModelInner = new Doubledouble_precisionArray2MI
 {
-    Id = 69,
+    Id = 91,
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.9098330346367792d,
+0.34749602349288866d,
 
-0.279044055646254d,
+0.7483725547829553d,
 
-0.686987273142156d,
+0.28800713226959596d,
 
-0.47962770687522405d,
+0.3531465535918329d,
 
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Double>(4)
+{
+0.9684367845615568d,
+
+0.5595143114307695d,
+
+0.5711418348401581d,
+
+0.13575340292299654d,
+
+},
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Double>(3)
 {
-0.04199162515155441d,
+0.933110815060021d,
 
-0.15725004800687192d,
+0.033314222526377724d,
 
-0.6807891711828371d,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Double>(3)
-{
-0.5627635371621516d,
-
-0.8012750868340917d,
-
-0.9651865316487281d,
+0.250497067047014d,
 
 },
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 131,
+    Id = 145,
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.5115974174633853d,
+0.26068216035236613d,
 
-0.18816131009662773d,
+0.09995578454355669d,
 
-0.07522976890898747d,
+0.2731100522092553d,
 
-0.09507675303803342d,
+0.15927282927991304d,
 
 },
     ModelInner = null,
@@ -893,98 +947,57 @@ new System.Collections.Generic.List<System.Double>(4)
 },
             new Doubledouble_precisionArray2M
 {
-    Id = 134,
+    Id = 150,
     Value = 
-new System.Collections.Generic.List<System.Double>(3)
+new System.Collections.Generic.List<System.Double>(4)
 {
-0.48176184984924086d,
+0.5917546946688554d,
 
-0.39682164045768786d,
+0.7261411681554452d,
 
-0.36845808565659344d,
+0.6675535968195508d,
+
+0.3469226269117409d,
 
 },
     ModelInner = new Doubledouble_precisionArray2MI
 {
-    Id = 76,
+    Id = 96,
     Value = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.15500252476942666d,
+0.7863279973253264d,
 
-0.8317986343498742d,
+0.48359951807757795d,
 
-0.526386432557333d,
+0.20731455800236787d,
 
-0.7232201280416d,
+0.5582784530499705d,
 
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Double>(3)
+{
+0.9340638695848682d,
+
+0.40839588887161826d,
+
+0.07868894451604513d,
+
+},
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Double>(4)
 {
-0.6788572603629974d,
+0.682059051901494d,
 
-0.17693644254092222d,
+0.518127428829981d,
 
-0.4467716912784343d,
+0.9546353363663028d,
 
-0.6593178400348986d,
-
-},
-},
-    NullableValue = null,
-},
-            new Doubledouble_precisionArray2M
-{
-    Id = 138,
-    Value = 
-new System.Collections.Generic.List<System.Double>(4)
-{
-0.5923213979433581d,
-
-0.8703076479665026d,
-
-0.5541942168205196d,
-
-0.49727688606214604d,
+0.3818805747385082d,
 
 },
-    ModelInner = null,
-    NullableValue = null,
-},
-            new Doubledouble_precisionArray2M
-{
-    Id = 142,
-    Value = 
-new System.Collections.Generic.List<System.Double>(4)
-{
-0.6891491821915561d,
-
-0.0017163131842893309d,
-
-0.17135434323100218d,
-
-0.7909785519762075d,
-
-},
-    ModelInner = new Doubledouble_precisionArray2MI
-{
-    Id = 85,
-    Value = 
-new System.Collections.Generic.List<System.Double>(4)
-{
-0.022222179851043022d,
-
-0.7706910602599413d,
-
-0.07097540662798452d,
-
-0.8280229519488689d,
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
 },
         };
 
@@ -1444,6 +1457,99 @@ RETURNING
 
 [Gedaq.Npgsql.Attributes.Query(
             query: null,
+            methodName:"MMDynQuerySelectModelDynPar",
+            queryMapTypes: [typeof(FlatDoubledouble_precisionArray2M), typeof(FlatDoubledouble_precisionArray2M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IDoubleListdouble_precisionArray)),
+Gedaq.Npgsql.Attributes.DynamicParametr()]
+        private void MMDynQuerySelectModelDynParConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelDynParTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.doubledouble_precisionarray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+                var models1 = new List<FlatDoubledouble_precisionArray2M>();
+                var models2 = new List<FlatDoubledouble_precisionArray2M>();
+                await ((IDoubleListdouble_precisionArray)this).MMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.doubledouble_precisionarray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+                var models1 = new List<FlatDoubledouble_precisionArray2M>();
+                var models2 = new List<FlatDoubledouble_precisionArray2M>();
+                ((IDoubleListdouble_precisionArray)this).MMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.Query(
+            query: null,
             methodName:"DynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatDoubledouble_precisionArray2M)],
             methodType: MethodType.Async | MethodType.Sync,
@@ -1469,7 +1575,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1477,7 +1582,6 @@ ORDER BY
 ";
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
                 var models = await ((IDoubleListdouble_precisionArray)this).DynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
@@ -1499,7 +1603,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1507,8 +1610,7 @@ ORDER BY
 ";
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
-                var models =  ((IDoubleListdouble_precisionArray)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                var models = ((IDoubleListdouble_precisionArray)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1558,7 +1660,6 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 await connection.OpenAsync();
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
                 var models = await ((IDoubleListdouble_precisionArray)this).SelectModelDynParAsync(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
@@ -1576,12 +1677,104 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 await connection.OpenAsync();
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
-                var models =  ((IDoubleListdouble_precisionArray)this).SelectModelDynPar(connection, [parametr1]);
+                var models = ((IDoubleListdouble_precisionArray)this).SelectModelDynPar(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
                     Doubledouble_precisionArray2M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.Query(
+            query: null,
+            methodName:"MMDynQuerySelectModel",
+            queryMapTypes: [typeof(FlatDoubledouble_precisionArray2M), typeof(FlatDoubledouble_precisionArray2M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IDoubleListdouble_precisionArray)),
+Gedaq.Npgsql.Attributes.Parametr(
+            parametrType: typeof(System.Int32),
+            position: 1,
+            methodParametrName: "id",
+            dbType: (NpgsqlTypes.NpgsqlDbType)(9))]
+        private void MMDynQuerySelectModelConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.doubledouble_precisionarray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatDoubledouble_precisionArray2M>();
+                var models2 = new List<FlatDoubledouble_precisionArray2M>();
+                await ((IDoubleListdouble_precisionArray)this).MMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.doubledouble_precisionarray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatDoubledouble_precisionArray2M>();
+                var models2 = new List<FlatDoubledouble_precisionArray2M>();
+                ((IDoubleListdouble_precisionArray)this).MMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -1617,7 +1810,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1644,13 +1836,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
     m.id ASC
 ";
-                var models =  ((IDoubleListdouble_precisionArray)this).DynQuerySelectModel(connection,  query, 0);
+                var models = ((IDoubleListdouble_precisionArray)this).DynQuerySelectModel(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1717,11 +1908,107 @@ Gedaq.Npgsql.Attributes.Parametr(
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((IDoubleListdouble_precisionArray)this).SelectModel(connection, 0);
+                var models = ((IDoubleListdouble_precisionArray)this).SelectModel(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
                     Doubledouble_precisionArray2M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: null,
+            methodName:"DbConnectionMMDynQuerySelectModelDynPar",
+            queryMapTypes: [typeof(FlatDoubledouble_precisionArray2M), typeof(FlatDoubledouble_precisionArray2M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IDoubleListdouble_precisionArray)),
+Gedaq.DbConnection.Attributes.DynamicParametr()]
+        private void DbConnectionMMDynQuerySelectModelDynParConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.doubledouble_precisionarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatDoubledouble_precisionArray2M>();
+                var models2 = new List<FlatDoubledouble_precisionArray2M>();
+                await((IDoubleListdouble_precisionArray)this).DbConnectionMMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.doubledouble_precisionarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatDoubledouble_precisionArray2M>();
+                var models2 = new List<FlatDoubledouble_precisionArray2M>();
+                ((IDoubleListdouble_precisionArray)this).DbConnectionMMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -1768,7 +2055,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1778,8 +2064,7 @@ ORDER BY
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models = await ((IDoubleListdouble_precisionArray)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
+                var models = await((IDoubleListdouble_precisionArray)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1796,12 +2081,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 129;
+                parametr1.Value = 21;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 129;
+                parametr2.Value = 58;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1810,7 +2095,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1822,7 +2106,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1833,16 +2116,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
-FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(26));
+FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[4], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[5], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[6], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[7], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[8], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[9], false);FlatDoubledouble_precisionArray2M.AssertModel(models[6],_testData[10], false);FlatDoubledouble_precisionArray2M.AssertModel(models[7],_testData[11], false);FlatDoubledouble_precisionArray2M.AssertModel(models[8],_testData[12], false);FlatDoubledouble_precisionArray2M.AssertModel(models[9],_testData[13], false);FlatDoubledouble_precisionArray2M.AssertModel(models[10],_testData[14], false);FlatDoubledouble_precisionArray2M.AssertModel(models[11],_testData[15], false);FlatDoubledouble_precisionArray2M.AssertModel(models[12],_testData[16], false);FlatDoubledouble_precisionArray2M.AssertModel(models[13],_testData[17], false);FlatDoubledouble_precisionArray2M.AssertModel(models[14],_testData[18], false);FlatDoubledouble_precisionArray2M.AssertModel(models[15],_testData[19], false);FlatDoubledouble_precisionArray2M.AssertModel(models[16],_testData[20], false);FlatDoubledouble_precisionArray2M.AssertModel(models[17],_testData[21], false);FlatDoubledouble_precisionArray2M.AssertModel(models[18],_testData[22], false);FlatDoubledouble_precisionArray2M.AssertModel(models[19],_testData[23], false);FlatDoubledouble_precisionArray2M.AssertModel(models[20],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[21],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[22],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[23],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[24],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[25],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
-FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(18));
+FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[12], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[13], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[14], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[15], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[16], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[17], false);FlatDoubledouble_precisionArray2M.AssertModel(models[6],_testData[18], false);FlatDoubledouble_precisionArray2M.AssertModel(models[7],_testData[19], false);FlatDoubledouble_precisionArray2M.AssertModel(models[8],_testData[20], false);FlatDoubledouble_precisionArray2M.AssertModel(models[9],_testData[21], false);FlatDoubledouble_precisionArray2M.AssertModel(models[10],_testData[22], false);FlatDoubledouble_precisionArray2M.AssertModel(models[11],_testData[23], false);FlatDoubledouble_precisionArray2M.AssertModel(models[12],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[13],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[14],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[15],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[16],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[17],_testData[29], false);
                         continue;
                     }
                     
@@ -1863,7 +2146,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1873,8 +2155,7 @@ ORDER BY
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models =  ((IDoubleListdouble_precisionArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                var models = ((IDoubleListdouble_precisionArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1891,12 +2172,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 69;
+                parametr1.Value = 58;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 125;
+                parametr2.Value = 67;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1905,7 +2186,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1917,7 +2197,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1928,16 +2207,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(15));
-FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[15], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[16], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[17], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[18], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[19], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[20], false);FlatDoubledouble_precisionArray2M.AssertModel(models[6],_testData[21], false);FlatDoubledouble_precisionArray2M.AssertModel(models[7],_testData[22], false);FlatDoubledouble_precisionArray2M.AssertModel(models[8],_testData[23], false);FlatDoubledouble_precisionArray2M.AssertModel(models[9],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[10],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[11],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[12],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[13],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[14],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(18));
+FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[12], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[13], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[14], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[15], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[16], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[17], false);FlatDoubledouble_precisionArray2M.AssertModel(models[6],_testData[18], false);FlatDoubledouble_precisionArray2M.AssertModel(models[7],_testData[19], false);FlatDoubledouble_precisionArray2M.AssertModel(models[8],_testData[20], false);FlatDoubledouble_precisionArray2M.AssertModel(models[9],_testData[21], false);FlatDoubledouble_precisionArray2M.AssertModel(models[10],_testData[22], false);FlatDoubledouble_precisionArray2M.AssertModel(models[11],_testData[23], false);FlatDoubledouble_precisionArray2M.AssertModel(models[12],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[13],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[14],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[15],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[16],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[17],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
-FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(16));
+FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[14], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[15], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[16], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[17], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[18], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[19], false);FlatDoubledouble_precisionArray2M.AssertModel(models[6],_testData[20], false);FlatDoubledouble_precisionArray2M.AssertModel(models[7],_testData[21], false);FlatDoubledouble_precisionArray2M.AssertModel(models[8],_testData[22], false);FlatDoubledouble_precisionArray2M.AssertModel(models[9],_testData[23], false);FlatDoubledouble_precisionArray2M.AssertModel(models[10],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[11],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[12],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[13],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[14],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[15],_testData[29], false);
                         continue;
                     }
                     
@@ -2005,8 +2284,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models = await ((IDoubleListdouble_precisionArray)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
+                var models = await((IDoubleListdouble_precisionArray)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2023,12 +2301,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 127;
+                parametr1.Value = 114;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 41;
+                parametr2.Value = 79;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in await ((IDoubleListdouble_precisionArray)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
@@ -2036,16 +2314,16 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(5));
-Doubledouble_precisionArray2M.AssertModel(models[0],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(8));
+Doubledouble_precisionArray2M.AssertModel(models[0],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
-Doubledouble_precisionArray2M.AssertModel(models[0],_testData[10], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[11], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[12], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[13], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[14], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[15], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[16], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[17], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[18], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[19], false);Doubledouble_precisionArray2M.AssertModel(models[10],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[11],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[12],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[13],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[14],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[15],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[16],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[17],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[18],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[19],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(14));
+Doubledouble_precisionArray2M.AssertModel(models[0],_testData[16], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[17], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[18], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[19], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[10],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[11],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[12],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[13],_testData[29], false);
                         continue;
                     }
                     
@@ -2064,8 +2342,7 @@ Doubledouble_precisionArray2M.AssertModel(models[0],_testData[10], false);Double
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models =  ((IDoubleListdouble_precisionArray)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
+                var models = ((IDoubleListdouble_precisionArray)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2082,12 +2359,12 @@ Doubledouble_precisionArray2M.AssertModel(models[0],_testData[10], false);Double
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 21;
+                parametr1.Value = 84;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 97;
+                parametr2.Value = 67;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in  ((IDoubleListdouble_precisionArray)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
@@ -2095,20 +2372,112 @@ Doubledouble_precisionArray2M.AssertModel(models[0],_testData[10], false);Double
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
-Doubledouble_precisionArray2M.AssertModel(models[0],_testData[5], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[6], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[7], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[8], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[9], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[10], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[11], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[12], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[13], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[14], false);Doubledouble_precisionArray2M.AssertModel(models[10],_testData[15], false);Doubledouble_precisionArray2M.AssertModel(models[11],_testData[16], false);Doubledouble_precisionArray2M.AssertModel(models[12],_testData[17], false);Doubledouble_precisionArray2M.AssertModel(models[13],_testData[18], false);Doubledouble_precisionArray2M.AssertModel(models[14],_testData[19], false);Doubledouble_precisionArray2M.AssertModel(models[15],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[16],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[17],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[18],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[19],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[20],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[21],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[22],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[23],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[24],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(13));
+Doubledouble_precisionArray2M.AssertModel(models[0],_testData[17], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[18], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[19], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[10],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[11],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[12],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
-Doubledouble_precisionArray2M.AssertModel(models[0],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(16));
+Doubledouble_precisionArray2M.AssertModel(models[0],_testData[14], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[15], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[16], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[17], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[18], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[19], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[10],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[11],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[12],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[13],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[14],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[15],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
+                }
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: null,
+            methodName:"DbConnectionMMDynQuerySelectModel",
+            queryMapTypes: [typeof(FlatDoubledouble_precisionArray2M), typeof(FlatDoubledouble_precisionArray2M)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IDoubleListdouble_precisionArray)),
+Gedaq.DbConnection.Attributes.Parametr(
+            parametrType: typeof(System.Int32), 
+            parametrName: "id", 
+            methodParametrName: "id", 
+            dbType: (System.Data.DbType)(11))]
+        private void DbConnectionMMDynQuerySelectModelConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.doubledouble_precisionarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatDoubledouble_precisionArray2M>();
+                var models2 = new List<FlatDoubledouble_precisionArray2M>();
+                await((IDoubleListdouble_precisionArray)this).DbConnectionMMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.doubledouble_precisionarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatDoubledouble_precisionArray2M>();
+                var models2 = new List<FlatDoubledouble_precisionArray2M>();
+                ((IDoubleListdouble_precisionArray)this).DbConnectionMMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatDoubledouble_precisionArray2M.AssertModel(models2[i],_testData[i], false);
                 }
             }
         }
@@ -2159,13 +2528,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                var models = await ((IDoubleListdouble_precisionArray)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
+                var models = await((IDoubleListdouble_precisionArray)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2187,7 +2555,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -2199,27 +2566,26 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((IDoubleListdouble_precisionArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 84, query1, 28, query2))
+                foreach(var batchResult in await ((IDoubleListdouble_precisionArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 106, query1, 50, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
-FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[18], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[19], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[20], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[21], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[22], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[23], false);FlatDoubledouble_precisionArray2M.AssertModel(models[6],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[7],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[8],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[9],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[10],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[11],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(9));
+FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[21], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[22], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[23], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[6],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[7],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[8],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
-FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[7], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[8], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[9], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[10], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[11], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[12], false);FlatDoubledouble_precisionArray2M.AssertModel(models[6],_testData[13], false);FlatDoubledouble_precisionArray2M.AssertModel(models[7],_testData[14], false);FlatDoubledouble_precisionArray2M.AssertModel(models[8],_testData[15], false);FlatDoubledouble_precisionArray2M.AssertModel(models[9],_testData[16], false);FlatDoubledouble_precisionArray2M.AssertModel(models[10],_testData[17], false);FlatDoubledouble_precisionArray2M.AssertModel(models[11],_testData[18], false);FlatDoubledouble_precisionArray2M.AssertModel(models[12],_testData[19], false);FlatDoubledouble_precisionArray2M.AssertModel(models[13],_testData[20], false);FlatDoubledouble_precisionArray2M.AssertModel(models[14],_testData[21], false);FlatDoubledouble_precisionArray2M.AssertModel(models[15],_testData[22], false);FlatDoubledouble_precisionArray2M.AssertModel(models[16],_testData[23], false);FlatDoubledouble_precisionArray2M.AssertModel(models[17],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[18],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[19],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[20],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[21],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[22],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(19));
+FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[11], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[12], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[13], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[14], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[15], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[16], false);FlatDoubledouble_precisionArray2M.AssertModel(models[6],_testData[17], false);FlatDoubledouble_precisionArray2M.AssertModel(models[7],_testData[18], false);FlatDoubledouble_precisionArray2M.AssertModel(models[8],_testData[19], false);FlatDoubledouble_precisionArray2M.AssertModel(models[9],_testData[20], false);FlatDoubledouble_precisionArray2M.AssertModel(models[10],_testData[21], false);FlatDoubledouble_precisionArray2M.AssertModel(models[11],_testData[22], false);FlatDoubledouble_precisionArray2M.AssertModel(models[12],_testData[23], false);FlatDoubledouble_precisionArray2M.AssertModel(models[13],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[14],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[15],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[16],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[17],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[18],_testData[29], false);
                         continue;
                     }
                     
@@ -2240,13 +2606,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                var models =  ((IDoubleListdouble_precisionArray)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
+                var models = ((IDoubleListdouble_precisionArray)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2268,7 +2633,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -2280,27 +2644,26 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.doubledouble_precisionarray2m m
-LEFT JOIN public.doubledouble_precisionarray2mi mi ON mi.id = m.doubledouble_precisionarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((IDoubleListdouble_precisionArray)this).DbConnectionDynQuerySelectModelBatch(connection, 54, query1, 41, query2))
+                foreach(var batchResult in  ((IDoubleListdouble_precisionArray)this).DbConnectionDynQuerySelectModelBatch(connection, 136, query1, 18, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
-FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[12], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[13], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[14], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[15], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[16], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[17], false);FlatDoubledouble_precisionArray2M.AssertModel(models[6],_testData[18], false);FlatDoubledouble_precisionArray2M.AssertModel(models[7],_testData[19], false);FlatDoubledouble_precisionArray2M.AssertModel(models[8],_testData[20], false);FlatDoubledouble_precisionArray2M.AssertModel(models[9],_testData[21], false);FlatDoubledouble_precisionArray2M.AssertModel(models[10],_testData[22], false);FlatDoubledouble_precisionArray2M.AssertModel(models[11],_testData[23], false);FlatDoubledouble_precisionArray2M.AssertModel(models[12],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[13],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[14],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[15],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[16],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[17],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(3));
+FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
-FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[10], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[11], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[12], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[13], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[14], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[15], false);FlatDoubledouble_precisionArray2M.AssertModel(models[6],_testData[16], false);FlatDoubledouble_precisionArray2M.AssertModel(models[7],_testData[17], false);FlatDoubledouble_precisionArray2M.AssertModel(models[8],_testData[18], false);FlatDoubledouble_precisionArray2M.AssertModel(models[9],_testData[19], false);FlatDoubledouble_precisionArray2M.AssertModel(models[10],_testData[20], false);FlatDoubledouble_precisionArray2M.AssertModel(models[11],_testData[21], false);FlatDoubledouble_precisionArray2M.AssertModel(models[12],_testData[22], false);FlatDoubledouble_precisionArray2M.AssertModel(models[13],_testData[23], false);FlatDoubledouble_precisionArray2M.AssertModel(models[14],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[15],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[16],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[17],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[18],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[19],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(27));
+FlatDoubledouble_precisionArray2M.AssertModel(models[0],_testData[3], false);FlatDoubledouble_precisionArray2M.AssertModel(models[1],_testData[4], false);FlatDoubledouble_precisionArray2M.AssertModel(models[2],_testData[5], false);FlatDoubledouble_precisionArray2M.AssertModel(models[3],_testData[6], false);FlatDoubledouble_precisionArray2M.AssertModel(models[4],_testData[7], false);FlatDoubledouble_precisionArray2M.AssertModel(models[5],_testData[8], false);FlatDoubledouble_precisionArray2M.AssertModel(models[6],_testData[9], false);FlatDoubledouble_precisionArray2M.AssertModel(models[7],_testData[10], false);FlatDoubledouble_precisionArray2M.AssertModel(models[8],_testData[11], false);FlatDoubledouble_precisionArray2M.AssertModel(models[9],_testData[12], false);FlatDoubledouble_precisionArray2M.AssertModel(models[10],_testData[13], false);FlatDoubledouble_precisionArray2M.AssertModel(models[11],_testData[14], false);FlatDoubledouble_precisionArray2M.AssertModel(models[12],_testData[15], false);FlatDoubledouble_precisionArray2M.AssertModel(models[13],_testData[16], false);FlatDoubledouble_precisionArray2M.AssertModel(models[14],_testData[17], false);FlatDoubledouble_precisionArray2M.AssertModel(models[15],_testData[18], false);FlatDoubledouble_precisionArray2M.AssertModel(models[16],_testData[19], false);FlatDoubledouble_precisionArray2M.AssertModel(models[17],_testData[20], false);FlatDoubledouble_precisionArray2M.AssertModel(models[18],_testData[21], false);FlatDoubledouble_precisionArray2M.AssertModel(models[19],_testData[22], false);FlatDoubledouble_precisionArray2M.AssertModel(models[20],_testData[23], false);FlatDoubledouble_precisionArray2M.AssertModel(models[21],_testData[24], false);FlatDoubledouble_precisionArray2M.AssertModel(models[22],_testData[25], false);FlatDoubledouble_precisionArray2M.AssertModel(models[23],_testData[26], false);FlatDoubledouble_precisionArray2M.AssertModel(models[24],_testData[27], false);FlatDoubledouble_precisionArray2M.AssertModel(models[25],_testData[28], false);FlatDoubledouble_precisionArray2M.AssertModel(models[26],_testData[29], false);
                         continue;
                     }
                     
@@ -2368,7 +2731,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                var models = await ((IDoubleListdouble_precisionArray)this).DbConnectionSelectModelAsync(connection, 0);
+                var models = await((IDoubleListdouble_precisionArray)this).DbConnectionSelectModelAsync(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2384,21 +2747,21 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IDoubleListdouble_precisionArray)this).DbConnectionSelectModelBatchAsync(connection, 21, 13))
+                foreach(var batchResult in await ((IDoubleListdouble_precisionArray)this).DbConnectionSelectModelBatchAsync(connection, 126, 47))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
-Doubledouble_precisionArray2M.AssertModel(models[0],_testData[5], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[6], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[7], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[8], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[9], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[10], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[11], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[12], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[13], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[14], false);Doubledouble_precisionArray2M.AssertModel(models[10],_testData[15], false);Doubledouble_precisionArray2M.AssertModel(models[11],_testData[16], false);Doubledouble_precisionArray2M.AssertModel(models[12],_testData[17], false);Doubledouble_precisionArray2M.AssertModel(models[13],_testData[18], false);Doubledouble_precisionArray2M.AssertModel(models[14],_testData[19], false);Doubledouble_precisionArray2M.AssertModel(models[15],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[16],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[17],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[18],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[19],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[20],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[21],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[22],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[23],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[24],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+Doubledouble_precisionArray2M.AssertModel(models[0],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
-Doubledouble_precisionArray2M.AssertModel(models[0],_testData[3], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[4], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[5], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[6], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[7], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[8], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[9], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[10], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[11], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[12], false);Doubledouble_precisionArray2M.AssertModel(models[10],_testData[13], false);Doubledouble_precisionArray2M.AssertModel(models[11],_testData[14], false);Doubledouble_precisionArray2M.AssertModel(models[12],_testData[15], false);Doubledouble_precisionArray2M.AssertModel(models[13],_testData[16], false);Doubledouble_precisionArray2M.AssertModel(models[14],_testData[17], false);Doubledouble_precisionArray2M.AssertModel(models[15],_testData[18], false);Doubledouble_precisionArray2M.AssertModel(models[16],_testData[19], false);Doubledouble_precisionArray2M.AssertModel(models[17],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[18],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[19],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[20],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[21],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[22],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[23],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[24],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[25],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[26],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(21));
+Doubledouble_precisionArray2M.AssertModel(models[0],_testData[9], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[10], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[11], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[12], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[13], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[14], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[15], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[16], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[17], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[18], false);Doubledouble_precisionArray2M.AssertModel(models[10],_testData[19], false);Doubledouble_precisionArray2M.AssertModel(models[11],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[12],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[13],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[14],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[15],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[16],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[17],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[18],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[19],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[20],_testData[29], false);
                         continue;
                     }
                     
@@ -2413,7 +2776,7 @@ Doubledouble_precisionArray2M.AssertModel(models[0],_testData[3], false);Doubled
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((IDoubleListdouble_precisionArray)this).DbConnectionSelectModel(connection, 0);
+                var models = ((IDoubleListdouble_precisionArray)this).DbConnectionSelectModel(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2429,21 +2792,21 @@ Doubledouble_precisionArray2M.AssertModel(models[0],_testData[3], false);Doubled
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IDoubleListdouble_precisionArray)this).DbConnectionSelectModelBatch(connection, 134, 84))
+                foreach(var batchResult in  ((IDoubleListdouble_precisionArray)this).DbConnectionSelectModelBatch(connection, 136, 27))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(2));
-Doubledouble_precisionArray2M.AssertModel(models[0],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(3));
+Doubledouble_precisionArray2M.AssertModel(models[0],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
-Doubledouble_precisionArray2M.AssertModel(models[0],_testData[18], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[19], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[10],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[11],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(25));
+Doubledouble_precisionArray2M.AssertModel(models[0],_testData[5], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[6], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[7], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[8], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[9], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[10], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[11], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[12], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[13], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[14], false);Doubledouble_precisionArray2M.AssertModel(models[10],_testData[15], false);Doubledouble_precisionArray2M.AssertModel(models[11],_testData[16], false);Doubledouble_precisionArray2M.AssertModel(models[12],_testData[17], false);Doubledouble_precisionArray2M.AssertModel(models[13],_testData[18], false);Doubledouble_precisionArray2M.AssertModel(models[14],_testData[19], false);Doubledouble_precisionArray2M.AssertModel(models[15],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[16],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[17],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[18],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[19],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[20],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[21],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[22],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[23],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[24],_testData[29], false);
                         continue;
                     }
                     
@@ -2459,11 +2822,11 @@ Doubledouble_precisionArray2M.AssertModel(models[0],_testData[18], false);Double
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IDoubleListdouble_precisionArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IDoubleListdouble_precisionArray)this).SetDbConnectionSelectModelParametrs(cmd, 105);
+                ((IDoubleListdouble_precisionArray)this).SetDbConnectionSelectModelParametrs(cmd, 18);
                 var models = await ((IDoubleListdouble_precisionArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(9));
-Doubledouble_precisionArray2M.AssertModel(models[0],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(27));
+Doubledouble_precisionArray2M.AssertModel(models[0],_testData[3], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[4], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[5], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[6], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[7], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[8], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[9], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[10], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[11], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[12], false);Doubledouble_precisionArray2M.AssertModel(models[10],_testData[13], false);Doubledouble_precisionArray2M.AssertModel(models[11],_testData[14], false);Doubledouble_precisionArray2M.AssertModel(models[12],_testData[15], false);Doubledouble_precisionArray2M.AssertModel(models[13],_testData[16], false);Doubledouble_precisionArray2M.AssertModel(models[14],_testData[17], false);Doubledouble_precisionArray2M.AssertModel(models[15],_testData[18], false);Doubledouble_precisionArray2M.AssertModel(models[16],_testData[19], false);Doubledouble_precisionArray2M.AssertModel(models[17],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[18],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[19],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[20],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[21],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[22],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[23],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[24],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[25],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[26],_testData[29], false);
             }
         }
 
@@ -2474,11 +2837,11 @@ Doubledouble_precisionArray2M.AssertModel(models[0],_testData[21], false);Double
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IDoubleListdouble_precisionArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IDoubleListdouble_precisionArray)this).SetDbConnectionSelectModelParametrs(cmd, 28);
+                ((IDoubleListdouble_precisionArray)this).SetDbConnectionSelectModelParametrs(cmd, 133);
                 var models =  ((IDoubleListdouble_precisionArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(23));
-Doubledouble_precisionArray2M.AssertModel(models[0],_testData[7], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[8], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[9], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[10], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[11], false);Doubledouble_precisionArray2M.AssertModel(models[5],_testData[12], false);Doubledouble_precisionArray2M.AssertModel(models[6],_testData[13], false);Doubledouble_precisionArray2M.AssertModel(models[7],_testData[14], false);Doubledouble_precisionArray2M.AssertModel(models[8],_testData[15], false);Doubledouble_precisionArray2M.AssertModel(models[9],_testData[16], false);Doubledouble_precisionArray2M.AssertModel(models[10],_testData[17], false);Doubledouble_precisionArray2M.AssertModel(models[11],_testData[18], false);Doubledouble_precisionArray2M.AssertModel(models[12],_testData[19], false);Doubledouble_precisionArray2M.AssertModel(models[13],_testData[20], false);Doubledouble_precisionArray2M.AssertModel(models[14],_testData[21], false);Doubledouble_precisionArray2M.AssertModel(models[15],_testData[22], false);Doubledouble_precisionArray2M.AssertModel(models[16],_testData[23], false);Doubledouble_precisionArray2M.AssertModel(models[17],_testData[24], false);Doubledouble_precisionArray2M.AssertModel(models[18],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[19],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[20],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[21],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[22],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(5));
+Doubledouble_precisionArray2M.AssertModel(models[0],_testData[25], false);Doubledouble_precisionArray2M.AssertModel(models[1],_testData[26], false);Doubledouble_precisionArray2M.AssertModel(models[2],_testData[27], false);Doubledouble_precisionArray2M.AssertModel(models[3],_testData[28], false);Doubledouble_precisionArray2M.AssertModel(models[4],_testData[29], false);
             }
         }
 
