@@ -193,7 +193,7 @@ SELECT
     m.{model.NullableValueColumnName} AS item2{model.NullableValueColumnName}
 FROM {Database.MsSQL.ToDefaultSchema()}.{model.TableName} m
 WHERE 
-    m.{model.IdColumnName} > $1
+    m.{model.IdColumnName} > @{model.IdColumnName}
 ORDER BY
     m.{model.IdColumnName} ASC
 "";");

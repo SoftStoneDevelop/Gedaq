@@ -29,288 +29,288 @@ namespace Tests
         {
             new DateTimedatetime0M
 {
-    Id = 6,
-    Value = new DateTime(year: 1996, month: 10, day: 4, hour: 17, minute: 35, second: 29, millisecond: 312, kind: DateTimeKind.Local),
+    Id = 7,
+    Value = new DateTime(year: 2014, month: 10, day: 7, hour: 18, minute: 49, second: 3, millisecond: 21, kind: DateTimeKind.Local),
     ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
-    Id = 7,
-    Value = new DateTime(year: 1923, month: 10, day: 8, hour: 6, minute: 14, second: 8, millisecond: 29, kind: DateTimeKind.Local),
-    ModelInner = new DateTimedatetime0MI
-{
-    Id = 8,
-    Value = new DateTime(year: 1924, month: 10, day: 12, hour: 6, minute: 40, second: 1, millisecond: 688, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1949, month: 10, day: 3, hour: 18, minute: 53, second: 6, millisecond: 918, kind: DateTimeKind.Local),
-},
-    NullableValue = new DateTime(year: 2001, month: 10, day: 8, hour: 22, minute: 44, second: 33, millisecond: 688, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime0M
-{
-    Id = 12,
-    Value = new DateTime(year: 1935, month: 10, day: 13, hour: 3, minute: 1, second: 6, millisecond: 84, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 2010, month: 10, day: 13, hour: 13, minute: 15, second: 49, millisecond: 592, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime0M
-{
-    Id = 17,
-    Value = new DateTime(year: 1979, month: 10, day: 13, hour: 5, minute: 30, second: 23, millisecond: 710, kind: DateTimeKind.Local),
-    ModelInner = new DateTimedatetime0MI
-{
     Id = 16,
-    Value = new DateTime(year: 2005, month: 10, day: 16, hour: 19, minute: 10, second: 18, millisecond: 8, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1952, month: 10, day: 10, hour: 19, minute: 7, second: 15, millisecond: 985, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 1993, month: 10, day: 14, hour: 18, minute: 31, second: 26, millisecond: 343, kind: DateTimeKind.Local),
+    ModelInner = new DateTimedatetime0MI
+{
+    Id = 9,
+    Value = new DateTime(year: 1950, month: 10, day: 10, hour: 20, minute: 8, second: 27, millisecond: 25, kind: DateTimeKind.Local),
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
     Id = 19,
-    Value = new DateTime(year: 2017, month: 10, day: 5, hour: 6, minute: 26, second: 44, millisecond: 477, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 2017, month: 10, day: 10, hour: 16, minute: 28, second: 47, millisecond: 960, kind: DateTimeKind.Local),
     ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
-    Id = 22,
-    Value = new DateTime(year: 1991, month: 10, day: 8, hour: 10, minute: 16, second: 30, millisecond: 349, kind: DateTimeKind.Local),
+    Id = 20,
+    Value = new DateTime(year: 1960, month: 10, day: 17, hour: 21, minute: 27, second: 53, millisecond: 774, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime0MI
 {
-    Id = 22,
-    Value = new DateTime(year: 2009, month: 10, day: 15, hour: 19, minute: 34, second: 27, millisecond: 432, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1982, month: 10, day: 18, hour: 2, minute: 37, second: 36, millisecond: 911, kind: DateTimeKind.Local),
-},
+    Id = 12,
+    Value = new DateTime(year: 1965, month: 10, day: 19, hour: 16, minute: 17, second: 31, millisecond: 178, kind: DateTimeKind.Local),
     NullableValue = null,
+},
+    NullableValue = new DateTime(year: 2017, month: 10, day: 19, hour: 6, minute: 34, second: 28, millisecond: 286, kind: DateTimeKind.Local),
 },
             new DateTimedatetime0M
 {
-    Id = 29,
-    Value = new DateTime(year: 1957, month: 10, day: 7, hour: 8, minute: 20, second: 2, millisecond: 435, kind: DateTimeKind.Local),
+    Id = 21,
+    Value = new DateTime(year: 1919, month: 10, day: 6, hour: 5, minute: 55, second: 3, millisecond: 561, kind: DateTimeKind.Local),
     ModelInner = null,
-    NullableValue = new DateTime(year: 2018, month: 10, day: 6, hour: 2, minute: 28, second: 8, millisecond: 21, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1984, month: 10, day: 1, hour: 4, minute: 29, second: 17, millisecond: 539, kind: DateTimeKind.Local),
 },
             new DateTimedatetime0M
 {
-    Id = 37,
-    Value = new DateTime(year: 1976, month: 10, day: 9, hour: 8, minute: 23, second: 35, millisecond: 448, kind: DateTimeKind.Local),
+    Id = 30,
+    Value = new DateTime(year: 2012, month: 10, day: 2, hour: 11, minute: 8, second: 26, millisecond: 56, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime0MI
 {
-    Id = 26,
-    Value = new DateTime(year: 2015, month: 10, day: 18, hour: 10, minute: 8, second: 31, millisecond: 626, kind: DateTimeKind.Local),
+    Id = 18,
+    Value = new DateTime(year: 1917, month: 10, day: 9, hour: 2, minute: 41, second: 57, millisecond: 377, kind: DateTimeKind.Local),
     NullableValue = null,
 },
+    NullableValue = new DateTime(year: 1925, month: 10, day: 18, hour: 9, minute: 39, second: 31, millisecond: 302, kind: DateTimeKind.Local),
+},
+            new DateTimedatetime0M
+{
+    Id = 32,
+    Value = new DateTime(year: 1968, month: 10, day: 15, hour: 10, minute: 6, second: 50, millisecond: 255, kind: DateTimeKind.Local),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateTimedatetime0M
+{
+    Id = 35,
+    Value = new DateTime(year: 1944, month: 10, day: 14, hour: 17, minute: 11, second: 57, millisecond: 14, kind: DateTimeKind.Local),
+    ModelInner = new DateTimedatetime0MI
+{
+    Id = 20,
+    Value = new DateTime(year: 1918, month: 10, day: 17, hour: 19, minute: 12, second: 28, millisecond: 635, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1933, month: 10, day: 15, hour: 20, minute: 52, second: 7, millisecond: 377, kind: DateTimeKind.Local),
+},
+    NullableValue = null,
+},
+            new DateTimedatetime0M
+{
+    Id = 41,
+    Value = new DateTime(year: 1924, month: 10, day: 18, hour: 16, minute: 41, second: 1, millisecond: 584, kind: DateTimeKind.Local),
+    ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
     Id = 42,
-    Value = new DateTime(year: 1998, month: 10, day: 8, hour: 22, minute: 18, second: 10, millisecond: 886, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 1965, month: 10, day: 19, hour: 12, minute: 58, second: 33, millisecond: 434, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime0M
-{
-    Id = 49,
-    Value = new DateTime(year: 2017, month: 10, day: 9, hour: 17, minute: 33, second: 12, millisecond: 348, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 1919, month: 10, day: 2, hour: 2, minute: 37, second: 37, millisecond: 223, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime0MI
 {
-    Id = 33,
-    Value = new DateTime(year: 1926, month: 10, day: 10, hour: 9, minute: 31, second: 44, millisecond: 106, kind: DateTimeKind.Local),
+    Id = 21,
+    Value = new DateTime(year: 1992, month: 10, day: 17, hour: 7, minute: 11, second: 48, millisecond: 887, kind: DateTimeKind.Local),
     NullableValue = null,
 },
-    NullableValue = null,
+    NullableValue = new DateTime(year: 1990, month: 10, day: 12, hour: 5, minute: 42, second: 18, millisecond: 739, kind: DateTimeKind.Local),
 },
             new DateTimedatetime0M
 {
-    Id = 56,
-    Value = new DateTime(year: 2002, month: 10, day: 8, hour: 15, minute: 21, second: 38, millisecond: 730, kind: DateTimeKind.Local),
+    Id = 45,
+    Value = new DateTime(year: 1994, month: 10, day: 17, hour: 15, minute: 11, second: 48, millisecond: 83, kind: DateTimeKind.Local),
     ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
-    Id = 57,
-    Value = new DateTime(year: 1996, month: 10, day: 16, hour: 19, minute: 7, second: 19, millisecond: 871, kind: DateTimeKind.Local),
+    Id = 46,
+    Value = new DateTime(year: 1998, month: 10, day: 15, hour: 9, minute: 36, second: 37, millisecond: 56, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime0MI
 {
-    Id = 35,
-    Value = new DateTime(year: 1933, month: 10, day: 2, hour: 6, minute: 31, second: 7, millisecond: 357, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1928, month: 10, day: 2, hour: 10, minute: 41, second: 38, millisecond: 176, kind: DateTimeKind.Local),
+    Id = 29,
+    Value = new DateTime(year: 2003, month: 10, day: 1, hour: 13, minute: 27, second: 48, millisecond: 878, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 2004, month: 10, day: 11, hour: 20, minute: 7, second: 7, millisecond: 866, kind: DateTimeKind.Local),
 },
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
-    Id = 63,
-    Value = new DateTime(year: 1931, month: 10, day: 2, hour: 10, minute: 14, second: 34, millisecond: 402, kind: DateTimeKind.Local),
+    Id = 47,
+    Value = new DateTime(year: 1997, month: 10, day: 15, hour: 11, minute: 40, second: 26, millisecond: 824, kind: DateTimeKind.Local),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateTimedatetime0M
+{
+    Id = 54,
+    Value = new DateTime(year: 1931, month: 10, day: 7, hour: 22, minute: 4, second: 23, millisecond: 75, kind: DateTimeKind.Local),
+    ModelInner = new DateTimedatetime0MI
+{
+    Id = 36,
+    Value = new DateTime(year: 1949, month: 10, day: 10, hour: 7, minute: 27, second: 45, millisecond: 494, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1976, month: 10, day: 18, hour: 8, minute: 57, second: 40, millisecond: 297, kind: DateTimeKind.Local),
+},
+    NullableValue = new DateTime(year: 1977, month: 10, day: 16, hour: 3, minute: 29, second: 21, millisecond: 486, kind: DateTimeKind.Local),
+},
+            new DateTimedatetime0M
+{
+    Id = 59,
+    Value = new DateTime(year: 1960, month: 10, day: 18, hour: 13, minute: 32, second: 21, millisecond: 94, kind: DateTimeKind.Local),
     ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
     Id = 65,
-    Value = new DateTime(year: 1964, month: 10, day: 17, hour: 12, minute: 46, second: 35, millisecond: 321, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 1919, month: 10, day: 19, hour: 17, minute: 45, second: 39, millisecond: 137, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime0MI
 {
-    Id = 38,
-    Value = new DateTime(year: 2015, month: 10, day: 19, hour: 16, minute: 26, second: 18, millisecond: 197, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1944, month: 10, day: 16, hour: 16, minute: 2, second: 10, millisecond: 682, kind: DateTimeKind.Local),
+    Id = 43,
+    Value = new DateTime(year: 1974, month: 10, day: 12, hour: 17, minute: 14, second: 26, millisecond: 678, kind: DateTimeKind.Local),
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
     Id = 70,
-    Value = new DateTime(year: 2017, month: 10, day: 5, hour: 10, minute: 30, second: 27, millisecond: 641, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 1950, month: 10, day: 18, hour: 10, minute: 4, second: 11, millisecond: 734, kind: DateTimeKind.Local),
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = new DateTime(year: 1970, month: 10, day: 12, hour: 8, minute: 9, second: 22, millisecond: 431, kind: DateTimeKind.Local),
 },
             new DateTimedatetime0M
 {
-    Id = 78,
-    Value = new DateTime(year: 1965, month: 10, day: 16, hour: 16, minute: 39, second: 23, millisecond: 542, kind: DateTimeKind.Local),
+    Id = 73,
+    Value = new DateTime(year: 1931, month: 10, day: 15, hour: 19, minute: 31, second: 18, millisecond: 628, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime0MI
 {
-    Id = 39,
-    Value = new DateTime(year: 1975, month: 10, day: 9, hour: 9, minute: 7, second: 42, millisecond: 726, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1957, month: 10, day: 4, hour: 8, minute: 58, second: 52, millisecond: 688, kind: DateTimeKind.Local),
+    Id = 50,
+    Value = new DateTime(year: 1923, month: 10, day: 14, hour: 9, minute: 53, second: 17, millisecond: 702, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1960, month: 10, day: 18, hour: 21, minute: 43, second: 20, millisecond: 759, kind: DateTimeKind.Local),
 },
-    NullableValue = null,
+    NullableValue = new DateTime(year: 1981, month: 10, day: 17, hour: 14, minute: 17, second: 3, millisecond: 822, kind: DateTimeKind.Local),
 },
             new DateTimedatetime0M
 {
-    Id = 80,
-    Value = new DateTime(year: 1943, month: 10, day: 4, hour: 12, minute: 47, second: 2, millisecond: 236, kind: DateTimeKind.Local),
+    Id = 82,
+    Value = new DateTime(year: 1978, month: 10, day: 1, hour: 13, minute: 17, second: 24, millisecond: 809, kind: DateTimeKind.Local),
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = new DateTime(year: 1971, month: 10, day: 11, hour: 9, minute: 44, second: 6, millisecond: 367, kind: DateTimeKind.Local),
 },
             new DateTimedatetime0M
 {
-    Id = 86,
-    Value = new DateTime(year: 1923, month: 10, day: 1, hour: 13, minute: 13, second: 43, millisecond: 699, kind: DateTimeKind.Local),
+    Id = 83,
+    Value = new DateTime(year: 1966, month: 10, day: 16, hour: 14, minute: 30, second: 13, millisecond: 951, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime0MI
 {
-    Id = 45,
-    Value = new DateTime(year: 1994, month: 10, day: 10, hour: 3, minute: 56, second: 53, millisecond: 923, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 2001, month: 10, day: 3, hour: 4, minute: 47, second: 37, millisecond: 904, kind: DateTimeKind.Local),
+    Id = 52,
+    Value = new DateTime(year: 1933, month: 10, day: 6, hour: 2, minute: 6, second: 45, millisecond: 752, kind: DateTimeKind.Local),
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
-    Id = 93,
-    Value = new DateTime(year: 1919, month: 10, day: 1, hour: 1, minute: 4, second: 23, millisecond: 4, kind: DateTimeKind.Local),
+    Id = 92,
+    Value = new DateTime(year: 1918, month: 10, day: 17, hour: 15, minute: 52, second: 45, millisecond: 730, kind: DateTimeKind.Local),
     ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
-    Id = 99,
-    Value = new DateTime(year: 1925, month: 10, day: 4, hour: 12, minute: 18, second: 52, millisecond: 19, kind: DateTimeKind.Local),
-    ModelInner = new DateTimedatetime0MI
-{
-    Id = 51,
-    Value = new DateTime(year: 1960, month: 10, day: 10, hour: 13, minute: 7, second: 39, millisecond: 785, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1951, month: 10, day: 8, hour: 13, minute: 30, second: 4, millisecond: 359, kind: DateTimeKind.Local),
-},
-    NullableValue = new DateTime(year: 2016, month: 10, day: 17, hour: 10, minute: 3, second: 51, millisecond: 494, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime0M
-{
-    Id = 105,
-    Value = new DateTime(year: 1925, month: 10, day: 17, hour: 12, minute: 20, second: 39, millisecond: 6, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 2002, month: 10, day: 5, hour: 7, minute: 20, second: 19, millisecond: 989, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime0M
-{
-    Id = 111,
-    Value = new DateTime(year: 1975, month: 10, day: 4, hour: 2, minute: 36, second: 56, millisecond: 96, kind: DateTimeKind.Local),
+    Id = 100,
+    Value = new DateTime(year: 1972, month: 10, day: 17, hour: 14, minute: 23, second: 2, millisecond: 453, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime0MI
 {
     Id = 56,
-    Value = new DateTime(year: 2010, month: 10, day: 4, hour: 6, minute: 34, second: 26, millisecond: 680, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 2014, month: 10, day: 19, hour: 4, minute: 43, second: 53, millisecond: 563, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 2012, month: 10, day: 9, hour: 5, minute: 45, second: 52, millisecond: 228, kind: DateTimeKind.Local),
+},
+    NullableValue = null,
+},
+            new DateTimedatetime0M
+{
+    Id = 109,
+    Value = new DateTime(year: 1969, month: 10, day: 19, hour: 4, minute: 30, second: 10, millisecond: 694, kind: DateTimeKind.Local),
+    ModelInner = null,
+    NullableValue = new DateTime(year: 1982, month: 10, day: 5, hour: 8, minute: 1, second: 11, millisecond: 140, kind: DateTimeKind.Local),
+},
+            new DateTimedatetime0M
+{
+    Id = 113,
+    Value = new DateTime(year: 1990, month: 10, day: 5, hour: 7, minute: 40, second: 2, millisecond: 332, kind: DateTimeKind.Local),
+    ModelInner = new DateTimedatetime0MI
+{
+    Id = 65,
+    Value = new DateTime(year: 2015, month: 10, day: 12, hour: 21, minute: 36, second: 52, millisecond: 264, kind: DateTimeKind.Local),
     NullableValue = null,
 },
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
-    Id = 116,
-    Value = new DateTime(year: 1920, month: 10, day: 14, hour: 14, minute: 48, second: 29, millisecond: 314, kind: DateTimeKind.Local),
+    Id = 114,
+    Value = new DateTime(year: 1959, month: 10, day: 12, hour: 4, minute: 17, second: 25, millisecond: 680, kind: DateTimeKind.Local),
     ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
-    Id = 118,
-    Value = new DateTime(year: 1981, month: 10, day: 7, hour: 1, minute: 32, second: 51, millisecond: 238, kind: DateTimeKind.Local),
+    Id = 115,
+    Value = new DateTime(year: 1936, month: 10, day: 7, hour: 18, minute: 23, second: 11, millisecond: 171, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime0MI
 {
-    Id = 64,
-    Value = new DateTime(year: 1962, month: 10, day: 12, hour: 10, minute: 23, second: 18, millisecond: 448, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 2006, month: 10, day: 7, hour: 8, minute: 8, second: 31, millisecond: 471, kind: DateTimeKind.Local),
-},
-    NullableValue = null,
-},
-            new DateTimedatetime0M
-{
-    Id = 124,
-    Value = new DateTime(year: 1991, month: 10, day: 10, hour: 20, minute: 21, second: 2, millisecond: 823, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 1964, month: 10, day: 18, hour: 15, minute: 23, second: 41, millisecond: 111, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime0M
-{
-    Id = 128,
-    Value = new DateTime(year: 1949, month: 10, day: 2, hour: 18, minute: 43, second: 34, millisecond: 54, kind: DateTimeKind.Local),
-    ModelInner = new DateTimedatetime0MI
-{
-    Id = 66,
-    Value = new DateTime(year: 1976, month: 10, day: 8, hour: 11, minute: 43, second: 21, millisecond: 703, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1929, month: 10, day: 5, hour: 8, minute: 32, second: 24, millisecond: 875, kind: DateTimeKind.Local),
-},
-    NullableValue = null,
-},
-            new DateTimedatetime0M
-{
-    Id = 137,
-    Value = new DateTime(year: 1957, month: 10, day: 4, hour: 21, minute: 23, second: 20, millisecond: 583, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 1965, month: 10, day: 8, hour: 5, minute: 31, second: 38, millisecond: 838, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime0M
-{
-    Id = 146,
-    Value = new DateTime(year: 1965, month: 10, day: 5, hour: 16, minute: 25, second: 34, millisecond: 279, kind: DateTimeKind.Local),
-    ModelInner = new DateTimedatetime0MI
-{
-    Id = 74,
-    Value = new DateTime(year: 1958, month: 10, day: 1, hour: 1, minute: 38, second: 10, millisecond: 66, kind: DateTimeKind.Local),
+    Id = 71,
+    Value = new DateTime(year: 1986, month: 10, day: 19, hour: 19, minute: 25, second: 27, millisecond: 833, kind: DateTimeKind.Local),
     NullableValue = null,
 },
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
-    Id = 153,
-    Value = new DateTime(year: 1982, month: 10, day: 2, hour: 21, minute: 9, second: 15, millisecond: 567, kind: DateTimeKind.Local),
+    Id = 123,
+    Value = new DateTime(year: 1991, month: 10, day: 6, hour: 21, minute: 31, second: 43, millisecond: 114, kind: DateTimeKind.Local),
     ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime0M
 {
-    Id = 162,
-    Value = new DateTime(year: 1940, month: 10, day: 14, hour: 18, minute: 25, second: 52, millisecond: 655, kind: DateTimeKind.Local),
+    Id = 131,
+    Value = new DateTime(year: 1938, month: 10, day: 14, hour: 16, minute: 55, second: 12, millisecond: 444, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime0MI
 {
-    Id = 80,
-    Value = new DateTime(year: 1990, month: 10, day: 18, hour: 2, minute: 50, second: 27, millisecond: 378, kind: DateTimeKind.Local),
+    Id = 72,
+    Value = new DateTime(year: 2008, month: 10, day: 17, hour: 8, minute: 26, second: 5, millisecond: 86, kind: DateTimeKind.Local),
     NullableValue = null,
 },
-    NullableValue = new DateTime(year: 1997, month: 10, day: 4, hour: 20, minute: 39, second: 34, millisecond: 550, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1966, month: 10, day: 19, hour: 1, minute: 17, second: 25, millisecond: 44, kind: DateTimeKind.Local),
+},
+            new DateTimedatetime0M
+{
+    Id = 140,
+    Value = new DateTime(year: 1980, month: 10, day: 3, hour: 10, minute: 3, second: 15, millisecond: 580, kind: DateTimeKind.Local),
+    ModelInner = null,
+    NullableValue = new DateTime(year: 1998, month: 10, day: 14, hour: 4, minute: 33, second: 4, millisecond: 642, kind: DateTimeKind.Local),
+},
+            new DateTimedatetime0M
+{
+    Id = 149,
+    Value = new DateTime(year: 1934, month: 10, day: 3, hour: 21, minute: 45, second: 5, millisecond: 534, kind: DateTimeKind.Local),
+    ModelInner = new DateTimedatetime0MI
+{
+    Id = 79,
+    Value = new DateTime(year: 1955, month: 10, day: 15, hour: 2, minute: 6, second: 5, millisecond: 112, kind: DateTimeKind.Local),
+    NullableValue = null,
+},
+    NullableValue = new DateTime(year: 2014, month: 10, day: 12, hour: 7, minute: 46, second: 4, millisecond: 367, kind: DateTimeKind.Local),
 },
         };
 
@@ -1365,12 +1365,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 128;
+                parametr1.Value = 83;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 57;
+                parametr2.Value = 131;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1400,16 +1400,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
-FlatDateTimedatetime0M.AssertModel(models[0],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(10));
+FlatDateTimedatetime0M.AssertModel(models[0],_testData[20], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[21], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[22], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[23], false);FlatDateTimedatetime0M.AssertModel(models[4],_testData[24], false);FlatDateTimedatetime0M.AssertModel(models[5],_testData[25], false);FlatDateTimedatetime0M.AssertModel(models[6],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[7],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[8],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[9],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
-FlatDateTimedatetime0M.AssertModel(models[0],_testData[12], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[13], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[14], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[15], false);FlatDateTimedatetime0M.AssertModel(models[4],_testData[16], false);FlatDateTimedatetime0M.AssertModel(models[5],_testData[17], false);FlatDateTimedatetime0M.AssertModel(models[6],_testData[18], false);FlatDateTimedatetime0M.AssertModel(models[7],_testData[19], false);FlatDateTimedatetime0M.AssertModel(models[8],_testData[20], false);FlatDateTimedatetime0M.AssertModel(models[9],_testData[21], false);FlatDateTimedatetime0M.AssertModel(models[10],_testData[22], false);FlatDateTimedatetime0M.AssertModel(models[11],_testData[23], false);FlatDateTimedatetime0M.AssertModel(models[12],_testData[24], false);FlatDateTimedatetime0M.AssertModel(models[13],_testData[25], false);FlatDateTimedatetime0M.AssertModel(models[14],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[15],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[16],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[17],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(2));
+FlatDateTimedatetime0M.AssertModel(models[0],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[29], false);
                         continue;
                     }
                     
@@ -1456,12 +1456,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 65;
+                parametr1.Value = 109;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 29;
+                parametr2.Value = 113;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1491,16 +1491,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(16));
-FlatDateTimedatetime0M.AssertModel(models[0],_testData[14], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[15], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[16], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[17], false);FlatDateTimedatetime0M.AssertModel(models[4],_testData[18], false);FlatDateTimedatetime0M.AssertModel(models[5],_testData[19], false);FlatDateTimedatetime0M.AssertModel(models[6],_testData[20], false);FlatDateTimedatetime0M.AssertModel(models[7],_testData[21], false);FlatDateTimedatetime0M.AssertModel(models[8],_testData[22], false);FlatDateTimedatetime0M.AssertModel(models[9],_testData[23], false);FlatDateTimedatetime0M.AssertModel(models[10],_testData[24], false);FlatDateTimedatetime0M.AssertModel(models[11],_testData[25], false);FlatDateTimedatetime0M.AssertModel(models[12],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[13],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[14],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[15],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(7));
+FlatDateTimedatetime0M.AssertModel(models[0],_testData[23], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[24], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[25], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[4],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[5],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[6],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
-FlatDateTimedatetime0M.AssertModel(models[0],_testData[7], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[8], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[9], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[10], false);FlatDateTimedatetime0M.AssertModel(models[4],_testData[11], false);FlatDateTimedatetime0M.AssertModel(models[5],_testData[12], false);FlatDateTimedatetime0M.AssertModel(models[6],_testData[13], false);FlatDateTimedatetime0M.AssertModel(models[7],_testData[14], false);FlatDateTimedatetime0M.AssertModel(models[8],_testData[15], false);FlatDateTimedatetime0M.AssertModel(models[9],_testData[16], false);FlatDateTimedatetime0M.AssertModel(models[10],_testData[17], false);FlatDateTimedatetime0M.AssertModel(models[11],_testData[18], false);FlatDateTimedatetime0M.AssertModel(models[12],_testData[19], false);FlatDateTimedatetime0M.AssertModel(models[13],_testData[20], false);FlatDateTimedatetime0M.AssertModel(models[14],_testData[21], false);FlatDateTimedatetime0M.AssertModel(models[15],_testData[22], false);FlatDateTimedatetime0M.AssertModel(models[16],_testData[23], false);FlatDateTimedatetime0M.AssertModel(models[17],_testData[24], false);FlatDateTimedatetime0M.AssertModel(models[18],_testData[25], false);FlatDateTimedatetime0M.AssertModel(models[19],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[20],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[21],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[22],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+FlatDateTimedatetime0M.AssertModel(models[0],_testData[24], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[25], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[4],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }
                     
@@ -1586,12 +1586,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 57;
+                parametr1.Value = 113;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 42;
+                parametr2.Value = 115;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in await ((IDateTimeSingleTypedatetime)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
@@ -1599,16 +1599,16 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
-DateTimedatetime0M.AssertModel(models[0],_testData[12], false);DateTimedatetime0M.AssertModel(models[1],_testData[13], false);DateTimedatetime0M.AssertModel(models[2],_testData[14], false);DateTimedatetime0M.AssertModel(models[3],_testData[15], false);DateTimedatetime0M.AssertModel(models[4],_testData[16], false);DateTimedatetime0M.AssertModel(models[5],_testData[17], false);DateTimedatetime0M.AssertModel(models[6],_testData[18], false);DateTimedatetime0M.AssertModel(models[7],_testData[19], false);DateTimedatetime0M.AssertModel(models[8],_testData[20], false);DateTimedatetime0M.AssertModel(models[9],_testData[21], false);DateTimedatetime0M.AssertModel(models[10],_testData[22], false);DateTimedatetime0M.AssertModel(models[11],_testData[23], false);DateTimedatetime0M.AssertModel(models[12],_testData[24], false);DateTimedatetime0M.AssertModel(models[13],_testData[25], false);DateTimedatetime0M.AssertModel(models[14],_testData[26], false);DateTimedatetime0M.AssertModel(models[15],_testData[27], false);DateTimedatetime0M.AssertModel(models[16],_testData[28], false);DateTimedatetime0M.AssertModel(models[17],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+DateTimedatetime0M.AssertModel(models[0],_testData[24], false);DateTimedatetime0M.AssertModel(models[1],_testData[25], false);DateTimedatetime0M.AssertModel(models[2],_testData[26], false);DateTimedatetime0M.AssertModel(models[3],_testData[27], false);DateTimedatetime0M.AssertModel(models[4],_testData[28], false);DateTimedatetime0M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(21));
-DateTimedatetime0M.AssertModel(models[0],_testData[9], false);DateTimedatetime0M.AssertModel(models[1],_testData[10], false);DateTimedatetime0M.AssertModel(models[2],_testData[11], false);DateTimedatetime0M.AssertModel(models[3],_testData[12], false);DateTimedatetime0M.AssertModel(models[4],_testData[13], false);DateTimedatetime0M.AssertModel(models[5],_testData[14], false);DateTimedatetime0M.AssertModel(models[6],_testData[15], false);DateTimedatetime0M.AssertModel(models[7],_testData[16], false);DateTimedatetime0M.AssertModel(models[8],_testData[17], false);DateTimedatetime0M.AssertModel(models[9],_testData[18], false);DateTimedatetime0M.AssertModel(models[10],_testData[19], false);DateTimedatetime0M.AssertModel(models[11],_testData[20], false);DateTimedatetime0M.AssertModel(models[12],_testData[21], false);DateTimedatetime0M.AssertModel(models[13],_testData[22], false);DateTimedatetime0M.AssertModel(models[14],_testData[23], false);DateTimedatetime0M.AssertModel(models[15],_testData[24], false);DateTimedatetime0M.AssertModel(models[16],_testData[25], false);DateTimedatetime0M.AssertModel(models[17],_testData[26], false);DateTimedatetime0M.AssertModel(models[18],_testData[27], false);DateTimedatetime0M.AssertModel(models[19],_testData[28], false);DateTimedatetime0M.AssertModel(models[20],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+DateTimedatetime0M.AssertModel(models[0],_testData[26], false);DateTimedatetime0M.AssertModel(models[1],_testData[27], false);DateTimedatetime0M.AssertModel(models[2],_testData[28], false);DateTimedatetime0M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }
                     
@@ -1644,12 +1644,12 @@ DateTimedatetime0M.AssertModel(models[0],_testData[9], false);DateTimedatetime0M
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 17;
+                parametr1.Value = 73;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 99;
+                parametr2.Value = 73;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in  ((IDateTimeSingleTypedatetime)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
@@ -1657,16 +1657,16 @@ DateTimedatetime0M.AssertModel(models[0],_testData[9], false);DateTimedatetime0M
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(26));
-DateTimedatetime0M.AssertModel(models[0],_testData[4], false);DateTimedatetime0M.AssertModel(models[1],_testData[5], false);DateTimedatetime0M.AssertModel(models[2],_testData[6], false);DateTimedatetime0M.AssertModel(models[3],_testData[7], false);DateTimedatetime0M.AssertModel(models[4],_testData[8], false);DateTimedatetime0M.AssertModel(models[5],_testData[9], false);DateTimedatetime0M.AssertModel(models[6],_testData[10], false);DateTimedatetime0M.AssertModel(models[7],_testData[11], false);DateTimedatetime0M.AssertModel(models[8],_testData[12], false);DateTimedatetime0M.AssertModel(models[9],_testData[13], false);DateTimedatetime0M.AssertModel(models[10],_testData[14], false);DateTimedatetime0M.AssertModel(models[11],_testData[15], false);DateTimedatetime0M.AssertModel(models[12],_testData[16], false);DateTimedatetime0M.AssertModel(models[13],_testData[17], false);DateTimedatetime0M.AssertModel(models[14],_testData[18], false);DateTimedatetime0M.AssertModel(models[15],_testData[19], false);DateTimedatetime0M.AssertModel(models[16],_testData[20], false);DateTimedatetime0M.AssertModel(models[17],_testData[21], false);DateTimedatetime0M.AssertModel(models[18],_testData[22], false);DateTimedatetime0M.AssertModel(models[19],_testData[23], false);DateTimedatetime0M.AssertModel(models[20],_testData[24], false);DateTimedatetime0M.AssertModel(models[21],_testData[25], false);DateTimedatetime0M.AssertModel(models[22],_testData[26], false);DateTimedatetime0M.AssertModel(models[23],_testData[27], false);DateTimedatetime0M.AssertModel(models[24],_testData[28], false);DateTimedatetime0M.AssertModel(models[25],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(12));
+DateTimedatetime0M.AssertModel(models[0],_testData[18], false);DateTimedatetime0M.AssertModel(models[1],_testData[19], false);DateTimedatetime0M.AssertModel(models[2],_testData[20], false);DateTimedatetime0M.AssertModel(models[3],_testData[21], false);DateTimedatetime0M.AssertModel(models[4],_testData[22], false);DateTimedatetime0M.AssertModel(models[5],_testData[23], false);DateTimedatetime0M.AssertModel(models[6],_testData[24], false);DateTimedatetime0M.AssertModel(models[7],_testData[25], false);DateTimedatetime0M.AssertModel(models[8],_testData[26], false);DateTimedatetime0M.AssertModel(models[9],_testData[27], false);DateTimedatetime0M.AssertModel(models[10],_testData[28], false);DateTimedatetime0M.AssertModel(models[11],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
-DateTimedatetime0M.AssertModel(models[0],_testData[20], false);DateTimedatetime0M.AssertModel(models[1],_testData[21], false);DateTimedatetime0M.AssertModel(models[2],_testData[22], false);DateTimedatetime0M.AssertModel(models[3],_testData[23], false);DateTimedatetime0M.AssertModel(models[4],_testData[24], false);DateTimedatetime0M.AssertModel(models[5],_testData[25], false);DateTimedatetime0M.AssertModel(models[6],_testData[26], false);DateTimedatetime0M.AssertModel(models[7],_testData[27], false);DateTimedatetime0M.AssertModel(models[8],_testData[28], false);DateTimedatetime0M.AssertModel(models[9],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(12));
+DateTimedatetime0M.AssertModel(models[0],_testData[18], false);DateTimedatetime0M.AssertModel(models[1],_testData[19], false);DateTimedatetime0M.AssertModel(models[2],_testData[20], false);DateTimedatetime0M.AssertModel(models[3],_testData[21], false);DateTimedatetime0M.AssertModel(models[4],_testData[22], false);DateTimedatetime0M.AssertModel(models[5],_testData[23], false);DateTimedatetime0M.AssertModel(models[6],_testData[24], false);DateTimedatetime0M.AssertModel(models[7],_testData[25], false);DateTimedatetime0M.AssertModel(models[8],_testData[26], false);DateTimedatetime0M.AssertModel(models[9],_testData[27], false);DateTimedatetime0M.AssertModel(models[10],_testData[28], false);DateTimedatetime0M.AssertModel(models[11],_testData[29], false);
                         continue;
                     }
                     
@@ -1858,21 +1858,21 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((IDateTimeSingleTypedatetime)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 42, query1, 80, query2))
+                foreach(var batchResult in await ((IDateTimeSingleTypedatetime)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 83, query1, 45, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(21));
-FlatDateTimedatetime0M.AssertModel(models[0],_testData[9], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[10], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[11], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[12], false);FlatDateTimedatetime0M.AssertModel(models[4],_testData[13], false);FlatDateTimedatetime0M.AssertModel(models[5],_testData[14], false);FlatDateTimedatetime0M.AssertModel(models[6],_testData[15], false);FlatDateTimedatetime0M.AssertModel(models[7],_testData[16], false);FlatDateTimedatetime0M.AssertModel(models[8],_testData[17], false);FlatDateTimedatetime0M.AssertModel(models[9],_testData[18], false);FlatDateTimedatetime0M.AssertModel(models[10],_testData[19], false);FlatDateTimedatetime0M.AssertModel(models[11],_testData[20], false);FlatDateTimedatetime0M.AssertModel(models[12],_testData[21], false);FlatDateTimedatetime0M.AssertModel(models[13],_testData[22], false);FlatDateTimedatetime0M.AssertModel(models[14],_testData[23], false);FlatDateTimedatetime0M.AssertModel(models[15],_testData[24], false);FlatDateTimedatetime0M.AssertModel(models[16],_testData[25], false);FlatDateTimedatetime0M.AssertModel(models[17],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[18],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[19],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[20],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(10));
+FlatDateTimedatetime0M.AssertModel(models[0],_testData[20], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[21], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[22], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[23], false);FlatDateTimedatetime0M.AssertModel(models[4],_testData[24], false);FlatDateTimedatetime0M.AssertModel(models[5],_testData[25], false);FlatDateTimedatetime0M.AssertModel(models[6],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[7],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[8],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[9],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
-FlatDateTimedatetime0M.AssertModel(models[0],_testData[17], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[18], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[19], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[20], false);FlatDateTimedatetime0M.AssertModel(models[4],_testData[21], false);FlatDateTimedatetime0M.AssertModel(models[5],_testData[22], false);FlatDateTimedatetime0M.AssertModel(models[6],_testData[23], false);FlatDateTimedatetime0M.AssertModel(models[7],_testData[24], false);FlatDateTimedatetime0M.AssertModel(models[8],_testData[25], false);FlatDateTimedatetime0M.AssertModel(models[9],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[10],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[11],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[12],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(19));
+FlatDateTimedatetime0M.AssertModel(models[0],_testData[11], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[12], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[13], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[14], false);FlatDateTimedatetime0M.AssertModel(models[4],_testData[15], false);FlatDateTimedatetime0M.AssertModel(models[5],_testData[16], false);FlatDateTimedatetime0M.AssertModel(models[6],_testData[17], false);FlatDateTimedatetime0M.AssertModel(models[7],_testData[18], false);FlatDateTimedatetime0M.AssertModel(models[8],_testData[19], false);FlatDateTimedatetime0M.AssertModel(models[9],_testData[20], false);FlatDateTimedatetime0M.AssertModel(models[10],_testData[21], false);FlatDateTimedatetime0M.AssertModel(models[11],_testData[22], false);FlatDateTimedatetime0M.AssertModel(models[12],_testData[23], false);FlatDateTimedatetime0M.AssertModel(models[13],_testData[24], false);FlatDateTimedatetime0M.AssertModel(models[14],_testData[25], false);FlatDateTimedatetime0M.AssertModel(models[15],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[16],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[17],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[18],_testData[29], false);
                         continue;
                     }
                     
@@ -1936,7 +1936,7 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((IDateTimeSingleTypedatetime)this).DbConnectionDynQuerySelectModelBatch(connection, 63, query1, 128, query2))
+                foreach(var batchResult in  ((IDateTimeSingleTypedatetime)this).DbConnectionDynQuerySelectModelBatch(connection, 47, query1, 65, query2))
                 {
                     if(++resultIndex == 1)
                     {
@@ -1949,8 +1949,8 @@ FlatDateTimedatetime0M.AssertModel(models[0],_testData[13], false);FlatDateTimed
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
-FlatDateTimedatetime0M.AssertModel(models[0],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(14));
+FlatDateTimedatetime0M.AssertModel(models[0],_testData[16], false);FlatDateTimedatetime0M.AssertModel(models[1],_testData[17], false);FlatDateTimedatetime0M.AssertModel(models[2],_testData[18], false);FlatDateTimedatetime0M.AssertModel(models[3],_testData[19], false);FlatDateTimedatetime0M.AssertModel(models[4],_testData[20], false);FlatDateTimedatetime0M.AssertModel(models[5],_testData[21], false);FlatDateTimedatetime0M.AssertModel(models[6],_testData[22], false);FlatDateTimedatetime0M.AssertModel(models[7],_testData[23], false);FlatDateTimedatetime0M.AssertModel(models[8],_testData[24], false);FlatDateTimedatetime0M.AssertModel(models[9],_testData[25], false);FlatDateTimedatetime0M.AssertModel(models[10],_testData[26], false);FlatDateTimedatetime0M.AssertModel(models[11],_testData[27], false);FlatDateTimedatetime0M.AssertModel(models[12],_testData[28], false);FlatDateTimedatetime0M.AssertModel(models[13],_testData[29], false);
                         continue;
                     }
                     
@@ -2035,21 +2035,21 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IDateTimeSingleTypedatetime)this).DbConnectionSelectModelBatchAsync(connection, 146, 37))
+                foreach(var batchResult in await ((IDateTimeSingleTypedatetime)this).DbConnectionSelectModelBatchAsync(connection, 114, 115))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(2));
-DateTimedatetime0M.AssertModel(models[0],_testData[28], false);DateTimedatetime0M.AssertModel(models[1],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(5));
+DateTimedatetime0M.AssertModel(models[0],_testData[25], false);DateTimedatetime0M.AssertModel(models[1],_testData[26], false);DateTimedatetime0M.AssertModel(models[2],_testData[27], false);DateTimedatetime0M.AssertModel(models[3],_testData[28], false);DateTimedatetime0M.AssertModel(models[4],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
-DateTimedatetime0M.AssertModel(models[0],_testData[8], false);DateTimedatetime0M.AssertModel(models[1],_testData[9], false);DateTimedatetime0M.AssertModel(models[2],_testData[10], false);DateTimedatetime0M.AssertModel(models[3],_testData[11], false);DateTimedatetime0M.AssertModel(models[4],_testData[12], false);DateTimedatetime0M.AssertModel(models[5],_testData[13], false);DateTimedatetime0M.AssertModel(models[6],_testData[14], false);DateTimedatetime0M.AssertModel(models[7],_testData[15], false);DateTimedatetime0M.AssertModel(models[8],_testData[16], false);DateTimedatetime0M.AssertModel(models[9],_testData[17], false);DateTimedatetime0M.AssertModel(models[10],_testData[18], false);DateTimedatetime0M.AssertModel(models[11],_testData[19], false);DateTimedatetime0M.AssertModel(models[12],_testData[20], false);DateTimedatetime0M.AssertModel(models[13],_testData[21], false);DateTimedatetime0M.AssertModel(models[14],_testData[22], false);DateTimedatetime0M.AssertModel(models[15],_testData[23], false);DateTimedatetime0M.AssertModel(models[16],_testData[24], false);DateTimedatetime0M.AssertModel(models[17],_testData[25], false);DateTimedatetime0M.AssertModel(models[18],_testData[26], false);DateTimedatetime0M.AssertModel(models[19],_testData[27], false);DateTimedatetime0M.AssertModel(models[20],_testData[28], false);DateTimedatetime0M.AssertModel(models[21],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+DateTimedatetime0M.AssertModel(models[0],_testData[26], false);DateTimedatetime0M.AssertModel(models[1],_testData[27], false);DateTimedatetime0M.AssertModel(models[2],_testData[28], false);DateTimedatetime0M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }
                     
@@ -2080,21 +2080,21 @@ DateTimedatetime0M.AssertModel(models[0],_testData[8], false);DateTimedatetime0M
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IDateTimeSingleTypedatetime)this).DbConnectionSelectModelBatch(connection, 118, 37))
+                foreach(var batchResult in  ((IDateTimeSingleTypedatetime)this).DbConnectionSelectModelBatch(connection, 32, 59))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
-DateTimedatetime0M.AssertModel(models[0],_testData[24], false);DateTimedatetime0M.AssertModel(models[1],_testData[25], false);DateTimedatetime0M.AssertModel(models[2],_testData[26], false);DateTimedatetime0M.AssertModel(models[3],_testData[27], false);DateTimedatetime0M.AssertModel(models[4],_testData[28], false);DateTimedatetime0M.AssertModel(models[5],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(23));
+DateTimedatetime0M.AssertModel(models[0],_testData[7], false);DateTimedatetime0M.AssertModel(models[1],_testData[8], false);DateTimedatetime0M.AssertModel(models[2],_testData[9], false);DateTimedatetime0M.AssertModel(models[3],_testData[10], false);DateTimedatetime0M.AssertModel(models[4],_testData[11], false);DateTimedatetime0M.AssertModel(models[5],_testData[12], false);DateTimedatetime0M.AssertModel(models[6],_testData[13], false);DateTimedatetime0M.AssertModel(models[7],_testData[14], false);DateTimedatetime0M.AssertModel(models[8],_testData[15], false);DateTimedatetime0M.AssertModel(models[9],_testData[16], false);DateTimedatetime0M.AssertModel(models[10],_testData[17], false);DateTimedatetime0M.AssertModel(models[11],_testData[18], false);DateTimedatetime0M.AssertModel(models[12],_testData[19], false);DateTimedatetime0M.AssertModel(models[13],_testData[20], false);DateTimedatetime0M.AssertModel(models[14],_testData[21], false);DateTimedatetime0M.AssertModel(models[15],_testData[22], false);DateTimedatetime0M.AssertModel(models[16],_testData[23], false);DateTimedatetime0M.AssertModel(models[17],_testData[24], false);DateTimedatetime0M.AssertModel(models[18],_testData[25], false);DateTimedatetime0M.AssertModel(models[19],_testData[26], false);DateTimedatetime0M.AssertModel(models[20],_testData[27], false);DateTimedatetime0M.AssertModel(models[21],_testData[28], false);DateTimedatetime0M.AssertModel(models[22],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
-DateTimedatetime0M.AssertModel(models[0],_testData[8], false);DateTimedatetime0M.AssertModel(models[1],_testData[9], false);DateTimedatetime0M.AssertModel(models[2],_testData[10], false);DateTimedatetime0M.AssertModel(models[3],_testData[11], false);DateTimedatetime0M.AssertModel(models[4],_testData[12], false);DateTimedatetime0M.AssertModel(models[5],_testData[13], false);DateTimedatetime0M.AssertModel(models[6],_testData[14], false);DateTimedatetime0M.AssertModel(models[7],_testData[15], false);DateTimedatetime0M.AssertModel(models[8],_testData[16], false);DateTimedatetime0M.AssertModel(models[9],_testData[17], false);DateTimedatetime0M.AssertModel(models[10],_testData[18], false);DateTimedatetime0M.AssertModel(models[11],_testData[19], false);DateTimedatetime0M.AssertModel(models[12],_testData[20], false);DateTimedatetime0M.AssertModel(models[13],_testData[21], false);DateTimedatetime0M.AssertModel(models[14],_testData[22], false);DateTimedatetime0M.AssertModel(models[15],_testData[23], false);DateTimedatetime0M.AssertModel(models[16],_testData[24], false);DateTimedatetime0M.AssertModel(models[17],_testData[25], false);DateTimedatetime0M.AssertModel(models[18],_testData[26], false);DateTimedatetime0M.AssertModel(models[19],_testData[27], false);DateTimedatetime0M.AssertModel(models[20],_testData[28], false);DateTimedatetime0M.AssertModel(models[21],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(15));
+DateTimedatetime0M.AssertModel(models[0],_testData[15], false);DateTimedatetime0M.AssertModel(models[1],_testData[16], false);DateTimedatetime0M.AssertModel(models[2],_testData[17], false);DateTimedatetime0M.AssertModel(models[3],_testData[18], false);DateTimedatetime0M.AssertModel(models[4],_testData[19], false);DateTimedatetime0M.AssertModel(models[5],_testData[20], false);DateTimedatetime0M.AssertModel(models[6],_testData[21], false);DateTimedatetime0M.AssertModel(models[7],_testData[22], false);DateTimedatetime0M.AssertModel(models[8],_testData[23], false);DateTimedatetime0M.AssertModel(models[9],_testData[24], false);DateTimedatetime0M.AssertModel(models[10],_testData[25], false);DateTimedatetime0M.AssertModel(models[11],_testData[26], false);DateTimedatetime0M.AssertModel(models[12],_testData[27], false);DateTimedatetime0M.AssertModel(models[13],_testData[28], false);DateTimedatetime0M.AssertModel(models[14],_testData[29], false);
                         continue;
                     }
                     
@@ -2110,11 +2110,11 @@ DateTimedatetime0M.AssertModel(models[0],_testData[8], false);DateTimedatetime0M
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IDateTimeSingleTypedatetime)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IDateTimeSingleTypedatetime)this).SetDbConnectionSelectModelParametrs(cmd, 19);
+                ((IDateTimeSingleTypedatetime)this).SetDbConnectionSelectModelParametrs(cmd, 46);
                 var models = await ((IDateTimeSingleTypedatetime)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(25));
-DateTimedatetime0M.AssertModel(models[0],_testData[5], false);DateTimedatetime0M.AssertModel(models[1],_testData[6], false);DateTimedatetime0M.AssertModel(models[2],_testData[7], false);DateTimedatetime0M.AssertModel(models[3],_testData[8], false);DateTimedatetime0M.AssertModel(models[4],_testData[9], false);DateTimedatetime0M.AssertModel(models[5],_testData[10], false);DateTimedatetime0M.AssertModel(models[6],_testData[11], false);DateTimedatetime0M.AssertModel(models[7],_testData[12], false);DateTimedatetime0M.AssertModel(models[8],_testData[13], false);DateTimedatetime0M.AssertModel(models[9],_testData[14], false);DateTimedatetime0M.AssertModel(models[10],_testData[15], false);DateTimedatetime0M.AssertModel(models[11],_testData[16], false);DateTimedatetime0M.AssertModel(models[12],_testData[17], false);DateTimedatetime0M.AssertModel(models[13],_testData[18], false);DateTimedatetime0M.AssertModel(models[14],_testData[19], false);DateTimedatetime0M.AssertModel(models[15],_testData[20], false);DateTimedatetime0M.AssertModel(models[16],_testData[21], false);DateTimedatetime0M.AssertModel(models[17],_testData[22], false);DateTimedatetime0M.AssertModel(models[18],_testData[23], false);DateTimedatetime0M.AssertModel(models[19],_testData[24], false);DateTimedatetime0M.AssertModel(models[20],_testData[25], false);DateTimedatetime0M.AssertModel(models[21],_testData[26], false);DateTimedatetime0M.AssertModel(models[22],_testData[27], false);DateTimedatetime0M.AssertModel(models[23],_testData[28], false);DateTimedatetime0M.AssertModel(models[24],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(18));
+DateTimedatetime0M.AssertModel(models[0],_testData[12], false);DateTimedatetime0M.AssertModel(models[1],_testData[13], false);DateTimedatetime0M.AssertModel(models[2],_testData[14], false);DateTimedatetime0M.AssertModel(models[3],_testData[15], false);DateTimedatetime0M.AssertModel(models[4],_testData[16], false);DateTimedatetime0M.AssertModel(models[5],_testData[17], false);DateTimedatetime0M.AssertModel(models[6],_testData[18], false);DateTimedatetime0M.AssertModel(models[7],_testData[19], false);DateTimedatetime0M.AssertModel(models[8],_testData[20], false);DateTimedatetime0M.AssertModel(models[9],_testData[21], false);DateTimedatetime0M.AssertModel(models[10],_testData[22], false);DateTimedatetime0M.AssertModel(models[11],_testData[23], false);DateTimedatetime0M.AssertModel(models[12],_testData[24], false);DateTimedatetime0M.AssertModel(models[13],_testData[25], false);DateTimedatetime0M.AssertModel(models[14],_testData[26], false);DateTimedatetime0M.AssertModel(models[15],_testData[27], false);DateTimedatetime0M.AssertModel(models[16],_testData[28], false);DateTimedatetime0M.AssertModel(models[17],_testData[29], false);
             }
         }
 
@@ -2125,11 +2125,11 @@ DateTimedatetime0M.AssertModel(models[0],_testData[5], false);DateTimedatetime0M
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IDateTimeSingleTypedatetime)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IDateTimeSingleTypedatetime)this).SetDbConnectionSelectModelParametrs(cmd, 99);
+                ((IDateTimeSingleTypedatetime)this).SetDbConnectionSelectModelParametrs(cmd, 45);
                 var models =  ((IDateTimeSingleTypedatetime)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(10));
-DateTimedatetime0M.AssertModel(models[0],_testData[20], false);DateTimedatetime0M.AssertModel(models[1],_testData[21], false);DateTimedatetime0M.AssertModel(models[2],_testData[22], false);DateTimedatetime0M.AssertModel(models[3],_testData[23], false);DateTimedatetime0M.AssertModel(models[4],_testData[24], false);DateTimedatetime0M.AssertModel(models[5],_testData[25], false);DateTimedatetime0M.AssertModel(models[6],_testData[26], false);DateTimedatetime0M.AssertModel(models[7],_testData[27], false);DateTimedatetime0M.AssertModel(models[8],_testData[28], false);DateTimedatetime0M.AssertModel(models[9],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(19));
+DateTimedatetime0M.AssertModel(models[0],_testData[11], false);DateTimedatetime0M.AssertModel(models[1],_testData[12], false);DateTimedatetime0M.AssertModel(models[2],_testData[13], false);DateTimedatetime0M.AssertModel(models[3],_testData[14], false);DateTimedatetime0M.AssertModel(models[4],_testData[15], false);DateTimedatetime0M.AssertModel(models[5],_testData[16], false);DateTimedatetime0M.AssertModel(models[6],_testData[17], false);DateTimedatetime0M.AssertModel(models[7],_testData[18], false);DateTimedatetime0M.AssertModel(models[8],_testData[19], false);DateTimedatetime0M.AssertModel(models[9],_testData[20], false);DateTimedatetime0M.AssertModel(models[10],_testData[21], false);DateTimedatetime0M.AssertModel(models[11],_testData[22], false);DateTimedatetime0M.AssertModel(models[12],_testData[23], false);DateTimedatetime0M.AssertModel(models[13],_testData[24], false);DateTimedatetime0M.AssertModel(models[14],_testData[25], false);DateTimedatetime0M.AssertModel(models[15],_testData[26], false);DateTimedatetime0M.AssertModel(models[16],_testData[27], false);DateTimedatetime0M.AssertModel(models[17],_testData[28], false);DateTimedatetime0M.AssertModel(models[18],_testData[29], false);
             }
         }
 
@@ -2176,8 +2176,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((6)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1996, month: 10, day: 4, hour: 17, minute: 35, second: 29, millisecond: 312, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((7)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2014, month: 10, day: 7, hour: 18, minute: 49, second: 3, millisecond: 21, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -2190,100 +2190,100 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((7)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1923, month: 10, day: 8, hour: 6, minute: 14, second: 8, millisecond: 29, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((16)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1993, month: 10, day: 14, hour: 18, minute: 31, second: 26, millisecond: 343, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((8)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1924, month: 10, day: 12, hour: 6, minute: 40, second: 1, millisecond: 688, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((9)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1950, month: 10, day: 10, hour: 20, minute: 8, second: 27, millisecond: 25, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1949, month: 10, day: 3, hour: 18, minute: 53, second: 6, millisecond: 918, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2001, month: 10, day: 8, hour: 22, minute: 44, second: 33, millisecond: 688, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[2];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((12)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1935, month: 10, day: 13, hour: 3, minute: 1, second: 6, millisecond: 84, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((19)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 10, hour: 16, minute: 28, second: 47, millisecond: 960, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 13, hour: 13, minute: 15, second: 49, millisecond: 592, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[3];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((17)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1979, month: 10, day: 13, hour: 5, minute: 30, second: 23, millisecond: 710, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((20)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1960, month: 10, day: 17, hour: 21, minute: 27, second: 53, millisecond: 774, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((16)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2005, month: 10, day: 16, hour: 19, minute: 10, second: 18, millisecond: 8, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((12)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1965, month: 10, day: 19, hour: 16, minute: 17, second: 31, millisecond: 178, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1952, month: 10, day: 10, hour: 19, minute: 7, second: 15, millisecond: 985, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 19, hour: 6, minute: 34, second: 28, millisecond: 286, kind: DateTimeKind.Local))));
 
                 model = models[4];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((19)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 5, hour: 6, minute: 26, second: 44, millisecond: 477, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((21)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1919, month: 10, day: 6, hour: 5, minute: 55, second: 3, millisecond: 561, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1984, month: 10, day: 1, hour: 4, minute: 29, second: 17, millisecond: 539, kind: DateTimeKind.Local))));
 
                 model = models[5];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((22)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1991, month: 10, day: 8, hour: 10, minute: 16, second: 30, millisecond: 349, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((30)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2012, month: 10, day: 2, hour: 11, minute: 8, second: 26, millisecond: 56, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((22)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2009, month: 10, day: 15, hour: 19, minute: 34, second: 27, millisecond: 432, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((18)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1917, month: 10, day: 9, hour: 2, minute: 41, second: 57, millisecond: 377, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1982, month: 10, day: 18, hour: 2, minute: 37, second: 36, millisecond: 911, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1925, month: 10, day: 18, hour: 9, minute: 39, second: 31, millisecond: 302, kind: DateTimeKind.Local))));
 
                 model = models[6];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((29)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1957, month: 10, day: 7, hour: 8, minute: 20, second: 2, millisecond: 435, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((32)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1968, month: 10, day: 15, hour: 10, minute: 6, second: 50, millisecond: 255, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2018, month: 10, day: 6, hour: 2, minute: 28, second: 8, millisecond: 21, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[7];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((37)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1976, month: 10, day: 9, hour: 8, minute: 23, second: 35, millisecond: 448, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((35)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1944, month: 10, day: 14, hour: 17, minute: 11, second: 57, millisecond: 14, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((26)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2015, month: 10, day: 18, hour: 10, minute: 8, second: 31, millisecond: 626, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((20)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1918, month: 10, day: 17, hour: 19, minute: 12, second: 28, millisecond: 635, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1933, month: 10, day: 15, hour: 20, minute: 52, second: 7, millisecond: 377, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2292,37 +2292,37 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((42)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1998, month: 10, day: 8, hour: 22, minute: 18, second: 10, millisecond: 886, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((41)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1924, month: 10, day: 18, hour: 16, minute: 41, second: 1, millisecond: 584, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1965, month: 10, day: 19, hour: 12, minute: 58, second: 33, millisecond: 434, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[9];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((49)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 9, hour: 17, minute: 33, second: 12, millisecond: 348, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((42)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1919, month: 10, day: 2, hour: 2, minute: 37, second: 37, millisecond: 223, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((33)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1926, month: 10, day: 10, hour: 9, minute: 31, second: 44, millisecond: 106, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((21)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1992, month: 10, day: 17, hour: 7, minute: 11, second: 48, millisecond: 887, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1990, month: 10, day: 12, hour: 5, minute: 42, second: 18, millisecond: 739, kind: DateTimeKind.Local))));
 
                 model = models[10];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((56)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2002, month: 10, day: 8, hour: 15, minute: 21, second: 38, millisecond: 730, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((45)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1994, month: 10, day: 17, hour: 15, minute: 11, second: 48, millisecond: 83, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -2335,13 +2335,13 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((57)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1996, month: 10, day: 16, hour: 19, minute: 7, second: 19, millisecond: 871, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((46)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1998, month: 10, day: 15, hour: 9, minute: 36, second: 37, millisecond: 56, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((35)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1933, month: 10, day: 2, hour: 6, minute: 31, second: 7, millisecond: 357, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((29)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2003, month: 10, day: 1, hour: 13, minute: 27, second: 48, millisecond: 878, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1928, month: 10, day: 2, hour: 10, minute: 41, second: 38, millisecond: 176, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 2004, month: 10, day: 11, hour: 20, minute: 7, second: 7, millisecond: 866, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2350,8 +2350,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((63)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1931, month: 10, day: 2, hour: 10, minute: 14, second: 34, millisecond: 402, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((47)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1997, month: 10, day: 15, hour: 11, minute: 40, second: 26, millisecond: 824, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -2364,23 +2364,23 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((65)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1964, month: 10, day: 17, hour: 12, minute: 46, second: 35, millisecond: 321, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((54)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1931, month: 10, day: 7, hour: 22, minute: 4, second: 23, millisecond: 75, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((38)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2015, month: 10, day: 19, hour: 16, minute: 26, second: 18, millisecond: 197, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((36)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1949, month: 10, day: 10, hour: 7, minute: 27, second: 45, millisecond: 494, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1944, month: 10, day: 16, hour: 16, minute: 2, second: 10, millisecond: 682, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1976, month: 10, day: 18, hour: 8, minute: 57, second: 40, millisecond: 297, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1977, month: 10, day: 16, hour: 3, minute: 29, second: 21, millisecond: 486, kind: DateTimeKind.Local))));
 
                 model = models[14];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((70)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 5, hour: 10, minute: 30, second: 27, millisecond: 641, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((59)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1960, month: 10, day: 18, hour: 13, minute: 32, second: 21, millisecond: 94, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -2393,13 +2393,13 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((78)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1965, month: 10, day: 16, hour: 16, minute: 39, second: 23, millisecond: 542, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((65)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1919, month: 10, day: 19, hour: 17, minute: 45, second: 39, millisecond: 137, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((39)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1975, month: 10, day: 9, hour: 9, minute: 7, second: 42, millisecond: 726, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((43)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1974, month: 10, day: 12, hour: 17, minute: 14, second: 26, millisecond: 678, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1957, month: 10, day: 4, hour: 8, minute: 58, second: 52, millisecond: 688, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2408,37 +2408,66 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((80)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1943, month: 10, day: 4, hour: 12, minute: 47, second: 2, millisecond: 236, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((70)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1950, month: 10, day: 18, hour: 10, minute: 4, second: 11, millisecond: 734, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1970, month: 10, day: 12, hour: 8, minute: 9, second: 22, millisecond: 431, kind: DateTimeKind.Local))));
 
                 model = models[17];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((86)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1923, month: 10, day: 1, hour: 13, minute: 13, second: 43, millisecond: 699, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((73)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1931, month: 10, day: 15, hour: 19, minute: 31, second: 18, millisecond: 628, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((45)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1994, month: 10, day: 10, hour: 3, minute: 56, second: 53, millisecond: 923, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((50)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1923, month: 10, day: 14, hour: 9, minute: 53, second: 17, millisecond: 702, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 2001, month: 10, day: 3, hour: 4, minute: 47, second: 37, millisecond: 904, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1960, month: 10, day: 18, hour: 21, minute: 43, second: 20, millisecond: 759, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1981, month: 10, day: 17, hour: 14, minute: 17, second: 3, millisecond: 822, kind: DateTimeKind.Local))));
 
                 model = models[18];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((93)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1919, month: 10, day: 1, hour: 1, minute: 4, second: 23, millisecond: 4, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((82)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1978, month: 10, day: 1, hour: 13, minute: 17, second: 24, millisecond: 809, kind: DateTimeKind.Local))));//Value
+
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
+
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1971, month: 10, day: 11, hour: 9, minute: 44, second: 6, millisecond: 367, kind: DateTimeKind.Local))));
+
+                model = models[19];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((83)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1966, month: 10, day: 16, hour: 14, minute: 30, second: 13, millisecond: 951, kind: DateTimeKind.Local))));//Value
+
+                Assert.That((System.Int32)model[2], Is.EqualTo((52)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1933, month: 10, day: 6, hour: 2, minute: 6, second: 45, millisecond: 752, kind: DateTimeKind.Local))));//InnerModel.Value
+
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+
+                model = models[20];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((92)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1918, month: 10, day: 17, hour: 15, minute: 52, second: 45, millisecond: 730, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -2446,47 +2475,18 @@ ORDER BY
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
-                model = models[19];
-
-                Assert.That(model, Has.Length.EqualTo(6));
-
-                Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((99)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1925, month: 10, day: 4, hour: 12, minute: 18, second: 52, millisecond: 19, kind: DateTimeKind.Local))));//Value
-
-                Assert.That((System.Int32)model[2], Is.EqualTo((51)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1960, month: 10, day: 10, hour: 13, minute: 7, second: 39, millisecond: 785, kind: DateTimeKind.Local))));//InnerModel.Value
-
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1951, month: 10, day: 8, hour: 13, minute: 30, second: 4, millisecond: 359, kind: DateTimeKind.Local))));//InnerModel.NullableValue
-
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2016, month: 10, day: 17, hour: 10, minute: 3, second: 51, millisecond: 494, kind: DateTimeKind.Local))));
-
-                model = models[20];
-
-                Assert.That(model, Has.Length.EqualTo(6));
-
-                Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((105)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1925, month: 10, day: 17, hour: 12, minute: 20, second: 39, millisecond: 6, kind: DateTimeKind.Local))));//Value
-
-                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
-                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
-
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2002, month: 10, day: 5, hour: 7, minute: 20, second: 19, millisecond: 989, kind: DateTimeKind.Local))));
-
                 model = models[21];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((111)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1975, month: 10, day: 4, hour: 2, minute: 36, second: 56, millisecond: 96, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((100)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1972, month: 10, day: 17, hour: 14, minute: 23, second: 2, millisecond: 453, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((System.Int32)model[2], Is.EqualTo((56)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 4, hour: 6, minute: 34, second: 26, millisecond: 680, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2014, month: 10, day: 19, hour: 4, minute: 43, second: 53, millisecond: 563, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 2012, month: 10, day: 9, hour: 5, minute: 45, second: 52, millisecond: 228, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2495,27 +2495,27 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((116)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1920, month: 10, day: 14, hour: 14, minute: 48, second: 29, millisecond: 314, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((109)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1969, month: 10, day: 19, hour: 4, minute: 30, second: 10, millisecond: 694, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1982, month: 10, day: 5, hour: 8, minute: 1, second: 11, millisecond: 140, kind: DateTimeKind.Local))));
 
                 model = models[23];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((118)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1981, month: 10, day: 7, hour: 1, minute: 32, second: 51, millisecond: 238, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((113)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1990, month: 10, day: 5, hour: 7, minute: 40, second: 2, millisecond: 332, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((64)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1962, month: 10, day: 12, hour: 10, minute: 23, second: 18, millisecond: 448, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((65)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2015, month: 10, day: 12, hour: 21, minute: 36, second: 52, millisecond: 264, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 2006, month: 10, day: 7, hour: 8, minute: 8, second: 31, millisecond: 471, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2524,27 +2524,27 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((124)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1991, month: 10, day: 10, hour: 20, minute: 21, second: 2, millisecond: 823, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((114)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1959, month: 10, day: 12, hour: 4, minute: 17, second: 25, millisecond: 680, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1964, month: 10, day: 18, hour: 15, minute: 23, second: 41, millisecond: 111, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[25];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((128)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1949, month: 10, day: 2, hour: 18, minute: 43, second: 34, millisecond: 54, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((115)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1936, month: 10, day: 7, hour: 18, minute: 23, second: 11, millisecond: 171, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((66)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1976, month: 10, day: 8, hour: 11, minute: 43, second: 21, millisecond: 703, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((71)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1986, month: 10, day: 19, hour: 19, minute: 25, second: 27, millisecond: 833, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1929, month: 10, day: 5, hour: 8, minute: 32, second: 24, millisecond: 875, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2553,58 +2553,58 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((137)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1957, month: 10, day: 4, hour: 21, minute: 23, second: 20, millisecond: 583, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((123)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1991, month: 10, day: 6, hour: 21, minute: 31, second: 43, millisecond: 114, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1965, month: 10, day: 8, hour: 5, minute: 31, second: 38, millisecond: 838, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[27];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((146)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1965, month: 10, day: 5, hour: 16, minute: 25, second: 34, millisecond: 279, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((131)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1938, month: 10, day: 14, hour: 16, minute: 55, second: 12, millisecond: 444, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((74)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1958, month: 10, day: 1, hour: 1, minute: 38, second: 10, millisecond: 66, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((72)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2008, month: 10, day: 17, hour: 8, minute: 26, second: 5, millisecond: 86, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1966, month: 10, day: 19, hour: 1, minute: 17, second: 25, millisecond: 44, kind: DateTimeKind.Local))));
 
                 model = models[28];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((153)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1982, month: 10, day: 2, hour: 21, minute: 9, second: 15, millisecond: 567, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((140)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1980, month: 10, day: 3, hour: 10, minute: 3, second: 15, millisecond: 580, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1998, month: 10, day: 14, hour: 4, minute: 33, second: 4, millisecond: 642, kind: DateTimeKind.Local))));
 
                 model = models[29];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((162)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1940, month: 10, day: 14, hour: 18, minute: 25, second: 52, millisecond: 655, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((149)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1934, month: 10, day: 3, hour: 21, minute: 45, second: 5, millisecond: 534, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((80)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1990, month: 10, day: 18, hour: 2, minute: 50, second: 27, millisecond: 378, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((79)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1955, month: 10, day: 15, hour: 2, minute: 6, second: 5, millisecond: 112, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1997, month: 10, day: 4, hour: 20, minute: 39, second: 34, millisecond: 550, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2014, month: 10, day: 12, hour: 7, minute: 46, second: 4, millisecond: 367, kind: DateTimeKind.Local))));
 
             }
         }
@@ -2623,8 +2623,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((6)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1996, month: 10, day: 4, hour: 17, minute: 35, second: 29, millisecond: 312, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((7)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2014, month: 10, day: 7, hour: 18, minute: 49, second: 3, millisecond: 21, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -2637,100 +2637,100 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((7)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1923, month: 10, day: 8, hour: 6, minute: 14, second: 8, millisecond: 29, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((16)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1993, month: 10, day: 14, hour: 18, minute: 31, second: 26, millisecond: 343, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((8)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1924, month: 10, day: 12, hour: 6, minute: 40, second: 1, millisecond: 688, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((9)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1950, month: 10, day: 10, hour: 20, minute: 8, second: 27, millisecond: 25, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1949, month: 10, day: 3, hour: 18, minute: 53, second: 6, millisecond: 918, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2001, month: 10, day: 8, hour: 22, minute: 44, second: 33, millisecond: 688, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[2];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((12)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1935, month: 10, day: 13, hour: 3, minute: 1, second: 6, millisecond: 84, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((19)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 10, hour: 16, minute: 28, second: 47, millisecond: 960, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 13, hour: 13, minute: 15, second: 49, millisecond: 592, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[3];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((17)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1979, month: 10, day: 13, hour: 5, minute: 30, second: 23, millisecond: 710, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((20)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1960, month: 10, day: 17, hour: 21, minute: 27, second: 53, millisecond: 774, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((16)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2005, month: 10, day: 16, hour: 19, minute: 10, second: 18, millisecond: 8, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((12)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1965, month: 10, day: 19, hour: 16, minute: 17, second: 31, millisecond: 178, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1952, month: 10, day: 10, hour: 19, minute: 7, second: 15, millisecond: 985, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 19, hour: 6, minute: 34, second: 28, millisecond: 286, kind: DateTimeKind.Local))));
 
                 model = models[4];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((19)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 5, hour: 6, minute: 26, second: 44, millisecond: 477, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((21)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1919, month: 10, day: 6, hour: 5, minute: 55, second: 3, millisecond: 561, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1984, month: 10, day: 1, hour: 4, minute: 29, second: 17, millisecond: 539, kind: DateTimeKind.Local))));
 
                 model = models[5];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((22)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1991, month: 10, day: 8, hour: 10, minute: 16, second: 30, millisecond: 349, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((30)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2012, month: 10, day: 2, hour: 11, minute: 8, second: 26, millisecond: 56, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((22)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2009, month: 10, day: 15, hour: 19, minute: 34, second: 27, millisecond: 432, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((18)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1917, month: 10, day: 9, hour: 2, minute: 41, second: 57, millisecond: 377, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1982, month: 10, day: 18, hour: 2, minute: 37, second: 36, millisecond: 911, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1925, month: 10, day: 18, hour: 9, minute: 39, second: 31, millisecond: 302, kind: DateTimeKind.Local))));
 
                 model = models[6];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((29)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1957, month: 10, day: 7, hour: 8, minute: 20, second: 2, millisecond: 435, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((32)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1968, month: 10, day: 15, hour: 10, minute: 6, second: 50, millisecond: 255, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2018, month: 10, day: 6, hour: 2, minute: 28, second: 8, millisecond: 21, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[7];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((37)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1976, month: 10, day: 9, hour: 8, minute: 23, second: 35, millisecond: 448, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((35)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1944, month: 10, day: 14, hour: 17, minute: 11, second: 57, millisecond: 14, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((26)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2015, month: 10, day: 18, hour: 10, minute: 8, second: 31, millisecond: 626, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((20)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1918, month: 10, day: 17, hour: 19, minute: 12, second: 28, millisecond: 635, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1933, month: 10, day: 15, hour: 20, minute: 52, second: 7, millisecond: 377, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2739,37 +2739,37 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((42)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1998, month: 10, day: 8, hour: 22, minute: 18, second: 10, millisecond: 886, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((41)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1924, month: 10, day: 18, hour: 16, minute: 41, second: 1, millisecond: 584, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1965, month: 10, day: 19, hour: 12, minute: 58, second: 33, millisecond: 434, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[9];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((49)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 9, hour: 17, minute: 33, second: 12, millisecond: 348, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((42)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1919, month: 10, day: 2, hour: 2, minute: 37, second: 37, millisecond: 223, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((33)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1926, month: 10, day: 10, hour: 9, minute: 31, second: 44, millisecond: 106, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((21)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1992, month: 10, day: 17, hour: 7, minute: 11, second: 48, millisecond: 887, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1990, month: 10, day: 12, hour: 5, minute: 42, second: 18, millisecond: 739, kind: DateTimeKind.Local))));
 
                 model = models[10];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((56)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2002, month: 10, day: 8, hour: 15, minute: 21, second: 38, millisecond: 730, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((45)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1994, month: 10, day: 17, hour: 15, minute: 11, second: 48, millisecond: 83, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -2782,13 +2782,13 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((57)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1996, month: 10, day: 16, hour: 19, minute: 7, second: 19, millisecond: 871, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((46)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1998, month: 10, day: 15, hour: 9, minute: 36, second: 37, millisecond: 56, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((35)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1933, month: 10, day: 2, hour: 6, minute: 31, second: 7, millisecond: 357, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((29)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2003, month: 10, day: 1, hour: 13, minute: 27, second: 48, millisecond: 878, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1928, month: 10, day: 2, hour: 10, minute: 41, second: 38, millisecond: 176, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 2004, month: 10, day: 11, hour: 20, minute: 7, second: 7, millisecond: 866, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2797,8 +2797,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((63)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1931, month: 10, day: 2, hour: 10, minute: 14, second: 34, millisecond: 402, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((47)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1997, month: 10, day: 15, hour: 11, minute: 40, second: 26, millisecond: 824, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -2811,23 +2811,23 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((65)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1964, month: 10, day: 17, hour: 12, minute: 46, second: 35, millisecond: 321, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((54)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1931, month: 10, day: 7, hour: 22, minute: 4, second: 23, millisecond: 75, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((38)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2015, month: 10, day: 19, hour: 16, minute: 26, second: 18, millisecond: 197, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((36)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1949, month: 10, day: 10, hour: 7, minute: 27, second: 45, millisecond: 494, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1944, month: 10, day: 16, hour: 16, minute: 2, second: 10, millisecond: 682, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1976, month: 10, day: 18, hour: 8, minute: 57, second: 40, millisecond: 297, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1977, month: 10, day: 16, hour: 3, minute: 29, second: 21, millisecond: 486, kind: DateTimeKind.Local))));
 
                 model = models[14];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((70)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 5, hour: 10, minute: 30, second: 27, millisecond: 641, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((59)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1960, month: 10, day: 18, hour: 13, minute: 32, second: 21, millisecond: 94, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -2840,13 +2840,13 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((78)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1965, month: 10, day: 16, hour: 16, minute: 39, second: 23, millisecond: 542, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((65)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1919, month: 10, day: 19, hour: 17, minute: 45, second: 39, millisecond: 137, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((39)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1975, month: 10, day: 9, hour: 9, minute: 7, second: 42, millisecond: 726, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((43)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1974, month: 10, day: 12, hour: 17, minute: 14, second: 26, millisecond: 678, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1957, month: 10, day: 4, hour: 8, minute: 58, second: 52, millisecond: 688, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2855,37 +2855,66 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((80)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1943, month: 10, day: 4, hour: 12, minute: 47, second: 2, millisecond: 236, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((70)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1950, month: 10, day: 18, hour: 10, minute: 4, second: 11, millisecond: 734, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1970, month: 10, day: 12, hour: 8, minute: 9, second: 22, millisecond: 431, kind: DateTimeKind.Local))));
 
                 model = models[17];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((86)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1923, month: 10, day: 1, hour: 13, minute: 13, second: 43, millisecond: 699, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((73)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1931, month: 10, day: 15, hour: 19, minute: 31, second: 18, millisecond: 628, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((45)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1994, month: 10, day: 10, hour: 3, minute: 56, second: 53, millisecond: 923, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((50)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1923, month: 10, day: 14, hour: 9, minute: 53, second: 17, millisecond: 702, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 2001, month: 10, day: 3, hour: 4, minute: 47, second: 37, millisecond: 904, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1960, month: 10, day: 18, hour: 21, minute: 43, second: 20, millisecond: 759, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1981, month: 10, day: 17, hour: 14, minute: 17, second: 3, millisecond: 822, kind: DateTimeKind.Local))));
 
                 model = models[18];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((93)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1919, month: 10, day: 1, hour: 1, minute: 4, second: 23, millisecond: 4, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((82)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1978, month: 10, day: 1, hour: 13, minute: 17, second: 24, millisecond: 809, kind: DateTimeKind.Local))));//Value
+
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
+
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1971, month: 10, day: 11, hour: 9, minute: 44, second: 6, millisecond: 367, kind: DateTimeKind.Local))));
+
+                model = models[19];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((83)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1966, month: 10, day: 16, hour: 14, minute: 30, second: 13, millisecond: 951, kind: DateTimeKind.Local))));//Value
+
+                Assert.That((System.Int32)model[2], Is.EqualTo((52)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1933, month: 10, day: 6, hour: 2, minute: 6, second: 45, millisecond: 752, kind: DateTimeKind.Local))));//InnerModel.Value
+
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+
+                model = models[20];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((92)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1918, month: 10, day: 17, hour: 15, minute: 52, second: 45, millisecond: 730, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -2893,47 +2922,18 @@ ORDER BY
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
-                model = models[19];
-
-                Assert.That(model, Has.Length.EqualTo(6));
-
-                Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((99)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1925, month: 10, day: 4, hour: 12, minute: 18, second: 52, millisecond: 19, kind: DateTimeKind.Local))));//Value
-
-                Assert.That((System.Int32)model[2], Is.EqualTo((51)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1960, month: 10, day: 10, hour: 13, minute: 7, second: 39, millisecond: 785, kind: DateTimeKind.Local))));//InnerModel.Value
-
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1951, month: 10, day: 8, hour: 13, minute: 30, second: 4, millisecond: 359, kind: DateTimeKind.Local))));//InnerModel.NullableValue
-
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2016, month: 10, day: 17, hour: 10, minute: 3, second: 51, millisecond: 494, kind: DateTimeKind.Local))));
-
-                model = models[20];
-
-                Assert.That(model, Has.Length.EqualTo(6));
-
-                Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((105)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1925, month: 10, day: 17, hour: 12, minute: 20, second: 39, millisecond: 6, kind: DateTimeKind.Local))));//Value
-
-                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
-                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
-
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2002, month: 10, day: 5, hour: 7, minute: 20, second: 19, millisecond: 989, kind: DateTimeKind.Local))));
-
                 model = models[21];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((111)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1975, month: 10, day: 4, hour: 2, minute: 36, second: 56, millisecond: 96, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((100)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1972, month: 10, day: 17, hour: 14, minute: 23, second: 2, millisecond: 453, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((System.Int32)model[2], Is.EqualTo((56)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 4, hour: 6, minute: 34, second: 26, millisecond: 680, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2014, month: 10, day: 19, hour: 4, minute: 43, second: 53, millisecond: 563, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 2012, month: 10, day: 9, hour: 5, minute: 45, second: 52, millisecond: 228, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2942,27 +2942,27 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((116)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1920, month: 10, day: 14, hour: 14, minute: 48, second: 29, millisecond: 314, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((109)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1969, month: 10, day: 19, hour: 4, minute: 30, second: 10, millisecond: 694, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1982, month: 10, day: 5, hour: 8, minute: 1, second: 11, millisecond: 140, kind: DateTimeKind.Local))));
 
                 model = models[23];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((118)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1981, month: 10, day: 7, hour: 1, minute: 32, second: 51, millisecond: 238, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((113)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1990, month: 10, day: 5, hour: 7, minute: 40, second: 2, millisecond: 332, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((64)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1962, month: 10, day: 12, hour: 10, minute: 23, second: 18, millisecond: 448, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((65)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2015, month: 10, day: 12, hour: 21, minute: 36, second: 52, millisecond: 264, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 2006, month: 10, day: 7, hour: 8, minute: 8, second: 31, millisecond: 471, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2971,27 +2971,27 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((124)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1991, month: 10, day: 10, hour: 20, minute: 21, second: 2, millisecond: 823, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((114)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1959, month: 10, day: 12, hour: 4, minute: 17, second: 25, millisecond: 680, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1964, month: 10, day: 18, hour: 15, minute: 23, second: 41, millisecond: 111, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[25];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((128)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1949, month: 10, day: 2, hour: 18, minute: 43, second: 34, millisecond: 54, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((115)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1936, month: 10, day: 7, hour: 18, minute: 23, second: 11, millisecond: 171, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((66)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1976, month: 10, day: 8, hour: 11, minute: 43, second: 21, millisecond: 703, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((71)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1986, month: 10, day: 19, hour: 19, minute: 25, second: 27, millisecond: 833, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1929, month: 10, day: 5, hour: 8, minute: 32, second: 24, millisecond: 875, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -3000,58 +3000,58 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((137)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1957, month: 10, day: 4, hour: 21, minute: 23, second: 20, millisecond: 583, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((123)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1991, month: 10, day: 6, hour: 21, minute: 31, second: 43, millisecond: 114, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1965, month: 10, day: 8, hour: 5, minute: 31, second: 38, millisecond: 838, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[27];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((146)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1965, month: 10, day: 5, hour: 16, minute: 25, second: 34, millisecond: 279, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((131)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1938, month: 10, day: 14, hour: 16, minute: 55, second: 12, millisecond: 444, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((74)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1958, month: 10, day: 1, hour: 1, minute: 38, second: 10, millisecond: 66, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((72)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2008, month: 10, day: 17, hour: 8, minute: 26, second: 5, millisecond: 86, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1966, month: 10, day: 19, hour: 1, minute: 17, second: 25, millisecond: 44, kind: DateTimeKind.Local))));
 
                 model = models[28];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((153)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1982, month: 10, day: 2, hour: 21, minute: 9, second: 15, millisecond: 567, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((140)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1980, month: 10, day: 3, hour: 10, minute: 3, second: 15, millisecond: 580, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1998, month: 10, day: 14, hour: 4, minute: 33, second: 4, millisecond: 642, kind: DateTimeKind.Local))));
 
                 model = models[29];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((162)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1940, month: 10, day: 14, hour: 18, minute: 25, second: 52, millisecond: 655, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((149)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1934, month: 10, day: 3, hour: 21, minute: 45, second: 5, millisecond: 534, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((80)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1990, month: 10, day: 18, hour: 2, minute: 50, second: 27, millisecond: 378, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((79)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1955, month: 10, day: 15, hour: 2, minute: 6, second: 5, millisecond: 112, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1997, month: 10, day: 4, hour: 20, minute: 39, second: 34, millisecond: 550, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2014, month: 10, day: 12, hour: 7, minute: 46, second: 4, millisecond: 367, kind: DateTimeKind.Local))));
 
             }
         }
