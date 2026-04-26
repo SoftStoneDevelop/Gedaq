@@ -30,48 +30,55 @@ namespace Tests
         {
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 6,
+    Id = 1,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 17, minute: 47, second: 6, millisecond: 576),
+
+new TimeOnly(hour: 7, minute: 12, second: 4, millisecond: 671),
+
+new TimeOnly(hour: 16, minute: 39, second: 52, millisecond: 167),
+
+new TimeOnly(hour: 6, minute: 6, second: 28, millisecond: 723),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 13, minute: 20, second: 44, millisecond: 201),
+
+new TimeOnly(hour: 8, minute: 14, second: 28, millisecond: 901),
+
+new TimeOnly(hour: 7, minute: 28, second: 20, millisecond: 30),
+
+},
+},
+            new TimeOnlytime_without_time_zoneArray2M
+{
+    Id = 5,
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 9, minute: 8, second: 53, millisecond: 806),
+new TimeOnly(hour: 13, minute: 27, second: 33, millisecond: 578),
 
-new TimeOnly(hour: 14, minute: 56, second: 45, millisecond: 76),
+new TimeOnly(hour: 20, minute: 27, second: 32, millisecond: 648),
 
-new TimeOnly(hour: 0, minute: 58, second: 38, millisecond: 669),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new TimeOnlytime_without_time_zoneArray2M
-{
-    Id = 9,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
-{
-new TimeOnly(hour: 15, minute: 2, second: 31, millisecond: 970),
-
-new TimeOnly(hour: 0, minute: 42, second: 20, millisecond: 482),
-
-new TimeOnly(hour: 0, minute: 47, second: 4, millisecond: 409),
-
-new TimeOnly(hour: 5, minute: 19, second: 3, millisecond: 849),
+new TimeOnly(hour: 7, minute: 49, second: 42, millisecond: 919),
 
 },
     ModelInner = new TimeOnlytime_without_time_zoneArray2MI
 {
-    Id = 3,
+    Id = 2,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
+new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 15, minute: 1, second: 50, millisecond: 216),
+new TimeOnly(hour: 12, minute: 56, second: 2, millisecond: 889),
 
-new TimeOnly(hour: 11, minute: 37, second: 54, millisecond: 741),
+new TimeOnly(hour: 17, minute: 8, second: 48, millisecond: 206),
 
-new TimeOnly(hour: 3, minute: 11, second: 22, millisecond: 568),
-
-new TimeOnly(hour: 0, minute: 34, second: 0, millisecond: 706),
+new TimeOnly(hour: 3, minute: 41, second: 25, millisecond: 451),
 
 },
     NullableValue = null,
@@ -80,143 +87,207 @@ new TimeOnly(hour: 0, minute: 34, second: 0, millisecond: 706),
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 12,
+    Id = 7,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
+new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 3, minute: 51, second: 3, millisecond: 953),
+new TimeOnly(hour: 13, minute: 41, second: 40, millisecond: 120),
 
-new TimeOnly(hour: 18, minute: 2, second: 8, millisecond: 665),
+new TimeOnly(hour: 20, minute: 5, second: 38, millisecond: 67),
 
-new TimeOnly(hour: 6, minute: 18, second: 58, millisecond: 478),
-
-new TimeOnly(hour: 1, minute: 17, second: 30, millisecond: 401),
+new TimeOnly(hour: 4, minute: 19, second: 31, millisecond: 565),
 
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 21, minute: 24, second: 46, millisecond: 697),
+
+new TimeOnly(hour: 9, minute: 28, second: 56, millisecond: 315),
+
+new TimeOnly(hour: 2, minute: 46, second: 36, millisecond: 407),
+
+},
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 14,
+    Id = 13,
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 17, minute: 26, second: 20, millisecond: 95),
+new TimeOnly(hour: 10, minute: 50, second: 41, millisecond: 425),
 
-new TimeOnly(hour: 16, minute: 10, second: 27, millisecond: 174),
+new TimeOnly(hour: 20, minute: 50, second: 22, millisecond: 292),
 
-new TimeOnly(hour: 9, minute: 48, second: 41, millisecond: 168),
+new TimeOnly(hour: 7, minute: 8, second: 28, millisecond: 727),
 
-new TimeOnly(hour: 21, minute: 9, second: 18, millisecond: 895),
+new TimeOnly(hour: 14, minute: 38, second: 31, millisecond: 150),
 
 },
     ModelInner = new TimeOnlytime_without_time_zoneArray2MI
 {
     Id = 9,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
+new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 9, minute: 37, second: 54, millisecond: 187),
+new TimeOnly(hour: 8, minute: 35, second: 1, millisecond: 188),
 
-new TimeOnly(hour: 21, minute: 28, second: 53, millisecond: 160),
+new TimeOnly(hour: 21, minute: 2, second: 32, millisecond: 784),
 
-new TimeOnly(hour: 8, minute: 0, second: 9, millisecond: 681),
-
-new TimeOnly(hour: 1, minute: 15, second: 33, millisecond: 838),
+new TimeOnly(hour: 12, minute: 8, second: 34, millisecond: 84),
 
 },
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new TimeOnlytime_without_time_zoneArray2M
+{
+    Id = 17,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 8, minute: 10, second: 14, millisecond: 87),
+
+new TimeOnly(hour: 9, minute: 4, second: 23, millisecond: 696),
+
+new TimeOnly(hour: 9, minute: 32, second: 28, millisecond: 381),
+
+new TimeOnly(hour: 1, minute: 52, second: 6, millisecond: 142),
+
+},
+    ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 1, minute: 39, second: 38, millisecond: 224),
+new TimeOnly(hour: 21, minute: 19, second: 2, millisecond: 593),
 
-new TimeOnly(hour: 21, minute: 12, second: 5, millisecond: 617),
+new TimeOnly(hour: 7, minute: 22, second: 44, millisecond: 464),
 
-new TimeOnly(hour: 6, minute: 19, second: 55, millisecond: 184),
+new TimeOnly(hour: 14, minute: 38, second: 50, millisecond: 36),
 
-new TimeOnly(hour: 15, minute: 38, second: 34, millisecond: 828),
+new TimeOnly(hour: 8, minute: 23, second: 7, millisecond: 650),
+
+},
+},
+            new TimeOnlytime_without_time_zoneArray2M
+{
+    Id = 21,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 4, minute: 39, second: 51, millisecond: 249),
+
+new TimeOnly(hour: 4, minute: 0, second: 9, millisecond: 727),
+
+new TimeOnly(hour: 16, minute: 33, second: 22, millisecond: 512),
+
+new TimeOnly(hour: 21, minute: 8, second: 8, millisecond: 667),
+
+},
+    ModelInner = new TimeOnlytime_without_time_zoneArray2MI
+{
+    Id = 18,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 14, minute: 5, second: 32, millisecond: 638),
+
+new TimeOnly(hour: 1, minute: 1, second: 32, millisecond: 671),
+
+new TimeOnly(hour: 5, minute: 27, second: 28, millisecond: 443),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 13, minute: 15, second: 42, millisecond: 142),
+
+new TimeOnly(hour: 19, minute: 47, second: 13, millisecond: 130),
+
+new TimeOnly(hour: 4, minute: 23, second: 26, millisecond: 894),
 
 },
 },
     NullableValue = null,
 },
             new TimeOnlytime_without_time_zoneArray2M
+{
+    Id = 29,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 0, minute: 21, second: 57, millisecond: 354),
+
+new TimeOnly(hour: 18, minute: 10, second: 15, millisecond: 167),
+
+new TimeOnly(hour: 17, minute: 38, second: 52, millisecond: 262),
+
+new TimeOnly(hour: 0, minute: 27, second: 1, millisecond: 636),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 9, minute: 16, second: 29, millisecond: 467),
+
+new TimeOnly(hour: 11, minute: 33, second: 23, millisecond: 93),
+
+new TimeOnly(hour: 7, minute: 52, second: 3, millisecond: 6),
+
+},
+},
+            new TimeOnlytime_without_time_zoneArray2M
+{
+    Id = 38,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 16, minute: 6, second: 56, millisecond: 406),
+
+new TimeOnly(hour: 20, minute: 50, second: 35, millisecond: 99),
+
+new TimeOnly(hour: 9, minute: 43, second: 12, millisecond: 482),
+
+},
+    ModelInner = new TimeOnlytime_without_time_zoneArray2MI
 {
     Id = 19,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
+new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 13, minute: 53, second: 45, millisecond: 359),
+new TimeOnly(hour: 18, minute: 14, second: 6, millisecond: 91),
 
-new TimeOnly(hour: 18, minute: 3, second: 14, millisecond: 948),
+new TimeOnly(hour: 15, minute: 27, second: 30, millisecond: 477),
 
-new TimeOnly(hour: 3, minute: 2, second: 27, millisecond: 733),
-
-new TimeOnly(hour: 9, minute: 44, second: 10, millisecond: 239),
+new TimeOnly(hour: 5, minute: 23, second: 44, millisecond: 403),
 
 },
-    ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 18, minute: 39, second: 12, millisecond: 84),
+new TimeOnly(hour: 19, minute: 27, second: 33, millisecond: 912),
 
-new TimeOnly(hour: 13, minute: 53, second: 27, millisecond: 890),
+new TimeOnly(hour: 7, minute: 32, second: 5, millisecond: 400),
 
-new TimeOnly(hour: 18, minute: 43, second: 35, millisecond: 213),
+new TimeOnly(hour: 2, minute: 58, second: 34, millisecond: 461),
 
-new TimeOnly(hour: 1, minute: 21, second: 28, millisecond: 886),
+new TimeOnly(hour: 3, minute: 41, second: 51, millisecond: 16),
 
 },
 },
-            new TimeOnlytime_without_time_zoneArray2M
-{
-    Id = 27,
-    Value = 
+    NullableValue = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 13, minute: 40, second: 31, millisecond: 214),
+new TimeOnly(hour: 8, minute: 44, second: 47, millisecond: 786),
 
-new TimeOnly(hour: 18, minute: 8, second: 4, millisecond: 5),
+new TimeOnly(hour: 14, minute: 50, second: 44, millisecond: 371),
 
-new TimeOnly(hour: 4, minute: 10, second: 50, millisecond: 882),
-
-},
-    ModelInner = new TimeOnlytime_without_time_zoneArray2MI
-{
-    Id = 10,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(3)
-{
-new TimeOnly(hour: 9, minute: 33, second: 26, millisecond: 714),
-
-new TimeOnly(hour: 7, minute: 4, second: 36, millisecond: 991),
-
-new TimeOnly(hour: 1, minute: 29, second: 48, millisecond: 388),
+new TimeOnly(hour: 14, minute: 32, second: 49, millisecond: 755),
 
 },
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new TimeOnlytime_without_time_zoneArray2M
-{
-    Id = 35,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
-{
-new TimeOnly(hour: 9, minute: 33, second: 53, millisecond: 699),
-
-new TimeOnly(hour: 9, minute: 41, second: 41, millisecond: 832),
-
-new TimeOnly(hour: 11, minute: 3, second: 34, millisecond: 715),
-
-new TimeOnly(hour: 15, minute: 45, second: 35, millisecond: 88),
-
-},
-    ModelInner = null,
-    NullableValue = null,
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
@@ -224,111 +295,92 @@ new TimeOnly(hour: 15, minute: 45, second: 35, millisecond: 88),
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 7, minute: 3, second: 58, millisecond: 242),
+new TimeOnly(hour: 5, minute: 23, second: 7, millisecond: 553),
 
-new TimeOnly(hour: 18, minute: 56, second: 33, millisecond: 985),
+new TimeOnly(hour: 4, minute: 32, second: 22, millisecond: 836),
 
-new TimeOnly(hour: 21, minute: 9, second: 38, millisecond: 716),
-
-},
-    ModelInner = new TimeOnlytime_without_time_zoneArray2MI
-{
-    Id = 15,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(3)
-{
-new TimeOnly(hour: 18, minute: 34, second: 20, millisecond: 691),
-
-new TimeOnly(hour: 1, minute: 50, second: 31, millisecond: 713),
-
-new TimeOnly(hour: 19, minute: 39, second: 24, millisecond: 978),
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new TimeOnlytime_without_time_zoneArray2M
-{
-    Id = 45,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
-{
-new TimeOnly(hour: 11, minute: 44, second: 24, millisecond: 272),
-
-new TimeOnly(hour: 12, minute: 42, second: 31, millisecond: 710),
-
-new TimeOnly(hour: 5, minute: 24, second: 45, millisecond: 77),
-
-new TimeOnly(hour: 9, minute: 13, second: 46, millisecond: 57),
+new TimeOnly(hour: 20, minute: 47, second: 9, millisecond: 117),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 0, minute: 44, second: 41, millisecond: 73),
+new TimeOnly(hour: 16, minute: 58, second: 9, millisecond: 202),
 
-new TimeOnly(hour: 13, minute: 11, second: 27, millisecond: 324),
+new TimeOnly(hour: 2, minute: 1, second: 49, millisecond: 937),
 
-new TimeOnly(hour: 4, minute: 26, second: 51, millisecond: 527),
+new TimeOnly(hour: 15, minute: 6, second: 9, millisecond: 116),
 
-new TimeOnly(hour: 4, minute: 21, second: 23, millisecond: 273),
+new TimeOnly(hour: 10, minute: 4, second: 16, millisecond: 548),
 
 },
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 49,
+    Id = 43,
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 13, minute: 15, second: 4, millisecond: 459),
+new TimeOnly(hour: 17, minute: 7, second: 50, millisecond: 881),
 
-new TimeOnly(hour: 14, minute: 46, second: 11, millisecond: 893),
+new TimeOnly(hour: 1, minute: 52, second: 13, millisecond: 706),
 
-new TimeOnly(hour: 5, minute: 28, second: 48, millisecond: 653),
+new TimeOnly(hour: 8, minute: 17, second: 9, millisecond: 657),
 
 },
     ModelInner = new TimeOnlytime_without_time_zoneArray2MI
 {
-    Id = 19,
+    Id = 21,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
+new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 2, minute: 32, second: 55, millisecond: 770),
+new TimeOnly(hour: 17, minute: 51, second: 38, millisecond: 400),
 
-new TimeOnly(hour: 22, minute: 28, second: 8, millisecond: 569),
+new TimeOnly(hour: 8, minute: 14, second: 10, millisecond: 555),
 
-new TimeOnly(hour: 0, minute: 56, second: 18, millisecond: 971),
-
-new TimeOnly(hour: 22, minute: 11, second: 52, millisecond: 687),
+new TimeOnly(hour: 9, minute: 57, second: 9, millisecond: 518),
 
 },
     NullableValue = 
-new System.Collections.Generic.List<System.TimeOnly>(3)
+new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 6, minute: 25, second: 47, millisecond: 816),
+new TimeOnly(hour: 21, minute: 51, second: 25, millisecond: 744),
 
-new TimeOnly(hour: 0, minute: 13, second: 40, millisecond: 509),
+new TimeOnly(hour: 22, minute: 11, second: 29, millisecond: 292),
 
-new TimeOnly(hour: 5, minute: 17, second: 30, millisecond: 96),
+new TimeOnly(hour: 16, minute: 39, second: 3, millisecond: 759),
+
+new TimeOnly(hour: 7, minute: 32, second: 55, millisecond: 681),
 
 },
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 22, minute: 45, second: 10, millisecond: 238),
+
+new TimeOnly(hour: 17, minute: 7, second: 3, millisecond: 946),
+
+new TimeOnly(hour: 12, minute: 26, second: 13, millisecond: 493),
+
+new TimeOnly(hour: 0, minute: 9, second: 45, millisecond: 484),
+
+},
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 53,
+    Id = 47,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(3)
+new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 16, minute: 55, second: 24, millisecond: 237),
+new TimeOnly(hour: 0, minute: 52, second: 9, millisecond: 662),
 
-new TimeOnly(hour: 4, minute: 30, second: 24, millisecond: 262),
+new TimeOnly(hour: 17, minute: 13, second: 20, millisecond: 666),
 
-new TimeOnly(hour: 5, minute: 17, second: 36, millisecond: 42),
+new TimeOnly(hour: 1, minute: 6, second: 29, millisecond: 812),
+
+new TimeOnly(hour: 21, minute: 50, second: 26, millisecond: 808),
 
 },
     ModelInner = null,
@@ -336,141 +388,82 @@ new TimeOnly(hour: 5, minute: 17, second: 36, millisecond: 42),
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 54,
+    Id = 56,
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 13, minute: 36, second: 49, millisecond: 445),
+new TimeOnly(hour: 11, minute: 57, second: 50, millisecond: 372),
 
-new TimeOnly(hour: 14, minute: 35, second: 54, millisecond: 691),
+new TimeOnly(hour: 10, minute: 6, second: 36, millisecond: 301),
 
-new TimeOnly(hour: 14, minute: 45, second: 30, millisecond: 420),
+new TimeOnly(hour: 13, minute: 49, second: 46, millisecond: 627),
 
-new TimeOnly(hour: 4, minute: 46, second: 40, millisecond: 134),
+new TimeOnly(hour: 14, minute: 52, second: 18, millisecond: 297),
 
 },
     ModelInner = new TimeOnlytime_without_time_zoneArray2MI
 {
-    Id = 22,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(3)
-{
-new TimeOnly(hour: 18, minute: 0, second: 11, millisecond: 838),
-
-new TimeOnly(hour: 19, minute: 35, second: 44, millisecond: 343),
-
-new TimeOnly(hour: 9, minute: 32, second: 43, millisecond: 733),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
-{
-new TimeOnly(hour: 20, minute: 18, second: 23, millisecond: 680),
-
-new TimeOnly(hour: 0, minute: 16, second: 2, millisecond: 983),
-
-new TimeOnly(hour: 8, minute: 7, second: 23, millisecond: 5),
-
-new TimeOnly(hour: 13, minute: 12, second: 47, millisecond: 505),
-
-},
-},
-    NullableValue = null,
-},
-            new TimeOnlytime_without_time_zoneArray2M
-{
-    Id = 59,
+    Id = 28,
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 10, minute: 44, second: 10, millisecond: 234),
+new TimeOnly(hour: 14, minute: 8, second: 4, millisecond: 32),
 
-new TimeOnly(hour: 2, minute: 37, second: 12, millisecond: 39),
+new TimeOnly(hour: 11, minute: 48, second: 9, millisecond: 970),
 
-new TimeOnly(hour: 5, minute: 43, second: 51, millisecond: 100),
+new TimeOnly(hour: 17, minute: 18, second: 6, millisecond: 482),
 
-new TimeOnly(hour: 10, minute: 43, second: 36, millisecond: 949),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
-{
-new TimeOnly(hour: 17, minute: 49, second: 2, millisecond: 734),
-
-new TimeOnly(hour: 20, minute: 36, second: 56, millisecond: 587),
-
-new TimeOnly(hour: 21, minute: 15, second: 29, millisecond: 254),
-
-new TimeOnly(hour: 18, minute: 34, second: 8, millisecond: 712),
-
-},
-},
-            new TimeOnlytime_without_time_zoneArray2M
-{
-    Id = 60,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(3)
-{
-new TimeOnly(hour: 9, minute: 17, second: 50, millisecond: 130),
-
-new TimeOnly(hour: 5, minute: 5, second: 5, millisecond: 290),
-
-new TimeOnly(hour: 20, minute: 18, second: 34, millisecond: 836),
-
-},
-    ModelInner = new TimeOnlytime_without_time_zoneArray2MI
-{
-    Id = 24,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
-{
-new TimeOnly(hour: 14, minute: 41, second: 43, millisecond: 812),
-
-new TimeOnly(hour: 7, minute: 33, second: 52, millisecond: 947),
-
-new TimeOnly(hour: 21, minute: 46, second: 26, millisecond: 732),
-
-new TimeOnly(hour: 5, minute: 14, second: 34, millisecond: 742),
+new TimeOnly(hour: 11, minute: 13, second: 43, millisecond: 330),
 
 },
     NullableValue = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 0, minute: 56, second: 39, millisecond: 811),
+new TimeOnly(hour: 15, minute: 13, second: 1, millisecond: 379),
 
-new TimeOnly(hour: 12, minute: 51, second: 26, millisecond: 858),
+new TimeOnly(hour: 21, minute: 48, second: 37, millisecond: 568),
 
-new TimeOnly(hour: 11, minute: 1, second: 6, millisecond: 854),
+new TimeOnly(hour: 22, minute: 28, second: 17, millisecond: 371),
 
 },
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 18, minute: 2, second: 7, millisecond: 728),
+
+new TimeOnly(hour: 13, minute: 47, second: 30, millisecond: 666),
+
+new TimeOnly(hour: 17, minute: 16, second: 22, millisecond: 61),
+
+new TimeOnly(hour: 13, minute: 22, second: 34, millisecond: 829),
+
+},
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 62,
+    Id = 61,
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 6, minute: 5, second: 12, millisecond: 768),
+new TimeOnly(hour: 10, minute: 20, second: 31, millisecond: 84),
 
-new TimeOnly(hour: 9, minute: 54, second: 43, millisecond: 275),
+new TimeOnly(hour: 13, minute: 36, second: 22, millisecond: 320),
 
-new TimeOnly(hour: 7, minute: 16, second: 23, millisecond: 604),
+new TimeOnly(hour: 15, minute: 1, second: 29, millisecond: 825),
 
-new TimeOnly(hour: 16, minute: 50, second: 58, millisecond: 495),
+new TimeOnly(hour: 11, minute: 50, second: 48, millisecond: 393),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 3, minute: 46, second: 17, millisecond: 677),
+new TimeOnly(hour: 18, minute: 35, second: 15, millisecond: 666),
 
-new TimeOnly(hour: 13, minute: 39, second: 3, millisecond: 512),
+new TimeOnly(hour: 8, minute: 4, second: 38, millisecond: 266),
 
-new TimeOnly(hour: 20, minute: 6, second: 57, millisecond: 879),
+new TimeOnly(hour: 0, minute: 19, second: 17, millisecond: 554),
 
 },
 },
@@ -480,307 +473,279 @@ new TimeOnly(hour: 20, minute: 6, second: 57, millisecond: 879),
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 18, minute: 43, second: 45, millisecond: 759),
+new TimeOnly(hour: 12, minute: 23, second: 34, millisecond: 477),
 
-new TimeOnly(hour: 0, minute: 3, second: 46, millisecond: 430),
+new TimeOnly(hour: 20, minute: 58, second: 16, millisecond: 428),
 
-new TimeOnly(hour: 8, minute: 52, second: 50, millisecond: 427),
+new TimeOnly(hour: 1, minute: 37, second: 33, millisecond: 888),
 
 },
     ModelInner = new TimeOnlytime_without_time_zoneArray2MI
 {
-    Id = 26,
+    Id = 37,
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 22, minute: 4, second: 48, millisecond: 500),
+new TimeOnly(hour: 8, minute: 28, second: 21, millisecond: 305),
 
-new TimeOnly(hour: 2, minute: 30, second: 47, millisecond: 338),
+new TimeOnly(hour: 12, minute: 8, second: 40, millisecond: 212),
 
-new TimeOnly(hour: 19, minute: 13, second: 8, millisecond: 61),
+new TimeOnly(hour: 5, minute: 18, second: 2, millisecond: 586),
 
-new TimeOnly(hour: 21, minute: 25, second: 20, millisecond: 582),
+new TimeOnly(hour: 9, minute: 15, second: 21, millisecond: 348),
 
 },
     NullableValue = null,
 },
     NullableValue = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
+new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 15, minute: 7, second: 28, millisecond: 206),
+new TimeOnly(hour: 2, minute: 46, second: 56, millisecond: 630),
 
-new TimeOnly(hour: 1, minute: 28, second: 0, millisecond: 922),
+new TimeOnly(hour: 12, minute: 34, second: 45, millisecond: 681),
 
-new TimeOnly(hour: 19, minute: 35, second: 12, millisecond: 583),
-
-new TimeOnly(hour: 9, minute: 19, second: 29, millisecond: 285),
+new TimeOnly(hour: 20, minute: 47, second: 19, millisecond: 357),
 
 },
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 74,
+    Id = 66,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
+new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 7, minute: 30, second: 37, millisecond: 453),
+new TimeOnly(hour: 3, minute: 35, second: 32, millisecond: 736),
 
-new TimeOnly(hour: 0, minute: 8, second: 55, millisecond: 339),
+new TimeOnly(hour: 3, minute: 47, second: 31, millisecond: 800),
 
-new TimeOnly(hour: 13, minute: 56, second: 27, millisecond: 751),
-
-new TimeOnly(hour: 6, minute: 40, second: 0, millisecond: 938),
+new TimeOnly(hour: 19, minute: 33, second: 29, millisecond: 232),
 
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 14, minute: 56, second: 25, millisecond: 613),
+
+new TimeOnly(hour: 3, minute: 19, second: 28, millisecond: 121),
+
+new TimeOnly(hour: 7, minute: 35, second: 19, millisecond: 16),
+
+},
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 83,
+    Id = 75,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
+new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 18, minute: 38, second: 49, millisecond: 827),
+new TimeOnly(hour: 22, minute: 26, second: 1, millisecond: 844),
 
-new TimeOnly(hour: 7, minute: 19, second: 21, millisecond: 603),
+new TimeOnly(hour: 19, minute: 8, second: 10, millisecond: 202),
 
-new TimeOnly(hour: 14, minute: 49, second: 17, millisecond: 193),
-
-new TimeOnly(hour: 14, minute: 55, second: 26, millisecond: 995),
+new TimeOnly(hour: 7, minute: 55, second: 26, millisecond: 543),
 
 },
     ModelInner = new TimeOnlytime_without_time_zoneArray2MI
 {
-    Id = 35,
+    Id = 43,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
+new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 12, minute: 8, second: 26, millisecond: 960),
+new TimeOnly(hour: 11, minute: 20, second: 16, millisecond: 101),
 
-new TimeOnly(hour: 16, minute: 33, second: 54, millisecond: 979),
+new TimeOnly(hour: 11, minute: 55, second: 19, millisecond: 699),
 
-new TimeOnly(hour: 6, minute: 44, second: 38, millisecond: 37),
-
-new TimeOnly(hour: 1, minute: 35, second: 11, millisecond: 505),
+new TimeOnly(hour: 20, minute: 46, second: 58, millisecond: 655),
 
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 10, minute: 5, second: 21, millisecond: 563),
+
+new TimeOnly(hour: 16, minute: 19, second: 20, millisecond: 363),
+
+new TimeOnly(hour: 12, minute: 27, second: 57, millisecond: 87),
+
 },
-    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 6, minute: 15, second: 51, millisecond: 593),
+
+new TimeOnly(hour: 1, minute: 20, second: 20, millisecond: 368),
+
+new TimeOnly(hour: 1, minute: 38, second: 41, millisecond: 228),
+
+},
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 85,
+    Id = 77,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
+new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 5, minute: 32, second: 47, millisecond: 370),
+new TimeOnly(hour: 16, minute: 20, second: 14, millisecond: 880),
 
-new TimeOnly(hour: 20, minute: 39, second: 10, millisecond: 483),
+new TimeOnly(hour: 9, minute: 56, second: 46, millisecond: 371),
 
-new TimeOnly(hour: 3, minute: 32, second: 31, millisecond: 891),
-
-new TimeOnly(hour: 21, minute: 40, second: 20, millisecond: 464),
+new TimeOnly(hour: 17, minute: 48, second: 55, millisecond: 719),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 15, minute: 1, second: 29, millisecond: 688),
+new TimeOnly(hour: 1, minute: 1, second: 58, millisecond: 179),
 
-new TimeOnly(hour: 17, minute: 47, second: 41, millisecond: 485),
+new TimeOnly(hour: 22, minute: 58, second: 20, millisecond: 979),
 
-new TimeOnly(hour: 13, minute: 10, second: 43, millisecond: 100),
+new TimeOnly(hour: 5, minute: 44, second: 10, millisecond: 231),
 
-new TimeOnly(hour: 0, minute: 44, second: 53, millisecond: 553),
+new TimeOnly(hour: 19, minute: 32, second: 11, millisecond: 56),
 
 },
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 94,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(3)
-{
-new TimeOnly(hour: 17, minute: 6, second: 11, millisecond: 43),
-
-new TimeOnly(hour: 18, minute: 46, second: 43, millisecond: 938),
-
-new TimeOnly(hour: 16, minute: 3, second: 9, millisecond: 47),
-
-},
-    ModelInner = new TimeOnlytime_without_time_zoneArray2MI
-{
-    Id = 40,
+    Id = 81,
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 19, minute: 34, second: 33, millisecond: 854),
+new TimeOnly(hour: 2, minute: 17, second: 8, millisecond: 351),
 
-new TimeOnly(hour: 18, minute: 24, second: 18, millisecond: 117),
+new TimeOnly(hour: 2, minute: 27, second: 1, millisecond: 761),
 
-new TimeOnly(hour: 21, minute: 23, second: 25, millisecond: 650),
+new TimeOnly(hour: 11, minute: 44, second: 26, millisecond: 711),
 
-new TimeOnly(hour: 14, minute: 38, second: 31, millisecond: 645),
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new TimeOnlytime_without_time_zoneArray2M
-{
-    Id = 101,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(3)
-{
-new TimeOnly(hour: 12, minute: 45, second: 17, millisecond: 117),
-
-new TimeOnly(hour: 18, minute: 32, second: 14, millisecond: 367),
-
-new TimeOnly(hour: 22, minute: 19, second: 11, millisecond: 944),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new TimeOnlytime_without_time_zoneArray2M
-{
-    Id = 104,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(3)
-{
-new TimeOnly(hour: 10, minute: 45, second: 39, millisecond: 778),
-
-new TimeOnly(hour: 8, minute: 4, second: 30, millisecond: 177),
-
-new TimeOnly(hour: 17, minute: 47, second: 26, millisecond: 262),
+new TimeOnly(hour: 5, minute: 18, second: 25, millisecond: 170),
 
 },
     ModelInner = new TimeOnlytime_without_time_zoneArray2MI
 {
-    Id = 48,
+    Id = 44,
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 13, minute: 37, second: 57, millisecond: 634),
+new TimeOnly(hour: 0, minute: 57, second: 15, millisecond: 727),
 
-new TimeOnly(hour: 2, minute: 14, second: 58, millisecond: 843),
+new TimeOnly(hour: 14, minute: 54, second: 53, millisecond: 608),
 
-new TimeOnly(hour: 1, minute: 44, second: 43, millisecond: 45),
+new TimeOnly(hour: 9, minute: 29, second: 12, millisecond: 499),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 11, minute: 12, second: 9, millisecond: 503),
+
+new TimeOnly(hour: 1, minute: 32, second: 42, millisecond: 122),
+
+new TimeOnly(hour: 15, minute: 45, second: 30, millisecond: 471),
+
+},
+},
+    NullableValue = null,
+},
+            new TimeOnlytime_without_time_zoneArray2M
+{
+    Id = 90,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 8, minute: 51, second: 1, millisecond: 749),
+
+new TimeOnly(hour: 11, minute: 7, second: 50, millisecond: 992),
+
+new TimeOnly(hour: 4, minute: 52, second: 15, millisecond: 782),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 20, minute: 17, second: 58, millisecond: 201),
+
+new TimeOnly(hour: 16, minute: 8, second: 18, millisecond: 855),
+
+new TimeOnly(hour: 18, minute: 9, second: 43, millisecond: 454),
+
+new TimeOnly(hour: 13, minute: 46, second: 45, millisecond: 911),
+
+},
+},
+            new TimeOnlytime_without_time_zoneArray2M
+{
+    Id = 96,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 22, minute: 17, second: 24, millisecond: 316),
+
+new TimeOnly(hour: 22, minute: 45, second: 52, millisecond: 318),
+
+new TimeOnly(hour: 14, minute: 57, second: 35, millisecond: 470),
+
+},
+    ModelInner = new TimeOnlytime_without_time_zoneArray2MI
+{
+    Id = 51,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 13, minute: 23, second: 15, millisecond: 298),
+
+new TimeOnly(hour: 17, minute: 45, second: 40, millisecond: 58),
+
+new TimeOnly(hour: 15, minute: 51, second: 52, millisecond: 752),
 
 },
     NullableValue = null,
 },
+    NullableValue = null,
+},
+            new TimeOnlytime_without_time_zoneArray2M
+{
+    Id = 102,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 15, minute: 9, second: 32, millisecond: 283),
+
+new TimeOnly(hour: 11, minute: 1, second: 40, millisecond: 359),
+
+new TimeOnly(hour: 4, minute: 58, second: 12, millisecond: 949),
+
+},
+    ModelInner = null,
     NullableValue = null,
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
     Id = 107,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
-{
-new TimeOnly(hour: 14, minute: 32, second: 38, millisecond: 811),
-
-new TimeOnly(hour: 13, minute: 41, second: 17, millisecond: 331),
-
-new TimeOnly(hour: 19, minute: 26, second: 34, millisecond: 495),
-
-new TimeOnly(hour: 16, minute: 52, second: 21, millisecond: 516),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new TimeOnlytime_without_time_zoneArray2M
-{
-    Id = 108,
-    Value = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 0, minute: 44, second: 26, millisecond: 670),
+new TimeOnly(hour: 16, minute: 44, second: 54, millisecond: 867),
 
-new TimeOnly(hour: 1, minute: 25, second: 47, millisecond: 722),
+new TimeOnly(hour: 4, minute: 39, second: 26, millisecond: 727),
 
-new TimeOnly(hour: 21, minute: 52, second: 50, millisecond: 998),
+new TimeOnly(hour: 22, minute: 39, second: 20, millisecond: 427),
 
 },
     ModelInner = new TimeOnlytime_without_time_zoneArray2MI
 {
-    Id = 56,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
-{
-new TimeOnly(hour: 5, minute: 51, second: 35, millisecond: 351),
-
-new TimeOnly(hour: 17, minute: 13, second: 0, millisecond: 109),
-
-new TimeOnly(hour: 16, minute: 27, second: 2, millisecond: 779),
-
-new TimeOnly(hour: 0, minute: 49, second: 13, millisecond: 321),
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new TimeOnlytime_without_time_zoneArray2M
-{
-    Id = 114,
+    Id = 52,
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 21, minute: 24, second: 38, millisecond: 735),
+new TimeOnly(hour: 14, minute: 26, second: 30, millisecond: 821),
 
-new TimeOnly(hour: 5, minute: 43, second: 22, millisecond: 43),
+new TimeOnly(hour: 0, minute: 6, second: 50, millisecond: 103),
 
-new TimeOnly(hour: 7, minute: 32, second: 11, millisecond: 909),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
-{
-new TimeOnly(hour: 0, minute: 12, second: 48, millisecond: 189),
-
-new TimeOnly(hour: 22, minute: 51, second: 13, millisecond: 970),
-
-new TimeOnly(hour: 3, minute: 48, second: 7, millisecond: 249),
-
-new TimeOnly(hour: 15, minute: 43, second: 57, millisecond: 419),
-
-},
-},
-            new TimeOnlytime_without_time_zoneArray2M
-{
-    Id = 120,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
-{
-new TimeOnly(hour: 12, minute: 42, second: 30, millisecond: 477),
-
-new TimeOnly(hour: 3, minute: 16, second: 16, millisecond: 6),
-
-new TimeOnly(hour: 10, minute: 23, second: 14, millisecond: 904),
-
-new TimeOnly(hour: 2, minute: 18, second: 12, millisecond: 383),
-
-},
-    ModelInner = new TimeOnlytime_without_time_zoneArray2MI
-{
-    Id = 61,
-    Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
-{
-new TimeOnly(hour: 15, minute: 7, second: 26, millisecond: 237),
-
-new TimeOnly(hour: 20, minute: 23, second: 30, millisecond: 309),
-
-new TimeOnly(hour: 8, minute: 46, second: 41, millisecond: 268),
-
-new TimeOnly(hour: 6, minute: 49, second: 51, millisecond: 574),
+new TimeOnly(hour: 3, minute: 51, second: 8, millisecond: 531),
 
 },
     NullableValue = null,
@@ -788,25 +753,27 @@ new TimeOnly(hour: 6, minute: 49, second: 51, millisecond: 574),
     NullableValue = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 3, minute: 40, second: 4, millisecond: 126),
+new TimeOnly(hour: 6, minute: 56, second: 42, millisecond: 67),
 
-new TimeOnly(hour: 8, minute: 20, second: 46, millisecond: 417),
+new TimeOnly(hour: 1, minute: 51, second: 42, millisecond: 332),
 
-new TimeOnly(hour: 13, minute: 3, second: 14, millisecond: 209),
+new TimeOnly(hour: 16, minute: 44, second: 1, millisecond: 628),
 
 },
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 129,
+    Id = 115,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(3)
+new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 1, minute: 19, second: 40, millisecond: 669),
+new TimeOnly(hour: 14, minute: 36, second: 23, millisecond: 593),
 
-new TimeOnly(hour: 13, minute: 26, second: 56, millisecond: 700),
+new TimeOnly(hour: 14, minute: 54, second: 7, millisecond: 574),
 
-new TimeOnly(hour: 2, minute: 30, second: 32, millisecond: 661),
+new TimeOnly(hour: 9, minute: 47, second: 42, millisecond: 9),
+
+new TimeOnly(hour: 4, minute: 23, second: 20, millisecond: 613),
 
 },
     ModelInner = null,
@@ -814,15 +781,137 @@ new TimeOnly(hour: 2, minute: 30, second: 32, millisecond: 661),
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 135,
+    Id = 122,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 11, minute: 55, second: 49, millisecond: 121),
+
+new TimeOnly(hour: 18, minute: 13, second: 19, millisecond: 768),
+
+new TimeOnly(hour: 4, minute: 42, second: 57, millisecond: 719),
+
+new TimeOnly(hour: 6, minute: 19, second: 56, millisecond: 634),
+
+},
+    ModelInner = new TimeOnlytime_without_time_zoneArray2MI
+{
+    Id = 55,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 1, minute: 33, second: 46, millisecond: 295),
+
+new TimeOnly(hour: 18, minute: 0, second: 19, millisecond: 586),
+
+new TimeOnly(hour: 10, minute: 3, second: 13, millisecond: 310),
+
+new TimeOnly(hour: 6, minute: 23, second: 13, millisecond: 534),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 18, minute: 13, second: 17, millisecond: 449),
+
+new TimeOnly(hour: 7, minute: 19, second: 36, millisecond: 701),
+
+new TimeOnly(hour: 2, minute: 47, second: 2, millisecond: 367),
+
+},
+},
+            new TimeOnlytime_without_time_zoneArray2M
+{
+    Id = 124,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 9, minute: 27, second: 26, millisecond: 687),
+
+new TimeOnly(hour: 3, minute: 3, second: 8, millisecond: 579),
+
+new TimeOnly(hour: 0, minute: 38, second: 27, millisecond: 130),
+
+new TimeOnly(hour: 6, minute: 12, second: 0, millisecond: 8),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 18, minute: 14, second: 28, millisecond: 397),
+
+new TimeOnly(hour: 13, minute: 38, second: 36, millisecond: 371),
+
+new TimeOnly(hour: 0, minute: 25, second: 12, millisecond: 901),
+
+new TimeOnly(hour: 6, minute: 12, second: 46, millisecond: 488),
+
+},
+},
+            new TimeOnlytime_without_time_zoneArray2M
+{
+    Id = 126,
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 22, minute: 50, second: 21, millisecond: 543),
+new TimeOnly(hour: 12, minute: 17, second: 53, millisecond: 789),
 
-new TimeOnly(hour: 5, minute: 44, second: 20, millisecond: 909),
+new TimeOnly(hour: 7, minute: 33, second: 21, millisecond: 299),
 
-new TimeOnly(hour: 21, minute: 11, second: 19, millisecond: 665),
+new TimeOnly(hour: 17, minute: 30, second: 10, millisecond: 247),
+
+},
+    ModelInner = new TimeOnlytime_without_time_zoneArray2MI
+{
+    Id = 59,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(3)
+{
+new TimeOnly(hour: 7, minute: 29, second: 17, millisecond: 696),
+
+new TimeOnly(hour: 14, minute: 49, second: 44, millisecond: 556),
+
+new TimeOnly(hour: 8, minute: 56, second: 44, millisecond: 374),
+
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new TimeOnlytime_without_time_zoneArray2M
+{
+    Id = 127,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 6, minute: 19, second: 49, millisecond: 409),
+
+new TimeOnly(hour: 12, minute: 39, second: 18, millisecond: 721),
+
+new TimeOnly(hour: 10, minute: 33, second: 50, millisecond: 139),
+
+new TimeOnly(hour: 22, minute: 2, second: 14, millisecond: 714),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new TimeOnlytime_without_time_zoneArray2M
+{
+    Id = 136,
+    Value = 
+new System.Collections.Generic.List<System.TimeOnly>(4)
+{
+new TimeOnly(hour: 13, minute: 25, second: 28, millisecond: 306),
+
+new TimeOnly(hour: 13, minute: 39, second: 40, millisecond: 668),
+
+new TimeOnly(hour: 16, minute: 37, second: 37, millisecond: 842),
+
+new TimeOnly(hour: 0, minute: 17, second: 48, millisecond: 254),
 
 },
     ModelInner = new TimeOnlytime_without_time_zoneArray2MI
@@ -831,23 +920,25 @@ new TimeOnly(hour: 21, minute: 11, second: 19, millisecond: 665),
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 8, minute: 38, second: 52, millisecond: 367),
+new TimeOnly(hour: 6, minute: 38, second: 35, millisecond: 829),
 
-new TimeOnly(hour: 16, minute: 24, second: 27, millisecond: 197),
+new TimeOnly(hour: 11, minute: 50, second: 25, millisecond: 812),
 
-new TimeOnly(hour: 11, minute: 0, second: 18, millisecond: 143),
+new TimeOnly(hour: 6, minute: 57, second: 24, millisecond: 358),
 
-new TimeOnly(hour: 1, minute: 7, second: 45, millisecond: 322),
+new TimeOnly(hour: 17, minute: 49, second: 17, millisecond: 88),
 
 },
     NullableValue = 
-new System.Collections.Generic.List<System.TimeOnly>(3)
+new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 18, minute: 43, second: 43, millisecond: 766),
+new TimeOnly(hour: 13, minute: 36, second: 32, millisecond: 928),
 
-new TimeOnly(hour: 2, minute: 8, second: 18, millisecond: 316),
+new TimeOnly(hour: 4, minute: 37, second: 20, millisecond: 138),
 
-new TimeOnly(hour: 11, minute: 41, second: 26, millisecond: 813),
+new TimeOnly(hour: 7, minute: 4, second: 24, millisecond: 65),
+
+new TimeOnly(hour: 14, minute: 19, second: 41, millisecond: 252),
 
 },
 },
@@ -855,59 +946,46 @@ new TimeOnly(hour: 11, minute: 41, second: 26, millisecond: 813),
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 141,
+    Id = 137,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
+new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 4, minute: 35, second: 10, millisecond: 233),
+new TimeOnly(hour: 8, minute: 10, second: 19, millisecond: 166),
 
-new TimeOnly(hour: 3, minute: 28, second: 17, millisecond: 409),
+new TimeOnly(hour: 15, minute: 31, second: 6, millisecond: 763),
 
-new TimeOnly(hour: 11, minute: 56, second: 42, millisecond: 917),
-
-new TimeOnly(hour: 18, minute: 32, second: 27, millisecond: 893),
+new TimeOnly(hour: 13, minute: 1, second: 36, millisecond: 205),
 
 },
     ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.TimeOnly>(3)
-{
-new TimeOnly(hour: 20, minute: 16, second: 10, millisecond: 109),
-
-new TimeOnly(hour: 16, minute: 40, second: 27, millisecond: 355),
-
-new TimeOnly(hour: 8, minute: 1, second: 42, millisecond: 414),
-
-},
+    NullableValue = null,
 },
             new TimeOnlytime_without_time_zoneArray2M
 {
-    Id = 149,
+    Id = 144,
     Value = 
 new System.Collections.Generic.List<System.TimeOnly>(4)
 {
-new TimeOnly(hour: 18, minute: 51, second: 10, millisecond: 182),
+new TimeOnly(hour: 12, minute: 32, second: 21, millisecond: 20),
 
-new TimeOnly(hour: 3, minute: 11, second: 9, millisecond: 993),
+new TimeOnly(hour: 3, minute: 56, second: 54, millisecond: 6),
 
-new TimeOnly(hour: 13, minute: 22, second: 45, millisecond: 994),
+new TimeOnly(hour: 12, minute: 54, second: 13, millisecond: 565),
 
-new TimeOnly(hour: 9, minute: 50, second: 30, millisecond: 904),
+new TimeOnly(hour: 2, minute: 45, second: 58, millisecond: 535),
 
 },
     ModelInner = new TimeOnlytime_without_time_zoneArray2MI
 {
-    Id = 72,
+    Id = 71,
     Value = 
-new System.Collections.Generic.List<System.TimeOnly>(4)
+new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 19, minute: 12, second: 16, millisecond: 798),
+new TimeOnly(hour: 9, minute: 13, second: 15, millisecond: 467),
 
-new TimeOnly(hour: 13, minute: 25, second: 43, millisecond: 59),
+new TimeOnly(hour: 12, minute: 2, second: 38, millisecond: 155),
 
-new TimeOnly(hour: 11, minute: 33, second: 27, millisecond: 725),
-
-new TimeOnly(hour: 9, minute: 13, second: 27, millisecond: 89),
+new TimeOnly(hour: 0, minute: 27, second: 5, millisecond: 42),
 
 },
     NullableValue = null,
@@ -915,11 +993,11 @@ new TimeOnly(hour: 9, minute: 13, second: 27, millisecond: 89),
     NullableValue = 
 new System.Collections.Generic.List<System.TimeOnly>(3)
 {
-new TimeOnly(hour: 4, minute: 22, second: 42, millisecond: 448),
+new TimeOnly(hour: 9, minute: 23, second: 42, millisecond: 61),
 
-new TimeOnly(hour: 3, minute: 43, second: 10, millisecond: 357),
+new TimeOnly(hour: 3, minute: 16, second: 47, millisecond: 626),
 
-new TimeOnly(hour: 20, minute: 4, second: 40, millisecond: 919),
+new TimeOnly(hour: 8, minute: 46, second: 23, millisecond: 437),
 
 },
 },
@@ -1862,6 +1940,38 @@ Gedaq.DbConnection.Attributes.DynamicParametr()]
         {
         }
 
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionSTMMDynQuerySelectModelDynParBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(ITimeOnlyListtime_without_time_zoneArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
+            position: 2)]
+        private void DbConnectionSTMMDynQuerySelectModelDynParBatchConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionMMDynQuerySelectModelDynParBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(ITimeOnlyListtime_without_time_zoneArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModelDynPar",
+            position: 2)]
+        private void DbConnectionMMDynQuerySelectModelDynParBatchConfig()
+        {
+        }
+
         [Test, Order(2)]
         public async Task DbConnectionMMDynQuerySelectModelDynParTestAsync()
         {
@@ -1900,6 +2010,207 @@ ORDER BY
                 {
                     FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models2[i],_testData[i], false);
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelDynParBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 29;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 122;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var firstItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(23));
+                Assert.That(firstItems2, Has.Count.EqualTo(23));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[0],_testData[7], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[0],_testData[7], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[1],_testData[8], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[1],_testData[8], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[2],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[2],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[3],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[3],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[4],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[4],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[5],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[5],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[6],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[6],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[7],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[7],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[8],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[8],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[9],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[9],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[10],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[10],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[11],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[11],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[12],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[12],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[13],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[13],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[14],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[14],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[15],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[15],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[16],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[16],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[17],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[17],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[18],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[18],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[19],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[19],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[20],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[20],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[21],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[21],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[22],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[22],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(6));
+                Assert.That(secondItems2, Has.Count.EqualTo(6));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[0],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[1],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[2],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[3],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[4],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[5],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[5],_testData[30], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 90;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 75;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var firstItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(11));
+                Assert.That(firstItems2, Has.Count.EqualTo(11));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[0],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[0],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[1],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[1],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[2],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[2],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[3],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[3],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[4],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[4],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[5],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[5],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[6],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[6],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[7],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[7],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[8],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[8],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[9],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[9],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[10],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[10],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(14));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[0],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[1],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[2],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[3],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[4],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[5],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[6],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[7],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[8],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[9],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[10],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[11],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[12],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[13],_testData[29], false);
             }
         }
 
@@ -1944,6 +2255,230 @@ ORDER BY
             }
         }
 
+        [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 7;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 65;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var firstItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                 ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(27));
+                Assert.That(firstItems2, Has.Count.EqualTo(27));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[0],_testData[3], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[0],_testData[3], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[1],_testData[4], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[1],_testData[4], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[2],_testData[5], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[2],_testData[5], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[3],_testData[6], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[3],_testData[6], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[4],_testData[7], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[4],_testData[7], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[5],_testData[8], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[5],_testData[8], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[6],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[6],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[7],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[7],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[8],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[8],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[9],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[9],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[10],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[10],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[11],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[11],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[12],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[12],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[13],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[13],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[14],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[14],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[15],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[15],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[16],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[16],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[17],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[17],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[18],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[18],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[19],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[19],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[20],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[20],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[21],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[21],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[22],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[22],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[23],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[23],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[24],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[24],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[25],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[25],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[26],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[26],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(16));
+                Assert.That(secondItems2, Has.Count.EqualTo(16));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[0],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[1],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[2],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[3],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[4],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[5],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[6],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[7],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[7],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[8],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[8],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[9],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[9],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[10],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[11],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[12],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[12],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[13],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[13],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[14],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[14],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[15],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[15],_testData[30], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 102;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 77;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var firstItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                 ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(9));
+                Assert.That(firstItems2, Has.Count.EqualTo(9));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[0],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[0],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[1],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[1],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[2],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[2],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[3],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[3],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[4],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[4],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[5],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[5],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[6],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[6],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[7],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[7],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[8],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[8],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(13));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[0],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[1],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[2],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[3],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[4],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[5],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[6],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[7],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[8],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[9],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[10],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[11],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[12],_testData[29], false);
+            }
+        }
+
 [Gedaq.DbConnection.Attributes.Query(
             query: null,
             methodName:"DbConnectionDynQuerySelectModelDynPar",
@@ -1960,7 +2495,7 @@ Gedaq.DbConnection.Attributes.DynamicParametr()]
         }
 
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: "DbConnectionDynQuerySelectModelDynParBatch",
+            batchName: "DbConnectionSTDynQuerySelectModelDynParBatch",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
@@ -1970,6 +2505,22 @@ Gedaq.DbConnection.Attributes.BatchPart(
             position: 1),
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionDynQuerySelectModelDynPar",
+            position: 2)]
+        private void DbConnectionSTDynQuerySelectModelDynParBatchConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionDynQuerySelectModelDynParBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(ITimeOnlyListtime_without_time_zoneArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModelDynPar",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
             position: 2)]
         private void DbConnectionDynQuerySelectModelDynParBatchConfig()
         {
@@ -2006,19 +2557,19 @@ ORDER BY
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelDynParBatchTestAsync()
+        public async Task DbConnectionSTDynQuerySelectModelDynParBatchTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 101;
+                parametr1.Value = 81;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 49;
+                parametr2.Value = 90;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2043,26 +2594,144 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2))
+                foreach(var batchResult in await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSTDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
-FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[21], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[22], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[23], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[24], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[25], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[26], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[27], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[28], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(12));
+
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
-FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[10], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[11], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[12], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[13], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[14], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[15], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[16], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[17], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[18], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[19], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[20], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[21], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[22], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[23], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[24], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[25], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[26], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[27], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[28], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[19],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(11));
+
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelDynParBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 56;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 77;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(18));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[0],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[1],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[2],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[3],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[4],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[5],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[6],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[7],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[8],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[9],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[10],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[11],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[12],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[13],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[14],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[15],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[16],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[17],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(13));
+                Assert.That(secondItems2, Has.Count.EqualTo(13));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[0],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[1],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[2],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[3],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[4],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[5],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[6],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[7],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[7],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[8],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[8],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[9],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[9],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[10],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[11],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[12],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[12],_testData[30], false);
             }
         }
 
@@ -2097,19 +2766,19 @@ ORDER BY
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelDynParBatchTest()
+        public async Task DbConnectionSTDynQuerySelectModelDynParBatchTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 83;
+                parametr1.Value = 38;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 53;
+                parametr2.Value = 66;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2134,26 +2803,184 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2))
+                foreach(var batchResult in  ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSTDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
-FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[18], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[19], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[20], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[21], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[22], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[23], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[24], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[25], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[26], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[27], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[28], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(22));
+
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[8], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[19],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[20],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[21],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(19));
-FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[11], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[12], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[13], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[14], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[15], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[16], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[17], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[18], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[19], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[20], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[21], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[22], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[23], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[24], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[25], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[26], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[27], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[28], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(15));
+
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 75;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 5;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                 ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(14));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[0],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[1],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[2],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[3],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[4],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[5],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[6],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[7],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[8],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[9],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[10],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[11],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[12],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[13],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(28));
+                Assert.That(secondItems2, Has.Count.EqualTo(28));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[0],_testData[2], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[1],_testData[3], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[2],_testData[4], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[3],_testData[5], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[4],_testData[6], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[5],_testData[7], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[6],_testData[8], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[7],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[7],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[8],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[8],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[9],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[9],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[10],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[11],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[12],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[12],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[13],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[13],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[14],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[14],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[15],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[15],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[16],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[16],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[17],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[17],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[18],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[18],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[19],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[19],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[20],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[20],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[21],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[21],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[22],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[22],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[23],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[23],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[24],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[24],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[25],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[25],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[26],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[26],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[27],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[27],_testData[30], false);
             }
         }
 
@@ -2192,7 +3019,7 @@ Gedaq.DbConnection.Attributes.DynamicParametr()]
         }
 
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: "DbConnectionSelectModelDynParBatch",
+            batchName: "DbConnectionSTSelectModelDynParBatch",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
@@ -2203,7 +3030,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionSelectModelDynPar",
             position: 2)]
-        private void DbConnectionSelectModelDynParBatchConfig()
+        private void DbConnectionSTSelectModelDynParBatchConfig()
         {
         }
 
@@ -2227,36 +3054,61 @@ Gedaq.DbConnection.Attributes.BatchPart(
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelDynParBatchTestAsync()
+        public async Task DbConnectionSTSelectModelDynParBatchTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 27;
+                parametr1.Value = 102;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 94;
+                parametr2.Value = 65;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
-                foreach(var batchResult in await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
+                foreach(var batchResult in await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSTSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
-TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[6], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[7], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[8], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[9], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[10], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[11], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[12], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[13], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[14], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[15], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[16], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[17], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[18], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[19], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[20], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[21], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[22], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[23], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[24], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[19],_testData[25], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[20],_testData[26], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[21],_testData[27], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[22],_testData[28], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[23],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(9));
+
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[21], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[22], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[23], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[24], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[25], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[26], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[27], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[28], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
-TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[20], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[21], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[22], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[23], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[24], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[25], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[26], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[27], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[28], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(16));
+
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[14], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[15], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[16], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[17], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[18], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[19], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[20], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[21], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[22], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[23], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[24], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[25], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[26], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[27], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[28], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[29], false);
                         continue;
                     }
                     
@@ -2285,36 +3137,69 @@ TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[20], false
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelDynParBatchTest()
+        public async Task DbConnectionSTSelectModelDynParBatchTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 108;
+                parametr1.Value = 115;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 9;
+                parametr2.Value = 13;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
-                foreach(var batchResult in  ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
+                foreach(var batchResult in  ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSTSelectModelDynParBatch(connection, [parametr1], [parametr2]))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
-TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[24], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[25], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[26], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[27], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[28], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(7));
+
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[23], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[24], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[25], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[26], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[27], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[28], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(28));
-TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[2], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[3], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[4], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[5], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[6], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[7], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[8], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[9], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[10], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[11], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[12], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[13], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[14], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[15], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[16], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[17], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[18], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[19], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[20], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[19],_testData[21], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[20],_testData[22], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[21],_testData[23], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[22],_testData[24], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[23],_testData[25], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[24],_testData[26], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[25],_testData[27], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[26],_testData[28], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[27],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(26));
+
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[4], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[5], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[6], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[7], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[8], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[9], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[10], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[11], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[12], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[13], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[14], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[15], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[16], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[17], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[18], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[19], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[20], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[21], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[22], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[19],_testData[23], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[20],_testData[24], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[21],_testData[25], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[22],_testData[26], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[23],_testData[27], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[24],_testData[28], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[25],_testData[29], false);
                         continue;
                     }
                     
@@ -2339,6 +3224,38 @@ Gedaq.DbConnection.Attributes.Parametr(
             methodParametrName: "id", 
             dbType: (System.Data.DbType)(11))]
         private void DbConnectionMMDynQuerySelectModelConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionSTMMDynQuerySelectModelBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(ITimeOnlyListtime_without_time_zoneArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModel",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModel",
+            position: 2)]
+        private void DbConnectionSTMMDynQuerySelectModelBatchConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionMMDynQuerySelectModelBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(ITimeOnlyListtime_without_time_zoneArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModel",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModel",
+            position: 2)]
+        private void DbConnectionMMDynQuerySelectModelBatchConfig()
         {
         }
 
@@ -2380,6 +3297,221 @@ ORDER BY
         }
 
         [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var firstItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 40, query1, 29, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(21));
+                Assert.That(firstItems2, Has.Count.EqualTo(21));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[0],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[0],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[1],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[1],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[2],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[2],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[3],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[3],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[4],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[4],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[5],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[5],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[6],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[6],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[7],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[7],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[8],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[8],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[9],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[9],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[10],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[10],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[11],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[11],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[12],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[12],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[13],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[13],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[14],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[14],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[15],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[15],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[16],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[16],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[17],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[17],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[18],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[18],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[19],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[19],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[20],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[20],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(23));
+                Assert.That(secondItems2, Has.Count.EqualTo(23));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[0],_testData[7], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[1],_testData[8], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[2],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[3],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[4],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[5],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[6],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[7],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[7],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[8],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[8],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[9],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[9],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[10],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[11],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[12],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[12],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[13],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[13],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[14],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[14],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[15],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[15],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[16],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[16],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[17],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[17],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[18],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[18],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[19],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[19],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[20],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[20],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[21],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[21],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[22],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[22],_testData[30], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var firstItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 61, query1, 126, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(17));
+                Assert.That(firstItems2, Has.Count.EqualTo(17));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[0],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[0],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[1],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[1],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[2],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[2],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[3],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[3],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[4],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[4],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[5],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[5],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[6],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[6],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[7],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[7],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[8],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[8],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[9],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[9],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[10],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[10],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[11],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[11],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[12],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[12],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[13],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[13],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[14],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[14],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[15],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[15],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[16],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[16],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(4));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[0],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[1],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[2],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[3],_testData[29], false);
+            }
+        }
+
+        [Test, Order(2)]
         public async Task DbConnectionMMDynQuerySelectModelTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
@@ -2416,6 +3548,203 @@ ORDER BY
             }
         }
 
+        [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var firstItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                 ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 96, query1, 124, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(10));
+                Assert.That(firstItems2, Has.Count.EqualTo(10));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[0],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[0],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[1],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[1],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[2],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[2],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[3],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[3],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[4],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[4],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[5],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[5],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[6],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[6],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[7],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[7],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[8],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[8],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[9],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[9],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(5));
+                Assert.That(secondItems2, Has.Count.EqualTo(5));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[0],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[1],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[2],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[3],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[4],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[4],_testData[30], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var firstItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                 ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionMMDynQuerySelectModelBatch(connection, 1, query1, 43, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(29));
+                Assert.That(firstItems2, Has.Count.EqualTo(29));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[0],_testData[1], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[0],_testData[1], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[1],_testData[2], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[1],_testData[2], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[2],_testData[3], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[2],_testData[3], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[3],_testData[4], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[3],_testData[4], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[4],_testData[5], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[4],_testData[5], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[5],_testData[6], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[5],_testData[6], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[6],_testData[7], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[6],_testData[7], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[7],_testData[8], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[7],_testData[8], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[8],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[8],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[9],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[9],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[10],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[10],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[11],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[11],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[12],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[12],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[13],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[13],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[14],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[14],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[15],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[15],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[16],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[16],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[17],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[17],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[18],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[18],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[19],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[19],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[20],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[20],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[21],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[21],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[22],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[22],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[23],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[23],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[24],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[24],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[25],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[25],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[26],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[26],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[27],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[27],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[28],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems2[28],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(20));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[0],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[1],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[2],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[3],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[4],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[5],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[6],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[7],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[8],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[9],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[10],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[11],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[12],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[13],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[14],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[15],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[16],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[17],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[18],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[19],_testData[29], false);
+            }
+        }
+
 [Gedaq.DbConnection.Attributes.Query(
             query: null,
             methodName:"DbConnectionDynQuerySelectModel",
@@ -2436,7 +3765,7 @@ Gedaq.DbConnection.Attributes.Parametr(
         }
 
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: "DbConnectionDynQuerySelectModelBatch",
+            batchName: "DbConnectionSTDynQuerySelectModelBatch",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
@@ -2446,6 +3775,22 @@ Gedaq.DbConnection.Attributes.BatchPart(
             position: 1),
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionDynQuerySelectModel",
+            position: 2)]
+        private void DbConnectionSTDynQuerySelectModelBatchConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionDynQuerySelectModelBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(ITimeOnlyListtime_without_time_zoneArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModel",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModel",
             position: 2)]
         private void DbConnectionDynQuerySelectModelBatchConfig()
         {
@@ -2478,7 +3823,7 @@ ORDER BY
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelBatchTestAsync()
+        public async Task DbConnectionSTDynQuerySelectModelBatchTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
@@ -2506,26 +3851,155 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 49, query1, 9, query2))
+                foreach(var batchResult in await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 102, query1, 7, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
-FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[10], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[11], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[12], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[13], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[14], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[15], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[16], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[17], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[18], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[19], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[20], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[21], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[22], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[23], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[24], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[25], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[26], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[27], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[28], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[19],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(9));
+
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(28));
-FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[2], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[3], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[4], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[5], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[6], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[7], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[8], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[9], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[10], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[11], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[12], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[13], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[14], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[15], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[16], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[17], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[18], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[19], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[20], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[19],_testData[21], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[20],_testData[22], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[21],_testData[23], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[22],_testData[24], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[23],_testData[25], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[24],_testData[26], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[25],_testData[27], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[26],_testData[28], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[27],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(27));
+
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[3], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[4], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[5], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[6], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[7], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[8], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[19],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[20],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[21],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[22],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[23],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[24],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[25],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[26],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 127, query1, 21, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(3));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[0],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[1],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[2],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(24));
+                Assert.That(secondItems2, Has.Count.EqualTo(24));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[0],_testData[6], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[1],_testData[7], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[2],_testData[8], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[3],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[4],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[5],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[6],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[7],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[7],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[8],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[8],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[9],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[9],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[10],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[11],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[12],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[12],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[13],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[13],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[14],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[14],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[15],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[15],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[16],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[16],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[17],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[17],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[18],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[18],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[19],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[19],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[20],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[20],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[21],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[21],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[22],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[22],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[23],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[23],_testData[30], false);
             }
         }
 
@@ -2556,7 +4030,7 @@ ORDER BY
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelBatchTest()
+        public async Task DbConnectionSTDynQuerySelectModelBatchTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
@@ -2584,26 +4058,132 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionDynQuerySelectModelBatch(connection, 94, query1, 45, query2))
+                foreach(var batchResult in  ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSTDynQuerySelectModelBatch(connection, 136, query1, 77, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
-FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[20], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[21], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[22], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[23], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[24], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[25], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[26], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[27], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[28], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(2));
+
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(21));
-FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[9], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[10], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[11], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[12], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[13], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[14], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[15], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[16], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[17], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[18], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[19], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[20], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[21], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[22], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[23], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[24], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[25], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[26], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[27], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[19],_testData[28], false);FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[20],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(13));
+
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.timeonlytime_without_time_zonearray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems1 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                var secondItems2 = new List<FlatTimeOnlytime_without_time_zoneArray2M>();
+                 ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionDynQuerySelectModelBatch(connection, 1, query1, 96, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(29));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[0],_testData[1], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[1],_testData[2], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[2],_testData[3], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[3],_testData[4], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[4],_testData[5], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[5],_testData[6], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[6],_testData[7], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[7],_testData[8], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[8],_testData[9], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[9],_testData[10], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[10],_testData[11], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[11],_testData[12], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[12],_testData[13], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[13],_testData[14], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[14],_testData[15], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[15],_testData[16], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[16],_testData[17], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[17],_testData[18], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[18],_testData[19], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[19],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[20],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[21],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[22],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[23],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[24],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[25],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[26],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[27],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(firstItems1[28],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(10));
+                Assert.That(secondItems2, Has.Count.EqualTo(10));
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[0],_testData[20], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[1],_testData[21], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[2],_testData[22], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[3],_testData[23], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[4],_testData[24], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[5],_testData[25], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[6],_testData[26], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[7],_testData[27], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[7],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[8],_testData[28], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[8],_testData[30], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems1[9],_testData[29], false);
+                        FlatTimeOnlytime_without_time_zoneArray2M.AssertModel(secondItems2[9],_testData[30], false);
             }
         }
 
@@ -2646,7 +4226,7 @@ Gedaq.DbConnection.Attributes.Parametr(
         }
 
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: "DbConnectionSelectModelBatch",
+            batchName: "DbConnectionSTSelectModelBatch",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
@@ -2657,7 +4237,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionSelectModel",
             position: 2)]
-        private void DbConnectionSelectModelBatchConfig()
+        private void DbConnectionSTSelectModelBatchConfig()
         {
         }
 
@@ -2677,27 +4257,51 @@ Gedaq.DbConnection.Attributes.BatchPart(
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelBatchTestAsync()
+        public async Task DbConnectionSTSelectModelBatchTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSelectModelBatchAsync(connection, 60, 85))
+                foreach(var batchResult in await ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSTSelectModelBatchAsync(connection, 61, 115))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(16));
-TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[14], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[15], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[16], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[17], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[18], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[19], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[20], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[21], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[22], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[23], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[24], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[25], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[26], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[27], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[28], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(17));
+
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[13], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[14], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[15], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[16], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[17], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[18], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[19], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[20], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[21], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[22], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[23], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[24], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[25], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[26], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[27], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[28], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
-TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[19], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[20], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[21], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[22], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[23], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[24], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[25], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[26], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[27], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[28], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(7));
+
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[23], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[24], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[25], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[26], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[27], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[28], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[29], false);
                         continue;
                     }
                     
@@ -2722,27 +4326,60 @@ TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[19], false
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelBatchTest()
+        public async Task DbConnectionSTSelectModelBatchTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSelectModelBatch(connection, 40, 65))
+                foreach(var batchResult in  ((ITimeOnlyListtime_without_time_zoneArray)this).DbConnectionSTSelectModelBatch(connection, 13, 115))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
-TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[8], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[9], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[10], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[11], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[12], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[13], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[14], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[15], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[16], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[17], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[18], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[19], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[20], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[21], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[22], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[23], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[24], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[25], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[26], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[19],_testData[27], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[20],_testData[28], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[21],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(26));
+
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[4], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[5], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[6], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[7], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[8], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[9], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[10], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[11], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[12], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[13], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[14], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[15], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[16], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[17], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[18], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[19], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[20], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[21], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[22], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[19],_testData[23], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[20],_testData[24], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[21],_testData[25], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[22],_testData[26], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[23],_testData[27], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[24],_testData[28], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[25],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
-TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[16], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[17], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[18], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[19], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[20], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[21], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[22], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[23], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[24], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[25], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[26], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[27], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[28], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(7));
+
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[23], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[24], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[25], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[26], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[27], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[28], false);
+                        TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[29], false);
                         continue;
                     }
                     
@@ -2758,11 +4395,11 @@ TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[16], false
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((ITimeOnlyListtime_without_time_zoneArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((ITimeOnlyListtime_without_time_zoneArray)this).SetDbConnectionSelectModelParametrs(cmd, 108);
+                ((ITimeOnlyListtime_without_time_zoneArray)this).SetDbConnectionSelectModelParametrs(cmd, 77);
                 var models = await ((ITimeOnlyListtime_without_time_zoneArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(6));
-TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[24], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[25], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[26], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[27], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[28], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(13));
+TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[17], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[18], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[19], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[20], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[21], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[22], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[23], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[24], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[25], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[26], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[27], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[28], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[29], false);
             }
         }
 
@@ -2773,11 +4410,11 @@ TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[24], false
             {
                 await connection.OpenAsync();
                  using var cmd =  ((ITimeOnlyListtime_without_time_zoneArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((ITimeOnlyListtime_without_time_zoneArray)this).SetDbConnectionSelectModelParametrs(cmd, 14);
+                ((ITimeOnlyListtime_without_time_zoneArray)this).SetDbConnectionSelectModelParametrs(cmd, 47);
                 var models =  ((ITimeOnlyListtime_without_time_zoneArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(26));
-TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[4], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[5], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[6], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[7], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[8], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[9], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[10], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[11], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[12], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[13], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[14], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[15], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[16], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[17], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[18], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[19], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[20], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[21], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[22], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[19],_testData[23], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[20],_testData[24], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[21],_testData[25], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[22],_testData[26], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[23],_testData[27], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[24],_testData[28], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[25],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(19));
+TimeOnlytime_without_time_zoneArray2M.AssertModel(models[0],_testData[11], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[1],_testData[12], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[2],_testData[13], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[3],_testData[14], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[4],_testData[15], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[5],_testData[16], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[6],_testData[17], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[7],_testData[18], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[8],_testData[19], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[9],_testData[20], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[10],_testData[21], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[11],_testData[22], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[12],_testData[23], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[13],_testData[24], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[14],_testData[25], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[15],_testData[26], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[16],_testData[27], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[17],_testData[28], false);TimeOnlytime_without_time_zoneArray2M.AssertModel(models[18],_testData[29], false);
             }
         }
 

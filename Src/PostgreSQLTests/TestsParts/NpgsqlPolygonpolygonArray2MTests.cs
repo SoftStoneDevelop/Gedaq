@@ -30,58 +30,71 @@ namespace Tests
         {
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 6,
+    Id = 7,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6475703454269488d, y: 0.34159431592022094d), new NpgsqlTypes.NpgsqlPoint(x: 0.8933808461884482d, y: 0.9065347378221338d), new NpgsqlTypes.NpgsqlPoint(x: 0.5761551007476716d, y: 0.2383561979928699d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.36222817030477794d, y: 0.5659730894994328d), new NpgsqlTypes.NpgsqlPoint(x: 0.17607235260032872d, y: 0.9603514072093526d), new NpgsqlTypes.NpgsqlPoint(x: 0.3213974165367164d, y: 0.5638085116938694d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.0861239901191353d, y: 0.3348867384260247d), new NpgsqlTypes.NpgsqlPoint(x: 0.5038015616146413d, y: 0.5016505123424028d), new NpgsqlTypes.NpgsqlPoint(x: 0.43048962578981176d, y: 0.05222559880805777d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4392524895000497d, y: 0.9050424913604872d), new NpgsqlTypes.NpgsqlPoint(x: 0.14762595743564932d, y: 0.11622552793799779d), new NpgsqlTypes.NpgsqlPoint(x: 0.32372110137650945d, y: 0.1917696273449495d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.18216988469005346d, y: 0.4410592597262023d), new NpgsqlTypes.NpgsqlPoint(x: 0.31591187611395866d, y: 0.9166645952589907d), new NpgsqlTypes.NpgsqlPoint(x: 0.9488854550694447d, y: 0.350782264330038d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7746102986172794d, y: 0.6978113903545354d), new NpgsqlTypes.NpgsqlPoint(x: 0.45240254619508546d, y: 0.17944210131791816d), new NpgsqlTypes.NpgsqlPoint(x: 0.9551837711825384d, y: 0.8663352161498714d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8914785031284034d, y: 0.5722703147540898d), new NpgsqlTypes.NpgsqlPoint(x: 0.4773156281666835d, y: 0.026143018040178934d), new NpgsqlTypes.NpgsqlPoint(x: 0.07527264988164217d, y: 0.6692259137101487d)),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.2418057706109289d, y: 0.9134872774376822d), new NpgsqlTypes.NpgsqlPoint(x: 0.9100080535994779d, y: 0.8796408192108204d), new NpgsqlTypes.NpgsqlPoint(x: 0.3837836809293579d, y: 0.9456680255452079d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7639160831471075d, y: 0.7183452215216936d), new NpgsqlTypes.NpgsqlPoint(x: 0.08672486192720685d, y: 0.3815088288333641d), new NpgsqlTypes.NpgsqlPoint(x: 0.08750805484948576d, y: 0.983614142317405d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.22824587284533826d, y: 0.3375019933433753d), new NpgsqlTypes.NpgsqlPoint(x: 0.35352469425184063d, y: 0.5395761702756778d), new NpgsqlTypes.NpgsqlPoint(x: 0.6065039599090497d, y: 0.7709884896032498d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6331455368016212d, y: 0.1275163406397275d), new NpgsqlTypes.NpgsqlPoint(x: 0.7402791778575261d, y: 0.8906652953281298d), new NpgsqlTypes.NpgsqlPoint(x: 0.7605122437578896d, y: 0.8702183621774453d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.18197601711385059d, y: 0.008486778390461414d), new NpgsqlTypes.NpgsqlPoint(x: 0.9799476806008096d, y: 0.42256888092944833d), new NpgsqlTypes.NpgsqlPoint(x: 0.7669819263204548d, y: 0.6116375883521721d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9990870649536937d, y: 0.06273213483535067d), new NpgsqlTypes.NpgsqlPoint(x: 0.791707756273673d, y: 0.2569061858918631d), new NpgsqlTypes.NpgsqlPoint(x: 0.1867694637375128d, y: 0.8737816044415211d)),
 
 },
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 11,
+    Id = 15,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.529597375502546d, y: 0.971586197907859d), new NpgsqlTypes.NpgsqlPoint(x: 0.9681247686196133d, y: 0.8031977795010387d), new NpgsqlTypes.NpgsqlPoint(x: 0.9525014933367387d, y: 0.22655956010748057d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5967665703324884d, y: 0.9196617217015988d), new NpgsqlTypes.NpgsqlPoint(x: 0.5999166527363278d, y: 0.7912557587476776d), new NpgsqlTypes.NpgsqlPoint(x: 0.34139599505778595d, y: 0.8818468833809884d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.20674611458843206d, y: 0.2884909565710506d), new NpgsqlTypes.NpgsqlPoint(x: 0.5433216446969654d, y: 0.7068441046754764d), new NpgsqlTypes.NpgsqlPoint(x: 0.944814424588752d, y: 0.465585501566544d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3143544987362473d, y: 0.8965879275554021d), new NpgsqlTypes.NpgsqlPoint(x: 0.5881928156022537d, y: 0.4567335796681117d), new NpgsqlTypes.NpgsqlPoint(x: 0.8222198261604077d, y: 0.979929734744242d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8430123928015213d, y: 0.9804783286575462d), new NpgsqlTypes.NpgsqlPoint(x: 0.31302655386054845d, y: 0.4306249442063643d), new NpgsqlTypes.NpgsqlPoint(x: 0.6474919274844224d, y: 0.12027893851004001d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7712211214635256d, y: 0.6775290726958915d), new NpgsqlTypes.NpgsqlPoint(x: 0.92760474205247d, y: 0.05481701745165379d), new NpgsqlTypes.NpgsqlPoint(x: 0.2525851719783069d, y: 0.7715237390995812d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.329202810749746d, y: 0.7733970130844522d), new NpgsqlTypes.NpgsqlPoint(x: 0.8572229496314568d, y: 0.8327003356616162d), new NpgsqlTypes.NpgsqlPoint(x: 0.24026929250000084d, y: 0.7196551370374382d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.14720463450168864d, y: 0.9230710713349015d), new NpgsqlTypes.NpgsqlPoint(x: 0.2230174787036867d, y: 0.8821369129339088d), new NpgsqlTypes.NpgsqlPoint(x: 0.45890681533864686d, y: 0.059424174570784416d)),
 
 },
     ModelInner = new NpgsqlPolygonpolygonArray2MI
 {
-    Id = 7,
+    Id = 6,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9701797551207417d, y: 0.10652300370035617d), new NpgsqlTypes.NpgsqlPoint(x: 0.7669273378307704d, y: 0.21043590200136308d), new NpgsqlTypes.NpgsqlPoint(x: 0.45599513038477435d, y: 0.8371859597720308d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3031639085314807d, y: 0.0018682956243835092d), new NpgsqlTypes.NpgsqlPoint(x: 0.9978232717865844d, y: 0.12332716451388437d), new NpgsqlTypes.NpgsqlPoint(x: 0.7471924404127123d, y: 0.6313286719274965d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8400150065834472d, y: 0.37995549739468626d), new NpgsqlTypes.NpgsqlPoint(x: 0.3099028403257228d, y: 0.8046787120602454d), new NpgsqlTypes.NpgsqlPoint(x: 0.7813830274853913d, y: 0.13077777014133762d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6352845626425928d, y: 0.0845983311842432d), new NpgsqlTypes.NpgsqlPoint(x: 0.7405529573212422d, y: 0.38223768682891424d), new NpgsqlTypes.NpgsqlPoint(x: 0.4639624086581262d, y: 0.03188492917646135d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6859433922455695d, y: 0.2502469025717312d), new NpgsqlTypes.NpgsqlPoint(x: 0.1983338850190126d, y: 0.7331357797027789d), new NpgsqlTypes.NpgsqlPoint(x: 0.1746476020008526d, y: 0.7029312848874686d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5513016342527832d, y: 0.7992945701233409d), new NpgsqlTypes.NpgsqlPoint(x: 0.28149494764286376d, y: 0.6176081583860809d), new NpgsqlTypes.NpgsqlPoint(x: 0.8787341351663065d, y: 0.7461192234640321d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4541723584981817d, y: 0.5720664696208011d), new NpgsqlTypes.NpgsqlPoint(x: 0.924368567936558d, y: 0.1285190863893101d), new NpgsqlTypes.NpgsqlPoint(x: 0.9894595656137659d, y: 0.12713770500244936d)),
 
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.1307433564274676d, y: 0.33169322450464d), new NpgsqlTypes.NpgsqlPoint(x: 0.32353957837105385d, y: 0.9242096573875833d), new NpgsqlTypes.NpgsqlPoint(x: 0.7624762435528948d, y: 0.6047498206597182d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6423250482071915d, y: 0.18222907899682728d), new NpgsqlTypes.NpgsqlPoint(x: 0.32585331186074007d, y: 0.5218015336425981d), new NpgsqlTypes.NpgsqlPoint(x: 0.8393142366197793d, y: 0.8824464917892867d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.2464617806628394d, y: 0.1546221794278675d), new NpgsqlTypes.NpgsqlPoint(x: 0.8628543698494548d, y: 0.41979380479229866d), new NpgsqlTypes.NpgsqlPoint(x: 0.3194658879024084d, y: 0.9110925813581615d)),
+
+},
 },
     NullableValue = null,
 },
@@ -89,13 +102,15 @@ new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6859433922455695d
 {
     Id = 17,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.20204905506191517d, y: 0.9010289585631823d), new NpgsqlTypes.NpgsqlPoint(x: 0.5898790030976648d, y: 0.9256877957747459d), new NpgsqlTypes.NpgsqlPoint(x: 0.5836475834330281d, y: 0.43976961068914955d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3939692492631407d, y: 0.7130462189226573d), new NpgsqlTypes.NpgsqlPoint(x: 0.2075528849040712d, y: 0.08206287213222452d), new NpgsqlTypes.NpgsqlPoint(x: 0.451590748139974d, y: 0.5115738663815721d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.45943307408193934d, y: 0.12319405480932677d), new NpgsqlTypes.NpgsqlPoint(x: 0.26783100333080123d, y: 0.0684407548955609d), new NpgsqlTypes.NpgsqlPoint(x: 0.5594566142536391d, y: 0.6432946858145313d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9668665140068492d, y: 0.512636908781606d), new NpgsqlTypes.NpgsqlPoint(x: 0.9730022746733225d, y: 0.2075891645215927d), new NpgsqlTypes.NpgsqlPoint(x: 0.6974569261628832d, y: 0.010925649729245701d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4053748557598894d, y: 0.5915312090102359d), new NpgsqlTypes.NpgsqlPoint(x: 0.592228011922656d, y: 0.9980055587858279d), new NpgsqlTypes.NpgsqlPoint(x: 0.9699964393025974d, y: 0.6761981637045528d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.14233941041176057d, y: 0.1378502293929541d), new NpgsqlTypes.NpgsqlPoint(x: 0.22058005909070322d, y: 0.48183042329224335d), new NpgsqlTypes.NpgsqlPoint(x: 0.0043972890069098325d, y: 0.280598638657523d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.06856429325492941d, y: 0.1690331194614909d), new NpgsqlTypes.NpgsqlPoint(x: 0.6897867982195106d, y: 0.42813105163295884d), new NpgsqlTypes.NpgsqlPoint(x: 0.6810356178528914d, y: 0.2698925707110402d)),
 
 },
     ModelInner = null,
@@ -103,42 +118,42 @@ new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4053748557598894d
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 22,
+    Id = 18,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8235704642297258d, y: 0.8716143484166876d), new NpgsqlTypes.NpgsqlPoint(x: 0.258789384901956d, y: 0.0955006740764418d), new NpgsqlTypes.NpgsqlPoint(x: 0.5892619220657159d, y: 0.5511848078869009d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.36629301360002664d, y: 0.2507852581590865d), new NpgsqlTypes.NpgsqlPoint(x: 0.4404881624846897d, y: 0.7453993764846408d), new NpgsqlTypes.NpgsqlPoint(x: 0.5039581398063111d, y: 0.505914741240611d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.21637231463246298d, y: 0.7358134720939936d), new NpgsqlTypes.NpgsqlPoint(x: 0.08324687836982214d, y: 0.35326781232407845d), new NpgsqlTypes.NpgsqlPoint(x: 0.207177780767134d, y: 0.948710743581803d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9850727420525528d, y: 0.11601533227104532d), new NpgsqlTypes.NpgsqlPoint(x: 0.72726039883846d, y: 0.02742883688427422d), new NpgsqlTypes.NpgsqlPoint(x: 0.7931902715412553d, y: 0.211362512863291d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9741108000514818d, y: 0.08727822809999009d), new NpgsqlTypes.NpgsqlPoint(x: 0.7473598434940106d, y: 0.22652062871468737d), new NpgsqlTypes.NpgsqlPoint(x: 0.24718085970356007d, y: 0.4291326654913321d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7985898124015678d, y: 0.3331252910357616d), new NpgsqlTypes.NpgsqlPoint(x: 0.2006115611295477d, y: 0.08407433000882092d), new NpgsqlTypes.NpgsqlPoint(x: 0.21400191278393121d, y: 0.11972117861481979d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.07318001740482694d, y: 0.9203192685948555d), new NpgsqlTypes.NpgsqlPoint(x: 0.8383130035147469d, y: 0.4269906076559017d), new NpgsqlTypes.NpgsqlPoint(x: 0.9039794163534637d, y: 0.5491224597140295d)),
 
 },
     ModelInner = new NpgsqlPolygonpolygonArray2MI
 {
-    Id = 11,
+    Id = 15,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7312494435827022d, y: 0.4889806845890521d), new NpgsqlTypes.NpgsqlPoint(x: 0.9557189698774652d, y: 0.8877180031282559d), new NpgsqlTypes.NpgsqlPoint(x: 0.4475067190848172d, y: 0.6687213364635742d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.13862869015876944d, y: 0.2560903855262562d), new NpgsqlTypes.NpgsqlPoint(x: 0.9645303567254664d, y: 0.40492957632862736d), new NpgsqlTypes.NpgsqlPoint(x: 0.9645434392471258d, y: 0.7219325801815928d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.26924651136037736d, y: 0.9645874548862037d), new NpgsqlTypes.NpgsqlPoint(x: 0.5234119954409406d, y: 0.7812847303752923d), new NpgsqlTypes.NpgsqlPoint(x: 0.30468001929725663d, y: 0.8305235388466801d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.11772868572328188d, y: 0.024151710607167143d), new NpgsqlTypes.NpgsqlPoint(x: 0.2974612133679466d, y: 0.9192708459479559d), new NpgsqlTypes.NpgsqlPoint(x: 0.30835734044133534d, y: 0.9746327784201508d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.41252768381002913d, y: 0.6173030929432519d), new NpgsqlTypes.NpgsqlPoint(x: 0.7049857430159012d, y: 0.8383574357582797d), new NpgsqlTypes.NpgsqlPoint(x: 0.24526819169437097d, y: 0.7995541406919566d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.09667246553663d, y: 0.8246745728890859d), new NpgsqlTypes.NpgsqlPoint(x: 0.1796534956665482d, y: 0.2650450775977736d), new NpgsqlTypes.NpgsqlPoint(x: 0.2590144231849357d, y: 0.24948099666246015d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.09827625284683272d, y: 0.9203325402116667d), new NpgsqlTypes.NpgsqlPoint(x: 0.6958562742794812d, y: 0.18110632227219625d), new NpgsqlTypes.NpgsqlPoint(x: 0.8244543180493652d, y: 0.1631842687466154d)),
 
 },
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5605370022878121d, y: 0.001027440541407243d), new NpgsqlTypes.NpgsqlPoint(x: 0.7065326191648278d, y: 0.4262290200976211d), new NpgsqlTypes.NpgsqlPoint(x: 0.2226374879606725d, y: 0.9691608242488263d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6671061459244167d, y: 0.9667926017564294d), new NpgsqlTypes.NpgsqlPoint(x: 0.5164330686550571d, y: 0.16969974008897792d), new NpgsqlTypes.NpgsqlPoint(x: 0.9460811282692878d, y: 0.6688689265713581d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8760419177609716d, y: 0.16421082555804067d), new NpgsqlTypes.NpgsqlPoint(x: 0.1632520156518863d, y: 0.08859041460891437d), new NpgsqlTypes.NpgsqlPoint(x: 0.3077093214098763d, y: 0.8100863766873285d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5917392598959534d, y: 0.1969227869359541d), new NpgsqlTypes.NpgsqlPoint(x: 0.3643033028815005d, y: 0.06387210142632505d), new NpgsqlTypes.NpgsqlPoint(x: 0.12175471816255568d, y: 0.7196196542728251d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6625317553709599d, y: 0.7166502879695731d), new NpgsqlTypes.NpgsqlPoint(x: 0.9286032205354602d, y: 0.6103344229444568d), new NpgsqlTypes.NpgsqlPoint(x: 0.7420560382722767d, y: 0.6350021368928861d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.33847677144162347d, y: 0.4635957007288729d), new NpgsqlTypes.NpgsqlPoint(x: 0.7974041859778613d, y: 0.5187014727910954d), new NpgsqlTypes.NpgsqlPoint(x: 0.7638594071517897d, y: 0.8008096760385475d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4486250440783829d, y: 0.7007217381058416d), new NpgsqlTypes.NpgsqlPoint(x: 0.27387642014713387d, y: 0.37484979059847945d), new NpgsqlTypes.NpgsqlPoint(x: 0.5936007080809466d, y: 0.5519185598714603d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.19722876586582294d, y: 0.15983643764016708d), new NpgsqlTypes.NpgsqlPoint(x: 0.4194456053182076d, y: 0.93876923848553d), new NpgsqlTypes.NpgsqlPoint(x: 0.7992442447037816d, y: 0.19242829188293875d)),
 
 },
 },
@@ -146,15 +161,17 @@ new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4486250440783829d
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 30,
+    Id = 20,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8368239217047012d, y: 0.019425430333990912d), new NpgsqlTypes.NpgsqlPoint(x: 0.36601124398000284d, y: 0.2808024237066076d), new NpgsqlTypes.NpgsqlPoint(x: 0.9450708377116136d, y: 0.188345720040612d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.03153659806097597d, y: 0.8228317678021697d), new NpgsqlTypes.NpgsqlPoint(x: 0.002888851905340606d, y: 0.38162558459497786d), new NpgsqlTypes.NpgsqlPoint(x: 0.20814391970427137d, y: 0.6893340091035774d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.846524851019773d, y: 0.04387594343167467d), new NpgsqlTypes.NpgsqlPoint(x: 0.3126666295703424d, y: 0.8843074150771386d), new NpgsqlTypes.NpgsqlPoint(x: 0.8774299038136627d, y: 0.860134810520459d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7519323099946743d, y: 0.3596712586205447d), new NpgsqlTypes.NpgsqlPoint(x: 0.3607346741449079d, y: 0.42063967495339505d), new NpgsqlTypes.NpgsqlPoint(x: 0.8223283265415737d, y: 0.35131458269117244d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6340296106303682d, y: 0.2375733700227558d), new NpgsqlTypes.NpgsqlPoint(x: 0.54484088850628d, y: 0.9360019088028196d), new NpgsqlTypes.NpgsqlPoint(x: 0.5651220266226404d, y: 0.13662624209078844d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.38037672889325125d, y: 0.20744925182081098d), new NpgsqlTypes.NpgsqlPoint(x: 0.8933243568695515d, y: 0.33136236574136646d), new NpgsqlTypes.NpgsqlPoint(x: 0.05758395074767386d, y: 0.7598364080081071d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.1741495295710711d, y: 0.37606349939161443d), new NpgsqlTypes.NpgsqlPoint(x: 0.06965767730754557d, y: 0.1747635529035323d), new NpgsqlTypes.NpgsqlPoint(x: 0.5213064687084294d, y: 0.37816965769635624d)),
 
 },
     ModelInner = null,
@@ -162,141 +179,224 @@ new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6340296106303682d
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 36,
+    Id = 21,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5596515884507953d, y: 0.35244789895616d), new NpgsqlTypes.NpgsqlPoint(x: 0.7805981116771177d, y: 0.9398442575737986d), new NpgsqlTypes.NpgsqlPoint(x: 0.3103708701323121d, y: 0.12145230631934611d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5100881233192538d, y: 0.4028362710764195d), new NpgsqlTypes.NpgsqlPoint(x: 0.027056667762595077d, y: 0.812039545626889d), new NpgsqlTypes.NpgsqlPoint(x: 0.7201070097702663d, y: 0.9542061644463044d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.614981926387235d, y: 0.9562781725363403d), new NpgsqlTypes.NpgsqlPoint(x: 0.8934734776803755d, y: 0.0922507068258932d), new NpgsqlTypes.NpgsqlPoint(x: 0.006216168321088622d, y: 0.6001187028025318d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5946140793970978d, y: 0.5946456684071062d), new NpgsqlTypes.NpgsqlPoint(x: 0.033130347367451574d, y: 0.05661234711215968d), new NpgsqlTypes.NpgsqlPoint(x: 0.5529916835499973d, y: 0.711965223807081d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.15144046471976136d, y: 0.6792048474449286d), new NpgsqlTypes.NpgsqlPoint(x: 0.6204576986829706d, y: 0.00014960949439979387d), new NpgsqlTypes.NpgsqlPoint(x: 0.44601497831672865d, y: 0.6583639746638643d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.31055122136789104d, y: 0.448126865018472d), new NpgsqlTypes.NpgsqlPoint(x: 0.6240730161956876d, y: 0.26127247408592724d), new NpgsqlTypes.NpgsqlPoint(x: 0.03790540543607168d, y: 0.22549653348649923d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6743374538184365d, y: 0.48900870442275546d), new NpgsqlTypes.NpgsqlPoint(x: 0.5690860358248458d, y: 0.30607917877842283d), new NpgsqlTypes.NpgsqlPoint(x: 0.7886276853634109d, y: 0.7044679442199757d)),
 
 },
     ModelInner = new NpgsqlPolygonpolygonArray2MI
 {
     Id = 16,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.040586681763158605d, y: 0.7635141642411631d), new NpgsqlTypes.NpgsqlPoint(x: 0.9655745417706844d, y: 0.09315445849190518d), new NpgsqlTypes.NpgsqlPoint(x: 0.796928184672838d, y: 0.9982512655347802d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5063611131085934d, y: 0.0759201205218265d), new NpgsqlTypes.NpgsqlPoint(x: 0.6251683185691944d, y: 0.6354411333527934d), new NpgsqlTypes.NpgsqlPoint(x: 0.6158904553270937d, y: 0.7196338701725161d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9493401035035625d, y: 0.10967614890597854d), new NpgsqlTypes.NpgsqlPoint(x: 0.054319684190685114d, y: 0.6739959773220332d), new NpgsqlTypes.NpgsqlPoint(x: 0.01768203912469779d, y: 0.5985970455332058d)),
-
-},
-    NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.681622384329699d, y: 0.8590288321696328d), new NpgsqlTypes.NpgsqlPoint(x: 0.02019963906240063d, y: 0.3009061606258997d), new NpgsqlTypes.NpgsqlPoint(x: 0.9409039896283491d, y: 0.2403664722841078d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9857896933321425d, y: 0.12670599134340332d), new NpgsqlTypes.NpgsqlPoint(x: 0.45191915427845686d, y: 0.9545300697704995d), new NpgsqlTypes.NpgsqlPoint(x: 0.7001981766412141d, y: 0.8115329695109244d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9508467299838534d, y: 0.9905520236078648d), new NpgsqlTypes.NpgsqlPoint(x: 0.36663046720283d, y: 0.5328072484152557d), new NpgsqlTypes.NpgsqlPoint(x: 0.18010787654035232d, y: 0.3696839993592661d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7221945668879676d, y: 0.3645350038767198d), new NpgsqlTypes.NpgsqlPoint(x: 0.6462812851992501d, y: 0.31145204507890867d), new NpgsqlTypes.NpgsqlPoint(x: 0.023739233140255056d, y: 0.8312050203884176d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9361872080253053d, y: 0.2808072251957069d), new NpgsqlTypes.NpgsqlPoint(x: 0.22078501417001328d, y: 0.4134060721937661d), new NpgsqlTypes.NpgsqlPoint(x: 0.6715474915288493d, y: 0.36929490974231427d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.2096855673796132d, y: 0.2766576079079478d), new NpgsqlTypes.NpgsqlPoint(x: 0.8314399250669439d, y: 0.8200952095757806d), new NpgsqlTypes.NpgsqlPoint(x: 0.6841598074710531d, y: 0.8165323029030142d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5339279059714326d, y: 0.9129270016823116d), new NpgsqlTypes.NpgsqlPoint(x: 0.1374799004053625d, y: 0.3297912297157566d), new NpgsqlTypes.NpgsqlPoint(x: 0.3771891436062833d, y: 0.9377485021699742d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4970527413185615d, y: 0.5525006871837487d), new NpgsqlTypes.NpgsqlPoint(x: 0.8000448978156248d, y: 0.18398460614357126d), new NpgsqlTypes.NpgsqlPoint(x: 0.39090552254099165d, y: 0.113722322772147d)),
 
-},
 },
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5453826280344835d, y: 0.047931644245861715d), new NpgsqlTypes.NpgsqlPoint(x: 0.9343723675787857d, y: 0.7465566739977172d), new NpgsqlTypes.NpgsqlPoint(x: 0.6705798609693319d, y: 0.8573455447619475d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4766802469992386d, y: 0.18946529950634572d), new NpgsqlTypes.NpgsqlPoint(x: 0.6082772002431975d, y: 0.34885265231040186d), new NpgsqlTypes.NpgsqlPoint(x: 0.6437345259315156d, y: 0.6650961297502921d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.888511045772935d, y: 0.48855490216997244d), new NpgsqlTypes.NpgsqlPoint(x: 0.7430836362670392d, y: 0.2572078831136969d), new NpgsqlTypes.NpgsqlPoint(x: 0.701612375228756d, y: 0.7424683283130722d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3122756718286065d, y: 0.7250609813272596d), new NpgsqlTypes.NpgsqlPoint(x: 0.40906431297950085d, y: 0.8591022875006884d), new NpgsqlTypes.NpgsqlPoint(x: 0.06822005909938844d, y: 0.3737213160320585d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8243927229973759d, y: 0.13779417106278802d), new NpgsqlTypes.NpgsqlPoint(x: 0.9546774431402507d, y: 0.4649717441920903d), new NpgsqlTypes.NpgsqlPoint(x: 0.08215526500373926d, y: 0.6932031765432316d)),
-
-},
-},
-            new NpgsqlPolygonpolygonArray2M
-{
-    Id = 45,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5481037686291126d, y: 0.3856762662491797d), new NpgsqlTypes.NpgsqlPoint(x: 0.08894201861126694d, y: 0.5889364438542517d), new NpgsqlTypes.NpgsqlPoint(x: 0.9715780607926923d, y: 0.5980396693658182d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3146198711079198d, y: 0.10744272227775176d), new NpgsqlTypes.NpgsqlPoint(x: 0.7784599943962185d, y: 0.7940398653249017d), new NpgsqlTypes.NpgsqlPoint(x: 0.1549130888174548d, y: 0.2613670318696556d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.995422060643041d, y: 0.8514979240890498d), new NpgsqlTypes.NpgsqlPoint(x: 0.6010641910961935d, y: 0.9827315586473534d), new NpgsqlTypes.NpgsqlPoint(x: 0.495904082385769d, y: 0.02608779169999942d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6414152595223509d, y: 0.7364485045610031d), new NpgsqlTypes.NpgsqlPoint(x: 0.791666083652643d, y: 0.4499518185342323d), new NpgsqlTypes.NpgsqlPoint(x: 0.08187207325969792d, y: 0.6078218536197343d)),
 
 },
-    ModelInner = null,
+},
     NullableValue = null,
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 53,
+    Id = 26,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9899777102398553d, y: 0.9784807783228125d), new NpgsqlTypes.NpgsqlPoint(x: 0.8375737646289898d, y: 0.8210214730466356d), new NpgsqlTypes.NpgsqlPoint(x: 0.7912231924744718d, y: 0.25204464971007334d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5820108431094134d, y: 0.7710820357746359d), new NpgsqlTypes.NpgsqlPoint(x: 0.14634407474521505d, y: 0.6319129511572464d), new NpgsqlTypes.NpgsqlPoint(x: 0.39771713895083527d, y: 0.2657135407698359d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.703873852574557d, y: 0.560259732303156d), new NpgsqlTypes.NpgsqlPoint(x: 0.339168015476637d, y: 0.36007746699950827d), new NpgsqlTypes.NpgsqlPoint(x: 0.6670232057303019d, y: 0.62330699375543d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5720428297598101d, y: 0.15037561745513384d), new NpgsqlTypes.NpgsqlPoint(x: 0.15681025872510945d, y: 0.36959692448872594d), new NpgsqlTypes.NpgsqlPoint(x: 0.34455419969580736d, y: 0.3431240180750661d)),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9392311395375701d, y: 0.25687211276665023d), new NpgsqlTypes.NpgsqlPoint(x: 0.7438637770533587d, y: 0.3137825016454122d), new NpgsqlTypes.NpgsqlPoint(x: 0.4638640120154276d, y: 0.11395815448593882d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9610384386827855d, y: 0.6927769068852248d), new NpgsqlTypes.NpgsqlPoint(x: 0.0646095915527114d, y: 0.23303264690128722d), new NpgsqlTypes.NpgsqlPoint(x: 0.36330662758156296d, y: 0.07871298463797782d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8988247339391389d, y: 0.22790509536411319d), new NpgsqlTypes.NpgsqlPoint(x: 0.09391059375345912d, y: 0.9287203127297853d), new NpgsqlTypes.NpgsqlPoint(x: 0.5132594485095793d, y: 0.6002467010739725d)),
+
+},
+},
+            new NpgsqlPolygonpolygonArray2M
+{
+    Id = 29,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6338375856172913d, y: 0.7079985614269589d), new NpgsqlTypes.NpgsqlPoint(x: 0.10880268178425878d, y: 0.6939813367706379d), new NpgsqlTypes.NpgsqlPoint(x: 0.5731516593763606d, y: 0.38489144943372633d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6583587930212327d, y: 0.23212677243783586d), new NpgsqlTypes.NpgsqlPoint(x: 0.9236638388472768d, y: 0.6035331929184975d), new NpgsqlTypes.NpgsqlPoint(x: 0.3999798348447965d, y: 0.8125427726082296d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9150683817977697d, y: 0.4676821210186759d), new NpgsqlTypes.NpgsqlPoint(x: 0.5142324934903877d, y: 0.7771433822131341d), new NpgsqlTypes.NpgsqlPoint(x: 0.05460274903908835d, y: 0.8364736341115486d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4206683522272022d, y: 0.21502547369516967d), new NpgsqlTypes.NpgsqlPoint(x: 0.6344849515029741d, y: 0.5760389843314674d), new NpgsqlTypes.NpgsqlPoint(x: 0.3728697239844535d, y: 0.9529454839172843d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7569161055539867d, y: 0.4742952709371029d), new NpgsqlTypes.NpgsqlPoint(x: 0.4156341312692724d, y: 0.655330821485851d), new NpgsqlTypes.NpgsqlPoint(x: 0.07997624478886134d, y: 0.1118226245252516d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8215821221367271d, y: 0.019168962191049688d), new NpgsqlTypes.NpgsqlPoint(x: 0.7145790486405936d, y: 0.9230283878279041d), new NpgsqlTypes.NpgsqlPoint(x: 0.7745992385061979d, y: 0.11210861652721749d)),
 
 },
     ModelInner = new NpgsqlPolygonpolygonArray2MI
 {
-    Id = 18,
+    Id = 25,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9086437145205122d, y: 0.30968696326525424d), new NpgsqlTypes.NpgsqlPoint(x: 0.9631069032146751d, y: 0.6255773102007502d), new NpgsqlTypes.NpgsqlPoint(x: 0.32487175915421296d, y: 0.7712197046612348d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.63023881994711d, y: 0.400061968702602d), new NpgsqlTypes.NpgsqlPoint(x: 0.5220411883164648d, y: 0.2468277873410586d), new NpgsqlTypes.NpgsqlPoint(x: 0.8022766565576734d, y: 0.8778433960099642d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3249248565063554d, y: 0.8549009099474708d), new NpgsqlTypes.NpgsqlPoint(x: 0.46821501063979787d, y: 0.7028051698863904d), new NpgsqlTypes.NpgsqlPoint(x: 0.9019629062710237d, y: 0.6904065715842134d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.1703801375291173d, y: 0.1891538281984626d), new NpgsqlTypes.NpgsqlPoint(x: 0.20046540506815713d, y: 0.23452107316801252d), new NpgsqlTypes.NpgsqlPoint(x: 0.38667895648477213d, y: 0.6961538143063d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.18257259574675444d, y: 0.8240929142077884d), new NpgsqlTypes.NpgsqlPoint(x: 0.3001916177341506d, y: 0.9905539841288183d), new NpgsqlTypes.NpgsqlPoint(x: 0.8848101019440806d, y: 0.3334354718542295d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.32470098675233106d, y: 0.9470642890860443d), new NpgsqlTypes.NpgsqlPoint(x: 0.00946143236558783d, y: 0.8791722635808217d), new NpgsqlTypes.NpgsqlPoint(x: 0.4009956971356793d, y: 0.25470496203249604d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5182352416186896d, y: 0.5846399253837845d), new NpgsqlTypes.NpgsqlPoint(x: 0.848923285169071d, y: 0.1258695514782664d), new NpgsqlTypes.NpgsqlPoint(x: 0.18342799398236675d, y: 0.17112252539707629d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7859535486599653d, y: 0.605876615796601d), new NpgsqlTypes.NpgsqlPoint(x: 0.6446388095784378d, y: 0.17401241760424135d), new NpgsqlTypes.NpgsqlPoint(x: 0.27075361387257557d, y: 0.9687203073821711d)),
 
+},
+    NullableValue = null,
 },
     NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7266539812163694d, y: 0.7052716689649379d), new NpgsqlTypes.NpgsqlPoint(x: 0.387303682707437d, y: 0.6690676381494635d), new NpgsqlTypes.NpgsqlPoint(x: 0.3526434011421721d, y: 0.5526831707775659d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.14274231605265164d, y: 0.48069879192764275d), new NpgsqlTypes.NpgsqlPoint(x: 0.5495098857918468d, y: 0.46053610127134004d), new NpgsqlTypes.NpgsqlPoint(x: 0.7555143738096569d, y: 0.15173062598550402d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5627963938736408d, y: 0.5743365558346538d), new NpgsqlTypes.NpgsqlPoint(x: 0.3550369900407766d, y: 0.008959732971075662d), new NpgsqlTypes.NpgsqlPoint(x: 0.12697266400842633d, y: 0.43289827127416725d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8893723175239215d, y: 0.9204810844951873d), new NpgsqlTypes.NpgsqlPoint(x: 0.40159367252292955d, y: 0.8836408606366581d), new NpgsqlTypes.NpgsqlPoint(x: 0.16400129572711653d, y: 0.5322069623650746d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3774583635324201d, y: 0.7509615656046779d), new NpgsqlTypes.NpgsqlPoint(x: 0.20014960423907835d, y: 0.8407326606286465d), new NpgsqlTypes.NpgsqlPoint(x: 0.30758326757405907d, y: 0.8535085589897043d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3663810032740984d, y: 0.6353591545961925d), new NpgsqlTypes.NpgsqlPoint(x: 0.1125746051943588d, y: 0.10311375796200539d), new NpgsqlTypes.NpgsqlPoint(x: 0.7726038247589491d, y: 0.4828234942402029d)),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.787616363088125d, y: 0.19799043816925455d), new NpgsqlTypes.NpgsqlPoint(x: 0.7232651050626984d, y: 0.3466458344697825d), new NpgsqlTypes.NpgsqlPoint(x: 0.0752051975389888d, y: 0.9092571952258033d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8176406881278182d, y: 0.43825047797734773d), new NpgsqlTypes.NpgsqlPoint(x: 0.604460899571395d, y: 0.4580798012809477d), new NpgsqlTypes.NpgsqlPoint(x: 0.8733885790504751d, y: 0.7317809906082077d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.31958367524353726d, y: 0.7202693868388397d), new NpgsqlTypes.NpgsqlPoint(x: 0.4734972989785833d, y: 0.718338788672855d), new NpgsqlTypes.NpgsqlPoint(x: 0.5874339096254518d, y: 0.5778247818955712d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.30515687358183363d, y: 0.23683600535311677d), new NpgsqlTypes.NpgsqlPoint(x: 0.18705369938345906d, y: 0.611770967708261d), new NpgsqlTypes.NpgsqlPoint(x: 0.11224235102612012d, y: 0.7074769716467878d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8853242044175545d, y: 0.6276578425198681d), new NpgsqlTypes.NpgsqlPoint(x: 0.33665923004163534d, y: 0.051923648074623796d), new NpgsqlTypes.NpgsqlPoint(x: 0.9436293304282943d, y: 0.15319314663560568d)),
 
 },
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 54,
+    Id = 37,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8472687059014357d, y: 0.6746250241061786d), new NpgsqlTypes.NpgsqlPoint(x: 0.953316790711303d, y: 0.162307324502728d), new NpgsqlTypes.NpgsqlPoint(x: 0.781086766975397d, y: 0.7161811433146618d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.020067329516851196d, y: 0.9471764695443761d), new NpgsqlTypes.NpgsqlPoint(x: 0.681805473086411d, y: 0.8812172468793624d), new NpgsqlTypes.NpgsqlPoint(x: 0.25370660625234365d, y: 0.36174050815050063d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.37545864264171314d, y: 0.9713421851016112d), new NpgsqlTypes.NpgsqlPoint(x: 0.9800059542392294d, y: 0.3560494152453427d), new NpgsqlTypes.NpgsqlPoint(x: 0.1311198889700601d, y: 0.16926332385889498d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5046880971799576d, y: 0.9527702847033344d), new NpgsqlTypes.NpgsqlPoint(x: 0.5357601417964568d, y: 0.9945313199626352d), new NpgsqlTypes.NpgsqlPoint(x: 0.44233763044512187d, y: 0.4470314990331338d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.30340667446259173d, y: 0.45087558555016594d), new NpgsqlTypes.NpgsqlPoint(x: 0.1542521999772618d, y: 0.9577409816322462d), new NpgsqlTypes.NpgsqlPoint(x: 0.9707264332251107d, y: 0.9577424625950152d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.39899359014596536d, y: 0.4241784892837588d), new NpgsqlTypes.NpgsqlPoint(x: 0.37785870881687356d, y: 0.027969291406439223d), new NpgsqlTypes.NpgsqlPoint(x: 0.1936716646543548d, y: 0.4080508181723338d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.08137537121192717d, y: 0.18982219121101573d), new NpgsqlTypes.NpgsqlPoint(x: 0.03426858494992158d, y: 0.8361865946670116d), new NpgsqlTypes.NpgsqlPoint(x: 0.6326022964843452d, y: 0.20572634490573727d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6489549339873953d, y: 0.6394138579588264d), new NpgsqlTypes.NpgsqlPoint(x: 0.19796384835150982d, y: 0.4581625468285334d), new NpgsqlTypes.NpgsqlPoint(x: 0.673836660016369d, y: 0.4753229852696066d)),
 
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.10792055353149188d, y: 0.7626065667383439d), new NpgsqlTypes.NpgsqlPoint(x: 0.7512686352478256d, y: 0.46172284283858656d), new NpgsqlTypes.NpgsqlPoint(x: 0.5977399308628446d, y: 0.37770413071915354d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8871908417076889d, y: 0.03484670534958756d), new NpgsqlTypes.NpgsqlPoint(x: 0.016380014899020745d, y: 0.78351242186481d), new NpgsqlTypes.NpgsqlPoint(x: 0.2331301786935026d, y: 0.22621614627627884d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7696404927589774d, y: 0.316914386237516d), new NpgsqlTypes.NpgsqlPoint(x: 0.31702277571994175d, y: 0.019570134340875178d), new NpgsqlTypes.NpgsqlPoint(x: 0.35303223098007286d, y: 0.6982244142563934d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.48313819423831583d, y: 0.10782410273213439d), new NpgsqlTypes.NpgsqlPoint(x: 0.12591376379783636d, y: 0.34370026345126115d), new NpgsqlTypes.NpgsqlPoint(x: 0.5150126371285316d, y: 0.5274187309731028d)),
+
+},
+},
+            new NpgsqlPolygonpolygonArray2M
+{
+    Id = 46,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.23227013253519746d, y: 0.8940781070930124d), new NpgsqlTypes.NpgsqlPoint(x: 0.11214787285750771d, y: 0.6395430532208589d), new NpgsqlTypes.NpgsqlPoint(x: 0.33195921382438753d, y: 0.728334140791696d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8517581563607348d, y: 0.3936393294531737d), new NpgsqlTypes.NpgsqlPoint(x: 0.8935063148635557d, y: 0.45889282013399635d), new NpgsqlTypes.NpgsqlPoint(x: 0.31758653449219454d, y: 0.4180632991133435d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8884558704503397d, y: 0.6036607810356648d), new NpgsqlTypes.NpgsqlPoint(x: 0.08043795935700127d, y: 0.8081735230023482d), new NpgsqlTypes.NpgsqlPoint(x: 0.26382469982399237d, y: 0.04329518567302204d)),
+
+},
+    ModelInner = new NpgsqlPolygonpolygonArray2MI
+{
+    Id = 26,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3428140194068354d, y: 0.37148465997400015d), new NpgsqlTypes.NpgsqlPoint(x: 0.9379049977380346d, y: 0.6004421106469131d), new NpgsqlTypes.NpgsqlPoint(x: 0.8755510836932607d, y: 0.21550815324671624d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9786145807744171d, y: 0.22539985967031317d), new NpgsqlTypes.NpgsqlPoint(x: 0.724574189978478d, y: 0.3580010906431561d), new NpgsqlTypes.NpgsqlPoint(x: 0.5014742594135163d, y: 0.5913788357315515d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.19269631945797028d, y: 0.1787260812973258d), new NpgsqlTypes.NpgsqlPoint(x: 0.48060774690736363d, y: 0.8247907293654665d), new NpgsqlTypes.NpgsqlPoint(x: 0.15086643991348847d, y: 0.1712844143883403d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5189334092800195d, y: 0.6509783095824113d), new NpgsqlTypes.NpgsqlPoint(x: 0.08080410554404471d, y: 0.8485922726677366d), new NpgsqlTypes.NpgsqlPoint(x: 0.5475549485775024d, y: 0.641607684174871d)),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6817714923971937d, y: 0.5586033773254073d), new NpgsqlTypes.NpgsqlPoint(x: 0.6512027961566331d, y: 0.40577303613744886d), new NpgsqlTypes.NpgsqlPoint(x: 0.707279963201981d, y: 0.34713356103027726d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.44131955817850044d, y: 0.9886530367427732d), new NpgsqlTypes.NpgsqlPoint(x: 0.6447578325808242d, y: 0.8503999123921141d), new NpgsqlTypes.NpgsqlPoint(x: 0.45542215519818874d, y: 0.6584784863963441d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5630734045043762d, y: 0.6102134084487556d), new NpgsqlTypes.NpgsqlPoint(x: 0.6392490033347323d, y: 0.19829302395302928d), new NpgsqlTypes.NpgsqlPoint(x: 0.45399372236219104d, y: 0.28918674224995966d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.35496087975004464d, y: 0.8554319423356478d), new NpgsqlTypes.NpgsqlPoint(x: 0.8663312428726598d, y: 0.5623508823200416d), new NpgsqlTypes.NpgsqlPoint(x: 0.5019797582687746d, y: 0.15616287472156265d)),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5083128171515525d, y: 0.8741935298898431d), new NpgsqlTypes.NpgsqlPoint(x: 0.3886018881366632d, y: 0.006507126688941156d), new NpgsqlTypes.NpgsqlPoint(x: 0.8139025431575864d, y: 0.9499554916818779d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8287401078480693d, y: 0.7182976905843921d), new NpgsqlTypes.NpgsqlPoint(x: 0.12007752195907306d, y: 0.22306571908712802d), new NpgsqlTypes.NpgsqlPoint(x: 0.970477822424169d, y: 0.416678097231339d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.014909295272597212d, y: 0.14897794199473158d), new NpgsqlTypes.NpgsqlPoint(x: 0.22603164950928512d, y: 0.9972649651051622d), new NpgsqlTypes.NpgsqlPoint(x: 0.23330532802916337d, y: 0.058170370488694d)),
+
+},
+},
+            new NpgsqlPolygonpolygonArray2M
+{
+    Id = 55,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.10455967976035219d, y: 0.6802516664858693d), new NpgsqlTypes.NpgsqlPoint(x: 0.227318862907829d, y: 0.11848483996563353d), new NpgsqlTypes.NpgsqlPoint(x: 0.6713378291109118d, y: 0.1303414011524443d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4768014084130857d, y: 0.8991771032150235d), new NpgsqlTypes.NpgsqlPoint(x: 0.4804229105370157d, y: 0.9985086605960316d), new NpgsqlTypes.NpgsqlPoint(x: 0.6230155027018831d, y: 0.7518203455978278d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.20995019776956925d, y: 0.380700935855948d), new NpgsqlTypes.NpgsqlPoint(x: 0.875872270742685d, y: 0.564923392256408d), new NpgsqlTypes.NpgsqlPoint(x: 0.5903552495698471d, y: 0.9060847370127569d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9396735984295602d, y: 0.9749784376508778d), new NpgsqlTypes.NpgsqlPoint(x: 0.2710761188044859d, y: 0.5921943043953762d), new NpgsqlTypes.NpgsqlPoint(x: 0.5707083814700403d, y: 0.45993508010522155d)),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.08530370418941158d, y: 0.5079202976007363d), new NpgsqlTypes.NpgsqlPoint(x: 0.9245930656635174d, y: 0.4175336778109686d), new NpgsqlTypes.NpgsqlPoint(x: 0.4866733186338895d, y: 0.353567584970667d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8932821857648413d, y: 0.8995246456100362d), new NpgsqlTypes.NpgsqlPoint(x: 0.8987064627091186d, y: 0.12132922552417702d), new NpgsqlTypes.NpgsqlPoint(x: 0.02119910383170387d, y: 0.9217883081128828d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6241294783805433d, y: 0.39900021255132456d), new NpgsqlTypes.NpgsqlPoint(x: 0.18430457501461384d, y: 0.6149833737764553d), new NpgsqlTypes.NpgsqlPoint(x: 0.677749047373324d, y: 0.5774991750352133d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.37831810436170554d, y: 0.7264237200008268d), new NpgsqlTypes.NpgsqlPoint(x: 0.9837990917136273d, y: 0.7252398464723955d), new NpgsqlTypes.NpgsqlPoint(x: 0.05376564526555261d, y: 0.44450615508497926d)),
+
+},
 },
             new NpgsqlPolygonpolygonArray2M
 {
@@ -304,24 +404,24 @@ new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.08137537121192717
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.13525599153787604d, y: 0.12663656293648273d), new NpgsqlTypes.NpgsqlPoint(x: 0.6608367745936866d, y: 0.9234472413919272d), new NpgsqlTypes.NpgsqlPoint(x: 0.9211722239346352d, y: 0.15872183284258012d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.11063986824130978d, y: 0.7555344155769149d), new NpgsqlTypes.NpgsqlPoint(x: 0.07912125850097107d, y: 0.5645549791425251d), new NpgsqlTypes.NpgsqlPoint(x: 0.5639293182427081d, y: 0.07651881183720133d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5254820087623776d, y: 0.37651196437739365d), new NpgsqlTypes.NpgsqlPoint(x: 0.9779205439818281d, y: 0.37056367332893825d), new NpgsqlTypes.NpgsqlPoint(x: 0.7450011845823928d, y: 0.9274833557579615d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4576827388328195d, y: 0.08218701834372621d), new NpgsqlTypes.NpgsqlPoint(x: 0.7070792728876472d, y: 0.9867014199802003d), new NpgsqlTypes.NpgsqlPoint(x: 0.7455248640001685d, y: 0.4263825670082303d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7154489775451626d, y: 0.6219463060648847d), new NpgsqlTypes.NpgsqlPoint(x: 0.23407397415687337d, y: 0.5890183757853015d), new NpgsqlTypes.NpgsqlPoint(x: 0.5694138532507639d, y: 0.37942166955177015d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6474291201338073d, y: 0.3882446339691752d), new NpgsqlTypes.NpgsqlPoint(x: 0.2762258205453584d, y: 0.41901417277901953d), new NpgsqlTypes.NpgsqlPoint(x: 0.07717656167452158d, y: 0.6959615047565986d)),
 
 },
     ModelInner = new NpgsqlPolygonpolygonArray2MI
 {
-    Id = 25,
+    Id = 34,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3422057290384751d, y: 0.9835141348663266d), new NpgsqlTypes.NpgsqlPoint(x: 0.32072465942000294d, y: 0.2777499277706196d), new NpgsqlTypes.NpgsqlPoint(x: 0.067250791895478d, y: 0.9443808550037316d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8213548277826924d, y: 0.4100617618632071d), new NpgsqlTypes.NpgsqlPoint(x: 0.5784465123314568d, y: 0.408348546834011d), new NpgsqlTypes.NpgsqlPoint(x: 0.6333470909672821d, y: 0.16224329601923337d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.09633560083119819d, y: 0.43176731165408244d), new NpgsqlTypes.NpgsqlPoint(x: 0.2668585897296256d, y: 0.5578124098124236d), new NpgsqlTypes.NpgsqlPoint(x: 0.4960637628689333d, y: 0.19227978041762694d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.41490699160577516d, y: 0.12426930489321175d), new NpgsqlTypes.NpgsqlPoint(x: 0.3161162237748042d, y: 0.5879665581689718d), new NpgsqlTypes.NpgsqlPoint(x: 0.11393943839017229d, y: 0.995489158386408d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.25963874887577587d, y: 0.4133639817431076d), new NpgsqlTypes.NpgsqlPoint(x: 0.7986788936070487d, y: 0.7872505097281417d), new NpgsqlTypes.NpgsqlPoint(x: 0.7481946837976691d, y: 0.4151061466662753d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.020084198805686126d, y: 0.2862629584455705d), new NpgsqlTypes.NpgsqlPoint(x: 0.0654619938549178d, y: 0.4813323110981541d), new NpgsqlTypes.NpgsqlPoint(x: 0.6484151428551241d, y: 0.934970668152816d)),
 
 },
     NullableValue = null,
@@ -329,88 +429,25 @@ new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.25963874887577587
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.28269377559485165d, y: 0.040937308390979865d), new NpgsqlTypes.NpgsqlPoint(x: 0.34666168658971763d, y: 0.13098390084273925d), new NpgsqlTypes.NpgsqlPoint(x: 0.12984321061073867d, y: 0.6007916822345728d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.037074810128590596d, y: 0.8057880187114406d), new NpgsqlTypes.NpgsqlPoint(x: 0.8533590183771187d, y: 0.3231514617416432d), new NpgsqlTypes.NpgsqlPoint(x: 0.13378740954616686d, y: 0.669542695564035d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.720929946844776d, y: 0.8850913664335196d), new NpgsqlTypes.NpgsqlPoint(x: 0.002180866034081297d, y: 0.18666345021204467d), new NpgsqlTypes.NpgsqlPoint(x: 0.7060538780282847d, y: 0.6011933771838077d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9213896970635269d, y: 0.08463590777104002d), new NpgsqlTypes.NpgsqlPoint(x: 0.4671420950516745d, y: 0.16172451690017786d), new NpgsqlTypes.NpgsqlPoint(x: 0.8007395392266946d, y: 0.3046518942487373d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4327797188081909d, y: 0.8279133434004445d), new NpgsqlTypes.NpgsqlPoint(x: 0.7950320628503911d, y: 0.601534649590049d), new NpgsqlTypes.NpgsqlPoint(x: 0.2489931513763748d, y: 0.6629548574868149d)),
-
-},
-},
-            new NpgsqlPolygonpolygonArray2M
-{
-    Id = 66,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.08084693506854945d, y: 0.18159702181580195d), new NpgsqlTypes.NpgsqlPoint(x: 0.4478047132613169d, y: 0.17821232067094572d), new NpgsqlTypes.NpgsqlPoint(x: 0.1714622501020877d, y: 0.9567684331211507d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.2551464450911898d, y: 0.17219285181610045d), new NpgsqlTypes.NpgsqlPoint(x: 0.7767514572544197d, y: 0.5203262556057211d), new NpgsqlTypes.NpgsqlPoint(x: 0.5773942915155478d, y: 0.7618140196040034d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3460309435525416d, y: 0.40004219837629484d), new NpgsqlTypes.NpgsqlPoint(x: 0.35469006609539266d, y: 0.1524627874086627d), new NpgsqlTypes.NpgsqlPoint(x: 0.43396564748986255d, y: 0.4546698006505895d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6574350206320513d, y: 0.5580261777855106d), new NpgsqlTypes.NpgsqlPoint(x: 0.08109971285017015d, y: 0.11348245003488888d), new NpgsqlTypes.NpgsqlPoint(x: 0.8269649057347673d, y: 0.027245618841754693d)),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.17667007025956272d, y: 0.06011257670853887d), new NpgsqlTypes.NpgsqlPoint(x: 0.6715323051708374d, y: 0.46532659136379617d), new NpgsqlTypes.NpgsqlPoint(x: 0.8553131108209232d, y: 0.35815164790888687d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.11416386193782069d, y: 0.332754754796988d), new NpgsqlTypes.NpgsqlPoint(x: 0.6550284999792588d, y: 0.22077200892951432d), new NpgsqlTypes.NpgsqlPoint(x: 0.8066009977142841d, y: 0.5409787392978953d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5207999823821616d, y: 0.6513284762065061d), new NpgsqlTypes.NpgsqlPoint(x: 0.8894453253083118d, y: 0.5742610503359291d), new NpgsqlTypes.NpgsqlPoint(x: 0.5090672978261298d, y: 0.5145930459931941d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.035876553722271276d, y: 0.27641533682637853d), new NpgsqlTypes.NpgsqlPoint(x: 0.3950785363744913d, y: 0.12593663575677128d), new NpgsqlTypes.NpgsqlPoint(x: 0.11699559945794724d, y: 0.27163342939859103d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5299359828611127d, y: 0.09466595156156055d), new NpgsqlTypes.NpgsqlPoint(x: 0.4290078007725241d, y: 0.4692509339623685d), new NpgsqlTypes.NpgsqlPoint(x: 0.36763159834916137d, y: 0.9589222434047233d)),
 
 },
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 72,
+    Id = 70,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4725454374789948d, y: 0.1680620516106356d), new NpgsqlTypes.NpgsqlPoint(x: 0.21510265748545498d, y: 0.9381446309421702d), new NpgsqlTypes.NpgsqlPoint(x: 0.07974647841888516d, y: 0.7661900215879991d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.005045259695991677d, y: 0.288341319302827d), new NpgsqlTypes.NpgsqlPoint(x: 0.04037322323283532d, y: 0.46382076974676667d), new NpgsqlTypes.NpgsqlPoint(x: 0.994879615752008d, y: 0.7825828606704663d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5608526875044686d, y: 0.7139510169534174d), new NpgsqlTypes.NpgsqlPoint(x: 0.8243259320430968d, y: 0.22256759814046312d), new NpgsqlTypes.NpgsqlPoint(x: 0.1251887979179731d, y: 0.8130720549233d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4050265541116861d, y: 0.43798678891432385d), new NpgsqlTypes.NpgsqlPoint(x: 0.40910373852911386d, y: 0.8448117051784502d), new NpgsqlTypes.NpgsqlPoint(x: 0.6946844960772444d, y: 0.8675895773353245d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8435370243744954d, y: 0.7427217552481632d), new NpgsqlTypes.NpgsqlPoint(x: 0.6380326869244631d, y: 0.3778086860985729d), new NpgsqlTypes.NpgsqlPoint(x: 0.018507906460457857d, y: 0.4557697608389387d)),
-
-},
-    ModelInner = new NpgsqlPolygonpolygonArray2MI
-{
-    Id = 28,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6361218192795056d, y: 0.6630271060013178d), new NpgsqlTypes.NpgsqlPoint(x: 0.5627732596569142d, y: 0.1464011079267864d), new NpgsqlTypes.NpgsqlPoint(x: 0.22569453442449172d, y: 0.04148818653832209d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7396520100410601d, y: 0.327969992511697d), new NpgsqlTypes.NpgsqlPoint(x: 0.9294668079621912d, y: 0.6695775812325325d), new NpgsqlTypes.NpgsqlPoint(x: 0.287715228594685d, y: 0.1286746980894763d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6749823284603492d, y: 0.23478876459433728d), new NpgsqlTypes.NpgsqlPoint(x: 0.9050332731509276d, y: 0.5458458993045753d), new NpgsqlTypes.NpgsqlPoint(x: 0.6183125120642775d, y: 0.22026079580369107d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5834143501258051d, y: 0.4177515189850164d), new NpgsqlTypes.NpgsqlPoint(x: 0.03836635614719419d, y: 0.7766762109994909d), new NpgsqlTypes.NpgsqlPoint(x: 0.9327964220200221d, y: 0.749086026572621d)),
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new NpgsqlPolygonpolygonArray2M
-{
-    Id = 81,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.11931840557808215d, y: 0.9267895485961434d), new NpgsqlTypes.NpgsqlPoint(x: 0.3802050335639523d, y: 0.2267327053891961d), new NpgsqlTypes.NpgsqlPoint(x: 0.22133262309914736d, y: 0.7452610023829616d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.20358733322546196d, y: 0.826279437783519d), new NpgsqlTypes.NpgsqlPoint(x: 0.06371130192213137d, y: 0.6993228955132651d), new NpgsqlTypes.NpgsqlPoint(x: 0.9207818432194753d, y: 0.16807447666434494d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5402238217006566d, y: 0.5199281672301648d), new NpgsqlTypes.NpgsqlPoint(x: 0.00733263784126692d, y: 0.06256229504577071d), new NpgsqlTypes.NpgsqlPoint(x: 0.801455050420348d, y: 0.10731829530644743d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.37729797459741576d, y: 0.44389057683381017d), new NpgsqlTypes.NpgsqlPoint(x: 0.29547491900332046d, y: 0.7342407235341881d), new NpgsqlTypes.NpgsqlPoint(x: 0.9260167942459743d, y: 0.27893761935015826d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.20520366048843997d, y: 0.5583975236293504d), new NpgsqlTypes.NpgsqlPoint(x: 0.8573863247429566d, y: 0.5063714886334227d), new NpgsqlTypes.NpgsqlPoint(x: 0.930170005554524d, y: 0.30214659121204335d)),
 
 },
     ModelInner = null,
@@ -418,184 +455,40 @@ new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.37729797459741576
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 83,
+    Id = 73,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6832069787641406d, y: 0.9603551056883141d), new NpgsqlTypes.NpgsqlPoint(x: 0.6486759798855992d, y: 0.08510955722005897d), new NpgsqlTypes.NpgsqlPoint(x: 0.35333124774644264d, y: 0.34957280322832174d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.03960932594699573d, y: 0.46133189206880654d), new NpgsqlTypes.NpgsqlPoint(x: 0.6842336628820809d, y: 0.6896808850765965d), new NpgsqlTypes.NpgsqlPoint(x: 0.12008750431977666d, y: 0.19523190037432792d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8380982350086992d, y: 0.16512662933472622d), new NpgsqlTypes.NpgsqlPoint(x: 0.4907706549432078d, y: 0.659510804631104d), new NpgsqlTypes.NpgsqlPoint(x: 0.8762208683070142d, y: 0.11758086818358571d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4288647483350366d, y: 0.0988816886005478d), new NpgsqlTypes.NpgsqlPoint(x: 0.5274067414180625d, y: 0.07513290580446119d), new NpgsqlTypes.NpgsqlPoint(x: 0.9912382099719007d, y: 0.5900134085144595d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.37802890457646565d, y: 0.4562922659716686d), new NpgsqlTypes.NpgsqlPoint(x: 0.9191237733497725d, y: 0.6362216284180082d), new NpgsqlTypes.NpgsqlPoint(x: 0.7474536459976099d, y: 0.6122333548994363d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3465765466929017d, y: 0.31672937201136686d), new NpgsqlTypes.NpgsqlPoint(x: 0.6457024284650048d, y: 0.7332271085825188d), new NpgsqlTypes.NpgsqlPoint(x: 0.9298059211241098d, y: 0.19095824413292073d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.33193777933159063d, y: 0.6348123485456212d), new NpgsqlTypes.NpgsqlPoint(x: 0.6191563174452975d, y: 0.7188921976290061d), new NpgsqlTypes.NpgsqlPoint(x: 0.74241031009647d, y: 0.27910707582312944d)),
-
-},
-    ModelInner = new NpgsqlPolygonpolygonArray2MI
-{
-    Id = 29,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8272393071971447d, y: 0.7682740290735417d), new NpgsqlTypes.NpgsqlPoint(x: 0.6522083088487403d, y: 0.4670239294731027d), new NpgsqlTypes.NpgsqlPoint(x: 0.18952265617674147d, y: 0.2673218608996941d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4265389947969448d, y: 0.7790195907560312d), new NpgsqlTypes.NpgsqlPoint(x: 0.715275513072284d, y: 0.809829569146258d), new NpgsqlTypes.NpgsqlPoint(x: 0.09585791297745572d, y: 0.21213230796714377d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7645177290829728d, y: 0.3799084803380066d), new NpgsqlTypes.NpgsqlPoint(x: 0.9763649538868361d, y: 0.19952295941728804d), new NpgsqlTypes.NpgsqlPoint(x: 0.5103095966574d, y: 0.7678873009831465d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8557546104839212d, y: 0.96763146753782d), new NpgsqlTypes.NpgsqlPoint(x: 0.5861395707074973d, y: 0.11358755148594502d), new NpgsqlTypes.NpgsqlPoint(x: 0.8775416424674515d, y: 0.6683070846815469d)),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.673503221527761d, y: 0.3599592209550071d), new NpgsqlTypes.NpgsqlPoint(x: 0.9207355184539688d, y: 0.8678719873263258d), new NpgsqlTypes.NpgsqlPoint(x: 0.32142850767469033d, y: 0.4483059763802695d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7746660090399898d, y: 0.22250852432446533d), new NpgsqlTypes.NpgsqlPoint(x: 0.16350850382535032d, y: 0.692562692099306d), new NpgsqlTypes.NpgsqlPoint(x: 0.1370003050618962d, y: 0.31498326675935917d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5609009703781384d, y: 0.22616491531209504d), new NpgsqlTypes.NpgsqlPoint(x: 0.41165899706930764d, y: 0.5391827978067059d), new NpgsqlTypes.NpgsqlPoint(x: 0.2127125282475063d, y: 0.5970108903479501d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7316418786878842d, y: 0.33751085749737d), new NpgsqlTypes.NpgsqlPoint(x: 0.018214183306374476d, y: 0.3403003247529439d), new NpgsqlTypes.NpgsqlPoint(x: 0.24494818608786717d, y: 0.17589542707316186d)),
-
-},
-},
-    NullableValue = null,
-},
-            new NpgsqlPolygonpolygonArray2M
-{
-    Id = 87,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.2911891285447904d, y: 0.9134232462549321d), new NpgsqlTypes.NpgsqlPoint(x: 1.854517958477242E-05d, y: 0.1890943613475704d), new NpgsqlTypes.NpgsqlPoint(x: 0.8929542923445672d, y: 0.22957166272004603d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7902260232500925d, y: 0.877621918017545d), new NpgsqlTypes.NpgsqlPoint(x: 0.634195139214565d, y: 0.3497781121673462d), new NpgsqlTypes.NpgsqlPoint(x: 0.453755508943843d, y: 0.02866849741583799d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.18588640581731475d, y: 0.017807084487661107d), new NpgsqlTypes.NpgsqlPoint(x: 0.5518126022454299d, y: 0.3201684645138497d), new NpgsqlTypes.NpgsqlPoint(x: 0.40152631779660686d, y: 0.2930674873479403d)),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlPolygonpolygonArray2M
-{
-    Id = 96,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.31100257472627235d, y: 0.7197373653414724d), new NpgsqlTypes.NpgsqlPoint(x: 0.42423319432375395d, y: 0.9581208960399533d), new NpgsqlTypes.NpgsqlPoint(x: 0.9989612026265847d, y: 0.8915218560664355d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7506145859477513d, y: 0.6540761834317728d), new NpgsqlTypes.NpgsqlPoint(x: 0.6815133802324194d, y: 0.6119181399986428d), new NpgsqlTypes.NpgsqlPoint(x: 0.10544443180566365d, y: 0.5694240216890598d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.2230865342187276d, y: 0.9176961823439252d), new NpgsqlTypes.NpgsqlPoint(x: 0.6720451632104941d, y: 0.11307418032074945d), new NpgsqlTypes.NpgsqlPoint(x: 0.5782631485822938d, y: 0.3386882706367479d)),
-
-},
-    ModelInner = new NpgsqlPolygonpolygonArray2MI
-{
-    Id = 37,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.22277235608278245d, y: 0.9777851682851255d), new NpgsqlTypes.NpgsqlPoint(x: 0.2779907012284011d, y: 0.14712799421722944d), new NpgsqlTypes.NpgsqlPoint(x: 0.7781115413585149d, y: 0.4889640852644873d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9593377308333395d, y: 0.3236971183866685d), new NpgsqlTypes.NpgsqlPoint(x: 0.8544189097002014d, y: 0.3131863498657468d), new NpgsqlTypes.NpgsqlPoint(x: 0.389845618979594d, y: 0.8300327506382504d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7888293114816247d, y: 0.3519939605177308d), new NpgsqlTypes.NpgsqlPoint(x: 0.5420368810531051d, y: 0.7403360280246571d), new NpgsqlTypes.NpgsqlPoint(x: 0.9653053126313299d, y: 0.8680838157157862d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.1922039516471461d, y: 0.7315143403109312d), new NpgsqlTypes.NpgsqlPoint(x: 0.7925982413135616d, y: 0.7783302372287438d), new NpgsqlTypes.NpgsqlPoint(x: 0.16132245004721768d, y: 0.08708953697522237d)),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.19012990547846664d, y: 0.5384561448566946d), new NpgsqlTypes.NpgsqlPoint(x: 0.8556417063339877d, y: 0.6116862415351624d), new NpgsqlTypes.NpgsqlPoint(x: 0.8069695192449d, y: 0.7130480128912458d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8937429924350134d, y: 0.21690049787028054d), new NpgsqlTypes.NpgsqlPoint(x: 0.7693601757071074d, y: 0.04690134827560555d), new NpgsqlTypes.NpgsqlPoint(x: 0.10736956514618357d, y: 0.7725209099916047d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7252029235351384d, y: 0.35648757762737504d), new NpgsqlTypes.NpgsqlPoint(x: 0.5549413264664372d, y: 0.8592271390549064d), new NpgsqlTypes.NpgsqlPoint(x: 0.9118058062662183d, y: 0.06581202825182886d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8012514575778866d, y: 0.24096005435147272d), new NpgsqlTypes.NpgsqlPoint(x: 0.9846876384961523d, y: 0.9638992932833068d), new NpgsqlTypes.NpgsqlPoint(x: 0.958554743110867d, y: 0.7764929462005858d)),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7240002225090849d, y: 0.019627507443510273d), new NpgsqlTypes.NpgsqlPoint(x: 0.7626734894039757d, y: 0.05122817531110546d), new NpgsqlTypes.NpgsqlPoint(x: 0.01076179662459098d, y: 0.43132237421879493d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.1035642948127744d, y: 0.7741345289165643d), new NpgsqlTypes.NpgsqlPoint(x: 0.8309522373637288d, y: 0.08082882260771496d), new NpgsqlTypes.NpgsqlPoint(x: 0.3210879709155662d, y: 0.5601466238025403d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.914632690270854d, y: 0.6489833764051439d), new NpgsqlTypes.NpgsqlPoint(x: 0.08972803358590786d, y: 0.768627342829297d), new NpgsqlTypes.NpgsqlPoint(x: 0.23510785142993784d, y: 0.8698528655739538d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4648455064060909d, y: 0.5457715010674634d), new NpgsqlTypes.NpgsqlPoint(x: 0.5765128913074563d, y: 0.38848395104019884d), new NpgsqlTypes.NpgsqlPoint(x: 0.10905859806132834d, y: 0.6222444601224294d)),
-
-},
-},
-            new NpgsqlPolygonpolygonArray2M
-{
-    Id = 98,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8815885408208305d, y: 0.8653909316429106d), new NpgsqlTypes.NpgsqlPoint(x: 0.8304004349856171d, y: 0.31628410543222585d), new NpgsqlTypes.NpgsqlPoint(x: 0.22099819875003612d, y: 0.39452640840624587d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5492727473416515d, y: 0.16345105759310719d), new NpgsqlTypes.NpgsqlPoint(x: 0.021625140241020135d, y: 0.8979583742729985d), new NpgsqlTypes.NpgsqlPoint(x: 0.11939424048473324d, y: 0.5065373415428776d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.959003225844147d, y: 0.5407061875306386d), new NpgsqlTypes.NpgsqlPoint(x: 0.3318898599750858d, y: 0.2960651144979993d), new NpgsqlTypes.NpgsqlPoint(x: 0.24948278784116662d, y: 0.5286077443942983d)),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7318404331601247d, y: 0.24452336602299884d), new NpgsqlTypes.NpgsqlPoint(x: 0.0002898930430532687d, y: 0.3889480348606327d), new NpgsqlTypes.NpgsqlPoint(x: 0.8305408103944136d, y: 0.12037611349967392d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.168137717472308d, y: 0.8084171671847591d), new NpgsqlTypes.NpgsqlPoint(x: 0.357834851209455d, y: 0.4746042999279457d), new NpgsqlTypes.NpgsqlPoint(x: 0.5893338738492804d, y: 0.9571511597643193d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6445929471167746d, y: 0.4457648819642148d), new NpgsqlTypes.NpgsqlPoint(x: 0.8677247660928489d, y: 0.6694253245127345d), new NpgsqlTypes.NpgsqlPoint(x: 0.849540413109352d, y: 0.6016936521186431d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6131535638907823d, y: 0.9233974985735681d), new NpgsqlTypes.NpgsqlPoint(x: 0.6218746158400529d, y: 0.35796126946667073d), new NpgsqlTypes.NpgsqlPoint(x: 0.5804695777036506d, y: 0.6611749728401897d)),
-
-},
-},
-            new NpgsqlPolygonpolygonArray2M
-{
-    Id = 100,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4527077346673122d, y: 0.001610577659593715d), new NpgsqlTypes.NpgsqlPoint(x: 0.4274468070116617d, y: 0.5611789417452324d), new NpgsqlTypes.NpgsqlPoint(x: 0.46650945938715915d, y: 0.6026493759583531d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.062334843482430013d, y: 0.6773733140934143d), new NpgsqlTypes.NpgsqlPoint(x: 0.3687567302620065d, y: 0.31275728658217283d), new NpgsqlTypes.NpgsqlPoint(x: 0.42946782197690714d, y: 0.3100363496364309d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9739305355467904d, y: 0.5328293893067136d), new NpgsqlTypes.NpgsqlPoint(x: 0.15684154975821663d, y: 0.5776363539072208d), new NpgsqlTypes.NpgsqlPoint(x: 0.9817888639638834d, y: 0.5972001026303583d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.44271845162578904d, y: 0.7571325973105036d), new NpgsqlTypes.NpgsqlPoint(x: 0.3491690364895248d, y: 0.3931047312354057d), new NpgsqlTypes.NpgsqlPoint(x: 0.6496428323832317d, y: 0.40660490736565924d)),
 
 },
     ModelInner = new NpgsqlPolygonpolygonArray2MI
 {
     Id = 40,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.06821250339649809d, y: 0.28579905427835994d), new NpgsqlTypes.NpgsqlPoint(x: 0.5126286070322932d, y: 0.9492591289001066d), new NpgsqlTypes.NpgsqlPoint(x: 0.21790533484070174d, y: 0.3876942451070189d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.14645763251979282d, y: 0.5523419585952511d), new NpgsqlTypes.NpgsqlPoint(x: 0.538759856666845d, y: 0.17270567961969574d), new NpgsqlTypes.NpgsqlPoint(x: 0.5294543853315493d, y: 0.16835662232773796d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9280093443566128d, y: 0.9597541813854689d), new NpgsqlTypes.NpgsqlPoint(x: 0.5378808384744801d, y: 0.232730402242595d), new NpgsqlTypes.NpgsqlPoint(x: 0.716344606741993d, y: 0.5136759182720765d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.22358379492257852d, y: 0.7001377954527207d), new NpgsqlTypes.NpgsqlPoint(x: 0.5903519946021035d, y: 0.6912006137488854d), new NpgsqlTypes.NpgsqlPoint(x: 0.7403249681132299d, y: 0.5216832438623898d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8358351237337469d, y: 0.5587536108580881d), new NpgsqlTypes.NpgsqlPoint(x: 0.4331755956954354d, y: 0.6241633185014309d), new NpgsqlTypes.NpgsqlPoint(x: 0.5810735181146345d, y: 0.5363517949205414d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.17632527419610977d, y: 0.6801789247447227d), new NpgsqlTypes.NpgsqlPoint(x: 0.7529142379085991d, y: 0.9359845216594572d), new NpgsqlTypes.NpgsqlPoint(x: 0.3224933758628318d, y: 0.9872545919164629d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.17550412758226253d, y: 0.7256984045448702d), new NpgsqlTypes.NpgsqlPoint(x: 0.8289983022199752d, y: 0.07602719690959936d), new NpgsqlTypes.NpgsqlPoint(x: 0.06048675062319475d, y: 0.3003868734696882d)),
 
 },
     NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4760615921965633d, y: 0.8787973087443953d), new NpgsqlTypes.NpgsqlPoint(x: 0.5490151515823497d, y: 0.23426523394529608d), new NpgsqlTypes.NpgsqlPoint(x: 0.5041348914575283d, y: 0.579172236122656d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.2727073468467014d, y: 0.45418683479358846d), new NpgsqlTypes.NpgsqlPoint(x: 0.15648054101062658d, y: 0.8104559668317265d), new NpgsqlTypes.NpgsqlPoint(x: 0.972901407915036d, y: 0.3367045358158409d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.2817829460030996d, y: 0.3502400458027919d), new NpgsqlTypes.NpgsqlPoint(x: 0.050493120069614594d, y: 0.7456595274399347d), new NpgsqlTypes.NpgsqlPoint(x: 0.9444988164458745d, y: 0.11852669810017835d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3443311419603252d, y: 0.5675148652143925d), new NpgsqlTypes.NpgsqlPoint(x: 0.8379630623913873d, y: 0.3486620572848499d), new NpgsqlTypes.NpgsqlPoint(x: 0.708565524196002d, y: 0.8650417875165944d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.055756168579267795d, y: 0.9192553405558437d), new NpgsqlTypes.NpgsqlPoint(x: 0.3589303909954368d, y: 0.7923554593891302d), new NpgsqlTypes.NpgsqlPoint(x: 0.17898440880288202d, y: 0.772926113127855d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3857824175187494d, y: 0.22257162404315822d), new NpgsqlTypes.NpgsqlPoint(x: 0.9902512305588145d, y: 0.9954280450443608d), new NpgsqlTypes.NpgsqlPoint(x: 0.8242504308226271d, y: 0.6610618287047955d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5932260052033141d, y: 0.5458925928335152d), new NpgsqlTypes.NpgsqlPoint(x: 0.8700643930067657d, y: 0.3758779352359194d), new NpgsqlTypes.NpgsqlPoint(x: 0.36100168805249555d, y: 0.5106611497665189d)),
 
 },
 },
@@ -603,72 +496,292 @@ new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3857824175187494d
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 107,
+    Id = 79,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.06888859883795395d, y: 0.722194912870798d), new NpgsqlTypes.NpgsqlPoint(x: 0.894776702991279d, y: 0.6063563096909753d), new NpgsqlTypes.NpgsqlPoint(x: 0.6717537397435868d, y: 0.5034838293174351d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8793944858070715d, y: 0.16292507030335823d), new NpgsqlTypes.NpgsqlPoint(x: 0.7998129274030206d, y: 0.41048907474966834d), new NpgsqlTypes.NpgsqlPoint(x: 0.441706753965015d, y: 0.48660560337929104d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5857234848757062d, y: 0.44415721984029344d), new NpgsqlTypes.NpgsqlPoint(x: 0.8505639107073235d, y: 0.15867790731635412d), new NpgsqlTypes.NpgsqlPoint(x: 0.206613501992993d, y: 0.6769217674356706d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5710806384381114d, y: 0.8013261371762948d), new NpgsqlTypes.NpgsqlPoint(x: 0.19763169862438645d, y: 0.2515709971612654d), new NpgsqlTypes.NpgsqlPoint(x: 0.3728892896781819d, y: 0.3431489307327559d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.14406513460424575d, y: 0.01643917727417543d), new NpgsqlTypes.NpgsqlPoint(x: 0.4062272315371567d, y: 0.5760881150203082d), new NpgsqlTypes.NpgsqlPoint(x: 0.44778644338258955d, y: 0.44346326471476805d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6310835005820394d, y: 0.571773044927825d), new NpgsqlTypes.NpgsqlPoint(x: 0.5981864601983071d, y: 0.809841189747919d), new NpgsqlTypes.NpgsqlPoint(x: 0.6964235137563844d, y: 0.9282139434991913d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7916847474909275d, y: 0.7751256962777471d), new NpgsqlTypes.NpgsqlPoint(x: 0.029360784851176547d, y: 0.4326831837989359d), new NpgsqlTypes.NpgsqlPoint(x: 0.8565643983462267d, y: 0.054143098023354264d)),
 
 },
     ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9481446778622004d, y: 0.28525803822870155d), new NpgsqlTypes.NpgsqlPoint(x: 0.06406237543952675d, y: 0.11302673517571649d), new NpgsqlTypes.NpgsqlPoint(x: 0.8205587260094432d, y: 0.5646940687614326d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3957498665477144d, y: 0.7041910522379223d), new NpgsqlTypes.NpgsqlPoint(x: 0.5965580836081482d, y: 0.4623284642929114d), new NpgsqlTypes.NpgsqlPoint(x: 0.5571962742691392d, y: 0.7550688833591368d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7745299604608815d, y: 0.8529138432680985d), new NpgsqlTypes.NpgsqlPoint(x: 0.879373547529056d, y: 0.40871907922626016d), new NpgsqlTypes.NpgsqlPoint(x: 0.9687531962785777d, y: 0.9651155356802426d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.63944603434227d, y: 0.5393757119761958d), new NpgsqlTypes.NpgsqlPoint(x: 0.0630466280954608d, y: 0.19092451197864801d), new NpgsqlTypes.NpgsqlPoint(x: 0.09798809609898484d, y: 0.24472352147657006d)),
-
-},
+    NullableValue = null,
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 116,
+    Id = 86,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9206232927432633d, y: 0.4446052351973775d), new NpgsqlTypes.NpgsqlPoint(x: 0.6157744549181886d, y: 0.17097734646763918d), new NpgsqlTypes.NpgsqlPoint(x: 0.5302939485266515d, y: 0.14178345387363944d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8398887273131972d, y: 0.07075221922100372d), new NpgsqlTypes.NpgsqlPoint(x: 0.6972118759045789d, y: 0.06070054145386994d), new NpgsqlTypes.NpgsqlPoint(x: 0.7111547564929054d, y: 0.02485252980764563d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9829261510467246d, y: 0.45954192513865d), new NpgsqlTypes.NpgsqlPoint(x: 0.9208607412013798d, y: 0.44539066447461784d), new NpgsqlTypes.NpgsqlPoint(x: 0.35278796507303967d, y: 0.29533104902314455d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.45083146842155764d, y: 0.031799258617937864d), new NpgsqlTypes.NpgsqlPoint(x: 0.4277731832753674d, y: 0.22129661544731394d), new NpgsqlTypes.NpgsqlPoint(x: 0.5973874545109915d, y: 0.27896681658621936d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6112827021474343d, y: 0.3381036563113804d), new NpgsqlTypes.NpgsqlPoint(x: 0.06363536620992305d, y: 0.7731301542389688d), new NpgsqlTypes.NpgsqlPoint(x: 0.6100460235697927d, y: 0.3716771220169993d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.2841065733500937d, y: 0.16497058041822166d), new NpgsqlTypes.NpgsqlPoint(x: 0.9861393258321982d, y: 0.5347218986552302d), new NpgsqlTypes.NpgsqlPoint(x: 0.6366727817512174d, y: 0.18632930106881684d)),
 
 },
     ModelInner = new NpgsqlPolygonpolygonArray2MI
 {
-    Id = 46,
+    Id = 49,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.421092502755293d, y: 0.5591333915300818d), new NpgsqlTypes.NpgsqlPoint(x: 0.19076114919689158d, y: 0.9512874985200481d), new NpgsqlTypes.NpgsqlPoint(x: 0.7923204755819059d, y: 0.8403660175598011d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6193930854412196d, y: 0.6230098810819681d), new NpgsqlTypes.NpgsqlPoint(x: 0.5909434924008167d, y: 0.7286996657607322d), new NpgsqlTypes.NpgsqlPoint(x: 0.6989919559256911d, y: 0.5332638160891107d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9863221144744221d, y: 0.2507942353774155d), new NpgsqlTypes.NpgsqlPoint(x: 0.9762754402122346d, y: 0.03223369517656627d), new NpgsqlTypes.NpgsqlPoint(x: 0.6158427300663255d, y: 0.16368241817873885d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.12202385774296698d, y: 0.9047864896320755d), new NpgsqlTypes.NpgsqlPoint(x: 0.2463957635176811d, y: 0.5824506179580328d), new NpgsqlTypes.NpgsqlPoint(x: 0.27025495183461d, y: 0.8111704628013264d)),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.28744504376854474d, y: 0.7607302100341132d), new NpgsqlTypes.NpgsqlPoint(x: 0.2634037082575894d, y: 0.32163777395571214d), new NpgsqlTypes.NpgsqlPoint(x: 0.4768251799478396d, y: 0.42147191371508685d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.659625013260065d, y: 0.3479956287370938d), new NpgsqlTypes.NpgsqlPoint(x: 0.25178227454750646d, y: 0.3832444615368227d), new NpgsqlTypes.NpgsqlPoint(x: 0.8258490661410377d, y: 0.9152099999320549d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.32154666383850816d, y: 0.19569260531183197d), new NpgsqlTypes.NpgsqlPoint(x: 0.7627947605671367d, y: 0.2669433445242042d), new NpgsqlTypes.NpgsqlPoint(x: 0.9322367835783053d, y: 0.09852349916078795d)),
+
+},
+},
+    NullableValue = null,
+},
+            new NpgsqlPolygonpolygonArray2M
+{
+    Id = 95,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.45417696865470103d, y: 0.8975506483897326d), new NpgsqlTypes.NpgsqlPoint(x: 0.934791295229115d, y: 0.8372911539203198d), new NpgsqlTypes.NpgsqlPoint(x: 0.22470295851037814d, y: 0.47806165310391247d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4358848484694853d, y: 0.399605457474683d), new NpgsqlTypes.NpgsqlPoint(x: 0.4575624711328262d, y: 0.6509242560531783d), new NpgsqlTypes.NpgsqlPoint(x: 0.31857985704230696d, y: 0.2635997609139977d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4286121555234338d, y: 0.6569520151354564d), new NpgsqlTypes.NpgsqlPoint(x: 0.3611351790015638d, y: 0.3267855050213194d), new NpgsqlTypes.NpgsqlPoint(x: 0.5976534222843337d, y: 0.9938419767220465d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.33231838579320594d, y: 0.8448044112346368d), new NpgsqlTypes.NpgsqlPoint(x: 0.5787558130135393d, y: 0.5680843989146372d), new NpgsqlTypes.NpgsqlPoint(x: 0.01076041430952146d, y: 0.8745496013942728d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.2656365007033795d, y: 0.4218625286937d), new NpgsqlTypes.NpgsqlPoint(x: 0.8736425340166287d, y: 0.8988864798494965d), new NpgsqlTypes.NpgsqlPoint(x: 0.7714668509931818d, y: 0.043395565433002825d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9838059406806671d, y: 0.20931104485773755d), new NpgsqlTypes.NpgsqlPoint(x: 0.45043543829442656d, y: 0.23010499132324058d), new NpgsqlTypes.NpgsqlPoint(x: 0.26144760094985586d, y: 0.3601329460176499d)),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlPolygonpolygonArray2M
+{
+    Id = 103,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.036968234814907186d, y: 0.6177493459818149d), new NpgsqlTypes.NpgsqlPoint(x: 0.6661063468288879d, y: 0.7731563274402452d), new NpgsqlTypes.NpgsqlPoint(x: 0.7276150603964773d, y: 0.9294574968325716d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9452200692599615d, y: 0.05857171540411199d), new NpgsqlTypes.NpgsqlPoint(x: 0.0006589010333034606d, y: 0.17382518928023627d), new NpgsqlTypes.NpgsqlPoint(x: 0.44093337323690474d, y: 0.34343346938875174d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.028826704297294614d, y: 0.22755966769128666d), new NpgsqlTypes.NpgsqlPoint(x: 0.03960673729155473d, y: 0.4999216032962738d), new NpgsqlTypes.NpgsqlPoint(x: 0.4547608467300661d, y: 0.36188167916485947d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5787869704089733d, y: 0.8611902524704328d), new NpgsqlTypes.NpgsqlPoint(x: 0.19370862204322215d, y: 0.8082906937313503d), new NpgsqlTypes.NpgsqlPoint(x: 0.3910502858993953d, y: 0.789725861669138d)),
+
+},
+    ModelInner = new NpgsqlPolygonpolygonArray2MI
+{
+    Id = 52,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7713317199857476d, y: 0.7528388533885347d), new NpgsqlTypes.NpgsqlPoint(x: 0.06558450716571285d, y: 0.7414580189173051d), new NpgsqlTypes.NpgsqlPoint(x: 0.39488955365805845d, y: 0.8989764686798433d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3593469738751337d, y: 0.3056952746987863d), new NpgsqlTypes.NpgsqlPoint(x: 0.1929616541557142d, y: 0.06579709581182025d), new NpgsqlTypes.NpgsqlPoint(x: 0.6757267555582661d, y: 0.06252361318635924d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.1262476992128786d, y: 0.9862507000641927d), new NpgsqlTypes.NpgsqlPoint(x: 0.18841588900699902d, y: 0.46224128569411005d), new NpgsqlTypes.NpgsqlPoint(x: 0.01664572339443071d, y: 0.07847167307495229d)),
 
 },
     NullableValue = null,
 },
     NullableValue = null,
+},
+            new NpgsqlPolygonpolygonArray2M
+{
+    Id = 104,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9695090856578945d, y: 0.006367999782612488d), new NpgsqlTypes.NpgsqlPoint(x: 0.5860311893450447d, y: 0.007375727554439715d), new NpgsqlTypes.NpgsqlPoint(x: 0.22586632081048308d, y: 0.20921840285876425d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.14489119727198174d, y: 0.5061647401319403d), new NpgsqlTypes.NpgsqlPoint(x: 0.21469588894257552d, y: 0.6930547393050914d), new NpgsqlTypes.NpgsqlPoint(x: 0.8837951806944896d, y: 0.27339544882202105d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8997655538161812d, y: 0.1752343811504382d), new NpgsqlTypes.NpgsqlPoint(x: 0.0673024821017354d, y: 0.5049680594317333d), new NpgsqlTypes.NpgsqlPoint(x: 0.03914027001184339d, y: 0.43183264330047355d)),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlPolygonpolygonArray2M
+{
+    Id = 111,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8374758948122919d, y: 0.9061426984425387d), new NpgsqlTypes.NpgsqlPoint(x: 0.043796993627835845d, y: 0.7615102459018395d), new NpgsqlTypes.NpgsqlPoint(x: 0.4436070118834121d, y: 0.7792700944977787d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9310516018330479d, y: 0.8807002884059253d), new NpgsqlTypes.NpgsqlPoint(x: 0.6137834679536618d, y: 0.39446128876999775d), new NpgsqlTypes.NpgsqlPoint(x: 0.15114326046090576d, y: 0.025487112317153504d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.22856834559860117d, y: 0.5135405584515391d), new NpgsqlTypes.NpgsqlPoint(x: 0.26689174461360554d, y: 0.3034949208495229d), new NpgsqlTypes.NpgsqlPoint(x: 0.06432281646160787d, y: 0.05641769882034986d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3761651373732132d, y: 0.4612329641217233d), new NpgsqlTypes.NpgsqlPoint(x: 0.9650771867649076d, y: 0.8120052691202968d), new NpgsqlTypes.NpgsqlPoint(x: 0.745495869648455d, y: 0.5178743111872306d)),
+
+},
+    ModelInner = new NpgsqlPolygonpolygonArray2MI
+{
+    Id = 58,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9198631475836495d, y: 0.315963741841779d), new NpgsqlTypes.NpgsqlPoint(x: 0.8714606228984836d, y: 0.9469030335587227d), new NpgsqlTypes.NpgsqlPoint(x: 0.10625738216500247d, y: 0.03381114902124216d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.33019529877106923d, y: 0.06739913863419522d), new NpgsqlTypes.NpgsqlPoint(x: 0.23312335885764945d, y: 0.6232681596703837d), new NpgsqlTypes.NpgsqlPoint(x: 0.734005247677018d, y: 0.9414810968614493d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.45573469797567745d, y: 0.3012120552034018d), new NpgsqlTypes.NpgsqlPoint(x: 0.16380508741502298d, y: 0.7104554401197845d), new NpgsqlTypes.NpgsqlPoint(x: 0.19160489774285272d, y: 0.3526212935526757d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9293814246278945d, y: 0.7737477880576585d), new NpgsqlTypes.NpgsqlPoint(x: 0.8056090013855118d, y: 0.16263413968965335d), new NpgsqlTypes.NpgsqlPoint(x: 0.6609961096677996d, y: 0.11388247088066294d)),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4952769934023493d, y: 0.385117618075401d), new NpgsqlTypes.NpgsqlPoint(x: 0.93928503819592d, y: 0.9547480710126003d), new NpgsqlTypes.NpgsqlPoint(x: 0.5693910130102054d, y: 0.28630223359078233d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7643852764824444d, y: 0.7360431884274631d), new NpgsqlTypes.NpgsqlPoint(x: 0.18533200032008834d, y: 0.8905430028906419d), new NpgsqlTypes.NpgsqlPoint(x: 0.8038758242443064d, y: 0.9370701708253723d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9739321581405738d, y: 0.07160909670749493d), new NpgsqlTypes.NpgsqlPoint(x: 0.07036185812992046d, y: 0.1360317698717619d), new NpgsqlTypes.NpgsqlPoint(x: 0.5404252722400175d, y: 0.7503926237006191d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7786087626789907d, y: 0.6335109430747068d), new NpgsqlTypes.NpgsqlPoint(x: 0.07596362303242221d, y: 0.9927797228164693d), new NpgsqlTypes.NpgsqlPoint(x: 0.6390058183388008d, y: 0.6022003074318422d)),
+
+},
+},
+    NullableValue = null,
+},
+            new NpgsqlPolygonpolygonArray2M
+{
+    Id = 113,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.33491844119438496d, y: 0.001424623789586077d), new NpgsqlTypes.NpgsqlPoint(x: 0.773227701071056d, y: 0.06481584579684596d), new NpgsqlTypes.NpgsqlPoint(x: 0.7595447840825055d, y: 0.08543755989108814d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7989740422169546d, y: 0.1313945950181703d), new NpgsqlTypes.NpgsqlPoint(x: 0.4700769450025033d, y: 0.031572336753721064d), new NpgsqlTypes.NpgsqlPoint(x: 0.09358558465167877d, y: 0.8202805167802454d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8955725214542856d, y: 0.30043621844651724d), new NpgsqlTypes.NpgsqlPoint(x: 0.09776086962097685d, y: 0.33820774012502564d), new NpgsqlTypes.NpgsqlPoint(x: 0.61622785794876d, y: 0.038077740304439d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3499343656647399d, y: 0.5147809240875963d), new NpgsqlTypes.NpgsqlPoint(x: 0.020243520408480098d, y: 0.9036712021372567d), new NpgsqlTypes.NpgsqlPoint(x: 0.9883169027769528d, y: 0.11112368285002017d)),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlPolygonpolygonArray2M
+{
+    Id = 117,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6569027792123083d, y: 0.6535165793244028d), new NpgsqlTypes.NpgsqlPoint(x: 0.004877042945717891d, y: 0.76875865002354d), new NpgsqlTypes.NpgsqlPoint(x: 0.1805064494821963d, y: 0.7108708129945821d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.08765015586172176d, y: 0.6346584499162591d), new NpgsqlTypes.NpgsqlPoint(x: 0.2636577533275586d, y: 0.5977752413487585d), new NpgsqlTypes.NpgsqlPoint(x: 0.7597957365578069d, y: 0.7563880259501998d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7347179558878965d, y: 0.5921740968004412d), new NpgsqlTypes.NpgsqlPoint(x: 0.3343264496784001d, y: 0.6777031332139789d), new NpgsqlTypes.NpgsqlPoint(x: 0.7740996731112306d, y: 0.6049227565196534d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.47258398167363613d, y: 0.5872254437145132d), new NpgsqlTypes.NpgsqlPoint(x: 0.13823668232872233d, y: 0.1928394432101368d), new NpgsqlTypes.NpgsqlPoint(x: 0.12338608873437573d, y: 0.04289346119161952d)),
+
+},
+    ModelInner = new NpgsqlPolygonpolygonArray2MI
+{
+    Id = 59,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8917026150584633d, y: 0.21302374039018868d), new NpgsqlTypes.NpgsqlPoint(x: 0.7281349035041463d, y: 0.24929394347188172d), new NpgsqlTypes.NpgsqlPoint(x: 0.4958082004936636d, y: 0.7549476143242667d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8557280438972962d, y: 0.7552479336774275d), new NpgsqlTypes.NpgsqlPoint(x: 0.6163371597018459d, y: 0.8391524787616405d), new NpgsqlTypes.NpgsqlPoint(x: 0.64555238762741d, y: 0.5473020672158113d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4167328439114487d, y: 0.0725708328983955d), new NpgsqlTypes.NpgsqlPoint(x: 0.44050017805032826d, y: 0.3560755049987976d), new NpgsqlTypes.NpgsqlPoint(x: 0.1451790467068783d, y: 0.6936141205477537d)),
+
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new NpgsqlPolygonpolygonArray2M
+{
+    Id = 120,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8193100110021195d, y: 0.896252131666065d), new NpgsqlTypes.NpgsqlPoint(x: 0.8076917849462467d, y: 0.04919416399437038d), new NpgsqlTypes.NpgsqlPoint(x: 0.9835046263824561d, y: 0.8973973634511382d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.029663343535735298d, y: 0.7027594035301609d), new NpgsqlTypes.NpgsqlPoint(x: 0.5986156213273288d, y: 0.9523125321698805d), new NpgsqlTypes.NpgsqlPoint(x: 0.4442596234591707d, y: 0.8136001843561517d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.14004972319743325d, y: 0.19340548684946424d), new NpgsqlTypes.NpgsqlPoint(x: 0.9721988100846938d, y: 0.16509038408071686d), new NpgsqlTypes.NpgsqlPoint(x: 0.5223996483576293d, y: 0.9097162049596312d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5700060844774166d, y: 0.49645702446940265d), new NpgsqlTypes.NpgsqlPoint(x: 0.06624090350810063d, y: 0.9243326545538447d), new NpgsqlTypes.NpgsqlPoint(x: 0.7137458534178818d, y: 0.9681800716165045d)),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4809040964962298d, y: 0.02152346770494884d), new NpgsqlTypes.NpgsqlPoint(x: 0.9270232927500648d, y: 0.6600052332235334d), new NpgsqlTypes.NpgsqlPoint(x: 0.603757744647266d, y: 0.17046921897559564d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5442667211391921d, y: 0.3934725443043231d), new NpgsqlTypes.NpgsqlPoint(x: 0.22529232456309412d, y: 0.7283466158800114d), new NpgsqlTypes.NpgsqlPoint(x: 0.19029267295153496d, y: 0.04094508762390614d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3385032219140738d, y: 0.922704128045066d), new NpgsqlTypes.NpgsqlPoint(x: 0.06939887222981345d, y: 0.7970138771520865d), new NpgsqlTypes.NpgsqlPoint(x: 0.10988309959123144d, y: 0.911605568785587d)),
+
+},
 },
             new NpgsqlPolygonpolygonArray2M
 {
     Id = 125,
     Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.1426714438822002d, y: 0.7993672287101907d), new NpgsqlTypes.NpgsqlPoint(x: 0.7665894503211471d, y: 0.7568496277298208d), new NpgsqlTypes.NpgsqlPoint(x: 0.8043081713149182d, y: 0.13903937764523877d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5313237051452033d, y: 0.7623593238477786d), new NpgsqlTypes.NpgsqlPoint(x: 0.5302855111631098d, y: 0.7402478090567695d), new NpgsqlTypes.NpgsqlPoint(x: 0.36129972478937833d, y: 0.28386909902051827d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8804916558894248d, y: 0.8694282179777664d), new NpgsqlTypes.NpgsqlPoint(x: 0.7389951871900993d, y: 0.7293478640473584d), new NpgsqlTypes.NpgsqlPoint(x: 0.5863976428661599d, y: 0.34078820711887037d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.45148406273128183d, y: 0.06562339278811002d), new NpgsqlTypes.NpgsqlPoint(x: 0.3459546971903025d, y: 0.9647686946200268d), new NpgsqlTypes.NpgsqlPoint(x: 0.3307262638390086d, y: 0.6329620853099251d)),
+
+},
+    ModelInner = new NpgsqlPolygonpolygonArray2MI
+{
+    Id = 60,
+    Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.783746716462057d, y: 0.5556869513682876d), new NpgsqlTypes.NpgsqlPoint(x: 0.1397361633661266d, y: 0.727609355360545d), new NpgsqlTypes.NpgsqlPoint(x: 0.17285938973598014d, y: 0.9375274807335975d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5853536968336934d, y: 0.42055885326709386d), new NpgsqlTypes.NpgsqlPoint(x: 0.6971521438866732d, y: 0.8494375237899305d), new NpgsqlTypes.NpgsqlPoint(x: 0.22548437542216493d, y: 0.34776715377395107d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6616754248509834d, y: 0.6933053550567091d), new NpgsqlTypes.NpgsqlPoint(x: 0.4925924977933488d, y: 0.24850476886728168d), new NpgsqlTypes.NpgsqlPoint(x: 0.4169713763082713d, y: 0.8568470267945337d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.2775120673227569d, y: 0.49434552842243695d), new NpgsqlTypes.NpgsqlPoint(x: 0.33269596364270815d, y: 0.6323729391392499d), new NpgsqlTypes.NpgsqlPoint(x: 0.4269575747174862d, y: 0.6994843905637241d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9578508106395659d, y: 0.20161515371371252d), new NpgsqlTypes.NpgsqlPoint(x: 0.49717252000282d, y: 0.912368899987548d), new NpgsqlTypes.NpgsqlPoint(x: 0.4479968479604255d, y: 0.5247183396687021d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8908623347768398d, y: 0.49344770771174207d), new NpgsqlTypes.NpgsqlPoint(x: 0.4276113353755011d, y: 0.531218502684922d), new NpgsqlTypes.NpgsqlPoint(x: 0.26857011415518195d, y: 0.40588113122194736d)),
+
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new NpgsqlPolygonpolygonArray2M
+{
+    Id = 127,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6245497666375387d, y: 0.3913657434558311d), new NpgsqlTypes.NpgsqlPoint(x: 0.7018828698822579d, y: 0.136477958922132d), new NpgsqlTypes.NpgsqlPoint(x: 0.31064080955146645d, y: 0.047700453511744234d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.16049590642947087d, y: 0.659048226640607d), new NpgsqlTypes.NpgsqlPoint(x: 0.08948831410394054d, y: 0.2705500077263412d), new NpgsqlTypes.NpgsqlPoint(x: 0.10526078400070582d, y: 0.8684090755595983d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9304256711457428d, y: 0.5813539675630841d), new NpgsqlTypes.NpgsqlPoint(x: 0.9852199899323243d, y: 0.3265198678868585d), new NpgsqlTypes.NpgsqlPoint(x: 0.9044203726365697d, y: 0.22626030826893084d)),
 
 },
     ModelInner = null,
@@ -676,69 +789,56 @@ new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9578508106395659d
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 129,
+    Id = 136,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3430917181064914d, y: 0.4745559296980163d), new NpgsqlTypes.NpgsqlPoint(x: 0.4596671493654765d, y: 0.5010693116007914d), new NpgsqlTypes.NpgsqlPoint(x: 0.6981853463461369d, y: 0.87940003688107d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.46722469993491145d, y: 0.9836067386776911d), new NpgsqlTypes.NpgsqlPoint(x: 0.7053357554057185d, y: 0.4625860992054587d), new NpgsqlTypes.NpgsqlPoint(x: 0.931690850787089d, y: 0.8195708831472075d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7096893489247544d, y: 0.7641145877656292d), new NpgsqlTypes.NpgsqlPoint(x: 0.7997041449594393d, y: 0.15376016897293443d), new NpgsqlTypes.NpgsqlPoint(x: 0.6252072020647885d, y: 0.5495324604312198d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5111271229702355d, y: 0.9767560703736855d), new NpgsqlTypes.NpgsqlPoint(x: 0.08527435403966521d, y: 0.17021374974857617d), new NpgsqlTypes.NpgsqlPoint(x: 0.43324970190961953d, y: 0.1304206366806132d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.35014221930092493d, y: 0.6779728002534515d), new NpgsqlTypes.NpgsqlPoint(x: 0.36482680386791233d, y: 0.3109069155937503d), new NpgsqlTypes.NpgsqlPoint(x: 0.22029007335943707d, y: 0.32761120412580524d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.38010579567546243d, y: 0.026736292908454917d), new NpgsqlTypes.NpgsqlPoint(x: 0.9541011495901537d, y: 0.9373518177216685d), new NpgsqlTypes.NpgsqlPoint(x: 0.790229270178678d, y: 0.35916479574610216d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.36700907648735026d, y: 0.6096175127853369d), new NpgsqlTypes.NpgsqlPoint(x: 0.42412352930623154d, y: 0.5310727178476444d), new NpgsqlTypes.NpgsqlPoint(x: 0.8590907824963345d, y: 0.2650078464728014d)),
 
 },
     ModelInner = new NpgsqlPolygonpolygonArray2MI
 {
-    Id = 51,
+    Id = 65,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7491617359634277d, y: 0.3863834559914038d), new NpgsqlTypes.NpgsqlPoint(x: 0.09737373646649572d, y: 0.03940505014273077d), new NpgsqlTypes.NpgsqlPoint(x: 0.12401790137395707d, y: 0.004018988432580417d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4262229325647019d, y: 0.13088261047459637d), new NpgsqlTypes.NpgsqlPoint(x: 0.6832888029969502d, y: 0.30270039243324276d), new NpgsqlTypes.NpgsqlPoint(x: 0.8275487488337053d, y: 0.03138610232856398d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.030744967879468788d, y: 0.6968764086607937d), new NpgsqlTypes.NpgsqlPoint(x: 0.8070547905943357d, y: 0.6394053614742277d), new NpgsqlTypes.NpgsqlPoint(x: 0.3089864958860379d, y: 0.7892038027292884d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6232748163966508d, y: 0.14274240711321684d), new NpgsqlTypes.NpgsqlPoint(x: 0.6907930345862746d, y: 0.4402187092817009d), new NpgsqlTypes.NpgsqlPoint(x: 0.9758991701033327d, y: 0.10302341647715041d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7557314722885771d, y: 0.8634149831716406d), new NpgsqlTypes.NpgsqlPoint(x: 0.8876147455184021d, y: 0.6033625252286325d), new NpgsqlTypes.NpgsqlPoint(x: 0.6554586436689221d, y: 0.7487051710882678d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6340599771487022d, y: 0.0011311918716778724d), new NpgsqlTypes.NpgsqlPoint(x: 0.6648191545313116d, y: 0.07708163138760382d), new NpgsqlTypes.NpgsqlPoint(x: 0.20778417114676084d, y: 0.5847718392328697d)),
 
 },
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.2602815366974015d, y: 0.6230735287861816d), new NpgsqlTypes.NpgsqlPoint(x: 0.8343655595928523d, y: 0.039143884102380455d), new NpgsqlTypes.NpgsqlPoint(x: 0.4962987572173758d, y: 0.08160798041541562d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5677099695345803d, y: 0.6801708400003482d), new NpgsqlTypes.NpgsqlPoint(x: 0.4076090571448333d, y: 0.23861962527628378d), new NpgsqlTypes.NpgsqlPoint(x: 0.9939390142956722d, y: 0.24277550041558638d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9128494560902791d, y: 0.8199648213865184d), new NpgsqlTypes.NpgsqlPoint(x: 0.2585063045167637d, y: 0.9296016800100657d), new NpgsqlTypes.NpgsqlPoint(x: 0.3969814297002341d, y: 0.7491238142443918d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4032289687969054d, y: 0.36091153597649483d), new NpgsqlTypes.NpgsqlPoint(x: 0.9730998242623441d, y: 0.20731899580324165d), new NpgsqlTypes.NpgsqlPoint(x: 0.13224027403110283d, y: 0.1274294282748989d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.1759211783713438d, y: 0.2662314874508016d), new NpgsqlTypes.NpgsqlPoint(x: 0.45830916107106046d, y: 0.9142457136397427d), new NpgsqlTypes.NpgsqlPoint(x: 0.020926255630954516d, y: 0.8721339617495144d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.864056995439691d, y: 0.911850448931682d), new NpgsqlTypes.NpgsqlPoint(x: 0.9467121891066586d, y: 0.90816021907298d), new NpgsqlTypes.NpgsqlPoint(x: 0.9532428818547509d, y: 0.28382866876367274d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.20611164383072456d, y: 0.013268043934187346d), new NpgsqlTypes.NpgsqlPoint(x: 0.5882256383560384d, y: 0.4889376556775642d), new NpgsqlTypes.NpgsqlPoint(x: 0.8602105944635077d, y: 0.9094953485954831d)),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7725631519094369d, y: 0.6935090419730149d), new NpgsqlTypes.NpgsqlPoint(x: 0.837528938038911d, y: 0.636998484413996d), new NpgsqlTypes.NpgsqlPoint(x: 0.7284700729453921d, y: 0.3097658986891837d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.046757031289690776d, y: 0.6643204852649366d), new NpgsqlTypes.NpgsqlPoint(x: 0.8202288128764141d, y: 0.7398186653536764d), new NpgsqlTypes.NpgsqlPoint(x: 0.19297558707465512d, y: 0.9061462920470312d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.631760496956167d, y: 0.5747134905436739d), new NpgsqlTypes.NpgsqlPoint(x: 0.5648097431144132d, y: 0.444846018151154d), new NpgsqlTypes.NpgsqlPoint(x: 0.0029388626349201585d, y: 0.8633721038761253d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5435353337705869d, y: 0.6384245934588582d), new NpgsqlTypes.NpgsqlPoint(x: 0.26150825665169875d, y: 0.16197045751843386d), new NpgsqlTypes.NpgsqlPoint(x: 0.5370997865038097d, y: 0.33752678889919674d)),
 
 },
+},
+    NullableValue = null,
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 134,
+    Id = 137,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.006990978728392716d, y: 0.04244661063010524d), new NpgsqlTypes.NpgsqlPoint(x: 0.803291538579188d, y: 0.0850300924056101d), new NpgsqlTypes.NpgsqlPoint(x: 0.034766541009544905d, y: 0.1777270361176635d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.11444719537519443d, y: 0.028590642718945736d), new NpgsqlTypes.NpgsqlPoint(x: 0.2874220470327592d, y: 0.35891955498569084d), new NpgsqlTypes.NpgsqlPoint(x: 0.10033289767063025d, y: 0.7365007978838528d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.20811596287503098d, y: 0.4085736072824059d), new NpgsqlTypes.NpgsqlPoint(x: 0.5285429231374008d, y: 0.32151783017217617d), new NpgsqlTypes.NpgsqlPoint(x: 0.35662641160804975d, y: 0.4459978863490752d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.04738047700224701d, y: 0.305587078252177d), new NpgsqlTypes.NpgsqlPoint(x: 0.06742634533606107d, y: 0.5448566715670108d), new NpgsqlTypes.NpgsqlPoint(x: 0.383420029734745d, y: 0.165256193854181d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.37293885814329164d, y: 0.496117856615107d), new NpgsqlTypes.NpgsqlPoint(x: 0.7879139714481743d, y: 0.05671085958729083d), new NpgsqlTypes.NpgsqlPoint(x: 0.6841987532429167d, y: 0.10062417374940102d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6584302697466148d, y: 0.8090666461694548d), new NpgsqlTypes.NpgsqlPoint(x: 0.31959998477891394d, y: 0.7713355996833655d), new NpgsqlTypes.NpgsqlPoint(x: 0.22969330968764567d, y: 0.8898125152420845d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8895849426528324d, y: 0.5174217416606104d), new NpgsqlTypes.NpgsqlPoint(x: 0.4369606175325038d, y: 0.2571205850602527d), new NpgsqlTypes.NpgsqlPoint(x: 0.2698283226015217d, y: 0.3455189687939254d)),
 
 },
     ModelInner = null,
@@ -748,78 +848,78 @@ new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6584302697466148d
 {
     Id = 138,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6130796258925786d, y: 0.4539242347324084d), new NpgsqlTypes.NpgsqlPoint(x: 0.8265016755529687d, y: 0.5262374591053892d), new NpgsqlTypes.NpgsqlPoint(x: 0.23867174533192248d, y: 0.9254323509689139d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8671665974210465d, y: 0.9433307455930993d), new NpgsqlTypes.NpgsqlPoint(x: 0.5000659739180254d, y: 0.109281603900658d), new NpgsqlTypes.NpgsqlPoint(x: 0.7302236227062809d, y: 0.8466567941246722d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7588510686400437d, y: 0.4243279346650797d), new NpgsqlTypes.NpgsqlPoint(x: 0.866392279468882d, y: 0.36393380793275554d), new NpgsqlTypes.NpgsqlPoint(x: 0.6983900401650062d, y: 0.5551294500551053d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.18559864114597002d, y: 0.2379846831180148d), new NpgsqlTypes.NpgsqlPoint(x: 0.04386430514908202d, y: 0.9136269073476394d), new NpgsqlTypes.NpgsqlPoint(x: 0.5266696988035019d, y: 0.5114934621427413d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.33907397870379163d, y: 0.2662383870873374d), new NpgsqlTypes.NpgsqlPoint(x: 0.6312281831309711d, y: 0.09074142519881001d), new NpgsqlTypes.NpgsqlPoint(x: 0.31118070826529465d, y: 0.6190019692257529d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7284207364354289d, y: 0.38408170869947134d), new NpgsqlTypes.NpgsqlPoint(x: 0.17065383944510193d, y: 0.39175703704811227d), new NpgsqlTypes.NpgsqlPoint(x: 0.9819051216025521d, y: 0.28840706574572694d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9299136816574987d, y: 0.9246441002334296d), new NpgsqlTypes.NpgsqlPoint(x: 0.5899485332554042d, y: 0.9605427705734599d), new NpgsqlTypes.NpgsqlPoint(x: 0.23811420562922825d, y: 0.33509481828116683d)),
 
 },
     ModelInner = new NpgsqlPolygonpolygonArray2MI
 {
-    Id = 56,
+    Id = 67,
     Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.014876217916426349d, y: 0.31425872261375165d), new NpgsqlTypes.NpgsqlPoint(x: 0.6266100233641521d, y: 0.046908791298273744d), new NpgsqlTypes.NpgsqlPoint(x: 0.4224268153557803d, y: 0.13373052979196132d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4878629107451411d, y: 0.35697490386817154d), new NpgsqlTypes.NpgsqlPoint(x: 0.3658425885471437d, y: 0.061223398657841654d), new NpgsqlTypes.NpgsqlPoint(x: 0.37372732316300705d, y: 0.7221020964204807d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9198410264975906d, y: 0.7194528242271413d), new NpgsqlTypes.NpgsqlPoint(x: 0.03815564392212356d, y: 0.9840997780057439d), new NpgsqlTypes.NpgsqlPoint(x: 0.9226169986868462d, y: 0.8885130833341588d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6520894885169946d, y: 0.962832506889431d), new NpgsqlTypes.NpgsqlPoint(x: 0.8620385902238347d, y: 0.6071339614715222d), new NpgsqlTypes.NpgsqlPoint(x: 0.7375447441834548d, y: 0.39065672130384343d)),
+
+},
+    NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5716090339762496d, y: 0.7012906656219824d), new NpgsqlTypes.NpgsqlPoint(x: 0.5502306230663911d, y: 0.08232690004949461d), new NpgsqlTypes.NpgsqlPoint(x: 0.24341945299924683d, y: 0.4462246172702051d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5290807931286331d, y: 0.6681425880909174d), new NpgsqlTypes.NpgsqlPoint(x: 0.5103052558411499d, y: 0.19581441760675267d), new NpgsqlTypes.NpgsqlPoint(x: 0.18075633951262526d, y: 0.6309371798635424d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.1755996194679167d, y: 0.9301161477887993d), new NpgsqlTypes.NpgsqlPoint(x: 0.3558354339908677d, y: 0.7374791983720732d), new NpgsqlTypes.NpgsqlPoint(x: 0.014633032742677687d, y: 0.9976570599969846d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.12685754135491212d, y: 0.1773979538982854d), new NpgsqlTypes.NpgsqlPoint(x: 0.7952050194391996d, y: 0.0905526212253508d), new NpgsqlTypes.NpgsqlPoint(x: 0.9515406324183082d, y: 0.003930800284298597d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.558303603271719d, y: 0.45553118976624785d), new NpgsqlTypes.NpgsqlPoint(x: 0.633237484508308d, y: 0.8736076761594121d), new NpgsqlTypes.NpgsqlPoint(x: 0.5204206143385405d, y: 0.27785925028143144d)),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.20043567500321335d, y: 0.4179436983353497d), new NpgsqlTypes.NpgsqlPoint(x: 0.4089780325798331d, y: 0.29819674609506786d), new NpgsqlTypes.NpgsqlPoint(x: 0.9850942061027476d, y: 0.5105458177461842d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7450270438789072d, y: 0.36927457414035014d), new NpgsqlTypes.NpgsqlPoint(x: 0.664801768135432d, y: 0.5073712852050807d), new NpgsqlTypes.NpgsqlPoint(x: 0.9882235903209242d, y: 0.6020479658400304d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.47461334795154686d, y: 0.0246287696198072d), new NpgsqlTypes.NpgsqlPoint(x: 0.1849453989241484d, y: 0.5215168294308928d), new NpgsqlTypes.NpgsqlPoint(x: 0.4126877951196787d, y: 0.7134505167745352d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8393211995215714d, y: 0.6103366114655538d), new NpgsqlTypes.NpgsqlPoint(x: 0.34069027274337305d, y: 0.2980308071600183d), new NpgsqlTypes.NpgsqlPoint(x: 0.2376927073970746d, y: 0.7410736430386793d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5319431706321861d, y: 0.43130707772315735d), new NpgsqlTypes.NpgsqlPoint(x: 0.6282775268568676d, y: 0.8108351872825638d), new NpgsqlTypes.NpgsqlPoint(x: 0.8695570087185626d, y: 0.22448067764339608d)),
 
 },
 },
     NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.37255379415564627d, y: 0.7019878111542828d), new NpgsqlTypes.NpgsqlPoint(x: 0.15560733820225447d, y: 0.7530713148797059d), new NpgsqlTypes.NpgsqlPoint(x: 0.2266436985361181d, y: 0.6728128201800457d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8982611559507252d, y: 0.9687541158322434d), new NpgsqlTypes.NpgsqlPoint(x: 0.07410519815444239d, y: 0.05201311259532948d), new NpgsqlTypes.NpgsqlPoint(x: 0.8885642576499196d, y: 0.8964718214309589d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.06291521330428651d, y: 0.7549894434230632d), new NpgsqlTypes.NpgsqlPoint(x: 0.266485722303373d, y: 0.5700261411845892d), new NpgsqlTypes.NpgsqlPoint(x: 0.6386922110690988d, y: 0.7958489067638663d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.18321091848320337d, y: 0.830832927217063d), new NpgsqlTypes.NpgsqlPoint(x: 0.8561306557703222d, y: 0.390493167367834d), new NpgsqlTypes.NpgsqlPoint(x: 0.38163755394740717d, y: 0.22243507799879647d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3502400970028535d, y: 0.05294573470303121d), new NpgsqlTypes.NpgsqlPoint(x: 0.8318034774515553d, y: 0.45145678446206183d), new NpgsqlTypes.NpgsqlPoint(x: 0.5890205163481116d, y: 0.15266496794463125d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4309567550066792d, y: 0.9446665559258157d), new NpgsqlTypes.NpgsqlPoint(x: 0.017039145376528286d, y: 0.6129077229036184d), new NpgsqlTypes.NpgsqlPoint(x: 0.5571196454398376d, y: 0.1718536540568386d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.20400697097975928d, y: 0.8622046669003138d), new NpgsqlTypes.NpgsqlPoint(x: 0.046805211206827346d, y: 0.8086436339113532d), new NpgsqlTypes.NpgsqlPoint(x: 0.8698379266590793d, y: 0.24641836644666293d)),
 
 },
 },
             new NpgsqlPolygonpolygonArray2M
 {
-    Id = 139,
+    Id = 142,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.21537415202407495d, y: 0.29250599214779893d), new NpgsqlTypes.NpgsqlPoint(x: 0.6455155643624728d, y: 0.22659798118957997d), new NpgsqlTypes.NpgsqlPoint(x: 0.14560189441184657d, y: 0.7616789625809953d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6912360448734819d, y: 0.7499291231492227d), new NpgsqlTypes.NpgsqlPoint(x: 0.5551111564182599d, y: 0.23657218646451772d), new NpgsqlTypes.NpgsqlPoint(x: 0.6320775234572156d, y: 0.7598330846808561d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.43386949112937856d, y: 0.054156596985640126d), new NpgsqlTypes.NpgsqlPoint(x: 0.41188342801457933d, y: 0.2792179702862868d), new NpgsqlTypes.NpgsqlPoint(x: 0.4850783630164871d, y: 0.005924942734501726d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.03748645810328566d, y: 0.2536602525212168d), new NpgsqlTypes.NpgsqlPoint(x: 0.4533793858038625d, y: 0.40374527510356006d), new NpgsqlTypes.NpgsqlPoint(x: 0.9094908920528852d, y: 0.8076048520356653d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7481280534262272d, y: 0.12147667247360328d), new NpgsqlTypes.NpgsqlPoint(x: 0.9975174183417296d, y: 0.2132090325115754d), new NpgsqlTypes.NpgsqlPoint(x: 0.7284831727698617d, y: 0.30169508824804103d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.49156527061132294d, y: 0.9025945196408509d), new NpgsqlTypes.NpgsqlPoint(x: 0.9932131445971932d, y: 0.9938620319151737d), new NpgsqlTypes.NpgsqlPoint(x: 0.4503462410442195d, y: 0.8710567940161962d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8725565780281006d, y: 0.6368454872193369d), new NpgsqlTypes.NpgsqlPoint(x: 0.7444786648044437d, y: 0.2901260511355863d), new NpgsqlTypes.NpgsqlPoint(x: 0.7273245952733508d, y: 0.1965095785918971d)),
 
 },
     ModelInner = null,
     NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6564003917241883d, y: 0.37462771650775994d), new NpgsqlTypes.NpgsqlPoint(x: 0.28060391097820847d, y: 0.016793147662469976d), new NpgsqlTypes.NpgsqlPoint(x: 0.667299513136817d, y: 0.04626166832213574d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8822602667730819d, y: 0.44994766288236065d), new NpgsqlTypes.NpgsqlPoint(x: 0.1495960865796938d, y: 0.5874501784676528d), new NpgsqlTypes.NpgsqlPoint(x: 0.4990880386441767d, y: 0.8567685431991074d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5590859577182989d, y: 0.07864770013597278d), new NpgsqlTypes.NpgsqlPoint(x: 0.7283077255362065d, y: 0.7817579112454786d), new NpgsqlTypes.NpgsqlPoint(x: 0.5209133419460221d, y: 0.7912039664770288d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5754702982588786d, y: 0.8051659235920802d), new NpgsqlTypes.NpgsqlPoint(x: 0.07551594329679279d, y: 0.34450614582687245d), new NpgsqlTypes.NpgsqlPoint(x: 0.7076467932258598d, y: 0.4151789842331557d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6531835524633315d, y: 0.9518136437654633d), new NpgsqlTypes.NpgsqlPoint(x: 0.8006015895957097d, y: 0.4017505821075027d), new NpgsqlTypes.NpgsqlPoint(x: 0.6713399174399309d, y: 0.45655827898507817d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8170474739735053d, y: 0.6007933569150075d), new NpgsqlTypes.NpgsqlPoint(x: 0.6859047989548761d, y: 0.40774960172703545d), new NpgsqlTypes.NpgsqlPoint(x: 0.9883691018616603d, y: 0.3279467184563132d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.08253735648005178d, y: 0.7833911706336772d), new NpgsqlTypes.NpgsqlPoint(x: 0.2159052648258014d, y: 0.05170451324939862d), new NpgsqlTypes.NpgsqlPoint(x: 0.7291607672419409d, y: 0.13130095093939798d)),
 
 },
 },
@@ -827,178 +927,40 @@ new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6531835524633315d
 {
     Id = 148,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.962343672624347d, y: 0.19777802776550757d), new NpgsqlTypes.NpgsqlPoint(x: 0.3303462755319919d, y: 0.25668859008870115d), new NpgsqlTypes.NpgsqlPoint(x: 0.5389241306155423d, y: 0.5639220803438241d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.28015129738918076d, y: 0.6038388222441411d), new NpgsqlTypes.NpgsqlPoint(x: 0.09260740945139456d, y: 0.7747252725159973d), new NpgsqlTypes.NpgsqlPoint(x: 0.7796415412607197d, y: 0.09388334340924398d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7020540812064433d, y: 0.7942593407580405d), new NpgsqlTypes.NpgsqlPoint(x: 0.1094613166929641d, y: 0.438536612689176d), new NpgsqlTypes.NpgsqlPoint(x: 0.8453102568297931d, y: 0.5654239321995697d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8153337779881507d, y: 0.5169875569072528d), new NpgsqlTypes.NpgsqlPoint(x: 0.11177960607007209d, y: 0.7251741685274032d), new NpgsqlTypes.NpgsqlPoint(x: 0.5730277999224423d, y: 0.8732439186609761d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7098679236097493d, y: 0.8195199211567799d), new NpgsqlTypes.NpgsqlPoint(x: 0.03934966120934946d, y: 0.7009014921130448d), new NpgsqlTypes.NpgsqlPoint(x: 0.7026931026236699d, y: 0.5204567610177251d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3196744867353756d, y: 0.3270361650585366d), new NpgsqlTypes.NpgsqlPoint(x: 0.4884607394480597d, y: 0.292274146977091d), new NpgsqlTypes.NpgsqlPoint(x: 0.23098729610309743d, y: 0.7363120471120311d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4415823185837434d, y: 0.8456805591280294d), new NpgsqlTypes.NpgsqlPoint(x: 0.36983534585319977d, y: 0.1969039941388494d), new NpgsqlTypes.NpgsqlPoint(x: 0.5040033972000035d, y: 0.6760881719389855d)),
 
 },
     ModelInner = new NpgsqlPolygonpolygonArray2MI
 {
-    Id = 59,
+    Id = 68,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
 {
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5692182349122422d, y: 0.5390279540518494d), new NpgsqlTypes.NpgsqlPoint(x: 0.6064245451004453d, y: 0.6829789611968844d), new NpgsqlTypes.NpgsqlPoint(x: 0.29019395218428645d, y: 0.3058249511748313d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8452432636761079d, y: 0.5814914716897467d), new NpgsqlTypes.NpgsqlPoint(x: 0.621828808669158d, y: 0.029537444537191426d), new NpgsqlTypes.NpgsqlPoint(x: 0.791782090516764d, y: 0.7138195676783665d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6624796956753719d, y: 0.36665371183923867d), new NpgsqlTypes.NpgsqlPoint(x: 0.5836450584178343d, y: 0.08644678038625875d), new NpgsqlTypes.NpgsqlPoint(x: 0.6098723845912832d, y: 0.31272338402698685d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5457899928265074d, y: 0.2056336280934138d), new NpgsqlTypes.NpgsqlPoint(x: 0.7622328005772194d, y: 0.3247846043550425d), new NpgsqlTypes.NpgsqlPoint(x: 0.10360104100826617d, y: 0.5671706336585339d)),
 
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.43703885584201196d, y: 0.3533634909756681d), new NpgsqlTypes.NpgsqlPoint(x: 0.30182259494178365d, y: 0.13301544935410436d), new NpgsqlTypes.NpgsqlPoint(x: 0.5385781371403986d, y: 0.5947800197516001d)),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9570116055460255d, y: 0.029513445374317215d), new NpgsqlTypes.NpgsqlPoint(x: 0.15482548201886548d, y: 0.5388572512104519d), new NpgsqlTypes.NpgsqlPoint(x: 0.32546297139524993d, y: 0.8941637131610084d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9093333391908641d, y: 0.5695535644507318d), new NpgsqlTypes.NpgsqlPoint(x: 0.3303441802012278d, y: 0.9868401397187737d), new NpgsqlTypes.NpgsqlPoint(x: 0.5794170809523687d, y: 0.4435144684104044d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.33073383290500336d, y: 0.621721401459122d), new NpgsqlTypes.NpgsqlPoint(x: 0.15265427069783044d, y: 0.678126766614097d), new NpgsqlTypes.NpgsqlPoint(x: 0.8787323943996632d, y: 0.0013990075858569817d)),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.48782606212029966d, y: 0.6431293982297381d), new NpgsqlTypes.NpgsqlPoint(x: 0.08798842265174633d, y: 0.10845024063558151d), new NpgsqlTypes.NpgsqlPoint(x: 0.2923755704332064d, y: 0.28235980825471174d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9275292242820476d, y: 0.33288173796315945d), new NpgsqlTypes.NpgsqlPoint(x: 0.331215626071207d, y: 0.20463526811967758d), new NpgsqlTypes.NpgsqlPoint(x: 0.6638900491653952d, y: 0.21508179757270673d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7114154023645057d, y: 0.4015696667555234d), new NpgsqlTypes.NpgsqlPoint(x: 0.5195699786398342d, y: 0.3688665626728016d), new NpgsqlTypes.NpgsqlPoint(x: 0.7948216588319321d, y: 0.7066653481079249d)),
-
-},
-},
-            new NpgsqlPolygonpolygonArray2M
-{
-    Id = 154,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7867303945058263d, y: 0.20141890971529253d), new NpgsqlTypes.NpgsqlPoint(x: 0.8724028556172632d, y: 0.7097074907183145d), new NpgsqlTypes.NpgsqlPoint(x: 0.8970823131180391d, y: 0.2955246643653262d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.14194790809357571d, y: 0.23132099681292573d), new NpgsqlTypes.NpgsqlPoint(x: 0.2720851629537059d, y: 0.8033546029217269d), new NpgsqlTypes.NpgsqlPoint(x: 0.5725819980187413d, y: 0.9406270995226284d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5984074291480685d, y: 0.00559500069715646d), new NpgsqlTypes.NpgsqlPoint(x: 0.44163456266732815d, y: 0.9011630558689017d), new NpgsqlTypes.NpgsqlPoint(x: 0.8515971986595825d, y: 0.3652389324002102d)),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6875141482276151d, y: 0.2376364628652179d), new NpgsqlTypes.NpgsqlPoint(x: 0.7004002164610413d, y: 0.16628234811439746d), new NpgsqlTypes.NpgsqlPoint(x: 0.801118114194189d, y: 0.41956385575242783d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9965074092722144d, y: 0.5456932423734642d), new NpgsqlTypes.NpgsqlPoint(x: 0.4906084384619923d, y: 0.2048823574836064d), new NpgsqlTypes.NpgsqlPoint(x: 0.7495545793692343d, y: 0.825269112740575d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7256227273433685d, y: 0.3976479461477658d), new NpgsqlTypes.NpgsqlPoint(x: 0.9166652931633859d, y: 0.9293282847138383d), new NpgsqlTypes.NpgsqlPoint(x: 0.41535966694462234d, y: 0.836838596486351d)),
-
-},
-},
-            new NpgsqlPolygonpolygonArray2M
-{
-    Id = 158,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5361733855552384d, y: 0.7067499830548789d), new NpgsqlTypes.NpgsqlPoint(x: 0.8814292047121949d, y: 0.4930302726877186d), new NpgsqlTypes.NpgsqlPoint(x: 0.1413497136916878d, y: 0.17071803503256644d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.6960522873048428d, y: 0.22790141358111604d), new NpgsqlTypes.NpgsqlPoint(x: 0.4753217574501737d, y: 0.9264770634474707d), new NpgsqlTypes.NpgsqlPoint(x: 0.016385258378729728d, y: 0.873499897302429d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9318197947446276d, y: 0.18478555915839967d), new NpgsqlTypes.NpgsqlPoint(x: 0.8026119119017152d, y: 0.4970405489991412d), new NpgsqlTypes.NpgsqlPoint(x: 0.6168672081186317d, y: 0.2470891757399014d)),
-
-},
-    ModelInner = new NpgsqlPolygonpolygonArray2MI
-{
-    Id = 61,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.1918503234696063d, y: 0.3547990399959108d), new NpgsqlTypes.NpgsqlPoint(x: 0.376301405394154d, y: 0.38350742044262187d), new NpgsqlTypes.NpgsqlPoint(x: 0.9671198189645415d, y: 0.08158818259850731d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.1392953184407647d, y: 0.4439700169698384d), new NpgsqlTypes.NpgsqlPoint(x: 0.22543358962023652d, y: 0.603044441246859d), new NpgsqlTypes.NpgsqlPoint(x: 0.5621265485976132d, y: 0.6855152036188376d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3660984698192653d, y: 0.5029374385616988d), new NpgsqlTypes.NpgsqlPoint(x: 0.22953705686172265d, y: 0.5250956082891084d), new NpgsqlTypes.NpgsqlPoint(x: 0.22962304223709185d, y: 0.625127476166473d)),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7631551288460174d, y: 0.9795978771315395d), new NpgsqlTypes.NpgsqlPoint(x: 0.8935393487980346d, y: 0.2668409743507193d), new NpgsqlTypes.NpgsqlPoint(x: 0.4814484238033184d, y: 0.7344249994073145d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.07420373892365784d, y: 0.8726688279814117d), new NpgsqlTypes.NpgsqlPoint(x: 0.37247411145437903d, y: 0.3893762558686238d), new NpgsqlTypes.NpgsqlPoint(x: 0.5779329965440316d, y: 0.5844896054488397d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.24179183946372662d, y: 0.46907311919018235d), new NpgsqlTypes.NpgsqlPoint(x: 0.8441486615698023d, y: 0.6475947958168011d), new NpgsqlTypes.NpgsqlPoint(x: 0.056568735248962d, y: 0.38869571371160994d)),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.15883203070022767d, y: 0.15664569281912688d), new NpgsqlTypes.NpgsqlPoint(x: 0.26270163160096416d, y: 0.9597896651260679d), new NpgsqlTypes.NpgsqlPoint(x: 0.7431900598032486d, y: 0.9506595479742908d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8736929016548981d, y: 0.9854437611249377d), new NpgsqlTypes.NpgsqlPoint(x: 0.9977112107232553d, y: 0.3650782688655956d), new NpgsqlTypes.NpgsqlPoint(x: 0.6636962984091997d, y: 0.6124843939720495d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.03419062887362201d, y: 0.910237570456624d), new NpgsqlTypes.NpgsqlPoint(x: 0.5887129046289983d, y: 0.598898627908433d), new NpgsqlTypes.NpgsqlPoint(x: 0.8252987776514158d, y: 0.36764358098450955d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7470989008809433d, y: 0.8887051193458642d), new NpgsqlTypes.NpgsqlPoint(x: 0.06173722720378616d, y: 0.1885174851656617d), new NpgsqlTypes.NpgsqlPoint(x: 0.5303037313517461d, y: 0.2765077280763596d)),
-
-},
-},
-            new NpgsqlPolygonpolygonArray2M
-{
-    Id = 159,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9672585816850954d, y: 0.7543115139627753d), new NpgsqlTypes.NpgsqlPoint(x: 0.1339893558542169d, y: 0.2214197520822695d), new NpgsqlTypes.NpgsqlPoint(x: 0.18032193620192982d, y: 0.7094578524472068d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.09612896408532734d, y: 0.8771253816033066d), new NpgsqlTypes.NpgsqlPoint(x: 0.9628517102840995d, y: 0.8222510858239698d), new NpgsqlTypes.NpgsqlPoint(x: 0.9910542779687525d, y: 0.004722654086930844d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.8726214490121842d, y: 0.4066949576624479d), new NpgsqlTypes.NpgsqlPoint(x: 0.6296076643910792d, y: 0.655555787964462d), new NpgsqlTypes.NpgsqlPoint(x: 0.6000256888029056d, y: 0.435592090384462d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.49773078598098996d, y: 0.5707310783806736d), new NpgsqlTypes.NpgsqlPoint(x: 0.7326434947400939d, y: 0.6497308095739766d), new NpgsqlTypes.NpgsqlPoint(x: 0.5009023916790012d, y: 0.5423437370320403d)),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlPolygonpolygonArray2M
-{
-    Id = 165,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.5370290643353702d, y: 0.07574917639417611d), new NpgsqlTypes.NpgsqlPoint(x: 0.7996198870989666d, y: 0.5773715460581678d), new NpgsqlTypes.NpgsqlPoint(x: 0.9805091824850188d, y: 0.9004110823313439d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3236330602038241d, y: 0.9972543063536918d), new NpgsqlTypes.NpgsqlPoint(x: 0.19511715410984465d, y: 0.6733123192959584d), new NpgsqlTypes.NpgsqlPoint(x: 0.7865546241304109d, y: 0.6798899778311952d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.4895601016610476d, y: 0.49028466479577626d), new NpgsqlTypes.NpgsqlPoint(x: 0.12461187180711408d, y: 0.7746772527888375d), new NpgsqlTypes.NpgsqlPoint(x: 0.237323039207877d, y: 0.6746917650826975d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.02709231188877681d, y: 0.018397573750953078d), new NpgsqlTypes.NpgsqlPoint(x: 0.6655925377928965d, y: 0.5573977488899696d), new NpgsqlTypes.NpgsqlPoint(x: 0.347101115560946d, y: 0.3712741880194391d)),
-
-},
-    ModelInner = new NpgsqlPolygonpolygonArray2MI
-{
-    Id = 69,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(4)
-{
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.3698985058364227d, y: 0.12441618816618005d), new NpgsqlTypes.NpgsqlPoint(x: 0.9001780306675812d, y: 0.8053364295504043d), new NpgsqlTypes.NpgsqlPoint(x: 0.020176636028114703d, y: 0.9272105330284186d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.501326075244469d, y: 0.20051069954034173d), new NpgsqlTypes.NpgsqlPoint(x: 0.05060157652072339d, y: 0.7834994742644686d), new NpgsqlTypes.NpgsqlPoint(x: 0.0775315980577842d, y: 0.5830995637028511d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.23733667736949393d, y: 0.9568141493871565d), new NpgsqlTypes.NpgsqlPoint(x: 0.21191555990169142d, y: 0.8279914363472122d), new NpgsqlTypes.NpgsqlPoint(x: 0.7733989466265608d, y: 0.27604020698819387d)),
-
-new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9438818300889776d, y: 0.9966964331124649d), new NpgsqlTypes.NpgsqlPoint(x: 0.6068113457881209d, y: 0.8716237848061508d), new NpgsqlTypes.NpgsqlPoint(x: 0.7735662483082291d, y: 0.9550513681900451d)),
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.9977738291914003d, y: 0.8813493410940842d), new NpgsqlTypes.NpgsqlPoint(x: 0.033481332805794906d, y: 0.13438118510160568d), new NpgsqlTypes.NpgsqlPoint(x: 0.9587695480974415d, y: 0.3152604179277363d)),
 
 },
     NullableValue = null,
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon>(3)
+{
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.1726194600890728d, y: 0.4732379562609559d), new NpgsqlTypes.NpgsqlPoint(x: 0.10014536697208565d, y: 0.900671010238904d), new NpgsqlTypes.NpgsqlPoint(x: 0.2639153256687312d, y: 0.5560678281679593d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7228493576937877d, y: 0.8509680891979072d), new NpgsqlTypes.NpgsqlPoint(x: 0.08921454358544245d, y: 0.5926210580360518d), new NpgsqlTypes.NpgsqlPoint(x: 0.7893509460801263d, y: 0.4097361505062208d)),
+
+new NpgsqlTypes.NpgsqlPolygon(new NpgsqlTypes.NpgsqlPoint(x: 0.7686297045159518d, y: 0.8227538719763329d), new NpgsqlTypes.NpgsqlPoint(x: 0.17194760331518977d, y: 0.17100863104842312d), new NpgsqlTypes.NpgsqlPoint(x: 0.3366144937878418d, y: 0.38436766736609473d)),
+
+},
 },
         };
 
@@ -1939,6 +1901,38 @@ Gedaq.DbConnection.Attributes.DynamicParametr()]
         {
         }
 
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionSTMMDynQuerySelectModelDynParBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(INpgsqlPolygonListpolygonArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
+            position: 2)]
+        private void DbConnectionSTMMDynQuerySelectModelDynParBatchConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionMMDynQuerySelectModelDynParBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(INpgsqlPolygonListpolygonArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModelDynPar",
+            position: 2)]
+        private void DbConnectionMMDynQuerySelectModelDynParBatchConfig()
+        {
+        }
+
         [Test, Order(2)]
         public async Task DbConnectionMMDynQuerySelectModelDynParTestAsync()
         {
@@ -1977,6 +1971,185 @@ ORDER BY
                 {
                     FlatNpgsqlPolygonpolygonArray2M.AssertModel(models2[i],_testData[i], false);
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelDynParBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 86;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 136;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var firstItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                await ((INpgsqlPolygonListpolygonArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(14));
+                Assert.That(firstItems2, Has.Count.EqualTo(14));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[0],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[0],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[1],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[1],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[2],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[2],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[3],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[3],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[4],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[4],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[5],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[5],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[6],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[6],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[7],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[7],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[8],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[8],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[9],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[9],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[10],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[10],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[11],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[11],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[12],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[12],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[13],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[13],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(4));
+                Assert.That(secondItems2, Has.Count.EqualTo(4));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[0],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[1],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[2],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[3],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[3],_testData[30], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 111;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 73;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var firstItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                await ((INpgsqlPolygonListpolygonArray)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(10));
+                Assert.That(firstItems2, Has.Count.EqualTo(10));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[0],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[0],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[1],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[1],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[2],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[2],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[3],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[3],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[4],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[4],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[5],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[5],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[6],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[6],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[7],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[7],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[8],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[8],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[9],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[9],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(16));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[0],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[1],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[2],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[3],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[4],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[5],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[6],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[7],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[8],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[9],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[10],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[11],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[12],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[13],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[14],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[15],_testData[29], false);
             }
         }
 
@@ -2021,6 +2194,236 @@ ORDER BY
             }
         }
 
+        [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 125;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 55;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var firstItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                 ((INpgsqlPolygonListpolygonArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(6));
+                Assert.That(firstItems2, Has.Count.EqualTo(6));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[0],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[0],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[1],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[1],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[2],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[2],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[3],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[3],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[4],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[4],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[5],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[5],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(19));
+                Assert.That(secondItems2, Has.Count.EqualTo(19));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[0],_testData[11], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[1],_testData[12], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[2],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[3],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[4],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[5],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[6],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[7],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[7],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[8],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[8],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[9],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[9],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[10],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[11],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[12],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[12],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[13],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[13],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[14],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[14],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[15],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[15],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[16],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[16],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[17],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[17],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[18],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[18],_testData[30], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 20;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 26;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var firstItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                 ((INpgsqlPolygonListpolygonArray)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(25));
+                Assert.That(firstItems2, Has.Count.EqualTo(25));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[0],_testData[5], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[0],_testData[5], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[1],_testData[6], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[1],_testData[6], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[2],_testData[7], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[2],_testData[7], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[3],_testData[8], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[3],_testData[8], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[4],_testData[9], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[4],_testData[9], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[5],_testData[10], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[5],_testData[10], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[6],_testData[11], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[6],_testData[11], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[7],_testData[12], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[7],_testData[12], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[8],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[8],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[9],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[9],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[10],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[10],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[11],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[11],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[12],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[12],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[13],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[13],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[14],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[14],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[15],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[15],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[16],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[16],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[17],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[17],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[18],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[18],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[19],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[19],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[20],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[20],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[21],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[21],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[22],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[22],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[23],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[23],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[24],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[24],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(23));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[0],_testData[7], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[1],_testData[8], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[2],_testData[9], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[3],_testData[10], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[4],_testData[11], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[5],_testData[12], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[6],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[7],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[8],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[9],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[10],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[11],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[12],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[13],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[14],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[15],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[16],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[17],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[18],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[19],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[20],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[21],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[22],_testData[29], false);
+            }
+        }
+
 [Gedaq.DbConnection.Attributes.Query(
             query: null,
             methodName:"DbConnectionDynQuerySelectModelDynPar",
@@ -2037,7 +2440,7 @@ Gedaq.DbConnection.Attributes.DynamicParametr()]
         }
 
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: "DbConnectionDynQuerySelectModelDynParBatch",
+            batchName: "DbConnectionSTDynQuerySelectModelDynParBatch",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
@@ -2047,6 +2450,22 @@ Gedaq.DbConnection.Attributes.BatchPart(
             position: 1),
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionDynQuerySelectModelDynPar",
+            position: 2)]
+        private void DbConnectionSTDynQuerySelectModelDynParBatchConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionDynQuerySelectModelDynParBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(INpgsqlPolygonListpolygonArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModelDynPar",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
             position: 2)]
         private void DbConnectionDynQuerySelectModelDynParBatchConfig()
         {
@@ -2083,19 +2502,19 @@ ORDER BY
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelDynParBatchTestAsync()
+        public async Task DbConnectionSTDynQuerySelectModelDynParBatchTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 100;
+                parametr1.Value = 73;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 83;
+                parametr2.Value = 136;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2120,26 +2539,148 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((INpgsqlPolygonListpolygonArray)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2))
+                foreach(var batchResult in await ((INpgsqlPolygonListpolygonArray)this).DbConnectionSTDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
-FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[18], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[19], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[20], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[21], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[22], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[23], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[24], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[25], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[26], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[27], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[28], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(16));
+
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(16));
-FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[14], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[15], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[16], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[17], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[18], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[19], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[20], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[21], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[22], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[23], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[24], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[25], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[26], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[27], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[28], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelDynParBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 104;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 46;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                await ((INpgsqlPolygonListpolygonArray)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(11));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[0],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[1],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[2],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[3],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[4],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[5],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[6],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[7],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[8],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[9],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[10],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(20));
+                Assert.That(secondItems2, Has.Count.EqualTo(20));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[0],_testData[10], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[1],_testData[11], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[2],_testData[12], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[3],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[4],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[5],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[6],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[7],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[7],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[8],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[8],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[9],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[9],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[10],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[11],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[12],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[12],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[13],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[13],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[14],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[14],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[15],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[15],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[16],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[16],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[17],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[17],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[18],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[18],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[19],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[19],_testData[30], false);
             }
         }
 
@@ -2174,19 +2715,19 @@ ORDER BY
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelDynParBatchTest()
+        public async Task DbConnectionSTDynQuerySelectModelDynParBatchTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 158;
+                parametr1.Value = 117;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 83;
+                parametr2.Value = 127;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2211,26 +2752,123 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((INpgsqlPolygonListpolygonArray)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2))
+                foreach(var batchResult in  ((INpgsqlPolygonListpolygonArray)this).DbConnectionSTDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(2));
-FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[28], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(8));
+
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(16));
-FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[14], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[15], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[16], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[17], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[18], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[19], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[20], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[21], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[22], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[23], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[24], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[25], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[26], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[27], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[28], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(5));
+
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 20;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 136;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                 ((INpgsqlPolygonListpolygonArray)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(25));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[0],_testData[5], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[1],_testData[6], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[2],_testData[7], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[3],_testData[8], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[4],_testData[9], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[5],_testData[10], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[6],_testData[11], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[7],_testData[12], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[8],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[9],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[10],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[11],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[12],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[13],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[14],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[15],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[16],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[17],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[18],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[19],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[20],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[21],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[22],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[23],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[24],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(4));
+                Assert.That(secondItems2, Has.Count.EqualTo(4));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[0],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[1],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[2],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[3],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[3],_testData[30], false);
             }
         }
 
@@ -2269,7 +2907,7 @@ Gedaq.DbConnection.Attributes.DynamicParametr()]
         }
 
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: "DbConnectionSelectModelDynParBatch",
+            batchName: "DbConnectionSTSelectModelDynParBatch",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
@@ -2280,7 +2918,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionSelectModelDynPar",
             position: 2)]
-        private void DbConnectionSelectModelDynParBatchConfig()
+        private void DbConnectionSTSelectModelDynParBatchConfig()
         {
         }
 
@@ -2304,36 +2942,47 @@ Gedaq.DbConnection.Attributes.BatchPart(
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelDynParBatchTestAsync()
+        public async Task DbConnectionSTSelectModelDynParBatchTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 53;
+                parametr1.Value = 120;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 134;
+                parametr2.Value = 136;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
-                foreach(var batchResult in await ((INpgsqlPolygonListpolygonArray)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
+                foreach(var batchResult in await ((INpgsqlPolygonListpolygonArray)this).DbConnectionSTSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
-NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[8], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[9], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[10], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[11], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[12], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[13], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[14], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[15], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[16], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[17], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[18], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[19], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[20], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[21], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[22], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[23], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[16],_testData[24], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[17],_testData[25], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[18],_testData[26], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[19],_testData[27], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[20],_testData[28], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[21],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(7));
+
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[23], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[24], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[25], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[26], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[27], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[28], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(7));
-NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[23], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[24], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[25], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[26], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[27], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[28], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[26], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[27], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[28], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }
                     
@@ -2362,36 +3011,71 @@ NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[23], false);NpgsqlPo
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelDynParBatchTest()
+        public async Task DbConnectionSTSelectModelDynParBatchTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 66;
+                parametr1.Value = 20;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 158;
+                parametr2.Value = 111;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
-                foreach(var batchResult in  ((INpgsqlPolygonListpolygonArray)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
+                foreach(var batchResult in  ((INpgsqlPolygonListpolygonArray)this).DbConnectionSTSelectModelDynParBatch(connection, [parametr1], [parametr2]))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(19));
-NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[11], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[12], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[13], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[14], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[15], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[16], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[17], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[18], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[19], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[20], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[21], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[22], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[23], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[24], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[25], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[26], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[16],_testData[27], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[17],_testData[28], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[18],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(25));
+
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[5], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[6], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[7], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[8], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[9], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[10], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[11], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[12], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[13], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[14], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[15], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[16], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[17], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[18], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[19], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[20], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[16],_testData[21], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[17],_testData[22], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[18],_testData[23], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[19],_testData[24], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[20],_testData[25], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[21],_testData[26], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[22],_testData[27], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[23],_testData[28], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[24],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(2));
-NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[28], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(10));
+
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[20], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[21], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[22], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[23], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[24], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[25], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[26], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[27], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[28], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[29], false);
                         continue;
                     }
                     
@@ -2416,6 +3100,38 @@ Gedaq.DbConnection.Attributes.Parametr(
             methodParametrName: "id", 
             dbType: (System.Data.DbType)(11))]
         private void DbConnectionMMDynQuerySelectModelConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionSTMMDynQuerySelectModelBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(INpgsqlPolygonListpolygonArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModel",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModel",
+            position: 2)]
+        private void DbConnectionSTMMDynQuerySelectModelBatchConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionMMDynQuerySelectModelBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(INpgsqlPolygonListpolygonArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModel",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModel",
+            position: 2)]
+        private void DbConnectionMMDynQuerySelectModelBatchConfig()
         {
         }
 
@@ -2457,6 +3173,186 @@ ORDER BY
         }
 
         [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var firstItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                await ((INpgsqlPolygonListpolygonArray)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 125, query1, 111, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(6));
+                Assert.That(firstItems2, Has.Count.EqualTo(6));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[0],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[0],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[1],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[1],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[2],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[2],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[3],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[3],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[4],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[4],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[5],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[5],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(10));
+                Assert.That(secondItems2, Has.Count.EqualTo(10));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[0],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[1],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[2],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[3],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[4],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[5],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[6],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[7],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[7],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[8],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[8],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[9],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[9],_testData[30], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var firstItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                await ((INpgsqlPolygonListpolygonArray)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 26, query1, 95, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(23));
+                Assert.That(firstItems2, Has.Count.EqualTo(23));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[0],_testData[7], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[0],_testData[7], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[1],_testData[8], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[1],_testData[8], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[2],_testData[9], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[2],_testData[9], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[3],_testData[10], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[3],_testData[10], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[4],_testData[11], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[4],_testData[11], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[5],_testData[12], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[5],_testData[12], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[6],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[6],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[7],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[7],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[8],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[8],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[9],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[9],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[10],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[10],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[11],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[11],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[12],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[12],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[13],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[13],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[14],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[14],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[15],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[15],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[16],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[16],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[17],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[17],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[18],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[18],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[19],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[19],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[20],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[20],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[21],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[21],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[22],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[22],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(13));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[0],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[1],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[2],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[3],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[4],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[5],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[6],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[7],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[8],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[9],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[10],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[11],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[12],_testData[29], false);
+            }
+        }
+
+        [Test, Order(2)]
         public async Task DbConnectionMMDynQuerySelectModelTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
@@ -2493,6 +3389,167 @@ ORDER BY
             }
         }
 
+        [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var firstItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                 ((INpgsqlPolygonListpolygonArray)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 120, query1, 125, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(7));
+                Assert.That(firstItems2, Has.Count.EqualTo(7));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[0],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[0],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[1],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[1],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[2],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[2],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[3],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[3],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[4],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[4],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[5],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[5],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[6],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[6],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(6));
+                Assert.That(secondItems2, Has.Count.EqualTo(6));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[0],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[1],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[2],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[3],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[4],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[5],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[5],_testData[30], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var firstItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                 ((INpgsqlPolygonListpolygonArray)this).DbConnectionMMDynQuerySelectModelBatch(connection, 70, query1, 103, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(17));
+                Assert.That(firstItems2, Has.Count.EqualTo(17));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[0],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[0],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[1],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[1],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[2],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[2],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[3],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[3],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[4],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[4],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[5],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[5],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[6],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[6],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[7],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[7],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[8],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[8],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[9],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[9],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[10],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[10],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[11],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[11],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[12],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[12],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[13],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[13],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[14],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[14],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[15],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[15],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[16],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems2[16],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(12));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[0],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[1],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[2],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[3],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[4],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[5],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[6],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[7],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[8],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[9],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[10],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[11],_testData[29], false);
+            }
+        }
+
 [Gedaq.DbConnection.Attributes.Query(
             query: null,
             methodName:"DbConnectionDynQuerySelectModel",
@@ -2513,7 +3570,7 @@ Gedaq.DbConnection.Attributes.Parametr(
         }
 
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: "DbConnectionDynQuerySelectModelBatch",
+            batchName: "DbConnectionSTDynQuerySelectModelBatch",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
@@ -2523,6 +3580,22 @@ Gedaq.DbConnection.Attributes.BatchPart(
             position: 1),
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionDynQuerySelectModel",
+            position: 2)]
+        private void DbConnectionSTDynQuerySelectModelBatchConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionDynQuerySelectModelBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(INpgsqlPolygonListpolygonArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModel",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModel",
             position: 2)]
         private void DbConnectionDynQuerySelectModelBatchConfig()
         {
@@ -2555,7 +3628,7 @@ ORDER BY
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelBatchTestAsync()
+        public async Task DbConnectionSTDynQuerySelectModelBatchTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
@@ -2583,26 +3656,151 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((INpgsqlPolygonListpolygonArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 154, query1, 17, query2))
+                foreach(var batchResult in await ((INpgsqlPolygonListpolygonArray)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 138, query1, 46, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[27], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[28], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(2));
+
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
-FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[3], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[4], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[5], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[6], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[7], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[8], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[9], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[10], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[11], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[12], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[13], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[14], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[15], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[16], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[17], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[18], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[16],_testData[19], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[17],_testData[20], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[18],_testData[21], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[19],_testData[22], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[20],_testData[23], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[21],_testData[24], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[22],_testData[25], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[23],_testData[26], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[24],_testData[27], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[25],_testData[28], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[26],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(20));
+
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[10], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[11], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[12], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[16],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[17],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[18],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[19],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                await ((INpgsqlPolygonListpolygonArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 17, query1, 70, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(27));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[0],_testData[3], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[1],_testData[4], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[2],_testData[5], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[3],_testData[6], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[4],_testData[7], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[5],_testData[8], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[6],_testData[9], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[7],_testData[10], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[8],_testData[11], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[9],_testData[12], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[10],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[11],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[12],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[13],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[14],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[15],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[16],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[17],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[18],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[19],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[20],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[21],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[22],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[23],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[24],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[25],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[26],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(17));
+                Assert.That(secondItems2, Has.Count.EqualTo(17));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[0],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[1],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[2],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[3],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[4],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[5],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[6],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[7],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[7],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[8],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[8],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[9],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[9],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[10],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[11],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[12],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[12],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[13],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[13],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[14],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[14],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[15],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[15],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[16],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[16],_testData[30], false);
             }
         }
 
@@ -2633,7 +3831,7 @@ ORDER BY
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelBatchTest()
+        public async Task DbConnectionSTDynQuerySelectModelBatchTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
@@ -2661,26 +3859,158 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((INpgsqlPolygonListpolygonArray)this).DbConnectionDynQuerySelectModelBatch(connection, 11, query1, 98, query2))
+                foreach(var batchResult in  ((INpgsqlPolygonListpolygonArray)this).DbConnectionSTDynQuerySelectModelBatch(connection, 20, query1, 103, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(28));
-FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[2], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[3], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[4], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[5], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[6], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[7], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[8], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[9], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[10], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[11], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[12], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[13], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[14], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[15], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[16], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[17], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[16],_testData[18], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[17],_testData[19], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[18],_testData[20], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[19],_testData[21], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[20],_testData[22], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[21],_testData[23], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[22],_testData[24], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[23],_testData[25], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[24],_testData[26], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[25],_testData[27], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[26],_testData[28], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[27],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(25));
+
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[5], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[6], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[7], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[8], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[9], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[10], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[11], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[12], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[16],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[17],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[18],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[19],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[20],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[21],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[22],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[23],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[24],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
-FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[17], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[18], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[19], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[20], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[21], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[22], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[23], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[24], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[25], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[26], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[27], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[28], false);FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(12));
+
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpolygonpolygonarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems1 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                var secondItems2 = new List<FlatNpgsqlPolygonpolygonArray2M>();
+                 ((INpgsqlPolygonListpolygonArray)this).DbConnectionDynQuerySelectModelBatch(connection, 20, query1, 86, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(25));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[0],_testData[5], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[1],_testData[6], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[2],_testData[7], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[3],_testData[8], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[4],_testData[9], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[5],_testData[10], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[6],_testData[11], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[7],_testData[12], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[8],_testData[13], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[9],_testData[14], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[10],_testData[15], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[11],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[12],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[13],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[14],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[15],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[16],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[17],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[18],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[19],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[20],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[21],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[22],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[23],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(firstItems1[24],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(14));
+                Assert.That(secondItems2, Has.Count.EqualTo(14));
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[0],_testData[16], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[1],_testData[17], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[2],_testData[18], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[3],_testData[19], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[4],_testData[20], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[5],_testData[21], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[6],_testData[22], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[7],_testData[23], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[7],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[8],_testData[24], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[8],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[9],_testData[25], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[9],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[10],_testData[26], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[11],_testData[27], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[12],_testData[28], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[12],_testData[30], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems1[13],_testData[29], false);
+                        FlatNpgsqlPolygonpolygonArray2M.AssertModel(secondItems2[13],_testData[30], false);
             }
         }
 
@@ -2723,7 +4053,7 @@ Gedaq.DbConnection.Attributes.Parametr(
         }
 
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: "DbConnectionSelectModelBatch",
+            batchName: "DbConnectionSTSelectModelBatch",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
@@ -2734,7 +4064,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionSelectModel",
             position: 2)]
-        private void DbConnectionSelectModelBatchConfig()
+        private void DbConnectionSTSelectModelBatchConfig()
         {
         }
 
@@ -2754,27 +4084,63 @@ Gedaq.DbConnection.Attributes.BatchPart(
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelBatchTestAsync()
+        public async Task DbConnectionSTSelectModelBatchTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((INpgsqlPolygonListpolygonArray)this).DbConnectionSelectModelBatchAsync(connection, 81, 6))
+                foreach(var batchResult in await ((INpgsqlPolygonListpolygonArray)this).DbConnectionSTSelectModelBatchAsync(connection, 26, 95))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(17));
-NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[13], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[14], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[15], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[16], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[17], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[18], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[19], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[20], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[21], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[22], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[23], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[24], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[25], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[26], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[27], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[28], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[16],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(23));
+
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[7], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[8], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[9], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[10], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[11], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[12], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[13], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[14], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[15], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[16], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[17], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[18], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[19], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[20], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[21], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[22], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[16],_testData[23], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[17],_testData[24], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[18],_testData[25], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[19],_testData[26], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[20],_testData[27], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[21],_testData[28], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[22],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(29));
-NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[1], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[2], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[3], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[4], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[5], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[6], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[7], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[8], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[9], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[10], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[11], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[12], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[13], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[14], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[15], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[16], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[16],_testData[17], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[17],_testData[18], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[18],_testData[19], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[19],_testData[20], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[20],_testData[21], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[21],_testData[22], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[22],_testData[23], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[23],_testData[24], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[24],_testData[25], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[25],_testData[26], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[26],_testData[27], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[27],_testData[28], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[28],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(13));
+
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[17], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[18], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[19], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[20], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[21], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[22], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[23], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[24], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[25], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[26], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[27], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[28], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[29], false);
                         continue;
                     }
                     
@@ -2799,27 +4165,52 @@ NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[1], false);NpgsqlPol
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelBatchTest()
+        public async Task DbConnectionSTSelectModelBatchTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((INpgsqlPolygonListpolygonArray)this).DbConnectionSelectModelBatch(connection, 154, 158))
+                foreach(var batchResult in  ((INpgsqlPolygonListpolygonArray)this).DbConnectionSTSelectModelBatch(connection, 73, 113))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[27], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[28], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(16));
+
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[14], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[15], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[16], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[17], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[18], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[19], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[20], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[21], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[22], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[23], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[24], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[11],_testData[25], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[12],_testData[26], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[13],_testData[27], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[14],_testData[28], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[15],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(2));
-NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[28], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(9));
+
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[21], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[22], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[23], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[24], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[25], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[26], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[27], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[28], false);
+                        NpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[29], false);
                         continue;
                     }
                     
@@ -2835,11 +4226,11 @@ NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[28], false);NpgsqlPo
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((INpgsqlPolygonListpolygonArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((INpgsqlPolygonListpolygonArray)this).SetDbConnectionSelectModelParametrs(cmd, 107);
+                ((INpgsqlPolygonListpolygonArray)this).SetDbConnectionSelectModelParametrs(cmd, 113);
                 var models = await ((INpgsqlPolygonListpolygonArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(11));
-NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[19], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[20], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[21], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[22], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[23], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[24], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[25], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[26], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[27], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[9],_testData[28], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[10],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(9));
+NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[21], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[1],_testData[22], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[2],_testData[23], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[3],_testData[24], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[4],_testData[25], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[5],_testData[26], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[6],_testData[27], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[7],_testData[28], false);NpgsqlPolygonpolygonArray2M.AssertModel(models[8],_testData[29], false);
             }
         }
 
@@ -2850,7 +4241,7 @@ NpgsqlPolygonpolygonArray2M.AssertModel(models[0],_testData[19], false);NpgsqlPo
             {
                 await connection.OpenAsync();
                  using var cmd =  ((INpgsqlPolygonListpolygonArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((INpgsqlPolygonListpolygonArray)this).SetDbConnectionSelectModelParametrs(cmd, 22);
+                ((INpgsqlPolygonListpolygonArray)this).SetDbConnectionSelectModelParametrs(cmd, 18);
                 var models =  ((INpgsqlPolygonListpolygonArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
                 Assert.That(models, Has.Count.EqualTo(26));

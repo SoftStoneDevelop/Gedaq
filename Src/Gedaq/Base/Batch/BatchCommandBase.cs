@@ -208,7 +208,7 @@ namespace Gedaq.Base.Batch
                         builder.Append($@"
                 {mapInfo.ItemTypeName} {mapInfo.MapItemName};
                 {{");
-                        MappingHelper.MapItem(mapInfo.MapType, queryBase, builder, ProviderInfo, mapInfo.MapItemName, CastTypeExpr(source));
+                        MappingHelper.MapItem(mapInfo.MapType, queryBase, builder, ProviderInfo, mapInfo.MapItemName);
                         builder.Append($@"
                 }}");
                     }
@@ -830,7 +830,7 @@ namespace Gedaq.Base.Batch
                 foreach (var batchParBase in source.BatchPartBases())
                 {
                     builder.Append($@",
-            {batchParBase.QueryBase.MapDelegateParametrType()} {batchParBase.QueryBase.MapDelegateParametrName}");
+            {batchParBase.MapDelegateParametrTypeInBatch()} {batchParBase.MapDelegateParametrNameInBatch()}");
                 }
             }
 
