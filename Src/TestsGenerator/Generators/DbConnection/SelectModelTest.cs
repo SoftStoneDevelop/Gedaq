@@ -735,7 +735,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
                         if (query2IsMultiMap)
                         {
                             stringBuilder.Append(@$"
-                        {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(secondItems2[{index}],{TestsPart.TestDataArrayName}[{firstBatchStart}], false);");
+                        {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(secondItems2[{index}],{TestsPart.TestDataArrayName}[{secondBatchStart}], false);");
                         }
                         index++;
                     }
