@@ -640,8 +640,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
         {{
             await using (var connection = GlobalSetUp.GetDbConnection)
             {{
-                await connection.OpenAsync();
-                int resultIndex = 0;");
+                await connection.OpenAsync();");
                 if (withDynamicParameters)
                 {
                     stringBuilder.Append($@"
@@ -744,6 +743,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 void SameTypeCheck()
                 {
                     stringBuilder.Append($@"
+                int resultIndex = 0;
                 foreach(var batchResult in {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectBatchMethodName(isDynamicQuery, withDynamicParameters, isMultiMap, sameType)}{async}({methodPassParametrs}))
                 {{
                     if(++resultIndex == 1)
