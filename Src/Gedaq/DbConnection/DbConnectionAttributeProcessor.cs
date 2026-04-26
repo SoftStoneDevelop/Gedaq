@@ -1,7 +1,6 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Model;
 using Gedaq.Constants;
-using Gedaq.DbConnection;
 using Gedaq.DbConnection.GeneratorsBatch;
 using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.DbConnection.Model;
@@ -14,7 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Gedaq.Npgsql
+namespace Gedaq.DbConnection
 {
     internal class DbConnectionAttributeProcessor : BaseAttributeProcessor
     {
@@ -80,7 +79,7 @@ namespace Gedaq.Npgsql
 
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "BatchPartAttribute"))
                     {
-                        ProcessBatchPart(attributeData, containsType, batchPair);
+                        ProcessBatchPart(attributeData, batchPair);
                         continue;
                     }
 
@@ -259,7 +258,6 @@ namespace Gedaq.Npgsql
 
         private void ProcessBatchPart(
             AttributeData parametrAttribute,
-            INamedTypeSymbol containsType,
             BatchPair<DbQueryBatch> currentPair)
         {
             if (!BatchPart.CreateNew(parametrAttribute.ConstructorArguments, out var batchPart))
