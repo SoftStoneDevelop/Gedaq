@@ -944,7 +944,8 @@ namespace Gedaq.Base.Batch
                         builder.Append($@", cancellationToken");
                     }
 
-                    builder.Append($@");");
+                    builder.Append($@");
+                    {await}reader.NextResult{async};");
                 }
             }
             else
