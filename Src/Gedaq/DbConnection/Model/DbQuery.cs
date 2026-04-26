@@ -1,4 +1,6 @@
 ﻿using Gedaq.Base.Model;
+using Gedaq.Constants;
+using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -8,58 +10,125 @@ namespace Gedaq.DbConnection.Model
     internal class DbQuery : QueryBaseCommand
     {
         public DbParametr[] Parametrs;
+        public DbDynamicParametr DynamicParametrs;
+
         public override bool HaveParametrs()
         {
-            return Parametrs?.Length != 0;
+            return Parametrs?.Length > 0;
         }
 
-        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out DbQuery query)
+        internal static bool CreateNew(
+            SourceProductionContext context,
+            ImmutableArray<TypedConstant> namedArguments,
+            INamedTypeSymbol containsType,
+            out DbQuery query)
         {
             query = null;
-            if (namedArguments.Length != 10)
+            if (namedArguments.Length != 11)
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametrsCount,
+                    DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
+                    DiagnosticSeverity.Error,
+                    namedArguments.Length.ToString());
+
                 return false;
             }
 
             var methodSource = new DbQuery();
-            if (!methodSource.FillQuery(namedArguments[0]))
+            if (!methodSource.FillQuery(namedArguments[1]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "2", nameof(Query) });
+
                 return false;
             }
 
-            if (!methodSource.FillMapType(namedArguments[2]))
+            if (!methodSource.FillMapTypes(namedArguments[2]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "3", nameof(MapTypeInfos) });
+
                 return false;
             }
 
-            if (!methodSource.FillQueryType(namedArguments[4]))
+            if (!methodSource.FillOverrideAliasPrefixs(namedArguments[3]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "4", nameof(_overrideAliasPrefixs) });
+
                 return false;
             }
 
-            if (!methodSource.FillGenerate(namedArguments[5]))
+            if (!methodSource.FillQueryType(namedArguments[5]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "6", nameof(QueryType) });
+
+                return false;
+            }
+
+            if (!methodSource.FillGenerate(namedArguments[6]))
+            {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "6", nameof(NeedGenerate) });
+
                 return false;
             }
 
             methodSource.MethodInfo = 
                 new BaseMethodInfo(
-                    namedArguments[1], 
-                    namedArguments[3], 
-                    namedArguments[6],
+                    namedArguments[0],
+                    namedArguments[4],
                     namedArguments[7],
-                    containsType
-                    );
+                    namedArguments[8],
+                    containsType);
+
             methodSource.ContainTypeName = containsType;
             query = methodSource;
 
-            if (!methodSource.SetPartInterfaceType(namedArguments[8]))
+            if (!methodSource.SetPartInterfaceType(namedArguments[9]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "10", nameof(PartInterfaceType) });
+
                 return false;
             }
 
-            if (!methodSource.FillReturnType(namedArguments[9]))
+            if (!methodSource.FillReturnType(namedArguments[10]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "11", nameof(ReturnType) });
+
                 return false;
             }
 
@@ -69,6 +138,16 @@ namespace Gedaq.DbConnection.Model
         public override IEnumerable<BaseParametr> BaseParametrs()
         {
             return Parametrs;
+        }
+
+        public override BaseDynamicParametr BaseDynamicParametrs()
+        {
+            return DynamicParametrs;
+        }
+
+        public override bool HaveDynamicParametrs()
+        {
+            return DynamicParametrs != null;
         }
     }
 }

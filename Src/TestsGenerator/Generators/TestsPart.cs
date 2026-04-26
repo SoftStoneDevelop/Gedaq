@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using TestsGenerator.Enums;
 using TestsGenerator.Generators.PostgreSQL;
@@ -9,7 +10,9 @@ namespace TestsGenerator.Generators
 {
     internal class TestsPart
     {
-        private readonly StringBuilderArray.StringBuilderArray _stringBuilder = new StringBuilderArray.StringBuilderArray();
+        public const string TestDataArrayName = "_testData";
+
+        private readonly StringBuilderArray.StringBuilderArray _stringBuilder = new();
 
         public async Task Generate(Model.ModelType model, Database database, string destinationFolder)
         {
@@ -19,6 +22,10 @@ namespace TestsGenerator.Generators
             var interfaceTypeName = InterfaceName(model);
             Start(model, database);
 
+            StartRegion("TestData");
+            WriteTestDataArray(model, storage);
+            EndRegion();
+
             StartRegion("InsertModelInner");
             InsertModelInnerTest.Generate(
                 0, 
@@ -26,8 +33,7 @@ namespace TestsGenerator.Generators
                 model, 
                 storage, 
                 database, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
             EndRegion();
 
             StartRegion("InsertModel");
@@ -37,8 +43,7 @@ namespace TestsGenerator.Generators
                 model, 
                 storage, 
                 database, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
             EndRegion();
 
             StartRegion("Select Models");
@@ -48,28 +53,25 @@ namespace TestsGenerator.Generators
                 model, 
                 storage, 
                 database, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
             EndRegion();
 
             SpecialDatabaseTests(
                 model, 
                 database, 
                 storage,
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             End();
 
-            await File.WriteAllTextAsync($"{destinationFolder}/TestsParts/{model.ClassName}Tests.cs", _stringBuilder.ToString());
+            await File.WriteAllTextAsync($"{destinationFolder}/TestsParts/{model.ClassName(false)}Tests.cs", _stringBuilder.ToString());
         }
 
         private void SpecialDatabaseTests(
             Model.ModelType model, 
             Database database, 
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             switch (database)
             {
@@ -81,8 +83,7 @@ namespace TestsGenerator.Generators
                         _stringBuilder, 
                         model, 
                         storage,
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
                     EndRegion();
 
                     StartRegion("BinaryImportModel");
@@ -91,8 +92,7 @@ namespace TestsGenerator.Generators
                         _stringBuilder, 
                         model, 
                         storage,
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
                     EndRegion();
 
                     StartRegion("BinaryExportModel");
@@ -101,8 +101,7 @@ namespace TestsGenerator.Generators
                         _stringBuilder, 
                         model, 
                         storage,
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
                     EndRegion();
 
                     StartRegion("BinaryExportModelInner");
@@ -111,8 +110,7 @@ namespace TestsGenerator.Generators
                         _stringBuilder, 
                         model, 
                         storage,
-                        interfaceTypeName
-                        );
+                        interfaceTypeName);
                     EndRegion();
                     break;
                 }
@@ -129,19 +127,43 @@ namespace TestsGenerator.Generators
         private void EndRegion()
         {
             _stringBuilder.Append($@"
-        #endregion
+#endregion
 ");
         }
 
-        private ModelValueStorage InitStorage(Model.ModelType model, int valuesCount)
+        /// <summary>
+        /// Create values for test cases
+        /// </summary>
+        private static ModelValueStorage InitStorage(Model.ModelType model, int valuesCount)
         {
             var storage = model.NewStorage();
+            storage.StartInit();
             for (int i = 0; i < valuesCount; i++)
             {
                 storage.AddNewValue();
             }
+            storage.EndInit();
 
             return storage;
+        }
+
+        private void WriteTestDataArray(Model.ModelType model, ModelValueStorage dataStorage)
+        {
+            _stringBuilder.Append($@"
+        private readonly {model.ClassName(false)}[] {TestDataArrayName} = new {model.ClassName(false)}[]
+        {{");
+
+            var orderedValues = dataStorage.Values.OrderBy(or => or.IdValue).ToArray();
+            for (int i = 0; i < orderedValues.Length; i++)
+            {
+                ModelValue value = orderedValues[i];
+                _stringBuilder.Append($@"
+            {ModelGenerator.CreateNewModelInstance(model, value)},");
+            }
+
+            _stringBuilder.Append($@"
+        }};
+");
         }
 
         public static string ClassName(Model.ModelType model)

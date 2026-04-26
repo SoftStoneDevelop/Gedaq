@@ -39,11 +39,11 @@ middlenameN
  
 FROM person p1
 ";
-            var aliases = parser.Parse(ref sql);
+            var aliases = parser.Parse(ref sql, out var isRowAffected);
             Assert.Multiple(() =>
             {
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
-                Assert.That(aliases.IsRowsAffected, Is.EqualTo(false));
+                Assert.That(isRowAffected, Is.EqualTo(false));
                 Assert.That(aliases.Fields, Has.Count.EqualTo(4));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(0));
 
@@ -84,11 +84,11 @@ SELECT id  , firstname
  
 FROM person
 ";
-            var aliases = parser.Parse(ref sql);
+            var aliases = parser.Parse(ref sql, out var isRowAffected);
             Assert.Multiple(() =>
             {
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
-                Assert.That(aliases.IsRowsAffected, Is.EqualTo(false));
+                Assert.That(isRowAffected, Is.EqualTo(false));
                 Assert.That(aliases.Fields, Has.Count.EqualTo(4));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(0));
 
@@ -161,11 +161,11 @@ person2
  
 FROM person p1
 ";
-            var aliases = parser.Parse(ref sql);
+            var aliases = parser.Parse(ref sql, out var isRowAffected);
             Assert.Multiple(() =>
             {
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
-                Assert.That(aliases.IsRowsAffected, Is.EqualTo(false));
+                Assert.That(isRowAffected, Is.EqualTo(false));
                 Assert.That(aliases.Fields, Has.Count.EqualTo(2));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(0));
 
@@ -265,7 +265,7 @@ LEFT JOIN identification i ON i.id = p1.identification_id
 LEFT JOIN country c ON c.id = i.country_id
 ;
 ";
-            var aliases = parser.Parse(ref inSql);
+            var aliases = parser.Parse(ref inSql, out var isRowAffected);
             var outSql = @"
 SELECT 
     p1.id,
@@ -289,7 +289,7 @@ LEFT JOIN country c ON c.id = i.country_id
             {
                 Assert.That(inSql, Is.EqualTo(outSql));
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
-                Assert.That(aliases.IsRowsAffected, Is.EqualTo(false));
+                Assert.That(isRowAffected, Is.EqualTo(false));
                 Assert.That(aliases.Fields, Has.Count.EqualTo(4));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(1));
             });
@@ -309,7 +309,6 @@ LEFT JOIN country c ON c.id = i.country_id
             Assert.Multiple(() =>
             {
                 Assert.That(identification.IsRoot, Is.EqualTo(false));
-                Assert.That(identification.IsRowsAffected, Is.EqualTo(false));
                 Assert.That(identification.Fields, Has.Count.EqualTo(2));
                 Assert.That(identification.LinkKey, Is.EqualTo("id"));
                 Assert.That(identification.InnerEntities, Has.Count.EqualTo(1));
@@ -326,7 +325,6 @@ LEFT JOIN country c ON c.id = i.country_id
             Assert.Multiple(() =>
             {
                 Assert.That(country.IsRoot, Is.EqualTo(false));
-                Assert.That(country.IsRowsAffected, Is.EqualTo(false));
                 Assert.That(country.Fields, Has.Count.EqualTo(2));
                 Assert.That(country.LinkKey, Is.EqualTo("id"));
                 Assert.That(country.InnerEntities, Has.Count.EqualTo(0));
@@ -357,7 +355,7 @@ SELECT
 FROM person p1
 ;
 ";
-            var aliases = parser.Parse(ref inSql);
+            var aliases = parser.Parse(ref inSql, out var isRowAffected);
             var outSql = @"
 SELECT 
     p1.id,
@@ -375,7 +373,7 @@ FROM person p1
             {
                 Assert.That(inSql, Is.EqualTo(outSql));
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
-                Assert.That(aliases.IsRowsAffected, Is.EqualTo(false));
+                Assert.That(isRowAffected, Is.EqualTo(false));
                 Assert.That(aliases.Fields, Has.Count.EqualTo(4));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(1));
             });
@@ -395,7 +393,6 @@ FROM person p1
             Assert.Multiple(() =>
             {
                 Assert.That(identification.IsRoot, Is.EqualTo(false));
-                Assert.That(identification.IsRowsAffected, Is.EqualTo(false));
                 Assert.That(identification.Fields, Has.Count.EqualTo(1));
                 Assert.That(identification.LinkKey, Is.EqualTo("id"));
                 Assert.That(identification.InnerEntities, Has.Count.EqualTo(0));
@@ -429,11 +426,11 @@ RETURNING
 column2
 ;
 ";
-            var aliases = parser.Parse(ref sql);
+            var aliases = parser.Parse(ref sql, out var isRowAffected);
             Assert.Multiple(() =>
             {
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
-                Assert.That(aliases.IsRowsAffected, Is.EqualTo(false));
+                Assert.That(isRowAffected, Is.EqualTo(false));
                 Assert.That(aliases.Fields, Has.Count.EqualTo(3));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(0));
 

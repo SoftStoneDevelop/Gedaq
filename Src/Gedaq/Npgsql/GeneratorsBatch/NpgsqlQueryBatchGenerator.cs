@@ -2,6 +2,7 @@
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Model;
+using Microsoft.CodeAnalysis;
 
 namespace Gedaq.Npgsql.GeneratorsBatch
 {
@@ -11,11 +12,14 @@ namespace Gedaq.Npgsql.GeneratorsBatch
         private readonly NpgsqlQueryBatchRead _batchRead;
         private readonly NpgsqlQueryBatchScalarNoQuery _batchScalarNoQuery;
 
-        public NpgsqlQueryBatchGenerator()
+        public NpgsqlQueryBatchGenerator(
+            SourceProductionContext context,
+            NpgsqlProviderInfo providerInfo)
+            : base (context)
         {
-            _batchCommand = new NpgsqlBatchCommand();
-            _batchRead = new NpgsqlQueryBatchRead(_batchCommand);
-            _batchScalarNoQuery = new NpgsqlQueryBatchScalarNoQuery(_batchCommand);
+            _batchCommand = new NpgsqlBatchCommand(providerInfo);
+            _batchRead = new NpgsqlQueryBatchRead(_batchCommand, providerInfo);
+            _batchScalarNoQuery = new NpgsqlQueryBatchScalarNoQuery(_batchCommand, providerInfo);
         }
 
         public void GenerateMethod(NpgsqlQueryBatch source, InterfaceGenerator interfaceGenerator)
@@ -38,15 +42,13 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                 _batchScalarNoQuery.GenerateNonQuery(source, _methodCode, interfaceGenerator);
             }
 
-            _batchCommand.Generate(source, _methodCode, interfaceGenerator);
+            _batchCommand.Generate(source, _methodCode, interfaceGenerator, _context);
 
             EndClass();
             EndNameSpace();
         }
 
-        private void Start(
-            NpgsqlQueryBatch source
-            )
+        private void Start(NpgsqlQueryBatch source)
         {
             _methodCode.Append($@"
 using Npgsql;

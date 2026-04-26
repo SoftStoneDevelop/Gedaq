@@ -1,5 +1,7 @@
+using DotNet.Testcontainers.Builders;
 using Microsoft.Data.SqlClient;
 using NUnit.Framework;
+using System;
 using System.Data.Common;
 using System.Threading.Tasks;
 using Testcontainers.MsSql;
@@ -28,10 +30,15 @@ namespace Tests
         public async Task OneTimeSetUp()
         {
             _mssql =
-                new MsSqlBuilder()
+                new MsSqlBuilder("mcr.microsoft.com/mssql/server:2022-CU14-ubuntu-22.04")
+                .WithPortBinding(1433, true)
+                .WithAutoRemove(true)
+                .WithWaitStrategy(Wait.ForUnixContainer().UntilExternalTcpPortIsAvailable(1433))
                 .Build();
 
             await _mssql.StartAsync();
+            await _mssql.WaitContainerStateRunningAsync(TimeSpan.FromMinutes(1));
+            await _mssql.WaitResponseAsync(TimeSpan.FromMinutes(1));
 
             var builder = new SqlConnectionStringBuilder(_mssql.GetConnectionString());
             builder.Encrypt = false;
@@ -69,22 +76,6 @@ CREATE DATABASE gedaqtests
         {
             if (_mssql != null)
             {
-                var builder = new SqlConnectionStringBuilder(_mssql.GetConnectionString());
-                builder.Encrypt = false;
-                builder.TrustServerCertificate = false;
-                builder.IntegratedSecurity = false;
-                await using (var masterConnection = (SqlConnection)SqlClientFactory.Instance.CreateConnection())
-                {
-                    masterConnection.ConnectionString = builder.ConnectionString;
-                    await masterConnection.OpenAsync();
-                    await using var command = masterConnection.CreateCommand();
-                    command.CommandText = $@"
-ALTER DATABASE gedaqtests SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-DROP DATABASE gedaqtests;
-";
-                    await command.ExecuteNonQueryAsync();
-                }
-
                 await _mssql.DisposeAsync();
             }
         }

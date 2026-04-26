@@ -11,14 +11,19 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
 {
     internal class MySqlConnectorBatchCommand : BatchCommandBase
     {
-        private readonly MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
+        private readonly MySqlConnectorProviderInfo _providerInfo;
+
+        public MySqlConnectorBatchCommand(MySqlConnectorProviderInfo providerInfo)
+        {
+            _providerInfo = providerInfo;
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void CreateBatchMethods(
             QueryBatchCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             var npgsqlBatch = (MySqlConnectorQueryBatch)source;
             if (source.MethodType.HasFlag(MethodType.Sync))
@@ -30,8 +35,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                         MySqlConnectorSourceType.MySqlConnection.ToTypeName(), 
                         MySqlConnectorSourceType.MySqlConnection.ToParametrName(), 
                         MethodType.Sync, 
-                        builder
-                        );
+                        builder);
                     if(source.AsPartInterface)
                     {
                         CreateBatchMethodDefinition(
@@ -40,16 +44,14 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                             MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                             MethodType.Sync,
                             interfaceGenerator.DefinitionBuilder(),
-                            forInterface: true
-                            );
+                            forInterface: true);
                         interfaceGenerator.AddMethodDefinition();
                     }
                     CreateBatchMethodBody(
                         source, 
                         MySqlConnectorSourceType.MySqlConnection.ToParametrName(), 
                         MethodType.Sync, 
-                        builder
-                        );
+                        builder);
                 }
 
                 if (npgsqlBatch.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
@@ -59,8 +61,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                         MySqlConnectorSourceType.MySqlDataSource.ToTypeName(), 
                         MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), 
                         MethodType.Sync, 
-                        builder
-                        );
+                        builder);
                     if(source.AsPartInterface)
                     {
                         CreateBatchMethodDefinition(
@@ -69,16 +70,14 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                             MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                             MethodType.Sync,
                             interfaceGenerator.DefinitionBuilder(),
-                            forInterface: true
-                            );
+                            forInterface: true);
                         interfaceGenerator.AddMethodDefinition();
                     }
                     CreateBatchMethodBody(
                         source,
                         MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                         MethodType.Sync,
-                        builder
-                        );
+                        builder);
                 }
             }
 
@@ -91,8 +90,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                         MySqlConnectorSourceType.MySqlConnection.ToTypeName(), 
                         MySqlConnectorSourceType.MySqlConnection.ToParametrName(), 
                         MethodType.Async, 
-                        builder
-                        );
+                        builder);
                     if(source.AsPartInterface)
                     {
                         CreateBatchMethodDefinition(
@@ -101,16 +99,14 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                             MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                             MethodType.Async,
                             interfaceGenerator.DefinitionBuilder(),
-                            forInterface: true
-                            );
+                            forInterface: true);
                         interfaceGenerator.AddMethodDefinition();
                     }
                     CreateBatchMethodBody(
                         source,
                         MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                         MethodType.Async,
-                        builder
-                        );
+                        builder);
                 }
 
                 if (npgsqlBatch.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
@@ -120,8 +116,7 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                         MySqlConnectorSourceType.MySqlDataSource.ToTypeName(), 
                         MySqlConnectorSourceType.MySqlDataSource.ToParametrName(), 
                         MethodType.Async, 
-                        builder
-                        );
+                        builder);
                     if(source.AsPartInterface)
                     {
                         CreateBatchMethodDefinition(
@@ -130,16 +125,14 @@ namespace Gedaq.MySqlConnector.GeneratorsBatch
                             MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                             MethodType.Async,
                             interfaceGenerator.DefinitionBuilder(),
-                            forInterface: true
-                            );
+                            forInterface: true);
                         interfaceGenerator.AddMethodDefinition();
                     }
                     CreateBatchMethodBody(
                         source,
                         MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                         MethodType.Async,
-                        builder
-                        );
+                        builder);
                 }
             }
 

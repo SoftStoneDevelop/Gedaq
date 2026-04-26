@@ -15,41 +15,35 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             ImportModelInnerConfig(
                 stringBuilder, 
                 model,
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             SelectImportModelInnerConfig(
                 model, 
                 stringBuilder,
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             var ordered = 
                 storage.Values
-                .Where(wh => wh.InnerModel != null)
-                .Select(sel => sel.InnerModel)
                 .OrderBy(or => or.IdValue)
-                .ToList()
-                ;
+                .ToList();
+
             ImportModelInnerTest(
                 order, 
                 model, 
                 stringBuilder, 
                 ordered,
-                interfaceTypeName
-                );
+                interfaceTypeName);
         }
 
         private static void ImportModelInnerConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.BinaryImport(
@@ -63,7 +57,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
 FROM STDIN (FORMAT BINARY)
 "",
             methodName:""{_testName}"",
-            queryMapType: typeof({model.ModelInner.ClassName}),
+            queryMapTypes: [typeof({model.ModelInner.ClassName(false)})],
             dbTypes:
             new NpgsqlDbType[]
             {{
@@ -74,9 +68,7 @@ FROM STDIN (FORMAT BINARY)
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            )
-            ]
+            asPartInterface: typeof({interfaceTypeName}))]
         private void {_testName}Config()
         {{
         }}
@@ -86,8 +78,7 @@ FROM STDIN (FORMAT BINARY)
         private static void SelectImportModelInnerConfig(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var query = $@"
 @""
@@ -105,14 +96,12 @@ ORDER BY
 [Gedaq.DbConnection.Attributes.Query(
             query: {query},
             methodName:""Select{_testName}"",
-            queryMapType: typeof({model.ModelInner.ClassName}),
+            queryMapTypes: [typeof({model.ModelInner.ClassName(false)})],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            )
-            ]
+            asPartInterface: typeof({interfaceTypeName}))]
         private void Select{_testName}Config()
         {{
         }}
@@ -123,9 +112,8 @@ ORDER BY
             int order,
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            List<InnerModelValue> storage,
-            string interfaceTypeName
-            )
+            List<ModelValue> storage,
+            string interfaceTypeName)
         {
             if (storage.Count < 4)
             {
@@ -142,74 +130,59 @@ ORDER BY
 ");
             var index = 0;
             stringBuilder.Append($@"
-                var importCollection = new List<{model.ModelInner.ClassName}>({storage.Count / 2});
+                var importCollection = new List<{model.ModelInner.ClassName(false)}>({storage.Count / 2});
 ");
-            FillCollection(storage.Count / 2);
+            var expectCount = FillCollection(storage.Count / 2);
 
             stringBuilder.Append($@"
                 {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}(connection, importCollection);
-                var models = {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}(connection).ToList();
-                Assert.That(models, Has.Count.EqualTo(importCollection.Count));
-");
-            var indexCollection = 0;
-            for (; indexCollection < storage.Count / 2; indexCollection++)
-            {
-                InnerModelValue value = storage[indexCollection];
-                if (indexCollection == 0)
-                {
-                    stringBuilder.Append($@"
-                var model = models[{indexCollection}];
-");
-                }
-                else
-                {
-                    stringBuilder.Append($@"
-                model = models[{indexCollection}];
-");
-                }
-
-                stringBuilder.Append(model.ModelInner.Assert("model", value));
-            }
-
-            stringBuilder.Append($@"
+                var models = {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}(connection);
+                Assert.That(models, Has.Count.EqualTo({expectCount}));
+                var set = new HashSet<long>();
+                for (var i = 0; i < models.Count(); i++)
+                {{
+                    var actual = models[i];
+                    var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
+                    {model.ModelInner.ClassName(false)}.{ModelGenerator.AssertMethodName}(actual, expect, false);
+                    Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
+                }}
+                set.Clear();
                 importCollection.Clear();
 ");
-            FillCollection(storage.Count);
+            var expectCount2 = FillCollection(storage.Count);
 
             stringBuilder.Append($@"
                 await {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Async(connection, importCollection);
-                models = await {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}Async(connection).ToListAsync();
-                Assert.That(models, Has.Count.EqualTo({storage.Count}));
-");
-            indexCollection = 0;
-            for (; indexCollection < storage.Count; indexCollection++)
-            {
-                InnerModelValue value = storage[indexCollection];
-                stringBuilder.Append($@"
-                model = models[{indexCollection}];
-{model.ModelInner.Assert("model", value)}
-");
-            }
-
-            stringBuilder.Append($@"
+                models = await {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}Async(connection);
+                Assert.That(models, Has.Count.EqualTo({expectCount + expectCount2}));
+                for (var i = 0; i < models.Count(); i++)
+                {{
+                    var actual = models[i];
+                    var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
+                    {model.ModelInner.ClassName(false)}.{ModelGenerator.AssertMethodName}(actual, expect, false);
+                    Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
+                }}
+                set.Clear();
             }}
         }}
 ");
-            void FillCollection(int end)
+            int FillCollection(int end)
             {
+                int count = 0;
                 for (; index < end; index++)
                 {
-                    InnerModelValue value = storage[index];
+                    ModelValue value = storage[index];
+                    if (value.InnerModel == null)
+                    {
+                        continue;
+                    }
+
+                    count++;
                     stringBuilder.Append($@"
-                importCollection.Add(
-                new {model.ModelInner.ClassName}
-                {{
-                    {model.ModelInner.IdName} = {value.IdValue},
-                    {model.ModelInner.ValueName} = {value.Value},
-                    {model.ModelInner.NullableValueName} = {value.NullableValue}
-                }});
-");
+                importCollection.Add({TestsPart.TestDataArrayName}[{index}].{model.ModelInnerName});");
                 }
+
+                return count;
             }
         }
     }

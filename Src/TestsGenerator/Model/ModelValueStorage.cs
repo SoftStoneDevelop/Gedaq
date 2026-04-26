@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
+using System.Linq;
 using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.TypeInfos;
@@ -27,10 +27,11 @@ namespace TestsGenerator.Model
 
         private ValueHelper NullableValue { get; }
 
-        private List<ModelValue> _values = new();
+        private bool _inWriteMode = false;
+        private List<ModelValue> _values = [];
         public ReadOnlyCollection<ModelValue> Values => _values.AsReadOnly();
 
-        private bool NextNull()
+        private static bool NextIsNull()
         {
             return Random.Shared.Next(2) == 1;
         }
@@ -42,15 +43,23 @@ namespace TestsGenerator.Model
             return _nextInnerNull;
         }
 
-        private HashSet<int> _modelIds = new();
-        private HashSet<int> _innerModelIds = new();
+        private readonly HashSet<int> _modelIds = [];
+        private readonly HashSet<int> _innerModelIds = [];
 
         private string GetNextModelId(out int idValue)
         {
+            var min = 1;
+            var max = 10;
             while (true)
             {
-                var idStr = _id.NewValue(out idValue);
-                if(_modelIds.Add(idValue))
+                if (_modelIds.Count != 0)
+                {
+                    min = _modelIds.Max();
+                    max = min + 10;
+                }
+
+                var idStr = _id.NewValue(min, max, out idValue);
+                if (_modelIds.Add(idValue))
                 {
                     return idStr;
                 }
@@ -59,9 +68,17 @@ namespace TestsGenerator.Model
 
         private string GetNextInnerModelId(out int idValue)
         {
+            var min = 1;
+            var max = 10;
             while (true)
             {
-                var idStr = _id.NewValue(out idValue);
+                if (_innerModelIds.Count != 0)
+                {
+                    min = _innerModelIds.Max();
+                    max = min + 10;
+                }
+
+                var idStr = _id.NewValue(min, max, out idValue);
                 if (_innerModelIds.Add(idValue))
                 {
                     return idStr;
@@ -69,8 +86,24 @@ namespace TestsGenerator.Model
             }
         }
 
+        public void StartInit()
+        {
+            _inWriteMode = true;
+        }
+
+        public void EndInit()
+        {
+            _values = [.. _values.OrderBy(o => o.IdValue)];
+            _inWriteMode = false;
+        }
+
         public ModelValue AddNewValue()
         {
+            if (!_inWriteMode)
+            {
+                throw new Exception("Storage in Read mode");
+            }
+
             InnerModelValue newInnerValue;
             if(NextInnerNull())
             {
@@ -83,7 +116,7 @@ namespace TestsGenerator.Model
                     Id = GetNextInnerModelId(out var idInnerValue),
                     IdValue = idInnerValue,
                     Value = NextValue(false),
-                    NullableValue = NextNull() ? ValueConstants.NullValue : NextValue(true)
+                    NullableValue = NextIsNull() ? ValueConstants.NullValue : NextValue(true)
                 };
             }
 
@@ -92,7 +125,7 @@ namespace TestsGenerator.Model
                 Id = GetNextModelId(out var idValue),
                 IdValue = idValue,
                 Value = NextValue(false),
-                NullableValue = NextNull() ? ValueConstants.NullValue : NextValue(true),
+                NullableValue = NextIsNull() ? ValueConstants.NullValue : NextValue(true),
 
                 InnerModel = newInnerValue
             };
@@ -110,6 +143,7 @@ namespace TestsGenerator.Model
                 {
                     return Value.NewSingleValue();
                 }
+
                 case EnumerableType.Array:
                 {
                     var count = Random.Shared.Next(3, 5);
@@ -120,13 +154,14 @@ new {_typeInfo.ItemTypeFullName}[{count}]
                     for (int i = 0; i < count; i++)
                     {
                         builder.Append($@"
-{(nullable? NullableValue.NewSingleValue() : Value.NewSingleValue())},
-");
+{(nullable? NullableValue.NewSingleValue() : Value.NewSingleValue())},");
                     }
+
                     builder.Append($@"
 }}");
                     return builder.ToString();
                 }
+
                 case EnumerableType.List:
                 {
                     var count = Random.Shared.Next(3, 5);

@@ -1,19 +1,28 @@
 ﻿using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Gedaq.Base.Model
 {    
     internal abstract class QueryBaseCommand : QueryBase
     {
         public string Query;
-        public Aliases Aliases;
+
+        public bool IsDynamicQuery()
+        {
+            return Query == null;
+        }
+
         public FormatParametr[] FormatParametrs;
+
         public bool HaveFromatParametrs()
         {
-            return FormatParametrs != null;
+            return FormatParametrs?.Length > 0;
         }
+
+        public abstract bool HaveDynamicParametrs();
+
+        public abstract BaseDynamicParametr BaseDynamicParametrs();
 
         public bool NeedGenerate;
 
@@ -21,11 +30,15 @@ namespace Gedaq.Base.Model
 
         public abstract IEnumerable<BaseParametr> BaseParametrs();
 
+        /// <summary>
+        /// ExecuteNonQuery method, means return type is int
+        /// </summary>
+        public bool IsRowsAffected { get; set; }
+
         protected bool FillGenerate(TypedConstant argument)
         {
             if (!(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
-                namedTypeSymbol.Name != nameof(Boolean)
-                )
+                namedTypeSymbol.Name != nameof(Boolean))
             {
                 return false;
             }
@@ -37,8 +50,7 @@ namespace Gedaq.Base.Model
         protected bool FillQuery(TypedConstant argument)
         {
             if (!(argument.Type is INamedTypeSymbol strParam) ||
-                strParam.Name != nameof(String)
-                )
+                strParam.Name != nameof(String))
             {
                 return false;
             }

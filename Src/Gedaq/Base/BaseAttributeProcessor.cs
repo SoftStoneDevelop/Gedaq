@@ -5,25 +5,26 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 
 namespace Gedaq.Base
 {
     internal abstract class BaseAttributeProcessor
     {
+        protected readonly SourceProductionContext _context;
+
+        protected BaseAttributeProcessor(SourceProductionContext context)
+        {
+            _context = context;
+        }
+
         public abstract void ProcessAttributes(
             SyntaxList<AttributeListSyntax> attributes,
             Compilation compilation, 
-            INamedTypeSymbol containsType,
-            CancellationToken cancellationToken
-            );
+            INamedTypeSymbol containsType);
 
         public abstract void CompleteProcessContainTypes();
 
-        public abstract void GenerateAndSaveMethods(
-            SourceProductionContext context,
-            CancellationToken cancellationToken
-            );
+        public abstract void GenerateAndSaveMethods();
 
         protected void AddFormatParametrs(QueryBaseCommand read, List<FormatParametr> formatParametrs)
         {
@@ -57,8 +58,7 @@ namespace Gedaq.Base
         protected void ProcessAttribute(
             AttributeData attribute,
             INamedTypeSymbol containsType, 
-            List<FormatParametr> formatParametrs
-            )
+            List<FormatParametr> formatParametrs)
         {
             if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "QueryFormatAttribute"))
             {
@@ -66,11 +66,19 @@ namespace Gedaq.Base
             }
         }
 
-        private void ProcessQueryFormat(AttributeData formatAttribute, INamedTypeSymbol containsType, List<FormatParametr> formatParametrs)
+        private void ProcessQueryFormat(
+            AttributeData formatAttribute,
+            INamedTypeSymbol containsType,
+            List<FormatParametr> formatParametrs)
         {
-            if (!FormatParametr.CreateNew(formatAttribute.ConstructorArguments, containsType, out var format, out var methodName))
+            if (!FormatParametr.CreateNew(
+                _context,
+                formatAttribute.ConstructorArguments,
+                containsType,
+                out var format,
+                out var _))
             {
-                throw new Exception($"Unknown {nameof(FormatParametr)} constructor");
+                return;
             }
 
             formatParametrs.Add(format);

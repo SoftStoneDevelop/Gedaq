@@ -8,7 +8,9 @@ namespace Gedaq.Base.Model
     internal interface IMethodInfo
     {
         string MethodName { get; }
+
         MethodType MethodType { get; }
+
         AccessModifier AccessModifier { get; }
     }
 
@@ -19,8 +21,7 @@ namespace Gedaq.Base.Model
             TypedConstant methodType,
             TypedConstant accessModifier,
             TypedConstant asyncResultType,
-            INamedTypeSymbol containsType
-            )
+            INamedTypeSymbol containsType)
         {
             SetMethodName(methodName);
             SetMethodType(methodType);
@@ -37,8 +38,7 @@ namespace Gedaq.Base.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol namedTypeSymbol3) ||
-                !namedTypeSymbol3.IsAssignableFrom("Gedaq.Common.Enums", "MethodType")
-                )
+                !namedTypeSymbol3.IsAssignableFrom("Gedaq.Common.Enums", "MethodType"))
             {
                 throw new ArgumentException($"{nameof(SetMethodType)}:Wrong argument");
             }
@@ -50,8 +50,7 @@ namespace Gedaq.Base.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol namedTypeSymbol3) ||
-                !namedTypeSymbol3.IsAssignableFrom("Gedaq.Common.Enums", "AsyncResult")
-                )
+                !namedTypeSymbol3.IsAssignableFrom("Gedaq.Common.Enums", "AsyncResult"))
             {
                 throw new ArgumentException($"{nameof(SetAsyncResultType)}:Wrong argument");
             }
@@ -63,8 +62,7 @@ namespace Gedaq.Base.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol accessModifier) ||
-                !accessModifier.IsAssignableFrom("Gedaq.Common.Enums", "AccessModifier")
-                )
+                !accessModifier.IsAssignableFrom("Gedaq.Common.Enums", "AccessModifier"))
             {
                 throw new ArgumentException($"{nameof(SetAccessModifier)}:Wrong argument");
             }
@@ -75,8 +73,7 @@ namespace Gedaq.Base.Model
 
         private AccessModifier GetAccessModifier(
             AccessModifier accessModifier,
-            INamedTypeSymbol type
-            )
+            INamedTypeSymbol type)
         {
             if(accessModifier != AccessModifier.AsContainingClass)
             {
@@ -104,8 +101,7 @@ namespace Gedaq.Base.Model
         public void SetMethodName(TypedConstant argument)
         {
             if (!(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
-                namedTypeSymbol.Name != nameof(String)
-                )
+                namedTypeSymbol.Name != nameof(String))
             {
                 throw new ArgumentException($"{nameof(SetMethodName)}:Wrong argument");
             }

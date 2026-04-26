@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
@@ -16,20 +15,17 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             ExportModelConfig(
                 stringBuilder, 
                 model,
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
             var ordered = 
                 storage.Values
                 .OrderBy(or => or.IdValue)
-                .ToList()
-                ;
+                .ToList();
 
             ExportModelTest(
                 order, 
@@ -37,23 +33,21 @@ namespace TestsGenerator.Generators.PostgreSQL
                 stringBuilder, 
                 ordered, 
                 false,
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             ExportModelTest(
                 order, 
                 model, 
                 stringBuilder, 
                 ordered, 
                 true,
-                interfaceTypeName
-                );
+                interfaceTypeName);
         }
 
         private static void ExportModelConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.BinaryExport(
@@ -70,7 +64,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
 ) TO STDOUT (FORMAT BINARY)
 "",
             methodName:""{_testName}"",
-            queryMapType: typeof({model.ClassName}),
+            queryMapTypes: [typeof({model.ClassName(false)})],
             dbTypes:
             new NpgsqlDbType[]
             {{
@@ -82,9 +76,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            )
-            ]
+            asPartInterface: typeof({interfaceTypeName}))]
         private void {_testName}Config()
         {{
         }}
@@ -97,8 +89,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
             StringBuilderArray.StringBuilderArray stringBuilder,
             List<ModelValue> storage,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             if (storage.Count < 4)
             {
@@ -115,55 +106,13 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
             await using (var connection = GlobalSetUp.GetConnection)
             {{
                 await connection.OpenAsync();
-");
-            var index = 0;
-            stringBuilder.Append($@"
-                var expected = new Dictionary<{model.IdTypeInfo.ItemTypeFullName},{model.ClassName}>({storage.Count});
-");
-            for (; index < storage.Count; index++)
-            {
-                ModelValue value = storage[index];
-                stringBuilder.Append($@"
-                expected.Add(
-                    {value.IdValue},
-                    new {model.ClassName}
-                    {{
-                        {model.IdName} = {value.IdValue},
-                        {model.ValueName} = {value.Value},
-                        {model.NullableValueName} = {value.NullableValue},
-");
-                if(value.InnerModel == null)
-                {
-                    stringBuilder.Append($@"
-                        {model.ModelInnerName} = {ValueConstants.NullValue}
-");
-                }
-                else
-                {
-                    stringBuilder.Append($@"
-                        {model.ModelInnerName} = new {model.ModelInner.ClassName}
-                        {{
-                            {model.ModelInner.IdName} = {value.InnerModel.IdValue},
-                            {model.ModelInner.ValueName} = {value.InnerModel.Value},
-                            {model.ModelInner.NullableValueName} = {value.InnerModel.NullableValue}
-                        }}
-");
-                }
-                stringBuilder.Append($@"
-                    }}
-                );
-");
-            }
-            stringBuilder.Append($@"
                 var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection).ToList{async}();
-                Assert.That(models, Has.Count.EqualTo(expected.Count));
-                for(int modelIndex = 0; modelIndex < models.Count; modelIndex++)
+                Assert.That(models, Has.Count.EqualTo({TestsPart.TestDataArrayName}.Count()));
+                for(int modelIndex = 0; modelIndex < {TestsPart.TestDataArrayName}.Count(); modelIndex++)
                 {{
                     var model = models[modelIndex];
-                    var expectedModel = expected[model.{model.ModelInner.IdName}];
-{model.Assert("model", "expectedModel", true)}
-");
-            stringBuilder.Append($@"
+                    var expectedModel = {TestsPart.TestDataArrayName}.First(wh => wh.{model.IdName} == model.{model.IdName});
+                    {model.ClassName(false)}.{ModelGenerator.AssertMethodName}(model, expectedModel, true);
                 }}
             }}
         }}

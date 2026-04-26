@@ -10,11 +10,14 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 {
     internal class NpgsqlQueryBatchRead : QueryBatchReadBase
     {
-        NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
+        private readonly NpgsqlProviderInfo _providerInfo;
 
-        public NpgsqlQueryBatchRead(NpgsqlBatchCommand commandGenerator) : base(commandGenerator)
+        public NpgsqlQueryBatchRead(
+            NpgsqlBatchCommand commandGenerator,
+            NpgsqlProviderInfo providerInfo)
+            : base(commandGenerator)
         {
-
+            _providerInfo = providerInfo;
         }
 
         protected override ProviderInfo ProviderInfo => _providerInfo;
@@ -22,8 +25,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
         protected override void ReadMethod(
             QueryBatchCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             var batch = (NpgsqlQueryBatch)source;
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
@@ -35,8 +37,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(), 
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                     needCheckOpen: true,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
 
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
@@ -48,16 +49,14 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                     needCheckOpen: false,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
         }
 
         protected override void ReadAsyncMethod(
             QueryBatchCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             var batch = (NpgsqlQueryBatch)source;
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
@@ -69,8 +68,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                     needCheckOpen: true,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
 
             if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
@@ -82,8 +80,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToTypeName(),
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                     needCheckOpen: false,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
         }
     }

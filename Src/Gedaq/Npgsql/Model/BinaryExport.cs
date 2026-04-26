@@ -1,12 +1,10 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.Enums;
+using Gedaq.Constants;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
 using System;
-using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Linq;
 
 namespace Gedaq.Npgsql.Model
 {
@@ -14,63 +12,123 @@ namespace Gedaq.Npgsql.Model
     {
         public NpgsqlSourceType SourceType { get; private set; }
         public string Query;
-        public Aliases Aliases { get; protected set; }
 
-        private int[] NpgSqlDbTypes;
+        private int[] _npgSqlDbTypes;
 
-        public bool HaveNpgSqlDbTypes => NpgSqlDbTypes != null && NpgSqlDbTypes.Length != 0;
+        public bool HaveNpgSqlDbTypes => _npgSqlDbTypes?.Length > 0;
 
         private BinaryExport()
         {
         }
 
-        internal static bool CreateNew(ImmutableArray<TypedConstant> namedArguments, INamedTypeSymbol containsType, out BinaryExport method)
+        internal static bool CreateNew(
+            SourceProductionContext context,
+            ImmutableArray<TypedConstant> namedArguments,
+            INamedTypeSymbol containsType,
+            out BinaryExport method)
         {
             method = null;
-            if (namedArguments.Length != 9)
+            if (namedArguments.Length != 10)
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametrsCount,
+                    DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
+                    DiagnosticSeverity.Error,
+                    namedArguments.Length.ToString());
+
                 return false;
             }
 
             var methodSource = new BinaryExport();
             if (!methodSource.FillQuery(namedArguments[0]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "1", nameof(Query) });
+
                 return false;
             }
 
-            if (!methodSource.FillMapType(namedArguments[2]))
+            if (!methodSource.FillMapTypes(namedArguments[2]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "3", nameof(MapTypeInfos) });
+
                 return false;
             }
 
-            if (!methodSource.FillNpgsqlDbTypes(namedArguments[3]))
+            if (!methodSource.FillOverrideAliasPrefixs(namedArguments[3]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "4", nameof(_overrideAliasPrefixs) });
+
                 return false;
             }
 
-            if (!methodSource.FillSourceType(namedArguments[5]))
+            if (!methodSource.FillNpgsqlDbTypes(namedArguments[4]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "5", nameof(_npgSqlDbTypes) });
+
+                return false;
+            }
+
+            if (!methodSource.FillSourceType(namedArguments[6]))
+            {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "7", nameof(SourceType) });
+
                 return false;
             }
 
             methodSource.MethodInfo =
                 new BaseMethodInfo(
                     methodName: namedArguments[1],
-                    methodType: namedArguments[4],
-                    accessModifier: namedArguments[6],
-                    asyncResultType: namedArguments[7],
-                    containsType
-                    );
+                    methodType: namedArguments[5],
+                    accessModifier: namedArguments[7],
+                    asyncResultType: namedArguments[8],
+                    containsType);
 
-            if (methodSource.MapTypeName == null)
+            if (!methodSource.HaveMapTypes)
             {
-                throw new Exception("The mapping type must be specified");
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.UnknownMapTypes,
+                    DiagnosticConstants.UnknownMapTypesDescr,
+                    DiagnosticSeverity.Error);
             }
 
             methodSource.ContainTypeName = containsType;
             method = methodSource;
-            if (!methodSource.SetPartInterfaceType(namedArguments[8]))
+            if (!methodSource.SetPartInterfaceType(namedArguments[9]))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    DiagnosticConstants.IncorrectAttributeParametrDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "10", nameof(PartInterfaceType) });
+
                 return false;
             }
 
@@ -80,8 +138,7 @@ namespace Gedaq.Npgsql.Model
         protected bool FillQuery(TypedConstant argument)
         {
             if (!(argument.Type is INamedTypeSymbol strParam) ||
-                strParam.Name != nameof(String)
-                )
+                strParam.Name != nameof(String))
             {
                 return false;
             }
@@ -94,8 +151,7 @@ namespace Gedaq.Npgsql.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol namedTypeSymbol4) ||
-                !namedTypeSymbol4.IsAssignableFrom("Gedaq.Npgsql.Enums", "SourceType")
-                )
+                !namedTypeSymbol4.IsAssignableFrom("Gedaq.Npgsql.Enums", "SourceType"))
             {
                 return false;
             }
@@ -110,8 +166,7 @@ namespace Gedaq.Npgsql.Model
                 arrayTypeSymbol.Rank != 1 ||
                 arrayTypeSymbol.ElementType.TypeKind != TypeKind.Enum ||
                 !(arrayTypeSymbol.ElementType is INamedTypeSymbol elementType) ||
-                !elementType.IsAssignableFrom("NpgsqlTypes", "NpgsqlDbType")
-                )
+                !elementType.IsAssignableFrom("NpgsqlTypes", "NpgsqlDbType"))
             {
                 return false;
             }
@@ -121,25 +176,25 @@ namespace Gedaq.Npgsql.Model
                 return true;
             }
 
-            NpgSqlDbTypes = new int[argument.Values.Length];
+            _npgSqlDbTypes = new int[argument.Values.Length];
             for (int i = 0; i < argument.Values.Length; i++)
             {
-                NpgSqlDbTypes[i] = (int)argument.Values[i].Value;
+                _npgSqlDbTypes[i] = (int)argument.Values[i].Value;
             }
 
             return true;
         }
 
-        public void SetAliases(Aliases aliases)
+        public void SetAliases(MapTypeInfo mapTypeInfo, Aliases aliases)
         {
-            if (NpgSqlDbTypes == null)
+            if (_npgSqlDbTypes == null)
             {
-                Aliases = aliases;
+                mapTypeInfo.Aliases = aliases;
                 return;
             }
 
             var fields = aliases.AllFieldsOrderByPosition();
-            if (NpgSqlDbTypes?.Length != fields.Count)
+            if (_npgSqlDbTypes?.Length != fields.Count)
             {
                 throw new Exception("The number of NpgSqlDbTypes and columns in the query does not match.");
             }
@@ -147,10 +202,10 @@ namespace Gedaq.Npgsql.Model
             for (int i = 0; i < fields.Count; i++)
             {
                 Field field = fields[i];
-                field.AdditionalInfo = new NpgsqlFieldInfo(NpgSqlDbTypes[i]);
+                field.AdditionalInfo = new NpgsqlFieldInfo(_npgSqlDbTypes[i]);
             }
 
-            Aliases = aliases;
+            mapTypeInfo.Aliases = aliases;
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base;
+using Gedaq.Constants;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Parser;
@@ -9,32 +10,39 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 
 namespace Gedaq.SqlClient
 {
     internal class SqlClientAttributeProcessor : BaseAttributeProcessor
     {
-        private List<SqlClientQuery> _read = new List<SqlClientQuery>();
-        private QueryParser _queryParser = new QueryParser();
+        private readonly SqlClientProviderInfo _providerInfo;
+
+        private readonly List<SqlClientQuery> _read = new List<SqlClientQuery>();
+        private readonly QueryParser _queryParser = new QueryParser();
+
+        public SqlClientAttributeProcessor(
+            SourceProductionContext context,
+            SqlClientProviderInfo providerInfo)
+            : base(context)
+        {
+            _providerInfo = providerInfo;
+        }
 
         public override void ProcessAttributes(
             SyntaxList<AttributeListSyntax> attributes, 
             Compilation compilation, 
-            INamedTypeSymbol containsType,
-            CancellationToken cancellationToken
-            )
+            INamedTypeSymbol containsType)
         {
             foreach (var attributeListSyntax in attributes)
             {
-                cancellationToken.ThrowIfCancellationRequested();
+                _context.CancellationToken.ThrowIfCancellationRequested();
                 var parentSymbol = attributeListSyntax.Parent.GetDeclaredSymbol(compilation);
                 var parentAttributes = parentSymbol.GetAttributes();
 
-                var readTemp = new ReadPair<SqlClientQuery, SqlClientParametr>();
+                var readTemp = new ReadPair<SqlClientQuery, SqlClientParametr, SqlClientDynamicParametr>();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
-                    cancellationToken.ThrowIfCancellationRequested();
+                    _context.CancellationToken.ThrowIfCancellationRequested();
                     var attributeData = parentAttributes.First(f => f.ApplicationSyntaxReference.GetSyntax() == attributeSyntax);
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.SqlClient.Attributes", "QueryAttribute"))
                     {
@@ -45,6 +53,12 @@ namespace Gedaq.SqlClient
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.SqlClient.Attributes", "ParametrAttribute"))
                     {
                         ProcessParametr(attributeData, containsType, readTemp);
+                        continue;
+                    }
+
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.SqlClient.Attributes", "DynamicParametrAttribute"))
+                    {
+                        ProcessDynamicParametr(attributeData, containsType, readTemp);
                         continue;
                     }
 
@@ -59,7 +73,7 @@ namespace Gedaq.SqlClient
         {
         }
 
-        private void TryAddReadMethod(ReadPair<SqlClientQuery, SqlClientParametr> readPair)
+        private void TryAddReadMethod(ReadPair<SqlClientQuery, SqlClientParametr, SqlClientDynamicParametr> readPair)
         {
             if (readPair.IsEmpty())
             {
@@ -73,15 +87,37 @@ namespace Gedaq.SqlClient
                 query.Parametrs[i].Index = i;
             }
 
+            AddDynamicParametrs(readPair);
             AddFormatParametrs(readPair.Query, readPair.FormatParametrs);
 
             if (query.QueryType == QueryType.NonQuery)
             {
-                query.Aliases = _queryParser.GetIntResultAlias();
+                query.IsRowsAffected = true;
             }
             else
             {
-                query.Aliases = _queryParser.Parse(ref query.Query);
+                if (!query.IsDynamicQuery())
+                {
+                    // query must contain select or return
+                    query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);
+                }
+                else
+                {
+                    foreach (var mapTypeInfo in query.MapTypeInfos)
+                    {
+                        mapTypeInfo.ParseAliasesFromType(_context, _providerInfo);
+                    }
+                }
+            }
+
+            if (query.HaveDynamicParametrs() && query.HaveParametrs())
+            {
+                DiagnosticHelper.ReportDiagnostic(
+                    _context,
+                    DiagnosticConstants.AmbiguityOfParameterTypes,
+                    DiagnosticConstants.AmbiguityOfParameterTypesDescr,
+                    DiagnosticSeverity.Error,
+                    query.MethodName);
             }
 
             if (query.NeedGenerate)
@@ -90,9 +126,17 @@ namespace Gedaq.SqlClient
             }
         }
 
-        private void ProcessQueryRead(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ReadPair<SqlClientQuery, SqlClientParametr> readPair)
+        private void AddDynamicParametrs(ReadPair<SqlClientQuery, SqlClientParametr, SqlClientDynamicParametr> readPair)
         {
-            if (!SqlClientQuery.CreateNew(queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
+            readPair.Query.DynamicParametrs = readPair.DynamicParametr;
+        }
+
+        private void ProcessQueryRead(
+            AttributeData queryReadAttribute,
+            INamedTypeSymbol containsType,
+            ReadPair<SqlClientQuery, SqlClientParametr, SqlClientDynamicParametr> readPair)
+        {
+            if (!SqlClientQuery.CreateNew(_context, queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
             {
                 throw new Exception($"Unknown {nameof(SqlClientQuery)} constructor");
             }
@@ -100,7 +144,10 @@ namespace Gedaq.SqlClient
             readPair.Query = queryReadMethod;
         }
 
-        private void ProcessParametr(AttributeData parametrAttribute, INamedTypeSymbol containsType, ReadPair<SqlClientQuery, SqlClientParametr> readPair)
+        private void ProcessParametr(
+            AttributeData parametrAttribute,
+            INamedTypeSymbol containsType,
+            ReadPair<SqlClientQuery, SqlClientParametr, SqlClientDynamicParametr> readPair)
         {
             if (!SqlClientParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
             {
@@ -110,22 +157,43 @@ namespace Gedaq.SqlClient
             readPair.Parametrs.Add(parametr);
         }
 
-        public override void GenerateAndSaveMethods(SourceProductionContext context, CancellationToken cancellationToken)
+        private void ProcessDynamicParametr(
+            AttributeData parametrAttribute,
+            INamedTypeSymbol containsType,
+            ReadPair<SqlClientQuery, SqlClientParametr, SqlClientDynamicParametr> readPair)
         {
-            var readGenerator = new SqlClientQueryGenerator();
+            if (!SqlClientDynamicParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr))
+            {
+                throw new Exception($"Unknown {nameof(SqlClientDynamicParametr)} constructor");
+            }
+
+            if (readPair.DynamicParametr != null)
+            {
+                DiagnosticHelper.ReportDiagnostic(
+                    _context,
+                    DiagnosticConstants.DynamicParameterDuplicate,
+                    DiagnosticConstants.DynamicParameterDuplicateDescr,
+                    DiagnosticSeverity.Error);
+            }
+
+            readPair.DynamicParametr = parametr;
+        }
+
+        public override void GenerateAndSaveMethods()
+        {
+            var readGenerator = new SqlClientQueryGenerator(_context, _providerInfo);
             var interfaceGenerator = new InterfaceGenerator();
             foreach (var queryRead in _read)
             {
-                cancellationToken.ThrowIfCancellationRequested();
+                _context.CancellationToken.ThrowIfCancellationRequested();
                 interfaceGenerator.Reset();
                 readGenerator.Generate(queryRead, interfaceGenerator);
-                context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}SqlClient.g.cs", readGenerator.GetCode());
+                _context.AddSource($"{queryRead.ContainTypeName.Name}{queryRead.MethodName}SqlClient.g.cs", readGenerator.GetCode());
                 interfaceGenerator.GenerateAndSave(
-                    context,
+                    _context,
                     queryRead.PartInterfaceType,
                     readGenerator.Usings(),
-                    $"{queryRead.ContainTypeName.Name}{queryRead.MethodName}"
-                    );
+                    $"{queryRead.ContainTypeName.Name}{queryRead.MethodName}");
             }
             _read.Clear();
         }

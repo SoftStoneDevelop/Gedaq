@@ -1,4 +1,6 @@
-﻿using Gedaq.Npgsql.Model;
+﻿using Gedaq.Constants;
+using Gedaq.Helpers;
+using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
@@ -13,28 +15,46 @@ namespace Gedaq.Base.Model
         public int Position;
 
         internal static bool CreateNew(
+            SourceProductionContext context,
             ImmutableArray<TypedConstant> namedArguments,
             INamedTypeSymbol containsType,
             out FormatParametr format,
-            out string methodName
-            )
+            out string methodName)
         {
             format = null;
             methodName = null;
 
             if (namedArguments.Length != 2)
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametrsCount,
+                    "The number of attribute parameters does not match",
+                    DiagnosticSeverity.Error);
+
                 return false;
             }
 
             var result = new FormatParametr();
             if (!SetPosition(namedArguments[0], result))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    $"Parameter 1 (Position) for QueryFormat could not be parsed",
+                    DiagnosticSeverity.Error);
+
                 return false;
             }
 
             if (!SetName(namedArguments[1], result))
             {
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.IncorrectAttributeParametr,
+                    $"Parameter 2 (Name) for QueryFormat could not be parsed",
+                    DiagnosticSeverity.Error);
+
                 return false;
             }
 
@@ -45,8 +65,7 @@ namespace Gedaq.Base.Model
         protected static bool SetName(TypedConstant argument, FormatParametr parametr)
         {
             if (!(argument.Type is INamedTypeSymbol strParam) ||
-                strParam.Name != nameof(String)
-                )
+                strParam.Name != nameof(String))
             {
                 return false;
             }
@@ -58,8 +77,7 @@ namespace Gedaq.Base.Model
         protected static bool SetPosition(TypedConstant argument, FormatParametr parametr)
         {
             if (!(argument.Type is INamedTypeSymbol sizeParam) ||
-                sizeParam.Name != nameof(Int32)
-                )
+                sizeParam.Name != nameof(Int32))
             {
                 return false;
             }

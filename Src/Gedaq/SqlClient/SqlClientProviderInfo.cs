@@ -4,8 +4,6 @@ using Gedaq.Helpers;
 using Gedaq.SqlClient.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Gedaq.SqlClient
 {
@@ -43,6 +41,11 @@ namespace Gedaq.SqlClient
             return "connection";
         }
 
+        public override string GetParametrType()
+        {
+            return "SqlParameter";
+        }
+
         public override string GetParametrValue(BaseParametr parametr, string source)
         {
             return $"{source}.Parameters[{parametr.Index}].Value";
@@ -63,13 +66,17 @@ namespace Gedaq.SqlClient
             return SqlClientMapTypeHelper.IsSpecialHandlerType(type);
         }
 
-        public override string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader")
+        public override string GetSpecialTypeValue(
+            ITypeSymbol type,
+            string aliasesPrefix,
+            Field field,
+            string source = "reader")
         {
             switch (type.GetFullTypeName())
             {
                 case "System.Data.SqlTypes.SqlXml":
                 {
-                    return $"{source}.GetSqlXml({fieldId})";
+                    return $"{source}.GetSqlXml({ValueReaderKey(aliasesPrefix, field)})";
                 }
 
                 default:

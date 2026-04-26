@@ -10,8 +10,7 @@ namespace Gedaq.Helpers
         internal static bool IsAssignableFrom(
             this INamedTypeSymbol type,
             string fullNamespace,
-            string typeName
-        )
+            string typeName)
         {
             var nestedStack = new Stack<INamedTypeSymbol>();
             nestedStack.Push(type);
@@ -22,6 +21,7 @@ namespace Gedaq.Helpers
                 {
                     return true;
                 }
+
                 if (currentType.BaseType != null)
                 {
                     nestedStack.Push(currentType.BaseType);
@@ -31,8 +31,7 @@ namespace Gedaq.Helpers
         }
 
         internal static string GetFullNamespace(
-            this INamespaceSymbol namespaceSymbol
-        )
+            this INamespaceSymbol namespaceSymbol)
         {
             var builder = new StringBuilder();
             var nestedStack = new Stack<INamespaceSymbol>();
@@ -64,8 +63,7 @@ namespace Gedaq.Helpers
         internal static string GetFullTypeName(
             this ITypeSymbol typeSymbol,
             bool replaceNullable = false,
-            bool addQuestionNoatble = true
-            )
+            bool addQuestionNoatble = true)
         {
             if(replaceNullable && typeSymbol.IsNullableType())
             {
@@ -94,16 +92,14 @@ namespace Gedaq.Helpers
         }
 
         private static string NameSpaceWithName(
-            this INamedTypeSymbol namedTypeSymbol
-            )
+            this INamedTypeSymbol namedTypeSymbol)
         {
             return $"{namedTypeSymbol.ContainingNamespace.GetFullNamespace()}.{namedTypeSymbol.Name}";
         }
 
         internal static bool IsArrayType(
             this ITypeSymbol typeSymbol,
-            out INamedTypeSymbol elementType
-            )
+            out INamedTypeSymbol elementType)
         {
             if (typeSymbol is IArrayTypeSymbol arrayTypeSymbol)
             {
@@ -117,14 +113,12 @@ namespace Gedaq.Helpers
 
         internal static bool IsListType(
             this ITypeSymbol typeSymbol,
-            out INamedTypeSymbol elementType
-            )
+            out INamedTypeSymbol elementType)
         {
             if (!(typeSymbol is INamedTypeSymbol namedTypeSymbol) ||
                 !namedTypeSymbol.IsGenericType ||
                 namedTypeSymbol.ConstructedFrom == null ||
-                namedTypeSymbol.ConstructedFrom.NameSpaceWithName() != "System.Collections.Generic.List"
-                )
+                namedTypeSymbol.ConstructedFrom.NameSpaceWithName() != "System.Collections.Generic.List")
             {
                 elementType = null;
                 return false;
@@ -139,8 +133,7 @@ namespace Gedaq.Helpers
             if(!(typeSymbol is INamedTypeSymbol namedTypeSymbol) ||
                 !namedTypeSymbol.IsGenericType ||
                 namedTypeSymbol.ConstructedFrom == null ||
-                namedTypeSymbol.ConstructedFrom.NameSpaceWithName() != "System.Nullable"
-                )
+                namedTypeSymbol.ConstructedFrom.NameSpaceWithName() != "System.Nullable")
             {
                 return false;
             }
@@ -152,8 +145,7 @@ namespace Gedaq.Helpers
             this ITypeSymbol typeSymbol,
             string propertyName,
             out string findName,
-            out ITypeSymbol findType
-            )
+            out ITypeSymbol findType)
         {
             var propertyLower = propertyName.ToLowerInvariant();
             foreach (var member in typeSymbol.GetMembers())

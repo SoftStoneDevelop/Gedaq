@@ -11,14 +11,19 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
 {
     internal class MySqlConnectorCommand : CommandGeneratorBase
     {
-        MySqlConnectorProviderInfo _providerInfo = new MySqlConnectorProviderInfo();
+        private readonly MySqlConnectorProviderInfo _providerInfo;
+
+        public MySqlConnectorCommand(MySqlConnectorProviderInfo providerInfo)
+        {
+            _providerInfo = providerInfo;
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void GenrateCommand(
             QueryBaseCommand baseSource, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             MySqlConnectorQuery source = (MySqlConnectorQuery)baseSource;
             if (baseSource.MethodType.HasFlag(MethodType.Sync))
@@ -31,8 +36,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
                         MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                         MethodType.Sync, 
                         builder,
-                        interfaceGenerator
-                        );
+                        interfaceGenerator);
                 }
 
                 if (source.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
@@ -43,8 +47,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
                         MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                         MethodType.Sync, 
                         builder,
-                        interfaceGenerator
-                        );
+                        interfaceGenerator);
                 }
             }
 
@@ -58,8 +61,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
                         MySqlConnectorSourceType.MySqlConnection.ToParametrName(),
                         MethodType.Async, 
                         builder,
-                        interfaceGenerator
-                        );
+                        interfaceGenerator);
                 }
 
                 if (source.SourceType.HasFlag(MySqlConnectorSourceType.MySqlDataSource))
@@ -70,8 +72,7 @@ namespace Gedaq.MySqlConnector.GeneratorsQuery
                         MySqlConnectorSourceType.MySqlDataSource.ToParametrName(),
                         MethodType.Async, 
                         builder,
-                        interfaceGenerator
-                        );
+                        interfaceGenerator);
                 }
             }
         }

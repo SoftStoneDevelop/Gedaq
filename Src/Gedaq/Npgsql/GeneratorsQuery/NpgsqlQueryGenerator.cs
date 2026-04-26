@@ -2,6 +2,7 @@
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Model;
+using Microsoft.CodeAnalysis;
 
 namespace Gedaq.Npgsql.GeneratorsQuery
 {
@@ -11,11 +12,14 @@ namespace Gedaq.Npgsql.GeneratorsQuery
         private readonly NpgsqlQueryScalarAndNonQuery _queryScalarAndNonQuery;
         private readonly NpgsqlCommand _commandGenerator;
 
-        public NpgsqlQueryGenerator()
+        public NpgsqlQueryGenerator(
+            SourceProductionContext context,
+            NpgsqlProviderInfo providerInfo)
+            : base(context)
         {
-            _commandGenerator = new NpgsqlCommand();
-            _queryReadGenerator = new NpgsqlQueryRead(_commandGenerator);
-            _queryScalarAndNonQuery = new NpgsqlQueryScalarAndNonQuery(_commandGenerator);
+            _commandGenerator = new NpgsqlCommand(providerInfo);
+            _queryReadGenerator = new NpgsqlQueryRead(_commandGenerator, providerInfo);
+            _queryScalarAndNonQuery = new NpgsqlQueryScalarAndNonQuery(_commandGenerator, providerInfo);
         }
 
         public void GenerateMethod(NpgsqlQuery source, InterfaceGenerator interfaceGenerator)

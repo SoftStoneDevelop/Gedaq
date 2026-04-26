@@ -1,4 +1,5 @@
-﻿using TestsGenerator.Constants;
+﻿using System;
+using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
@@ -15,65 +16,70 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var indexValue = 0;
             InsertModelConfig(
                 stringBuilder, 
                 model,
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             InsertModelTest(
                 order, 
-                stringBuilder, 
-                storage, 
+                stringBuilder,
+                storage,
+                model,
                 ref indexValue, 
                 indexValue + 2, 
                 isAsync: false,
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             InsertModelTest(
                 order, 
                 stringBuilder, 
-                storage, 
+                storage,
+                model,
                 ref indexValue, 
                 indexValue + 2,
                 isAsync: true, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
-            if(DefaultTypeHelper.CanConvert(model.TypeInfo.ItemTypeFullName) &&
-                model.TypeInfo.EnumerableType != EnumerableType.List//cannot implicity convert array to list
-                )
+            Span<bool> dynamicParametrValues = [true, false];
+            foreach (var dynamicParametrValue in dynamicParametrValues)
             {
-                InsertModelReturningScalarTest(
-                    order, 
-                    stringBuilder, 
-                    storage, 
-                    model, 
-                    ref indexValue, 
-                    indexValue + 2, 
-                    isAsync: false,
-                    interfaceTypeName
-                    );
-                InsertModelReturningScalarTest(
-                    order, 
-                    stringBuilder, 
-                    storage, 
-                    model, 
-                    ref indexValue, 
-                    indexValue + 2, 
-                    isAsync: true,
-                    interfaceTypeName
-                    );
+                InsertModelReturningConfig(
+                    stringBuilder,
+                    model,
+                    interfaceTypeName,
+                    withDynamicParameter: dynamicParametrValue);
+
+                if (DefaultTypeHelper.CanConvert(model.TypeInfo.ItemTypeFullName) &&
+                    model.TypeInfo.EnumerableType != EnumerableType.List) // cannot implicity convert array to list
+                {
+                    InsertModelReturningScalarTest(
+                        order,
+                        stringBuilder,
+                        storage,
+                        model,
+                        ref indexValue,
+                        indexValue + 2,
+                        isAsync: false,
+                        interfaceTypeName,
+                        withDynamicParameter: dynamicParametrValue);
+
+                    InsertModelReturningScalarTest(
+                        order,
+                        stringBuilder,
+                        storage,
+                        model,
+                        ref indexValue,
+                        indexValue + 2,
+                        isAsync: true,
+                        interfaceTypeName,
+                        withDynamicParameter: dynamicParametrValue);
+                }
             }
 
-            InsertModelReturningConfig(
-                stringBuilder, 
-                model, 
-                interfaceTypeName
-                );
             InsertModelReturningReadTest(
                 order, 
                 stringBuilder, 
@@ -82,8 +88,8 @@ namespace TestsGenerator.Generators.PostgreSQL
                 ref indexValue, 
                 indexValue + 4, 
                 isAsync: false, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
+
             var canDbConnection = model.TypeInfo.EnumerableType == EnumerableType.SingleType;
             int endIndex = !canDbConnection ? storage.Values.Count : indexValue + 4;
             InsertModelReturningReadTest(
@@ -94,27 +100,26 @@ namespace TestsGenerator.Generators.PostgreSQL
                 ref indexValue, 
                 endIndex, 
                 isAsync: true, 
-                interfaceTypeName
-                );
+                interfaceTypeName);
 
-            if(canDbConnection)
+            if (canDbConnection)
+            {
                 DbConnection.InsertModel.Generate(
-                    order, 
-                    stringBuilder, 
-                    model, 
-                    storage, 
-                    Database.PostgreSQL, 
-                    ref indexValue, 
+                    order,
+                    stringBuilder,
+                    model,
+                    storage,
+                    Database.PostgreSQL,
+                    ref indexValue,
                     interfaceTypeName,
-                    toEnd: true
-                    );
+                    toEnd: true);
+            }
         }
 
         private static void InsertModelConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.Query(
@@ -133,39 +138,33 @@ VALUES (
 );
 "",
             methodName:""{_testName}"",
-            queryMapType: null,
+            queryMapTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.NonQuery,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            ), 
+            asPartInterface: typeof({interfaceTypeName})), 
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdType}), 
                 position: 1,
                 methodParametrName: ""{model.ModelInner.IdColumnName}"", 
-                dbType: {model.IdTypeInfo.SpecialDbTypeStr()}
-                ),
+                dbType: {model.IdTypeInfo.SpecialDbTypeStr()}),
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.ValueType}),
                 position: 2,
                 methodParametrName: ""{model.ModelInner.ValueColumnName}"",
-                dbType: {model.TypeInfo.SpecialDbTypeStr()}
-                ),
+                dbType: {model.TypeInfo.SpecialDbTypeStr()}),
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.NullableValueType}), 
                 position: 3, 
                 methodParametrName: ""{model.ModelInner.NullableValueColumnName}"", 
-                dbType: {model.TypeInfo.SpecialDbTypeStr()}
-                ),
+                dbType: {model.TypeInfo.SpecialDbTypeStr()}),
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdType}?), 
                 position: 4, 
                 methodParametrName: ""{model.ModelInnerColumnName}"", 
-                dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()}
-                )
-            ]
+                dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()})]
         public void {_testName}Config()
         {{
         }}
@@ -176,16 +175,13 @@ VALUES (
             int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             ModelValueStorage storage,
+            Model.ModelType model,
             ref int indexValue,
             int endIndex,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
-            if (endIndex > storage.Values.Count)
-            {
-                throw new System.ArgumentOutOfRangeException(nameof(endIndex));
-            }
+            System.ArgumentOutOfRangeException.ThrowIfGreaterThan(endIndex, storage.Values.Count);
 
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -196,15 +192,12 @@ VALUES (
             await using (var connection = GlobalSetUp.GetConnection)
             {{
                 await connection.OpenAsync();
-                int changedRows = 0;
-");
+                int changedRows = 0;");
             for (; indexValue < endIndex; indexValue++)
             {
-                ModelValue value = storage.Values[indexValue];
                 stringBuilder.Append($@"
-                changedRows = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)});
-                Assert.That(changedRows, Is.EqualTo(1));
-");
+                changedRows = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, {TestsPart.TestDataArrayName}[{indexValue}].{model.IdName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.NullableValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName} == null ? {ValueConstants.NullValue} : {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName});
+                Assert.That(changedRows, Is.EqualTo(1));");
             }
             stringBuilder.Append($@"
             }}
@@ -215,8 +208,8 @@ VALUES (
         private static void InsertModelReturningConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            string interfaceTypeName
-            )
+            string interfaceTypeName,
+            bool withDynamicParameter)
         {
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.Query(
@@ -243,41 +236,47 @@ RETURNING
     {model.IdColumnName}
 ;
 "",
-            methodName:""{_testName}Returning"",
-            queryMapType: typeof({model.ClassName}),
+            methodName:""{_testName}{(withDynamicParameter ? NameConstants.DynamicParametr : "")}Returning"",
+            queryMapTypes: [typeof({model.ClassName(false)})],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read | QueryType.Scalar,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            ), 
+            asPartInterface: typeof({interfaceTypeName})),");
+
+            if (withDynamicParameter)
+            {
+                stringBuilder.Append($@"
+            Gedaq.Npgsql.Attributes.DynamicParametr()");
+            }
+            else
+            {
+                stringBuilder.Append($@"
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdType}), 
                 position: 1,
                 methodParametrName: ""{model.ModelInner.IdColumnName}"", 
-                dbType: {model.IdTypeInfo.SpecialDbTypeStr()}
-                ),
+                dbType: {model.IdTypeInfo.SpecialDbTypeStr()}),
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.ValueType}),
                 position: 2,
                 methodParametrName: ""{model.ModelInner.ValueColumnName}"",
-                dbType: {model.TypeInfo.SpecialDbTypeStr()}
-                ),
+                dbType: {model.TypeInfo.SpecialDbTypeStr()}),
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.NullableValueType}), 
                 position: 3, 
                 methodParametrName: ""{model.ModelInner.NullableValueColumnName}"", 
-                dbType: {model.TypeInfo.SpecialDbTypeStr()}
-                ),
+                dbType: {model.TypeInfo.SpecialDbTypeStr()}),
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdType}?), 
                 position: 4, 
                 methodParametrName: ""{model.ModelInnerColumnName}"", 
-                dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()}
-                )
-            ]
-        public void {_testName}ReturningConfig()
+                dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()})");
+            }
+
+            stringBuilder.Append($@"]
+        public void {_testName}{(withDynamicParameter ? NameConstants.DynamicParametr : "")}ReturningConfig()
         {{
         }}
 ");
@@ -291,13 +290,9 @@ RETURNING
             ref int indexValue,
             int endIndex,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
-            if (endIndex > storage.Values.Count)
-            {
-                throw new System.ArgumentOutOfRangeException(nameof(endIndex));
-            }
+            System.ArgumentOutOfRangeException.ThrowIfGreaterThan(endIndex, storage.Values.Count);
 
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -308,18 +303,14 @@ RETURNING
             await using (var connection = GlobalSetUp.GetConnection)
             {{
                 await connection.OpenAsync();
-                List<{model.ClassName}> models = null;
-                {model.ClassName} model = null;
+                List<{model.ClassName(false)}> models = null;
 ");
             for (; indexValue < endIndex; indexValue++)
             {
-                ModelValue value = storage.Values[indexValue];
                 stringBuilder.Append($@"
-                models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Returning{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)}).ToList{async}();
+                models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Returning{async}(connection, {TestsPart.TestDataArrayName}[{indexValue}].{model.IdName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.NullableValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName} == null ? {ValueConstants.NullValue} : {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName});
                 Assert.That(models, Has.Count.EqualTo(1));
-                model = models[0];
-");
-                stringBuilder.Append(model.Assert("model", value, innerHaveOnlyId: true));
+                {model.ClassName(false)}.{ModelGenerator.AssertMethodName}(models[0],{TestsPart.TestDataArrayName}[{indexValue}], true);");
             }
             stringBuilder.Append($@"
             }}
@@ -335,13 +326,10 @@ RETURNING
             ref int indexValue,
             int endIndex,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName,
+            bool withDynamicParameter)
         {
-            if (endIndex > storage.Values.Count)
-            {
-                throw new System.ArgumentOutOfRangeException(nameof(endIndex));
-            }
+            System.ArgumentOutOfRangeException.ThrowIfGreaterThan(endIndex, storage.Values.Count);
 
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
@@ -356,9 +344,8 @@ RETURNING
                 stringBuilder.Append($@"
         [Ignore(""Invalid cast, ExecuteScalar provider return wrong type"")]
         [Test, Order({order})]
-        public async Task {_testName}TestReturningScalar{async}()
+        public async Task {_testName}{(withDynamicParameter ? NameConstants.DynamicParametr : "")}TestReturningScalar{async}()
         {{
-            
         }}
 ");
                 return;
@@ -366,31 +353,70 @@ RETURNING
 
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task {_testName}TestReturningScalar{async}()
+        public async Task {_testName}{(withDynamicParameter ? NameConstants.DynamicParametr : "")}TestReturningScalar{async}()
         {{
             await using (var connection = GlobalSetUp.GetConnection)
             {{
                 await connection.OpenAsync();
-                {model.NullableValueType} nullable = null;
-");
+                {model.NullableValueType} nullable = null;");
+
             for (; indexValue < endIndex; indexValue++)
             {
                 ModelValue value = storage.Values[indexValue];
-                stringBuilder.Append($@"
-                nullable = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.Scalar{_testName}Returning{async}(connection, {value.Id}, {value.Value}, {value.NullableValue}, {(value.InnerModel == null ? "null" : value.InnerModel.IdValue)});
-");
+                if (withDynamicParameter)
+                {
+                    stringBuilder.Append($@"
+                {{
+                    var parameters = new NpgsqlParameter[4];
+                    parameters[0] = new NpgsqlParameter<{model.IdType}>();
+                    ((NpgsqlParameter<{model.IdType}>)parameters[0]).NpgsqlDbType = {model.IdTypeInfo.SpecialDbTypeStr()};
+                    ((NpgsqlParameter<{model.IdType}>)parameters[0]).TypedValue = {TestsPart.TestDataArrayName}[{indexValue}].{model.IdName};
+
+                    parameters[1] = new NpgsqlParameter<{model.ValueType}>();
+                    ((NpgsqlParameter<{model.ValueType}>)parameters[1]).NpgsqlDbType = {model.TypeInfo.SpecialDbTypeStr()};
+                    ((NpgsqlParameter<{model.ValueType}>)parameters[1]).TypedValue = {TestsPart.TestDataArrayName}[{indexValue}].{model.ValueName};
+
+                    parameters[2] = new NpgsqlParameter();
+                    parameters[2].NpgsqlDbType = {model.TypeInfo.SpecialDbTypeStr()};
+                    if ({TestsPart.TestDataArrayName}[{indexValue}].{model.NullableValueName} != null)
+                    {{
+                        parameters[2].Value = {TestsPart.TestDataArrayName}[{indexValue}].{model.NullableValueName};
+                    }}
+                    else
+                    {{
+                        parameters[2].Value = System.DBNull.Value;
+                    }}
+
+                    parameters[3] = new NpgsqlParameter();
+                    parameters[3].NpgsqlDbType = {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()};
+                    if ({TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName} != null)
+                    {{
+                        parameters[3].Value = {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName};
+                    }}
+                    else
+                    {{
+                        parameters[3].Value = System.DBNull.Value;
+                    }}
+
+                    nullable = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.Scalar{_testName}{(withDynamicParameter ? NameConstants.DynamicParametr : "")}Returning{async}(connection, parameters);
+                }}");
+                }
+                else
+                {
+                    stringBuilder.Append($@"
+                nullable = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.Scalar{_testName}{(withDynamicParameter ? NameConstants.DynamicParametr : "")}Returning{async}(connection, {TestsPart.TestDataArrayName}[{indexValue}].{model.IdName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.NullableValueName}, {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName} == null ? {ValueConstants.NullValue} : {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName});");
+                }
+
                 if(value.NullableValue == ValueConstants.NullValue)
                 {
                     stringBuilder.Append($@"
-                Assert.That(nullable, Is.Null);
-");
+                Assert.That(nullable, Is.Null);");
                 }
                 else
                 {
                     stringBuilder.Append($@"
                 Assert.That(nullable, Is.Not.Null);
-                Assert.That(nullable, Is.EqualTo({value.NullableValue}));
-");
+                Assert.That(nullable, Is.EqualTo({value.NullableValue}));");
                 }
             }
             stringBuilder.Append($@"

@@ -2,6 +2,7 @@
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.SqlClient.Model;
+using Microsoft.CodeAnalysis;
 
 namespace Gedaq.SqlClient.GeneratorsQuery
 {
@@ -11,11 +12,14 @@ namespace Gedaq.SqlClient.GeneratorsQuery
         private readonly SqlClientQueryRead _queryReadGenerator;
         private readonly SqlClientQueryScalarAndNonQuery _queryScalarAndNonQuery;
 
-        public SqlClientQueryGenerator()
+        public SqlClientQueryGenerator(
+            SourceProductionContext context,
+            SqlClientProviderInfo providerInfo)
+            : base(context)
         {
-            _commandGenerator = new SqlClientCommandGenerator();
-            _queryReadGenerator = new SqlClientQueryRead(_commandGenerator);
-            _queryScalarAndNonQuery = new SqlClientQueryScalarAndNonQuery(_commandGenerator);
+            _commandGenerator = new SqlClientCommandGenerator(providerInfo);
+            _queryReadGenerator = new SqlClientQueryRead(_commandGenerator, providerInfo);
+            _queryScalarAndNonQuery = new SqlClientQueryScalarAndNonQuery(_commandGenerator, providerInfo);
         }
 
         public void Generate(SqlClientQuery source, InterfaceGenerator interfaceGenerator)

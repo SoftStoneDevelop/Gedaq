@@ -1,10 +1,8 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.DbConnection.Model;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Immutable;
-using System.Data;
 
 namespace Gedaq.Npgsql.Model
 {
@@ -25,19 +23,15 @@ namespace Gedaq.Npgsql.Model
 
             return HaveNameInCommand ?
                     $"{NameInCommand}{postfix}" :
-                    $"mParametr{Index}{postfix}"
-                ;
+                    $"mParametr{Index}{postfix}";
         }
 
         internal static bool CreateNew(
             ImmutableArray<TypedConstant> namedArguments,
             INamedTypeSymbol containsType,
-            out NpgsqlParametr parametr,
-            out string methodName
-            )
+            out NpgsqlParametr parametr)
         {
             parametr = null;
-            methodName = null;
 
             if (namedArguments.Length != 13)
             {
@@ -128,8 +122,7 @@ namespace Gedaq.Npgsql.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol dbType) ||
-                !dbType.IsAssignableFrom("NpgsqlTypes", "NpgsqlDbType")
-                )
+                !dbType.IsAssignableFrom("NpgsqlTypes", "NpgsqlDbType"))
             {
                 return false;
             }
@@ -141,8 +134,7 @@ namespace Gedaq.Npgsql.Model
         protected static bool SetPosition(TypedConstant argument, NpgsqlParametr parametr)
         {
             if (!(argument.Type is INamedTypeSymbol sizeParam) ||
-                sizeParam.Name != nameof(Int32)
-                )
+                sizeParam.Name != nameof(Int32))
             {
                 return false;
             }

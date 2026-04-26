@@ -8,22 +8,13 @@ namespace Gedaq.DbConnection.Helpers
 {
     internal static class DbGeneratorHelper
     {
-        public static void CreateParametr(BaseParametr baseParametr, StringBuilder builder, bool isBatch = false)
+        public static void CreateParametr(BaseParametr baseParametr, StringBuilder builder)
         {
             var parametr = (DbParametr)baseParametr;
 
-            if(isBatch)
-            {
-                builder.Append($@"
-                var parametr = fakeCommand.CreateParameter();
-            ");
-            }
-            else
-            {
-                builder.Append($@"
+            builder.Append($@"
             var parametr = command.CreateParameter();
 ");
-            }
 
             if (parametr.HaveDbType)
             {

@@ -6,6 +6,7 @@
         Single = 2,
         SingleOrDefault = 3,
         First = 4,
-        FirstOrDefault = 5
+        FirstOrDefault = 5,
+        List = 6
     }
 }

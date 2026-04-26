@@ -2,17 +2,16 @@
 using Gedaq.Common.Attributes;
 using Gedaq.DbConnection.Attributes;
 using NUnit.Framework;
-using System.Linq;
 using System.Threading.Tasks;
 
-namespace DbConnectionTests
+namespace DbConnectionTests.MsSql
 {
     [TestFixture]
-    internal partial class QueryFixture : BaseFixture
+    internal partial class QueryFixture
     {
         [Test]
         [Query(
-            @"
+            query: @"
 SELECT 
     p.id,
     p.firstname,
@@ -32,17 +31,15 @@ LEFT JOIN country c ON c.id = i.country_id
 WHERE p.id != {1} AND p.id != {0}
 ORDER BY p.id ASC
 ",
-            "MsSqlFormatToClass",
-            typeof(Person),
-            Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync
-            ), 
+            methodName: "MsSqlFormatToClass",
+            queryMapTypes: [typeof(Person)],
+            methodType: Gedaq.Common.Enums.MethodType.Async | Gedaq.Common.Enums.MethodType.Sync), 
             QueryFormat(1, "condition"), 
-            QueryFormat(0)
-            ]
+            QueryFormat(0)]
         public async Task ReadFormatToClassAsync()
         {
-            using var connection = OpenConnection();
-            var list = await MsSqlFormatToClassAsync(connection, format0: 3.ToString(), condition: 6.ToString()).ToListAsync();
+            using var connection = GlobalSetUp.OpenConnection();
+            var list = await MsSqlFormatToClassAsync(connection, format0: 3.ToString(), condition: 6.ToString());
 
             Assert.That(list, Has.Count.EqualTo(8));
 
@@ -60,7 +57,7 @@ ORDER BY p.id ASC
             {
                 Assert.That(list[3].Id, Is.EqualTo(4));
                 Assert.That(list[3].FirstName, Is.EqualTo("John4"));
-                Assert.That(list[3].MiddleName, Is.EqualTo("Сurly4"));
+                Assert.That(list[3].MiddleName, Is.EqualTo("Curly4"));
                 Assert.That(list[3].LastName, Is.EqualTo("Doe4"));
 
                 Assert.That(list[3].Identification, Is.Not.EqualTo(null));
@@ -79,7 +76,7 @@ ORDER BY p.id ASC
             {
                 Assert.That(list[4].Id, Is.EqualTo(5));
                 Assert.That(list[4].FirstName, Is.EqualTo("John5"));
-                Assert.That(list[4].MiddleName, Is.EqualTo("Сurly5"));
+                Assert.That(list[4].MiddleName, Is.EqualTo("Curly5"));
                 Assert.That(list[4].LastName, Is.EqualTo("Doe5"));
 
                 Assert.That(list[4].Identification, Is.Not.EqualTo(null));

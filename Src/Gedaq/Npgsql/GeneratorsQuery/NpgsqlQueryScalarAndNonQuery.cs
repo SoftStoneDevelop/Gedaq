@@ -10,11 +10,14 @@ namespace Gedaq.Npgsql.GeneratorsQuery
 {
     internal class NpgsqlQueryScalarAndNonQuery : QueryScalarNonQueryBase
     {
-        private readonly NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
+        private readonly NpgsqlProviderInfo _providerInfo;
 
-        public NpgsqlQueryScalarAndNonQuery(NpgsqlCommand commandGenerator) : base(commandGenerator)
+        public NpgsqlQueryScalarAndNonQuery(
+            NpgsqlCommand commandGenerator,
+            NpgsqlProviderInfo providerInfo)
+            : base(commandGenerator)
         {
-
+            _providerInfo = providerInfo;
         }
 
         protected override ProviderInfo ProviderInfo => _providerInfo;
@@ -22,8 +25,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
         protected override void NonQueryMethod(
             QueryBaseCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             var query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
@@ -36,8 +38,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                     useInAndOut: true,
                     needCheckOpen: true,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
 
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
@@ -50,16 +51,14 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                     useInAndOut: true,
                     needCheckOpen: false,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
         }
 
         protected override void NonQueryMethodAsync(
             QueryBaseCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             var query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
@@ -72,8 +71,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                     useInAndOut: false,
                     needCheckOpen: true,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
 
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
@@ -86,16 +84,14 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                     useInAndOut: false,
                     needCheckOpen: false,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
         }
 
         protected override void ScalarMethod(
             QueryBaseCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             var query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
@@ -108,8 +104,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                     useInAndOut: true,
                     needCheckOpen: true,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
 
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
@@ -122,16 +117,14 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                     useInAndOut: true,
                     needCheckOpen: false,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
         }
 
         protected override void ScalarMethodAsync(
             QueryBaseCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             var query = (NpgsqlQuery)source;
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlConnection))
@@ -144,8 +137,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                     Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                     useInAndOut: false,
                     needCheckOpen: true,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
 
             if (query.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
@@ -158,8 +150,7 @@ namespace Gedaq.Npgsql.GeneratorsQuery
                     Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                     useInAndOut: false,
                     needCheckOpen: false,
-                    interfaceGenerator
-                    );
+                    interfaceGenerator);
             }
         }
     }

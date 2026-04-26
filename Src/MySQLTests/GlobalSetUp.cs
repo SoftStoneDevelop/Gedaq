@@ -1,5 +1,7 @@
+using DotNet.Testcontainers.Builders;
 using MySqlConnector;
 using NUnit.Framework;
+using System;
 using System.Data.Common;
 using System.Threading.Tasks;
 using Testcontainers.MySql;
@@ -21,12 +23,17 @@ namespace Tests
         public async Task OneTimeSetUp()
         {
             _mysql =
-                new MySqlBuilder()
+                new MySqlBuilder("mysql:9.5.0")
                 .WithUsername("root")
                 .WithPassword("dhgvbh73j")
+                .WithPortBinding(3306, true)
+                .WithAutoRemove(true)
+                .WithWaitStrategy(Wait.ForUnixContainer().UntilExternalTcpPortIsAvailable(3306))
                 .Build();
 
             await _mysql.StartAsync();
+            await _mysql.WaitContainerStateRunningAsync(TimeSpan.FromMinutes(1));
+            await _mysql.WaitResponseAsync(TimeSpan.FromMinutes(1));
 
             await using (var masterConnection = new MySqlConnection(_mysql.GetConnectionString()))
             {
@@ -50,22 +57,26 @@ CREATE DATABASE IF NOT EXISTS gedaqtests;
             var dataSource = MySqlDataSource;
             if (dataSource != null)
             {
-                await MySqlDataSource.DisposeAsync();
+                try
+                {
+                    await MySqlDataSource.DisposeAsync();
+                }
+                catch
+                {
+                    // ignore
+                }
             }
 
             if (_mysql != null)
             {
-                await using (var masterConnection = new MySqlConnection(_mysql.GetConnectionString()))
+                try
                 {
-                    await masterConnection.OpenAsync();
-                    await using var command = masterConnection.CreateCommand();
-                    command.CommandText = $@"
-DROP DATABASE IF EXISTS gedaqtests;
-";
-                    await command.ExecuteNonQueryAsync();
+                    await _mysql.DisposeAsync();
                 }
-
-                await _mysql.DisposeAsync();
+                catch
+                {
+                    // ignore
+                }
             }
         }
     }

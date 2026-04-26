@@ -1,5 +1,7 @@
+using DotNet.Testcontainers.Builders;
 using Npgsql;
 using NUnit.Framework;
+using System;
 using System.Data.Common;
 using System.Threading.Tasks;
 using Testcontainers.PostgreSql;
@@ -21,12 +23,16 @@ namespace Tests
         public async Task OneTimeSetUp()
         {
             _postgre =
-                new PostgreSqlBuilder()
-                .WithImage("postgres:16.0")
+                new PostgreSqlBuilder("postgres:16.0")
                 .WithPassword("dhgvbh73j")
+                .WithPortBinding(5432, true)
+                .WithAutoRemove(true)
+                .WithWaitStrategy(Wait.ForUnixContainer().UntilExternalTcpPortIsAvailable(5432))
                 .Build();
 
             await _postgre.StartAsync();
+            await _postgre.WaitContainerStateRunningAsync(TimeSpan.FromMinutes(1));
+            await _postgre.WaitResponseAsync(TimeSpan.FromMinutes(1));
 
             await using (var masterConnection = new NpgsqlConnection(_postgre.GetConnectionString()))
             {
@@ -66,22 +72,26 @@ CREATE DATABASE gedaqtests TEMPLATE template0 CONNECTION LIMIT = -1;
             var dataSource = NpgsqlDataSource;
             if (dataSource != null)
             {
-                await NpgsqlDataSource.DisposeAsync();
+                try
+                {
+                    await NpgsqlDataSource.DisposeAsync();
+                }
+                catch
+                {
+                    // ignore
+                }
             }
 
             if (_postgre != null)
             {
-                await using (var masterConnection = new NpgsqlConnection(_postgre.GetConnectionString()))
+                try
                 {
-                    await masterConnection.OpenAsync();
-                    await using var command = masterConnection.CreateCommand();
-                    command.CommandText = $@"
-DROP DATABASE gedaqtests WITH (FORCE);
-";
-                    await command.ExecuteNonQueryAsync();
+                    await _postgre.DisposeAsync();
                 }
-
-                await _postgre.DisposeAsync();
+                catch
+                {
+                    // ignore
+                }
             }
         }
     }

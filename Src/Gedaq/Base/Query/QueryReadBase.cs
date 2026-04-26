@@ -20,8 +20,7 @@ namespace Gedaq.Base.Query
         public void Generate(
             QueryBaseCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             QueryCommonBase.ThrowExceptionIfOutCannotExist(source);
             if (source.MethodType.HasFlag(MethodType.Sync))
@@ -38,8 +37,7 @@ namespace Gedaq.Base.Query
         protected virtual void ReadMethod(
             QueryBaseCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             ReadMethodInner(
                 source,
@@ -48,15 +46,13 @@ namespace Gedaq.Base.Query
                 ProviderInfo.DefaultSourceType(),
                 ProviderInfo.DefaultSourceTypeParametr(),
                 needCheckOpen: true,
-                interfaceGenerator
-                );
+                interfaceGenerator);
         }
 
         protected virtual void ReadAsyncMethod(
             QueryBaseCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             ReadMethodInner(
                 source,
@@ -65,14 +61,12 @@ namespace Gedaq.Base.Query
                 ProviderInfo.DefaultSourceType(),
                 ProviderInfo.DefaultSourceTypeParametr(),
                 needCheckOpen: true,
-                interfaceGenerator
-                );
+                interfaceGenerator);
         }
 
         public string ReadMethodName(
             QueryBase source,
-            MethodType methodType
-            )
+            MethodType methodType)
         {
             if (methodType == MethodType.Sync)
             {
@@ -91,16 +85,14 @@ namespace Gedaq.Base.Query
             string sourceTypeName,
             string sourceParametrName,
             bool needCheckOpen,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             ReadMethodDefinition(
                 source,
                 methodType,
                 builder,
                 sourceTypeName,
-                sourceParametrName
-                );
+                sourceParametrName);
             if (source.AsPartInterface)
             {
                 ReadMethodDefinition(
@@ -109,8 +101,7 @@ namespace Gedaq.Base.Query
                     interfaceGenerator.DefinitionBuilder(),
                     sourceTypeName,
                     sourceParametrName,
-                    forInterface: true
-                    );
+                    forInterface: true);
                 interfaceGenerator.AddMethodDefinition();
             }
             ReadMethodBody(
@@ -118,8 +109,7 @@ namespace Gedaq.Base.Query
                 needCheckOpen: needCheckOpen,
                 sourceParametrName,
                 methodType,
-                builder
-                );
+                builder);
         }
 
         private void ReadMethodDefinition(
@@ -128,20 +118,32 @@ namespace Gedaq.Base.Query
             StringBuilder builder,
             string sourceTypeName,
             string sourceParametrName,
-            bool forInterface = false
-            )
+            bool forInterface = false)
         {
             string ExecuteCommandReturnType()
             {
+                if (source.IsCollectionDelegateMap)
+                {
+                    return "void";
+                }
+
+                var mapType = source.MapTypeInfos[0].MapType;
                 switch (source.ReturnType)
                 {
                     case ReturnType.Enumerable:
                     {
                         return methodType == MethodType.Async ?
-                            $"IAsyncEnumerable<{_commandGenerator.ItemTypeName(source)}>" :
-                            $"IEnumerable<{_commandGenerator.ItemTypeName(source)}>"
-                            ;
+                            $"IAsyncEnumerable<{_commandGenerator.ItemTypeName(mapType)}>" :
+                            $"IEnumerable<{_commandGenerator.ItemTypeName(mapType)}>";
                     }
+
+                    case ReturnType.List:
+                    {
+                        return methodType == MethodType.Async ?
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Collections.Generic.List<{_commandGenerator.ItemTypeName(mapType)}>>" :
+                            $"System.Collections.Generic.List<{_commandGenerator.ItemTypeName(mapType)}>";
+                    }
+
                     case ReturnType.Single:
                     case ReturnType.SingleOrDefault:
                     case ReturnType.First:
@@ -149,9 +151,8 @@ namespace Gedaq.Base.Query
                     default:
                     {
                         return methodType == MethodType.Async ?
-                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{_commandGenerator.ItemTypeName(source)}>" :
-                            $"{_commandGenerator.ItemTypeName(source)}"
-                            ;
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{_commandGenerator.ItemTypeName(mapType)}>" :
+                            $"{_commandGenerator.ItemTypeName(mapType)}";
                     }
                 }
             }
@@ -161,15 +162,16 @@ namespace Gedaq.Base.Query
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
-                "async "
-                ;
+                "async ";
 
             builder.Append($@"        
         {accessModifier} {staticModifier} {asyncKeyword}{ExecuteCommandReturnType()} {ReadMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{sourceTypeName} {sourceParametrName}");
 
+            _commandGenerator.AddDynamicQuery(source, builder);
             _commandGenerator.AddParametrs(source, builder, false);
             _commandGenerator.AddFormatParametrs(source, builder);
+            _commandGenerator.AddDynamicParametrs(source, builder);
 
             builder.Append($@",
             int? timeout = null");
@@ -183,14 +185,13 @@ namespace Gedaq.Base.Query
 
             if (methodType == MethodType.Async)
             {
-                var enumeratorCancellation = forInterface ? string.Empty : "[EnumeratorCancellation]";
+                var enumeratorCancellation = forInterface || source.ReturnType != ReturnType.Enumerable ? string.Empty : "[EnumeratorCancellation]";
                 builder.Append($@",
             {enumeratorCancellation} CancellationToken cancellationToken = default");
 
             }
 
-            builder.Append($@"
-        )");
+            builder.Append($@")");
 
         }
 
@@ -199,8 +200,7 @@ namespace Gedaq.Base.Query
             bool needCheckOpen,
             string sourceParametrName,
             MethodType methodType,
-            StringBuilder builder
-            )
+            StringBuilder builder)
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
@@ -230,20 +230,17 @@ namespace Gedaq.Base.Query
 
             if(source.ContainTypeName.GCIsStatic())
             {
-                builder.Append($@"
-                ;
+                builder.Append($@";
                 command.{_commandGenerator.SetParametrsMethodName(source)}(");
             }
             else
             {
-                builder.Append($@"
-                ;
+                builder.Append($@";
                 {_commandGenerator.SetParametrsMethodName(source)}(
                     command");
             }
             _commandGenerator.WriteSetParametrs(source, builder, ProviderInfo);
-            builder.Append($@"
-                    );");
+            builder.Append($@");");
 
             _commandGenerator.ExecuteReader(source, methodType, builder);
 

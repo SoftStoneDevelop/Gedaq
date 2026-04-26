@@ -1,10 +1,5 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Gedaq.Base
 {
@@ -21,7 +16,10 @@ namespace Gedaq.Base
         public abstract string BatchType();
 
         public abstract string DefaultSourceType();
+
         public abstract string DefaultSourceTypeParametr();
+
+        public abstract string GetParametrType();
 
         public abstract string GetParametrValue(BaseParametr parametr, string source);
 
@@ -31,6 +29,22 @@ namespace Gedaq.Base
 
         public abstract bool IsSpecialHandlerType(ITypeSymbol type);
 
-        public abstract string GetSpecialTypeValue(ITypeSymbol type, int fieldId, string source = "reader");
+        public abstract string GetSpecialTypeValue(
+            ITypeSymbol type,
+            string aliasesPrefix,
+            Field field,
+            string source = "reader");
+
+        public string ValueReaderKey(string prefix, Field field)
+        {
+            if (field.Position.HasValue)
+            {
+                return field.Position.Value.ToString();
+            }
+            else
+            {
+                return $"\"{prefix}{field.SQLName}\"";
+            }
+        }
     }
 }

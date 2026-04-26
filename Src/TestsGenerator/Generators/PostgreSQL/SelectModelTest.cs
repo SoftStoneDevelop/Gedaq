@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
@@ -15,50 +16,53 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var orderedValues = storage.Values.OrderBy(or => or.IdValue).ToList();
 
-            SelectTestConfig(
-                model, 
-                stringBuilder,
-                interfaceTypeName
-                );
-            SelectTest(
-                order, 
-                orderedValues, 
-                model, 
-                stringBuilder, 
-                false, 
-                interfaceTypeName
-                );
-            SelectTest(
-                order, 
-                orderedValues, 
-                model, 
-                stringBuilder, 
-                true, 
-                interfaceTypeName
-                );
+            foreach (var dynamicParametrValue in ValueConstants.BoolValues)
+            {
+                foreach (var isDynamicQuery in ValueConstants.BoolValues)
+                {
+                    SelectTestConfig(
+                        model,
+                        stringBuilder,
+                        interfaceTypeName,
+                        dynamicParametrValue,
+                        isDynamicQuery: isDynamicQuery);
+
+                    foreach (var isAsync in ValueConstants.BoolValues)
+                    {
+                        SelectTest(
+                            order,
+                            orderedValues,
+                            model,
+                            stringBuilder,
+                            isAsync,
+                            interfaceTypeName,
+                            dynamicParametrValue,
+                            isDynamicQuery: isDynamicQuery);
+                    }
+                }
+            }
 
             DbConnection.SelectModel.Generate(
-                order, 
-                stringBuilder, 
-                model, 
-                orderedValues, 
-                Database.PostgreSQL, 
-                interfaceTypeName
-                );
+                order,
+                stringBuilder,
+                model,
+                orderedValues,
+                Database.PostgreSQL,
+                interfaceTypeName);
         }
 
         private static void SelectTestConfig(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            string interfaceTypeName
-            )
+            string interfaceTypeName,
+            bool dynamicParametr,
+            bool isDynamicQuery)
         {
-            var query = $@"
+            var query = isDynamicQuery ? ValueConstants.NullValue : $@"
 @""
 SELECT
     m.{model.IdColumnName},
@@ -80,26 +84,39 @@ ORDER BY
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.Query(
             query: {query},
-            methodName:""SelectModel"",
-            queryMapType: typeof({model.ClassName}),
+            methodName:""{SelectMethodName(isDynamicQuery, dynamicParametr)}"",
+            queryMapTypes: [typeof({model.ClassName(isDynamicQuery)})],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName})
-            ),
+            asPartInterface: typeof({interfaceTypeName})),");
+            if (dynamicParametr)
+            {
+                stringBuilder.Append($@"
+Gedaq.Npgsql.Attributes.DynamicParametr()");
+            }
+            else
+            {
+                stringBuilder.Append($@"
 Gedaq.Npgsql.Attributes.Parametr(
             parametrType: typeof({model.IdType}),
             position: 1,
             methodParametrName: ""{model.IdColumnName}"",
-            dbType: {model.IdTypeInfo.SpecialDbTypeStr()}
-                )
-            ]
-        private void {_testName}Config()
+            dbType: {model.IdTypeInfo.SpecialDbTypeStr()})");
+            }
+
+            stringBuilder.Append($@"]
+        private void {SelectMethodName(isDynamicQuery, dynamicParametr)}Config()
         {{
         }}
 ");
+        }
+
+        private static string SelectMethodName(bool isDynamicQuery, bool dynamicParametr)
+        {
+            return $"{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}";
         }
 
         private static void SelectTest(
@@ -108,41 +125,58 @@ Gedaq.Npgsql.Attributes.Parametr(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             bool isAsync,
-            string interfaceTypeName
-            )
+            string interfaceTypeName,
+            bool dynamicParametr,
+            bool isDynamicQuery)
         {
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
+            var queryParametr = isDynamicQuery ? " query, " : string.Empty;
 
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task {_testName}Test{async}()
+        public async Task {SelectMethodName(isDynamicQuery, dynamicParametr)}Test{async}()
         {{
             await using (var connection = GlobalSetUp.GetConnection)
             {{
-                await connection.OpenAsync();
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, 0).ToList{async}();
-                Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
-");
-            for (int i = 0; i < orderedValues.Count; i++)
+                await connection.OpenAsync();");
+            if (isDynamicQuery)
             {
-                ModelValue value = orderedValues[i];
-                if (i == 0)
-                {
-                    stringBuilder.Append($@"
-                var model = models[{i}];
-");
-                }
-                else
-                {
-                    stringBuilder.Append($@"
-                model = models[{i}];
-");
-                }
-
-                stringBuilder.Append(model.Assert("model", value));
+                stringBuilder.Append($@"
+                var query = @""
+SELECT
+    m.{model.IdColumnName},
+    m.{model.ValueColumnName},
+    m.{model.NullableValueColumnName}
+FROM {Database.PostgreSQL.ToDefaultSchema()}.{model.TableName} m
+LEFT JOIN {Database.PostgreSQL.ToDefaultSchema()}.{model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}
+WHERE 
+    m.{model.IdColumnName} > $1
+ORDER BY
+    m.{model.IdColumnName} ASC
+"";");
             }
+
+            if (dynamicParametr)
+            {
+                stringBuilder.Append($@"
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectMethodName(isDynamicQuery, dynamicParametr)}{async}(connection, {queryParametr}[parametr1]);");
+            }
+            else
+            {
+                stringBuilder.Append($@"
+                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectMethodName(isDynamicQuery, dynamicParametr)}{async}(connection, {queryParametr}0);");
+            }
+
             stringBuilder.Append($@"
+                Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
+                for (int i = 0; i < {orderedValues.Count}; i++)
+                {{
+                    {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models[i],{TestsPart.TestDataArrayName}[i], false);
+                }}
             }}
         }}
 ");

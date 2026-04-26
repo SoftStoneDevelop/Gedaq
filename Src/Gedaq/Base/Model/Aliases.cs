@@ -1,42 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Text;
 
 namespace Gedaq.Base.Model
 {
     internal class Aliases
     {
-        public Aliases(bool isRowsAffected = false)
+        public Aliases()
         {
-            IsRowsAffected = isRowsAffected;
         }
 
         public Aliases(string entityName, string linkKey = null)
         {
-            IsRowsAffected = false;
             EntityName = entityName;
             LinkKey = linkKey;
         }
 
-        public bool IsRowsAffected { get; private set; }
         public List<Field> Fields = new List<Field>();
 
+        /// <summary>
+        /// Name of this Entity in root entity
+        /// </summary>
         public string EntityName { get; private set; }
+
         public string LinkKey { get; private set; }
 
         public bool HaveLinkKey => LinkKey != null;
+
+        /// <summary>
+        /// Prefix all fields in entity
+        /// </summary>
+        public string Prefix { get; set; } = "";
 
         public Field GetLinkField()
         {
             return Fields.First(f => f.Name.ToLowerInvariant() == LinkKey.ToLowerInvariant());
         }
 
-
         public bool IsRoot => EntityName == null;
         public List<Aliases> InnerEntities = new List<Aliases>();
-        List<Field> _allFields = null;
+        private List<Field> _allFields = null;
 
         public List<Field> AllFieldsOrderByPosition()
         {

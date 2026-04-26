@@ -21,7 +21,12 @@ namespace TestsGenerator.TypeValueHelpers
 
         public string NewValue(out int result)
         {
-            result = Random.Shared.Next(0, int.MaxValue);
+            return NewValue(0, int.MaxValue, out result);
+        }
+
+        public string NewValue(int minValue, int maxValue, out int result)
+        {
+            result = Random.Shared.Next(minValue, maxValue);
             return $"{result}";
         }
     }

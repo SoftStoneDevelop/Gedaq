@@ -14,8 +14,7 @@ namespace Gedaq.Base.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
-                !namedTypeSymbol.IsAssignableFrom("Gedaq.Common.Enums", "QueryType")
-                )
+                !namedTypeSymbol.IsAssignableFrom("Gedaq.Common.Enums", "QueryType"))
             {
                 return false;
             }
@@ -28,8 +27,7 @@ namespace Gedaq.Base.Model
         {
             if (argument.Kind != TypedConstantKind.Enum ||
                 !(argument.Type is INamedTypeSymbol namedTypeSymbol) ||
-                !namedTypeSymbol.IsAssignableFrom("Gedaq.Common.Enums", "ReturnType")
-                )
+                !namedTypeSymbol.IsAssignableFrom("Gedaq.Common.Enums", "ReturnType"))
             {
                 return false;
             }

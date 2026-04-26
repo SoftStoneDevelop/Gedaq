@@ -10,14 +10,19 @@ namespace Gedaq.Npgsql.GeneratorsBatch
 {
     internal class NpgsqlBatchCommand : BatchCommandBase
     {
-        private readonly NpgsqlProviderInfo _providerInfo = new NpgsqlProviderInfo();
+        private readonly NpgsqlProviderInfo _providerInfo;
+
+        public NpgsqlBatchCommand(NpgsqlProviderInfo providerInfo)
+        {
+            _providerInfo = providerInfo;
+        }
+
         protected override ProviderInfo ProviderInfo => _providerInfo;
 
         protected override void CreateBatchMethods(
             QueryBatchCommand source, 
             StringBuilder builder,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             var batch = (NpgsqlQueryBatch)source;
             if (source.MethodType.HasFlag(MethodType.Sync))
@@ -30,8 +35,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                         Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(), 
                         MethodType.Sync, 
                         builder,
-                        interfaceGenerator
-                        );
+                        interfaceGenerator);
                 }
 
                 if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
@@ -42,8 +46,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                         Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                         MethodType.Sync,
                         builder,
-                        interfaceGenerator
-                        );
+                        interfaceGenerator);
                 }
             }
 
@@ -57,8 +60,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                         Enums.NpgsqlSourceType.NpgsqlConnection.ToParametrName(),
                         MethodType.Async,
                         builder,
-                        interfaceGenerator
-                        );
+                        interfaceGenerator);
                 }
 
                 if (batch.SourceType.HasFlag(Enums.NpgsqlSourceType.NpgsqlDataSource))
@@ -69,8 +71,7 @@ namespace Gedaq.Npgsql.GeneratorsBatch
                         Enums.NpgsqlSourceType.NpgsqlDataSource.ToParametrName(),
                         MethodType.Async,
                         builder,
-                        interfaceGenerator
-                        );
+                        interfaceGenerator);
                 }
             }
 

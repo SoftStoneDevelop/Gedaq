@@ -1,0 +1,130 @@
+﻿using Gedaq.Npgsql.Attributes;
+using NUnit.Framework;
+using System.Data;
+using System.Linq;
+using Tests.FunctionTests.Model;
+
+namespace Tests.FunctionTests
+{
+    [TestFixture]
+    [Parallelizable(ParallelScope.Self)]
+    internal partial class ReadFixture
+    {
+        [Test]
+        [Query(
+            query: @"
+select * from readfixturefunc(@inParam); 
+",
+            methodName: "FuncOut",
+            queryType: Gedaq.Common.Enums.QueryType.NonQuery
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input),
+            Parametr(parametrType: typeof(int), parametrName: "out1", direction: ParameterDirection.Output),
+            Parametr(parametrType: typeof(string), parametrName: "out2", direction: ParameterDirection.Output)
+            ]
+        public void FuncOutTest()
+        {
+            using var connection = GlobalSetUp.NpgsqlDataSource.OpenConnection();
+            var result = FuncOut(connection, 46, out var out1, out var out2);
+            Assert.Multiple(() =>
+            {
+                Assert.That(out1, Is.EqualTo(46));
+                Assert.That(out2, Is.EqualTo("46 is text"));
+            });
+        }
+
+        [Test]
+        [Query(
+            query: @"
+select out1, out2 from readfixturefunc(@inParam);
+",
+            methodName: "ReadFunc",
+            queryMapTypes: [typeof(ReadFunc)],
+            queryType: Gedaq.Common.Enums.QueryType.Read
+            ),
+            Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input)
+            ]
+        public void TestReadFunc()
+        {
+            using var connection = GlobalSetUp.NpgsqlDataSource.OpenConnection();
+            var result = ReadFunc(connection, 24).First();
+            Assert.Multiple(() =>
+            {
+                Assert.That(result.Out1, Is.EqualTo(24));
+                Assert.That(result.Out2, Is.EqualTo("24 is text"));
+            });
+        }
+
+        [Test]
+        [Query(
+            query: @"
+SELECT 
+~StartInner::Person:id~
+    P.id,
+    p.firstname,
+~StartInner::Identification:id~
+    i.id,
+~StartInner::Country:id~
+    c.id,
+    c.name,
+~EndInner::Country~
+    i.typename,
+~EndInner::Identification~
+    p.middlename,
+    p.lastname,
+~EndInner::Person~
+	readfixturefunc.out1,
+	readfixturefunc.out2
+FROM readfixtureperson p
+LEFT JOIN readfixtureidentification i ON i.id = p.readfixtureidentification_id
+LEFT JOIN readfixturecountry c ON c.id = i.readfixturecountry_id
+LEFT JOIN LATERAL readfixturefunc(@inParam) AS readfixturefunc ON true
+WHERE p.id = @personId
+ORDER BY p.id ASC
+",
+            methodName: "ReadFuncPerson",
+            queryMapTypes: [typeof(ReadFunc)],
+            queryType: Gedaq.Common.Enums.QueryType.Read),
+            Parametr(parametrType: typeof(int), parametrName: "inParam", direction: ParameterDirection.Input),
+            Parametr(parametrType: typeof(int), parametrName: "personId", direction: ParameterDirection.Input)
+            ]
+        public void TestReadFuncAndPerson()
+        {
+            using var connection = GlobalSetUp.NpgsqlDataSource.OpenConnection();
+            var result = ReadFuncPerson(connection, 13, 1).First();
+            Assert.Multiple(() =>
+            {
+                Assert.That(result.Out1, Is.EqualTo(13));
+                Assert.That(result.Out2, Is.EqualTo("13 is text"));
+                Assert.That(result.Person.Id, Is.EqualTo(1));
+                Assert.That(result.Person.Identification.Id, Is.EqualTo(1));
+                Assert.That(result.Person.Identification.Country.Id, Is.EqualTo(1));
+            });
+        }
+
+        [Test]
+        [QueryBatch("BatchFixtureOut", Gedaq.Common.Enums.QueryType.NonQuery, Gedaq.Common.Enums.MethodType.Sync),
+            BatchPart("FuncOut", 1),
+            BatchPart("FuncOut", 2)
+            ]
+        public void BatchFixtureOutTest()
+        {
+            using var connection = GlobalSetUp.NpgsqlDataSource.OpenConnection();
+
+            BatchFixtureOut(
+                connection,
+                24, out var out11, out var out12,
+                75, out var out21, out var out22
+                );
+
+            Assert.Multiple(() =>
+            {
+                Assert.That(out11, Is.EqualTo(24));
+                Assert.That(out12, Is.EqualTo("24 is text"));
+
+                Assert.That(out21, Is.EqualTo(75));
+                Assert.That(out22, Is.EqualTo("75 is text"));
+            });
+        }
+    }
+}

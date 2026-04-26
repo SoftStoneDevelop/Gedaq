@@ -25,7 +25,7 @@ namespace TestsGenerator.Generators
 
             End();
 
-            await File.WriteAllTextAsync($"{destinationFolder}/TestOneTimeParts/{model.ClassName}TestOneTimePart.cs", _stringBuilder.ToString());
+            await File.WriteAllTextAsync($"{destinationFolder}/TestOneTimeParts/{model.ClassName(false)}TestOneTimePart.cs", _stringBuilder.ToString());
         }
 
         private void Start(Model.ModelType model, Database database)

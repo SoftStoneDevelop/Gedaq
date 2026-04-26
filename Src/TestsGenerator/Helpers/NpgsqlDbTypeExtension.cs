@@ -345,11 +345,11 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Time:
                 {
-                    return "System.TimeSpan";
+                    return "System.TimeOnly";
                 }
                 case NpgsqlDbType.Time | NpgsqlDbType.Array:
                 {
-                    return "System.TimeSpan[]";
+                    return "System.TimeOnly[]";
                 }
 
                 case NpgsqlDbType.TimeTz:
@@ -363,11 +363,11 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Date:
                 {
-                    return "System.DateTime";
+                    return "System.DateOnly";
                 }
                 case NpgsqlDbType.Date | NpgsqlDbType.Array:
                 {
-                    return "System.DateTime[]";
+                    return "System.DateOnly[]";
                 }
 
                 case NpgsqlDbType.TimestampTz:
