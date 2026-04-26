@@ -30,28 +30,28 @@ namespace Tests
         {
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 5,
+    Id = 3,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3234),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3114),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4056),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3560),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1700),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2238),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4966),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4678),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2257),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1905),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4832),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3657),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 718),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2168),
 
 },
 },
@@ -61,58 +61,65 @@ new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 718),
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1299),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4599),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2753),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3981),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2682),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 777),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 351),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3851),
 
 },
     ModelInner = new NpgsqlIntervalintervalArray2MI
 {
-    Id = 7,
+    Id = 1,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3009),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 78),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3320),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1355),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4628),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 800),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2911),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1737),
 
 },
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1994),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2439),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1044),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2904),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4924),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4401),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2994),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 660),
 
 },
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2875),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3094),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2957),
+
+},
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 18,
+    Id = 16,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3312),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1825),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1651),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 789),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3645),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3732),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 95),
 
 },
     ModelInner = null,
@@ -120,211 +127,192 @@ new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3732),
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 25,
+    Id = 24,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4489),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2317),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1793),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2140),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 82),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2452),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 818),
 
 },
     ModelInner = new NpgsqlIntervalintervalArray2MI
 {
-    Id = 11,
+    Id = 2,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3741),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 937),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2744),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3979),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1647),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1677),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3086),
 
 },
     NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4938),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4888),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2321),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 218),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3561),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 292),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 907),
 
 },
 },
     NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3335),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2480),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1874),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3196),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4029),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4202),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 722),
 
 },
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 27,
+    Id = 29,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4177),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3017),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3547),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4722),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 963),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4178),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3334),
 
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2809),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3756),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3085),
+
+},
 },
             new NpgsqlIntervalintervalArray2M
 {
     Id = 34,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4739),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 606),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4920),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 128),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2442),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4839),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4674),
 
 },
     ModelInner = new NpgsqlIntervalintervalArray2MI
 {
-    Id = 19,
+    Id = 9,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3702),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 801),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4200),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1596),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3366),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3184),
 
+},
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2147),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4146),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2827),
+
+},
 },
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 188),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2532),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4873),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3373),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 319),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2433),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 428),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1642),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2112),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3247),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1317),
 
 },
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 39,
+    Id = 40,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1069),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2733),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3741),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 488),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2461),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2176),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4361),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4952),
 
 },
     ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3480),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2949),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3591),
-
-},
+    NullableValue = null,
 },
             new NpgsqlIntervalintervalArray2M
 {
     Id = 48,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 963),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4346),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3247),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2214),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1689),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3207),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1679),
 
 },
     ModelInner = new NpgsqlIntervalintervalArray2MI
 {
-    Id = 23,
+    Id = 17,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 581),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2504),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1096),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2819),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3985),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1249),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4936),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 235),
 
 },
     NullableValue = null,
 },
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1223),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 380),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1481),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3530),
-
-},
+    NullableValue = null,
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 57,
+    Id = 53,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 184),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4781),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4938),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2416),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2519),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1425),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3459),
 
 },
     ModelInner = null,
@@ -332,15 +320,216 @@ new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1425),
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 66,
+    Id = 60,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4111),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2015),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1508),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3697),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4161),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 933),
+
+},
+    ModelInner = new NpgsqlIntervalintervalArray2MI
+{
+    Id = 22,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4496),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2617),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1523),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 215),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4538),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 676),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3827),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2541),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4768),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 457),
+
+},
+},
+            new NpgsqlIntervalintervalArray2M
+{
+    Id = 68,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3727),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4753),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1290),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1429),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlIntervalintervalArray2M
+{
+    Id = 77,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 567),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1402),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2423),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 7),
+
+},
+    ModelInner = new NpgsqlIntervalintervalArray2MI
+{
+    Id = 26,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2650),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1691),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3320),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 745),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2188),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1357),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2525),
+
+},
+},
+            new NpgsqlIntervalintervalArray2M
+{
+    Id = 82,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1217),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4615),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4505),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2404),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 379),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 33),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3676),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 43),
+
+},
+},
+            new NpgsqlIntervalintervalArray2M
+{
+    Id = 85,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4958),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3583),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4112),
+
+},
+    ModelInner = new NpgsqlIntervalintervalArray2MI
+{
+    Id = 28,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1201),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1931),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1034),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4142),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 621),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4983),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3499),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 278),
+
+},
+},
+            new NpgsqlIntervalintervalArray2M
+{
+    Id = 86,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4236),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2928),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 304),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1691),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlIntervalintervalArray2M
+{
+    Id = 92,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 317),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2379),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1191),
 
 },
     ModelInner = new NpgsqlIntervalintervalArray2MI
@@ -349,221 +538,140 @@ new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4161),
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1671),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2996),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2553),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4113),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4663),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3974),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3835),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3064),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2815),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 504),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 972),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3028),
 
 },
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 67,
+    Id = 93,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3061),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2360),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 799),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4504),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4898),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3950),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3190),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2681),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3415),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 767),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1348),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 86),
 
 },
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 69,
+    Id = 102,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1253),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1927),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 711),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3333),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2599),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 910),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1906),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3820),
 
 },
     ModelInner = new NpgsqlIntervalintervalArray2MI
 {
-    Id = 39,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 376),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 859),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1498),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 795),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1303),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3812),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 800),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3991),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1645),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1244),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 474),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2906),
-
-},
-},
-            new NpgsqlIntervalintervalArray2M
-{
-    Id = 77,
+    Id = 40,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 804),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3021),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 365),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4042),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1168),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4022),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3020),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 167),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4075),
-
-},
-},
-            new NpgsqlIntervalintervalArray2M
-{
-    Id = 79,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1811),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3282),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3019),
-
-},
-    ModelInner = new NpgsqlIntervalintervalArray2MI
-{
-    Id = 46,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3228),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2017),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4477),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 521),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1331),
 
 },
     NullableValue = null,
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 496),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4836),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 761),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4964),
+
+},
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 84,
+    Id = 107,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3453),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3628),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1601),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1089),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 776),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4137),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3252),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 245),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4494),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3294),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1165),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1327),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2072),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4520),
 
 },
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 92,
+    Id = 109,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1821),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 975),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4322),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2754),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2142),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3724),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 780),
 
 },
     ModelInner = new NpgsqlIntervalintervalArray2MI
 {
-    Id = 54,
+    Id = 41,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3932),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4725),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4657),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3177),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3172),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3567),
 
 },
     NullableValue = null,
@@ -571,151 +679,31 @@ new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3172),
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2387),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4107),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4925),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1325),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3810),
-
-},
-},
-            new NpgsqlIntervalintervalArray2M
-{
-    Id = 94,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 786),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3972),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2060),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3031),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2054),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2631),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3516),
 
 },
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 100,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1989),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3697),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2158),
-
-},
-    ModelInner = new NpgsqlIntervalintervalArray2MI
-{
-    Id = 57,
+    Id = 112,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4116),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3227),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2803),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2101),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4730),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3209),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1329),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 707),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 287),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1085),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4383),
-
-},
-},
-    NullableValue = null,
-},
-            new NpgsqlIntervalintervalArray2M
-{
-    Id = 106,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4935),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2999),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4149),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 826),
 
 },
     ModelInner = null,
     NullableValue = null,
-},
-            new NpgsqlIntervalintervalArray2M
-{
-    Id = 113,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 921),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2345),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 204),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2045),
-
-},
-    ModelInner = new NpgsqlIntervalintervalArray2MI
-{
-    Id = 59,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2903),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 647),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 806),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2797),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 418),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1032),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4320),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3247),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4256),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1355),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 354),
-
-},
 },
             new NpgsqlIntervalintervalArray2M
 {
@@ -723,53 +711,24 @@ new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 354),
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1469),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4372),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4648),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4072),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1655),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3419),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2214),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4622),
-
-},
-},
-            new NpgsqlIntervalintervalArray2M
-{
-    Id = 118,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 246),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 770),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2603),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 463),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1249),
 
 },
     ModelInner = new NpgsqlIntervalintervalArray2MI
 {
-    Id = 64,
+    Id = 42,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3626),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1894),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1451),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 627),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2127),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3307),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4827),
 
 },
     NullableValue = null,
@@ -778,150 +737,71 @@ new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3307),
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 120,
+    Id = 126,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1969),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4937),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 832),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1161),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3746),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1040),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4635),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1640),
 
 },
     ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1017),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2816),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 153),
-
-},
+    NullableValue = null,
 },
             new NpgsqlIntervalintervalArray2M
 {
     Id = 128,
     Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1313),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1910),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2221),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 103),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1416),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4157),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4780),
 
 },
     ModelInner = new NpgsqlIntervalintervalArray2MI
 {
-    Id = 72,
+    Id = 43,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3108),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1070),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3211),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3732),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3623),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3478),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3542),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3115),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 676),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 888),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 872),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 113),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2787),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4231),
-
-},
-},
-            new NpgsqlIntervalintervalArray2M
-{
-    Id = 136,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1303),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 479),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4322),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 499),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2195),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1230),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3921),
-
-},
-},
-            new NpgsqlIntervalintervalArray2M
-{
-    Id = 139,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 222),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1214),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3321),
-
-},
-    ModelInner = new NpgsqlIntervalintervalArray2MI
-{
-    Id = 81,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1760),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4970),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3492),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4070),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2196),
 
 },
     NullableValue = null,
 },
-    NullableValue = 
+    NullableValue = null,
+},
+            new NpgsqlIntervalintervalArray2M
+{
+    Id = 137,
+    Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2250),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4289),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3672),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4742),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1123),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2169),
 
 },
+    ModelInner = null,
+    NullableValue = null,
 },
             new NpgsqlIntervalintervalArray2M
 {
@@ -929,135 +809,193 @@ new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1123),
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4354),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1572),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3739),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 957),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3652),
 
 new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1658),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1524),
+},
+    ModelInner = new NpgsqlIntervalintervalArray2MI
+{
+    Id = 49,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4993),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3824),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4526),
 
 },
-    ModelInner = null,
+    NullableValue = null,
+},
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3560),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2959),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4892),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3927),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4071),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 317),
 
 },
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 148,
+    Id = 151,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1502),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2913),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3873),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2901),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 78),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4967),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1583),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4272),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2695),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3791),
+
+},
+},
+            new NpgsqlIntervalintervalArray2M
+{
+    Id = 155,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2224),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2240),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4573),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3989),
 
 },
     ModelInner = new NpgsqlIntervalintervalArray2MI
 {
-    Id = 88,
+    Id = 58,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4439),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4679),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4925),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4614),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4716),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4181),
 
 },
     NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 42),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 430),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4702),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1664),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1431),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1099),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3612),
 
 },
 },
+    NullableValue = null,
+},
+            new NpgsqlIntervalintervalArray2M
+{
+    Id = 158,
+    Value = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4260),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4551),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2605),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4858),
+
+},
+    ModelInner = null,
     NullableValue = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(3)
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4349),
+
 new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2534),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 35),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4230),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2174),
-
-},
-},
-            new NpgsqlIntervalintervalArray2M
-{
-    Id = 150,
-    Value = 
-new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
-{
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3850),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1914),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3019),
-
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3033),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1527),
 
 },
-    ModelInner = null,
-    NullableValue = null,
 },
             new NpgsqlIntervalintervalArray2M
 {
-    Id = 156,
+    Id = 164,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1112),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 174),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3994),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 760),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 655),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1840),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4201),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1758),
 
 },
     ModelInner = new NpgsqlIntervalintervalArray2MI
 {
-    Id = 89,
+    Id = 67,
     Value = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2906),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1339),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4351),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2264),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2284),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 552),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1472),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2949),
 
-},
-    NullableValue = null,
 },
     NullableValue = 
 new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
 {
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4878),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 670),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2109),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4512),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4938),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1681),
 
-new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1064),
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3075),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval>(4)
+{
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3523),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1263),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4886),
+
+new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2956),
 
 },
 },
@@ -1871,12 +1809,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 27;
+                parametr1.Value = 102;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 100;
+                parametr2.Value = 48;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1908,16 +1846,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
-FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[5], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[6], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[7], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[8], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[9], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[10], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[11], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[12], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[13], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[14], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[15], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[16], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[17], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[18], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[19], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[20], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[21], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[19],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[20],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[21],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[22],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[23],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[24],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(12));
+FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[18], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[19], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[20], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[21], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
-FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[18], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[19], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[20], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[21], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(22));
+FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[8], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[9], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[10], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[11], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[12], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[13], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[14], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[15], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[16], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[17], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[18], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[19], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[20], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[21], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[19],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[20],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[21],_testData[29], false);
                         continue;
                     }
                     
@@ -1966,12 +1904,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 34;
+                parametr1.Value = 117;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 146;
+                parametr2.Value = 102;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2003,16 +1941,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
-FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[6], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[7], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[8], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[9], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[10], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[11], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[12], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[13], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[14], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[15], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[16], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[17], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[18], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[19], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[20], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[21], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[19],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[20],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[21],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[22],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[23],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(8));
+FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(12));
+FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[18], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[19], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[20], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[21], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[29], false);
                         continue;
                     }
                     
@@ -2098,12 +2036,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 146;
+                parametr1.Value = 109;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 113;
+                parametr2.Value = 126;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in await ((INpgsqlIntervalListintervalArray)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
@@ -2111,16 +2049,16 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(10));
+NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
-NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(7));
+NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[29], false);
                         continue;
                     }
                     
@@ -2157,12 +2095,12 @@ NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[20], false);Npgsql
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 18;
+                parametr1.Value = 60;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 100;
+                parametr2.Value = 155;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in  ((INpgsqlIntervalListintervalArray)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
@@ -2170,16 +2108,16 @@ NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[20], false);Npgsql
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
-NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[3], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[4], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[5], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[6], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[7], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[8], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[9], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[10], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[11], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[12], false);NpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[13], false);NpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[14], false);NpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[15], false);NpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[16], false);NpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[17], false);NpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[18], false);NpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[19], false);NpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[19],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[20],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[21],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[22],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[23],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[24],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[25],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[26],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(20));
+NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[10], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[11], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[12], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[13], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[14], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[15], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[16], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[17], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[18], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[19], false);NpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[19],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
-NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[18], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[19], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(2));
+NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[29], false);
                         continue;
                     }
                     
@@ -2280,21 +2218,21 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((INpgsqlIntervalListintervalArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 136, query1, 48, query2))
+                foreach(var batchResult in await ((INpgsqlIntervalListintervalArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 68, query1, 82, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(5));
-FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(19));
+FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[11], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[12], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[13], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[14], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[15], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[16], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[17], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[18], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[19], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[20], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[21], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
-FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[8], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[9], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[10], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[11], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[12], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[13], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[14], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[15], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[16], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[17], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[18], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[19], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[20], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[21], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[19],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[20],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[21],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(17));
+FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[13], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[14], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[15], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[16], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[17], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[18], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[19], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[20], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[21], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }
                     
@@ -2361,21 +2299,21 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((INpgsqlIntervalListintervalArray)this).DbConnectionDynQuerySelectModelBatch(connection, 18, query1, 92, query2))
+                foreach(var batchResult in  ((INpgsqlIntervalListintervalArray)this).DbConnectionDynQuerySelectModelBatch(connection, 24, query1, 128, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
-FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[3], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[4], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[5], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[6], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[7], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[8], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[9], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[10], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[11], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[12], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[13], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[14], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[15], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[16], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[17], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[18], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[19], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[20], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[21], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[19],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[20],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[21],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[22],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[23],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[24],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[25],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[26],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(26));
+FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[4], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[5], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[6], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[7], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[8], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[9], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[10], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[11], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[12], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[13], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[14], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[15], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[16], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[17], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[18], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[19], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[20], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[21], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[19],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[20],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[21],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[22],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[23],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[24],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[25],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
-FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[16], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[17], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[18], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[19], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[20], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[21], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[22], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[23], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+FlatNpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[24], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[25], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[26], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[27], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[28], false);FlatNpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }
                     
@@ -2459,7 +2397,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((INpgsqlIntervalListintervalArray)this).DbConnectionSelectModelBatchAsync(connection, 84, 18))
+                foreach(var batchResult in await ((INpgsqlIntervalListintervalArray)this).DbConnectionSelectModelBatchAsync(connection, 86, 48))
                 {
                     if(++resultIndex == 1)
                     {
@@ -2472,8 +2410,8 @@ NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[15], false);Npgsql
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
-NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[3], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[4], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[5], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[6], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[7], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[8], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[9], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[10], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[11], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[12], false);NpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[13], false);NpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[14], false);NpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[15], false);NpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[16], false);NpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[17], false);NpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[18], false);NpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[19], false);NpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[19],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[20],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[21],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[22],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[23],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[24],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[25],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[26],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(22));
+NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[8], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[9], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[10], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[11], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[12], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[13], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[14], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[15], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[16], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[17], false);NpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[18], false);NpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[19], false);NpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[19],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[20],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[21],_testData[29], false);
                         continue;
                     }
                     
@@ -2504,21 +2442,21 @@ NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[3], false);NpgsqlI
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((INpgsqlIntervalListintervalArray)this).DbConnectionSelectModelBatch(connection, 11, 117))
+                foreach(var batchResult in  ((INpgsqlIntervalListintervalArray)this).DbConnectionSelectModelBatch(connection, 68, 48))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(28));
-NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[2], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[3], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[4], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[5], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[6], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[7], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[8], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[9], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[10], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[11], false);NpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[12], false);NpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[13], false);NpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[14], false);NpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[15], false);NpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[16], false);NpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[17], false);NpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[18], false);NpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[19], false);NpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[19],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[20],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[21],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[22],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[23],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[24],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[25],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[26],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[27],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(19));
+NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[11], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[12], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[13], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[14], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[15], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[16], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[17], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[18], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[19], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
-NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(22));
+NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[8], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[9], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[10], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[11], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[12], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[13], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[14], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[15], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[16], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[17], false);NpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[18], false);NpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[19], false);NpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[19],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[20],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[21],_testData[29], false);
                         continue;
                     }
                     
@@ -2534,11 +2472,11 @@ NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[21], false);Npgsql
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((INpgsqlIntervalListintervalArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((INpgsqlIntervalListintervalArray)this).SetDbConnectionSelectModelParametrs(cmd, 67);
+                ((INpgsqlIntervalListintervalArray)this).SetDbConnectionSelectModelParametrs(cmd, 117);
                 var models = await ((INpgsqlIntervalListintervalArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(19));
-NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[11], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[12], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[13], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[14], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[15], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[16], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[17], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[18], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[19], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[18],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(8));
+NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[29], false);
             }
         }
 
@@ -2549,11 +2487,11 @@ NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[11], false);Npgsql
             {
                 await connection.OpenAsync();
                  using var cmd =  ((INpgsqlIntervalListintervalArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((INpgsqlIntervalListintervalArray)this).SetDbConnectionSelectModelParametrs(cmd, 69);
+                ((INpgsqlIntervalListintervalArray)this).SetDbConnectionSelectModelParametrs(cmd, 85);
                 var models =  ((INpgsqlIntervalListintervalArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(18));
-NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[12], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[13], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[14], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[15], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[16], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[17], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[18], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[19], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[16],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[17],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(16));
+NpgsqlIntervalintervalArray2M.AssertModel(models[0],_testData[14], false);NpgsqlIntervalintervalArray2M.AssertModel(models[1],_testData[15], false);NpgsqlIntervalintervalArray2M.AssertModel(models[2],_testData[16], false);NpgsqlIntervalintervalArray2M.AssertModel(models[3],_testData[17], false);NpgsqlIntervalintervalArray2M.AssertModel(models[4],_testData[18], false);NpgsqlIntervalintervalArray2M.AssertModel(models[5],_testData[19], false);NpgsqlIntervalintervalArray2M.AssertModel(models[6],_testData[20], false);NpgsqlIntervalintervalArray2M.AssertModel(models[7],_testData[21], false);NpgsqlIntervalintervalArray2M.AssertModel(models[8],_testData[22], false);NpgsqlIntervalintervalArray2M.AssertModel(models[9],_testData[23], false);NpgsqlIntervalintervalArray2M.AssertModel(models[10],_testData[24], false);NpgsqlIntervalintervalArray2M.AssertModel(models[11],_testData[25], false);NpgsqlIntervalintervalArray2M.AssertModel(models[12],_testData[26], false);NpgsqlIntervalintervalArray2M.AssertModel(models[13],_testData[27], false);NpgsqlIntervalintervalArray2M.AssertModel(models[14],_testData[28], false);NpgsqlIntervalintervalArray2M.AssertModel(models[15],_testData[29], false);
             }
         }
 

@@ -117,7 +117,6 @@ namespace TestsGenerator.Generators
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Inet, "IPAddress", "System.Net.IPAddress", type => new IPAddressValueHelper(type), isReferenceType: true);
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Uuid, "Guid", "System.Guid", type => new GuidValueHelper(type));
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Line, "NpgsqlLine", "NpgsqlTypes.NpgsqlLine", type => new NpgsqlLineValueHelper(type));
-            if(false)
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Polygon, "NpgsqlPolygon", "NpgsqlTypes.NpgsqlPolygon", type => new NpgsqlPolygonValueHelper(type));
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Point, "NpgsqlPoint", "NpgsqlTypes.NpgsqlPoint", type => new NpgsqlPointValueHelper(type));
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Circle, "NpgsqlCircle", "NpgsqlTypes.NpgsqlCircle", type => new NpgsqlCircleValueHelper(type));
