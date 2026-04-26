@@ -49,7 +49,7 @@ namespace Gedaq.Npgsql.Model
             return true;
         }
 
-        public override IEnumerable<BatchPartBase> QueryBases()
+        public override IEnumerable<BatchPartBase> BatchPartBases()
         {
             return Queries;
         }

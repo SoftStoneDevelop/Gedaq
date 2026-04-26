@@ -1649,7 +1649,7 @@ Gedaq.DbConnection.Attributes.DynamicParametr()]
             accessModifier: AccessModifier.Public,
             asPartInterface: typeof(IBooleanSingleTypeboolean)),
 Gedaq.DbConnection.Attributes.BatchPart(
-            methodName: "DbConnectionDynQuerySelectModelDynPar",
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
             position: 1),
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionDynQuerySelectModelDynPar",
@@ -1726,7 +1726,7 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((IBooleanSingleTypeboolean)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2))
+                foreach(var batchResult in await (this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2))
                 {
                     if(++resultIndex == 1)
                     {

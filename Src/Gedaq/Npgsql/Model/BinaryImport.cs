@@ -14,10 +14,19 @@ namespace Gedaq.Npgsql.Model
         public string Query;
         public Aliases Aliases { get; protected set; }
 
+        public override bool IsCollectionDelegateMap => MapTypeInfos?.Length > 1;
+
         private int[] NpgSqlDbTypes;
 
         private BinaryImport()
         {
+        }
+
+        public override string MapDelegateParametrName => throw new NotImplementedException();
+
+        public override string MapDelegateParametrType()
+        {
+            throw new NotImplementedException();
         }
 
         public void SetAliases(Aliases aliases)

@@ -9,33 +9,17 @@ using System.Text;
 
 namespace Gedaq.Base.Model
 {
-    internal class BaseGenerateItem : IMethodInfo
+    internal abstract class BaseGenerateItem : IMethodInfo
     {
         public MapTypeInfo[] MapTypeInfos { get; protected set; }
 
-        public string MapDelegateParametrName => "mapDelegate";
+        public abstract string MapDelegateParametrName { get; }
 
-        public string MapDelegateParametrType()
-        {
-            var builder = new StringBuilder("Action<");
-            for (int i = 0; i < MapTypeInfos.Length; i++)
-            {
-                var mapTypeInfo = MapTypeInfos[i];
-                if (i != 0)
-                {
-                    builder.Append(",");
-                }
-
-                builder.Append(mapTypeInfo.ItemTypeName);
-            }
-            builder.Append(">");
-
-            return builder.ToString();
-        }
+        public abstract string MapDelegateParametrType();
 
         public bool HaveMapTypes => MapTypeInfos?.Length > 0;
 
-        public bool IsCollectionDelegateMap => MapTypeInfos?.Length > 1;
+        public abstract bool IsCollectionDelegateMap { get; }
 
         public string[] _overrideAliasPrefixs { get; set; }
 
