@@ -96,12 +96,17 @@ ORDER BY
                 $"typeof({model.ClassName(isDynamicQuery)}), typeof({model.ClassName(isDynamicQuery)})" :
                 $"typeof({model.ClassName(isDynamicQuery)})";
 
+            var overrideAliasPrefixs = isMultiMap ?
+                "[\"item1\", \"item2\"]" :
+                "null";
+
             stringBuilder.Append($@"
 [Gedaq.MySqlConnector.Attributes.Query(
             query: {query},
             sourceType: SourceType.MySqlConnection,
             methodName:""{SelectMethodName(isDynamicQuery, dynamicParametr, isMultiMap)}"",
             queryMapTypes: [{queryMapTypes}],
+            overrideAliasPrefixs: {overrideAliasPrefixs},
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,

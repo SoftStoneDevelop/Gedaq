@@ -30,240 +30,133 @@ namespace Tests
         {
             new SinglerealArray1M
 {
+    Id = 6,
+    Value = 
+new System.Single[3]
+{
+0.854634f,
+0.7251155f,
+0.7313458f,
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Single[4]
+{
+0.6064569f,
+0.15700865f,
+0.36051542f,
+0.1687535f,
+},
+},
+            new SinglerealArray1M
+{
+    Id = 9,
+    Value = 
+new System.Single[4]
+{
+0.49829823f,
+0.65363795f,
+0.8227835f,
+0.6923181f,
+},
+    ModelInner = new SinglerealArray1MI
+{
     Id = 4,
     Value = 
 new System.Single[3]
 {
-0.04090202f,
-0.025134146f,
-0.43822807f,
+0.8323764f,
+0.9357144f,
+0.34119427f,
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Single[4]
+{
+0.0057520866f,
+0.47481942f,
+0.8109698f,
+0.381603f,
+},
+},
+            new SinglerealArray1M
+{
+    Id = 18,
+    Value = 
+new System.Single[3]
+{
+0.20348299f,
+0.8928919f,
+0.90513766f,
 },
     ModelInner = null,
     NullableValue = null,
 },
             new SinglerealArray1M
 {
-    Id = 5,
+    Id = 25,
     Value = 
-new System.Single[3]
+new System.Single[4]
 {
-0.74458224f,
-0.7823696f,
-0.5701469f,
+0.6922791f,
+0.448753f,
+0.16168374f,
+0.14521569f,
 },
     ModelInner = new SinglerealArray1MI
 {
-    Id = 1,
+    Id = 9,
     Value = 
 new System.Single[4]
 {
-0.2934491f,
-0.24443847f,
-0.3535605f,
-0.07010788f,
+0.4688223f,
+0.10096872f,
+0.592755f,
+0.094552934f,
 },
     NullableValue = null,
-},
-    NullableValue = null,
-},
-            new SinglerealArray1M
-{
-    Id = 7,
-    Value = 
-new System.Single[4]
-{
-0.71788734f,
-0.71474946f,
-0.0841552f,
-0.6903612f,
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new SinglerealArray1M
-{
-    Id = 14,
-    Value = 
-new System.Single[3]
-{
-0.3178357f,
-0.113090396f,
-0.23490334f,
-},
-    ModelInner = new SinglerealArray1MI
-{
-    Id = 8,
-    Value = 
-new System.Single[3]
-{
-0.5355741f,
-0.48241293f,
-0.8656417f,
 },
     NullableValue = 
 new System.Single[3]
 {
-0.89181966f,
-0.7394146f,
-0.79512244f,
-},
-},
-    NullableValue = 
-new System.Single[4]
-{
-0.110431075f,
-0.10927057f,
-0.57655954f,
-0.9197585f,
-},
-},
-            new SinglerealArray1M
-{
-    Id = 20,
-    Value = 
-new System.Single[4]
-{
-0.692168f,
-0.010377407f,
-0.53639543f,
-0.39405644f,
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new SinglerealArray1M
-{
-    Id = 24,
-    Value = 
-new System.Single[4]
-{
-0.56797665f,
-0.88912064f,
-0.8448747f,
-0.75457233f,
-},
-    ModelInner = new SinglerealArray1MI
-{
-    Id = 15,
-    Value = 
-new System.Single[4]
-{
-0.48816258f,
-0.97261447f,
-0.80826515f,
-0.65301305f,
-},
-    NullableValue = 
-new System.Single[3]
-{
-0.79191685f,
-0.76238924f,
-0.16395855f,
-},
-},
-    NullableValue = 
-new System.Single[4]
-{
-0.72658354f,
-0.30206728f,
-0.2782306f,
-0.9443107f,
+0.8718875f,
+0.7335769f,
+0.29592395f,
 },
 },
             new SinglerealArray1M
 {
     Id = 26,
     Value = 
-new System.Single[4]
+new System.Single[3]
 {
-0.69851565f,
-0.7025478f,
-0.1931358f,
-0.26506805f,
+0.8744353f,
+0.8518367f,
+0.5410796f,
 },
     ModelInner = null,
     NullableValue = null,
 },
             new SinglerealArray1M
 {
-    Id = 30,
+    Id = 35,
     Value = 
 new System.Single[3]
 {
-0.0004428029f,
-0.50868124f,
-0.09399849f,
+0.37246192f,
+0.4801519f,
+0.053087115f,
 },
     ModelInner = new SinglerealArray1MI
 {
-    Id = 16,
-    Value = 
-new System.Single[4]
-{
-0.075510204f,
-0.13435191f,
-0.59653723f,
-0.9376416f,
-},
-    NullableValue = 
-new System.Single[4]
-{
-0.62037194f,
-0.8230985f,
-0.83208865f,
-0.018267155f,
-},
-},
-    NullableValue = 
-new System.Single[4]
-{
-0.92447114f,
-0.26879f,
-0.42200887f,
-0.14018816f,
-},
-},
-            new SinglerealArray1M
-{
-    Id = 36,
-    Value = 
-new System.Single[4]
-{
-0.5915597f,
-0.23070365f,
-0.57187504f,
-0.60452163f,
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Single[4]
-{
-0.04644257f,
-0.22559828f,
-0.26308525f,
-0.4888723f,
-},
-},
-            new SinglerealArray1M
-{
-    Id = 38,
-    Value = 
-new System.Single[4]
-{
-0.26248592f,
-0.65067476f,
-0.3730039f,
-0.82134795f,
-},
-    ModelInner = new SinglerealArray1MI
-{
-    Id = 22,
+    Id = 12,
     Value = 
 new System.Single[3]
 {
-0.1453678f,
-0.7133735f,
-0.3566664f,
+0.8564559f,
+0.21882606f,
+0.13769287f,
 },
     NullableValue = null,
 },
@@ -271,81 +164,197 @@ new System.Single[3]
 },
             new SinglerealArray1M
 {
-    Id = 42,
+    Id = 44,
     Value = 
 new System.Single[4]
 {
-0.5653378f,
-0.703041f,
-0.0047922134f,
-0.8749313f,
+0.8293875f,
+0.4394163f,
+0.93726754f,
+0.9643521f,
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Single[4]
+{
+0.26131898f,
+0.5282182f,
+0.19102043f,
+0.53247535f,
+},
 },
             new SinglerealArray1M
 {
-    Id = 43,
+    Id = 45,
     Value = 
 new System.Single[4]
 {
-0.6298616f,
-0.5377644f,
-0.26919192f,
-0.9668667f,
+0.32630378f,
+0.6918463f,
+0.64090616f,
+0.22707796f,
 },
     ModelInner = new SinglerealArray1MI
 {
-    Id = 23,
+    Id = 21,
     Value = 
 new System.Single[4]
 {
-0.8193387f,
-0.66018206f,
-0.240682f,
-0.35078573f,
+0.5378397f,
+0.05506313f,
+0.12998813f,
+0.011834085f,
+},
+    NullableValue = 
+new System.Single[3]
+{
+0.080032825f,
+0.8755001f,
+0.32621711f,
+},
 },
     NullableValue = 
 new System.Single[4]
 {
-0.8097067f,
-0.2134698f,
-0.17240536f,
-0.01139462f,
-},
-},
-    NullableValue = 
-new System.Single[4]
-{
-0.9886741f,
-0.85142624f,
-0.14225376f,
-0.6702375f,
+0.1638217f,
+0.22880244f,
+0.17527342f,
+0.11644411f,
 },
 },
             new SinglerealArray1M
 {
-    Id = 50,
+    Id = 49,
+    Value = 
+new System.Single[4]
+{
+0.20894289f,
+0.90235925f,
+0.35466605f,
+0.7692427f,
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Single[3]
+{
+0.9914366f,
+0.9390052f,
+0.59664214f,
+},
+},
+            new SinglerealArray1M
+{
+    Id = 54,
+    Value = 
+new System.Single[4]
+{
+0.63574886f,
+0.6048213f,
+0.53065085f,
+0.6954165f,
+},
+    ModelInner = new SinglerealArray1MI
+{
+    Id = 27,
     Value = 
 new System.Single[3]
 {
-0.56735206f,
-0.43222725f,
-0.48398745f,
+0.78450483f,
+0.79558414f,
+0.95808625f,
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Single[4]
+{
+0.34519613f,
+0.5766986f,
+0.5207428f,
+0.8567866f,
+},
+},
+            new SinglerealArray1M
+{
+    Id = 56,
+    Value = 
+new System.Single[4]
+{
+0.0214473f,
+0.001880765f,
+0.10892451f,
+0.62039906f,
 },
     ModelInner = null,
     NullableValue = null,
 },
             new SinglerealArray1M
 {
-    Id = 52,
+    Id = 59,
+    Value = 
+new System.Single[3]
+{
+0.276335f,
+0.8941407f,
+0.35774952f,
+},
+    ModelInner = new SinglerealArray1MI
+{
+    Id = 29,
     Value = 
 new System.Single[4]
 {
-0.09504217f,
-0.7656246f,
-0.42473f,
-0.06467533f,
+0.037608147f,
+0.36168212f,
+0.7534229f,
+0.22589922f,
+},
+    NullableValue = 
+new System.Single[4]
+{
+0.553008f,
+0.3312509f,
+0.60379493f,
+0.5891696f,
+},
+},
+    NullableValue = 
+new System.Single[3]
+{
+0.4004988f,
+0.4081332f,
+0.25673652f,
+},
+},
+            new SinglerealArray1M
+{
+    Id = 64,
+    Value = 
+new System.Single[3]
+{
+0.87167484f,
+0.6807959f,
+0.6381006f,
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Single[4]
+{
+0.93737715f,
+0.36352623f,
+0.37707376f,
+0.1830855f,
+},
+},
+            new SinglerealArray1M
+{
+    Id = 66,
+    Value = 
+new System.Single[3]
+{
+0.7426521f,
+0.9662728f,
+0.60614944f,
 },
     ModelInner = new SinglerealArray1MI
 {
@@ -353,259 +362,136 @@ new System.Single[4]
     Value = 
 new System.Single[4]
 {
-0.93784165f,
-0.50900304f,
-0.9550033f,
-0.58191794f,
+0.56118643f,
+0.6625522f,
+0.8893838f,
+0.36759466f,
 },
-    NullableValue = 
-new System.Single[4]
-{
-0.45003486f,
-0.789222f,
-0.9924435f,
-0.6092115f,
-},
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new SinglerealArray1M
 {
-    Id = 60,
+    Id = 71,
     Value = 
 new System.Single[4]
 {
-0.16210926f,
-0.33303994f,
-0.43551803f,
-0.22947317f,
+0.9889791f,
+0.988212f,
+0.9676989f,
+0.77651286f,
 },
     ModelInner = null,
     NullableValue = 
 new System.Single[4]
 {
-0.85200334f,
-0.78688383f,
-0.72013706f,
-0.060804605f,
+0.02152294f,
+0.28063446f,
+0.052788794f,
+0.6269754f,
 },
 },
             new SinglerealArray1M
 {
-    Id = 63,
+    Id = 75,
     Value = 
 new System.Single[3]
 {
-0.10953587f,
-0.25434303f,
-0.5200038f,
+0.022572458f,
+0.50178033f,
+0.6480113f,
 },
     ModelInner = new SinglerealArray1MI
 {
-    Id = 38,
+    Id = 39,
     Value = 
 new System.Single[4]
 {
-0.933685f,
-0.4565695f,
-0.20372665f,
-0.9223319f,
+0.26683676f,
+0.9288538f,
+0.31908745f,
+0.83384436f,
 },
     NullableValue = null,
 },
-    NullableValue = 
+    NullableValue = null,
+},
+            new SinglerealArray1M
+{
+    Id = 80,
+    Value = 
 new System.Single[4]
 {
-0.054368198f,
-0.59865457f,
-0.4099576f,
-0.5695027f,
-},
-},
-            new SinglerealArray1M
-{
-    Id = 72,
-    Value = 
-new System.Single[3]
-{
-0.6260762f,
-0.9332109f,
-0.35785782f,
+0.76073617f,
+0.17335469f,
+0.54824173f,
+0.5913992f,
 },
     ModelInner = null,
-    NullableValue = 
-new System.Single[3]
-{
-0.85401845f,
-0.037354708f,
-0.82789254f,
-},
+    NullableValue = null,
 },
             new SinglerealArray1M
 {
-    Id = 76,
+    Id = 81,
     Value = 
 new System.Single[3]
 {
-0.2939533f,
-0.333723f,
-0.3907352f,
+0.09557533f,
+0.94131196f,
+0.27716678f,
 },
     ModelInner = new SinglerealArray1MI
 {
-    Id = 40,
+    Id = 45,
     Value = 
 new System.Single[4]
 {
-0.18396503f,
-0.76569736f,
-0.6317603f,
-0.2418195f,
+0.13539922f,
+0.16003758f,
+0.4323092f,
+0.383632f,
+},
+    NullableValue = 
+new System.Single[4]
+{
+0.110903025f,
+0.5525091f,
+0.36044258f,
+0.74158585f,
+},
 },
     NullableValue = null,
-},
-    NullableValue = 
-new System.Single[3]
-{
-0.2966025f,
-0.88854885f,
-0.85694295f,
-},
-},
-            new SinglerealArray1M
-{
-    Id = 78,
-    Value = 
-new System.Single[3]
-{
-0.72886044f,
-0.88420236f,
-0.7063242f,
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Single[4]
-{
-0.2671029f,
-0.5242573f,
-0.15356785f,
-0.39928055f,
-},
 },
             new SinglerealArray1M
 {
     Id = 85,
     Value = 
-new System.Single[4]
-{
-0.30341172f,
-0.87609136f,
-0.009200215f,
-0.21342206f,
-},
-    ModelInner = new SinglerealArray1MI
-{
-    Id = 43,
-    Value = 
-new System.Single[4]
-{
-0.43896663f,
-0.81297207f,
-0.64951587f,
-0.30279124f,
-},
-    NullableValue = 
 new System.Single[3]
 {
-0.19283277f,
-0.9923281f,
-0.36480016f,
-},
-},
-    NullableValue = 
-new System.Single[3]
-{
-0.7160119f,
-0.29834443f,
-0.4507234f,
-},
-},
-            new SinglerealArray1M
-{
-    Id = 88,
-    Value = 
-new System.Single[4]
-{
-0.18246919f,
-0.50159484f,
-0.44746423f,
-0.009037554f,
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new SinglerealArray1M
-{
-    Id = 97,
-    Value = 
-new System.Single[4]
-{
-0.6742994f,
-0.29342616f,
-0.74982685f,
-0.3471064f,
-},
-    ModelInner = new SinglerealArray1MI
-{
-    Id = 44,
-    Value = 
-new System.Single[3]
-{
-0.14244902f,
-0.00531888f,
-0.20360094f,
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Single[4]
-{
-0.13669157f,
-0.51372516f,
-0.46482605f,
-0.4879951f,
-},
-},
-            new SinglerealArray1M
-{
-    Id = 102,
-    Value = 
-new System.Single[4]
-{
-0.05145496f,
-0.9946674f,
-0.19093275f,
-0.531439f,
+0.14531094f,
+0.4996106f,
+0.42018962f,
 },
     ModelInner = null,
     NullableValue = 
-new System.Single[3]
+new System.Single[4]
 {
-0.040554166f,
-0.48814303f,
-0.12234527f,
+0.054389477f,
+0.6261825f,
+0.44941753f,
+0.4855873f,
 },
 },
             new SinglerealArray1M
 {
-    Id = 103,
+    Id = 94,
     Value = 
-new System.Single[4]
+new System.Single[3]
 {
-0.17081696f,
-0.19378144f,
-0.23153424f,
-0.5592029f,
+0.26997232f,
+0.7656168f,
+0.86260617f,
 },
     ModelInner = new SinglerealArray1MI
 {
@@ -613,102 +499,95 @@ new System.Single[4]
     Value = 
 new System.Single[4]
 {
-0.4595158f,
-0.39317954f,
-0.64788526f,
-0.318179f,
+0.45341414f,
+0.17843932f,
+0.86796707f,
+0.03430122f,
 },
     NullableValue = 
 new System.Single[4]
 {
-0.343037f,
-0.14369893f,
-0.50987774f,
-0.21240997f,
+0.52356374f,
+0.16854042f,
+0.33982635f,
+0.44548362f,
 },
 },
+    NullableValue = 
+new System.Single[3]
+{
+0.90532535f,
+0.058643997f,
+0.10746348f,
+},
+},
+            new SinglerealArray1M
+{
+    Id = 97,
+    Value = 
+new System.Single[3]
+{
+0.43430644f,
+0.43661082f,
+0.06055808f,
+},
+    ModelInner = null,
     NullableValue = null,
 },
             new SinglerealArray1M
 {
-    Id = 110,
-    Value = 
-new System.Single[3]
-{
-0.6680708f,
-0.24842966f,
-0.7250653f,
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Single[3]
-{
-0.86801386f,
-0.79013836f,
-0.97560763f,
-},
-},
-            new SinglerealArray1M
-{
-    Id = 117,
+    Id = 101,
     Value = 
 new System.Single[4]
 {
-0.34865445f,
-0.8904414f,
-0.69167405f,
-0.71032846f,
+0.87404555f,
+0.21389443f,
+0.30593485f,
+0.565006f,
 },
     ModelInner = new SinglerealArray1MI
 {
     Id = 52,
     Value = 
+new System.Single[4]
+{
+0.86359435f,
+0.913412f,
+0.40766168f,
+0.30431193f,
+},
+    NullableValue = 
 new System.Single[3]
 {
-0.7386612f,
-0.8732258f,
-0.25805098f,
+0.4869057f,
+0.7144605f,
+0.99136645f,
+},
 },
     NullableValue = null,
 },
-    NullableValue = 
-new System.Single[3]
-{
-0.39243108f,
-0.69983625f,
-0.038882315f,
-},
-},
             new SinglerealArray1M
 {
-    Id = 123,
+    Id = 108,
     Value = 
-new System.Single[4]
+new System.Single[3]
 {
-0.026593864f,
-0.8488509f,
-0.6339751f,
-0.09192604f,
+0.2371009f,
+0.118248165f,
+0.8604856f,
 },
     ModelInner = null,
-    NullableValue = 
-new System.Single[4]
-{
-0.9825378f,
-0.99671614f,
-0.58307576f,
-0.3307079f,
-},
+    NullableValue = null,
 },
             new SinglerealArray1M
 {
-    Id = 125,
+    Id = 117,
     Value = 
 new System.Single[3]
 {
-0.28172845f,
-0.45083326f,
-0.73073494f,
+0.5031801f,
+0.20389402f,
+0.4874543f,
 },
     ModelInner = new SinglerealArray1MI
 {
@@ -716,59 +595,170 @@ new System.Single[3]
     Value = 
 new System.Single[3]
 {
-0.4706812f,
-0.95441777f,
-0.58168554f,
+0.9159942f,
+0.49270773f,
+0.12824667f,
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Single[4]
+{
+0.679873f,
+0.66012156f,
+0.19821584f,
+0.56540227f,
 },
-    NullableValue = null,
+},
+    NullableValue = 
+new System.Single[3]
+{
+0.7511694f,
+0.42116213f,
+0.20790815f,
+},
 },
             new SinglerealArray1M
 {
-    Id = 134,
+    Id = 122,
     Value = 
-new System.Single[4]
+new System.Single[3]
 {
-0.9536863f,
-0.6447596f,
-0.41766804f,
-0.67945254f,
+0.88127285f,
+0.5004066f,
+0.7575773f,
 },
     ModelInner = null,
     NullableValue = null,
 },
             new SinglerealArray1M
 {
-    Id = 143,
+    Id = 123,
     Value = 
 new System.Single[4]
 {
-0.95285034f,
-0.061133504f,
-0.817652f,
-0.33058518f,
+0.48743147f,
+0.06476337f,
+0.8791253f,
+0.27924728f,
 },
     ModelInner = new SinglerealArray1MI
 {
-    Id = 62,
+    Id = 68,
+    Value = 
+new System.Single[3]
+{
+0.8970924f,
+0.86358815f,
+0.7428778f,
+},
+    NullableValue = 
+new System.Single[4]
+{
+0.97273654f,
+0.71024f,
+0.9123339f,
+0.94210744f,
+},
+},
+    NullableValue = 
+new System.Single[4]
+{
+0.7330139f,
+0.5249969f,
+0.93179464f,
+0.026826084f,
+},
+},
+            new SinglerealArray1M
+{
+    Id = 125,
     Value = 
 new System.Single[4]
 {
-0.3597744f,
-0.475882f,
-0.71067476f,
-0.579763f,
+0.090521395f,
+0.46880186f,
+0.20045763f,
+0.6418639f,
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new SinglerealArray1M
+{
+    Id = 127,
+    Value = 
+new System.Single[4]
+{
+0.96682453f,
+0.27897596f,
+0.13072056f,
+0.99144965f,
+},
+    ModelInner = new SinglerealArray1MI
+{
+    Id = 74,
+    Value = 
+new System.Single[3]
+{
+0.33233142f,
+0.39651543f,
+0.91284394f,
 },
     NullableValue = null,
 },
     NullableValue = 
+new System.Single[4]
+{
+0.91406304f,
+0.23073179f,
+0.7217695f,
+0.19933015f,
+},
+},
+            new SinglerealArray1M
+{
+    Id = 130,
+    Value = 
+new System.Single[4]
+{
+0.295869f,
+0.30315048f,
+0.48863065f,
+0.17306554f,
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new SinglerealArray1M
+{
+    Id = 135,
+    Value = 
+new System.Single[4]
+{
+0.89139223f,
+0.68756735f,
+0.060608327f,
+0.14667052f,
+},
+    ModelInner = new SinglerealArray1MI
+{
+    Id = 80,
+    Value = 
+new System.Single[4]
+{
+0.28205448f,
+0.3079f,
+0.88647693f,
+0.06186509f,
+},
+    NullableValue = 
 new System.Single[3]
 {
-0.96042466f,
-0.09400016f,
-0.36627328f,
+0.059588492f,
+0.1777609f,
+0.72561795f,
 },
+},
+    NullableValue = null,
 },
         };
 
@@ -1142,15 +1132,7 @@ RETURNING
 
                     nullable =  ((ISingleArrayrealArray)this).ScalarInsertModelDynParReturning(connection, parameters);
                 }
-                Assert.That(nullable, Is.Not.Null);
-                Assert.That(nullable, Is.EqualTo(
-new System.Single[4]
-{
-0.72658354f,
-0.30206728f,
-0.2782306f,
-0.9443107f,
-}));
+                Assert.That(nullable, Is.Null);
             }
         }
 
@@ -1195,7 +1177,15 @@ new System.Single[4]
 
                     nullable = await ((ISingleArrayrealArray)this).ScalarInsertModelDynParReturningAsync(connection, parameters);
                 }
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(
+new System.Single[4]
+{
+0.26131898f,
+0.5282182f,
+0.19102043f,
+0.53247535f,
+}));
                 {
                     var parameters = new NpgsqlParameter[4];
                     parameters[0] = new NpgsqlParameter<System.Int32>();
@@ -1234,10 +1224,10 @@ new System.Single[4]
                 Assert.That(nullable, Is.EqualTo(
 new System.Single[4]
 {
-0.92447114f,
-0.26879f,
-0.42200887f,
-0.14018816f,
+0.1638217f,
+0.22880244f,
+0.17527342f,
+0.11644411f,
 }));
             }
         }
@@ -1308,15 +1298,22 @@ RETURNING
                 nullable =  ((ISingleArrayrealArray)this).ScalarInsertModelReturning(connection, _testData[8].Id, _testData[8].Value, _testData[8].NullableValue, _testData[8].ModelInner == null ? null : _testData[8].ModelInner.Id);
                 Assert.That(nullable, Is.Not.Null);
                 Assert.That(nullable, Is.EqualTo(
-new System.Single[4]
+new System.Single[3]
 {
-0.04644257f,
-0.22559828f,
-0.26308525f,
-0.4888723f,
+0.9914366f,
+0.9390052f,
+0.59664214f,
 }));
                 nullable =  ((ISingleArrayrealArray)this).ScalarInsertModelReturning(connection, _testData[9].Id, _testData[9].Value, _testData[9].NullableValue, _testData[9].ModelInner == null ? null : _testData[9].ModelInner.Id);
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(
+new System.Single[4]
+{
+0.34519613f,
+0.5766986f,
+0.5207428f,
+0.8567866f,
+}));
             }
         }
 
@@ -1332,12 +1329,11 @@ new System.Single[4]
                 nullable = await ((ISingleArrayrealArray)this).ScalarInsertModelReturningAsync(connection, _testData[11].Id, _testData[11].Value, _testData[11].NullableValue, _testData[11].ModelInner == null ? null : _testData[11].ModelInner.Id);
                 Assert.That(nullable, Is.Not.Null);
                 Assert.That(nullable, Is.EqualTo(
-new System.Single[4]
+new System.Single[3]
 {
-0.9886741f,
-0.85142624f,
-0.14225376f,
-0.6702375f,
+0.4004988f,
+0.4081332f,
+0.25673652f,
 }));
             }
         }
@@ -1426,6 +1422,7 @@ new System.Single[4]
             query: null,
             methodName:"MMDynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatSinglerealArray1M), typeof(FlatSinglerealArray1M)],
+            overrideAliasPrefixs: ["item1", "item2"],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
@@ -1519,6 +1516,7 @@ ORDER BY
             query: null,
             methodName:"DynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatSinglerealArray1M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
@@ -1608,6 +1606,7 @@ ORDER BY
 ,
             methodName:"SelectModelDynPar",
             queryMapTypes: [typeof(SinglerealArray1M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
@@ -1657,6 +1656,7 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
             query: null,
             methodName:"MMDynQuerySelectModel",
             queryMapTypes: [typeof(FlatSinglerealArray1M), typeof(FlatSinglerealArray1M)],
+            overrideAliasPrefixs: ["item1", "item2"],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
@@ -1750,6 +1750,7 @@ ORDER BY
             query: null,
             methodName:"DynQuerySelectModel",
             queryMapTypes: [typeof(FlatSinglerealArray1M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
@@ -1839,6 +1840,7 @@ ORDER BY
 ,
             methodName:"SelectModel",
             queryMapTypes: [typeof(SinglerealArray1M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
@@ -1888,6 +1890,7 @@ Gedaq.Npgsql.Attributes.Parametr(
             query: null,
             methodName:"DbConnectionMMDynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatSinglerealArray1M), typeof(FlatSinglerealArray1M)],
+            overrideAliasPrefixs: ["item1", "item2"],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -1984,6 +1987,7 @@ ORDER BY
             query: null,
             methodName:"DbConnectionDynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatSinglerealArray1M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -2048,12 +2052,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 78;
+                parametr1.Value = 6;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 43;
+                parametr2.Value = 123;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2083,16 +2087,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
-FlatSinglerealArray1M.AssertModel(models[0],_testData[19], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[10],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(29));
+FlatSinglerealArray1M.AssertModel(models[0],_testData[1], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[2], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[3], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[4], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[5], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[6], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[7], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[8], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[9], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[10], false);FlatSinglerealArray1M.AssertModel(models[10],_testData[11], false);FlatSinglerealArray1M.AssertModel(models[11],_testData[12], false);FlatSinglerealArray1M.AssertModel(models[12],_testData[13], false);FlatSinglerealArray1M.AssertModel(models[13],_testData[14], false);FlatSinglerealArray1M.AssertModel(models[14],_testData[15], false);FlatSinglerealArray1M.AssertModel(models[15],_testData[16], false);FlatSinglerealArray1M.AssertModel(models[16],_testData[17], false);FlatSinglerealArray1M.AssertModel(models[17],_testData[18], false);FlatSinglerealArray1M.AssertModel(models[18],_testData[19], false);FlatSinglerealArray1M.AssertModel(models[19],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[20],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[21],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[22],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[23],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[24],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[25],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[26],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[27],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[28],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
-FlatSinglerealArray1M.AssertModel(models[0],_testData[12], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[13], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[14], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[15], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[16], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[17], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[18], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[19], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[10],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[11],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[12],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[13],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[14],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[15],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[16],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[17],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+FlatSinglerealArray1M.AssertModel(models[0],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }
                     
@@ -2139,12 +2143,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 42;
+                parametr1.Value = 54;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 85;
+                parametr2.Value = 101;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2174,16 +2178,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(19));
-FlatSinglerealArray1M.AssertModel(models[0],_testData[11], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[12], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[13], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[14], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[15], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[16], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[17], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[18], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[19], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[10],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[11],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[12],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[13],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[14],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[15],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[16],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[17],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[18],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(20));
+FlatSinglerealArray1M.AssertModel(models[0],_testData[10], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[11], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[12], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[13], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[14], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[15], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[16], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[17], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[18], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[19], false);FlatSinglerealArray1M.AssertModel(models[10],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[11],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[12],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[13],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[14],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[15],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[16],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[17],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[18],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[19],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
-FlatSinglerealArray1M.AssertModel(models[0],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(8));
+FlatSinglerealArray1M.AssertModel(models[0],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[29], false);
                         continue;
                     }
                     
@@ -2215,6 +2219,7 @@ ORDER BY
 ,
             methodName:"DbConnectionSelectModelDynPar",
             queryMapTypes: [typeof(SinglerealArray1M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -2268,12 +2273,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 42;
+                parametr1.Value = 125;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 123;
+                parametr2.Value = 9;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in await ((ISingleArrayrealArray)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
@@ -2281,16 +2286,16 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(19));
-SinglerealArray1M.AssertModel(models[0],_testData[11], false);SinglerealArray1M.AssertModel(models[1],_testData[12], false);SinglerealArray1M.AssertModel(models[2],_testData[13], false);SinglerealArray1M.AssertModel(models[3],_testData[14], false);SinglerealArray1M.AssertModel(models[4],_testData[15], false);SinglerealArray1M.AssertModel(models[5],_testData[16], false);SinglerealArray1M.AssertModel(models[6],_testData[17], false);SinglerealArray1M.AssertModel(models[7],_testData[18], false);SinglerealArray1M.AssertModel(models[8],_testData[19], false);SinglerealArray1M.AssertModel(models[9],_testData[20], false);SinglerealArray1M.AssertModel(models[10],_testData[21], false);SinglerealArray1M.AssertModel(models[11],_testData[22], false);SinglerealArray1M.AssertModel(models[12],_testData[23], false);SinglerealArray1M.AssertModel(models[13],_testData[24], false);SinglerealArray1M.AssertModel(models[14],_testData[25], false);SinglerealArray1M.AssertModel(models[15],_testData[26], false);SinglerealArray1M.AssertModel(models[16],_testData[27], false);SinglerealArray1M.AssertModel(models[17],_testData[28], false);SinglerealArray1M.AssertModel(models[18],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(3));
+SinglerealArray1M.AssertModel(models[0],_testData[27], false);SinglerealArray1M.AssertModel(models[1],_testData[28], false);SinglerealArray1M.AssertModel(models[2],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-SinglerealArray1M.AssertModel(models[0],_testData[27], false);SinglerealArray1M.AssertModel(models[1],_testData[28], false);SinglerealArray1M.AssertModel(models[2],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(28));
+SinglerealArray1M.AssertModel(models[0],_testData[2], false);SinglerealArray1M.AssertModel(models[1],_testData[3], false);SinglerealArray1M.AssertModel(models[2],_testData[4], false);SinglerealArray1M.AssertModel(models[3],_testData[5], false);SinglerealArray1M.AssertModel(models[4],_testData[6], false);SinglerealArray1M.AssertModel(models[5],_testData[7], false);SinglerealArray1M.AssertModel(models[6],_testData[8], false);SinglerealArray1M.AssertModel(models[7],_testData[9], false);SinglerealArray1M.AssertModel(models[8],_testData[10], false);SinglerealArray1M.AssertModel(models[9],_testData[11], false);SinglerealArray1M.AssertModel(models[10],_testData[12], false);SinglerealArray1M.AssertModel(models[11],_testData[13], false);SinglerealArray1M.AssertModel(models[12],_testData[14], false);SinglerealArray1M.AssertModel(models[13],_testData[15], false);SinglerealArray1M.AssertModel(models[14],_testData[16], false);SinglerealArray1M.AssertModel(models[15],_testData[17], false);SinglerealArray1M.AssertModel(models[16],_testData[18], false);SinglerealArray1M.AssertModel(models[17],_testData[19], false);SinglerealArray1M.AssertModel(models[18],_testData[20], false);SinglerealArray1M.AssertModel(models[19],_testData[21], false);SinglerealArray1M.AssertModel(models[20],_testData[22], false);SinglerealArray1M.AssertModel(models[21],_testData[23], false);SinglerealArray1M.AssertModel(models[22],_testData[24], false);SinglerealArray1M.AssertModel(models[23],_testData[25], false);SinglerealArray1M.AssertModel(models[24],_testData[26], false);SinglerealArray1M.AssertModel(models[25],_testData[27], false);SinglerealArray1M.AssertModel(models[26],_testData[28], false);SinglerealArray1M.AssertModel(models[27],_testData[29], false);
                         continue;
                     }
                     
@@ -2326,12 +2331,12 @@ SinglerealArray1M.AssertModel(models[0],_testData[27], false);SinglerealArray1M.
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 63;
+                parametr1.Value = 127;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 123;
+                parametr2.Value = 66;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in  ((ISingleArrayrealArray)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
@@ -2339,16 +2344,16 @@ SinglerealArray1M.AssertModel(models[0],_testData[27], false);SinglerealArray1M.
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
-SinglerealArray1M.AssertModel(models[0],_testData[16], false);SinglerealArray1M.AssertModel(models[1],_testData[17], false);SinglerealArray1M.AssertModel(models[2],_testData[18], false);SinglerealArray1M.AssertModel(models[3],_testData[19], false);SinglerealArray1M.AssertModel(models[4],_testData[20], false);SinglerealArray1M.AssertModel(models[5],_testData[21], false);SinglerealArray1M.AssertModel(models[6],_testData[22], false);SinglerealArray1M.AssertModel(models[7],_testData[23], false);SinglerealArray1M.AssertModel(models[8],_testData[24], false);SinglerealArray1M.AssertModel(models[9],_testData[25], false);SinglerealArray1M.AssertModel(models[10],_testData[26], false);SinglerealArray1M.AssertModel(models[11],_testData[27], false);SinglerealArray1M.AssertModel(models[12],_testData[28], false);SinglerealArray1M.AssertModel(models[13],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(2));
+SinglerealArray1M.AssertModel(models[0],_testData[28], false);SinglerealArray1M.AssertModel(models[1],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-SinglerealArray1M.AssertModel(models[0],_testData[27], false);SinglerealArray1M.AssertModel(models[1],_testData[28], false);SinglerealArray1M.AssertModel(models[2],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(16));
+SinglerealArray1M.AssertModel(models[0],_testData[14], false);SinglerealArray1M.AssertModel(models[1],_testData[15], false);SinglerealArray1M.AssertModel(models[2],_testData[16], false);SinglerealArray1M.AssertModel(models[3],_testData[17], false);SinglerealArray1M.AssertModel(models[4],_testData[18], false);SinglerealArray1M.AssertModel(models[5],_testData[19], false);SinglerealArray1M.AssertModel(models[6],_testData[20], false);SinglerealArray1M.AssertModel(models[7],_testData[21], false);SinglerealArray1M.AssertModel(models[8],_testData[22], false);SinglerealArray1M.AssertModel(models[9],_testData[23], false);SinglerealArray1M.AssertModel(models[10],_testData[24], false);SinglerealArray1M.AssertModel(models[11],_testData[25], false);SinglerealArray1M.AssertModel(models[12],_testData[26], false);SinglerealArray1M.AssertModel(models[13],_testData[27], false);SinglerealArray1M.AssertModel(models[14],_testData[28], false);SinglerealArray1M.AssertModel(models[15],_testData[29], false);
                         continue;
                     }
                     
@@ -2361,6 +2366,7 @@ SinglerealArray1M.AssertModel(models[0],_testData[27], false);SinglerealArray1M.
             query: null,
             methodName:"DbConnectionMMDynQuerySelectModel",
             queryMapTypes: [typeof(FlatSinglerealArray1M), typeof(FlatSinglerealArray1M)],
+            overrideAliasPrefixs: ["item1", "item2"],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -2453,6 +2459,7 @@ ORDER BY
             query: null,
             methodName:"DbConnectionDynQuerySelectModel",
             queryMapTypes: [typeof(FlatSinglerealArray1M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -2538,21 +2545,21 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((ISingleArrayrealArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 42, query1, 36, query2))
+                foreach(var batchResult in await ((ISingleArrayrealArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 123, query1, 66, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(19));
-FlatSinglerealArray1M.AssertModel(models[0],_testData[11], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[12], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[13], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[14], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[15], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[16], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[17], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[18], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[19], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[10],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[11],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[12],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[13],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[14],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[15],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[16],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[17],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[18],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+FlatSinglerealArray1M.AssertModel(models[0],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(21));
-FlatSinglerealArray1M.AssertModel(models[0],_testData[9], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[10], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[11], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[12], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[13], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[14], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[15], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[16], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[17], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[18], false);FlatSinglerealArray1M.AssertModel(models[10],_testData[19], false);FlatSinglerealArray1M.AssertModel(models[11],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[12],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[13],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[14],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[15],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[16],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[17],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[18],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[19],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[20],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(16));
+FlatSinglerealArray1M.AssertModel(models[0],_testData[14], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[15], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[16], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[17], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[18], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[19], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[10],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[11],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[12],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[13],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[14],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[15],_testData[29], false);
                         continue;
                     }
                     
@@ -2616,21 +2623,21 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((ISingleArrayrealArray)this).DbConnectionDynQuerySelectModelBatch(connection, 30, query1, 78, query2))
+                foreach(var batchResult in  ((ISingleArrayrealArray)this).DbConnectionDynQuerySelectModelBatch(connection, 71, query1, 6, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
-FlatSinglerealArray1M.AssertModel(models[0],_testData[8], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[9], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[10], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[11], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[12], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[13], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[14], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[15], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[16], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[17], false);FlatSinglerealArray1M.AssertModel(models[10],_testData[18], false);FlatSinglerealArray1M.AssertModel(models[11],_testData[19], false);FlatSinglerealArray1M.AssertModel(models[12],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[13],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[14],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[15],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[16],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[17],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[18],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[19],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[20],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[21],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(15));
+FlatSinglerealArray1M.AssertModel(models[0],_testData[15], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[16], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[17], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[18], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[19], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[10],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[11],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[12],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[13],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[14],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
-FlatSinglerealArray1M.AssertModel(models[0],_testData[19], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[10],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(29));
+FlatSinglerealArray1M.AssertModel(models[0],_testData[1], false);FlatSinglerealArray1M.AssertModel(models[1],_testData[2], false);FlatSinglerealArray1M.AssertModel(models[2],_testData[3], false);FlatSinglerealArray1M.AssertModel(models[3],_testData[4], false);FlatSinglerealArray1M.AssertModel(models[4],_testData[5], false);FlatSinglerealArray1M.AssertModel(models[5],_testData[6], false);FlatSinglerealArray1M.AssertModel(models[6],_testData[7], false);FlatSinglerealArray1M.AssertModel(models[7],_testData[8], false);FlatSinglerealArray1M.AssertModel(models[8],_testData[9], false);FlatSinglerealArray1M.AssertModel(models[9],_testData[10], false);FlatSinglerealArray1M.AssertModel(models[10],_testData[11], false);FlatSinglerealArray1M.AssertModel(models[11],_testData[12], false);FlatSinglerealArray1M.AssertModel(models[12],_testData[13], false);FlatSinglerealArray1M.AssertModel(models[13],_testData[14], false);FlatSinglerealArray1M.AssertModel(models[14],_testData[15], false);FlatSinglerealArray1M.AssertModel(models[15],_testData[16], false);FlatSinglerealArray1M.AssertModel(models[16],_testData[17], false);FlatSinglerealArray1M.AssertModel(models[17],_testData[18], false);FlatSinglerealArray1M.AssertModel(models[18],_testData[19], false);FlatSinglerealArray1M.AssertModel(models[19],_testData[20], false);FlatSinglerealArray1M.AssertModel(models[20],_testData[21], false);FlatSinglerealArray1M.AssertModel(models[21],_testData[22], false);FlatSinglerealArray1M.AssertModel(models[22],_testData[23], false);FlatSinglerealArray1M.AssertModel(models[23],_testData[24], false);FlatSinglerealArray1M.AssertModel(models[24],_testData[25], false);FlatSinglerealArray1M.AssertModel(models[25],_testData[26], false);FlatSinglerealArray1M.AssertModel(models[26],_testData[27], false);FlatSinglerealArray1M.AssertModel(models[27],_testData[28], false);FlatSinglerealArray1M.AssertModel(models[28],_testData[29], false);
                         continue;
                     }
                     
@@ -2662,6 +2669,7 @@ ORDER BY
 ,
             methodName:"DbConnectionSelectModel",
             queryMapTypes: [typeof(SinglerealArray1M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -2714,21 +2722,21 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((ISingleArrayrealArray)this).DbConnectionSelectModelBatchAsync(connection, 110, 20))
+                foreach(var batchResult in await ((ISingleArrayrealArray)this).DbConnectionSelectModelBatchAsync(connection, 75, 6))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(5));
-SinglerealArray1M.AssertModel(models[0],_testData[25], false);SinglerealArray1M.AssertModel(models[1],_testData[26], false);SinglerealArray1M.AssertModel(models[2],_testData[27], false);SinglerealArray1M.AssertModel(models[3],_testData[28], false);SinglerealArray1M.AssertModel(models[4],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(14));
+SinglerealArray1M.AssertModel(models[0],_testData[16], false);SinglerealArray1M.AssertModel(models[1],_testData[17], false);SinglerealArray1M.AssertModel(models[2],_testData[18], false);SinglerealArray1M.AssertModel(models[3],_testData[19], false);SinglerealArray1M.AssertModel(models[4],_testData[20], false);SinglerealArray1M.AssertModel(models[5],_testData[21], false);SinglerealArray1M.AssertModel(models[6],_testData[22], false);SinglerealArray1M.AssertModel(models[7],_testData[23], false);SinglerealArray1M.AssertModel(models[8],_testData[24], false);SinglerealArray1M.AssertModel(models[9],_testData[25], false);SinglerealArray1M.AssertModel(models[10],_testData[26], false);SinglerealArray1M.AssertModel(models[11],_testData[27], false);SinglerealArray1M.AssertModel(models[12],_testData[28], false);SinglerealArray1M.AssertModel(models[13],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
-SinglerealArray1M.AssertModel(models[0],_testData[5], false);SinglerealArray1M.AssertModel(models[1],_testData[6], false);SinglerealArray1M.AssertModel(models[2],_testData[7], false);SinglerealArray1M.AssertModel(models[3],_testData[8], false);SinglerealArray1M.AssertModel(models[4],_testData[9], false);SinglerealArray1M.AssertModel(models[5],_testData[10], false);SinglerealArray1M.AssertModel(models[6],_testData[11], false);SinglerealArray1M.AssertModel(models[7],_testData[12], false);SinglerealArray1M.AssertModel(models[8],_testData[13], false);SinglerealArray1M.AssertModel(models[9],_testData[14], false);SinglerealArray1M.AssertModel(models[10],_testData[15], false);SinglerealArray1M.AssertModel(models[11],_testData[16], false);SinglerealArray1M.AssertModel(models[12],_testData[17], false);SinglerealArray1M.AssertModel(models[13],_testData[18], false);SinglerealArray1M.AssertModel(models[14],_testData[19], false);SinglerealArray1M.AssertModel(models[15],_testData[20], false);SinglerealArray1M.AssertModel(models[16],_testData[21], false);SinglerealArray1M.AssertModel(models[17],_testData[22], false);SinglerealArray1M.AssertModel(models[18],_testData[23], false);SinglerealArray1M.AssertModel(models[19],_testData[24], false);SinglerealArray1M.AssertModel(models[20],_testData[25], false);SinglerealArray1M.AssertModel(models[21],_testData[26], false);SinglerealArray1M.AssertModel(models[22],_testData[27], false);SinglerealArray1M.AssertModel(models[23],_testData[28], false);SinglerealArray1M.AssertModel(models[24],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(29));
+SinglerealArray1M.AssertModel(models[0],_testData[1], false);SinglerealArray1M.AssertModel(models[1],_testData[2], false);SinglerealArray1M.AssertModel(models[2],_testData[3], false);SinglerealArray1M.AssertModel(models[3],_testData[4], false);SinglerealArray1M.AssertModel(models[4],_testData[5], false);SinglerealArray1M.AssertModel(models[5],_testData[6], false);SinglerealArray1M.AssertModel(models[6],_testData[7], false);SinglerealArray1M.AssertModel(models[7],_testData[8], false);SinglerealArray1M.AssertModel(models[8],_testData[9], false);SinglerealArray1M.AssertModel(models[9],_testData[10], false);SinglerealArray1M.AssertModel(models[10],_testData[11], false);SinglerealArray1M.AssertModel(models[11],_testData[12], false);SinglerealArray1M.AssertModel(models[12],_testData[13], false);SinglerealArray1M.AssertModel(models[13],_testData[14], false);SinglerealArray1M.AssertModel(models[14],_testData[15], false);SinglerealArray1M.AssertModel(models[15],_testData[16], false);SinglerealArray1M.AssertModel(models[16],_testData[17], false);SinglerealArray1M.AssertModel(models[17],_testData[18], false);SinglerealArray1M.AssertModel(models[18],_testData[19], false);SinglerealArray1M.AssertModel(models[19],_testData[20], false);SinglerealArray1M.AssertModel(models[20],_testData[21], false);SinglerealArray1M.AssertModel(models[21],_testData[22], false);SinglerealArray1M.AssertModel(models[22],_testData[23], false);SinglerealArray1M.AssertModel(models[23],_testData[24], false);SinglerealArray1M.AssertModel(models[24],_testData[25], false);SinglerealArray1M.AssertModel(models[25],_testData[26], false);SinglerealArray1M.AssertModel(models[26],_testData[27], false);SinglerealArray1M.AssertModel(models[27],_testData[28], false);SinglerealArray1M.AssertModel(models[28],_testData[29], false);
                         continue;
                     }
                     
@@ -2759,21 +2767,21 @@ SinglerealArray1M.AssertModel(models[0],_testData[5], false);SinglerealArray1M.A
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((ISingleArrayrealArray)this).DbConnectionSelectModelBatch(connection, 20, 88))
+                foreach(var batchResult in  ((ISingleArrayrealArray)this).DbConnectionSelectModelBatch(connection, 44, 64))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
-SinglerealArray1M.AssertModel(models[0],_testData[5], false);SinglerealArray1M.AssertModel(models[1],_testData[6], false);SinglerealArray1M.AssertModel(models[2],_testData[7], false);SinglerealArray1M.AssertModel(models[3],_testData[8], false);SinglerealArray1M.AssertModel(models[4],_testData[9], false);SinglerealArray1M.AssertModel(models[5],_testData[10], false);SinglerealArray1M.AssertModel(models[6],_testData[11], false);SinglerealArray1M.AssertModel(models[7],_testData[12], false);SinglerealArray1M.AssertModel(models[8],_testData[13], false);SinglerealArray1M.AssertModel(models[9],_testData[14], false);SinglerealArray1M.AssertModel(models[10],_testData[15], false);SinglerealArray1M.AssertModel(models[11],_testData[16], false);SinglerealArray1M.AssertModel(models[12],_testData[17], false);SinglerealArray1M.AssertModel(models[13],_testData[18], false);SinglerealArray1M.AssertModel(models[14],_testData[19], false);SinglerealArray1M.AssertModel(models[15],_testData[20], false);SinglerealArray1M.AssertModel(models[16],_testData[21], false);SinglerealArray1M.AssertModel(models[17],_testData[22], false);SinglerealArray1M.AssertModel(models[18],_testData[23], false);SinglerealArray1M.AssertModel(models[19],_testData[24], false);SinglerealArray1M.AssertModel(models[20],_testData[25], false);SinglerealArray1M.AssertModel(models[21],_testData[26], false);SinglerealArray1M.AssertModel(models[22],_testData[27], false);SinglerealArray1M.AssertModel(models[23],_testData[28], false);SinglerealArray1M.AssertModel(models[24],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(23));
+SinglerealArray1M.AssertModel(models[0],_testData[7], false);SinglerealArray1M.AssertModel(models[1],_testData[8], false);SinglerealArray1M.AssertModel(models[2],_testData[9], false);SinglerealArray1M.AssertModel(models[3],_testData[10], false);SinglerealArray1M.AssertModel(models[4],_testData[11], false);SinglerealArray1M.AssertModel(models[5],_testData[12], false);SinglerealArray1M.AssertModel(models[6],_testData[13], false);SinglerealArray1M.AssertModel(models[7],_testData[14], false);SinglerealArray1M.AssertModel(models[8],_testData[15], false);SinglerealArray1M.AssertModel(models[9],_testData[16], false);SinglerealArray1M.AssertModel(models[10],_testData[17], false);SinglerealArray1M.AssertModel(models[11],_testData[18], false);SinglerealArray1M.AssertModel(models[12],_testData[19], false);SinglerealArray1M.AssertModel(models[13],_testData[20], false);SinglerealArray1M.AssertModel(models[14],_testData[21], false);SinglerealArray1M.AssertModel(models[15],_testData[22], false);SinglerealArray1M.AssertModel(models[16],_testData[23], false);SinglerealArray1M.AssertModel(models[17],_testData[24], false);SinglerealArray1M.AssertModel(models[18],_testData[25], false);SinglerealArray1M.AssertModel(models[19],_testData[26], false);SinglerealArray1M.AssertModel(models[20],_testData[27], false);SinglerealArray1M.AssertModel(models[21],_testData[28], false);SinglerealArray1M.AssertModel(models[22],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
-SinglerealArray1M.AssertModel(models[0],_testData[21], false);SinglerealArray1M.AssertModel(models[1],_testData[22], false);SinglerealArray1M.AssertModel(models[2],_testData[23], false);SinglerealArray1M.AssertModel(models[3],_testData[24], false);SinglerealArray1M.AssertModel(models[4],_testData[25], false);SinglerealArray1M.AssertModel(models[5],_testData[26], false);SinglerealArray1M.AssertModel(models[6],_testData[27], false);SinglerealArray1M.AssertModel(models[7],_testData[28], false);SinglerealArray1M.AssertModel(models[8],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(17));
+SinglerealArray1M.AssertModel(models[0],_testData[13], false);SinglerealArray1M.AssertModel(models[1],_testData[14], false);SinglerealArray1M.AssertModel(models[2],_testData[15], false);SinglerealArray1M.AssertModel(models[3],_testData[16], false);SinglerealArray1M.AssertModel(models[4],_testData[17], false);SinglerealArray1M.AssertModel(models[5],_testData[18], false);SinglerealArray1M.AssertModel(models[6],_testData[19], false);SinglerealArray1M.AssertModel(models[7],_testData[20], false);SinglerealArray1M.AssertModel(models[8],_testData[21], false);SinglerealArray1M.AssertModel(models[9],_testData[22], false);SinglerealArray1M.AssertModel(models[10],_testData[23], false);SinglerealArray1M.AssertModel(models[11],_testData[24], false);SinglerealArray1M.AssertModel(models[12],_testData[25], false);SinglerealArray1M.AssertModel(models[13],_testData[26], false);SinglerealArray1M.AssertModel(models[14],_testData[27], false);SinglerealArray1M.AssertModel(models[15],_testData[28], false);SinglerealArray1M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }
                     
@@ -2789,11 +2797,11 @@ SinglerealArray1M.AssertModel(models[0],_testData[21], false);SinglerealArray1M.
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((ISingleArrayrealArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((ISingleArrayrealArray)this).SetDbConnectionSelectModelParametrs(cmd, 102);
+                ((ISingleArrayrealArray)this).SetDbConnectionSelectModelParametrs(cmd, 44);
                 var models = await ((ISingleArrayrealArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(7));
-SinglerealArray1M.AssertModel(models[0],_testData[23], false);SinglerealArray1M.AssertModel(models[1],_testData[24], false);SinglerealArray1M.AssertModel(models[2],_testData[25], false);SinglerealArray1M.AssertModel(models[3],_testData[26], false);SinglerealArray1M.AssertModel(models[4],_testData[27], false);SinglerealArray1M.AssertModel(models[5],_testData[28], false);SinglerealArray1M.AssertModel(models[6],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(23));
+SinglerealArray1M.AssertModel(models[0],_testData[7], false);SinglerealArray1M.AssertModel(models[1],_testData[8], false);SinglerealArray1M.AssertModel(models[2],_testData[9], false);SinglerealArray1M.AssertModel(models[3],_testData[10], false);SinglerealArray1M.AssertModel(models[4],_testData[11], false);SinglerealArray1M.AssertModel(models[5],_testData[12], false);SinglerealArray1M.AssertModel(models[6],_testData[13], false);SinglerealArray1M.AssertModel(models[7],_testData[14], false);SinglerealArray1M.AssertModel(models[8],_testData[15], false);SinglerealArray1M.AssertModel(models[9],_testData[16], false);SinglerealArray1M.AssertModel(models[10],_testData[17], false);SinglerealArray1M.AssertModel(models[11],_testData[18], false);SinglerealArray1M.AssertModel(models[12],_testData[19], false);SinglerealArray1M.AssertModel(models[13],_testData[20], false);SinglerealArray1M.AssertModel(models[14],_testData[21], false);SinglerealArray1M.AssertModel(models[15],_testData[22], false);SinglerealArray1M.AssertModel(models[16],_testData[23], false);SinglerealArray1M.AssertModel(models[17],_testData[24], false);SinglerealArray1M.AssertModel(models[18],_testData[25], false);SinglerealArray1M.AssertModel(models[19],_testData[26], false);SinglerealArray1M.AssertModel(models[20],_testData[27], false);SinglerealArray1M.AssertModel(models[21],_testData[28], false);SinglerealArray1M.AssertModel(models[22],_testData[29], false);
             }
         }
 
@@ -2804,11 +2812,11 @@ SinglerealArray1M.AssertModel(models[0],_testData[23], false);SinglerealArray1M.
             {
                 await connection.OpenAsync();
                  using var cmd =  ((ISingleArrayrealArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((ISingleArrayrealArray)this).SetDbConnectionSelectModelParametrs(cmd, 30);
+                ((ISingleArrayrealArray)this).SetDbConnectionSelectModelParametrs(cmd, 122);
                 var models =  ((ISingleArrayrealArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(22));
-SinglerealArray1M.AssertModel(models[0],_testData[8], false);SinglerealArray1M.AssertModel(models[1],_testData[9], false);SinglerealArray1M.AssertModel(models[2],_testData[10], false);SinglerealArray1M.AssertModel(models[3],_testData[11], false);SinglerealArray1M.AssertModel(models[4],_testData[12], false);SinglerealArray1M.AssertModel(models[5],_testData[13], false);SinglerealArray1M.AssertModel(models[6],_testData[14], false);SinglerealArray1M.AssertModel(models[7],_testData[15], false);SinglerealArray1M.AssertModel(models[8],_testData[16], false);SinglerealArray1M.AssertModel(models[9],_testData[17], false);SinglerealArray1M.AssertModel(models[10],_testData[18], false);SinglerealArray1M.AssertModel(models[11],_testData[19], false);SinglerealArray1M.AssertModel(models[12],_testData[20], false);SinglerealArray1M.AssertModel(models[13],_testData[21], false);SinglerealArray1M.AssertModel(models[14],_testData[22], false);SinglerealArray1M.AssertModel(models[15],_testData[23], false);SinglerealArray1M.AssertModel(models[16],_testData[24], false);SinglerealArray1M.AssertModel(models[17],_testData[25], false);SinglerealArray1M.AssertModel(models[18],_testData[26], false);SinglerealArray1M.AssertModel(models[19],_testData[27], false);SinglerealArray1M.AssertModel(models[20],_testData[28], false);SinglerealArray1M.AssertModel(models[21],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(5));
+SinglerealArray1M.AssertModel(models[0],_testData[25], false);SinglerealArray1M.AssertModel(models[1],_testData[26], false);SinglerealArray1M.AssertModel(models[2],_testData[27], false);SinglerealArray1M.AssertModel(models[3],_testData[28], false);SinglerealArray1M.AssertModel(models[4],_testData[29], false);
             }
         }
 

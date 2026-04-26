@@ -37,7 +37,20 @@ namespace Gedaq.Base.Model
 
         public bool IsCollectionDelegateMap => MapTypeInfos?.Length > 1;
 
-        public string[] _overrideAliasPrefixs { get; protected set; }
+        public string[] _overrideAliasPrefixs { get; set; }
+
+        /// <summary>
+        /// Return not null if have override
+        /// </summary>
+        public string GetAliasOverride(int typeIndex)
+        {
+            if (!HaveMapTypes || _overrideAliasPrefixs == null || _overrideAliasPrefixs.Length <= typeIndex)
+            {
+                return null;
+            }
+
+            return _overrideAliasPrefixs[typeIndex];
+        }
 
         public BaseMethodInfo MethodInfo { get; set; }
 

@@ -29,94 +29,37 @@ namespace Tests
         {
             new Booleanboolean0M
 {
-    Id = 2,
+    Id = 6,
     Value = false,
     ModelInner = null,
     NullableValue = false,
 },
             new Booleanboolean0M
 {
-    Id = 8,
+    Id = 12,
     Value = false,
     ModelInner = new Booleanboolean0MI
 {
-    Id = 1,
+    Id = 5,
     Value = false,
     NullableValue = null,
 },
-    NullableValue = false,
-},
-            new Booleanboolean0M
-{
-    Id = 11,
-    Value = false,
-    ModelInner = null,
     NullableValue = null,
 },
             new Booleanboolean0M
 {
-    Id = 19,
-    Value = false,
-    ModelInner = new Booleanboolean0MI
-{
-    Id = 8,
-    Value = false,
-    NullableValue = false,
-},
-    NullableValue = false,
-},
-            new Booleanboolean0M
-{
-    Id = 20,
-    Value = false,
-    ModelInner = null,
-    NullableValue = null,
-},
-            new Booleanboolean0M
-{
-    Id = 28,
-    Value = false,
-    ModelInner = new Booleanboolean0MI
-{
-    Id = 17,
-    Value = false,
-    NullableValue = null,
-},
-    NullableValue = false,
-},
-            new Booleanboolean0M
-{
-    Id = 29,
-    Value = false,
-    ModelInner = null,
-    NullableValue = null,
-},
-            new Booleanboolean0M
-{
-    Id = 34,
-    Value = false,
-    ModelInner = new Booleanboolean0MI
-{
-    Id = 20,
-    Value = false,
-    NullableValue = false,
-},
-    NullableValue = false,
-},
-            new Booleanboolean0M
-{
-    Id = 39,
+    Id = 14,
     Value = false,
     ModelInner = null,
     NullableValue = false,
 },
             new Booleanboolean0M
 {
-    Id = 41,
+    Id = 21,
     Value = false,
     ModelInner = new Booleanboolean0MI
 {
-    Id = 28,
+    Id = 13,
     Value = false,
     NullableValue = null,
 },
@@ -124,75 +67,56 @@ namespace Tests
 },
             new Booleanboolean0M
 {
-    Id = 45,
+    Id = 27,
     Value = false,
     ModelInner = null,
     NullableValue = false,
 },
             new Booleanboolean0M
 {
-    Id = 54,
+    Id = 33,
     Value = false,
     ModelInner = new Booleanboolean0MI
 {
-    Id = 29,
+    Id = 21,
     Value = false,
     NullableValue = false,
 },
     NullableValue = null,
 },
             new Booleanboolean0M
-{
-    Id = 56,
-    Value = false,
-    ModelInner = null,
-    NullableValue = false,
-},
-            new Booleanboolean0M
-{
-    Id = 63,
-    Value = false,
-    ModelInner = new Booleanboolean0MI
 {
     Id = 35,
     Value = false,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new Booleanboolean0M
-{
-    Id = 72,
-    Value = false,
     ModelInner = null,
     NullableValue = null,
 },
             new Booleanboolean0M
 {
-    Id = 75,
+    Id = 43,
     Value = false,
     ModelInner = new Booleanboolean0MI
 {
-    Id = 36,
+    Id = 23,
     Value = false,
     NullableValue = null,
 },
-    NullableValue = false,
+    NullableValue = null,
 },
             new Booleanboolean0M
 {
-    Id = 84,
+    Id = 52,
     Value = false,
     ModelInner = null,
     NullableValue = false,
 },
             new Booleanboolean0M
 {
-    Id = 86,
+    Id = 58,
     Value = false,
     ModelInner = new Booleanboolean0MI
 {
-    Id = 38,
+    Id = 30,
     Value = false,
     NullableValue = null,
 },
@@ -200,14 +124,52 @@ namespace Tests
 },
             new Booleanboolean0M
 {
-    Id = 95,
+    Id = 66,
     Value = false,
     ModelInner = null,
     NullableValue = false,
 },
             new Booleanboolean0M
 {
-    Id = 103,
+    Id = 68,
+    Value = false,
+    ModelInner = new Booleanboolean0MI
+{
+    Id = 33,
+    Value = false,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new Booleanboolean0M
+{
+    Id = 70,
+    Value = false,
+    ModelInner = null,
+    NullableValue = false,
+},
+            new Booleanboolean0M
+{
+    Id = 73,
+    Value = false,
+    ModelInner = new Booleanboolean0MI
+{
+    Id = 41,
+    Value = false,
+    NullableValue = false,
+},
+    NullableValue = false,
+},
+            new Booleanboolean0M
+{
+    Id = 79,
+    Value = false,
+    ModelInner = null,
+    NullableValue = null,
+},
+            new Booleanboolean0M
+{
+    Id = 85,
     Value = false,
     ModelInner = new Booleanboolean0MI
 {
@@ -215,22 +177,22 @@ namespace Tests
     Value = false,
     NullableValue = null,
 },
-    NullableValue = false,
+    NullableValue = null,
 },
             new Booleanboolean0M
 {
-    Id = 105,
+    Id = 94,
     Value = false,
     ModelInner = null,
-    NullableValue = false,
+    NullableValue = null,
 },
             new Booleanboolean0M
 {
-    Id = 110,
+    Id = 98,
     Value = false,
     ModelInner = new Booleanboolean0MI
 {
-    Id = 55,
+    Id = 53,
     Value = false,
     NullableValue = null,
 },
@@ -238,14 +200,14 @@ namespace Tests
 },
             new Booleanboolean0M
 {
-    Id = 112,
+    Id = 102,
     Value = false,
     ModelInner = null,
     NullableValue = null,
 },
             new Booleanboolean0M
 {
-    Id = 121,
+    Id = 107,
     Value = false,
     ModelInner = new Booleanboolean0MI
 {
@@ -253,56 +215,56 @@ namespace Tests
     Value = false,
     NullableValue = null,
 },
-    NullableValue = false,
+    NullableValue = null,
 },
             new Booleanboolean0M
 {
-    Id = 127,
+    Id = 115,
     Value = false,
     ModelInner = null,
     NullableValue = null,
 },
             new Booleanboolean0M
 {
-    Id = 131,
+    Id = 119,
     Value = false,
     ModelInner = new Booleanboolean0MI
 {
-    Id = 61,
+    Id = 64,
     Value = false,
-    NullableValue = null,
+    NullableValue = false,
 },
     NullableValue = null,
 },
             new Booleanboolean0M
 {
-    Id = 138,
+    Id = 128,
     Value = false,
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = false,
 },
             new Booleanboolean0M
 {
-    Id = 143,
+    Id = 132,
     Value = false,
     ModelInner = new Booleanboolean0MI
 {
-    Id = 70,
+    Id = 67,
     Value = false,
-    NullableValue = false,
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new Booleanboolean0M
 {
-    Id = 145,
+    Id = 135,
     Value = false,
     ModelInner = null,
     NullableValue = false,
 },
             new Booleanboolean0M
 {
-    Id = 148,
+    Id = 142,
     Value = false,
     ModelInner = new Booleanboolean0MI
 {
@@ -310,7 +272,45 @@ namespace Tests
     Value = false,
     NullableValue = false,
 },
+    NullableValue = false,
+},
+            new Booleanboolean0M
+{
+    Id = 149,
+    Value = false,
+    ModelInner = null,
     NullableValue = null,
+},
+            new Booleanboolean0M
+{
+    Id = 156,
+    Value = false,
+    ModelInner = new Booleanboolean0MI
+{
+    Id = 80,
+    Value = false,
+    NullableValue = null,
+},
+    NullableValue = false,
+},
+            new Booleanboolean0M
+{
+    Id = 157,
+    Value = false,
+    ModelInner = null,
+    NullableValue = null,
+},
+            new Booleanboolean0M
+{
+    Id = 160,
+    Value = false,
+    ModelInner = new Booleanboolean0MI
+{
+    Id = 83,
+    Value = false,
+    NullableValue = false,
+},
+    NullableValue = false,
 },
         };
 
@@ -724,6 +724,7 @@ VALUES (
             sourceType: SourceType.MySqlConnection,
             methodName:"MMDynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatBooleanboolean0M), typeof(FlatBooleanboolean0M)],
+            overrideAliasPrefixs: ["item1", "item2"],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -821,6 +822,7 @@ ORDER BY
             sourceType: SourceType.MySqlConnection,
             methodName:"DynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatBooleanboolean0M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -914,6 +916,7 @@ ORDER BY
             sourceType: SourceType.MySqlConnection,
             methodName:"SelectModelDynPar",
             queryMapTypes: [typeof(Booleanboolean0M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -967,6 +970,7 @@ Gedaq.MySqlConnector.Attributes.DynamicParametr()]
             sourceType: SourceType.MySqlConnection,
             methodName:"MMDynQuerySelectModel",
             queryMapTypes: [typeof(FlatBooleanboolean0M), typeof(FlatBooleanboolean0M)],
+            overrideAliasPrefixs: ["item1", "item2"],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -1060,6 +1064,7 @@ ORDER BY
             sourceType: SourceType.MySqlConnection,
             methodName:"DynQuerySelectModel",
             queryMapTypes: [typeof(FlatBooleanboolean0M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -1149,6 +1154,7 @@ ORDER BY
             sourceType: SourceType.MySqlConnection,
             methodName:"SelectModel",
             queryMapTypes: [typeof(Booleanboolean0M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -1197,6 +1203,7 @@ Gedaq.MySqlConnector.Attributes.Parametr(
             query: null,
             methodName:"DbConnectionMMDynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatBooleanboolean0M), typeof(FlatBooleanboolean0M)],
+            overrideAliasPrefixs: ["item1", "item2"],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -1293,6 +1300,7 @@ ORDER BY
             query: null,
             methodName:"DbConnectionDynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatBooleanboolean0M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -1357,12 +1365,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 110;
+                parametr1.Value = 27;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 34;
+                parametr2.Value = 142;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1392,16 +1400,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
-FlatBooleanboolean0M.AssertModel(models[0],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(25));
+FlatBooleanboolean0M.AssertModel(models[0],_testData[5], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[6], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[7], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[8], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[9], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[10], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[11], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[12], false);FlatBooleanboolean0M.AssertModel(models[8],_testData[13], false);FlatBooleanboolean0M.AssertModel(models[9],_testData[14], false);FlatBooleanboolean0M.AssertModel(models[10],_testData[15], false);FlatBooleanboolean0M.AssertModel(models[11],_testData[16], false);FlatBooleanboolean0M.AssertModel(models[12],_testData[17], false);FlatBooleanboolean0M.AssertModel(models[13],_testData[18], false);FlatBooleanboolean0M.AssertModel(models[14],_testData[19], false);FlatBooleanboolean0M.AssertModel(models[15],_testData[20], false);FlatBooleanboolean0M.AssertModel(models[16],_testData[21], false);FlatBooleanboolean0M.AssertModel(models[17],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[18],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[19],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[20],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[21],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[22],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[23],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[24],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
-FlatBooleanboolean0M.AssertModel(models[0],_testData[8], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[9], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[10], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[11], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[12], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[13], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[14], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[15], false);FlatBooleanboolean0M.AssertModel(models[8],_testData[16], false);FlatBooleanboolean0M.AssertModel(models[9],_testData[17], false);FlatBooleanboolean0M.AssertModel(models[10],_testData[18], false);FlatBooleanboolean0M.AssertModel(models[11],_testData[19], false);FlatBooleanboolean0M.AssertModel(models[12],_testData[20], false);FlatBooleanboolean0M.AssertModel(models[13],_testData[21], false);FlatBooleanboolean0M.AssertModel(models[14],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[15],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[16],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[17],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[18],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[19],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[20],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[21],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+FlatBooleanboolean0M.AssertModel(models[0],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }
                     
@@ -1448,12 +1456,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 41;
+                parametr1.Value = 14;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 110;
+                parametr2.Value = 132;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1483,16 +1491,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
-FlatBooleanboolean0M.AssertModel(models[0],_testData[10], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[11], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[12], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[13], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[14], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[15], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[16], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[17], false);FlatBooleanboolean0M.AssertModel(models[8],_testData[18], false);FlatBooleanboolean0M.AssertModel(models[9],_testData[19], false);FlatBooleanboolean0M.AssertModel(models[10],_testData[20], false);FlatBooleanboolean0M.AssertModel(models[11],_testData[21], false);FlatBooleanboolean0M.AssertModel(models[12],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[13],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[14],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[15],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[16],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[17],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[18],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[19],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(27));
+FlatBooleanboolean0M.AssertModel(models[0],_testData[3], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[4], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[5], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[6], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[7], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[8], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[9], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[10], false);FlatBooleanboolean0M.AssertModel(models[8],_testData[11], false);FlatBooleanboolean0M.AssertModel(models[9],_testData[12], false);FlatBooleanboolean0M.AssertModel(models[10],_testData[13], false);FlatBooleanboolean0M.AssertModel(models[11],_testData[14], false);FlatBooleanboolean0M.AssertModel(models[12],_testData[15], false);FlatBooleanboolean0M.AssertModel(models[13],_testData[16], false);FlatBooleanboolean0M.AssertModel(models[14],_testData[17], false);FlatBooleanboolean0M.AssertModel(models[15],_testData[18], false);FlatBooleanboolean0M.AssertModel(models[16],_testData[19], false);FlatBooleanboolean0M.AssertModel(models[17],_testData[20], false);FlatBooleanboolean0M.AssertModel(models[18],_testData[21], false);FlatBooleanboolean0M.AssertModel(models[19],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[20],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[21],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[22],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[23],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[24],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[25],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[26],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
-FlatBooleanboolean0M.AssertModel(models[0],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+FlatBooleanboolean0M.AssertModel(models[0],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }
                     
@@ -1524,6 +1532,7 @@ ORDER BY
 ,
             methodName:"DbConnectionSelectModelDynPar",
             queryMapTypes: [typeof(Booleanboolean0M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -1577,12 +1586,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 121;
+                parametr1.Value = 128;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 54;
+                parametr2.Value = 21;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in await ((IBooleanSingleTypeboolean)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
@@ -1590,16 +1599,16 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
-Booleanboolean0M.AssertModel(models[0],_testData[24], false);Booleanboolean0M.AssertModel(models[1],_testData[25], false);Booleanboolean0M.AssertModel(models[2],_testData[26], false);Booleanboolean0M.AssertModel(models[3],_testData[27], false);Booleanboolean0M.AssertModel(models[4],_testData[28], false);Booleanboolean0M.AssertModel(models[5],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(7));
+Booleanboolean0M.AssertModel(models[0],_testData[23], false);Booleanboolean0M.AssertModel(models[1],_testData[24], false);Booleanboolean0M.AssertModel(models[2],_testData[25], false);Booleanboolean0M.AssertModel(models[3],_testData[26], false);Booleanboolean0M.AssertModel(models[4],_testData[27], false);Booleanboolean0M.AssertModel(models[5],_testData[28], false);Booleanboolean0M.AssertModel(models[6],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
-Booleanboolean0M.AssertModel(models[0],_testData[12], false);Booleanboolean0M.AssertModel(models[1],_testData[13], false);Booleanboolean0M.AssertModel(models[2],_testData[14], false);Booleanboolean0M.AssertModel(models[3],_testData[15], false);Booleanboolean0M.AssertModel(models[4],_testData[16], false);Booleanboolean0M.AssertModel(models[5],_testData[17], false);Booleanboolean0M.AssertModel(models[6],_testData[18], false);Booleanboolean0M.AssertModel(models[7],_testData[19], false);Booleanboolean0M.AssertModel(models[8],_testData[20], false);Booleanboolean0M.AssertModel(models[9],_testData[21], false);Booleanboolean0M.AssertModel(models[10],_testData[22], false);Booleanboolean0M.AssertModel(models[11],_testData[23], false);Booleanboolean0M.AssertModel(models[12],_testData[24], false);Booleanboolean0M.AssertModel(models[13],_testData[25], false);Booleanboolean0M.AssertModel(models[14],_testData[26], false);Booleanboolean0M.AssertModel(models[15],_testData[27], false);Booleanboolean0M.AssertModel(models[16],_testData[28], false);Booleanboolean0M.AssertModel(models[17],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(26));
+Booleanboolean0M.AssertModel(models[0],_testData[4], false);Booleanboolean0M.AssertModel(models[1],_testData[5], false);Booleanboolean0M.AssertModel(models[2],_testData[6], false);Booleanboolean0M.AssertModel(models[3],_testData[7], false);Booleanboolean0M.AssertModel(models[4],_testData[8], false);Booleanboolean0M.AssertModel(models[5],_testData[9], false);Booleanboolean0M.AssertModel(models[6],_testData[10], false);Booleanboolean0M.AssertModel(models[7],_testData[11], false);Booleanboolean0M.AssertModel(models[8],_testData[12], false);Booleanboolean0M.AssertModel(models[9],_testData[13], false);Booleanboolean0M.AssertModel(models[10],_testData[14], false);Booleanboolean0M.AssertModel(models[11],_testData[15], false);Booleanboolean0M.AssertModel(models[12],_testData[16], false);Booleanboolean0M.AssertModel(models[13],_testData[17], false);Booleanboolean0M.AssertModel(models[14],_testData[18], false);Booleanboolean0M.AssertModel(models[15],_testData[19], false);Booleanboolean0M.AssertModel(models[16],_testData[20], false);Booleanboolean0M.AssertModel(models[17],_testData[21], false);Booleanboolean0M.AssertModel(models[18],_testData[22], false);Booleanboolean0M.AssertModel(models[19],_testData[23], false);Booleanboolean0M.AssertModel(models[20],_testData[24], false);Booleanboolean0M.AssertModel(models[21],_testData[25], false);Booleanboolean0M.AssertModel(models[22],_testData[26], false);Booleanboolean0M.AssertModel(models[23],_testData[27], false);Booleanboolean0M.AssertModel(models[24],_testData[28], false);Booleanboolean0M.AssertModel(models[25],_testData[29], false);
                         continue;
                     }
                     
@@ -1635,12 +1644,12 @@ Booleanboolean0M.AssertModel(models[0],_testData[12], false);Booleanboolean0M.As
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 95;
+                parametr1.Value = 128;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 131;
+                parametr2.Value = 6;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in  ((IBooleanSingleTypeboolean)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
@@ -1648,16 +1657,16 @@ Booleanboolean0M.AssertModel(models[0],_testData[12], false);Booleanboolean0M.As
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
-Booleanboolean0M.AssertModel(models[0],_testData[19], false);Booleanboolean0M.AssertModel(models[1],_testData[20], false);Booleanboolean0M.AssertModel(models[2],_testData[21], false);Booleanboolean0M.AssertModel(models[3],_testData[22], false);Booleanboolean0M.AssertModel(models[4],_testData[23], false);Booleanboolean0M.AssertModel(models[5],_testData[24], false);Booleanboolean0M.AssertModel(models[6],_testData[25], false);Booleanboolean0M.AssertModel(models[7],_testData[26], false);Booleanboolean0M.AssertModel(models[8],_testData[27], false);Booleanboolean0M.AssertModel(models[9],_testData[28], false);Booleanboolean0M.AssertModel(models[10],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(7));
+Booleanboolean0M.AssertModel(models[0],_testData[23], false);Booleanboolean0M.AssertModel(models[1],_testData[24], false);Booleanboolean0M.AssertModel(models[2],_testData[25], false);Booleanboolean0M.AssertModel(models[3],_testData[26], false);Booleanboolean0M.AssertModel(models[4],_testData[27], false);Booleanboolean0M.AssertModel(models[5],_testData[28], false);Booleanboolean0M.AssertModel(models[6],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
-Booleanboolean0M.AssertModel(models[0],_testData[26], false);Booleanboolean0M.AssertModel(models[1],_testData[27], false);Booleanboolean0M.AssertModel(models[2],_testData[28], false);Booleanboolean0M.AssertModel(models[3],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(29));
+Booleanboolean0M.AssertModel(models[0],_testData[1], false);Booleanboolean0M.AssertModel(models[1],_testData[2], false);Booleanboolean0M.AssertModel(models[2],_testData[3], false);Booleanboolean0M.AssertModel(models[3],_testData[4], false);Booleanboolean0M.AssertModel(models[4],_testData[5], false);Booleanboolean0M.AssertModel(models[5],_testData[6], false);Booleanboolean0M.AssertModel(models[6],_testData[7], false);Booleanboolean0M.AssertModel(models[7],_testData[8], false);Booleanboolean0M.AssertModel(models[8],_testData[9], false);Booleanboolean0M.AssertModel(models[9],_testData[10], false);Booleanboolean0M.AssertModel(models[10],_testData[11], false);Booleanboolean0M.AssertModel(models[11],_testData[12], false);Booleanboolean0M.AssertModel(models[12],_testData[13], false);Booleanboolean0M.AssertModel(models[13],_testData[14], false);Booleanboolean0M.AssertModel(models[14],_testData[15], false);Booleanboolean0M.AssertModel(models[15],_testData[16], false);Booleanboolean0M.AssertModel(models[16],_testData[17], false);Booleanboolean0M.AssertModel(models[17],_testData[18], false);Booleanboolean0M.AssertModel(models[18],_testData[19], false);Booleanboolean0M.AssertModel(models[19],_testData[20], false);Booleanboolean0M.AssertModel(models[20],_testData[21], false);Booleanboolean0M.AssertModel(models[21],_testData[22], false);Booleanboolean0M.AssertModel(models[22],_testData[23], false);Booleanboolean0M.AssertModel(models[23],_testData[24], false);Booleanboolean0M.AssertModel(models[24],_testData[25], false);Booleanboolean0M.AssertModel(models[25],_testData[26], false);Booleanboolean0M.AssertModel(models[26],_testData[27], false);Booleanboolean0M.AssertModel(models[27],_testData[28], false);Booleanboolean0M.AssertModel(models[28],_testData[29], false);
                         continue;
                     }
                     
@@ -1670,6 +1679,7 @@ Booleanboolean0M.AssertModel(models[0],_testData[26], false);Booleanboolean0M.As
             query: null,
             methodName:"DbConnectionMMDynQuerySelectModel",
             queryMapTypes: [typeof(FlatBooleanboolean0M), typeof(FlatBooleanboolean0M)],
+            overrideAliasPrefixs: ["item1", "item2"],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -1762,6 +1772,7 @@ ORDER BY
             query: null,
             methodName:"DbConnectionDynQuerySelectModel",
             queryMapTypes: [typeof(FlatBooleanboolean0M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -1847,21 +1858,21 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((IBooleanSingleTypeboolean)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 41, query1, 72, query2))
+                foreach(var batchResult in await ((IBooleanSingleTypeboolean)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 107, query1, 142, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
-FlatBooleanboolean0M.AssertModel(models[0],_testData[10], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[11], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[12], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[13], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[14], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[15], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[16], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[17], false);FlatBooleanboolean0M.AssertModel(models[8],_testData[18], false);FlatBooleanboolean0M.AssertModel(models[9],_testData[19], false);FlatBooleanboolean0M.AssertModel(models[10],_testData[20], false);FlatBooleanboolean0M.AssertModel(models[11],_testData[21], false);FlatBooleanboolean0M.AssertModel(models[12],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[13],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[14],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[15],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[16],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[17],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[18],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[19],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(10));
+FlatBooleanboolean0M.AssertModel(models[0],_testData[20], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[21], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[8],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[9],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(15));
-FlatBooleanboolean0M.AssertModel(models[0],_testData[15], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[16], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[17], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[18], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[19], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[20], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[21], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[8],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[9],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[10],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[11],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[12],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[13],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[14],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+FlatBooleanboolean0M.AssertModel(models[0],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }
                     
@@ -1925,21 +1936,21 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((IBooleanSingleTypeboolean)this).DbConnectionDynQuerySelectModelBatch(connection, 75, query1, 95, query2))
+                foreach(var batchResult in  ((IBooleanSingleTypeboolean)this).DbConnectionDynQuerySelectModelBatch(connection, 6, query1, 98, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
-FlatBooleanboolean0M.AssertModel(models[0],_testData[16], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[17], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[18], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[19], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[20], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[21], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[8],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[9],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[10],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[11],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[12],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[13],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(29));
+FlatBooleanboolean0M.AssertModel(models[0],_testData[1], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[2], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[3], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[4], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[5], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[6], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[7], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[8], false);FlatBooleanboolean0M.AssertModel(models[8],_testData[9], false);FlatBooleanboolean0M.AssertModel(models[9],_testData[10], false);FlatBooleanboolean0M.AssertModel(models[10],_testData[11], false);FlatBooleanboolean0M.AssertModel(models[11],_testData[12], false);FlatBooleanboolean0M.AssertModel(models[12],_testData[13], false);FlatBooleanboolean0M.AssertModel(models[13],_testData[14], false);FlatBooleanboolean0M.AssertModel(models[14],_testData[15], false);FlatBooleanboolean0M.AssertModel(models[15],_testData[16], false);FlatBooleanboolean0M.AssertModel(models[16],_testData[17], false);FlatBooleanboolean0M.AssertModel(models[17],_testData[18], false);FlatBooleanboolean0M.AssertModel(models[18],_testData[19], false);FlatBooleanboolean0M.AssertModel(models[19],_testData[20], false);FlatBooleanboolean0M.AssertModel(models[20],_testData[21], false);FlatBooleanboolean0M.AssertModel(models[21],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[22],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[23],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[24],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[25],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[26],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[27],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[28],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
-FlatBooleanboolean0M.AssertModel(models[0],_testData[19], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[20], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[21], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[8],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[9],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[10],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(12));
+FlatBooleanboolean0M.AssertModel(models[0],_testData[18], false);FlatBooleanboolean0M.AssertModel(models[1],_testData[19], false);FlatBooleanboolean0M.AssertModel(models[2],_testData[20], false);FlatBooleanboolean0M.AssertModel(models[3],_testData[21], false);FlatBooleanboolean0M.AssertModel(models[4],_testData[22], false);FlatBooleanboolean0M.AssertModel(models[5],_testData[23], false);FlatBooleanboolean0M.AssertModel(models[6],_testData[24], false);FlatBooleanboolean0M.AssertModel(models[7],_testData[25], false);FlatBooleanboolean0M.AssertModel(models[8],_testData[26], false);FlatBooleanboolean0M.AssertModel(models[9],_testData[27], false);FlatBooleanboolean0M.AssertModel(models[10],_testData[28], false);FlatBooleanboolean0M.AssertModel(models[11],_testData[29], false);
                         continue;
                     }
                     
@@ -1971,6 +1982,7 @@ ORDER BY
 ,
             methodName:"DbConnectionSelectModel",
             queryMapTypes: [typeof(Booleanboolean0M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -2023,21 +2035,21 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IBooleanSingleTypeboolean)this).DbConnectionSelectModelBatchAsync(connection, 41, 8))
+                foreach(var batchResult in await ((IBooleanSingleTypeboolean)this).DbConnectionSelectModelBatchAsync(connection, 119, 94))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
-Booleanboolean0M.AssertModel(models[0],_testData[10], false);Booleanboolean0M.AssertModel(models[1],_testData[11], false);Booleanboolean0M.AssertModel(models[2],_testData[12], false);Booleanboolean0M.AssertModel(models[3],_testData[13], false);Booleanboolean0M.AssertModel(models[4],_testData[14], false);Booleanboolean0M.AssertModel(models[5],_testData[15], false);Booleanboolean0M.AssertModel(models[6],_testData[16], false);Booleanboolean0M.AssertModel(models[7],_testData[17], false);Booleanboolean0M.AssertModel(models[8],_testData[18], false);Booleanboolean0M.AssertModel(models[9],_testData[19], false);Booleanboolean0M.AssertModel(models[10],_testData[20], false);Booleanboolean0M.AssertModel(models[11],_testData[21], false);Booleanboolean0M.AssertModel(models[12],_testData[22], false);Booleanboolean0M.AssertModel(models[13],_testData[23], false);Booleanboolean0M.AssertModel(models[14],_testData[24], false);Booleanboolean0M.AssertModel(models[15],_testData[25], false);Booleanboolean0M.AssertModel(models[16],_testData[26], false);Booleanboolean0M.AssertModel(models[17],_testData[27], false);Booleanboolean0M.AssertModel(models[18],_testData[28], false);Booleanboolean0M.AssertModel(models[19],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(8));
+Booleanboolean0M.AssertModel(models[0],_testData[22], false);Booleanboolean0M.AssertModel(models[1],_testData[23], false);Booleanboolean0M.AssertModel(models[2],_testData[24], false);Booleanboolean0M.AssertModel(models[3],_testData[25], false);Booleanboolean0M.AssertModel(models[4],_testData[26], false);Booleanboolean0M.AssertModel(models[5],_testData[27], false);Booleanboolean0M.AssertModel(models[6],_testData[28], false);Booleanboolean0M.AssertModel(models[7],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(28));
-Booleanboolean0M.AssertModel(models[0],_testData[2], false);Booleanboolean0M.AssertModel(models[1],_testData[3], false);Booleanboolean0M.AssertModel(models[2],_testData[4], false);Booleanboolean0M.AssertModel(models[3],_testData[5], false);Booleanboolean0M.AssertModel(models[4],_testData[6], false);Booleanboolean0M.AssertModel(models[5],_testData[7], false);Booleanboolean0M.AssertModel(models[6],_testData[8], false);Booleanboolean0M.AssertModel(models[7],_testData[9], false);Booleanboolean0M.AssertModel(models[8],_testData[10], false);Booleanboolean0M.AssertModel(models[9],_testData[11], false);Booleanboolean0M.AssertModel(models[10],_testData[12], false);Booleanboolean0M.AssertModel(models[11],_testData[13], false);Booleanboolean0M.AssertModel(models[12],_testData[14], false);Booleanboolean0M.AssertModel(models[13],_testData[15], false);Booleanboolean0M.AssertModel(models[14],_testData[16], false);Booleanboolean0M.AssertModel(models[15],_testData[17], false);Booleanboolean0M.AssertModel(models[16],_testData[18], false);Booleanboolean0M.AssertModel(models[17],_testData[19], false);Booleanboolean0M.AssertModel(models[18],_testData[20], false);Booleanboolean0M.AssertModel(models[19],_testData[21], false);Booleanboolean0M.AssertModel(models[20],_testData[22], false);Booleanboolean0M.AssertModel(models[21],_testData[23], false);Booleanboolean0M.AssertModel(models[22],_testData[24], false);Booleanboolean0M.AssertModel(models[23],_testData[25], false);Booleanboolean0M.AssertModel(models[24],_testData[26], false);Booleanboolean0M.AssertModel(models[25],_testData[27], false);Booleanboolean0M.AssertModel(models[26],_testData[28], false);Booleanboolean0M.AssertModel(models[27],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(13));
+Booleanboolean0M.AssertModel(models[0],_testData[17], false);Booleanboolean0M.AssertModel(models[1],_testData[18], false);Booleanboolean0M.AssertModel(models[2],_testData[19], false);Booleanboolean0M.AssertModel(models[3],_testData[20], false);Booleanboolean0M.AssertModel(models[4],_testData[21], false);Booleanboolean0M.AssertModel(models[5],_testData[22], false);Booleanboolean0M.AssertModel(models[6],_testData[23], false);Booleanboolean0M.AssertModel(models[7],_testData[24], false);Booleanboolean0M.AssertModel(models[8],_testData[25], false);Booleanboolean0M.AssertModel(models[9],_testData[26], false);Booleanboolean0M.AssertModel(models[10],_testData[27], false);Booleanboolean0M.AssertModel(models[11],_testData[28], false);Booleanboolean0M.AssertModel(models[12],_testData[29], false);
                         continue;
                     }
                     
@@ -2068,21 +2080,21 @@ Booleanboolean0M.AssertModel(models[0],_testData[2], false);Booleanboolean0M.Ass
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IBooleanSingleTypeboolean)this).DbConnectionSelectModelBatch(connection, 45, 138))
+                foreach(var batchResult in  ((IBooleanSingleTypeboolean)this).DbConnectionSelectModelBatch(connection, 115, 6))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(19));
-Booleanboolean0M.AssertModel(models[0],_testData[11], false);Booleanboolean0M.AssertModel(models[1],_testData[12], false);Booleanboolean0M.AssertModel(models[2],_testData[13], false);Booleanboolean0M.AssertModel(models[3],_testData[14], false);Booleanboolean0M.AssertModel(models[4],_testData[15], false);Booleanboolean0M.AssertModel(models[5],_testData[16], false);Booleanboolean0M.AssertModel(models[6],_testData[17], false);Booleanboolean0M.AssertModel(models[7],_testData[18], false);Booleanboolean0M.AssertModel(models[8],_testData[19], false);Booleanboolean0M.AssertModel(models[9],_testData[20], false);Booleanboolean0M.AssertModel(models[10],_testData[21], false);Booleanboolean0M.AssertModel(models[11],_testData[22], false);Booleanboolean0M.AssertModel(models[12],_testData[23], false);Booleanboolean0M.AssertModel(models[13],_testData[24], false);Booleanboolean0M.AssertModel(models[14],_testData[25], false);Booleanboolean0M.AssertModel(models[15],_testData[26], false);Booleanboolean0M.AssertModel(models[16],_testData[27], false);Booleanboolean0M.AssertModel(models[17],_testData[28], false);Booleanboolean0M.AssertModel(models[18],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(9));
+Booleanboolean0M.AssertModel(models[0],_testData[21], false);Booleanboolean0M.AssertModel(models[1],_testData[22], false);Booleanboolean0M.AssertModel(models[2],_testData[23], false);Booleanboolean0M.AssertModel(models[3],_testData[24], false);Booleanboolean0M.AssertModel(models[4],_testData[25], false);Booleanboolean0M.AssertModel(models[5],_testData[26], false);Booleanboolean0M.AssertModel(models[6],_testData[27], false);Booleanboolean0M.AssertModel(models[7],_testData[28], false);Booleanboolean0M.AssertModel(models[8],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-Booleanboolean0M.AssertModel(models[0],_testData[27], false);Booleanboolean0M.AssertModel(models[1],_testData[28], false);Booleanboolean0M.AssertModel(models[2],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(29));
+Booleanboolean0M.AssertModel(models[0],_testData[1], false);Booleanboolean0M.AssertModel(models[1],_testData[2], false);Booleanboolean0M.AssertModel(models[2],_testData[3], false);Booleanboolean0M.AssertModel(models[3],_testData[4], false);Booleanboolean0M.AssertModel(models[4],_testData[5], false);Booleanboolean0M.AssertModel(models[5],_testData[6], false);Booleanboolean0M.AssertModel(models[6],_testData[7], false);Booleanboolean0M.AssertModel(models[7],_testData[8], false);Booleanboolean0M.AssertModel(models[8],_testData[9], false);Booleanboolean0M.AssertModel(models[9],_testData[10], false);Booleanboolean0M.AssertModel(models[10],_testData[11], false);Booleanboolean0M.AssertModel(models[11],_testData[12], false);Booleanboolean0M.AssertModel(models[12],_testData[13], false);Booleanboolean0M.AssertModel(models[13],_testData[14], false);Booleanboolean0M.AssertModel(models[14],_testData[15], false);Booleanboolean0M.AssertModel(models[15],_testData[16], false);Booleanboolean0M.AssertModel(models[16],_testData[17], false);Booleanboolean0M.AssertModel(models[17],_testData[18], false);Booleanboolean0M.AssertModel(models[18],_testData[19], false);Booleanboolean0M.AssertModel(models[19],_testData[20], false);Booleanboolean0M.AssertModel(models[20],_testData[21], false);Booleanboolean0M.AssertModel(models[21],_testData[22], false);Booleanboolean0M.AssertModel(models[22],_testData[23], false);Booleanboolean0M.AssertModel(models[23],_testData[24], false);Booleanboolean0M.AssertModel(models[24],_testData[25], false);Booleanboolean0M.AssertModel(models[25],_testData[26], false);Booleanboolean0M.AssertModel(models[26],_testData[27], false);Booleanboolean0M.AssertModel(models[27],_testData[28], false);Booleanboolean0M.AssertModel(models[28],_testData[29], false);
                         continue;
                     }
                     
@@ -2098,11 +2110,11 @@ Booleanboolean0M.AssertModel(models[0],_testData[27], false);Booleanboolean0M.As
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IBooleanSingleTypeboolean)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IBooleanSingleTypeboolean)this).SetDbConnectionSelectModelParametrs(cmd, 8);
+                ((IBooleanSingleTypeboolean)this).SetDbConnectionSelectModelParametrs(cmd, 149);
                 var models = await ((IBooleanSingleTypeboolean)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(28));
-Booleanboolean0M.AssertModel(models[0],_testData[2], false);Booleanboolean0M.AssertModel(models[1],_testData[3], false);Booleanboolean0M.AssertModel(models[2],_testData[4], false);Booleanboolean0M.AssertModel(models[3],_testData[5], false);Booleanboolean0M.AssertModel(models[4],_testData[6], false);Booleanboolean0M.AssertModel(models[5],_testData[7], false);Booleanboolean0M.AssertModel(models[6],_testData[8], false);Booleanboolean0M.AssertModel(models[7],_testData[9], false);Booleanboolean0M.AssertModel(models[8],_testData[10], false);Booleanboolean0M.AssertModel(models[9],_testData[11], false);Booleanboolean0M.AssertModel(models[10],_testData[12], false);Booleanboolean0M.AssertModel(models[11],_testData[13], false);Booleanboolean0M.AssertModel(models[12],_testData[14], false);Booleanboolean0M.AssertModel(models[13],_testData[15], false);Booleanboolean0M.AssertModel(models[14],_testData[16], false);Booleanboolean0M.AssertModel(models[15],_testData[17], false);Booleanboolean0M.AssertModel(models[16],_testData[18], false);Booleanboolean0M.AssertModel(models[17],_testData[19], false);Booleanboolean0M.AssertModel(models[18],_testData[20], false);Booleanboolean0M.AssertModel(models[19],_testData[21], false);Booleanboolean0M.AssertModel(models[20],_testData[22], false);Booleanboolean0M.AssertModel(models[21],_testData[23], false);Booleanboolean0M.AssertModel(models[22],_testData[24], false);Booleanboolean0M.AssertModel(models[23],_testData[25], false);Booleanboolean0M.AssertModel(models[24],_testData[26], false);Booleanboolean0M.AssertModel(models[25],_testData[27], false);Booleanboolean0M.AssertModel(models[26],_testData[28], false);Booleanboolean0M.AssertModel(models[27],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(3));
+Booleanboolean0M.AssertModel(models[0],_testData[27], false);Booleanboolean0M.AssertModel(models[1],_testData[28], false);Booleanboolean0M.AssertModel(models[2],_testData[29], false);
             }
         }
 
@@ -2113,11 +2125,11 @@ Booleanboolean0M.AssertModel(models[0],_testData[2], false);Booleanboolean0M.Ass
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IBooleanSingleTypeboolean)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IBooleanSingleTypeboolean)this).SetDbConnectionSelectModelParametrs(cmd, 54);
+                ((IBooleanSingleTypeboolean)this).SetDbConnectionSelectModelParametrs(cmd, 21);
                 var models =  ((IBooleanSingleTypeboolean)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(18));
-Booleanboolean0M.AssertModel(models[0],_testData[12], false);Booleanboolean0M.AssertModel(models[1],_testData[13], false);Booleanboolean0M.AssertModel(models[2],_testData[14], false);Booleanboolean0M.AssertModel(models[3],_testData[15], false);Booleanboolean0M.AssertModel(models[4],_testData[16], false);Booleanboolean0M.AssertModel(models[5],_testData[17], false);Booleanboolean0M.AssertModel(models[6],_testData[18], false);Booleanboolean0M.AssertModel(models[7],_testData[19], false);Booleanboolean0M.AssertModel(models[8],_testData[20], false);Booleanboolean0M.AssertModel(models[9],_testData[21], false);Booleanboolean0M.AssertModel(models[10],_testData[22], false);Booleanboolean0M.AssertModel(models[11],_testData[23], false);Booleanboolean0M.AssertModel(models[12],_testData[24], false);Booleanboolean0M.AssertModel(models[13],_testData[25], false);Booleanboolean0M.AssertModel(models[14],_testData[26], false);Booleanboolean0M.AssertModel(models[15],_testData[27], false);Booleanboolean0M.AssertModel(models[16],_testData[28], false);Booleanboolean0M.AssertModel(models[17],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(26));
+Booleanboolean0M.AssertModel(models[0],_testData[4], false);Booleanboolean0M.AssertModel(models[1],_testData[5], false);Booleanboolean0M.AssertModel(models[2],_testData[6], false);Booleanboolean0M.AssertModel(models[3],_testData[7], false);Booleanboolean0M.AssertModel(models[4],_testData[8], false);Booleanboolean0M.AssertModel(models[5],_testData[9], false);Booleanboolean0M.AssertModel(models[6],_testData[10], false);Booleanboolean0M.AssertModel(models[7],_testData[11], false);Booleanboolean0M.AssertModel(models[8],_testData[12], false);Booleanboolean0M.AssertModel(models[9],_testData[13], false);Booleanboolean0M.AssertModel(models[10],_testData[14], false);Booleanboolean0M.AssertModel(models[11],_testData[15], false);Booleanboolean0M.AssertModel(models[12],_testData[16], false);Booleanboolean0M.AssertModel(models[13],_testData[17], false);Booleanboolean0M.AssertModel(models[14],_testData[18], false);Booleanboolean0M.AssertModel(models[15],_testData[19], false);Booleanboolean0M.AssertModel(models[16],_testData[20], false);Booleanboolean0M.AssertModel(models[17],_testData[21], false);Booleanboolean0M.AssertModel(models[18],_testData[22], false);Booleanboolean0M.AssertModel(models[19],_testData[23], false);Booleanboolean0M.AssertModel(models[20],_testData[24], false);Booleanboolean0M.AssertModel(models[21],_testData[25], false);Booleanboolean0M.AssertModel(models[22],_testData[26], false);Booleanboolean0M.AssertModel(models[23],_testData[27], false);Booleanboolean0M.AssertModel(models[24],_testData[28], false);Booleanboolean0M.AssertModel(models[25],_testData[29], false);
             }
         }
 
@@ -2164,7 +2176,7 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((2)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((6)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2178,80 +2190,80 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((8)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((12)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((1)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((5)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[2];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((11)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((14)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[3];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((19)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((21)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((8)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((13)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[4];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((20)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((27)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[5];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((28)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((33)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((17)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((21)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[6];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((29)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((35)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2265,22 +2277,22 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((34)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((43)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((20)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((23)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[8];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((39)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((52)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2294,10 +2306,10 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((41)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((58)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((28)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((30)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
@@ -2309,7 +2321,7 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((45)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((66)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2323,13 +2335,13 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((54)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((68)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((29)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((33)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2338,7 +2350,7 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((56)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((70)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2352,22 +2364,22 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((63)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((73)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((35)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((41)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[14];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((72)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((79)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2381,39 +2393,39 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((75)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((85)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((36)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((46)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[16];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((84)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((94)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[17];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((86)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((98)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((38)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((53)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
@@ -2425,56 +2437,56 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((95)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((102)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[19];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((103)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((107)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((46)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((60)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[20];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((105)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((115)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[21];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((110)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((119)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((55)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((64)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2483,65 +2495,65 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((112)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((128)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[23];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((121)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((132)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((60)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((67)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[24];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((127)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((135)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[25];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((131)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((142)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((61)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((71)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[26];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((138)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((149)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2555,44 +2567,44 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((143)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((156)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((70)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((80)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[28];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((145)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((157)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[29];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((148)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((160)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((71)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((83)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
             }
         }
@@ -2611,7 +2623,7 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((2)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((6)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2625,80 +2637,80 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((8)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((12)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((1)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((5)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[2];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((11)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((14)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[3];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((19)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((21)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((8)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((13)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[4];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((20)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((27)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[5];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((28)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((33)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((17)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((21)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[6];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((29)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((35)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2712,22 +2724,22 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((34)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((43)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((20)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((23)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[8];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((39)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((52)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2741,10 +2753,10 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((41)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((58)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((28)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((30)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
@@ -2756,7 +2768,7 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((45)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((66)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2770,13 +2782,13 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((54)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((68)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((29)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((33)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2785,7 +2797,7 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((56)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((70)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2799,22 +2811,22 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((63)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((73)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((35)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((41)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[14];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((72)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((79)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -2828,39 +2840,39 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((75)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((85)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((36)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((46)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[16];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((84)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((94)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[17];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((86)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((98)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((38)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((53)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
@@ -2872,56 +2884,56 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((95)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((102)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[19];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((103)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((107)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((46)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((60)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[20];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((105)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((115)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[21];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((110)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((119)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((55)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((64)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -2930,65 +2942,65 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((112)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((128)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[23];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((121)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((132)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((60)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((67)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[24];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((127)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((135)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[25];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((131)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((142)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((61)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((71)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[26];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((138)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((149)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
@@ -3002,44 +3014,44 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((143)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((156)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((70)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((80)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
-                Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
                 model = models[28];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((145)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((157)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[29];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((148)));//Id
+                Assert.That((System.Int32)model[0], Is.EqualTo((160)));//Id
                 Assert.That((System.Boolean)model[1], Is.EqualTo((false)));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((71)));//InnerModel.Id
+                Assert.That((System.Int32)model[2], Is.EqualTo((83)));//InnerModel.Id
                 Assert.That((System.Boolean)model[3], Is.EqualTo((false)));//InnerModel.Value
 
                 Assert.That((System.Boolean?)model[4], Is.EqualTo((false)));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Boolean?)model[5], Is.EqualTo((false)));
 
             }
         }

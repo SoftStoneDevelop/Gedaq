@@ -96,11 +96,16 @@ ORDER BY
                 $"typeof({model.ClassName(isDynamicQuery)}), typeof({model.ClassName(isDynamicQuery)})" :
                 $"typeof({model.ClassName(isDynamicQuery)})";
 
+            var overrideAliasPrefixs = isMultiMap ?
+                "[\"item1\", \"item2\"]" :
+                "null";
+
             stringBuilder.Append($@"
 [Gedaq.SqlClient.Attributes.Query(
             query: {query},
             methodName:""{SelectMethodName(isDynamicQuery, dynamicParametr, isMultiMap)}"",
             queryMapTypes: [{queryMapTypes}],
+            overrideAliasPrefixs: {overrideAliasPrefixs},
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,

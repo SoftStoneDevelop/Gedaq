@@ -1,4 +1,5 @@
 ﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.Constants;
 using Gedaq.Enums;
 using Gedaq.Helpers;
@@ -103,9 +104,10 @@ namespace Gedaq.SqlClient
                 }
                 else
                 {
-                    foreach (var mapTypeInfo in query.MapTypeInfos)
+                    for (int i = 0; i < query.MapTypeInfos.Length; i++)
                     {
-                        mapTypeInfo.ParseAliasesFromType(_context, _providerInfo);
+                        MapTypeInfo mapTypeInfo = query.MapTypeInfos[i];
+                        mapTypeInfo.ParseAliasesFromType(_context, _providerInfo, query.GetAliasOverride(i));
                     }
                 }
             }
