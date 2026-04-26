@@ -23,7 +23,7 @@ namespace Tests
         public async Task OneTimeSetUp()
         {
             _postgre =
-                new PostgreSqlBuilder("postgres:18.0")
+                new PostgreSqlBuilder("postgres:18.3")
                 .WithPassword("dhgvbh73j")
                 .WithPortBinding(5432, true)
                 .WithAutoRemove(true)
