@@ -3,6 +3,7 @@ using MySqlConnector;
 using Npgsql;
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
@@ -26,38 +27,39 @@ namespace TestsGenerator.Generators.DbConnection
             {
                 foreach (var isDynamicQuery in ValueConstants.BoolValues)
                 {
-                    SelectTestConfig(
-                        model,
-                        stringBuilder,
-                        database,
-                        interfaceTypeName,
-                        dynamicParametrValue,
-                        isDynamicQuery: isDynamicQuery);
-
-                    if (IsSupportBatch(database))
+                    foreach (var isMultiMap in ValueConstants.BoolValues)
                     {
-                        SelectBatchReadTestConfig(
-                            stringBuilder,
-                            interfaceTypeName,
-                            withDynamicParameters: dynamicParametrValue,
-                            isDynamicQuery: isDynamicQuery);
-                    }
-
-                    foreach (var isAsync in ValueConstants.BoolValues)
-                    {
-                        SelectTest(
-                            order,
-                            orderedValues,
+                        SelectTestConfig(
                             model,
                             stringBuilder,
-                            isAsync,
+                            database,
                             interfaceTypeName,
                             dynamicParametrValue,
-                            database: database,
-                            isDynamicQuery: isDynamicQuery);
+                            isDynamicQuery: isDynamicQuery,
+                            isMultiMap: isMultiMap);
 
-                        if (IsSupportBatch(database))
+                        SelectBatchReadTestConfig(
+                            stringBuilder,
+                            database,
+                            interfaceTypeName,
+                            withDynamicParameters: dynamicParametrValue,
+                            isDynamicQuery: isDynamicQuery,
+                            isMultiMap: isMultiMap);
+
+                        foreach (var isAsync in ValueConstants.BoolValues)
                         {
+                            SelectTest(
+                                order,
+                                orderedValues,
+                                model,
+                                stringBuilder,
+                                isAsync,
+                                interfaceTypeName,
+                                dynamicParametrValue,
+                                database: database,
+                                isDynamicQuery: isDynamicQuery,
+                                isMultiMap: isMultiMap);
+
                             SelectBatchReadTest(
                                 order,
                                 database,
@@ -67,7 +69,8 @@ namespace TestsGenerator.Generators.DbConnection
                                 isAsync,
                                 interfaceTypeName,
                                 withDynamicParameters: dynamicParametrValue,
-                                isDynamicQuery: isDynamicQuery);
+                                isDynamicQuery: isDynamicQuery,
+                                isMultiMap: isMultiMap);
                         }
                     }
                 }
@@ -109,22 +112,42 @@ namespace TestsGenerator.Generators.DbConnection
         private static string SelectQueryText(
             Model.ModelType model,
             Database database,
-            bool isDynamicQuery)
+            bool isDynamicQuery,
+            bool isMultiMap)
         {
             if (isDynamicQuery)
             {
-                return $@"@""
+                if (isMultiMap)
+                {
+                    return $@"@""
 SELECT
-    m.{model.IdColumnName},
-    m.{model.ValueColumnName},
-    m.{model.NullableValueColumnName}
+    m.{model.IdColumnName} AS item1{model.IdColumnName},
+    m.{model.ValueColumnName} AS item1{model.ValueColumnName},
+    m.{model.NullableValueColumnName} AS item1{model.NullableValueColumnName},
+    m.{model.IdColumnName} AS item2{model.IdColumnName},
+    m.{model.ValueColumnName} AS item2{model.ValueColumnName},
+    m.{model.NullableValueColumnName} AS item2{model.NullableValueColumnName}
 FROM {database.ToDefaultSchema()}.{model.TableName} m
-LEFT JOIN {database.ToDefaultSchema()}.{model.ModelInner.TableName} mi ON mi.{model.ModelInner.IdColumnName} = m.{model.ModelInnerColumnName}
 WHERE
     m.{model.IdColumnName} > @{model.IdColumnName}
 ORDER BY
     m.{model.IdColumnName} ASC
 """;
+                }
+                else
+                {
+                    return $@"@""
+SELECT
+    m.{model.IdColumnName},
+    m.{model.ValueColumnName},
+    m.{model.NullableValueColumnName}
+FROM {database.ToDefaultSchema()}.{model.TableName} m
+WHERE
+    m.{model.IdColumnName} > @{model.IdColumnName}
+ORDER BY
+    m.{model.IdColumnName} ASC
+""";
+                }
             }
             else
             {
@@ -155,17 +178,31 @@ ORDER BY
             Database database,
             string interfaceTypeName,
             bool dynamicParametr,
-            bool isDynamicQuery)
+            bool isDynamicQuery,
+            bool isMultiMap)
         {
+            if (IgnoreIfMultiMap(isDynamicQuery, isMultiMap))
+            {
+                return;
+            }
+
             var query = isDynamicQuery ? ValueConstants.NullValue : $@"
-{SelectQueryText(model, database, isDynamicQuery)}
+{SelectQueryText(model, database, isDynamicQuery, isMultiMap)}
 ";
+            var queryMapTypes = isMultiMap ?
+                $"typeof({model.ClassName(isDynamicQuery)}), typeof({model.ClassName(isDynamicQuery)})" :
+                $"typeof({model.ClassName(isDynamicQuery)})";
+
+            var overrideAliasPrefixs = isMultiMap ?
+                "[\"item1\", \"item2\"]" :
+                "null";
 
             stringBuilder.Append($@"
 [Gedaq.DbConnection.Attributes.Query(
             query: {query},
-            methodName:""{SelectMethodName(isDynamicQuery, dynamicParametr)}"",
-            queryMapTypes: [typeof({model.ClassName(isDynamicQuery)})],
+            methodName:""{SelectMethodName(isDynamicQuery, dynamicParametr, isMultiMap)}"",
+            queryMapTypes: [{queryMapTypes}],
+            overrideAliasPrefixs: {overrideAliasPrefixs},
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -188,15 +225,27 @@ Gedaq.DbConnection.Attributes.Parametr(
             }
 
             stringBuilder.Append($@"]
-        private void {SelectMethodName(isDynamicQuery, dynamicParametr)}Config()
+        private void {SelectMethodName(isDynamicQuery, dynamicParametr, isMultiMap)}Config()
         {{
         }}
 ");
         }
 
-        private static string SelectMethodName(bool isDynamicQuery, bool dynamicParametr)
+        private static string SelectMethodName(
+            bool isDynamicQuery,
+            bool dynamicParametr,
+            bool isMultiMap)
         {
-            return $"DbConnection{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}";
+            return $"DbConnection{ValueConstants.MultiMapQueryPrefix(isMultiMap)}" +
+                $"{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}" +
+                $"{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}";
+        }
+
+        private static bool IgnoreIfMultiMap(
+            bool isDynamicQuery,
+            bool isMultiMap)
+        {
+            return isMultiMap && !isDynamicQuery;
         }
 
         private static void SelectTest(
@@ -208,15 +257,21 @@ Gedaq.DbConnection.Attributes.Parametr(
             string interfaceTypeName,
             bool dynamicParametr,
             Database database,
-            bool isDynamicQuery)
+            bool isDynamicQuery,
+            bool isMultiMap)
         {
+            if (IgnoreIfMultiMap(isDynamicQuery, isMultiMap))
+            {
+                return;
+            }
+
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
             var queryParametr = isDynamicQuery ? " query, " : string.Empty;
 
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task {SelectMethodName(isDynamicQuery, dynamicParametr)}Test{async}()
+        public async Task {SelectMethodName(isDynamicQuery, dynamicParametr, isMultiMap)}Test{async}()
         {{
             await using (var connection = GlobalSetUp.GetDbConnection)
             {{
@@ -224,31 +279,56 @@ Gedaq.DbConnection.Attributes.Parametr(
             if (isDynamicQuery)
             {
                 stringBuilder.Append($@"
-                var query = {SelectQueryText(model, database, isDynamicQuery)};");
+                var query = {SelectQueryText(model, database, isDynamicQuery, isMultiMap)};");
             }
 
+            string passParametrs;
+            string delegateParametr = isMultiMap ? ", (item1, item2) => { models1.Add(item1); models2.Add(item2); }" : string.Empty;
             if (dynamicParametr)
             {
                 stringBuilder.Append($@"
                 var parametr1 = connection.CreateCommand().CreateParameter();
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
-                parametr1.ParameterName = ""id"";
+                parametr1.ParameterName = ""id"";");
 
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectMethodName(isDynamicQuery, dynamicParametr)}{async}(connection, {queryParametr}[parametr1]);");
+                passParametrs = $"connection, {queryParametr}[parametr1]{delegateParametr}";
+            }
+            else
+            {
+                passParametrs = $"connection, {queryParametr}0{delegateParametr}";
+            }
+
+            if (isMultiMap)
+            {
+                stringBuilder.Append($@"
+                var models1 = new List<{model.ClassName(isDynamicQuery)}>();
+                var models2 = new List<{model.ClassName(isDynamicQuery)}>();
+                {await}{TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectMethodName(isDynamicQuery, dynamicParametr, isMultiMap)}{async}({passParametrs});
+                Assert.That(models1, Has.Count.EqualTo({orderedValues.Count}));
+                for (int i = 0; i < {orderedValues.Count}; i++)
+                {{
+                    {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models1[i],{TestsPart.TestDataArrayName}[i], false);
+                }}
+
+                Assert.That(models2, Has.Count.EqualTo({orderedValues.Count}));
+                for (int i = 0; i < {orderedValues.Count}; i++)
+                {{
+                    {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models2[i],{TestsPart.TestDataArrayName}[i], false);
+                }}");
             }
             else
             {
                 stringBuilder.Append($@"
-                var models = {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectMethodName(isDynamicQuery, dynamicParametr)}{async}(connection, {queryParametr}0);");
-            }
-
-            stringBuilder.Append($@"
+                var models = {await}{TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectMethodName(isDynamicQuery, dynamicParametr, isMultiMap)}{async}({passParametrs});
                 Assert.That(models, Has.Count.EqualTo({orderedValues.Count}));
                 for (int i = 0; i < {orderedValues.Count}; i++)
                 {{
                     {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models[i],{TestsPart.TestDataArrayName}[i], false);
-                }}
+                }}");
+            }
+
+            stringBuilder.Append($@"
             }}
         }}
 ");
@@ -432,8 +512,17 @@ ORDER BY
             }
         }
 
-        private static bool IsSupportBatch(Database database)
+        private static bool IsSupportBatch(
+            Database database,
+            bool isDynamicQuery,
+            bool isMultiMap,
+            bool isSameType)
         {
+            if (!isDynamicQuery && (isMultiMap || !isSameType))
+            {
+                return false;
+            }
+
             switch (database)
             {
                 case Database.PostgreSQL:
@@ -458,34 +547,56 @@ ORDER BY
             }
         }
 
-        private static string SelectBatchMethodName(bool isDynamicQuery, bool dynamicParametr)
+        private static string SelectBatchMethodName(
+            bool isDynamicQuery,
+            bool dynamicParametr,
+            bool isMultiMap,
+            bool sameType)
         {
-            return $"DbConnection{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}{(dynamicParametr ? NameConstants.DynamicParametr : "")}Batch";
+            return $"DbConnection" +
+                $"{(sameType ? "ST" : string.Empty)}" +
+                $"{ValueConstants.MultiMapQueryPrefix(isMultiMap)}" +
+                $"{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}" +
+                $"{_testName}" +
+                $"{(dynamicParametr ? NameConstants.DynamicParametr : string.Empty)}" +
+                $"Batch";
         }
 
         private static void SelectBatchReadTestConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
+            Database database,
             string interfaceTypeName,
             bool withDynamicParameters,
-            bool isDynamicQuery)
+            bool isDynamicQuery,
+            bool isMultiMap)
         {
-            stringBuilder.Append($@"
+            foreach (var sameType in ValueConstants.BoolValues)
+            {
+                if (!IsSupportBatch(database, isDynamicQuery, isMultiMap, sameType))
+                {
+                    continue;
+                }
+
+                var query2IsMultiMap = sameType ? isMultiMap : !isMultiMap;
+
+                stringBuilder.Append($@"
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: ""{SelectBatchMethodName(isDynamicQuery, withDynamicParameters)}"",
+            batchName: ""{SelectBatchMethodName(isDynamicQuery, withDynamicParameters, isMultiMap, sameType)}"",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
             asPartInterface: typeof({interfaceTypeName})),
 Gedaq.DbConnection.Attributes.BatchPart(
-            methodName: ""{SelectMethodName(isDynamicQuery, withDynamicParameters)}"",
+            methodName: ""{SelectMethodName(isDynamicQuery, withDynamicParameters, isMultiMap)}"",
             position: 1),
 Gedaq.DbConnection.Attributes.BatchPart(
-            methodName: ""{SelectMethodName(isDynamicQuery, withDynamicParameters)}"",
+            methodName: ""{SelectMethodName(isDynamicQuery, withDynamicParameters, query2IsMultiMap)}"",
             position: 2)]
-        private void {SelectBatchMethodName(isDynamicQuery, withDynamicParameters)}Config()
+        private void {SelectBatchMethodName(isDynamicQuery, withDynamicParameters, isMultiMap, sameType)}Config()
         {{
         }}
 ");
+            }
         }
 
         private static void SelectBatchReadTest(
@@ -497,31 +608,42 @@ Gedaq.DbConnection.Attributes.BatchPart(
             bool isAsync,
             string interfaceTypeName,
             bool withDynamicParameters,
-            bool isDynamicQuery)
+            bool isDynamicQuery,
+            bool isMultiMap)
         {
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
 
-            var firstBatchStart = Random.Shared.Next(0, orderedValues.Count - 2);
-            var secondBatchStart = Random.Shared.Next(0, orderedValues.Count - 2);
-            var methodPassParametrs = BatchMethodPassParametrs(
-                orderedValues,
-                withDynamicParameters,
-                isDynamicQuery,
-                firstBatchStart: firstBatchStart,
-                secondBatchStart: secondBatchStart);
+            foreach (var sameType in ValueConstants.BoolValues)
+            {
+                if (!IsSupportBatch(database, isDynamicQuery, isMultiMap, sameType))
+                {
+                    continue;
+                }
 
-            stringBuilder.Append($@"
+                var query2IsMultiMap = sameType ? isMultiMap : !isMultiMap;
+
+                var firstBatchStart = Random.Shared.Next(0, orderedValues.Count - 2);
+                var secondBatchStart = Random.Shared.Next(0, orderedValues.Count - 2);
+                var methodPassParametrs = BatchMethodPassParametrs(
+                    orderedValues,
+                    withDynamicParameters,
+                    isDynamicQuery,
+                    firstBatchStart: firstBatchStart,
+                    firstMultiMap: isMultiMap,
+                    secondBatchStart: secondBatchStart,
+                    secondMultiMap: query2IsMultiMap);
+
+                stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task {SelectBatchMethodName(isDynamicQuery, withDynamicParameters)}Test{async}()
+        public async Task {SelectBatchMethodName(isDynamicQuery, withDynamicParameters, isMultiMap, sameType)}Test{async}()
         {{
             await using (var connection = GlobalSetUp.GetDbConnection)
             {{
-                await connection.OpenAsync();
-                int resultIndex = 0;");
-            if (withDynamicParameters)
-            {
-                stringBuilder.Append($@"
+                await connection.OpenAsync();");
+                if (withDynamicParameters)
+                {
+                    stringBuilder.Append($@"
                 var parametr1 = connection.CreateCommand().CreateParameter();
                 parametr1.Value = {orderedValues[firstBatchStart].Id};
                 parametr1.DbType = (System.Data.DbType)(11);
@@ -531,34 +653,114 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 parametr2.Value = {orderedValues[secondBatchStart].Id};
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = ""id"";");
-            }
+                }
 
-            if (isDynamicQuery)
-            {
+                if (isDynamicQuery)
+                {
+                    stringBuilder.Append($@"
+                var query1 = {SelectQueryText(model, database, isDynamicQuery, isMultiMap)};
+                var query2 = {SelectQueryText(model, database, isDynamicQuery, query2IsMultiMap)};");
+                }
+
+                firstBatchStart++;
+                if (isMultiMap || query2IsMultiMap)
+                {
+                    MultiMapCheck();
+                }
+                else
+                {
+                    SameTypeCheck();
+                }
+
                 stringBuilder.Append($@"
-                var query1 = {SelectQueryText(model, database, isDynamicQuery)};
-                var query2 = {SelectQueryText(model, database, isDynamicQuery)};");
-            }
+            }}
+        }}
+");
+                void MultiMapCheck()
+                {
+                    stringBuilder.Append($@"
+                var firstItems1 = new List<{model.ClassName(isDynamicQuery)}>();");
+                    if (isMultiMap)
+                    {
+                        stringBuilder.Append($@"
+                var firstItems2 = new List<{model.ClassName(isDynamicQuery)}>();");
+                    }
 
-            firstBatchStart++;
-            stringBuilder.Append($@"
-                foreach(var batchResult in {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectBatchMethodName(isDynamicQuery, withDynamicParameters)}{async}({methodPassParametrs}))
+                    stringBuilder.Append($@"
+                var secondItems1 = new List<{model.ClassName(isDynamicQuery)}>();");
+                    if (query2IsMultiMap)
+                    {
+                        stringBuilder.Append($@"
+                var secondItems2 = new List<{model.ClassName(isDynamicQuery)}>();");
+                    }
+
+                    stringBuilder.Append($@"
+                {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectBatchMethodName(isDynamicQuery, withDynamicParameters, isMultiMap, sameType)}{async}({methodPassParametrs});
+                Assert.That(firstItems1, Has.Count.EqualTo({orderedValues.Count - firstBatchStart}));");
+                    if (isMultiMap)
+                    {
+                        stringBuilder.Append($@"
+                Assert.That(firstItems2, Has.Count.EqualTo({orderedValues.Count - firstBatchStart}));");
+                    }
+
+                    var index = 0;
+                    for (; firstBatchStart < orderedValues.Count; firstBatchStart++)
+                    {
+                        stringBuilder.Append(@$"
+                        {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(firstItems1[{index}],{TestsPart.TestDataArrayName}[{firstBatchStart}], false);");
+                        if (isMultiMap)
+                        {
+                            stringBuilder.Append(@$"
+                        {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(firstItems2[{index}],{TestsPart.TestDataArrayName}[{firstBatchStart}], false);");
+                        }
+
+                        index++;
+                    }
+
+                    secondBatchStart++;
+                    stringBuilder.Append($@"
+                Assert.That(secondItems1, Has.Count.EqualTo({orderedValues.Count - secondBatchStart}));");
+                    if (query2IsMultiMap)
+                    {
+                        stringBuilder.Append($@"
+                Assert.That(secondItems2, Has.Count.EqualTo({orderedValues.Count - secondBatchStart}));");
+                    }
+
+                    index = 0;
+                    for (; secondBatchStart < orderedValues.Count; secondBatchStart++)
+                    {
+                        stringBuilder.Append(@$"
+                        {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(secondItems1[{index}],{TestsPart.TestDataArrayName}[{secondBatchStart}], false);");
+                        if (query2IsMultiMap)
+                        {
+                            stringBuilder.Append(@$"
+                        {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(secondItems2[{index}],{TestsPart.TestDataArrayName}[{secondBatchStart}], false);");
+                        }
+                        index++;
+                    }
+                }
+
+                void SameTypeCheck()
+                {
+                    stringBuilder.Append($@"
+                int resultIndex = 0;
+                foreach(var batchResult in {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectBatchMethodName(isDynamicQuery, withDynamicParameters, isMultiMap, sameType)}{async}({methodPassParametrs}))
                 {{
                     if(++resultIndex == 1)
                     {{
                         var models = batchResult;
                         Assert.That(models, Has.Count.EqualTo({orderedValues.Count - firstBatchStart}));
 ");
-            var index = 0;
-            for (; firstBatchStart < orderedValues.Count; firstBatchStart++)
-            {
-                stringBuilder.Append(
-                    $"{model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{firstBatchStart}], false);");
-                index++;
-            }
+                    var index = 0;
+                    for (; firstBatchStart < orderedValues.Count; firstBatchStart++)
+                    {
+                        stringBuilder.Append(@$"
+                        {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{firstBatchStart}], false);");
+                        index++;
+                    }
 
-            secondBatchStart++;
-            stringBuilder.Append($@"
+                    secondBatchStart++;
+                    stringBuilder.Append($@"
                         continue;
                     }}                    
 
@@ -567,29 +769,30 @@ Gedaq.DbConnection.Attributes.BatchPart(
                         var models = batchResult;
                         Assert.That(models, Has.Count.EqualTo({orderedValues.Count - secondBatchStart}));
 ");
-            index = 0;
-            for (; secondBatchStart < orderedValues.Count; secondBatchStart++)
-            {
-                stringBuilder.Append($"" +
-                    $"{model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{secondBatchStart}], false);");
-                index++;
-            }
-            stringBuilder.Append($@"
+                    index = 0;
+                    for (; secondBatchStart < orderedValues.Count; secondBatchStart++)
+                    {
+                        stringBuilder.Append(@$"
+                        {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models[{index}],{TestsPart.TestDataArrayName}[{secondBatchStart}], false);");
+                        index++;
+                    }
+                    stringBuilder.Append($@"
                         continue;
                     }}
                     
                     Assert.Fail(""Unexpected batch count"");
-                }}
-            }}
-        }}
-");
+                }}");
+        }
+    }
         }
 
         private static string BatchMethodPassParametrs(
             List<ModelValue> orderedValues,
             bool withDynamicParameters,
             bool isDynamicQuery,
+            bool firstMultiMap,
             int firstBatchStart,
+            bool secondMultiMap,
             int secondBatchStart)
         {
             var dynamicParametr1 = withDynamicParameters ? ", [parametr1]" : $", {orderedValues[firstBatchStart].Id}";
@@ -598,7 +801,36 @@ Gedaq.DbConnection.Attributes.BatchPart(
             var dynamicQuery1 = isDynamicQuery ? ", query1" : string.Empty;
             var dynamicQuery2 = isDynamicQuery ? ", query2" : string.Empty;
 
-            return $"connection{dynamicParametr1}{dynamicQuery1}{dynamicParametr2}{dynamicQuery2}";
+            string mapDelegates;
+            if (!firstMultiMap && !secondMultiMap)
+            {
+                mapDelegates = string.Empty;
+            }
+            else
+            {
+                var builder = new DefaultInterpolatedStringHandler();
+                if (firstMultiMap)
+                {
+                    builder.AppendLiteral(", (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }");
+                }
+                else
+                {
+                    builder.AppendLiteral(", (item1) => { firstItems1.Add(item1); }");
+                }
+
+                if (secondMultiMap)
+                {
+                    builder.AppendLiteral(", (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); }");
+                }
+                else
+                {
+                    builder.AppendLiteral(", (item1) => { secondItems1.Add(item1); }");
+                }
+
+                mapDelegates = builder.ToStringAndClear();
+            }
+
+            return $"connection{dynamicParametr1}{dynamicQuery1}{dynamicParametr2}{dynamicQuery2}{mapDelegates}";
         }
     }
 }

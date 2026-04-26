@@ -1,7 +1,6 @@
 ﻿using Gedaq.Base.Model;
 using Gedaq.Enums;
 using Gedaq.Helpers;
-using System.Linq;
 using System.Text;
 
 namespace Gedaq.Base.Batch
@@ -60,8 +59,7 @@ namespace Gedaq.Base.Batch
                 ProviderInfo.DefaultSourceType(),
                 ProviderInfo.DefaultSourceTypeParametr(),
                 needCheckOpen: true,
-                interfaceGenerator
-                );
+                interfaceGenerator);
         }
 
         public string ReadMethodName(
@@ -124,6 +122,13 @@ namespace Gedaq.Base.Batch
         {
             string ExecuteReturnType()
             {
+                if (source.IsCollectionDelegateMap)
+                {
+                    return methodType == MethodType.Async ?
+                        "Task" :
+                        "void";
+                }
+
                 var type = _commandGenerator.ItemTypeName(source);
                 switch (source.ReturnType)
                 {
@@ -167,6 +172,15 @@ namespace Gedaq.Base.Batch
 
             _commandGenerator.AddMethodParametrs(source, builder);
 
+            if (source.IsCollectionDelegateMap)
+            {
+                foreach (var batchPart in source.BatchPartBases())
+                {
+                    builder.Append($@",
+            {batchPart.MapDelegateParametrTypeInBatch()} {batchPart.MapDelegateParametrNameInBatch()}");
+                }
+            }
+
             builder.Append($@",
             int? timeout = null");
 
@@ -178,14 +192,17 @@ namespace Gedaq.Base.Batch
 
             if (methodType == MethodType.Async)
             {
-                var enumeratorCancellation = forInterface || source.ReturnType != ReturnType.Enumerable ? string.Empty : "[EnumeratorCancellation]";
+                var enumeratorCancellation =
+                    forInterface || source.ReturnType != ReturnType.Enumerable || source.IsCollectionDelegateMap ?
+                    string.Empty :
+                    "[EnumeratorCancellation]";
+
                 builder.Append($@",
             {enumeratorCancellation} CancellationToken cancellationToken = default");
 
             }
 
-            builder.Append($@"
-            )");
+            builder.Append($@")");
         }
 
         private void ReadMethodBody(

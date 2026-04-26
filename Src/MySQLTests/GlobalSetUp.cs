@@ -23,7 +23,7 @@ namespace Tests
         public async Task OneTimeSetUp()
         {
             _mysql =
-                new MySqlBuilder("mysql:9.5.0")
+                new MySqlBuilder("mysql:9.7.0")
                 .WithUsername("root")
                 .WithPassword("dhgvbh73j")
                 .WithPortBinding(3306, true)

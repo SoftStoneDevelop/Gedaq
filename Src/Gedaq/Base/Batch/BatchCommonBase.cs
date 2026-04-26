@@ -2,7 +2,6 @@
 using Gedaq.Constants;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
-using System;
 using System.Linq;
 
 namespace Gedaq.Base.Batch
@@ -14,7 +13,7 @@ namespace Gedaq.Base.Batch
             SourceProductionContext context)
         {
             if (batch.HaveParametrs &&
-                batch.QueryBases().Any(any => any.QueryBase.HaveParametrs() && any.QueryBase.BaseParametrs().Any(anyIn => anyIn.HaveDirection)))
+                batch.BatchPartBases().Any(any => any.QueryBase.HaveParametrs() && any.QueryBase.BaseParametrs().Any(anyIn => anyIn.HaveDirection)))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,

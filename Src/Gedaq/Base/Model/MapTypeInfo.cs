@@ -7,45 +7,66 @@ namespace Gedaq.Base.Model
 {
     internal class MapTypeInfo
     {
+        internal MapTypeInfo(int orderMap)
+        {
+            OrderMap = orderMap;
+        }
+
         public ITypeSymbol MapType { get; set; }
 
         public Aliases Aliases { get; set; }
 
-        public void ParseAliasesFromType(SourceProductionContext context, ProviderInfo providerInfo)
+        public int OrderMap { get; private set; }
+
+        public string MapItemName => $"mapItem{OrderMap}";
+
+        public string ItemTypeName => MapType.GetFullTypeName(true);
+
+        public void ParseAliasesFromType(
+            SourceProductionContext context,
+            ProviderInfo providerInfo,
+            string overrideAlias = null)
         {
             var mapType = MapType;
             var attributes = mapType.GetAttributes();
 
             var alias = new Aliases();
-            foreach (var attribute in attributes)
+            if (overrideAlias != null)
             {
-                if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "AliasPrefixAttribute"))
+                alias.Prefix = overrideAlias;
+            }
+            else
+            {
+                foreach (var attribute in attributes)
                 {
-                    var constructorArguments = attribute.ConstructorArguments;
-                    if (constructorArguments.Length != 1)
+                    if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "AliasPrefixAttribute"))
                     {
-                        DiagnosticHelper.ReportDiagnostic(
-                            context,
-                            DiagnosticConstants.IncorrectAttributeParametrsCount,
-                            DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
-                            DiagnosticSeverity.Error,
-                            constructorArguments.Length.ToString());
-                    }
+                        var constructorArguments = attribute.ConstructorArguments;
+                        if (constructorArguments.Length != 1)
+                        {
+                            DiagnosticHelper.ReportDiagnostic(
+                                context,
+                                DiagnosticConstants.IncorrectAttributeParametrsCount,
+                                DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
+                                DiagnosticSeverity.Error,
+                                constructorArguments.Length.ToString());
+                        }
 
-                    var prefixArgument = constructorArguments[0];
-                    if (!(prefixArgument.Type is INamedTypeSymbol paramName) ||
-                        paramName.Name != nameof(String))
-                    {
-                        DiagnosticHelper.ReportDiagnostic(
-                            context,
-                            DiagnosticConstants.IncorrectAttributeParametr,
-                            DiagnosticConstants.IncorrectAttributeParametrDescr,
-                            DiagnosticSeverity.Error,
-                            new string[] { "1", "AliasPrefix" });
-                    }
+                        var prefixArgument = constructorArguments[0];
+                        if (!(prefixArgument.Type is INamedTypeSymbol paramName) ||
+                            paramName.Name != nameof(String))
+                        {
+                            DiagnosticHelper.ReportDiagnostic(
+                                context,
+                                DiagnosticConstants.IncorrectAttributeParametr,
+                                DiagnosticConstants.IncorrectAttributeParametrDescr,
+                                DiagnosticSeverity.Error,
+                                new string[] { "1", "AliasPrefix" });
+                        }
 
-                    alias.Prefix = ((string)prefixArgument.Value).ToLowerInvariant();
-                    break;
+                        alias.Prefix = ((string)prefixArgument.Value).ToLowerInvariant();
+                        break;
+                    }
                 }
             }
 

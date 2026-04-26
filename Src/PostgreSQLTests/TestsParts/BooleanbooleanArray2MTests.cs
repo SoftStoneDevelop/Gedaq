@@ -30,7 +30,7 @@ namespace Tests
         {
             new BooleanbooleanArray2M
 {
-    Id = 7,
+    Id = 8,
     Value = 
 new System.Collections.Generic.List<System.Boolean>(4)
 {
@@ -44,23 +44,16 @@ false,
 
 },
     ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
+    NullableValue = null,
 },
             new BooleanbooleanArray2M
 {
-    Id = 13,
+    Id = 16,
     Value = 
-new System.Collections.Generic.List<System.Boolean>(3)
+new System.Collections.Generic.List<System.Boolean>(4)
 {
+false,
+
 false,
 
 false,
@@ -70,12 +63,10 @@ false,
 },
     ModelInner = new BooleanbooleanArray2MI
 {
-    Id = 3,
+    Id = 1,
     Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
+new System.Collections.Generic.List<System.Boolean>(3)
 {
-false,
-
 false,
 
 false,
@@ -84,10 +75,8 @@ false,
 
 },
     NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(4)
+new System.Collections.Generic.List<System.Boolean>(3)
 {
-false,
-
 false,
 
 false,
@@ -102,10 +91,8 @@ false,
 {
     Id = 18,
     Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
+new System.Collections.Generic.List<System.Boolean>(3)
 {
-false,
-
 false,
 
 false,
@@ -129,7 +116,64 @@ false,
 },
             new BooleanbooleanArray2M
 {
-    Id = 21,
+    Id = 23,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = new BooleanbooleanArray2MI
+{
+    Id = 9,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+},
+    NullableValue = null,
+},
+            new BooleanbooleanArray2M
+{
+    Id = 28,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BooleanbooleanArray2M
+{
+    Id = 29,
     Value = 
 new System.Collections.Generic.List<System.Boolean>(3)
 {
@@ -144,10 +188,8 @@ false,
 {
     Id = 11,
     Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
+new System.Collections.Generic.List<System.Boolean>(3)
 {
-false,
-
 false,
 
 false,
@@ -166,24 +208,6 @@ false,
 
 },
 },
-    NullableValue = null,
-},
-            new BooleanbooleanArray2M
-{
-    Id = 30,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Boolean>(4)
 {
@@ -199,7 +223,34 @@ false,
 },
             new BooleanbooleanArray2M
 {
-    Id = 38,
+    Id = 37,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+},
+            new BooleanbooleanArray2M
+{
+    Id = 39,
     Value = 
 new System.Collections.Generic.List<System.Boolean>(3)
 {
@@ -226,6 +277,19 @@ false,
 
 },
     NullableValue = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+},
+    NullableValue = 
 new System.Collections.Generic.List<System.Boolean>(3)
 {
 false,
@@ -236,11 +300,59 @@ false,
 
 },
 },
+            new BooleanbooleanArray2M
+{
+    Id = 48,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = null,
     NullableValue = null,
 },
             new BooleanbooleanArray2M
 {
-    Id = 39,
+    Id = 49,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = new BooleanbooleanArray2MI
+{
+    Id = 21,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new BooleanbooleanArray2M
+{
+    Id = 52,
     Value = 
 new System.Collections.Generic.List<System.Boolean>(4)
 {
@@ -255,50 +367,6 @@ false,
 },
     ModelInner = null,
     NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-},
-            new BooleanbooleanArray2M
-{
-    Id = 47,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = new BooleanbooleanArray2MI
-{
-    Id = 17,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new BooleanbooleanArray2M
-{
-    Id = 50,
-    Value = 
 new System.Collections.Generic.List<System.Boolean>(4)
 {
 false,
@@ -310,17 +378,13 @@ false,
 false,
 
 },
-    ModelInner = null,
-    NullableValue = null,
 },
             new BooleanbooleanArray2M
 {
-    Id = 59,
+    Id = 57,
     Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
+new System.Collections.Generic.List<System.Boolean>(3)
 {
-false,
-
 false,
 
 false,
@@ -345,24 +409,6 @@ false,
 },
     NullableValue = null,
 },
-    NullableValue = null,
-},
-            new BooleanbooleanArray2M
-{
-    Id = 64,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Boolean>(3)
 {
@@ -376,138 +422,7 @@ false,
 },
             new BooleanbooleanArray2M
 {
-    Id = 68,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = new BooleanbooleanArray2MI
-{
-    Id = 28,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-},
-            new BooleanbooleanArray2M
-{
-    Id = 75,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-},
-            new BooleanbooleanArray2M
-{
-    Id = 81,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = new BooleanbooleanArray2MI
-{
-    Id = 35,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-},
-            new BooleanbooleanArray2M
-{
-    Id = 85,
+    Id = 65,
     Value = 
 new System.Collections.Generic.List<System.Boolean>(4)
 {
@@ -525,7 +440,62 @@ false,
 },
             new BooleanbooleanArray2M
 {
-    Id = 90,
+    Id = 71,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = new BooleanbooleanArray2MI
+{
+    Id = 27,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+},
+    NullableValue = null,
+},
+            new BooleanbooleanArray2M
+{
+    Id = 77,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BooleanbooleanArray2M
+{
+    Id = 78,
     Value = 
 new System.Collections.Generic.List<System.Boolean>(4)
 {
@@ -540,7 +510,7 @@ false,
 },
     ModelInner = new BooleanbooleanArray2MI
 {
-    Id = 44,
+    Id = 31,
     Value = 
 new System.Collections.Generic.List<System.Boolean>(4)
 {
@@ -566,6 +536,76 @@ false,
 
 },
 },
+    NullableValue = null,
+},
+            new BooleanbooleanArray2M
+{
+    Id = 83,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BooleanbooleanArray2M
+{
+    Id = 86,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = new BooleanbooleanArray2MI
+{
+    Id = 36,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new BooleanbooleanArray2M
+{
+    Id = 88,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = null,
     NullableValue = null,
 },
             new BooleanbooleanArray2M
@@ -581,17 +621,194 @@ false,
 false,
 
 },
-    ModelInner = null,
-    NullableValue = null,
-},
-            new BooleanbooleanArray2M
+    ModelInner = new BooleanbooleanArray2MI
 {
-    Id = 98,
+    Id = 37,
     Value = 
 new System.Collections.Generic.List<System.Boolean>(4)
 {
 false,
 
+false,
+
+false,
+
+false,
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+},
+            new BooleanbooleanArray2M
+{
+    Id = 100,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BooleanbooleanArray2M
+{
+    Id = 109,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = new BooleanbooleanArray2MI
+{
+    Id = 41,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new BooleanbooleanArray2M
+{
+    Id = 114,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+},
+            new BooleanbooleanArray2M
+{
+    Id = 123,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = new BooleanbooleanArray2MI
+{
+    Id = 47,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
+},
+            new BooleanbooleanArray2M
+{
+    Id = 126,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
+false,
+
+false,
+
+false,
+
+},
+},
+            new BooleanbooleanArray2M
+{
+    Id = 135,
+    Value = 
+new System.Collections.Generic.List<System.Boolean>(3)
+{
 false,
 
 false,
@@ -614,90 +831,13 @@ false,
 false,
 
 },
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
+    NullableValue = null,
 },
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-},
-            new BooleanbooleanArray2M
-{
-    Id = 106,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = null,
     NullableValue = null,
 },
             new BooleanbooleanArray2M
 {
-    Id = 114,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = new BooleanbooleanArray2MI
-{
-    Id = 62,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-},
-            new BooleanbooleanArray2M
-{
-    Id = 120,
+    Id = 137,
     Value = 
 new System.Collections.Generic.List<System.Boolean>(4)
 {
@@ -726,7 +866,7 @@ false,
 },
             new BooleanbooleanArray2M
 {
-    Id = 121,
+    Id = 141,
     Value = 
 new System.Collections.Generic.List<System.Boolean>(3)
 {
@@ -739,7 +879,7 @@ false,
 },
     ModelInner = new BooleanbooleanArray2MI
 {
-    Id = 65,
+    Id = 55,
     Value = 
 new System.Collections.Generic.List<System.Boolean>(3)
 {
@@ -750,16 +890,7 @@ false,
 false,
 
 },
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
+    NullableValue = null,
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Boolean>(3)
@@ -774,12 +905,10 @@ false,
 },
             new BooleanbooleanArray2M
 {
-    Id = 127,
+    Id = 148,
     Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
+new System.Collections.Generic.List<System.Boolean>(3)
 {
-false,
-
 false,
 
 false,
@@ -789,153 +918,11 @@ false,
 },
     ModelInner = null,
     NullableValue = null,
-},
-            new BooleanbooleanArray2M
-{
-    Id = 133,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = new BooleanbooleanArray2MI
-{
-    Id = 68,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-},
-            new BooleanbooleanArray2M
-{
-    Id = 139,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new BooleanbooleanArray2M
-{
-    Id = 146,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = new BooleanbooleanArray2MI
-{
-    Id = 70,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
 },
             new BooleanbooleanArray2M
 {
     Id = 151,
     Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-},
-            new BooleanbooleanArray2M
-{
-    Id = 152,
-    Value = 
 new System.Collections.Generic.List<System.Boolean>(3)
 {
 false,
@@ -947,7 +934,7 @@ false,
 },
     ModelInner = new BooleanbooleanArray2MI
 {
-    Id = 72,
+    Id = 59,
     Value = 
 new System.Collections.Generic.List<System.Boolean>(3)
 {
@@ -957,96 +944,21 @@ false,
 
 false,
 
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-},
-            new BooleanbooleanArray2M
-{
-    Id = 156,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-},
-            new BooleanbooleanArray2M
-{
-    Id = 161,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-    ModelInner = new BooleanbooleanArray2MI
-{
-    Id = 79,
-    Value = 
-new System.Collections.Generic.List<System.Boolean>(3)
-{
-false,
-
-false,
-
-false,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Boolean>(4)
-{
-false,
-
-false,
-
-false,
-
-false,
-
-},
 },
     NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Boolean>(4)
+{
+false,
+
+false,
+
+false,
+
+false,
+
+},
 },
         };
 
@@ -1506,8 +1418,103 @@ RETURNING
 
 [Gedaq.Npgsql.Attributes.Query(
             query: null,
+            methodName:"MMDynQuerySelectModelDynPar",
+            queryMapTypes: [typeof(FlatBooleanbooleanArray2M), typeof(FlatBooleanbooleanArray2M)],
+            overrideAliasPrefixs: ["item1", "item2"],
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBooleanListbooleanArray)),
+Gedaq.Npgsql.Attributes.DynamicParametr()]
+        private void MMDynQuerySelectModelDynParConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelDynParTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+                var models1 = new List<FlatBooleanbooleanArray2M>();
+                var models2 = new List<FlatBooleanbooleanArray2M>();
+                await ((IBooleanListbooleanArray)this).MMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = new NpgsqlParameter<int>();
+                parametr1.TypedValue = 0;
+                var models1 = new List<FlatBooleanbooleanArray2M>();
+                var models2 = new List<FlatBooleanbooleanArray2M>();
+                ((IBooleanListbooleanArray)this).MMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.Query(
+            query: null,
             methodName:"DynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatBooleanbooleanArray2M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
@@ -1531,7 +1538,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1539,7 +1545,6 @@ ORDER BY
 ";
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
                 var models = await ((IBooleanListbooleanArray)this).DynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
@@ -1561,7 +1566,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1569,8 +1573,7 @@ ORDER BY
 ";
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
-                var models =  ((IBooleanListbooleanArray)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                var models = ((IBooleanListbooleanArray)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1601,6 +1604,7 @@ ORDER BY
 ,
             methodName:"SelectModelDynPar",
             queryMapTypes: [typeof(BooleanbooleanArray2M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
@@ -1620,7 +1624,6 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 await connection.OpenAsync();
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
                 var models = await ((IBooleanListbooleanArray)this).SelectModelDynParAsync(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
@@ -1638,8 +1641,7 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 await connection.OpenAsync();
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
-
-                var models =  ((IBooleanListbooleanArray)this).SelectModelDynPar(connection, [parametr1]);
+                var models = ((IBooleanListbooleanArray)this).SelectModelDynPar(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1650,8 +1652,103 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
 
 [Gedaq.Npgsql.Attributes.Query(
             query: null,
+            methodName:"MMDynQuerySelectModel",
+            queryMapTypes: [typeof(FlatBooleanbooleanArray2M), typeof(FlatBooleanbooleanArray2M)],
+            overrideAliasPrefixs: ["item1", "item2"],
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBooleanListbooleanArray)),
+Gedaq.Npgsql.Attributes.Parametr(
+            parametrType: typeof(System.Int32),
+            position: 1,
+            methodParametrName: "id",
+            dbType: (NpgsqlTypes.NpgsqlDbType)(9))]
+        private void MMDynQuerySelectModelConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatBooleanbooleanArray2M>();
+                var models2 = new List<FlatBooleanbooleanArray2M>();
+                await ((IBooleanListbooleanArray)this).MMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task MMDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE 
+    m.id > $1
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatBooleanbooleanArray2M>();
+                var models2 = new List<FlatBooleanbooleanArray2M>();
+                ((IBooleanListbooleanArray)this).MMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.Query(
+            query: null,
             methodName:"DynQuerySelectModel",
             queryMapTypes: [typeof(FlatBooleanbooleanArray2M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
@@ -1679,7 +1776,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -1706,13 +1802,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE 
     m.id > $1
 ORDER BY
     m.id ASC
 ";
-                var models =  ((IBooleanListbooleanArray)this).DynQuerySelectModel(connection,  query, 0);
+                var models = ((IBooleanListbooleanArray)this).DynQuerySelectModel(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1743,6 +1838,7 @@ ORDER BY
 ,
             methodName:"SelectModel",
             queryMapTypes: [typeof(BooleanbooleanArray2M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Read,
@@ -1779,7 +1875,7 @@ Gedaq.Npgsql.Attributes.Parametr(
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((IBooleanListbooleanArray)this).SelectModel(connection, 0);
+                var models = ((IBooleanListbooleanArray)this).SelectModel(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1790,8 +1886,555 @@ Gedaq.Npgsql.Attributes.Parametr(
 
 [Gedaq.DbConnection.Attributes.Query(
             query: null,
+            methodName:"DbConnectionMMDynQuerySelectModelDynPar",
+            queryMapTypes: [typeof(FlatBooleanbooleanArray2M), typeof(FlatBooleanbooleanArray2M)],
+            overrideAliasPrefixs: ["item1", "item2"],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBooleanListbooleanArray)),
+Gedaq.DbConnection.Attributes.DynamicParametr()]
+        private void DbConnectionMMDynQuerySelectModelDynParConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionSTMMDynQuerySelectModelDynParBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBooleanListbooleanArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
+            position: 2)]
+        private void DbConnectionSTMMDynQuerySelectModelDynParBatchConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionMMDynQuerySelectModelDynParBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBooleanListbooleanArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModelDynPar",
+            position: 2)]
+        private void DbConnectionMMDynQuerySelectModelDynParBatchConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatBooleanbooleanArray2M>();
+                var models2 = new List<FlatBooleanbooleanArray2M>();
+                await((IBooleanListbooleanArray)this).DbConnectionMMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelDynParBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 100;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 78;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBooleanbooleanArray2M>();
+                var firstItems2 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems1 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems2 = new List<FlatBooleanbooleanArray2M>();
+                await ((IBooleanListbooleanArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(9));
+                Assert.That(firstItems2, Has.Count.EqualTo(9));
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[0],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[0],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[1],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[1],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[2],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[2],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[3],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[3],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[4],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[4],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[5],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[5],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[6],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[6],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[7],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[7],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[8],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[8],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(14));
+                Assert.That(secondItems2, Has.Count.EqualTo(14));
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[0],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[0],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[1],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[1],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[2],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[2],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[3],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[3],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[4],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[4],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[5],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[5],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[6],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[6],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[7],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[7],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[8],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[8],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[9],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[9],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[10],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[10],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[11],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[11],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[12],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[12],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[13],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[13],_testData[29], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 49;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 137;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBooleanbooleanArray2M>();
+                var firstItems2 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems1 = new List<FlatBooleanbooleanArray2M>();
+                await ((IBooleanListbooleanArray)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(20));
+                Assert.That(firstItems2, Has.Count.EqualTo(20));
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[0],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[0],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[1],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[1],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[2],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[2],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[3],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[3],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[4],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[4],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[5],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[5],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[6],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[6],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[7],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[7],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[8],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[8],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[9],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[9],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[10],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[10],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[11],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[11],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[12],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[12],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[13],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[13],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[14],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[14],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[15],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[15],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[16],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[16],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[17],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[17],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[18],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[18],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[19],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[19],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(3));
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[0],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[1],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[2],_testData[29], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatBooleanbooleanArray2M>();
+                var models2 = new List<FlatBooleanbooleanArray2M>();
+                ((IBooleanListbooleanArray)this).DbConnectionMMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 83;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 39;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBooleanbooleanArray2M>();
+                var firstItems2 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems1 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems2 = new List<FlatBooleanbooleanArray2M>();
+                 ((IBooleanListbooleanArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(13));
+                Assert.That(firstItems2, Has.Count.EqualTo(13));
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[0],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[0],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[1],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[1],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[2],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[2],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[3],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[3],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[4],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[4],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[5],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[5],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[6],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[6],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[7],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[7],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[8],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[8],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[9],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[9],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[10],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[10],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[11],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[11],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[12],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[12],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(22));
+                Assert.That(secondItems2, Has.Count.EqualTo(22));
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[0],_testData[8], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[0],_testData[8], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[1],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[1],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[2],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[2],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[3],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[3],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[4],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[4],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[5],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[5],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[6],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[6],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[7],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[7],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[8],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[8],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[9],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[9],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[10],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[10],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[11],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[11],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[12],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[12],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[13],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[13],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[14],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[14],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[15],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[15],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[16],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[16],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[17],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[17],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[18],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[18],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[19],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[19],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[20],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[20],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[21],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[21],_testData[29], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 37;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 141;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBooleanbooleanArray2M>();
+                var firstItems2 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems1 = new List<FlatBooleanbooleanArray2M>();
+                 ((IBooleanListbooleanArray)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(23));
+                Assert.That(firstItems2, Has.Count.EqualTo(23));
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[0],_testData[7], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[0],_testData[7], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[1],_testData[8], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[1],_testData[8], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[2],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[2],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[3],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[3],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[4],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[4],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[5],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[5],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[6],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[6],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[7],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[7],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[8],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[8],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[9],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[9],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[10],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[10],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[11],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[11],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[12],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[12],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[13],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[13],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[14],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[14],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[15],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[15],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[16],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[16],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[17],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[17],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[18],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[18],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[19],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[19],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[20],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[20],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[21],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[21],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[22],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[22],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(2));
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[0],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[1],_testData[29], false);
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: null,
             methodName:"DbConnectionDynQuerySelectModelDynPar",
             queryMapTypes: [typeof(FlatBooleanbooleanArray2M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -1799,6 +2442,22 @@ Gedaq.Npgsql.Attributes.Parametr(
             asPartInterface: typeof(IBooleanListbooleanArray)),
 Gedaq.DbConnection.Attributes.DynamicParametr()]
         private void DbConnectionDynQuerySelectModelDynParConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionSTDynQuerySelectModelDynParBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBooleanListbooleanArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModelDynPar",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModelDynPar",
+            position: 2)]
+        private void DbConnectionSTDynQuerySelectModelDynParBatchConfig()
         {
         }
 
@@ -1812,7 +2471,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionDynQuerySelectModelDynPar",
             position: 1),
 Gedaq.DbConnection.Attributes.BatchPart(
-            methodName: "DbConnectionDynQuerySelectModelDynPar",
+            methodName: "DbConnectionMMDynQuerySelectModelDynPar",
             position: 2)]
         private void DbConnectionDynQuerySelectModelDynParBatchConfig()
         {
@@ -1830,7 +2489,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1840,8 +2498,7 @@ ORDER BY
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models = await ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
+                var models = await((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1851,19 +2508,18 @@ ORDER BY
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelDynParBatchTestAsync()
+        public async Task DbConnectionSTDynQuerySelectModelDynParBatchTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 68;
+                parametr1.Value = 83;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 21;
+                parametr2.Value = 114;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1872,7 +2528,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1884,32 +2539,151 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2))
+                int resultIndex = 0;
+                foreach(var batchResult in await ((IBooleanListbooleanArray)this).DbConnectionSTDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
-FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[12], false);FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[13], false);FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[14], false);FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[15], false);FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[16], false);FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[17], false);FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[18], false);FlatBooleanbooleanArray2M.AssertModel(models[7],_testData[19], false);FlatBooleanbooleanArray2M.AssertModel(models[8],_testData[20], false);FlatBooleanbooleanArray2M.AssertModel(models[9],_testData[21], false);FlatBooleanbooleanArray2M.AssertModel(models[10],_testData[22], false);FlatBooleanbooleanArray2M.AssertModel(models[11],_testData[23], false);FlatBooleanbooleanArray2M.AssertModel(models[12],_testData[24], false);FlatBooleanbooleanArray2M.AssertModel(models[13],_testData[25], false);FlatBooleanbooleanArray2M.AssertModel(models[14],_testData[26], false);FlatBooleanbooleanArray2M.AssertModel(models[15],_testData[27], false);FlatBooleanbooleanArray2M.AssertModel(models[16],_testData[28], false);FlatBooleanbooleanArray2M.AssertModel(models[17],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(13));
+
+                        FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[7],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[8],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[9],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[10],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[11],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[12],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(26));
-FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[4], false);FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[5], false);FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[6], false);FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[7], false);FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[8], false);FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[9], false);FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[10], false);FlatBooleanbooleanArray2M.AssertModel(models[7],_testData[11], false);FlatBooleanbooleanArray2M.AssertModel(models[8],_testData[12], false);FlatBooleanbooleanArray2M.AssertModel(models[9],_testData[13], false);FlatBooleanbooleanArray2M.AssertModel(models[10],_testData[14], false);FlatBooleanbooleanArray2M.AssertModel(models[11],_testData[15], false);FlatBooleanbooleanArray2M.AssertModel(models[12],_testData[16], false);FlatBooleanbooleanArray2M.AssertModel(models[13],_testData[17], false);FlatBooleanbooleanArray2M.AssertModel(models[14],_testData[18], false);FlatBooleanbooleanArray2M.AssertModel(models[15],_testData[19], false);FlatBooleanbooleanArray2M.AssertModel(models[16],_testData[20], false);FlatBooleanbooleanArray2M.AssertModel(models[17],_testData[21], false);FlatBooleanbooleanArray2M.AssertModel(models[18],_testData[22], false);FlatBooleanbooleanArray2M.AssertModel(models[19],_testData[23], false);FlatBooleanbooleanArray2M.AssertModel(models[20],_testData[24], false);FlatBooleanbooleanArray2M.AssertModel(models[21],_testData[25], false);FlatBooleanbooleanArray2M.AssertModel(models[22],_testData[26], false);FlatBooleanbooleanArray2M.AssertModel(models[23],_testData[27], false);FlatBooleanbooleanArray2M.AssertModel(models[24],_testData[28], false);FlatBooleanbooleanArray2M.AssertModel(models[25],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(7));
+
+                        FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelDynParBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 88;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 52;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems1 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems2 = new List<FlatBooleanbooleanArray2M>();
+                await ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(11));
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[0],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[1],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[2],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[3],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[4],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[5],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[6],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[7],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[8],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[9],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[10],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(19));
+                Assert.That(secondItems2, Has.Count.EqualTo(19));
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[0],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[0],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[1],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[1],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[2],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[2],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[3],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[3],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[4],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[4],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[5],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[5],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[6],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[6],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[7],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[7],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[8],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[8],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[9],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[9],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[10],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[10],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[11],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[11],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[12],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[12],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[13],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[13],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[14],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[14],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[15],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[15],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[16],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[16],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[17],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[17],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[18],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[18],_testData[29], false);
             }
         }
 
@@ -1925,7 +2699,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1935,8 +2708,7 @@ ORDER BY
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models =  ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                var models = ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -1946,19 +2718,18 @@ ORDER BY
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelDynParBatchTest()
+        public async Task DbConnectionSTDynQuerySelectModelDynParBatchTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 47;
+                parametr1.Value = 123;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 38;
+                parametr2.Value = 52;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1967,7 +2738,6 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -1979,32 +2749,184 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2))
+                int resultIndex = 0;
+                foreach(var batchResult in  ((IBooleanListbooleanArray)this).DbConnectionSTDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
-FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[8], false);FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[9], false);FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[10], false);FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[11], false);FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[12], false);FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[13], false);FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[14], false);FlatBooleanbooleanArray2M.AssertModel(models[7],_testData[15], false);FlatBooleanbooleanArray2M.AssertModel(models[8],_testData[16], false);FlatBooleanbooleanArray2M.AssertModel(models[9],_testData[17], false);FlatBooleanbooleanArray2M.AssertModel(models[10],_testData[18], false);FlatBooleanbooleanArray2M.AssertModel(models[11],_testData[19], false);FlatBooleanbooleanArray2M.AssertModel(models[12],_testData[20], false);FlatBooleanbooleanArray2M.AssertModel(models[13],_testData[21], false);FlatBooleanbooleanArray2M.AssertModel(models[14],_testData[22], false);FlatBooleanbooleanArray2M.AssertModel(models[15],_testData[23], false);FlatBooleanbooleanArray2M.AssertModel(models[16],_testData[24], false);FlatBooleanbooleanArray2M.AssertModel(models[17],_testData[25], false);FlatBooleanbooleanArray2M.AssertModel(models[18],_testData[26], false);FlatBooleanbooleanArray2M.AssertModel(models[19],_testData[27], false);FlatBooleanbooleanArray2M.AssertModel(models[20],_testData[28], false);FlatBooleanbooleanArray2M.AssertModel(models[21],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+
+                        FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
-FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[6], false);FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[7], false);FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[8], false);FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[9], false);FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[10], false);FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[11], false);FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[12], false);FlatBooleanbooleanArray2M.AssertModel(models[7],_testData[13], false);FlatBooleanbooleanArray2M.AssertModel(models[8],_testData[14], false);FlatBooleanbooleanArray2M.AssertModel(models[9],_testData[15], false);FlatBooleanbooleanArray2M.AssertModel(models[10],_testData[16], false);FlatBooleanbooleanArray2M.AssertModel(models[11],_testData[17], false);FlatBooleanbooleanArray2M.AssertModel(models[12],_testData[18], false);FlatBooleanbooleanArray2M.AssertModel(models[13],_testData[19], false);FlatBooleanbooleanArray2M.AssertModel(models[14],_testData[20], false);FlatBooleanbooleanArray2M.AssertModel(models[15],_testData[21], false);FlatBooleanbooleanArray2M.AssertModel(models[16],_testData[22], false);FlatBooleanbooleanArray2M.AssertModel(models[17],_testData[23], false);FlatBooleanbooleanArray2M.AssertModel(models[18],_testData[24], false);FlatBooleanbooleanArray2M.AssertModel(models[19],_testData[25], false);FlatBooleanbooleanArray2M.AssertModel(models[20],_testData[26], false);FlatBooleanbooleanArray2M.AssertModel(models[21],_testData[27], false);FlatBooleanbooleanArray2M.AssertModel(models[22],_testData[28], false);FlatBooleanbooleanArray2M.AssertModel(models[23],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(19));
+
+                        FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[7],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[8],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[9],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[10],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[11],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[12],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[13],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[14],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[15],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[16],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[17],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[18],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 37;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 18;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems1 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems2 = new List<FlatBooleanbooleanArray2M>();
+                 ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(23));
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[0],_testData[7], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[1],_testData[8], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[2],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[3],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[4],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[5],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[6],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[7],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[8],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[9],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[10],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[11],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[12],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[13],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[14],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[15],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[16],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[17],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[18],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[19],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[20],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[21],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[22],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(27));
+                Assert.That(secondItems2, Has.Count.EqualTo(27));
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[0],_testData[3], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[0],_testData[3], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[1],_testData[4], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[1],_testData[4], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[2],_testData[5], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[2],_testData[5], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[3],_testData[6], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[3],_testData[6], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[4],_testData[7], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[4],_testData[7], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[5],_testData[8], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[5],_testData[8], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[6],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[6],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[7],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[7],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[8],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[8],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[9],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[9],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[10],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[10],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[11],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[11],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[12],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[12],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[13],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[13],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[14],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[14],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[15],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[15],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[16],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[16],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[17],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[17],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[18],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[18],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[19],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[19],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[20],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[20],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[21],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[21],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[22],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[22],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[23],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[23],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[24],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[24],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[25],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[25],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[26],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[26],_testData[29], false);
             }
         }
 
@@ -2031,6 +2953,7 @@ ORDER BY
 ,
             methodName:"DbConnectionSelectModelDynPar",
             queryMapTypes: [typeof(BooleanbooleanArray2M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -2042,7 +2965,7 @@ Gedaq.DbConnection.Attributes.DynamicParametr()]
         }
 
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: "DbConnectionSelectModelDynParBatch",
+            batchName: "DbConnectionSTSelectModelDynParBatch",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
@@ -2053,7 +2976,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionSelectModelDynPar",
             position: 2)]
-        private void DbConnectionSelectModelDynParBatchConfig()
+        private void DbConnectionSTSelectModelDynParBatchConfig()
         {
         }
 
@@ -2067,8 +2990,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models = await ((IBooleanListbooleanArray)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
+                var models = await((IBooleanListbooleanArray)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2078,36 +3000,75 @@ Gedaq.DbConnection.Attributes.BatchPart(
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelDynParBatchTestAsync()
+        public async Task DbConnectionSTSelectModelDynParBatchTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 121;
+                parametr1.Value = 39;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 146;
+                parametr2.Value = 65;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
-                foreach(var batchResult in await ((IBooleanListbooleanArray)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
+                int resultIndex = 0;
+                foreach(var batchResult in await ((IBooleanListbooleanArray)this).DbConnectionSTSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
-BooleanbooleanArray2M.AssertModel(models[0],_testData[22], false);BooleanbooleanArray2M.AssertModel(models[1],_testData[23], false);BooleanbooleanArray2M.AssertModel(models[2],_testData[24], false);BooleanbooleanArray2M.AssertModel(models[3],_testData[25], false);BooleanbooleanArray2M.AssertModel(models[4],_testData[26], false);BooleanbooleanArray2M.AssertModel(models[5],_testData[27], false);BooleanbooleanArray2M.AssertModel(models[6],_testData[28], false);BooleanbooleanArray2M.AssertModel(models[7],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(22));
+
+                        BooleanbooleanArray2M.AssertModel(models[0],_testData[8], false);
+                        BooleanbooleanArray2M.AssertModel(models[1],_testData[9], false);
+                        BooleanbooleanArray2M.AssertModel(models[2],_testData[10], false);
+                        BooleanbooleanArray2M.AssertModel(models[3],_testData[11], false);
+                        BooleanbooleanArray2M.AssertModel(models[4],_testData[12], false);
+                        BooleanbooleanArray2M.AssertModel(models[5],_testData[13], false);
+                        BooleanbooleanArray2M.AssertModel(models[6],_testData[14], false);
+                        BooleanbooleanArray2M.AssertModel(models[7],_testData[15], false);
+                        BooleanbooleanArray2M.AssertModel(models[8],_testData[16], false);
+                        BooleanbooleanArray2M.AssertModel(models[9],_testData[17], false);
+                        BooleanbooleanArray2M.AssertModel(models[10],_testData[18], false);
+                        BooleanbooleanArray2M.AssertModel(models[11],_testData[19], false);
+                        BooleanbooleanArray2M.AssertModel(models[12],_testData[20], false);
+                        BooleanbooleanArray2M.AssertModel(models[13],_testData[21], false);
+                        BooleanbooleanArray2M.AssertModel(models[14],_testData[22], false);
+                        BooleanbooleanArray2M.AssertModel(models[15],_testData[23], false);
+                        BooleanbooleanArray2M.AssertModel(models[16],_testData[24], false);
+                        BooleanbooleanArray2M.AssertModel(models[17],_testData[25], false);
+                        BooleanbooleanArray2M.AssertModel(models[18],_testData[26], false);
+                        BooleanbooleanArray2M.AssertModel(models[19],_testData[27], false);
+                        BooleanbooleanArray2M.AssertModel(models[20],_testData[28], false);
+                        BooleanbooleanArray2M.AssertModel(models[21],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
-BooleanbooleanArray2M.AssertModel(models[0],_testData[26], false);BooleanbooleanArray2M.AssertModel(models[1],_testData[27], false);BooleanbooleanArray2M.AssertModel(models[2],_testData[28], false);BooleanbooleanArray2M.AssertModel(models[3],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(17));
+
+                        BooleanbooleanArray2M.AssertModel(models[0],_testData[13], false);
+                        BooleanbooleanArray2M.AssertModel(models[1],_testData[14], false);
+                        BooleanbooleanArray2M.AssertModel(models[2],_testData[15], false);
+                        BooleanbooleanArray2M.AssertModel(models[3],_testData[16], false);
+                        BooleanbooleanArray2M.AssertModel(models[4],_testData[17], false);
+                        BooleanbooleanArray2M.AssertModel(models[5],_testData[18], false);
+                        BooleanbooleanArray2M.AssertModel(models[6],_testData[19], false);
+                        BooleanbooleanArray2M.AssertModel(models[7],_testData[20], false);
+                        BooleanbooleanArray2M.AssertModel(models[8],_testData[21], false);
+                        BooleanbooleanArray2M.AssertModel(models[9],_testData[22], false);
+                        BooleanbooleanArray2M.AssertModel(models[10],_testData[23], false);
+                        BooleanbooleanArray2M.AssertModel(models[11],_testData[24], false);
+                        BooleanbooleanArray2M.AssertModel(models[12],_testData[25], false);
+                        BooleanbooleanArray2M.AssertModel(models[13],_testData[26], false);
+                        BooleanbooleanArray2M.AssertModel(models[14],_testData[27], false);
+                        BooleanbooleanArray2M.AssertModel(models[15],_testData[28], false);
+                        BooleanbooleanArray2M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }
                     
@@ -2126,8 +3087,7 @@ BooleanbooleanArray2M.AssertModel(models[0],_testData[26], false);Booleanboolean
                 parametr1.Value = 0;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
-
-                var models =  ((IBooleanListbooleanArray)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
+                var models = ((IBooleanListbooleanArray)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2137,36 +3097,75 @@ BooleanbooleanArray2M.AssertModel(models[0],_testData[26], false);Booleanboolean
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelDynParBatchTest()
+        public async Task DbConnectionSTSelectModelDynParBatchTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 75;
+                parametr1.Value = 65;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 106;
+                parametr2.Value = 39;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
-                foreach(var batchResult in  ((IBooleanListbooleanArray)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
+                int resultIndex = 0;
+                foreach(var batchResult in  ((IBooleanListbooleanArray)this).DbConnectionSTSelectModelDynParBatch(connection, [parametr1], [parametr2]))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
                         Assert.That(models, Has.Count.EqualTo(17));
-BooleanbooleanArray2M.AssertModel(models[0],_testData[13], false);BooleanbooleanArray2M.AssertModel(models[1],_testData[14], false);BooleanbooleanArray2M.AssertModel(models[2],_testData[15], false);BooleanbooleanArray2M.AssertModel(models[3],_testData[16], false);BooleanbooleanArray2M.AssertModel(models[4],_testData[17], false);BooleanbooleanArray2M.AssertModel(models[5],_testData[18], false);BooleanbooleanArray2M.AssertModel(models[6],_testData[19], false);BooleanbooleanArray2M.AssertModel(models[7],_testData[20], false);BooleanbooleanArray2M.AssertModel(models[8],_testData[21], false);BooleanbooleanArray2M.AssertModel(models[9],_testData[22], false);BooleanbooleanArray2M.AssertModel(models[10],_testData[23], false);BooleanbooleanArray2M.AssertModel(models[11],_testData[24], false);BooleanbooleanArray2M.AssertModel(models[12],_testData[25], false);BooleanbooleanArray2M.AssertModel(models[13],_testData[26], false);BooleanbooleanArray2M.AssertModel(models[14],_testData[27], false);BooleanbooleanArray2M.AssertModel(models[15],_testData[28], false);BooleanbooleanArray2M.AssertModel(models[16],_testData[29], false);
+
+                        BooleanbooleanArray2M.AssertModel(models[0],_testData[13], false);
+                        BooleanbooleanArray2M.AssertModel(models[1],_testData[14], false);
+                        BooleanbooleanArray2M.AssertModel(models[2],_testData[15], false);
+                        BooleanbooleanArray2M.AssertModel(models[3],_testData[16], false);
+                        BooleanbooleanArray2M.AssertModel(models[4],_testData[17], false);
+                        BooleanbooleanArray2M.AssertModel(models[5],_testData[18], false);
+                        BooleanbooleanArray2M.AssertModel(models[6],_testData[19], false);
+                        BooleanbooleanArray2M.AssertModel(models[7],_testData[20], false);
+                        BooleanbooleanArray2M.AssertModel(models[8],_testData[21], false);
+                        BooleanbooleanArray2M.AssertModel(models[9],_testData[22], false);
+                        BooleanbooleanArray2M.AssertModel(models[10],_testData[23], false);
+                        BooleanbooleanArray2M.AssertModel(models[11],_testData[24], false);
+                        BooleanbooleanArray2M.AssertModel(models[12],_testData[25], false);
+                        BooleanbooleanArray2M.AssertModel(models[13],_testData[26], false);
+                        BooleanbooleanArray2M.AssertModel(models[14],_testData[27], false);
+                        BooleanbooleanArray2M.AssertModel(models[15],_testData[28], false);
+                        BooleanbooleanArray2M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
-BooleanbooleanArray2M.AssertModel(models[0],_testData[19], false);BooleanbooleanArray2M.AssertModel(models[1],_testData[20], false);BooleanbooleanArray2M.AssertModel(models[2],_testData[21], false);BooleanbooleanArray2M.AssertModel(models[3],_testData[22], false);BooleanbooleanArray2M.AssertModel(models[4],_testData[23], false);BooleanbooleanArray2M.AssertModel(models[5],_testData[24], false);BooleanbooleanArray2M.AssertModel(models[6],_testData[25], false);BooleanbooleanArray2M.AssertModel(models[7],_testData[26], false);BooleanbooleanArray2M.AssertModel(models[8],_testData[27], false);BooleanbooleanArray2M.AssertModel(models[9],_testData[28], false);BooleanbooleanArray2M.AssertModel(models[10],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(22));
+
+                        BooleanbooleanArray2M.AssertModel(models[0],_testData[8], false);
+                        BooleanbooleanArray2M.AssertModel(models[1],_testData[9], false);
+                        BooleanbooleanArray2M.AssertModel(models[2],_testData[10], false);
+                        BooleanbooleanArray2M.AssertModel(models[3],_testData[11], false);
+                        BooleanbooleanArray2M.AssertModel(models[4],_testData[12], false);
+                        BooleanbooleanArray2M.AssertModel(models[5],_testData[13], false);
+                        BooleanbooleanArray2M.AssertModel(models[6],_testData[14], false);
+                        BooleanbooleanArray2M.AssertModel(models[7],_testData[15], false);
+                        BooleanbooleanArray2M.AssertModel(models[8],_testData[16], false);
+                        BooleanbooleanArray2M.AssertModel(models[9],_testData[17], false);
+                        BooleanbooleanArray2M.AssertModel(models[10],_testData[18], false);
+                        BooleanbooleanArray2M.AssertModel(models[11],_testData[19], false);
+                        BooleanbooleanArray2M.AssertModel(models[12],_testData[20], false);
+                        BooleanbooleanArray2M.AssertModel(models[13],_testData[21], false);
+                        BooleanbooleanArray2M.AssertModel(models[14],_testData[22], false);
+                        BooleanbooleanArray2M.AssertModel(models[15],_testData[23], false);
+                        BooleanbooleanArray2M.AssertModel(models[16],_testData[24], false);
+                        BooleanbooleanArray2M.AssertModel(models[17],_testData[25], false);
+                        BooleanbooleanArray2M.AssertModel(models[18],_testData[26], false);
+                        BooleanbooleanArray2M.AssertModel(models[19],_testData[27], false);
+                        BooleanbooleanArray2M.AssertModel(models[20],_testData[28], false);
+                        BooleanbooleanArray2M.AssertModel(models[21],_testData[29], false);
                         continue;
                     }
                     
@@ -2177,8 +3176,518 @@ BooleanbooleanArray2M.AssertModel(models[0],_testData[19], false);Booleanboolean
 
 [Gedaq.DbConnection.Attributes.Query(
             query: null,
+            methodName:"DbConnectionMMDynQuerySelectModel",
+            queryMapTypes: [typeof(FlatBooleanbooleanArray2M), typeof(FlatBooleanbooleanArray2M)],
+            overrideAliasPrefixs: ["item1", "item2"],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBooleanListbooleanArray)),
+Gedaq.DbConnection.Attributes.Parametr(
+            parametrType: typeof(System.Int32), 
+            parametrName: "id", 
+            methodParametrName: "id", 
+            dbType: (System.Data.DbType)(11))]
+        private void DbConnectionMMDynQuerySelectModelConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionSTMMDynQuerySelectModelBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBooleanListbooleanArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModel",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModel",
+            position: 2)]
+        private void DbConnectionSTMMDynQuerySelectModelBatchConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionMMDynQuerySelectModelBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBooleanListbooleanArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModel",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModel",
+            position: 2)]
+        private void DbConnectionMMDynQuerySelectModelBatchConfig()
+        {
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatBooleanbooleanArray2M>();
+                var models2 = new List<FlatBooleanbooleanArray2M>();
+                await((IBooleanListbooleanArray)this).DbConnectionMMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBooleanbooleanArray2M>();
+                var firstItems2 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems1 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems2 = new List<FlatBooleanbooleanArray2M>();
+                await ((IBooleanListbooleanArray)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 126, query1, 28, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(5));
+                Assert.That(firstItems2, Has.Count.EqualTo(5));
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[0],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[0],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[1],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[1],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[2],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[2],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[3],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[3],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[4],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[4],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(25));
+                Assert.That(secondItems2, Has.Count.EqualTo(25));
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[0],_testData[5], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[0],_testData[5], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[1],_testData[6], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[1],_testData[6], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[2],_testData[7], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[2],_testData[7], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[3],_testData[8], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[3],_testData[8], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[4],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[4],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[5],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[5],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[6],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[6],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[7],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[7],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[8],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[8],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[9],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[9],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[10],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[10],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[11],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[11],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[12],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[12],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[13],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[13],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[14],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[14],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[15],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[15],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[16],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[16],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[17],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[17],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[18],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[18],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[19],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[19],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[20],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[20],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[21],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[21],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[22],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[22],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[23],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[23],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[24],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[24],_testData[29], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBooleanbooleanArray2M>();
+                var firstItems2 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems1 = new List<FlatBooleanbooleanArray2M>();
+                await ((IBooleanListbooleanArray)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 48, query1, 49, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(21));
+                Assert.That(firstItems2, Has.Count.EqualTo(21));
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[0],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[0],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[1],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[1],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[2],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[2],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[3],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[3],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[4],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[4],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[5],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[5],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[6],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[6],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[7],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[7],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[8],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[8],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[9],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[9],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[10],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[10],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[11],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[11],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[12],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[12],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[13],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[13],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[14],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[14],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[15],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[15],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[16],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[16],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[17],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[17],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[18],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[18],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[19],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[19],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[20],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[20],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(20));
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[0],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[1],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[2],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[3],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[4],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[5],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[6],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[7],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[8],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[9],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[10],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[11],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[12],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[13],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[14],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[15],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[16],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[17],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[18],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[19],_testData[29], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models1 = new List<FlatBooleanbooleanArray2M>();
+                var models2 = new List<FlatBooleanbooleanArray2M>();
+                ((IBooleanListbooleanArray)this).DbConnectionMMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatBooleanbooleanArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBooleanbooleanArray2M>();
+                var firstItems2 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems1 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems2 = new List<FlatBooleanbooleanArray2M>();
+                 ((IBooleanListbooleanArray)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 100, query1, 57, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(9));
+                Assert.That(firstItems2, Has.Count.EqualTo(9));
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[0],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[0],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[1],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[1],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[2],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[2],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[3],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[3],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[4],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[4],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[5],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[5],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[6],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[6],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[7],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[7],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[8],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[8],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(18));
+                Assert.That(secondItems2, Has.Count.EqualTo(18));
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[0],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[0],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[1],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[1],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[2],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[2],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[3],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[3],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[4],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[4],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[5],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[5],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[6],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[6],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[7],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[7],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[8],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[8],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[9],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[9],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[10],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[10],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[11],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[11],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[12],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[12],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[13],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[13],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[14],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[14],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[15],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[15],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[16],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[16],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[17],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[17],_testData[29], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBooleanbooleanArray2M>();
+                var firstItems2 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems1 = new List<FlatBooleanbooleanArray2M>();
+                 ((IBooleanListbooleanArray)this).DbConnectionMMDynQuerySelectModelBatch(connection, 97, query1, 78, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(10));
+                Assert.That(firstItems2, Has.Count.EqualTo(10));
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[0],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[0],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[1],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[1],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[2],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[2],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[3],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[3],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[4],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[4],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[5],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[5],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[6],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[6],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[7],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[7],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[8],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[8],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[9],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems2[9],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(14));
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[0],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[1],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[2],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[3],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[4],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[5],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[6],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[7],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[8],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[9],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[10],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[11],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[12],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[13],_testData[29], false);
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: null,
             methodName:"DbConnectionDynQuerySelectModel",
             queryMapTypes: [typeof(FlatBooleanbooleanArray2M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -2194,7 +3703,7 @@ Gedaq.DbConnection.Attributes.Parametr(
         }
 
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: "DbConnectionDynQuerySelectModelBatch",
+            batchName: "DbConnectionSTDynQuerySelectModelBatch",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
@@ -2204,6 +3713,22 @@ Gedaq.DbConnection.Attributes.BatchPart(
             position: 1),
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionDynQuerySelectModel",
+            position: 2)]
+        private void DbConnectionSTDynQuerySelectModelBatchConfig()
+        {
+        }
+
+[Gedaq.DbConnection.Attributes.QueryBatch(
+            batchName: "DbConnectionDynQuerySelectModelBatch",
+            queryType: QueryType.Read, 
+            methodType: MethodType.Sync | MethodType.Async,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBooleanListbooleanArray)),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionDynQuerySelectModel",
+            position: 1),
+Gedaq.DbConnection.Attributes.BatchPart(
+            methodName: "DbConnectionMMDynQuerySelectModel",
             position: 2)]
         private void DbConnectionDynQuerySelectModelBatchConfig()
         {
@@ -2221,13 +3746,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                var models = await ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
+                var models = await((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2237,19 +3761,17 @@ ORDER BY
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelBatchTestAsync()
+        public async Task DbConnectionSTDynQuerySelectModelBatchTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                int resultIndex = 0;
                 var query1 = @"
 SELECT
     m.id,
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -2261,32 +3783,175 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 18, query1, 106, query2))
+                int resultIndex = 0;
+                foreach(var batchResult in await ((IBooleanListbooleanArray)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 126, query1, 8, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
-FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[3], false);FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[4], false);FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[5], false);FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[6], false);FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[7], false);FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[8], false);FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[9], false);FlatBooleanbooleanArray2M.AssertModel(models[7],_testData[10], false);FlatBooleanbooleanArray2M.AssertModel(models[8],_testData[11], false);FlatBooleanbooleanArray2M.AssertModel(models[9],_testData[12], false);FlatBooleanbooleanArray2M.AssertModel(models[10],_testData[13], false);FlatBooleanbooleanArray2M.AssertModel(models[11],_testData[14], false);FlatBooleanbooleanArray2M.AssertModel(models[12],_testData[15], false);FlatBooleanbooleanArray2M.AssertModel(models[13],_testData[16], false);FlatBooleanbooleanArray2M.AssertModel(models[14],_testData[17], false);FlatBooleanbooleanArray2M.AssertModel(models[15],_testData[18], false);FlatBooleanbooleanArray2M.AssertModel(models[16],_testData[19], false);FlatBooleanbooleanArray2M.AssertModel(models[17],_testData[20], false);FlatBooleanbooleanArray2M.AssertModel(models[18],_testData[21], false);FlatBooleanbooleanArray2M.AssertModel(models[19],_testData[22], false);FlatBooleanbooleanArray2M.AssertModel(models[20],_testData[23], false);FlatBooleanbooleanArray2M.AssertModel(models[21],_testData[24], false);FlatBooleanbooleanArray2M.AssertModel(models[22],_testData[25], false);FlatBooleanbooleanArray2M.AssertModel(models[23],_testData[26], false);FlatBooleanbooleanArray2M.AssertModel(models[24],_testData[27], false);FlatBooleanbooleanArray2M.AssertModel(models[25],_testData[28], false);FlatBooleanbooleanArray2M.AssertModel(models[26],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(5));
+
+                        FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
-FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[19], false);FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[20], false);FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[21], false);FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[22], false);FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[23], false);FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[24], false);FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[25], false);FlatBooleanbooleanArray2M.AssertModel(models[7],_testData[26], false);FlatBooleanbooleanArray2M.AssertModel(models[8],_testData[27], false);FlatBooleanbooleanArray2M.AssertModel(models[9],_testData[28], false);FlatBooleanbooleanArray2M.AssertModel(models[10],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(29));
+
+                        FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[1], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[2], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[3], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[4], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[5], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[6], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[7], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[7],_testData[8], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[8],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[9],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[10],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[11],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[12],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[13],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[14],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[15],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[16],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[17],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[18],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[19],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[20],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[21],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[22],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[23],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[24],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[25],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[26],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[27],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[28],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems1 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems2 = new List<FlatBooleanbooleanArray2M>();
+                await ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 49, query1, 29, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(20));
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[0],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[1],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[2],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[3],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[4],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[5],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[6],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[7],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[8],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[9],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[10],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[11],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[12],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[13],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[14],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[15],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[16],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[17],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[18],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[19],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(24));
+                Assert.That(secondItems2, Has.Count.EqualTo(24));
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[0],_testData[6], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[0],_testData[6], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[1],_testData[7], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[1],_testData[7], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[2],_testData[8], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[2],_testData[8], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[3],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[3],_testData[9], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[4],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[4],_testData[10], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[5],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[5],_testData[11], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[6],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[6],_testData[12], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[7],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[7],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[8],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[8],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[9],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[9],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[10],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[10],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[11],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[11],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[12],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[12],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[13],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[13],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[14],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[14],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[15],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[15],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[16],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[16],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[17],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[17],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[18],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[18],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[19],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[19],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[20],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[20],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[21],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[21],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[22],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[22],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[23],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[23],_testData[29], false);
             }
         }
 
@@ -2302,13 +3967,12 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                var models =  ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
+                var models = ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2318,19 +3982,17 @@ ORDER BY
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelBatchTest()
+        public async Task DbConnectionSTDynQuerySelectModelBatchTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                int resultIndex = 0;
                 var query1 = @"
 SELECT
     m.id,
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -2342,32 +4004,137 @@ SELECT
     m.value,
     m.nullablevalue
 FROM public.booleanbooleanarray2m m
-LEFT JOIN public.booleanbooleanarray2mi mi ON mi.id = m.booleanbooleanarray2mi_id
 WHERE
     m.id > @id
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelBatch(connection, 151, query1, 121, query2))
+                int resultIndex = 0;
+                foreach(var batchResult in  ((IBooleanListbooleanArray)this).DbConnectionSTDynQuerySelectModelBatch(connection, 97, query1, 65, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[27], false);FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[28], false);FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(10));
+
+                        FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[7],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[8],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[9],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
-FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[22], false);FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[23], false);FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[24], false);FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[25], false);FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[26], false);FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[27], false);FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[28], false);FlatBooleanbooleanArray2M.AssertModel(models[7],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(17));
+
+                        FlatBooleanbooleanArray2M.AssertModel(models[0],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[1],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[2],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[3],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[4],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[5],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[6],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[7],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[8],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[9],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[10],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[11],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[12],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[13],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[14],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[15],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
                 }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.booleanbooleanarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems1 = new List<FlatBooleanbooleanArray2M>();
+                var secondItems2 = new List<FlatBooleanbooleanArray2M>();
+                 ((IBooleanListbooleanArray)this).DbConnectionDynQuerySelectModelBatch(connection, 137, query1, 65, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(3));
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[0],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[1],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(firstItems1[2],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(17));
+                Assert.That(secondItems2, Has.Count.EqualTo(17));
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[0],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[0],_testData[13], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[1],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[1],_testData[14], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[2],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[2],_testData[15], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[3],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[3],_testData[16], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[4],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[4],_testData[17], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[5],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[5],_testData[18], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[6],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[6],_testData[19], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[7],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[7],_testData[20], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[8],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[8],_testData[21], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[9],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[9],_testData[22], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[10],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[10],_testData[23], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[11],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[11],_testData[24], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[12],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[12],_testData[25], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[13],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[13],_testData[26], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[14],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[14],_testData[27], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[15],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[15],_testData[28], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems1[16],_testData[29], false);
+                        FlatBooleanbooleanArray2M.AssertModel(secondItems2[16],_testData[29], false);
             }
         }
 
@@ -2394,6 +4161,7 @@ ORDER BY
 ,
             methodName:"DbConnectionSelectModel",
             queryMapTypes: [typeof(BooleanbooleanArray2M)],
+            overrideAliasPrefixs: null,
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -2409,7 +4177,7 @@ Gedaq.DbConnection.Attributes.Parametr(
         }
 
 [Gedaq.DbConnection.Attributes.QueryBatch(
-            batchName: "DbConnectionSelectModelBatch",
+            batchName: "DbConnectionSTSelectModelBatch",
             queryType: QueryType.Read, 
             methodType: MethodType.Sync | MethodType.Async,
             accessModifier: AccessModifier.Public,
@@ -2420,7 +4188,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
 Gedaq.DbConnection.Attributes.BatchPart(
             methodName: "DbConnectionSelectModel",
             position: 2)]
-        private void DbConnectionSelectModelBatchConfig()
+        private void DbConnectionSTSelectModelBatchConfig()
         {
         }
 
@@ -2430,7 +4198,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                var models = await ((IBooleanListbooleanArray)this).DbConnectionSelectModelAsync(connection, 0);
+                var models = await((IBooleanListbooleanArray)this).DbConnectionSelectModelAsync(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2440,27 +4208,76 @@ Gedaq.DbConnection.Attributes.BatchPart(
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelBatchTestAsync()
+        public async Task DbConnectionSTSelectModelBatchTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IBooleanListbooleanArray)this).DbConnectionSelectModelBatchAsync(connection, 75, 90))
+                foreach(var batchResult in await ((IBooleanListbooleanArray)this).DbConnectionSTSelectModelBatchAsync(connection, 8, 49))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(17));
-BooleanbooleanArray2M.AssertModel(models[0],_testData[13], false);BooleanbooleanArray2M.AssertModel(models[1],_testData[14], false);BooleanbooleanArray2M.AssertModel(models[2],_testData[15], false);BooleanbooleanArray2M.AssertModel(models[3],_testData[16], false);BooleanbooleanArray2M.AssertModel(models[4],_testData[17], false);BooleanbooleanArray2M.AssertModel(models[5],_testData[18], false);BooleanbooleanArray2M.AssertModel(models[6],_testData[19], false);BooleanbooleanArray2M.AssertModel(models[7],_testData[20], false);BooleanbooleanArray2M.AssertModel(models[8],_testData[21], false);BooleanbooleanArray2M.AssertModel(models[9],_testData[22], false);BooleanbooleanArray2M.AssertModel(models[10],_testData[23], false);BooleanbooleanArray2M.AssertModel(models[11],_testData[24], false);BooleanbooleanArray2M.AssertModel(models[12],_testData[25], false);BooleanbooleanArray2M.AssertModel(models[13],_testData[26], false);BooleanbooleanArray2M.AssertModel(models[14],_testData[27], false);BooleanbooleanArray2M.AssertModel(models[15],_testData[28], false);BooleanbooleanArray2M.AssertModel(models[16],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(29));
+
+                        BooleanbooleanArray2M.AssertModel(models[0],_testData[1], false);
+                        BooleanbooleanArray2M.AssertModel(models[1],_testData[2], false);
+                        BooleanbooleanArray2M.AssertModel(models[2],_testData[3], false);
+                        BooleanbooleanArray2M.AssertModel(models[3],_testData[4], false);
+                        BooleanbooleanArray2M.AssertModel(models[4],_testData[5], false);
+                        BooleanbooleanArray2M.AssertModel(models[5],_testData[6], false);
+                        BooleanbooleanArray2M.AssertModel(models[6],_testData[7], false);
+                        BooleanbooleanArray2M.AssertModel(models[7],_testData[8], false);
+                        BooleanbooleanArray2M.AssertModel(models[8],_testData[9], false);
+                        BooleanbooleanArray2M.AssertModel(models[9],_testData[10], false);
+                        BooleanbooleanArray2M.AssertModel(models[10],_testData[11], false);
+                        BooleanbooleanArray2M.AssertModel(models[11],_testData[12], false);
+                        BooleanbooleanArray2M.AssertModel(models[12],_testData[13], false);
+                        BooleanbooleanArray2M.AssertModel(models[13],_testData[14], false);
+                        BooleanbooleanArray2M.AssertModel(models[14],_testData[15], false);
+                        BooleanbooleanArray2M.AssertModel(models[15],_testData[16], false);
+                        BooleanbooleanArray2M.AssertModel(models[16],_testData[17], false);
+                        BooleanbooleanArray2M.AssertModel(models[17],_testData[18], false);
+                        BooleanbooleanArray2M.AssertModel(models[18],_testData[19], false);
+                        BooleanbooleanArray2M.AssertModel(models[19],_testData[20], false);
+                        BooleanbooleanArray2M.AssertModel(models[20],_testData[21], false);
+                        BooleanbooleanArray2M.AssertModel(models[21],_testData[22], false);
+                        BooleanbooleanArray2M.AssertModel(models[22],_testData[23], false);
+                        BooleanbooleanArray2M.AssertModel(models[23],_testData[24], false);
+                        BooleanbooleanArray2M.AssertModel(models[24],_testData[25], false);
+                        BooleanbooleanArray2M.AssertModel(models[25],_testData[26], false);
+                        BooleanbooleanArray2M.AssertModel(models[26],_testData[27], false);
+                        BooleanbooleanArray2M.AssertModel(models[27],_testData[28], false);
+                        BooleanbooleanArray2M.AssertModel(models[28],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
-BooleanbooleanArray2M.AssertModel(models[0],_testData[16], false);BooleanbooleanArray2M.AssertModel(models[1],_testData[17], false);BooleanbooleanArray2M.AssertModel(models[2],_testData[18], false);BooleanbooleanArray2M.AssertModel(models[3],_testData[19], false);BooleanbooleanArray2M.AssertModel(models[4],_testData[20], false);BooleanbooleanArray2M.AssertModel(models[5],_testData[21], false);BooleanbooleanArray2M.AssertModel(models[6],_testData[22], false);BooleanbooleanArray2M.AssertModel(models[7],_testData[23], false);BooleanbooleanArray2M.AssertModel(models[8],_testData[24], false);BooleanbooleanArray2M.AssertModel(models[9],_testData[25], false);BooleanbooleanArray2M.AssertModel(models[10],_testData[26], false);BooleanbooleanArray2M.AssertModel(models[11],_testData[27], false);BooleanbooleanArray2M.AssertModel(models[12],_testData[28], false);BooleanbooleanArray2M.AssertModel(models[13],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(20));
+
+                        BooleanbooleanArray2M.AssertModel(models[0],_testData[10], false);
+                        BooleanbooleanArray2M.AssertModel(models[1],_testData[11], false);
+                        BooleanbooleanArray2M.AssertModel(models[2],_testData[12], false);
+                        BooleanbooleanArray2M.AssertModel(models[3],_testData[13], false);
+                        BooleanbooleanArray2M.AssertModel(models[4],_testData[14], false);
+                        BooleanbooleanArray2M.AssertModel(models[5],_testData[15], false);
+                        BooleanbooleanArray2M.AssertModel(models[6],_testData[16], false);
+                        BooleanbooleanArray2M.AssertModel(models[7],_testData[17], false);
+                        BooleanbooleanArray2M.AssertModel(models[8],_testData[18], false);
+                        BooleanbooleanArray2M.AssertModel(models[9],_testData[19], false);
+                        BooleanbooleanArray2M.AssertModel(models[10],_testData[20], false);
+                        BooleanbooleanArray2M.AssertModel(models[11],_testData[21], false);
+                        BooleanbooleanArray2M.AssertModel(models[12],_testData[22], false);
+                        BooleanbooleanArray2M.AssertModel(models[13],_testData[23], false);
+                        BooleanbooleanArray2M.AssertModel(models[14],_testData[24], false);
+                        BooleanbooleanArray2M.AssertModel(models[15],_testData[25], false);
+                        BooleanbooleanArray2M.AssertModel(models[16],_testData[26], false);
+                        BooleanbooleanArray2M.AssertModel(models[17],_testData[27], false);
+                        BooleanbooleanArray2M.AssertModel(models[18],_testData[28], false);
+                        BooleanbooleanArray2M.AssertModel(models[19],_testData[29], false);
                         continue;
                     }
                     
@@ -2475,7 +4292,7 @@ BooleanbooleanArray2M.AssertModel(models[0],_testData[16], false);Booleanboolean
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((IBooleanListbooleanArray)this).DbConnectionSelectModel(connection, 0);
+                var models = ((IBooleanListbooleanArray)this).DbConnectionSelectModel(connection, 0);
                 Assert.That(models, Has.Count.EqualTo(30));
                 for (int i = 0; i < 30; i++)
                 {
@@ -2485,27 +4302,60 @@ BooleanbooleanArray2M.AssertModel(models[0],_testData[16], false);Booleanboolean
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelBatchTest()
+        public async Task DbConnectionSTSelectModelBatchTest()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IBooleanListbooleanArray)this).DbConnectionSelectModelBatch(connection, 120, 106))
+                foreach(var batchResult in  ((IBooleanListbooleanArray)this).DbConnectionSTSelectModelBatch(connection, 37, 97))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
-BooleanbooleanArray2M.AssertModel(models[0],_testData[21], false);BooleanbooleanArray2M.AssertModel(models[1],_testData[22], false);BooleanbooleanArray2M.AssertModel(models[2],_testData[23], false);BooleanbooleanArray2M.AssertModel(models[3],_testData[24], false);BooleanbooleanArray2M.AssertModel(models[4],_testData[25], false);BooleanbooleanArray2M.AssertModel(models[5],_testData[26], false);BooleanbooleanArray2M.AssertModel(models[6],_testData[27], false);BooleanbooleanArray2M.AssertModel(models[7],_testData[28], false);BooleanbooleanArray2M.AssertModel(models[8],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(23));
+
+                        BooleanbooleanArray2M.AssertModel(models[0],_testData[7], false);
+                        BooleanbooleanArray2M.AssertModel(models[1],_testData[8], false);
+                        BooleanbooleanArray2M.AssertModel(models[2],_testData[9], false);
+                        BooleanbooleanArray2M.AssertModel(models[3],_testData[10], false);
+                        BooleanbooleanArray2M.AssertModel(models[4],_testData[11], false);
+                        BooleanbooleanArray2M.AssertModel(models[5],_testData[12], false);
+                        BooleanbooleanArray2M.AssertModel(models[6],_testData[13], false);
+                        BooleanbooleanArray2M.AssertModel(models[7],_testData[14], false);
+                        BooleanbooleanArray2M.AssertModel(models[8],_testData[15], false);
+                        BooleanbooleanArray2M.AssertModel(models[9],_testData[16], false);
+                        BooleanbooleanArray2M.AssertModel(models[10],_testData[17], false);
+                        BooleanbooleanArray2M.AssertModel(models[11],_testData[18], false);
+                        BooleanbooleanArray2M.AssertModel(models[12],_testData[19], false);
+                        BooleanbooleanArray2M.AssertModel(models[13],_testData[20], false);
+                        BooleanbooleanArray2M.AssertModel(models[14],_testData[21], false);
+                        BooleanbooleanArray2M.AssertModel(models[15],_testData[22], false);
+                        BooleanbooleanArray2M.AssertModel(models[16],_testData[23], false);
+                        BooleanbooleanArray2M.AssertModel(models[17],_testData[24], false);
+                        BooleanbooleanArray2M.AssertModel(models[18],_testData[25], false);
+                        BooleanbooleanArray2M.AssertModel(models[19],_testData[26], false);
+                        BooleanbooleanArray2M.AssertModel(models[20],_testData[27], false);
+                        BooleanbooleanArray2M.AssertModel(models[21],_testData[28], false);
+                        BooleanbooleanArray2M.AssertModel(models[22],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
-BooleanbooleanArray2M.AssertModel(models[0],_testData[19], false);BooleanbooleanArray2M.AssertModel(models[1],_testData[20], false);BooleanbooleanArray2M.AssertModel(models[2],_testData[21], false);BooleanbooleanArray2M.AssertModel(models[3],_testData[22], false);BooleanbooleanArray2M.AssertModel(models[4],_testData[23], false);BooleanbooleanArray2M.AssertModel(models[5],_testData[24], false);BooleanbooleanArray2M.AssertModel(models[6],_testData[25], false);BooleanbooleanArray2M.AssertModel(models[7],_testData[26], false);BooleanbooleanArray2M.AssertModel(models[8],_testData[27], false);BooleanbooleanArray2M.AssertModel(models[9],_testData[28], false);BooleanbooleanArray2M.AssertModel(models[10],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(10));
+
+                        BooleanbooleanArray2M.AssertModel(models[0],_testData[20], false);
+                        BooleanbooleanArray2M.AssertModel(models[1],_testData[21], false);
+                        BooleanbooleanArray2M.AssertModel(models[2],_testData[22], false);
+                        BooleanbooleanArray2M.AssertModel(models[3],_testData[23], false);
+                        BooleanbooleanArray2M.AssertModel(models[4],_testData[24], false);
+                        BooleanbooleanArray2M.AssertModel(models[5],_testData[25], false);
+                        BooleanbooleanArray2M.AssertModel(models[6],_testData[26], false);
+                        BooleanbooleanArray2M.AssertModel(models[7],_testData[27], false);
+                        BooleanbooleanArray2M.AssertModel(models[8],_testData[28], false);
+                        BooleanbooleanArray2M.AssertModel(models[9],_testData[29], false);
                         continue;
                     }
                     
@@ -2521,11 +4371,11 @@ BooleanbooleanArray2M.AssertModel(models[0],_testData[19], false);Booleanboolean
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IBooleanListbooleanArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IBooleanListbooleanArray)this).SetDbConnectionSelectModelParametrs(cmd, 152);
+                ((IBooleanListbooleanArray)this).SetDbConnectionSelectModelParametrs(cmd, 39);
                 var models = await ((IBooleanListbooleanArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(2));
-BooleanbooleanArray2M.AssertModel(models[0],_testData[28], false);BooleanbooleanArray2M.AssertModel(models[1],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(22));
+BooleanbooleanArray2M.AssertModel(models[0],_testData[8], false);BooleanbooleanArray2M.AssertModel(models[1],_testData[9], false);BooleanbooleanArray2M.AssertModel(models[2],_testData[10], false);BooleanbooleanArray2M.AssertModel(models[3],_testData[11], false);BooleanbooleanArray2M.AssertModel(models[4],_testData[12], false);BooleanbooleanArray2M.AssertModel(models[5],_testData[13], false);BooleanbooleanArray2M.AssertModel(models[6],_testData[14], false);BooleanbooleanArray2M.AssertModel(models[7],_testData[15], false);BooleanbooleanArray2M.AssertModel(models[8],_testData[16], false);BooleanbooleanArray2M.AssertModel(models[9],_testData[17], false);BooleanbooleanArray2M.AssertModel(models[10],_testData[18], false);BooleanbooleanArray2M.AssertModel(models[11],_testData[19], false);BooleanbooleanArray2M.AssertModel(models[12],_testData[20], false);BooleanbooleanArray2M.AssertModel(models[13],_testData[21], false);BooleanbooleanArray2M.AssertModel(models[14],_testData[22], false);BooleanbooleanArray2M.AssertModel(models[15],_testData[23], false);BooleanbooleanArray2M.AssertModel(models[16],_testData[24], false);BooleanbooleanArray2M.AssertModel(models[17],_testData[25], false);BooleanbooleanArray2M.AssertModel(models[18],_testData[26], false);BooleanbooleanArray2M.AssertModel(models[19],_testData[27], false);BooleanbooleanArray2M.AssertModel(models[20],_testData[28], false);BooleanbooleanArray2M.AssertModel(models[21],_testData[29], false);
             }
         }
 
@@ -2536,11 +4386,11 @@ BooleanbooleanArray2M.AssertModel(models[0],_testData[28], false);Booleanboolean
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IBooleanListbooleanArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IBooleanListbooleanArray)this).SetDbConnectionSelectModelParametrs(cmd, 106);
+                ((IBooleanListbooleanArray)this).SetDbConnectionSelectModelParametrs(cmd, 126);
                 var models =  ((IBooleanListbooleanArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(11));
-BooleanbooleanArray2M.AssertModel(models[0],_testData[19], false);BooleanbooleanArray2M.AssertModel(models[1],_testData[20], false);BooleanbooleanArray2M.AssertModel(models[2],_testData[21], false);BooleanbooleanArray2M.AssertModel(models[3],_testData[22], false);BooleanbooleanArray2M.AssertModel(models[4],_testData[23], false);BooleanbooleanArray2M.AssertModel(models[5],_testData[24], false);BooleanbooleanArray2M.AssertModel(models[6],_testData[25], false);BooleanbooleanArray2M.AssertModel(models[7],_testData[26], false);BooleanbooleanArray2M.AssertModel(models[8],_testData[27], false);BooleanbooleanArray2M.AssertModel(models[9],_testData[28], false);BooleanbooleanArray2M.AssertModel(models[10],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(5));
+BooleanbooleanArray2M.AssertModel(models[0],_testData[25], false);BooleanbooleanArray2M.AssertModel(models[1],_testData[26], false);BooleanbooleanArray2M.AssertModel(models[2],_testData[27], false);BooleanbooleanArray2M.AssertModel(models[3],_testData[28], false);BooleanbooleanArray2M.AssertModel(models[4],_testData[29], false);
             }
         }
 

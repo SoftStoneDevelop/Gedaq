@@ -15,10 +15,19 @@ namespace Gedaq.Npgsql.Model
 
         private int[] _npgSqlDbTypes;
 
+        public override bool IsCollectionDelegateMap => MapTypeInfos?.Length > 1;
+
         public bool HaveNpgSqlDbTypes => _npgSqlDbTypes?.Length > 0;
 
         private BinaryExport()
         {
+        }
+
+        public override string MapDelegateParametrName => throw new NotImplementedException();
+
+        public override string MapDelegateParametrType()
+        {
+            throw new NotImplementedException();
         }
 
         internal static bool CreateNew(

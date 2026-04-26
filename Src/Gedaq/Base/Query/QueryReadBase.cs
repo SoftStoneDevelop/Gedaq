@@ -1,5 +1,4 @@
 ﻿using Gedaq.Base.Model;
-using Gedaq.DbConnection.GeneratorsQuery;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using System.Text;
@@ -124,24 +123,26 @@ namespace Gedaq.Base.Query
             {
                 if (source.IsCollectionDelegateMap)
                 {
-                    return "void";
+                    return methodType == MethodType.Async ?
+                        "Task" :
+                        "void";
                 }
 
-                var mapType = source.MapTypeInfos[0].MapType;
+                var mapInfo = source.MapTypeInfos[0];
                 switch (source.ReturnType)
                 {
                     case ReturnType.Enumerable:
                     {
                         return methodType == MethodType.Async ?
-                            $"IAsyncEnumerable<{_commandGenerator.ItemTypeName(mapType)}>" :
-                            $"IEnumerable<{_commandGenerator.ItemTypeName(mapType)}>";
+                            $"IAsyncEnumerable<{mapInfo.ItemTypeName}>" :
+                            $"IEnumerable<{mapInfo.ItemTypeName}>";
                     }
 
                     case ReturnType.List:
                     {
                         return methodType == MethodType.Async ?
-                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Collections.Generic.List<{_commandGenerator.ItemTypeName(mapType)}>>" :
-                            $"System.Collections.Generic.List<{_commandGenerator.ItemTypeName(mapType)}>";
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Collections.Generic.List<{mapInfo.ItemTypeName}>>" :
+                            $"System.Collections.Generic.List<{mapInfo.ItemTypeName}>";
                     }
 
                     case ReturnType.Single:
@@ -151,8 +152,8 @@ namespace Gedaq.Base.Query
                     default:
                     {
                         return methodType == MethodType.Async ?
-                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{_commandGenerator.ItemTypeName(mapType)}>" :
-                            $"{_commandGenerator.ItemTypeName(mapType)}";
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{mapInfo.ItemTypeName}>" :
+                            $"{mapInfo.ItemTypeName}";
                     }
                 }
             }
@@ -173,6 +174,12 @@ namespace Gedaq.Base.Query
             _commandGenerator.AddFormatParametrs(source, builder);
             _commandGenerator.AddDynamicParametrs(source, builder);
 
+            if (source.IsCollectionDelegateMap)
+            {
+                builder.Append($@",
+            {source.MapDelegateParametrType()} {source.MapDelegateParametrName}");
+            }
+
             builder.Append($@",
             int? timeout = null");
 
@@ -185,10 +192,12 @@ namespace Gedaq.Base.Query
 
             if (methodType == MethodType.Async)
             {
-                var enumeratorCancellation = forInterface || source.ReturnType != ReturnType.Enumerable ? string.Empty : "[EnumeratorCancellation]";
+                var enumeratorCancellation =
+                    forInterface || source.ReturnType != ReturnType.Enumerable || source.IsCollectionDelegateMap ?
+                    string.Empty :
+                    "[EnumeratorCancellation] ";
                 builder.Append($@",
-            {enumeratorCancellation} CancellationToken cancellationToken = default");
-
+            {enumeratorCancellation}CancellationToken cancellationToken = default");
             }
 
             builder.Append($@")");

@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Gedaq.Base.Model
 {
@@ -11,6 +10,8 @@ namespace Gedaq.Base.Model
         public bool HaveFormatParametrs;
         public bool HaveDynamicParametrs;
 
-        public abstract IEnumerable<BatchPartBase> QueryBases();
+        public override bool IsCollectionDelegateMap => BatchPartBases().Any(a => a.QueryBase.IsCollectionDelegateMap);
+
+        public abstract IEnumerable<BatchPartBase> BatchPartBases();
     }
 }

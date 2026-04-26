@@ -79,8 +79,7 @@ FROM STDIN (FORMAT BINARY)
         private static void SelectImportModelConfig(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            string interfaceTypeName
-            )
+            string interfaceTypeName)
         {
             var query = $@"
 @""

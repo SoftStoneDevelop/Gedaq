@@ -5,18 +5,36 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Linq;
+using System.Text;
 
 namespace Gedaq.Base.Model
 {
-    internal class BaseGenerateItem : IMethodInfo
+    internal abstract class BaseGenerateItem : IMethodInfo
     {
         public MapTypeInfo[] MapTypeInfos { get; protected set; }
 
+        public abstract string MapDelegateParametrName { get; }
+
+        public abstract string MapDelegateParametrType();
+
         public bool HaveMapTypes => MapTypeInfos?.Length > 0;
 
-        public bool IsCollectionDelegateMap => MapTypeInfos?.Length > 1;
+        public abstract bool IsCollectionDelegateMap { get; }
 
-        public string[] _overrideAliasPrefixs { get; protected set; }
+        public string[] _overrideAliasPrefixs { get; set; }
+
+        /// <summary>
+        /// Return not null if have override
+        /// </summary>
+        public string GetAliasOverride(int typeIndex)
+        {
+            if (!HaveMapTypes || _overrideAliasPrefixs == null || _overrideAliasPrefixs.Length <= typeIndex)
+            {
+                return null;
+            }
+
+            return _overrideAliasPrefixs[typeIndex];
+        }
 
         public BaseMethodInfo MethodInfo { get; set; }
 
@@ -57,7 +75,7 @@ namespace Gedaq.Base.Model
             for (int i = 0; i < argument.Values.Length; i++)
             {
                 var value = (ITypeSymbol)argument.Values[i].Value;
-                MapTypeInfos[i] = new MapTypeInfo { MapType = value };
+                MapTypeInfos[i] = new MapTypeInfo(i) { MapType = value };
             }
 
             return true;

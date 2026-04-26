@@ -49,5 +49,15 @@
         {
             return $"dynamicQuery{Number}Batch";
         }
+
+        public string MapDelegateParametrNameInBatch()
+        {
+            return $"query{Number}{QueryBase.MapDelegateParametrName}";
+        }
+
+        public string MapDelegateParametrTypeInBatch()
+        {
+            return QueryBase.MapDelegateParametrType();
+        }
     }
 }

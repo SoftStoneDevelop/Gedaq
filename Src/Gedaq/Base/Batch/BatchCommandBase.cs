@@ -125,7 +125,7 @@ namespace Gedaq.Base.Batch
 
             if (source.QueryType.HasFlag(QueryType.NonQuery) && 
                 source.HaveParametrs && 
-                source.QueryBases().Any(a => a.QueryBase.HaveParametrs() && a.QueryBase.BaseParametrs().Any(an => an.HaveDirection)))
+                source.BatchPartBases().Any(a => a.QueryBase.HaveParametrs() && a.QueryBase.BaseParametrs().Any(an => an.HaveDirection)))
             {
                 //TODO
             }
@@ -143,11 +143,17 @@ namespace Gedaq.Base.Batch
             MethodType methodType,
             StringBuilder builder)
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeInfos[0].MapType.GetFullTypeName(true) : "object";
             var async = methodType == MethodType.Sync ? "()" : "Async(cancellationToken).ConfigureAwait(false)";
             var await = methodType == MethodType.Sync ? "" : "await ";
             string ExecuteReturnType()
             {
+                if (source.IsCollectionDelegateMap)
+                {
+                    return methodType == MethodType.Async ?
+                        "Task" :
+                        "void";
+                }
+
                 switch (source.ReturnType)
                 {
                     case ReturnType.List:
@@ -161,21 +167,33 @@ namespace Gedaq.Base.Batch
                     case ReturnType.Enumerable:
                     {
                         return methodType == MethodType.Async ?
-                            $"IAsyncEnumerable<{type}>" :
-                            $"IEnumerable<{type}>";
+                            $"IAsyncEnumerable<{ItemTypeName(source)}>" :
+                            $"IEnumerable<{ItemTypeName(source)}>";
                     }
                 }
             }
 
-            foreach (var item in source.QueryBases())
+            foreach (var batchPartBase in source.BatchPartBases())
             {
+                var queryBase = batchPartBase.QueryBase;
                 var asyncDeclar = methodType == MethodType.Async ? "async " : "";
                 builder.Append($@"
-        private static {asyncDeclar}{ExecuteReturnType()} {BatchItemMethodName(source, item, methodType)}({ProviderInfo.ReaderType()} reader");
+        private static {asyncDeclar}{ExecuteReturnType()} {BatchItemMethodName(source, batchPartBase, methodType)}({ProviderInfo.ReaderType()} reader");
+
+                if (source.IsCollectionDelegateMap)
+                {
+                    builder.Append($@",
+            {queryBase.MapDelegateParametrType()} {queryBase.MapDelegateParametrName}");
+                }
 
                 if (methodType == MethodType.Async)
                 {
-                    builder.Append($@", {(source.ReturnType == ReturnType.Enumerable ? "[EnumeratorCancellation] " : "")}CancellationToken cancellationToken = default");
+                    var cancelAttribute =
+                        source.ReturnType == ReturnType.Enumerable || source.IsCollectionDelegateMap ?
+                        string.Empty :
+                        "[EnumeratorCancellation] ";
+
+                    builder.Append($@", {cancelAttribute}CancellationToken cancellationToken = default");
                 }
 
                 builder.Append($@")
@@ -183,32 +201,60 @@ namespace Gedaq.Base.Batch
                 if (source.IsCollectionDelegateMap)
                 {
                     builder.Append($@"
-                // By the power of BANANA;");
+            while({await}reader.Read{async})
+            {{");
+                    foreach (var mapInfo in queryBase.MapTypeInfos)
+                    {
+                        builder.Append($@"
+                {mapInfo.ItemTypeName} {mapInfo.MapItemName};
+                {{");
+                        MappingHelper.MapItem(mapInfo.MapType, queryBase, builder, ProviderInfo, mapInfo.MapItemName);
+                        builder.Append($@"
+                }}");
+                    }
+
+                    builder.Append($@"
+                    {queryBase.MapDelegateParametrName}(");
+                    for (int i = 0; i < queryBase.MapTypeInfos.Length; i++)
+                    {
+                        var mapInfo = queryBase.MapTypeInfos[i];
+                        if (i != 0)
+                        {
+                            builder.Append(",");
+                        }
+
+                        builder.Append($@"{mapInfo.MapItemName}");
+                    }
+                    builder.Append(");");
+
+                    builder.Append($@"
+            }}");
                 }
                 else
                 {
-                    var mapType = item.QueryBase.MapTypeInfos[0].MapType;
+                    var mapInfo = queryBase.MapTypeInfos[0];
+                    var mapType = mapInfo.MapType;
                     if (source.ReturnType == ReturnType.Enumerable)
                     {
                         builder.Append($@"
             while({await}reader.Read{async})
             {{
-                {ItemTypeName(source)} item;");
-                        MappingHelper.MapItem(mapType, item.QueryBase, builder, ProviderInfo, "item", CastTypeExpr(source));
+                {ItemTypeName(source)} {mapInfo.MapItemName};");
+                        MappingHelper.MapItem(mapType, queryBase, builder, ProviderInfo, mapInfo.MapItemName, CastTypeExpr(source));
                         builder.Append($@"
-                yield return item;
+                yield return {mapInfo.MapItemName};
             }}");
                     }
                     else
                     {
                         builder.Append($@"
-            var batchItems = new System.Collections.Generic.List<{ItemTypeName(source)}>({source.QueryBases().Count()});
+            var batchItems = new System.Collections.Generic.List<{ItemTypeName(source)}>({source.BatchPartBases().Count()});
             while({await}reader.Read{async})
             {{
-                {ItemTypeName(source)} item;");
-                        MappingHelper.MapItem(mapType, item.QueryBase, builder, ProviderInfo, "item", CastTypeExpr(source));
+                {ItemTypeName(source)} {mapInfo.MapItemName};");
+                        MappingHelper.MapItem(mapType, queryBase, builder, ProviderInfo, mapInfo.MapItemName, CastTypeExpr(source));
                         builder.Append($@"
-                batchItems.Add(item);
+                batchItems.Add({mapInfo.MapItemName});
             }}
             
             return batchItems;");
@@ -299,7 +345,6 @@ namespace Gedaq.Base.Batch
                 ProviderInfo.BatchType();
 
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
-            var staticModifier = forInterface ? string.Empty : source.MethodStaticModifier;
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
@@ -336,7 +381,7 @@ namespace Gedaq.Base.Batch
         {{
             var batch = {sourceParametrName}.CreateBatch();");
 
-            foreach (var item in source.QueryBases())
+            foreach (var item in source.BatchPartBases())
             {
                 CreateBatchCommand(item, builder);
                 builder.Append($@"
@@ -470,7 +515,7 @@ namespace Gedaq.Base.Batch
                 return;
             }
 
-            foreach (var item in source.QueryBases())
+            foreach (var item in source.BatchPartBases())
             {
                 if(!item.QueryBase.HaveFromatParametrs())
                 {
@@ -489,7 +534,7 @@ namespace Gedaq.Base.Batch
             QueryBatchCommand source,
             StringBuilder builder)
         {
-            foreach (var item in source.QueryBases())
+            foreach (var item in source.BatchPartBases())
             {
                 if (item.QueryBase.HaveDynamicParametrs())
                 {
@@ -503,7 +548,7 @@ namespace Gedaq.Base.Batch
             QueryBatchCommand source,
             StringBuilder builder)
         {
-            foreach (var item in source.QueryBases())
+            foreach (var item in source.BatchPartBases())
             {
                 if (item.QueryBase.IsDynamicQuery())
                 {
@@ -550,7 +595,7 @@ namespace Gedaq.Base.Batch
 
             if (source.HaveParametrs)
             {
-                foreach (var batchCommand in source.QueryBases())
+                foreach (var batchCommand in source.BatchPartBases())
                 {
                     if (!batchCommand.QueryBase.HaveParametrs())
                     {
@@ -620,7 +665,7 @@ namespace Gedaq.Base.Batch
             }
 
             var commandBatchDefine = false;
-            foreach (var batchCommand in source.QueryBases())
+            foreach (var batchCommand in source.BatchPartBases())
             {
                 if (!batchCommand.QueryBase.HaveParametrs())
                 {
@@ -733,14 +778,20 @@ namespace Gedaq.Base.Batch
         {
             string ExecuteReturnType()
             {
-                var type = ItemTypeName(source);
+                if (source.IsCollectionDelegateMap)
+                {
+                    return methodType == MethodType.Async ?
+                        "Task" :
+                        "void";
+                }
+
                 switch (source.ReturnType)
                 {
                     case ReturnType.Enumerable:
                     {
                         return methodType == MethodType.Async ?
-                            $"IAsyncEnumerable<IAsyncEnumerable<{type}>>" :
-                            $"IEnumerable<IEnumerable<{type}>>";
+                            $"IAsyncEnumerable<IAsyncEnumerable<{ItemTypeName(source)}>>" :
+                            $"IEnumerable<IEnumerable<{ItemTypeName(source)}>>";
                     }
 
                     case ReturnType.List:
@@ -757,8 +808,8 @@ namespace Gedaq.Base.Batch
                     default:
                     {
                         return methodType == MethodType.Async ?
-                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{type}>" :
-                            $"{type}";
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{ItemTypeName(source)}>" :
+                            $"{ItemTypeName(source)}";
                     }
                 }
             }
@@ -774,9 +825,21 @@ namespace Gedaq.Base.Batch
         {accessModifier} {staticModifier} {asyncKeyword}{ExecuteReturnType()} {ExecuteBatchMethodName(source, methodType)}(
             {source.ContainTypeName.GCThisWordOrEmpty()}{ProviderInfo.BatchType()} batch");
 
+            if (source.IsCollectionDelegateMap)
+            {
+                foreach (var batchParBase in source.BatchPartBases())
+                {
+                    builder.Append($@",
+            {batchParBase.MapDelegateParametrTypeInBatch()} {batchParBase.MapDelegateParametrNameInBatch()}");
+                }
+            }
+
             if (methodType == MethodType.Async)
             {
-                var enumeratorCancellation = forInterface || source.ReturnType != ReturnType.Enumerable ? string.Empty : "[EnumeratorCancellation]";
+                var enumeratorCancellation =
+                    forInterface || source.ReturnType != ReturnType.Enumerable || source.IsCollectionDelegateMap ?
+                    string.Empty :
+                    "[EnumeratorCancellation]";
                 builder.Append($@",
             {enumeratorCancellation} CancellationToken cancellationToken = default");
             }
@@ -786,7 +849,7 @@ namespace Gedaq.Base.Batch
 
         public string ItemTypeName(QueryBatchCommand source)
         {
-            return source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeInfos[0].MapType.GetFullTypeName(true) : "object";
+            return source.AllSameTypes ? source.BatchPartBases().First().QueryBase.MapTypeInfos[0].ItemTypeName : "object";
         }
 
         private string CastTypeExpr(QueryBatchCommand source)
@@ -800,7 +863,6 @@ namespace Gedaq.Base.Batch
             StringBuilder builder)
         {
             var await = methodType == MethodType.Async ? "await " : "";
-            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
 
             builder.Append($@"
@@ -868,18 +930,38 @@ namespace Gedaq.Base.Batch
             builder.Append($@"
                 reader = {await}batch.ExecuteReader{async};");
 
-            switch (source.ReturnType) 
+            if (source.IsCollectionDelegateMap)
             {
-                case ReturnType.Enumerable:
+                foreach (var batchPart in source.BatchPartBases())
                 {
-                    foreach (var item in source.QueryBases())
+                    builder.Append($@"
+                {await}{BatchItemMethodName(source, batchPart, methodType)}(reader");
+
+                    builder.Append($@", {batchPart.MapDelegateParametrNameInBatch()}");
+
+                    if (methodType == MethodType.Async)
                     {
-                        builder.Append($@"
-                yield return {BatchItemMethodName(source, item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
-                {await}reader.NextResult{async};");
+                        builder.Append($@", cancellationToken");
                     }
 
-                    builder.Append($@"
+                    builder.Append($@");
+                    {await}reader.NextResult{async};");
+                }
+            }
+            else
+            {
+                switch (source.ReturnType)
+                {
+                    case ReturnType.Enumerable:
+                    {
+                        foreach (var item in source.BatchPartBases())
+                        {
+                            builder.Append($@"
+                yield return {BatchItemMethodName(source, item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")};
+                {await}reader.NextResult{async};");
+                        }
+
+                        builder.Append($@"
                 while ({await}reader.NextResult{async})
                 {{
                 }}
@@ -887,23 +969,23 @@ namespace Gedaq.Base.Batch
                 {await}reader.Dispose{disposeAsync};
                 reader = null;");
 
-                    break;
-                }
-
-                case ReturnType.List:
-                {
-                    var type = ItemTypeName(source);
-                    builder.Append($@"
-                var batchResult = new System.Collections.Generic.List<System.Collections.Generic.List<{type}>>({source.QueryBases().Count()});");
-
-                    foreach (var item in source.QueryBases())
-                    {
-                        builder.Append($@"
-                batchResult.Add({await}{BatchItemMethodName(source, item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")});
-                {await}reader.NextResult{async};");
+                        break;
                     }
 
-                    builder.Append($@"
+                    case ReturnType.List:
+                    {
+                        var type = ItemTypeName(source);
+                        builder.Append($@"
+                var batchResult = new System.Collections.Generic.List<System.Collections.Generic.List<{type}>>({source.BatchPartBases().Count()});");
+
+                        foreach (var item in source.BatchPartBases())
+                        {
+                            builder.Append($@"
+                batchResult.Add({await}{BatchItemMethodName(source, item, methodType)}{(methodType == MethodType.Async ? "(reader, cancellationToken)" : "(reader)")});
+                {await}reader.NextResult{async};");
+                        }
+
+                        builder.Append($@"
                 while ({await}reader.NextResult{async})
                 {{
                 }}
@@ -913,18 +995,18 @@ namespace Gedaq.Base.Batch
 
                 return batchResult;");
 
-                    break;
-                }
+                        break;
+                    }
 
-                case ReturnType.Single:
-                {
-                    builder.Append($@"
+                    case ReturnType.Single:
+                    {
+                        builder.Append($@"
                 var notContainAny = true;
                 var haveMoreThanOne = false;
                 {ItemTypeName(source)} item = default;");
-                    foreach (var item in source.QueryBases())
-                    {
-                        builder.Append($@"
+                        foreach (var item in source.BatchPartBases())
+                        {
+                            builder.Append($@"
                 if(!haveMoreThanOne)
                 {{
                     var enumerator = {GetEnumerator(item)};
@@ -945,9 +1027,9 @@ namespace Gedaq.Base.Batch
                     {await}reader.NextResult{async};
                 }}");
 
-                    }
+                        }
 
-                    builder.Append($@"
+                        builder.Append($@"
                 while ({await}reader.NextResult{async})
                 {{
                 }}
@@ -967,18 +1049,18 @@ namespace Gedaq.Base.Batch
 
                 return item;");
 
-                    break;
-                }
+                        break;
+                    }
 
-                case ReturnType.SingleOrDefault:
-                {
-                    builder.Append($@"
+                    case ReturnType.SingleOrDefault:
+                    {
+                        builder.Append($@"
                 var notContainAny = true;
                 var haveMoreThanOne = false;
                 {ItemTypeName(source)} item = default;");
-                    foreach (var item in source.QueryBases())
-                    {
-                        builder.Append($@"
+                        foreach (var item in source.BatchPartBases())
+                        {
+                            builder.Append($@"
                 if(!haveMoreThanOne)
                 {{
                     var enumerator = {GetEnumerator(item)};
@@ -999,9 +1081,9 @@ namespace Gedaq.Base.Batch
                     {await}reader.NextResult{async};
                 }}");
 
-                    }
+                        }
 
-                    builder.Append($@"
+                        builder.Append($@"
                 while ({await}reader.NextResult{async})
                 {{
                 }}
@@ -1016,17 +1098,17 @@ namespace Gedaq.Base.Batch
 
                 return item;");
 
-                    break;
-                }
+                        break;
+                    }
 
-                case ReturnType.First:
-                {
-                    builder.Append($@"
-                var notContainAny = true;
-                {ItemTypeName(source)} item = default;");
-                    foreach (var item in source.QueryBases())
+                    case ReturnType.First:
                     {
                         builder.Append($@"
+                var notContainAny = true;
+                {ItemTypeName(source)} item = default;");
+                        foreach (var item in source.BatchPartBases())
+                        {
+                            builder.Append($@"
                 if(notContainAny)
                 {{
                     var enumerator = {GetEnumerator(item)};
@@ -1040,9 +1122,9 @@ namespace Gedaq.Base.Batch
                     {await}reader.NextResult{async};
                 }}");
 
-                    }
+                        }
 
-                    builder.Append($@"
+                        builder.Append($@"
                 while ({await}reader.NextResult{async})
                 {{
                 }}
@@ -1057,17 +1139,17 @@ namespace Gedaq.Base.Batch
 
                 return item;");
 
-                    break;
-                }
+                        break;
+                    }
 
-                case ReturnType.FirstOrDefault:
-                {
-                    builder.Append($@"
-                var notContainAny = true;
-                {ItemTypeName(source)} item = default;");
-                    foreach (var item in source.QueryBases())
+                    case ReturnType.FirstOrDefault:
                     {
                         builder.Append($@"
+                var notContainAny = true;
+                {ItemTypeName(source)} item = default;");
+                        foreach (var item in source.BatchPartBases())
+                        {
+                            builder.Append($@"
                 if(notContainAny)
                 {{
                     var enumerator = {GetEnumerator(item)};
@@ -1081,9 +1163,9 @@ namespace Gedaq.Base.Batch
                     {await}reader.NextResult{async};
                 }}");
 
-                    }
+                        }
 
-                    builder.Append($@"
+                        builder.Append($@"
                 while ({await}reader.NextResult{async})
                 {{
                 }}
@@ -1093,7 +1175,8 @@ namespace Gedaq.Base.Batch
 
                 return item;");
 
-                    break;
+                        break;
+                    }
                 }
             }  
         }
@@ -1139,7 +1222,6 @@ namespace Gedaq.Base.Batch
             StringBuilder builder,
             bool forInterface = false)
         {
-            var type = source.AllSameTypes ? source.QueryBases().First().QueryBase.MapTypeInfos[0].MapType.GetFullTypeName(true) : "object";
             GetScalarType(source, ProviderInfo, out _, out _, out var typeName);
             var returnType = methodType == MethodType.Async ? $"{source.MethodInfo.AsyncResultType.ToResultType()}<{typeName}>" : typeName;
             var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : source.AccessModifier.ToLowerInvariant();
@@ -1198,7 +1280,7 @@ namespace Gedaq.Base.Batch
 
             if(source.HaveParametrs)
             {
-                foreach (var item in source.QueryBases())
+                foreach (var item in source.BatchPartBases())
                 {
                     if (!item.QueryBase.HaveParametrs())
                     {
@@ -1220,7 +1302,7 @@ namespace Gedaq.Base.Batch
             StringBuilder builder,
             ProviderInfo providerInfo)
         {
-            foreach (var item in batch.QueryBases())
+            foreach (var item in batch.BatchPartBases())
             {
                 if (!item.QueryBase.HaveParametrs())
                 {
@@ -1262,7 +1344,7 @@ namespace Gedaq.Base.Batch
             var haveSuccessIteration = false;
             if (batch.HaveParametrs)
             {
-                foreach (var item in batch.QueryBases())
+                foreach (var item in batch.BatchPartBases())
                 {
                     if (!item.QueryBase.HaveParametrs())
                     {
@@ -1349,7 +1431,7 @@ namespace Gedaq.Base.Batch
                 return;
             }
 
-            foreach (var item in source.QueryBases())
+            foreach (var item in source.BatchPartBases())
             {
                 if (!item.QueryBase.HaveFromatParametrs())
                 {
@@ -1374,7 +1456,7 @@ namespace Gedaq.Base.Batch
                 return;
             }
 
-            foreach (var item in source.QueryBases())
+            foreach (var item in source.BatchPartBases())
             {
                 if (!item.QueryBase.HaveDynamicParametrs())
                 {
@@ -1390,7 +1472,7 @@ namespace Gedaq.Base.Batch
             QueryBatchCommand source,
             StringBuilder builder)
         {
-            foreach (var item in source.QueryBases())
+            foreach (var item in source.BatchPartBases())
             {
                 if (!item.QueryBase.IsDynamicQuery())
                 {
@@ -1411,7 +1493,7 @@ namespace Gedaq.Base.Batch
                 return;
             }
 
-            foreach (var item in source.QueryBases())
+            foreach (var item in source.BatchPartBases())
             {
                 AddParametrs(item, builder);
                 AddFormatParametrs(item, builder);
@@ -1490,7 +1572,7 @@ namespace Gedaq.Base.Batch
             out bool isRowAffected,
             out string typeName)
         {
-            var first = source.QueryBases().First().QueryBase;
+            var first = source.BatchPartBases().First().QueryBase;
             if (first.IsRowsAffected)
             {
                 if (source.QueryType != Enums.QueryType.NonQuery)
