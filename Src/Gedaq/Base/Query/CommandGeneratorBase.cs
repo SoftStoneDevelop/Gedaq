@@ -193,10 +193,10 @@ namespace Gedaq.Base.Query
 {source.Query}
 ""
 ");
-                foreach (var item in source.FormatParametrs)
+                foreach (var stringFormat in source.FormatParametrs)
                 {
                     builder.Append($@",
-{item.Name}");
+{stringFormat.Name}");
                 }
                 builder.Append($@"
 )
@@ -341,24 +341,26 @@ namespace Gedaq.Base.Query
             {
                 if (source.IsCollectionDelegateMap)
                 {
-                    return "void";
+                    return methodType == MethodType.Async ?
+                        "Task" :
+                        "void";
                 }
 
-                var mapType = source.MapTypeInfos[0].MapType;
+                var mapInfo = source.MapTypeInfos[0];
                 switch (source.ReturnType)
                 {
                     case ReturnType.Enumerable:
                     {
                         return methodType == MethodType.Async ?
-                            $"IAsyncEnumerable<{ItemTypeName(mapType)}>" : 
-                            $"IEnumerable<{ItemTypeName(mapType)}>";
+                            $"IAsyncEnumerable<{mapInfo.ItemTypeName}>" : 
+                            $"IEnumerable<{mapInfo.ItemTypeName}>";
                     }
 
                     case ReturnType.List:
                     {
                         return methodType == MethodType.Async ?
-                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Collections.Generic.List<{ItemTypeName(mapType)}>>" :
-                            $"System.Collections.Generic.List<{ItemTypeName(mapType)}>";
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<System.Collections.Generic.List<{mapInfo.ItemTypeName}>>" :
+                            $"System.Collections.Generic.List<{mapInfo.ItemTypeName}>";
                     }
 
                     case ReturnType.Single:
@@ -368,8 +370,8 @@ namespace Gedaq.Base.Query
                     default:
                     {
                         return methodType == MethodType.Async ?
-                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{ItemTypeName(mapType)}>" :
-                            $"{ItemTypeName(mapType)}";
+                            $"{source.MethodInfo.AsyncResultType.ToResultType()}<{mapInfo.ItemTypeName}>" :
+                            $"{mapInfo.ItemTypeName}";
                     }
                 }
             }
@@ -389,18 +391,21 @@ namespace Gedaq.Base.Query
 
             if (methodType == MethodType.Async)
             {
-                var enumeratorCancellation = forInterface || source.ReturnType != ReturnType.Enumerable ? string.Empty : "[EnumeratorCancellation]";
+                var enumeratorCancellation =
+                    forInterface || source.ReturnType != ReturnType.Enumerable || source.IsCollectionDelegateMap ?
+                    string.Empty
+                    : "[EnumeratorCancellation] ";
                 builder.Append($@",
-            {enumeratorCancellation} CancellationToken cancellationToken = default
-");
+            {enumeratorCancellation}CancellationToken cancellationToken = default");
+            }
+
+            if (source.IsCollectionDelegateMap)
+            {
+                builder.Append($@",
+            {source.MapDelegateParametrType()} {source.MapDelegateParametrName}");
             }
 
             builder.Append($@")");
-        }
-
-        public string ItemTypeName(ITypeSymbol typeSymbol)
-        {
-            return typeSymbol.GetFullTypeName(true);
         }
 
         protected void ExecuteCommandBody(
@@ -409,7 +414,6 @@ namespace Gedaq.Base.Query
             StringBuilder builder)
         {
             var await = methodType == MethodType.Async ? "await " : "";
-            var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
             var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
 
             builder.Append($@"
@@ -457,11 +461,46 @@ namespace Gedaq.Base.Query
             if (source.IsCollectionDelegateMap)
             {
                 builder.Append($@"
-                // TODO By the power of BANANA;");
+                while ({await}reader.Read{async})
+                {{");
+
+                foreach (var mapInfo in source.MapTypeInfos)
+                {
+                    builder.Append($@"
+                    {mapInfo.ItemTypeName} {mapInfo.MapItemName};
+                    {{");
+                    MappingHelper.MapItem(mapInfo.MapType, source, builder, ProviderInfo, mapInfo.MapItemName);
+                    builder.Append($@"
+                    }}");
+                }
+
+                builder.Append($@"
+                    {source.MapDelegateParametrName}(");
+                for (int i = 0; i < source.MapTypeInfos.Length; i++)
+                {
+                    var mapInfo = source.MapTypeInfos[i];
+                    if (i != 0)
+                    {
+                        builder.Append(",");
+                    }
+
+                    builder.Append($@"{mapInfo.MapItemName}");
+                }
+                builder.Append(")");
+
+                builder.Append($@"
+                }}
+
+                while ({await}reader.NextResult{async})
+                {{
+                }}
+                {await}reader.Dispose{disposeAsync};
+                reader = null;");
             }
             else
             {
-                var mapType = source.MapTypeInfos[0].MapType;
+                var mapInfo = source.MapTypeInfos[0];
+                var mapType = mapInfo.MapType;
                 switch (source.ReturnType)
                 {
                     case ReturnType.Enumerable:
@@ -469,12 +508,12 @@ namespace Gedaq.Base.Query
                             builder.Append($@"
                 while ({await}reader.Read{async})
                 {{
-                    {ItemTypeName(mapType)} item;");
+                    {mapInfo.ItemTypeName} {mapInfo.MapItemName};");
 
-                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, "item");
+                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, mapInfo.MapItemName);
 
                             builder.Append($@"
-                    yield return item;
+                    yield return {mapInfo.MapItemName};
                 }}
 
                 while ({await}reader.NextResult{async})
@@ -489,15 +528,15 @@ namespace Gedaq.Base.Query
                     case ReturnType.List:
                     {
                             builder.Append($@"
-                var resultList = new System.Collections.Generic.List<{ItemTypeName(mapType)}>();
+                var resultList = new System.Collections.Generic.List<{mapInfo.ItemTypeName}>();
                 while ({await}reader.Read{async})
                 {{
-                    {ItemTypeName(mapType)} item;");
+                    {mapInfo.ItemTypeName} {mapInfo.MapItemName};");
 
-                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, "item");
+                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, mapInfo.MapItemName);
 
                             builder.Append($@"
-                    resultList.Add(item);
+                    resultList.Add({mapInfo.MapItemName});
                 }}
 
                 while ({await}reader.NextResult{async})
@@ -514,12 +553,12 @@ namespace Gedaq.Base.Query
                     case ReturnType.Single:
                     {
                             builder.Append($@"
-                {ItemTypeName(mapType)} item = default;
+                {mapInfo.ItemTypeName} mapInfo.MapItemName = default;
                 var notContainAny = !{await}reader.Read{async};
                 if(!notContainAny)
                 {{");
 
-                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, "item");
+                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, mapInfo.MapItemName);
 
                             builder.Append($@"
                 }}
@@ -541,7 +580,7 @@ namespace Gedaq.Base.Query
                     throw new InvalidOperationException(""The sequence have more than one element"");
                 }}
 
-                return item;");
+                return {mapInfo.MapItemName};");
 
                             break;
                     }
@@ -549,11 +588,11 @@ namespace Gedaq.Base.Query
                     case ReturnType.SingleOrDefault:
                     {
                             builder.Append($@"
-                {ItemTypeName(mapType)} item = default;
+                {mapInfo.ItemTypeName} {mapInfo.MapItemName} = default;
                 if({await}reader.Read{async})
                 {{");
 
-                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, "item");
+                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, mapInfo.MapItemName);
 
                             builder.Append($@"
                 }}
@@ -570,19 +609,19 @@ namespace Gedaq.Base.Query
                     throw new InvalidOperationException(""The sequence have more than one element"");
                 }}
 
-                return item;");
+                return {mapInfo.MapItemName};");
                             break;
                     }
 
                     case ReturnType.First:
                     {
                             builder.Append($@"
-                {ItemTypeName(mapType)} item = default;
+                {mapInfo.ItemTypeName} {mapInfo.MapItemName} = default;
                 var notContainAny = !{await}reader.Read{async};
                 if(!notContainAny)
                 {{");
 
-                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, "item");
+                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, mapInfo.MapItemName);
 
                             builder.Append($@"
                 }}
@@ -598,7 +637,7 @@ namespace Gedaq.Base.Query
                     throw new InvalidOperationException(""The sequence does not contain any elements"");
                 }}
 
-                return item;");
+                return {mapInfo.MapItemName};");
 
                             break;
                     }
@@ -606,11 +645,11 @@ namespace Gedaq.Base.Query
                     case ReturnType.FirstOrDefault:
                     {
                             builder.Append($@"
-                {ItemTypeName(mapType)} item = default;
+                {mapInfo.ItemTypeName} {mapInfo.MapItemName} = default;
                 if({await}reader.Read{async})
                 {{");
 
-                            MappingHelper.MapItem(mapType,source, builder, ProviderInfo, "item");
+                            MappingHelper.MapItem(mapType,source, builder, ProviderInfo, mapInfo.MapItemName);
 
                             builder.Append($@"
                 }}
@@ -621,7 +660,7 @@ namespace Gedaq.Base.Query
                 {await}reader.Dispose{disposeAsync};
                 reader = null;
 
-                return item;");
+                return {mapInfo.MapItemName};");
                             break;
                     }
                 }

@@ -11,25 +11,6 @@ namespace Gedaq.Helpers
 {
     internal static class MappingHelper
     {
-        public static void MapItems(
-            QueryBaseCommand source,
-            StringBuilder builder,
-            ProviderInfo provider,
-            string mapVariableName,
-            string castTypeExpr = "")
-        {
-            foreach (var mapType in source.MapTypeInfos)
-            {
-                MapItem(
-                    mapType.MapType,
-                    source,
-                    builder,
-                    provider,
-                    mapVariableName,
-                    castTypeExpr);
-            }
-        }
-
         public static void MapItem(
             ITypeSymbol mapType,
             QueryBaseCommand source,

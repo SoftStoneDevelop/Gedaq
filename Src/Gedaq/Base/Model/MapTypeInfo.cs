@@ -7,9 +7,20 @@ namespace Gedaq.Base.Model
 {
     internal class MapTypeInfo
     {
+        internal MapTypeInfo(int orderMap)
+        {
+            OrderMap = orderMap;
+        }
+
         public ITypeSymbol MapType { get; set; }
 
         public Aliases Aliases { get; set; }
+
+        public int OrderMap { get; private set; }
+
+        public string MapItemName => $"mapItem{OrderMap}";
+
+        public string ItemTypeName => MapType.GetFullTypeName(true);
 
         public void ParseAliasesFromType(SourceProductionContext context, ProviderInfo providerInfo)
         {

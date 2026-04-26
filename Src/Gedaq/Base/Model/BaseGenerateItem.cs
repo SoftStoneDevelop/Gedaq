@@ -5,12 +5,33 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Linq;
+using System.Text;
 
 namespace Gedaq.Base.Model
 {
     internal class BaseGenerateItem : IMethodInfo
     {
         public MapTypeInfo[] MapTypeInfos { get; protected set; }
+
+        public string MapDelegateParametrName => "mapDelegate";
+
+        public string MapDelegateParametrType()
+        {
+            var builder = new StringBuilder("Action<");
+            for (int i = 0; i < MapTypeInfos.Length; i++)
+            {
+                var mapTypeInfo = MapTypeInfos[i];
+                if (i != 0)
+                {
+                    builder.Append(",");
+                }
+
+                builder.Append(mapTypeInfo.ItemTypeName);
+            }
+            builder.Append(">");
+
+            return builder.ToString();
+        }
 
         public bool HaveMapTypes => MapTypeInfos?.Length > 0;
 
@@ -57,7 +78,7 @@ namespace Gedaq.Base.Model
             for (int i = 0; i < argument.Values.Length; i++)
             {
                 var value = (ITypeSymbol)argument.Values[i].Value;
-                MapTypeInfos[i] = new MapTypeInfo { MapType = value };
+                MapTypeInfos[i] = new MapTypeInfo(i) { MapType = value };
             }
 
             return true;
