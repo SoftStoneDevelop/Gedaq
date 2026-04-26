@@ -26,7 +26,9 @@
 	<ItemGroup>
 		<ProjectReference Include="..\Gedaq\Gedaq.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="True" />
 	</ItemGroup>
+	<!--
 	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
 		<Exec Command="powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -File &quot;$(ProjectDir)prebuild.ps1&quot; &quot;$(SolutionDir)Src\TestsGenerator\bin\$(ConfigurationName)\net10.0&quot; &quot;MsSQL&quot; &quot;$(SolutionDir)Src\MSSQLTests&quot;" />
 	</Target>
+	-->
 </Project>
