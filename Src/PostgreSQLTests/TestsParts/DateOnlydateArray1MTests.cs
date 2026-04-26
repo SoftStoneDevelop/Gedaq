@@ -30,129 +30,167 @@ namespace Tests
         {
             new DateOnlydateArray1M
 {
-    Id = 2,
+    Id = 3,
+    Value = 
+new System.DateOnly[3]
+{
+new DateOnly(year: 1950, month: 10, day: 1),
+new DateOnly(year: 1982, month: 10, day: 19),
+new DateOnly(year: 1939, month: 10, day: 17),
+},
+    ModelInner = null,
+    NullableValue = 
+new System.DateOnly[3]
+{
+new DateOnly(year: 1949, month: 10, day: 19),
+new DateOnly(year: 1951, month: 10, day: 4),
+new DateOnly(year: 1991, month: 10, day: 15),
+},
+},
+            new DateOnlydateArray1M
+{
+    Id = 12,
     Value = 
 new System.DateOnly[4]
 {
-new DateOnly(year: 1987, month: 10, day: 11),
-new DateOnly(year: 1969, month: 10, day: 12),
-new DateOnly(year: 2016, month: 10, day: 2),
-new DateOnly(year: 1963, month: 10, day: 15),
+new DateOnly(year: 2000, month: 10, day: 11),
+new DateOnly(year: 1938, month: 10, day: 1),
+new DateOnly(year: 1954, month: 10, day: 18),
+new DateOnly(year: 1961, month: 10, day: 6),
+},
+    ModelInner = new DateOnlydateArray1MI
+{
+    Id = 6,
+    Value = 
+new System.DateOnly[4]
+{
+new DateOnly(year: 1924, month: 10, day: 5),
+new DateOnly(year: 2019, month: 10, day: 11),
+new DateOnly(year: 2003, month: 10, day: 15),
+new DateOnly(year: 1998, month: 10, day: 7),
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new DateOnlydateArray1M
+{
+    Id = 13,
+    Value = 
+new System.DateOnly[4]
+{
+new DateOnly(year: 1958, month: 10, day: 19),
+new DateOnly(year: 2009, month: 10, day: 13),
+new DateOnly(year: 2006, month: 10, day: 5),
+new DateOnly(year: 1986, month: 10, day: 2),
 },
     ModelInner = null,
     NullableValue = 
 new System.DateOnly[4]
 {
-new DateOnly(year: 1964, month: 10, day: 17),
-new DateOnly(year: 1940, month: 10, day: 9),
-new DateOnly(year: 2003, month: 10, day: 6),
-new DateOnly(year: 1940, month: 10, day: 12),
+new DateOnly(year: 1951, month: 10, day: 9),
+new DateOnly(year: 2014, month: 10, day: 18),
+new DateOnly(year: 1988, month: 10, day: 18),
+new DateOnly(year: 1924, month: 10, day: 7),
 },
 },
             new DateOnlydateArray1M
+{
+    Id = 17,
+    Value = 
+new System.DateOnly[4]
+{
+new DateOnly(year: 1970, month: 10, day: 11),
+new DateOnly(year: 1975, month: 10, day: 19),
+new DateOnly(year: 2003, month: 10, day: 5),
+new DateOnly(year: 1989, month: 10, day: 9),
+},
+    ModelInner = new DateOnlydateArray1MI
 {
     Id = 11,
     Value = 
-new System.DateOnly[3]
-{
-new DateOnly(year: 2001, month: 10, day: 18),
-new DateOnly(year: 1950, month: 10, day: 11),
-new DateOnly(year: 1939, month: 10, day: 14),
-},
-    ModelInner = new DateOnlydateArray1MI
-{
-    Id = 8,
-    Value = 
 new System.DateOnly[4]
 {
-new DateOnly(year: 1986, month: 10, day: 16),
-new DateOnly(year: 1988, month: 10, day: 6),
-new DateOnly(year: 1997, month: 10, day: 6),
-new DateOnly(year: 1935, month: 10, day: 12),
-},
-    NullableValue = null,
+new DateOnly(year: 2012, month: 10, day: 8),
+new DateOnly(year: 2012, month: 10, day: 6),
+new DateOnly(year: 1995, month: 10, day: 9),
+new DateOnly(year: 2019, month: 10, day: 2),
 },
     NullableValue = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1944, month: 10, day: 14),
-new DateOnly(year: 1962, month: 10, day: 16),
-new DateOnly(year: 2010, month: 10, day: 8),
-},
-},
-            new DateOnlydateArray1M
-{
-    Id = 18,
-    Value = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 2009, month: 10, day: 17),
-new DateOnly(year: 1996, month: 10, day: 11),
-new DateOnly(year: 1982, month: 10, day: 6),
-new DateOnly(year: 1950, month: 10, day: 4),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new DateOnlydateArray1M
-{
-    Id = 26,
-    Value = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1939, month: 10, day: 1),
-new DateOnly(year: 2013, month: 10, day: 18),
-new DateOnly(year: 1942, month: 10, day: 14),
-new DateOnly(year: 1951, month: 10, day: 7),
-},
-    ModelInner = new DateOnlydateArray1MI
-{
-    Id = 9,
-    Value = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1925, month: 10, day: 7),
-new DateOnly(year: 1966, month: 10, day: 13),
-new DateOnly(year: 1949, month: 10, day: 13),
-new DateOnly(year: 2012, month: 10, day: 16),
-},
-    NullableValue = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 2000, month: 10, day: 15),
-new DateOnly(year: 1932, month: 10, day: 5),
-new DateOnly(year: 1961, month: 10, day: 18),
-new DateOnly(year: 2000, month: 10, day: 10),
+new DateOnly(year: 1939, month: 10, day: 17),
+new DateOnly(year: 2002, month: 10, day: 10),
+new DateOnly(year: 1997, month: 10, day: 12),
 },
 },
     NullableValue = 
-new System.DateOnly[4]
+new System.DateOnly[3]
 {
-new DateOnly(year: 1959, month: 10, day: 15),
-new DateOnly(year: 1955, month: 10, day: 4),
-new DateOnly(year: 1966, month: 10, day: 7),
-new DateOnly(year: 1972, month: 10, day: 6),
+new DateOnly(year: 1918, month: 10, day: 6),
+new DateOnly(year: 1947, month: 10, day: 11),
+new DateOnly(year: 1943, month: 10, day: 3),
 },
 },
             new DateOnlydateArray1M
 {
-    Id = 29,
+    Id = 20,
     Value = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1994, month: 10, day: 1),
-new DateOnly(year: 1928, month: 10, day: 1),
-new DateOnly(year: 1928, month: 10, day: 12),
+new DateOnly(year: 1943, month: 10, day: 13),
+new DateOnly(year: 2013, month: 10, day: 5),
+new DateOnly(year: 1955, month: 10, day: 19),
 },
     ModelInner = null,
     NullableValue = 
 new System.DateOnly[4]
 {
-new DateOnly(year: 1945, month: 10, day: 14),
-new DateOnly(year: 1946, month: 10, day: 11),
-new DateOnly(year: 1951, month: 10, day: 14),
-new DateOnly(year: 1978, month: 10, day: 13),
+new DateOnly(year: 1982, month: 10, day: 2),
+new DateOnly(year: 1965, month: 10, day: 11),
+new DateOnly(year: 1923, month: 10, day: 2),
+new DateOnly(year: 1970, month: 10, day: 8),
 },
+},
+            new DateOnlydateArray1M
+{
+    Id = 24,
+    Value = 
+new System.DateOnly[4]
+{
+new DateOnly(year: 1969, month: 10, day: 9),
+new DateOnly(year: 1977, month: 10, day: 15),
+new DateOnly(year: 1964, month: 10, day: 13),
+new DateOnly(year: 1991, month: 10, day: 8),
+},
+    ModelInner = new DateOnlydateArray1MI
+{
+    Id = 16,
+    Value = 
+new System.DateOnly[4]
+{
+new DateOnly(year: 1987, month: 10, day: 13),
+new DateOnly(year: 1996, month: 10, day: 14),
+new DateOnly(year: 1976, month: 10, day: 9),
+new DateOnly(year: 2015, month: 10, day: 18),
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new DateOnlydateArray1M
+{
+    Id = 32,
+    Value = 
+new System.DateOnly[4]
+{
+new DateOnly(year: 1971, month: 10, day: 11),
+new DateOnly(year: 1945, month: 10, day: 19),
+new DateOnly(year: 1968, month: 10, day: 1),
+new DateOnly(year: 1956, month: 10, day: 1),
+},
+    ModelInner = null,
+    NullableValue = null,
 },
             new DateOnlydateArray1M
 {
@@ -160,67 +198,54 @@ new DateOnly(year: 1978, month: 10, day: 13),
     Value = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1992, month: 10, day: 1),
-new DateOnly(year: 1996, month: 10, day: 5),
-new DateOnly(year: 2001, month: 10, day: 7),
+new DateOnly(year: 2002, month: 10, day: 19),
+new DateOnly(year: 1961, month: 10, day: 17),
+new DateOnly(year: 1935, month: 10, day: 17),
 },
     ModelInner = new DateOnlydateArray1MI
 {
-    Id = 14,
+    Id = 17,
     Value = 
-new System.DateOnly[3]
+new System.DateOnly[4]
 {
-new DateOnly(year: 1980, month: 10, day: 3),
-new DateOnly(year: 1968, month: 10, day: 10),
-new DateOnly(year: 1962, month: 10, day: 14),
+new DateOnly(year: 1962, month: 10, day: 9),
+new DateOnly(year: 2000, month: 10, day: 10),
+new DateOnly(year: 1951, month: 10, day: 4),
+new DateOnly(year: 1998, month: 10, day: 16),
 },
     NullableValue = 
 new System.DateOnly[4]
 {
-new DateOnly(year: 1939, month: 10, day: 18),
-new DateOnly(year: 1991, month: 10, day: 17),
-new DateOnly(year: 1954, month: 10, day: 4),
-new DateOnly(year: 1980, month: 10, day: 14),
+new DateOnly(year: 2000, month: 10, day: 10),
+new DateOnly(year: 2019, month: 10, day: 5),
+new DateOnly(year: 1931, month: 10, day: 11),
+new DateOnly(year: 1963, month: 10, day: 13),
 },
 },
-    NullableValue = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1967, month: 10, day: 1),
-new DateOnly(year: 1956, month: 10, day: 11),
-new DateOnly(year: 2009, month: 10, day: 3),
-new DateOnly(year: 1955, month: 10, day: 19),
-},
+    NullableValue = null,
 },
             new DateOnlydateArray1M
 {
-    Id = 38,
+    Id = 46,
     Value = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1945, month: 10, day: 11),
-new DateOnly(year: 1942, month: 10, day: 3),
-new DateOnly(year: 2019, month: 10, day: 10),
+new DateOnly(year: 2016, month: 10, day: 17),
+new DateOnly(year: 1976, month: 10, day: 18),
+new DateOnly(year: 1993, month: 10, day: 2),
 },
     ModelInner = null,
-    NullableValue = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1971, month: 10, day: 7),
-new DateOnly(year: 1976, month: 10, day: 4),
-new DateOnly(year: 1937, month: 10, day: 11),
-new DateOnly(year: 1924, month: 10, day: 8),
-},
+    NullableValue = null,
 },
             new DateOnlydateArray1M
 {
-    Id = 42,
+    Id = 51,
     Value = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1950, month: 10, day: 3),
-new DateOnly(year: 1931, month: 10, day: 8),
-new DateOnly(year: 2002, month: 10, day: 19),
+new DateOnly(year: 1933, month: 10, day: 8),
+new DateOnly(year: 1949, month: 10, day: 3),
+new DateOnly(year: 1943, month: 10, day: 19),
 },
     ModelInner = new DateOnlydateArray1MI
 {
@@ -228,170 +253,91 @@ new DateOnly(year: 2002, month: 10, day: 19),
     Value = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1979, month: 10, day: 9),
-new DateOnly(year: 1982, month: 10, day: 2),
-new DateOnly(year: 1979, month: 10, day: 17),
+new DateOnly(year: 1971, month: 10, day: 11),
+new DateOnly(year: 1967, month: 10, day: 3),
+new DateOnly(year: 1964, month: 10, day: 16),
 },
     NullableValue = null,
 },
-    NullableValue = 
-new System.DateOnly[3]
-{
-new DateOnly(year: 1993, month: 10, day: 19),
-new DateOnly(year: 2016, month: 10, day: 18),
-new DateOnly(year: 1971, month: 10, day: 13),
-},
+    NullableValue = null,
 },
             new DateOnlydateArray1M
 {
-    Id = 44,
+    Id = 59,
     Value = 
-new System.DateOnly[3]
+new System.DateOnly[4]
 {
-new DateOnly(year: 1995, month: 10, day: 10),
-new DateOnly(year: 2019, month: 10, day: 7),
-new DateOnly(year: 2018, month: 10, day: 18),
+new DateOnly(year: 2019, month: 10, day: 4),
+new DateOnly(year: 2016, month: 10, day: 15),
+new DateOnly(year: 1918, month: 10, day: 5),
+new DateOnly(year: 1999, month: 10, day: 3),
 },
     ModelInner = null,
     NullableValue = null,
 },
             new DateOnlydateArray1M
 {
-    Id = 48,
+    Id = 62,
     Value = 
 new System.DateOnly[4]
 {
-new DateOnly(year: 1927, month: 10, day: 17),
-new DateOnly(year: 1961, month: 10, day: 9),
-new DateOnly(year: 1992, month: 10, day: 1),
-new DateOnly(year: 2001, month: 10, day: 10),
+new DateOnly(year: 1947, month: 10, day: 4),
+new DateOnly(year: 1992, month: 10, day: 17),
+new DateOnly(year: 1967, month: 10, day: 17),
+new DateOnly(year: 1919, month: 10, day: 11),
 },
     ModelInner = new DateOnlydateArray1MI
 {
-    Id = 26,
+    Id = 24,
     Value = 
-new System.DateOnly[4]
+new System.DateOnly[3]
 {
-new DateOnly(year: 1960, month: 10, day: 15),
-new DateOnly(year: 1995, month: 10, day: 17),
-new DateOnly(year: 1984, month: 10, day: 15),
-new DateOnly(year: 1971, month: 10, day: 18),
-},
-    NullableValue = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1985, month: 10, day: 5),
-new DateOnly(year: 2009, month: 10, day: 14),
-new DateOnly(year: 2004, month: 10, day: 14),
-new DateOnly(year: 2016, month: 10, day: 17),
-},
+new DateOnly(year: 2003, month: 10, day: 4),
+new DateOnly(year: 1959, month: 10, day: 8),
+new DateOnly(year: 2006, month: 10, day: 13),
 },
     NullableValue = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1922, month: 10, day: 2),
-new DateOnly(year: 1966, month: 10, day: 2),
-new DateOnly(year: 1993, month: 10, day: 10),
+new DateOnly(year: 1932, month: 10, day: 8),
+new DateOnly(year: 1965, month: 10, day: 8),
+new DateOnly(year: 1993, month: 10, day: 12),
 },
+},
+    NullableValue = null,
 },
             new DateOnlydateArray1M
 {
-    Id = 56,
+    Id = 65,
     Value = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1948, month: 10, day: 10),
-new DateOnly(year: 1934, month: 10, day: 12),
-new DateOnly(year: 1924, month: 10, day: 5),
+new DateOnly(year: 1919, month: 10, day: 11),
+new DateOnly(year: 1954, month: 10, day: 14),
+new DateOnly(year: 2007, month: 10, day: 7),
 },
     ModelInner = null,
-    NullableValue = 
-new System.DateOnly[3]
-{
-new DateOnly(year: 2007, month: 10, day: 19),
-new DateOnly(year: 2001, month: 10, day: 6),
-new DateOnly(year: 1981, month: 10, day: 5),
-},
-},
-            new DateOnlydateArray1M
-{
-    Id = 61,
-    Value = 
-new System.DateOnly[3]
-{
-new DateOnly(year: 1960, month: 10, day: 1),
-new DateOnly(year: 1930, month: 10, day: 2),
-new DateOnly(year: 2018, month: 10, day: 6),
-},
-    ModelInner = new DateOnlydateArray1MI
-{
-    Id = 34,
-    Value = 
-new System.DateOnly[3]
-{
-new DateOnly(year: 1934, month: 10, day: 8),
-new DateOnly(year: 1965, month: 10, day: 10),
-new DateOnly(year: 1943, month: 10, day: 4),
-},
-    NullableValue = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1925, month: 10, day: 3),
-new DateOnly(year: 1930, month: 10, day: 4),
-new DateOnly(year: 1985, month: 10, day: 4),
-new DateOnly(year: 1938, month: 10, day: 17),
-},
-},
-    NullableValue = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1942, month: 10, day: 15),
-new DateOnly(year: 1967, month: 10, day: 7),
-new DateOnly(year: 2019, month: 10, day: 5),
-new DateOnly(year: 1979, month: 10, day: 4),
-},
+    NullableValue = null,
 },
             new DateOnlydateArray1M
 {
     Id = 69,
     Value = 
-new System.DateOnly[4]
+new System.DateOnly[3]
 {
-new DateOnly(year: 2015, month: 10, day: 11),
-new DateOnly(year: 1971, month: 10, day: 2),
-new DateOnly(year: 1954, month: 10, day: 16),
-new DateOnly(year: 1983, month: 10, day: 6),
-},
-    ModelInner = null,
-    NullableValue = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1938, month: 10, day: 1),
-new DateOnly(year: 2019, month: 10, day: 1),
-new DateOnly(year: 1981, month: 10, day: 6),
-new DateOnly(year: 1925, month: 10, day: 16),
-},
-},
-            new DateOnlydateArray1M
-{
-    Id = 73,
-    Value = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1961, month: 10, day: 5),
-new DateOnly(year: 1940, month: 10, day: 14),
-new DateOnly(year: 1920, month: 10, day: 3),
-new DateOnly(year: 2007, month: 10, day: 13),
+new DateOnly(year: 1995, month: 10, day: 19),
+new DateOnly(year: 1945, month: 10, day: 18),
+new DateOnly(year: 2004, month: 10, day: 13),
 },
     ModelInner = new DateOnlydateArray1MI
 {
-    Id = 36,
+    Id = 32,
     Value = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1998, month: 10, day: 16),
-new DateOnly(year: 1982, month: 10, day: 1),
-new DateOnly(year: 1931, month: 10, day: 11),
+new DateOnly(year: 2011, month: 10, day: 17),
+new DateOnly(year: 1969, month: 10, day: 7),
+new DateOnly(year: 1918, month: 10, day: 1),
 },
     NullableValue = null,
 },
@@ -399,228 +345,320 @@ new DateOnly(year: 1931, month: 10, day: 11),
 },
             new DateOnlydateArray1M
 {
-    Id = 81,
+    Id = 75,
     Value = 
-new System.DateOnly[3]
+new System.DateOnly[4]
 {
-new DateOnly(year: 1980, month: 10, day: 9),
-new DateOnly(year: 1955, month: 10, day: 17),
-new DateOnly(year: 1967, month: 10, day: 4),
+new DateOnly(year: 1961, month: 10, day: 18),
+new DateOnly(year: 1942, month: 10, day: 12),
+new DateOnly(year: 1956, month: 10, day: 5),
+new DateOnly(year: 1979, month: 10, day: 10),
 },
     ModelInner = null,
     NullableValue = null,
 },
             new DateOnlydateArray1M
 {
-    Id = 85,
+    Id = 80,
     Value = 
-new System.DateOnly[4]
+new System.DateOnly[3]
 {
-new DateOnly(year: 1989, month: 10, day: 5),
-new DateOnly(year: 2007, month: 10, day: 5),
-new DateOnly(year: 1963, month: 10, day: 16),
-new DateOnly(year: 1974, month: 10, day: 19),
+new DateOnly(year: 1987, month: 10, day: 16),
+new DateOnly(year: 1997, month: 10, day: 12),
+new DateOnly(year: 2002, month: 10, day: 6),
 },
     ModelInner = new DateOnlydateArray1MI
 {
-    Id = 41,
+    Id = 37,
     Value = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1958, month: 10, day: 10),
-new DateOnly(year: 1937, month: 10, day: 18),
-new DateOnly(year: 1984, month: 10, day: 4),
+new DateOnly(year: 1946, month: 10, day: 2),
+new DateOnly(year: 1964, month: 10, day: 11),
+new DateOnly(year: 1991, month: 10, day: 17),
 },
-    NullableValue = 
-new System.DateOnly[3]
-{
-new DateOnly(year: 2012, month: 10, day: 11),
-new DateOnly(year: 2000, month: 10, day: 3),
-new DateOnly(year: 1995, month: 10, day: 14),
-},
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new DateOnlydateArray1M
 {
-    Id = 87,
+    Id = 86,
+    Value = 
+new System.DateOnly[4]
+{
+new DateOnly(year: 2004, month: 10, day: 12),
+new DateOnly(year: 1951, month: 10, day: 4),
+new DateOnly(year: 1935, month: 10, day: 16),
+new DateOnly(year: 1935, month: 10, day: 7),
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateOnlydateArray1M
+{
+    Id = 90,
     Value = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1970, month: 10, day: 12),
-new DateOnly(year: 1936, month: 10, day: 1),
-new DateOnly(year: 1958, month: 10, day: 7),
+new DateOnly(year: 1983, month: 10, day: 18),
+new DateOnly(year: 2016, month: 10, day: 13),
+new DateOnly(year: 1921, month: 10, day: 7),
 },
-    ModelInner = null,
+    ModelInner = new DateOnlydateArray1MI
+{
+    Id = 39,
+    Value = 
+new System.DateOnly[4]
+{
+new DateOnly(year: 1954, month: 10, day: 13),
+new DateOnly(year: 2000, month: 10, day: 19),
+new DateOnly(year: 1987, month: 10, day: 14),
+new DateOnly(year: 1945, month: 10, day: 9),
+},
     NullableValue = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1945, month: 10, day: 6),
-new DateOnly(year: 1999, month: 10, day: 17),
-new DateOnly(year: 1975, month: 10, day: 13),
+new DateOnly(year: 1929, month: 10, day: 16),
+new DateOnly(year: 1946, month: 10, day: 16),
+new DateOnly(year: 1963, month: 10, day: 3),
+},
+},
+    NullableValue = 
+new System.DateOnly[3]
+{
+new DateOnly(year: 2000, month: 10, day: 16),
+new DateOnly(year: 1939, month: 10, day: 1),
+new DateOnly(year: 2016, month: 10, day: 9),
 },
 },
             new DateOnlydateArray1M
 {
-    Id = 93,
+    Id = 96,
     Value = 
-new System.DateOnly[4]
+new System.DateOnly[3]
 {
-new DateOnly(year: 1946, month: 10, day: 5),
-new DateOnly(year: 1951, month: 10, day: 8),
-new DateOnly(year: 1981, month: 10, day: 8),
-new DateOnly(year: 1919, month: 10, day: 16),
+new DateOnly(year: 1940, month: 10, day: 5),
+new DateOnly(year: 1934, month: 10, day: 12),
+new DateOnly(year: 1960, month: 10, day: 8),
 },
-    ModelInner = new DateOnlydateArray1MI
-{
-    Id = 46,
-    Value = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 2009, month: 10, day: 1),
-new DateOnly(year: 1937, month: 10, day: 13),
-new DateOnly(year: 1931, month: 10, day: 12),
-new DateOnly(year: 1989, month: 10, day: 7),
-},
-    NullableValue = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1932, month: 10, day: 7),
-new DateOnly(year: 1986, month: 10, day: 16),
-new DateOnly(year: 1985, month: 10, day: 16),
-new DateOnly(year: 1977, month: 10, day: 3),
-},
-},
+    ModelInner = null,
     NullableValue = null,
 },
             new DateOnlydateArray1M
 {
     Id = 98,
     Value = 
-new System.DateOnly[4]
+new System.DateOnly[3]
 {
-new DateOnly(year: 1928, month: 10, day: 2),
-new DateOnly(year: 2018, month: 10, day: 15),
-new DateOnly(year: 1960, month: 10, day: 4),
-new DateOnly(year: 1998, month: 10, day: 4),
+new DateOnly(year: 2011, month: 10, day: 3),
+new DateOnly(year: 1969, month: 10, day: 5),
+new DateOnly(year: 2004, month: 10, day: 13),
 },
-    ModelInner = null,
+    ModelInner = new DateOnlydateArray1MI
+{
+    Id = 47,
+    Value = 
+new System.DateOnly[3]
+{
+new DateOnly(year: 1924, month: 10, day: 4),
+new DateOnly(year: 1921, month: 10, day: 10),
+new DateOnly(year: 1991, month: 10, day: 6),
+},
     NullableValue = 
 new System.DateOnly[4]
 {
-new DateOnly(year: 1974, month: 10, day: 8),
-new DateOnly(year: 1928, month: 10, day: 6),
-new DateOnly(year: 1929, month: 10, day: 12),
-new DateOnly(year: 1964, month: 10, day: 5),
+new DateOnly(year: 1955, month: 10, day: 18),
+new DateOnly(year: 1945, month: 10, day: 19),
+new DateOnly(year: 1925, month: 10, day: 17),
+new DateOnly(year: 1942, month: 10, day: 2),
+},
+},
+    NullableValue = null,
+},
+            new DateOnlydateArray1M
+{
+    Id = 99,
+    Value = 
+new System.DateOnly[4]
+{
+new DateOnly(year: 1961, month: 10, day: 4),
+new DateOnly(year: 1953, month: 10, day: 10),
+new DateOnly(year: 2012, month: 10, day: 4),
+new DateOnly(year: 1943, month: 10, day: 7),
+},
+    ModelInner = null,
+    NullableValue = 
+new System.DateOnly[3]
+{
+new DateOnly(year: 1941, month: 10, day: 18),
+new DateOnly(year: 1991, month: 10, day: 5),
+new DateOnly(year: 1937, month: 10, day: 6),
 },
 },
             new DateOnlydateArray1M
 {
-    Id = 105,
+    Id = 101,
     Value = 
-new System.DateOnly[4]
+new System.DateOnly[3]
 {
-new DateOnly(year: 1982, month: 10, day: 17),
-new DateOnly(year: 1978, month: 10, day: 13),
-new DateOnly(year: 1981, month: 10, day: 15),
-new DateOnly(year: 1989, month: 10, day: 8),
+new DateOnly(year: 1942, month: 10, day: 5),
+new DateOnly(year: 1964, month: 10, day: 19),
+new DateOnly(year: 1918, month: 10, day: 18),
 },
     ModelInner = new DateOnlydateArray1MI
 {
-    Id = 52,
+    Id = 55,
     Value = 
-new System.DateOnly[4]
+new System.DateOnly[3]
 {
-new DateOnly(year: 1979, month: 10, day: 7),
-new DateOnly(year: 1950, month: 10, day: 16),
-new DateOnly(year: 1949, month: 10, day: 17),
-new DateOnly(year: 1988, month: 10, day: 16),
-},
-    NullableValue = null,
+new DateOnly(year: 1925, month: 10, day: 1),
+new DateOnly(year: 1918, month: 10, day: 17),
+new DateOnly(year: 2008, month: 10, day: 13),
 },
     NullableValue = 
 new System.DateOnly[4]
 {
-new DateOnly(year: 1932, month: 10, day: 15),
-new DateOnly(year: 2014, month: 10, day: 8),
-new DateOnly(year: 2011, month: 10, day: 7),
-new DateOnly(year: 1980, month: 10, day: 8),
+new DateOnly(year: 1955, month: 10, day: 12),
+new DateOnly(year: 2019, month: 10, day: 11),
+new DateOnly(year: 1957, month: 10, day: 12),
+new DateOnly(year: 1985, month: 10, day: 18),
+},
+},
+    NullableValue = 
+new System.DateOnly[4]
+{
+new DateOnly(year: 1986, month: 10, day: 14),
+new DateOnly(year: 1999, month: 10, day: 6),
+new DateOnly(year: 1946, month: 10, day: 2),
+new DateOnly(year: 1961, month: 10, day: 10),
 },
 },
             new DateOnlydateArray1M
 {
     Id = 109,
     Value = 
-new System.DateOnly[3]
+new System.DateOnly[4]
 {
-new DateOnly(year: 2000, month: 10, day: 19),
-new DateOnly(year: 1928, month: 10, day: 13),
-new DateOnly(year: 1984, month: 10, day: 2),
+new DateOnly(year: 1972, month: 10, day: 1),
+new DateOnly(year: 1983, month: 10, day: 1),
+new DateOnly(year: 1998, month: 10, day: 3),
+new DateOnly(year: 1967, month: 10, day: 9),
 },
     ModelInner = null,
     NullableValue = null,
 },
             new DateOnlydateArray1M
 {
-    Id = 113,
+    Id = 114,
     Value = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1963, month: 10, day: 14),
-new DateOnly(year: 1955, month: 10, day: 17),
-new DateOnly(year: 1917, month: 10, day: 1),
+new DateOnly(year: 1929, month: 10, day: 19),
+new DateOnly(year: 1979, month: 10, day: 3),
+new DateOnly(year: 1999, month: 10, day: 3),
+},
+    ModelInner = new DateOnlydateArray1MI
+{
+    Id = 56,
+    Value = 
+new System.DateOnly[3]
+{
+new DateOnly(year: 1932, month: 10, day: 9),
+new DateOnly(year: 2008, month: 10, day: 18),
+new DateOnly(year: 1965, month: 10, day: 19),
+},
+    NullableValue = 
+new System.DateOnly[3]
+{
+new DateOnly(year: 1940, month: 10, day: 6),
+new DateOnly(year: 1992, month: 10, day: 7),
+new DateOnly(year: 1963, month: 10, day: 18),
+},
+},
+    NullableValue = 
+new System.DateOnly[4]
+{
+new DateOnly(year: 1945, month: 10, day: 5),
+new DateOnly(year: 1919, month: 10, day: 19),
+new DateOnly(year: 1943, month: 10, day: 18),
+new DateOnly(year: 1934, month: 10, day: 7),
+},
+},
+            new DateOnlydateArray1M
+{
+    Id = 120,
+    Value = 
+new System.DateOnly[4]
+{
+new DateOnly(year: 1932, month: 10, day: 12),
+new DateOnly(year: 1955, month: 10, day: 3),
+new DateOnly(year: 1946, month: 10, day: 6),
+new DateOnly(year: 1946, month: 10, day: 12),
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateOnlydateArray1M
+{
+    Id = 129,
+    Value = 
+new System.DateOnly[3]
+{
+new DateOnly(year: 2019, month: 10, day: 2),
+new DateOnly(year: 1925, month: 10, day: 17),
+new DateOnly(year: 1972, month: 10, day: 5),
 },
     ModelInner = new DateOnlydateArray1MI
 {
     Id = 60,
     Value = 
-new System.DateOnly[3]
-{
-new DateOnly(year: 2006, month: 10, day: 1),
-new DateOnly(year: 1933, month: 10, day: 2),
-new DateOnly(year: 1928, month: 10, day: 9),
-},
-    NullableValue = 
 new System.DateOnly[4]
 {
-new DateOnly(year: 2004, month: 10, day: 2),
-new DateOnly(year: 1925, month: 10, day: 19),
-new DateOnly(year: 1971, month: 10, day: 7),
-new DateOnly(year: 1971, month: 10, day: 7),
+new DateOnly(year: 1987, month: 10, day: 17),
+new DateOnly(year: 1934, month: 10, day: 16),
+new DateOnly(year: 1980, month: 10, day: 16),
+new DateOnly(year: 1935, month: 10, day: 6),
 },
-},
-    NullableValue = 
-new System.DateOnly[3]
-{
-new DateOnly(year: 1959, month: 10, day: 19),
-new DateOnly(year: 1960, month: 10, day: 13),
-new DateOnly(year: 1968, month: 10, day: 3),
-},
-},
-            new DateOnlydateArray1M
-{
-    Id = 121,
-    Value = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1925, month: 10, day: 3),
-new DateOnly(year: 2010, month: 10, day: 8),
-new DateOnly(year: 1931, month: 10, day: 3),
-new DateOnly(year: 1962, month: 10, day: 16),
-},
-    ModelInner = null,
     NullableValue = null,
 },
-            new DateOnlydateArray1M
-{
-    Id = 130,
-    Value = 
+    NullableValue = 
 new System.DateOnly[4]
 {
-new DateOnly(year: 1991, month: 10, day: 12),
-new DateOnly(year: 1943, month: 10, day: 9),
-new DateOnly(year: 1977, month: 10, day: 8),
-new DateOnly(year: 1951, month: 10, day: 11),
+new DateOnly(year: 2017, month: 10, day: 3),
+new DateOnly(year: 1981, month: 10, day: 6),
+new DateOnly(year: 1964, month: 10, day: 16),
+new DateOnly(year: 1965, month: 10, day: 9),
+},
+},
+            new DateOnlydateArray1M
+{
+    Id = 132,
+    Value = 
+new System.DateOnly[3]
+{
+new DateOnly(year: 1978, month: 10, day: 18),
+new DateOnly(year: 1979, month: 10, day: 9),
+new DateOnly(year: 1998, month: 10, day: 14),
+},
+    ModelInner = null,
+    NullableValue = 
+new System.DateOnly[3]
+{
+new DateOnly(year: 2006, month: 10, day: 18),
+new DateOnly(year: 1956, month: 10, day: 16),
+new DateOnly(year: 1987, month: 10, day: 13),
+},
+},
+            new DateOnlydateArray1M
+{
+    Id = 137,
+    Value = 
+new System.DateOnly[3]
+{
+new DateOnly(year: 1999, month: 10, day: 10),
+new DateOnly(year: 1930, month: 10, day: 18),
+new DateOnly(year: 1930, month: 10, day: 16),
 },
     ModelInner = new DateOnlydateArray1MI
 {
@@ -628,10 +666,10 @@ new DateOnly(year: 1951, month: 10, day: 11),
     Value = 
 new System.DateOnly[4]
 {
-new DateOnly(year: 1954, month: 10, day: 15),
-new DateOnly(year: 2016, month: 10, day: 3),
-new DateOnly(year: 1955, month: 10, day: 17),
-new DateOnly(year: 1992, month: 10, day: 9),
+new DateOnly(year: 1946, month: 10, day: 12),
+new DateOnly(year: 1933, month: 10, day: 8),
+new DateOnly(year: 1992, month: 10, day: 14),
+new DateOnly(year: 1917, month: 10, day: 18),
 },
     NullableValue = null,
 },
@@ -639,144 +677,54 @@ new DateOnly(year: 1992, month: 10, day: 9),
 },
             new DateOnlydateArray1M
 {
-    Id = 131,
+    Id = 142,
     Value = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1936, month: 10, day: 17),
-new DateOnly(year: 1977, month: 10, day: 4),
-new DateOnly(year: 1965, month: 10, day: 5),
+new DateOnly(year: 1996, month: 10, day: 9),
+new DateOnly(year: 2017, month: 10, day: 13),
+new DateOnly(year: 1979, month: 10, day: 10),
 },
     ModelInner = null,
     NullableValue = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1999, month: 10, day: 15),
-new DateOnly(year: 1974, month: 10, day: 15),
-new DateOnly(year: 2006, month: 10, day: 8),
+new DateOnly(year: 1994, month: 10, day: 12),
+new DateOnly(year: 2002, month: 10, day: 9),
+new DateOnly(year: 1955, month: 10, day: 13),
 },
 },
             new DateOnlydateArray1M
 {
-    Id = 138,
+    Id = 145,
     Value = 
-new System.DateOnly[3]
+new System.DateOnly[4]
 {
-new DateOnly(year: 2017, month: 10, day: 3),
-new DateOnly(year: 1932, month: 10, day: 11),
-new DateOnly(year: 2012, month: 10, day: 14),
+new DateOnly(year: 2008, month: 10, day: 16),
+new DateOnly(year: 1997, month: 10, day: 15),
+new DateOnly(year: 1956, month: 10, day: 9),
+new DateOnly(year: 1951, month: 10, day: 19),
 },
     ModelInner = new DateOnlydateArray1MI
 {
-    Id = 73,
+    Id = 71,
     Value = 
 new System.DateOnly[3]
 {
-new DateOnly(year: 1963, month: 10, day: 15),
-new DateOnly(year: 1988, month: 10, day: 3),
-new DateOnly(year: 1948, month: 10, day: 4),
+new DateOnly(year: 2008, month: 10, day: 6),
+new DateOnly(year: 1977, month: 10, day: 7),
+new DateOnly(year: 2009, month: 10, day: 11),
 },
     NullableValue = 
 new System.DateOnly[4]
 {
-new DateOnly(year: 1962, month: 10, day: 8),
-new DateOnly(year: 1989, month: 10, day: 18),
-new DateOnly(year: 1965, month: 10, day: 9),
-new DateOnly(year: 1997, month: 10, day: 12),
+new DateOnly(year: 2004, month: 10, day: 3),
+new DateOnly(year: 1987, month: 10, day: 6),
+new DateOnly(year: 1998, month: 10, day: 15),
+new DateOnly(year: 2019, month: 10, day: 5),
 },
 },
     NullableValue = null,
-},
-            new DateOnlydateArray1M
-{
-    Id = 139,
-    Value = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1936, month: 10, day: 18),
-new DateOnly(year: 1944, month: 10, day: 12),
-new DateOnly(year: 1957, month: 10, day: 17),
-new DateOnly(year: 1919, month: 10, day: 16),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new DateOnlydateArray1M
-{
-    Id = 146,
-    Value = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1990, month: 10, day: 19),
-new DateOnly(year: 1934, month: 10, day: 14),
-new DateOnly(year: 1969, month: 10, day: 18),
-new DateOnly(year: 1956, month: 10, day: 19),
-},
-    ModelInner = new DateOnlydateArray1MI
-{
-    Id = 80,
-    Value = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1924, month: 10, day: 5),
-new DateOnly(year: 1964, month: 10, day: 6),
-new DateOnly(year: 1967, month: 10, day: 6),
-new DateOnly(year: 2015, month: 10, day: 11),
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.DateOnly[3]
-{
-new DateOnly(year: 1945, month: 10, day: 4),
-new DateOnly(year: 2018, month: 10, day: 14),
-new DateOnly(year: 1971, month: 10, day: 19),
-},
-},
-            new DateOnlydateArray1M
-{
-    Id = 155,
-    Value = 
-new System.DateOnly[3]
-{
-new DateOnly(year: 1917, month: 10, day: 4),
-new DateOnly(year: 1986, month: 10, day: 18),
-new DateOnly(year: 1934, month: 10, day: 12),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new DateOnlydateArray1M
-{
-    Id = 160,
-    Value = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 1999, month: 10, day: 19),
-new DateOnly(year: 2006, month: 10, day: 19),
-new DateOnly(year: 1997, month: 10, day: 14),
-new DateOnly(year: 1992, month: 10, day: 8),
-},
-    ModelInner = new DateOnlydateArray1MI
-{
-    Id = 87,
-    Value = 
-new System.DateOnly[3]
-{
-new DateOnly(year: 1961, month: 10, day: 12),
-new DateOnly(year: 2006, month: 10, day: 18),
-new DateOnly(year: 1978, month: 10, day: 7),
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.DateOnly[4]
-{
-new DateOnly(year: 2015, month: 10, day: 12),
-new DateOnly(year: 1927, month: 10, day: 17),
-new DateOnly(year: 1989, month: 10, day: 2),
-new DateOnly(year: 1936, month: 10, day: 2),
-},
 },
         };
 
@@ -1612,12 +1560,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 38;
+                parametr1.Value = 99;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 121;
+                parametr2.Value = 69;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1649,16 +1597,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
-FlatDateOnlydateArray1M.AssertModel(models[0],_testData[7], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[8], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[9], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[10], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[11], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[12], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[13], false);FlatDateOnlydateArray1M.AssertModel(models[7],_testData[14], false);FlatDateOnlydateArray1M.AssertModel(models[8],_testData[15], false);FlatDateOnlydateArray1M.AssertModel(models[9],_testData[16], false);FlatDateOnlydateArray1M.AssertModel(models[10],_testData[17], false);FlatDateOnlydateArray1M.AssertModel(models[11],_testData[18], false);FlatDateOnlydateArray1M.AssertModel(models[12],_testData[19], false);FlatDateOnlydateArray1M.AssertModel(models[13],_testData[20], false);FlatDateOnlydateArray1M.AssertModel(models[14],_testData[21], false);FlatDateOnlydateArray1M.AssertModel(models[15],_testData[22], false);FlatDateOnlydateArray1M.AssertModel(models[16],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[17],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[18],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[19],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[20],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[21],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[22],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(9));
+FlatDateOnlydateArray1M.AssertModel(models[0],_testData[21], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[22], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[7],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[8],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(7));
-FlatDateOnlydateArray1M.AssertModel(models[0],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(16));
+FlatDateOnlydateArray1M.AssertModel(models[0],_testData[14], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[15], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[16], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[17], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[18], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[19], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[20], false);FlatDateOnlydateArray1M.AssertModel(models[7],_testData[21], false);FlatDateOnlydateArray1M.AssertModel(models[8],_testData[22], false);FlatDateOnlydateArray1M.AssertModel(models[9],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[10],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[11],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[12],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[13],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[14],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[15],_testData[29], false);
                         continue;
                     }
                     
@@ -1707,12 +1655,12 @@ ORDER BY
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 138;
+                parametr1.Value = 90;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 2;
+                parametr2.Value = 59;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1744,16 +1692,16 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
-FlatDateOnlydateArray1M.AssertModel(models[0],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(12));
+FlatDateOnlydateArray1M.AssertModel(models[0],_testData[18], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[19], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[20], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[21], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[22], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[7],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[8],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[9],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[10],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[11],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(29));
-FlatDateOnlydateArray1M.AssertModel(models[0],_testData[1], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[2], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[3], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[4], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[5], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[6], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[7], false);FlatDateOnlydateArray1M.AssertModel(models[7],_testData[8], false);FlatDateOnlydateArray1M.AssertModel(models[8],_testData[9], false);FlatDateOnlydateArray1M.AssertModel(models[9],_testData[10], false);FlatDateOnlydateArray1M.AssertModel(models[10],_testData[11], false);FlatDateOnlydateArray1M.AssertModel(models[11],_testData[12], false);FlatDateOnlydateArray1M.AssertModel(models[12],_testData[13], false);FlatDateOnlydateArray1M.AssertModel(models[13],_testData[14], false);FlatDateOnlydateArray1M.AssertModel(models[14],_testData[15], false);FlatDateOnlydateArray1M.AssertModel(models[15],_testData[16], false);FlatDateOnlydateArray1M.AssertModel(models[16],_testData[17], false);FlatDateOnlydateArray1M.AssertModel(models[17],_testData[18], false);FlatDateOnlydateArray1M.AssertModel(models[18],_testData[19], false);FlatDateOnlydateArray1M.AssertModel(models[19],_testData[20], false);FlatDateOnlydateArray1M.AssertModel(models[20],_testData[21], false);FlatDateOnlydateArray1M.AssertModel(models[21],_testData[22], false);FlatDateOnlydateArray1M.AssertModel(models[22],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[23],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[24],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[25],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[26],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[27],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[28],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(19));
+FlatDateOnlydateArray1M.AssertModel(models[0],_testData[11], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[12], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[13], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[14], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[15], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[16], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[17], false);FlatDateOnlydateArray1M.AssertModel(models[7],_testData[18], false);FlatDateOnlydateArray1M.AssertModel(models[8],_testData[19], false);FlatDateOnlydateArray1M.AssertModel(models[9],_testData[20], false);FlatDateOnlydateArray1M.AssertModel(models[10],_testData[21], false);FlatDateOnlydateArray1M.AssertModel(models[11],_testData[22], false);FlatDateOnlydateArray1M.AssertModel(models[12],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[13],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[14],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[15],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[16],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[17],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[18],_testData[29], false);
                         continue;
                     }
                     
@@ -1839,12 +1787,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 121;
+                parametr1.Value = 129;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 56;
+                parametr2.Value = 17;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in await ((IDateOnlyArraydateArray)this).DbConnectionSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
@@ -1852,16 +1800,16 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(7));
-DateOnlydateArray1M.AssertModel(models[0],_testData[23], false);DateOnlydateArray1M.AssertModel(models[1],_testData[24], false);DateOnlydateArray1M.AssertModel(models[2],_testData[25], false);DateOnlydateArray1M.AssertModel(models[3],_testData[26], false);DateOnlydateArray1M.AssertModel(models[4],_testData[27], false);DateOnlydateArray1M.AssertModel(models[5],_testData[28], false);DateOnlydateArray1M.AssertModel(models[6],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+DateOnlydateArray1M.AssertModel(models[0],_testData[26], false);DateOnlydateArray1M.AssertModel(models[1],_testData[27], false);DateOnlydateArray1M.AssertModel(models[2],_testData[28], false);DateOnlydateArray1M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(19));
-DateOnlydateArray1M.AssertModel(models[0],_testData[11], false);DateOnlydateArray1M.AssertModel(models[1],_testData[12], false);DateOnlydateArray1M.AssertModel(models[2],_testData[13], false);DateOnlydateArray1M.AssertModel(models[3],_testData[14], false);DateOnlydateArray1M.AssertModel(models[4],_testData[15], false);DateOnlydateArray1M.AssertModel(models[5],_testData[16], false);DateOnlydateArray1M.AssertModel(models[6],_testData[17], false);DateOnlydateArray1M.AssertModel(models[7],_testData[18], false);DateOnlydateArray1M.AssertModel(models[8],_testData[19], false);DateOnlydateArray1M.AssertModel(models[9],_testData[20], false);DateOnlydateArray1M.AssertModel(models[10],_testData[21], false);DateOnlydateArray1M.AssertModel(models[11],_testData[22], false);DateOnlydateArray1M.AssertModel(models[12],_testData[23], false);DateOnlydateArray1M.AssertModel(models[13],_testData[24], false);DateOnlydateArray1M.AssertModel(models[14],_testData[25], false);DateOnlydateArray1M.AssertModel(models[15],_testData[26], false);DateOnlydateArray1M.AssertModel(models[16],_testData[27], false);DateOnlydateArray1M.AssertModel(models[17],_testData[28], false);DateOnlydateArray1M.AssertModel(models[18],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(26));
+DateOnlydateArray1M.AssertModel(models[0],_testData[4], false);DateOnlydateArray1M.AssertModel(models[1],_testData[5], false);DateOnlydateArray1M.AssertModel(models[2],_testData[6], false);DateOnlydateArray1M.AssertModel(models[3],_testData[7], false);DateOnlydateArray1M.AssertModel(models[4],_testData[8], false);DateOnlydateArray1M.AssertModel(models[5],_testData[9], false);DateOnlydateArray1M.AssertModel(models[6],_testData[10], false);DateOnlydateArray1M.AssertModel(models[7],_testData[11], false);DateOnlydateArray1M.AssertModel(models[8],_testData[12], false);DateOnlydateArray1M.AssertModel(models[9],_testData[13], false);DateOnlydateArray1M.AssertModel(models[10],_testData[14], false);DateOnlydateArray1M.AssertModel(models[11],_testData[15], false);DateOnlydateArray1M.AssertModel(models[12],_testData[16], false);DateOnlydateArray1M.AssertModel(models[13],_testData[17], false);DateOnlydateArray1M.AssertModel(models[14],_testData[18], false);DateOnlydateArray1M.AssertModel(models[15],_testData[19], false);DateOnlydateArray1M.AssertModel(models[16],_testData[20], false);DateOnlydateArray1M.AssertModel(models[17],_testData[21], false);DateOnlydateArray1M.AssertModel(models[18],_testData[22], false);DateOnlydateArray1M.AssertModel(models[19],_testData[23], false);DateOnlydateArray1M.AssertModel(models[20],_testData[24], false);DateOnlydateArray1M.AssertModel(models[21],_testData[25], false);DateOnlydateArray1M.AssertModel(models[22],_testData[26], false);DateOnlydateArray1M.AssertModel(models[23],_testData[27], false);DateOnlydateArray1M.AssertModel(models[24],_testData[28], false);DateOnlydateArray1M.AssertModel(models[25],_testData[29], false);
                         continue;
                     }
                     
@@ -1898,12 +1846,12 @@ DateOnlydateArray1M.AssertModel(models[0],_testData[11], false);DateOnlydateArra
                 await connection.OpenAsync();
                 int resultIndex = 0;
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 73;
+                parametr1.Value = 96;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 44;
+                parametr2.Value = 69;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 foreach(var batchResult in  ((IDateOnlyArraydateArray)this).DbConnectionSelectModelDynParBatch(connection, [parametr1], [parametr2]))
@@ -1911,16 +1859,16 @@ DateOnlydateArray1M.AssertModel(models[0],_testData[11], false);DateOnlydateArra
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(16));
-DateOnlydateArray1M.AssertModel(models[0],_testData[14], false);DateOnlydateArray1M.AssertModel(models[1],_testData[15], false);DateOnlydateArray1M.AssertModel(models[2],_testData[16], false);DateOnlydateArray1M.AssertModel(models[3],_testData[17], false);DateOnlydateArray1M.AssertModel(models[4],_testData[18], false);DateOnlydateArray1M.AssertModel(models[5],_testData[19], false);DateOnlydateArray1M.AssertModel(models[6],_testData[20], false);DateOnlydateArray1M.AssertModel(models[7],_testData[21], false);DateOnlydateArray1M.AssertModel(models[8],_testData[22], false);DateOnlydateArray1M.AssertModel(models[9],_testData[23], false);DateOnlydateArray1M.AssertModel(models[10],_testData[24], false);DateOnlydateArray1M.AssertModel(models[11],_testData[25], false);DateOnlydateArray1M.AssertModel(models[12],_testData[26], false);DateOnlydateArray1M.AssertModel(models[13],_testData[27], false);DateOnlydateArray1M.AssertModel(models[14],_testData[28], false);DateOnlydateArray1M.AssertModel(models[15],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(11));
+DateOnlydateArray1M.AssertModel(models[0],_testData[19], false);DateOnlydateArray1M.AssertModel(models[1],_testData[20], false);DateOnlydateArray1M.AssertModel(models[2],_testData[21], false);DateOnlydateArray1M.AssertModel(models[3],_testData[22], false);DateOnlydateArray1M.AssertModel(models[4],_testData[23], false);DateOnlydateArray1M.AssertModel(models[5],_testData[24], false);DateOnlydateArray1M.AssertModel(models[6],_testData[25], false);DateOnlydateArray1M.AssertModel(models[7],_testData[26], false);DateOnlydateArray1M.AssertModel(models[8],_testData[27], false);DateOnlydateArray1M.AssertModel(models[9],_testData[28], false);DateOnlydateArray1M.AssertModel(models[10],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(21));
-DateOnlydateArray1M.AssertModel(models[0],_testData[9], false);DateOnlydateArray1M.AssertModel(models[1],_testData[10], false);DateOnlydateArray1M.AssertModel(models[2],_testData[11], false);DateOnlydateArray1M.AssertModel(models[3],_testData[12], false);DateOnlydateArray1M.AssertModel(models[4],_testData[13], false);DateOnlydateArray1M.AssertModel(models[5],_testData[14], false);DateOnlydateArray1M.AssertModel(models[6],_testData[15], false);DateOnlydateArray1M.AssertModel(models[7],_testData[16], false);DateOnlydateArray1M.AssertModel(models[8],_testData[17], false);DateOnlydateArray1M.AssertModel(models[9],_testData[18], false);DateOnlydateArray1M.AssertModel(models[10],_testData[19], false);DateOnlydateArray1M.AssertModel(models[11],_testData[20], false);DateOnlydateArray1M.AssertModel(models[12],_testData[21], false);DateOnlydateArray1M.AssertModel(models[13],_testData[22], false);DateOnlydateArray1M.AssertModel(models[14],_testData[23], false);DateOnlydateArray1M.AssertModel(models[15],_testData[24], false);DateOnlydateArray1M.AssertModel(models[16],_testData[25], false);DateOnlydateArray1M.AssertModel(models[17],_testData[26], false);DateOnlydateArray1M.AssertModel(models[18],_testData[27], false);DateOnlydateArray1M.AssertModel(models[19],_testData[28], false);DateOnlydateArray1M.AssertModel(models[20],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(16));
+DateOnlydateArray1M.AssertModel(models[0],_testData[14], false);DateOnlydateArray1M.AssertModel(models[1],_testData[15], false);DateOnlydateArray1M.AssertModel(models[2],_testData[16], false);DateOnlydateArray1M.AssertModel(models[3],_testData[17], false);DateOnlydateArray1M.AssertModel(models[4],_testData[18], false);DateOnlydateArray1M.AssertModel(models[5],_testData[19], false);DateOnlydateArray1M.AssertModel(models[6],_testData[20], false);DateOnlydateArray1M.AssertModel(models[7],_testData[21], false);DateOnlydateArray1M.AssertModel(models[8],_testData[22], false);DateOnlydateArray1M.AssertModel(models[9],_testData[23], false);DateOnlydateArray1M.AssertModel(models[10],_testData[24], false);DateOnlydateArray1M.AssertModel(models[11],_testData[25], false);DateOnlydateArray1M.AssertModel(models[12],_testData[26], false);DateOnlydateArray1M.AssertModel(models[13],_testData[27], false);DateOnlydateArray1M.AssertModel(models[14],_testData[28], false);DateOnlydateArray1M.AssertModel(models[15],_testData[29], false);
                         continue;
                     }
                     
@@ -2021,21 +1969,21 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in await ((IDateOnlyArraydateArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 37, query1, 121, query2))
+                foreach(var batchResult in await ((IDateOnlyArraydateArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 32, query1, 69, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
-FlatDateOnlydateArray1M.AssertModel(models[0],_testData[6], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[7], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[8], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[9], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[10], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[11], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[12], false);FlatDateOnlydateArray1M.AssertModel(models[7],_testData[13], false);FlatDateOnlydateArray1M.AssertModel(models[8],_testData[14], false);FlatDateOnlydateArray1M.AssertModel(models[9],_testData[15], false);FlatDateOnlydateArray1M.AssertModel(models[10],_testData[16], false);FlatDateOnlydateArray1M.AssertModel(models[11],_testData[17], false);FlatDateOnlydateArray1M.AssertModel(models[12],_testData[18], false);FlatDateOnlydateArray1M.AssertModel(models[13],_testData[19], false);FlatDateOnlydateArray1M.AssertModel(models[14],_testData[20], false);FlatDateOnlydateArray1M.AssertModel(models[15],_testData[21], false);FlatDateOnlydateArray1M.AssertModel(models[16],_testData[22], false);FlatDateOnlydateArray1M.AssertModel(models[17],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[18],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[19],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[20],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[21],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[22],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[23],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(23));
+FlatDateOnlydateArray1M.AssertModel(models[0],_testData[7], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[8], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[9], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[10], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[11], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[12], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[13], false);FlatDateOnlydateArray1M.AssertModel(models[7],_testData[14], false);FlatDateOnlydateArray1M.AssertModel(models[8],_testData[15], false);FlatDateOnlydateArray1M.AssertModel(models[9],_testData[16], false);FlatDateOnlydateArray1M.AssertModel(models[10],_testData[17], false);FlatDateOnlydateArray1M.AssertModel(models[11],_testData[18], false);FlatDateOnlydateArray1M.AssertModel(models[12],_testData[19], false);FlatDateOnlydateArray1M.AssertModel(models[13],_testData[20], false);FlatDateOnlydateArray1M.AssertModel(models[14],_testData[21], false);FlatDateOnlydateArray1M.AssertModel(models[15],_testData[22], false);FlatDateOnlydateArray1M.AssertModel(models[16],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[17],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[18],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[19],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[20],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[21],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[22],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(7));
-FlatDateOnlydateArray1M.AssertModel(models[0],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(16));
+FlatDateOnlydateArray1M.AssertModel(models[0],_testData[14], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[15], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[16], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[17], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[18], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[19], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[20], false);FlatDateOnlydateArray1M.AssertModel(models[7],_testData[21], false);FlatDateOnlydateArray1M.AssertModel(models[8],_testData[22], false);FlatDateOnlydateArray1M.AssertModel(models[9],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[10],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[11],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[12],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[13],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[14],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[15],_testData[29], false);
                         continue;
                     }
                     
@@ -2102,21 +2050,21 @@ WHERE
 ORDER BY
     m.id ASC
 ";
-                foreach(var batchResult in  ((IDateOnlyArraydateArray)this).DbConnectionDynQuerySelectModelBatch(connection, 48, query1, 139, query2))
+                foreach(var batchResult in  ((IDateOnlyArraydateArray)this).DbConnectionDynQuerySelectModelBatch(connection, 114, query1, 17, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
-FlatDateOnlydateArray1M.AssertModel(models[0],_testData[10], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[11], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[12], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[13], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[14], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[15], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[16], false);FlatDateOnlydateArray1M.AssertModel(models[7],_testData[17], false);FlatDateOnlydateArray1M.AssertModel(models[8],_testData[18], false);FlatDateOnlydateArray1M.AssertModel(models[9],_testData[19], false);FlatDateOnlydateArray1M.AssertModel(models[10],_testData[20], false);FlatDateOnlydateArray1M.AssertModel(models[11],_testData[21], false);FlatDateOnlydateArray1M.AssertModel(models[12],_testData[22], false);FlatDateOnlydateArray1M.AssertModel(models[13],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[14],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[15],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[16],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[17],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[18],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[19],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(6));
+FlatDateOnlydateArray1M.AssertModel(models[0],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-FlatDateOnlydateArray1M.AssertModel(models[0],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(26));
+FlatDateOnlydateArray1M.AssertModel(models[0],_testData[4], false);FlatDateOnlydateArray1M.AssertModel(models[1],_testData[5], false);FlatDateOnlydateArray1M.AssertModel(models[2],_testData[6], false);FlatDateOnlydateArray1M.AssertModel(models[3],_testData[7], false);FlatDateOnlydateArray1M.AssertModel(models[4],_testData[8], false);FlatDateOnlydateArray1M.AssertModel(models[5],_testData[9], false);FlatDateOnlydateArray1M.AssertModel(models[6],_testData[10], false);FlatDateOnlydateArray1M.AssertModel(models[7],_testData[11], false);FlatDateOnlydateArray1M.AssertModel(models[8],_testData[12], false);FlatDateOnlydateArray1M.AssertModel(models[9],_testData[13], false);FlatDateOnlydateArray1M.AssertModel(models[10],_testData[14], false);FlatDateOnlydateArray1M.AssertModel(models[11],_testData[15], false);FlatDateOnlydateArray1M.AssertModel(models[12],_testData[16], false);FlatDateOnlydateArray1M.AssertModel(models[13],_testData[17], false);FlatDateOnlydateArray1M.AssertModel(models[14],_testData[18], false);FlatDateOnlydateArray1M.AssertModel(models[15],_testData[19], false);FlatDateOnlydateArray1M.AssertModel(models[16],_testData[20], false);FlatDateOnlydateArray1M.AssertModel(models[17],_testData[21], false);FlatDateOnlydateArray1M.AssertModel(models[18],_testData[22], false);FlatDateOnlydateArray1M.AssertModel(models[19],_testData[23], false);FlatDateOnlydateArray1M.AssertModel(models[20],_testData[24], false);FlatDateOnlydateArray1M.AssertModel(models[21],_testData[25], false);FlatDateOnlydateArray1M.AssertModel(models[22],_testData[26], false);FlatDateOnlydateArray1M.AssertModel(models[23],_testData[27], false);FlatDateOnlydateArray1M.AssertModel(models[24],_testData[28], false);FlatDateOnlydateArray1M.AssertModel(models[25],_testData[29], false);
                         continue;
                     }
                     
@@ -2200,21 +2148,21 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IDateOnlyArraydateArray)this).DbConnectionSelectModelBatchAsync(connection, 26, 18))
+                foreach(var batchResult in await ((IDateOnlyArraydateArray)this).DbConnectionSelectModelBatchAsync(connection, 129, 46))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(26));
-DateOnlydateArray1M.AssertModel(models[0],_testData[4], false);DateOnlydateArray1M.AssertModel(models[1],_testData[5], false);DateOnlydateArray1M.AssertModel(models[2],_testData[6], false);DateOnlydateArray1M.AssertModel(models[3],_testData[7], false);DateOnlydateArray1M.AssertModel(models[4],_testData[8], false);DateOnlydateArray1M.AssertModel(models[5],_testData[9], false);DateOnlydateArray1M.AssertModel(models[6],_testData[10], false);DateOnlydateArray1M.AssertModel(models[7],_testData[11], false);DateOnlydateArray1M.AssertModel(models[8],_testData[12], false);DateOnlydateArray1M.AssertModel(models[9],_testData[13], false);DateOnlydateArray1M.AssertModel(models[10],_testData[14], false);DateOnlydateArray1M.AssertModel(models[11],_testData[15], false);DateOnlydateArray1M.AssertModel(models[12],_testData[16], false);DateOnlydateArray1M.AssertModel(models[13],_testData[17], false);DateOnlydateArray1M.AssertModel(models[14],_testData[18], false);DateOnlydateArray1M.AssertModel(models[15],_testData[19], false);DateOnlydateArray1M.AssertModel(models[16],_testData[20], false);DateOnlydateArray1M.AssertModel(models[17],_testData[21], false);DateOnlydateArray1M.AssertModel(models[18],_testData[22], false);DateOnlydateArray1M.AssertModel(models[19],_testData[23], false);DateOnlydateArray1M.AssertModel(models[20],_testData[24], false);DateOnlydateArray1M.AssertModel(models[21],_testData[25], false);DateOnlydateArray1M.AssertModel(models[22],_testData[26], false);DateOnlydateArray1M.AssertModel(models[23],_testData[27], false);DateOnlydateArray1M.AssertModel(models[24],_testData[28], false);DateOnlydateArray1M.AssertModel(models[25],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(4));
+DateOnlydateArray1M.AssertModel(models[0],_testData[26], false);DateOnlydateArray1M.AssertModel(models[1],_testData[27], false);DateOnlydateArray1M.AssertModel(models[2],_testData[28], false);DateOnlydateArray1M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
-DateOnlydateArray1M.AssertModel(models[0],_testData[3], false);DateOnlydateArray1M.AssertModel(models[1],_testData[4], false);DateOnlydateArray1M.AssertModel(models[2],_testData[5], false);DateOnlydateArray1M.AssertModel(models[3],_testData[6], false);DateOnlydateArray1M.AssertModel(models[4],_testData[7], false);DateOnlydateArray1M.AssertModel(models[5],_testData[8], false);DateOnlydateArray1M.AssertModel(models[6],_testData[9], false);DateOnlydateArray1M.AssertModel(models[7],_testData[10], false);DateOnlydateArray1M.AssertModel(models[8],_testData[11], false);DateOnlydateArray1M.AssertModel(models[9],_testData[12], false);DateOnlydateArray1M.AssertModel(models[10],_testData[13], false);DateOnlydateArray1M.AssertModel(models[11],_testData[14], false);DateOnlydateArray1M.AssertModel(models[12],_testData[15], false);DateOnlydateArray1M.AssertModel(models[13],_testData[16], false);DateOnlydateArray1M.AssertModel(models[14],_testData[17], false);DateOnlydateArray1M.AssertModel(models[15],_testData[18], false);DateOnlydateArray1M.AssertModel(models[16],_testData[19], false);DateOnlydateArray1M.AssertModel(models[17],_testData[20], false);DateOnlydateArray1M.AssertModel(models[18],_testData[21], false);DateOnlydateArray1M.AssertModel(models[19],_testData[22], false);DateOnlydateArray1M.AssertModel(models[20],_testData[23], false);DateOnlydateArray1M.AssertModel(models[21],_testData[24], false);DateOnlydateArray1M.AssertModel(models[22],_testData[25], false);DateOnlydateArray1M.AssertModel(models[23],_testData[26], false);DateOnlydateArray1M.AssertModel(models[24],_testData[27], false);DateOnlydateArray1M.AssertModel(models[25],_testData[28], false);DateOnlydateArray1M.AssertModel(models[26],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(21));
+DateOnlydateArray1M.AssertModel(models[0],_testData[9], false);DateOnlydateArray1M.AssertModel(models[1],_testData[10], false);DateOnlydateArray1M.AssertModel(models[2],_testData[11], false);DateOnlydateArray1M.AssertModel(models[3],_testData[12], false);DateOnlydateArray1M.AssertModel(models[4],_testData[13], false);DateOnlydateArray1M.AssertModel(models[5],_testData[14], false);DateOnlydateArray1M.AssertModel(models[6],_testData[15], false);DateOnlydateArray1M.AssertModel(models[7],_testData[16], false);DateOnlydateArray1M.AssertModel(models[8],_testData[17], false);DateOnlydateArray1M.AssertModel(models[9],_testData[18], false);DateOnlydateArray1M.AssertModel(models[10],_testData[19], false);DateOnlydateArray1M.AssertModel(models[11],_testData[20], false);DateOnlydateArray1M.AssertModel(models[12],_testData[21], false);DateOnlydateArray1M.AssertModel(models[13],_testData[22], false);DateOnlydateArray1M.AssertModel(models[14],_testData[23], false);DateOnlydateArray1M.AssertModel(models[15],_testData[24], false);DateOnlydateArray1M.AssertModel(models[16],_testData[25], false);DateOnlydateArray1M.AssertModel(models[17],_testData[26], false);DateOnlydateArray1M.AssertModel(models[18],_testData[27], false);DateOnlydateArray1M.AssertModel(models[19],_testData[28], false);DateOnlydateArray1M.AssertModel(models[20],_testData[29], false);
                         continue;
                     }
                     
@@ -2245,21 +2193,21 @@ DateOnlydateArray1M.AssertModel(models[0],_testData[3], false);DateOnlydateArray
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IDateOnlyArraydateArray)this).DbConnectionSelectModelBatch(connection, 93, 2))
+                foreach(var batchResult in  ((IDateOnlyArraydateArray)this).DbConnectionSelectModelBatch(connection, 13, 37))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
-DateOnlydateArray1M.AssertModel(models[0],_testData[18], false);DateOnlydateArray1M.AssertModel(models[1],_testData[19], false);DateOnlydateArray1M.AssertModel(models[2],_testData[20], false);DateOnlydateArray1M.AssertModel(models[3],_testData[21], false);DateOnlydateArray1M.AssertModel(models[4],_testData[22], false);DateOnlydateArray1M.AssertModel(models[5],_testData[23], false);DateOnlydateArray1M.AssertModel(models[6],_testData[24], false);DateOnlydateArray1M.AssertModel(models[7],_testData[25], false);DateOnlydateArray1M.AssertModel(models[8],_testData[26], false);DateOnlydateArray1M.AssertModel(models[9],_testData[27], false);DateOnlydateArray1M.AssertModel(models[10],_testData[28], false);DateOnlydateArray1M.AssertModel(models[11],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(27));
+DateOnlydateArray1M.AssertModel(models[0],_testData[3], false);DateOnlydateArray1M.AssertModel(models[1],_testData[4], false);DateOnlydateArray1M.AssertModel(models[2],_testData[5], false);DateOnlydateArray1M.AssertModel(models[3],_testData[6], false);DateOnlydateArray1M.AssertModel(models[4],_testData[7], false);DateOnlydateArray1M.AssertModel(models[5],_testData[8], false);DateOnlydateArray1M.AssertModel(models[6],_testData[9], false);DateOnlydateArray1M.AssertModel(models[7],_testData[10], false);DateOnlydateArray1M.AssertModel(models[8],_testData[11], false);DateOnlydateArray1M.AssertModel(models[9],_testData[12], false);DateOnlydateArray1M.AssertModel(models[10],_testData[13], false);DateOnlydateArray1M.AssertModel(models[11],_testData[14], false);DateOnlydateArray1M.AssertModel(models[12],_testData[15], false);DateOnlydateArray1M.AssertModel(models[13],_testData[16], false);DateOnlydateArray1M.AssertModel(models[14],_testData[17], false);DateOnlydateArray1M.AssertModel(models[15],_testData[18], false);DateOnlydateArray1M.AssertModel(models[16],_testData[19], false);DateOnlydateArray1M.AssertModel(models[17],_testData[20], false);DateOnlydateArray1M.AssertModel(models[18],_testData[21], false);DateOnlydateArray1M.AssertModel(models[19],_testData[22], false);DateOnlydateArray1M.AssertModel(models[20],_testData[23], false);DateOnlydateArray1M.AssertModel(models[21],_testData[24], false);DateOnlydateArray1M.AssertModel(models[22],_testData[25], false);DateOnlydateArray1M.AssertModel(models[23],_testData[26], false);DateOnlydateArray1M.AssertModel(models[24],_testData[27], false);DateOnlydateArray1M.AssertModel(models[25],_testData[28], false);DateOnlydateArray1M.AssertModel(models[26],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(29));
-DateOnlydateArray1M.AssertModel(models[0],_testData[1], false);DateOnlydateArray1M.AssertModel(models[1],_testData[2], false);DateOnlydateArray1M.AssertModel(models[2],_testData[3], false);DateOnlydateArray1M.AssertModel(models[3],_testData[4], false);DateOnlydateArray1M.AssertModel(models[4],_testData[5], false);DateOnlydateArray1M.AssertModel(models[5],_testData[6], false);DateOnlydateArray1M.AssertModel(models[6],_testData[7], false);DateOnlydateArray1M.AssertModel(models[7],_testData[8], false);DateOnlydateArray1M.AssertModel(models[8],_testData[9], false);DateOnlydateArray1M.AssertModel(models[9],_testData[10], false);DateOnlydateArray1M.AssertModel(models[10],_testData[11], false);DateOnlydateArray1M.AssertModel(models[11],_testData[12], false);DateOnlydateArray1M.AssertModel(models[12],_testData[13], false);DateOnlydateArray1M.AssertModel(models[13],_testData[14], false);DateOnlydateArray1M.AssertModel(models[14],_testData[15], false);DateOnlydateArray1M.AssertModel(models[15],_testData[16], false);DateOnlydateArray1M.AssertModel(models[16],_testData[17], false);DateOnlydateArray1M.AssertModel(models[17],_testData[18], false);DateOnlydateArray1M.AssertModel(models[18],_testData[19], false);DateOnlydateArray1M.AssertModel(models[19],_testData[20], false);DateOnlydateArray1M.AssertModel(models[20],_testData[21], false);DateOnlydateArray1M.AssertModel(models[21],_testData[22], false);DateOnlydateArray1M.AssertModel(models[22],_testData[23], false);DateOnlydateArray1M.AssertModel(models[23],_testData[24], false);DateOnlydateArray1M.AssertModel(models[24],_testData[25], false);DateOnlydateArray1M.AssertModel(models[25],_testData[26], false);DateOnlydateArray1M.AssertModel(models[26],_testData[27], false);DateOnlydateArray1M.AssertModel(models[27],_testData[28], false);DateOnlydateArray1M.AssertModel(models[28],_testData[29], false);
+                        Assert.That(models, Has.Count.EqualTo(22));
+DateOnlydateArray1M.AssertModel(models[0],_testData[8], false);DateOnlydateArray1M.AssertModel(models[1],_testData[9], false);DateOnlydateArray1M.AssertModel(models[2],_testData[10], false);DateOnlydateArray1M.AssertModel(models[3],_testData[11], false);DateOnlydateArray1M.AssertModel(models[4],_testData[12], false);DateOnlydateArray1M.AssertModel(models[5],_testData[13], false);DateOnlydateArray1M.AssertModel(models[6],_testData[14], false);DateOnlydateArray1M.AssertModel(models[7],_testData[15], false);DateOnlydateArray1M.AssertModel(models[8],_testData[16], false);DateOnlydateArray1M.AssertModel(models[9],_testData[17], false);DateOnlydateArray1M.AssertModel(models[10],_testData[18], false);DateOnlydateArray1M.AssertModel(models[11],_testData[19], false);DateOnlydateArray1M.AssertModel(models[12],_testData[20], false);DateOnlydateArray1M.AssertModel(models[13],_testData[21], false);DateOnlydateArray1M.AssertModel(models[14],_testData[22], false);DateOnlydateArray1M.AssertModel(models[15],_testData[23], false);DateOnlydateArray1M.AssertModel(models[16],_testData[24], false);DateOnlydateArray1M.AssertModel(models[17],_testData[25], false);DateOnlydateArray1M.AssertModel(models[18],_testData[26], false);DateOnlydateArray1M.AssertModel(models[19],_testData[27], false);DateOnlydateArray1M.AssertModel(models[20],_testData[28], false);DateOnlydateArray1M.AssertModel(models[21],_testData[29], false);
                         continue;
                     }
                     
@@ -2275,11 +2223,11 @@ DateOnlydateArray1M.AssertModel(models[0],_testData[1], false);DateOnlydateArray
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IDateOnlyArraydateArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IDateOnlyArraydateArray)this).SetDbConnectionSelectModelParametrs(cmd, 139);
+                ((IDateOnlyArraydateArray)this).SetDbConnectionSelectModelParametrs(cmd, 101);
                 var models = await ((IDateOnlyArraydateArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(3));
-DateOnlydateArray1M.AssertModel(models[0],_testData[27], false);DateOnlydateArray1M.AssertModel(models[1],_testData[28], false);DateOnlydateArray1M.AssertModel(models[2],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(8));
+DateOnlydateArray1M.AssertModel(models[0],_testData[22], false);DateOnlydateArray1M.AssertModel(models[1],_testData[23], false);DateOnlydateArray1M.AssertModel(models[2],_testData[24], false);DateOnlydateArray1M.AssertModel(models[3],_testData[25], false);DateOnlydateArray1M.AssertModel(models[4],_testData[26], false);DateOnlydateArray1M.AssertModel(models[5],_testData[27], false);DateOnlydateArray1M.AssertModel(models[6],_testData[28], false);DateOnlydateArray1M.AssertModel(models[7],_testData[29], false);
             }
         }
 
@@ -2290,11 +2238,11 @@ DateOnlydateArray1M.AssertModel(models[0],_testData[27], false);DateOnlydateArra
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IDateOnlyArraydateArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IDateOnlyArraydateArray)this).SetDbConnectionSelectModelParametrs(cmd, 42);
+                ((IDateOnlyArraydateArray)this).SetDbConnectionSelectModelParametrs(cmd, 59);
                 var models =  ((IDateOnlyArraydateArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(22));
-DateOnlydateArray1M.AssertModel(models[0],_testData[8], false);DateOnlydateArray1M.AssertModel(models[1],_testData[9], false);DateOnlydateArray1M.AssertModel(models[2],_testData[10], false);DateOnlydateArray1M.AssertModel(models[3],_testData[11], false);DateOnlydateArray1M.AssertModel(models[4],_testData[12], false);DateOnlydateArray1M.AssertModel(models[5],_testData[13], false);DateOnlydateArray1M.AssertModel(models[6],_testData[14], false);DateOnlydateArray1M.AssertModel(models[7],_testData[15], false);DateOnlydateArray1M.AssertModel(models[8],_testData[16], false);DateOnlydateArray1M.AssertModel(models[9],_testData[17], false);DateOnlydateArray1M.AssertModel(models[10],_testData[18], false);DateOnlydateArray1M.AssertModel(models[11],_testData[19], false);DateOnlydateArray1M.AssertModel(models[12],_testData[20], false);DateOnlydateArray1M.AssertModel(models[13],_testData[21], false);DateOnlydateArray1M.AssertModel(models[14],_testData[22], false);DateOnlydateArray1M.AssertModel(models[15],_testData[23], false);DateOnlydateArray1M.AssertModel(models[16],_testData[24], false);DateOnlydateArray1M.AssertModel(models[17],_testData[25], false);DateOnlydateArray1M.AssertModel(models[18],_testData[26], false);DateOnlydateArray1M.AssertModel(models[19],_testData[27], false);DateOnlydateArray1M.AssertModel(models[20],_testData[28], false);DateOnlydateArray1M.AssertModel(models[21],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(19));
+DateOnlydateArray1M.AssertModel(models[0],_testData[11], false);DateOnlydateArray1M.AssertModel(models[1],_testData[12], false);DateOnlydateArray1M.AssertModel(models[2],_testData[13], false);DateOnlydateArray1M.AssertModel(models[3],_testData[14], false);DateOnlydateArray1M.AssertModel(models[4],_testData[15], false);DateOnlydateArray1M.AssertModel(models[5],_testData[16], false);DateOnlydateArray1M.AssertModel(models[6],_testData[17], false);DateOnlydateArray1M.AssertModel(models[7],_testData[18], false);DateOnlydateArray1M.AssertModel(models[8],_testData[19], false);DateOnlydateArray1M.AssertModel(models[9],_testData[20], false);DateOnlydateArray1M.AssertModel(models[10],_testData[21], false);DateOnlydateArray1M.AssertModel(models[11],_testData[22], false);DateOnlydateArray1M.AssertModel(models[12],_testData[23], false);DateOnlydateArray1M.AssertModel(models[13],_testData[24], false);DateOnlydateArray1M.AssertModel(models[14],_testData[25], false);DateOnlydateArray1M.AssertModel(models[15],_testData[26], false);DateOnlydateArray1M.AssertModel(models[16],_testData[27], false);DateOnlydateArray1M.AssertModel(models[17],_testData[28], false);DateOnlydateArray1M.AssertModel(models[18],_testData[29], false);
             }
         }
 
