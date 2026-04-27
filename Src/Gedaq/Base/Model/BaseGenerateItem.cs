@@ -5,7 +5,6 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Linq;
-using System.Text;
 
 namespace Gedaq.Base.Model
 {
@@ -53,6 +52,22 @@ namespace Gedaq.Base.Model
         public ITypeSymbol PartInterfaceType { get; private set; }
 
         public bool AsPartInterface => PartInterfaceType != null;
+
+        protected bool FillMapTypesFromSingle(TypedConstant argument)
+        {
+            if (argument.IsNull)
+            {
+                return true;
+            }
+
+            if (!(argument.Value is ITypeSymbol typeParam))
+            {
+                return false;
+            }
+
+            MapTypeInfos = new MapTypeInfo[] { new MapTypeInfo(0) { MapType = typeParam } };
+            return true;
+        }
 
         protected bool FillMapTypes(TypedConstant argument)
         {

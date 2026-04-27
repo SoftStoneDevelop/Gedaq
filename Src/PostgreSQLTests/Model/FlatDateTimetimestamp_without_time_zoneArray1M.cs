@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatDateTimetimestamp_without_time_zoneArray1M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.DateTime[] Value { get; set; }
 
 
 
+        
         public System.DateTime[] NullableValue { get; set; }
 
         public static void AssertModel(FlatDateTimetimestamp_without_time_zoneArray1M actual, DateTimetimestamp_without_time_zoneArray1M expect, bool checkInInnerOnlyId)

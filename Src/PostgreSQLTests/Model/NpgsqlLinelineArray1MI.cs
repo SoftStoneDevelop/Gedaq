@@ -6,10 +6,13 @@ namespace Tests
 {
     public class NpgsqlLinelineArray1MI
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public NpgsqlTypes.NpgsqlLine[] Value { get; set; }
 
+        
         public NpgsqlTypes.NpgsqlLine[] NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlLinelineArray1MI actual, NpgsqlLinelineArray1MI expect, bool checkInInnerOnlyId)

@@ -8,7 +8,7 @@
         public const string ExceptionDescr = "Exception in generation: {0}; StackTrace: {1}";
 
         public const string IncorrectAttributeParametrsCount = "GDC0001";
-        public const string IncorrectAttributeParametrsCountDescr = "The number of attribute parameters does not match: {0}";
+        public const string IncorrectAttributeParametrsCountDescr = "The number of attribute parameters (attribute {0}) does not match: expect {1} but {2}";
 
         public const string IncorrectAttributeParametr = "GDC0002";
         public const string IncorrectAttributeParametrDescr = "Parameter {0}({1}) could not be parsed";
@@ -25,5 +25,14 @@
 
         public const string UnknownMapTypes = "GDC0008";
         public const string UnknownMapTypesDescr = "The mapping type must be specified";
+
+        public const string UnnamedQueryParametr = "GDC0009";
+        public const string UnnamedQueryParametrDescr = "Parameter not have name";
+
+        public const string AmbiguityOfParameterNamePosition = "GDC0010";
+        public const string AmbiguityOfParameterNamePositionDescr = "Parameter can have position or name, but not both";
+
+        public const string ParameterNotHavePosName = "GDC0011";
+        public const string ParameterNotHavePosNameDescr = "Parameter not have position or name";
     }
 }

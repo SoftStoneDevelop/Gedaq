@@ -38,7 +38,7 @@ namespace Gedaq.MySqlConnector.Model
                     DiagnosticConstants.IncorrectAttributeParametrsCount,
                     DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
                     DiagnosticSeverity.Error,
-                    namedArguments.Length.ToString());
+                    new string[] { "Query", "12", namedArguments.Length.ToString() });
 
                 return false;
             }

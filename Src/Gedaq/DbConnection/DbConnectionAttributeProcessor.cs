@@ -61,7 +61,7 @@ namespace Gedaq.DbConnection
 
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.DbConnection.Attributes", "ParametrAttribute"))
                     {
-                        ProcessParametr(attributeData, containsType, readTemp);
+                        ProcessParametr(attributeData, readTemp);
                         continue;
                     }
 
@@ -288,10 +288,9 @@ namespace Gedaq.DbConnection
 
         private void ProcessParametr(
             AttributeData parametrAttribute,
-            INamedTypeSymbol containsType,
             ReadPair<DbQuery, DbParametr, DbDynamicParametr> readPair)
         {
-            if (!DbParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr))
+            if (!DbParametr.CreateNew(_context, parametrAttribute.ConstructorArguments, out var parametr))
             {
                 throw new Exception($"Unknown {nameof(DbParametr)} constructor");
             }

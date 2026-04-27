@@ -6,12 +6,15 @@ namespace Tests
 {
     public class NpgsqlPathpathArray2M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPath> Value { get; set; }
 
         public NpgsqlPathpathArray2MI ModelInner { get; set; }
 
+        
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPath> NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlPathpathArray2M actual, NpgsqlPathpathArray2M expect, bool checkInInnerOnlyId)

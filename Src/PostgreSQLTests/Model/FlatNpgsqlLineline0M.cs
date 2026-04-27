@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatNpgsqlLineline0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public NpgsqlTypes.NpgsqlLine Value { get; set; }
 
 
 
+        
         public NpgsqlTypes.NpgsqlLine? NullableValue { get; set; }
 
         public static void AssertModel(FlatNpgsqlLineline0M actual, NpgsqlLineline0M expect, bool checkInInnerOnlyId)

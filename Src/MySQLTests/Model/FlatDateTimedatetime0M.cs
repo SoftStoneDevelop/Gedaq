@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatDateTimedatetime0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.DateTime Value { get; set; }
 
 
 
+        
         public System.DateTime? NullableValue { get; set; }
 
         public static void AssertModel(FlatDateTimedatetime0M actual, DateTimedatetime0M expect, bool checkInInnerOnlyId)

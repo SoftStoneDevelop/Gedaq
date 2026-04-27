@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatGuiduuidArray1M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Guid[] Value { get; set; }
 
 
 
+        
         public System.Guid[] NullableValue { get; set; }
 
         public static void AssertModel(FlatGuiduuidArray1M actual, GuiduuidArray1M expect, bool checkInInnerOnlyId)

@@ -6,10 +6,13 @@ namespace Tests
 {
     public class SinglerealArray2MI
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Collections.Generic.List<System.Single> Value { get; set; }
 
+        
         public System.Collections.Generic.List<System.Single> NullableValue { get; set; }
 
         public static void AssertModel(SinglerealArray2MI actual, SinglerealArray2MI expect, bool checkInInnerOnlyId)

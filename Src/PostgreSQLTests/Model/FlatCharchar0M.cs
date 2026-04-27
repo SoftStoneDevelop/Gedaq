@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatCharchar0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Char Value { get; set; }
 
 
 
+        
         public System.Char? NullableValue { get; set; }
 
         public static void AssertModel(FlatCharchar0M actual, Charchar0M expect, bool checkInInnerOnlyId)

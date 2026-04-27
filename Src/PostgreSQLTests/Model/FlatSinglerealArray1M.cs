@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatSinglerealArray1M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Single[] Value { get; set; }
 
 
 
+        
         public System.Single[] NullableValue { get; set; }
 
         public static void AssertModel(FlatSinglerealArray1M actual, SinglerealArray1M expect, bool checkInInnerOnlyId)

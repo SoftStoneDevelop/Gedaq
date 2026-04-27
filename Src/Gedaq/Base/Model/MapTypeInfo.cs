@@ -49,7 +49,7 @@ namespace Gedaq.Base.Model
                                 DiagnosticConstants.IncorrectAttributeParametrsCount,
                                 DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
                                 DiagnosticSeverity.Error,
-                                constructorArguments.Length.ToString());
+                                new string[] { "AliasPrefix", "1", constructorArguments.Length.ToString() });
                         }
 
                         var prefixArgument = constructorArguments[0];
@@ -103,7 +103,7 @@ namespace Gedaq.Base.Model
                             DiagnosticConstants.IncorrectAttributeParametrsCount,
                             DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
                             DiagnosticSeverity.Error,
-                            constructorArguments.Length.ToString());
+                            new string[] { "Alias", "1", constructorArguments.Length.ToString() });
                     }
 
                     var aliasArgument = constructorArguments[0];

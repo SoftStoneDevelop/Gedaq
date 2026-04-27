@@ -124,7 +124,7 @@ Gedaq.SqlClient.Attributes.Parametr(
             parametrType: typeof({model.IdType}),
             parametrName: ""{model.IdColumnName}"",
             methodParametrName: ""{model.IdColumnName}"",
-            sqlDbType: {model.IdTypeInfo.SpecialDbTypeStr()})");
+            dbType: {model.IdTypeInfo.SpecialDbTypeStr()})");
             }
 
             stringBuilder.Append($@"]

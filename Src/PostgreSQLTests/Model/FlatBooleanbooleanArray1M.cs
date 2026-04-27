@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatBooleanbooleanArray1M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Boolean[] Value { get; set; }
 
 
 
+        
         public System.Boolean[] NullableValue { get; set; }
 
         public static void AssertModel(FlatBooleanbooleanArray1M actual, BooleanbooleanArray1M expect, bool checkInInnerOnlyId)

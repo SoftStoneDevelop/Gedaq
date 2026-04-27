@@ -6,12 +6,15 @@ namespace Tests
 {
     public class NpgsqlIntervalinterval0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public NpgsqlTypes.NpgsqlInterval Value { get; set; }
 
         public NpgsqlIntervalinterval0MI ModelInner { get; set; }
 
+        
         public NpgsqlTypes.NpgsqlInterval? NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlIntervalinterval0M actual, NpgsqlIntervalinterval0M expect, bool checkInInnerOnlyId)

@@ -6,10 +6,13 @@ namespace Tests
 {
     public class TimeOnlytime_without_time_zoneArray1MI
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.TimeOnly[] Value { get; set; }
 
+        
         public System.TimeOnly[] NullableValue { get; set; }
 
         public static void AssertModel(TimeOnlytime_without_time_zoneArray1MI actual, TimeOnlytime_without_time_zoneArray1MI expect, bool checkInInnerOnlyId)

@@ -6,10 +6,13 @@ namespace Tests
 {
     public class NpgsqlPathpath0MI
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public NpgsqlTypes.NpgsqlPath Value { get; set; }
 
+        
         public NpgsqlTypes.NpgsqlPath? NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlPathpath0MI actual, NpgsqlPathpath0MI expect, bool checkInInnerOnlyId)

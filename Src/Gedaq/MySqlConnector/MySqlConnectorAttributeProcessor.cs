@@ -60,7 +60,7 @@ namespace Gedaq.MySqlConnector
 
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.MySqlConnector.Attributes", "ParametrAttribute"))
                     {
-                        ProcessParametr(attributeData, containsType, readTemp);
+                        ProcessParametr(attributeData, readTemp);
                         continue;
                     }
 
@@ -285,10 +285,9 @@ namespace Gedaq.MySqlConnector
 
         private void ProcessParametr(
             AttributeData parametrAttribute,
-            INamedTypeSymbol containsType,
             ReadPair<MySqlConnectorQuery, MySqlConnectorParametr, MySqlConnectorDynamicParametr> readPair)
         {
-            if (!MySqlConnectorParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
+            if (!MySqlConnectorParametr.CreateNew(_context, parametrAttribute.ConstructorArguments, out var parametr))
             {
                 throw new Exception($"Unknown {nameof(MySqlConnectorParametr)} constructor");
             }

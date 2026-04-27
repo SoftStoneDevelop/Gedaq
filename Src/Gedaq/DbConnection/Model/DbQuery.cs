@@ -31,7 +31,7 @@ namespace Gedaq.DbConnection.Model
                     DiagnosticConstants.IncorrectAttributeParametrsCount,
                     DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
                     DiagnosticSeverity.Error,
-                    namedArguments.Length.ToString());
+                    new string[] { "Query", "11", namedArguments.Length.ToString() });
 
                 return false;
             }

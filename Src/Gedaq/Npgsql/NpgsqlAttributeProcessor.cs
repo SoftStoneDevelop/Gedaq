@@ -65,7 +65,7 @@ namespace Gedaq.Npgsql
 
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "ParametrAttribute"))
                     {
-                        ProcessParametr(attributeData, containsType, readTemp);
+                        ProcessParametr(attributeData, readTemp);
                         continue;
                     }
 
@@ -340,10 +340,9 @@ namespace Gedaq.Npgsql
 
         private void ProcessParametr(
             AttributeData parametrAttribute,
-            INamedTypeSymbol containsType,
             ReadPair<NpgsqlQuery, NpgsqlParametr, NpgsqlDynamicParametr> readPair)
         {
-            if (!NpgsqlParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr))
+            if (!NpgsqlParametr.CreateNew(_context, parametrAttribute.ConstructorArguments, out var parametr))
             {
                 throw new Exception($"Unknown {nameof(NpgsqlParametr)} constructor");
             }

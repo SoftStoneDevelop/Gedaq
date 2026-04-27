@@ -2,6 +2,8 @@
 using System.IO;
 using System.Threading.Tasks;
 using TestsGenerator.Constants;
+using TestsGenerator.Enums;
+using TestsGenerator.TypeInfos;
 
 namespace TestsGenerator.Generators
 {
@@ -11,7 +13,9 @@ namespace TestsGenerator.Generators
 
         public const string AssertMethodName = "AssertModel";
 
-        public async Task Generate(List<Model.ModelType> models, string destinationFolder)
+        public async Task Generate(
+            List<Model.ModelType> models, string destinationFolder,
+            Database database)
         {
             var directory = Directory.CreateDirectory($"{destinationFolder}/Model/");
             foreach (var file in directory.GetFiles())
@@ -21,19 +25,32 @@ namespace TestsGenerator.Generators
 
             foreach (var model in models)
             {
-                foreach (var isFlat in ValueConstants.BoolValues)
-                {
-                    await Model(model, destinationFolder, isFlat: isFlat);
-                }
+                await Model(model, destinationFolder, isFlat: false, withDbTypes: false);
+                await Model(model, destinationFolder, isFlat: true, withDbTypes: false);
+                await ModelInner(model.ModelInner, destinationFolder, withDbTypes: false);
 
-                await ModelInner(model.ModelInner, destinationFolder);
+                if (database == Database.PostgreSQL)
+                {
+                    await ModelInner(model.ModelInner, destinationFolder, withDbTypes: true);
+                }
             }
+        }
+
+        private static string DbTypeAttribute(TypeInfo typeInfo, bool withDbTypes)
+        {
+            if (!withDbTypes)
+            {
+                return string.Empty;
+            }
+
+            return $"[Gedaq.Npgsql.Attributes.DbType({typeInfo.SpecialDbTypeStr()})]";
         }
 
         private async Task Model(
             Model.ModelType model,
             string destinationFolder,
-            bool isFlat)
+            bool isFlat,
+            bool withDbTypes)
         {
             _stringBuilder.Clear();
             _stringBuilder.Append($@"
@@ -42,17 +59,20 @@ using System.Linq;
 
 namespace Tests
 {{
-    public class {model.ClassName(isFlat)}
+    public class {model.ClassName(isFlat, withDbTypes)}
     {{
+        {DbTypeAttribute(model.IdTypeInfo, withDbTypes)}
         public {model.IdType} {model.IdName} {{ get; set; }}
 
+        {DbTypeAttribute(model.TypeInfo, withDbTypes)}
         public {model.ValueType} {model.ValueName} {{ get; set; }}
 
 {(isFlat ? string.Empty : $"        public {model.ModelInnerType} {model.ModelInnerName} {{ get; set; }}")}
 
+        {DbTypeAttribute(model.TypeInfo, withDbTypes)}
         public {model.NullableValueType} {model.NullableValueName} {{ get; set; }}
 
-        public static void {AssertMethodName}({model.ClassName(isFlat)} actual, {model.ClassName(false)} expect, bool checkInInnerOnlyId)
+        public static void {AssertMethodName}({model.ClassName(isFlat, withDbTypes)} actual, {model.ClassName(false)} expect, bool checkInInnerOnlyId)
         {{");
 
             if (model.TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)
@@ -70,7 +90,7 @@ namespace Tests
 }}
 
 ");
-            await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName(isFlat)}.cs", _stringBuilder.ToString());
+            await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName(isFlat, withDbTypes)}.cs", _stringBuilder.ToString());
             _stringBuilder.Clear();
         }
 
@@ -218,7 +238,10 @@ namespace Tests
             }
         }
 
-        private async Task ModelInner(Model.ModelInnerType model, string destinationFolder)
+        private async Task ModelInner(
+            Model.ModelInnerType model,
+            string destinationFolder,
+            bool withDbTypes)
         {
             _stringBuilder.Clear();
             _stringBuilder.Append($@"
@@ -227,15 +250,18 @@ using System.Linq;
 
 namespace Tests
 {{
-    public class {model.ClassName(false)}
+    public class {model.ClassName(withDbTypes, withDbTypes)}
     {{
+        {DbTypeAttribute(model.IdTypeInfo, withDbTypes)}
         public {model.IdType} {model.IdName} {{ get; set; }}
 
+        {DbTypeAttribute(model.TypeInfo, withDbTypes)}
         public {model.ValueType} {model.ValueName} {{ get; set; }}
 
+        {DbTypeAttribute(model.TypeInfo, withDbTypes)}
         public {model.NullableValueType} {model.NullableValueName} {{ get; set; }}
 
-        public static void {AssertMethodName}({model.ClassName(false)} actual, {model.ClassName(false)} expect, bool checkInInnerOnlyId)
+        public static void {AssertMethodName}({model.ClassName(withDbTypes, withDbTypes)} actual, {model.ClassName(false)} expect, bool checkInInnerOnlyId)
         {{");
 
             if (model.TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)
@@ -253,7 +279,7 @@ namespace Tests
 }}
 
 ");
-            await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName(false)}.cs", _stringBuilder.ToString());
+            await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName(withDbTypes, withDbTypes)}.cs", _stringBuilder.ToString());
             _stringBuilder.Clear();
         }
 

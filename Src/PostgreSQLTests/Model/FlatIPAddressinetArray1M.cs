@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatIPAddressinetArray1M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Net.IPAddress[] Value { get; set; }
 
 
 
+        
         public System.Net.IPAddress[] NullableValue { get; set; }
 
         public static void AssertModel(FlatIPAddressinetArray1M actual, IPAddressinetArray1M expect, bool checkInInnerOnlyId)

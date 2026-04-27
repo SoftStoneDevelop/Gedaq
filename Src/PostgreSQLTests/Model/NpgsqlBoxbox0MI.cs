@@ -6,10 +6,13 @@ namespace Tests
 {
     public class NpgsqlBoxbox0MI
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public NpgsqlTypes.NpgsqlBox Value { get; set; }
 
+        
         public NpgsqlTypes.NpgsqlBox? NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlBoxbox0MI actual, NpgsqlBoxbox0MI expect, bool checkInInnerOnlyId)

@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatTimeOnlytime_without_time_zone0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.TimeOnly Value { get; set; }
 
 
 
+        
         public System.TimeOnly? NullableValue { get; set; }
 
         public static void AssertModel(FlatTimeOnlytime_without_time_zone0M actual, TimeOnlytime_without_time_zone0M expect, bool checkInInnerOnlyId)

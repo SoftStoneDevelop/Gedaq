@@ -6,10 +6,13 @@ namespace Tests
 {
     public class Singlefloat0MI
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Single Value { get; set; }
 
+        
         public System.Single? NullableValue { get; set; }
 
         public static void AssertModel(Singlefloat0MI actual, Singlefloat0MI expect, bool checkInInnerOnlyId)
