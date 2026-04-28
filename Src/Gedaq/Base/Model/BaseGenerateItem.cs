@@ -53,7 +53,9 @@ namespace Gedaq.Base.Model
 
         public bool AsPartInterface => PartInterfaceType != null;
 
-        protected bool FillMapTypesFromSingle(TypedConstant argument)
+        protected bool FillMapTypesFromSingle(
+            TypedConstant argument,
+            ProviderInfo providerInfo)
         {
             if (argument.IsNull)
             {
@@ -65,11 +67,15 @@ namespace Gedaq.Base.Model
                 return false;
             }
 
+            providerInfo.CheckIsKnownAttribute(typeParam);
+
             MapTypeInfos = new MapTypeInfo[] { new MapTypeInfo(0) { MapType = typeParam } };
             return true;
         }
 
-        protected bool FillMapTypes(TypedConstant argument)
+        protected bool FillMapTypes(
+            TypedConstant argument,
+            ProviderInfo providerInfo)
         {
             if (argument.IsNull)
             {
@@ -90,6 +96,8 @@ namespace Gedaq.Base.Model
             for (int i = 0; i < argument.Values.Length; i++)
             {
                 var value = (ITypeSymbol)argument.Values[i].Value;
+                providerInfo.CheckIsKnownAttribute(value);
+
                 MapTypeInfos[i] = new MapTypeInfo(i) { MapType = value };
             }
 

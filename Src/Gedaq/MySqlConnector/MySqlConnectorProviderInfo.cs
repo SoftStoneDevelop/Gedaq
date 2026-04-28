@@ -54,7 +54,7 @@ namespace Gedaq.MySqlConnector
             return $"DBNull.Value";
         }
 
-        public override bool IsKnownProviderType(ITypeSymbol type)
+        protected override bool IsKnownProviderTypeInner(ITypeSymbol type)
         {
             return MySqlConnectorMapTypeHelper.IsKnownProviderType(type);
         }

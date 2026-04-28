@@ -5,9 +5,7 @@ namespace Gedaq.MySqlConnector.Helpers
 {
     internal static class MySqlConnectorMapTypeHelper
     {
-        internal static bool IsKnownProviderType(
-            this ITypeSymbol typeSymbol
-            )
+        internal static bool IsKnownProviderType(this ITypeSymbol typeSymbol)
         {
             if (typeSymbol.IsKnownArrayType())
             {
@@ -22,9 +20,7 @@ namespace Gedaq.MySqlConnector.Helpers
             return typeSymbol.IsKnownProviderBaseType();
         }
 
-        internal static bool IsKnownProviderBaseType(
-            this ITypeSymbol namedTypeSymbol
-            )
+        internal static bool IsKnownProviderBaseType(this ITypeSymbol namedTypeSymbol)
         {
             switch (namedTypeSymbol.GetFullTypeName(replaceNullable: true))
             {

@@ -24,7 +24,6 @@ namespace Gedaq.Base.Model
 
         public void ParseAliasesFromType(
             SourceProductionContext context,
-            ProviderInfo providerInfo,
             string overrideAlias = null)
         {
             var mapType = MapType;
@@ -96,14 +95,14 @@ namespace Gedaq.Base.Model
                     }
 
                     var constructorArguments = pAttribute.ConstructorArguments;
-                    if (constructorArguments.Length != 1)
+                    if (constructorArguments.Length != 2)
                     {
                         DiagnosticHelper.ReportDiagnostic(
                             context,
                             DiagnosticConstants.IncorrectAttributeParametrsCount,
                             DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
                             DiagnosticSeverity.Error,
-                            new string[] { "Alias", "1", constructorArguments.Length.ToString() });
+                            new string[] { "Alias", "2", constructorArguments.Length.ToString() });
                     }
 
                     var aliasArgument = constructorArguments[0];

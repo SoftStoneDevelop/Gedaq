@@ -1,7 +1,4 @@
 ﻿using Gedaq.Base.Model;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Gedaq.Npgsql.Model
 {

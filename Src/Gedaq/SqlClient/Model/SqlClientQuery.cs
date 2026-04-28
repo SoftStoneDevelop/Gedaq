@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.Constants;
 using Gedaq.Enums;
 using Gedaq.Helpers;
@@ -26,6 +27,7 @@ namespace Gedaq.SqlClient.Model
             SourceProductionContext context,
             ImmutableArray<TypedConstant> namedArguments,
             INamedTypeSymbol containsType,
+            ProviderInfo providerInfo,
             out SqlClientQuery method)
         {
             method = null;
@@ -54,7 +56,7 @@ namespace Gedaq.SqlClient.Model
                 return false;
             }
 
-            if (!methodSource.FillMapTypes(namedArguments[2]))
+            if (!methodSource.FillMapTypes(namedArguments[2], providerInfo))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,

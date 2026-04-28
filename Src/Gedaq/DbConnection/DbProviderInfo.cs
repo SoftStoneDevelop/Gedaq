@@ -55,7 +55,7 @@ namespace Gedaq.DbConnection
             return $"DBNull.Value";
         }
 
-        public override bool IsKnownProviderType(ITypeSymbol type)
+        protected override bool IsKnownProviderTypeInner(ITypeSymbol type)
         {
             return DbMapTypeHelper.IsKnownProviderType(type);
         }

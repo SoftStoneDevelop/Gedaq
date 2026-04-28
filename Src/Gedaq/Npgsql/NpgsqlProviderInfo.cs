@@ -3,9 +3,6 @@ using Gedaq.Base.Model;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
 using System;
-using System.Collections.Generic;
-using System.Reflection;
-using System.Text;
 
 namespace Gedaq.Npgsql
 {
@@ -72,7 +69,7 @@ namespace Gedaq.Npgsql
             }
         }
 
-        public override bool IsKnownProviderType(ITypeSymbol type)
+        protected override bool IsKnownProviderTypeInner(ITypeSymbol type)
         {
             return Npgsql.Helpers.NpgsqlMapTypeHelper.IsKnownProviderType(type);
         }

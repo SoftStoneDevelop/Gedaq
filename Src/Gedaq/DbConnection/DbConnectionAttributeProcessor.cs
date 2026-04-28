@@ -220,7 +220,7 @@ namespace Gedaq.DbConnection
                     for (int i = 0; i < query.MapTypeInfos.Length; i++)
                     {
                         MapTypeInfo mapTypeInfo = query.MapTypeInfos[i];
-                        mapTypeInfo.ParseAliasesFromType(_context, _providerInfo, query.GetAliasOverride(i));
+                        mapTypeInfo.ParseAliasesFromType(_context, query.GetAliasOverride(i));
                     }
                 }
             }
@@ -273,7 +273,7 @@ namespace Gedaq.DbConnection
             INamedTypeSymbol containsType,
             ReadPair<DbQuery, DbParametr, DbDynamicParametr> readPair)
         {
-            if (!DbQuery.CreateNew(_context, queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
+            if (!DbQuery.CreateNew(_context, queryReadAttribute.ConstructorArguments, containsType, _providerInfo, out var queryReadMethod))
             {
                 throw new Exception($"Unknown {nameof(DbQuery)} constructor");
             }

@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.Constants;
 using Gedaq.Enums;
 using Gedaq.Helpers;
@@ -28,6 +29,7 @@ namespace Gedaq.MySqlConnector.Model
             SourceProductionContext context,
             ImmutableArray<TypedConstant> namedArguments,
             INamedTypeSymbol containsType,
+            ProviderInfo providerInfo,
             out MySqlConnectorQuery method)
         {
             method = null;
@@ -56,7 +58,7 @@ namespace Gedaq.MySqlConnector.Model
                 return false;
             }
 
-            if (!methodSource.FillMapTypes(namedArguments[2]))
+            if (!methodSource.FillMapTypes(namedArguments[2], providerInfo))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
