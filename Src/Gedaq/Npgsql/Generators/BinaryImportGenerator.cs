@@ -132,12 +132,20 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 "async ";
 
             var returnType = methodType == MethodType.Async ? binaryImport.MethodInfo.AsyncResultType.ToResultType() : "void";
-            var methodName = methodType == MethodType.Async ? $@"{binaryImport.MethodName}Async" : $@"{binaryImport.MethodName}";
+            var methodName = methodType == MethodType.Async ? $@"{binaryImport.MethodName}Async" : binaryImport.MethodName;
 
             builder.Append($@"
         {accessModifier} {staticModifier} {asyncKeyword}{returnType} {methodName}(
             {binaryImport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
-            {collectionType} collection,
+            {collectionType} collection");
+
+            if (binaryImport.IsDynamicQuery())
+            {
+                builder.Append($@",
+            System.String query");
+            }
+
+            builder.Append($@",
             TimeSpan? timeout = null");
 
             if (methodType == MethodType.Async)
@@ -167,13 +175,18 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             {NpgsqlSourceType.NpgsqlConnection.ToTypeName()} {NpgsqlSourceType.NpgsqlConnection.ToParametrName()} = {GeneratorHelper.AwaitWord(isAsync)} {sourceType.ToParametrName()}.OpenConnection{GeneratorHelper.AsyncWord(isAsync)}({cancellation});");
             }
 
+            var query = binaryImport.IsDynamicQuery() ?
+                "query" :
+                $@"@""
+{binaryImport.Query}
+""";
+
             _methodCode.Append($@"
             NpgsqlBinaryImporter import = null;
             try
             {{
-                import = {GeneratorHelper.AwaitWord(isAsync)}{NpgsqlSourceType.NpgsqlConnection.ToParametrName()}.BeginBinaryImport{GeneratorHelper.AsyncWord(isAsync)}(@""
-{binaryImport.Query}
-""{(isAsync ? ", cancellationToken" : "")});
+                import = {GeneratorHelper.AwaitWord(isAsync)}{NpgsqlSourceType.NpgsqlConnection.ToParametrName()}.BeginBinaryImport{GeneratorHelper.AsyncWord(isAsync)}({query}
+{(isAsync ? ", cancellationToken" : "")});
 
                 if(timeout.HasValue)
                 {{
@@ -299,7 +312,9 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             }
 
             _methodCode.Append($@"
-                    }}");
+                        continue;
+                    }}
+");
 
             var itemId = 0;
             while (aliases.Count != 0)

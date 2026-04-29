@@ -189,7 +189,7 @@ namespace Gedaq.Base.Batch
                 if (methodType == MethodType.Async)
                 {
                     var cancelAttribute =
-                        source.ReturnType == ReturnType.Enumerable || source.IsCollectionDelegateMap ?
+                        source.ReturnType != ReturnType.Enumerable || source.IsCollectionDelegateMap ?
                         string.Empty :
                         "[EnumeratorCancellation] ";
 

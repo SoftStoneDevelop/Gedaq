@@ -5041,19 +5041,7 @@ ORDER BY
 #region BinaryImportModel
 
 [Gedaq.Npgsql.Attributes.BinaryImport(
-            query: @"
-COPY public.binary_booleanboolean0m
-(
-id,
-value,
-~StartInner::ModelInner:Id~
-    ~Reinterpret::id~
-booleanboolean0mi_id,
-~EndInner::ModelInner~
-nullablevalue
-) 
-FROM STDIN (FORMAT BINARY)
-",
+            query: null,
             methodName:"ImportModel",
             queryMapType: typeof(Booleanboolean0M),
             dbTypes:
@@ -5125,7 +5113,16 @@ ORDER BY
                     importCollection.Add(_testData[12]);
                     importCollection.Add(_testData[13]);
                     importCollection.Add(_testData[14]);
-                ((IBooleanSingleTypeboolean)this).ImportModel(connection, importCollection);
+                (this).ImportModel(connection, importCollection, @"
+COPY public.binary_booleanboolean0m
+(
+id,
+value,
+booleanboolean0mi_id,
+nullablevalue
+) 
+FROM STDIN (FORMAT BINARY)
+");
                 var models = ((IBooleanSingleTypeboolean)this).SelectImportModel(connection).ToList();
                 Assert.That(models, Has.Count.EqualTo(15));
 
@@ -5161,7 +5158,16 @@ ORDER BY
                     importCollection.Add(_testData[27]);
                     importCollection.Add(_testData[28]);
                     importCollection.Add(_testData[29]);
-                await ((IBooleanSingleTypeboolean)this).ImportModelAsync(connection, importCollection);
+                await ((IBooleanSingleTypeboolean)this).ImportModelAsync(connection, importCollection, @"
+COPY public.binary_booleanboolean0m
+(
+id,
+value,
+booleanboolean0mi_id,
+nullablevalue
+) 
+FROM STDIN (FORMAT BINARY)
+");
                 models = await ((IBooleanSingleTypeboolean)this).SelectImportModelAsync(connection);
                 Assert.That(models, Has.Count.EqualTo(30));
 
@@ -5203,18 +5209,7 @@ ORDER BY
 #region BinaryExportModel
 
 [Gedaq.Npgsql.Attributes.BinaryExport(
-            query: @"
-COPY public.binary_booleanboolean0m
-(
-    id,
-    nullablevalue,
-~StartInner::ModelInner:Id~
-    ~Reinterpret::Id~
-    booleanboolean0mi_id,
-~EndInner::ModelInner~
-    value
-) TO STDOUT (FORMAT BINARY)
-",
+            query: null,
             methodName:"ExportModel",
             queryMapTypes: [typeof(Booleanboolean0M)],
             dbTypes:
@@ -5239,7 +5234,15 @@ COPY public.binary_booleanboolean0m
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((IBooleanSingleTypeboolean)this).ExportModel(connection).ToList();
+                var models =  (this).ExportModel(connection, @"
+COPY public.binary_booleanboolean0m
+(
+    id,
+    nullablevalue,
+    booleanboolean0mi_id,
+    value
+) TO STDOUT (FORMAT BINARY)
+").ToList();
                 Assert.That(models, Has.Count.EqualTo(_testData.Count()));
                 for(int modelIndex = 0; modelIndex < _testData.Count(); modelIndex++)
                 {
@@ -5256,7 +5259,15 @@ COPY public.binary_booleanboolean0m
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var models = await ((IBooleanSingleTypeboolean)this).ExportModelAsync(connection).ToListAsync();
+                var models = await (this).ExportModelAsync(connection, @"
+COPY public.binary_booleanboolean0m
+(
+    id,
+    nullablevalue,
+    booleanboolean0mi_id,
+    value
+) TO STDOUT (FORMAT BINARY)
+").ToListAsync();
                 Assert.That(models, Has.Count.EqualTo(_testData.Count()));
                 for(int modelIndex = 0; modelIndex < _testData.Count(); modelIndex++)
                 {
@@ -5272,14 +5283,7 @@ COPY public.binary_booleanboolean0m
 #region BinaryExportModelInner
 
 [Gedaq.Npgsql.Attributes.BinaryExport(
-            query: @"
-COPY public.binary_booleanboolean0mi
-(
-    id,
-    nullablevalue,
-    value
-) TO STDOUT (FORMAT BINARY)
-",
+            query: null,
             methodName:"ExportModelInner",
             queryMapTypes: [typeof(Booleanboolean0MI)],
             dbTypes:
@@ -5303,7 +5307,14 @@ COPY public.binary_booleanboolean0mi
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((IBooleanSingleTypeboolean)this).ExportModelInner(connection).ToList();
+                var models =  (this).ExportModelInner(connection, @"
+COPY public.binary_booleanboolean0mi
+(
+    id,
+    nullablevalue,
+    value
+) TO STDOUT (FORMAT BINARY)
+").ToList();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
                 Assert.That(models, Has.Count.EqualTo(expectCount));
                 for(int modelIndex = 0; modelIndex < expectCount; modelIndex++)
@@ -5321,7 +5332,14 @@ COPY public.binary_booleanboolean0mi
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var models = await ((IBooleanSingleTypeboolean)this).ExportModelInnerAsync(connection).ToListAsync();
+                var models = await (this).ExportModelInnerAsync(connection, @"
+COPY public.binary_booleanboolean0mi
+(
+    id,
+    nullablevalue,
+    value
+) TO STDOUT (FORMAT BINARY)
+").ToListAsync();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
                 Assert.That(models, Has.Count.EqualTo(expectCount));
                 for(int modelIndex = 0; modelIndex < expectCount; modelIndex++)

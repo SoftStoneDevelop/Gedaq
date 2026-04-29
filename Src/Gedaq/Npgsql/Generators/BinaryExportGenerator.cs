@@ -138,7 +138,15 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 
             builder.Append($@"
         {binaryExport.AccessModifier.ToLowerInvariant()} {binaryExport.MethodStaticModifier} {asyncKeyword}{returnType} {methodName}(
-            {binaryExport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
+            {binaryExport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()}");
+
+            if (binaryExport.IsDynamicQuery())
+            {
+                builder.Append($@",
+            System.String query");
+            }
+
+            builder.Append($@",
             TimeSpan? timeout = null");
 
             if (methodType == MethodType.Async)
@@ -169,13 +177,18 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             {NpgsqlSourceType.NpgsqlConnection.ToTypeName()} {NpgsqlSourceType.NpgsqlConnection.ToParametrName()} = {GeneratorHelper.AwaitWord(isAsync)}{sourceType.ToParametrName()}.OpenConnection{GeneratorHelper.AsyncWord(isAsync)}({cancellation});");
             }
 
+            var query = binaryExport.IsDynamicQuery() ?
+                "query" :
+                $@"@""
+{binaryExport.Query}
+""";
+
             _methodCode.Append($@"
             NpgsqlBinaryExporter export = null;
             try
             {{
-                export = {GeneratorHelper.AwaitWord(isAsync)}{NpgsqlSourceType.NpgsqlConnection.ToParametrName()}.BeginBinaryExport{GeneratorHelper.AsyncWord(isAsync)}(@""
-{binaryExport.Query}
-""{(isAsync ? ", cancellationToken" : "")});
+                export = {GeneratorHelper.AwaitWord(isAsync)}{NpgsqlSourceType.NpgsqlConnection.ToParametrName()}.BeginBinaryExport{GeneratorHelper.AsyncWord(isAsync)}({query}
+{(isAsync ? ", cancellationToken" : "")});
                 if(timeout.HasValue)
                 {{
                     export.Timeout = timeout.Value;
