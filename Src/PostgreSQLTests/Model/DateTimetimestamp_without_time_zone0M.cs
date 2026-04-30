@@ -6,12 +6,15 @@ namespace Tests
 {
     public class DateTimetimestamp_without_time_zone0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.DateTime Value { get; set; }
 
         public DateTimetimestamp_without_time_zone0MI ModelInner { get; set; }
 
+        
         public System.DateTime? NullableValue { get; set; }
 
         public static void AssertModel(DateTimetimestamp_without_time_zone0M actual, DateTimetimestamp_without_time_zone0M expect, bool checkInInnerOnlyId)

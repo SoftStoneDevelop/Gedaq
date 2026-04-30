@@ -6,10 +6,16 @@ namespace Tests
 {
     public class IPAddressinetArray1MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public System.Net.IPAddress[] Value { get; set; }
 
+        
+        
         public System.Net.IPAddress[] NullableValue { get; set; }
 
         public static void AssertModel(IPAddressinetArray1MI actual, IPAddressinetArray1MI expect, bool checkInInnerOnlyId)
@@ -49,4 +55,3 @@ namespace Tests
         }
     }
 }
-

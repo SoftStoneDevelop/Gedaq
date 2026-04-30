@@ -1,0 +1,107 @@
+﻿using Gedaq.Base.Model;
+using Gedaq.Helpers;
+using Gedaq.Npgsql.Enums;
+using Microsoft.CodeAnalysis;
+using System;
+
+namespace Gedaq.Npgsql.Model
+{
+    internal class BinaryCopyBase : BaseGenerateItem
+    {
+        protected int[] _npgSqlDbTypes;
+
+        public NpgsqlSourceType SourceType { get; protected set; }
+
+        public string Query;
+
+        public bool IsDynamicQuery()
+        {
+            return Query == null;
+        }
+
+        public bool HaveNpgSqlDbTypes => _npgSqlDbTypes?.Length > 0;
+
+        public override bool IsCollectionDelegateMap => MapTypeInfos?.Length > 1;
+
+        protected bool FillSourceType(TypedConstant argument)
+        {
+            if (argument.Kind != TypedConstantKind.Enum ||
+                !(argument.Type is INamedTypeSymbol namedTypeSymbol4) ||
+                !namedTypeSymbol4.IsAssignableFrom("Gedaq.Npgsql.Enums", "SourceType"))
+            {
+                return false;
+            }
+
+            SourceType = (NpgsqlSourceType)argument.Value;
+            return true;
+        }
+
+        protected bool FillNpgsqlDbTypes(TypedConstant argument)
+        {
+            if (!(argument.Type is IArrayTypeSymbol arrayTypeSymbol) ||
+                arrayTypeSymbol.Rank != 1 ||
+                arrayTypeSymbol.ElementType.TypeKind != TypeKind.Enum ||
+                !(arrayTypeSymbol.ElementType is INamedTypeSymbol elementType) ||
+                !elementType.IsAssignableFrom("NpgsqlTypes", "NpgsqlDbType"))
+            {
+                return false;
+            }
+
+            if (argument.IsNull)
+            {
+                return true;
+            }
+
+            _npgSqlDbTypes = new int[argument.Values.Length];
+            for (int i = 0; i < argument.Values.Length; i++)
+            {
+                _npgSqlDbTypes[i] = (int)argument.Values[i].Value;
+            }
+
+            return true;
+        }
+
+        protected bool FillQuery(TypedConstant argument)
+        {
+            if (!(argument.Type is INamedTypeSymbol strParam) ||
+                strParam.Name != nameof(String))
+            {
+                return false;
+            }
+
+            Query = (string)argument.Value;
+            return true;
+        }
+
+        /// <summary>
+        /// Return not null if have override
+        /// </summary>
+        public int[] GetNpgSqlDbTypesOverride(int typeIndex)
+        {
+            if (!HaveMapTypes || _npgSqlDbTypes == null || _npgSqlDbTypes.Length <= typeIndex)
+            {
+                return null;
+            }
+
+            return _npgSqlDbTypes;
+        }
+
+        public void SetAliases(MapTypeInfo mapTypeInfo, Aliases aliases, int[] npgSqlDbTypeOverride)
+        {
+            if (npgSqlDbTypeOverride == null)
+            {
+                mapTypeInfo.Aliases = aliases;
+                return;
+            }
+
+            var fields = aliases.AllFields();
+            for (int i = 0; i < _npgSqlDbTypes.Length; i++)
+            {
+                Field field = fields[i];
+                field.AdditionalInfo = new NpgsqlFieldInfo(_npgSqlDbTypes[i]);
+            }
+
+            mapTypeInfo.Aliases = aliases;
+        }
+    }
+}

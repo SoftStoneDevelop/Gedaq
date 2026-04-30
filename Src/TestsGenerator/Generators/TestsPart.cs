@@ -17,7 +17,7 @@ namespace TestsGenerator.Generators
         public async Task Generate(Model.ModelType model, Database database, string destinationFolder)
         {
             _stringBuilder.Clear();
-            var storage = InitStorage(model, 30);
+            var storage = InitStorage(model, 35);
 
             var interfaceTypeName = InterfaceName(model);
             Start(model, database);
@@ -78,8 +78,9 @@ namespace TestsGenerator.Generators
                 case Database.PostgreSQL:
                 {
                     StartRegion("BinaryImportModelInner");
+                    var order = 0;
                     BinaryImportModelInnerTest.Generate(
-                        0, 
+                        ref order, 
                         _stringBuilder, 
                         model, 
                         storage,
@@ -87,8 +88,9 @@ namespace TestsGenerator.Generators
                     EndRegion();
 
                     StartRegion("BinaryImportModel");
+                    order += 1;
                     BinaryImportModelTest.Generate(
-                        1, 
+                        ref order, 
                         _stringBuilder, 
                         model, 
                         storage,
@@ -97,7 +99,7 @@ namespace TestsGenerator.Generators
 
                     StartRegion("BinaryExportModel");
                     BinaryExportModelTest.Generate(
-                        2, 
+                        order + 2, 
                         _stringBuilder, 
                         model, 
                         storage,
@@ -106,10 +108,9 @@ namespace TestsGenerator.Generators
 
                     StartRegion("BinaryExportModelInner");
                     BinaryExportModelInnerTest.Generate(
-                        2, 
+                        order + 2, 
                         _stringBuilder, 
-                        model, 
-                        storage,
+                        model,
                         interfaceTypeName);
                     EndRegion();
                     break;

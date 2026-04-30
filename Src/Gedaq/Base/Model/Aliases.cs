@@ -1,10 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using Gedaq.Constants;
+using Gedaq.Helpers;
+using Microsoft.CodeAnalysis;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Gedaq.Base.Model
 {
     internal class Aliases
     {
+        private List<Field> _fields = new List<Field>();
+
         public Aliases()
         {
         }
@@ -14,8 +19,6 @@ namespace Gedaq.Base.Model
             EntityName = entityName;
             LinkKey = linkKey;
         }
-
-        public List<Field> Fields = new List<Field>();
 
         /// <summary>
         /// Name of this Entity in root entity
@@ -33,39 +36,79 @@ namespace Gedaq.Base.Model
 
         public Field GetLinkField()
         {
-            return Fields.First(f => f.Name.ToLowerInvariant() == LinkKey.ToLowerInvariant());
+            return Fields().First(f => f.Name.ToLowerInvariant() == LinkKey.ToLowerInvariant());
         }
 
         public bool IsRoot => EntityName == null;
         public List<Aliases> InnerEntities = new List<Aliases>();
-        private List<Field> _allFields = null;
+        private Field[] _allFieldsByOrder = null;
+        private Field[] _fieldsByOrder = null;
 
-        public List<Field> AllFieldsOrderByPosition()
+        public void AddField(Field field)
         {
-            if(_allFields == null)
+            _fields.Add(field);
+        }
+
+        public void FreezeFields(SourceProductionContext context)
+        {
+            FreezeFieldsWithoutCheck();
+
+            var positionedFields = AllFields().Where(wh => wh.Position.HasValue).ToArray();
+            var uniquePositions = positionedFields.Select(s => s.Position.Value).Distinct().Count();
+            if (uniquePositions != positionedFields.Length)
             {
-                _allFields = new List<Field>();
+                DiagnosticHelper.ReportDiagnostic(
+                    context,
+                    DiagnosticConstants.ColumnPositionNotUnique,
+                    DiagnosticConstants.ColumnPositionNotUniqueDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { positionedFields.Length.ToString(), uniquePositions.ToString() });
             }
-            else
+        }
+
+        public void FreezeFieldsWithoutCheck()
+        {
+            _ = Fields();
+            _ = AllFields();
+
+            _fields = null;
+        }
+
+        public Field[] Fields()
+        {
+            if (_fieldsByOrder != null)
             {
-                return _allFields;
+                return _fieldsByOrder;
             }
+
+            _fieldsByOrder = _fields.OrderBy(o => o.Position).ToArray();
+            return _fieldsByOrder;
+        }
+
+        public Field[] AllFields()
+        {
+            if(_allFieldsByOrder != null)
+            {
+                return _allFieldsByOrder;
+            }
+
+            var tempFields = new List<Field>();
 
             var entities = new Stack<Aliases>();
             entities.Push(this);
             while (entities.Count != 0)
             {
                 var current = entities.Pop();
-                _allFields.AddRange(current.Fields);
+                tempFields.AddRange(current.Fields());
                 foreach (var inner in current.InnerEntities)
                 {
                     entities.Push(inner);
                 }
             }
 
-            _allFields = _allFields.OrderBy(f => f.Position).ToList();
+            _allFieldsByOrder = tempFields.OrderBy(f => f.Position).ToArray();
 
-            return _allFields;
+            return _allFieldsByOrder;
         }
     }
 }

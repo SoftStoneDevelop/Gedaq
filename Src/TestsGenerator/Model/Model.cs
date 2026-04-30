@@ -16,9 +16,9 @@ namespace TestsGenerator.Model
             ModelInner = new ModelInnerType(idTypeInfo, typeInfo, valueStorageFactory());
         }
 
-        public override string ClassName(bool isFlat)
+        public override string ClassName(bool isFlat, bool withDbTypeAttributes = false)
         {
-            return $"{ValueConstants.FlatModelPrefix(isFlat)}{TypeInfo.ItemTypeName}{TypeInfo.DbSqlTypeWithoutSpace()}{(int)TypeInfo.EnumerableType}M";
+            return $"{ValueConstants.FlatModelPrefix(isFlat)}{TypeInfo.ItemTypeName}{TypeInfo.DbSqlTypeWithoutSpace()}{(int)TypeInfo.EnumerableType}M{(withDbTypeAttributes ? "WA" : string.Empty)}";
         }
 
         public override string TableName => ClassName(false).ToLowerInvariant();

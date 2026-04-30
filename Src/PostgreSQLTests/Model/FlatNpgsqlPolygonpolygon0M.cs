@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatNpgsqlPolygonpolygon0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public NpgsqlTypes.NpgsqlPolygon Value { get; set; }
 
 
 
+        
         public NpgsqlTypes.NpgsqlPolygon? NullableValue { get; set; }
 
         public static void AssertModel(FlatNpgsqlPolygonpolygon0M actual, NpgsqlPolygonpolygon0M expect, bool checkInInnerOnlyId)

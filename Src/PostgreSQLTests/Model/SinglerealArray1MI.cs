@@ -6,10 +6,16 @@ namespace Tests
 {
     public class SinglerealArray1MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public System.Single[] Value { get; set; }
 
+        
+        
         public System.Single[] NullableValue { get; set; }
 
         public static void AssertModel(SinglerealArray1MI actual, SinglerealArray1MI expect, bool checkInInnerOnlyId)
@@ -49,4 +55,3 @@ namespace Tests
         }
     }
 }
-

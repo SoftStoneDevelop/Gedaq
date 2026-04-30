@@ -6,10 +6,16 @@ namespace Tests
 {
     public class StringtextArray1MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public System.String[] Value { get; set; }
 
+        
+        
         public System.String[] NullableValue { get; set; }
 
         public static void AssertModel(StringtextArray1MI actual, StringtextArray1MI expect, bool checkInInnerOnlyId)
@@ -49,4 +55,3 @@ namespace Tests
         }
     }
 }
-

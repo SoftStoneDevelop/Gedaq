@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatBigIntegernumericArray1M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Numerics.BigInteger[] Value { get; set; }
 
 
 
+        
         public System.Numerics.BigInteger[] NullableValue { get; set; }
 
         public static void AssertModel(FlatBigIntegernumericArray1M actual, BigIntegernumericArray1M expect, bool checkInInnerOnlyId)

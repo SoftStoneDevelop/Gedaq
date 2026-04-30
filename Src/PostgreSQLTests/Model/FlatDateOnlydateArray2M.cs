@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatDateOnlydateArray2M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Collections.Generic.List<System.DateOnly> Value { get; set; }
 
 
 
+        
         public System.Collections.Generic.List<System.DateOnly> NullableValue { get; set; }
 
         public static void AssertModel(FlatDateOnlydateArray2M actual, DateOnlydateArray2M expect, bool checkInInnerOnlyId)

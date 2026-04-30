@@ -6,10 +6,16 @@ namespace Tests
 {
     public class NpgsqlBoxboxArray1MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public NpgsqlTypes.NpgsqlBox[] Value { get; set; }
 
+        
+        
         public NpgsqlTypes.NpgsqlBox[] NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlBoxboxArray1MI actual, NpgsqlBoxboxArray1MI expect, bool checkInInnerOnlyId)
@@ -49,4 +55,3 @@ namespace Tests
         }
     }
 }
-

@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatNpgsqlCirclecircle0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public NpgsqlTypes.NpgsqlCircle Value { get; set; }
 
 
 
+        
         public NpgsqlTypes.NpgsqlCircle? NullableValue { get; set; }
 
         public static void AssertModel(FlatNpgsqlCirclecircle0M actual, NpgsqlCirclecircle0M expect, bool checkInInnerOnlyId)

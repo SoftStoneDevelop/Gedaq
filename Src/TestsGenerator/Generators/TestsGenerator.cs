@@ -21,7 +21,10 @@ namespace TestsGenerator.Generators
             AddModels(database);
 
             var modelgenerator = new ModelGenerator();
-            var modelGeneratorTask = modelgenerator.Generate(_models.Distinct(new ModelTypeComparer()).ToList(), destinationFolder);
+            var modelGeneratorTask = modelgenerator.Generate(
+                _models.Distinct(new ModelTypeComparer()).ToList(),
+                destinationFolder,
+                database);
 
             var generateTestOneTimeParts = GenerateTestOneTimeParts(database, destinationFolder);
             var generateTestParts = GenerateTestParts(database, destinationFolder);

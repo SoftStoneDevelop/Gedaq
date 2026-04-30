@@ -87,17 +87,17 @@ VALUES (
                 parametrType: typeof({model.ModelInner.IdType}),
                 parametrName: ""{model.ModelInner.IdColumnName}"",
                 methodParametrName: ""{model.ModelInner.IdColumnName}"", 
-                sqlDbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()}),
+                dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()}),
             Gedaq.SqlClient.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.ValueType}),
                 parametrName: ""{model.ModelInner.ValueColumnName}"",
                 methodParametrName: ""{model.ModelInner.ValueColumnName}"",
-                sqlDbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()}),
+                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()}),
             Gedaq.SqlClient.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.NullableValueType}), 
                 parametrName: ""{model.ModelInner.NullableValueColumnName}"",
                 methodParametrName: ""{model.ModelInner.NullableValueColumnName}"",
-                sqlDbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()})
+                dbType: {model.ModelInner.TypeInfo.SpecialDbTypeStr()})
             ]
         public void {_testName}Config()
         {{

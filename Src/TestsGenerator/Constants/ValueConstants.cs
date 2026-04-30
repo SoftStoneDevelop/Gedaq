@@ -16,6 +16,11 @@
             return isMultyMap ? "MM" : string.Empty;
         }
 
+        public static string WithAttributePrefix(bool withAttribute)
+        {
+            return withAttribute ? "WA" : string.Empty;
+        }
+
         public static string FlatModelPrefix(bool isFlat)
         {
             return isFlat ? "Flat" : string.Empty;

@@ -189,7 +189,7 @@ namespace Gedaq.Base.Batch
                 if (methodType == MethodType.Async)
                 {
                     var cancelAttribute =
-                        source.ReturnType == ReturnType.Enumerable || source.IsCollectionDelegateMap ?
+                        source.ReturnType != ReturnType.Enumerable || source.IsCollectionDelegateMap ?
                         string.Empty :
                         "[EnumeratorCancellation] ";
 
@@ -1594,7 +1594,7 @@ namespace Gedaq.Base.Batch
                 return;
             }
 
-            var firstField = first.MapTypeInfos[0].Aliases.AllFieldsOrderByPosition().First();
+            var firstField = first.MapTypeInfos[0].Aliases.AllFields()[0];
             first.MapTypeInfos[0].MapType.GetPropertyOrFieldName(firstField.Name, out _, out var typeProp);
             type = typeProp;
             typeName = type.GetFullTypeName(replaceNullable: true);

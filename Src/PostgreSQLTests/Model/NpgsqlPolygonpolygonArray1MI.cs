@@ -6,10 +6,16 @@ namespace Tests
 {
     public class NpgsqlPolygonpolygonArray1MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public NpgsqlTypes.NpgsqlPolygon[] Value { get; set; }
 
+        
+        
         public NpgsqlTypes.NpgsqlPolygon[] NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlPolygonpolygonArray1MI actual, NpgsqlPolygonpolygonArray1MI expect, bool checkInInnerOnlyId)
@@ -49,4 +55,3 @@ namespace Tests
         }
     }
 }
-

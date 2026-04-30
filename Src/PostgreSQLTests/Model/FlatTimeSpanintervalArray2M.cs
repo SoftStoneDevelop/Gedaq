@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatTimeSpanintervalArray2M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Collections.Generic.List<System.TimeSpan> Value { get; set; }
 
 
 
+        
         public System.Collections.Generic.List<System.TimeSpan> NullableValue { get; set; }
 
         public static void AssertModel(FlatTimeSpanintervalArray2M actual, TimeSpanintervalArray2M expect, bool checkInInnerOnlyId)

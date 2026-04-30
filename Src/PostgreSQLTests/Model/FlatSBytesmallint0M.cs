@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatSBytesmallint0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.SByte Value { get; set; }
 
 
 
+        
         public System.SByte? NullableValue { get; set; }
 
         public static void AssertModel(FlatSBytesmallint0M actual, SBytesmallint0M expect, bool checkInInnerOnlyId)

@@ -41,6 +41,6 @@ namespace TestsGenerator.Model
 
         public abstract string TableName { get; }
 
-        public abstract string ClassName(bool isFlat);
+        public abstract string ClassName(bool isFlat, bool withDbTypeAttributes = false);
     }
 }

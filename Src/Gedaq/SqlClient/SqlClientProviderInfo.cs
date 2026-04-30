@@ -56,7 +56,7 @@ namespace Gedaq.SqlClient
             return $"DBNull.Value";
         }
 
-        public override bool IsKnownProviderType(ITypeSymbol type)
+        protected override bool IsKnownProviderTypeInner(ITypeSymbol type)
         {
             return SqlClientMapTypeHelper.IsKnownProviderType(type);
         }

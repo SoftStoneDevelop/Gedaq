@@ -1,10 +1,10 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.Constants;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
-using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 
@@ -29,6 +29,7 @@ namespace Gedaq.Npgsql.Model
             SourceProductionContext context,
             ImmutableArray<TypedConstant> namedArguments,
             INamedTypeSymbol containsType,
+            ProviderInfo providerInfo,
             out NpgsqlQuery method)
         {
             method = null;
@@ -39,7 +40,7 @@ namespace Gedaq.Npgsql.Model
                     DiagnosticConstants.IncorrectAttributeParametrsCount,
                     DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
                     DiagnosticSeverity.Error,
-                    namedArguments.Length.ToString());
+                    new string[] { "Query", "12", namedArguments.Length.ToString() });
 
                 return false;
             }
@@ -57,7 +58,7 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!methodSource.FillMapTypes(namedArguments[2]))
+            if (!methodSource.FillMapTypes(namedArguments[2], providerInfo))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,

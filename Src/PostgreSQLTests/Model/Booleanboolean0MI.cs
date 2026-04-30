@@ -6,10 +6,16 @@ namespace Tests
 {
     public class Booleanboolean0MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public System.Boolean Value { get; set; }
 
+        
+        
         public System.Boolean? NullableValue { get; set; }
 
         public static void AssertModel(Booleanboolean0MI actual, Booleanboolean0MI expect, bool checkInInnerOnlyId)
@@ -30,4 +36,3 @@ namespace Tests
         }
     }
 }
-

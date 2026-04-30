@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatDecimalnumericArray1M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Decimal[] Value { get; set; }
 
 
 
+        
         public System.Decimal[] NullableValue { get; set; }
 
         public static void AssertModel(FlatDecimalnumericArray1M actual, DecimalnumericArray1M expect, bool checkInInnerOnlyId)

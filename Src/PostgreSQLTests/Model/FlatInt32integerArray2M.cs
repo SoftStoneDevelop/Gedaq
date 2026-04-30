@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatInt32integerArray2M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Collections.Generic.List<System.Int32> Value { get; set; }
 
 
 
+        
         public System.Collections.Generic.List<System.Int32> NullableValue { get; set; }
 
         public static void AssertModel(FlatInt32integerArray2M actual, Int32integerArray2M expect, bool checkInInnerOnlyId)

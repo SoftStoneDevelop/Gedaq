@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatStringtextArray2M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Collections.Generic.List<System.String> Value { get; set; }
 
 
 
+        
         public System.Collections.Generic.List<System.String> NullableValue { get; set; }
 
         public static void AssertModel(FlatStringtextArray2M actual, StringtextArray2M expect, bool checkInInnerOnlyId)

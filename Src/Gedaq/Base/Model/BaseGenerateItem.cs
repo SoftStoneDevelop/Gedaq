@@ -13,9 +13,25 @@ namespace Gedaq.Base.Model
     {
         public MapTypeInfo[] MapTypeInfos { get; protected set; }
 
-        public abstract string MapDelegateParametrName { get; }
+        public virtual string MapDelegateParametrName => "mapDelegate";
 
-        public abstract string MapDelegateParametrType();
+        public virtual string MapDelegateParametrType()
+        {
+            var builder = new StringBuilder("Action<");
+            for (int i = 0; i < MapTypeInfos.Length; i++)
+            {
+                var mapTypeInfo = MapTypeInfos[i];
+                if (i != 0)
+                {
+                    builder.Append(",");
+                }
+
+                builder.Append(mapTypeInfo.ItemTypeName);
+            }
+            builder.Append(">");
+
+            return builder.ToString();
+        }
 
         public bool HaveMapTypes => MapTypeInfos?.Length > 0;
 
@@ -54,7 +70,29 @@ namespace Gedaq.Base.Model
 
         public bool AsPartInterface => PartInterfaceType != null;
 
-        protected bool FillMapTypes(TypedConstant argument)
+        protected bool FillMapTypesFromSingle(
+            TypedConstant argument,
+            ProviderInfo providerInfo)
+        {
+            if (argument.IsNull)
+            {
+                return true;
+            }
+
+            if (!(argument.Value is ITypeSymbol typeParam))
+            {
+                return false;
+            }
+
+            providerInfo.CheckIsKnownAttribute(typeParam);
+
+            MapTypeInfos = new MapTypeInfo[] { new MapTypeInfo(0) { MapType = typeParam } };
+            return true;
+        }
+
+        protected bool FillMapTypes(
+            TypedConstant argument,
+            ProviderInfo providerInfo)
         {
             if (argument.IsNull)
             {
@@ -75,6 +113,8 @@ namespace Gedaq.Base.Model
             for (int i = 0; i < argument.Values.Length; i++)
             {
                 var value = (ITypeSymbol)argument.Values[i].Value;
+                providerInfo.CheckIsKnownAttribute(value);
+
                 MapTypeInfos[i] = new MapTypeInfo(i) { MapType = value };
             }
 

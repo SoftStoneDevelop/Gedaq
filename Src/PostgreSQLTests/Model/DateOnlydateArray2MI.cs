@@ -6,10 +6,16 @@ namespace Tests
 {
     public class DateOnlydateArray2MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public System.Collections.Generic.List<System.DateOnly> Value { get; set; }
 
+        
+        
         public System.Collections.Generic.List<System.DateOnly> NullableValue { get; set; }
 
         public static void AssertModel(DateOnlydateArray2MI actual, DateOnlydateArray2MI expect, bool checkInInnerOnlyId)
@@ -49,4 +55,3 @@ namespace Tests
         }
     }
 }
-

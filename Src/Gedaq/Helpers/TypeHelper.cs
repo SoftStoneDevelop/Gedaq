@@ -1,6 +1,7 @@
 ﻿using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Text;
 
 namespace Gedaq.Helpers
@@ -141,11 +142,12 @@ namespace Gedaq.Helpers
             return true;
         }
 
-        internal static void GetPropertyOrFieldName(
+        internal static bool GetPropertyOrFieldName(
             this ITypeSymbol typeSymbol,
             string propertyName,
             out string findName,
-            out ITypeSymbol findType)
+            out ITypeSymbol findType,
+            bool throwExceptionIfNotFind = true)
         {
             var propertyLower = propertyName.ToLowerInvariant();
             foreach (var member in typeSymbol.GetMembers())
@@ -154,18 +156,46 @@ namespace Gedaq.Helpers
                 {
                     findName = propertySymbol.Name;
                     findType = propertySymbol.Type;
-                    return;
+                    return true;
                 }
 
                 if (member is IFieldSymbol fieldSymbol && fieldSymbol.Name.ToLowerInvariant() == propertyLower)
                 {
                     findName = fieldSymbol.Name;
                     findType = fieldSymbol.Type;
-                    return;
+                    return true;
                 }
             }
 
-            throw new Exception($"Type '{typeSymbol.GetFullTypeName()}' does not contain a member named '{propertyName}'");
+            if (throwExceptionIfNotFind)
+            {
+                throw new Exception($"Type '{typeSymbol.GetFullTypeName()}' does not contain a member named '{propertyName}'");
+            }
+            else
+            {
+                findName = null;
+                findType = null;
+                return false;
+            }
+        }
+
+        internal static bool GetPropertyAttributes(
+            this ITypeSymbol typeSymbol,
+            string propertyName,
+            out ImmutableArray<AttributeData> attributes)
+        {
+            var propertyLower = propertyName.ToLowerInvariant();
+            foreach (var member in typeSymbol.GetMembers())
+            {
+                if (member is IPropertySymbol propertySymbol && propertySymbol.Name.ToLowerInvariant() == propertyLower)
+                {
+                    attributes = propertySymbol.GetAttributes();
+                    return true;
+                }
+            }
+
+            attributes = default;
+            return false;
         }
 
         public static bool IsPowerOfTwo(this int x)

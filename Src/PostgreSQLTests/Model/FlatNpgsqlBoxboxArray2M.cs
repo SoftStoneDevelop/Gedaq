@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatNpgsqlBoxboxArray2M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlBox> Value { get; set; }
 
 
 
+        
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlBox> NullableValue { get; set; }
 
         public static void AssertModel(FlatNpgsqlBoxboxArray2M actual, NpgsqlBoxboxArray2M expect, bool checkInInnerOnlyId)

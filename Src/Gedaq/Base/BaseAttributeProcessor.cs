@@ -57,26 +57,22 @@ namespace Gedaq.Base
 
         protected void ProcessAttribute(
             AttributeData attribute,
-            INamedTypeSymbol containsType, 
             List<FormatParametr> formatParametrs)
         {
             if (attribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "QueryFormatAttribute"))
             {
-                ProcessQueryFormat(attribute, containsType, formatParametrs);
+                ProcessQueryFormat(attribute, formatParametrs);
             }
         }
 
         private void ProcessQueryFormat(
             AttributeData formatAttribute,
-            INamedTypeSymbol containsType,
             List<FormatParametr> formatParametrs)
         {
             if (!FormatParametr.CreateNew(
                 _context,
                 formatAttribute.ConstructorArguments,
-                containsType,
-                out var format,
-                out var _))
+                out var format))
             {
                 return;
             }

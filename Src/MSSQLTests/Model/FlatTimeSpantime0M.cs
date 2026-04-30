@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatTimeSpantime0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.TimeSpan Value { get; set; }
 
 
 
+        
         public System.TimeSpan? NullableValue { get; set; }
 
         public static void AssertModel(FlatTimeSpantime0M actual, TimeSpantime0M expect, bool checkInInnerOnlyId)

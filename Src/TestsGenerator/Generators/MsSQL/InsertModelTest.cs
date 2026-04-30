@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-using TestsGenerator.Constants;
+﻿using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
@@ -90,23 +89,23 @@ VALUES (
                 parametrType: typeof({model.ModelInner.IdType}),
                 parametrName: ""{model.ModelInner.IdColumnName}"",
                 methodParametrName: ""{model.ModelInner.IdColumnName}"",
-                sqlDbType: {model.IdTypeInfo.SpecialDbTypeStr()}),
+                dbType: {model.IdTypeInfo.SpecialDbTypeStr()}),
             Gedaq.SqlClient.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.ValueType}), 
                 parametrName: ""{model.ModelInner.ValueColumnName}"", 
                 methodParametrName: ""{model.ModelInner.ValueColumnName}"", 
-                sqlDbType: {model.TypeInfo.SpecialDbTypeStr()}),
+                dbType: {model.TypeInfo.SpecialDbTypeStr()}),
             Gedaq.SqlClient.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.NullableValueType}), 
                 parametrName: ""{model.ModelInner.NullableValueColumnName}"", 
                 methodParametrName: ""{model.ModelInner.NullableValueColumnName}"", 
-                sqlDbType: {model.TypeInfo.SpecialDbTypeStr()},
+                dbType: {model.TypeInfo.SpecialDbTypeStr()},
                 nullable: true),
             Gedaq.SqlClient.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdType}?), 
                 parametrName: ""{model.ModelInnerColumnName}"", 
                 methodParametrName: ""{model.ModelInnerColumnName}"", 
-                sqlDbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
+                dbType: {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
                 nullable: true)]
         public void {_testName}Config()
         {{

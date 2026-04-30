@@ -1,4 +1,5 @@
-﻿using Gedaq.Base.Model;
+﻿using Gedaq.Base;
+using Gedaq.Base.Model;
 using Gedaq.Constants;
 using Gedaq.Helpers;
 using Microsoft.CodeAnalysis;
@@ -21,6 +22,7 @@ namespace Gedaq.DbConnection.Model
             SourceProductionContext context,
             ImmutableArray<TypedConstant> namedArguments,
             INamedTypeSymbol containsType,
+            ProviderInfo providerInfo,
             out DbQuery query)
         {
             query = null;
@@ -31,7 +33,7 @@ namespace Gedaq.DbConnection.Model
                     DiagnosticConstants.IncorrectAttributeParametrsCount,
                     DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
                     DiagnosticSeverity.Error,
-                    namedArguments.Length.ToString());
+                    new string[] { "Query", "11", namedArguments.Length.ToString() });
 
                 return false;
             }
@@ -49,7 +51,7 @@ namespace Gedaq.DbConnection.Model
                 return false;
             }
 
-            if (!methodSource.FillMapTypes(namedArguments[2]))
+            if (!methodSource.FillMapTypes(namedArguments[2], providerInfo))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,

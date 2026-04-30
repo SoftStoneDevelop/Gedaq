@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatBytesmallintArray1M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Byte[] Value { get; set; }
 
 
 
+        
         public System.Byte[] NullableValue { get; set; }
 
         public static void AssertModel(FlatBytesmallintArray1M actual, BytesmallintArray1M expect, bool checkInInnerOnlyId)

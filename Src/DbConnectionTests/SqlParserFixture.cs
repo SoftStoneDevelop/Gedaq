@@ -1,5 +1,4 @@
-﻿using Gedaq;
-using Gedaq.Parser;
+﻿using Gedaq.Parser;
 using NUnit.Framework;
 using System;
 
@@ -45,20 +44,20 @@ FROM person p1
             {
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
                 Assert.That(isRowAffected, Is.EqualTo(false));
-                Assert.That(aliases.Fields, Has.Count.EqualTo(4));
+                Assert.That(aliases.Fields(), Has.Length.EqualTo(4));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(0));
 
-                Assert.That(aliases.Fields[0].Name, Is.EqualTo("ASid"));
-                Assert.That(aliases.Fields[0].Position, Is.EqualTo(0));
+                Assert.That(aliases.Fields()[0].Name, Is.EqualTo("ASid"));
+                Assert.That(aliases.Fields()[0].Position, Is.EqualTo(0));
 
-                Assert.That(aliases.Fields[1].Name, Is.EqualTo("firstname"));
-                Assert.That(aliases.Fields[1].Position, Is.EqualTo(1));
+                Assert.That(aliases.Fields()[1].Name, Is.EqualTo("firstname"));
+                Assert.That(aliases.Fields()[1].Position, Is.EqualTo(1));
 
-                Assert.That(aliases.Fields[2].Name, Is.EqualTo("middlenameN"));
-                Assert.That(aliases.Fields[2].Position, Is.EqualTo(2));
+                Assert.That(aliases.Fields()[2].Name, Is.EqualTo("middlenameN"));
+                Assert.That(aliases.Fields()[2].Position, Is.EqualTo(2));
 
-                Assert.That(aliases.Fields[3].Name, Is.EqualTo("lastname"));
-                Assert.That(aliases.Fields[3].Position, Is.EqualTo(3));
+                Assert.That(aliases.Fields()[3].Name, Is.EqualTo("lastname"));
+                Assert.That(aliases.Fields()[3].Position, Is.EqualTo(3));
             });
         }
 
@@ -90,20 +89,20 @@ FROM person
             {
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
                 Assert.That(isRowAffected, Is.EqualTo(false));
-                Assert.That(aliases.Fields, Has.Count.EqualTo(4));
+                Assert.That(aliases.Fields(), Has.Length.EqualTo(4));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(0));
 
-                Assert.That(aliases.Fields[0].Name, Is.EqualTo("id"));
-                Assert.That(aliases.Fields[0].Position, Is.EqualTo(0));
+                Assert.That(aliases.Fields()[0].Name, Is.EqualTo("id"));
+                Assert.That(aliases.Fields()[0].Position, Is.EqualTo(0));
 
-                Assert.That(aliases.Fields[1].Name, Is.EqualTo("firstname"));
-                Assert.That(aliases.Fields[1].Position, Is.EqualTo(1));
+                Assert.That(aliases.Fields()[1].Name, Is.EqualTo("firstname"));
+                Assert.That(aliases.Fields()[1].Position, Is.EqualTo(1));
 
-                Assert.That(aliases.Fields[2].Name, Is.EqualTo("middlename"));
-                Assert.That(aliases.Fields[2].Position, Is.EqualTo(2));
+                Assert.That(aliases.Fields()[2].Name, Is.EqualTo("middlename"));
+                Assert.That(aliases.Fields()[2].Position, Is.EqualTo(2));
 
-                Assert.That(aliases.Fields[3].Name, Is.EqualTo("lastname"));
-                Assert.That(aliases.Fields[3].Position, Is.EqualTo(3));
+                Assert.That(aliases.Fields()[3].Name, Is.EqualTo("lastname"));
+                Assert.That(aliases.Fields()[3].Position, Is.EqualTo(3));
             });
         }
 
@@ -167,14 +166,14 @@ FROM person p1
             {
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
                 Assert.That(isRowAffected, Is.EqualTo(false));
-                Assert.That(aliases.Fields, Has.Count.EqualTo(2));
+                Assert.That(aliases.Fields(), Has.Length.EqualTo(2));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(0));
 
-                Assert.That(aliases.Fields[0].Name, Is.EqualTo("person"));
-                Assert.That(aliases.Fields[0].Position, Is.EqualTo(0));
+                Assert.That(aliases.Fields()[0].Name, Is.EqualTo("person"));
+                Assert.That(aliases.Fields()[0].Position, Is.EqualTo(0));
 
-                Assert.That(aliases.Fields[1].Name, Is.EqualTo("person2"));
-                Assert.That(aliases.Fields[1].Position, Is.EqualTo(1));
+                Assert.That(aliases.Fields()[1].Name, Is.EqualTo("person2"));
+                Assert.That(aliases.Fields()[1].Position, Is.EqualTo(1));
             });
         }
 
@@ -291,51 +290,51 @@ LEFT JOIN country c ON c.id = i.country_id
                 Assert.That(inSql, Is.EqualTo(outSql));
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
                 Assert.That(isRowAffected, Is.EqualTo(false));
-                Assert.That(aliases.Fields, Has.Count.EqualTo(4));
+                Assert.That(aliases.Fields(), Has.Length.EqualTo(4));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(1));
             });
             Assert.Multiple(() =>
             {
-                Assert.That(aliases.Fields[0].Name, Is.EqualTo("id"));
-                Assert.That(aliases.Fields[0].Position, Is.EqualTo(0));
-                Assert.That(aliases.Fields[1].Name, Is.EqualTo("firstname"));
-                Assert.That(aliases.Fields[1].Position, Is.EqualTo(1));
-                Assert.That(aliases.Fields[2].Name, Is.EqualTo("middlename"));
-                Assert.That(aliases.Fields[2].Position, Is.EqualTo(2));
-                Assert.That(aliases.Fields[3].Name, Is.EqualTo("lastname"));
-                Assert.That(aliases.Fields[3].Position, Is.EqualTo(7));
+                Assert.That(aliases.Fields()[0].Name, Is.EqualTo("id"));
+                Assert.That(aliases.Fields()[0].Position, Is.EqualTo(0));
+                Assert.That(aliases.Fields()[1].Name, Is.EqualTo("firstname"));
+                Assert.That(aliases.Fields()[1].Position, Is.EqualTo(1));
+                Assert.That(aliases.Fields()[2].Name, Is.EqualTo("middlename"));
+                Assert.That(aliases.Fields()[2].Position, Is.EqualTo(2));
+                Assert.That(aliases.Fields()[3].Name, Is.EqualTo("lastname"));
+                Assert.That(aliases.Fields()[3].Position, Is.EqualTo(7));
             });
 
             var identification = aliases.InnerEntities[0];
             Assert.Multiple(() =>
             {
                 Assert.That(identification.IsRoot, Is.EqualTo(false));
-                Assert.That(identification.Fields, Has.Count.EqualTo(2));
+                Assert.That(identification.Fields(), Has.Length.EqualTo(2));
                 Assert.That(identification.LinkKey, Is.EqualTo("id"));
                 Assert.That(identification.InnerEntities, Has.Count.EqualTo(1));
             });
             Assert.Multiple(() =>
             {
-                Assert.That(identification.Fields[0].Name, Is.EqualTo("id"));
-                Assert.That(identification.Fields[0].Position, Is.EqualTo(3));
-                Assert.That(identification.Fields[1].Name, Is.EqualTo("typename"));
-                Assert.That(identification.Fields[1].Position, Is.EqualTo(6));
+                Assert.That(identification.Fields()[0].Name, Is.EqualTo("id"));
+                Assert.That(identification.Fields()[0].Position, Is.EqualTo(3));
+                Assert.That(identification.Fields()[1].Name, Is.EqualTo("typename"));
+                Assert.That(identification.Fields()[1].Position, Is.EqualTo(6));
             });
             
             var country = identification.InnerEntities[0];
             Assert.Multiple(() =>
             {
                 Assert.That(country.IsRoot, Is.EqualTo(false));
-                Assert.That(country.Fields, Has.Count.EqualTo(2));
+                Assert.That(country.Fields(), Has.Length.EqualTo(2));
                 Assert.That(country.LinkKey, Is.EqualTo("id"));
                 Assert.That(country.InnerEntities, Has.Count.EqualTo(0));
             });
             Assert.Multiple(() =>
             {
-                Assert.That(country.Fields[0].Name, Is.EqualTo("id"));
-                Assert.That(country.Fields[0].Position, Is.EqualTo(4));
-                Assert.That(country.Fields[1].Name, Is.EqualTo("name"));
-                Assert.That(country.Fields[1].Position, Is.EqualTo(5));
+                Assert.That(country.Fields()[0].Name, Is.EqualTo("id"));
+                Assert.That(country.Fields()[0].Position, Is.EqualTo(4));
+                Assert.That(country.Fields()[1].Name, Is.EqualTo("name"));
+                Assert.That(country.Fields()[1].Position, Is.EqualTo(5));
             });
         }
 
@@ -375,33 +374,33 @@ FROM person p1
                 Assert.That(inSql, Is.EqualTo(outSql));
                 Assert.That(aliases.IsRoot, Is.EqualTo(true));
                 Assert.That(isRowAffected, Is.EqualTo(false));
-                Assert.That(aliases.Fields, Has.Count.EqualTo(4));
+                Assert.That(aliases.Fields(), Has.Length.EqualTo(4));
                 Assert.That(aliases.InnerEntities, Has.Count.EqualTo(1));
             });
             Assert.Multiple(() =>
             {
-                Assert.That(aliases.Fields[0].Name, Is.EqualTo("id"));
-                Assert.That(aliases.Fields[0].Position, Is.EqualTo(0));
-                Assert.That(aliases.Fields[1].Name, Is.EqualTo("firstname"));
-                Assert.That(aliases.Fields[1].Position, Is.EqualTo(1));
-                Assert.That(aliases.Fields[2].Name, Is.EqualTo("middlename"));
-                Assert.That(aliases.Fields[2].Position, Is.EqualTo(2));
-                Assert.That(aliases.Fields[3].Name, Is.EqualTo("lastname"));
-                Assert.That(aliases.Fields[3].Position, Is.EqualTo(4));
+                Assert.That(aliases.Fields()[0].Name, Is.EqualTo("id"));
+                Assert.That(aliases.Fields()[0].Position, Is.EqualTo(0));
+                Assert.That(aliases.Fields()[1].Name, Is.EqualTo("firstname"));
+                Assert.That(aliases.Fields()[1].Position, Is.EqualTo(1));
+                Assert.That(aliases.Fields()[2].Name, Is.EqualTo("middlename"));
+                Assert.That(aliases.Fields()[2].Position, Is.EqualTo(2));
+                Assert.That(aliases.Fields()[3].Name, Is.EqualTo("lastname"));
+                Assert.That(aliases.Fields()[3].Position, Is.EqualTo(4));
             });
 
             var identification = aliases.InnerEntities[0];
             Assert.Multiple(() =>
             {
                 Assert.That(identification.IsRoot, Is.EqualTo(false));
-                Assert.That(identification.Fields, Has.Count.EqualTo(1));
+                Assert.That(identification.Fields(), Has.Length.EqualTo(1));
                 Assert.That(identification.LinkKey, Is.EqualTo("id"));
                 Assert.That(identification.InnerEntities, Has.Count.EqualTo(0));
             });
             Assert.Multiple(() =>
             {
-                Assert.That(identification.Fields[0].Name, Is.EqualTo("id"));
-                Assert.That(identification.Fields[0].Position, Is.EqualTo(3));
+                Assert.That(identification.Fields()[0].Name, Is.EqualTo("id"));
+                Assert.That(identification.Fields()[0].Position, Is.EqualTo(3));
             });
         }
     }

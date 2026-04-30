@@ -6,10 +6,16 @@ namespace Tests
 {
     public class Decimalmoney0MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public System.Decimal Value { get; set; }
 
+        
+        
         public System.Decimal? NullableValue { get; set; }
 
         public static void AssertModel(Decimalmoney0MI actual, Decimalmoney0MI expect, bool checkInInnerOnlyId)
@@ -30,4 +36,3 @@ namespace Tests
         }
     }
 }
-

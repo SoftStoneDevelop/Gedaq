@@ -1,5 +1,6 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Model;
+using Gedaq.Constants;
 using Gedaq.Enums;
 using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
@@ -8,8 +9,6 @@ using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Gedaq.Npgsql.Generators
@@ -32,9 +31,7 @@ namespace Gedaq.Npgsql.Generators
             EndNameSpace();
         }
 
-        private void Start(
-            BinaryImport binaryImport
-            )
+        private void Start(BinaryImport binaryImport)
         {
             _methodCode.Append($@"
 using Npgsql;
@@ -89,8 +86,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             NpgsqlSourceType sourceType,
             MethodType methodType,
             bool isAsyncCollection,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             MethodDefinition(
                 binaryImport, 
@@ -98,8 +94,8 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 methodType, 
                 isAsyncCollection, 
                 _methodCode, 
-                forInterface: false
-                );
+                forInterface: false);
+
             if(binaryImport.AsPartInterface)
             {
                 MethodDefinition(
@@ -108,11 +104,11 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                     methodType, 
                     isAsyncCollection, 
                     interfaceGenerator.DefinitionBuilder(),
-                    forInterface: true
-                    );
+                    forInterface: true);
 
                 interfaceGenerator.AddMethodDefinition();
             }
+
             MethodBody(binaryImport, sourceType, methodType, isAsyncCollection);
             EndMethod();
         }
@@ -135,12 +131,20 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 "async ";
 
             var returnType = methodType == MethodType.Async ? binaryImport.MethodInfo.AsyncResultType.ToResultType() : "void";
-            var methodName = methodType == MethodType.Async ? $@"{binaryImport.MethodName}Async" : $@"{binaryImport.MethodName}";
+            var methodName = methodType == MethodType.Async ? $@"{binaryImport.MethodName}Async" : binaryImport.MethodName;
 
             builder.Append($@"
         {accessModifier} {staticModifier} {asyncKeyword}{returnType} {methodName}(
             {binaryImport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
-            {collectionType} collection,
+            {collectionType} collection");
+
+            if (binaryImport.IsDynamicQuery())
+            {
+                builder.Append($@",
+            System.String query");
+            }
+
+            builder.Append($@",
             TimeSpan? timeout = null");
 
             if (methodType == MethodType.Async)
@@ -161,39 +165,42 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
         {
             var isAsync = methodType == MethodType.Async;
             var cancellation = isAsync ? "cancellationToken" : "";
-            var async = isAsync ? "Async" : "";
-            var await = isAsync ? "await " : "";
             _methodCode.Append($@"
         {{");
 
             if (sourceType == NpgsqlSourceType.NpgsqlDataSource)
             {
                 _methodCode.Append($@"
-            {NpgsqlSourceType.NpgsqlConnection.ToTypeName()} {NpgsqlSourceType.NpgsqlConnection.ToParametrName()} = {await} {sourceType.ToParametrName()}.OpenConnection{async}({cancellation});");
+            {NpgsqlSourceType.NpgsqlConnection.ToTypeName()} {NpgsqlSourceType.NpgsqlConnection.ToParametrName()} = {GeneratorHelper.AwaitWord(isAsync)} {sourceType.ToParametrName()}.OpenConnection{GeneratorHelper.AsyncWord(isAsync)}({cancellation});");
             }
+
+            var query = binaryImport.IsDynamicQuery() ?
+                "query" :
+                $@"@""
+{binaryImport.Query}
+""";
 
             _methodCode.Append($@"
             NpgsqlBinaryImporter import = null;
             try
             {{
-                import = {await}{NpgsqlSourceType.NpgsqlConnection.ToParametrName()}.BeginBinaryImport{async}(@""
-{binaryImport.Query}
-""{(isAsync ? ", cancellationToken" : "")});
+                import = {GeneratorHelper.AwaitWord(isAsync)}{NpgsqlSourceType.NpgsqlConnection.ToParametrName()}.BeginBinaryImport{GeneratorHelper.AsyncWord(isAsync)}({query}
+{(isAsync ? ", cancellationToken" : "")});
 
                 if(timeout.HasValue)
                 {{
                     import.Timeout = timeout.Value;
                 }}
 
-                {(isAsyncCollection ? await : "")}foreach (var item in collection{(isAsyncCollection ? ".WithCancellation(cancellationToken)" : "")})
+                {(isAsyncCollection ? GeneratorHelper.AwaitWord(isAsync) : "")}foreach (var item in collection{(isAsyncCollection ? ".WithCancellation(cancellationToken)" : "")})
                 {{
-                    {await}import.StartRow{async}({cancellation});");
+                    {GeneratorHelper.AwaitWord(isAsync)}import.StartRow{GeneratorHelper.AsyncWord(isAsync)}({cancellation});");
 
             WriteItem(binaryImport, methodType);
             _methodCode.Append($@"
                 }}
-                {await}import.Complete{async}({cancellation});
-                {await}import.Dispose{async}();
+                {GeneratorHelper.AwaitWord(isAsync)}import.Complete{GeneratorHelper.AsyncWord(isAsync)}({cancellation});
+                {GeneratorHelper.AwaitWord(isAsync)}import.Dispose{GeneratorHelper.AsyncWord(isAsync)}();
                 import = null;
             }}
             finally
@@ -202,13 +209,29 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 {{
                     try
                     {{
-                        {await}import.Close{async}();
+                        {GeneratorHelper.AwaitWord(isAsync)}import.Close{GeneratorHelper.AsyncWord(isAsync)}();
                     }}
                     catch {{ /* ignore */ }}
 
-                    {await}import.Dispose{async}();
+                    {GeneratorHelper.AwaitWord(isAsync)}import.Dispose{GeneratorHelper.AsyncWord(isAsync)}();
                 }}
             }}");
+        }
+
+        private static string DbTypeParamPass(Field field)
+        {
+            return
+                field.HaveAdditionalInfo ?
+                $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" :
+                string.Empty;
+        }
+
+        private static string CtParametrPass(bool isAsync)
+        {
+            return
+                isAsync ?
+                $",cancellationToken" :
+                string.Empty;
         }
 
         public void WriteItem(
@@ -216,42 +239,43 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             MethodType methodType)
         {
             var isAsync = methodType == MethodType.Async;
-            var async = isAsync ? "Async" : "";
-            var await = isAsync ? "await " : "";
             var cancellation = isAsync ? "(cancellationToken)" : "()";
 
-            var mapType = binaryImport.MapTypeInfos[0].MapType;
-            if (NpgsqlMapTypeHelper.IsKnownProviderType(mapType))
+            var mapTypeInfo = binaryImport.MapTypeInfos[0];
+            if (NpgsqlMapTypeHelper.IsKnownProviderType(mapTypeInfo.MapType))
             {
-                var field = binaryImport.Aliases.AllFieldsOrderByPosition().First();
-                var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" : "";
-                _methodCode.Append($@"
-                    {await}import.Write{async}(item{dbType}{(isAsync ? $",cancellationToken" : "")});");
-            }
-            else if (mapType.IsNullableType())
-            {
-                var field = binaryImport.Aliases.AllFieldsOrderByPosition().First();
-                var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" : "";
-                _methodCode.Append($@"
+                var field = mapTypeInfo.Aliases.Fields()[0];
+                var dbType = DbTypeParamPass(field);
+                if (mapTypeInfo.MapType.IsNullableType())
+                {
+                    _methodCode.Append($@"
                     if (!item.HasValue)
                     {{
-                        {await}import.WriteNull{async}{cancellation};
+                        {GeneratorHelper.AwaitWord(isAsync)}import.WriteNull{GeneratorHelper.AsyncWord(isAsync)}{cancellation};
                     }}
                     else
                     {{
-                        {await}import.Write{async}(item.Value{dbType}{(isAsync ? $",cancellationToken" : "")});
+                        {GeneratorHelper.AwaitWord(isAsync)}import.Write{GeneratorHelper.AsyncWord(isAsync)}(item.Value{dbType}{CtParametrPass(isAsync)});
                     }}");
+                }
+                else
+                {
+                    _methodCode.Append($@"
+                    {GeneratorHelper.AwaitWord(isAsync)}import.Write{GeneratorHelper.AsyncWord(isAsync)}(item{dbType}{CtParametrPass(isAsync)});");
+                }
             }
-            else if (mapType.TypeKind == TypeKind.Class || mapType.TypeKind == TypeKind.Struct)
+            else if (mapTypeInfo.MapType.TypeKind == TypeKind.Class || mapTypeInfo.MapType.TypeKind == TypeKind.Struct)
             {
-                ComplicateItem(binaryImport.Aliases, mapType, methodType);
+                ComplicateItem(mapTypeInfo.Aliases, mapTypeInfo.MapType, methodType);
             }
             else
             {
-                var field = binaryImport.Aliases.AllFieldsOrderByPosition().First();
-                var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" : "";
-                _methodCode.Append($@"
-                    {await}import.Write{async}(item{dbType}{(isAsync ? $",cancellationToken" : "")});");
+                DiagnosticHelper.ReportDiagnostic(
+                    _context,
+                    DiagnosticConstants.BICouldNotDetermine,
+                    DiagnosticConstants.BICouldNotDetermineDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { binaryImport.MethodName, mapTypeInfo.MapType.Name});
             }
         }
 
@@ -261,37 +285,35 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             MethodType methodType)
         {
             var isAsync = methodType == MethodType.Async;
-            var async = isAsync ? "Async" : "";
             var cancellation = isAsync ? "(cancellationToken)" : "()"; ;
-            var await = isAsync ? "await " : "";
 
             var aliases = new Stack<ItemPair>();
+            var root = new ItemPair(rootAliase, rootMapTypeName, "item", 0);
+            aliases.Push(root);
+            var needSkip = root.Aliases.AllFields().Length;
+            if (rootMapTypeName.IsNullableType())
             {
-                var root = new ItemPair(rootAliase, rootMapTypeName, "item", 0);
-                aliases.Push(root);
-                var needSkip = root.Aliases.AllFieldsOrderByPosition().Count;
-                if (rootMapTypeName.IsNullableType())
-                {
-                    _methodCode.Append($@"
+                _methodCode.Append($@"
                     if(!item.HasValue)
                     {{");
-                }
-                else if(rootMapTypeName.TypeKind == TypeKind.Class)
-                {
-                    _methodCode.Append($@"
+            }
+            else if (rootMapTypeName.TypeKind == TypeKind.Class)
+            {
+                _methodCode.Append($@"
                     if(item == null)
                     {{");
-                }
-
-                for (var i = 0; i < needSkip; i++)
-                {
-                    _methodCode.Append($@"
-                        {await}import.WriteNull{async}{cancellation};");
-                }
-
-                _methodCode.Append($@"
-                    }}");
             }
+
+            for (var i = 0; i < needSkip; i++)
+            {
+                _methodCode.Append($@"
+                        {GeneratorHelper.AwaitWord(isAsync)}import.WriteNull{GeneratorHelper.AsyncWord(isAsync)}{cancellation};");
+            }
+
+            _methodCode.Append($@"
+                        continue;
+                    }}
+");
 
             var itemId = 0;
             while (aliases.Count != 0)
@@ -300,7 +322,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 if (!pair.HaveUnprocess)
                 {
                     //close brackets and set
-                    EndInnerEntity(methodType, pair, await, async, cancellation);
+                    EndInnerEntity(pair, GeneratorHelper.AwaitWord(isAsync), GeneratorHelper.AsyncWord(isAsync), cancellation);
                     continue;
                 }
 
@@ -327,20 +349,18 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                             $"item{++itemId}",
                             pair,
                             propertyName,
-                            0
-                            );
+                            0);
                     aliases.Push(newPair);
 
                     _methodCode.Append($@"
-                    {Tabs(newPair.Tabs)}if(item.{newPair.PathInItem()} != null)
-                    {Tabs(newPair.Tabs)}{{");
+                    {GeneratorHelper.Tabs(newPair.Tabs)}if(item.{newPair.PathInItem()} != null)
+                    {GeneratorHelper.Tabs(newPair.Tabs)}{{");
                     continue;
                 }
             }
         }
 
         private void EndInnerEntity(
-            MethodType methodType,
             ItemPair pair,
             string await,
             string async,
@@ -352,82 +372,76 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             }
 
             _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}}}
-                    {Tabs(pair.Tabs)}else
-                    {Tabs(pair.Tabs)}{{");
-            var needSkip = pair.Aliases.AllFieldsOrderByPosition().Count;
+                    {GeneratorHelper.Tabs(pair.Tabs)}}}
+                    {GeneratorHelper.Tabs(pair.Tabs)}else
+                    {GeneratorHelper.Tabs(pair.Tabs)}{{");
+            var needSkip = pair.Aliases.AllFields().Length;
             for (var i = 0; i < needSkip; i++)
             {
                 _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}    {await}import.WriteNull{async}{cancellation};");
+                    {GeneratorHelper.Tabs(pair.Tabs)}    {await}import.WriteNull{async}{cancellation};");
             }
 
             _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}}}");
+                    {GeneratorHelper.Tabs(pair.Tabs)}}}");
         }
 
-        private void WriteFields(Field field, ItemPair pair, MethodType methodType)
+        private void WriteFields(
+            Field field,
+            ItemPair pair,
+            MethodType methodType)
         {
             var isAsync = methodType == MethodType.Async;
-            var async = isAsync ? "Async" : "";
             var cancellation = isAsync ? "(cancellationToken)" : "()"; ;
-            var await = isAsync ? "await " : "";
 
-            var dbType = field.HaveAdditionalInfo ? $",(NpgsqlTypes.NpgsqlDbType)({((NpgsqlFieldInfo)field.AdditionalInfo).NpgsqlDbType})" : "";
+            var dbType = DbTypeParamPass(field);
             var tabs = pair.Parent != null ? pair.Tabs + 1 : pair.Tabs;
             pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
             var pathInItem = pair.PathInItem(propertyName);
             if (propertyType.IsReferenceType)
             {
                 _methodCode.Append($@"
-                    {Tabs(tabs)}if (item.{pathInItem} == null)
-                    {Tabs(tabs)}{{
-                    {Tabs(tabs)}    {await}import.WriteNull{async}{cancellation};
-                    {Tabs(tabs)}}}
-                    {Tabs(tabs)}else
-                    {Tabs(tabs)}{{
-                    {Tabs(tabs)}    {await}import.Write{async}(item.{pathInItem}{dbType}{(isAsync ? $",cancellationToken" : "")});
-                    {Tabs(tabs)}}}");
+                    {GeneratorHelper.Tabs(tabs)}if (item.{pathInItem} == null)
+                    {GeneratorHelper.Tabs(tabs)}{{
+                    {GeneratorHelper.Tabs(tabs)}    {GeneratorHelper.AwaitWord(isAsync)}import.WriteNull{GeneratorHelper.AsyncWord(isAsync)}{cancellation};
+                    {GeneratorHelper.Tabs(tabs)}}}
+                    {GeneratorHelper.Tabs(tabs)}else
+                    {GeneratorHelper.Tabs(tabs)}{{
+                    {GeneratorHelper.Tabs(tabs)}    {GeneratorHelper.AwaitWord(isAsync)}import.Write{GeneratorHelper.AsyncWord(isAsync)}(item.{pathInItem}{dbType}{CtParametrPass(isAsync)});
+                    {GeneratorHelper.Tabs(tabs)}}}");
             }
-            else
-            if (propertyType.IsNullableType())
+            else if (propertyType.IsNullableType())
             {
                 _methodCode.Append($@"
-                    {Tabs(tabs)}if (!item.{pathInItem}.HasValue)
-                    {Tabs(tabs)}{{
-                    {Tabs(tabs)}    {await}import.WriteNull{async}{cancellation};
-                    {Tabs(tabs)}}}
-                    {Tabs(tabs)}else
-                    {Tabs(tabs)}{{
-                    {Tabs(tabs)}    {await}import.Write{async}(item.{pathInItem}.Value{dbType}{(isAsync ? $",cancellationToken" : "")});
-                    {Tabs(tabs)}}}");
+                    {GeneratorHelper.Tabs(tabs)}if (!item.{pathInItem}.HasValue)
+                    {GeneratorHelper.Tabs(tabs)}{{
+                    {GeneratorHelper.Tabs(tabs)}    {GeneratorHelper.AwaitWord(isAsync)}import.WriteNull{GeneratorHelper.AsyncWord(isAsync)}{cancellation};
+                    {GeneratorHelper.Tabs(tabs)}}}
+                    {GeneratorHelper.Tabs(tabs)}else
+                    {GeneratorHelper.Tabs(tabs)}{{
+                    {GeneratorHelper.Tabs(tabs)}    {GeneratorHelper.AwaitWord(isAsync)}import.Write{GeneratorHelper.AsyncWord(isAsync)}(item.{pathInItem}.Value{dbType}{CtParametrPass(isAsync)});
+                    {GeneratorHelper.Tabs(tabs)}}}");
             }
             else
             {
                 if (propertyType.IsReferenceType)
                 {
                     _methodCode.Append($@"
-                    {Tabs(tabs)}if(item.{pathInItem} == null)
-                    {Tabs(tabs)}{{
-                    {Tabs(tabs)}    {await}import.WriteNull{async}{cancellation};
-                    {Tabs(tabs)}}}
-                    {Tabs(tabs)}else
-                    {Tabs(tabs)}{{
-                    {Tabs(tabs)}    {await}import.Write{async}(item.{pathInItem}{dbType}{(isAsync ? $",cancellationToken" : "")});
-                    {Tabs(tabs)}}}");
+                    {GeneratorHelper.Tabs(tabs)}if(item.{pathInItem} == null)
+                    {GeneratorHelper.Tabs(tabs)}{{
+                    {GeneratorHelper.Tabs(tabs)}    {GeneratorHelper.AwaitWord(isAsync)}import.WriteNull{GeneratorHelper.AsyncWord(isAsync)}{cancellation};
+                    {GeneratorHelper.Tabs(tabs)}}}
+                    {GeneratorHelper.Tabs(tabs)}else
+                    {GeneratorHelper.Tabs(tabs)}{{
+                    {GeneratorHelper.Tabs(tabs)}    {GeneratorHelper.AwaitWord(isAsync)}import.Write{GeneratorHelper.AsyncWord(isAsync)}(item.{pathInItem}{dbType}{CtParametrPass(isAsync)});
+                    {GeneratorHelper.Tabs(tabs)}}}");
                 }
                 else
                 {
                     _methodCode.Append($@"
-                    {Tabs(tabs)}{await}import.Write{async}(item.{pathInItem}{dbType}{(isAsync ? $",cancellationToken" : "")});");
+                    {GeneratorHelper.Tabs(tabs)}{GeneratorHelper.AwaitWord(isAsync)}import.Write{GeneratorHelper.AsyncWord(isAsync)}(item.{pathInItem}{dbType}{CtParametrPass(isAsync)});");
                 }
             }
-        }
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private string Tabs(int tabs)
-        {
-            return new string(' ', tabs * 4);
         }
 
         private void EndMethod()

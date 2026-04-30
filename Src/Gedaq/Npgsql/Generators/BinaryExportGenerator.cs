@@ -8,23 +8,23 @@ using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Gedaq.Npgsql.Generators
 {
     internal class BinaryExportGenerator : BaseGenerator
     {
-        public BinaryExportGenerator(SourceProductionContext context)
+        private readonly NpgsqlProviderInfo _providerInfo;
+
+        public BinaryExportGenerator(SourceProductionContext context, NpgsqlProviderInfo providerInfo)
             : base(context)
         {
+            _providerInfo = providerInfo;
         }
 
         public void Generate(
             BinaryExport binaryExport, 
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             Reset();
             Start(binaryExport);
@@ -33,9 +33,7 @@ namespace Gedaq.Npgsql.Generators
             EndNameSpace();
         }
 
-        private void Start(
-            BinaryExport binaryExport
-            )
+        private void Start(BinaryExport binaryExport)
         {
             _methodCode.Append($@"
 using Npgsql;
@@ -87,16 +85,15 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             BinaryExport binaryExport, 
             NpgsqlSourceType sourceType, 
             MethodType methodType,
-            InterfaceGenerator interfaceGenerator
-            )
+            InterfaceGenerator interfaceGenerator)
         {
             MethodDefinition(
                 binaryExport, 
                 sourceType, 
                 methodType,
                 _methodCode,
-                forInterface: false
-                );
+                forInterface: false);
+
             if(binaryExport.AsPartInterface)
             {
                 MethodDefinition(
@@ -104,8 +101,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                     sourceType,
                     methodType,
                     interfaceGenerator.DefinitionBuilder(),
-                    forInterface: true
-                    );
+                    forInterface: true);
 
                 interfaceGenerator.AddMethodDefinition();
             }
@@ -120,8 +116,6 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             StringBuilder builder,
             bool forInterface = false)
         {
-            var accessModifier = forInterface ? AccessModifier.Public.ToLowerInvariant() : binaryExport.AccessModifier.ToLowerInvariant();
-            var staticModifier = forInterface ? string.Empty : binaryExport.MethodStaticModifier;
             var asyncKeyword =
                 methodType != MethodType.Async || forInterface ?
                 string.Empty :
@@ -145,19 +139,35 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
 
             builder.Append($@"
         {binaryExport.AccessModifier.ToLowerInvariant()} {binaryExport.MethodStaticModifier} {asyncKeyword}{returnType} {methodName}(
-            {binaryExport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()},
+            {binaryExport.ContainTypeName.GCThisWordOrEmpty()}{sourceType.ToTypeName()} {sourceType.ToParametrName()}");
+
+            if (binaryExport.IsDynamicQuery())
+            {
+                builder.Append($@",
+            System.String query");
+            }
+
+            if (binaryExport.IsCollectionDelegateMap)
+            {
+                builder.Append($@",
+            {binaryExport.MapDelegateParametrType()} {binaryExport.MapDelegateParametrName}");
+            }
+
+            builder.Append($@",
             TimeSpan? timeout = null");
 
             if (methodType == MethodType.Async)
             {
-                var enumeratorCancellation = forInterface ? string.Empty : "[EnumeratorCancellation]";
+                var enumeratorCancellation =
+                    forInterface || binaryExport.IsCollectionDelegateMap ?
+                    string.Empty :
+                    "[EnumeratorCancellation]";
                 builder.Append($@",
             {enumeratorCancellation} CancellationToken cancellationToken = default");
 
             }
 
-            builder.Append($@"
-            )
+            builder.Append($@")
 ");
         }
 
@@ -168,37 +178,40 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
         {
             var isAsync = methodType == MethodType.Async;
             var cancellation = isAsync ? "cancellationToken" : "";
-            var async = isAsync ? "Async" : "";
-            var await = isAsync ? "await " : "";
             _methodCode.Append($@"
         {{");
 
             if (sourceType == NpgsqlSourceType.NpgsqlDataSource)
             {
                 _methodCode.Append($@"
-            {NpgsqlSourceType.NpgsqlConnection.ToTypeName()} {NpgsqlSourceType.NpgsqlConnection.ToParametrName()} = {await} {sourceType.ToParametrName()}.OpenConnection{async}({cancellation});");
+            {NpgsqlSourceType.NpgsqlConnection.ToTypeName()} {NpgsqlSourceType.NpgsqlConnection.ToParametrName()} = {GeneratorHelper.AwaitWord(isAsync)}{sourceType.ToParametrName()}.OpenConnection{GeneratorHelper.AsyncWord(isAsync)}({cancellation});");
             }
+
+            var query = binaryExport.IsDynamicQuery() ?
+                "query" :
+                $@"@""
+{binaryExport.Query}
+""";
 
             _methodCode.Append($@"
             NpgsqlBinaryExporter export = null;
             try
             {{
-                export = {await}{NpgsqlSourceType.NpgsqlConnection.ToParametrName()}.BeginBinaryExport{async}(@""
-{binaryExport.Query}
-""{(isAsync ? ", cancellationToken" : "")});
+                export = {GeneratorHelper.AwaitWord(isAsync)}{NpgsqlSourceType.NpgsqlConnection.ToParametrName()}.BeginBinaryExport{GeneratorHelper.AsyncWord(isAsync)}({query}
+{(isAsync ? ", cancellationToken" : "")});
                 if(timeout.HasValue)
                 {{
                     export.Timeout = timeout.Value;
                 }}
 
-                while({await}export.StartRow{async}({cancellation}) != -1)
+                while({GeneratorHelper.AwaitWord(isAsync)}export.StartRow{GeneratorHelper.AsyncWord(isAsync)}({cancellation}) != -1)
                 {{");
 
             YieldItem(binaryExport, methodType);
             _methodCode.Append($@"
                 }}
 
-                {await}export.Dispose{async}();
+                {GeneratorHelper.AwaitWord(isAsync)}export.Dispose{GeneratorHelper.AsyncWord(isAsync)}();
                 export = null;
             }}
             finally
@@ -207,11 +220,11 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 {{
                     try
                     {{
-                        {await}export.Cancel{async}();
+                        {GeneratorHelper.AwaitWord(isAsync)}export.Cancel{GeneratorHelper.AsyncWord(isAsync)}();
                     }}
                     catch {{ /* ignore */ }}
 
-                    {await}export.Dispose{async}();
+                    {GeneratorHelper.AwaitWord(isAsync)}export.Dispose{GeneratorHelper.AsyncWord(isAsync)}();
                 }}
             }}");
         }
@@ -220,57 +233,92 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             BinaryExport binaryExport,
             MethodType methodType)
         {
-            var isAsync = methodType == MethodType.Async;
-            var async = isAsync ? "Async" : "";
-            var cancelation = isAsync ? "(cancellationToken)" : "()";
-
             if (binaryExport.IsCollectionDelegateMap)
             {
+                foreach (var mapInfo in binaryExport.MapTypeInfos)
+                {
+                    _methodCode.Append($@"
+                    {mapInfo.ItemTypeName} {mapInfo.MapItemName} = default;
+                    {{");
+                    MapItem(methodType, mapInfo);
+                    _methodCode.Append($@"
+                    }}");
+                }
+
                 _methodCode.Append($@"
-                // TODO By the power of BANANA;");
+                    {binaryExport.MapDelegateParametrName}(");
+                for (int i = 0; i < binaryExport.MapTypeInfos.Length; i++)
+                {
+                    var mapInfo = binaryExport.MapTypeInfos[i];
+                    if (i != 0)
+                    {
+                        _methodCode.Append(",");
+                    }
+
+                    _methodCode.Append($@"{mapInfo.MapItemName}");
+                }
+                _methodCode.Append(");");
             }
             else
             {
-                var mapType = binaryExport.MapTypeInfos[0].MapType;
-                var aliases = binaryExport.MapTypeInfos[0].Aliases;
-                if (NpgsqlMapTypeHelper.IsKnownProviderType(mapType))
-                {
-                    var field = aliases.AllFieldsOrderByPosition().First();
-                    _methodCode.Append($@"
-                    yield return export.Read{async}<{mapType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
-                }
-                else if (mapType.IsNullableType())
-                {
-                    var field = aliases.AllFieldsOrderByPosition().First();
-                    _methodCode.Append($@"
+                var mapTypeInfo = binaryExport.MapTypeInfos[0];
+                _methodCode.Append($@"
+                    {mapTypeInfo.ItemTypeName} {mapTypeInfo.MapItemName} = default;
+                    {{");
+                MapItem(methodType, mapTypeInfo);
+                _methodCode.Append($@"
+                    }}");
+
+                _methodCode.Append($@"
+                    yield return {mapTypeInfo.MapItemName};");
+            }
+        }
+
+        public void MapItem(
+            MethodType methodType,
+            MapTypeInfo mapTypeInfo)
+        {
+            var isAsync = methodType == MethodType.Async;
+            var cancelation = isAsync ? "(cancellationToken)" : "()";
+            var await = methodType == MethodType.Async ? "await " : string.Empty;
+
+            var mapType = mapTypeInfo.MapType;
+            var aliases = mapTypeInfo.Aliases;
+            if (_providerInfo.IsKnownProviderType(mapType))
+            {
+                var field = aliases.AllFields()[0];
+                _methodCode.Append($@"
+                    {mapTypeInfo.MapItemName} = {await}export.Read{GeneratorHelper.AsyncWord(isAsync)}<{mapType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
+            }
+            else if (mapType.IsNullableType())
+            {
+                var field = aliases.AllFields()[0];
+                _methodCode.Append($@"
                     if (export.IsNull)
                     {{
-                        export.Skip{async}{cancelation};
-                        yield return ({mapType.GetFullTypeName(true, true)})null;
+                        export.Skip{GeneratorHelper.AsyncWord(isAsync)}{cancelation};
+                        {mapTypeInfo.MapItemName} = ({mapType.GetFullTypeName(true, true)})null;
                     }}
                     else
                     {{
-                        yield return export.Read{async}<{mapType.GetFullTypeName(true, addQuestionNoatble: false)}>({GetReadParametrs(field, isAsync)});
+                        {mapTypeInfo.MapItemName} = {await}export.Read{GeneratorHelper.AsyncWord(isAsync)}<{mapType.GetFullTypeName(true, addQuestionNoatble: false)}>({GetReadParametrs(field, isAsync)});
                     }}");
-                }
-                else if (mapType.Name == nameof(Object))
-                {
-                    var field = aliases.AllFieldsOrderByPosition().First();
-                    _methodCode.Append($@"
-                    yield return export.Read{async}<object>({GetReadParametrs(field, isAsync)});");
-                }
-                else if (mapType.TypeKind == TypeKind.Class || mapType.TypeKind == TypeKind.Struct)
-                {
-                    ComplicateItem(aliases, mapType, methodType);
-                    _methodCode.Append($@" 
-                    yield return item;");
-                }
-                else
-                {
-                    var field = aliases.AllFieldsOrderByPosition().First();
-                    _methodCode.Append($@"
-                    yield return export.Read{async}<{mapType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
-                }
+            }
+            else if (mapType.Name == nameof(Object))
+            {
+                var field = aliases.AllFields()[0];
+                _methodCode.Append($@"
+                    {mapTypeInfo.MapItemName} = {await}export.Read{GeneratorHelper.AsyncWord(isAsync)}<object>({GetReadParametrs(field, isAsync)});");
+            }
+            else if (mapType.TypeKind == TypeKind.Class || mapType.TypeKind == TypeKind.Struct)
+            {
+                ComplicateItem(aliases, mapType, methodType, mapTypeInfo.MapItemName);
+            }
+            else
+            {
+                var field = aliases.AllFields()[0];
+                _methodCode.Append($@"
+                    {mapTypeInfo.MapItemName} = {await}export.Read{GeneratorHelper.AsyncWord(isAsync)}<{mapType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
             }
         }
 
@@ -303,20 +351,16 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
         private void ComplicateItem(
             Aliases rootAliase,
             ITypeSymbol rootMapTypeName,
-            MethodType methodType
-            )
+            MethodType methodType,
+            string mapItemName)
         {
             var isAsync = methodType == MethodType.Async;
-            var async = isAsync ? "Async" : "";
-            var cancellation = isAsync ? "(cancellationToken)" : "()"; ;
-            var await = isAsync ? "await " : "";
+            var cancellation = isAsync ? "(cancellationToken)" : "()";
 
             var aliases = new Stack<ItemPair>();
             {
-                var root = new ItemPair(rootAliase, rootMapTypeName, "item", 0);
+                var root = new ItemPair(rootAliase, rootMapTypeName, mapItemName, 0);
                 aliases.Push(root);
-                _methodCode.Append($@"
-                    var {root.ItemName} = new {root.MapTypeName.GetFullTypeName()}();");
             }
 
             var itemId = 0;
@@ -326,7 +370,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 if (!pair.HaveUnprocess)
                 {
                     //close brackets and set
-                    EndInnerEntity(methodType, pair, await, async, cancellation);
+                    EndInnerEntity(pair, GeneratorHelper.AwaitWord(isAsync), GeneratorHelper.AsyncWord(isAsync), cancellation);
                     continue;
                 }
 
@@ -346,34 +390,36 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 if (inner != null)
                 {
                     pair.MapTypeName.GetPropertyOrFieldName(inner.EntityName, out var propertyName, out var pairType);
-                    var newPair = new ItemPair(inner, pairType, $"item{++itemId}", pair, propertyName, pair.Tabs + 1);
+                    var newPair = new ItemPair(inner, pairType, $"{mapItemName}{++itemId}", pair, propertyName, pair.Tabs + 1);
                     aliases.Push(newPair);
 
                     if (newPair.Aliases.HaveLinkKey)
                     {
-                        var linkField = newPair.Aliases.GetLinkField();
                         _methodCode.Append($@"
-                    {Tabs(newPair.Tabs)}if(!export.IsNull)
-                    {Tabs(newPair.Tabs)}{{
-                    {Tabs(newPair.Tabs)}    var {newPair.ItemName} = new {newPair.MapTypeName.GetFullTypeName()}();");
+                    {GeneratorHelper.Tabs(newPair.Tabs)}if(!export.IsNull)
+                    {GeneratorHelper.Tabs(newPair.Tabs)}{{
+                            {GeneratorHelper.Tabs(pair.Tabs)}if({pair.ItemName} == null)
+                            {GeneratorHelper.Tabs(pair.Tabs)}{{
+                            {GeneratorHelper.Tabs(pair.Tabs)}    {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
+                            {GeneratorHelper.Tabs(pair.Tabs)}}}
+                    {GeneratorHelper.Tabs(newPair.Tabs)}    {newPair.MapTypeName.GetFullTypeName()} {newPair.ItemName} = default;");
                     }
                     else
                     {
                         _methodCode.Append($@" 
-                    {Tabs(newPair.Tabs)}    {newPair.MapTypeName.GetFullTypeName()}{(newPair.MapTypeName.TypeKind != TypeKind.Class ? "?" : "")} {newPair.ItemName} = null;");
+                    {GeneratorHelper.Tabs(newPair.Tabs)}    {newPair.MapTypeName.GetFullTypeName()}{(newPair.MapTypeName.TypeKind != TypeKind.Class ? "?" : "")} {newPair.ItemName} = null;");
                     }
+
                     continue;
                 }
             }
         }
 
         private void EndInnerEntity(
-            MethodType methodType,
             ItemPair pair,
             string await,
             string async,
-            string cancellation
-            )
+            string cancellation)
         {
             if(pair.HaveUnprocess || pair.Parent == null)
             {
@@ -383,85 +429,74 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             if (pair.Aliases.HaveLinkKey)
             {
                 _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}    {pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
-                    {Tabs(pair.Tabs)}}}
-                    {Tabs(pair.Tabs)}else
-                    {Tabs(pair.Tabs)}{{");
+                    {GeneratorHelper.Tabs(pair.Tabs)}    {pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
+                    {GeneratorHelper.Tabs(pair.Tabs)}}}
+                    {GeneratorHelper.Tabs(pair.Tabs)}else
+                    {GeneratorHelper.Tabs(pair.Tabs)}{{");
 
-                var needSkip = pair.Aliases.AllFieldsOrderByPosition().Count;
+                var needSkip = pair.Aliases.AllFields().Length;
                 for ( var i = 0; i < needSkip; i++)
                 {
                     _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}    {await}export.Skip{async}{cancellation};");
+                    {GeneratorHelper.Tabs(pair.Tabs)}    {await}export.Skip{async}{cancellation};");
                 }
 
                 _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}}}");
+                    {GeneratorHelper.Tabs(pair.Tabs)}}}");
             }
             else
             {
                 _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}if({pair.ItemName} != null)
-                    {Tabs(pair.Tabs)}{{");
+                    {GeneratorHelper.Tabs(pair.Tabs)}if({pair.ItemName} != null)
+                    {GeneratorHelper.Tabs(pair.Tabs)}{{");
 
                 if (!pair.Parent.Aliases.IsRoot)
                 {
                     _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}    if({pair.Parent.ItemName} == null)
-                    {Tabs(pair.Tabs)}    {{
-                    {Tabs(pair.Tabs)}        {pair.Parent.ItemName} = new {pair.Parent.MapTypeName.GetFullTypeName()}();
-                    {Tabs(pair.Tabs)}    }}");
+                    {GeneratorHelper.Tabs(pair.Tabs)}    if({pair.Parent.ItemName} == null)
+                    {GeneratorHelper.Tabs(pair.Tabs)}    {{
+                    {GeneratorHelper.Tabs(pair.Tabs)}        {pair.Parent.ItemName} = new {pair.Parent.MapTypeName.GetFullTypeName()}();
+                    {GeneratorHelper.Tabs(pair.Tabs)}    }}");
                 }
                 _methodCode.Append($@"
-                    {Tabs(pair.Tabs)}    {pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
-                    {Tabs(pair.Tabs)}}}");
+                    {GeneratorHelper.Tabs(pair.Tabs)}    {pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
+                    {GeneratorHelper.Tabs(pair.Tabs)}}}");
             }
         }
 
         private void SetFields(Field field, ItemPair pair, MethodType methodType)
         {
             var isAsync = methodType == MethodType.Async;
-            var async = isAsync ? "Async" : "";
             var cancelation = isAsync ? "(cancellationToken)" : "()"; ;
-            var await = isAsync ? "await " : "";
 
             pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
             _methodCode.Append($@"
-                        {Tabs(pair.Tabs)}if(!export.IsNull)
-                        {Tabs(pair.Tabs)}{{");
+                        {GeneratorHelper.Tabs(pair.Tabs)}if(!export.IsNull)
+                        {GeneratorHelper.Tabs(pair.Tabs)}{{");
 
-            if (pair.Parent != null && !pair.Aliases.HaveLinkKey)
-            {
-                _methodCode.Append($@"
-                            {Tabs(pair.Tabs)}if({pair.ItemName} == null)
-                            {Tabs(pair.Tabs)}{{
-                                {Tabs(pair.Tabs)} {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
-                            {Tabs(pair.Tabs)}}}");
-            }
+            _methodCode.Append($@"
+                            {GeneratorHelper.Tabs(pair.Tabs)}if({pair.ItemName} == null)
+                            {GeneratorHelper.Tabs(pair.Tabs)}{{
+                                {GeneratorHelper.Tabs(pair.Tabs)} {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
+                            {GeneratorHelper.Tabs(pair.Tabs)}}}");
 
             if (propertyType.IsNullableType())
             {
                 _methodCode.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({GetReadParametrs(field, isAsync)});");
+                            {GeneratorHelper.Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {GeneratorHelper.AwaitWord(isAsync)}export.Read{GeneratorHelper.AsyncWord(isAsync)}<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({GetReadParametrs(field, isAsync)});");
             }
             else
             {
                 _methodCode.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {await} export.Read{async}<{propertyType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
+                            {GeneratorHelper.Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {GeneratorHelper.AwaitWord(isAsync)}export.Read{GeneratorHelper.AsyncWord(isAsync)}<{propertyType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
             }
 
             _methodCode.Append($@"
-                        {Tabs(pair.Tabs)}}}
-                        {Tabs(pair.Tabs)}else
-                        {Tabs(pair.Tabs)}{{
-                        {Tabs(pair.Tabs)}    {await} export.Skip{async}{cancelation};
-                        {Tabs(pair.Tabs)}}}");
-        }
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private string Tabs(int tabs)
-        {
-            return new string(' ', tabs * 4);
+                        {GeneratorHelper.Tabs(pair.Tabs)}}}
+                        {GeneratorHelper.Tabs(pair.Tabs)}else
+                        {GeneratorHelper.Tabs(pair.Tabs)}{{
+                        {GeneratorHelper.Tabs(pair.Tabs)}    {GeneratorHelper.AwaitWord(isAsync)}export.Skip{GeneratorHelper.AsyncWord(isAsync)}{cancelation};
+                        {GeneratorHelper.Tabs(pair.Tabs)}}}");
         }
 
         private void EndMethod()

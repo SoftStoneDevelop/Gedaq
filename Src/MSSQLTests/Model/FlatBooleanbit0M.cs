@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatBooleanbit0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Boolean Value { get; set; }
 
 
 
+        
         public System.Boolean? NullableValue { get; set; }
 
         public static void AssertModel(FlatBooleanbit0M actual, Booleanbit0M expect, bool checkInInnerOnlyId)

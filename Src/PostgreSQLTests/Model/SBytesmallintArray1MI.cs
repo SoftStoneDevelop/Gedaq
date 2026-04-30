@@ -6,10 +6,16 @@ namespace Tests
 {
     public class SBytesmallintArray1MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public System.SByte[] Value { get; set; }
 
+        
+        
         public System.SByte[] NullableValue { get; set; }
 
         public static void AssertModel(SBytesmallintArray1MI actual, SBytesmallintArray1MI expect, bool checkInInnerOnlyId)
@@ -49,4 +55,3 @@ namespace Tests
         }
     }
 }
-

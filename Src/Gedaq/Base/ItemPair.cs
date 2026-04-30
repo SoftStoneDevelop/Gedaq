@@ -1,6 +1,5 @@
 ﻿using Gedaq.Base.Model;
 using Microsoft.CodeAnalysis;
-using System.Linq;
 
 namespace Gedaq.Base
 {
@@ -62,9 +61,8 @@ namespace Gedaq.Base
         public int Tabs { get; private set; }
 
         public bool HaveUnprocess => 
-            (Aliases.Fields.Count != 0 && (_lastProcessedField == -1 || _lastProcessedField != Aliases.Fields.Count - 1)) ||
-            (Aliases.InnerEntities.Count != 0 && (_lastProcessedInner == -1 || _lastProcessedInner != Aliases.InnerEntities.Count - 1))
-            ;
+            (Aliases.Fields().Length != 0 && (_lastProcessedField == -1 || _lastProcessedField != Aliases.Fields().Length - 1)) ||
+            (Aliases.InnerEntities.Count != 0 && (_lastProcessedInner == -1 || _lastProcessedInner != Aliases.InnerEntities.Count - 1));
 
         private int _lastProcessedField = -1;
         private int _lastProcessedInner = -1;
@@ -74,8 +72,14 @@ namespace Gedaq.Base
             field = null;
             inner = null;
 
-            var nextField = (Aliases.Fields.Count != 0 && Aliases.Fields.Count - 1 != _lastProcessedField) ? Aliases.Fields[_lastProcessedField + 1] : null;
-            var nextInner = (Aliases.InnerEntities.Count != 0 && Aliases.InnerEntities.Count - 1 != _lastProcessedInner) ? Aliases.InnerEntities[_lastProcessedInner + 1] : null;
+            var nextField = 
+                (Aliases.Fields().Length != 0 && Aliases.Fields().Length - 1 != _lastProcessedField) ?
+                Aliases.Fields()[_lastProcessedField + 1] :
+                null;
+            var nextInner =
+                (Aliases.InnerEntities.Count != 0 && Aliases.InnerEntities.Count - 1 != _lastProcessedInner) ?
+                Aliases.InnerEntities[_lastProcessedInner + 1] :
+                null;
 
             if(nextField == null && nextInner == null)
             {
@@ -96,7 +100,7 @@ namespace Gedaq.Base
                 return true;
             }
 
-            if(nextField.Position < nextInner.AllFieldsOrderByPosition().First().Position)
+            if(nextField.Position < nextInner.AllFields()[0].Position)
             {
                 _lastProcessedField++;
                 field = nextField;

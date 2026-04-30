@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatNpgsqlPointpointArray2M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPoint> Value { get; set; }
 
 
 
+        
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPoint> NullableValue { get; set; }
 
         public static void AssertModel(FlatNpgsqlPointpointArray2M actual, NpgsqlPointpointArray2M expect, bool checkInInnerOnlyId)

@@ -60,7 +60,7 @@ namespace Gedaq.MySqlConnector
 
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.MySqlConnector.Attributes", "ParametrAttribute"))
                     {
-                        ProcessParametr(attributeData, containsType, readTemp);
+                        ProcessParametr(attributeData, readTemp);
                         continue;
                     }
 
@@ -82,7 +82,7 @@ namespace Gedaq.MySqlConnector
                         continue;
                     }
 
-                    base.ProcessAttribute(attributeData, containsType, readTemp.FormatParametrs);
+                    base.ProcessAttribute(attributeData, readTemp.FormatParametrs);
                 }
 
                 TryAddReadMethod(readTemp);
@@ -195,18 +195,23 @@ namespace Gedaq.MySqlConnector
             }
             else
             {
-                if (!query.IsDynamicQuery())
-                {
-                    // query must contain select or return
-                    query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);
-                }
-                else
+                if (query.IsDynamicQuery())
                 {
                     for (int i = 0; i < query.MapTypeInfos.Length; i++)
                     {
                         MapTypeInfo mapTypeInfo = query.MapTypeInfos[i];
-                        mapTypeInfo.ParseAliasesFromType(_context, _providerInfo, query.GetAliasOverride(i));
+                        mapTypeInfo.ParseAliasesFromType(_context, query.GetAliasOverride(i));
                     }
+                }
+                else
+                {
+                    // query must contain select or return
+                    query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);
+                }
+
+                foreach (var mapTypeInfo in query.MapTypeInfos)
+                {
+                    mapTypeInfo.FreezeMap(_context);
                 }
             }
 
@@ -270,7 +275,7 @@ namespace Gedaq.MySqlConnector
             INamedTypeSymbol containsType,
             ReadPair<MySqlConnectorQuery, MySqlConnectorParametr, MySqlConnectorDynamicParametr> readPair)
         {
-            if (!MySqlConnectorQuery.CreateNew(_context, queryReadAttribute.ConstructorArguments, containsType, out var queryReadMethod))
+            if (!MySqlConnectorQuery.CreateNew(_context, queryReadAttribute.ConstructorArguments, containsType, _providerInfo, out var queryReadMethod))
             {
                 throw new Exception($"Unknown {nameof(MySqlConnectorQuery)} constructor");
             }
@@ -285,10 +290,9 @@ namespace Gedaq.MySqlConnector
 
         private void ProcessParametr(
             AttributeData parametrAttribute,
-            INamedTypeSymbol containsType,
             ReadPair<MySqlConnectorQuery, MySqlConnectorParametr, MySqlConnectorDynamicParametr> readPair)
         {
-            if (!MySqlConnectorParametr.CreateNew(parametrAttribute.ConstructorArguments, containsType, out var parametr, out var methodName))
+            if (!MySqlConnectorParametr.CreateNew(_context, parametrAttribute.ConstructorArguments, out var parametr))
             {
                 throw new Exception($"Unknown {nameof(MySqlConnectorParametr)} constructor");
             }

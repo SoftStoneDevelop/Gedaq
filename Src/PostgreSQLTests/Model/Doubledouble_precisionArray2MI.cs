@@ -6,10 +6,16 @@ namespace Tests
 {
     public class Doubledouble_precisionArray2MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public System.Collections.Generic.List<System.Double> Value { get; set; }
 
+        
+        
         public System.Collections.Generic.List<System.Double> NullableValue { get; set; }
 
         public static void AssertModel(Doubledouble_precisionArray2MI actual, Doubledouble_precisionArray2MI expect, bool checkInInnerOnlyId)
@@ -49,4 +55,3 @@ namespace Tests
         }
     }
 }
-

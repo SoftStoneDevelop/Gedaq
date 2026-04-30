@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatStringtext0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.String Value { get; set; }
 
 
 
+        
         public System.String NullableValue { get; set; }
 
         public static void AssertModel(FlatStringtext0M actual, Stringtext0M expect, bool checkInInnerOnlyId)

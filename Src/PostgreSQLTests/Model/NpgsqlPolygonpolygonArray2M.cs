@@ -6,12 +6,15 @@ namespace Tests
 {
     public class NpgsqlPolygonpolygonArray2M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon> Value { get; set; }
 
         public NpgsqlPolygonpolygonArray2MI ModelInner { get; set; }
 
+        
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon> NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlPolygonpolygonArray2M actual, NpgsqlPolygonpolygonArray2M expect, bool checkInInnerOnlyId)

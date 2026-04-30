@@ -93,7 +93,7 @@ namespace Gedaq.Parser
                     }
 
                     var lastAlias = innerStack.Peek();
-                    lastAlias.Fields.Add(new Field { Name = name, Position = _fieldPosition });
+                    lastAlias.AddField(new Field { Name = name, Position = _fieldPosition });
                     continue;
                 }
 
@@ -154,7 +154,7 @@ namespace Gedaq.Parser
                 }
 
                 var alias = innerStack.Peek();
-                alias.Fields.Add(new Field { Name = fieldName, Position = _fieldPosition });
+                alias.AddField(new Field { Name = fieldName, Position = _fieldPosition });
             }
 
             if (innerStack.Count != 1 || innerStack.Peek() != _root)
@@ -178,7 +178,6 @@ namespace Gedaq.Parser
             }
 
             _resultQuery.Append(_query.Slice(start, length).ToString());
-            var s = _resultQuery.ToString();
             _lastPartIndex = start + length;
         }
 

@@ -6,10 +6,16 @@ namespace Tests
 {
     public class Int16smallint0MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public System.Int16 Value { get; set; }
 
+        
+        
         public System.Int16? NullableValue { get; set; }
 
         public static void AssertModel(Int16smallint0MI actual, Int16smallint0MI expect, bool checkInInnerOnlyId)
@@ -30,4 +36,3 @@ namespace Tests
         }
     }
 }
-

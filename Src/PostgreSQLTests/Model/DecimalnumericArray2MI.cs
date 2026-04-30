@@ -6,10 +6,16 @@ namespace Tests
 {
     public class DecimalnumericArray2MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public System.Collections.Generic.List<System.Decimal> Value { get; set; }
 
+        
+        
         public System.Collections.Generic.List<System.Decimal> NullableValue { get; set; }
 
         public static void AssertModel(DecimalnumericArray2MI actual, DecimalnumericArray2MI expect, bool checkInInnerOnlyId)
@@ -49,4 +55,3 @@ namespace Tests
         }
     }
 }
-

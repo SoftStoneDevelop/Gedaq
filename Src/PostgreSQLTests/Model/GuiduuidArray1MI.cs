@@ -6,10 +6,16 @@ namespace Tests
 {
     public class GuiduuidArray1MI
     {
+        
+        
         public System.Int32 Id { get; set; }
 
+        
+        
         public System.Guid[] Value { get; set; }
 
+        
+        
         public System.Guid[] NullableValue { get; set; }
 
         public static void AssertModel(GuiduuidArray1MI actual, GuiduuidArray1MI expect, bool checkInInnerOnlyId)
@@ -49,4 +55,3 @@ namespace Tests
         }
     }
 }
-

@@ -6,12 +6,15 @@ namespace Tests
 {
     public class FlatInt16smallintArray1M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Int16[] Value { get; set; }
 
 
 
+        
         public System.Int16[] NullableValue { get; set; }
 
         public static void AssertModel(FlatInt16smallintArray1M actual, Int16smallintArray1M expect, bool checkInInnerOnlyId)

@@ -6,12 +6,15 @@ namespace Tests
 {
     public class BigIntegernumeric0M
     {
+        
         public System.Int32 Id { get; set; }
 
+        
         public System.Numerics.BigInteger Value { get; set; }
 
         public BigIntegernumeric0MI ModelInner { get; set; }
 
+        
         public System.Numerics.BigInteger? NullableValue { get; set; }
 
         public static void AssertModel(BigIntegernumeric0M actual, BigIntegernumeric0M expect, bool checkInInnerOnlyId)
