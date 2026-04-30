@@ -80,21 +80,34 @@ namespace Gedaq.Npgsql.Model
             return true;
         }
 
-        public void SetAliases(MapTypeInfo mapTypeInfo, Aliases aliases)
+        /// <summary>
+        /// Return not null if have override
+        /// </summary>
+        public int[] GetNpgSqlDbTypesOverride(int typeIndex)
         {
-            if (_npgSqlDbTypes == null)
+            if (!HaveMapTypes || _npgSqlDbTypes == null || _npgSqlDbTypes.Length <= typeIndex)
+            {
+                return null;
+            }
+
+            return _npgSqlDbTypes;
+        }
+
+        public void SetAliases(MapTypeInfo mapTypeInfo, Aliases aliases, int[] npgSqlDbTypeOverride)
+        {
+            if (npgSqlDbTypeOverride == null)
             {
                 mapTypeInfo.Aliases = aliases;
                 return;
             }
 
-            var fields = aliases.AllFieldsOrderByPosition();
-            if (_npgSqlDbTypes?.Length != fields.Count)
+            var fields = aliases.AllFields();
+            if (_npgSqlDbTypes?.Length != fields.Length)
             {
                 throw new Exception("The number of NpgSqlDbTypes and columns in the query does not match.");
             }
 
-            for (int i = 0; i < fields.Count; i++)
+            for (int i = 0; i < fields.Length; i++)
             {
                 Field field = fields[i];
                 field.AdditionalInfo = new NpgsqlFieldInfo(_npgSqlDbTypes[i]);

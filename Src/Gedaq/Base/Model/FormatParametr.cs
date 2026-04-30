@@ -1,11 +1,8 @@
 ﻿using Gedaq.Constants;
 using Gedaq.Helpers;
-using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
-using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Text;
 
 namespace Gedaq.Base.Model
 {
@@ -17,20 +14,18 @@ namespace Gedaq.Base.Model
         internal static bool CreateNew(
             SourceProductionContext context,
             ImmutableArray<TypedConstant> namedArguments,
-            INamedTypeSymbol containsType,
-            out FormatParametr format,
-            out string methodName)
+            out FormatParametr format)
         {
             format = null;
-            methodName = null;
 
             if (namedArguments.Length != 2)
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametrsCount,
-                    "The number of attribute parameters does not match",
-                    DiagnosticSeverity.Error);
+                    DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
+                    DiagnosticSeverity.Error,
+                    new string[] { "Format", "2", namedArguments.Length.ToString() });
 
                 return false;
             }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using TestsGenerator.Constants;
 using TestsGenerator.Enums;
@@ -44,6 +45,40 @@ namespace TestsGenerator.Generators
             }
 
             return $"[Gedaq.Npgsql.Attributes.DbType({typeInfo.SpecialDbTypeStr()})]";
+        }
+
+        private static string AliasAttribute(
+            bool useAlias,
+            int? position = null,
+            string? alias = null)
+        {
+            if (!useAlias)
+            {
+                return string.Empty;
+            }
+
+            var builder = new DefaultInterpolatedStringHandler();
+            builder.AppendLiteral("[Gedaq.Common.Attributes.Alias(");
+            var added = false;
+            if (alias != null)
+            {
+                builder.AppendLiteral($"alias: {alias}");
+                added = true;
+            }
+
+            if (position.HasValue)
+            {
+                if (added)
+                {
+                    builder.AppendLiteral(", ");
+                }
+
+                builder.AppendLiteral($"order: {position.Value}");
+            }
+
+            builder.AppendLiteral(")]");
+
+            return builder.ToStringAndClear();
         }
 
         private async Task Model(
@@ -253,12 +288,15 @@ namespace Tests
     public class {model.ClassName(withDbTypes, withDbTypes)}
     {{
         {DbTypeAttribute(model.IdTypeInfo, withDbTypes)}
+        {AliasAttribute(withDbTypes, 0)}
         public {model.IdType} {model.IdName} {{ get; set; }}
 
         {DbTypeAttribute(model.TypeInfo, withDbTypes)}
+        {AliasAttribute(withDbTypes, 1)}
         public {model.ValueType} {model.ValueName} {{ get; set; }}
 
         {DbTypeAttribute(model.TypeInfo, withDbTypes)}
+        {AliasAttribute(withDbTypes, 2)}
         public {model.NullableValueType} {model.NullableValueName} {{ get; set; }}
 
         public static void {AssertMethodName}({model.ClassName(withDbTypes, withDbTypes)} actual, {model.ClassName(false)} expect, bool checkInInnerOnlyId)

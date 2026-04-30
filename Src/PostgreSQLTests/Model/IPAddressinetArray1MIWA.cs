@@ -7,12 +7,15 @@ namespace Tests
     public class IPAddressinetArray1MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483624))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.Net.IPAddress[] Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483624))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.Net.IPAddress[] NullableValue { get; set; }
 
         public static void AssertModel(IPAddressinetArray1MIWA actual, IPAddressinetArray1MI expect, bool checkInInnerOnlyId)

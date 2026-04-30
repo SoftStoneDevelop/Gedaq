@@ -8,7 +8,6 @@ using Gedaq.Npgsql.Model;
 using Microsoft.CodeAnalysis;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace Gedaq.Npgsql.Generators
@@ -237,13 +236,13 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 var aliases = binaryExport.MapTypeInfos[0].Aliases;
                 if (NpgsqlMapTypeHelper.IsKnownProviderType(mapType))
                 {
-                    var field = aliases.AllFieldsOrderByPosition().First();
+                    var field = aliases.AllFields()[0];
                     _methodCode.Append($@"
                     yield return export.Read{GeneratorHelper.AsyncWord(isAsync)}<{mapType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
                 }
                 else if (mapType.IsNullableType())
                 {
-                    var field = aliases.AllFieldsOrderByPosition().First();
+                    var field = aliases.AllFields()[0];
                     _methodCode.Append($@"
                     if (export.IsNull)
                     {{
@@ -257,7 +256,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 }
                 else if (mapType.Name == nameof(Object))
                 {
-                    var field = aliases.AllFieldsOrderByPosition().First();
+                    var field = aliases.AllFields()[0];
                     _methodCode.Append($@"
                     yield return export.Read{GeneratorHelper.AsyncWord(isAsync)}<object>({GetReadParametrs(field, isAsync)});");
                 }
@@ -269,7 +268,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                 }
                 else
                 {
-                    var field = aliases.AllFieldsOrderByPosition().First();
+                    var field = aliases.AllFields()[0];
                     _methodCode.Append($@"
                     yield return export.Read{GeneratorHelper.AsyncWord(isAsync)}<{mapType.GetFullTypeName()}>({GetReadParametrs(field, isAsync)});");
                 }
@@ -385,7 +384,7 @@ namespace {binaryExport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                     {GeneratorHelper.Tabs(pair.Tabs)}else
                     {GeneratorHelper.Tabs(pair.Tabs)}{{");
 
-                var needSkip = pair.Aliases.AllFieldsOrderByPosition().Count;
+                var needSkip = pair.Aliases.AllFields().Length;
                 for ( var i = 0; i < needSkip; i++)
                 {
                     _methodCode.Append($@"

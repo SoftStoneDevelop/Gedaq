@@ -37,5 +37,8 @@
 
         public const string BICouldNotDetermine = "GDC0012";
         public const string BICouldNotDetermineDescr = "Binary import (method name {0}): Could not determine table write method for type {1}.";
+
+        public const string ColumnPositionNotUnique = "GDC0013";
+        public const string ColumnPositionNotUniqueDescr = "The column position in the query is not unique: Total number of columns {0}, but total number of unique columns {1}";
     }
 }

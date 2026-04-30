@@ -7,12 +7,15 @@ namespace Tests
     public class DateOnlydateArray2MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483641))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.Collections.Generic.List<System.DateOnly> Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483641))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.Collections.Generic.List<System.DateOnly> NullableValue { get; set; }
 
         public static void AssertModel(DateOnlydateArray2MIWA actual, DateOnlydateArray2MI expect, bool checkInInnerOnlyId)

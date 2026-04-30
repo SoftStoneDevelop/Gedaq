@@ -7,12 +7,15 @@ namespace Tests
     public class BigIntegernumericArray2MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483635))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.Collections.Generic.List<System.Numerics.BigInteger> Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483635))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.Collections.Generic.List<System.Numerics.BigInteger> NullableValue { get; set; }
 
         public static void AssertModel(BigIntegernumericArray2MIWA actual, BigIntegernumericArray2MI expect, bool checkInInnerOnlyId)

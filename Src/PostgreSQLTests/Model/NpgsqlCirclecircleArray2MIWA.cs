@@ -7,12 +7,15 @@ namespace Tests
     public class NpgsqlCirclecircleArray2MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483643))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlCircle> Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483643))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlCircle> NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlCirclecircleArray2MIWA actual, NpgsqlCirclecircleArray2MI expect, bool checkInInnerOnlyId)

@@ -1072,7 +1072,7 @@ namespace Gedaq.Base.Query
                 return;
             }
 
-            var firstField = source.MapTypeInfos[0].Aliases.AllFieldsOrderByPosition().First();
+            var firstField = source.MapTypeInfos[0].Aliases.AllFields()[0];
             mapType.GetPropertyOrFieldName(firstField.Name, out _, out var typeProp);
             type = typeProp;
             typeName = type.GetFullTypeName(replaceNullable: true);

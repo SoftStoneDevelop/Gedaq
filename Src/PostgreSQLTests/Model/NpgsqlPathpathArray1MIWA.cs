@@ -7,12 +7,15 @@ namespace Tests
     public class NpgsqlPathpathArray1MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483634))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public NpgsqlTypes.NpgsqlPath[] Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483634))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public NpgsqlTypes.NpgsqlPath[] NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlPathpathArray1MIWA actual, NpgsqlPathpathArray1MI expect, bool checkInInnerOnlyId)

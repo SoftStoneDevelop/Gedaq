@@ -7,11 +7,14 @@ namespace Tests
     public class NpgsqlBoxboxArray2MI
     {
         
+        
         public System.Int32 Id { get; set; }
 
         
+        
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlBox> Value { get; set; }
 
+        
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlBox> NullableValue { get; set; }
 

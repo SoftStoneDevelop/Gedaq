@@ -7,12 +7,15 @@ namespace Tests
     public class DateTimetimestamp_without_time_zoneArray2MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483627))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.Collections.Generic.List<System.DateTime> Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483627))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.Collections.Generic.List<System.DateTime> NullableValue { get; set; }
 
         public static void AssertModel(DateTimetimestamp_without_time_zoneArray2MIWA actual, DateTimetimestamp_without_time_zoneArray2MI expect, bool checkInInnerOnlyId)

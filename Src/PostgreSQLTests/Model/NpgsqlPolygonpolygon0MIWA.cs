@@ -7,12 +7,15 @@ namespace Tests
     public class NpgsqlPolygonpolygon0MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(16))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public NpgsqlTypes.NpgsqlPolygon Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(16))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public NpgsqlTypes.NpgsqlPolygon? NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlPolygonpolygon0MIWA actual, NpgsqlPolygonpolygon0MI expect, bool checkInInnerOnlyId)

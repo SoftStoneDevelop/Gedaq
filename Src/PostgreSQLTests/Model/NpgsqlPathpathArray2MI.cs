@@ -7,11 +7,14 @@ namespace Tests
     public class NpgsqlPathpathArray2MI
     {
         
+        
         public System.Int32 Id { get; set; }
 
         
+        
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPath> Value { get; set; }
 
+        
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPath> NullableValue { get; set; }
 

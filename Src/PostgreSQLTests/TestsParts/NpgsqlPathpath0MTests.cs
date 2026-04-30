@@ -30,288 +30,288 @@ namespace Tests
         {
             new NpgsqlPathpath0M
 {
-    Id = 9,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6300384082776639d, y: 0.7495320030437037d), new NpgsqlTypes.NpgsqlPoint(x: 0.1587360579187037d, y: 0.0190375632764902d), new NpgsqlTypes.NpgsqlPoint(x: 0.6346034118733048d, y: 0.7280110309953616d)),
+    Id = 1,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.32187743729051466d, y: 0.9837123616815743d), new NpgsqlTypes.NpgsqlPoint(x: 0.9608659072745059d, y: 0.8580409059373132d), new NpgsqlTypes.NpgsqlPoint(x: 0.5401137762548912d, y: 0.9720284678422745d)),
     ModelInner = null,
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5471760774136353d, y: 0.2585227912960819d), new NpgsqlTypes.NpgsqlPoint(x: 0.6718623076383583d, y: 0.41161683898967794d), new NpgsqlTypes.NpgsqlPoint(x: 0.8355824858609684d, y: 0.2843345713448113d)),
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6387911057188764d, y: 0.4792398367483184d), new NpgsqlTypes.NpgsqlPoint(x: 0.3225675678268459d, y: 0.27717389895811695d), new NpgsqlTypes.NpgsqlPoint(x: 0.914774380987572d, y: 0.17205047127864548d)),
 },
             new NpgsqlPathpath0M
 {
-    Id = 18,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4165830524643521d, y: 0.0830388451964762d), new NpgsqlTypes.NpgsqlPoint(x: 0.08829222857848407d, y: 0.5943174264904748d), new NpgsqlTypes.NpgsqlPoint(x: 0.9876111662074002d, y: 0.17128450452822186d)),
+    Id = 4,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.0939036211468176d, y: 0.17795064789924242d), new NpgsqlTypes.NpgsqlPoint(x: 0.5874797702644124d, y: 0.22070502453294227d), new NpgsqlTypes.NpgsqlPoint(x: 0.31118957101708455d, y: 0.90023920215019d)),
     ModelInner = new NpgsqlPathpath0MI
 {
-    Id = 3,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.1142065824617603d, y: 0.9415909088183784d), new NpgsqlTypes.NpgsqlPoint(x: 0.3627983692837803d, y: 0.45255535514486134d), new NpgsqlTypes.NpgsqlPoint(x: 0.2680824183164645d, y: 0.8740173824885492d)),
+    Id = 5,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4863638441836249d, y: 0.8482623849486046d), new NpgsqlTypes.NpgsqlPoint(x: 0.5966094098957083d, y: 0.8637278493451856d), new NpgsqlTypes.NpgsqlPoint(x: 0.3616830618402752d, y: 0.9211039763566239d)),
     NullableValue = null,
 },
-    NullableValue = null,
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.48752894163016514d, y: 0.1561211880592681d), new NpgsqlTypes.NpgsqlPoint(x: 0.545058139868356d, y: 0.42660168801615417d), new NpgsqlTypes.NpgsqlPoint(x: 0.0980490995959481d, y: 0.5231413245324888d)),
 },
             new NpgsqlPathpath0M
 {
-    Id = 22,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6958800324827679d, y: 0.9323916687893822d), new NpgsqlTypes.NpgsqlPoint(x: 0.6271328684149409d, y: 0.41412994394869473d), new NpgsqlTypes.NpgsqlPoint(x: 0.4354542597835125d, y: 0.36359964472035555d)),
+    Id = 10,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.012385770688188247d, y: 0.9437023511167454d), new NpgsqlTypes.NpgsqlPoint(x: 0.34097005594487806d, y: 0.06614710279617386d), new NpgsqlTypes.NpgsqlPoint(x: 0.17728727297540414d, y: 0.9203863738209981d)),
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6316952100893283d, y: 0.7317146399508008d), new NpgsqlTypes.NpgsqlPoint(x: 0.4163002546818575d, y: 0.8049110448143588d), new NpgsqlTypes.NpgsqlPoint(x: 0.7664498937186545d, y: 0.4518567303355444d)),
 },
             new NpgsqlPathpath0M
 {
-    Id = 31,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8733588118651534d, y: 0.16321155095710926d), new NpgsqlTypes.NpgsqlPoint(x: 0.39315876647382486d, y: 0.9503506349189761d), new NpgsqlTypes.NpgsqlPoint(x: 0.6645159395078658d, y: 0.10709211709870237d)),
+    Id = 19,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.16272340320911327d, y: 0.38562829527075404d), new NpgsqlTypes.NpgsqlPoint(x: 0.3086470561795589d, y: 0.13928490183395525d), new NpgsqlTypes.NpgsqlPoint(x: 0.6999601204849794d, y: 0.8235962409985872d)),
     ModelInner = new NpgsqlPathpath0MI
 {
-    Id = 8,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7414732174132882d, y: 0.5528478153648975d), new NpgsqlTypes.NpgsqlPoint(x: 0.056119563992861665d, y: 0.5832535399207119d), new NpgsqlTypes.NpgsqlPoint(x: 0.9504067695106311d, y: 0.4835051441183762d)),
-    NullableValue = null,
+    Id = 13,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3112107803757652d, y: 0.4581029672646054d), new NpgsqlTypes.NpgsqlPoint(x: 0.777669991637431d, y: 0.7667838313809824d), new NpgsqlTypes.NpgsqlPoint(x: 0.14114031234793278d, y: 0.7149143704456629d)),
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.06744746259369239d, y: 0.47078467809915026d), new NpgsqlTypes.NpgsqlPoint(x: 0.3856479841035565d, y: 0.23532992617590442d), new NpgsqlTypes.NpgsqlPoint(x: 0.03957907366091562d, y: 0.12550508700727403d)),
 },
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6521081336574701d, y: 0.19389437253408304d), new NpgsqlTypes.NpgsqlPoint(x: 0.8493160649245717d, y: 0.26525891719588446d), new NpgsqlTypes.NpgsqlPoint(x: 0.64087570089057d, y: 0.5485107311065177d)),
+    NullableValue = null,
 },
             new NpgsqlPathpath0M
 {
-    Id = 34,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.706160539508384d, y: 0.005141111016677358d), new NpgsqlTypes.NpgsqlPoint(x: 0.07547497378100276d, y: 0.16745793447467827d), new NpgsqlTypes.NpgsqlPoint(x: 0.39019766116189136d, y: 0.4720841220664519d)),
+    Id = 28,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.730284620690524d, y: 0.7239856198996987d), new NpgsqlTypes.NpgsqlPoint(x: 0.4889520089700292d, y: 0.25259560319519847d), new NpgsqlTypes.NpgsqlPoint(x: 0.561406529327117d, y: 0.9768415354266972d)),
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlPathpath0M
 {
-    Id = 37,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.256188874853568d, y: 0.8431560538159182d), new NpgsqlTypes.NpgsqlPoint(x: 0.9257084269951422d, y: 0.04115692451214159d), new NpgsqlTypes.NpgsqlPoint(x: 0.08892551564764106d, y: 0.652981052955308d)),
-    ModelInner = new NpgsqlPathpath0MI
-{
-    Id = 11,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.02528017333357202d, y: 0.0036121020286387084d), new NpgsqlTypes.NpgsqlPoint(x: 0.10732959603669323d, y: 0.5158115432186098d), new NpgsqlTypes.NpgsqlPoint(x: 0.4775577856230766d, y: 0.5790709858144809d)),
-    NullableValue = null,
-},
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6178927124264777d, y: 0.9851239502443295d), new NpgsqlTypes.NpgsqlPoint(x: 0.39063668822867714d, y: 0.947174323517244d), new NpgsqlTypes.NpgsqlPoint(x: 0.9447844424973548d, y: 0.7248786467596995d)),
-},
-            new NpgsqlPathpath0M
-{
-    Id = 38,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.05123065431848717d, y: 0.5382680400422305d), new NpgsqlTypes.NpgsqlPoint(x: 0.21774613077866212d, y: 0.9950773928640092d), new NpgsqlTypes.NpgsqlPoint(x: 0.6999894798101748d, y: 0.34774489809489106d)),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlPathpath0M
-{
-    Id = 44,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.15579580019727768d, y: 0.06381108541433689d), new NpgsqlTypes.NpgsqlPoint(x: 0.11529763666657311d, y: 0.9859693937875755d), new NpgsqlTypes.NpgsqlPoint(x: 0.3914042588673693d, y: 0.36408382455228505d)),
-    ModelInner = new NpgsqlPathpath0MI
-{
-    Id = 17,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.01888634634689934d, y: 0.5747075777544562d), new NpgsqlTypes.NpgsqlPoint(x: 0.6251221495554437d, y: 0.431725187358144d), new NpgsqlTypes.NpgsqlPoint(x: 0.19735061516444297d, y: 0.7492463306561229d)),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new NpgsqlPathpath0M
-{
-    Id = 50,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8702680077616768d, y: 0.7509466595567518d), new NpgsqlTypes.NpgsqlPoint(x: 0.4769529403430788d, y: 0.9038849586911017d), new NpgsqlTypes.NpgsqlPoint(x: 0.5634180454093034d, y: 0.3621748906716937d)),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlPathpath0M
-{
-    Id = 54,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6515623898081567d, y: 0.9545158800799922d), new NpgsqlTypes.NpgsqlPoint(x: 0.96676524294417d, y: 0.9435876178168235d), new NpgsqlTypes.NpgsqlPoint(x: 0.9270920933123629d, y: 0.1985019808062688d)),
+    Id = 29,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.08605797352399336d, y: 0.5038100801519455d), new NpgsqlTypes.NpgsqlPoint(x: 0.7733646952180582d, y: 0.33493821668546775d), new NpgsqlTypes.NpgsqlPoint(x: 0.8595782329964408d, y: 0.7493066429047205d)),
     ModelInner = new NpgsqlPathpath0MI
 {
     Id = 20,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.16058513028457178d, y: 0.6229721328759219d), new NpgsqlTypes.NpgsqlPoint(x: 0.34796830943747903d, y: 0.18664291919945286d), new NpgsqlTypes.NpgsqlPoint(x: 0.8175904268806188d, y: 0.5809811545546887d)),
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.2634362702230457d, y: 0.3310970517630163d), new NpgsqlTypes.NpgsqlPoint(x: 0.8473226894982894d, y: 0.47417194406756036d), new NpgsqlTypes.NpgsqlPoint(x: 0.5897076051997622d, y: 0.9093924960600663d)),
     NullableValue = null,
 },
     NullableValue = null,
 },
             new NpgsqlPathpath0M
 {
-    Id = 56,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7445133643202186d, y: 0.8770284761823003d), new NpgsqlTypes.NpgsqlPoint(x: 0.8303441676852148d, y: 0.8489118742862688d), new NpgsqlTypes.NpgsqlPoint(x: 0.5471125798692454d, y: 0.8041077749505472d)),
+    Id = 33,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.49740550989580423d, y: 0.8235062006576792d), new NpgsqlTypes.NpgsqlPoint(x: 0.11140315134854029d, y: 0.640754417363561d), new NpgsqlTypes.NpgsqlPoint(x: 0.10607311661910435d, y: 0.8748515895381915d)),
     ModelInner = null,
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.10259815134186012d, y: 0.021433531863827904d), new NpgsqlTypes.NpgsqlPoint(x: 0.7343275942821939d, y: 0.3042099067836479d), new NpgsqlTypes.NpgsqlPoint(x: 0.8730309047833058d, y: 0.07583052288701209d)),
+},
+            new NpgsqlPathpath0M
+{
+    Id = 40,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8184307028356268d, y: 0.1660565877144905d), new NpgsqlTypes.NpgsqlPoint(x: 0.23689673694747349d, y: 0.6724133777108979d), new NpgsqlTypes.NpgsqlPoint(x: 0.3391900929635604d, y: 0.3302034923142202d)),
+    ModelInner = new NpgsqlPathpath0MI
+{
+    Id = 21,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.1042341413579968d, y: 0.6208102099767836d), new NpgsqlTypes.NpgsqlPoint(x: 0.10013324476451191d, y: 0.9395063366033806d), new NpgsqlTypes.NpgsqlPoint(x: 0.6097391795758189d, y: 0.04457116443736453d)),
     NullableValue = null,
+},
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7773868720961987d, y: 0.4161056755091842d), new NpgsqlTypes.NpgsqlPoint(x: 0.8474959073462752d, y: 0.19407984817202195d), new NpgsqlTypes.NpgsqlPoint(x: 0.3739995178533223d, y: 0.33409833683789814d)),
+},
+            new NpgsqlPathpath0M
+{
+    Id = 41,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.2985727553130755d, y: 0.16973040069023726d), new NpgsqlTypes.NpgsqlPoint(x: 0.6424403982845325d, y: 0.5125629459060828d), new NpgsqlTypes.NpgsqlPoint(x: 0.44800776254877916d, y: 0.612042310628433d)),
+    ModelInner = null,
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9778081066584271d, y: 0.03704702541639415d), new NpgsqlTypes.NpgsqlPoint(x: 0.5468307008132023d, y: 0.6151042620486146d), new NpgsqlTypes.NpgsqlPoint(x: 0.4560903759375522d, y: 0.3192479890654626d)),
+},
+            new NpgsqlPathpath0M
+{
+    Id = 45,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.156866842363502d, y: 0.28173895099889035d), new NpgsqlTypes.NpgsqlPoint(x: 0.047590697508536284d, y: 0.13179571860578065d), new NpgsqlTypes.NpgsqlPoint(x: 0.6766834398831902d, y: 0.21411249004520505d)),
+    ModelInner = new NpgsqlPathpath0MI
+{
+    Id = 27,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8138630578068515d, y: 0.11795865241411263d), new NpgsqlTypes.NpgsqlPoint(x: 0.6830300212272239d, y: 0.572731389353938d), new NpgsqlTypes.NpgsqlPoint(x: 0.9678871331460612d, y: 0.2853566853578522d)),
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.024194576889528085d, y: 0.33696606627341463d), new NpgsqlTypes.NpgsqlPoint(x: 0.03410943936884514d, y: 0.074372588386165d), new NpgsqlTypes.NpgsqlPoint(x: 0.2034494929902383d, y: 0.44399091913399147d)),
+},
+    NullableValue = null,
+},
+            new NpgsqlPathpath0M
+{
+    Id = 53,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6548378670200548d, y: 0.4134149856174837d), new NpgsqlTypes.NpgsqlPoint(x: 0.9441803125431862d, y: 0.6041844204099742d), new NpgsqlTypes.NpgsqlPoint(x: 0.7676762202524333d, y: 0.6196702338238622d)),
+    ModelInner = null,
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9417392653058971d, y: 0.21307016416138702d), new NpgsqlTypes.NpgsqlPoint(x: 0.28137811343522967d, y: 0.7514802682718026d), new NpgsqlTypes.NpgsqlPoint(x: 0.2877197752158349d, y: 0.9988707797949911d)),
+},
+            new NpgsqlPathpath0M
+{
+    Id = 58,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.1045669181267298d, y: 0.3621015270329473d), new NpgsqlTypes.NpgsqlPoint(x: 0.1148991801903616d, y: 0.2274872363619651d), new NpgsqlTypes.NpgsqlPoint(x: 0.6195581343644281d, y: 0.05852231426075505d)),
+    ModelInner = new NpgsqlPathpath0MI
+{
+    Id = 28,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.46651592067116554d, y: 0.9703842408976944d), new NpgsqlTypes.NpgsqlPoint(x: 0.9555044982759686d, y: 0.3531551377273596d), new NpgsqlTypes.NpgsqlPoint(x: 0.903603128248657d, y: 0.3312499882257993d)),
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.0038502321229445524d, y: 0.03186137077263995d), new NpgsqlTypes.NpgsqlPoint(x: 0.02481559125789079d, y: 0.6441180045191767d), new NpgsqlTypes.NpgsqlPoint(x: 0.825722060372456d, y: 0.30205269466085016d)),
+},
+    NullableValue = null,
+},
+            new NpgsqlPathpath0M
+{
+    Id = 62,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3243021342438145d, y: 0.6985757330535691d), new NpgsqlTypes.NpgsqlPoint(x: 0.681517693694453d, y: 0.19008600048182978d), new NpgsqlTypes.NpgsqlPoint(x: 0.5036240712075639d, y: 0.6716466481216589d)),
+    ModelInner = null,
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6639155914636087d, y: 0.918229505220105d), new NpgsqlTypes.NpgsqlPoint(x: 0.5331528945403387d, y: 0.9088218275195418d), new NpgsqlTypes.NpgsqlPoint(x: 0.12332528303783508d, y: 0.047632533288568535d)),
 },
             new NpgsqlPathpath0M
 {
     Id = 65,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6078602283653777d, y: 0.36768957153108395d), new NpgsqlTypes.NpgsqlPoint(x: 0.1287968810690403d, y: 0.6328292418253414d), new NpgsqlTypes.NpgsqlPoint(x: 0.6954308107744425d, y: 0.8872937769923123d)),
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8931224580364109d, y: 0.6894651451343579d), new NpgsqlTypes.NpgsqlPoint(x: 0.16849952854063943d, y: 0.9230078111959203d), new NpgsqlTypes.NpgsqlPoint(x: 0.7757882071627066d, y: 0.39325959366156704d)),
     ModelInner = new NpgsqlPathpath0MI
 {
-    Id = 22,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7844371876329728d, y: 0.18297677787012545d), new NpgsqlTypes.NpgsqlPoint(x: 0.6552206450692818d, y: 0.0847647148511036d), new NpgsqlTypes.NpgsqlPoint(x: 0.941565060273267d, y: 0.43806488291844314d)),
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6273066703325338d, y: 0.8512600908796363d), new NpgsqlTypes.NpgsqlPoint(x: 0.9889247102062146d, y: 0.3657173957244293d), new NpgsqlTypes.NpgsqlPoint(x: 0.9168168183104842d, y: 0.6831728386804343d)),
+    Id = 36,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.021867406759001673d, y: 0.6988350765221099d), new NpgsqlTypes.NpgsqlPoint(x: 0.985350449782381d, y: 0.01140251091606126d), new NpgsqlTypes.NpgsqlPoint(x: 0.02979062045817049d, y: 0.48271015812932816d)),
+    NullableValue = null,
 },
+    NullableValue = null,
+},
+            new NpgsqlPathpath0M
+{
+    Id = 68,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.08029222752339271d, y: 0.5445785969702944d), new NpgsqlTypes.NpgsqlPoint(x: 0.7508227244529064d, y: 0.5549330333969313d), new NpgsqlTypes.NpgsqlPoint(x: 0.4077586018036229d, y: 0.16078436493012638d)),
+    ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlPathpath0M
 {
     Id = 73,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.772202322566165d, y: 0.17915506251070845d), new NpgsqlTypes.NpgsqlPoint(x: 0.9603336084521403d, y: 0.13297292060724564d), new NpgsqlTypes.NpgsqlPoint(x: 0.25848930175407114d, y: 0.4289770315281872d)),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlPathpath0M
-{
-    Id = 77,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.851844309600514d, y: 0.7018564833172163d), new NpgsqlTypes.NpgsqlPoint(x: 0.5957297124303375d, y: 0.9788304512982757d), new NpgsqlTypes.NpgsqlPoint(x: 0.2997499418676687d, y: 0.3170976120122728d)),
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5059880541605064d, y: 0.9595463808598307d), new NpgsqlTypes.NpgsqlPoint(x: 0.43639035766372714d, y: 0.2126660311079015d), new NpgsqlTypes.NpgsqlPoint(x: 0.6737412273624952d, y: 0.9671959938129648d)),
     ModelInner = new NpgsqlPathpath0MI
 {
-    Id = 31,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6999999070233826d, y: 0.4357051396862184d), new NpgsqlTypes.NpgsqlPoint(x: 0.43270381161938165d, y: 0.049086718071997715d), new NpgsqlTypes.NpgsqlPoint(x: 0.2090709061069469d, y: 0.13966609953472842d)),
+    Id = 37,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3109021456846234d, y: 0.23809653458447977d), new NpgsqlTypes.NpgsqlPoint(x: 0.4296418337521448d, y: 0.16262641966178404d), new NpgsqlTypes.NpgsqlPoint(x: 0.1730036966191978d, y: 0.7186117261747179d)),
     NullableValue = null,
 },
     NullableValue = null,
 },
             new NpgsqlPathpath0M
 {
-    Id = 85,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6715159356840498d, y: 0.8880238421387208d), new NpgsqlTypes.NpgsqlPoint(x: 0.49140044432054253d, y: 0.9876512123217106d), new NpgsqlTypes.NpgsqlPoint(x: 0.5749309553544869d, y: 0.03502030197369144d)),
+    Id = 82,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.013100062742008367d, y: 0.11391362279310846d), new NpgsqlTypes.NpgsqlPoint(x: 0.39100676214688757d, y: 0.5995163176893243d), new NpgsqlTypes.NpgsqlPoint(x: 0.8433823891664345d, y: 0.06308450455986347d)),
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.317133099940322d, y: 0.8155406557417567d), new NpgsqlTypes.NpgsqlPoint(x: 0.03796155685013092d, y: 0.6782319333715429d), new NpgsqlTypes.NpgsqlPoint(x: 0.7904483504288442d, y: 0.4804453324918271d)),
 },
             new NpgsqlPathpath0M
 {
     Id = 89,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6729231180790392d, y: 0.4814560521945269d), new NpgsqlTypes.NpgsqlPoint(x: 0.1995246206896446d, y: 0.5431674304706859d), new NpgsqlTypes.NpgsqlPoint(x: 0.40833687596285495d, y: 0.014339446661259747d)),
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4737793868734428d, y: 0.21364087268455512d), new NpgsqlTypes.NpgsqlPoint(x: 0.7278895481132945d, y: 0.3322734753572889d), new NpgsqlTypes.NpgsqlPoint(x: 0.22119108403358367d, y: 0.6672133964156873d)),
     ModelInner = new NpgsqlPathpath0MI
 {
-    Id = 33,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.0964167158734982d, y: 0.5842303671827865d), new NpgsqlTypes.NpgsqlPoint(x: 0.8796125411521427d, y: 0.45976677479433214d), new NpgsqlTypes.NpgsqlPoint(x: 0.4948627395247269d, y: 0.5254190728255941d)),
+    Id = 41,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.03783783343908653d, y: 0.5484874823795984d), new NpgsqlTypes.NpgsqlPoint(x: 0.05555007011940982d, y: 0.0769130547450445d), new NpgsqlTypes.NpgsqlPoint(x: 0.0735963717296817d, y: 0.011558037814198618d)),
     NullableValue = null,
 },
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9168258456060225d, y: 0.49146980426892384d), new NpgsqlTypes.NpgsqlPoint(x: 0.2921100253077422d, y: 0.20390123074414213d), new NpgsqlTypes.NpgsqlPoint(x: 0.8930098723004823d, y: 0.9143463210990602d)),
+    NullableValue = null,
 },
             new NpgsqlPathpath0M
 {
     Id = 95,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.42892803124040535d, y: 0.37514919974800354d), new NpgsqlTypes.NpgsqlPoint(x: 0.44759577419755103d, y: 0.2146692775963055d), new NpgsqlTypes.NpgsqlPoint(x: 0.34401919520058966d, y: 0.012616808839248095d)),
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9281344318613908d, y: 0.29203756015625115d), new NpgsqlTypes.NpgsqlPoint(x: 0.7502449758842861d, y: 0.9839887271579368d), new NpgsqlTypes.NpgsqlPoint(x: 0.9046341479981677d, y: 0.00996623118848261d)),
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlPathpath0M
 {
     Id = 99,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8836600263188228d, y: 0.30826577881696005d), new NpgsqlTypes.NpgsqlPoint(x: 0.5971707306236446d, y: 0.009085413309394164d), new NpgsqlTypes.NpgsqlPoint(x: 0.663033929714687d, y: 0.39096111325163485d)),
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3045220568507464d, y: 0.9792511962388112d), new NpgsqlTypes.NpgsqlPoint(x: 0.8348363169876699d, y: 0.9295248478895424d), new NpgsqlTypes.NpgsqlPoint(x: 0.3231976499814332d, y: 0.9928401781487364d)),
     ModelInner = new NpgsqlPathpath0MI
 {
-    Id = 42,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.10930798153262355d, y: 0.22556476547585413d), new NpgsqlTypes.NpgsqlPoint(x: 0.9902569686943317d, y: 0.5881768071532187d), new NpgsqlTypes.NpgsqlPoint(x: 0.9914221979551064d, y: 0.020549479989464325d)),
+    Id = 44,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7436922987726727d, y: 0.8394710280241601d), new NpgsqlTypes.NpgsqlPoint(x: 0.12958717458957847d, y: 0.18075150222694336d), new NpgsqlTypes.NpgsqlPoint(x: 0.40437231345846525d, y: 0.3746577716601003d)),
     NullableValue = null,
 },
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8140810007873626d, y: 0.7221924571473407d), new NpgsqlTypes.NpgsqlPoint(x: 0.2646112863422416d, y: 0.32654020460067945d), new NpgsqlTypes.NpgsqlPoint(x: 0.9729197123714792d, y: 0.3496695986954931d)),
-},
-            new NpgsqlPathpath0M
-{
-    Id = 101,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.07465195745434361d, y: 0.27944946309460483d), new NpgsqlTypes.NpgsqlPoint(x: 0.3099380963691144d, y: 0.990943419190619d), new NpgsqlTypes.NpgsqlPoint(x: 0.8213136568078592d, y: 0.2308106813878963d)),
-    ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlPathpath0M
 {
     Id = 108,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7753076427823288d, y: 0.9581393286262891d), new NpgsqlTypes.NpgsqlPoint(x: 0.9083663661018183d, y: 0.2970472896285863d), new NpgsqlTypes.NpgsqlPoint(x: 0.0038218773284613983d, y: 0.49050349545931926d)),
-    ModelInner = new NpgsqlPathpath0MI
-{
-    Id = 49,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.11991834043230121d, y: 0.06800246878188443d), new NpgsqlTypes.NpgsqlPoint(x: 0.14251783273970497d, y: 0.3646942350224006d), new NpgsqlTypes.NpgsqlPoint(x: 0.6038144066949053d, y: 0.5791631882847204d)),
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.22267988886481394d, y: 0.59018489978376d), new NpgsqlTypes.NpgsqlPoint(x: 0.46265038035368455d, y: 0.6830285334331706d), new NpgsqlTypes.NpgsqlPoint(x: 0.8338288832189096d, y: 0.00788591182573073d)),
-},
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6248644711489609d, y: 0.228316813394827d), new NpgsqlTypes.NpgsqlPoint(x: 0.3171851727655902d, y: 0.6099097192194964d), new NpgsqlTypes.NpgsqlPoint(x: 0.8448921399392807d, y: 0.23056540269162173d)),
+    ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlPathpath0M
 {
     Id = 114,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9371227993365242d, y: 0.433150849078187d), new NpgsqlTypes.NpgsqlPoint(x: 0.7321780151777735d, y: 0.387296223664655d), new NpgsqlTypes.NpgsqlPoint(x: 0.3314340353802173d, y: 0.2712397097846202d)),
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5949619677775516d, y: 0.9331336781587192d), new NpgsqlTypes.NpgsqlPoint(x: 0.8641401299069047d, y: 0.5201082312205062d), new NpgsqlTypes.NpgsqlPoint(x: 0.7900675974816662d, y: 0.20037443128834476d)),
+    ModelInner = new NpgsqlPathpath0MI
+{
+    Id = 45,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5681894337857288d, y: 0.257888851592193d), new NpgsqlTypes.NpgsqlPoint(x: 0.6905333429749269d, y: 0.4846164444182488d), new NpgsqlTypes.NpgsqlPoint(x: 0.9781766966978918d, y: 0.8905906167843954d)),
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4330522143219857d, y: 0.9704629371929534d), new NpgsqlTypes.NpgsqlPoint(x: 0.887163328486663d, y: 0.5320328572099878d), new NpgsqlTypes.NpgsqlPoint(x: 0.2951237421453612d, y: 0.10181739967770576d)),
+},
+    NullableValue = null,
+},
+            new NpgsqlPathpath0M
+{
+    Id = 123,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.34836043025650787d, y: 0.35548126653930145d), new NpgsqlTypes.NpgsqlPoint(x: 0.16365885910310762d, y: 0.12540463235764565d), new NpgsqlTypes.NpgsqlPoint(x: 0.5861537382629299d, y: 0.4695097541916041d)),
+    ModelInner = null,
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.1578158219428557d, y: 0.580502109191045d), new NpgsqlTypes.NpgsqlPoint(x: 0.36667248834448063d, y: 0.1568505716384353d), new NpgsqlTypes.NpgsqlPoint(x: 0.9963555727258999d, y: 0.77563836899814d)),
+},
+            new NpgsqlPathpath0M
+{
+    Id = 127,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6561724763752362d, y: 0.7314684626019561d), new NpgsqlTypes.NpgsqlPoint(x: 0.36361240861749133d, y: 0.8834122394606564d), new NpgsqlTypes.NpgsqlPoint(x: 0.3802803048373804d, y: 0.7750834802771153d)),
+    ModelInner = new NpgsqlPathpath0MI
+{
+    Id = 48,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9337676746759398d, y: 0.18596555208387722d), new NpgsqlTypes.NpgsqlPoint(x: 0.14647680072657332d, y: 0.8507435395878575d), new NpgsqlTypes.NpgsqlPoint(x: 0.5407757927849911d, y: 0.34121591680390406d)),
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new NpgsqlPathpath0M
+{
+    Id = 132,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.24386406887763512d, y: 0.15554392757693525d), new NpgsqlTypes.NpgsqlPoint(x: 0.14269638613583235d, y: 0.20552489001558827d), new NpgsqlTypes.NpgsqlPoint(x: 0.37136191471395297d, y: 0.9200879311093739d)),
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlPathpath0M
 {
-    Id = 120,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3260656738662907d, y: 0.8337131136194827d), new NpgsqlTypes.NpgsqlPoint(x: 0.42161845545032606d, y: 0.5748725625755013d), new NpgsqlTypes.NpgsqlPoint(x: 0.022655750456023194d, y: 0.22186464531528138d)),
+    Id = 137,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.582667979074717d, y: 0.034248231379889305d), new NpgsqlTypes.NpgsqlPoint(x: 0.7112680891764618d, y: 0.5567763976394428d), new NpgsqlTypes.NpgsqlPoint(x: 0.7358655892625889d, y: 0.7444919986647325d)),
+    ModelInner = new NpgsqlPathpath0MI
+{
+    Id = 54,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4039079185868969d, y: 0.5491194555060888d), new NpgsqlTypes.NpgsqlPoint(x: 0.4691837933336964d, y: 0.10531096038076315d), new NpgsqlTypes.NpgsqlPoint(x: 0.6806713629464981d, y: 0.18866002989871555d)),
+    NullableValue = null,
+},
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.005276284262268671d, y: 0.29249059440197334d), new NpgsqlTypes.NpgsqlPoint(x: 0.5859913765403376d, y: 0.1078901984028241d), new NpgsqlTypes.NpgsqlPoint(x: 0.1854661948930716d, y: 0.4194405057288677d)),
+},
+            new NpgsqlPathpath0M
+{
+    Id = 140,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.832685816352704d, y: 0.5601483299516479d), new NpgsqlTypes.NpgsqlPoint(x: 0.3674868057159424d, y: 0.7805694530223134d), new NpgsqlTypes.NpgsqlPoint(x: 0.8517999302927911d, y: 0.7294649615379795d)),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlPathpath0M
+{
+    Id = 145,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.37421525349877127d, y: 0.3123672359841997d), new NpgsqlTypes.NpgsqlPoint(x: 0.1090936783864559d, y: 0.13422102071667064d), new NpgsqlTypes.NpgsqlPoint(x: 0.41761128033972916d, y: 0.7873280889168898d)),
+    ModelInner = new NpgsqlPathpath0MI
+{
+    Id = 56,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4207872452109743d, y: 0.015290441140708322d), new NpgsqlTypes.NpgsqlPoint(x: 0.547981454246913d, y: 0.5666423206592524d), new NpgsqlTypes.NpgsqlPoint(x: 0.3466467512784893d, y: 0.6933640857384799d)),
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6360682050378027d, y: 0.9043463876664724d), new NpgsqlTypes.NpgsqlPoint(x: 0.5297010172371073d, y: 0.806018909424035d), new NpgsqlTypes.NpgsqlPoint(x: 0.3781275014059875d, y: 0.4428814594912075d)),
+},
+    NullableValue = null,
+},
+            new NpgsqlPathpath0M
+{
+    Id = 146,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5958284560371019d, y: 0.4798974060874024d), new NpgsqlTypes.NpgsqlPoint(x: 0.6575568587668421d, y: 0.31450602028481d), new NpgsqlTypes.NpgsqlPoint(x: 0.10439299418237269d, y: 0.2954556396731678d)),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlPathpath0M
+{
+    Id = 152,
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.46895897576833934d, y: 0.4198918679081898d), new NpgsqlTypes.NpgsqlPoint(x: 0.3324783261400912d, y: 0.4321632140967655d), new NpgsqlTypes.NpgsqlPoint(x: 0.9431715753228715d, y: 0.6381927114889016d)),
     ModelInner = new NpgsqlPathpath0MI
 {
     Id = 58,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.31506189766540793d, y: 0.3522457701361885d), new NpgsqlTypes.NpgsqlPoint(x: 0.5215945616063922d, y: 0.28210863391776464d), new NpgsqlTypes.NpgsqlPoint(x: 0.9345051506595011d, y: 0.6030166556905684d)),
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8566869647253373d, y: 0.733946245836079d), new NpgsqlTypes.NpgsqlPoint(x: 0.6244567665890496d, y: 0.781029905845733d), new NpgsqlTypes.NpgsqlPoint(x: 0.9560113728403145d, y: 0.5430858450339738d)),
-},
+    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8723203505864855d, y: 0.2769218847243651d), new NpgsqlTypes.NpgsqlPoint(x: 0.42716926824020374d, y: 0.8501134655709022d), new NpgsqlTypes.NpgsqlPoint(x: 0.25967014597117866d, y: 0.6934885408973642d)),
     NullableValue = null,
 },
-            new NpgsqlPathpath0M
-{
-    Id = 129,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.22284767125838711d, y: 0.321577721984161d), new NpgsqlTypes.NpgsqlPoint(x: 0.9923975566935771d, y: 0.8113899759003377d), new NpgsqlTypes.NpgsqlPoint(x: 0.3601927880489252d, y: 0.7408538032647688d)),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlPathpath0M
-{
-    Id = 130,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8845069880781331d, y: 0.5832446133544374d), new NpgsqlTypes.NpgsqlPoint(x: 0.9694547676329802d, y: 0.7364511305841229d), new NpgsqlTypes.NpgsqlPoint(x: 0.6858895070493819d, y: 0.9857946094173081d)),
-    ModelInner = new NpgsqlPathpath0MI
-{
-    Id = 65,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.14870275062068428d, y: 0.7647909234832413d), new NpgsqlTypes.NpgsqlPoint(x: 0.8922641529929551d, y: 0.7746025265805577d), new NpgsqlTypes.NpgsqlPoint(x: 0.1326722777502608d, y: 0.7024158205892392d)),
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5673635669024245d, y: 0.7731348949686744d), new NpgsqlTypes.NpgsqlPoint(x: 0.33928059704529256d, y: 0.8057358670878573d), new NpgsqlTypes.NpgsqlPoint(x: 0.8166220974409557d, y: 0.6147651685327331d)),
-},
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7098140717676267d, y: 0.8092753879144646d), new NpgsqlTypes.NpgsqlPoint(x: 0.5846271568111523d, y: 0.3061248892044476d), new NpgsqlTypes.NpgsqlPoint(x: 0.006271617864172185d, y: 0.24043139857048923d)),
-},
-            new NpgsqlPathpath0M
-{
-    Id = 136,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.31527489529216324d, y: 0.852655297007515d), new NpgsqlTypes.NpgsqlPoint(x: 0.8889632960621615d, y: 0.6472661008526572d), new NpgsqlTypes.NpgsqlPoint(x: 0.7535613037230026d, y: 0.9525916741324028d)),
-    ModelInner = null,
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8957411241865315d, y: 0.19902201659857122d), new NpgsqlTypes.NpgsqlPoint(x: 0.17302653075258678d, y: 0.9039382978236474d), new NpgsqlTypes.NpgsqlPoint(x: 0.4202422673906324d, y: 0.8161724949289915d)),
-},
-            new NpgsqlPathpath0M
-{
-    Id = 142,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.847842550045621d, y: 0.6197757055064179d), new NpgsqlTypes.NpgsqlPoint(x: 0.6464179984974675d, y: 0.5316456028916419d), new NpgsqlTypes.NpgsqlPoint(x: 0.18221153576556148d, y: 0.09319456375492519d)),
-    ModelInner = new NpgsqlPathpath0MI
-{
-    Id = 69,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.31308287541372426d, y: 0.47831534151469146d), new NpgsqlTypes.NpgsqlPoint(x: 0.8737751515127683d, y: 0.17120649455211512d), new NpgsqlTypes.NpgsqlPoint(x: 0.2785384143819032d, y: 0.15767093215199957d)),
-    NullableValue = null,
-},
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6313514383679978d, y: 0.6567215608856876d), new NpgsqlTypes.NpgsqlPoint(x: 0.30137222950647735d, y: 0.20884501579921277d), new NpgsqlTypes.NpgsqlPoint(x: 0.0803479207868163d, y: 0.12107007574746798d)),
-},
-            new NpgsqlPathpath0M
-{
-    Id = 147,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9834323318143712d, y: 0.7520647445623716d), new NpgsqlTypes.NpgsqlPoint(x: 0.16850611252586323d, y: 0.7333005558897999d), new NpgsqlTypes.NpgsqlPoint(x: 0.7505552944533084d, y: 0.6403555460794731d)),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlPathpath0M
-{
-    Id = 154,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6317074410052093d, y: 0.17568327678730322d), new NpgsqlTypes.NpgsqlPoint(x: 0.8154471361773005d, y: 0.5130477247118258d), new NpgsqlTypes.NpgsqlPoint(x: 0.7753595103738224d, y: 0.4907155999851106d)),
-    ModelInner = new NpgsqlPathpath0MI
-{
-    Id = 76,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.907913085448011d, y: 0.36913169990953376d), new NpgsqlTypes.NpgsqlPoint(x: 0.5813570896125809d, y: 0.5429053833179671d), new NpgsqlTypes.NpgsqlPoint(x: 0.1538963687263062d, y: 0.12679067766493124d)),
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.31627162132425013d, y: 0.45447737352558415d), new NpgsqlTypes.NpgsqlPoint(x: 0.33585459356212666d, y: 0.8777603583517243d), new NpgsqlTypes.NpgsqlPoint(x: 0.1424464155323415d, y: 0.0408711910046855d)),
-},
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3308593474071012d, y: 0.20542226365059224d), new NpgsqlTypes.NpgsqlPoint(x: 0.6495379320517978d, y: 0.44382522957643034d), new NpgsqlTypes.NpgsqlPoint(x: 0.1943947088317305d, y: 0.6862480278169055d)),
-},
-            new NpgsqlPathpath0M
-{
-    Id = 158,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.14224683552529171d, y: 0.8476055227061888d), new NpgsqlTypes.NpgsqlPoint(x: 0.1506296787908371d, y: 0.998024580742324d), new NpgsqlTypes.NpgsqlPoint(x: 0.2448795634154335d, y: 0.8002398266590957d)),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlPathpath0M
-{
-    Id = 160,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8755387195118209d, y: 0.2761331409968887d), new NpgsqlTypes.NpgsqlPoint(x: 0.9711834964065641d, y: 0.12156541554327993d), new NpgsqlTypes.NpgsqlPoint(x: 0.27658962602114956d, y: 0.4041157152868471d)),
-    ModelInner = new NpgsqlPathpath0MI
-{
-    Id = 80,
-    Value = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.0521694551739037d, y: 0.14260948157005826d), new NpgsqlTypes.NpgsqlPoint(x: 0.9777238343217723d, y: 0.23701139939154192d), new NpgsqlTypes.NpgsqlPoint(x: 0.8479199468730737d, y: 0.9862994559930064d)),
-    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.40818923133426543d, y: 0.0066408142992150365d), new NpgsqlTypes.NpgsqlPoint(x: 0.36625289177110254d, y: 0.66492576750161d), new NpgsqlTypes.NpgsqlPoint(x: 0.43845343845914575d, y: 0.9687789133050013d)),
-},
-    NullableValue = null,
+    NullableValue = new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9824778374695037d, y: 0.06835529945255214d), new NpgsqlTypes.NpgsqlPoint(x: 0.12757013990860433d, y: 0.4035120978271448d), new NpgsqlTypes.NpgsqlPoint(x: 0.24368417654179308d, y: 0.5000377704579807d)),
 },
         };
 
@@ -747,8 +747,7 @@ RETURNING
 
                     nullable =  ((INpgsqlPathSingleTypepath)this).ScalarInsertModelDynParReturning(connection, parameters);
                 }
-                Assert.That(nullable, Is.Not.Null);
-                Assert.That(nullable, Is.EqualTo(new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6178927124264777d, y: 0.9851239502443295d), new NpgsqlTypes.NpgsqlPoint(x: 0.39063668822867714d, y: 0.947174323517244d), new NpgsqlTypes.NpgsqlPoint(x: 0.9447844424973548d, y: 0.7248786467596995d))));
+                Assert.That(nullable, Is.Null);
             }
         }
 
@@ -793,7 +792,8 @@ RETURNING
 
                     nullable = await ((INpgsqlPathSingleTypepath)this).ScalarInsertModelDynParReturningAsync(connection, parameters);
                 }
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.10259815134186012d, y: 0.021433531863827904d), new NpgsqlTypes.NpgsqlPoint(x: 0.7343275942821939d, y: 0.3042099067836479d), new NpgsqlTypes.NpgsqlPoint(x: 0.8730309047833058d, y: 0.07583052288701209d))));
                 {
                     var parameters = new NpgsqlParameter[4];
                     parameters[0] = new NpgsqlParameter<System.Int32>();
@@ -828,7 +828,8 @@ RETURNING
 
                     nullable = await ((INpgsqlPathSingleTypepath)this).ScalarInsertModelDynParReturningAsync(connection, parameters);
                 }
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7773868720961987d, y: 0.4161056755091842d), new NpgsqlTypes.NpgsqlPoint(x: 0.8474959073462752d, y: 0.19407984817202195d), new NpgsqlTypes.NpgsqlPoint(x: 0.3739995178533223d, y: 0.33409833683789814d))));
             }
         }
 
@@ -896,7 +897,8 @@ RETURNING
                 await connection.OpenAsync();
                 NpgsqlTypes.NpgsqlPath? nullable = null;
                 nullable =  ((INpgsqlPathSingleTypepath)this).ScalarInsertModelReturning(connection, _testData[8].Id, _testData[8].Value, _testData[8].NullableValue, _testData[8].ModelInner == null ? null : _testData[8].ModelInner.Id);
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9778081066584271d, y: 0.03704702541639415d), new NpgsqlTypes.NpgsqlPoint(x: 0.5468307008132023d, y: 0.6151042620486146d), new NpgsqlTypes.NpgsqlPoint(x: 0.4560903759375522d, y: 0.3192479890654626d))));
                 nullable =  ((INpgsqlPathSingleTypepath)this).ScalarInsertModelReturning(connection, _testData[9].Id, _testData[9].Value, _testData[9].NullableValue, _testData[9].ModelInner == null ? null : _testData[9].ModelInner.Id);
                 Assert.That(nullable, Is.Null);
             }
@@ -910,7 +912,8 @@ RETURNING
                 await connection.OpenAsync();
                 NpgsqlTypes.NpgsqlPath? nullable = null;
                 nullable = await ((INpgsqlPathSingleTypepath)this).ScalarInsertModelReturningAsync(connection, _testData[10].Id, _testData[10].Value, _testData[10].NullableValue, _testData[10].ModelInner == null ? null : _testData[10].ModelInner.Id);
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9417392653058971d, y: 0.21307016416138702d), new NpgsqlTypes.NpgsqlPoint(x: 0.28137811343522967d, y: 0.7514802682718026d), new NpgsqlTypes.NpgsqlPoint(x: 0.2877197752158349d, y: 0.9988707797949911d))));
                 nullable = await ((INpgsqlPathSingleTypepath)this).ScalarInsertModelReturningAsync(connection, _testData[11].Id, _testData[11].Value, _testData[11].NullableValue, _testData[11].ModelInner == null ? null : _testData[11].ModelInner.Id);
                 Assert.That(nullable, Is.Null);
             }
@@ -1622,12 +1625,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 85;
+                parametr1.Value = 41;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 73;
+                parametr2.Value = 29;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1663,74 +1666,100 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems2 = new List<FlatNpgsqlPathpath0M>();
                 await ((INpgsqlPathSingleTypepath)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(15));
-                Assert.That(firstItems2, Has.Count.EqualTo(15));
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[0],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[2],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[3],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[4],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[5],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[6],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[7],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[8],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[9],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[10],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[11],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[12],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[12],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[13],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[13],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[14],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[14],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(17));
-                Assert.That(secondItems2, Has.Count.EqualTo(17));
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[9],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[10],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[11],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[12],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[13],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[14],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[15],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[16],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(21));
+                Assert.That(firstItems2, Has.Count.EqualTo(21));
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[0],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[2],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[3],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[4],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[5],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[6],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[7],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[8],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[9],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[10],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[11],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[12],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[12],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[13],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[13],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[14],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[14],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[15],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[15],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[16],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[16],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[17],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[17],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[18],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[18],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[19],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[19],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[20],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[20],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(24));
+                Assert.That(secondItems2, Has.Count.EqualTo(24));
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[9],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[10],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[11],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[12],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[13],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[14],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[15],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[16],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[17],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[17],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[18],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[18],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[19],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[19],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[20],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[20],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[21],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[21],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[22],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[22],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[23],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[23],_testData[29], false);
             }
         }
 
@@ -1741,12 +1770,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 147;
+                parametr1.Value = 140;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 56;
+                parametr2.Value = 68;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1786,26 +1815,22 @@ ORDER BY
                         FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[28], false);
                         FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[29], false);
                         FlatNpgsqlPathpath0M.AssertModel(firstItems2[2],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(19));
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[17],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[18],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(15));
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[29], false);
             }
         }
 
@@ -1857,12 +1882,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 154;
+                parametr1.Value = 33;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 108;
+                parametr2.Value = 114;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1898,34 +1923,72 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems2 = new List<FlatNpgsqlPathpath0M>();
                  ((INpgsqlPathSingleTypepath)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(2));
-                Assert.That(firstItems2, Has.Count.EqualTo(2));
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[0],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(10));
-                Assert.That(secondItems2, Has.Count.EqualTo(10));
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[9],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(23));
+                Assert.That(firstItems2, Has.Count.EqualTo(23));
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[0],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[2],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[3],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[4],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[5],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[6],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[7],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[8],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[9],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[10],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[11],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[12],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[12],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[13],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[13],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[14],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[14],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[15],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[15],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[16],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[16],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[17],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[17],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[18],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[18],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[19],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[19],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[20],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[20],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[21],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[21],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[22],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[22],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(8));
+                Assert.That(secondItems2, Has.Count.EqualTo(8));
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[29], false);
             }
         }
 
@@ -1936,12 +1999,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 136;
+                parametr1.Value = 127;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 54;
+                parametr2.Value = 127;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1973,39 +2036,27 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems1 = new List<FlatNpgsqlPathpath0M>();
                  ((INpgsqlPathSingleTypepath)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(5));
-                Assert.That(firstItems2, Has.Count.EqualTo(5));
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[0],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[2],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[3],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[4],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(20));
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[17],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[18],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[19],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(6));
+                Assert.That(firstItems2, Has.Count.EqualTo(6));
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[0],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[2],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[3],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[4],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[5],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(6));
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[29], false);
             }
         }
 
@@ -2093,12 +2144,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 54;
+                parametr1.Value = 132;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 44;
+                parametr2.Value = 53;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2129,58 +2180,40 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
+                        Assert.That(models, Has.Count.EqualTo(5));
 
-                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[9],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[10],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[11],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[12],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[13],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[14],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[15],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[16],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[17],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[18],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[19],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
+                        Assert.That(models, Has.Count.EqualTo(19));
 
-                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[8], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[9], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[9],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[10],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[11],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[12],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[13],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[14],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[15],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[16],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[17],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[18],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[19],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[20],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[21],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[9],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[10],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[11],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[12],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[13],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[14],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[15],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[16],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[17],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[18],_testData[29], false);
                         continue;
                     }
                     
@@ -2196,12 +2229,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 34;
+                parametr1.Value = 10;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 9;
+                parametr2.Value = 82;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2233,92 +2266,62 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems2 = new List<FlatNpgsqlPathpath0M>();
                 await ((INpgsqlPathSingleTypepath)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(25));
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[5], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[6], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[7], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[8], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[9], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[12],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[13],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[14],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[15],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[16],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[17],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[18],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[19],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[20],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[21],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[22],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[23],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[24],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(29));
-                Assert.That(secondItems2, Has.Count.EqualTo(29));
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[1], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[1], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[2], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[2], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[3], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[3], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[4], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[4], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[5], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[5], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[6], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[6], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[7], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[7], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[8], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[8], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[9], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[9], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[9],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[10],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[11],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[12],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[13],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[14],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[15],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[16],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[17],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[17],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[18],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[18],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[19],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[19],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[20],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[20],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[21],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[21],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[22],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[22],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[23],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[23],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[24],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[24],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[25],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[25],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[26],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[26],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[27],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[27],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[28],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[28],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(27));
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[3], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[4], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[12],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[13],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[14],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[15],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[16],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[17],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[18],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[19],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[20],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[21],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[22],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[23],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[24],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[25],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[26],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(13));
+                Assert.That(secondItems2, Has.Count.EqualTo(13));
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[9],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[10],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[11],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[12],_testData[29], false);
             }
         }
 
@@ -2359,12 +2362,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 50;
+                parametr1.Value = 62;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 114;
+                parametr2.Value = 28;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2395,46 +2398,58 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(21));
+                        Assert.That(models, Has.Count.EqualTo(17));
 
-                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[9], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[9],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[10],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[11],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[12],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[13],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[14],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[15],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[16],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[17],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[18],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[19],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[20],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[9],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[10],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[11],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[12],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[13],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[14],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[15],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
+                        Assert.That(models, Has.Count.EqualTo(25));
 
-                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[9],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[10],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[11],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[12],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[13],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[14],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[15],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[16],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[17],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[18],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[19],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[20],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[21],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[22],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[23],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[24],_testData[29], false);
                         continue;
                     }
                     
@@ -2450,12 +2465,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 142;
+                parametr1.Value = 40;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 136;
+                parametr2.Value = 28;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2487,23 +2502,81 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems2 = new List<FlatNpgsqlPathpath0M>();
                  ((INpgsqlPathSingleTypepath)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(4));
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(5));
-                Assert.That(secondItems2, Has.Count.EqualTo(5));
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(22));
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[12],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[13],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[14],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[15],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[16],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[17],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[18],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[19],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[20],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[21],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(25));
+                Assert.That(secondItems2, Has.Count.EqualTo(25));
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[9],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[10],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[11],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[12],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[13],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[14],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[15],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[16],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[17],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[17],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[18],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[18],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[19],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[19],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[20],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[20],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[21],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[21],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[22],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[22],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[23],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[23],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[24],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[24],_testData[29], false);
             }
         }
 
@@ -2583,12 +2656,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 89;
+                parametr1.Value = 10;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 77;
+                parametr2.Value = 123;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -2597,46 +2670,50 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
+                        Assert.That(models, Has.Count.EqualTo(27));
 
-                        NpgsqlPathpath0M.AssertModel(models[0],_testData[16], false);
-                        NpgsqlPathpath0M.AssertModel(models[1],_testData[17], false);
-                        NpgsqlPathpath0M.AssertModel(models[2],_testData[18], false);
-                        NpgsqlPathpath0M.AssertModel(models[3],_testData[19], false);
-                        NpgsqlPathpath0M.AssertModel(models[4],_testData[20], false);
-                        NpgsqlPathpath0M.AssertModel(models[5],_testData[21], false);
-                        NpgsqlPathpath0M.AssertModel(models[6],_testData[22], false);
-                        NpgsqlPathpath0M.AssertModel(models[7],_testData[23], false);
-                        NpgsqlPathpath0M.AssertModel(models[8],_testData[24], false);
-                        NpgsqlPathpath0M.AssertModel(models[9],_testData[25], false);
-                        NpgsqlPathpath0M.AssertModel(models[10],_testData[26], false);
-                        NpgsqlPathpath0M.AssertModel(models[11],_testData[27], false);
-                        NpgsqlPathpath0M.AssertModel(models[12],_testData[28], false);
-                        NpgsqlPathpath0M.AssertModel(models[13],_testData[29], false);
+                        NpgsqlPathpath0M.AssertModel(models[0],_testData[3], false);
+                        NpgsqlPathpath0M.AssertModel(models[1],_testData[4], false);
+                        NpgsqlPathpath0M.AssertModel(models[2],_testData[5], false);
+                        NpgsqlPathpath0M.AssertModel(models[3],_testData[6], false);
+                        NpgsqlPathpath0M.AssertModel(models[4],_testData[7], false);
+                        NpgsqlPathpath0M.AssertModel(models[5],_testData[8], false);
+                        NpgsqlPathpath0M.AssertModel(models[6],_testData[9], false);
+                        NpgsqlPathpath0M.AssertModel(models[7],_testData[10], false);
+                        NpgsqlPathpath0M.AssertModel(models[8],_testData[11], false);
+                        NpgsqlPathpath0M.AssertModel(models[9],_testData[12], false);
+                        NpgsqlPathpath0M.AssertModel(models[10],_testData[13], false);
+                        NpgsqlPathpath0M.AssertModel(models[11],_testData[14], false);
+                        NpgsqlPathpath0M.AssertModel(models[12],_testData[15], false);
+                        NpgsqlPathpath0M.AssertModel(models[13],_testData[16], false);
+                        NpgsqlPathpath0M.AssertModel(models[14],_testData[17], false);
+                        NpgsqlPathpath0M.AssertModel(models[15],_testData[18], false);
+                        NpgsqlPathpath0M.AssertModel(models[16],_testData[19], false);
+                        NpgsqlPathpath0M.AssertModel(models[17],_testData[20], false);
+                        NpgsqlPathpath0M.AssertModel(models[18],_testData[21], false);
+                        NpgsqlPathpath0M.AssertModel(models[19],_testData[22], false);
+                        NpgsqlPathpath0M.AssertModel(models[20],_testData[23], false);
+                        NpgsqlPathpath0M.AssertModel(models[21],_testData[24], false);
+                        NpgsqlPathpath0M.AssertModel(models[22],_testData[25], false);
+                        NpgsqlPathpath0M.AssertModel(models[23],_testData[26], false);
+                        NpgsqlPathpath0M.AssertModel(models[24],_testData[27], false);
+                        NpgsqlPathpath0M.AssertModel(models[25],_testData[28], false);
+                        NpgsqlPathpath0M.AssertModel(models[26],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(16));
+                        Assert.That(models, Has.Count.EqualTo(7));
 
-                        NpgsqlPathpath0M.AssertModel(models[0],_testData[14], false);
-                        NpgsqlPathpath0M.AssertModel(models[1],_testData[15], false);
-                        NpgsqlPathpath0M.AssertModel(models[2],_testData[16], false);
-                        NpgsqlPathpath0M.AssertModel(models[3],_testData[17], false);
-                        NpgsqlPathpath0M.AssertModel(models[4],_testData[18], false);
-                        NpgsqlPathpath0M.AssertModel(models[5],_testData[19], false);
-                        NpgsqlPathpath0M.AssertModel(models[6],_testData[20], false);
-                        NpgsqlPathpath0M.AssertModel(models[7],_testData[21], false);
-                        NpgsqlPathpath0M.AssertModel(models[8],_testData[22], false);
-                        NpgsqlPathpath0M.AssertModel(models[9],_testData[23], false);
-                        NpgsqlPathpath0M.AssertModel(models[10],_testData[24], false);
-                        NpgsqlPathpath0M.AssertModel(models[11],_testData[25], false);
-                        NpgsqlPathpath0M.AssertModel(models[12],_testData[26], false);
-                        NpgsqlPathpath0M.AssertModel(models[13],_testData[27], false);
-                        NpgsqlPathpath0M.AssertModel(models[14],_testData[28], false);
-                        NpgsqlPathpath0M.AssertModel(models[15],_testData[29], false);
+                        NpgsqlPathpath0M.AssertModel(models[0],_testData[23], false);
+                        NpgsqlPathpath0M.AssertModel(models[1],_testData[24], false);
+                        NpgsqlPathpath0M.AssertModel(models[2],_testData[25], false);
+                        NpgsqlPathpath0M.AssertModel(models[3],_testData[26], false);
+                        NpgsqlPathpath0M.AssertModel(models[4],_testData[27], false);
+                        NpgsqlPathpath0M.AssertModel(models[5],_testData[28], false);
+                        NpgsqlPathpath0M.AssertModel(models[6],_testData[29], false);
                         continue;
                     }
                     
@@ -2671,12 +2748,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 99;
+                parametr1.Value = 73;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 136;
+                parametr2.Value = 68;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -2685,33 +2762,45 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
+                        Assert.That(models, Has.Count.EqualTo(14));
 
-                        NpgsqlPathpath0M.AssertModel(models[0],_testData[18], false);
-                        NpgsqlPathpath0M.AssertModel(models[1],_testData[19], false);
-                        NpgsqlPathpath0M.AssertModel(models[2],_testData[20], false);
-                        NpgsqlPathpath0M.AssertModel(models[3],_testData[21], false);
-                        NpgsqlPathpath0M.AssertModel(models[4],_testData[22], false);
-                        NpgsqlPathpath0M.AssertModel(models[5],_testData[23], false);
-                        NpgsqlPathpath0M.AssertModel(models[6],_testData[24], false);
-                        NpgsqlPathpath0M.AssertModel(models[7],_testData[25], false);
-                        NpgsqlPathpath0M.AssertModel(models[8],_testData[26], false);
-                        NpgsqlPathpath0M.AssertModel(models[9],_testData[27], false);
-                        NpgsqlPathpath0M.AssertModel(models[10],_testData[28], false);
-                        NpgsqlPathpath0M.AssertModel(models[11],_testData[29], false);
+                        NpgsqlPathpath0M.AssertModel(models[0],_testData[16], false);
+                        NpgsqlPathpath0M.AssertModel(models[1],_testData[17], false);
+                        NpgsqlPathpath0M.AssertModel(models[2],_testData[18], false);
+                        NpgsqlPathpath0M.AssertModel(models[3],_testData[19], false);
+                        NpgsqlPathpath0M.AssertModel(models[4],_testData[20], false);
+                        NpgsqlPathpath0M.AssertModel(models[5],_testData[21], false);
+                        NpgsqlPathpath0M.AssertModel(models[6],_testData[22], false);
+                        NpgsqlPathpath0M.AssertModel(models[7],_testData[23], false);
+                        NpgsqlPathpath0M.AssertModel(models[8],_testData[24], false);
+                        NpgsqlPathpath0M.AssertModel(models[9],_testData[25], false);
+                        NpgsqlPathpath0M.AssertModel(models[10],_testData[26], false);
+                        NpgsqlPathpath0M.AssertModel(models[11],_testData[27], false);
+                        NpgsqlPathpath0M.AssertModel(models[12],_testData[28], false);
+                        NpgsqlPathpath0M.AssertModel(models[13],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(5));
+                        Assert.That(models, Has.Count.EqualTo(15));
 
-                        NpgsqlPathpath0M.AssertModel(models[0],_testData[25], false);
-                        NpgsqlPathpath0M.AssertModel(models[1],_testData[26], false);
-                        NpgsqlPathpath0M.AssertModel(models[2],_testData[27], false);
-                        NpgsqlPathpath0M.AssertModel(models[3],_testData[28], false);
-                        NpgsqlPathpath0M.AssertModel(models[4],_testData[29], false);
+                        NpgsqlPathpath0M.AssertModel(models[0],_testData[15], false);
+                        NpgsqlPathpath0M.AssertModel(models[1],_testData[16], false);
+                        NpgsqlPathpath0M.AssertModel(models[2],_testData[17], false);
+                        NpgsqlPathpath0M.AssertModel(models[3],_testData[18], false);
+                        NpgsqlPathpath0M.AssertModel(models[4],_testData[19], false);
+                        NpgsqlPathpath0M.AssertModel(models[5],_testData[20], false);
+                        NpgsqlPathpath0M.AssertModel(models[6],_testData[21], false);
+                        NpgsqlPathpath0M.AssertModel(models[7],_testData[22], false);
+                        NpgsqlPathpath0M.AssertModel(models[8],_testData[23], false);
+                        NpgsqlPathpath0M.AssertModel(models[9],_testData[24], false);
+                        NpgsqlPathpath0M.AssertModel(models[10],_testData[25], false);
+                        NpgsqlPathpath0M.AssertModel(models[11],_testData[26], false);
+                        NpgsqlPathpath0M.AssertModel(models[12],_testData[27], false);
+                        NpgsqlPathpath0M.AssertModel(models[13],_testData[28], false);
+                        NpgsqlPathpath0M.AssertModel(models[14],_testData[29], false);
                         continue;
                     }
                     
@@ -2846,35 +2935,85 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems1 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems2 = new List<FlatNpgsqlPathpath0M>();
-                await ((INpgsqlPathSingleTypepath)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 147, query1, 114, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(3));
-                Assert.That(firstItems2, Has.Count.EqualTo(3));
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[0],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[2],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(9));
-                Assert.That(secondItems2, Has.Count.EqualTo(9));
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[29], false);
+                await ((INpgsqlPathSingleTypepath)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 28, query1, 89, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(25));
+                Assert.That(firstItems2, Has.Count.EqualTo(25));
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[0],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[2],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[3],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[4],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[5],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[6],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[7],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[8],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[9],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[10],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[11],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[12],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[12],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[13],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[13],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[14],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[14],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[15],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[15],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[16],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[16],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[17],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[17],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[18],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[18],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[19],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[19],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[20],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[20],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[21],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[21],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[22],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[22],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[23],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[23],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[24],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[24],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(12));
+                Assert.That(secondItems2, Has.Count.EqualTo(12));
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[9],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[10],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[11],_testData[29], false);
             }
         }
 
@@ -2912,53 +3051,59 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlPathpath0M>();
                 var firstItems2 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems1 = new List<FlatNpgsqlPathpath0M>();
-                await ((INpgsqlPathSingleTypepath)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 99, query1, 56, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(12));
-                Assert.That(firstItems2, Has.Count.EqualTo(12));
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[0],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[2],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[3],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[4],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[5],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[6],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[7],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[8],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[9],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[10],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[11],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(19));
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[17],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[18],_testData[29], false);
+                await ((INpgsqlPathSingleTypepath)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 99, query1, 1, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(10));
+                Assert.That(firstItems2, Has.Count.EqualTo(10));
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[0],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[2],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[3],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[4],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[5],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[6],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[7],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[8],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[9],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(29));
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[1], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[2], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[3], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[4], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[17],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[18],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[19],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[20],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[21],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[22],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[23],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[24],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[25],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[26],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[27],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[28],_testData[29], false);
             }
         }
 
@@ -3037,7 +3182,7 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems1 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems2 = new List<FlatNpgsqlPathpath0M>();
-                 ((INpgsqlPathSingleTypepath)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 89, query1, 73, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                 ((INpgsqlPathSingleTypepath)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 73, query1, 4, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
                 Assert.That(firstItems1, Has.Count.EqualTo(14));
                 Assert.That(firstItems2, Has.Count.EqualTo(14));
                         FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[16], false);
@@ -3068,42 +3213,64 @@ ORDER BY
                         FlatNpgsqlPathpath0M.AssertModel(firstItems2[12],_testData[28], false);
                         FlatNpgsqlPathpath0M.AssertModel(firstItems1[13],_testData[29], false);
                         FlatNpgsqlPathpath0M.AssertModel(firstItems2[13],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(17));
-                Assert.That(secondItems2, Has.Count.EqualTo(17));
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[9],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[10],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[11],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[12],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[13],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[14],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[15],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[16],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(28));
+                Assert.That(secondItems2, Has.Count.EqualTo(28));
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[2], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[2], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[3], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[3], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[4], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[4], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[9],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[10],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[11],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[12],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[13],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[14],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[15],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[16],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[17],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[17],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[18],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[18],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[19],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[19],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[20],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[20],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[21],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[21],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[22],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[22],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[23],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[23],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[24],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[24],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[25],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[25],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[26],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[26],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[27],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[27],_testData[29], false);
             }
         }
 
@@ -3141,73 +3308,68 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlPathpath0M>();
                 var firstItems2 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems1 = new List<FlatNpgsqlPathpath0M>();
-                 ((INpgsqlPathSingleTypepath)this).DbConnectionMMDynQuerySelectModelBatch(connection, 37, query1, 85, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(24));
-                Assert.That(firstItems2, Has.Count.EqualTo(24));
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[6], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[0],_testData[6], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[7], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[7], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[8], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[2],_testData[8], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[9], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[3],_testData[9], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[4],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[5],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[6],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[7],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[8],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[9],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[10],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[11],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[12],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[12],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[13],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[13],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[14],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[14],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[15],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[15],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[16],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[16],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[17],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[17],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[18],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[18],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[19],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[19],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[20],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[20],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[21],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[21],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[22],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[22],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[23],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[23],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(15));
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[29], false);
+                 ((INpgsqlPathSingleTypepath)this).DbConnectionMMDynQuerySelectModelBatch(connection, 19, query1, 127, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(26));
+                Assert.That(firstItems2, Has.Count.EqualTo(26));
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[4], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[0],_testData[4], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[1],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[2],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[3],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[4],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[5],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[6],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[7],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[8],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[9],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[10],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[11],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[12],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[12],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[13],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[13],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[14],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[14],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[15],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[15],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[16],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[16],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[17],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[17],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[18],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[18],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[19],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[19],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[20],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[20],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[21],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[21],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[22],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[22],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[23],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[23],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[24],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[24],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[25],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems2[25],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(6));
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[29], false);
             }
         }
 
@@ -3317,35 +3479,49 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((INpgsqlPathSingleTypepath)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 130, query1, 120, query2))
+                foreach(var batchResult in await ((INpgsqlPathSingleTypepath)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 82, query1, 68, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
+                        Assert.That(models, Has.Count.EqualTo(13));
 
-                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[9],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[10],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[11],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[12],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
+                        Assert.That(models, Has.Count.EqualTo(15));
 
-                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[9],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[10],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[11],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[12],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[13],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[14],_testData[29], false);
                         continue;
                     }
                     
@@ -3388,42 +3564,72 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems1 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems2 = new List<FlatNpgsqlPathpath0M>();
-                await ((INpgsqlPathSingleTypepath)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 31, query1, 147, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(26));
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[4], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[5], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[6], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[7], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[8], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[9], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[12],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[13],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[14],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[15],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[16],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[17],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[18],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[19],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[20],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[21],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[22],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[23],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[24],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[25],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(3));
-                Assert.That(secondItems2, Has.Count.EqualTo(3));
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[29], false);
+                await ((INpgsqlPathSingleTypepath)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 89, query1, 28, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(12));
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(25));
+                Assert.That(secondItems2, Has.Count.EqualTo(25));
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[5], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[6], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[7], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[8], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[9],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[10],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[11],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[12],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[13],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[14],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[15],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[16],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[17],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[17],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[18],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[18],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[19],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[19],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[20],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[20],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[21],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[21],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[22],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[22],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[23],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[23],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[24],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[24],_testData[29], false);
             }
         }
 
@@ -3482,49 +3688,61 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in  ((INpgsqlPathSingleTypepath)this).DbConnectionSTDynQuerySelectModelBatch(connection, 108, query1, 65, query2))
+                foreach(var batchResult in  ((INpgsqlPathSingleTypepath)this).DbConnectionSTDynQuerySelectModelBatch(connection, 53, query1, 41, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
+                        Assert.That(models, Has.Count.EqualTo(19));
 
-                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[9],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[9],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[10],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[11],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[12],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[13],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[14],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[15],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[16],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[17],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[18],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
+                        Assert.That(models, Has.Count.EqualTo(21));
 
-                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[9],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[10],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[11],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[12],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[13],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[14],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[15],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[16],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(models[17],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[0],_testData[9], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[1],_testData[10], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[2],_testData[11], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[3],_testData[12], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[4],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[5],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[6],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[7],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[8],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[9],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[10],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[11],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[12],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[13],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[14],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[15],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[16],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[17],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[18],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[19],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(models[20],_testData[29], false);
                         continue;
                     }
                     
@@ -3567,82 +3785,51 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems1 = new List<FlatNpgsqlPathpath0M>();
                 var secondItems2 = new List<FlatNpgsqlPathpath0M>();
-                 ((INpgsqlPathSingleTypepath)this).DbConnectionDynQuerySelectModelBatch(connection, 37, query1, 37, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(24));
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[6], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[7], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[8], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[9], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[7],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[8],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[9],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[10],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[11],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[12],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[13],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[14],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[15],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[16],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[17],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[18],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[19],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[20],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[21],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[22],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[23],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(24));
-                Assert.That(secondItems2, Has.Count.EqualTo(24));
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[6], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[6], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[7], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[7], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[8], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[8], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[9], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[9], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[10], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[11], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[12], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[13], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[14], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[9],_testData[15], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[10],_testData[16], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[11],_testData[17], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[12],_testData[18], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[13],_testData[19], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[14],_testData[20], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[15],_testData[21], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[16],_testData[22], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[17],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[17],_testData[23], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[18],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[18],_testData[24], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[19],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[19],_testData[25], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[20],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[20],_testData[26], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[21],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[21],_testData[27], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[22],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[22],_testData[28], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[23],_testData[29], false);
-                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[23],_testData[29], false);
+                 ((INpgsqlPathSingleTypepath)this).DbConnectionDynQuerySelectModelBatch(connection, 123, query1, 62, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(7));
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[0],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[1],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[2],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[3],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[4],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[5],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(firstItems1[6],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(17));
+                Assert.That(secondItems2, Has.Count.EqualTo(17));
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[0],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[0],_testData[13], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[1],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[1],_testData[14], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[2],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[2],_testData[15], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[3],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[3],_testData[16], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[4],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[4],_testData[17], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[5],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[5],_testData[18], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[6],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[6],_testData[19], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[7],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[7],_testData[20], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[8],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[8],_testData[21], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[9],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[9],_testData[22], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[10],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[10],_testData[23], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[11],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[11],_testData[24], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[12],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[12],_testData[25], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[13],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[13],_testData[26], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[14],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[14],_testData[27], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[15],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[15],_testData[28], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems1[16],_testData[29], false);
+                        FlatNpgsqlPathpath0M.AssertModel(secondItems2[16],_testData[29], false);
             }
         }
 
@@ -3722,74 +3909,56 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((INpgsqlPathSingleTypepath)this).DbConnectionSTSelectModelBatchAsync(connection, 18, 34))
+                foreach(var batchResult in await ((INpgsqlPathSingleTypepath)this).DbConnectionSTSelectModelBatchAsync(connection, 82, 40))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(28));
+                        Assert.That(models, Has.Count.EqualTo(13));
 
-                        NpgsqlPathpath0M.AssertModel(models[0],_testData[2], false);
-                        NpgsqlPathpath0M.AssertModel(models[1],_testData[3], false);
-                        NpgsqlPathpath0M.AssertModel(models[2],_testData[4], false);
-                        NpgsqlPathpath0M.AssertModel(models[3],_testData[5], false);
-                        NpgsqlPathpath0M.AssertModel(models[4],_testData[6], false);
-                        NpgsqlPathpath0M.AssertModel(models[5],_testData[7], false);
-                        NpgsqlPathpath0M.AssertModel(models[6],_testData[8], false);
-                        NpgsqlPathpath0M.AssertModel(models[7],_testData[9], false);
-                        NpgsqlPathpath0M.AssertModel(models[8],_testData[10], false);
-                        NpgsqlPathpath0M.AssertModel(models[9],_testData[11], false);
-                        NpgsqlPathpath0M.AssertModel(models[10],_testData[12], false);
-                        NpgsqlPathpath0M.AssertModel(models[11],_testData[13], false);
-                        NpgsqlPathpath0M.AssertModel(models[12],_testData[14], false);
-                        NpgsqlPathpath0M.AssertModel(models[13],_testData[15], false);
-                        NpgsqlPathpath0M.AssertModel(models[14],_testData[16], false);
-                        NpgsqlPathpath0M.AssertModel(models[15],_testData[17], false);
-                        NpgsqlPathpath0M.AssertModel(models[16],_testData[18], false);
-                        NpgsqlPathpath0M.AssertModel(models[17],_testData[19], false);
-                        NpgsqlPathpath0M.AssertModel(models[18],_testData[20], false);
-                        NpgsqlPathpath0M.AssertModel(models[19],_testData[21], false);
-                        NpgsqlPathpath0M.AssertModel(models[20],_testData[22], false);
-                        NpgsqlPathpath0M.AssertModel(models[21],_testData[23], false);
-                        NpgsqlPathpath0M.AssertModel(models[22],_testData[24], false);
-                        NpgsqlPathpath0M.AssertModel(models[23],_testData[25], false);
-                        NpgsqlPathpath0M.AssertModel(models[24],_testData[26], false);
-                        NpgsqlPathpath0M.AssertModel(models[25],_testData[27], false);
-                        NpgsqlPathpath0M.AssertModel(models[26],_testData[28], false);
-                        NpgsqlPathpath0M.AssertModel(models[27],_testData[29], false);
+                        NpgsqlPathpath0M.AssertModel(models[0],_testData[17], false);
+                        NpgsqlPathpath0M.AssertModel(models[1],_testData[18], false);
+                        NpgsqlPathpath0M.AssertModel(models[2],_testData[19], false);
+                        NpgsqlPathpath0M.AssertModel(models[3],_testData[20], false);
+                        NpgsqlPathpath0M.AssertModel(models[4],_testData[21], false);
+                        NpgsqlPathpath0M.AssertModel(models[5],_testData[22], false);
+                        NpgsqlPathpath0M.AssertModel(models[6],_testData[23], false);
+                        NpgsqlPathpath0M.AssertModel(models[7],_testData[24], false);
+                        NpgsqlPathpath0M.AssertModel(models[8],_testData[25], false);
+                        NpgsqlPathpath0M.AssertModel(models[9],_testData[26], false);
+                        NpgsqlPathpath0M.AssertModel(models[10],_testData[27], false);
+                        NpgsqlPathpath0M.AssertModel(models[11],_testData[28], false);
+                        NpgsqlPathpath0M.AssertModel(models[12],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
+                        Assert.That(models, Has.Count.EqualTo(22));
 
-                        NpgsqlPathpath0M.AssertModel(models[0],_testData[5], false);
-                        NpgsqlPathpath0M.AssertModel(models[1],_testData[6], false);
-                        NpgsqlPathpath0M.AssertModel(models[2],_testData[7], false);
-                        NpgsqlPathpath0M.AssertModel(models[3],_testData[8], false);
-                        NpgsqlPathpath0M.AssertModel(models[4],_testData[9], false);
-                        NpgsqlPathpath0M.AssertModel(models[5],_testData[10], false);
-                        NpgsqlPathpath0M.AssertModel(models[6],_testData[11], false);
-                        NpgsqlPathpath0M.AssertModel(models[7],_testData[12], false);
-                        NpgsqlPathpath0M.AssertModel(models[8],_testData[13], false);
-                        NpgsqlPathpath0M.AssertModel(models[9],_testData[14], false);
-                        NpgsqlPathpath0M.AssertModel(models[10],_testData[15], false);
-                        NpgsqlPathpath0M.AssertModel(models[11],_testData[16], false);
-                        NpgsqlPathpath0M.AssertModel(models[12],_testData[17], false);
-                        NpgsqlPathpath0M.AssertModel(models[13],_testData[18], false);
-                        NpgsqlPathpath0M.AssertModel(models[14],_testData[19], false);
-                        NpgsqlPathpath0M.AssertModel(models[15],_testData[20], false);
-                        NpgsqlPathpath0M.AssertModel(models[16],_testData[21], false);
-                        NpgsqlPathpath0M.AssertModel(models[17],_testData[22], false);
-                        NpgsqlPathpath0M.AssertModel(models[18],_testData[23], false);
-                        NpgsqlPathpath0M.AssertModel(models[19],_testData[24], false);
-                        NpgsqlPathpath0M.AssertModel(models[20],_testData[25], false);
-                        NpgsqlPathpath0M.AssertModel(models[21],_testData[26], false);
-                        NpgsqlPathpath0M.AssertModel(models[22],_testData[27], false);
-                        NpgsqlPathpath0M.AssertModel(models[23],_testData[28], false);
-                        NpgsqlPathpath0M.AssertModel(models[24],_testData[29], false);
+                        NpgsqlPathpath0M.AssertModel(models[0],_testData[8], false);
+                        NpgsqlPathpath0M.AssertModel(models[1],_testData[9], false);
+                        NpgsqlPathpath0M.AssertModel(models[2],_testData[10], false);
+                        NpgsqlPathpath0M.AssertModel(models[3],_testData[11], false);
+                        NpgsqlPathpath0M.AssertModel(models[4],_testData[12], false);
+                        NpgsqlPathpath0M.AssertModel(models[5],_testData[13], false);
+                        NpgsqlPathpath0M.AssertModel(models[6],_testData[14], false);
+                        NpgsqlPathpath0M.AssertModel(models[7],_testData[15], false);
+                        NpgsqlPathpath0M.AssertModel(models[8],_testData[16], false);
+                        NpgsqlPathpath0M.AssertModel(models[9],_testData[17], false);
+                        NpgsqlPathpath0M.AssertModel(models[10],_testData[18], false);
+                        NpgsqlPathpath0M.AssertModel(models[11],_testData[19], false);
+                        NpgsqlPathpath0M.AssertModel(models[12],_testData[20], false);
+                        NpgsqlPathpath0M.AssertModel(models[13],_testData[21], false);
+                        NpgsqlPathpath0M.AssertModel(models[14],_testData[22], false);
+                        NpgsqlPathpath0M.AssertModel(models[15],_testData[23], false);
+                        NpgsqlPathpath0M.AssertModel(models[16],_testData[24], false);
+                        NpgsqlPathpath0M.AssertModel(models[17],_testData[25], false);
+                        NpgsqlPathpath0M.AssertModel(models[18],_testData[26], false);
+                        NpgsqlPathpath0M.AssertModel(models[19],_testData[27], false);
+                        NpgsqlPathpath0M.AssertModel(models[20],_testData[28], false);
+                        NpgsqlPathpath0M.AssertModel(models[21],_testData[29], false);
                         continue;
                     }
                     
@@ -3820,51 +3989,68 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((INpgsqlPathSingleTypepath)this).DbConnectionSTSelectModelBatch(connection, 34, 136))
+                foreach(var batchResult in  ((INpgsqlPathSingleTypepath)this).DbConnectionSTSelectModelBatch(connection, 19, 41))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
+                        Assert.That(models, Has.Count.EqualTo(26));
 
-                        NpgsqlPathpath0M.AssertModel(models[0],_testData[5], false);
-                        NpgsqlPathpath0M.AssertModel(models[1],_testData[6], false);
-                        NpgsqlPathpath0M.AssertModel(models[2],_testData[7], false);
-                        NpgsqlPathpath0M.AssertModel(models[3],_testData[8], false);
-                        NpgsqlPathpath0M.AssertModel(models[4],_testData[9], false);
-                        NpgsqlPathpath0M.AssertModel(models[5],_testData[10], false);
-                        NpgsqlPathpath0M.AssertModel(models[6],_testData[11], false);
-                        NpgsqlPathpath0M.AssertModel(models[7],_testData[12], false);
-                        NpgsqlPathpath0M.AssertModel(models[8],_testData[13], false);
-                        NpgsqlPathpath0M.AssertModel(models[9],_testData[14], false);
-                        NpgsqlPathpath0M.AssertModel(models[10],_testData[15], false);
-                        NpgsqlPathpath0M.AssertModel(models[11],_testData[16], false);
-                        NpgsqlPathpath0M.AssertModel(models[12],_testData[17], false);
-                        NpgsqlPathpath0M.AssertModel(models[13],_testData[18], false);
-                        NpgsqlPathpath0M.AssertModel(models[14],_testData[19], false);
-                        NpgsqlPathpath0M.AssertModel(models[15],_testData[20], false);
-                        NpgsqlPathpath0M.AssertModel(models[16],_testData[21], false);
-                        NpgsqlPathpath0M.AssertModel(models[17],_testData[22], false);
-                        NpgsqlPathpath0M.AssertModel(models[18],_testData[23], false);
-                        NpgsqlPathpath0M.AssertModel(models[19],_testData[24], false);
-                        NpgsqlPathpath0M.AssertModel(models[20],_testData[25], false);
-                        NpgsqlPathpath0M.AssertModel(models[21],_testData[26], false);
-                        NpgsqlPathpath0M.AssertModel(models[22],_testData[27], false);
-                        NpgsqlPathpath0M.AssertModel(models[23],_testData[28], false);
-                        NpgsqlPathpath0M.AssertModel(models[24],_testData[29], false);
+                        NpgsqlPathpath0M.AssertModel(models[0],_testData[4], false);
+                        NpgsqlPathpath0M.AssertModel(models[1],_testData[5], false);
+                        NpgsqlPathpath0M.AssertModel(models[2],_testData[6], false);
+                        NpgsqlPathpath0M.AssertModel(models[3],_testData[7], false);
+                        NpgsqlPathpath0M.AssertModel(models[4],_testData[8], false);
+                        NpgsqlPathpath0M.AssertModel(models[5],_testData[9], false);
+                        NpgsqlPathpath0M.AssertModel(models[6],_testData[10], false);
+                        NpgsqlPathpath0M.AssertModel(models[7],_testData[11], false);
+                        NpgsqlPathpath0M.AssertModel(models[8],_testData[12], false);
+                        NpgsqlPathpath0M.AssertModel(models[9],_testData[13], false);
+                        NpgsqlPathpath0M.AssertModel(models[10],_testData[14], false);
+                        NpgsqlPathpath0M.AssertModel(models[11],_testData[15], false);
+                        NpgsqlPathpath0M.AssertModel(models[12],_testData[16], false);
+                        NpgsqlPathpath0M.AssertModel(models[13],_testData[17], false);
+                        NpgsqlPathpath0M.AssertModel(models[14],_testData[18], false);
+                        NpgsqlPathpath0M.AssertModel(models[15],_testData[19], false);
+                        NpgsqlPathpath0M.AssertModel(models[16],_testData[20], false);
+                        NpgsqlPathpath0M.AssertModel(models[17],_testData[21], false);
+                        NpgsqlPathpath0M.AssertModel(models[18],_testData[22], false);
+                        NpgsqlPathpath0M.AssertModel(models[19],_testData[23], false);
+                        NpgsqlPathpath0M.AssertModel(models[20],_testData[24], false);
+                        NpgsqlPathpath0M.AssertModel(models[21],_testData[25], false);
+                        NpgsqlPathpath0M.AssertModel(models[22],_testData[26], false);
+                        NpgsqlPathpath0M.AssertModel(models[23],_testData[27], false);
+                        NpgsqlPathpath0M.AssertModel(models[24],_testData[28], false);
+                        NpgsqlPathpath0M.AssertModel(models[25],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(5));
+                        Assert.That(models, Has.Count.EqualTo(21));
 
-                        NpgsqlPathpath0M.AssertModel(models[0],_testData[25], false);
-                        NpgsqlPathpath0M.AssertModel(models[1],_testData[26], false);
-                        NpgsqlPathpath0M.AssertModel(models[2],_testData[27], false);
-                        NpgsqlPathpath0M.AssertModel(models[3],_testData[28], false);
-                        NpgsqlPathpath0M.AssertModel(models[4],_testData[29], false);
+                        NpgsqlPathpath0M.AssertModel(models[0],_testData[9], false);
+                        NpgsqlPathpath0M.AssertModel(models[1],_testData[10], false);
+                        NpgsqlPathpath0M.AssertModel(models[2],_testData[11], false);
+                        NpgsqlPathpath0M.AssertModel(models[3],_testData[12], false);
+                        NpgsqlPathpath0M.AssertModel(models[4],_testData[13], false);
+                        NpgsqlPathpath0M.AssertModel(models[5],_testData[14], false);
+                        NpgsqlPathpath0M.AssertModel(models[6],_testData[15], false);
+                        NpgsqlPathpath0M.AssertModel(models[7],_testData[16], false);
+                        NpgsqlPathpath0M.AssertModel(models[8],_testData[17], false);
+                        NpgsqlPathpath0M.AssertModel(models[9],_testData[18], false);
+                        NpgsqlPathpath0M.AssertModel(models[10],_testData[19], false);
+                        NpgsqlPathpath0M.AssertModel(models[11],_testData[20], false);
+                        NpgsqlPathpath0M.AssertModel(models[12],_testData[21], false);
+                        NpgsqlPathpath0M.AssertModel(models[13],_testData[22], false);
+                        NpgsqlPathpath0M.AssertModel(models[14],_testData[23], false);
+                        NpgsqlPathpath0M.AssertModel(models[15],_testData[24], false);
+                        NpgsqlPathpath0M.AssertModel(models[16],_testData[25], false);
+                        NpgsqlPathpath0M.AssertModel(models[17],_testData[26], false);
+                        NpgsqlPathpath0M.AssertModel(models[18],_testData[27], false);
+                        NpgsqlPathpath0M.AssertModel(models[19],_testData[28], false);
+                        NpgsqlPathpath0M.AssertModel(models[20],_testData[29], false);
                         continue;
                     }
                     
@@ -3880,11 +4066,11 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((INpgsqlPathSingleTypepath)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((INpgsqlPathSingleTypepath)this).SetDbConnectionSelectModelParametrs(cmd, 142);
+                ((INpgsqlPathSingleTypepath)this).SetDbConnectionSelectModelParametrs(cmd, 132);
                 var models = await ((INpgsqlPathSingleTypepath)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(4));
-NpgsqlPathpath0M.AssertModel(models[0],_testData[26], false);NpgsqlPathpath0M.AssertModel(models[1],_testData[27], false);NpgsqlPathpath0M.AssertModel(models[2],_testData[28], false);NpgsqlPathpath0M.AssertModel(models[3],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(5));
+NpgsqlPathpath0M.AssertModel(models[0],_testData[25], false);NpgsqlPathpath0M.AssertModel(models[1],_testData[26], false);NpgsqlPathpath0M.AssertModel(models[2],_testData[27], false);NpgsqlPathpath0M.AssertModel(models[3],_testData[28], false);NpgsqlPathpath0M.AssertModel(models[4],_testData[29], false);
             }
         }
 
@@ -3895,11 +4081,11 @@ NpgsqlPathpath0M.AssertModel(models[0],_testData[26], false);NpgsqlPathpath0M.As
             {
                 await connection.OpenAsync();
                  using var cmd =  ((INpgsqlPathSingleTypepath)this).CreateDbConnectionSelectModelCommand(connection);
-                ((INpgsqlPathSingleTypepath)this).SetDbConnectionSelectModelParametrs(cmd, 22);
+                ((INpgsqlPathSingleTypepath)this).SetDbConnectionSelectModelParametrs(cmd, 41);
                 var models =  ((INpgsqlPathSingleTypepath)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(27));
-NpgsqlPathpath0M.AssertModel(models[0],_testData[3], false);NpgsqlPathpath0M.AssertModel(models[1],_testData[4], false);NpgsqlPathpath0M.AssertModel(models[2],_testData[5], false);NpgsqlPathpath0M.AssertModel(models[3],_testData[6], false);NpgsqlPathpath0M.AssertModel(models[4],_testData[7], false);NpgsqlPathpath0M.AssertModel(models[5],_testData[8], false);NpgsqlPathpath0M.AssertModel(models[6],_testData[9], false);NpgsqlPathpath0M.AssertModel(models[7],_testData[10], false);NpgsqlPathpath0M.AssertModel(models[8],_testData[11], false);NpgsqlPathpath0M.AssertModel(models[9],_testData[12], false);NpgsqlPathpath0M.AssertModel(models[10],_testData[13], false);NpgsqlPathpath0M.AssertModel(models[11],_testData[14], false);NpgsqlPathpath0M.AssertModel(models[12],_testData[15], false);NpgsqlPathpath0M.AssertModel(models[13],_testData[16], false);NpgsqlPathpath0M.AssertModel(models[14],_testData[17], false);NpgsqlPathpath0M.AssertModel(models[15],_testData[18], false);NpgsqlPathpath0M.AssertModel(models[16],_testData[19], false);NpgsqlPathpath0M.AssertModel(models[17],_testData[20], false);NpgsqlPathpath0M.AssertModel(models[18],_testData[21], false);NpgsqlPathpath0M.AssertModel(models[19],_testData[22], false);NpgsqlPathpath0M.AssertModel(models[20],_testData[23], false);NpgsqlPathpath0M.AssertModel(models[21],_testData[24], false);NpgsqlPathpath0M.AssertModel(models[22],_testData[25], false);NpgsqlPathpath0M.AssertModel(models[23],_testData[26], false);NpgsqlPathpath0M.AssertModel(models[24],_testData[27], false);NpgsqlPathpath0M.AssertModel(models[25],_testData[28], false);NpgsqlPathpath0M.AssertModel(models[26],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(21));
+NpgsqlPathpath0M.AssertModel(models[0],_testData[9], false);NpgsqlPathpath0M.AssertModel(models[1],_testData[10], false);NpgsqlPathpath0M.AssertModel(models[2],_testData[11], false);NpgsqlPathpath0M.AssertModel(models[3],_testData[12], false);NpgsqlPathpath0M.AssertModel(models[4],_testData[13], false);NpgsqlPathpath0M.AssertModel(models[5],_testData[14], false);NpgsqlPathpath0M.AssertModel(models[6],_testData[15], false);NpgsqlPathpath0M.AssertModel(models[7],_testData[16], false);NpgsqlPathpath0M.AssertModel(models[8],_testData[17], false);NpgsqlPathpath0M.AssertModel(models[9],_testData[18], false);NpgsqlPathpath0M.AssertModel(models[10],_testData[19], false);NpgsqlPathpath0M.AssertModel(models[11],_testData[20], false);NpgsqlPathpath0M.AssertModel(models[12],_testData[21], false);NpgsqlPathpath0M.AssertModel(models[13],_testData[22], false);NpgsqlPathpath0M.AssertModel(models[14],_testData[23], false);NpgsqlPathpath0M.AssertModel(models[15],_testData[24], false);NpgsqlPathpath0M.AssertModel(models[16],_testData[25], false);NpgsqlPathpath0M.AssertModel(models[17],_testData[26], false);NpgsqlPathpath0M.AssertModel(models[18],_testData[27], false);NpgsqlPathpath0M.AssertModel(models[19],_testData[28], false);NpgsqlPathpath0M.AssertModel(models[20],_testData[29], false);
             }
         }
 
@@ -3946,66 +4132,66 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((9)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6300384082776639d, y: 0.7495320030437037d), new NpgsqlTypes.NpgsqlPoint(x: 0.1587360579187037d, y: 0.0190375632764902d), new NpgsqlTypes.NpgsqlPoint(x: 0.6346034118733048d, y: 0.7280110309953616d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((1)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.32187743729051466d, y: 0.9837123616815743d), new NpgsqlTypes.NpgsqlPoint(x: 0.9608659072745059d, y: 0.8580409059373132d), new NpgsqlTypes.NpgsqlPoint(x: 0.5401137762548912d, y: 0.9720284678422745d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5471760774136353d, y: 0.2585227912960819d), new NpgsqlTypes.NpgsqlPoint(x: 0.6718623076383583d, y: 0.41161683898967794d), new NpgsqlTypes.NpgsqlPoint(x: 0.8355824858609684d, y: 0.2843345713448113d)))));
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6387911057188764d, y: 0.4792398367483184d), new NpgsqlTypes.NpgsqlPoint(x: 0.3225675678268459d, y: 0.27717389895811695d), new NpgsqlTypes.NpgsqlPoint(x: 0.914774380987572d, y: 0.17205047127864548d)))));
 
                 model = models[1];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((18)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4165830524643521d, y: 0.0830388451964762d), new NpgsqlTypes.NpgsqlPoint(x: 0.08829222857848407d, y: 0.5943174264904748d), new NpgsqlTypes.NpgsqlPoint(x: 0.9876111662074002d, y: 0.17128450452822186d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((4)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.0939036211468176d, y: 0.17795064789924242d), new NpgsqlTypes.NpgsqlPoint(x: 0.5874797702644124d, y: 0.22070502453294227d), new NpgsqlTypes.NpgsqlPoint(x: 0.31118957101708455d, y: 0.90023920215019d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((3)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.1142065824617603d, y: 0.9415909088183784d), new NpgsqlTypes.NpgsqlPoint(x: 0.3627983692837803d, y: 0.45255535514486134d), new NpgsqlTypes.NpgsqlPoint(x: 0.2680824183164645d, y: 0.8740173824885492d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((5)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4863638441836249d, y: 0.8482623849486046d), new NpgsqlTypes.NpgsqlPoint(x: 0.5966094098957083d, y: 0.8637278493451856d), new NpgsqlTypes.NpgsqlPoint(x: 0.3616830618402752d, y: 0.9211039763566239d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.48752894163016514d, y: 0.1561211880592681d), new NpgsqlTypes.NpgsqlPoint(x: 0.545058139868356d, y: 0.42660168801615417d), new NpgsqlTypes.NpgsqlPoint(x: 0.0980490995959481d, y: 0.5231413245324888d)))));
 
                 model = models[2];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((22)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6958800324827679d, y: 0.9323916687893822d), new NpgsqlTypes.NpgsqlPoint(x: 0.6271328684149409d, y: 0.41412994394869473d), new NpgsqlTypes.NpgsqlPoint(x: 0.4354542597835125d, y: 0.36359964472035555d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((10)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.012385770688188247d, y: 0.9437023511167454d), new NpgsqlTypes.NpgsqlPoint(x: 0.34097005594487806d, y: 0.06614710279617386d), new NpgsqlTypes.NpgsqlPoint(x: 0.17728727297540414d, y: 0.9203863738209981d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6316952100893283d, y: 0.7317146399508008d), new NpgsqlTypes.NpgsqlPoint(x: 0.4163002546818575d, y: 0.8049110448143588d), new NpgsqlTypes.NpgsqlPoint(x: 0.7664498937186545d, y: 0.4518567303355444d)))));
 
                 model = models[3];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((31)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8733588118651534d, y: 0.16321155095710926d), new NpgsqlTypes.NpgsqlPoint(x: 0.39315876647382486d, y: 0.9503506349189761d), new NpgsqlTypes.NpgsqlPoint(x: 0.6645159395078658d, y: 0.10709211709870237d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((19)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.16272340320911327d, y: 0.38562829527075404d), new NpgsqlTypes.NpgsqlPoint(x: 0.3086470561795589d, y: 0.13928490183395525d), new NpgsqlTypes.NpgsqlPoint(x: 0.6999601204849794d, y: 0.8235962409985872d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((8)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7414732174132882d, y: 0.5528478153648975d), new NpgsqlTypes.NpgsqlPoint(x: 0.056119563992861665d, y: 0.5832535399207119d), new NpgsqlTypes.NpgsqlPoint(x: 0.9504067695106311d, y: 0.4835051441183762d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((13)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3112107803757652d, y: 0.4581029672646054d), new NpgsqlTypes.NpgsqlPoint(x: 0.777669991637431d, y: 0.7667838313809824d), new NpgsqlTypes.NpgsqlPoint(x: 0.14114031234793278d, y: 0.7149143704456629d)))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.06744746259369239d, y: 0.47078467809915026d), new NpgsqlTypes.NpgsqlPoint(x: 0.3856479841035565d, y: 0.23532992617590442d), new NpgsqlTypes.NpgsqlPoint(x: 0.03957907366091562d, y: 0.12550508700727403d)))));//InnerModel.NullableValue
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6521081336574701d, y: 0.19389437253408304d), new NpgsqlTypes.NpgsqlPoint(x: 0.8493160649245717d, y: 0.26525891719588446d), new NpgsqlTypes.NpgsqlPoint(x: 0.64087570089057d, y: 0.5485107311065177d)))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[4];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((34)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.706160539508384d, y: 0.005141111016677358d), new NpgsqlTypes.NpgsqlPoint(x: 0.07547497378100276d, y: 0.16745793447467827d), new NpgsqlTypes.NpgsqlPoint(x: 0.39019766116189136d, y: 0.4720841220664519d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((28)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.730284620690524d, y: 0.7239856198996987d), new NpgsqlTypes.NpgsqlPoint(x: 0.4889520089700292d, y: 0.25259560319519847d), new NpgsqlTypes.NpgsqlPoint(x: 0.561406529327117d, y: 0.9768415354266972d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4018,71 +4204,71 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((37)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.256188874853568d, y: 0.8431560538159182d), new NpgsqlTypes.NpgsqlPoint(x: 0.9257084269951422d, y: 0.04115692451214159d), new NpgsqlTypes.NpgsqlPoint(x: 0.08892551564764106d, y: 0.652981052955308d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((29)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.08605797352399336d, y: 0.5038100801519455d), new NpgsqlTypes.NpgsqlPoint(x: 0.7733646952180582d, y: 0.33493821668546775d), new NpgsqlTypes.NpgsqlPoint(x: 0.8595782329964408d, y: 0.7493066429047205d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((11)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.02528017333357202d, y: 0.0036121020286387084d), new NpgsqlTypes.NpgsqlPoint(x: 0.10732959603669323d, y: 0.5158115432186098d), new NpgsqlTypes.NpgsqlPoint(x: 0.4775577856230766d, y: 0.5790709858144809d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((20)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.2634362702230457d, y: 0.3310970517630163d), new NpgsqlTypes.NpgsqlPoint(x: 0.8473226894982894d, y: 0.47417194406756036d), new NpgsqlTypes.NpgsqlPoint(x: 0.5897076051997622d, y: 0.9093924960600663d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6178927124264777d, y: 0.9851239502443295d), new NpgsqlTypes.NpgsqlPoint(x: 0.39063668822867714d, y: 0.947174323517244d), new NpgsqlTypes.NpgsqlPoint(x: 0.9447844424973548d, y: 0.7248786467596995d)))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[6];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((38)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.05123065431848717d, y: 0.5382680400422305d), new NpgsqlTypes.NpgsqlPoint(x: 0.21774613077866212d, y: 0.9950773928640092d), new NpgsqlTypes.NpgsqlPoint(x: 0.6999894798101748d, y: 0.34774489809489106d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((33)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.49740550989580423d, y: 0.8235062006576792d), new NpgsqlTypes.NpgsqlPoint(x: 0.11140315134854029d, y: 0.640754417363561d), new NpgsqlTypes.NpgsqlPoint(x: 0.10607311661910435d, y: 0.8748515895381915d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.10259815134186012d, y: 0.021433531863827904d), new NpgsqlTypes.NpgsqlPoint(x: 0.7343275942821939d, y: 0.3042099067836479d), new NpgsqlTypes.NpgsqlPoint(x: 0.8730309047833058d, y: 0.07583052288701209d)))));
 
                 model = models[7];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((44)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.15579580019727768d, y: 0.06381108541433689d), new NpgsqlTypes.NpgsqlPoint(x: 0.11529763666657311d, y: 0.9859693937875755d), new NpgsqlTypes.NpgsqlPoint(x: 0.3914042588673693d, y: 0.36408382455228505d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((40)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8184307028356268d, y: 0.1660565877144905d), new NpgsqlTypes.NpgsqlPoint(x: 0.23689673694747349d, y: 0.6724133777108979d), new NpgsqlTypes.NpgsqlPoint(x: 0.3391900929635604d, y: 0.3302034923142202d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((17)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.01888634634689934d, y: 0.5747075777544562d), new NpgsqlTypes.NpgsqlPoint(x: 0.6251221495554437d, y: 0.431725187358144d), new NpgsqlTypes.NpgsqlPoint(x: 0.19735061516444297d, y: 0.7492463306561229d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((21)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.1042341413579968d, y: 0.6208102099767836d), new NpgsqlTypes.NpgsqlPoint(x: 0.10013324476451191d, y: 0.9395063366033806d), new NpgsqlTypes.NpgsqlPoint(x: 0.6097391795758189d, y: 0.04457116443736453d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7773868720961987d, y: 0.4161056755091842d), new NpgsqlTypes.NpgsqlPoint(x: 0.8474959073462752d, y: 0.19407984817202195d), new NpgsqlTypes.NpgsqlPoint(x: 0.3739995178533223d, y: 0.33409833683789814d)))));
 
                 model = models[8];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((50)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8702680077616768d, y: 0.7509466595567518d), new NpgsqlTypes.NpgsqlPoint(x: 0.4769529403430788d, y: 0.9038849586911017d), new NpgsqlTypes.NpgsqlPoint(x: 0.5634180454093034d, y: 0.3621748906716937d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((41)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.2985727553130755d, y: 0.16973040069023726d), new NpgsqlTypes.NpgsqlPoint(x: 0.6424403982845325d, y: 0.5125629459060828d), new NpgsqlTypes.NpgsqlPoint(x: 0.44800776254877916d, y: 0.612042310628433d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9778081066584271d, y: 0.03704702541639415d), new NpgsqlTypes.NpgsqlPoint(x: 0.5468307008132023d, y: 0.6151042620486146d), new NpgsqlTypes.NpgsqlPoint(x: 0.4560903759375522d, y: 0.3192479890654626d)))));
 
                 model = models[9];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((54)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6515623898081567d, y: 0.9545158800799922d), new NpgsqlTypes.NpgsqlPoint(x: 0.96676524294417d, y: 0.9435876178168235d), new NpgsqlTypes.NpgsqlPoint(x: 0.9270920933123629d, y: 0.1985019808062688d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((45)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.156866842363502d, y: 0.28173895099889035d), new NpgsqlTypes.NpgsqlPoint(x: 0.047590697508536284d, y: 0.13179571860578065d), new NpgsqlTypes.NpgsqlPoint(x: 0.6766834398831902d, y: 0.21411249004520505d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((20)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.16058513028457178d, y: 0.6229721328759219d), new NpgsqlTypes.NpgsqlPoint(x: 0.34796830943747903d, y: 0.18664291919945286d), new NpgsqlTypes.NpgsqlPoint(x: 0.8175904268806188d, y: 0.5809811545546887d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((27)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8138630578068515d, y: 0.11795865241411263d), new NpgsqlTypes.NpgsqlPoint(x: 0.6830300212272239d, y: 0.572731389353938d), new NpgsqlTypes.NpgsqlPoint(x: 0.9678871331460612d, y: 0.2853566853578522d)))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.024194576889528085d, y: 0.33696606627341463d), new NpgsqlTypes.NpgsqlPoint(x: 0.03410943936884514d, y: 0.074372588386165d), new NpgsqlTypes.NpgsqlPoint(x: 0.2034494929902383d, y: 0.44399091913399147d)))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4091,27 +4277,27 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((56)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7445133643202186d, y: 0.8770284761823003d), new NpgsqlTypes.NpgsqlPoint(x: 0.8303441676852148d, y: 0.8489118742862688d), new NpgsqlTypes.NpgsqlPoint(x: 0.5471125798692454d, y: 0.8041077749505472d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((53)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6548378670200548d, y: 0.4134149856174837d), new NpgsqlTypes.NpgsqlPoint(x: 0.9441803125431862d, y: 0.6041844204099742d), new NpgsqlTypes.NpgsqlPoint(x: 0.7676762202524333d, y: 0.6196702338238622d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9417392653058971d, y: 0.21307016416138702d), new NpgsqlTypes.NpgsqlPoint(x: 0.28137811343522967d, y: 0.7514802682718026d), new NpgsqlTypes.NpgsqlPoint(x: 0.2877197752158349d, y: 0.9988707797949911d)))));
 
                 model = models[11];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((65)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6078602283653777d, y: 0.36768957153108395d), new NpgsqlTypes.NpgsqlPoint(x: 0.1287968810690403d, y: 0.6328292418253414d), new NpgsqlTypes.NpgsqlPoint(x: 0.6954308107744425d, y: 0.8872937769923123d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((58)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.1045669181267298d, y: 0.3621015270329473d), new NpgsqlTypes.NpgsqlPoint(x: 0.1148991801903616d, y: 0.2274872363619651d), new NpgsqlTypes.NpgsqlPoint(x: 0.6195581343644281d, y: 0.05852231426075505d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((22)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7844371876329728d, y: 0.18297677787012545d), new NpgsqlTypes.NpgsqlPoint(x: 0.6552206450692818d, y: 0.0847647148511036d), new NpgsqlTypes.NpgsqlPoint(x: 0.941565060273267d, y: 0.43806488291844314d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((28)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.46651592067116554d, y: 0.9703842408976944d), new NpgsqlTypes.NpgsqlPoint(x: 0.9555044982759686d, y: 0.3531551377273596d), new NpgsqlTypes.NpgsqlPoint(x: 0.903603128248657d, y: 0.3312499882257993d)))));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6273066703325338d, y: 0.8512600908796363d), new NpgsqlTypes.NpgsqlPoint(x: 0.9889247102062146d, y: 0.3657173957244293d), new NpgsqlTypes.NpgsqlPoint(x: 0.9168168183104842d, y: 0.6831728386804343d)))));//InnerModel.NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.0038502321229445524d, y: 0.03186137077263995d), new NpgsqlTypes.NpgsqlPoint(x: 0.02481559125789079d, y: 0.6441180045191767d), new NpgsqlTypes.NpgsqlPoint(x: 0.825722060372456d, y: 0.30205269466085016d)))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4120,25 +4306,25 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((73)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.772202322566165d, y: 0.17915506251070845d), new NpgsqlTypes.NpgsqlPoint(x: 0.9603336084521403d, y: 0.13297292060724564d), new NpgsqlTypes.NpgsqlPoint(x: 0.25848930175407114d, y: 0.4289770315281872d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((62)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3243021342438145d, y: 0.6985757330535691d), new NpgsqlTypes.NpgsqlPoint(x: 0.681517693694453d, y: 0.19008600048182978d), new NpgsqlTypes.NpgsqlPoint(x: 0.5036240712075639d, y: 0.6716466481216589d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6639155914636087d, y: 0.918229505220105d), new NpgsqlTypes.NpgsqlPoint(x: 0.5331528945403387d, y: 0.9088218275195418d), new NpgsqlTypes.NpgsqlPoint(x: 0.12332528303783508d, y: 0.047632533288568535d)))));
 
                 model = models[13];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((77)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.851844309600514d, y: 0.7018564833172163d), new NpgsqlTypes.NpgsqlPoint(x: 0.5957297124303375d, y: 0.9788304512982757d), new NpgsqlTypes.NpgsqlPoint(x: 0.2997499418676687d, y: 0.3170976120122728d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((65)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8931224580364109d, y: 0.6894651451343579d), new NpgsqlTypes.NpgsqlPoint(x: 0.16849952854063943d, y: 0.9230078111959203d), new NpgsqlTypes.NpgsqlPoint(x: 0.7757882071627066d, y: 0.39325959366156704d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((31)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6999999070233826d, y: 0.4357051396862184d), new NpgsqlTypes.NpgsqlPoint(x: 0.43270381161938165d, y: 0.049086718071997715d), new NpgsqlTypes.NpgsqlPoint(x: 0.2090709061069469d, y: 0.13966609953472842d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((36)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.021867406759001673d, y: 0.6988350765221099d), new NpgsqlTypes.NpgsqlPoint(x: 0.985350449782381d, y: 0.01140251091606126d), new NpgsqlTypes.NpgsqlPoint(x: 0.02979062045817049d, y: 0.48271015812932816d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
@@ -4149,8 +4335,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((85)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6715159356840498d, y: 0.8880238421387208d), new NpgsqlTypes.NpgsqlPoint(x: 0.49140044432054253d, y: 0.9876512123217106d), new NpgsqlTypes.NpgsqlPoint(x: 0.5749309553544869d, y: 0.03502030197369144d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((68)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.08029222752339271d, y: 0.5445785969702944d), new NpgsqlTypes.NpgsqlPoint(x: 0.7508227244529064d, y: 0.5549330333969313d), new NpgsqlTypes.NpgsqlPoint(x: 0.4077586018036229d, y: 0.16078436493012638d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4163,52 +4349,52 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((89)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6729231180790392d, y: 0.4814560521945269d), new NpgsqlTypes.NpgsqlPoint(x: 0.1995246206896446d, y: 0.5431674304706859d), new NpgsqlTypes.NpgsqlPoint(x: 0.40833687596285495d, y: 0.014339446661259747d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((73)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5059880541605064d, y: 0.9595463808598307d), new NpgsqlTypes.NpgsqlPoint(x: 0.43639035766372714d, y: 0.2126660311079015d), new NpgsqlTypes.NpgsqlPoint(x: 0.6737412273624952d, y: 0.9671959938129648d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((33)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.0964167158734982d, y: 0.5842303671827865d), new NpgsqlTypes.NpgsqlPoint(x: 0.8796125411521427d, y: 0.45976677479433214d), new NpgsqlTypes.NpgsqlPoint(x: 0.4948627395247269d, y: 0.5254190728255941d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((37)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3109021456846234d, y: 0.23809653458447977d), new NpgsqlTypes.NpgsqlPoint(x: 0.4296418337521448d, y: 0.16262641966178404d), new NpgsqlTypes.NpgsqlPoint(x: 0.1730036966191978d, y: 0.7186117261747179d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9168258456060225d, y: 0.49146980426892384d), new NpgsqlTypes.NpgsqlPoint(x: 0.2921100253077422d, y: 0.20390123074414213d), new NpgsqlTypes.NpgsqlPoint(x: 0.8930098723004823d, y: 0.9143463210990602d)))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[16];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((95)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.42892803124040535d, y: 0.37514919974800354d), new NpgsqlTypes.NpgsqlPoint(x: 0.44759577419755103d, y: 0.2146692775963055d), new NpgsqlTypes.NpgsqlPoint(x: 0.34401919520058966d, y: 0.012616808839248095d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((82)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.013100062742008367d, y: 0.11391362279310846d), new NpgsqlTypes.NpgsqlPoint(x: 0.39100676214688757d, y: 0.5995163176893243d), new NpgsqlTypes.NpgsqlPoint(x: 0.8433823891664345d, y: 0.06308450455986347d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.317133099940322d, y: 0.8155406557417567d), new NpgsqlTypes.NpgsqlPoint(x: 0.03796155685013092d, y: 0.6782319333715429d), new NpgsqlTypes.NpgsqlPoint(x: 0.7904483504288442d, y: 0.4804453324918271d)))));
 
                 model = models[17];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((99)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8836600263188228d, y: 0.30826577881696005d), new NpgsqlTypes.NpgsqlPoint(x: 0.5971707306236446d, y: 0.009085413309394164d), new NpgsqlTypes.NpgsqlPoint(x: 0.663033929714687d, y: 0.39096111325163485d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((89)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4737793868734428d, y: 0.21364087268455512d), new NpgsqlTypes.NpgsqlPoint(x: 0.7278895481132945d, y: 0.3322734753572889d), new NpgsqlTypes.NpgsqlPoint(x: 0.22119108403358367d, y: 0.6672133964156873d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((42)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.10930798153262355d, y: 0.22556476547585413d), new NpgsqlTypes.NpgsqlPoint(x: 0.9902569686943317d, y: 0.5881768071532187d), new NpgsqlTypes.NpgsqlPoint(x: 0.9914221979551064d, y: 0.020549479989464325d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((41)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.03783783343908653d, y: 0.5484874823795984d), new NpgsqlTypes.NpgsqlPoint(x: 0.05555007011940982d, y: 0.0769130547450445d), new NpgsqlTypes.NpgsqlPoint(x: 0.0735963717296817d, y: 0.011558037814198618d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8140810007873626d, y: 0.7221924571473407d), new NpgsqlTypes.NpgsqlPoint(x: 0.2646112863422416d, y: 0.32654020460067945d), new NpgsqlTypes.NpgsqlPoint(x: 0.9729197123714792d, y: 0.3496695986954931d)))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[18];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((101)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.07465195745434361d, y: 0.27944946309460483d), new NpgsqlTypes.NpgsqlPoint(x: 0.3099380963691144d, y: 0.990943419190619d), new NpgsqlTypes.NpgsqlPoint(x: 0.8213136568078592d, y: 0.2308106813878963d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((95)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9281344318613908d, y: 0.29203756015625115d), new NpgsqlTypes.NpgsqlPoint(x: 0.7502449758842861d, y: 0.9839887271579368d), new NpgsqlTypes.NpgsqlPoint(x: 0.9046341479981677d, y: 0.00996623118848261d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4221,13 +4407,13 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((108)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7753076427823288d, y: 0.9581393286262891d), new NpgsqlTypes.NpgsqlPoint(x: 0.9083663661018183d, y: 0.2970472896285863d), new NpgsqlTypes.NpgsqlPoint(x: 0.0038218773284613983d, y: 0.49050349545931926d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((99)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3045220568507464d, y: 0.9792511962388112d), new NpgsqlTypes.NpgsqlPoint(x: 0.8348363169876699d, y: 0.9295248478895424d), new NpgsqlTypes.NpgsqlPoint(x: 0.3231976499814332d, y: 0.9928401781487364d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((49)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.11991834043230121d, y: 0.06800246878188443d), new NpgsqlTypes.NpgsqlPoint(x: 0.14251783273970497d, y: 0.3646942350224006d), new NpgsqlTypes.NpgsqlPoint(x: 0.6038144066949053d, y: 0.5791631882847204d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((44)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7436922987726727d, y: 0.8394710280241601d), new NpgsqlTypes.NpgsqlPoint(x: 0.12958717458957847d, y: 0.18075150222694336d), new NpgsqlTypes.NpgsqlPoint(x: 0.40437231345846525d, y: 0.3746577716601003d)))));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.22267988886481394d, y: 0.59018489978376d), new NpgsqlTypes.NpgsqlPoint(x: 0.46265038035368455d, y: 0.6830285334331706d), new NpgsqlTypes.NpgsqlPoint(x: 0.8338288832189096d, y: 0.00788591182573073d)))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4236,8 +4422,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((114)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9371227993365242d, y: 0.433150849078187d), new NpgsqlTypes.NpgsqlPoint(x: 0.7321780151777735d, y: 0.387296223664655d), new NpgsqlTypes.NpgsqlPoint(x: 0.3314340353802173d, y: 0.2712397097846202d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((108)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6248644711489609d, y: 0.228316813394827d), new NpgsqlTypes.NpgsqlPoint(x: 0.3171851727655902d, y: 0.6099097192194964d), new NpgsqlTypes.NpgsqlPoint(x: 0.8448921399392807d, y: 0.23056540269162173d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4250,13 +4436,13 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((120)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3260656738662907d, y: 0.8337131136194827d), new NpgsqlTypes.NpgsqlPoint(x: 0.42161845545032606d, y: 0.5748725625755013d), new NpgsqlTypes.NpgsqlPoint(x: 0.022655750456023194d, y: 0.22186464531528138d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((114)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5949619677775516d, y: 0.9331336781587192d), new NpgsqlTypes.NpgsqlPoint(x: 0.8641401299069047d, y: 0.5201082312205062d), new NpgsqlTypes.NpgsqlPoint(x: 0.7900675974816662d, y: 0.20037443128834476d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((58)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.31506189766540793d, y: 0.3522457701361885d), new NpgsqlTypes.NpgsqlPoint(x: 0.5215945616063922d, y: 0.28210863391776464d), new NpgsqlTypes.NpgsqlPoint(x: 0.9345051506595011d, y: 0.6030166556905684d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((45)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5681894337857288d, y: 0.257888851592193d), new NpgsqlTypes.NpgsqlPoint(x: 0.6905333429749269d, y: 0.4846164444182488d), new NpgsqlTypes.NpgsqlPoint(x: 0.9781766966978918d, y: 0.8905906167843954d)))));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8566869647253373d, y: 0.733946245836079d), new NpgsqlTypes.NpgsqlPoint(x: 0.6244567665890496d, y: 0.781029905845733d), new NpgsqlTypes.NpgsqlPoint(x: 0.9560113728403145d, y: 0.5430858450339738d)))));//InnerModel.NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4330522143219857d, y: 0.9704629371929534d), new NpgsqlTypes.NpgsqlPoint(x: 0.887163328486663d, y: 0.5320328572099878d), new NpgsqlTypes.NpgsqlPoint(x: 0.2951237421453612d, y: 0.10181739967770576d)))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4265,8 +4451,37 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((129)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.22284767125838711d, y: 0.321577721984161d), new NpgsqlTypes.NpgsqlPoint(x: 0.9923975566935771d, y: 0.8113899759003377d), new NpgsqlTypes.NpgsqlPoint(x: 0.3601927880489252d, y: 0.7408538032647688d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((123)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.34836043025650787d, y: 0.35548126653930145d), new NpgsqlTypes.NpgsqlPoint(x: 0.16365885910310762d, y: 0.12540463235764565d), new NpgsqlTypes.NpgsqlPoint(x: 0.5861537382629299d, y: 0.4695097541916041d)))));//Value
+
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
+
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.1578158219428557d, y: 0.580502109191045d), new NpgsqlTypes.NpgsqlPoint(x: 0.36667248834448063d, y: 0.1568505716384353d), new NpgsqlTypes.NpgsqlPoint(x: 0.9963555727258999d, y: 0.77563836899814d)))));
+
+                model = models[23];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((127)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6561724763752362d, y: 0.7314684626019561d), new NpgsqlTypes.NpgsqlPoint(x: 0.36361240861749133d, y: 0.8834122394606564d), new NpgsqlTypes.NpgsqlPoint(x: 0.3802803048373804d, y: 0.7750834802771153d)))));//Value
+
+                Assert.That((System.Int32)model[2], Is.EqualTo((48)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9337676746759398d, y: 0.18596555208387722d), new NpgsqlTypes.NpgsqlPoint(x: 0.14647680072657332d, y: 0.8507435395878575d), new NpgsqlTypes.NpgsqlPoint(x: 0.5407757927849911d, y: 0.34121591680390406d)))));//InnerModel.Value
+
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+
+                model = models[24];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((132)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.24386406887763512d, y: 0.15554392757693525d), new NpgsqlTypes.NpgsqlPoint(x: 0.14269638613583235d, y: 0.20552489001558827d), new NpgsqlTypes.NpgsqlPoint(x: 0.37136191471395297d, y: 0.9200879311093739d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4274,57 +4489,28 @@ ORDER BY
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
-                model = models[23];
-
-                Assert.That(model, Has.Length.EqualTo(6));
-
-                Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((130)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8845069880781331d, y: 0.5832446133544374d), new NpgsqlTypes.NpgsqlPoint(x: 0.9694547676329802d, y: 0.7364511305841229d), new NpgsqlTypes.NpgsqlPoint(x: 0.6858895070493819d, y: 0.9857946094173081d)))));//Value
-
-                Assert.That((System.Int32)model[2], Is.EqualTo((65)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.14870275062068428d, y: 0.7647909234832413d), new NpgsqlTypes.NpgsqlPoint(x: 0.8922641529929551d, y: 0.7746025265805577d), new NpgsqlTypes.NpgsqlPoint(x: 0.1326722777502608d, y: 0.7024158205892392d)))));//InnerModel.Value
-
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5673635669024245d, y: 0.7731348949686744d), new NpgsqlTypes.NpgsqlPoint(x: 0.33928059704529256d, y: 0.8057358670878573d), new NpgsqlTypes.NpgsqlPoint(x: 0.8166220974409557d, y: 0.6147651685327331d)))));//InnerModel.NullableValue
-
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7098140717676267d, y: 0.8092753879144646d), new NpgsqlTypes.NpgsqlPoint(x: 0.5846271568111523d, y: 0.3061248892044476d), new NpgsqlTypes.NpgsqlPoint(x: 0.006271617864172185d, y: 0.24043139857048923d)))));
-
-                model = models[24];
-
-                Assert.That(model, Has.Length.EqualTo(6));
-
-                Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((136)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.31527489529216324d, y: 0.852655297007515d), new NpgsqlTypes.NpgsqlPoint(x: 0.8889632960621615d, y: 0.6472661008526572d), new NpgsqlTypes.NpgsqlPoint(x: 0.7535613037230026d, y: 0.9525916741324028d)))));//Value
-
-                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
-                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
-
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8957411241865315d, y: 0.19902201659857122d), new NpgsqlTypes.NpgsqlPoint(x: 0.17302653075258678d, y: 0.9039382978236474d), new NpgsqlTypes.NpgsqlPoint(x: 0.4202422673906324d, y: 0.8161724949289915d)))));
-
                 model = models[25];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((142)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.847842550045621d, y: 0.6197757055064179d), new NpgsqlTypes.NpgsqlPoint(x: 0.6464179984974675d, y: 0.5316456028916419d), new NpgsqlTypes.NpgsqlPoint(x: 0.18221153576556148d, y: 0.09319456375492519d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((137)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.582667979074717d, y: 0.034248231379889305d), new NpgsqlTypes.NpgsqlPoint(x: 0.7112680891764618d, y: 0.5567763976394428d), new NpgsqlTypes.NpgsqlPoint(x: 0.7358655892625889d, y: 0.7444919986647325d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((69)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.31308287541372426d, y: 0.47831534151469146d), new NpgsqlTypes.NpgsqlPoint(x: 0.8737751515127683d, y: 0.17120649455211512d), new NpgsqlTypes.NpgsqlPoint(x: 0.2785384143819032d, y: 0.15767093215199957d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((54)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4039079185868969d, y: 0.5491194555060888d), new NpgsqlTypes.NpgsqlPoint(x: 0.4691837933336964d, y: 0.10531096038076315d), new NpgsqlTypes.NpgsqlPoint(x: 0.6806713629464981d, y: 0.18866002989871555d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6313514383679978d, y: 0.6567215608856876d), new NpgsqlTypes.NpgsqlPoint(x: 0.30137222950647735d, y: 0.20884501579921277d), new NpgsqlTypes.NpgsqlPoint(x: 0.0803479207868163d, y: 0.12107007574746798d)))));
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.005276284262268671d, y: 0.29249059440197334d), new NpgsqlTypes.NpgsqlPoint(x: 0.5859913765403376d, y: 0.1078901984028241d), new NpgsqlTypes.NpgsqlPoint(x: 0.1854661948930716d, y: 0.4194405057288677d)))));
 
                 model = models[26];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((147)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9834323318143712d, y: 0.7520647445623716d), new NpgsqlTypes.NpgsqlPoint(x: 0.16850611252586323d, y: 0.7333005558897999d), new NpgsqlTypes.NpgsqlPoint(x: 0.7505552944533084d, y: 0.6403555460794731d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((140)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.832685816352704d, y: 0.5601483299516479d), new NpgsqlTypes.NpgsqlPoint(x: 0.3674868057159424d, y: 0.7805694530223134d), new NpgsqlTypes.NpgsqlPoint(x: 0.8517999302927911d, y: 0.7294649615379795d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4337,23 +4523,23 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((154)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6317074410052093d, y: 0.17568327678730322d), new NpgsqlTypes.NpgsqlPoint(x: 0.8154471361773005d, y: 0.5130477247118258d), new NpgsqlTypes.NpgsqlPoint(x: 0.7753595103738224d, y: 0.4907155999851106d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((145)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.37421525349877127d, y: 0.3123672359841997d), new NpgsqlTypes.NpgsqlPoint(x: 0.1090936783864559d, y: 0.13422102071667064d), new NpgsqlTypes.NpgsqlPoint(x: 0.41761128033972916d, y: 0.7873280889168898d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((76)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.907913085448011d, y: 0.36913169990953376d), new NpgsqlTypes.NpgsqlPoint(x: 0.5813570896125809d, y: 0.5429053833179671d), new NpgsqlTypes.NpgsqlPoint(x: 0.1538963687263062d, y: 0.12679067766493124d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((56)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4207872452109743d, y: 0.015290441140708322d), new NpgsqlTypes.NpgsqlPoint(x: 0.547981454246913d, y: 0.5666423206592524d), new NpgsqlTypes.NpgsqlPoint(x: 0.3466467512784893d, y: 0.6933640857384799d)))));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.31627162132425013d, y: 0.45447737352558415d), new NpgsqlTypes.NpgsqlPoint(x: 0.33585459356212666d, y: 0.8777603583517243d), new NpgsqlTypes.NpgsqlPoint(x: 0.1424464155323415d, y: 0.0408711910046855d)))));//InnerModel.NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6360682050378027d, y: 0.9043463876664724d), new NpgsqlTypes.NpgsqlPoint(x: 0.5297010172371073d, y: 0.806018909424035d), new NpgsqlTypes.NpgsqlPoint(x: 0.3781275014059875d, y: 0.4428814594912075d)))));//InnerModel.NullableValue
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3308593474071012d, y: 0.20542226365059224d), new NpgsqlTypes.NpgsqlPoint(x: 0.6495379320517978d, y: 0.44382522957643034d), new NpgsqlTypes.NpgsqlPoint(x: 0.1943947088317305d, y: 0.6862480278169055d)))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[28];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((158)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.14224683552529171d, y: 0.8476055227061888d), new NpgsqlTypes.NpgsqlPoint(x: 0.1506296787908371d, y: 0.998024580742324d), new NpgsqlTypes.NpgsqlPoint(x: 0.2448795634154335d, y: 0.8002398266590957d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((146)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5958284560371019d, y: 0.4798974060874024d), new NpgsqlTypes.NpgsqlPoint(x: 0.6575568587668421d, y: 0.31450602028481d), new NpgsqlTypes.NpgsqlPoint(x: 0.10439299418237269d, y: 0.2954556396731678d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4366,15 +4552,15 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((160)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8755387195118209d, y: 0.2761331409968887d), new NpgsqlTypes.NpgsqlPoint(x: 0.9711834964065641d, y: 0.12156541554327993d), new NpgsqlTypes.NpgsqlPoint(x: 0.27658962602114956d, y: 0.4041157152868471d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((152)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.46895897576833934d, y: 0.4198918679081898d), new NpgsqlTypes.NpgsqlPoint(x: 0.3324783261400912d, y: 0.4321632140967655d), new NpgsqlTypes.NpgsqlPoint(x: 0.9431715753228715d, y: 0.6381927114889016d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((80)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.0521694551739037d, y: 0.14260948157005826d), new NpgsqlTypes.NpgsqlPoint(x: 0.9777238343217723d, y: 0.23701139939154192d), new NpgsqlTypes.NpgsqlPoint(x: 0.8479199468730737d, y: 0.9862994559930064d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((58)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8723203505864855d, y: 0.2769218847243651d), new NpgsqlTypes.NpgsqlPoint(x: 0.42716926824020374d, y: 0.8501134655709022d), new NpgsqlTypes.NpgsqlPoint(x: 0.25967014597117866d, y: 0.6934885408973642d)))));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.40818923133426543d, y: 0.0066408142992150365d), new NpgsqlTypes.NpgsqlPoint(x: 0.36625289177110254d, y: 0.66492576750161d), new NpgsqlTypes.NpgsqlPoint(x: 0.43845343845914575d, y: 0.9687789133050013d)))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9824778374695037d, y: 0.06835529945255214d), new NpgsqlTypes.NpgsqlPoint(x: 0.12757013990860433d, y: 0.4035120978271448d), new NpgsqlTypes.NpgsqlPoint(x: 0.24368417654179308d, y: 0.5000377704579807d)))));
 
             }
         }
@@ -4393,66 +4579,66 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((9)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6300384082776639d, y: 0.7495320030437037d), new NpgsqlTypes.NpgsqlPoint(x: 0.1587360579187037d, y: 0.0190375632764902d), new NpgsqlTypes.NpgsqlPoint(x: 0.6346034118733048d, y: 0.7280110309953616d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((1)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.32187743729051466d, y: 0.9837123616815743d), new NpgsqlTypes.NpgsqlPoint(x: 0.9608659072745059d, y: 0.8580409059373132d), new NpgsqlTypes.NpgsqlPoint(x: 0.5401137762548912d, y: 0.9720284678422745d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5471760774136353d, y: 0.2585227912960819d), new NpgsqlTypes.NpgsqlPoint(x: 0.6718623076383583d, y: 0.41161683898967794d), new NpgsqlTypes.NpgsqlPoint(x: 0.8355824858609684d, y: 0.2843345713448113d)))));
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6387911057188764d, y: 0.4792398367483184d), new NpgsqlTypes.NpgsqlPoint(x: 0.3225675678268459d, y: 0.27717389895811695d), new NpgsqlTypes.NpgsqlPoint(x: 0.914774380987572d, y: 0.17205047127864548d)))));
 
                 model = models[1];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((18)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4165830524643521d, y: 0.0830388451964762d), new NpgsqlTypes.NpgsqlPoint(x: 0.08829222857848407d, y: 0.5943174264904748d), new NpgsqlTypes.NpgsqlPoint(x: 0.9876111662074002d, y: 0.17128450452822186d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((4)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.0939036211468176d, y: 0.17795064789924242d), new NpgsqlTypes.NpgsqlPoint(x: 0.5874797702644124d, y: 0.22070502453294227d), new NpgsqlTypes.NpgsqlPoint(x: 0.31118957101708455d, y: 0.90023920215019d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((3)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.1142065824617603d, y: 0.9415909088183784d), new NpgsqlTypes.NpgsqlPoint(x: 0.3627983692837803d, y: 0.45255535514486134d), new NpgsqlTypes.NpgsqlPoint(x: 0.2680824183164645d, y: 0.8740173824885492d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((5)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4863638441836249d, y: 0.8482623849486046d), new NpgsqlTypes.NpgsqlPoint(x: 0.5966094098957083d, y: 0.8637278493451856d), new NpgsqlTypes.NpgsqlPoint(x: 0.3616830618402752d, y: 0.9211039763566239d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.48752894163016514d, y: 0.1561211880592681d), new NpgsqlTypes.NpgsqlPoint(x: 0.545058139868356d, y: 0.42660168801615417d), new NpgsqlTypes.NpgsqlPoint(x: 0.0980490995959481d, y: 0.5231413245324888d)))));
 
                 model = models[2];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((22)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6958800324827679d, y: 0.9323916687893822d), new NpgsqlTypes.NpgsqlPoint(x: 0.6271328684149409d, y: 0.41412994394869473d), new NpgsqlTypes.NpgsqlPoint(x: 0.4354542597835125d, y: 0.36359964472035555d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((10)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.012385770688188247d, y: 0.9437023511167454d), new NpgsqlTypes.NpgsqlPoint(x: 0.34097005594487806d, y: 0.06614710279617386d), new NpgsqlTypes.NpgsqlPoint(x: 0.17728727297540414d, y: 0.9203863738209981d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6316952100893283d, y: 0.7317146399508008d), new NpgsqlTypes.NpgsqlPoint(x: 0.4163002546818575d, y: 0.8049110448143588d), new NpgsqlTypes.NpgsqlPoint(x: 0.7664498937186545d, y: 0.4518567303355444d)))));
 
                 model = models[3];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((31)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8733588118651534d, y: 0.16321155095710926d), new NpgsqlTypes.NpgsqlPoint(x: 0.39315876647382486d, y: 0.9503506349189761d), new NpgsqlTypes.NpgsqlPoint(x: 0.6645159395078658d, y: 0.10709211709870237d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((19)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.16272340320911327d, y: 0.38562829527075404d), new NpgsqlTypes.NpgsqlPoint(x: 0.3086470561795589d, y: 0.13928490183395525d), new NpgsqlTypes.NpgsqlPoint(x: 0.6999601204849794d, y: 0.8235962409985872d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((8)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7414732174132882d, y: 0.5528478153648975d), new NpgsqlTypes.NpgsqlPoint(x: 0.056119563992861665d, y: 0.5832535399207119d), new NpgsqlTypes.NpgsqlPoint(x: 0.9504067695106311d, y: 0.4835051441183762d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((13)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3112107803757652d, y: 0.4581029672646054d), new NpgsqlTypes.NpgsqlPoint(x: 0.777669991637431d, y: 0.7667838313809824d), new NpgsqlTypes.NpgsqlPoint(x: 0.14114031234793278d, y: 0.7149143704456629d)))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.06744746259369239d, y: 0.47078467809915026d), new NpgsqlTypes.NpgsqlPoint(x: 0.3856479841035565d, y: 0.23532992617590442d), new NpgsqlTypes.NpgsqlPoint(x: 0.03957907366091562d, y: 0.12550508700727403d)))));//InnerModel.NullableValue
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6521081336574701d, y: 0.19389437253408304d), new NpgsqlTypes.NpgsqlPoint(x: 0.8493160649245717d, y: 0.26525891719588446d), new NpgsqlTypes.NpgsqlPoint(x: 0.64087570089057d, y: 0.5485107311065177d)))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[4];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((34)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.706160539508384d, y: 0.005141111016677358d), new NpgsqlTypes.NpgsqlPoint(x: 0.07547497378100276d, y: 0.16745793447467827d), new NpgsqlTypes.NpgsqlPoint(x: 0.39019766116189136d, y: 0.4720841220664519d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((28)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.730284620690524d, y: 0.7239856198996987d), new NpgsqlTypes.NpgsqlPoint(x: 0.4889520089700292d, y: 0.25259560319519847d), new NpgsqlTypes.NpgsqlPoint(x: 0.561406529327117d, y: 0.9768415354266972d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4465,71 +4651,71 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((37)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.256188874853568d, y: 0.8431560538159182d), new NpgsqlTypes.NpgsqlPoint(x: 0.9257084269951422d, y: 0.04115692451214159d), new NpgsqlTypes.NpgsqlPoint(x: 0.08892551564764106d, y: 0.652981052955308d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((29)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.08605797352399336d, y: 0.5038100801519455d), new NpgsqlTypes.NpgsqlPoint(x: 0.7733646952180582d, y: 0.33493821668546775d), new NpgsqlTypes.NpgsqlPoint(x: 0.8595782329964408d, y: 0.7493066429047205d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((11)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.02528017333357202d, y: 0.0036121020286387084d), new NpgsqlTypes.NpgsqlPoint(x: 0.10732959603669323d, y: 0.5158115432186098d), new NpgsqlTypes.NpgsqlPoint(x: 0.4775577856230766d, y: 0.5790709858144809d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((20)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.2634362702230457d, y: 0.3310970517630163d), new NpgsqlTypes.NpgsqlPoint(x: 0.8473226894982894d, y: 0.47417194406756036d), new NpgsqlTypes.NpgsqlPoint(x: 0.5897076051997622d, y: 0.9093924960600663d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6178927124264777d, y: 0.9851239502443295d), new NpgsqlTypes.NpgsqlPoint(x: 0.39063668822867714d, y: 0.947174323517244d), new NpgsqlTypes.NpgsqlPoint(x: 0.9447844424973548d, y: 0.7248786467596995d)))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[6];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((38)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.05123065431848717d, y: 0.5382680400422305d), new NpgsqlTypes.NpgsqlPoint(x: 0.21774613077866212d, y: 0.9950773928640092d), new NpgsqlTypes.NpgsqlPoint(x: 0.6999894798101748d, y: 0.34774489809489106d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((33)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.49740550989580423d, y: 0.8235062006576792d), new NpgsqlTypes.NpgsqlPoint(x: 0.11140315134854029d, y: 0.640754417363561d), new NpgsqlTypes.NpgsqlPoint(x: 0.10607311661910435d, y: 0.8748515895381915d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.10259815134186012d, y: 0.021433531863827904d), new NpgsqlTypes.NpgsqlPoint(x: 0.7343275942821939d, y: 0.3042099067836479d), new NpgsqlTypes.NpgsqlPoint(x: 0.8730309047833058d, y: 0.07583052288701209d)))));
 
                 model = models[7];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((44)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.15579580019727768d, y: 0.06381108541433689d), new NpgsqlTypes.NpgsqlPoint(x: 0.11529763666657311d, y: 0.9859693937875755d), new NpgsqlTypes.NpgsqlPoint(x: 0.3914042588673693d, y: 0.36408382455228505d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((40)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8184307028356268d, y: 0.1660565877144905d), new NpgsqlTypes.NpgsqlPoint(x: 0.23689673694747349d, y: 0.6724133777108979d), new NpgsqlTypes.NpgsqlPoint(x: 0.3391900929635604d, y: 0.3302034923142202d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((17)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.01888634634689934d, y: 0.5747075777544562d), new NpgsqlTypes.NpgsqlPoint(x: 0.6251221495554437d, y: 0.431725187358144d), new NpgsqlTypes.NpgsqlPoint(x: 0.19735061516444297d, y: 0.7492463306561229d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((21)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.1042341413579968d, y: 0.6208102099767836d), new NpgsqlTypes.NpgsqlPoint(x: 0.10013324476451191d, y: 0.9395063366033806d), new NpgsqlTypes.NpgsqlPoint(x: 0.6097391795758189d, y: 0.04457116443736453d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7773868720961987d, y: 0.4161056755091842d), new NpgsqlTypes.NpgsqlPoint(x: 0.8474959073462752d, y: 0.19407984817202195d), new NpgsqlTypes.NpgsqlPoint(x: 0.3739995178533223d, y: 0.33409833683789814d)))));
 
                 model = models[8];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((50)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8702680077616768d, y: 0.7509466595567518d), new NpgsqlTypes.NpgsqlPoint(x: 0.4769529403430788d, y: 0.9038849586911017d), new NpgsqlTypes.NpgsqlPoint(x: 0.5634180454093034d, y: 0.3621748906716937d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((41)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.2985727553130755d, y: 0.16973040069023726d), new NpgsqlTypes.NpgsqlPoint(x: 0.6424403982845325d, y: 0.5125629459060828d), new NpgsqlTypes.NpgsqlPoint(x: 0.44800776254877916d, y: 0.612042310628433d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9778081066584271d, y: 0.03704702541639415d), new NpgsqlTypes.NpgsqlPoint(x: 0.5468307008132023d, y: 0.6151042620486146d), new NpgsqlTypes.NpgsqlPoint(x: 0.4560903759375522d, y: 0.3192479890654626d)))));
 
                 model = models[9];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((54)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6515623898081567d, y: 0.9545158800799922d), new NpgsqlTypes.NpgsqlPoint(x: 0.96676524294417d, y: 0.9435876178168235d), new NpgsqlTypes.NpgsqlPoint(x: 0.9270920933123629d, y: 0.1985019808062688d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((45)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.156866842363502d, y: 0.28173895099889035d), new NpgsqlTypes.NpgsqlPoint(x: 0.047590697508536284d, y: 0.13179571860578065d), new NpgsqlTypes.NpgsqlPoint(x: 0.6766834398831902d, y: 0.21411249004520505d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((20)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.16058513028457178d, y: 0.6229721328759219d), new NpgsqlTypes.NpgsqlPoint(x: 0.34796830943747903d, y: 0.18664291919945286d), new NpgsqlTypes.NpgsqlPoint(x: 0.8175904268806188d, y: 0.5809811545546887d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((27)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8138630578068515d, y: 0.11795865241411263d), new NpgsqlTypes.NpgsqlPoint(x: 0.6830300212272239d, y: 0.572731389353938d), new NpgsqlTypes.NpgsqlPoint(x: 0.9678871331460612d, y: 0.2853566853578522d)))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.024194576889528085d, y: 0.33696606627341463d), new NpgsqlTypes.NpgsqlPoint(x: 0.03410943936884514d, y: 0.074372588386165d), new NpgsqlTypes.NpgsqlPoint(x: 0.2034494929902383d, y: 0.44399091913399147d)))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4538,27 +4724,27 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((56)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7445133643202186d, y: 0.8770284761823003d), new NpgsqlTypes.NpgsqlPoint(x: 0.8303441676852148d, y: 0.8489118742862688d), new NpgsqlTypes.NpgsqlPoint(x: 0.5471125798692454d, y: 0.8041077749505472d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((53)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6548378670200548d, y: 0.4134149856174837d), new NpgsqlTypes.NpgsqlPoint(x: 0.9441803125431862d, y: 0.6041844204099742d), new NpgsqlTypes.NpgsqlPoint(x: 0.7676762202524333d, y: 0.6196702338238622d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9417392653058971d, y: 0.21307016416138702d), new NpgsqlTypes.NpgsqlPoint(x: 0.28137811343522967d, y: 0.7514802682718026d), new NpgsqlTypes.NpgsqlPoint(x: 0.2877197752158349d, y: 0.9988707797949911d)))));
 
                 model = models[11];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((65)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6078602283653777d, y: 0.36768957153108395d), new NpgsqlTypes.NpgsqlPoint(x: 0.1287968810690403d, y: 0.6328292418253414d), new NpgsqlTypes.NpgsqlPoint(x: 0.6954308107744425d, y: 0.8872937769923123d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((58)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.1045669181267298d, y: 0.3621015270329473d), new NpgsqlTypes.NpgsqlPoint(x: 0.1148991801903616d, y: 0.2274872363619651d), new NpgsqlTypes.NpgsqlPoint(x: 0.6195581343644281d, y: 0.05852231426075505d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((22)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7844371876329728d, y: 0.18297677787012545d), new NpgsqlTypes.NpgsqlPoint(x: 0.6552206450692818d, y: 0.0847647148511036d), new NpgsqlTypes.NpgsqlPoint(x: 0.941565060273267d, y: 0.43806488291844314d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((28)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.46651592067116554d, y: 0.9703842408976944d), new NpgsqlTypes.NpgsqlPoint(x: 0.9555044982759686d, y: 0.3531551377273596d), new NpgsqlTypes.NpgsqlPoint(x: 0.903603128248657d, y: 0.3312499882257993d)))));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6273066703325338d, y: 0.8512600908796363d), new NpgsqlTypes.NpgsqlPoint(x: 0.9889247102062146d, y: 0.3657173957244293d), new NpgsqlTypes.NpgsqlPoint(x: 0.9168168183104842d, y: 0.6831728386804343d)))));//InnerModel.NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.0038502321229445524d, y: 0.03186137077263995d), new NpgsqlTypes.NpgsqlPoint(x: 0.02481559125789079d, y: 0.6441180045191767d), new NpgsqlTypes.NpgsqlPoint(x: 0.825722060372456d, y: 0.30205269466085016d)))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4567,25 +4753,25 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((73)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.772202322566165d, y: 0.17915506251070845d), new NpgsqlTypes.NpgsqlPoint(x: 0.9603336084521403d, y: 0.13297292060724564d), new NpgsqlTypes.NpgsqlPoint(x: 0.25848930175407114d, y: 0.4289770315281872d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((62)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3243021342438145d, y: 0.6985757330535691d), new NpgsqlTypes.NpgsqlPoint(x: 0.681517693694453d, y: 0.19008600048182978d), new NpgsqlTypes.NpgsqlPoint(x: 0.5036240712075639d, y: 0.6716466481216589d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6639155914636087d, y: 0.918229505220105d), new NpgsqlTypes.NpgsqlPoint(x: 0.5331528945403387d, y: 0.9088218275195418d), new NpgsqlTypes.NpgsqlPoint(x: 0.12332528303783508d, y: 0.047632533288568535d)))));
 
                 model = models[13];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((77)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.851844309600514d, y: 0.7018564833172163d), new NpgsqlTypes.NpgsqlPoint(x: 0.5957297124303375d, y: 0.9788304512982757d), new NpgsqlTypes.NpgsqlPoint(x: 0.2997499418676687d, y: 0.3170976120122728d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((65)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8931224580364109d, y: 0.6894651451343579d), new NpgsqlTypes.NpgsqlPoint(x: 0.16849952854063943d, y: 0.9230078111959203d), new NpgsqlTypes.NpgsqlPoint(x: 0.7757882071627066d, y: 0.39325959366156704d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((31)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6999999070233826d, y: 0.4357051396862184d), new NpgsqlTypes.NpgsqlPoint(x: 0.43270381161938165d, y: 0.049086718071997715d), new NpgsqlTypes.NpgsqlPoint(x: 0.2090709061069469d, y: 0.13966609953472842d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((36)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.021867406759001673d, y: 0.6988350765221099d), new NpgsqlTypes.NpgsqlPoint(x: 0.985350449782381d, y: 0.01140251091606126d), new NpgsqlTypes.NpgsqlPoint(x: 0.02979062045817049d, y: 0.48271015812932816d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
@@ -4596,8 +4782,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((85)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6715159356840498d, y: 0.8880238421387208d), new NpgsqlTypes.NpgsqlPoint(x: 0.49140044432054253d, y: 0.9876512123217106d), new NpgsqlTypes.NpgsqlPoint(x: 0.5749309553544869d, y: 0.03502030197369144d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((68)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.08029222752339271d, y: 0.5445785969702944d), new NpgsqlTypes.NpgsqlPoint(x: 0.7508227244529064d, y: 0.5549330333969313d), new NpgsqlTypes.NpgsqlPoint(x: 0.4077586018036229d, y: 0.16078436493012638d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4610,52 +4796,52 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((89)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6729231180790392d, y: 0.4814560521945269d), new NpgsqlTypes.NpgsqlPoint(x: 0.1995246206896446d, y: 0.5431674304706859d), new NpgsqlTypes.NpgsqlPoint(x: 0.40833687596285495d, y: 0.014339446661259747d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((73)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5059880541605064d, y: 0.9595463808598307d), new NpgsqlTypes.NpgsqlPoint(x: 0.43639035766372714d, y: 0.2126660311079015d), new NpgsqlTypes.NpgsqlPoint(x: 0.6737412273624952d, y: 0.9671959938129648d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((33)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.0964167158734982d, y: 0.5842303671827865d), new NpgsqlTypes.NpgsqlPoint(x: 0.8796125411521427d, y: 0.45976677479433214d), new NpgsqlTypes.NpgsqlPoint(x: 0.4948627395247269d, y: 0.5254190728255941d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((37)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3109021456846234d, y: 0.23809653458447977d), new NpgsqlTypes.NpgsqlPoint(x: 0.4296418337521448d, y: 0.16262641966178404d), new NpgsqlTypes.NpgsqlPoint(x: 0.1730036966191978d, y: 0.7186117261747179d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9168258456060225d, y: 0.49146980426892384d), new NpgsqlTypes.NpgsqlPoint(x: 0.2921100253077422d, y: 0.20390123074414213d), new NpgsqlTypes.NpgsqlPoint(x: 0.8930098723004823d, y: 0.9143463210990602d)))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[16];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((95)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.42892803124040535d, y: 0.37514919974800354d), new NpgsqlTypes.NpgsqlPoint(x: 0.44759577419755103d, y: 0.2146692775963055d), new NpgsqlTypes.NpgsqlPoint(x: 0.34401919520058966d, y: 0.012616808839248095d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((82)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.013100062742008367d, y: 0.11391362279310846d), new NpgsqlTypes.NpgsqlPoint(x: 0.39100676214688757d, y: 0.5995163176893243d), new NpgsqlTypes.NpgsqlPoint(x: 0.8433823891664345d, y: 0.06308450455986347d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.317133099940322d, y: 0.8155406557417567d), new NpgsqlTypes.NpgsqlPoint(x: 0.03796155685013092d, y: 0.6782319333715429d), new NpgsqlTypes.NpgsqlPoint(x: 0.7904483504288442d, y: 0.4804453324918271d)))));
 
                 model = models[17];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((99)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8836600263188228d, y: 0.30826577881696005d), new NpgsqlTypes.NpgsqlPoint(x: 0.5971707306236446d, y: 0.009085413309394164d), new NpgsqlTypes.NpgsqlPoint(x: 0.663033929714687d, y: 0.39096111325163485d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((89)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4737793868734428d, y: 0.21364087268455512d), new NpgsqlTypes.NpgsqlPoint(x: 0.7278895481132945d, y: 0.3322734753572889d), new NpgsqlTypes.NpgsqlPoint(x: 0.22119108403358367d, y: 0.6672133964156873d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((42)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.10930798153262355d, y: 0.22556476547585413d), new NpgsqlTypes.NpgsqlPoint(x: 0.9902569686943317d, y: 0.5881768071532187d), new NpgsqlTypes.NpgsqlPoint(x: 0.9914221979551064d, y: 0.020549479989464325d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((41)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.03783783343908653d, y: 0.5484874823795984d), new NpgsqlTypes.NpgsqlPoint(x: 0.05555007011940982d, y: 0.0769130547450445d), new NpgsqlTypes.NpgsqlPoint(x: 0.0735963717296817d, y: 0.011558037814198618d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8140810007873626d, y: 0.7221924571473407d), new NpgsqlTypes.NpgsqlPoint(x: 0.2646112863422416d, y: 0.32654020460067945d), new NpgsqlTypes.NpgsqlPoint(x: 0.9729197123714792d, y: 0.3496695986954931d)))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[18];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((101)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.07465195745434361d, y: 0.27944946309460483d), new NpgsqlTypes.NpgsqlPoint(x: 0.3099380963691144d, y: 0.990943419190619d), new NpgsqlTypes.NpgsqlPoint(x: 0.8213136568078592d, y: 0.2308106813878963d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((95)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9281344318613908d, y: 0.29203756015625115d), new NpgsqlTypes.NpgsqlPoint(x: 0.7502449758842861d, y: 0.9839887271579368d), new NpgsqlTypes.NpgsqlPoint(x: 0.9046341479981677d, y: 0.00996623118848261d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4668,13 +4854,13 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((108)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7753076427823288d, y: 0.9581393286262891d), new NpgsqlTypes.NpgsqlPoint(x: 0.9083663661018183d, y: 0.2970472896285863d), new NpgsqlTypes.NpgsqlPoint(x: 0.0038218773284613983d, y: 0.49050349545931926d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((99)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3045220568507464d, y: 0.9792511962388112d), new NpgsqlTypes.NpgsqlPoint(x: 0.8348363169876699d, y: 0.9295248478895424d), new NpgsqlTypes.NpgsqlPoint(x: 0.3231976499814332d, y: 0.9928401781487364d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((49)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.11991834043230121d, y: 0.06800246878188443d), new NpgsqlTypes.NpgsqlPoint(x: 0.14251783273970497d, y: 0.3646942350224006d), new NpgsqlTypes.NpgsqlPoint(x: 0.6038144066949053d, y: 0.5791631882847204d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((44)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7436922987726727d, y: 0.8394710280241601d), new NpgsqlTypes.NpgsqlPoint(x: 0.12958717458957847d, y: 0.18075150222694336d), new NpgsqlTypes.NpgsqlPoint(x: 0.40437231345846525d, y: 0.3746577716601003d)))));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.22267988886481394d, y: 0.59018489978376d), new NpgsqlTypes.NpgsqlPoint(x: 0.46265038035368455d, y: 0.6830285334331706d), new NpgsqlTypes.NpgsqlPoint(x: 0.8338288832189096d, y: 0.00788591182573073d)))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4683,8 +4869,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((114)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9371227993365242d, y: 0.433150849078187d), new NpgsqlTypes.NpgsqlPoint(x: 0.7321780151777735d, y: 0.387296223664655d), new NpgsqlTypes.NpgsqlPoint(x: 0.3314340353802173d, y: 0.2712397097846202d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((108)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6248644711489609d, y: 0.228316813394827d), new NpgsqlTypes.NpgsqlPoint(x: 0.3171851727655902d, y: 0.6099097192194964d), new NpgsqlTypes.NpgsqlPoint(x: 0.8448921399392807d, y: 0.23056540269162173d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4697,13 +4883,13 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((120)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3260656738662907d, y: 0.8337131136194827d), new NpgsqlTypes.NpgsqlPoint(x: 0.42161845545032606d, y: 0.5748725625755013d), new NpgsqlTypes.NpgsqlPoint(x: 0.022655750456023194d, y: 0.22186464531528138d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((114)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5949619677775516d, y: 0.9331336781587192d), new NpgsqlTypes.NpgsqlPoint(x: 0.8641401299069047d, y: 0.5201082312205062d), new NpgsqlTypes.NpgsqlPoint(x: 0.7900675974816662d, y: 0.20037443128834476d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((58)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.31506189766540793d, y: 0.3522457701361885d), new NpgsqlTypes.NpgsqlPoint(x: 0.5215945616063922d, y: 0.28210863391776464d), new NpgsqlTypes.NpgsqlPoint(x: 0.9345051506595011d, y: 0.6030166556905684d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((45)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5681894337857288d, y: 0.257888851592193d), new NpgsqlTypes.NpgsqlPoint(x: 0.6905333429749269d, y: 0.4846164444182488d), new NpgsqlTypes.NpgsqlPoint(x: 0.9781766966978918d, y: 0.8905906167843954d)))));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8566869647253373d, y: 0.733946245836079d), new NpgsqlTypes.NpgsqlPoint(x: 0.6244567665890496d, y: 0.781029905845733d), new NpgsqlTypes.NpgsqlPoint(x: 0.9560113728403145d, y: 0.5430858450339738d)))));//InnerModel.NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4330522143219857d, y: 0.9704629371929534d), new NpgsqlTypes.NpgsqlPoint(x: 0.887163328486663d, y: 0.5320328572099878d), new NpgsqlTypes.NpgsqlPoint(x: 0.2951237421453612d, y: 0.10181739967770576d)))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4712,8 +4898,37 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((129)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.22284767125838711d, y: 0.321577721984161d), new NpgsqlTypes.NpgsqlPoint(x: 0.9923975566935771d, y: 0.8113899759003377d), new NpgsqlTypes.NpgsqlPoint(x: 0.3601927880489252d, y: 0.7408538032647688d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((123)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.34836043025650787d, y: 0.35548126653930145d), new NpgsqlTypes.NpgsqlPoint(x: 0.16365885910310762d, y: 0.12540463235764565d), new NpgsqlTypes.NpgsqlPoint(x: 0.5861537382629299d, y: 0.4695097541916041d)))));//Value
+
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
+
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.1578158219428557d, y: 0.580502109191045d), new NpgsqlTypes.NpgsqlPoint(x: 0.36667248834448063d, y: 0.1568505716384353d), new NpgsqlTypes.NpgsqlPoint(x: 0.9963555727258999d, y: 0.77563836899814d)))));
+
+                model = models[23];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((127)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6561724763752362d, y: 0.7314684626019561d), new NpgsqlTypes.NpgsqlPoint(x: 0.36361240861749133d, y: 0.8834122394606564d), new NpgsqlTypes.NpgsqlPoint(x: 0.3802803048373804d, y: 0.7750834802771153d)))));//Value
+
+                Assert.That((System.Int32)model[2], Is.EqualTo((48)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9337676746759398d, y: 0.18596555208387722d), new NpgsqlTypes.NpgsqlPoint(x: 0.14647680072657332d, y: 0.8507435395878575d), new NpgsqlTypes.NpgsqlPoint(x: 0.5407757927849911d, y: 0.34121591680390406d)))));//InnerModel.Value
+
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+
+                model = models[24];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((132)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.24386406887763512d, y: 0.15554392757693525d), new NpgsqlTypes.NpgsqlPoint(x: 0.14269638613583235d, y: 0.20552489001558827d), new NpgsqlTypes.NpgsqlPoint(x: 0.37136191471395297d, y: 0.9200879311093739d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4721,57 +4936,28 @@ ORDER BY
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
-                model = models[23];
-
-                Assert.That(model, Has.Length.EqualTo(6));
-
-                Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((130)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8845069880781331d, y: 0.5832446133544374d), new NpgsqlTypes.NpgsqlPoint(x: 0.9694547676329802d, y: 0.7364511305841229d), new NpgsqlTypes.NpgsqlPoint(x: 0.6858895070493819d, y: 0.9857946094173081d)))));//Value
-
-                Assert.That((System.Int32)model[2], Is.EqualTo((65)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.14870275062068428d, y: 0.7647909234832413d), new NpgsqlTypes.NpgsqlPoint(x: 0.8922641529929551d, y: 0.7746025265805577d), new NpgsqlTypes.NpgsqlPoint(x: 0.1326722777502608d, y: 0.7024158205892392d)))));//InnerModel.Value
-
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5673635669024245d, y: 0.7731348949686744d), new NpgsqlTypes.NpgsqlPoint(x: 0.33928059704529256d, y: 0.8057358670878573d), new NpgsqlTypes.NpgsqlPoint(x: 0.8166220974409557d, y: 0.6147651685327331d)))));//InnerModel.NullableValue
-
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.7098140717676267d, y: 0.8092753879144646d), new NpgsqlTypes.NpgsqlPoint(x: 0.5846271568111523d, y: 0.3061248892044476d), new NpgsqlTypes.NpgsqlPoint(x: 0.006271617864172185d, y: 0.24043139857048923d)))));
-
-                model = models[24];
-
-                Assert.That(model, Has.Length.EqualTo(6));
-
-                Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((136)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.31527489529216324d, y: 0.852655297007515d), new NpgsqlTypes.NpgsqlPoint(x: 0.8889632960621615d, y: 0.6472661008526572d), new NpgsqlTypes.NpgsqlPoint(x: 0.7535613037230026d, y: 0.9525916741324028d)))));//Value
-
-                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
-                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
-
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8957411241865315d, y: 0.19902201659857122d), new NpgsqlTypes.NpgsqlPoint(x: 0.17302653075258678d, y: 0.9039382978236474d), new NpgsqlTypes.NpgsqlPoint(x: 0.4202422673906324d, y: 0.8161724949289915d)))));
-
                 model = models[25];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((142)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.847842550045621d, y: 0.6197757055064179d), new NpgsqlTypes.NpgsqlPoint(x: 0.6464179984974675d, y: 0.5316456028916419d), new NpgsqlTypes.NpgsqlPoint(x: 0.18221153576556148d, y: 0.09319456375492519d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((137)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.582667979074717d, y: 0.034248231379889305d), new NpgsqlTypes.NpgsqlPoint(x: 0.7112680891764618d, y: 0.5567763976394428d), new NpgsqlTypes.NpgsqlPoint(x: 0.7358655892625889d, y: 0.7444919986647325d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((69)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.31308287541372426d, y: 0.47831534151469146d), new NpgsqlTypes.NpgsqlPoint(x: 0.8737751515127683d, y: 0.17120649455211512d), new NpgsqlTypes.NpgsqlPoint(x: 0.2785384143819032d, y: 0.15767093215199957d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((54)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4039079185868969d, y: 0.5491194555060888d), new NpgsqlTypes.NpgsqlPoint(x: 0.4691837933336964d, y: 0.10531096038076315d), new NpgsqlTypes.NpgsqlPoint(x: 0.6806713629464981d, y: 0.18866002989871555d)))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6313514383679978d, y: 0.6567215608856876d), new NpgsqlTypes.NpgsqlPoint(x: 0.30137222950647735d, y: 0.20884501579921277d), new NpgsqlTypes.NpgsqlPoint(x: 0.0803479207868163d, y: 0.12107007574746798d)))));
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.005276284262268671d, y: 0.29249059440197334d), new NpgsqlTypes.NpgsqlPoint(x: 0.5859913765403376d, y: 0.1078901984028241d), new NpgsqlTypes.NpgsqlPoint(x: 0.1854661948930716d, y: 0.4194405057288677d)))));
 
                 model = models[26];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((147)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9834323318143712d, y: 0.7520647445623716d), new NpgsqlTypes.NpgsqlPoint(x: 0.16850611252586323d, y: 0.7333005558897999d), new NpgsqlTypes.NpgsqlPoint(x: 0.7505552944533084d, y: 0.6403555460794731d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((140)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.832685816352704d, y: 0.5601483299516479d), new NpgsqlTypes.NpgsqlPoint(x: 0.3674868057159424d, y: 0.7805694530223134d), new NpgsqlTypes.NpgsqlPoint(x: 0.8517999302927911d, y: 0.7294649615379795d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4784,23 +4970,23 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((154)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6317074410052093d, y: 0.17568327678730322d), new NpgsqlTypes.NpgsqlPoint(x: 0.8154471361773005d, y: 0.5130477247118258d), new NpgsqlTypes.NpgsqlPoint(x: 0.7753595103738224d, y: 0.4907155999851106d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((145)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.37421525349877127d, y: 0.3123672359841997d), new NpgsqlTypes.NpgsqlPoint(x: 0.1090936783864559d, y: 0.13422102071667064d), new NpgsqlTypes.NpgsqlPoint(x: 0.41761128033972916d, y: 0.7873280889168898d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((76)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.907913085448011d, y: 0.36913169990953376d), new NpgsqlTypes.NpgsqlPoint(x: 0.5813570896125809d, y: 0.5429053833179671d), new NpgsqlTypes.NpgsqlPoint(x: 0.1538963687263062d, y: 0.12679067766493124d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((56)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.4207872452109743d, y: 0.015290441140708322d), new NpgsqlTypes.NpgsqlPoint(x: 0.547981454246913d, y: 0.5666423206592524d), new NpgsqlTypes.NpgsqlPoint(x: 0.3466467512784893d, y: 0.6933640857384799d)))));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.31627162132425013d, y: 0.45447737352558415d), new NpgsqlTypes.NpgsqlPoint(x: 0.33585459356212666d, y: 0.8777603583517243d), new NpgsqlTypes.NpgsqlPoint(x: 0.1424464155323415d, y: 0.0408711910046855d)))));//InnerModel.NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.6360682050378027d, y: 0.9043463876664724d), new NpgsqlTypes.NpgsqlPoint(x: 0.5297010172371073d, y: 0.806018909424035d), new NpgsqlTypes.NpgsqlPoint(x: 0.3781275014059875d, y: 0.4428814594912075d)))));//InnerModel.NullableValue
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.3308593474071012d, y: 0.20542226365059224d), new NpgsqlTypes.NpgsqlPoint(x: 0.6495379320517978d, y: 0.44382522957643034d), new NpgsqlTypes.NpgsqlPoint(x: 0.1943947088317305d, y: 0.6862480278169055d)))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[28];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((158)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.14224683552529171d, y: 0.8476055227061888d), new NpgsqlTypes.NpgsqlPoint(x: 0.1506296787908371d, y: 0.998024580742324d), new NpgsqlTypes.NpgsqlPoint(x: 0.2448795634154335d, y: 0.8002398266590957d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((146)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.5958284560371019d, y: 0.4798974060874024d), new NpgsqlTypes.NpgsqlPoint(x: 0.6575568587668421d, y: 0.31450602028481d), new NpgsqlTypes.NpgsqlPoint(x: 0.10439299418237269d, y: 0.2954556396731678d)))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4813,15 +4999,15 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((160)));//Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8755387195118209d, y: 0.2761331409968887d), new NpgsqlTypes.NpgsqlPoint(x: 0.9711834964065641d, y: 0.12156541554327993d), new NpgsqlTypes.NpgsqlPoint(x: 0.27658962602114956d, y: 0.4041157152868471d)))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((152)));//Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[1], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.46895897576833934d, y: 0.4198918679081898d), new NpgsqlTypes.NpgsqlPoint(x: 0.3324783261400912d, y: 0.4321632140967655d), new NpgsqlTypes.NpgsqlPoint(x: 0.9431715753228715d, y: 0.6381927114889016d)))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((80)));//InnerModel.Id
-                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.0521694551739037d, y: 0.14260948157005826d), new NpgsqlTypes.NpgsqlPoint(x: 0.9777238343217723d, y: 0.23701139939154192d), new NpgsqlTypes.NpgsqlPoint(x: 0.8479199468730737d, y: 0.9862994559930064d)))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((58)));//InnerModel.Id
+                Assert.That((NpgsqlTypes.NpgsqlPath)model[3], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.8723203505864855d, y: 0.2769218847243651d), new NpgsqlTypes.NpgsqlPoint(x: 0.42716926824020374d, y: 0.8501134655709022d), new NpgsqlTypes.NpgsqlPoint(x: 0.25967014597117866d, y: 0.6934885408973642d)))));//InnerModel.Value
 
-                Assert.That((NpgsqlTypes.NpgsqlPath?)model[4], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.40818923133426543d, y: 0.0066408142992150365d), new NpgsqlTypes.NpgsqlPoint(x: 0.36625289177110254d, y: 0.66492576750161d), new NpgsqlTypes.NpgsqlPoint(x: 0.43845343845914575d, y: 0.9687789133050013d)))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((NpgsqlTypes.NpgsqlPath?)model[5], Is.EqualTo((new NpgsqlTypes.NpgsqlPath(new NpgsqlTypes.NpgsqlPoint(x: 0.9824778374695037d, y: 0.06835529945255214d), new NpgsqlTypes.NpgsqlPoint(x: 0.12757013990860433d, y: 0.4035120978271448d), new NpgsqlTypes.NpgsqlPoint(x: 0.24368417654179308d, y: 0.5000377704579807d)))));
 
             }
         }
@@ -4829,6 +5015,116 @@ ORDER BY
 #endregion
 
 #region BinaryImportModelInner
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: 
+@"
+SELECT
+    mi.nullablevalue,
+    mi.id,
+    mi.value
+FROM public.binary_npgsqlpathpath0mi mi
+ORDER BY
+    mi.id ASC
+"
+,
+            methodName:"SelectImportModelInner",
+            queryMapTypes: [typeof(NpgsqlPathpath0MI)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(INpgsqlPathSingleTypepath))]
+        private void SelectImportModelInnerConfig()
+        {
+        }
+
+[Gedaq.Npgsql.Attributes.BinaryImport(
+            query: null,
+            methodName:"DynQueryImportModelInner",
+            queryMapType: typeof(NpgsqlPathpath0MI),
+            dbTypes:
+            new NpgsqlDbType[]
+            {
+                (NpgsqlTypes.NpgsqlDbType)(9),
+                (NpgsqlTypes.NpgsqlDbType)(14),
+                (NpgsqlTypes.NpgsqlDbType)(14)
+            },
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(INpgsqlPathSingleTypepath))]
+        private void DynQueryImportModelInnerConfig()
+        {
+        }
+
+        [Test, Order(0)]
+        public async Task DynQueryImportModelInnerTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+
+                var importCollection = new List<NpgsqlPathpath0MI>(15);
+
+                importCollection.Add(_testData[1].ModelInner);
+                importCollection.Add(_testData[3].ModelInner);
+                importCollection.Add(_testData[5].ModelInner);
+                importCollection.Add(_testData[7].ModelInner);
+                importCollection.Add(_testData[9].ModelInner);
+                importCollection.Add(_testData[11].ModelInner);
+                importCollection.Add(_testData[13].ModelInner);
+                ((INpgsqlPathSingleTypepath)this).DynQueryImportModelInner(connection, importCollection, @"
+COPY public.binary_npgsqlpathpath0mi
+(
+id,
+nullablevalue,
+value
+) 
+FROM STDIN (FORMAT BINARY)
+");
+                var models = ((INpgsqlPathSingleTypepath)this).SelectImportModelInner(connection);
+                Assert.That(models, Has.Count.EqualTo(7));
+                var set = new HashSet<long>();
+                for (var i = 0; i < models.Count(); i++)
+                {
+                    var actual = models[i];
+                    var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
+                    NpgsqlPathpath0MI.AssertModel(actual, expect, false);
+                    Assert.That(set.Add(actual.Id), Is.True);
+                }
+                set.Clear();
+                importCollection.Clear();
+
+                importCollection.Add(_testData[15].ModelInner);
+                importCollection.Add(_testData[17].ModelInner);
+                importCollection.Add(_testData[19].ModelInner);
+                importCollection.Add(_testData[21].ModelInner);
+                importCollection.Add(_testData[23].ModelInner);
+                importCollection.Add(_testData[25].ModelInner);
+                importCollection.Add(_testData[27].ModelInner);
+                importCollection.Add(_testData[29].ModelInner);
+                await ((INpgsqlPathSingleTypepath)this).DynQueryImportModelInnerAsync(connection, importCollection, @"
+COPY public.binary_npgsqlpathpath0mi
+(
+id,
+nullablevalue,
+value
+) 
+FROM STDIN (FORMAT BINARY)
+");
+                models = await ((INpgsqlPathSingleTypepath)this).SelectImportModelInnerAsync(connection);
+                Assert.That(models, Has.Count.EqualTo(15));
+                for (var i = 0; i < models.Count(); i++)
+                {
+                    var actual = models[i];
+                    var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
+                    NpgsqlPathpath0MI.AssertModel(actual, expect, false);
+                    Assert.That(set.Add(actual.Id), Is.True);
+                }
+                set.Clear();
+            }
+        }
 
 [Gedaq.Npgsql.Attributes.BinaryImport(
             query: @"
@@ -4854,29 +5150,6 @@ FROM STDIN (FORMAT BINARY)
             accessModifier: AccessModifier.Public,
             asPartInterface: typeof(INpgsqlPathSingleTypepath))]
         private void ImportModelInnerConfig()
-        {
-        }
-
-[Gedaq.DbConnection.Attributes.Query(
-            query: 
-@"
-SELECT
-    mi.nullablevalue,
-    mi.id,
-    mi.value
-FROM public.binary_npgsqlpathpath0mi mi
-ORDER BY
-    mi.id ASC
-"
-,
-            methodName:"SelectImportModelInner",
-            queryMapTypes: [typeof(NpgsqlPathpath0MI)],
-            methodType: MethodType.Async | MethodType.Sync,
-            queryType: QueryType.Read,
-            generate: true,
-            accessModifier: AccessModifier.Public,
-            asPartInterface: typeof(INpgsqlPathSingleTypepath))]
-        private void SelectImportModelInnerConfig()
         {
         }
 

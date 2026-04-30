@@ -7,12 +7,15 @@ namespace Tests
     public class SinglerealArray1MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483631))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.Single[] Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483631))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.Single[] NullableValue { get; set; }
 
         public static void AssertModel(SinglerealArray1MIWA actual, SinglerealArray1MI expect, bool checkInInnerOnlyId)

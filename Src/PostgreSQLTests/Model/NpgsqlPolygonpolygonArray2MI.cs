@@ -7,11 +7,14 @@ namespace Tests
     public class NpgsqlPolygonpolygonArray2MI
     {
         
+        
         public System.Int32 Id { get; set; }
 
         
+        
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon> Value { get; set; }
 
+        
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPolygon> NullableValue { get; set; }
 

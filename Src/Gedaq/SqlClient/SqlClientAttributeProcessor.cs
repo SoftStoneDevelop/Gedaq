@@ -63,7 +63,7 @@ namespace Gedaq.SqlClient
                         continue;
                     }
 
-                    base.ProcessAttribute(attributeData, containsType, readTemp.FormatParametrs);
+                    base.ProcessAttribute(attributeData, readTemp.FormatParametrs);
                 }
 
                 TryAddReadMethod(readTemp);
@@ -97,18 +97,23 @@ namespace Gedaq.SqlClient
             }
             else
             {
-                if (!query.IsDynamicQuery())
-                {
-                    // query must contain select or return
-                    query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);
-                }
-                else
+                if (query.IsDynamicQuery())
                 {
                     for (int i = 0; i < query.MapTypeInfos.Length; i++)
                     {
                         MapTypeInfo mapTypeInfo = query.MapTypeInfos[i];
                         mapTypeInfo.ParseAliasesFromType(_context, query.GetAliasOverride(i));
                     }
+                }
+                else
+                {
+                    // query must contain select or return
+                    query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);
+                }
+
+                foreach (var mapTypeInfo in query.MapTypeInfos)
+                {
+                    mapTypeInfo.Aliases.FreezeFields(_context);
                 }
             }
 

@@ -7,12 +7,15 @@ namespace Tests
     public class NpgsqlPointpoint0MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(15))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public NpgsqlTypes.NpgsqlPoint Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(15))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public NpgsqlTypes.NpgsqlPoint? NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlPointpoint0MIWA actual, NpgsqlPointpoint0MI expect, bool checkInInnerOnlyId)

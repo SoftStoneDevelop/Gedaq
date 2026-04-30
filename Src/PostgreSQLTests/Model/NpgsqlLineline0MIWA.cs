@@ -7,12 +7,15 @@ namespace Tests
     public class NpgsqlLineline0MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(10))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public NpgsqlTypes.NpgsqlLine Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(10))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public NpgsqlTypes.NpgsqlLine? NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlLineline0MIWA actual, NpgsqlLineline0MI expect, bool checkInInnerOnlyId)

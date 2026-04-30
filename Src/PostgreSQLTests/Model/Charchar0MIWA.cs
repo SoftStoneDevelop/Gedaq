@@ -7,12 +7,15 @@ namespace Tests
     public class Charchar0MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(6))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.Char Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(6))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.Char? NullableValue { get; set; }
 
         public static void AssertModel(Charchar0MIWA actual, Charchar0MI expect, bool checkInInnerOnlyId)

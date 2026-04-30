@@ -7,12 +7,15 @@ namespace Tests
     public class NpgsqlIntervalintervalArray2MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483618))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval> Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483618))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval> NullableValue { get; set; }
 
         public static void AssertModel(NpgsqlIntervalintervalArray2MIWA actual, NpgsqlIntervalintervalArray2MI expect, bool checkInInnerOnlyId)

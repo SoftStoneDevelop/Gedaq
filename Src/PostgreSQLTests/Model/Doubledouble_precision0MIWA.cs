@@ -7,12 +7,15 @@ namespace Tests
     public class Doubledouble_precision0MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(8))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.Double Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(8))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.Double? NullableValue { get; set; }
 
         public static void AssertModel(Doubledouble_precision0MIWA actual, Doubledouble_precision0MI expect, bool checkInInnerOnlyId)

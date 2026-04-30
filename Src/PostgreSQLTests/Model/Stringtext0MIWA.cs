@@ -7,12 +7,15 @@ namespace Tests
     public class Stringtext0MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(19))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.String Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(19))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.String NullableValue { get; set; }
 
         public static void AssertModel(Stringtext0MIWA actual, Stringtext0MI expect, bool checkInInnerOnlyId)

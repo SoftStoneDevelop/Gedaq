@@ -7,12 +7,15 @@ namespace Tests
     public class Bytesmallint0MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(18))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.Byte Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(18))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.Byte? NullableValue { get; set; }
 
         public static void AssertModel(Bytesmallint0MIWA actual, Bytesmallint0MI expect, bool checkInInnerOnlyId)

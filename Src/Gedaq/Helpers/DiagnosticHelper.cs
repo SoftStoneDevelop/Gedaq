@@ -1,8 +1,5 @@
 ﻿using Gedaq.Constants;
 using Microsoft.CodeAnalysis;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Gedaq.Helpers
 {
@@ -25,7 +22,7 @@ namespace Gedaq.Helpers
                     defaultSeverity: diagnosticSeverity,
                     isEnabledByDefault: true),
                     Location.None,
-                    messageParameters);
+                    messageArgs: messageParameters);
 
                 context.ReportDiagnostic(diagnostic);
             }

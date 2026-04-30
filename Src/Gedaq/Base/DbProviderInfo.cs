@@ -70,8 +70,8 @@ namespace Gedaq.Base
 
                 var propertyType = propertySymbol.Type;
                 if (_knownProviderTypes.Contains(propertyType)
-                || IsKnownProviderTypeInner(propertyType)
-                || _definitelyNotKnownProviderTypes.Contains(propertyType))
+                    || IsKnownProviderTypeInner(propertyType)
+                    || _definitelyNotKnownProviderTypes.Contains(propertyType))
                 {
                     continue;
                 }
@@ -79,19 +79,24 @@ namespace Gedaq.Base
                 var pAttributes = propertySymbol.GetAttributes();
 
                 var known = false;
+                var ignore = false;
                 foreach (var pAttribute in pAttributes)
                 {
-                    if (!pAttribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "KnownTypeAttribute"))
+                    if (pAttribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "IgnorePropertyAttribute"))
                     {
-                        continue;
+                        ignore = true;
+                        break;
                     }
 
-                    _ = _knownProviderTypes.Add(propertyType);
-                    known = true;
-                    break;
+                    if (pAttribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "KnownTypeAttribute"))
+                    {
+                        _ = _knownProviderTypes.Add(propertyType);
+                        known = true;
+                        break;
+                    }
                 }
 
-                if (!known)
+                if (!known && !ignore)
                 {
                     _ = _definitelyNotKnownProviderTypes.Add(propertyType);
                 }

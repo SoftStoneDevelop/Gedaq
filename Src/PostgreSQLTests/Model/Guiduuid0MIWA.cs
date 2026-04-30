@@ -7,12 +7,15 @@ namespace Tests
     public class Guiduuid0MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(27))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.Guid Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(27))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.Guid? NullableValue { get; set; }
 
         public static void AssertModel(Guiduuid0MIWA actual, Guiduuid0MI expect, bool checkInInnerOnlyId)

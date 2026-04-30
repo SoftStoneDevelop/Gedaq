@@ -245,7 +245,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             var mapTypeInfo = binaryImport.MapTypeInfos[0];
             if (NpgsqlMapTypeHelper.IsKnownProviderType(mapTypeInfo.MapType))
             {
-                var field = mapTypeInfo.Aliases.Fields.First();
+                var field = mapTypeInfo.Aliases.Fields()[0];
                 var dbType = DbTypeParamPass(field);
                 if (mapTypeInfo.MapType.IsNullableType())
                 {
@@ -291,7 +291,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
             var aliases = new Stack<ItemPair>();
             var root = new ItemPair(rootAliase, rootMapTypeName, "item", 0);
             aliases.Push(root);
-            var needSkip = root.Aliases.AllFieldsOrderByPosition().Count;
+            var needSkip = root.Aliases.AllFields().Length;
             if (rootMapTypeName.IsNullableType())
             {
                 _methodCode.Append($@"
@@ -376,7 +376,7 @@ namespace {binaryImport.ContainTypeName.ContainingNamespace.GetFullNamespace()}
                     {GeneratorHelper.Tabs(pair.Tabs)}}}
                     {GeneratorHelper.Tabs(pair.Tabs)}else
                     {GeneratorHelper.Tabs(pair.Tabs)}{{");
-            var needSkip = pair.Aliases.AllFieldsOrderByPosition().Count;
+            var needSkip = pair.Aliases.AllFields().Length;
             for (var i = 0; i < needSkip; i++)
             {
                 _methodCode.Append($@"

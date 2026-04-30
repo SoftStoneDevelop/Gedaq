@@ -7,12 +7,15 @@ namespace Tests
     public class DecimalnumericArray1MIWA
     {
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(9))]
+        [Gedaq.Common.Attributes.Alias(order: 0)]
         public System.Int32 Id { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483635))]
+        [Gedaq.Common.Attributes.Alias(order: 1)]
         public System.Decimal[] Value { get; set; }
 
         [Gedaq.Npgsql.Attributes.DbType((NpgsqlTypes.NpgsqlDbType)(-2147483635))]
+        [Gedaq.Common.Attributes.Alias(order: 2)]
         public System.Decimal[] NullableValue { get; set; }
 
         public static void AssertModel(DecimalnumericArray1MIWA actual, DecimalnumericArray1MI expect, bool checkInInnerOnlyId)

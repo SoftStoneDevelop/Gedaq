@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
@@ -17,46 +18,49 @@ namespace TestsGenerator.Generators.PostgreSQL
             ModelValueStorage storage,
             string interfaceTypeName)
         {
-            ImportModelInnerConfig(
-                stringBuilder, 
-                model,
-                interfaceTypeName);
-
             SelectImportModelInnerConfig(
-                model, 
+                model,
                 stringBuilder,
                 interfaceTypeName);
 
-            var ordered = 
+            var ordered =
                 storage.Values
                 .OrderBy(or => or.IdValue)
                 .ToList();
 
-            ImportModelInnerTest(
-                order, 
-                model, 
-                stringBuilder, 
-                ordered,
-                interfaceTypeName);
+            foreach (var isDynamicQuery in ValueConstants.BoolValues)
+            {
+                ImportModelInnerConfig(
+                    stringBuilder,
+                    model,
+                    interfaceTypeName,
+                    isDynamicQuery: isDynamicQuery);
+
+                ImportModelInnerTest(
+                    order,
+                    model,
+                    stringBuilder,
+                    ordered,
+                    interfaceTypeName,
+                    isDynamicQuery: isDynamicQuery);
+            }
         }
 
         private static void ImportModelInnerConfig(
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
-            string interfaceTypeName)
+            string interfaceTypeName,
+            bool isDynamicQuery)
         {
+            var query =
+                isDynamicQuery ?
+                ValueConstants.NullValue :
+                ImportQuery(model);
+
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.BinaryImport(
-            query: @""
-COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
-(
-{model.ModelInner.IdColumnName},
-{model.ModelInner.NullableValueColumnName},
-{model.ModelInner.ValueColumnName}
-) 
-FROM STDIN (FORMAT BINARY)
-"",
-            methodName:""{_testName}"",
+            query: {query},
+            methodName:""{ImportMethodName(isDynamicQuery)}"",
             queryMapType: typeof({model.ModelInner.ClassName(false)}),
             dbTypes:
             new NpgsqlDbType[]
@@ -69,10 +73,28 @@ FROM STDIN (FORMAT BINARY)
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
             asPartInterface: typeof({interfaceTypeName}))]
-        private void {_testName}Config()
+        private void {ImportMethodName(isDynamicQuery)}Config()
         {{
         }}
 ");
+        }
+
+        private static string ImportMethodName(bool isDynamicQuery)
+        {
+            return $"{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}";
+        }
+
+        private static string ImportQuery(Model.ModelType model)
+        {
+            return $@"@""
+COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
+(
+{model.ModelInner.IdColumnName},
+{model.ModelInner.NullableValueColumnName},
+{model.ModelInner.ValueColumnName}
+) 
+FROM STDIN (FORMAT BINARY)
+""";
         }
 
         private static void SelectImportModelInnerConfig(
@@ -113,16 +135,22 @@ ORDER BY
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             List<ModelValue> storage,
-            string interfaceTypeName)
+            string interfaceTypeName,
+            bool isDynamicQuery)
         {
             if (storage.Count < 4)
             {
                 throw new System.ArgumentOutOfRangeException(nameof(storage));
             }
 
+            var query =
+                isDynamicQuery ?
+                $", {ImportQuery(model)}" :
+                string.Empty;
+
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task {_testName}Test()
+        public async Task {ImportMethodName(isDynamicQuery)}Test()
         {{
             await using (var connection = GlobalSetUp.GetConnection)
             {{
@@ -135,7 +163,7 @@ ORDER BY
             var expectCount = FillCollection(storage.Count / 2);
 
             stringBuilder.Append($@"
-                {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}(connection, importCollection);
+                {TypeHelper.ThisAsInterface(interfaceTypeName)}.{ImportMethodName(isDynamicQuery)}(connection, importCollection{query});
                 var models = {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}(connection);
                 Assert.That(models, Has.Count.EqualTo({expectCount}));
                 var set = new HashSet<long>();
@@ -152,7 +180,7 @@ ORDER BY
             var expectCount2 = FillCollection(storage.Count);
 
             stringBuilder.Append($@"
-                await {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Async(connection, importCollection);
+                await {TypeHelper.ThisAsInterface(interfaceTypeName)}.{ImportMethodName(isDynamicQuery)}Async(connection, importCollection{query});
                 models = await {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}Async(connection);
                 Assert.That(models, Has.Count.EqualTo({expectCount + expectCount2}));
                 for (var i = 0; i < models.Count(); i++)

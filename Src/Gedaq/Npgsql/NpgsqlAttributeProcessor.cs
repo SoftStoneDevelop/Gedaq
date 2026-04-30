@@ -99,7 +99,7 @@ namespace Gedaq.Npgsql
                         continue;
                     }
 
-                    base.ProcessAttribute(attributeData, containsType, readTemp.FormatParametrs);
+                    base.ProcessAttribute(attributeData, readTemp.FormatParametrs);
                 }
 
                 TryAddReadMethod(readTemp);
@@ -208,18 +208,23 @@ namespace Gedaq.Npgsql
             }
             else
             {
-                if (!query.IsDynamicQuery())
-                {
-                    // query must contain select or return
-                    query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);
-                }
-                else
+                if (query.IsDynamicQuery())
                 {
                     for (int i = 0; i < query.MapTypeInfos.Length; i++)
                     {
                         MapTypeInfo mapTypeInfo = query.MapTypeInfos[i];
                         mapTypeInfo.ParseAliasesFromType(_context, query.GetAliasOverride(i));
                     }
+                }
+                else
+                {
+                    // query must contain select or return
+                    query.MapTypeInfos[0].Aliases = _queryParser.Parse(ref query.Query, out _);
+                }
+
+                foreach (var mapTypeInfo in query.MapTypeInfos)
+                {
+                    mapTypeInfo.Aliases.FreezeFields(_context);
                 }
             }
 
@@ -384,12 +389,18 @@ namespace Gedaq.Npgsql
                 {
                     MapTypeInfo mapTypeInfo = binaryExport.MapTypeInfos[i];
                     mapTypeInfo.ParseAliasesFromType(_context, binaryExport.GetAliasOverride(i));
+                    binaryExport.SetAliases(mapTypeInfo, mapTypeInfo.Aliases, binaryExport.GetNpgSqlDbTypesOverride(i));
                 }
             }
             else
             {
                 var aliases = _binaryParser.Parse(ref binaryExport.Query);
-                binaryExport.SetAliases(binaryExport.MapTypeInfos[0], aliases);
+                binaryExport.SetAliases(binaryExport.MapTypeInfos[0], aliases, binaryExport.GetNpgSqlDbTypesOverride(0));
+            }
+
+            foreach (var mapTypeInfo in binaryExport.MapTypeInfos)
+            {
+                mapTypeInfo.Aliases.FreezeFields(_context);
             }
 
             _binaryExports.Add(binaryExport);
@@ -408,12 +419,18 @@ namespace Gedaq.Npgsql
                 {
                     MapTypeInfo mapTypeInfo = binaryImport.MapTypeInfos[i];
                     mapTypeInfo.ParseAliasesFromType(_context, binaryImport.GetAliasOverride(i));
+                    binaryImport.SetAliases(mapTypeInfo, mapTypeInfo.Aliases, binaryImport.GetNpgSqlDbTypesOverride(i));
                 }
             }
             else
             {
                 var aliases = _binaryParser.Parse(ref binaryImport.Query);
-                binaryImport.SetAliases(binaryImport.MapTypeInfos[0], aliases);
+                binaryImport.SetAliases(binaryImport.MapTypeInfos[0], aliases, binaryImport.GetNpgSqlDbTypesOverride(0));
+            }
+
+            foreach (var mapTypeInfo in binaryImport.MapTypeInfos)
+            {
+                mapTypeInfo.Aliases.FreezeFields(_context);
             }
 
             _binaryImports.Add(binaryImport);
