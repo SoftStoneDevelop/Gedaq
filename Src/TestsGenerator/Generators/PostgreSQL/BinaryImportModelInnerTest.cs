@@ -28,38 +28,48 @@ namespace TestsGenerator.Generators.PostgreSQL
             for (int i = 0; i < ValueConstants.BoolValues.Length; i++)
             {
                 bool isDynamicQuery = ValueConstants.BoolValues[i];
-
-                SelectImportModelInnerConfig(
-                    model,
-                    stringBuilder,
-                    interfaceTypeName,
-                    isDynamicQuery);
-
-                ImportModelInnerConfig(
-                    stringBuilder,
-                    model,
-                    interfaceTypeName,
-                    isDynamicQuery: isDynamicQuery);
-
                 var isDynamicQueryLastIteration = i == ValueConstants.BoolValues.Length - 1;
-                for (int j = 0; j < ValueConstants.BoolValues.Length; j++)
+
+                for (int k = 0; k < ValueConstants.BoolValues.Length; k++)
                 {
-                    bool isAsync = ValueConstants.BoolValues[j];
-                    var isAsyncLastIteration = j == ValueConstants.BoolValues.Length - 1;
-                    ImportModelInnerTest(
-                        order,
+                    bool isOverrideDbTypes = ValueConstants.BoolValues[k];
+                    var isOverrideDbTypesLastIteration = k == ValueConstants.BoolValues.Length - 1;
+
+                    SelectImportModelInnerConfig(
                         model,
                         stringBuilder,
-                        ordered,
                         interfaceTypeName,
-                        ref startIndex,
-                        2,
-                        ref totalItemsInDb,
-                        isDynamicQueryLastIteration && isAsyncLastIteration,
-                        isDynamicQuery: isDynamicQuery,
-                        isAsync: isAsync);
+                        isDynamicQuery,
+                        isOverrideDbTypes: isOverrideDbTypes);
 
-                    order++;
+                    ImportModelInnerConfig(
+                        stringBuilder,
+                        model,
+                        interfaceTypeName,
+                        isDynamicQuery: isDynamicQuery,
+                        isOverrideDbTypes: isOverrideDbTypes);
+
+                    for (int j = 0; j < ValueConstants.BoolValues.Length; j++)
+                    {
+                        bool isAsync = ValueConstants.BoolValues[j];
+                        var isAsyncLastIteration = j == ValueConstants.BoolValues.Length - 1;
+
+                        ImportModelInnerTest(
+                            order,
+                            model,
+                            stringBuilder,
+                            ordered,
+                            interfaceTypeName,
+                            ref startIndex,
+                            2,
+                            ref totalItemsInDb,
+                            isDynamicQueryLastIteration && isAsyncLastIteration && isOverrideDbTypesLastIteration,
+                            isDynamicQuery: isDynamicQuery,
+                            isAsync: isAsync,
+                            isOverrideDbTypes: isOverrideDbTypes);
+
+                        order++;
+                    }
                 }
             }
         }
@@ -68,44 +78,53 @@ namespace TestsGenerator.Generators.PostgreSQL
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             string interfaceTypeName,
-            bool isDynamicQuery)
+            bool isDynamicQuery,
+            bool isOverrideDbTypes)
         {
-            var classWithAtr = isDynamicQuery;
+            var classWithAtr = isDynamicQuery || !isOverrideDbTypes;
             var query =
                 isDynamicQuery ?
                 ValueConstants.NullValue :
-                ImportQuery(model, isDynamicQuery);
+                ImportQuery(model, isDynamicQuery, isOverrideDbTypes);
 
-            stringBuilder.Append($@"
-[Gedaq.Npgsql.Attributes.BinaryImport(
-            query: {query},
-            methodName:""{ImportMethodName(isDynamicQuery)}"",
-            queryMapType: typeof({model.ModelInner.ClassName(isDynamicQuery, classWithAtr)}),
-            dbTypes:
+            var dbTypes =
+                isOverrideDbTypes ?
+                $@"
             new NpgsqlDbType[]
             {{
                 {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
                 {model.ModelInner.TypeInfo.SpecialDbTypeStr()},
                 {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
-            }},
+            }}" :
+            ValueConstants.NullValue;
+
+            stringBuilder.Append($@"
+[Gedaq.Npgsql.Attributes.BinaryImport(
+            query: {query},
+            methodName:""{ImportMethodName(isDynamicQuery, isOverrideDbTypes)}"",
+            queryMapType: typeof({model.ModelInner.ClassName(isDynamicQuery, classWithAtr)}),
+            dbTypes: {dbTypes},
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
             asPartInterface: typeof({interfaceTypeName}))]
-        private void {ImportMethodName(isDynamicQuery)}Config()
+        private void {ImportMethodName(isDynamicQuery, isOverrideDbTypes)}Config()
         {{
         }}
 ");
         }
 
-        private static string ImportMethodName(bool isDynamicQuery)
+        private static string ImportMethodName(bool isDynamicQuery, bool isOverrideDbTypes)
         {
-            return $"{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}";
+            return $"{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{ValueConstants.WithAttributePrefix(isOverrideDbTypes)}{_testName}";
         }
 
-        private static string ImportQuery(Model.ModelType model, bool isDynamicQuery)
+        private static string ImportQuery(
+            Model.ModelType model,
+            bool isDynamicQuery,
+            bool isOverrideDbTypes)
         {
-            var classWithAtr = isDynamicQuery;
+            var classWithAtr = isDynamicQuery || !isOverrideDbTypes;
             if (classWithAtr)
             {
                 return $@"@""
@@ -136,9 +155,10 @@ FROM STDIN (FORMAT BINARY)
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             string interfaceTypeName,
-            bool isDynamicQuery)
+            bool isDynamicQuery,
+            bool isOverrideDbTypes)
         {
-            var classWithAtr = isDynamicQuery;
+            var classWithAtr = isDynamicQuery || !isOverrideDbTypes;
             var query = $@"
 @""
 SELECT
@@ -154,22 +174,22 @@ ORDER BY
             stringBuilder.Append($@"
 [Gedaq.DbConnection.Attributes.Query(
             query: {query},
-            methodName:""{BinarySelectMethodName(isDynamicQuery)}"",
+            methodName:""{BinarySelectMethodName(isDynamicQuery, isOverrideDbTypes)}"",
             queryMapTypes: [typeof({model.ModelInner.ClassName(isDynamicQuery, classWithAtr)})],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
             asPartInterface: typeof({interfaceTypeName}))]
-        private void {BinarySelectMethodName(isDynamicQuery)}Config()
+        private void {BinarySelectMethodName(isDynamicQuery, isOverrideDbTypes)}Config()
         {{
         }}
 ");
         }
 
-        private static string BinarySelectMethodName(bool isDynamicQuery)
+        private static string BinarySelectMethodName(bool isDynamicQuery, bool isOverrideDbTypes)
         {
-            return $"{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}Select{_testName}";
+            return $"{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{ValueConstants.WithAttributePrefix(isOverrideDbTypes)}Select{_testName}";
         }
 
         private static void ImportModelInnerTest(
@@ -183,17 +203,18 @@ ORDER BY
             ref int totalCount,
             bool toEndStorage,
             bool isDynamicQuery,
-            bool isAsync)
+            bool isAsync,
+            bool isOverrideDbTypes)
         {
             System.ArgumentOutOfRangeException.ThrowIfGreaterThan(startIndex + count, storage.Count);
 
-            var classWithAtr = isDynamicQuery;
+            var classWithAtr = isDynamicQuery || !isOverrideDbTypes;
             var await = isAsync ? "await " : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
 
             var query =
                 isDynamicQuery ?
-                $", {ImportQuery(model, isDynamicQuery)}" :
+                $", {ImportQuery(model, isDynamicQuery, classWithAtr)}" :
                 string.Empty;
 
             var originStartIndex = startIndex;
@@ -226,7 +247,7 @@ ORDER BY
             totalCount += addCount;
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public {async.ToLowerInvariant()} {(isAsync ? "Task" : "void")} {ImportMethodName(isDynamicQuery)}{async}Test()
+        public {async.ToLowerInvariant()} {(isAsync ? "Task" : "void")} {ImportMethodName(isDynamicQuery, isOverrideDbTypes)}{async}Test()
         {{
             {await}using (var connection = GlobalSetUp.GetConnection)
             {{
@@ -243,8 +264,8 @@ ORDER BY
                     importCollection.Add({ModelGenerator.ConvertToWAOrSelf(model.ModelInner, "importModel", classWithAtr)});
                 }}
 
-                {await}{TypeHelper.ThisAsInterface(interfaceTypeName)}.{ImportMethodName(isDynamicQuery)}{async}(connection, importCollection{query});
-                var models = {await}{TypeHelper.ThisAsInterface(interfaceTypeName)}.{BinarySelectMethodName(isDynamicQuery)}{async}(connection);
+                {await}{TypeHelper.ThisAsInterface(interfaceTypeName)}.{ImportMethodName(isDynamicQuery, isOverrideDbTypes)}{async}(connection, importCollection{query});
+                var models = {await}{TypeHelper.ThisAsInterface(interfaceTypeName)}.{BinarySelectMethodName(isDynamicQuery, isOverrideDbTypes)}{async}(connection);
                 Assert.That(models, Has.Count.EqualTo({totalCount}));
                 var set = new HashSet<long>();
                 for (var i = 0; i < models.Count(); i++)

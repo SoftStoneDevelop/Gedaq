@@ -17,7 +17,7 @@ namespace TestsGenerator.Generators
         public async Task Generate(Model.ModelType model, Database database, string destinationFolder)
         {
             _stringBuilder.Clear();
-            var storage = InitStorage(model, 30);
+            var storage = InitStorage(model, 35);
 
             var interfaceTypeName = InterfaceName(model);
             Start(model, database);
@@ -88,8 +88,9 @@ namespace TestsGenerator.Generators
                     EndRegion();
 
                     StartRegion("BinaryImportModel");
+                    order += 1;
                     BinaryImportModelTest.Generate(
-                        order + 1, 
+                        ref order, 
                         _stringBuilder, 
                         model, 
                         storage,

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
@@ -11,7 +12,7 @@ namespace TestsGenerator.Generators.PostgreSQL
         private const string _testName = "ImportModel";
 
         public static void Generate(
-            int order,
+            ref int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
@@ -27,13 +28,29 @@ namespace TestsGenerator.Generators.PostgreSQL
                 stringBuilder,
                 interfaceTypeName);
 
+            var startIndex = 0;
             var ordered = storage.Values.OrderBy(or => or.IdValue).ToList();
-            ImportModelTest(
-                order, 
-                model, 
-                stringBuilder, 
-                ordered,
-                interfaceTypeName);
+
+            var totalItemsInDb = 0;
+            for (int j = 0; j < ValueConstants.BoolValues.Length; j++)
+            {
+                bool isAsync = ValueConstants.BoolValues[j];
+                var isAsyncLastIteration = j == ValueConstants.BoolValues.Length - 1;
+
+                ImportModelTest(
+                    order,
+                    model,
+                    stringBuilder,
+                    ordered,
+                    interfaceTypeName,
+                    isAsync: isAsync,
+                    startIndex: ref startIndex,
+                    count: 10,
+                    totalCount: ref totalItemsInDb,
+                    toEndStorage: isAsyncLastIteration);
+
+                order++;
+            }
         }
 
         private static void ImportModelConfig(
@@ -120,72 +137,66 @@ ORDER BY
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
             List<ModelValue> storage,
-            string interfaceTypeName)
+            string interfaceTypeName,
+            bool isAsync,
+            ref int startIndex,
+            int count,
+            ref int totalCount,
+            bool toEndStorage)
         {
-            if (storage.Count < 4)
+            System.ArgumentOutOfRangeException.ThrowIfGreaterThan(startIndex + count, storage.Count);
+
+            var await = isAsync ? "await " : string.Empty;
+            var async = isAsync ? "Async" : string.Empty;
+
+            var originStartIndex = startIndex;
+            var addCount = 0;
+            for (int i = startIndex; i < storage.Count; i++)
             {
-                throw new System.ArgumentOutOfRangeException(nameof(storage));
+                if (!toEndStorage && addCount == count)
+                {
+                    break;
+                }
+
+                startIndex++;
+                addCount++;
             }
 
+            var endIndex = startIndex;
+            if (addCount < count)
+            {
+                throw new System.Exception("Storage note have enough items");
+            }
+
+            totalCount += addCount;
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task {_testName}Test()
+        public {async.ToLowerInvariant()} {(isAsync ? "Task" : "void")} {_testName}{async}Test()
         {{
-            await using (var connection = GlobalSetUp.GetConnection)
+            {await}using (var connection = GlobalSetUp.GetConnection)
             {{
-                await connection.OpenAsync();
-");
-            var index = 0;
-            stringBuilder.Append($@"
-                var importCollection = new List<{model.ClassName(false)}>({storage.Count / 2});
-");
-            var expectCount = FillCollection(storage.Count / 2);
+                {await}connection.Open{async}();
+                var importCollection = new List<{model.ClassName(false)}>();
+                for (int i = {originStartIndex}; i < {endIndex}; i++)
+                {{
+                    var importModel = {TestsPart.TestDataArrayName}[i];
+                    importCollection.Add(importModel);
+                }}
 
-            stringBuilder.Append($@"
-                {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}(connection, importCollection);
-                var models = {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}(connection).ToList();
-                Assert.That(models, Has.Count.EqualTo({expectCount}));
-");
-            var indexCollection = 0;
-            for (; indexCollection < storage.Count / 2; indexCollection++)
-            {
-                stringBuilder.Append($@"
-                {model.ClassName(false)}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}], false);");
-            }
-
-            stringBuilder.Append($@"
-                importCollection.Clear();
-");
-            var expectCount2 = FillCollection(storage.Count);
-
-            stringBuilder.Append($@"
-                await {TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}Async(connection, importCollection);
-                models = await {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}Async(connection);
-                Assert.That(models, Has.Count.EqualTo({expectCount + expectCount2}));
-");
-            indexCollection = 0;
-            for (; indexCollection < storage.Count; indexCollection++)
-            {
-                stringBuilder.Append($@"
-                {model.ClassName(false)}.{ModelGenerator.AssertMethodName}(models[{indexCollection}],{TestsPart.TestDataArrayName}[{indexCollection}], false);");
-            }
-
-            stringBuilder.Append($@"
+                {await}{TypeHelper.ThisAsInterface(interfaceTypeName)}.{_testName}{async}(connection, importCollection);
+                var models = {await}{TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}{async}(connection);
+                Assert.That(models, Has.Count.EqualTo({totalCount}));
+                var set = new HashSet<long>();
+                for (var i = 0; i < models.Count(); i++)
+                {{
+                    var actual = models[i];
+                    var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.IdName} == actual.{model.IdName});
+                    {model.ClassName(false)}.{ModelGenerator.AssertMethodName}(actual, expect, false);
+                    Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
+                }}
             }}
         }}
 ");
-            int FillCollection(int end)
-            {
-                int count = 0;
-                for (; index < end; index++)
-                {
-                    count++;
-                    stringBuilder.Append($@"
-                    importCollection.Add({TestsPart.TestDataArrayName}[{index}]);");
-                }
-
-                return count;
-            }
         }
     }
 }

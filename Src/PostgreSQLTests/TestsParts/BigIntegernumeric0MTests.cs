@@ -30,287 +30,332 @@ namespace Tests
         {
             new BigIntegernumeric0M
 {
-    Id = 4,
-    Value = new System.Numerics.BigInteger(1382215236322383847L),
+    Id = 8,
+    Value = new System.Numerics.BigInteger(6707116901723006487L),
     ModelInner = null,
     NullableValue = null,
 },
             new BigIntegernumeric0M
 {
-    Id = 9,
-    Value = new System.Numerics.BigInteger(4826934197229547153L),
-    ModelInner = new BigIntegernumeric0MI
-{
-    Id = 3,
-    Value = new System.Numerics.BigInteger(3703027886457332134L),
-    NullableValue = null,
-},
-    NullableValue = new System.Numerics.BigInteger(4151479429984842978L),
-},
-            new BigIntegernumeric0M
-{
-    Id = 18,
-    Value = new System.Numerics.BigInteger(3326957719092086962L),
-    ModelInner = null,
-    NullableValue = new System.Numerics.BigInteger(8554294256459815419L),
-},
-            new BigIntegernumeric0M
-{
-    Id = 25,
-    Value = new System.Numerics.BigInteger(5584739859106484176L),
-    ModelInner = new BigIntegernumeric0MI
-{
-    Id = 5,
-    Value = new System.Numerics.BigInteger(429732668610178682L),
-    NullableValue = new System.Numerics.BigInteger(7999471492210938542L),
-},
-    NullableValue = null,
-},
-            new BigIntegernumeric0M
-{
-    Id = 27,
-    Value = new System.Numerics.BigInteger(8133394918489649499L),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new BigIntegernumeric0M
-{
-    Id = 33,
-    Value = new System.Numerics.BigInteger(1563532238544888570L),
+    Id = 17,
+    Value = new System.Numerics.BigInteger(3439969926195184919L),
     ModelInner = new BigIntegernumeric0MI
 {
     Id = 9,
-    Value = new System.Numerics.BigInteger(1548340459863875077L),
-    NullableValue = new System.Numerics.BigInteger(7456937442254838054L),
+    Value = new System.Numerics.BigInteger(24451264572782184L),
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new BigIntegernumeric0M
 {
-    Id = 38,
-    Value = new System.Numerics.BigInteger(9009481760266297899L),
+    Id = 20,
+    Value = new System.Numerics.BigInteger(9206440506450260431L),
     ModelInner = null,
     NullableValue = null,
 },
             new BigIntegernumeric0M
 {
-    Id = 42,
-    Value = new System.Numerics.BigInteger(3932920592653100303L),
+    Id = 28,
+    Value = new System.Numerics.BigInteger(23778968394099849L),
     ModelInner = new BigIntegernumeric0MI
 {
-    Id = 13,
-    Value = new System.Numerics.BigInteger(4797242181623417705L),
-    NullableValue = new System.Numerics.BigInteger(1677328058598870018L),
+    Id = 16,
+    Value = new System.Numerics.BigInteger(8462815356655069277L),
+    NullableValue = null,
 },
+    NullableValue = null,
+},
+            new BigIntegernumeric0M
+{
+    Id = 36,
+    Value = new System.Numerics.BigInteger(8636483569941093082L),
+    ModelInner = null,
+    NullableValue = new System.Numerics.BigInteger(7714815289898409239L),
+},
+            new BigIntegernumeric0M
+{
+    Id = 37,
+    Value = new System.Numerics.BigInteger(6282552703538758431L),
+    ModelInner = new BigIntegernumeric0MI
+{
+    Id = 17,
+    Value = new System.Numerics.BigInteger(5978090670786345128L),
+    NullableValue = new System.Numerics.BigInteger(7779382433359537921L),
+},
+    NullableValue = null,
+},
+            new BigIntegernumeric0M
+{
+    Id = 40,
+    Value = new System.Numerics.BigInteger(6828207113897961122L),
+    ModelInner = null,
     NullableValue = null,
 },
             new BigIntegernumeric0M
 {
     Id = 45,
-    Value = new System.Numerics.BigInteger(6931518220358705206L),
-    ModelInner = null,
-    NullableValue = new System.Numerics.BigInteger(1441288182182972347L),
+    Value = new System.Numerics.BigInteger(4648873694570244781L),
+    ModelInner = new BigIntegernumeric0MI
+{
+    Id = 25,
+    Value = new System.Numerics.BigInteger(4453383296228440935L),
+    NullableValue = new System.Numerics.BigInteger(2034937571029151560L),
+},
+    NullableValue = null,
 },
             new BigIntegernumeric0M
 {
     Id = 49,
-    Value = new System.Numerics.BigInteger(4824983886014687043L),
+    Value = new System.Numerics.BigInteger(1686688567017907740L),
+    ModelInner = null,
+    NullableValue = new System.Numerics.BigInteger(2089846156653225412L),
+},
+            new BigIntegernumeric0M
+{
+    Id = 54,
+    Value = new System.Numerics.BigInteger(6801496802347426225L),
     ModelInner = new BigIntegernumeric0MI
 {
-    Id = 17,
-    Value = new System.Numerics.BigInteger(5914507763310042401L),
-    NullableValue = null,
+    Id = 27,
+    Value = new System.Numerics.BigInteger(4193470538206175570L),
+    NullableValue = new System.Numerics.BigInteger(4953611255816945991L),
 },
     NullableValue = null,
 },
             new BigIntegernumeric0M
 {
-    Id = 58,
-    Value = new System.Numerics.BigInteger(4668414288095111771L),
+    Id = 56,
+    Value = new System.Numerics.BigInteger(6409818358836548748L),
     ModelInner = null,
-    NullableValue = new System.Numerics.BigInteger(2423628097346543615L),
+    NullableValue = null,
+},
+            new BigIntegernumeric0M
+{
+    Id = 64,
+    Value = new System.Numerics.BigInteger(4569345309845986228L),
+    ModelInner = new BigIntegernumeric0MI
+{
+    Id = 32,
+    Value = new System.Numerics.BigInteger(3887520075730211567L),
+    NullableValue = new System.Numerics.BigInteger(5450322234557442041L),
+},
+    NullableValue = new System.Numerics.BigInteger(7233745212475998921L),
 },
             new BigIntegernumeric0M
 {
     Id = 66,
-    Value = new System.Numerics.BigInteger(8634745711999189732L),
-    ModelInner = new BigIntegernumeric0MI
-{
-    Id = 26,
-    Value = new System.Numerics.BigInteger(7082022119246590121L),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new BigIntegernumeric0M
-{
-    Id = 67,
-    Value = new System.Numerics.BigInteger(3562819421626173535L),
+    Value = new System.Numerics.BigInteger(6456318539139670249L),
     ModelInner = null,
-    NullableValue = new System.Numerics.BigInteger(6469066963084990428L),
-},
-            new BigIntegernumeric0M
-{
-    Id = 72,
-    Value = new System.Numerics.BigInteger(1550441393094118338L),
-    ModelInner = new BigIntegernumeric0MI
-{
-    Id = 29,
-    Value = new System.Numerics.BigInteger(1785075075783246744L),
-    NullableValue = new System.Numerics.BigInteger(4323237824665080417L),
-},
-    NullableValue = null,
+    NullableValue = new System.Numerics.BigInteger(1169557556132121706L),
 },
             new BigIntegernumeric0M
 {
     Id = 75,
-    Value = new System.Numerics.BigInteger(6252387963832782238L),
-    ModelInner = null,
-    NullableValue = new System.Numerics.BigInteger(4541800767371542501L),
-},
-            new BigIntegernumeric0M
-{
-    Id = 79,
-    Value = new System.Numerics.BigInteger(7467993139457687171L),
+    Value = new System.Numerics.BigInteger(6864262511813838986L),
     ModelInner = new BigIntegernumeric0MI
 {
-    Id = 36,
-    Value = new System.Numerics.BigInteger(5102302425570127492L),
-    NullableValue = new System.Numerics.BigInteger(5363192623964866347L),
+    Id = 38,
+    Value = new System.Numerics.BigInteger(5109166064661397616L),
+    NullableValue = new System.Numerics.BigInteger(3077437397436374489L),
 },
-    NullableValue = new System.Numerics.BigInteger(1809296157377322833L),
+    NullableValue = null,
 },
             new BigIntegernumeric0M
 {
-    Id = 80,
-    Value = new System.Numerics.BigInteger(1330806611797071271L),
+    Id = 78,
+    Value = new System.Numerics.BigInteger(9133836670562858049L),
     ModelInner = null,
-    NullableValue = new System.Numerics.BigInteger(519625621181084232L),
+    NullableValue = new System.Numerics.BigInteger(7701898230797770543L),
+},
+            new BigIntegernumeric0M
+{
+    Id = 83,
+    Value = new System.Numerics.BigInteger(2105441205177626621L),
+    ModelInner = new BigIntegernumeric0MI
+{
+    Id = 40,
+    Value = new System.Numerics.BigInteger(5620951052833282418L),
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new BigIntegernumeric0M
+{
+    Id = 86,
+    Value = new System.Numerics.BigInteger(8567886244835037839L),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BigIntegernumeric0M
+{
+    Id = 87,
+    Value = new System.Numerics.BigInteger(8137583026945023658L),
+    ModelInner = new BigIntegernumeric0MI
+{
+    Id = 49,
+    Value = new System.Numerics.BigInteger(8013456206151816857L),
+    NullableValue = null,
+},
+    NullableValue = new System.Numerics.BigInteger(6873831988725190708L),
 },
             new BigIntegernumeric0M
 {
     Id = 89,
-    Value = new System.Numerics.BigInteger(7979253031959625141L),
+    Value = new System.Numerics.BigInteger(5509095045061101439L),
+    ModelInner = null,
+    NullableValue = new System.Numerics.BigInteger(7963328552887888292L),
+},
+            new BigIntegernumeric0M
+{
+    Id = 95,
+    Value = new System.Numerics.BigInteger(6729743313328970202L),
     ModelInner = new BigIntegernumeric0MI
 {
-    Id = 41,
-    Value = new System.Numerics.BigInteger(4386956208558109369L),
-    NullableValue = null,
+    Id = 50,
+    Value = new System.Numerics.BigInteger(5553119818501163412L),
+    NullableValue = new System.Numerics.BigInteger(699355129213488506L),
 },
-    NullableValue = null,
-},
-            new BigIntegernumeric0M
-{
-    Id = 90,
-    Value = new System.Numerics.BigInteger(7094160161813614139L),
-    ModelInner = null,
-    NullableValue = new System.Numerics.BigInteger(1574784229231678343L),
-},
-            new BigIntegernumeric0M
-{
-    Id = 93,
-    Value = new System.Numerics.BigInteger(5768127120814989129L),
-    ModelInner = new BigIntegernumeric0MI
-{
-    Id = 48,
-    Value = new System.Numerics.BigInteger(6447029853535881995L),
-    NullableValue = new System.Numerics.BigInteger(8548035057299120441L),
-},
-    NullableValue = new System.Numerics.BigInteger(3691753764944675329L),
-},
-            new BigIntegernumeric0M
-{
-    Id = 101,
-    Value = new System.Numerics.BigInteger(103757708915043928L),
-    ModelInner = null,
     NullableValue = null,
 },
             new BigIntegernumeric0M
 {
     Id = 104,
-    Value = new System.Numerics.BigInteger(4224547025814688769L),
-    ModelInner = new BigIntegernumeric0MI
-{
-    Id = 50,
-    Value = new System.Numerics.BigInteger(8847609218771273576L),
-    NullableValue = new System.Numerics.BigInteger(1299408741756277111L),
-},
-    NullableValue = null,
+    Value = new System.Numerics.BigInteger(7249141285674414875L),
+    ModelInner = null,
+    NullableValue = new System.Numerics.BigInteger(1733855159398629895L),
 },
             new BigIntegernumeric0M
 {
-    Id = 106,
-    Value = new System.Numerics.BigInteger(337728694285615280L),
+    Id = 109,
+    Value = new System.Numerics.BigInteger(7934269198635515323L),
+    ModelInner = new BigIntegernumeric0MI
+{
+    Id = 57,
+    Value = new System.Numerics.BigInteger(256769766062400750L),
+    NullableValue = null,
+},
+    NullableValue = new System.Numerics.BigInteger(4546163159946750294L),
+},
+            new BigIntegernumeric0M
+{
+    Id = 114,
+    Value = new System.Numerics.BigInteger(709092731511077176L),
     ModelInner = null,
     NullableValue = null,
 },
             new BigIntegernumeric0M
 {
-    Id = 108,
-    Value = new System.Numerics.BigInteger(8618456243484244855L),
+    Id = 119,
+    Value = new System.Numerics.BigInteger(7194923665500298171L),
     ModelInner = new BigIntegernumeric0MI
 {
-    Id = 54,
-    Value = new System.Numerics.BigInteger(1491773760760452662L),
-    NullableValue = null,
+    Id = 64,
+    Value = new System.Numerics.BigInteger(1308486289057053827L),
+    NullableValue = new System.Numerics.BigInteger(7124877676005051804L),
 },
-    NullableValue = new System.Numerics.BigInteger(3511243612661753771L),
+    NullableValue = new System.Numerics.BigInteger(5980168464906798161L),
 },
             new BigIntegernumeric0M
 {
-    Id = 111,
-    Value = new System.Numerics.BigInteger(7557463456137295813L),
+    Id = 122,
+    Value = new System.Numerics.BigInteger(3905791913448947062L),
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = new System.Numerics.BigInteger(8127859407145305534L),
 },
             new BigIntegernumeric0M
 {
-    Id = 115,
-    Value = new System.Numerics.BigInteger(8146627649377457744L),
-    ModelInner = new BigIntegernumeric0MI
-{
-    Id = 62,
-    Value = new System.Numerics.BigInteger(4308279388356371890L),
-    NullableValue = new System.Numerics.BigInteger(230849348276911933L),
-},
-    NullableValue = new System.Numerics.BigInteger(6964480630486702439L),
-},
-            new BigIntegernumeric0M
-{
-    Id = 116,
-    Value = new System.Numerics.BigInteger(5597427951926505980L),
-    ModelInner = null,
-    NullableValue = new System.Numerics.BigInteger(4722688926955322988L),
-},
-            new BigIntegernumeric0M
-{
-    Id = 120,
-    Value = new System.Numerics.BigInteger(3299005533350083302L),
-    ModelInner = new BigIntegernumeric0MI
-{
-    Id = 63,
-    Value = new System.Numerics.BigInteger(5776329816632034880L),
-    NullableValue = new System.Numerics.BigInteger(1968581483555843726L),
-},
-    NullableValue = new System.Numerics.BigInteger(783398428052634311L),
-},
-            new BigIntegernumeric0M
-{
-    Id = 125,
-    Value = new System.Numerics.BigInteger(3720841368598372875L),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new BigIntegernumeric0M
-{
-    Id = 133,
-    Value = new System.Numerics.BigInteger(4752890513573100488L),
+    Id = 123,
+    Value = new System.Numerics.BigInteger(22550831479904850L),
     ModelInner = new BigIntegernumeric0MI
 {
     Id = 67,
-    Value = new System.Numerics.BigInteger(3775657775816525350L),
+    Value = new System.Numerics.BigInteger(6198212733921934658L),
     NullableValue = null,
 },
+    NullableValue = null,
+},
+            new BigIntegernumeric0M
+{
+    Id = 126,
+    Value = new System.Numerics.BigInteger(156233298795660772L),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BigIntegernumeric0M
+{
+    Id = 131,
+    Value = new System.Numerics.BigInteger(2580954353671845553L),
+    ModelInner = new BigIntegernumeric0MI
+{
+    Id = 73,
+    Value = new System.Numerics.BigInteger(8371375659454476403L),
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new BigIntegernumeric0M
+{
+    Id = 140,
+    Value = new System.Numerics.BigInteger(2722932879203427089L),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BigIntegernumeric0M
+{
+    Id = 142,
+    Value = new System.Numerics.BigInteger(3561290229645872635L),
+    ModelInner = new BigIntegernumeric0MI
+{
+    Id = 78,
+    Value = new System.Numerics.BigInteger(1888994238239803488L),
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new BigIntegernumeric0M
+{
+    Id = 148,
+    Value = new System.Numerics.BigInteger(1488667790006258683L),
+    ModelInner = null,
+    NullableValue = new System.Numerics.BigInteger(4784223480955331836L),
+},
+            new BigIntegernumeric0M
+{
+    Id = 151,
+    Value = new System.Numerics.BigInteger(1639843841045938454L),
+    ModelInner = new BigIntegernumeric0MI
+{
+    Id = 87,
+    Value = new System.Numerics.BigInteger(4928397100802244241L),
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new BigIntegernumeric0M
+{
+    Id = 158,
+    Value = new System.Numerics.BigInteger(1161600609833553827L),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BigIntegernumeric0M
+{
+    Id = 162,
+    Value = new System.Numerics.BigInteger(2329153174376912600L),
+    ModelInner = new BigIntegernumeric0MI
+{
+    Id = 95,
+    Value = new System.Numerics.BigInteger(8454102609900103207L),
+    NullableValue = null,
+},
+    NullableValue = new System.Numerics.BigInteger(6203816688094898963L),
+},
+            new BigIntegernumeric0M
+{
+    Id = 163,
+    Value = new System.Numerics.BigInteger(5921749757524197792L),
+    ModelInner = null,
     NullableValue = null,
 },
         };
@@ -550,6 +595,12 @@ VALUES (
                 Assert.That(changedRows, Is.EqualTo(1));
 
                 changedRows = await ((IBigIntegerSingleTypenumeric)this).DbConnectionInsertInnerModelAsync(connection, _testData[29].ModelInner.Id, _testData[29].ModelInner.Value, _testData[29].ModelInner.NullableValue);
+                Assert.That(changedRows, Is.EqualTo(1));
+
+                changedRows = await ((IBigIntegerSingleTypenumeric)this).DbConnectionInsertInnerModelAsync(connection, _testData[31].ModelInner.Id, _testData[31].ModelInner.Value, _testData[31].ModelInner.NullableValue);
+                Assert.That(changedRows, Is.EqualTo(1));
+
+                changedRows = await ((IBigIntegerSingleTypenumeric)this).DbConnectionInsertInnerModelAsync(connection, _testData[33].ModelInner.Id, _testData[33].ModelInner.Value, _testData[33].ModelInner.NullableValue);
                 Assert.That(changedRows, Is.EqualTo(1));
 
             }
@@ -911,6 +962,21 @@ VALUES (
                 changedRows = await ((IBigIntegerSingleTypenumeric)this).DbConnectionInsertModelAsync(connection, _testData[29].Id, _testData[29].Value, _testData[29].NullableValue, _testData[29].ModelInner == null ? null : _testData[29].ModelInner.Id);
                 Assert.That(changedRows, Is.EqualTo(1));
 
+                changedRows = await ((IBigIntegerSingleTypenumeric)this).DbConnectionInsertModelAsync(connection, _testData[30].Id, _testData[30].Value, _testData[30].NullableValue, _testData[30].ModelInner == null ? null : _testData[30].ModelInner.Id);
+                Assert.That(changedRows, Is.EqualTo(1));
+
+                changedRows = await ((IBigIntegerSingleTypenumeric)this).DbConnectionInsertModelAsync(connection, _testData[31].Id, _testData[31].Value, _testData[31].NullableValue, _testData[31].ModelInner == null ? null : _testData[31].ModelInner.Id);
+                Assert.That(changedRows, Is.EqualTo(1));
+
+                changedRows = await ((IBigIntegerSingleTypenumeric)this).DbConnectionInsertModelAsync(connection, _testData[32].Id, _testData[32].Value, _testData[32].NullableValue, _testData[32].ModelInner == null ? null : _testData[32].ModelInner.Id);
+                Assert.That(changedRows, Is.EqualTo(1));
+
+                changedRows = await ((IBigIntegerSingleTypenumeric)this).DbConnectionInsertModelAsync(connection, _testData[33].Id, _testData[33].Value, _testData[33].NullableValue, _testData[33].ModelInner == null ? null : _testData[33].ModelInner.Id);
+                Assert.That(changedRows, Is.EqualTo(1));
+
+                changedRows = await ((IBigIntegerSingleTypenumeric)this).DbConnectionInsertModelAsync(connection, _testData[34].Id, _testData[34].Value, _testData[34].NullableValue, _testData[34].ModelInner == null ? null : _testData[34].ModelInner.Id);
+                Assert.That(changedRows, Is.EqualTo(1));
+
             }
         }
 
@@ -959,14 +1025,14 @@ ORDER BY
                 var models1 = new List<FlatBigIntegernumeric0M>();
                 var models2 = new List<FlatBigIntegernumeric0M>();
                 await ((IBigIntegerSingleTypenumeric)this).MMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
-                Assert.That(models1, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models1, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models1[i],_testData[i], false);
                 }
 
-                Assert.That(models2, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models2, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models2[i],_testData[i], false);
                 }
@@ -998,14 +1064,14 @@ ORDER BY
                 var models1 = new List<FlatBigIntegernumeric0M>();
                 var models2 = new List<FlatBigIntegernumeric0M>();
                 ((IBigIntegerSingleTypenumeric)this).MMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
-                Assert.That(models1, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models1, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models1[i],_testData[i], false);
                 }
 
-                Assert.That(models2, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models2, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models2[i],_testData[i], false);
                 }
@@ -1048,8 +1114,8 @@ ORDER BY
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
                 var models = await ((IBigIntegerSingleTypenumeric)this).DynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -1076,8 +1142,8 @@ ORDER BY
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
                 var models = ((IBigIntegerSingleTypenumeric)this).DynQuerySelectModelDynPar(connection,  query, [parametr1]);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -1127,8 +1193,8 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
                 var models = await ((IBigIntegerSingleTypenumeric)this).SelectModelDynParAsync(connection, [parametr1]);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     BigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -1144,8 +1210,8 @@ Gedaq.Npgsql.Attributes.DynamicParametr()]
                 var parametr1 = new NpgsqlParameter<int>();
                 parametr1.TypedValue = 0;
                 var models = ((IBigIntegerSingleTypenumeric)this).SelectModelDynPar(connection, [parametr1]);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     BigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -1195,14 +1261,14 @@ ORDER BY
                 var models1 = new List<FlatBigIntegernumeric0M>();
                 var models2 = new List<FlatBigIntegernumeric0M>();
                 await ((IBigIntegerSingleTypenumeric)this).MMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
-                Assert.That(models1, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models1, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models1[i],_testData[i], false);
                 }
 
-                Assert.That(models2, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models2, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models2[i],_testData[i], false);
                 }
@@ -1232,14 +1298,14 @@ ORDER BY
                 var models1 = new List<FlatBigIntegernumeric0M>();
                 var models2 = new List<FlatBigIntegernumeric0M>();
                 ((IBigIntegerSingleTypenumeric)this).MMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
-                Assert.That(models1, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models1, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models1[i],_testData[i], false);
                 }
 
-                Assert.That(models2, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models2, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models2[i],_testData[i], false);
                 }
@@ -1284,8 +1350,8 @@ ORDER BY
     m.id ASC
 ";
                 var models = await ((IBigIntegerSingleTypenumeric)this).DynQuerySelectModelAsync(connection,  query, 0);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -1310,8 +1376,8 @@ ORDER BY
     m.id ASC
 ";
                 var models = ((IBigIntegerSingleTypenumeric)this).DynQuerySelectModel(connection,  query, 0);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -1363,8 +1429,8 @@ Gedaq.Npgsql.Attributes.Parametr(
             {
                 await connection.OpenAsync();
                 var models = await ((IBigIntegerSingleTypenumeric)this).SelectModelAsync(connection, 0);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     BigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -1378,8 +1444,8 @@ Gedaq.Npgsql.Attributes.Parametr(
             {
                 await connection.OpenAsync();
                 var models = ((IBigIntegerSingleTypenumeric)this).SelectModel(connection, 0);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     BigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -1460,14 +1526,14 @@ ORDER BY
                 var models1 = new List<FlatBigIntegernumeric0M>();
                 var models2 = new List<FlatBigIntegernumeric0M>();
                 await((IBigIntegerSingleTypenumeric)this).DbConnectionMMDynQuerySelectModelDynParAsync(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
-                Assert.That(models1, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models1, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models1[i],_testData[i], false);
                 }
 
-                Assert.That(models2, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models2, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models2[i],_testData[i], false);
                 }
@@ -1481,12 +1547,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 27;
+                parametr1.Value = 87;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 66;
+                parametr2.Value = 20;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1522,96 +1588,108 @@ ORDER BY
                 var secondItems1 = new List<FlatBigIntegernumeric0M>();
                 var secondItems2 = new List<FlatBigIntegernumeric0M>();
                 await ((IBigIntegerSingleTypenumeric)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(25));
-                Assert.That(firstItems2, Has.Count.EqualTo(25));
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[5], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[5], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[6], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[6], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[7], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[7], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[11],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[12],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[13],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[14],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[15],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[16],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[17],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[17],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[18],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[18],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[19],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[19],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[20],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[20],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[21],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[21],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[22],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[22],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[23],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[23],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[24],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[24],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(18));
-                Assert.That(secondItems2, Has.Count.EqualTo(18));
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[8],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[9],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[10],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[11],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[12],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[13],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[14],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[15],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[15],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[16],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[16],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[17],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[17],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(17));
+                Assert.That(firstItems2, Has.Count.EqualTo(17));
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[11],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[12],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[13],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[14],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[15],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[16],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(32));
+                Assert.That(secondItems2, Has.Count.EqualTo(32));
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[3], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[3], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[4], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[4], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[5], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[5], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[6], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[6], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[7], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[7], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[8],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[9],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[10],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[11],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[12],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[13],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[14],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[15],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[15],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[16],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[16],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[17],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[17],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[18],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[18],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[19],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[19],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[20],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[20],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[21],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[21],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[22],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[22],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[23],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[23],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[24],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[24],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[25],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[25],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[26],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[26],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[27],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[27],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[28],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[28],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[29],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[29],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[30],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[30],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[31],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[31],_testData[34], false);
             }
         }
 
@@ -1622,12 +1700,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 90;
+                parametr1.Value = 20;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 93;
+                parametr2.Value = 17;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1659,41 +1737,106 @@ ORDER BY
                 var firstItems2 = new List<FlatBigIntegernumeric0M>();
                 var secondItems1 = new List<FlatBigIntegernumeric0M>();
                 await ((IBigIntegerSingleTypenumeric)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(11));
-                Assert.That(firstItems2, Has.Count.EqualTo(11));
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(10));
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(32));
+                Assert.That(firstItems2, Has.Count.EqualTo(32));
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[3], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[3], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[4], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[4], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[5], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[5], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[6], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[6], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[7], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[7], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[11],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[12],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[13],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[14],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[15],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[16],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[17],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[17],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[18],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[18],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[19],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[19],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[20],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[20],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[21],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[21],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[22],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[22],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[23],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[23],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[24],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[24],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[25],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[25],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[26],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[26],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[27],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[27],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[28],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[28],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[29],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[29],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[30],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[30],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[31],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[31],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(33));
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[2], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[3], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[4], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[5], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[6], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[7], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[15],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[16],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[17],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[18],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[19],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[20],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[21],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[22],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[23],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[24],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[25],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[26],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[27],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[28],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[29],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[30],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[31],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[32],_testData[34], false);
             }
         }
 
@@ -1724,14 +1867,14 @@ ORDER BY
                 var models1 = new List<FlatBigIntegernumeric0M>();
                 var models2 = new List<FlatBigIntegernumeric0M>();
                 ((IBigIntegerSingleTypenumeric)this).DbConnectionMMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
-                Assert.That(models1, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models1, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models1[i],_testData[i], false);
                 }
 
-                Assert.That(models2, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models2, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models2[i],_testData[i], false);
                 }
@@ -1745,12 +1888,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 66;
+                parametr1.Value = 78;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 27;
+                parametr2.Value = 54;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1786,96 +1929,100 @@ ORDER BY
                 var secondItems1 = new List<FlatBigIntegernumeric0M>();
                 var secondItems2 = new List<FlatBigIntegernumeric0M>();
                  ((IBigIntegerSingleTypenumeric)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(18));
-                Assert.That(firstItems2, Has.Count.EqualTo(18));
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[11],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[12],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[13],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[14],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[15],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[16],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[17],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[17],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(20));
+                Assert.That(firstItems2, Has.Count.EqualTo(20));
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[11],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[12],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[13],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[14],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[15],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[16],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[17],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[17],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[18],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[18],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[19],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[19],_testData[34], false);
                 Assert.That(secondItems1, Has.Count.EqualTo(25));
                 Assert.That(secondItems2, Has.Count.EqualTo(25));
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[5], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[5], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[6], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[6], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[7], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[7], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[8],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[9],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[10],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[11],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[12],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[13],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[14],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[15],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[15],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[16],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[16],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[17],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[17],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[18],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[18],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[19],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[19],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[20],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[20],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[21],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[21],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[22],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[22],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[23],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[23],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[24],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[24],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[8],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[9],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[10],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[11],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[12],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[13],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[14],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[15],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[15],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[16],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[16],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[17],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[17],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[18],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[18],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[19],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[19],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[20],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[20],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[21],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[21],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[22],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[22],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[23],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[23],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[24],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[24],_testData[34], false);
             }
         }
 
@@ -1886,12 +2033,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 9;
+                parametr1.Value = 56;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 108;
+                parametr2.Value = 122;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1923,71 +2070,67 @@ ORDER BY
                 var firstItems2 = new List<FlatBigIntegernumeric0M>();
                 var secondItems1 = new List<FlatBigIntegernumeric0M>();
                  ((IBigIntegerSingleTypenumeric)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(28));
-                Assert.That(firstItems2, Has.Count.EqualTo(28));
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[2], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[2], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[3], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[3], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[4], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[4], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[5], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[5], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[6], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[6], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[7], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[7], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[11],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[12],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[13],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[14],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[15],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[16],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[17],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[17],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[18],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[18],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[19],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[19],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[20],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[20],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[21],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[21],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[22],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[22],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[23],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[23],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[24],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[24],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[25],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[25],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[26],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[26],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[27],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[27],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(6));
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(24));
+                Assert.That(firstItems2, Has.Count.EqualTo(24));
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[11],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[12],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[13],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[14],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[15],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[16],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[17],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[17],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[18],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[18],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[19],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[19],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[20],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[20],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[21],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[21],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[22],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[22],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[23],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[23],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(10));
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[34], false);
             }
         }
 
@@ -2060,8 +2203,8 @@ ORDER BY
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
                 var models = await((IBigIntegerSingleTypenumeric)this).DbConnectionDynQuerySelectModelDynParAsync(connection,  query, [parametr1]);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -2075,7 +2218,7 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 90;
+                parametr1.Value = 123;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
@@ -2111,42 +2254,46 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
+                        Assert.That(models, Has.Count.EqualTo(9));
 
-                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[9],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[10],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(15));
+                        Assert.That(models, Has.Count.EqualTo(21));
 
-                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[9],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[10],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[11],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[12],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[13],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[14],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[9],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[10],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[11],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[12],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[13],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[14],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[15],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[16],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[17],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[18],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[19],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[20],_testData[34], false);
                         continue;
                     }
                     
@@ -2162,12 +2309,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 18;
+                parametr1.Value = 131;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 111;
+                parametr2.Value = 151;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2199,46 +2346,22 @@ ORDER BY
                 var secondItems1 = new List<FlatBigIntegernumeric0M>();
                 var secondItems2 = new List<FlatBigIntegernumeric0M>();
                 await ((IBigIntegerSingleTypenumeric)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(27));
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[3], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[4], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[5], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[6], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[7], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[17],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[18],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[19],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[20],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[21],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[22],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[23],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[24],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[25],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[26],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(5));
-                Assert.That(secondItems2, Has.Count.EqualTo(5));
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(7));
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(3));
+                Assert.That(secondItems2, Has.Count.EqualTo(3));
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[34], false);
             }
         }
 
@@ -2264,8 +2387,8 @@ ORDER BY
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
                 var models = ((IBigIntegerSingleTypenumeric)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -2279,12 +2402,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 101;
+                parametr1.Value = 148;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 111;
+                parametr2.Value = 8;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2315,30 +2438,54 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
+                        Assert.That(models, Has.Count.EqualTo(4));
 
-                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(5));
+                        Assert.That(models, Has.Count.EqualTo(34));
 
-                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[1], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[2], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[3], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[4], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[5], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[6], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[7], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[9],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[10],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[11],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[12],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[13],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[14],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[15],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[16],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[17],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[18],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[19],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[20],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[21],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[22],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[23],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[24],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[25],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[26],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[27],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[28],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[29],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[30],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[31],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[32],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[33],_testData[34], false);
                         continue;
                     }
                     
@@ -2354,12 +2501,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 27;
+                parametr1.Value = 89;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 104;
+                parametr2.Value = 95;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2391,50 +2538,55 @@ ORDER BY
                 var secondItems1 = new List<FlatBigIntegernumeric0M>();
                 var secondItems2 = new List<FlatBigIntegernumeric0M>();
                  ((IBigIntegerSingleTypenumeric)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(25));
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[5], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[6], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[7], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[17],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[18],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[19],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[20],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[21],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[22],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[23],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[24],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(8));
-                Assert.That(secondItems2, Has.Count.EqualTo(8));
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(16));
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(15));
+                Assert.That(secondItems2, Has.Count.EqualTo(15));
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[8],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[9],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[11],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[12],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[13],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[14],_testData[34], false);
             }
         }
 
@@ -2499,8 +2651,8 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
                 var models = await((IBigIntegerSingleTypenumeric)this).DbConnectionSelectModelDynParAsync(connection, [parametr1]);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     BigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -2514,12 +2666,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 38;
+                parametr1.Value = 8;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 66;
+                parametr2.Value = 89;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -2528,57 +2680,66 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
+                        Assert.That(models, Has.Count.EqualTo(34));
 
-                        BigIntegernumeric0M.AssertModel(models[0],_testData[7], false);
-                        BigIntegernumeric0M.AssertModel(models[1],_testData[8], false);
-                        BigIntegernumeric0M.AssertModel(models[2],_testData[9], false);
-                        BigIntegernumeric0M.AssertModel(models[3],_testData[10], false);
-                        BigIntegernumeric0M.AssertModel(models[4],_testData[11], false);
-                        BigIntegernumeric0M.AssertModel(models[5],_testData[12], false);
-                        BigIntegernumeric0M.AssertModel(models[6],_testData[13], false);
-                        BigIntegernumeric0M.AssertModel(models[7],_testData[14], false);
-                        BigIntegernumeric0M.AssertModel(models[8],_testData[15], false);
-                        BigIntegernumeric0M.AssertModel(models[9],_testData[16], false);
-                        BigIntegernumeric0M.AssertModel(models[10],_testData[17], false);
-                        BigIntegernumeric0M.AssertModel(models[11],_testData[18], false);
-                        BigIntegernumeric0M.AssertModel(models[12],_testData[19], false);
-                        BigIntegernumeric0M.AssertModel(models[13],_testData[20], false);
-                        BigIntegernumeric0M.AssertModel(models[14],_testData[21], false);
-                        BigIntegernumeric0M.AssertModel(models[15],_testData[22], false);
-                        BigIntegernumeric0M.AssertModel(models[16],_testData[23], false);
-                        BigIntegernumeric0M.AssertModel(models[17],_testData[24], false);
-                        BigIntegernumeric0M.AssertModel(models[18],_testData[25], false);
-                        BigIntegernumeric0M.AssertModel(models[19],_testData[26], false);
-                        BigIntegernumeric0M.AssertModel(models[20],_testData[27], false);
-                        BigIntegernumeric0M.AssertModel(models[21],_testData[28], false);
-                        BigIntegernumeric0M.AssertModel(models[22],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[0],_testData[1], false);
+                        BigIntegernumeric0M.AssertModel(models[1],_testData[2], false);
+                        BigIntegernumeric0M.AssertModel(models[2],_testData[3], false);
+                        BigIntegernumeric0M.AssertModel(models[3],_testData[4], false);
+                        BigIntegernumeric0M.AssertModel(models[4],_testData[5], false);
+                        BigIntegernumeric0M.AssertModel(models[5],_testData[6], false);
+                        BigIntegernumeric0M.AssertModel(models[6],_testData[7], false);
+                        BigIntegernumeric0M.AssertModel(models[7],_testData[8], false);
+                        BigIntegernumeric0M.AssertModel(models[8],_testData[9], false);
+                        BigIntegernumeric0M.AssertModel(models[9],_testData[10], false);
+                        BigIntegernumeric0M.AssertModel(models[10],_testData[11], false);
+                        BigIntegernumeric0M.AssertModel(models[11],_testData[12], false);
+                        BigIntegernumeric0M.AssertModel(models[12],_testData[13], false);
+                        BigIntegernumeric0M.AssertModel(models[13],_testData[14], false);
+                        BigIntegernumeric0M.AssertModel(models[14],_testData[15], false);
+                        BigIntegernumeric0M.AssertModel(models[15],_testData[16], false);
+                        BigIntegernumeric0M.AssertModel(models[16],_testData[17], false);
+                        BigIntegernumeric0M.AssertModel(models[17],_testData[18], false);
+                        BigIntegernumeric0M.AssertModel(models[18],_testData[19], false);
+                        BigIntegernumeric0M.AssertModel(models[19],_testData[20], false);
+                        BigIntegernumeric0M.AssertModel(models[20],_testData[21], false);
+                        BigIntegernumeric0M.AssertModel(models[21],_testData[22], false);
+                        BigIntegernumeric0M.AssertModel(models[22],_testData[23], false);
+                        BigIntegernumeric0M.AssertModel(models[23],_testData[24], false);
+                        BigIntegernumeric0M.AssertModel(models[24],_testData[25], false);
+                        BigIntegernumeric0M.AssertModel(models[25],_testData[26], false);
+                        BigIntegernumeric0M.AssertModel(models[26],_testData[27], false);
+                        BigIntegernumeric0M.AssertModel(models[27],_testData[28], false);
+                        BigIntegernumeric0M.AssertModel(models[28],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[29],_testData[30], false);
+                        BigIntegernumeric0M.AssertModel(models[30],_testData[31], false);
+                        BigIntegernumeric0M.AssertModel(models[31],_testData[32], false);
+                        BigIntegernumeric0M.AssertModel(models[32],_testData[33], false);
+                        BigIntegernumeric0M.AssertModel(models[33],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
+                        Assert.That(models, Has.Count.EqualTo(16));
 
-                        BigIntegernumeric0M.AssertModel(models[0],_testData[12], false);
-                        BigIntegernumeric0M.AssertModel(models[1],_testData[13], false);
-                        BigIntegernumeric0M.AssertModel(models[2],_testData[14], false);
-                        BigIntegernumeric0M.AssertModel(models[3],_testData[15], false);
-                        BigIntegernumeric0M.AssertModel(models[4],_testData[16], false);
-                        BigIntegernumeric0M.AssertModel(models[5],_testData[17], false);
-                        BigIntegernumeric0M.AssertModel(models[6],_testData[18], false);
-                        BigIntegernumeric0M.AssertModel(models[7],_testData[19], false);
-                        BigIntegernumeric0M.AssertModel(models[8],_testData[20], false);
-                        BigIntegernumeric0M.AssertModel(models[9],_testData[21], false);
-                        BigIntegernumeric0M.AssertModel(models[10],_testData[22], false);
-                        BigIntegernumeric0M.AssertModel(models[11],_testData[23], false);
-                        BigIntegernumeric0M.AssertModel(models[12],_testData[24], false);
-                        BigIntegernumeric0M.AssertModel(models[13],_testData[25], false);
-                        BigIntegernumeric0M.AssertModel(models[14],_testData[26], false);
-                        BigIntegernumeric0M.AssertModel(models[15],_testData[27], false);
-                        BigIntegernumeric0M.AssertModel(models[16],_testData[28], false);
-                        BigIntegernumeric0M.AssertModel(models[17],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[0],_testData[19], false);
+                        BigIntegernumeric0M.AssertModel(models[1],_testData[20], false);
+                        BigIntegernumeric0M.AssertModel(models[2],_testData[21], false);
+                        BigIntegernumeric0M.AssertModel(models[3],_testData[22], false);
+                        BigIntegernumeric0M.AssertModel(models[4],_testData[23], false);
+                        BigIntegernumeric0M.AssertModel(models[5],_testData[24], false);
+                        BigIntegernumeric0M.AssertModel(models[6],_testData[25], false);
+                        BigIntegernumeric0M.AssertModel(models[7],_testData[26], false);
+                        BigIntegernumeric0M.AssertModel(models[8],_testData[27], false);
+                        BigIntegernumeric0M.AssertModel(models[9],_testData[28], false);
+                        BigIntegernumeric0M.AssertModel(models[10],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[11],_testData[30], false);
+                        BigIntegernumeric0M.AssertModel(models[12],_testData[31], false);
+                        BigIntegernumeric0M.AssertModel(models[13],_testData[32], false);
+                        BigIntegernumeric0M.AssertModel(models[14],_testData[33], false);
+                        BigIntegernumeric0M.AssertModel(models[15],_testData[34], false);
                         continue;
                     }
                     
@@ -2598,8 +2759,8 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
                 var models = ((IBigIntegerSingleTypenumeric)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     BigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -2613,12 +2774,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 106;
+                parametr1.Value = 142;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 79;
+                parametr2.Value = 131;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -2627,37 +2788,28 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(7));
+                        Assert.That(models, Has.Count.EqualTo(5));
 
-                        BigIntegernumeric0M.AssertModel(models[0],_testData[23], false);
-                        BigIntegernumeric0M.AssertModel(models[1],_testData[24], false);
-                        BigIntegernumeric0M.AssertModel(models[2],_testData[25], false);
-                        BigIntegernumeric0M.AssertModel(models[3],_testData[26], false);
-                        BigIntegernumeric0M.AssertModel(models[4],_testData[27], false);
-                        BigIntegernumeric0M.AssertModel(models[5],_testData[28], false);
-                        BigIntegernumeric0M.AssertModel(models[6],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[0],_testData[30], false);
+                        BigIntegernumeric0M.AssertModel(models[1],_testData[31], false);
+                        BigIntegernumeric0M.AssertModel(models[2],_testData[32], false);
+                        BigIntegernumeric0M.AssertModel(models[3],_testData[33], false);
+                        BigIntegernumeric0M.AssertModel(models[4],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
+                        Assert.That(models, Has.Count.EqualTo(7));
 
-                        BigIntegernumeric0M.AssertModel(models[0],_testData[16], false);
-                        BigIntegernumeric0M.AssertModel(models[1],_testData[17], false);
-                        BigIntegernumeric0M.AssertModel(models[2],_testData[18], false);
-                        BigIntegernumeric0M.AssertModel(models[3],_testData[19], false);
-                        BigIntegernumeric0M.AssertModel(models[4],_testData[20], false);
-                        BigIntegernumeric0M.AssertModel(models[5],_testData[21], false);
-                        BigIntegernumeric0M.AssertModel(models[6],_testData[22], false);
-                        BigIntegernumeric0M.AssertModel(models[7],_testData[23], false);
-                        BigIntegernumeric0M.AssertModel(models[8],_testData[24], false);
-                        BigIntegernumeric0M.AssertModel(models[9],_testData[25], false);
-                        BigIntegernumeric0M.AssertModel(models[10],_testData[26], false);
-                        BigIntegernumeric0M.AssertModel(models[11],_testData[27], false);
-                        BigIntegernumeric0M.AssertModel(models[12],_testData[28], false);
-                        BigIntegernumeric0M.AssertModel(models[13],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[0],_testData[28], false);
+                        BigIntegernumeric0M.AssertModel(models[1],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[2],_testData[30], false);
+                        BigIntegernumeric0M.AssertModel(models[3],_testData[31], false);
+                        BigIntegernumeric0M.AssertModel(models[4],_testData[32], false);
+                        BigIntegernumeric0M.AssertModel(models[5],_testData[33], false);
+                        BigIntegernumeric0M.AssertModel(models[6],_testData[34], false);
                         continue;
                     }
                     
@@ -2740,14 +2892,14 @@ ORDER BY
                 var models1 = new List<FlatBigIntegernumeric0M>();
                 var models2 = new List<FlatBigIntegernumeric0M>();
                 await((IBigIntegerSingleTypenumeric)this).DbConnectionMMDynQuerySelectModelAsync(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
-                Assert.That(models1, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models1, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models1[i],_testData[i], false);
                 }
 
-                Assert.That(models2, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models2, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models2[i],_testData[i], false);
                 }
@@ -2792,65 +2944,91 @@ ORDER BY
                 var firstItems2 = new List<FlatBigIntegernumeric0M>();
                 var secondItems1 = new List<FlatBigIntegernumeric0M>();
                 var secondItems2 = new List<FlatBigIntegernumeric0M>();
-                await ((IBigIntegerSingleTypenumeric)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 116, query1, 33, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(3));
-                Assert.That(firstItems2, Has.Count.EqualTo(3));
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(24));
-                Assert.That(secondItems2, Has.Count.EqualTo(24));
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[6], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[6], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[7], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[7], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[8],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[9],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[10],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[11],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[12],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[13],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[14],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[15],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[15],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[16],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[16],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[17],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[17],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[18],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[18],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[19],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[19],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[20],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[20],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[21],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[21],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[22],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[22],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[23],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[23],_testData[29], false);
+                await ((IBigIntegerSingleTypenumeric)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 37, query1, 119, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(29));
+                Assert.That(firstItems2, Has.Count.EqualTo(29));
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[6], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[6], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[7], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[7], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[11],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[12],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[13],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[14],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[15],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[16],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[17],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[17],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[18],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[18],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[19],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[19],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[20],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[20],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[21],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[21],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[22],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[22],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[23],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[23],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[24],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[24],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[25],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[25],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[26],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[26],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[27],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[27],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[28],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[28],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(11));
+                Assert.That(secondItems2, Has.Count.EqualTo(11));
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[8],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[9],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[10],_testData[34], false);
             }
         }
 
@@ -2888,46 +3066,38 @@ ORDER BY
                 var firstItems1 = new List<FlatBigIntegernumeric0M>();
                 var firstItems2 = new List<FlatBigIntegernumeric0M>();
                 var secondItems1 = new List<FlatBigIntegernumeric0M>();
-                await ((IBigIntegerSingleTypenumeric)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 106, query1, 42, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(7));
-                Assert.That(firstItems2, Has.Count.EqualTo(7));
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(22));
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[15],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[16],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[17],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[18],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[19],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[20],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[21],_testData[29], false);
+                await ((IBigIntegerSingleTypenumeric)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 109, query1, 158, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(13));
+                Assert.That(firstItems2, Has.Count.EqualTo(13));
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[11],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[12],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(2));
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[34], false);
             }
         }
 
@@ -2954,14 +3124,14 @@ ORDER BY
                 var models1 = new List<FlatBigIntegernumeric0M>();
                 var models2 = new List<FlatBigIntegernumeric0M>();
                 ((IBigIntegerSingleTypenumeric)this).DbConnectionMMDynQuerySelectModel(connection,  query, 0, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
-                Assert.That(models1, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models1, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models1[i],_testData[i], false);
                 }
 
-                Assert.That(models2, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models2, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models2[i],_testData[i], false);
                 }
@@ -3006,57 +3176,85 @@ ORDER BY
                 var firstItems2 = new List<FlatBigIntegernumeric0M>();
                 var secondItems1 = new List<FlatBigIntegernumeric0M>();
                 var secondItems2 = new List<FlatBigIntegernumeric0M>();
-                 ((IBigIntegerSingleTypenumeric)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 108, query1, 67, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(6));
-                Assert.That(firstItems2, Has.Count.EqualTo(6));
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(17));
-                Assert.That(secondItems2, Has.Count.EqualTo(17));
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[8],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[9],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[10],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[11],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[12],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[13],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[14],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[15],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[15],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[16],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[16],_testData[29], false);
+                 ((IBigIntegerSingleTypenumeric)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 36, query1, 131, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(30));
+                Assert.That(firstItems2, Has.Count.EqualTo(30));
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[5], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[5], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[6], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[6], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[7], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[7], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[11],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[12],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[13],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[14],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[15],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[16],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[17],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[17],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[18],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[18],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[19],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[19],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[20],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[20],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[21],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[21],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[22],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[22],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[23],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[23],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[24],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[24],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[25],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[25],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[26],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[26],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[27],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[27],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[28],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[28],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[29],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[29],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(7));
+                Assert.That(secondItems2, Has.Count.EqualTo(7));
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[34], false);
             }
         }
 
@@ -3094,61 +3292,68 @@ ORDER BY
                 var firstItems1 = new List<FlatBigIntegernumeric0M>();
                 var firstItems2 = new List<FlatBigIntegernumeric0M>();
                 var secondItems1 = new List<FlatBigIntegernumeric0M>();
-                 ((IBigIntegerSingleTypenumeric)this).DbConnectionMMDynQuerySelectModelBatch(connection, 38, query1, 111, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(23));
-                Assert.That(firstItems2, Has.Count.EqualTo(23));
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[7], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[7], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[11],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[12],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[13],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[14],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[15],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[16],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[17],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[17],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[18],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[18],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[19],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[19],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[20],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[20],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[21],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[21],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[22],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems2[22],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(5));
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[29], false);
+                 ((IBigIntegerSingleTypenumeric)this).DbConnectionMMDynQuerySelectModelBatch(connection, 114, query1, 8, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(12));
+                Assert.That(firstItems2, Has.Count.EqualTo(12));
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[0],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[1],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[2],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[3],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[4],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[5],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[6],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[7],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[8],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[9],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[10],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems2[11],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(34));
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[1], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[2], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[3], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[4], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[5], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[6], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[7], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[15],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[16],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[17],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[18],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[19],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[20],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[21],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[22],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[23],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[24],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[25],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[26],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[27],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[28],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[29],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[30],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[31],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[32],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[33],_testData[34], false);
             }
         }
 
@@ -3221,8 +3426,8 @@ ORDER BY
     m.id ASC
 ";
                 var models = await((IBigIntegerSingleTypenumeric)this).DbConnectionDynQuerySelectModelAsync(connection,  query, 0);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -3258,54 +3463,64 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IBigIntegerSingleTypenumeric)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 79, query1, 58, query2))
+                foreach(var batchResult in await ((IBigIntegerSingleTypenumeric)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 89, query1, 45, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
+                        Assert.That(models, Has.Count.EqualTo(16));
 
-                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[9],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[10],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[11],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[12],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[13],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[9],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[10],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[11],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[12],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[13],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[14],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[15],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(19));
+                        Assert.That(models, Has.Count.EqualTo(27));
 
-                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[9],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[10],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[11],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[12],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[13],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[14],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[15],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[16],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[17],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[18],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[9],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[10],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[11],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[12],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[13],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[14],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[15],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[16],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[17],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[18],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[19],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[20],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[21],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[22],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[23],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[24],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[25],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[26],_testData[34], false);
                         continue;
                     }
                     
@@ -3348,49 +3563,65 @@ ORDER BY
                 var firstItems1 = new List<FlatBigIntegernumeric0M>();
                 var secondItems1 = new List<FlatBigIntegernumeric0M>();
                 var secondItems2 = new List<FlatBigIntegernumeric0M>();
-                await ((IBigIntegerSingleTypenumeric)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 111, query1, 67, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(5));
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(17));
-                Assert.That(secondItems2, Has.Count.EqualTo(17));
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[8],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[9],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[10],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[11],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[12],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[13],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[14],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[15],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[15],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[16],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[16],_testData[29], false);
+                await ((IBigIntegerSingleTypenumeric)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 123, query1, 64, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(9));
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(23));
+                Assert.That(secondItems2, Has.Count.EqualTo(23));
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[8],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[9],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[10],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[11],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[12],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[13],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[14],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[15],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[15],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[16],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[16],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[17],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[17],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[18],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[18],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[19],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[19],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[20],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[20],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[21],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[21],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[22],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[22],_testData[34], false);
             }
         }
 
@@ -3412,8 +3643,8 @@ ORDER BY
     m.id ASC
 ";
                 var models = ((IBigIntegerSingleTypenumeric)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     FlatBigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -3449,46 +3680,67 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IBigIntegerSingleTypenumeric)this).DbConnectionSTDynQuerySelectModelBatch(connection, 93, query1, 75, query2))
+                foreach(var batchResult in  ((IBigIntegerSingleTypenumeric)this).DbConnectionSTDynQuerySelectModelBatch(connection, 8, query1, 114, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
+                        Assert.That(models, Has.Count.EqualTo(34));
 
-                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[9],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[1], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[2], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[3], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[4], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[5], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[6], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[7], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[8], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[9],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[10],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[11],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[12],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[13],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[14],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[15],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[16],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[17],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[18],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[19],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[20],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[21],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[22],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[23],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[24],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[25],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[26],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[27],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[28],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[29],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[30],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[31],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[32],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[33],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(15));
+                        Assert.That(models, Has.Count.EqualTo(12));
 
-                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[9],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[10],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[11],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[12],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[13],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(models[14],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[0],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[1],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[2],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[3],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[4],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[5],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[6],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[7],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[8],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[9],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[10],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(models[11],_testData[34], false);
                         continue;
                     }
                     
@@ -3531,65 +3783,54 @@ ORDER BY
                 var firstItems1 = new List<FlatBigIntegernumeric0M>();
                 var secondItems1 = new List<FlatBigIntegernumeric0M>();
                 var secondItems2 = new List<FlatBigIntegernumeric0M>();
-                 ((IBigIntegerSingleTypenumeric)this).DbConnectionDynQuerySelectModelBatch(connection, 90, query1, 42, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(11));
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(22));
-                Assert.That(secondItems2, Has.Count.EqualTo(22));
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[8], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[9], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[10], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[11], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[12], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[13], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[14], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[15], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[8],_testData[16], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[9],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[9],_testData[17], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[10],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[10],_testData[18], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[11],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[11],_testData[19], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[12],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[12],_testData[20], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[13],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[13],_testData[21], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[14],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[14],_testData[22], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[15],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[15],_testData[23], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[16],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[16],_testData[24], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[17],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[17],_testData[25], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[18],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[18],_testData[26], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[19],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[19],_testData[27], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[20],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[20],_testData[28], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems1[21],_testData[29], false);
-                        FlatBigIntegernumeric0M.AssertModel(secondItems2[21],_testData[29], false);
+                 ((IBigIntegerSingleTypenumeric)this).DbConnectionDynQuerySelectModelBatch(connection, 49, query1, 123, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(26));
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[0],_testData[9], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[1],_testData[10], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[2],_testData[11], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[3],_testData[12], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[4],_testData[13], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[5],_testData[14], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[6],_testData[15], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[7],_testData[16], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[8],_testData[17], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[9],_testData[18], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[10],_testData[19], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[11],_testData[20], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[12],_testData[21], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[13],_testData[22], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[14],_testData[23], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[15],_testData[24], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[16],_testData[25], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[17],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[18],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[19],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[20],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[21],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[22],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[23],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[24],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(firstItems1[25],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(9));
+                Assert.That(secondItems2, Has.Count.EqualTo(9));
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[0],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[0],_testData[26], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[1],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[1],_testData[27], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[2],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[2],_testData[28], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[3],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[3],_testData[29], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[4],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[5],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[5],_testData[31], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[6],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[6],_testData[32], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[7],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[7],_testData[33], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems1[8],_testData[34], false);
+                        FlatBigIntegernumeric0M.AssertModel(secondItems2[8],_testData[34], false);
             }
         }
 
@@ -3654,8 +3895,8 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var models = await((IBigIntegerSingleTypenumeric)this).DbConnectionSelectModelAsync(connection, 0);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     BigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -3669,47 +3910,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IBigIntegerSingleTypenumeric)this).DbConnectionSTSelectModelBatchAsync(connection, 18, 75))
+                foreach(var batchResult in await ((IBigIntegerSingleTypenumeric)this).DbConnectionSTSelectModelBatchAsync(connection, 78, 126))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
-
-                        BigIntegernumeric0M.AssertModel(models[0],_testData[3], false);
-                        BigIntegernumeric0M.AssertModel(models[1],_testData[4], false);
-                        BigIntegernumeric0M.AssertModel(models[2],_testData[5], false);
-                        BigIntegernumeric0M.AssertModel(models[3],_testData[6], false);
-                        BigIntegernumeric0M.AssertModel(models[4],_testData[7], false);
-                        BigIntegernumeric0M.AssertModel(models[5],_testData[8], false);
-                        BigIntegernumeric0M.AssertModel(models[6],_testData[9], false);
-                        BigIntegernumeric0M.AssertModel(models[7],_testData[10], false);
-                        BigIntegernumeric0M.AssertModel(models[8],_testData[11], false);
-                        BigIntegernumeric0M.AssertModel(models[9],_testData[12], false);
-                        BigIntegernumeric0M.AssertModel(models[10],_testData[13], false);
-                        BigIntegernumeric0M.AssertModel(models[11],_testData[14], false);
-                        BigIntegernumeric0M.AssertModel(models[12],_testData[15], false);
-                        BigIntegernumeric0M.AssertModel(models[13],_testData[16], false);
-                        BigIntegernumeric0M.AssertModel(models[14],_testData[17], false);
-                        BigIntegernumeric0M.AssertModel(models[15],_testData[18], false);
-                        BigIntegernumeric0M.AssertModel(models[16],_testData[19], false);
-                        BigIntegernumeric0M.AssertModel(models[17],_testData[20], false);
-                        BigIntegernumeric0M.AssertModel(models[18],_testData[21], false);
-                        BigIntegernumeric0M.AssertModel(models[19],_testData[22], false);
-                        BigIntegernumeric0M.AssertModel(models[20],_testData[23], false);
-                        BigIntegernumeric0M.AssertModel(models[21],_testData[24], false);
-                        BigIntegernumeric0M.AssertModel(models[22],_testData[25], false);
-                        BigIntegernumeric0M.AssertModel(models[23],_testData[26], false);
-                        BigIntegernumeric0M.AssertModel(models[24],_testData[27], false);
-                        BigIntegernumeric0M.AssertModel(models[25],_testData[28], false);
-                        BigIntegernumeric0M.AssertModel(models[26],_testData[29], false);
-                        continue;
-                    }                    
-
-                    if(resultIndex == 2)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(15));
+                        Assert.That(models, Has.Count.EqualTo(20));
 
                         BigIntegernumeric0M.AssertModel(models[0],_testData[15], false);
                         BigIntegernumeric0M.AssertModel(models[1],_testData[16], false);
@@ -3726,6 +3932,27 @@ Gedaq.DbConnection.Attributes.BatchPart(
                         BigIntegernumeric0M.AssertModel(models[12],_testData[27], false);
                         BigIntegernumeric0M.AssertModel(models[13],_testData[28], false);
                         BigIntegernumeric0M.AssertModel(models[14],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[15],_testData[30], false);
+                        BigIntegernumeric0M.AssertModel(models[16],_testData[31], false);
+                        BigIntegernumeric0M.AssertModel(models[17],_testData[32], false);
+                        BigIntegernumeric0M.AssertModel(models[18],_testData[33], false);
+                        BigIntegernumeric0M.AssertModel(models[19],_testData[34], false);
+                        continue;
+                    }                    
+
+                    if(resultIndex == 2)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(8));
+
+                        BigIntegernumeric0M.AssertModel(models[0],_testData[27], false);
+                        BigIntegernumeric0M.AssertModel(models[1],_testData[28], false);
+                        BigIntegernumeric0M.AssertModel(models[2],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[3],_testData[30], false);
+                        BigIntegernumeric0M.AssertModel(models[4],_testData[31], false);
+                        BigIntegernumeric0M.AssertModel(models[5],_testData[32], false);
+                        BigIntegernumeric0M.AssertModel(models[6],_testData[33], false);
+                        BigIntegernumeric0M.AssertModel(models[7],_testData[34], false);
                         continue;
                     }
                     
@@ -3741,8 +3968,8 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var models = ((IBigIntegerSingleTypenumeric)this).DbConnectionSelectModel(connection, 0);
-                Assert.That(models, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
                 {
                     BigIntegernumeric0M.AssertModel(models[i],_testData[i], false);
                 }
@@ -3756,16 +3983,46 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IBigIntegerSingleTypenumeric)this).DbConnectionSTSelectModelBatch(connection, 116, 38))
+                foreach(var batchResult in  ((IBigIntegerSingleTypenumeric)this).DbConnectionSTSelectModelBatch(connection, 17, 64))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
+                        Assert.That(models, Has.Count.EqualTo(33));
 
-                        BigIntegernumeric0M.AssertModel(models[0],_testData[27], false);
-                        BigIntegernumeric0M.AssertModel(models[1],_testData[28], false);
-                        BigIntegernumeric0M.AssertModel(models[2],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[0],_testData[2], false);
+                        BigIntegernumeric0M.AssertModel(models[1],_testData[3], false);
+                        BigIntegernumeric0M.AssertModel(models[2],_testData[4], false);
+                        BigIntegernumeric0M.AssertModel(models[3],_testData[5], false);
+                        BigIntegernumeric0M.AssertModel(models[4],_testData[6], false);
+                        BigIntegernumeric0M.AssertModel(models[5],_testData[7], false);
+                        BigIntegernumeric0M.AssertModel(models[6],_testData[8], false);
+                        BigIntegernumeric0M.AssertModel(models[7],_testData[9], false);
+                        BigIntegernumeric0M.AssertModel(models[8],_testData[10], false);
+                        BigIntegernumeric0M.AssertModel(models[9],_testData[11], false);
+                        BigIntegernumeric0M.AssertModel(models[10],_testData[12], false);
+                        BigIntegernumeric0M.AssertModel(models[11],_testData[13], false);
+                        BigIntegernumeric0M.AssertModel(models[12],_testData[14], false);
+                        BigIntegernumeric0M.AssertModel(models[13],_testData[15], false);
+                        BigIntegernumeric0M.AssertModel(models[14],_testData[16], false);
+                        BigIntegernumeric0M.AssertModel(models[15],_testData[17], false);
+                        BigIntegernumeric0M.AssertModel(models[16],_testData[18], false);
+                        BigIntegernumeric0M.AssertModel(models[17],_testData[19], false);
+                        BigIntegernumeric0M.AssertModel(models[18],_testData[20], false);
+                        BigIntegernumeric0M.AssertModel(models[19],_testData[21], false);
+                        BigIntegernumeric0M.AssertModel(models[20],_testData[22], false);
+                        BigIntegernumeric0M.AssertModel(models[21],_testData[23], false);
+                        BigIntegernumeric0M.AssertModel(models[22],_testData[24], false);
+                        BigIntegernumeric0M.AssertModel(models[23],_testData[25], false);
+                        BigIntegernumeric0M.AssertModel(models[24],_testData[26], false);
+                        BigIntegernumeric0M.AssertModel(models[25],_testData[27], false);
+                        BigIntegernumeric0M.AssertModel(models[26],_testData[28], false);
+                        BigIntegernumeric0M.AssertModel(models[27],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[28],_testData[30], false);
+                        BigIntegernumeric0M.AssertModel(models[29],_testData[31], false);
+                        BigIntegernumeric0M.AssertModel(models[30],_testData[32], false);
+                        BigIntegernumeric0M.AssertModel(models[31],_testData[33], false);
+                        BigIntegernumeric0M.AssertModel(models[32],_testData[34], false);
                         continue;
                     }                    
 
@@ -3774,29 +4031,29 @@ Gedaq.DbConnection.Attributes.BatchPart(
                         var models = batchResult;
                         Assert.That(models, Has.Count.EqualTo(23));
 
-                        BigIntegernumeric0M.AssertModel(models[0],_testData[7], false);
-                        BigIntegernumeric0M.AssertModel(models[1],_testData[8], false);
-                        BigIntegernumeric0M.AssertModel(models[2],_testData[9], false);
-                        BigIntegernumeric0M.AssertModel(models[3],_testData[10], false);
-                        BigIntegernumeric0M.AssertModel(models[4],_testData[11], false);
-                        BigIntegernumeric0M.AssertModel(models[5],_testData[12], false);
-                        BigIntegernumeric0M.AssertModel(models[6],_testData[13], false);
-                        BigIntegernumeric0M.AssertModel(models[7],_testData[14], false);
-                        BigIntegernumeric0M.AssertModel(models[8],_testData[15], false);
-                        BigIntegernumeric0M.AssertModel(models[9],_testData[16], false);
-                        BigIntegernumeric0M.AssertModel(models[10],_testData[17], false);
-                        BigIntegernumeric0M.AssertModel(models[11],_testData[18], false);
-                        BigIntegernumeric0M.AssertModel(models[12],_testData[19], false);
-                        BigIntegernumeric0M.AssertModel(models[13],_testData[20], false);
-                        BigIntegernumeric0M.AssertModel(models[14],_testData[21], false);
-                        BigIntegernumeric0M.AssertModel(models[15],_testData[22], false);
-                        BigIntegernumeric0M.AssertModel(models[16],_testData[23], false);
-                        BigIntegernumeric0M.AssertModel(models[17],_testData[24], false);
-                        BigIntegernumeric0M.AssertModel(models[18],_testData[25], false);
-                        BigIntegernumeric0M.AssertModel(models[19],_testData[26], false);
-                        BigIntegernumeric0M.AssertModel(models[20],_testData[27], false);
-                        BigIntegernumeric0M.AssertModel(models[21],_testData[28], false);
-                        BigIntegernumeric0M.AssertModel(models[22],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[0],_testData[12], false);
+                        BigIntegernumeric0M.AssertModel(models[1],_testData[13], false);
+                        BigIntegernumeric0M.AssertModel(models[2],_testData[14], false);
+                        BigIntegernumeric0M.AssertModel(models[3],_testData[15], false);
+                        BigIntegernumeric0M.AssertModel(models[4],_testData[16], false);
+                        BigIntegernumeric0M.AssertModel(models[5],_testData[17], false);
+                        BigIntegernumeric0M.AssertModel(models[6],_testData[18], false);
+                        BigIntegernumeric0M.AssertModel(models[7],_testData[19], false);
+                        BigIntegernumeric0M.AssertModel(models[8],_testData[20], false);
+                        BigIntegernumeric0M.AssertModel(models[9],_testData[21], false);
+                        BigIntegernumeric0M.AssertModel(models[10],_testData[22], false);
+                        BigIntegernumeric0M.AssertModel(models[11],_testData[23], false);
+                        BigIntegernumeric0M.AssertModel(models[12],_testData[24], false);
+                        BigIntegernumeric0M.AssertModel(models[13],_testData[25], false);
+                        BigIntegernumeric0M.AssertModel(models[14],_testData[26], false);
+                        BigIntegernumeric0M.AssertModel(models[15],_testData[27], false);
+                        BigIntegernumeric0M.AssertModel(models[16],_testData[28], false);
+                        BigIntegernumeric0M.AssertModel(models[17],_testData[29], false);
+                        BigIntegernumeric0M.AssertModel(models[18],_testData[30], false);
+                        BigIntegernumeric0M.AssertModel(models[19],_testData[31], false);
+                        BigIntegernumeric0M.AssertModel(models[20],_testData[32], false);
+                        BigIntegernumeric0M.AssertModel(models[21],_testData[33], false);
+                        BigIntegernumeric0M.AssertModel(models[22],_testData[34], false);
                         continue;
                     }
                     
@@ -3812,11 +4069,11 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IBigIntegerSingleTypenumeric)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IBigIntegerSingleTypenumeric)this).SetDbConnectionSelectModelParametrs(cmd, 67);
+                ((IBigIntegerSingleTypenumeric)this).SetDbConnectionSelectModelParametrs(cmd, 89);
                 var models = await ((IBigIntegerSingleTypenumeric)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(17));
-BigIntegernumeric0M.AssertModel(models[0],_testData[13], false);BigIntegernumeric0M.AssertModel(models[1],_testData[14], false);BigIntegernumeric0M.AssertModel(models[2],_testData[15], false);BigIntegernumeric0M.AssertModel(models[3],_testData[16], false);BigIntegernumeric0M.AssertModel(models[4],_testData[17], false);BigIntegernumeric0M.AssertModel(models[5],_testData[18], false);BigIntegernumeric0M.AssertModel(models[6],_testData[19], false);BigIntegernumeric0M.AssertModel(models[7],_testData[20], false);BigIntegernumeric0M.AssertModel(models[8],_testData[21], false);BigIntegernumeric0M.AssertModel(models[9],_testData[22], false);BigIntegernumeric0M.AssertModel(models[10],_testData[23], false);BigIntegernumeric0M.AssertModel(models[11],_testData[24], false);BigIntegernumeric0M.AssertModel(models[12],_testData[25], false);BigIntegernumeric0M.AssertModel(models[13],_testData[26], false);BigIntegernumeric0M.AssertModel(models[14],_testData[27], false);BigIntegernumeric0M.AssertModel(models[15],_testData[28], false);BigIntegernumeric0M.AssertModel(models[16],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(16));
+BigIntegernumeric0M.AssertModel(models[0],_testData[19], false);BigIntegernumeric0M.AssertModel(models[1],_testData[20], false);BigIntegernumeric0M.AssertModel(models[2],_testData[21], false);BigIntegernumeric0M.AssertModel(models[3],_testData[22], false);BigIntegernumeric0M.AssertModel(models[4],_testData[23], false);BigIntegernumeric0M.AssertModel(models[5],_testData[24], false);BigIntegernumeric0M.AssertModel(models[6],_testData[25], false);BigIntegernumeric0M.AssertModel(models[7],_testData[26], false);BigIntegernumeric0M.AssertModel(models[8],_testData[27], false);BigIntegernumeric0M.AssertModel(models[9],_testData[28], false);BigIntegernumeric0M.AssertModel(models[10],_testData[29], false);BigIntegernumeric0M.AssertModel(models[11],_testData[30], false);BigIntegernumeric0M.AssertModel(models[12],_testData[31], false);BigIntegernumeric0M.AssertModel(models[13],_testData[32], false);BigIntegernumeric0M.AssertModel(models[14],_testData[33], false);BigIntegernumeric0M.AssertModel(models[15],_testData[34], false);
             }
         }
 
@@ -3827,11 +4084,11 @@ BigIntegernumeric0M.AssertModel(models[0],_testData[13], false);BigIntegernumeri
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IBigIntegerSingleTypenumeric)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IBigIntegerSingleTypenumeric)this).SetDbConnectionSelectModelParametrs(cmd, 115);
+                ((IBigIntegerSingleTypenumeric)this).SetDbConnectionSelectModelParametrs(cmd, 45);
                 var models =  ((IBigIntegerSingleTypenumeric)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(4));
-BigIntegernumeric0M.AssertModel(models[0],_testData[26], false);BigIntegernumeric0M.AssertModel(models[1],_testData[27], false);BigIntegernumeric0M.AssertModel(models[2],_testData[28], false);BigIntegernumeric0M.AssertModel(models[3],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(27));
+BigIntegernumeric0M.AssertModel(models[0],_testData[8], false);BigIntegernumeric0M.AssertModel(models[1],_testData[9], false);BigIntegernumeric0M.AssertModel(models[2],_testData[10], false);BigIntegernumeric0M.AssertModel(models[3],_testData[11], false);BigIntegernumeric0M.AssertModel(models[4],_testData[12], false);BigIntegernumeric0M.AssertModel(models[5],_testData[13], false);BigIntegernumeric0M.AssertModel(models[6],_testData[14], false);BigIntegernumeric0M.AssertModel(models[7],_testData[15], false);BigIntegernumeric0M.AssertModel(models[8],_testData[16], false);BigIntegernumeric0M.AssertModel(models[9],_testData[17], false);BigIntegernumeric0M.AssertModel(models[10],_testData[18], false);BigIntegernumeric0M.AssertModel(models[11],_testData[19], false);BigIntegernumeric0M.AssertModel(models[12],_testData[20], false);BigIntegernumeric0M.AssertModel(models[13],_testData[21], false);BigIntegernumeric0M.AssertModel(models[14],_testData[22], false);BigIntegernumeric0M.AssertModel(models[15],_testData[23], false);BigIntegernumeric0M.AssertModel(models[16],_testData[24], false);BigIntegernumeric0M.AssertModel(models[17],_testData[25], false);BigIntegernumeric0M.AssertModel(models[18],_testData[26], false);BigIntegernumeric0M.AssertModel(models[19],_testData[27], false);BigIntegernumeric0M.AssertModel(models[20],_testData[28], false);BigIntegernumeric0M.AssertModel(models[21],_testData[29], false);BigIntegernumeric0M.AssertModel(models[22],_testData[30], false);BigIntegernumeric0M.AssertModel(models[23],_testData[31], false);BigIntegernumeric0M.AssertModel(models[24],_testData[32], false);BigIntegernumeric0M.AssertModel(models[25],_testData[33], false);BigIntegernumeric0M.AssertModel(models[26],_testData[34], false);
             }
         }
 
@@ -3871,15 +4128,15 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var models = await ((IBigIntegerSingleTypenumeric)this).DbConnectionSelectModelToObjArrAsync(connection);
-                Assert.That(models, Has.Count.EqualTo(30));
+                Assert.That(models, Has.Count.EqualTo(35));
 
                 var model = models[0];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((4)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1382215236322383847L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((8)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6707116901723006487L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -3892,42 +4149,42 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((9)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4826934197229547153L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((17)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3439969926195184919L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((3)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3703027886457332134L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((9)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(24451264572782184L))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4151479429984842978L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[2];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((18)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3326957719092086962L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((20)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(9206440506450260431L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8554294256459815419L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[3];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((25)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5584739859106484176L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((28)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(23778968394099849L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((5)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(429732668610178682L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((16)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8462815356655069277L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7999471492210938542L))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -3936,27 +4193,27 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((27)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8133394918489649499L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((36)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8636483569941093082L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7714815289898409239L))));
 
                 model = models[5];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((33)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1563532238544888570L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((37)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6282552703538758431L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((9)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1548340459863875077L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((17)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5978090670786345128L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7456937442254838054L))));//InnerModel.NullableValue
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7779382433359537921L))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -3965,8 +4222,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((38)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(9009481760266297899L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((40)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6828207113897961122L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -3979,13 +4236,13 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((42)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3932920592653100303L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((45)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4648873694570244781L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((13)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4797242181623417705L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((25)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4453383296228440935L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1677328058598870018L))));//InnerModel.NullableValue
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2034937571029151560L))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -3994,27 +4251,27 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((45)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6931518220358705206L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((49)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1686688567017907740L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1441288182182972347L))));
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2089846156653225412L))));
 
                 model = models[9];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((49)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4824983886014687043L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((54)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6801496802347426225L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((17)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5914507763310042401L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((27)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4193470538206175570L))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4953611255816945991L))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4023,56 +4280,56 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((58)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4668414288095111771L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((56)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6409818358836548748L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2423628097346543615L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[11];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((66)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8634745711999189732L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((64)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4569345309845986228L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((26)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7082022119246590121L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((32)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3887520075730211567L))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5450322234557442041L))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7233745212475998921L))));
 
                 model = models[12];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((67)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3562819421626173535L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((66)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6456318539139670249L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6469066963084990428L))));
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1169557556132121706L))));
 
                 model = models[13];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((72)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1550441393094118338L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((75)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6864262511813838986L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((29)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1785075075783246744L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((38)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5109166064661397616L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4323237824665080417L))));//InnerModel.NullableValue
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3077437397436374489L))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4081,124 +4338,124 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((75)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6252387963832782238L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((78)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(9133836670562858049L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4541800767371542501L))));
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7701898230797770543L))));
 
                 model = models[15];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((79)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7467993139457687171L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((83)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2105441205177626621L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((36)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5102302425570127492L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((40)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5620951052833282418L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5363192623964866347L))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1809296157377322833L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[16];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((80)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1330806611797071271L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((86)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8567886244835037839L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(519625621181084232L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[17];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((89)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7979253031959625141L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((87)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8137583026945023658L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((41)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4386956208558109369L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((49)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8013456206151816857L))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6873831988725190708L))));
 
                 model = models[18];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((90)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7094160161813614139L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((89)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5509095045061101439L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1574784229231678343L))));
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7963328552887888292L))));
 
                 model = models[19];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((93)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5768127120814989129L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((95)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6729743313328970202L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((48)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6447029853535881995L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((50)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5553119818501163412L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8548035057299120441L))));//InnerModel.NullableValue
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(699355129213488506L))));//InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3691753764944675329L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[20];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((101)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(103757708915043928L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((104)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7249141285674414875L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1733855159398629895L))));
 
                 model = models[21];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((104)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4224547025814688769L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((109)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7934269198635515323L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((50)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8847609218771273576L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((57)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(256769766062400750L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1299408741756277111L))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4546163159946750294L))));
 
                 model = models[22];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((106)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(337728694285615280L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((114)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(709092731511077176L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4211,23 +4468,52 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((108)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8618456243484244855L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((119)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7194923665500298171L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((54)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1491773760760452662L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((64)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1308486289057053827L))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7124877676005051804L))));//InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3511243612661753771L))));
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5980168464906798161L))));
 
                 model = models[24];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((111)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7557463456137295813L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((122)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3905791913448947062L))));//Value
+
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
+
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8127859407145305534L))));
+
+                model = models[25];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((123)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(22550831479904850L))));//Value
+
+                Assert.That((System.Int32)model[2], Is.EqualTo((67)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6198212733921934658L))));//InnerModel.Value
+
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+
+                model = models[26];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((126)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(156233298795660772L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4235,57 +4521,28 @@ ORDER BY
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
-                model = models[25];
-
-                Assert.That(model, Has.Length.EqualTo(6));
-
-                Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((115)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8146627649377457744L))));//Value
-
-                Assert.That((System.Int32)model[2], Is.EqualTo((62)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4308279388356371890L))));//InnerModel.Value
-
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(230849348276911933L))));//InnerModel.NullableValue
-
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6964480630486702439L))));
-
-                model = models[26];
-
-                Assert.That(model, Has.Length.EqualTo(6));
-
-                Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((116)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5597427951926505980L))));//Value
-
-                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
-                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
-
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4722688926955322988L))));
-
                 model = models[27];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((120)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3299005533350083302L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((131)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2580954353671845553L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((63)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5776329816632034880L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((73)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8371375659454476403L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1968581483555843726L))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(783398428052634311L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[28];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((125)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3720841368598372875L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((140)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2722932879203427089L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4298,13 +4555,85 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((133)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4752890513573100488L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((142)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3561290229645872635L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((67)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3775657775816525350L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((78)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1888994238239803488L))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+
+                model = models[30];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((148)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1488667790006258683L))));//Value
+
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
+
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4784223480955331836L))));
+
+                model = models[31];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((151)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1639843841045938454L))));//Value
+
+                Assert.That((System.Int32)model[2], Is.EqualTo((87)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4928397100802244241L))));//InnerModel.Value
+
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+
+                model = models[32];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((158)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1161600609833553827L))));//Value
+
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
+
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+
+                model = models[33];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((162)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2329153174376912600L))));//Value
+
+                Assert.That((System.Int32)model[2], Is.EqualTo((95)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8454102609900103207L))));//InnerModel.Value
+
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6203816688094898963L))));
+
+                model = models[34];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((163)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5921749757524197792L))));//Value
+
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4318,15 +4647,15 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var models =  ((IBigIntegerSingleTypenumeric)this).DbConnectionSelectModelToObjArr(connection);
-                Assert.That(models, Has.Count.EqualTo(30));
+                Assert.That(models, Has.Count.EqualTo(35));
 
                 var model = models[0];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((4)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1382215236322383847L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((8)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6707116901723006487L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4339,42 +4668,42 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((9)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4826934197229547153L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((17)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3439969926195184919L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((3)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3703027886457332134L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((9)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(24451264572782184L))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4151479429984842978L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[2];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((18)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3326957719092086962L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((20)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(9206440506450260431L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8554294256459815419L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[3];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((25)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5584739859106484176L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((28)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(23778968394099849L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((5)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(429732668610178682L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((16)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8462815356655069277L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7999471492210938542L))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4383,27 +4712,27 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((27)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8133394918489649499L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((36)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8636483569941093082L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7714815289898409239L))));
 
                 model = models[5];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((33)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1563532238544888570L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((37)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6282552703538758431L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((9)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1548340459863875077L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((17)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5978090670786345128L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7456937442254838054L))));//InnerModel.NullableValue
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7779382433359537921L))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4412,8 +4741,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((38)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(9009481760266297899L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((40)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6828207113897961122L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4426,13 +4755,13 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((42)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3932920592653100303L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((45)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4648873694570244781L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((13)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4797242181623417705L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((25)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4453383296228440935L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1677328058598870018L))));//InnerModel.NullableValue
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2034937571029151560L))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4441,27 +4770,27 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((45)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6931518220358705206L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((49)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1686688567017907740L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1441288182182972347L))));
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2089846156653225412L))));
 
                 model = models[9];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((49)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4824983886014687043L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((54)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6801496802347426225L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((17)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5914507763310042401L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((27)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4193470538206175570L))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4953611255816945991L))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4470,56 +4799,56 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((58)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4668414288095111771L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((56)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6409818358836548748L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2423628097346543615L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[11];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((66)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8634745711999189732L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((64)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4569345309845986228L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((26)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7082022119246590121L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((32)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3887520075730211567L))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5450322234557442041L))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7233745212475998921L))));
 
                 model = models[12];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((67)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3562819421626173535L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((66)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6456318539139670249L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6469066963084990428L))));
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1169557556132121706L))));
 
                 model = models[13];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((72)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1550441393094118338L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((75)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6864262511813838986L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((29)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1785075075783246744L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((38)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5109166064661397616L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4323237824665080417L))));//InnerModel.NullableValue
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3077437397436374489L))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4528,124 +4857,124 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((75)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6252387963832782238L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((78)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(9133836670562858049L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4541800767371542501L))));
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7701898230797770543L))));
 
                 model = models[15];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((79)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7467993139457687171L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((83)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2105441205177626621L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((36)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5102302425570127492L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((40)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5620951052833282418L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5363192623964866347L))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1809296157377322833L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[16];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((80)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1330806611797071271L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((86)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8567886244835037839L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(519625621181084232L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[17];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((89)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7979253031959625141L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((87)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8137583026945023658L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((41)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4386956208558109369L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((49)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8013456206151816857L))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6873831988725190708L))));
 
                 model = models[18];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((90)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7094160161813614139L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((89)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5509095045061101439L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1574784229231678343L))));
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7963328552887888292L))));
 
                 model = models[19];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((93)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5768127120814989129L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((95)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6729743313328970202L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((48)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6447029853535881995L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((50)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5553119818501163412L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8548035057299120441L))));//InnerModel.NullableValue
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(699355129213488506L))));//InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3691753764944675329L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[20];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((101)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(103757708915043928L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((104)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7249141285674414875L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1733855159398629895L))));
 
                 model = models[21];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((104)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4224547025814688769L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((109)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7934269198635515323L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((50)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8847609218771273576L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((57)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(256769766062400750L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1299408741756277111L))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4546163159946750294L))));
 
                 model = models[22];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((106)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(337728694285615280L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((114)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(709092731511077176L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4658,23 +4987,52 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((108)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8618456243484244855L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((119)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7194923665500298171L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((54)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1491773760760452662L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((64)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1308486289057053827L))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7124877676005051804L))));//InnerModel.NullableValue
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3511243612661753771L))));
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5980168464906798161L))));
 
                 model = models[24];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((111)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(7557463456137295813L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((122)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3905791913448947062L))));//Value
+
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
+
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8127859407145305534L))));
+
+                model = models[25];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((123)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(22550831479904850L))));//Value
+
+                Assert.That((System.Int32)model[2], Is.EqualTo((67)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6198212733921934658L))));//InnerModel.Value
+
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+
+                model = models[26];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((126)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(156233298795660772L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4682,57 +5040,28 @@ ORDER BY
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
-                model = models[25];
-
-                Assert.That(model, Has.Length.EqualTo(6));
-
-                Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((115)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8146627649377457744L))));//Value
-
-                Assert.That((System.Int32)model[2], Is.EqualTo((62)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4308279388356371890L))));//InnerModel.Value
-
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(230849348276911933L))));//InnerModel.NullableValue
-
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6964480630486702439L))));
-
-                model = models[26];
-
-                Assert.That(model, Has.Length.EqualTo(6));
-
-                Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((116)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5597427951926505980L))));//Value
-
-                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
-                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
-
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4722688926955322988L))));
-
                 model = models[27];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((120)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3299005533350083302L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((131)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2580954353671845553L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((63)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5776329816632034880L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((73)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8371375659454476403L))));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[4], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1968581483555843726L))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(783398428052634311L))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[28];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((125)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3720841368598372875L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((140)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2722932879203427089L))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4745,13 +5074,85 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((133)));//Id
-                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4752890513573100488L))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((142)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3561290229645872635L))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((67)));//InnerModel.Id
-                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(3775657775816525350L))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((78)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1888994238239803488L))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+
+                model = models[30];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((148)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1488667790006258683L))));//Value
+
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
+
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4784223480955331836L))));
+
+                model = models[31];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((151)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1639843841045938454L))));//Value
+
+                Assert.That((System.Int32)model[2], Is.EqualTo((87)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(4928397100802244241L))));//InnerModel.Value
+
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+
+                model = models[32];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((158)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(1161600609833553827L))));//Value
+
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
+
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+
+                model = models[33];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((162)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(2329153174376912600L))));//Value
+
+                Assert.That((System.Int32)model[2], Is.EqualTo((95)));//InnerModel.Id
+                Assert.That((System.Decimal)model[3], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(8454102609900103207L))));//InnerModel.Value
+
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+
+                Assert.That((System.Decimal?)model[5], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(6203816688094898963L))));
+
+                model = models[34];
+
+                Assert.That(model, Has.Length.EqualTo(6));
+
+                Assert.That(model, Is.Not.Null);
+                Assert.That((System.Int32)model[0], Is.EqualTo((163)));//Id
+                Assert.That((System.Decimal)model[1], Is.EqualTo(((System.Decimal)new System.Numerics.BigInteger(5921749757524197792L))));//Value
+
+                Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
+                Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4761,6 +5162,140 @@ ORDER BY
 #endregion
 
 #region BinaryImportModelInner
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: 
+@"
+SELECT
+    mi.nullablevalue,
+    mi.id,
+    mi.value
+FROM public.binary_bigintegernumeric0mi mi
+ORDER BY
+    mi.id ASC
+"
+,
+            methodName:"DynQueryWASelectImportModelInner",
+            queryMapTypes: [typeof(BigIntegernumeric0MIWA)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBigIntegerSingleTypenumeric))]
+        private void DynQueryWASelectImportModelInnerConfig()
+        {
+        }
+
+[Gedaq.Npgsql.Attributes.BinaryImport(
+            query: null,
+            methodName:"DynQueryWAImportModelInner",
+            queryMapType: typeof(BigIntegernumeric0MIWA),
+            dbTypes: 
+            new NpgsqlDbType[]
+            {
+                (NpgsqlTypes.NpgsqlDbType)(9),
+                (NpgsqlTypes.NpgsqlDbType)(13),
+                (NpgsqlTypes.NpgsqlDbType)(13)
+            },
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBigIntegerSingleTypenumeric))]
+        private void DynQueryWAImportModelInnerConfig()
+        {
+        }
+
+        [Test, Order(0)]
+        public async Task DynQueryWAImportModelInnerAsyncTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var importCollection = new List<BigIntegernumeric0MIWA>(2);
+                for (int i = 0; i < 4; i++)
+                {
+                    var importModel = _testData[i].ModelInner;
+                    if (importModel == null)
+                    {
+                        continue;
+                    }
+
+                    importCollection.Add(
+new BigIntegernumeric0MIWA
+{
+    Id = importModel.Id,
+    Value = importModel.Value,
+    NullableValue = importModel.NullableValue,
+});
+                }
+
+                await ((IBigIntegerSingleTypenumeric)this).DynQueryWAImportModelInnerAsync(connection, importCollection, @"
+COPY public.binary_bigintegernumeric0mi
+(
+id,
+value,
+nullablevalue
+) 
+FROM STDIN (FORMAT BINARY)
+");
+                var models = await ((IBigIntegerSingleTypenumeric)this).DynQueryWASelectImportModelInnerAsync(connection);
+                Assert.That(models, Has.Count.EqualTo(2));
+                var set = new HashSet<long>();
+                for (var i = 0; i < models.Count(); i++)
+                {
+                    var actual = models[i];
+                    var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
+                    BigIntegernumeric0MIWA.AssertModel(actual, expect, false);
+                    Assert.That(set.Add(actual.Id), Is.True);
+                }
+            }
+        }
+
+        [Test, Order(1)]
+        public  void DynQueryWAImportModelInnerTest()
+        {
+            using (var connection = GlobalSetUp.GetConnection)
+            {
+                connection.Open();
+                var importCollection = new List<BigIntegernumeric0MIWA>(2);
+                for (int i = 4; i < 8; i++)
+                {
+                    var importModel = _testData[i].ModelInner;
+                    if (importModel == null)
+                    {
+                        continue;
+                    }
+
+                    importCollection.Add(
+new BigIntegernumeric0MIWA
+{
+    Id = importModel.Id,
+    Value = importModel.Value,
+    NullableValue = importModel.NullableValue,
+});
+                }
+
+                ((IBigIntegerSingleTypenumeric)this).DynQueryWAImportModelInner(connection, importCollection, @"
+COPY public.binary_bigintegernumeric0mi
+(
+id,
+value,
+nullablevalue
+) 
+FROM STDIN (FORMAT BINARY)
+");
+                var models = ((IBigIntegerSingleTypenumeric)this).DynQueryWASelectImportModelInner(connection);
+                Assert.That(models, Has.Count.EqualTo(4));
+                var set = new HashSet<long>();
+                for (var i = 0; i < models.Count(); i++)
+                {
+                    var actual = models[i];
+                    var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
+                    BigIntegernumeric0MIWA.AssertModel(actual, expect, false);
+                    Assert.That(set.Add(actual.Id), Is.True);
+                }
+            }
+        }
 
 [Gedaq.DbConnection.Attributes.Query(
             query: 
@@ -4789,13 +5324,7 @@ ORDER BY
             query: null,
             methodName:"DynQueryImportModelInner",
             queryMapType: typeof(BigIntegernumeric0MIWA),
-            dbTypes:
-            new NpgsqlDbType[]
-            {
-                (NpgsqlTypes.NpgsqlDbType)(9),
-                (NpgsqlTypes.NpgsqlDbType)(13),
-                (NpgsqlTypes.NpgsqlDbType)(13)
-            },
+            dbTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -4804,14 +5333,14 @@ ORDER BY
         {
         }
 
-        [Test, Order(0)]
+        [Test, Order(2)]
         public async Task DynQueryImportModelInnerAsyncTest()
         {
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
                 var importCollection = new List<BigIntegernumeric0MIWA>(2);
-                for (int i = 0; i < 4; i++)
+                for (int i = 8; i < 12; i++)
                 {
                     var importModel = _testData[i].ModelInner;
                     if (importModel == null)
@@ -4838,7 +5367,7 @@ nullablevalue
 FROM STDIN (FORMAT BINARY)
 ");
                 var models = await ((IBigIntegerSingleTypenumeric)this).DynQuerySelectImportModelInnerAsync(connection);
-                Assert.That(models, Has.Count.EqualTo(2));
+                Assert.That(models, Has.Count.EqualTo(6));
                 var set = new HashSet<long>();
                 for (var i = 0; i < models.Count(); i++)
                 {
@@ -4850,14 +5379,14 @@ FROM STDIN (FORMAT BINARY)
             }
         }
 
-        [Test, Order(1)]
+        [Test, Order(3)]
         public  void DynQueryImportModelInnerTest()
         {
             using (var connection = GlobalSetUp.GetConnection)
             {
                 connection.Open();
                 var importCollection = new List<BigIntegernumeric0MIWA>(2);
-                for (int i = 4; i < 8; i++)
+                for (int i = 12; i < 16; i++)
                 {
                     var importModel = _testData[i].ModelInner;
                     if (importModel == null)
@@ -4884,7 +5413,7 @@ nullablevalue
 FROM STDIN (FORMAT BINARY)
 ");
                 var models = ((IBigIntegerSingleTypenumeric)this).DynQuerySelectImportModelInner(connection);
-                Assert.That(models, Has.Count.EqualTo(4));
+                Assert.That(models, Has.Count.EqualTo(8));
                 var set = new HashSet<long>();
                 for (var i = 0; i < models.Count(); i++)
                 {
@@ -4908,8 +5437,122 @@ ORDER BY
     mi.id ASC
 "
 ,
-            methodName:"SelectImportModelInner",
+            methodName:"WASelectImportModelInner",
             queryMapTypes: [typeof(BigIntegernumeric0MI)],
+            methodType: MethodType.Async | MethodType.Sync,
+            queryType: QueryType.Read,
+            generate: true,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBigIntegerSingleTypenumeric))]
+        private void WASelectImportModelInnerConfig()
+        {
+        }
+
+[Gedaq.Npgsql.Attributes.BinaryImport(
+            query: @"
+COPY public.binary_bigintegernumeric0mi
+(
+id,
+nullablevalue,
+value
+) 
+FROM STDIN (FORMAT BINARY)
+",
+            methodName:"WAImportModelInner",
+            queryMapType: typeof(BigIntegernumeric0MI),
+            dbTypes: 
+            new NpgsqlDbType[]
+            {
+                (NpgsqlTypes.NpgsqlDbType)(9),
+                (NpgsqlTypes.NpgsqlDbType)(13),
+                (NpgsqlTypes.NpgsqlDbType)(13)
+            },
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBigIntegerSingleTypenumeric))]
+        private void WAImportModelInnerConfig()
+        {
+        }
+
+        [Test, Order(4)]
+        public async Task WAImportModelInnerAsyncTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var importCollection = new List<BigIntegernumeric0MI>(2);
+                for (int i = 16; i < 20; i++)
+                {
+                    var importModel = _testData[i].ModelInner;
+                    if (importModel == null)
+                    {
+                        continue;
+                    }
+
+                    importCollection.Add(importModel);
+                }
+
+                await ((IBigIntegerSingleTypenumeric)this).WAImportModelInnerAsync(connection, importCollection);
+                var models = await ((IBigIntegerSingleTypenumeric)this).WASelectImportModelInnerAsync(connection);
+                Assert.That(models, Has.Count.EqualTo(10));
+                var set = new HashSet<long>();
+                for (var i = 0; i < models.Count(); i++)
+                {
+                    var actual = models[i];
+                    var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
+                    BigIntegernumeric0MI.AssertModel(actual, expect, false);
+                    Assert.That(set.Add(actual.Id), Is.True);
+                }
+            }
+        }
+
+        [Test, Order(5)]
+        public  void WAImportModelInnerTest()
+        {
+            using (var connection = GlobalSetUp.GetConnection)
+            {
+                connection.Open();
+                var importCollection = new List<BigIntegernumeric0MI>(2);
+                for (int i = 20; i < 24; i++)
+                {
+                    var importModel = _testData[i].ModelInner;
+                    if (importModel == null)
+                    {
+                        continue;
+                    }
+
+                    importCollection.Add(importModel);
+                }
+
+                ((IBigIntegerSingleTypenumeric)this).WAImportModelInner(connection, importCollection);
+                var models = ((IBigIntegerSingleTypenumeric)this).WASelectImportModelInner(connection);
+                Assert.That(models, Has.Count.EqualTo(12));
+                var set = new HashSet<long>();
+                for (var i = 0; i < models.Count(); i++)
+                {
+                    var actual = models[i];
+                    var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
+                    BigIntegernumeric0MI.AssertModel(actual, expect, false);
+                    Assert.That(set.Add(actual.Id), Is.True);
+                }
+            }
+        }
+
+[Gedaq.DbConnection.Attributes.Query(
+            query: 
+@"
+SELECT
+    mi.nullablevalue,
+    mi.id,
+    mi.value
+FROM public.binary_bigintegernumeric0mi mi
+ORDER BY
+    mi.id ASC
+"
+,
+            methodName:"SelectImportModelInner",
+            queryMapTypes: [typeof(BigIntegernumeric0MIWA)],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -4924,20 +5567,14 @@ ORDER BY
 COPY public.binary_bigintegernumeric0mi
 (
 id,
-nullablevalue,
-value
+value,
+nullablevalue
 ) 
 FROM STDIN (FORMAT BINARY)
 ",
             methodName:"ImportModelInner",
-            queryMapType: typeof(BigIntegernumeric0MI),
-            dbTypes:
-            new NpgsqlDbType[]
-            {
-                (NpgsqlTypes.NpgsqlDbType)(9),
-                (NpgsqlTypes.NpgsqlDbType)(13),
-                (NpgsqlTypes.NpgsqlDbType)(13)
-            },
+            queryMapType: typeof(BigIntegernumeric0MIWA),
+            dbTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -4946,14 +5583,14 @@ FROM STDIN (FORMAT BINARY)
         {
         }
 
-        [Test, Order(2)]
+        [Test, Order(6)]
         public async Task ImportModelInnerAsyncTest()
         {
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var importCollection = new List<BigIntegernumeric0MI>(2);
-                for (int i = 8; i < 12; i++)
+                var importCollection = new List<BigIntegernumeric0MIWA>(2);
+                for (int i = 24; i < 28; i++)
                 {
                     var importModel = _testData[i].ModelInner;
                     if (importModel == null)
@@ -4961,31 +5598,37 @@ FROM STDIN (FORMAT BINARY)
                         continue;
                     }
 
-                    importCollection.Add(importModel);
+                    importCollection.Add(
+new BigIntegernumeric0MIWA
+{
+    Id = importModel.Id,
+    Value = importModel.Value,
+    NullableValue = importModel.NullableValue,
+});
                 }
 
                 await ((IBigIntegerSingleTypenumeric)this).ImportModelInnerAsync(connection, importCollection);
                 var models = await ((IBigIntegerSingleTypenumeric)this).SelectImportModelInnerAsync(connection);
-                Assert.That(models, Has.Count.EqualTo(6));
+                Assert.That(models, Has.Count.EqualTo(14));
                 var set = new HashSet<long>();
                 for (var i = 0; i < models.Count(); i++)
                 {
                     var actual = models[i];
                     var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
-                    BigIntegernumeric0MI.AssertModel(actual, expect, false);
+                    BigIntegernumeric0MIWA.AssertModel(actual, expect, false);
                     Assert.That(set.Add(actual.Id), Is.True);
                 }
             }
         }
 
-        [Test, Order(3)]
+        [Test, Order(7)]
         public  void ImportModelInnerTest()
         {
             using (var connection = GlobalSetUp.GetConnection)
             {
                 connection.Open();
-                var importCollection = new List<BigIntegernumeric0MI>(2);
-                for (int i = 12; i < 30; i++)
+                var importCollection = new List<BigIntegernumeric0MIWA>(2);
+                for (int i = 28; i < 35; i++)
                 {
                     var importModel = _testData[i].ModelInner;
                     if (importModel == null)
@@ -4993,18 +5636,24 @@ FROM STDIN (FORMAT BINARY)
                         continue;
                     }
 
-                    importCollection.Add(importModel);
+                    importCollection.Add(
+new BigIntegernumeric0MIWA
+{
+    Id = importModel.Id,
+    Value = importModel.Value,
+    NullableValue = importModel.NullableValue,
+});
                 }
 
                 ((IBigIntegerSingleTypenumeric)this).ImportModelInner(connection, importCollection);
                 var models = ((IBigIntegerSingleTypenumeric)this).SelectImportModelInner(connection);
-                Assert.That(models, Has.Count.EqualTo(15));
+                Assert.That(models, Has.Count.EqualTo(17));
                 var set = new HashSet<long>();
                 for (var i = 0; i < models.Count(); i++)
                 {
                     var actual = models[i];
                     var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
-                    BigIntegernumeric0MI.AssertModel(actual, expect, false);
+                    BigIntegernumeric0MIWA.AssertModel(actual, expect, false);
                     Assert.That(set.Add(actual.Id), Is.True);
                 }
             }
@@ -5075,100 +5724,57 @@ ORDER BY
         {
         }
 
-        [Test, Order(5)]
-        public async Task ImportModelTest()
+        [Test, Order(9)]
+        public async Task ImportModelAsyncTest()
         {
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
+                var importCollection = new List<BigIntegernumeric0M>();
+                for (int i = 0; i < 10; i++)
+                {
+                    var importModel = _testData[i];
+                    importCollection.Add(importModel);
+                }
 
-                var importCollection = new List<BigIntegernumeric0M>(15);
-
-                    importCollection.Add(_testData[0]);
-                    importCollection.Add(_testData[1]);
-                    importCollection.Add(_testData[2]);
-                    importCollection.Add(_testData[3]);
-                    importCollection.Add(_testData[4]);
-                    importCollection.Add(_testData[5]);
-                    importCollection.Add(_testData[6]);
-                    importCollection.Add(_testData[7]);
-                    importCollection.Add(_testData[8]);
-                    importCollection.Add(_testData[9]);
-                    importCollection.Add(_testData[10]);
-                    importCollection.Add(_testData[11]);
-                    importCollection.Add(_testData[12]);
-                    importCollection.Add(_testData[13]);
-                    importCollection.Add(_testData[14]);
-                ((IBigIntegerSingleTypenumeric)this).ImportModel(connection, importCollection);
-                var models = ((IBigIntegerSingleTypenumeric)this).SelectImportModel(connection).ToList();
-                Assert.That(models, Has.Count.EqualTo(15));
-
-                BigIntegernumeric0M.AssertModel(models[0],_testData[0], false);
-                BigIntegernumeric0M.AssertModel(models[1],_testData[1], false);
-                BigIntegernumeric0M.AssertModel(models[2],_testData[2], false);
-                BigIntegernumeric0M.AssertModel(models[3],_testData[3], false);
-                BigIntegernumeric0M.AssertModel(models[4],_testData[4], false);
-                BigIntegernumeric0M.AssertModel(models[5],_testData[5], false);
-                BigIntegernumeric0M.AssertModel(models[6],_testData[6], false);
-                BigIntegernumeric0M.AssertModel(models[7],_testData[7], false);
-                BigIntegernumeric0M.AssertModel(models[8],_testData[8], false);
-                BigIntegernumeric0M.AssertModel(models[9],_testData[9], false);
-                BigIntegernumeric0M.AssertModel(models[10],_testData[10], false);
-                BigIntegernumeric0M.AssertModel(models[11],_testData[11], false);
-                BigIntegernumeric0M.AssertModel(models[12],_testData[12], false);
-                BigIntegernumeric0M.AssertModel(models[13],_testData[13], false);
-                BigIntegernumeric0M.AssertModel(models[14],_testData[14], false);
-                importCollection.Clear();
-
-                    importCollection.Add(_testData[15]);
-                    importCollection.Add(_testData[16]);
-                    importCollection.Add(_testData[17]);
-                    importCollection.Add(_testData[18]);
-                    importCollection.Add(_testData[19]);
-                    importCollection.Add(_testData[20]);
-                    importCollection.Add(_testData[21]);
-                    importCollection.Add(_testData[22]);
-                    importCollection.Add(_testData[23]);
-                    importCollection.Add(_testData[24]);
-                    importCollection.Add(_testData[25]);
-                    importCollection.Add(_testData[26]);
-                    importCollection.Add(_testData[27]);
-                    importCollection.Add(_testData[28]);
-                    importCollection.Add(_testData[29]);
                 await ((IBigIntegerSingleTypenumeric)this).ImportModelAsync(connection, importCollection);
-                models = await ((IBigIntegerSingleTypenumeric)this).SelectImportModelAsync(connection);
-                Assert.That(models, Has.Count.EqualTo(30));
+                var models = await ((IBigIntegerSingleTypenumeric)this).SelectImportModelAsync(connection);
+                Assert.That(models, Has.Count.EqualTo(10));
+                var set = new HashSet<long>();
+                for (var i = 0; i < models.Count(); i++)
+                {
+                    var actual = models[i];
+                    var expect = _testData.First(wh => wh.Id == actual.Id);
+                    BigIntegernumeric0M.AssertModel(actual, expect, false);
+                    Assert.That(set.Add(actual.Id), Is.True);
+                }
+            }
+        }
 
-                BigIntegernumeric0M.AssertModel(models[0],_testData[0], false);
-                BigIntegernumeric0M.AssertModel(models[1],_testData[1], false);
-                BigIntegernumeric0M.AssertModel(models[2],_testData[2], false);
-                BigIntegernumeric0M.AssertModel(models[3],_testData[3], false);
-                BigIntegernumeric0M.AssertModel(models[4],_testData[4], false);
-                BigIntegernumeric0M.AssertModel(models[5],_testData[5], false);
-                BigIntegernumeric0M.AssertModel(models[6],_testData[6], false);
-                BigIntegernumeric0M.AssertModel(models[7],_testData[7], false);
-                BigIntegernumeric0M.AssertModel(models[8],_testData[8], false);
-                BigIntegernumeric0M.AssertModel(models[9],_testData[9], false);
-                BigIntegernumeric0M.AssertModel(models[10],_testData[10], false);
-                BigIntegernumeric0M.AssertModel(models[11],_testData[11], false);
-                BigIntegernumeric0M.AssertModel(models[12],_testData[12], false);
-                BigIntegernumeric0M.AssertModel(models[13],_testData[13], false);
-                BigIntegernumeric0M.AssertModel(models[14],_testData[14], false);
-                BigIntegernumeric0M.AssertModel(models[15],_testData[15], false);
-                BigIntegernumeric0M.AssertModel(models[16],_testData[16], false);
-                BigIntegernumeric0M.AssertModel(models[17],_testData[17], false);
-                BigIntegernumeric0M.AssertModel(models[18],_testData[18], false);
-                BigIntegernumeric0M.AssertModel(models[19],_testData[19], false);
-                BigIntegernumeric0M.AssertModel(models[20],_testData[20], false);
-                BigIntegernumeric0M.AssertModel(models[21],_testData[21], false);
-                BigIntegernumeric0M.AssertModel(models[22],_testData[22], false);
-                BigIntegernumeric0M.AssertModel(models[23],_testData[23], false);
-                BigIntegernumeric0M.AssertModel(models[24],_testData[24], false);
-                BigIntegernumeric0M.AssertModel(models[25],_testData[25], false);
-                BigIntegernumeric0M.AssertModel(models[26],_testData[26], false);
-                BigIntegernumeric0M.AssertModel(models[27],_testData[27], false);
-                BigIntegernumeric0M.AssertModel(models[28],_testData[28], false);
-                BigIntegernumeric0M.AssertModel(models[29],_testData[29], false);
+        [Test, Order(10)]
+        public  void ImportModelTest()
+        {
+            using (var connection = GlobalSetUp.GetConnection)
+            {
+                connection.Open();
+                var importCollection = new List<BigIntegernumeric0M>();
+                for (int i = 10; i < 35; i++)
+                {
+                    var importModel = _testData[i];
+                    importCollection.Add(importModel);
+                }
+
+                ((IBigIntegerSingleTypenumeric)this).ImportModel(connection, importCollection);
+                var models = ((IBigIntegerSingleTypenumeric)this).SelectImportModel(connection);
+                Assert.That(models, Has.Count.EqualTo(35));
+                var set = new HashSet<long>();
+                for (var i = 0; i < models.Count(); i++)
+                {
+                    var actual = models[i];
+                    var expect = _testData.First(wh => wh.Id == actual.Id);
+                    BigIntegernumeric0M.AssertModel(actual, expect, false);
+                    Assert.That(set.Add(actual.Id), Is.True);
+                }
             }
         }
 
@@ -5207,7 +5813,7 @@ COPY public.binary_bigintegernumeric0m
         {
         }
 
-        [Test, Order(6)]
+        [Test, Order(13)]
         public async Task ExportModelTest()
         {
             await using (var connection = GlobalSetUp.GetConnection)
@@ -5224,7 +5830,7 @@ COPY public.binary_bigintegernumeric0m
             }
         }
 
-        [Test, Order(6)]
+        [Test, Order(13)]
         public async Task ExportModelAsyncTest()
         {
             await using (var connection = GlobalSetUp.GetConnection)
@@ -5264,7 +5870,7 @@ COPY public.binary_bigintegernumeric0m
         {
         }
 
-        [Test, Order(6)]
+        [Test, Order(13)]
         public async Task DynQueryExportModelInnerAsyncTest()
         {
             await using (var connection = GlobalSetUp.GetConnection)
@@ -5289,7 +5895,7 @@ COPY public.binary_bigintegernumeric0mi
             }
         }
 
-        [Test, Order(6)]
+        [Test, Order(13)]
         public  void DynQueryExportModelInnerTest()
         {
             using (var connection = GlobalSetUp.GetConnection)
@@ -5340,7 +5946,7 @@ COPY public.binary_bigintegernumeric0mi
         {
         }
 
-        [Test, Order(6)]
+        [Test, Order(13)]
         public async Task ExportModelInnerAsyncTest()
         {
             await using (var connection = GlobalSetUp.GetConnection)
@@ -5358,7 +5964,7 @@ COPY public.binary_bigintegernumeric0mi
             }
         }
 
-        [Test, Order(6)]
+        [Test, Order(13)]
         public  void ExportModelInnerTest()
         {
             using (var connection = GlobalSetUp.GetConnection)

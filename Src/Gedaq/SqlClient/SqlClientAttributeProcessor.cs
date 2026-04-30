@@ -113,7 +113,7 @@ namespace Gedaq.SqlClient
 
                 foreach (var mapTypeInfo in query.MapTypeInfos)
                 {
-                    mapTypeInfo.Aliases.FreezeFields(_context);
+                    mapTypeInfo.FreezeMap(_context);
                 }
             }
 

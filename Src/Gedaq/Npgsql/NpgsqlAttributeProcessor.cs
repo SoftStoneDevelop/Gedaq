@@ -224,7 +224,7 @@ namespace Gedaq.Npgsql
 
                 foreach (var mapTypeInfo in query.MapTypeInfos)
                 {
-                    mapTypeInfo.Aliases.FreezeFields(_context);
+                    mapTypeInfo.FreezeMap(_context);
                 }
             }
 
@@ -400,7 +400,7 @@ namespace Gedaq.Npgsql
 
             foreach (var mapTypeInfo in binaryExport.MapTypeInfos)
             {
-                mapTypeInfo.Aliases.FreezeFields(_context);
+                mapTypeInfo.FreezeMap(_context);
             }
 
             _binaryExports.Add(binaryExport);
@@ -430,7 +430,7 @@ namespace Gedaq.Npgsql
 
             foreach (var mapTypeInfo in binaryImport.MapTypeInfos)
             {
-                mapTypeInfo.Aliases.FreezeFields(_context);
+                mapTypeInfo.FreezeMap(_context);
             }
 
             _binaryImports.Add(binaryImport);
