@@ -24,7 +24,7 @@
 		<PackageTags>orm, database, gedaq, ObjectRelationalMapping, sql, postgres, postgresql, analysis, generator, mapping, dbconnection, mssql</PackageTags>
 		<NoPackageAnalysis>true</NoPackageAnalysis>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<PackageLicenseFile>README.md</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 	<ItemGroup>
 		<None Include="..\..\LICENSE">
