@@ -30,331 +30,331 @@ namespace Tests
         {
             new NpgsqlIntervalinterval0M
 {
-    Id = 4,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 893),
+    Id = 5,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1120),
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
     Id = 12,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2488),
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 747),
     ModelInner = new NpgsqlIntervalinterval0MI
 {
-    Id = 7,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 600),
+    Id = 6,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1066),
     NullableValue = null,
 },
-    NullableValue = null,
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1538),
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 19,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4564),
+    Id = 15,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 122),
     ModelInner = null,
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2543),
+    NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 28,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3735),
+    Id = 23,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1820),
     ModelInner = new NpgsqlIntervalinterval0MI
 {
-    Id = 11,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2404),
+    Id = 9,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 104),
     NullableValue = null,
 },
+    NullableValue = null,
+},
+            new NpgsqlIntervalinterval0M
+{
+    Id = 24,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1708),
+    ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
     Id = 31,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3301),
-    ModelInner = null,
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1040),
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3942),
+    ModelInner = new NpgsqlIntervalinterval0MI
+{
+    Id = 12,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2177),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1610),
+},
+    NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 40,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1101),
+    Id = 38,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3502),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlIntervalinterval0M
+{
+    Id = 39,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4652),
     ModelInner = new NpgsqlIntervalinterval0MI
 {
-    Id = 13,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2346),
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2059),
+    Id = 18,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 382),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 282),
 },
-    NullableValue = null,
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2088),
 },
             new NpgsqlIntervalinterval0M
 {
     Id = 46,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4952),
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1361),
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 54,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1882),
+    Id = 47,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1417),
     ModelInner = new NpgsqlIntervalinterval0MI
 {
-    Id = 15,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1712),
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3822),
+    Id = 22,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1625),
+    NullableValue = null,
 },
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1490),
+    NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 58,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4294),
+    Id = 52,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3255),
     ModelInner = null,
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 508),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 585),
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 63,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3568),
+    Id = 53,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 119),
     ModelInner = new NpgsqlIntervalinterval0MI
 {
-    Id = 24,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1914),
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1827),
+    Id = 29,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1989),
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 68,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2318),
+    Id = 62,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4403),
     ModelInner = null,
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 315),
+    NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 69,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4203),
+    Id = 64,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3731),
     ModelInner = new NpgsqlIntervalinterval0MI
 {
-    Id = 32,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 95),
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 97),
+    Id = 35,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4206),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4685),
 },
-    NullableValue = null,
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2589),
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 78,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 202),
+    Id = 72,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3963),
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 79,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4596),
+    Id = 81,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4212),
     ModelInner = new NpgsqlIntervalinterval0MI
 {
-    Id = 34,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2024),
-    NullableValue = null,
+    Id = 44,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1563),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3002),
 },
-    NullableValue = null,
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1757),
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 85,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 730),
+    Id = 87,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4966),
     ModelInner = null,
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1359),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2033),
 },
             new NpgsqlIntervalinterval0M
 {
     Id = 88,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 441),
-    ModelInner = new NpgsqlIntervalinterval0MI
-{
-    Id = 39,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 985),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new NpgsqlIntervalinterval0M
-{
-    Id = 96,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 50),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlIntervalinterval0M
-{
-    Id = 98,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1792),
-    ModelInner = new NpgsqlIntervalinterval0MI
-{
-    Id = 45,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4128),
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2733),
-},
-    NullableValue = null,
-},
-            new NpgsqlIntervalinterval0M
-{
-    Id = 100,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1775),
-    ModelInner = null,
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4741),
-},
-            new NpgsqlIntervalinterval0M
-{
-    Id = 105,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4006),
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3481),
     ModelInner = new NpgsqlIntervalinterval0MI
 {
     Id = 46,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1982),
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1708),
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4503),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1027),
+},
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3559),
+},
+            new NpgsqlIntervalinterval0M
+{
+    Id = 92,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2539),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlIntervalinterval0M
+{
+    Id = 97,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4029),
+    ModelInner = new NpgsqlIntervalinterval0MI
+{
+    Id = 48,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4962),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3019),
+},
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2895),
+},
+            new NpgsqlIntervalinterval0M
+{
+    Id = 103,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4646),
+    ModelInner = null,
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3257),
+},
+            new NpgsqlIntervalinterval0M
+{
+    Id = 109,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1348),
+    ModelInner = new NpgsqlIntervalinterval0MI
+{
+    Id = 56,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1573),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1411),
 },
     NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
     Id = 114,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2789),
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4855),
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 120,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3762),
-    ModelInner = new NpgsqlIntervalinterval0MI
-{
-    Id = 52,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4155),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new NpgsqlIntervalinterval0M
-{
-    Id = 124,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4317),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlIntervalinterval0M
-{
-    Id = 131,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4097),
+    Id = 122,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2964),
     ModelInner = new NpgsqlIntervalinterval0MI
 {
     Id = 57,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2421),
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3850),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 481),
+},
     NullableValue = null,
 },
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2085),
-},
             new NpgsqlIntervalinterval0M
 {
-    Id = 134,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4382),
+    Id = 127,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 178),
     ModelInner = null,
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4794),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2634),
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 139,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3699),
+    Id = 135,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4493),
     ModelInner = new NpgsqlIntervalinterval0MI
 {
     Id = 58,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 773),
-    NullableValue = null,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1603),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2853),
 },
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3169),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3980),
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 146,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4039),
+    Id = 143,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 894),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlIntervalinterval0M
+{
+    Id = 144,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1874),
+    ModelInner = new NpgsqlIntervalinterval0MI
+{
+    Id = 63,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3825),
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new NpgsqlIntervalinterval0M
+{
+    Id = 149,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4487),
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
     Id = 155,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3712),
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2215),
     ModelInner = new NpgsqlIntervalinterval0MI
 {
-    Id = 60,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1494),
-    NullableValue = null,
+    Id = 67,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4279),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2801),
 },
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4488),
+    NullableValue = null,
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 160,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4073),
+    Id = 156,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1051),
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1715),
+},
+            new NpgsqlIntervalinterval0M
+{
+    Id = 157,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 944),
+    ModelInner = new NpgsqlIntervalinterval0MI
+{
+    Id = 75,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2563),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3470),
+},
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1330),
 },
             new NpgsqlIntervalinterval0M
 {
     Id = 164,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2741),
-    ModelInner = new NpgsqlIntervalinterval0MI
-{
-    Id = 61,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3841),
-    NullableValue = null,
-},
-    NullableValue = null,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2647),
+    ModelInner = null,
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3342),
 },
             new NpgsqlIntervalinterval0M
 {
-    Id = 166,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1796),
-    ModelInner = null,
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4039),
+    Id = 167,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2143),
+    ModelInner = new NpgsqlIntervalinterval0MI
+{
+    Id = 80,
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2987),
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 3754),
+},
+    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1810),
 },
             new NpgsqlIntervalinterval0M
 {
     Id = 175,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2683),
-    ModelInner = new NpgsqlIntervalinterval0MI
-{
-    Id = 62,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4424),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new NpgsqlIntervalinterval0M
-{
-    Id = 179,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 497),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlIntervalinterval0M
-{
-    Id = 180,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4537),
-    ModelInner = new NpgsqlIntervalinterval0MI
-{
-    Id = 64,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 1833),
-    NullableValue = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2914),
-},
-    NullableValue = null,
-},
-            new NpgsqlIntervalinterval0M
-{
-    Id = 181,
-    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 4043),
+    Value = new NpgsqlTypes.NpgsqlInterval(months: 0, days: 0, time: 2377),
     ModelInner = null,
     NullableValue = null,
 },
@@ -1523,12 +1523,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 146;
+                parametr1.Value = 31;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 68;
+                parametr2.Value = 144;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1564,74 +1564,82 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems2 = new List<FlatNpgsqlIntervalinterval0M>();
                 await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(8));
-                Assert.That(firstItems2, Has.Count.EqualTo(8));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[7],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(24));
-                Assert.That(secondItems2, Has.Count.EqualTo(24));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[11], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[11], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[12], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[12], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[13], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[13], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[14], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[14], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[7],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[8],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[9],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[10],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[11],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[12],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[13],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[13],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[14],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[14],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[15],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[15],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[16],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[16],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[17],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[17],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[18],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[18],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[19],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[19],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[20],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[20],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[21],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[21],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[22],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[22],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[23],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[23],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(29));
+                Assert.That(firstItems2, Has.Count.EqualTo(29));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[6], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[6], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[7],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[8],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[9],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[10],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[11],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[12],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[13],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[14],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[15],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[16],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[17],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[18],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[18],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[19],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[19],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[20],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[20],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[21],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[21],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[22],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[22],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[23],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[23],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[24],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[24],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[25],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[25],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[26],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[26],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[27],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[27],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[28],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[28],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(7));
+                Assert.That(secondItems2, Has.Count.EqualTo(7));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[34], false);
             }
         }
 
@@ -1642,12 +1650,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 31;
+                parametr1.Value = 135;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 46;
+                parametr2.Value = 47;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1679,97 +1687,52 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(30));
-                Assert.That(firstItems2, Has.Count.EqualTo(30));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[5], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[5], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[6], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[6], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[7], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[7], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[8], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[8], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[9], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[9], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[10], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[10], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[11], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[11], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[12], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[7],_testData[12], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[13], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[8],_testData[13], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[14], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[9],_testData[14], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[10],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[11],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[12],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[13],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[14],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[15],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[16],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[17],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[18],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[18],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[19],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[19],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[20],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[20],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[21],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[21],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[22],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[22],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[23],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[23],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[24],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[24],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[25],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[25],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[26],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[26],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[27],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[27],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[28],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[28],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[29],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[29],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(28));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[7], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[8], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[9], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[10], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[11], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[12], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[13], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[14], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[13],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[14],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[15],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[16],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[17],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[18],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[19],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[20],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[21],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[22],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[23],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[24],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[25],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[26],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[27],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(9));
+                Assert.That(firstItems2, Has.Count.EqualTo(9));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[7],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[8],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(25));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[13],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[14],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[15],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[16],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[17],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[18],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[19],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[20],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[21],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[22],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[23],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[24],_testData[34], false);
             }
         }
 
@@ -1821,12 +1784,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 155;
+                parametr1.Value = 92;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 124;
+                parametr2.Value = 5;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1862,48 +1825,110 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems2 = new List<FlatNpgsqlIntervalinterval0M>();
                  ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(7));
-                Assert.That(firstItems2, Has.Count.EqualTo(7));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(12));
-                Assert.That(secondItems2, Has.Count.EqualTo(12));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[7],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[8],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[9],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[10],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[11],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(16));
+                Assert.That(firstItems2, Has.Count.EqualTo(16));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[7],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[8],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[9],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[10],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[11],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[12],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[13],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[14],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[15],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(34));
+                Assert.That(secondItems2, Has.Count.EqualTo(34));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[1], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[1], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[2], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[2], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[3], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[3], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[4], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[4], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[5], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[5], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[6], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[6], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[7],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[8],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[9],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[10],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[11],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[12],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[13],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[13],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[14],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[14],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[15],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[15],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[16],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[16],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[17],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[17],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[18],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[18],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[19],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[19],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[20],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[20],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[21],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[21],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[22],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[22],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[23],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[23],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[24],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[24],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[25],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[25],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[26],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[26],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[27],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[27],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[28],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[28],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[29],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[29],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[30],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[30],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[31],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[31],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[32],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[32],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[33],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[33],_testData[34], false);
             }
         }
 
@@ -1914,12 +1939,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 124;
+                parametr1.Value = 114;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 175;
+                parametr2.Value = 156;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1977,10 +2002,11 @@ ORDER BY
                         FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[10],_testData[33], false);
                         FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[34], false);
                         FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[11],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(3));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(4));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[34], false);
             }
         }
 
@@ -2068,12 +2094,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 58;
+                parametr1.Value = 144;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 78;
+                parametr2.Value = 15;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2104,64 +2130,55 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(26));
+                        Assert.That(models, Has.Count.EqualTo(7));
 
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[9], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[10], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[11], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[12], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[13], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[14], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[7],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[8],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[9],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[10],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[11],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[12],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[13],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[14],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[15],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[16],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[17],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[18],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[19],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[20],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[21],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[22],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[23],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[24],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[25],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
+                        Assert.That(models, Has.Count.EqualTo(32));
 
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[13], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[14], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[7],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[8],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[9],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[10],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[11],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[12],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[13],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[14],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[15],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[16],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[17],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[18],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[19],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[20],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[21],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[3], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[4], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[5], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[6], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[7],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[8],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[9],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[10],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[11],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[12],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[13],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[14],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[15],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[16],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[17],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[18],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[19],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[20],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[21],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[22],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[23],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[24],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[25],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[26],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[27],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[28],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[29],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[30],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[31],_testData[34], false);
                         continue;
                     }
                     
@@ -2177,12 +2194,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 139;
+                parametr1.Value = 62;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 100;
+                parametr2.Value = 38;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2214,50 +2231,87 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems2 = new List<FlatNpgsqlIntervalinterval0M>();
                 await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(9));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(16));
-                Assert.That(secondItems2, Has.Count.EqualTo(16));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[7],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[8],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[9],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[10],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[11],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[12],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[13],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[13],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[14],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[14],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[15],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[15],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(22));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[18],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[19],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[20],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[21],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(28));
+                Assert.That(secondItems2, Has.Count.EqualTo(28));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[7],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[8],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[9],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[10],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[11],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[12],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[13],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[13],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[14],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[14],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[15],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[15],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[16],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[16],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[17],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[17],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[18],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[18],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[19],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[19],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[20],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[20],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[21],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[21],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[22],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[22],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[23],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[23],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[24],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[24],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[25],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[25],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[26],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[26],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[27],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[27],_testData[34], false);
             }
         }
 
@@ -2298,12 +2352,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 100;
+                parametr1.Value = 23;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 63;
+                parametr2.Value = 157;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2334,57 +2388,50 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(16));
+                        Assert.That(models, Has.Count.EqualTo(31));
 
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[7],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[8],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[9],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[10],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[11],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[12],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[13],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[14],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[15],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[4], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[5], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[6], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[7],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[8],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[9],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[10],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[11],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[12],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[13],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[14],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[15],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[16],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[17],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[18],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[19],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[20],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[21],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[22],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[23],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[24],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[25],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[26],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[27],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[28],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[29],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[30],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
+                        Assert.That(models, Has.Count.EqualTo(3));
 
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[10], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[11], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[12], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[13], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[14], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[7],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[8],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[9],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[10],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[11],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[12],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[13],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[14],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[15],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[16],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[17],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[18],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[19],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[20],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[21],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[22],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[23],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[24],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[34], false);
                         continue;
                     }
                     
@@ -2400,12 +2447,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 131;
+                parametr1.Value = 23;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 19;
+                parametr2.Value = 24;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2437,84 +2484,100 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems2 = new List<FlatNpgsqlIntervalinterval0M>();
                  ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(11));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(32));
-                Assert.That(secondItems2, Has.Count.EqualTo(32));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[3], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[3], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[4], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[4], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[5], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[5], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[6], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[6], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[7], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[7], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[8], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[8], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[9], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[9], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[10], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[7],_testData[10], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[11], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[8],_testData[11], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[12], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[9],_testData[12], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[13], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[10],_testData[13], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[14], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[11],_testData[14], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[12],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[13],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[13],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[14],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[14],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[15],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[15],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[16],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[16],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[17],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[17],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[18],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[18],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[19],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[19],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[20],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[20],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[21],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[21],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[22],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[22],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[23],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[23],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[24],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[24],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[25],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[25],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[26],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[26],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[27],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[27],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[28],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[28],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[29],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[29],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[30],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[30],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[31],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[31],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(31));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[4], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[5], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[6], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[18],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[19],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[20],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[21],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[22],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[23],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[24],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[25],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[26],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[27],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[28],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[29],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[30],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(30));
+                Assert.That(secondItems2, Has.Count.EqualTo(30));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[5], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[5], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[6], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[6], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[7],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[8],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[9],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[10],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[11],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[12],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[13],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[13],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[14],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[14],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[15],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[15],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[16],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[16],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[17],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[17],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[18],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[18],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[19],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[19],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[20],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[20],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[21],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[21],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[22],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[22],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[23],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[23],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[24],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[24],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[25],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[25],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[26],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[26],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[27],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[27],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[28],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[28],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[29],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[29],_testData[34], false);
             }
         }
 
@@ -2594,12 +2657,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 28;
+                parametr1.Value = 122;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 164;
+                parametr2.Value = 53;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -2608,52 +2671,50 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(31));
+                        Assert.That(models, Has.Count.EqualTo(11));
 
-                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[4], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[5], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[6], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[7], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[8], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[9], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[10], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[11], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[12], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[13], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[14], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[11],_testData[15], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[12],_testData[16], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[13],_testData[17], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[14],_testData[18], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[15],_testData[19], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[16],_testData[20], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[17],_testData[21], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[18],_testData[22], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[19],_testData[23], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[20],_testData[24], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[21],_testData[25], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[22],_testData[26], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[23],_testData[27], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[24],_testData[28], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[25],_testData[29], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[26],_testData[30], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[27],_testData[31], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[28],_testData[32], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[29],_testData[33], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[30],_testData[34], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[24], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[25], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[26], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[27], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[28], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[29], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[30], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[31], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[32], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[33], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(5));
+                        Assert.That(models, Has.Count.EqualTo(23));
 
-                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[30], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[31], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[32], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[33], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[34], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[12], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[13], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[14], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[15], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[16], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[17], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[18], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[19], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[20], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[21], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[22], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[11],_testData[23], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[12],_testData[24], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[13],_testData[25], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[14],_testData[26], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[15],_testData[27], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[16],_testData[28], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[17],_testData[29], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[18],_testData[30], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[19],_testData[31], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[20],_testData[32], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[21],_testData[33], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[22],_testData[34], false);
                         continue;
                     }
                     
@@ -2688,12 +2749,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 146;
+                parametr1.Value = 81;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 179;
+                parametr2.Value = 127;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -2702,26 +2763,45 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
+                        Assert.That(models, Has.Count.EqualTo(19));
 
-                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[27], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[28], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[29], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[30], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[31], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[32], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[33], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[34], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[16], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[17], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[18], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[19], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[20], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[21], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[22], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[23], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[24], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[25], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[26], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[11],_testData[27], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[12],_testData[28], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[13],_testData[29], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[14],_testData[30], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[15],_testData[31], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[16],_testData[32], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[17],_testData[33], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[18],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(2));
+                        Assert.That(models, Has.Count.EqualTo(10));
 
-                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[33], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[34], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[25], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[26], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[27], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[28], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[29], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[30], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[31], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[32], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[33], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[34], false);
                         continue;
                     }
                     
@@ -2856,55 +2936,107 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems2 = new List<FlatNpgsqlIntervalinterval0M>();
-                await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 88, query1, 175, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(19));
-                Assert.That(firstItems2, Has.Count.EqualTo(19));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[7],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[8],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[9],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[10],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[11],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[12],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[13],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[14],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[15],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[16],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[17],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[18],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[18],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(3));
-                Assert.That(secondItems2, Has.Count.EqualTo(3));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[34], false);
+                await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 64, query1, 39, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(21));
+                Assert.That(firstItems2, Has.Count.EqualTo(21));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[7],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[8],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[9],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[10],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[11],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[12],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[13],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[14],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[15],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[16],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[17],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[18],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[18],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[19],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[19],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[20],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[20],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(27));
+                Assert.That(secondItems2, Has.Count.EqualTo(27));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[7],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[8],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[9],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[10],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[11],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[12],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[13],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[13],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[14],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[14],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[15],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[15],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[16],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[16],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[17],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[17],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[18],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[18],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[19],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[19],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[20],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[20],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[21],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[21],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[22],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[22],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[23],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[23],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[24],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[24],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[25],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[25],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[26],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[26],_testData[34], false);
             }
         }
 
@@ -2942,31 +3074,67 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 var firstItems2 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems1 = new List<FlatNpgsqlIntervalinterval0M>();
-                await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 155, query1, 155, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(7));
-                Assert.That(firstItems2, Has.Count.EqualTo(7));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(7));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[34], false);
+                await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 52, query1, 135, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(24));
+                Assert.That(firstItems2, Has.Count.EqualTo(24));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[7],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[8],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[9],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[10],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[11],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[12],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[13],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[14],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[15],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[16],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[17],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[18],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[18],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[19],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[19],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[20],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[20],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[21],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[21],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[22],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[22],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[23],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[23],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(9));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[34], false);
             }
         }
 
@@ -3045,67 +3213,109 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems2 = new List<FlatNpgsqlIntervalinterval0M>();
-                 ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 96, query1, 134, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(18));
-                Assert.That(firstItems2, Has.Count.EqualTo(18));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[7],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[8],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[9],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[10],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[11],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[12],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[13],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[14],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[15],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[16],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[17],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(10));
-                Assert.That(secondItems2, Has.Count.EqualTo(10));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[7],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[8],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[9],_testData[34], false);
+                 ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 47, query1, 52, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(25));
+                Assert.That(firstItems2, Has.Count.EqualTo(25));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[7],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[8],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[9],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[10],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[11],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[12],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[13],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[14],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[15],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[16],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[17],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[18],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[18],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[19],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[19],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[20],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[20],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[21],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[21],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[22],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[22],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[23],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[23],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[24],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[24],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(24));
+                Assert.That(secondItems2, Has.Count.EqualTo(24));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[7],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[8],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[9],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[10],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[11],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[12],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[13],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[13],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[14],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[14],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[15],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[15],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[16],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[16],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[17],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[17],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[18],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[18],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[19],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[19],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[20],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[20],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[21],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[21],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[22],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[22],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[23],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[23],_testData[34], false);
             }
         }
 
@@ -3143,63 +3353,74 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 var firstItems2 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems1 = new List<FlatNpgsqlIntervalinterval0M>();
-                 ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionMMDynQuerySelectModelBatch(connection, 85, query1, 120, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(20));
-                Assert.That(firstItems2, Has.Count.EqualTo(20));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[7],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[8],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[9],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[10],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[11],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[12],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[13],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[14],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[15],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[16],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[17],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[18],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[18],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[19],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[19],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(13));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[34], false);
+                 ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionMMDynQuerySelectModelBatch(connection, 52, query1, 92, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(24));
+                Assert.That(firstItems2, Has.Count.EqualTo(24));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[0],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[1],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[2],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[3],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[4],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[5],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[6],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[7],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[8],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[9],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[10],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[11],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[12],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[13],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[14],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[15],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[16],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[17],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[18],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[18],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[19],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[19],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[20],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[20],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[21],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[21],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[22],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[22],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[23],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems2[23],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(16));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[13],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[14],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[15],_testData[34], false);
             }
         }
 
@@ -3309,49 +3530,73 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 120, query1, 105, query2))
+                foreach(var batchResult in await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 31, query1, 53, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
+                        Assert.That(models, Has.Count.EqualTo(29));
 
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[7],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[8],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[9],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[10],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[11],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[12],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[6], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[7],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[8],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[9],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[10],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[11],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[12],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[13],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[14],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[15],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[16],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[17],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[18],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[19],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[20],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[21],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[22],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[23],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[24],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[25],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[26],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[27],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[28],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(15));
+                        Assert.That(models, Has.Count.EqualTo(23));
 
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[7],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[8],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[9],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[10],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[11],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[12],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[13],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[14],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[7],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[8],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[9],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[10],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[11],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[12],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[13],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[14],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[15],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[16],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[17],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[18],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[19],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[20],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[21],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[22],_testData[34], false);
                         continue;
                     }
                     
@@ -3394,45 +3639,50 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems2 = new List<FlatNpgsqlIntervalinterval0M>();
-                await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 63, query1, 164, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(25));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[10], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[11], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[12], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[13], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[14], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[18],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[19],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[20],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[21],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[22],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[23],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[24],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(5));
-                Assert.That(secondItems2, Has.Count.EqualTo(5));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[34], false);
+                await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 38, query1, 149, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(28));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[15],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[16],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[17],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[18],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[19],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[20],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[21],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[22],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[23],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[24],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[25],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[26],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[27],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(6));
+                Assert.That(secondItems2, Has.Count.EqualTo(6));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[34], false);
             }
         }
 
@@ -3491,54 +3741,59 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in  ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTDynQuerySelectModelBatch(connection, 175, query1, 31, query2))
+                foreach(var batchResult in  ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTDynQuerySelectModelBatch(connection, 156, query1, 5, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
+                        Assert.That(models, Has.Count.EqualTo(4));
 
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(30));
+                        Assert.That(models, Has.Count.EqualTo(34));
 
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[5], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[6], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[7], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[8], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[9], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[10], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[11], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[7],_testData[12], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[8],_testData[13], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[9],_testData[14], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[10],_testData[15], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[11],_testData[16], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[12],_testData[17], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[13],_testData[18], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[14],_testData[19], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[15],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[16],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[17],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[18],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[19],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[20],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[21],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[22],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[23],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[24],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[25],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[26],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[27],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[28],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(models[29],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[0],_testData[1], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[1],_testData[2], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[2],_testData[3], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[3],_testData[4], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[4],_testData[5], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[5],_testData[6], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[6],_testData[7], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[7],_testData[8], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[8],_testData[9], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[9],_testData[10], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[10],_testData[11], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[11],_testData[12], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[12],_testData[13], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[13],_testData[14], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[14],_testData[15], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[15],_testData[16], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[16],_testData[17], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[17],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[18],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[19],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[20],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[21],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[22],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[23],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[24],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[25],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[26],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[27],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[28],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[29],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[30],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[31],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[32],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(models[33],_testData[34], false);
                         continue;
                     }
                     
@@ -3581,51 +3836,48 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems1 = new List<FlatNpgsqlIntervalinterval0M>();
                 var secondItems2 = new List<FlatNpgsqlIntervalinterval0M>();
-                 ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionDynQuerySelectModelBatch(connection, 105, query1, 120, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(15));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[20], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[21], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[4],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[5],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[6],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[7],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[8],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[9],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[10],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[11],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[12],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[13],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[14],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(13));
-                Assert.That(secondItems2, Has.Count.EqualTo(13));
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[22], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[23], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[24], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[25], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[26], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[27], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[28], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[7],_testData[29], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[8],_testData[30], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[9],_testData[31], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[10],_testData[32], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[11],_testData[33], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[34], false);
-                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[12],_testData[34], false);
+                 ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionDynQuerySelectModelBatch(connection, 156, query1, 88, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(4));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[0],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[1],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[2],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(firstItems1[3],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(17));
+                Assert.That(secondItems2, Has.Count.EqualTo(17));
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[0],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[0],_testData[18], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[1],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[1],_testData[19], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[2],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[2],_testData[20], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[3],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[3],_testData[21], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[4],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[4],_testData[22], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[5],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[5],_testData[23], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[6],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[6],_testData[24], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[7],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[7],_testData[25], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[8],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[8],_testData[26], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[9],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[9],_testData[27], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[10],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[10],_testData[28], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[11],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[11],_testData[29], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[12],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[12],_testData[30], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[13],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[13],_testData[31], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[14],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[14],_testData[32], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[15],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[15],_testData[33], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems1[16],_testData[34], false);
+                        FlatNpgsqlIntervalinterval0M.AssertModel(secondItems2[16],_testData[34], false);
             }
         }
 
@@ -3705,68 +3957,68 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTSelectModelBatchAsync(connection, 54, 85))
+                foreach(var batchResult in await ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTSelectModelBatchAsync(connection, 87, 31))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
+                        Assert.That(models, Has.Count.EqualTo(18));
 
-                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[8], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[9], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[10], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[11], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[12], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[13], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[14], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[15], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[16], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[17], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[18], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[11],_testData[19], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[12],_testData[20], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[13],_testData[21], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[14],_testData[22], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[15],_testData[23], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[16],_testData[24], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[17],_testData[25], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[18],_testData[26], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[19],_testData[27], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[20],_testData[28], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[21],_testData[29], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[22],_testData[30], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[23],_testData[31], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[24],_testData[32], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[25],_testData[33], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[26],_testData[34], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[17], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[18], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[19], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[20], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[21], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[22], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[23], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[24], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[25], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[26], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[27], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[11],_testData[28], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[12],_testData[29], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[13],_testData[30], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[14],_testData[31], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[15],_testData[32], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[16],_testData[33], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[17],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
+                        Assert.That(models, Has.Count.EqualTo(29));
 
-                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[15], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[16], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[17], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[18], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[19], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[20], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[21], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[22], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[23], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[24], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[25], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[11],_testData[26], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[12],_testData[27], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[13],_testData[28], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[14],_testData[29], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[15],_testData[30], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[16],_testData[31], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[17],_testData[32], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[18],_testData[33], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[19],_testData[34], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[6], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[7], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[8], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[9], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[10], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[11], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[12], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[13], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[14], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[15], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[16], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[11],_testData[17], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[12],_testData[18], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[13],_testData[19], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[14],_testData[20], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[15],_testData[21], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[16],_testData[22], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[17],_testData[23], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[18],_testData[24], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[19],_testData[25], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[20],_testData[26], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[21],_testData[27], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[22],_testData[28], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[23],_testData[29], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[24],_testData[30], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[25],_testData[31], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[26],_testData[32], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[27],_testData[33], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[28],_testData[34], false);
                         continue;
                     }
                     
@@ -3797,34 +4049,67 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTSelectModelBatch(connection, 131, 179))
+                foreach(var batchResult in  ((INpgsqlIntervalSingleTypeinterval)this).DbConnectionSTSelectModelBatch(connection, 72, 46))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
+                        Assert.That(models, Has.Count.EqualTo(20));
 
-                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[24], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[25], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[26], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[27], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[28], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[29], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[30], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[31], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[32], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[33], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[34], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[15], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[16], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[17], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[18], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[19], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[20], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[21], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[22], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[23], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[24], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[25], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[11],_testData[26], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[12],_testData[27], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[13],_testData[28], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[14],_testData[29], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[15],_testData[30], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[16],_testData[31], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[17],_testData[32], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[18],_testData[33], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[19],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(2));
+                        Assert.That(models, Has.Count.EqualTo(26));
 
-                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[33], false);
-                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[34], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[9], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[10], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[11], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[12], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[13], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[14], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[15], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[16], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[17], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[18], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[19], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[11],_testData[20], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[12],_testData[21], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[13],_testData[22], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[14],_testData[23], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[15],_testData[24], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[16],_testData[25], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[17],_testData[26], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[18],_testData[27], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[19],_testData[28], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[20],_testData[29], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[21],_testData[30], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[22],_testData[31], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[23],_testData[32], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[24],_testData[33], false);
+                        NpgsqlIntervalinterval0M.AssertModel(models[25],_testData[34], false);
                         continue;
                     }
                     
@@ -3840,11 +4125,11 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((INpgsqlIntervalSingleTypeinterval)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((INpgsqlIntervalSingleTypeinterval)this).SetDbConnectionSelectModelParametrs(cmd, 120);
+                ((INpgsqlIntervalSingleTypeinterval)this).SetDbConnectionSelectModelParametrs(cmd, 52);
                 var models = await ((INpgsqlIntervalSingleTypeinterval)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(13));
-NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[22], false);NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[23], false);NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[24], false);NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[25], false);NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[26], false);NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[27], false);NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[28], false);NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[29], false);NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[30], false);NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[31], false);NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[32], false);NpgsqlIntervalinterval0M.AssertModel(models[11],_testData[33], false);NpgsqlIntervalinterval0M.AssertModel(models[12],_testData[34], false);
+                Assert.That(models, Has.Count.EqualTo(24));
+NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[11], false);NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[12], false);NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[13], false);NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[14], false);NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[15], false);NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[16], false);NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[17], false);NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[18], false);NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[19], false);NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[20], false);NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[21], false);NpgsqlIntervalinterval0M.AssertModel(models[11],_testData[22], false);NpgsqlIntervalinterval0M.AssertModel(models[12],_testData[23], false);NpgsqlIntervalinterval0M.AssertModel(models[13],_testData[24], false);NpgsqlIntervalinterval0M.AssertModel(models[14],_testData[25], false);NpgsqlIntervalinterval0M.AssertModel(models[15],_testData[26], false);NpgsqlIntervalinterval0M.AssertModel(models[16],_testData[27], false);NpgsqlIntervalinterval0M.AssertModel(models[17],_testData[28], false);NpgsqlIntervalinterval0M.AssertModel(models[18],_testData[29], false);NpgsqlIntervalinterval0M.AssertModel(models[19],_testData[30], false);NpgsqlIntervalinterval0M.AssertModel(models[20],_testData[31], false);NpgsqlIntervalinterval0M.AssertModel(models[21],_testData[32], false);NpgsqlIntervalinterval0M.AssertModel(models[22],_testData[33], false);NpgsqlIntervalinterval0M.AssertModel(models[23],_testData[34], false);
             }
         }
 
@@ -3855,11 +4140,11 @@ NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[22], false);NpgsqlInter
             {
                 await connection.OpenAsync();
                  using var cmd =  ((INpgsqlIntervalSingleTypeinterval)this).CreateDbConnectionSelectModelCommand(connection);
-                ((INpgsqlIntervalSingleTypeinterval)this).SetDbConnectionSelectModelParametrs(cmd, 78);
+                ((INpgsqlIntervalSingleTypeinterval)this).SetDbConnectionSelectModelParametrs(cmd, 155);
                 var models =  ((INpgsqlIntervalSingleTypeinterval)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(22));
-NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[13], false);NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[14], false);NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[15], false);NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[16], false);NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[17], false);NpgsqlIntervalinterval0M.AssertModel(models[5],_testData[18], false);NpgsqlIntervalinterval0M.AssertModel(models[6],_testData[19], false);NpgsqlIntervalinterval0M.AssertModel(models[7],_testData[20], false);NpgsqlIntervalinterval0M.AssertModel(models[8],_testData[21], false);NpgsqlIntervalinterval0M.AssertModel(models[9],_testData[22], false);NpgsqlIntervalinterval0M.AssertModel(models[10],_testData[23], false);NpgsqlIntervalinterval0M.AssertModel(models[11],_testData[24], false);NpgsqlIntervalinterval0M.AssertModel(models[12],_testData[25], false);NpgsqlIntervalinterval0M.AssertModel(models[13],_testData[26], false);NpgsqlIntervalinterval0M.AssertModel(models[14],_testData[27], false);NpgsqlIntervalinterval0M.AssertModel(models[15],_testData[28], false);NpgsqlIntervalinterval0M.AssertModel(models[16],_testData[29], false);NpgsqlIntervalinterval0M.AssertModel(models[17],_testData[30], false);NpgsqlIntervalinterval0M.AssertModel(models[18],_testData[31], false);NpgsqlIntervalinterval0M.AssertModel(models[19],_testData[32], false);NpgsqlIntervalinterval0M.AssertModel(models[20],_testData[33], false);NpgsqlIntervalinterval0M.AssertModel(models[21],_testData[34], false);
+                Assert.That(models, Has.Count.EqualTo(5));
+NpgsqlIntervalinterval0M.AssertModel(models[0],_testData[30], false);NpgsqlIntervalinterval0M.AssertModel(models[1],_testData[31], false);NpgsqlIntervalinterval0M.AssertModel(models[2],_testData[32], false);NpgsqlIntervalinterval0M.AssertModel(models[3],_testData[33], false);NpgsqlIntervalinterval0M.AssertModel(models[4],_testData[34], false);
             }
         }
 
@@ -4559,8 +4844,7 @@ COPY public.binary_npgsqlintervalinterval0m
             query: null,
             methodName:"MMDynQueryWAExportModelInner",
             queryMapTypes: [typeof(NpgsqlIntervalinterval0MIWA), typeof(NpgsqlIntervalinterval0MIWA)],
-            dbTypes:
-            new NpgsqlDbType[]
+            dbTypes: new NpgsqlDbType[]
             {
                 (NpgsqlTypes.NpgsqlDbType)(9),
                 (NpgsqlTypes.NpgsqlDbType)(30),
@@ -4569,7 +4853,19 @@ COPY public.binary_npgsqlintervalinterval0m
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof(INpgsqlIntervalSingleTypeinterval))]
+            asPartInterface: typeof(INpgsqlIntervalSingleTypeinterval)),
+            Gedaq.Npgsql.Attributes.DbTypesOverride(0, new NpgsqlDbType[]
+            {
+                (NpgsqlTypes.NpgsqlDbType)(9),
+                (NpgsqlTypes.NpgsqlDbType)(30),
+                (NpgsqlTypes.NpgsqlDbType)(30)
+            }),
+            Gedaq.Npgsql.Attributes.DbTypesOverride(1, new NpgsqlDbType[]
+            {
+                (NpgsqlTypes.NpgsqlDbType)(9),
+                (NpgsqlTypes.NpgsqlDbType)(30),
+                (NpgsqlTypes.NpgsqlDbType)(30)
+            })]
         private void MMDynQueryWAExportModelInnerConfig()
         {
         }
@@ -4654,8 +4950,7 @@ COPY
             query: null,
             methodName:"DynQueryWAExportModelInner",
             queryMapTypes: [typeof(NpgsqlIntervalinterval0MIWA)],
-            dbTypes:
-            new NpgsqlDbType[]
+            dbTypes: new NpgsqlDbType[]
             {
                 (NpgsqlTypes.NpgsqlDbType)(9),
                 (NpgsqlTypes.NpgsqlDbType)(30),
@@ -4664,7 +4959,13 @@ COPY
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof(INpgsqlIntervalSingleTypeinterval))]
+            asPartInterface: typeof(INpgsqlIntervalSingleTypeinterval)),
+            Gedaq.Npgsql.Attributes.DbTypesOverride(0, new NpgsqlDbType[]
+            {
+                (NpgsqlTypes.NpgsqlDbType)(9),
+                (NpgsqlTypes.NpgsqlDbType)(30),
+                (NpgsqlTypes.NpgsqlDbType)(30)
+            })]
         private void DynQueryWAExportModelInnerConfig()
         {
         }
@@ -4723,13 +5024,7 @@ COPY public.binary_npgsqlintervalinterval0mi
             query: null,
             methodName:"MMDynQueryExportModelInner",
             queryMapTypes: [typeof(NpgsqlIntervalinterval0MIWA), typeof(NpgsqlIntervalinterval0MIWA)],
-            dbTypes:
-            new NpgsqlDbType[]
-            {
-                (NpgsqlTypes.NpgsqlDbType)(9),
-                (NpgsqlTypes.NpgsqlDbType)(30),
-                (NpgsqlTypes.NpgsqlDbType)(30)
-            },
+            dbTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -4818,13 +5113,7 @@ COPY
             query: null,
             methodName:"DynQueryExportModelInner",
             queryMapTypes: [typeof(NpgsqlIntervalinterval0MIWA)],
-            dbTypes:
-            new NpgsqlDbType[]
-            {
-                (NpgsqlTypes.NpgsqlDbType)(9),
-                (NpgsqlTypes.NpgsqlDbType)(30),
-                (NpgsqlTypes.NpgsqlDbType)(30)
-            },
+            dbTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -4900,8 +5189,7 @@ COPY
 ",
             methodName:"MMWAExportModelInner",
             queryMapTypes: [typeof(NpgsqlIntervalinterval0MI), typeof(NpgsqlIntervalinterval0MI)],
-            dbTypes:
-            new NpgsqlDbType[]
+            dbTypes: new NpgsqlDbType[]
             {
                 (NpgsqlTypes.NpgsqlDbType)(9),
                 (NpgsqlTypes.NpgsqlDbType)(30),
@@ -4910,7 +5198,19 @@ COPY
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof(INpgsqlIntervalSingleTypeinterval))]
+            asPartInterface: typeof(INpgsqlIntervalSingleTypeinterval)),
+            Gedaq.Npgsql.Attributes.DbTypesOverride(0, new NpgsqlDbType[]
+            {
+                (NpgsqlTypes.NpgsqlDbType)(9),
+                (NpgsqlTypes.NpgsqlDbType)(30),
+                (NpgsqlTypes.NpgsqlDbType)(30)
+            }),
+            Gedaq.Npgsql.Attributes.DbTypesOverride(1, new NpgsqlDbType[]
+            {
+                (NpgsqlTypes.NpgsqlDbType)(9),
+                (NpgsqlTypes.NpgsqlDbType)(30),
+                (NpgsqlTypes.NpgsqlDbType)(30)
+            })]
         private void MMWAExportModelInnerConfig()
         {
         }
@@ -4976,8 +5276,7 @@ COPY public.binary_npgsqlintervalinterval0mi
 ",
             methodName:"WAExportModelInner",
             queryMapTypes: [typeof(NpgsqlIntervalinterval0MI)],
-            dbTypes:
-            new NpgsqlDbType[]
+            dbTypes: new NpgsqlDbType[]
             {
                 (NpgsqlTypes.NpgsqlDbType)(9),
                 (NpgsqlTypes.NpgsqlDbType)(30),
@@ -4986,7 +5285,13 @@ COPY public.binary_npgsqlintervalinterval0mi
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof(INpgsqlIntervalSingleTypeinterval))]
+            asPartInterface: typeof(INpgsqlIntervalSingleTypeinterval)),
+            Gedaq.Npgsql.Attributes.DbTypesOverride(0, new NpgsqlDbType[]
+            {
+                (NpgsqlTypes.NpgsqlDbType)(9),
+                (NpgsqlTypes.NpgsqlDbType)(30),
+                (NpgsqlTypes.NpgsqlDbType)(30)
+            })]
         private void WAExportModelInnerConfig()
         {
         }
@@ -5044,13 +5349,7 @@ COPY
 ",
             methodName:"MMExportModelInner",
             queryMapTypes: [typeof(NpgsqlIntervalinterval0MIWA), typeof(NpgsqlIntervalinterval0MIWA)],
-            dbTypes:
-            new NpgsqlDbType[]
-            {
-                (NpgsqlTypes.NpgsqlDbType)(9),
-                (NpgsqlTypes.NpgsqlDbType)(30),
-                (NpgsqlTypes.NpgsqlDbType)(30)
-            },
+            dbTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5120,13 +5419,7 @@ COPY public.binary_npgsqlintervalinterval0mi
 ",
             methodName:"ExportModelInner",
             queryMapTypes: [typeof(NpgsqlIntervalinterval0MIWA)],
-            dbTypes:
-            new NpgsqlDbType[]
-            {
-                (NpgsqlTypes.NpgsqlDbType)(9),
-                (NpgsqlTypes.NpgsqlDbType)(30),
-                (NpgsqlTypes.NpgsqlDbType)(30)
-            },
+            dbTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,

@@ -61,22 +61,63 @@ namespace TestsGenerator.Generators.PostgreSQL
             var queryMapTypes = isMultiMap ?
                 $"typeof({model.ModelInner.ClassName(isDynamicQuery, classWithAtr)}), typeof({model.ModelInner.ClassName(isDynamicQuery, classWithAtr)})" :
                 $"typeof({model.ModelInner.ClassName(isDynamicQuery, classWithAtr)})";
+
+            var dbTypeOverride = string.Empty;
+            if (isOverrideDbTypes)
+            {
+                if (isMultiMap)
+                {
+                    dbTypeOverride = $@",
+            Gedaq.Npgsql.Attributes.DbTypesOverride(0, new NpgsqlDbType[]
+            {{
+                {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
+            }}),
+            Gedaq.Npgsql.Attributes.DbTypesOverride(1, new NpgsqlDbType[]
+            {{
+                {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
+            }})";
+                }
+                else
+                {
+                    dbTypeOverride = $@",
+            Gedaq.Npgsql.Attributes.DbTypesOverride(0, new NpgsqlDbType[]
+            {{
+                {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
+            }})";
+                }
+            }
+
+            string dbTypes;
+            if  (isOverrideDbTypes)
+            {
+                dbTypes = $@"new NpgsqlDbType[]
+            {{
+                {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
+            }}";
+            }
+            else
+            {
+                dbTypes = ValueConstants.NullValue;
+            }
+
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.BinaryExport(
             query: {query},
             methodName:""{ExportMethodName(isDynamicQuery, isMultiMap, isOverrideDbTypes)}"",
             queryMapTypes: [{queryMapTypes}],
-            dbTypes:
-            new NpgsqlDbType[]
-            {{
-                {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
-                {model.ModelInner.TypeInfo.SpecialDbTypeStr()},
-                {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
-            }},
+            dbTypes: {dbTypes},
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName}))]
+            asPartInterface: typeof({interfaceTypeName})){dbTypeOverride}]
         private void {ExportMethodName(isDynamicQuery, isMultiMap, isOverrideDbTypes)}Config()
         {{
         }}
