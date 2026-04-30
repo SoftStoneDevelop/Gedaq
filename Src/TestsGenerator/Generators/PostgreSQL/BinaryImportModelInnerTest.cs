@@ -18,31 +18,43 @@ namespace TestsGenerator.Generators.PostgreSQL
             ModelValueStorage storage,
             string interfaceTypeName)
         {
-            SelectImportModelInnerConfig(
-                model,
-                stringBuilder,
-                interfaceTypeName);
-
+            var startIndex = 0;
             var ordered =
                 storage.Values
                 .OrderBy(or => or.IdValue)
                 .ToList();
 
-            foreach (var isDynamicQuery in ValueConstants.BoolValues)
+            var totalItemsInDb = 0;
+            for (int i = 0; i < ValueConstants.BoolValues.Length; i++)
             {
+                bool isDynamicQuery = ValueConstants.BoolValues[i];
+
+                SelectImportModelInnerConfig(
+                    model,
+                    stringBuilder,
+                    interfaceTypeName,
+                    isDynamicQuery);
+
                 ImportModelInnerConfig(
                     stringBuilder,
                     model,
                     interfaceTypeName,
                     isDynamicQuery: isDynamicQuery);
 
-                ImportModelInnerTest(
-                    order,
-                    model,
-                    stringBuilder,
-                    ordered,
-                    interfaceTypeName,
-                    isDynamicQuery: isDynamicQuery);
+                foreach (var isAsync in ValueConstants.BoolValues)
+                {
+                    ImportModelInnerTest(
+                        order,
+                        model,
+                        stringBuilder,
+                        ordered,
+                        interfaceTypeName,
+                        ref startIndex,
+                        2,
+                        ref totalItemsInDb,
+                        isDynamicQuery: isDynamicQuery,
+                        isAsync: isAsync);
+                }
             }
         }
 
@@ -52,6 +64,7 @@ namespace TestsGenerator.Generators.PostgreSQL
             string interfaceTypeName,
             bool isDynamicQuery)
         {
+            var classWithAtr = isDynamicQuery;
             var query =
                 isDynamicQuery ?
                 ValueConstants.NullValue :
@@ -61,7 +74,7 @@ namespace TestsGenerator.Generators.PostgreSQL
 [Gedaq.Npgsql.Attributes.BinaryImport(
             query: {query},
             methodName:""{ImportMethodName(isDynamicQuery)}"",
-            queryMapType: typeof({model.ModelInner.ClassName(false)}),
+            queryMapType: typeof({model.ModelInner.ClassName(isDynamicQuery, classWithAtr)}),
             dbTypes:
             new NpgsqlDbType[]
             {{
@@ -100,8 +113,10 @@ FROM STDIN (FORMAT BINARY)
         private static void SelectImportModelInnerConfig(
             Model.ModelType model,
             StringBuilderArray.StringBuilderArray stringBuilder,
-            string interfaceTypeName)
+            string interfaceTypeName,
+            bool isDynamicQuery)
         {
+            var classWithAtr = isDynamicQuery;
             var query = $@"
 @""
 SELECT
@@ -117,17 +132,22 @@ ORDER BY
             stringBuilder.Append($@"
 [Gedaq.DbConnection.Attributes.Query(
             query: {query},
-            methodName:""Select{_testName}"",
-            queryMapTypes: [typeof({model.ModelInner.ClassName(false)})],
+            methodName:""{BinarySelectMethodName(isDynamicQuery)}"",
+            queryMapTypes: [typeof({model.ModelInner.ClassName(isDynamicQuery, classWithAtr)})],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
             asPartInterface: typeof({interfaceTypeName}))]
-        private void Select{_testName}Config()
+        private void {BinarySelectMethodName(isDynamicQuery)}Config()
         {{
         }}
 ");
+        }
+
+        private static string BinarySelectMethodName(bool isDynamicQuery)
+        {
+            return $"{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}Select{_testName}";
         }
 
         private static void ImportModelInnerTest(
@@ -136,82 +156,83 @@ ORDER BY
             StringBuilderArray.StringBuilderArray stringBuilder,
             List<ModelValue> storage,
             string interfaceTypeName,
-            bool isDynamicQuery)
+            ref int startIndex,
+            int count,
+            ref int totalCount,
+            bool isDynamicQuery,
+            bool isAsync)
         {
-            if (storage.Count < 4)
-            {
-                throw new System.ArgumentOutOfRangeException(nameof(storage));
-            }
+            System.ArgumentOutOfRangeException.ThrowIfGreaterThan(startIndex + count, storage.Count);
+
+            var classWithAtr = isDynamicQuery;
+            var await = isAsync ? "await " : string.Empty;
+            var async = isAsync ? "Async" : string.Empty;
 
             var query =
                 isDynamicQuery ?
                 $", {ImportQuery(model)}" :
                 string.Empty;
 
+            var originStartIndex = startIndex;
+            var addCount = 0;
+            for (int i = startIndex; i < storage.Count; i++)
+            {
+                if (addCount == count)
+                {
+                    break;
+                }
+
+                startIndex++;
+                ModelValue value = storage[i];
+                if (value.InnerModel == null)
+                {
+                    continue;
+                }
+                else
+                {
+                    addCount++;
+                }
+            }
+
+            if (addCount != count)
+            {
+                throw new System.Exception("Storage note have enough items");
+            }
+
+            totalCount += count;
             stringBuilder.Append($@"
         [Test, Order({order})]
-        public async Task {ImportMethodName(isDynamicQuery)}Test()
+        public {async.ToLowerInvariant()} {(isAsync ? "Task" : "void")} {ImportMethodName(isDynamicQuery)}{async}Test()
         {{
-            await using (var connection = GlobalSetUp.GetConnection)
+            {await}using (var connection = GlobalSetUp.GetConnection)
             {{
-                await connection.OpenAsync();
-");
-            var index = 0;
-            stringBuilder.Append($@"
-                var importCollection = new List<{model.ModelInner.ClassName(false)}>({storage.Count / 2});
-");
-            var expectCount = FillCollection(storage.Count / 2);
+                {await}connection.Open{async}();
+                var importCollection = new List<{model.ModelInner.ClassName(isDynamicQuery, classWithAtr)}>({count});
+                for (int i = {originStartIndex}; i < {startIndex + count}; i++)
+                {{
+                    var importModel = {TestsPart.TestDataArrayName}[i].{model.ModelInnerName};
+                    if (importModel == null)
+                    {{
+                        continue;
+                    }}
 
-            stringBuilder.Append($@"
-                {TypeHelper.ThisAsInterface(interfaceTypeName)}.{ImportMethodName(isDynamicQuery)}(connection, importCollection{query});
-                var models = {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}(connection);
-                Assert.That(models, Has.Count.EqualTo({expectCount}));
+                    importCollection.Add({ModelGenerator.ConvertToWAOrSelf(model.ModelInner, "importModel", classWithAtr)});
+                }}
+
+                {await}{TypeHelper.ThisAsInterface(interfaceTypeName)}.{ImportMethodName(isDynamicQuery)}{async}(connection, importCollection{query});
+                var models = {await}{TypeHelper.ThisAsInterface(interfaceTypeName)}.{BinarySelectMethodName(isDynamicQuery)}{async}(connection);
+                Assert.That(models, Has.Count.EqualTo({totalCount}));
                 var set = new HashSet<long>();
                 for (var i = 0; i < models.Count(); i++)
                 {{
                     var actual = models[i];
                     var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
-                    {model.ModelInner.ClassName(false)}.{ModelGenerator.AssertMethodName}(actual, expect, false);
+                    {model.ModelInner.ClassName(isDynamicQuery, classWithAtr)}.{ModelGenerator.AssertMethodName}(actual, expect, false);
                     Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
                 }}
-                set.Clear();
-                importCollection.Clear();
-");
-            var expectCount2 = FillCollection(storage.Count);
-
-            stringBuilder.Append($@"
-                await {TypeHelper.ThisAsInterface(interfaceTypeName)}.{ImportMethodName(isDynamicQuery)}Async(connection, importCollection{query});
-                models = await {TypeHelper.ThisAsInterface(interfaceTypeName)}.Select{_testName}Async(connection);
-                Assert.That(models, Has.Count.EqualTo({expectCount + expectCount2}));
-                for (var i = 0; i < models.Count(); i++)
-                {{
-                    var actual = models[i];
-                    var expect = {TestsPart.TestDataArrayName}.First(wh => wh.{model.ModelInnerName} != null && wh.{model.ModelInnerName}.{model.ModelInner.IdName} == actual.{model.ModelInner.IdName}).{model.ModelInnerName};
-                    {model.ModelInner.ClassName(false)}.{ModelGenerator.AssertMethodName}(actual, expect, false);
-                    Assert.That(set.Add(actual.{model.ModelInner.IdName}), Is.True);
-                }}
-                set.Clear();
             }}
         }}
 ");
-            int FillCollection(int end)
-            {
-                int count = 0;
-                for (; index < end; index++)
-                {
-                    ModelValue value = storage[index];
-                    if (value.InnerModel == null)
-                    {
-                        continue;
-                    }
-
-                    count++;
-                    stringBuilder.Append($@"
-                importCollection.Add({TestsPart.TestDataArrayName}[{index}].{model.ModelInnerName});");
-                }
-
-                return count;
-            }
         }
     }
 }

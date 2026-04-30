@@ -314,9 +314,7 @@ namespace Tests
             _stringBuilder.Append($@"
         }}
     }}
-}}
-
-");
+}}");
             await File.WriteAllTextAsync($"{destinationFolder}/Model/{model.ClassName(withDbTypes, withDbTypes)}.cs", _stringBuilder.ToString());
             _stringBuilder.Clear();
         }
@@ -393,18 +391,34 @@ namespace Tests
 }}";
         }
 
-        private static string CreateNewModelInnerInstance(Model.ModelInnerType model, Model.InnerModelValue value)
+        private static string CreateNewModelInnerInstance(Model.ModelInnerType model, Model.InnerModelValue value, bool withDbTypes = false)
         {
             if (value == null)
             {
                 return ValueConstants.NullValue;
             }
 
-            return $@"new {model.ClassName(false)}
+            return $@"new {model.ClassName(false, withDbTypes)}
 {{
     {model.IdName} = {value.Id},
     {model.ValueName} = {value.Value},
     {model.NullableValueName} = {value.NullableValue},
+}}";
+        }
+
+        public static string ConvertToWAOrSelf(Model.ModelInnerType model, string valueName, bool withDbTypes = false)
+        {
+            if (!withDbTypes)
+            {
+                return valueName;
+            }
+
+            return $@"
+new {model.ClassName(false, withDbTypes)}
+{{
+    {model.IdName} = {valueName}.{model.IdName},
+    {model.ValueName} = {valueName}.{model.ValueName},
+    {model.NullableValueName} = {valueName}.{model.NullableValueName},
 }}";
         }
     }

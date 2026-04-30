@@ -176,7 +176,7 @@ namespace Gedaq.Base.Model
                     }
                 }
 
-                if (string.IsNullOrWhiteSpace(sqlName) && position.HasValue)
+                if (string.IsNullOrWhiteSpace(sqlName) && !position.HasValue)
                 {
                     sqlName = name.ToLowerInvariant();
                 }
