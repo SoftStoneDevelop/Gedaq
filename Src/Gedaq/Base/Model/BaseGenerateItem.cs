@@ -5,6 +5,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
 using System.Linq;
+using System.Text;
 
 namespace Gedaq.Base.Model
 {
@@ -12,9 +13,25 @@ namespace Gedaq.Base.Model
     {
         public MapTypeInfo[] MapTypeInfos { get; protected set; }
 
-        public abstract string MapDelegateParametrName { get; }
+        public virtual string MapDelegateParametrName => "mapDelegate";
 
-        public abstract string MapDelegateParametrType();
+        public virtual string MapDelegateParametrType()
+        {
+            var builder = new StringBuilder("Action<");
+            for (int i = 0; i < MapTypeInfos.Length; i++)
+            {
+                var mapTypeInfo = MapTypeInfos[i];
+                if (i != 0)
+                {
+                    builder.Append(",");
+                }
+
+                builder.Append(mapTypeInfo.ItemTypeName);
+            }
+            builder.Append(">");
+
+            return builder.ToString();
+        }
 
         public bool HaveMapTypes => MapTypeInfos?.Length > 0;
 

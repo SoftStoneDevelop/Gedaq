@@ -28,171 +28,209 @@ namespace Tests
         {
             new DateTimedatetime20M
 {
-    Id = 6,
-    Value = new DateTime(year: 1955, month: 10, day: 14, hour: 8, minute: 18, second: 44, millisecond: 437, kind: DateTimeKind.Local),
+    Id = 4,
+    Value = new DateTime(year: 1999, month: 10, day: 7, hour: 6, minute: 42, second: 13, millisecond: 733, kind: DateTimeKind.Local),
     ModelInner = null,
-    NullableValue = new DateTime(year: 2010, month: 10, day: 11, hour: 6, minute: 34, second: 1, millisecond: 573, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1917, month: 10, day: 18, hour: 4, minute: 57, second: 26, millisecond: 701, kind: DateTimeKind.Local),
 },
             new DateTimedatetime20M
-{
-    Id = 11,
-    Value = new DateTime(year: 1927, month: 10, day: 16, hour: 7, minute: 56, second: 46, millisecond: 714, kind: DateTimeKind.Local),
-    ModelInner = new DateTimedatetime20MI
-{
-    Id = 8,
-    Value = new DateTime(year: 1946, month: 10, day: 19, hour: 18, minute: 48, second: 53, millisecond: 400, kind: DateTimeKind.Local),
-    NullableValue = null,
-},
-    NullableValue = new DateTime(year: 2007, month: 10, day: 17, hour: 8, minute: 17, second: 17, millisecond: 302, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime20M
-{
-    Id = 18,
-    Value = new DateTime(year: 1990, month: 10, day: 1, hour: 19, minute: 8, second: 32, millisecond: 175, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 1940, month: 10, day: 7, hour: 9, minute: 40, second: 16, millisecond: 946, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime20M
-{
-    Id = 25,
-    Value = new DateTime(year: 1967, month: 10, day: 2, hour: 17, minute: 37, second: 12, millisecond: 273, kind: DateTimeKind.Local),
-    ModelInner = new DateTimedatetime20MI
 {
     Id = 9,
-    Value = new DateTime(year: 2016, month: 10, day: 17, hour: 19, minute: 16, second: 10, millisecond: 923, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1981, month: 10, day: 19, hour: 2, minute: 24, second: 43, millisecond: 122, kind: DateTimeKind.Local),
-},
+    Value = new DateTime(year: 1950, month: 10, day: 13, hour: 1, minute: 38, second: 20, millisecond: 171, kind: DateTimeKind.Local),
+    ModelInner = new DateTimedatetime20MI
+{
+    Id = 1,
+    Value = new DateTime(year: 1932, month: 10, day: 6, hour: 17, minute: 51, second: 54, millisecond: 96, kind: DateTimeKind.Local),
     NullableValue = null,
+},
+    NullableValue = new DateTime(year: 1988, month: 10, day: 18, hour: 22, minute: 1, second: 20, millisecond: 35, kind: DateTimeKind.Local),
 },
             new DateTimedatetime20M
 {
-    Id = 27,
-    Value = new DateTime(year: 2008, month: 10, day: 18, hour: 16, minute: 52, second: 26, millisecond: 956, kind: DateTimeKind.Local),
+    Id = 17,
+    Value = new DateTime(year: 1970, month: 10, day: 14, hour: 18, minute: 32, second: 56, millisecond: 700, kind: DateTimeKind.Local),
     ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime20M
 {
-    Id = 30,
-    Value = new DateTime(year: 2010, month: 10, day: 11, hour: 5, minute: 39, second: 39, millisecond: 990, kind: DateTimeKind.Local),
+    Id = 26,
+    Value = new DateTime(year: 2018, month: 10, day: 12, hour: 13, minute: 1, second: 28, millisecond: 278, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime20MI
 {
-    Id = 14,
-    Value = new DateTime(year: 1921, month: 10, day: 18, hour: 9, minute: 23, second: 28, millisecond: 437, kind: DateTimeKind.Local),
-    NullableValue = null,
+    Id = 7,
+    Value = new DateTime(year: 1918, month: 10, day: 3, hour: 17, minute: 49, second: 35, millisecond: 364, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1936, month: 10, day: 8, hour: 3, minute: 23, second: 34, millisecond: 548, kind: DateTimeKind.Local),
 },
     NullableValue = null,
 },
             new DateTimedatetime20M
 {
-    Id = 38,
-    Value = new DateTime(year: 1963, month: 10, day: 5, hour: 7, minute: 56, second: 16, millisecond: 840, kind: DateTimeKind.Local),
+    Id = 29,
+    Value = new DateTime(year: 1988, month: 10, day: 14, hour: 14, minute: 56, second: 16, millisecond: 50, kind: DateTimeKind.Local),
     ModelInner = null,
-    NullableValue = new DateTime(year: 1983, month: 10, day: 19, hour: 5, minute: 14, second: 19, millisecond: 622, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1965, month: 10, day: 9, hour: 12, minute: 15, second: 9, millisecond: 418, kind: DateTimeKind.Local),
 },
             new DateTimedatetime20M
 {
-    Id = 47,
-    Value = new DateTime(year: 1920, month: 10, day: 15, hour: 12, minute: 27, second: 11, millisecond: 799, kind: DateTimeKind.Local),
+    Id = 32,
+    Value = new DateTime(year: 1937, month: 10, day: 16, hour: 12, minute: 20, second: 39, millisecond: 342, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime20MI
 {
-    Id = 21,
-    Value = new DateTime(year: 1919, month: 10, day: 18, hour: 10, minute: 13, second: 24, millisecond: 731, kind: DateTimeKind.Local),
+    Id = 12,
+    Value = new DateTime(year: 2005, month: 10, day: 1, hour: 5, minute: 54, second: 52, millisecond: 41, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1992, month: 10, day: 4, hour: 8, minute: 37, second: 26, millisecond: 833, kind: DateTimeKind.Local),
+},
     NullableValue = null,
 },
-    NullableValue = new DateTime(year: 1969, month: 10, day: 6, hour: 2, minute: 31, second: 45, millisecond: 841, kind: DateTimeKind.Local),
+            new DateTimedatetime20M
+{
+    Id = 41,
+    Value = new DateTime(year: 1973, month: 10, day: 10, hour: 14, minute: 3, second: 17, millisecond: 698, kind: DateTimeKind.Local),
+    ModelInner = null,
+    NullableValue = new DateTime(year: 2013, month: 10, day: 2, hour: 14, minute: 20, second: 43, millisecond: 28, kind: DateTimeKind.Local),
 },
             new DateTimedatetime20M
 {
     Id = 50,
-    Value = new DateTime(year: 1955, month: 10, day: 15, hour: 21, minute: 14, second: 31, millisecond: 476, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 1994, month: 10, day: 8, hour: 3, minute: 23, second: 58, millisecond: 409, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime20M
-{
-    Id = 54,
-    Value = new DateTime(year: 1945, month: 10, day: 12, hour: 17, minute: 31, second: 1, millisecond: 995, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 1957, month: 10, day: 15, hour: 20, minute: 52, second: 19, millisecond: 916, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime20MI
 {
-    Id = 29,
-    Value = new DateTime(year: 1930, month: 10, day: 9, hour: 9, minute: 20, second: 33, millisecond: 810, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1932, month: 10, day: 6, hour: 19, minute: 9, second: 46, millisecond: 202, kind: DateTimeKind.Local),
+    Id = 19,
+    Value = new DateTime(year: 1988, month: 10, day: 4, hour: 8, minute: 17, second: 40, millisecond: 710, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1974, month: 10, day: 10, hour: 15, minute: 29, second: 55, millisecond: 575, kind: DateTimeKind.Local),
 },
     NullableValue = null,
 },
             new DateTimedatetime20M
 {
-    Id = 61,
-    Value = new DateTime(year: 1973, month: 10, day: 13, hour: 15, minute: 33, second: 26, millisecond: 286, kind: DateTimeKind.Local),
+    Id = 51,
+    Value = new DateTime(year: 2000, month: 10, day: 19, hour: 11, minute: 15, second: 13, millisecond: 78, kind: DateTimeKind.Local),
     ModelInner = null,
-    NullableValue = new DateTime(year: 1971, month: 10, day: 19, hour: 16, minute: 27, second: 27, millisecond: 643, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1925, month: 10, day: 18, hour: 8, minute: 11, second: 51, millisecond: 455, kind: DateTimeKind.Local),
 },
             new DateTimedatetime20M
 {
-    Id = 68,
-    Value = new DateTime(year: 1964, month: 10, day: 8, hour: 11, minute: 8, second: 29, millisecond: 806, kind: DateTimeKind.Local),
+    Id = 52,
+    Value = new DateTime(year: 2003, month: 10, day: 8, hour: 9, minute: 30, second: 4, millisecond: 963, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime20MI
 {
-    Id = 38,
-    Value = new DateTime(year: 1923, month: 10, day: 10, hour: 13, minute: 27, second: 8, millisecond: 310, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1944, month: 10, day: 4, hour: 7, minute: 49, second: 2, millisecond: 60, kind: DateTimeKind.Local),
+    Id = 23,
+    Value = new DateTime(year: 1953, month: 10, day: 14, hour: 19, minute: 24, second: 26, millisecond: 782, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1991, month: 10, day: 16, hour: 5, minute: 16, second: 17, millisecond: 831, kind: DateTimeKind.Local),
 },
+    NullableValue = null,
+},
+            new DateTimedatetime20M
+{
+    Id = 55,
+    Value = new DateTime(year: 2000, month: 10, day: 13, hour: 20, minute: 13, second: 6, millisecond: 957, kind: DateTimeKind.Local),
+    ModelInner = null,
+    NullableValue = new DateTime(year: 1918, month: 10, day: 19, hour: 3, minute: 21, second: 50, millisecond: 624, kind: DateTimeKind.Local),
+},
+            new DateTimedatetime20M
+{
+    Id = 60,
+    Value = new DateTime(year: 2004, month: 10, day: 10, hour: 4, minute: 45, second: 58, millisecond: 739, kind: DateTimeKind.Local),
+    ModelInner = new DateTimedatetime20MI
+{
+    Id = 26,
+    Value = new DateTime(year: 1934, month: 10, day: 7, hour: 20, minute: 18, second: 25, millisecond: 15, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1971, month: 10, day: 9, hour: 1, minute: 52, second: 2, millisecond: 391, kind: DateTimeKind.Local),
+},
+    NullableValue = new DateTime(year: 2015, month: 10, day: 16, hour: 16, minute: 24, second: 32, millisecond: 82, kind: DateTimeKind.Local),
+},
+            new DateTimedatetime20M
+{
+    Id = 66,
+    Value = new DateTime(year: 1993, month: 10, day: 9, hour: 4, minute: 37, second: 36, millisecond: 475, kind: DateTimeKind.Local),
+    ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime20M
 {
     Id = 70,
-    Value = new DateTime(year: 1930, month: 10, day: 11, hour: 3, minute: 31, second: 51, millisecond: 570, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 1999, month: 10, day: 18, hour: 20, minute: 1, second: 3, millisecond: 963, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime20M
-{
-    Id = 75,
-    Value = new DateTime(year: 1974, month: 10, day: 10, hour: 14, minute: 12, second: 9, millisecond: 260, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 1997, month: 10, day: 5, hour: 7, minute: 32, second: 33, millisecond: 240, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime20MI
 {
-    Id = 42,
-    Value = new DateTime(year: 1968, month: 10, day: 18, hour: 4, minute: 13, second: 38, millisecond: 812, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1924, month: 10, day: 17, hour: 22, minute: 5, second: 53, millisecond: 620, kind: DateTimeKind.Local),
+    Id = 27,
+    Value = new DateTime(year: 2017, month: 10, day: 19, hour: 14, minute: 3, second: 17, millisecond: 722, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1946, month: 10, day: 8, hour: 11, minute: 34, second: 38, millisecond: 85, kind: DateTimeKind.Local),
 },
     NullableValue = null,
 },
             new DateTimedatetime20M
 {
+    Id = 74,
+    Value = new DateTime(year: 2019, month: 10, day: 15, hour: 3, minute: 16, second: 16, millisecond: 123, kind: DateTimeKind.Local),
+    ModelInner = null,
+    NullableValue = new DateTime(year: 1993, month: 10, day: 10, hour: 18, minute: 12, second: 50, millisecond: 823, kind: DateTimeKind.Local),
+},
+            new DateTimedatetime20M
+{
     Id = 78,
-    Value = new DateTime(year: 1969, month: 10, day: 18, hour: 1, minute: 24, second: 34, millisecond: 254, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 1995, month: 10, day: 13, hour: 16, minute: 3, second: 18, millisecond: 728, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime20M
-{
-    Id = 86,
-    Value = new DateTime(year: 2017, month: 10, day: 9, hour: 13, minute: 23, second: 54, millisecond: 555, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 1990, month: 10, day: 17, hour: 6, minute: 51, second: 6, millisecond: 245, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime20MI
 {
-    Id = 44,
-    Value = new DateTime(year: 2006, month: 10, day: 9, hour: 2, minute: 9, second: 26, millisecond: 301, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1966, month: 10, day: 13, hour: 3, minute: 24, second: 7, millisecond: 850, kind: DateTimeKind.Local),
+    Id = 29,
+    Value = new DateTime(year: 1942, month: 10, day: 17, hour: 18, minute: 54, second: 45, millisecond: 657, kind: DateTimeKind.Local),
+    NullableValue = null,
 },
-    NullableValue = new DateTime(year: 2011, month: 10, day: 8, hour: 20, minute: 31, second: 58, millisecond: 422, kind: DateTimeKind.Local),
+    NullableValue = null,
 },
             new DateTimedatetime20M
 {
-    Id = 94,
-    Value = new DateTime(year: 2018, month: 10, day: 13, hour: 13, minute: 45, second: 16, millisecond: 590, kind: DateTimeKind.Local),
+    Id = 80,
+    Value = new DateTime(year: 2004, month: 10, day: 6, hour: 17, minute: 22, second: 58, millisecond: 226, kind: DateTimeKind.Local),
     ModelInner = null,
-    NullableValue = new DateTime(year: 1962, month: 10, day: 9, hour: 16, minute: 16, second: 29, millisecond: 30, kind: DateTimeKind.Local),
+    NullableValue = null,
 },
             new DateTimedatetime20M
 {
-    Id = 97,
-    Value = new DateTime(year: 1986, month: 10, day: 16, hour: 18, minute: 58, second: 22, millisecond: 560, kind: DateTimeKind.Local),
+    Id = 81,
+    Value = new DateTime(year: 1952, month: 10, day: 11, hour: 15, minute: 3, second: 9, millisecond: 712, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime20MI
 {
-    Id = 49,
-    Value = new DateTime(year: 1976, month: 10, day: 6, hour: 1, minute: 26, second: 12, millisecond: 211, kind: DateTimeKind.Local),
+    Id = 31,
+    Value = new DateTime(year: 1999, month: 10, day: 15, hour: 8, minute: 40, second: 7, millisecond: 508, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1922, month: 10, day: 1, hour: 6, minute: 6, second: 7, millisecond: 584, kind: DateTimeKind.Local),
+},
+    NullableValue = null,
+},
+            new DateTimedatetime20M
+{
+    Id = 82,
+    Value = new DateTime(year: 1939, month: 10, day: 4, hour: 16, minute: 18, second: 43, millisecond: 436, kind: DateTimeKind.Local),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateTimedatetime20M
+{
+    Id = 83,
+    Value = new DateTime(year: 2011, month: 10, day: 9, hour: 2, minute: 32, second: 34, millisecond: 925, kind: DateTimeKind.Local),
+    ModelInner = new DateTimedatetime20MI
+{
+    Id = 40,
+    Value = new DateTime(year: 1988, month: 10, day: 5, hour: 12, minute: 1, second: 33, millisecond: 490, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1956, month: 10, day: 13, hour: 9, minute: 54, second: 15, millisecond: 343, kind: DateTimeKind.Local),
+},
+    NullableValue = null,
+},
+            new DateTimedatetime20M
+{
+    Id = 90,
+    Value = new DateTime(year: 1972, month: 10, day: 4, hour: 9, minute: 35, second: 44, millisecond: 935, kind: DateTimeKind.Local),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateTimedatetime20M
+{
+    Id = 95,
+    Value = new DateTime(year: 1943, month: 10, day: 10, hour: 2, minute: 15, second: 37, millisecond: 769, kind: DateTimeKind.Local),
+    ModelInner = new DateTimedatetime20MI
+{
+    Id = 41,
+    Value = new DateTime(year: 1969, month: 10, day: 1, hour: 13, minute: 27, second: 4, millisecond: 62, kind: DateTimeKind.Local),
     NullableValue = null,
 },
     NullableValue = null,
@@ -200,161 +238,123 @@ namespace Tests
             new DateTimedatetime20M
 {
     Id = 100,
-    Value = new DateTime(year: 1942, month: 10, day: 19, hour: 1, minute: 52, second: 5, millisecond: 505, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 1958, month: 10, day: 9, hour: 5, minute: 27, second: 29, millisecond: 321, kind: DateTimeKind.Local),
     ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime20M
 {
-    Id = 103,
-    Value = new DateTime(year: 1932, month: 10, day: 16, hour: 4, minute: 21, second: 11, millisecond: 344, kind: DateTimeKind.Local),
+    Id = 106,
+    Value = new DateTime(year: 1946, month: 10, day: 11, hour: 11, minute: 44, second: 43, millisecond: 316, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime20MI
 {
-    Id = 55,
-    Value = new DateTime(year: 1993, month: 10, day: 1, hour: 14, minute: 38, second: 50, millisecond: 654, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1929, month: 10, day: 6, hour: 6, minute: 24, second: 14, millisecond: 557, kind: DateTimeKind.Local),
+    Id = 45,
+    Value = new DateTime(year: 1972, month: 10, day: 16, hour: 16, minute: 37, second: 10, millisecond: 324, kind: DateTimeKind.Local),
+    NullableValue = null,
 },
-    NullableValue = new DateTime(year: 1974, month: 10, day: 16, hour: 6, minute: 46, second: 22, millisecond: 660, kind: DateTimeKind.Local),
+    NullableValue = null,
+},
+            new DateTimedatetime20M
+{
+    Id = 107,
+    Value = new DateTime(year: 1923, month: 10, day: 17, hour: 21, minute: 54, second: 23, millisecond: 422, kind: DateTimeKind.Local),
+    ModelInner = null,
+    NullableValue = null,
 },
             new DateTimedatetime20M
 {
     Id = 112,
-    Value = new DateTime(year: 2010, month: 10, day: 13, hour: 9, minute: 8, second: 36, millisecond: 236, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 1952, month: 10, day: 17, hour: 8, minute: 29, second: 27, millisecond: 534, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 1986, month: 10, day: 1, hour: 1, minute: 17, second: 44, millisecond: 992, kind: DateTimeKind.Local),
+    ModelInner = new DateTimedatetime20MI
+{
+    Id = 47,
+    Value = new DateTime(year: 1982, month: 10, day: 3, hour: 12, minute: 21, second: 12, millisecond: 471, kind: DateTimeKind.Local),
+    NullableValue = null,
+},
+    NullableValue = new DateTime(year: 1935, month: 10, day: 3, hour: 7, minute: 7, second: 40, millisecond: 519, kind: DateTimeKind.Local),
 },
             new DateTimedatetime20M
 {
-    Id = 115,
-    Value = new DateTime(year: 1981, month: 10, day: 1, hour: 21, minute: 18, second: 9, millisecond: 365, kind: DateTimeKind.Local),
-    ModelInner = new DateTimedatetime20MI
-{
-    Id = 62,
-    Value = new DateTime(year: 2019, month: 10, day: 1, hour: 3, minute: 40, second: 27, millisecond: 511, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1947, month: 10, day: 16, hour: 7, minute: 44, second: 49, millisecond: 354, kind: DateTimeKind.Local),
-},
+    Id = 113,
+    Value = new DateTime(year: 1959, month: 10, day: 15, hour: 18, minute: 45, second: 16, millisecond: 584, kind: DateTimeKind.Local),
+    ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime20M
 {
-    Id = 118,
-    Value = new DateTime(year: 1975, month: 10, day: 4, hour: 9, minute: 53, second: 14, millisecond: 916, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 1988, month: 10, day: 12, hour: 22, minute: 41, second: 13, millisecond: 83, kind: DateTimeKind.Local),
+    Id = 119,
+    Value = new DateTime(year: 1966, month: 10, day: 13, hour: 14, minute: 33, second: 12, millisecond: 380, kind: DateTimeKind.Local),
+    ModelInner = new DateTimedatetime20MI
+{
+    Id = 53,
+    Value = new DateTime(year: 1987, month: 10, day: 8, hour: 21, minute: 51, second: 23, millisecond: 440, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1971, month: 10, day: 4, hour: 9, minute: 24, second: 36, millisecond: 533, kind: DateTimeKind.Local),
+},
+    NullableValue = new DateTime(year: 1918, month: 10, day: 17, hour: 7, minute: 23, second: 6, millisecond: 991, kind: DateTimeKind.Local),
 },
             new DateTimedatetime20M
 {
-    Id = 126,
-    Value = new DateTime(year: 2006, month: 10, day: 18, hour: 3, minute: 9, second: 35, millisecond: 691, kind: DateTimeKind.Local),
+    Id = 124,
+    Value = new DateTime(year: 2019, month: 10, day: 2, hour: 2, minute: 27, second: 22, millisecond: 584, kind: DateTimeKind.Local),
+    ModelInner = null,
+    NullableValue = new DateTime(year: 2010, month: 10, day: 3, hour: 5, minute: 33, second: 3, millisecond: 415, kind: DateTimeKind.Local),
+},
+            new DateTimedatetime20M
+{
+    Id = 130,
+    Value = new DateTime(year: 2016, month: 10, day: 8, hour: 10, minute: 50, second: 15, millisecond: 642, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime20MI
 {
-    Id = 68,
-    Value = new DateTime(year: 2011, month: 10, day: 4, hour: 3, minute: 49, second: 58, millisecond: 442, kind: DateTimeKind.Local),
-    NullableValue = null,
+    Id = 60,
+    Value = new DateTime(year: 1923, month: 10, day: 4, hour: 17, minute: 49, second: 11, millisecond: 542, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 2018, month: 10, day: 11, hour: 17, minute: 2, second: 38, millisecond: 919, kind: DateTimeKind.Local),
 },
-    NullableValue = new DateTime(year: 1944, month: 10, day: 2, hour: 9, minute: 26, second: 28, millisecond: 350, kind: DateTimeKind.Local),
+    NullableValue = null,
 },
             new DateTimedatetime20M
 {
     Id = 134,
-    Value = new DateTime(year: 1941, month: 10, day: 8, hour: 17, minute: 53, second: 42, millisecond: 371, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 1981, month: 10, day: 18, hour: 18, minute: 27, second: 52, millisecond: 449, kind: DateTimeKind.Local),
     ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime20M
 {
-    Id = 135,
-    Value = new DateTime(year: 1970, month: 10, day: 8, hour: 8, minute: 53, second: 46, millisecond: 336, kind: DateTimeKind.Local),
+    Id = 143,
+    Value = new DateTime(year: 2007, month: 10, day: 15, hour: 15, minute: 33, second: 5, millisecond: 374, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime20MI
 {
-    Id = 77,
-    Value = new DateTime(year: 2010, month: 10, day: 14, hour: 3, minute: 56, second: 46, millisecond: 195, kind: DateTimeKind.Local),
+    Id = 61,
+    Value = new DateTime(year: 1938, month: 10, day: 19, hour: 12, minute: 57, second: 54, millisecond: 520, kind: DateTimeKind.Local),
     NullableValue = null,
 },
-    NullableValue = new DateTime(year: 2003, month: 10, day: 19, hour: 10, minute: 32, second: 48, millisecond: 479, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime20M
-{
-    Id = 140,
-    Value = new DateTime(year: 2005, month: 10, day: 1, hour: 13, minute: 52, second: 24, millisecond: 634, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 1973, month: 10, day: 9, hour: 21, minute: 4, second: 8, millisecond: 227, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1957, month: 10, day: 8, hour: 8, minute: 30, second: 11, millisecond: 850, kind: DateTimeKind.Local),
 },
             new DateTimedatetime20M
 {
     Id = 147,
-    Value = new DateTime(year: 1925, month: 10, day: 13, hour: 13, minute: 19, second: 44, millisecond: 102, kind: DateTimeKind.Local),
-    ModelInner = new DateTimedatetime20MI
-{
-    Id = 81,
-    Value = new DateTime(year: 1953, month: 10, day: 12, hour: 15, minute: 37, second: 8, millisecond: 959, kind: DateTimeKind.Local),
-    NullableValue = new DateTime(year: 1997, month: 10, day: 16, hour: 10, minute: 15, second: 17, millisecond: 682, kind: DateTimeKind.Local),
-},
+    Value = new DateTime(year: 1928, month: 10, day: 18, hour: 12, minute: 51, second: 5, millisecond: 280, kind: DateTimeKind.Local),
+    ModelInner = null,
     NullableValue = null,
 },
             new DateTimedatetime20M
 {
     Id = 150,
-    Value = new DateTime(year: 1950, month: 10, day: 14, hour: 18, minute: 37, second: 13, millisecond: 970, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 1999, month: 10, day: 4, hour: 8, minute: 42, second: 33, millisecond: 297, kind: DateTimeKind.Local),
-},
-            new DateTimedatetime20M
-{
-    Id = 159,
-    Value = new DateTime(year: 1978, month: 10, day: 18, hour: 4, minute: 6, second: 2, millisecond: 581, kind: DateTimeKind.Local),
+    Value = new DateTime(year: 1969, month: 10, day: 15, hour: 3, minute: 31, second: 25, millisecond: 890, kind: DateTimeKind.Local),
     ModelInner = new DateTimedatetime20MI
 {
-    Id = 90,
-    Value = new DateTime(year: 1984, month: 10, day: 16, hour: 17, minute: 42, second: 48, millisecond: 291, kind: DateTimeKind.Local),
+    Id = 64,
+    Value = new DateTime(year: 1974, month: 10, day: 6, hour: 18, minute: 43, second: 26, millisecond: 63, kind: DateTimeKind.Local),
     NullableValue = null,
 },
     NullableValue = null,
 },
             new DateTimedatetime20M
 {
-    Id = 165,
-    Value = new DateTime(year: 1928, month: 10, day: 9, hour: 5, minute: 9, second: 13, millisecond: 488, kind: DateTimeKind.Local),
+    Id = 156,
+    Value = new DateTime(year: 1921, month: 10, day: 14, hour: 3, minute: 56, second: 14, millisecond: 849, kind: DateTimeKind.Local),
     ModelInner = null,
-    NullableValue = null,
-},
-            new DateTimedatetime20M
-{
-    Id = 169,
-    Value = new DateTime(year: 2014, month: 10, day: 8, hour: 1, minute: 5, second: 11, millisecond: 589, kind: DateTimeKind.Local),
-    ModelInner = new DateTimedatetime20MI
-{
-    Id = 91,
-    Value = new DateTime(year: 2012, month: 10, day: 4, hour: 1, minute: 6, second: 2, millisecond: 305, kind: DateTimeKind.Local),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new DateTimedatetime20M
-{
-    Id = 172,
-    Value = new DateTime(year: 1985, month: 10, day: 12, hour: 1, minute: 13, second: 53, millisecond: 353, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new DateTimedatetime20M
-{
-    Id = 173,
-    Value = new DateTime(year: 1990, month: 10, day: 1, hour: 16, minute: 30, second: 53, millisecond: 227, kind: DateTimeKind.Local),
-    ModelInner = new DateTimedatetime20MI
-{
-    Id = 99,
-    Value = new DateTime(year: 1993, month: 10, day: 16, hour: 16, minute: 30, second: 7, millisecond: 640, kind: DateTimeKind.Local),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new DateTimedatetime20M
-{
-    Id = 174,
-    Value = new DateTime(year: 1989, month: 10, day: 8, hour: 2, minute: 37, second: 55, millisecond: 959, kind: DateTimeKind.Local),
-    ModelInner = null,
-    NullableValue = new DateTime(year: 1922, month: 10, day: 12, hour: 9, minute: 15, second: 37, millisecond: 940, kind: DateTimeKind.Local),
+    NullableValue = new DateTime(year: 1996, month: 10, day: 8, hour: 18, minute: 50, second: 20, millisecond: 642, kind: DateTimeKind.Local),
 },
         };
 
@@ -1352,12 +1352,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 27;
+                parametr1.Value = 113;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 86;
+                parametr2.Value = 82;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1393,108 +1393,58 @@ ORDER BY
                 var secondItems1 = new List<FlatDateTimedatetime20M>();
                 var secondItems2 = new List<FlatDateTimedatetime20M>();
                 await ((IDateTimeSingleTypedatetime2)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(30));
-                Assert.That(firstItems2, Has.Count.EqualTo(30));
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[5], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[5], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[6], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[6], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[7], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[7], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[8], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[8], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[9], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[9], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[9],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[10],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[11],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[12],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[13],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[14],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[14],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[15],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[15],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[16],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[16],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[17],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[17],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[18],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[18],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[19],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[19],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[20],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[20],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[21],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[21],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[22],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[22],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[23],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[23],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[24],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[24],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[25],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[25],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[26],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[26],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[27],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[27],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[28],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[28],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[29],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[29],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(19));
-                Assert.That(secondItems2, Has.Count.EqualTo(19));
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[11],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[12],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[13],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[14],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[15],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[16],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[17],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[17],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[18],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[18],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(8));
+                Assert.That(firstItems2, Has.Count.EqualTo(8));
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(16));
+                Assert.That(secondItems2, Has.Count.EqualTo(16));
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[12],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[13],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[14],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[15],_testData[34], false);
             }
         }
 
@@ -1505,12 +1455,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 27;
+                parametr1.Value = 41;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 94;
+                parametr2.Value = 81;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1542,87 +1492,82 @@ ORDER BY
                 var firstItems2 = new List<FlatDateTimedatetime20M>();
                 var secondItems1 = new List<FlatDateTimedatetime20M>();
                 await ((IDateTimeSingleTypedatetime2)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(30));
-                Assert.That(firstItems2, Has.Count.EqualTo(30));
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[5], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[5], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[6], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[6], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[7], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[7], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[8], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[8], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[9], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[9], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[9],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[10],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[11],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[12],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[13],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[14],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[14],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[15],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[15],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[16],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[16],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[17],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[17],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[18],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[18],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[19],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[19],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[20],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[20],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[21],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[21],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[22],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[22],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[23],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[23],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[24],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[24],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[25],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[25],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[26],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[26],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[27],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[27],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[28],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[28],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[29],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[29],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(18));
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[17],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(28));
+                Assert.That(firstItems2, Has.Count.EqualTo(28));
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[9],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[10],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[11],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[12],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[13],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[14],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[14],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[15],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[15],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[16],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[16],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[17],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[17],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[18],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[18],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[19],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[19],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[20],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[20],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[21],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[21],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[22],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[22],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[23],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[23],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[24],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[24],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[25],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[25],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[26],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[26],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[27],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[27],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(17));
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[34], false);
             }
         }
 
@@ -1674,12 +1619,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 135;
+                parametr1.Value = 4;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 54;
+                parametr2.Value = 51;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1715,78 +1660,130 @@ ORDER BY
                 var secondItems1 = new List<FlatDateTimedatetime20M>();
                 var secondItems2 = new List<FlatDateTimedatetime20M>();
                  ((IDateTimeSingleTypedatetime2)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(9));
-                Assert.That(firstItems2, Has.Count.EqualTo(9));
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(25));
-                Assert.That(secondItems2, Has.Count.EqualTo(25));
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[11],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[12],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[13],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[14],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[15],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[16],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[17],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[17],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[18],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[18],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[19],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[19],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[20],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[20],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[21],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[21],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[22],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[22],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[23],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[23],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[24],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[24],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(34));
+                Assert.That(firstItems2, Has.Count.EqualTo(34));
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[1], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[1], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[2], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[2], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[3], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[3], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[4], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[4], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[5], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[5], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[6], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[6], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[9],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[10],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[11],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[12],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[13],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[14],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[14],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[15],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[15],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[16],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[16],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[17],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[17],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[18],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[18],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[19],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[19],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[20],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[20],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[21],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[21],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[22],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[22],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[23],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[23],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[24],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[24],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[25],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[25],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[26],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[26],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[27],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[27],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[28],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[28],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[29],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[29],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[30],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[30],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[31],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[31],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[32],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[32],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[33],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[33],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(26));
+                Assert.That(secondItems2, Has.Count.EqualTo(26));
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[11],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[12],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[13],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[14],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[15],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[16],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[17],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[17],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[18],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[18],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[19],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[19],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[20],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[20],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[21],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[21],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[22],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[22],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[23],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[23],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[24],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[24],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[25],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[25],_testData[34], false);
             }
         }
 
@@ -1797,12 +1794,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 18;
+                parametr1.Value = 134;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 11;
+                parametr2.Value = 9;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1834,72 +1831,16 @@ ORDER BY
                 var firstItems2 = new List<FlatDateTimedatetime20M>();
                 var secondItems1 = new List<FlatDateTimedatetime20M>();
                  ((IDateTimeSingleTypedatetime2)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(32));
-                Assert.That(firstItems2, Has.Count.EqualTo(32));
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[3], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[3], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[4], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[4], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[5], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[5], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[6], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[6], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[7], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[7], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[8], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[8], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[9], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[9], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[9],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[10],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[11],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[12],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[13],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[14],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[14],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[15],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[15],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[16],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[16],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[17],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[17],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[18],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[18],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[19],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[19],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[20],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[20],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[21],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[21],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[22],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[22],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[23],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[23],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[24],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[24],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[25],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[25],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[26],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[26],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[27],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[27],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[28],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[28],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[29],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[29],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[30],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[30],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[31],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[31],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(4));
+                Assert.That(firstItems2, Has.Count.EqualTo(4));
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[34], false);
                 Assert.That(secondItems1, Has.Count.EqualTo(33));
                         FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[2], false);
                         FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[3], false);
@@ -2021,12 +1962,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 115;
+                parametr1.Value = 119;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 11;
+                parametr2.Value = 107;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2057,62 +1998,33 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
+                        Assert.That(models, Has.Count.EqualTo(7));
 
-                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(33));
+                        Assert.That(models, Has.Count.EqualTo(10));
 
-                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[2], false);
-                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[3], false);
-                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[4], false);
-                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[5], false);
-                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[6], false);
-                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[7], false);
-                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[8], false);
-                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[9], false);
-                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(models[13],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(models[14],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(models[15],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(models[16],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(models[17],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(models[18],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(models[19],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(models[20],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(models[21],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(models[22],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(models[23],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(models[24],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(models[25],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(models[26],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(models[27],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(models[28],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(models[29],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(models[30],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(models[31],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(models[32],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[34], false);
                         continue;
                     }
                     
@@ -2128,12 +2040,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 147;
+                parametr1.Value = 124;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 126;
+                parametr2.Value = 81;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2165,38 +2077,49 @@ ORDER BY
                 var secondItems1 = new List<FlatDateTimedatetime20M>();
                 var secondItems2 = new List<FlatDateTimedatetime20M>();
                 await ((IDateTimeSingleTypedatetime2)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(7));
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(11));
-                Assert.That(secondItems2, Has.Count.EqualTo(11));
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(6));
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(17));
+                Assert.That(secondItems2, Has.Count.EqualTo(17));
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[11],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[12],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[13],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[14],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[15],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[16],_testData[34], false);
             }
         }
 
@@ -2237,12 +2160,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 97;
+                parametr1.Value = 41;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 6;
+                parametr2.Value = 119;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2273,67 +2196,51 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(17));
+                        Assert.That(models, Has.Count.EqualTo(28));
 
-                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(models[13],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(models[14],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(models[15],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(models[16],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(models[13],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(models[14],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(models[15],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(models[16],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(models[17],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(models[18],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(models[19],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(models[20],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(models[21],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(models[22],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(models[23],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(models[24],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(models[25],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(models[26],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(models[27],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(34));
+                        Assert.That(models, Has.Count.EqualTo(7));
 
-                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[1], false);
-                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[2], false);
-                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[3], false);
-                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[4], false);
-                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[5], false);
-                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[6], false);
-                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[7], false);
-                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[8], false);
-                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[9], false);
-                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(models[13],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(models[14],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(models[15],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(models[16],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(models[17],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(models[18],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(models[19],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(models[20],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(models[21],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(models[22],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(models[23],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(models[24],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(models[25],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(models[26],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(models[27],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(models[28],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(models[29],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(models[30],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(models[31],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(models[32],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(models[33],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[34], false);
                         continue;
                     }
                     
@@ -2349,12 +2256,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 97;
+                parametr1.Value = 78;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 126;
+                parametr2.Value = 4;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2386,48 +2293,96 @@ ORDER BY
                 var secondItems1 = new List<FlatDateTimedatetime20M>();
                 var secondItems2 = new List<FlatDateTimedatetime20M>();
                  ((IDateTimeSingleTypedatetime2)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(17));
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[14],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[15],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[16],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(11));
-                Assert.That(secondItems2, Has.Count.EqualTo(11));
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(19));
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[14],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[15],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[16],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[17],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[18],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(34));
+                Assert.That(secondItems2, Has.Count.EqualTo(34));
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[1], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[1], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[2], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[2], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[3], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[3], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[4], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[4], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[5], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[5], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[6], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[6], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[11],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[12],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[13],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[14],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[15],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[16],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[17],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[17],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[18],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[18],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[19],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[19],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[20],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[20],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[21],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[21],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[22],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[22],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[23],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[23],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[24],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[24],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[25],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[25],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[26],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[26],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[27],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[27],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[28],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[28],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[29],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[29],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[30],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[30],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[31],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[31],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[32],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[32],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[33],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[33],_testData[34], false);
             }
         }
 
@@ -2507,90 +2462,16 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 134;
+                parametr1.Value = 60;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 150;
+                parametr2.Value = 17;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
                 foreach(var batchResult in await ((IDateTimeSingleTypedatetime2)this).DbConnectionSTSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
-                {
-                    if(++resultIndex == 1)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
-
-                        DateTimedatetime20M.AssertModel(models[0],_testData[25], false);
-                        DateTimedatetime20M.AssertModel(models[1],_testData[26], false);
-                        DateTimedatetime20M.AssertModel(models[2],_testData[27], false);
-                        DateTimedatetime20M.AssertModel(models[3],_testData[28], false);
-                        DateTimedatetime20M.AssertModel(models[4],_testData[29], false);
-                        DateTimedatetime20M.AssertModel(models[5],_testData[30], false);
-                        DateTimedatetime20M.AssertModel(models[6],_testData[31], false);
-                        DateTimedatetime20M.AssertModel(models[7],_testData[32], false);
-                        DateTimedatetime20M.AssertModel(models[8],_testData[33], false);
-                        DateTimedatetime20M.AssertModel(models[9],_testData[34], false);
-                        continue;
-                    }                    
-
-                    if(resultIndex == 2)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
-
-                        DateTimedatetime20M.AssertModel(models[0],_testData[29], false);
-                        DateTimedatetime20M.AssertModel(models[1],_testData[30], false);
-                        DateTimedatetime20M.AssertModel(models[2],_testData[31], false);
-                        DateTimedatetime20M.AssertModel(models[3],_testData[32], false);
-                        DateTimedatetime20M.AssertModel(models[4],_testData[33], false);
-                        DateTimedatetime20M.AssertModel(models[5],_testData[34], false);
-                        continue;
-                    }
-                    
-                    Assert.Fail("Unexpected batch count");
-                }
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionSelectModelDynParTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 0;
-                parametr1.DbType = (System.Data.DbType)(11);
-                parametr1.ParameterName = "id";
-                var models = ((IDateTimeSingleTypedatetime2)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
-                Assert.That(models, Has.Count.EqualTo(35));
-                for (int i = 0; i < 35; i++)
-                {
-                    DateTimedatetime20M.AssertModel(models[i],_testData[i], false);
-                }
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionSTSelectModelDynParBatchTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 68;
-                parametr1.DbType = (System.Data.DbType)(11);
-                parametr1.ParameterName = "id";
-
-                var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 97;
-                parametr2.DbType = (System.Data.DbType)(11);
-                parametr2.ParameterName = "id";
-                int resultIndex = 0;
-                foreach(var batchResult in  ((IDateTimeSingleTypedatetime2)this).DbConnectionSTSelectModelDynParBatch(connection, [parametr1], [parametr2]))
                 {
                     if(++resultIndex == 1)
                     {
@@ -2626,25 +2507,133 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(17));
+                        Assert.That(models, Has.Count.EqualTo(32));
 
-                        DateTimedatetime20M.AssertModel(models[0],_testData[18], false);
-                        DateTimedatetime20M.AssertModel(models[1],_testData[19], false);
-                        DateTimedatetime20M.AssertModel(models[2],_testData[20], false);
-                        DateTimedatetime20M.AssertModel(models[3],_testData[21], false);
-                        DateTimedatetime20M.AssertModel(models[4],_testData[22], false);
-                        DateTimedatetime20M.AssertModel(models[5],_testData[23], false);
-                        DateTimedatetime20M.AssertModel(models[6],_testData[24], false);
-                        DateTimedatetime20M.AssertModel(models[7],_testData[25], false);
-                        DateTimedatetime20M.AssertModel(models[8],_testData[26], false);
-                        DateTimedatetime20M.AssertModel(models[9],_testData[27], false);
-                        DateTimedatetime20M.AssertModel(models[10],_testData[28], false);
-                        DateTimedatetime20M.AssertModel(models[11],_testData[29], false);
-                        DateTimedatetime20M.AssertModel(models[12],_testData[30], false);
-                        DateTimedatetime20M.AssertModel(models[13],_testData[31], false);
-                        DateTimedatetime20M.AssertModel(models[14],_testData[32], false);
-                        DateTimedatetime20M.AssertModel(models[15],_testData[33], false);
-                        DateTimedatetime20M.AssertModel(models[16],_testData[34], false);
+                        DateTimedatetime20M.AssertModel(models[0],_testData[3], false);
+                        DateTimedatetime20M.AssertModel(models[1],_testData[4], false);
+                        DateTimedatetime20M.AssertModel(models[2],_testData[5], false);
+                        DateTimedatetime20M.AssertModel(models[3],_testData[6], false);
+                        DateTimedatetime20M.AssertModel(models[4],_testData[7], false);
+                        DateTimedatetime20M.AssertModel(models[5],_testData[8], false);
+                        DateTimedatetime20M.AssertModel(models[6],_testData[9], false);
+                        DateTimedatetime20M.AssertModel(models[7],_testData[10], false);
+                        DateTimedatetime20M.AssertModel(models[8],_testData[11], false);
+                        DateTimedatetime20M.AssertModel(models[9],_testData[12], false);
+                        DateTimedatetime20M.AssertModel(models[10],_testData[13], false);
+                        DateTimedatetime20M.AssertModel(models[11],_testData[14], false);
+                        DateTimedatetime20M.AssertModel(models[12],_testData[15], false);
+                        DateTimedatetime20M.AssertModel(models[13],_testData[16], false);
+                        DateTimedatetime20M.AssertModel(models[14],_testData[17], false);
+                        DateTimedatetime20M.AssertModel(models[15],_testData[18], false);
+                        DateTimedatetime20M.AssertModel(models[16],_testData[19], false);
+                        DateTimedatetime20M.AssertModel(models[17],_testData[20], false);
+                        DateTimedatetime20M.AssertModel(models[18],_testData[21], false);
+                        DateTimedatetime20M.AssertModel(models[19],_testData[22], false);
+                        DateTimedatetime20M.AssertModel(models[20],_testData[23], false);
+                        DateTimedatetime20M.AssertModel(models[21],_testData[24], false);
+                        DateTimedatetime20M.AssertModel(models[22],_testData[25], false);
+                        DateTimedatetime20M.AssertModel(models[23],_testData[26], false);
+                        DateTimedatetime20M.AssertModel(models[24],_testData[27], false);
+                        DateTimedatetime20M.AssertModel(models[25],_testData[28], false);
+                        DateTimedatetime20M.AssertModel(models[26],_testData[29], false);
+                        DateTimedatetime20M.AssertModel(models[27],_testData[30], false);
+                        DateTimedatetime20M.AssertModel(models[28],_testData[31], false);
+                        DateTimedatetime20M.AssertModel(models[29],_testData[32], false);
+                        DateTimedatetime20M.AssertModel(models[30],_testData[33], false);
+                        DateTimedatetime20M.AssertModel(models[31],_testData[34], false);
+                        continue;
+                    }
+                    
+                    Assert.Fail("Unexpected batch count");
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models = ((IDateTimeSingleTypedatetime2)this).DbConnectionSelectModelDynPar(connection, [parametr1]);
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
+                {
+                    DateTimedatetime20M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSTSelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 90;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 70;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                int resultIndex = 0;
+                foreach(var batchResult in  ((IDateTimeSingleTypedatetime2)this).DbConnectionSTSelectModelDynParBatch(connection, [parametr1], [parametr2]))
+                {
+                    if(++resultIndex == 1)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(14));
+
+                        DateTimedatetime20M.AssertModel(models[0],_testData[21], false);
+                        DateTimedatetime20M.AssertModel(models[1],_testData[22], false);
+                        DateTimedatetime20M.AssertModel(models[2],_testData[23], false);
+                        DateTimedatetime20M.AssertModel(models[3],_testData[24], false);
+                        DateTimedatetime20M.AssertModel(models[4],_testData[25], false);
+                        DateTimedatetime20M.AssertModel(models[5],_testData[26], false);
+                        DateTimedatetime20M.AssertModel(models[6],_testData[27], false);
+                        DateTimedatetime20M.AssertModel(models[7],_testData[28], false);
+                        DateTimedatetime20M.AssertModel(models[8],_testData[29], false);
+                        DateTimedatetime20M.AssertModel(models[9],_testData[30], false);
+                        DateTimedatetime20M.AssertModel(models[10],_testData[31], false);
+                        DateTimedatetime20M.AssertModel(models[11],_testData[32], false);
+                        DateTimedatetime20M.AssertModel(models[12],_testData[33], false);
+                        DateTimedatetime20M.AssertModel(models[13],_testData[34], false);
+                        continue;
+                    }                    
+
+                    if(resultIndex == 2)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(21));
+
+                        DateTimedatetime20M.AssertModel(models[0],_testData[14], false);
+                        DateTimedatetime20M.AssertModel(models[1],_testData[15], false);
+                        DateTimedatetime20M.AssertModel(models[2],_testData[16], false);
+                        DateTimedatetime20M.AssertModel(models[3],_testData[17], false);
+                        DateTimedatetime20M.AssertModel(models[4],_testData[18], false);
+                        DateTimedatetime20M.AssertModel(models[5],_testData[19], false);
+                        DateTimedatetime20M.AssertModel(models[6],_testData[20], false);
+                        DateTimedatetime20M.AssertModel(models[7],_testData[21], false);
+                        DateTimedatetime20M.AssertModel(models[8],_testData[22], false);
+                        DateTimedatetime20M.AssertModel(models[9],_testData[23], false);
+                        DateTimedatetime20M.AssertModel(models[10],_testData[24], false);
+                        DateTimedatetime20M.AssertModel(models[11],_testData[25], false);
+                        DateTimedatetime20M.AssertModel(models[12],_testData[26], false);
+                        DateTimedatetime20M.AssertModel(models[13],_testData[27], false);
+                        DateTimedatetime20M.AssertModel(models[14],_testData[28], false);
+                        DateTimedatetime20M.AssertModel(models[15],_testData[29], false);
+                        DateTimedatetime20M.AssertModel(models[16],_testData[30], false);
+                        DateTimedatetime20M.AssertModel(models[17],_testData[31], false);
+                        DateTimedatetime20M.AssertModel(models[18],_testData[32], false);
+                        DateTimedatetime20M.AssertModel(models[19],_testData[33], false);
+                        DateTimedatetime20M.AssertModel(models[20],_testData[34], false);
                         continue;
                     }
                     
@@ -2779,59 +2768,89 @@ ORDER BY
                 var firstItems2 = new List<FlatDateTimedatetime20M>();
                 var secondItems1 = new List<FlatDateTimedatetime20M>();
                 var secondItems2 = new List<FlatDateTimedatetime20M>();
-                await ((IDateTimeSingleTypedatetime2)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 159, query1, 86, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(5));
-                Assert.That(firstItems2, Has.Count.EqualTo(5));
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(19));
-                Assert.That(secondItems2, Has.Count.EqualTo(19));
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[11],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[12],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[13],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[14],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[15],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[16],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[17],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[17],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[18],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[18],_testData[34], false);
+                await ((IDateTimeSingleTypedatetime2)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 81, query1, 66, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(17));
+                Assert.That(firstItems2, Has.Count.EqualTo(17));
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[9],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[10],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[11],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[12],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[13],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[14],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[14],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[15],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[15],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[16],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[16],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(22));
+                Assert.That(secondItems2, Has.Count.EqualTo(22));
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[11],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[12],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[13],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[14],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[15],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[16],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[17],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[17],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[18],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[18],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[19],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[19],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[20],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[20],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[21],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[21],_testData[34], false);
             }
         }
 
@@ -2869,94 +2888,61 @@ ORDER BY
                 var firstItems1 = new List<FlatDateTimedatetime20M>();
                 var firstItems2 = new List<FlatDateTimedatetime20M>();
                 var secondItems1 = new List<FlatDateTimedatetime20M>();
-                await ((IDateTimeSingleTypedatetime2)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 6, query1, 100, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(34));
-                Assert.That(firstItems2, Has.Count.EqualTo(34));
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[1], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[1], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[2], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[2], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[3], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[3], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[4], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[4], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[5], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[5], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[6], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[6], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[7], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[7], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[8], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[8], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[9], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[9], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[9],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[10],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[11],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[12],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[13],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[14],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[14],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[15],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[15],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[16],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[16],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[17],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[17],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[18],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[18],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[19],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[19],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[20],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[20],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[21],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[21],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[22],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[22],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[23],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[23],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[24],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[24],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[25],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[25],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[26],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[26],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[27],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[27],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[28],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[28],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[29],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[29],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[30],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[30],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[31],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[31],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[32],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[32],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[33],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[33],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(16));
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[34], false);
+                await ((IDateTimeSingleTypedatetime2)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 90, query1, 60, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(14));
+                Assert.That(firstItems2, Has.Count.EqualTo(14));
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[9],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[10],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[11],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[12],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[13],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(23));
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[17],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[18],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[19],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[20],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[21],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[22],_testData[34], false);
             }
         }
 
@@ -3035,67 +3021,91 @@ ORDER BY
                 var firstItems2 = new List<FlatDateTimedatetime20M>();
                 var secondItems1 = new List<FlatDateTimedatetime20M>();
                 var secondItems2 = new List<FlatDateTimedatetime20M>();
-                 ((IDateTimeSingleTypedatetime2)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 118, query1, 100, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(12));
-                Assert.That(firstItems2, Has.Count.EqualTo(12));
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[9],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[10],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[11],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(16));
-                Assert.That(secondItems2, Has.Count.EqualTo(16));
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[11],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[12],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[13],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[14],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[15],_testData[34], false);
+                 ((IDateTimeSingleTypedatetime2)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 112, query1, 26, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(9));
+                Assert.That(firstItems2, Has.Count.EqualTo(9));
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(31));
+                Assert.That(secondItems2, Has.Count.EqualTo(31));
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[4], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[4], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[5], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[5], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[6], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[6], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[11],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[12],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[13],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[14],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[15],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[16],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[17],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[17],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[18],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[18],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[19],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[19],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[20],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[20],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[21],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[21],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[22],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[22],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[23],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[23],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[24],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[24],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[25],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[25],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[26],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[26],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[27],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[27],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[28],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[28],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[29],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[29],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[30],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[30],_testData[34], false);
             }
         }
 
@@ -3133,44 +3143,90 @@ ORDER BY
                 var firstItems1 = new List<FlatDateTimedatetime20M>();
                 var firstItems2 = new List<FlatDateTimedatetime20M>();
                 var secondItems1 = new List<FlatDateTimedatetime20M>();
-                 ((IDateTimeSingleTypedatetime2)this).DbConnectionMMDynQuerySelectModelBatch(connection, 112, query1, 150, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(14));
-                Assert.That(firstItems2, Has.Count.EqualTo(14));
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[9],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[10],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[11],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[12],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems2[13],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(6));
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[34], false);
+                 ((IDateTimeSingleTypedatetime2)this).DbConnectionMMDynQuerySelectModelBatch(connection, 51, query1, 41, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(26));
+                Assert.That(firstItems2, Has.Count.EqualTo(26));
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[0],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[1],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[2],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[3],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[4],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[5],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[6],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[7],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[8],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[9],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[10],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[11],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[12],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[13],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[14],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[14],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[15],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[15],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[16],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[16],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[17],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[17],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[18],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[18],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[19],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[19],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[20],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[20],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[21],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[21],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[22],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[22],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[23],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[23],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[24],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[24],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[25],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems2[25],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(28));
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[17],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[18],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[19],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[20],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[21],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[22],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[23],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[24],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[25],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[26],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[27],_testData[34], false);
             }
         }
 
@@ -3280,63 +3336,69 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IDateTimeSingleTypedatetime2)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 78, query1, 70, query2))
+                foreach(var batchResult in await ((IDateTimeSingleTypedatetime2)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 29, query1, 80, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
+                        Assert.That(models, Has.Count.EqualTo(30));
 
-                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(models[13],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(models[14],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(models[15],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(models[16],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(models[17],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(models[18],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(models[19],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[5], false);
+                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[6], false);
+                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(models[13],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(models[14],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(models[15],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(models[16],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(models[17],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(models[18],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(models[19],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(models[20],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(models[21],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(models[22],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(models[23],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(models[24],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(models[25],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(models[26],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(models[27],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(models[28],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(models[29],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
+                        Assert.That(models, Has.Count.EqualTo(18));
 
-                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(models[13],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(models[14],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(models[15],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(models[16],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(models[17],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(models[18],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(models[19],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(models[20],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(models[21],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(models[13],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(models[14],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(models[15],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(models[16],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(models[17],_testData[34], false);
                         continue;
                     }
                     
@@ -3379,32 +3441,102 @@ ORDER BY
                 var firstItems1 = new List<FlatDateTimedatetime20M>();
                 var secondItems1 = new List<FlatDateTimedatetime20M>();
                 var secondItems2 = new List<FlatDateTimedatetime20M>();
-                await ((IDateTimeSingleTypedatetime2)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 172, query1, 134, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(2));
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(10));
-                Assert.That(secondItems2, Has.Count.EqualTo(10));
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[34], false);
+                await ((IDateTimeSingleTypedatetime2)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 4, query1, 32, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(34));
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[1], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[2], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[3], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[4], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[5], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[6], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[14],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[15],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[16],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[17],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[18],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[19],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[20],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[21],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[22],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[23],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[24],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[25],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[26],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[27],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[28],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[29],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[30],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[31],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[32],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[33],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(29));
+                Assert.That(secondItems2, Has.Count.EqualTo(29));
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[6], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[6], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[7], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[8], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[9], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[11],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[12],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[13],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[14],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[15],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[16],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[17],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[17],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[18],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[18],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[19],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[19],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[20],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[20],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[21],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[21],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[22],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[22],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[23],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[23],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[24],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[24],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[25],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[25],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[26],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[26],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[27],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[27],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[28],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[28],_testData[34], false);
             }
         }
 
@@ -3463,66 +3595,63 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IDateTimeSingleTypedatetime2)this).DbConnectionSTDynQuerySelectModelBatch(connection, 18, query1, 115, query2))
+                foreach(var batchResult in  ((IDateTimeSingleTypedatetime2)this).DbConnectionSTDynQuerySelectModelBatch(connection, 66, query1, 74, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(32));
+                        Assert.That(models, Has.Count.EqualTo(22));
 
-                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[3], false);
-                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[4], false);
-                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[5], false);
-                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[6], false);
-                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[7], false);
-                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[8], false);
-                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[9], false);
-                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(models[13],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(models[14],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(models[15],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(models[16],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(models[17],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(models[18],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(models[19],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(models[20],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(models[21],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(models[22],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(models[23],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(models[24],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(models[25],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(models[26],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(models[27],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(models[28],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(models[29],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(models[30],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(models[31],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(models[13],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(models[14],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(models[15],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(models[16],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(models[17],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(models[18],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(models[19],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(models[20],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(models[21],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
+                        Assert.That(models, Has.Count.EqualTo(20));
 
-                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(models[0],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(models[1],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(models[2],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(models[3],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(models[4],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(models[5],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(models[6],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(models[7],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(models[8],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(models[9],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(models[10],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(models[11],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(models[12],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(models[13],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(models[14],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(models[15],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(models[16],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(models[17],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(models[18],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(models[19],_testData[34], false);
                         continue;
                     }
                     
@@ -3565,63 +3694,55 @@ ORDER BY
                 var firstItems1 = new List<FlatDateTimedatetime20M>();
                 var secondItems1 = new List<FlatDateTimedatetime20M>();
                 var secondItems2 = new List<FlatDateTimedatetime20M>();
-                 ((IDateTimeSingleTypedatetime2)this).DbConnectionDynQuerySelectModelBatch(connection, 169, query1, 54, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(3));
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(25));
-                Assert.That(secondItems2, Has.Count.EqualTo(25));
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[10], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[11], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[12], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[13], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[14], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[15], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[16], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[17], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[18], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[19], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[10],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[10],_testData[20], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[11],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[11],_testData[21], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[12],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[12],_testData[22], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[13],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[13],_testData[23], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[14],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[14],_testData[24], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[15],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[15],_testData[25], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[16],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[16],_testData[26], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[17],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[17],_testData[27], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[18],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[18],_testData[28], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[19],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[19],_testData[29], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[20],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[20],_testData[30], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[21],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[21],_testData[31], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[22],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[22],_testData[32], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[23],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[23],_testData[33], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems1[24],_testData[34], false);
-                        FlatDateTimedatetime20M.AssertModel(secondItems2[24],_testData[34], false);
+                 ((IDateTimeSingleTypedatetime2)this).DbConnectionDynQuerySelectModelBatch(connection, 52, query1, 107, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(25));
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[0],_testData[10], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[1],_testData[11], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[2],_testData[12], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[3],_testData[13], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[4],_testData[14], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[5],_testData[15], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[6],_testData[16], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[7],_testData[17], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[8],_testData[18], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[9],_testData[19], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[10],_testData[20], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[11],_testData[21], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[12],_testData[22], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[13],_testData[23], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[14],_testData[24], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[15],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[16],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[17],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[18],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[19],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[20],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[21],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[22],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[23],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(firstItems1[24],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(10));
+                Assert.That(secondItems2, Has.Count.EqualTo(10));
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[0],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[0],_testData[25], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[1],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[1],_testData[26], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[2],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[2],_testData[27], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[3],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[3],_testData[28], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[4],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[4],_testData[29], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[5],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[6],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[6],_testData[31], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[7],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[7],_testData[32], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[8],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[8],_testData[33], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems1[9],_testData[34], false);
+                        FlatDateTimedatetime20M.AssertModel(secondItems2[9],_testData[34], false);
             }
         }
 
@@ -3701,61 +3822,37 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IDateTimeSingleTypedatetime2)this).DbConnectionSTSelectModelBatchAsync(connection, 38, 118))
+                foreach(var batchResult in await ((IDateTimeSingleTypedatetime2)this).DbConnectionSTSelectModelBatchAsync(connection, 130, 106))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(28));
+                        Assert.That(models, Has.Count.EqualTo(5));
 
-                        DateTimedatetime20M.AssertModel(models[0],_testData[7], false);
-                        DateTimedatetime20M.AssertModel(models[1],_testData[8], false);
-                        DateTimedatetime20M.AssertModel(models[2],_testData[9], false);
-                        DateTimedatetime20M.AssertModel(models[3],_testData[10], false);
-                        DateTimedatetime20M.AssertModel(models[4],_testData[11], false);
-                        DateTimedatetime20M.AssertModel(models[5],_testData[12], false);
-                        DateTimedatetime20M.AssertModel(models[6],_testData[13], false);
-                        DateTimedatetime20M.AssertModel(models[7],_testData[14], false);
-                        DateTimedatetime20M.AssertModel(models[8],_testData[15], false);
-                        DateTimedatetime20M.AssertModel(models[9],_testData[16], false);
-                        DateTimedatetime20M.AssertModel(models[10],_testData[17], false);
-                        DateTimedatetime20M.AssertModel(models[11],_testData[18], false);
-                        DateTimedatetime20M.AssertModel(models[12],_testData[19], false);
-                        DateTimedatetime20M.AssertModel(models[13],_testData[20], false);
-                        DateTimedatetime20M.AssertModel(models[14],_testData[21], false);
-                        DateTimedatetime20M.AssertModel(models[15],_testData[22], false);
-                        DateTimedatetime20M.AssertModel(models[16],_testData[23], false);
-                        DateTimedatetime20M.AssertModel(models[17],_testData[24], false);
-                        DateTimedatetime20M.AssertModel(models[18],_testData[25], false);
-                        DateTimedatetime20M.AssertModel(models[19],_testData[26], false);
-                        DateTimedatetime20M.AssertModel(models[20],_testData[27], false);
-                        DateTimedatetime20M.AssertModel(models[21],_testData[28], false);
-                        DateTimedatetime20M.AssertModel(models[22],_testData[29], false);
-                        DateTimedatetime20M.AssertModel(models[23],_testData[30], false);
-                        DateTimedatetime20M.AssertModel(models[24],_testData[31], false);
-                        DateTimedatetime20M.AssertModel(models[25],_testData[32], false);
-                        DateTimedatetime20M.AssertModel(models[26],_testData[33], false);
-                        DateTimedatetime20M.AssertModel(models[27],_testData[34], false);
+                        DateTimedatetime20M.AssertModel(models[0],_testData[30], false);
+                        DateTimedatetime20M.AssertModel(models[1],_testData[31], false);
+                        DateTimedatetime20M.AssertModel(models[2],_testData[32], false);
+                        DateTimedatetime20M.AssertModel(models[3],_testData[33], false);
+                        DateTimedatetime20M.AssertModel(models[4],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
+                        Assert.That(models, Has.Count.EqualTo(11));
 
-                        DateTimedatetime20M.AssertModel(models[0],_testData[23], false);
-                        DateTimedatetime20M.AssertModel(models[1],_testData[24], false);
-                        DateTimedatetime20M.AssertModel(models[2],_testData[25], false);
-                        DateTimedatetime20M.AssertModel(models[3],_testData[26], false);
-                        DateTimedatetime20M.AssertModel(models[4],_testData[27], false);
-                        DateTimedatetime20M.AssertModel(models[5],_testData[28], false);
-                        DateTimedatetime20M.AssertModel(models[6],_testData[29], false);
-                        DateTimedatetime20M.AssertModel(models[7],_testData[30], false);
-                        DateTimedatetime20M.AssertModel(models[8],_testData[31], false);
-                        DateTimedatetime20M.AssertModel(models[9],_testData[32], false);
-                        DateTimedatetime20M.AssertModel(models[10],_testData[33], false);
-                        DateTimedatetime20M.AssertModel(models[11],_testData[34], false);
+                        DateTimedatetime20M.AssertModel(models[0],_testData[24], false);
+                        DateTimedatetime20M.AssertModel(models[1],_testData[25], false);
+                        DateTimedatetime20M.AssertModel(models[2],_testData[26], false);
+                        DateTimedatetime20M.AssertModel(models[3],_testData[27], false);
+                        DateTimedatetime20M.AssertModel(models[4],_testData[28], false);
+                        DateTimedatetime20M.AssertModel(models[5],_testData[29], false);
+                        DateTimedatetime20M.AssertModel(models[6],_testData[30], false);
+                        DateTimedatetime20M.AssertModel(models[7],_testData[31], false);
+                        DateTimedatetime20M.AssertModel(models[8],_testData[32], false);
+                        DateTimedatetime20M.AssertModel(models[9],_testData[33], false);
+                        DateTimedatetime20M.AssertModel(models[10],_testData[34], false);
                         continue;
                     }
                     
@@ -3786,56 +3883,54 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IDateTimeSingleTypedatetime2)this).DbConnectionSTSelectModelBatch(connection, 172, 11))
+                foreach(var batchResult in  ((IDateTimeSingleTypedatetime2)this).DbConnectionSTSelectModelBatch(connection, 107, 60))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(2));
+                        Assert.That(models, Has.Count.EqualTo(10));
 
-                        DateTimedatetime20M.AssertModel(models[0],_testData[33], false);
-                        DateTimedatetime20M.AssertModel(models[1],_testData[34], false);
+                        DateTimedatetime20M.AssertModel(models[0],_testData[25], false);
+                        DateTimedatetime20M.AssertModel(models[1],_testData[26], false);
+                        DateTimedatetime20M.AssertModel(models[2],_testData[27], false);
+                        DateTimedatetime20M.AssertModel(models[3],_testData[28], false);
+                        DateTimedatetime20M.AssertModel(models[4],_testData[29], false);
+                        DateTimedatetime20M.AssertModel(models[5],_testData[30], false);
+                        DateTimedatetime20M.AssertModel(models[6],_testData[31], false);
+                        DateTimedatetime20M.AssertModel(models[7],_testData[32], false);
+                        DateTimedatetime20M.AssertModel(models[8],_testData[33], false);
+                        DateTimedatetime20M.AssertModel(models[9],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(33));
+                        Assert.That(models, Has.Count.EqualTo(23));
 
-                        DateTimedatetime20M.AssertModel(models[0],_testData[2], false);
-                        DateTimedatetime20M.AssertModel(models[1],_testData[3], false);
-                        DateTimedatetime20M.AssertModel(models[2],_testData[4], false);
-                        DateTimedatetime20M.AssertModel(models[3],_testData[5], false);
-                        DateTimedatetime20M.AssertModel(models[4],_testData[6], false);
-                        DateTimedatetime20M.AssertModel(models[5],_testData[7], false);
-                        DateTimedatetime20M.AssertModel(models[6],_testData[8], false);
-                        DateTimedatetime20M.AssertModel(models[7],_testData[9], false);
-                        DateTimedatetime20M.AssertModel(models[8],_testData[10], false);
-                        DateTimedatetime20M.AssertModel(models[9],_testData[11], false);
-                        DateTimedatetime20M.AssertModel(models[10],_testData[12], false);
-                        DateTimedatetime20M.AssertModel(models[11],_testData[13], false);
-                        DateTimedatetime20M.AssertModel(models[12],_testData[14], false);
-                        DateTimedatetime20M.AssertModel(models[13],_testData[15], false);
-                        DateTimedatetime20M.AssertModel(models[14],_testData[16], false);
-                        DateTimedatetime20M.AssertModel(models[15],_testData[17], false);
-                        DateTimedatetime20M.AssertModel(models[16],_testData[18], false);
-                        DateTimedatetime20M.AssertModel(models[17],_testData[19], false);
-                        DateTimedatetime20M.AssertModel(models[18],_testData[20], false);
-                        DateTimedatetime20M.AssertModel(models[19],_testData[21], false);
-                        DateTimedatetime20M.AssertModel(models[20],_testData[22], false);
-                        DateTimedatetime20M.AssertModel(models[21],_testData[23], false);
-                        DateTimedatetime20M.AssertModel(models[22],_testData[24], false);
-                        DateTimedatetime20M.AssertModel(models[23],_testData[25], false);
-                        DateTimedatetime20M.AssertModel(models[24],_testData[26], false);
-                        DateTimedatetime20M.AssertModel(models[25],_testData[27], false);
-                        DateTimedatetime20M.AssertModel(models[26],_testData[28], false);
-                        DateTimedatetime20M.AssertModel(models[27],_testData[29], false);
-                        DateTimedatetime20M.AssertModel(models[28],_testData[30], false);
-                        DateTimedatetime20M.AssertModel(models[29],_testData[31], false);
-                        DateTimedatetime20M.AssertModel(models[30],_testData[32], false);
-                        DateTimedatetime20M.AssertModel(models[31],_testData[33], false);
-                        DateTimedatetime20M.AssertModel(models[32],_testData[34], false);
+                        DateTimedatetime20M.AssertModel(models[0],_testData[12], false);
+                        DateTimedatetime20M.AssertModel(models[1],_testData[13], false);
+                        DateTimedatetime20M.AssertModel(models[2],_testData[14], false);
+                        DateTimedatetime20M.AssertModel(models[3],_testData[15], false);
+                        DateTimedatetime20M.AssertModel(models[4],_testData[16], false);
+                        DateTimedatetime20M.AssertModel(models[5],_testData[17], false);
+                        DateTimedatetime20M.AssertModel(models[6],_testData[18], false);
+                        DateTimedatetime20M.AssertModel(models[7],_testData[19], false);
+                        DateTimedatetime20M.AssertModel(models[8],_testData[20], false);
+                        DateTimedatetime20M.AssertModel(models[9],_testData[21], false);
+                        DateTimedatetime20M.AssertModel(models[10],_testData[22], false);
+                        DateTimedatetime20M.AssertModel(models[11],_testData[23], false);
+                        DateTimedatetime20M.AssertModel(models[12],_testData[24], false);
+                        DateTimedatetime20M.AssertModel(models[13],_testData[25], false);
+                        DateTimedatetime20M.AssertModel(models[14],_testData[26], false);
+                        DateTimedatetime20M.AssertModel(models[15],_testData[27], false);
+                        DateTimedatetime20M.AssertModel(models[16],_testData[28], false);
+                        DateTimedatetime20M.AssertModel(models[17],_testData[29], false);
+                        DateTimedatetime20M.AssertModel(models[18],_testData[30], false);
+                        DateTimedatetime20M.AssertModel(models[19],_testData[31], false);
+                        DateTimedatetime20M.AssertModel(models[20],_testData[32], false);
+                        DateTimedatetime20M.AssertModel(models[21],_testData[33], false);
+                        DateTimedatetime20M.AssertModel(models[22],_testData[34], false);
                         continue;
                     }
                     
@@ -3851,11 +3946,11 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IDateTimeSingleTypedatetime2)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IDateTimeSingleTypedatetime2)this).SetDbConnectionSelectModelParametrs(cmd, 135);
+                ((IDateTimeSingleTypedatetime2)this).SetDbConnectionSelectModelParametrs(cmd, 26);
                 var models = await ((IDateTimeSingleTypedatetime2)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(9));
-DateTimedatetime20M.AssertModel(models[0],_testData[26], false);DateTimedatetime20M.AssertModel(models[1],_testData[27], false);DateTimedatetime20M.AssertModel(models[2],_testData[28], false);DateTimedatetime20M.AssertModel(models[3],_testData[29], false);DateTimedatetime20M.AssertModel(models[4],_testData[30], false);DateTimedatetime20M.AssertModel(models[5],_testData[31], false);DateTimedatetime20M.AssertModel(models[6],_testData[32], false);DateTimedatetime20M.AssertModel(models[7],_testData[33], false);DateTimedatetime20M.AssertModel(models[8],_testData[34], false);
+                Assert.That(models, Has.Count.EqualTo(31));
+DateTimedatetime20M.AssertModel(models[0],_testData[4], false);DateTimedatetime20M.AssertModel(models[1],_testData[5], false);DateTimedatetime20M.AssertModel(models[2],_testData[6], false);DateTimedatetime20M.AssertModel(models[3],_testData[7], false);DateTimedatetime20M.AssertModel(models[4],_testData[8], false);DateTimedatetime20M.AssertModel(models[5],_testData[9], false);DateTimedatetime20M.AssertModel(models[6],_testData[10], false);DateTimedatetime20M.AssertModel(models[7],_testData[11], false);DateTimedatetime20M.AssertModel(models[8],_testData[12], false);DateTimedatetime20M.AssertModel(models[9],_testData[13], false);DateTimedatetime20M.AssertModel(models[10],_testData[14], false);DateTimedatetime20M.AssertModel(models[11],_testData[15], false);DateTimedatetime20M.AssertModel(models[12],_testData[16], false);DateTimedatetime20M.AssertModel(models[13],_testData[17], false);DateTimedatetime20M.AssertModel(models[14],_testData[18], false);DateTimedatetime20M.AssertModel(models[15],_testData[19], false);DateTimedatetime20M.AssertModel(models[16],_testData[20], false);DateTimedatetime20M.AssertModel(models[17],_testData[21], false);DateTimedatetime20M.AssertModel(models[18],_testData[22], false);DateTimedatetime20M.AssertModel(models[19],_testData[23], false);DateTimedatetime20M.AssertModel(models[20],_testData[24], false);DateTimedatetime20M.AssertModel(models[21],_testData[25], false);DateTimedatetime20M.AssertModel(models[22],_testData[26], false);DateTimedatetime20M.AssertModel(models[23],_testData[27], false);DateTimedatetime20M.AssertModel(models[24],_testData[28], false);DateTimedatetime20M.AssertModel(models[25],_testData[29], false);DateTimedatetime20M.AssertModel(models[26],_testData[30], false);DateTimedatetime20M.AssertModel(models[27],_testData[31], false);DateTimedatetime20M.AssertModel(models[28],_testData[32], false);DateTimedatetime20M.AssertModel(models[29],_testData[33], false);DateTimedatetime20M.AssertModel(models[30],_testData[34], false);
             }
         }
 
@@ -3866,11 +3961,11 @@ DateTimedatetime20M.AssertModel(models[0],_testData[26], false);DateTimedatetime
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IDateTimeSingleTypedatetime2)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IDateTimeSingleTypedatetime2)this).SetDbConnectionSelectModelParametrs(cmd, 103);
+                ((IDateTimeSingleTypedatetime2)this).SetDbConnectionSelectModelParametrs(cmd, 130);
                 var models =  ((IDateTimeSingleTypedatetime2)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(15));
-DateTimedatetime20M.AssertModel(models[0],_testData[20], false);DateTimedatetime20M.AssertModel(models[1],_testData[21], false);DateTimedatetime20M.AssertModel(models[2],_testData[22], false);DateTimedatetime20M.AssertModel(models[3],_testData[23], false);DateTimedatetime20M.AssertModel(models[4],_testData[24], false);DateTimedatetime20M.AssertModel(models[5],_testData[25], false);DateTimedatetime20M.AssertModel(models[6],_testData[26], false);DateTimedatetime20M.AssertModel(models[7],_testData[27], false);DateTimedatetime20M.AssertModel(models[8],_testData[28], false);DateTimedatetime20M.AssertModel(models[9],_testData[29], false);DateTimedatetime20M.AssertModel(models[10],_testData[30], false);DateTimedatetime20M.AssertModel(models[11],_testData[31], false);DateTimedatetime20M.AssertModel(models[12],_testData[32], false);DateTimedatetime20M.AssertModel(models[13],_testData[33], false);DateTimedatetime20M.AssertModel(models[14],_testData[34], false);
+                Assert.That(models, Has.Count.EqualTo(5));
+DateTimedatetime20M.AssertModel(models[0],_testData[30], false);DateTimedatetime20M.AssertModel(models[1],_testData[31], false);DateTimedatetime20M.AssertModel(models[2],_testData[32], false);DateTimedatetime20M.AssertModel(models[3],_testData[33], false);DateTimedatetime20M.AssertModel(models[4],_testData[34], false);
             }
         }
 
@@ -3917,56 +4012,56 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((6)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1955, month: 10, day: 14, hour: 8, minute: 18, second: 44, millisecond: 437, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((4)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1999, month: 10, day: 7, hour: 6, minute: 42, second: 13, millisecond: 733, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 11, hour: 6, minute: 34, second: 1, millisecond: 573, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1917, month: 10, day: 18, hour: 4, minute: 57, second: 26, millisecond: 701, kind: DateTimeKind.Local))));
 
                 model = models[1];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((11)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1927, month: 10, day: 16, hour: 7, minute: 56, second: 46, millisecond: 714, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((9)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1950, month: 10, day: 13, hour: 1, minute: 38, second: 20, millisecond: 171, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((8)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1946, month: 10, day: 19, hour: 18, minute: 48, second: 53, millisecond: 400, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((1)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1932, month: 10, day: 6, hour: 17, minute: 51, second: 54, millisecond: 96, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2007, month: 10, day: 17, hour: 8, minute: 17, second: 17, millisecond: 302, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1988, month: 10, day: 18, hour: 22, minute: 1, second: 20, millisecond: 35, kind: DateTimeKind.Local))));
 
                 model = models[2];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((18)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1990, month: 10, day: 1, hour: 19, minute: 8, second: 32, millisecond: 175, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((17)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1970, month: 10, day: 14, hour: 18, minute: 32, second: 56, millisecond: 700, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1940, month: 10, day: 7, hour: 9, minute: 40, second: 16, millisecond: 946, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[3];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((25)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1967, month: 10, day: 2, hour: 17, minute: 37, second: 12, millisecond: 273, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((26)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2018, month: 10, day: 12, hour: 13, minute: 1, second: 28, millisecond: 278, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((9)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2016, month: 10, day: 17, hour: 19, minute: 16, second: 10, millisecond: 923, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((7)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1918, month: 10, day: 3, hour: 17, minute: 49, second: 35, millisecond: 364, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1981, month: 10, day: 19, hour: 2, minute: 24, second: 43, millisecond: 122, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1936, month: 10, day: 8, hour: 3, minute: 23, second: 34, millisecond: 548, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -3975,27 +4070,27 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((27)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2008, month: 10, day: 18, hour: 16, minute: 52, second: 26, millisecond: 956, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((29)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1988, month: 10, day: 14, hour: 14, minute: 56, second: 16, millisecond: 50, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1965, month: 10, day: 9, hour: 12, minute: 15, second: 9, millisecond: 418, kind: DateTimeKind.Local))));
 
                 model = models[5];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((30)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 11, hour: 5, minute: 39, second: 39, millisecond: 990, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((32)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1937, month: 10, day: 16, hour: 12, minute: 20, second: 39, millisecond: 342, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((14)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1921, month: 10, day: 18, hour: 9, minute: 23, second: 28, millisecond: 437, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((12)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2005, month: 10, day: 1, hour: 5, minute: 54, second: 52, millisecond: 41, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1992, month: 10, day: 4, hour: 8, minute: 37, second: 26, millisecond: 833, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4004,56 +4099,56 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((38)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1963, month: 10, day: 5, hour: 7, minute: 56, second: 16, millisecond: 840, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((41)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1973, month: 10, day: 10, hour: 14, minute: 3, second: 17, millisecond: 698, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1983, month: 10, day: 19, hour: 5, minute: 14, second: 19, millisecond: 622, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2013, month: 10, day: 2, hour: 14, minute: 20, second: 43, millisecond: 28, kind: DateTimeKind.Local))));
 
                 model = models[7];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((47)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1920, month: 10, day: 15, hour: 12, minute: 27, second: 11, millisecond: 799, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((50)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1957, month: 10, day: 15, hour: 20, minute: 52, second: 19, millisecond: 916, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((21)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1919, month: 10, day: 18, hour: 10, minute: 13, second: 24, millisecond: 731, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((19)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1988, month: 10, day: 4, hour: 8, minute: 17, second: 40, millisecond: 710, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1974, month: 10, day: 10, hour: 15, minute: 29, second: 55, millisecond: 575, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1969, month: 10, day: 6, hour: 2, minute: 31, second: 45, millisecond: 841, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[8];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((50)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1955, month: 10, day: 15, hour: 21, minute: 14, second: 31, millisecond: 476, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((51)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2000, month: 10, day: 19, hour: 11, minute: 15, second: 13, millisecond: 78, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1994, month: 10, day: 8, hour: 3, minute: 23, second: 58, millisecond: 409, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1925, month: 10, day: 18, hour: 8, minute: 11, second: 51, millisecond: 455, kind: DateTimeKind.Local))));
 
                 model = models[9];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((54)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1945, month: 10, day: 12, hour: 17, minute: 31, second: 1, millisecond: 995, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((52)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2003, month: 10, day: 8, hour: 9, minute: 30, second: 4, millisecond: 963, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((29)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1930, month: 10, day: 9, hour: 9, minute: 20, second: 33, millisecond: 810, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((23)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1953, month: 10, day: 14, hour: 19, minute: 24, second: 26, millisecond: 782, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1932, month: 10, day: 6, hour: 19, minute: 9, second: 46, millisecond: 202, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1991, month: 10, day: 16, hour: 5, minute: 16, second: 17, millisecond: 831, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4062,56 +4157,56 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((61)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1973, month: 10, day: 13, hour: 15, minute: 33, second: 26, millisecond: 286, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((55)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2000, month: 10, day: 13, hour: 20, minute: 13, second: 6, millisecond: 957, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1971, month: 10, day: 19, hour: 16, minute: 27, second: 27, millisecond: 643, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1918, month: 10, day: 19, hour: 3, minute: 21, second: 50, millisecond: 624, kind: DateTimeKind.Local))));
 
                 model = models[11];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((68)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1964, month: 10, day: 8, hour: 11, minute: 8, second: 29, millisecond: 806, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((60)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2004, month: 10, day: 10, hour: 4, minute: 45, second: 58, millisecond: 739, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((38)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1923, month: 10, day: 10, hour: 13, minute: 27, second: 8, millisecond: 310, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((26)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1934, month: 10, day: 7, hour: 20, minute: 18, second: 25, millisecond: 15, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1944, month: 10, day: 4, hour: 7, minute: 49, second: 2, millisecond: 60, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1971, month: 10, day: 9, hour: 1, minute: 52, second: 2, millisecond: 391, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2015, month: 10, day: 16, hour: 16, minute: 24, second: 32, millisecond: 82, kind: DateTimeKind.Local))));
 
                 model = models[12];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((70)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1930, month: 10, day: 11, hour: 3, minute: 31, second: 51, millisecond: 570, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((66)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1993, month: 10, day: 9, hour: 4, minute: 37, second: 36, millisecond: 475, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1999, month: 10, day: 18, hour: 20, minute: 1, second: 3, millisecond: 963, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[13];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((75)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1974, month: 10, day: 10, hour: 14, minute: 12, second: 9, millisecond: 260, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((70)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1997, month: 10, day: 5, hour: 7, minute: 32, second: 33, millisecond: 240, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((42)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1968, month: 10, day: 18, hour: 4, minute: 13, second: 38, millisecond: 812, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((27)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 19, hour: 14, minute: 3, second: 17, millisecond: 722, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1924, month: 10, day: 17, hour: 22, minute: 5, second: 53, millisecond: 620, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1946, month: 10, day: 8, hour: 11, minute: 34, second: 38, millisecond: 85, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4120,56 +4215,56 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((78)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1969, month: 10, day: 18, hour: 1, minute: 24, second: 34, millisecond: 254, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((74)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2019, month: 10, day: 15, hour: 3, minute: 16, second: 16, millisecond: 123, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1995, month: 10, day: 13, hour: 16, minute: 3, second: 18, millisecond: 728, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1993, month: 10, day: 10, hour: 18, minute: 12, second: 50, millisecond: 823, kind: DateTimeKind.Local))));
 
                 model = models[15];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((86)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 9, hour: 13, minute: 23, second: 54, millisecond: 555, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((78)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1990, month: 10, day: 17, hour: 6, minute: 51, second: 6, millisecond: 245, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((44)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2006, month: 10, day: 9, hour: 2, minute: 9, second: 26, millisecond: 301, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((29)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1942, month: 10, day: 17, hour: 18, minute: 54, second: 45, millisecond: 657, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1966, month: 10, day: 13, hour: 3, minute: 24, second: 7, millisecond: 850, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2011, month: 10, day: 8, hour: 20, minute: 31, second: 58, millisecond: 422, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[16];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((94)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2018, month: 10, day: 13, hour: 13, minute: 45, second: 16, millisecond: 590, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((80)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2004, month: 10, day: 6, hour: 17, minute: 22, second: 58, millisecond: 226, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1962, month: 10, day: 9, hour: 16, minute: 16, second: 29, millisecond: 30, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[17];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((97)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1986, month: 10, day: 16, hour: 18, minute: 58, second: 22, millisecond: 560, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((81)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1952, month: 10, day: 11, hour: 15, minute: 3, second: 9, millisecond: 712, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((49)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1976, month: 10, day: 6, hour: 1, minute: 26, second: 12, millisecond: 211, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((31)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1999, month: 10, day: 15, hour: 8, minute: 40, second: 7, millisecond: 508, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1922, month: 10, day: 1, hour: 6, minute: 6, second: 7, millisecond: 584, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4178,8 +4273,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((100)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1942, month: 10, day: 19, hour: 1, minute: 52, second: 5, millisecond: 505, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((82)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1939, month: 10, day: 4, hour: 16, minute: 18, second: 43, millisecond: 436, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4192,42 +4287,42 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((103)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1932, month: 10, day: 16, hour: 4, minute: 21, second: 11, millisecond: 344, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((83)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2011, month: 10, day: 9, hour: 2, minute: 32, second: 34, millisecond: 925, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((55)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1993, month: 10, day: 1, hour: 14, minute: 38, second: 50, millisecond: 654, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((40)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1988, month: 10, day: 5, hour: 12, minute: 1, second: 33, millisecond: 490, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1929, month: 10, day: 6, hour: 6, minute: 24, second: 14, millisecond: 557, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1956, month: 10, day: 13, hour: 9, minute: 54, second: 15, millisecond: 343, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1974, month: 10, day: 16, hour: 6, minute: 46, second: 22, millisecond: 660, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[20];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((112)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 13, hour: 9, minute: 8, second: 36, millisecond: 236, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((90)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1972, month: 10, day: 4, hour: 9, minute: 35, second: 44, millisecond: 935, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1952, month: 10, day: 17, hour: 8, minute: 29, second: 27, millisecond: 534, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[21];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((115)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1981, month: 10, day: 1, hour: 21, minute: 18, second: 9, millisecond: 365, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((95)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1943, month: 10, day: 10, hour: 2, minute: 15, second: 37, millisecond: 769, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((62)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2019, month: 10, day: 1, hour: 3, minute: 40, second: 27, millisecond: 511, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((41)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1969, month: 10, day: 1, hour: 13, minute: 27, second: 4, millisecond: 62, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1947, month: 10, day: 16, hour: 7, minute: 44, second: 49, millisecond: 354, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4236,37 +4331,37 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((118)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1975, month: 10, day: 4, hour: 9, minute: 53, second: 14, millisecond: 916, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((100)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1958, month: 10, day: 9, hour: 5, minute: 27, second: 29, millisecond: 321, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1988, month: 10, day: 12, hour: 22, minute: 41, second: 13, millisecond: 83, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[23];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((126)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2006, month: 10, day: 18, hour: 3, minute: 9, second: 35, millisecond: 691, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((106)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1946, month: 10, day: 11, hour: 11, minute: 44, second: 43, millisecond: 316, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((68)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2011, month: 10, day: 4, hour: 3, minute: 49, second: 58, millisecond: 442, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((45)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1972, month: 10, day: 16, hour: 16, minute: 37, second: 10, millisecond: 324, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1944, month: 10, day: 2, hour: 9, minute: 26, second: 28, millisecond: 350, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[24];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((134)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1941, month: 10, day: 8, hour: 17, minute: 53, second: 42, millisecond: 371, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((107)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1923, month: 10, day: 17, hour: 21, minute: 54, second: 23, millisecond: 422, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4279,71 +4374,71 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((135)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1970, month: 10, day: 8, hour: 8, minute: 53, second: 46, millisecond: 336, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((112)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1986, month: 10, day: 1, hour: 1, minute: 17, second: 44, millisecond: 992, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((77)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 14, hour: 3, minute: 56, second: 46, millisecond: 195, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((47)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1982, month: 10, day: 3, hour: 12, minute: 21, second: 12, millisecond: 471, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2003, month: 10, day: 19, hour: 10, minute: 32, second: 48, millisecond: 479, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1935, month: 10, day: 3, hour: 7, minute: 7, second: 40, millisecond: 519, kind: DateTimeKind.Local))));
 
                 model = models[26];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((140)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2005, month: 10, day: 1, hour: 13, minute: 52, second: 24, millisecond: 634, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((113)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1959, month: 10, day: 15, hour: 18, minute: 45, second: 16, millisecond: 584, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1973, month: 10, day: 9, hour: 21, minute: 4, second: 8, millisecond: 227, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[27];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((147)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1925, month: 10, day: 13, hour: 13, minute: 19, second: 44, millisecond: 102, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((119)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1966, month: 10, day: 13, hour: 14, minute: 33, second: 12, millisecond: 380, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((81)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1953, month: 10, day: 12, hour: 15, minute: 37, second: 8, millisecond: 959, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((53)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1987, month: 10, day: 8, hour: 21, minute: 51, second: 23, millisecond: 440, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1997, month: 10, day: 16, hour: 10, minute: 15, second: 17, millisecond: 682, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1971, month: 10, day: 4, hour: 9, minute: 24, second: 36, millisecond: 533, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1918, month: 10, day: 17, hour: 7, minute: 23, second: 6, millisecond: 991, kind: DateTimeKind.Local))));
 
                 model = models[28];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((150)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1950, month: 10, day: 14, hour: 18, minute: 37, second: 13, millisecond: 970, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((124)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2019, month: 10, day: 2, hour: 2, minute: 27, second: 22, millisecond: 584, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1999, month: 10, day: 4, hour: 8, minute: 42, second: 33, millisecond: 297, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 3, hour: 5, minute: 33, second: 3, millisecond: 415, kind: DateTimeKind.Local))));
 
                 model = models[29];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((159)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1978, month: 10, day: 18, hour: 4, minute: 6, second: 2, millisecond: 581, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((130)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2016, month: 10, day: 8, hour: 10, minute: 50, second: 15, millisecond: 642, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((90)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1984, month: 10, day: 16, hour: 17, minute: 42, second: 48, millisecond: 291, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((60)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1923, month: 10, day: 4, hour: 17, minute: 49, second: 11, millisecond: 542, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 2018, month: 10, day: 11, hour: 17, minute: 2, second: 38, millisecond: 919, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4352,8 +4447,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((165)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1928, month: 10, day: 9, hour: 5, minute: 9, second: 13, millisecond: 488, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((134)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1981, month: 10, day: 18, hour: 18, minute: 27, second: 52, millisecond: 449, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4366,23 +4461,23 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((169)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2014, month: 10, day: 8, hour: 1, minute: 5, second: 11, millisecond: 589, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((143)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2007, month: 10, day: 15, hour: 15, minute: 33, second: 5, millisecond: 374, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((91)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2012, month: 10, day: 4, hour: 1, minute: 6, second: 2, millisecond: 305, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((61)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1938, month: 10, day: 19, hour: 12, minute: 57, second: 54, millisecond: 520, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1957, month: 10, day: 8, hour: 8, minute: 30, second: 11, millisecond: 850, kind: DateTimeKind.Local))));
 
                 model = models[32];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((172)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1985, month: 10, day: 12, hour: 1, minute: 13, second: 53, millisecond: 353, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((147)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1928, month: 10, day: 18, hour: 12, minute: 51, second: 5, millisecond: 280, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4395,11 +4490,11 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((173)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1990, month: 10, day: 1, hour: 16, minute: 30, second: 53, millisecond: 227, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((150)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1969, month: 10, day: 15, hour: 3, minute: 31, second: 25, millisecond: 890, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((99)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1993, month: 10, day: 16, hour: 16, minute: 30, second: 7, millisecond: 640, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((64)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1974, month: 10, day: 6, hour: 18, minute: 43, second: 26, millisecond: 63, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
@@ -4410,14 +4505,14 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((174)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1989, month: 10, day: 8, hour: 2, minute: 37, second: 55, millisecond: 959, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((156)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1921, month: 10, day: 14, hour: 3, minute: 56, second: 14, millisecond: 849, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1922, month: 10, day: 12, hour: 9, minute: 15, second: 37, millisecond: 940, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1996, month: 10, day: 8, hour: 18, minute: 50, second: 20, millisecond: 642, kind: DateTimeKind.Local))));
 
             }
         }
@@ -4436,56 +4531,56 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((6)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1955, month: 10, day: 14, hour: 8, minute: 18, second: 44, millisecond: 437, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((4)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1999, month: 10, day: 7, hour: 6, minute: 42, second: 13, millisecond: 733, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 11, hour: 6, minute: 34, second: 1, millisecond: 573, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1917, month: 10, day: 18, hour: 4, minute: 57, second: 26, millisecond: 701, kind: DateTimeKind.Local))));
 
                 model = models[1];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((11)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1927, month: 10, day: 16, hour: 7, minute: 56, second: 46, millisecond: 714, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((9)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1950, month: 10, day: 13, hour: 1, minute: 38, second: 20, millisecond: 171, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((8)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1946, month: 10, day: 19, hour: 18, minute: 48, second: 53, millisecond: 400, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((1)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1932, month: 10, day: 6, hour: 17, minute: 51, second: 54, millisecond: 96, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2007, month: 10, day: 17, hour: 8, minute: 17, second: 17, millisecond: 302, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1988, month: 10, day: 18, hour: 22, minute: 1, second: 20, millisecond: 35, kind: DateTimeKind.Local))));
 
                 model = models[2];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((18)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1990, month: 10, day: 1, hour: 19, minute: 8, second: 32, millisecond: 175, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((17)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1970, month: 10, day: 14, hour: 18, minute: 32, second: 56, millisecond: 700, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1940, month: 10, day: 7, hour: 9, minute: 40, second: 16, millisecond: 946, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[3];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((25)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1967, month: 10, day: 2, hour: 17, minute: 37, second: 12, millisecond: 273, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((26)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2018, month: 10, day: 12, hour: 13, minute: 1, second: 28, millisecond: 278, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((9)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2016, month: 10, day: 17, hour: 19, minute: 16, second: 10, millisecond: 923, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((7)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1918, month: 10, day: 3, hour: 17, minute: 49, second: 35, millisecond: 364, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1981, month: 10, day: 19, hour: 2, minute: 24, second: 43, millisecond: 122, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1936, month: 10, day: 8, hour: 3, minute: 23, second: 34, millisecond: 548, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4494,27 +4589,27 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((27)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2008, month: 10, day: 18, hour: 16, minute: 52, second: 26, millisecond: 956, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((29)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1988, month: 10, day: 14, hour: 14, minute: 56, second: 16, millisecond: 50, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1965, month: 10, day: 9, hour: 12, minute: 15, second: 9, millisecond: 418, kind: DateTimeKind.Local))));
 
                 model = models[5];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((30)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 11, hour: 5, minute: 39, second: 39, millisecond: 990, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((32)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1937, month: 10, day: 16, hour: 12, minute: 20, second: 39, millisecond: 342, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((14)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1921, month: 10, day: 18, hour: 9, minute: 23, second: 28, millisecond: 437, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((12)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2005, month: 10, day: 1, hour: 5, minute: 54, second: 52, millisecond: 41, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1992, month: 10, day: 4, hour: 8, minute: 37, second: 26, millisecond: 833, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4523,56 +4618,56 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((38)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1963, month: 10, day: 5, hour: 7, minute: 56, second: 16, millisecond: 840, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((41)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1973, month: 10, day: 10, hour: 14, minute: 3, second: 17, millisecond: 698, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1983, month: 10, day: 19, hour: 5, minute: 14, second: 19, millisecond: 622, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2013, month: 10, day: 2, hour: 14, minute: 20, second: 43, millisecond: 28, kind: DateTimeKind.Local))));
 
                 model = models[7];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((47)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1920, month: 10, day: 15, hour: 12, minute: 27, second: 11, millisecond: 799, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((50)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1957, month: 10, day: 15, hour: 20, minute: 52, second: 19, millisecond: 916, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((21)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1919, month: 10, day: 18, hour: 10, minute: 13, second: 24, millisecond: 731, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((19)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1988, month: 10, day: 4, hour: 8, minute: 17, second: 40, millisecond: 710, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1974, month: 10, day: 10, hour: 15, minute: 29, second: 55, millisecond: 575, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1969, month: 10, day: 6, hour: 2, minute: 31, second: 45, millisecond: 841, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[8];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((50)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1955, month: 10, day: 15, hour: 21, minute: 14, second: 31, millisecond: 476, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((51)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2000, month: 10, day: 19, hour: 11, minute: 15, second: 13, millisecond: 78, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1994, month: 10, day: 8, hour: 3, minute: 23, second: 58, millisecond: 409, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1925, month: 10, day: 18, hour: 8, minute: 11, second: 51, millisecond: 455, kind: DateTimeKind.Local))));
 
                 model = models[9];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((54)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1945, month: 10, day: 12, hour: 17, minute: 31, second: 1, millisecond: 995, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((52)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2003, month: 10, day: 8, hour: 9, minute: 30, second: 4, millisecond: 963, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((29)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1930, month: 10, day: 9, hour: 9, minute: 20, second: 33, millisecond: 810, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((23)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1953, month: 10, day: 14, hour: 19, minute: 24, second: 26, millisecond: 782, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1932, month: 10, day: 6, hour: 19, minute: 9, second: 46, millisecond: 202, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1991, month: 10, day: 16, hour: 5, minute: 16, second: 17, millisecond: 831, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4581,56 +4676,56 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((61)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1973, month: 10, day: 13, hour: 15, minute: 33, second: 26, millisecond: 286, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((55)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2000, month: 10, day: 13, hour: 20, minute: 13, second: 6, millisecond: 957, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1971, month: 10, day: 19, hour: 16, minute: 27, second: 27, millisecond: 643, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1918, month: 10, day: 19, hour: 3, minute: 21, second: 50, millisecond: 624, kind: DateTimeKind.Local))));
 
                 model = models[11];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((68)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1964, month: 10, day: 8, hour: 11, minute: 8, second: 29, millisecond: 806, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((60)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2004, month: 10, day: 10, hour: 4, minute: 45, second: 58, millisecond: 739, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((38)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1923, month: 10, day: 10, hour: 13, minute: 27, second: 8, millisecond: 310, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((26)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1934, month: 10, day: 7, hour: 20, minute: 18, second: 25, millisecond: 15, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1944, month: 10, day: 4, hour: 7, minute: 49, second: 2, millisecond: 60, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1971, month: 10, day: 9, hour: 1, minute: 52, second: 2, millisecond: 391, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2015, month: 10, day: 16, hour: 16, minute: 24, second: 32, millisecond: 82, kind: DateTimeKind.Local))));
 
                 model = models[12];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((70)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1930, month: 10, day: 11, hour: 3, minute: 31, second: 51, millisecond: 570, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((66)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1993, month: 10, day: 9, hour: 4, minute: 37, second: 36, millisecond: 475, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1999, month: 10, day: 18, hour: 20, minute: 1, second: 3, millisecond: 963, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[13];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((75)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1974, month: 10, day: 10, hour: 14, minute: 12, second: 9, millisecond: 260, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((70)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1997, month: 10, day: 5, hour: 7, minute: 32, second: 33, millisecond: 240, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((42)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1968, month: 10, day: 18, hour: 4, minute: 13, second: 38, millisecond: 812, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((27)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 19, hour: 14, minute: 3, second: 17, millisecond: 722, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1924, month: 10, day: 17, hour: 22, minute: 5, second: 53, millisecond: 620, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1946, month: 10, day: 8, hour: 11, minute: 34, second: 38, millisecond: 85, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4639,56 +4734,56 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((78)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1969, month: 10, day: 18, hour: 1, minute: 24, second: 34, millisecond: 254, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((74)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2019, month: 10, day: 15, hour: 3, minute: 16, second: 16, millisecond: 123, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1995, month: 10, day: 13, hour: 16, minute: 3, second: 18, millisecond: 728, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1993, month: 10, day: 10, hour: 18, minute: 12, second: 50, millisecond: 823, kind: DateTimeKind.Local))));
 
                 model = models[15];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((86)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2017, month: 10, day: 9, hour: 13, minute: 23, second: 54, millisecond: 555, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((78)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1990, month: 10, day: 17, hour: 6, minute: 51, second: 6, millisecond: 245, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((44)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2006, month: 10, day: 9, hour: 2, minute: 9, second: 26, millisecond: 301, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((29)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1942, month: 10, day: 17, hour: 18, minute: 54, second: 45, millisecond: 657, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1966, month: 10, day: 13, hour: 3, minute: 24, second: 7, millisecond: 850, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2011, month: 10, day: 8, hour: 20, minute: 31, second: 58, millisecond: 422, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[16];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((94)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2018, month: 10, day: 13, hour: 13, minute: 45, second: 16, millisecond: 590, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((80)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2004, month: 10, day: 6, hour: 17, minute: 22, second: 58, millisecond: 226, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1962, month: 10, day: 9, hour: 16, minute: 16, second: 29, millisecond: 30, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[17];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((97)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1986, month: 10, day: 16, hour: 18, minute: 58, second: 22, millisecond: 560, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((81)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1952, month: 10, day: 11, hour: 15, minute: 3, second: 9, millisecond: 712, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((49)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1976, month: 10, day: 6, hour: 1, minute: 26, second: 12, millisecond: 211, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((31)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1999, month: 10, day: 15, hour: 8, minute: 40, second: 7, millisecond: 508, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1922, month: 10, day: 1, hour: 6, minute: 6, second: 7, millisecond: 584, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4697,8 +4792,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((100)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1942, month: 10, day: 19, hour: 1, minute: 52, second: 5, millisecond: 505, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((82)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1939, month: 10, day: 4, hour: 16, minute: 18, second: 43, millisecond: 436, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4711,42 +4806,42 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((103)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1932, month: 10, day: 16, hour: 4, minute: 21, second: 11, millisecond: 344, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((83)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2011, month: 10, day: 9, hour: 2, minute: 32, second: 34, millisecond: 925, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((55)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1993, month: 10, day: 1, hour: 14, minute: 38, second: 50, millisecond: 654, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((40)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1988, month: 10, day: 5, hour: 12, minute: 1, second: 33, millisecond: 490, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1929, month: 10, day: 6, hour: 6, minute: 24, second: 14, millisecond: 557, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1956, month: 10, day: 13, hour: 9, minute: 54, second: 15, millisecond: 343, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1974, month: 10, day: 16, hour: 6, minute: 46, second: 22, millisecond: 660, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[20];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((112)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 13, hour: 9, minute: 8, second: 36, millisecond: 236, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((90)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1972, month: 10, day: 4, hour: 9, minute: 35, second: 44, millisecond: 935, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1952, month: 10, day: 17, hour: 8, minute: 29, second: 27, millisecond: 534, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[21];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((115)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1981, month: 10, day: 1, hour: 21, minute: 18, second: 9, millisecond: 365, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((95)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1943, month: 10, day: 10, hour: 2, minute: 15, second: 37, millisecond: 769, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((62)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2019, month: 10, day: 1, hour: 3, minute: 40, second: 27, millisecond: 511, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((41)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1969, month: 10, day: 1, hour: 13, minute: 27, second: 4, millisecond: 62, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1947, month: 10, day: 16, hour: 7, minute: 44, second: 49, millisecond: 354, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4755,37 +4850,37 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((118)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1975, month: 10, day: 4, hour: 9, minute: 53, second: 14, millisecond: 916, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((100)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1958, month: 10, day: 9, hour: 5, minute: 27, second: 29, millisecond: 321, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1988, month: 10, day: 12, hour: 22, minute: 41, second: 13, millisecond: 83, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[23];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((126)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2006, month: 10, day: 18, hour: 3, minute: 9, second: 35, millisecond: 691, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((106)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1946, month: 10, day: 11, hour: 11, minute: 44, second: 43, millisecond: 316, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((68)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2011, month: 10, day: 4, hour: 3, minute: 49, second: 58, millisecond: 442, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((45)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1972, month: 10, day: 16, hour: 16, minute: 37, second: 10, millisecond: 324, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1944, month: 10, day: 2, hour: 9, minute: 26, second: 28, millisecond: 350, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[24];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((134)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1941, month: 10, day: 8, hour: 17, minute: 53, second: 42, millisecond: 371, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((107)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1923, month: 10, day: 17, hour: 21, minute: 54, second: 23, millisecond: 422, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4798,71 +4893,71 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((135)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1970, month: 10, day: 8, hour: 8, minute: 53, second: 46, millisecond: 336, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((112)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1986, month: 10, day: 1, hour: 1, minute: 17, second: 44, millisecond: 992, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((77)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 14, hour: 3, minute: 56, second: 46, millisecond: 195, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((47)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1982, month: 10, day: 3, hour: 12, minute: 21, second: 12, millisecond: 471, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2003, month: 10, day: 19, hour: 10, minute: 32, second: 48, millisecond: 479, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1935, month: 10, day: 3, hour: 7, minute: 7, second: 40, millisecond: 519, kind: DateTimeKind.Local))));
 
                 model = models[26];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((140)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2005, month: 10, day: 1, hour: 13, minute: 52, second: 24, millisecond: 634, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((113)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1959, month: 10, day: 15, hour: 18, minute: 45, second: 16, millisecond: 584, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1973, month: 10, day: 9, hour: 21, minute: 4, second: 8, millisecond: 227, kind: DateTimeKind.Local))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[27];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((147)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1925, month: 10, day: 13, hour: 13, minute: 19, second: 44, millisecond: 102, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((119)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1966, month: 10, day: 13, hour: 14, minute: 33, second: 12, millisecond: 380, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((81)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1953, month: 10, day: 12, hour: 15, minute: 37, second: 8, millisecond: 959, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((53)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1987, month: 10, day: 8, hour: 21, minute: 51, second: 23, millisecond: 440, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1997, month: 10, day: 16, hour: 10, minute: 15, second: 17, millisecond: 682, kind: DateTimeKind.Local))));//InnerModel.NullableValue
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 1971, month: 10, day: 4, hour: 9, minute: 24, second: 36, millisecond: 533, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1918, month: 10, day: 17, hour: 7, minute: 23, second: 6, millisecond: 991, kind: DateTimeKind.Local))));
 
                 model = models[28];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((150)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1950, month: 10, day: 14, hour: 18, minute: 37, second: 13, millisecond: 970, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((124)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2019, month: 10, day: 2, hour: 2, minute: 27, second: 22, millisecond: 584, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1999, month: 10, day: 4, hour: 8, minute: 42, second: 33, millisecond: 297, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 2010, month: 10, day: 3, hour: 5, minute: 33, second: 3, millisecond: 415, kind: DateTimeKind.Local))));
 
                 model = models[29];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((159)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1978, month: 10, day: 18, hour: 4, minute: 6, second: 2, millisecond: 581, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((130)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2016, month: 10, day: 8, hour: 10, minute: 50, second: 15, millisecond: 642, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((90)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1984, month: 10, day: 16, hour: 17, minute: 42, second: 48, millisecond: 291, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((60)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1923, month: 10, day: 4, hour: 17, minute: 49, second: 11, millisecond: 542, kind: DateTimeKind.Local))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.DateTime?)model[4], Is.EqualTo((new DateTime(year: 2018, month: 10, day: 11, hour: 17, minute: 2, second: 38, millisecond: 919, kind: DateTimeKind.Local))));//InnerModel.NullableValue
 
                 Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
@@ -4871,8 +4966,8 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((165)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1928, month: 10, day: 9, hour: 5, minute: 9, second: 13, millisecond: 488, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((134)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1981, month: 10, day: 18, hour: 18, minute: 27, second: 52, millisecond: 449, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4885,23 +4980,23 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((169)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2014, month: 10, day: 8, hour: 1, minute: 5, second: 11, millisecond: 589, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((143)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 2007, month: 10, day: 15, hour: 15, minute: 33, second: 5, millisecond: 374, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((91)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 2012, month: 10, day: 4, hour: 1, minute: 6, second: 2, millisecond: 305, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((61)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1938, month: 10, day: 19, hour: 12, minute: 57, second: 54, millisecond: 520, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1957, month: 10, day: 8, hour: 8, minute: 30, second: 11, millisecond: 850, kind: DateTimeKind.Local))));
 
                 model = models[32];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((172)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1985, month: 10, day: 12, hour: 1, minute: 13, second: 53, millisecond: 353, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((147)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1928, month: 10, day: 18, hour: 12, minute: 51, second: 5, millisecond: 280, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4914,11 +5009,11 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((173)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1990, month: 10, day: 1, hour: 16, minute: 30, second: 53, millisecond: 227, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((150)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1969, month: 10, day: 15, hour: 3, minute: 31, second: 25, millisecond: 890, kind: DateTimeKind.Local))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((99)));//InnerModel.Id
-                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1993, month: 10, day: 16, hour: 16, minute: 30, second: 7, millisecond: 640, kind: DateTimeKind.Local))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((64)));//InnerModel.Id
+                Assert.That((System.DateTime)model[3], Is.EqualTo((new DateTime(year: 1974, month: 10, day: 6, hour: 18, minute: 43, second: 26, millisecond: 63, kind: DateTimeKind.Local))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
@@ -4929,14 +5024,14 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((174)));//Id
-                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1989, month: 10, day: 8, hour: 2, minute: 37, second: 55, millisecond: 959, kind: DateTimeKind.Local))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((156)));//Id
+                Assert.That((System.DateTime)model[1], Is.EqualTo((new DateTime(year: 1921, month: 10, day: 14, hour: 3, minute: 56, second: 14, millisecond: 849, kind: DateTimeKind.Local))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1922, month: 10, day: 12, hour: 9, minute: 15, second: 37, millisecond: 940, kind: DateTimeKind.Local))));
+                Assert.That((System.DateTime?)model[5], Is.EqualTo((new DateTime(year: 1996, month: 10, day: 8, hour: 18, minute: 50, second: 20, millisecond: 642, kind: DateTimeKind.Local))));
 
             }
         }

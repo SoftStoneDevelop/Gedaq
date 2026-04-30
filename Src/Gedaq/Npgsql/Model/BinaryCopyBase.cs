@@ -23,13 +23,6 @@ namespace Gedaq.Npgsql.Model
 
         public override bool IsCollectionDelegateMap => MapTypeInfos?.Length > 1;
 
-        public override string MapDelegateParametrName => throw new NotImplementedException();
-
-        public override string MapDelegateParametrType()
-        {
-            throw new NotImplementedException();
-        }
-
         protected bool FillSourceType(TypedConstant argument)
         {
             if (argument.Kind != TypedConstantKind.Enum ||
@@ -102,12 +95,7 @@ namespace Gedaq.Npgsql.Model
             }
 
             var fields = aliases.AllFields();
-            if (_npgSqlDbTypes?.Length != fields.Length)
-            {
-                throw new Exception("The number of NpgSqlDbTypes and columns in the query does not match.");
-            }
-
-            for (int i = 0; i < fields.Length; i++)
+            for (int i = 0; i < _npgSqlDbTypes.Length; i++)
             {
                 Field field = fields[i];
                 field.AdditionalInfo = new NpgsqlFieldInfo(_npgSqlDbTypes[i]);

@@ -110,8 +110,7 @@ namespace TestsGenerator.Generators
                     BinaryExportModelInnerTest.Generate(
                         order + 2, 
                         _stringBuilder, 
-                        model, 
-                        storage,
+                        model,
                         interfaceTypeName);
                     EndRegion();
                     break;

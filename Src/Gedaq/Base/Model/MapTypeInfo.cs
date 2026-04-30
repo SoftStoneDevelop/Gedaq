@@ -35,6 +35,7 @@ namespace Gedaq.Base.Model
             {
                 var pair = stack.Pop();
                 ITypeSymbol mapType = pair.Type;
+
                 if (!pair.Aliases.IsRoot && mapType.GetPropertyOrFieldName(pair.Aliases.EntityName, out _, out var typeProp, throwExceptionIfNotFind: false))
                 {
                     mapType = typeProp;

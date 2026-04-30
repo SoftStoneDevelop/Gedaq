@@ -383,7 +383,7 @@ namespace Gedaq.Npgsql
                 throw new Exception($"Unknown {nameof(BinaryExport)} constructor");
             }
 
-            if (binaryExport.IsDynamicQuery())
+            if (binaryExport.IsDynamicQuery() || binaryExport.IsCollectionDelegateMap)
             {
                 for (int i = 0; i < binaryExport.MapTypeInfos.Length; i++)
                 {
@@ -470,7 +470,7 @@ namespace Gedaq.Npgsql
             }
             _readBatch.Clear();
 
-            var binaryExportGenerator = new BinaryExportGenerator(_context);
+            var binaryExportGenerator = new BinaryExportGenerator(_context, _providerInfo);
             foreach (var binaryExport in _binaryExports)
             {
                 _context.CancellationToken.ThrowIfCancellationRequested();
