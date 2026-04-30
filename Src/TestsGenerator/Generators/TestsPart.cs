@@ -78,8 +78,9 @@ namespace TestsGenerator.Generators
                 case Database.PostgreSQL:
                 {
                     StartRegion("BinaryImportModelInner");
+                    var order = 0;
                     BinaryImportModelInnerTest.Generate(
-                        0, 
+                        ref order, 
                         _stringBuilder, 
                         model, 
                         storage,
@@ -88,7 +89,7 @@ namespace TestsGenerator.Generators
 
                     StartRegion("BinaryImportModel");
                     BinaryImportModelTest.Generate(
-                        1, 
+                        order + 1, 
                         _stringBuilder, 
                         model, 
                         storage,
@@ -97,7 +98,7 @@ namespace TestsGenerator.Generators
 
                     StartRegion("BinaryExportModel");
                     BinaryExportModelTest.Generate(
-                        2, 
+                        order + 2, 
                         _stringBuilder, 
                         model, 
                         storage,
@@ -106,7 +107,7 @@ namespace TestsGenerator.Generators
 
                     StartRegion("BinaryExportModelInner");
                     BinaryExportModelInnerTest.Generate(
-                        2, 
+                        order + 2, 
                         _stringBuilder, 
                         model, 
                         storage,

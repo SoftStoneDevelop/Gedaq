@@ -12,7 +12,7 @@ namespace TestsGenerator.Generators.PostgreSQL
         private const string _testName = "ImportModelInner";
 
         public static void Generate(
-            int order,
+            ref int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
             ModelValueStorage storage,
@@ -41,8 +41,11 @@ namespace TestsGenerator.Generators.PostgreSQL
                     interfaceTypeName,
                     isDynamicQuery: isDynamicQuery);
 
-                foreach (var isAsync in ValueConstants.BoolValues)
+                var isDynamicQueryLastIteration = i == ValueConstants.BoolValues.Length - 1;
+                for (int j = 0; j < ValueConstants.BoolValues.Length; j++)
                 {
+                    bool isAsync = ValueConstants.BoolValues[j];
+                    var isAsyncLastIteration = j == ValueConstants.BoolValues.Length - 1;
                     ImportModelInnerTest(
                         order,
                         model,
@@ -52,8 +55,11 @@ namespace TestsGenerator.Generators.PostgreSQL
                         ref startIndex,
                         2,
                         ref totalItemsInDb,
+                        isDynamicQueryLastIteration && isAsyncLastIteration,
                         isDynamicQuery: isDynamicQuery,
                         isAsync: isAsync);
+
+                    order++;
                 }
             }
         }
@@ -68,7 +74,7 @@ namespace TestsGenerator.Generators.PostgreSQL
             var query =
                 isDynamicQuery ?
                 ValueConstants.NullValue :
-                ImportQuery(model);
+                ImportQuery(model, isDynamicQuery);
 
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.BinaryImport(
@@ -97,9 +103,24 @@ namespace TestsGenerator.Generators.PostgreSQL
             return $"{ValueConstants.DynamicQueryPrefix(isDynamicQuery)}{_testName}";
         }
 
-        private static string ImportQuery(Model.ModelType model)
+        private static string ImportQuery(Model.ModelType model, bool isDynamicQuery)
         {
-            return $@"@""
+            var classWithAtr = isDynamicQuery;
+            if (classWithAtr)
+            {
+                return $@"@""
+COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
+(
+{model.ModelInner.IdColumnName},
+{model.ModelInner.ValueColumnName},
+{model.ModelInner.NullableValueColumnName}
+) 
+FROM STDIN (FORMAT BINARY)
+""";
+            }
+            else
+            {
+                return $@"@""
 COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
 (
 {model.ModelInner.IdColumnName},
@@ -108,6 +129,7 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.TableName}
 ) 
 FROM STDIN (FORMAT BINARY)
 """;
+            }
         }
 
         private static void SelectImportModelInnerConfig(
@@ -159,6 +181,7 @@ ORDER BY
             ref int startIndex,
             int count,
             ref int totalCount,
+            bool toEndStorage,
             bool isDynamicQuery,
             bool isAsync)
         {
@@ -170,14 +193,14 @@ ORDER BY
 
             var query =
                 isDynamicQuery ?
-                $", {ImportQuery(model)}" :
+                $", {ImportQuery(model, isDynamicQuery)}" :
                 string.Empty;
 
             var originStartIndex = startIndex;
             var addCount = 0;
             for (int i = startIndex; i < storage.Count; i++)
             {
-                if (addCount == count)
+                if (!toEndStorage && addCount == count)
                 {
                     break;
                 }
@@ -194,12 +217,13 @@ ORDER BY
                 }
             }
 
-            if (addCount != count)
+            var endIndex = startIndex;
+            if (addCount < count)
             {
                 throw new System.Exception("Storage note have enough items");
             }
 
-            totalCount += count;
+            totalCount += addCount;
             stringBuilder.Append($@"
         [Test, Order({order})]
         public {async.ToLowerInvariant()} {(isAsync ? "Task" : "void")} {ImportMethodName(isDynamicQuery)}{async}Test()
@@ -208,7 +232,7 @@ ORDER BY
             {{
                 {await}connection.Open{async}();
                 var importCollection = new List<{model.ModelInner.ClassName(isDynamicQuery, classWithAtr)}>({count});
-                for (int i = {originStartIndex}; i < {startIndex + count}; i++)
+                for (int i = {originStartIndex}; i < {endIndex}; i++)
                 {{
                     var importModel = {TestsPart.TestDataArrayName}[i].{model.ModelInnerName};
                     if (importModel == null)
