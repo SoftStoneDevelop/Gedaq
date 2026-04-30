@@ -32,65 +32,65 @@ namespace Tests
 {
     Id = 2,
     Value = 
-new System.Collections.Generic.List<System.Int16>(3)
+new System.Collections.Generic.List<System.Int16>(4)
 {
-15409,
+27117,
 
-2238,
+5574,
 
-20786,
+1601,
+
+2990,
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-6395,
+29351,
 
-22757,
+30621,
 
-9182,
+7108,
 
 },
 },
             new Int16smallintArray2M
+{
+    Id = 5,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+31410,
+
+5860,
+
+1736,
+
+22515,
+
+},
+    ModelInner = new Int16smallintArray2MI
 {
     Id = 8,
     Value = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-24674,
+31868,
 
-2009,
+32252,
 
-24437,
-
-},
-    ModelInner = new Int16smallintArray2MI
-{
-    Id = 6,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-15349,
-
-13899,
-
-12749,
-
-22911,
+28126,
 
 },
     NullableValue = 
-new System.Collections.Generic.List<System.Int16>(4)
+new System.Collections.Generic.List<System.Int16>(3)
 {
-31923,
+9665,
 
-3206,
+13188,
 
-1304,
-
-19377,
+18326,
 
 },
 },
@@ -98,15 +98,15 @@ new System.Collections.Generic.List<System.Int16>(4)
 },
             new Int16smallintArray2M
 {
-    Id = 12,
+    Id = 11,
     Value = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-1997,
+7699,
 
-31153,
+27286,
 
-26730,
+30404,
 
 },
     ModelInner = null,
@@ -114,117 +114,154 @@ new System.Collections.Generic.List<System.Int16>(3)
 },
             new Int16smallintArray2M
 {
-    Id = 15,
+    Id = 19,
     Value = 
-new System.Collections.Generic.List<System.Int16>(3)
+new System.Collections.Generic.List<System.Int16>(4)
 {
-11490,
+25863,
 
-15810,
+3936,
 
-9014,
+27817,
+
+32042,
 
 },
     ModelInner = new Int16smallintArray2MI
 {
-    Id = 13,
+    Id = 9,
     Value = 
-new System.Collections.Generic.List<System.Int16>(3)
+new System.Collections.Generic.List<System.Int16>(4)
 {
-9132,
+26054,
 
-7074,
+1104,
 
-19607,
+7148,
 
-},
-    NullableValue = null,
+24491,
+
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Int16>(4)
 {
-9677,
+12837,
 
-11092,
+19437,
 
-28414,
+12940,
 
-5429,
-
-},
-},
-            new Int16smallintArray2M
-{
-    Id = 22,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(3)
-{
-6362,
-
-10595,
-
-771,
+2560,
 
 },
-    ModelInner = null,
+},
     NullableValue = null,
 },
             new Int16smallintArray2M
 {
-    Id = 26,
+    Id = 23,
     Value = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-14382,
+21337,
 
-8005,
+18987,
 
-27972,
+13136,
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+32485,
+
+14987,
+
+29661,
+
+},
+},
+            new Int16smallintArray2M
+{
+    Id = 32,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+1194,
+
+26524,
+
+17263,
 
 },
     ModelInner = new Int16smallintArray2MI
 {
-    Id = 22,
+    Id = 14,
     Value = 
-new System.Collections.Generic.List<System.Int16>(3)
+new System.Collections.Generic.List<System.Int16>(4)
 {
-3319,
-
 27125,
 
-3931,
+28922,
 
-},
-    NullableValue = null,
+17995,
+
+13573,
+
 },
     NullableValue = 
-new System.Collections.Generic.List<System.Int16>(3)
+new System.Collections.Generic.List<System.Int16>(4)
 {
-27980,
+21793,
 
-1991,
+26152,
 
-1154,
+12211,
+
+19399,
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+8098,
+
+1322,
+
+9477,
+
+14724,
 
 },
 },
             new Int16smallintArray2M
 {
-    Id = 35,
+    Id = 34,
     Value = 
-new System.Collections.Generic.List<System.Int16>(4)
+new System.Collections.Generic.List<System.Int16>(3)
 {
-31180,
+28399,
 
-22293,
+28304,
 
-2043,
-
-27423,
+26511,
 
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+19516,
+
+10660,
+
+6838,
+
+16805,
+
+},
 },
             new Int16smallintArray2M
 {
@@ -232,36 +269,27 @@ new System.Collections.Generic.List<System.Int16>(4)
     Value = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-11982,
+31115,
 
-24003,
+26101,
 
-7863,
+12354,
 
 },
     ModelInner = new Int16smallintArray2MI
 {
-    Id = 23,
+    Id = 20,
     Value = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-21909,
+12484,
 
-19288,
+15534,
 
-2611,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int16>(3)
-{
-9574,
-
-21725,
-
-2725,
+15646,
 
 },
+    NullableValue = null,
 },
     NullableValue = null,
 },
@@ -271,24 +299,24 @@ new System.Collections.Generic.List<System.Int16>(3)
     Value = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-1757,
+22451,
 
-31426,
+12595,
 
-32376,
+18691,
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Int16>(4)
 {
-20131,
+17954,
 
-21063,
+6658,
 
-4621,
+30997,
 
-9533,
+21289,
 
 },
 },
@@ -296,67 +324,65 @@ new System.Collections.Generic.List<System.Int16>(4)
 {
     Id = 49,
     Value = 
-new System.Collections.Generic.List<System.Int16>(3)
+new System.Collections.Generic.List<System.Int16>(4)
 {
-9828,
+27385,
 
-28568,
+25424,
 
-31515,
+13189,
+
+4508,
 
 },
     ModelInner = new Int16smallintArray2MI
 {
-    Id = 24,
+    Id = 25,
     Value = 
-new System.Collections.Generic.List<System.Int16>(4)
+new System.Collections.Generic.List<System.Int16>(3)
 {
-20689,
+7067,
 
-20512,
+30112,
 
-3114,
-
-8277,
+21622,
 
 },
     NullableValue = 
-new System.Collections.Generic.List<System.Int16>(4)
+new System.Collections.Generic.List<System.Int16>(3)
 {
-9293,
+13673,
 
-5111,
+12469,
 
-21604,
-
-25804,
+7791,
 
 },
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-5794,
+2115,
 
-6676,
+9241,
 
-15799,
+6443,
 
 },
 },
             new Int16smallintArray2M
 {
-    Id = 55,
+    Id = 50,
     Value = 
 new System.Collections.Generic.List<System.Int16>(4)
 {
-2282,
+32201,
 
-26417,
+27120,
 
-14448,
+27281,
 
-9207,
+20252,
 
 },
     ModelInner = null,
@@ -364,72 +390,74 @@ new System.Collections.Generic.List<System.Int16>(4)
 },
             new Int16smallintArray2M
 {
-    Id = 64,
+    Id = 56,
     Value = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-14896,
+31131,
 
-11081,
+4912,
 
-25309,
+19307,
 
 },
     ModelInner = new Int16smallintArray2MI
 {
     Id = 33,
     Value = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-22899,
-
-18340,
-
-7216,
-
-2103,
-
-},
-    NullableValue = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-166,
+14202,
 
-8929,
+24981,
 
-28523,
+224,
 
 },
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new Int16smallintArray2M
 {
-    Id = 71,
+    Id = 64,
     Value = 
-new System.Collections.Generic.List<System.Int16>(3)
+new System.Collections.Generic.List<System.Int16>(4)
 {
-14991,
+6729,
 
-20451,
+30014,
 
-16345,
+13859,
+
+13764,
 
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+13945,
+
+26643,
+
+1512,
+
+29547,
+
+},
 },
             new Int16smallintArray2M
 {
-    Id = 74,
+    Id = 67,
     Value = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-10622,
+790,
 
-24856,
+9400,
 
-26830,
+11345,
 
 },
     ModelInner = new Int16smallintArray2MI
@@ -438,166 +466,81 @@ new System.Collections.Generic.List<System.Int16>(3)
     Value = 
 new System.Collections.Generic.List<System.Int16>(4)
 {
-24115,
+31965,
 
-10836,
+19917,
 
-9256,
+13743,
 
-24654,
+23700,
 
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+139,
+
+3138,
+
+589,
+
+},
 },
     NullableValue = null,
 },
-    NullableValue = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-3564,
-
-19335,
-
-11885,
-
-4363,
-
-},
-},
             new Int16smallintArray2M
 {
-    Id = 80,
+    Id = 75,
     Value = 
-new System.Collections.Generic.List<System.Int16>(3)
+new System.Collections.Generic.List<System.Int16>(4)
 {
-10083,
+26351,
 
-29154,
+24726,
 
-32708,
+29747,
+
+3189,
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-28153,
+18311,
 
-28698,
+20797,
 
-5327,
-
-},
-},
-            new Int16smallintArray2M
-{
-    Id = 86,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-26587,
-
-5455,
-
-7409,
-
-13371,
-
-},
-    ModelInner = new Int16smallintArray2MI
-{
-    Id = 47,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-2722,
-
-24522,
-
-7280,
-
-13668,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-25496,
-
-30457,
-
-13503,
-
-15262,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-5267,
-
-9236,
-
-20134,
-
-25854,
+8678,
 
 },
 },
             new Int16smallintArray2M
 {
-    Id = 89,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-10128,
-
-18520,
-
-16862,
-
-5632,
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-22672,
-
-13506,
-
-8250,
-
-15578,
-
-},
-},
-            new Int16smallintArray2M
-{
-    Id = 94,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-3845,
-
-23083,
-
-10252,
-
-16224,
-
-},
-    ModelInner = new Int16smallintArray2MI
-{
-    Id = 56,
+    Id = 83,
     Value = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-5097,
+28795,
 
-9479,
+5986,
 
-1248,
+17161,
+
+},
+    ModelInner = new Int16smallintArray2MI
+{
+    Id = 50,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+15174,
+
+17830,
+
+16939,
+
+5047,
 
 },
     NullableValue = null,
@@ -606,175 +549,216 @@ new System.Collections.Generic.List<System.Int16>(3)
 },
             new Int16smallintArray2M
 {
-    Id = 96,
+    Id = 84,
     Value = 
-new System.Collections.Generic.List<System.Int16>(3)
+new System.Collections.Generic.List<System.Int16>(4)
 {
-7412,
+772,
 
-11829,
+31158,
 
-9366,
+29498,
+
+23847,
 
 },
     ModelInner = null,
     NullableValue = 
-new System.Collections.Generic.List<System.Int16>(4)
+new System.Collections.Generic.List<System.Int16>(3)
 {
-25743,
+4380,
 
-17420,
+26753,
 
-4263,
-
-27440,
+18587,
 
 },
 },
             new Int16smallintArray2M
 {
-    Id = 102,
+    Id = 90,
     Value = 
-new System.Collections.Generic.List<System.Int16>(3)
+new System.Collections.Generic.List<System.Int16>(4)
 {
-11401,
+5007,
 
-29297,
+15032,
 
-32509,
+13651,
+
+27170,
 
 },
     ModelInner = new Int16smallintArray2MI
 {
-    Id = 60,
+    Id = 52,
     Value = 
-new System.Collections.Generic.List<System.Int16>(4)
+new System.Collections.Generic.List<System.Int16>(3)
 {
-14676,
+23690,
 
-13969,
+29970,
 
-15089,
-
-11999,
+6685,
 
 },
     NullableValue = 
-new System.Collections.Generic.List<System.Int16>(4)
+new System.Collections.Generic.List<System.Int16>(3)
 {
-361,
+14995,
 
-17912,
+23663,
 
-337,
-
-26180,
+17361,
 
 },
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-26844,
+26165,
 
-30379,
+14319,
 
-9318,
+691,
 
 },
+},
+            new Int16smallintArray2M
+{
+    Id = 92,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+27955,
+
+13973,
+
+14502,
+
+23322,
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new Int16smallintArray2M
+{
+    Id = 95,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+20491,
+
+30068,
+
+23202,
+
+},
+    ModelInner = new Int16smallintArray2MI
+{
+    Id = 54,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+31264,
+
+8170,
+
+32713,
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+17191,
+
+22549,
+
+13814,
+
+12359,
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+27519,
+
+27641,
+
+9249,
+
+25430,
+
+},
+},
+            new Int16smallintArray2M
+{
+    Id = 97,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+23411,
+
+26204,
+
+9471,
+
+1353,
+
+},
+    ModelInner = null,
+    NullableValue = null,
 },
             new Int16smallintArray2M
 {
     Id = 104,
     Value = 
-new System.Collections.Generic.List<System.Int16>(3)
-{
-13501,
-
-4836,
-
-5914,
-
-},
-    ModelInner = null,
-    NullableValue = 
 new System.Collections.Generic.List<System.Int16>(4)
 {
-26750,
+10081,
 
-8970,
+29101,
 
-11161,
+29519,
 
-4565,
+11233,
 
 },
+    ModelInner = new Int16smallintArray2MI
+{
+    Id = 58,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+26593,
+
+31795,
+
+18683,
+
+16859,
+
+},
+    NullableValue = null,
+},
+    NullableValue = null,
 },
             new Int16smallintArray2M
 {
     Id = 112,
     Value = 
-new System.Collections.Generic.List<System.Int16>(3)
-{
-24352,
-
-4614,
-
-18278,
-
-},
-    ModelInner = new Int16smallintArray2MI
-{
-    Id = 65,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(3)
-{
-15821,
-
-22082,
-
-29101,
-
-},
-    NullableValue = 
 new System.Collections.Generic.List<System.Int16>(4)
 {
-17582,
+28374,
 
-10582,
+7223,
 
-11239,
+16240,
 
-29074,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-27128,
-
-32649,
-
-15591,
-
-28268,
-
-},
-},
-            new Int16smallintArray2M
-{
-    Id = 118,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-22625,
-
-18802,
-
-9155,
-
-12196,
+14174,
 
 },
     ModelInner = null,
@@ -782,103 +766,196 @@ new System.Collections.Generic.List<System.Int16>(4)
 },
             new Int16smallintArray2M
 {
-    Id = 124,
+    Id = 119,
     Value = 
 new System.Collections.Generic.List<System.Int16>(4)
 {
-8601,
+32014,
 
-20799,
+27214,
 
-32022,
+12457,
 
-24888,
+17429,
 
 },
     ModelInner = new Int16smallintArray2MI
 {
-    Id = 72,
+    Id = 64,
     Value = 
-new System.Collections.Generic.List<System.Int16>(4)
+new System.Collections.Generic.List<System.Int16>(3)
 {
-22286,
+14993,
 
-32646,
+30221,
 
-14665,
-
-11671,
+27973,
 
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+14044,
+
+20515,
+
+3233,
+
+},
 },
     NullableValue = null,
 },
             new Int16smallintArray2M
 {
-    Id = 129,
+    Id = 125,
     Value = 
 new System.Collections.Generic.List<System.Int16>(4)
 {
-25198,
+30242,
 
-18481,
+10072,
 
-20844,
+53,
 
-4233,
+19686,
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+20759,
+
+24585,
+
+13840,
+
+},
+},
+            new Int16smallintArray2M
+{
+    Id = 131,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+10266,
+
+10129,
+
+9343,
+
+},
+    ModelInner = new Int16smallintArray2MI
+{
+    Id = 66,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+19394,
+
+9608,
+
+24571,
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+14750,
+
+6613,
+
+16141,
+
+13646,
+
+},
+},
+    NullableValue = null,
+},
+            new Int16smallintArray2M
+{
+    Id = 140,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+7021,
+
+20983,
+
+11555,
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+10368,
+
+9287,
+
+14994,
+
+2718,
+
+},
+},
+            new Int16smallintArray2M
+{
+    Id = 142,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(4)
+{
+4637,
+
+5887,
+
+14544,
+
+2482,
+
+},
+    ModelInner = new Int16smallintArray2MI
+{
+    Id = 70,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+562,
+
+32117,
+
+19673,
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+1962,
+
+26767,
+
+10694,
+
+},
+},
+    NullableValue = null,
+},
+            new Int16smallintArray2M
+{
+    Id = 143,
+    Value = 
+new System.Collections.Generic.List<System.Int16>(3)
+{
+13409,
+
+23640,
+
+12965,
 
 },
     ModelInner = null,
     NullableValue = null,
-},
-            new Int16smallintArray2M
-{
-    Id = 136,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(3)
-{
-21617,
-
-5772,
-
-15923,
-
-},
-    ModelInner = new Int16smallintArray2MI
-{
-    Id = 81,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(3)
-{
-25850,
-
-21092,
-
-19047,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int16>(3)
-{
-26224,
-
-7960,
-
-10381,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int16>(3)
-{
-10483,
-
-21959,
-
-24064,
-
-},
 },
             new Int16smallintArray2M
 {
@@ -886,103 +963,26 @@ new System.Collections.Generic.List<System.Int16>(3)
     Value = 
 new System.Collections.Generic.List<System.Int16>(4)
 {
-5701,
+12416,
 
-24668,
+18609,
 
-6821,
+14359,
 
-27115,
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new Int16smallintArray2M
-{
-    Id = 145,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(3)
-{
-17936,
-
-30958,
-
-6115,
+25311,
 
 },
     ModelInner = new Int16smallintArray2MI
 {
-    Id = 85,
+    Id = 73,
     Value = 
 new System.Collections.Generic.List<System.Int16>(3)
 {
-32029,
+23419,
 
-30315,
+28218,
 
-10177,
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new Int16smallintArray2M
-{
-    Id = 149,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-30380,
-
-20323,
-
-30642,
-
-30827,
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Int16>(3)
-{
-18110,
-
-11870,
-
-2912,
-
-},
-},
-            new Int16smallintArray2M
-{
-    Id = 152,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-5277,
-
-23400,
-
-32119,
-
-30353,
-
-},
-    ModelInner = new Int16smallintArray2MI
-{
-    Id = 88,
-    Value = 
-new System.Collections.Generic.List<System.Int16>(4)
-{
-9144,
-
-762,
-
-5335,
-
-4730,
+13340,
 
 },
     NullableValue = null,
@@ -990,13 +990,13 @@ new System.Collections.Generic.List<System.Int16>(4)
     NullableValue = 
 new System.Collections.Generic.List<System.Int16>(4)
 {
-8126,
+20563,
 
-4652,
+28798,
 
-22134,
+18922,
 
-12269,
+25647,
 
 },
 },
@@ -2019,12 +2019,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 15;
+                parametr1.Value = 84;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 96;
+                parametr2.Value = 32;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2060,6 +2060,299 @@ ORDER BY
                 var secondItems1 = new List<FlatInt16smallintArray2M>();
                 var secondItems2 = new List<FlatInt16smallintArray2M>();
                 await ((IInt16ListsmallintArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(13));
+                Assert.That(firstItems2, Has.Count.EqualTo(13));
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[0],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[2],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[3],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[4],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[5],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[6],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[7],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[8],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[9],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[10],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[11],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[12],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(24));
+                Assert.That(secondItems2, Has.Count.EqualTo(24));
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[6], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[6], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[7], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[7], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[8], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[8], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[7],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[8],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[9],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[10],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[11],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[12],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[13],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[14],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[15],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[16],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[16],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[17],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[17],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[18],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[18],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[19],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[19],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[20],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[20],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[21],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[21],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[22],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[22],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[23],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[23],_testData[29], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 32;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 23;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.int16smallintarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.int16smallintarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatInt16smallintArray2M>();
+                var firstItems2 = new List<FlatInt16smallintArray2M>();
+                var secondItems1 = new List<FlatInt16smallintArray2M>();
+                await ((IInt16ListsmallintArray)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(24));
+                Assert.That(firstItems2, Has.Count.EqualTo(24));
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[6], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[0],_testData[6], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[7], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[7], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[8], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[2],_testData[8], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[3],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[4],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[5],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[6],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[7],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[8],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[9],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[10],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[11],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[12],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[13],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[14],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[15],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[15],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[16],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[16],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[17],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[17],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[18],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[18],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[19],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[19],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[20],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[20],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[21],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[21],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[22],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[22],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[23],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[23],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(25));
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[5], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[6], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[7], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[8], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[16],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[17],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[18],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[19],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[20],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[21],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[22],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[23],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[24],_testData[29], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.int16smallintarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models1 = new List<FlatInt16smallintArray2M>();
+                var models2 = new List<FlatInt16smallintArray2M>();
+                ((IInt16ListsmallintArray)this).DbConnectionMMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
+                Assert.That(models1, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatInt16smallintArray2M.AssertModel(models1[i],_testData[i], false);
+                }
+
+                Assert.That(models2, Has.Count.EqualTo(30));
+                for (int i = 0; i < 30; i++)
+                {
+                    FlatInt16smallintArray2M.AssertModel(models2[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSTMMDynQuerySelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 19;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 2;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.int16smallintarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.int16smallintarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatInt16smallintArray2M>();
+                var firstItems2 = new List<FlatInt16smallintArray2M>();
+                var secondItems1 = new List<FlatInt16smallintArray2M>();
+                var secondItems2 = new List<FlatInt16smallintArray2M>();
+                 ((IInt16ListsmallintArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
                 Assert.That(firstItems1, Has.Count.EqualTo(26));
                 Assert.That(firstItems2, Has.Count.EqualTo(26));
                         FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[4], false);
@@ -2114,330 +2407,66 @@ ORDER BY
                         FlatInt16smallintArray2M.AssertModel(firstItems2[24],_testData[28], false);
                         FlatInt16smallintArray2M.AssertModel(firstItems1[25],_testData[29], false);
                         FlatInt16smallintArray2M.AssertModel(firstItems2[25],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(11));
-                Assert.That(secondItems2, Has.Count.EqualTo(11));
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[7],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[8],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[9],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[10],_testData[29], false);
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionMMDynQuerySelectModelDynParBatchTestAsync()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 8;
-                parametr1.DbType = (System.Data.DbType)(11);
-                parametr1.ParameterName = "id";
-
-                var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 8;
-                parametr2.DbType = (System.Data.DbType)(11);
-                parametr2.ParameterName = "id";
-                var query1 = @"
-SELECT
-    m.id AS item1id,
-    m.value AS item1value,
-    m.nullablevalue AS item1nullablevalue,
-    m.id AS item2id,
-    m.value AS item2value,
-    m.nullablevalue AS item2nullablevalue
-FROM public.int16smallintarray2m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var query2 = @"
-SELECT
-    m.id,
-    m.value,
-    m.nullablevalue
-FROM public.int16smallintarray2m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var firstItems1 = new List<FlatInt16smallintArray2M>();
-                var firstItems2 = new List<FlatInt16smallintArray2M>();
-                var secondItems1 = new List<FlatInt16smallintArray2M>();
-                await ((IInt16ListsmallintArray)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(28));
-                Assert.That(firstItems2, Has.Count.EqualTo(28));
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[2], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[0],_testData[2], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[3], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[3], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[4], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[2],_testData[4], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[5], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[3],_testData[5], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[6], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[4],_testData[6], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[7], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[5],_testData[7], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[8], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[6],_testData[8], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[9], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[7],_testData[9], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[8],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[9],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[10],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[11],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[12],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[13],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[14],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[15],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[15],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[16],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[16],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[17],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[17],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[18],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[18],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[19],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[19],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[20],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[20],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[21],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[21],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[22],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[22],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[23],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[23],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[24],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[24],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[25],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[25],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[26],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[26],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[27],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[27],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(28));
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[2], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[3], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[4], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[5], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[6], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[7], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[8], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[9], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[16],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[17],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[18],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[19],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[20],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[21],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[22],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[23],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[24],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[25],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[26],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[27],_testData[29], false);
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionMMDynQuerySelectModelDynParTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var query = @"
-SELECT
-    m.id AS item1id,
-    m.value AS item1value,
-    m.nullablevalue AS item1nullablevalue,
-    m.id AS item2id,
-    m.value AS item2value,
-    m.nullablevalue AS item2nullablevalue
-FROM public.int16smallintarray2m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 0;
-                parametr1.DbType = (System.Data.DbType)(11);
-                parametr1.ParameterName = "id";
-                var models1 = new List<FlatInt16smallintArray2M>();
-                var models2 = new List<FlatInt16smallintArray2M>();
-                ((IInt16ListsmallintArray)this).DbConnectionMMDynQuerySelectModelDynPar(connection,  query, [parametr1], (item1, item2) => { models1.Add(item1); models2.Add(item2); });
-                Assert.That(models1, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
-                {
-                    FlatInt16smallintArray2M.AssertModel(models1[i],_testData[i], false);
-                }
-
-                Assert.That(models2, Has.Count.EqualTo(30));
-                for (int i = 0; i < 30; i++)
-                {
-                    FlatInt16smallintArray2M.AssertModel(models2[i],_testData[i], false);
-                }
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionSTMMDynQuerySelectModelDynParBatchTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 22;
-                parametr1.DbType = (System.Data.DbType)(11);
-                parametr1.ParameterName = "id";
-
-                var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 102;
-                parametr2.DbType = (System.Data.DbType)(11);
-                parametr2.ParameterName = "id";
-                var query1 = @"
-SELECT
-    m.id AS item1id,
-    m.value AS item1value,
-    m.nullablevalue AS item1nullablevalue,
-    m.id AS item2id,
-    m.value AS item2value,
-    m.nullablevalue AS item2nullablevalue
-FROM public.int16smallintarray2m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var query2 = @"
-SELECT
-    m.id AS item1id,
-    m.value AS item1value,
-    m.nullablevalue AS item1nullablevalue,
-    m.id AS item2id,
-    m.value AS item2value,
-    m.nullablevalue AS item2nullablevalue
-FROM public.int16smallintarray2m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var firstItems1 = new List<FlatInt16smallintArray2M>();
-                var firstItems2 = new List<FlatInt16smallintArray2M>();
-                var secondItems1 = new List<FlatInt16smallintArray2M>();
-                var secondItems2 = new List<FlatInt16smallintArray2M>();
-                 ((IInt16ListsmallintArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(25));
-                Assert.That(firstItems2, Has.Count.EqualTo(25));
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[5], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[0],_testData[5], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[6], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[6], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[7], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[2],_testData[7], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[8], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[3],_testData[8], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[9], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[4],_testData[9], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[5],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[6],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[7],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[8],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[9],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[10],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[11],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[12],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[13],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[14],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[15],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[15],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[16],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[16],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[17],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[17],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[18],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[18],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[19],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[19],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[20],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[20],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[21],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[21],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[22],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[22],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[23],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[23],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[24],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[24],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(10));
-                Assert.That(secondItems2, Has.Count.EqualTo(10));
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[7],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[8],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[9],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(29));
+                Assert.That(secondItems2, Has.Count.EqualTo(29));
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[1], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[1], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[2], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[2], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[3], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[3], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[4], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[4], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[5], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[5], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[6], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[6], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[7], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[7], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[8], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[7],_testData[8], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[8],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[9],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[10],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[11],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[12],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[13],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[14],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[15],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[16],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[16],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[17],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[17],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[18],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[18],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[19],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[19],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[20],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[20],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[21],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[21],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[22],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[22],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[23],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[23],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[24],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[24],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[25],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[25],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[26],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[26],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[27],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[27],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[28],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[28],_testData[29], false);
             }
         }
 
@@ -2448,12 +2477,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 55;
+                parametr1.Value = 140;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 26;
+                parametr2.Value = 64;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2485,71 +2514,32 @@ ORDER BY
                 var firstItems2 = new List<FlatInt16smallintArray2M>();
                 var secondItems1 = new List<FlatInt16smallintArray2M>();
                  ((IInt16ListsmallintArray)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(19));
-                Assert.That(firstItems2, Has.Count.EqualTo(19));
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[0],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[2],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[3],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[4],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[5],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[6],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[7],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[8],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[9],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[10],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[11],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[12],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[13],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[14],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[15],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[15],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[16],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[16],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[17],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[17],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[18],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[18],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(24));
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[6], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[7], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[8], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[9], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[16],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[17],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[18],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[19],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[20],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[21],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[22],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[23],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(3));
+                Assert.That(firstItems2, Has.Count.EqualTo(3));
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[0],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[2],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(17));
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[16],_testData[29], false);
             }
         }
 
@@ -2637,12 +2627,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 112;
+                parametr1.Value = 140;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 136;
+                parametr2.Value = 64;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2673,28 +2663,36 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
+                        Assert.That(models, Has.Count.EqualTo(3));
 
-                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(models[3],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(models[4],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(models[5],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(models[6],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(models[7],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
+                        Assert.That(models, Has.Count.EqualTo(17));
 
-                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(models[3],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(models[3],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(models[4],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(models[5],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(models[6],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(models[7],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(models[8],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(models[9],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(models[10],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(models[11],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(models[12],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(models[13],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(models[14],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(models[15],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(models[16],_testData[29], false);
                         continue;
                     }
                     
@@ -2710,12 +2708,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 89;
+                parametr1.Value = 104;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 86;
+                parametr2.Value = 97;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2747,50 +2745,35 @@ ORDER BY
                 var secondItems1 = new List<FlatInt16smallintArray2M>();
                 var secondItems2 = new List<FlatInt16smallintArray2M>();
                 await ((IInt16ListsmallintArray)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(13));
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(14));
-                Assert.That(secondItems2, Has.Count.EqualTo(14));
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[7],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[8],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[9],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[10],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[11],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[12],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[13],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(8));
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(9));
+                Assert.That(secondItems2, Has.Count.EqualTo(9));
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[7],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[8],_testData[29], false);
             }
         }
 
@@ -2831,12 +2814,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 112;
+                parametr1.Value = 92;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 104;
+                parametr2.Value = 32;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2867,33 +2850,51 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
+                        Assert.That(models, Has.Count.EqualTo(11));
 
-                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(models[3],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(models[4],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(models[5],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(models[6],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(models[7],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(models[3],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(models[4],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(models[5],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(models[6],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(models[7],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(models[8],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(models[9],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(models[10],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
+                        Assert.That(models, Has.Count.EqualTo(24));
 
-                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(models[3],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(models[4],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(models[5],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(models[6],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(models[7],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(models[8],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[6], false);
+                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[7], false);
+                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[8], false);
+                        FlatInt16smallintArray2M.AssertModel(models[3],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(models[4],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(models[5],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(models[6],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(models[7],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(models[8],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(models[9],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(models[10],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(models[11],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(models[12],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(models[13],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(models[14],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(models[15],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(models[16],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(models[17],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(models[18],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(models[19],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(models[20],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(models[21],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(models[22],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(models[23],_testData[29], false);
                         continue;
                     }
                     
@@ -2909,12 +2910,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 8;
+                parametr1.Value = 125;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 144;
+                parametr2.Value = 112;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2946,43 +2947,28 @@ ORDER BY
                 var secondItems1 = new List<FlatInt16smallintArray2M>();
                 var secondItems2 = new List<FlatInt16smallintArray2M>();
                  ((IInt16ListsmallintArray)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(28));
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[2], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[3], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[4], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[5], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[6], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[7], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[8], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[9], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[15],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[16],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[17],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[18],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[19],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[20],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[21],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[22],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[23],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[24],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[25],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[26],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[27],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(3));
-                Assert.That(secondItems2, Has.Count.EqualTo(3));
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[29], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(5));
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(7));
+                Assert.That(secondItems2, Has.Count.EqualTo(7));
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[29], false);
             }
         }
 
@@ -3062,12 +3048,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 96;
+                parametr1.Value = 95;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 15;
+                parametr2.Value = 43;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -3076,53 +3062,47 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
+                        Assert.That(models, Has.Count.EqualTo(10));
 
-                        Int16smallintArray2M.AssertModel(models[0],_testData[19], false);
-                        Int16smallintArray2M.AssertModel(models[1],_testData[20], false);
-                        Int16smallintArray2M.AssertModel(models[2],_testData[21], false);
-                        Int16smallintArray2M.AssertModel(models[3],_testData[22], false);
-                        Int16smallintArray2M.AssertModel(models[4],_testData[23], false);
-                        Int16smallintArray2M.AssertModel(models[5],_testData[24], false);
-                        Int16smallintArray2M.AssertModel(models[6],_testData[25], false);
-                        Int16smallintArray2M.AssertModel(models[7],_testData[26], false);
-                        Int16smallintArray2M.AssertModel(models[8],_testData[27], false);
-                        Int16smallintArray2M.AssertModel(models[9],_testData[28], false);
-                        Int16smallintArray2M.AssertModel(models[10],_testData[29], false);
+                        Int16smallintArray2M.AssertModel(models[0],_testData[20], false);
+                        Int16smallintArray2M.AssertModel(models[1],_testData[21], false);
+                        Int16smallintArray2M.AssertModel(models[2],_testData[22], false);
+                        Int16smallintArray2M.AssertModel(models[3],_testData[23], false);
+                        Int16smallintArray2M.AssertModel(models[4],_testData[24], false);
+                        Int16smallintArray2M.AssertModel(models[5],_testData[25], false);
+                        Int16smallintArray2M.AssertModel(models[6],_testData[26], false);
+                        Int16smallintArray2M.AssertModel(models[7],_testData[27], false);
+                        Int16smallintArray2M.AssertModel(models[8],_testData[28], false);
+                        Int16smallintArray2M.AssertModel(models[9],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(26));
+                        Assert.That(models, Has.Count.EqualTo(21));
 
-                        Int16smallintArray2M.AssertModel(models[0],_testData[4], false);
-                        Int16smallintArray2M.AssertModel(models[1],_testData[5], false);
-                        Int16smallintArray2M.AssertModel(models[2],_testData[6], false);
-                        Int16smallintArray2M.AssertModel(models[3],_testData[7], false);
-                        Int16smallintArray2M.AssertModel(models[4],_testData[8], false);
-                        Int16smallintArray2M.AssertModel(models[5],_testData[9], false);
-                        Int16smallintArray2M.AssertModel(models[6],_testData[10], false);
-                        Int16smallintArray2M.AssertModel(models[7],_testData[11], false);
-                        Int16smallintArray2M.AssertModel(models[8],_testData[12], false);
-                        Int16smallintArray2M.AssertModel(models[9],_testData[13], false);
-                        Int16smallintArray2M.AssertModel(models[10],_testData[14], false);
-                        Int16smallintArray2M.AssertModel(models[11],_testData[15], false);
-                        Int16smallintArray2M.AssertModel(models[12],_testData[16], false);
-                        Int16smallintArray2M.AssertModel(models[13],_testData[17], false);
-                        Int16smallintArray2M.AssertModel(models[14],_testData[18], false);
-                        Int16smallintArray2M.AssertModel(models[15],_testData[19], false);
-                        Int16smallintArray2M.AssertModel(models[16],_testData[20], false);
-                        Int16smallintArray2M.AssertModel(models[17],_testData[21], false);
-                        Int16smallintArray2M.AssertModel(models[18],_testData[22], false);
-                        Int16smallintArray2M.AssertModel(models[19],_testData[23], false);
-                        Int16smallintArray2M.AssertModel(models[20],_testData[24], false);
-                        Int16smallintArray2M.AssertModel(models[21],_testData[25], false);
-                        Int16smallintArray2M.AssertModel(models[22],_testData[26], false);
-                        Int16smallintArray2M.AssertModel(models[23],_testData[27], false);
-                        Int16smallintArray2M.AssertModel(models[24],_testData[28], false);
-                        Int16smallintArray2M.AssertModel(models[25],_testData[29], false);
+                        Int16smallintArray2M.AssertModel(models[0],_testData[9], false);
+                        Int16smallintArray2M.AssertModel(models[1],_testData[10], false);
+                        Int16smallintArray2M.AssertModel(models[2],_testData[11], false);
+                        Int16smallintArray2M.AssertModel(models[3],_testData[12], false);
+                        Int16smallintArray2M.AssertModel(models[4],_testData[13], false);
+                        Int16smallintArray2M.AssertModel(models[5],_testData[14], false);
+                        Int16smallintArray2M.AssertModel(models[6],_testData[15], false);
+                        Int16smallintArray2M.AssertModel(models[7],_testData[16], false);
+                        Int16smallintArray2M.AssertModel(models[8],_testData[17], false);
+                        Int16smallintArray2M.AssertModel(models[9],_testData[18], false);
+                        Int16smallintArray2M.AssertModel(models[10],_testData[19], false);
+                        Int16smallintArray2M.AssertModel(models[11],_testData[20], false);
+                        Int16smallintArray2M.AssertModel(models[12],_testData[21], false);
+                        Int16smallintArray2M.AssertModel(models[13],_testData[22], false);
+                        Int16smallintArray2M.AssertModel(models[14],_testData[23], false);
+                        Int16smallintArray2M.AssertModel(models[15],_testData[24], false);
+                        Int16smallintArray2M.AssertModel(models[16],_testData[25], false);
+                        Int16smallintArray2M.AssertModel(models[17],_testData[26], false);
+                        Int16smallintArray2M.AssertModel(models[18],_testData[27], false);
+                        Int16smallintArray2M.AssertModel(models[19],_testData[28], false);
+                        Int16smallintArray2M.AssertModel(models[20],_testData[29], false);
                         continue;
                     }
                     
@@ -3157,12 +3137,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 71;
+                parametr1.Value = 49;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 94;
+                parametr2.Value = 83;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -3171,45 +3151,50 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(17));
+                        Assert.That(models, Has.Count.EqualTo(20));
 
-                        Int16smallintArray2M.AssertModel(models[0],_testData[13], false);
-                        Int16smallintArray2M.AssertModel(models[1],_testData[14], false);
-                        Int16smallintArray2M.AssertModel(models[2],_testData[15], false);
-                        Int16smallintArray2M.AssertModel(models[3],_testData[16], false);
-                        Int16smallintArray2M.AssertModel(models[4],_testData[17], false);
-                        Int16smallintArray2M.AssertModel(models[5],_testData[18], false);
-                        Int16smallintArray2M.AssertModel(models[6],_testData[19], false);
-                        Int16smallintArray2M.AssertModel(models[7],_testData[20], false);
-                        Int16smallintArray2M.AssertModel(models[8],_testData[21], false);
-                        Int16smallintArray2M.AssertModel(models[9],_testData[22], false);
-                        Int16smallintArray2M.AssertModel(models[10],_testData[23], false);
-                        Int16smallintArray2M.AssertModel(models[11],_testData[24], false);
-                        Int16smallintArray2M.AssertModel(models[12],_testData[25], false);
-                        Int16smallintArray2M.AssertModel(models[13],_testData[26], false);
-                        Int16smallintArray2M.AssertModel(models[14],_testData[27], false);
-                        Int16smallintArray2M.AssertModel(models[15],_testData[28], false);
-                        Int16smallintArray2M.AssertModel(models[16],_testData[29], false);
+                        Int16smallintArray2M.AssertModel(models[0],_testData[10], false);
+                        Int16smallintArray2M.AssertModel(models[1],_testData[11], false);
+                        Int16smallintArray2M.AssertModel(models[2],_testData[12], false);
+                        Int16smallintArray2M.AssertModel(models[3],_testData[13], false);
+                        Int16smallintArray2M.AssertModel(models[4],_testData[14], false);
+                        Int16smallintArray2M.AssertModel(models[5],_testData[15], false);
+                        Int16smallintArray2M.AssertModel(models[6],_testData[16], false);
+                        Int16smallintArray2M.AssertModel(models[7],_testData[17], false);
+                        Int16smallintArray2M.AssertModel(models[8],_testData[18], false);
+                        Int16smallintArray2M.AssertModel(models[9],_testData[19], false);
+                        Int16smallintArray2M.AssertModel(models[10],_testData[20], false);
+                        Int16smallintArray2M.AssertModel(models[11],_testData[21], false);
+                        Int16smallintArray2M.AssertModel(models[12],_testData[22], false);
+                        Int16smallintArray2M.AssertModel(models[13],_testData[23], false);
+                        Int16smallintArray2M.AssertModel(models[14],_testData[24], false);
+                        Int16smallintArray2M.AssertModel(models[15],_testData[25], false);
+                        Int16smallintArray2M.AssertModel(models[16],_testData[26], false);
+                        Int16smallintArray2M.AssertModel(models[17],_testData[27], false);
+                        Int16smallintArray2M.AssertModel(models[18],_testData[28], false);
+                        Int16smallintArray2M.AssertModel(models[19],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
+                        Assert.That(models, Has.Count.EqualTo(14));
 
-                        Int16smallintArray2M.AssertModel(models[0],_testData[18], false);
-                        Int16smallintArray2M.AssertModel(models[1],_testData[19], false);
-                        Int16smallintArray2M.AssertModel(models[2],_testData[20], false);
-                        Int16smallintArray2M.AssertModel(models[3],_testData[21], false);
-                        Int16smallintArray2M.AssertModel(models[4],_testData[22], false);
-                        Int16smallintArray2M.AssertModel(models[5],_testData[23], false);
-                        Int16smallintArray2M.AssertModel(models[6],_testData[24], false);
-                        Int16smallintArray2M.AssertModel(models[7],_testData[25], false);
-                        Int16smallintArray2M.AssertModel(models[8],_testData[26], false);
-                        Int16smallintArray2M.AssertModel(models[9],_testData[27], false);
-                        Int16smallintArray2M.AssertModel(models[10],_testData[28], false);
-                        Int16smallintArray2M.AssertModel(models[11],_testData[29], false);
+                        Int16smallintArray2M.AssertModel(models[0],_testData[16], false);
+                        Int16smallintArray2M.AssertModel(models[1],_testData[17], false);
+                        Int16smallintArray2M.AssertModel(models[2],_testData[18], false);
+                        Int16smallintArray2M.AssertModel(models[3],_testData[19], false);
+                        Int16smallintArray2M.AssertModel(models[4],_testData[20], false);
+                        Int16smallintArray2M.AssertModel(models[5],_testData[21], false);
+                        Int16smallintArray2M.AssertModel(models[6],_testData[22], false);
+                        Int16smallintArray2M.AssertModel(models[7],_testData[23], false);
+                        Int16smallintArray2M.AssertModel(models[8],_testData[24], false);
+                        Int16smallintArray2M.AssertModel(models[9],_testData[25], false);
+                        Int16smallintArray2M.AssertModel(models[10],_testData[26], false);
+                        Int16smallintArray2M.AssertModel(models[11],_testData[27], false);
+                        Int16smallintArray2M.AssertModel(models[12],_testData[28], false);
+                        Int16smallintArray2M.AssertModel(models[13],_testData[29], false);
                         continue;
                     }
                     
@@ -3344,79 +3329,79 @@ ORDER BY
                 var firstItems2 = new List<FlatInt16smallintArray2M>();
                 var secondItems1 = new List<FlatInt16smallintArray2M>();
                 var secondItems2 = new List<FlatInt16smallintArray2M>();
-                await ((IInt16ListsmallintArray)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 64, query1, 74, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(18));
-                Assert.That(firstItems2, Has.Count.EqualTo(18));
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[0],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[2],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[3],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[4],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[5],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[6],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[7],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[8],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[9],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[10],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[11],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[12],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[13],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[14],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[15],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[15],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[16],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[16],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[17],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[17],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(16));
-                Assert.That(secondItems2, Has.Count.EqualTo(16));
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[7],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[8],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[9],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[10],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[11],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[12],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[13],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[14],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[15],_testData[29], false);
+                await ((IInt16ListsmallintArray)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 75, query1, 50, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(15));
+                Assert.That(firstItems2, Has.Count.EqualTo(15));
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[0],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[2],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[3],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[4],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[5],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[6],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[7],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[8],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[9],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[10],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[11],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[12],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[13],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[14],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(19));
+                Assert.That(secondItems2, Has.Count.EqualTo(19));
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[7],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[8],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[9],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[10],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[11],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[12],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[13],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[14],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[15],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[16],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[16],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[17],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[17],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[18],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[18],_testData[29], false);
             }
         }
 
@@ -3454,7 +3439,7 @@ ORDER BY
                 var firstItems1 = new List<FlatInt16smallintArray2M>();
                 var firstItems2 = new List<FlatInt16smallintArray2M>();
                 var secondItems1 = new List<FlatInt16smallintArray2M>();
-                await ((IInt16ListsmallintArray)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 144, query1, 26, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                await ((IInt16ListsmallintArray)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 140, query1, 43, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
                 Assert.That(firstItems1, Has.Count.EqualTo(3));
                 Assert.That(firstItems2, Has.Count.EqualTo(3));
                         FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[27], false);
@@ -3463,31 +3448,28 @@ ORDER BY
                         FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[28], false);
                         FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[29], false);
                         FlatInt16smallintArray2M.AssertModel(firstItems2[2],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(24));
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[6], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[7], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[8], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[9], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[16],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[17],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[18],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[19],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[20],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[21],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[22],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[23],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(21));
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[16],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[17],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[18],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[19],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[20],_testData[29], false);
             }
         }
 
@@ -3566,59 +3548,35 @@ ORDER BY
                 var firstItems2 = new List<FlatInt16smallintArray2M>();
                 var secondItems1 = new List<FlatInt16smallintArray2M>();
                 var secondItems2 = new List<FlatInt16smallintArray2M>();
-                 ((IInt16ListsmallintArray)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 49, query1, 136, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(20));
-                Assert.That(firstItems2, Has.Count.EqualTo(20));
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[0],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[2],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[3],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[4],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[5],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[6],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[7],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[8],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[9],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[10],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[11],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[12],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[13],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[14],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[15],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[15],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[16],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[16],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[17],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[17],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[18],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[18],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[19],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[19],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(4));
-                Assert.That(secondItems2, Has.Count.EqualTo(4));
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[29], false);
+                 ((IInt16ListsmallintArray)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 142, query1, 95, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(2));
+                Assert.That(firstItems2, Has.Count.EqualTo(2));
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[0],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(10));
+                Assert.That(secondItems2, Has.Count.EqualTo(10));
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[7],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[8],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[9],_testData[29], false);
             }
         }
 
@@ -3656,65 +3614,79 @@ ORDER BY
                 var firstItems1 = new List<FlatInt16smallintArray2M>();
                 var firstItems2 = new List<FlatInt16smallintArray2M>();
                 var secondItems1 = new List<FlatInt16smallintArray2M>();
-                 ((IInt16ListsmallintArray)this).DbConnectionMMDynQuerySelectModelBatch(connection, 80, query1, 22, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(15));
-                Assert.That(firstItems2, Has.Count.EqualTo(15));
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[0],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[2],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[3],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[4],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[5],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[6],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[7],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[8],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[9],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[10],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[11],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[12],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[13],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems2[14],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(25));
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[5], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[6], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[7], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[8], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[9], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[16],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[17],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[18],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[19],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[20],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[21],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[22],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[23],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[24],_testData[29], false);
+                 ((IInt16ListsmallintArray)this).DbConnectionMMDynQuerySelectModelBatch(connection, 34, query1, 34, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(23));
+                Assert.That(firstItems2, Has.Count.EqualTo(23));
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[7], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[0],_testData[7], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[8], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[1],_testData[8], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[2],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[3],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[4],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[5],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[6],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[7],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[8],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[9],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[10],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[11],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[12],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[13],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[14],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[15],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[15],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[16],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[16],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[17],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[17],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[18],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[18],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[19],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[19],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[20],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[20],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[21],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[21],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[22],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems2[22],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(23));
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[7], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[8], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[16],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[17],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[18],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[19],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[20],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[21],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[22],_testData[29], false);
             }
         }
 
@@ -3824,34 +3796,33 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IInt16ListsmallintArray)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 118, query1, 124, query2))
+                foreach(var batchResult in await ((IInt16ListsmallintArray)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 131, query1, 104, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(7));
+                        Assert.That(models, Has.Count.EqualTo(4));
 
-                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(models[3],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(models[4],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(models[5],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(models[6],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
+                        Assert.That(models, Has.Count.EqualTo(8));
 
-                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(models[3],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(models[4],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(models[5],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(models[3],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(models[4],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(models[5],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(models[6],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(models[7],_testData[29], false);
                         continue;
                     }
                     
@@ -3894,42 +3865,58 @@ ORDER BY
                 var firstItems1 = new List<FlatInt16smallintArray2M>();
                 var secondItems1 = new List<FlatInt16smallintArray2M>();
                 var secondItems2 = new List<FlatInt16smallintArray2M>();
-                await ((IInt16ListsmallintArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 26, query1, 136, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(24));
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[6], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[7], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[8], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[9], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[15],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[16],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[17],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[18],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[19],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[20],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[21],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[22],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[23],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(4));
-                Assert.That(secondItems2, Has.Count.EqualTo(4));
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[29], false);
+                await ((IInt16ListsmallintArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 49, query1, 83, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(20));
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[15],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[16],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[17],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[18],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[19],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(14));
+                Assert.That(secondItems2, Has.Count.EqualTo(14));
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[7],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[8],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[9],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[10],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[11],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[12],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[13],_testData[29], false);
             }
         }
 
@@ -3988,20 +3975,9 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IInt16ListsmallintArray)this).DbConnectionSTDynQuerySelectModelBatch(connection, 144, query1, 80, query2))
+                foreach(var batchResult in  ((IInt16ListsmallintArray)this).DbConnectionSTDynQuerySelectModelBatch(connection, 75, query1, 90, query2))
                 {
                     if(++resultIndex == 1)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
-
-                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[29], false);
-                        continue;
-                    }                    
-
-                    if(resultIndex == 2)
                     {
                         var models = batchResult;
                         Assert.That(models, Has.Count.EqualTo(15));
@@ -4021,6 +3997,26 @@ ORDER BY
                         FlatInt16smallintArray2M.AssertModel(models[12],_testData[27], false);
                         FlatInt16smallintArray2M.AssertModel(models[13],_testData[28], false);
                         FlatInt16smallintArray2M.AssertModel(models[14],_testData[29], false);
+                        continue;
+                    }                    
+
+                    if(resultIndex == 2)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(12));
+
+                        FlatInt16smallintArray2M.AssertModel(models[0],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(models[1],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(models[2],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(models[3],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(models[4],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(models[5],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(models[6],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(models[7],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(models[8],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(models[9],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(models[10],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(models[11],_testData[29], false);
                         continue;
                     }
                     
@@ -4063,56 +4059,74 @@ ORDER BY
                 var firstItems1 = new List<FlatInt16smallintArray2M>();
                 var secondItems1 = new List<FlatInt16smallintArray2M>();
                 var secondItems2 = new List<FlatInt16smallintArray2M>();
-                 ((IInt16ListsmallintArray)this).DbConnectionDynQuerySelectModelBatch(connection, 15, query1, 102, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(26));
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[4], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[5], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[6], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[7], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[8], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[9], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[10], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[11], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[12], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[13], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[14], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[15], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[16], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[17], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[18], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[15],_testData[19], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[16],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[17],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[18],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[19],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[20],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[21],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[22],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[23],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[24],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(firstItems1[25],_testData[29], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(10));
-                Assert.That(secondItems2, Has.Count.EqualTo(10));
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[20], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[21], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[22], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[23], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[24], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[25], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[26], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[7],_testData[27], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[8],_testData[28], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[29], false);
-                        FlatInt16smallintArray2M.AssertModel(secondItems2[9],_testData[29], false);
+                 ((IInt16ListsmallintArray)this).DbConnectionDynQuerySelectModelBatch(connection, 39, query1, 43, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(22));
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[0],_testData[8], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[1],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[2],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[3],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[4],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[5],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[6],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[7],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[8],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[9],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[10],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[11],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[12],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[13],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[14],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[15],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[16],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[17],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[18],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[19],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[20],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(firstItems1[21],_testData[29], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(21));
+                Assert.That(secondItems2, Has.Count.EqualTo(21));
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[0],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[0],_testData[9], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[1],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[1],_testData[10], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[2],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[2],_testData[11], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[3],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[3],_testData[12], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[4],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[4],_testData[13], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[5],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[5],_testData[14], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[6],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[6],_testData[15], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[7],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[7],_testData[16], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[8],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[8],_testData[17], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[9],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[9],_testData[18], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[10],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[10],_testData[19], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[11],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[11],_testData[20], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[12],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[12],_testData[21], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[13],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[13],_testData[22], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[14],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[14],_testData[23], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[15],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[15],_testData[24], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[16],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[16],_testData[25], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[17],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[17],_testData[26], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[18],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[18],_testData[27], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[19],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[19],_testData[28], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems1[20],_testData[29], false);
+                        FlatInt16smallintArray2M.AssertModel(secondItems2[20],_testData[29], false);
             }
         }
 
@@ -4192,65 +4206,34 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IInt16ListsmallintArray)this).DbConnectionSTSelectModelBatchAsync(connection, 26, 49))
+                foreach(var batchResult in await ((IInt16ListsmallintArray)this).DbConnectionSTSelectModelBatchAsync(connection, 131, 97))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
+                        Assert.That(models, Has.Count.EqualTo(4));
 
-                        Int16smallintArray2M.AssertModel(models[0],_testData[6], false);
-                        Int16smallintArray2M.AssertModel(models[1],_testData[7], false);
-                        Int16smallintArray2M.AssertModel(models[2],_testData[8], false);
-                        Int16smallintArray2M.AssertModel(models[3],_testData[9], false);
-                        Int16smallintArray2M.AssertModel(models[4],_testData[10], false);
-                        Int16smallintArray2M.AssertModel(models[5],_testData[11], false);
-                        Int16smallintArray2M.AssertModel(models[6],_testData[12], false);
-                        Int16smallintArray2M.AssertModel(models[7],_testData[13], false);
-                        Int16smallintArray2M.AssertModel(models[8],_testData[14], false);
-                        Int16smallintArray2M.AssertModel(models[9],_testData[15], false);
-                        Int16smallintArray2M.AssertModel(models[10],_testData[16], false);
-                        Int16smallintArray2M.AssertModel(models[11],_testData[17], false);
-                        Int16smallintArray2M.AssertModel(models[12],_testData[18], false);
-                        Int16smallintArray2M.AssertModel(models[13],_testData[19], false);
-                        Int16smallintArray2M.AssertModel(models[14],_testData[20], false);
-                        Int16smallintArray2M.AssertModel(models[15],_testData[21], false);
-                        Int16smallintArray2M.AssertModel(models[16],_testData[22], false);
-                        Int16smallintArray2M.AssertModel(models[17],_testData[23], false);
-                        Int16smallintArray2M.AssertModel(models[18],_testData[24], false);
-                        Int16smallintArray2M.AssertModel(models[19],_testData[25], false);
-                        Int16smallintArray2M.AssertModel(models[20],_testData[26], false);
-                        Int16smallintArray2M.AssertModel(models[21],_testData[27], false);
-                        Int16smallintArray2M.AssertModel(models[22],_testData[28], false);
-                        Int16smallintArray2M.AssertModel(models[23],_testData[29], false);
+                        Int16smallintArray2M.AssertModel(models[0],_testData[26], false);
+                        Int16smallintArray2M.AssertModel(models[1],_testData[27], false);
+                        Int16smallintArray2M.AssertModel(models[2],_testData[28], false);
+                        Int16smallintArray2M.AssertModel(models[3],_testData[29], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
+                        Assert.That(models, Has.Count.EqualTo(9));
 
-                        Int16smallintArray2M.AssertModel(models[0],_testData[10], false);
-                        Int16smallintArray2M.AssertModel(models[1],_testData[11], false);
-                        Int16smallintArray2M.AssertModel(models[2],_testData[12], false);
-                        Int16smallintArray2M.AssertModel(models[3],_testData[13], false);
-                        Int16smallintArray2M.AssertModel(models[4],_testData[14], false);
-                        Int16smallintArray2M.AssertModel(models[5],_testData[15], false);
-                        Int16smallintArray2M.AssertModel(models[6],_testData[16], false);
-                        Int16smallintArray2M.AssertModel(models[7],_testData[17], false);
-                        Int16smallintArray2M.AssertModel(models[8],_testData[18], false);
-                        Int16smallintArray2M.AssertModel(models[9],_testData[19], false);
-                        Int16smallintArray2M.AssertModel(models[10],_testData[20], false);
-                        Int16smallintArray2M.AssertModel(models[11],_testData[21], false);
-                        Int16smallintArray2M.AssertModel(models[12],_testData[22], false);
-                        Int16smallintArray2M.AssertModel(models[13],_testData[23], false);
-                        Int16smallintArray2M.AssertModel(models[14],_testData[24], false);
-                        Int16smallintArray2M.AssertModel(models[15],_testData[25], false);
-                        Int16smallintArray2M.AssertModel(models[16],_testData[26], false);
-                        Int16smallintArray2M.AssertModel(models[17],_testData[27], false);
-                        Int16smallintArray2M.AssertModel(models[18],_testData[28], false);
-                        Int16smallintArray2M.AssertModel(models[19],_testData[29], false);
+                        Int16smallintArray2M.AssertModel(models[0],_testData[21], false);
+                        Int16smallintArray2M.AssertModel(models[1],_testData[22], false);
+                        Int16smallintArray2M.AssertModel(models[2],_testData[23], false);
+                        Int16smallintArray2M.AssertModel(models[3],_testData[24], false);
+                        Int16smallintArray2M.AssertModel(models[4],_testData[25], false);
+                        Int16smallintArray2M.AssertModel(models[5],_testData[26], false);
+                        Int16smallintArray2M.AssertModel(models[6],_testData[27], false);
+                        Int16smallintArray2M.AssertModel(models[7],_testData[28], false);
+                        Int16smallintArray2M.AssertModel(models[8],_testData[29], false);
                         continue;
                     }
                     
@@ -4281,9 +4264,46 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IInt16ListsmallintArray)this).DbConnectionSTSelectModelBatch(connection, 102, 118))
+                foreach(var batchResult in  ((IInt16ListsmallintArray)this).DbConnectionSTSelectModelBatch(connection, 2, 95))
                 {
                     if(++resultIndex == 1)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(29));
+
+                        Int16smallintArray2M.AssertModel(models[0],_testData[1], false);
+                        Int16smallintArray2M.AssertModel(models[1],_testData[2], false);
+                        Int16smallintArray2M.AssertModel(models[2],_testData[3], false);
+                        Int16smallintArray2M.AssertModel(models[3],_testData[4], false);
+                        Int16smallintArray2M.AssertModel(models[4],_testData[5], false);
+                        Int16smallintArray2M.AssertModel(models[5],_testData[6], false);
+                        Int16smallintArray2M.AssertModel(models[6],_testData[7], false);
+                        Int16smallintArray2M.AssertModel(models[7],_testData[8], false);
+                        Int16smallintArray2M.AssertModel(models[8],_testData[9], false);
+                        Int16smallintArray2M.AssertModel(models[9],_testData[10], false);
+                        Int16smallintArray2M.AssertModel(models[10],_testData[11], false);
+                        Int16smallintArray2M.AssertModel(models[11],_testData[12], false);
+                        Int16smallintArray2M.AssertModel(models[12],_testData[13], false);
+                        Int16smallintArray2M.AssertModel(models[13],_testData[14], false);
+                        Int16smallintArray2M.AssertModel(models[14],_testData[15], false);
+                        Int16smallintArray2M.AssertModel(models[15],_testData[16], false);
+                        Int16smallintArray2M.AssertModel(models[16],_testData[17], false);
+                        Int16smallintArray2M.AssertModel(models[17],_testData[18], false);
+                        Int16smallintArray2M.AssertModel(models[18],_testData[19], false);
+                        Int16smallintArray2M.AssertModel(models[19],_testData[20], false);
+                        Int16smallintArray2M.AssertModel(models[20],_testData[21], false);
+                        Int16smallintArray2M.AssertModel(models[21],_testData[22], false);
+                        Int16smallintArray2M.AssertModel(models[22],_testData[23], false);
+                        Int16smallintArray2M.AssertModel(models[23],_testData[24], false);
+                        Int16smallintArray2M.AssertModel(models[24],_testData[25], false);
+                        Int16smallintArray2M.AssertModel(models[25],_testData[26], false);
+                        Int16smallintArray2M.AssertModel(models[26],_testData[27], false);
+                        Int16smallintArray2M.AssertModel(models[27],_testData[28], false);
+                        Int16smallintArray2M.AssertModel(models[28],_testData[29], false);
+                        continue;
+                    }                    
+
+                    if(resultIndex == 2)
                     {
                         var models = batchResult;
                         Assert.That(models, Has.Count.EqualTo(10));
@@ -4299,21 +4319,6 @@ Gedaq.DbConnection.Attributes.BatchPart(
                         Int16smallintArray2M.AssertModel(models[8],_testData[28], false);
                         Int16smallintArray2M.AssertModel(models[9],_testData[29], false);
                         continue;
-                    }                    
-
-                    if(resultIndex == 2)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(7));
-
-                        Int16smallintArray2M.AssertModel(models[0],_testData[23], false);
-                        Int16smallintArray2M.AssertModel(models[1],_testData[24], false);
-                        Int16smallintArray2M.AssertModel(models[2],_testData[25], false);
-                        Int16smallintArray2M.AssertModel(models[3],_testData[26], false);
-                        Int16smallintArray2M.AssertModel(models[4],_testData[27], false);
-                        Int16smallintArray2M.AssertModel(models[5],_testData[28], false);
-                        Int16smallintArray2M.AssertModel(models[6],_testData[29], false);
-                        continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
@@ -4328,11 +4333,11 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IInt16ListsmallintArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IInt16ListsmallintArray)this).SetDbConnectionSelectModelParametrs(cmd, 74);
+                ((IInt16ListsmallintArray)this).SetDbConnectionSelectModelParametrs(cmd, 50);
                 var models = await ((IInt16ListsmallintArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(16));
-Int16smallintArray2M.AssertModel(models[0],_testData[14], false);Int16smallintArray2M.AssertModel(models[1],_testData[15], false);Int16smallintArray2M.AssertModel(models[2],_testData[16], false);Int16smallintArray2M.AssertModel(models[3],_testData[17], false);Int16smallintArray2M.AssertModel(models[4],_testData[18], false);Int16smallintArray2M.AssertModel(models[5],_testData[19], false);Int16smallintArray2M.AssertModel(models[6],_testData[20], false);Int16smallintArray2M.AssertModel(models[7],_testData[21], false);Int16smallintArray2M.AssertModel(models[8],_testData[22], false);Int16smallintArray2M.AssertModel(models[9],_testData[23], false);Int16smallintArray2M.AssertModel(models[10],_testData[24], false);Int16smallintArray2M.AssertModel(models[11],_testData[25], false);Int16smallintArray2M.AssertModel(models[12],_testData[26], false);Int16smallintArray2M.AssertModel(models[13],_testData[27], false);Int16smallintArray2M.AssertModel(models[14],_testData[28], false);Int16smallintArray2M.AssertModel(models[15],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(19));
+Int16smallintArray2M.AssertModel(models[0],_testData[11], false);Int16smallintArray2M.AssertModel(models[1],_testData[12], false);Int16smallintArray2M.AssertModel(models[2],_testData[13], false);Int16smallintArray2M.AssertModel(models[3],_testData[14], false);Int16smallintArray2M.AssertModel(models[4],_testData[15], false);Int16smallintArray2M.AssertModel(models[5],_testData[16], false);Int16smallintArray2M.AssertModel(models[6],_testData[17], false);Int16smallintArray2M.AssertModel(models[7],_testData[18], false);Int16smallintArray2M.AssertModel(models[8],_testData[19], false);Int16smallintArray2M.AssertModel(models[9],_testData[20], false);Int16smallintArray2M.AssertModel(models[10],_testData[21], false);Int16smallintArray2M.AssertModel(models[11],_testData[22], false);Int16smallintArray2M.AssertModel(models[12],_testData[23], false);Int16smallintArray2M.AssertModel(models[13],_testData[24], false);Int16smallintArray2M.AssertModel(models[14],_testData[25], false);Int16smallintArray2M.AssertModel(models[15],_testData[26], false);Int16smallintArray2M.AssertModel(models[16],_testData[27], false);Int16smallintArray2M.AssertModel(models[17],_testData[28], false);Int16smallintArray2M.AssertModel(models[18],_testData[29], false);
             }
         }
 
@@ -4343,11 +4348,11 @@ Int16smallintArray2M.AssertModel(models[0],_testData[14], false);Int16smallintAr
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IInt16ListsmallintArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IInt16ListsmallintArray)this).SetDbConnectionSelectModelParametrs(cmd, 8);
+                ((IInt16ListsmallintArray)this).SetDbConnectionSelectModelParametrs(cmd, 64);
                 var models =  ((IInt16ListsmallintArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(28));
-Int16smallintArray2M.AssertModel(models[0],_testData[2], false);Int16smallintArray2M.AssertModel(models[1],_testData[3], false);Int16smallintArray2M.AssertModel(models[2],_testData[4], false);Int16smallintArray2M.AssertModel(models[3],_testData[5], false);Int16smallintArray2M.AssertModel(models[4],_testData[6], false);Int16smallintArray2M.AssertModel(models[5],_testData[7], false);Int16smallintArray2M.AssertModel(models[6],_testData[8], false);Int16smallintArray2M.AssertModel(models[7],_testData[9], false);Int16smallintArray2M.AssertModel(models[8],_testData[10], false);Int16smallintArray2M.AssertModel(models[9],_testData[11], false);Int16smallintArray2M.AssertModel(models[10],_testData[12], false);Int16smallintArray2M.AssertModel(models[11],_testData[13], false);Int16smallintArray2M.AssertModel(models[12],_testData[14], false);Int16smallintArray2M.AssertModel(models[13],_testData[15], false);Int16smallintArray2M.AssertModel(models[14],_testData[16], false);Int16smallintArray2M.AssertModel(models[15],_testData[17], false);Int16smallintArray2M.AssertModel(models[16],_testData[18], false);Int16smallintArray2M.AssertModel(models[17],_testData[19], false);Int16smallintArray2M.AssertModel(models[18],_testData[20], false);Int16smallintArray2M.AssertModel(models[19],_testData[21], false);Int16smallintArray2M.AssertModel(models[20],_testData[22], false);Int16smallintArray2M.AssertModel(models[21],_testData[23], false);Int16smallintArray2M.AssertModel(models[22],_testData[24], false);Int16smallintArray2M.AssertModel(models[23],_testData[25], false);Int16smallintArray2M.AssertModel(models[24],_testData[26], false);Int16smallintArray2M.AssertModel(models[25],_testData[27], false);Int16smallintArray2M.AssertModel(models[26],_testData[28], false);Int16smallintArray2M.AssertModel(models[27],_testData[29], false);
+                Assert.That(models, Has.Count.EqualTo(17));
+Int16smallintArray2M.AssertModel(models[0],_testData[13], false);Int16smallintArray2M.AssertModel(models[1],_testData[14], false);Int16smallintArray2M.AssertModel(models[2],_testData[15], false);Int16smallintArray2M.AssertModel(models[3],_testData[16], false);Int16smallintArray2M.AssertModel(models[4],_testData[17], false);Int16smallintArray2M.AssertModel(models[5],_testData[18], false);Int16smallintArray2M.AssertModel(models[6],_testData[19], false);Int16smallintArray2M.AssertModel(models[7],_testData[20], false);Int16smallintArray2M.AssertModel(models[8],_testData[21], false);Int16smallintArray2M.AssertModel(models[9],_testData[22], false);Int16smallintArray2M.AssertModel(models[10],_testData[23], false);Int16smallintArray2M.AssertModel(models[11],_testData[24], false);Int16smallintArray2M.AssertModel(models[12],_testData[25], false);Int16smallintArray2M.AssertModel(models[13],_testData[26], false);Int16smallintArray2M.AssertModel(models[14],_testData[27], false);Int16smallintArray2M.AssertModel(models[15],_testData[28], false);Int16smallintArray2M.AssertModel(models[16],_testData[29], false);
             }
         }
 
@@ -4839,6 +4844,75 @@ COPY public.binary_int16smallintarray2m
 #region BinaryExportModelInner
 
 [Gedaq.Npgsql.Attributes.BinaryExport(
+            query: null,
+            methodName:"DynQueryExportModelInner",
+            queryMapTypes: [typeof(Int16smallintArray2MIWA)],
+            dbTypes:
+            new NpgsqlDbType[]
+            {
+                (NpgsqlTypes.NpgsqlDbType)(9),
+                (NpgsqlTypes.NpgsqlDbType)(-2147483630),
+                (NpgsqlTypes.NpgsqlDbType)(-2147483630)
+            },
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IInt16ListsmallintArray))]
+        private void DynQueryExportModelInnerConfig()
+        {
+        }
+
+        [Test, Order(6)]
+        public async Task DynQueryExportModelInnerAsyncTest()
+        {
+            await using (var connection = GlobalSetUp.GetConnection)
+            {
+                await connection.OpenAsync();
+                var models = await ((IInt16ListsmallintArray)this).DynQueryExportModelInnerAsync(connection, @"
+COPY public.binary_int16smallintarray2mi
+(
+    id,
+    value,
+    nullablevalue
+) TO STDOUT (FORMAT BINARY)
+").ToListAsync();
+                var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
+                Assert.That(models, Has.Count.EqualTo(expectCount));
+                for(int modelIndex = 0; modelIndex < expectCount; modelIndex++)
+                {
+                    var model = models[modelIndex];
+                    var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model.Id).ModelInner;
+                    Int16smallintArray2MIWA.AssertModel(model, expectedModel, false);
+                }
+            }
+        }
+
+        [Test, Order(6)]
+        public  void DynQueryExportModelInnerTest()
+        {
+            using (var connection = GlobalSetUp.GetConnection)
+            {
+                connection.Open();
+                var models = ((IInt16ListsmallintArray)this).DynQueryExportModelInner(connection, @"
+COPY public.binary_int16smallintarray2mi
+(
+    id,
+    value,
+    nullablevalue
+) TO STDOUT (FORMAT BINARY)
+").ToList();
+                var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
+                Assert.That(models, Has.Count.EqualTo(expectCount));
+                for(int modelIndex = 0; modelIndex < expectCount; modelIndex++)
+                {
+                    var model = models[modelIndex];
+                    var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model.Id).ModelInner;
+                    Int16smallintArray2MIWA.AssertModel(model, expectedModel, false);
+                }
+            }
+        }
+
+[Gedaq.Npgsql.Attributes.BinaryExport(
             query: @"
 COPY public.binary_int16smallintarray2mi
 (
@@ -4865,12 +4939,12 @@ COPY public.binary_int16smallintarray2mi
         }
 
         [Test, Order(6)]
-        public async Task ExportModelInnerTest()
+        public async Task ExportModelInnerAsyncTest()
         {
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var models =  ((IInt16ListsmallintArray)this).ExportModelInner(connection).ToList();
+                var models = await ((IInt16ListsmallintArray)this).ExportModelInnerAsync(connection).ToListAsync();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
                 Assert.That(models, Has.Count.EqualTo(expectCount));
                 for(int modelIndex = 0; modelIndex < expectCount; modelIndex++)
@@ -4883,12 +4957,12 @@ COPY public.binary_int16smallintarray2mi
         }
 
         [Test, Order(6)]
-        public async Task ExportModelInnerAsyncTest()
+        public  void ExportModelInnerTest()
         {
-            await using (var connection = GlobalSetUp.GetConnection)
+            using (var connection = GlobalSetUp.GetConnection)
             {
-                await connection.OpenAsync();
-                var models = await ((IInt16ListsmallintArray)this).ExportModelInnerAsync(connection).ToListAsync();
+                connection.Open();
+                var models = ((IInt16ListsmallintArray)this).ExportModelInner(connection).ToList();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
                 Assert.That(models, Has.Count.EqualTo(expectCount));
                 for(int modelIndex = 0; modelIndex < expectCount; modelIndex++)
