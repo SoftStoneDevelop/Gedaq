@@ -29,333 +29,333 @@ namespace Tests
         {
             new TimeSpantime0M
 {
-    Id = 5,
-    Value = new TimeSpan(days: 0, hours: 20, minutes: 42, seconds: 25, milliseconds: 781),
+    Id = 8,
+    Value = new TimeSpan(days: 0, hours: 4, minutes: 30, seconds: 40, milliseconds: 296),
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = new TimeSpan(days: 0, hours: 20, minutes: 11, seconds: 29, milliseconds: 194),
 },
             new TimeSpantime0M
 {
-    Id = 11,
-    Value = new TimeSpan(days: 0, hours: 18, minutes: 54, seconds: 42, milliseconds: 586),
+    Id = 15,
+    Value = new TimeSpan(days: 0, hours: 20, minutes: 54, seconds: 53, milliseconds: 153),
     ModelInner = new TimeSpantime0MI
 {
-    Id = 7,
-    Value = new TimeSpan(days: 0, hours: 12, minutes: 37, seconds: 11, milliseconds: 114),
-    NullableValue = null,
+    Id = 5,
+    Value = new TimeSpan(days: 0, hours: 8, minutes: 41, seconds: 9, milliseconds: 392),
+    NullableValue = new TimeSpan(days: 0, hours: 7, minutes: 47, seconds: 25, milliseconds: 150),
 },
-    NullableValue = null,
+    NullableValue = new TimeSpan(days: 0, hours: 14, minutes: 1, seconds: 23, milliseconds: 340),
 },
             new TimeSpantime0M
 {
     Id = 16,
-    Value = new TimeSpan(days: 0, hours: 21, minutes: 50, seconds: 31, milliseconds: 842),
+    Value = new TimeSpan(days: 0, hours: 18, minutes: 32, seconds: 7, milliseconds: 651),
     ModelInner = null,
-    NullableValue = new TimeSpan(days: 0, hours: 0, minutes: 56, seconds: 10, milliseconds: 73),
+    NullableValue = null,
 },
             new TimeSpantime0M
 {
     Id = 22,
-    Value = new TimeSpan(days: 0, hours: 19, minutes: 44, seconds: 47, milliseconds: 192),
+    Value = new TimeSpan(days: 0, hours: 14, minutes: 17, seconds: 38, milliseconds: 840),
     ModelInner = new TimeSpantime0MI
 {
-    Id = 16,
-    Value = new TimeSpan(days: 0, hours: 8, minutes: 0, seconds: 20, milliseconds: 744),
-    NullableValue = null,
+    Id = 9,
+    Value = new TimeSpan(days: 0, hours: 9, minutes: 56, seconds: 28, milliseconds: 72),
+    NullableValue = new TimeSpan(days: 0, hours: 20, minutes: 36, seconds: 44, milliseconds: 76),
 },
-    NullableValue = new TimeSpan(days: 0, hours: 11, minutes: 13, seconds: 42, milliseconds: 747),
-},
-            new TimeSpantime0M
-{
-    Id = 31,
-    Value = new TimeSpan(days: 0, hours: 1, minutes: 3, seconds: 7, milliseconds: 980),
-    ModelInner = null,
-    NullableValue = new TimeSpan(days: 0, hours: 10, minutes: 44, seconds: 57, milliseconds: 815),
+    NullableValue = new TimeSpan(days: 0, hours: 6, minutes: 29, seconds: 55, milliseconds: 20),
 },
             new TimeSpantime0M
 {
-    Id = 40,
-    Value = new TimeSpan(days: 0, hours: 10, minutes: 56, seconds: 18, milliseconds: 134),
-    ModelInner = new TimeSpantime0MI
-{
-    Id = 21,
-    Value = new TimeSpan(days: 0, hours: 9, minutes: 37, seconds: 14, milliseconds: 958),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new TimeSpantime0M
-{
-    Id = 41,
-    Value = new TimeSpan(days: 0, hours: 20, minutes: 6, seconds: 43, milliseconds: 948),
+    Id = 25,
+    Value = new TimeSpan(days: 0, hours: 22, minutes: 48, seconds: 32, milliseconds: 339),
     ModelInner = null,
     NullableValue = null,
 },
             new TimeSpantime0M
-{
-    Id = 42,
-    Value = new TimeSpan(days: 0, hours: 11, minutes: 37, seconds: 29, milliseconds: 7),
-    ModelInner = new TimeSpantime0MI
 {
     Id = 26,
-    Value = new TimeSpan(days: 0, hours: 8, minutes: 29, seconds: 4, milliseconds: 120),
-    NullableValue = new TimeSpan(days: 0, hours: 6, minutes: 0, seconds: 22, milliseconds: 523),
-},
-    NullableValue = null,
-},
-            new TimeSpantime0M
-{
-    Id = 51,
-    Value = new TimeSpan(days: 0, hours: 2, minutes: 32, seconds: 41, milliseconds: 50),
-    ModelInner = null,
-    NullableValue = new TimeSpan(days: 0, hours: 17, minutes: 32, seconds: 12, milliseconds: 884),
-},
-            new TimeSpantime0M
-{
-    Id = 52,
-    Value = new TimeSpan(days: 0, hours: 20, minutes: 10, seconds: 14, milliseconds: 601),
+    Value = new TimeSpan(days: 0, hours: 10, minutes: 28, seconds: 2, milliseconds: 984),
     ModelInner = new TimeSpantime0MI
 {
-    Id = 32,
-    Value = new TimeSpan(days: 0, hours: 2, minutes: 41, seconds: 19, milliseconds: 280),
-    NullableValue = null,
+    Id = 13,
+    Value = new TimeSpan(days: 0, hours: 11, minutes: 54, seconds: 27, milliseconds: 163),
+    NullableValue = new TimeSpan(days: 0, hours: 2, minutes: 39, seconds: 16, milliseconds: 840),
 },
-    NullableValue = null,
+    NullableValue = new TimeSpan(days: 0, hours: 1, minutes: 45, seconds: 5, milliseconds: 606),
 },
             new TimeSpantime0M
 {
-    Id = 54,
-    Value = new TimeSpan(days: 0, hours: 13, minutes: 21, seconds: 40, milliseconds: 418),
+    Id = 33,
+    Value = new TimeSpan(days: 0, hours: 19, minutes: 53, seconds: 34, milliseconds: 839),
     ModelInner = null,
+    NullableValue = new TimeSpan(days: 0, hours: 16, minutes: 4, seconds: 33, milliseconds: 63),
+},
+            new TimeSpantime0M
+{
+    Id = 36,
+    Value = new TimeSpan(days: 0, hours: 21, minutes: 43, seconds: 11, milliseconds: 832),
+    ModelInner = new TimeSpantime0MI
+{
+    Id = 15,
+    Value = new TimeSpan(days: 0, hours: 15, minutes: 25, seconds: 28, milliseconds: 151),
     NullableValue = null,
+},
+    NullableValue = new TimeSpan(days: 0, hours: 7, minutes: 19, seconds: 9, milliseconds: 901),
+},
+            new TimeSpantime0M
+{
+    Id = 39,
+    Value = new TimeSpan(days: 0, hours: 13, minutes: 55, seconds: 53, milliseconds: 204),
+    ModelInner = null,
+    NullableValue = new TimeSpan(days: 0, hours: 1, minutes: 54, seconds: 46, milliseconds: 939),
+},
+            new TimeSpantime0M
+{
+    Id = 46,
+    Value = new TimeSpan(days: 0, hours: 5, minutes: 39, seconds: 11, milliseconds: 685),
+    ModelInner = new TimeSpantime0MI
+{
+    Id = 20,
+    Value = new TimeSpan(days: 0, hours: 4, minutes: 23, seconds: 40, milliseconds: 841),
+    NullableValue = new TimeSpan(days: 0, hours: 7, minutes: 32, seconds: 22, milliseconds: 974),
+},
+    NullableValue = new TimeSpan(days: 0, hours: 7, minutes: 18, seconds: 24, milliseconds: 767),
+},
+            new TimeSpantime0M
+{
+    Id = 50,
+    Value = new TimeSpan(days: 0, hours: 9, minutes: 20, seconds: 54, milliseconds: 169),
+    ModelInner = null,
+    NullableValue = new TimeSpan(days: 0, hours: 21, minutes: 1, seconds: 26, milliseconds: 410),
 },
             new TimeSpantime0M
 {
     Id = 58,
-    Value = new TimeSpan(days: 0, hours: 11, minutes: 4, seconds: 18, milliseconds: 909),
+    Value = new TimeSpan(days: 0, hours: 9, minutes: 54, seconds: 12, milliseconds: 755),
     ModelInner = new TimeSpantime0MI
 {
-    Id = 41,
-    Value = new TimeSpan(days: 0, hours: 6, minutes: 45, seconds: 7, milliseconds: 715),
-    NullableValue = new TimeSpan(days: 0, hours: 17, minutes: 51, seconds: 31, milliseconds: 458),
+    Id = 22,
+    Value = new TimeSpan(days: 0, hours: 16, minutes: 56, seconds: 38, milliseconds: 365),
+    NullableValue = new TimeSpan(days: 0, hours: 21, minutes: 11, seconds: 17, milliseconds: 498),
 },
-    NullableValue = null,
+    NullableValue = new TimeSpan(days: 0, hours: 9, minutes: 58, seconds: 47, milliseconds: 44),
+},
+            new TimeSpantime0M
+{
+    Id = 64,
+    Value = new TimeSpan(days: 0, hours: 13, minutes: 10, seconds: 0, milliseconds: 829),
+    ModelInner = null,
+    NullableValue = new TimeSpan(days: 0, hours: 22, minutes: 52, seconds: 18, milliseconds: 57),
 },
             new TimeSpantime0M
 {
     Id = 65,
-    Value = new TimeSpan(days: 0, hours: 2, minutes: 48, seconds: 42, milliseconds: 592),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new TimeSpantime0M
-{
-    Id = 68,
-    Value = new TimeSpan(days: 0, hours: 16, minutes: 5, seconds: 52, milliseconds: 599),
+    Value = new TimeSpan(days: 0, hours: 2, minutes: 21, seconds: 1, milliseconds: 64),
     ModelInner = new TimeSpantime0MI
 {
-    Id = 45,
-    Value = new TimeSpan(days: 0, hours: 10, minutes: 31, seconds: 55, milliseconds: 682),
-    NullableValue = null,
+    Id = 30,
+    Value = new TimeSpan(days: 0, hours: 0, minutes: 12, seconds: 14, milliseconds: 23),
+    NullableValue = new TimeSpan(days: 0, hours: 19, minutes: 23, seconds: 21, milliseconds: 940),
 },
-    NullableValue = null,
-},
-            new TimeSpantime0M
-{
-    Id = 76,
-    Value = new TimeSpan(days: 0, hours: 8, minutes: 45, seconds: 3, milliseconds: 660),
-    ModelInner = null,
-    NullableValue = null,
+    NullableValue = new TimeSpan(days: 0, hours: 3, minutes: 28, seconds: 1, milliseconds: 494),
 },
             new TimeSpantime0M
-{
-    Id = 85,
-    Value = new TimeSpan(days: 0, hours: 18, minutes: 3, seconds: 0, milliseconds: 336),
-    ModelInner = new TimeSpantime0MI
-{
-    Id = 48,
-    Value = new TimeSpan(days: 0, hours: 2, minutes: 11, seconds: 0, milliseconds: 259),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new TimeSpantime0M
-{
-    Id = 91,
-    Value = new TimeSpan(days: 0, hours: 13, minutes: 2, seconds: 54, milliseconds: 764),
-    ModelInner = null,
-    NullableValue = new TimeSpan(days: 0, hours: 21, minutes: 24, seconds: 51, milliseconds: 556),
-},
-            new TimeSpantime0M
-{
-    Id = 93,
-    Value = new TimeSpan(days: 0, hours: 13, minutes: 53, seconds: 34, milliseconds: 359),
-    ModelInner = new TimeSpantime0MI
-{
-    Id = 57,
-    Value = new TimeSpan(days: 0, hours: 16, minutes: 12, seconds: 31, milliseconds: 282),
-    NullableValue = new TimeSpan(days: 0, hours: 9, minutes: 8, seconds: 26, milliseconds: 943),
-},
-    NullableValue = new TimeSpan(days: 0, hours: 15, minutes: 45, seconds: 52, milliseconds: 598),
-},
-            new TimeSpantime0M
-{
-    Id = 96,
-    Value = new TimeSpan(days: 0, hours: 0, minutes: 39, seconds: 25, milliseconds: 942),
-    ModelInner = null,
-    NullableValue = null,
-},
-            new TimeSpantime0M
-{
-    Id = 97,
-    Value = new TimeSpan(days: 0, hours: 11, minutes: 46, seconds: 27, milliseconds: 629),
-    ModelInner = new TimeSpantime0MI
-{
-    Id = 65,
-    Value = new TimeSpan(days: 0, hours: 13, minutes: 4, seconds: 41, milliseconds: 122),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new TimeSpantime0M
-{
-    Id = 103,
-    Value = new TimeSpan(days: 0, hours: 0, minutes: 31, seconds: 0, milliseconds: 580),
-    ModelInner = null,
-    NullableValue = new TimeSpan(days: 0, hours: 22, minutes: 51, seconds: 19, milliseconds: 403),
-},
-            new TimeSpantime0M
-{
-    Id = 107,
-    Value = new TimeSpan(days: 0, hours: 5, minutes: 31, seconds: 21, milliseconds: 771),
-    ModelInner = new TimeSpantime0MI
 {
     Id = 72,
-    Value = new TimeSpan(days: 0, hours: 5, minutes: 38, seconds: 3, milliseconds: 996),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new TimeSpantime0M
-{
-    Id = 113,
-    Value = new TimeSpan(days: 0, hours: 2, minutes: 51, seconds: 32, milliseconds: 385),
+    Value = new TimeSpan(days: 0, hours: 18, minutes: 45, seconds: 41, milliseconds: 244),
     ModelInner = null,
-    NullableValue = new TimeSpan(days: 0, hours: 13, minutes: 14, seconds: 3, milliseconds: 624),
+    NullableValue = new TimeSpan(days: 0, hours: 22, minutes: 17, seconds: 2, milliseconds: 33),
 },
             new TimeSpantime0M
 {
-    Id = 116,
-    Value = new TimeSpan(days: 0, hours: 6, minutes: 29, seconds: 24, milliseconds: 450),
+    Id = 75,
+    Value = new TimeSpan(days: 0, hours: 11, minutes: 30, seconds: 16, milliseconds: 673),
     ModelInner = new TimeSpantime0MI
 {
-    Id = 76,
-    Value = new TimeSpan(days: 0, hours: 0, minutes: 48, seconds: 8, milliseconds: 406),
-    NullableValue = new TimeSpan(days: 0, hours: 1, minutes: 13, seconds: 18, milliseconds: 657),
+    Id = 33,
+    Value = new TimeSpan(days: 0, hours: 18, minutes: 9, seconds: 47, milliseconds: 404),
+    NullableValue = null,
 },
-    NullableValue = new TimeSpan(days: 0, hours: 17, minutes: 0, seconds: 44, milliseconds: 285),
+    NullableValue = null,
+},
+            new TimeSpantime0M
+{
+    Id = 84,
+    Value = new TimeSpan(days: 0, hours: 20, minutes: 0, seconds: 17, milliseconds: 376),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new TimeSpantime0M
+{
+    Id = 90,
+    Value = new TimeSpan(days: 0, hours: 7, minutes: 20, seconds: 31, milliseconds: 158),
+    ModelInner = new TimeSpantime0MI
+{
+    Id = 40,
+    Value = new TimeSpan(days: 0, hours: 8, minutes: 12, seconds: 55, milliseconds: 142),
+    NullableValue = new TimeSpan(days: 0, hours: 8, minutes: 44, seconds: 47, milliseconds: 17),
+},
+    NullableValue = new TimeSpan(days: 0, hours: 2, minutes: 36, seconds: 46, milliseconds: 825),
+},
+            new TimeSpantime0M
+{
+    Id = 92,
+    Value = new TimeSpan(days: 0, hours: 17, minutes: 8, seconds: 10, milliseconds: 362),
+    ModelInner = null,
+    NullableValue = new TimeSpan(days: 0, hours: 5, minutes: 48, seconds: 8, milliseconds: 439),
+},
+            new TimeSpantime0M
+{
+    Id = 100,
+    Value = new TimeSpan(days: 0, hours: 10, minutes: 48, seconds: 15, milliseconds: 291),
+    ModelInner = new TimeSpantime0MI
+{
+    Id = 49,
+    Value = new TimeSpan(days: 0, hours: 21, minutes: 9, seconds: 13, milliseconds: 682),
+    NullableValue = null,
+},
+    NullableValue = new TimeSpan(days: 0, hours: 16, minutes: 52, seconds: 3, milliseconds: 385),
+},
+            new TimeSpantime0M
+{
+    Id = 104,
+    Value = new TimeSpan(days: 0, hours: 5, minutes: 46, seconds: 4, milliseconds: 1),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new TimeSpantime0M
+{
+    Id = 112,
+    Value = new TimeSpan(days: 0, hours: 16, minutes: 35, seconds: 15, milliseconds: 490),
+    ModelInner = new TimeSpantime0MI
+{
+    Id = 53,
+    Value = new TimeSpan(days: 0, hours: 8, minutes: 10, seconds: 1, milliseconds: 581),
+    NullableValue = null,
+},
+    NullableValue = new TimeSpan(days: 0, hours: 19, minutes: 25, seconds: 52, milliseconds: 342),
+},
+            new TimeSpantime0M
+{
+    Id = 114,
+    Value = new TimeSpan(days: 0, hours: 9, minutes: 17, seconds: 49, milliseconds: 272),
+    ModelInner = null,
+    NullableValue = new TimeSpan(days: 0, hours: 16, minutes: 9, seconds: 5, milliseconds: 700),
+},
+            new TimeSpantime0M
+{
+    Id = 115,
+    Value = new TimeSpan(days: 0, hours: 16, minutes: 4, seconds: 42, milliseconds: 950),
+    ModelInner = new TimeSpantime0MI
+{
+    Id = 59,
+    Value = new TimeSpan(days: 0, hours: 10, minutes: 13, seconds: 18, milliseconds: 427),
+    NullableValue = new TimeSpan(days: 0, hours: 14, minutes: 57, seconds: 55, milliseconds: 279),
+},
+    NullableValue = new TimeSpan(days: 0, hours: 1, minutes: 11, seconds: 7, milliseconds: 531),
 },
             new TimeSpantime0M
 {
     Id = 124,
-    Value = new TimeSpan(days: 0, hours: 5, minutes: 45, seconds: 36, milliseconds: 798),
+    Value = new TimeSpan(days: 0, hours: 11, minutes: 39, seconds: 19, milliseconds: 373),
     ModelInner = null,
     NullableValue = null,
 },
             new TimeSpantime0M
 {
-    Id = 127,
-    Value = new TimeSpan(days: 0, hours: 6, minutes: 41, seconds: 3, milliseconds: 326),
+    Id = 126,
+    Value = new TimeSpan(days: 0, hours: 21, minutes: 26, seconds: 32, milliseconds: 159),
     ModelInner = new TimeSpantime0MI
 {
-    Id = 78,
-    Value = new TimeSpan(days: 0, hours: 9, minutes: 11, seconds: 17, milliseconds: 696),
-    NullableValue = new TimeSpan(days: 0, hours: 9, minutes: 49, seconds: 23, milliseconds: 845),
+    Id = 66,
+    Value = new TimeSpan(days: 0, hours: 3, minutes: 29, seconds: 36, milliseconds: 646),
+    NullableValue = new TimeSpan(days: 0, hours: 6, minutes: 12, seconds: 16, milliseconds: 39),
 },
-    NullableValue = null,
+    NullableValue = new TimeSpan(days: 0, hours: 6, minutes: 51, seconds: 42, milliseconds: 139),
+},
+            new TimeSpantime0M
+{
+    Id = 129,
+    Value = new TimeSpan(days: 0, hours: 3, minutes: 14, seconds: 16, milliseconds: 148),
+    ModelInner = null,
+    NullableValue = new TimeSpan(days: 0, hours: 2, minutes: 10, seconds: 28, milliseconds: 526),
 },
             new TimeSpantime0M
 {
     Id = 131,
-    Value = new TimeSpan(days: 0, hours: 17, minutes: 29, seconds: 36, milliseconds: 111),
-    ModelInner = null,
-    NullableValue = new TimeSpan(days: 0, hours: 20, minutes: 9, seconds: 35, milliseconds: 583),
-},
-            new TimeSpantime0M
-{
-    Id = 140,
-    Value = new TimeSpan(days: 0, hours: 22, minutes: 34, seconds: 4, milliseconds: 183),
+    Value = new TimeSpan(days: 0, hours: 20, minutes: 9, seconds: 40, milliseconds: 976),
     ModelInner = new TimeSpantime0MI
 {
-    Id = 79,
-    Value = new TimeSpan(days: 0, hours: 18, minutes: 50, seconds: 18, milliseconds: 815),
-    NullableValue = new TimeSpan(days: 0, hours: 2, minutes: 4, seconds: 46, milliseconds: 505),
+    Id = 74,
+    Value = new TimeSpan(days: 0, hours: 11, minutes: 24, seconds: 35, milliseconds: 162),
+    NullableValue = new TimeSpan(days: 0, hours: 2, minutes: 25, seconds: 20, milliseconds: 840),
 },
-    NullableValue = null,
+    NullableValue = new TimeSpan(days: 0, hours: 2, minutes: 1, seconds: 26, milliseconds: 932),
 },
             new TimeSpantime0M
 {
-    Id = 147,
-    Value = new TimeSpan(days: 0, hours: 12, minutes: 22, seconds: 18, milliseconds: 525),
+    Id = 134,
+    Value = new TimeSpan(days: 0, hours: 17, minutes: 29, seconds: 20, milliseconds: 894),
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = new TimeSpan(days: 0, hours: 6, minutes: 18, seconds: 31, milliseconds: 565),
 },
             new TimeSpantime0M
 {
-    Id = 151,
-    Value = new TimeSpan(days: 0, hours: 6, minutes: 56, seconds: 51, milliseconds: 741),
+    Id = 138,
+    Value = new TimeSpan(days: 0, hours: 19, minutes: 25, seconds: 54, milliseconds: 505),
     ModelInner = new TimeSpantime0MI
 {
-    Id = 88,
-    Value = new TimeSpan(days: 0, hours: 20, minutes: 28, seconds: 2, milliseconds: 649),
-    NullableValue = new TimeSpan(days: 0, hours: 1, minutes: 57, seconds: 32, milliseconds: 338),
+    Id = 76,
+    Value = new TimeSpan(days: 0, hours: 21, minutes: 15, seconds: 21, milliseconds: 920),
+    NullableValue = new TimeSpan(days: 0, hours: 9, minutes: 50, seconds: 31, milliseconds: 163),
 },
-    NullableValue = null,
+    NullableValue = new TimeSpan(days: 0, hours: 9, minutes: 3, seconds: 3, milliseconds: 404),
 },
             new TimeSpantime0M
 {
-    Id = 155,
-    Value = new TimeSpan(days: 0, hours: 12, minutes: 28, seconds: 46, milliseconds: 934),
+    Id = 145,
+    Value = new TimeSpan(days: 0, hours: 4, minutes: 25, seconds: 45, milliseconds: 974),
     ModelInner = null,
     NullableValue = null,
 },
             new TimeSpantime0M
 {
-    Id = 160,
-    Value = new TimeSpan(days: 0, hours: 10, minutes: 51, seconds: 5, milliseconds: 120),
+    Id = 153,
+    Value = new TimeSpan(days: 0, hours: 12, minutes: 51, seconds: 35, milliseconds: 280),
     ModelInner = new TimeSpantime0MI
 {
-    Id = 97,
-    Value = new TimeSpan(days: 0, hours: 1, minutes: 4, seconds: 2, milliseconds: 414),
-    NullableValue = new TimeSpan(days: 0, hours: 20, minutes: 15, seconds: 49, milliseconds: 701),
+    Id = 84,
+    Value = new TimeSpan(days: 0, hours: 21, minutes: 26, seconds: 54, milliseconds: 9),
+    NullableValue = null,
+},
+    NullableValue = new TimeSpan(days: 0, hours: 0, minutes: 19, seconds: 37, milliseconds: 229),
+},
+            new TimeSpantime0M
+{
+    Id = 162,
+    Value = new TimeSpan(days: 0, hours: 11, minutes: 52, seconds: 34, milliseconds: 338),
+    ModelInner = null,
+    NullableValue = null,
+},
+            new TimeSpantime0M
+{
+    Id = 167,
+    Value = new TimeSpan(days: 0, hours: 7, minutes: 5, seconds: 19, milliseconds: 67),
+    ModelInner = new TimeSpantime0MI
+{
+    Id = 85,
+    Value = new TimeSpan(days: 0, hours: 17, minutes: 12, seconds: 21, milliseconds: 25),
+    NullableValue = new TimeSpan(days: 0, hours: 4, minutes: 25, seconds: 13, milliseconds: 914),
 },
     NullableValue = null,
 },
             new TimeSpantime0M
 {
-    Id = 168,
-    Value = new TimeSpan(days: 0, hours: 9, minutes: 5, seconds: 55, milliseconds: 980),
+    Id = 174,
+    Value = new TimeSpan(days: 0, hours: 6, minutes: 54, seconds: 55, milliseconds: 779),
     ModelInner = null,
-    NullableValue = new TimeSpan(days: 0, hours: 17, minutes: 32, seconds: 39, milliseconds: 970),
-},
-            new TimeSpantime0M
-{
-    Id = 173,
-    Value = new TimeSpan(days: 0, hours: 4, minutes: 8, seconds: 57, milliseconds: 328),
-    ModelInner = new TimeSpantime0MI
-{
-    Id = 101,
-    Value = new TimeSpan(days: 0, hours: 2, minutes: 21, seconds: 15, milliseconds: 521),
-    NullableValue = new TimeSpan(days: 0, hours: 3, minutes: 30, seconds: 27, milliseconds: 184),
-},
-    NullableValue = new TimeSpan(days: 0, hours: 19, minutes: 9, seconds: 29, milliseconds: 132),
-},
-            new TimeSpantime0M
-{
-    Id = 177,
-    Value = new TimeSpan(days: 0, hours: 11, minutes: 38, seconds: 57, milliseconds: 509),
-    ModelInner = null,
-    NullableValue = new TimeSpan(days: 0, hours: 21, minutes: 28, seconds: 28, milliseconds: 664),
+    NullableValue = null,
 },
         };
 
@@ -1340,12 +1340,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 96;
+                parametr1.Value = 162;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 124;
+                parametr2.Value = 8;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1381,62 +1381,82 @@ ORDER BY
                 var secondItems1 = new List<FlatTimeSpantime0M>();
                 var secondItems2 = new List<FlatTimeSpantime0M>();
                 await ((ITimeSpanSingleTypetime)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(16));
-                Assert.That(firstItems2, Has.Count.EqualTo(16));
-                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[7],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[8],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[9],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[10],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[11],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[12],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[13],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[14],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[14],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[15],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[15],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(10));
-                Assert.That(secondItems2, Has.Count.EqualTo(10));
-                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[7],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[8],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[9],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(2));
+                Assert.That(firstItems2, Has.Count.EqualTo(2));
+                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(34));
+                Assert.That(secondItems2, Has.Count.EqualTo(34));
+                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[1], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[1], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[2], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[2], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[3], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[3], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[4], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[4], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[5], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[5], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[7],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[8],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[9],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[10],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[11],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[12],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[13],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[14],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[15],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[16],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[17],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[18],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[19],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[20],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[21],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[22],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[22],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[23],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[23],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[24],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[24],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[25],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[25],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[26],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[26],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[27],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[27],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[28],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[28],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[29],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[29],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[30],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[30],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[31],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[31],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[32],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[32],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[33],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[33],_testData[34], false);
             }
         }
 
@@ -1447,12 +1467,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 107;
+                parametr1.Value = 8;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 65;
+                parametr2.Value = 16;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1484,57 +1504,109 @@ ORDER BY
                 var firstItems2 = new List<FlatTimeSpantime0M>();
                 var secondItems1 = new List<FlatTimeSpantime0M>();
                 await ((ITimeSpanSingleTypetime)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(13));
-                Assert.That(firstItems2, Has.Count.EqualTo(13));
-                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[7],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[8],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[9],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[10],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[11],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[12],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(22));
-                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(34));
+                Assert.That(firstItems2, Has.Count.EqualTo(34));
+                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[1], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[1], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[2], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[2], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[3], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[3], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[4], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[4], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[5], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[5], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[7],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[8],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[9],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[10],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[11],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[12],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[13],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[14],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[14],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[15],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[15],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[16],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[16],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[17],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[17],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[18],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[18],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[19],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[19],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[20],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[20],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[21],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[21],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[22],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[22],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[23],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[23],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[24],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[24],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[25],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[25],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[26],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[26],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[27],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[27],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[28],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[28],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[29],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[29],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[30],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[30],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[31],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[31],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[32],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[32],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[33],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[33],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(32));
+                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[3], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[4], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[5], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[22],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[23],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[24],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[25],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[26],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[27],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[28],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[29],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[30],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[31],_testData[34], false);
             }
         }
 
@@ -1582,12 +1654,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 147;
+                parametr1.Value = 90;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 97;
+                parametr2.Value = 72;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1623,52 +1695,84 @@ ORDER BY
                 var secondItems1 = new List<FlatTimeSpantime0M>();
                 var secondItems2 = new List<FlatTimeSpantime0M>();
                  ((ITimeSpanSingleTypetime)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(6));
-                Assert.That(firstItems2, Has.Count.EqualTo(6));
-                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(15));
-                Assert.That(secondItems2, Has.Count.EqualTo(15));
-                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[7],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[8],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[9],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[10],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[11],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[12],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[13],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[14],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(17));
+                Assert.That(firstItems2, Has.Count.EqualTo(17));
+                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[7],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[8],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[9],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[10],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[11],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[12],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[13],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[14],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[14],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[15],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[15],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[16],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[16],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(20));
+                Assert.That(secondItems2, Has.Count.EqualTo(20));
+                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[7],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[8],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[9],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[10],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[11],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[12],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[13],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[14],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[15],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[16],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[17],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[18],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[19],_testData[34], false);
             }
         }
 
@@ -1679,12 +1783,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 127;
+                parametr1.Value = 114;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 124;
+                parametr2.Value = 22;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1716,37 +1820,64 @@ ORDER BY
                 var firstItems2 = new List<FlatTimeSpantime0M>();
                 var secondItems1 = new List<FlatTimeSpantime0M>();
                  ((ITimeSpanSingleTypetime)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(9));
-                Assert.That(firstItems2, Has.Count.EqualTo(9));
-                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[7],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[8],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(10));
-                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(12));
+                Assert.That(firstItems2, Has.Count.EqualTo(12));
+                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[7],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[8],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[9],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[10],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[11],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(31));
+                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[4], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[5], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[22],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[23],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[24],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[25],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[26],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[27],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[28],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[29],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[30],_testData[34], false);
             }
         }
 
@@ -1834,12 +1965,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 54;
+                parametr1.Value = 22;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 58;
+                parametr2.Value = 145;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1870,63 +2001,51 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
+                        Assert.That(models, Has.Count.EqualTo(31));
 
-                        FlatTimeSpantime0M.AssertModel(models[0],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(models[1],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(models[2],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(models[3],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(models[4],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(models[5],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(models[6],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(models[7],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(models[8],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(models[9],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(models[10],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(models[11],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(models[12],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(models[13],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(models[14],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(models[15],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(models[16],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(models[17],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(models[18],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(models[19],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(models[20],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(models[21],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(models[22],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(models[23],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(models[0],_testData[4], false);
+                        FlatTimeSpantime0M.AssertModel(models[1],_testData[5], false);
+                        FlatTimeSpantime0M.AssertModel(models[2],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(models[3],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(models[4],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(models[5],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(models[6],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(models[7],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(models[8],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(models[9],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(models[10],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(models[11],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(models[12],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(models[13],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(models[14],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(models[15],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(models[16],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(models[17],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(models[18],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(models[19],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(models[20],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(models[21],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(models[22],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(models[23],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(models[24],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(models[25],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(models[26],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(models[27],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(models[28],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(models[29],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(models[30],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
+                        Assert.That(models, Has.Count.EqualTo(4));
 
-                        FlatTimeSpantime0M.AssertModel(models[0],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(models[1],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(models[2],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(models[3],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(models[4],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(models[5],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(models[6],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(models[7],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(models[8],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(models[9],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(models[10],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(models[11],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(models[12],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(models[13],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(models[14],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(models[15],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(models[16],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(models[17],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(models[18],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(models[19],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(models[20],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(models[21],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(models[22],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(models[0],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(models[1],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(models[2],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(models[3],_testData[34], false);
                         continue;
                     }
                     
@@ -1942,12 +2061,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 40;
+                parametr1.Value = 75;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 22;
+                parametr2.Value = 26;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1979,100 +2098,86 @@ ORDER BY
                 var secondItems1 = new List<FlatTimeSpantime0M>();
                 var secondItems2 = new List<FlatTimeSpantime0M>();
                 await ((ITimeSpanSingleTypetime)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(29));
-                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[6], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[7], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[8], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[9], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[10], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[14],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[15],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[16],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[17],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[18],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[19],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[20],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[21],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[22],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[23],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[24],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[25],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[26],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[27],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[28],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(31));
-                Assert.That(secondItems2, Has.Count.EqualTo(31));
-                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[4], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[4], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[5], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[5], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[6], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[6], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[7], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[7], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[8], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[8], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[9], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[9], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[10], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[10], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[7],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[8],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[9],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[10],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[11],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[12],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[13],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[14],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[15],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[16],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[17],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[18],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[19],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[20],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[21],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[22],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[22],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[23],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[23],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[24],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[24],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[25],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[25],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[26],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[26],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[27],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[27],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[28],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[28],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[29],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[29],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[30],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[30],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(19));
+                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[14],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[15],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[16],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[17],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[18],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(29));
+                Assert.That(secondItems2, Has.Count.EqualTo(29));
+                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[7],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[8],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[9],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[10],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[11],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[12],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[13],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[14],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[15],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[16],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[17],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[18],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[19],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[20],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[21],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[22],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[22],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[23],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[23],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[24],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[24],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[25],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[25],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[26],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[26],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[27],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[27],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[28],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[28],_testData[34], false);
             }
         }
 
@@ -2113,12 +2218,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 131;
+                parametr1.Value = 25;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 124;
+                parametr2.Value = 90;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2149,34 +2254,63 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
+                        Assert.That(models, Has.Count.EqualTo(30));
 
-                        FlatTimeSpantime0M.AssertModel(models[0],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(models[1],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(models[2],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(models[3],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(models[4],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(models[5],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(models[6],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(models[7],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(models[0],_testData[5], false);
+                        FlatTimeSpantime0M.AssertModel(models[1],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(models[2],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(models[3],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(models[4],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(models[5],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(models[6],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(models[7],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(models[8],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(models[9],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(models[10],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(models[11],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(models[12],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(models[13],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(models[14],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(models[15],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(models[16],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(models[17],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(models[18],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(models[19],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(models[20],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(models[21],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(models[22],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(models[23],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(models[24],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(models[25],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(models[26],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(models[27],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(models[28],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(models[29],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
+                        Assert.That(models, Has.Count.EqualTo(17));
 
-                        FlatTimeSpantime0M.AssertModel(models[0],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(models[1],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(models[2],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(models[3],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(models[4],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(models[5],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(models[6],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(models[7],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(models[8],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(models[9],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(models[0],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(models[1],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(models[2],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(models[3],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(models[4],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(models[5],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(models[6],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(models[7],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(models[8],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(models[9],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(models[10],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(models[11],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(models[12],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(models[13],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(models[14],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(models[15],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(models[16],_testData[34], false);
                         continue;
                     }
                     
@@ -2192,12 +2326,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 160;
+                parametr1.Value = 124;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 140;
+                parametr2.Value = 50;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2229,26 +2363,67 @@ ORDER BY
                 var secondItems1 = new List<FlatTimeSpantime0M>();
                 var secondItems2 = new List<FlatTimeSpantime0M>();
                  ((ITimeSpanSingleTypetime)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(3));
-                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(7));
-                Assert.That(secondItems2, Has.Count.EqualTo(7));
-                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(10));
+                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(24));
+                Assert.That(secondItems2, Has.Count.EqualTo(24));
+                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[7],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[8],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[9],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[10],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[11],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[12],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[13],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[14],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[15],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[16],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[17],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[18],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[19],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[20],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[21],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[22],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[22],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[23],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[23],_testData[34], false);
             }
         }
 
@@ -2328,12 +2503,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 68;
+                parametr1.Value = 162;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 91;
+                parametr2.Value = 90;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -2342,55 +2517,35 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(21));
+                        Assert.That(models, Has.Count.EqualTo(2));
 
-                        TimeSpantime0M.AssertModel(models[0],_testData[14], false);
-                        TimeSpantime0M.AssertModel(models[1],_testData[15], false);
-                        TimeSpantime0M.AssertModel(models[2],_testData[16], false);
-                        TimeSpantime0M.AssertModel(models[3],_testData[17], false);
-                        TimeSpantime0M.AssertModel(models[4],_testData[18], false);
-                        TimeSpantime0M.AssertModel(models[5],_testData[19], false);
-                        TimeSpantime0M.AssertModel(models[6],_testData[20], false);
-                        TimeSpantime0M.AssertModel(models[7],_testData[21], false);
-                        TimeSpantime0M.AssertModel(models[8],_testData[22], false);
-                        TimeSpantime0M.AssertModel(models[9],_testData[23], false);
-                        TimeSpantime0M.AssertModel(models[10],_testData[24], false);
-                        TimeSpantime0M.AssertModel(models[11],_testData[25], false);
-                        TimeSpantime0M.AssertModel(models[12],_testData[26], false);
-                        TimeSpantime0M.AssertModel(models[13],_testData[27], false);
-                        TimeSpantime0M.AssertModel(models[14],_testData[28], false);
-                        TimeSpantime0M.AssertModel(models[15],_testData[29], false);
-                        TimeSpantime0M.AssertModel(models[16],_testData[30], false);
-                        TimeSpantime0M.AssertModel(models[17],_testData[31], false);
-                        TimeSpantime0M.AssertModel(models[18],_testData[32], false);
-                        TimeSpantime0M.AssertModel(models[19],_testData[33], false);
-                        TimeSpantime0M.AssertModel(models[20],_testData[34], false);
+                        TimeSpantime0M.AssertModel(models[0],_testData[33], false);
+                        TimeSpantime0M.AssertModel(models[1],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
+                        Assert.That(models, Has.Count.EqualTo(17));
 
-                        TimeSpantime0M.AssertModel(models[0],_testData[17], false);
-                        TimeSpantime0M.AssertModel(models[1],_testData[18], false);
-                        TimeSpantime0M.AssertModel(models[2],_testData[19], false);
-                        TimeSpantime0M.AssertModel(models[3],_testData[20], false);
-                        TimeSpantime0M.AssertModel(models[4],_testData[21], false);
-                        TimeSpantime0M.AssertModel(models[5],_testData[22], false);
-                        TimeSpantime0M.AssertModel(models[6],_testData[23], false);
-                        TimeSpantime0M.AssertModel(models[7],_testData[24], false);
-                        TimeSpantime0M.AssertModel(models[8],_testData[25], false);
-                        TimeSpantime0M.AssertModel(models[9],_testData[26], false);
-                        TimeSpantime0M.AssertModel(models[10],_testData[27], false);
-                        TimeSpantime0M.AssertModel(models[11],_testData[28], false);
-                        TimeSpantime0M.AssertModel(models[12],_testData[29], false);
-                        TimeSpantime0M.AssertModel(models[13],_testData[30], false);
-                        TimeSpantime0M.AssertModel(models[14],_testData[31], false);
-                        TimeSpantime0M.AssertModel(models[15],_testData[32], false);
-                        TimeSpantime0M.AssertModel(models[16],_testData[33], false);
-                        TimeSpantime0M.AssertModel(models[17],_testData[34], false);
+                        TimeSpantime0M.AssertModel(models[0],_testData[18], false);
+                        TimeSpantime0M.AssertModel(models[1],_testData[19], false);
+                        TimeSpantime0M.AssertModel(models[2],_testData[20], false);
+                        TimeSpantime0M.AssertModel(models[3],_testData[21], false);
+                        TimeSpantime0M.AssertModel(models[4],_testData[22], false);
+                        TimeSpantime0M.AssertModel(models[5],_testData[23], false);
+                        TimeSpantime0M.AssertModel(models[6],_testData[24], false);
+                        TimeSpantime0M.AssertModel(models[7],_testData[25], false);
+                        TimeSpantime0M.AssertModel(models[8],_testData[26], false);
+                        TimeSpantime0M.AssertModel(models[9],_testData[27], false);
+                        TimeSpantime0M.AssertModel(models[10],_testData[28], false);
+                        TimeSpantime0M.AssertModel(models[11],_testData[29], false);
+                        TimeSpantime0M.AssertModel(models[12],_testData[30], false);
+                        TimeSpantime0M.AssertModel(models[13],_testData[31], false);
+                        TimeSpantime0M.AssertModel(models[14],_testData[32], false);
+                        TimeSpantime0M.AssertModel(models[15],_testData[33], false);
+                        TimeSpantime0M.AssertModel(models[16],_testData[34], false);
                         continue;
                     }
                     
@@ -2425,12 +2580,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 127;
+                parametr1.Value = 36;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 11;
+                parametr2.Value = 46;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -2439,58 +2594,68 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
+                        Assert.That(models, Has.Count.EqualTo(27));
 
-                        TimeSpantime0M.AssertModel(models[0],_testData[26], false);
-                        TimeSpantime0M.AssertModel(models[1],_testData[27], false);
-                        TimeSpantime0M.AssertModel(models[2],_testData[28], false);
-                        TimeSpantime0M.AssertModel(models[3],_testData[29], false);
-                        TimeSpantime0M.AssertModel(models[4],_testData[30], false);
-                        TimeSpantime0M.AssertModel(models[5],_testData[31], false);
-                        TimeSpantime0M.AssertModel(models[6],_testData[32], false);
-                        TimeSpantime0M.AssertModel(models[7],_testData[33], false);
-                        TimeSpantime0M.AssertModel(models[8],_testData[34], false);
+                        TimeSpantime0M.AssertModel(models[0],_testData[8], false);
+                        TimeSpantime0M.AssertModel(models[1],_testData[9], false);
+                        TimeSpantime0M.AssertModel(models[2],_testData[10], false);
+                        TimeSpantime0M.AssertModel(models[3],_testData[11], false);
+                        TimeSpantime0M.AssertModel(models[4],_testData[12], false);
+                        TimeSpantime0M.AssertModel(models[5],_testData[13], false);
+                        TimeSpantime0M.AssertModel(models[6],_testData[14], false);
+                        TimeSpantime0M.AssertModel(models[7],_testData[15], false);
+                        TimeSpantime0M.AssertModel(models[8],_testData[16], false);
+                        TimeSpantime0M.AssertModel(models[9],_testData[17], false);
+                        TimeSpantime0M.AssertModel(models[10],_testData[18], false);
+                        TimeSpantime0M.AssertModel(models[11],_testData[19], false);
+                        TimeSpantime0M.AssertModel(models[12],_testData[20], false);
+                        TimeSpantime0M.AssertModel(models[13],_testData[21], false);
+                        TimeSpantime0M.AssertModel(models[14],_testData[22], false);
+                        TimeSpantime0M.AssertModel(models[15],_testData[23], false);
+                        TimeSpantime0M.AssertModel(models[16],_testData[24], false);
+                        TimeSpantime0M.AssertModel(models[17],_testData[25], false);
+                        TimeSpantime0M.AssertModel(models[18],_testData[26], false);
+                        TimeSpantime0M.AssertModel(models[19],_testData[27], false);
+                        TimeSpantime0M.AssertModel(models[20],_testData[28], false);
+                        TimeSpantime0M.AssertModel(models[21],_testData[29], false);
+                        TimeSpantime0M.AssertModel(models[22],_testData[30], false);
+                        TimeSpantime0M.AssertModel(models[23],_testData[31], false);
+                        TimeSpantime0M.AssertModel(models[24],_testData[32], false);
+                        TimeSpantime0M.AssertModel(models[25],_testData[33], false);
+                        TimeSpantime0M.AssertModel(models[26],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(33));
+                        Assert.That(models, Has.Count.EqualTo(25));
 
-                        TimeSpantime0M.AssertModel(models[0],_testData[2], false);
-                        TimeSpantime0M.AssertModel(models[1],_testData[3], false);
-                        TimeSpantime0M.AssertModel(models[2],_testData[4], false);
-                        TimeSpantime0M.AssertModel(models[3],_testData[5], false);
-                        TimeSpantime0M.AssertModel(models[4],_testData[6], false);
-                        TimeSpantime0M.AssertModel(models[5],_testData[7], false);
-                        TimeSpantime0M.AssertModel(models[6],_testData[8], false);
-                        TimeSpantime0M.AssertModel(models[7],_testData[9], false);
-                        TimeSpantime0M.AssertModel(models[8],_testData[10], false);
-                        TimeSpantime0M.AssertModel(models[9],_testData[11], false);
-                        TimeSpantime0M.AssertModel(models[10],_testData[12], false);
-                        TimeSpantime0M.AssertModel(models[11],_testData[13], false);
-                        TimeSpantime0M.AssertModel(models[12],_testData[14], false);
-                        TimeSpantime0M.AssertModel(models[13],_testData[15], false);
-                        TimeSpantime0M.AssertModel(models[14],_testData[16], false);
-                        TimeSpantime0M.AssertModel(models[15],_testData[17], false);
-                        TimeSpantime0M.AssertModel(models[16],_testData[18], false);
-                        TimeSpantime0M.AssertModel(models[17],_testData[19], false);
-                        TimeSpantime0M.AssertModel(models[18],_testData[20], false);
-                        TimeSpantime0M.AssertModel(models[19],_testData[21], false);
-                        TimeSpantime0M.AssertModel(models[20],_testData[22], false);
-                        TimeSpantime0M.AssertModel(models[21],_testData[23], false);
-                        TimeSpantime0M.AssertModel(models[22],_testData[24], false);
-                        TimeSpantime0M.AssertModel(models[23],_testData[25], false);
-                        TimeSpantime0M.AssertModel(models[24],_testData[26], false);
-                        TimeSpantime0M.AssertModel(models[25],_testData[27], false);
-                        TimeSpantime0M.AssertModel(models[26],_testData[28], false);
-                        TimeSpantime0M.AssertModel(models[27],_testData[29], false);
-                        TimeSpantime0M.AssertModel(models[28],_testData[30], false);
-                        TimeSpantime0M.AssertModel(models[29],_testData[31], false);
-                        TimeSpantime0M.AssertModel(models[30],_testData[32], false);
-                        TimeSpantime0M.AssertModel(models[31],_testData[33], false);
-                        TimeSpantime0M.AssertModel(models[32],_testData[34], false);
+                        TimeSpantime0M.AssertModel(models[0],_testData[10], false);
+                        TimeSpantime0M.AssertModel(models[1],_testData[11], false);
+                        TimeSpantime0M.AssertModel(models[2],_testData[12], false);
+                        TimeSpantime0M.AssertModel(models[3],_testData[13], false);
+                        TimeSpantime0M.AssertModel(models[4],_testData[14], false);
+                        TimeSpantime0M.AssertModel(models[5],_testData[15], false);
+                        TimeSpantime0M.AssertModel(models[6],_testData[16], false);
+                        TimeSpantime0M.AssertModel(models[7],_testData[17], false);
+                        TimeSpantime0M.AssertModel(models[8],_testData[18], false);
+                        TimeSpantime0M.AssertModel(models[9],_testData[19], false);
+                        TimeSpantime0M.AssertModel(models[10],_testData[20], false);
+                        TimeSpantime0M.AssertModel(models[11],_testData[21], false);
+                        TimeSpantime0M.AssertModel(models[12],_testData[22], false);
+                        TimeSpantime0M.AssertModel(models[13],_testData[23], false);
+                        TimeSpantime0M.AssertModel(models[14],_testData[24], false);
+                        TimeSpantime0M.AssertModel(models[15],_testData[25], false);
+                        TimeSpantime0M.AssertModel(models[16],_testData[26], false);
+                        TimeSpantime0M.AssertModel(models[17],_testData[27], false);
+                        TimeSpantime0M.AssertModel(models[18],_testData[28], false);
+                        TimeSpantime0M.AssertModel(models[19],_testData[29], false);
+                        TimeSpantime0M.AssertModel(models[20],_testData[30], false);
+                        TimeSpantime0M.AssertModel(models[21],_testData[31], false);
+                        TimeSpantime0M.AssertModel(models[22],_testData[32], false);
+                        TimeSpantime0M.AssertModel(models[23],_testData[33], false);
+                        TimeSpantime0M.AssertModel(models[24],_testData[34], false);
                         continue;
                     }
                     
@@ -2621,85 +2786,77 @@ ORDER BY
                 var firstItems2 = new List<FlatTimeSpantime0M>();
                 var secondItems1 = new List<FlatTimeSpantime0M>();
                 var secondItems2 = new List<FlatTimeSpantime0M>();
-                await ((ITimeSpanSingleTypetime)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 22, query1, 147, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(31));
-                Assert.That(firstItems2, Has.Count.EqualTo(31));
-                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[4], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[4], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[5], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[5], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[6], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[6], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[7], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[7], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[8], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[8], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[9], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[9], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[10], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[10], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[7],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[8],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[9],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[10],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[11],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[12],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[13],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[14],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[14],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[15],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[15],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[16],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[16],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[17],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[17],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[18],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[18],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[19],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[19],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[20],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[20],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[21],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[21],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[22],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[22],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[23],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[23],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[24],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[24],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[25],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[25],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[26],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[26],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[27],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[27],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[28],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[28],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[29],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[29],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[30],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[30],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(6));
-                Assert.That(secondItems2, Has.Count.EqualTo(6));
-                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[34], false);
+                await ((ITimeSpanSingleTypetime)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 104, query1, 75, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(14));
+                Assert.That(firstItems2, Has.Count.EqualTo(14));
+                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[7],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[8],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[9],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[10],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[11],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[12],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[13],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(19));
+                Assert.That(secondItems2, Has.Count.EqualTo(19));
+                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[7],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[8],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[9],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[10],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[11],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[12],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[13],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[14],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[15],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[16],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[17],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[18],_testData[34], false);
             }
         }
 
@@ -2737,62 +2894,48 @@ ORDER BY
                 var firstItems1 = new List<FlatTimeSpantime0M>();
                 var firstItems2 = new List<FlatTimeSpantime0M>();
                 var secondItems1 = new List<FlatTimeSpantime0M>();
-                await ((ITimeSpanSingleTypetime)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 65, query1, 131, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(22));
-                Assert.That(firstItems2, Has.Count.EqualTo(22));
-                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[7],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[8],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[9],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[10],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[11],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[12],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[13],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[14],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[14],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[15],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[15],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[16],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[16],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[17],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[17],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[18],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[18],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[19],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[19],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[20],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[20],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[21],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[21],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(8));
-                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[34], false);
+                await ((ITimeSpanSingleTypetime)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 145, query1, 25, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(4));
+                Assert.That(firstItems2, Has.Count.EqualTo(4));
+                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(30));
+                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[5], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[22],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[23],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[24],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[25],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[26],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[27],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[28],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[29],_testData[34], false);
             }
         }
 
@@ -2867,73 +3010,53 @@ ORDER BY
                 var firstItems2 = new List<FlatTimeSpantime0M>();
                 var secondItems1 = new List<FlatTimeSpantime0M>();
                 var secondItems2 = new List<FlatTimeSpantime0M>();
-                 ((ITimeSpanSingleTypetime)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 140, query1, 54, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(7));
-                Assert.That(firstItems2, Has.Count.EqualTo(7));
-                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(24));
-                Assert.That(secondItems2, Has.Count.EqualTo(24));
-                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[7],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[8],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[9],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[10],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[11],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[12],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[13],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[14],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[15],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[16],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[17],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[18],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[19],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[20],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[21],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[22],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[22],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[23],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[23],_testData[34], false);
+                 ((ITimeSpanSingleTypetime)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 104, query1, 131, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(14));
+                Assert.That(firstItems2, Has.Count.EqualTo(14));
+                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[7],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[8],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[9],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[10],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[11],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[12],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[13],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(7));
+                Assert.That(secondItems2, Has.Count.EqualTo(7));
+                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[34], false);
             }
         }
 
@@ -2971,70 +3094,103 @@ ORDER BY
                 var firstItems1 = new List<FlatTimeSpantime0M>();
                 var firstItems2 = new List<FlatTimeSpantime0M>();
                 var secondItems1 = new List<FlatTimeSpantime0M>();
-                 ((ITimeSpanSingleTypetime)this).DbConnectionMMDynQuerySelectModelBatch(connection, 97, query1, 31, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(15));
-                Assert.That(firstItems2, Has.Count.EqualTo(15));
-                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[7],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[8],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[9],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[10],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[11],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[12],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[13],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[14],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems2[14],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(30));
-                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[5], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[6], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[7], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[8], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[9], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[10], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[22],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[23],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[24],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[25],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[26],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[27],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[28],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[29],_testData[34], false);
+                 ((ITimeSpanSingleTypetime)this).DbConnectionMMDynQuerySelectModelBatch(connection, 25, query1, 15, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(30));
+                Assert.That(firstItems2, Has.Count.EqualTo(30));
+                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[5], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[0],_testData[5], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[1],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[2],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[3],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[4],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[5],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[6],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[7],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[8],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[9],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[10],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[11],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[12],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[13],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[14],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[14],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[15],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[15],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[16],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[16],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[17],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[17],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[18],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[18],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[19],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[19],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[20],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[20],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[21],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[21],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[22],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[22],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[23],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[23],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[24],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[24],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[25],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[25],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[26],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[26],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[27],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[27],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[28],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[28],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[29],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems2[29],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(33));
+                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[2], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[3], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[4], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[5], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[22],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[23],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[24],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[25],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[26],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[27],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[28],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[29],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[30],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[31],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[32],_testData[34], false);
             }
         }
 
@@ -3144,68 +3300,53 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((ITimeSpanSingleTypetime)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 40, query1, 91, query2))
+                foreach(var batchResult in await ((ITimeSpanSingleTypetime)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 92, query1, 92, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(29));
+                        Assert.That(models, Has.Count.EqualTo(16));
 
-                        FlatTimeSpantime0M.AssertModel(models[0],_testData[6], false);
-                        FlatTimeSpantime0M.AssertModel(models[1],_testData[7], false);
-                        FlatTimeSpantime0M.AssertModel(models[2],_testData[8], false);
-                        FlatTimeSpantime0M.AssertModel(models[3],_testData[9], false);
-                        FlatTimeSpantime0M.AssertModel(models[4],_testData[10], false);
-                        FlatTimeSpantime0M.AssertModel(models[5],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(models[6],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(models[7],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(models[8],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(models[9],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(models[10],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(models[11],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(models[12],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(models[13],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(models[14],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(models[15],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(models[16],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(models[17],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(models[18],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(models[19],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(models[20],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(models[21],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(models[22],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(models[23],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(models[24],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(models[25],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(models[26],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(models[27],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(models[28],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(models[0],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(models[1],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(models[2],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(models[3],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(models[4],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(models[5],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(models[6],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(models[7],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(models[8],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(models[9],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(models[10],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(models[11],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(models[12],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(models[13],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(models[14],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(models[15],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
+                        Assert.That(models, Has.Count.EqualTo(16));
 
-                        FlatTimeSpantime0M.AssertModel(models[0],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(models[1],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(models[2],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(models[3],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(models[4],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(models[5],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(models[6],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(models[7],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(models[8],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(models[9],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(models[10],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(models[11],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(models[12],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(models[13],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(models[14],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(models[15],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(models[16],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(models[17],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(models[0],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(models[1],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(models[2],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(models[3],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(models[4],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(models[5],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(models[6],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(models[7],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(models[8],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(models[9],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(models[10],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(models[11],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(models[12],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(models[13],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(models[14],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(models[15],_testData[34], false);
                         continue;
                     }
                     
@@ -3248,34 +3389,95 @@ ORDER BY
                 var firstItems1 = new List<FlatTimeSpantime0M>();
                 var secondItems1 = new List<FlatTimeSpantime0M>();
                 var secondItems2 = new List<FlatTimeSpantime0M>();
-                await ((ITimeSpanSingleTypetime)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 91, query1, 160, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(18));
-                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[14],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[15],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[16],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[17],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(3));
-                Assert.That(secondItems2, Has.Count.EqualTo(3));
-                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[34], false);
+                await ((ITimeSpanSingleTypetime)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 36, query1, 26, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(27));
+                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[14],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[15],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[16],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[17],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[18],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[19],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[20],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[21],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[22],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[23],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[24],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[25],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[26],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(29));
+                Assert.That(secondItems2, Has.Count.EqualTo(29));
+                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[6], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[7], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[8], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[9], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[7],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[8],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[9],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[10],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[11],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[12],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[13],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[14],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[15],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[16],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[17],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[18],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[19],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[20],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[21],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[22],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[22],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[23],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[23],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[24],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[24],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[25],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[25],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[26],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[26],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[27],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[27],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[28],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[28],_testData[34], false);
             }
         }
 
@@ -3334,67 +3536,70 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in  ((ITimeSpanSingleTypetime)this).DbConnectionSTDynQuerySelectModelBatch(connection, 91, query1, 41, query2))
+                foreach(var batchResult in  ((ITimeSpanSingleTypetime)this).DbConnectionSTDynQuerySelectModelBatch(connection, 50, query1, 46, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
+                        Assert.That(models, Has.Count.EqualTo(24));
 
-                        FlatTimeSpantime0M.AssertModel(models[0],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(models[1],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(models[2],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(models[3],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(models[4],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(models[5],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(models[6],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(models[7],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(models[8],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(models[9],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(models[10],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(models[11],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(models[12],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(models[13],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(models[14],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(models[15],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(models[16],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(models[17],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(models[0],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(models[1],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(models[2],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(models[3],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(models[4],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(models[5],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(models[6],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(models[7],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(models[8],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(models[9],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(models[10],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(models[11],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(models[12],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(models[13],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(models[14],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(models[15],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(models[16],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(models[17],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(models[18],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(models[19],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(models[20],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(models[21],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(models[22],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(models[23],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(28));
+                        Assert.That(models, Has.Count.EqualTo(25));
 
-                        FlatTimeSpantime0M.AssertModel(models[0],_testData[7], false);
-                        FlatTimeSpantime0M.AssertModel(models[1],_testData[8], false);
-                        FlatTimeSpantime0M.AssertModel(models[2],_testData[9], false);
-                        FlatTimeSpantime0M.AssertModel(models[3],_testData[10], false);
-                        FlatTimeSpantime0M.AssertModel(models[4],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(models[5],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(models[6],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(models[7],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(models[8],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(models[9],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(models[10],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(models[11],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(models[12],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(models[13],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(models[14],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(models[15],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(models[16],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(models[17],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(models[18],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(models[19],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(models[20],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(models[21],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(models[22],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(models[23],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(models[24],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(models[25],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(models[26],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(models[27],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(models[0],_testData[10], false);
+                        FlatTimeSpantime0M.AssertModel(models[1],_testData[11], false);
+                        FlatTimeSpantime0M.AssertModel(models[2],_testData[12], false);
+                        FlatTimeSpantime0M.AssertModel(models[3],_testData[13], false);
+                        FlatTimeSpantime0M.AssertModel(models[4],_testData[14], false);
+                        FlatTimeSpantime0M.AssertModel(models[5],_testData[15], false);
+                        FlatTimeSpantime0M.AssertModel(models[6],_testData[16], false);
+                        FlatTimeSpantime0M.AssertModel(models[7],_testData[17], false);
+                        FlatTimeSpantime0M.AssertModel(models[8],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(models[9],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(models[10],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(models[11],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(models[12],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(models[13],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(models[14],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(models[15],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(models[16],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(models[17],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(models[18],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(models[19],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(models[20],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(models[21],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(models[22],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(models[23],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(models[24],_testData[34], false);
                         continue;
                     }
                     
@@ -3437,64 +3642,57 @@ ORDER BY
                 var firstItems1 = new List<FlatTimeSpantime0M>();
                 var secondItems1 = new List<FlatTimeSpantime0M>();
                 var secondItems2 = new List<FlatTimeSpantime0M>();
-                 ((ITimeSpanSingleTypetime)this).DbConnectionDynQuerySelectModelBatch(connection, 147, query1, 54, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(6));
-                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(24));
-                Assert.That(secondItems2, Has.Count.EqualTo(24));
-                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[11], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[12], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[13], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[14], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[15], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[16], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[17], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[7],_testData[18], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[8],_testData[19], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[9],_testData[20], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[10],_testData[21], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[11],_testData[22], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[12],_testData[23], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[13],_testData[24], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[14],_testData[25], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[15],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[15],_testData[26], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[16],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[16],_testData[27], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[17],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[17],_testData[28], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[18],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[18],_testData[29], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[19],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[19],_testData[30], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[20],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[20],_testData[31], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[21],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[21],_testData[32], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[22],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[22],_testData[33], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems1[23],_testData[34], false);
-                        FlatTimeSpantime0M.AssertModel(secondItems2[23],_testData[34], false);
+                 ((ITimeSpanSingleTypetime)this).DbConnectionDynQuerySelectModelBatch(connection, 90, query1, 100, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(17));
+                        FlatTimeSpantime0M.AssertModel(firstItems1[0],_testData[18], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[1],_testData[19], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[2],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[3],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[4],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[5],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[6],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[7],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[8],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[9],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[10],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[11],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[12],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[13],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[14],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[15],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(firstItems1[16],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(15));
+                Assert.That(secondItems2, Has.Count.EqualTo(15));
+                        FlatTimeSpantime0M.AssertModel(secondItems1[0],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[0],_testData[20], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[1],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[1],_testData[21], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[2],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[2],_testData[22], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[3],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[3],_testData[23], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[4],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[4],_testData[24], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[5],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[5],_testData[25], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[6],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[6],_testData[26], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[7],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[7],_testData[27], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[8],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[8],_testData[28], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[9],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[9],_testData[29], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[10],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[11],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[11],_testData[31], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[12],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[12],_testData[32], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[13],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[13],_testData[33], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems1[14],_testData[34], false);
+                        FlatTimeSpantime0M.AssertModel(secondItems2[14],_testData[34], false);
             }
         }
 
@@ -3574,137 +3772,9 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((ITimeSpanSingleTypetime)this).DbConnectionSTSelectModelBatchAsync(connection, 22, 22))
+                foreach(var batchResult in await ((ITimeSpanSingleTypetime)this).DbConnectionSTSelectModelBatchAsync(connection, 33, 84))
                 {
                     if(++resultIndex == 1)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(31));
-
-                        TimeSpantime0M.AssertModel(models[0],_testData[4], false);
-                        TimeSpantime0M.AssertModel(models[1],_testData[5], false);
-                        TimeSpantime0M.AssertModel(models[2],_testData[6], false);
-                        TimeSpantime0M.AssertModel(models[3],_testData[7], false);
-                        TimeSpantime0M.AssertModel(models[4],_testData[8], false);
-                        TimeSpantime0M.AssertModel(models[5],_testData[9], false);
-                        TimeSpantime0M.AssertModel(models[6],_testData[10], false);
-                        TimeSpantime0M.AssertModel(models[7],_testData[11], false);
-                        TimeSpantime0M.AssertModel(models[8],_testData[12], false);
-                        TimeSpantime0M.AssertModel(models[9],_testData[13], false);
-                        TimeSpantime0M.AssertModel(models[10],_testData[14], false);
-                        TimeSpantime0M.AssertModel(models[11],_testData[15], false);
-                        TimeSpantime0M.AssertModel(models[12],_testData[16], false);
-                        TimeSpantime0M.AssertModel(models[13],_testData[17], false);
-                        TimeSpantime0M.AssertModel(models[14],_testData[18], false);
-                        TimeSpantime0M.AssertModel(models[15],_testData[19], false);
-                        TimeSpantime0M.AssertModel(models[16],_testData[20], false);
-                        TimeSpantime0M.AssertModel(models[17],_testData[21], false);
-                        TimeSpantime0M.AssertModel(models[18],_testData[22], false);
-                        TimeSpantime0M.AssertModel(models[19],_testData[23], false);
-                        TimeSpantime0M.AssertModel(models[20],_testData[24], false);
-                        TimeSpantime0M.AssertModel(models[21],_testData[25], false);
-                        TimeSpantime0M.AssertModel(models[22],_testData[26], false);
-                        TimeSpantime0M.AssertModel(models[23],_testData[27], false);
-                        TimeSpantime0M.AssertModel(models[24],_testData[28], false);
-                        TimeSpantime0M.AssertModel(models[25],_testData[29], false);
-                        TimeSpantime0M.AssertModel(models[26],_testData[30], false);
-                        TimeSpantime0M.AssertModel(models[27],_testData[31], false);
-                        TimeSpantime0M.AssertModel(models[28],_testData[32], false);
-                        TimeSpantime0M.AssertModel(models[29],_testData[33], false);
-                        TimeSpantime0M.AssertModel(models[30],_testData[34], false);
-                        continue;
-                    }                    
-
-                    if(resultIndex == 2)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(31));
-
-                        TimeSpantime0M.AssertModel(models[0],_testData[4], false);
-                        TimeSpantime0M.AssertModel(models[1],_testData[5], false);
-                        TimeSpantime0M.AssertModel(models[2],_testData[6], false);
-                        TimeSpantime0M.AssertModel(models[3],_testData[7], false);
-                        TimeSpantime0M.AssertModel(models[4],_testData[8], false);
-                        TimeSpantime0M.AssertModel(models[5],_testData[9], false);
-                        TimeSpantime0M.AssertModel(models[6],_testData[10], false);
-                        TimeSpantime0M.AssertModel(models[7],_testData[11], false);
-                        TimeSpantime0M.AssertModel(models[8],_testData[12], false);
-                        TimeSpantime0M.AssertModel(models[9],_testData[13], false);
-                        TimeSpantime0M.AssertModel(models[10],_testData[14], false);
-                        TimeSpantime0M.AssertModel(models[11],_testData[15], false);
-                        TimeSpantime0M.AssertModel(models[12],_testData[16], false);
-                        TimeSpantime0M.AssertModel(models[13],_testData[17], false);
-                        TimeSpantime0M.AssertModel(models[14],_testData[18], false);
-                        TimeSpantime0M.AssertModel(models[15],_testData[19], false);
-                        TimeSpantime0M.AssertModel(models[16],_testData[20], false);
-                        TimeSpantime0M.AssertModel(models[17],_testData[21], false);
-                        TimeSpantime0M.AssertModel(models[18],_testData[22], false);
-                        TimeSpantime0M.AssertModel(models[19],_testData[23], false);
-                        TimeSpantime0M.AssertModel(models[20],_testData[24], false);
-                        TimeSpantime0M.AssertModel(models[21],_testData[25], false);
-                        TimeSpantime0M.AssertModel(models[22],_testData[26], false);
-                        TimeSpantime0M.AssertModel(models[23],_testData[27], false);
-                        TimeSpantime0M.AssertModel(models[24],_testData[28], false);
-                        TimeSpantime0M.AssertModel(models[25],_testData[29], false);
-                        TimeSpantime0M.AssertModel(models[26],_testData[30], false);
-                        TimeSpantime0M.AssertModel(models[27],_testData[31], false);
-                        TimeSpantime0M.AssertModel(models[28],_testData[32], false);
-                        TimeSpantime0M.AssertModel(models[29],_testData[33], false);
-                        TimeSpantime0M.AssertModel(models[30],_testData[34], false);
-                        continue;
-                    }
-                    
-                    Assert.Fail("Unexpected batch count");
-                }
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionSelectModelTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var models = ((ITimeSpanSingleTypetime)this).DbConnectionSelectModel(connection, 0);
-                Assert.That(models, Has.Count.EqualTo(35));
-                for (int i = 0; i < 35; i++)
-                {
-                    TimeSpantime0M.AssertModel(models[i],_testData[i], false);
-                }
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionSTSelectModelBatchTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                int resultIndex = 0;
-                foreach(var batchResult in  ((ITimeSpanSingleTypetime)this).DbConnectionSTSelectModelBatch(connection, 107, 41))
-                {
-                    if(++resultIndex == 1)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
-
-                        TimeSpantime0M.AssertModel(models[0],_testData[22], false);
-                        TimeSpantime0M.AssertModel(models[1],_testData[23], false);
-                        TimeSpantime0M.AssertModel(models[2],_testData[24], false);
-                        TimeSpantime0M.AssertModel(models[3],_testData[25], false);
-                        TimeSpantime0M.AssertModel(models[4],_testData[26], false);
-                        TimeSpantime0M.AssertModel(models[5],_testData[27], false);
-                        TimeSpantime0M.AssertModel(models[6],_testData[28], false);
-                        TimeSpantime0M.AssertModel(models[7],_testData[29], false);
-                        TimeSpantime0M.AssertModel(models[8],_testData[30], false);
-                        TimeSpantime0M.AssertModel(models[9],_testData[31], false);
-                        TimeSpantime0M.AssertModel(models[10],_testData[32], false);
-                        TimeSpantime0M.AssertModel(models[11],_testData[33], false);
-                        TimeSpantime0M.AssertModel(models[12],_testData[34], false);
-                        continue;
-                    }                    
-
-                    if(resultIndex == 2)
                     {
                         var models = batchResult;
                         Assert.That(models, Has.Count.EqualTo(28));
@@ -3738,6 +3808,118 @@ Gedaq.DbConnection.Attributes.BatchPart(
                         TimeSpantime0M.AssertModel(models[26],_testData[33], false);
                         TimeSpantime0M.AssertModel(models[27],_testData[34], false);
                         continue;
+                    }                    
+
+                    if(resultIndex == 2)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(18));
+
+                        TimeSpantime0M.AssertModel(models[0],_testData[17], false);
+                        TimeSpantime0M.AssertModel(models[1],_testData[18], false);
+                        TimeSpantime0M.AssertModel(models[2],_testData[19], false);
+                        TimeSpantime0M.AssertModel(models[3],_testData[20], false);
+                        TimeSpantime0M.AssertModel(models[4],_testData[21], false);
+                        TimeSpantime0M.AssertModel(models[5],_testData[22], false);
+                        TimeSpantime0M.AssertModel(models[6],_testData[23], false);
+                        TimeSpantime0M.AssertModel(models[7],_testData[24], false);
+                        TimeSpantime0M.AssertModel(models[8],_testData[25], false);
+                        TimeSpantime0M.AssertModel(models[9],_testData[26], false);
+                        TimeSpantime0M.AssertModel(models[10],_testData[27], false);
+                        TimeSpantime0M.AssertModel(models[11],_testData[28], false);
+                        TimeSpantime0M.AssertModel(models[12],_testData[29], false);
+                        TimeSpantime0M.AssertModel(models[13],_testData[30], false);
+                        TimeSpantime0M.AssertModel(models[14],_testData[31], false);
+                        TimeSpantime0M.AssertModel(models[15],_testData[32], false);
+                        TimeSpantime0M.AssertModel(models[16],_testData[33], false);
+                        TimeSpantime0M.AssertModel(models[17],_testData[34], false);
+                        continue;
+                    }
+                    
+                    Assert.Fail("Unexpected batch count");
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var models = ((ITimeSpanSingleTypetime)this).DbConnectionSelectModel(connection, 0);
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
+                {
+                    TimeSpantime0M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSTSelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                foreach(var batchResult in  ((ITimeSpanSingleTypetime)this).DbConnectionSTSelectModelBatch(connection, 8, 131))
+                {
+                    if(++resultIndex == 1)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(34));
+
+                        TimeSpantime0M.AssertModel(models[0],_testData[1], false);
+                        TimeSpantime0M.AssertModel(models[1],_testData[2], false);
+                        TimeSpantime0M.AssertModel(models[2],_testData[3], false);
+                        TimeSpantime0M.AssertModel(models[3],_testData[4], false);
+                        TimeSpantime0M.AssertModel(models[4],_testData[5], false);
+                        TimeSpantime0M.AssertModel(models[5],_testData[6], false);
+                        TimeSpantime0M.AssertModel(models[6],_testData[7], false);
+                        TimeSpantime0M.AssertModel(models[7],_testData[8], false);
+                        TimeSpantime0M.AssertModel(models[8],_testData[9], false);
+                        TimeSpantime0M.AssertModel(models[9],_testData[10], false);
+                        TimeSpantime0M.AssertModel(models[10],_testData[11], false);
+                        TimeSpantime0M.AssertModel(models[11],_testData[12], false);
+                        TimeSpantime0M.AssertModel(models[12],_testData[13], false);
+                        TimeSpantime0M.AssertModel(models[13],_testData[14], false);
+                        TimeSpantime0M.AssertModel(models[14],_testData[15], false);
+                        TimeSpantime0M.AssertModel(models[15],_testData[16], false);
+                        TimeSpantime0M.AssertModel(models[16],_testData[17], false);
+                        TimeSpantime0M.AssertModel(models[17],_testData[18], false);
+                        TimeSpantime0M.AssertModel(models[18],_testData[19], false);
+                        TimeSpantime0M.AssertModel(models[19],_testData[20], false);
+                        TimeSpantime0M.AssertModel(models[20],_testData[21], false);
+                        TimeSpantime0M.AssertModel(models[21],_testData[22], false);
+                        TimeSpantime0M.AssertModel(models[22],_testData[23], false);
+                        TimeSpantime0M.AssertModel(models[23],_testData[24], false);
+                        TimeSpantime0M.AssertModel(models[24],_testData[25], false);
+                        TimeSpantime0M.AssertModel(models[25],_testData[26], false);
+                        TimeSpantime0M.AssertModel(models[26],_testData[27], false);
+                        TimeSpantime0M.AssertModel(models[27],_testData[28], false);
+                        TimeSpantime0M.AssertModel(models[28],_testData[29], false);
+                        TimeSpantime0M.AssertModel(models[29],_testData[30], false);
+                        TimeSpantime0M.AssertModel(models[30],_testData[31], false);
+                        TimeSpantime0M.AssertModel(models[31],_testData[32], false);
+                        TimeSpantime0M.AssertModel(models[32],_testData[33], false);
+                        TimeSpantime0M.AssertModel(models[33],_testData[34], false);
+                        continue;
+                    }                    
+
+                    if(resultIndex == 2)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(7));
+
+                        TimeSpantime0M.AssertModel(models[0],_testData[28], false);
+                        TimeSpantime0M.AssertModel(models[1],_testData[29], false);
+                        TimeSpantime0M.AssertModel(models[2],_testData[30], false);
+                        TimeSpantime0M.AssertModel(models[3],_testData[31], false);
+                        TimeSpantime0M.AssertModel(models[4],_testData[32], false);
+                        TimeSpantime0M.AssertModel(models[5],_testData[33], false);
+                        TimeSpantime0M.AssertModel(models[6],_testData[34], false);
+                        continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
@@ -3752,18 +3934,35 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((ITimeSpanSingleTypetime)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((ITimeSpanSingleTypetime)this).SetDbConnectionSelectModelParametrs(cmd, 140);
+                ((ITimeSpanSingleTypetime)this).SetDbConnectionSelectModelParametrs(cmd, 50);
                 var models = await ((ITimeSpanSingleTypetime)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(7));
+                Assert.That(models, Has.Count.EqualTo(24));
 
-                TimeSpantime0M.AssertModel(models[0],_testData[28], false);
-                TimeSpantime0M.AssertModel(models[1],_testData[29], false);
-                TimeSpantime0M.AssertModel(models[2],_testData[30], false);
-                TimeSpantime0M.AssertModel(models[3],_testData[31], false);
-                TimeSpantime0M.AssertModel(models[4],_testData[32], false);
-                TimeSpantime0M.AssertModel(models[5],_testData[33], false);
-                TimeSpantime0M.AssertModel(models[6],_testData[34], false);
+                TimeSpantime0M.AssertModel(models[0],_testData[11], false);
+                TimeSpantime0M.AssertModel(models[1],_testData[12], false);
+                TimeSpantime0M.AssertModel(models[2],_testData[13], false);
+                TimeSpantime0M.AssertModel(models[3],_testData[14], false);
+                TimeSpantime0M.AssertModel(models[4],_testData[15], false);
+                TimeSpantime0M.AssertModel(models[5],_testData[16], false);
+                TimeSpantime0M.AssertModel(models[6],_testData[17], false);
+                TimeSpantime0M.AssertModel(models[7],_testData[18], false);
+                TimeSpantime0M.AssertModel(models[8],_testData[19], false);
+                TimeSpantime0M.AssertModel(models[9],_testData[20], false);
+                TimeSpantime0M.AssertModel(models[10],_testData[21], false);
+                TimeSpantime0M.AssertModel(models[11],_testData[22], false);
+                TimeSpantime0M.AssertModel(models[12],_testData[23], false);
+                TimeSpantime0M.AssertModel(models[13],_testData[24], false);
+                TimeSpantime0M.AssertModel(models[14],_testData[25], false);
+                TimeSpantime0M.AssertModel(models[15],_testData[26], false);
+                TimeSpantime0M.AssertModel(models[16],_testData[27], false);
+                TimeSpantime0M.AssertModel(models[17],_testData[28], false);
+                TimeSpantime0M.AssertModel(models[18],_testData[29], false);
+                TimeSpantime0M.AssertModel(models[19],_testData[30], false);
+                TimeSpantime0M.AssertModel(models[20],_testData[31], false);
+                TimeSpantime0M.AssertModel(models[21],_testData[32], false);
+                TimeSpantime0M.AssertModel(models[22],_testData[33], false);
+                TimeSpantime0M.AssertModel(models[23],_testData[34], false);
             }
         }
 
@@ -3774,27 +3973,29 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                  using var cmd =  ((ITimeSpanSingleTypetime)this).CreateDbConnectionSelectModelCommand(connection);
-                ((ITimeSpanSingleTypetime)this).SetDbConnectionSelectModelParametrs(cmd, 96);
+                ((ITimeSpanSingleTypetime)this).SetDbConnectionSelectModelParametrs(cmd, 84);
                 var models =  ((ITimeSpanSingleTypetime)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(16));
+                Assert.That(models, Has.Count.EqualTo(18));
 
-                TimeSpantime0M.AssertModel(models[0],_testData[19], false);
-                TimeSpantime0M.AssertModel(models[1],_testData[20], false);
-                TimeSpantime0M.AssertModel(models[2],_testData[21], false);
-                TimeSpantime0M.AssertModel(models[3],_testData[22], false);
-                TimeSpantime0M.AssertModel(models[4],_testData[23], false);
-                TimeSpantime0M.AssertModel(models[5],_testData[24], false);
-                TimeSpantime0M.AssertModel(models[6],_testData[25], false);
-                TimeSpantime0M.AssertModel(models[7],_testData[26], false);
-                TimeSpantime0M.AssertModel(models[8],_testData[27], false);
-                TimeSpantime0M.AssertModel(models[9],_testData[28], false);
-                TimeSpantime0M.AssertModel(models[10],_testData[29], false);
-                TimeSpantime0M.AssertModel(models[11],_testData[30], false);
-                TimeSpantime0M.AssertModel(models[12],_testData[31], false);
-                TimeSpantime0M.AssertModel(models[13],_testData[32], false);
-                TimeSpantime0M.AssertModel(models[14],_testData[33], false);
-                TimeSpantime0M.AssertModel(models[15],_testData[34], false);
+                TimeSpantime0M.AssertModel(models[0],_testData[17], false);
+                TimeSpantime0M.AssertModel(models[1],_testData[18], false);
+                TimeSpantime0M.AssertModel(models[2],_testData[19], false);
+                TimeSpantime0M.AssertModel(models[3],_testData[20], false);
+                TimeSpantime0M.AssertModel(models[4],_testData[21], false);
+                TimeSpantime0M.AssertModel(models[5],_testData[22], false);
+                TimeSpantime0M.AssertModel(models[6],_testData[23], false);
+                TimeSpantime0M.AssertModel(models[7],_testData[24], false);
+                TimeSpantime0M.AssertModel(models[8],_testData[25], false);
+                TimeSpantime0M.AssertModel(models[9],_testData[26], false);
+                TimeSpantime0M.AssertModel(models[10],_testData[27], false);
+                TimeSpantime0M.AssertModel(models[11],_testData[28], false);
+                TimeSpantime0M.AssertModel(models[12],_testData[29], false);
+                TimeSpantime0M.AssertModel(models[13],_testData[30], false);
+                TimeSpantime0M.AssertModel(models[14],_testData[31], false);
+                TimeSpantime0M.AssertModel(models[15],_testData[32], false);
+                TimeSpantime0M.AssertModel(models[16],_testData[33], false);
+                TimeSpantime0M.AssertModel(models[17],_testData[34], false);
             }
         }
 
@@ -3841,29 +4042,29 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((5)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 42, seconds: 25, milliseconds: 781))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((8)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 4, minutes: 30, seconds: 40, milliseconds: 296))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 11, seconds: 29, milliseconds: 194))));
 
                 model = models[1];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((11)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 18, minutes: 54, seconds: 42, milliseconds: 586))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((15)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 54, seconds: 53, milliseconds: 153))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((7)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 12, minutes: 37, seconds: 11, milliseconds: 114))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((5)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 41, seconds: 9, milliseconds: 392))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 7, minutes: 47, seconds: 25, milliseconds: 150))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 14, minutes: 1, seconds: 23, milliseconds: 340))));
 
                 model = models[2];
 
@@ -3871,13 +4072,13 @@ ORDER BY
 
                 Assert.That(model, Is.Not.Null);
                 Assert.That((System.Int32)model[0], Is.EqualTo((16)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 50, seconds: 31, milliseconds: 842))));//Value
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 18, minutes: 32, seconds: 7, milliseconds: 651))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 0, minutes: 56, seconds: 10, milliseconds: 73))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[3];
 
@@ -3885,115 +4086,115 @@ ORDER BY
 
                 Assert.That(model, Is.Not.Null);
                 Assert.That((System.Int32)model[0], Is.EqualTo((22)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 19, minutes: 44, seconds: 47, milliseconds: 192))));//Value
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 14, minutes: 17, seconds: 38, milliseconds: 840))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((16)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 0, seconds: 20, milliseconds: 744))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((9)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 56, seconds: 28, milliseconds: 72))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 36, seconds: 44, milliseconds: 76))));//InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 13, seconds: 42, milliseconds: 747))));
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 29, seconds: 55, milliseconds: 20))));
 
                 model = models[4];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((31)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 3, seconds: 7, milliseconds: 980))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((25)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 22, minutes: 48, seconds: 32, milliseconds: 339))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 44, seconds: 57, milliseconds: 815))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[5];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((40)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 56, seconds: 18, milliseconds: 134))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((26)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 28, seconds: 2, milliseconds: 984))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((21)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 37, seconds: 14, milliseconds: 958))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((13)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 54, seconds: 27, milliseconds: 163))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 39, seconds: 16, milliseconds: 840))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 45, seconds: 5, milliseconds: 606))));
 
                 model = models[6];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((41)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 6, seconds: 43, milliseconds: 948))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((33)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 19, minutes: 53, seconds: 34, milliseconds: 839))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 4, seconds: 33, milliseconds: 63))));
 
                 model = models[7];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((42)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 37, seconds: 29, milliseconds: 7))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((36)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 43, seconds: 11, milliseconds: 832))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((26)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 29, seconds: 4, milliseconds: 120))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((15)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 15, minutes: 25, seconds: 28, milliseconds: 151))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 0, seconds: 22, milliseconds: 523))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 7, minutes: 19, seconds: 9, milliseconds: 901))));
 
                 model = models[8];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((51)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 32, seconds: 41, milliseconds: 50))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((39)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 55, seconds: 53, milliseconds: 204))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 32, seconds: 12, milliseconds: 884))));
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 54, seconds: 46, milliseconds: 939))));
 
                 model = models[9];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((52)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 10, seconds: 14, milliseconds: 601))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((46)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 5, minutes: 39, seconds: 11, milliseconds: 685))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((32)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 41, seconds: 19, milliseconds: 280))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((20)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 4, minutes: 23, seconds: 40, milliseconds: 841))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 7, minutes: 32, seconds: 22, milliseconds: 974))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 7, minutes: 18, seconds: 24, milliseconds: 767))));
 
                 model = models[10];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((54)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 21, seconds: 40, milliseconds: 418))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((50)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 20, seconds: 54, milliseconds: 169))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 1, seconds: 26, milliseconds: 410))));
 
                 model = models[11];
 
@@ -4001,68 +4202,68 @@ ORDER BY
 
                 Assert.That(model, Is.Not.Null);
                 Assert.That((System.Int32)model[0], Is.EqualTo((58)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 4, seconds: 18, milliseconds: 909))));//Value
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 54, seconds: 12, milliseconds: 755))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((41)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 45, seconds: 7, milliseconds: 715))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((22)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 56, seconds: 38, milliseconds: 365))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 51, seconds: 31, milliseconds: 458))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 11, seconds: 17, milliseconds: 498))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 58, seconds: 47, milliseconds: 44))));
 
                 model = models[12];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((65)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 48, seconds: 42, milliseconds: 592))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((64)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 10, seconds: 0, milliseconds: 829))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 22, minutes: 52, seconds: 18, milliseconds: 57))));
 
                 model = models[13];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((68)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 5, seconds: 52, milliseconds: 599))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((65)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 21, seconds: 1, milliseconds: 64))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((45)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 31, seconds: 55, milliseconds: 682))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((30)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 0, minutes: 12, seconds: 14, milliseconds: 23))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 19, minutes: 23, seconds: 21, milliseconds: 940))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 3, minutes: 28, seconds: 1, milliseconds: 494))));
 
                 model = models[14];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((76)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 45, seconds: 3, milliseconds: 660))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((72)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 18, minutes: 45, seconds: 41, milliseconds: 244))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 22, minutes: 17, seconds: 2, milliseconds: 33))));
 
                 model = models[15];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((85)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 18, minutes: 3, seconds: 0, milliseconds: 336))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((75)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 30, seconds: 16, milliseconds: 673))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((48)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 11, seconds: 0, milliseconds: 259))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((33)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 18, minutes: 9, seconds: 47, milliseconds: 404))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
@@ -4073,116 +4274,116 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((91)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 2, seconds: 54, milliseconds: 764))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((84)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 0, seconds: 17, milliseconds: 376))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 24, seconds: 51, milliseconds: 556))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[17];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((93)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 53, seconds: 34, milliseconds: 359))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((90)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 7, minutes: 20, seconds: 31, milliseconds: 158))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((57)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 12, seconds: 31, milliseconds: 282))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((40)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 12, seconds: 55, milliseconds: 142))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 8, seconds: 26, milliseconds: 943))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 44, seconds: 47, milliseconds: 17))));//InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 15, minutes: 45, seconds: 52, milliseconds: 598))));
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 36, seconds: 46, milliseconds: 825))));
 
                 model = models[18];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((96)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 0, minutes: 39, seconds: 25, milliseconds: 942))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((92)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 8, seconds: 10, milliseconds: 362))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 5, minutes: 48, seconds: 8, milliseconds: 439))));
 
                 model = models[19];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((97)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 46, seconds: 27, milliseconds: 629))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((100)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 48, seconds: 15, milliseconds: 291))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((65)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 4, seconds: 41, milliseconds: 122))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((49)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 9, seconds: 13, milliseconds: 682))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 52, seconds: 3, milliseconds: 385))));
 
                 model = models[20];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((103)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 0, minutes: 31, seconds: 0, milliseconds: 580))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((104)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 5, minutes: 46, seconds: 4, milliseconds: 1))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 22, minutes: 51, seconds: 19, milliseconds: 403))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[21];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((107)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 5, minutes: 31, seconds: 21, milliseconds: 771))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((112)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 35, seconds: 15, milliseconds: 490))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((72)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 5, minutes: 38, seconds: 3, milliseconds: 996))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((53)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 10, seconds: 1, milliseconds: 581))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 19, minutes: 25, seconds: 52, milliseconds: 342))));
 
                 model = models[22];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((113)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 51, seconds: 32, milliseconds: 385))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((114)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 17, seconds: 49, milliseconds: 272))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 14, seconds: 3, milliseconds: 624))));
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 9, seconds: 5, milliseconds: 700))));
 
                 model = models[23];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((116)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 29, seconds: 24, milliseconds: 450))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((115)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 4, seconds: 42, milliseconds: 950))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((76)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 0, minutes: 48, seconds: 8, milliseconds: 406))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((59)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 13, seconds: 18, milliseconds: 427))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 13, seconds: 18, milliseconds: 657))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 14, minutes: 57, seconds: 55, milliseconds: 279))));//InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 0, seconds: 44, milliseconds: 285))));
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 11, seconds: 7, milliseconds: 531))));
 
                 model = models[24];
 
@@ -4190,7 +4391,7 @@ ORDER BY
 
                 Assert.That(model, Is.Not.Null);
                 Assert.That((System.Int32)model[0], Is.EqualTo((124)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 5, minutes: 45, seconds: 36, milliseconds: 798))));//Value
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 39, seconds: 19, milliseconds: 373))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4203,81 +4404,81 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((127)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 41, seconds: 3, milliseconds: 326))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((126)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 26, seconds: 32, milliseconds: 159))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((78)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 11, seconds: 17, milliseconds: 696))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((66)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 3, minutes: 29, seconds: 36, milliseconds: 646))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 49, seconds: 23, milliseconds: 845))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 12, seconds: 16, milliseconds: 39))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 51, seconds: 42, milliseconds: 139))));
 
                 model = models[26];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((131)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 29, seconds: 36, milliseconds: 111))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((129)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 3, minutes: 14, seconds: 16, milliseconds: 148))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 9, seconds: 35, milliseconds: 583))));
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 10, seconds: 28, milliseconds: 526))));
 
                 model = models[27];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((140)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 22, minutes: 34, seconds: 4, milliseconds: 183))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((131)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 9, seconds: 40, milliseconds: 976))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((79)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 18, minutes: 50, seconds: 18, milliseconds: 815))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((74)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 24, seconds: 35, milliseconds: 162))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 4, seconds: 46, milliseconds: 505))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 25, seconds: 20, milliseconds: 840))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 1, seconds: 26, milliseconds: 932))));
 
                 model = models[28];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((147)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 12, minutes: 22, seconds: 18, milliseconds: 525))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((134)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 29, seconds: 20, milliseconds: 894))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 18, seconds: 31, milliseconds: 565))));
 
                 model = models[29];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((151)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 56, seconds: 51, milliseconds: 741))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((138)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 19, minutes: 25, seconds: 54, milliseconds: 505))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((88)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 28, seconds: 2, milliseconds: 649))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((76)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 15, seconds: 21, milliseconds: 920))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 57, seconds: 32, milliseconds: 338))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 50, seconds: 31, milliseconds: 163))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 3, seconds: 3, milliseconds: 404))));
 
                 model = models[30];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((155)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 12, minutes: 28, seconds: 46, milliseconds: 934))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((145)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 4, minutes: 25, seconds: 45, milliseconds: 974))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4290,58 +4491,58 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((160)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 51, seconds: 5, milliseconds: 120))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((153)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 12, minutes: 51, seconds: 35, milliseconds: 280))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((97)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 4, seconds: 2, milliseconds: 414))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((84)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 26, seconds: 54, milliseconds: 9))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 15, seconds: 49, milliseconds: 701))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 0, minutes: 19, seconds: 37, milliseconds: 229))));
 
                 model = models[32];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((168)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 5, seconds: 55, milliseconds: 980))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((162)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 52, seconds: 34, milliseconds: 338))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 32, seconds: 39, milliseconds: 970))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[33];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((173)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 4, minutes: 8, seconds: 57, milliseconds: 328))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((167)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 7, minutes: 5, seconds: 19, milliseconds: 67))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((101)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 21, seconds: 15, milliseconds: 521))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((85)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 12, seconds: 21, milliseconds: 25))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 3, minutes: 30, seconds: 27, milliseconds: 184))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 4, minutes: 25, seconds: 13, milliseconds: 914))));//InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 19, minutes: 9, seconds: 29, milliseconds: 132))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[34];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((177)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 38, seconds: 57, milliseconds: 509))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((174)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 54, seconds: 55, milliseconds: 779))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 28, seconds: 28, milliseconds: 664))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
             }
         }
@@ -4360,29 +4561,29 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((5)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 42, seconds: 25, milliseconds: 781))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((8)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 4, minutes: 30, seconds: 40, milliseconds: 296))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 11, seconds: 29, milliseconds: 194))));
 
                 model = models[1];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((11)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 18, minutes: 54, seconds: 42, milliseconds: 586))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((15)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 54, seconds: 53, milliseconds: 153))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((7)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 12, minutes: 37, seconds: 11, milliseconds: 114))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((5)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 41, seconds: 9, milliseconds: 392))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 7, minutes: 47, seconds: 25, milliseconds: 150))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 14, minutes: 1, seconds: 23, milliseconds: 340))));
 
                 model = models[2];
 
@@ -4390,13 +4591,13 @@ ORDER BY
 
                 Assert.That(model, Is.Not.Null);
                 Assert.That((System.Int32)model[0], Is.EqualTo((16)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 50, seconds: 31, milliseconds: 842))));//Value
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 18, minutes: 32, seconds: 7, milliseconds: 651))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 0, minutes: 56, seconds: 10, milliseconds: 73))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[3];
 
@@ -4404,115 +4605,115 @@ ORDER BY
 
                 Assert.That(model, Is.Not.Null);
                 Assert.That((System.Int32)model[0], Is.EqualTo((22)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 19, minutes: 44, seconds: 47, milliseconds: 192))));//Value
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 14, minutes: 17, seconds: 38, milliseconds: 840))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((16)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 0, seconds: 20, milliseconds: 744))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((9)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 56, seconds: 28, milliseconds: 72))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 36, seconds: 44, milliseconds: 76))));//InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 13, seconds: 42, milliseconds: 747))));
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 29, seconds: 55, milliseconds: 20))));
 
                 model = models[4];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((31)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 3, seconds: 7, milliseconds: 980))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((25)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 22, minutes: 48, seconds: 32, milliseconds: 339))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 44, seconds: 57, milliseconds: 815))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[5];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((40)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 56, seconds: 18, milliseconds: 134))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((26)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 28, seconds: 2, milliseconds: 984))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((21)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 37, seconds: 14, milliseconds: 958))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((13)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 54, seconds: 27, milliseconds: 163))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 39, seconds: 16, milliseconds: 840))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 45, seconds: 5, milliseconds: 606))));
 
                 model = models[6];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((41)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 6, seconds: 43, milliseconds: 948))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((33)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 19, minutes: 53, seconds: 34, milliseconds: 839))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 4, seconds: 33, milliseconds: 63))));
 
                 model = models[7];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((42)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 37, seconds: 29, milliseconds: 7))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((36)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 43, seconds: 11, milliseconds: 832))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((26)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 29, seconds: 4, milliseconds: 120))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((15)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 15, minutes: 25, seconds: 28, milliseconds: 151))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 0, seconds: 22, milliseconds: 523))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 7, minutes: 19, seconds: 9, milliseconds: 901))));
 
                 model = models[8];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((51)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 32, seconds: 41, milliseconds: 50))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((39)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 55, seconds: 53, milliseconds: 204))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 32, seconds: 12, milliseconds: 884))));
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 54, seconds: 46, milliseconds: 939))));
 
                 model = models[9];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((52)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 10, seconds: 14, milliseconds: 601))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((46)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 5, minutes: 39, seconds: 11, milliseconds: 685))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((32)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 41, seconds: 19, milliseconds: 280))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((20)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 4, minutes: 23, seconds: 40, milliseconds: 841))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 7, minutes: 32, seconds: 22, milliseconds: 974))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 7, minutes: 18, seconds: 24, milliseconds: 767))));
 
                 model = models[10];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((54)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 21, seconds: 40, milliseconds: 418))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((50)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 20, seconds: 54, milliseconds: 169))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 1, seconds: 26, milliseconds: 410))));
 
                 model = models[11];
 
@@ -4520,68 +4721,68 @@ ORDER BY
 
                 Assert.That(model, Is.Not.Null);
                 Assert.That((System.Int32)model[0], Is.EqualTo((58)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 4, seconds: 18, milliseconds: 909))));//Value
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 54, seconds: 12, milliseconds: 755))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((41)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 45, seconds: 7, milliseconds: 715))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((22)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 56, seconds: 38, milliseconds: 365))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 51, seconds: 31, milliseconds: 458))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 11, seconds: 17, milliseconds: 498))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 58, seconds: 47, milliseconds: 44))));
 
                 model = models[12];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((65)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 48, seconds: 42, milliseconds: 592))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((64)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 10, seconds: 0, milliseconds: 829))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 22, minutes: 52, seconds: 18, milliseconds: 57))));
 
                 model = models[13];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((68)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 5, seconds: 52, milliseconds: 599))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((65)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 21, seconds: 1, milliseconds: 64))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((45)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 31, seconds: 55, milliseconds: 682))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((30)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 0, minutes: 12, seconds: 14, milliseconds: 23))));//InnerModel.Value
 
-                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 19, minutes: 23, seconds: 21, milliseconds: 940))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 3, minutes: 28, seconds: 1, milliseconds: 494))));
 
                 model = models[14];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((76)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 45, seconds: 3, milliseconds: 660))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((72)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 18, minutes: 45, seconds: 41, milliseconds: 244))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 22, minutes: 17, seconds: 2, milliseconds: 33))));
 
                 model = models[15];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((85)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 18, minutes: 3, seconds: 0, milliseconds: 336))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((75)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 30, seconds: 16, milliseconds: 673))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((48)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 11, seconds: 0, milliseconds: 259))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((33)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 18, minutes: 9, seconds: 47, milliseconds: 404))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
@@ -4592,116 +4793,116 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((91)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 2, seconds: 54, milliseconds: 764))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((84)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 0, seconds: 17, milliseconds: 376))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 24, seconds: 51, milliseconds: 556))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[17];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((93)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 53, seconds: 34, milliseconds: 359))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((90)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 7, minutes: 20, seconds: 31, milliseconds: 158))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((57)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 12, seconds: 31, milliseconds: 282))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((40)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 12, seconds: 55, milliseconds: 142))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 8, seconds: 26, milliseconds: 943))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 44, seconds: 47, milliseconds: 17))));//InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 15, minutes: 45, seconds: 52, milliseconds: 598))));
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 36, seconds: 46, milliseconds: 825))));
 
                 model = models[18];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((96)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 0, minutes: 39, seconds: 25, milliseconds: 942))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((92)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 8, seconds: 10, milliseconds: 362))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 5, minutes: 48, seconds: 8, milliseconds: 439))));
 
                 model = models[19];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((97)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 46, seconds: 27, milliseconds: 629))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((100)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 48, seconds: 15, milliseconds: 291))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((65)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 4, seconds: 41, milliseconds: 122))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((49)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 9, seconds: 13, milliseconds: 682))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 52, seconds: 3, milliseconds: 385))));
 
                 model = models[20];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((103)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 0, minutes: 31, seconds: 0, milliseconds: 580))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((104)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 5, minutes: 46, seconds: 4, milliseconds: 1))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 22, minutes: 51, seconds: 19, milliseconds: 403))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[21];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((107)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 5, minutes: 31, seconds: 21, milliseconds: 771))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((112)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 35, seconds: 15, milliseconds: 490))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((72)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 5, minutes: 38, seconds: 3, milliseconds: 996))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((53)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 8, minutes: 10, seconds: 1, milliseconds: 581))));//InnerModel.Value
 
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 19, minutes: 25, seconds: 52, milliseconds: 342))));
 
                 model = models[22];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((113)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 51, seconds: 32, milliseconds: 385))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((114)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 17, seconds: 49, milliseconds: 272))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 13, minutes: 14, seconds: 3, milliseconds: 624))));
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 9, seconds: 5, milliseconds: 700))));
 
                 model = models[23];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((116)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 29, seconds: 24, milliseconds: 450))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((115)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 16, minutes: 4, seconds: 42, milliseconds: 950))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((76)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 0, minutes: 48, seconds: 8, milliseconds: 406))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((59)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 13, seconds: 18, milliseconds: 427))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 13, seconds: 18, milliseconds: 657))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 14, minutes: 57, seconds: 55, milliseconds: 279))));//InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 0, seconds: 44, milliseconds: 285))));
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 11, seconds: 7, milliseconds: 531))));
 
                 model = models[24];
 
@@ -4709,7 +4910,7 @@ ORDER BY
 
                 Assert.That(model, Is.Not.Null);
                 Assert.That((System.Int32)model[0], Is.EqualTo((124)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 5, minutes: 45, seconds: 36, milliseconds: 798))));//Value
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 39, seconds: 19, milliseconds: 373))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4722,81 +4923,81 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((127)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 41, seconds: 3, milliseconds: 326))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((126)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 26, seconds: 32, milliseconds: 159))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((78)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 11, seconds: 17, milliseconds: 696))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((66)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 3, minutes: 29, seconds: 36, milliseconds: 646))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 49, seconds: 23, milliseconds: 845))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 12, seconds: 16, milliseconds: 39))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 51, seconds: 42, milliseconds: 139))));
 
                 model = models[26];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((131)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 29, seconds: 36, milliseconds: 111))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((129)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 3, minutes: 14, seconds: 16, milliseconds: 148))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 9, seconds: 35, milliseconds: 583))));
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 10, seconds: 28, milliseconds: 526))));
 
                 model = models[27];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((140)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 22, minutes: 34, seconds: 4, milliseconds: 183))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((131)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 9, seconds: 40, milliseconds: 976))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((79)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 18, minutes: 50, seconds: 18, milliseconds: 815))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((74)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 24, seconds: 35, milliseconds: 162))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 4, seconds: 46, milliseconds: 505))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 25, seconds: 20, milliseconds: 840))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 1, seconds: 26, milliseconds: 932))));
 
                 model = models[28];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((147)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 12, minutes: 22, seconds: 18, milliseconds: 525))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((134)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 29, seconds: 20, milliseconds: 894))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 18, seconds: 31, milliseconds: 565))));
 
                 model = models[29];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((151)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 56, seconds: 51, milliseconds: 741))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((138)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 19, minutes: 25, seconds: 54, milliseconds: 505))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((88)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 28, seconds: 2, milliseconds: 649))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((76)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 15, seconds: 21, milliseconds: 920))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 57, seconds: 32, milliseconds: 338))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 50, seconds: 31, milliseconds: 163))));//InnerModel.NullableValue
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 3, seconds: 3, milliseconds: 404))));
 
                 model = models[30];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((155)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 12, minutes: 28, seconds: 46, milliseconds: 934))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((145)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 4, minutes: 25, seconds: 45, milliseconds: 974))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
@@ -4809,58 +5010,58 @@ ORDER BY
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((160)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 10, minutes: 51, seconds: 5, milliseconds: 120))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((153)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 12, minutes: 51, seconds: 35, milliseconds: 280))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((97)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 1, minutes: 4, seconds: 2, milliseconds: 414))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((84)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 26, seconds: 54, milliseconds: 9))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 20, minutes: 15, seconds: 49, milliseconds: 701))));//InnerModel.NullableValue
+                Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value));//InnerModel.Value
 
-                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
+                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 0, minutes: 19, seconds: 37, milliseconds: 229))));
 
                 model = models[32];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((168)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 9, minutes: 5, seconds: 55, milliseconds: 980))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((162)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 52, seconds: 34, milliseconds: 338))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 32, seconds: 39, milliseconds: 970))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[33];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((173)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 4, minutes: 8, seconds: 57, milliseconds: 328))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((167)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 7, minutes: 5, seconds: 19, milliseconds: 67))));//Value
 
-                Assert.That((System.Int32)model[2], Is.EqualTo((101)));//InnerModel.Id
-                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 2, minutes: 21, seconds: 15, milliseconds: 521))));//InnerModel.Value
+                Assert.That((System.Int32)model[2], Is.EqualTo((85)));//InnerModel.Id
+                Assert.That((System.TimeSpan)model[3], Is.EqualTo((new TimeSpan(days: 0, hours: 17, minutes: 12, seconds: 21, milliseconds: 25))));//InnerModel.Value
 
-                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 3, minutes: 30, seconds: 27, milliseconds: 184))));//InnerModel.NullableValue
+                Assert.That((System.TimeSpan?)model[4], Is.EqualTo((new TimeSpan(days: 0, hours: 4, minutes: 25, seconds: 13, milliseconds: 914))));//InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 19, minutes: 9, seconds: 29, milliseconds: 132))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
                 model = models[34];
 
                 Assert.That(model, Has.Length.EqualTo(6));
 
                 Assert.That(model, Is.Not.Null);
-                Assert.That((System.Int32)model[0], Is.EqualTo((177)));//Id
-                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 11, minutes: 38, seconds: 57, milliseconds: 509))));//Value
+                Assert.That((System.Int32)model[0], Is.EqualTo((174)));//Id
+                Assert.That((System.TimeSpan)model[1], Is.EqualTo((new TimeSpan(days: 0, hours: 6, minutes: 54, seconds: 55, milliseconds: 779))));//Value
 
                 Assert.That((DBNull)model[2], Is.EqualTo(DBNull.Value)); // InnerModel.Id
                 Assert.That((DBNull)model[3], Is.EqualTo(DBNull.Value)); // InnerModel.Value
                 Assert.That((DBNull)model[4], Is.EqualTo(DBNull.Value)); // InnerModel.NullableValue
 
-                Assert.That((System.TimeSpan?)model[5], Is.EqualTo((new TimeSpan(days: 0, hours: 21, minutes: 28, seconds: 28, milliseconds: 664))));
+                Assert.That((DBNull)model[5], Is.EqualTo(DBNull.Value));//NullableValue
 
             }
         }

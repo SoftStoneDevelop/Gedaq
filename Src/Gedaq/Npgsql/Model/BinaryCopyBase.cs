@@ -107,7 +107,7 @@ namespace Gedaq.Npgsql.Model
             }
 
             var fields = aliases.AllFields();
-            for (int i = 0; i < _npgSqlDbTypes.Length; i++)
+            for (int i = 0; i < fields.Length && i < npgSqlDbTypeOverride.Length; i++)
             {
                 Field field = fields[i];
                 field.AdditionalInfo = new NpgsqlFieldInfo(npgSqlDbTypeOverride[i]);
