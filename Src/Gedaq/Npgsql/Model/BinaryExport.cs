@@ -21,14 +21,14 @@ namespace Gedaq.Npgsql.Model
             out BinaryExport method)
         {
             method = null;
-            if (namedArguments.Length != 9)
+            if (namedArguments.Length != 8)
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametrsCount,
                     DiagnosticConstants.IncorrectAttributeParametrsCountDescr,
                     DiagnosticSeverity.Error,
-                    new string[] { "BinaryExport", "9", namedArguments.Length.ToString() });
+                    new string[] { "BinaryExport", "8", namedArguments.Length.ToString() });
 
                 return false;
             }
@@ -58,26 +58,14 @@ namespace Gedaq.Npgsql.Model
                 return false;
             }
 
-            if (!methodSource.FillNpgsqlDbTypes(namedArguments[3]))
+            if (!methodSource.FillSourceType(namedArguments[4]))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametr,
                     DiagnosticConstants.IncorrectAttributeParametrDescr,
                     DiagnosticSeverity.Error,
-                    new string[] { "4", nameof(_npgSqlDbTypes) });
-
-                return false;
-            }
-
-            if (!methodSource.FillSourceType(namedArguments[5]))
-            {
-                DiagnosticHelper.ReportDiagnostic(
-                    context,
-                    DiagnosticConstants.IncorrectAttributeParametr,
-                    DiagnosticConstants.IncorrectAttributeParametrDescr,
-                    DiagnosticSeverity.Error,
-                    new string[] { "6", nameof(SourceType) });
+                    new string[] { "5", nameof(SourceType) });
 
                 return false;
             }
@@ -85,9 +73,9 @@ namespace Gedaq.Npgsql.Model
             methodSource.MethodInfo =
                 new BaseMethodInfo(
                     methodName: namedArguments[0],
-                    methodType: namedArguments[4],
-                    accessModifier: namedArguments[6],
-                    asyncResultType: namedArguments[7],
+                    methodType: namedArguments[3],
+                    accessModifier: namedArguments[5],
+                    asyncResultType: namedArguments[6],
                     containsType);
 
             if (!methodSource.HaveMapTypes)
@@ -101,14 +89,14 @@ namespace Gedaq.Npgsql.Model
 
             methodSource.ContainTypeName = containsType;
             method = methodSource;
-            if (!methodSource.SetPartInterfaceType(namedArguments[8]))
+            if (!methodSource.SetPartInterfaceType(namedArguments[7]))
             {
                 DiagnosticHelper.ReportDiagnostic(
                     context,
                     DiagnosticConstants.IncorrectAttributeParametr,
                     DiagnosticConstants.IncorrectAttributeParametrDescr,
                     DiagnosticSeverity.Error,
-                    new string[] { "9", nameof(PartInterfaceType) });
+                    new string[] { "8", nameof(PartInterfaceType) });
 
                 return false;
             }

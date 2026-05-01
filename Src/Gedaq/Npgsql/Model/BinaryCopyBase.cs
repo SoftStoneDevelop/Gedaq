@@ -3,12 +3,13 @@ using Gedaq.Helpers;
 using Gedaq.Npgsql.Enums;
 using Microsoft.CodeAnalysis;
 using System;
+using System.Linq;
 
 namespace Gedaq.Npgsql.Model
 {
     internal class BinaryCopyBase : BaseGenerateItem
     {
-        protected int[] _npgSqlDbTypes;
+        protected int[][] _npgSqlDbTypes;
 
         public NpgsqlSourceType SourceType { get; protected set; }
 
@@ -19,7 +20,7 @@ namespace Gedaq.Npgsql.Model
             return Query == null;
         }
 
-        public bool HaveNpgSqlDbTypes => _npgSqlDbTypes?.Length > 0;
+        public bool HaveNpgSqlDbTypes => _npgSqlDbTypes?.Length > 0 && _npgSqlDbTypes.Any(a => a.Length > 0);
 
         public override bool IsCollectionDelegateMap => MapTypeInfos?.Length > 1;
 
@@ -52,10 +53,11 @@ namespace Gedaq.Npgsql.Model
                 return true;
             }
 
-            _npgSqlDbTypes = new int[argument.Values.Length];
+            _npgSqlDbTypes = new int[][] { new int[argument.Values.Length]  };
+            var types = _npgSqlDbTypes[0];
             for (int i = 0; i < argument.Values.Length; i++)
             {
-                _npgSqlDbTypes[i] = (int)argument.Values[i].Value;
+                types[i] = (int)argument.Values[i].Value;
             }
 
             return true;
@@ -73,6 +75,22 @@ namespace Gedaq.Npgsql.Model
             return true;
         }
 
+        public void SetNpgSqlDbTypesOverride(int[] npgSqlDbTypeOverride, int indexOfMap)
+        {
+            if (_npgSqlDbTypes == null)
+            {
+                _npgSqlDbTypes = new int[indexOfMap + 1][];
+            }
+            else if (_npgSqlDbTypes.Length <= indexOfMap)
+            {
+                var old = _npgSqlDbTypes;
+                _npgSqlDbTypes = new int[indexOfMap + 1][];
+                Array.Copy(old, _npgSqlDbTypes, old.Length);
+            }
+
+            _npgSqlDbTypes[indexOfMap] = npgSqlDbTypeOverride;
+        }
+
         /// <summary>
         /// Return not null if have override
         /// </summary>
@@ -83,7 +101,7 @@ namespace Gedaq.Npgsql.Model
                 return null;
             }
 
-            return _npgSqlDbTypes;
+            return _npgSqlDbTypes[typeIndex];
         }
 
         public void SetAliases(MapTypeInfo mapTypeInfo, Aliases aliases, int[] npgSqlDbTypeOverride)
@@ -95,10 +113,10 @@ namespace Gedaq.Npgsql.Model
             }
 
             var fields = aliases.AllFields();
-            for (int i = 0; i < _npgSqlDbTypes.Length; i++)
+            for (int i = 0; i < fields.Length && i < npgSqlDbTypeOverride.Length; i++)
             {
                 Field field = fields[i];
-                field.AdditionalInfo = new NpgsqlFieldInfo(_npgSqlDbTypes[i]);
+                field.AdditionalInfo = new NpgsqlFieldInfo(npgSqlDbTypeOverride[i]);
             }
 
             mapTypeInfo.Aliases = aliases;

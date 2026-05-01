@@ -53,6 +53,7 @@ namespace Gedaq.Npgsql
                 
                 var batchPair = new BatchPair<NpgsqlQueryBatch>();
                 var readTemp = new ReadPair<NpgsqlQuery, NpgsqlParametr, NpgsqlDynamicParametr>();
+                var exportPair = new ExportPair();
                 foreach (var attributeSyntax in attributeListSyntax.Attributes)
                 {
                     _context.CancellationToken.ThrowIfCancellationRequested();
@@ -66,6 +67,12 @@ namespace Gedaq.Npgsql
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "ParametrAttribute"))
                     {
                         ProcessParametr(attributeData, readTemp);
+                        continue;
+                    }
+
+                    if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "DbTypesOverrideAttribute"))
+                    {
+                        ProcessDbTypeOverride(attributeData, exportPair);
                         continue;
                     }
 
@@ -89,7 +96,7 @@ namespace Gedaq.Npgsql
 
                     if (attributeData.AttributeClass.IsAssignableFrom("Gedaq.Npgsql.Attributes", "BinaryExportAttribute"))
                     {
-                        ProcessBinaryExport(attributeData, containsType);
+                        ProcessBinaryExport(attributeData, containsType, exportPair);
                         continue;
                     }
 
@@ -104,7 +111,52 @@ namespace Gedaq.Npgsql
 
                 TryAddReadMethod(readTemp);
                 TryAddBatchToTemp(batchPair);
+                TryAddExportMethod(exportPair);
             }
+        }
+
+        private void TryAddExportMethod(ExportPair exportPair)
+        {
+            if (exportPair.IsEmpty())
+            {
+                return;
+            }
+
+            if (exportPair.Export == null)
+            {
+                return;
+            }
+
+            var binaryExport = exportPair.Export;
+            if (exportPair.DbTypeOverrides.Count > 0)
+            {
+                foreach (var dbTypeOverride in exportPair.DbTypeOverrides)
+                {
+                    binaryExport.SetNpgSqlDbTypesOverride(dbTypeOverride.NpgSqlDbTypes, dbTypeOverride.IndexOfTypeMap);
+                }
+            }
+
+            if (binaryExport.IsDynamicQuery() || binaryExport.IsCollectionDelegateMap)
+            {
+                for (int i = 0; i < binaryExport.MapTypeInfos.Length; i++)
+                {
+                    MapTypeInfo mapTypeInfo = binaryExport.MapTypeInfos[i];
+                    mapTypeInfo.ParseAliasesFromType(_context, binaryExport.GetAliasOverride(i));
+                    binaryExport.SetAliases(mapTypeInfo, mapTypeInfo.Aliases, binaryExport.GetNpgSqlDbTypesOverride(i));
+                }
+            }
+            else
+            {
+                var aliases = _binaryParser.Parse(ref binaryExport.Query);
+                binaryExport.SetAliases(binaryExport.MapTypeInfos[0], aliases, binaryExport.GetNpgSqlDbTypesOverride(0));
+            }
+
+            foreach (var mapTypeInfo in binaryExport.MapTypeInfos)
+            {
+                mapTypeInfo.FreezeMap(_context);
+            }
+
+            _binaryExports.Add(exportPair.Export);
         }
 
         public override void CompleteProcessContainTypes()
@@ -376,34 +428,26 @@ namespace Gedaq.Npgsql
             readPair.DynamicParametr = parametr;
         }
 
-        private void ProcessBinaryExport(AttributeData queryReadAttribute, INamedTypeSymbol containsType)
+        private void ProcessDbTypeOverride(
+            AttributeData parametrAttribute,
+            ExportPair exportPair)
+        {
+            if (!DbTypesOverride.CreateNew(_context, parametrAttribute.ConstructorArguments, out var parametr))
+            {
+                throw new Exception($"Unknown {nameof(DbTypesOverride)} constructor");
+            }
+
+            exportPair.DbTypeOverrides.Add(parametr);
+        }
+
+        private void ProcessBinaryExport(AttributeData queryReadAttribute, INamedTypeSymbol containsType, ExportPair exportPair)
         {
             if (!BinaryExport.CreateNew(_context, queryReadAttribute.ConstructorArguments, containsType, _providerInfo, out var binaryExport))
             {
                 throw new Exception($"Unknown {nameof(BinaryExport)} constructor");
             }
 
-            if (binaryExport.IsDynamicQuery() || binaryExport.IsCollectionDelegateMap)
-            {
-                for (int i = 0; i < binaryExport.MapTypeInfos.Length; i++)
-                {
-                    MapTypeInfo mapTypeInfo = binaryExport.MapTypeInfos[i];
-                    mapTypeInfo.ParseAliasesFromType(_context, binaryExport.GetAliasOverride(i));
-                    binaryExport.SetAliases(mapTypeInfo, mapTypeInfo.Aliases, binaryExport.GetNpgSqlDbTypesOverride(i));
-                }
-            }
-            else
-            {
-                var aliases = _binaryParser.Parse(ref binaryExport.Query);
-                binaryExport.SetAliases(binaryExport.MapTypeInfos[0], aliases, binaryExport.GetNpgSqlDbTypesOverride(0));
-            }
-
-            foreach (var mapTypeInfo in binaryExport.MapTypeInfos)
-            {
-                mapTypeInfo.FreezeMap(_context);
-            }
-
-            _binaryExports.Add(binaryExport);
+            exportPair.Export = binaryExport;
         }
 
         private void ProcessBinaryImport(AttributeData queryReadAttribute, INamedTypeSymbol containsType)

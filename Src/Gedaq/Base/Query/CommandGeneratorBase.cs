@@ -55,8 +55,7 @@ namespace Gedaq.Base.Query
 
         public string CreateCommandMethodName(
             QueryBaseCommand source,
-            MethodType methodType
-            )
+            MethodType methodType)
         {
             if (methodType == MethodType.Sync)
             {
@@ -469,7 +468,7 @@ namespace Gedaq.Base.Query
                     builder.Append($@"
                     {mapInfo.ItemTypeName} {mapInfo.MapItemName};
                     {{");
-                    MappingHelper.MapItem(mapInfo.MapType, source, builder, ProviderInfo, mapInfo.MapItemName);
+                    MappingHelper.MapItem(mapInfo, source, builder, ProviderInfo, mapInfo.MapItemName);
                     builder.Append($@"
                     }}");
                 }
@@ -500,7 +499,6 @@ namespace Gedaq.Base.Query
             else
             {
                 var mapInfo = source.MapTypeInfos[0];
-                var mapType = mapInfo.MapType;
                 switch (source.ReturnType)
                 {
                     case ReturnType.Enumerable:
@@ -510,7 +508,7 @@ namespace Gedaq.Base.Query
                 {{
                     {mapInfo.ItemTypeName} {mapInfo.MapItemName};");
 
-                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, mapInfo.MapItemName);
+                            MappingHelper.MapItem(mapInfo, source, builder, ProviderInfo, mapInfo.MapItemName);
 
                             builder.Append($@"
                     yield return {mapInfo.MapItemName};
@@ -527,16 +525,32 @@ namespace Gedaq.Base.Query
 
                     case ReturnType.List:
                     {
+                        builder.Append($@"
+                var resultList = new System.Collections.Generic.List<{mapInfo.ItemTypeName}>();");
+
+                        if (methodType == MethodType.Sync)
+                        {
                             builder.Append($@"
-                var resultList = new System.Collections.Generic.List<{mapInfo.ItemTypeName}>();
+                var span = CollectionsMarshal.AsSpan(resultList);");
+                        }
+
+                        builder.Append($@"
+                var i = 0;
                 while ({await}reader.Read{async})
                 {{
                     {mapInfo.ItemTypeName} {mapInfo.MapItemName};");
 
-                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, mapInfo.MapItemName);
-
+                        MappingHelper.MapItem(mapInfo, source, builder, ProviderInfo, mapInfo.MapItemName);
+                        if (methodType == MethodType.Async)
+                        {
                             builder.Append($@"
-                    resultList.Add({mapInfo.MapItemName});
+                    var span = CollectionsMarshal.AsSpan(resultList);");
+                        }
+
+                        builder.Append($@"
+                    CollectionsMarshal.SetCount(resultList, i + 1);
+                    span = CollectionsMarshal.AsSpan(resultList);
+                    span[i++] = {mapInfo.MapItemName};
                 }}
 
                 while ({await}reader.NextResult{async})
@@ -558,7 +572,7 @@ namespace Gedaq.Base.Query
                 if(!notContainAny)
                 {{");
 
-                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, mapInfo.MapItemName);
+                            MappingHelper.MapItem(mapInfo, source, builder, ProviderInfo, mapInfo.MapItemName);
 
                             builder.Append($@"
                 }}
@@ -592,7 +606,7 @@ namespace Gedaq.Base.Query
                 if({await}reader.Read{async})
                 {{");
 
-                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, mapInfo.MapItemName);
+                            MappingHelper.MapItem(mapInfo, source, builder, ProviderInfo, mapInfo.MapItemName);
 
                             builder.Append($@"
                 }}
@@ -621,7 +635,7 @@ namespace Gedaq.Base.Query
                 if(!notContainAny)
                 {{");
 
-                            MappingHelper.MapItem(mapType, source, builder, ProviderInfo, mapInfo.MapItemName);
+                            MappingHelper.MapItem(mapInfo, source, builder, ProviderInfo, mapInfo.MapItemName);
 
                             builder.Append($@"
                 }}
@@ -649,7 +663,7 @@ namespace Gedaq.Base.Query
                 if({await}reader.Read{async})
                 {{");
 
-                            MappingHelper.MapItem(mapType,source, builder, ProviderInfo, mapInfo.MapItemName);
+                            MappingHelper.MapItem(mapInfo, source, builder, ProviderInfo, mapInfo.MapItemName);
 
                             builder.Append($@"
                 }}

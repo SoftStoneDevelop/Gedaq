@@ -6,8 +6,8 @@
 		<Features>$(Features);experimental-data-section-string-literals</Features>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Gedaq.DbConnection" Version="10.0.0.1" />
-		<PackageReference Include="Gedaq.Npgsql" Version="10.0.0.2" />
+		<PackageReference Include="Gedaq.DbConnection" Version="10.0.0.2" />
+		<PackageReference Include="Gedaq.Npgsql" Version="10.0.0.3" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.5.1" />
 		<PackageReference Include="NUnit" Version="4.5.1" />
 		<PackageReference Include="NUnit3TestAdapter" Version="6.2.0" />

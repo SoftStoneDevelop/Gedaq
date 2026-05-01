@@ -57,12 +57,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Runtime.CompilerServices;";
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;";
         }
 
-        private void Start(
-            NpgsqlQuery source
-            )
+        private void Start(NpgsqlQuery source)
         {
             _methodCode.Append($@"
 {Usings()}

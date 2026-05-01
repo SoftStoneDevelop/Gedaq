@@ -208,7 +208,7 @@ namespace Gedaq.Base.Batch
                         builder.Append($@"
                 {mapInfo.ItemTypeName} {mapInfo.MapItemName};
                 {{");
-                        MappingHelper.MapItem(mapInfo.MapType, queryBase, builder, ProviderInfo, mapInfo.MapItemName);
+                        MappingHelper.MapItem(mapInfo, queryBase, builder, ProviderInfo, mapInfo.MapItemName);
                         builder.Append($@"
                 }}");
                     }
@@ -233,14 +233,13 @@ namespace Gedaq.Base.Batch
                 else
                 {
                     var mapInfo = queryBase.MapTypeInfos[0];
-                    var mapType = mapInfo.MapType;
                     if (source.ReturnType == ReturnType.Enumerable)
                     {
                         builder.Append($@"
             while({await}reader.Read{async})
             {{
                 {ItemTypeName(source)} {mapInfo.MapItemName};");
-                        MappingHelper.MapItem(mapType, queryBase, builder, ProviderInfo, mapInfo.MapItemName, CastTypeExpr(source));
+                        MappingHelper.MapItem(mapInfo, queryBase, builder, ProviderInfo, mapInfo.MapItemName, CastTypeExpr(source));
                         builder.Append($@"
                 yield return {mapInfo.MapItemName};
             }}");
@@ -252,7 +251,7 @@ namespace Gedaq.Base.Batch
             while({await}reader.Read{async})
             {{
                 {ItemTypeName(source)} {mapInfo.MapItemName};");
-                        MappingHelper.MapItem(mapType, queryBase, builder, ProviderInfo, mapInfo.MapItemName, CastTypeExpr(source));
+                        MappingHelper.MapItem(mapInfo, queryBase, builder, ProviderInfo, mapInfo.MapItemName, CastTypeExpr(source));
                         builder.Append($@"
                 batchItems.Add({mapInfo.MapItemName});
             }}
@@ -1252,7 +1251,6 @@ namespace Gedaq.Base.Batch
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
-            var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
             GetScalarType(source, ProviderInfo, out var type, out var isRowAffected, out var typeName);
             builder.Append($@"
         {{");
@@ -1488,11 +1486,6 @@ namespace Gedaq.Base.Batch
             QueryBatchCommand source,
             StringBuilder builder)
         {
-            if (!source.HaveParametrs && !source.HaveFormatParametrs && !source.HaveDynamicParametrs)
-            {
-                return;
-            }
-
             foreach (var item in source.BatchPartBases())
             {
                 AddParametrs(item, builder);

@@ -12,48 +12,48 @@ namespace Gedaq.Helpers
     internal static class MappingHelper
     {
         public static void MapItem(
-            ITypeSymbol mapType,
+            MapTypeInfo mapTypeInfo,
             QueryBaseCommand source,
             StringBuilder builder,
             ProviderInfo provider,
             string mapVariableName,
             string castTypeExpr = "")
         {
-            if (provider.IsKnownProviderType(mapType))
+            if (provider.IsKnownProviderType(mapTypeInfo.MapType))
             {
                 ReturnKnownProviderType(
-                    mapType,
+                    mapTypeInfo.MapType,
                     builder,
                     mapVariableName,
                     castTypeExpr);
             }
-            else if (provider.IsSpecialHandlerType(mapType))
+            else if (provider.IsSpecialHandlerType(mapTypeInfo.MapType))
             {
                 ReturnSpecialHandlerType(
-                    mapType,
+                    mapTypeInfo.MapType,
                     builder, 
                     provider,
                     mapVariableName,
                     castTypeExpr);
             }
-            else if (mapType.Name == nameof(Object))
+            else if (mapTypeInfo.MapType.Name == nameof(Object))
             {
                 ReturnObject(
                     builder,
                     mapVariableName,
                     castTypeExpr);
             }
-            else if (mapType is IArrayTypeSymbol typeArray && typeArray.ElementType.Name == nameof(Object))
+            else if (mapTypeInfo.MapType is IArrayTypeSymbol typeArray && typeArray.ElementType.Name == nameof(Object))
             {
                 ReturnObjectArr(
                     builder,
                     mapVariableName,
                     castTypeExpr);
             }
-            else if (mapType.TypeKind == TypeKind.Class || mapType.TypeKind == TypeKind.Struct)
+            else if (mapTypeInfo.MapType.TypeKind == TypeKind.Class || mapTypeInfo.MapType.TypeKind == TypeKind.Struct)
             {
                 ReturnComplicateItem(
-                    mapType,
+                    mapTypeInfo,
                     source,
                     builder,
                     provider,
@@ -63,7 +63,7 @@ namespace Gedaq.Helpers
             else
             {
                 ReturnDefaultMap(
-                    mapType,
+                    mapTypeInfo.MapType,
                     builder,
                     mapVariableName,
                     castTypeExpr);
@@ -143,14 +143,14 @@ namespace Gedaq.Helpers
         }
 
         private static void ReturnComplicateItem(
-            ITypeSymbol mapType,
+            MapTypeInfo mapTypeInfo,
             QueryBaseCommand source,
             StringBuilder builder,
             ProviderInfo provider,
             string mapVariableName,
             string castTypeExpr = "")
         {
-            ComplicateItem(source.MapTypeInfos[0].Aliases, mapType, source.MethodType, builder, provider);
+            ComplicateItem(mapTypeInfo.Aliases, mapTypeInfo.MapType, source.MethodType, builder, provider);
             builder.Append($@" 
                     {mapVariableName} = {castTypeExpr}root;");
         }
@@ -178,7 +178,7 @@ namespace Gedaq.Helpers
                 var root = new ItemPair(rootAliase, rootMapTypeName, "root", 0);
                 aliases.Push(root);
                 builder.Append($@"
-                    var {root.ItemName} = new {root.MapTypeName.GetFullTypeName()}();");
+                    {root.MapTypeName.GetFullTypeName()} {root.ItemName} = default;");
             }
 
             var itemId = 0;
@@ -216,14 +216,14 @@ namespace Gedaq.Helpers
                     {
                         var linkField = newPair.Aliases.GetLinkField();
                         builder.Append($@"
-                    {Tabs(newPair.Tabs)}if(!{(methodType == MethodType.Async ? "await " : "")}reader.IsDBNull{(methodType == MethodType.Async ? "Async" : "")}({linkField.Position}))
-                    {Tabs(newPair.Tabs)}{{
-                    {Tabs(newPair.Tabs)}    var {newPair.ItemName} = new {newPair.MapTypeName.GetFullTypeName()}();");
+                {Tabs(newPair.Tabs)}if(!{(methodType == MethodType.Async ? "await " : "")}reader.IsDBNull{(methodType == MethodType.Async ? "Async" : "")}({linkField.Position}))
+                {Tabs(newPair.Tabs)}{{
+                {Tabs(newPair.Tabs)}    {newPair.MapTypeName.GetFullTypeName()} {newPair.ItemName} = default;");
                     }
                     else
                     {
                         builder.Append($@" 
-                    {Tabs(newPair.Tabs)}    {newPair.MapTypeName.GetFullTypeName()}{(newPair.MapTypeName.TypeKind != TypeKind.Class ? "?" : "")} {newPair.ItemName} = null;");
+                {Tabs(newPair.Tabs)}    {newPair.MapTypeName.GetFullTypeName()}{(newPair.MapTypeName.TypeKind != TypeKind.Class ? "?" : "")} {newPair.ItemName} = null;");
                     }
                     continue;
                 }
@@ -239,29 +239,33 @@ namespace Gedaq.Helpers
                 return;
             }
 
+            builder.Append($@"
+                    {Tabs(pair.Tabs)}if({pair.Parent.ItemName} == null)
+                    {Tabs(pair.Tabs)}{{
+                    {Tabs(pair.Tabs)}    {pair.Parent.ItemName} = new {pair.Parent.MapTypeName.GetFullTypeName()}();
+                    {Tabs(pair.Tabs)}}}");
+
             if (pair.Aliases.HaveLinkKey)
             {
                 builder.Append($@"
-                    {Tabs(pair.Tabs)}    {pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
-                    {Tabs(pair.Tabs)}}}");
+                {Tabs(pair.Tabs)}    {pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
+                {Tabs(pair.Tabs)}}}");
             }
             else
             {
                 builder.Append($@"
-                    {Tabs(pair.Tabs)}if({pair.ItemName} != null)
-                    {Tabs(pair.Tabs)}{{");
+                {Tabs(pair.Tabs)}if({pair.ItemName} != null)
+                {Tabs(pair.Tabs)}{{");
 
-                if (!pair.Parent.Aliases.IsRoot)
-                {
-                    builder.Append($@"
-                    {Tabs(pair.Tabs)}    if({pair.Parent.ItemName} == null)
-                    {Tabs(pair.Tabs)}    {{
-                    {Tabs(pair.Tabs)}        {pair.Parent.ItemName} = new {pair.Parent.MapTypeName.GetFullTypeName()}();
-                    {Tabs(pair.Tabs)}    }}");
-                }
                 builder.Append($@"
-                    {Tabs(pair.Tabs)}    {pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
-                    {Tabs(pair.Tabs)}}}");
+                        {Tabs(pair.Tabs)}if({pair.ItemName} == null)
+                        {Tabs(pair.Tabs)}{{
+                            {Tabs(pair.Tabs)}{pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
+                        {Tabs(pair.Tabs)}}}");
+
+                builder.Append($@"
+                    {Tabs(pair.Tabs)}{pair.Parent.ItemName}.{pair.PropertyName} = {pair.ItemName};
+                {Tabs(pair.Tabs)}}}");
             }
         }
 
@@ -274,39 +278,39 @@ namespace Gedaq.Helpers
         {
             pair.MapTypeName.GetPropertyOrFieldName(field.Name, out var propertyName, out var propertyType);
             builder.Append($@"
-                        {Tabs(pair.Tabs)}if(!reader.IsDBNull({provider.ValueReaderKey(pair.Aliases.Prefix, field)}))
-                        {{");
+                    {Tabs(pair.Tabs)}if(!reader.IsDBNull({provider.ValueReaderKey(pair.Aliases.Prefix, field)}))
+                    {Tabs(pair.Tabs)}{{");
 
             if (createItemIfNull)
             {
                 builder.Append($@"
-                            {Tabs(pair.Tabs)}if({pair.ItemName} == null)
-                            {Tabs(pair.Tabs)}{{
-                                {Tabs(pair.Tabs)} {pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
-                            {Tabs(pair.Tabs)}}}");
+                        {Tabs(pair.Tabs)}if({pair.ItemName} == null)
+                        {Tabs(pair.Tabs)}{{
+                            {Tabs(pair.Tabs)}{pair.ItemName} = new {pair.MapTypeName.GetFullTypeName()}();
+                        {Tabs(pair.Tabs)}}}");
             }
 
             if (propertyType.IsNullableType())
             {
                 builder.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
+                        {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
             }
             else
             {
                 if (provider.IsSpecialHandlerType(propertyType))
                 {
                     builder.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {provider.GetSpecialTypeValue(propertyType, pair.Aliases.Prefix, field)};");
+                        {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = {provider.GetSpecialTypeValue(propertyType, pair.Aliases.Prefix, field)};");
                 }
                 else
                 {
                     builder.Append($@"
-                            {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
+                        {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
                 }
             }
 
             builder.Append($@"
-                        }}");
+                    {Tabs(pair.Tabs)}}}");
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
