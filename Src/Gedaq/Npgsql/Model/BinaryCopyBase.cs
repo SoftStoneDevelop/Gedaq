@@ -77,9 +77,15 @@ namespace Gedaq.Npgsql.Model
 
         public void SetNpgSqlDbTypesOverride(int[] npgSqlDbTypeOverride, int indexOfMap)
         {
-            if (_npgSqlDbTypes == null || _npgSqlDbTypes.Length <= indexOfMap)
+            if (_npgSqlDbTypes == null)
             {
                 _npgSqlDbTypes = new int[indexOfMap + 1][];
+            }
+            else if (_npgSqlDbTypes.Length <= indexOfMap)
+            {
+                var old = _npgSqlDbTypes;
+                _npgSqlDbTypes = new int[indexOfMap + 1][];
+                Array.Copy(old, _npgSqlDbTypes, old.Length);
             }
 
             _npgSqlDbTypes[indexOfMap] = npgSqlDbTypeOverride;

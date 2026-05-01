@@ -15,8 +15,6 @@ namespace Gedaq
     {
         public void Initialize(IncrementalGeneratorInitializationContext context)
         {
-            //System.Diagnostics.Debugger.Launch();
-
             var classDeclarations = context.SyntaxProvider
                 .CreateSyntaxProvider(
                 predicate: (s, _) => IsSyntaxTargetForGeneration(s),
