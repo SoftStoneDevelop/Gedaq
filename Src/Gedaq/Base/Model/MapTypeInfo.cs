@@ -133,16 +133,17 @@ namespace Gedaq.Base.Model
                     Name = name
                 };
 
-                CheckPropertyAttributes(name, propertySymbol.GetAttributes(), field, context);
-                field.MarkAttributeChecked();
-
-                alias.AddField(field);
+                if (CheckPropertyAttributes(name, propertySymbol.GetAttributes(), field, context))
+                {
+                    field.MarkAttributeChecked();
+                    alias.AddField(field);
+                }
             }
 
             Aliases = alias;
         }
 
-        public void CheckPropertyAttributes(
+        public bool CheckPropertyAttributes(
             string propertyName,
             ImmutableArray<AttributeData> pAttributes,
             Field field,
@@ -157,7 +158,7 @@ namespace Gedaq.Base.Model
             {
                 if (pAttribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "IgnorePropertyAttribute"))
                 {
-                    continue;
+                    return false;
                 }
 
                 if (pAttribute.AttributeClass.IsAssignableFrom("Gedaq.Common.Attributes", "AliasAttribute"))
@@ -259,6 +260,8 @@ namespace Gedaq.Base.Model
             {
                 field.AdditionalInfo = additionalInfo;
             }
+
+            return true;
         }
     }
 }
