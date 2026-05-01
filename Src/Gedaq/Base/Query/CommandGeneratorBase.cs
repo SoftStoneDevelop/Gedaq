@@ -55,8 +55,7 @@ namespace Gedaq.Base.Query
 
         public string CreateCommandMethodName(
             QueryBaseCommand source,
-            MethodType methodType
-            )
+            MethodType methodType)
         {
             if (methodType == MethodType.Sync)
             {
@@ -526,6 +525,30 @@ namespace Gedaq.Base.Query
 
                     case ReturnType.List:
                     {
+                        if (methodType == MethodType.Sync)
+                        {
+                            builder.Append($@"
+                var resultList = new System.Collections.Generic.List<{mapInfo.ItemTypeName}>();
+                var span = CollectionsMarshal.AsSpan(resultList);
+                var i = 0;
+                while ({await}reader.Read{async})
+                {{
+                    {mapInfo.ItemTypeName} {mapInfo.MapItemName};");
+
+                            MappingHelper.MapItem(mapInfo, source, builder, ProviderInfo, mapInfo.MapItemName);
+                            builder.Append($@"
+
+                    if (span.Length <= i)
+                    {{
+                        var newSize = span.Length > 0 ? span.Length * 2 : 4;
+                        CollectionsMarshal.SetCount(resultList, newSize);
+                        span = CollectionsMarshal.AsSpan(resultList);
+                    }}
+
+                    span[i++] = {mapInfo.MapItemName};");
+                        }
+                        else
+                        {
                             builder.Append($@"
                 var resultList = new System.Collections.Generic.List<{mapInfo.ItemTypeName}>();
                 while ({await}reader.Read{async})
@@ -533,9 +556,11 @@ namespace Gedaq.Base.Query
                     {mapInfo.ItemTypeName} {mapInfo.MapItemName};");
 
                             MappingHelper.MapItem(mapInfo, source, builder, ProviderInfo, mapInfo.MapItemName);
-
                             builder.Append($@"
-                    resultList.Add({mapInfo.MapItemName});
+                    resultList.Add({mapInfo.MapItemName});");
+                        }
+
+                        builder.Append($@"
                 }}
 
                 while ({await}reader.NextResult{async})

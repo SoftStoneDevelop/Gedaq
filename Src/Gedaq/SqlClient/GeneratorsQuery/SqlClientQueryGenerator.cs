@@ -58,12 +58,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Runtime.CompilerServices;";
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;";
         }
 
-        private void Start(
-            SqlClientQuery source
-            )
+        private void Start(SqlClientQuery source)
         {
             _methodCode.Append($@"
 {Usings()}
