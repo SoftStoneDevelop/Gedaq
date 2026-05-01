@@ -239,14 +239,10 @@ ORDER BY
                 var models2 = new List<{model.ClassName(isDynamicQuery)}>();
                 {await}{TypeHelper.ThisAsInterface(interfaceTypeName)}.{SelectMethodName(isDynamicQuery, dynamicParametr, isMultiMap)}{async}({passParametrs});
                 Assert.That(models1, Has.Count.EqualTo({orderedValues.Count}));
-                for (int i = 0; i < {orderedValues.Count}; i++)
-                {{
-                    {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models1[i],{TestsPart.TestDataArrayName}[i], false);
-                }}
-
                 Assert.That(models2, Has.Count.EqualTo({orderedValues.Count}));
                 for (int i = 0; i < {orderedValues.Count}; i++)
                 {{
+                    {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models1[i],{TestsPart.TestDataArrayName}[i], false);
                     {model.ClassName(isDynamicQuery)}.{ModelGenerator.AssertMethodName}(models2[i],{TestsPart.TestDataArrayName}[i], false);
                 }}");
             }

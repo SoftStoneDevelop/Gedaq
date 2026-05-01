@@ -548,13 +548,8 @@ namespace Gedaq.Base.Query
                         }
 
                         builder.Append($@"
-                    if (span.Length <= i)
-                    {{
-                        var newSize = span.Length > 0 ? span.Length * 2 : 4;
-                        CollectionsMarshal.SetCount(resultList, newSize);
-                        span = CollectionsMarshal.AsSpan(resultList);
-                    }}
-
+                    CollectionsMarshal.SetCount(resultList, i + 1);
+                    span = CollectionsMarshal.AsSpan(resultList);
                     span[i++] = {mapInfo.MapItemName};
                 }}
 
