@@ -93,27 +93,11 @@ namespace TestsGenerator.Generators.PostgreSQL
                 }
             }
 
-            string dbTypes;
-            if  (isOverrideDbTypes)
-            {
-                dbTypes = $@"new NpgsqlDbType[]
-            {{
-                {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
-                {model.ModelInner.TypeInfo.SpecialDbTypeStr()},
-                {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
-            }}";
-            }
-            else
-            {
-                dbTypes = ValueConstants.NullValue;
-            }
-
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.BinaryExport(
             query: {query},
             methodName:""{ExportMethodName(isDynamicQuery, isMultiMap, isOverrideDbTypes)}"",
             queryMapTypes: [{queryMapTypes}],
-            dbTypes: {dbTypes},
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,

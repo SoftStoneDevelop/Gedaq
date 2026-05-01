@@ -1251,7 +1251,6 @@ namespace Gedaq.Base.Batch
         {
             var await = methodType == MethodType.Async ? "await " : "";
             var async = methodType == MethodType.Async ? "Async(cancellationToken).ConfigureAwait(false)" : "()";
-            var disposeAsync = methodType == MethodType.Async ? "Async().ConfigureAwait(false)" : "()";
             GetScalarType(source, ProviderInfo, out var type, out var isRowAffected, out var typeName);
             builder.Append($@"
         {{");

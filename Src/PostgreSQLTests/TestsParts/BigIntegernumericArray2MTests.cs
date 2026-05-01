@@ -32,70 +32,133 @@ namespace Tests
 {
     Id = 9,
     Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(136876902146993451L),
+
+new System.Numerics.BigInteger(8128590844352768135L),
+
+new System.Numerics.BigInteger(5533636361320263569L),
+
+new System.Numerics.BigInteger(7661002798716500841L),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BigIntegernumericArray2M
+{
+    Id = 12,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(3002368450195691716L),
+
+new System.Numerics.BigInteger(546159221781208737L),
+
+new System.Numerics.BigInteger(6566515362516919074L),
+
+new System.Numerics.BigInteger(7182527856055973647L),
+
+},
+    ModelInner = new BigIntegernumericArray2MI
+{
+    Id = 4,
+    Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(2548927091884221206L),
+new System.Numerics.BigInteger(2524192514294705349L),
 
-new System.Numerics.BigInteger(8114391601735929817L),
+new System.Numerics.BigInteger(8649255895159455232L),
 
-new System.Numerics.BigInteger(7179672026810369092L),
+new System.Numerics.BigInteger(966712709648035567L),
+
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new BigIntegernumericArray2M
+{
+    Id = 20,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(2822976534312514567L),
+
+new System.Numerics.BigInteger(3374401962861879831L),
+
+new System.Numerics.BigInteger(8358458574551298052L),
+
+new System.Numerics.BigInteger(5369472498673528084L),
 
 },
     ModelInner = null,
     NullableValue = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+{
+new System.Numerics.BigInteger(8528699587542953323L),
+
+new System.Numerics.BigInteger(2893006265741256489L),
+
+new System.Numerics.BigInteger(6781758043744401614L),
+
+},
+},
+            new BigIntegernumericArray2M
+{
+    Id = 24,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+{
+new System.Numerics.BigInteger(3054192891152376383L),
+
+new System.Numerics.BigInteger(4956034811047998425L),
+
+new System.Numerics.BigInteger(9133715785638878236L),
+
+},
+    ModelInner = new BigIntegernumericArray2MI
+{
+    Id = 5,
+    Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(3802963906888514236L),
+new System.Numerics.BigInteger(4218572655530151725L),
 
-new System.Numerics.BigInteger(4870373183284521172L),
+new System.Numerics.BigInteger(665329096837140402L),
 
-new System.Numerics.BigInteger(5491770265955516209L),
+new System.Numerics.BigInteger(212069375639088861L),
 
-new System.Numerics.BigInteger(5434557558855914739L),
+new System.Numerics.BigInteger(5048198957538955993L),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(7061450858961740837L),
+
+new System.Numerics.BigInteger(5096522622971129027L),
+
+new System.Numerics.BigInteger(6489967095912306107L),
+
+new System.Numerics.BigInteger(3443357390640935007L),
 
 },
 },
             new BigIntegernumericArray2M
 {
-    Id = 15,
+    Id = 30,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(2168601742014261311L),
+new System.Numerics.BigInteger(2162552455003968350L),
 
-new System.Numerics.BigInteger(5021908181571149862L),
+new System.Numerics.BigInteger(827770213514942048L),
 
-new System.Numerics.BigInteger(5103516493329904453L),
-
-},
-    ModelInner = new BigIntegernumericArray2MI
-{
-    Id = 2,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
-{
-new System.Numerics.BigInteger(7184789347591308020L),
-
-new System.Numerics.BigInteger(2551309079082701108L),
-
-new System.Numerics.BigInteger(59990827648519240L),
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new BigIntegernumericArray2M
-{
-    Id = 22,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
-{
-new System.Numerics.BigInteger(2533112143651625165L),
-
-new System.Numerics.BigInteger(5689556447348585758L),
-
-new System.Numerics.BigInteger(7442466358060141154L),
+new System.Numerics.BigInteger(8142797123520767376L),
 
 },
     ModelInner = null,
@@ -103,48 +166,104 @@ new System.Numerics.BigInteger(7442466358060141154L),
 },
             new BigIntegernumericArray2M
 {
-    Id = 27,
+    Id = 31,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(2686112468195576840L),
+new System.Numerics.BigInteger(1320818524827440876L),
 
-new System.Numerics.BigInteger(5915513954001655497L),
+new System.Numerics.BigInteger(6481767921037123771L),
 
-new System.Numerics.BigInteger(308577391048894219L),
+new System.Numerics.BigInteger(8823206583214524386L),
+
+new System.Numerics.BigInteger(6008360537331523266L),
 
 },
     ModelInner = new BigIntegernumericArray2MI
 {
-    Id = 9,
+    Id = 7,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(950877962912269799L),
+new System.Numerics.BigInteger(4395876054342607641L),
 
-new System.Numerics.BigInteger(7274043208784760727L),
+new System.Numerics.BigInteger(3823919040747971617L),
 
-new System.Numerics.BigInteger(7374412920444841579L),
+new System.Numerics.BigInteger(6083129115512628779L),
 
 },
     NullableValue = null,
 },
+    NullableValue = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(7559460352766535904L),
+
+new System.Numerics.BigInteger(1006299721063749648L),
+
+new System.Numerics.BigInteger(4325628031522098484L),
+
+new System.Numerics.BigInteger(4104491303710426729L),
+
+},
+},
+            new BigIntegernumericArray2M
+{
+    Id = 34,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(956654340174538575L),
+
+new System.Numerics.BigInteger(1496761966494638814L),
+
+new System.Numerics.BigInteger(503281279657370402L),
+
+new System.Numerics.BigInteger(5897918034141128932L),
+
+},
+    ModelInner = null,
     NullableValue = null,
 },
             new BigIntegernumericArray2M
 {
-    Id = 36,
+    Id = 37,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(1445766947006956030L),
+new System.Numerics.BigInteger(5109577248478749899L),
 
-new System.Numerics.BigInteger(4375792991980841512L),
+new System.Numerics.BigInteger(1118937840176854028L),
 
-new System.Numerics.BigInteger(2963405293039706614L),
+new System.Numerics.BigInteger(4930816292018496762L),
 
 },
-    ModelInner = null,
+    ModelInner = new BigIntegernumericArray2MI
+{
+    Id = 14,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+{
+new System.Numerics.BigInteger(3925062862962056377L),
+
+new System.Numerics.BigInteger(4794963702768679647L),
+
+new System.Numerics.BigInteger(4714096198580689425L),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(7775398781383381056L),
+
+new System.Numerics.BigInteger(7117687787395975246L),
+
+new System.Numerics.BigInteger(7541876833998655422L),
+
+new System.Numerics.BigInteger(2755677591350229960L),
+
+},
+},
     NullableValue = null,
 },
             new BigIntegernumericArray2M
@@ -153,136 +272,128 @@ new System.Numerics.BigInteger(2963405293039706614L),
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(4074875222643133477L),
+new System.Numerics.BigInteger(1756331666231460583L),
 
-new System.Numerics.BigInteger(4745972856149787502L),
+new System.Numerics.BigInteger(6863495467452429746L),
 
-new System.Numerics.BigInteger(6812674147769679466L),
+new System.Numerics.BigInteger(389894834022942063L),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new BigIntegernumericArray2M
+{
+    Id = 46,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(168852081346135642L),
+
+new System.Numerics.BigInteger(1804865653068680816L),
+
+new System.Numerics.BigInteger(3122214085131145569L),
+
+new System.Numerics.BigInteger(604057011641617344L),
 
 },
     ModelInner = new BigIntegernumericArray2MI
 {
-    Id = 14,
+    Id = 23,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(5466051989479740284L),
+new System.Numerics.BigInteger(4462595125475581501L),
 
-new System.Numerics.BigInteger(9068404477414928058L),
+new System.Numerics.BigInteger(6265782336018754768L),
 
-new System.Numerics.BigInteger(8321353726728659338L),
-
-new System.Numerics.BigInteger(7385727114759429847L),
+new System.Numerics.BigInteger(6724045364486590678L),
 
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(885057872017979331L),
+new System.Numerics.BigInteger(6814167895373844855L),
 
-new System.Numerics.BigInteger(9222248871784413549L),
+new System.Numerics.BigInteger(2287199899818855315L),
 
-new System.Numerics.BigInteger(1488812673753619721L),
+new System.Numerics.BigInteger(905276104613487472L),
 
-new System.Numerics.BigInteger(5681575616476418744L),
+new System.Numerics.BigInteger(6344152760157653907L),
 
 },
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(7850485559045750662L),
+new System.Numerics.BigInteger(8316022242027076698L),
 
-new System.Numerics.BigInteger(8224200237370739136L),
+new System.Numerics.BigInteger(150346773007425900L),
 
-new System.Numerics.BigInteger(3953230021799436876L),
+new System.Numerics.BigInteger(747974746511834124L),
 
-new System.Numerics.BigInteger(8078325092567455510L),
+new System.Numerics.BigInteger(4614616027218209539L),
 
 },
 },
             new BigIntegernumericArray2M
 {
-    Id = 45,
+    Id = 47,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(4266413875294112383L),
+new System.Numerics.BigInteger(7813203850108038489L),
 
-new System.Numerics.BigInteger(8290200553622846486L),
+new System.Numerics.BigInteger(8951832941423211728L),
 
-new System.Numerics.BigInteger(289385585294149511L),
-
-new System.Numerics.BigInteger(6767045838059166184L),
+new System.Numerics.BigInteger(320883242365996922L),
 
 },
     ModelInner = null,
     NullableValue = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(7697531431937723941L),
+new System.Numerics.BigInteger(7645530484149423103L),
 
-new System.Numerics.BigInteger(177372635353678821L),
+new System.Numerics.BigInteger(144005806720288177L),
 
-new System.Numerics.BigInteger(7808133784084581163L),
-
-new System.Numerics.BigInteger(8971817008210432329L),
+new System.Numerics.BigInteger(7326134502329313411L),
 
 },
 },
             new BigIntegernumericArray2M
 {
-    Id = 48,
+    Id = 50,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(2724242007243532930L),
+new System.Numerics.BigInteger(6918512043767482309L),
 
-new System.Numerics.BigInteger(8917660315879280226L),
+new System.Numerics.BigInteger(3713741124105243098L),
 
-new System.Numerics.BigInteger(1797615048904704290L),
+new System.Numerics.BigInteger(4746378083254720248L),
 
-new System.Numerics.BigInteger(8092927055094289232L),
+new System.Numerics.BigInteger(7058889320460067877L),
 
 },
     ModelInner = new BigIntegernumericArray2MI
 {
-    Id = 21,
+    Id = 32,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
-{
-new System.Numerics.BigInteger(169171681727855618L),
-
-new System.Numerics.BigInteger(3623622281861907837L),
-
-new System.Numerics.BigInteger(7570954644487262456L),
-
-},
-    NullableValue = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(8090360444258003274L),
+new System.Numerics.BigInteger(72696631116189201L),
 
-new System.Numerics.BigInteger(5594559482638514400L),
+new System.Numerics.BigInteger(275460116398371955L),
 
-new System.Numerics.BigInteger(2478935751798512330L),
+new System.Numerics.BigInteger(5938262788476439990L),
 
-new System.Numerics.BigInteger(5060055734113871734L),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(5247679357367136031L),
-
-new System.Numerics.BigInteger(2433605856122499501L),
-
-new System.Numerics.BigInteger(4261233027544511528L),
-
-new System.Numerics.BigInteger(8605150853769195056L),
+new System.Numerics.BigInteger(4217675539734075431L),
 
 },
+    NullableValue = null,
+},
+    NullableValue = null,
 },
             new BigIntegernumericArray2M
 {
@@ -290,24 +401,24 @@ new System.Numerics.BigInteger(8605150853769195056L),
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(4962267222222927611L),
+new System.Numerics.BigInteger(3232978020196369785L),
 
-new System.Numerics.BigInteger(5653408540592385489L),
+new System.Numerics.BigInteger(6328211366082640466L),
 
-new System.Numerics.BigInteger(853676734719752160L),
+new System.Numerics.BigInteger(6766124929899047096L),
 
-new System.Numerics.BigInteger(810644473015191629L),
+new System.Numerics.BigInteger(8334535376091069534L),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(7808013898736901579L),
+new System.Numerics.BigInteger(5576802726790280217L),
 
-new System.Numerics.BigInteger(7501064534038830348L),
+new System.Numerics.BigInteger(7790304869276604419L),
 
-new System.Numerics.BigInteger(6933020438177478239L),
+new System.Numerics.BigInteger(7567315021047172663L),
 
 },
 },
@@ -315,87 +426,94 @@ new System.Numerics.BigInteger(6933020438177478239L),
 {
     Id = 58,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(4698631686659482495L),
+new System.Numerics.BigInteger(8171707566172977576L),
 
-new System.Numerics.BigInteger(4647543938386843257L),
+new System.Numerics.BigInteger(3563421217342251776L),
 
-new System.Numerics.BigInteger(7240245006733773388L),
-
-new System.Numerics.BigInteger(4763680928257820190L),
+new System.Numerics.BigInteger(4070305077274280227L),
 
 },
     ModelInner = new BigIntegernumericArray2MI
 {
-    Id = 22,
+    Id = 34,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(5476411458651648416L),
+new System.Numerics.BigInteger(6133624118354276205L),
 
-new System.Numerics.BigInteger(4967924127634533080L),
+new System.Numerics.BigInteger(4057944054581539081L),
 
-new System.Numerics.BigInteger(2445930179179897347L),
+new System.Numerics.BigInteger(2225128892506136576L),
+
+new System.Numerics.BigInteger(5162859284568577736L),
 
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+{
+new System.Numerics.BigInteger(4657559056797278964L),
+
+new System.Numerics.BigInteger(6239426827511628216L),
+
+new System.Numerics.BigInteger(117279803122169321L),
+
+},
 },
     NullableValue = null,
 },
             new BigIntegernumericArray2M
 {
-    Id = 66,
+    Id = 65,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(5588477380034224012L),
+new System.Numerics.BigInteger(60504107818357044L),
 
-new System.Numerics.BigInteger(7134340408526479936L),
+new System.Numerics.BigInteger(2982541309627315201L),
 
-new System.Numerics.BigInteger(3110649707374520845L),
+new System.Numerics.BigInteger(5106039793588366651L),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(661582045740181269L),
+new System.Numerics.BigInteger(720042489347768029L),
 
-new System.Numerics.BigInteger(517301727151487782L),
+new System.Numerics.BigInteger(5847114942666358406L),
 
-new System.Numerics.BigInteger(8721044019261375060L),
+new System.Numerics.BigInteger(6108990502243620143L),
 
-new System.Numerics.BigInteger(8331750678653888793L),
+new System.Numerics.BigInteger(9024759302118706404L),
 
 },
 },
             new BigIntegernumericArray2M
 {
-    Id = 71,
+    Id = 72,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(8038085342187564545L),
+new System.Numerics.BigInteger(4862375071625730515L),
 
-new System.Numerics.BigInteger(4152856918315146686L),
+new System.Numerics.BigInteger(2429678665961881879L),
 
-new System.Numerics.BigInteger(8667693345538379171L),
-
-new System.Numerics.BigInteger(9148257025867792159L),
+new System.Numerics.BigInteger(1710526122567060334L),
 
 },
     ModelInner = new BigIntegernumericArray2MI
 {
-    Id = 29,
+    Id = 35,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(8713602002423640245L),
+new System.Numerics.BigInteger(8627031564882048524L),
 
-new System.Numerics.BigInteger(7765010901521133502L),
+new System.Numerics.BigInteger(54506449594227700L),
 
-new System.Numerics.BigInteger(2407638230411681227L),
+new System.Numerics.BigInteger(8166458328465085961L),
 
 },
     NullableValue = null,
@@ -404,15 +522,17 @@ new System.Numerics.BigInteger(2407638230411681227L),
 },
             new BigIntegernumericArray2M
 {
-    Id = 74,
+    Id = 75,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(7059639568233934000L),
+new System.Numerics.BigInteger(8857553640295312746L),
 
-new System.Numerics.BigInteger(1151814191524418224L),
+new System.Numerics.BigInteger(548062753378426051L),
 
-new System.Numerics.BigInteger(8992033479320791431L),
+new System.Numerics.BigInteger(6003327464071571812L),
+
+new System.Numerics.BigInteger(7328988051268202050L),
 
 },
     ModelInner = null,
@@ -420,62 +540,71 @@ new System.Numerics.BigInteger(8992033479320791431L),
 },
             new BigIntegernumericArray2M
 {
-    Id = 81,
+    Id = 84,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(2194783198793567661L),
+new System.Numerics.BigInteger(364011920533781409L),
 
-new System.Numerics.BigInteger(7096142337716427249L),
+new System.Numerics.BigInteger(7537249051813280402L),
 
-new System.Numerics.BigInteger(7281203220251315785L),
+new System.Numerics.BigInteger(1339141946428504234L),
 
-new System.Numerics.BigInteger(3318474186491815000L),
+new System.Numerics.BigInteger(1488815167077938161L),
 
 },
     ModelInner = new BigIntegernumericArray2MI
 {
-    Id = 37,
+    Id = 42,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(6159035884874454655L),
+new System.Numerics.BigInteger(8321589389372633726L),
 
-new System.Numerics.BigInteger(8955111549964549763L),
+new System.Numerics.BigInteger(6211685460450690164L),
 
-new System.Numerics.BigInteger(2432086887433041256L),
+new System.Numerics.BigInteger(1162889900860455827L),
 
-new System.Numerics.BigInteger(8960622368260365239L),
+new System.Numerics.BigInteger(8853488180261497517L),
 
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+{
+new System.Numerics.BigInteger(6660353570595155007L),
+
+new System.Numerics.BigInteger(6607138670678251750L),
+
+new System.Numerics.BigInteger(256302565210366162L),
+
+},
 },
     NullableValue = null,
 },
             new BigIntegernumericArray2M
 {
-    Id = 86,
+    Id = 92,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(3383275565120025736L),
+new System.Numerics.BigInteger(3863121338006661043L),
 
-new System.Numerics.BigInteger(2557629346724541977L),
+new System.Numerics.BigInteger(774722786930913509L),
 
-new System.Numerics.BigInteger(1045871722401472220L),
+new System.Numerics.BigInteger(6178780671207333253L),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(8560553250536860857L),
+new System.Numerics.BigInteger(2715510702467810649L),
 
-new System.Numerics.BigInteger(3512721975224651459L),
+new System.Numerics.BigInteger(4935991564532862757L),
 
-new System.Numerics.BigInteger(5024187156930254597L),
+new System.Numerics.BigInteger(3673860887178216571L),
 
-new System.Numerics.BigInteger(5559215704001637636L),
+new System.Numerics.BigInteger(7044489434344702566L),
 
 },
 },
@@ -485,61 +614,52 @@ new System.Numerics.BigInteger(5559215704001637636L),
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(2768190940739545966L),
+new System.Numerics.BigInteger(8532636362365506460L),
 
-new System.Numerics.BigInteger(783638384981886204L),
+new System.Numerics.BigInteger(7245008740085161145L),
 
-new System.Numerics.BigInteger(3299453123733160522L),
+new System.Numerics.BigInteger(3546746357582445358L),
 
 },
     ModelInner = new BigIntegernumericArray2MI
 {
-    Id = 38,
+    Id = 48,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
-{
-new System.Numerics.BigInteger(8604267909220361707L),
-
-new System.Numerics.BigInteger(8667802347772737083L),
-
-new System.Numerics.BigInteger(8156680429130494517L),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
-{
-new System.Numerics.BigInteger(4904802609479118560L),
-
-new System.Numerics.BigInteger(73560725653278864L),
-
-new System.Numerics.BigInteger(197127087225950969L),
-
-},
-},
-    NullableValue = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(2228137443052354366L),
+new System.Numerics.BigInteger(5888306483953891675L),
 
-new System.Numerics.BigInteger(7365559644951921593L),
+new System.Numerics.BigInteger(9105654658757515443L),
 
-new System.Numerics.BigInteger(3284460010883236218L),
+new System.Numerics.BigInteger(6305628089391322401L),
 
-new System.Numerics.BigInteger(2317981257497732696L),
+new System.Numerics.BigInteger(47315602145036576L),
 
 },
+    NullableValue = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+{
+new System.Numerics.BigInteger(6183274782472554102L),
+
+new System.Numerics.BigInteger(2371565255442690394L),
+
+new System.Numerics.BigInteger(3277575102462979029L),
+
+},
+},
+    NullableValue = null,
 },
             new BigIntegernumericArray2M
 {
-    Id = 100,
+    Id = 103,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(4865395348453246208L),
+new System.Numerics.BigInteger(5290816625362013136L),
 
-new System.Numerics.BigInteger(3138476603816736495L),
+new System.Numerics.BigInteger(7080139981572595979L),
 
-new System.Numerics.BigInteger(8099028872522134017L),
+new System.Numerics.BigInteger(5846895139971561313L),
 
 },
     ModelInner = null,
@@ -547,89 +667,15 @@ new System.Numerics.BigInteger(8099028872522134017L),
 },
             new BigIntegernumericArray2M
 {
-    Id = 109,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(8517299001005533913L),
-
-new System.Numerics.BigInteger(5444465635909342712L),
-
-new System.Numerics.BigInteger(5121584436843050775L),
-
-new System.Numerics.BigInteger(2895076569287715437L),
-
-},
-    ModelInner = new BigIntegernumericArray2MI
-{
-    Id = 44,
+    Id = 112,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(6610802421034176607L),
+new System.Numerics.BigInteger(1893720113529955243L),
 
-new System.Numerics.BigInteger(9067433758141198309L),
+new System.Numerics.BigInteger(3986648452833537512L),
 
-new System.Numerics.BigInteger(1634352196224005776L),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(6200130943816471540L),
-
-new System.Numerics.BigInteger(1998571594987485876L),
-
-new System.Numerics.BigInteger(7821510311353890673L),
-
-new System.Numerics.BigInteger(8352885776486731087L),
-
-},
-},
-            new BigIntegernumericArray2M
-{
-    Id = 115,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(3441103763772639854L),
-
-new System.Numerics.BigInteger(7263632317883735144L),
-
-new System.Numerics.BigInteger(6684866091928645040L),
-
-new System.Numerics.BigInteger(5832634974170801793L),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(1202471470198618901L),
-
-new System.Numerics.BigInteger(1140773710520096447L),
-
-new System.Numerics.BigInteger(7225073279562520860L),
-
-new System.Numerics.BigInteger(6541188561449826328L),
-
-},
-},
-            new BigIntegernumericArray2M
-{
-    Id = 119,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(8675935343890585292L),
-
-new System.Numerics.BigInteger(1994176690519756319L),
-
-new System.Numerics.BigInteger(6676638540713601793L),
-
-new System.Numerics.BigInteger(1516978153157928056L),
+new System.Numerics.BigInteger(408350006148903948L),
 
 },
     ModelInner = new BigIntegernumericArray2MI
@@ -638,100 +684,166 @@ new System.Numerics.BigInteger(1516978153157928056L),
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(6809001157080650385L),
+new System.Numerics.BigInteger(2892440740611416609L),
 
-new System.Numerics.BigInteger(3590727581674926280L),
+new System.Numerics.BigInteger(5406849204817349781L),
 
-new System.Numerics.BigInteger(1938659292669495351L),
+new System.Numerics.BigInteger(3591725284379604074L),
 
 },
     NullableValue = null,
 },
-    NullableValue = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+    NullableValue = null,
+},
+            new BigIntegernumericArray2M
 {
-new System.Numerics.BigInteger(8999821410085136159L),
+    Id = 118,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+{
+new System.Numerics.BigInteger(4030939515487930968L),
 
-new System.Numerics.BigInteger(6893829019211684677L),
+new System.Numerics.BigInteger(6940417332914889496L),
 
-new System.Numerics.BigInteger(5562110239227979234L),
+new System.Numerics.BigInteger(6886078925840496609L),
 
-new System.Numerics.BigInteger(4879926873541022145L),
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+{
+new System.Numerics.BigInteger(2809618397895611957L),
+
+new System.Numerics.BigInteger(1791782946196729869L),
+
+new System.Numerics.BigInteger(3186744987768908916L),
 
 },
 },
             new BigIntegernumericArray2M
 {
-    Id = 126,
+    Id = 121,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(4426334034431328898L),
+
+new System.Numerics.BigInteger(82402344845335598L),
+
+new System.Numerics.BigInteger(4414402575364682038L),
+
+new System.Numerics.BigInteger(2293879910849223812L),
+
+},
+    ModelInner = new BigIntegernumericArray2MI
+{
+    Id = 56,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(4571963966344696568L),
+new System.Numerics.BigInteger(2414663446760974709L),
 
-new System.Numerics.BigInteger(7165707183613207500L),
+new System.Numerics.BigInteger(8846119033092755147L),
 
-new System.Numerics.BigInteger(9184589404392606645L),
+new System.Numerics.BigInteger(4258067443410068942L),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+{
+new System.Numerics.BigInteger(4365737063009509243L),
+
+new System.Numerics.BigInteger(9029547747267544990L),
+
+new System.Numerics.BigInteger(3433721649851806727L),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(4948845150490563535L),
+
+new System.Numerics.BigInteger(4918271260838609182L),
+
+new System.Numerics.BigInteger(4899258747294502237L),
+
+new System.Numerics.BigInteger(1712067773341781197L),
+
+},
+},
+            new BigIntegernumericArray2M
+{
+    Id = 124,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(9001020066552572565L),
+
+new System.Numerics.BigInteger(6181382307922801636L),
+
+new System.Numerics.BigInteger(7999443127173279531L),
+
+new System.Numerics.BigInteger(2559615676400729543L),
 
 },
     ModelInner = null,
+    NullableValue = null,
+},
+            new BigIntegernumericArray2M
+{
+    Id = 130,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(4897540503674580199L),
+
+new System.Numerics.BigInteger(491555279516765606L),
+
+new System.Numerics.BigInteger(2201696975740837089L),
+
+new System.Numerics.BigInteger(4855841747469662798L),
+
+},
+    ModelInner = new BigIntegernumericArray2MI
+{
+    Id = 60,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+{
+new System.Numerics.BigInteger(7587418575603314457L),
+
+new System.Numerics.BigInteger(8806410028455360915L),
+
+new System.Numerics.BigInteger(2858113003617139456L),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(1973294517124198776L),
+
+new System.Numerics.BigInteger(6404474475741915126L),
+
+new System.Numerics.BigInteger(956055833823898189L),
+
+new System.Numerics.BigInteger(6855518015975695184L),
+
+},
+},
     NullableValue = null,
 },
             new BigIntegernumericArray2M
 {
     Id = 132,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(1279860287632447761L),
-
-new System.Numerics.BigInteger(7331065755823597793L),
-
-new System.Numerics.BigInteger(1747951173289136167L),
-
-new System.Numerics.BigInteger(6059986809124939777L),
-
-},
-    ModelInner = new BigIntegernumericArray2MI
-{
-    Id = 62,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(6890075731739892923L),
-
-new System.Numerics.BigInteger(6800094356627251061L),
-
-new System.Numerics.BigInteger(8400371857223458375L),
-
-new System.Numerics.BigInteger(6856481076452604496L),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(7742979593448460061L),
+new System.Numerics.BigInteger(8111044756422838441L),
 
-new System.Numerics.BigInteger(3424653410627495288L),
+new System.Numerics.BigInteger(1888915631152754909L),
 
-new System.Numerics.BigInteger(5186843170663039919L),
-
-},
-},
-            new BigIntegernumericArray2M
-{
-    Id = 137,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(6120082729759545560L),
-
-new System.Numerics.BigInteger(3891569822219214478L),
-
-new System.Numerics.BigInteger(3468582197017767555L),
-
-new System.Numerics.BigInteger(6623554882212054027L),
+new System.Numerics.BigInteger(638561295831112110L),
 
 },
     ModelInner = null,
@@ -739,122 +851,80 @@ new System.Numerics.BigInteger(6623554882212054027L),
 },
             new BigIntegernumericArray2M
 {
-    Id = 143,
+    Id = 141,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(4562834024002607816L),
+new System.Numerics.BigInteger(1960702470510300774L),
 
-new System.Numerics.BigInteger(5385560132977287272L),
+new System.Numerics.BigInteger(258999552880818002L),
 
-new System.Numerics.BigInteger(3850188675292415742L),
+new System.Numerics.BigInteger(6602841850378648930L),
 
 },
     ModelInner = new BigIntegernumericArray2MI
 {
     Id = 66,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(1163655540283925577L),
+new System.Numerics.BigInteger(5552479436822010473L),
 
-new System.Numerics.BigInteger(6964946544261594020L),
+new System.Numerics.BigInteger(3989809280394955716L),
 
-new System.Numerics.BigInteger(365487088332845635L),
-
-new System.Numerics.BigInteger(1580646697828127004L),
+new System.Numerics.BigInteger(664720474546260544L),
 
 },
     NullableValue = null,
 },
+    NullableValue = null,
+},
+            new BigIntegernumericArray2M
+{
+    Id = 147,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+{
+new System.Numerics.BigInteger(8792325039214483445L),
+
+new System.Numerics.BigInteger(1507348541036494472L),
+
+new System.Numerics.BigInteger(4579123717005671314L),
+
+new System.Numerics.BigInteger(4038391127202462427L),
+
+},
+    ModelInner = null,
     NullableValue = null,
 },
             new BigIntegernumericArray2M
 {
     Id = 149,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(1733090890888109576L),
-
-new System.Numerics.BigInteger(751639472237814382L),
-
-new System.Numerics.BigInteger(4527570515207157641L),
-
-new System.Numerics.BigInteger(5725687039762723496L),
-
-},
-    ModelInner = null,
-    NullableValue = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(1971162230555732962L),
+new System.Numerics.BigInteger(3754885045363659855L),
 
-new System.Numerics.BigInteger(7098664947858620786L),
+new System.Numerics.BigInteger(1925001500450223990L),
 
-new System.Numerics.BigInteger(6576012224448629808L),
-
-},
-},
-            new BigIntegernumericArray2M
-{
-    Id = 151,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(9038478808414007460L),
-
-new System.Numerics.BigInteger(524416194686863448L),
-
-new System.Numerics.BigInteger(2708139028316167055L),
-
-new System.Numerics.BigInteger(4767544184286199518L),
+new System.Numerics.BigInteger(2187506069522130462L),
 
 },
     ModelInner = new BigIntegernumericArray2MI
 {
-    Id = 70,
+    Id = 68,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(6016364199346354392L),
+new System.Numerics.BigInteger(1041699695174542293L),
 
-new System.Numerics.BigInteger(141203724719700254L),
+new System.Numerics.BigInteger(989282392615582503L),
 
-new System.Numerics.BigInteger(4439060782434231090L),
-
-new System.Numerics.BigInteger(576988477889211362L),
+new System.Numerics.BigInteger(4580204398625697034L),
 
 },
     NullableValue = null,
 },
-    NullableValue = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(2781229907844703715L),
-
-new System.Numerics.BigInteger(5659006103787442778L),
-
-new System.Numerics.BigInteger(7761505437443597598L),
-
-new System.Numerics.BigInteger(3113141112500228306L),
-
-},
-},
-            new BigIntegernumericArray2M
-{
-    Id = 152,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
-{
-new System.Numerics.BigInteger(5124719808915010222L),
-
-new System.Numerics.BigInteger(2969137509045938127L),
-
-new System.Numerics.BigInteger(2160290314673682195L),
-
-},
-    ModelInner = null,
     NullableValue = null,
 },
             new BigIntegernumericArray2M
@@ -863,52 +933,11 @@ new System.Numerics.BigInteger(2160290314673682195L),
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(5749518354130778745L),
+new System.Numerics.BigInteger(7680468778457074019L),
 
-new System.Numerics.BigInteger(666421840722104414L),
+new System.Numerics.BigInteger(211989730440638634L),
 
-new System.Numerics.BigInteger(154741808998965379L),
-
-},
-    ModelInner = new BigIntegernumericArray2MI
-{
-    Id = 77,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
-{
-new System.Numerics.BigInteger(1221557038151748439L),
-
-new System.Numerics.BigInteger(5133334694466644724L),
-
-new System.Numerics.BigInteger(1831563462021234441L),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(7052538898586039028L),
-
-new System.Numerics.BigInteger(5461508493025224718L),
-
-new System.Numerics.BigInteger(5994302987926060363L),
-
-new System.Numerics.BigInteger(4564157369608392189L),
-
-},
-},
-            new BigIntegernumericArray2M
-{
-    Id = 162,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
-{
-new System.Numerics.BigInteger(3439872355367749800L),
-
-new System.Numerics.BigInteger(8464017377605667729L),
-
-new System.Numerics.BigInteger(7792026871026348593L),
+new System.Numerics.BigInteger(6273095502625260634L),
 
 },
     ModelInner = null,
@@ -916,82 +945,108 @@ new System.Numerics.BigInteger(7792026871026348593L),
 },
             new BigIntegernumericArray2M
 {
-    Id = 166,
+    Id = 156,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(4137457397732252564L),
+new System.Numerics.BigInteger(7151525483618828852L),
 
-new System.Numerics.BigInteger(3157974871008683248L),
+new System.Numerics.BigInteger(5453557226599737056L),
 
-new System.Numerics.BigInteger(1385811888576289475L),
-
-new System.Numerics.BigInteger(4961214997585871056L),
+new System.Numerics.BigInteger(2453675108932524481L),
 
 },
     ModelInner = new BigIntegernumericArray2MI
 {
-    Id = 83,
+    Id = 73,
     Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(2320136068476317144L),
+new System.Numerics.BigInteger(182907399663915090L),
 
-new System.Numerics.BigInteger(6246174864157536291L),
+new System.Numerics.BigInteger(6330608580919824888L),
 
-new System.Numerics.BigInteger(3326427847574898727L),
-
-new System.Numerics.BigInteger(1716044598645696062L),
+new System.Numerics.BigInteger(8415931616361887009L),
 
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(5334918143476963642L),
+new System.Numerics.BigInteger(7795167364149171827L),
 
-new System.Numerics.BigInteger(7436436821458855656L),
+new System.Numerics.BigInteger(3291616652614108579L),
 
-new System.Numerics.BigInteger(2078409570854359967L),
+new System.Numerics.BigInteger(5260288759143704290L),
 
 },
 },
     NullableValue = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(120824882709784092L),
+new System.Numerics.BigInteger(4573271497164867620L),
 
-new System.Numerics.BigInteger(8391662024337154692L),
+new System.Numerics.BigInteger(3145849689118938269L),
 
-new System.Numerics.BigInteger(6613440698327045829L),
-
-new System.Numerics.BigInteger(8538665527311236567L),
+new System.Numerics.BigInteger(7372377615120573364L),
 
 },
 },
             new BigIntegernumericArray2M
 {
-    Id = 169,
+    Id = 165,
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
 {
-new System.Numerics.BigInteger(223236384791601868L),
+new System.Numerics.BigInteger(9003160887041289239L),
 
-new System.Numerics.BigInteger(6888067162111539738L),
+new System.Numerics.BigInteger(2006799694239933393L),
 
-new System.Numerics.BigInteger(6710359278431638612L),
+new System.Numerics.BigInteger(7847136353014768750L),
 
 },
     ModelInner = null,
     NullableValue = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(5098753138732353307L),
+new System.Numerics.BigInteger(4564675826766596334L),
 
-new System.Numerics.BigInteger(8755967719860221823L),
+new System.Numerics.BigInteger(6074899119520946709L),
 
-new System.Numerics.BigInteger(933838695147262894L),
+new System.Numerics.BigInteger(1980211053804557804L),
+
+new System.Numerics.BigInteger(967692901253580935L),
 
 },
+},
+            new BigIntegernumericArray2M
+{
+    Id = 174,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+{
+new System.Numerics.BigInteger(752663518849270761L),
+
+new System.Numerics.BigInteger(3304771042153296279L),
+
+new System.Numerics.BigInteger(4380594786990725306L),
+
+},
+    ModelInner = new BigIntegernumericArray2MI
+{
+    Id = 81,
+    Value = 
+new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
+{
+new System.Numerics.BigInteger(7154821548131899352L),
+
+new System.Numerics.BigInteger(4406665560170894587L),
+
+new System.Numerics.BigInteger(320867591078668474L),
+
+},
+    NullableValue = null,
+},
+    NullableValue = null,
 },
             new BigIntegernumericArray2M
 {
@@ -999,113 +1054,13 @@ new System.Numerics.BigInteger(933838695147262894L),
     Value = 
 new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
 {
-new System.Numerics.BigInteger(114607896419905038L),
+new System.Numerics.BigInteger(5153983397158385360L),
 
-new System.Numerics.BigInteger(8078108181116791985L),
+new System.Numerics.BigInteger(5418045072118499293L),
 
-new System.Numerics.BigInteger(3925456057555084157L),
+new System.Numerics.BigInteger(7238532720804907370L),
 
-new System.Numerics.BigInteger(609952006987656200L),
-
-},
-    ModelInner = new BigIntegernumericArray2MI
-{
-    Id = 91,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
-{
-new System.Numerics.BigInteger(6986172420480669900L),
-
-new System.Numerics.BigInteger(8446079108209948635L),
-
-new System.Numerics.BigInteger(3156442136280624767L),
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new BigIntegernumericArray2M
-{
-    Id = 183,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
-{
-new System.Numerics.BigInteger(899254756962688159L),
-
-new System.Numerics.BigInteger(1025256565593634557L),
-
-new System.Numerics.BigInteger(8930743294463364855L),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(7176437897887725918L),
-
-new System.Numerics.BigInteger(2663507303762358354L),
-
-new System.Numerics.BigInteger(8514840745993425141L),
-
-new System.Numerics.BigInteger(6937079857091239946L),
-
-},
-},
-            new BigIntegernumericArray2M
-{
-    Id = 192,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(4449296750131439784L),
-
-new System.Numerics.BigInteger(5143899153959895560L),
-
-new System.Numerics.BigInteger(1457957409883871051L),
-
-new System.Numerics.BigInteger(8608653069935941769L),
-
-},
-    ModelInner = new BigIntegernumericArray2MI
-{
-    Id = 97,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
-{
-new System.Numerics.BigInteger(5636218519280657146L),
-
-new System.Numerics.BigInteger(3941801956427797034L),
-
-new System.Numerics.BigInteger(9038526626881385660L),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(4)
-{
-new System.Numerics.BigInteger(5938035116503371746L),
-
-new System.Numerics.BigInteger(602320982753725326L),
-
-new System.Numerics.BigInteger(650146006580141059L),
-
-new System.Numerics.BigInteger(391265279049417982L),
-
-},
-},
-    NullableValue = null,
-},
-            new BigIntegernumericArray2M
-{
-    Id = 200,
-    Value = 
-new System.Collections.Generic.List<System.Numerics.BigInteger>(3)
-{
-new System.Numerics.BigInteger(1414707234372224682L),
-
-new System.Numerics.BigInteger(4242093934760142313L),
-
-new System.Numerics.BigInteger(4101383376541414968L),
+new System.Numerics.BigInteger(9028237377158324870L),
 
 },
     ModelInner = null,
@@ -2151,12 +2106,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 51;
+                parametr1.Value = 156;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 71;
+                parametr2.Value = 141;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2192,108 +2147,30 @@ ORDER BY
                 var secondItems1 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems2 = new List<FlatBigIntegernumericArray2M>();
                 await ((IBigIntegerListnumericArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(26));
-                Assert.That(firstItems2, Has.Count.EqualTo(26));
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[8],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[9],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[10],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[11],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[12],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[13],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[14],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[15],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[16],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[17],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[18],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[19],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[20],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[21],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[22],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[23],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[24],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[25],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(23));
-                Assert.That(secondItems2, Has.Count.EqualTo(23));
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[7],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[8],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[9],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[10],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[11],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[12],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[13],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[14],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[14],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[15],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[15],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[16],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[16],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[17],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[17],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[18],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[18],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[19],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[19],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[20],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[20],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[21],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[21],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[22],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[22],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(3));
+                Assert.That(firstItems2, Has.Count.EqualTo(3));
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(7));
+                Assert.That(secondItems2, Has.Count.EqualTo(7));
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[34], false);
             }
         }
 
@@ -2304,12 +2181,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 152;
+                parametr1.Value = 46;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 126;
+                parametr2.Value = 124;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2341,39 +2218,69 @@ ORDER BY
                 var firstItems2 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems1 = new List<FlatBigIntegernumericArray2M>();
                 await ((IBigIntegerListnumericArray)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(8));
-                Assert.That(firstItems2, Has.Count.EqualTo(8));
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(14));
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(25));
+                Assert.That(firstItems2, Has.Count.EqualTo(25));
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[8],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[9],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[10],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[11],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[12],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[13],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[14],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[15],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[16],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[17],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[18],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[19],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[20],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[21],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[22],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[23],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[24],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(10));
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[34], false);
             }
         }
 
@@ -2425,12 +2332,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 100;
+                parametr1.Value = 34;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 9;
+                parametr2.Value = 121;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2466,114 +2373,88 @@ ORDER BY
                 var secondItems1 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems2 = new List<FlatBigIntegernumericArray2M>();
                  ((IBigIntegerListnumericArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(18));
-                Assert.That(firstItems2, Has.Count.EqualTo(18));
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[8],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[9],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[10],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[11],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[12],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[13],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[14],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[15],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[16],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[17],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(34));
-                Assert.That(secondItems2, Has.Count.EqualTo(34));
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[1], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[1], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[2], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[2], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[3], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[3], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[4], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[4], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[5], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[5], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[6], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[6], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[7],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[8],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[9],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[10],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[11],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[12],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[13],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[14],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[14],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[15],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[15],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[16],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[16],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[17],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[17],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[18],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[18],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[19],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[19],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[20],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[20],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[21],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[21],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[22],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[22],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[23],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[23],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[24],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[24],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[25],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[25],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[26],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[26],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[27],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[27],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[28],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[28],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[29],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[29],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[30],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[30],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[31],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[31],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[32],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[32],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[33],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[33],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(28));
+                Assert.That(firstItems2, Has.Count.EqualTo(28));
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[7], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[7], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[8],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[9],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[10],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[11],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[12],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[13],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[14],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[15],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[16],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[17],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[18],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[19],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[20],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[21],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[22],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[23],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[24],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[25],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[26],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[26],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[27],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[27],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(11));
+                Assert.That(secondItems2, Has.Count.EqualTo(11));
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[7],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[8],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[9],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[10],_testData[34], false);
             }
         }
 
@@ -2584,12 +2465,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 74;
+                parametr1.Value = 20;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 137;
+                parametr2.Value = 75;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2621,65 +2502,91 @@ ORDER BY
                 var firstItems2 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems1 = new List<FlatBigIntegernumericArray2M>();
                  ((IBigIntegerListnumericArray)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(22));
-                Assert.That(firstItems2, Has.Count.EqualTo(22));
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[8],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[9],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[10],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[11],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[12],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[13],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[14],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[15],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[16],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[17],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[18],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[19],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[20],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[21],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(12));
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(32));
+                Assert.That(firstItems2, Has.Count.EqualTo(32));
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[3], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[3], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[4], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[4], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[5], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[5], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[6], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[6], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[7], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[7], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[8],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[9],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[10],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[11],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[12],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[13],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[14],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[15],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[16],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[17],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[18],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[19],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[20],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[21],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[22],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[23],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[24],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[25],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[26],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[26],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[27],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[27],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[28],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[28],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[29],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[29],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[30],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[30],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[31],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[31],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(18));
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[14],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[15],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[16],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[17],_testData[34], false);
             }
         }
 
@@ -2767,12 +2674,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 66;
+                parametr1.Value = 24;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 15;
+                parametr2.Value = 24;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2799,245 +2706,6 @@ ORDER BY
 ";
                 int resultIndex = 0;
                 foreach(var batchResult in await ((IBigIntegerListnumericArray)this).DbConnectionSTDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2))
-                {
-                    if(++resultIndex == 1)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
-
-                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[9],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[10],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[11],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[12],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[13],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[14],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[15],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[16],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[17],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[18],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[19],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[20],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[21],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[22],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[23],_testData[34], false);
-                        continue;
-                    }                    
-
-                    if(resultIndex == 2)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(33));
-
-                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[2], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[3], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[4], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[5], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[6], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[9],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[10],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[11],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[12],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[13],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[14],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[15],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[16],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[17],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[18],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[19],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[20],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[21],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[22],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[23],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[24],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[25],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[26],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[27],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[28],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[29],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[30],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[31],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[32],_testData[34], false);
-                        continue;
-                    }
-                    
-                    Assert.Fail("Unexpected batch count");
-                }
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelDynParBatchTestAsync()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 27;
-                parametr1.DbType = (System.Data.DbType)(11);
-                parametr1.ParameterName = "id";
-
-                var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 166;
-                parametr2.DbType = (System.Data.DbType)(11);
-                parametr2.ParameterName = "id";
-                var query1 = @"
-SELECT
-    m.id,
-    m.value,
-    m.nullablevalue
-FROM public.bigintegernumericarray2m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var query2 = @"
-SELECT
-    m.id AS item1id,
-    m.value AS item1value,
-    m.nullablevalue AS item1nullablevalue,
-    m.id AS item2id,
-    m.value AS item2value,
-    m.nullablevalue AS item2nullablevalue
-FROM public.bigintegernumericarray2m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var firstItems1 = new List<FlatBigIntegernumericArray2M>();
-                var secondItems1 = new List<FlatBigIntegernumericArray2M>();
-                var secondItems2 = new List<FlatBigIntegernumericArray2M>();
-                await ((IBigIntegerListnumericArray)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(31));
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[4], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[5], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[6], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[26],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[27],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[28],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[29],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[30],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(5));
-                Assert.That(secondItems2, Has.Count.EqualTo(5));
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[34], false);
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelDynParTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var query = @"
-SELECT
-    m.id,
-    m.value,
-    m.nullablevalue
-FROM public.bigintegernumericarray2m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 0;
-                parametr1.DbType = (System.Data.DbType)(11);
-                parametr1.ParameterName = "id";
-                var models = ((IBigIntegerListnumericArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
-                Assert.That(models, Has.Count.EqualTo(35));
-                for (int i = 0; i < 35; i++)
-                {
-                    FlatBigIntegernumericArray2M.AssertModel(models[i],_testData[i], false);
-                }
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionSTDynQuerySelectModelDynParBatchTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 27;
-                parametr1.DbType = (System.Data.DbType)(11);
-                parametr1.ParameterName = "id";
-
-                var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 143;
-                parametr2.DbType = (System.Data.DbType)(11);
-                parametr2.ParameterName = "id";
-                var query1 = @"
-SELECT
-    m.id,
-    m.value,
-    m.nullablevalue
-FROM public.bigintegernumericarray2m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var query2 = @"
-SELECT
-    m.id,
-    m.value,
-    m.nullablevalue
-FROM public.bigintegernumericarray2m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                int resultIndex = 0;
-                foreach(var batchResult in  ((IBigIntegerListnumericArray)this).DbConnectionSTDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2))
                 {
                     if(++resultIndex == 1)
                     {
@@ -3081,19 +2749,263 @@ ORDER BY
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
+                        Assert.That(models, Has.Count.EqualTo(31));
 
-                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[9],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[10],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[4], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[5], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[6], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[7], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[9],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[10],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[11],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[12],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[13],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[14],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[15],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[16],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[17],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[18],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[19],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[20],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[21],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[22],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[23],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[24],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[25],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[26],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[27],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[28],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[29],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[30],_testData[34], false);
+                        continue;
+                    }
+                    
+                    Assert.Fail("Unexpected batch count");
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelDynParBatchTestAsync()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 132;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 92;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.bigintegernumericarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.bigintegernumericarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatBigIntegernumericArray2M>();
+                var secondItems1 = new List<FlatBigIntegernumericArray2M>();
+                var secondItems2 = new List<FlatBigIntegernumericArray2M>();
+                await ((IBigIntegerListnumericArray)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(8));
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(16));
+                Assert.That(secondItems2, Has.Count.EqualTo(16));
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[7],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[8],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[9],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[10],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[12],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[13],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[14],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[14],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[15],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[15],_testData[34], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelDynParTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.bigintegernumericarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 0;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+                var models = ((IBigIntegerListnumericArray)this).DbConnectionDynQuerySelectModelDynPar(connection,  query, [parametr1]);
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
+                {
+                    FlatBigIntegernumericArray2M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSTDynQuerySelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 118;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 24;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.bigintegernumericarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.bigintegernumericarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                int resultIndex = 0;
+                foreach(var batchResult in  ((IBigIntegerListnumericArray)this).DbConnectionSTDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2))
+                {
+                    if(++resultIndex == 1)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(12));
+
+                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[9],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[10],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[11],_testData[34], false);
+                        continue;
+                    }                    
+
+                    if(resultIndex == 2)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(31));
+
+                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[4], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[5], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[6], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[7], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[9],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[10],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[11],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[12],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[13],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[14],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[15],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[16],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[17],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[18],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[19],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[20],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[21],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[22],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[23],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[24],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[25],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[26],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[27],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[28],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[29],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[30],_testData[34], false);
                         continue;
                     }
                     
@@ -3109,12 +3021,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 109;
+                parametr1.Value = 72;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 137;
+                parametr2.Value = 24;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -3146,50 +3058,90 @@ ORDER BY
                 var secondItems1 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems2 = new List<FlatBigIntegernumericArray2M>();
                  ((IBigIntegerListnumericArray)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(17));
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(12));
-                Assert.That(secondItems2, Has.Count.EqualTo(12));
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[7],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[8],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[9],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[10],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[11],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(19));
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(31));
+                Assert.That(secondItems2, Has.Count.EqualTo(31));
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[4], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[4], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[5], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[5], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[6], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[6], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[7], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[7], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[7],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[8],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[9],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[10],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[11],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[12],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[13],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[14],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[14],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[15],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[15],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[16],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[16],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[17],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[17],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[18],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[18],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[19],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[19],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[20],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[20],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[21],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[21],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[22],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[22],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[23],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[23],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[24],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[24],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[25],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[25],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[26],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[26],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[27],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[27],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[28],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[28],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[29],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[29],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[30],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[30],_testData[34], false);
             }
         }
 
@@ -3269,12 +3221,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 119;
+                parametr1.Value = 51;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 149;
+                parametr2.Value = 130;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -3283,41 +3235,47 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(15));
+                        Assert.That(models, Has.Count.EqualTo(22));
 
-                        BigIntegernumericArray2M.AssertModel(models[0],_testData[20], false);
-                        BigIntegernumericArray2M.AssertModel(models[1],_testData[21], false);
-                        BigIntegernumericArray2M.AssertModel(models[2],_testData[22], false);
-                        BigIntegernumericArray2M.AssertModel(models[3],_testData[23], false);
-                        BigIntegernumericArray2M.AssertModel(models[4],_testData[24], false);
-                        BigIntegernumericArray2M.AssertModel(models[5],_testData[25], false);
-                        BigIntegernumericArray2M.AssertModel(models[6],_testData[26], false);
-                        BigIntegernumericArray2M.AssertModel(models[7],_testData[27], false);
-                        BigIntegernumericArray2M.AssertModel(models[8],_testData[28], false);
-                        BigIntegernumericArray2M.AssertModel(models[9],_testData[29], false);
-                        BigIntegernumericArray2M.AssertModel(models[10],_testData[30], false);
-                        BigIntegernumericArray2M.AssertModel(models[11],_testData[31], false);
-                        BigIntegernumericArray2M.AssertModel(models[12],_testData[32], false);
-                        BigIntegernumericArray2M.AssertModel(models[13],_testData[33], false);
-                        BigIntegernumericArray2M.AssertModel(models[14],_testData[34], false);
+                        BigIntegernumericArray2M.AssertModel(models[0],_testData[13], false);
+                        BigIntegernumericArray2M.AssertModel(models[1],_testData[14], false);
+                        BigIntegernumericArray2M.AssertModel(models[2],_testData[15], false);
+                        BigIntegernumericArray2M.AssertModel(models[3],_testData[16], false);
+                        BigIntegernumericArray2M.AssertModel(models[4],_testData[17], false);
+                        BigIntegernumericArray2M.AssertModel(models[5],_testData[18], false);
+                        BigIntegernumericArray2M.AssertModel(models[6],_testData[19], false);
+                        BigIntegernumericArray2M.AssertModel(models[7],_testData[20], false);
+                        BigIntegernumericArray2M.AssertModel(models[8],_testData[21], false);
+                        BigIntegernumericArray2M.AssertModel(models[9],_testData[22], false);
+                        BigIntegernumericArray2M.AssertModel(models[10],_testData[23], false);
+                        BigIntegernumericArray2M.AssertModel(models[11],_testData[24], false);
+                        BigIntegernumericArray2M.AssertModel(models[12],_testData[25], false);
+                        BigIntegernumericArray2M.AssertModel(models[13],_testData[26], false);
+                        BigIntegernumericArray2M.AssertModel(models[14],_testData[27], false);
+                        BigIntegernumericArray2M.AssertModel(models[15],_testData[28], false);
+                        BigIntegernumericArray2M.AssertModel(models[16],_testData[29], false);
+                        BigIntegernumericArray2M.AssertModel(models[17],_testData[30], false);
+                        BigIntegernumericArray2M.AssertModel(models[18],_testData[31], false);
+                        BigIntegernumericArray2M.AssertModel(models[19],_testData[32], false);
+                        BigIntegernumericArray2M.AssertModel(models[20],_testData[33], false);
+                        BigIntegernumericArray2M.AssertModel(models[21],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
+                        Assert.That(models, Has.Count.EqualTo(9));
 
-                        BigIntegernumericArray2M.AssertModel(models[0],_testData[25], false);
-                        BigIntegernumericArray2M.AssertModel(models[1],_testData[26], false);
-                        BigIntegernumericArray2M.AssertModel(models[2],_testData[27], false);
-                        BigIntegernumericArray2M.AssertModel(models[3],_testData[28], false);
-                        BigIntegernumericArray2M.AssertModel(models[4],_testData[29], false);
-                        BigIntegernumericArray2M.AssertModel(models[5],_testData[30], false);
-                        BigIntegernumericArray2M.AssertModel(models[6],_testData[31], false);
-                        BigIntegernumericArray2M.AssertModel(models[7],_testData[32], false);
-                        BigIntegernumericArray2M.AssertModel(models[8],_testData[33], false);
-                        BigIntegernumericArray2M.AssertModel(models[9],_testData[34], false);
+                        BigIntegernumericArray2M.AssertModel(models[0],_testData[26], false);
+                        BigIntegernumericArray2M.AssertModel(models[1],_testData[27], false);
+                        BigIntegernumericArray2M.AssertModel(models[2],_testData[28], false);
+                        BigIntegernumericArray2M.AssertModel(models[3],_testData[29], false);
+                        BigIntegernumericArray2M.AssertModel(models[4],_testData[30], false);
+                        BigIntegernumericArray2M.AssertModel(models[5],_testData[31], false);
+                        BigIntegernumericArray2M.AssertModel(models[6],_testData[32], false);
+                        BigIntegernumericArray2M.AssertModel(models[7],_testData[33], false);
+                        BigIntegernumericArray2M.AssertModel(models[8],_testData[34], false);
                         continue;
                     }
                     
@@ -3352,12 +3310,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 100;
+                parametr1.Value = 149;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 58;
+                parametr2.Value = 118;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -3366,59 +3324,33 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
+                        Assert.That(models, Has.Count.EqualTo(5));
 
-                        BigIntegernumericArray2M.AssertModel(models[0],_testData[17], false);
-                        BigIntegernumericArray2M.AssertModel(models[1],_testData[18], false);
-                        BigIntegernumericArray2M.AssertModel(models[2],_testData[19], false);
-                        BigIntegernumericArray2M.AssertModel(models[3],_testData[20], false);
-                        BigIntegernumericArray2M.AssertModel(models[4],_testData[21], false);
-                        BigIntegernumericArray2M.AssertModel(models[5],_testData[22], false);
-                        BigIntegernumericArray2M.AssertModel(models[6],_testData[23], false);
-                        BigIntegernumericArray2M.AssertModel(models[7],_testData[24], false);
-                        BigIntegernumericArray2M.AssertModel(models[8],_testData[25], false);
-                        BigIntegernumericArray2M.AssertModel(models[9],_testData[26], false);
-                        BigIntegernumericArray2M.AssertModel(models[10],_testData[27], false);
-                        BigIntegernumericArray2M.AssertModel(models[11],_testData[28], false);
-                        BigIntegernumericArray2M.AssertModel(models[12],_testData[29], false);
-                        BigIntegernumericArray2M.AssertModel(models[13],_testData[30], false);
-                        BigIntegernumericArray2M.AssertModel(models[14],_testData[31], false);
-                        BigIntegernumericArray2M.AssertModel(models[15],_testData[32], false);
-                        BigIntegernumericArray2M.AssertModel(models[16],_testData[33], false);
-                        BigIntegernumericArray2M.AssertModel(models[17],_testData[34], false);
+                        BigIntegernumericArray2M.AssertModel(models[0],_testData[30], false);
+                        BigIntegernumericArray2M.AssertModel(models[1],_testData[31], false);
+                        BigIntegernumericArray2M.AssertModel(models[2],_testData[32], false);
+                        BigIntegernumericArray2M.AssertModel(models[3],_testData[33], false);
+                        BigIntegernumericArray2M.AssertModel(models[4],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
+                        Assert.That(models, Has.Count.EqualTo(12));
 
-                        BigIntegernumericArray2M.AssertModel(models[0],_testData[10], false);
-                        BigIntegernumericArray2M.AssertModel(models[1],_testData[11], false);
-                        BigIntegernumericArray2M.AssertModel(models[2],_testData[12], false);
-                        BigIntegernumericArray2M.AssertModel(models[3],_testData[13], false);
-                        BigIntegernumericArray2M.AssertModel(models[4],_testData[14], false);
-                        BigIntegernumericArray2M.AssertModel(models[5],_testData[15], false);
-                        BigIntegernumericArray2M.AssertModel(models[6],_testData[16], false);
-                        BigIntegernumericArray2M.AssertModel(models[7],_testData[17], false);
-                        BigIntegernumericArray2M.AssertModel(models[8],_testData[18], false);
-                        BigIntegernumericArray2M.AssertModel(models[9],_testData[19], false);
-                        BigIntegernumericArray2M.AssertModel(models[10],_testData[20], false);
-                        BigIntegernumericArray2M.AssertModel(models[11],_testData[21], false);
-                        BigIntegernumericArray2M.AssertModel(models[12],_testData[22], false);
-                        BigIntegernumericArray2M.AssertModel(models[13],_testData[23], false);
-                        BigIntegernumericArray2M.AssertModel(models[14],_testData[24], false);
-                        BigIntegernumericArray2M.AssertModel(models[15],_testData[25], false);
-                        BigIntegernumericArray2M.AssertModel(models[16],_testData[26], false);
-                        BigIntegernumericArray2M.AssertModel(models[17],_testData[27], false);
-                        BigIntegernumericArray2M.AssertModel(models[18],_testData[28], false);
-                        BigIntegernumericArray2M.AssertModel(models[19],_testData[29], false);
-                        BigIntegernumericArray2M.AssertModel(models[20],_testData[30], false);
-                        BigIntegernumericArray2M.AssertModel(models[21],_testData[31], false);
-                        BigIntegernumericArray2M.AssertModel(models[22],_testData[32], false);
-                        BigIntegernumericArray2M.AssertModel(models[23],_testData[33], false);
-                        BigIntegernumericArray2M.AssertModel(models[24],_testData[34], false);
+                        BigIntegernumericArray2M.AssertModel(models[0],_testData[23], false);
+                        BigIntegernumericArray2M.AssertModel(models[1],_testData[24], false);
+                        BigIntegernumericArray2M.AssertModel(models[2],_testData[25], false);
+                        BigIntegernumericArray2M.AssertModel(models[3],_testData[26], false);
+                        BigIntegernumericArray2M.AssertModel(models[4],_testData[27], false);
+                        BigIntegernumericArray2M.AssertModel(models[5],_testData[28], false);
+                        BigIntegernumericArray2M.AssertModel(models[6],_testData[29], false);
+                        BigIntegernumericArray2M.AssertModel(models[7],_testData[30], false);
+                        BigIntegernumericArray2M.AssertModel(models[8],_testData[31], false);
+                        BigIntegernumericArray2M.AssertModel(models[9],_testData[32], false);
+                        BigIntegernumericArray2M.AssertModel(models[10],_testData[33], false);
+                        BigIntegernumericArray2M.AssertModel(models[11],_testData[34], false);
                         continue;
                     }
                     
@@ -3553,121 +3485,73 @@ ORDER BY
                 var firstItems2 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems1 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems2 = new List<FlatBigIntegernumericArray2M>();
-                await ((IBigIntegerListnumericArray)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 15, query1, 74, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(33));
-                Assert.That(firstItems2, Has.Count.EqualTo(33));
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[2], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[2], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[3], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[3], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[4], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[4], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[5], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[5], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[6], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[6], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[8],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[9],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[10],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[11],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[12],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[13],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[14],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[15],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[16],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[17],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[18],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[19],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[20],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[21],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[22],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[23],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[24],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[25],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[26],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[26],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[27],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[27],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[28],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[28],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[29],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[29],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[30],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[30],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[31],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[31],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[32],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[32],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(22));
-                Assert.That(secondItems2, Has.Count.EqualTo(22));
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[7],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[8],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[9],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[10],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[11],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[12],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[13],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[14],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[14],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[15],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[15],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[16],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[16],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[17],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[17],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[18],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[18],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[19],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[19],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[20],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[20],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[21],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[21],_testData[34], false);
+                await ((IBigIntegerListnumericArray)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 141, query1, 47, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(7));
+                Assert.That(firstItems2, Has.Count.EqualTo(7));
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(24));
+                Assert.That(secondItems2, Has.Count.EqualTo(24));
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[7],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[8],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[9],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[10],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[11],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[12],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[13],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[14],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[14],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[15],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[15],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[16],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[16],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[17],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[17],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[18],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[18],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[19],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[19],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[20],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[20],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[21],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[21],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[22],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[22],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[23],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[23],_testData[34], false);
             }
         }
 
@@ -3705,75 +3589,77 @@ ORDER BY
                 var firstItems1 = new List<FlatBigIntegernumericArray2M>();
                 var firstItems2 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems1 = new List<FlatBigIntegernumericArray2M>();
-                await ((IBigIntegerListnumericArray)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 45, query1, 151, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(28));
-                Assert.That(firstItems2, Has.Count.EqualTo(28));
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[8],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[9],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[10],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[11],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[12],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[13],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[14],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[15],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[16],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[17],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[18],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[19],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[20],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[21],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[22],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[23],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[24],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[25],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[26],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[26],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[27],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[27],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(9));
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[34], false);
+                await ((IBigIntegerListnumericArray)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 46, query1, 84, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(25));
+                Assert.That(firstItems2, Has.Count.EqualTo(25));
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[8],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[9],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[10],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[11],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[12],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[13],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[14],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[15],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[16],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[17],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[18],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[19],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[20],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[21],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[22],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[23],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[24],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(17));
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[14],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[15],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[16],_testData[34], false);
             }
         }
 
@@ -3852,35 +3738,109 @@ ORDER BY
                 var firstItems2 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems1 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems2 = new List<FlatBigIntegernumericArray2M>();
-                 ((IBigIntegerListnumericArray)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 162, query1, 162, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(6));
-                Assert.That(firstItems2, Has.Count.EqualTo(6));
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(6));
-                Assert.That(secondItems2, Has.Count.EqualTo(6));
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[34], false);
+                 ((IBigIntegerListnumericArray)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 9, query1, 94, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(34));
+                Assert.That(firstItems2, Has.Count.EqualTo(34));
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[1], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[1], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[2], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[2], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[3], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[3], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[4], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[4], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[5], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[5], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[6], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[6], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[7], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[7], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[8],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[9],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[10],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[11],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[12],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[13],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[14],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[15],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[16],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[17],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[18],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[19],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[20],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[21],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[22],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[23],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[24],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[25],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[26],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[26],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[27],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[27],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[28],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[28],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[29],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[29],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[30],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[30],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[31],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[31],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[32],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[32],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[33],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[33],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(15));
+                Assert.That(secondItems2, Has.Count.EqualTo(15));
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[7],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[8],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[9],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[11],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[12],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[13],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[14],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[14],_testData[34], false);
             }
         }
 
@@ -3918,86 +3878,73 @@ ORDER BY
                 var firstItems1 = new List<FlatBigIntegernumericArray2M>();
                 var firstItems2 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems1 = new List<FlatBigIntegernumericArray2M>();
-                 ((IBigIntegerListnumericArray)this).DbConnectionMMDynQuerySelectModelBatch(connection, 45, query1, 86, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(28));
-                Assert.That(firstItems2, Has.Count.EqualTo(28));
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[8],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[9],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[10],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[11],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[12],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[13],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[14],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[15],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[16],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[17],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[18],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[19],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[20],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[21],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[22],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[23],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[24],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[25],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[26],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[26],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[27],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[27],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(20));
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[14],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[15],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[16],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[17],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[18],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[19],_testData[34], false);
+                 ((IBigIntegerListnumericArray)this).DbConnectionMMDynQuerySelectModelBatch(connection, 37, query1, 130, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(27));
+                Assert.That(firstItems2, Has.Count.EqualTo(27));
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[0],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[1],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[2],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[3],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[4],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[5],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[6],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[7],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[8],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[9],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[10],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[11],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[12],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[13],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[14],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[15],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[16],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[17],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[18],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[19],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[20],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[21],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[22],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[23],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[24],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[25],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[26],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems2[26],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(9));
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[34], false);
             }
         }
 
@@ -4107,60 +4054,47 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IBigIntegerListnumericArray)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 27, query1, 152, query2))
+                foreach(var batchResult in await ((IBigIntegerListnumericArray)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 121, query1, 94, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(31));
+                        Assert.That(models, Has.Count.EqualTo(11));
 
-                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[4], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[5], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[6], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[9],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[10],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[11],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[12],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[13],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[14],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[15],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[16],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[17],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[18],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[19],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[20],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[21],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[22],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[23],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[24],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[25],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[26],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[27],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[28],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[29],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[30],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[9],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[10],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
+                        Assert.That(models, Has.Count.EqualTo(15));
 
-                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[9],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[10],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[11],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[12],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[13],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[14],_testData[34], false);
                         continue;
                     }
                     
@@ -4203,103 +4137,56 @@ ORDER BY
                 var firstItems1 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems1 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems2 = new List<FlatBigIntegernumericArray2M>();
-                await ((IBigIntegerListnumericArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 41, query1, 22, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(29));
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[6], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[26],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[27],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[28],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(32));
-                Assert.That(secondItems2, Has.Count.EqualTo(32));
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[3], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[3], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[4], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[4], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[5], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[5], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[6], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[6], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[7],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[8],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[9],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[10],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[11],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[12],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[13],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[14],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[14],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[15],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[15],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[16],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[16],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[17],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[17],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[18],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[18],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[19],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[19],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[20],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[20],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[21],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[21],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[22],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[22],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[23],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[23],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[24],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[24],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[25],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[25],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[26],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[26],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[27],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[27],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[28],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[28],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[29],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[29],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[30],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[30],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[31],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[31],_testData[34], false);
+                await ((IBigIntegerListnumericArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 34, query1, 130, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(28));
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[7], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[26],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[27],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(9));
+                Assert.That(secondItems2, Has.Count.EqualTo(9));
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[7],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[8],_testData[34], false);
             }
         }
 
@@ -4358,72 +4245,57 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IBigIntegerListnumericArray)this).DbConnectionSTDynQuerySelectModelBatch(connection, 71, query1, 45, query2))
+                foreach(var batchResult in  ((IBigIntegerListnumericArray)this).DbConnectionSTDynQuerySelectModelBatch(connection, 37, query1, 130, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
+                        Assert.That(models, Has.Count.EqualTo(27));
 
-                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[9],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[10],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[11],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[12],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[13],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[14],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[15],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[16],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[17],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[18],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[19],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[20],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[21],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[22],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[9],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[10],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[11],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[12],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[13],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[14],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[15],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[16],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[17],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[18],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[19],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[20],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[21],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[22],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[23],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[24],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[25],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[26],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(28));
+                        Assert.That(models, Has.Count.EqualTo(9));
 
-                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[7], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[9],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[10],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[11],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[12],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[13],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[14],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[15],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[16],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[17],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[18],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[19],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[20],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[21],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[22],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[23],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[24],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[25],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[26],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(models[27],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[0],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[1],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[2],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[3],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[4],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[5],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[6],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[7],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(models[8],_testData[34], false);
                         continue;
                     }
                     
@@ -4466,79 +4338,45 @@ ORDER BY
                 var firstItems1 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems1 = new List<FlatBigIntegernumericArray2M>();
                 var secondItems2 = new List<FlatBigIntegernumericArray2M>();
-                 ((IBigIntegerListnumericArray)this).DbConnectionDynQuerySelectModelBatch(connection, 48, query1, 81, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(27));
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[8], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[9], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[10], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[11], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[12], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[13], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[26],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(21));
-                Assert.That(secondItems2, Has.Count.EqualTo(21));
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[14], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[15], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[16], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[3],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[3],_testData[17], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[4],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[4],_testData[18], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[5],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[5],_testData[19], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[6],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[6],_testData[20], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[7],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[7],_testData[21], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[8],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[8],_testData[22], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[9],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[9],_testData[23], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[10],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[10],_testData[24], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[11],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[11],_testData[25], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[12],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[12],_testData[26], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[13],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[13],_testData[27], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[14],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[14],_testData[28], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[15],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[15],_testData[29], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[16],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[16],_testData[30], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[17],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[17],_testData[31], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[18],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[18],_testData[32], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[19],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[19],_testData[33], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[20],_testData[34], false);
-                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[20],_testData[34], false);
+                 ((IBigIntegerListnumericArray)this).DbConnectionDynQuerySelectModelBatch(connection, 31, query1, 156, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(29));
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[0],_testData[6], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[1],_testData[7], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[2],_testData[8], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[3],_testData[9], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[4],_testData[10], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[5],_testData[11], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[6],_testData[12], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[7],_testData[13], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[8],_testData[14], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[9],_testData[15], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[10],_testData[16], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[11],_testData[17], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[12],_testData[18], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[13],_testData[19], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[14],_testData[20], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[15],_testData[21], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[16],_testData[22], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[17],_testData[23], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[18],_testData[24], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[19],_testData[25], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[20],_testData[26], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[21],_testData[27], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[22],_testData[28], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[23],_testData[29], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[24],_testData[30], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[25],_testData[31], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[26],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[27],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(firstItems1[28],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(3));
+                Assert.That(secondItems2, Has.Count.EqualTo(3));
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[0],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[0],_testData[32], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[1],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[1],_testData[33], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems1[2],_testData[34], false);
+                        FlatBigIntegernumericArray2M.AssertModel(secondItems2[2],_testData[34], false);
             }
         }
 
@@ -4618,39 +4456,79 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IBigIntegerListnumericArray)this).DbConnectionSTSelectModelBatchAsync(connection, 51, 9))
+                foreach(var batchResult in await ((IBigIntegerListnumericArray)this).DbConnectionSTSelectModelBatchAsync(connection, 92, 165))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(26));
+                        Assert.That(models, Has.Count.EqualTo(16));
 
-                        BigIntegernumericArray2M.AssertModel(models[0],_testData[9], false);
-                        BigIntegernumericArray2M.AssertModel(models[1],_testData[10], false);
-                        BigIntegernumericArray2M.AssertModel(models[2],_testData[11], false);
-                        BigIntegernumericArray2M.AssertModel(models[3],_testData[12], false);
-                        BigIntegernumericArray2M.AssertModel(models[4],_testData[13], false);
-                        BigIntegernumericArray2M.AssertModel(models[5],_testData[14], false);
-                        BigIntegernumericArray2M.AssertModel(models[6],_testData[15], false);
-                        BigIntegernumericArray2M.AssertModel(models[7],_testData[16], false);
-                        BigIntegernumericArray2M.AssertModel(models[8],_testData[17], false);
-                        BigIntegernumericArray2M.AssertModel(models[9],_testData[18], false);
-                        BigIntegernumericArray2M.AssertModel(models[10],_testData[19], false);
-                        BigIntegernumericArray2M.AssertModel(models[11],_testData[20], false);
-                        BigIntegernumericArray2M.AssertModel(models[12],_testData[21], false);
-                        BigIntegernumericArray2M.AssertModel(models[13],_testData[22], false);
-                        BigIntegernumericArray2M.AssertModel(models[14],_testData[23], false);
-                        BigIntegernumericArray2M.AssertModel(models[15],_testData[24], false);
-                        BigIntegernumericArray2M.AssertModel(models[16],_testData[25], false);
-                        BigIntegernumericArray2M.AssertModel(models[17],_testData[26], false);
-                        BigIntegernumericArray2M.AssertModel(models[18],_testData[27], false);
-                        BigIntegernumericArray2M.AssertModel(models[19],_testData[28], false);
-                        BigIntegernumericArray2M.AssertModel(models[20],_testData[29], false);
-                        BigIntegernumericArray2M.AssertModel(models[21],_testData[30], false);
-                        BigIntegernumericArray2M.AssertModel(models[22],_testData[31], false);
-                        BigIntegernumericArray2M.AssertModel(models[23],_testData[32], false);
-                        BigIntegernumericArray2M.AssertModel(models[24],_testData[33], false);
-                        BigIntegernumericArray2M.AssertModel(models[25],_testData[34], false);
+                        BigIntegernumericArray2M.AssertModel(models[0],_testData[19], false);
+                        BigIntegernumericArray2M.AssertModel(models[1],_testData[20], false);
+                        BigIntegernumericArray2M.AssertModel(models[2],_testData[21], false);
+                        BigIntegernumericArray2M.AssertModel(models[3],_testData[22], false);
+                        BigIntegernumericArray2M.AssertModel(models[4],_testData[23], false);
+                        BigIntegernumericArray2M.AssertModel(models[5],_testData[24], false);
+                        BigIntegernumericArray2M.AssertModel(models[6],_testData[25], false);
+                        BigIntegernumericArray2M.AssertModel(models[7],_testData[26], false);
+                        BigIntegernumericArray2M.AssertModel(models[8],_testData[27], false);
+                        BigIntegernumericArray2M.AssertModel(models[9],_testData[28], false);
+                        BigIntegernumericArray2M.AssertModel(models[10],_testData[29], false);
+                        BigIntegernumericArray2M.AssertModel(models[11],_testData[30], false);
+                        BigIntegernumericArray2M.AssertModel(models[12],_testData[31], false);
+                        BigIntegernumericArray2M.AssertModel(models[13],_testData[32], false);
+                        BigIntegernumericArray2M.AssertModel(models[14],_testData[33], false);
+                        BigIntegernumericArray2M.AssertModel(models[15],_testData[34], false);
+                        continue;
+                    }                    
+
+                    if(resultIndex == 2)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(2));
+
+                        BigIntegernumericArray2M.AssertModel(models[0],_testData[33], false);
+                        BigIntegernumericArray2M.AssertModel(models[1],_testData[34], false);
+                        continue;
+                    }
+                    
+                    Assert.Fail("Unexpected batch count");
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var models = ((IBigIntegerListnumericArray)this).DbConnectionSelectModel(connection, 0);
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
+                {
+                    BigIntegernumericArray2M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSTSelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                int resultIndex = 0;
+                foreach(var batchResult in  ((IBigIntegerListnumericArray)this).DbConnectionSTSelectModelBatch(connection, 156, 9))
+                {
+                    if(++resultIndex == 1)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(3));
+
+                        BigIntegernumericArray2M.AssertModel(models[0],_testData[32], false);
+                        BigIntegernumericArray2M.AssertModel(models[1],_testData[33], false);
+                        BigIntegernumericArray2M.AssertModel(models[2],_testData[34], false);
                         continue;
                     }                    
 
@@ -4702,105 +4580,13 @@ Gedaq.DbConnection.Attributes.BatchPart(
         }
 
         [Test, Order(2)]
-        public async Task DbConnectionSelectModelTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var models = ((IBigIntegerListnumericArray)this).DbConnectionSelectModel(connection, 0);
-                Assert.That(models, Has.Count.EqualTo(35));
-                for (int i = 0; i < 35; i++)
-                {
-                    BigIntegernumericArray2M.AssertModel(models[i],_testData[i], false);
-                }
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionSTSelectModelBatchTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                int resultIndex = 0;
-                foreach(var batchResult in  ((IBigIntegerListnumericArray)this).DbConnectionSTSelectModelBatch(connection, 48, 86))
-                {
-                    if(++resultIndex == 1)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
-
-                        BigIntegernumericArray2M.AssertModel(models[0],_testData[8], false);
-                        BigIntegernumericArray2M.AssertModel(models[1],_testData[9], false);
-                        BigIntegernumericArray2M.AssertModel(models[2],_testData[10], false);
-                        BigIntegernumericArray2M.AssertModel(models[3],_testData[11], false);
-                        BigIntegernumericArray2M.AssertModel(models[4],_testData[12], false);
-                        BigIntegernumericArray2M.AssertModel(models[5],_testData[13], false);
-                        BigIntegernumericArray2M.AssertModel(models[6],_testData[14], false);
-                        BigIntegernumericArray2M.AssertModel(models[7],_testData[15], false);
-                        BigIntegernumericArray2M.AssertModel(models[8],_testData[16], false);
-                        BigIntegernumericArray2M.AssertModel(models[9],_testData[17], false);
-                        BigIntegernumericArray2M.AssertModel(models[10],_testData[18], false);
-                        BigIntegernumericArray2M.AssertModel(models[11],_testData[19], false);
-                        BigIntegernumericArray2M.AssertModel(models[12],_testData[20], false);
-                        BigIntegernumericArray2M.AssertModel(models[13],_testData[21], false);
-                        BigIntegernumericArray2M.AssertModel(models[14],_testData[22], false);
-                        BigIntegernumericArray2M.AssertModel(models[15],_testData[23], false);
-                        BigIntegernumericArray2M.AssertModel(models[16],_testData[24], false);
-                        BigIntegernumericArray2M.AssertModel(models[17],_testData[25], false);
-                        BigIntegernumericArray2M.AssertModel(models[18],_testData[26], false);
-                        BigIntegernumericArray2M.AssertModel(models[19],_testData[27], false);
-                        BigIntegernumericArray2M.AssertModel(models[20],_testData[28], false);
-                        BigIntegernumericArray2M.AssertModel(models[21],_testData[29], false);
-                        BigIntegernumericArray2M.AssertModel(models[22],_testData[30], false);
-                        BigIntegernumericArray2M.AssertModel(models[23],_testData[31], false);
-                        BigIntegernumericArray2M.AssertModel(models[24],_testData[32], false);
-                        BigIntegernumericArray2M.AssertModel(models[25],_testData[33], false);
-                        BigIntegernumericArray2M.AssertModel(models[26],_testData[34], false);
-                        continue;
-                    }                    
-
-                    if(resultIndex == 2)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(20));
-
-                        BigIntegernumericArray2M.AssertModel(models[0],_testData[15], false);
-                        BigIntegernumericArray2M.AssertModel(models[1],_testData[16], false);
-                        BigIntegernumericArray2M.AssertModel(models[2],_testData[17], false);
-                        BigIntegernumericArray2M.AssertModel(models[3],_testData[18], false);
-                        BigIntegernumericArray2M.AssertModel(models[4],_testData[19], false);
-                        BigIntegernumericArray2M.AssertModel(models[5],_testData[20], false);
-                        BigIntegernumericArray2M.AssertModel(models[6],_testData[21], false);
-                        BigIntegernumericArray2M.AssertModel(models[7],_testData[22], false);
-                        BigIntegernumericArray2M.AssertModel(models[8],_testData[23], false);
-                        BigIntegernumericArray2M.AssertModel(models[9],_testData[24], false);
-                        BigIntegernumericArray2M.AssertModel(models[10],_testData[25], false);
-                        BigIntegernumericArray2M.AssertModel(models[11],_testData[26], false);
-                        BigIntegernumericArray2M.AssertModel(models[12],_testData[27], false);
-                        BigIntegernumericArray2M.AssertModel(models[13],_testData[28], false);
-                        BigIntegernumericArray2M.AssertModel(models[14],_testData[29], false);
-                        BigIntegernumericArray2M.AssertModel(models[15],_testData[30], false);
-                        BigIntegernumericArray2M.AssertModel(models[16],_testData[31], false);
-                        BigIntegernumericArray2M.AssertModel(models[17],_testData[32], false);
-                        BigIntegernumericArray2M.AssertModel(models[18],_testData[33], false);
-                        BigIntegernumericArray2M.AssertModel(models[19],_testData[34], false);
-                        continue;
-                    }
-                    
-                    Assert.Fail("Unexpected batch count");
-                }
-            }
-        }
-
-        [Test, Order(2)]
         public async Task DbConnectionCommandSelectModelTestAsync()
         {
             await using (var connection = GlobalSetUp.GetDbConnection)
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IBigIntegerListnumericArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IBigIntegerListnumericArray)this).SetDbConnectionSelectModelParametrs(cmd, 132);
+                ((IBigIntegerListnumericArray)this).SetDbConnectionSelectModelParametrs(cmd, 112);
                 var models = await ((IBigIntegerListnumericArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
                 Assert.That(models, Has.Count.EqualTo(13));
@@ -4815,11 +4601,11 @@ BigIntegernumericArray2M.AssertModel(models[0],_testData[22], false);BigIntegern
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IBigIntegerListnumericArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IBigIntegerListnumericArray)this).SetDbConnectionSelectModelParametrs(cmd, 155);
+                ((IBigIntegerListnumericArray)this).SetDbConnectionSelectModelParametrs(cmd, 41);
                 var models =  ((IBigIntegerListnumericArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(7));
-BigIntegernumericArray2M.AssertModel(models[0],_testData[28], false);BigIntegernumericArray2M.AssertModel(models[1],_testData[29], false);BigIntegernumericArray2M.AssertModel(models[2],_testData[30], false);BigIntegernumericArray2M.AssertModel(models[3],_testData[31], false);BigIntegernumericArray2M.AssertModel(models[4],_testData[32], false);BigIntegernumericArray2M.AssertModel(models[5],_testData[33], false);BigIntegernumericArray2M.AssertModel(models[6],_testData[34], false);
+                Assert.That(models, Has.Count.EqualTo(26));
+BigIntegernumericArray2M.AssertModel(models[0],_testData[9], false);BigIntegernumericArray2M.AssertModel(models[1],_testData[10], false);BigIntegernumericArray2M.AssertModel(models[2],_testData[11], false);BigIntegernumericArray2M.AssertModel(models[3],_testData[12], false);BigIntegernumericArray2M.AssertModel(models[4],_testData[13], false);BigIntegernumericArray2M.AssertModel(models[5],_testData[14], false);BigIntegernumericArray2M.AssertModel(models[6],_testData[15], false);BigIntegernumericArray2M.AssertModel(models[7],_testData[16], false);BigIntegernumericArray2M.AssertModel(models[8],_testData[17], false);BigIntegernumericArray2M.AssertModel(models[9],_testData[18], false);BigIntegernumericArray2M.AssertModel(models[10],_testData[19], false);BigIntegernumericArray2M.AssertModel(models[11],_testData[20], false);BigIntegernumericArray2M.AssertModel(models[12],_testData[21], false);BigIntegernumericArray2M.AssertModel(models[13],_testData[22], false);BigIntegernumericArray2M.AssertModel(models[14],_testData[23], false);BigIntegernumericArray2M.AssertModel(models[15],_testData[24], false);BigIntegernumericArray2M.AssertModel(models[16],_testData[25], false);BigIntegernumericArray2M.AssertModel(models[17],_testData[26], false);BigIntegernumericArray2M.AssertModel(models[18],_testData[27], false);BigIntegernumericArray2M.AssertModel(models[19],_testData[28], false);BigIntegernumericArray2M.AssertModel(models[20],_testData[29], false);BigIntegernumericArray2M.AssertModel(models[21],_testData[30], false);BigIntegernumericArray2M.AssertModel(models[22],_testData[31], false);BigIntegernumericArray2M.AssertModel(models[23],_testData[32], false);BigIntegernumericArray2M.AssertModel(models[24],_testData[33], false);BigIntegernumericArray2M.AssertModel(models[25],_testData[34], false);
             }
         }
 
@@ -5461,18 +5247,17 @@ COPY public.binary_bigintegernumericarray2m
 ",
             methodName:"ExportModel",
             queryMapTypes: [typeof(BigIntegernumericArray2M)],
-            dbTypes:
-            new NpgsqlDbType[]
+            methodType: MethodType.Async | MethodType.Sync,
+            sourceType: SourceType.Connection,
+            accessModifier: AccessModifier.Public,
+            asPartInterface: typeof(IBigIntegerListnumericArray)),
+            Gedaq.Npgsql.Attributes.DbTypesOverride(0, new NpgsqlDbType[]
             {
                 (NpgsqlTypes.NpgsqlDbType)(9),
                 (NpgsqlTypes.NpgsqlDbType)(-2147483635),
                 (NpgsqlTypes.NpgsqlDbType)(9),
                 (NpgsqlTypes.NpgsqlDbType)(-2147483635)
-            },
-            methodType: MethodType.Async | MethodType.Sync,
-            sourceType: SourceType.Connection,
-            accessModifier: AccessModifier.Public,
-            asPartInterface: typeof(IBigIntegerListnumericArray))]
+            })]
         private void ExportModelConfig()
         {
         }
@@ -5519,12 +5304,6 @@ COPY public.binary_bigintegernumericarray2m
             query: null,
             methodName:"MMDynQueryWAExportModelInner",
             queryMapTypes: [typeof(BigIntegernumericArray2MIWA), typeof(BigIntegernumericArray2MIWA)],
-            dbTypes: new NpgsqlDbType[]
-            {
-                (NpgsqlTypes.NpgsqlDbType)(9),
-                (NpgsqlTypes.NpgsqlDbType)(-2147483635),
-                (NpgsqlTypes.NpgsqlDbType)(-2147483635)
-            },
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5625,12 +5404,6 @@ COPY
             query: null,
             methodName:"DynQueryWAExportModelInner",
             queryMapTypes: [typeof(BigIntegernumericArray2MIWA)],
-            dbTypes: new NpgsqlDbType[]
-            {
-                (NpgsqlTypes.NpgsqlDbType)(9),
-                (NpgsqlTypes.NpgsqlDbType)(-2147483635),
-                (NpgsqlTypes.NpgsqlDbType)(-2147483635)
-            },
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5699,7 +5472,6 @@ COPY public.binary_bigintegernumericarray2mi
             query: null,
             methodName:"MMDynQueryExportModelInner",
             queryMapTypes: [typeof(BigIntegernumericArray2MIWA), typeof(BigIntegernumericArray2MIWA)],
-            dbTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5788,7 +5560,6 @@ COPY
             query: null,
             methodName:"DynQueryExportModelInner",
             queryMapTypes: [typeof(BigIntegernumericArray2MIWA)],
-            dbTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5864,12 +5635,6 @@ COPY
 ",
             methodName:"MMWAExportModelInner",
             queryMapTypes: [typeof(BigIntegernumericArray2MI), typeof(BigIntegernumericArray2MI)],
-            dbTypes: new NpgsqlDbType[]
-            {
-                (NpgsqlTypes.NpgsqlDbType)(9),
-                (NpgsqlTypes.NpgsqlDbType)(-2147483635),
-                (NpgsqlTypes.NpgsqlDbType)(-2147483635)
-            },
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5951,12 +5716,6 @@ COPY public.binary_bigintegernumericarray2mi
 ",
             methodName:"WAExportModelInner",
             queryMapTypes: [typeof(BigIntegernumericArray2MI)],
-            dbTypes: new NpgsqlDbType[]
-            {
-                (NpgsqlTypes.NpgsqlDbType)(9),
-                (NpgsqlTypes.NpgsqlDbType)(-2147483635),
-                (NpgsqlTypes.NpgsqlDbType)(-2147483635)
-            },
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -6024,7 +5783,6 @@ COPY
 ",
             methodName:"MMExportModelInner",
             queryMapTypes: [typeof(BigIntegernumericArray2MIWA), typeof(BigIntegernumericArray2MIWA)],
-            dbTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -6094,7 +5852,6 @@ COPY public.binary_bigintegernumericarray2mi
 ",
             methodName:"ExportModelInner",
             queryMapTypes: [typeof(BigIntegernumericArray2MIWA)],
-            dbTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,

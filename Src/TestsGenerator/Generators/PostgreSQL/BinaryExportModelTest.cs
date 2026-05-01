@@ -49,6 +49,15 @@ namespace TestsGenerator.Generators.PostgreSQL
             Model.ModelType model,
             string interfaceTypeName)
         {
+            var dbTypeOverride = $@",
+            Gedaq.Npgsql.Attributes.DbTypesOverride(0, new NpgsqlDbType[]
+            {{
+                {model.IdTypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
+                {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
+            }})";
+
             stringBuilder.Append($@"
 [Gedaq.Npgsql.Attributes.BinaryExport(
             query: @""
@@ -65,18 +74,10 @@ COPY {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName}
 "",
             methodName:""{_testName}"",
             queryMapTypes: [typeof({model.ClassName(false)})],
-            dbTypes:
-            new NpgsqlDbType[]
-            {{
-                {model.IdTypeInfo.SpecialDbTypeStr()},
-                {model.ModelInner.TypeInfo.SpecialDbTypeStr()},
-                {model.ModelInner.IdTypeInfo.SpecialDbTypeStr()},
-                {model.ModelInner.TypeInfo.SpecialDbTypeStr()}
-            }},
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof({interfaceTypeName}))]
+            asPartInterface: typeof({interfaceTypeName})){dbTypeOverride}]
         private void {_testName}Config()
         {{
         }}
