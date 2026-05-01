@@ -1487,11 +1487,6 @@ namespace Gedaq.Base.Batch
             QueryBatchCommand source,
             StringBuilder builder)
         {
-            if (!source.HaveParametrs && !source.HaveFormatParametrs && !source.HaveDynamicParametrs)
-            {
-                return;
-            }
-
             foreach (var item in source.BatchPartBases())
             {
                 AddParametrs(item, builder);
