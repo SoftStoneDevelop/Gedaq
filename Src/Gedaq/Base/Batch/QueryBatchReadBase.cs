@@ -181,6 +181,15 @@ namespace Gedaq.Base.Batch
                 }
             }
 
+            foreach (var batchPart in source.BatchPartBases())
+            {
+                if (batchPart.QueryBase.IsDynamicQuery())
+                {
+                    builder.Append($@",
+            System.String {batchPart.DynamicQueryParametrName()}");
+                }
+            }
+
             builder.Append($@",
             int? timeout = null");
 

@@ -525,19 +525,29 @@ namespace Gedaq.Base.Query
 
                     case ReturnType.List:
                     {
+                        builder.Append($@"
+                var resultList = new System.Collections.Generic.List<{mapInfo.ItemTypeName}>();");
+
                         if (methodType == MethodType.Sync)
                         {
                             builder.Append($@"
-                var resultList = new System.Collections.Generic.List<{mapInfo.ItemTypeName}>();
-                var span = CollectionsMarshal.AsSpan(resultList);
+                var span = CollectionsMarshal.AsSpan(resultList);");
+                        }
+
+                        builder.Append($@"
                 var i = 0;
                 while ({await}reader.Read{async})
                 {{
                     {mapInfo.ItemTypeName} {mapInfo.MapItemName};");
 
-                            MappingHelper.MapItem(mapInfo, source, builder, ProviderInfo, mapInfo.MapItemName);
+                        MappingHelper.MapItem(mapInfo, source, builder, ProviderInfo, mapInfo.MapItemName);
+                        if (methodType == MethodType.Async)
+                        {
                             builder.Append($@"
+                    var span = CollectionsMarshal.AsSpan(resultList);");
+                        }
 
+                        builder.Append($@"
                     if (span.Length <= i)
                     {{
                         var newSize = span.Length > 0 ? span.Length * 2 : 4;
@@ -545,22 +555,7 @@ namespace Gedaq.Base.Query
                         span = CollectionsMarshal.AsSpan(resultList);
                     }}
 
-                    span[i++] = {mapInfo.MapItemName};");
-                        }
-                        else
-                        {
-                            builder.Append($@"
-                var resultList = new System.Collections.Generic.List<{mapInfo.ItemTypeName}>();
-                while ({await}reader.Read{async})
-                {{
-                    {mapInfo.ItemTypeName} {mapInfo.MapItemName};");
-
-                            MappingHelper.MapItem(mapInfo, source, builder, ProviderInfo, mapInfo.MapItemName);
-                            builder.Append($@"
-                    resultList.Add({mapInfo.MapItemName});");
-                        }
-
-                        builder.Append($@"
+                    span[i++] = {mapInfo.MapItemName};
                 }}
 
                 while ({await}reader.NextResult{async})
