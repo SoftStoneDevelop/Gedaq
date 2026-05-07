@@ -1,0 +1,66 @@
+
+using NUnit.Framework;
+using System.Linq;
+
+namespace Tests
+{
+    public class Int32Int320M
+    {
+        
+        public System.Int32 Id { get; set; }
+
+        
+        public System.Int32 Value { get; set; }
+
+        public Int32Int320MI ModelInner { get; set; }
+
+        
+        public System.Int32? NullableValue { get; set; }
+
+        public static void AssertModel(Int32Int320M actual, Int32Int320M expect, bool checkInInnerOnlyId)
+        {
+                Assert.That(actual, Is.Not.Null);
+                Assert.That(actual.Id, Is.EqualTo(expect.Id));
+                Assert.That(actual.Value, Is.EqualTo(expect.Value));
+                if(expect.NullableValue == null)
+                {
+                    Assert.That(actual.NullableValue, Is.Null);
+                }
+                else
+                {
+                    Assert.That(actual.NullableValue, Is.Not.Null);
+                    Assert.That(actual.NullableValue, Is.EqualTo(expect.NullableValue));
+                }
+
+                if(expect.ModelInner == null)
+                {
+                    Assert.That(actual.ModelInner, Is.Null);
+                }
+                else
+                {
+                    Assert.That(actual.ModelInner, Is.Not.Null);
+                    Assert.That(actual.ModelInner.Id, Is.EqualTo(expect.ModelInner.Id));
+                    if (checkInInnerOnlyId)
+                    {
+                        Assert.That(actual.ModelInner.Value, Is.EqualTo((System.Int32)default));
+                        Assert.That(actual.ModelInner.NullableValue, Is.Null);
+                    }
+                    else
+                    {
+                        Assert.That(actual.ModelInner.Value, Is.EqualTo(expect.ModelInner.Value));
+                        if(expect.ModelInner.NullableValue == null)
+                        {
+                            Assert.That(actual.ModelInner.NullableValue, Is.Null);
+                        }
+                        else
+                        {
+                            Assert.That(actual.ModelInner.NullableValue, Is.Not.Null);
+                            Assert.That(actual.ModelInner.NullableValue, Is.EqualTo(expect.ModelInner.NullableValue));
+                        }
+                    }
+                }
+
+        }
+    }
+}
+

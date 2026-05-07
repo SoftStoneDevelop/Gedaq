@@ -73,15 +73,23 @@ namespace TestsGenerator.Generators
                     AddPostgreSQLTypes();
                     break;
                 }
+
                 case Database.MsSQL:
                 {
                     AddMSSQLTypes();
                     break; 
                 }
+
                 case Database.MySQL:
                 {
                     AddMySQLTypes();
                     break; 
+                }
+
+                case Database.Clickhouse:
+                {
+                    AddClickhouseTypes();
+                    break;
                 }
             }
         }
@@ -140,8 +148,7 @@ namespace TestsGenerator.Generators
             int size = -1,
             bool mustHaveSize = false,
             bool isReferenceType = false,
-            bool generateArray = true
-            )
+            bool generateArray = true)
         {
             _models.Add(new Model.NpgsqlModel(npgsqlDbType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.SingleType), EnumerableType.SingleType, size, mustHaveSize, isReferenceType));
             if (generateArray)
@@ -192,6 +199,11 @@ namespace TestsGenerator.Generators
             _models.Add(new Model.MySqlModel(MySqlDbType.Date, "DateOnly", "System.DateOnly", () => new DateOnlyValueHelper(EnumerableType.SingleType)));
 
             _models.Add(new Model.MySqlModel(MySqlDbType.Text, "String", "System.String", () => new StringValueHelper(EnumerableType.SingleType), size: 400, mustHaveSize: true, isReferenceType: true));
+        }
+
+        private void AddClickhouseTypes()
+        {
+            _models.Add(new Model.ClickhouseModel("Int32", "Int32", "System.Int32", () => new Int32ValueHelper(EnumerableType.SingleType)));
         }
     }
 }

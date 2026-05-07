@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using TestsGenerator.Enums;
@@ -22,49 +23,79 @@ namespace TestsGenerator.Generators
             var interfaceTypeName = InterfaceName(model);
             Start(model, database);
 
-            StartRegion("TestData");
-            WriteTestDataArray(model, storage);
-            EndRegion();
+            if (IsCommonRelationalDatabase(database))
+            {
+                StartRegion("TestData");
+                WriteTestDataArray(model, storage);
+                EndRegion();
 
-            StartRegion("InsertModelInner");
-            InsertModelInnerTest.Generate(
-                0, 
-                _stringBuilder, 
-                model, 
-                storage, 
-                database, 
-                interfaceTypeName);
-            EndRegion();
+                StartRegion("InsertModelInner");
+                InsertModelInnerTest.Generate(
+                    0,
+                    _stringBuilder,
+                    model,
+                    storage,
+                    database,
+                    interfaceTypeName);
+                EndRegion();
 
-            StartRegion("InsertModel");
-            InsertModelTest.Generate(
-                1, 
-                _stringBuilder, 
-                model, 
-                storage, 
-                database, 
-                interfaceTypeName);
-            EndRegion();
+                StartRegion("InsertModel");
+                InsertModelTest.Generate(
+                    1,
+                    _stringBuilder,
+                    model,
+                    storage,
+                    database,
+                    interfaceTypeName);
+                EndRegion();
 
-            StartRegion("Select Models");
-            SelectModelTest.Generate(
-                2, 
-                _stringBuilder, 
-                model, 
-                storage, 
-                database, 
-                interfaceTypeName);
-            EndRegion();
+                StartRegion("Select Models");
+                SelectModelTest.Generate(
+                    2,
+                    _stringBuilder,
+                    model,
+                    storage,
+                    database,
+                    interfaceTypeName);
+                EndRegion();
 
-            SpecialDatabaseTests(
-                model, 
-                database, 
-                storage,
-                interfaceTypeName);
+                SpecialDatabaseTests(
+                    model,
+                    database,
+                    storage,
+                    interfaceTypeName);
 
-            End();
+                End();
+            }
+            else
+            {
+
+            }
 
             await File.WriteAllTextAsync($"{destinationFolder}/TestsParts/{model.ClassName(false)}Tests.cs", _stringBuilder.ToString());
+        }
+
+        private static bool IsCommonRelationalDatabase(Database database)
+        {
+            switch (database)
+            {
+                case Database.PostgreSQL:
+                case Database.MsSQL:
+                case Database.MySQL:
+                {
+                    return true;
+                }
+
+                case Database.Clickhouse:
+                {
+                    return false;
+                }
+
+                default:
+                {
+                    throw new NotImplementedException();
+                }
+            }
         }
 
         private void SpecialDatabaseTests(

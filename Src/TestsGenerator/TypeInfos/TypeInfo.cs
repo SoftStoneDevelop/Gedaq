@@ -15,8 +15,7 @@ namespace TestsGenerator.TypeInfos
             EnumerableType enumerableType,
             int size = -1,
             bool mustHaveSize = false,
-            bool isReferenceType = false
-            )
+            bool isReferenceType = false)
         {
             DbType = dbType;
             DbSqlType = dbTypeStr;
