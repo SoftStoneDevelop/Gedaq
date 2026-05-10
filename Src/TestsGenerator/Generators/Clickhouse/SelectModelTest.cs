@@ -52,7 +52,7 @@ SELECT
 ~EndInner::{model.ModelInnerName}~
 FROM {Database.Clickhouse.ToDefaultSchema()}.{model.TableName}
 WHERE
-    m_{model.IdColumnName} = {{m_{model.IdColumnName}:{((ClickhouseTypeInfo)model.IdTypeInfo).ClickHouseType}}}
+    m_{model.IdColumnName} = {{m_{model.IdColumnName}:{model.IdTypeInfo.DbSqlType}}}
 "",
             methodName:""{SelectMethodName()}"",
             queryMapTypes: [typeof({model.ClassName(false, false)})],

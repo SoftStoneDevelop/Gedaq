@@ -1,4 +1,5 @@
-﻿using TestsGenerator.Enums;
+﻿using System;
+using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 
 namespace TestsGenerator.TypeInfos
@@ -15,7 +16,7 @@ namespace TestsGenerator.TypeInfos
             bool isReferenceType = false) :
             base(
                 clickHouseType.ToDbType(),
-                clickHouseType.ToDbSqlTableType(),
+                clickHouseType.ToDbSqlTableType(enumerableType),
                 typeName,
                 typeFullName,
                 enumerableType,
@@ -23,21 +24,21 @@ namespace TestsGenerator.TypeInfos
                 mustHaveSize,
                 isReferenceType)
         {
-            ClickHouseType = clickHouseType;
+            ClickHouseBaseType = clickHouseType;
         }
 
-        public readonly string ClickHouseType;
+        public readonly string ClickHouseBaseType;
 
-        public override string DefaultMapType => ClickHouseType.ToDefaultMapType();
+        public override string DefaultMapType => ClickHouseBaseType.ToDefaultMapType(EnumerableType);
 
         public override string SpecialDbTypeStr()
         {
-            return $"(System.String)({ClickHouseType})";
+            return DbSqlType;
         }
 
         public override string DbTypeStr()
         {
-            return $"(System.Data.DbType)({(int)DbType})";
+            throw new NotImplementedException();
         }
 
         public override string TypeName

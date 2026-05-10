@@ -69,10 +69,10 @@ INSERT INTO {Database.Clickhouse.ToDefaultSchema()}.{model.TableName}(
     mi_{model.ModelInner.ValueColumnName}
 )
 VALUES (
-    {{m_{model.IdColumnName}:{((ClickhouseTypeInfo)model.IdTypeInfo).ClickHouseType}}},
-    {{m_{model.ValueColumnName}:{((ClickhouseTypeInfo)model.TypeInfo).ClickHouseType}}}, 
-    {{mi_{model.ModelInner.IdColumnName}:{((ClickhouseTypeInfo)model.ModelInner.IdTypeInfo).ClickHouseType}}},
-    {{mi_{model.ModelInner.ValueColumnName}:{((ClickhouseTypeInfo)model.ModelInner.TypeInfo).ClickHouseType}}}
+    {{m_{model.IdColumnName}:{model.IdTypeInfo.DbSqlType}}},
+    {{m_{model.ValueColumnName}:{model.TypeInfo.DbSqlType}}}, 
+    {{mi_{model.ModelInner.IdColumnName}:{model.ModelInner.IdTypeInfo.DbSqlType}}},
+    {{mi_{model.ModelInner.ValueColumnName}:{model.ModelInner.TypeInfo.DbSqlType}}}
 )
 "",
             methodName:""{InsertMethodName()}"",

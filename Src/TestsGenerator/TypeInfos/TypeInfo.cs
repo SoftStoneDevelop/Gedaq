@@ -61,6 +61,8 @@ namespace TestsGenerator.TypeInfos
         {
             var result = WhiteSpaces().Replace(DbSqlType, "_");
             result = SquareBracketsSpaces().Replace(result, "Array");
+            result = result.Replace("(", string.Empty);
+            result = result.Replace(")", string.Empty);
             return result;
         }
 
@@ -68,6 +70,7 @@ namespace TestsGenerator.TypeInfos
 
         [GeneratedRegex("\\s+")]
         public static partial Regex WhiteSpaces();
+
         [GeneratedRegex("\\[\\]")]
         public static partial Regex SquareBracketsSpaces();
 
