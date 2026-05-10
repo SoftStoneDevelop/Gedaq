@@ -203,7 +203,18 @@ namespace TestsGenerator.Generators
 
         private void AddClickhouseTypes()
         {
+            _models.Add(new Model.ClickhouseModel("Int8", "SByte", "System.SByte", () => new SByteValueHelper(EnumerableType.SingleType)));
+            _models.Add(new Model.ClickhouseModel("UInt8", "Byte", "System.Byte", () => new ByteValueHelper(EnumerableType.SingleType)));
+            _models.Add(new Model.ClickhouseModel("Int16", "Int16", "System.Int16", () => new Int16ValueHelper(EnumerableType.SingleType)));
+            _models.Add(new Model.ClickhouseModel("UInt16", "UInt16", "System.UInt16", () => new UInt16ValueHelper(EnumerableType.SingleType)));
             _models.Add(new Model.ClickhouseModel("Int32", "Int32", "System.Int32", () => new Int32ValueHelper(EnumerableType.SingleType)));
+            _models.Add(new Model.ClickhouseModel("UInt32", "UInt32", "System.UInt32", () => new UInt32ValueHelper(EnumerableType.SingleType)));
+            _models.Add(new Model.ClickhouseModel("Int64", "Int64", "System.Int64", () => new Int64ValueHelper(EnumerableType.SingleType)));
+            _models.Add(new Model.ClickhouseModel("UInt64", "UInt64", "System.UInt64", () => new UInt64ValueHelper(EnumerableType.SingleType)));
+
+            _models.Add(new Model.ClickhouseModel("String", "String", "System.String", () => new StringValueHelper(EnumerableType.SingleType)));
+            _models.Add(new Model.ClickhouseModel("IPv4", "IPAddress", "System.Net.IPAddress", () => new IPAddressValueHelper(EnumerableType.SingleType)));
+            _models.Add(new Model.ClickhouseModel("UUID", "Guid", "System.Guid", () => new GuidValueHelper(EnumerableType.SingleType)));
         }
     }
 }
