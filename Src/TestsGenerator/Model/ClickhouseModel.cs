@@ -17,7 +17,7 @@ namespace TestsGenerator.Model
             bool mustHaveSize = false,
             bool isReferenceType = false)
             : base(
-                  new ClickhouseTypeInfo("Int32", "Int32", "System.Int32", enumerableType, 0, false, false), 
+                  new ClickhouseTypeInfo("Int32", "Int32", "System.Int32", EnumerableType.SingleType, 0, false, false), 
                   new ClickhouseTypeInfo(clickHouseType, typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType), 
                   valueStorageFactory)
         {

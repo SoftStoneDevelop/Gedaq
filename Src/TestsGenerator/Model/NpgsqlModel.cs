@@ -18,7 +18,7 @@ namespace TestsGenerator.Model
             bool mustHaveSize = false,
             bool isReferenceType = false)
             : base(
-                  new PostgreSQLTypeInfo(NpgsqlDbType.Integer, "Int32", "System.Int32", enumerableType, 0, false, false), 
+                  new PostgreSQLTypeInfo(NpgsqlDbType.Integer, "Int32", "System.Int32", EnumerableType.SingleType, 0, false, false), 
                   new PostgreSQLTypeInfo(npgsqlDbType, typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType), 
                   valueStorageFactory)
         {

@@ -248,6 +248,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.Int64";
                 }
+
                 case NpgsqlDbType.Bigint | NpgsqlDbType.Array:
                 {
                     return "System.Int64[]";
@@ -257,6 +258,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.Double";
                 }
+
                 case NpgsqlDbType.Double | NpgsqlDbType.Array:
                 {
                     return "System.Double[]";
@@ -266,6 +268,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.Int32";
                 }
+
                 case NpgsqlDbType.Integer | NpgsqlDbType.Array:
                 {
                     return "System.Int32[]";
@@ -275,6 +278,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.Decimal";
                 }
+
                 case NpgsqlDbType.Numeric | NpgsqlDbType.Array:
                 {
                     return "System.Decimal[]";
@@ -284,6 +288,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.Decimal";
                 }
+
                 case NpgsqlDbType.Money | NpgsqlDbType.Array:
                 {
                     return "System.Decimal[]";
@@ -293,6 +298,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.Single";
                 }
+
                 case NpgsqlDbType.Real | NpgsqlDbType.Array:
                 {
                     return "System.Single[]";
@@ -302,6 +308,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.Int16";
                 }
+
                 case NpgsqlDbType.Smallint | NpgsqlDbType.Array:
                 {
                     return "System.Int16[]";
@@ -311,6 +318,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.Boolean";
                 }
+
                 case NpgsqlDbType.Boolean | NpgsqlDbType.Array:
                 {
                     return "System.Boolean[]";
@@ -320,6 +328,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.String";
                 }
+
                 case NpgsqlDbType.Char | NpgsqlDbType.Array:
                 {
                     return "System.String[]";
@@ -329,6 +338,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.String";
                 }
+
                 case NpgsqlDbType.Text | NpgsqlDbType.Array:
                 {
                     return "System.String[]";
@@ -338,6 +348,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.DateTime";
                 }
+
                 case NpgsqlDbType.Timestamp | NpgsqlDbType.Array:
                 {
                     return "System.DateTime[]";
@@ -347,6 +358,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.TimeOnly";
                 }
+
                 case NpgsqlDbType.Time | NpgsqlDbType.Array:
                 {
                     return "System.TimeOnly[]";
@@ -356,6 +368,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.DateTimeOffset";
                 }
+
                 case NpgsqlDbType.TimeTz | NpgsqlDbType.Array:
                 {
                     return "System.DateTimeOffset[]";
@@ -365,6 +378,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.DateOnly";
                 }
+
                 case NpgsqlDbType.Date | NpgsqlDbType.Array:
                 {
                     return "System.DateOnly[]";
@@ -374,6 +388,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.DateTime";
                 }
+
                 case NpgsqlDbType.TimestampTz | NpgsqlDbType.Array:
                 {
                     return "System.DateTime[]";
@@ -383,6 +398,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.Net.IPAddress";
                 }
+
                 case NpgsqlDbType.Inet | NpgsqlDbType.Array:
                 {
                     return "System.Net.IPAddress[]";
@@ -392,6 +408,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.Guid";
                 }
+
                 case NpgsqlDbType.Uuid | NpgsqlDbType.Array:
                 {
                     return "System.Guid[]";
@@ -401,6 +418,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "System.TimeSpan";
                 }
+
                 case NpgsqlDbType.Interval | NpgsqlDbType.Array:
                 {
                     return "System.TimeSpan[]";
@@ -410,6 +428,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "NpgsqlTypes.NpgsqlLine";
                 }
+
                 case NpgsqlDbType.Line | NpgsqlDbType.Array:
                 {
                     return "NpgsqlTypes.NpgsqlLine[]";
@@ -419,6 +438,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "NpgsqlTypes.NpgsqlPolygon";
                 }
+
                 case NpgsqlDbType.Polygon | NpgsqlDbType.Array:
                 {
                     return "NpgsqlTypes.NpgsqlPolygon[]";
@@ -428,6 +448,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "NpgsqlTypes.NpgsqlPoint";
                 }
+
                 case NpgsqlDbType.Point | NpgsqlDbType.Array:
                 {
                     return "NpgsqlTypes.NpgsqlPoint[]";
@@ -437,6 +458,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "NpgsqlTypes.NpgsqlCircle";
                 }
+
                 case NpgsqlDbType.Circle | NpgsqlDbType.Array:
                 {
                     return "NpgsqlTypes.NpgsqlCircle[]";
@@ -446,6 +468,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "NpgsqlTypes.NpgsqlBox";
                 }
+
                 case NpgsqlDbType.Box | NpgsqlDbType.Array:
                 {
                     return "NpgsqlTypes.NpgsqlBox[]";
@@ -455,6 +478,7 @@ namespace TestsGenerator.Helpers
                 {
                     return "NpgsqlTypes.NpgsqlPath";
                 }
+
                 case NpgsqlDbType.Path | NpgsqlDbType.Array:
                 {
                     return "NpgsqlTypes.NpgsqlPath[]";

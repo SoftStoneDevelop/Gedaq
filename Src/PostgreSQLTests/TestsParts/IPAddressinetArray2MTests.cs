@@ -30,59 +30,86 @@ namespace Tests
         {
             new IPAddressinetArray2M
 {
-    Id = 9,
+    Id = 3,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("36.172.111.200"),
+System.Net.IPAddress.Parse("84.20.125.149"),
 
-System.Net.IPAddress.Parse("144.28.173.4"),
+System.Net.IPAddress.Parse("28.121.250.19"),
 
-System.Net.IPAddress.Parse("106.161.194.168"),
+System.Net.IPAddress.Parse("7.246.129.130"),
 
-System.Net.IPAddress.Parse("2.18.69.245"),
+System.Net.IPAddress.Parse("190.14.170.68"),
 
 },
     ModelInner = null,
+    NullableValue = null,
+},
+            new IPAddressinetArray2M
+{
+    Id = 5,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("24.38.74.53"),
+
+System.Net.IPAddress.Parse("88.229.135.115"),
+
+System.Net.IPAddress.Parse("68.187.137.99"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 6,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("35.171.107.146"),
+
+System.Net.IPAddress.Parse("229.105.113.192"),
+
+System.Net.IPAddress.Parse("130.116.139.127"),
+
+System.Net.IPAddress.Parse("31.218.84.142"),
+
+},
     NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("8.126.80.10"),
+System.Net.IPAddress.Parse("106.207.236.20"),
 
-System.Net.IPAddress.Parse("15.6.127.193"),
+System.Net.IPAddress.Parse("146.95.145.16"),
 
-System.Net.IPAddress.Parse("29.208.209.156"),
+System.Net.IPAddress.Parse("196.26.115.78"),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("184.130.217.219"),
+
+System.Net.IPAddress.Parse("155.190.115.114"),
+
+System.Net.IPAddress.Parse("0.68.80.53"),
 
 },
 },
             new IPAddressinetArray2M
 {
-    Id = 11,
+    Id = 6,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("35.179.192.48"),
+System.Net.IPAddress.Parse("23.91.40.192"),
 
-System.Net.IPAddress.Parse("248.58.93.2"),
+System.Net.IPAddress.Parse("69.46.84.250"),
 
-System.Net.IPAddress.Parse("235.78.207.67"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 1,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("22.24.132.37"),
-
-System.Net.IPAddress.Parse("248.113.251.37"),
-
-System.Net.IPAddress.Parse("31.33.13.46"),
+System.Net.IPAddress.Parse("96.192.184.86"),
 
 },
-    NullableValue = null,
-},
+    ModelInner = null,
     NullableValue = null,
 },
             new IPAddressinetArray2M
@@ -91,81 +118,148 @@ System.Net.IPAddress.Parse("31.33.13.46"),
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("215.126.49.217"),
+System.Net.IPAddress.Parse("248.175.226.40"),
 
-System.Net.IPAddress.Parse("231.181.108.67"),
+System.Net.IPAddress.Parse("107.67.28.252"),
 
-System.Net.IPAddress.Parse("194.32.91.222"),
+System.Net.IPAddress.Parse("85.120.210.250"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 15,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("203.238.39.229"),
+
+System.Net.IPAddress.Parse("160.176.134.125"),
+
+System.Net.IPAddress.Parse("181.246.251.181"),
+
+System.Net.IPAddress.Parse("166.254.49.178"),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("25.80.182.60"),
+
+System.Net.IPAddress.Parse("86.240.209.216"),
+
+System.Net.IPAddress.Parse("126.20.99.7"),
+
+System.Net.IPAddress.Parse("128.89.165.38"),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("128.71.196.191"),
+
+System.Net.IPAddress.Parse("78.20.140.57"),
+
+System.Net.IPAddress.Parse("151.83.54.172"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 19,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("20.201.69.119"),
+
+System.Net.IPAddress.Parse("20.204.159.16"),
+
+System.Net.IPAddress.Parse("197.46.73.245"),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("10.159.22.48"),
+System.Net.IPAddress.Parse("128.223.182.145"),
 
-System.Net.IPAddress.Parse("135.22.13.247"),
+System.Net.IPAddress.Parse("78.24.151.44"),
 
-System.Net.IPAddress.Parse("196.196.39.183"),
+System.Net.IPAddress.Parse("161.236.14.58"),
 
-System.Net.IPAddress.Parse("240.33.34.223"),
+System.Net.IPAddress.Parse("209.73.108.67"),
 
 },
 },
             new IPAddressinetArray2M
 {
-    Id = 20,
+    Id = 22,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("11.106.137.167"),
+System.Net.IPAddress.Parse("89.176.9.160"),
 
-System.Net.IPAddress.Parse("56.156.96.182"),
+System.Net.IPAddress.Parse("74.139.141.20"),
 
-System.Net.IPAddress.Parse("251.133.170.166"),
+System.Net.IPAddress.Parse("63.96.95.80"),
+
+System.Net.IPAddress.Parse("186.198.189.138"),
 
 },
     ModelInner = new IPAddressinetArray2MI
 {
-    Id = 2,
+    Id = 21,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("56.6.181.152"),
+System.Net.IPAddress.Parse("87.204.50.178"),
 
-System.Net.IPAddress.Parse("164.72.164.155"),
+System.Net.IPAddress.Parse("166.175.13.197"),
 
-System.Net.IPAddress.Parse("138.219.99.148"),
+System.Net.IPAddress.Parse("26.59.159.170"),
 
-System.Net.IPAddress.Parse("156.180.86.154"),
+System.Net.IPAddress.Parse("204.225.124.172"),
 
 },
     NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("205.139.234.25"),
+System.Net.IPAddress.Parse("213.18.86.14"),
 
-System.Net.IPAddress.Parse("189.178.41.67"),
+System.Net.IPAddress.Parse("228.225.130.170"),
 
-System.Net.IPAddress.Parse("188.229.218.143"),
+System.Net.IPAddress.Parse("36.22.198.53"),
+
+System.Net.IPAddress.Parse("113.183.251.126"),
 
 },
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("86.91.68.217"),
+
+System.Net.IPAddress.Parse("23.248.137.221"),
+
+System.Net.IPAddress.Parse("117.16.188.213"),
+
+System.Net.IPAddress.Parse("194.133.178.148"),
+
+},
 },
             new IPAddressinetArray2M
 {
-    Id = 26,
+    Id = 28,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("11.107.22.202"),
+System.Net.IPAddress.Parse("113.209.20.175"),
 
-System.Net.IPAddress.Parse("153.148.27.214"),
+System.Net.IPAddress.Parse("244.143.69.99"),
 
-System.Net.IPAddress.Parse("14.37.238.75"),
+System.Net.IPAddress.Parse("45.183.23.26"),
 
-System.Net.IPAddress.Parse("34.107.55.159"),
+System.Net.IPAddress.Parse("164.245.226.250"),
 
 },
     ModelInner = null,
@@ -175,44 +269,116 @@ System.Net.IPAddress.Parse("34.107.55.159"),
 {
     Id = 29,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("27.20.164.175"),
+System.Net.IPAddress.Parse("178.205.168.97"),
 
-System.Net.IPAddress.Parse("208.108.236.241"),
+System.Net.IPAddress.Parse("215.45.121.89"),
 
-System.Net.IPAddress.Parse("175.227.174.61"),
-
-System.Net.IPAddress.Parse("250.102.111.155"),
+System.Net.IPAddress.Parse("182.155.54.85"),
 
 },
     ModelInner = new IPAddressinetArray2MI
 {
-    Id = 11,
+    Id = 25,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("209.240.191.30"),
+System.Net.IPAddress.Parse("223.194.191.202"),
 
-System.Net.IPAddress.Parse("109.103.3.168"),
+System.Net.IPAddress.Parse("103.38.72.101"),
 
-System.Net.IPAddress.Parse("117.150.58.130"),
+System.Net.IPAddress.Parse("89.176.206.105"),
 
-System.Net.IPAddress.Parse("128.184.139.61"),
+System.Net.IPAddress.Parse("150.186.184.146"),
 
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new IPAddressinetArray2M
+{
+    Id = 30,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("108.236.166.202"),
+
+System.Net.IPAddress.Parse("197.183.133.38"),
+
+System.Net.IPAddress.Parse("173.186.213.207"),
+
+System.Net.IPAddress.Parse("126.185.67.134"),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("181.113.217.185"),
+
+System.Net.IPAddress.Parse("205.68.245.253"),
+
+System.Net.IPAddress.Parse("88.217.150.222"),
+
+System.Net.IPAddress.Parse("66.20.72.202"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 33,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("39.22.222.93"),
+
+System.Net.IPAddress.Parse("111.20.176.15"),
+
+System.Net.IPAddress.Parse("136.136.178.57"),
+
+System.Net.IPAddress.Parse("180.212.125.176"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 31,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("68.76.47.147"),
+
+System.Net.IPAddress.Parse("165.154.77.56"),
+
+System.Net.IPAddress.Parse("2.111.152.33"),
+
+System.Net.IPAddress.Parse("157.85.28.101"),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("146.143.212.48"),
+
+System.Net.IPAddress.Parse("61.251.40.203"),
+
+System.Net.IPAddress.Parse("107.167.225.33"),
+
+System.Net.IPAddress.Parse("236.138.223.43"),
+
+},
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("211.68.205.60"),
+System.Net.IPAddress.Parse("117.137.153.157"),
 
-System.Net.IPAddress.Parse("8.226.152.179"),
+System.Net.IPAddress.Parse("253.30.87.82"),
 
-System.Net.IPAddress.Parse("183.63.105.190"),
+System.Net.IPAddress.Parse("249.40.192.91"),
 
 },
-},
-    NullableValue = null,
 },
             new IPAddressinetArray2M
 {
@@ -220,315 +386,204 @@ System.Net.IPAddress.Parse("183.63.105.190"),
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("3.60.109.199"),
+System.Net.IPAddress.Parse("9.32.182.139"),
 
-System.Net.IPAddress.Parse("70.190.232.88"),
+System.Net.IPAddress.Parse("237.164.224.246"),
 
-System.Net.IPAddress.Parse("68.111.154.182"),
+System.Net.IPAddress.Parse("190.190.168.245"),
 
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("138.196.233.220"),
+
+System.Net.IPAddress.Parse("28.45.89.228"),
+
+System.Net.IPAddress.Parse("126.228.46.128"),
+
+},
 },
             new IPAddressinetArray2M
 {
-    Id = 45,
+    Id = 46,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("161.216.7.17"),
+System.Net.IPAddress.Parse("151.240.235.73"),
 
-System.Net.IPAddress.Parse("1.56.167.96"),
+System.Net.IPAddress.Parse("209.193.69.21"),
 
-System.Net.IPAddress.Parse("88.253.158.9"),
-
-System.Net.IPAddress.Parse("240.111.66.19"),
+System.Net.IPAddress.Parse("119.25.204.221"),
 
 },
     ModelInner = new IPAddressinetArray2MI
 {
-    Id = 18,
+    Id = 34,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("129.224.250.189"),
+System.Net.IPAddress.Parse("253.154.146.181"),
 
-System.Net.IPAddress.Parse("121.152.140.141"),
+System.Net.IPAddress.Parse("174.50.118.134"),
 
-System.Net.IPAddress.Parse("89.180.19.129"),
+System.Net.IPAddress.Parse("110.205.34.185"),
+
+System.Net.IPAddress.Parse("163.215.163.133"),
 
 },
     NullableValue = null,
 },
+    NullableValue = null,
+},
+            new IPAddressinetArray2M
+{
+    Id = 49,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("168.15.168.71"),
+
+System.Net.IPAddress.Parse("244.63.147.42"),
+
+System.Net.IPAddress.Parse("41.97.96.148"),
+
+},
+    ModelInner = null,
     NullableValue = null,
 },
             new IPAddressinetArray2M
 {
     Id = 52,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("136.99.245.52"),
+System.Net.IPAddress.Parse("167.51.56.84"),
 
-System.Net.IPAddress.Parse("226.214.200.77"),
+System.Net.IPAddress.Parse("22.54.142.234"),
 
-System.Net.IPAddress.Parse("50.246.138.71"),
-
-System.Net.IPAddress.Parse("2.184.226.119"),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 57,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("61.179.227.22"),
-
-System.Net.IPAddress.Parse("110.185.150.232"),
-
-System.Net.IPAddress.Parse("127.60.33.6"),
-
-System.Net.IPAddress.Parse("163.106.171.121"),
+System.Net.IPAddress.Parse("0.128.7.100"),
 
 },
     ModelInner = new IPAddressinetArray2MI
 {
-    Id = 24,
+    Id = 42,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("217.193.211.202"),
+System.Net.IPAddress.Parse("76.139.185.77"),
 
-System.Net.IPAddress.Parse("100.205.31.194"),
+System.Net.IPAddress.Parse("200.79.52.85"),
 
-System.Net.IPAddress.Parse("215.121.213.25"),
+System.Net.IPAddress.Parse("235.149.137.97"),
 
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("19.90.100.163"),
+
+System.Net.IPAddress.Parse("25.148.92.240"),
+
+System.Net.IPAddress.Parse("115.231.236.107"),
+
+System.Net.IPAddress.Parse("50.230.151.58"),
+
 },
-    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("221.58.123.236"),
+
+System.Net.IPAddress.Parse("138.80.27.5"),
+
+System.Net.IPAddress.Parse("65.238.102.219"),
+
+System.Net.IPAddress.Parse("54.7.107.143"),
+
+},
 },
             new IPAddressinetArray2M
 {
-    Id = 62,
+    Id = 61,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("174.194.183.165"),
+System.Net.IPAddress.Parse("26.79.47.148"),
 
-System.Net.IPAddress.Parse("245.60.27.169"),
+System.Net.IPAddress.Parse("72.198.162.41"),
 
-System.Net.IPAddress.Parse("187.108.112.194"),
+System.Net.IPAddress.Parse("168.196.41.159"),
 
 },
     ModelInner = null,
     NullableValue = null,
+},
+            new IPAddressinetArray2M
+{
+    Id = 63,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("207.26.4.109"),
+
+System.Net.IPAddress.Parse("55.192.77.69"),
+
+System.Net.IPAddress.Parse("109.48.62.252"),
+
+System.Net.IPAddress.Parse("178.188.68.172"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 43,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("83.213.220.114"),
+
+System.Net.IPAddress.Parse("26.128.211.79"),
+
+System.Net.IPAddress.Parse("34.9.226.57"),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("140.57.8.178"),
+
+System.Net.IPAddress.Parse("39.82.51.102"),
+
+System.Net.IPAddress.Parse("115.117.187.210"),
+
+System.Net.IPAddress.Parse("30.43.1.31"),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("40.186.207.76"),
+
+System.Net.IPAddress.Parse("31.196.121.92"),
+
+System.Net.IPAddress.Parse("8.90.49.75"),
+
+},
 },
             new IPAddressinetArray2M
 {
     Id = 67,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("147.165.221.70"),
-
-System.Net.IPAddress.Parse("180.123.151.97"),
-
-System.Net.IPAddress.Parse("158.233.182.2"),
-
-System.Net.IPAddress.Parse("161.47.128.79"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 29,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("42.77.176.231"),
-
-System.Net.IPAddress.Parse("91.231.55.226"),
-
-System.Net.IPAddress.Parse("152.50.13.203"),
-
-System.Net.IPAddress.Parse("224.218.86.158"),
-
-},
-    NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("77.60.249.248"),
+System.Net.IPAddress.Parse("137.236.237.101"),
 
-System.Net.IPAddress.Parse("222.101.218.86"),
+System.Net.IPAddress.Parse("224.87.241.94"),
 
-System.Net.IPAddress.Parse("115.83.59.39"),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("119.148.23.43"),
-
-System.Net.IPAddress.Parse("36.26.35.172"),
-
-System.Net.IPAddress.Parse("123.236.166.219"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 71,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("185.34.80.81"),
-
-System.Net.IPAddress.Parse("54.245.124.154"),
-
-System.Net.IPAddress.Parse("101.48.129.42"),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("231.104.37.251"),
-
-System.Net.IPAddress.Parse("45.28.219.156"),
-
-System.Net.IPAddress.Parse("36.62.18.114"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 76,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("46.243.142.79"),
-
-System.Net.IPAddress.Parse("88.128.246.69"),
-
-System.Net.IPAddress.Parse("92.238.171.177"),
-
-System.Net.IPAddress.Parse("174.167.5.92"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 37,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("246.237.148.60"),
-
-System.Net.IPAddress.Parse("207.240.183.177"),
-
-System.Net.IPAddress.Parse("129.156.31.202"),
-
-System.Net.IPAddress.Parse("166.227.92.205"),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("107.128.171.232"),
-
-System.Net.IPAddress.Parse("226.37.126.14"),
-
-System.Net.IPAddress.Parse("187.2.183.157"),
-
-System.Net.IPAddress.Parse("161.100.53.84"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 85,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("80.67.39.211"),
-
-System.Net.IPAddress.Parse("20.148.184.192"),
-
-System.Net.IPAddress.Parse("98.241.206.174"),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("62.185.79.152"),
-
-System.Net.IPAddress.Parse("114.39.117.89"),
-
-System.Net.IPAddress.Parse("201.92.105.105"),
-
-System.Net.IPAddress.Parse("175.191.243.114"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 89,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("67.82.227.186"),
-
-System.Net.IPAddress.Parse("19.83.74.233"),
-
-System.Net.IPAddress.Parse("21.83.195.42"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 46,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("45.174.203.35"),
-
-System.Net.IPAddress.Parse("140.65.217.249"),
-
-System.Net.IPAddress.Parse("116.90.133.183"),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("233.44.180.102"),
-
-System.Net.IPAddress.Parse("177.72.137.153"),
-
-System.Net.IPAddress.Parse("85.172.105.185"),
-
-System.Net.IPAddress.Parse("81.199.216.191"),
-
-},
-},
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 90,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("169.68.119.82"),
-
-System.Net.IPAddress.Parse("149.166.114.120"),
-
-System.Net.IPAddress.Parse("20.84.20.230"),
+System.Net.IPAddress.Parse("254.215.3.35"),
 
 },
     ModelInner = null,
@@ -536,30 +591,28 @@ System.Net.IPAddress.Parse("20.84.20.230"),
 },
             new IPAddressinetArray2M
 {
-    Id = 97,
+    Id = 72,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("86.159.52.63"),
+System.Net.IPAddress.Parse("154.92.23.177"),
 
-System.Net.IPAddress.Parse("106.207.174.30"),
+System.Net.IPAddress.Parse("169.205.44.191"),
 
-System.Net.IPAddress.Parse("65.122.238.26"),
-
-System.Net.IPAddress.Parse("91.217.17.7"),
+System.Net.IPAddress.Parse("14.96.62.159"),
 
 },
     ModelInner = new IPAddressinetArray2MI
 {
-    Id = 53,
+    Id = 49,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("175.185.117.120"),
+System.Net.IPAddress.Parse("30.75.165.189"),
 
-System.Net.IPAddress.Parse("35.30.97.213"),
+System.Net.IPAddress.Parse("137.207.233.3"),
 
-System.Net.IPAddress.Parse("31.181.72.173"),
+System.Net.IPAddress.Parse("3.79.197.142"),
 
 },
     NullableValue = null,
@@ -568,311 +621,76 @@ System.Net.IPAddress.Parse("31.181.72.173"),
 },
             new IPAddressinetArray2M
 {
-    Id = 101,
+    Id = 77,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("25.173.140.99"),
+System.Net.IPAddress.Parse("66.228.70.63"),
 
-System.Net.IPAddress.Parse("175.224.241.132"),
+System.Net.IPAddress.Parse("71.82.36.70"),
 
-System.Net.IPAddress.Parse("26.201.73.3"),
+System.Net.IPAddress.Parse("180.41.183.239"),
+
+System.Net.IPAddress.Parse("69.150.213.174"),
 
 },
     ModelInner = null,
     NullableValue = null,
 },
             new IPAddressinetArray2M
-{
-    Id = 107,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("62.36.14.36"),
-
-System.Net.IPAddress.Parse("201.216.151.205"),
-
-System.Net.IPAddress.Parse("14.93.107.90"),
-
-System.Net.IPAddress.Parse("136.59.160.20"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 62,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("182.133.69.132"),
-
-System.Net.IPAddress.Parse("240.59.114.245"),
-
-System.Net.IPAddress.Parse("210.254.87.249"),
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 109,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("104.152.246.168"),
-
-System.Net.IPAddress.Parse("51.56.241.171"),
-
-System.Net.IPAddress.Parse("21.177.10.30"),
-
-System.Net.IPAddress.Parse("181.205.253.185"),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 117,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("217.106.254.18"),
-
-System.Net.IPAddress.Parse("25.100.146.82"),
-
-System.Net.IPAddress.Parse("222.247.129.68"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 67,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("121.82.193.234"),
-
-System.Net.IPAddress.Parse("246.96.233.55"),
-
-System.Net.IPAddress.Parse("97.205.62.232"),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("130.172.17.7"),
-
-System.Net.IPAddress.Parse("232.111.27.30"),
-
-System.Net.IPAddress.Parse("157.184.89.2"),
-
-System.Net.IPAddress.Parse("49.14.48.129"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 124,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("125.63.248.62"),
-
-System.Net.IPAddress.Parse("134.135.240.60"),
-
-System.Net.IPAddress.Parse("7.21.102.51"),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 129,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("43.61.171.51"),
-
-System.Net.IPAddress.Parse("50.243.60.248"),
-
-System.Net.IPAddress.Parse("83.149.37.152"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 71,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("177.174.155.15"),
-
-System.Net.IPAddress.Parse("33.123.145.112"),
-
-System.Net.IPAddress.Parse("95.202.66.0"),
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 137,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("0.169.208.118"),
-
-System.Net.IPAddress.Parse("67.182.76.138"),
-
-System.Net.IPAddress.Parse("248.97.198.73"),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("148.20.131.175"),
-
-System.Net.IPAddress.Parse("142.87.184.85"),
-
-System.Net.IPAddress.Parse("165.109.68.124"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 142,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("51.252.142.192"),
-
-System.Net.IPAddress.Parse("76.137.47.18"),
-
-System.Net.IPAddress.Parse("216.146.140.181"),
-
-System.Net.IPAddress.Parse("219.107.251.76"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
 {
     Id = 78,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("22.249.213.231"),
-
-System.Net.IPAddress.Parse("71.15.78.83"),
-
-System.Net.IPAddress.Parse("55.203.210.213"),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("114.202.209.250"),
-
-System.Net.IPAddress.Parse("29.158.17.169"),
-
-System.Net.IPAddress.Parse("74.24.117.211"),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("153.90.4.79"),
-
-System.Net.IPAddress.Parse("162.9.201.129"),
-
-System.Net.IPAddress.Parse("127.40.223.34"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 147,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("9.96.174.44"),
-
-System.Net.IPAddress.Parse("208.125.147.135"),
-
-System.Net.IPAddress.Parse("209.12.109.6"),
-
-},
-    ModelInner = null,
-    NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("218.71.42.28"),
+System.Net.IPAddress.Parse("145.198.139.155"),
 
-System.Net.IPAddress.Parse("206.140.222.107"),
+System.Net.IPAddress.Parse("94.56.66.170"),
 
-System.Net.IPAddress.Parse("244.13.162.96"),
+System.Net.IPAddress.Parse("45.37.116.131"),
 
-System.Net.IPAddress.Parse("88.166.104.13"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 149,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("201.208.29.4"),
-
-System.Net.IPAddress.Parse("19.98.42.127"),
-
-System.Net.IPAddress.Parse("46.12.84.253"),
+System.Net.IPAddress.Parse("112.91.227.7"),
 
 },
     ModelInner = new IPAddressinetArray2MI
+{
+    Id = 51,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("2.220.161.134"),
+
+System.Net.IPAddress.Parse("146.119.21.89"),
+
+System.Net.IPAddress.Parse("114.188.132.234"),
+
+System.Net.IPAddress.Parse("87.170.210.114"),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("250.243.112.151"),
+
+System.Net.IPAddress.Parse("39.16.180.233"),
+
+System.Net.IPAddress.Parse("186.210.209.108"),
+
+},
+},
+    NullableValue = null,
+},
+            new IPAddressinetArray2M
 {
     Id = 84,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("151.194.21.69"),
+System.Net.IPAddress.Parse("123.63.167.221"),
 
-System.Net.IPAddress.Parse("161.21.2.10"),
+System.Net.IPAddress.Parse("244.224.223.69"),
 
-System.Net.IPAddress.Parse("91.46.103.41"),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("66.62.33.214"),
-
-System.Net.IPAddress.Parse("158.24.25.225"),
-
-System.Net.IPAddress.Parse("137.200.170.232"),
-
-System.Net.IPAddress.Parse("192.221.28.135"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 151,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("115.162.10.140"),
-
-System.Net.IPAddress.Parse("2.25.196.180"),
-
-System.Net.IPAddress.Parse("163.70.143.72"),
+System.Net.IPAddress.Parse("159.211.140.200"),
 
 },
     ModelInner = null,
@@ -880,82 +698,429 @@ System.Net.IPAddress.Parse("163.70.143.72"),
 },
             new IPAddressinetArray2M
 {
-    Id = 153,
+    Id = 91,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("215.149.121.195"),
+System.Net.IPAddress.Parse("128.8.75.15"),
 
-System.Net.IPAddress.Parse("150.76.252.40"),
+System.Net.IPAddress.Parse("60.2.126.161"),
 
-System.Net.IPAddress.Parse("88.191.191.49"),
+System.Net.IPAddress.Parse("226.2.87.34"),
 
-System.Net.IPAddress.Parse("179.62.147.123"),
+System.Net.IPAddress.Parse("25.72.51.201"),
 
 },
     ModelInner = new IPAddressinetArray2MI
 {
-    Id = 86,
+    Id = 54,
     Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("85.239.101.225"),
+System.Net.IPAddress.Parse("132.253.129.47"),
 
-System.Net.IPAddress.Parse("187.242.169.80"),
+System.Net.IPAddress.Parse("68.74.200.110"),
 
-System.Net.IPAddress.Parse("180.242.91.172"),
+System.Net.IPAddress.Parse("124.127.147.190"),
+
+System.Net.IPAddress.Parse("22.35.77.245"),
 
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("107.236.252.180"),
+System.Net.IPAddress.Parse("122.219.253.168"),
 
-System.Net.IPAddress.Parse("253.82.40.49"),
+System.Net.IPAddress.Parse("145.8.61.165"),
 
-System.Net.IPAddress.Parse("147.142.97.76"),
+System.Net.IPAddress.Parse("107.103.3.9"),
 
-System.Net.IPAddress.Parse("108.0.242.197"),
+System.Net.IPAddress.Parse("67.87.91.244"),
 
 },
 },
     NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("18.197.19.228"),
+System.Net.IPAddress.Parse("3.253.12.198"),
 
-System.Net.IPAddress.Parse("14.115.210.21"),
+System.Net.IPAddress.Parse("210.46.133.129"),
 
-System.Net.IPAddress.Parse("9.88.161.173"),
+System.Net.IPAddress.Parse("143.185.128.88"),
+
+System.Net.IPAddress.Parse("166.163.246.84"),
 
 },
 },
             new IPAddressinetArray2M
 {
-    Id = 156,
+    Id = 95,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("36.182.228.238"),
+System.Net.IPAddress.Parse("240.84.84.201"),
 
-System.Net.IPAddress.Parse("221.171.31.94"),
+System.Net.IPAddress.Parse("33.143.105.38"),
 
-System.Net.IPAddress.Parse("133.142.122.89"),
+System.Net.IPAddress.Parse("191.193.6.27"),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("79.124.95.215"),
+
+System.Net.IPAddress.Parse("122.168.103.159"),
+
+System.Net.IPAddress.Parse("49.22.40.134"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 96,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("136.250.106.106"),
+
+System.Net.IPAddress.Parse("18.202.30.4"),
+
+System.Net.IPAddress.Parse("147.159.88.111"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 60,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("33.80.99.183"),
+
+System.Net.IPAddress.Parse("151.105.73.91"),
+
+System.Net.IPAddress.Parse("123.14.45.173"),
+
+System.Net.IPAddress.Parse("7.5.137.91"),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("47.5.167.7"),
+
+System.Net.IPAddress.Parse("34.19.4.196"),
+
+System.Net.IPAddress.Parse("197.7.148.227"),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("185.202.7.143"),
+
+System.Net.IPAddress.Parse("162.12.95.186"),
+
+System.Net.IPAddress.Parse("115.218.196.106"),
+
+System.Net.IPAddress.Parse("43.159.16.214"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 103,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("34.56.249.7"),
+
+System.Net.IPAddress.Parse("238.79.209.84"),
+
+System.Net.IPAddress.Parse("183.243.108.68"),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("245.165.161.160"),
+
+System.Net.IPAddress.Parse("189.169.154.135"),
+
+System.Net.IPAddress.Parse("252.23.103.63"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 108,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("252.121.119.66"),
+
+System.Net.IPAddress.Parse("128.225.109.169"),
+
+System.Net.IPAddress.Parse("24.168.194.138"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 69,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("113.72.73.49"),
+
+System.Net.IPAddress.Parse("226.175.250.251"),
+
+System.Net.IPAddress.Parse("172.37.124.158"),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("127.92.92.232"),
+
+System.Net.IPAddress.Parse("196.183.56.239"),
+
+System.Net.IPAddress.Parse("207.226.231.214"),
+
+},
+},
+    NullableValue = null,
+},
+            new IPAddressinetArray2M
+{
+    Id = 115,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("45.78.120.232"),
+
+System.Net.IPAddress.Parse("104.215.22.38"),
+
+System.Net.IPAddress.Parse("52.222.159.89"),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("217.220.123.184"),
+System.Net.IPAddress.Parse("17.74.90.18"),
 
-System.Net.IPAddress.Parse("218.99.92.154"),
+System.Net.IPAddress.Parse("71.250.164.206"),
 
-System.Net.IPAddress.Parse("131.41.33.185"),
+System.Net.IPAddress.Parse("149.61.66.29"),
 
-System.Net.IPAddress.Parse("145.233.6.156"),
+System.Net.IPAddress.Parse("71.148.68.217"),
 
 },
+},
+            new IPAddressinetArray2M
+{
+    Id = 121,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("195.41.146.250"),
+
+System.Net.IPAddress.Parse("224.78.2.240"),
+
+System.Net.IPAddress.Parse("27.9.88.218"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 71,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("166.148.99.129"),
+
+System.Net.IPAddress.Parse("77.133.100.34"),
+
+System.Net.IPAddress.Parse("254.104.128.16"),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("134.157.186.156"),
+
+System.Net.IPAddress.Parse("237.94.20.162"),
+
+System.Net.IPAddress.Parse("12.134.167.40"),
+
+System.Net.IPAddress.Parse("31.141.246.225"),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("116.200.143.199"),
+
+System.Net.IPAddress.Parse("53.51.170.79"),
+
+System.Net.IPAddress.Parse("29.20.91.68"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 127,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("15.221.112.215"),
+
+System.Net.IPAddress.Parse("106.67.147.79"),
+
+System.Net.IPAddress.Parse("252.199.223.36"),
+
+System.Net.IPAddress.Parse("47.73.45.70"),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new IPAddressinetArray2M
+{
+    Id = 132,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("7.249.42.107"),
+
+System.Net.IPAddress.Parse("11.219.188.90"),
+
+System.Net.IPAddress.Parse("57.149.169.244"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 80,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("21.144.145.84"),
+
+System.Net.IPAddress.Parse("44.1.245.141"),
+
+System.Net.IPAddress.Parse("51.135.31.50"),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("142.82.105.154"),
+
+System.Net.IPAddress.Parse("146.228.31.42"),
+
+System.Net.IPAddress.Parse("223.7.185.3"),
+
+System.Net.IPAddress.Parse("206.80.57.154"),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("116.173.94.67"),
+
+System.Net.IPAddress.Parse("130.193.202.73"),
+
+System.Net.IPAddress.Parse("245.136.145.246"),
+
+System.Net.IPAddress.Parse("78.148.156.66"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 137,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(4)
+{
+System.Net.IPAddress.Parse("110.249.45.235"),
+
+System.Net.IPAddress.Parse("120.232.141.112"),
+
+System.Net.IPAddress.Parse("101.195.86.48"),
+
+System.Net.IPAddress.Parse("139.57.204.42"),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new IPAddressinetArray2M
+{
+    Id = 145,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("19.139.119.87"),
+
+System.Net.IPAddress.Parse("239.25.27.194"),
+
+System.Net.IPAddress.Parse("10.10.59.95"),
+
+},
+    ModelInner = new IPAddressinetArray2MI
+{
+    Id = 85,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("177.1.71.15"),
+
+System.Net.IPAddress.Parse("60.69.20.207"),
+
+System.Net.IPAddress.Parse("213.214.42.8"),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("242.200.9.221"),
+
+System.Net.IPAddress.Parse("63.108.59.92"),
+
+System.Net.IPAddress.Parse("85.149.39.41"),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("55.120.176.234"),
+
+System.Net.IPAddress.Parse("133.212.145.134"),
+
+System.Net.IPAddress.Parse("146.94.122.186"),
+
+},
+},
+            new IPAddressinetArray2M
+{
+    Id = 152,
+    Value = 
+new System.Collections.Generic.List<System.Net.IPAddress>(3)
+{
+System.Net.IPAddress.Parse("118.98.249.81"),
+
+System.Net.IPAddress.Parse("63.54.169.127"),
+
+System.Net.IPAddress.Parse("231.230.248.123"),
+
+},
+    ModelInner = null,
+    NullableValue = null,
 },
             new IPAddressinetArray2M
 {
@@ -963,81 +1128,11 @@ System.Net.IPAddress.Parse("145.233.6.156"),
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("204.48.143.222"),
+System.Net.IPAddress.Parse("37.176.96.33"),
 
-System.Net.IPAddress.Parse("115.180.189.58"),
+System.Net.IPAddress.Parse("213.55.31.26"),
 
-System.Net.IPAddress.Parse("36.26.34.234"),
-
-},
-    ModelInner = new IPAddressinetArray2MI
-{
-    Id = 88,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("192.222.169.138"),
-
-System.Net.IPAddress.Parse("162.127.168.162"),
-
-System.Net.IPAddress.Parse("118.12.14.92"),
-
-System.Net.IPAddress.Parse("198.141.160.40"),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("1.27.201.125"),
-
-System.Net.IPAddress.Parse("88.34.248.144"),
-
-System.Net.IPAddress.Parse("103.83.229.177"),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("100.153.250.176"),
-
-System.Net.IPAddress.Parse("7.113.112.73"),
-
-System.Net.IPAddress.Parse("37.40.69.160"),
-
-},
-},
-            new IPAddressinetArray2M
-{
-    Id = 162,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("197.143.241.64"),
-
-System.Net.IPAddress.Parse("64.37.248.69"),
-
-System.Net.IPAddress.Parse("54.190.10.239"),
-
-System.Net.IPAddress.Parse("80.142.180.105"),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new IPAddressinetArray2M
-{
-    Id = 166,
-    Value = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("245.36.153.112"),
-
-System.Net.IPAddress.Parse("230.99.233.112"),
-
-System.Net.IPAddress.Parse("73.185.14.48"),
-
-System.Net.IPAddress.Parse("126.118.225.96"),
+System.Net.IPAddress.Parse("120.185.115.180"),
 
 },
     ModelInner = new IPAddressinetArray2MI
@@ -1046,50 +1141,30 @@ System.Net.IPAddress.Parse("126.118.225.96"),
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(3)
 {
-System.Net.IPAddress.Parse("26.117.168.129"),
+System.Net.IPAddress.Parse("145.10.237.174"),
 
-System.Net.IPAddress.Parse("238.76.35.153"),
+System.Net.IPAddress.Parse("131.65.243.215"),
 
-System.Net.IPAddress.Parse("61.5.75.38"),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(3)
-{
-System.Net.IPAddress.Parse("206.233.246.109"),
-
-System.Net.IPAddress.Parse("75.175.35.172"),
-
-System.Net.IPAddress.Parse("244.95.194.241"),
+System.Net.IPAddress.Parse("184.92.125.39"),
 
 },
+    NullableValue = null,
 },
-    NullableValue = 
-new System.Collections.Generic.List<System.Net.IPAddress>(4)
-{
-System.Net.IPAddress.Parse("85.229.220.142"),
-
-System.Net.IPAddress.Parse("13.183.239.65"),
-
-System.Net.IPAddress.Parse("132.63.36.210"),
-
-System.Net.IPAddress.Parse("215.160.46.73"),
-
-},
+    NullableValue = null,
 },
             new IPAddressinetArray2M
 {
-    Id = 173,
+    Id = 161,
     Value = 
 new System.Collections.Generic.List<System.Net.IPAddress>(4)
 {
-System.Net.IPAddress.Parse("141.215.253.199"),
+System.Net.IPAddress.Parse("86.15.83.22"),
 
-System.Net.IPAddress.Parse("165.66.208.65"),
+System.Net.IPAddress.Parse("8.211.113.5"),
 
-System.Net.IPAddress.Parse("2.16.16.47"),
+System.Net.IPAddress.Parse("234.109.241.66"),
 
-System.Net.IPAddress.Parse("214.38.42.63"),
+System.Net.IPAddress.Parse("118.193.241.199"),
 
 },
     ModelInner = null,
@@ -2115,12 +2190,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 153;
+                parametr1.Value = 103;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 57;
+                parametr2.Value = 63;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2156,70 +2231,68 @@ ORDER BY
                 var secondItems1 = new List<FlatIPAddressinetArray2M>();
                 var secondItems2 = new List<FlatIPAddressinetArray2M>();
                 await ((IIPAddressListinetArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(5));
-                Assert.That(firstItems2, Has.Count.EqualTo(5));
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[4],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(25));
-                Assert.That(secondItems2, Has.Count.EqualTo(25));
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[8],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[9],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[10],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[11],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[12],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[13],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[14],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[15],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[15],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[16],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[16],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[17],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[17],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[18],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[18],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[19],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[19],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[20],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[20],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[21],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[21],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[22],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[22],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[23],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[23],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[24],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[24],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(10));
+                Assert.That(firstItems2, Has.Count.EqualTo(10));
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[4],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[5],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[6],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[7],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[8],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[9],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(19));
+                Assert.That(secondItems2, Has.Count.EqualTo(19));
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[8],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[9],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[10],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[11],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[12],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[13],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[14],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[15],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[15],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[16],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[16],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[17],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[17],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[18],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[18],_testData[34], false);
             }
         }
 
@@ -2230,12 +2303,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 67;
+                parametr1.Value = 127;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 157;
+                parametr2.Value = 95;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2267,58 +2340,33 @@ ORDER BY
                 var firstItems2 = new List<FlatIPAddressinetArray2M>();
                 var secondItems1 = new List<FlatIPAddressinetArray2M>();
                 await ((IIPAddressListinetArray)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(23));
-                Assert.That(firstItems2, Has.Count.EqualTo(23));
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[4],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[5],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[6],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[7],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[8],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[9],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[10],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[11],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[12],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[13],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[13],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[14],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[14],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[15],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[15],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[16],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[16],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[17],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[17],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[18],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[18],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[19],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[19],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[20],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[20],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[21],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[21],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[22],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[22],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(3));
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(6));
+                Assert.That(firstItems2, Has.Count.EqualTo(6));
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[4],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[5],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(12));
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[34], false);
             }
         }
 
@@ -2366,12 +2414,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 52;
+                parametr1.Value = 6;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 124;
+                parametr2.Value = 132;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2407,133 +2455,6 @@ ORDER BY
                 var secondItems1 = new List<FlatIPAddressinetArray2M>();
                 var secondItems2 = new List<FlatIPAddressinetArray2M>();
                  ((IIPAddressListinetArray)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(26));
-                Assert.That(firstItems2, Has.Count.EqualTo(26));
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[4],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[5],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[6],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[7],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[8],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[9],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[10],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[11],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[12],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[13],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[13],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[14],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[14],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[15],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[15],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[16],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[16],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[17],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[17],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[18],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[18],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[19],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[19],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[20],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[20],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[21],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[21],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[22],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[22],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[23],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[23],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[24],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[24],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[25],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[25],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(12));
-                Assert.That(secondItems2, Has.Count.EqualTo(12));
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[8],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[9],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[10],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[11],_testData[34], false);
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionMMDynQuerySelectModelDynParBatchTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 15;
-                parametr1.DbType = (System.Data.DbType)(11);
-                parametr1.ParameterName = "id";
-
-                var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 85;
-                parametr2.DbType = (System.Data.DbType)(11);
-                parametr2.ParameterName = "id";
-                var query1 = @"
-SELECT
-    m.id AS item1id,
-    m.value AS item1value,
-    m.nullablevalue AS item1nullablevalue,
-    m.id AS item2id,
-    m.value AS item2value,
-    m.nullablevalue AS item2nullablevalue
-FROM public.ipaddressinetarray2m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var query2 = @"
-SELECT
-    m.id,
-    m.value,
-    m.nullablevalue
-FROM public.ipaddressinetarray2m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var firstItems1 = new List<FlatIPAddressinetArray2M>();
-                var firstItems2 = new List<FlatIPAddressinetArray2M>();
-                var secondItems1 = new List<FlatIPAddressinetArray2M>();
-                 ((IIPAddressListinetArray)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
                 Assert.That(firstItems1, Has.Count.EqualTo(32));
                 Assert.That(firstItems2, Has.Count.EqualTo(32));
                         FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[3], false);
@@ -2600,27 +2521,110 @@ ORDER BY
                         FlatIPAddressinetArray2M.AssertModel(firstItems2[30],_testData[33], false);
                         FlatIPAddressinetArray2M.AssertModel(firstItems1[31],_testData[34], false);
                         FlatIPAddressinetArray2M.AssertModel(firstItems2[31],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(20));
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[15],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[16],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[17],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[18],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[19],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(5));
+                Assert.That(secondItems2, Has.Count.EqualTo(5));
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[34], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionMMDynQuerySelectModelDynParBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var parametr1 = connection.CreateCommand().CreateParameter();
+                parametr1.Value = 67;
+                parametr1.DbType = (System.Data.DbType)(11);
+                parametr1.ParameterName = "id";
+
+                var parametr2 = connection.CreateCommand().CreateParameter();
+                parametr2.Value = 127;
+                parametr2.DbType = (System.Data.DbType)(11);
+                parametr2.ParameterName = "id";
+                var query1 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.ipaddressinetarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.ipaddressinetarray2m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatIPAddressinetArray2M>();
+                var firstItems2 = new List<FlatIPAddressinetArray2M>();
+                var secondItems1 = new List<FlatIPAddressinetArray2M>();
+                 ((IIPAddressListinetArray)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(18));
+                Assert.That(firstItems2, Has.Count.EqualTo(18));
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[4],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[5],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[6],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[7],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[8],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[9],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[10],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[11],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[12],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[13],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[13],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[14],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[14],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[15],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[15],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[16],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[16],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[17],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[17],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(6));
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[34], false);
             }
         }
 
@@ -2708,12 +2712,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 71;
+                parametr1.Value = 67;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 45;
+                parametr2.Value = 37;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2744,65 +2748,58 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
+                        Assert.That(models, Has.Count.EqualTo(18));
 
-                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[18],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[19],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[20],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[21],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
+                        Assert.That(models, Has.Count.EqualTo(24));
 
-                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[8], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[18],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[19],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[20],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[21],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[22],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[23],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[24],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[25],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[26],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[11], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[12], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[13], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[14], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[15], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[18],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[19],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[20],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[21],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[22],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[23],_testData[34], false);
                         continue;
                     }
                     
@@ -2818,12 +2815,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 85;
+                parametr1.Value = 91;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 71;
+                parametr2.Value = 152;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2855,73 +2852,26 @@ ORDER BY
                 var secondItems1 = new List<FlatIPAddressinetArray2M>();
                 var secondItems2 = new List<FlatIPAddressinetArray2M>();
                 await ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(20));
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[13],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[14],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[15],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[16],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[17],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[18],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[19],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(22));
-                Assert.That(secondItems2, Has.Count.EqualTo(22));
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[8],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[9],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[10],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[11],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[12],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[13],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[14],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[15],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[15],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[16],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[16],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[17],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[17],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[18],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[18],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[19],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[19],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[20],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[20],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[21],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[21],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(13));
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(2));
+                Assert.That(secondItems2, Has.Count.EqualTo(2));
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[34], false);
             }
         }
 
@@ -2962,12 +2912,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 9;
+                parametr1.Value = 15;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 97;
+                parametr2.Value = 15;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2998,67 +2948,78 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(34));
+                        Assert.That(models, Has.Count.EqualTo(31));
 
-                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[1], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[2], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[3], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[4], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[5], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[6], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[7], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[8], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[18],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[19],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[20],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[21],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[22],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[23],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[24],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[25],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[26],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[27],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[28],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[29],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[30],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[31],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[32],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[33],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[4], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[5], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[6], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[7], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[8], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[9], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[10], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[11], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[12], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[13], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[14], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[15], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[18],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[19],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[20],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[21],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[22],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[23],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[24],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[25],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[26],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[27],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[28],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[29],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[30],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(17));
+                        Assert.That(models, Has.Count.EqualTo(31));
 
-                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[4], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[5], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[6], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[7], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[8], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[9], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[10], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[11], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[12], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[13], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[14], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[15], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[18],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[19],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[20],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[21],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[22],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[23],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[24],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[25],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[26],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[27],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[28],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[29],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[30],_testData[34], false);
                         continue;
                     }
                     
@@ -3074,12 +3035,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 153;
+                parametr1.Value = 103;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 109;
+                parametr2.Value = 78;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -3111,42 +3072,49 @@ ORDER BY
                 var secondItems1 = new List<FlatIPAddressinetArray2M>();
                 var secondItems2 = new List<FlatIPAddressinetArray2M>();
                  ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(5));
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(14));
-                Assert.That(secondItems2, Has.Count.EqualTo(14));
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[8],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[9],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[10],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[11],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[12],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[13],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(10));
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(15));
+                Assert.That(secondItems2, Has.Count.EqualTo(15));
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[8],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[9],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[10],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[11],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[12],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[13],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[14],_testData[34], false);
             }
         }
 
@@ -3226,12 +3194,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 62;
+                parametr1.Value = 152;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 67;
+                parametr2.Value = 77;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -3240,63 +3208,34 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(24));
+                        Assert.That(models, Has.Count.EqualTo(2));
 
-                        IPAddressinetArray2M.AssertModel(models[0],_testData[11], false);
-                        IPAddressinetArray2M.AssertModel(models[1],_testData[12], false);
-                        IPAddressinetArray2M.AssertModel(models[2],_testData[13], false);
-                        IPAddressinetArray2M.AssertModel(models[3],_testData[14], false);
-                        IPAddressinetArray2M.AssertModel(models[4],_testData[15], false);
-                        IPAddressinetArray2M.AssertModel(models[5],_testData[16], false);
-                        IPAddressinetArray2M.AssertModel(models[6],_testData[17], false);
-                        IPAddressinetArray2M.AssertModel(models[7],_testData[18], false);
-                        IPAddressinetArray2M.AssertModel(models[8],_testData[19], false);
-                        IPAddressinetArray2M.AssertModel(models[9],_testData[20], false);
-                        IPAddressinetArray2M.AssertModel(models[10],_testData[21], false);
-                        IPAddressinetArray2M.AssertModel(models[11],_testData[22], false);
-                        IPAddressinetArray2M.AssertModel(models[12],_testData[23], false);
-                        IPAddressinetArray2M.AssertModel(models[13],_testData[24], false);
-                        IPAddressinetArray2M.AssertModel(models[14],_testData[25], false);
-                        IPAddressinetArray2M.AssertModel(models[15],_testData[26], false);
-                        IPAddressinetArray2M.AssertModel(models[16],_testData[27], false);
-                        IPAddressinetArray2M.AssertModel(models[17],_testData[28], false);
-                        IPAddressinetArray2M.AssertModel(models[18],_testData[29], false);
-                        IPAddressinetArray2M.AssertModel(models[19],_testData[30], false);
-                        IPAddressinetArray2M.AssertModel(models[20],_testData[31], false);
-                        IPAddressinetArray2M.AssertModel(models[21],_testData[32], false);
-                        IPAddressinetArray2M.AssertModel(models[22],_testData[33], false);
-                        IPAddressinetArray2M.AssertModel(models[23],_testData[34], false);
+                        IPAddressinetArray2M.AssertModel(models[0],_testData[33], false);
+                        IPAddressinetArray2M.AssertModel(models[1],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
+                        Assert.That(models, Has.Count.EqualTo(16));
 
-                        IPAddressinetArray2M.AssertModel(models[0],_testData[12], false);
-                        IPAddressinetArray2M.AssertModel(models[1],_testData[13], false);
-                        IPAddressinetArray2M.AssertModel(models[2],_testData[14], false);
-                        IPAddressinetArray2M.AssertModel(models[3],_testData[15], false);
-                        IPAddressinetArray2M.AssertModel(models[4],_testData[16], false);
-                        IPAddressinetArray2M.AssertModel(models[5],_testData[17], false);
-                        IPAddressinetArray2M.AssertModel(models[6],_testData[18], false);
-                        IPAddressinetArray2M.AssertModel(models[7],_testData[19], false);
-                        IPAddressinetArray2M.AssertModel(models[8],_testData[20], false);
-                        IPAddressinetArray2M.AssertModel(models[9],_testData[21], false);
-                        IPAddressinetArray2M.AssertModel(models[10],_testData[22], false);
-                        IPAddressinetArray2M.AssertModel(models[11],_testData[23], false);
-                        IPAddressinetArray2M.AssertModel(models[12],_testData[24], false);
-                        IPAddressinetArray2M.AssertModel(models[13],_testData[25], false);
-                        IPAddressinetArray2M.AssertModel(models[14],_testData[26], false);
-                        IPAddressinetArray2M.AssertModel(models[15],_testData[27], false);
-                        IPAddressinetArray2M.AssertModel(models[16],_testData[28], false);
-                        IPAddressinetArray2M.AssertModel(models[17],_testData[29], false);
-                        IPAddressinetArray2M.AssertModel(models[18],_testData[30], false);
-                        IPAddressinetArray2M.AssertModel(models[19],_testData[31], false);
-                        IPAddressinetArray2M.AssertModel(models[20],_testData[32], false);
-                        IPAddressinetArray2M.AssertModel(models[21],_testData[33], false);
-                        IPAddressinetArray2M.AssertModel(models[22],_testData[34], false);
+                        IPAddressinetArray2M.AssertModel(models[0],_testData[19], false);
+                        IPAddressinetArray2M.AssertModel(models[1],_testData[20], false);
+                        IPAddressinetArray2M.AssertModel(models[2],_testData[21], false);
+                        IPAddressinetArray2M.AssertModel(models[3],_testData[22], false);
+                        IPAddressinetArray2M.AssertModel(models[4],_testData[23], false);
+                        IPAddressinetArray2M.AssertModel(models[5],_testData[24], false);
+                        IPAddressinetArray2M.AssertModel(models[6],_testData[25], false);
+                        IPAddressinetArray2M.AssertModel(models[7],_testData[26], false);
+                        IPAddressinetArray2M.AssertModel(models[8],_testData[27], false);
+                        IPAddressinetArray2M.AssertModel(models[9],_testData[28], false);
+                        IPAddressinetArray2M.AssertModel(models[10],_testData[29], false);
+                        IPAddressinetArray2M.AssertModel(models[11],_testData[30], false);
+                        IPAddressinetArray2M.AssertModel(models[12],_testData[31], false);
+                        IPAddressinetArray2M.AssertModel(models[13],_testData[32], false);
+                        IPAddressinetArray2M.AssertModel(models[14],_testData[33], false);
+                        IPAddressinetArray2M.AssertModel(models[15],_testData[34], false);
                         continue;
                     }
                     
@@ -3331,12 +3270,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 97;
+                parametr1.Value = 115;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 156;
+                parametr2.Value = 6;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -3345,37 +3284,56 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(17));
+                        Assert.That(models, Has.Count.EqualTo(8));
 
-                        IPAddressinetArray2M.AssertModel(models[0],_testData[18], false);
-                        IPAddressinetArray2M.AssertModel(models[1],_testData[19], false);
-                        IPAddressinetArray2M.AssertModel(models[2],_testData[20], false);
-                        IPAddressinetArray2M.AssertModel(models[3],_testData[21], false);
-                        IPAddressinetArray2M.AssertModel(models[4],_testData[22], false);
-                        IPAddressinetArray2M.AssertModel(models[5],_testData[23], false);
-                        IPAddressinetArray2M.AssertModel(models[6],_testData[24], false);
-                        IPAddressinetArray2M.AssertModel(models[7],_testData[25], false);
-                        IPAddressinetArray2M.AssertModel(models[8],_testData[26], false);
-                        IPAddressinetArray2M.AssertModel(models[9],_testData[27], false);
-                        IPAddressinetArray2M.AssertModel(models[10],_testData[28], false);
-                        IPAddressinetArray2M.AssertModel(models[11],_testData[29], false);
-                        IPAddressinetArray2M.AssertModel(models[12],_testData[30], false);
-                        IPAddressinetArray2M.AssertModel(models[13],_testData[31], false);
-                        IPAddressinetArray2M.AssertModel(models[14],_testData[32], false);
-                        IPAddressinetArray2M.AssertModel(models[15],_testData[33], false);
-                        IPAddressinetArray2M.AssertModel(models[16],_testData[34], false);
+                        IPAddressinetArray2M.AssertModel(models[0],_testData[27], false);
+                        IPAddressinetArray2M.AssertModel(models[1],_testData[28], false);
+                        IPAddressinetArray2M.AssertModel(models[2],_testData[29], false);
+                        IPAddressinetArray2M.AssertModel(models[3],_testData[30], false);
+                        IPAddressinetArray2M.AssertModel(models[4],_testData[31], false);
+                        IPAddressinetArray2M.AssertModel(models[5],_testData[32], false);
+                        IPAddressinetArray2M.AssertModel(models[6],_testData[33], false);
+                        IPAddressinetArray2M.AssertModel(models[7],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
+                        Assert.That(models, Has.Count.EqualTo(32));
 
-                        IPAddressinetArray2M.AssertModel(models[0],_testData[31], false);
-                        IPAddressinetArray2M.AssertModel(models[1],_testData[32], false);
-                        IPAddressinetArray2M.AssertModel(models[2],_testData[33], false);
-                        IPAddressinetArray2M.AssertModel(models[3],_testData[34], false);
+                        IPAddressinetArray2M.AssertModel(models[0],_testData[3], false);
+                        IPAddressinetArray2M.AssertModel(models[1],_testData[4], false);
+                        IPAddressinetArray2M.AssertModel(models[2],_testData[5], false);
+                        IPAddressinetArray2M.AssertModel(models[3],_testData[6], false);
+                        IPAddressinetArray2M.AssertModel(models[4],_testData[7], false);
+                        IPAddressinetArray2M.AssertModel(models[5],_testData[8], false);
+                        IPAddressinetArray2M.AssertModel(models[6],_testData[9], false);
+                        IPAddressinetArray2M.AssertModel(models[7],_testData[10], false);
+                        IPAddressinetArray2M.AssertModel(models[8],_testData[11], false);
+                        IPAddressinetArray2M.AssertModel(models[9],_testData[12], false);
+                        IPAddressinetArray2M.AssertModel(models[10],_testData[13], false);
+                        IPAddressinetArray2M.AssertModel(models[11],_testData[14], false);
+                        IPAddressinetArray2M.AssertModel(models[12],_testData[15], false);
+                        IPAddressinetArray2M.AssertModel(models[13],_testData[16], false);
+                        IPAddressinetArray2M.AssertModel(models[14],_testData[17], false);
+                        IPAddressinetArray2M.AssertModel(models[15],_testData[18], false);
+                        IPAddressinetArray2M.AssertModel(models[16],_testData[19], false);
+                        IPAddressinetArray2M.AssertModel(models[17],_testData[20], false);
+                        IPAddressinetArray2M.AssertModel(models[18],_testData[21], false);
+                        IPAddressinetArray2M.AssertModel(models[19],_testData[22], false);
+                        IPAddressinetArray2M.AssertModel(models[20],_testData[23], false);
+                        IPAddressinetArray2M.AssertModel(models[21],_testData[24], false);
+                        IPAddressinetArray2M.AssertModel(models[22],_testData[25], false);
+                        IPAddressinetArray2M.AssertModel(models[23],_testData[26], false);
+                        IPAddressinetArray2M.AssertModel(models[24],_testData[27], false);
+                        IPAddressinetArray2M.AssertModel(models[25],_testData[28], false);
+                        IPAddressinetArray2M.AssertModel(models[26],_testData[29], false);
+                        IPAddressinetArray2M.AssertModel(models[27],_testData[30], false);
+                        IPAddressinetArray2M.AssertModel(models[28],_testData[31], false);
+                        IPAddressinetArray2M.AssertModel(models[29],_testData[32], false);
+                        IPAddressinetArray2M.AssertModel(models[30],_testData[33], false);
+                        IPAddressinetArray2M.AssertModel(models[31],_testData[34], false);
                         continue;
                     }
                     
@@ -3506,67 +3464,101 @@ ORDER BY
                 var firstItems2 = new List<FlatIPAddressinetArray2M>();
                 var secondItems1 = new List<FlatIPAddressinetArray2M>();
                 var secondItems2 = new List<FlatIPAddressinetArray2M>();
-                await ((IIPAddressListinetArray)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 85, query1, 147, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(20));
-                Assert.That(firstItems2, Has.Count.EqualTo(20));
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[4],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[5],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[6],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[7],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[8],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[9],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[10],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[11],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[12],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[13],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[13],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[14],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[14],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[15],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[15],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[16],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[16],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[17],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[17],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[18],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[18],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[19],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[19],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(8));
-                Assert.That(secondItems2, Has.Count.EqualTo(8));
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[34], false);
+                await ((IIPAddressListinetArray)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 63, query1, 30, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(19));
+                Assert.That(firstItems2, Has.Count.EqualTo(19));
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[4],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[5],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[6],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[7],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[8],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[9],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[10],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[11],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[12],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[13],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[13],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[14],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[14],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[15],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[15],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[16],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[16],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[17],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[17],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[18],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[18],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(26));
+                Assert.That(secondItems2, Has.Count.EqualTo(26));
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[9], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[9], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[10], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[10], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[11], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[11], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[12], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[12], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[13], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[13], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[14], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[14], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[15], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[15], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[8],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[9],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[10],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[11],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[12],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[13],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[14],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[15],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[15],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[16],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[16],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[17],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[17],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[18],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[18],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[19],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[19],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[20],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[20],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[21],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[21],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[22],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[22],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[23],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[23],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[24],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[24],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[25],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[25],_testData[34], false);
             }
         }
 
@@ -3604,81 +3596,78 @@ ORDER BY
                 var firstItems1 = new List<FlatIPAddressinetArray2M>();
                 var firstItems2 = new List<FlatIPAddressinetArray2M>();
                 var secondItems1 = new List<FlatIPAddressinetArray2M>();
-                await ((IIPAddressListinetArray)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 37, query1, 107, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(28));
-                Assert.That(firstItems2, Has.Count.EqualTo(28));
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[7], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[7], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[8], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[8], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[4],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[5],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[6],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[7],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[8],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[9],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[10],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[11],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[12],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[13],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[13],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[14],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[14],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[15],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[15],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[16],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[16],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[17],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[17],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[18],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[18],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[19],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[19],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[20],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[20],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[21],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[21],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[22],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[22],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[23],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[23],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[24],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[24],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[25],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[25],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[26],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[26],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[27],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[27],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(15));
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[34], false);
+                await ((IIPAddressListinetArray)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 67, query1, 6, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(18));
+                Assert.That(firstItems2, Has.Count.EqualTo(18));
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[4],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[5],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[6],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[7],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[8],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[9],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[10],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[11],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[12],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[13],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[13],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[14],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[14],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[15],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[15],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[16],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[16],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[17],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[17],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(32));
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[3], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[4], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[5], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[6], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[7], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[8], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[9], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[10], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[11], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[12], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[13], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[14], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[15], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[15],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[16],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[17],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[18],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[19],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[20],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[21],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[22],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[23],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[24],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[25],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[26],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[27],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[28],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[29],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[30],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[31],_testData[34], false);
             }
         }
 
@@ -3753,109 +3742,91 @@ ORDER BY
                 var firstItems2 = new List<FlatIPAddressinetArray2M>();
                 var secondItems1 = new List<FlatIPAddressinetArray2M>();
                 var secondItems2 = new List<FlatIPAddressinetArray2M>();
-                 ((IIPAddressListinetArray)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 15, query1, 97, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(32));
-                Assert.That(firstItems2, Has.Count.EqualTo(32));
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[3], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[3], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[4], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[4], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[5], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[5], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[6], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[6], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[7], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[4],_testData[7], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[8], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[5],_testData[8], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[6],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[7],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[8],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[9],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[10],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[11],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[12],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[13],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[13],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[14],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[14],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[15],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[15],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[16],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[16],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[17],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[17],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[18],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[18],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[19],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[19],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[20],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[20],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[21],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[21],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[22],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[22],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[23],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[23],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[24],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[24],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[25],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[25],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[26],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[26],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[27],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[27],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[28],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[28],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[29],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[29],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[30],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[30],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[31],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[31],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(17));
-                Assert.That(secondItems2, Has.Count.EqualTo(17));
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[8],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[9],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[10],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[11],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[12],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[13],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[14],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[15],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[15],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[16],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[16],_testData[34], false);
+                 ((IIPAddressListinetArray)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 127, query1, 3, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(6));
+                Assert.That(firstItems2, Has.Count.EqualTo(6));
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[4],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[5],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(34));
+                Assert.That(secondItems2, Has.Count.EqualTo(34));
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[1], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[1], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[2], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[2], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[3], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[3], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[4], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[4], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[5], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[5], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[6], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[6], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[7], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[7], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[8], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[8], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[9], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[8],_testData[9], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[10], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[9],_testData[10], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[11], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[10],_testData[11], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[12], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[11],_testData[12], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[13], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[12],_testData[13], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[14], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[13],_testData[14], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[15], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[14],_testData[15], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[15],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[15],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[16],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[16],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[17],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[17],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[18],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[18],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[19],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[19],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[20],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[20],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[21],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[21],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[22],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[22],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[23],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[23],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[24],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[24],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[25],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[25],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[26],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[26],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[27],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[27],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[28],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[28],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[29],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[29],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[30],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[30],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[31],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[31],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[32],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[32],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[33],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[33],_testData[34], false);
             }
         }
 
@@ -3893,33 +3864,48 @@ ORDER BY
                 var firstItems1 = new List<FlatIPAddressinetArray2M>();
                 var firstItems2 = new List<FlatIPAddressinetArray2M>();
                 var secondItems1 = new List<FlatIPAddressinetArray2M>();
-                 ((IIPAddressListinetArray)this).DbConnectionMMDynQuerySelectModelBatch(connection, 156, query1, 107, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(4));
-                Assert.That(firstItems2, Has.Count.EqualTo(4));
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems2[3],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(15));
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[34], false);
+                 ((IIPAddressListinetArray)this).DbConnectionMMDynQuerySelectModelBatch(connection, 145, query1, 6, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(3));
+                Assert.That(firstItems2, Has.Count.EqualTo(3));
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[0],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[1],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems2[2],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(32));
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[3], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[4], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[5], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[6], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[7], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[8], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[9], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[10], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[11], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[12], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[13], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[14], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[15], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[15],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[16],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[17],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[18],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[19],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[20],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[21],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[22],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[23],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[24],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[25],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[26],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[27],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[28],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[29],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[30],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[31],_testData[34], false);
             }
         }
 
@@ -4029,54 +4015,59 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IIPAddressListinetArray)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 151, query1, 45, query2))
+                foreach(var batchResult in await ((IIPAddressListinetArray)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 19, query1, 115, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
+                        Assert.That(models, Has.Count.EqualTo(30));
 
-                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[5], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[6], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[7], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[8], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[9], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[10], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[11], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[12], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[13], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[14], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[15], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[18],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[19],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[20],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[21],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[22],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[23],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[24],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[25],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[26],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[27],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[28],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[29],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
+                        Assert.That(models, Has.Count.EqualTo(8));
 
-                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[8], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[18],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[19],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[20],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[21],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[22],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[23],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[24],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[25],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[26],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[34], false);
                         continue;
                     }
                     
@@ -4119,80 +4110,31 @@ ORDER BY
                 var firstItems1 = new List<FlatIPAddressinetArray2M>();
                 var secondItems1 = new List<FlatIPAddressinetArray2M>();
                 var secondItems2 = new List<FlatIPAddressinetArray2M>();
-                await ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 101, query1, 45, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(16));
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[13],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[14],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[15],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(27));
-                Assert.That(secondItems2, Has.Count.EqualTo(27));
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[8], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[8], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[8],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[9],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[10],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[11],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[12],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[13],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[14],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[15],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[15],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[16],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[16],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[17],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[17],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[18],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[18],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[19],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[19],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[20],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[20],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[21],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[21],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[22],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[22],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[23],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[23],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[24],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[24],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[25],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[25],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[26],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[26],_testData[34], false);
+                await ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 121, query1, 121, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(7));
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(7));
+                Assert.That(secondItems2, Has.Count.EqualTo(7));
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[34], false);
             }
         }
 
@@ -4251,81 +4193,57 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IIPAddressListinetArray)this).DbConnectionSTDynQuerySelectModelBatch(connection, 52, query1, 9, query2))
+                foreach(var batchResult in  ((IIPAddressListinetArray)this).DbConnectionSTDynQuerySelectModelBatch(connection, 67, query1, 67, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(26));
+                        Assert.That(models, Has.Count.EqualTo(18));
 
-                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[18],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[19],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[20],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[21],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[22],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[23],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[24],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[25],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(34));
+                        Assert.That(models, Has.Count.EqualTo(18));
 
-                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[1], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[2], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[3], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[4], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[5], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[6], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[7], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[8], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[18],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[19],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[20],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[21],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[22],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[23],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[24],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[25],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[26],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[27],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[28],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[29],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[30],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[31],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[32],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(models[33],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[0],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[1],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[2],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[3],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[4],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[5],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[6],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[7],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[8],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[9],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[10],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[11],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[12],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[13],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[14],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[15],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[16],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(models[17],_testData[34], false);
                         continue;
                     }
                     
@@ -4368,87 +4286,47 @@ ORDER BY
                 var firstItems1 = new List<FlatIPAddressinetArray2M>();
                 var secondItems1 = new List<FlatIPAddressinetArray2M>();
                 var secondItems2 = new List<FlatIPAddressinetArray2M>();
-                 ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelBatch(connection, 89, query1, 29, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(19));
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[13],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[14],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[15],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[16],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[17],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(firstItems1[18],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(29));
-                Assert.That(secondItems2, Has.Count.EqualTo(29));
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[6], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[6], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[7], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[7], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[8], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[8], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[9], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[10], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[11], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[12], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[13], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[8],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[8],_testData[14], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[9],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[9],_testData[15], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[10],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[10],_testData[16], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[11],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[11],_testData[17], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[12],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[12],_testData[18], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[13],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[13],_testData[19], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[14],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[14],_testData[20], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[15],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[15],_testData[21], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[16],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[16],_testData[22], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[17],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[17],_testData[23], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[18],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[18],_testData[24], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[19],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[19],_testData[25], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[20],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[20],_testData[26], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[21],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[21],_testData[27], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[22],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[22],_testData[28], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[23],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[23],_testData[29], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[24],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[24],_testData[30], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[25],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[25],_testData[31], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[26],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[26],_testData[32], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[27],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[27],_testData[33], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems1[28],_testData[34], false);
-                        FlatIPAddressinetArray2M.AssertModel(secondItems2[28],_testData[34], false);
+                 ((IIPAddressListinetArray)this).DbConnectionDynQuerySelectModelBatch(connection, 52, query1, 115, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(21));
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[0],_testData[14], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[1],_testData[15], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[2],_testData[16], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[3],_testData[17], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[4],_testData[18], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[5],_testData[19], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[6],_testData[20], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[7],_testData[21], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[8],_testData[22], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[9],_testData[23], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[10],_testData[24], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[11],_testData[25], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[12],_testData[26], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[13],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[14],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[15],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[16],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[17],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[18],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[19],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(firstItems1[20],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(8));
+                Assert.That(secondItems2, Has.Count.EqualTo(8));
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[0],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[0],_testData[27], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[1],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[1],_testData[28], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[2],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[2],_testData[29], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[3],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[4],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[4],_testData[31], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[5],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[5],_testData[32], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[6],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[6],_testData[33], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems1[7],_testData[34], false);
+                        FlatIPAddressinetArray2M.AssertModel(secondItems2[7],_testData[34], false);
             }
         }
 
@@ -4528,80 +4406,66 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IIPAddressListinetArray)this).DbConnectionSTSelectModelBatchAsync(connection, 52, 11))
+                foreach(var batchResult in await ((IIPAddressListinetArray)this).DbConnectionSTSelectModelBatchAsync(connection, 19, 78))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(26));
+                        Assert.That(models, Has.Count.EqualTo(30));
 
-                        IPAddressinetArray2M.AssertModel(models[0],_testData[9], false);
-                        IPAddressinetArray2M.AssertModel(models[1],_testData[10], false);
-                        IPAddressinetArray2M.AssertModel(models[2],_testData[11], false);
-                        IPAddressinetArray2M.AssertModel(models[3],_testData[12], false);
-                        IPAddressinetArray2M.AssertModel(models[4],_testData[13], false);
-                        IPAddressinetArray2M.AssertModel(models[5],_testData[14], false);
-                        IPAddressinetArray2M.AssertModel(models[6],_testData[15], false);
-                        IPAddressinetArray2M.AssertModel(models[7],_testData[16], false);
-                        IPAddressinetArray2M.AssertModel(models[8],_testData[17], false);
-                        IPAddressinetArray2M.AssertModel(models[9],_testData[18], false);
-                        IPAddressinetArray2M.AssertModel(models[10],_testData[19], false);
-                        IPAddressinetArray2M.AssertModel(models[11],_testData[20], false);
-                        IPAddressinetArray2M.AssertModel(models[12],_testData[21], false);
-                        IPAddressinetArray2M.AssertModel(models[13],_testData[22], false);
-                        IPAddressinetArray2M.AssertModel(models[14],_testData[23], false);
-                        IPAddressinetArray2M.AssertModel(models[15],_testData[24], false);
-                        IPAddressinetArray2M.AssertModel(models[16],_testData[25], false);
-                        IPAddressinetArray2M.AssertModel(models[17],_testData[26], false);
-                        IPAddressinetArray2M.AssertModel(models[18],_testData[27], false);
-                        IPAddressinetArray2M.AssertModel(models[19],_testData[28], false);
-                        IPAddressinetArray2M.AssertModel(models[20],_testData[29], false);
-                        IPAddressinetArray2M.AssertModel(models[21],_testData[30], false);
-                        IPAddressinetArray2M.AssertModel(models[22],_testData[31], false);
-                        IPAddressinetArray2M.AssertModel(models[23],_testData[32], false);
-                        IPAddressinetArray2M.AssertModel(models[24],_testData[33], false);
-                        IPAddressinetArray2M.AssertModel(models[25],_testData[34], false);
+                        IPAddressinetArray2M.AssertModel(models[0],_testData[5], false);
+                        IPAddressinetArray2M.AssertModel(models[1],_testData[6], false);
+                        IPAddressinetArray2M.AssertModel(models[2],_testData[7], false);
+                        IPAddressinetArray2M.AssertModel(models[3],_testData[8], false);
+                        IPAddressinetArray2M.AssertModel(models[4],_testData[9], false);
+                        IPAddressinetArray2M.AssertModel(models[5],_testData[10], false);
+                        IPAddressinetArray2M.AssertModel(models[6],_testData[11], false);
+                        IPAddressinetArray2M.AssertModel(models[7],_testData[12], false);
+                        IPAddressinetArray2M.AssertModel(models[8],_testData[13], false);
+                        IPAddressinetArray2M.AssertModel(models[9],_testData[14], false);
+                        IPAddressinetArray2M.AssertModel(models[10],_testData[15], false);
+                        IPAddressinetArray2M.AssertModel(models[11],_testData[16], false);
+                        IPAddressinetArray2M.AssertModel(models[12],_testData[17], false);
+                        IPAddressinetArray2M.AssertModel(models[13],_testData[18], false);
+                        IPAddressinetArray2M.AssertModel(models[14],_testData[19], false);
+                        IPAddressinetArray2M.AssertModel(models[15],_testData[20], false);
+                        IPAddressinetArray2M.AssertModel(models[16],_testData[21], false);
+                        IPAddressinetArray2M.AssertModel(models[17],_testData[22], false);
+                        IPAddressinetArray2M.AssertModel(models[18],_testData[23], false);
+                        IPAddressinetArray2M.AssertModel(models[19],_testData[24], false);
+                        IPAddressinetArray2M.AssertModel(models[20],_testData[25], false);
+                        IPAddressinetArray2M.AssertModel(models[21],_testData[26], false);
+                        IPAddressinetArray2M.AssertModel(models[22],_testData[27], false);
+                        IPAddressinetArray2M.AssertModel(models[23],_testData[28], false);
+                        IPAddressinetArray2M.AssertModel(models[24],_testData[29], false);
+                        IPAddressinetArray2M.AssertModel(models[25],_testData[30], false);
+                        IPAddressinetArray2M.AssertModel(models[26],_testData[31], false);
+                        IPAddressinetArray2M.AssertModel(models[27],_testData[32], false);
+                        IPAddressinetArray2M.AssertModel(models[28],_testData[33], false);
+                        IPAddressinetArray2M.AssertModel(models[29],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(33));
+                        Assert.That(models, Has.Count.EqualTo(15));
 
-                        IPAddressinetArray2M.AssertModel(models[0],_testData[2], false);
-                        IPAddressinetArray2M.AssertModel(models[1],_testData[3], false);
-                        IPAddressinetArray2M.AssertModel(models[2],_testData[4], false);
-                        IPAddressinetArray2M.AssertModel(models[3],_testData[5], false);
-                        IPAddressinetArray2M.AssertModel(models[4],_testData[6], false);
-                        IPAddressinetArray2M.AssertModel(models[5],_testData[7], false);
-                        IPAddressinetArray2M.AssertModel(models[6],_testData[8], false);
-                        IPAddressinetArray2M.AssertModel(models[7],_testData[9], false);
-                        IPAddressinetArray2M.AssertModel(models[8],_testData[10], false);
-                        IPAddressinetArray2M.AssertModel(models[9],_testData[11], false);
-                        IPAddressinetArray2M.AssertModel(models[10],_testData[12], false);
-                        IPAddressinetArray2M.AssertModel(models[11],_testData[13], false);
-                        IPAddressinetArray2M.AssertModel(models[12],_testData[14], false);
-                        IPAddressinetArray2M.AssertModel(models[13],_testData[15], false);
-                        IPAddressinetArray2M.AssertModel(models[14],_testData[16], false);
-                        IPAddressinetArray2M.AssertModel(models[15],_testData[17], false);
-                        IPAddressinetArray2M.AssertModel(models[16],_testData[18], false);
-                        IPAddressinetArray2M.AssertModel(models[17],_testData[19], false);
-                        IPAddressinetArray2M.AssertModel(models[18],_testData[20], false);
-                        IPAddressinetArray2M.AssertModel(models[19],_testData[21], false);
-                        IPAddressinetArray2M.AssertModel(models[20],_testData[22], false);
-                        IPAddressinetArray2M.AssertModel(models[21],_testData[23], false);
-                        IPAddressinetArray2M.AssertModel(models[22],_testData[24], false);
-                        IPAddressinetArray2M.AssertModel(models[23],_testData[25], false);
-                        IPAddressinetArray2M.AssertModel(models[24],_testData[26], false);
-                        IPAddressinetArray2M.AssertModel(models[25],_testData[27], false);
-                        IPAddressinetArray2M.AssertModel(models[26],_testData[28], false);
-                        IPAddressinetArray2M.AssertModel(models[27],_testData[29], false);
-                        IPAddressinetArray2M.AssertModel(models[28],_testData[30], false);
-                        IPAddressinetArray2M.AssertModel(models[29],_testData[31], false);
-                        IPAddressinetArray2M.AssertModel(models[30],_testData[32], false);
-                        IPAddressinetArray2M.AssertModel(models[31],_testData[33], false);
-                        IPAddressinetArray2M.AssertModel(models[32],_testData[34], false);
+                        IPAddressinetArray2M.AssertModel(models[0],_testData[20], false);
+                        IPAddressinetArray2M.AssertModel(models[1],_testData[21], false);
+                        IPAddressinetArray2M.AssertModel(models[2],_testData[22], false);
+                        IPAddressinetArray2M.AssertModel(models[3],_testData[23], false);
+                        IPAddressinetArray2M.AssertModel(models[4],_testData[24], false);
+                        IPAddressinetArray2M.AssertModel(models[5],_testData[25], false);
+                        IPAddressinetArray2M.AssertModel(models[6],_testData[26], false);
+                        IPAddressinetArray2M.AssertModel(models[7],_testData[27], false);
+                        IPAddressinetArray2M.AssertModel(models[8],_testData[28], false);
+                        IPAddressinetArray2M.AssertModel(models[9],_testData[29], false);
+                        IPAddressinetArray2M.AssertModel(models[10],_testData[30], false);
+                        IPAddressinetArray2M.AssertModel(models[11],_testData[31], false);
+                        IPAddressinetArray2M.AssertModel(models[12],_testData[32], false);
+                        IPAddressinetArray2M.AssertModel(models[13],_testData[33], false);
+                        IPAddressinetArray2M.AssertModel(models[14],_testData[34], false);
                         continue;
                     }
                     
@@ -4632,53 +4496,54 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IIPAddressListinetArray)this).DbConnectionSTSelectModelBatch(connection, 90, 109))
+                foreach(var batchResult in  ((IIPAddressListinetArray)this).DbConnectionSTSelectModelBatch(connection, 46, 103))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
+                        Assert.That(models, Has.Count.EqualTo(23));
 
-                        IPAddressinetArray2M.AssertModel(models[0],_testData[17], false);
-                        IPAddressinetArray2M.AssertModel(models[1],_testData[18], false);
-                        IPAddressinetArray2M.AssertModel(models[2],_testData[19], false);
-                        IPAddressinetArray2M.AssertModel(models[3],_testData[20], false);
-                        IPAddressinetArray2M.AssertModel(models[4],_testData[21], false);
-                        IPAddressinetArray2M.AssertModel(models[5],_testData[22], false);
-                        IPAddressinetArray2M.AssertModel(models[6],_testData[23], false);
-                        IPAddressinetArray2M.AssertModel(models[7],_testData[24], false);
-                        IPAddressinetArray2M.AssertModel(models[8],_testData[25], false);
-                        IPAddressinetArray2M.AssertModel(models[9],_testData[26], false);
-                        IPAddressinetArray2M.AssertModel(models[10],_testData[27], false);
-                        IPAddressinetArray2M.AssertModel(models[11],_testData[28], false);
-                        IPAddressinetArray2M.AssertModel(models[12],_testData[29], false);
-                        IPAddressinetArray2M.AssertModel(models[13],_testData[30], false);
-                        IPAddressinetArray2M.AssertModel(models[14],_testData[31], false);
-                        IPAddressinetArray2M.AssertModel(models[15],_testData[32], false);
-                        IPAddressinetArray2M.AssertModel(models[16],_testData[33], false);
-                        IPAddressinetArray2M.AssertModel(models[17],_testData[34], false);
+                        IPAddressinetArray2M.AssertModel(models[0],_testData[12], false);
+                        IPAddressinetArray2M.AssertModel(models[1],_testData[13], false);
+                        IPAddressinetArray2M.AssertModel(models[2],_testData[14], false);
+                        IPAddressinetArray2M.AssertModel(models[3],_testData[15], false);
+                        IPAddressinetArray2M.AssertModel(models[4],_testData[16], false);
+                        IPAddressinetArray2M.AssertModel(models[5],_testData[17], false);
+                        IPAddressinetArray2M.AssertModel(models[6],_testData[18], false);
+                        IPAddressinetArray2M.AssertModel(models[7],_testData[19], false);
+                        IPAddressinetArray2M.AssertModel(models[8],_testData[20], false);
+                        IPAddressinetArray2M.AssertModel(models[9],_testData[21], false);
+                        IPAddressinetArray2M.AssertModel(models[10],_testData[22], false);
+                        IPAddressinetArray2M.AssertModel(models[11],_testData[23], false);
+                        IPAddressinetArray2M.AssertModel(models[12],_testData[24], false);
+                        IPAddressinetArray2M.AssertModel(models[13],_testData[25], false);
+                        IPAddressinetArray2M.AssertModel(models[14],_testData[26], false);
+                        IPAddressinetArray2M.AssertModel(models[15],_testData[27], false);
+                        IPAddressinetArray2M.AssertModel(models[16],_testData[28], false);
+                        IPAddressinetArray2M.AssertModel(models[17],_testData[29], false);
+                        IPAddressinetArray2M.AssertModel(models[18],_testData[30], false);
+                        IPAddressinetArray2M.AssertModel(models[19],_testData[31], false);
+                        IPAddressinetArray2M.AssertModel(models[20],_testData[32], false);
+                        IPAddressinetArray2M.AssertModel(models[21],_testData[33], false);
+                        IPAddressinetArray2M.AssertModel(models[22],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
+                        Assert.That(models, Has.Count.EqualTo(10));
 
-                        IPAddressinetArray2M.AssertModel(models[0],_testData[21], false);
-                        IPAddressinetArray2M.AssertModel(models[1],_testData[22], false);
-                        IPAddressinetArray2M.AssertModel(models[2],_testData[23], false);
-                        IPAddressinetArray2M.AssertModel(models[3],_testData[24], false);
-                        IPAddressinetArray2M.AssertModel(models[4],_testData[25], false);
-                        IPAddressinetArray2M.AssertModel(models[5],_testData[26], false);
-                        IPAddressinetArray2M.AssertModel(models[6],_testData[27], false);
-                        IPAddressinetArray2M.AssertModel(models[7],_testData[28], false);
-                        IPAddressinetArray2M.AssertModel(models[8],_testData[29], false);
-                        IPAddressinetArray2M.AssertModel(models[9],_testData[30], false);
-                        IPAddressinetArray2M.AssertModel(models[10],_testData[31], false);
-                        IPAddressinetArray2M.AssertModel(models[11],_testData[32], false);
-                        IPAddressinetArray2M.AssertModel(models[12],_testData[33], false);
-                        IPAddressinetArray2M.AssertModel(models[13],_testData[34], false);
+                        IPAddressinetArray2M.AssertModel(models[0],_testData[25], false);
+                        IPAddressinetArray2M.AssertModel(models[1],_testData[26], false);
+                        IPAddressinetArray2M.AssertModel(models[2],_testData[27], false);
+                        IPAddressinetArray2M.AssertModel(models[3],_testData[28], false);
+                        IPAddressinetArray2M.AssertModel(models[4],_testData[29], false);
+                        IPAddressinetArray2M.AssertModel(models[5],_testData[30], false);
+                        IPAddressinetArray2M.AssertModel(models[6],_testData[31], false);
+                        IPAddressinetArray2M.AssertModel(models[7],_testData[32], false);
+                        IPAddressinetArray2M.AssertModel(models[8],_testData[33], false);
+                        IPAddressinetArray2M.AssertModel(models[9],_testData[34], false);
                         continue;
                     }
                     
@@ -4696,44 +4561,6 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 await using var cmd = await ((IIPAddressListinetArray)this).CreateDbConnectionSelectModelCommandAsync(connection);
                 ((IIPAddressListinetArray)this).SetDbConnectionSelectModelParametrs(cmd, 67);
                 var models = await ((IIPAddressListinetArray)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
-
-                Assert.That(models, Has.Count.EqualTo(23));
-
-                IPAddressinetArray2M.AssertModel(models[0],_testData[12], false);
-                IPAddressinetArray2M.AssertModel(models[1],_testData[13], false);
-                IPAddressinetArray2M.AssertModel(models[2],_testData[14], false);
-                IPAddressinetArray2M.AssertModel(models[3],_testData[15], false);
-                IPAddressinetArray2M.AssertModel(models[4],_testData[16], false);
-                IPAddressinetArray2M.AssertModel(models[5],_testData[17], false);
-                IPAddressinetArray2M.AssertModel(models[6],_testData[18], false);
-                IPAddressinetArray2M.AssertModel(models[7],_testData[19], false);
-                IPAddressinetArray2M.AssertModel(models[8],_testData[20], false);
-                IPAddressinetArray2M.AssertModel(models[9],_testData[21], false);
-                IPAddressinetArray2M.AssertModel(models[10],_testData[22], false);
-                IPAddressinetArray2M.AssertModel(models[11],_testData[23], false);
-                IPAddressinetArray2M.AssertModel(models[12],_testData[24], false);
-                IPAddressinetArray2M.AssertModel(models[13],_testData[25], false);
-                IPAddressinetArray2M.AssertModel(models[14],_testData[26], false);
-                IPAddressinetArray2M.AssertModel(models[15],_testData[27], false);
-                IPAddressinetArray2M.AssertModel(models[16],_testData[28], false);
-                IPAddressinetArray2M.AssertModel(models[17],_testData[29], false);
-                IPAddressinetArray2M.AssertModel(models[18],_testData[30], false);
-                IPAddressinetArray2M.AssertModel(models[19],_testData[31], false);
-                IPAddressinetArray2M.AssertModel(models[20],_testData[32], false);
-                IPAddressinetArray2M.AssertModel(models[21],_testData[33], false);
-                IPAddressinetArray2M.AssertModel(models[22],_testData[34], false);
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionCommandSelectModelTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                 using var cmd =  ((IIPAddressListinetArray)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IIPAddressListinetArray)this).SetDbConnectionSelectModelParametrs(cmd, 90);
-                var models =  ((IIPAddressListinetArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
                 Assert.That(models, Has.Count.EqualTo(18));
 
@@ -4755,6 +4582,48 @@ Gedaq.DbConnection.Attributes.BatchPart(
                 IPAddressinetArray2M.AssertModel(models[15],_testData[32], false);
                 IPAddressinetArray2M.AssertModel(models[16],_testData[33], false);
                 IPAddressinetArray2M.AssertModel(models[17],_testData[34], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionCommandSelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                 using var cmd =  ((IIPAddressListinetArray)this).CreateDbConnectionSelectModelCommand(connection);
+                ((IIPAddressListinetArray)this).SetDbConnectionSelectModelParametrs(cmd, 29);
+                var models =  ((IIPAddressListinetArray)this).ExecuteDbConnectionSelectModelCommand(cmd);
+
+                Assert.That(models, Has.Count.EqualTo(27));
+
+                IPAddressinetArray2M.AssertModel(models[0],_testData[8], false);
+                IPAddressinetArray2M.AssertModel(models[1],_testData[9], false);
+                IPAddressinetArray2M.AssertModel(models[2],_testData[10], false);
+                IPAddressinetArray2M.AssertModel(models[3],_testData[11], false);
+                IPAddressinetArray2M.AssertModel(models[4],_testData[12], false);
+                IPAddressinetArray2M.AssertModel(models[5],_testData[13], false);
+                IPAddressinetArray2M.AssertModel(models[6],_testData[14], false);
+                IPAddressinetArray2M.AssertModel(models[7],_testData[15], false);
+                IPAddressinetArray2M.AssertModel(models[8],_testData[16], false);
+                IPAddressinetArray2M.AssertModel(models[9],_testData[17], false);
+                IPAddressinetArray2M.AssertModel(models[10],_testData[18], false);
+                IPAddressinetArray2M.AssertModel(models[11],_testData[19], false);
+                IPAddressinetArray2M.AssertModel(models[12],_testData[20], false);
+                IPAddressinetArray2M.AssertModel(models[13],_testData[21], false);
+                IPAddressinetArray2M.AssertModel(models[14],_testData[22], false);
+                IPAddressinetArray2M.AssertModel(models[15],_testData[23], false);
+                IPAddressinetArray2M.AssertModel(models[16],_testData[24], false);
+                IPAddressinetArray2M.AssertModel(models[17],_testData[25], false);
+                IPAddressinetArray2M.AssertModel(models[18],_testData[26], false);
+                IPAddressinetArray2M.AssertModel(models[19],_testData[27], false);
+                IPAddressinetArray2M.AssertModel(models[20],_testData[28], false);
+                IPAddressinetArray2M.AssertModel(models[21],_testData[29], false);
+                IPAddressinetArray2M.AssertModel(models[22],_testData[30], false);
+                IPAddressinetArray2M.AssertModel(models[23],_testData[31], false);
+                IPAddressinetArray2M.AssertModel(models[24],_testData[32], false);
+                IPAddressinetArray2M.AssertModel(models[25],_testData[33], false);
+                IPAddressinetArray2M.AssertModel(models[26],_testData[34], false);
             }
         }
 

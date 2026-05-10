@@ -1,5 +1,4 @@
 ﻿using NpgsqlTypes;
-using System;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 

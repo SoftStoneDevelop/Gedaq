@@ -203,18 +203,35 @@ namespace TestsGenerator.Generators
 
         private void AddClickhouseTypes()
         {
-            _models.Add(new Model.ClickhouseModel("Int8", "SByte", "System.SByte", () => new SByteValueHelper(EnumerableType.SingleType)));
-            _models.Add(new Model.ClickhouseModel("UInt8", "Byte", "System.Byte", () => new ByteValueHelper(EnumerableType.SingleType)));
-            _models.Add(new Model.ClickhouseModel("Int16", "Int16", "System.Int16", () => new Int16ValueHelper(EnumerableType.SingleType)));
-            _models.Add(new Model.ClickhouseModel("UInt16", "UInt16", "System.UInt16", () => new UInt16ValueHelper(EnumerableType.SingleType)));
-            _models.Add(new Model.ClickhouseModel("Int32", "Int32", "System.Int32", () => new Int32ValueHelper(EnumerableType.SingleType)));
-            _models.Add(new Model.ClickhouseModel("UInt32", "UInt32", "System.UInt32", () => new UInt32ValueHelper(EnumerableType.SingleType)));
-            _models.Add(new Model.ClickhouseModel("Int64", "Int64", "System.Int64", () => new Int64ValueHelper(EnumerableType.SingleType)));
-            _models.Add(new Model.ClickhouseModel("UInt64", "UInt64", "System.UInt64", () => new UInt64ValueHelper(EnumerableType.SingleType)));
+            AddClickhouseType("Int8", "SByte", "System.SByte", type => new SByteValueHelper(type), generateArray: true);
+            AddClickhouseType("UInt8", "Byte", "System.Byte", (type) => new ByteValueHelper(type), generateArray: true);
+            AddClickhouseType("Int16", "Int16", "System.Int16", (type) => new Int16ValueHelper(type), generateArray: true);
+            AddClickhouseType("UInt16", "UInt16", "System.UInt16", (type) => new UInt16ValueHelper(type), generateArray: true);
+            AddClickhouseType("Int32", "Int32", "System.Int32", (type) => new Int32ValueHelper(type), generateArray: true);
+            AddClickhouseType("UInt32", "UInt32", "System.UInt32", (type) => new UInt32ValueHelper(type), generateArray: true);
+            AddClickhouseType("Int64", "Int64", "System.Int64", (type) => new Int64ValueHelper(type), generateArray: true);
+            AddClickhouseType("UInt64", "UInt64", "System.UInt64", (type) => new UInt64ValueHelper(type), generateArray: true);
 
-            _models.Add(new Model.ClickhouseModel("String", "String", "System.String", () => new StringValueHelper(EnumerableType.SingleType)));
-            _models.Add(new Model.ClickhouseModel("IPv4", "IPAddress", "System.Net.IPAddress", () => new IPAddressValueHelper(EnumerableType.SingleType)));
-            _models.Add(new Model.ClickhouseModel("UUID", "Guid", "System.Guid", () => new GuidValueHelper(EnumerableType.SingleType)));
+            AddClickhouseType("String", "String", "System.String", (type) => new StringValueHelper(type), generateArray: true);
+            AddClickhouseType("IPv4", "IPAddress", "System.Net.IPAddress", (type) => new IPAddressValueHelper(type), generateArray: true);
+            AddClickhouseType("UUID", "Guid", "System.Guid", (type) => new GuidValueHelper(type), generateArray: true);
+        }
+
+        private void AddClickhouseType(
+            string clickhouseType,
+            string typeName,
+            string typeFullName,
+            Func<EnumerableType, ValueHelper> valueStorageFactory,
+            int size = -1,
+            bool mustHaveSize = false,
+            bool isReferenceType = false,
+            bool generateArray = true)
+        {
+            _models.Add(new Model.ClickhouseModel(clickhouseType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.SingleType), EnumerableType.SingleType, size, mustHaveSize, isReferenceType));
+            if (generateArray)
+            {
+                _models.Add(new Model.ClickhouseModel(clickhouseType + "[]", typeName, typeFullName, () => valueStorageFactory(EnumerableType.Array), EnumerableType.Array, size, mustHaveSize, isReferenceType));
+            }
         }
     }
 }

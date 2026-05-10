@@ -44,7 +44,19 @@ namespace TestsGenerator.TypeInfos
         {
             get
             {
-                return ItemTypeName;
+                switch (EnumerableType)
+                {
+                    default:
+                    case EnumerableType.SingleType:
+                    {
+                        return $"{ItemTypeName}";
+                    }
+
+                    case EnumerableType.Array:
+                    {
+                        return $"{ItemTypeName}[]";
+                    }
+                }
             }
         }
 
@@ -52,7 +64,19 @@ namespace TestsGenerator.TypeInfos
         {
             get
             {
-                return ItemTypeFullName;
+                switch (EnumerableType)
+                {
+                    default:
+                    case EnumerableType.SingleType:
+                    {
+                        return $"{ItemTypeFullName}";
+                    }
+
+                    case EnumerableType.Array:
+                    {
+                        return $"{ItemTypeFullName}[]";
+                    }
+                }
             }
         }
 

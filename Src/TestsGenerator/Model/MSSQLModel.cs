@@ -16,13 +16,11 @@ namespace TestsGenerator.Model
             EnumerableType enumerableType = EnumerableType.SingleType,
             int size = -1,
             bool mustHaveSize = false,
-            bool isReferenceType = false
-            )
+            bool isReferenceType = false)
             : base(
-                  new MSSQLTypeInfo(SqlDbType.Int, "Int32", "System.Int32", enumerableType, 0, false, false), 
+                  new MSSQLTypeInfo(SqlDbType.Int, "Int32", "System.Int32", EnumerableType.SingleType, 0, false, false), 
                   new MSSQLTypeInfo(sqlDbType, typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType), 
-                  valueStorageFactory
-                  )
+                  valueStorageFactory)
         {
 
         }
