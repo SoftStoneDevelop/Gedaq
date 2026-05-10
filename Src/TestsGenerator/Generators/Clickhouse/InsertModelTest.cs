@@ -123,6 +123,8 @@ VALUES (
 
             var await = isAsync ? "await" : string.Empty;
             var async = isAsync ? "Async" : string.Empty;
+
+            endIndex = endIndex == storage.Values.Count - 1 ? endIndex + 1 : endIndex;
             stringBuilder.Append($@"
         [Test, Order({order})]
         public async Task {InsertMethodName()}Test{async}()
@@ -130,7 +132,7 @@ VALUES (
             await using (var connection = GlobalSetUp.GetConnection)
             {{
                 await connection.OpenAsync();
-                for (int i = {indexValue}; i < {endIndex + 1}; i++)
+                for (int i = {indexValue}; i < {endIndex}; i++)
                 {{
                     {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{InsertMethodName()}{async}(
                         connection,
