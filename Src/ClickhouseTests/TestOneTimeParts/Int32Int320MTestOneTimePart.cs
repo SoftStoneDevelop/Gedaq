@@ -1,6 +1,6 @@
 
 
-using ClickHouse.Driver;
+using ClickHouse.Driver.ADO;
 using System;
 using Gedaq.Common.Enums;
 
@@ -17,37 +17,38 @@ namespace Tests
     {
 
 
-        private async Task CreateModelInnerTable(ClickhouseCommand cmd)
+        private async Task CreateModelInnerTable(ClickHouseCommand cmd)
         {
             // ignore
         }
 
 
-        private async Task DropModelInnerTable(ClickhouseCommand cmd)
+        private async Task DropModelInnerTable(ClickHouseCommand cmd)
         {
             // ignore
         }
 
 
-        private async Task CreateModelInnerTable(ClickhouseCommand cmd)
+        private async Task CreateModelTable(ClickHouseCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE IF NOT EXISTS gedaqtests.int32int320mi
+CREATE TABLE IF NOT EXISTS gedaqtests.int32int320m
 (
-    id Int32,
-    value Int32,
-	nullablevalue Int32
+    m_id Int32,
+    m_value Int32,
+    mi_id Int32,
+    mi_value Int32
 )
 ENGINE = MergeTree
-PARTITION BY (intHash32(id) % 5)
-ORDER BY id
+PARTITION BY (intHash32(m_id) % 5)
+ORDER BY m_id
 SETTINGS index_granularity = 8192;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
 
 
-        private async Task DropModelTable(ClickhouseCommand cmd)
+        private async Task DropModelTable(ClickHouseCommand cmd)
         {
             cmd.CommandText = @"
 DROP TABLE IF EXISTS gedaqtests.int32int320m;

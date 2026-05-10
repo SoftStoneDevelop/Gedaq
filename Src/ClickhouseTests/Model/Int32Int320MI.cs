@@ -23,16 +23,6 @@ namespace Tests
                 Assert.That(actual, Is.Not.Null);
                 Assert.That(actual.Id, Is.EqualTo(expect.Id));
                 Assert.That(actual.Value, Is.EqualTo(expect.Value));
-                if (expect.NullableValue == null)
-                {
-                    Assert.That(actual.NullableValue, Is.Null);
-                }
-                else
-                {
-                    Assert.That(actual.NullableValue, Is.Not.Null);
-                    Assert.That(actual.NullableValue, Is.EqualTo(expect.NullableValue));
-                }
-
         }
     }
 }

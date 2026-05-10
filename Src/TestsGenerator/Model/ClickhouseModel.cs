@@ -21,7 +21,6 @@ namespace TestsGenerator.Model
                   new ClickhouseTypeInfo(clickHouseType, typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType), 
                   valueStorageFactory)
         {
-
         }
     }
 }

@@ -31,7 +31,6 @@ namespace Tests
                     Assert.That(actual.NullableValue, Is.Not.Null);
                     Assert.That(actual.NullableValue, Is.EqualTo(expect.NullableValue));
                 }
-
         }
     }
 }

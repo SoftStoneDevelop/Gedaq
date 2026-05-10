@@ -1,4 +1,5 @@
-﻿using DotNet.Testcontainers.Containers;
+﻿using ClickHouse.Driver.ADO;
+using DotNet.Testcontainers.Containers;
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
@@ -46,14 +47,14 @@ namespace Tests
                 var connectionString = container.GetConnectionString();
                 try
                 {
-                    await using (var conn = new MySqlConnection(connectionString))
+                    await using (var conn = new ClickHouseConnection(connectionString))
                     {
                         await conn.OpenAsync();
                         await using var command = conn.CreateCommand();
                         command.CommandText = "SELECT 1";
                         var result = await command.ExecuteScalarAsync();
 
-                        if ((result is int intValue && intValue == 1) || (result is long longValue && longValue == 1))
+                        if ((result is int intValue && intValue == 1) || (result is long longValue && longValue == 1) || (result is byte byteValue && byteValue == 1))
                         {
                             break;
                         }

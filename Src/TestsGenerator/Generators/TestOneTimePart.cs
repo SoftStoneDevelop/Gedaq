@@ -130,7 +130,7 @@ CREATE TABLE {Database.MySQL.ToDefaultSchema()}.{model.ModelInner.TableName} (
                 case Database.Clickhouse:
                 {
                     _stringBuilder.AppendLine($@"
-        private async Task CreateModelInnerTable(ClickhouseCommand cmd)
+        private async Task CreateModelInnerTable(ClickHouseCommand cmd)
         {{
             // ignore
         }}
@@ -194,7 +194,7 @@ DROP TABLE IF EXISTS {Database.MySQL.ToDefaultSchema()}.{model.ModelInner.TableN
                 case Database.Clickhouse:
                 {
                     _stringBuilder.AppendLine($@"
-        private async Task DropModelInnerTable(ClickhouseCommand cmd)
+        private async Task DropModelInnerTable(ClickHouseCommand cmd)
         {{
             // ignore
         }}
@@ -300,18 +300,19 @@ CREATE TABLE {Database.MySQL.ToDefaultSchema()}.{model.TableName}
                 case Database.Clickhouse:
                 {
                     _stringBuilder.AppendLine($@"
-        private async Task CreateModelInnerTable(ClickhouseCommand cmd)
+        private async Task CreateModelTable(ClickHouseCommand cmd)
         {{
             cmd.CommandText = @""
-CREATE TABLE IF NOT EXISTS {Database.Clickhouse.ToDefaultSchema()}.{model.ModelInner.TableName}
+CREATE TABLE IF NOT EXISTS {Database.Clickhouse.ToDefaultSchema()}.{model.TableName}
 (
-    {model.ModelInner.IdColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()},
-    {model.ModelInner.ValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()},
-	{model.ModelInner.NullableValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()}
+    m_{model.IdColumnName} {model.IdTypeInfo.DbSqlType}{model.IdTypeInfo.DbSqlAfterType()},
+    m_{model.ValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()},
+    mi_{model.ModelInner.IdColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()},
+    mi_{model.ModelInner.ValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()}
 )
 ENGINE = MergeTree
-PARTITION BY (intHash32({model.ModelInner.IdColumnName}) % 5)
-ORDER BY {model.ModelInner.IdColumnName}
+PARTITION BY (intHash32(m_{model.IdColumnName}) % 5)
+ORDER BY m_{model.ModelInner.IdColumnName}
 SETTINGS index_granularity = 8192;
 "";
             await cmd.ExecuteNonQueryAsync();
@@ -376,7 +377,7 @@ DROP TABLE IF EXISTS {Database.MySQL.ToDefaultSchema()}.{model.TableName};
                 case Database.Clickhouse:
                 {
                     _stringBuilder.AppendLine($@"
-        private async Task DropModelTable(ClickhouseCommand cmd)
+        private async Task DropModelTable(ClickHouseCommand cmd)
         {{
             cmd.CommandText = @""
 DROP TABLE IF EXISTS {Database.Clickhouse.ToDefaultSchema()}.{model.TableName};

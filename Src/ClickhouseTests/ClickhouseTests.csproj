@@ -28,4 +28,9 @@
 		<Folder Include="TestOneTimeParts\" />
 		<Folder Include="TestsParts\" />
 	</ItemGroup>
+	<!--
+	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+		<Exec Command="powershell.exe -ExecutionPolicy Bypass -NoProfile -NonInteractive -File &quot;$(ProjectDir)prebuild.ps1&quot; &quot;$(SolutionDir)Src\TestsGenerator\bin\$(ConfigurationName)\net10.0&quot; &quot;Clickhouse&quot; &quot;$(SolutionDir)Src\ClickhouseTests&quot;" />
+	</Target>
+	-->
 </Project>

@@ -23,7 +23,7 @@ namespace Tests
         public async Task OneTimeSetUp()
         {
             _clickHouse =
-                new ClickHouseBuilder("clickhouse/clickhouse-server:23.10.1.1976-alpine")
+                new ClickHouseBuilder("clickhouse/clickhouse-server:26.4-alpine")
                 .WithPassword("f8Nkn2sDe56rw")
                 .WithPortBinding(8123, true)
                 .WithAutoRemove(true)
