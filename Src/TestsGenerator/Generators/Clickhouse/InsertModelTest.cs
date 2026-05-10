@@ -2,6 +2,7 @@
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
 using TestsGenerator.Model;
+using TestsGenerator.TypeInfos;
 
 namespace TestsGenerator.Generators.Clickhouse
 {
@@ -41,7 +42,7 @@ namespace TestsGenerator.Generators.Clickhouse
                     endIndex = index + 2;
                 }
 
-                InsertModelTest(
+                InsertModelDbConnectionTest(
                     order,
                     stringBuilder,
                     storage,
@@ -68,10 +69,10 @@ INSERT INTO {Database.Clickhouse.ToDefaultSchema()}.{model.TableName}(
     mi_{model.ModelInner.ValueColumnName}
 )
 VALUES (
-    @m_{model.IdColumnName},
-    @m_{model.ValueColumnName}, 
-    @mi_{model.ModelInner.IdColumnName},
-    @mi_{model.ModelInner.ValueColumnName}
+    @m_{model.IdColumnName}:{((ClickhouseTypeInfo)model.IdTypeInfo).ClickHouseType},
+    @m_{model.ValueColumnName}:{((ClickhouseTypeInfo)model.TypeInfo).ClickHouseType}, 
+    @mi_{model.ModelInner.IdColumnName}:{((ClickhouseTypeInfo)model.ModelInner.IdTypeInfo).ClickHouseType},
+    @mi_{model.ModelInner.ValueColumnName}:{((ClickhouseTypeInfo)model.ModelInner.TypeInfo).ClickHouseType}
 )
 "",
             methodName:""{InsertMethodName()}"",
@@ -84,23 +85,19 @@ VALUES (
             Gedaq.DbConnection.Attributes.Parametr(
                 parametrType: typeof({model.IdTypeInfo.TypeFullName}), 
                 parametrName: ""m_{model.IdColumnName}"", 
-                methodParametrName: ""m_{model.IdName}"", 
-                dbType: {model.IdTypeInfo.DbTypeStr()}),
+                methodParametrName: ""m_{model.IdName}""),
             Gedaq.DbConnection.Attributes.Parametr(
                 parametrType: typeof({model.TypeInfo.TypeFullName}), 
                 parametrName: ""m_{model.ValueColumnName}"", 
-                methodParametrName: ""m_{model.ValueName}"", 
-                dbType: {model.TypeInfo.DbTypeStr()}),
+                methodParametrName: ""m_{model.ValueName}""),
             Gedaq.DbConnection.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.IdTypeInfo.TypeFullName}), 
                 parametrName: ""mi_{model.ModelInner.IdColumnName}"", 
-                methodParametrName: ""mi_{model.ModelInner.IdName}"", 
-                dbType: {model.ModelInner.IdTypeInfo.DbTypeStr()}),
+                methodParametrName: ""mi_{model.ModelInner.IdName}""),
             Gedaq.DbConnection.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.TypeInfo.TypeFullName}), 
                 parametrName: ""mi_{model.ModelInner.ValueName}"", 
-                methodParametrName: ""mi_{model.ModelInner.ValueName}"", 
-                dbType: {model.ModelInner.TypeInfo.DbTypeStr()})]
+                methodParametrName: ""mi_{model.ModelInner.ValueName}"")]
         public void {InsertMethodName()}Config()
         {{
         }}
@@ -112,7 +109,7 @@ VALUES (
             return $"{_methodName}DbConnection";
         }
 
-        private static void InsertModelTest(
+        private static void InsertModelDbConnectionTest(
             int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             ModelValueStorage storage,

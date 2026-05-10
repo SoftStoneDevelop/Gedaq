@@ -1,6 +1,7 @@
 ﻿using TestsGenerator.Constants;
 using TestsGenerator.Enums;
 using TestsGenerator.Helpers;
+using TestsGenerator.TypeInfos;
 
 namespace TestsGenerator.Generators.Clickhouse
 {
@@ -23,7 +24,7 @@ namespace TestsGenerator.Generators.Clickhouse
             {
                 bool isAsync = ValueConstants.BoolValues[i];
 
-                SelectTest(
+                SelectDbConnectionTest(
                     order,
                     stringBuilder,
                     model,
@@ -51,7 +52,7 @@ SELECT INTO {Database.Clickhouse.ToDefaultSchema()}.{model.TableName}(
 ~EndInner::{model.ModelInnerName}~
 FROM {Database.Clickhouse.ToDefaultSchema()}.{model.TableName}
 WHERE
-    m_{model.IdColumnName} = @m_{model.IdColumnName}
+    m_{model.IdColumnName} = @m_{model.IdColumnName}:{((ClickhouseTypeInfo)model.IdTypeInfo).ClickHouseType}
 "",
             methodName:""{SelectMethodName()}"",
             queryMapTypes: [typeof({model.ClassName(false, false)})],
@@ -63,8 +64,7 @@ WHERE
             Gedaq.DbConnection.Attributes.Parametr(
                 parametrType: typeof({model.IdTypeInfo.TypeFullName}), 
                 parametrName: ""m_{model.IdColumnName}"", 
-                methodParametrName: ""m_{model.IdColumnName}"", 
-                dbType: {model.IdTypeInfo.DbTypeStr()})]
+                methodParametrName: ""m_{model.IdColumnName}"")]
         public void {SelectMethodName()}Config()
         {{
         }}
@@ -76,7 +76,7 @@ WHERE
             return $"{_methodName}DbConnection";
         }
 
-        private static void SelectTest(
+        private static void SelectDbConnectionTest(
             int order,
             StringBuilderArray.StringBuilderArray stringBuilder,
             Model.ModelType model,
