@@ -41,7 +41,7 @@ namespace TestsGenerator.Generators.Clickhouse
             stringBuilder.Append($@"
 [Gedaq.DbConnection.Attributes.Query(
             query: @""
-SELECT INTO {Database.Clickhouse.ToDefaultSchema()}.{model.TableName}(
+SELECT
 	m_{model.IdColumnName} AS {model.IdColumnName},
     m_{model.ValueColumnName} AS {model.ValueColumnName},
 ~StartInner::{model.ModelInnerName}:{model.ModelInner.IdColumnName}~
@@ -52,7 +52,7 @@ SELECT INTO {Database.Clickhouse.ToDefaultSchema()}.{model.TableName}(
 ~EndInner::{model.ModelInnerName}~
 FROM {Database.Clickhouse.ToDefaultSchema()}.{model.TableName}
 WHERE
-    m_{model.IdColumnName} = @m_{model.IdColumnName}:{((ClickhouseTypeInfo)model.IdTypeInfo).ClickHouseType}
+    m_{model.IdColumnName} = {{m_{model.IdColumnName}:{((ClickhouseTypeInfo)model.IdTypeInfo).ClickHouseType}}}
 "",
             methodName:""{SelectMethodName()}"",
             queryMapTypes: [typeof({model.ClassName(false, false)})],

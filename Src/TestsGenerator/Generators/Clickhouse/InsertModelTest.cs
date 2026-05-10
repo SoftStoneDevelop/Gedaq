@@ -69,10 +69,10 @@ INSERT INTO {Database.Clickhouse.ToDefaultSchema()}.{model.TableName}(
     mi_{model.ModelInner.ValueColumnName}
 )
 VALUES (
-    @m_{model.IdColumnName}:{((ClickhouseTypeInfo)model.IdTypeInfo).ClickHouseType},
-    @m_{model.ValueColumnName}:{((ClickhouseTypeInfo)model.TypeInfo).ClickHouseType}, 
-    @mi_{model.ModelInner.IdColumnName}:{((ClickhouseTypeInfo)model.ModelInner.IdTypeInfo).ClickHouseType},
-    @mi_{model.ModelInner.ValueColumnName}:{((ClickhouseTypeInfo)model.ModelInner.TypeInfo).ClickHouseType}
+    {{m_{model.IdColumnName}:{((ClickhouseTypeInfo)model.IdTypeInfo).ClickHouseType}}},
+    {{m_{model.ValueColumnName}:{((ClickhouseTypeInfo)model.TypeInfo).ClickHouseType}}}, 
+    {{mi_{model.ModelInner.IdColumnName}:{((ClickhouseTypeInfo)model.ModelInner.IdTypeInfo).ClickHouseType}}},
+    {{mi_{model.ModelInner.ValueColumnName}:{((ClickhouseTypeInfo)model.ModelInner.TypeInfo).ClickHouseType}}}
 )
 "",
             methodName:""{InsertMethodName()}"",
@@ -96,7 +96,7 @@ VALUES (
                 methodParametrName: ""mi_{model.ModelInner.IdName}""),
             Gedaq.DbConnection.Attributes.Parametr(
                 parametrType: typeof({model.ModelInner.TypeInfo.TypeFullName}), 
-                parametrName: ""mi_{model.ModelInner.ValueName}"", 
+                parametrName: ""mi_{model.ModelInner.ValueColumnName}"", 
                 methodParametrName: ""mi_{model.ModelInner.ValueName}"")]
         public void {InsertMethodName()}Config()
         {{
@@ -130,14 +130,14 @@ VALUES (
             await using (var connection = GlobalSetUp.GetConnection)
             {{
                 await connection.OpenAsync();
-                for (int i = {indexValue}; i < {endIndex}; i++)
+                for (int i = {indexValue}; i < {endIndex + 1}; i++)
                 {{
                     {await} {TypeHelper.ThisAsInterface(interfaceTypeName)}.{InsertMethodName()}{async}(
                         connection,
-                        m_{model.IdName}: {TestsPart.TestDataArrayName}[{indexValue}].{model.IdName},
-                        m_{model.ValueName}: {TestsPart.TestDataArrayName}[{indexValue}].{model.ValueName},
-                        mi_{model.ModelInner.IdName}: {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.IdName},
-                        mi_{model.ModelInner.ValueName}: {TestsPart.TestDataArrayName}[{indexValue}].{model.ModelInnerName}.{model.ModelInner.ValueName});
+                        m_{model.IdName}: {TestsPart.TestDataArrayName}[i].{model.IdName},
+                        m_{model.ValueName}: {TestsPart.TestDataArrayName}[i].{model.ValueName},
+                        mi_{model.ModelInner.IdName}: {TestsPart.TestDataArrayName}[i].{model.ModelInnerName}.{model.ModelInner.IdName},
+                        mi_{model.ModelInner.ValueName}: {TestsPart.TestDataArrayName}[i].{model.ModelInnerName}.{model.ModelInner.ValueName});
                 }}
             }}
         }}
