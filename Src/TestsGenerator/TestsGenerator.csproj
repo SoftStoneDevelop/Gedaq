@@ -5,6 +5,7 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 	<ItemGroup>
+		<PackageReference Include="ClickHouse.Driver" Version="1.2.0" />
 		<PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.1" />
 		<PackageReference Include="MySqlConnector" Version="2.5.0" />
 		<PackageReference Include="Npgsql" Version="10.0.2" />

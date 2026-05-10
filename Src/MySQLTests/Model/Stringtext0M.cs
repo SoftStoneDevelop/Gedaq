@@ -31,7 +31,6 @@ namespace Tests
                     Assert.That(actual.NullableValue, Is.Not.Null);
                     Assert.That(actual.NullableValue, Is.EqualTo(expect.NullableValue));
                 }
-
                 if(expect.ModelInner == null)
                 {
                     Assert.That(actual.ModelInner, Is.Null);
@@ -43,6 +42,7 @@ namespace Tests
                     if (checkInInnerOnlyId)
                     {
                         Assert.That(actual.ModelInner.Value, Is.EqualTo((System.String)default));
+
                         Assert.That(actual.ModelInner.NullableValue, Is.Null);
                     }
                     else

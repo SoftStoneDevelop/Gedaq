@@ -11,8 +11,14 @@ namespace TestsGenerator.Model
 {
     internal class ModelValueStorage
     {
-        public ModelValueStorage(TypeInfo typeInfo, ValueHelper valueStorage)
+        private bool _innerCanBeNull;
+
+        public ModelValueStorage(
+            TypeInfo typeInfo,
+            ValueHelper valueStorage,
+            bool innerCanBeNull)
         {
+            _innerCanBeNull = innerCanBeNull;
             _id = new Int32ValueHelper(Enums.EnumerableType.SingleType);
             Value = valueStorage.NewInstance();
             NullableValue = valueStorage.NewInstance();
@@ -39,6 +45,11 @@ namespace TestsGenerator.Model
         private bool _nextInnerNull;
         private bool NextInnerNull()
         {
+            if (!_innerCanBeNull)
+            {
+                return false;
+            }
+
             _nextInnerNull = !_nextInnerNull;
             return _nextInnerNull;
         }

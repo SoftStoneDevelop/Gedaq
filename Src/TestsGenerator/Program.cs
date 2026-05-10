@@ -17,8 +17,9 @@ namespace TestsGenerator
                 var task1 = GenerateTestsAsync("PostgreSQL", $"{solutionDirectory}\\PostgreSQLTests");
                 var task2 = GenerateTestsAsync("MsSQL", $"{solutionDirectory}\\MSSQLTests");
                 var task3 = GenerateTestsAsync("MySQL", $"{solutionDirectory}\\MySQLTests");
+                var task4 = GenerateTestsAsync("Clickhouse", $"{solutionDirectory}\\ClickhouseTests");
 
-                await Task.WhenAll([task1, task2, task3]);
+                await Task.WhenAll([task1, task2, task3, task4]);
             }
         }
 
@@ -42,6 +43,12 @@ namespace TestsGenerator
                 case "MySQL":
                 {
                     await generator.Generate(Enums.Database.MySQL, projPatch);
+                    break;
+                }
+
+                case "Clickhouse":
+                {
+                    await generator.Generate(Enums.Database.Clickhouse, projPatch);
                     break;
                 }
             }

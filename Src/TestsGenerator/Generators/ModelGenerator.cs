@@ -15,7 +15,8 @@ namespace TestsGenerator.Generators
         public const string AssertMethodName = "AssertModel";
 
         public async Task Generate(
-            List<Model.ModelType> models, string destinationFolder,
+            List<Model.ModelType> models,
+            string destinationFolder,
             Database database)
         {
             var directory = Directory.CreateDirectory($"{destinationFolder}/Model/");
@@ -26,13 +27,35 @@ namespace TestsGenerator.Generators
 
             foreach (var model in models)
             {
-                await Model(model, destinationFolder, isFlat: false, withDbTypes: false);
-                await Model(model, destinationFolder, isFlat: true, withDbTypes: false);
-                await ModelInner(model.ModelInner, destinationFolder, withDbTypes: false);
-
-                if (database == Database.PostgreSQL)
+                switch (database)
                 {
-                    await ModelInner(model.ModelInner, destinationFolder, withDbTypes: true);
+                    case Database.PostgreSQL:
+                    {
+                        await Model(model, destinationFolder, isFlat: false, withDbTypes: false, checkNullValue: true);
+                        await Model(model, destinationFolder, isFlat: true, withDbTypes: false, checkNullValue: true);
+                        await ModelInner(model.ModelInner, destinationFolder, withDbTypes: false, checkNullValue: true);
+                        await ModelInner(model.ModelInner, destinationFolder, withDbTypes: true, checkNullValue: true);
+
+                        break;
+                    }
+
+                    case Database.MySQL:
+                    case Database.MsSQL:
+                    default:
+                    {
+                        await Model(model, destinationFolder, isFlat: false, withDbTypes: false, checkNullValue: true);
+                        await Model(model, destinationFolder, isFlat: true, withDbTypes: false, checkNullValue: true);
+                        await ModelInner(model.ModelInner, destinationFolder, withDbTypes: false, checkNullValue: true);
+
+                        break;
+                    }
+
+                    case Database.Clickhouse:
+                    {
+                        await Model(model, destinationFolder, isFlat: false, withDbTypes: false, checkNullValue: false);
+                        await ModelInner(model.ModelInner, destinationFolder, withDbTypes: false, checkNullValue: false);
+                        break;
+                    }
                 }
             }
         }
@@ -85,7 +108,8 @@ namespace TestsGenerator.Generators
             Model.ModelType model,
             string destinationFolder,
             bool isFlat,
-            bool withDbTypes)
+            bool withDbTypes,
+            bool checkNullValue)
         {
             _stringBuilder.Clear();
             _stringBuilder.Append($@"
@@ -112,11 +136,11 @@ namespace Tests
 
             if (model.TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)
             {
-                AssertSingle("actual", "expect", model, isFlat: isFlat);
+                AssertSingle("actual", "expect", model, isFlat: isFlat, checkNullValue: checkNullValue);
             }
             else
             {
-                AssertEnumerable("actual", "expect", model, isFlat: isFlat);
+                AssertEnumerable("actual", "expect", model, isFlat: isFlat, checkNullValue: checkNullValue);
             }
 
             _stringBuilder.Append($@"
@@ -133,12 +157,17 @@ namespace Tests
             string modelVariable,
             string expectVariable,
             Model.ModelType model,
-            bool isFlat)
+            bool isFlat,
+            bool checkNullValue)
         {
             _stringBuilder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
                 Assert.That({modelVariable}.{model.IdName}, Is.EqualTo({expectVariable}.{model.IdName}));
-                Assert.That({modelVariable}.{model.ValueName}, Is.EqualTo({expectVariable}.{model.ValueName}));
+                Assert.That({modelVariable}.{model.ValueName}, Is.EqualTo({expectVariable}.{model.ValueName}));");
+
+            if (checkNullValue)
+            {
+                _stringBuilder.Append($@"
                 if({expectVariable}.{model.NullableValueName} == {ValueConstants.NullValue})
                 {{
                     Assert.That({modelVariable}.{model.NullableValueName}, Is.Null);
@@ -147,8 +176,9 @@ namespace Tests
                 {{
                     Assert.That({modelVariable}.{model.NullableValueName}, Is.Not.Null);
                     Assert.That({modelVariable}.{model.NullableValueName}, Is.EqualTo({expectVariable}.{model.NullableValueName}));
-                }}
-");
+                }}");
+            }
+
             if (!isFlat)
             {
                 _stringBuilder.Append($@"
@@ -163,11 +193,21 @@ namespace Tests
                     if (checkInInnerOnlyId)
                     {{
                         Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.ValueName}, Is.EqualTo(({model.ModelInner.ValueType})default));
-                        Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}, Is.Null);
+");
+                if (checkNullValue)
+                {
+                    _stringBuilder.Append($@"
+                        Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}, Is.Null);");
+                }
+                _stringBuilder.Append($@"
                     }}
                     else
                     {{
-                        Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.ValueName}, Is.EqualTo({expectVariable}.{model.ModelInnerName}.{model.ModelInner.ValueName}));
+                        Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.ValueName}, Is.EqualTo({expectVariable}.{model.ModelInnerName}.{model.ModelInner.ValueName}));");
+
+                if (checkNullValue)
+                {
+                    _stringBuilder.Append($@"
                         if({expectVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName} == {ValueConstants.NullValue})
                         {{
                             Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}, Is.Null);
@@ -176,7 +216,10 @@ namespace Tests
                         {{
                             Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}, Is.Not.Null);
                             Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}, Is.EqualTo({expectVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}));
-                        }}
+                        }}");
+                }
+
+                _stringBuilder.Append($@"
                     }}
                 }}
 ");
@@ -187,7 +230,8 @@ namespace Tests
             string modelVariable,
             string expectVariable,
             Model.ModelType model,
-            bool isFlat)
+            bool isFlat,
+            bool checkNullValue)
         {
             _stringBuilder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
@@ -201,7 +245,12 @@ namespace Tests
                         var haveItem = {modelVariable}.{model.ValueName}[i];
                         Assert.That(expectItem, Is.EqualTo(haveItem));
                     }}
-                }}
+                }}");
+
+            if (checkNullValue)
+            {
+                _stringBuilder.Append($@"
+
                 if({expectVariable}.{model.NullableValueName} == {ValueConstants.NullValue})
                 {{
                     Assert.That({modelVariable}.{model.NullableValueName}, Is.Null);
@@ -219,11 +268,13 @@ namespace Tests
                             Assert.That(expectItem, Is.EqualTo(haveItem));
                         }}
                     }}
-                }}
-");
+                }}");
+            }
+
             if (!isFlat)
             {
                 _stringBuilder.Append($@"
+
                 if({expectVariable}.{model.ModelInnerName} == {ValueConstants.NullValue})
                 {{
                     Assert.That({modelVariable}.{model.ModelInnerName}, Is.Null);
@@ -234,8 +285,15 @@ namespace Tests
                     Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.IdName}, Is.EqualTo({expectVariable}.{model.ModelInnerName}.{model.ModelInner.IdName}));
                     if (checkInInnerOnlyId)
                     {{
-                        Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.ValueName}, Is.EqualTo(({model.ModelInner.ValueType})default));
-                        Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}, Is.Null);
+                        Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.ValueName}, Is.EqualTo(({model.ModelInner.ValueType})default));");
+
+                if (checkNullValue)
+                {
+                    _stringBuilder.Append($@"
+                        Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}, Is.Null);");
+                }
+
+                _stringBuilder.Append($@"
                     }}
                     else
                     {{  
@@ -248,7 +306,12 @@ namespace Tests
                                 var haveItem = {modelVariable}.{model.ModelInnerName}.{model.ValueName}[i];
                                 Assert.That(expectItem, Is.EqualTo(haveItem));
                             }}
-                        }}
+                        }}");
+
+                if (checkNullValue)
+                {
+                    _stringBuilder.Append($@"
+
                         if({expectVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName} == {ValueConstants.NullValue})
                         {{
                             Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}, Is.Null);
@@ -266,7 +329,11 @@ namespace Tests
                                     Assert.That(expectItem, Is.EqualTo(haveItem));
                                 }}
                             }}
-                        }}
+                        }}");
+                }
+
+                _stringBuilder.Append($@"
+
                     }}
                 }}
 ");
@@ -276,7 +343,8 @@ namespace Tests
         private async Task ModelInner(
             Model.ModelInnerType model,
             string destinationFolder,
-            bool withDbTypes)
+            bool withDbTypes,
+            bool checkNullValue)
         {
             _stringBuilder.Clear();
             _stringBuilder.Append($@"
@@ -304,11 +372,11 @@ namespace Tests
 
             if (model.TypeInfo.EnumerableType == Enums.EnumerableType.SingleType)
             {
-                AssertInnerSingle("actual", "expect", model);
+                AssertInnerSingle("actual", "expect", model, checkNullValue);
             }
             else
             {
-                AssertInnerEnumerable("actual", "expect", model);
+                AssertInnerEnumerable("actual", "expect", model, checkNullValue);
             }
 
             _stringBuilder.Append($@"
@@ -322,12 +390,16 @@ namespace Tests
         private void AssertInnerSingle(
             string modelVariable,
             string expectVariable,
-            Model.ModelInnerType model)
+            Model.ModelInnerType model,
+            bool checkNullValue)
         {
             _stringBuilder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
                 Assert.That({modelVariable}.{model.IdName}, Is.EqualTo({expectVariable}.{model.IdName}));
-                Assert.That({modelVariable}.{model.ValueName}, Is.EqualTo({expectVariable}.{model.ValueName}));
+                Assert.That({modelVariable}.{model.ValueName}, Is.EqualTo({expectVariable}.{model.ValueName}));");
+            if (checkNullValue)
+            {
+                _stringBuilder.Append($@"
                 if ({expectVariable}.{model.NullableValueName} == null)
                 {{
                     Assert.That({modelVariable}.{model.NullableValueName}, Is.Null);
@@ -336,14 +408,15 @@ namespace Tests
                 {{
                     Assert.That({modelVariable}.{model.NullableValueName}, Is.Not.Null);
                     Assert.That({modelVariable}.{model.NullableValueName}, Is.EqualTo({expectVariable}.{model.NullableValueName}));
-                }}
-");
+                }}");
+            }
         }
 
         private void AssertInnerEnumerable(
             string modelVariable,
             string expectVariable,
-            Model.ModelInnerType model)
+            Model.ModelInnerType model,
+            bool checkNullValue)
         {
             _stringBuilder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
@@ -357,7 +430,11 @@ namespace Tests
                         var haveItem = {modelVariable}.{model.ValueName}[i];
                         Assert.That(expectItem, Is.EqualTo(haveItem));
                     }}
-                }}
+                }}");
+
+            if (checkNullValue)
+            {
+                _stringBuilder.Append($@"
 
                 if ({expectVariable}.{model.NullableValueName} == null)
                 {{
@@ -376,8 +453,8 @@ namespace Tests
                             Assert.That(expectItem, Is.EqualTo(haveItem));
                         }}
                     }}
-                }}
-");
+                }}");
+            }
         }
 
         public static string CreateNewModelInstance(Model.ModelType model, Model.ModelValue value)

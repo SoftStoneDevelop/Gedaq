@@ -50,6 +50,17 @@ namespace TestsGenerator.Generators
 
                     break;
                 }
+
+                case Database.Clickhouse:
+                {
+                    Clickhouse.SelectModelTest.Generate(
+                        order,
+                        stringBuilder,
+                        model,
+                        interfaceTypeName);
+
+                    break;
+                }
             }
         }
     }

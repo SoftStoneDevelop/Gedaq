@@ -19,6 +19,7 @@ using Gedaq.Npgsql.Enums;
 using System;
 ";
                 }
+
                 case Database.MsSQL:
                 {
                     return @"
@@ -28,6 +29,7 @@ using Gedaq.SqlClient.Attributes;
 using System;
 ";
                 }
+
                 case Database.MySQL:
                 {
                     return @"
@@ -38,6 +40,16 @@ using Gedaq.MySqlConnector.Attributes;
 using Gedaq.MySqlConnector.Enums;
 ";
                 }
+
+                case Database.Clickhouse:
+                {
+                    return @"
+using ClickHouse.Driver.ADO;
+using System;
+using Gedaq.Common.Enums;
+";
+                }
+
                 default:
                     return "";
             }
@@ -51,13 +63,16 @@ using Gedaq.MySqlConnector.Enums;
                 {
                     return "public";
                 }
+
                 case Database.MsSQL:
                 {
                     return "dbo";
                 }
+
+                case Database.Clickhouse:
                 case Database.MySQL:
                 {
-                    return @"gedaqtests";
+                    return "gedaqtests";
                 }
 
                 default:

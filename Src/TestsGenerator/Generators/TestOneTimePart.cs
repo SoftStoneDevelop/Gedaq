@@ -88,6 +88,7 @@ CREATE TABLE {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.Ta
 ");
                     return;
                 }
+
                 case Database.MsSQL:
                 {
                     _stringBuilder.AppendLine($@"
@@ -106,6 +107,7 @@ CREATE TABLE {Database.MsSQL.ToDefaultSchema()}.{model.ModelInner.TableName}(
 ");
                     return;
                 }
+
                 case Database.MySQL:
                 {
                     _stringBuilder.AppendLine($@"
@@ -120,6 +122,17 @@ CREATE TABLE {Database.MySQL.ToDefaultSchema()}.{model.ModelInner.TableName} (
 );
 "";
             await cmd.ExecuteNonQueryAsync();
+        }}
+");
+                    return;
+                }
+
+                case Database.Clickhouse:
+                {
+                    _stringBuilder.AppendLine($@"
+        private async Task CreateModelInnerTable(ClickHouseCommand cmd)
+        {{
+            // ignore
         }}
 ");
                     return;
@@ -149,6 +162,7 @@ DROP TABLE {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.ModelInner.Tabl
 ");
                     return;
                 }
+
                 case Database.MsSQL:
                 {
                     _stringBuilder.AppendLine($@"
@@ -162,6 +176,7 @@ DROP TABLE {Database.MsSQL.ToDefaultSchema()}.{model.ModelInner.TableName}
 ");
                     return;
                 }
+
                 case Database.MySQL:
                 {
                     _stringBuilder.AppendLine($@"
@@ -171,6 +186,17 @@ DROP TABLE {Database.MsSQL.ToDefaultSchema()}.{model.ModelInner.TableName}
 DROP TABLE IF EXISTS {Database.MySQL.ToDefaultSchema()}.{model.ModelInner.TableName}
 "";
             await cmd.ExecuteNonQueryAsync();
+        }}
+");
+                    return;
+                }
+
+                case Database.Clickhouse:
+                {
+                    _stringBuilder.AppendLine($@"
+        private async Task DropModelInnerTable(ClickHouseCommand cmd)
+        {{
+            // ignore
         }}
 ");
                     return;
@@ -245,6 +271,7 @@ CREATE TABLE {Database.MsSQL.ToDefaultSchema()}.{model.TableName}(
 ");
                     return;
                 }
+
                 case Database.MySQL:
                 {
                     _stringBuilder.AppendLine($@"
@@ -263,6 +290,30 @@ CREATE TABLE {Database.MySQL.ToDefaultSchema()}.{model.TableName}
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
+"";
+            await cmd.ExecuteNonQueryAsync();
+        }}
+");
+                    return;
+                }
+
+                case Database.Clickhouse:
+                {
+                    _stringBuilder.AppendLine($@"
+        private async Task CreateModelTable(ClickHouseCommand cmd)
+        {{
+            cmd.CommandText = @""
+CREATE TABLE IF NOT EXISTS {Database.Clickhouse.ToDefaultSchema()}.{model.TableName}
+(
+    m_{model.IdColumnName} {model.IdTypeInfo.DbSqlType}{model.IdTypeInfo.DbSqlAfterType()},
+    m_{model.ValueColumnName} {model.TypeInfo.DbSqlType}{model.TypeInfo.DbSqlAfterType()},
+    mi_{model.ModelInner.IdColumnName} {model.ModelInner.IdTypeInfo.DbSqlType}{model.ModelInner.IdTypeInfo.DbSqlAfterType()},
+    mi_{model.ModelInner.ValueColumnName} {model.ModelInner.TypeInfo.DbSqlType}{model.ModelInner.TypeInfo.DbSqlAfterType()}
+)
+ENGINE = MergeTree
+PARTITION BY (intHash32(m_{model.IdColumnName}) % 5)
+ORDER BY m_{model.ModelInner.IdColumnName}
+SETTINGS index_granularity = 8192;
 "";
             await cmd.ExecuteNonQueryAsync();
         }}
@@ -294,6 +345,7 @@ DROP TABLE {Database.PostgreSQL.ToDefaultSchema()}.binary_{model.TableName};
 ");
                     return;
                 }
+
                 case Database.MsSQL:
                 {
                     _stringBuilder.AppendLine($@"
@@ -307,6 +359,7 @@ DROP TABLE {Database.MsSQL.ToDefaultSchema()}.{model.TableName}
 ");
                     return;
                 }
+
                 case Database.MySQL:
                 {
                     _stringBuilder.AppendLine($@"
@@ -314,6 +367,20 @@ DROP TABLE {Database.MsSQL.ToDefaultSchema()}.{model.TableName}
         {{
             cmd.CommandText = @""
 DROP TABLE IF EXISTS {Database.MySQL.ToDefaultSchema()}.{model.TableName};
+"";
+            await cmd.ExecuteNonQueryAsync();
+        }}
+");
+                    return;
+                }
+
+                case Database.Clickhouse:
+                {
+                    _stringBuilder.AppendLine($@"
+        private async Task DropModelTable(ClickHouseCommand cmd)
+        {{
+            cmd.CommandText = @""
+DROP TABLE IF EXISTS {Database.Clickhouse.ToDefaultSchema()}.{model.TableName};
 "";
             await cmd.ExecuteNonQueryAsync();
         }}

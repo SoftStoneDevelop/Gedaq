@@ -31,9 +31,9 @@ namespace TestsGenerator.Model
 
         public readonly ModelInnerType ModelInner;
 
-        public ModelValueStorage NewStorage()
+        public ModelValueStorage NewStorage(bool innerCanBeNull = true)
         {
-            return new ModelValueStorage(TypeInfo, ValueStorage);
+            return new ModelValueStorage(TypeInfo, ValueStorage, innerCanBeNull);
         }
     }
 }

@@ -4,6 +4,7 @@
     {
         PostgreSQL = 0,
         MsSQL = 1,
-        MySQL = 2
+        MySQL = 2,
+        Clickhouse = 3,
     }
 }

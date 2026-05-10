@@ -14,10 +14,13 @@ namespace TestsGenerator.Generators
 
         private readonly StringBuilderArray.StringBuilderArray _stringBuilder = new();
 
-        public async Task Generate(Model.ModelType model, Database database, string destinationFolder)
+        public async Task Generate(
+            Model.ModelType model,
+            Database database,
+            string destinationFolder)
         {
             _stringBuilder.Clear();
-            var storage = InitStorage(model, 35);
+            var storage = InitStorage(database, model, 35);
 
             var interfaceTypeName = InterfaceName(model);
             Start(model, database);
@@ -28,37 +31,37 @@ namespace TestsGenerator.Generators
 
             StartRegion("InsertModelInner");
             InsertModelInnerTest.Generate(
-                0, 
-                _stringBuilder, 
-                model, 
-                storage, 
-                database, 
+                0,
+                _stringBuilder,
+                model,
+                storage,
+                database,
                 interfaceTypeName);
             EndRegion();
 
             StartRegion("InsertModel");
             InsertModelTest.Generate(
-                1, 
-                _stringBuilder, 
-                model, 
-                storage, 
-                database, 
+                1,
+                _stringBuilder,
+                model,
+                storage,
+                database,
                 interfaceTypeName);
             EndRegion();
 
             StartRegion("Select Models");
             SelectModelTest.Generate(
-                2, 
-                _stringBuilder, 
-                model, 
-                storage, 
-                database, 
+                2,
+                _stringBuilder,
+                model,
+                storage,
+                database,
                 interfaceTypeName);
             EndRegion();
 
             SpecialDatabaseTests(
-                model, 
-                database, 
+                model,
+                database,
                 storage,
                 interfaceTypeName);
 
@@ -135,9 +138,12 @@ namespace TestsGenerator.Generators
         /// <summary>
         /// Create values for test cases
         /// </summary>
-        private static ModelValueStorage InitStorage(Model.ModelType model, int valuesCount)
+        private static ModelValueStorage InitStorage(
+            Database database,
+            Model.ModelType model,
+            int valuesCount)
         {
-            var storage = model.NewStorage();
+            var storage = model.NewStorage(innerCanBeNull: database != Database.Clickhouse);
             storage.StartInit();
             for (int i = 0; i < valuesCount; i++)
             {

@@ -73,15 +73,23 @@ namespace TestsGenerator.Generators
                     AddPostgreSQLTypes();
                     break;
                 }
+
                 case Database.MsSQL:
                 {
                     AddMSSQLTypes();
                     break; 
                 }
+
                 case Database.MySQL:
                 {
                     AddMySQLTypes();
                     break; 
+                }
+
+                case Database.Clickhouse:
+                {
+                    AddClickhouseTypes();
+                    break;
                 }
             }
         }
@@ -140,8 +148,7 @@ namespace TestsGenerator.Generators
             int size = -1,
             bool mustHaveSize = false,
             bool isReferenceType = false,
-            bool generateArray = true
-            )
+            bool generateArray = true)
         {
             _models.Add(new Model.NpgsqlModel(npgsqlDbType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.SingleType), EnumerableType.SingleType, size, mustHaveSize, isReferenceType));
             if (generateArray)
@@ -192,6 +199,40 @@ namespace TestsGenerator.Generators
             _models.Add(new Model.MySqlModel(MySqlDbType.Date, "DateOnly", "System.DateOnly", () => new DateOnlyValueHelper(EnumerableType.SingleType)));
 
             _models.Add(new Model.MySqlModel(MySqlDbType.Text, "String", "System.String", () => new StringValueHelper(EnumerableType.SingleType), size: 400, mustHaveSize: true, isReferenceType: true));
+        }
+
+        private void AddClickhouseTypes()
+        {
+            AddClickhouseType("Int8", "SByte", "System.SByte", type => new SByteValueHelper(type));
+            AddClickhouseType("UInt8", "Byte", "System.Byte", (type) => new ByteValueHelper(type));
+            AddClickhouseType("Int16", "Int16", "System.Int16", (type) => new Int16ValueHelper(type));
+            AddClickhouseType("UInt16", "UInt16", "System.UInt16", (type) => new UInt16ValueHelper(type));
+            AddClickhouseType("Int32", "Int32", "System.Int32", (type) => new Int32ValueHelper(type));
+            AddClickhouseType("UInt32", "UInt32", "System.UInt32", (type) => new UInt32ValueHelper(type));
+            AddClickhouseType("Int64", "Int64", "System.Int64", (type) => new Int64ValueHelper(type));
+            AddClickhouseType("UInt64", "UInt64", "System.UInt64", (type) => new UInt64ValueHelper(type));
+
+            AddClickhouseType("String", "String", "System.String", (type) => new StringValueHelper(type));
+            AddClickhouseType("IPv4", "IPAddress", "System.Net.IPAddress", (type) => new IPAddressValueHelper(type));
+            AddClickhouseType("UUID", "Guid", "System.Guid", (type) => new GuidValueHelper(type));
+        }
+
+        private void AddClickhouseType(
+            string clickhouseType,
+            string typeName,
+            string typeFullName,
+            Func<EnumerableType, ValueHelper> valueStorageFactory,
+            int size = -1,
+            bool mustHaveSize = false,
+            bool isReferenceType = false,
+            bool generateArray = true,
+            bool generateMap = true)
+        {
+            _models.Add(new Model.ClickhouseModel(clickhouseType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.SingleType), EnumerableType.SingleType, size, mustHaveSize, isReferenceType));
+            if (generateArray)
+            {
+                _models.Add(new Model.ClickhouseModel(clickhouseType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.Array), EnumerableType.Array, size, mustHaveSize, isReferenceType));
+            }
         }
     }
 }

@@ -31,6 +31,7 @@ namespace Tests
                         Assert.That(expectItem, Is.EqualTo(haveItem));
                     }
                 }
+
                 if(expect.NullableValue == null)
                 {
                     Assert.That(actual.NullableValue, Is.Null);
@@ -75,6 +76,7 @@ namespace Tests
                                 Assert.That(expectItem, Is.EqualTo(haveItem));
                             }
                         }
+
                         if(expect.ModelInner.NullableValue == null)
                         {
                             Assert.That(actual.ModelInner.NullableValue, Is.Null);
@@ -93,6 +95,7 @@ namespace Tests
                                 }
                             }
                         }
+
                     }
                 }
 
