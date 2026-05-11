@@ -30,207 +30,280 @@ namespace Tests
         {
             new Int64bigintListD1E2M
 {
-    Id = 7,
+    Id = 3,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-7984535514664924602L,
+3483335626949075230L,
 
-1793181964045860216L,
+8727510454512350054L,
 
-2021242504805549389L,
+3866722180544601219L,
 
-8208348121971780702L,
+9009749977016896645L,
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-4779896797570323065L,
+7814026703737711977L,
 
-57547094691099148L,
+534234176399165444L,
 
-1901624070375266880L,
+1565773705470707737L,
 
 },
 },
             new Int64bigintListD1E2M
 {
-    Id = 12,
+    Id = 6,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-1887826263826631004L,
+2047066942382048424L,
 
-7263817532661596049L,
+1300342051245762132L,
 
-6514013993739252289L,
+3439156349711983267L,
 
-5950154012087300521L,
+8326333975342316930L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
 {
-    Id = 5,
+    Id = 1,
+    Value = 
+new System.Collections.Generic.List<System.Int64>(3)
+{
+45356416338290051L,
+
+2156268143656996147L,
+
+3966442551995421376L,
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Int64>(4)
+{
+1547781006933053612L,
+
+1893156060136972389L,
+
+7207362850855586294L,
+
+4833596679668281665L,
+
+},
+},
+    NullableValue = null,
+},
+            new Int64bigintListD1E2M
+{
+    Id = 13,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-575856252385186615L,
+2663664587335899608L,
 
-5312223836496753275L,
+89452053830108974L,
 
-2360159466122967307L,
+5017684884485074511L,
 
-8452821889319333656L,
+8179191503694084033L,
 
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int64>(3)
+{
+537172741094566710L,
+
+1700241993704021494L,
+
+5454357414223080025L,
+
+},
+},
+            new Int64bigintListD1E2M
+{
+    Id = 21,
+    Value = 
+new System.Collections.Generic.List<System.Int64>(4)
+{
+5944447894268108739L,
+
+554425859795770650L,
+
+7077286064828684700L,
+
+1924225919585746060L,
+
+},
+    ModelInner = new Int64bigintListD1E2MI
+{
+    Id = 3,
+    Value = 
+new System.Collections.Generic.List<System.Int64>(4)
+{
+3490226185864101646L,
+
+3522153529935862453L,
+
+6153653285830217461L,
+
+5743421842635711629L,
+
+},
+    NullableValue = null,
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-7370939807200606815L,
+7269772519318390416L,
 
-8060649392957046362L,
+3674828032936822428L,
 
-3324472815969253750L,
+5582749305208117689L,
 
 },
-},
-    NullableValue = null,
 },
             new Int64bigintListD1E2M
 {
-    Id = 18,
+    Id = 29,
     Value = 
-new System.Collections.Generic.List<System.Int64>(4)
+new System.Collections.Generic.List<System.Int64>(3)
 {
-720667845326227563L,
+7118553859554887221L,
 
-792893303281921692L,
+1978453258533113548L,
 
-675956396934601439L,
-
-8430656172710071703L,
+8616250161018452778L,
 
 },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int64>(4)
+{
+4121515067644541005L,
+
+2423761939782066530L,
+
+272272916578065840L,
+
+5565062322745100968L,
+
+},
 },
             new Int64bigintListD1E2M
 {
-    Id = 26,
+    Id = 37,
     Value = 
-new System.Collections.Generic.List<System.Int64>(4)
+new System.Collections.Generic.List<System.Int64>(3)
 {
-4395925318787059185L,
+3912481745312343211L,
 
-2729638463678316150L,
+6603544158411323652L,
 
-2425439105109497998L,
-
-23321009055599312L,
+8402368522754092208L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
 {
     Id = 6,
     Value = 
-new System.Collections.Generic.List<System.Int64>(3)
+new System.Collections.Generic.List<System.Int64>(4)
 {
-254954789110129152L,
+3844929321714277324L,
 
-7431031353568683916L,
+8327626325507014453L,
 
-403898306160472965L,
+3529747940165989519L,
+
+2982601022213731730L,
 
 },
     NullableValue = null,
 },
     NullableValue = null,
-},
-            new Int64bigintListD1E2M
-{
-    Id = 28,
-    Value = 
-new System.Collections.Generic.List<System.Int64>(4)
-{
-8787016939517292235L,
-
-7110517005272062579L,
-
-5249519303575579909L,
-
-6252148288937339793L,
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new Int64bigintListD1E2M
-{
-    Id = 33,
-    Value = 
-new System.Collections.Generic.List<System.Int64>(4)
-{
-8404039308609236496L,
-
-3643356011806228137L,
-
-7152309102370295388L,
-
-5570806682826624025L,
-
-},
-    ModelInner = new Int64bigintListD1E2MI
-{
-    Id = 8,
-    Value = 
-new System.Collections.Generic.List<System.Int64>(3)
-{
-1676551009272778728L,
-
-718609617169459596L,
-
-8545866392416175047L,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int64>(4)
-{
-5542122610990145566L,
-
-9108363450243608135L,
-
-8034595563901789335L,
-
-2978574053919323306L,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int64>(3)
-{
-459636748535513013L,
-
-7480817621350771439L,
-
-5498252020373375851L,
-
-},
 },
             new Int64bigintListD1E2M
 {
     Id = 41,
     Value = 
+new System.Collections.Generic.List<System.Int64>(3)
+{
+8533355701578479928L,
+
+4639980141635137620L,
+
+6593496501865579745L,
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int64>(3)
+{
+6223812575455321401L,
+
+6102704967899026488L,
+
+412481868759397951L,
+
+},
+},
+            new Int64bigintListD1E2M
+{
+    Id = 44,
+    Value = 
+new System.Collections.Generic.List<System.Int64>(3)
+{
+2186371903931635666L,
+
+971483336384603254L,
+
+7739136450351912110L,
+
+},
+    ModelInner = new Int64bigintListD1E2MI
+{
+    Id = 7,
+    Value = 
+new System.Collections.Generic.List<System.Int64>(3)
+{
+2921276200878761155L,
+
+1995759972264283522L,
+
+1519703526726257007L,
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Int64>(3)
+{
+8939633465473705567L,
+
+8552028234077185673L,
+
+2570569956233227723L,
+
+},
+},
+            new Int64bigintListD1E2M
+{
+    Id = 49,
+    Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-4323774708564763302L,
+8696864033539820119L,
 
-2572908498548767199L,
+7896389843923381400L,
 
-4527002180857369793L,
+2446977522662705009L,
 
-2181030669177437018L,
+3950799539652303673L,
 
 },
     ModelInner = null,
@@ -238,15 +311,15 @@ new System.Collections.Generic.List<System.Int64>(4)
 },
             new Int64bigintListD1E2M
 {
-    Id = 45,
+    Id = 55,
     Value = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-8385032991744164649L,
+4467696777531533318L,
 
-1408970102688781552L,
+3580956242244693055L,
 
-4607800231281677267L,
+3517464703456186746L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
@@ -255,188 +328,278 @@ new System.Collections.Generic.List<System.Int64>(3)
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-2721193883823034569L,
+8623868331056991005L,
 
-3511894659918541310L,
+8894924047351897172L,
 
-7330050223781078435L,
+3398909581793887822L,
 
-372437519409527839L,
+6290749063329497604L,
 
+},
+    NullableValue = null,
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-1658571120318234737L,
+5453396069185855297L,
 
-4363792089640019928L,
+7233602254382442425L,
 
-846577720576135977L,
+1816634079943389134L,
 
-7032533989454681026L,
+802220016490713201L,
 
 },
-},
-    NullableValue = null,
 },
             new Int64bigintListD1E2M
 {
-    Id = 53,
+    Id = 56,
     Value = 
-new System.Collections.Generic.List<System.Int64>(4)
+new System.Collections.Generic.List<System.Int64>(3)
 {
-2007942067698728517L,
+980146811040300086L,
 
-4664667721412153306L,
+549553370255224305L,
 
-941320378425342064L,
-
-2735401130055966907L,
+5516429325136439065L,
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-8169595743151096365L,
+3284288709041216416L,
 
-4470656820720905484L,
+7861519088424415359L,
 
-2927058763233869423L,
+3422450572602262271L,
 
-7394073917932400818L,
+4533242492891826464L,
 
 },
 },
             new Int64bigintListD1E2M
 {
-    Id = 62,
+    Id = 61,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-1270173165680187994L,
+8716617102635211855L,
 
-6829489351548371391L,
+5271819150006577669L,
 
-6391995613649367155L,
+7151968376434319229L,
 
-3217429191005446507L,
+5573190230087685877L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
 {
-    Id = 23,
+    Id = 22,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-6543018914661024560L,
+4197052947192176896L,
 
-8425211768334045223L,
+2681909070923608190L,
 
-5806045413691273105L,
+5105779037327005540L,
 
-3216664289729838084L,
+2934838318931226713L,
 
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int64>(3)
+{
+4490940536057956925L,
+
+6557513050282484689L,
+
+2544286371337512321L,
+
 },
-    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Int64>(3)
+{
+6018159658071494167L,
+
+5340094681236213997L,
+
+2065816393661010733L,
+
+},
 },
             new Int64bigintListD1E2M
 {
-    Id = 70,
+    Id = 63,
     Value = 
-new System.Collections.Generic.List<System.Int64>(4)
+new System.Collections.Generic.List<System.Int64>(3)
 {
-7953090058093942174L,
+4597475345644335660L,
 
-3364376793010339796L,
+5480163891921786124L,
 
-6710599834703832879L,
-
-2688110632453403680L,
+2535284476869798256L,
 
 },
     ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int64>(4)
+{
+8337487142760520143L,
+
+8903384900409309704L,
+
+5672052507679070624L,
+
+2076076607352827994L,
+
+},
+},
+            new Int64bigintListD1E2M
+{
+    Id = 68,
+    Value = 
+new System.Collections.Generic.List<System.Int64>(3)
+{
+8139238146831747422L,
+
+2100074243924021387L,
+
+2118515521055805493L,
+
+},
+    ModelInner = new Int64bigintListD1E2MI
+{
+    Id = 28,
+    Value = 
+new System.Collections.Generic.List<System.Int64>(4)
+{
+2295714263775108622L,
+
+6107850413680674229L,
+
+5009476532194912118L,
+
+6096786105787838368L,
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Int64>(3)
+{
+6775516851334642257L,
+
+3646078832884866723L,
+
+9134560090857197279L,
+
+},
+},
     NullableValue = null,
 },
             new Int64bigintListD1E2M
 {
     Id = 75,
     Value = 
-new System.Collections.Generic.List<System.Int64>(3)
-{
-4138076829471722431L,
-
-7509969401780223440L,
-
-7201955933574170300L,
-
-},
-    ModelInner = new Int64bigintListD1E2MI
-{
-    Id = 27,
-    Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-4538320581045182498L,
+6547976919676877667L,
 
-5876570252317950051L,
+2876301386844883870L,
 
-3060021388089618104L,
+6146704246646003550L,
 
-5406098120670481719L,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int64>(3)
-{
-7285681611440638797L,
-
-5180798451844109414L,
-
-5873709196642315126L,
+804106803432628717L,
 
 },
-},
+    ModelInner = null,
     NullableValue = null,
 },
             new Int64bigintListD1E2M
 {
-    Id = 81,
+    Id = 84,
     Value = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-8402577257709800435L,
+7073987769149508851L,
 
-7305541226113368223L,
+7307450279587403010L,
 
-6291205782827417694L,
+7550164615122541406L,
 
 },
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Int64>(3)
+    ModelInner = new Int64bigintListD1E2MI
 {
-1029265365697785045L,
+    Id = 31,
+    Value = 
+new System.Collections.Generic.List<System.Int64>(4)
+{
+3621874430431650249L,
 
-6202893043071062882L,
+927628512133896850L,
 
-1232825411537797169L,
+3882227750667979312L,
+
+2105863103643204636L,
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.Int64>(4)
+{
+3891405891437590425L,
+
+2959419764606945050L,
+
+6153944346927318598L,
+
+77342776793104769L,
 
 },
 },
             new Int64bigintListD1E2M
 {
-    Id = 89,
+    Id = 91,
+    Value = 
+new System.Collections.Generic.List<System.Int64>(4)
+{
+5047641298440519876L,
+
+1779657940972591967L,
+
+3344295764306622383L,
+
+4676081697161482806L,
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int64>(4)
+{
+2593486548457916141L,
+
+9052034522319863262L,
+
+3746818514268524281L,
+
+8432785407685883761L,
+
+},
+},
+            new Int64bigintListD1E2M
+{
+    Id = 96,
     Value = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-4700923371256000777L,
+472361418169535912L,
 
-3578016467717837736L,
+3865276657402192823L,
 
-2429908114424138513L,
+5878633606814280175L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
@@ -445,46 +608,41 @@ new System.Collections.Generic.List<System.Int64>(3)
     Value = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-3001542410506348562L,
+2413120402745418538L,
 
-2647119385539532865L,
+1800863852599074209L,
 
-4858993753053882762L,
+5560758921546939461L,
 
 },
     NullableValue = 
-new System.Collections.Generic.List<System.Int64>(3)
+new System.Collections.Generic.List<System.Int64>(4)
 {
-3535592553646964840L,
+8082675033761371394L,
 
-4666944508197499231L,
+3790594549536903384L,
 
-6217242693194983375L,
+2730020601426709644L,
 
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int64>(3)
-{
-5782455232183983488L,
-
-448457683214912132L,
-
-6771525679491140138L,
+4050685694699756592L,
 
 },
+},
+    NullableValue = null,
 },
             new Int64bigintListD1E2M
 {
-    Id = 98,
+    Id = 101,
     Value = 
-new System.Collections.Generic.List<System.Int64>(3)
+new System.Collections.Generic.List<System.Int64>(4)
 {
-5725988028768110168L,
+3320360879546791606L,
 
-6827490255198386758L,
+5265043248698148455L,
 
-1940898118964381770L,
+7618080737623580068L,
+
+8296626230255397409L,
 
 },
     ModelInner = null,
@@ -492,40 +650,38 @@ new System.Collections.Generic.List<System.Int64>(3)
 },
             new Int64bigintListD1E2M
 {
-    Id = 106,
+    Id = 104,
     Value = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-4922350793735464841L,
+153373595226233733L,
 
-2092778125579468439L,
+726253777588257381L,
 
-1930660159570360123L,
+7612477880603107429L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
 {
-    Id = 37,
+    Id = 35,
     Value = 
-new System.Collections.Generic.List<System.Int64>(4)
+new System.Collections.Generic.List<System.Int64>(3)
 {
-5391355725235009655L,
+2349716512110171779L,
 
-4952505232753693318L,
+8932638998233612803L,
 
-3579051473157068698L,
-
-7754537454966949123L,
+4750453061532434566L,
 
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-6162201327884112402L,
+5661201246828102119L,
 
-924112985540131658L,
+2385761448818767557L,
 
-5955658698070571970L,
+3583445538998825068L,
 
 },
 },
@@ -533,15 +689,15 @@ new System.Collections.Generic.List<System.Int64>(3)
 },
             new Int64bigintListD1E2M
 {
-    Id = 113,
+    Id = 109,
     Value = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-4147085192766545347L,
+425352727657475582L,
 
-6694124386318256356L,
+2789874820986573939L,
 
-2916912894286233150L,
+8681391439273177348L,
 
 },
     ModelInner = null,
@@ -549,145 +705,132 @@ new System.Collections.Generic.List<System.Int64>(3)
 },
             new Int64bigintListD1E2M
 {
-    Id = 115,
+    Id = 116,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-2643854810865540098L,
+5893850673723825209L,
 
-2940410317298380493L,
+8955147909608008260L,
 
-8087412698614190921L,
+6303898803027172599L,
 
-5887490692217881303L,
+3304068115038585524L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
 {
-    Id = 38,
+    Id = 36,
     Value = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-2667355776321338492L,
+1900153154945085365L,
 
-345557991238329969L,
+1023351197813860635L,
 
-6515397455192793381L,
+6953229795885776915L,
 
 },
     NullableValue = null,
 },
-    NullableValue = 
-new System.Collections.Generic.List<System.Int64>(4)
-{
-2411437012950298699L,
-
-4814412845853953038L,
-
-5252276265680431159L,
-
-1722992214501165470L,
-
-},
+    NullableValue = null,
 },
             new Int64bigintListD1E2M
 {
-    Id = 124,
+    Id = 121,
     Value = 
-new System.Collections.Generic.List<System.Int64>(4)
+new System.Collections.Generic.List<System.Int64>(3)
 {
-6639821304541898254L,
+8252912591590705958L,
 
-7418996336408225823L,
+5228607610165653735L,
 
-1369024628395646311L,
-
-4785372422033841149L,
+5148632549596235250L,
 
 },
     ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.Int64>(3)
-{
-9095033686529002765L,
-
-3277050857512752184L,
-
-6646630397180147129L,
-
-},
+    NullableValue = null,
 },
             new Int64bigintListD1E2M
 {
-    Id = 130,
+    Id = 125,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-3326770399377144437L,
+958940363531903087L,
 
-3546112117999937166L,
+4606578225303097809L,
 
-8953098592428812214L,
+4135346117537637094L,
 
-5865859412069741167L,
+3092502109851837066L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
 {
-    Id = 39,
+    Id = 43,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-6452178675300862640L,
+5062968364677840108L,
 
-640920622231222622L,
+4691066943517615092L,
 
-7572687815724704185L,
+6113792795301448976L,
 
-1264916250543241155L,
+5336529666154369783L,
 
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.Int64>(3)
+{
+8420151497265734339L,
+
+3222853941702002288L,
+
+1145244736733788930L,
+
+},
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-5251194943047352927L,
+832577767565405174L,
 
-6112626942849362191L,
+4997577999759482729L,
 
-728837171902701162L,
+7794214562578400132L,
 
-7230169774729946695L,
+7071666222598906696L,
 
 },
 },
             new Int64bigintListD1E2M
 {
-    Id = 136,
+    Id = 133,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-3758487520456567865L,
+1057764911720424775L,
 
-298203516096907736L,
+3323108626420744350L,
 
-1947200900423786233L,
+7462943047528247774L,
 
-7211255458134916239L,
+4265686811962789570L,
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-8794294684119852747L,
+1022249032349919534L,
 
-4461999984435127012L,
+5683205400047731954L,
 
-3468526878339286023L,
+847749390238802853L,
 
-1010806632143259094L,
+4388879553970886915L,
 
 },
 },
@@ -697,24 +840,26 @@ new System.Collections.Generic.List<System.Int64>(4)
     Value = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-3897172163917262846L,
+8824126903665256350L,
 
-5443973911003010510L,
+3551670306906214859L,
 
-2530997264825755774L,
+846103147692123029L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
 {
-    Id = 41,
+    Id = 45,
     Value = 
-new System.Collections.Generic.List<System.Int64>(3)
+new System.Collections.Generic.List<System.Int64>(4)
 {
-5303101305490359668L,
+8780476898676804089L,
 
-5935970679828966719L,
+3956930956174905595L,
 
-2710891151467487997L,
+2442918273227316271L,
+
+6944428700374701149L,
 
 },
     NullableValue = null,
@@ -722,164 +867,101 @@ new System.Collections.Generic.List<System.Int64>(3)
     NullableValue = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-4770421881098221002L,
+2235802804452845929L,
 
-7420158428265663459L,
+3645554182779268108L,
 
-5586225292275990628L,
+2699808819450748336L,
 
-5924264076029646181L,
+5949654545160519159L,
 
 },
 },
             new Int64bigintListD1E2M
 {
-    Id = 145,
+    Id = 150,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-1144565314755850630L,
+5084765273325819254L,
 
-3135289396137931398L,
+1054068563507548353L,
 
-3811043793463452771L,
+6996007721025936320L,
 
-6095987712469052292L,
+2025081097965479381L,
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-5955269189122765043L,
+2950550714639112039L,
 
-7868400607998258565L,
+7997681374359707616L,
 
-7835227628115573327L,
+497289181579846467L,
 
 },
 },
             new Int64bigintListD1E2M
 {
-    Id = 151,
+    Id = 159,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-5207111378380129553L,
+8088628773835713408L,
 
-225482583492282352L,
+2067809781215410132L,
 
-4179181767474962529L,
+3426379653567918354L,
 
-3224372051251103196L,
+5573171758566324864L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
 {
-    Id = 47,
+    Id = 50,
     Value = 
-new System.Collections.Generic.List<System.Int64>(4)
+new System.Collections.Generic.List<System.Int64>(3)
 {
-6959925557015845455L,
+5958027024086446570L,
 
-398821960464244071L,
+7058643798070992650L,
 
-1068303729097449878L,
+3901392335425900969L,
 
-894776175761079393L,
-
+},
+    NullableValue = null,
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-8246523249690812652L,
+3177150393923405291L,
 
-649034115161073973L,
+3293759970141565368L,
 
-470356388079555523L,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int64>(3)
-{
-7551432127509259577L,
-
-7487547710987644910L,
-
-8245968923777616645L,
+501122433650345L,
 
 },
 },
             new Int64bigintListD1E2M
 {
-    Id = 160,
+    Id = 161,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-8437853206927904537L,
+4301586365538695801L,
 
-7127484694116436696L,
+9144404810404632130L,
 
-1919509980175616460L,
+648428488278708015L,
 
-4638673700828975620L,
+4559321400434722874L,
 
 },
     ModelInner = null,
     NullableValue = null,
-},
-            new Int64bigintListD1E2M
-{
-    Id = 163,
-    Value = 
-new System.Collections.Generic.List<System.Int64>(4)
-{
-8837574485514148335L,
-
-4120755444494804915L,
-
-5235128032552349206L,
-
-5237438812748890973L,
-
-},
-    ModelInner = new Int64bigintListD1E2MI
-{
-    Id = 51,
-    Value = 
-new System.Collections.Generic.List<System.Int64>(3)
-{
-420783215550006582L,
-
-4137769591530713276L,
-
-8819887353412450057L,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int64>(4)
-{
-3436324346593370926L,
-
-9157075320776368260L,
-
-2657569413369072531L,
-
-3743108179880770611L,
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int64>(3)
-{
-440220684140412237L,
-
-3121770807583588429L,
-
-4564832111232218373L,
-
-},
 },
             new Int64bigintListD1E2M
 {
@@ -887,74 +969,54 @@ new System.Collections.Generic.List<System.Int64>(3)
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-6547839247651379516L,
+5866151104927191415L,
 
-102493487761061142L,
+2885482592887172271L,
 
-1786982216620564262L,
+2415627346327100694L,
 
-4501183659822731468L,
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new Int64bigintListD1E2M
-{
-    Id = 173,
-    Value = 
-new System.Collections.Generic.List<System.Int64>(4)
-{
-7498064758961688895L,
-
-2603898982677351813L,
-
-5926344885286428132L,
-
-4670154516234662729L,
+8284988210786147486L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
 {
-    Id = 60,
+    Id = 55,
     Value = 
-new System.Collections.Generic.List<System.Int64>(4)
+new System.Collections.Generic.List<System.Int64>(3)
 {
-436593237073592179L,
+3596714763284042027L,
 
-8514578562810619497L,
+2372905527207680014L,
 
-6131503666232387557L,
+7271818753844384521L,
 
-3673733536664955607L,
-
+},
+    NullableValue = null,
 },
     NullableValue = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-2941065485764907475L,
+7163861027942629174L,
 
-4789376227945165580L,
+7879760155827790258L,
 
-6851000478563618523L,
+3401949717238139279L,
 
-8952782873185863446L,
+4615592893722019368L,
 
 },
-},
-    NullableValue = null,
 },
             new Int64bigintListD1E2M
 {
-    Id = 174,
+    Id = 179,
     Value = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-3725670831459399003L,
+4441344847787163056L,
 
-9017908002094018290L,
+8567713207674604714L,
 
-7612753547956205372L,
+1035344470313606080L,
 
 },
     ModelInner = null,
@@ -962,111 +1024,36 @@ new System.Collections.Generic.List<System.Int64>(3)
 },
             new Int64bigintListD1E2M
 {
-    Id = 175,
+    Id = 184,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-4107108978918836231L,
+1654473532067751739L,
 
-4710759499882409174L,
+9085677681574593039L,
 
-3268587530189560295L,
+463526441464854948L,
 
-6189800977057429746L,
+7405827043839757405L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
 {
-    Id = 64,
-    Value = 
-new System.Collections.Generic.List<System.Int64>(3)
-{
-4371618054708436130L,
-
-1561520149996897090L,
-
-6110499020477440251L,
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.Int64>(4)
-{
-2593882950385026583L,
-
-2503908975239274506L,
-
-1566811204548432861L,
-
-5883344569188456913L,
-
-},
-},
-    NullableValue = null,
-},
-            new Int64bigintListD1E2M
-{
-    Id = 178,
+    Id = 62,
     Value = 
 new System.Collections.Generic.List<System.Int64>(4)
 {
-5262393638767912848L,
+1378850612877579891L,
 
-2359799496432083205L,
+1399366337629106732L,
 
-6706780314997727384L,
+6313996505278045984L,
 
-4357870023927930078L,
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new Int64bigintListD1E2M
-{
-    Id = 180,
-    Value = 
-new System.Collections.Generic.List<System.Int64>(3)
-{
-4619436997125276116L,
-
-6232201006106639771L,
-
-4697195717226293157L,
-
-},
-    ModelInner = new Int64bigintListD1E2MI
-{
-    Id = 66,
-    Value = 
-new System.Collections.Generic.List<System.Int64>(3)
-{
-4871037481304070328L,
-
-3911032687507933589L,
-
-3381221412675667425L,
+5385194586965274002L,
 
 },
     NullableValue = null,
 },
-    NullableValue = null,
-},
-            new Int64bigintListD1E2M
-{
-    Id = 187,
-    Value = 
-new System.Collections.Generic.List<System.Int64>(4)
-{
-1982410005972828351L,
-
-749038407535254371L,
-
-3925411001480154346L,
-
-439382323198238138L,
-
-},
-    ModelInner = null,
     NullableValue = null,
 },
             new Int64bigintListD1E2M
@@ -1075,24 +1062,42 @@ new System.Collections.Generic.List<System.Int64>(4)
     Value = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-1944053887158335161L,
+6122493975485477998L,
 
-6100682505401186942L,
+4965929732355663269L,
 
-1693798281358012152L,
+1026387616665169306L,
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new Int64bigintListD1E2M
+{
+    Id = 196,
+    Value = 
+new System.Collections.Generic.List<System.Int64>(4)
+{
+7254427708107972623L,
+
+1185189646523697869L,
+
+477749588277034227L,
+
+4028220460185890133L,
 
 },
     ModelInner = new Int64bigintListD1E2MI
 {
-    Id = 74,
+    Id = 69,
     Value = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-2275198002550058314L,
+982105349467442450L,
 
-8501127611943479570L,
+1633953933058865166L,
 
-8077502122412208818L,
+8126654934728735228L,
 
 },
     NullableValue = null,
@@ -1101,15 +1106,15 @@ new System.Collections.Generic.List<System.Int64>(3)
 },
             new Int64bigintListD1E2M
 {
-    Id = 192,
+    Id = 204,
     Value = 
 new System.Collections.Generic.List<System.Int64>(3)
 {
-601176718330466860L,
+1685477922433271696L,
 
-6582603131424250395L,
+1690878136054221261L,
 
-7675738109170175725L,
+7547243718444355642L,
 
 },
     ModelInner = null,
@@ -2135,12 +2140,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 141;
+                parametr1.Value = 91;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 170;
+                parametr2.Value = 101;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2176,52 +2181,78 @@ ORDER BY
                 var secondItems1 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems2 = new List<FlatInt64bigintListD1E2M>();
                 await ((IInt64ListbigintListD1)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(13));
-                Assert.That(firstItems2, Has.Count.EqualTo(13));
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[9],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[10],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[11],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[12],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(8));
-                Assert.That(secondItems2, Has.Count.EqualTo(8));
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(18));
+                Assert.That(firstItems2, Has.Count.EqualTo(18));
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[9],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[10],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[11],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[12],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[13],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[14],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[15],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[16],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[17],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(16));
+                Assert.That(secondItems2, Has.Count.EqualTo(16));
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[10],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[12],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[13],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[14],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[15],_testData[34], false);
             }
         }
 
@@ -2232,12 +2263,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 160;
+                parametr1.Value = 44;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 170;
+                parametr2.Value = 101;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2269,37 +2300,79 @@ ORDER BY
                 var firstItems2 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems1 = new List<FlatInt64bigintListD1E2M>();
                 await ((IInt64ListbigintListD1)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(10));
-                Assert.That(firstItems2, Has.Count.EqualTo(10));
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[9],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(8));
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(27));
+                Assert.That(firstItems2, Has.Count.EqualTo(27));
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[8], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[8], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[9],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[10],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[11],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[12],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[13],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[14],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[15],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[16],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[17],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[18],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[18],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[19],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[19],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[20],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[20],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[21],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[21],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[22],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[22],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[23],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[23],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[24],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[24],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[25],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[25],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[26],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[26],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(16));
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[34], false);
             }
         }
 
@@ -2347,12 +2420,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 160;
+                parametr1.Value = 170;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 26;
+                parametr2.Value = 41;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2388,92 +2461,76 @@ ORDER BY
                 var secondItems1 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems2 = new List<FlatInt64bigintListD1E2M>();
                  ((IInt64ListbigintListD1)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(10));
-                Assert.That(firstItems2, Has.Count.EqualTo(10));
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[9],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(31));
-                Assert.That(secondItems2, Has.Count.EqualTo(31));
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[4], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[4], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[5], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[5], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[6], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[6], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[10],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[11],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[12],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[13],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[14],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[15],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[16],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[16],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[17],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[17],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[18],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[18],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[19],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[19],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[20],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[20],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[21],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[21],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[22],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[22],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[23],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[23],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[24],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[24],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[25],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[25],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[26],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[26],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[27],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[27],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[28],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[28],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[29],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[29],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[30],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[30],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(5));
+                Assert.That(firstItems2, Has.Count.EqualTo(5));
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(28));
+                Assert.That(secondItems2, Has.Count.EqualTo(28));
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[7], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[7], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[8], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[8], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[10],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[11],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[12],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[13],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[14],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[15],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[16],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[16],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[17],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[17],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[18],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[18],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[19],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[19],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[20],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[20],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[21],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[21],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[22],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[22],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[23],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[23],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[24],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[24],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[25],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[25],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[26],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[26],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[27],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[27],_testData[34], false);
             }
         }
 
@@ -2484,12 +2541,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 41;
+                parametr1.Value = 133;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 41;
+                parametr2.Value = 161;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2521,93 +2578,35 @@ ORDER BY
                 var firstItems2 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems1 = new List<FlatInt64bigintListD1E2M>();
                  ((IInt64ListbigintListD1)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(28));
-                Assert.That(firstItems2, Has.Count.EqualTo(28));
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[9],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[10],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[11],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[12],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[13],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[14],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[15],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[16],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[17],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[18],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[18],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[19],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[19],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[20],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[20],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[21],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[21],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[22],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[22],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[23],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[23],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[24],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[24],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[25],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[25],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[26],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[26],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[27],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[27],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(28));
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[16],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[17],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[18],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[19],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[20],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[21],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[22],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[23],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[24],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[25],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[26],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[27],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(10));
+                Assert.That(firstItems2, Has.Count.EqualTo(10));
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[9],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(6));
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[34], false);
             }
         }
 
@@ -2695,12 +2694,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 62;
+                parametr1.Value = 6;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 141;
+                parametr2.Value = 91;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2731,54 +2730,67 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
+                        Assert.That(models, Has.Count.EqualTo(33));
 
-                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[13],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[14],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[15],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[16],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[17],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[18],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[19],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[20],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[21],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[22],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[23],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[24],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[2], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[3], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[4], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[5], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[6], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[7], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[8], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[13],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[14],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[15],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[16],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[17],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[18],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[19],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[20],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[21],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[22],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[23],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[24],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[25],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[26],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[27],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[28],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[29],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[30],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[31],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[32],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
+                        Assert.That(models, Has.Count.EqualTo(18));
 
-                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[13],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[14],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[15],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[16],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[17],_testData[34], false);
                         continue;
                     }
                     
@@ -2794,12 +2806,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 41;
+                parametr1.Value = 170;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 160;
+                parametr2.Value = 121;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2831,57 +2843,38 @@ ORDER BY
                 var secondItems1 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems2 = new List<FlatInt64bigintListD1E2M>();
                 await ((IInt64ListbigintListD1)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(28));
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[18],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[19],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[20],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[21],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[22],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[23],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[24],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[25],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[26],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[27],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(10));
-                Assert.That(secondItems2, Has.Count.EqualTo(10));
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(5));
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(12));
+                Assert.That(secondItems2, Has.Count.EqualTo(12));
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[10],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[11],_testData[34], false);
             }
         }
 
@@ -2922,12 +2915,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 141;
+                parametr1.Value = 121;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 18;
+                parametr2.Value = 37;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2958,61 +2951,57 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
+                        Assert.That(models, Has.Count.EqualTo(12));
 
-                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(32));
+                        Assert.That(models, Has.Count.EqualTo(29));
 
-                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[3], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[4], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[5], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[6], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[13],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[14],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[15],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[16],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[17],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[18],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[19],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[20],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[21],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[22],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[23],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[24],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[25],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[26],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[27],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[28],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[29],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[30],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[31],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[6], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[7], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[8], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[13],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[14],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[15],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[16],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[17],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[18],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[19],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[20],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[21],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[22],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[23],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[24],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[25],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[26],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[27],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[28],_testData[34], false);
                         continue;
                     }
                     
@@ -3028,12 +3017,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 170;
+                parametr1.Value = 84;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 41;
+                parametr2.Value = 141;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -3065,73 +3054,46 @@ ORDER BY
                 var secondItems1 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems2 = new List<FlatInt64bigintListD1E2M>();
                  ((IInt64ListbigintListD1)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(8));
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(28));
-                Assert.That(secondItems2, Has.Count.EqualTo(28));
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[10],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[11],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[12],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[13],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[14],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[15],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[16],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[16],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[17],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[17],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[18],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[18],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[19],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[19],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[20],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[20],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[21],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[21],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[22],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[22],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[23],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[23],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[24],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[24],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[25],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[25],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[26],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[26],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[27],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[27],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(19));
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[18],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(9));
+                Assert.That(secondItems2, Has.Count.EqualTo(9));
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[34], false);
             }
         }
 
@@ -3211,12 +3173,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 141;
+                parametr1.Value = 170;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 26;
+                parametr2.Value = 159;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -3225,60 +3187,28 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
+                        Assert.That(models, Has.Count.EqualTo(5));
 
-                        Int64bigintListD1E2M.AssertModel(models[0],_testData[22], false);
-                        Int64bigintListD1E2M.AssertModel(models[1],_testData[23], false);
-                        Int64bigintListD1E2M.AssertModel(models[2],_testData[24], false);
-                        Int64bigintListD1E2M.AssertModel(models[3],_testData[25], false);
-                        Int64bigintListD1E2M.AssertModel(models[4],_testData[26], false);
-                        Int64bigintListD1E2M.AssertModel(models[5],_testData[27], false);
-                        Int64bigintListD1E2M.AssertModel(models[6],_testData[28], false);
-                        Int64bigintListD1E2M.AssertModel(models[7],_testData[29], false);
-                        Int64bigintListD1E2M.AssertModel(models[8],_testData[30], false);
-                        Int64bigintListD1E2M.AssertModel(models[9],_testData[31], false);
-                        Int64bigintListD1E2M.AssertModel(models[10],_testData[32], false);
-                        Int64bigintListD1E2M.AssertModel(models[11],_testData[33], false);
-                        Int64bigintListD1E2M.AssertModel(models[12],_testData[34], false);
+                        Int64bigintListD1E2M.AssertModel(models[0],_testData[30], false);
+                        Int64bigintListD1E2M.AssertModel(models[1],_testData[31], false);
+                        Int64bigintListD1E2M.AssertModel(models[2],_testData[32], false);
+                        Int64bigintListD1E2M.AssertModel(models[3],_testData[33], false);
+                        Int64bigintListD1E2M.AssertModel(models[4],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(31));
+                        Assert.That(models, Has.Count.EqualTo(7));
 
-                        Int64bigintListD1E2M.AssertModel(models[0],_testData[4], false);
-                        Int64bigintListD1E2M.AssertModel(models[1],_testData[5], false);
-                        Int64bigintListD1E2M.AssertModel(models[2],_testData[6], false);
-                        Int64bigintListD1E2M.AssertModel(models[3],_testData[7], false);
-                        Int64bigintListD1E2M.AssertModel(models[4],_testData[8], false);
-                        Int64bigintListD1E2M.AssertModel(models[5],_testData[9], false);
-                        Int64bigintListD1E2M.AssertModel(models[6],_testData[10], false);
-                        Int64bigintListD1E2M.AssertModel(models[7],_testData[11], false);
-                        Int64bigintListD1E2M.AssertModel(models[8],_testData[12], false);
-                        Int64bigintListD1E2M.AssertModel(models[9],_testData[13], false);
-                        Int64bigintListD1E2M.AssertModel(models[10],_testData[14], false);
-                        Int64bigintListD1E2M.AssertModel(models[11],_testData[15], false);
-                        Int64bigintListD1E2M.AssertModel(models[12],_testData[16], false);
-                        Int64bigintListD1E2M.AssertModel(models[13],_testData[17], false);
-                        Int64bigintListD1E2M.AssertModel(models[14],_testData[18], false);
-                        Int64bigintListD1E2M.AssertModel(models[15],_testData[19], false);
-                        Int64bigintListD1E2M.AssertModel(models[16],_testData[20], false);
-                        Int64bigintListD1E2M.AssertModel(models[17],_testData[21], false);
-                        Int64bigintListD1E2M.AssertModel(models[18],_testData[22], false);
-                        Int64bigintListD1E2M.AssertModel(models[19],_testData[23], false);
-                        Int64bigintListD1E2M.AssertModel(models[20],_testData[24], false);
-                        Int64bigintListD1E2M.AssertModel(models[21],_testData[25], false);
-                        Int64bigintListD1E2M.AssertModel(models[22],_testData[26], false);
-                        Int64bigintListD1E2M.AssertModel(models[23],_testData[27], false);
-                        Int64bigintListD1E2M.AssertModel(models[24],_testData[28], false);
-                        Int64bigintListD1E2M.AssertModel(models[25],_testData[29], false);
-                        Int64bigintListD1E2M.AssertModel(models[26],_testData[30], false);
-                        Int64bigintListD1E2M.AssertModel(models[27],_testData[31], false);
-                        Int64bigintListD1E2M.AssertModel(models[28],_testData[32], false);
-                        Int64bigintListD1E2M.AssertModel(models[29],_testData[33], false);
-                        Int64bigintListD1E2M.AssertModel(models[30],_testData[34], false);
+                        Int64bigintListD1E2M.AssertModel(models[0],_testData[28], false);
+                        Int64bigintListD1E2M.AssertModel(models[1],_testData[29], false);
+                        Int64bigintListD1E2M.AssertModel(models[2],_testData[30], false);
+                        Int64bigintListD1E2M.AssertModel(models[3],_testData[31], false);
+                        Int64bigintListD1E2M.AssertModel(models[4],_testData[32], false);
+                        Int64bigintListD1E2M.AssertModel(models[5],_testData[33], false);
+                        Int64bigintListD1E2M.AssertModel(models[6],_testData[34], false);
                         continue;
                     }
                     
@@ -3313,12 +3243,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 113;
+                parametr1.Value = 179;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 28;
+                parametr2.Value = 121;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -3327,64 +3257,32 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
+                        Assert.That(models, Has.Count.EqualTo(4));
 
-                        Int64bigintListD1E2M.AssertModel(models[0],_testData[17], false);
-                        Int64bigintListD1E2M.AssertModel(models[1],_testData[18], false);
-                        Int64bigintListD1E2M.AssertModel(models[2],_testData[19], false);
-                        Int64bigintListD1E2M.AssertModel(models[3],_testData[20], false);
-                        Int64bigintListD1E2M.AssertModel(models[4],_testData[21], false);
-                        Int64bigintListD1E2M.AssertModel(models[5],_testData[22], false);
-                        Int64bigintListD1E2M.AssertModel(models[6],_testData[23], false);
-                        Int64bigintListD1E2M.AssertModel(models[7],_testData[24], false);
-                        Int64bigintListD1E2M.AssertModel(models[8],_testData[25], false);
-                        Int64bigintListD1E2M.AssertModel(models[9],_testData[26], false);
-                        Int64bigintListD1E2M.AssertModel(models[10],_testData[27], false);
-                        Int64bigintListD1E2M.AssertModel(models[11],_testData[28], false);
-                        Int64bigintListD1E2M.AssertModel(models[12],_testData[29], false);
-                        Int64bigintListD1E2M.AssertModel(models[13],_testData[30], false);
-                        Int64bigintListD1E2M.AssertModel(models[14],_testData[31], false);
-                        Int64bigintListD1E2M.AssertModel(models[15],_testData[32], false);
-                        Int64bigintListD1E2M.AssertModel(models[16],_testData[33], false);
-                        Int64bigintListD1E2M.AssertModel(models[17],_testData[34], false);
+                        Int64bigintListD1E2M.AssertModel(models[0],_testData[31], false);
+                        Int64bigintListD1E2M.AssertModel(models[1],_testData[32], false);
+                        Int64bigintListD1E2M.AssertModel(models[2],_testData[33], false);
+                        Int64bigintListD1E2M.AssertModel(models[3],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(30));
+                        Assert.That(models, Has.Count.EqualTo(12));
 
-                        Int64bigintListD1E2M.AssertModel(models[0],_testData[5], false);
-                        Int64bigintListD1E2M.AssertModel(models[1],_testData[6], false);
-                        Int64bigintListD1E2M.AssertModel(models[2],_testData[7], false);
-                        Int64bigintListD1E2M.AssertModel(models[3],_testData[8], false);
-                        Int64bigintListD1E2M.AssertModel(models[4],_testData[9], false);
-                        Int64bigintListD1E2M.AssertModel(models[5],_testData[10], false);
-                        Int64bigintListD1E2M.AssertModel(models[6],_testData[11], false);
-                        Int64bigintListD1E2M.AssertModel(models[7],_testData[12], false);
-                        Int64bigintListD1E2M.AssertModel(models[8],_testData[13], false);
-                        Int64bigintListD1E2M.AssertModel(models[9],_testData[14], false);
-                        Int64bigintListD1E2M.AssertModel(models[10],_testData[15], false);
-                        Int64bigintListD1E2M.AssertModel(models[11],_testData[16], false);
-                        Int64bigintListD1E2M.AssertModel(models[12],_testData[17], false);
-                        Int64bigintListD1E2M.AssertModel(models[13],_testData[18], false);
-                        Int64bigintListD1E2M.AssertModel(models[14],_testData[19], false);
-                        Int64bigintListD1E2M.AssertModel(models[15],_testData[20], false);
-                        Int64bigintListD1E2M.AssertModel(models[16],_testData[21], false);
-                        Int64bigintListD1E2M.AssertModel(models[17],_testData[22], false);
-                        Int64bigintListD1E2M.AssertModel(models[18],_testData[23], false);
-                        Int64bigintListD1E2M.AssertModel(models[19],_testData[24], false);
-                        Int64bigintListD1E2M.AssertModel(models[20],_testData[25], false);
-                        Int64bigintListD1E2M.AssertModel(models[21],_testData[26], false);
-                        Int64bigintListD1E2M.AssertModel(models[22],_testData[27], false);
-                        Int64bigintListD1E2M.AssertModel(models[23],_testData[28], false);
-                        Int64bigintListD1E2M.AssertModel(models[24],_testData[29], false);
-                        Int64bigintListD1E2M.AssertModel(models[25],_testData[30], false);
-                        Int64bigintListD1E2M.AssertModel(models[26],_testData[31], false);
-                        Int64bigintListD1E2M.AssertModel(models[27],_testData[32], false);
-                        Int64bigintListD1E2M.AssertModel(models[28],_testData[33], false);
-                        Int64bigintListD1E2M.AssertModel(models[29],_testData[34], false);
+                        Int64bigintListD1E2M.AssertModel(models[0],_testData[23], false);
+                        Int64bigintListD1E2M.AssertModel(models[1],_testData[24], false);
+                        Int64bigintListD1E2M.AssertModel(models[2],_testData[25], false);
+                        Int64bigintListD1E2M.AssertModel(models[3],_testData[26], false);
+                        Int64bigintListD1E2M.AssertModel(models[4],_testData[27], false);
+                        Int64bigintListD1E2M.AssertModel(models[5],_testData[28], false);
+                        Int64bigintListD1E2M.AssertModel(models[6],_testData[29], false);
+                        Int64bigintListD1E2M.AssertModel(models[7],_testData[30], false);
+                        Int64bigintListD1E2M.AssertModel(models[8],_testData[31], false);
+                        Int64bigintListD1E2M.AssertModel(models[9],_testData[32], false);
+                        Int64bigintListD1E2M.AssertModel(models[10],_testData[33], false);
+                        Int64bigintListD1E2M.AssertModel(models[11],_testData[34], false);
                         continue;
                     }
                     
@@ -3515,57 +3413,87 @@ ORDER BY
                 var firstItems2 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems1 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems2 = new List<FlatInt64bigintListD1E2M>();
-                await ((IInt64ListbigintListD1)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 187, query1, 89, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(2));
-                Assert.That(firstItems2, Has.Count.EqualTo(2));
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(21));
-                Assert.That(secondItems2, Has.Count.EqualTo(21));
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[10],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[11],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[12],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[13],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[14],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[15],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[16],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[16],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[17],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[17],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[18],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[18],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[19],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[19],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[20],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[20],_testData[34], false);
+                await ((IInt64ListbigintListD1)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 150, query1, 29, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(8));
+                Assert.That(firstItems2, Has.Count.EqualTo(8));
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(30));
+                Assert.That(secondItems2, Has.Count.EqualTo(30));
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[5], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[5], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[6], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[6], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[7], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[7], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[8], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[8], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[10],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[11],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[12],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[13],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[14],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[15],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[16],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[16],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[17],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[17],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[18],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[18],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[19],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[19],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[20],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[20],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[21],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[21],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[22],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[22],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[23],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[23],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[24],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[24],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[25],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[25],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[26],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[26],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[27],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[27],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[28],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[28],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[29],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[29],_testData[34], false);
             }
         }
 
@@ -3603,71 +3531,63 @@ ORDER BY
                 var firstItems1 = new List<FlatInt64bigintListD1E2M>();
                 var firstItems2 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems1 = new List<FlatInt64bigintListD1E2M>();
-                await ((IInt64ListbigintListD1)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 45, query1, 173, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(27));
-                Assert.That(firstItems2, Has.Count.EqualTo(27));
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[9],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[10],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[11],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[12],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[13],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[14],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[15],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[16],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[17],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[18],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[18],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[19],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[19],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[20],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[20],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[21],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[21],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[22],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[22],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[23],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[23],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[24],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[24],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[25],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[25],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[26],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[26],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(7));
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[34], false);
+                await ((IInt64ListbigintListD1)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 75, query1, 116, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(20));
+                Assert.That(firstItems2, Has.Count.EqualTo(20));
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[9],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[10],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[11],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[12],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[13],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[14],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[15],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[16],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[17],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[18],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[18],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[19],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[19],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(13));
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[34], false);
             }
         }
 
@@ -3742,135 +3662,81 @@ ORDER BY
                 var firstItems2 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems1 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems2 = new List<FlatInt64bigintListD1E2M>();
-                 ((IInt64ListbigintListD1)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 26, query1, 26, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(31));
-                Assert.That(firstItems2, Has.Count.EqualTo(31));
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[4], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[4], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[5], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[5], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[6], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[6], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[9],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[10],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[11],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[12],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[13],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[14],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[15],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[16],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[17],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[18],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[18],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[19],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[19],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[20],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[20],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[21],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[21],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[22],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[22],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[23],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[23],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[24],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[24],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[25],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[25],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[26],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[26],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[27],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[27],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[28],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[28],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[29],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[29],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[30],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[30],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(31));
-                Assert.That(secondItems2, Has.Count.EqualTo(31));
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[4], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[4], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[5], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[5], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[6], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[6], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[10],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[11],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[12],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[13],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[14],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[15],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[16],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[16],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[17],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[17],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[18],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[18],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[19],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[19],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[20],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[20],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[21],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[21],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[22],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[22],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[23],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[23],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[24],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[24],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[25],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[25],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[26],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[26],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[27],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[27],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[28],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[28],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[29],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[29],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[30],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[30],_testData[34], false);
+                 ((IInt64ListbigintListD1)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 141, query1, 49, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(9));
+                Assert.That(firstItems2, Has.Count.EqualTo(9));
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(26));
+                Assert.That(secondItems2, Has.Count.EqualTo(26));
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[10],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[11],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[12],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[13],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[14],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[15],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[16],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[16],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[17],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[17],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[18],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[18],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[19],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[19],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[20],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[20],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[21],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[21],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[22],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[22],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[23],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[23],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[24],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[24],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[25],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[25],_testData[34], false);
             }
         }
 
@@ -3908,73 +3774,65 @@ ORDER BY
                 var firstItems1 = new List<FlatInt64bigintListD1E2M>();
                 var firstItems2 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems1 = new List<FlatInt64bigintListD1E2M>();
-                 ((IInt64ListbigintListD1)this).DbConnectionMMDynQuerySelectModelBatch(connection, 98, query1, 75, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(20));
-                Assert.That(firstItems2, Has.Count.EqualTo(20));
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[9],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[10],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[11],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[12],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[13],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[14],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[15],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[16],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[17],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[18],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[18],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[19],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[19],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(23));
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[16],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[17],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[18],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[19],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[20],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[21],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[22],_testData[34], false);
+                 ((IInt64ListbigintListD1)this).DbConnectionMMDynQuerySelectModelBatch(connection, 121, query1, 21, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(12));
+                Assert.That(firstItems2, Has.Count.EqualTo(12));
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[0],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[1],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[2],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[3],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[4],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[5],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[6],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[7],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[8],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[9],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[10],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems2[11],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(31));
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[4], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[5], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[6], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[7], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[8], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[16],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[17],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[18],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[19],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[20],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[21],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[22],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[23],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[24],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[25],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[26],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[27],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[28],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[29],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[30],_testData[34], false);
             }
         }
 
@@ -4084,57 +3942,51 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IInt64ListbigintListD1)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 151, query1, 62, query2))
+                foreach(var batchResult in await ((IInt64ListbigintListD1)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 161, query1, 56, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
+                        Assert.That(models, Has.Count.EqualTo(6));
 
-                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
+                        Assert.That(models, Has.Count.EqualTo(24));
 
-                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[13],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[14],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[15],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[16],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[17],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[18],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[19],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[20],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[21],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[22],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[23],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[24],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[13],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[14],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[15],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[16],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[17],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[18],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[19],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[20],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[21],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[22],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[23],_testData[34], false);
                         continue;
                     }
                     
@@ -4177,39 +4029,78 @@ ORDER BY
                 var firstItems1 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems1 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems2 = new List<FlatInt64bigintListD1E2M>();
-                await ((IInt64ListbigintListD1)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 89, query1, 178, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(21));
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[18],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[19],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[20],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(4));
-                Assert.That(secondItems2, Has.Count.EqualTo(4));
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[34], false);
+                await ((IInt64ListbigintListD1)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 91, query1, 55, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(18));
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(25));
+                Assert.That(secondItems2, Has.Count.EqualTo(25));
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[10],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[11],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[12],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[13],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[14],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[15],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[16],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[16],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[17],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[17],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[18],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[18],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[19],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[19],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[20],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[20],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[21],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[21],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[22],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[22],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[23],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[23],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[24],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[24],_testData[34], false);
             }
         }
 
@@ -4268,79 +4159,86 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IInt64ListbigintListD1)this).DbConnectionSTDynQuerySelectModelBatch(connection, 18, query1, 53, query2))
+                foreach(var batchResult in  ((IInt64ListbigintListD1)this).DbConnectionSTDynQuerySelectModelBatch(connection, 21, query1, 3, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(32));
+                        Assert.That(models, Has.Count.EqualTo(31));
 
-                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[3], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[4], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[5], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[6], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[13],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[14],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[15],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[16],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[17],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[18],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[19],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[20],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[21],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[22],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[23],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[24],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[25],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[26],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[27],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[28],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[29],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[30],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[31],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[4], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[5], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[6], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[7], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[8], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[13],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[14],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[15],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[16],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[17],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[18],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[19],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[20],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[21],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[22],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[23],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[24],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[25],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[26],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[27],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[28],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[29],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[30],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(26));
+                        Assert.That(models, Has.Count.EqualTo(34));
 
-                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[13],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[14],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[15],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[16],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[17],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[18],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[19],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[20],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[21],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[22],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[23],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[24],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(models[25],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[0],_testData[1], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[1],_testData[2], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[2],_testData[3], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[3],_testData[4], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[4],_testData[5], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[5],_testData[6], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[6],_testData[7], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[7],_testData[8], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[8],_testData[9], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[9],_testData[10], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[10],_testData[11], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[11],_testData[12], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[12],_testData[13], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[13],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[14],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[15],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[16],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[17],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[18],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[19],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[20],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[21],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[22],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[23],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[24],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[25],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[26],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[27],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[28],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[29],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[30],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[31],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[32],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(models[33],_testData[34], false);
                         continue;
                     }
                     
@@ -4383,70 +4281,69 @@ ORDER BY
                 var firstItems1 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems1 = new List<FlatInt64bigintListD1E2M>();
                 var secondItems2 = new List<FlatInt64bigintListD1E2M>();
-                 ((IInt64ListbigintListD1)this).DbConnectionDynQuerySelectModelBatch(connection, 7, query1, 141, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(34));
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[1], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[2], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[3], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[4], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[5], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[6], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[7], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[8], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[9], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[10], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[11], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[12], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[13], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[14], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[15], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[16], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[17], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[18], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[18],_testData[19], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[19],_testData[20], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[20],_testData[21], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[21],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[22],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[23],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[24],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[25],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[26],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[27],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[28],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[29],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[30],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[31],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[32],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[33],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(13));
-                Assert.That(secondItems2, Has.Count.EqualTo(13));
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[22], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[23], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[24], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[25], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[26], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[27], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[28], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[29], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[30], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[31], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[10],_testData[32], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[11],_testData[33], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[34], false);
-                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[12],_testData[34], false);
+                 ((IInt64ListbigintListD1)this).DbConnectionDynQuerySelectModelBatch(connection, 68, query1, 84, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(21));
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[0],_testData[14], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[1],_testData[15], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[2],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[3],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[4],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[5],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[6],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[7],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[8],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[9],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[10],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[11],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[12],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[13],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[14],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[15],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[16],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[17],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[18],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[19],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(firstItems1[20],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(19));
+                Assert.That(secondItems2, Has.Count.EqualTo(19));
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[0],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[0],_testData[16], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[1],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[1],_testData[17], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[2],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[2],_testData[18], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[3],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[3],_testData[19], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[4],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[4],_testData[20], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[5],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[5],_testData[21], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[6],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[6],_testData[22], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[7],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[7],_testData[23], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[8],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[8],_testData[24], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[9],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[9],_testData[25], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[10],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[10],_testData[26], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[11],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[11],_testData[27], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[12],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[12],_testData[28], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[13],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[13],_testData[29], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[14],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[14],_testData[30], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[15],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[15],_testData[31], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[16],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[16],_testData[32], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[17],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[17],_testData[33], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems1[18],_testData[34], false);
+                        FlatInt64bigintListD1E2M.AssertModel(secondItems2[18],_testData[34], false);
             }
         }
 
@@ -4526,48 +4423,38 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IInt64ListbigintListD1)this).DbConnectionSTSelectModelBatchAsync(connection, 75, 178))
+                foreach(var batchResult in await ((IInt64ListbigintListD1)this).DbConnectionSTSelectModelBatchAsync(connection, 191, 104))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
+                        Assert.That(models, Has.Count.EqualTo(2));
 
-                        Int64bigintListD1E2M.AssertModel(models[0],_testData[12], false);
-                        Int64bigintListD1E2M.AssertModel(models[1],_testData[13], false);
-                        Int64bigintListD1E2M.AssertModel(models[2],_testData[14], false);
-                        Int64bigintListD1E2M.AssertModel(models[3],_testData[15], false);
-                        Int64bigintListD1E2M.AssertModel(models[4],_testData[16], false);
-                        Int64bigintListD1E2M.AssertModel(models[5],_testData[17], false);
-                        Int64bigintListD1E2M.AssertModel(models[6],_testData[18], false);
-                        Int64bigintListD1E2M.AssertModel(models[7],_testData[19], false);
-                        Int64bigintListD1E2M.AssertModel(models[8],_testData[20], false);
-                        Int64bigintListD1E2M.AssertModel(models[9],_testData[21], false);
-                        Int64bigintListD1E2M.AssertModel(models[10],_testData[22], false);
-                        Int64bigintListD1E2M.AssertModel(models[11],_testData[23], false);
-                        Int64bigintListD1E2M.AssertModel(models[12],_testData[24], false);
-                        Int64bigintListD1E2M.AssertModel(models[13],_testData[25], false);
-                        Int64bigintListD1E2M.AssertModel(models[14],_testData[26], false);
-                        Int64bigintListD1E2M.AssertModel(models[15],_testData[27], false);
-                        Int64bigintListD1E2M.AssertModel(models[16],_testData[28], false);
-                        Int64bigintListD1E2M.AssertModel(models[17],_testData[29], false);
-                        Int64bigintListD1E2M.AssertModel(models[18],_testData[30], false);
-                        Int64bigintListD1E2M.AssertModel(models[19],_testData[31], false);
-                        Int64bigintListD1E2M.AssertModel(models[20],_testData[32], false);
-                        Int64bigintListD1E2M.AssertModel(models[21],_testData[33], false);
-                        Int64bigintListD1E2M.AssertModel(models[22],_testData[34], false);
+                        Int64bigintListD1E2M.AssertModel(models[0],_testData[33], false);
+                        Int64bigintListD1E2M.AssertModel(models[1],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
+                        Assert.That(models, Has.Count.EqualTo(15));
 
-                        Int64bigintListD1E2M.AssertModel(models[0],_testData[31], false);
-                        Int64bigintListD1E2M.AssertModel(models[1],_testData[32], false);
-                        Int64bigintListD1E2M.AssertModel(models[2],_testData[33], false);
-                        Int64bigintListD1E2M.AssertModel(models[3],_testData[34], false);
+                        Int64bigintListD1E2M.AssertModel(models[0],_testData[20], false);
+                        Int64bigintListD1E2M.AssertModel(models[1],_testData[21], false);
+                        Int64bigintListD1E2M.AssertModel(models[2],_testData[22], false);
+                        Int64bigintListD1E2M.AssertModel(models[3],_testData[23], false);
+                        Int64bigintListD1E2M.AssertModel(models[4],_testData[24], false);
+                        Int64bigintListD1E2M.AssertModel(models[5],_testData[25], false);
+                        Int64bigintListD1E2M.AssertModel(models[6],_testData[26], false);
+                        Int64bigintListD1E2M.AssertModel(models[7],_testData[27], false);
+                        Int64bigintListD1E2M.AssertModel(models[8],_testData[28], false);
+                        Int64bigintListD1E2M.AssertModel(models[9],_testData[29], false);
+                        Int64bigintListD1E2M.AssertModel(models[10],_testData[30], false);
+                        Int64bigintListD1E2M.AssertModel(models[11],_testData[31], false);
+                        Int64bigintListD1E2M.AssertModel(models[12],_testData[32], false);
+                        Int64bigintListD1E2M.AssertModel(models[13],_testData[33], false);
+                        Int64bigintListD1E2M.AssertModel(models[14],_testData[34], false);
                         continue;
                     }
                     
@@ -4598,45 +4485,51 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IInt64ListbigintListD1)this).DbConnectionSTSelectModelBatch(connection, 160, 136))
+                foreach(var batchResult in  ((IInt64ListbigintListD1)this).DbConnectionSTSelectModelBatch(connection, 179, 49))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
+                        Assert.That(models, Has.Count.EqualTo(4));
 
-                        Int64bigintListD1E2M.AssertModel(models[0],_testData[25], false);
-                        Int64bigintListD1E2M.AssertModel(models[1],_testData[26], false);
-                        Int64bigintListD1E2M.AssertModel(models[2],_testData[27], false);
-                        Int64bigintListD1E2M.AssertModel(models[3],_testData[28], false);
-                        Int64bigintListD1E2M.AssertModel(models[4],_testData[29], false);
-                        Int64bigintListD1E2M.AssertModel(models[5],_testData[30], false);
-                        Int64bigintListD1E2M.AssertModel(models[6],_testData[31], false);
-                        Int64bigintListD1E2M.AssertModel(models[7],_testData[32], false);
-                        Int64bigintListD1E2M.AssertModel(models[8],_testData[33], false);
-                        Int64bigintListD1E2M.AssertModel(models[9],_testData[34], false);
+                        Int64bigintListD1E2M.AssertModel(models[0],_testData[31], false);
+                        Int64bigintListD1E2M.AssertModel(models[1],_testData[32], false);
+                        Int64bigintListD1E2M.AssertModel(models[2],_testData[33], false);
+                        Int64bigintListD1E2M.AssertModel(models[3],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
+                        Assert.That(models, Has.Count.EqualTo(26));
 
-                        Int64bigintListD1E2M.AssertModel(models[0],_testData[21], false);
-                        Int64bigintListD1E2M.AssertModel(models[1],_testData[22], false);
-                        Int64bigintListD1E2M.AssertModel(models[2],_testData[23], false);
-                        Int64bigintListD1E2M.AssertModel(models[3],_testData[24], false);
-                        Int64bigintListD1E2M.AssertModel(models[4],_testData[25], false);
-                        Int64bigintListD1E2M.AssertModel(models[5],_testData[26], false);
-                        Int64bigintListD1E2M.AssertModel(models[6],_testData[27], false);
-                        Int64bigintListD1E2M.AssertModel(models[7],_testData[28], false);
-                        Int64bigintListD1E2M.AssertModel(models[8],_testData[29], false);
-                        Int64bigintListD1E2M.AssertModel(models[9],_testData[30], false);
-                        Int64bigintListD1E2M.AssertModel(models[10],_testData[31], false);
-                        Int64bigintListD1E2M.AssertModel(models[11],_testData[32], false);
-                        Int64bigintListD1E2M.AssertModel(models[12],_testData[33], false);
-                        Int64bigintListD1E2M.AssertModel(models[13],_testData[34], false);
+                        Int64bigintListD1E2M.AssertModel(models[0],_testData[9], false);
+                        Int64bigintListD1E2M.AssertModel(models[1],_testData[10], false);
+                        Int64bigintListD1E2M.AssertModel(models[2],_testData[11], false);
+                        Int64bigintListD1E2M.AssertModel(models[3],_testData[12], false);
+                        Int64bigintListD1E2M.AssertModel(models[4],_testData[13], false);
+                        Int64bigintListD1E2M.AssertModel(models[5],_testData[14], false);
+                        Int64bigintListD1E2M.AssertModel(models[6],_testData[15], false);
+                        Int64bigintListD1E2M.AssertModel(models[7],_testData[16], false);
+                        Int64bigintListD1E2M.AssertModel(models[8],_testData[17], false);
+                        Int64bigintListD1E2M.AssertModel(models[9],_testData[18], false);
+                        Int64bigintListD1E2M.AssertModel(models[10],_testData[19], false);
+                        Int64bigintListD1E2M.AssertModel(models[11],_testData[20], false);
+                        Int64bigintListD1E2M.AssertModel(models[12],_testData[21], false);
+                        Int64bigintListD1E2M.AssertModel(models[13],_testData[22], false);
+                        Int64bigintListD1E2M.AssertModel(models[14],_testData[23], false);
+                        Int64bigintListD1E2M.AssertModel(models[15],_testData[24], false);
+                        Int64bigintListD1E2M.AssertModel(models[16],_testData[25], false);
+                        Int64bigintListD1E2M.AssertModel(models[17],_testData[26], false);
+                        Int64bigintListD1E2M.AssertModel(models[18],_testData[27], false);
+                        Int64bigintListD1E2M.AssertModel(models[19],_testData[28], false);
+                        Int64bigintListD1E2M.AssertModel(models[20],_testData[29], false);
+                        Int64bigintListD1E2M.AssertModel(models[21],_testData[30], false);
+                        Int64bigintListD1E2M.AssertModel(models[22],_testData[31], false);
+                        Int64bigintListD1E2M.AssertModel(models[23],_testData[32], false);
+                        Int64bigintListD1E2M.AssertModel(models[24],_testData[33], false);
+                        Int64bigintListD1E2M.AssertModel(models[25],_testData[34], false);
                         continue;
                     }
                     
@@ -4652,30 +4545,15 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IInt64ListbigintListD1)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IInt64ListbigintListD1)this).SetDbConnectionSelectModelParametrs(cmd, 106);
+                ((IInt64ListbigintListD1)this).SetDbConnectionSelectModelParametrs(cmd, 179);
                 var models = await ((IInt64ListbigintListD1)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(19));
+                Assert.That(models, Has.Count.EqualTo(4));
 
-                Int64bigintListD1E2M.AssertModel(models[0],_testData[16], false);
-                Int64bigintListD1E2M.AssertModel(models[1],_testData[17], false);
-                Int64bigintListD1E2M.AssertModel(models[2],_testData[18], false);
-                Int64bigintListD1E2M.AssertModel(models[3],_testData[19], false);
-                Int64bigintListD1E2M.AssertModel(models[4],_testData[20], false);
-                Int64bigintListD1E2M.AssertModel(models[5],_testData[21], false);
-                Int64bigintListD1E2M.AssertModel(models[6],_testData[22], false);
-                Int64bigintListD1E2M.AssertModel(models[7],_testData[23], false);
-                Int64bigintListD1E2M.AssertModel(models[8],_testData[24], false);
-                Int64bigintListD1E2M.AssertModel(models[9],_testData[25], false);
-                Int64bigintListD1E2M.AssertModel(models[10],_testData[26], false);
-                Int64bigintListD1E2M.AssertModel(models[11],_testData[27], false);
-                Int64bigintListD1E2M.AssertModel(models[12],_testData[28], false);
-                Int64bigintListD1E2M.AssertModel(models[13],_testData[29], false);
-                Int64bigintListD1E2M.AssertModel(models[14],_testData[30], false);
-                Int64bigintListD1E2M.AssertModel(models[15],_testData[31], false);
-                Int64bigintListD1E2M.AssertModel(models[16],_testData[32], false);
-                Int64bigintListD1E2M.AssertModel(models[17],_testData[33], false);
-                Int64bigintListD1E2M.AssertModel(models[18],_testData[34], false);
+                Int64bigintListD1E2M.AssertModel(models[0],_testData[31], false);
+                Int64bigintListD1E2M.AssertModel(models[1],_testData[32], false);
+                Int64bigintListD1E2M.AssertModel(models[2],_testData[33], false);
+                Int64bigintListD1E2M.AssertModel(models[3],_testData[34], false);
             }
         }
 
@@ -4686,39 +4564,20 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IInt64ListbigintListD1)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IInt64ListbigintListD1)this).SetDbConnectionSelectModelParametrs(cmd, 41);
+                ((IInt64ListbigintListD1)this).SetDbConnectionSelectModelParametrs(cmd, 141);
                 var models =  ((IInt64ListbigintListD1)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(28));
+                Assert.That(models, Has.Count.EqualTo(9));
 
-                Int64bigintListD1E2M.AssertModel(models[0],_testData[7], false);
-                Int64bigintListD1E2M.AssertModel(models[1],_testData[8], false);
-                Int64bigintListD1E2M.AssertModel(models[2],_testData[9], false);
-                Int64bigintListD1E2M.AssertModel(models[3],_testData[10], false);
-                Int64bigintListD1E2M.AssertModel(models[4],_testData[11], false);
-                Int64bigintListD1E2M.AssertModel(models[5],_testData[12], false);
-                Int64bigintListD1E2M.AssertModel(models[6],_testData[13], false);
-                Int64bigintListD1E2M.AssertModel(models[7],_testData[14], false);
-                Int64bigintListD1E2M.AssertModel(models[8],_testData[15], false);
-                Int64bigintListD1E2M.AssertModel(models[9],_testData[16], false);
-                Int64bigintListD1E2M.AssertModel(models[10],_testData[17], false);
-                Int64bigintListD1E2M.AssertModel(models[11],_testData[18], false);
-                Int64bigintListD1E2M.AssertModel(models[12],_testData[19], false);
-                Int64bigintListD1E2M.AssertModel(models[13],_testData[20], false);
-                Int64bigintListD1E2M.AssertModel(models[14],_testData[21], false);
-                Int64bigintListD1E2M.AssertModel(models[15],_testData[22], false);
-                Int64bigintListD1E2M.AssertModel(models[16],_testData[23], false);
-                Int64bigintListD1E2M.AssertModel(models[17],_testData[24], false);
-                Int64bigintListD1E2M.AssertModel(models[18],_testData[25], false);
-                Int64bigintListD1E2M.AssertModel(models[19],_testData[26], false);
-                Int64bigintListD1E2M.AssertModel(models[20],_testData[27], false);
-                Int64bigintListD1E2M.AssertModel(models[21],_testData[28], false);
-                Int64bigintListD1E2M.AssertModel(models[22],_testData[29], false);
-                Int64bigintListD1E2M.AssertModel(models[23],_testData[30], false);
-                Int64bigintListD1E2M.AssertModel(models[24],_testData[31], false);
-                Int64bigintListD1E2M.AssertModel(models[25],_testData[32], false);
-                Int64bigintListD1E2M.AssertModel(models[26],_testData[33], false);
-                Int64bigintListD1E2M.AssertModel(models[27],_testData[34], false);
+                Int64bigintListD1E2M.AssertModel(models[0],_testData[26], false);
+                Int64bigintListD1E2M.AssertModel(models[1],_testData[27], false);
+                Int64bigintListD1E2M.AssertModel(models[2],_testData[28], false);
+                Int64bigintListD1E2M.AssertModel(models[3],_testData[29], false);
+                Int64bigintListD1E2M.AssertModel(models[4],_testData[30], false);
+                Int64bigintListD1E2M.AssertModel(models[5],_testData[31], false);
+                Int64bigintListD1E2M.AssertModel(models[6],_testData[32], false);
+                Int64bigintListD1E2M.AssertModel(models[7],_testData[33], false);
+                Int64bigintListD1E2M.AssertModel(models[8],_testData[34], false);
             }
         }
 

@@ -28,422 +28,422 @@ namespace Tests
             new SByteInt8E0M
 {
     Id = 8,
-    Value = 107,
+    Value = 83,
     ModelInner = new SByteInt8E0MI
 {
     Id = 9,
-    Value = -69,
-    NullableValue = 47,
-},
-    NullableValue = null,
-},
-            new SByteInt8E0M
-{
-    Id = 12,
-    Value = -27,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 13,
-    Value = -103,
+    Value = -128,
     NullableValue = null,
 },
     NullableValue = null,
 },
             new SByteInt8E0M
 {
-    Id = 21,
-    Value = -118,
+    Id = 17,
+    Value = 53,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 22,
-    Value = 101,
-    NullableValue = null,
+    Id = 11,
+    Value = -121,
+    NullableValue = -121,
 },
     NullableValue = null,
 },
             new SByteInt8E0M
 {
     Id = 25,
-    Value = 88,
+    Value = 92,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 31,
-    Value = 97,
-    NullableValue = 67,
+    Id = 16,
+    Value = -58,
+    NullableValue = -81,
 },
-    NullableValue = null,
+    NullableValue = -25,
 },
             new SByteInt8E0M
 {
-    Id = 28,
-    Value = 7,
+    Id = 29,
+    Value = -95,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 40,
-    Value = -20,
-    NullableValue = -56,
+    Id = 23,
+    Value = 39,
+    NullableValue = -14,
 },
-    NullableValue = 29,
+    NullableValue = 110,
 },
             new SByteInt8E0M
 {
-    Id = 34,
-    Value = 96,
+    Id = 35,
+    Value = -39,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 46,
-    Value = -8,
+    Id = 27,
+    Value = 3,
     NullableValue = null,
 },
-    NullableValue = -79,
+    NullableValue = 24,
 },
             new SByteInt8E0M
 {
     Id = 38,
-    Value = -65,
+    Value = -78,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 53,
-    Value = -16,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new SByteInt8E0M
-{
-    Id = 40,
-    Value = -121,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 55,
-    Value = -95,
-    NullableValue = -7,
-},
-    NullableValue = -86,
-},
-            new SByteInt8E0M
-{
-    Id = 49,
-    Value = -65,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 62,
-    Value = -90,
-    NullableValue = null,
-},
-    NullableValue = 75,
-},
-            new SByteInt8E0M
-{
-    Id = 54,
-    Value = 28,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 68,
-    Value = -118,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new SByteInt8E0M
-{
-    Id = 60,
-    Value = 45,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 72,
-    Value = -73,
+    Id = 35,
+    Value = -79,
     NullableValue = 108,
 },
-    NullableValue = null,
+    NullableValue = 6,
 },
             new SByteInt8E0M
 {
-    Id = 67,
-    Value = 112,
+    Id = 39,
+    Value = -75,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 81,
-    Value = 26,
-    NullableValue = null,
+    Id = 36,
+    Value = 21,
+    NullableValue = -73,
 },
-    NullableValue = null,
+    NullableValue = 16,
 },
             new SByteInt8E0M
 {
-    Id = 72,
-    Value = 26,
+    Id = 48,
+    Value = -46,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 90,
-    Value = 57,
-    NullableValue = -127,
-},
+    Id = 39,
+    Value = 125,
     NullableValue = null,
+},
+    NullableValue = -73,
 },
             new SByteInt8E0M
 {
-    Id = 74,
-    Value = -50,
+    Id = 55,
+    Value = -5,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 93,
-    Value = -4,
-    NullableValue = -92,
+    Id = 40,
+    Value = 125,
+    NullableValue = null,
 },
-    NullableValue = -109,
+    NullableValue = -7,
 },
             new SByteInt8E0M
 {
-    Id = 78,
-    Value = -73,
+    Id = 64,
+    Value = 65,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 102,
-    Value = 37,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new SByteInt8E0M
-{
-    Id = 85,
-    Value = -124,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 111,
-    Value = 108,
-    NullableValue = -31,
-},
-    NullableValue = null,
-},
-            new SByteInt8E0M
-{
-    Id = 89,
+    Id = 43,
     Value = -54,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 114,
-    Value = 56,
-    NullableValue = null,
-},
-    NullableValue = -82,
-},
-            new SByteInt8E0M
-{
-    Id = 97,
-    Value = -64,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 123,
-    Value = -115,
-    NullableValue = null,
-},
-    NullableValue = -82,
-},
-            new SByteInt8E0M
-{
-    Id = 103,
-    Value = 44,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 131,
-    Value = -22,
-    NullableValue = null,
-},
-    NullableValue = 52,
-},
-            new SByteInt8E0M
-{
-    Id = 110,
-    Value = -104,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 137,
-    Value = -107,
-    NullableValue = null,
-},
-    NullableValue = 45,
-},
-            new SByteInt8E0M
-{
-    Id = 111,
-    Value = -37,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 143,
-    Value = -4,
-    NullableValue = null,
-},
-    NullableValue = -113,
-},
-            new SByteInt8E0M
-{
-    Id = 119,
-    Value = -8,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 150,
-    Value = -71,
-    NullableValue = -92,
-},
-    NullableValue = -74,
-},
-            new SByteInt8E0M
-{
-    Id = 122,
-    Value = -122,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 159,
-    Value = 45,
-    NullableValue = null,
-},
-    NullableValue = -12,
-},
-            new SByteInt8E0M
-{
-    Id = 126,
-    Value = 34,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 160,
-    Value = 23,
-    NullableValue = null,
-},
-    NullableValue = 40,
-},
-            new SByteInt8E0M
-{
-    Id = 127,
-    Value = 35,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 161,
-    Value = 32,
-    NullableValue = 86,
-},
-    NullableValue = null,
-},
-            new SByteInt8E0M
-{
-    Id = 129,
-    Value = -105,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 169,
-    Value = -58,
-    NullableValue = 111,
-},
-    NullableValue = -9,
-},
-            new SByteInt8E0M
-{
-    Id = 135,
-    Value = 88,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 176,
-    Value = -69,
-    NullableValue = 100,
-},
-    NullableValue = -100,
-},
-            new SByteInt8E0M
-{
-    Id = 137,
-    Value = -85,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 177,
-    Value = -31,
-    NullableValue = null,
+    NullableValue = -69,
 },
     NullableValue = -110,
 },
             new SByteInt8E0M
 {
-    Id = 144,
-    Value = -100,
+    Id = 70,
+    Value = -116,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 181,
-    Value = -34,
+    Id = 52,
+    Value = -68,
     NullableValue = null,
 },
-    NullableValue = -65,
+    NullableValue = 63,
+},
+            new SByteInt8E0M
+{
+    Id = 76,
+    Value = 20,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 58,
+    Value = 121,
+    NullableValue = null,
+},
+    NullableValue = 116,
+},
+            new SByteInt8E0M
+{
+    Id = 79,
+    Value = 99,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 63,
+    Value = 77,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new SByteInt8E0M
+{
+    Id = 82,
+    Value = -54,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 71,
+    Value = 85,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new SByteInt8E0M
+{
+    Id = 90,
+    Value = -76,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 73,
+    Value = -90,
+    NullableValue = 61,
+},
+    NullableValue = -128,
+},
+            new SByteInt8E0M
+{
+    Id = 96,
+    Value = -32,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 75,
+    Value = -51,
+    NullableValue = -125,
+},
+    NullableValue = 91,
+},
+            new SByteInt8E0M
+{
+    Id = 99,
+    Value = 10,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 79,
+    Value = 59,
+    NullableValue = null,
+},
+    NullableValue = -83,
+},
+            new SByteInt8E0M
+{
+    Id = 101,
+    Value = -92,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 81,
+    Value = -111,
+    NullableValue = null,
+},
+    NullableValue = -48,
+},
+            new SByteInt8E0M
+{
+    Id = 103,
+    Value = -13,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 83,
+    Value = -117,
+    NullableValue = 109,
+},
+    NullableValue = null,
+},
+            new SByteInt8E0M
+{
+    Id = 108,
+    Value = 22,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 91,
+    Value = 46,
+    NullableValue = null,
+},
+    NullableValue = 57,
+},
+            new SByteInt8E0M
+{
+    Id = 114,
+    Value = -115,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 98,
+    Value = 9,
+    NullableValue = 81,
+},
+    NullableValue = null,
+},
+            new SByteInt8E0M
+{
+    Id = 121,
+    Value = 14,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 104,
+    Value = -84,
+    NullableValue = null,
+},
+    NullableValue = -16,
+},
+            new SByteInt8E0M
+{
+    Id = 130,
+    Value = 62,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 106,
+    Value = 80,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new SByteInt8E0M
+{
+    Id = 132,
+    Value = -121,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 110,
+    Value = 68,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new SByteInt8E0M
+{
+    Id = 134,
+    Value = 5,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 111,
+    Value = 56,
+    NullableValue = 19,
+},
+    NullableValue = null,
+},
+            new SByteInt8E0M
+{
+    Id = 136,
+    Value = 5,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 113,
+    Value = 125,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new SByteInt8E0M
+{
+    Id = 141,
+    Value = -81,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 121,
+    Value = 98,
+    NullableValue = -81,
+},
+    NullableValue = null,
+},
+            new SByteInt8E0M
+{
+    Id = 144,
+    Value = 91,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 126,
+    Value = 13,
+    NullableValue = 13,
+},
+    NullableValue = -73,
 },
             new SByteInt8E0M
 {
     Id = 153,
-    Value = -60,
+    Value = -38,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 187,
-    Value = 75,
-    NullableValue = null,
+    Id = 131,
+    Value = 67,
+    NullableValue = -24,
 },
-    NullableValue = -14,
+    NullableValue = 126,
+},
+            new SByteInt8E0M
+{
+    Id = 159,
+    Value = 35,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 133,
+    Value = 18,
+    NullableValue = -101,
+},
+    NullableValue = null,
 },
             new SByteInt8E0M
 {
     Id = 160,
-    Value = 113,
+    Value = -81,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 194,
-    Value = 56,
-    NullableValue = null,
+    Id = 139,
+    Value = -47,
+    NullableValue = 62,
 },
-    NullableValue = -4,
+    NullableValue = null,
 },
             new SByteInt8E0M
 {
     Id = 161,
-    Value = 93,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 203,
-    Value = -32,
-    NullableValue = -31,
-},
-    NullableValue = -3,
-},
-            new SByteInt8E0M
-{
-    Id = 167,
-    Value = -91,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 206,
-    Value = 119,
-    NullableValue = -35,
-},
-    NullableValue = -36,
-},
-            new SByteInt8E0M
-{
-    Id = 175,
-    Value = -105,
-    ModelInner = new SByteInt8E0MI
-{
-    Id = 215,
-    Value = -12,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new SByteInt8E0M
-{
-    Id = 176,
     Value = -26,
     ModelInner = new SByteInt8E0MI
 {
-    Id = 222,
-    Value = 2,
-    NullableValue = 91,
+    Id = 148,
+    Value = 89,
+    NullableValue = null,
 },
-    NullableValue = -26,
+    NullableValue = null,
+},
+            new SByteInt8E0M
+{
+    Id = 162,
+    Value = 21,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 157,
+    Value = 2,
+    NullableValue = -85,
+},
+    NullableValue = 59,
+},
+            new SByteInt8E0M
+{
+    Id = 164,
+    Value = -46,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 164,
+    Value = 56,
+    NullableValue = -24,
+},
+    NullableValue = 11,
+},
+            new SByteInt8E0M
+{
+    Id = 165,
+    Value = 66,
+    ModelInner = new SByteInt8E0MI
+{
+    Id = 166,
+    Value = -21,
+    NullableValue = null,
+},
+    NullableValue = null,
 },
         };
 
