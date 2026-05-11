@@ -7,7 +7,7 @@ namespace TestsGenerator.Generators
 {
     internal class TestOneTimePart
     {
-        private readonly StringBuilderArray.StringBuilderArray _stringBuilder = new StringBuilderArray.StringBuilderArray();
+        private readonly StringBuilderArray.StringBuilderArray _stringBuilder = new();
 
         public async Task Generate(Model.ModelType model, Database database, string destinationFolder)
         {

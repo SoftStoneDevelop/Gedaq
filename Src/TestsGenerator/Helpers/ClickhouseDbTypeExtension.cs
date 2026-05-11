@@ -1,6 +1,7 @@
 ﻿using ClickHouse.Driver.ADO.Parameters;
 using System;
 using System.Data;
+using System.Runtime.CompilerServices;
 using TestsGenerator.Enums;
 
 namespace TestsGenerator.Helpers
@@ -14,7 +15,30 @@ namespace TestsGenerator.Helpers
             return param.DbType;
         }
 
-        public static string ToDbSqlTableType(this string clickhouseDbType, EnumerableType enumerableType)
+        private static string ArrayDimensions(
+            string clickhouseDbType,
+            int dimensions = 1)
+        {
+            var builder = new DefaultInterpolatedStringHandler();
+            for (int i = 0; i < dimensions; i++)
+            {
+                builder.AppendLiteral("Array(");
+            }
+
+            builder.AppendLiteral(clickhouseDbType);
+
+            for (int i = 0; i < dimensions; i++)
+            {
+                builder.AppendLiteral(")");
+            }
+
+            return builder.ToStringAndClear();
+        }
+
+        public static string ToDbSqlTableType(
+            this string clickhouseDbType,
+            EnumerableType enumerableType,
+            int dimensions)
         {
             switch (enumerableType)
             {
@@ -23,9 +47,9 @@ namespace TestsGenerator.Helpers
                     return clickhouseDbType;
                 }
 
-                case EnumerableType.Array:
+                case EnumerableType.MArray:
                 {
-                    return $"Array({clickhouseDbType})";
+                    return ArrayDimensions(clickhouseDbType, dimensions);
                 }
 
                 default:
@@ -96,7 +120,8 @@ namespace TestsGenerator.Helpers
 
         public static string ToDefaultMapType(
             this string clickhouseDbType,
-            EnumerableType enumerableType)
+            EnumerableType enumerableType,
+            int dimensions)
         {
             var mapType = ToDefaultMapType(clickhouseDbType);
             switch (enumerableType)
@@ -106,9 +131,9 @@ namespace TestsGenerator.Helpers
                     return mapType;
                 }
 
-                case EnumerableType.Array:
+                case EnumerableType.MArray:
                 {
-                    return mapType + "[]";
+                    return mapType + TypeHelper.ArrayDimensions(dimensions);
                 }
 
                 default:

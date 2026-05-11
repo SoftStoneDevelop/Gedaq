@@ -150,11 +150,41 @@ namespace TestsGenerator.Generators
             bool isReferenceType = false,
             bool generateArray = true)
         {
-            _models.Add(new Model.NpgsqlModel(npgsqlDbType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.SingleType), EnumerableType.SingleType, size, mustHaveSize, isReferenceType));
+            _models.Add(new Model.NpgsqlModel(
+                npgsqlDbType,
+                typeName,
+                typeFullName,
+                () => valueStorageFactory(EnumerableType.SingleType),
+                EnumerableType.SingleType,
+                size,
+                mustHaveSize,
+                isReferenceType));
+
             if (generateArray)
-            { 
-                _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Array | npgsqlDbType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.Array), EnumerableType.Array, size, mustHaveSize, isReferenceType));
-                _models.Add(new Model.NpgsqlModel(NpgsqlTypes.NpgsqlDbType.Array | npgsqlDbType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.List), EnumerableType.List, size, mustHaveSize, isReferenceType));
+            {
+                for (int arrayDimensions = 1; arrayDimensions < 3; arrayDimensions++)
+                {
+                    _models.Add(new Model.NpgsqlModel(
+                        NpgsqlTypes.NpgsqlDbType.Array | npgsqlDbType,
+                        typeName,
+                        typeFullName,
+                        () => valueStorageFactory(EnumerableType.MArray),
+                        EnumerableType.MArray,
+                        size,
+                        mustHaveSize,
+                        isReferenceType,
+                        arrayDimensions: arrayDimensions));
+                }
+
+                _models.Add(new Model.NpgsqlModel(
+                    NpgsqlTypes.NpgsqlDbType.Array | npgsqlDbType,
+                    typeName,
+                    typeFullName,
+                    () => valueStorageFactory(EnumerableType.List),
+                    EnumerableType.List,
+                    size,
+                    mustHaveSize,
+                    isReferenceType));
             }
         }
 
@@ -228,10 +258,31 @@ namespace TestsGenerator.Generators
             bool generateArray = true,
             bool generateMap = true)
         {
-            _models.Add(new Model.ClickhouseModel(clickhouseType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.SingleType), EnumerableType.SingleType, size, mustHaveSize, isReferenceType));
+            _models.Add(new Model.ClickhouseModel(
+                clickhouseType,
+                typeName,
+                typeFullName,
+                () => valueStorageFactory(EnumerableType.SingleType),
+                EnumerableType.SingleType,
+                size,
+                mustHaveSize,
+                isReferenceType));
+
             if (generateArray)
             {
-                _models.Add(new Model.ClickhouseModel(clickhouseType, typeName, typeFullName, () => valueStorageFactory(EnumerableType.Array), EnumerableType.Array, size, mustHaveSize, isReferenceType));
+                for (int arrayDimensions = 1; arrayDimensions < 3; arrayDimensions++)
+                {
+                    _models.Add(new Model.ClickhouseModel(
+                        clickhouseType,
+                        typeName,
+                        typeFullName,
+                        () => valueStorageFactory(EnumerableType.MArray),
+                        EnumerableType.MArray,
+                        size,
+                        mustHaveSize,
+                        isReferenceType,
+                        arrayDimensions: arrayDimensions));
+                }
             }
         }
     }

@@ -84,31 +84,48 @@ namespace Gedaq.Helpers
                 return namedTypeSymbol.NameSpaceWithName();
             }
 
-            if(typeSymbol.IsArrayType(out var elementArrType))
+            if(typeSymbol.IsArrayType(out var elementArrType, out var rank))
             {
-                return $"{elementArrType.NameSpaceWithName()}[]";
+                return $"{elementArrType.NameSpaceWithName()}{ArrayDimensions(rank)}";
             }
 
             throw new NotImplementedException();
         }
 
-        private static string NameSpaceWithName(
-            this INamedTypeSymbol namedTypeSymbol)
+        internal static string ArrayDimensions(int dimensions)
+        {
+            var builder = new StringBuilder();
+            builder.Append("[");
+            for (int i = 0; i < dimensions - 1; i++)
+            {
+                builder.Append(",");
+            }
+            builder.Append("]");
+
+            return builder.ToString();
+        }
+
+        private static string NameSpaceWithName(this INamedTypeSymbol namedTypeSymbol)
         {
             return $"{namedTypeSymbol.ContainingNamespace.GetFullNamespace()}.{namedTypeSymbol.Name}";
         }
 
         internal static bool IsArrayType(
             this ITypeSymbol typeSymbol,
-            out INamedTypeSymbol elementType)
+            out INamedTypeSymbol elementType,
+            out int rank)
         {
             if (typeSymbol is IArrayTypeSymbol arrayTypeSymbol)
             {
                 elementType = (INamedTypeSymbol)arrayTypeSymbol.ElementType;
+                rank = arrayTypeSymbol.Rank;
+
                 return true;
             }
 
             elementType = null;
+            rank = 0;
+
             return false;
         }
 

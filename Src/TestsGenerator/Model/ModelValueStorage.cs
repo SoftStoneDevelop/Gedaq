@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using TestsGenerator.Constants;
 using TestsGenerator.Enums;
+using TestsGenerator.Helpers;
 using TestsGenerator.TypeInfos;
 using TestsGenerator.TypeValueHelpers;
 
@@ -11,7 +12,7 @@ namespace TestsGenerator.Model
 {
     internal class ModelValueStorage
     {
-        private bool _innerCanBeNull;
+        private readonly bool _innerCanBeNull;
 
         public ModelValueStorage(
             TypeInfo typeInfo,
@@ -155,21 +156,49 @@ namespace TestsGenerator.Model
                     return Value.NewSingleValue();
                 }
 
-                case EnumerableType.Array:
+                case EnumerableType.MArray:
                 {
-                    var count = Random.Shared.Next(3, 5);
                     var builder = new StringBuilderArray.StringBuilderArray();
-                    builder.Append($@"
-new {_typeInfo.ItemTypeFullName}[{count}]
-{{");
-                    for (int i = 0; i < count; i++)
+                    if (_typeInfo.ArrayDimensions > 1)
                     {
                         builder.Append($@"
-{(nullable? NullableValue.NewSingleValue() : Value.NewSingleValue())},");
+new {_typeInfo.ItemTypeFullName}{TypeHelper.ArrayDimensions(_typeInfo.ArrayDimensions)}");
+                        builder.Append(@" {");
+
+                        for (int i = 0; i < _typeInfo.ArrayDimensions - 1; i++)
+                        {
+                            builder.Append(" {");
+                        }
+
+                        for (int j = 0; j < _typeInfo.ArrayDimensions; j++)
+                        {
+                            builder.Append($@"
+{(nullable ? NullableValue.NewSingleValue() : Value.NewSingleValue())},");
+                        }
+
+                        for (int i = 0; i < _typeInfo.ArrayDimensions - 1; i++)
+                        {
+                            builder.Append(" }");
+                        }
+
+                        builder.Append(@" }");
+                    }
+                    else
+                    {
+                        var count = Random.Shared.Next(3, 5);
+                        builder.Append($@"
+new {_typeInfo.ItemTypeFullName}[{count}]
+{{");
+                        for (int i = 0; i < count; i++)
+                        {
+                            builder.Append($@"
+{(nullable ? NullableValue.NewSingleValue() : Value.NewSingleValue())},");
+                        }
+
+                        builder.Append($@"
+}}");
                     }
 
-                    builder.Append($@"
-}}");
                     return builder.ToString();
                 }
 

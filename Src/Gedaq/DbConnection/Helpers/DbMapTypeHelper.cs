@@ -7,12 +7,7 @@ namespace Gedaq.DbConnection.Helpers
     {
         internal static bool IsKnownProviderType(this ITypeSymbol typeSymbol)
         {
-            if (typeSymbol.IsKnownArrayType())
-            {
-                return true;
-            }
-
-            if (typeSymbol.IsKnownListType())
+            if (typeSymbol.IsArrayType(out _, out _) || typeSymbol.IsListType(out _))
             {
                 return true;
             }
@@ -113,26 +108,6 @@ namespace Gedaq.DbConnection.Helpers
                 {
                     return true;
                 }
-            }
-
-            return false;
-        }
-
-        private static bool IsKnownArrayType(this ITypeSymbol type)
-        {
-            if (type.IsArrayType(out var elementType))
-            {
-                return elementType.IsKnownProviderBaseType();
-            }
-
-            return false;
-        }
-
-        private static bool IsKnownListType(this ITypeSymbol type)
-        {
-            if (type.IsListType(out var elementType))
-            {
-                return elementType.IsKnownProviderBaseType();
             }
 
             return false;

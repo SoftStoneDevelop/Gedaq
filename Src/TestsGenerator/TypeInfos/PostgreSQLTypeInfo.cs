@@ -13,15 +13,25 @@ namespace TestsGenerator.TypeInfos
             EnumerableType enumerableType,
             int size = -1,
             bool mustHaveSize = false,
-            bool isReferenceType = false
-            ) : base(npgsqlDbType.ToDbType(), npgsqlDbType.ToDbSqlTableType(), typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType)
+            bool isReferenceType = false,
+            int arrayDimensions = 1)
+            : base(
+                npgsqlDbType.ToDbType(),
+                npgsqlDbType.ToDbSqlTableType(arrayDimensions),
+                typeName,
+                typeFullName,
+                enumerableType,
+                size,
+                mustHaveSize,
+                isReferenceType,
+                arrayDimensions: arrayDimensions)
         {
             NpgsqlDbType = npgsqlDbType;
         }
 
         public readonly NpgsqlDbType NpgsqlDbType;
 
-        public override string DefaultMapType => NpgsqlDbType.ToDefaultMapType();
+        public override string DefaultMapType => NpgsqlDbType.ToDefaultMapType(ArrayDimensions);
 
         public override string TypeName
         {
@@ -35,9 +45,9 @@ namespace TestsGenerator.TypeInfos
                         return $"{ItemTypeName}";
                     }
 
-                    case EnumerableType.Array:
+                    case EnumerableType.MArray:
                     {
-                        return $"{ItemTypeName}[]";
+                        return $"{ItemTypeName}{TypeHelper.ArrayDimensions(ArrayDimensions)}";
                     }
 
                     case EnumerableType.List:
@@ -60,9 +70,9 @@ namespace TestsGenerator.TypeInfos
                         return $"{ItemTypeFullName}";
                     }
 
-                    case EnumerableType.Array:
+                    case EnumerableType.MArray:
                     {
-                        return $"{ItemTypeFullName}[]";
+                        return $"{ItemTypeFullName}{TypeHelper.ArrayDimensions(ArrayDimensions)}";
                     }
 
                     case EnumerableType.List:

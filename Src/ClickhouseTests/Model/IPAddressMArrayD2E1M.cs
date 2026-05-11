@@ -1,0 +1,80 @@
+
+using NUnit.Framework;
+using System.Linq;
+
+namespace Tests
+{
+    public class IPAddressMArrayD2E1M
+    {
+        
+        public System.Int32 Id { get; set; }
+
+        
+        public System.Net.IPAddress[,] Value { get; set; }
+
+        public IPAddressMArrayD2E1MI ModelInner { get; set; }
+
+        
+        public System.Net.IPAddress[,] NullableValue { get; set; }
+
+        public static void AssertModel(IPAddressMArrayD2E1M actual, IPAddressMArrayD2E1M expect, bool checkInInnerOnlyId)
+        {
+                Assert.That(actual, Is.Not.Null);
+                Assert.That(actual.Id, Is.EqualTo(expect.Id));
+                {
+                    var expectCollection = expect.Value;
+                    var actualCollection = actual.Value;
+                    Assert.That(actualCollection.Length, Is.EqualTo(expectCollection.Length));
+                    Assert.That(actualCollection.Rank, Is.EqualTo(expectCollection.Rank)); // and must be 2
+                    Assert.That(actualCollection.GetLength(0), Is.EqualTo(expectCollection.GetLength(0)));
+                    Assert.That(actualCollection.GetLength(1), Is.EqualTo(expectCollection.GetLength(1)));
+                    for(int i0 = 0; i0 < expectCollection.GetLength(0); i0++)
+                    {
+                    for(int i1 = 0; i1 < expectCollection.GetLength(1); i1++)
+                    {
+                        var expectItem = expectCollection[i0,i1];
+                        var actualItem = actualCollection[i0,i1];
+                        Assert.That(expectItem, Is.EqualTo(actualItem));
+                    }
+                    }
+                }
+
+                if(expect.ModelInner == null)
+                {
+                    Assert.That(actual.ModelInner, Is.Null);
+                }
+                else
+                {
+                    Assert.That(actual.ModelInner, Is.Not.Null);
+                    Assert.That(actual.ModelInner.Id, Is.EqualTo(expect.ModelInner.Id));
+                    if (checkInInnerOnlyId)
+                    {
+                        Assert.That(actual.ModelInner.Value, Is.EqualTo((System.Net.IPAddress[,])default));
+                    }
+                    else
+                    {
+                {
+                    var expectCollection = actual.ModelInner.Value;
+                    var actualCollection = expect.ModelInner.Value;
+                    Assert.That(actualCollection.Length, Is.EqualTo(expectCollection.Length));
+                    Assert.That(actualCollection.Rank, Is.EqualTo(expectCollection.Rank)); // and must be 2
+                    Assert.That(actualCollection.GetLength(0), Is.EqualTo(expectCollection.GetLength(0)));
+                    Assert.That(actualCollection.GetLength(1), Is.EqualTo(expectCollection.GetLength(1)));
+                    for(int i0 = 0; i0 < expectCollection.GetLength(0); i0++)
+                    {
+                    for(int i1 = 0; i1 < expectCollection.GetLength(1); i1++)
+                    {
+                        var expectItem = expectCollection[i0,i1];
+                        var actualItem = actualCollection[i0,i1];
+                        Assert.That(expectItem, Is.EqualTo(actualItem));
+                    }
+                    }
+                }
+
+                    }
+                }
+
+        }
+    }
+}
+

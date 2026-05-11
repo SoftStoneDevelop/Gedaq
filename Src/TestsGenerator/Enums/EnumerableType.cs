@@ -3,8 +3,19 @@
     internal enum EnumerableType
     {
         SingleType = 0,
-        Array = 1,
+
+        /// <summary>
+        /// MultidimensionalArray
+        /// </summary>
+        MArray = 1,
+
         List = 2,
-        Dictionary = 3
+
+        Dictionary = 3,
+
+        /// <summary>
+        /// JaggedArray
+        /// </summary>
+        JArray = 4,
     }
 }

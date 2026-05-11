@@ -104,7 +104,7 @@ namespace Gedaq.Base.Model
                 return false;
             }
 
-            if (!argument.Type.IsArrayType(out var _))
+            if (!argument.Type.IsArrayType(out _, out _))
             {
                 return false;
             }
@@ -133,7 +133,7 @@ namespace Gedaq.Base.Model
                 return false;
             }
 
-            if (!argument.Type.IsArrayType(out var elementType))
+            if (!argument.Type.IsArrayType(out var elementType, out _))
             {
                 return false;
             }

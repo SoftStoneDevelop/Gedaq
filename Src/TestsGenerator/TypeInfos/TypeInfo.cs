@@ -15,7 +15,8 @@ namespace TestsGenerator.TypeInfos
             EnumerableType enumerableType,
             int size = -1,
             bool mustHaveSize = false,
-            bool isReferenceType = false)
+            bool isReferenceType = false,
+            int arrayDimensions = 1)
         {
             DbType = dbType;
             DbSqlType = dbTypeStr;
@@ -26,6 +27,7 @@ namespace TestsGenerator.TypeInfos
             MustHaveSize = mustHaveSize;
             Size = size;
             EnumerableType = enumerableType;
+            ArrayDimensions = arrayDimensions;
         }
 
         public EnumerableType EnumerableType { get; }
@@ -44,6 +46,8 @@ namespace TestsGenerator.TypeInfos
 
         public abstract string DefaultMapType { get; }
 
+        public int ArrayDimensions { get; }
+
         public string DefaultMapTypeNullable
         {
             get
@@ -60,9 +64,8 @@ namespace TestsGenerator.TypeInfos
         public string DbSqlTypeWithoutSpace()
         {
             var result = WhiteSpaces().Replace(DbSqlType, "_");
-            result = SquareBracketsSpaces().Replace(result, "Array");
-            result = result.Replace("(", string.Empty);
-            result = result.Replace(")", string.Empty);
+            result = SquareBracketsSpaces().Replace(result, $"{EnumerableType.ToString()}D{ArrayDimensions}");
+            result = ClickhouseArray().Replace(result, $"{EnumerableType.ToString()}D{ArrayDimensions}");
             return result;
         }
 
@@ -71,8 +74,11 @@ namespace TestsGenerator.TypeInfos
         [GeneratedRegex("\\s+")]
         public static partial Regex WhiteSpaces();
 
-        [GeneratedRegex("\\[\\]")]
+        [GeneratedRegex("(\\[\\])+")]
         public static partial Regex SquareBracketsSpaces();
+
+        [GeneratedRegex("Array(\\w|\\d|\\(|\\))+")]
+        public static partial Regex ClickhouseArray();
 
         public readonly string ItemTypeName;
 
