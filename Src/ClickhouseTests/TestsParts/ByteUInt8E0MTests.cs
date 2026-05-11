@@ -27,323 +27,59 @@ namespace Tests
         {
             new ByteUInt8E0M
 {
-    Id = 9,
-    Value = 89,
+    Id = 2,
+    Value = 59,
     ModelInner = new ByteUInt8E0MI
 {
-    Id = 4,
-    Value = 47,
+    Id = 5,
+    Value = 87,
+    NullableValue = 139,
+},
+    NullableValue = null,
+},
+            new ByteUInt8E0M
+{
+    Id = 11,
+    Value = 42,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 13,
+    Value = 121,
     NullableValue = null,
 },
     NullableValue = null,
 },
             new ByteUInt8E0M
 {
-    Id = 12,
-    Value = 219,
+    Id = 19,
+    Value = 39,
     ModelInner = new ByteUInt8E0MI
 {
-    Id = 11,
-    Value = 74,
-    NullableValue = 213,
+    Id = 20,
+    Value = 207,
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new ByteUInt8E0M
 {
     Id = 21,
-    Value = 45,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 19,
-    Value = 2,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new ByteUInt8E0M
-{
-    Id = 23,
-    Value = 47,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 26,
-    Value = 241,
-    NullableValue = 240,
-},
-    NullableValue = 112,
-},
-            new ByteUInt8E0M
-{
-    Id = 25,
-    Value = 164,
+    Value = 139,
     ModelInner = new ByteUInt8E0MI
 {
     Id = 29,
-    Value = 134,
+    Value = 175,
     NullableValue = null,
 },
-    NullableValue = 140,
+    NullableValue = 80,
 },
             new ByteUInt8E0M
 {
-    Id = 32,
-    Value = 84,
+    Id = 26,
+    Value = 2,
     ModelInner = new ByteUInt8E0MI
 {
-    Id = 35,
-    Value = 224,
-    NullableValue = null,
-},
-    NullableValue = 254,
-},
-            new ByteUInt8E0M
-{
-    Id = 39,
-    Value = 47,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 39,
-    Value = 107,
-    NullableValue = 88,
-},
-    NullableValue = null,
-},
-            new ByteUInt8E0M
-{
-    Id = 45,
-    Value = 194,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 46,
-    Value = 144,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new ByteUInt8E0M
-{
-    Id = 50,
-    Value = 35,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 54,
-    Value = 12,
-    NullableValue = null,
-},
-    NullableValue = 128,
-},
-            new ByteUInt8E0M
-{
-    Id = 54,
-    Value = 137,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 57,
-    Value = 54,
-    NullableValue = 180,
-},
-    NullableValue = null,
-},
-            new ByteUInt8E0M
-{
-    Id = 60,
-    Value = 74,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 60,
-    Value = 32,
-    NullableValue = null,
-},
-    NullableValue = 99,
-},
-            new ByteUInt8E0M
-{
-    Id = 61,
-    Value = 157,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 67,
-    Value = 207,
-    NullableValue = null,
-},
-    NullableValue = 146,
-},
-            new ByteUInt8E0M
-{
-    Id = 62,
-    Value = 89,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 73,
-    Value = 65,
-    NullableValue = 56,
-},
-    NullableValue = 195,
-},
-            new ByteUInt8E0M
-{
-    Id = 70,
-    Value = 230,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 77,
-    Value = 148,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new ByteUInt8E0M
-{
-    Id = 72,
-    Value = 138,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 78,
-    Value = 48,
-    NullableValue = null,
-},
-    NullableValue = 181,
-},
-            new ByteUInt8E0M
-{
-    Id = 73,
-    Value = 131,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 80,
-    Value = 109,
-    NullableValue = 163,
-},
-    NullableValue = null,
-},
-            new ByteUInt8E0M
-{
-    Id = 80,
-    Value = 252,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 85,
-    Value = 100,
-    NullableValue = null,
-},
-    NullableValue = 206,
-},
-            new ByteUInt8E0M
-{
-    Id = 85,
-    Value = 47,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 86,
-    Value = 103,
-    NullableValue = 42,
-},
-    NullableValue = null,
-},
-            new ByteUInt8E0M
-{
-    Id = 87,
-    Value = 118,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 89,
-    Value = 251,
-    NullableValue = 115,
-},
-    NullableValue = 123,
-},
-            new ByteUInt8E0M
-{
-    Id = 93,
-    Value = 232,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 93,
-    Value = 41,
-    NullableValue = 19,
-},
-    NullableValue = 139,
-},
-            new ByteUInt8E0M
-{
-    Id = 100,
-    Value = 67,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 99,
-    Value = 26,
-    NullableValue = 132,
-},
-    NullableValue = null,
-},
-            new ByteUInt8E0M
-{
-    Id = 103,
-    Value = 142,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 103,
-    Value = 224,
-    NullableValue = 254,
-},
-    NullableValue = 40,
-},
-            new ByteUInt8E0M
-{
-    Id = 112,
-    Value = 170,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 107,
-    Value = 108,
-    NullableValue = 129,
-},
-    NullableValue = 76,
-},
-            new ByteUInt8E0M
-{
-    Id = 117,
-    Value = 228,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 109,
-    Value = 51,
-    NullableValue = 117,
-},
-    NullableValue = null,
-},
-            new ByteUInt8E0M
-{
-    Id = 118,
-    Value = 216,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 115,
-    Value = 251,
-    NullableValue = null,
-},
-    NullableValue = 109,
-},
-            new ByteUInt8E0M
-{
-    Id = 127,
-    Value = 121,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 117,
-    Value = 75,
-    NullableValue = null,
-},
-    NullableValue = 63,
-},
-            new ByteUInt8E0M
-{
-    Id = 133,
-    Value = 19,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 124,
+    Id = 38,
     Value = 246,
     NullableValue = null,
 },
@@ -351,99 +87,363 @@ namespace Tests
 },
             new ByteUInt8E0M
 {
-    Id = 142,
-    Value = 142,
+    Id = 27,
+    Value = 103,
     ModelInner = new ByteUInt8E0MI
 {
-    Id = 129,
-    Value = 179,
+    Id = 45,
+    Value = 115,
     NullableValue = null,
 },
-    NullableValue = 202,
+    NullableValue = 39,
 },
             new ByteUInt8E0M
 {
-    Id = 150,
-    Value = 222,
+    Id = 32,
+    Value = 33,
     ModelInner = new ByteUInt8E0MI
 {
-    Id = 136,
-    Value = 100,
-    NullableValue = 159,
+    Id = 53,
+    Value = 198,
+    NullableValue = 46,
 },
     NullableValue = null,
+},
+            new ByteUInt8E0M
+{
+    Id = 33,
+    Value = 96,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 54,
+    Value = 230,
+    NullableValue = null,
+},
+    NullableValue = 51,
+},
+            new ByteUInt8E0M
+{
+    Id = 37,
+    Value = 23,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 59,
+    Value = 11,
+    NullableValue = 214,
+},
+    NullableValue = 174,
+},
+            new ByteUInt8E0M
+{
+    Id = 45,
+    Value = 8,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 67,
+    Value = 127,
+    NullableValue = null,
+},
+    NullableValue = 203,
+},
+            new ByteUInt8E0M
+{
+    Id = 51,
+    Value = 184,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 71,
+    Value = 134,
+    NullableValue = 112,
+},
+    NullableValue = 113,
+},
+            new ByteUInt8E0M
+{
+    Id = 59,
+    Value = 162,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 76,
+    Value = 137,
+    NullableValue = 107,
+},
+    NullableValue = 223,
+},
+            new ByteUInt8E0M
+{
+    Id = 63,
+    Value = 226,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 80,
+    Value = 20,
+    NullableValue = null,
+},
+    NullableValue = 38,
+},
+            new ByteUInt8E0M
+{
+    Id = 69,
+    Value = 104,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 88,
+    Value = 135,
+    NullableValue = null,
+},
+    NullableValue = 217,
+},
+            new ByteUInt8E0M
+{
+    Id = 74,
+    Value = 28,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 92,
+    Value = 144,
+    NullableValue = null,
+},
+    NullableValue = 181,
+},
+            new ByteUInt8E0M
+{
+    Id = 76,
+    Value = 185,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 93,
+    Value = 84,
+    NullableValue = 20,
+},
+    NullableValue = null,
+},
+            new ByteUInt8E0M
+{
+    Id = 85,
+    Value = 232,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 100,
+    Value = 18,
+    NullableValue = 166,
+},
+    NullableValue = null,
+},
+            new ByteUInt8E0M
+{
+    Id = 89,
+    Value = 184,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 102,
+    Value = 112,
+    NullableValue = null,
+},
+    NullableValue = 243,
+},
+            new ByteUInt8E0M
+{
+    Id = 92,
+    Value = 177,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 110,
+    Value = 28,
+    NullableValue = null,
+},
+    NullableValue = 54,
+},
+            new ByteUInt8E0M
+{
+    Id = 95,
+    Value = 194,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 114,
+    Value = 205,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new ByteUInt8E0M
+{
+    Id = 98,
+    Value = 43,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 115,
+    Value = 12,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new ByteUInt8E0M
+{
+    Id = 100,
+    Value = 156,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 120,
+    Value = 53,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new ByteUInt8E0M
+{
+    Id = 107,
+    Value = 172,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 124,
+    Value = 126,
+    NullableValue = 162,
+},
+    NullableValue = 180,
+},
+            new ByteUInt8E0M
+{
+    Id = 110,
+    Value = 46,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 131,
+    Value = 96,
+    NullableValue = 231,
+},
+    NullableValue = null,
+},
+            new ByteUInt8E0M
+{
+    Id = 119,
+    Value = 183,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 138,
+    Value = 252,
+    NullableValue = 22,
+},
+    NullableValue = 2,
+},
+            new ByteUInt8E0M
+{
+    Id = 128,
+    Value = 65,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 142,
+    Value = 13,
+    NullableValue = 42,
+},
+    NullableValue = null,
+},
+            new ByteUInt8E0M
+{
+    Id = 134,
+    Value = 59,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 149,
+    Value = 236,
+    NullableValue = 122,
+},
+    NullableValue = null,
+},
+            new ByteUInt8E0M
+{
+    Id = 137,
+    Value = 90,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 157,
+    Value = 227,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new ByteUInt8E0M
+{
+    Id = 142,
+    Value = 247,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 164,
+    Value = 118,
+    NullableValue = 251,
+},
+    NullableValue = 65,
+},
+            new ByteUInt8E0M
+{
+    Id = 145,
+    Value = 43,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 165,
+    Value = 215,
+    NullableValue = null,
+},
+    NullableValue = 54,
 },
             new ByteUInt8E0M
 {
     Id = 154,
-    Value = 21,
+    Value = 226,
     ModelInner = new ByteUInt8E0MI
 {
-    Id = 144,
-    Value = 131,
-    NullableValue = 236,
+    Id = 169,
+    Value = 169,
+    NullableValue = null,
 },
-    NullableValue = 124,
+    NullableValue = null,
 },
             new ByteUInt8E0M
 {
-    Id = 156,
-    Value = 2,
+    Id = 157,
+    Value = 180,
     ModelInner = new ByteUInt8E0MI
 {
-    Id = 147,
-    Value = 169,
-    NullableValue = 60,
+    Id = 171,
+    Value = 247,
+    NullableValue = 34,
 },
     NullableValue = null,
 },
             new ByteUInt8E0M
 {
     Id = 162,
-    Value = 183,
+    Value = 235,
     ModelInner = new ByteUInt8E0MI
 {
-    Id = 156,
-    Value = 208,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new ByteUInt8E0M
-{
-    Id = 168,
-    Value = 97,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 157,
-    Value = 45,
-    NullableValue = null,
+    Id = 175,
+    Value = 185,
+    NullableValue = 227,
 },
     NullableValue = null,
 },
             new ByteUInt8E0M
-{
-    Id = 176,
-    Value = 181,
-    ModelInner = new ByteUInt8E0MI
-{
-    Id = 161,
-    Value = 14,
-    NullableValue = 212,
-},
-    NullableValue = 242,
-},
-            new ByteUInt8E0M
-{
-    Id = 182,
-    Value = 160,
-    ModelInner = new ByteUInt8E0MI
 {
     Id = 167,
-    Value = 208,
+    Value = 227,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 181,
+    Value = 25,
     NullableValue = null,
 },
     NullableValue = null,
+},
+            new ByteUInt8E0M
+{
+    Id = 170,
+    Value = 171,
+    ModelInner = new ByteUInt8E0MI
+{
+    Id = 185,
+    Value = 42,
+    NullableValue = null,
+},
+    NullableValue = 24,
 },
         };
 

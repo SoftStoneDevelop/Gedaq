@@ -162,7 +162,7 @@ namespace TestsGenerator.Generators
 
             if (generateArray)
             {
-                for (int arrayDimensions = 1; arrayDimensions < 3; arrayDimensions++)
+                for (int arrayDimensions = 1; arrayDimensions < 4; arrayDimensions++)
                 {
                     _models.Add(new Model.NpgsqlModel(
                         NpgsqlTypes.NpgsqlDbType.Array | npgsqlDbType,

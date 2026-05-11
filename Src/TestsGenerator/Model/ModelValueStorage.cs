@@ -146,6 +146,38 @@ namespace TestsGenerator.Model
             return newValue;
         }
 
+        private void WriteMArray(
+            bool nullable,
+            StringBuilderArray.StringBuilderArray builder,
+            int currentDimension)
+        {
+            if (currentDimension == _typeInfo.ArrayDimensions - 1)
+            {
+                for (int item = 0; item < _typeInfo.ArrayDimensions; item++)
+                {
+                    builder.Append($@" {(nullable ? NullableValue.NewSingleValue() : Value.NewSingleValue())}");
+                    builder.Append(",");
+                }
+
+                return;
+            }
+
+            var isLastDimension = currentDimension == _typeInfo.ArrayDimensions - 1;
+            var nextDimension = currentDimension + 1;
+            for (int item = 0; item < _typeInfo.ArrayDimensions; item++)
+            {
+                if (!isLastDimension)
+                    builder.Append(" {");
+                WriteMArray(nullable, builder, nextDimension);
+                if (!isLastDimension)
+                {
+                    builder.Append(" }");
+                }
+
+                builder.Append(",");
+            }
+        }
+
         private string NextValue(bool nullable)
         {
             switch (Value._enumerableType)
@@ -163,25 +195,9 @@ namespace TestsGenerator.Model
                     {
                         builder.Append($@"
 new {_typeInfo.ItemTypeFullName}{TypeHelper.ArrayDimensions(_typeInfo.ArrayDimensions)}");
-                        builder.Append(@" {");
-
-                        for (int i = 0; i < _typeInfo.ArrayDimensions - 1; i++)
-                        {
-                            builder.Append(" {");
-                        }
-
-                        for (int j = 0; j < _typeInfo.ArrayDimensions; j++)
-                        {
-                            builder.Append($@"
-{(nullable ? NullableValue.NewSingleValue() : Value.NewSingleValue())},");
-                        }
-
-                        for (int i = 0; i < _typeInfo.ArrayDimensions - 1; i++)
-                        {
-                            builder.Append(" }");
-                        }
-
-                        builder.Append(@" }");
+                        builder.Append(" {");
+                        WriteMArray(nullable, builder, 0);
+                        builder.Append(" }");
                     }
                     else
                     {
