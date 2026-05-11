@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.ipaddressinet0mi
+CREATE TABLE public.ipaddressinete0mi
 (
     id integer NOT NULL,
     value inet NOT NULL,
     nullablevalue inet,
-    CONSTRAINT ipaddressinet0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT ipaddressinete0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_ipaddressinet0mi
+CREATE TABLE public.binary_ipaddressinete0mi
 (
     id integer NOT NULL,
     value inet NOT NULL,
     nullablevalue inet,
-    CONSTRAINT binary_ipaddressinet0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_ipaddressinete0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_ipaddressinet0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.ipaddressinet0mi;
+DROP TABLE public.ipaddressinete0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_ipaddressinet0mi;
+DROP TABLE public.binary_ipaddressinete0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.ipaddressinete0m
     id integer NOT NULL,
     value inet NOT NULL,
     nullablevalue inet,
-    ipaddressinet0mi_id integer,
+    ipaddressinete0mi_id integer,
     CONSTRAINT ipaddressinete0m_pkey PRIMARY KEY (id),
-    CONSTRAINT ipaddressinete0m_ipaddressinet0mi_fk FOREIGN KEY (ipaddressinet0mi_id)
-        REFERENCES public.ipaddressinet0mi (id) MATCH SIMPLE
+    CONSTRAINT ipaddressinete0m_ipaddressinete0mi_fk FOREIGN KEY (ipaddressinete0mi_id)
+        REFERENCES public.ipaddressinete0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_ipaddressinete0m
     id integer NOT NULL,
     value inet NOT NULL,
     nullablevalue inet,
-    ipaddressinet0mi_id integer,
+    ipaddressinete0mi_id integer,
     CONSTRAINT binary_ipaddressinete0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_ipaddressinete0m_binary_ipaddressinet0mi_fk FOREIGN KEY (ipaddressinet0mi_id)
-        REFERENCES public.binary_ipaddressinet0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_ipaddressinete0m_binary_ipaddressinete0mi_fk FOREIGN KEY (ipaddressinete0mi_id)
+        REFERENCES public.binary_ipaddressinete0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

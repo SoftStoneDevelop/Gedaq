@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.timespaninterval0mi
+CREATE TABLE public.timespanintervale0mi
 (
     id integer NOT NULL,
     value interval NOT NULL,
     nullablevalue interval,
-    CONSTRAINT timespaninterval0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT timespanintervale0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_timespaninterval0mi
+CREATE TABLE public.binary_timespanintervale0mi
 (
     id integer NOT NULL,
     value interval NOT NULL,
     nullablevalue interval,
-    CONSTRAINT binary_timespaninterval0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_timespanintervale0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_timespaninterval0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.timespaninterval0mi;
+DROP TABLE public.timespanintervale0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_timespaninterval0mi;
+DROP TABLE public.binary_timespanintervale0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.timespanintervale0m
     id integer NOT NULL,
     value interval NOT NULL,
     nullablevalue interval,
-    timespaninterval0mi_id integer,
+    timespanintervale0mi_id integer,
     CONSTRAINT timespanintervale0m_pkey PRIMARY KEY (id),
-    CONSTRAINT timespanintervale0m_timespaninterval0mi_fk FOREIGN KEY (timespaninterval0mi_id)
-        REFERENCES public.timespaninterval0mi (id) MATCH SIMPLE
+    CONSTRAINT timespanintervale0m_timespanintervale0mi_fk FOREIGN KEY (timespanintervale0mi_id)
+        REFERENCES public.timespanintervale0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_timespanintervale0m
     id integer NOT NULL,
     value interval NOT NULL,
     nullablevalue interval,
-    timespaninterval0mi_id integer,
+    timespanintervale0mi_id integer,
     CONSTRAINT binary_timespanintervale0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_timespanintervale0m_binary_timespaninterval0mi_fk FOREIGN KEY (timespaninterval0mi_id)
-        REFERENCES public.binary_timespaninterval0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_timespanintervale0m_binary_timespanintervale0mi_fk FOREIGN KEY (timespanintervale0mi_id)
+        REFERENCES public.binary_timespanintervale0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.singlereallistd12mi
+CREATE TABLE public.singlereallistd1e2mi
 (
     id integer NOT NULL,
     value real[] NOT NULL,
     nullablevalue real[],
-    CONSTRAINT singlereallistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT singlereallistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_singlereallistd12mi
+CREATE TABLE public.binary_singlereallistd1e2mi
 (
     id integer NOT NULL,
     value real[] NOT NULL,
     nullablevalue real[],
-    CONSTRAINT binary_singlereallistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_singlereallistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_singlereallistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.singlereallistd12mi;
+DROP TABLE public.singlereallistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_singlereallistd12mi;
+DROP TABLE public.binary_singlereallistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.singlereallistd1e2m
     id integer NOT NULL,
     value real[] NOT NULL,
     nullablevalue real[],
-    singlereallistd12mi_id integer,
+    singlereallistd1e2mi_id integer,
     CONSTRAINT singlereallistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT singlereallistd1e2m_singlereallistd12mi_fk FOREIGN KEY (singlereallistd12mi_id)
-        REFERENCES public.singlereallistd12mi (id) MATCH SIMPLE
+    CONSTRAINT singlereallistd1e2m_singlereallistd1e2mi_fk FOREIGN KEY (singlereallistd1e2mi_id)
+        REFERENCES public.singlereallistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_singlereallistd1e2m
     id integer NOT NULL,
     value real[] NOT NULL,
     nullablevalue real[],
-    singlereallistd12mi_id integer,
+    singlereallistd1e2mi_id integer,
     CONSTRAINT binary_singlereallistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_singlereallistd1e2m_binary_singlereallistd12mi_fk FOREIGN KEY (singlereallistd12mi_id)
-        REFERENCES public.binary_singlereallistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_singlereallistd1e2m_binary_singlereallistd1e2mi_fk FOREIGN KEY (singlereallistd1e2mi_id)
+        REFERENCES public.binary_singlereallistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.Decimal> Value { get; set; }
 
-        public DecimalnumericListD12MI ModelInner { get; set; }
+        public DecimalnumericListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.Decimal> NullableValue { get; set; }

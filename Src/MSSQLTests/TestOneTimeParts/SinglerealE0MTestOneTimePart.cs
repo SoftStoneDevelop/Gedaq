@@ -21,11 +21,11 @@ namespace Tests
         private async Task CreateModelInnerTable(SqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE dbo.singlereal0mi(
+CREATE TABLE dbo.singlereale0mi(
 	id int NOT NULL,
 	value real NOT NULL,
 	nullablevalue real NULL,
-    CONSTRAINT PK_singlereal0mi PRIMARY KEY NONCLUSTERED (id)
+    CONSTRAINT PK_singlereale0mi PRIMARY KEY NONCLUSTERED (id)
 )
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -35,7 +35,7 @@ CREATE TABLE dbo.singlereal0mi(
         private async Task DropModelInnerTable(SqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE dbo.singlereal0mi
+DROP TABLE dbo.singlereale0mi
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -48,10 +48,10 @@ CREATE TABLE dbo.singlereale0m(
 	id int NOT NULL,
 	value real NOT NULL,
     nullablevalue real NULL,
-	singlereal0mi_id int NULL,
+	singlereale0mi_id int NULL,
     CONSTRAINT PK_singlereale0m PRIMARY KEY NONCLUSTERED (id),
-    CONSTRAINT FK_singlereale0m_singlereal0mi FOREIGN KEY (singlereal0mi_id)
-        REFERENCES dbo.singlereal0mi (id)
+    CONSTRAINT FK_singlereale0m_singlereale0mi FOREIGN KEY (singlereale0mi_id)
+        REFERENCES dbo.singlereale0mi (id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
 )

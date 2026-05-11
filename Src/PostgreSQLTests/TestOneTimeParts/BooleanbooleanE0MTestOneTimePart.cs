@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.booleanboolean0mi
+CREATE TABLE public.booleanbooleane0mi
 (
     id integer NOT NULL,
     value boolean NOT NULL,
     nullablevalue boolean,
-    CONSTRAINT booleanboolean0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT booleanbooleane0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_booleanboolean0mi
+CREATE TABLE public.binary_booleanbooleane0mi
 (
     id integer NOT NULL,
     value boolean NOT NULL,
     nullablevalue boolean,
-    CONSTRAINT binary_booleanboolean0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_booleanbooleane0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_booleanboolean0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.booleanboolean0mi;
+DROP TABLE public.booleanbooleane0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_booleanboolean0mi;
+DROP TABLE public.binary_booleanbooleane0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.booleanbooleane0m
     id integer NOT NULL,
     value boolean NOT NULL,
     nullablevalue boolean,
-    booleanboolean0mi_id integer,
+    booleanbooleane0mi_id integer,
     CONSTRAINT booleanbooleane0m_pkey PRIMARY KEY (id),
-    CONSTRAINT booleanbooleane0m_booleanboolean0mi_fk FOREIGN KEY (booleanboolean0mi_id)
-        REFERENCES public.booleanboolean0mi (id) MATCH SIMPLE
+    CONSTRAINT booleanbooleane0m_booleanbooleane0mi_fk FOREIGN KEY (booleanbooleane0mi_id)
+        REFERENCES public.booleanbooleane0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_booleanbooleane0m
     id integer NOT NULL,
     value boolean NOT NULL,
     nullablevalue boolean,
-    booleanboolean0mi_id integer,
+    booleanbooleane0mi_id integer,
     CONSTRAINT binary_booleanbooleane0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_booleanbooleane0m_binary_booleanboolean0mi_fk FOREIGN KEY (booleanboolean0mi_id)
-        REFERENCES public.binary_booleanboolean0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_booleanbooleane0m_binary_booleanbooleane0mi_fk FOREIGN KEY (booleanbooleane0mi_id)
+        REFERENCES public.binary_booleanbooleane0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

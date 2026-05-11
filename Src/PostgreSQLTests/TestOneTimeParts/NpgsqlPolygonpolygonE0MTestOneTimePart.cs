@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.npgsqlpolygonpolygon0mi
+CREATE TABLE public.npgsqlpolygonpolygone0mi
 (
     id integer NOT NULL,
     value polygon NOT NULL,
     nullablevalue polygon,
-    CONSTRAINT npgsqlpolygonpolygon0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT npgsqlpolygonpolygone0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_npgsqlpolygonpolygon0mi
+CREATE TABLE public.binary_npgsqlpolygonpolygone0mi
 (
     id integer NOT NULL,
     value polygon NOT NULL,
     nullablevalue polygon,
-    CONSTRAINT binary_npgsqlpolygonpolygon0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_npgsqlpolygonpolygone0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_npgsqlpolygonpolygon0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.npgsqlpolygonpolygon0mi;
+DROP TABLE public.npgsqlpolygonpolygone0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_npgsqlpolygonpolygon0mi;
+DROP TABLE public.binary_npgsqlpolygonpolygone0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.npgsqlpolygonpolygone0m
     id integer NOT NULL,
     value polygon NOT NULL,
     nullablevalue polygon,
-    npgsqlpolygonpolygon0mi_id integer,
+    npgsqlpolygonpolygone0mi_id integer,
     CONSTRAINT npgsqlpolygonpolygone0m_pkey PRIMARY KEY (id),
-    CONSTRAINT npgsqlpolygonpolygone0m_npgsqlpolygonpolygon0mi_fk FOREIGN KEY (npgsqlpolygonpolygon0mi_id)
-        REFERENCES public.npgsqlpolygonpolygon0mi (id) MATCH SIMPLE
+    CONSTRAINT npgsqlpolygonpolygone0m_npgsqlpolygonpolygone0mi_fk FOREIGN KEY (npgsqlpolygonpolygone0mi_id)
+        REFERENCES public.npgsqlpolygonpolygone0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_npgsqlpolygonpolygone0m
     id integer NOT NULL,
     value polygon NOT NULL,
     nullablevalue polygon,
-    npgsqlpolygonpolygon0mi_id integer,
+    npgsqlpolygonpolygone0mi_id integer,
     CONSTRAINT binary_npgsqlpolygonpolygone0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_npgsqlpolygonpolygone0m_binary_npgsqlpolygonpolygon0mi_fk FOREIGN KEY (npgsqlpolygonpolygon0mi_id)
-        REFERENCES public.binary_npgsqlpolygonpolygon0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_npgsqlpolygonpolygone0m_binary_npgsqlpolygonpolygone0mi_fk FOREIGN KEY (npgsqlpolygonpolygone0mi_id)
+        REFERENCES public.binary_npgsqlpolygonpolygone0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

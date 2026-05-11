@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.doubledouble_precisionlistd12mi
+CREATE TABLE public.doubledouble_precisionlistd1e2mi
 (
     id integer NOT NULL,
     value double precision[] NOT NULL,
     nullablevalue double precision[],
-    CONSTRAINT doubledouble_precisionlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT doubledouble_precisionlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_doubledouble_precisionlistd12mi
+CREATE TABLE public.binary_doubledouble_precisionlistd1e2mi
 (
     id integer NOT NULL,
     value double precision[] NOT NULL,
     nullablevalue double precision[],
-    CONSTRAINT binary_doubledouble_precisionlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_doubledouble_precisionlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_doubledouble_precisionlistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.doubledouble_precisionlistd12mi;
+DROP TABLE public.doubledouble_precisionlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_doubledouble_precisionlistd12mi;
+DROP TABLE public.binary_doubledouble_precisionlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.doubledouble_precisionlistd1e2m
     id integer NOT NULL,
     value double precision[] NOT NULL,
     nullablevalue double precision[],
-    doubledouble_precisionlistd12mi_id integer,
+    doubledouble_precisionlistd1e2mi_id integer,
     CONSTRAINT doubledouble_precisionlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT doubledouble_precisionlistd1e2m_doubledouble_precisionlistd12mi_fk FOREIGN KEY (doubledouble_precisionlistd12mi_id)
-        REFERENCES public.doubledouble_precisionlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT doubledouble_precisionlistd1e2m_doubledouble_precisionlistd1e2mi_fk FOREIGN KEY (doubledouble_precisionlistd1e2mi_id)
+        REFERENCES public.doubledouble_precisionlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_doubledouble_precisionlistd1e2m
     id integer NOT NULL,
     value double precision[] NOT NULL,
     nullablevalue double precision[],
-    doubledouble_precisionlistd12mi_id integer,
+    doubledouble_precisionlistd1e2mi_id integer,
     CONSTRAINT binary_doubledouble_precisionlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_doubledouble_precisionlistd1e2m_binary_doubledouble_precisionlistd12mi_fk FOREIGN KEY (doubledouble_precisionlistd12mi_id)
-        REFERENCES public.binary_doubledouble_precisionlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_doubledouble_precisionlistd1e2m_binary_doubledouble_precisionlistd1e2mi_fk FOREIGN KEY (doubledouble_precisionlistd1e2mi_id)
+        REFERENCES public.binary_doubledouble_precisionlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

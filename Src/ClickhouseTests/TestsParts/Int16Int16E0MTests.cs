@@ -27,12 +27,48 @@ namespace Tests
         {
             new Int16Int16E0M
 {
-    Id = 7,
-    Value = 5385,
-    ModelInner = new Int16Int160MI
+    Id = 5,
+    Value = 11031,
+    ModelInner = new Int16Int16E0MI
 {
-    Id = 3,
-    Value = 7039,
+    Id = 7,
+    Value = 23283,
+    NullableValue = null,
+},
+    NullableValue = 30334,
+},
+            new Int16Int16E0M
+{
+    Id = 7,
+    Value = 21194,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 11,
+    Value = 14634,
+    NullableValue = 1977,
+},
+    NullableValue = null,
+},
+            new Int16Int16E0M
+{
+    Id = 8,
+    Value = 30976,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 18,
+    Value = 14925,
+    NullableValue = 10119,
+},
+    NullableValue = null,
+},
+            new Int16Int16E0M
+{
+    Id = 10,
+    Value = 29374,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 19,
+    Value = 3445,
     NullableValue = null,
 },
     NullableValue = null,
@@ -40,410 +76,374 @@ namespace Tests
             new Int16Int16E0M
 {
     Id = 12,
-    Value = 19304,
-    ModelInner = new Int16Int160MI
-{
-    Id = 6,
-    Value = 5818,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new Int16Int16E0M
-{
-    Id = 18,
-    Value = 9648,
-    ModelInner = new Int16Int160MI
-{
-    Id = 8,
-    Value = 29702,
-    NullableValue = 29599,
-},
-    NullableValue = 14826,
-},
-            new Int16Int16E0M
-{
-    Id = 19,
-    Value = 26776,
-    ModelInner = new Int16Int160MI
-{
-    Id = 16,
-    Value = 12112,
-    NullableValue = null,
-},
-    NullableValue = 1687,
-},
-            new Int16Int16E0M
-{
-    Id = 22,
-    Value = 28946,
-    ModelInner = new Int16Int160MI
+    Value = 30155,
+    ModelInner = new Int16Int16E0MI
 {
     Id = 23,
-    Value = 25789,
+    Value = 4595,
+    NullableValue = 25611,
+},
+    NullableValue = 11038,
+},
+            new Int16Int16E0M
+{
+    Id = 15,
+    Value = 28543,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 25,
+    Value = 29361,
+    NullableValue = 13015,
+},
     NullableValue = null,
 },
-    NullableValue = 26963,
+            new Int16Int16E0M
+{
+    Id = 23,
+    Value = 26780,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 31,
+    Value = 8974,
+    NullableValue = 23345,
+},
+    NullableValue = 2450,
+},
+            new Int16Int16E0M
+{
+    Id = 24,
+    Value = 30325,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 37,
+    Value = 15338,
+    NullableValue = 22061,
+},
+    NullableValue = null,
 },
             new Int16Int16E0M
 {
     Id = 27,
-    Value = 15213,
-    ModelInner = new Int16Int160MI
+    Value = 21423,
+    ModelInner = new Int16Int16E0MI
 {
-    Id = 24,
-    Value = 16662,
+    Id = 43,
+    Value = 25334,
+    NullableValue = 19984,
+},
+    NullableValue = 12736,
+},
+            new Int16Int16E0M
+{
+    Id = 31,
+    Value = 14587,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 49,
+    Value = 26950,
     NullableValue = null,
 },
     NullableValue = null,
 },
             new Int16Int16E0M
-{
-    Id = 33,
-    Value = 2725,
-    ModelInner = new Int16Int160MI
-{
-    Id = 29,
-    Value = 28849,
-    NullableValue = 8190,
-},
-    NullableValue = 7913,
-},
-            new Int16Int16E0M
-{
-    Id = 36,
-    Value = 315,
-    ModelInner = new Int16Int160MI
-{
-    Id = 33,
-    Value = 24129,
-    NullableValue = null,
-},
-    NullableValue = 30620,
-},
-            new Int16Int16E0M
-{
-    Id = 41,
-    Value = 11121,
-    ModelInner = new Int16Int160MI
 {
     Id = 39,
-    Value = 3398,
-    NullableValue = 8290,
+    Value = 26086,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 54,
+    Value = 14432,
+    NullableValue = 3549,
 },
-    NullableValue = 28471,
+    NullableValue = 23792,
+},
+            new Int16Int16E0M
+{
+    Id = 44,
+    Value = 12972,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 56,
+    Value = 17245,
+    NullableValue = null,
+},
+    NullableValue = 10705,
+},
+            new Int16Int16E0M
+{
+    Id = 46,
+    Value = 24137,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 65,
+    Value = 20795,
+    NullableValue = 32188,
+},
+    NullableValue = null,
 },
             new Int16Int16E0M
 {
     Id = 50,
-    Value = 31392,
-    ModelInner = new Int16Int160MI
+    Value = 30156,
+    ModelInner = new Int16Int16E0MI
 {
-    Id = 46,
-    Value = 7164,
-    NullableValue = 13841,
-},
-    NullableValue = 24063,
-},
-            new Int16Int16E0M
-{
-    Id = 55,
-    Value = 28157,
-    ModelInner = new Int16Int160MI
-{
-    Id = 54,
-    Value = 10558,
+    Id = 66,
+    Value = 32699,
     NullableValue = null,
 },
-    NullableValue = 23822,
-},
-            new Int16Int16E0M
-{
-    Id = 56,
-    Value = 15474,
-    ModelInner = new Int16Int160MI
-{
-    Id = 55,
-    Value = 8018,
-    NullableValue = 14813,
-},
-    NullableValue = 19798,
-},
-            new Int16Int16E0M
-{
-    Id = 60,
-    Value = 16579,
-    ModelInner = new Int16Int160MI
-{
-    Id = 56,
-    Value = 1173,
-    NullableValue = 9410,
-},
-    NullableValue = 9629,
-},
-            new Int16Int16E0M
-{
-    Id = 68,
-    Value = 12098,
-    ModelInner = new Int16Int160MI
-{
-    Id = 63,
-    Value = 31539,
     NullableValue = null,
 },
-    NullableValue = 28548,
+            new Int16Int16E0M
+{
+    Id = 59,
+    Value = 8985,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 67,
+    Value = 6035,
+    NullableValue = 5584,
+},
+    NullableValue = 18613,
 },
             new Int16Int16E0M
 {
-    Id = 76,
-    Value = 16329,
-    ModelInner = new Int16Int160MI
+    Id = 64,
+    Value = 3267,
+    ModelInner = new Int16Int16E0MI
 {
-    Id = 71,
-    Value = 28570,
+    Id = 75,
+    Value = 27079,
+    NullableValue = 27401,
+},
     NullableValue = null,
 },
-    NullableValue = 16773,
+            new Int16Int16E0M
+{
+    Id = 65,
+    Value = 23881,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 84,
+    Value = 26960,
+    NullableValue = 18611,
+},
+    NullableValue = null,
+},
+            new Int16Int16E0M
+{
+    Id = 66,
+    Value = 10190,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 87,
+    Value = 4485,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new Int16Int16E0M
+{
+    Id = 69,
+    Value = 27933,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 92,
+    Value = 28804,
+    NullableValue = null,
+},
+    NullableValue = 26362,
+},
+            new Int16Int16E0M
+{
+    Id = 73,
+    Value = 20080,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 100,
+    Value = 2465,
+    NullableValue = 4302,
+},
+    NullableValue = null,
+},
+            new Int16Int16E0M
+{
+    Id = 74,
+    Value = 30893,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 106,
+    Value = 7575,
+    NullableValue = null,
+},
+    NullableValue = 17923,
+},
+            new Int16Int16E0M
+{
+    Id = 79,
+    Value = 17346,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 111,
+    Value = 8665,
+    NullableValue = 29977,
+},
+    NullableValue = null,
 },
             new Int16Int16E0M
 {
     Id = 82,
-    Value = 2344,
-    ModelInner = new Int16Int160MI
+    Value = 22436,
+    ModelInner = new Int16Int16E0MI
 {
-    Id = 73,
-    Value = 10159,
-    NullableValue = 9624,
-},
+    Id = 119,
+    Value = 20441,
     NullableValue = null,
 },
-            new Int16Int16E0M
-{
-    Id = 85,
-    Value = 19381,
-    ModelInner = new Int16Int160MI
-{
-    Id = 74,
-    Value = 26740,
-    NullableValue = null,
-},
-    NullableValue = null,
+    NullableValue = 28078,
 },
             new Int16Int16E0M
 {
     Id = 86,
-    Value = 24433,
-    ModelInner = new Int16Int160MI
-{
-    Id = 77,
-    Value = 22032,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new Int16Int16E0M
-{
-    Id = 87,
-    Value = 14761,
-    ModelInner = new Int16Int160MI
-{
-    Id = 86,
-    Value = 25258,
-    NullableValue = 20249,
-},
-    NullableValue = 21510,
-},
-            new Int16Int16E0M
-{
-    Id = 92,
-    Value = 8471,
-    ModelInner = new Int16Int160MI
-{
-    Id = 89,
-    Value = 14001,
-    NullableValue = 24614,
-},
-    NullableValue = null,
-},
-            new Int16Int16E0M
-{
-    Id = 93,
-    Value = 20776,
-    ModelInner = new Int16Int160MI
-{
-    Id = 90,
-    Value = 20315,
-    NullableValue = null,
-},
-    NullableValue = 14766,
-},
-            new Int16Int16E0M
-{
-    Id = 99,
-    Value = 6097,
-    ModelInner = new Int16Int160MI
-{
-    Id = 92,
-    Value = 22837,
-    NullableValue = 16832,
-},
-    NullableValue = null,
-},
-            new Int16Int16E0M
-{
-    Id = 100,
-    Value = 4867,
-    ModelInner = new Int16Int160MI
-{
-    Id = 95,
-    Value = 31263,
-    NullableValue = 12309,
-},
-    NullableValue = null,
-},
-            new Int16Int16E0M
-{
-    Id = 102,
-    Value = 5226,
-    ModelInner = new Int16Int160MI
-{
-    Id = 101,
-    Value = 20681,
-    NullableValue = null,
-},
-    NullableValue = 1807,
-},
-            new Int16Int16E0M
-{
-    Id = 111,
-    Value = 28068,
-    ModelInner = new Int16Int160MI
-{
-    Id = 110,
-    Value = 15797,
-    NullableValue = null,
-},
-    NullableValue = 11166,
-},
-            new Int16Int16E0M
+    Value = 26757,
+    ModelInner = new Int16Int16E0MI
 {
     Id = 120,
-    Value = 20406,
-    ModelInner = new Int16Int160MI
+    Value = 15506,
+    NullableValue = null,
+},
+    NullableValue = 28240,
+},
+            new Int16Int16E0M
 {
-    Id = 116,
-    Value = 31607,
-    NullableValue = 24196,
+    Id = 91,
+    Value = 30844,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 126,
+    Value = 18877,
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new Int16Int16E0M
 {
-    Id = 129,
-    Value = 10278,
-    ModelInner = new Int16Int160MI
+    Id = 98,
+    Value = 9597,
+    ModelInner = new Int16Int16E0MI
 {
-    Id = 124,
-    Value = 21614,
-    NullableValue = 24757,
+    Id = 131,
+    Value = 9996,
+    NullableValue = 5971,
+},
+    NullableValue = null,
+},
+            new Int16Int16E0M
+{
+    Id = 104,
+    Value = 7805,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 134,
+    Value = 6189,
+    NullableValue = null,
+},
+    NullableValue = 727,
+},
+            new Int16Int16E0M
+{
+    Id = 110,
+    Value = 9658,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 142,
+    Value = 15212,
+    NullableValue = 23288,
+},
+    NullableValue = 8058,
+},
+            new Int16Int16E0M
+{
+    Id = 118,
+    Value = 9101,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 146,
+    Value = 22004,
+    NullableValue = null,
+},
+    NullableValue = 22267,
+},
+            new Int16Int16E0M
+{
+    Id = 125,
+    Value = 6105,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 148,
+    Value = 3882,
+    NullableValue = 2068,
+},
+    NullableValue = null,
+},
+            new Int16Int16E0M
+{
+    Id = 130,
+    Value = 15280,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 153,
+    Value = 32281,
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new Int16Int16E0M
 {
     Id = 134,
-    Value = 29097,
-    ModelInner = new Int16Int160MI
+    Value = 28785,
+    ModelInner = new Int16Int16E0MI
 {
-    Id = 130,
-    Value = 18476,
-    NullableValue = 13566,
+    Id = 162,
+    Value = 2211,
+    NullableValue = 27456,
 },
-    NullableValue = 1004,
+    NullableValue = null,
 },
             new Int16Int16E0M
 {
-    Id = 140,
-    Value = 9027,
-    ModelInner = new Int16Int160MI
+    Id = 136,
+    Value = 16306,
+    ModelInner = new Int16Int16E0MI
 {
-    Id = 138,
-    Value = 2092,
-    NullableValue = 1256,
+    Id = 166,
+    Value = 16830,
+    NullableValue = null,
+},
+    NullableValue = 7862,
+},
+            new Int16Int16E0M
+{
+    Id = 141,
+    Value = 8320,
+    ModelInner = new Int16Int16E0MI
+{
+    Id = 168,
+    Value = 23846,
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new Int16Int16E0M
 {
     Id = 146,
-    Value = 11639,
-    ModelInner = new Int16Int160MI
+    Value = 23588,
+    ModelInner = new Int16Int16E0MI
 {
-    Id = 147,
-    Value = 9398,
+    Id = 175,
+    Value = 17804,
     NullableValue = null,
 },
-    NullableValue = 742,
-},
-            new Int16Int16E0M
-{
-    Id = 148,
-    Value = 17634,
-    ModelInner = new Int16Int160MI
-{
-    Id = 150,
-    Value = 10516,
-    NullableValue = null,
-},
-    NullableValue = 23594,
-},
-            new Int16Int16E0M
-{
-    Id = 156,
-    Value = 5298,
-    ModelInner = new Int16Int160MI
-{
-    Id = 154,
-    Value = 27575,
-    NullableValue = 13405,
-},
-    NullableValue = null,
-},
-            new Int16Int16E0M
-{
-    Id = 158,
-    Value = 2222,
-    ModelInner = new Int16Int160MI
-{
-    Id = 155,
-    Value = 6088,
-    NullableValue = 16725,
-},
-    NullableValue = 32656,
-},
-            new Int16Int16E0M
-{
-    Id = 165,
-    Value = 18437,
-    ModelInner = new Int16Int160MI
-{
-    Id = 160,
-    Value = 24810,
-    NullableValue = 10079,
-},
-    NullableValue = 13115,
-},
-            new Int16Int16E0M
-{
-    Id = 168,
-    Value = 916,
-    ModelInner = new Int16Int160MI
-{
-    Id = 163,
-    Value = 4691,
-    NullableValue = null,
-},
-    NullableValue = null,
+    NullableValue = 11521,
 },
         };
 

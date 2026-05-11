@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.bigintegernumeric0mi
+CREATE TABLE public.bigintegernumerice0mi
 (
     id integer NOT NULL,
     value numeric NOT NULL,
     nullablevalue numeric,
-    CONSTRAINT bigintegernumeric0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT bigintegernumerice0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_bigintegernumeric0mi
+CREATE TABLE public.binary_bigintegernumerice0mi
 (
     id integer NOT NULL,
     value numeric NOT NULL,
     nullablevalue numeric,
-    CONSTRAINT binary_bigintegernumeric0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_bigintegernumerice0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_bigintegernumeric0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.bigintegernumeric0mi;
+DROP TABLE public.bigintegernumerice0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_bigintegernumeric0mi;
+DROP TABLE public.binary_bigintegernumerice0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.bigintegernumerice0m
     id integer NOT NULL,
     value numeric NOT NULL,
     nullablevalue numeric,
-    bigintegernumeric0mi_id integer,
+    bigintegernumerice0mi_id integer,
     CONSTRAINT bigintegernumerice0m_pkey PRIMARY KEY (id),
-    CONSTRAINT bigintegernumerice0m_bigintegernumeric0mi_fk FOREIGN KEY (bigintegernumeric0mi_id)
-        REFERENCES public.bigintegernumeric0mi (id) MATCH SIMPLE
+    CONSTRAINT bigintegernumerice0m_bigintegernumerice0mi_fk FOREIGN KEY (bigintegernumerice0mi_id)
+        REFERENCES public.bigintegernumerice0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_bigintegernumerice0m
     id integer NOT NULL,
     value numeric NOT NULL,
     nullablevalue numeric,
-    bigintegernumeric0mi_id integer,
+    bigintegernumerice0mi_id integer,
     CONSTRAINT binary_bigintegernumerice0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_bigintegernumerice0m_binary_bigintegernumeric0mi_fk FOREIGN KEY (bigintegernumeric0mi_id)
-        REFERENCES public.binary_bigintegernumeric0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_bigintegernumerice0m_binary_bigintegernumerice0mi_fk FOREIGN KEY (bigintegernumerice0mi_id)
+        REFERENCES public.binary_bigintegernumerice0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

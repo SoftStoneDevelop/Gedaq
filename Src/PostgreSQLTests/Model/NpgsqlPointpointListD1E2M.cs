@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPoint> Value { get; set; }
 
-        public NpgsqlPointpointListD12MI ModelInner { get; set; }
+        public NpgsqlPointpointListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPoint> NullableValue { get; set; }

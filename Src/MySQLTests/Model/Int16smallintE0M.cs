@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Int16 Value { get; set; }
 
-        public Int16smallint0MI ModelInner { get; set; }
+        public Int16smallintE0MI ModelInner { get; set; }
 
         
         public System.Int16? NullableValue { get; set; }

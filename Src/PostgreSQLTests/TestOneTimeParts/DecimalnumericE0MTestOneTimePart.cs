@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.decimalnumeric0mi
+CREATE TABLE public.decimalnumerice0mi
 (
     id integer NOT NULL,
     value numeric NOT NULL,
     nullablevalue numeric,
-    CONSTRAINT decimalnumeric0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT decimalnumerice0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_decimalnumeric0mi
+CREATE TABLE public.binary_decimalnumerice0mi
 (
     id integer NOT NULL,
     value numeric NOT NULL,
     nullablevalue numeric,
-    CONSTRAINT binary_decimalnumeric0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_decimalnumerice0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_decimalnumeric0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.decimalnumeric0mi;
+DROP TABLE public.decimalnumerice0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_decimalnumeric0mi;
+DROP TABLE public.binary_decimalnumerice0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.decimalnumerice0m
     id integer NOT NULL,
     value numeric NOT NULL,
     nullablevalue numeric,
-    decimalnumeric0mi_id integer,
+    decimalnumerice0mi_id integer,
     CONSTRAINT decimalnumerice0m_pkey PRIMARY KEY (id),
-    CONSTRAINT decimalnumerice0m_decimalnumeric0mi_fk FOREIGN KEY (decimalnumeric0mi_id)
-        REFERENCES public.decimalnumeric0mi (id) MATCH SIMPLE
+    CONSTRAINT decimalnumerice0m_decimalnumerice0mi_fk FOREIGN KEY (decimalnumerice0mi_id)
+        REFERENCES public.decimalnumerice0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_decimalnumerice0m
     id integer NOT NULL,
     value numeric NOT NULL,
     nullablevalue numeric,
-    decimalnumeric0mi_id integer,
+    decimalnumerice0mi_id integer,
     CONSTRAINT binary_decimalnumerice0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_decimalnumerice0m_binary_decimalnumeric0mi_fk FOREIGN KEY (decimalnumeric0mi_id)
-        REFERENCES public.binary_decimalnumeric0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_decimalnumerice0m_binary_decimalnumerice0mi_fk FOREIGN KEY (decimalnumerice0mi_id)
+        REFERENCES public.binary_decimalnumerice0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

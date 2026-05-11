@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Decimal Value { get; set; }
 
-        public Decimaldecimal0MI ModelInner { get; set; }
+        public DecimaldecimalE0MI ModelInner { get; set; }
 
         
         public System.Decimal? NullableValue { get; set; }

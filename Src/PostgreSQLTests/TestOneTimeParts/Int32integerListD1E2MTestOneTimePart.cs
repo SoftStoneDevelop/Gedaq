@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.int32integerlistd12mi
+CREATE TABLE public.int32integerlistd1e2mi
 (
     id integer NOT NULL,
     value integer[] NOT NULL,
     nullablevalue integer[],
-    CONSTRAINT int32integerlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT int32integerlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_int32integerlistd12mi
+CREATE TABLE public.binary_int32integerlistd1e2mi
 (
     id integer NOT NULL,
     value integer[] NOT NULL,
     nullablevalue integer[],
-    CONSTRAINT binary_int32integerlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_int32integerlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_int32integerlistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.int32integerlistd12mi;
+DROP TABLE public.int32integerlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_int32integerlistd12mi;
+DROP TABLE public.binary_int32integerlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.int32integerlistd1e2m
     id integer NOT NULL,
     value integer[] NOT NULL,
     nullablevalue integer[],
-    int32integerlistd12mi_id integer,
+    int32integerlistd1e2mi_id integer,
     CONSTRAINT int32integerlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT int32integerlistd1e2m_int32integerlistd12mi_fk FOREIGN KEY (int32integerlistd12mi_id)
-        REFERENCES public.int32integerlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT int32integerlistd1e2m_int32integerlistd1e2mi_fk FOREIGN KEY (int32integerlistd1e2mi_id)
+        REFERENCES public.int32integerlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_int32integerlistd1e2m
     id integer NOT NULL,
     value integer[] NOT NULL,
     nullablevalue integer[],
-    int32integerlistd12mi_id integer,
+    int32integerlistd1e2mi_id integer,
     CONSTRAINT binary_int32integerlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_int32integerlistd1e2m_binary_int32integerlistd12mi_fk FOREIGN KEY (int32integerlistd12mi_id)
-        REFERENCES public.binary_int32integerlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_int32integerlistd1e2m_binary_int32integerlistd1e2mi_fk FOREIGN KEY (int32integerlistd1e2mi_id)
+        REFERENCES public.binary_int32integerlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

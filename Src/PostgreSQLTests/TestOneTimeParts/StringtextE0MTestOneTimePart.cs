@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.stringtext0mi
+CREATE TABLE public.stringtexte0mi
 (
     id integer NOT NULL,
     value text NOT NULL,
     nullablevalue text,
-    CONSTRAINT stringtext0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT stringtexte0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_stringtext0mi
+CREATE TABLE public.binary_stringtexte0mi
 (
     id integer NOT NULL,
     value text NOT NULL,
     nullablevalue text,
-    CONSTRAINT binary_stringtext0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_stringtexte0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_stringtext0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.stringtext0mi;
+DROP TABLE public.stringtexte0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_stringtext0mi;
+DROP TABLE public.binary_stringtexte0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.stringtexte0m
     id integer NOT NULL,
     value text NOT NULL,
     nullablevalue text,
-    stringtext0mi_id integer,
+    stringtexte0mi_id integer,
     CONSTRAINT stringtexte0m_pkey PRIMARY KEY (id),
-    CONSTRAINT stringtexte0m_stringtext0mi_fk FOREIGN KEY (stringtext0mi_id)
-        REFERENCES public.stringtext0mi (id) MATCH SIMPLE
+    CONSTRAINT stringtexte0m_stringtexte0mi_fk FOREIGN KEY (stringtexte0mi_id)
+        REFERENCES public.stringtexte0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_stringtexte0m
     id integer NOT NULL,
     value text NOT NULL,
     nullablevalue text,
-    stringtext0mi_id integer,
+    stringtexte0mi_id integer,
     CONSTRAINT binary_stringtexte0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_stringtexte0m_binary_stringtext0mi_fk FOREIGN KEY (stringtext0mi_id)
-        REFERENCES public.binary_stringtext0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_stringtexte0m_binary_stringtexte0mi_fk FOREIGN KEY (stringtexte0mi_id)
+        REFERENCES public.binary_stringtexte0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

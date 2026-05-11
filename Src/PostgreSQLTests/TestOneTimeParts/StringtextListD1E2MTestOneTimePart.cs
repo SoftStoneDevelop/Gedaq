@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.stringtextlistd12mi
+CREATE TABLE public.stringtextlistd1e2mi
 (
     id integer NOT NULL,
     value text[] NOT NULL,
     nullablevalue text[],
-    CONSTRAINT stringtextlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT stringtextlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_stringtextlistd12mi
+CREATE TABLE public.binary_stringtextlistd1e2mi
 (
     id integer NOT NULL,
     value text[] NOT NULL,
     nullablevalue text[],
-    CONSTRAINT binary_stringtextlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_stringtextlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_stringtextlistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.stringtextlistd12mi;
+DROP TABLE public.stringtextlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_stringtextlistd12mi;
+DROP TABLE public.binary_stringtextlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.stringtextlistd1e2m
     id integer NOT NULL,
     value text[] NOT NULL,
     nullablevalue text[],
-    stringtextlistd12mi_id integer,
+    stringtextlistd1e2mi_id integer,
     CONSTRAINT stringtextlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT stringtextlistd1e2m_stringtextlistd12mi_fk FOREIGN KEY (stringtextlistd12mi_id)
-        REFERENCES public.stringtextlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT stringtextlistd1e2m_stringtextlistd1e2mi_fk FOREIGN KEY (stringtextlistd1e2mi_id)
+        REFERENCES public.stringtextlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_stringtextlistd1e2m
     id integer NOT NULL,
     value text[] NOT NULL,
     nullablevalue text[],
-    stringtextlistd12mi_id integer,
+    stringtextlistd1e2mi_id integer,
     CONSTRAINT binary_stringtextlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_stringtextlistd1e2m_binary_stringtextlistd12mi_fk FOREIGN KEY (stringtextlistd12mi_id)
-        REFERENCES public.binary_stringtextlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_stringtextlistd1e2m_binary_stringtextlistd1e2mi_fk FOREIGN KEY (stringtextlistd1e2mi_id)
+        REFERENCES public.binary_stringtextlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

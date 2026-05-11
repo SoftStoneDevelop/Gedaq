@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Guid Value { get; set; }
 
-        public Guiduniqueidentifier0MI ModelInner { get; set; }
+        public GuiduniqueidentifierE0MI ModelInner { get; set; }
 
         
         public System.Guid? NullableValue { get; set; }

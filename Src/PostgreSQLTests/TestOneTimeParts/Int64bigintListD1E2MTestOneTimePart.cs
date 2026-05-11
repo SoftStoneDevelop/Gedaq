@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.int64bigintlistd12mi
+CREATE TABLE public.int64bigintlistd1e2mi
 (
     id integer NOT NULL,
     value bigint[] NOT NULL,
     nullablevalue bigint[],
-    CONSTRAINT int64bigintlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT int64bigintlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_int64bigintlistd12mi
+CREATE TABLE public.binary_int64bigintlistd1e2mi
 (
     id integer NOT NULL,
     value bigint[] NOT NULL,
     nullablevalue bigint[],
-    CONSTRAINT binary_int64bigintlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_int64bigintlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_int64bigintlistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.int64bigintlistd12mi;
+DROP TABLE public.int64bigintlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_int64bigintlistd12mi;
+DROP TABLE public.binary_int64bigintlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.int64bigintlistd1e2m
     id integer NOT NULL,
     value bigint[] NOT NULL,
     nullablevalue bigint[],
-    int64bigintlistd12mi_id integer,
+    int64bigintlistd1e2mi_id integer,
     CONSTRAINT int64bigintlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT int64bigintlistd1e2m_int64bigintlistd12mi_fk FOREIGN KEY (int64bigintlistd12mi_id)
-        REFERENCES public.int64bigintlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT int64bigintlistd1e2m_int64bigintlistd1e2mi_fk FOREIGN KEY (int64bigintlistd1e2mi_id)
+        REFERENCES public.int64bigintlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_int64bigintlistd1e2m
     id integer NOT NULL,
     value bigint[] NOT NULL,
     nullablevalue bigint[],
-    int64bigintlistd12mi_id integer,
+    int64bigintlistd1e2mi_id integer,
     CONSTRAINT binary_int64bigintlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_int64bigintlistd1e2m_binary_int64bigintlistd12mi_fk FOREIGN KEY (int64bigintlistd12mi_id)
-        REFERENCES public.binary_int64bigintlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_int64bigintlistd1e2m_binary_int64bigintlistd1e2mi_fk FOREIGN KEY (int64bigintlistd1e2mi_id)
+        REFERENCES public.binary_int64bigintlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

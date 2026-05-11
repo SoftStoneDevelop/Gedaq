@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.Byte> Value { get; set; }
 
-        public BytesmallintListD12MI ModelInner { get; set; }
+        public BytesmallintListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.Byte> NullableValue { get; set; }

@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.sbytesmallintlistd12mi
+CREATE TABLE public.sbytesmallintlistd1e2mi
 (
     id integer NOT NULL,
     value smallint[] NOT NULL,
     nullablevalue smallint[],
-    CONSTRAINT sbytesmallintlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT sbytesmallintlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_sbytesmallintlistd12mi
+CREATE TABLE public.binary_sbytesmallintlistd1e2mi
 (
     id integer NOT NULL,
     value smallint[] NOT NULL,
     nullablevalue smallint[],
-    CONSTRAINT binary_sbytesmallintlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_sbytesmallintlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_sbytesmallintlistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.sbytesmallintlistd12mi;
+DROP TABLE public.sbytesmallintlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_sbytesmallintlistd12mi;
+DROP TABLE public.binary_sbytesmallintlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.sbytesmallintlistd1e2m
     id integer NOT NULL,
     value smallint[] NOT NULL,
     nullablevalue smallint[],
-    sbytesmallintlistd12mi_id integer,
+    sbytesmallintlistd1e2mi_id integer,
     CONSTRAINT sbytesmallintlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT sbytesmallintlistd1e2m_sbytesmallintlistd12mi_fk FOREIGN KEY (sbytesmallintlistd12mi_id)
-        REFERENCES public.sbytesmallintlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT sbytesmallintlistd1e2m_sbytesmallintlistd1e2mi_fk FOREIGN KEY (sbytesmallintlistd1e2mi_id)
+        REFERENCES public.sbytesmallintlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_sbytesmallintlistd1e2m
     id integer NOT NULL,
     value smallint[] NOT NULL,
     nullablevalue smallint[],
-    sbytesmallintlistd12mi_id integer,
+    sbytesmallintlistd1e2mi_id integer,
     CONSTRAINT binary_sbytesmallintlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_sbytesmallintlistd1e2m_binary_sbytesmallintlistd12mi_fk FOREIGN KEY (sbytesmallintlistd12mi_id)
-        REFERENCES public.binary_sbytesmallintlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_sbytesmallintlistd1e2m_binary_sbytesmallintlistd1e2mi_fk FOREIGN KEY (sbytesmallintlistd1e2mi_id)
+        REFERENCES public.binary_sbytesmallintlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.npgsqlpathpathlistd12mi
+CREATE TABLE public.npgsqlpathpathlistd1e2mi
 (
     id integer NOT NULL,
     value path[] NOT NULL,
     nullablevalue path[],
-    CONSTRAINT npgsqlpathpathlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT npgsqlpathpathlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_npgsqlpathpathlistd12mi
+CREATE TABLE public.binary_npgsqlpathpathlistd1e2mi
 (
     id integer NOT NULL,
     value path[] NOT NULL,
     nullablevalue path[],
-    CONSTRAINT binary_npgsqlpathpathlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_npgsqlpathpathlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_npgsqlpathpathlistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.npgsqlpathpathlistd12mi;
+DROP TABLE public.npgsqlpathpathlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_npgsqlpathpathlistd12mi;
+DROP TABLE public.binary_npgsqlpathpathlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.npgsqlpathpathlistd1e2m
     id integer NOT NULL,
     value path[] NOT NULL,
     nullablevalue path[],
-    npgsqlpathpathlistd12mi_id integer,
+    npgsqlpathpathlistd1e2mi_id integer,
     CONSTRAINT npgsqlpathpathlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT npgsqlpathpathlistd1e2m_npgsqlpathpathlistd12mi_fk FOREIGN KEY (npgsqlpathpathlistd12mi_id)
-        REFERENCES public.npgsqlpathpathlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT npgsqlpathpathlistd1e2m_npgsqlpathpathlistd1e2mi_fk FOREIGN KEY (npgsqlpathpathlistd1e2mi_id)
+        REFERENCES public.npgsqlpathpathlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_npgsqlpathpathlistd1e2m
     id integer NOT NULL,
     value path[] NOT NULL,
     nullablevalue path[],
-    npgsqlpathpathlistd12mi_id integer,
+    npgsqlpathpathlistd1e2mi_id integer,
     CONSTRAINT binary_npgsqlpathpathlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_npgsqlpathpathlistd1e2m_binary_npgsqlpathpathlistd12mi_fk FOREIGN KEY (npgsqlpathpathlistd12mi_id)
-        REFERENCES public.binary_npgsqlpathpathlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_npgsqlpathpathlistd1e2m_binary_npgsqlpathpathlistd1e2mi_fk FOREIGN KEY (npgsqlpathpathlistd1e2mi_id)
+        REFERENCES public.binary_npgsqlpathpathlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.Single> Value { get; set; }
 
-        public SinglerealListD12MI ModelInner { get; set; }
+        public SinglerealListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.Single> NullableValue { get; set; }

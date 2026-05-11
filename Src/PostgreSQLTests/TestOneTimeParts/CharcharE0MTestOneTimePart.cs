@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.charchar0mi
+CREATE TABLE public.charchare0mi
 (
     id integer NOT NULL,
     value char NOT NULL,
     nullablevalue char,
-    CONSTRAINT charchar0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT charchare0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_charchar0mi
+CREATE TABLE public.binary_charchare0mi
 (
     id integer NOT NULL,
     value char NOT NULL,
     nullablevalue char,
-    CONSTRAINT binary_charchar0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_charchare0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_charchar0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.charchar0mi;
+DROP TABLE public.charchare0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_charchar0mi;
+DROP TABLE public.binary_charchare0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.charchare0m
     id integer NOT NULL,
     value char NOT NULL,
     nullablevalue char,
-    charchar0mi_id integer,
+    charchare0mi_id integer,
     CONSTRAINT charchare0m_pkey PRIMARY KEY (id),
-    CONSTRAINT charchare0m_charchar0mi_fk FOREIGN KEY (charchar0mi_id)
-        REFERENCES public.charchar0mi (id) MATCH SIMPLE
+    CONSTRAINT charchare0m_charchare0mi_fk FOREIGN KEY (charchare0mi_id)
+        REFERENCES public.charchare0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_charchare0m
     id integer NOT NULL,
     value char NOT NULL,
     nullablevalue char,
-    charchar0mi_id integer,
+    charchare0mi_id integer,
     CONSTRAINT binary_charchare0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_charchare0m_binary_charchar0mi_fk FOREIGN KEY (charchar0mi_id)
-        REFERENCES public.binary_charchar0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_charchare0m_binary_charchare0mi_fk FOREIGN KEY (charchare0mi_id)
+        REFERENCES public.binary_charchare0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

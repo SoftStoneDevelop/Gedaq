@@ -12,7 +12,7 @@ namespace Tests
         
         public System.DateOnly Value { get; set; }
 
-        public DateOnlydate0MI ModelInner { get; set; }
+        public DateOnlydateE0MI ModelInner { get; set; }
 
         
         public System.DateOnly? NullableValue { get; set; }

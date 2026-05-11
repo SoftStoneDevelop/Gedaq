@@ -21,11 +21,11 @@ namespace Tests
         private async Task CreateModelInnerTable(SqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE dbo.booleanbit0mi(
+CREATE TABLE dbo.booleanbite0mi(
 	id int NOT NULL,
 	value bit NOT NULL,
 	nullablevalue bit NULL,
-    CONSTRAINT PK_booleanbit0mi PRIMARY KEY NONCLUSTERED (id)
+    CONSTRAINT PK_booleanbite0mi PRIMARY KEY NONCLUSTERED (id)
 )
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -35,7 +35,7 @@ CREATE TABLE dbo.booleanbit0mi(
         private async Task DropModelInnerTable(SqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE dbo.booleanbit0mi
+DROP TABLE dbo.booleanbite0mi
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -48,10 +48,10 @@ CREATE TABLE dbo.booleanbite0m(
 	id int NOT NULL,
 	value bit NOT NULL,
     nullablevalue bit NULL,
-	booleanbit0mi_id int NULL,
+	booleanbite0mi_id int NULL,
     CONSTRAINT PK_booleanbite0m PRIMARY KEY NONCLUSTERED (id),
-    CONSTRAINT FK_booleanbite0m_booleanbit0mi FOREIGN KEY (booleanbit0mi_id)
-        REFERENCES dbo.booleanbit0mi (id)
+    CONSTRAINT FK_booleanbite0m_booleanbite0mi FOREIGN KEY (booleanbite0mi_id)
+        REFERENCES dbo.booleanbite0mi (id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
 )

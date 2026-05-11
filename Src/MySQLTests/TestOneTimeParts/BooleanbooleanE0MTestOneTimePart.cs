@@ -22,7 +22,7 @@ namespace Tests
         private async Task CreateModelInnerTable(MySqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE gedaqtests.booleanboolean0mi (
+CREATE TABLE gedaqtests.booleanbooleane0mi (
     id int  NOT NULL,
     value boolean NOT NULL,
 	nullablevalue boolean NULL,
@@ -36,7 +36,7 @@ CREATE TABLE gedaqtests.booleanboolean0mi (
         private async Task DropModelInnerTable(MySqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE IF EXISTS gedaqtests.booleanboolean0mi
+DROP TABLE IF EXISTS gedaqtests.booleanbooleane0mi
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -50,10 +50,10 @@ CREATE TABLE gedaqtests.booleanbooleane0m
     id int NOT NULL,
     value boolean NOT NULL,
     nullablevalue boolean,
-    booleanboolean0mi_id int,
+    booleanbooleane0mi_id int,
     PRIMARY KEY (id),
-    FOREIGN KEY (booleanboolean0mi_id)
-        REFERENCES gedaqtests.booleanboolean0mi (id)
+    FOREIGN KEY (booleanbooleane0mi_id)
+        REFERENCES gedaqtests.booleanbooleane0mi (id)
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

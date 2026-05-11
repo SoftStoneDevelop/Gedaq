@@ -22,7 +22,7 @@ namespace Tests
         private async Task CreateModelInnerTable(MySqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE gedaqtests.int16smallint0mi (
+CREATE TABLE gedaqtests.int16smallinte0mi (
     id int  NOT NULL,
     value smallint NOT NULL,
 	nullablevalue smallint NULL,
@@ -36,7 +36,7 @@ CREATE TABLE gedaqtests.int16smallint0mi (
         private async Task DropModelInnerTable(MySqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE IF EXISTS gedaqtests.int16smallint0mi
+DROP TABLE IF EXISTS gedaqtests.int16smallinte0mi
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -50,10 +50,10 @@ CREATE TABLE gedaqtests.int16smallinte0m
     id int NOT NULL,
     value smallint NOT NULL,
     nullablevalue smallint,
-    int16smallint0mi_id int,
+    int16smallinte0mi_id int,
     PRIMARY KEY (id),
-    FOREIGN KEY (int16smallint0mi_id)
-        REFERENCES gedaqtests.int16smallint0mi (id)
+    FOREIGN KEY (int16smallinte0mi_id)
+        REFERENCES gedaqtests.int16smallinte0mi (id)
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

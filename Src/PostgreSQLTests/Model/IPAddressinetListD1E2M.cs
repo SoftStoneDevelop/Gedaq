@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.Net.IPAddress> Value { get; set; }
 
-        public IPAddressinetListD12MI ModelInner { get; set; }
+        public IPAddressinetListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.Net.IPAddress> NullableValue { get; set; }

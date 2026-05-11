@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.int64bigint0mi
+CREATE TABLE public.int64biginte0mi
 (
     id integer NOT NULL,
     value bigint NOT NULL,
     nullablevalue bigint,
-    CONSTRAINT int64bigint0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT int64biginte0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_int64bigint0mi
+CREATE TABLE public.binary_int64biginte0mi
 (
     id integer NOT NULL,
     value bigint NOT NULL,
     nullablevalue bigint,
-    CONSTRAINT binary_int64bigint0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_int64biginte0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_int64bigint0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.int64bigint0mi;
+DROP TABLE public.int64biginte0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_int64bigint0mi;
+DROP TABLE public.binary_int64biginte0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.int64biginte0m
     id integer NOT NULL,
     value bigint NOT NULL,
     nullablevalue bigint,
-    int64bigint0mi_id integer,
+    int64biginte0mi_id integer,
     CONSTRAINT int64biginte0m_pkey PRIMARY KEY (id),
-    CONSTRAINT int64biginte0m_int64bigint0mi_fk FOREIGN KEY (int64bigint0mi_id)
-        REFERENCES public.int64bigint0mi (id) MATCH SIMPLE
+    CONSTRAINT int64biginte0m_int64biginte0mi_fk FOREIGN KEY (int64biginte0mi_id)
+        REFERENCES public.int64biginte0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_int64biginte0m
     id integer NOT NULL,
     value bigint NOT NULL,
     nullablevalue bigint,
-    int64bigint0mi_id integer,
+    int64biginte0mi_id integer,
     CONSTRAINT binary_int64biginte0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_int64biginte0m_binary_int64bigint0mi_fk FOREIGN KEY (int64bigint0mi_id)
-        REFERENCES public.binary_int64bigint0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_int64biginte0m_binary_int64biginte0mi_fk FOREIGN KEY (int64biginte0mi_id)
+        REFERENCES public.binary_int64biginte0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.bigintegernumericlistd12mi
+CREATE TABLE public.bigintegernumericlistd1e2mi
 (
     id integer NOT NULL,
     value numeric[] NOT NULL,
     nullablevalue numeric[],
-    CONSTRAINT bigintegernumericlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT bigintegernumericlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_bigintegernumericlistd12mi
+CREATE TABLE public.binary_bigintegernumericlistd1e2mi
 (
     id integer NOT NULL,
     value numeric[] NOT NULL,
     nullablevalue numeric[],
-    CONSTRAINT binary_bigintegernumericlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_bigintegernumericlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_bigintegernumericlistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.bigintegernumericlistd12mi;
+DROP TABLE public.bigintegernumericlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_bigintegernumericlistd12mi;
+DROP TABLE public.binary_bigintegernumericlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.bigintegernumericlistd1e2m
     id integer NOT NULL,
     value numeric[] NOT NULL,
     nullablevalue numeric[],
-    bigintegernumericlistd12mi_id integer,
+    bigintegernumericlistd1e2mi_id integer,
     CONSTRAINT bigintegernumericlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT bigintegernumericlistd1e2m_bigintegernumericlistd12mi_fk FOREIGN KEY (bigintegernumericlistd12mi_id)
-        REFERENCES public.bigintegernumericlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT bigintegernumericlistd1e2m_bigintegernumericlistd1e2mi_fk FOREIGN KEY (bigintegernumericlistd1e2mi_id)
+        REFERENCES public.bigintegernumericlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_bigintegernumericlistd1e2m
     id integer NOT NULL,
     value numeric[] NOT NULL,
     nullablevalue numeric[],
-    bigintegernumericlistd12mi_id integer,
+    bigintegernumericlistd1e2mi_id integer,
     CONSTRAINT binary_bigintegernumericlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_bigintegernumericlistd1e2m_binary_bigintegernumericlistd12mi_fk FOREIGN KEY (bigintegernumericlistd12mi_id)
-        REFERENCES public.binary_bigintegernumericlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_bigintegernumericlistd1e2m_binary_bigintegernumericlistd1e2mi_fk FOREIGN KEY (bigintegernumericlistd1e2mi_id)
+        REFERENCES public.binary_bigintegernumericlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

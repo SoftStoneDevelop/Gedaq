@@ -12,7 +12,7 @@ namespace Tests
         
         public System.SByte Value { get; set; }
 
-        public SBytesmallint0MI ModelInner { get; set; }
+        public SBytesmallintE0MI ModelInner { get; set; }
 
         
         public System.SByte? NullableValue { get; set; }

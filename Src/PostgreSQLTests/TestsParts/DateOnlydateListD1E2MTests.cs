@@ -30,153 +30,263 @@ namespace Tests
         {
             new DateOnlydateListD1E2M
 {
-    Id = 2,
+    Id = 5,
     Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
+new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1928, month: 10, day: 4),
+new DateOnly(year: 1942, month: 10, day: 5),
 
-new DateOnly(year: 1955, month: 10, day: 11),
+new DateOnly(year: 1969, month: 10, day: 18),
 
-new DateOnly(year: 1969, month: 10, day: 15),
-
-new DateOnly(year: 2004, month: 10, day: 16),
+new DateOnly(year: 1950, month: 10, day: 5),
 
 },
     ModelInner = null,
     NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
+new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1969, month: 10, day: 12),
+new DateOnly(year: 1951, month: 10, day: 16),
 
-new DateOnly(year: 2004, month: 10, day: 4),
+new DateOnly(year: 1917, month: 10, day: 18),
 
-new DateOnly(year: 1985, month: 10, day: 15),
-
-new DateOnly(year: 1922, month: 10, day: 2),
+new DateOnly(year: 2018, month: 10, day: 9),
 
 },
 },
             new DateOnlydateListD1E2M
 {
-    Id = 10,
+    Id = 11,
     Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
+new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1990, month: 10, day: 13),
+new DateOnly(year: 1993, month: 10, day: 19),
 
-new DateOnly(year: 1938, month: 10, day: 15),
+new DateOnly(year: 2014, month: 10, day: 9),
 
-new DateOnly(year: 2016, month: 10, day: 3),
-
-new DateOnly(year: 2017, month: 10, day: 2),
+new DateOnly(year: 1953, month: 10, day: 15),
 
 },
-    ModelInner = new DateOnlydateListD12MI
+    ModelInner = new DateOnlydateListD1E2MI
 {
-    Id = 8,
+    Id = 3,
     Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
+new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1918, month: 10, day: 12),
+new DateOnly(year: 1991, month: 10, day: 17),
 
-new DateOnly(year: 2019, month: 10, day: 14),
+new DateOnly(year: 1922, month: 10, day: 16),
 
-new DateOnly(year: 2002, month: 10, day: 13),
-
-new DateOnly(year: 1945, month: 10, day: 1),
+new DateOnly(year: 1995, month: 10, day: 13),
 
 },
     NullableValue = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1949, month: 10, day: 5),
+new DateOnly(year: 1989, month: 10, day: 4),
 
-new DateOnly(year: 1970, month: 10, day: 17),
+new DateOnly(year: 1941, month: 10, day: 10),
 
-new DateOnly(year: 2009, month: 10, day: 9),
+new DateOnly(year: 1977, month: 10, day: 9),
 
 },
 },
     NullableValue = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1924, month: 10, day: 7),
+new DateOnly(year: 1975, month: 10, day: 13),
 
-new DateOnly(year: 1993, month: 10, day: 12),
+new DateOnly(year: 2004, month: 10, day: 17),
 
-new DateOnly(year: 1937, month: 10, day: 8),
+new DateOnly(year: 2004, month: 10, day: 10),
 
 },
 },
             new DateOnlydateListD1E2M
 {
-    Id = 19,
+    Id = 12,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(4)
 {
-new DateOnly(year: 1966, month: 10, day: 5),
+new DateOnly(year: 1972, month: 10, day: 3),
 
-new DateOnly(year: 1977, month: 10, day: 3),
+new DateOnly(year: 1987, month: 10, day: 12),
 
-new DateOnly(year: 2016, month: 10, day: 1),
+new DateOnly(year: 2013, month: 10, day: 12),
 
-new DateOnly(year: 1960, month: 10, day: 9),
+new DateOnly(year: 2009, month: 10, day: 15),
 
 },
     ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1933, month: 10, day: 10),
+
+new DateOnly(year: 1953, month: 10, day: 3),
+
+new DateOnly(year: 1966, month: 10, day: 7),
+
+},
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 13,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1941, month: 10, day: 9),
+
+new DateOnly(year: 2004, month: 10, day: 15),
+
+new DateOnly(year: 1998, month: 10, day: 19),
+
+},
+    ModelInner = new DateOnlydateListD1E2MI
+{
+    Id = 6,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1983, month: 10, day: 12),
+
+new DateOnly(year: 1951, month: 10, day: 19),
+
+new DateOnly(year: 1996, month: 10, day: 10),
+
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 20,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1994, month: 10, day: 5),
+
+new DateOnly(year: 1981, month: 10, day: 10),
+
+new DateOnly(year: 1917, month: 10, day: 16),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 21,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1974, month: 10, day: 12),
+
+new DateOnly(year: 1939, month: 10, day: 4),
+
+new DateOnly(year: 1932, month: 10, day: 17),
+
+new DateOnly(year: 1990, month: 10, day: 3),
+
+},
+    ModelInner = new DateOnlydateListD1E2MI
+{
+    Id = 15,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1973, month: 10, day: 3),
+
+new DateOnly(year: 2000, month: 10, day: 10),
+
+new DateOnly(year: 1919, month: 10, day: 17),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1954, month: 10, day: 9),
+
+new DateOnly(year: 1971, month: 10, day: 6),
+
+new DateOnly(year: 1953, month: 10, day: 19),
+
+},
+},
     NullableValue = null,
 },
             new DateOnlydateListD1E2M
 {
     Id = 22,
     Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
+new System.Collections.Generic.List<System.DateOnly>(4)
 {
-new DateOnly(year: 1930, month: 10, day: 3),
+new DateOnly(year: 2007, month: 10, day: 10),
 
-new DateOnly(year: 1973, month: 10, day: 11),
+new DateOnly(year: 1994, month: 10, day: 4),
 
-new DateOnly(year: 2002, month: 10, day: 17),
+new DateOnly(year: 1962, month: 10, day: 8),
+
+new DateOnly(year: 1984, month: 10, day: 7),
 
 },
-    ModelInner = new DateOnlydateListD12MI
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(4)
 {
-    Id = 12,
+new DateOnly(year: 1954, month: 10, day: 3),
+
+new DateOnly(year: 1960, month: 10, day: 12),
+
+new DateOnly(year: 1968, month: 10, day: 13),
+
+new DateOnly(year: 2001, month: 10, day: 13),
+
+},
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 28,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1955, month: 10, day: 7),
+new DateOnly(year: 1980, month: 10, day: 6),
 
-new DateOnly(year: 1954, month: 10, day: 13),
+new DateOnly(year: 1949, month: 10, day: 11),
 
-new DateOnly(year: 1994, month: 10, day: 15),
+new DateOnly(year: 2001, month: 10, day: 1),
 
 },
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(3)
+    ModelInner = new DateOnlydateListD1E2MI
 {
-new DateOnly(year: 1957, month: 10, day: 15),
+    Id = 22,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1922, month: 10, day: 8),
 
-new DateOnly(year: 1922, month: 10, day: 14),
+new DateOnly(year: 1949, month: 10, day: 14),
 
-new DateOnly(year: 1919, month: 10, day: 2),
+new DateOnly(year: 1959, month: 10, day: 17),
+
+new DateOnly(year: 2011, month: 10, day: 7),
 
 },
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new DateOnlydateListD1E2M
 {
-    Id = 29,
+    Id = 30,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1956, month: 10, day: 15),
+new DateOnly(year: 2007, month: 10, day: 1),
 
-new DateOnly(year: 1998, month: 10, day: 4),
+new DateOnly(year: 1962, month: 10, day: 3),
 
-new DateOnly(year: 1966, month: 10, day: 1),
+new DateOnly(year: 1978, month: 10, day: 3),
 
 },
     ModelInner = null,
@@ -184,121 +294,183 @@ new DateOnly(year: 1966, month: 10, day: 1),
 },
             new DateOnlydateListD1E2M
 {
-    Id = 37,
+    Id = 31,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(4)
 {
-new DateOnly(year: 1922, month: 10, day: 9),
+new DateOnly(year: 1962, month: 10, day: 12),
 
-new DateOnly(year: 1965, month: 10, day: 6),
+new DateOnly(year: 1954, month: 10, day: 7),
 
-new DateOnly(year: 2015, month: 10, day: 2),
+new DateOnly(year: 1946, month: 10, day: 7),
 
-new DateOnly(year: 1935, month: 10, day: 18),
+new DateOnly(year: 2008, month: 10, day: 4),
 
 },
-    ModelInner = new DateOnlydateListD12MI
+    ModelInner = new DateOnlydateListD1E2MI
 {
-    Id = 16,
+    Id = 28,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1932, month: 10, day: 6),
+new DateOnly(year: 1985, month: 10, day: 5),
 
-new DateOnly(year: 1963, month: 10, day: 12),
+new DateOnly(year: 1975, month: 10, day: 6),
 
-new DateOnly(year: 1986, month: 10, day: 2),
+new DateOnly(year: 1943, month: 10, day: 12),
 
 },
     NullableValue = null,
 },
     NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
+new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1986, month: 10, day: 6),
+new DateOnly(year: 1918, month: 10, day: 15),
 
-new DateOnly(year: 2010, month: 10, day: 11),
+new DateOnly(year: 1963, month: 10, day: 2),
 
-new DateOnly(year: 1925, month: 10, day: 14),
-
-new DateOnly(year: 1949, month: 10, day: 12),
+new DateOnly(year: 1941, month: 10, day: 7),
 
 },
 },
             new DateOnlydateListD1E2M
 {
-    Id = 44,
+    Id = 39,
     Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
+new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1935, month: 10, day: 15),
+new DateOnly(year: 1918, month: 10, day: 15),
 
-new DateOnly(year: 2010, month: 10, day: 6),
+new DateOnly(year: 2004, month: 10, day: 15),
 
-new DateOnly(year: 2007, month: 10, day: 15),
-
-new DateOnly(year: 1970, month: 10, day: 16),
+new DateOnly(year: 1965, month: 10, day: 7),
 
 },
     ModelInner = null,
     NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
+new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1922, month: 10, day: 16),
+new DateOnly(year: 1998, month: 10, day: 7),
 
-new DateOnly(year: 1921, month: 10, day: 16),
+new DateOnly(year: 2016, month: 10, day: 1),
 
-new DateOnly(year: 1925, month: 10, day: 11),
-
-new DateOnly(year: 2014, month: 10, day: 1),
+new DateOnly(year: 2005, month: 10, day: 4),
 
 },
 },
             new DateOnlydateListD1E2M
 {
-    Id = 53,
+    Id = 42,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1947, month: 10, day: 4),
+new DateOnly(year: 1976, month: 10, day: 17),
 
-new DateOnly(year: 1977, month: 10, day: 17),
+new DateOnly(year: 1982, month: 10, day: 18),
 
-new DateOnly(year: 1975, month: 10, day: 15),
+new DateOnly(year: 1948, month: 10, day: 5),
 
 },
-    ModelInner = new DateOnlydateListD12MI
+    ModelInner = new DateOnlydateListD1E2MI
 {
-    Id = 20,
+    Id = 33,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(4)
 {
+new DateOnly(year: 1974, month: 10, day: 13),
+
+new DateOnly(year: 1992, month: 10, day: 17),
+
+new DateOnly(year: 1953, month: 10, day: 13),
+
+new DateOnly(year: 1957, month: 10, day: 19),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1938, month: 10, day: 17),
+
+new DateOnly(year: 1966, month: 10, day: 11),
+
+new DateOnly(year: 2011, month: 10, day: 7),
+
+new DateOnly(year: 2016, month: 10, day: 2),
+
+},
+},
+    NullableValue = null,
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 49,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1983, month: 10, day: 15),
+
+new DateOnly(year: 1968, month: 10, day: 3),
+
+new DateOnly(year: 1994, month: 10, day: 19),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 50,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1984, month: 10, day: 10),
+
+new DateOnly(year: 1990, month: 10, day: 17),
+
+new DateOnly(year: 1999, month: 10, day: 5),
+
+new DateOnly(year: 1962, month: 10, day: 1),
+
+},
+    ModelInner = new DateOnlydateListD1E2MI
+{
+    Id = 42,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1993, month: 10, day: 13),
+
+new DateOnly(year: 1930, month: 10, day: 14),
+
+new DateOnly(year: 1918, month: 10, day: 15),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1997, month: 10, day: 15),
+
 new DateOnly(year: 1987, month: 10, day: 1),
 
-new DateOnly(year: 2018, month: 10, day: 15),
-
-new DateOnly(year: 1941, month: 10, day: 13),
-
-new DateOnly(year: 1937, month: 10, day: 15),
+new DateOnly(year: 1932, month: 10, day: 18),
 
 },
-    NullableValue = null,
-},
-    NullableValue = null,
 },
             new DateOnlydateListD1E2M
 {
-    Id = 55,
+    Id = 58,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(4)
 {
-new DateOnly(year: 1988, month: 10, day: 11),
+new DateOnly(year: 1924, month: 10, day: 2),
 
-new DateOnly(year: 1926, month: 10, day: 15),
+new DateOnly(year: 1956, month: 10, day: 13),
 
-new DateOnly(year: 1921, month: 10, day: 17),
+new DateOnly(year: 1963, month: 10, day: 17),
 
-new DateOnly(year: 1984, month: 10, day: 17),
+new DateOnly(year: 2009, month: 10, day: 8),
 
 },
     ModelInner = null,
@@ -306,56 +478,60 @@ new DateOnly(year: 1984, month: 10, day: 17),
 },
             new DateOnlydateListD1E2M
 {
-    Id = 61,
+    Id = 65,
     Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
+new System.Collections.Generic.List<System.DateOnly>(4)
 {
-new DateOnly(year: 1988, month: 10, day: 1),
+new DateOnly(year: 2009, month: 10, day: 15),
 
-new DateOnly(year: 2017, month: 10, day: 1),
+new DateOnly(year: 1929, month: 10, day: 13),
+
+new DateOnly(year: 1982, month: 10, day: 6),
+
+new DateOnly(year: 1923, month: 10, day: 18),
+
+},
+    ModelInner = new DateOnlydateListD1E2MI
+{
+    Id = 48,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1969, month: 10, day: 15),
+
+new DateOnly(year: 1988, month: 10, day: 9),
+
+new DateOnly(year: 1982, month: 10, day: 14),
+
+new DateOnly(year: 2003, month: 10, day: 2),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1991, month: 10, day: 10),
+
+new DateOnly(year: 1971, month: 10, day: 8),
+
+new DateOnly(year: 1942, month: 10, day: 11),
 
 new DateOnly(year: 1948, month: 10, day: 11),
 
 },
-    ModelInner = new DateOnlydateListD12MI
-{
-    Id = 23,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1950, month: 10, day: 8),
-
-new DateOnly(year: 2001, month: 10, day: 19),
-
-new DateOnly(year: 1966, month: 10, day: 16),
-
-new DateOnly(year: 1919, month: 10, day: 17),
-
 },
     NullableValue = null,
 },
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1941, month: 10, day: 19),
-
-new DateOnly(year: 2004, month: 10, day: 3),
-
-new DateOnly(year: 1925, month: 10, day: 1),
-
-},
-},
             new DateOnlydateListD1E2M
 {
-    Id = 69,
+    Id = 68,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1970, month: 10, day: 12),
+new DateOnly(year: 1970, month: 10, day: 7),
 
-new DateOnly(year: 1952, month: 10, day: 11),
+new DateOnly(year: 1964, month: 10, day: 13),
 
-new DateOnly(year: 2019, month: 10, day: 15),
+new DateOnly(year: 1923, month: 10, day: 1),
 
 },
     ModelInner = null,
@@ -363,132 +539,130 @@ new DateOnly(year: 2019, month: 10, day: 15),
 },
             new DateOnlydateListD1E2M
 {
-    Id = 78,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 2012, month: 10, day: 5),
-
-new DateOnly(year: 1966, month: 10, day: 12),
-
-new DateOnly(year: 2001, month: 10, day: 11),
-
-},
-    ModelInner = new DateOnlydateListD12MI
-{
-    Id = 25,
+    Id = 77,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(4)
 {
-new DateOnly(year: 1923, month: 10, day: 7),
-
-new DateOnly(year: 2003, month: 10, day: 10),
-
-new DateOnly(year: 1990, month: 10, day: 14),
-
-new DateOnly(year: 1929, month: 10, day: 18),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1965, month: 10, day: 11),
-
-new DateOnly(year: 1960, month: 10, day: 8),
-
-new DateOnly(year: 2013, month: 10, day: 13),
-
-new DateOnly(year: 1967, month: 10, day: 19),
-
-},
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 80,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1963, month: 10, day: 12),
-
-new DateOnly(year: 1936, month: 10, day: 14),
-
-new DateOnly(year: 1999, month: 10, day: 15),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1966, month: 10, day: 8),
-
-new DateOnly(year: 1936, month: 10, day: 12),
-
-new DateOnly(year: 1962, month: 10, day: 6),
-
-new DateOnly(year: 1947, month: 10, day: 3),
-
-},
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 85,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1987, month: 10, day: 16),
-
-new DateOnly(year: 1947, month: 10, day: 1),
-
-new DateOnly(year: 1994, month: 10, day: 8),
-
-new DateOnly(year: 1994, month: 10, day: 6),
-
-},
-    ModelInner = new DateOnlydateListD12MI
-{
-    Id = 32,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1976, month: 10, day: 5),
-
-new DateOnly(year: 1931, month: 10, day: 13),
-
-new DateOnly(year: 1973, month: 10, day: 7),
-
-new DateOnly(year: 1988, month: 10, day: 9),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1976, month: 10, day: 3),
-
-new DateOnly(year: 1933, month: 10, day: 16),
-
-new DateOnly(year: 2011, month: 10, day: 16),
-
-new DateOnly(year: 1955, month: 10, day: 12),
-
-},
-},
-    NullableValue = null,
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 92,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1939, month: 10, day: 5),
-
-new DateOnly(year: 1965, month: 10, day: 3),
-
-new DateOnly(year: 1929, month: 10, day: 7),
-
 new DateOnly(year: 1983, month: 10, day: 6),
+
+new DateOnly(year: 1919, month: 10, day: 1),
+
+new DateOnly(year: 2018, month: 10, day: 19),
+
+new DateOnly(year: 1951, month: 10, day: 4),
+
+},
+    ModelInner = new DateOnlydateListD1E2MI
+{
+    Id = 53,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 2016, month: 10, day: 18),
+
+new DateOnly(year: 2015, month: 10, day: 15),
+
+new DateOnly(year: 2011, month: 10, day: 10),
+
+new DateOnly(year: 2011, month: 10, day: 5),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1946, month: 10, day: 4),
+
+new DateOnly(year: 2008, month: 10, day: 16),
+
+new DateOnly(year: 1986, month: 10, day: 5),
+
+new DateOnly(year: 1973, month: 10, day: 8),
+
+},
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 83,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 2016, month: 10, day: 17),
+
+new DateOnly(year: 1942, month: 10, day: 13),
+
+new DateOnly(year: 1920, month: 10, day: 16),
+
+new DateOnly(year: 1994, month: 10, day: 12),
+
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 84,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 2005, month: 10, day: 14),
+
+new DateOnly(year: 1918, month: 10, day: 16),
+
+new DateOnly(year: 1957, month: 10, day: 12),
+
+new DateOnly(year: 2017, month: 10, day: 19),
+
+},
+    ModelInner = new DateOnlydateListD1E2MI
+{
+    Id = 59,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1931, month: 10, day: 3),
+
+new DateOnly(year: 1927, month: 10, day: 6),
+
+new DateOnly(year: 1964, month: 10, day: 3),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 2012, month: 10, day: 4),
+
+new DateOnly(year: 1962, month: 10, day: 17),
+
+new DateOnly(year: 2010, month: 10, day: 6),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1921, month: 10, day: 11),
+
+new DateOnly(year: 1984, month: 10, day: 18),
+
+new DateOnly(year: 1987, month: 10, day: 13),
+
+new DateOnly(year: 1950, month: 10, day: 9),
+
+},
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 91,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1921, month: 10, day: 10),
+
+new DateOnly(year: 1931, month: 10, day: 12),
+
+new DateOnly(year: 1974, month: 10, day: 11),
 
 },
     ModelInner = null,
@@ -498,122 +672,325 @@ new DateOnly(year: 1983, month: 10, day: 6),
 {
     Id = 100,
     Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
+new System.Collections.Generic.List<System.DateOnly>(4)
 {
-new DateOnly(year: 1967, month: 10, day: 3),
+new DateOnly(year: 1969, month: 10, day: 15),
 
-new DateOnly(year: 1926, month: 10, day: 19),
+new DateOnly(year: 1975, month: 10, day: 7),
 
-new DateOnly(year: 1989, month: 10, day: 4),
+new DateOnly(year: 1941, month: 10, day: 8),
+
+new DateOnly(year: 1937, month: 10, day: 10),
 
 },
-    ModelInner = new DateOnlydateListD12MI
+    ModelInner = new DateOnlydateListD1E2MI
 {
-    Id = 34,
+    Id = 66,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(4)
 {
-new DateOnly(year: 1963, month: 10, day: 4),
+new DateOnly(year: 1983, month: 10, day: 12),
 
-new DateOnly(year: 1980, month: 10, day: 2),
+new DateOnly(year: 1984, month: 10, day: 3),
 
-new DateOnly(year: 1937, month: 10, day: 1),
+new DateOnly(year: 1925, month: 10, day: 2),
 
-new DateOnly(year: 1989, month: 10, day: 6),
+new DateOnly(year: 1966, month: 10, day: 9),
 
-},
-    NullableValue = null,
 },
     NullableValue = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1933, month: 10, day: 14),
+new DateOnly(year: 1998, month: 10, day: 15),
 
-new DateOnly(year: 1989, month: 10, day: 19),
+new DateOnly(year: 1957, month: 10, day: 4),
 
-new DateOnly(year: 1997, month: 10, day: 16),
+new DateOnly(year: 1927, month: 10, day: 12),
 
 },
+},
+    NullableValue = null,
 },
             new DateOnlydateListD1E2M
 {
-    Id = 108,
+    Id = 103,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 2004, month: 10, day: 12),
+new DateOnly(year: 1981, month: 10, day: 9),
 
-new DateOnly(year: 1923, month: 10, day: 11),
+new DateOnly(year: 1930, month: 10, day: 6),
 
-new DateOnly(year: 1959, month: 10, day: 2),
+new DateOnly(year: 1927, month: 10, day: 18),
 
 },
     ModelInner = null,
     NullableValue = 
 new System.Collections.Generic.List<System.DateOnly>(4)
 {
-new DateOnly(year: 1976, month: 10, day: 17),
+new DateOnly(year: 2012, month: 10, day: 16),
 
-new DateOnly(year: 1987, month: 10, day: 10),
+new DateOnly(year: 1956, month: 10, day: 2),
 
-new DateOnly(year: 2002, month: 10, day: 1),
+new DateOnly(year: 1924, month: 10, day: 11),
 
-new DateOnly(year: 1933, month: 10, day: 3),
+new DateOnly(year: 2018, month: 10, day: 17),
+
+},
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 105,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1976, month: 10, day: 18),
+
+new DateOnly(year: 1956, month: 10, day: 5),
+
+new DateOnly(year: 2018, month: 10, day: 14),
+
+},
+    ModelInner = new DateOnlydateListD1E2MI
+{
+    Id = 67,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1948, month: 10, day: 9),
+
+new DateOnly(year: 1993, month: 10, day: 10),
+
+new DateOnly(year: 1923, month: 10, day: 13),
+
+new DateOnly(year: 1970, month: 10, day: 7),
+
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1988, month: 10, day: 16),
+
+new DateOnly(year: 1970, month: 10, day: 5),
+
+new DateOnly(year: 1929, month: 10, day: 10),
 
 },
 },
             new DateOnlydateListD1E2M
 {
-    Id = 112,
+    Id = 106,
     Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
+new System.Collections.Generic.List<System.DateOnly>(4)
 {
-new DateOnly(year: 2001, month: 10, day: 15),
+new DateOnly(year: 1991, month: 10, day: 17),
 
-new DateOnly(year: 1958, month: 10, day: 3),
+new DateOnly(year: 2009, month: 10, day: 15),
 
-new DateOnly(year: 1975, month: 10, day: 13),
+new DateOnly(year: 1963, month: 10, day: 3),
+
+new DateOnly(year: 1984, month: 10, day: 15),
 
 },
-    ModelInner = new DateOnlydateListD12MI
-{
-    Id = 40,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1919, month: 10, day: 8),
-
-new DateOnly(year: 1965, month: 10, day: 2),
-
-new DateOnly(year: 1989, month: 10, day: 10),
-
-},
-    NullableValue = null,
-},
+    ModelInner = null,
     NullableValue = null,
 },
             new DateOnlydateListD1E2M
 {
-    Id = 121,
+    Id = 113,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1993, month: 10, day: 3),
+new DateOnly(year: 1992, month: 10, day: 16),
 
-new DateOnly(year: 1924, month: 10, day: 13),
+new DateOnly(year: 1959, month: 10, day: 17),
 
-new DateOnly(year: 1934, month: 10, day: 7),
+new DateOnly(year: 1944, month: 10, day: 3),
+
+},
+    ModelInner = new DateOnlydateListD1E2MI
+{
+    Id = 72,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1962, month: 10, day: 6),
+
+new DateOnly(year: 1990, month: 10, day: 7),
+
+new DateOnly(year: 1962, month: 10, day: 17),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1948, month: 10, day: 3),
+
+new DateOnly(year: 1939, month: 10, day: 5),
+
+new DateOnly(year: 1998, month: 10, day: 13),
+
+new DateOnly(year: 2015, month: 10, day: 3),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 2011, month: 10, day: 19),
+
+new DateOnly(year: 1984, month: 10, day: 5),
+
+new DateOnly(year: 1919, month: 10, day: 10),
+
+new DateOnly(year: 1974, month: 10, day: 1),
+
+},
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 114,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1998, month: 10, day: 3),
+
+new DateOnly(year: 1971, month: 10, day: 18),
+
+new DateOnly(year: 1937, month: 10, day: 15),
+
+new DateOnly(year: 2007, month: 10, day: 14),
 
 },
     ModelInner = null,
     NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1949, month: 10, day: 9),
+
+new DateOnly(year: 1931, month: 10, day: 12),
+
+new DateOnly(year: 2018, month: 10, day: 16),
+
+new DateOnly(year: 1931, month: 10, day: 7),
+
+},
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 117,
+    Value = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1981, month: 10, day: 15),
+new DateOnly(year: 1946, month: 10, day: 17),
 
-new DateOnly(year: 1995, month: 10, day: 9),
+new DateOnly(year: 1957, month: 10, day: 7),
 
-new DateOnly(year: 2011, month: 10, day: 13),
+new DateOnly(year: 2008, month: 10, day: 1),
+
+},
+    ModelInner = new DateOnlydateListD1E2MI
+{
+    Id = 76,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1917, month: 10, day: 2),
+
+new DateOnly(year: 1966, month: 10, day: 1),
+
+new DateOnly(year: 1946, month: 10, day: 14),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1922, month: 10, day: 16),
+
+new DateOnly(year: 1931, month: 10, day: 9),
+
+new DateOnly(year: 1959, month: 10, day: 9),
+
+},
+},
+    NullableValue = null,
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 120,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1958, month: 10, day: 18),
+
+new DateOnly(year: 1979, month: 10, day: 3),
+
+new DateOnly(year: 2014, month: 10, day: 5),
+
+},
+    ModelInner = null,
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1928, month: 10, day: 1),
+
+new DateOnly(year: 2006, month: 10, day: 2),
+
+new DateOnly(year: 2006, month: 10, day: 5),
+
+new DateOnly(year: 1982, month: 10, day: 8),
+
+},
+},
+            new DateOnlydateListD1E2M
+{
+    Id = 128,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1928, month: 10, day: 5),
+
+new DateOnly(year: 1978, month: 10, day: 3),
+
+new DateOnly(year: 1986, month: 10, day: 11),
+
+},
+    ModelInner = new DateOnlydateListD1E2MI
+{
+    Id = 85,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1974, month: 10, day: 16),
+
+new DateOnly(year: 1981, month: 10, day: 5),
+
+new DateOnly(year: 1994, month: 10, day: 9),
+
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(4)
+{
+new DateOnly(year: 1986, month: 10, day: 10),
+
+new DateOnly(year: 1957, month: 10, day: 15),
+
+new DateOnly(year: 1924, month: 10, day: 7),
+
+new DateOnly(year: 1945, month: 10, day: 4),
+
+},
+},
+    NullableValue = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 2015, month: 10, day: 10),
+
+new DateOnly(year: 1947, month: 10, day: 4),
+
+new DateOnly(year: 2010, month: 10, day: 1),
 
 },
 },
@@ -623,56 +1000,68 @@ new DateOnly(year: 2011, month: 10, day: 13),
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(4)
 {
-new DateOnly(year: 1978, month: 10, day: 15),
+new DateOnly(year: 1933, month: 10, day: 18),
 
-new DateOnly(year: 1990, month: 10, day: 6),
+new DateOnly(year: 2017, month: 10, day: 14),
 
-new DateOnly(year: 1918, month: 10, day: 3),
+new DateOnly(year: 1966, month: 10, day: 13),
 
-new DateOnly(year: 1956, month: 10, day: 3),
+new DateOnly(year: 1961, month: 10, day: 18),
 
 },
-    ModelInner = new DateOnlydateListD12MI
+    ModelInner = null,
+    NullableValue = null,
+},
+            new DateOnlydateListD1E2M
 {
-    Id = 47,
+    Id = 138,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1998, month: 10, day: 10),
+new DateOnly(year: 2003, month: 10, day: 4),
 
-new DateOnly(year: 1975, month: 10, day: 2),
+new DateOnly(year: 1959, month: 10, day: 13),
 
-new DateOnly(year: 1991, month: 10, day: 9),
+new DateOnly(year: 1988, month: 10, day: 12),
 
 },
-    NullableValue = null,
+    ModelInner = new DateOnlydateListD1E2MI
+{
+    Id = 90,
+    Value = 
+new System.Collections.Generic.List<System.DateOnly>(3)
+{
+new DateOnly(year: 1920, month: 10, day: 7),
+
+new DateOnly(year: 1973, month: 10, day: 2),
+
+new DateOnly(year: 1985, month: 10, day: 11),
+
 },
     NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
+new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1996, month: 10, day: 1),
+new DateOnly(year: 1980, month: 10, day: 19),
 
-new DateOnly(year: 2007, month: 10, day: 14),
+new DateOnly(year: 1918, month: 10, day: 5),
 
-new DateOnly(year: 2019, month: 10, day: 3),
-
-new DateOnly(year: 1993, month: 10, day: 14),
+new DateOnly(year: 1938, month: 10, day: 18),
 
 },
+},
+    NullableValue = null,
 },
             new DateOnlydateListD1E2M
 {
-    Id = 139,
+    Id = 142,
     Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
+new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 2003, month: 10, day: 10),
+new DateOnly(year: 1959, month: 10, day: 18),
 
-new DateOnly(year: 1974, month: 10, day: 18),
+new DateOnly(year: 1978, month: 10, day: 12),
 
-new DateOnly(year: 1975, month: 10, day: 9),
-
-new DateOnly(year: 1922, month: 10, day: 19),
+new DateOnly(year: 1955, month: 10, day: 13),
 
 },
     ModelInner = null,
@@ -680,30 +1069,30 @@ new DateOnly(year: 1922, month: 10, day: 19),
 },
             new DateOnlydateListD1E2M
 {
-    Id = 147,
+    Id = 146,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(4)
 {
-new DateOnly(year: 1942, month: 10, day: 10),
+new DateOnly(year: 1955, month: 10, day: 15),
 
-new DateOnly(year: 1997, month: 10, day: 2),
+new DateOnly(year: 1998, month: 10, day: 8),
 
-new DateOnly(year: 1969, month: 10, day: 5),
+new DateOnly(year: 1996, month: 10, day: 5),
 
-new DateOnly(year: 1999, month: 10, day: 12),
+new DateOnly(year: 1976, month: 10, day: 15),
 
 },
-    ModelInner = new DateOnlydateListD12MI
+    ModelInner = new DateOnlydateListD1E2MI
 {
-    Id = 54,
+    Id = 95,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 1944, month: 10, day: 1),
+new DateOnly(year: 2005, month: 10, day: 17),
 
-new DateOnly(year: 1948, month: 10, day: 2),
+new DateOnly(year: 1962, month: 10, day: 16),
 
-new DateOnly(year: 2011, month: 10, day: 1),
+new DateOnly(year: 1951, month: 10, day: 7),
 
 },
     NullableValue = null,
@@ -712,424 +1101,19 @@ new DateOnly(year: 2011, month: 10, day: 1),
 },
             new DateOnlydateListD1E2M
 {
-    Id = 156,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 2010, month: 10, day: 14),
-
-new DateOnly(year: 2004, month: 10, day: 17),
-
-new DateOnly(year: 2011, month: 10, day: 11),
-
-new DateOnly(year: 1921, month: 10, day: 12),
-
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 165,
+    Id = 151,
     Value = 
 new System.Collections.Generic.List<System.DateOnly>(3)
 {
-new DateOnly(year: 2000, month: 10, day: 16),
-
-new DateOnly(year: 1919, month: 10, day: 19),
-
 new DateOnly(year: 1924, month: 10, day: 11),
 
-},
-    ModelInner = new DateOnlydateListD12MI
-{
-    Id = 63,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1971, month: 10, day: 7),
+new DateOnly(year: 1993, month: 10, day: 2),
 
-new DateOnly(year: 1921, month: 10, day: 1),
-
-new DateOnly(year: 1994, month: 10, day: 12),
-
-new DateOnly(year: 1969, month: 10, day: 4),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1957, month: 10, day: 16),
-
-new DateOnly(year: 1987, month: 10, day: 1),
-
-new DateOnly(year: 1929, month: 10, day: 13),
-
-},
-},
-    NullableValue = null,
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 167,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1918, month: 10, day: 11),
-
-new DateOnly(year: 2004, month: 10, day: 11),
-
-new DateOnly(year: 1960, month: 10, day: 11),
-
-new DateOnly(year: 1958, month: 10, day: 16),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 2000, month: 10, day: 4),
-
-new DateOnly(year: 1973, month: 10, day: 7),
-
-new DateOnly(year: 1967, month: 10, day: 8),
-
-},
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 172,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1966, month: 10, day: 14),
-
-new DateOnly(year: 1952, month: 10, day: 7),
-
-new DateOnly(year: 1964, month: 10, day: 8),
-
-},
-    ModelInner = new DateOnlydateListD12MI
-{
-    Id = 71,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1963, month: 10, day: 10),
-
-new DateOnly(year: 1972, month: 10, day: 1),
-
-new DateOnly(year: 1969, month: 10, day: 17),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1998, month: 10, day: 7),
-
-new DateOnly(year: 2004, month: 10, day: 9),
-
-new DateOnly(year: 1918, month: 10, day: 9),
-
-},
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1981, month: 10, day: 8),
-
-new DateOnly(year: 1945, month: 10, day: 19),
-
-new DateOnly(year: 1961, month: 10, day: 13),
-
-new DateOnly(year: 1955, month: 10, day: 4),
-
-},
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 176,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1962, month: 10, day: 6),
-
-new DateOnly(year: 1931, month: 10, day: 13),
-
-new DateOnly(year: 1983, month: 10, day: 10),
-
-new DateOnly(year: 1984, month: 10, day: 15),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1930, month: 10, day: 14),
-
-new DateOnly(year: 1955, month: 10, day: 16),
-
-new DateOnly(year: 1936, month: 10, day: 1),
-
-new DateOnly(year: 1956, month: 10, day: 12),
-
-},
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 177,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1944, month: 10, day: 2),
-
-new DateOnly(year: 1942, month: 10, day: 7),
-
-new DateOnly(year: 1957, month: 10, day: 5),
-
-new DateOnly(year: 2007, month: 10, day: 17),
-
-},
-    ModelInner = new DateOnlydateListD12MI
-{
-    Id = 78,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1924, month: 10, day: 15),
-
-new DateOnly(year: 1957, month: 10, day: 12),
-
-new DateOnly(year: 1962, month: 10, day: 11),
-
-new DateOnly(year: 1922, month: 10, day: 4),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1980, month: 10, day: 18),
-
-new DateOnly(year: 1944, month: 10, day: 6),
-
-new DateOnly(year: 2016, month: 10, day: 7),
-
-},
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 180,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1980, month: 10, day: 1),
-
-new DateOnly(year: 1930, month: 10, day: 12),
-
-new DateOnly(year: 1962, month: 10, day: 14),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 2019, month: 10, day: 12),
-
-new DateOnly(year: 1987, month: 10, day: 3),
-
-new DateOnly(year: 1974, month: 10, day: 14),
-
-new DateOnly(year: 2012, month: 10, day: 18),
-
-},
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 183,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1931, month: 10, day: 8),
-
-new DateOnly(year: 2005, month: 10, day: 8),
-
-new DateOnly(year: 1945, month: 10, day: 18),
-
-new DateOnly(year: 1946, month: 10, day: 15),
-
-},
-    ModelInner = new DateOnlydateListD12MI
-{
-    Id = 81,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1960, month: 10, day: 9),
-
-new DateOnly(year: 1995, month: 10, day: 9),
-
-new DateOnly(year: 1965, month: 10, day: 16),
-
-new DateOnly(year: 1956, month: 10, day: 17),
-
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 190,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1964, month: 10, day: 19),
-
-new DateOnly(year: 1992, month: 10, day: 6),
-
-new DateOnly(year: 1987, month: 10, day: 10),
+new DateOnly(year: 2006, month: 10, day: 6),
 
 },
     ModelInner = null,
     NullableValue = null,
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 196,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 2003, month: 10, day: 12),
-
-new DateOnly(year: 2015, month: 10, day: 12),
-
-new DateOnly(year: 1951, month: 10, day: 2),
-
-},
-    ModelInner = new DateOnlydateListD12MI
-{
-    Id = 84,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1964, month: 10, day: 8),
-
-new DateOnly(year: 1967, month: 10, day: 13),
-
-new DateOnly(year: 1930, month: 10, day: 3),
-
-new DateOnly(year: 1940, month: 10, day: 1),
-
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1961, month: 10, day: 8),
-
-new DateOnly(year: 1942, month: 10, day: 7),
-
-new DateOnly(year: 2000, month: 10, day: 12),
-
-new DateOnly(year: 1996, month: 10, day: 11),
-
-},
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 199,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1963, month: 10, day: 6),
-
-new DateOnly(year: 1990, month: 10, day: 6),
-
-new DateOnly(year: 1920, month: 10, day: 9),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 2007, month: 10, day: 6),
-
-new DateOnly(year: 1917, month: 10, day: 7),
-
-new DateOnly(year: 2009, month: 10, day: 17),
-
-},
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 208,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1997, month: 10, day: 14),
-
-new DateOnly(year: 1968, month: 10, day: 3),
-
-new DateOnly(year: 1924, month: 10, day: 6),
-
-},
-    ModelInner = new DateOnlydateListD12MI
-{
-    Id = 87,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 1987, month: 10, day: 15),
-
-new DateOnly(year: 1970, month: 10, day: 13),
-
-new DateOnly(year: 1990, month: 10, day: 5),
-
-},
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 2011, month: 10, day: 5),
-
-new DateOnly(year: 1956, month: 10, day: 11),
-
-new DateOnly(year: 1946, month: 10, day: 11),
-
-new DateOnly(year: 1947, month: 10, day: 15),
-
-},
-},
-    NullableValue = null,
-},
-            new DateOnlydateListD1E2M
-{
-    Id = 217,
-    Value = 
-new System.Collections.Generic.List<System.DateOnly>(3)
-{
-new DateOnly(year: 2007, month: 10, day: 10),
-
-new DateOnly(year: 1958, month: 10, day: 8),
-
-new DateOnly(year: 1964, month: 10, day: 11),
-
-},
-    ModelInner = null,
-    NullableValue = 
-new System.Collections.Generic.List<System.DateOnly>(4)
-{
-new DateOnly(year: 1974, month: 10, day: 14),
-
-new DateOnly(year: 1951, month: 10, day: 13),
-
-new DateOnly(year: 1931, month: 10, day: 9),
-
-new DateOnly(year: 1946, month: 10, day: 10),
-
-},
 },
         };
 
@@ -1139,7 +1123,7 @@ new DateOnly(year: 1946, month: 10, day: 10),
 
 [Gedaq.Npgsql.Attributes.Query(
             query: @"
-INSERT INTO public.dateonlydatelistd12mi(
+INSERT INTO public.dateonlydatelistd1e2mi(
 	id,
     value,
     nullablevalue
@@ -1179,7 +1163,7 @@ VALUES (
 
 [Gedaq.Npgsql.Attributes.Query(
             query: @"
-INSERT INTO public.dateonlydatelistd12mi(
+INSERT INTO public.dateonlydatelistd1e2mi(
 	id,
     value,
     nullablevalue
@@ -1196,7 +1180,7 @@ RETURNING
 ;
 ",
             methodName:"InsertModelInnerReturning",
-            queryMapTypes: [typeof(DateOnlydateListD12MI)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MI)],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             queryType: QueryType.Scalar,
@@ -1327,7 +1311,7 @@ INSERT INTO public.dateonlydatelistd1e2m(
 	id,
     value,
     nullablevalue,
-    dateonlydatelistd12mi_id
+    dateonlydatelistd1e2mi_id
 )
 VALUES (
     $1, 
@@ -1362,7 +1346,7 @@ VALUES (
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof(System.Int32?), 
                 position: 4, 
-                methodParametrName: "dateonlydatelistd12mi_id", 
+                methodParametrName: "dateonlydatelistd1e2mi_id", 
                 dbType: (NpgsqlTypes.NpgsqlDbType)(9))]
         public void InsertModelConfig()
         {
@@ -1402,7 +1386,7 @@ INSERT INTO public.dateonlydatelistd1e2m(
 	id,
     value,
     nullablevalue,
-    dateonlydatelistd12mi_id
+    dateonlydatelistd1e2mi_id
 )
 VALUES (
     $1, 
@@ -1415,7 +1399,7 @@ RETURNING
     value,
 ~StartInner::ModelInner:Id~
 ~Reinterpret::Id~
-    dateonlydatelistd12mi_id,
+    dateonlydatelistd1e2mi_id,
 ~EndInner::ModelInner~
     id
 ;
@@ -1439,7 +1423,7 @@ INSERT INTO public.dateonlydatelistd1e2m(
 	id,
     value,
     nullablevalue,
-    dateonlydatelistd12mi_id
+    dateonlydatelistd1e2mi_id
 )
 VALUES (
     $1, 
@@ -1452,7 +1436,7 @@ RETURNING
     value,
 ~StartInner::ModelInner:Id~
 ~Reinterpret::Id~
-    dateonlydatelistd12mi_id,
+    dateonlydatelistd1e2mi_id,
 ~EndInner::ModelInner~
     id
 ;
@@ -1483,7 +1467,7 @@ RETURNING
             Gedaq.Npgsql.Attributes.Parametr(
                 parametrType: typeof(System.Int32?), 
                 position: 4, 
-                methodParametrName: "dateonlydatelistd12mi_id", 
+                methodParametrName: "dateonlydatelistd1e2mi_id", 
                 dbType: (NpgsqlTypes.NpgsqlDbType)(9))]
         public void InsertModelReturningConfig()
         {
@@ -1779,7 +1763,7 @@ SELECT
 ~EndInner::ModelInner~
     m.nullablevalue
 FROM public.dateonlydatelistd1e2m m
-LEFT JOIN public.dateonlydatelistd12mi mi ON mi.id = m.dateonlydatelistd12mi_id
+LEFT JOIN public.dateonlydatelistd1e2mi mi ON mi.id = m.dateonlydatelistd1e2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -2005,7 +1989,7 @@ SELECT
 ~EndInner::ModelInner~
     m.nullablevalue
 FROM public.dateonlydatelistd1e2m m
-LEFT JOIN public.dateonlydatelistd12mi mi ON mi.id = m.dateonlydatelistd12mi_id
+LEFT JOIN public.dateonlydatelistd1e2mi mi ON mi.id = m.dateonlydatelistd1e2mi_id
 WHERE 
     m.id > $1
 ORDER BY
@@ -2151,12 +2135,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 78;
+                parametr1.Value = 120;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 172;
+                parametr2.Value = 11;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2192,74 +2176,88 @@ ORDER BY
                 var secondItems1 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems2 = new List<FlatDateOnlydateListD1E2M>();
                 await ((IDateOnlyListdateListD1)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(23));
-                Assert.That(firstItems2, Has.Count.EqualTo(23));
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[12], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[12], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[10],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[11],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[12],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[13],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[14],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[15],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[16],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[17],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[18],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[18],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[19],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[19],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[20],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[20],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[21],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[21],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[22],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[22],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(9));
-                Assert.That(secondItems2, Has.Count.EqualTo(9));
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[5],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[6],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[7],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[8],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(6));
+                Assert.That(firstItems2, Has.Count.EqualTo(6));
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(33));
+                Assert.That(secondItems2, Has.Count.EqualTo(33));
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[2], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[2], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[3], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[3], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[4], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[4], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[5], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[5], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[6], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[6], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[7], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[5],_testData[7], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[8], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[6],_testData[8], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[9], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[7],_testData[9], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[8],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[9],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[9],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[10],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[10],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[11],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[11],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[12],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[12],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[13],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[13],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[14],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[14],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[15],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[15],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[16],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[16],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[17],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[17],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[18],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[18],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[19],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[19],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[20],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[20],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[21],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[21],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[22],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[22],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[23],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[23],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[24],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[24],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[25],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[25],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[26],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[26],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[27],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[27],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[28],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[28],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[29],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[29],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[30],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[30],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[31],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[31],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[32],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[32],_testData[34], false);
             }
         }
 
@@ -2270,12 +2268,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 80;
+                parametr1.Value = 13;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 37;
+                parametr2.Value = 68;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2307,82 +2305,89 @@ ORDER BY
                 var firstItems2 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems1 = new List<FlatDateOnlydateListD1E2M>();
                 await ((IDateOnlyListdateListD1)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(22));
-                Assert.That(firstItems2, Has.Count.EqualTo(22));
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[10],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[11],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[12],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[13],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[14],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[15],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[16],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[17],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[18],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[18],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[19],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[19],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[20],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[20],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[21],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[21],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(29));
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[6], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[7], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[8], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[9], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[10], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[11], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[12], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[9],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[10],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[11],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[12],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[13],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[14],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[15],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[16],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[17],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[18],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[19],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[20],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[21],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[22],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[23],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[24],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[25],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[26],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[27],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[28],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(31));
+                Assert.That(firstItems2, Has.Count.EqualTo(31));
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[4], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[4], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[5], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[5], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[6], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[6], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[7], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[7], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[8], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[8], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[9], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[9], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[10],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[11],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[12],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[13],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[14],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[15],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[16],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[17],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[18],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[18],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[19],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[19],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[20],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[20],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[21],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[21],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[22],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[22],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[23],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[23],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[24],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[24],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[25],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[25],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[26],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[26],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[27],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[27],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[28],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[28],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[29],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[29],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[30],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[30],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(18));
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[9],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[10],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[11],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[12],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[13],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[14],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[15],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[16],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[17],_testData[34], false);
             }
         }
 
@@ -2430,12 +2435,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 176;
+                parametr1.Value = 106;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 37;
+                parametr2.Value = 120;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2471,84 +2476,42 @@ ORDER BY
                 var secondItems1 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems2 = new List<FlatDateOnlydateListD1E2M>();
                  ((IDateOnlyListdateListD1)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(8));
-                Assert.That(firstItems2, Has.Count.EqualTo(8));
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(29));
-                Assert.That(secondItems2, Has.Count.EqualTo(29));
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[6], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[6], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[7], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[7], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[8], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[8], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[9], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[9], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[10], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[10], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[11], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[5],_testData[11], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[12], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[6],_testData[12], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[7],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[8],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[9],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[9],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[10],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[10],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[11],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[11],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[12],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[12],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[13],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[13],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[14],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[14],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[15],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[15],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[16],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[16],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[17],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[17],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[18],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[18],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[19],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[19],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[20],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[20],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[21],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[21],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[22],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[22],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[23],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[23],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[24],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[24],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[25],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[25],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[26],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[26],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[27],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[27],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[28],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[28],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(10));
+                Assert.That(firstItems2, Has.Count.EqualTo(10));
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(6));
+                Assert.That(secondItems2, Has.Count.EqualTo(6));
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[5],_testData[34], false);
             }
         }
 
@@ -2559,12 +2522,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 37;
+                parametr1.Value = 68;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 172;
+                parametr2.Value = 142;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2596,76 +2559,47 @@ ORDER BY
                 var firstItems2 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems1 = new List<FlatDateOnlydateListD1E2M>();
                  ((IDateOnlyListdateListD1)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(29));
-                Assert.That(firstItems2, Has.Count.EqualTo(29));
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[6], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[6], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[7], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[7], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[8], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[8], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[9], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[9], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[10], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[10], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[11], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[11], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[12], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[12], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[10],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[11],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[12],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[13],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[14],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[15],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[16],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[17],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[18],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[18],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[19],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[19],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[20],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[20],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[21],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[21],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[22],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[22],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[23],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[23],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[24],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[24],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[25],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[25],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[26],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[26],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[27],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[27],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[28],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[28],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(9));
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(18));
+                Assert.That(firstItems2, Has.Count.EqualTo(18));
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[10],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[11],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[12],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[13],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[14],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[15],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[16],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[17],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(2));
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[34], false);
             }
         }
 
@@ -2753,12 +2687,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 156;
+                parametr1.Value = 12;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 156;
+                parametr2.Value = 84;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2789,40 +2723,63 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
+                        Assert.That(models, Has.Count.EqualTo(32));
 
-                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[9],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[10],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[11],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[3], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[4], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[5], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[6], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[7], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[8], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[9], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[9],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[10],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[11],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[12],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[13],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[14],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[15],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[16],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[17],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[18],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[19],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[20],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[21],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[22],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[23],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[24],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[25],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[26],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[27],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[28],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[29],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[30],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[31],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
+                        Assert.That(models, Has.Count.EqualTo(15));
 
-                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[9],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[10],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[11],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[9],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[10],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[11],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[12],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[13],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[14],_testData[34], false);
                         continue;
                     }
                     
@@ -2838,12 +2795,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 92;
+                parametr1.Value = 83;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 92;
+                parametr2.Value = 58;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2875,27 +2832,23 @@ ORDER BY
                 var secondItems1 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems2 = new List<FlatDateOnlydateListD1E2M>();
                 await ((IDateOnlyListdateListD1)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(20));
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[18],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[19],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(16));
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[34], false);
                 Assert.That(secondItems1, Has.Count.EqualTo(20));
                 Assert.That(secondItems2, Has.Count.EqualTo(20));
                         FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[15], false);
@@ -2978,12 +2931,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 121;
+                parametr1.Value = 68;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 180;
+                parametr2.Value = 83;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -3014,6 +2967,32 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(18));
+
+                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[9],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[10],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[11],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[12],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[13],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[14],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[15],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[16],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[17],_testData[34], false);
+                        continue;
+                    }                    
+
+                    if(resultIndex == 2)
+                    {
+                        var models = batchResult;
                         Assert.That(models, Has.Count.EqualTo(16));
 
                         FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[19], false);
@@ -3033,20 +3012,6 @@ ORDER BY
                         FlatDateOnlydateListD1E2M.AssertModel(models[14],_testData[33], false);
                         FlatDateOnlydateListD1E2M.AssertModel(models[15],_testData[34], false);
                         continue;
-                    }                    
-
-                    if(resultIndex == 2)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
-
-                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[34], false);
-                        continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
@@ -3061,12 +3026,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 172;
+                parametr1.Value = 49;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 112;
+                parametr2.Value = 128;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -3098,52 +3063,41 @@ ORDER BY
                 var secondItems1 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems2 = new List<FlatDateOnlydateListD1E2M>();
                  ((IDateOnlyListdateListD1)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(9));
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(17));
-                Assert.That(secondItems2, Has.Count.EqualTo(17));
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[5],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[6],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[7],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[8],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[9],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[9],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[10],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[10],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[11],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[11],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[12],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[12],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[13],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[13],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[14],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[14],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[15],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[15],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[16],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[16],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(22));
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[18],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[19],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[20],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[21],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(5));
+                Assert.That(secondItems2, Has.Count.EqualTo(5));
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[34], false);
             }
         }
 
@@ -3161,7 +3115,7 @@ SELECT
 ~EndInner::ModelInner~
     m.nullablevalue
 FROM public.dateonlydatelistd1e2m m
-LEFT JOIN public.dateonlydatelistd12mi mi ON mi.id = m.dateonlydatelistd12mi_id
+LEFT JOIN public.dateonlydatelistd1e2mi mi ON mi.id = m.dateonlydatelistd1e2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -3223,12 +3177,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 100;
+                parametr1.Value = 39;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 78;
+                parametr2.Value = 142;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -3237,58 +3191,42 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(19));
+                        Assert.That(models, Has.Count.EqualTo(24));
 
-                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[16], false);
-                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[17], false);
-                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[18], false);
-                        DateOnlydateListD1E2M.AssertModel(models[3],_testData[19], false);
-                        DateOnlydateListD1E2M.AssertModel(models[4],_testData[20], false);
-                        DateOnlydateListD1E2M.AssertModel(models[5],_testData[21], false);
-                        DateOnlydateListD1E2M.AssertModel(models[6],_testData[22], false);
-                        DateOnlydateListD1E2M.AssertModel(models[7],_testData[23], false);
-                        DateOnlydateListD1E2M.AssertModel(models[8],_testData[24], false);
-                        DateOnlydateListD1E2M.AssertModel(models[9],_testData[25], false);
-                        DateOnlydateListD1E2M.AssertModel(models[10],_testData[26], false);
-                        DateOnlydateListD1E2M.AssertModel(models[11],_testData[27], false);
-                        DateOnlydateListD1E2M.AssertModel(models[12],_testData[28], false);
-                        DateOnlydateListD1E2M.AssertModel(models[13],_testData[29], false);
-                        DateOnlydateListD1E2M.AssertModel(models[14],_testData[30], false);
-                        DateOnlydateListD1E2M.AssertModel(models[15],_testData[31], false);
-                        DateOnlydateListD1E2M.AssertModel(models[16],_testData[32], false);
-                        DateOnlydateListD1E2M.AssertModel(models[17],_testData[33], false);
-                        DateOnlydateListD1E2M.AssertModel(models[18],_testData[34], false);
+                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[11], false);
+                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[12], false);
+                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[13], false);
+                        DateOnlydateListD1E2M.AssertModel(models[3],_testData[14], false);
+                        DateOnlydateListD1E2M.AssertModel(models[4],_testData[15], false);
+                        DateOnlydateListD1E2M.AssertModel(models[5],_testData[16], false);
+                        DateOnlydateListD1E2M.AssertModel(models[6],_testData[17], false);
+                        DateOnlydateListD1E2M.AssertModel(models[7],_testData[18], false);
+                        DateOnlydateListD1E2M.AssertModel(models[8],_testData[19], false);
+                        DateOnlydateListD1E2M.AssertModel(models[9],_testData[20], false);
+                        DateOnlydateListD1E2M.AssertModel(models[10],_testData[21], false);
+                        DateOnlydateListD1E2M.AssertModel(models[11],_testData[22], false);
+                        DateOnlydateListD1E2M.AssertModel(models[12],_testData[23], false);
+                        DateOnlydateListD1E2M.AssertModel(models[13],_testData[24], false);
+                        DateOnlydateListD1E2M.AssertModel(models[14],_testData[25], false);
+                        DateOnlydateListD1E2M.AssertModel(models[15],_testData[26], false);
+                        DateOnlydateListD1E2M.AssertModel(models[16],_testData[27], false);
+                        DateOnlydateListD1E2M.AssertModel(models[17],_testData[28], false);
+                        DateOnlydateListD1E2M.AssertModel(models[18],_testData[29], false);
+                        DateOnlydateListD1E2M.AssertModel(models[19],_testData[30], false);
+                        DateOnlydateListD1E2M.AssertModel(models[20],_testData[31], false);
+                        DateOnlydateListD1E2M.AssertModel(models[21],_testData[32], false);
+                        DateOnlydateListD1E2M.AssertModel(models[22],_testData[33], false);
+                        DateOnlydateListD1E2M.AssertModel(models[23],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
+                        Assert.That(models, Has.Count.EqualTo(2));
 
-                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[12], false);
-                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[13], false);
-                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[14], false);
-                        DateOnlydateListD1E2M.AssertModel(models[3],_testData[15], false);
-                        DateOnlydateListD1E2M.AssertModel(models[4],_testData[16], false);
-                        DateOnlydateListD1E2M.AssertModel(models[5],_testData[17], false);
-                        DateOnlydateListD1E2M.AssertModel(models[6],_testData[18], false);
-                        DateOnlydateListD1E2M.AssertModel(models[7],_testData[19], false);
-                        DateOnlydateListD1E2M.AssertModel(models[8],_testData[20], false);
-                        DateOnlydateListD1E2M.AssertModel(models[9],_testData[21], false);
-                        DateOnlydateListD1E2M.AssertModel(models[10],_testData[22], false);
-                        DateOnlydateListD1E2M.AssertModel(models[11],_testData[23], false);
-                        DateOnlydateListD1E2M.AssertModel(models[12],_testData[24], false);
-                        DateOnlydateListD1E2M.AssertModel(models[13],_testData[25], false);
-                        DateOnlydateListD1E2M.AssertModel(models[14],_testData[26], false);
-                        DateOnlydateListD1E2M.AssertModel(models[15],_testData[27], false);
-                        DateOnlydateListD1E2M.AssertModel(models[16],_testData[28], false);
-                        DateOnlydateListD1E2M.AssertModel(models[17],_testData[29], false);
-                        DateOnlydateListD1E2M.AssertModel(models[18],_testData[30], false);
-                        DateOnlydateListD1E2M.AssertModel(models[19],_testData[31], false);
-                        DateOnlydateListD1E2M.AssertModel(models[20],_testData[32], false);
-                        DateOnlydateListD1E2M.AssertModel(models[21],_testData[33], false);
-                        DateOnlydateListD1E2M.AssertModel(models[22],_testData[34], false);
+                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[33], false);
+                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[34], false);
                         continue;
                     }
                     
@@ -3323,12 +3261,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 121;
+                parametr1.Value = 138;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 37;
+                parametr2.Value = 105;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -3337,61 +3275,30 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(16));
+                        Assert.That(models, Has.Count.EqualTo(3));
 
-                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[19], false);
-                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[20], false);
-                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[21], false);
-                        DateOnlydateListD1E2M.AssertModel(models[3],_testData[22], false);
-                        DateOnlydateListD1E2M.AssertModel(models[4],_testData[23], false);
-                        DateOnlydateListD1E2M.AssertModel(models[5],_testData[24], false);
-                        DateOnlydateListD1E2M.AssertModel(models[6],_testData[25], false);
-                        DateOnlydateListD1E2M.AssertModel(models[7],_testData[26], false);
-                        DateOnlydateListD1E2M.AssertModel(models[8],_testData[27], false);
-                        DateOnlydateListD1E2M.AssertModel(models[9],_testData[28], false);
-                        DateOnlydateListD1E2M.AssertModel(models[10],_testData[29], false);
-                        DateOnlydateListD1E2M.AssertModel(models[11],_testData[30], false);
-                        DateOnlydateListD1E2M.AssertModel(models[12],_testData[31], false);
-                        DateOnlydateListD1E2M.AssertModel(models[13],_testData[32], false);
-                        DateOnlydateListD1E2M.AssertModel(models[14],_testData[33], false);
-                        DateOnlydateListD1E2M.AssertModel(models[15],_testData[34], false);
+                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[32], false);
+                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[33], false);
+                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(29));
+                        Assert.That(models, Has.Count.EqualTo(11));
 
-                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[6], false);
-                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[7], false);
-                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[8], false);
-                        DateOnlydateListD1E2M.AssertModel(models[3],_testData[9], false);
-                        DateOnlydateListD1E2M.AssertModel(models[4],_testData[10], false);
-                        DateOnlydateListD1E2M.AssertModel(models[5],_testData[11], false);
-                        DateOnlydateListD1E2M.AssertModel(models[6],_testData[12], false);
-                        DateOnlydateListD1E2M.AssertModel(models[7],_testData[13], false);
-                        DateOnlydateListD1E2M.AssertModel(models[8],_testData[14], false);
-                        DateOnlydateListD1E2M.AssertModel(models[9],_testData[15], false);
-                        DateOnlydateListD1E2M.AssertModel(models[10],_testData[16], false);
-                        DateOnlydateListD1E2M.AssertModel(models[11],_testData[17], false);
-                        DateOnlydateListD1E2M.AssertModel(models[12],_testData[18], false);
-                        DateOnlydateListD1E2M.AssertModel(models[13],_testData[19], false);
-                        DateOnlydateListD1E2M.AssertModel(models[14],_testData[20], false);
-                        DateOnlydateListD1E2M.AssertModel(models[15],_testData[21], false);
-                        DateOnlydateListD1E2M.AssertModel(models[16],_testData[22], false);
-                        DateOnlydateListD1E2M.AssertModel(models[17],_testData[23], false);
-                        DateOnlydateListD1E2M.AssertModel(models[18],_testData[24], false);
-                        DateOnlydateListD1E2M.AssertModel(models[19],_testData[25], false);
-                        DateOnlydateListD1E2M.AssertModel(models[20],_testData[26], false);
-                        DateOnlydateListD1E2M.AssertModel(models[21],_testData[27], false);
-                        DateOnlydateListD1E2M.AssertModel(models[22],_testData[28], false);
-                        DateOnlydateListD1E2M.AssertModel(models[23],_testData[29], false);
-                        DateOnlydateListD1E2M.AssertModel(models[24],_testData[30], false);
-                        DateOnlydateListD1E2M.AssertModel(models[25],_testData[31], false);
-                        DateOnlydateListD1E2M.AssertModel(models[26],_testData[32], false);
-                        DateOnlydateListD1E2M.AssertModel(models[27],_testData[33], false);
-                        DateOnlydateListD1E2M.AssertModel(models[28],_testData[34], false);
+                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[24], false);
+                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[25], false);
+                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[26], false);
+                        DateOnlydateListD1E2M.AssertModel(models[3],_testData[27], false);
+                        DateOnlydateListD1E2M.AssertModel(models[4],_testData[28], false);
+                        DateOnlydateListD1E2M.AssertModel(models[5],_testData[29], false);
+                        DateOnlydateListD1E2M.AssertModel(models[6],_testData[30], false);
+                        DateOnlydateListD1E2M.AssertModel(models[7],_testData[31], false);
+                        DateOnlydateListD1E2M.AssertModel(models[8],_testData[32], false);
+                        DateOnlydateListD1E2M.AssertModel(models[9],_testData[33], false);
+                        DateOnlydateListD1E2M.AssertModel(models[10],_testData[34], false);
                         continue;
                     }
                     
@@ -3522,33 +3429,85 @@ ORDER BY
                 var firstItems2 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems1 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems2 = new List<FlatDateOnlydateListD1E2M>();
-                await ((IDateOnlyListdateListD1)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 172, query1, 199, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(9));
-                Assert.That(firstItems2, Has.Count.EqualTo(9));
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(2));
-                Assert.That(secondItems2, Has.Count.EqualTo(2));
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[34], false);
+                await ((IDateOnlyListdateListD1)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 103, query1, 31, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(12));
+                Assert.That(firstItems2, Has.Count.EqualTo(12));
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[10],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[11],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(25));
+                Assert.That(secondItems2, Has.Count.EqualTo(25));
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[5],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[6],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[7],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[8],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[9],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[9],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[10],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[10],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[11],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[11],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[12],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[12],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[13],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[13],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[14],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[14],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[15],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[15],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[16],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[16],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[17],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[17],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[18],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[18],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[19],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[19],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[20],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[20],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[21],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[21],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[22],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[22],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[23],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[23],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[24],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[24],_testData[34], false);
             }
         }
 
@@ -3586,49 +3545,60 @@ ORDER BY
                 var firstItems1 = new List<FlatDateOnlydateListD1E2M>();
                 var firstItems2 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems1 = new List<FlatDateOnlydateListD1E2M>();
-                await ((IDateOnlyListdateListD1)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 108, query1, 196, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(18));
-                Assert.That(firstItems2, Has.Count.EqualTo(18));
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[10],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[11],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[12],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[13],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[14],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[15],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[16],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[17],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(3));
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[34], false);
+                await ((IDateOnlyListdateListD1)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 50, query1, 114, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(21));
+                Assert.That(firstItems2, Has.Count.EqualTo(21));
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[10],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[11],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[12],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[13],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[14],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[15],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[16],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[17],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[18],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[18],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[19],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[19],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[20],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[20],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(8));
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[34], false);
             }
         }
 
@@ -3703,111 +3673,65 @@ ORDER BY
                 var firstItems2 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems1 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems2 = new List<FlatDateOnlydateListD1E2M>();
-                 ((IDateOnlyListdateListD1)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 112, query1, 10, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(17));
-                Assert.That(firstItems2, Has.Count.EqualTo(17));
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[10],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[11],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[12],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[13],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[14],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[15],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[16],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(33));
-                Assert.That(secondItems2, Has.Count.EqualTo(33));
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[2], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[2], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[3], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[3], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[4], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[4], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[5], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[5], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[6], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[6], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[7], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[5],_testData[7], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[8], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[6],_testData[8], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[9], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[7],_testData[9], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[10], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[8],_testData[10], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[9],_testData[11], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[9],_testData[11], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[10],_testData[12], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[10],_testData[12], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[11],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[11],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[12],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[12],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[13],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[13],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[14],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[14],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[15],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[15],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[16],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[16],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[17],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[17],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[18],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[18],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[19],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[19],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[20],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[20],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[21],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[21],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[22],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[22],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[23],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[23],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[24],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[24],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[25],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[25],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[26],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[26],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[27],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[27],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[28],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[28],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[29],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[29],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[30],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[30],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[31],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[31],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[32],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[32],_testData[34], false);
+                 ((IDateOnlyListdateListD1)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 58, query1, 117, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(20));
+                Assert.That(firstItems2, Has.Count.EqualTo(20));
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[10],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[11],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[12],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[13],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[14],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[15],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[16],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[17],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[18],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[18],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[19],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[19],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(7));
+                Assert.That(secondItems2, Has.Count.EqualTo(7));
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[5],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[6],_testData[34], false);
             }
         }
 
@@ -3845,49 +3769,104 @@ ORDER BY
                 var firstItems1 = new List<FlatDateOnlydateListD1E2M>();
                 var firstItems2 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems1 = new List<FlatDateOnlydateListD1E2M>();
-                 ((IDateOnlyListdateListD1)this).DbConnectionMMDynQuerySelectModelBatch(connection, 108, query1, 196, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(18));
-                Assert.That(firstItems2, Has.Count.EqualTo(18));
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[10],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[11],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[12],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[13],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[14],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[15],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[16],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[17],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(3));
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[34], false);
+                 ((IDateOnlyListdateListD1)this).DbConnectionMMDynQuerySelectModelBatch(connection, 11, query1, 22, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(33));
+                Assert.That(firstItems2, Has.Count.EqualTo(33));
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[2], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[0],_testData[2], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[3], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[1],_testData[3], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[4], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[2],_testData[4], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[5], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[3],_testData[5], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[6], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[4],_testData[6], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[7], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[5],_testData[7], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[8], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[6],_testData[8], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[9], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[7],_testData[9], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[8],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[9],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[10],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[11],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[12],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[13],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[14],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[15],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[16],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[17],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[18],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[18],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[19],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[19],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[20],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[20],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[21],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[21],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[22],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[22],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[23],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[23],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[24],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[24],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[25],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[25],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[26],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[26],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[27],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[27],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[28],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[28],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[29],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[29],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[30],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[30],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[31],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[31],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[32],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems2[32],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(28));
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[7], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[8], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[9], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[9],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[10],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[11],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[12],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[13],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[14],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[15],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[16],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[17],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[18],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[19],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[20],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[21],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[22],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[23],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[24],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[25],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[26],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[27],_testData[34], false);
             }
         }
 
@@ -3997,53 +3976,76 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IDateOnlyListdateListD1)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 172, query1, 78, query2))
+                foreach(var batchResult in await ((IDateOnlyListdateListD1)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 50, query1, 5, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
+                        Assert.That(models, Has.Count.EqualTo(21));
 
-                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[9],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[10],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[11],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[12],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[13],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[14],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[15],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[16],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[17],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[18],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[19],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[20],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
+                        Assert.That(models, Has.Count.EqualTo(34));
 
-                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[12], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[9],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[10],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[11],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[12],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[13],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[14],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[15],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[16],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[17],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[18],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[19],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[20],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[21],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[22],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[1], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[2], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[3], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[4], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[5], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[6], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[7], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[8], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[9], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[9],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[10],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[11],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[12],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[13],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[14],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[15],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[16],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[17],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[18],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[19],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[20],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[21],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[22],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[23],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[24],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[25],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[26],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[27],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[28],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[29],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[30],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[31],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[32],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[33],_testData[34], false);
                         continue;
                     }
                     
@@ -4086,51 +4088,78 @@ ORDER BY
                 var firstItems1 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems1 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems2 = new List<FlatDateOnlydateListD1E2M>();
-                await ((IDateOnlyListdateListD1)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 172, query1, 121, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(9));
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(16));
-                Assert.That(secondItems2, Has.Count.EqualTo(16));
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[5],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[6],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[7],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[8],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[9],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[9],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[10],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[10],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[11],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[11],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[12],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[12],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[13],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[13],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[14],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[14],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[15],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[15],_testData[34], false);
+                await ((IDateOnlyListdateListD1)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 91, query1, 28, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(14));
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(27));
+                Assert.That(secondItems2, Has.Count.EqualTo(27));
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[8], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[8], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[9], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[9], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[5],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[6],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[7],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[8],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[9],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[9],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[10],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[10],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[11],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[11],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[12],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[12],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[13],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[13],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[14],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[14],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[15],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[15],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[16],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[16],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[17],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[17],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[18],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[18],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[19],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[19],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[20],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[20],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[21],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[21],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[22],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[22],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[23],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[23],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[24],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[24],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[25],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[25],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[26],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[26],_testData[34], false);
             }
         }
 
@@ -4189,57 +4218,67 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IDateOnlyListdateListD1)this).DbConnectionSTDynQuerySelectModelBatch(connection, 80, query1, 139, query2))
+                foreach(var batchResult in  ((IDateOnlyListdateListD1)this).DbConnectionSTDynQuerySelectModelBatch(connection, 11, query1, 100, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
+                        Assert.That(models, Has.Count.EqualTo(33));
 
-                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[9],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[10],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[11],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[12],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[13],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[14],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[15],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[16],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[17],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[18],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[19],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[20],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[21],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[2], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[3], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[4], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[5], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[6], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[7], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[8], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[9], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[10], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[9],_testData[11], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[10],_testData[12], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[11],_testData[13], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[12],_testData[14], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[13],_testData[15], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[14],_testData[16], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[15],_testData[17], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[16],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[17],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[18],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[19],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[20],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[21],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[22],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[23],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[24],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[25],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[26],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[27],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[28],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[29],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[30],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[31],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[32],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
+                        Assert.That(models, Has.Count.EqualTo(13));
 
-                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[9],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[10],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[11],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[12],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(models[13],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[0],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[1],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[2],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[3],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[4],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[5],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[6],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[7],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[8],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[9],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[10],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[11],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(models[12],_testData[34], false);
                         continue;
                     }
                     
@@ -4282,52 +4321,47 @@ ORDER BY
                 var firstItems1 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems1 = new List<FlatDateOnlydateListD1E2M>();
                 var secondItems2 = new List<FlatDateOnlydateListD1E2M>();
-                 ((IDateOnlyListdateListD1)this).DbConnectionDynQuerySelectModelBatch(connection, 29, query1, 180, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(30));
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[5], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[6], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[7], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[8], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[9], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[10], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[11], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[12], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[13], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[14], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[15], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[16], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[17], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[18], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[19], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[20], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[21], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[17],_testData[22], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[18],_testData[23], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[19],_testData[24], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[20],_testData[25], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[21],_testData[26], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[22],_testData[27], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[23],_testData[28], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[24],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[25],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[26],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[27],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[28],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[29],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(6));
-                Assert.That(secondItems2, Has.Count.EqualTo(6));
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[29], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[30], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[31], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[32], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[33], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[34], false);
-                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[5],_testData[34], false);
+                 ((IDateOnlyListdateListD1)this).DbConnectionDynQuerySelectModelBatch(connection, 77, query1, 106, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(17));
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[0],_testData[18], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[1],_testData[19], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[2],_testData[20], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[3],_testData[21], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[4],_testData[22], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[5],_testData[23], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[6],_testData[24], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[7],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[8],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[9],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[10],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[11],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[12],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[13],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[14],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[15],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(firstItems1[16],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(10));
+                Assert.That(secondItems2, Has.Count.EqualTo(10));
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[0],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[0],_testData[25], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[1],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[1],_testData[26], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[2],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[2],_testData[27], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[3],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[3],_testData[28], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[4],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[4],_testData[29], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[5],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[5],_testData[30], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[6],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[6],_testData[31], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[7],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[7],_testData[32], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[8],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[8],_testData[33], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems1[9],_testData[34], false);
+                        FlatDateOnlydateListD1E2M.AssertModel(secondItems2[9],_testData[34], false);
             }
         }
 
@@ -4345,7 +4379,7 @@ SELECT
 ~EndInner::ModelInner~
     m.nullablevalue
 FROM public.dateonlydatelistd1e2m m
-LEFT JOIN public.dateonlydatelistd12mi mi ON mi.id = m.dateonlydatelistd12mi_id
+LEFT JOIN public.dateonlydatelistd1e2mi mi ON mi.id = m.dateonlydatelistd1e2mi_id
 WHERE
     m.id > @id
 ORDER BY
@@ -4407,53 +4441,42 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((IDateOnlyListdateListD1)this).DbConnectionSTSelectModelBatchAsync(connection, 78, 172))
+                foreach(var batchResult in await ((IDateOnlyListdateListD1)this).DbConnectionSTSelectModelBatchAsync(connection, 77, 130))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
+                        Assert.That(models, Has.Count.EqualTo(17));
 
-                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[12], false);
-                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[13], false);
-                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[14], false);
-                        DateOnlydateListD1E2M.AssertModel(models[3],_testData[15], false);
-                        DateOnlydateListD1E2M.AssertModel(models[4],_testData[16], false);
-                        DateOnlydateListD1E2M.AssertModel(models[5],_testData[17], false);
-                        DateOnlydateListD1E2M.AssertModel(models[6],_testData[18], false);
-                        DateOnlydateListD1E2M.AssertModel(models[7],_testData[19], false);
-                        DateOnlydateListD1E2M.AssertModel(models[8],_testData[20], false);
-                        DateOnlydateListD1E2M.AssertModel(models[9],_testData[21], false);
-                        DateOnlydateListD1E2M.AssertModel(models[10],_testData[22], false);
-                        DateOnlydateListD1E2M.AssertModel(models[11],_testData[23], false);
-                        DateOnlydateListD1E2M.AssertModel(models[12],_testData[24], false);
-                        DateOnlydateListD1E2M.AssertModel(models[13],_testData[25], false);
-                        DateOnlydateListD1E2M.AssertModel(models[14],_testData[26], false);
-                        DateOnlydateListD1E2M.AssertModel(models[15],_testData[27], false);
-                        DateOnlydateListD1E2M.AssertModel(models[16],_testData[28], false);
-                        DateOnlydateListD1E2M.AssertModel(models[17],_testData[29], false);
-                        DateOnlydateListD1E2M.AssertModel(models[18],_testData[30], false);
-                        DateOnlydateListD1E2M.AssertModel(models[19],_testData[31], false);
-                        DateOnlydateListD1E2M.AssertModel(models[20],_testData[32], false);
-                        DateOnlydateListD1E2M.AssertModel(models[21],_testData[33], false);
-                        DateOnlydateListD1E2M.AssertModel(models[22],_testData[34], false);
+                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[18], false);
+                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[19], false);
+                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[20], false);
+                        DateOnlydateListD1E2M.AssertModel(models[3],_testData[21], false);
+                        DateOnlydateListD1E2M.AssertModel(models[4],_testData[22], false);
+                        DateOnlydateListD1E2M.AssertModel(models[5],_testData[23], false);
+                        DateOnlydateListD1E2M.AssertModel(models[6],_testData[24], false);
+                        DateOnlydateListD1E2M.AssertModel(models[7],_testData[25], false);
+                        DateOnlydateListD1E2M.AssertModel(models[8],_testData[26], false);
+                        DateOnlydateListD1E2M.AssertModel(models[9],_testData[27], false);
+                        DateOnlydateListD1E2M.AssertModel(models[10],_testData[28], false);
+                        DateOnlydateListD1E2M.AssertModel(models[11],_testData[29], false);
+                        DateOnlydateListD1E2M.AssertModel(models[12],_testData[30], false);
+                        DateOnlydateListD1E2M.AssertModel(models[13],_testData[31], false);
+                        DateOnlydateListD1E2M.AssertModel(models[14],_testData[32], false);
+                        DateOnlydateListD1E2M.AssertModel(models[15],_testData[33], false);
+                        DateOnlydateListD1E2M.AssertModel(models[16],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
+                        Assert.That(models, Has.Count.EqualTo(4));
 
-                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[26], false);
-                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[27], false);
-                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[28], false);
-                        DateOnlydateListD1E2M.AssertModel(models[3],_testData[29], false);
-                        DateOnlydateListD1E2M.AssertModel(models[4],_testData[30], false);
-                        DateOnlydateListD1E2M.AssertModel(models[5],_testData[31], false);
-                        DateOnlydateListD1E2M.AssertModel(models[6],_testData[32], false);
-                        DateOnlydateListD1E2M.AssertModel(models[7],_testData[33], false);
-                        DateOnlydateListD1E2M.AssertModel(models[8],_testData[34], false);
+                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[31], false);
+                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[32], false);
+                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[33], false);
+                        DateOnlydateListD1E2M.AssertModel(models[3],_testData[34], false);
                         continue;
                     }
                     
@@ -4484,41 +4507,18 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((IDateOnlyListdateListD1)this).DbConnectionSTSelectModelBatch(connection, 44, 139))
+                foreach(var batchResult in  ((IDateOnlyListdateListD1)this).DbConnectionSTSelectModelBatch(connection, 128, 91))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(28));
+                        Assert.That(models, Has.Count.EqualTo(5));
 
-                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[7], false);
-                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[8], false);
-                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[9], false);
-                        DateOnlydateListD1E2M.AssertModel(models[3],_testData[10], false);
-                        DateOnlydateListD1E2M.AssertModel(models[4],_testData[11], false);
-                        DateOnlydateListD1E2M.AssertModel(models[5],_testData[12], false);
-                        DateOnlydateListD1E2M.AssertModel(models[6],_testData[13], false);
-                        DateOnlydateListD1E2M.AssertModel(models[7],_testData[14], false);
-                        DateOnlydateListD1E2M.AssertModel(models[8],_testData[15], false);
-                        DateOnlydateListD1E2M.AssertModel(models[9],_testData[16], false);
-                        DateOnlydateListD1E2M.AssertModel(models[10],_testData[17], false);
-                        DateOnlydateListD1E2M.AssertModel(models[11],_testData[18], false);
-                        DateOnlydateListD1E2M.AssertModel(models[12],_testData[19], false);
-                        DateOnlydateListD1E2M.AssertModel(models[13],_testData[20], false);
-                        DateOnlydateListD1E2M.AssertModel(models[14],_testData[21], false);
-                        DateOnlydateListD1E2M.AssertModel(models[15],_testData[22], false);
-                        DateOnlydateListD1E2M.AssertModel(models[16],_testData[23], false);
-                        DateOnlydateListD1E2M.AssertModel(models[17],_testData[24], false);
-                        DateOnlydateListD1E2M.AssertModel(models[18],_testData[25], false);
-                        DateOnlydateListD1E2M.AssertModel(models[19],_testData[26], false);
-                        DateOnlydateListD1E2M.AssertModel(models[20],_testData[27], false);
-                        DateOnlydateListD1E2M.AssertModel(models[21],_testData[28], false);
-                        DateOnlydateListD1E2M.AssertModel(models[22],_testData[29], false);
-                        DateOnlydateListD1E2M.AssertModel(models[23],_testData[30], false);
-                        DateOnlydateListD1E2M.AssertModel(models[24],_testData[31], false);
-                        DateOnlydateListD1E2M.AssertModel(models[25],_testData[32], false);
-                        DateOnlydateListD1E2M.AssertModel(models[26],_testData[33], false);
-                        DateOnlydateListD1E2M.AssertModel(models[27],_testData[34], false);
+                        DateOnlydateListD1E2M.AssertModel(models[0],_testData[30], false);
+                        DateOnlydateListD1E2M.AssertModel(models[1],_testData[31], false);
+                        DateOnlydateListD1E2M.AssertModel(models[2],_testData[32], false);
+                        DateOnlydateListD1E2M.AssertModel(models[3],_testData[33], false);
+                        DateOnlydateListD1E2M.AssertModel(models[4],_testData[34], false);
                         continue;
                     }                    
 
@@ -4556,31 +4556,30 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((IDateOnlyListdateListD1)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((IDateOnlyListdateListD1)this).SetDbConnectionSelectModelParametrs(cmd, 92);
+                ((IDateOnlyListdateListD1)this).SetDbConnectionSelectModelParametrs(cmd, 65);
                 var models = await ((IDateOnlyListdateListD1)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(20));
+                Assert.That(models, Has.Count.EqualTo(19));
 
-                DateOnlydateListD1E2M.AssertModel(models[0],_testData[15], false);
-                DateOnlydateListD1E2M.AssertModel(models[1],_testData[16], false);
-                DateOnlydateListD1E2M.AssertModel(models[2],_testData[17], false);
-                DateOnlydateListD1E2M.AssertModel(models[3],_testData[18], false);
-                DateOnlydateListD1E2M.AssertModel(models[4],_testData[19], false);
-                DateOnlydateListD1E2M.AssertModel(models[5],_testData[20], false);
-                DateOnlydateListD1E2M.AssertModel(models[6],_testData[21], false);
-                DateOnlydateListD1E2M.AssertModel(models[7],_testData[22], false);
-                DateOnlydateListD1E2M.AssertModel(models[8],_testData[23], false);
-                DateOnlydateListD1E2M.AssertModel(models[9],_testData[24], false);
-                DateOnlydateListD1E2M.AssertModel(models[10],_testData[25], false);
-                DateOnlydateListD1E2M.AssertModel(models[11],_testData[26], false);
-                DateOnlydateListD1E2M.AssertModel(models[12],_testData[27], false);
-                DateOnlydateListD1E2M.AssertModel(models[13],_testData[28], false);
-                DateOnlydateListD1E2M.AssertModel(models[14],_testData[29], false);
-                DateOnlydateListD1E2M.AssertModel(models[15],_testData[30], false);
-                DateOnlydateListD1E2M.AssertModel(models[16],_testData[31], false);
-                DateOnlydateListD1E2M.AssertModel(models[17],_testData[32], false);
-                DateOnlydateListD1E2M.AssertModel(models[18],_testData[33], false);
-                DateOnlydateListD1E2M.AssertModel(models[19],_testData[34], false);
+                DateOnlydateListD1E2M.AssertModel(models[0],_testData[16], false);
+                DateOnlydateListD1E2M.AssertModel(models[1],_testData[17], false);
+                DateOnlydateListD1E2M.AssertModel(models[2],_testData[18], false);
+                DateOnlydateListD1E2M.AssertModel(models[3],_testData[19], false);
+                DateOnlydateListD1E2M.AssertModel(models[4],_testData[20], false);
+                DateOnlydateListD1E2M.AssertModel(models[5],_testData[21], false);
+                DateOnlydateListD1E2M.AssertModel(models[6],_testData[22], false);
+                DateOnlydateListD1E2M.AssertModel(models[7],_testData[23], false);
+                DateOnlydateListD1E2M.AssertModel(models[8],_testData[24], false);
+                DateOnlydateListD1E2M.AssertModel(models[9],_testData[25], false);
+                DateOnlydateListD1E2M.AssertModel(models[10],_testData[26], false);
+                DateOnlydateListD1E2M.AssertModel(models[11],_testData[27], false);
+                DateOnlydateListD1E2M.AssertModel(models[12],_testData[28], false);
+                DateOnlydateListD1E2M.AssertModel(models[13],_testData[29], false);
+                DateOnlydateListD1E2M.AssertModel(models[14],_testData[30], false);
+                DateOnlydateListD1E2M.AssertModel(models[15],_testData[31], false);
+                DateOnlydateListD1E2M.AssertModel(models[16],_testData[32], false);
+                DateOnlydateListD1E2M.AssertModel(models[17],_testData[33], false);
+                DateOnlydateListD1E2M.AssertModel(models[18],_testData[34], false);
             }
         }
 
@@ -4591,7 +4590,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                  using var cmd =  ((IDateOnlyListdateListD1)this).CreateDbConnectionSelectModelCommand(connection);
-                ((IDateOnlyListdateListD1)this).SetDbConnectionSelectModelParametrs(cmd, 147);
+                ((IDateOnlyListdateListD1)this).SetDbConnectionSelectModelParametrs(cmd, 100);
                 var models =  ((IDateOnlyListdateListD1)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
                 Assert.That(models, Has.Count.EqualTo(13));
@@ -4623,13 +4622,13 @@ SELECT
     mi.nullablevalue,
     mi.id,
     mi.value
-FROM public.binary_dateonlydatelistd12mi mi
+FROM public.binary_dateonlydatelistd1e2mi mi
 ORDER BY
     mi.id ASC
 "
 ,
             methodName:"DynQueryWASelectImportModelInner",
-            queryMapTypes: [typeof(DateOnlydateListD12MIWA)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MIWA)],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -4642,7 +4641,7 @@ ORDER BY
 [Gedaq.Npgsql.Attributes.BinaryImport(
             query: null,
             methodName:"DynQueryWAImportModelInner",
-            queryMapType: typeof(DateOnlydateListD12MIWA),
+            queryMapType: typeof(DateOnlydateListD1E2MIWA),
             dbTypes: 
             new NpgsqlDbType[]
             {
@@ -4664,7 +4663,7 @@ ORDER BY
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var importCollection = new List<DateOnlydateListD12MIWA>(2);
+                var importCollection = new List<DateOnlydateListD1E2MIWA>(2);
                 for (int i = 0; i < 4; i++)
                 {
                     var importModel = _testData[i].ModelInner;
@@ -4674,7 +4673,7 @@ ORDER BY
                     }
 
                     importCollection.Add(
-new DateOnlydateListD12MIWA
+new DateOnlydateListD1E2MIWA
 {
     Id = importModel.Id,
     Value = importModel.Value,
@@ -4683,7 +4682,7 @@ new DateOnlydateListD12MIWA
                 }
 
                 await ((IDateOnlyListdateListD1)this).DynQueryWAImportModelInnerAsync(connection, importCollection, @"
-COPY public.binary_dateonlydatelistd12mi
+COPY public.binary_dateonlydatelistd1e2mi
 (
 id,
 value,
@@ -4698,7 +4697,7 @@ FROM STDIN (FORMAT BINARY)
                 {
                     var actual = models[i];
                     var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(actual, expect, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(actual, expect, false);
                     Assert.That(set.Add(actual.Id), Is.True);
                 }
             }
@@ -4710,7 +4709,7 @@ FROM STDIN (FORMAT BINARY)
             using (var connection = GlobalSetUp.GetConnection)
             {
                 connection.Open();
-                var importCollection = new List<DateOnlydateListD12MIWA>(2);
+                var importCollection = new List<DateOnlydateListD1E2MIWA>(2);
                 for (int i = 4; i < 8; i++)
                 {
                     var importModel = _testData[i].ModelInner;
@@ -4720,7 +4719,7 @@ FROM STDIN (FORMAT BINARY)
                     }
 
                     importCollection.Add(
-new DateOnlydateListD12MIWA
+new DateOnlydateListD1E2MIWA
 {
     Id = importModel.Id,
     Value = importModel.Value,
@@ -4729,7 +4728,7 @@ new DateOnlydateListD12MIWA
                 }
 
                 ((IDateOnlyListdateListD1)this).DynQueryWAImportModelInner(connection, importCollection, @"
-COPY public.binary_dateonlydatelistd12mi
+COPY public.binary_dateonlydatelistd1e2mi
 (
 id,
 value,
@@ -4744,7 +4743,7 @@ FROM STDIN (FORMAT BINARY)
                 {
                     var actual = models[i];
                     var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(actual, expect, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(actual, expect, false);
                     Assert.That(set.Add(actual.Id), Is.True);
                 }
             }
@@ -4757,13 +4756,13 @@ SELECT
     mi.nullablevalue,
     mi.id,
     mi.value
-FROM public.binary_dateonlydatelistd12mi mi
+FROM public.binary_dateonlydatelistd1e2mi mi
 ORDER BY
     mi.id ASC
 "
 ,
             methodName:"DynQuerySelectImportModelInner",
-            queryMapTypes: [typeof(DateOnlydateListD12MIWA)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MIWA)],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -4776,7 +4775,7 @@ ORDER BY
 [Gedaq.Npgsql.Attributes.BinaryImport(
             query: null,
             methodName:"DynQueryImportModelInner",
-            queryMapType: typeof(DateOnlydateListD12MIWA),
+            queryMapType: typeof(DateOnlydateListD1E2MIWA),
             dbTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
@@ -4792,7 +4791,7 @@ ORDER BY
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var importCollection = new List<DateOnlydateListD12MIWA>(2);
+                var importCollection = new List<DateOnlydateListD1E2MIWA>(2);
                 for (int i = 8; i < 12; i++)
                 {
                     var importModel = _testData[i].ModelInner;
@@ -4802,7 +4801,7 @@ ORDER BY
                     }
 
                     importCollection.Add(
-new DateOnlydateListD12MIWA
+new DateOnlydateListD1E2MIWA
 {
     Id = importModel.Id,
     Value = importModel.Value,
@@ -4811,7 +4810,7 @@ new DateOnlydateListD12MIWA
                 }
 
                 await ((IDateOnlyListdateListD1)this).DynQueryImportModelInnerAsync(connection, importCollection, @"
-COPY public.binary_dateonlydatelistd12mi
+COPY public.binary_dateonlydatelistd1e2mi
 (
 id,
 value,
@@ -4826,7 +4825,7 @@ FROM STDIN (FORMAT BINARY)
                 {
                     var actual = models[i];
                     var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(actual, expect, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(actual, expect, false);
                     Assert.That(set.Add(actual.Id), Is.True);
                 }
             }
@@ -4838,7 +4837,7 @@ FROM STDIN (FORMAT BINARY)
             using (var connection = GlobalSetUp.GetConnection)
             {
                 connection.Open();
-                var importCollection = new List<DateOnlydateListD12MIWA>(2);
+                var importCollection = new List<DateOnlydateListD1E2MIWA>(2);
                 for (int i = 12; i < 16; i++)
                 {
                     var importModel = _testData[i].ModelInner;
@@ -4848,7 +4847,7 @@ FROM STDIN (FORMAT BINARY)
                     }
 
                     importCollection.Add(
-new DateOnlydateListD12MIWA
+new DateOnlydateListD1E2MIWA
 {
     Id = importModel.Id,
     Value = importModel.Value,
@@ -4857,7 +4856,7 @@ new DateOnlydateListD12MIWA
                 }
 
                 ((IDateOnlyListdateListD1)this).DynQueryImportModelInner(connection, importCollection, @"
-COPY public.binary_dateonlydatelistd12mi
+COPY public.binary_dateonlydatelistd1e2mi
 (
 id,
 value,
@@ -4872,7 +4871,7 @@ FROM STDIN (FORMAT BINARY)
                 {
                     var actual = models[i];
                     var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(actual, expect, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(actual, expect, false);
                     Assert.That(set.Add(actual.Id), Is.True);
                 }
             }
@@ -4885,13 +4884,13 @@ SELECT
     mi.nullablevalue,
     mi.id,
     mi.value
-FROM public.binary_dateonlydatelistd12mi mi
+FROM public.binary_dateonlydatelistd1e2mi mi
 ORDER BY
     mi.id ASC
 "
 ,
             methodName:"WASelectImportModelInner",
-            queryMapTypes: [typeof(DateOnlydateListD12MI)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MI)],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -4903,7 +4902,7 @@ ORDER BY
 
 [Gedaq.Npgsql.Attributes.BinaryImport(
             query: @"
-COPY public.binary_dateonlydatelistd12mi
+COPY public.binary_dateonlydatelistd1e2mi
 (
 id,
 nullablevalue,
@@ -4912,7 +4911,7 @@ value
 FROM STDIN (FORMAT BINARY)
 ",
             methodName:"WAImportModelInner",
-            queryMapType: typeof(DateOnlydateListD12MI),
+            queryMapType: typeof(DateOnlydateListD1E2MI),
             dbTypes: 
             new NpgsqlDbType[]
             {
@@ -4934,7 +4933,7 @@ FROM STDIN (FORMAT BINARY)
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var importCollection = new List<DateOnlydateListD12MI>(2);
+                var importCollection = new List<DateOnlydateListD1E2MI>(2);
                 for (int i = 16; i < 20; i++)
                 {
                     var importModel = _testData[i].ModelInner;
@@ -4954,7 +4953,7 @@ FROM STDIN (FORMAT BINARY)
                 {
                     var actual = models[i];
                     var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
-                    DateOnlydateListD12MI.AssertModel(actual, expect, false);
+                    DateOnlydateListD1E2MI.AssertModel(actual, expect, false);
                     Assert.That(set.Add(actual.Id), Is.True);
                 }
             }
@@ -4966,7 +4965,7 @@ FROM STDIN (FORMAT BINARY)
             using (var connection = GlobalSetUp.GetConnection)
             {
                 connection.Open();
-                var importCollection = new List<DateOnlydateListD12MI>(2);
+                var importCollection = new List<DateOnlydateListD1E2MI>(2);
                 for (int i = 20; i < 24; i++)
                 {
                     var importModel = _testData[i].ModelInner;
@@ -4986,7 +4985,7 @@ FROM STDIN (FORMAT BINARY)
                 {
                     var actual = models[i];
                     var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
-                    DateOnlydateListD12MI.AssertModel(actual, expect, false);
+                    DateOnlydateListD1E2MI.AssertModel(actual, expect, false);
                     Assert.That(set.Add(actual.Id), Is.True);
                 }
             }
@@ -4999,13 +4998,13 @@ SELECT
     mi.nullablevalue,
     mi.id,
     mi.value
-FROM public.binary_dateonlydatelistd12mi mi
+FROM public.binary_dateonlydatelistd1e2mi mi
 ORDER BY
     mi.id ASC
 "
 ,
             methodName:"SelectImportModelInner",
-            queryMapTypes: [typeof(DateOnlydateListD12MIWA)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MIWA)],
             methodType: MethodType.Async | MethodType.Sync,
             queryType: QueryType.Read,
             generate: true,
@@ -5017,7 +5016,7 @@ ORDER BY
 
 [Gedaq.Npgsql.Attributes.BinaryImport(
             query: @"
-COPY public.binary_dateonlydatelistd12mi
+COPY public.binary_dateonlydatelistd1e2mi
 (
 id,
 value,
@@ -5026,7 +5025,7 @@ nullablevalue
 FROM STDIN (FORMAT BINARY)
 ",
             methodName:"ImportModelInner",
-            queryMapType: typeof(DateOnlydateListD12MIWA),
+            queryMapType: typeof(DateOnlydateListD1E2MIWA),
             dbTypes: null,
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
@@ -5042,7 +5041,7 @@ FROM STDIN (FORMAT BINARY)
             await using (var connection = GlobalSetUp.GetConnection)
             {
                 await connection.OpenAsync();
-                var importCollection = new List<DateOnlydateListD12MIWA>(2);
+                var importCollection = new List<DateOnlydateListD1E2MIWA>(2);
                 for (int i = 24; i < 28; i++)
                 {
                     var importModel = _testData[i].ModelInner;
@@ -5052,7 +5051,7 @@ FROM STDIN (FORMAT BINARY)
                     }
 
                     importCollection.Add(
-new DateOnlydateListD12MIWA
+new DateOnlydateListD1E2MIWA
 {
     Id = importModel.Id,
     Value = importModel.Value,
@@ -5068,7 +5067,7 @@ new DateOnlydateListD12MIWA
                 {
                     var actual = models[i];
                     var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(actual, expect, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(actual, expect, false);
                     Assert.That(set.Add(actual.Id), Is.True);
                 }
             }
@@ -5080,7 +5079,7 @@ new DateOnlydateListD12MIWA
             using (var connection = GlobalSetUp.GetConnection)
             {
                 connection.Open();
-                var importCollection = new List<DateOnlydateListD12MIWA>(2);
+                var importCollection = new List<DateOnlydateListD1E2MIWA>(2);
                 for (int i = 28; i < 35; i++)
                 {
                     var importModel = _testData[i].ModelInner;
@@ -5090,7 +5089,7 @@ new DateOnlydateListD12MIWA
                     }
 
                     importCollection.Add(
-new DateOnlydateListD12MIWA
+new DateOnlydateListD1E2MIWA
 {
     Id = importModel.Id,
     Value = importModel.Value,
@@ -5106,7 +5105,7 @@ new DateOnlydateListD12MIWA
                 {
                     var actual = models[i];
                     var expect = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == actual.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(actual, expect, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(actual, expect, false);
                     Assert.That(set.Add(actual.Id), Is.True);
                 }
             }
@@ -5124,7 +5123,7 @@ id,
 value,
 ~StartInner::ModelInner:Id~
     ~Reinterpret::id~
-dateonlydatelistd12mi_id,
+dateonlydatelistd1e2mi_id,
 ~EndInner::ModelInner~
 nullablevalue
 ) 
@@ -5161,7 +5160,7 @@ SELECT
 ~EndInner::ModelInner~
     m.nullablevalue
 FROM public.binary_dateonlydatelistd1e2m m
-LEFT JOIN public.binary_dateonlydatelistd12mi mi ON mi.id = m.dateonlydatelistd12mi_id
+LEFT JOIN public.binary_dateonlydatelistd1e2mi mi ON mi.id = m.dateonlydatelistd1e2mi_id
 ORDER BY
     m.id ASC
 "
@@ -5243,7 +5242,7 @@ COPY public.binary_dateonlydatelistd1e2m
     nullablevalue,
 ~StartInner::ModelInner:Id~
     ~Reinterpret::Id~
-    dateonlydatelistd12mi_id,
+    dateonlydatelistd1e2mi_id,
 ~EndInner::ModelInner~
     value
 ) TO STDOUT (FORMAT BINARY)
@@ -5306,7 +5305,7 @@ COPY public.binary_dateonlydatelistd1e2m
 [Gedaq.Npgsql.Attributes.BinaryExport(
             query: null,
             methodName:"MMDynQueryWAExportModelInner",
-            queryMapTypes: [typeof(DateOnlydateListD12MIWA), typeof(DateOnlydateListD12MIWA)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MIWA), typeof(DateOnlydateListD1E2MIWA)],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5334,8 +5333,8 @@ COPY public.binary_dateonlydatelistd1e2m
             {
                 await connection.OpenAsync();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
-                var models1 = new List<DateOnlydateListD12MIWA>();
-                var models2 = new List<DateOnlydateListD12MIWA>();
+                var models1 = new List<DateOnlydateListD1E2MIWA>();
+                var models2 = new List<DateOnlydateListD1E2MIWA>();
                 await ((IDateOnlyListdateListD1)this).MMDynQueryWAExportModelInnerAsync(connection, @"
 COPY
 (
@@ -5347,7 +5346,7 @@ COPY
         id,
         value,
         nullablevalue
-    FROM public.binary_dateonlydatelistd12mi
+    FROM public.binary_dateonlydatelistd1e2mi
 ) TO STDOUT (FORMAT BINARY)
 ", (item1, item2) => { models1.Add(item1); models2.Add(item2); });
                 Assert.That(models1, Has.Count.EqualTo(expectCount));
@@ -5357,10 +5356,10 @@ COPY
                     var model1 = models1[modelIndex];
                     var model2 = models2[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model1.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model1, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model1, expectedModel, false);
 
                     expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model2.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model2, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model2, expectedModel, false);
                 }
             }
         }
@@ -5372,8 +5371,8 @@ COPY
             {
                 connection.Open();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
-                var models1 = new List<DateOnlydateListD12MIWA>();
-                var models2 = new List<DateOnlydateListD12MIWA>();
+                var models1 = new List<DateOnlydateListD1E2MIWA>();
+                var models2 = new List<DateOnlydateListD1E2MIWA>();
                 ((IDateOnlyListdateListD1)this).MMDynQueryWAExportModelInner(connection, @"
 COPY
 (
@@ -5385,7 +5384,7 @@ COPY
         id,
         value,
         nullablevalue
-    FROM public.binary_dateonlydatelistd12mi
+    FROM public.binary_dateonlydatelistd1e2mi
 ) TO STDOUT (FORMAT BINARY)
 ", (item1, item2) => { models1.Add(item1); models2.Add(item2); });
                 Assert.That(models1, Has.Count.EqualTo(expectCount));
@@ -5395,10 +5394,10 @@ COPY
                     var model1 = models1[modelIndex];
                     var model2 = models2[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model1.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model1, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model1, expectedModel, false);
 
                     expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model2.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model2, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model2, expectedModel, false);
                 }
             }
         }
@@ -5406,7 +5405,7 @@ COPY
 [Gedaq.Npgsql.Attributes.BinaryExport(
             query: null,
             methodName:"DynQueryWAExportModelInner",
-            queryMapTypes: [typeof(DateOnlydateListD12MIWA)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MIWA)],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5429,7 +5428,7 @@ COPY
                 await connection.OpenAsync();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
                 var models = await ((IDateOnlyListdateListD1)this).DynQueryWAExportModelInnerAsync(connection, @"
-COPY public.binary_dateonlydatelistd12mi
+COPY public.binary_dateonlydatelistd1e2mi
 (
     id,
     value,
@@ -5441,7 +5440,7 @@ COPY public.binary_dateonlydatelistd12mi
                 {
                     var model = models[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model, expectedModel, false);
                 }
             }
         }
@@ -5454,7 +5453,7 @@ COPY public.binary_dateonlydatelistd12mi
                 connection.Open();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
                 var models = ((IDateOnlyListdateListD1)this).DynQueryWAExportModelInner(connection, @"
-COPY public.binary_dateonlydatelistd12mi
+COPY public.binary_dateonlydatelistd1e2mi
 (
     id,
     value,
@@ -5466,7 +5465,7 @@ COPY public.binary_dateonlydatelistd12mi
                 {
                     var model = models[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model, expectedModel, false);
                 }
             }
         }
@@ -5474,7 +5473,7 @@ COPY public.binary_dateonlydatelistd12mi
 [Gedaq.Npgsql.Attributes.BinaryExport(
             query: null,
             methodName:"MMDynQueryExportModelInner",
-            queryMapTypes: [typeof(DateOnlydateListD12MIWA), typeof(DateOnlydateListD12MIWA)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MIWA), typeof(DateOnlydateListD1E2MIWA)],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5490,8 +5489,8 @@ COPY public.binary_dateonlydatelistd12mi
             {
                 await connection.OpenAsync();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
-                var models1 = new List<DateOnlydateListD12MIWA>();
-                var models2 = new List<DateOnlydateListD12MIWA>();
+                var models1 = new List<DateOnlydateListD1E2MIWA>();
+                var models2 = new List<DateOnlydateListD1E2MIWA>();
                 await ((IDateOnlyListdateListD1)this).MMDynQueryExportModelInnerAsync(connection, @"
 COPY
 (
@@ -5503,7 +5502,7 @@ COPY
         id,
         value,
         nullablevalue
-    FROM public.binary_dateonlydatelistd12mi
+    FROM public.binary_dateonlydatelistd1e2mi
 ) TO STDOUT (FORMAT BINARY)
 ", (item1, item2) => { models1.Add(item1); models2.Add(item2); });
                 Assert.That(models1, Has.Count.EqualTo(expectCount));
@@ -5513,10 +5512,10 @@ COPY
                     var model1 = models1[modelIndex];
                     var model2 = models2[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model1.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model1, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model1, expectedModel, false);
 
                     expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model2.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model2, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model2, expectedModel, false);
                 }
             }
         }
@@ -5528,8 +5527,8 @@ COPY
             {
                 connection.Open();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
-                var models1 = new List<DateOnlydateListD12MIWA>();
-                var models2 = new List<DateOnlydateListD12MIWA>();
+                var models1 = new List<DateOnlydateListD1E2MIWA>();
+                var models2 = new List<DateOnlydateListD1E2MIWA>();
                 ((IDateOnlyListdateListD1)this).MMDynQueryExportModelInner(connection, @"
 COPY
 (
@@ -5541,7 +5540,7 @@ COPY
         id,
         value,
         nullablevalue
-    FROM public.binary_dateonlydatelistd12mi
+    FROM public.binary_dateonlydatelistd1e2mi
 ) TO STDOUT (FORMAT BINARY)
 ", (item1, item2) => { models1.Add(item1); models2.Add(item2); });
                 Assert.That(models1, Has.Count.EqualTo(expectCount));
@@ -5551,10 +5550,10 @@ COPY
                     var model1 = models1[modelIndex];
                     var model2 = models2[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model1.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model1, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model1, expectedModel, false);
 
                     expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model2.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model2, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model2, expectedModel, false);
                 }
             }
         }
@@ -5562,7 +5561,7 @@ COPY
 [Gedaq.Npgsql.Attributes.BinaryExport(
             query: null,
             methodName:"DynQueryExportModelInner",
-            queryMapTypes: [typeof(DateOnlydateListD12MIWA)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MIWA)],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5579,7 +5578,7 @@ COPY
                 await connection.OpenAsync();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
                 var models = await ((IDateOnlyListdateListD1)this).DynQueryExportModelInnerAsync(connection, @"
-COPY public.binary_dateonlydatelistd12mi
+COPY public.binary_dateonlydatelistd1e2mi
 (
     id,
     value,
@@ -5591,7 +5590,7 @@ COPY public.binary_dateonlydatelistd12mi
                 {
                     var model = models[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model, expectedModel, false);
                 }
             }
         }
@@ -5604,7 +5603,7 @@ COPY public.binary_dateonlydatelistd12mi
                 connection.Open();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
                 var models = ((IDateOnlyListdateListD1)this).DynQueryExportModelInner(connection, @"
-COPY public.binary_dateonlydatelistd12mi
+COPY public.binary_dateonlydatelistd1e2mi
 (
     id,
     value,
@@ -5616,7 +5615,7 @@ COPY public.binary_dateonlydatelistd12mi
                 {
                     var model = models[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model, expectedModel, false);
                 }
             }
         }
@@ -5633,11 +5632,11 @@ COPY
         id,
         value,
         nullablevalue
-    FROM public.binary_dateonlydatelistd12mi
+    FROM public.binary_dateonlydatelistd1e2mi
 ) TO STDOUT (FORMAT BINARY)
 ",
             methodName:"MMWAExportModelInner",
-            queryMapTypes: [typeof(DateOnlydateListD12MI), typeof(DateOnlydateListD12MI)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MI), typeof(DateOnlydateListD1E2MI)],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5665,8 +5664,8 @@ COPY
             {
                 await connection.OpenAsync();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
-                var models1 = new List<DateOnlydateListD12MI>();
-                var models2 = new List<DateOnlydateListD12MI>();
+                var models1 = new List<DateOnlydateListD1E2MI>();
+                var models2 = new List<DateOnlydateListD1E2MI>();
                 await ((IDateOnlyListdateListD1)this).MMWAExportModelInnerAsync(connection, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
                 Assert.That(models1, Has.Count.EqualTo(expectCount));
                 Assert.That(models2, Has.Count.EqualTo(expectCount));
@@ -5675,10 +5674,10 @@ COPY
                     var model1 = models1[modelIndex];
                     var model2 = models2[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model1.Id).ModelInner;
-                    DateOnlydateListD12MI.AssertModel(model1, expectedModel, false);
+                    DateOnlydateListD1E2MI.AssertModel(model1, expectedModel, false);
 
                     expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model2.Id).ModelInner;
-                    DateOnlydateListD12MI.AssertModel(model2, expectedModel, false);
+                    DateOnlydateListD1E2MI.AssertModel(model2, expectedModel, false);
                 }
             }
         }
@@ -5690,8 +5689,8 @@ COPY
             {
                 connection.Open();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
-                var models1 = new List<DateOnlydateListD12MI>();
-                var models2 = new List<DateOnlydateListD12MI>();
+                var models1 = new List<DateOnlydateListD1E2MI>();
+                var models2 = new List<DateOnlydateListD1E2MI>();
                 ((IDateOnlyListdateListD1)this).MMWAExportModelInner(connection, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
                 Assert.That(models1, Has.Count.EqualTo(expectCount));
                 Assert.That(models2, Has.Count.EqualTo(expectCount));
@@ -5700,17 +5699,17 @@ COPY
                     var model1 = models1[modelIndex];
                     var model2 = models2[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model1.Id).ModelInner;
-                    DateOnlydateListD12MI.AssertModel(model1, expectedModel, false);
+                    DateOnlydateListD1E2MI.AssertModel(model1, expectedModel, false);
 
                     expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model2.Id).ModelInner;
-                    DateOnlydateListD12MI.AssertModel(model2, expectedModel, false);
+                    DateOnlydateListD1E2MI.AssertModel(model2, expectedModel, false);
                 }
             }
         }
 
 [Gedaq.Npgsql.Attributes.BinaryExport(
             query: @"
-COPY public.binary_dateonlydatelistd12mi
+COPY public.binary_dateonlydatelistd1e2mi
 (
     id,
     nullablevalue,
@@ -5718,7 +5717,7 @@ COPY public.binary_dateonlydatelistd12mi
 ) TO STDOUT (FORMAT BINARY)
 ",
             methodName:"WAExportModelInner",
-            queryMapTypes: [typeof(DateOnlydateListD12MI)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MI)],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5746,7 +5745,7 @@ COPY public.binary_dateonlydatelistd12mi
                 {
                     var model = models[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model.Id).ModelInner;
-                    DateOnlydateListD12MI.AssertModel(model, expectedModel, false);
+                    DateOnlydateListD1E2MI.AssertModel(model, expectedModel, false);
                 }
             }
         }
@@ -5764,7 +5763,7 @@ COPY public.binary_dateonlydatelistd12mi
                 {
                     var model = models[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model.Id).ModelInner;
-                    DateOnlydateListD12MI.AssertModel(model, expectedModel, false);
+                    DateOnlydateListD1E2MI.AssertModel(model, expectedModel, false);
                 }
             }
         }
@@ -5781,11 +5780,11 @@ COPY
         id,
         value,
         nullablevalue
-    FROM public.binary_dateonlydatelistd12mi
+    FROM public.binary_dateonlydatelistd1e2mi
 ) TO STDOUT (FORMAT BINARY)
 ",
             methodName:"MMExportModelInner",
-            queryMapTypes: [typeof(DateOnlydateListD12MIWA), typeof(DateOnlydateListD12MIWA)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MIWA), typeof(DateOnlydateListD1E2MIWA)],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5801,8 +5800,8 @@ COPY
             {
                 await connection.OpenAsync();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
-                var models1 = new List<DateOnlydateListD12MIWA>();
-                var models2 = new List<DateOnlydateListD12MIWA>();
+                var models1 = new List<DateOnlydateListD1E2MIWA>();
+                var models2 = new List<DateOnlydateListD1E2MIWA>();
                 await ((IDateOnlyListdateListD1)this).MMExportModelInnerAsync(connection, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
                 Assert.That(models1, Has.Count.EqualTo(expectCount));
                 Assert.That(models2, Has.Count.EqualTo(expectCount));
@@ -5811,10 +5810,10 @@ COPY
                     var model1 = models1[modelIndex];
                     var model2 = models2[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model1.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model1, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model1, expectedModel, false);
 
                     expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model2.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model2, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model2, expectedModel, false);
                 }
             }
         }
@@ -5826,8 +5825,8 @@ COPY
             {
                 connection.Open();
                 var expectCount = _testData.Where(wh => wh.ModelInner != null).Count();
-                var models1 = new List<DateOnlydateListD12MIWA>();
-                var models2 = new List<DateOnlydateListD12MIWA>();
+                var models1 = new List<DateOnlydateListD1E2MIWA>();
+                var models2 = new List<DateOnlydateListD1E2MIWA>();
                 ((IDateOnlyListdateListD1)this).MMExportModelInner(connection, (item1, item2) => { models1.Add(item1); models2.Add(item2); });
                 Assert.That(models1, Has.Count.EqualTo(expectCount));
                 Assert.That(models2, Has.Count.EqualTo(expectCount));
@@ -5836,17 +5835,17 @@ COPY
                     var model1 = models1[modelIndex];
                     var model2 = models2[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model1.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model1, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model1, expectedModel, false);
 
                     expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model2.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model2, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model2, expectedModel, false);
                 }
             }
         }
 
 [Gedaq.Npgsql.Attributes.BinaryExport(
             query: @"
-COPY public.binary_dateonlydatelistd12mi
+COPY public.binary_dateonlydatelistd1e2mi
 (
     id,
     value,
@@ -5854,7 +5853,7 @@ COPY public.binary_dateonlydatelistd12mi
 ) TO STDOUT (FORMAT BINARY)
 ",
             methodName:"ExportModelInner",
-            queryMapTypes: [typeof(DateOnlydateListD12MIWA)],
+            queryMapTypes: [typeof(DateOnlydateListD1E2MIWA)],
             methodType: MethodType.Async | MethodType.Sync,
             sourceType: SourceType.Connection,
             accessModifier: AccessModifier.Public,
@@ -5876,7 +5875,7 @@ COPY public.binary_dateonlydatelistd12mi
                 {
                     var model = models[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model, expectedModel, false);
                 }
             }
         }
@@ -5894,7 +5893,7 @@ COPY public.binary_dateonlydatelistd12mi
                 {
                     var model = models[modelIndex];
                     var expectedModel = _testData.First(wh => wh.ModelInner != null && wh.ModelInner.Id == model.Id).ModelInner;
-                    DateOnlydateListD12MIWA.AssertModel(model, expectedModel, false);
+                    DateOnlydateListD1E2MIWA.AssertModel(model, expectedModel, false);
                 }
             }
         }

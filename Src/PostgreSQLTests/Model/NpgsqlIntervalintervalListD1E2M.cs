@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval> Value { get; set; }
 
-        public NpgsqlIntervalintervalListD12MI ModelInner { get; set; }
+        public NpgsqlIntervalintervalListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlInterval> NullableValue { get; set; }

@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.guiduuidlistd12mi
+CREATE TABLE public.guiduuidlistd1e2mi
 (
     id integer NOT NULL,
     value uuid[] NOT NULL,
     nullablevalue uuid[],
-    CONSTRAINT guiduuidlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT guiduuidlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_guiduuidlistd12mi
+CREATE TABLE public.binary_guiduuidlistd1e2mi
 (
     id integer NOT NULL,
     value uuid[] NOT NULL,
     nullablevalue uuid[],
-    CONSTRAINT binary_guiduuidlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_guiduuidlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_guiduuidlistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.guiduuidlistd12mi;
+DROP TABLE public.guiduuidlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_guiduuidlistd12mi;
+DROP TABLE public.binary_guiduuidlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.guiduuidlistd1e2m
     id integer NOT NULL,
     value uuid[] NOT NULL,
     nullablevalue uuid[],
-    guiduuidlistd12mi_id integer,
+    guiduuidlistd1e2mi_id integer,
     CONSTRAINT guiduuidlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT guiduuidlistd1e2m_guiduuidlistd12mi_fk FOREIGN KEY (guiduuidlistd12mi_id)
-        REFERENCES public.guiduuidlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT guiduuidlistd1e2m_guiduuidlistd1e2mi_fk FOREIGN KEY (guiduuidlistd1e2mi_id)
+        REFERENCES public.guiduuidlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_guiduuidlistd1e2m
     id integer NOT NULL,
     value uuid[] NOT NULL,
     nullablevalue uuid[],
-    guiduuidlistd12mi_id integer,
+    guiduuidlistd1e2mi_id integer,
     CONSTRAINT binary_guiduuidlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_guiduuidlistd1e2m_binary_guiduuidlistd12mi_fk FOREIGN KEY (guiduuidlistd12mi_id)
-        REFERENCES public.binary_guiduuidlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_guiduuidlistd1e2m_binary_guiduuidlistd1e2mi_fk FOREIGN KEY (guiduuidlistd1e2mi_id)
+        REFERENCES public.binary_guiduuidlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.DateTime> Value { get; set; }
 
-        public DateTimetimestamp_with_time_zoneListD12MI ModelInner { get; set; }
+        public DateTimetimestamp_with_time_zoneListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.DateTime> NullableValue { get; set; }

@@ -12,7 +12,7 @@ namespace Tests
         
         public NpgsqlTypes.NpgsqlPoint Value { get; set; }
 
-        public NpgsqlPointpoint0MI ModelInner { get; set; }
+        public NpgsqlPointpointE0MI ModelInner { get; set; }
 
         
         public NpgsqlTypes.NpgsqlPoint? NullableValue { get; set; }

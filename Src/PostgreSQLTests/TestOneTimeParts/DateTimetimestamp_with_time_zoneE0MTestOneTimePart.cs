@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.datetimetimestamp_with_time_zone0mi
+CREATE TABLE public.datetimetimestamp_with_time_zonee0mi
 (
     id integer NOT NULL,
     value timestamp with time zone NOT NULL,
     nullablevalue timestamp with time zone,
-    CONSTRAINT datetimetimestamp_with_time_zone0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT datetimetimestamp_with_time_zonee0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_datetimetimestamp_with_time_zone0mi
+CREATE TABLE public.binary_datetimetimestamp_with_time_zonee0mi
 (
     id integer NOT NULL,
     value timestamp with time zone NOT NULL,
     nullablevalue timestamp with time zone,
-    CONSTRAINT binary_datetimetimestamp_with_time_zone0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_datetimetimestamp_with_time_zonee0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_datetimetimestamp_with_time_zone0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.datetimetimestamp_with_time_zone0mi;
+DROP TABLE public.datetimetimestamp_with_time_zonee0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_datetimetimestamp_with_time_zone0mi;
+DROP TABLE public.binary_datetimetimestamp_with_time_zonee0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.datetimetimestamp_with_time_zonee0m
     id integer NOT NULL,
     value timestamp with time zone NOT NULL,
     nullablevalue timestamp with time zone,
-    datetimetimestamp_with_time_zone0mi_id integer,
+    datetimetimestamp_with_time_zonee0mi_id integer,
     CONSTRAINT datetimetimestamp_with_time_zonee0m_pkey PRIMARY KEY (id),
-    CONSTRAINT datetimetimestamp_with_time_zonee0m_datetimetimestamp_with_time_zone0mi_fk FOREIGN KEY (datetimetimestamp_with_time_zone0mi_id)
-        REFERENCES public.datetimetimestamp_with_time_zone0mi (id) MATCH SIMPLE
+    CONSTRAINT datetimetimestamp_with_time_zonee0m_datetimetimestamp_with_time_zonee0mi_fk FOREIGN KEY (datetimetimestamp_with_time_zonee0mi_id)
+        REFERENCES public.datetimetimestamp_with_time_zonee0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_datetimetimestamp_with_time_zonee0m
     id integer NOT NULL,
     value timestamp with time zone NOT NULL,
     nullablevalue timestamp with time zone,
-    datetimetimestamp_with_time_zone0mi_id integer,
+    datetimetimestamp_with_time_zonee0mi_id integer,
     CONSTRAINT binary_datetimetimestamp_with_time_zonee0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_datetimetimestamp_with_time_zonee0m_binary_datetimetimestamp_with_time_zone0mi_fk FOREIGN KEY (datetimetimestamp_with_time_zone0mi_id)
-        REFERENCES public.binary_datetimetimestamp_with_time_zone0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_datetimetimestamp_with_time_zonee0m_binary_datetimetimestamp_with_time_zonee0mi_fk FOREIGN KEY (datetimetimestamp_with_time_zonee0mi_id)
+        REFERENCES public.binary_datetimetimestamp_with_time_zonee0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

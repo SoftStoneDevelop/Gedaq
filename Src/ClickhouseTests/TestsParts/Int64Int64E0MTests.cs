@@ -27,312 +27,360 @@ namespace Tests
         {
             new Int64Int64E0M
 {
-    Id = 1,
-    Value = 502319635069992310L,
-    ModelInner = new Int64Int640MI
+    Id = 6,
+    Value = 5857058111793930462L,
+    ModelInner = new Int64Int64E0MI
 {
     Id = 7,
-    Value = 4704955207840241007L,
-    NullableValue = 7618438237668963427L,
+    Value = 8040187835451708447L,
+    NullableValue = 7123499074461970129L,
 },
-    NullableValue = 6509663070837970163L,
+    NullableValue = 4274742924698131904L,
 },
             new Int64Int64E0M
 {
-    Id = 4,
-    Value = 1496077576413226778L,
-    ModelInner = new Int64Int640MI
+    Id = 11,
+    Value = 7211650949375541706L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 13,
+    Value = 4547865854698538963L,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new Int64Int64E0M
 {
     Id = 15,
-    Value = 2642036020748351847L,
+    Value = 4893471391349483265L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 14,
+    Value = 8571937163480939122L,
     NullableValue = null,
 },
     NullableValue = null,
 },
             new Int64Int64E0M
 {
-    Id = 9,
-    Value = 577005733836939298L,
-    ModelInner = new Int64Int640MI
+    Id = 22,
+    Value = 3831197884129231567L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 23,
-    Value = 1345974627612293762L,
+    Id = 21,
+    Value = 7736915178655179373L,
     NullableValue = null,
 },
-    NullableValue = 5457782743593389552L,
+    NullableValue = 1594654296027249214L,
 },
             new Int64Int64E0M
-{
-    Id = 12,
-    Value = 5056950229024524858L,
-    ModelInner = new Int64Int640MI
 {
     Id = 29,
-    Value = 6110474431554751074L,
-    NullableValue = 1347011847295824458L,
-},
-    NullableValue = null,
-},
-            new Int64Int64E0M
+    Value = 1033488426391507131L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 17,
-    Value = 8143236580553009216L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 36,
-    Value = 8023112117821873817L,
-    NullableValue = null,
+    Id = 23,
+    Value = 7666571140746494523L,
+    NullableValue = 4749209709296336407L,
 },
-    NullableValue = 5346261471812913375L,
-},
-            new Int64Int64E0M
-{
-    Id = 24,
-    Value = 4793517271101725571L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 43,
-    Value = 6569488517676943750L,
-    NullableValue = null,
-},
-    NullableValue = null,
+    NullableValue = 7234213319721553788L,
 },
             new Int64Int64E0M
 {
     Id = 33,
-    Value = 2050841732399570473L,
-    ModelInner = new Int64Int640MI
+    Value = 4725515010510404977L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 50,
-    Value = 3847515108442356245L,
-    NullableValue = null,
-},
-    NullableValue = 7043462763588539532L,
-},
-            new Int64Int64E0M
-{
-    Id = 41,
-    Value = 6564441096619759101L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 53,
-    Value = 7785197813080191762L,
-    NullableValue = 5029411959262457912L,
+    Id = 24,
+    Value = 7635542758048068073L,
+    NullableValue = 2678649829458494256L,
 },
     NullableValue = null,
 },
             new Int64Int64E0M
 {
-    Id = 48,
-    Value = 5959801900362399856L,
-    ModelInner = new Int64Int640MI
+    Id = 42,
+    Value = 1802868227285898215L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 61,
-    Value = 3458859864340543438L,
-    NullableValue = null,
+    Id = 33,
+    Value = 5854093629730024986L,
+    NullableValue = 5615196794270990852L,
 },
-    NullableValue = 7404589066983410428L,
-},
-            new Int64Int64E0M
-{
-    Id = 57,
-    Value = 2660686207742838606L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 68,
-    Value = 609337339661219464L,
-    NullableValue = 6577631272612843916L,
-},
-    NullableValue = null,
+    NullableValue = 659274020888529559L,
 },
             new Int64Int64E0M
 {
-    Id = 58,
-    Value = 8183047030829748518L,
-    ModelInner = new Int64Int640MI
+    Id = 47,
+    Value = 5140041791013268844L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 73,
-    Value = 4420465707209570312L,
-    NullableValue = 8103745199499137006L,
+    Id = 38,
+    Value = 829808384233867265L,
+    NullableValue = 2286362398489321445L,
+},
+    NullableValue = null,
+},
+            new Int64Int64E0M
+{
+    Id = 56,
+    Value = 4406636275631464332L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 44,
+    Value = 6350650383774747790L,
+    NullableValue = null,
+},
+    NullableValue = 5323313945022925268L,
+},
+            new Int64Int64E0M
+{
+    Id = 60,
+    Value = 6854497642760438410L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 49,
+    Value = 8542316044116170851L,
+    NullableValue = 736132687948340006L,
 },
     NullableValue = null,
 },
             new Int64Int64E0M
 {
     Id = 62,
-    Value = 2710935154755814055L,
-    ModelInner = new Int64Int640MI
+    Value = 1308461369068505500L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 79,
-    Value = 96144647430930330L,
-    NullableValue = 2662909319601752062L,
+    Id = 50,
+    Value = 9015167279932718031L,
+    NullableValue = 7258424620886885874L,
 },
     NullableValue = null,
-},
-            new Int64Int64E0M
-{
-    Id = 65,
-    Value = 2061780460556412844L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 81,
-    Value = 5665410803567507171L,
-    NullableValue = 4347852208719413217L,
-},
-    NullableValue = 1945199402003849039L,
 },
             new Int64Int64E0M
 {
     Id = 66,
-    Value = 5478014719029454365L,
-    ModelInner = new Int64Int640MI
+    Value = 4829160300933047480L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 86,
-    Value = 3690145128970001446L,
-    NullableValue = 7142463971868361235L,
+    Id = 51,
+    Value = 6362107914715143805L,
+    NullableValue = 1345005316620294575L,
+},
+    NullableValue = 1747987585845604026L,
+},
+            new Int64Int64E0M
+{
+    Id = 68,
+    Value = 7582302093781676293L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 58,
+    Value = 5418098769954712618L,
+    NullableValue = 73749041524746503L,
 },
     NullableValue = null,
 },
             new Int64Int64E0M
 {
-    Id = 74,
-    Value = 4606914358357849689L,
-    ModelInner = new Int64Int640MI
+    Id = 69,
+    Value = 2042490812677485379L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 93,
-    Value = 4839999568351860273L,
-    NullableValue = 4921212328247162709L,
+    Id = 63,
+    Value = 3195230966860522224L,
+    NullableValue = null,
 },
-    NullableValue = 7387940075512181619L,
+    NullableValue = null,
+},
+            new Int64Int64E0M
+{
+    Id = 73,
+    Value = 4440500369409644049L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 67,
+    Value = 8716496467176812872L,
+    NullableValue = null,
+},
+    NullableValue = null,
 },
             new Int64Int64E0M
 {
     Id = 75,
-    Value = 4211717465107419899L,
-    ModelInner = new Int64Int640MI
+    Value = 2006702873490935460L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 96,
-    Value = 5573757641514670777L,
+    Id = 74,
+    Value = 9122653598066456045L,
+    NullableValue = 1347037047533906719L,
+},
+    NullableValue = null,
+},
+            new Int64Int64E0M
+{
+    Id = 79,
+    Value = 382496803045410307L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 76,
+    Value = 2918256475862638969L,
+    NullableValue = 6761040197633046006L,
+},
+    NullableValue = null,
+},
+            new Int64Int64E0M
+{
+    Id = 86,
+    Value = 6954527044723121102L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 78,
+    Value = 5935266262509227927L,
     NullableValue = null,
 },
     NullableValue = null,
 },
             new Int64Int64E0M
 {
-    Id = 84,
-    Value = 4024925726307291498L,
-    ModelInner = new Int64Int640MI
+    Id = 87,
+    Value = 2192222954731170996L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 102,
-    Value = 8732207018719436925L,
-    NullableValue = null,
+    Id = 87,
+    Value = 6437378211270890392L,
+    NullableValue = 7170347373868500371L,
 },
-    NullableValue = 5584690953011403099L,
+    NullableValue = null,
 },
             new Int64Int64E0M
 {
-    Id = 92,
-    Value = 4563226913096081217L,
-    ModelInner = new Int64Int640MI
+    Id = 93,
+    Value = 5259319750069546746L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 106,
-    Value = 3394850281330383093L,
-    NullableValue = 6321382341335165950L,
+    Id = 90,
+    Value = 3332315567903859723L,
+    NullableValue = null,
 },
-    NullableValue = 1684838823211953219L,
+    NullableValue = 4037193322885400091L,
+},
+            new Int64Int64E0M
+{
+    Id = 97,
+    Value = 6332826863157069519L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 94,
+    Value = 2274288494622770247L,
+    NullableValue = 5078468107254023421L,
+},
+    NullableValue = null,
 },
             new Int64Int64E0M
 {
     Id = 98,
-    Value = 7629488481816576520L,
-    ModelInner = new Int64Int640MI
+    Value = 5195699518804368485L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 109,
-    Value = 7675081406423007529L,
-    NullableValue = 5883063539104406810L,
+    Id = 96,
+    Value = 6638862599359173944L,
+    NullableValue = null,
 },
-    NullableValue = 2666742773677831410L,
+    NullableValue = 17975241543124730L,
 },
             new Int64Int64E0M
 {
-    Id = 106,
-    Value = 6962919108317168738L,
-    ModelInner = new Int64Int640MI
+    Id = 101,
+    Value = 2439329510098485912L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 114,
-    Value = 6870775979642931085L,
-    NullableValue = 5303364638682470685L,
+    Id = 101,
+    Value = 8419137227148152065L,
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new Int64Int64E0M
 {
-    Id = 107,
-    Value = 1757487971675798032L,
-    ModelInner = new Int64Int640MI
+    Id = 110,
+    Value = 4726293659855465978L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 103,
+    Value = 183864003891878869L,
+    NullableValue = 2593117808599581342L,
+},
+    NullableValue = 6543528138195165706L,
+},
+            new Int64Int64E0M
+{
+    Id = 111,
+    Value = 4747856980140243754L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 110,
+    Value = 4155058599916362082L,
+    NullableValue = 3117692949726927516L,
+},
+    NullableValue = 6060368581754784394L,
+},
+            new Int64Int64E0M
 {
     Id = 116,
-    Value = 5024101127059102748L,
+    Value = 132678260644218714L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 112,
+    Value = 2702999873445022795L,
     NullableValue = null,
-},
-    NullableValue = 1458395004085206785L,
-},
-            new Int64Int64E0M
-{
-    Id = 114,
-    Value = 4100200640151474688L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 119,
-    Value = 5995881396098669005L,
-    NullableValue = null,
-},
-    NullableValue = 3942900140333245331L,
-},
-            new Int64Int64E0M
-{
-    Id = 122,
-    Value = 639443828442951904L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 123,
-    Value = 6509605427772528496L,
-    NullableValue = 7532984138186968422L,
-},
-    NullableValue = 3637902088733701361L,
-},
-            new Int64Int64E0M
-{
-    Id = 128,
-    Value = 523970974439971915L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 127,
-    Value = 4891069843523970248L,
-    NullableValue = 2376495370673165593L,
 },
     NullableValue = null,
 },
             new Int64Int64E0M
 {
-    Id = 136,
-    Value = 9018292321856579349L,
-    ModelInner = new Int64Int640MI
+    Id = 121,
+    Value = 6960718186165550663L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 134,
-    Value = 805134340991850670L,
-    NullableValue = 3781072466990745720L,
-},
+    Id = 117,
+    Value = 7310345113720299358L,
     NullableValue = null,
+},
+    NullableValue = 1651659288635209078L,
+},
+            new Int64Int64E0M
+{
+    Id = 130,
+    Value = 2999981241384788976L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 125,
+    Value = 2454949510121120847L,
+    NullableValue = 8704545722411529726L,
+},
+    NullableValue = 2351921296421297035L,
+},
+            new Int64Int64E0M
+{
+    Id = 139,
+    Value = 8166874400741598055L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 133,
+    Value = 3493222211127256444L,
+    NullableValue = null,
+},
+    NullableValue = 4416601804738728492L,
 },
             new Int64Int64E0M
 {
     Id = 143,
-    Value = 1955112615866660927L,
-    ModelInner = new Int64Int640MI
+    Value = 12707984137015772L,
+    ModelInner = new Int64Int64E0MI
 {
     Id = 142,
-    Value = 383027612642142925L,
+    Value = 3664084621288593554L,
     NullableValue = null,
 },
     NullableValue = null,
@@ -340,110 +388,62 @@ namespace Tests
             new Int64Int64E0M
 {
     Id = 146,
-    Value = 5410542970074151455L,
-    ModelInner = new Int64Int640MI
+    Value = 3006258208330157270L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 151,
-    Value = 1548535853007926081L,
+    Id = 145,
+    Value = 4793198392481542502L,
+    NullableValue = null,
+},
+    NullableValue = 9188902354403004979L,
+},
+            new Int64Int64E0M
+{
+    Id = 152,
+    Value = 5354661105228484593L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 146,
+    Value = 8697364682032209228L,
+    NullableValue = null,
+},
+    NullableValue = 4733450444830580767L,
+},
+            new Int64Int64E0M
+{
+    Id = 153,
+    Value = 6305077069699095176L,
+    ModelInner = new Int64Int64E0MI
+{
+    Id = 148,
+    Value = 1742012129075107249L,
     NullableValue = null,
 },
     NullableValue = null,
 },
             new Int64Int64E0M
 {
-    Id = 149,
-    Value = 7873479917087614527L,
-    ModelInner = new Int64Int640MI
+    Id = 162,
+    Value = 6824248238380957600L,
+    ModelInner = new Int64Int64E0MI
 {
-    Id = 154,
-    Value = 4230469621037190984L,
-    NullableValue = 5077531631764233736L,
-},
+    Id = 153,
+    Value = 4836096538342988928L,
     NullableValue = null,
+},
+    NullableValue = 1742211205572912102L,
 },
             new Int64Int64E0M
 {
-    Id = 158,
-    Value = 940806823731801689L,
-    ModelInner = new Int64Int640MI
+    Id = 169,
+    Value = 594464397016575917L,
+    ModelInner = new Int64Int64E0MI
 {
     Id = 155,
-    Value = 8514684488942507838L,
-    NullableValue = 2992434636217909479L,
+    Value = 3029815386291781306L,
+    NullableValue = 8771124205857564367L,
 },
     NullableValue = null,
-},
-            new Int64Int64E0M
-{
-    Id = 166,
-    Value = 1856410542378346445L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 164,
-    Value = 5367198629784505237L,
-    NullableValue = 7431764399201738931L,
-},
-    NullableValue = null,
-},
-            new Int64Int64E0M
-{
-    Id = 173,
-    Value = 3093944908252341854L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 172,
-    Value = 2176079394621665412L,
-    NullableValue = 2467522304496936988L,
-},
-    NullableValue = null,
-},
-            new Int64Int64E0M
-{
-    Id = 182,
-    Value = 1365118926827032928L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 179,
-    Value = 2097030877535102594L,
-    NullableValue = 553077160595064665L,
-},
-    NullableValue = null,
-},
-            new Int64Int64E0M
-{
-    Id = 191,
-    Value = 542213412230259939L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 182,
-    Value = 4034046150129966167L,
-    NullableValue = 6341330363071248113L,
-},
-    NullableValue = null,
-},
-            new Int64Int64E0M
-{
-    Id = 192,
-    Value = 1142568829132556130L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 184,
-    Value = 6222456694204234012L,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new Int64Int64E0M
-{
-    Id = 197,
-    Value = 4998100094502916875L,
-    ModelInner = new Int64Int640MI
-{
-    Id = 187,
-    Value = 5336086344842602822L,
-    NullableValue = 6633459542769901545L,
-},
-    NullableValue = 3143865218164382494L,
 },
         };
 

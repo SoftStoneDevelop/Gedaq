@@ -21,11 +21,11 @@ namespace Tests
         private async Task CreateModelInnerTable(SqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE dbo.dateonlydate0mi(
+CREATE TABLE dbo.dateonlydatee0mi(
 	id int NOT NULL,
 	value date NOT NULL,
 	nullablevalue date NULL,
-    CONSTRAINT PK_dateonlydate0mi PRIMARY KEY NONCLUSTERED (id)
+    CONSTRAINT PK_dateonlydatee0mi PRIMARY KEY NONCLUSTERED (id)
 )
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -35,7 +35,7 @@ CREATE TABLE dbo.dateonlydate0mi(
         private async Task DropModelInnerTable(SqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE dbo.dateonlydate0mi
+DROP TABLE dbo.dateonlydatee0mi
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -48,10 +48,10 @@ CREATE TABLE dbo.dateonlydatee0m(
 	id int NOT NULL,
 	value date NOT NULL,
     nullablevalue date NULL,
-	dateonlydate0mi_id int NULL,
+	dateonlydatee0mi_id int NULL,
     CONSTRAINT PK_dateonlydatee0m PRIMARY KEY NONCLUSTERED (id),
-    CONSTRAINT FK_dateonlydatee0m_dateonlydate0mi FOREIGN KEY (dateonlydate0mi_id)
-        REFERENCES dbo.dateonlydate0mi (id)
+    CONSTRAINT FK_dateonlydatee0m_dateonlydatee0mi FOREIGN KEY (dateonlydatee0mi_id)
+        REFERENCES dbo.dateonlydatee0mi (id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
 )

@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.String> Value { get; set; }
 
-        public StringtextListD12MI ModelInner { get; set; }
+        public StringtextListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.String> NullableValue { get; set; }

@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.dateonlydatelistd12mi
+CREATE TABLE public.dateonlydatelistd1e2mi
 (
     id integer NOT NULL,
     value date[] NOT NULL,
     nullablevalue date[],
-    CONSTRAINT dateonlydatelistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT dateonlydatelistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_dateonlydatelistd12mi
+CREATE TABLE public.binary_dateonlydatelistd1e2mi
 (
     id integer NOT NULL,
     value date[] NOT NULL,
     nullablevalue date[],
-    CONSTRAINT binary_dateonlydatelistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_dateonlydatelistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_dateonlydatelistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.dateonlydatelistd12mi;
+DROP TABLE public.dateonlydatelistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_dateonlydatelistd12mi;
+DROP TABLE public.binary_dateonlydatelistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.dateonlydatelistd1e2m
     id integer NOT NULL,
     value date[] NOT NULL,
     nullablevalue date[],
-    dateonlydatelistd12mi_id integer,
+    dateonlydatelistd1e2mi_id integer,
     CONSTRAINT dateonlydatelistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT dateonlydatelistd1e2m_dateonlydatelistd12mi_fk FOREIGN KEY (dateonlydatelistd12mi_id)
-        REFERENCES public.dateonlydatelistd12mi (id) MATCH SIMPLE
+    CONSTRAINT dateonlydatelistd1e2m_dateonlydatelistd1e2mi_fk FOREIGN KEY (dateonlydatelistd1e2mi_id)
+        REFERENCES public.dateonlydatelistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_dateonlydatelistd1e2m
     id integer NOT NULL,
     value date[] NOT NULL,
     nullablevalue date[],
-    dateonlydatelistd12mi_id integer,
+    dateonlydatelistd1e2mi_id integer,
     CONSTRAINT binary_dateonlydatelistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_dateonlydatelistd1e2m_binary_dateonlydatelistd12mi_fk FOREIGN KEY (dateonlydatelistd12mi_id)
-        REFERENCES public.binary_dateonlydatelistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_dateonlydatelistd1e2m_binary_dateonlydatelistd1e2mi_fk FOREIGN KEY (dateonlydatelistd1e2mi_id)
+        REFERENCES public.binary_dateonlydatelistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

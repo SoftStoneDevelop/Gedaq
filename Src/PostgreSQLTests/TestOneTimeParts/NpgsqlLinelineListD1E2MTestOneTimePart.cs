@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.npgsqllinelinelistd12mi
+CREATE TABLE public.npgsqllinelinelistd1e2mi
 (
     id integer NOT NULL,
     value line[] NOT NULL,
     nullablevalue line[],
-    CONSTRAINT npgsqllinelinelistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT npgsqllinelinelistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_npgsqllinelinelistd12mi
+CREATE TABLE public.binary_npgsqllinelinelistd1e2mi
 (
     id integer NOT NULL,
     value line[] NOT NULL,
     nullablevalue line[],
-    CONSTRAINT binary_npgsqllinelinelistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_npgsqllinelinelistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_npgsqllinelinelistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.npgsqllinelinelistd12mi;
+DROP TABLE public.npgsqllinelinelistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_npgsqllinelinelistd12mi;
+DROP TABLE public.binary_npgsqllinelinelistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.npgsqllinelinelistd1e2m
     id integer NOT NULL,
     value line[] NOT NULL,
     nullablevalue line[],
-    npgsqllinelinelistd12mi_id integer,
+    npgsqllinelinelistd1e2mi_id integer,
     CONSTRAINT npgsqllinelinelistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT npgsqllinelinelistd1e2m_npgsqllinelinelistd12mi_fk FOREIGN KEY (npgsqllinelinelistd12mi_id)
-        REFERENCES public.npgsqllinelinelistd12mi (id) MATCH SIMPLE
+    CONSTRAINT npgsqllinelinelistd1e2m_npgsqllinelinelistd1e2mi_fk FOREIGN KEY (npgsqllinelinelistd1e2mi_id)
+        REFERENCES public.npgsqllinelinelistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_npgsqllinelinelistd1e2m
     id integer NOT NULL,
     value line[] NOT NULL,
     nullablevalue line[],
-    npgsqllinelinelistd12mi_id integer,
+    npgsqllinelinelistd1e2mi_id integer,
     CONSTRAINT binary_npgsqllinelinelistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_npgsqllinelinelistd1e2m_binary_npgsqllinelinelistd12mi_fk FOREIGN KEY (npgsqllinelinelistd12mi_id)
-        REFERENCES public.binary_npgsqllinelinelistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_npgsqllinelinelistd1e2m_binary_npgsqllinelinelistd1e2mi_fk FOREIGN KEY (npgsqllinelinelistd1e2mi_id)
+        REFERENCES public.binary_npgsqllinelinelistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

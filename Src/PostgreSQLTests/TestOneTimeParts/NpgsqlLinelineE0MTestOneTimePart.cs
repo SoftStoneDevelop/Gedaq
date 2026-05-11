@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.npgsqllineline0mi
+CREATE TABLE public.npgsqllinelinee0mi
 (
     id integer NOT NULL,
     value line NOT NULL,
     nullablevalue line,
-    CONSTRAINT npgsqllineline0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT npgsqllinelinee0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_npgsqllineline0mi
+CREATE TABLE public.binary_npgsqllinelinee0mi
 (
     id integer NOT NULL,
     value line NOT NULL,
     nullablevalue line,
-    CONSTRAINT binary_npgsqllineline0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_npgsqllinelinee0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_npgsqllineline0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.npgsqllineline0mi;
+DROP TABLE public.npgsqllinelinee0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_npgsqllineline0mi;
+DROP TABLE public.binary_npgsqllinelinee0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.npgsqllinelinee0m
     id integer NOT NULL,
     value line NOT NULL,
     nullablevalue line,
-    npgsqllineline0mi_id integer,
+    npgsqllinelinee0mi_id integer,
     CONSTRAINT npgsqllinelinee0m_pkey PRIMARY KEY (id),
-    CONSTRAINT npgsqllinelinee0m_npgsqllineline0mi_fk FOREIGN KEY (npgsqllineline0mi_id)
-        REFERENCES public.npgsqllineline0mi (id) MATCH SIMPLE
+    CONSTRAINT npgsqllinelinee0m_npgsqllinelinee0mi_fk FOREIGN KEY (npgsqllinelinee0mi_id)
+        REFERENCES public.npgsqllinelinee0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_npgsqllinelinee0m
     id integer NOT NULL,
     value line NOT NULL,
     nullablevalue line,
-    npgsqllineline0mi_id integer,
+    npgsqllinelinee0mi_id integer,
     CONSTRAINT binary_npgsqllinelinee0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_npgsqllinelinee0m_binary_npgsqllineline0mi_fk FOREIGN KEY (npgsqllineline0mi_id)
-        REFERENCES public.binary_npgsqllineline0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_npgsqllinelinee0m_binary_npgsqllinelinee0mi_fk FOREIGN KEY (npgsqllinelinee0mi_id)
+        REFERENCES public.binary_npgsqllinelinee0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.Numerics.BigInteger> Value { get; set; }
 
-        public BigIntegernumericListD12MI ModelInner { get; set; }
+        public BigIntegernumericListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.Numerics.BigInteger> NullableValue { get; set; }

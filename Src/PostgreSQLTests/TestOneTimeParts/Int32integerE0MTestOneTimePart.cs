@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.int32integer0mi
+CREATE TABLE public.int32integere0mi
 (
     id integer NOT NULL,
     value integer NOT NULL,
     nullablevalue integer,
-    CONSTRAINT int32integer0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT int32integere0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_int32integer0mi
+CREATE TABLE public.binary_int32integere0mi
 (
     id integer NOT NULL,
     value integer NOT NULL,
     nullablevalue integer,
-    CONSTRAINT binary_int32integer0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_int32integere0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_int32integer0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.int32integer0mi;
+DROP TABLE public.int32integere0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_int32integer0mi;
+DROP TABLE public.binary_int32integere0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.int32integere0m
     id integer NOT NULL,
     value integer NOT NULL,
     nullablevalue integer,
-    int32integer0mi_id integer,
+    int32integere0mi_id integer,
     CONSTRAINT int32integere0m_pkey PRIMARY KEY (id),
-    CONSTRAINT int32integere0m_int32integer0mi_fk FOREIGN KEY (int32integer0mi_id)
-        REFERENCES public.int32integer0mi (id) MATCH SIMPLE
+    CONSTRAINT int32integere0m_int32integere0mi_fk FOREIGN KEY (int32integere0mi_id)
+        REFERENCES public.int32integere0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_int32integere0m
     id integer NOT NULL,
     value integer NOT NULL,
     nullablevalue integer,
-    int32integer0mi_id integer,
+    int32integere0mi_id integer,
     CONSTRAINT binary_int32integere0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_int32integere0m_binary_int32integer0mi_fk FOREIGN KEY (int32integer0mi_id)
-        REFERENCES public.binary_int32integer0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_int32integere0m_binary_int32integere0mi_fk FOREIGN KEY (int32integere0mi_id)
+        REFERENCES public.binary_int32integere0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

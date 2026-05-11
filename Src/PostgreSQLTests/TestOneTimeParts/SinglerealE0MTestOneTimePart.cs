@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.singlereal0mi
+CREATE TABLE public.singlereale0mi
 (
     id integer NOT NULL,
     value real NOT NULL,
     nullablevalue real,
-    CONSTRAINT singlereal0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT singlereale0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_singlereal0mi
+CREATE TABLE public.binary_singlereale0mi
 (
     id integer NOT NULL,
     value real NOT NULL,
     nullablevalue real,
-    CONSTRAINT binary_singlereal0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_singlereale0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_singlereal0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.singlereal0mi;
+DROP TABLE public.singlereale0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_singlereal0mi;
+DROP TABLE public.binary_singlereale0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.singlereale0m
     id integer NOT NULL,
     value real NOT NULL,
     nullablevalue real,
-    singlereal0mi_id integer,
+    singlereale0mi_id integer,
     CONSTRAINT singlereale0m_pkey PRIMARY KEY (id),
-    CONSTRAINT singlereale0m_singlereal0mi_fk FOREIGN KEY (singlereal0mi_id)
-        REFERENCES public.singlereal0mi (id) MATCH SIMPLE
+    CONSTRAINT singlereale0m_singlereale0mi_fk FOREIGN KEY (singlereale0mi_id)
+        REFERENCES public.singlereale0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_singlereale0m
     id integer NOT NULL,
     value real NOT NULL,
     nullablevalue real,
-    singlereal0mi_id integer,
+    singlereale0mi_id integer,
     CONSTRAINT binary_singlereale0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_singlereale0m_binary_singlereal0mi_fk FOREIGN KEY (singlereal0mi_id)
-        REFERENCES public.binary_singlereal0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_singlereale0m_binary_singlereale0mi_fk FOREIGN KEY (singlereale0mi_id)
+        REFERENCES public.binary_singlereale0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

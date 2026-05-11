@@ -12,7 +12,7 @@ namespace Tests
         
         public System.DateTime Value { get; set; }
 
-        public DateTimedatetime20MI ModelInner { get; set; }
+        public DateTimedatetime2E0MI ModelInner { get; set; }
 
         
         public System.DateTime? NullableValue { get; set; }

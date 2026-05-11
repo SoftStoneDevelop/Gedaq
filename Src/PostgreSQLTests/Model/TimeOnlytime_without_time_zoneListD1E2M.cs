@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.TimeOnly> Value { get; set; }
 
-        public TimeOnlytime_without_time_zoneListD12MI ModelInner { get; set; }
+        public TimeOnlytime_without_time_zoneListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.TimeOnly> NullableValue { get; set; }

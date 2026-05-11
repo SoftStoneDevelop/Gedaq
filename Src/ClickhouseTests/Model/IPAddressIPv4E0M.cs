@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Net.IPAddress Value { get; set; }
 
-        public IPAddressIPv40MI ModelInner { get; set; }
+        public IPAddressIPv4E0MI ModelInner { get; set; }
 
         
         public System.Net.IPAddress? NullableValue { get; set; }

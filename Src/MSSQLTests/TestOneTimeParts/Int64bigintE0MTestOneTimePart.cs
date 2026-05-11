@@ -21,11 +21,11 @@ namespace Tests
         private async Task CreateModelInnerTable(SqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE dbo.int64bigint0mi(
+CREATE TABLE dbo.int64biginte0mi(
 	id int NOT NULL,
 	value bigint NOT NULL,
 	nullablevalue bigint NULL,
-    CONSTRAINT PK_int64bigint0mi PRIMARY KEY NONCLUSTERED (id)
+    CONSTRAINT PK_int64biginte0mi PRIMARY KEY NONCLUSTERED (id)
 )
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -35,7 +35,7 @@ CREATE TABLE dbo.int64bigint0mi(
         private async Task DropModelInnerTable(SqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE dbo.int64bigint0mi
+DROP TABLE dbo.int64biginte0mi
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -48,10 +48,10 @@ CREATE TABLE dbo.int64biginte0m(
 	id int NOT NULL,
 	value bigint NOT NULL,
     nullablevalue bigint NULL,
-	int64bigint0mi_id int NULL,
+	int64biginte0mi_id int NULL,
     CONSTRAINT PK_int64biginte0m PRIMARY KEY NONCLUSTERED (id),
-    CONSTRAINT FK_int64biginte0m_int64bigint0mi FOREIGN KEY (int64bigint0mi_id)
-        REFERENCES dbo.int64bigint0mi (id)
+    CONSTRAINT FK_int64biginte0m_int64biginte0mi FOREIGN KEY (int64biginte0mi_id)
+        REFERENCES dbo.int64biginte0mi (id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
 )

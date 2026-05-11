@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Char Value { get; set; }
 
-        public Charchar0MI ModelInner { get; set; }
+        public CharcharE0MI ModelInner { get; set; }
 
         
         public System.Char? NullableValue { get; set; }

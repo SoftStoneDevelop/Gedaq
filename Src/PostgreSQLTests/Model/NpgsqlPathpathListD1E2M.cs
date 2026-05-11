@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPath> Value { get; set; }
 
-        public NpgsqlPathpathListD12MI ModelInner { get; set; }
+        public NpgsqlPathpathListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlPath> NullableValue { get; set; }

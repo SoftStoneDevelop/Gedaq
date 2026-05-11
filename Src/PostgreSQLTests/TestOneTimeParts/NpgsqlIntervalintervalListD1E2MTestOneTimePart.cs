@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.npgsqlintervalintervallistd12mi
+CREATE TABLE public.npgsqlintervalintervallistd1e2mi
 (
     id integer NOT NULL,
     value interval[] NOT NULL,
     nullablevalue interval[],
-    CONSTRAINT npgsqlintervalintervallistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT npgsqlintervalintervallistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_npgsqlintervalintervallistd12mi
+CREATE TABLE public.binary_npgsqlintervalintervallistd1e2mi
 (
     id integer NOT NULL,
     value interval[] NOT NULL,
     nullablevalue interval[],
-    CONSTRAINT binary_npgsqlintervalintervallistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_npgsqlintervalintervallistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_npgsqlintervalintervallistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.npgsqlintervalintervallistd12mi;
+DROP TABLE public.npgsqlintervalintervallistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_npgsqlintervalintervallistd12mi;
+DROP TABLE public.binary_npgsqlintervalintervallistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.npgsqlintervalintervallistd1e2m
     id integer NOT NULL,
     value interval[] NOT NULL,
     nullablevalue interval[],
-    npgsqlintervalintervallistd12mi_id integer,
+    npgsqlintervalintervallistd1e2mi_id integer,
     CONSTRAINT npgsqlintervalintervallistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT npgsqlintervalintervallistd1e2m_npgsqlintervalintervallistd12mi_fk FOREIGN KEY (npgsqlintervalintervallistd12mi_id)
-        REFERENCES public.npgsqlintervalintervallistd12mi (id) MATCH SIMPLE
+    CONSTRAINT npgsqlintervalintervallistd1e2m_npgsqlintervalintervallistd1e2mi_fk FOREIGN KEY (npgsqlintervalintervallistd1e2mi_id)
+        REFERENCES public.npgsqlintervalintervallistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_npgsqlintervalintervallistd1e2m
     id integer NOT NULL,
     value interval[] NOT NULL,
     nullablevalue interval[],
-    npgsqlintervalintervallistd12mi_id integer,
+    npgsqlintervalintervallistd1e2mi_id integer,
     CONSTRAINT binary_npgsqlintervalintervallistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_npgsqlintervalintervallistd1e2m_binary_npgsqlintervalintervallistd12mi_fk FOREIGN KEY (npgsqlintervalintervallistd12mi_id)
-        REFERENCES public.binary_npgsqlintervalintervallistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_npgsqlintervalintervallistd1e2m_binary_npgsqlintervalintervallistd1e2mi_fk FOREIGN KEY (npgsqlintervalintervallistd1e2mi_id)
+        REFERENCES public.binary_npgsqlintervalintervallistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

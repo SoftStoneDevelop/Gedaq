@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.Boolean> Value { get; set; }
 
-        public BooleanbooleanListD12MI ModelInner { get; set; }
+        public BooleanbooleanListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.Boolean> NullableValue { get; set; }

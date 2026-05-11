@@ -12,7 +12,7 @@ namespace Tests
         
         public NpgsqlTypes.NpgsqlPath Value { get; set; }
 
-        public NpgsqlPathpath0MI ModelInner { get; set; }
+        public NpgsqlPathpathE0MI ModelInner { get; set; }
 
         
         public NpgsqlTypes.NpgsqlPath? NullableValue { get; set; }

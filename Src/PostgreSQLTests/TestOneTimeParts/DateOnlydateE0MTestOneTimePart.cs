@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.dateonlydate0mi
+CREATE TABLE public.dateonlydatee0mi
 (
     id integer NOT NULL,
     value date NOT NULL,
     nullablevalue date,
-    CONSTRAINT dateonlydate0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT dateonlydatee0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_dateonlydate0mi
+CREATE TABLE public.binary_dateonlydatee0mi
 (
     id integer NOT NULL,
     value date NOT NULL,
     nullablevalue date,
-    CONSTRAINT binary_dateonlydate0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_dateonlydatee0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_dateonlydate0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.dateonlydate0mi;
+DROP TABLE public.dateonlydatee0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_dateonlydate0mi;
+DROP TABLE public.binary_dateonlydatee0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.dateonlydatee0m
     id integer NOT NULL,
     value date NOT NULL,
     nullablevalue date,
-    dateonlydate0mi_id integer,
+    dateonlydatee0mi_id integer,
     CONSTRAINT dateonlydatee0m_pkey PRIMARY KEY (id),
-    CONSTRAINT dateonlydatee0m_dateonlydate0mi_fk FOREIGN KEY (dateonlydate0mi_id)
-        REFERENCES public.dateonlydate0mi (id) MATCH SIMPLE
+    CONSTRAINT dateonlydatee0m_dateonlydatee0mi_fk FOREIGN KEY (dateonlydatee0mi_id)
+        REFERENCES public.dateonlydatee0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_dateonlydatee0m
     id integer NOT NULL,
     value date NOT NULL,
     nullablevalue date,
-    dateonlydate0mi_id integer,
+    dateonlydatee0mi_id integer,
     CONSTRAINT binary_dateonlydatee0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_dateonlydatee0m_binary_dateonlydate0mi_fk FOREIGN KEY (dateonlydate0mi_id)
-        REFERENCES public.binary_dateonlydate0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_dateonlydatee0m_binary_dateonlydatee0mi_fk FOREIGN KEY (dateonlydatee0mi_id)
+        REFERENCES public.binary_dateonlydatee0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

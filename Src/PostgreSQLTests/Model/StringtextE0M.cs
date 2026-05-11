@@ -12,7 +12,7 @@ namespace Tests
         
         public System.String Value { get; set; }
 
-        public Stringtext0MI ModelInner { get; set; }
+        public StringtextE0MI ModelInner { get; set; }
 
         
         public System.String NullableValue { get; set; }

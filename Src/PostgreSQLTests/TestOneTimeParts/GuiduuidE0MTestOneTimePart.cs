@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.guiduuid0mi
+CREATE TABLE public.guiduuide0mi
 (
     id integer NOT NULL,
     value uuid NOT NULL,
     nullablevalue uuid,
-    CONSTRAINT guiduuid0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT guiduuide0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_guiduuid0mi
+CREATE TABLE public.binary_guiduuide0mi
 (
     id integer NOT NULL,
     value uuid NOT NULL,
     nullablevalue uuid,
-    CONSTRAINT binary_guiduuid0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_guiduuide0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_guiduuid0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.guiduuid0mi;
+DROP TABLE public.guiduuide0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_guiduuid0mi;
+DROP TABLE public.binary_guiduuide0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.guiduuide0m
     id integer NOT NULL,
     value uuid NOT NULL,
     nullablevalue uuid,
-    guiduuid0mi_id integer,
+    guiduuide0mi_id integer,
     CONSTRAINT guiduuide0m_pkey PRIMARY KEY (id),
-    CONSTRAINT guiduuide0m_guiduuid0mi_fk FOREIGN KEY (guiduuid0mi_id)
-        REFERENCES public.guiduuid0mi (id) MATCH SIMPLE
+    CONSTRAINT guiduuide0m_guiduuide0mi_fk FOREIGN KEY (guiduuide0mi_id)
+        REFERENCES public.guiduuide0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_guiduuide0m
     id integer NOT NULL,
     value uuid NOT NULL,
     nullablevalue uuid,
-    guiduuid0mi_id integer,
+    guiduuide0mi_id integer,
     CONSTRAINT binary_guiduuide0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_guiduuide0m_binary_guiduuid0mi_fk FOREIGN KEY (guiduuid0mi_id)
-        REFERENCES public.binary_guiduuid0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_guiduuide0m_binary_guiduuide0mi_fk FOREIGN KEY (guiduuide0mi_id)
+        REFERENCES public.binary_guiduuide0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

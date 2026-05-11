@@ -12,7 +12,7 @@ namespace Tests
         
         public NpgsqlTypes.NpgsqlLine Value { get; set; }
 
-        public NpgsqlLineline0MI ModelInner { get; set; }
+        public NpgsqlLinelineE0MI ModelInner { get; set; }
 
         
         public NpgsqlTypes.NpgsqlLine? NullableValue { get; set; }

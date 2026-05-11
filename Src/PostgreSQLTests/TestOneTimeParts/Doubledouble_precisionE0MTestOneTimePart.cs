@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.doubledouble_precision0mi
+CREATE TABLE public.doubledouble_precisione0mi
 (
     id integer NOT NULL,
     value double precision NOT NULL,
     nullablevalue double precision,
-    CONSTRAINT doubledouble_precision0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT doubledouble_precisione0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_doubledouble_precision0mi
+CREATE TABLE public.binary_doubledouble_precisione0mi
 (
     id integer NOT NULL,
     value double precision NOT NULL,
     nullablevalue double precision,
-    CONSTRAINT binary_doubledouble_precision0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_doubledouble_precisione0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_doubledouble_precision0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.doubledouble_precision0mi;
+DROP TABLE public.doubledouble_precisione0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_doubledouble_precision0mi;
+DROP TABLE public.binary_doubledouble_precisione0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.doubledouble_precisione0m
     id integer NOT NULL,
     value double precision NOT NULL,
     nullablevalue double precision,
-    doubledouble_precision0mi_id integer,
+    doubledouble_precisione0mi_id integer,
     CONSTRAINT doubledouble_precisione0m_pkey PRIMARY KEY (id),
-    CONSTRAINT doubledouble_precisione0m_doubledouble_precision0mi_fk FOREIGN KEY (doubledouble_precision0mi_id)
-        REFERENCES public.doubledouble_precision0mi (id) MATCH SIMPLE
+    CONSTRAINT doubledouble_precisione0m_doubledouble_precisione0mi_fk FOREIGN KEY (doubledouble_precisione0mi_id)
+        REFERENCES public.doubledouble_precisione0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_doubledouble_precisione0m
     id integer NOT NULL,
     value double precision NOT NULL,
     nullablevalue double precision,
-    doubledouble_precision0mi_id integer,
+    doubledouble_precisione0mi_id integer,
     CONSTRAINT binary_doubledouble_precisione0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_doubledouble_precisione0m_binary_doubledouble_precision0mi_fk FOREIGN KEY (doubledouble_precision0mi_id)
-        REFERENCES public.binary_doubledouble_precision0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_doubledouble_precisione0m_binary_doubledouble_precisione0mi_fk FOREIGN KEY (doubledouble_precisione0mi_id)
+        REFERENCES public.binary_doubledouble_precisione0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

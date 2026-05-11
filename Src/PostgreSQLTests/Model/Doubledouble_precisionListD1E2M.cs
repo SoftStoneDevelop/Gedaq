@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.Double> Value { get; set; }
 
-        public Doubledouble_precisionListD12MI ModelInner { get; set; }
+        public Doubledouble_precisionListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.Double> NullableValue { get; set; }

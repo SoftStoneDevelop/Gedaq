@@ -12,7 +12,7 @@ namespace Tests
         
         public NpgsqlTypes.NpgsqlPolygon Value { get; set; }
 
-        public NpgsqlPolygonpolygon0MI ModelInner { get; set; }
+        public NpgsqlPolygonpolygonE0MI ModelInner { get; set; }
 
         
         public NpgsqlTypes.NpgsqlPolygon? NullableValue { get; set; }

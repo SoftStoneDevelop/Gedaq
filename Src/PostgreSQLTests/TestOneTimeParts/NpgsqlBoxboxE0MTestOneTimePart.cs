@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.npgsqlboxbox0mi
+CREATE TABLE public.npgsqlboxboxe0mi
 (
     id integer NOT NULL,
     value box NOT NULL,
     nullablevalue box,
-    CONSTRAINT npgsqlboxbox0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT npgsqlboxboxe0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_npgsqlboxbox0mi
+CREATE TABLE public.binary_npgsqlboxboxe0mi
 (
     id integer NOT NULL,
     value box NOT NULL,
     nullablevalue box,
-    CONSTRAINT binary_npgsqlboxbox0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_npgsqlboxboxe0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_npgsqlboxbox0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.npgsqlboxbox0mi;
+DROP TABLE public.npgsqlboxboxe0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_npgsqlboxbox0mi;
+DROP TABLE public.binary_npgsqlboxboxe0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.npgsqlboxboxe0m
     id integer NOT NULL,
     value box NOT NULL,
     nullablevalue box,
-    npgsqlboxbox0mi_id integer,
+    npgsqlboxboxe0mi_id integer,
     CONSTRAINT npgsqlboxboxe0m_pkey PRIMARY KEY (id),
-    CONSTRAINT npgsqlboxboxe0m_npgsqlboxbox0mi_fk FOREIGN KEY (npgsqlboxbox0mi_id)
-        REFERENCES public.npgsqlboxbox0mi (id) MATCH SIMPLE
+    CONSTRAINT npgsqlboxboxe0m_npgsqlboxboxe0mi_fk FOREIGN KEY (npgsqlboxboxe0mi_id)
+        REFERENCES public.npgsqlboxboxe0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_npgsqlboxboxe0m
     id integer NOT NULL,
     value box NOT NULL,
     nullablevalue box,
-    npgsqlboxbox0mi_id integer,
+    npgsqlboxboxe0mi_id integer,
     CONSTRAINT binary_npgsqlboxboxe0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_npgsqlboxboxe0m_binary_npgsqlboxbox0mi_fk FOREIGN KEY (npgsqlboxbox0mi_id)
-        REFERENCES public.binary_npgsqlboxbox0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_npgsqlboxboxe0m_binary_npgsqlboxboxe0mi_fk FOREIGN KEY (npgsqlboxboxe0mi_id)
+        REFERENCES public.binary_npgsqlboxboxe0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

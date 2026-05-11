@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.Guid> Value { get; set; }
 
-        public GuiduuidListD12MI ModelInner { get; set; }
+        public GuiduuidListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.Guid> NullableValue { get; set; }

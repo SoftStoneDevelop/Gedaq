@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.decimalmoneylistd12mi
+CREATE TABLE public.decimalmoneylistd1e2mi
 (
     id integer NOT NULL,
     value money[] NOT NULL,
     nullablevalue money[],
-    CONSTRAINT decimalmoneylistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT decimalmoneylistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_decimalmoneylistd12mi
+CREATE TABLE public.binary_decimalmoneylistd1e2mi
 (
     id integer NOT NULL,
     value money[] NOT NULL,
     nullablevalue money[],
-    CONSTRAINT binary_decimalmoneylistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_decimalmoneylistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_decimalmoneylistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.decimalmoneylistd12mi;
+DROP TABLE public.decimalmoneylistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_decimalmoneylistd12mi;
+DROP TABLE public.binary_decimalmoneylistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.decimalmoneylistd1e2m
     id integer NOT NULL,
     value money[] NOT NULL,
     nullablevalue money[],
-    decimalmoneylistd12mi_id integer,
+    decimalmoneylistd1e2mi_id integer,
     CONSTRAINT decimalmoneylistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT decimalmoneylistd1e2m_decimalmoneylistd12mi_fk FOREIGN KEY (decimalmoneylistd12mi_id)
-        REFERENCES public.decimalmoneylistd12mi (id) MATCH SIMPLE
+    CONSTRAINT decimalmoneylistd1e2m_decimalmoneylistd1e2mi_fk FOREIGN KEY (decimalmoneylistd1e2mi_id)
+        REFERENCES public.decimalmoneylistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_decimalmoneylistd1e2m
     id integer NOT NULL,
     value money[] NOT NULL,
     nullablevalue money[],
-    decimalmoneylistd12mi_id integer,
+    decimalmoneylistd1e2mi_id integer,
     CONSTRAINT binary_decimalmoneylistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_decimalmoneylistd1e2m_binary_decimalmoneylistd12mi_fk FOREIGN KEY (decimalmoneylistd12mi_id)
-        REFERENCES public.binary_decimalmoneylistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_decimalmoneylistd1e2m_binary_decimalmoneylistd1e2mi_fk FOREIGN KEY (decimalmoneylistd1e2mi_id)
+        REFERENCES public.binary_decimalmoneylistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

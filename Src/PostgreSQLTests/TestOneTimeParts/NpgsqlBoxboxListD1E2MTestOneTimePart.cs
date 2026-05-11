@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.npgsqlboxboxlistd12mi
+CREATE TABLE public.npgsqlboxboxlistd1e2mi
 (
     id integer NOT NULL,
     value box[] NOT NULL,
     nullablevalue box[],
-    CONSTRAINT npgsqlboxboxlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT npgsqlboxboxlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_npgsqlboxboxlistd12mi
+CREATE TABLE public.binary_npgsqlboxboxlistd1e2mi
 (
     id integer NOT NULL,
     value box[] NOT NULL,
     nullablevalue box[],
-    CONSTRAINT binary_npgsqlboxboxlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_npgsqlboxboxlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_npgsqlboxboxlistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.npgsqlboxboxlistd12mi;
+DROP TABLE public.npgsqlboxboxlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_npgsqlboxboxlistd12mi;
+DROP TABLE public.binary_npgsqlboxboxlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.npgsqlboxboxlistd1e2m
     id integer NOT NULL,
     value box[] NOT NULL,
     nullablevalue box[],
-    npgsqlboxboxlistd12mi_id integer,
+    npgsqlboxboxlistd1e2mi_id integer,
     CONSTRAINT npgsqlboxboxlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT npgsqlboxboxlistd1e2m_npgsqlboxboxlistd12mi_fk FOREIGN KEY (npgsqlboxboxlistd12mi_id)
-        REFERENCES public.npgsqlboxboxlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT npgsqlboxboxlistd1e2m_npgsqlboxboxlistd1e2mi_fk FOREIGN KEY (npgsqlboxboxlistd1e2mi_id)
+        REFERENCES public.npgsqlboxboxlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_npgsqlboxboxlistd1e2m
     id integer NOT NULL,
     value box[] NOT NULL,
     nullablevalue box[],
-    npgsqlboxboxlistd12mi_id integer,
+    npgsqlboxboxlistd1e2mi_id integer,
     CONSTRAINT binary_npgsqlboxboxlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_npgsqlboxboxlistd1e2m_binary_npgsqlboxboxlistd12mi_fk FOREIGN KEY (npgsqlboxboxlistd12mi_id)
-        REFERENCES public.binary_npgsqlboxboxlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_npgsqlboxboxlistd1e2m_binary_npgsqlboxboxlistd1e2mi_fk FOREIGN KEY (npgsqlboxboxlistd1e2mi_id)
+        REFERENCES public.binary_npgsqlboxboxlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

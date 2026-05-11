@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlLine> Value { get; set; }
 
-        public NpgsqlLinelineListD12MI ModelInner { get; set; }
+        public NpgsqlLinelineListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlLine> NullableValue { get; set; }

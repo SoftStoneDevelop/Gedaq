@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.int16smallint0mi
+CREATE TABLE public.int16smallinte0mi
 (
     id integer NOT NULL,
     value smallint NOT NULL,
     nullablevalue smallint,
-    CONSTRAINT int16smallint0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT int16smallinte0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_int16smallint0mi
+CREATE TABLE public.binary_int16smallinte0mi
 (
     id integer NOT NULL,
     value smallint NOT NULL,
     nullablevalue smallint,
-    CONSTRAINT binary_int16smallint0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_int16smallinte0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_int16smallint0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.int16smallint0mi;
+DROP TABLE public.int16smallinte0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_int16smallint0mi;
+DROP TABLE public.binary_int16smallinte0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.int16smallinte0m
     id integer NOT NULL,
     value smallint NOT NULL,
     nullablevalue smallint,
-    int16smallint0mi_id integer,
+    int16smallinte0mi_id integer,
     CONSTRAINT int16smallinte0m_pkey PRIMARY KEY (id),
-    CONSTRAINT int16smallinte0m_int16smallint0mi_fk FOREIGN KEY (int16smallint0mi_id)
-        REFERENCES public.int16smallint0mi (id) MATCH SIMPLE
+    CONSTRAINT int16smallinte0m_int16smallinte0mi_fk FOREIGN KEY (int16smallinte0mi_id)
+        REFERENCES public.int16smallinte0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_int16smallinte0m
     id integer NOT NULL,
     value smallint NOT NULL,
     nullablevalue smallint,
-    int16smallint0mi_id integer,
+    int16smallinte0mi_id integer,
     CONSTRAINT binary_int16smallinte0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_int16smallinte0m_binary_int16smallint0mi_fk FOREIGN KEY (int16smallint0mi_id)
-        REFERENCES public.binary_int16smallint0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_int16smallinte0m_binary_int16smallinte0mi_fk FOREIGN KEY (int16smallinte0mi_id)
+        REFERENCES public.binary_int16smallinte0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

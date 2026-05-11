@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Int64 Value { get; set; }
 
-        public Int64bigint0MI ModelInner { get; set; }
+        public Int64bigintE0MI ModelInner { get; set; }
 
         
         public System.Int64? NullableValue { get; set; }

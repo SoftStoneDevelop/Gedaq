@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlCircle> Value { get; set; }
 
-        public NpgsqlCirclecircleListD12MI ModelInner { get; set; }
+        public NpgsqlCirclecircleListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<NpgsqlTypes.NpgsqlCircle> NullableValue { get; set; }

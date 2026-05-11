@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Boolean Value { get; set; }
 
-        public Booleanbit0MI ModelInner { get; set; }
+        public BooleanbitE0MI ModelInner { get; set; }
 
         
         public System.Boolean? NullableValue { get; set; }

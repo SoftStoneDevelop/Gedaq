@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.sbytesmallint0mi
+CREATE TABLE public.sbytesmallinte0mi
 (
     id integer NOT NULL,
     value smallint NOT NULL,
     nullablevalue smallint,
-    CONSTRAINT sbytesmallint0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT sbytesmallinte0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_sbytesmallint0mi
+CREATE TABLE public.binary_sbytesmallinte0mi
 (
     id integer NOT NULL,
     value smallint NOT NULL,
     nullablevalue smallint,
-    CONSTRAINT binary_sbytesmallint0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_sbytesmallinte0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_sbytesmallint0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.sbytesmallint0mi;
+DROP TABLE public.sbytesmallinte0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_sbytesmallint0mi;
+DROP TABLE public.binary_sbytesmallinte0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.sbytesmallinte0m
     id integer NOT NULL,
     value smallint NOT NULL,
     nullablevalue smallint,
-    sbytesmallint0mi_id integer,
+    sbytesmallinte0mi_id integer,
     CONSTRAINT sbytesmallinte0m_pkey PRIMARY KEY (id),
-    CONSTRAINT sbytesmallinte0m_sbytesmallint0mi_fk FOREIGN KEY (sbytesmallint0mi_id)
-        REFERENCES public.sbytesmallint0mi (id) MATCH SIMPLE
+    CONSTRAINT sbytesmallinte0m_sbytesmallinte0mi_fk FOREIGN KEY (sbytesmallinte0mi_id)
+        REFERENCES public.sbytesmallinte0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_sbytesmallinte0m
     id integer NOT NULL,
     value smallint NOT NULL,
     nullablevalue smallint,
-    sbytesmallint0mi_id integer,
+    sbytesmallinte0mi_id integer,
     CONSTRAINT binary_sbytesmallinte0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_sbytesmallinte0m_binary_sbytesmallint0mi_fk FOREIGN KEY (sbytesmallint0mi_id)
-        REFERENCES public.binary_sbytesmallint0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_sbytesmallinte0m_binary_sbytesmallinte0mi_fk FOREIGN KEY (sbytesmallinte0mi_id)
+        REFERENCES public.binary_sbytesmallinte0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

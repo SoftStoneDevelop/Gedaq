@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Double Value { get; set; }
 
-        public Doubledouble_precision0MI ModelInner { get; set; }
+        public Doubledouble_precisionE0MI ModelInner { get; set; }
 
         
         public System.Double? NullableValue { get; set; }

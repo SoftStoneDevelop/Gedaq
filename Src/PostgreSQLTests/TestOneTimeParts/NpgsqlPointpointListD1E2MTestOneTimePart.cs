@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.npgsqlpointpointlistd12mi
+CREATE TABLE public.npgsqlpointpointlistd1e2mi
 (
     id integer NOT NULL,
     value point[] NOT NULL,
     nullablevalue point[],
-    CONSTRAINT npgsqlpointpointlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT npgsqlpointpointlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_npgsqlpointpointlistd12mi
+CREATE TABLE public.binary_npgsqlpointpointlistd1e2mi
 (
     id integer NOT NULL,
     value point[] NOT NULL,
     nullablevalue point[],
-    CONSTRAINT binary_npgsqlpointpointlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_npgsqlpointpointlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_npgsqlpointpointlistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.npgsqlpointpointlistd12mi;
+DROP TABLE public.npgsqlpointpointlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_npgsqlpointpointlistd12mi;
+DROP TABLE public.binary_npgsqlpointpointlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.npgsqlpointpointlistd1e2m
     id integer NOT NULL,
     value point[] NOT NULL,
     nullablevalue point[],
-    npgsqlpointpointlistd12mi_id integer,
+    npgsqlpointpointlistd1e2mi_id integer,
     CONSTRAINT npgsqlpointpointlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT npgsqlpointpointlistd1e2m_npgsqlpointpointlistd12mi_fk FOREIGN KEY (npgsqlpointpointlistd12mi_id)
-        REFERENCES public.npgsqlpointpointlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT npgsqlpointpointlistd1e2m_npgsqlpointpointlistd1e2mi_fk FOREIGN KEY (npgsqlpointpointlistd1e2mi_id)
+        REFERENCES public.npgsqlpointpointlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_npgsqlpointpointlistd1e2m
     id integer NOT NULL,
     value point[] NOT NULL,
     nullablevalue point[],
-    npgsqlpointpointlistd12mi_id integer,
+    npgsqlpointpointlistd1e2mi_id integer,
     CONSTRAINT binary_npgsqlpointpointlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_npgsqlpointpointlistd1e2m_binary_npgsqlpointpointlistd12mi_fk FOREIGN KEY (npgsqlpointpointlistd12mi_id)
-        REFERENCES public.binary_npgsqlpointpointlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_npgsqlpointpointlistd1e2m_binary_npgsqlpointpointlistd1e2mi_fk FOREIGN KEY (npgsqlpointpointlistd1e2mi_id)
+        REFERENCES public.binary_npgsqlpointpointlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

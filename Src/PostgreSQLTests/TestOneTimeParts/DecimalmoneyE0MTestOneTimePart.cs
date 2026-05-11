@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.decimalmoney0mi
+CREATE TABLE public.decimalmoneye0mi
 (
     id integer NOT NULL,
     value money NOT NULL,
     nullablevalue money,
-    CONSTRAINT decimalmoney0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT decimalmoneye0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_decimalmoney0mi
+CREATE TABLE public.binary_decimalmoneye0mi
 (
     id integer NOT NULL,
     value money NOT NULL,
     nullablevalue money,
-    CONSTRAINT binary_decimalmoney0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_decimalmoneye0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_decimalmoney0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.decimalmoney0mi;
+DROP TABLE public.decimalmoneye0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_decimalmoney0mi;
+DROP TABLE public.binary_decimalmoneye0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.decimalmoneye0m
     id integer NOT NULL,
     value money NOT NULL,
     nullablevalue money,
-    decimalmoney0mi_id integer,
+    decimalmoneye0mi_id integer,
     CONSTRAINT decimalmoneye0m_pkey PRIMARY KEY (id),
-    CONSTRAINT decimalmoneye0m_decimalmoney0mi_fk FOREIGN KEY (decimalmoney0mi_id)
-        REFERENCES public.decimalmoney0mi (id) MATCH SIMPLE
+    CONSTRAINT decimalmoneye0m_decimalmoneye0mi_fk FOREIGN KEY (decimalmoneye0mi_id)
+        REFERENCES public.decimalmoneye0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_decimalmoneye0m
     id integer NOT NULL,
     value money NOT NULL,
     nullablevalue money,
-    decimalmoney0mi_id integer,
+    decimalmoneye0mi_id integer,
     CONSTRAINT binary_decimalmoneye0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_decimalmoneye0m_binary_decimalmoney0mi_fk FOREIGN KEY (decimalmoney0mi_id)
-        REFERENCES public.binary_decimalmoney0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_decimalmoneye0m_binary_decimalmoneye0mi_fk FOREIGN KEY (decimalmoneye0mi_id)
+        REFERENCES public.binary_decimalmoneye0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

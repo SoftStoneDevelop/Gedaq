@@ -12,7 +12,7 @@ namespace Tests
         
         public System.TimeSpan Value { get; set; }
 
-        public TimeSpaninterval0MI ModelInner { get; set; }
+        public TimeSpanintervalE0MI ModelInner { get; set; }
 
         
         public System.TimeSpan? NullableValue { get; set; }

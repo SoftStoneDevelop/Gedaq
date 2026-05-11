@@ -12,7 +12,7 @@ namespace Tests
         
         public System.TimeOnly Value { get; set; }
 
-        public TimeOnlytime_without_time_zone0MI ModelInner { get; set; }
+        public TimeOnlytime_without_time_zoneE0MI ModelInner { get; set; }
 
         
         public System.TimeOnly? NullableValue { get; set; }

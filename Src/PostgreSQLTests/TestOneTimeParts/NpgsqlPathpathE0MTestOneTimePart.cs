@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.npgsqlpathpath0mi
+CREATE TABLE public.npgsqlpathpathe0mi
 (
     id integer NOT NULL,
     value path NOT NULL,
     nullablevalue path,
-    CONSTRAINT npgsqlpathpath0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT npgsqlpathpathe0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_npgsqlpathpath0mi
+CREATE TABLE public.binary_npgsqlpathpathe0mi
 (
     id integer NOT NULL,
     value path NOT NULL,
     nullablevalue path,
-    CONSTRAINT binary_npgsqlpathpath0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_npgsqlpathpathe0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_npgsqlpathpath0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.npgsqlpathpath0mi;
+DROP TABLE public.npgsqlpathpathe0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_npgsqlpathpath0mi;
+DROP TABLE public.binary_npgsqlpathpathe0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.npgsqlpathpathe0m
     id integer NOT NULL,
     value path NOT NULL,
     nullablevalue path,
-    npgsqlpathpath0mi_id integer,
+    npgsqlpathpathe0mi_id integer,
     CONSTRAINT npgsqlpathpathe0m_pkey PRIMARY KEY (id),
-    CONSTRAINT npgsqlpathpathe0m_npgsqlpathpath0mi_fk FOREIGN KEY (npgsqlpathpath0mi_id)
-        REFERENCES public.npgsqlpathpath0mi (id) MATCH SIMPLE
+    CONSTRAINT npgsqlpathpathe0m_npgsqlpathpathe0mi_fk FOREIGN KEY (npgsqlpathpathe0mi_id)
+        REFERENCES public.npgsqlpathpathe0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_npgsqlpathpathe0m
     id integer NOT NULL,
     value path NOT NULL,
     nullablevalue path,
-    npgsqlpathpath0mi_id integer,
+    npgsqlpathpathe0mi_id integer,
     CONSTRAINT binary_npgsqlpathpathe0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_npgsqlpathpathe0m_binary_npgsqlpathpath0mi_fk FOREIGN KEY (npgsqlpathpath0mi_id)
-        REFERENCES public.binary_npgsqlpathpath0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_npgsqlpathpathe0m_binary_npgsqlpathpathe0mi_fk FOREIGN KEY (npgsqlpathpathe0mi_id)
+        REFERENCES public.binary_npgsqlpathpathe0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Single Value { get; set; }
 
-        public Singlereal0MI ModelInner { get; set; }
+        public SinglerealE0MI ModelInner { get; set; }
 
         
         public System.Single? NullableValue { get; set; }

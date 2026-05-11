@@ -12,7 +12,7 @@ namespace Tests
         
         public NpgsqlTypes.NpgsqlBox Value { get; set; }
 
-        public NpgsqlBoxbox0MI ModelInner { get; set; }
+        public NpgsqlBoxboxE0MI ModelInner { get; set; }
 
         
         public NpgsqlTypes.NpgsqlBox? NullableValue { get; set; }

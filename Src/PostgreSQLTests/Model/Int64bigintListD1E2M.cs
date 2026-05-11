@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.Int64> Value { get; set; }
 
-        public Int64bigintListD12MI ModelInner { get; set; }
+        public Int64bigintListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.Int64> NullableValue { get; set; }

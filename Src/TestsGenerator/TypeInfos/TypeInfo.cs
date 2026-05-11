@@ -65,8 +65,7 @@ namespace TestsGenerator.TypeInfos
         {
             var result = WhiteSpaces().Replace(DbSqlType, "_");
             result = SquareBracketsSpaces().Replace(result, $"{EnumerableType.ToString()}D{ArrayDimensions}");
-            result = result.Replace("(", string.Empty);
-            result = result.Replace(")", string.Empty);
+            result = ClickhouseArray().Replace(result, $"{EnumerableType.ToString()}D{ArrayDimensions}");
             return result;
         }
 
@@ -77,6 +76,9 @@ namespace TestsGenerator.TypeInfos
 
         [GeneratedRegex("(\\[\\])+")]
         public static partial Regex SquareBracketsSpaces();
+
+        [GeneratedRegex("Array(\\w|\\d|\\(|\\))+")]
+        public static partial Regex ClickhouseArray();
 
         public readonly string ItemTypeName;
 

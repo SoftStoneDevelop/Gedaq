@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.npgsqlcirclecircle0mi
+CREATE TABLE public.npgsqlcirclecirclee0mi
 (
     id integer NOT NULL,
     value circle NOT NULL,
     nullablevalue circle,
-    CONSTRAINT npgsqlcirclecircle0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT npgsqlcirclecirclee0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_npgsqlcirclecircle0mi
+CREATE TABLE public.binary_npgsqlcirclecirclee0mi
 (
     id integer NOT NULL,
     value circle NOT NULL,
     nullablevalue circle,
-    CONSTRAINT binary_npgsqlcirclecircle0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_npgsqlcirclecirclee0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_npgsqlcirclecircle0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.npgsqlcirclecircle0mi;
+DROP TABLE public.npgsqlcirclecirclee0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_npgsqlcirclecircle0mi;
+DROP TABLE public.binary_npgsqlcirclecirclee0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.npgsqlcirclecirclee0m
     id integer NOT NULL,
     value circle NOT NULL,
     nullablevalue circle,
-    npgsqlcirclecircle0mi_id integer,
+    npgsqlcirclecirclee0mi_id integer,
     CONSTRAINT npgsqlcirclecirclee0m_pkey PRIMARY KEY (id),
-    CONSTRAINT npgsqlcirclecirclee0m_npgsqlcirclecircle0mi_fk FOREIGN KEY (npgsqlcirclecircle0mi_id)
-        REFERENCES public.npgsqlcirclecircle0mi (id) MATCH SIMPLE
+    CONSTRAINT npgsqlcirclecirclee0m_npgsqlcirclecirclee0mi_fk FOREIGN KEY (npgsqlcirclecirclee0mi_id)
+        REFERENCES public.npgsqlcirclecirclee0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_npgsqlcirclecirclee0m
     id integer NOT NULL,
     value circle NOT NULL,
     nullablevalue circle,
-    npgsqlcirclecircle0mi_id integer,
+    npgsqlcirclecirclee0mi_id integer,
     CONSTRAINT binary_npgsqlcirclecirclee0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_npgsqlcirclecirclee0m_binary_npgsqlcirclecircle0mi_fk FOREIGN KEY (npgsqlcirclecircle0mi_id)
-        REFERENCES public.binary_npgsqlcirclecircle0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_npgsqlcirclecirclee0m_binary_npgsqlcirclecirclee0mi_fk FOREIGN KEY (npgsqlcirclecirclee0mi_id)
+        REFERENCES public.binary_npgsqlcirclecirclee0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

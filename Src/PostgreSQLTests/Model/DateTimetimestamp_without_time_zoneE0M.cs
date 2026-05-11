@@ -12,7 +12,7 @@ namespace Tests
         
         public System.DateTime Value { get; set; }
 
-        public DateTimetimestamp_without_time_zone0MI ModelInner { get; set; }
+        public DateTimetimestamp_without_time_zoneE0MI ModelInner { get; set; }
 
         
         public System.DateTime? NullableValue { get; set; }

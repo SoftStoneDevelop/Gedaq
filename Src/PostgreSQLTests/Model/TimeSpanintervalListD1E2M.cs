@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.TimeSpan> Value { get; set; }
 
-        public TimeSpanintervalListD12MI ModelInner { get; set; }
+        public TimeSpanintervalListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.TimeSpan> NullableValue { get; set; }

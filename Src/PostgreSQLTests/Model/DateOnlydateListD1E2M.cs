@@ -12,7 +12,7 @@ namespace Tests
         
         public System.Collections.Generic.List<System.DateOnly> Value { get; set; }
 
-        public DateOnlydateListD12MI ModelInner { get; set; }
+        public DateOnlydateListD1E2MI ModelInner { get; set; }
 
         
         public System.Collections.Generic.List<System.DateOnly> NullableValue { get; set; }

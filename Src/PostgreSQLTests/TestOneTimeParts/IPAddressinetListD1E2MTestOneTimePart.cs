@@ -23,23 +23,23 @@ namespace Tests
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.ipaddressinetlistd12mi
+CREATE TABLE public.ipaddressinetlistd1e2mi
 (
     id integer NOT NULL,
     value inet[] NOT NULL,
     nullablevalue inet[],
-    CONSTRAINT ipaddressinetlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT ipaddressinetlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_ipaddressinetlistd12mi
+CREATE TABLE public.binary_ipaddressinetlistd1e2mi
 (
     id integer NOT NULL,
     value inet[] NOT NULL,
     nullablevalue inet[],
-    CONSTRAINT binary_ipaddressinetlistd12mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_ipaddressinetlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_ipaddressinetlistd12mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.ipaddressinetlistd12mi;
+DROP TABLE public.ipaddressinetlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_ipaddressinetlistd12mi;
+DROP TABLE public.binary_ipaddressinetlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.ipaddressinetlistd1e2m
     id integer NOT NULL,
     value inet[] NOT NULL,
     nullablevalue inet[],
-    ipaddressinetlistd12mi_id integer,
+    ipaddressinetlistd1e2mi_id integer,
     CONSTRAINT ipaddressinetlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT ipaddressinetlistd1e2m_ipaddressinetlistd12mi_fk FOREIGN KEY (ipaddressinetlistd12mi_id)
-        REFERENCES public.ipaddressinetlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT ipaddressinetlistd1e2m_ipaddressinetlistd1e2mi_fk FOREIGN KEY (ipaddressinetlistd1e2mi_id)
+        REFERENCES public.ipaddressinetlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_ipaddressinetlistd1e2m
     id integer NOT NULL,
     value inet[] NOT NULL,
     nullablevalue inet[],
-    ipaddressinetlistd12mi_id integer,
+    ipaddressinetlistd1e2mi_id integer,
     CONSTRAINT binary_ipaddressinetlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_ipaddressinetlistd1e2m_binary_ipaddressinetlistd12mi_fk FOREIGN KEY (ipaddressinetlistd12mi_id)
-        REFERENCES public.binary_ipaddressinetlistd12mi (id) MATCH SIMPLE
+    CONSTRAINT binary_ipaddressinetlistd1e2m_binary_ipaddressinetlistd1e2mi_fk FOREIGN KEY (ipaddressinetlistd1e2mi_id)
+        REFERENCES public.binary_ipaddressinetlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

@@ -28,422 +28,422 @@ namespace Tests
             new Int32Int32E0M
 {
     Id = 1,
-    Value = 1522006501,
-    ModelInner = new Int32Int320MI
+    Value = 1340736945,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 1,
+    Value = 1652217100,
+    NullableValue = null,
+},
+    NullableValue = 649007740,
+},
+            new Int32Int32E0M
 {
     Id = 2,
-    Value = 1841550360,
-    NullableValue = 1334971009,
+    Value = 308134817,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 7,
+    Value = 481870590,
+    NullableValue = null,
+},
+    NullableValue = 709722988,
+},
+            new Int32Int32E0M
+{
+    Id = 3,
+    Value = 1882275949,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 8,
+    Value = 1333210508,
+    NullableValue = 628898409,
 },
     NullableValue = null,
 },
             new Int32Int32E0M
 {
-    Id = 9,
-    Value = 866195236,
-    ModelInner = new Int32Int320MI
+    Id = 12,
+    Value = 260506305,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 11,
-    Value = 1950160790,
-    NullableValue = null,
+    Id = 14,
+    Value = 1635180735,
+    NullableValue = 1224462308,
 },
-    NullableValue = 411054214,
-},
-            new Int32Int32E0M
-{
-    Id = 16,
-    Value = 309543143,
-    ModelInner = new Int32Int320MI
-{
-    Id = 17,
-    Value = 296788180,
-    NullableValue = 2140329783,
-},
-    NullableValue = 1028863181,
+    NullableValue = 1281169484,
 },
             new Int32Int32E0M
-{
-    Id = 23,
-    Value = 996761057,
-    ModelInner = new Int32Int320MI
 {
     Id = 19,
-    Value = 1062791694,
-    NullableValue = 771922246,
+    Value = 693453641,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 20,
+    Value = 1817569558,
+    NullableValue = 1583725205,
 },
-    NullableValue = 1651635822,
+    NullableValue = 42174161,
 },
             new Int32Int32E0M
 {
-    Id = 30,
-    Value = 2025654288,
-    ModelInner = new Int32Int320MI
+    Id = 20,
+    Value = 1503918615,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 22,
+    Value = 1521340203,
+    NullableValue = 156294756,
+},
+    NullableValue = 1306544818,
+},
+            new Int32Int32E0M
+{
+    Id = 29,
+    Value = 1586696776,
+    ModelInner = new Int32Int32E0MI
 {
     Id = 28,
-    Value = 943781313,
-    NullableValue = 755611057,
-},
-    NullableValue = 630407540,
-},
-            new Int32Int32E0M
-{
-    Id = 39,
-    Value = 149836734,
-    ModelInner = new Int32Int320MI
-{
-    Id = 33,
-    Value = 2001007203,
-    NullableValue = 985409717,
+    Value = 982156877,
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new Int32Int32E0M
 {
-    Id = 46,
-    Value = 414172194,
-    ModelInner = new Int32Int320MI
+    Id = 34,
+    Value = 632774726,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 31,
+    Value = 1065899548,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new Int32Int32E0M
 {
     Id = 42,
-    Value = 704881791,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new Int32Int32E0M
+    Value = 1592908529,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 47,
-    Value = 1795029974,
-    ModelInner = new Int32Int320MI
-{
-    Id = 50,
-    Value = 615668444,
-    NullableValue = null,
+    Id = 33,
+    Value = 381165414,
+    NullableValue = 1649151028,
 },
-    NullableValue = 397524325,
+    NullableValue = 1932588154,
 },
             new Int32Int32E0M
 {
     Id = 50,
-    Value = 364950569,
-    ModelInner = new Int32Int320MI
+    Value = 1694837613,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 57,
-    Value = 1328615974,
-    NullableValue = 160547616,
-},
+    Id = 37,
+    Value = 763146522,
     NullableValue = null,
 },
-            new Int32Int32E0M
-{
-    Id = 52,
-    Value = 722448775,
-    ModelInner = new Int32Int320MI
-{
-    Id = 65,
-    Value = 1552837897,
-    NullableValue = 379643103,
-},
-    NullableValue = 1607248259,
+    NullableValue = 1588105276,
 },
             new Int32Int32E0M
 {
     Id = 59,
-    Value = 2010179611,
-    ModelInner = new Int32Int320MI
+    Value = 554218025,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 70,
-    Value = 1841792958,
-    NullableValue = 356727223,
+    Id = 38,
+    Value = 1691755265,
+    NullableValue = null,
 },
-    NullableValue = 1891180008,
+    NullableValue = null,
 },
             new Int32Int32E0M
 {
     Id = 66,
-    Value = 120044317,
-    ModelInner = new Int32Int320MI
+    Value = 735279236,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 72,
-    Value = 706128286,
-    NullableValue = 964781628,
-},
+    Id = 40,
+    Value = 1086224695,
     NullableValue = null,
+},
+    NullableValue = 642584192,
 },
             new Int32Int32E0M
 {
-    Id = 71,
-    Value = 1077600780,
-    ModelInner = new Int32Int320MI
+    Id = 68,
+    Value = 421811522,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 73,
-    Value = 156627602,
-    NullableValue = 466172643,
+    Id = 42,
+    Value = 859221665,
+    NullableValue = null,
 },
-    NullableValue = 1109450197,
+    NullableValue = null,
 },
             new Int32Int32E0M
 {
     Id = 75,
-    Value = 1111085189,
-    ModelInner = new Int32Int320MI
+    Value = 1352166521,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 78,
-    Value = 494527398,
-    NullableValue = 739256826,
-},
+    Id = 48,
+    Value = 1178623549,
     NullableValue = null,
-},
-            new Int32Int32E0M
-{
-    Id = 80,
-    Value = 1129405584,
-    ModelInner = new Int32Int320MI
-{
-    Id = 83,
-    Value = 1808261513,
-    NullableValue = 421840559,
 },
     NullableValue = null,
 },
             new Int32Int32E0M
 {
     Id = 83,
-    Value = 1925135728,
-    ModelInner = new Int32Int320MI
+    Value = 1505043095,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 87,
-    Value = 471008952,
-    NullableValue = null,
+    Id = 50,
+    Value = 1293941055,
+    NullableValue = 154594343,
 },
     NullableValue = null,
 },
             new Int32Int32E0M
 {
-    Id = 88,
-    Value = 1851330354,
-    ModelInner = new Int32Int320MI
+    Id = 85,
+    Value = 209131688,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 91,
-    Value = 2058362306,
+    Id = 58,
+    Value = 1588437143,
+    NullableValue = 417203473,
+},
+    NullableValue = 1969634552,
+},
+            new Int32Int32E0M
+{
+    Id = 93,
+    Value = 1969334754,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 66,
+    Value = 891576986,
     NullableValue = null,
 },
-    NullableValue = 1893920827,
+    NullableValue = null,
 },
             new Int32Int32E0M
 {
     Id = 95,
-    Value = 1279677102,
-    ModelInner = new Int32Int320MI
+    Value = 1516012385,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 95,
-    Value = 1742568878,
-    NullableValue = null,
-},
-    NullableValue = 1381171442,
-},
-            new Int32Int32E0M
-{
-    Id = 96,
-    Value = 58421422,
-    ModelInner = new Int32Int320MI
-{
-    Id = 104,
-    Value = 227297081,
+    Id = 67,
+    Value = 1979632906,
     NullableValue = null,
 },
     NullableValue = null,
 },
             new Int32Int32E0M
 {
-    Id = 104,
-    Value = 934282409,
-    ModelInner = new Int32Int320MI
+    Id = 101,
+    Value = 1995298836,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 76,
+    Value = 700704377,
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new Int32Int32E0M
 {
     Id = 109,
-    Value = 215284189,
+    Value = 454201571,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 80,
+    Value = 866530437,
     NullableValue = null,
 },
-    NullableValue = null,
+    NullableValue = 711967921,
 },
             new Int32Int32E0M
-{
-    Id = 108,
-    Value = 1964700567,
-    ModelInner = new Int32Int320MI
-{
-    Id = 110,
-    Value = 2004023599,
-    NullableValue = 534040179,
-},
-    NullableValue = null,
-},
-            new Int32Int32E0M
-{
-    Id = 117,
-    Value = 2138098846,
-    ModelInner = new Int32Int320MI
 {
     Id = 115,
-    Value = 250697326,
+    Value = 341103100,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 85,
+    Value = 866861461,
     NullableValue = null,
 },
-    NullableValue = 1486019405,
+    NullableValue = 728856686,
+},
+            new Int32Int32E0M
+{
+    Id = 118,
+    Value = 2078687553,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 87,
+    Value = 147500679,
+    NullableValue = null,
+},
+    NullableValue = null,
 },
             new Int32Int32E0M
 {
     Id = 121,
-    Value = 1834616194,
-    ModelInner = new Int32Int320MI
+    Value = 608789820,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 120,
-    Value = 1420968481,
-    NullableValue = 951794149,
-},
-    NullableValue = 153654681,
-},
-            new Int32Int32E0M
-{
-    Id = 122,
-    Value = 389543855,
-    ModelInner = new Int32Int320MI
-{
-    Id = 125,
-    Value = 1469276588,
+    Id = 95,
+    Value = 1689669083,
     NullableValue = null,
 },
-    NullableValue = 1673778187,
+    NullableValue = 1598260269,
 },
             new Int32Int32E0M
-{
-    Id = 130,
-    Value = 1735595768,
-    ModelInner = new Int32Int320MI
-{
-    Id = 128,
-    Value = 1167354626,
-    NullableValue = 1119023956,
-},
-    NullableValue = 252708698,
-},
-            new Int32Int32E0M
-{
-    Id = 135,
-    Value = 688134612,
-    ModelInner = new Int32Int320MI
 {
     Id = 129,
-    Value = 863463101,
-    NullableValue = 1277465066,
+    Value = 183675192,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 101,
+    Value = 853513161,
+    NullableValue = 1927643371,
 },
-    NullableValue = 540224970,
+    NullableValue = null,
 },
             new Int32Int32E0M
 {
-    Id = 139,
-    Value = 1138064874,
-    ModelInner = new Int32Int320MI
+    Id = 133,
+    Value = 1604496618,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 108,
+    Value = 592249538,
+    NullableValue = null,
+},
+    NullableValue = 241167105,
+},
+            new Int32Int32E0M
 {
     Id = 137,
-    Value = 890125084,
+    Value = 2142671708,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 117,
+    Value = 21742601,
+    NullableValue = 1768634933,
+},
+    NullableValue = null,
+},
+            new Int32Int32E0M
+{
+    Id = 144,
+    Value = 102148586,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 118,
+    Value = 33588272,
     NullableValue = null,
 },
     NullableValue = null,
 },
             new Int32Int32E0M
 {
-    Id = 146,
-    Value = 484851757,
-    ModelInner = new Int32Int320MI
+    Id = 153,
+    Value = 600768960,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 143,
-    Value = 211647126,
-    NullableValue = 423823723,
+    Id = 124,
+    Value = 543872814,
+    NullableValue = 606553389,
+},
+    NullableValue = 683576842,
+},
+            new Int32Int32E0M
+{
+    Id = 156,
+    Value = 1826903717,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 132,
+    Value = 1787292906,
+    NullableValue = 1329745758,
+},
+    NullableValue = 1870410823,
+},
+            new Int32Int32E0M
+{
+    Id = 161,
+    Value = 400172114,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 134,
+    Value = 1210432845,
+    NullableValue = 15426970,
 },
     NullableValue = null,
 },
             new Int32Int32E0M
 {
-    Id = 152,
-    Value = 1431695893,
-    ModelInner = new Int32Int320MI
+    Id = 166,
+    Value = 1840709077,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 150,
-    Value = 1545195033,
+    Id = 137,
+    Value = 470021599,
     NullableValue = null,
-},
-    NullableValue = 578073499,
-},
-            new Int32Int32E0M
-{
-    Id = 155,
-    Value = 978483342,
-    ModelInner = new Int32Int320MI
-{
-    Id = 155,
-    Value = 1524243945,
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new Int32Int32E0M
-{
-    Id = 163,
-    Value = 1921162344,
-    ModelInner = new Int32Int320MI
-{
-    Id = 162,
-    Value = 1286848718,
-    NullableValue = null,
-},
-    NullableValue = 174901104,
-},
-            new Int32Int32E0M
-{
-    Id = 168,
-    Value = 1466435415,
-    ModelInner = new Int32Int320MI
-{
-    Id = 163,
-    Value = 2069042780,
-    NullableValue = null,
-},
-    NullableValue = 1139334902,
-},
-            new Int32Int32E0M
-{
-    Id = 173,
-    Value = 726004774,
-    ModelInner = new Int32Int320MI
-{
-    Id = 164,
-    Value = 267682121,
-    NullableValue = 1336085515,
 },
     NullableValue = null,
 },
             new Int32Int32E0M
 {
     Id = 174,
-    Value = 2006905666,
-    ModelInner = new Int32Int320MI
+    Value = 1363147069,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 170,
-    Value = 1827512754,
+    Id = 145,
+    Value = 521331244,
     NullableValue = null,
 },
-    NullableValue = 760250096,
+    NullableValue = null,
 },
             new Int32Int32E0M
 {
-    Id = 181,
-    Value = 1691801979,
-    ModelInner = new Int32Int320MI
+    Id = 182,
+    Value = 2001004105,
+    ModelInner = new Int32Int32E0MI
 {
-    Id = 171,
-    Value = 636535214,
+    Id = 152,
+    Value = 991918852,
     NullableValue = null,
 },
-    NullableValue = 43017531,
+    NullableValue = 1013777830,
+},
+            new Int32Int32E0M
+{
+    Id = 184,
+    Value = 1658711199,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 153,
+    Value = 993488476,
+    NullableValue = null,
+},
+    NullableValue = 1367136029,
+},
+            new Int32Int32E0M
+{
+    Id = 193,
+    Value = 350137049,
+    ModelInner = new Int32Int32E0MI
+{
+    Id = 154,
+    Value = 1553115738,
+    NullableValue = 1064732490,
+},
+    NullableValue = 657528036,
 },
         };
 
