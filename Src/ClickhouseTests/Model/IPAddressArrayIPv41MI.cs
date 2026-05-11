@@ -23,13 +23,16 @@ namespace Tests
                 Assert.That(actual, Is.Not.Null);
                 Assert.That(actual.Id, Is.EqualTo(expect.Id));
                 {
-                    var expectEnumerValue = expect.Value;
-                    Assert.That(actual.Value.Count(), Is.EqualTo(expectEnumerValue.Count()));
-                    for(int i = 0; i < expectEnumerValue.Count(); i++)
+                    var expectCollection = actual.Value;
+                    var actualCollection = expect.Value;
+                    Assert.That(actualCollection.Length, Is.EqualTo(expectCollection.Length));
+                    Assert.That(actualCollection.Rank, Is.EqualTo(expectCollection.Rank)); // and must be 1
+                    Assert.That(actualCollection.GetLength(0), Is.EqualTo(expectCollection.GetLength(0)));
+                    for(int i0 = 0; i0 < expectCollection.GetLength(0); i0++)
                     {
-                        var expectItem = expectEnumerValue[i];
-                        var haveItem = actual.Value[i];
-                        Assert.That(expectItem, Is.EqualTo(haveItem));
+                        var expectItem = expectCollection[i0];
+                        var actualItem = actualCollection[i0];
+                        Assert.That(expectItem, Is.EqualTo(actualItem));
                     }
                 }
         }

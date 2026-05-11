@@ -13,23 +13,25 @@ namespace TestsGenerator.TypeInfos
             EnumerableType enumerableType,
             int size = -1,
             bool mustHaveSize = false,
-            bool isReferenceType = false) :
+            bool isReferenceType = false,
+            int arrayDimensions = 1) :
             base(
                 clickHouseType.ToDbType(),
-                clickHouseType.ToDbSqlTableType(enumerableType),
+                clickHouseType.ToDbSqlTableType(enumerableType, arrayDimensions),
                 typeName,
                 typeFullName,
                 enumerableType,
                 size,
                 mustHaveSize,
-                isReferenceType)
+                isReferenceType,
+                arrayDimensions: arrayDimensions)
         {
             ClickHouseBaseType = clickHouseType;
         }
 
         public readonly string ClickHouseBaseType;
 
-        public override string DefaultMapType => ClickHouseBaseType.ToDefaultMapType(EnumerableType);
+        public override string DefaultMapType => ClickHouseBaseType.ToDefaultMapType(EnumerableType, ArrayDimensions);
 
         public override string SpecialDbTypeStr()
         {
@@ -53,9 +55,9 @@ namespace TestsGenerator.TypeInfos
                         return $"{ItemTypeName}";
                     }
 
-                    case EnumerableType.Array:
+                    case EnumerableType.MArray:
                     {
-                        return $"{ItemTypeName}[]";
+                        return $"{ItemTypeName}{TypeHelper.ArrayDimensions(ArrayDimensions)}";
                     }
                 }
             }
@@ -73,9 +75,9 @@ namespace TestsGenerator.TypeInfos
                         return $"{ItemTypeFullName}";
                     }
 
-                    case EnumerableType.Array:
+                    case EnumerableType.MArray:
                     {
-                        return $"{ItemTypeFullName}[]";
+                        return $"{ItemTypeFullName}{TypeHelper.ArrayDimensions(ArrayDimensions)}";
                     }
                 }
             }

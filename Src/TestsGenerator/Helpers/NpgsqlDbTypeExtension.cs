@@ -2,6 +2,7 @@
 using NpgsqlTypes;
 using System;
 using System.Data;
+using System.Runtime.CompilerServices;
 
 namespace TestsGenerator.Helpers
 {
@@ -14,7 +15,18 @@ namespace TestsGenerator.Helpers
             return param.DbType;
         }
 
-        public static string ToDbSqlTableType(this NpgsqlDbType npgsqlDbType)
+        private static string ArrayDimensions(int dimensions = 1)
+        {
+            var builder = new DefaultInterpolatedStringHandler();
+            for (int i = 0; i < dimensions; i++)
+            {
+                builder.AppendLiteral("[]");
+            }
+
+            return builder.ToStringAndClear();
+        }
+
+        public static string ToDbSqlTableType(this NpgsqlDbType npgsqlDbType, int dimensions = 1)
         {
             switch (npgsqlDbType)
             {
@@ -24,7 +36,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Bigint | NpgsqlDbType.Array:
                 {
-                    return "bigint[]";
+                    return $"bigint{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Double:
@@ -32,7 +44,7 @@ namespace TestsGenerator.Helpers
                     return "double precision";
                 }case NpgsqlDbType.Double | NpgsqlDbType.Array:
                 {
-                    return "double precision[]";
+                    return $"double precision{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Integer:
@@ -41,7 +53,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Integer | NpgsqlDbType.Array:
                 {
-                    return "integer[]";
+                    return $"integer{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Numeric:
@@ -50,7 +62,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Numeric | NpgsqlDbType.Array:
                 {
-                    return "numeric[]";
+                    return $"numeric{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Money:
@@ -59,7 +71,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Money | NpgsqlDbType.Array:
                 {
-                    return "money[]";
+                    return $"money{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Real:
@@ -68,7 +80,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Real | NpgsqlDbType.Array:
                 {
-                    return "real[]";
+                    return $"real{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Smallint:
@@ -77,7 +89,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Smallint | NpgsqlDbType.Array:
                 {
-                    return "smallint[]";
+                    return $"smallint{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Boolean:
@@ -86,7 +98,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Boolean | NpgsqlDbType.Array:
                 {
-                    return "boolean[]";
+                    return $"boolean{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Char:
@@ -95,7 +107,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Char | NpgsqlDbType.Array:
                 {
-                    return "char[]";
+                    return $"char{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Text:
@@ -104,7 +116,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Text | NpgsqlDbType.Array:
                 {
-                    return "text[]";
+                    return $"text{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Timestamp:
@@ -113,7 +125,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Timestamp | NpgsqlDbType.Array:
                 {
-                    return "timestamp without time zone[]";
+                    return $"timestamp without time zone{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Time:
@@ -122,7 +134,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Time | NpgsqlDbType.Array:
                 {
-                    return "time without time zone[]";
+                    return $"time without time zone{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.TimeTz:
@@ -131,7 +143,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.TimeTz | NpgsqlDbType.Array:
                 {
-                    return "time with time zone[]";
+                    return $"time with time zone{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Date:
@@ -140,7 +152,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Date | NpgsqlDbType.Array:
                 {
-                    return "date[]";
+                    return $"date{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.TimestampTz:
@@ -149,7 +161,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.TimestampTz | NpgsqlDbType.Array:
                 {
-                    return "timestamp with time zone[]";
+                    return $"timestamp with time zone{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Inet:
@@ -158,7 +170,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Inet | NpgsqlDbType.Array:
                 {
-                    return "inet[]";
+                    return $"inet{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Uuid:
@@ -167,7 +179,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Uuid | NpgsqlDbType.Array:
                 {
-                    return "uuid[]";
+                    return $"uuid{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Interval:
@@ -176,7 +188,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Interval | NpgsqlDbType.Array:
                 {
-                    return "interval[]";
+                    return $"interval{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Line:
@@ -185,7 +197,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Line | NpgsqlDbType.Array:
                 {
-                    return "line[]";
+                    return $"line{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Polygon:
@@ -194,7 +206,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Polygon | NpgsqlDbType.Array:
                 {
-                    return "polygon[]";
+                    return $"polygon{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Point:
@@ -203,7 +215,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Point | NpgsqlDbType.Array:
                 {
-                    return "point[]";
+                    return $"point{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Circle:
@@ -212,7 +224,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Circle | NpgsqlDbType.Array:
                 {
-                    return "circle[]";
+                    return $"circle{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Box:
@@ -221,7 +233,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Box | NpgsqlDbType.Array:
                 {
-                    return "box[]";
+                    return $"box{ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Path:
@@ -230,7 +242,7 @@ namespace TestsGenerator.Helpers
                 }
                 case NpgsqlDbType.Path | NpgsqlDbType.Array:
                 {
-                    return "path[]";
+                    return $"path{ArrayDimensions(dimensions)}";
                 }
 
                 default:
@@ -240,7 +252,7 @@ namespace TestsGenerator.Helpers
             }
         }
 
-        public static string ToDefaultMapType(this NpgsqlDbType npgsqlDbType)
+        public static string ToDefaultMapType(this NpgsqlDbType npgsqlDbType, int dimensions = 1)
         {
             switch (npgsqlDbType)
             {
@@ -251,7 +263,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Bigint | NpgsqlDbType.Array:
                 {
-                    return "System.Int64[]";
+                    return $"System.Int64{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Double:
@@ -261,7 +273,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Double | NpgsqlDbType.Array:
                 {
-                    return "System.Double[]";
+                    return $"System.Double{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Integer:
@@ -271,7 +283,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Integer | NpgsqlDbType.Array:
                 {
-                    return "System.Int32[]";
+                    return $"System.Int32{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Numeric:
@@ -281,7 +293,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Numeric | NpgsqlDbType.Array:
                 {
-                    return "System.Decimal[]";
+                    return $"System.Decimal{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Money:
@@ -291,7 +303,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Money | NpgsqlDbType.Array:
                 {
-                    return "System.Decimal[]";
+                    return $"System.Decimal{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Real:
@@ -301,7 +313,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Real | NpgsqlDbType.Array:
                 {
-                    return "System.Single[]";
+                    return $"System.Single{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Smallint:
@@ -311,7 +323,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Smallint | NpgsqlDbType.Array:
                 {
-                    return "System.Int16[]";
+                    return $"System.Int16{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Boolean:
@@ -321,7 +333,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Boolean | NpgsqlDbType.Array:
                 {
-                    return "System.Boolean[]";
+                    return $"System.Boolean{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Char:
@@ -331,7 +343,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Char | NpgsqlDbType.Array:
                 {
-                    return "System.String[]";
+                    return $"System.String{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Text:
@@ -341,7 +353,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Text | NpgsqlDbType.Array:
                 {
-                    return "System.String[]";
+                    return $"System.String{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Timestamp:
@@ -351,7 +363,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Timestamp | NpgsqlDbType.Array:
                 {
-                    return "System.DateTime[]";
+                    return $"System.DateTime{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Time:
@@ -361,7 +373,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Time | NpgsqlDbType.Array:
                 {
-                    return "System.TimeOnly[]";
+                    return $"System.TimeOnly{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.TimeTz:
@@ -371,7 +383,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.TimeTz | NpgsqlDbType.Array:
                 {
-                    return "System.DateTimeOffset[]";
+                    return $"System.DateTimeOffset{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Date:
@@ -381,7 +393,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Date | NpgsqlDbType.Array:
                 {
-                    return "System.DateOnly[]";
+                    return $"System.DateOnly{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.TimestampTz:
@@ -391,7 +403,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.TimestampTz | NpgsqlDbType.Array:
                 {
-                    return "System.DateTime[]";
+                    return $"System.DateTime{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Inet:
@@ -401,7 +413,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Inet | NpgsqlDbType.Array:
                 {
-                    return "System.Net.IPAddress[]";
+                    return $"System.Net.IPAddress{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Uuid:
@@ -411,7 +423,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Uuid | NpgsqlDbType.Array:
                 {
-                    return "System.Guid[]";
+                    return $"System.Guid{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Interval:
@@ -421,7 +433,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Interval | NpgsqlDbType.Array:
                 {
-                    return "System.TimeSpan[]";
+                    return $"System.TimeSpan{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Line:
@@ -431,7 +443,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Line | NpgsqlDbType.Array:
                 {
-                    return "NpgsqlTypes.NpgsqlLine[]";
+                    return $"NpgsqlTypes.NpgsqlLine{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Polygon:
@@ -441,7 +453,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Polygon | NpgsqlDbType.Array:
                 {
-                    return "NpgsqlTypes.NpgsqlPolygon[]";
+                    return $"NpgsqlTypes.NpgsqlPolygon{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Point:
@@ -451,7 +463,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Point | NpgsqlDbType.Array:
                 {
-                    return "NpgsqlTypes.NpgsqlPoint[]";
+                    return $"NpgsqlTypes.NpgsqlPoint{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Circle:
@@ -461,7 +473,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Circle | NpgsqlDbType.Array:
                 {
-                    return "NpgsqlTypes.NpgsqlCircle[]";
+                    return $"NpgsqlTypes.NpgsqlCircle{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Box:
@@ -471,7 +483,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Box | NpgsqlDbType.Array:
                 {
-                    return "NpgsqlTypes.NpgsqlBox[]";
+                    return $"NpgsqlTypes.NpgsqlBox{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 case NpgsqlDbType.Path:
@@ -481,7 +493,7 @@ namespace TestsGenerator.Helpers
 
                 case NpgsqlDbType.Path | NpgsqlDbType.Array:
                 {
-                    return "NpgsqlTypes.NpgsqlPath[]";
+                    return $"NpgsqlTypes.NpgsqlPath{TypeHelper.ArrayDimensions(dimensions)}";
                 }
 
                 default:

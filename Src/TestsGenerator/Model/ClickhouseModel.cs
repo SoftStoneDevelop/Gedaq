@@ -15,10 +15,11 @@ namespace TestsGenerator.Model
             EnumerableType enumerableType = EnumerableType.SingleType,
             int size = -1,
             bool mustHaveSize = false,
-            bool isReferenceType = false)
+            bool isReferenceType = false,
+            int arrayDimensions = 1)
             : base(
                   new ClickhouseTypeInfo("Int32", "Int32", "System.Int32", EnumerableType.SingleType, 0, false, false), 
-                  new ClickhouseTypeInfo(clickHouseType, typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType), 
+                  new ClickhouseTypeInfo(clickHouseType, typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType, arrayDimensions), 
                   valueStorageFactory)
         {
         }

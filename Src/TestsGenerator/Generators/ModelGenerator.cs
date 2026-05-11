@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -226,6 +227,132 @@ namespace Tests
             }
         }
 
+        private string GetCollectionsCount(TypeInfo typeInfo)
+        {
+            switch (typeInfo.EnumerableType)
+            {
+                case EnumerableType.JArray:
+                case EnumerableType.MArray:
+                {
+                    return "Length";
+                }
+
+                case EnumerableType.List:
+                {
+                    return "Count";
+                }
+
+                case EnumerableType.Dictionary:
+                case EnumerableType.SingleType:
+                default:
+                {
+                    throw new NotImplementedException();
+                }
+            }
+        }
+
+        private string IndexInMArray(int dimensions)
+        {
+            var builder = new DefaultInterpolatedStringHandler();
+            for (int i = 0; i < dimensions; i++)
+            {
+                builder.AppendLiteral("i");
+                builder.AppendFormatted(i);
+                if (i != dimensions - 1)
+                {
+                    builder.AppendLiteral(",");
+                }
+            }
+
+            return builder.ToStringAndClear();
+        }
+
+        private void CompareCollections(
+            string actualCollectionVar,
+            string expectCollectionVar,
+            TypeInfo typeInfo)
+        {
+            if (typeInfo.EnumerableType == EnumerableType.MArray)
+            {
+                _stringBuilder.Append($@"
+                {{
+                    var expectCollection = {expectCollectionVar};
+                    var actualCollection = {actualCollectionVar};
+                    Assert.That(actualCollection.{GetCollectionsCount(typeInfo)}, Is.EqualTo(expectCollection.{GetCollectionsCount(typeInfo)}));
+                    Assert.That(actualCollection.Rank, Is.EqualTo(expectCollection.Rank)); // and must be {typeInfo.ArrayDimensions}");
+                for (int i = 0; i < typeInfo.ArrayDimensions; i++)
+                {
+                    _stringBuilder.Append($@"
+                    Assert.That(actualCollection.GetLength({i}), Is.EqualTo(expectCollection.GetLength({i})));");
+                }
+
+                for (int i = 0; i < typeInfo.ArrayDimensions; i++)
+                {
+                    _stringBuilder.Append($@"
+                    for(int i{i} = 0; i{i} < expectCollection.GetLength({i}); i{i}++)
+                    {{");
+                }
+
+                _stringBuilder.Append($@"
+                        var expectItem = expectCollection[{IndexInMArray(typeInfo.ArrayDimensions)}];
+                        var actualItem = actualCollection[{IndexInMArray(typeInfo.ArrayDimensions)}];
+                        Assert.That(expectItem, Is.EqualTo(actualItem));");
+
+                for (int i = 0; i < typeInfo.ArrayDimensions; i++)
+                {
+                    _stringBuilder.Append($@"
+                    }}");
+                }
+
+                _stringBuilder.Append($@"
+                }}");
+            }
+
+            if (typeInfo.EnumerableType == EnumerableType.JArray)
+            {
+                _stringBuilder.Append($@"
+                {{
+                    var expectCollection = {expectCollectionVar};
+                    Assert.That({actualCollectionVar}.{GetCollectionsCount(typeInfo)}, Is.EqualTo(expectCollection.{GetCollectionsCount(typeInfo)}));");
+
+                for (int i = 0; i < typeInfo.ArrayDimensions; i++)
+                {
+                    _stringBuilder.Append($@"
+                    for(int i{i} = 0; i{i} < expectCollection.{GetCollectionsCount(typeInfo)}; i{i}++)
+                    {{");
+
+                    if (i == 0)
+                    {
+                        _stringBuilder.Append($@"
+                        var expectCollection{i} = expectCollection[i{i}];
+                        var actualCollection{i} = {actualCollectionVar}[i{i}];
+                        Assert.That(actualCollection{i}.{GetCollectionsCount(typeInfo)}, Is.EqualTo(expectCollection{i}.{GetCollectionsCount(typeInfo)}));");
+                    }
+                    else
+                    {
+                        _stringBuilder.Append($@"
+                        var expectCollection{i} = expectCollection{i - 1}[i{i}];
+                        var actualCollection{i} = actualCollection{i - 1}[i{i}];
+                        Assert.That(actualCollection{i}.{GetCollectionsCount(typeInfo)}, Is.EqualTo(expectCollection{i}.{GetCollectionsCount(typeInfo)}));");
+                    }
+                }
+
+                for (int i = 0; i < typeInfo.ArrayDimensions; i++)
+                {
+                    if (i == typeInfo.ArrayDimensions - 1)
+                    {
+                        _stringBuilder.Append($@"
+                        var expectItem = expectCollection{i}[i{i}];
+                        var actualItem = actualCollection{i}[i{i}];
+                        Assert.That(expectItem, Is.EqualTo(actualItem));");
+                    }
+
+                    _stringBuilder.Append($@"
+                    }}");
+                }
+            }
+        }
+
         private void AssertEnumerable(
             string modelVariable,
             string expectVariable,
@@ -235,17 +362,11 @@ namespace Tests
         {
             _stringBuilder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
-                Assert.That({modelVariable}.{model.IdName}, Is.EqualTo({expectVariable}.{model.IdName}));
-                {{
-                    var expectEnumerValue = {expectVariable}.{model.ValueName};
-                    Assert.That({modelVariable}.{model.ValueName}.Count(), Is.EqualTo(expectEnumerValue.Count()));
-                    for(int i = 0; i < expectEnumerValue.Count(); i++)
-                    {{
-                        var expectItem = expectEnumerValue[i];
-                        var haveItem = {modelVariable}.{model.ValueName}[i];
-                        Assert.That(expectItem, Is.EqualTo(haveItem));
-                    }}
-                }}");
+                Assert.That({modelVariable}.{model.IdName}, Is.EqualTo({expectVariable}.{model.IdName}));");
+            CompareCollections(
+                actualCollectionVar: $"{modelVariable}.{model.ValueName}",
+                expectCollectionVar: $"{expectVariable}.{model.ValueName}",
+                model.TypeInfo);
 
             if (checkNullValue)
             {
@@ -257,17 +378,12 @@ namespace Tests
                 }}
                 else
                 {{
-                    Assert.That({modelVariable}.{model.NullableValueName}, Is.Not.Null);
-                    {{
-                        var expectEnumerValue = {expectVariable}.{model.NullableValueName};
-                        Assert.That({modelVariable}.{model.NullableValueName}.Count(), Is.EqualTo(expectEnumerValue.Count()));
-                        for(int i = 0; i < expectEnumerValue.Count(); i++)
-                        {{
-                            var expectItem = expectEnumerValue[i];
-                            var haveItem = {modelVariable}.{model.NullableValueName}[i];
-                            Assert.That(expectItem, Is.EqualTo(haveItem));
-                        }}
-                    }}
+                    Assert.That({modelVariable}.{model.NullableValueName}, Is.Not.Null);");
+                CompareCollections(
+                    actualCollectionVar: $"{modelVariable}.{model.NullableValueName}",
+                    expectCollectionVar: $"{expectVariable}.{model.NullableValueName}",
+                    model.TypeInfo);
+                _stringBuilder.Append($@"
                 }}");
             }
 
@@ -296,17 +412,11 @@ namespace Tests
                 _stringBuilder.Append($@"
                     }}
                     else
-                    {{  
-                        {{
-                            var expectEnumerValue = {expectVariable}.{model.ModelInnerName}.{model.ValueName};
-                            Assert.That({modelVariable}.{model.ModelInnerName}.{model.ValueName}.Count(), Is.EqualTo(expectEnumerValue.Count()));
-                            for(int i = 0; i < expectEnumerValue.Count(); i++)
-                            {{
-                                var expectItem = expectEnumerValue[i];
-                                var haveItem = {modelVariable}.{model.ModelInnerName}.{model.ValueName}[i];
-                                Assert.That(expectItem, Is.EqualTo(haveItem));
-                            }}
-                        }}");
+                    {{");
+                CompareCollections(
+                    actualCollectionVar: $"{expectVariable}.{model.ModelInnerName}.{model.ValueName}",
+                    expectCollectionVar: $"{modelVariable}.{model.ModelInnerName}.{model.ValueName}",
+                    model.TypeInfo);
 
                 if (checkNullValue)
                 {
@@ -318,17 +428,12 @@ namespace Tests
                         }}
                         else
                         {{
-                            Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}, Is.Not.Null);
-                            {{
-                                var expectEnumerValue = {expectVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName};
-                                Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}.Count(), Is.EqualTo(expectEnumerValue.Count()));
-                                for(int i = 0; i < expectEnumerValue.Count(); i++)
-                                {{
-                                    var expectItem = expectEnumerValue[i];
-                                    var haveItem = {modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}[i];
-                                    Assert.That(expectItem, Is.EqualTo(haveItem));
-                                }}
-                            }}
+                            Assert.That({modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}, Is.Not.Null);");
+                    CompareCollections(
+                        actualCollectionVar: $"{expectVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}",
+                        expectCollectionVar: $"{modelVariable}.{model.ModelInnerName}.{model.ModelInner.NullableValueName}",
+                        model.TypeInfo);
+                    _stringBuilder.Append($@"
                         }}");
                 }
 
@@ -420,17 +525,11 @@ namespace Tests
         {
             _stringBuilder.Append($@"
                 Assert.That({modelVariable}, Is.Not.Null);
-                Assert.That({modelVariable}.{model.IdName}, Is.EqualTo({expectVariable}.{model.IdName}));
-                {{
-                    var expectEnumerValue = {expectVariable}.{model.ValueName};
-                    Assert.That({modelVariable}.{model.ValueName}.Count(), Is.EqualTo(expectEnumerValue.Count()));
-                    for(int i = 0; i < expectEnumerValue.Count(); i++)
-                    {{
-                        var expectItem = expectEnumerValue[i];
-                        var haveItem = {modelVariable}.{model.ValueName}[i];
-                        Assert.That(expectItem, Is.EqualTo(haveItem));
-                    }}
-                }}");
+                Assert.That({modelVariable}.{model.IdName}, Is.EqualTo({expectVariable}.{model.IdName}));");
+            CompareCollections(
+                actualCollectionVar: $"{expectVariable}.{model.ValueName}",
+                expectCollectionVar: $"{modelVariable}.{model.ValueName}",
+                model.TypeInfo);
 
             if (checkNullValue)
             {
@@ -442,17 +541,12 @@ namespace Tests
                 }}
                 else
                 {{
-                    Assert.That({modelVariable}.{model.NullableValueName}, Is.Not.Null);
-                    {{
-                        var expectEnumerValue = {expectVariable}.{model.NullableValueName};
-                        Assert.That({modelVariable}.{model.NullableValueName}.Count(), Is.EqualTo(expectEnumerValue.Count()));
-                        for(int i = 0; i < expectEnumerValue.Count(); i++)
-                        {{
-                            var expectItem = expectEnumerValue[i];
-                            var haveItem = {modelVariable}.{model.NullableValueName}[i];
-                            Assert.That(expectItem, Is.EqualTo(haveItem));
-                        }}
-                    }}
+                    Assert.That({modelVariable}.{model.NullableValueName}, Is.Not.Null);");
+                CompareCollections(
+                    actualCollectionVar: $"{expectVariable}.{model.NullableValueName}",
+                    expectCollectionVar: $"{modelVariable}.{model.NullableValueName}",
+                    model.TypeInfo);
+                _stringBuilder.Append($@"
                 }}");
             }
         }
