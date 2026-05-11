@@ -19,7 +19,21 @@ namespace Gedaq.Helpers
             string mapVariableName,
             string castTypeExpr = "")
         {
-            if (provider.IsKnownProviderType(mapTypeInfo.MapType))
+            if (mapTypeInfo.MapType is IArrayTypeSymbol typeArray && typeArray.ElementType.Name == nameof(Object))
+            {
+                ReturnObjectArr(
+                    builder,
+                    mapVariableName,
+                    castTypeExpr);
+            }
+            else if (mapTypeInfo.MapType.Name == nameof(Object))
+            {
+                ReturnObject(
+                    builder,
+                    mapVariableName,
+                    castTypeExpr);
+            }
+            else if (provider.IsKnownProviderType(mapTypeInfo.MapType))
             {
                 ReturnKnownProviderType(
                     mapTypeInfo.MapType,
@@ -33,20 +47,6 @@ namespace Gedaq.Helpers
                     mapTypeInfo.MapType,
                     builder, 
                     provider,
-                    mapVariableName,
-                    castTypeExpr);
-            }
-            else if (mapTypeInfo.MapType.Name == nameof(Object))
-            {
-                ReturnObject(
-                    builder,
-                    mapVariableName,
-                    castTypeExpr);
-            }
-            else if (mapTypeInfo.MapType is IArrayTypeSymbol typeArray && typeArray.ElementType.Name == nameof(Object))
-            {
-                ReturnObjectArr(
-                    builder,
                     mapVariableName,
                     castTypeExpr);
             }
