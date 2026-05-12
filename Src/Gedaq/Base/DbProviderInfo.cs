@@ -114,7 +114,11 @@ namespace Gedaq.Base
             Field field,
             string source = "reader");
 
-        public string ValueReaderKey(string prefix, Field field)
+        public string ValueReaderKey(
+            string prefix,
+            Field field,
+            string readerVariable = "reader",
+            bool alwaysByPosition = true)
         {
             if (field.Position.HasValue)
             {
@@ -122,7 +126,14 @@ namespace Gedaq.Base
             }
             else
             {
-                return $"\"{prefix}{field.SQLName}\"";
+                if (alwaysByPosition)
+                {
+                    return $"{readerVariable}.GetOrdinal(\"{prefix}{field.SQLName}\")";
+                }
+                else
+                {
+                    return $"\"{prefix}{field.SQLName}\"";
+                }
             }
         }
     }

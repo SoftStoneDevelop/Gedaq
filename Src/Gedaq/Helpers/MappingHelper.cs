@@ -78,6 +78,11 @@ namespace Gedaq.Helpers
         {
             if (mapType.IsNullableType())
             {
+                if (!GetValueFromReader(mapType, out string getMethod))
+                {
+                    getMethod = $"GetFieldValue<{mapType.GetFullTypeName(true, addQuestionNoatble: false)}>";
+                }
+
                 builder.Append($@"
                     if(reader.IsDBNull(0))
                     {{
@@ -85,13 +90,18 @@ namespace Gedaq.Helpers
                     }}
                     else
                     {{
-                        {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{mapType.GetFullTypeName(true, addQuestionNoatble: false)}>(0);
+                        {mapVariableName} = {castTypeExpr}reader.{getMethod}(0);
                     }}");
             }
             else
             {
+                if (!GetValueFromReader(mapType, out string getMethod))
+                {
+                    getMethod = $"GetFieldValue<{mapType.GetFullTypeName()}>";
+                }
+
                 builder.Append($@"
-                    {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{mapType.GetFullTypeName()}>(0);");
+                    {mapVariableName} = {castTypeExpr}reader.{getMethod}(0);");
             }
         }
 
@@ -125,6 +135,11 @@ namespace Gedaq.Helpers
             var field = Field.OnlyPositionalField(0);
             if (mapType.IsNullableType())
             {
+                if (!GetValueFromReader(mapType, out string getMethod))
+                {
+                    getMethod = $"GetFieldValue<{provider.GetSpecialTypeValue(mapType, string.Empty, field)}>";
+                }
+
                 builder.Append($@"
                     if(reader.IsDBNull({provider.ValueReaderKey(string.Empty, field)}))
                     {{
@@ -132,7 +147,7 @@ namespace Gedaq.Helpers
                     }}
                     else
                     {{
-                        {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{provider.GetSpecialTypeValue(mapType, string.Empty, field)}>({provider.ValueReaderKey(string.Empty, field)});
+                        {mapVariableName} = {castTypeExpr}reader.{getMethod}({provider.ValueReaderKey(string.Empty, field)});
                     }}");
             }
             else
@@ -161,8 +176,13 @@ namespace Gedaq.Helpers
             string mapVariableName,
             string castTypeExpr = "")
         {
+            if (!GetValueFromReader(mapType, out string getMethod))
+            {
+                getMethod = $"GetFieldValue<{mapType.GetFullTypeName()}>";
+            }
+
             builder.Append($@"
-                    {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{mapType.GetFullTypeName()}>(0);");
+                    {mapVariableName} = {castTypeExpr}reader.{getMethod}(0);");
         }
 
 
@@ -292,8 +312,13 @@ namespace Gedaq.Helpers
 
             if (propertyType.IsNullableType())
             {
+                if (!GetValueFromReader(propertyType, out string getMethod))
+                {
+                    getMethod = $"GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>";
+                }
+
                 builder.Append($@"
-                        {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
+                        {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.{getMethod}({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
             }
             else
             {
@@ -304,8 +329,13 @@ namespace Gedaq.Helpers
                 }
                 else
                 {
+                    if (!GetValueFromReader(propertyType, out string getMethod))
+                    {
+                        getMethod = $"GetFieldValue<{propertyType.GetFullTypeName()}>";
+                    }
+
                     builder.Append($@"
-                        {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
+                        {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.{getMethod}({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
                 }
             }
 
@@ -317,6 +347,89 @@ namespace Gedaq.Helpers
         private static string Tabs(int tabs)
         {
             return new string(' ', tabs * 4);
+        }
+
+        private static bool GetValueFromReader(
+            ITypeSymbol typeOfValue,
+            out string getMethod)
+        {
+            switch (typeOfValue.GetFullTypeName(replaceNullable: true, addQuestionNoatble: false))
+            {
+                case "System.Int32":
+                {
+                    getMethod = "GetInt32";
+                    return true;
+                }
+
+                case "System.Int64":
+                {
+                    getMethod = "GetInt64";
+                    return true;
+                }
+
+                case "System.Byte":
+                {
+                    getMethod = "GetByte";
+                    return true;
+                }
+
+                case "System.Int16":
+                {
+                    getMethod = "GetInt16";
+                    return true;
+                }
+
+                case "System.Char":
+                {
+                    getMethod = "GetChar";
+                    return true;
+                }
+
+                case "System.Decimal":
+                {
+                    getMethod = "GetDecimal";
+                    return true;
+                }
+
+                case "System.Double":
+                {
+                    getMethod = "GetDouble";
+                    return true;
+                }
+
+                case "System.Boolean":
+                {
+                    getMethod = "GetBoolean";
+                    return true;
+                }
+
+                case "System.Single":
+                {
+                    getMethod = "GetFloat";
+                    return true;
+                }
+
+                case "System.TimeSpan":
+                {
+                    getMethod = "GetTimeSpan";
+                    return true;
+                }
+
+                case "System.DateTime":
+                {
+                    getMethod = "GetDateTime";
+                    return true;
+                }
+
+                case "System.String":
+                {
+                    getMethod = "GetString";
+                    return true;
+                }
+            }
+
+            getMethod = null;
+            return false;
         }
     }
 }
