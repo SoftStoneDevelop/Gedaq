@@ -30,25 +30,23 @@ namespace Tests
         {
             new SinglerealMMArrayD2E1M
 {
-    Id = 5,
+    Id = 9,
     Value = 
-new System.Single[,] { { 0.73829365f, 0.8331927f, }, { 0.22586268f, 0.93030655f, }, },
+new System.Single[,] { { 0.12221855f, 0.5124991f, }, { 0.50616294f, 0.48687255f, }, },
     ModelInner = null,
-    NullableValue = 
-new System.Single[,] { { 0.93235916f, 0.8043202f, }, { 0.6437911f, 0.31545419f, }, },
+    NullableValue = null,
 },
             new SinglerealMMArrayD2E1M
 {
     Id = 12,
     Value = 
-new System.Single[,] { { 0.9699117f, 0.4878909f, }, { 0.59062284f, 0.71227765f, }, },
+new System.Single[,] { { 0.9988205f, 0.67551684f, }, { 0.9847249f, 0.4030903f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 2,
+    Id = 1,
     Value = 
-new System.Single[,] { { 0.11797929f, 0.12778866f, }, { 0.7836322f, 0.46655697f, }, },
-    NullableValue = 
-new System.Single[,] { { 0.2038269f, 0.5268149f, }, { 0.020561218f, 0.90666306f, }, },
+new System.Single[,] { { 0.7360651f, 0.9998741f, }, { 0.060528934f, 0.9452423f, }, },
+    NullableValue = null,
 },
     NullableValue = null,
 },
@@ -56,385 +54,391 @@ new System.Single[,] { { 0.2038269f, 0.5268149f, }, { 0.020561218f, 0.90666306f,
 {
     Id = 18,
     Value = 
-new System.Single[,] { { 0.39742708f, 0.057312906f, }, { 0.010379314f, 0.42015368f, }, },
+new System.Single[,] { { 0.6356729f, 0.9628178f, }, { 0.5955781f, 0.18671507f, }, },
     ModelInner = null,
     NullableValue = 
-new System.Single[,] { { 0.70780075f, 0.13305622f, }, { 0.97433937f, 0.72070485f, }, },
+new System.Single[,] { { 0.43839872f, 0.7038205f, }, { 0.5309464f, 0.92677546f, }, },
+},
+            new SinglerealMMArrayD2E1M
+{
+    Id = 21,
+    Value = 
+new System.Single[,] { { 0.19150549f, 0.62337923f, }, { 0.6540919f, 0.26562124f, }, },
+    ModelInner = new SinglerealMMArrayD2E1MI
+{
+    Id = 9,
+    Value = 
+new System.Single[,] { { 0.5941872f, 0.8162945f, }, { 0.32723033f, 0.8971464f, }, },
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Single[,] { { 0.7613359f, 0.08469856f, }, { 0.44462717f, 0.8601986f, }, },
+},
+            new SinglerealMMArrayD2E1M
+{
+    Id = 22,
+    Value = 
+new System.Single[,] { { 0.27630252f, 0.5871526f, }, { 0.94859594f, 0.29986513f, }, },
+    ModelInner = null,
+    NullableValue = 
+new System.Single[,] { { 0.95693237f, 0.59419113f, }, { 0.97145003f, 0.31799155f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
     Id = 24,
     Value = 
-new System.Single[,] { { 0.7799113f, 0.007245302f, }, { 0.032500565f, 0.26096433f, }, },
+new System.Single[,] { { 0.5987718f, 0.55674285f, }, { 0.832492f, 0.07936281f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 3,
+    Id = 18,
     Value = 
-new System.Single[,] { { 0.0136117935f, 0.67742074f, }, { 0.35586017f, 0.98104763f, }, },
+new System.Single[,] { { 0.74897707f, 0.8222491f, }, { 0.09452438f, 0.122715f, }, },
     NullableValue = null,
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Single[,] { { 0.94677806f, 0.44303298f, }, { 0.32055902f, 0.27344233f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 27,
+    Id = 25,
     Value = 
-new System.Single[,] { { 0.6194022f, 0.5434494f, }, { 0.6299524f, 0.63235384f, }, },
+new System.Single[,] { { 0.37536997f, 0.043785453f, }, { 0.44001842f, 0.81945944f, }, },
     ModelInner = null,
     NullableValue = null,
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 33,
+    Id = 28,
     Value = 
-new System.Single[,] { { 0.97325623f, 0.71221155f, }, { 0.97803324f, 0.8707715f, }, },
+new System.Single[,] { { 0.56002486f, 0.118766904f, }, { 0.7426257f, 0.4532588f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 4,
+    Id = 22,
     Value = 
-new System.Single[,] { { 0.5739049f, 0.17273188f, }, { 0.87031615f, 0.001577735f, }, },
+new System.Single[,] { { 0.51404136f, 0.8101505f, }, { 0.7845157f, 0.6245994f, }, },
+    NullableValue = 
+new System.Single[,] { { 0.9820634f, 0.97320825f, }, { 0.33681798f, 0.86039865f, }, },
+},
     NullableValue = null,
 },
-    NullableValue = 
-new System.Single[,] { { 0.9374238f, 0.014777005f, }, { 0.039283216f, 0.52272284f, }, },
-},
             new SinglerealMMArrayD2E1M
 {
-    Id = 41,
+    Id = 36,
     Value = 
-new System.Single[,] { { 0.28777987f, 0.1886394f, }, { 0.8082714f, 0.19607872f, }, },
+new System.Single[,] { { 0.766807f, 0.17863625f, }, { 0.9964028f, 0.6479627f, }, },
     ModelInner = null,
-    NullableValue = 
-new System.Single[,] { { 0.7486719f, 0.94627815f, }, { 0.37318677f, 0.8511869f, }, },
+    NullableValue = null,
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 46,
+    Id = 45,
     Value = 
-new System.Single[,] { { 0.9871409f, 0.4901755f, }, { 0.9611008f, 0.6447419f, }, },
+new System.Single[,] { { 0.18918234f, 0.8769191f, }, { 0.43876928f, 0.8120039f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 10,
+    Id = 29,
     Value = 
-new System.Single[,] { { 0.8364593f, 0.4943552f, }, { 0.05269301f, 0.49423236f, }, },
+new System.Single[,] { { 0.49844235f, 0.5257417f, }, { 0.021343172f, 0.20486623f, }, },
     NullableValue = 
-new System.Single[,] { { 0.87297875f, 0.8115649f, }, { 0.93550575f, 0.20595491f, }, },
+new System.Single[,] { { 0.9318684f, 0.5161935f, }, { 0.009578824f, 0.6022036f, }, },
 },
     NullableValue = 
-new System.Single[,] { { 0.030724168f, 0.40003777f, }, { 0.42249262f, 0.6659029f, }, },
+new System.Single[,] { { 0.57233477f, 0.34911424f, }, { 0.76269406f, 0.62148964f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 51,
+    Id = 48,
     Value = 
-new System.Single[,] { { 0.6396378f, 0.9647095f, }, { 0.24564505f, 0.89377046f, }, },
+new System.Single[,] { { 0.54358405f, 0.04753983f, }, { 0.8220083f, 0.7462079f, }, },
     ModelInner = null,
     NullableValue = 
-new System.Single[,] { { 0.46076673f, 0.121240616f, }, { 0.6953568f, 0.96371263f, }, },
+new System.Single[,] { { 0.97628725f, 0.6228873f, }, { 0.7413273f, 0.68987834f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
     Id = 56,
     Value = 
-new System.Single[,] { { 0.063152134f, 0.7621218f, }, { 0.8089793f, 0.60530376f, }, },
+new System.Single[,] { { 0.47136837f, 0.65231115f, }, { 0.24663627f, 0.35925257f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 12,
+    Id = 38,
     Value = 
-new System.Single[,] { { 0.08735871f, 0.9001729f, }, { 0.6962095f, 0.24228722f, }, },
+new System.Single[,] { { 0.7262835f, 0.25120765f, }, { 0.3293864f, 0.7681618f, }, },
+    NullableValue = null,
+},
     NullableValue = 
-new System.Single[,] { { 0.08412367f, 0.95009637f, }, { 0.053304613f, 0.28427643f, }, },
-},
-    NullableValue = null,
+new System.Single[,] { { 0.7300742f, 0.7343289f, }, { 0.52036655f, 0.19604033f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 61,
+    Id = 58,
     Value = 
-new System.Single[,] { { 0.84518725f, 0.877353f, }, { 0.050284326f, 0.40410125f, }, },
+new System.Single[,] { { 0.31226158f, 0.23240465f, }, { 0.4544493f, 0.33251363f, }, },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Single[,] { { 0.8778894f, 0.5125228f, }, { 0.5234563f, 0.13511598f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 68,
+    Id = 63,
     Value = 
-new System.Single[,] { { 0.86641246f, 0.29931927f, }, { 0.6771056f, 0.973842f, }, },
+new System.Single[,] { { 0.24409842f, 0.9704828f, }, { 0.42441493f, 0.9903301f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 14,
+    Id = 40,
     Value = 
-new System.Single[,] { { 0.34663093f, 0.2747069f, }, { 0.26633638f, 0.5966659f, }, },
+new System.Single[,] { { 0.49038798f, 0.578968f, }, { 0.76885825f, 0.9191823f, }, },
     NullableValue = 
-new System.Single[,] { { 0.26098454f, 0.16050154f, }, { 0.82032126f, 0.5085229f, }, },
+new System.Single[,] { { 0.083417654f, 0.9500094f, }, { 0.1981169f, 0.33600038f, }, },
 },
     NullableValue = null,
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 72,
+    Id = 70,
     Value = 
-new System.Single[,] { { 0.43291384f, 0.5046211f, }, { 0.6162598f, 0.49953127f, }, },
+new System.Single[,] { { 0.6167666f, 0.3413633f, }, { 0.5476029f, 0.28778517f, }, },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Single[,] { { 0.031213522f, 0.9625652f, }, { 0.33706015f, 0.64054227f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 76,
+    Id = 79,
     Value = 
-new System.Single[,] { { 0.3191365f, 0.04849589f, }, { 0.048963726f, 0.6952446f, }, },
+new System.Single[,] { { 0.0810523f, 0.28707474f, }, { 0.7974716f, 0.5931464f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 23,
+    Id = 47,
     Value = 
-new System.Single[,] { { 0.8432799f, 0.6009332f, }, { 0.2846058f, 0.72514814f, }, },
-    NullableValue = 
-new System.Single[,] { { 0.3742274f, 0.912798f, }, { 0.31941658f, 0.012500107f, }, },
+new System.Single[,] { { 0.94448155f, 0.51505095f, }, { 0.96933997f, 0.7595802f, }, },
+    NullableValue = null,
 },
     NullableValue = 
-new System.Single[,] { { 0.037555277f, 0.66859984f, }, { 0.30196536f, 0.924217f, }, },
+new System.Single[,] { { 0.2401573f, 0.71451104f, }, { 0.1585756f, 0.94292563f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 83,
+    Id = 80,
     Value = 
-new System.Single[,] { { 0.3095898f, 0.9121698f, }, { 0.08627176f, 0.9868774f, }, },
+new System.Single[,] { { 0.3297935f, 0.31284606f, }, { 0.9500071f, 0.9899234f, }, },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new System.Single[,] { { 0.17136133f, 0.66542f, }, { 0.80691856f, 0.64873606f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
     Id = 85,
     Value = 
-new System.Single[,] { { 0.33890736f, 0.6442602f, }, { 0.12770092f, 0.44602036f, }, },
+new System.Single[,] { { 0.30919278f, 0.8401607f, }, { 0.62210697f, 0.110548854f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 31,
+    Id = 56,
     Value = 
-new System.Single[,] { { 0.8950498f, 0.5102803f, }, { 0.7711836f, 0.45500118f, }, },
-    NullableValue = null,
+new System.Single[,] { { 0.37085766f, 0.8499911f, }, { 0.26806104f, 0.998548f, }, },
+    NullableValue = 
+new System.Single[,] { { 0.8871977f, 0.8603037f, }, { 0.892816f, 0.9842236f, }, },
 },
     NullableValue = 
-new System.Single[,] { { 0.2720431f, 0.32468718f, }, { 0.82266754f, 0.59018296f, }, },
+new System.Single[,] { { 0.50509834f, 0.76205605f, }, { 0.65896267f, 0.12120479f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 92,
+    Id = 87,
     Value = 
-new System.Single[,] { { 0.069309115f, 0.35774463f, }, { 0.3872379f, 0.50214326f, }, },
+new System.Single[,] { { 0.3903702f, 0.68085253f, }, { 0.21406436f, 0.55453336f, }, },
     ModelInner = null,
     NullableValue = 
-new System.Single[,] { { 0.95497274f, 0.46411723f, }, { 0.45916605f, 0.15612519f, }, },
+new System.Single[,] { { 0.3849566f, 0.20232844f, }, { 0.061730742f, 0.7438155f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 98,
+    Id = 96,
     Value = 
-new System.Single[,] { { 0.008479953f, 0.039627254f, }, { 0.575379f, 0.07296622f, }, },
+new System.Single[,] { { 0.42246807f, 0.8194539f, }, { 0.8990877f, 0.7884802f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 37,
+    Id = 62,
     Value = 
-new System.Single[,] { { 0.12417239f, 0.8189967f, }, { 0.7675887f, 0.91333216f, }, },
-    NullableValue = 
-new System.Single[,] { { 0.6387584f, 0.41939354f, }, { 0.73609936f, 0.632883f, }, },
-},
+new System.Single[,] { { 0.6828736f, 0.06600332f, }, { 0.7922212f, 0.51329195f, }, },
     NullableValue = null,
+},
+    NullableValue = 
+new System.Single[,] { { 0.50308573f, 0.6577026f, }, { 0.10738665f, 0.29804933f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
     Id = 101,
     Value = 
-new System.Single[,] { { 0.3443877f, 0.050551414f, }, { 0.15260053f, 0.80319583f, }, },
-    ModelInner = null,
-    NullableValue = 
-new System.Single[,] { { 0.45849305f, 0.60622615f, }, { 0.22310013f, 0.3229882f, }, },
-},
-            new SinglerealMMArrayD2E1M
-{
-    Id = 104,
-    Value = 
-new System.Single[,] { { 0.82519215f, 0.5749919f, }, { 0.73495317f, 0.26108563f, }, },
-    ModelInner = new SinglerealMMArrayD2E1MI
-{
-    Id = 43,
-    Value = 
-new System.Single[,] { { 0.044262648f, 0.8001799f, }, { 0.575182f, 0.38254726f, }, },
-    NullableValue = 
-new System.Single[,] { { 0.868871f, 0.2737965f, }, { 0.5435214f, 0.14082074f, }, },
-},
-    NullableValue = null,
-},
-            new SinglerealMMArrayD2E1M
-{
-    Id = 106,
-    Value = 
-new System.Single[,] { { 0.19716549f, 0.98496467f, }, { 0.9916163f, 0.410641f, }, },
+new System.Single[,] { { 0.38575548f, 0.40027744f, }, { 0.65688044f, 0.18112212f, }, },
     ModelInner = null,
     NullableValue = null,
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 107,
+    Id = 110,
     Value = 
-new System.Single[,] { { 0.76793885f, 0.6704213f, }, { 0.99672437f, 0.19971591f, }, },
+new System.Single[,] { { 0.08206469f, 0.43247157f, }, { 0.3657565f, 0.09567273f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 51,
+    Id = 70,
     Value = 
-new System.Single[,] { { 0.8608353f, 0.684174f, }, { 0.5892674f, 0.97683656f, }, },
+new System.Single[,] { { 0.7721919f, 0.70387864f, }, { 0.45225495f, 0.9408241f, }, },
+    NullableValue = 
+new System.Single[,] { { 0.9312254f, 0.2788493f, }, { 0.9518165f, 0.860339f, }, },
+},
     NullableValue = null,
 },
-    NullableValue = 
-new System.Single[,] { { 0.2510432f, 0.27363753f, }, { 0.12175995f, 0.8042575f, }, },
-},
             new SinglerealMMArrayD2E1M
 {
-    Id = 111,
+    Id = 115,
     Value = 
-new System.Single[,] { { 0.5079834f, 0.9634231f, }, { 0.21503115f, 0.41738093f, }, },
+new System.Single[,] { { 0.076001585f, 0.01191771f, }, { 0.10869384f, 0.3241505f, }, },
     ModelInner = null,
-    NullableValue = 
-new System.Single[,] { { 0.3757484f, 0.21798342f, }, { 0.24555445f, 0.07796663f, }, },
-},
-            new SinglerealMMArrayD2E1M
-{
-    Id = 120,
-    Value = 
-new System.Single[,] { { 0.30843616f, 0.7891124f, }, { 0.4704789f, 0.72925025f, }, },
-    ModelInner = new SinglerealMMArrayD2E1MI
-{
-    Id = 58,
-    Value = 
-new System.Single[,] { { 0.97823507f, 0.5083373f, }, { 0.76849246f, 0.7624214f, }, },
-    NullableValue = 
-new System.Single[,] { { 0.36422437f, 0.8784012f, }, { 0.00044727325f, 0.16578013f, }, },
-},
     NullableValue = null,
 },
             new SinglerealMMArrayD2E1M
 {
     Id = 122,
     Value = 
-new System.Single[,] { { 0.4907974f, 0.13215548f, }, { 0.7002167f, 0.40442562f, }, },
-    ModelInner = null,
-    NullableValue = null,
-},
-            new SinglerealMMArrayD2E1M
-{
-    Id = 126,
-    Value = 
-new System.Single[,] { { 0.3256513f, 0.76774806f, }, { 0.81001514f, 0.86211073f, }, },
-    ModelInner = new SinglerealMMArrayD2E1MI
-{
-    Id = 65,
-    Value = 
-new System.Single[,] { { 0.5534132f, 0.6453383f, }, { 0.619226f, 0.97543186f, }, },
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new SinglerealMMArrayD2E1M
-{
-    Id = 134,
-    Value = 
-new System.Single[,] { { 0.7366729f, 0.96006674f, }, { 0.37079197f, 0.54363143f, }, },
-    ModelInner = null,
-    NullableValue = null,
-},
-            new SinglerealMMArrayD2E1M
-{
-    Id = 143,
-    Value = 
-new System.Single[,] { { 0.08919495f, 0.72925407f, }, { 0.27578026f, 0.5955714f, }, },
+new System.Single[,] { { 0.8867055f, 0.3097756f, }, { 0.25131536f, 0.06709111f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
     Id = 71,
     Value = 
-new System.Single[,] { { 0.49069726f, 0.5683412f, }, { 0.6945176f, 0.7570648f, }, },
+new System.Single[,] { { 0.6790207f, 0.17949313f, }, { 0.3825943f, 0.55633783f, }, },
+    NullableValue = 
+new System.Single[,] { { 0.08909035f, 0.47103822f, }, { 0.66178554f, 0.54623055f, }, },
+},
+    NullableValue = 
+new System.Single[,] { { 0.56510514f, 0.58839625f, }, { 0.63212013f, 0.6257009f, }, },
+},
+            new SinglerealMMArrayD2E1M
+{
+    Id = 131,
+    Value = 
+new System.Single[,] { { 0.5457275f, 0.11446035f, }, { 0.36311704f, 0.0075643063f, }, },
+    ModelInner = null,
+    NullableValue = 
+new System.Single[,] { { 0.49694097f, 0.5703354f, }, { 0.3749907f, 0.7334964f, }, },
+},
+            new SinglerealMMArrayD2E1M
+{
+    Id = 132,
+    Value = 
+new System.Single[,] { { 0.64897054f, 0.04501891f, }, { 0.40473545f, 0.1566261f, }, },
+    ModelInner = new SinglerealMMArrayD2E1MI
+{
+    Id = 72,
+    Value = 
+new System.Single[,] { { 0.37485087f, 0.8861399f, }, { 0.2395373f, 0.8508204f, }, },
     NullableValue = null,
 },
     NullableValue = 
-new System.Single[,] { { 0.18503588f, 0.31871796f, }, { 0.22268784f, 0.8629705f, }, },
+new System.Single[,] { { 0.06616652f, 0.46911186f, }, { 0.23855501f, 0.44552714f, }, },
+},
+            new SinglerealMMArrayD2E1M
+{
+    Id = 141,
+    Value = 
+new System.Single[,] { { 0.12160671f, 0.43682814f, }, { 0.7548094f, 0.24245703f, }, },
+    ModelInner = null,
+    NullableValue = null,
 },
             new SinglerealMMArrayD2E1M
 {
     Id = 149,
     Value = 
-new System.Single[,] { { 0.5627446f, 0.9436064f, }, { 0.68456507f, 0.72470886f, }, },
-    ModelInner = null,
-    NullableValue = 
-new System.Single[,] { { 0.51977754f, 0.9857194f, }, { 0.598439f, 0.18741596f, }, },
-},
-            new SinglerealMMArrayD2E1M
-{
-    Id = 153,
-    Value = 
-new System.Single[,] { { 0.75711364f, 0.09012514f, }, { 0.6392945f, 0.8837198f, }, },
+new System.Single[,] { { 0.849922f, 0.94722515f, }, { 0.35719764f, 0.04696566f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 77,
+    Id = 75,
     Value = 
-new System.Single[,] { { 0.76305765f, 0.048762262f, }, { 0.44067007f, 0.48808277f, }, },
+new System.Single[,] { { 0.46279347f, 0.26372594f, }, { 0.27897966f, 0.57997113f, }, },
     NullableValue = 
-new System.Single[,] { { 0.38497674f, 0.28657717f, }, { 0.5335389f, 0.1958012f, }, },
+new System.Single[,] { { 0.8109769f, 0.15224713f, }, { 0.9799623f, 0.97084904f, }, },
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Single[,] { { 0.71318144f, 0.27964914f, }, { 0.38729692f, 0.8721527f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
     Id = 154,
     Value = 
-new System.Single[,] { { 0.3665712f, 0.12817979f, }, { 0.4536299f, 0.15045518f, }, },
+new System.Single[,] { { 0.62740415f, 0.0908128f, }, { 0.36481243f, 0.3461529f, }, },
     ModelInner = null,
-    NullableValue = 
-new System.Single[,] { { 0.87656265f, 0.4694792f, }, { 0.50428337f, 0.12360817f, }, },
+    NullableValue = null,
 },
             new SinglerealMMArrayD2E1M
 {
     Id = 156,
     Value = 
-new System.Single[,] { { 0.58303237f, 0.471636f, }, { 0.22184372f, 0.56777275f, }, },
+new System.Single[,] { { 0.24860352f, 0.78567725f, }, { 0.9274627f, 0.16349524f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 84,
+    Id = 76,
     Value = 
-new System.Single[,] { { 0.9050631f, 0.5127268f, }, { 0.26365948f, 0.5627805f, }, },
-    NullableValue = null,
+new System.Single[,] { { 0.33401662f, 0.52136314f, }, { 0.4066682f, 0.94398504f, }, },
+    NullableValue = 
+new System.Single[,] { { 0.03367281f, 0.5665499f, }, { 0.8683485f, 0.6504101f, }, },
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Single[,] { { 0.09381509f, 0.57324797f, }, { 0.5440714f, 0.39231324f, }, },
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 164,
+    Id = 161,
     Value = 
-new System.Single[,] { { 0.20985812f, 0.5716482f, }, { 0.84454906f, 0.8112433f, }, },
+new System.Single[,] { { 0.67067254f, 0.7629044f, }, { 0.8274732f, 0.43253076f, }, },
     ModelInner = null,
     NullableValue = null,
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 169,
+    Id = 162,
     Value = 
-new System.Single[,] { { 0.2733159f, 0.63733315f, }, { 0.3102281f, 0.28573972f, }, },
+new System.Single[,] { { 0.33308452f, 0.39587253f, }, { 0.9903852f, 0.67244583f, }, },
     ModelInner = new SinglerealMMArrayD2E1MI
 {
-    Id = 93,
+    Id = 78,
     Value = 
-new System.Single[,] { { 0.8602596f, 0.11702728f, }, { 0.06244099f, 0.28490013f, }, },
+new System.Single[,] { { 0.16647941f, 0.3382535f, }, { 0.45015794f, 0.36415946f, }, },
     NullableValue = 
-new System.Single[,] { { 0.79369396f, 0.8182171f, }, { 0.8622823f, 0.29213315f, }, },
+new System.Single[,] { { 0.5886657f, 0.35210526f, }, { 0.92526585f, 0.85794824f, }, },
 },
     NullableValue = null,
 },
             new SinglerealMMArrayD2E1M
 {
-    Id = 177,
+    Id = 165,
     Value = 
-new System.Single[,] { { 0.82022804f, 0.37022877f, }, { 0.11840427f, 0.7050552f, }, },
+new System.Single[,] { { 0.72890323f, 0.5427037f, }, { 0.43937665f, 0.890865f, }, },
+    ModelInner = null,
+    NullableValue = null,
+},
+            new SinglerealMMArrayD2E1M
+{
+    Id = 168,
+    Value = 
+new System.Single[,] { { 0.8070962f, 0.65764177f, }, { 0.62530345f, 0.1168825f, }, },
+    ModelInner = new SinglerealMMArrayD2E1MI
+{
+    Id = 81,
+    Value = 
+new System.Single[,] { { 0.90382254f, 0.9779191f, }, { 0.8042423f, 0.89160043f, }, },
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Single[,] { { 0.18853879f, 0.8652889f, }, { 0.09246856f, 0.42275733f, }, },
+},
+            new SinglerealMMArrayD2E1M
+{
+    Id = 170,
+    Value = 
+new System.Single[,] { { 0.8792186f, 0.93800116f, }, { 0.45492792f, 0.81961846f, }, },
     ModelInner = null,
     NullableValue = 
-new System.Single[,] { { 0.34178066f, 0.93694884f, }, { 0.96201766f, 0.9567112f, }, },
+new System.Single[,] { { 0.29821175f, 0.628153f, }, { 0.11677581f, 0.17383921f, }, },
 },
         };
 
@@ -779,7 +783,9 @@ RETURNING
 
                     nullable =  ((ISingleMArrayrealMMArrayD2)this).ScalarInsertModelDynParReturning(connection, parameters);
                 }
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(
+new System.Single[,] { { 0.95693237f, 0.59419113f, }, { 0.97145003f, 0.31799155f, }, }));
                 {
                     var parameters = new NpgsqlParameter[4];
                     parameters[0] = new NpgsqlParameter<System.Int32>();
@@ -816,7 +822,7 @@ RETURNING
                 }
                 Assert.That(nullable, Is.Not.Null);
                 Assert.That(nullable, Is.EqualTo(
-new System.Single[,] { { 0.9374238f, 0.014777005f, }, { 0.039283216f, 0.52272284f, }, }));
+new System.Single[,] { { 0.94677806f, 0.44303298f, }, { 0.32055902f, 0.27344233f, }, }));
             }
         }
 
@@ -861,9 +867,7 @@ new System.Single[,] { { 0.9374238f, 0.014777005f, }, { 0.039283216f, 0.52272284
 
                     nullable = await ((ISingleMArrayrealMMArrayD2)this).ScalarInsertModelDynParReturningAsync(connection, parameters);
                 }
-                Assert.That(nullable, Is.Not.Null);
-                Assert.That(nullable, Is.EqualTo(
-new System.Single[,] { { 0.7486719f, 0.94627815f, }, { 0.37318677f, 0.8511869f, }, }));
+                Assert.That(nullable, Is.Null);
                 {
                     var parameters = new NpgsqlParameter[4];
                     parameters[0] = new NpgsqlParameter<System.Int32>();
@@ -898,9 +902,7 @@ new System.Single[,] { { 0.7486719f, 0.94627815f, }, { 0.37318677f, 0.8511869f, 
 
                     nullable = await ((ISingleMArrayrealMMArrayD2)this).ScalarInsertModelDynParReturningAsync(connection, parameters);
                 }
-                Assert.That(nullable, Is.Not.Null);
-                Assert.That(nullable, Is.EqualTo(
-new System.Single[,] { { 0.030724168f, 0.40003777f, }, { 0.42249262f, 0.6659029f, }, }));
+                Assert.That(nullable, Is.Null);
             }
         }
 
@@ -968,11 +970,11 @@ RETURNING
                 await connection.OpenAsync();
                 System.Single[,] nullable = null;
                 nullable =  ((ISingleMArrayrealMMArrayD2)this).ScalarInsertModelReturning(connection, _testData[8].Id, _testData[8].Value, _testData[8].NullableValue, _testData[8].ModelInner == null ? null : _testData[8].ModelInner.Id);
+                Assert.That(nullable, Is.Null);
+                nullable =  ((ISingleMArrayrealMMArrayD2)this).ScalarInsertModelReturning(connection, _testData[9].Id, _testData[9].Value, _testData[9].NullableValue, _testData[9].ModelInner == null ? null : _testData[9].ModelInner.Id);
                 Assert.That(nullable, Is.Not.Null);
                 Assert.That(nullable, Is.EqualTo(
-new System.Single[,] { { 0.46076673f, 0.121240616f, }, { 0.6953568f, 0.96371263f, }, }));
-                nullable =  ((ISingleMArrayrealMMArrayD2)this).ScalarInsertModelReturning(connection, _testData[9].Id, _testData[9].Value, _testData[9].NullableValue, _testData[9].ModelInner == null ? null : _testData[9].ModelInner.Id);
-                Assert.That(nullable, Is.Null);
+new System.Single[,] { { 0.57233477f, 0.34911424f, }, { 0.76269406f, 0.62148964f, }, }));
             }
         }
 
@@ -984,9 +986,13 @@ new System.Single[,] { { 0.46076673f, 0.121240616f, }, { 0.6953568f, 0.96371263f
                 await connection.OpenAsync();
                 System.Single[,] nullable = null;
                 nullable = await ((ISingleMArrayrealMMArrayD2)this).ScalarInsertModelReturningAsync(connection, _testData[10].Id, _testData[10].Value, _testData[10].NullableValue, _testData[10].ModelInner == null ? null : _testData[10].ModelInner.Id);
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(
+new System.Single[,] { { 0.97628725f, 0.6228873f, }, { 0.7413273f, 0.68987834f, }, }));
                 nullable = await ((ISingleMArrayrealMMArrayD2)this).ScalarInsertModelReturningAsync(connection, _testData[11].Id, _testData[11].Value, _testData[11].NullableValue, _testData[11].ModelInner == null ? null : _testData[11].ModelInner.Id);
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(
+new System.Single[,] { { 0.7300742f, 0.7343289f, }, { 0.52036655f, 0.19604033f, }, }));
             }
         }
 
@@ -1628,12 +1634,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 120;
+                parametr1.Value = 149;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 18;
+                parametr2.Value = 12;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1669,96 +1675,90 @@ ORDER BY
                 var secondItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems2 = new List<FlatSinglerealMMArrayD2E1M>();
                 await ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(11));
-                Assert.That(firstItems2, Has.Count.EqualTo(11));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[7],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[8],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[9],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[10],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(32));
-                Assert.That(secondItems2, Has.Count.EqualTo(32));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[3], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[3], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[4], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[4], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[5], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[5], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[6], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[6], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[7], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[7], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[8], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[8], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[10],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[11],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[12],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[13],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[14],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[15],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[15],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[16],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[16],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[17],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[17],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[18],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[18],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[19],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[19],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[20],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[20],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[21],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[21],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[22],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[22],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[23],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[23],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[24],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[24],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[25],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[25],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[26],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[26],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[27],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[27],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[28],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[28],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[29],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[29],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[30],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[30],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[31],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[31],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(7));
+                Assert.That(firstItems2, Has.Count.EqualTo(7));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(33));
+                Assert.That(secondItems2, Has.Count.EqualTo(33));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[2], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[2], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[3], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[3], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[4], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[4], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[5], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[5], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[6], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[6], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[7], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[7], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[8], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[8], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[9], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[9], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[10], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[10], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[11], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[11], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[12], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[10],_testData[12], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[11],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[12],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[13],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[14],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[15],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[15],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[16],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[16],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[17],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[17],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[18],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[18],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[19],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[19],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[20],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[20],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[21],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[21],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[22],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[22],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[23],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[23],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[24],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[24],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[25],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[25],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[26],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[26],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[27],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[27],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[28],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[28],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[29],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[29],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[30],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[30],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[31],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[31],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[32],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[32],_testData[34], false);
             }
         }
 
@@ -1769,12 +1769,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 149;
+                parametr1.Value = 70;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 104;
+                parametr2.Value = 161;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1806,36 +1806,53 @@ ORDER BY
                 var firstItems2 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 await ((ISingleMArrayrealMMArrayD2)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(6));
-                Assert.That(firstItems2, Has.Count.EqualTo(6));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(15));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(20));
+                Assert.That(firstItems2, Has.Count.EqualTo(20));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[7],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[8],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[9],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[10],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[11],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[12],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[12],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[13],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[13],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[14],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[14],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[15],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[15],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[16],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[16],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[17],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[17],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[18],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[18],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[19],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[19],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(4));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[34], false);
             }
         }
 
@@ -1883,12 +1900,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 164;
+                parametr1.Value = 115;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 101;
+                parametr2.Value = 110;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1924,46 +1941,60 @@ ORDER BY
                 var secondItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems2 = new List<FlatSinglerealMMArrayD2E1M>();
                  ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(2));
-                Assert.That(firstItems2, Has.Count.EqualTo(2));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(16));
-                Assert.That(secondItems2, Has.Count.EqualTo(16));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[10],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[11],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[12],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[13],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[14],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[15],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[15],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(12));
+                Assert.That(firstItems2, Has.Count.EqualTo(12));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[7],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[8],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[9],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[10],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[11],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(13));
+                Assert.That(secondItems2, Has.Count.EqualTo(13));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[10],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[11],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[12],_testData[34], false);
             }
         }
 
@@ -1974,12 +2005,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 83;
+                parametr1.Value = 85;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 164;
+                parametr2.Value = 162;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2011,51 +2042,46 @@ ORDER BY
                 var firstItems2 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                  ((ISingleMArrayrealMMArrayD2)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(20));
-                Assert.That(firstItems2, Has.Count.EqualTo(20));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[7],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[8],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[9],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[10],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[11],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[12],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[12],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[13],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[13],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[14],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[14],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[15],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[15],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[16],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[16],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[17],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[17],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[18],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[18],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[19],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[19],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(2));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(17));
+                Assert.That(firstItems2, Has.Count.EqualTo(17));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[7],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[8],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[9],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[10],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[11],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[12],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[12],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[13],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[13],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[14],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[14],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[15],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[15],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[16],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[16],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(3));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[34], false);
             }
         }
 
@@ -2143,12 +2169,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 92;
+                parametr1.Value = 131;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 5;
+                parametr2.Value = 25;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2179,68 +2205,54 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(18));
+                        Assert.That(models, Has.Count.EqualTo(10));
 
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[10],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[11],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[12],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[13],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[14],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[15],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[16],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[17],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(34));
+                        Assert.That(models, Has.Count.EqualTo(28));
 
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[1], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[2], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[3], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[4], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[5], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[6], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[7], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[8], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[10],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[11],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[12],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[13],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[14],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[15],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[16],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[17],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[18],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[19],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[20],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[21],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[22],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[23],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[24],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[25],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[26],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[27],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[28],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[29],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[30],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[31],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[32],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[33],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[7], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[8], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[9], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[10], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[11], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[12], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[10],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[11],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[12],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[13],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[14],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[15],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[16],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[17],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[18],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[19],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[20],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[21],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[22],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[23],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[24],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[25],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[26],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[27],_testData[34], false);
                         continue;
                     }
                     
@@ -2256,12 +2268,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 51;
+                parametr1.Value = 18;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 122;
+                parametr2.Value = 18;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2293,55 +2305,105 @@ ORDER BY
                 var secondItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems2 = new List<FlatSinglerealMMArrayD2E1M>();
                 await ((ISingleMArrayrealMMArrayD2)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(26));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[12],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[13],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[14],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[15],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[16],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[17],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[18],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[19],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[20],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[21],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[22],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[23],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[24],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[25],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(10));
-                Assert.That(secondItems2, Has.Count.EqualTo(10));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(32));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[3], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[4], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[5], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[6], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[7], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[8], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[9], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[10], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[11], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[12], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[12],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[13],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[14],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[15],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[16],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[17],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[18],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[19],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[20],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[21],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[22],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[23],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[24],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[25],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[26],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[27],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[28],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[29],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[30],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[31],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(32));
+                Assert.That(secondItems2, Has.Count.EqualTo(32));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[3], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[3], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[4], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[4], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[5], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[5], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[6], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[6], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[7], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[7], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[8], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[8], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[9], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[9], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[10], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[10], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[11], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[11], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[12], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[12], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[10],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[11],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[12],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[13],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[14],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[15],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[15],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[16],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[16],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[17],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[17],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[18],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[18],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[19],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[19],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[20],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[20],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[21],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[21],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[22],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[22],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[23],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[23],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[24],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[24],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[25],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[25],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[26],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[26],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[27],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[27],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[28],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[28],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[29],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[29],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[30],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[30],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[31],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[31],_testData[34], false);
             }
         }
 
@@ -2382,12 +2444,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 46;
+                parametr1.Value = 25;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 164;
+                parametr2.Value = 28;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2416,6 +2478,42 @@ ORDER BY
                 foreach(var batchResult in  ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2))
                 {
                     if(++resultIndex == 1)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(28));
+
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[7], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[8], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[9], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[10], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[11], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[12], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[10],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[11],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[12],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[13],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[14],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[15],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[16],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[17],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[18],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[19],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[20],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[21],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[22],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[23],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[24],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[25],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[26],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[27],_testData[34], false);
+                        continue;
+                    }                    
+
+                    if(resultIndex == 2)
                     {
                         var models = batchResult;
                         Assert.That(models, Has.Count.EqualTo(27));
@@ -2448,16 +2546,6 @@ ORDER BY
                         FlatSinglerealMMArrayD2E1M.AssertModel(models[25],_testData[33], false);
                         FlatSinglerealMMArrayD2E1M.AssertModel(models[26],_testData[34], false);
                         continue;
-                    }                    
-
-                    if(resultIndex == 2)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(2));
-
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[34], false);
-                        continue;
                     }
                     
                     Assert.Fail("Unexpected batch count");
@@ -2472,12 +2560,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 61;
+                parametr1.Value = 141;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 156;
+                parametr2.Value = 149;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2509,39 +2597,31 @@ ORDER BY
                 var secondItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems2 = new List<FlatSinglerealMMArrayD2E1M>();
                  ((ISingleMArrayrealMMArrayD2)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(24));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[12],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[13],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[14],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[15],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[16],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[17],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[18],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[19],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[20],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[21],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[22],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[23],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(3));
-                Assert.That(secondItems2, Has.Count.EqualTo(3));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(8));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(7));
+                Assert.That(secondItems2, Has.Count.EqualTo(7));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[34], false);
             }
         }
 
@@ -2621,12 +2701,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 85;
+                parametr1.Value = 9;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 107;
+                parametr2.Value = 132;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -2635,48 +2715,59 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(19));
+                        Assert.That(models, Has.Count.EqualTo(34));
 
-                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[16], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[17], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[18], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[19], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[20], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[21], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[22], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[23], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[24], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[9],_testData[25], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[10],_testData[26], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[11],_testData[27], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[12],_testData[28], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[13],_testData[29], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[14],_testData[30], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[15],_testData[31], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[16],_testData[32], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[17],_testData[33], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[18],_testData[34], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[1], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[2], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[3], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[4], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[5], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[6], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[7], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[8], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[9], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[9],_testData[10], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[10],_testData[11], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[11],_testData[12], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[12],_testData[13], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[13],_testData[14], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[14],_testData[15], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[15],_testData[16], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[16],_testData[17], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[17],_testData[18], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[18],_testData[19], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[19],_testData[20], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[20],_testData[21], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[21],_testData[22], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[22],_testData[23], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[23],_testData[24], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[24],_testData[25], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[25],_testData[26], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[26],_testData[27], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[27],_testData[28], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[28],_testData[29], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[29],_testData[30], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[30],_testData[31], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[31],_testData[32], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[32],_testData[33], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[33],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
+                        Assert.That(models, Has.Count.EqualTo(9));
 
-                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[22], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[23], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[24], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[25], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[26], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[27], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[28], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[29], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[30], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[9],_testData[31], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[10],_testData[32], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[11],_testData[33], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[12],_testData[34], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[26], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[27], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[28], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[29], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[30], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[31], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[32], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[33], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[34], false);
                         continue;
                     }
                     
@@ -2711,12 +2802,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 46;
+                parametr1.Value = 24;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 153;
+                parametr2.Value = 132;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -2725,48 +2816,54 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(27));
+                        Assert.That(models, Has.Count.EqualTo(29));
 
-                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[8], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[9], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[10], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[11], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[12], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[13], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[14], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[15], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[16], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[9],_testData[17], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[10],_testData[18], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[11],_testData[19], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[12],_testData[20], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[13],_testData[21], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[14],_testData[22], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[15],_testData[23], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[16],_testData[24], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[17],_testData[25], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[18],_testData[26], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[19],_testData[27], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[20],_testData[28], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[21],_testData[29], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[22],_testData[30], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[23],_testData[31], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[24],_testData[32], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[25],_testData[33], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[26],_testData[34], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[6], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[7], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[8], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[9], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[10], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[11], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[12], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[13], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[14], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[9],_testData[15], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[10],_testData[16], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[11],_testData[17], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[12],_testData[18], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[13],_testData[19], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[14],_testData[20], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[15],_testData[21], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[16],_testData[22], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[17],_testData[23], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[18],_testData[24], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[19],_testData[25], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[20],_testData[26], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[21],_testData[27], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[22],_testData[28], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[23],_testData[29], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[24],_testData[30], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[25],_testData[31], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[26],_testData[32], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[27],_testData[33], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[28],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(5));
+                        Assert.That(models, Has.Count.EqualTo(9));
 
-                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[30], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[31], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[32], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[33], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[34], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[26], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[27], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[28], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[29], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[30], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[31], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[32], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[33], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[34], false);
                         continue;
                     }
                     
@@ -2897,127 +2994,93 @@ ORDER BY
                 var firstItems2 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems2 = new List<FlatSinglerealMMArrayD2E1M>();
-                await ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 18, query1, 51, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(32));
-                Assert.That(firstItems2, Has.Count.EqualTo(32));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[3], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[3], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[4], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[4], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[5], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[5], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[6], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[6], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[7], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[7], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[8], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[8], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[7],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[8],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[9],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[10],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[11],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[12],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[12],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[13],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[13],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[14],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[14],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[15],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[15],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[16],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[16],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[17],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[17],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[18],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[18],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[19],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[19],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[20],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[20],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[21],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[21],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[22],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[22],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[23],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[23],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[24],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[24],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[25],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[25],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[26],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[26],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[27],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[27],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[28],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[28],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[29],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[29],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[30],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[30],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[31],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[31],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(26));
-                Assert.That(secondItems2, Has.Count.EqualTo(26));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[10],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[11],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[12],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[13],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[14],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[15],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[15],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[16],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[16],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[17],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[17],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[18],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[18],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[19],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[19],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[20],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[20],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[21],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[21],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[22],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[22],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[23],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[23],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[24],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[24],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[25],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[25],_testData[34], false);
+                await ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 149, query1, 9, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(7));
+                Assert.That(firstItems2, Has.Count.EqualTo(7));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(34));
+                Assert.That(secondItems2, Has.Count.EqualTo(34));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[1], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[1], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[2], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[2], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[3], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[3], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[4], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[4], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[5], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[5], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[6], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[6], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[7], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[7], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[8], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[8], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[9], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[9], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[10], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[10], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[11], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[10],_testData[11], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[12], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[11],_testData[12], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[12],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[13],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[14],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[15],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[15],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[16],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[16],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[17],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[17],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[18],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[18],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[19],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[19],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[20],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[20],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[21],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[21],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[22],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[22],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[23],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[23],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[24],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[24],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[25],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[25],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[26],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[26],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[27],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[27],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[28],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[28],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[29],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[29],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[30],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[30],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[31],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[31],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[32],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[32],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[33],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[33],_testData[34], false);
             }
         }
 
@@ -3055,47 +3118,39 @@ ORDER BY
                 var firstItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 var firstItems2 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems1 = new List<FlatSinglerealMMArrayD2E1M>();
-                await ((ISingleMArrayrealMMArrayD2)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 101, query1, 153, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(16));
-                Assert.That(firstItems2, Has.Count.EqualTo(16));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[7],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[8],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[9],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[10],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[11],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[12],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[12],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[13],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[13],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[14],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[14],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[15],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[15],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(5));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[34], false);
+                await ((ISingleMArrayrealMMArrayD2)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 156, query1, 79, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(5));
+                Assert.That(firstItems2, Has.Count.EqualTo(5));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(19));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[15],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[16],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[17],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[18],_testData[34], false);
             }
         }
 
@@ -3170,125 +3225,87 @@ ORDER BY
                 var firstItems2 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems2 = new List<FlatSinglerealMMArrayD2E1M>();
-                 ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 61, query1, 12, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(24));
-                Assert.That(firstItems2, Has.Count.EqualTo(24));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[7],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[8],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[9],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[10],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[11],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[12],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[12],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[13],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[13],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[14],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[14],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[15],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[15],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[16],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[16],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[17],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[17],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[18],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[18],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[19],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[19],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[20],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[20],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[21],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[21],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[22],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[22],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[23],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[23],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(33));
-                Assert.That(secondItems2, Has.Count.EqualTo(33));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[2], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[2], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[3], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[3], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[4], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[4], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[5], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[5], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[6], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[6], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[7], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[7], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[8], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[8], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[10],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[11],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[12],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[13],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[14],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[15],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[15],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[16],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[16],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[17],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[17],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[18],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[18],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[19],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[19],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[20],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[20],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[21],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[21],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[22],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[22],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[23],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[23],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[24],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[24],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[25],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[25],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[26],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[26],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[27],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[27],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[28],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[28],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[29],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[29],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[30],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[30],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[31],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[31],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[32],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[32],_testData[34], false);
+                 ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 58, query1, 87, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(22));
+                Assert.That(firstItems2, Has.Count.EqualTo(22));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[7],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[8],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[9],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[10],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[11],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[12],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[12],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[13],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[13],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[14],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[14],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[15],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[15],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[16],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[16],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[17],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[17],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[18],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[18],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[19],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[19],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[20],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[20],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[21],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[21],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(16));
+                Assert.That(secondItems2, Has.Count.EqualTo(16));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[10],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[12],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[13],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[14],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[15],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[15],_testData[34], false);
             }
         }
 
@@ -3326,40 +3343,58 @@ ORDER BY
                 var firstItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 var firstItems2 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems1 = new List<FlatSinglerealMMArrayD2E1M>();
-                 ((ISingleMArrayrealMMArrayD2)this).DbConnectionMMDynQuerySelectModelBatch(connection, 134, query1, 106, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(8));
-                Assert.That(firstItems2, Has.Count.EqualTo(8));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[7],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(14));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[34], false);
+                 ((ISingleMArrayrealMMArrayD2)this).DbConnectionMMDynQuerySelectModelBatch(connection, 79, query1, 131, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(19));
+                Assert.That(firstItems2, Has.Count.EqualTo(19));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[0],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[1],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[2],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[3],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[4],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[5],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[6],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[7],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[8],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[9],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[10],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[11],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[12],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[12],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[13],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[13],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[14],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[14],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[15],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[15],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[16],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[16],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[17],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[17],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[18],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems2[18],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(10));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[34], false);
             }
         }
 
@@ -3469,61 +3504,61 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 27, query1, 122, query2))
+                foreach(var batchResult in await ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 58, query1, 80, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(30));
+                        Assert.That(models, Has.Count.EqualTo(22));
 
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[5], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[6], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[7], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[8], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[10],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[11],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[12],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[13],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[14],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[15],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[16],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[17],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[18],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[19],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[20],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[21],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[22],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[23],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[24],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[25],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[26],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[27],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[28],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[29],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[10],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[11],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[12],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[13],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[14],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[15],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[16],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[17],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[18],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[19],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[20],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[21],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
+                        Assert.That(models, Has.Count.EqualTo(18));
 
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[10],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[11],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[12],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[13],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[14],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[15],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[16],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[17],_testData[34], false);
                         continue;
                     }
                     
@@ -3566,89 +3601,32 @@ ORDER BY
                 var firstItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems2 = new List<FlatSinglerealMMArrayD2E1M>();
-                await ((ISingleMArrayrealMMArrayD2)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 104, query1, 18, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(15));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[11],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[12],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[13],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[14],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(32));
-                Assert.That(secondItems2, Has.Count.EqualTo(32));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[3], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[3], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[4], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[4], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[5], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[5], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[6], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[6], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[7], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[7], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[8], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[8], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[10],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[11],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[12],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[13],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[14],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[15],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[15],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[16],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[16],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[17],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[17],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[18],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[18],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[19],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[19],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[20],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[20],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[21],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[21],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[22],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[22],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[23],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[23],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[24],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[24],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[25],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[25],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[26],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[26],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[27],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[27],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[28],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[28],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[29],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[29],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[30],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[30],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[31],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[31],_testData[34], false);
+                await ((ISingleMArrayrealMMArrayD2)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 154, query1, 141, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(6));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(8));
+                Assert.That(secondItems2, Has.Count.EqualTo(8));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[34], false);
             }
         }
 
@@ -3707,68 +3685,64 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in  ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTDynQuerySelectModelBatch(connection, 12, query1, 106, query2))
+                foreach(var batchResult in  ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTDynQuerySelectModelBatch(connection, 63, query1, 58, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(33));
+                        Assert.That(models, Has.Count.EqualTo(21));
 
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[2], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[3], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[4], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[5], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[6], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[7], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[8], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[9], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[10], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[11], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[10],_testData[12], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[11],_testData[13], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[12],_testData[14], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[13],_testData[15], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[14],_testData[16], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[15],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[16],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[17],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[18],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[19],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[20],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[21],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[22],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[23],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[24],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[25],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[26],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[27],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[28],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[29],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[30],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[31],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[32],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[10],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[11],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[12],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[13],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[14],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[15],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[16],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[17],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[18],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[19],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[20],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
+                        Assert.That(models, Has.Count.EqualTo(22));
 
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[10],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[11],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[12],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(models[13],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[0],_testData[13], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[1],_testData[14], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[2],_testData[15], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[3],_testData[16], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[4],_testData[17], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[5],_testData[18], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[6],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[7],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[8],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[9],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[10],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[11],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[12],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[13],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[14],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[15],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[16],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[17],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[18],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[19],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[20],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(models[21],_testData[34], false);
                         continue;
                     }
                     
@@ -3811,52 +3785,53 @@ ORDER BY
                 var firstItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems1 = new List<FlatSinglerealMMArrayD2E1M>();
                 var secondItems2 = new List<FlatSinglerealMMArrayD2E1M>();
-                 ((ISingleMArrayrealMMArrayD2)this).DbConnectionDynQuerySelectModelBatch(connection, 149, query1, 92, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(6));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(18));
-                Assert.That(secondItems2, Has.Count.EqualTo(18));
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[17], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[18], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[19], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[20], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[21], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[22], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[23], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[24], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[25], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[26], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[10],_testData[27], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[11],_testData[28], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[12],_testData[29], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[13],_testData[30], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[14],_testData[31], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[15],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[15],_testData[32], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[16],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[16],_testData[33], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[17],_testData[34], false);
-                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[17],_testData[34], false);
+                 ((ISingleMArrayrealMMArrayD2)this).DbConnectionDynQuerySelectModelBatch(connection, 122, query1, 87, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(11));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[0],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[1],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[2],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[3],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[4],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[5],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[6],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[7],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[8],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[9],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(firstItems1[10],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(16));
+                Assert.That(secondItems2, Has.Count.EqualTo(16));
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[0],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[0],_testData[19], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[1],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[1],_testData[20], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[2],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[2],_testData[21], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[3],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[3],_testData[22], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[4],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[4],_testData[23], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[5],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[5],_testData[24], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[6],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[6],_testData[25], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[7],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[7],_testData[26], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[8],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[8],_testData[27], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[9],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[9],_testData[28], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[10],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[10],_testData[29], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[11],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[11],_testData[30], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[12],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[12],_testData[31], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[13],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[13],_testData[32], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[14],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[14],_testData[33], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems1[15],_testData[34], false);
+                        FlatSinglerealMMArrayD2E1M.AssertModel(secondItems2[15],_testData[34], false);
             }
         }
 
@@ -3936,70 +3911,65 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTSelectModelBatchAsync(connection, 101, 12))
+                foreach(var batchResult in await ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTSelectModelBatchAsync(connection, 9, 131))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(16));
+                        Assert.That(models, Has.Count.EqualTo(34));
 
-                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[19], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[20], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[21], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[22], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[23], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[24], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[25], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[26], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[27], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[9],_testData[28], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[10],_testData[29], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[11],_testData[30], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[12],_testData[31], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[13],_testData[32], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[14],_testData[33], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[15],_testData[34], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[1], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[2], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[3], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[4], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[5], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[6], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[7], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[8], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[9], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[9],_testData[10], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[10],_testData[11], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[11],_testData[12], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[12],_testData[13], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[13],_testData[14], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[14],_testData[15], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[15],_testData[16], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[16],_testData[17], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[17],_testData[18], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[18],_testData[19], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[19],_testData[20], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[20],_testData[21], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[21],_testData[22], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[22],_testData[23], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[23],_testData[24], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[24],_testData[25], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[25],_testData[26], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[26],_testData[27], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[27],_testData[28], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[28],_testData[29], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[29],_testData[30], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[30],_testData[31], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[31],_testData[32], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[32],_testData[33], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[33],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(33));
+                        Assert.That(models, Has.Count.EqualTo(10));
 
-                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[2], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[3], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[4], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[5], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[6], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[7], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[8], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[9], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[10], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[9],_testData[11], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[10],_testData[12], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[11],_testData[13], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[12],_testData[14], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[13],_testData[15], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[14],_testData[16], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[15],_testData[17], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[16],_testData[18], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[17],_testData[19], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[18],_testData[20], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[19],_testData[21], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[20],_testData[22], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[21],_testData[23], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[22],_testData[24], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[23],_testData[25], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[24],_testData[26], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[25],_testData[27], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[26],_testData[28], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[27],_testData[29], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[28],_testData[30], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[29],_testData[31], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[30],_testData[32], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[31],_testData[33], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[32],_testData[34], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[25], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[26], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[27], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[28], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[29], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[30], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[31], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[32], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[33], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[9],_testData[34], false);
                         continue;
                     }
                     
@@ -4030,7 +4000,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTSelectModelBatch(connection, 56, 156))
+                foreach(var batchResult in  ((ISingleMArrayrealMMArrayD2)this).DbConnectionSTSelectModelBatch(connection, 45, 45))
                 {
                     if(++resultIndex == 1)
                     {
@@ -4068,11 +4038,33 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(3));
+                        Assert.That(models, Has.Count.EqualTo(25));
 
-                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[32], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[33], false);
-                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[34], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[10], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[11], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[12], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[13], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[14], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[15], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[16], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[17], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[18], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[9],_testData[19], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[10],_testData[20], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[11],_testData[21], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[12],_testData[22], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[13],_testData[23], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[14],_testData[24], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[15],_testData[25], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[16],_testData[26], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[17],_testData[27], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[18],_testData[28], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[19],_testData[29], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[20],_testData[30], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[21],_testData[31], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[22],_testData[32], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[23],_testData[33], false);
+                        SinglerealMMArrayD2E1M.AssertModel(models[24],_testData[34], false);
                         continue;
                     }
                     
@@ -4088,19 +4080,32 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((ISingleMArrayrealMMArrayD2)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((ISingleMArrayrealMMArrayD2)this).SetDbConnectionSelectModelParametrs(cmd, 134);
+                ((ISingleMArrayrealMMArrayD2)this).SetDbConnectionSelectModelParametrs(cmd, 63);
                 var models = await ((ISingleMArrayrealMMArrayD2)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(8));
+                Assert.That(models, Has.Count.EqualTo(21));
 
-                SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[27], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[28], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[29], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[30], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[31], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[32], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[33], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[34], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[14], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[15], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[16], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[17], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[18], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[19], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[20], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[21], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[22], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[9],_testData[23], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[10],_testData[24], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[11],_testData[25], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[12],_testData[26], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[13],_testData[27], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[14],_testData[28], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[15],_testData[29], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[16],_testData[30], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[17],_testData[31], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[18],_testData[32], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[19],_testData[33], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[20],_testData[34], false);
             }
         }
 
@@ -4111,45 +4116,18 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                  using var cmd =  ((ISingleMArrayrealMMArrayD2)this).CreateDbConnectionSelectModelCommand(connection);
-                ((ISingleMArrayrealMMArrayD2)this).SetDbConnectionSelectModelParametrs(cmd, 5);
+                ((ISingleMArrayrealMMArrayD2)this).SetDbConnectionSelectModelParametrs(cmd, 149);
                 var models =  ((ISingleMArrayrealMMArrayD2)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(34));
+                Assert.That(models, Has.Count.EqualTo(7));
 
-                SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[1], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[2], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[3], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[4], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[5], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[6], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[7], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[7],_testData[8], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[8],_testData[9], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[9],_testData[10], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[10],_testData[11], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[11],_testData[12], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[12],_testData[13], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[13],_testData[14], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[14],_testData[15], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[15],_testData[16], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[16],_testData[17], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[17],_testData[18], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[18],_testData[19], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[19],_testData[20], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[20],_testData[21], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[21],_testData[22], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[22],_testData[23], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[23],_testData[24], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[24],_testData[25], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[25],_testData[26], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[26],_testData[27], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[27],_testData[28], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[28],_testData[29], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[29],_testData[30], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[30],_testData[31], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[31],_testData[32], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[32],_testData[33], false);
-                SinglerealMMArrayD2E1M.AssertModel(models[33],_testData[34], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[0],_testData[28], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[1],_testData[29], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[2],_testData[30], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[3],_testData[31], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[4],_testData[32], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[5],_testData[33], false);
+                SinglerealMMArrayD2E1M.AssertModel(models[6],_testData[34], false);
             }
         }
 

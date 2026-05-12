@@ -213,9 +213,16 @@ namespace TestsGenerator.Generators
 
         private void AddMySQLTypes()
         {
+            _models.Add(new Model.MySqlModel(MySqlDbType.UByte, "Byte", "System.Byte", () => new ByteValueHelper(EnumerableType.SingleType)));
+            _models.Add(new Model.MySqlModel(MySqlDbType.Byte, "SByte", "System.SByte", () => new SByteValueHelper(EnumerableType.SingleType)));
+
+            _models.Add(new Model.MySqlModel(MySqlDbType.UInt32, "UInt32", "System.UInt32", () => new UInt32ValueHelper(EnumerableType.SingleType)));
             _models.Add(new Model.MySqlModel(MySqlDbType.Int32, "Int32", "System.Int32", () => new Int32ValueHelper(EnumerableType.SingleType)));
+
+            _models.Add(new Model.MySqlModel(MySqlDbType.UInt64, "UInt64", "System.UInt64", () => new UInt64ValueHelper(EnumerableType.SingleType)));
             _models.Add(new Model.MySqlModel(MySqlDbType.Int64, "Int64", "System.Int64", () => new Int64ValueHelper(EnumerableType.SingleType)));
 
+            _models.Add(new Model.MySqlModel(MySqlDbType.UInt16, "UInt16", "System.UInt16", () => new UInt16ValueHelper(EnumerableType.SingleType)));
             _models.Add(new Model.MySqlModel(MySqlDbType.Int16, "Int16", "System.Int16", () => new Int16ValueHelper(EnumerableType.SingleType)));
 
             _models.Add(new Model.MySqlModel(MySqlDbType.Decimal, "Decimal", "System.Decimal", () => new DecimalValueHelper(EnumerableType.SingleType)));
