@@ -85,5 +85,34 @@ namespace Gedaq.SqlClient
                 }
             }
         }
+
+        public override bool GetValueFromReader(ITypeSymbol typeOfValue, out string getMethod)
+        {
+            if (base.GetValueFromReader(typeOfValue, out getMethod))
+            {
+                return true;
+            }
+
+            switch (typeOfValue.GetFullTypeName(replaceNullable: true, addQuestionNoatble: false))
+            {
+                case "System.TimeSpan":
+                {
+                    getMethod = "GetTimeSpan";
+                    return true;
+                }
+
+                case "System.DateTimeOffset":
+                {
+                    getMethod = "GetDateTimeOffset";
+                    return true;
+                }
+
+                default:
+                {
+                    getMethod = null;
+                    return false;
+                }
+            }
+        }
     }
 }

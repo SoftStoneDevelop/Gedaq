@@ -1,5 +1,6 @@
 ﻿using Gedaq.Base;
 using Gedaq.Base.Model;
+using Gedaq.Helpers;
 using Gedaq.MySqlConnector.Helpers;
 using Microsoft.CodeAnalysis;
 
@@ -71,6 +72,71 @@ namespace Gedaq.MySqlConnector
             string source = "reader")
         {
             throw new System.NotImplementedException();
+        }
+
+        public override bool GetValueFromReader(ITypeSymbol typeOfValue, out string getMethod)
+        {
+            if (base.GetValueFromReader(typeOfValue, out getMethod))
+            {
+                return true;
+            }
+
+            switch (typeOfValue.GetFullTypeName(replaceNullable: true, addQuestionNoatble: false))
+            {
+                case "System.TimeSpan":
+                {
+                    getMethod = "GetTimeSpan";
+                    return true;
+                }
+
+                case "System.DateTimeOffset":
+                {
+                    getMethod = "GetDateTimeOffset";
+                    return true;
+                }
+
+                case "System.DateOnly":
+                {
+                    getMethod = "GetDateOnly";
+                    return true;
+                }
+
+                case "System.TimeOnly":
+                {
+                    getMethod = "GetTimeOnly";
+                    return true;
+                }
+
+                case "System.SByte":
+                {
+                    getMethod = "GetSByte";
+                    return true;
+                }
+
+                case "System.UInt16":
+                {
+                    getMethod = "GetUInt16";
+                    return true;
+                }
+
+                case "System.UInt32":
+                {
+                    getMethod = "GetUInt32";
+                    return true;
+                }
+
+                case "System.UInt64":
+                {
+                    getMethod = "GetUInt64";
+                    return true;
+                }
+
+                default:
+                {
+                    getMethod = null;
+                    return false;
+                }
+            }
         }
     }
 }

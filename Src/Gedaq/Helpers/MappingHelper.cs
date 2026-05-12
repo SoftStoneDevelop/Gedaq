@@ -38,6 +38,7 @@ namespace Gedaq.Helpers
                 ReturnKnownProviderType(
                     mapTypeInfo.MapType,
                     builder,
+                    provider,
                     mapVariableName,
                     castTypeExpr);
             }
@@ -65,6 +66,7 @@ namespace Gedaq.Helpers
                 ReturnDefaultMap(
                     mapTypeInfo.MapType,
                     builder,
+                    provider,
                     mapVariableName,
                     castTypeExpr);
             }
@@ -73,11 +75,17 @@ namespace Gedaq.Helpers
         private static void ReturnKnownProviderType(
             ITypeSymbol mapType,
             StringBuilder builder,
+            ProviderInfo provider,
             string mapVariableName,
             string castTypeExpr = "")
         {
             if (mapType.IsNullableType())
             {
+                if (!provider.GetValueFromReader(mapType, out string getMethod))
+                {
+                    getMethod = $"GetFieldValue<{mapType.GetFullTypeName(true, addQuestionNoatble: false)}>";
+                }
+
                 builder.Append($@"
                     if(reader.IsDBNull(0))
                     {{
@@ -85,13 +93,18 @@ namespace Gedaq.Helpers
                     }}
                     else
                     {{
-                        {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{mapType.GetFullTypeName(true, addQuestionNoatble: false)}>(0);
+                        {mapVariableName} = {castTypeExpr}reader.{getMethod}(0);
                     }}");
             }
             else
             {
+                if (!provider.GetValueFromReader(mapType, out string getMethod))
+                {
+                    getMethod = $"GetFieldValue<{mapType.GetFullTypeName()}>";
+                }
+
                 builder.Append($@"
-                    {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{mapType.GetFullTypeName()}>(0);");
+                    {mapVariableName} = {castTypeExpr}reader.{getMethod}(0);");
             }
         }
 
@@ -125,6 +138,11 @@ namespace Gedaq.Helpers
             var field = Field.OnlyPositionalField(0);
             if (mapType.IsNullableType())
             {
+                if (!provider.GetValueFromReader(mapType, out string getMethod))
+                {
+                    getMethod = $"GetFieldValue<{provider.GetSpecialTypeValue(mapType, string.Empty, field)}>";
+                }
+
                 builder.Append($@"
                     if(reader.IsDBNull({provider.ValueReaderKey(string.Empty, field)}))
                     {{
@@ -132,7 +150,7 @@ namespace Gedaq.Helpers
                     }}
                     else
                     {{
-                        {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{provider.GetSpecialTypeValue(mapType, string.Empty, field)}>({provider.ValueReaderKey(string.Empty, field)});
+                        {mapVariableName} = {castTypeExpr}reader.{getMethod}({provider.ValueReaderKey(string.Empty, field)});
                     }}");
             }
             else
@@ -158,11 +176,17 @@ namespace Gedaq.Helpers
         private static void ReturnDefaultMap(
             ITypeSymbol mapType,
             StringBuilder builder,
+            ProviderInfo provider,
             string mapVariableName,
             string castTypeExpr = "")
         {
+            if (!provider.GetValueFromReader(mapType, out string getMethod))
+            {
+                getMethod = $"GetFieldValue<{mapType.GetFullTypeName()}>";
+            }
+
             builder.Append($@"
-                    {mapVariableName} = {castTypeExpr}reader.GetFieldValue<{mapType.GetFullTypeName()}>(0);");
+                    {mapVariableName} = {castTypeExpr}reader.{getMethod}(0);");
         }
 
 
@@ -292,8 +316,13 @@ namespace Gedaq.Helpers
 
             if (propertyType.IsNullableType())
             {
+                if (!provider.GetValueFromReader(propertyType, out string getMethod))
+                {
+                    getMethod = $"GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>";
+                }
+
                 builder.Append($@"
-                        {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
+                        {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.{getMethod}({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
             }
             else
             {
@@ -304,8 +333,13 @@ namespace Gedaq.Helpers
                 }
                 else
                 {
+                    if (!provider.GetValueFromReader(propertyType, out string getMethod))
+                    {
+                        getMethod = $"GetFieldValue<{propertyType.GetFullTypeName()}>";
+                    }
+
                     builder.Append($@"
-                        {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.GetFieldValue<{propertyType.GetFullTypeName()}>({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
+                        {Tabs(pair.Tabs)}{pair.ItemName}.{propertyName} = reader.{getMethod}({provider.ValueReaderKey(pair.Aliases.Prefix, field)});");
                 }
             }
 

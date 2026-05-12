@@ -108,6 +108,11 @@ namespace Gedaq.DbConnection.Helpers
                 {
                     return true;
                 }
+
+                case "System.Guid":
+                {
+                    return true;
+                }
             }
 
             return false;

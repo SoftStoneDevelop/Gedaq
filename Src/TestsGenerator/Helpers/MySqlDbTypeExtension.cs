@@ -17,14 +17,29 @@ namespace TestsGenerator.Helpers
         {
             switch (mySqlDbType)
             {
+                case MySqlDbType.UInt32:
+                {
+                    return "int UNSIGNED";
+                }
+
                 case MySqlDbType.Int32:
                 {
                     return "int";
                 }
 
+                case MySqlDbType.UInt64:
+                {
+                    return "bigint UNSIGNED";
+                }
+
                 case MySqlDbType.Int64:
                 {
                     return "bigint";
+                }
+
+                case MySqlDbType.UInt16:
+                {
+                    return "smallint UNSIGNED";
                 }
 
                 case MySqlDbType.Int16:
@@ -77,6 +92,16 @@ namespace TestsGenerator.Helpers
                     return "text";
                 }
 
+                case MySqlDbType.UByte:
+                {
+                    return "tinyint UNSIGNED";
+                }
+
+                case MySqlDbType.Byte:
+                {
+                    return "tinyint";
+                }
+
                 default:
                 {
                     throw new NotImplementedException();
@@ -88,14 +113,29 @@ namespace TestsGenerator.Helpers
         {
             switch (mySqlDbType)
             {
+                case MySqlDbType.UInt32:
+                {
+                    return "System.UInt32";
+                }
+
                 case MySqlDbType.Int32:
                 {
                     return "System.Int32";
                 }
 
+                case MySqlDbType.UInt64:
+                {
+                    return "System.UInt64";
+                }
+
                 case MySqlDbType.Int64:
                 {
                     return "System.Int64";
+                }
+
+                case MySqlDbType.UInt16:
+                {
+                    return "System.UInt16";
                 }
 
                 case MySqlDbType.Int16:
@@ -146,6 +186,16 @@ namespace TestsGenerator.Helpers
                 case MySqlDbType.Guid:
                 {
                     return "System.Guid";
+                }
+
+                case MySqlDbType.Byte:
+                {
+                    return "System.SByte";
+                }
+
+                case MySqlDbType.UByte:
+                {
+                    return "System.Byte";
                 }
 
                 default:
