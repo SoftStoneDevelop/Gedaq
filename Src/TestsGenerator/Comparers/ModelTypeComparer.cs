@@ -18,6 +18,7 @@ namespace TestsGenerator.Comparers
 
             return
                 x.TypeInfo.ItemTypeFullName == y.TypeInfo.ItemTypeFullName
+                && x.TypeInfo.ItemTypeNamePostfix == y.TypeInfo.ItemTypeNamePostfix
                 && x.TypeInfo.DbSqlType == y.TypeInfo.DbSqlType
                 && x.TypeInfo.EnumerableType == y.TypeInfo.EnumerableType;
         }

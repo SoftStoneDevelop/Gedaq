@@ -16,30 +16,30 @@ namespace Tests
 {
     [TestFixture]
     [Parallelizable(ParallelScope.Self)]
-    internal partial class GuidListuuidListD1
+    internal partial class Guidv7ListuuidListD1
     {
 
 
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.guiduuidlistd1e2mi
+CREATE TABLE public.guidv7uuidlistd1e2mi
 (
     id integer NOT NULL,
     value uuid[] NOT NULL,
     nullablevalue uuid[],
-    CONSTRAINT guiduuidlistd1e2mi_pkey PRIMARY KEY (id)
+    CONSTRAINT guidv7uuidlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_guiduuidlistd1e2mi
+CREATE TABLE public.binary_guidv7uuidlistd1e2mi
 (
     id integer NOT NULL,
     value uuid[] NOT NULL,
     nullablevalue uuid[],
-    CONSTRAINT binary_guiduuidlistd1e2mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_guidv7uuidlistd1e2mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_guiduuidlistd1e2mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.guiduuidlistd1e2mi;
+DROP TABLE public.guidv7uuidlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_guiduuidlistd1e2mi;
+DROP TABLE public.binary_guidv7uuidlistd1e2mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.guidv7uuidlistd1e2m
     id integer NOT NULL,
     value uuid[] NOT NULL,
     nullablevalue uuid[],
-    guiduuidlistd1e2mi_id integer,
+    guidv7uuidlistd1e2mi_id integer,
     CONSTRAINT guidv7uuidlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT guidv7uuidlistd1e2m_guiduuidlistd1e2mi_fk FOREIGN KEY (guiduuidlistd1e2mi_id)
-        REFERENCES public.guiduuidlistd1e2mi (id) MATCH SIMPLE
+    CONSTRAINT guidv7uuidlistd1e2m_guidv7uuidlistd1e2mi_fk FOREIGN KEY (guidv7uuidlistd1e2mi_id)
+        REFERENCES public.guidv7uuidlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_guidv7uuidlistd1e2m
     id integer NOT NULL,
     value uuid[] NOT NULL,
     nullablevalue uuid[],
-    guiduuidlistd1e2mi_id integer,
+    guidv7uuidlistd1e2mi_id integer,
     CONSTRAINT binary_guidv7uuidlistd1e2m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_guidv7uuidlistd1e2m_binary_guiduuidlistd1e2mi_fk FOREIGN KEY (guiduuidlistd1e2mi_id)
-        REFERENCES public.binary_guiduuidlistd1e2mi (id) MATCH SIMPLE
+    CONSTRAINT binary_guidv7uuidlistd1e2m_binary_guidv7uuidlistd1e2mi_fk FOREIGN KEY (guidv7uuidlistd1e2mi_id)
+        REFERENCES public.binary_guidv7uuidlistd1e2mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

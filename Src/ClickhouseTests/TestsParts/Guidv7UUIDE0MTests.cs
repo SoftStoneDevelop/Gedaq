@@ -13,11 +13,11 @@ using System.Threading.Tasks;
 
 namespace Tests
 {
-    internal partial interface IGuidSingleTypeUUID
+    internal partial interface IGuidv7SingleTypeUUID
     {
     }
     
-    internal partial class GuidSingleTypeUUID : IGuidSingleTypeUUID
+    internal partial class Guidv7SingleTypeUUID : IGuidv7SingleTypeUUID
     {
 
 
@@ -27,423 +27,423 @@ namespace Tests
         {
             new Guidv7UUIDE0M
 {
-    Id = 2,
-    Value = Guid.Parse("019e1b45-9082-7abd-bd43-466f987b2e4e"),
-    ModelInner = new GuidUUIDE0MI
+    Id = 3,
+    Value = Guid.Parse("019e1b50-15aa-794a-8cda-a0b59af56ebc"),
+    ModelInner = new Guidv7UUIDE0MI
 {
     Id = 1,
-    Value = Guid.Parse("019e1b45-9082-745a-a209-efdba4cadb25"),
-    NullableValue = Guid.Parse("019e1b45-9082-7ba5-964b-d0d961a2044e"),
+    Value = Guid.Parse("019e1b50-15aa-7f34-9cf2-1bf047ae7ace"),
+    NullableValue = Guid.Parse("019e1b50-15aa-79a8-9122-98e7a757ece7"),
 },
-    NullableValue = Guid.Parse("019e1b45-9082-7bcf-a3a8-219e94b27bfd"),
-},
-            new Guidv7UUIDE0M
-{
-    Id = 3,
-    Value = Guid.Parse("019e1b45-9082-72fb-bc24-477054824325"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 5,
-    Value = Guid.Parse("019e1b45-9082-7367-9076-72b965032c0b"),
-    NullableValue = null,
-},
-    NullableValue = null,
+    NullableValue = Guid.Parse("019e1b50-15aa-7fe8-8e7d-48c5d6311618"),
 },
             new Guidv7UUIDE0M
 {
     Id = 7,
-    Value = Guid.Parse("019e1b45-9082-76c2-b1cb-f9e08616c860"),
-    ModelInner = new GuidUUIDE0MI
+    Value = Guid.Parse("019e1b50-15aa-7529-bff6-bb3136f63b58"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 8,
-    Value = Guid.Parse("019e1b45-9082-7fb3-af2c-6126ade6c775"),
-    NullableValue = Guid.Parse("019e1b45-9082-710c-9eb0-ca83dadb2c39"),
+    Id = 2,
+    Value = Guid.Parse("019e1b50-15aa-78ec-b1d1-ffe16bc0c7c7"),
+    NullableValue = Guid.Parse("019e1b50-15aa-73b7-8245-4d6c65a01ae8"),
 },
     NullableValue = null,
 },
             new Guidv7UUIDE0M
 {
-    Id = 13,
-    Value = Guid.Parse("019e1b45-9082-72e4-822b-1011ed277879"),
-    ModelInner = new GuidUUIDE0MI
+    Id = 15,
+    Value = Guid.Parse("019e1b50-15aa-7a01-b954-f7305e7cdf9f"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 14,
-    Value = Guid.Parse("019e1b45-9082-7010-9eba-26280794504c"),
-    NullableValue = null,
-},
-    NullableValue = Guid.Parse("019e1b45-9082-7b8b-a0cb-49ae74d8b8f7"),
-},
-            new Guidv7UUIDE0M
-{
-    Id = 22,
-    Value = Guid.Parse("019e1b45-9082-7d0f-810a-a33b6604459d"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 21,
-    Value = Guid.Parse("019e1b45-9082-7a4c-bbb4-860e7028522c"),
-    NullableValue = null,
+    Id = 11,
+    Value = Guid.Parse("019e1b50-15aa-72d5-a139-84e1aef7e8c2"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7645-b11f-86dca32f7ca1"),
 },
     NullableValue = null,
 },
             new Guidv7UUIDE0M
 {
     Id = 24,
-    Value = Guid.Parse("019e1b45-9082-730f-83dc-96883fbc890b"),
-    ModelInner = new GuidUUIDE0MI
+    Value = Guid.Parse("019e1b50-15aa-7be7-af92-72a094506805"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 28,
-    Value = Guid.Parse("019e1b45-9082-7770-bc5b-c43069043161"),
-    NullableValue = null,
+    Id = 15,
+    Value = Guid.Parse("019e1b50-15aa-7f13-855b-bf14a42b1d9c"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7b11-9e56-76a057b8992f"),
 },
-    NullableValue = Guid.Parse("019e1b45-9082-7321-9d62-9b2c4dd408ac"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7896-870a-053595c2da46"),
 },
             new Guidv7UUIDE0M
 {
-    Id = 29,
-    Value = Guid.Parse("019e1b45-9082-7185-bf1a-a8ecc04c70c4"),
-    ModelInner = new GuidUUIDE0MI
+    Id = 31,
+    Value = Guid.Parse("019e1b50-15aa-7978-9163-7b221d2e8b21"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 22,
+    Value = Guid.Parse("019e1b50-15aa-7513-9a14-39aaae886788"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7990-9046-472809cd419d"),
+},
+    NullableValue = null,
+},
+            new Guidv7UUIDE0M
 {
     Id = 34,
-    Value = Guid.Parse("019e1b45-9082-7910-b723-a28908df9a02"),
-    NullableValue = Guid.Parse("019e1b45-9082-7548-aa44-ec726eaf6e6c"),
+    Value = Guid.Parse("019e1b50-15aa-7e9e-95be-ceebecbc02c3"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 23,
+    Value = Guid.Parse("019e1b50-15aa-7274-b2bb-0d066badd0db"),
+    NullableValue = null,
 },
-    NullableValue = Guid.Parse("019e1b45-9082-7923-8020-2dc9f3578a61"),
+    NullableValue = null,
 },
             new Guidv7UUIDE0M
 {
-    Id = 30,
-    Value = Guid.Parse("019e1b45-9082-7f9c-b45a-0e3eb534a931"),
-    ModelInner = new GuidUUIDE0MI
+    Id = 37,
+    Value = Guid.Parse("019e1b50-15aa-70b3-9fac-406de450426e"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 25,
+    Value = Guid.Parse("019e1b50-15aa-796f-8fc8-d100063f2542"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7b03-ac70-80039450a701"),
+},
+    NullableValue = Guid.Parse("019e1b50-15aa-7a0f-8c6e-d64a0cc1489f"),
+},
+            new Guidv7UUIDE0M
 {
     Id = 41,
-    Value = Guid.Parse("019e1b45-9082-70ef-a3d8-64ac302669a9"),
-    NullableValue = null,
+    Value = Guid.Parse("019e1b50-15aa-7f92-a981-dc087ff22d3f"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 33,
+    Value = Guid.Parse("019e1b50-15aa-715f-9e69-15bc8d58f136"),
+    NullableValue = Guid.Parse("019e1b50-15aa-760c-b8b3-384bd54df1b8"),
 },
-    NullableValue = Guid.Parse("019e1b45-9082-7ce1-98ec-e3134e6adff6"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7fac-af93-a543abc864fc"),
 },
             new Guidv7UUIDE0M
+{
+    Id = 48,
+    Value = Guid.Parse("019e1b50-15aa-7e5f-8f80-c7019cfd5791"),
+    ModelInner = new Guidv7UUIDE0MI
 {
     Id = 35,
-    Value = Guid.Parse("019e1b45-9082-708b-89ce-d8274337f783"),
-    ModelInner = new GuidUUIDE0MI
+    Value = Guid.Parse("019e1b50-15aa-7c56-b68a-721db476e005"),
+    NullableValue = null,
+},
+    NullableValue = Guid.Parse("019e1b50-15aa-715b-87d7-e3aef075c519"),
+},
+            new Guidv7UUIDE0M
 {
-    Id = 43,
-    Value = Guid.Parse("019e1b45-9082-717e-91be-c9cd81374d52"),
-    NullableValue = Guid.Parse("019e1b45-9082-7a7d-b781-1d1f201c5cbc"),
+    Id = 50,
+    Value = Guid.Parse("019e1b50-15aa-7304-b848-902704c64af8"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 41,
+    Value = Guid.Parse("019e1b50-15aa-73e8-bb8d-7d085194c542"),
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new Guidv7UUIDE0M
-{
-    Id = 38,
-    Value = Guid.Parse("019e1b45-9082-7af9-8ed4-727da59a12db"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 51,
-    Value = Guid.Parse("019e1b45-9082-7fed-9b06-660392531a42"),
-    NullableValue = Guid.Parse("019e1b45-9082-78e2-857b-9468eeb9c9ca"),
-},
-    NullableValue = Guid.Parse("019e1b45-9082-7a1e-acaf-a2d131343763"),
-},
-            new Guidv7UUIDE0M
-{
-    Id = 46,
-    Value = Guid.Parse("019e1b45-9082-7278-9aa7-47e93220900b"),
-    ModelInner = new GuidUUIDE0MI
 {
     Id = 54,
-    Value = Guid.Parse("019e1b45-9082-7451-a53c-03b1d52b15af"),
-    NullableValue = Guid.Parse("019e1b45-9082-7475-951a-9d12a6a5b0cb"),
-},
-    NullableValue = Guid.Parse("019e1b45-9082-7aea-8d30-76e5bce7e947"),
-},
-            new Guidv7UUIDE0M
+    Value = Guid.Parse("019e1b50-15aa-7428-8cac-6f7ba4365fdc"),
+    ModelInner = new Guidv7UUIDE0MI
 {
     Id = 49,
-    Value = Guid.Parse("019e1b45-9082-7c4b-b73d-1b96b3ead2a0"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 59,
-    Value = Guid.Parse("019e1b45-9082-7cf1-a171-cd7bf8a9e575"),
-    NullableValue = null,
+    Value = Guid.Parse("019e1b50-15aa-7c3a-be8e-16e836c6a15d"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7ad5-9d86-324a8c5e0e38"),
 },
-    NullableValue = Guid.Parse("019e1b45-9082-777a-baac-c6061d9e8669"),
+    NullableValue = null,
 },
             new Guidv7UUIDE0M
 {
-    Id = 52,
-    Value = Guid.Parse("019e1b45-9082-7501-8ff2-8f512f4cc692"),
-    ModelInner = new GuidUUIDE0MI
+    Id = 57,
+    Value = Guid.Parse("019e1b50-15aa-7eb8-8026-a5ffe5e829e6"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 56,
+    Value = Guid.Parse("019e1b50-15aa-7336-853b-3ab2c9035ad2"),
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new Guidv7UUIDE0M
+{
+    Id = 58,
+    Value = Guid.Parse("019e1b50-15aa-7e70-a740-dc48876b4730"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 60,
+    Value = Guid.Parse("019e1b50-15aa-786a-8a47-dbcd9d871b95"),
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new Guidv7UUIDE0M
 {
     Id = 62,
-    Value = Guid.Parse("019e1b45-9082-7850-bcf6-48a5aac54245"),
+    Value = Guid.Parse("019e1b50-15aa-7768-8669-3748109be658"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 69,
+    Value = Guid.Parse("019e1b50-15aa-7c71-af61-3de49e0bb1a7"),
     NullableValue = null,
 },
-    NullableValue = Guid.Parse("019e1b45-9082-71ef-a6ca-6d1ed12f964f"),
+    NullableValue = null,
 },
             new Guidv7UUIDE0M
 {
-    Id = 61,
-    Value = Guid.Parse("019e1b45-9082-7d7a-b3b2-e90f79df7fa4"),
-    ModelInner = new GuidUUIDE0MI
+    Id = 63,
+    Value = Guid.Parse("019e1b50-15aa-7f23-92d7-b3114529fb6f"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 67,
-    Value = Guid.Parse("019e1b45-9082-76bb-84ba-03a7fbdf1a79"),
-    NullableValue = Guid.Parse("019e1b45-9082-751b-b816-3375f8a80304"),
+    Id = 71,
+    Value = Guid.Parse("019e1b50-15aa-725e-b51c-7b7e2e71a2ad"),
+    NullableValue = Guid.Parse("019e1b50-15aa-78e3-9c19-b426b914de6a"),
 },
-    NullableValue = Guid.Parse("019e1b45-9082-7abb-8b58-7be840636e0d"),
-},
-            new Guidv7UUIDE0M
-{
-    Id = 70,
-    Value = Guid.Parse("019e1b45-9082-70e3-854b-7b171e19c0c2"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 68,
-    Value = Guid.Parse("019e1b45-9082-7a6f-9335-707daeb6b93d"),
-    NullableValue = Guid.Parse("019e1b45-9082-7544-a157-83ad4439d913"),
-},
-    NullableValue = Guid.Parse("019e1b45-9082-79d4-bbb1-c62ef536c0a6"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7896-b4fe-08739bdb89fa"),
 },
             new Guidv7UUIDE0M
 {
     Id = 72,
-    Value = Guid.Parse("019e1b45-9082-7a02-958d-89c46dfdc312"),
-    ModelInner = new GuidUUIDE0MI
+    Value = Guid.Parse("019e1b50-15aa-7ae7-abb1-9ed5b6a8b9e9"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 75,
-    Value = Guid.Parse("019e1b45-9082-745c-adfd-297145ec115c"),
+    Id = 78,
+    Value = Guid.Parse("019e1b50-15aa-78e0-9906-ac4379b6a86b"),
     NullableValue = null,
 },
     NullableValue = null,
 },
             new Guidv7UUIDE0M
 {
-    Id = 77,
-    Value = Guid.Parse("019e1b45-9082-76c8-a5d4-939a6aad3412"),
-    ModelInner = new GuidUUIDE0MI
+    Id = 80,
+    Value = Guid.Parse("019e1b50-15aa-7758-a523-b97ea9e66671"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 81,
-    Value = Guid.Parse("019e1b45-9082-7939-b1e1-c0d837e6c4a6"),
+    Id = 86,
+    Value = Guid.Parse("019e1b50-15aa-7f4f-83cc-40676ce334ed"),
     NullableValue = null,
 },
     NullableValue = null,
 },
             new Guidv7UUIDE0M
 {
-    Id = 85,
-    Value = Guid.Parse("019e1b45-9082-7307-8dcb-96039a6248ce"),
-    ModelInner = new GuidUUIDE0MI
+    Id = 88,
+    Value = Guid.Parse("019e1b50-15aa-79fe-bb93-891d57ba70a8"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 87,
-    Value = Guid.Parse("019e1b45-9082-779f-9c11-a767674b9223"),
-    NullableValue = null,
+    Id = 90,
+    Value = Guid.Parse("019e1b50-15aa-7656-b393-21d2420aac7c"),
+    NullableValue = Guid.Parse("019e1b50-15aa-78aa-9003-71e335d6673f"),
 },
-    NullableValue = null,
-},
-            new Guidv7UUIDE0M
-{
-    Id = 89,
-    Value = Guid.Parse("019e1b45-9082-764a-9287-f0b23868f512"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 95,
-    Value = Guid.Parse("019e1b45-9082-714d-8cef-2f1854c8f2e1"),
-    NullableValue = Guid.Parse("019e1b45-9082-73ac-80f9-586f760369e7"),
-},
-    NullableValue = Guid.Parse("019e1b45-9082-7a75-8d60-392eaebcb6ef"),
+    NullableValue = Guid.Parse("019e1b50-15aa-783b-8cdd-fbbb06b79b10"),
 },
             new Guidv7UUIDE0M
 {
     Id = 97,
-    Value = Guid.Parse("019e1b45-9082-785a-b669-e199baf39a24"),
-    ModelInner = new GuidUUIDE0MI
+    Value = Guid.Parse("019e1b50-15aa-7408-8516-7ea6d0e52922"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 97,
-    Value = Guid.Parse("019e1b45-9082-7e8b-9aaf-d40716c10a39"),
-    NullableValue = null,
+    Id = 96,
+    Value = Guid.Parse("019e1b50-15aa-7b67-9c84-331cb39111de"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7019-ad09-11cb77bb47b1"),
 },
-    NullableValue = Guid.Parse("019e1b45-9082-79f5-b047-890ff42b19cf"),
+    NullableValue = Guid.Parse("019e1b50-15aa-70b1-8db6-c0b4e80eb1ce"),
 },
             new Guidv7UUIDE0M
+{
+    Id = 103,
+    Value = Guid.Parse("019e1b50-15aa-72e4-96ad-7291e2ad487b"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 99,
+    Value = Guid.Parse("019e1b50-15aa-7ded-8fb4-91b228f7512f"),
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new Guidv7UUIDE0M
+{
+    Id = 108,
+    Value = Guid.Parse("019e1b50-15aa-7335-9701-9e9896bd841c"),
+    ModelInner = new Guidv7UUIDE0MI
 {
     Id = 100,
-    Value = Guid.Parse("019e1b45-9082-7431-89bd-4b8acf21efa1"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 105,
-    Value = Guid.Parse("019e1b45-9082-7046-a8f7-f6fddd3f8bcc"),
-    NullableValue = Guid.Parse("019e1b45-9082-7202-b704-283e151b20f7"),
+    Value = Guid.Parse("019e1b50-15aa-78de-80f0-bcf1c9febcef"),
+    NullableValue = Guid.Parse("019e1b50-15aa-738c-bd55-26f65533edc9"),
 },
     NullableValue = null,
 },
             new Guidv7UUIDE0M
 {
-    Id = 105,
-    Value = Guid.Parse("019e1b45-9082-7ae3-96c6-5bbda6093f5a"),
-    ModelInner = new GuidUUIDE0MI
+    Id = 110,
+    Value = Guid.Parse("019e1b50-15aa-7b14-b432-9cf7a0698758"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 104,
+    Value = Guid.Parse("019e1b50-15aa-787c-991e-69f60467f2f3"),
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new Guidv7UUIDE0M
+{
+    Id = 111,
+    Value = Guid.Parse("019e1b50-15aa-7ba4-8658-6049c81e7f38"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 111,
+    Value = Guid.Parse("019e1b50-15aa-7d6b-9ef7-28f3198b623b"),
+    NullableValue = null,
+},
+    NullableValue = Guid.Parse("019e1b50-15aa-7c8f-952b-24445f0323fd"),
+},
+            new Guidv7UUIDE0M
+{
+    Id = 112,
+    Value = Guid.Parse("019e1b50-15aa-7f49-886d-879140a4154d"),
+    ModelInner = new Guidv7UUIDE0MI
 {
     Id = 113,
-    Value = Guid.Parse("019e1b45-9082-7f7e-ac4a-0d8d1e138272"),
-    NullableValue = Guid.Parse("019e1b45-9082-7e3a-8f54-4b4c78a995cc"),
+    Value = Guid.Parse("019e1b50-15aa-7ad5-a325-e6716e5756f3"),
+    NullableValue = Guid.Parse("019e1b50-15aa-738f-8fe2-252c0829e056"),
 },
     NullableValue = null,
 },
             new Guidv7UUIDE0M
 {
-    Id = 106,
-    Value = Guid.Parse("019e1b45-9082-7613-a022-b67634726c55"),
-    ModelInner = new GuidUUIDE0MI
+    Id = 113,
+    Value = Guid.Parse("019e1b50-15aa-71a0-a8bf-080884874367"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 121,
-    Value = Guid.Parse("019e1b45-9082-7cfb-8502-519f9d441c4a"),
-    NullableValue = Guid.Parse("019e1b45-9082-7e60-a1cf-561228fab83f"),
-},
-    NullableValue = null,
-},
-            new Guidv7UUIDE0M
-{
-    Id = 109,
-    Value = Guid.Parse("019e1b45-9082-7df0-9bb3-c472468c4e35"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 130,
-    Value = Guid.Parse("019e1b45-9082-70a1-a819-0fb5eba9416f"),
+    Id = 118,
+    Value = Guid.Parse("019e1b50-15aa-7ad3-aad4-170b8d66f515"),
     NullableValue = null,
 },
     NullableValue = null,
 },
             new Guidv7UUIDE0M
 {
-    Id = 115,
-    Value = Guid.Parse("019e1b45-9082-715d-82c5-69816deedd45"),
-    ModelInner = new GuidUUIDE0MI
+    Id = 114,
+    Value = Guid.Parse("019e1b50-15aa-79d5-a3ca-6bc47dbabcb4"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 133,
-    Value = Guid.Parse("019e1b45-9082-7059-a531-ffe2111d95d4"),
-    NullableValue = Guid.Parse("019e1b45-9082-78df-9397-b95087c5ad7f"),
-},
-    NullableValue = Guid.Parse("019e1b45-9082-7829-965d-175deb40b79f"),
-},
-            new Guidv7UUIDE0M
-{
-    Id = 120,
-    Value = Guid.Parse("019e1b45-9082-743c-a36f-ef2d9db96d9b"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 139,
-    Value = Guid.Parse("019e1b45-9082-73cc-8fc4-1029efb259a0"),
+    Id = 123,
+    Value = Guid.Parse("019e1b50-15aa-7cc8-8e4e-f3ab8e1d25e6"),
     NullableValue = null,
 },
     NullableValue = null,
 },
             new Guidv7UUIDE0M
 {
-    Id = 121,
-    Value = Guid.Parse("019e1b45-9082-7c95-bb02-d3460a6d90f6"),
-    ModelInner = new GuidUUIDE0MI
+    Id = 119,
+    Value = Guid.Parse("019e1b50-15aa-7efe-b0fe-9b0bca0d3532"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 147,
-    Value = Guid.Parse("019e1b45-9082-7920-a6da-6750a458b6f4"),
-    NullableValue = Guid.Parse("019e1b45-9082-7b05-95a1-ba50a7f2ca7b"),
-},
-    NullableValue = Guid.Parse("019e1b45-9082-70b9-9c8b-6b784f6ba4d6"),
-},
-            new Guidv7UUIDE0M
-{
-    Id = 122,
-    Value = Guid.Parse("019e1b45-9082-7bab-9770-a3a910207953"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 151,
-    Value = Guid.Parse("019e1b45-9082-7aff-bcf9-7632fb089b05"),
-    NullableValue = Guid.Parse("019e1b45-9082-76f3-b555-adbd87c8654a"),
-},
+    Id = 127,
+    Value = Guid.Parse("019e1b50-15aa-7ec3-a4aa-76546fe585bc"),
     NullableValue = null,
+},
+    NullableValue = Guid.Parse("019e1b50-15aa-776d-a48a-74e5233bc190"),
 },
             new Guidv7UUIDE0M
 {
     Id = 123,
-    Value = Guid.Parse("019e1b45-9082-715c-a225-0eb499650e95"),
-    ModelInner = new GuidUUIDE0MI
+    Value = Guid.Parse("019e1b50-15aa-75a9-a25e-527d88779902"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 154,
-    Value = Guid.Parse("019e1b45-9082-7042-a418-02b22d1412a8"),
-    NullableValue = Guid.Parse("019e1b45-9082-742c-9086-e1f109497e0f"),
+    Id = 133,
+    Value = Guid.Parse("019e1b50-15aa-7d0b-93e1-55961090f777"),
+    NullableValue = Guid.Parse("019e1b50-15aa-77f9-9c2d-a48232c911bc"),
 },
-    NullableValue = Guid.Parse("019e1b45-9082-7d01-9b7c-b8174d3f3390"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7cfc-a351-f98b0d1a4972"),
 },
             new Guidv7UUIDE0M
 {
     Id = 132,
-    Value = Guid.Parse("019e1b45-9082-77ff-a8fb-6940eea9bde3"),
-    ModelInner = new GuidUUIDE0MI
+    Value = Guid.Parse("019e1b50-15aa-77a3-9c01-ffe9cc0bf492"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 162,
-    Value = Guid.Parse("019e1b45-9082-711d-bafe-ff67b65ceb51"),
-    NullableValue = Guid.Parse("019e1b45-9082-7421-87bc-7625f2fca021"),
+    Id = 137,
+    Value = Guid.Parse("019e1b50-15aa-7996-b20a-c0dffb6edbba"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7c5b-a0b0-ae0b5584a829"),
 },
-    NullableValue = Guid.Parse("019e1b45-9082-79f0-a07e-25ebf2e93082"),
-},
-            new Guidv7UUIDE0M
-{
-    Id = 133,
-    Value = Guid.Parse("019e1b45-9082-7b1f-8bd9-475b93fde085"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 166,
-    Value = Guid.Parse("019e1b45-9082-7ff1-84b2-8a07978f1ae5"),
     NullableValue = null,
-},
-    NullableValue = Guid.Parse("019e1b45-9082-760d-ace1-c437eaa96e85"),
 },
             new Guidv7UUIDE0M
 {
     Id = 138,
-    Value = Guid.Parse("019e1b45-9082-780d-82c4-d38fd25f595f"),
-    ModelInner = new GuidUUIDE0MI
+    Value = Guid.Parse("019e1b50-15aa-732d-a427-2e4faccee782"),
+    ModelInner = new Guidv7UUIDE0MI
 {
-    Id = 174,
-    Value = Guid.Parse("019e1b45-9082-7d8b-9adc-25bf0c591d27"),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new Guidv7UUIDE0M
-{
-    Id = 143,
-    Value = Guid.Parse("019e1b45-9082-703e-a031-b50ed5b59cb6"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 176,
-    Value = Guid.Parse("019e1b45-9082-7980-9a3b-319e2d1450f8"),
-    NullableValue = null,
+    Id = 144,
+    Value = Guid.Parse("019e1b50-15aa-714f-b212-f5f870b59af3"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7f09-9167-de9f88ba2a43"),
 },
     NullableValue = null,
 },
             new Guidv7UUIDE0M
 {
-    Id = 145,
-    Value = Guid.Parse("019e1b45-9082-7046-8d54-9293d9f5dbd9"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 182,
-    Value = Guid.Parse("019e1b45-9082-70b1-b486-22f678d33c89"),
-    NullableValue = Guid.Parse("019e1b45-9082-7ee4-bdbe-872068ff34f7"),
-},
-    NullableValue = Guid.Parse("019e1b45-9082-7ae0-8523-0d8c0b24f43c"),
-},
-            new Guidv7UUIDE0M
+    Id = 144,
+    Value = Guid.Parse("019e1b50-15aa-7238-ac1d-fdc303d34e0a"),
+    ModelInner = new Guidv7UUIDE0MI
 {
     Id = 146,
-    Value = Guid.Parse("019e1b45-9082-7be1-bbdf-3cd9f83acfd2"),
-    ModelInner = new GuidUUIDE0MI
-{
-    Id = 186,
-    Value = Guid.Parse("019e1b45-9082-72f4-a3c3-f75ab309beb8"),
-    NullableValue = Guid.Parse("019e1b45-9082-7e69-992c-b06b1a077ba0"),
+    Value = Guid.Parse("019e1b50-15aa-7e3b-9470-6ab0d8e8cd5a"),
+    NullableValue = null,
 },
     NullableValue = null,
+},
+            new Guidv7UUIDE0M
+{
+    Id = 147,
+    Value = Guid.Parse("019e1b50-15aa-7f4d-a826-88b27ea9a248"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 152,
+    Value = Guid.Parse("019e1b50-15aa-7326-a56b-ee3e11dc24d2"),
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new Guidv7UUIDE0M
+{
+    Id = 155,
+    Value = Guid.Parse("019e1b50-15aa-77dc-b1b5-d3bd2d32fc28"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 159,
+    Value = Guid.Parse("019e1b50-15aa-7d5c-8948-0d6e3ea8edc8"),
+    NullableValue = Guid.Parse("019e1b50-15aa-77c7-ae36-3355c4245a6b"),
+},
+    NullableValue = null,
+},
+            new Guidv7UUIDE0M
+{
+    Id = 159,
+    Value = Guid.Parse("019e1b50-15aa-7799-aa9c-4320487cb16c"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 164,
+    Value = Guid.Parse("019e1b50-15aa-75b9-92ea-4673071bb578"),
+    NullableValue = null,
+},
+    NullableValue = Guid.Parse("019e1b50-15aa-713d-ab58-b58e23b44def"),
+},
+            new Guidv7UUIDE0M
+{
+    Id = 167,
+    Value = Guid.Parse("019e1b50-15aa-7278-ad2c-8a31443af80b"),
+    ModelInner = new Guidv7UUIDE0MI
+{
+    Id = 166,
+    Value = Guid.Parse("019e1b50-15aa-77ae-82db-ae99a689c8e4"),
+    NullableValue = Guid.Parse("019e1b50-15aa-7b3f-863e-390bd7da97f7"),
+},
+    NullableValue = Guid.Parse("019e1b50-15aa-7abc-b8c5-c4f0953960d2"),
 },
         };
 
@@ -476,7 +476,7 @@ VALUES (
             queryType: QueryType.NonQuery,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof(IGuidSingleTypeUUID)),
+            asPartInterface: typeof(IGuidv7SingleTypeUUID)),
             Gedaq.DbConnection.Attributes.Parametr(
                 parametrType: typeof(System.Int32), 
                 parametrName: "m_id", 
@@ -505,7 +505,7 @@ VALUES (
                 await connection.OpenAsync();
                 for (int i = 0; i < 2; i++)
                 {
-                    await ((IGuidSingleTypeUUID)this).InsertModelDbConnectionAsync(
+                    await ((IGuidv7SingleTypeUUID)this).InsertModelDbConnectionAsync(
                         connection,
                         m_Id: _testData[i].Id,
                         m_Value: _testData[i].Value,
@@ -523,7 +523,7 @@ VALUES (
                 await connection.OpenAsync();
                 for (int i = 2; i < 35; i++)
                 {
-                     ((IGuidSingleTypeUUID)this).InsertModelDbConnection(
+                     ((IGuidv7SingleTypeUUID)this).InsertModelDbConnection(
                         connection,
                         m_Id: _testData[i].Id,
                         m_Value: _testData[i].Value,
@@ -558,7 +558,7 @@ WHERE
             queryType: QueryType.Read,
             generate: true,
             accessModifier: AccessModifier.Public,
-            asPartInterface: typeof(IGuidSingleTypeUUID)),
+            asPartInterface: typeof(IGuidv7SingleTypeUUID)),
             Gedaq.DbConnection.Attributes.Parametr(
                 parametrType: typeof(System.Int32), 
                 parametrName: "m_id", 
@@ -575,7 +575,7 @@ WHERE
                 await connection.OpenAsync();
                 for (int i = 0; i < _testData.Length; i++)
                 {
-                    var models = await ((IGuidSingleTypeUUID)this).SelectModelDbConnectionAsync(
+                    var models = await ((IGuidv7SingleTypeUUID)this).SelectModelDbConnectionAsync(
                         connection,
                         m_id: _testData[i].Id);
                     Assert.That(models, Has.Count.EqualTo(1));
@@ -592,7 +592,7 @@ WHERE
                 await connection.OpenAsync();
                 for (int i = 0; i < _testData.Length; i++)
                 {
-                    var models =  ((IGuidSingleTypeUUID)this).SelectModelDbConnection(
+                    var models =  ((IGuidv7SingleTypeUUID)this).SelectModelDbConnection(
                         connection,
                         m_id: _testData[i].Id);
                     Assert.That(models, Has.Count.EqualTo(1));

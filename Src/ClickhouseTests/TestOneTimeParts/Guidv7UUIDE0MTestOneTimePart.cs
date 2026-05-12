@@ -13,7 +13,7 @@ namespace Tests
 {
     [TestFixture]
     [Parallelizable(ParallelScope.Self)]
-    internal partial class GuidSingleTypeUUID
+    internal partial class Guidv7SingleTypeUUID
     {
 
 

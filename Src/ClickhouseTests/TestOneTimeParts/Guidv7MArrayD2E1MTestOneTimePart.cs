@@ -13,7 +13,7 @@ namespace Tests
 {
     [TestFixture]
     [Parallelizable(ParallelScope.Self)]
-    internal partial class GuidMArrayMArrayD2
+    internal partial class Guidv7MArrayMArrayD2
     {
 
 

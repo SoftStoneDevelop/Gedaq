@@ -16,30 +16,30 @@ namespace Tests
 {
     [TestFixture]
     [Parallelizable(ParallelScope.Self)]
-    internal partial class GuidSingleTypeuuid
+    internal partial class Guidv7SingleTypeuuid
     {
 
 
         private async Task CreateModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-CREATE TABLE public.guiduuide0mi
+CREATE TABLE public.guidv7uuide0mi
 (
     id integer NOT NULL,
     value uuid NOT NULL,
     nullablevalue uuid,
-    CONSTRAINT guiduuide0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT guidv7uuide0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-CREATE TABLE public.binary_guiduuide0mi
+CREATE TABLE public.binary_guidv7uuide0mi
 (
     id integer NOT NULL,
     value uuid NOT NULL,
     nullablevalue uuid,
-    CONSTRAINT binary_guiduuide0mi_pkey PRIMARY KEY (id)
+    CONSTRAINT binary_guidv7uuide0mi_pkey PRIMARY KEY (id)
 );
 ";
             await cmd.ExecuteNonQueryAsync();
@@ -49,12 +49,12 @@ CREATE TABLE public.binary_guiduuide0mi
         private async Task DropModelInnerTable(NpgsqlCommand cmd)
         {
             cmd.CommandText = @"
-DROP TABLE public.guiduuide0mi;
+DROP TABLE public.guidv7uuide0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
 
             cmd.CommandText = @"
-DROP TABLE public.binary_guiduuide0mi;
+DROP TABLE public.binary_guidv7uuide0mi;
 ";
             await cmd.ExecuteNonQueryAsync();
         }
@@ -68,10 +68,10 @@ CREATE TABLE public.guidv7uuide0m
     id integer NOT NULL,
     value uuid NOT NULL,
     nullablevalue uuid,
-    guiduuide0mi_id integer,
+    guidv7uuide0mi_id integer,
     CONSTRAINT guidv7uuide0m_pkey PRIMARY KEY (id),
-    CONSTRAINT guidv7uuide0m_guiduuide0mi_fk FOREIGN KEY (guiduuide0mi_id)
-        REFERENCES public.guiduuide0mi (id) MATCH SIMPLE
+    CONSTRAINT guidv7uuide0m_guidv7uuide0mi_fk FOREIGN KEY (guidv7uuide0mi_id)
+        REFERENCES public.guidv7uuide0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );
@@ -84,10 +84,10 @@ CREATE TABLE public.binary_guidv7uuide0m
     id integer NOT NULL,
     value uuid NOT NULL,
     nullablevalue uuid,
-    guiduuide0mi_id integer,
+    guidv7uuide0mi_id integer,
     CONSTRAINT binary_guidv7uuide0m_pkey PRIMARY KEY (id),
-    CONSTRAINT binary_guidv7uuide0m_binary_guiduuide0mi_fk FOREIGN KEY (guiduuide0mi_id)
-        REFERENCES public.binary_guiduuide0mi (id) MATCH SIMPLE
+    CONSTRAINT binary_guidv7uuide0m_binary_guidv7uuide0mi_fk FOREIGN KEY (guidv7uuide0mi_id)
+        REFERENCES public.binary_guidv7uuide0mi (id) MATCH SIMPLE
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
 );

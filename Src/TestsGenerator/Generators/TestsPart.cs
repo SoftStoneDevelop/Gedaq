@@ -176,7 +176,7 @@ namespace TestsGenerator.Generators
         public static string ClassName(Model.ModelType model)
         {
             return 
-                $@"{model.TypeInfo.ItemTypeName}{model.TypeInfo.EnumerableType}{model.TypeInfo.DbSqlTypeWithoutSpace()}";
+                $@"{model.TypeInfo.ItemTypeName}{model.TypeInfo.ItemTypeNamePostfix}{model.TypeInfo.EnumerableType}{model.TypeInfo.DbSqlTypeWithoutSpace()}";
         }
 
         private static string InterfaceName(Model.ModelType model)
