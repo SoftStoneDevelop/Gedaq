@@ -87,5 +87,28 @@ namespace Gedaq.Npgsql
         {
             throw new System.NotImplementedException();
         }
+
+        public override bool GetValueFromReader(ITypeSymbol typeOfValue, out string getMethod)
+        {
+            if (base.GetValueFromReader(typeOfValue, out getMethod))
+            {
+                return true;
+            }
+
+            switch (typeOfValue.GetFullTypeName(replaceNullable: true, addQuestionNoatble: false))
+            {
+                case "System.TimeSpan":
+                {
+                    getMethod = "GetTimeSpan";
+                    return true;
+                }
+
+                default:
+                {
+                    getMethod = null;
+                    return false;
+                }
+            }
+        }
     }
 }

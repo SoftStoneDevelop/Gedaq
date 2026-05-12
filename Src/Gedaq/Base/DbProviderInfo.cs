@@ -136,5 +136,88 @@ namespace Gedaq.Base
                 }
             }
         }
+
+        public virtual bool GetValueFromReader(
+            ITypeSymbol typeOfValue,
+            out string getMethod)
+        {
+            switch (typeOfValue.GetFullTypeName(replaceNullable: true, addQuestionNoatble: false))
+            {
+                case "System.Int32":
+                {
+                    getMethod = "GetInt32";
+                    return true;
+                }
+
+                case "System.Int64":
+                {
+                    getMethod = "GetInt64";
+                    return true;
+                }
+
+                case "System.Byte":
+                {
+                    getMethod = "GetByte";
+                    return true;
+                }
+
+                case "System.Int16":
+                {
+                    getMethod = "GetInt16";
+                    return true;
+                }
+
+                case "System.Char":
+                {
+                    getMethod = "GetChar";
+                    return true;
+                }
+
+                case "System.Decimal":
+                {
+                    getMethod = "GetDecimal";
+                    return true;
+                }
+
+                case "System.Double":
+                {
+                    getMethod = "GetDouble";
+                    return true;
+                }
+
+                case "System.Boolean":
+                {
+                    getMethod = "GetBoolean";
+                    return true;
+                }
+
+                case "System.Single":
+                {
+                    getMethod = "GetFloat";
+                    return true;
+                }
+
+                case "System.DateTime":
+                {
+                    getMethod = "GetDateTime";
+                    return true;
+                }
+
+                case "System.String":
+                {
+                    getMethod = "GetString";
+                    return true;
+                }
+
+                case "System.Guid":
+                {
+                    getMethod = "GetGuid";
+                    return true;
+                }
+            }
+
+            getMethod = null;
+            return false;
+        }
     }
 }

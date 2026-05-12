@@ -38,6 +38,7 @@ namespace Gedaq.Helpers
                 ReturnKnownProviderType(
                     mapTypeInfo.MapType,
                     builder,
+                    provider,
                     mapVariableName,
                     castTypeExpr);
             }
@@ -65,6 +66,7 @@ namespace Gedaq.Helpers
                 ReturnDefaultMap(
                     mapTypeInfo.MapType,
                     builder,
+                    provider,
                     mapVariableName,
                     castTypeExpr);
             }
@@ -73,12 +75,13 @@ namespace Gedaq.Helpers
         private static void ReturnKnownProviderType(
             ITypeSymbol mapType,
             StringBuilder builder,
+            ProviderInfo provider,
             string mapVariableName,
             string castTypeExpr = "")
         {
             if (mapType.IsNullableType())
             {
-                if (!GetValueFromReader(mapType, out string getMethod))
+                if (!provider.GetValueFromReader(mapType, out string getMethod))
                 {
                     getMethod = $"GetFieldValue<{mapType.GetFullTypeName(true, addQuestionNoatble: false)}>";
                 }
@@ -95,7 +98,7 @@ namespace Gedaq.Helpers
             }
             else
             {
-                if (!GetValueFromReader(mapType, out string getMethod))
+                if (!provider.GetValueFromReader(mapType, out string getMethod))
                 {
                     getMethod = $"GetFieldValue<{mapType.GetFullTypeName()}>";
                 }
@@ -135,7 +138,7 @@ namespace Gedaq.Helpers
             var field = Field.OnlyPositionalField(0);
             if (mapType.IsNullableType())
             {
-                if (!GetValueFromReader(mapType, out string getMethod))
+                if (!provider.GetValueFromReader(mapType, out string getMethod))
                 {
                     getMethod = $"GetFieldValue<{provider.GetSpecialTypeValue(mapType, string.Empty, field)}>";
                 }
@@ -173,10 +176,11 @@ namespace Gedaq.Helpers
         private static void ReturnDefaultMap(
             ITypeSymbol mapType,
             StringBuilder builder,
+            ProviderInfo provider,
             string mapVariableName,
             string castTypeExpr = "")
         {
-            if (!GetValueFromReader(mapType, out string getMethod))
+            if (!provider.GetValueFromReader(mapType, out string getMethod))
             {
                 getMethod = $"GetFieldValue<{mapType.GetFullTypeName()}>";
             }
@@ -312,7 +316,7 @@ namespace Gedaq.Helpers
 
             if (propertyType.IsNullableType())
             {
-                if (!GetValueFromReader(propertyType, out string getMethod))
+                if (!provider.GetValueFromReader(propertyType, out string getMethod))
                 {
                     getMethod = $"GetFieldValue<{propertyType.GetFullTypeName(true, addQuestionNoatble: false)}>";
                 }
@@ -329,7 +333,7 @@ namespace Gedaq.Helpers
                 }
                 else
                 {
-                    if (!GetValueFromReader(propertyType, out string getMethod))
+                    if (!provider.GetValueFromReader(propertyType, out string getMethod))
                     {
                         getMethod = $"GetFieldValue<{propertyType.GetFullTypeName()}>";
                     }
@@ -347,89 +351,6 @@ namespace Gedaq.Helpers
         private static string Tabs(int tabs)
         {
             return new string(' ', tabs * 4);
-        }
-
-        private static bool GetValueFromReader(
-            ITypeSymbol typeOfValue,
-            out string getMethod)
-        {
-            switch (typeOfValue.GetFullTypeName(replaceNullable: true, addQuestionNoatble: false))
-            {
-                case "System.Int32":
-                {
-                    getMethod = "GetInt32";
-                    return true;
-                }
-
-                case "System.Int64":
-                {
-                    getMethod = "GetInt64";
-                    return true;
-                }
-
-                case "System.Byte":
-                {
-                    getMethod = "GetByte";
-                    return true;
-                }
-
-                case "System.Int16":
-                {
-                    getMethod = "GetInt16";
-                    return true;
-                }
-
-                case "System.Char":
-                {
-                    getMethod = "GetChar";
-                    return true;
-                }
-
-                case "System.Decimal":
-                {
-                    getMethod = "GetDecimal";
-                    return true;
-                }
-
-                case "System.Double":
-                {
-                    getMethod = "GetDouble";
-                    return true;
-                }
-
-                case "System.Boolean":
-                {
-                    getMethod = "GetBoolean";
-                    return true;
-                }
-
-                case "System.Single":
-                {
-                    getMethod = "GetFloat";
-                    return true;
-                }
-
-                case "System.TimeSpan":
-                {
-                    getMethod = "GetTimeSpan";
-                    return true;
-                }
-
-                case "System.DateTime":
-                {
-                    getMethod = "GetDateTime";
-                    return true;
-                }
-
-                case "System.String":
-                {
-                    getMethod = "GetString";
-                    return true;
-                }
-            }
-
-            getMethod = null;
-            return false;
         }
     }
 }
