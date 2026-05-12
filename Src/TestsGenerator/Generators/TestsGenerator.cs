@@ -127,6 +127,7 @@ namespace TestsGenerator.Generators
 
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Inet, "IPAddress", "System.Net.IPAddress", type => new IPAddressValueHelper(type), isReferenceType: true);
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Uuid, "Guid", "System.Guid", type => new GuidValueHelper(type));
+            AddPostgreType(NpgsqlTypes.NpgsqlDbType.Uuid, "Guid", "System.Guid", type => new GuidV7ValueHelper(type), typeNamePostfix: "v7");
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Line, "NpgsqlLine", "NpgsqlTypes.NpgsqlLine", type => new NpgsqlLineValueHelper(type));
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Polygon, "NpgsqlPolygon", "NpgsqlTypes.NpgsqlPolygon", type => new NpgsqlPolygonValueHelper(type));
             AddPostgreType(NpgsqlTypes.NpgsqlDbType.Point, "NpgsqlPoint", "NpgsqlTypes.NpgsqlPoint", type => new NpgsqlPointValueHelper(type));
@@ -148,7 +149,8 @@ namespace TestsGenerator.Generators
             int size = -1,
             bool mustHaveSize = false,
             bool isReferenceType = false,
-            bool generateArray = true)
+            bool generateArray = true,
+            string typeNamePostfix = "")
         {
             _models.Add(new Model.NpgsqlModel(
                 npgsqlDbType,
@@ -158,7 +160,8 @@ namespace TestsGenerator.Generators
                 EnumerableType.SingleType,
                 size,
                 mustHaveSize,
-                isReferenceType));
+                isReferenceType,
+                typeNamePostfix: typeNamePostfix));
 
             if (generateArray)
             {
@@ -173,7 +176,8 @@ namespace TestsGenerator.Generators
                         size,
                         mustHaveSize,
                         isReferenceType,
-                        arrayDimensions: arrayDimensions));
+                        arrayDimensions: arrayDimensions,
+                        typeNamePostfix: typeNamePostfix));
                 }
 
                 _models.Add(new Model.NpgsqlModel(
@@ -184,7 +188,8 @@ namespace TestsGenerator.Generators
                     EnumerableType.List,
                     size,
                     mustHaveSize,
-                    isReferenceType));
+                    isReferenceType,
+                    typeNamePostfix: typeNamePostfix));
             }
         }
 
@@ -252,6 +257,7 @@ namespace TestsGenerator.Generators
             AddClickhouseType("String", "String", "System.String", (type) => new StringValueHelper(type));
             AddClickhouseType("IPv4", "IPAddress", "System.Net.IPAddress", (type) => new IPAddressValueHelper(type));
             AddClickhouseType("UUID", "Guid", "System.Guid", (type) => new GuidValueHelper(type));
+            AddClickhouseType("UUID", "Guid", "System.Guid", (type) => new GuidV7ValueHelper(type), typeNamePostfix: "v7");
         }
 
         private void AddClickhouseType(
@@ -263,7 +269,8 @@ namespace TestsGenerator.Generators
             bool mustHaveSize = false,
             bool isReferenceType = false,
             bool generateArray = true,
-            bool generateMap = true)
+            bool generateMap = true,
+            string typeNamePostfix = "")
         {
             _models.Add(new Model.ClickhouseModel(
                 clickhouseType,
@@ -273,7 +280,8 @@ namespace TestsGenerator.Generators
                 EnumerableType.SingleType,
                 size,
                 mustHaveSize,
-                isReferenceType));
+                isReferenceType,
+                typeNamePostfix: typeNamePostfix));
 
             if (generateArray)
             {
@@ -288,7 +296,8 @@ namespace TestsGenerator.Generators
                         size,
                         mustHaveSize,
                         isReferenceType,
-                        arrayDimensions: arrayDimensions));
+                        arrayDimensions: arrayDimensions,
+                        typeNamePostfix: typeNamePostfix));
                 }
             }
         }

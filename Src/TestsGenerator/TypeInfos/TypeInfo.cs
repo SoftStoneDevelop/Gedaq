@@ -16,11 +16,13 @@ namespace TestsGenerator.TypeInfos
             int size = -1,
             bool mustHaveSize = false,
             bool isReferenceType = false,
-            int arrayDimensions = 1)
+            int arrayDimensions = 1,
+            string typeNamePostfix = "")
         {
             DbType = dbType;
             DbSqlType = dbTypeStr;
             ItemTypeName = typeName;
+            ItemTypeNamePostfix = typeNamePostfix;
             ItemTypeFullName = typeFullName;
             IsReferenceType = isReferenceType;
 
@@ -83,6 +85,11 @@ namespace TestsGenerator.TypeInfos
         public readonly string ItemTypeName;
 
         public readonly string ItemTypeFullName;
+
+        /// <summary>
+        /// For Example Guid v4 and Guid v7 is Guid type but us need to separate tests
+        /// </summary>
+        public readonly string ItemTypeNamePostfix;
 
         public abstract string TypeName { get; }
 

@@ -14,7 +14,8 @@ namespace TestsGenerator.TypeInfos
             int size = -1,
             bool mustHaveSize = false,
             bool isReferenceType = false,
-            int arrayDimensions = 1) :
+            int arrayDimensions = 1,
+            string typeNamePostfix = "") :
             base(
                 clickHouseType.ToDbType(),
                 clickHouseType.ToDbSqlTableType(enumerableType, arrayDimensions),
@@ -24,7 +25,8 @@ namespace TestsGenerator.TypeInfos
                 size,
                 mustHaveSize,
                 isReferenceType,
-                arrayDimensions: arrayDimensions)
+                arrayDimensions: arrayDimensions,
+                typeNamePostfix: typeNamePostfix)
         {
             ClickHouseBaseType = clickHouseType;
         }

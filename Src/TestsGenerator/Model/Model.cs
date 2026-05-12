@@ -18,7 +18,7 @@ namespace TestsGenerator.Model
 
         public override string ClassName(bool isFlat, bool withDbTypeAttributes = false)
         {
-            return $"{ValueConstants.FlatModelPrefix(isFlat)}{TypeInfo.ItemTypeName}{TypeInfo.DbSqlTypeWithoutSpace()}E{(int)TypeInfo.EnumerableType}M{(withDbTypeAttributes ? "WA" : string.Empty)}";
+            return $"{ValueConstants.FlatModelPrefix(isFlat)}{TypeInfo.ItemTypeName}{TypeInfo.ItemTypeNamePostfix}{TypeInfo.DbSqlTypeWithoutSpace()}E{(int)TypeInfo.EnumerableType}M{(withDbTypeAttributes ? "WA" : string.Empty)}";
         }
 
         public override string TableName => ClassName(false).ToLowerInvariant();

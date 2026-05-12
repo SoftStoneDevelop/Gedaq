@@ -30,72 +30,34 @@ namespace Tests
         {
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 5,
+    Id = 8,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
+new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7161899029393756d, y: 0.43811005754858756d), radius: 0.02077359868537343d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4952128377039058d, y: 0.2439867227820326d), radius: 0.7913280230642201d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7605869427419314d, y: 0.3725990682718493d), radius: 0.878167401168677d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.15641782224877432d, y: 0.18438387023395575d), radius: 0.7761984650412567d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.17826414936138202d, y: 0.6935749128264505d), radius: 0.7870702482932922d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8107579629308371d, y: 0.7282407939425081d), radius: 0.038649661929110346d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9676580127795967d, y: 0.8857599515980492d), radius: 0.5817037132314912d),
 },
     ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 6,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.43555479381546947d, y: 0.054629526587242516d), radius: 0.0197398828075932d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.946592645791583d, y: 0.18243366001507133d), radius: 0.1501316880543836d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9959928098646875d, y: 0.45788699889404016d), radius: 0.07998078495142702d),
-},
-    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
-{
-    Id = 5,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.45493265111446823d, y: 0.46488402926521666d), radius: 0.7929327695280284d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4823743542937794d, y: 0.6837195775099787d), radius: 0.9572807334282794d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.22492981007731294d, y: 0.23036742597972504d), radius: 0.16740471034660875d),
-},
-    NullableValue = null,
-},
     NullableValue = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5623991017314789d, y: 0.2873201774565787d), radius: 0.6070097574938534d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6851332114481157d, y: 0.6126872770607134d), radius: 0.3150037632360243d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3822333024399105d, y: 0.11385918148337348d), radius: 0.9071285475798824d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8779788464748453d, y: 0.09294116574730216d), radius: 0.8792050605955234d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5417300782838329d, y: 0.5457952967024936d), radius: 0.24272852910701426d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5809731042887879d, y: 0.29476897907048216d), radius: 0.26004093393888505d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.773083023381655d, y: 0.8873793602926124d), radius: 0.40265796869253434d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.807379500112235d, y: 0.5184410152519456d), radius: 0.6925063688203488d),
 },
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 11,
+    Id = 15,
     Value = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.40172968526475583d, y: 0.6276923957295879d), radius: 0.32620482756670743d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3861226024223897d, y: 0.7304954897871333d), radius: 0.6212431127833301d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7021093313549042d, y: 0.33514282831327846d), radius: 0.020902008352544854d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1607802466543805d, y: 0.1940411205523721d), radius: 0.7027980581754258d),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 13,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.48344470824841845d, y: 0.9443423301378873d), radius: 0.9737621231569527d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6227924590557687d, y: 0.2706455589757495d), radius: 0.29330117910988285d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.40146608136597284d, y: 0.6307852274929258d), radius: 0.7782564237715535d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5381516570121173d, y: 0.017491516920649652d), radius: 0.03921178853862739d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7719243560391301d, y: 0.01578037477642913d), radius: 0.47348057181127556d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.980247844844751d, y: 0.9912606973655477d), radius: 0.39070137303733843d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8976725599500252d, y: 0.5528231173873974d), radius: 0.8482062644687368d),
 },
     ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
 {
@@ -103,10 +65,10 @@ new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4014660813
     Value = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5910029006954649d, y: 0.2847203423646727d), radius: 0.018313587530127462d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.023151371453765224d, y: 0.11444161050830104d), radius: 0.14935019830780905d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9614576707763496d, y: 0.7343224176289596d), radius: 0.15901393962881927d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9288668139215622d, y: 0.5044118646014508d), radius: 0.6422949377861354d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.24668358774138444d, y: 0.0766059023693918d), radius: 0.7366777082980313d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.968079939433973d, y: 0.4662995897570117d), radius: 0.09669747271117557d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6136155731343903d, y: 0.7783930580063307d), radius: 0.589532345092217d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.33863705239839037d, y: 0.6943530589289749d), radius: 0.6168727286484251d),
 },
     NullableValue = null,
 },
@@ -114,32 +76,33 @@ new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9288668139
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 17,
+    Id = 24,
     Value = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.794276025655921d, y: 0.6143010816000051d), radius: 0.825876038089443d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4522506223184368d, y: 0.8390051453288705d), radius: 0.5183121094474453d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.34415610315738887d, y: 0.02600081211602623d), radius: 0.6994310744047826d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7374681055411852d, y: 0.20461095027886356d), radius: 0.6802185075215504d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7438485087888652d, y: 0.4398633087221496d), radius: 0.06998353414369674d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5289247573339185d, y: 0.5742475956429295d), radius: 0.6000759676786133d),
 },
     ModelInner = null,
     NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[3]
+new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.18536784896825786d, y: 0.47507468800159236d), radius: 0.9978367943897989d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6889803587834706d, y: 0.34890481923993033d), radius: 0.6007414945993095d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.24672185700075333d, y: 0.25527948594541916d), radius: 0.16057455190973802d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.15256860906995262d, y: 0.6315924767200156d), radius: 0.9569651625457811d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2531012732289354d, y: 0.15058560202088167d), radius: 0.7056747112064268d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7854664535759697d, y: 0.5144470985890135d), radius: 0.860553005151008d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.20000575017148048d, y: 0.08228417964104107d), radius: 0.37776903287985963d),
 },
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 18,
+    Id = 29,
     Value = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7383998801670735d, y: 0.7209811751806376d), radius: 0.011227353138166252d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.12553521144413182d, y: 0.6284299108979537d), radius: 0.13952275573413642d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8904129981491379d, y: 0.6717354835514038d), radius: 0.8383153121034091d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3957536284306564d, y: 0.08457169797384612d), radius: 0.47211668493520464d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9510283779540064d, y: 0.7188221564065695d), radius: 0.2658499747222397d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.31164871333207966d, y: 0.35594631262985166d), radius: 0.8271650239294801d),
 },
     ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
 {
@@ -147,317 +110,319 @@ new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8904129981
     Value = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4787138227517207d, y: 0.8422624525488264d), radius: 0.4079445821199945d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.09994902624655078d, y: 0.15305926853389173d), radius: 0.05421854644149571d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7301429467347771d, y: 0.1656675221709094d), radius: 0.6103143383631418d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6762254038580195d, y: 0.6748001322248632d), radius: 0.7609584985061137d),
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 22,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6302986818083335d, y: 0.5034873133379788d), radius: 0.2444349238978628d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7979860311761109d, y: 0.12417379199406187d), radius: 0.7370045157871562d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9198250794374956d, y: 0.8233320980002189d), radius: 0.6222052850477154d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8358579128417681d, y: 0.14921400024326148d), radius: 0.184341439931628d),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 31,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.15112828476344287d, y: 0.5154341701658505d), radius: 0.6475906250210871d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5013104616399152d, y: 0.3101410246255192d), radius: 0.07356873732776992d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9776503407077407d, y: 0.0536327080460004d), radius: 0.17865181424554066d),
-},
-    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
-{
-    Id = 21,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.46726579374960964d, y: 0.5498747143240458d), radius: 0.8925290468032546d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.39664995877265197d, y: 0.4023721546555309d), radius: 0.9412113124279269d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.04476120917941351d, y: 0.7667980608397315d), radius: 0.417343954729289d),
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.30906519499813967d, y: 0.25809051750991685d), radius: 0.085704593341558d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.777806115076182d, y: 0.31343506703026813d), radius: 0.5168067993842068d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.134707273715161d, y: 0.9968028943481368d), radius: 0.830557089174558d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.04240874952731555d, y: 0.9807015135317121d), radius: 0.13757979573781198d),
-},
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 38,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2710091416922673d, y: 0.42345723453106365d), radius: 0.3538489298983478d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8524984746731858d, y: 0.40029657790940754d), radius: 0.792851558636354d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9176417516486706d, y: 0.010998199448980728d), radius: 0.470360261221032d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9596953366615959d, y: 0.7569385030510798d), radius: 0.06170852878647903d),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 39,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6726666238860388d, y: 0.7266086848077058d), radius: 0.3307928488699957d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.25829569590337675d, y: 0.5203350954304251d), radius: 0.7541790457314926d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3161056782360643d, y: 0.04471945493326768d), radius: 0.8232101744488021d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.19608788814480416d, y: 0.8745657944269382d), radius: 0.17002419981946593d),
-},
-    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
-{
-    Id = 27,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.629527797902007d, y: 0.9026025846640778d), radius: 0.3325838302434537d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.30598633821775834d, y: 0.6373986606552896d), radius: 0.8999726621998583d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7068270812112624d, y: 0.32425630974063346d), radius: 0.8449592682982878d),
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3710259751990145d, y: 0.2779176664684637d), radius: 0.2951459318939197d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1559308377999623d, y: 0.10601998917160294d), radius: 0.6185456286177837d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5010469262315437d, y: 0.19434250848058143d), radius: 0.3834523261886439d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.05079359458937627d, y: 0.3528636015291011d), radius: 0.3880286443645313d),
-},
-},
-    NullableValue = null,
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 41,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6824067356990429d, y: 0.673117277582994d), radius: 0.3189586834067727d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1418269870027702d, y: 0.2987438256660796d), radius: 0.19039114677807345d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.38724077912818655d, y: 0.2654180418734243d), radius: 0.8189672323464088d),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 44,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5871410683041085d, y: 0.5156034851099096d), radius: 0.09430625135300952d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.27962078492188547d, y: 0.010360900083310698d), radius: 0.24872003504950468d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3555937486647117d, y: 0.014363066142994985d), radius: 0.07711016193893283d),
-},
-    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
-{
-    Id = 31,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5201336246962022d, y: 0.14738679326679038d), radius: 0.7993697480462058d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7224991514711379d, y: 0.25713083157763894d), radius: 0.000940951255919753d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.18321398798787014d, y: 0.7922816556025168d), radius: 0.5388360504237157d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.536807374497069d, y: 0.7085295627632496d), radius: 0.06782766787734762d),
-},
-    NullableValue = null,
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7636534088301946d, y: 0.5737003627901552d), radius: 0.4053875845550339d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.24160087493652493d, y: 0.2812091216416699d), radius: 0.2926081912141749d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.36874953905262675d, y: 0.5096085917325482d), radius: 0.4342963323052912d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.18249319633299688d, y: 0.9769672507372015d), radius: 0.02431385996506852d),
 },
     NullableValue = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3111526850033657d, y: 0.45389108193335326d), radius: 0.6183646840181394d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5656603500249793d, y: 0.6001531570363698d), radius: 0.26835322215408763d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8684361888894148d, y: 0.42922512374343647d), radius: 0.7887112407776247d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9462001480108433d, y: 0.7514996190559368d), radius: 0.614065332268828d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3152315659269407d, y: 0.21440879932917856d), radius: 0.017646217189723146d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8145473580946053d, y: 0.6405027117228184d), radius: 0.7003154863759271d),
+},
+},
+    NullableValue = null,
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 33,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6947602040698273d, y: 0.411324319097667d), radius: 0.7650437649365484d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7325336202646243d, y: 0.8708226682734634d), radius: 0.8635983835091333d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5889707326473655d, y: 0.057467086096923525d), radius: 0.4681761521387262d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5843638142220896d, y: 0.1536257830986263d), radius: 0.026645243334773472d),
+},
+    ModelInner = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.13978778715606566d, y: 0.3969356276896685d), radius: 0.9440677354167074d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8604869758842834d, y: 0.7716339856318958d), radius: 0.03238549338097352d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9990103579717254d, y: 0.1096840071990185d), radius: 0.42202892627412614d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.016683669467224882d, y: 0.009496837090692267d), radius: 0.8899661407696996d),
+},
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 35,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[3]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8920286214385251d, y: 0.07969313295134228d), radius: 0.681038576038576d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2586428282822075d, y: 0.44634582964785174d), radius: 0.43895793959153295d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3481119796994018d, y: 0.5901823620779476d), radius: 0.16957385071057784d),
+},
+    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
+{
+    Id = 13,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9488792350194979d, y: 0.5459252413347246d), radius: 0.027552117093513462d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.40309691949073145d, y: 0.7367627539053376d), radius: 0.11983209708792919d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7368565215994227d, y: 0.9481253920251534d), radius: 0.37521937213692824d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.28201912889990155d, y: 0.3311469517417669d), radius: 0.9458134275075227d),
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlCircle[3]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.02075139938067161d, y: 0.5074636297241321d), radius: 0.09657499295814376d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.03592889727595949d, y: 0.45747213307817247d), radius: 0.8229351205116536d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4289525109608331d, y: 0.1767637878490591d), radius: 0.0702852033410648d),
+},
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlCircle[3]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.569928200364315d, y: 0.9232855687777964d), radius: 0.527848429048185d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.147525337248389d, y: 0.3637228763337048d), radius: 0.2281525875766126d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7374505991102729d, y: 0.6017757720219137d), radius: 0.46246770501556655d),
+},
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 43,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4170603188057943d, y: 0.7646768598760219d), radius: 0.19290732997542626d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8253331019916307d, y: 0.7282691384817013d), radius: 0.7906711114573155d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9997311941087438d, y: 0.6813179554613086d), radius: 0.6134909706157127d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7105295519428888d, y: 0.7502020861108534d), radius: 0.9547378077329542d),
+},
+    ModelInner = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.37009476434215305d, y: 0.9536234496034136d), radius: 0.8954881210774445d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.27742584233111456d, y: 0.32639695521053136d), radius: 0.2774542368630234d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4391527646015706d, y: 0.02852973338918796d), radius: 0.9545737903049465d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5386276848238051d, y: 0.20865070183081236d), radius: 0.7801869720682338d),
 },
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
     Id = 50,
     Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5215307734939861d, y: 0.35325258168858553d), radius: 0.5478402949209904d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.09513734792167194d, y: 0.40295152183968874d), radius: 0.6665708778567635d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.979882350093687d, y: 0.5557072017661321d), radius: 0.15908330209985888d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8414917211872819d, y: 0.1591999775081201d), radius: 0.3561183307814668d),
+},
+    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
+{
+    Id = 15,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5759626740351881d, y: 0.7775346831288488d), radius: 0.7431841750723307d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7432202825636208d, y: 0.19751595548923995d), radius: 0.28190380822944505d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7677600142423189d, y: 0.7269246676490337d), radius: 0.9651507961755049d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9348278204514163d, y: 0.9752962062115448d), radius: 0.13983124430039218d),
+},
+    NullableValue = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5623946589092905d, y: 0.6005554827553794d), radius: 0.6419909134133709d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9334876579157156d, y: 0.4178344094935923d), radius: 0.32182021610220246d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.34445564826184505d, y: 0.850251658499866d), radius: 0.8274969515948869d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4184040698490088d, y: 0.9340638211391808d), radius: 0.3711580726018079d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2553600019628697d, y: 0.2450149655181113d), radius: 0.25142223969678945d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.12829631682508225d, y: 0.6860195297946653d), radius: 0.6450078786625739d),
+},
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.006933351971690982d, y: 0.5668848498218622d), radius: 0.9825177003245954d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.36428303462260103d, y: 0.4289757845042005d), radius: 0.3889367209437099d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.817927906330233d, y: 0.4937461590033766d), radius: 0.30574595298288176d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3902933172322881d, y: 0.5688587087938282d), radius: 0.6098709413418743d),
+},
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 52,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[3]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5656081563786581d, y: 0.5166888511286698d), radius: 0.8348648564381405d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4457767883305841d, y: 0.2879644008039075d), radius: 0.838646315410598d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6755713433303341d, y: 0.788085754744987d), radius: 0.968768058800273d),
 },
     ModelInner = null,
     NullableValue = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8568336240963049d, y: 0.8899527886620886d), radius: 0.3721924336022717d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5153290416447012d, y: 0.10274046893722d), radius: 0.29309337689674864d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.40715275968812514d, y: 0.09700717527831193d), radius: 0.8778894667595973d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7898825992662899d, y: 0.510164365412848d), radius: 0.5775270877618961d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8297260419091388d, y: 0.08553682805741591d), radius: 0.20119617668015566d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.801558600726032d, y: 0.799891535809474d), radius: 0.9518904454571102d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.49899095102390223d, y: 0.8105227408630484d), radius: 0.8227137535668535d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.65087307203202d, y: 0.8694809364377418d), radius: 0.18131569516677903d),
 },
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 54,
+    Id = 59,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
+new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6889679640475452d, y: 0.9160314287201502d), radius: 0.01805893183758467d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5717123710831712d, y: 0.1992930344961309d), radius: 0.9372993443608377d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1646437666988877d, y: 0.08165385082657217d), radius: 0.77437660808729d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9873610004146844d, y: 0.5189560633432337d), radius: 0.6693493902855658d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.07239421191560624d, y: 0.724949963114739d), radius: 0.8238445472776134d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.07284515526506807d, y: 0.5527059304146694d), radius: 0.3731339300820886d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6010247018535703d, y: 0.6623193469381905d), radius: 0.23697061453315083d),
 },
     ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
 {
-    Id = 39,
+    Id = 23,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.20847700269379188d, y: 0.7151762729215864d), radius: 0.41025117919650356d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1378774726001254d, y: 0.7475338075132784d), radius: 0.5546823602298769d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6467517946418467d, y: 0.8010052030464238d), radius: 0.6479767817126475d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.26758545212172524d, y: 0.5650779026043516d), radius: 0.6499622353692383d),
-},
-    NullableValue = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8331192173851926d, y: 0.6644055321822944d), radius: 0.39509780036917985d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.29432534405536326d, y: 0.21553076211863598d), radius: 0.8909313454767909d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9214899938928014d, y: 0.08373404903173143d), radius: 0.8767157814886322d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5118930338051043d, y: 0.23344835555123045d), radius: 0.9208006923203906d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8175744248612881d, y: 0.2722605673596169d), radius: 0.3966487400741965d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5931726714516099d, y: 0.9578126878309113d), radius: 0.5237900814098869d),
 },
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 61,
+    Id = 67,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
+new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5453166750148558d, y: 0.12728211825319846d), radius: 0.8833024648140079d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9178759552176982d, y: 0.648949320359065d), radius: 0.4916085039110961d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.05085109791577891d, y: 0.5881383461015829d), radius: 0.3150782177747421d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3891611751712759d, y: 0.814575927533358d), radius: 0.7507077748062052d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7763812207269336d, y: 0.08933976050626402d), radius: 0.7715013612118284d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6948751496801321d, y: 0.9927458620507819d), radius: 0.9087419464725672d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3293796152485601d, y: 0.5563506348920715d), radius: 0.9313634092993988d),
 },
     ModelInner = null,
-    NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8053244352463662d, y: 0.8184432500735817d), radius: 0.16591512273775122d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.18448873158021317d, y: 0.9746142286960033d), radius: 0.9340022373709557d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6018785208730961d, y: 0.18330151367273217d), radius: 0.20819092912935633d),
-},
+    NullableValue = null,
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 66,
+    Id = 68,
     Value = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7299171992921368d, y: 0.18375311451280973d), radius: 0.7184186319417746d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5735352315135513d, y: 0.9777569158286092d), radius: 0.06899272063332695d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8177339477847443d, y: 0.6973304916427393d), radius: 0.7668593686167566d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1147533634593344d, y: 0.9056003051099603d), radius: 0.07888006536793624d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2718731562260681d, y: 0.12150669903778133d), radius: 0.9693228302024156d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5224083266796329d, y: 0.20302953395835288d), radius: 0.1380238201981724d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4746128295524705d, y: 0.7716974366485101d), radius: 0.8569060002659786d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.49062731605500165d, y: 0.5800817087863882d), radius: 0.24416254306751273d),
 },
     ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
 {
-    Id = 40,
+    Id = 31,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
+new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6162617616065479d, y: 0.6743406181352649d), radius: 0.106944333134812d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.323192743214213d, y: 0.402914441212185d), radius: 0.3132245048243185d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6698622353243012d, y: 0.1075532089626473d), radius: 0.3642018136964543d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3910839007148079d, y: 0.26890450237098407d), radius: 0.6869372592281756d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3287316854985579d, y: 0.5940866186635727d), radius: 0.023645440583003663d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9237221662971237d, y: 0.2558363538896594d), radius: 0.8135834624703533d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.34462680951200153d, y: 0.6953301052661474d), radius: 0.8523647181976269d),
 },
     NullableValue = null,
 },
     NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[4]
+new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6520722965073273d, y: 0.4191795854043835d), radius: 0.6135367978531261d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.40334130377129496d, y: 0.8614577820526405d), radius: 0.919816534773739d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2813254545562871d, y: 0.7475859859959663d), radius: 0.04023047675454705d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7326915720966903d, y: 0.6564966858651639d), radius: 0.42419616600121457d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6252617367061964d, y: 0.8494325375897299d), radius: 0.27064918758361767d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8684674599960225d, y: 0.8372425226977719d), radius: 0.050279689623659696d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.35950320530218627d, y: 0.7010463082405772d), radius: 0.8049226537177139d),
 },
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 73,
+    Id = 75,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
+new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9215482922570081d, y: 0.7568811268956676d), radius: 0.09708182029349688d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.33661064952327147d, y: 0.08208471853008015d), radius: 0.9176403433244394d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2044034499014188d, y: 0.5300511441808667d), radius: 0.3917617204911952d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7272336389469668d, y: 0.6804802305344431d), radius: 0.39953033932979043d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4560218869114977d, y: 0.13248747444516185d), radius: 0.4768621906807087d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9083585617232518d, y: 0.9626488154739237d), radius: 0.37534994997531956d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.28121252135949226d, y: 0.6687868600425407d), radius: 0.8749188256059063d),
 },
     ModelInner = null,
-    NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2828459015760443d, y: 0.7089080521328421d), radius: 0.4615505621191959d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.03339779393382036d, y: 0.2170678365830423d), radius: 0.04056944215293312d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7984804182170081d, y: 0.5253604518823792d), radius: 0.2771000335279714d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.36683282050940647d, y: 0.2899888640206123d), radius: 0.19019859139743334d),
-},
+    NullableValue = null,
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 81,
+    Id = 82,
     Value = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9983431475473225d, y: 0.08822198614638155d), radius: 0.5768700084986756d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6725004966920173d, y: 0.18727131337093594d), radius: 0.9343506691750768d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.957286323133554d, y: 0.4284788290897017d), radius: 0.5835232322628296d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8684698166929234d, y: 0.42833400763423657d), radius: 0.2217242587030256d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8379192838925562d, y: 0.15398950800909605d), radius: 0.23260859845322546d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.652624075270673d, y: 0.8973286616447712d), radius: 0.454877194914047d),
 },
     ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
 {
-    Id = 42,
+    Id = 37,
     Value = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9770155058905883d, y: 0.39105475005071877d), radius: 0.9686972303286508d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6931353112526298d, y: 0.27698422659426947d), radius: 0.9366407593228442d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9147679084567261d, y: 0.8257114286706543d), radius: 0.3971796509835218d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.08738487778194137d, y: 0.2413126319303175d), radius: 0.2929104877769867d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6049682635526028d, y: 0.41054242078596315d), radius: 0.6847515818496608d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1709501188452699d, y: 0.3610439774702314d), radius: 0.3217676129850735d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.09248442343253305d, y: 0.04525938863300516d), radius: 0.8307651406934815d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2263345441031499d, y: 0.29249215752135194d), radius: 0.5729677361236027d),
 },
     NullableValue = null,
 },
+    NullableValue = null,
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 85,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6328121451227449d, y: 0.9503283188003299d), radius: 0.9509292981664808d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7545408445985345d, y: 0.18846595596665217d), radius: 0.7582587496634285d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8938548206183312d, y: 0.6877571505166135d), radius: 0.5836471120308335d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.24874599195326053d, y: 0.5774465600383358d), radius: 0.22307977280343438d),
+},
+    ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
     Id = 87,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
+new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.30366489593144785d, y: 0.43500714119489525d), radius: 0.9537571438847506d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.691465443406151d, y: 0.46699159322346995d), radius: 0.16801486536763d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5105915392418542d, y: 0.020101557701033834d), radius: 0.9488255952985778d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7916707018558177d, y: 0.533759003258486d), radius: 0.7286990457827173d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7299805809521973d, y: 0.4443690918648937d), radius: 0.7675521674412484d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.657892294400048d, y: 0.6484060847987017d), radius: 0.955313113175389d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7263596560011198d, y: 0.2164558074578743d), radius: 0.25642798863859284d),
 },
-    ModelInner = null,
+    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
+{
+    Id = 40,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3564479160337528d, y: 0.848256927718514d), radius: 0.5902736359212336d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6411256177259519d, y: 0.15327194638292796d), radius: 0.9104747911353338d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9670276179824238d, y: 0.2593207945135204d), radius: 0.8848221684790474d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2727354588402765d, y: 0.8210676326794678d), radius: 0.822049865670028d),
+},
     NullableValue = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.20914132517365014d, y: 0.09581448285910243d), radius: 0.264236489680046d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3399043661099439d, y: 0.5692970037800611d), radius: 0.6100963890033074d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.23565937397042125d, y: 0.6517750848957544d), radius: 0.4154798314024548d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.08361699160962233d, y: 0.47846231518987903d), radius: 0.16611200942860727d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.21243642835242138d, y: 0.9223468021517001d), radius: 0.09978298664570973d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.23347662315397721d, y: 0.9653079047061673d), radius: 0.7263648563057626d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6196908516557939d, y: 0.9462502024610786d), radius: 0.31079314191277974d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5724321694332596d, y: 0.19124056355614305d), radius: 0.0002424940439540446d),
+},
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5807853857907881d, y: 0.9718830873280419d), radius: 0.7741781978740249d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.12147298570533838d, y: 0.7694958832806112d), radius: 0.8607581922982865d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3686884897654955d, y: 0.9319292468068392d), radius: 0.13086823974792405d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9641587435767731d, y: 0.7057252624363854d), radius: 0.1965739443165695d),
 },
 },
             new NpgsqlCirclecircleMMArrayD1E1M
@@ -466,203 +431,310 @@ new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.0836169916
     Value = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2818572466956044d, y: 0.08068130519404504d), radius: 0.04005190251708213d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7307374718855877d, y: 0.4985985331755991d), radius: 0.17018215263934522d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5358744628805944d, y: 0.3617397262427453d), radius: 0.6089825976005462d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.051840998703856944d, y: 0.28215958381124107d), radius: 0.2336071390767881d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1405713249577858d, y: 0.18125012003295915d), radius: 0.6727150184898589d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.045644318185334654d, y: 0.7537640782016577d), radius: 0.40095604485358904d),
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 98,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.047314183735281734d, y: 0.019475038036157244d), radius: 0.26316088371041757d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.271643987438536d, y: 0.6308273957504549d), radius: 0.8768699645798783d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.01811781305642135d, y: 0.2253721099045355d), radius: 0.6255264770798289d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4220463989564921d, y: 0.8967002960619778d), radius: 0.7258297693541643d),
+},
+    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
+{
+    Id = 42,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.804301914386089d, y: 0.9915523656082748d), radius: 0.1523649364606161d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5631838773273738d, y: 0.34463172029481515d), radius: 0.5439351783119096d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.34681352002522803d, y: 0.1835749946562314d), radius: 0.5672657212392533d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3450112853899997d, y: 0.4145763617145276d), radius: 0.9411567187754154d),
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3747201103461686d, y: 0.6263865566075334d), radius: 0.865202755780264d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.10543448646739795d, y: 0.4306133099200342d), radius: 0.4996154150960559d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5286981176142627d, y: 0.7007634283693116d), radius: 0.7404456728081134d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1767757256625273d, y: 0.5877272343550793d), radius: 0.2639846188600402d),
+},
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7740176052442735d, y: 0.6443963511810954d), radius: 0.026225351066788583d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.023600717897331647d, y: 0.5138734756598523d), radius: 0.7831404822642292d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.46451508174251965d, y: 0.5293802713102058d), radius: 0.4203485097887284d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.40698979524838474d, y: 0.7994816243405469d), radius: 0.7820433498865167d),
+},
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 104,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5421636940389563d, y: 0.826674751322744d), radius: 0.0789117472531089d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3232081200788649d, y: 0.0566182850163337d), radius: 0.6219739313174463d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6486990337965373d, y: 0.05892148674343145d), radius: 0.2711664224861966d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.007263253334590547d, y: 0.6590672284722264d), radius: 0.675576314706799d),
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 105,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8495453517009485d, y: 0.7185764756528827d), radius: 0.6291671997999034d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.29621871522797427d, y: 0.2454219514862772d), radius: 0.6238189351356432d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4206150054768846d, y: 0.5086748480047d), radius: 0.3544889943690833d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.980806335977937d, y: 0.7469371887553812d), radius: 0.6569095604598897d),
 },
     ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
 {
     Id = 47,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.22938194963500613d, y: 0.7798537910760783d), radius: 0.7572053271491813d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8313084604441994d, y: 0.38909989080480945d), radius: 0.39343104528628026d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9424918440744642d, y: 0.9503895263531095d), radius: 0.750324079995409d),
-},
-    NullableValue = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9133234462731009d, y: 0.7312463177545119d), radius: 0.259050314713857d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7521664619469971d, y: 0.5089476913822316d), radius: 0.3086899498783464d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.12380436659204919d, y: 0.9365264641080906d), radius: 0.1715581530264635d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.23825302997970843d, y: 0.7464261204968881d), radius: 0.22083749302964628d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.49687815584974315d, y: 0.6190931609401221d), radius: 0.6898887208617446d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9738607690174004d, y: 0.05589435134813381d), radius: 0.9916778525566052d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3180490859074928d, y: 0.4824291694371914d), radius: 0.8728727354274117d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5359698409980803d, y: 0.2978190659426754d), radius: 0.4855562812180304d),
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlCircle[3]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.39891513671764367d, y: 0.05970436073700136d), radius: 0.8631240674308045d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6807388952044602d, y: 0.8715512452616787d), radius: 0.5103818203640851d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.563316982322418d, y: 0.601076345591863d), radius: 0.7083289178486899d),
 },
 },
     NullableValue = null,
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 100,
+    Id = 109,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
+new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.09548510587908143d, y: 0.1306823593953954d), radius: 0.4813925649763069d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.06454541884775766d, y: 0.2946603052167782d), radius: 0.9310119108267426d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.19558809462300886d, y: 0.18919869013614787d), radius: 0.6224859374245089d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.02878844644753431d, y: 0.5926700808964309d), radius: 0.9057401763590446d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6434165221708676d, y: 0.766566794356637d), radius: 0.041793189725453095d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6919415250453534d, y: 0.860883509729182d), radius: 0.2290369072347176d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.041896058277507975d, y: 0.2481328680963144d), radius: 0.7384815595099168d),
 },
     ModelInner = null,
     NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[3]
+new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.18273689544328742d, y: 0.12302931717052945d), radius: 0.18977400266399647d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7255614578552747d, y: 0.9713595141243836d), radius: 0.18226032196680675d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5609903215770122d, y: 0.22389355498617636d), radius: 0.2919282388365353d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.42073055668444337d, y: 0.8218101928019866d), radius: 0.10011255278867559d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.35041700313691904d, y: 0.997393039472297d), radius: 0.5530623443133227d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4842893941242512d, y: 0.6045775358369293d), radius: 0.982848127408767d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.48858663485665255d, y: 0.5784015373584955d), radius: 0.9590696360718424d),
 },
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 106,
+    Id = 110,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
+new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6453481578604195d, y: 0.4267912618008405d), radius: 0.12845433834640752d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3183120384215551d, y: 0.3486958353131143d), radius: 0.7666343386670569d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.011709247417550639d, y: 0.6736034651036993d), radius: 0.7421639984367973d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2650559222690071d, y: 0.2719534701750048d), radius: 0.08444894837070349d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.21249141387226422d, y: 0.8196672775516338d), radius: 0.44684882200117204d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.005112001207448591d, y: 0.4211729261441546d), radius: 0.4529678694237056d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.01012915395912306d, y: 0.18228434899803447d), radius: 0.7033446548970073d),
 },
     ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
 {
-    Id = 50,
+    Id = 56,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6307038414607737d, y: 0.9885116001754701d), radius: 0.7535740026066431d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2861091422130718d, y: 0.2666406665166047d), radius: 0.6915639712196379d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1221360487983777d, y: 0.5876246466780994d), radius: 0.7418886025210599d),
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.19843559816327494d, y: 0.7208148184845256d), radius: 0.8672896345404069d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.40862999335662287d, y: 0.6365149040242676d), radius: 0.3168925227435416d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.641531024440735d, y: 0.1648470029432061d), radius: 0.252725974702378d),
-},
-},
-    NullableValue = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.12637429615393003d, y: 0.418690122765629d), radius: 0.8205105283937277d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7552388751996534d, y: 0.3768848225940701d), radius: 0.39936446170249507d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7445079538591178d, y: 0.1954204013664289d), radius: 0.4955818210805293d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7314955929154633d, y: 0.3755360531602381d), radius: 0.9190679574178442d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.29135577719879246d, y: 0.6247249224810052d), radius: 0.9525390941550217d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.14536989553113078d, y: 0.8712421146695591d), radius: 0.24831161232599464d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.25191934121676485d, y: 0.5467471740681856d), radius: 0.16594383946784996d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2256703526987066d, y: 0.5481098810875582d), radius: 0.06664390665545628d),
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlCircle[3]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7599017543546205d, y: 0.9990151555048081d), radius: 0.948467301831723d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7003902181140707d, y: 0.9662994699637542d), radius: 0.9408728385115612d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.04909695560709537d, y: 0.9045401576756505d), radius: 0.47665259831862516d),
 },
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 113,
+    Id = 119,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
+new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.03343385106625951d, y: 0.2642669788642392d), radius: 0.7883460307178349d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8685635751034108d, y: 0.300568368875879d), radius: 0.5606959595864733d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7564196155590422d, y: 0.3507237390269302d), radius: 0.06272978788159889d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8702569540290425d, y: 0.45234245066610634d), radius: 0.4470102430043532d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7939461368136211d, y: 0.2741428150677211d), radius: 0.8540224956213243d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.27652136102058045d, y: 0.3843389488646981d), radius: 0.570619662043323d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4704002954809591d, y: 0.6161288860072418d), radius: 0.18386632634267808d),
 },
     ModelInner = null,
     NullableValue = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5423208960613818d, y: 0.4499606778952132d), radius: 0.19035701227769852d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.21516788516113783d, y: 0.3226937793868133d), radius: 0.9482805972936544d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9635036328223714d, y: 0.9615783828238338d), radius: 0.9272189577155113d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8462295296708477d, y: 0.9824373833143683d), radius: 0.6903882226925849d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5735616071661251d, y: 0.17732762782559963d), radius: 0.8421518797281103d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.36502093747931774d, y: 0.4936194166912017d), radius: 0.8315342929915901d),
 },
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
     Id = 120,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
+new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.021469834065974802d, y: 0.2076288797755319d), radius: 0.5961814981747291d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.029551280910613542d, y: 0.2860515806584595d), radius: 0.39292712713666567d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.36251041097424175d, y: 0.17423140159062722d), radius: 0.62104204795515d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7610784056122993d, y: 0.4952724952761808d), radius: 0.15564339541739347d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7901512641732887d, y: 0.759498189368877d), radius: 0.9984755237529682d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6909074360824677d, y: 0.8116260569691468d), radius: 0.16141056645945062d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6743755795017699d, y: 0.9572966042147377d), radius: 0.16078161339456232d),
 },
     ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
 {
-    Id = 57,
+    Id = 60,
     Value = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.08879238902322895d, y: 0.5698917475695878d), radius: 0.15795181071486442d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7988968781843373d, y: 0.16742883711771195d), radius: 0.2125623646236765d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8810420221533279d, y: 0.4791033591556335d), radius: 0.866771312125982d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.40939718780541445d, y: 0.61920441131663d), radius: 0.03768503744502394d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.870835805677189d, y: 0.3443602923300402d), radius: 0.12845162387242015d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5387441031807653d, y: 0.8129968682941074d), radius: 0.18962943807159027d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3607152936665535d, y: 0.9637154046818256d), radius: 0.5610742037354952d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5130211576049444d, y: 0.8740370408911032d), radius: 0.5489161360927934d),
 },
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 127,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8919717186209366d, y: 0.7655598685761921d), radius: 0.2959641144404188d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7782621529690845d, y: 0.6054729424915172d), radius: 0.8726495927688296d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4242699196512547d, y: 0.0632805937313381d), radius: 0.825135297774397d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9655211270810273d, y: 0.46334070614672196d), radius: 0.6219576041054737d),
-},
-    ModelInner = null,
     NullableValue = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7941439065414251d, y: 0.8047774842103003d), radius: 0.9311275586867559d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8033186898509966d, y: 0.4599514951218636d), radius: 0.1692650611769616d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6547716494965886d, y: 0.5703110234665641d), radius: 0.0042443725727010495d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6814853501548882d, y: 0.09198971529078592d), radius: 0.8469883740706615d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.47175744725628366d, y: 0.1952275255854351d), radius: 0.8828703733020443d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1445076073028566d, y: 0.28222356268503146d), radius: 0.6612874223949429d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9849601541678523d, y: 0.120649995884616d), radius: 0.0034989900687859565d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6598265740268416d, y: 0.1468391306327782d), radius: 0.6548707022459526d),
+},
+},
+    NullableValue = null,
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 121,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.28185428150647274d, y: 0.8712309678436352d), radius: 0.35994315108673103d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.748156443376728d, y: 0.6382691330602803d), radius: 0.5645582876919779d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4653461057081162d, y: 0.3546459464543338d), radius: 0.9516043186634748d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.27522835807239787d, y: 0.9462884752343008d), radius: 0.1346655744726567d),
+},
+    ModelInner = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlCircle[3]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6549198252329183d, y: 0.09682223276279378d), radius: 0.15994060503356677d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1973766508220396d, y: 0.650534256045379d), radius: 0.7550004532522776d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8135238469247593d, y: 0.3167031574735457d), radius: 0.4430821433368669d),
 },
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 130,
+    Id = 124,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
+new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7508288226694357d, y: 0.3310200939270548d), radius: 0.0721117639603841d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9986134038663238d, y: 0.6707566775843699d), radius: 0.4413251834666103d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9751595802493656d, y: 0.8842318625236906d), radius: 0.7110927004155977d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.15776125377758154d, y: 0.014562789832696654d), radius: 0.24685915169607664d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.19289421529089035d, y: 0.04225354729967623d), radius: 0.08092948941799338d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5263814778473207d, y: 0.8496724496093567d), radius: 0.40020944812282366d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9011466596740151d, y: 0.8193309654446447d), radius: 0.8611058922013773d),
 },
     ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
 {
-    Id = 65,
+    Id = 66,
     Value = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3805613331168731d, y: 0.32233978072370706d), radius: 0.8296646382386695d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9668623656762901d, y: 0.20150150970762104d), radius: 0.9349144080323797d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4455106876034939d, y: 0.5669895491119441d), radius: 0.22708232393902428d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.32287852425840347d, y: 0.32474894313854186d), radius: 0.928556900259417d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.08877071472429165d, y: 0.6880037521477894d), radius: 0.5994859298952233d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.40610230184734175d, y: 0.632402661159391d), radius: 0.2759817493050627d),
+},
+    NullableValue = null,
 },
     NullableValue = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.42254999817552596d, y: 0.0612549826766704d), radius: 0.8734127631218482d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9036311488697467d, y: 0.19000639657074458d), radius: 0.6005067448563169d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5267965191448266d, y: 0.8222420117144964d), radius: 0.22667537422555395d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.14121566518137219d, y: 0.14382913602385805d), radius: 0.8114185249697012d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.055197122724059966d, y: 0.07621770668748995d), radius: 0.5297708771662132d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8037459495139512d, y: 0.3633230638911742d), radius: 0.14191236865577106d),
 },
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 128,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7721516767167816d, y: 0.7605590801115091d), radius: 0.18451405712409308d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1320190231102768d, y: 0.8923430630493645d), radius: 0.9386153138005578d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4488982414717092d, y: 0.16583164165910502d), radius: 0.9951180698296781d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2507184280995407d, y: 0.12513767065387704d), radius: 0.7455124332699179d),
+},
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 131,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.07328644607220358d, y: 0.7974298632312267d), radius: 0.45347706375647745d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3195522217419403d, y: 0.2757102294391406d), radius: 0.21024965185459488d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4073348036733333d, y: 0.11159141005999684d), radius: 0.9752026984808227d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.18389455089415918d, y: 0.4410291243741008d), radius: 0.41160457007057816d),
+},
+    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
+{
+    Id = 75,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[3]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9352620023693018d, y: 0.5311089280103527d), radius: 0.4146492153750182d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8509877647972002d, y: 0.6973457078935292d), radius: 0.4592758140289912d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.30591773025987357d, y: 0.21312903359070512d), radius: 0.5251791438081653d),
+},
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 133,
+    Id = 138,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
+new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.47418763464614333d, y: 0.820532450792111d), radius: 0.9888775510931744d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8070189708456682d, y: 0.08234495220032267d), radius: 0.4971452917388911d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7619978349784527d, y: 0.8940988473976113d), radius: 0.8818761348098676d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7112594175982198d, y: 0.8011821399977839d), radius: 0.6721279665313484d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8519145938146884d, y: 0.6887523615855773d), radius: 0.9183864941277349d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.15306478078234964d, y: 0.8270292536232084d), radius: 0.727887827319898d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6909330665489407d, y: 0.6757717484585866d), radius: 0.12872055232888713d),
 },
     ModelInner = null,
     NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[4]
+new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9449897584018534d, y: 0.657443973811732d), radius: 0.9506826680447547d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7587552258512544d, y: 0.2611781421088484d), radius: 0.6804009231873547d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.033391975455049905d, y: 0.6115479436189108d), radius: 0.3188598011845801d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.20573252370478134d, y: 0.8899702603487922d), radius: 0.389392100743284d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.31260409205930484d, y: 0.9327580604719281d), radius: 0.4297578276289432d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8224257568849165d, y: 0.3810310568783536d), radius: 0.16077901614507095d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5035814511207456d, y: 0.7558395704452247d), radius: 0.3002147134602078d),
 },
 },
             new NpgsqlCirclecircleMMArrayD1E1M
@@ -671,57 +743,115 @@ new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2057325237
     Value = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1503587916154865d, y: 0.8773861824994083d), radius: 0.6373352883271461d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.24005878264732416d, y: 0.6684937887696074d), radius: 0.9187827025615978d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.42121750044690487d, y: 0.4485942066162343d), radius: 0.21194701523325143d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.08009792554535067d, y: 0.352506183384489d), radius: 0.6474837115453455d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6873716591532536d, y: 0.6719683294009824d), radius: 0.3483417514108528d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.20859384215753007d, y: 0.7853488788459557d), radius: 0.11783771428925272d),
 },
     ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
 {
-    Id = 66,
+    Id = 78,
     Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
+new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4439981360794635d, y: 0.6755504738018642d), radius: 0.38563625827017023d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.17316075430938982d, y: 0.9324646350514129d), radius: 0.12979923927526316d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.20984963501812992d, y: 0.4059681332124403d), radius: 0.18737195783038274d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.17596939231424724d, y: 0.25709309976903394d), radius: 0.6890598695025634d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8317225342756248d, y: 0.34793115234008076d), radius: 0.6752193198140187d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.43671805318149515d, y: 0.5005425766524814d), radius: 0.6110415081103712d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.15963970658229132d, y: 0.019435683944589388d), radius: 0.4680750347784748d),
+},
+    NullableValue = null,
 },
     NullableValue = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4374846250905101d, y: 0.3152146602659307d), radius: 0.2512695215074081d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.11329432141691387d, y: 0.49581205506991477d), radius: 0.4354923470559854d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8684015950048175d, y: 0.21692566123172163d), radius: 0.18977161652787433d),
-},
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6966538405181905d, y: 0.1134811835057512d), radius: 0.5254543876240895d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5080858681106162d, y: 0.5529891169008125d), radius: 0.6877621948597817d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5585529808409772d, y: 0.2132120643287868d), radius: 0.28380230361667735d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.018089759414802176d, y: 0.1362958720187225d), radius: 0.9181566537600372d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.15897838110011286d, y: 0.9456471795089231d), radius: 0.2387994726401378d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2529550728468267d, y: 0.07533253124767647d), radius: 0.11236658830984714d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3882498725321638d, y: 0.21742114356529563d), radius: 0.3591194349351622d),
 },
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
-    Id = 142,
+    Id = 141,
     Value = 
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2337324923557058d, y: 0.09778109664634271d), radius: 0.7656271694515684d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7381150147658053d, y: 0.3055426984117965d), radius: 0.6452242340196297d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5950747203759121d, y: 0.4902627106355544d), radius: 0.35784033262496984d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.740060075488894d, y: 0.30327955743731416d), radius: 0.6677826809647497d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3579469737336489d, y: 0.5615101968594558d), radius: 0.29126737283678417d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7857864324563223d, y: 0.5501960789823629d), radius: 0.4841225231038926d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9435161829217114d, y: 0.6307838915638454d), radius: 0.028856220879721617d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.39566577899729605d, y: 0.8400790699415543d), radius: 0.5012835903278657d),
 },
     ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 143,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8862484165589674d, y: 0.46490423572303907d), radius: 0.31516222286774564d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5479142549013052d, y: 0.3372484116240023d), radius: 0.5032278156429622d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.16405957862500975d, y: 0.8131210874406389d), radius: 0.5923584957202302d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.036754299220975395d, y: 0.21391180547784638d), radius: 0.9705123190725976d),
+},
+    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
+{
+    Id = 82,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.35380844207315754d, y: 0.9234957392841373d), radius: 0.23343753594442918d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.17452489950969885d, y: 0.7458720955299425d), radius: 0.20373044967323262d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8639909261828727d, y: 0.15135340795597219d), radius: 0.45242885632762186d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8729848104926576d, y: 0.549359782138592d), radius: 0.6644798231622829d),
+},
+    NullableValue = null,
+},
     NullableValue = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9343314068664917d, y: 0.3645760170895618d), radius: 0.08148222590346621d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.23182603265730106d, y: 0.30246123897540833d), radius: 0.5163376441587093d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.0824038556299812d, y: 0.19980486815293652d), radius: 0.9696616291686534d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5576751902375623d, y: 0.23968655785473525d), radius: 0.8142584212686823d),
+},
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 145,
+    Value = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6024915907548979d, y: 0.7888565300310612d), radius: 0.8305726973842562d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9270617544586499d, y: 0.9791838755084148d), radius: 0.8774775826326505d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7597562149916196d, y: 0.09708890272117221d), radius: 0.10323210124634097d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.020046571831016102d, y: 0.7418149098743263d), radius: 0.6251213509480134d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6383726386552951d, y: 0.9660832282477227d), radius: 0.7233199048268376d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4969046394595845d, y: 0.64721612798871d), radius: 0.47508293418473424d),
 },
+    ModelInner = null,
+    NullableValue = null,
+},
+            new NpgsqlCirclecircleMMArrayD1E1M
+{
+    Id = 148,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7585110925709944d, y: 0.7309491873844426d), radius: 0.32690572642273663d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.20784625334258067d, y: 0.6117520962893166d), radius: 0.4194376299867494d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4015797997635061d, y: 0.5671231022149463d), radius: 0.04625362217467832d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.1743279136307717d, y: 0.5342252786382327d), radius: 0.7350759771626243d),
+},
+    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
+{
+    Id = 83,
+    Value = 
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.04495687580437102d, y: 0.15429993528356634d), radius: 0.00039556320911049436d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.32168122688787437d, y: 0.9635639401855975d), radius: 0.16616389881148907d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.30866052867917737d, y: 0.6155547438979697d), radius: 0.9655307659430006d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3594688313590536d, y: 0.08704609765961269d), radius: 0.6664496529334281d),
+},
+    NullableValue = null,
+},
+    NullableValue = null,
 },
             new NpgsqlCirclecircleMMArrayD1E1M
 {
@@ -729,141 +859,9 @@ new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7597562149
     Value = 
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.902579751260661d, y: 0.4473657559642291d), radius: 0.023471932065966317d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.006946913327172233d, y: 0.4907803856486136d), radius: 0.06955438311355722d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.15382927865447538d, y: 0.005394193554405291d), radius: 0.8399188088487479d),
-},
-    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
-{
-    Id = 68,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8958105378754498d, y: 0.7820201076346033d), radius: 0.37678982411735706d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.530292877702802d, y: 0.7377550626016194d), radius: 0.3216283966511705d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.781007558882382d, y: 0.5111351510152302d), radius: 0.32017547867740614d),
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8245841289374215d, y: 0.453757935827968d), radius: 0.976782050333734d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.05361088302315897d, y: 0.22018601746768762d), radius: 0.4005435297311656d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3434465453733061d, y: 0.0002693522659611425d), radius: 0.8715077226649897d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.12479729352170288d, y: 0.18170112737868105d), radius: 0.8809433254720661d),
-},
-},
-    NullableValue = null,
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 150,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7118465177055253d, y: 0.7449635088599619d), radius: 0.39622482254765057d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.34088778383304674d, y: 0.4545232206833034d), radius: 0.7025311418312283d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.07704199008189416d, y: 0.3217399981309045d), radius: 0.16780990143287522d),
-},
-    ModelInner = null,
-    NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5328523958969003d, y: 0.12313964173365277d), radius: 0.15001297048433104d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6289245550104073d, y: 0.052244787097501244d), radius: 0.21477027395090598d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.04765922128990263d, y: 0.6446660880784975d), radius: 0.11418290216391047d),
-},
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 153,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7810139591455928d, y: 0.009508144760583481d), radius: 0.034783925898049906d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3237231894358612d, y: 0.05363853085357195d), radius: 0.044999466304220914d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.30742003080742497d, y: 0.3586871368935538d), radius: 0.25508954974506914d),
-},
-    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
-{
-    Id = 70,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.13107076344961843d, y: 0.22015877971416553d), radius: 0.1584764523817419d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.20815324134662716d, y: 0.43247041602536973d), radius: 0.2930426822951889d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6864618513043373d, y: 0.31078938273299805d), radius: 0.629051431324575d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6837468860327109d, y: 0.41808785008884775d), radius: 0.6275747366030754d),
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9297853264322513d, y: 0.722200291569976d), radius: 0.06865170953279698d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7992568370782521d, y: 0.2446092220635262d), radius: 0.028657761457518416d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6976878016405593d, y: 0.8138374792013516d), radius: 0.1530631279541652d),
-},
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.381435751588703d, y: 0.6622341877462781d), radius: 0.27567143841556796d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4412892374880645d, y: 0.5355402911194299d), radius: 0.7760314882431907d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7004059241830842d, y: 0.09594928121343749d), radius: 0.22390568987499748d),
-},
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 159,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.012481263528992703d, y: 0.10472685049969466d), radius: 0.6200853457878364d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7097753199289992d, y: 0.12313712484808115d), radius: 0.8448814407414568d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.32162228175198915d, y: 0.6019638088679354d), radius: 0.5804765825542335d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2725313033275355d, y: 0.6175525746082895d), radius: 0.6096907015719425d),
-},
-    ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 163,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[4]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.030929162467352334d, y: 0.12300979435099801d), radius: 0.08212568202539061d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.15030993994186725d, y: 0.35947369454873d), radius: 0.7871104027111618d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.332373552536789d, y: 0.3810324755049521d), radius: 0.1368118002071781d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8360419406711901d, y: 0.09712974794040119d), radius: 0.7811473593088574d),
-},
-    ModelInner = new NpgsqlCirclecircleMMArrayD1E1MI
-{
-    Id = 75,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2553843817074507d, y: 0.022357332028906662d), radius: 0.2972279383345303d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7475411237239917d, y: 0.04084227145462438d), radius: 0.6035642036353884d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5818932245793638d, y: 0.015366781817206632d), radius: 0.8116363614539688d),
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.28749619082819944d, y: 0.33089801447780964d), radius: 0.3414472119856373d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.24477661859380073d, y: 0.6280764183142279d), radius: 0.10722334157455782d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5678078426518407d, y: 0.5685094162252475d), radius: 0.7987486111463113d),
-},
-},
-    NullableValue = null,
-},
-            new NpgsqlCirclecircleMMArrayD1E1M
-{
-    Id = 168,
-    Value = 
-new NpgsqlTypes.NpgsqlCircle[3]
-{
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6650435857632279d, y: 0.4330196995304858d), radius: 0.1524110790357669d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8499791589881055d, y: 0.7468502617214768d), radius: 0.5385788346320155d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8301778714063379d, y: 0.05256766256085499d), radius: 0.47222702367980374d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.23235622570386605d, y: 0.7065585635498172d), radius: 0.5826642842427721d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.26856508178177385d, y: 0.5374638464346605d), radius: 0.42947396542471683d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6014858467192171d, y: 0.8634533731662353d), radius: 0.40339383778240323d),
 },
     ModelInner = null,
     NullableValue = null,
@@ -1213,11 +1211,12 @@ RETURNING
                 }
                 Assert.That(nullable, Is.Not.Null);
                 Assert.That(nullable, Is.EqualTo(
-new NpgsqlTypes.NpgsqlCircle[3]
+new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.18536784896825786d, y: 0.47507468800159236d), radius: 0.9978367943897989d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6889803587834706d, y: 0.34890481923993033d), radius: 0.6007414945993095d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.24672185700075333d, y: 0.25527948594541916d), radius: 0.16057455190973802d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.13978778715606566d, y: 0.3969356276896685d), radius: 0.9440677354167074d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8604869758842834d, y: 0.7716339856318958d), radius: 0.03238549338097352d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.9990103579717254d, y: 0.1096840071990185d), radius: 0.42202892627412614d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.016683669467224882d, y: 0.009496837090692267d), radius: 0.8899661407696996d),
 }));
                 {
                     var parameters = new NpgsqlParameter[4];
@@ -1253,7 +1252,14 @@ new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2467218570
 
                     nullable =  ((INpgsqlCircleMArraycircleMMArrayD1)this).ScalarInsertModelDynParReturning(connection, parameters);
                 }
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(
+new NpgsqlTypes.NpgsqlCircle[3]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.569928200364315d, y: 0.9232855687777964d), radius: 0.527848429048185d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.147525337248389d, y: 0.3637228763337048d), radius: 0.2281525875766126d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.7374505991102729d, y: 0.6017757720219137d), radius: 0.46246770501556655d),
+}));
             }
         }
 
@@ -1298,7 +1304,15 @@ new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2467218570
 
                     nullable = await ((INpgsqlCircleMArraycircleMMArrayD1)this).ScalarInsertModelDynParReturningAsync(connection, parameters);
                 }
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.37009476434215305d, y: 0.9536234496034136d), radius: 0.8954881210774445d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.27742584233111456d, y: 0.32639695521053136d), radius: 0.2774542368630234d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.4391527646015706d, y: 0.02852973338918796d), radius: 0.9545737903049465d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5386276848238051d, y: 0.20865070183081236d), radius: 0.7801869720682338d),
+}));
                 {
                     var parameters = new NpgsqlParameter[4];
                     parameters[0] = new NpgsqlParameter<System.Int32>();
@@ -1337,10 +1351,10 @@ new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.2467218570
                 Assert.That(nullable, Is.EqualTo(
 new NpgsqlTypes.NpgsqlCircle[4]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.30906519499813967d, y: 0.25809051750991685d), radius: 0.085704593341558d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.777806115076182d, y: 0.31343506703026813d), radius: 0.5168067993842068d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.134707273715161d, y: 0.9968028943481368d), radius: 0.830557089174558d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.04240874952731555d, y: 0.9807015135317121d), radius: 0.13757979573781198d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.006933351971690982d, y: 0.5668848498218622d), radius: 0.9825177003245954d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.36428303462260103d, y: 0.4289757845042005d), radius: 0.3889367209437099d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.817927906330233d, y: 0.4937461590033766d), radius: 0.30574595298288176d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3902933172322881d, y: 0.5688587087938282d), radius: 0.6098709413418743d),
 }));
             }
         }
@@ -1409,7 +1423,15 @@ RETURNING
                 await connection.OpenAsync();
                 NpgsqlTypes.NpgsqlCircle[] nullable = null;
                 nullable =  ((INpgsqlCircleMArraycircleMMArrayD1)this).ScalarInsertModelReturning(connection, _testData[8].Id, _testData[8].Value, _testData[8].NullableValue, _testData[8].ModelInner == null ? null : _testData[8].ModelInner.Id);
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(
+new NpgsqlTypes.NpgsqlCircle[4]
+{
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8297260419091388d, y: 0.08553682805741591d), radius: 0.20119617668015566d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.801558600726032d, y: 0.799891535809474d), radius: 0.9518904454571102d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.49899095102390223d, y: 0.8105227408630484d), radius: 0.8227137535668535d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.65087307203202d, y: 0.8694809364377418d), radius: 0.18131569516677903d),
+}));
                 nullable =  ((INpgsqlCircleMArraycircleMMArrayD1)this).ScalarInsertModelReturning(connection, _testData[9].Id, _testData[9].Value, _testData[9].NullableValue, _testData[9].ModelInner == null ? null : _testData[9].ModelInner.Id);
                 Assert.That(nullable, Is.Null);
             }
@@ -1429,9 +1451,9 @@ RETURNING
                 Assert.That(nullable, Is.EqualTo(
 new NpgsqlTypes.NpgsqlCircle[3]
 {
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.3111526850033657d, y: 0.45389108193335326d), radius: 0.6183646840181394d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.5656603500249793d, y: 0.6001531570363698d), radius: 0.26835322215408763d),
-new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8684361888894148d, y: 0.42922512374343647d), radius: 0.7887112407776247d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.6252617367061964d, y: 0.8494325375897299d), radius: 0.27064918758361767d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.8684674599960225d, y: 0.8372425226977719d), radius: 0.050279689623659696d),
+new NpgsqlTypes.NpgsqlCircle(center: new NpgsqlTypes.NpgsqlPoint(x: 0.35950320530218627d, y: 0.7010463082405772d), radius: 0.8049226537177139d),
 }));
             }
         }
@@ -2074,12 +2096,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 44;
+                parametr1.Value = 67;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 13;
+                parametr2.Value = 35;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2115,118 +2137,116 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(23));
-                Assert.That(firstItems2, Has.Count.EqualTo(23));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[8],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[9],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[10],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[11],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[12],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[13],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[13],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[14],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[14],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[15],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[15],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[16],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[16],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[17],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[17],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[18],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[18],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[19],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[19],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[20],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[20],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[21],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[21],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[22],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[22],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(31));
-                Assert.That(secondItems2, Has.Count.EqualTo(31));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[4], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[4], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[5], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[5], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[8],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[9],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[10],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[11],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[12],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[13],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[14],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[15],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[16],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[17],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[18],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[18],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[19],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[19],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[20],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[20],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[21],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[21],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[22],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[22],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[23],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[23],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[24],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[24],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[25],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[25],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[26],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[26],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[27],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[27],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[28],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[28],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[29],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[29],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[30],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[30],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(24));
+                Assert.That(firstItems2, Has.Count.EqualTo(24));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[8],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[9],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[10],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[11],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[12],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[13],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[13],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[14],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[14],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[15],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[15],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[16],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[16],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[17],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[17],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[18],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[18],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[19],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[19],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[20],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[20],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[21],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[21],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[22],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[22],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[23],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[23],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(29));
+                Assert.That(secondItems2, Has.Count.EqualTo(29));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[6], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[6], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[7], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[7], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[8], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[8], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[8],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[9],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[10],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[11],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[12],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[13],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[14],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[15],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[16],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[17],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[18],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[18],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[19],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[19],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[20],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[20],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[21],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[21],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[22],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[22],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[23],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[23],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[24],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[24],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[25],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[25],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[26],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[26],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[27],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[27],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[28],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[28],_testData[34], false);
             }
         }
 
@@ -2237,12 +2257,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 17;
+                parametr1.Value = 128;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 73;
+                parametr2.Value = 24;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2274,87 +2294,57 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(30));
-                Assert.That(firstItems2, Has.Count.EqualTo(30));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[5], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[5], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[8],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[9],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[10],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[11],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[12],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[13],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[13],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[14],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[14],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[15],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[15],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[16],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[16],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[17],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[17],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[18],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[18],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[19],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[19],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[20],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[20],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[21],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[21],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[22],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[22],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[23],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[23],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[24],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[24],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[25],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[25],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[26],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[26],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[27],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[27],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[28],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[28],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[29],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[29],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(18));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(8));
+                Assert.That(firstItems2, Has.Count.EqualTo(8));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(32));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[3], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[4], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[5], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[6], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[7], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[8], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[18],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[19],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[20],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[21],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[22],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[23],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[24],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[25],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[26],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[27],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[28],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[29],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[30],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[31],_testData[34], false);
             }
         }
 
@@ -2402,12 +2392,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 106;
+                parametr1.Value = 110;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 44;
+                parametr2.Value = 98;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2471,54 +2461,42 @@ ORDER BY
                         FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[11],_testData[33], false);
                         FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[34], false);
                         FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[12],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(23));
-                Assert.That(secondItems2, Has.Count.EqualTo(23));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[8],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[9],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[10],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[11],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[12],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[13],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[14],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[15],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[16],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[17],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[18],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[18],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[19],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[19],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[20],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[20],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[21],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[21],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[22],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[22],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(17));
+                Assert.That(secondItems2, Has.Count.EqualTo(17));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[8],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[9],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[10],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[11],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[12],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[13],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[14],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[15],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[16],_testData[34], false);
             }
         }
 
@@ -2529,12 +2507,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 31;
+                parametr1.Value = 105;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 17;
+                parametr2.Value = 124;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2566,93 +2544,48 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                  ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(27));
-                Assert.That(firstItems2, Has.Count.EqualTo(27));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[8],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[9],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[10],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[11],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[12],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[13],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[13],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[14],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[14],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[15],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[15],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[16],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[16],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[17],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[17],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[18],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[18],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[19],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[19],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[20],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[20],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[21],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[21],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[22],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[22],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[23],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[23],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[24],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[24],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[25],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[25],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[26],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[26],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(30));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[5], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[18],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[19],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[20],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[21],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[22],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[23],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[24],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[25],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[26],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[27],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[28],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[29],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(15));
+                Assert.That(firstItems2, Has.Count.EqualTo(15));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[8],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[9],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[10],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[11],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[12],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[13],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[13],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[14],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[14],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(9));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[34], false);
             }
         }
 
@@ -2740,12 +2673,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 13;
+                parametr1.Value = 15;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 120;
+                parametr2.Value = 15;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2776,58 +2709,82 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(31));
+                        Assert.That(models, Has.Count.EqualTo(33));
 
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[4], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[5], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[27],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[28],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[29],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[30],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[2], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[3], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[4], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[5], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[6], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[7], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[8], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[27],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[28],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[29],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[30],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[31],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[32],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
+                        Assert.That(models, Has.Count.EqualTo(33));
 
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[2], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[3], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[4], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[5], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[6], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[7], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[8], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[27],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[28],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[29],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[30],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[31],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[32],_testData[34], false);
                         continue;
                     }
                     
@@ -2843,12 +2800,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 106;
+                parametr1.Value = 145;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 120;
+                parametr2.Value = 145;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2880,44 +2837,15 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(13));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(11));
-                Assert.That(secondItems2, Has.Count.EqualTo(11));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[8],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[9],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[10],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(2));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(2));
+                Assert.That(secondItems2, Has.Count.EqualTo(2));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[34], false);
             }
         }
 
@@ -2958,12 +2886,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 17;
+                parametr1.Value = 124;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 127;
+                parametr2.Value = 59;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2994,56 +2922,50 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(30));
+                        Assert.That(models, Has.Count.EqualTo(9));
 
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[5], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[27],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[28],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[29],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
+                        Assert.That(models, Has.Count.EqualTo(25));
 
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[34], false);
                         continue;
                     }
                     
@@ -3059,12 +2981,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 120;
+                parametr1.Value = 52;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 18;
+                parametr2.Value = 138;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -3096,78 +3018,47 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                  ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(11));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(29));
-                Assert.That(secondItems2, Has.Count.EqualTo(29));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[8],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[9],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[10],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[11],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[12],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[13],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[14],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[15],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[16],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[17],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[18],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[18],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[19],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[19],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[20],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[20],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[21],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[21],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[22],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[22],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[23],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[23],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[24],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[24],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[25],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[25],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[26],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[26],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[27],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[27],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[28],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[28],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(26));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[13],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[14],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[15],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[16],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[17],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[18],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[19],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[20],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[21],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[22],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[23],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[24],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[25],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(6));
+                Assert.That(secondItems2, Has.Count.EqualTo(6));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[34], false);
             }
         }
 
@@ -3247,18 +3138,55 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 93;
+                parametr1.Value = 35;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 133;
+                parametr2.Value = 105;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
                 foreach(var batchResult in await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTSelectModelDynParBatchAsync(connection, [parametr1], [parametr2]))
                 {
                     if(++resultIndex == 1)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(29));
+
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[6], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[7], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[8], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[9], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[10], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[11], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[12], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[13], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[14], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[15], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[16], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[17], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[18], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[19], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[20], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[21], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[22], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[23], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[24], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[25], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[26], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[27], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[28], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[29], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[30], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[31], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[32], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[27],_testData[33], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[28],_testData[34], false);
+                        continue;
+                    }                    
+
+                    if(resultIndex == 2)
                     {
                         var models = batchResult;
                         Assert.That(models, Has.Count.EqualTo(15));
@@ -3278,22 +3206,6 @@ Gedaq.DbConnection.Attributes.BatchPart(
                         NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[32], false);
                         NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[33], false);
                         NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[34], false);
-                        continue;
-                    }                    
-
-                    if(resultIndex == 2)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(8));
-
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[27], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[28], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[29], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[30], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[31], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[32], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[33], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[34], false);
                         continue;
                     }
                     
@@ -3328,12 +3240,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 39;
+                parametr1.Value = 124;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 11;
+                parametr2.Value = 145;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -3342,73 +3254,27 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
+                        Assert.That(models, Has.Count.EqualTo(9));
 
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[10], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[11], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[12], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[13], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[14], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[15], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[16], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[17], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[18], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[19], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[20], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[21], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[22], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[23], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[24], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[25], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[26], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[27], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[28], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[29], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[30], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[31], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[32], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[33], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[34], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[26], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[27], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[28], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[29], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[30], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[31], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[32], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[33], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(32));
+                        Assert.That(models, Has.Count.EqualTo(2));
 
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[3], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[4], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[5], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[6], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[7], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[8], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[9], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[10], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[11], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[12], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[13], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[14], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[15], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[16], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[17], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[18], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[19], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[20], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[21], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[22], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[23], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[24], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[25], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[26], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[27], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[28], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[29], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[27],_testData[30], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[28],_testData[31], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[29],_testData[32], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[30],_testData[33], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[31],_testData[34], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[33], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[34], false);
                         continue;
                     }
                     
@@ -3539,67 +3405,105 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
-                await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 127, query1, 73, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(10));
-                Assert.That(firstItems2, Has.Count.EqualTo(10));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[8],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[9],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(18));
-                Assert.That(secondItems2, Has.Count.EqualTo(18));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[8],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[9],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[10],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[11],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[12],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[13],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[14],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[15],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[16],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[17],_testData[34], false);
+                await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 98, query1, 33, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(17));
+                Assert.That(firstItems2, Has.Count.EqualTo(17));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[8],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[9],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[10],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[11],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[12],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[13],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[13],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[14],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[14],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[15],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[15],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[16],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[16],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(30));
+                Assert.That(secondItems2, Has.Count.EqualTo(30));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[5], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[5], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[6], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[6], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[7], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[7], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[8], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[8], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[8],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[9],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[10],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[11],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[12],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[13],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[14],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[15],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[16],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[17],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[18],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[18],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[19],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[19],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[20],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[20],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[21],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[21],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[22],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[22],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[23],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[23],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[24],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[24],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[25],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[25],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[26],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[26],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[27],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[27],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[28],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[28],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[29],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[29],_testData[34], false);
             }
         }
 
@@ -3637,63 +3541,47 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var firstItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
-                await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 127, query1, 6, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(10));
-                Assert.That(firstItems2, Has.Count.EqualTo(10));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[8],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[9],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(33));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[2], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[3], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[4], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[5], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[18],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[19],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[20],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[21],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[22],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[23],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[24],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[25],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[26],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[27],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[28],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[29],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[30],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[31],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[32],_testData[34], false);
+                await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 128, query1, 82, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(8));
+                Assert.That(firstItems2, Has.Count.EqualTo(8));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(21));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[18],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[19],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[20],_testData[34], false);
             }
         }
 
@@ -3768,67 +3656,111 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
-                 ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 106, query1, 93, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(13));
-                Assert.That(firstItems2, Has.Count.EqualTo(13));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[8],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[9],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[10],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[11],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[12],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(15));
-                Assert.That(secondItems2, Has.Count.EqualTo(15));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[8],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[9],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[10],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[11],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[12],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[13],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[14],_testData[34], false);
+                 ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 93, query1, 24, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(18));
+                Assert.That(firstItems2, Has.Count.EqualTo(18));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[8],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[9],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[10],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[11],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[12],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[13],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[13],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[14],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[14],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[15],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[15],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[16],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[16],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[17],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[17],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(32));
+                Assert.That(secondItems2, Has.Count.EqualTo(32));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[3], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[3], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[4], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[4], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[5], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[5], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[6], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[6], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[7], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[7], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[8], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[8], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[8],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[9],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[10],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[11],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[12],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[13],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[14],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[15],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[16],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[17],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[18],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[18],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[19],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[19],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[20],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[20],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[21],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[21],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[22],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[22],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[23],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[23],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[24],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[24],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[25],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[25],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[26],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[26],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[27],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[27],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[28],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[28],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[29],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[29],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[30],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[30],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[31],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[31],_testData[34], false);
             }
         }
 
@@ -3866,33 +3798,57 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var firstItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
-                 ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionMMDynQuerySelectModelBatch(connection, 130, query1, 149, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(9));
-                Assert.That(firstItems2, Has.Count.EqualTo(9));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[8],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(5));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[34], false);
+                 ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionMMDynQuerySelectModelBatch(connection, 85, query1, 131, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(20));
+                Assert.That(firstItems2, Has.Count.EqualTo(20));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[0],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[1],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[2],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[3],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[4],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[5],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[6],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[7],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[8],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[9],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[10],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[11],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[12],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[13],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[13],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[14],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[14],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[15],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[15],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[16],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[16],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[17],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[17],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[18],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[18],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[19],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems2[19],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(7));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[34], false);
             }
         }
 
@@ -4002,49 +3958,58 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 139, query1, 54, query2))
+                foreach(var batchResult in await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 120, query1, 52, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(7));
+                        Assert.That(models, Has.Count.EqualTo(11));
 
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(21));
+                        Assert.That(models, Has.Count.EqualTo(26));
 
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[34], false);
                         continue;
                     }
                     
@@ -4087,83 +4052,36 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
-                await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 149, query1, 5, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(5));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(34));
-                Assert.That(secondItems2, Has.Count.EqualTo(34));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[1], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[1], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[2], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[2], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[3], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[3], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[4], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[4], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[5], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[5], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[8],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[9],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[10],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[11],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[12],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[13],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[14],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[15],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[16],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[17],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[18],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[18],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[19],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[19],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[20],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[20],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[21],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[21],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[22],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[22],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[23],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[23],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[24],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[24],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[25],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[25],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[26],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[26],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[27],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[27],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[28],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[28],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[29],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[29],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[30],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[30],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[31],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[31],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[32],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[32],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[33],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[33],_testData[34], false);
+                await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 93, query1, 141, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(18));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[13],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[14],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[15],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[16],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[17],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(4));
+                Assert.That(secondItems2, Has.Count.EqualTo(4));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[34], false);
             }
         }
 
@@ -4222,61 +4140,81 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in  ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTDynQuerySelectModelBatch(connection, 120, query1, 18, query2))
+                foreach(var batchResult in  ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTDynQuerySelectModelBatch(connection, 24, query1, 43, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
+                        Assert.That(models, Has.Count.EqualTo(32));
 
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[3], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[4], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[5], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[6], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[7], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[8], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[27],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[28],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[29],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[30],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[31],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(29));
+                        Assert.That(models, Has.Count.EqualTo(28));
 
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[6], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[7], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[8], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[9], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[10], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[11], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[12], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[13], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[27],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[28],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[7], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[8], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[9], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[10], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[11], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[12], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[13], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[14], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[15], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[16], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[17], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[18], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[19], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[20], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[21], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[22], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[23], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[24], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[27],_testData[34], false);
                         continue;
                     }
                     
@@ -4319,70 +4257,36 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems1 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
                 var secondItems2 = new List<FlatNpgsqlCirclecircleMMArrayD1E1M>();
-                 ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionDynQuerySelectModelBatch(connection, 73, query1, 54, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(18));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[10],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[11],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[12],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[13],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[14],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[15],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[16],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[17],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(21));
-                Assert.That(secondItems2, Has.Count.EqualTo(21));
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[14], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[15], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[16], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[17], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[18], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[19], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[20], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[21], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[8],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[8],_testData[22], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[9],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[9],_testData[23], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[10],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[10],_testData[24], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[11],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[11],_testData[25], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[12],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[12],_testData[26], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[13],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[13],_testData[27], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[14],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[14],_testData[28], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[15],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[15],_testData[29], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[16],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[16],_testData[30], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[17],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[17],_testData[31], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[18],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[18],_testData[32], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[19],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[19],_testData[33], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[20],_testData[34], false);
-                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[20],_testData[34], false);
+                 ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionDynQuerySelectModelBatch(connection, 121, query1, 128, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(10));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[0],_testData[25], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[1],_testData[26], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[2],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[3],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[4],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[5],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[6],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[7],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[8],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(firstItems1[9],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(8));
+                Assert.That(secondItems2, Has.Count.EqualTo(8));
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[0],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[0],_testData[27], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[1],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[1],_testData[28], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[2],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[2],_testData[29], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[3],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[3],_testData[30], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[4],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[4],_testData[31], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[5],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[5],_testData[32], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[6],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[6],_testData[33], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems1[7],_testData[34], false);
+                        FlatNpgsqlCirclecircleMMArrayD1E1M.AssertModel(secondItems2[7],_testData[34], false);
             }
         }
 
@@ -4462,58 +4366,62 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTSelectModelBatchAsync(connection, 39, 113))
+                foreach(var batchResult in await ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTSelectModelBatchAsync(connection, 109, 50))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(25));
+                        Assert.That(models, Has.Count.EqualTo(14));
 
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[10], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[11], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[12], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[13], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[14], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[15], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[16], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[17], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[18], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[19], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[20], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[21], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[22], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[23], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[24], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[25], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[26], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[27], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[28], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[29], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[30], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[31], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[32], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[33], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[34], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[21], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[22], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[23], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[24], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[25], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[26], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[27], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[28], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[29], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[30], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[31], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[32], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[33], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
+                        Assert.That(models, Has.Count.EqualTo(27));
 
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[23], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[24], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[25], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[26], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[27], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[28], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[29], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[30], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[31], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[32], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[33], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[34], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[8], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[9], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[10], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[11], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[12], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[13], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[14], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[15], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[16], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[17], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[18], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[19], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[20], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[21], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[22], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[23], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[24], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[25], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[26], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[27], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[28], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[29], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[30], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[31], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[32], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[33], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[34], false);
                         continue;
                     }
                     
@@ -4544,52 +4452,83 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTSelectModelBatch(connection, 130, 50))
+                foreach(var batchResult in  ((INpgsqlCircleMArraycircleMMArrayD1)this).DbConnectionSTSelectModelBatch(connection, 35, 15))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
+                        Assert.That(models, Has.Count.EqualTo(29));
 
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[26], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[27], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[28], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[29], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[30], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[31], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[32], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[33], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[34], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[6], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[7], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[8], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[9], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[10], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[11], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[12], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[13], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[14], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[15], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[16], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[17], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[18], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[19], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[20], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[21], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[22], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[23], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[24], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[25], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[26], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[27], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[28], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[29], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[30], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[31], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[32], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[27],_testData[33], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[28],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(22));
+                        Assert.That(models, Has.Count.EqualTo(33));
 
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[13], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[14], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[15], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[16], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[17], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[18], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[19], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[20], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[21], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[22], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[23], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[24], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[25], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[26], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[27], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[28], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[29], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[30], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[31], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[32], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[33], false);
-                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[34], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[2], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[3], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[4], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[5], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[6], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[7], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[8], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[9], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[10], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[11], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[12], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[13], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[14], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[15], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[16], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[17], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[18], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[19], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[20], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[21], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[22], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[23], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[24], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[25], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[26], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[27], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[28], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[27],_testData[29], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[28],_testData[30], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[29],_testData[31], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[30],_testData[32], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[31],_testData[33], false);
+                        NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[32],_testData[34], false);
                         continue;
                     }
                     
@@ -4605,7 +4544,7 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((INpgsqlCircleMArraycircleMMArrayD1)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((INpgsqlCircleMArraycircleMMArrayD1)this).SetDbConnectionSelectModelParametrs(cmd, 38);
+                ((INpgsqlCircleMArraycircleMMArrayD1)this).SetDbConnectionSelectModelParametrs(cmd, 52);
                 var models = await ((INpgsqlCircleMArraycircleMMArrayD1)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
                 Assert.That(models, Has.Count.EqualTo(26));
@@ -4646,24 +4585,40 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                  using var cmd =  ((INpgsqlCircleMArraycircleMMArrayD1)this).CreateDbConnectionSelectModelCommand(connection);
-                ((INpgsqlCircleMArraycircleMMArrayD1)this).SetDbConnectionSelectModelParametrs(cmd, 106);
+                ((INpgsqlCircleMArraycircleMMArrayD1)this).SetDbConnectionSelectModelParametrs(cmd, 35);
                 var models =  ((INpgsqlCircleMArraycircleMMArrayD1)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(13));
+                Assert.That(models, Has.Count.EqualTo(29));
 
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[22], false);
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[23], false);
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[24], false);
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[25], false);
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[26], false);
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[27], false);
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[28], false);
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[29], false);
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[30], false);
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[31], false);
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[32], false);
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[33], false);
-                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[34], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[0],_testData[6], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[1],_testData[7], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[2],_testData[8], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[3],_testData[9], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[4],_testData[10], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[5],_testData[11], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[6],_testData[12], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[7],_testData[13], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[8],_testData[14], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[9],_testData[15], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[10],_testData[16], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[11],_testData[17], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[12],_testData[18], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[13],_testData[19], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[14],_testData[20], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[15],_testData[21], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[16],_testData[22], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[17],_testData[23], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[18],_testData[24], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[19],_testData[25], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[20],_testData[26], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[21],_testData[27], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[22],_testData[28], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[23],_testData[29], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[24],_testData[30], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[25],_testData[31], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[26],_testData[32], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[27],_testData[33], false);
+                NpgsqlCirclecircleMMArrayD1E1M.AssertModel(models[28],_testData[34], false);
             }
         }
 

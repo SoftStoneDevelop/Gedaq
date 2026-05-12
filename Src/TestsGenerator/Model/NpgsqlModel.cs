@@ -17,10 +17,11 @@ namespace TestsGenerator.Model
             int size = -1,
             bool mustHaveSize = false,
             bool isReferenceType = false,
-            int arrayDimensions = 1)
+            int arrayDimensions = 1,
+            string typeNamePostfix = "")
             : base(
                   new PostgreSQLTypeInfo(NpgsqlDbType.Integer, "Int32", "System.Int32", EnumerableType.SingleType, 0, false, false), 
-                  new PostgreSQLTypeInfo(npgsqlDbType, typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType, arrayDimensions: arrayDimensions), 
+                  new PostgreSQLTypeInfo(npgsqlDbType, typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType, arrayDimensions: arrayDimensions, typeNamePostfix: typeNamePostfix),
                   valueStorageFactory)
         {
 

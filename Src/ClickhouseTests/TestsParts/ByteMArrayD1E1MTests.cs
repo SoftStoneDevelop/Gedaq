@@ -27,59 +27,95 @@ namespace Tests
         {
             new ByteMArrayD1E1M
 {
-    Id = 7,
+    Id = 2,
     Value = 
 new System.Byte[3]
 {
-92,
-63,
-140,
+57,
+177,
+149,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
-    Id = 3,
+    Id = 5,
     Value = 
-new System.Byte[3]
+new System.Byte[4]
 {
-112,
-21,
-224,
+248,
+90,
+32,
+252,
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Byte[4]
+{
+95,
+116,
+134,
+28,
+},
 },
     NullableValue = null,
 },
             new ByteMArrayD1E1M
 {
-    Id = 13,
-    Value = 
-new System.Byte[4]
-{
-100,
-244,
-58,
-4,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
     Id = 9,
     Value = 
 new System.Byte[3]
 {
-8,
-15,
-250,
+110,
+223,
+245,
+},
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 6,
+    Value = 
+new System.Byte[3]
+{
+69,
+84,
+245,
 },
     NullableValue = null,
 },
     NullableValue = 
-new System.Byte[4]
+new System.Byte[3]
 {
-174,
-87,
-176,
-136,
+27,
+124,
+253,
 },
+},
+            new ByteMArrayD1E1M
+{
+    Id = 11,
+    Value = 
+new System.Byte[3]
+{
+105,
+26,
+50,
+},
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 14,
+    Value = 
+new System.Byte[3]
+{
+150,
+133,
+73,
+},
+    NullableValue = 
+new System.Byte[3]
+{
+82,
+224,
+191,
+},
+},
+    NullableValue = null,
 },
             new ByteMArrayD1E1M
 {
@@ -87,91 +123,67 @@ new System.Byte[4]
     Value = 
 new System.Byte[3]
 {
-195,
-93,
-73,
+41,
+254,
+139,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
-    Id = 10,
-    Value = 
-new System.Byte[4]
-{
-96,
-226,
-138,
-239,
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new ByteMArrayD1E1M
-{
-    Id = 20,
+    Id = 21,
     Value = 
 new System.Byte[3]
 {
-192,
+106,
+9,
+61,
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Byte[3]
+{
+55,
+229,
 26,
-234,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 11,
-    Value = 
-new System.Byte[3]
-{
-112,
-170,
-141,
-},
-    NullableValue = 
-new System.Byte[3]
-{
-253,
-39,
-174,
-},
-},
-    NullableValue = 
-new System.Byte[3]
-{
-83,
-158,
-113,
 },
 },
             new ByteMArrayD1E1M
 {
-    Id = 25,
+    Id = 26,
     Value = 
 new System.Byte[3]
 {
-86,
-63,
-206,
+7,
+164,
+56,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
-    Id = 20,
+    Id = 22,
     Value = 
 new System.Byte[4]
 {
-146,
-218,
-81,
-91,
+52,
+89,
+73,
+72,
+},
+    NullableValue = 
+new System.Byte[4]
+{
+171,
+185,
+151,
+25,
+},
 },
     NullableValue = 
 new System.Byte[3]
 {
-25,
-154,
-39,
+51,
+48,
+128,
 },
-},
-    NullableValue = null,
 },
             new ByteMArrayD1E1M
 {
@@ -179,90 +191,21 @@ new System.Byte[3]
     Value = 
 new System.Byte[4]
 {
-144,
-254,
-82,
-38,
+78,
+246,
+167,
+191,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
-    Id = 26,
-    Value = 
-new System.Byte[3]
-{
-157,
-196,
-73,
-},
-    NullableValue = 
-new System.Byte[4]
-{
-22,
-22,
-225,
-48,
-},
-},
-    NullableValue = 
-new System.Byte[4]
-{
-62,
-125,
-232,
-138,
-},
-},
-            new ByteMArrayD1E1M
-{
-    Id = 29,
+    Id = 30,
     Value = 
 new System.Byte[4]
 {
-239,
-254,
-251,
-189,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 29,
-    Value = 
-new System.Byte[4]
-{
-207,
-23,
-59,
-207,
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Byte[3]
-{
-143,
-215,
-41,
-},
-},
-            new ByteMArrayD1E1M
-{
-    Id = 37,
-    Value = 
-new System.Byte[3]
-{
-102,
-69,
-95,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 32,
-    Value = 
-new System.Byte[3]
-{
-173,
-106,
-149,
+6,
+96,
+213,
+110,
 },
     NullableValue = null,
 },
@@ -270,41 +213,60 @@ new System.Byte[3]
 },
             new ByteMArrayD1E1M
 {
-    Id = 42,
+    Id = 34,
     Value = 
-new System.Byte[3]
+new System.Byte[4]
 {
-203,
-242,
+161,
+3,
+216,
 21,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
-    Id = 36,
+    Id = 37,
+    Value = 
+new System.Byte[4]
+{
+3,
+82,
+92,
+164,
+},
+    NullableValue = 
+new System.Byte[4]
+{
+163,
+218,
+4,
+109,
+},
+},
+    NullableValue = null,
+},
+            new ByteMArrayD1E1M
+{
+    Id = 43,
     Value = 
 new System.Byte[3]
 {
-119,
-197,
-127,
+91,
+222,
+31,
 },
-    NullableValue = 
-new System.Byte[4]
+    ModelInner = new ByteMArrayD1E1MI
 {
-7,
-87,
-143,
-29,
-},
-},
-    NullableValue = 
-new System.Byte[4]
+    Id = 41,
+    Value = 
+new System.Byte[3]
 {
-53,
-157,
-22,
-84,
+59,
+114,
+185,
 },
+    NullableValue = null,
+},
+    NullableValue = null,
 },
             new ByteMArrayD1E1M
 {
@@ -312,359 +274,410 @@ new System.Byte[4]
     Value = 
 new System.Byte[4]
 {
-86,
-15,
-205,
-182,
+183,
+5,
+160,
+3,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
-    Id = 43,
+    Id = 49,
     Value = 
 new System.Byte[3]
 {
-58,
-94,
-127,
-},
-    NullableValue = 
-new System.Byte[3]
-{
-231,
-1,
-34,
-},
+178,
+241,
+135,
 },
     NullableValue = null,
-},
-            new ByteMArrayD1E1M
-{
-    Id = 54,
-    Value = 
-new System.Byte[3]
-{
-77,
-190,
-132,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 46,
-    Value = 
-new System.Byte[4]
-{
-68,
-147,
-176,
-11,
 },
     NullableValue = 
 new System.Byte[4]
 {
-172,
-36,
-54,
-140,
+145,
+49,
+66,
+82,
 },
-},
-    NullableValue = null,
 },
             new ByteMArrayD1E1M
 {
-    Id = 56,
+    Id = 49,
     Value = 
 new System.Byte[4]
 {
-166,
-42,
-217,
-121,
+91,
+254,
+71,
+189,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
-    Id = 47,
-    Value = 
-new System.Byte[4]
-{
-184,
-214,
-89,
-100,
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new ByteMArrayD1E1M
-{
-    Id = 61,
+    Id = 53,
     Value = 
 new System.Byte[3]
 {
-140,
-207,
-32,
+200,
+251,
+61,
 },
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 51,
-    Value = 
+    NullableValue = 
 new System.Byte[4]
 {
-201,
-220,
-25,
 180,
+232,
+98,
+145,
+},
 },
     NullableValue = null,
 },
-    NullableValue = 
-new System.Byte[4]
-{
-39,
-115,
-49,
-49,
-},
-},
             new ByteMArrayD1E1M
 {
-    Id = 62,
+    Id = 52,
     Value = 
 new System.Byte[3]
 {
-13,
-202,
-234,
+200,
+68,
+86,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
     Id = 58,
     Value = 
-new System.Byte[3]
+new System.Byte[4]
 {
-17,
-52,
-207,
+15,
+16,
+56,
+126,
 },
     NullableValue = 
 new System.Byte[4]
 {
-223,
-145,
-142,
-191,
+126,
+126,
+59,
+102,
 },
 },
-    NullableValue = null,
+    NullableValue = 
+new System.Byte[3]
+{
+154,
+250,
+186,
+},
 },
             new ByteMArrayD1E1M
 {
-    Id = 65,
+    Id = 55,
+    Value = 
+new System.Byte[4]
+{
+6,
+21,
+218,
+106,
+},
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 59,
+    Value = 
+new System.Byte[4]
+{
+122,
+21,
+236,
+165,
+},
+    NullableValue = 
+new System.Byte[4]
+{
+194,
+246,
+223,
+191,
+},
+},
+    NullableValue = 
+new System.Byte[4]
+{
+121,
+85,
+248,
+198,
+},
+},
+            new ByteMArrayD1E1M
+{
+    Id = 56,
     Value = 
 new System.Byte[3]
 {
-222,
-190,
-59,
+96,
+212,
+120,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
     Id = 61,
     Value = 
-new System.Byte[3]
+new System.Byte[4]
 {
-123,
-205,
-128,
+93,
+238,
+229,
+66,
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new ByteMArrayD1E1M
+{
+    Id = 59,
+    Value = 
+new System.Byte[4]
+{
+129,
+206,
+131,
+91,
+},
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 67,
+    Value = 
+new System.Byte[4]
+{
+41,
+168,
+137,
+4,
 },
     NullableValue = 
 new System.Byte[4]
 {
-248,
-152,
-212,
-74,
+65,
+228,
+162,
+220,
 },
 },
     NullableValue = 
-new System.Byte[3]
+new System.Byte[4]
 {
-171,
-251,
-168,
+217,
+42,
+141,
+219,
 },
 },
             new ByteMArrayD1E1M
 {
-    Id = 71,
+    Id = 60,
     Value = 
 new System.Byte[4]
 {
-139,
-46,
-237,
-93,
+233,
+90,
+109,
+18,
 },
     ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 76,
+    Value = 
+new System.Byte[4]
+{
+194,
+217,
+139,
+41,
+},
+    NullableValue = 
+new System.Byte[4]
+{
+211,
+122,
+71,
+240,
+},
+},
+    NullableValue = 
+new System.Byte[4]
+{
+94,
+151,
+197,
+65,
+},
+},
+            new ByteMArrayD1E1M
 {
     Id = 66,
     Value = 
-new System.Byte[4]
-{
-64,
-192,
-174,
-120,
-},
-    NullableValue = 
 new System.Byte[3]
 {
-130,
-81,
-71,
-},
-},
-    NullableValue = 
-new System.Byte[3]
-{
-82,
-221,
-113,
-},
-},
-            new ByteMArrayD1E1M
-{
-    Id = 72,
-    Value = 
-new System.Byte[3]
-{
-56,
-129,
-234,
+72,
+8,
+180,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
-    Id = 75,
+    Id = 84,
     Value = 
 new System.Byte[3]
 {
-19,
-11,
-123,
+60,
+55,
+79,
 },
     NullableValue = null,
 },
     NullableValue = 
 new System.Byte[4]
 {
-170,
-8,
-50,
-30,
-},
-},
-            new ByteMArrayD1E1M
-{
-    Id = 80,
-    Value = 
-new System.Byte[3]
-{
-54,
-39,
-13,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 77,
-    Value = 
-new System.Byte[3]
-{
-151,
-23,
-37,
-},
-    NullableValue = 
-new System.Byte[4]
-{
-188,
-229,
-118,
-22,
-},
-},
-    NullableValue = 
-new System.Byte[4]
-{
-215,
-221,
-221,
+85,
+187,
+93,
 176,
 },
 },
             new ByteMArrayD1E1M
 {
+    Id = 73,
+    Value = 
+new System.Byte[3]
+{
+96,
+153,
+192,
+},
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 85,
+    Value = 
+new System.Byte[4]
+{
+195,
+41,
+66,
+135,
+},
+    NullableValue = 
+new System.Byte[4]
+{
+179,
+131,
+152,
+35,
+},
+},
+    NullableValue = null,
+},
+            new ByteMArrayD1E1M
+{
+    Id = 79,
+    Value = 
+new System.Byte[3]
+{
+223,
+17,
+179,
+},
+    ModelInner = new ByteMArrayD1E1MI
+{
     Id = 89,
     Value = 
 new System.Byte[4]
 {
-149,
-89,
-190,
-74,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 82,
-    Value = 
-new System.Byte[4]
-{
-217,
-13,
-218,
-222,
+253,
+18,
+72,
+156,
 },
     NullableValue = null,
 },
     NullableValue = 
-new System.Byte[3]
+new System.Byte[4]
 {
-244,
-149,
-243,
+52,
+133,
+43,
+181,
 },
 },
             new ByteMArrayD1E1M
-{
-    Id = 91,
-    Value = 
-new System.Byte[4]
-{
-37,
-153,
-25,
-55,
-},
-    ModelInner = new ByteMArrayD1E1MI
 {
     Id = 88,
     Value = 
 new System.Byte[4]
 {
-48,
-39,
-226,
-234,
+235,
+37,
+35,
+242,
 },
-    NullableValue = null,
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 94,
+    Value = 
+new System.Byte[3]
+{
+120,
+92,
+169,
+},
+    NullableValue = 
+new System.Byte[4]
+{
+27,
+173,
+179,
+76,
+},
 },
     NullableValue = 
 new System.Byte[3]
 {
-119,
-215,
-158,
+76,
+92,
+70,
 },
+},
+            new ByteMArrayD1E1M
+{
+    Id = 93,
+    Value = 
+new System.Byte[3]
+{
+139,
+250,
+56,
+},
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 103,
+    Value = 
+new System.Byte[3]
+{
+108,
+15,
+155,
+},
+    NullableValue = 
+new System.Byte[4]
+{
+147,
+67,
+64,
+88,
+},
+},
+    NullableValue = null,
 },
             new ByteMArrayD1E1M
 {
@@ -672,485 +685,456 @@ new System.Byte[3]
     Value = 
 new System.Byte[4]
 {
-238,
-18,
-220,
-142,
+13,
+200,
+40,
+93,
 },
     ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 95,
-    Value = 
-new System.Byte[4]
-{
-1,
-198,
-80,
-169,
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Byte[4]
-{
-139,
-246,
-120,
-225,
-},
-},
-            new ByteMArrayD1E1M
-{
-    Id = 102,
-    Value = 
-new System.Byte[4]
-{
-228,
-105,
-55,
-198,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 97,
-    Value = 
-new System.Byte[4]
-{
-240,
-37,
-138,
-198,
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Byte[4]
-{
-118,
-126,
-239,
-66,
-},
-},
-            new ByteMArrayD1E1M
 {
     Id = 109,
     Value = 
+new System.Byte[4]
+{
+186,
+214,
+161,
+225,
+},
+    NullableValue = null,
+},
+    NullableValue = 
 new System.Byte[3]
 {
-42,
-182,
-237,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 102,
-    Value = 
-new System.Byte[4]
-{
-214,
-179,
-20,
-22,
-},
-    NullableValue = 
-new System.Byte[4]
-{
-150,
-239,
-32,
-91,
-},
-},
-    NullableValue = 
-new System.Byte[4]
-{
-71,
-27,
-60,
-160,
+245,
+245,
+229,
 },
 },
             new ByteMArrayD1E1M
 {
-    Id = 118,
+    Id = 103,
     Value = 
 new System.Byte[4]
 {
-110,
-99,
-247,
-56,
+198,
+149,
+184,
+90,
 },
     ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 116,
+    Value = 
+new System.Byte[3]
+{
+111,
+171,
+29,
+},
+    NullableValue = 
+new System.Byte[4]
+{
+10,
+218,
+105,
+104,
+},
+},
+    NullableValue = 
+new System.Byte[4]
+{
+107,
+122,
+239,
+43,
+},
+},
+            new ByteMArrayD1E1M
 {
     Id = 105,
     Value = 
 new System.Byte[4]
 {
-246,
-34,
-71,
 41,
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Byte[3]
-{
-232,
-119,
-158,
-},
-},
-            new ByteMArrayD1E1M
-{
-    Id = 126,
-    Value = 
-new System.Byte[4]
-{
-145,
-193,
-46,
-7,
+199,
+27,
+99,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
-    Id = 111,
+    Id = 120,
+    Value = 
+new System.Byte[4]
+{
+16,
+171,
+107,
+203,
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new ByteMArrayD1E1M
+{
+    Id = 112,
+    Value = 
+new System.Byte[4]
+{
+78,
+71,
+120,
+100,
+},
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 128,
     Value = 
 new System.Byte[3]
 {
-94,
-131,
-191,
+230,
+95,
+158,
 },
     NullableValue = null,
 },
     NullableValue = 
-new System.Byte[3]
+new System.Byte[4]
 {
-182,
-238,
-111,
+138,
+164,
+153,
+108,
 },
 },
             new ByteMArrayD1E1M
+{
+    Id = 115,
+    Value = 
+new System.Byte[4]
+{
+203,
+202,
+138,
+10,
+},
+    ModelInner = new ByteMArrayD1E1MI
 {
     Id = 133,
     Value = 
 new System.Byte[3]
 {
-26,
-238,
-128,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 119,
-    Value = 
-new System.Byte[4]
-{
-96,
-161,
-128,
-232,
-},
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new ByteMArrayD1E1M
-{
-    Id = 136,
-    Value = 
-new System.Byte[4]
-{
-167,
-132,
-92,
-126,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 126,
-    Value = 
-new System.Byte[4]
-{
-7,
-9,
+78,
+117,
 14,
-222,
 },
-    NullableValue = 
-new System.Byte[3]
-{
-111,
-161,
-82,
-},
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new ByteMArrayD1E1M
 {
-    Id = 138,
-    Value = 
-new System.Byte[4]
-{
-47,
-154,
-144,
-61,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 131,
-    Value = 
-new System.Byte[4]
-{
-225,
-174,
-247,
-189,
-},
-    NullableValue = null,
-},
-    NullableValue = 
-new System.Byte[3]
-{
-77,
-153,
-206,
-},
-},
-            new ByteMArrayD1E1M
-{
-    Id = 146,
+    Id = 118,
     Value = 
 new System.Byte[3]
 {
-29,
-226,
-43,
+28,
+212,
+110,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
-    Id = 136,
+    Id = 134,
     Value = 
 new System.Byte[4]
 {
+179,
 191,
-156,
-158,
+68,
+33,
+},
+    NullableValue = 
+new System.Byte[4]
+{
+220,
+221,
+200,
 66,
 },
-    NullableValue = 
-new System.Byte[4]
-{
-176,
-39,
-131,
-180,
-},
-},
-    NullableValue = null,
-},
-            new ByteMArrayD1E1M
-{
-    Id = 147,
-    Value = 
-new System.Byte[3]
-{
-67,
-147,
-199,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 138,
-    Value = 
-new System.Byte[3]
-{
-138,
-136,
-243,
 },
     NullableValue = 
 new System.Byte[3]
 {
-62,
-43,
-125,
-},
-},
-    NullableValue = 
-new System.Byte[4]
-{
-112,
-81,
-159,
-9,
+235,
+171,
+141,
 },
 },
             new ByteMArrayD1E1M
 {
-    Id = 152,
+    Id = 121,
     Value = 
-new System.Byte[3]
+new System.Byte[4]
 {
-218,
-95,
-223,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 142,
-    Value = 
-new System.Byte[3]
-{
-170,
-189,
+238,
+51,
+216,
 158,
 },
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 143,
+    Value = 
+new System.Byte[4]
+{
+237,
+50,
+235,
+236,
+},
+    NullableValue = 
+new System.Byte[4]
+{
+113,
+229,
+227,
+144,
+},
+},
+    NullableValue = null,
+},
+            new ByteMArrayD1E1M
+{
+    Id = 123,
+    Value = 
+new System.Byte[3]
+{
+103,
+69,
+54,
+},
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 145,
+    Value = 
+new System.Byte[3]
+{
+182,
+171,
+94,
+},
     NullableValue = null,
 },
     NullableValue = 
 new System.Byte[3]
 {
-35,
-45,
-152,
+137,
+229,
+211,
 },
 },
             new ByteMArrayD1E1M
 {
-    Id = 161,
+    Id = 132,
     Value = 
 new System.Byte[3]
 {
-192,
-32,
-220,
+121,
+56,
+21,
 },
     ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 151,
+    Value = 
+new System.Byte[4]
+{
+13,
+208,
+173,
+211,
+},
+    NullableValue = null,
+},
+    NullableValue = 
+new System.Byte[3]
+{
+208,
+153,
+119,
+},
+},
+            new ByteMArrayD1E1M
+{
+    Id = 140,
+    Value = 
+new System.Byte[4]
+{
+72,
+120,
+79,
+96,
+},
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 154,
+    Value = 
+new System.Byte[3]
+{
+105,
+176,
+254,
+},
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new ByteMArrayD1E1M
+{
+    Id = 141,
+    Value = 
+new System.Byte[4]
+{
+9,
+74,
+182,
+123,
+},
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 158,
+    Value = 
+new System.Byte[4]
+{
+171,
+183,
+145,
+117,
+},
+    NullableValue = 
+new System.Byte[3]
+{
+207,
+146,
+193,
+},
+},
+    NullableValue = null,
+},
+            new ByteMArrayD1E1M
 {
     Id = 149,
     Value = 
+new System.Byte[3]
+{
+229,
+55,
+147,
+},
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 161,
+    Value = 
 new System.Byte[4]
 {
-26,
-189,
-193,
-78,
+41,
+164,
+18,
+14,
 },
     NullableValue = 
 new System.Byte[4]
 {
-76,
-186,
-235,
-54,
+74,
+169,
+131,
+96,
 },
 },
     NullableValue = null,
 },
             new ByteMArrayD1E1M
+{
+    Id = 158,
+    Value = 
+new System.Byte[3]
+{
+206,
+51,
+149,
+},
+    ModelInner = new ByteMArrayD1E1MI
 {
     Id = 170,
     Value = 
 new System.Byte[4]
 {
-42,
-176,
-241,
-30,
+66,
+206,
+122,
+152,
 },
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 153,
-    Value = 
+    NullableValue = null,
+},
+    NullableValue = 
 new System.Byte[4]
 {
-136,
-46,
-7,
-50,
+122,
+100,
+80,
+178,
 },
-    NullableValue = null,
-},
-    NullableValue = null,
 },
             new ByteMArrayD1E1M
 {
-    Id = 179,
+    Id = 160,
     Value = 
 new System.Byte[4]
 {
-88,
-211,
-140,
-137,
+132,
+185,
+160,
+149,
 },
     ModelInner = new ByteMArrayD1E1MI
 {
-    Id = 162,
+    Id = 174,
     Value = 
-new System.Byte[4]
-{
-89,
-249,
-167,
-226,
-},
-    NullableValue = 
 new System.Byte[3]
 {
-53,
-149,
-43,
-},
-},
-    NullableValue = 
-new System.Byte[4]
-{
-243,
-155,
-194,
-247,
-},
-},
-            new ByteMArrayD1E1M
-{
-    Id = 187,
-    Value = 
-new System.Byte[4]
-{
-124,
-22,
-248,
-247,
-},
-    ModelInner = new ByteMArrayD1E1MI
-{
-    Id = 166,
-    Value = 
-new System.Byte[4]
-{
-135,
-153,
-41,
-1,
+192,
+139,
+39,
 },
     NullableValue = null,
 },
-    NullableValue = 
+    NullableValue = null,
+},
+            new ByteMArrayD1E1M
+{
+    Id = 164,
+    Value = 
 new System.Byte[4]
 {
-24,
-62,
-113,
-182,
+80,
+91,
+114,
+67,
 },
+    ModelInner = new ByteMArrayD1E1MI
+{
+    Id = 176,
+    Value = 
+new System.Byte[3]
+{
+64,
+123,
+43,
+},
+    NullableValue = null,
+},
+    NullableValue = null,
 },
         };
 

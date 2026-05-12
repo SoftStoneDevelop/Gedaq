@@ -27,180 +27,180 @@ namespace Tests
         {
             new IPAddressIPv4E0M
 {
-    Id = 8,
-    Value = System.Net.IPAddress.Parse("72.138.37.154"),
+    Id = 2,
+    Value = System.Net.IPAddress.Parse("193.18.198.94"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 4,
-    Value = System.Net.IPAddress.Parse("2.122.207.113"),
-    NullableValue = null,
+    Id = 2,
+    Value = System.Net.IPAddress.Parse("53.32.31.83"),
+    NullableValue = System.Net.IPAddress.Parse("119.201.97.188"),
 },
-    NullableValue = System.Net.IPAddress.Parse("2.249.58.220"),
+    NullableValue = System.Net.IPAddress.Parse("9.98.147.36"),
 },
             new IPAddressIPv4E0M
 {
-    Id = 10,
-    Value = System.Net.IPAddress.Parse("123.62.216.68"),
+    Id = 3,
+    Value = System.Net.IPAddress.Parse("34.45.77.190"),
     ModelInner = new IPAddressIPv4E0MI
 {
     Id = 5,
-    Value = System.Net.IPAddress.Parse("106.214.203.64"),
-    NullableValue = System.Net.IPAddress.Parse("245.89.46.228"),
+    Value = System.Net.IPAddress.Parse("184.94.228.59"),
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new IPAddressIPv4E0M
 {
-    Id = 16,
-    Value = System.Net.IPAddress.Parse("38.91.50.221"),
+    Id = 11,
+    Value = System.Net.IPAddress.Parse("7.112.183.100"),
     ModelInner = new IPAddressIPv4E0MI
 {
     Id = 12,
-    Value = System.Net.IPAddress.Parse("33.201.26.77"),
+    Value = System.Net.IPAddress.Parse("141.167.134.179"),
     NullableValue = null,
 },
-    NullableValue = null,
+    NullableValue = System.Net.IPAddress.Parse("22.100.12.127"),
 },
             new IPAddressIPv4E0M
 {
-    Id = 23,
-    Value = System.Net.IPAddress.Parse("89.17.62.207"),
+    Id = 15,
+    Value = System.Net.IPAddress.Parse("97.169.72.215"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 16,
-    Value = System.Net.IPAddress.Parse("215.137.36.243"),
-    NullableValue = System.Net.IPAddress.Parse("225.73.6.149"),
+    Id = 17,
+    Value = System.Net.IPAddress.Parse("51.235.93.252"),
+    NullableValue = null,
 },
-    NullableValue = System.Net.IPAddress.Parse("92.71.201.32"),
+    NullableValue = null,
 },
             new IPAddressIPv4E0M
 {
-    Id = 30,
-    Value = System.Net.IPAddress.Parse("230.245.113.90"),
+    Id = 22,
+    Value = System.Net.IPAddress.Parse("93.127.65.113"),
     ModelInner = new IPAddressIPv4E0MI
 {
     Id = 21,
-    Value = System.Net.IPAddress.Parse("147.244.83.42"),
+    Value = System.Net.IPAddress.Parse("148.250.88.114"),
     NullableValue = null,
 },
-    NullableValue = System.Net.IPAddress.Parse("45.77.22.81"),
+    NullableValue = System.Net.IPAddress.Parse("81.245.144.5"),
 },
             new IPAddressIPv4E0M
-{
-    Id = 35,
-    Value = System.Net.IPAddress.Parse("155.92.102.245"),
-    ModelInner = new IPAddressIPv4E0MI
 {
     Id = 25,
-    Value = System.Net.IPAddress.Parse("241.78.26.147"),
-    NullableValue = System.Net.IPAddress.Parse("60.118.14.117"),
-},
-    NullableValue = null,
-},
-            new IPAddressIPv4E0M
-{
-    Id = 40,
-    Value = System.Net.IPAddress.Parse("100.128.146.126"),
+    Value = System.Net.IPAddress.Parse("146.38.93.221"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 31,
-    Value = System.Net.IPAddress.Parse("62.8.114.117"),
-    NullableValue = System.Net.IPAddress.Parse("223.5.16.30"),
+    Id = 30,
+    Value = System.Net.IPAddress.Parse("29.229.121.23"),
+    NullableValue = System.Net.IPAddress.Parse("79.243.211.190"),
 },
     NullableValue = null,
 },
             new IPAddressIPv4E0M
 {
-    Id = 49,
-    Value = System.Net.IPAddress.Parse("158.221.207.21"),
+    Id = 33,
+    Value = System.Net.IPAddress.Parse("203.168.178.233"),
     ModelInner = new IPAddressIPv4E0MI
 {
     Id = 32,
-    Value = System.Net.IPAddress.Parse("35.78.178.57"),
-    NullableValue = null,
+    Value = System.Net.IPAddress.Parse("186.199.42.208"),
+    NullableValue = System.Net.IPAddress.Parse("124.133.8.110"),
 },
-    NullableValue = System.Net.IPAddress.Parse("241.4.75.27"),
+    NullableValue = System.Net.IPAddress.Parse("197.16.115.60"),
 },
             new IPAddressIPv4E0M
 {
-    Id = 53,
-    Value = System.Net.IPAddress.Parse("187.74.215.137"),
+    Id = 39,
+    Value = System.Net.IPAddress.Parse("219.205.212.135"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 40,
-    Value = System.Net.IPAddress.Parse("137.108.238.50"),
-    NullableValue = null,
+    Id = 36,
+    Value = System.Net.IPAddress.Parse("223.76.149.54"),
+    NullableValue = System.Net.IPAddress.Parse("137.203.61.253"),
 },
-    NullableValue = System.Net.IPAddress.Parse("242.123.225.249"),
+    NullableValue = null,
 },
             new IPAddressIPv4E0M
 {
-    Id = 61,
-    Value = System.Net.IPAddress.Parse("31.243.199.4"),
+    Id = 43,
+    Value = System.Net.IPAddress.Parse("214.122.71.170"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 46,
-    Value = System.Net.IPAddress.Parse("243.83.112.127"),
-    NullableValue = null,
+    Id = 38,
+    Value = System.Net.IPAddress.Parse("104.10.24.186"),
+    NullableValue = System.Net.IPAddress.Parse("71.182.129.72"),
 },
-    NullableValue = System.Net.IPAddress.Parse("243.25.31.44"),
+    NullableValue = null,
 },
             new IPAddressIPv4E0M
 {
-    Id = 62,
-    Value = System.Net.IPAddress.Parse("157.8.53.235"),
+    Id = 52,
+    Value = System.Net.IPAddress.Parse("199.99.148.222"),
+    ModelInner = new IPAddressIPv4E0MI
+{
+    Id = 44,
+    Value = System.Net.IPAddress.Parse("206.157.180.118"),
+    NullableValue = null,
+},
+    NullableValue = System.Net.IPAddress.Parse("3.90.243.215"),
+},
+            new IPAddressIPv4E0M
+{
+    Id = 56,
+    Value = System.Net.IPAddress.Parse("236.42.43.227"),
     ModelInner = new IPAddressIPv4E0MI
 {
     Id = 52,
-    Value = System.Net.IPAddress.Parse("57.143.121.116"),
-    NullableValue = null,
+    Value = System.Net.IPAddress.Parse("128.242.187.227"),
+    NullableValue = System.Net.IPAddress.Parse("67.200.169.113"),
 },
     NullableValue = null,
+},
+            new IPAddressIPv4E0M
+{
+    Id = 58,
+    Value = System.Net.IPAddress.Parse("218.4.91.18"),
+    ModelInner = new IPAddressIPv4E0MI
+{
+    Id = 60,
+    Value = System.Net.IPAddress.Parse("151.50.147.237"),
+    NullableValue = null,
+},
+    NullableValue = System.Net.IPAddress.Parse("98.179.4.82"),
 },
             new IPAddressIPv4E0M
 {
     Id = 65,
-    Value = System.Net.IPAddress.Parse("62.254.181.102"),
+    Value = System.Net.IPAddress.Parse("165.46.111.59"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 54,
-    Value = System.Net.IPAddress.Parse("84.108.120.174"),
-    NullableValue = System.Net.IPAddress.Parse("198.49.55.149"),
+    Id = 66,
+    Value = System.Net.IPAddress.Parse("114.53.242.83"),
+    NullableValue = System.Net.IPAddress.Parse("186.173.203.148"),
 },
     NullableValue = null,
 },
             new IPAddressIPv4E0M
 {
     Id = 72,
-    Value = System.Net.IPAddress.Parse("176.219.62.220"),
+    Value = System.Net.IPAddress.Parse("219.225.56.124"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 57,
-    Value = System.Net.IPAddress.Parse("124.102.83.135"),
+    Id = 71,
+    Value = System.Net.IPAddress.Parse("160.234.206.56"),
     NullableValue = null,
 },
     NullableValue = null,
 },
             new IPAddressIPv4E0M
 {
-    Id = 76,
-    Value = System.Net.IPAddress.Parse("115.225.224.53"),
+    Id = 78,
+    Value = System.Net.IPAddress.Parse("63.188.217.179"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 60,
-    Value = System.Net.IPAddress.Parse("190.6.81.4"),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new IPAddressIPv4E0M
-{
-    Id = 81,
-    Value = System.Net.IPAddress.Parse("170.84.29.25"),
-    ModelInner = new IPAddressIPv4E0MI
-{
-    Id = 68,
-    Value = System.Net.IPAddress.Parse("217.219.111.133"),
+    Id = 79,
+    Value = System.Net.IPAddress.Parse("0.117.153.178"),
     NullableValue = null,
 },
     NullableValue = null,
@@ -208,227 +208,191 @@ namespace Tests
             new IPAddressIPv4E0M
 {
     Id = 84,
-    Value = System.Net.IPAddress.Parse("17.104.174.31"),
+    Value = System.Net.IPAddress.Parse("99.92.210.120"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 71,
-    Value = System.Net.IPAddress.Parse("213.70.221.89"),
-    NullableValue = null,
+    Id = 85,
+    Value = System.Net.IPAddress.Parse("240.56.34.115"),
+    NullableValue = System.Net.IPAddress.Parse("17.117.151.246"),
 },
-    NullableValue = System.Net.IPAddress.Parse("202.105.43.206"),
+    NullableValue = System.Net.IPAddress.Parse("44.162.14.247"),
 },
             new IPAddressIPv4E0M
 {
-    Id = 87,
-    Value = System.Net.IPAddress.Parse("101.35.114.219"),
+    Id = 91,
+    Value = System.Net.IPAddress.Parse("114.121.217.232"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 79,
-    Value = System.Net.IPAddress.Parse("15.119.237.172"),
-    NullableValue = System.Net.IPAddress.Parse("201.219.171.84"),
+    Id = 91,
+    Value = System.Net.IPAddress.Parse("106.120.171.144"),
+    NullableValue = System.Net.IPAddress.Parse("108.142.242.162"),
 },
-    NullableValue = null,
+    NullableValue = System.Net.IPAddress.Parse("12.130.204.97"),
 },
             new IPAddressIPv4E0M
+{
+    Id = 99,
+    Value = System.Net.IPAddress.Parse("5.219.83.129"),
+    ModelInner = new IPAddressIPv4E0MI
 {
     Id = 92,
-    Value = System.Net.IPAddress.Parse("29.204.147.247"),
-    ModelInner = new IPAddressIPv4E0MI
-{
-    Id = 83,
-    Value = System.Net.IPAddress.Parse("91.46.29.209"),
-    NullableValue = System.Net.IPAddress.Parse("238.230.170.78"),
+    Value = System.Net.IPAddress.Parse("174.178.118.62"),
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new IPAddressIPv4E0M
+{
+    Id = 107,
+    Value = System.Net.IPAddress.Parse("237.107.106.243"),
+    ModelInner = new IPAddressIPv4E0MI
+{
+    Id = 95,
+    Value = System.Net.IPAddress.Parse("2.41.82.179"),
+    NullableValue = System.Net.IPAddress.Parse("132.188.34.86"),
+},
+    NullableValue = System.Net.IPAddress.Parse("181.108.230.114"),
+},
+            new IPAddressIPv4E0M
+{
+    Id = 112,
+    Value = System.Net.IPAddress.Parse("110.12.93.199"),
+    ModelInner = new IPAddressIPv4E0MI
 {
     Id = 100,
-    Value = System.Net.IPAddress.Parse("167.0.164.228"),
-    ModelInner = new IPAddressIPv4E0MI
-{
-    Id = 88,
-    Value = System.Net.IPAddress.Parse("118.40.253.85"),
-    NullableValue = System.Net.IPAddress.Parse("43.101.63.214"),
-},
+    Value = System.Net.IPAddress.Parse("59.236.180.205"),
     NullableValue = null,
+},
+    NullableValue = System.Net.IPAddress.Parse("157.137.114.86"),
 },
             new IPAddressIPv4E0M
 {
-    Id = 105,
-    Value = System.Net.IPAddress.Parse("169.72.170.53"),
-    ModelInner = new IPAddressIPv4E0MI
-{
-    Id = 92,
-    Value = System.Net.IPAddress.Parse("99.153.249.0"),
-    NullableValue = System.Net.IPAddress.Parse("94.34.164.120"),
-},
-    NullableValue = null,
-},
-            new IPAddressIPv4E0M
-{
-    Id = 108,
-    Value = System.Net.IPAddress.Parse("250.86.166.96"),
-    ModelInner = new IPAddressIPv4E0MI
-{
-    Id = 101,
-    Value = System.Net.IPAddress.Parse("148.167.202.253"),
-    NullableValue = null,
-},
-    NullableValue = System.Net.IPAddress.Parse("117.192.24.246"),
-},
-            new IPAddressIPv4E0M
-{
-    Id = 114,
-    Value = System.Net.IPAddress.Parse("164.46.200.174"),
+    Id = 121,
+    Value = System.Net.IPAddress.Parse("185.152.249.104"),
     ModelInner = new IPAddressIPv4E0MI
 {
     Id = 103,
-    Value = System.Net.IPAddress.Parse("108.12.143.19"),
-    NullableValue = System.Net.IPAddress.Parse("36.89.174.12"),
-},
-    NullableValue = System.Net.IPAddress.Parse("138.203.79.63"),
-},
-            new IPAddressIPv4E0M
-{
-    Id = 118,
-    Value = System.Net.IPAddress.Parse("169.177.31.128"),
-    ModelInner = new IPAddressIPv4E0MI
-{
-    Id = 111,
-    Value = System.Net.IPAddress.Parse("151.82.92.78"),
-    NullableValue = System.Net.IPAddress.Parse("85.187.237.23"),
-},
-    NullableValue = System.Net.IPAddress.Parse("139.252.6.194"),
-},
-            new IPAddressIPv4E0M
-{
-    Id = 122,
-    Value = System.Net.IPAddress.Parse("52.40.86.89"),
-    ModelInner = new IPAddressIPv4E0MI
-{
-    Id = 116,
-    Value = System.Net.IPAddress.Parse("67.219.204.200"),
-    NullableValue = System.Net.IPAddress.Parse("218.114.14.221"),
+    Value = System.Net.IPAddress.Parse("43.9.219.125"),
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new IPAddressIPv4E0M
 {
-    Id = 123,
-    Value = System.Net.IPAddress.Parse("243.11.60.233"),
+    Id = 124,
+    Value = System.Net.IPAddress.Parse("80.40.69.156"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 119,
-    Value = System.Net.IPAddress.Parse("241.136.133.64"),
-    NullableValue = System.Net.IPAddress.Parse("24.172.197.51"),
+    Id = 106,
+    Value = System.Net.IPAddress.Parse("63.186.65.178"),
+    NullableValue = System.Net.IPAddress.Parse("150.122.28.177"),
 },
-    NullableValue = System.Net.IPAddress.Parse("16.200.170.159"),
+    NullableValue = System.Net.IPAddress.Parse("7.49.147.184"),
 },
             new IPAddressIPv4E0M
 {
-    Id = 130,
-    Value = System.Net.IPAddress.Parse("142.123.91.195"),
+    Id = 126,
+    Value = System.Net.IPAddress.Parse("35.216.149.174"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 128,
-    Value = System.Net.IPAddress.Parse("84.19.251.88"),
-    NullableValue = System.Net.IPAddress.Parse("23.232.26.228"),
+    Id = 113,
+    Value = System.Net.IPAddress.Parse("167.13.50.45"),
+    NullableValue = System.Net.IPAddress.Parse("193.34.197.43"),
 },
-    NullableValue = System.Net.IPAddress.Parse("136.93.21.43"),
+    NullableValue = System.Net.IPAddress.Parse("238.157.93.79"),
+},
+            new IPAddressIPv4E0M
+{
+    Id = 135,
+    Value = System.Net.IPAddress.Parse("186.234.219.92"),
+    ModelInner = new IPAddressIPv4E0MI
+{
+    Id = 121,
+    Value = System.Net.IPAddress.Parse("81.186.192.71"),
+    NullableValue = null,
+},
+    NullableValue = null,
 },
             new IPAddressIPv4E0M
 {
     Id = 137,
-    Value = System.Net.IPAddress.Parse("130.48.1.105"),
+    Value = System.Net.IPAddress.Parse("63.42.139.183"),
     ModelInner = new IPAddressIPv4E0MI
 {
     Id = 130,
-    Value = System.Net.IPAddress.Parse("6.228.207.213"),
-    NullableValue = System.Net.IPAddress.Parse("99.65.64.52"),
+    Value = System.Net.IPAddress.Parse("231.95.212.99"),
+    NullableValue = null,
 },
-    NullableValue = System.Net.IPAddress.Parse("202.20.22.44"),
+    NullableValue = System.Net.IPAddress.Parse("52.249.254.245"),
+},
+            new IPAddressIPv4E0M
+{
+    Id = 140,
+    Value = System.Net.IPAddress.Parse("151.235.161.69"),
+    ModelInner = new IPAddressIPv4E0MI
+{
+    Id = 134,
+    Value = System.Net.IPAddress.Parse("194.229.51.113"),
+    NullableValue = null,
+},
+    NullableValue = null,
 },
             new IPAddressIPv4E0M
 {
     Id = 146,
-    Value = System.Net.IPAddress.Parse("157.86.70.184"),
+    Value = System.Net.IPAddress.Parse("206.175.3.65"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 138,
-    Value = System.Net.IPAddress.Parse("222.46.202.231"),
-    NullableValue = System.Net.IPAddress.Parse("56.245.197.163"),
-},
+    Id = 135,
+    Value = System.Net.IPAddress.Parse("52.23.231.215"),
     NullableValue = null,
+},
+    NullableValue = System.Net.IPAddress.Parse("59.10.140.205"),
 },
             new IPAddressIPv4E0M
 {
-    Id = 148,
-    Value = System.Net.IPAddress.Parse("84.246.221.49"),
+    Id = 153,
+    Value = System.Net.IPAddress.Parse("181.75.111.52"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 143,
-    Value = System.Net.IPAddress.Parse("206.221.231.49"),
-    NullableValue = System.Net.IPAddress.Parse("220.83.12.27"),
-},
+    Id = 139,
+    Value = System.Net.IPAddress.Parse("6.80.69.213"),
     NullableValue = null,
 },
-            new IPAddressIPv4E0M
-{
-    Id = 154,
-    Value = System.Net.IPAddress.Parse("107.100.30.211"),
-    ModelInner = new IPAddressIPv4E0MI
-{
-    Id = 150,
-    Value = System.Net.IPAddress.Parse("181.80.166.133"),
-    NullableValue = null,
-},
-    NullableValue = System.Net.IPAddress.Parse("72.249.62.150"),
+    NullableValue = System.Net.IPAddress.Parse("244.242.209.57"),
 },
             new IPAddressIPv4E0M
-{
-    Id = 157,
-    Value = System.Net.IPAddress.Parse("79.48.201.225"),
-    ModelInner = new IPAddressIPv4E0MI
 {
     Id = 158,
-    Value = System.Net.IPAddress.Parse("43.150.207.91"),
+    Value = System.Net.IPAddress.Parse("113.244.199.200"),
+    ModelInner = new IPAddressIPv4E0MI
+{
+    Id = 141,
+    Value = System.Net.IPAddress.Parse("120.110.29.136"),
     NullableValue = null,
 },
-    NullableValue = System.Net.IPAddress.Parse("214.177.8.49"),
+    NullableValue = System.Net.IPAddress.Parse("175.29.125.154"),
 },
             new IPAddressIPv4E0M
 {
-    Id = 166,
-    Value = System.Net.IPAddress.Parse("240.198.79.118"),
+    Id = 162,
+    Value = System.Net.IPAddress.Parse("72.235.127.130"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 167,
-    Value = System.Net.IPAddress.Parse("56.89.37.237"),
-    NullableValue = System.Net.IPAddress.Parse("207.237.81.229"),
+    Id = 142,
+    Value = System.Net.IPAddress.Parse("225.117.205.182"),
+    NullableValue = null,
 },
-    NullableValue = System.Net.IPAddress.Parse("179.64.51.129"),
+    NullableValue = System.Net.IPAddress.Parse("123.142.210.164"),
 },
             new IPAddressIPv4E0M
 {
-    Id = 173,
-    Value = System.Net.IPAddress.Parse("61.237.120.187"),
+    Id = 169,
+    Value = System.Net.IPAddress.Parse("126.252.52.40"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 173,
-    Value = System.Net.IPAddress.Parse("181.94.163.219"),
-    NullableValue = null,
-},
-    NullableValue = null,
-},
-            new IPAddressIPv4E0M
-{
-    Id = 174,
-    Value = System.Net.IPAddress.Parse("31.19.78.199"),
-    ModelInner = new IPAddressIPv4E0MI
-{
-    Id = 180,
-    Value = System.Net.IPAddress.Parse("48.183.56.2"),
+    Id = 144,
+    Value = System.Net.IPAddress.Parse("186.31.124.155"),
     NullableValue = null,
 },
     NullableValue = null,
@@ -436,14 +400,50 @@ namespace Tests
             new IPAddressIPv4E0M
 {
     Id = 177,
-    Value = System.Net.IPAddress.Parse("120.142.126.241"),
+    Value = System.Net.IPAddress.Parse("6.36.116.16"),
     ModelInner = new IPAddressIPv4E0MI
 {
-    Id = 189,
-    Value = System.Net.IPAddress.Parse("95.160.129.85"),
+    Id = 151,
+    Value = System.Net.IPAddress.Parse("189.22.73.250"),
     NullableValue = null,
 },
+    NullableValue = System.Net.IPAddress.Parse("176.191.146.184"),
+},
+            new IPAddressIPv4E0M
+{
+    Id = 180,
+    Value = System.Net.IPAddress.Parse("144.28.51.222"),
+    ModelInner = new IPAddressIPv4E0MI
+{
+    Id = 157,
+    Value = System.Net.IPAddress.Parse("10.63.63.125"),
     NullableValue = null,
+},
+    NullableValue = System.Net.IPAddress.Parse("92.96.152.111"),
+},
+            new IPAddressIPv4E0M
+{
+    Id = 185,
+    Value = System.Net.IPAddress.Parse("21.209.117.93"),
+    ModelInner = new IPAddressIPv4E0MI
+{
+    Id = 159,
+    Value = System.Net.IPAddress.Parse("101.184.108.47"),
+    NullableValue = null,
+},
+    NullableValue = System.Net.IPAddress.Parse("75.27.80.112"),
+},
+            new IPAddressIPv4E0M
+{
+    Id = 192,
+    Value = System.Net.IPAddress.Parse("145.165.251.142"),
+    ModelInner = new IPAddressIPv4E0MI
+{
+    Id = 160,
+    Value = System.Net.IPAddress.Parse("62.83.50.197"),
+    NullableValue = null,
+},
+    NullableValue = System.Net.IPAddress.Parse("93.215.200.37"),
 },
         };
 

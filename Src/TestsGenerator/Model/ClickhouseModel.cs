@@ -16,10 +16,11 @@ namespace TestsGenerator.Model
             int size = -1,
             bool mustHaveSize = false,
             bool isReferenceType = false,
-            int arrayDimensions = 1)
+            int arrayDimensions = 1,
+            string typeNamePostfix = "")
             : base(
                   new ClickhouseTypeInfo("Int32", "Int32", "System.Int32", EnumerableType.SingleType, 0, false, false), 
-                  new ClickhouseTypeInfo(clickHouseType, typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType, arrayDimensions), 
+                  new ClickhouseTypeInfo(clickHouseType, typeName, typeFullName, enumerableType, size, mustHaveSize, isReferenceType, arrayDimensions, typeNamePostfix: typeNamePostfix), 
                   valueStorageFactory)
         {
         }
