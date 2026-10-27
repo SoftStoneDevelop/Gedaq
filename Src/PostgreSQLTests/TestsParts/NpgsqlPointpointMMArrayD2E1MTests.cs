@@ -30,190 +30,161 @@ namespace Tests
         {
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 5,
+    Id = 4,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.4257334578160119d, y: 0.6641831661553284d), new NpgsqlTypes.NpgsqlPoint(x: 0.22841074924019011d, y: 0.7111515872838713d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.8216793847236148d, y: 0.2708610936517528d), new NpgsqlTypes.NpgsqlPoint(x: 0.921029346268055d, y: 0.17421205903301984d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.12775755781132891d, y: 0.02933435819275565d), new NpgsqlTypes.NpgsqlPoint(x: 0.9420937879422169d, y: 0.2652457441533562d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7156000980626178d, y: 0.08899343451891806d), new NpgsqlTypes.NpgsqlPoint(x: 0.6147285212718342d, y: 0.9443618335871375d), }, },
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 11,
+    Id = 8,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.41537455981901494d, y: 0.29373478777025896d), new NpgsqlTypes.NpgsqlPoint(x: 0.700645759800045d, y: 0.3838590687642286d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7531240501540651d, y: 0.056076625429475446d), new NpgsqlTypes.NpgsqlPoint(x: 0.8307646569437991d, y: 0.284231057406634d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.002415362312630731d, y: 0.798859188573455d), new NpgsqlTypes.NpgsqlPoint(x: 0.06808311451589633d, y: 0.49757996174768493d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.1899243242858164d, y: 0.0036907966476839027d), new NpgsqlTypes.NpgsqlPoint(x: 0.44748532627307946d, y: 0.2544735784632868d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
     Id = 9,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.20702736335457206d, y: 0.028269505890049063d), new NpgsqlTypes.NpgsqlPoint(x: 0.08316980937286511d, y: 0.8263073754109128d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.4707776984804585d, y: 0.39982166509781314d), new NpgsqlTypes.NpgsqlPoint(x: 0.9933023090523706d, y: 0.8072060443182879d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6379486485019692d, y: 0.11793294028892543d), new NpgsqlTypes.NpgsqlPoint(x: 0.15376087665155724d, y: 0.791369539641334d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.35062826021139504d, y: 0.7165746369321139d), new NpgsqlTypes.NpgsqlPoint(x: 0.5385499551528224d, y: 0.18473532901036016d), }, },
     NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.2731532013480633d, y: 0.507998837902658d), new NpgsqlTypes.NpgsqlPoint(x: 0.7303704267092037d, y: 0.6906429200207466d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9463080319910178d, y: 0.5636211262424721d), new NpgsqlTypes.NpgsqlPoint(x: 0.6971101582357433d, y: 0.4203572128983363d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.2116274920363278d, y: 0.597507721558618d), new NpgsqlTypes.NpgsqlPoint(x: 0.9107478370705561d, y: 0.9920978009908729d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.05553778910546936d, y: 0.15729543606967755d), new NpgsqlTypes.NpgsqlPoint(x: 0.35546105310973675d, y: 0.09006290650591953d), }, },
 },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.905227422371794d, y: 0.43914175110292375d), new NpgsqlTypes.NpgsqlPoint(x: 0.8052839287282835d, y: 0.5428826628778348d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7233657127751584d, y: 0.0318903575715801d), new NpgsqlTypes.NpgsqlPoint(x: 0.5515396484678529d, y: 0.2319796818938905d), }, },
+    NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 18,
+    Id = 16,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.13027131498609734d, y: 0.038077482015195896d), new NpgsqlTypes.NpgsqlPoint(x: 0.8236134013309089d, y: 0.8432477845450872d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7349961613217048d, y: 0.9031881053902505d), new NpgsqlTypes.NpgsqlPoint(x: 0.11146597114321566d, y: 0.5655042352806852d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.7173385310387641d, y: 0.3486013178033788d), new NpgsqlTypes.NpgsqlPoint(x: 0.189659742998057d, y: 0.9945516259282476d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7238672244282403d, y: 0.5908253455559641d), new NpgsqlTypes.NpgsqlPoint(x: 0.4054693749082756d, y: 0.6219718500253677d), }, },
     ModelInner = null,
-    NullableValue = null,
-},
-            new NpgsqlPointpointMMArrayD2E1M
-{
-    Id = 24,
-    Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.7451711783791141d, y: 0.07285241958016009d), new NpgsqlTypes.NpgsqlPoint(x: 0.6118164116610167d, y: 0.5120313544346802d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.17125418047946017d, y: 0.2284863288646124d), new NpgsqlTypes.NpgsqlPoint(x: 0.062220322126913086d, y: 0.9348403002076905d), }, },
-    ModelInner = new NpgsqlPointpointMMArrayD2E1MI
-{
-    Id = 17,
-    Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.04414280555859185d, y: 0.28258376649891037d), new NpgsqlTypes.NpgsqlPoint(x: 0.9046300272990567d, y: 0.38819960443665724d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9760108721330301d, y: 0.051690123537618815d), new NpgsqlTypes.NpgsqlPoint(x: 0.7980157228242306d, y: 0.8133489141843482d), }, },
-    NullableValue = null,
-},
     NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.7420676750456078d, y: 0.8001491369766112d), new NpgsqlTypes.NpgsqlPoint(x: 0.1392601249199531d, y: 0.8886951857401588d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.3256234816464333d, y: 0.7765973076217887d), new NpgsqlTypes.NpgsqlPoint(x: 0.9603103262022099d, y: 0.16379807558769677d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.49870855051429575d, y: 0.7473096760971492d), new NpgsqlTypes.NpgsqlPoint(x: 0.9534046930453087d, y: 0.681842015566457d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.5124067201007929d, y: 0.62503349534842d), new NpgsqlTypes.NpgsqlPoint(x: 0.7059599206125817d, y: 0.9153147729769195d), }, },
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
     Id = 25,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.7940770022296066d, y: 0.5647374307278387d), new NpgsqlTypes.NpgsqlPoint(x: 0.3384511622722306d, y: 0.3986885175377578d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.3999657635563818d, y: 0.3922048182060779d), new NpgsqlTypes.NpgsqlPoint(x: 0.17103479191487592d, y: 0.3492007659305001d), }, },
-    ModelInner = null,
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.756870571597217d, y: 0.7997674642949534d), new NpgsqlTypes.NpgsqlPoint(x: 0.5368050170201922d, y: 0.5433077898119254d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.8489160439721503d, y: 0.688639603609956d), new NpgsqlTypes.NpgsqlPoint(x: 0.8351951847910266d, y: 0.6116620041989788d), }, },
-},
-            new NpgsqlPointpointMMArrayD2E1M
-{
-    Id = 27,
-    Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.43444306367149965d, y: 0.3574263404536405d), new NpgsqlTypes.NpgsqlPoint(x: 0.978829238317098d, y: 0.060266889287856396d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9858378363050349d, y: 0.16182064615381875d), new NpgsqlTypes.NpgsqlPoint(x: 0.36802707905115095d, y: 0.9672002424478938d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.3647122551846156d, y: 0.08012159678310549d), new NpgsqlTypes.NpgsqlPoint(x: 0.02293854427493003d, y: 0.5423956268798282d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9495119022717028d, y: 0.6838463924754811d), new NpgsqlTypes.NpgsqlPoint(x: 0.4274575347554356d, y: 0.10751240982764132d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
-    Id = 23,
+    Id = 16,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6395647065984953d, y: 0.09782501651788877d), new NpgsqlTypes.NpgsqlPoint(x: 0.30001775848998524d, y: 0.8144196484750468d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6908495418916274d, y: 0.3858288321892219d), new NpgsqlTypes.NpgsqlPoint(x: 0.7167135692096984d, y: 0.6738819228523705d), }, },
-    NullableValue = null,
-},
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.42998426259436184d, y: 0.19192630111424402d), new NpgsqlTypes.NpgsqlPoint(x: 0.8526458364572734d, y: 0.04237667716701221d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7401319190046086d, y: 0.4207764805819114d), new NpgsqlTypes.NpgsqlPoint(x: 0.702254773957007d, y: 0.8122207810973213d), }, },
     NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.18880767642334206d, y: 0.49486440601471793d), new NpgsqlTypes.NpgsqlPoint(x: 0.8929906140444077d, y: 0.07751564342896478d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.3133802764981376d, y: 0.6869854548758579d), new NpgsqlTypes.NpgsqlPoint(x: 0.06604674078615169d, y: 0.18149781430726164d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.24033963561627036d, y: 0.7599541230494071d), new NpgsqlTypes.NpgsqlPoint(x: 0.5890349289672879d, y: 0.18091101878141236d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.4158629588515279d, y: 0.561322132533275d), new NpgsqlTypes.NpgsqlPoint(x: 0.7644552515528018d, y: 0.7456117542864841d), }, },
+},
+    NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 32,
+    Id = 28,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.7730188101381719d, y: 0.415465631319639d), new NpgsqlTypes.NpgsqlPoint(x: 0.7558564455423493d, y: 0.8781956527148754d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7349552711382707d, y: 0.7778990710502097d), new NpgsqlTypes.NpgsqlPoint(x: 0.11990522393192349d, y: 0.04591245847708858d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.10071345732660497d, y: 0.33076724369472477d), new NpgsqlTypes.NpgsqlPoint(x: 0.9569323207546917d, y: 0.5017776331767516d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9651073275430322d, y: 0.6636542082808591d), new NpgsqlTypes.NpgsqlPoint(x: 0.6171240428621712d, y: 0.9453840978088716d), }, },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.8437319445234686d, y: 0.14712882436024688d), new NpgsqlTypes.NpgsqlPoint(x: 0.009772170435744965d, y: 0.11732686307273421d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6184809966672435d, y: 0.7188591779116881d), new NpgsqlTypes.NpgsqlPoint(x: 0.054321802709944245d, y: 0.7233668623554366d), }, },
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
     Id = 34,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.5414997780054965d, y: 0.31373513960933497d), new NpgsqlTypes.NpgsqlPoint(x: 0.14793748123222794d, y: 0.21424820015128165d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6682825939510897d, y: 0.15574754403720614d), new NpgsqlTypes.NpgsqlPoint(x: 0.29492853809268127d, y: 0.9567602997218895d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6839379593340257d, y: 0.655789816057891d), new NpgsqlTypes.NpgsqlPoint(x: 0.6059283530652891d, y: 0.2938919700442769d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9962384639085539d, y: 0.7803971123141251d), new NpgsqlTypes.NpgsqlPoint(x: 0.0699957799057146d, y: 0.4348837854040365d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
-    Id = 32,
+    Id = 18,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.9865788892457068d, y: 0.5801682492003661d), new NpgsqlTypes.NpgsqlPoint(x: 0.8639847738459758d, y: 0.15994951042307137d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.023617720680872423d, y: 0.6722769081194809d), new NpgsqlTypes.NpgsqlPoint(x: 0.4469068550041728d, y: 0.9703991983244841d), }, },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6621446956420391d, y: 0.7072440201015453d), new NpgsqlTypes.NpgsqlPoint(x: 0.6958324406396605d, y: 0.48206927534927313d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.10756890543546072d, y: 0.5117036841323856d), new NpgsqlTypes.NpgsqlPoint(x: 0.7998931810431827d, y: 0.8254702546773294d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.2934151486190859d, y: 0.4910894589746777d), new NpgsqlTypes.NpgsqlPoint(x: 0.12876467694591898d, y: 0.23584180756595052d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.3650057283267545d, y: 0.4269375755787934d), new NpgsqlTypes.NpgsqlPoint(x: 0.1571002019223987d, y: 0.3347032298822795d), }, },
+    NullableValue = null,
 },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.031373221407672736d, y: 0.1283349212421101d), new NpgsqlTypes.NpgsqlPoint(x: 0.4945142608690255d, y: 0.3221208200914274d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.600429190868179d, y: 0.8004827523022452d), new NpgsqlTypes.NpgsqlPoint(x: 0.26348799378728227d, y: 0.6537103269408888d), }, },
+    NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 42,
+    Id = 37,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.20572006106122365d, y: 0.7963594377443137d), new NpgsqlTypes.NpgsqlPoint(x: 0.4951234845733683d, y: 0.10234517420761102d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.4065342915532819d, y: 0.10803684752373954d), new NpgsqlTypes.NpgsqlPoint(x: 0.8901015890509368d, y: 0.5705384849774436d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.48269241693485154d, y: 0.4479910276579748d), new NpgsqlTypes.NpgsqlPoint(x: 0.707617724057908d, y: 0.6547162440887623d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.34723572252031487d, y: 0.7907366902751859d), new NpgsqlTypes.NpgsqlPoint(x: 0.5777009415650307d, y: 0.23552838735458448d), }, },
     ModelInner = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6453817429845412d, y: 0.6011898095989942d), new NpgsqlTypes.NpgsqlPoint(x: 0.8076210763802603d, y: 0.42472575792249134d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6890270701387172d, y: 0.404712319287135d), new NpgsqlTypes.NpgsqlPoint(x: 0.4066891155933796d, y: 0.7494263308199901d), }, },
+},
+            new NpgsqlPointpointMMArrayD2E1M
+{
+    Id = 39,
+    Value = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6077435638203276d, y: 0.6056956595165011d), new NpgsqlTypes.NpgsqlPoint(x: 0.8725482562354886d, y: 0.7025515833580486d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.952811603361038d, y: 0.8750309382227537d), new NpgsqlTypes.NpgsqlPoint(x: 0.026536427361212533d, y: 0.7032962864391619d), }, },
+    ModelInner = new NpgsqlPointpointMMArrayD2E1MI
+{
+    Id = 20,
+    Value = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.8694439581178031d, y: 0.01725455033454204d), new NpgsqlTypes.NpgsqlPoint(x: 0.441224491901109d, y: 0.23126868393273847d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.5535570074698316d, y: 0.09389670171762587d), new NpgsqlTypes.NpgsqlPoint(x: 0.15817220210164418d, y: 0.06919719008243852d), }, },
+    NullableValue = null,
+},
     NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
     Id = 47,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.34254457556874773d, y: 0.2571483124956997d), new NpgsqlTypes.NpgsqlPoint(x: 0.8531773205444254d, y: 0.0698813927787445d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.08204228940972236d, y: 0.5252073075085933d), new NpgsqlTypes.NpgsqlPoint(x: 0.8141878518070331d, y: 0.7333028050830419d), }, },
-    ModelInner = new NpgsqlPointpointMMArrayD2E1MI
-{
-    Id = 41,
-    Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.9203446537119965d, y: 0.0484961571128657d), new NpgsqlTypes.NpgsqlPoint(x: 0.09528884425651496d, y: 0.09362643607154708d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6326430352132587d, y: 0.8191533136556876d), new NpgsqlTypes.NpgsqlPoint(x: 0.8741472108702245d, y: 0.3528926758419031d), }, },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6102231310375363d, y: 0.20908001474908688d), new NpgsqlTypes.NpgsqlPoint(x: 0.7970035786526962d, y: 0.7619788383492628d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.38841503773845176d, y: 0.4226634854693523d), new NpgsqlTypes.NpgsqlPoint(x: 0.6465128581236398d, y: 0.7725470522411588d), }, },
-},
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6595071373738438d, y: 0.38336731939678814d), new NpgsqlTypes.NpgsqlPoint(x: 0.9541109518018138d, y: 0.2626681133775659d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.018221613358579303d, y: 0.9687725445122504d), new NpgsqlTypes.NpgsqlPoint(x: 0.4097307126526891d, y: 0.7419082121532954d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.11779465529898103d, y: 0.9688175251606918d), new NpgsqlTypes.NpgsqlPoint(x: 0.8775721111963666d, y: 0.7469161717542291d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7020660507575335d, y: 0.9742484359067105d), new NpgsqlTypes.NpgsqlPoint(x: 0.3905096046920449d, y: 0.8912120823895423d), }, },
+    ModelInner = null,
+    NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
     Id = 55,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.5481990579490563d, y: 0.9901500426074183d), new NpgsqlTypes.NpgsqlPoint(x: 0.5730753569683287d, y: 0.5830312809463056d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.30692976111273207d, y: 0.4043303594864639d), new NpgsqlTypes.NpgsqlPoint(x: 0.5029675684377136d, y: 0.7860783659988027d), }, },
-    ModelInner = null,
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.3039115932375902d, y: 0.4555976124682445d), new NpgsqlTypes.NpgsqlPoint(x: 0.2846694044757626d, y: 0.9980130478686484d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.43037683702508367d, y: 0.8462035620369706d), new NpgsqlTypes.NpgsqlPoint(x: 0.5146270132880528d, y: 0.49305288574113637d), }, },
-},
-            new NpgsqlPointpointMMArrayD2E1M
-{
-    Id = 56,
-    Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.2986821380172553d, y: 0.29211225714086264d), new NpgsqlTypes.NpgsqlPoint(x: 0.9127171140072621d, y: 0.8583164144535432d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.030146544543661835d, y: 0.11093032292854144d), new NpgsqlTypes.NpgsqlPoint(x: 0.9624336707237837d, y: 0.8305485752612157d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.39713011009284127d, y: 0.9436965941325755d), new NpgsqlTypes.NpgsqlPoint(x: 0.45592984610569587d, y: 0.3517815120036152d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9247746179634105d, y: 0.6838220611292893d), new NpgsqlTypes.NpgsqlPoint(x: 0.3190595448339576d, y: 0.6078770055561742d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
-    Id = 49,
+    Id = 29,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.03127700421319135d, y: 0.6296502269914852d), new NpgsqlTypes.NpgsqlPoint(x: 0.23483486892534033d, y: 0.5706331872622348d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9446641550372029d, y: 0.26278269978258506d), new NpgsqlTypes.NpgsqlPoint(x: 0.08590425077941444d, y: 0.5603170276579671d), }, },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.10168641301061343d, y: 0.745599417528751d), new NpgsqlTypes.NpgsqlPoint(x: 0.9810216751628663d, y: 0.66967246384506d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6553241983757383d, y: 0.6580135406026016d), new NpgsqlTypes.NpgsqlPoint(x: 0.4531011383623571d, y: 0.4238906835311482d), }, },
-},
-    NullableValue = null,
-},
-            new NpgsqlPointpointMMArrayD2E1M
-{
-    Id = 62,
-    Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.10373281795788147d, y: 0.7335507002660471d), new NpgsqlTypes.NpgsqlPoint(x: 0.3325004592151236d, y: 0.9098903700483125d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.16901066388971198d, y: 0.265250158793473d), new NpgsqlTypes.NpgsqlPoint(x: 0.700227000688242d, y: 0.1647920960735958d), }, },
-    ModelInner = null,
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.7449140938750622d, y: 0.418711378350794d), new NpgsqlTypes.NpgsqlPoint(x: 0.39403066924799546d, y: 0.2491079778671269d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9353891521668923d, y: 0.0845248454290426d), new NpgsqlTypes.NpgsqlPoint(x: 0.9081734302053549d, y: 0.07668391982404932d), }, },
-},
-            new NpgsqlPointpointMMArrayD2E1M
-{
-    Id = 69,
-    Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.06555587718187106d, y: 0.859639649092951d), new NpgsqlTypes.NpgsqlPoint(x: 0.5202438701128179d, y: 0.6176861916362548d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.8119388825409692d, y: 0.8284206046212795d), new NpgsqlTypes.NpgsqlPoint(x: 0.1669589231499059d, y: 0.9958525326789084d), }, },
-    ModelInner = new NpgsqlPointpointMMArrayD2E1MI
-{
-    Id = 58,
-    Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.33059640561380155d, y: 0.5874947900897493d), new NpgsqlTypes.NpgsqlPoint(x: 0.3670946201226657d, y: 0.3705389996477161d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.015199713644103885d, y: 0.8752122269213695d), new NpgsqlTypes.NpgsqlPoint(x: 0.37904971303841295d, y: 0.483575870562183d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6291535478174358d, y: 0.7112527463905736d), new NpgsqlTypes.NpgsqlPoint(x: 0.17337365982732988d, y: 0.49599416402691343d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.19052405023196828d, y: 0.1447106636692218d), new NpgsqlTypes.NpgsqlPoint(x: 0.292971016068985d, y: 0.5490747554150239d), }, },
     NullableValue = null,
 },
     NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 72,
+    Id = 61,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.532768283411663d, y: 0.07744413995317934d), new NpgsqlTypes.NpgsqlPoint(x: 0.34054806564423223d, y: 0.17343874027862716d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.8501342928439585d, y: 0.25560329121911307d), new NpgsqlTypes.NpgsqlPoint(x: 0.44290381882750973d, y: 0.7960499198005058d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.48106226417105113d, y: 0.6511688106021561d), new NpgsqlTypes.NpgsqlPoint(x: 0.36530670423949263d, y: 0.15868913922069594d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.48514317071732405d, y: 0.09691241896363678d), new NpgsqlTypes.NpgsqlPoint(x: 0.9417665419228366d, y: 0.777514749154615d), }, },
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 78,
+    Id = 68,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.8539203553558956d, y: 0.8526429612562547d), new NpgsqlTypes.NpgsqlPoint(x: 0.6285512647754521d, y: 0.263547611134738d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.3022211568869707d, y: 0.17541272281300113d), new NpgsqlTypes.NpgsqlPoint(x: 0.7024882516509631d, y: 0.15905577078997346d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.4657200920592828d, y: 0.007807807577824066d), new NpgsqlTypes.NpgsqlPoint(x: 0.8670936756685118d, y: 0.20444282560831306d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6033983912698456d, y: 0.17355366587038912d), new NpgsqlTypes.NpgsqlPoint(x: 0.6761656409231481d, y: 0.882515402685125d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
-    Id = 64,
+    Id = 37,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.20432758657204186d, y: 0.31372746511965255d), new NpgsqlTypes.NpgsqlPoint(x: 0.4704372937789859d, y: 0.16889120473881103d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6924749050027429d, y: 0.44353640551679485d), new NpgsqlTypes.NpgsqlPoint(x: 0.030750941787340613d, y: 0.134079462442373d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.7221408915828041d, y: 0.8835337396790363d), new NpgsqlTypes.NpgsqlPoint(x: 0.5469295164479079d, y: 0.8783891219182612d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.31978862122270535d, y: 0.3386532494341199d), new NpgsqlTypes.NpgsqlPoint(x: 0.5981406373911063d, y: 0.6412708540026688d), }, },
+    NullableValue = null,
+},
+    NullableValue = null,
+},
+            new NpgsqlPointpointMMArrayD2E1M
+{
+    Id = 71,
+    Value = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.4517725392934322d, y: 0.25500773252868203d), new NpgsqlTypes.NpgsqlPoint(x: 0.7370162324256524d, y: 0.5062853697859182d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.10159505870419372d, y: 0.038722565205894455d), new NpgsqlTypes.NpgsqlPoint(x: 0.33889959102231637d, y: 0.37069591234025623d), }, },
+    ModelInner = null,
     NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.12309435852581929d, y: 0.9278393140826144d), new NpgsqlTypes.NpgsqlPoint(x: 0.46677236642294484d, y: 0.8592101682795349d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.8483195938176283d, y: 0.09178998701888641d), new NpgsqlTypes.NpgsqlPoint(x: 0.36196627943935333d, y: 0.6349047002812521d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.21954761771859388d, y: 0.8987954064459789d), new NpgsqlTypes.NpgsqlPoint(x: 0.7539913896462037d, y: 0.3544534749090793d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.39333415662559335d, y: 0.6802384338489376d), new NpgsqlTypes.NpgsqlPoint(x: 0.46843950453578276d, y: 0.17970703456660775d), }, },
+},
+            new NpgsqlPointpointMMArrayD2E1M
+{
+    Id = 77,
+    Value = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.7980865143317799d, y: 0.929658232710286d), new NpgsqlTypes.NpgsqlPoint(x: 0.32037867564641487d, y: 0.17005341803839635d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.5288224954998447d, y: 0.9586388647252386d), new NpgsqlTypes.NpgsqlPoint(x: 0.11805336910081776d, y: 0.4495672018673237d), }, },
+    ModelInner = new NpgsqlPointpointMMArrayD2E1MI
+{
+    Id = 39,
+    Value = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.9493688449064017d, y: 0.8391032043992646d), new NpgsqlTypes.NpgsqlPoint(x: 0.6608369879812324d, y: 0.78472729646821d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7681037433447013d, y: 0.6038494525092878d), new NpgsqlTypes.NpgsqlPoint(x: 0.8964010411849976d, y: 0.6008846976810939d), }, },
+    NullableValue = null,
 },
     NullableValue = null,
 },
@@ -221,221 +192,242 @@ new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.123094358525
 {
     Id = 81,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.9144354459300429d, y: 0.22872870743194673d), new NpgsqlTypes.NpgsqlPoint(x: 0.9315276650467536d, y: 0.7851233585128703d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9145882204436484d, y: 0.414740177106407d), new NpgsqlTypes.NpgsqlPoint(x: 0.45721674843436677d, y: 0.9731416561585811d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.4866700327006722d, y: 0.9103821582116726d), new NpgsqlTypes.NpgsqlPoint(x: 0.8561086859833407d, y: 0.47592557185472706d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.2864529570061125d, y: 0.43178598024951953d), new NpgsqlTypes.NpgsqlPoint(x: 0.6738338301280368d, y: 0.8503553792504155d), }, },
     ModelInner = null,
-    NullableValue = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.39531029384017613d, y: 0.4474787447551699d), new NpgsqlTypes.NpgsqlPoint(x: 0.8582457983973821d, y: 0.3880582872923195d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7786690784072695d, y: 0.3038457602544272d), new NpgsqlTypes.NpgsqlPoint(x: 0.7700635512955416d, y: 0.6841220622438937d), }, },
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 86,
+    Id = 85,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.40021896000326784d, y: 0.9363411335134436d), new NpgsqlTypes.NpgsqlPoint(x: 0.015036311720237783d, y: 0.7529625452258811d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7697262312603533d, y: 0.9829295737626095d), new NpgsqlTypes.NpgsqlPoint(x: 0.47181912277523785d, y: 0.4943353750355509d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.3290342710354047d, y: 0.21140507843870937d), new NpgsqlTypes.NpgsqlPoint(x: 0.0505957922743413d, y: 0.6944024652581151d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.10546800057103256d, y: 0.8494202610725021d), new NpgsqlTypes.NpgsqlPoint(x: 0.7974417786864559d, y: 0.47812722074856995d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
-    Id = 70,
+    Id = 48,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.3979447669293098d, y: 0.7148983631179515d), new NpgsqlTypes.NpgsqlPoint(x: 0.1600580420265365d, y: 0.2522585103209922d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7318352424826425d, y: 0.47752829866450963d), new NpgsqlTypes.NpgsqlPoint(x: 0.8526478253007591d, y: 0.6938365503406378d), }, },
-    NullableValue = null,
-},
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.23816680427193004d, y: 0.22338981580322836d), new NpgsqlTypes.NpgsqlPoint(x: 0.4396071494724869d, y: 0.6447671388704789d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.5904391620304328d, y: 0.8408613505754966d), new NpgsqlTypes.NpgsqlPoint(x: 0.39623991239462286d, y: 0.9607027054098751d), }, },
     NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.9942867941837806d, y: 0.0005374601149072955d), new NpgsqlTypes.NpgsqlPoint(x: 0.2501223180817048d, y: 0.8048563595550835d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.2410720326217678d, y: 0.7086288164267077d), new NpgsqlTypes.NpgsqlPoint(x: 0.8230033509110101d, y: 0.01601977495348128d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.7953208397154627d, y: 0.27240986178818294d), new NpgsqlTypes.NpgsqlPoint(x: 0.13292192781047896d, y: 0.5757831664513939d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9206388454137712d, y: 0.13649130347661464d), new NpgsqlTypes.NpgsqlPoint(x: 0.37245686004610845d, y: 0.8785348522549139d), }, },
+},
+    NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 92,
+    Id = 89,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.3111342875044576d, y: 0.6988444557723519d), new NpgsqlTypes.NpgsqlPoint(x: 0.2600161622902798d, y: 0.13367602790456978d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.20448343959571336d, y: 0.8989007810596422d), new NpgsqlTypes.NpgsqlPoint(x: 0.10115106258374484d, y: 0.11666089129739277d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.9602039593098611d, y: 0.09014192208231475d), new NpgsqlTypes.NpgsqlPoint(x: 0.6712019920951959d, y: 0.6115381604396496d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.5064423111514563d, y: 0.9986483906158659d), new NpgsqlTypes.NpgsqlPoint(x: 0.6943119800249621d, y: 0.9881913684569218d), }, },
     ModelInner = null,
     NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6641027864693079d, y: 0.6182580022282507d), new NpgsqlTypes.NpgsqlPoint(x: 0.9434286179630456d, y: 0.06809511899895337d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.49342973523826283d, y: 0.7987100999539294d), new NpgsqlTypes.NpgsqlPoint(x: 0.453484025825892d, y: 0.3226794630676041d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.30126807426225d, y: 0.020671034176266923d), new NpgsqlTypes.NpgsqlPoint(x: 0.18916060130503443d, y: 0.5693398704360805d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9691349858773786d, y: 0.1822439289455018d), new NpgsqlTypes.NpgsqlPoint(x: 0.24923343337646242d, y: 0.583224994766155d), }, },
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
     Id = 98,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.21420135398468176d, y: 0.5004824790495426d), new NpgsqlTypes.NpgsqlPoint(x: 0.9548472005783928d, y: 0.035066986355824836d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.07547389250303416d, y: 0.2431556249816057d), new NpgsqlTypes.NpgsqlPoint(x: 0.2368541292560915d, y: 0.04551187319954386d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.024549285077049898d, y: 0.8298591090316575d), new NpgsqlTypes.NpgsqlPoint(x: 0.5999483220657627d, y: 0.9635788472363382d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6398678715501822d, y: 0.22212655551862504d), new NpgsqlTypes.NpgsqlPoint(x: 0.17266183923996803d, y: 0.6850883064373708d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
-    Id = 75,
+    Id = 54,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.2566409418970832d, y: 0.3766260984766998d), new NpgsqlTypes.NpgsqlPoint(x: 0.6517506001749734d, y: 0.06483383567628687d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.4657775057267446d, y: 0.0325094361600784d), new NpgsqlTypes.NpgsqlPoint(x: 0.02856655828135679d, y: 0.09560692421440709d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.9359496521824927d, y: 0.5222431765824962d), new NpgsqlTypes.NpgsqlPoint(x: 0.7810891657913029d, y: 0.2616616847058748d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9215395474933723d, y: 0.11211278884684472d), new NpgsqlTypes.NpgsqlPoint(x: 0.7455015200588039d, y: 0.7549938713356295d), }, },
     NullableValue = null,
 },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.41955317381259283d, y: 0.031218224550730977d), new NpgsqlTypes.NpgsqlPoint(x: 0.6761680917572498d, y: 0.23571300483907365d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.37435734395082165d, y: 0.7251768777328478d), new NpgsqlTypes.NpgsqlPoint(x: 0.8470827055372379d, y: 0.91158808557381d), }, },
+    NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 100,
+    Id = 102,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.5777717225740713d, y: 0.04333268512111177d), new NpgsqlTypes.NpgsqlPoint(x: 0.34904404178411386d, y: 0.5310445842004093d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.3893634585362915d, y: 0.739695945043034d), new NpgsqlTypes.NpgsqlPoint(x: 0.056130733080999806d, y: 0.41161807753665836d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.7806729474358397d, y: 0.504416901904829d), new NpgsqlTypes.NpgsqlPoint(x: 0.9578223069671725d, y: 0.7582830485044618d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.32651874722266394d, y: 0.37529071123820057d), new NpgsqlTypes.NpgsqlPoint(x: 0.016727253591892977d, y: 0.8529911940233716d), }, },
     ModelInner = null,
     NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.3054898978874958d, y: 0.7462844199396387d), new NpgsqlTypes.NpgsqlPoint(x: 0.4526839161654641d, y: 0.09317125012750138d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.014661268274163808d, y: 0.3944567405591578d), new NpgsqlTypes.NpgsqlPoint(x: 0.0736250905754362d, y: 0.6887614310604222d), }, },
-},
-            new NpgsqlPointpointMMArrayD2E1M
-{
-    Id = 108,
-    Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.3784600032878621d, y: 0.5619395267140289d), new NpgsqlTypes.NpgsqlPoint(x: 0.23483982035174056d, y: 0.42406191391198444d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.5802627053877877d, y: 0.39574420527682574d), new NpgsqlTypes.NpgsqlPoint(x: 0.452217863162919d, y: 0.956294415629584d), }, },
-    ModelInner = new NpgsqlPointpointMMArrayD2E1MI
-{
-    Id = 84,
-    Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.15358492217733066d, y: 0.015108233566773932d), new NpgsqlTypes.NpgsqlPoint(x: 0.11582903027530744d, y: 0.5393982336559813d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.737926754161654d, y: 0.5499317432705935d), new NpgsqlTypes.NpgsqlPoint(x: 0.783566325531858d, y: 0.04520308212311264d), }, },
-    NullableValue = null,
-},
-    NullableValue = null,
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.1315049879445387d, y: 0.9635040591390824d), new NpgsqlTypes.NpgsqlPoint(x: 0.7559361957120887d, y: 0.21403118902824103d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.5001986432815559d, y: 0.6658892240202205d), new NpgsqlTypes.NpgsqlPoint(x: 0.5900349102730879d, y: 0.9317172607862424d), }, },
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
     Id = 110,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.9302630268036911d, y: 0.45583166445254164d), new NpgsqlTypes.NpgsqlPoint(x: 0.5289656171653822d, y: 0.0760885337113042d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.4845478988214762d, y: 0.033524403840342165d), new NpgsqlTypes.NpgsqlPoint(x: 0.8411262872116634d, y: 0.9539293758106498d), }, },
-    ModelInner = null,
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6776505204008701d, y: 0.7591403759154366d), new NpgsqlTypes.NpgsqlPoint(x: 0.9248781234594282d, y: 0.308421561550248d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.12226364091956654d, y: 0.16907786522760315d), new NpgsqlTypes.NpgsqlPoint(x: 0.7930780092332557d, y: 0.033619828287960285d), }, },
-},
-            new NpgsqlPointpointMMArrayD2E1M
-{
-    Id = 113,
-    Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.975704242302211d, y: 0.59964444444051d), new NpgsqlTypes.NpgsqlPoint(x: 0.5841959128057702d, y: 0.13321557626501446d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.2688402140585334d, y: 0.4373961585593831d), new NpgsqlTypes.NpgsqlPoint(x: 0.0899759041796091d, y: 0.4406410382905539d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.44390210046516154d, y: 0.46414835629734064d), new NpgsqlTypes.NpgsqlPoint(x: 0.5353511219891668d, y: 0.057948221742134765d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6212812801125415d, y: 0.8204075222633793d), new NpgsqlTypes.NpgsqlPoint(x: 0.876696331497491d, y: 0.521766898444201d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
-    Id = 93,
+    Id = 58,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.3379626517194362d, y: 0.05834051072668589d), new NpgsqlTypes.NpgsqlPoint(x: 0.6799450746597344d, y: 0.7520403757924944d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.003240002484611648d, y: 0.20015800723497867d), new NpgsqlTypes.NpgsqlPoint(x: 0.3566675932939225d, y: 0.2567856002002784d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.562932532352559d, y: 0.5699797635414227d), new NpgsqlTypes.NpgsqlPoint(x: 0.4650472644739191d, y: 0.2453121809680131d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.4601659484992342d, y: 0.8282862203881052d), new NpgsqlTypes.NpgsqlPoint(x: 0.646975642061706d, y: 0.18255498761132194d), }, },
+    NullableValue = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.4948588511153297d, y: 0.43106939546846323d), new NpgsqlTypes.NpgsqlPoint(x: 0.10440741644073093d, y: 0.399088804211605d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6965833640826257d, y: 0.21910779666731572d), new NpgsqlTypes.NpgsqlPoint(x: 0.14818972654340234d, y: 0.1618911098198128d), }, },
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.4060756668768445d, y: 0.9287184264786333d), new NpgsqlTypes.NpgsqlPoint(x: 0.00444759852257659d, y: 0.30753668204079143d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.014211996947793848d, y: 0.243493672236474d), new NpgsqlTypes.NpgsqlPoint(x: 0.9445914849426237d, y: 0.1960530809316282d), }, },
+},
+            new NpgsqlPointpointMMArrayD2E1M
+{
+    Id = 112,
+    Value = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.5964097181745407d, y: 0.9283708301033603d), new NpgsqlTypes.NpgsqlPoint(x: 0.014369148797536146d, y: 0.5459889922644733d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.18113669894357953d, y: 0.366935082544519d), new NpgsqlTypes.NpgsqlPoint(x: 0.889120011703402d, y: 0.9469073547864357d), }, },
+    ModelInner = null,
     NullableValue = null,
 },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.46284866699480287d, y: 0.9613172055634732d), new NpgsqlTypes.NpgsqlPoint(x: 0.5667224612459371d, y: 0.24684211075554086d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.08774515940704364d, y: 0.8102986571284548d), new NpgsqlTypes.NpgsqlPoint(x: 0.6301057826299521d, y: 0.575722097902045d), }, },
-},
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 122,
+    Id = 117,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.8575119678073735d, y: 0.1447329881827475d), new NpgsqlTypes.NpgsqlPoint(x: 0.6404300717992712d, y: 0.9573024080553837d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.39812096476527403d, y: 0.7802980597995262d), new NpgsqlTypes.NpgsqlPoint(x: 0.2166124170847592d, y: 0.5952733538093473d), }, },
-    ModelInner = null,
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.4306625769768637d, y: 0.875301351163033d), new NpgsqlTypes.NpgsqlPoint(x: 0.9504842402144633d, y: 0.2536979186548389d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.4546409357462333d, y: 0.9177285553325719d), new NpgsqlTypes.NpgsqlPoint(x: 0.1780073396667302d, y: 0.3035893937134392d), }, },
-},
-            new NpgsqlPointpointMMArrayD2E1M
-{
-    Id = 128,
-    Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.038840711893283864d, y: 0.10353842327358354d), new NpgsqlTypes.NpgsqlPoint(x: 0.6129713790111708d, y: 0.9703244785314872d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.27797098747151894d, y: 0.8799810111562943d), new NpgsqlTypes.NpgsqlPoint(x: 0.8882207365455154d, y: 0.29017334860088617d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6291019911278928d, y: 0.057408940435844324d), new NpgsqlTypes.NpgsqlPoint(x: 0.9991193555961577d, y: 0.2042177827513293d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6879416226931773d, y: 0.5026832020504062d), new NpgsqlTypes.NpgsqlPoint(x: 0.6332324572128845d, y: 0.9645569820291032d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
-    Id = 98,
+    Id = 61,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.13344575404715908d, y: 0.4716548731239453d), new NpgsqlTypes.NpgsqlPoint(x: 0.2569028436876999d, y: 0.4310871399966886d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.29636438826987355d, y: 0.09037037910894508d), new NpgsqlTypes.NpgsqlPoint(x: 0.9613412713364988d, y: 0.7188308697046848d), }, },
-    NullableValue = null,
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.7078290923533757d, y: 0.8522438789086192d), new NpgsqlTypes.NpgsqlPoint(x: 0.7814741953594221d, y: 0.22676765956376488d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.36043472753182393d, y: 0.536197330900725d), new NpgsqlTypes.NpgsqlPoint(x: 0.6379180991614369d, y: 0.5145631867389222d), }, },
+    NullableValue = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.46133698107490906d, y: 0.9963816030385025d), new NpgsqlTypes.NpgsqlPoint(x: 0.5587388149107472d, y: 0.7035456221752325d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.46790132868817513d, y: 0.8232463312133977d), new NpgsqlTypes.NpgsqlPoint(x: 0.597906724934826d, y: 0.916582177677574d), }, },
 },
     NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.33314879587204793d, y: 0.02062024307642385d), new NpgsqlTypes.NpgsqlPoint(x: 0.7850985864326765d, y: 0.8649892248971395d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.04885678840830354d, y: 0.8369251520590186d), new NpgsqlTypes.NpgsqlPoint(x: 0.8633541874071949d, y: 0.236578370960705d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.56606523437011d, y: 0.8375812259390608d), new NpgsqlTypes.NpgsqlPoint(x: 0.9903017827396422d, y: 0.05124788329260299d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.5103048603661973d, y: 0.7579502117910594d), new NpgsqlTypes.NpgsqlPoint(x: 0.7727457447196512d, y: 0.6971178980167578d), }, },
+},
+            new NpgsqlPointpointMMArrayD2E1M
+{
+    Id = 121,
+    Value = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.1626565935319505d, y: 0.15493344065059378d), new NpgsqlTypes.NpgsqlPoint(x: 0.6058349673876409d, y: 0.8474158954488277d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.03449536128332853d, y: 0.4658257081717757d), new NpgsqlTypes.NpgsqlPoint(x: 0.9056446276172574d, y: 0.7690237249175801d), }, },
+    ModelInner = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.4150537816178581d, y: 0.06306839240955919d), new NpgsqlTypes.NpgsqlPoint(x: 0.515837871149754d, y: 0.4523455859422951d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7891182264593399d, y: 0.1270702042996259d), new NpgsqlTypes.NpgsqlPoint(x: 0.5388932296887701d, y: 0.0671981567881268d), }, },
+},
+            new NpgsqlPointpointMMArrayD2E1M
+{
+    Id = 126,
+    Value = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.9616989226326664d, y: 0.7316225010155576d), new NpgsqlTypes.NpgsqlPoint(x: 0.8922033887355793d, y: 0.37697957153397776d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.09692340298278357d, y: 0.46030315283981216d), new NpgsqlTypes.NpgsqlPoint(x: 0.8112881488121421d, y: 0.9893709533307059d), }, },
+    ModelInner = new NpgsqlPointpointMMArrayD2E1MI
+{
+    Id = 69,
+    Value = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.5336072473979547d, y: 0.18261807939745112d), new NpgsqlTypes.NpgsqlPoint(x: 0.027230849032440885d, y: 0.5019577197110393d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7972072775342721d, y: 0.9506240488281298d), new NpgsqlTypes.NpgsqlPoint(x: 0.39701109017153235d, y: 0.7312452015535621d), }, },
+    NullableValue = null,
+},
+    NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
     Id = 135,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.35973377372713167d, y: 0.6872114605927568d), new NpgsqlTypes.NpgsqlPoint(x: 0.7022751900899465d, y: 0.9837361807888939d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.057906801189590795d, y: 0.6956168202248035d), new NpgsqlTypes.NpgsqlPoint(x: 0.07969260301736425d, y: 0.9051648675427448d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.026504119379885727d, y: 0.06325993774685379d), new NpgsqlTypes.NpgsqlPoint(x: 0.4679532347949644d, y: 0.39620634827365786d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.17621702966488595d, y: 0.8127217025458368d), new NpgsqlTypes.NpgsqlPoint(x: 0.9515051642897834d, y: 0.3279953057799453d), }, },
+    ModelInner = null,
+    NullableValue = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.14681827130998604d, y: 0.08545519464585516d), new NpgsqlTypes.NpgsqlPoint(x: 0.041854916081678684d, y: 0.5980236353028814d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.5790742598071345d, y: 0.3930849945701381d), new NpgsqlTypes.NpgsqlPoint(x: 0.8103387333002664d, y: 0.9147649299198949d), }, },
+},
+            new NpgsqlPointpointMMArrayD2E1M
+{
+    Id = 138,
+    Value = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.09444010921224788d, y: 0.3703675817903188d), new NpgsqlTypes.NpgsqlPoint(x: 0.38460996520076995d, y: 0.00405883138276486d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9143463612517047d, y: 0.7073740618372912d), new NpgsqlTypes.NpgsqlPoint(x: 0.9237350102726184d, y: 0.3848319354241637d), }, },
+    ModelInner = new NpgsqlPointpointMMArrayD2E1MI
+{
+    Id = 74,
+    Value = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.42890622797870126d, y: 0.43066750569924817d), new NpgsqlTypes.NpgsqlPoint(x: 0.10750845287594868d, y: 0.9240407356545024d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.621891151390826d, y: 0.030127890714979455d), new NpgsqlTypes.NpgsqlPoint(x: 0.3533503954857483d, y: 0.6362415310340593d), }, },
+    NullableValue = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.08461695009882697d, y: 0.7886759531770813d), new NpgsqlTypes.NpgsqlPoint(x: 0.5085607020617505d, y: 0.8825011971100654d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.41302086284934847d, y: 0.47231502105846035d), new NpgsqlTypes.NpgsqlPoint(x: 0.8705103154989919d, y: 0.9038483021407474d), }, },
+},
+    NullableValue = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.25661675941728734d, y: 0.029164329285953916d), new NpgsqlTypes.NpgsqlPoint(x: 0.09116738288534743d, y: 0.3830526052155696d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.1878570977378745d, y: 0.914691217076795d), new NpgsqlTypes.NpgsqlPoint(x: 0.1407645409930206d, y: 0.7624258725258312d), }, },
+},
+            new NpgsqlPointpointMMArrayD2E1M
+{
+    Id = 140,
+    Value = 
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.5796461589925814d, y: 0.47000681707295777d), new NpgsqlTypes.NpgsqlPoint(x: 0.9157691846551751d, y: 0.3270417498199376d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6051735470695333d, y: 0.24210512590676136d), new NpgsqlTypes.NpgsqlPoint(x: 0.6646892034504528d, y: 0.4803346230542903d), }, },
     ModelInner = null,
     NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 137,
+    Id = 143,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6622089249863595d, y: 0.2392149084246027d), new NpgsqlTypes.NpgsqlPoint(x: 0.19709195232179622d, y: 0.7762717742907486d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9408215242765587d, y: 0.31963851194685355d), new NpgsqlTypes.NpgsqlPoint(x: 0.7475117798893762d, y: 0.663069487826386d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.492653248220963d, y: 0.6358973750917748d), new NpgsqlTypes.NpgsqlPoint(x: 0.7955396622691671d, y: 0.21707444490062144d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.32287840882741836d, y: 0.011494590982982333d), new NpgsqlTypes.NpgsqlPoint(x: 0.6131584982480652d, y: 0.09846105506213476d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
-    Id = 103,
+    Id = 81,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.5907198780594186d, y: 0.1613857328178796d), new NpgsqlTypes.NpgsqlPoint(x: 0.9821618015978659d, y: 0.500093717830111d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.47966695102393697d, y: 0.8081381929773329d), new NpgsqlTypes.NpgsqlPoint(x: 0.7780801373720417d, y: 0.24714355704163027d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.21314215604699416d, y: 0.34718835688411975d), new NpgsqlTypes.NpgsqlPoint(x: 0.5516372959746821d, y: 0.09797858187676534d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6727045347070163d, y: 0.890284036478606d), new NpgsqlTypes.NpgsqlPoint(x: 0.9306869465803066d, y: 0.5393516881509948d), }, },
     NullableValue = null,
 },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.5083922421936304d, y: 0.4750889611993284d), new NpgsqlTypes.NpgsqlPoint(x: 0.5110047180115602d, y: 0.781176713016784d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.8666759004062885d, y: 0.3616049701300077d), new NpgsqlTypes.NpgsqlPoint(x: 0.8216198511034524d, y: 0.8009268697254516d), }, },
+    NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 139,
+    Id = 146,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.43192139995622125d, y: 0.8725991229261011d), new NpgsqlTypes.NpgsqlPoint(x: 0.6708102098712122d, y: 0.0022981334488835214d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.45954449188485613d, y: 0.14721410679390035d), new NpgsqlTypes.NpgsqlPoint(x: 0.984587847035714d, y: 0.4670819162079354d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.41023518272080006d, y: 0.6674933282958974d), new NpgsqlTypes.NpgsqlPoint(x: 0.4556361320315292d, y: 0.3730749323530086d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.30864387405632265d, y: 0.6531821970941867d), new NpgsqlTypes.NpgsqlPoint(x: 0.2625276550396336d, y: 0.5121551792178856d), }, },
     ModelInner = null,
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.993689380739914d, y: 0.7449918822680578d), new NpgsqlTypes.NpgsqlPoint(x: 0.2543838671045784d, y: 0.06029424574981945d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.24199669538462398d, y: 0.46961369807522035d), new NpgsqlTypes.NpgsqlPoint(x: 0.5248743407460793d, y: 0.38278045319453713d), }, },
+    NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 148,
+    Id = 152,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.5898622780370244d, y: 0.8285697053232882d), new NpgsqlTypes.NpgsqlPoint(x: 0.6807847993935322d, y: 0.735432096558679d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.27292372935730225d, y: 0.7713066680963896d), new NpgsqlTypes.NpgsqlPoint(x: 0.7395482314674157d, y: 0.3641050393258404d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6758481964349552d, y: 0.3825530339507275d), new NpgsqlTypes.NpgsqlPoint(x: 0.7509191027459351d, y: 0.7762033794259727d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7147913698680861d, y: 0.2719423451470402d), new NpgsqlTypes.NpgsqlPoint(x: 0.8868809468599753d, y: 0.43105003062375546d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
-    Id = 110,
+    Id = 85,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.9196890404728169d, y: 0.7655872613836195d), new NpgsqlTypes.NpgsqlPoint(x: 0.21193420355479586d, y: 0.41402830022004034d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.4135404760346848d, y: 0.6470212277045688d), new NpgsqlTypes.NpgsqlPoint(x: 0.9788877269161266d, y: 0.09808790588299787d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.5680069312919906d, y: 0.4988208717585658d), new NpgsqlTypes.NpgsqlPoint(x: 0.24905250790062783d, y: 0.9505729902150153d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6036051293203275d, y: 0.7917385524329771d), new NpgsqlTypes.NpgsqlPoint(x: 0.23619201072958174d, y: 0.03367888776676953d), }, },
     NullableValue = null,
 },
     NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.4427884643171248d, y: 0.5060056120532843d), new NpgsqlTypes.NpgsqlPoint(x: 0.045013306018785726d, y: 0.5976170498021008d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.029346877316813957d, y: 0.8367345524676264d), new NpgsqlTypes.NpgsqlPoint(x: 0.3306312281129953d, y: 0.8767006418187944d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.23798094693735217d, y: 0.6032562850887483d), new NpgsqlTypes.NpgsqlPoint(x: 0.765391083230168d, y: 0.75650655828586d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.13605119142255762d, y: 0.05432550959692228d), new NpgsqlTypes.NpgsqlPoint(x: 0.8235889772753275d, y: 0.636371619464461d), }, },
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
     Id = 155,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.578155402884494d, y: 0.16549457679667845d), new NpgsqlTypes.NpgsqlPoint(x: 0.5463922694666313d, y: 0.02878565683918355d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6073254964967315d, y: 0.3260600980887822d), new NpgsqlTypes.NpgsqlPoint(x: 0.11696696385913186d, y: 0.8864816678643856d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.960476101590785d, y: 0.4252388268685595d), new NpgsqlTypes.NpgsqlPoint(x: 0.18235903280915022d, y: 0.06589057930735243d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6171397811416098d, y: 0.5567078754781283d), new NpgsqlTypes.NpgsqlPoint(x: 0.8590348381942788d, y: 0.07891364215928032d), }, },
     ModelInner = null,
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.41376700672182887d, y: 0.48354842819014476d), new NpgsqlTypes.NpgsqlPoint(x: 0.48281936205879505d, y: 0.4273839874666049d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.644537723186694d, y: 0.062200639865182095d), new NpgsqlTypes.NpgsqlPoint(x: 0.5012115255488203d, y: 0.17047459638789408d), }, },
+    NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
     Id = 164,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.8675355871888351d, y: 0.509519951325748d), new NpgsqlTypes.NpgsqlPoint(x: 0.9466841657528079d, y: 0.015959675977372134d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.8977813964651119d, y: 0.2863735150499708d), new NpgsqlTypes.NpgsqlPoint(x: 0.4837472040958948d, y: 0.11362793431829876d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.03680053783895654d, y: 0.43958013692092457d), new NpgsqlTypes.NpgsqlPoint(x: 0.691311250068347d, y: 0.637841321606185d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.0033975358680030654d, y: 0.10575696497823417d), new NpgsqlTypes.NpgsqlPoint(x: 0.471026676946503d, y: 0.8836710572997748d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
-    Id = 116,
+    Id = 91,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.10775345432221872d, y: 0.0285826893699348d), new NpgsqlTypes.NpgsqlPoint(x: 0.9173835255833378d, y: 0.12818564397196064d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.33938822415382597d, y: 0.9935439817164315d), new NpgsqlTypes.NpgsqlPoint(x: 0.6974675623759439d, y: 0.5423125195736616d), }, },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.7141911680651053d, y: 0.7558099350557997d), new NpgsqlTypes.NpgsqlPoint(x: 0.018269305043450812d, y: 0.3948464799885273d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.2820756278176235d, y: 0.5506732467600115d), new NpgsqlTypes.NpgsqlPoint(x: 0.051803444190245296d, y: 0.8986210928538532d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.15090970575629126d, y: 0.695267128745895d), new NpgsqlTypes.NpgsqlPoint(x: 0.5873405492991544d, y: 0.3690479433721856d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.8374423736414855d, y: 0.9888864439954397d), new NpgsqlTypes.NpgsqlPoint(x: 0.29999378228617324d, y: 0.9292120687791449d), }, },
+    NullableValue = null,
 },
     NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.807222590073524d, y: 0.6323221385082535d), new NpgsqlTypes.NpgsqlPoint(x: 0.678877106663977d, y: 0.5729915589289715d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.27575412123651677d, y: 0.21800901135135164d), new NpgsqlTypes.NpgsqlPoint(x: 0.835938114817231d, y: 0.9915661597363598d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.06359492016146562d, y: 0.6142291692527836d), new NpgsqlTypes.NpgsqlPoint(x: 0.8321603910888558d, y: 0.9230896693249702d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.4914743592019416d, y: 0.576201294738957d), new NpgsqlTypes.NpgsqlPoint(x: 0.12889647423938821d, y: 0.2304673687375529d), }, },
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 173,
+    Id = 170,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.29623160374772795d, y: 0.10408937089950088d), new NpgsqlTypes.NpgsqlPoint(x: 0.07192852298013619d, y: 0.796789873876427d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.0783887131780917d, y: 0.9962055886909869d), new NpgsqlTypes.NpgsqlPoint(x: 0.1628528420180233d, y: 0.402020326623603d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.798682829570842d, y: 0.6186653540699827d), new NpgsqlTypes.NpgsqlPoint(x: 0.5580499653223968d, y: 0.8582777436374793d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.3423742467259888d, y: 0.4798323678843912d), new NpgsqlTypes.NpgsqlPoint(x: 0.45604200851045484d, y: 0.6167164570280667d), }, },
     ModelInner = null,
     NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.5562086045936224d, y: 0.49545895794155925d), new NpgsqlTypes.NpgsqlPoint(x: 0.4807782860013996d, y: 0.30478351249956337d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.10741963481374328d, y: 0.31535988878124743d), new NpgsqlTypes.NpgsqlPoint(x: 0.006394755711791045d, y: 0.7533479031715117d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.9076280951591621d, y: 0.2652147610897472d), new NpgsqlTypes.NpgsqlPoint(x: 0.4153821165046825d, y: 0.9534416105712854d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7129102239193799d, y: 0.6833581940709724d), new NpgsqlTypes.NpgsqlPoint(x: 0.5483013460006136d, y: 0.5283977009852119d), }, },
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 176,
+    Id = 175,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6112295892623889d, y: 0.21464066083912536d), new NpgsqlTypes.NpgsqlPoint(x: 0.7306736693180059d, y: 0.4605511987146945d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.06543467883393805d, y: 0.4825140562192053d), new NpgsqlTypes.NpgsqlPoint(x: 0.4739535868746766d, y: 0.2132261179896957d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.10383155612275108d, y: 0.642168760763269d), new NpgsqlTypes.NpgsqlPoint(x: 0.3662935307270918d, y: 0.6473511479134609d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.8657495254316103d, y: 0.03488165961246614d), new NpgsqlTypes.NpgsqlPoint(x: 0.8728243181506791d, y: 0.10294518840584588d), }, },
     ModelInner = new NpgsqlPointpointMMArrayD2E1MI
 {
-    Id = 117,
+    Id = 98,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6703603535930618d, y: 0.5867414658697506d), new NpgsqlTypes.NpgsqlPoint(x: 0.1023441789770414d, y: 0.8463040852876619d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.48412586277664804d, y: 0.3725405963428582d), new NpgsqlTypes.NpgsqlPoint(x: 0.20000442674051777d, y: 0.1374917090077551d), }, },
-    NullableValue = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.8288836027423621d, y: 0.649597206693799d), new NpgsqlTypes.NpgsqlPoint(x: 0.6425187574287854d, y: 0.08249578564310545d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6940790837835736d, y: 0.6466238146925957d), new NpgsqlTypes.NpgsqlPoint(x: 0.08265494557243991d, y: 0.08865911792906656d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6385211703962662d, y: 0.028137942134354832d), new NpgsqlTypes.NpgsqlPoint(x: 0.7605846448708821d, y: 0.9820898971443047d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.7879860655193636d, y: 0.5626090768844337d), new NpgsqlTypes.NpgsqlPoint(x: 0.38312493920071844d, y: 0.06344729615156142d), }, },
+    NullableValue = null,
 },
     NullableValue = null,
 },
             new NpgsqlPointpointMMArrayD2E1M
 {
-    Id = 183,
+    Id = 182,
     Value = 
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.5812024667817463d, y: 0.044882863314883115d), new NpgsqlTypes.NpgsqlPoint(x: 0.2432207543944892d, y: 0.758954156786078d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.9843307013787714d, y: 0.3530232660709596d), new NpgsqlTypes.NpgsqlPoint(x: 0.3165313888600143d, y: 0.8862424917371641d), }, },
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.605692724134717d, y: 0.9726373866451508d), new NpgsqlTypes.NpgsqlPoint(x: 0.9827942914925981d, y: 0.3234771227843435d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.42011877216780524d, y: 0.7246370445940405d), new NpgsqlTypes.NpgsqlPoint(x: 0.12441940580842104d, y: 0.7937532589441177d), }, },
     ModelInner = null,
     NullableValue = null,
 },
@@ -784,7 +776,7 @@ RETURNING
                 }
                 Assert.That(nullable, Is.Not.Null);
                 Assert.That(nullable, Is.EqualTo(
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.756870571597217d, y: 0.7997674642949534d), new NpgsqlTypes.NpgsqlPoint(x: 0.5368050170201922d, y: 0.5433077898119254d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.8489160439721503d, y: 0.688639603609956d), new NpgsqlTypes.NpgsqlPoint(x: 0.8351951847910266d, y: 0.6116620041989788d), }, }));
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.8437319445234686d, y: 0.14712882436024688d), new NpgsqlTypes.NpgsqlPoint(x: 0.009772170435744965d, y: 0.11732686307273421d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6184809966672435d, y: 0.7188591779116881d), new NpgsqlTypes.NpgsqlPoint(x: 0.054321802709944245d, y: 0.7233668623554366d), }, }));
                 {
                     var parameters = new NpgsqlParameter[4];
                     parameters[0] = new NpgsqlParameter<System.Int32>();
@@ -819,9 +811,7 @@ new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.756870571597
 
                     nullable =  ((INpgsqlPointMArraypointMMArrayD2)this).ScalarInsertModelDynParReturning(connection, parameters);
                 }
-                Assert.That(nullable, Is.Not.Null);
-                Assert.That(nullable, Is.EqualTo(
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.18880767642334206d, y: 0.49486440601471793d), new NpgsqlTypes.NpgsqlPoint(x: 0.8929906140444077d, y: 0.07751564342896478d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.3133802764981376d, y: 0.6869854548758579d), new NpgsqlTypes.NpgsqlPoint(x: 0.06604674078615169d, y: 0.18149781430726164d), }, }));
+                Assert.That(nullable, Is.Null);
             }
         }
 
@@ -866,7 +856,9 @@ new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.188807676423
 
                     nullable = await ((INpgsqlPointMArraypointMMArrayD2)this).ScalarInsertModelDynParReturningAsync(connection, parameters);
                 }
-                Assert.That(nullable, Is.Null);
+                Assert.That(nullable, Is.Not.Null);
+                Assert.That(nullable, Is.EqualTo(
+new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6453817429845412d, y: 0.6011898095989942d), new NpgsqlTypes.NpgsqlPoint(x: 0.8076210763802603d, y: 0.42472575792249134d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.6890270701387172d, y: 0.404712319287135d), new NpgsqlTypes.NpgsqlPoint(x: 0.4066891155933796d, y: 0.7494263308199901d), }, }));
                 {
                     var parameters = new NpgsqlParameter[4];
                     parameters[0] = new NpgsqlParameter<System.Int32>();
@@ -901,9 +893,7 @@ new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.188807676423
 
                     nullable = await ((INpgsqlPointMArraypointMMArrayD2)this).ScalarInsertModelDynParReturningAsync(connection, parameters);
                 }
-                Assert.That(nullable, Is.Not.Null);
-                Assert.That(nullable, Is.EqualTo(
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.031373221407672736d, y: 0.1283349212421101d), new NpgsqlTypes.NpgsqlPoint(x: 0.4945142608690255d, y: 0.3221208200914274d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.600429190868179d, y: 0.8004827523022452d), new NpgsqlTypes.NpgsqlPoint(x: 0.26348799378728227d, y: 0.6537103269408888d), }, }));
+                Assert.That(nullable, Is.Null);
             }
         }
 
@@ -973,9 +963,7 @@ RETURNING
                 nullable =  ((INpgsqlPointMArraypointMMArrayD2)this).ScalarInsertModelReturning(connection, _testData[8].Id, _testData[8].Value, _testData[8].NullableValue, _testData[8].ModelInner == null ? null : _testData[8].ModelInner.Id);
                 Assert.That(nullable, Is.Null);
                 nullable =  ((INpgsqlPointMArraypointMMArrayD2)this).ScalarInsertModelReturning(connection, _testData[9].Id, _testData[9].Value, _testData[9].NullableValue, _testData[9].ModelInner == null ? null : _testData[9].ModelInner.Id);
-                Assert.That(nullable, Is.Not.Null);
-                Assert.That(nullable, Is.EqualTo(
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.6595071373738438d, y: 0.38336731939678814d), new NpgsqlTypes.NpgsqlPoint(x: 0.9541109518018138d, y: 0.2626681133775659d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.018221613358579303d, y: 0.9687725445122504d), new NpgsqlTypes.NpgsqlPoint(x: 0.4097307126526891d, y: 0.7419082121532954d), }, }));
+                Assert.That(nullable, Is.Null);
             }
         }
 
@@ -987,9 +975,7 @@ new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.659507137373
                 await connection.OpenAsync();
                 NpgsqlTypes.NpgsqlPoint[,] nullable = null;
                 nullable = await ((INpgsqlPointMArraypointMMArrayD2)this).ScalarInsertModelReturningAsync(connection, _testData[10].Id, _testData[10].Value, _testData[10].NullableValue, _testData[10].ModelInner == null ? null : _testData[10].ModelInner.Id);
-                Assert.That(nullable, Is.Not.Null);
-                Assert.That(nullable, Is.EqualTo(
-new NpgsqlTypes.NpgsqlPoint[,] { { new NpgsqlTypes.NpgsqlPoint(x: 0.3039115932375902d, y: 0.4555976124682445d), new NpgsqlTypes.NpgsqlPoint(x: 0.2846694044757626d, y: 0.9980130478686484d), }, { new NpgsqlTypes.NpgsqlPoint(x: 0.43037683702508367d, y: 0.8462035620369706d), new NpgsqlTypes.NpgsqlPoint(x: 0.5146270132880528d, y: 0.49305288574113637d), }, }));
+                Assert.That(nullable, Is.Null);
                 nullable = await ((INpgsqlPointMArraypointMMArrayD2)this).ScalarInsertModelReturningAsync(connection, _testData[11].Id, _testData[11].Value, _testData[11].NullableValue, _testData[11].ModelInner == null ? null : _testData[11].ModelInner.Id);
                 Assert.That(nullable, Is.Null);
             }
@@ -1633,12 +1619,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 34;
+                parametr1.Value = 170;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 62;
+                parametr2.Value = 89;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1674,108 +1660,50 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(27));
-                Assert.That(firstItems2, Has.Count.EqualTo(27));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[8], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[8], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[9], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[9], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[10], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[2],_testData[10], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[3],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[4],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[5],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[6],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[7],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[8],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[9],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[10],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[11],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[12],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[13],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[13],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[14],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[14],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[15],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[15],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[16],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[16],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[17],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[17],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[18],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[18],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[19],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[19],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[20],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[20],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[21],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[21],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[22],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[22],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[23],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[23],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[24],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[24],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[25],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[25],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[26],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[26],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(22));
-                Assert.That(secondItems2, Has.Count.EqualTo(22));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[9],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[10],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[11],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[12],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[13],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[14],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[14],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[15],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[15],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[16],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[16],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[17],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[17],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[18],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[18],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[19],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[19],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[20],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[20],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[21],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[21],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(2));
+                Assert.That(firstItems2, Has.Count.EqualTo(2));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(18));
+                Assert.That(secondItems2, Has.Count.EqualTo(18));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[9],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[10],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[11],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[12],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[13],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[14],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[14],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[15],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[15],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[16],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[16],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[17],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[17],_testData[34], false);
             }
         }
 
@@ -1786,12 +1714,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 148;
+                parametr1.Value = 55;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 100;
+                parametr2.Value = 138;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1823,33 +1751,68 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionMMDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(5));
-                Assert.That(firstItems2, Has.Count.EqualTo(5));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[2],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[3],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[4],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(14));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(25));
+                Assert.That(firstItems2, Has.Count.EqualTo(25));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[10], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[10], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[2],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[3],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[4],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[5],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[6],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[7],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[8],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[9],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[10],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[11],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[12],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[13],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[13],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[14],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[14],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[15],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[15],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[16],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[16],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[17],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[17],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[18],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[18],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[19],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[19],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[20],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[20],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[21],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[21],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[22],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[22],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[23],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[23],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[24],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[24],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(9));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[34], false);
             }
         }
 
@@ -1897,12 +1860,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 92;
+                parametr1.Value = 112;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 128;
+                parametr2.Value = 61;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -1938,60 +1901,86 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                  ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(16));
-                Assert.That(firstItems2, Has.Count.EqualTo(16));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[2],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[3],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[4],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[5],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[6],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[7],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[8],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[9],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[10],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[11],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[12],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[13],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[13],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[14],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[14],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[15],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[15],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(9));
-                Assert.That(secondItems2, Has.Count.EqualTo(9));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(14));
+                Assert.That(firstItems2, Has.Count.EqualTo(14));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[2],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[3],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[4],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[5],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[6],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[7],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[8],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[9],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[10],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[11],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[12],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[13],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[13],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(24));
+                Assert.That(secondItems2, Has.Count.EqualTo(24));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[9],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[10],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[11],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[12],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[13],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[14],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[14],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[15],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[15],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[16],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[16],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[17],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[17],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[18],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[18],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[19],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[19],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[20],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[20],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[21],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[21],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[22],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[22],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[23],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[23],_testData[34], false);
             }
         }
 
@@ -2002,12 +1991,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 173;
+                parametr1.Value = 152;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 72;
+                parametr2.Value = 155;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2039,33 +2028,23 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                  ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionMMDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(2));
-                Assert.That(firstItems2, Has.Count.EqualTo(2));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(20));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[14],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[15],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[16],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[17],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[18],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[19],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(5));
+                Assert.That(firstItems2, Has.Count.EqualTo(5));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[2],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[3],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[4],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(4));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[34], false);
             }
         }
 
@@ -2153,12 +2132,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 100;
+                parametr1.Value = 155;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 122;
+                parametr2.Value = 98;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2189,40 +2168,37 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
+                        Assert.That(models, Has.Count.EqualTo(4));
 
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(10));
+                        Assert.That(models, Has.Count.EqualTo(17));
 
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[34], false);
                         continue;
                     }
                     
@@ -2238,12 +2214,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 139;
+                parametr1.Value = 117;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 108;
+                parametr2.Value = 8;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2275,41 +2251,88 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionDynQuerySelectModelDynParBatchAsync(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(6));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(13));
-                Assert.That(secondItems2, Has.Count.EqualTo(13));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[9],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[10],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[11],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[12],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(13));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(33));
+                Assert.That(secondItems2, Has.Count.EqualTo(33));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[2], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[2], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[3], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[3], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[4], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[4], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[5], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[5], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[6], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[6], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[7], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[7], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[8], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[8], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[9], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[9], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[10], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[10], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[9],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[10],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[11],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[12],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[13],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[14],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[14],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[15],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[15],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[16],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[16],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[17],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[17],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[18],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[18],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[19],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[19],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[20],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[20],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[21],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[21],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[22],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[22],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[23],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[23],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[24],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[24],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[25],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[25],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[26],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[26],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[27],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[27],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[28],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[28],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[29],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[29],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[30],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[30],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[31],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[31],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[32],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[32],_testData[34], false);
             }
         }
 
@@ -2350,12 +2373,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 5;
+                parametr1.Value = 112;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 98;
+                parametr2.Value = 152;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2386,65 +2409,35 @@ ORDER BY
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(34));
+                        Assert.That(models, Has.Count.EqualTo(14));
 
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[1], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[2], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[3], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[4], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[5], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[6], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[7], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[8], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[9], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[10], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[17],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[18],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[19],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[20],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[21],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[22],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[23],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[24],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[25],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[26],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[27],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[28],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[29],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[30],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[31],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[32],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[33],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(15));
+                        Assert.That(models, Has.Count.EqualTo(5));
 
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[34], false);
                         continue;
                     }
                     
@@ -2460,12 +2453,12 @@ ORDER BY
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 56;
+                parametr1.Value = 146;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 27;
+                parametr2.Value = 39;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 var query1 = @"
@@ -2497,90 +2490,69 @@ ORDER BY
                 var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                  ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionDynQuerySelectModelDynParBatch(connection, [parametr1], query1, [parametr2], query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(23));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[13],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[14],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[15],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[16],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[17],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[18],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[19],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[20],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[21],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[22],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(29));
-                Assert.That(secondItems2, Has.Count.EqualTo(29));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[6], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[6], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[7], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[7], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[8], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[8], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[9], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[9], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[10], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[10], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[9],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[10],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[11],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[12],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[13],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[14],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[14],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[15],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[15],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[16],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[16],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[17],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[17],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[18],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[18],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[19],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[19],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[20],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[20],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[21],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[21],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[22],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[22],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[23],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[23],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[24],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[24],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[25],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[25],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[26],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[26],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[27],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[27],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[28],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[28],_testData[34], false);
+                Assert.That(firstItems1, Has.Count.EqualTo(6));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(27));
+                Assert.That(secondItems2, Has.Count.EqualTo(27));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[8], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[8], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[9], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[9], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[10], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[10], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[9],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[10],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[11],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[12],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[13],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[14],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[14],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[15],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[15],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[16],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[16],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[17],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[17],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[18],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[18],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[19],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[19],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[20],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[20],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[21],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[21],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[22],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[22],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[23],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[23],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[24],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[24],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[25],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[25],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[26],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[26],_testData[34], false);
             }
         }
 
@@ -2660,12 +2632,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 128;
+                parametr1.Value = 16;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 100;
+                parametr2.Value = 146;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -2674,39 +2646,54 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(9));
+                        Assert.That(models, Has.Count.EqualTo(32));
 
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[26], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[27], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[28], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[29], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[30], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[31], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[32], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[33], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[34], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[3], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[4], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[5], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[6], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[7], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[8], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[9], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[10], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[11], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[12], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[13], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[14], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[15], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[16], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[17], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[18], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[19], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[17],_testData[20], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[18],_testData[21], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[19],_testData[22], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[20],_testData[23], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[21],_testData[24], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[22],_testData[25], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[23],_testData[26], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[24],_testData[27], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[25],_testData[28], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[26],_testData[29], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[27],_testData[30], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[28],_testData[31], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[29],_testData[32], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[30],_testData[33], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[31],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(14));
+                        Assert.That(models, Has.Count.EqualTo(6));
 
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[21], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[22], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[23], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[24], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[25], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[26], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[27], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[28], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[29], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[30], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[31], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[32], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[33], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[34], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[29], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[30], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[31], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[32], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[33], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[34], false);
                         continue;
                     }
                     
@@ -2741,12 +2728,12 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 var parametr1 = connection.CreateCommand().CreateParameter();
-                parametr1.Value = 108;
+                parametr1.Value = 112;
                 parametr1.DbType = (System.Data.DbType)(11);
                 parametr1.ParameterName = "id";
 
                 var parametr2 = connection.CreateCommand().CreateParameter();
-                parametr2.Value = 137;
+                parametr2.Value = 61;
                 parametr2.DbType = (System.Data.DbType)(11);
                 parametr2.ParameterName = "id";
                 int resultIndex = 0;
@@ -2755,36 +2742,54 @@ Gedaq.DbConnection.Attributes.BatchPart(
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(13));
+                        Assert.That(models, Has.Count.EqualTo(14));
 
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[22], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[23], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[24], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[25], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[26], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[27], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[28], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[29], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[30], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[31], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[32], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[33], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[34], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[21], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[22], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[23], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[24], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[25], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[26], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[27], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[28], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[29], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[30], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[31], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[32], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[33], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(7));
+                        Assert.That(models, Has.Count.EqualTo(24));
 
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[28], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[29], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[30], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[31], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[32], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[33], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[34], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[11], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[12], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[13], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[14], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[15], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[16], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[17], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[18], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[19], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[20], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[21], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[22], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[23], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[24], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[25], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[26], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[27], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[17],_testData[28], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[18],_testData[29], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[19],_testData[30], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[20],_testData[31], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[21],_testData[32], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[22],_testData[33], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[23],_testData[34], false);
                         continue;
                     }
                     
@@ -2915,7 +2920,7 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
-                await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 11, query1, 24, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTMMDynQuerySelectModelBatchAsync(connection, 8, query1, 138, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
                 Assert.That(firstItems1, Has.Count.EqualTo(33));
                 Assert.That(firstItems2, Has.Count.EqualTo(33));
                         FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[2], false);
@@ -2984,70 +2989,26 @@ ORDER BY
                         FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[31],_testData[33], false);
                         FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[32],_testData[34], false);
                         FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[32],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(31));
-                Assert.That(secondItems2, Has.Count.EqualTo(31));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[4], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[4], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[5], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[5], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[6], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[6], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[7], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[7], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[8], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[8], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[9], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[9], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[10], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[10], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[9],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[10],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[11],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[12],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[13],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[14],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[14],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[15],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[15],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[16],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[16],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[17],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[17],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[18],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[18],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[19],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[19],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[20],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[20],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[21],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[21],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[22],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[22],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[23],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[23],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[24],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[24],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[25],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[25],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[26],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[26],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[27],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[27],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[28],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[28],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[29],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[29],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[30],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[30],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(9));
+                Assert.That(secondItems2, Has.Count.EqualTo(9));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[34], false);
             }
         }
 
@@ -3085,62 +3046,72 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var firstItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
-                await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 55, query1, 155, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(24));
-                Assert.That(firstItems2, Has.Count.EqualTo(24));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[2],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[3],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[4],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[5],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[6],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[7],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[8],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[9],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[10],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[11],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[12],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[13],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[13],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[14],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[14],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[15],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[15],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[16],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[16],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[17],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[17],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[18],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[18],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[19],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[19],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[20],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[20],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[21],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[21],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[22],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[22],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[23],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[23],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(4));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[34], false);
+                await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionMMDynQuerySelectModelBatchAsync(connection, 110, query1, 16, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(15));
+                Assert.That(firstItems2, Has.Count.EqualTo(15));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[2],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[3],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[4],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[5],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[6],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[7],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[8],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[9],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[10],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[11],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[12],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[13],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[13],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[14],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[14],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(32));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[3], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[4], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[5], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[6], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[7], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[8], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[9], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[10], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[14],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[15],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[16],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[17],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[18],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[19],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[20],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[21],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[22],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[23],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[24],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[25],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[26],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[27],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[28],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[29],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[30],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[31],_testData[34], false);
             }
         }
 
@@ -3215,107 +3186,83 @@ ORDER BY
                 var firstItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
-                 ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 69, query1, 34, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(21));
-                Assert.That(firstItems2, Has.Count.EqualTo(21));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[2],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[3],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[4],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[5],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[6],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[7],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[8],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[9],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[10],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[11],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[12],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[13],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[13],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[14],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[14],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[15],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[15],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[16],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[16],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[17],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[17],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[18],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[18],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[19],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[19],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[20],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[20],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(27));
-                Assert.That(secondItems2, Has.Count.EqualTo(27));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[8], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[8], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[9], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[9], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[10], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[10], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[9],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[10],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[11],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[12],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[13],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[14],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[14],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[15],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[15],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[16],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[16],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[17],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[17],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[18],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[18],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[19],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[19],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[20],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[20],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[21],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[21],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[22],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[22],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[23],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[23],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[24],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[24],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[25],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[25],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[26],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[26],_testData[34], false);
+                 ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTMMDynQuerySelectModelBatch(connection, 140, query1, 37, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(8));
+                Assert.That(firstItems2, Has.Count.EqualTo(8));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[2],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[3],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[4],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[5],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[6],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[7],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(28));
+                Assert.That(secondItems2, Has.Count.EqualTo(28));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[7], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[7], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[8], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[8], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[9], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[9], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[10], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[10], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[9],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[10],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[11],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[12],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[13],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[14],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[14],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[15],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[15],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[16],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[16],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[17],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[17],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[18],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[18],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[19],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[19],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[20],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[20],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[21],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[21],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[22],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[22],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[23],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[23],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[24],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[24],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[25],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[25],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[26],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[26],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[27],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[27],_testData[34], false);
             }
         }
 
@@ -3353,31 +3300,57 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var firstItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
-                 ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionMMDynQuerySelectModelBatch(connection, 113, query1, 98, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
-                Assert.That(firstItems1, Has.Count.EqualTo(11));
-                Assert.That(firstItems2, Has.Count.EqualTo(11));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[2],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[3],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[4],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[5],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[6],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[7],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[8],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[9],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[10],_testData[34], false);
+                 ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionMMDynQuerySelectModelBatch(connection, 61, query1, 110, query2, (item1, item2) => { firstItems1.Add(item1); firstItems2.Add(item2); }, (item1) => { secondItems1.Add(item1); });
+                Assert.That(firstItems1, Has.Count.EqualTo(24));
+                Assert.That(firstItems2, Has.Count.EqualTo(24));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[0],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[1],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[2],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[3],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[4],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[5],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[6],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[7],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[8],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[9],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[10],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[11],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[12],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[13],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[13],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[14],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[14],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[15],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[15],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[16],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[16],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[17],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[17],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[18],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[18],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[19],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[19],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[20],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[20],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[21],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[21],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[22],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[22],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[23],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems2[23],_testData[34], false);
                 Assert.That(secondItems1, Has.Count.EqualTo(15));
                         FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[20], false);
                         FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[21], false);
@@ -3503,36 +3476,44 @@ ORDER BY
     m.id ASC
 ";
                 int resultIndex = 0;
-                foreach(var batchResult in await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 155, query1, 113, query2))
+                foreach(var batchResult in await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTDynQuerySelectModelBatchAsync(connection, 164, query1, 81, query2))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(4));
+                        Assert.That(models, Has.Count.EqualTo(3));
 
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
+                        Assert.That(models, Has.Count.EqualTo(20));
 
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[17],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[18],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[19],_testData[34], false);
                         continue;
                     }
                     
@@ -3575,41 +3556,242 @@ ORDER BY
                 var firstItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
                 var secondItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
-                await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 11, query1, 11, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(33));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[2], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[3], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[4], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[5], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[6], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[7], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[8], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[9], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[10], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[13],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[14],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[15],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[16],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[17],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[18],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[19],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[20],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[21],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[22],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[23],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[24],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[25],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[26],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[27],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[28],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[29],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[30],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[31],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[32],_testData[34], false);
+                await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionDynQuerySelectModelBatchAsync(connection, 164, query1, 71, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(3));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[34], false);
+                Assert.That(secondItems1, Has.Count.EqualTo(22));
+                Assert.That(secondItems2, Has.Count.EqualTo(22));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[9],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[10],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[11],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[12],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[12],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[13],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[13],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[14],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[14],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[15],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[15],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[16],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[16],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[17],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[17],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[18],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[18],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[19],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[19],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[20],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[20],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[21],_testData[34], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[21],_testData[34], false);
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.npgsqlpointpointmmarrayd2e1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var models = ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
+                Assert.That(models, Has.Count.EqualTo(35));
+                for (int i = 0; i < 35; i++)
+                {
+                    FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[i],_testData[i], false);
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionSTDynQuerySelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.npgsqlpointpointmmarrayd2e1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.npgsqlpointpointmmarrayd2e1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                int resultIndex = 0;
+                foreach(var batchResult in  ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTDynQuerySelectModelBatch(connection, 117, query1, 25, query2))
+                {
+                    if(++resultIndex == 1)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(13));
+
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[34], false);
+                        continue;
+                    }                    
+
+                    if(resultIndex == 2)
+                    {
+                        var models = batchResult;
+                        Assert.That(models, Has.Count.EqualTo(31));
+
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[4], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[5], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[6], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[7], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[8], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[9], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[10], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[17],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[18],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[19],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[20],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[21],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[22],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[23],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[24],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[25],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[26],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[27],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[28],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[29],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[30],_testData[34], false);
+                        continue;
+                    }
+                    
+                    Assert.Fail("Unexpected batch count");
+                }
+            }
+        }
+
+        [Test, Order(2)]
+        public async Task DbConnectionDynQuerySelectModelBatchTest()
+        {
+            await using (var connection = GlobalSetUp.GetDbConnection)
+            {
+                await connection.OpenAsync();
+                var query1 = @"
+SELECT
+    m.id,
+    m.value,
+    m.nullablevalue
+FROM public.npgsqlpointpointmmarrayd2e1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var query2 = @"
+SELECT
+    m.id AS item1id,
+    m.value AS item1value,
+    m.nullablevalue AS item1nullablevalue,
+    m.id AS item2id,
+    m.value AS item2value,
+    m.nullablevalue AS item2nullablevalue
+FROM public.npgsqlpointpointmmarrayd2e1m m
+WHERE
+    m.id > @id
+ORDER BY
+    m.id ASC
+";
+                var firstItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
+                var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
+                var secondItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
+                 ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionDynQuerySelectModelBatch(connection, 61, query1, 8, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
+                Assert.That(firstItems1, Has.Count.EqualTo(24));
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[11], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[12], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[13], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[14], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[15], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[16], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[17], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[18], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[19], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[20], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[21], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[22], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[23], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[13],_testData[24], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[14],_testData[25], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[15],_testData[26], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[16],_testData[27], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[17],_testData[28], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[18],_testData[29], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[19],_testData[30], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[20],_testData[31], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[21],_testData[32], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[22],_testData[33], false);
+                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[23],_testData[34], false);
                 Assert.That(secondItems1, Has.Count.EqualTo(33));
                 Assert.That(secondItems2, Has.Count.EqualTo(33));
                         FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[2], false);
@@ -3678,208 +3860,6 @@ ORDER BY
                         FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[31],_testData[33], false);
                         FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[32],_testData[34], false);
                         FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[32],_testData[34], false);
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var query = @"
-SELECT
-    m.id,
-    m.value,
-    m.nullablevalue
-FROM public.npgsqlpointpointmmarrayd2e1m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var models = ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionDynQuerySelectModel(connection,  query, 0);
-                Assert.That(models, Has.Count.EqualTo(35));
-                for (int i = 0; i < 35; i++)
-                {
-                    FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[i],_testData[i], false);
-                }
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionSTDynQuerySelectModelBatchTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var query1 = @"
-SELECT
-    m.id,
-    m.value,
-    m.nullablevalue
-FROM public.npgsqlpointpointmmarrayd2e1m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var query2 = @"
-SELECT
-    m.id,
-    m.value,
-    m.nullablevalue
-FROM public.npgsqlpointpointmmarrayd2e1m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                int resultIndex = 0;
-                foreach(var batchResult in  ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTDynQuerySelectModelBatch(connection, 139, query1, 18, query2))
-                {
-                    if(++resultIndex == 1)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
-
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[34], false);
-                        continue;
-                    }                    
-
-                    if(resultIndex == 2)
-                    {
-                        var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(32));
-
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[3], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[4], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[5], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[6], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[7], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[8], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[9], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[10], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[11], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[12], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[13], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[17],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[18],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[19],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[20],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[21],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[22],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[23],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[24],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[25],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[26],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[27],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[28],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[29],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[30],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(models[31],_testData[34], false);
-                        continue;
-                    }
-                    
-                    Assert.Fail("Unexpected batch count");
-                }
-            }
-        }
-
-        [Test, Order(2)]
-        public async Task DbConnectionDynQuerySelectModelBatchTest()
-        {
-            await using (var connection = GlobalSetUp.GetDbConnection)
-            {
-                await connection.OpenAsync();
-                var query1 = @"
-SELECT
-    m.id,
-    m.value,
-    m.nullablevalue
-FROM public.npgsqlpointpointmmarrayd2e1m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var query2 = @"
-SELECT
-    m.id AS item1id,
-    m.value AS item1value,
-    m.nullablevalue AS item1nullablevalue,
-    m.id AS item2id,
-    m.value AS item2value,
-    m.nullablevalue AS item2nullablevalue
-FROM public.npgsqlpointpointmmarrayd2e1m m
-WHERE
-    m.id > @id
-ORDER BY
-    m.id ASC
-";
-                var firstItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
-                var secondItems1 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
-                var secondItems2 = new List<FlatNpgsqlPointpointMMArrayD2E1M>();
-                 ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionDynQuerySelectModelBatch(connection, 69, query1, 110, query2, (item1) => { firstItems1.Add(item1); }, (item1, item2) => { secondItems1.Add(item1); secondItems2.Add(item2); });
-                Assert.That(firstItems1, Has.Count.EqualTo(21));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[0],_testData[14], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[1],_testData[15], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[2],_testData[16], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[3],_testData[17], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[4],_testData[18], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[5],_testData[19], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[6],_testData[20], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[7],_testData[21], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[8],_testData[22], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[9],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[10],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[11],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[12],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[13],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[14],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[15],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[16],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[17],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[18],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[19],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(firstItems1[20],_testData[34], false);
-                Assert.That(secondItems1, Has.Count.EqualTo(12));
-                Assert.That(secondItems2, Has.Count.EqualTo(12));
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[0],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[0],_testData[23], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[1],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[1],_testData[24], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[2],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[2],_testData[25], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[3],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[3],_testData[26], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[4],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[4],_testData[27], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[5],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[5],_testData[28], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[6],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[6],_testData[29], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[7],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[7],_testData[30], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[8],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[8],_testData[31], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[9],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[9],_testData[32], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[10],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[10],_testData[33], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems1[11],_testData[34], false);
-                        FlatNpgsqlPointpointMMArrayD2E1M.AssertModel(secondItems2[11],_testData[34], false);
             }
         }
 
@@ -3959,56 +3939,57 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTSelectModelBatchAsync(connection, 56, 110))
+                foreach(var batchResult in await ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTSelectModelBatchAsync(connection, 28, 146))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(23));
+                        Assert.That(models, Has.Count.EqualTo(30));
 
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[12], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[13], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[14], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[15], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[16], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[17], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[18], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[19], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[20], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[21], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[22], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[23], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[24], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[25], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[26], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[27], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[28], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[17],_testData[29], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[18],_testData[30], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[19],_testData[31], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[20],_testData[32], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[21],_testData[33], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[22],_testData[34], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[5], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[6], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[7], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[8], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[9], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[10], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[11], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[12], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[13], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[14], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[15], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[16], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[17], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[18], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[19], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[20], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[21], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[17],_testData[22], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[18],_testData[23], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[19],_testData[24], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[20],_testData[25], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[21],_testData[26], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[22],_testData[27], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[23],_testData[28], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[24],_testData[29], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[25],_testData[30], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[26],_testData[31], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[27],_testData[32], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[28],_testData[33], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[29],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(12));
+                        Assert.That(models, Has.Count.EqualTo(6));
 
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[23], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[24], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[25], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[26], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[27], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[28], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[29], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[30], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[31], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[32], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[33], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[34], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[29], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[30], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[31], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[32], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[33], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[34], false);
                         continue;
                     }
                     
@@ -4039,38 +4020,50 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 int resultIndex = 0;
-                foreach(var batchResult in  ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTSelectModelBatch(connection, 139, 113))
+                foreach(var batchResult in  ((INpgsqlPointMArraypointMMArrayD2)this).DbConnectionSTSelectModelBatch(connection, 77, 140))
                 {
                     if(++resultIndex == 1)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(6));
+                        Assert.That(models, Has.Count.EqualTo(21));
 
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[29], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[30], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[31], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[32], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[33], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[34], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[14], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[15], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[16], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[17], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[18], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[19], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[20], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[21], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[22], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[23], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[24], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[25], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[26], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[27], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[28], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[29], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[30], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[17],_testData[31], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[18],_testData[32], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[19],_testData[33], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[20],_testData[34], false);
                         continue;
                     }                    
 
                     if(resultIndex == 2)
                     {
                         var models = batchResult;
-                        Assert.That(models, Has.Count.EqualTo(11));
+                        Assert.That(models, Has.Count.EqualTo(8));
 
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[24], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[25], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[26], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[27], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[28], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[29], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[30], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[31], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[32], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[33], false);
-                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[34], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[27], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[28], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[29], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[30], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[31], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[32], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[33], false);
+                        NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[34], false);
                         continue;
                     }
                     
@@ -4086,35 +4079,22 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                 await using var cmd = await ((INpgsqlPointMArraypointMMArrayD2)this).CreateDbConnectionSelectModelCommandAsync(connection);
-                ((INpgsqlPointMArraypointMMArrayD2)this).SetDbConnectionSelectModelParametrs(cmd, 55);
+                ((INpgsqlPointMArraypointMMArrayD2)this).SetDbConnectionSelectModelParametrs(cmd, 126);
                 var models = await ((INpgsqlPointMArraypointMMArrayD2)this).ExecuteDbConnectionSelectModelCommandAsync(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(24));
+                Assert.That(models, Has.Count.EqualTo(11));
 
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[11], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[12], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[13], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[14], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[15], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[16], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[17], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[18], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[19], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[20], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[21], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[22], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[23], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[24], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[25], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[26], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[27], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[17],_testData[28], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[18],_testData[29], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[19],_testData[30], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[20],_testData[31], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[21],_testData[32], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[22],_testData[33], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[23],_testData[34], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[24], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[25], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[26], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[27], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[28], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[29], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[30], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[31], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[32], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[33], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[34], false);
             }
         }
 
@@ -4125,37 +4105,32 @@ Gedaq.DbConnection.Attributes.BatchPart(
             {
                 await connection.OpenAsync();
                  using var cmd =  ((INpgsqlPointMArraypointMMArrayD2)this).CreateDbConnectionSelectModelCommand(connection);
-                ((INpgsqlPointMArraypointMMArrayD2)this).SetDbConnectionSelectModelParametrs(cmd, 42);
+                ((INpgsqlPointMArraypointMMArrayD2)this).SetDbConnectionSelectModelParametrs(cmd, 77);
                 var models =  ((INpgsqlPointMArraypointMMArrayD2)this).ExecuteDbConnectionSelectModelCommand(cmd);
 
-                Assert.That(models, Has.Count.EqualTo(26));
+                Assert.That(models, Has.Count.EqualTo(21));
 
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[9], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[10], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[11], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[12], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[13], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[14], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[15], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[16], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[17], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[18], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[19], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[20], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[21], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[22], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[23], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[24], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[25], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[17],_testData[26], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[18],_testData[27], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[19],_testData[28], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[20],_testData[29], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[21],_testData[30], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[22],_testData[31], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[23],_testData[32], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[24],_testData[33], false);
-                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[25],_testData[34], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[0],_testData[14], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[1],_testData[15], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[2],_testData[16], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[3],_testData[17], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[4],_testData[18], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[5],_testData[19], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[6],_testData[20], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[7],_testData[21], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[8],_testData[22], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[9],_testData[23], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[10],_testData[24], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[11],_testData[25], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[12],_testData[26], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[13],_testData[27], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[14],_testData[28], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[15],_testData[29], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[16],_testData[30], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[17],_testData[31], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[18],_testData[32], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[19],_testData[33], false);
+                NpgsqlPointpointMMArrayD2E1M.AssertModel(models[20],_testData[34], false);
             }
         }
 
