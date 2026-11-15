@@ -36,6 +36,6 @@ Supported databases(see examples and documentation in the relevant DB package):<
 - [DbConnection](https://github.com/SoftStoneDevelop/Gedaq.DbConnection)
 - [SqlClient](https://github.com/SoftStoneDevelop/Gedaq.SqlClient)
 - [MySqlConnector](https://github.com/SoftStoneDevelop/Gedaq.MySqlConnector)
-- [Clickhouse.Driver]()
+- Clickhouse: basic usage is supported (and tested)
 - [Oracle.ManagedDataAccess.Core](https://github.com/SoftStoneDevelop/Gedaq/issues/6)
 <br>
